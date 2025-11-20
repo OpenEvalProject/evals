@@ -1,0 +1,2339 @@
+{
+  "submission": {
+    "id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T21:04:16.547921Z",
+    "updated_at": "2025-11-20T21:04:16.547921Z"
+  },
+  "content": [
+    {
+      "id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "content_type": "manuscript",
+      "content_text": "# Structural constraints on the emergence of oscillations in multi-population neural networks\n\n## Authors\n\n- Jie Zang<sup>1</sup> ([ORCID: 0000-0003-2655-3343](https://orcid.org/0000-0003-2655-3343))\n- Shenquan Liu<sup>1</sup> \u2020\n- Pascal Helson<sup>2</sup> ([ORCID: 0000-0002-2877-3705](https://orcid.org/0000-0002-2877-3705))\n- Arvind Kumar<sup>2</sup> ([ORCID: 0000-0002-8044-9195](https://orcid.org/0000-0002-8044-9195)) \u2020\n\n### Affiliations\n\n1. School of Mathematics, South China University of Technology Guangzhou China ([ROR:0530pts50](https://ror.org/0530pts50))\n2. Division of Computational Science and Technology, School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology Stockholm Sweden ([ROR:026vcq606](https://ror.org/026vcq606))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOscillations arise in many real-world systems and are associated with both functional and dysfunctional states. Whether a network can oscillate can be estimated if we know the strength of interaction between nodes. But in real-world networks (in particular in biological networks) it is usually not possible to know the exact connection weights. Therefore, it is important to determine the structural properties of a network necessary to generate oscillations. Here, we provide a proof that uses dynamical system theory to prove that an odd number of inhibitory nodes and strong enough connections are necessary to generate oscillations in a single cycle threshold-linear network. We illustrate these analytical results in a biologically plausible network with either firing-rate based or spiking neurons. Our work provides structural properties necessary to generate oscillations in a network. We use this knowledge to reconcile recent experimental findings about oscillations in basal ganglia with classical findings.\n\n## Introduction\n\nOscillations are ubiquitous in dynamical systems Strogatz, 2018; Pikovsky et al., 2002. They have important functional consequences but can also cause system malfunction. In the brain for instance, oscillations take part in information transfer Fries, 2015; Hahn et al., 2019. However, persistent beta band (13-30 Hz) oscillations are associated with the pathological symptoms of Parkinson\u2019s disease (PD) Brown et al., 2001. Therefore, it is important to determine when and how a system of many interacting nodes (network) oscillates.\n\nThis question is usually very difficult to answer analytically. The main tool that can be used is the Poincar\u00e9\u2013Bendixson theorem Poincar\u00e9, 1880; Bendixson, 1901 which is only valid in two dimensions, which drastically reduces its applicability. In some cases, when we know the model parameters, it is possible to calculate whether the system will oscillate or not. However, often such parameters cannot be measured experimentally. For example, in most physical, chemical, and biological networks, it is usually not possible to get the correct value of connectivity strength. By contrast, it is much easier to know whether two nodes in a system are physically connected and what is the sign (positive or negative) of their interactions. Therefore, it is much more useful to identify necessary structural conditions for the emergence of oscillations in a system without delays. A good example is the conjecture postulated by Thomas, 1980 which relies on the sign of the loops present in the network. A loop (or a cycle) is said to be negative (resp. positive) when it has an odd (resp. even) number of inhibitory connections. According to Thomas\u2019 conjecture, when considering a coupled dynamical system ($x\u02d9=f\u2062(x)$ and $x\u2062(0)\\in\u211d^{n}$) with a Jacobian matrix that has elements of fixed sign, the system can exhibit oscillations only if the directed graph obtained from the nodes\u2019 connectivity (Jacobian matrix) admits a negative loop of two or more nodes. This conjecture has been proven using graph theory for smooth functions $f$ Snoussi, 1998; Gouz\u00e9, 1998.\n\nThomas also conjectured that the assumption on the constant sign of the Jacobian matrix may not be necessary Thomas, 2006, that is having a negative loop in some domain of the phase space should be sufficient to generate oscillations. This condition is more realistic due to the ubiquity of the non-linearity in biological systems. For example, in the brain, even though neurons are (usually) either excitatory or inhibitory, the transfer function linking neurons is non-linear and can thus lead to elements of the Jacobian matrix having a non-constant sign. To the best of our knowledge, this last conjecture has not been proved yet but there are many examples of it. For instance, oscillations can emerge from a simple two populations, excitatory and inhibitory (EI), network Wilson-Cowan model (Ledoux and Brunel, 2011).\n\nHere, we study the long-term behavior of the TLN model in the case of a single cycle interaction (without transmission delays). We show analytically that regardless of the sign of this loop, the system cannot oscillate when connections are too weak as the system possesses a unique globally asymptotically stable fixed point. However, when connections are strong enough (see Theorem 2), the system either possesses two asymptotically stable fixed points (positive loop) or a unique unstable fixed point (negative loop). In addition, the system can be shown to be bounded and thus, it has one of the following long term behavior: limit cycle, quasi-periodic or chaotic behavior. Interestingly, we can show that such dynamics can be shut down by introducing a positive external input to excited nodes.\n\nWe prove this conjecture for the threshold-linear network (TLN) model Hartline and Ratliff, 1958 without delays which can closely capture the dynamics of neural populations. Therefore, it is implicit that our results do not hold at the neuronal level but rather at the level of neuron populations/brain regions for example the basal ganglia (BG) network which can be described a network of different nuclei.\n\nIn fact, we use our analytical results to explain recent experimental findings about the emergence of oscillations in the BG during PD. To this end, we used simulations of BG network models with either firing rate-based or spiking neurons. Within the framework of the odd-cycle theory, distinct nuclei are associated with either excitatory or inhibitory nodes. Traditionally, the subthalamic nucleus and globus pallidus (STN-GPe) subnetwork is considered to be the key network underlying the emergence of oscillations in PD (Plenz and Kitai, 1996; Terman et al., 2002; Kumar et al., 2011). However, recent experiments have shown that near complete inhibition of GPe but not of STN is sufficient to quench oscillations (Crompe et al., 2020). This observation contradicts several previous models and even clinical observations in which surgical removal of STN is used to alleviate PD symptoms. Our theory suggests that there are at least six possible cycles in the Cortex-BG network that have the potential to drive oscillations based on the connectivity structure. We show that even if STN is inhibited, other cycles can sustain pathological oscillations. Interestingly, we found that GPe is involved in five out of six oscillatory cycles and therefore GPe inhibition is likely to affect PD-related oscillations in most cases.\n\n## Results\n\nWe study how the emergence of oscillations in a network of excitatory and inhibitory populations depends on the connectivity structure. We first consider a network of nodes with dynamics representing the average firing rate of a population. We derive structural conditions for the emergence of oscillations when the dynamics of individual nodes are described according to the threshold-linear network (TLN) model. Next, we use numerical simulations to test whether such results might still hold on two other models: the Wilson-Cowan population rate-based model (Wilson and Cowan, 1972) and a network model of the BG with spiking neurons (see Methods).\n\n### Structural conditions to generate oscillations\n\n#### Intuition behind the analytical results\n\nThere exist many ways to generate oscillations in a network. Oscillation can arise from individual nodes due to their intrinsic dynamics (e.g. a spiking neuron can exhibit a periodic behavior given its ionic channel composition Lee et al., 2018) or from the weights\u2019 dynamics when considering synaptic plasticity Izhikevich and Edelman, 2008 or from transmission delays. Here, we assume that the system\u2019s ability to oscillate only depends on the connectivity structure: the presence of positive or negative loops and the connections strength (Jacobian matrix) within them. That is, we ignore node properties, weight dynamics and transmission delays. The main reason we ignore these important properties is that we want to know the structural properties that can induce oscillations \u2013 this question can only be asked when all other potential sources of oscillation are removed. Given the importance of delays in biological network such as BG, we will consider them in the simulations.\n\nIn this following, we give simple examples of the possibility of oscillation (or not) based on the connectivity characteristics of small networks without delays. Let us start with a network of two nodes. If we connect them mutually with excitatory synapses, intuitively we can say that the two-population network will not oscillate. Instead, the two populations will synchronize. The degree of synchrony will, of course, depend on the external input and the strength of mutual connections. If both these nodes are inhibitory, one of the nodes will emerge as a winner and the other will be suppressed Ermentrout, 1992. Hence, a network of two mutually connected inhibitory populations cannot oscillate either. We can extend this argument to three population networks with three connections that form a closed loop (or cycle; see top of Figure 1a). When all three connections in the cycle are excitatory, the three populations will synchronize. Essentially, we will have a single population. Thus, these two and three population motifs are not capable of oscillations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig1-v1.jpg)\n\n**Figure 1.:** (a) Examples of oscillating motifs and non-oscillating motifs in Wilson-Cowan model. Motifs that cannot oscillate show features of Winner-take-all: the winner will inhibit other nodes with a high activity level. Inversely, the oscillatory ones all show features of winner-less competition, which may contribute to oscillation. (b) The odd inhibitory cycle rule for oscillation prediction with the sign condition of a network. (c) Illustrations of oscillation in complex networks. Based on the odd inhibitory cycle rule, Network I can\u2019t oscillate, while Network II could oscillate by calculating the sums of their motifs. The red or black arrows indicate inhibition or excitation, respectively. Hollow nodes and solid nodes represent excitatory and inhibitory nodes, respectively.\n\nThe simplest network motif which is capable of oscillating thus consists of two mutually connected nodes: one excitatory and one inhibitory (EI motif: Figure 1a, bottom; Ledoux and Brunel, 2011). When there are three populations connected with three connections to form a cycle, the potential to oscillate depends on the number of inhibitory connections. A cycle with one inhibitory connection (EEI motif) can be effectively reduced to an EI motif and can therefore oscillate. However, when there are two inhibitory connections (EII motif, Figure 1a, top), the two inhibitory neurons engage in a winner-take-all type dynamics and the network is not capable of oscillations. Finally, if there are three inhibitory connections (i.e. all three nodes are inhibitory, III motif) the network enters in a winner-less-competition Rabinovich et al., 2001 and can exhibit oscillations (Figure 1a, bottom).\n\nThese examples of two or three nodes suggest that a network can generate oscillations if there are one or three inhibitory connections in the network. We can generalize these results to cycles of any size, categorizing them into two types based on the count of their inhibitory connections in one direction (referred to as the odd cycle rule, as illustrated in Figure 1b). More complex networks can also be decomposed into cycles of size 2 N (where N is number of nodes), and predict the ability of the network to oscillate (as shown in Figure 1c).\n\nThese observations form the basis for the conjecture of Thomas, 1980 that gives a necessary condition for oscillations to emerge. This condition is of course not sufficient. In the following we find additional constraints (input and minimum connection strength) needed to determine the emergence of oscillations in a network. To this end, we use the TLN model which captures the neural population dynamics to a great extent. After proving the key theorems, we test with simulation whether similar results hold on a more realistic Wilson-Cowan model and a model of BG with spiking neurons.\n\n#### Threshold linear network model\n\nWe consider the TLN($W,b$) in which individual nodes follow the dynamics\n\n$$\n\\frac{dx_{i}}{dt}=\u2212x_{i}+[\\sumj=1nW_{ij}x_{j}+b_{i}]_{+},i=1,\u2026,n\n$$\n\nwhere $n$ is the number of nodes, $x_{i}\u2062(t)$ is the activity level of the ith node at time $t\\geq0$, $W_{i\u2062j}$ is the connection strength from node $j$ to node $i$ and $[\u22c5]_{+}\u2062=def\u2062max\u2062{\u22c5,0}$ is the threshold non-linearity. For all $i\\in[n]\u2062=def\u2062{1,\u2026,n}$, the external inputs $b_{i}\\in\u211d$ are assumed to be constant in time. We refer to a $n$ neurons network with dynamics given by Equation 1 as TLN($W,b$).\n\nIn order to help the definition of cycle connectivity matrices, we define\n\n$$\nC_{n}=def{(i,j)\\in[n]^{2}\u2223i\u2212j=1}\u222a{(1,n)}.\n$$\n\nWe denote by $\\delta_{i,I}$ the Kronecker delta which equals 1 when node $i$ is inhibitory and 0 otherwise (node $i$ is excitatory). In the following, we use the convention that node 0 is node $n$ and node $n+1$ is node 1. For a given set of elements ${y_{k}}_{k\\in\u2115}$ in $\u211d$, we will use the convention:\n\n$$\n\\prodk=ijy_{k}=1\u00a0when\u00a0j<i.\n$$\n\nWe define $A={a_{1},\u2026,a_{n_{I}}}$ as the ensemble of inhibited nodes (${k\\in[n]\u2223\\delta_{k\u22121,I}=1}$) put in order such that $a_{1}<\u22ef<a_{n_{I}}$. Denoting by $card\u2062(\u22c5)$ the cardinal function, we have that $card\u2062(a)=n_{I}$. We also use the cycle convention for $A:a_{n_{I}+1}=a_{1}$.\n\n### Analytical results\n\n#### Theorem 1\n\nLet a network of inhibitory and excitatory nodes be connected through a graph $G$ which does not contain any directed cycle. Assume that its nodes follow TLN($W,b$) dynamics (Equation 1) with\n\n$$\nW_{ij}={w_{ij}(\u22121)^{\\delta_{j,I}}whenedge\u00a0i\u2190j\\inG0otherwise,\u00a0\n$$\n\nwhere $w_{i\u2062j}\\in\u211d^{+}$$\u2200i,j\\in[n]$\n\nThen, TLN($W,b$) has a unique globally asymptotically stable fixed point.\n\n#### Theorem 2\n\nLet $G$ be a cyclical graph with $n_{I}\\in\u2115^{+}$ inhibitory nodes and $n_{E}\\in\u2115$ excitatory nodes such that $n_{I}+n_{E}\\geq2$ ($\\geq3$ when $n_{I}=1$). Assume that the nodes follow the TLN($W,b$) dynamics (Equation 1) with for all $i,j\\in[n]$, $w_{j}\\in\u211d^{+}$,\n\n$$\nW_{ij}={w_{j}(\u22121)^{\\delta_{j,I}}when\u00a0(i,j)\\inC_{n}0otherwise,\n$$\n\nand $b_{i}=0$ when the node $i-1$ is excitatory and $b_{i}>0$ otherwise. Moreover, using convention (Equation 2), assume that the initial state is bounded,\n\n$$\n\u2200j\\in{a_{k},\u2026,a_{k+1}\u22121},x_{j}(0)\\in[0,b_{a_{k}}\\prodi=a_{k}j\u22121w_{i}].\n$$\n\nThen, the long-term behavior of the network depends on the following conditions,\n\n$$\n\u2200k\\in[n_{I}],\u00a0\u00a0\u00a0\\prodi=a_{k}a_{k+1}\u22121w_{i}<\\frac{b_{a_{k+1}}}{b_{a_{k}}},\n$$\n\n\n\n$$\n\\prodi=a_{k}a_{k+1}\u22121w_{i}>\\frac{b_{a_{k+1}}}{b_{a_{k}}},\n$$\n\n\n\n$$\n\\sqrt[n]{\\prodi=1nw_{i}}<\\frac{1}{cos(\\pi/n)},\n$$\n\n\n\n$$\n\\sqrt[n]{\\prodi=1nw_{i}}>\\frac{1}{cos(\\pi/n)},\n$$\n\nIf $n_{I}$ is even and\n\nIf $n_{I}$ is odd and\n\n##### Remark 1\n\nFirst, note that Equation 4 implies\n\n$$\n\\sqrt[n]{\\prodi=1nw_{i}}<1,\n$$\n\nand similarly, Equation 5 implies\n\n$$\n\\sqrt[n]{\\prodi=1nw_{i}}>1.\n$$\n\nIn addition, the bound on the initial state Equation 3 can be easily removed. We use it because it eases the proof as we then don\u2019t need to introduce technical details that are not interesting for this study.\n\nThen, Theorem 2 says that a possible condition for the one cycle TLN to oscillate is that the number of inhibitory nodes is odd when the connection strength are strong enough (i.e. Equation 5 and Equation 7). In that case, the system has no stable fixed point and from Lemma 1 it is bounded so it has one of limit cycle, quasi-periodic or chaotic behaviors. In particular, Theorem 2 states that the odd number of inhibitory nodes is not sufficient. Indeed, when Equation 4 holds and $n_{I}$ is odd, no oscillations are possible as the fixed point is globally stable. It is also the case when $n_{I}$ is even which corresponds to Thomas\u2019 conjecture.\n\nFinally, there is a gap in between the conditions (between Equation 4 and Equation 5 for example) for which the long-term behavior is not determined.\n\n##### Remark 2\n\nIn particular, if for all $i\\in[n]$, $w_{i}=w\\in\u211d_{+}^{*}$ and for all $k\\in[n_{I}]$, $b_{a_{k}}=b\\in\u211d_{+}^{*}$, then the dynamics of the system only depends on $w$. When $n_{I}$ is even: $w<1$ implies that TLN($W,b$) have a unique globally asymptotically stable fixed point; $w>1$ implies that the fixed point for $w<1$ becomes unstable and TLN($W,b$) has two more asymptotically stable fixed point. If $n_{I}$ is odd, TLN($W,b$) only has a unique fixed point which is asymptotically stable when $w<\\frac{1}{cos(\\pi/n)}$ (globally when $w<1$) and unstable when $w>\\frac{1}{cos(\\pi/n)}$.\n\n##### Remark 3\n\nIn Theorem 2, we assume that the external inputs are absent for excited nodes. Assume that the external input to any excited node, say node $a_{k}<i<a_{k+1}$, is strictly positive. Then, bounding its dynamics as in Lemma 1, we know that its activity will be more than bi. Hence, the next inhibited node $a_{k+1}$ can be silenced forever if\n\n$$\nb_{i}\\prodj=ia_{k+1}\u22121w_{j}>b_{a_{k+1}},\n$$\n\nthus destroying the cycle structure and thus preventing oscillation from emerging.\n\nOn the other hand, if the external inputs to excited nodes are strictly negative, Theorem 2 conclusion will be similar but now with condition described in Equation 4 replaced by\n\n$$\nb_{a_{k}}\\prodi=a_{k}a_{k+1}\u22121w_{i}\u2212\\sumj=a_{k}+1a_{k+1}\u22121b_{j}\\prodi=ja_{k+1}\u22121w_{i}<b_{a_{k+1}}.\n$$\n\nThis means that cycles with even (odd) inhibitory nodes need strong enough connections to generate multi-stability (limit cycle). We now clarify that the latter condition relates to weights\u2019 strength. With $w=(w_{1},\u22ef,w_{n})$ and using the set of functions increasing functions $(f_{i})_{1\\leqi\\leqn}$ such that\n\n$$\nf_{i}^{w,b}(x)=w_{i\u22121}x_{i\u22121}\u2212b_{i}\n$$\n\none can write the last condition as\n\n$$\nf_{a_{k+1}}^{w,b}\u2218\u22ef\u2218f_{a_{k}}^{w,b}(b_{a_{k}})<0.\n$$\n\nHence, the left term is increasing with any weight strength.\n\nOne should also note that under this negative input assumption to excited nodes, when weights are weak, the support of the fixed point might be different from $[n]$. In particular, some excited nodes might not belong to the support.\n\n##### Remark 4\n\nWhen the decay rates are not the same (here all of them are \u22121), similar results hold but then the conditions for stability are more difficult to state precisely. Finally, when considering the EI network (two nodes), the system always admits to a unique globally asymptotically stable fixed point with support ${1,2}$. Indeed, it is easy to show that the system will always reach the domain where the inhibitory node is small enough so that one can remove the threshold function in Equation 1 and thus the eigenvalues of the Jacobian matrix are $\\pmi\u2062\\sqrt{w_{1}\u2062w_{2}}-1$. No oscillations are then possible, which is an easy example to show that negative loops are not sufficient to generate oscillation in non smooth dynamical systems.\n\nSimilar results have been shown by Gouz\u00e9, 1998; Snoussi, 1998. Considering dynamical systems of the form $x\u02d9=f\u2062(x)$ where $f$ is a continuously differentiable function on a given open convex set and $f$ has a constant sign Jacobian matrix, they used graph theory methods to show that negative loop in this matrix is a necessary condition to generate oscillations. In our case, $f$ is not continuously differentiable, the Jacobian matrix elements can change sign within the state space and we show that there is a need of additional constraints for oscillations to arise. A formal proof of the aforementioned theorems is provided in Appendix A by using classical dynamical theory tools.\n\n### Intuition behind the proof of the theorems\n\nThe idea behind our proof can be explained graphically. We assume that nodes cannot oscillate due to their intrinsic activity and a fixed external input only drives them to a non-zero activity which does not change over time. Therefore, they need input from their pre-synaptic (upstream) nodes to change their state in a periodic manner to generate oscillations. In such a network, if we perturb the node i with a pulse-like input, it is necessary that the perturbation travels through the network and returns to the node i with a 180\u00b0 phase shift (i.e. with an inverted sign). Otherwise, the perturbation dies out and each node returns to a state imposed by its external input.\n\nIn a network without directed cycles, it is possible to sort the nodes into smaller groups where nodes do not connect to each other (Figure 2a). That is, a network with no directed cycles, can be rendered as a feed-forward network in which the network response by definition does not return to the node (or group) that was perturbed. Such a network can only oscillate when the intrinsic dynamics of individual nodes allow for oscillatory dynamics.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig2-v1.jpg)\n\n**Figure 2.:** (a) A visual representation of why directed cycles are important in network oscillation. By rearranging all nodes, any network without directed cycles can be seen as a feed-forward network which will make the system reach a stable fixed point. (b) An intuitive explanation of the odd inhibitory cycle rule by showing the activities of two 6-node-loops. Odd inhibitory connections (bottom) can help the system oscillate, while even inhibitory connections has the opposite effect.\n\nHowever, having a directed cycle is no guarantee of oscillations because network activity must return to the starting node with a 180\u00b0 phase shift. This requirement puts a constraint on the number of inhibitory connections in the cycles. When we assume that there are no delays (or the delay is constant) in the connections, excitatory connections do not introduce any phase shift, however, inhibitory connections shift the phase by 180\u00b0 (in the simplest case invert the sign of the perturbation). Given this, when a cycle has an even number of inhibitory connections the cycle cannot exhibit oscillations (Figure 2b,top). However, replacing an inhibitory connection by an excitatory one can render this cycle with an ability to oscillate (Figure 2b, bottom). Therefore, odd number of inhibitory appears to be necessary for oscillation to emerge.\n\n### The effect of network parameters on oscillations\n\nTo test the validity of our theorems in more realistic biological neuronal networks, we numerically simulated the dynamics of the Wilson-Cowan model. Specifically, we investigated the role of synaptic transmission delays, synaptic weights, external inputs and self-connection in shaping the oscillations when the network has directed cycles. In particular, we focused on two networks: the III motif with three inhibitory nodes (odd inhibitory links) and the EII motif with one excitatory and two inhibitory nodes (even inhibitory links).\n\nOur numerical simulation showed that for a wide range of parameters (synaptic delays, synaptic weights, external input and self-inhibition), while III network showed oscillations, EII network only resulted in transient oscillations (Figure 3, Figure 3\u2014figure supplements 1 and 2). The oscillation frequency however depended on the exact value of the synaptic delays, synaptic weights and external inputs. For instance, increasing the synaptic delay reduced the oscillation frequency (Figure 3b). Synaptic delays play a more important role in shaping the oscillations in an EI type network (see Figure 3\u2014figure supplement 3, Appendix 2\u2014table 1). In networks with even number of inhibitory connections (e.g. EII, EEE, II), synaptic delays are the sole mechanism for initiating oscillations, however, unless delays are precisely tuned such oscillations will remain be transient (see Figure 3\u2014figure supplement 2). The effect of increasing the synaptic strength was contingent on the external inputs. In general, increasing the synaptic strength resulted in a reduction in the oscillation frequency (Figure 3c). Next, oscillation frequency changed in a non-monotonic fashion as a function of external input irrespective of the choice of other parameters (Figure 3d). Typically, a mid-range input strength resulted in maximum oscillation frequency. Finally, increasing the self-connection of nodes increased the oscillation frequency but beyond a certain self-connection the node was completely silenced and it changed the network topology and oscillations disappeared (Figure 3e).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig3-v1.jpg)\n\n**Figure 3.:** (a) The changed network parameters are shown in the table. Red (green) connections are inhibitory (excitatory) and black arrows are the external inputs. (b-e) We systematically varied the synaptic delay time b, synaptic weights c, external input d, and self-connection e. These parameters were varied simultaneously for all the synapses i.e. in each simulation all synapses were homogeneous. Green, orange, red and turquoise respectively show the effect of synaptic delay, synaptic strength, external input and self-inhibition. See the Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 3 for more detailed results about III and EI network motifs.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The controlled properties in motif III, including delay time a, synaptic weights b, external input c, and self-connection d, are denoted successively by green, orange, red and blue. We controlled two factors once at a time to observe the reaction of oscillation frequency with sketch maps on the right as conclusions.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The synaptic delays are varied from 2ms to 10ms in motifs II, EEE, and EII, with corresponding external inputs to nodes being [4, 4], [2.2, 2, 1.8], and [3, 3, 3].\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The controlled properties in motif EI, including delay time a, synaptic weights b, external input c, and self-connection d, are denoted successively by green, orange, red and blue. We controlled two factors once at a time to observe the reaction of oscillation frequency with sketch maps on the right as conclusions.\n\nOverall, these results are consistent with our rule that odd number of inhibitory nodes and strong enough connections are necessary to induce oscillations in a directed cycle. The actual frequency of oscillations depends on specific network parameters.\n\n### Oscillators in the cortex-basal ganglia network\n\nNext, we use our theorem to explain recent experimental observations about the mechanisms underlying the emergence of oscillations in the BG. Emergence of 15\u201330 \u2009Hz (beta band) oscillations in the cortico-basal ganglia (CBG) network is an ubiquitous feature of PD Raz et al., 2000; Bergman et al., 1998; Sharott et al., 2014; Neumann et al., 2016. Based on their connectivity and activity subthalamic nucleus (STN) and the globus pallidus externa (GPe) subnetwork has emerged as the most likely generator of beta oscillations Plenz and Kital, 1999; Bevan et al., 2002. The STN-GPe subnetwork becomes oscillatory when their mutual connectivity is altered Terman et al., 2002; Holgado et al., 2010 or neurons become bursty Tachibana et al., 2011; Bahuguna et al., 2020 or striatal inputs to GPe increase Kumar et al., 2011; Mirzaei et al., 2017; Sharott et al., 2017; Chakravarty et al., 2022. However, oscillations might also be generated by the striatum McCarthy et al., 2011, by the interaction between the direct and hyperdirect pathways Leblois et al., 2006 and even by cortical networks that project to the BG (Brittain and Brown, 2014). Recently, Crompe et al., 2020 used optogenetic manipulations to shed light on the mechanisms underlying oscillation generation in PD. They showed that GPe is essential to generate beta band oscillations while motor cortex and STN are not. These experiments force us to rethink the mechanisms by which beta band oscillations are generated in the CBG network.\n\nTo better understand when GPe and/or STN are essential for beta band oscillations, we identified the network motifs which fulfill the odd inhibitory cycle rule. For this analysis, we excluded D1 SPNs because they have a very low firing rate in the PD condition Sharott et al., 2017. In addition, cortex is assumed as a single node in the CBG network.\n\nThe CBG network can be partitioned into 246 subnetworks with 2, 3, 4, 5, 6, or 7 nodes (see Figure 4\u2014figure supplements 1\u20136). Among these partitions, there are five loops (or cycles) in the CBG network with one or three inhibitory projections: Proto-STN, STN-GPi-Th-cortex, STN-Arky-D2-Proto, Proto-Arky-D2, Proto-FSN-D2, and Proto-GPi-Th-Cortex-D2 (Figure 4a). One or more of these 6 loops appeared in 96 (out of 246) subnetworks of CBG (see Figure 4b, colors indicate different loops). Larger subnetworks consisting of 5 and 6 nodes have multiple smaller subnetworks (with 2 or 3 nodes) that can generate oscillations (boxes with multiple colors in Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig4-v1.jpg)\n\n**Figure 4.:** (a) CBG structure with red lines denoting inhibition and green lines denoting excitation, along with five potential oscillators based on the odd inhibitory cycle rule. (b) Oscillation in all BG motifs from 2 nodes to 6 nodes based on the odd inhibitory cycle rule. Each grid represents a separate motif. We use different colors to mark potential oscillators in each motif in BG, and each color means an oscillator from panel a. For more details, see Figure 4\u2014figure supplements 1\u20136. (c) The reaction of oscillation frequency to different external inputs to D2 and STN in a BG subnetwork. External inputs to Proto and Arky are 1 and 3, respectively. (d) Same thing as c but ruining the connection from D2 to Proto. (e) Same thing as c but destroying the connections from STN and increasing the input to Proto from 1 to 4.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Potential oscillating motifs behind these subnetworks are marked with different colors. Yellow: motif Proto-STN; Orange: motif STN-GPi-Th-cortex; Blue: motif Proto-Arky-D2; Green: motif Proto-FSN-D2; Purple: motif Proto-GPi-Th-Cortex-D2.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Potential oscillating motifs behind these subnetworks are marked with different colors. Yellow: motif Proto-STN; Orange: motif STN-GPi-Th-cortex; Blue: motif Proto-Arky-D2; Green: motif Proto-FSN-D2; Purple: motif Proto-GPi-Th-Cortex-D2.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Potential oscillating motifs behind these subnetworks are marked with different colors. Yellow: motif Proto-STN; Orange: motif STN-GPi-Th-cortex; Blue: motif Proto-Arky-D2; Green: motif Proto-FSN-D2; Purple: motif Proto-GPi-Th-Cortex-D2.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Potential oscillating motifs behind these subnetworks are marked with different colors. Yellow: motif Proto-STN; Orange: motif STN-GPi-Th-cortex; Blue: motif Proto-Arky-D2; Green: motif Proto-FSN-D2; Purple: motif Proto-GPi-Th-Cortex-D2.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Potential oscillating motifs behind these subnetworks are marked with different colors. Yellow: motif Proto-STN; Orange: motif STN-GPi-Th-cortex; Blue: motif Proto-Arky-D2; Green: motif Proto-FSN-D2; Purple: motif Proto-GPi-Th-Cortex-D2. labelfig:bg6nodes.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Potential oscillating motifs behind these subnetworks are marked with different colors. Yellow: motif Proto-STN; Orange: motif STN-GPi-Th-cortex; Blue: motif Proto-Arky-D2; Green: motif Proto-FSN-D2; Purple: motif Proto-GPi-Th-Cortex-D2.\n\nBased on our odd inhibitory cycles in BG, we found three oscillatory subnetworks which do not involve the STN (Figure 4a, cyan, green and purple subnetworks). However, each of these oscillatory subnetworks involves Prototypical neurons (from the GPe) which receive excitatory input from STN. Therefore, it is not clear whether inhibition of STN can affect oscillations or not. To address this question, we first simulated the dynamics of a four-node motif (Figure 4c top) using the Wilson-Cowan type model (see Methods). In this subnetwork, we have three cycles: Proto-STN loop with one inhibitory connection, Proto-STN-Arky-D2 loop with three inhibitory connections and Proto-Arky-D2 with three inhibitory connections.\n\nWe systematically varied external inputs to the STN and D2-SPNs and measured the frequency of oscillations (see Methods). We found that for weak inputs to the D2-SPNs, the Proto-STN subnetwork generated oscillations for weak positive input (Figure 4c bottom). However, as the input to D2-SPNs increased, the oscillation frequency decreased and oscillations were observed even for very strong drive to STN (Figure 4c bottom). That is, in this model, both Proto-STN and Proto-D2-Arky subnetworks compete for oscillations, which subnetwork wins depending on their inputs. To disentangle the oscillations of each of these two subnetworks, we performed \u2018lesion\u2019 experiments in our model (see Methods). These experiments also mimicked lesions performed in non-human primates Tachibana et al., 2011.\n\nWhen we removed the D2-SPN to Proto projections, the network could oscillate but only because of the Proto-STN subnetwork (Figure 4d). In this setting, we get relatively high-frequency beta band oscillations but only for a small range of excitatory inputs to the STN (Figure 4d, bottom). In this setting, inhibition of STN would certainly abolish any oscillation. Next, we removed the STN output (equivalent to inhibition of STN), the Proto-D2-Arky subnetwork generated oscillations for weak positive inputs to the D2-SPNs (Figure 4e, bottom). Note that unlike in Figure 4c, here we injected additional input to Proto to compensate for the loss of excitatory input from STN and to ensure that it had sufficient baseline activity. The frequency of Proto-D2-Arky oscillations was smaller than that observed for the Proto-STN subnetwork because the former involves a three synapses loop. However, as we have shown earlier, frequency of oscillation can be changed by scaling the connection weights or external inputs (Figure 3). Overall, these results suggest that, in principle, it is possible for CBG network to oscillate even when STN is removed from the network.\n\n### Oscillations in model of basal ganglia with spiking neurons\n\nThus far we have only illustrated the validity of our theorems in a firing rate-based model. To be of any practical value to brain science, it is important to check whether our theorems can also help in a network with spiking neurons. To this end, we simulated the two subnetworks with 3 inhibitory connections: Proto-D2-FSN and Proto-D2-Arky (see Methods). These subnetworks were simulated using a previous model of BG with spiking neurons Chakravarty et al., 2022.\n\nThe subnetworks Proto, Arky, D2-SPN, FSN have very little recurrent connectivity to oscillate on their own. We provided Poisson type external input. All neurons in a subnetwork received the same input rate but a different realization of the Poisson process. Both Proto-D2-FSN (Figure 5a) and Proto-D2-Arky (Figure 5b) subnetworks showed $\\beta$-band oscillations. In the loop Proto-D2-FSN, D2-SPN neurons have a relatively high firing rate. This could be a criterion to exclude this loop as a potential contributor to the beta oscillations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/88777/elife-88777-fig5-v1.jpg)\n\n**Figure 5.:** (a-b) Average peristimulus time histograms (PSTH) of all neurons in a Proto-FSN-D2 and (b) Proto-Arky-D2 motifs under Parkinson condition with power spectral density (PSD) at the top right. (c) PSTH of Proto and STN in a BG subnetwork with motif Proto-Arky-D2 as the oscillator during different STN inhibition. (d) Same thing as (c) but changing the oscillator from Proto-Arky-D2 to Proto-STN.\n\nNext, we mimicked the STN inhibition experiments performed by Crompe et al., 2020 in our model. To this end, we simulated the dynamics of BG network excluding D1-SPNs (because of their low firing rate in PD condition) and FSN (because with FSNs in the oscillation loop, D2-SPNs may have non-physiological firing rates). In this reduced model of BG, we changed inputs to operate in a mode where either Proto-D2-Arky (Figure 5c) or Proto-STN (Figure 5d) loop was generating the oscillations. In both cases, we systematically increased the inhibition of STN neurons.\n\nIn the Proto-D2-Arky mode, as we inhibited STN neurons, firing rate of the Proto neurons decreased and oscillations in STN population diminished but Proto neurons showed clear beta band oscillations (Figure 5c). By contrast, and as expected when STN-Proto loop was generating the oscillations, increasing the STN inhibition abolished the oscillations in both STN and Proto neurons (Figure 5d). In STN-Proto loop, when STN is inhibited, there is no cycle left in the network and therefore oscillations diminished, whereas the Proto-D2-Arky loop remains unaffected by the STN inhibition (except for a change in the firing rate of the Proto neurons). As shown in Figure 4c, whether oscillations are generated by the Proto-D2-Arky or STN-Proto loop depends on the relative input to the D2 or STN neurons. So it is possible that in rodents, D2-SPN have stronger input from the cortex than STN and therefore, oscillations survive despite near complete inhibition of STN.\n\n## Discussion\n\nHere, we prove in a single cycle TLN model and illustrate with numerical simulations of biological networks that when the number of inhibitory nodes in a directed cycle is odd and connections are strong enough, then the system has the potential to oscillate. In 1981, Thomas, 1980 conjectured that at least one negative feedback loop (i.e. a loop with an odd number of repressors) is needed for gene regulatory networks to have periodic oscillating behavior. This conjecture was proven for Boolean dynamical systems by Snoussi, 1998 and Gouz\u00e9, 1998. But their proof required that node transfer-function is differentiable everywhere. We here prove a more complete theorem for a case where node transfer-function is threshold-linear as is the case for many network in the brain. Thus, together with previous results of Snoussi, 1998 and Gouz\u00e9, 1998 we further expand the scope within which we can comment on the potential of a network to generate oscillation based only on the connectivity structure alone. In addition, we complete this condition by one on weights\u2019 strength stating that the latter needs to be strong enough for the system to possibly oscillate. Eventually, oscillations can be quenched by adding positive external input to excited nodes.\n\nA key assumption of our analysis is that there are no delays in the network. Indeed, delays within and between subnetwork connections can have a big effect on the oscillations Kim et al., 2020. In the numerical simulations of BG network, we included biologically realistic synaptic delays (i.e. connection delays were shorter than the time constants of the neurons). Our results suggest that such delays do not influence our results and they only determine the oscillation frequency. But it is not possible to comment on how the results may change when delays become longer than the time constant of the node.\n\n### Interactions between input and network structure\n\nPrevious models suggest that when we excite the excitatory node or inhibit the inhibitory node oscillations can emerge and strengthen Kumar et al., 2011; Ledoux and Brunel, 2011. By contrast, when we inhibit the excitatory node or excite the inhibitory node, oscillations are quenched. This can be summarised as the \u2019Oscillations Sign Rule\u2019. Let us label the excitatory population as positive and inhibitory as negative. Let us also label excitatory inputs as positive and inhibitory inputs as negative. Now if we multiple the sign of the node and sign of the stimulation, we can comment on the fate of oscillations in a qualitative manner. For example, inhibition of inhibitory nodes would be \u2212 \u00d7 \u2212 = + that is oscillations should be increased and when we inhibit excitatory nodes, it would be \u2212 \u00d7 + = \u2212 that is oscillations should be decreased. The \u2019Oscillation sign rule\u2019 scales to larger network with more nodes. With the \u2019Odd Cycle Rule\u2019 as we have shown we can comment on whether a directed cycle will oscillate or not from the count of inhibitory links. When we combine the \u2019Oscillations Sign Rule\u2019 with the \u2019Odd Cycle Rule\u2019 we can get a more complete qualitative picture of whether a stimulating a node in a network will generate oscillations or not.\n\n### Interaction between node properties and network structure\n\nIn our proof we have assumed that nodes follow rather simple dynamics and have a threshold-linear transfer-function. In reality nodes in physical, chemical and biological systems can have more complex dynamics. For instance, biological neurons have the property of spike frequency adaptation or rebound spiking. Similarly, synapses in the brain can increase or decrease their weights based on the recent history of inputs which is referred to as the short-term-facilitation or short-term-depression of synapses Stevens and Wang, 1995. Such biological properties can be absorbed in the network structure in the form of an extra inhibitory or excitatory connection. When nodes can oscillate given their intrinsic dynamics then the question becomes more about whether a network structure can propagate oscillations to other nodes.\n\n### Oscillations in the basal ganglia\n\nWe applied our results to understand the mechanisms underlying the emergence of PD-related pathological oscillations in the BG. Given that there are 8 key neuron populations in the BG, we enumerated 238 possible directed cycles. From 2-node-motifs to 6-node-motifs, our odd cycle rule identified 88 potential directed cycles that can generate oscillations. Among these, 81 cycles feature GPe (either Proto or Arky type or both) and 66 feature STN. Which specific cycle underlies oscillations depends on the exact input structure. For instance, when input to STN is higher than the D2 neurons, the STN-GPe network generates oscillations. But when inputs to D2 neurons are stronger, the D2-Proto-Arky cycle can become the oscillator. That is, STN is not necessary to generate oscillations in the BG. Our results also suggest that besides focusing on the network connectivity, we should also estimate the inputs to different nodes in order to pinpoint the key nodes underlying the PD-related pathological oscillations - that would be the way to reconcile the recent findings of Crompe et al., 2020 with previous results.\n\nWe would like to note that recently, Ortone et al., 2023 and Azizpour Lindi et al., 2023 have provided a more quantitative explanation of the experimental observation by Crompe et al., 2020. They also eventually resort to the D2-Proto-Arky cycle to explain BG oscillations in the absence of STN. Our work provides the necessary theory to explain their results.\n\n### Beyond neural networks\n\nIn this work, we have used the odd cycle rule to study oscillations in BG. However, oscillatory dynamics and the odd cycle rule show up in many chemical, biological and even social systems such as neuronal networks Bel et al., 2021, psychological networks Greenwald et al., 2002, social and political networks Leskovec et al., 2010; Milo et al., 2004; Heider, 1946; Cartwright and Harary, 1956, resting-state networks in autism Moradimanesh et al., 2021 and gene networks Farcot and Gouz\u00e9, 2010; Allahyari et al., 2022. In fact, originally Thomas\u2019 conjecture Thomas, 1980 about the structural conditions for oscillations was made for gene regulatory networks. Therefore, we think that insights obtained from our analytical work can be extended to many other chemical, biological and social networks. It would be interesting to check to what extent our prediction of quenching oscillation by exciting the excitatory nodes holds in other systems besides biological neuronal networks.\n\n## Methods\n\nTo study the emergence of oscillations in the BG, we used three models: Threshold-Linear Network (TLN), Wilson-Cowan model and network with spiking neurons. TLN model (Equation 1) was used here to rigorously prove that simple conditions, such as the odd inhibitory cycle rule, can lead to oscillations (Theorems 1 and 2). Wilson-Cowan type firing rate-based model was used to find the structural constraints on oscillations and to determine the effect of network properties (such as delays, synaptic weights, external inputs, and self-inhibition) on the emergence of oscillations. Finally, to demonstrate the validity of the odd inhibitory cycle rule in a more realistic model, we use a network with spiking neurons.\n\n### Wilson-Cowan dynamics\n\nIn the firing rate-based models, we reduced each CBG subnetwork to a single node. To describe firing rate dynamics of such a node, we used the classic Wilson-Cowan model Wilson and Cowan, 1972\n\n$$\n\\tau\\frac{dr_{i}(t)}{dt}=\u2212r_{i}(t)+F(\\sumj=1nw_{ij}r_{j}+I_{i}^{ext})\n$$\n\nwhere $r_{i}\u2062(t)$ is the firing rate of the ith node, $\\tau$ is the time constant of the population activity, $n$ is the number of nodes (or subnetworks), $w_{i\u2062j}$ is the strength of connection from node $j$ to $i$, and $I_{i}^{e\u2062x\u2062t}$ is the external input to the population. $F$ is a nonlinear activation function relating output firing rate to input, given by\n\n$$\nF(x)=\\frac{1}{1+e^{\u2212a(x\u2212\\theta)}}\u2212\\frac{1}{1+e^{a\\theta}}\n$$\n\nwhere the parameter \u03b8 is the position of the inflection point of the sigmoid, and a/4 is the slope at \u03b8. Here, \u03c4, \u03b8, and a are set as 20, 1.5, and 3. Other parameters of the model varied with each simulation. The simulation specific parameters for Figure 3 are shown in Tables 1 and 2 and for Figure 4 are shown in Table 3, respectively.\n\n**Table 1.**\n Parameters of III network for Figure 3, Figure 3\u2014figure supplement 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Populations</th>\n      <th colspan=\"3\">Synaptic weights</th>\n      <th rowspan=\"2\">External input</th>\n      <th rowspan=\"2\">Delay</th>\n    </tr>\n    <tr>\n      <th>I1</th>\n      <th>I2</th>\n      <th>I3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I1</td>\n      <td>0(\u221220\u22120)</td>\n      <td>0</td>\n      <td>\u221215(\u221220\u22120)</td>\n      <td>6(0\u221220)</td>\n      <td>0(0\u221210)</td>\n    </tr>\n    <tr>\n      <td>I2</td>\n      <td>\u221215(\u221220\u22120)</td>\n      <td>0(\u221220\u22120)</td>\n      <td>0</td>\n      <td>6(0\u221220)</td>\n      <td>0(0\u221210)</td>\n    </tr>\n    <tr>\n      <td>I3</td>\n      <td>0</td>\n      <td>\u221215(\u221220\u22120)</td>\n      <td>0(\u221220\u22120)</td>\n      <td>6(0\u221220)</td>\n      <td>0(0\u221210)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Note: The range in parentheses indicates the variety of parameters when controlled._\n\n**Table 2.**\n Parameters of EII network for Figure 3.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Populations</th>\n      <th colspan=\"3\">Synaptic weights</th>\n      <th rowspan=\"2\">External input</th>\n      <th rowspan=\"2\">Delay</th>\n    </tr>\n    <tr>\n      <th>E1</th>\n      <th>I1</th>\n      <th>I2</th>\n    </tr>\n    <tr>\n      <th>E1</th>\n      <th>0</th>\n      <th>0</th>\n      <th>\u221215(\u221220\u22120)</th>\n      <th>6</th>\n      <th>0(0\u221210)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I1</td>\n      <td>\u221215(\u221220\u22120)</td>\n      <td>0(\u221220\u22120)</td>\n      <td>0</td>\n      <td>6(0\u221220)</td>\n      <td>0(0\u221210)</td>\n    </tr>\n    <tr>\n      <td>I2</td>\n      <td>0</td>\n      <td>\u221215(\u221220\u22120)</td>\n      <td>0(\u221220\u22120)</td>\n      <td>6(0\u221220)</td>\n      <td>0(0\u221210)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Note: The range in parentheses indicates the variety of parameters when controlled._\n\n**Table 3.**\n Parameters for Figure 4 (Wilson-Cowan model).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Populations</th>\n      <th colspan=\"4\">Synaptic weights</th>\n      <th rowspan=\"2\">External input</th>\n      <th rowspan=\"2\">Delay</th>\n    </tr>\n    <tr>\n      <th>(D2)</th>\n      <th>(Arky)</th>\n      <th>(Proto)</th>\n      <th>(STN)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>(D2)</td>\n      <td>0</td>\n      <td>\u221215</td>\n      <td>0</td>\n      <td>0</td>\n      <td>4(0\u221220)</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>(Arky)</td>\n      <td>0</td>\n      <td>0</td>\n      <td>\u221215</td>\n      <td>15</td>\n      <td>3</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>(Proto)</td>\n      <td>\u221215</td>\n      <td>0</td>\n      <td>\u22128</td>\n      <td>15</td>\n      <td>1/4</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>(STN)</td>\n      <td>0</td>\n      <td>0</td>\n      <td>\u221215</td>\n      <td>5</td>\n      <td>4(0\u221220)</td>\n      <td>2</td>\n    </tr>\n  </tbody>\n</table>\n\n_The external input to Proto is 1 in Figure 4c and 4d while it was changed into 4 in Figure 4e to help motif Proto-Arky-D2 oscillate._\n\n### Network model with spiking neurons\n\nThe BG network with spiking neurons was taken from a previous model by Chakravarty et al., 2022. Here, we describe the model briefly and for details we refer the reader to the paper by Chakravarty et al., 2022.\n\n#### Spiking neuron model\n\nHere, we excluded D1-SPNs because they have a rather small firing rate in PD conditions. The striatal D2-type spiny neurons (D2-SPN), fast-spiking neurons (FSNs) and STN neurons were modelled as standard LIF neurons with conductance-based synapses. The membrane potential $V^{x}\u2062(t)$ of these neurons was given by:\n\n$$\nC_{m}^{x}\\frac{dV^{x}(t)}{dt}=I_{e}(t)+I_{syn}(t)\u2212g_{L}^{x}[V^{x}(t)\u2212V_{reset}^{x}]\n$$\n\nwhere $x\\in{D2\u2212SPN,FSN,andSTN}$, $I_{e}\u2062(t)$ is the external current induced by Poisson type spiking inputs (see below), $I_{s\u2062y\u2062n}\u2062(t)$ is the total synaptic input (including both excitatory and inhibitory inputs). When $V^{x}$ reached the threshold potential $V_{t\u2062h}^{x}$, the neuron was clamped to $V_{r\u2062e\u2062s\u2062e\u2062t}^{x}$ for a refractory duration  $t_{r\u2062e\u2062f}$ = 2ms. All the parameter values and their meaning for D2-SPN, FSN, and STN are summarized in Appendix 2\u2014tables 2\u20134, respectively.\n\nWe used the LIF model with exponential adaptation (AdEx) to simulate Proto and Arky neurons of the globus pallidus externa (GPe), with their dynamics defined as\n\n$$\nC^{x}\\frac{V^{x}(t)}{dt}=\u2212g_{L}^{x}[V^{x}(t)\u2212V_{reset}^{x}]\u2212w^{x}+I_{syn}^{x}(t)+I_{e}+g_{L}^{x}\u0394_{T}exp\u2061(\\frac{V^{x}(t)\u2212V_{T}^{x}}{\u0394_{T}})\\tau_{w}w\u02d9^{x}=a(V^{x}(t)\u2212V_{reset}^{x})\u2212w^{x}\n$$\n\nwhere $x\\in{Proto,Arky}$. Here when $V^{x}\u2062(t)$ reaches the threshold potential ($V_{t\u2062h}^{x}$), a spike is generated and $V^{x}\u2062(t)$ as well as $w^{x}$ will be reset as $V_{reset}^{x}$, $w^{x}+b$, respectively, where b denotes the spike-triggered adaptation. The parameter values and their meaning for Proto and Arky are specified in Appendix 2\u2014table 5. Neurons were connected by static conductance-based synapses. The transient of each incoming synaptic current is given by:\n\n$$\nI_{syn\u00a0}^{x}(t)=g_{syn\u00a0}^{x}(t)[V^{x}(t)\u2212E_{rev}^{x}]\n$$\n\nwhere $x\\in{D2\u2212SPN,FSN,STN,Arky,andProto}$ is the synaptic reversal potential and $g_{syn}^{x}\u2062(t)$ is the time course of the conductance transient, given as follows:\n\n$$\ng_{syn}^{x}(t)={J_{syn}^{x}\\frac{t}{\\tau_{syn}}exp\u2061(\\frac{\u2212(t\u2212\\tau_{syn})}{\\tau_{syn}}),\u00a0for\u00a0t\\geq00,\u00a0for\u00a0t<0,\n$$\n\nwhere $syn\\in{exc,inh}$, $J_{s\u2062y\u2062n}^{x}$ is the peak of the conductance transient and $\\tau_{syn}$ is synaptic time constant. The synaptic parameters are shown in Appendix 2\u2014table 6.\n\nSome of model parameters were changed to operate the BG model in specific modes dominated by a 2 or 3 nodes cycle. The Appendix 2\u2014table 7 and Appendix 2\u2014table 8 show the parameters of Figure 5c and Figure 5d, respectively.\n\n### External input\n\nEach neuron in each sub-network of the BG received external input in the form of excitatory Poisson-type spike trains. This input was provided to achieve a physiological level of spiking activity in the network. For more details please see Chakravarty et al., 2022. Briefly, the external input was modelled as injection of Poisson spike-train for a brief period of time by using the inhomogeneous_poisson_generator device in NEST. The strength of input stimulation can be controlled by varying the amplitude of the EPSP from the injected spike train.\n\n### STN inhibition experiment\n\nWe set a subnetwork of BG to study how STN inhibition affects oscillation when different motifs dominate the system. The connections and external inputs to each neuron in Figure 5c and 5d are shown in Appendix 2\u2014tables 7 and 8. To simulate the increasing inhibition to STN, the external input to STN was reduced from 1 pA to \u201399 pA in Figure 5c and from 30 pA to \u201350 pA in Figure 5d.\n\n### Data analysis\n\nThe estimate of oscillation frequency of the firing rate-based model was done using the power spectral density calculated by pwelch function of MATLAB. The spiking activity of all the neurons in a sub-population were pooled and binned (rectangular bins, bin width = 0.1ms). The spectrum of spiking activity was then calculated for the binned activity using pwelch function of MATLAB.\n\n### Simulation tools\n\nWilson-Cowan type firing rate-based model was simulated using Matlab. All the relevant differential equations were integrated using Euler method with a time step of 0.01ms. The network of spiking neurons was simulated in Python 3.0 with the simulator NEST 2.20 Fardet et al., 2020. During the simulation, differential equations of BG neurons were integrated using Runga\u2013Kutta method with a time step of 0.1ms.\n\n### Code availability\n\nThe code to simulate key results is available at https://github.com/jiezang97/Code-for-Structural-constraints-on-the-emergence-of-oscillations, copy archived at Zang, 2024.\n",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tatjana Tchumatchenko, University Medical Center of the Johannes Gutenberg University Mainz Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.88777.3.sa0](https://doi.org/10.7554/eLife.88777.3.sa0)\n\nThe present study offers valuable insights into the emergence of oscillations in neural networks. It underscores the importance of achieving a delicate balance between excitatory and inhibitory links, and deals with the topological conditions for oscillations. The study provides solid evidence in simple networks based on formal mathematical theory and advanced simulations, but the wider implications to biological networks would require a more detailed investigation into delays and nonlinearities.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.88777.3.sa1](https://doi.org/10.7554/eLife.88777.3.sa1)\n\nSummary:\n\nAuthors study appearance of oscillations in motifs of linear threshold systems, coupled in specific topologies. They derive analytically conditions for appearance of oscillations, in the context of excitatory and inhibitory links. They also emphasize the higher importance of the topology, compared to the strength of the links, though it is not straightforward to apply this for brain networks where the weights can be distributed several orders of magnitude. Finally the results are confirmed with WC oscillators. The findings are to some extent confirmed with spiking neurons, though here results are less clear.\n\nOverall, the results are sound from a theoretical perspective, but I still find hard to believe that they are of significant relevance for biological networks, or in particular for the oscillations of BG-thalamus-cortex loop in PD. I find motifs in general to be too simplistic for multiscale and generally large networks as it is the case in the brain. Moreover, the division on regions is more or less arbitrary by definition, and having such a strong dependence on odd/even number of inhibitory links is far from reality. Another limitation is the fact that the cortex is considered as a single node. Similarly, decomposing even such a coarse network in all possible (238 in this case) motifs doesn't seem of much relevance, when I'd assume that the emergence of pathological rhythms is more of an emergent phenomena.\n\nStrengths:\n\nFrom the point of nonlinear dynamics, the results are solid, and the intuition behind the proofs of the theorems is well explained.\n\nWeaknesses:\n\nAs stated in the summary, I find the work to be too theoretical without a real application for the brain dynamics, where the networks are generally very large. The odd/even number rule is too strict, and talking about fixed and definite number of cycles in actual brain seems too simplistic. Moreover, the cortex is considered as a single node, and finally the impact of the delays is ignored even though they define the synchronizability of the brain network, and previous works on the amplitude reduction due to the time-delays in difference-coupled networks of oscillators is not mentioned.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.88777.3.sa2](https://doi.org/10.7554/eLife.88777.3.sa2)\n\nThe authors present here a mathematical and computational study of the topological/graph theory requirements to obtain sustained oscillations in neural network models. A first approach mathematically demonstrates that, for a given network of interconnected neural populations (understood in the sense of dynamical systems) requires an odd number of inhibitory populations to sustain oscillations. The authors extend this result via numerical simulations of (i) a simplified set of Wilson-Cowan networks, (ii) a simplified circuit of the cortico-basal ganglia network, and (iii) a more complex, spike-based neural network of basal ganglia network, which provides insight on experimental findings regarding abnormal synchrony levels in Parkinson's Disease (PD).\n\nThe work elegantly and effectively combines a solid mathematical proof with careful numerical simulations at different levels of description, which is uncommon and provides additional layers of confidence to the study. Furthermore, the authors included detailed sections to provide intuition about the mathematical proof, which will be helpful for readers less inclined to the perusal of mathematical derivations. Its insightful and well-informed connection with a practical neuroscience problem, the presence of strong beta rhythms in PD, elevates the potential influence of the study and provides testable predictions.\n\nIn its updated form, the authors have solved the most pressing issues of the study, by acknowledging the limitations of their work regarding the effects of delays in oscillations, and addressing some of these effects in new simulations. Although some interesting simulations are still not presented in the revised version, they could constitute the focus of future work to complement the conclusions presented here. The absence of explanations for some of the figures and panels has been corrected, and the issues with grammar and lack of clarity have been improved. This important work is therefore now improved.\n",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a6db1ef9-b41e-42a9-a02b-a6163e8a7295",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C1",
+      "claim": "Oscillations arise in many real-world systems and are associated with both functional and dysfunctional states.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillations arise in many real-world systems and are associated with both functional and dysfunctional states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about oscillations in real-world systems, supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "d15eb2ad-0233-4875-a2d4-98c5ce8e4c62",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C2",
+      "claim": "An odd number of inhibitory nodes and strong enough connections are necessary to generate oscillations in a single cycle threshold-linear network.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide a proof that uses dynamical system theory to prove that an odd number of inhibitory nodes and strong enough connections are necessary to generate oscillations in a single cycle threshold-linear network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is proven analytically in the manuscript using dynamical system theory (Theorem 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "e7e53ad9-4315-4b10-9a86-d202d9d3e3fd",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C3",
+      "claim": "Oscillations in the brain take part in information transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the brain for instance, oscillations take part in information transfer Fries, 2015; Hahn et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "80634fbb-f69d-483e-bb69-1a903cdab7d5",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C4",
+      "claim": "Persistent beta band (13-30 Hz) oscillations are associated with the pathological symptoms of Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "However, persistent beta band (13-30 Hz) oscillations are associated with the pathological symptoms of Parkinson's disease (PD) Brown et al., 2001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Brown et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "87d1857f-df90-48cd-aac8-b22f7f32b7fc",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C5",
+      "claim": "The Poincar\u00e9\u2013Bendixson theorem is only valid in two dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "The main tool that can be used is the Poincar\u00e9\u2013Bendixson theorem Poincar\u00e9, 1880; Bendixson, 1901 which is only valid in two dimensions, which drastically reduces its applicability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known property of the Poincar\u00e9\u2013Bendixson theorem, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "25c3adf0-49cc-4bbd-bf48-81b2f6ebd507",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C6",
+      "claim": "In most physical, chemical, and biological networks, it is usually not possible to get the correct value of connectivity strength.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in most physical, chemical, and biological networks, it is usually not possible to get the correct value of connectivity strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about the practical limitations in measuring network parameters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "97f86be8-f3c5-4b37-bf26-fbc39798d9a7",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C7",
+      "claim": "It is much easier to know whether two nodes in a system are physically connected and what is the sign (positive or negative) of their interactions than to measure connectivity strength.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, it is much easier to know whether two nodes in a system are physically connected and what is the sign (positive or negative) of their interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical observation about experimental feasibility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "d5055cfa-cef5-4934-a01a-e46bdc3636a1",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C10",
+      "claim": "Thomas conjectured that the assumption on the constant sign of the Jacobian matrix may not be necessary, and having a negative loop in some domain of the phase space should be sufficient to generate oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thomas also conjectured that the assumption on the constant sign of the Jacobian matrix may not be necessary Thomas, 2006, that is having a negative loop in some domain of the phase space should be sufficient to generate oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of Thomas' second conjecture, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "dfed1d48-fe49-4e4e-8461-3ce3cba07322",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C11",
+      "claim": "Oscillations can emerge from a simple two populations, excitatory and inhibitory (EI), network Wilson-Cowan model.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, oscillations can emerge from a simple two populations, excitatory and inhibitory (EI), network Wilson-Cowan model (Ledoux and Brunel, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ledoux and Brunel, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "f3c1ab0c-8e4d-4570-8d2c-67b305380f22",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C12",
+      "claim": "When connections are too weak, a single cycle threshold-linear network cannot oscillate as the system possesses a unique globally asymptotically stable fixed point, regardless of the sign of the loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We show analytically that regardless of the sign of this loop, the system cannot oscillate when connections are too weak as the system possesses a unique globally asymptotically stable fixed point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proven analytically in the manuscript (Theorem 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "220aeb03-30dd-421e-845d-712b30dc91aa",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C13",
+      "claim": "When connections are strong enough in a single cycle threshold-linear network, the system either possesses two asymptotically stable fixed points (positive loop) or a unique unstable fixed point (negative loop).",
+      "claim_type": "EXPLICIT",
+      "source": "However, when connections are strong enough (see Theorem 2), the system either possesses two asymptotically stable fixed points (positive loop) or a unique unstable fixed point (negative loop).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proven analytically in the manuscript (Theorem 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "4bc0ac75-0a29-4c30-99b5-039db0911f21",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C14",
+      "claim": "When a single cycle threshold-linear network has strong enough connections and an odd number of inhibitory nodes, the system can have one of the following long term behaviors: limit cycle, quasi-periodic or chaotic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the system can be shown to be bounded and thus, it has one of the following long term behavior: limit cycle, quasi-periodic or chaotic behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proven analytically in the manuscript (Theorem 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "1b68e792-e7b7-423a-a0cf-5b7275b76ea3",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C15",
+      "claim": "Oscillations in a single cycle threshold-linear network can be shut down by introducing a positive external input to excited nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we can show that such dynamics can be shut down by introducing a positive external input to excited nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proven analytically in the manuscript (Remark 3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "005330b5-7e63-4e66-9cce-d5db74d0f402",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C16",
+      "claim": "The subthalamic nucleus and globus pallidus (STN-GPe) subnetwork is traditionally considered to be the key network underlying the emergence of oscillations in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditionally, the subthalamic nucleus and globus pallidus (STN-GPe) subnetwork is considered to be the key network underlying the emergence of oscillations in PD (Plenz and Kitai, 1996; Terman et al., 2002; Kumar et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "80c91f67-ef01-474c-b76b-64b30cd7cca8",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C17",
+      "claim": "Recent experiments have shown that near complete inhibition of GPe but not of STN is sufficient to quench oscillations in Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent experiments have shown that near complete inhibition of GPe but not of STN is sufficient to quench oscillations (Crompe et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Crompe et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "b5461ba6-9805-45b1-af5c-bb7840b8f57c",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C18",
+      "claim": "There are at least six possible cycles in the Cortex-BG network that have the potential to drive oscillations based on the connectivity structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory suggests that there are at least six possible cycles in the Cortex-BG network that have the potential to drive oscillations based on the connectivity structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the analytical results and network structure analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "80e0faaf-7863-432f-aaa7-1ae30f587f18",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C19",
+      "claim": "GPe is involved in five out of six oscillatory cycles in the Cortex-BG network.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that GPe is involved in five out of six oscillatory cycles and therefore GPe inhibition is likely to affect PD-related oscillations in most cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the network structure analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "631aea40-4e72-4ec3-bb74-f957d8f4f766",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C20",
+      "claim": "A network of two mutually connected excitatory populations will not oscillate but will synchronize.",
+      "claim_type": "EXPLICIT",
+      "source": "If we connect them mutually with excitatory synapses, intuitively we can say that the two-population network will not oscillate. Instead, the two populations will synchronize.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an intuitive explanation based on network dynamics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "b0d889d5-b8d2-4845-bdf5-768bfe38ec8c",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C21",
+      "claim": "A network of two mutually connected inhibitory populations cannot oscillate; one node will emerge as a winner and the other will be suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "If both these nodes are inhibitory, one of the nodes will emerge as a winner and the other will be suppressed Ermentrout, 1992. Hence, a network of two mutually connected inhibitory populations cannot oscillate either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ermentrout, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "85ace7d1-db55-484c-aaf7-71aa01a03a4f",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C22",
+      "claim": "A three population network with three excitatory connections forming a closed loop will synchronize and cannot oscillate.",
+      "claim_type": "EXPLICIT",
+      "source": "When all three connections in the cycle are excitatory, the three populations will synchronize. Essentially, we will have a single population. Thus, these two and three population motifs are not capable of oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an intuitive explanation based on network dynamics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "2b4476b6-0ecd-429e-8288-92a6fd53fd4d",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C23",
+      "claim": "The simplest network motif capable of oscillating consists of two mutually connected nodes: one excitatory and one inhibitory (EI motif).",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest network motif which is capable of oscillating thus consists of two mutually connected nodes: one excitatory and one inhibitory (EI motif: Figure 1a, bottom; Ledoux and Brunel, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "80537476-49bd-4a1d-a018-956bacc612aa",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C24",
+      "claim": "A three population cycle with one inhibitory connection (EEI motif) can be effectively reduced to an EI motif and can therefore oscillate.",
+      "claim_type": "EXPLICIT",
+      "source": "A cycle with one inhibitory connection (EEI motif) can be effectively reduced to an EI motif and can therefore oscillate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on network dynamics principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "11bb8b29-9c5d-4b85-9f2b-5a11b4719137",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C25",
+      "claim": "A three population cycle with two inhibitory connections (EII motif) cannot oscillate because the two inhibitory neurons engage in winner-take-all type dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when there are two inhibitory connections (EII motif, Figure 1a, top), the two inhibitory neurons engage in a winner-take-all type dynamics and the network is not capable of oscillations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1a and explained based on network dynamics principles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "6fa9bd10-3d61-4e9b-af96-9ae78b14e7b5",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C26",
+      "claim": "A three population cycle with three inhibitory connections (III motif) can exhibit oscillations through winner-less-competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, if there are three inhibitory connections (i.e. all three nodes are inhibitory, III motif) the network enters in a winner-less-competition Rabinovich et al., 2001 and can exhibit oscillations (Figure 1a, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "1ca06009-e9ea-4644-902f-195c4b963dd5",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C27",
+      "claim": "A network can generate oscillations if there are one or three inhibitory connections in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "These examples of two or three nodes suggest that a network can generate oscillations if there are one or three inhibitory connections in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization based on the examples provided in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "3d255e5b-3cbb-48d5-bd2f-25006de4ebea",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C30",
+      "claim": "A possible condition for a one cycle TLN to oscillate is that the number of inhibitory nodes is odd when the connection strengths are strong enough.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, Theorem 2 says that a possible condition for the one cycle TLN to oscillate is that the number of inhibitory nodes is odd when the connection strength are strong enough (i.e. Equation 5 and Equation 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct consequence of Theorem 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "c1722192-8e20-4b90-8855-88573f9563f0",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C31",
+      "claim": "When a TLN network has an odd number of inhibitory nodes and strong enough connections, the system has no stable fixed point and has one of limit cycle, quasi-periodic or chaotic behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "In that case, the system has no stable fixed point and from Lemma 1 it is bounded so it has one of limit cycle, quasi-periodic or chaotic behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct consequence of Theorem 2 and Lemma 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "fb3cc6ba-19f6-4dd0-a0c5-6270cd473808",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C40",
+      "claim": "For a wide range of parameters (synaptic delays, synaptic weights, external input and self-inhibition), the III network showed oscillations while the EII network only resulted in transient oscillations in Wilson-Cowan model simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our numerical simulation showed that for a wide range of parameters (synaptic delays, synaptic weights, external input and self-inhibition), while III network showed oscillations, EII network only resulted in transient oscillations (Figure 3, Figure 3\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by numerical simulations shown in Figure 3 and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "62b81050-bd5e-4f95-8952-adedc53e41f9",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C41",
+      "claim": "Increasing the synaptic delay reduced the oscillation frequency in Wilson-Cowan model simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, increasing the synaptic delay reduced the oscillation frequency (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "33ef9cf7-093b-4d8d-9ca1-7aa72bdb3fd0",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C42",
+      "claim": "Synaptic delays play a more important role in shaping the oscillations in an EI type network.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic delays play a more important role in shaping the oscillations in an EI type network (see Figure 3\u2014figure supplement 3, Appendix 2\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "d5918316-f2a4-4203-915e-facf149c03c9",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C43",
+      "claim": "In networks with even number of inhibitory connections (e.g. EII, EEE, II), synaptic delays are the sole mechanism for initiating oscillations, but unless delays are precisely tuned such oscillations will remain transient.",
+      "claim_type": "EXPLICIT",
+      "source": "In networks with even number of inhibitory connections (e.g. EII, EEE, II), synaptic delays are the sole mechanism for initiating oscillations, however, unless delays are precisely tuned such oscillations will remain be transient (see Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "4fab03de-0dd1-4b92-927b-7ed9659b7346",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C44",
+      "claim": "The effect of increasing the synaptic strength on oscillation frequency was contingent on the external inputs in Wilson-Cowan model simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of increasing the synaptic strength was contingent on the external inputs. In general, increasing the synaptic strength resulted in a reduction in the oscillation frequency (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "670c390d-7f51-4652-a42b-091739715c84",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C45",
+      "claim": "Oscillation frequency changed in a non-monotonic fashion as a function of external input in Wilson-Cowan model simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, oscillation frequency changed in a non-monotonic fashion as a function of external input irrespective of the choice of other parameters (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "32e5e5a1-0bb5-4991-8284-22f3a07aa8ef",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C46",
+      "claim": "A mid-range input strength resulted in maximum oscillation frequency in Wilson-Cowan model simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, a mid-range input strength resulted in maximum oscillation frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "cd7be802-9c37-4779-84fb-24c8212fbf4c",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C47",
+      "claim": "Increasing the self-connection of nodes increased the oscillation frequency but beyond a certain self-connection the node was completely silenced and oscillations disappeared in Wilson-Cowan model simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, increasing the self-connection of nodes increased the oscillation frequency but beyond a certain self-connection the node was completely silenced and it changed the network topology and oscillations disappeared (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "db58f60f-af23-49c9-990d-1fe4ab937adb",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C48",
+      "claim": "Emergence of 15\u201330 Hz (beta band) oscillations in the cortico-basal ganglia (CBG) network is an ubiquitous feature of Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Emergence of 15\u201330  Hz (beta band) oscillations in the cortico-basal ganglia (CBG) network is an ubiquitous feature of PD Raz et al., 2000; Bergman et al., 1998; Sharott et al., 2014; Neumann et al., 2016.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "c3505563-b816-4ac2-9e03-50de144a4105",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C49",
+      "claim": "The STN-GPe subnetwork has emerged as the most likely generator of beta oscillations in Parkinson's disease based on connectivity and activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their connectivity and activity subthalamic nucleus (STN) and the globus pallidus externa (GPe) subnetwork has emerged as the most likely generator of beta oscillations Plenz and Kital, 1999; Bevan et al., 2002.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "10599220-4834-4f7d-97c3-8f98a374a214",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C50",
+      "claim": "The STN-GPe subnetwork becomes oscillatory when their mutual connectivity is altered.",
+      "claim_type": "EXPLICIT",
+      "source": "The STN-GPe subnetwork becomes oscillatory when their mutual connectivity is altered Terman et al., 2002; Holgado et al., 2010 or neurons become bursty Tachibana et al., 2011; Bahuguna et al., 2020 or striatal inputs to GPe increase Kumar et al., 2011; Mirzaei et al., 2017; Sharott et al., 2017; Chakravarty et al., 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "7d3e246e-5be7-4ee9-867a-924648a73f02",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C51",
+      "claim": "Oscillations in the basal ganglia might be generated by the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, oscillations might also be generated by the striatum McCarthy et al., 2011, by the interaction between the direct and hyperdirect pathways Leblois et al., 2006 and even by cortical networks that project to the BG (Brittain and Brown, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "ba93b7e5-1e76-4190-9306-a75c209a0e6b",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C52",
+      "claim": "Crompe et al., 2020 showed that GPe is essential to generate beta band oscillations while motor cortex and STN are not.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Crompe et al., 2020 used optogenetic manipulations to shed light on the mechanisms underlying oscillation generation in PD. They showed that GPe is essential to generate beta band oscillations while motor cortex and STN are not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Crompe et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "e86c4f0c-ed6f-464b-95dd-47d077179e34",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C53",
+      "claim": "The CBG network can be partitioned into 246 subnetworks with 2, 3, 4, 5, 6, or 7 nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBG network can be partitioned into 246 subnetworks with 2, 3, 4, 5, 6, or 7 nodes (see Figure 4\u2014figure supplements 1\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the network structure analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "88b95f3e-02f1-4220-846f-ca703f530126",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C54",
+      "claim": "There are five loops (or cycles) in the CBG network with one or three inhibitory projections: Proto-STN, STN-GPi-Th-cortex, STN-Arky-D2-Proto, Proto-Arky-D2, Proto-FSN-D2, and Proto-GPi-Th-Cortex-D2.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these partitions, there are five loops (or cycles) in the CBG network with one or three inhibitory projections: Proto-STN, STN-GPi-Th-cortex, STN-Arky-D2-Proto, Proto-Arky-D2, Proto-FSN-D2, and Proto-GPi-Th-Cortex-D2 (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the network structure analysis and shown in Figure 4a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "f7249eb0-547f-4ed5-8c46-5b0ed08edcad",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C55",
+      "claim": "One or more of the six oscillatory loops appeared in 96 (out of 246) subnetworks of CBG.",
+      "claim_type": "EXPLICIT",
+      "source": "One or more of these 6 loops appeared in 96 (out of 246) subnetworks of CBG (see Figure 4b, colors indicate different loops).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the network structure analysis and shown in Figure 4b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "7f7fe625-1b7b-4b53-aac6-18862bd95bac",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C56",
+      "claim": "In Wilson-Cowan model simulations of a four-node BG motif, for weak inputs to the D2-SPNs, the Proto-STN subnetwork generated oscillations for weak positive input.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for weak inputs to the D2-SPNs, the Proto-STN subnetwork generated oscillations for weak positive input (Figure 4c bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "25a3bf5c-ea63-4c2a-aafd-a692a5ba70bc",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C57",
+      "claim": "As the input to D2-SPNs increased in Wilson-Cowan model simulations, the oscillation frequency decreased and oscillations were observed even for very strong drive to STN.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the input to D2-SPNs increased, the oscillation frequency decreased and oscillations were observed even for very strong drive to STN (Figure 4c bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "6e7377c6-4862-4771-83cb-412eeff56ab9",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C58",
+      "claim": "In Wilson-Cowan model simulations, both Proto-STN and Proto-D2-Arky subnetworks compete for oscillations, with the winner depending on their inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, in this model, both Proto-STN and Proto-D2-Arky subnetworks compete for oscillations, which subnetwork wins depending on their inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "73d85b8b-4971-410c-ad7c-c9615f8a47ef",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C59",
+      "claim": "When D2-SPN to Proto projections were removed in Wilson-Cowan model simulations, the network could oscillate but only because of the Proto-STN subnetwork.",
+      "claim_type": "EXPLICIT",
+      "source": "When we removed the D2-SPN to Proto projections, the network could oscillate but only because of the Proto-STN subnetwork (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "10443616-350c-4239-9f51-46b6530583b7",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C60",
+      "claim": "In Wilson-Cowan model simulations with D2-SPN to Proto projections removed, relatively high-frequency beta band oscillations were observed but only for a small range of excitatory inputs to the STN.",
+      "claim_type": "EXPLICIT",
+      "source": "In this setting, we get relatively high-frequency beta band oscillations but only for a small range of excitatory inputs to the STN (Figure 4d, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "6780c42d-8f32-490a-b7b7-85072e5f7af9",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C61",
+      "claim": "When STN output was removed in Wilson-Cowan model simulations, the Proto-D2-Arky subnetwork generated oscillations for weak positive inputs to the D2-SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we removed the STN output (equivalent to inhibition of STN), the Proto-D2-Arky subnetwork generated oscillations for weak positive inputs to the D2-SPNs (Figure 4e, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "2d638d2b-4d08-4913-97a8-7ee8ef2b2fdb",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C62",
+      "claim": "The frequency of Proto-D2-Arky oscillations was smaller than that observed for the Proto-STN subnetwork because the former involves a three synapses loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of Proto-D2-Arky oscillations was smaller than that observed for the Proto-STN subnetwork because the former involves a three synapses loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on the network structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "76530609-f87f-40ef-992c-3644a19c1b23",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C63",
+      "claim": "It is possible for CBG network to oscillate even when STN is removed from the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results suggest that, in principle, it is possible for CBG network to oscillate even when STN is removed from the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "44cf0b36-081e-40cf-9889-28868d7c7a71",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C65",
+      "claim": "In the Proto-D2-FSN loop, D2-SPN neurons have a relatively high firing rate, which could be a criterion to exclude this loop as a potential contributor to beta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the loop Proto-D2-FSN, D2-SPN neurons have a relatively high firing rate. This could be a criterion to exclude this loop as a potential contributor to the beta oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results and a speculation about its implications.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "6933be2c-9842-4856-aedc-835de08a406d",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C66",
+      "claim": "In spiking neuron model simulations with Proto-D2-Arky loop generating oscillations, as STN neurons were inhibited, firing rate of Proto neurons decreased and oscillations in STN population diminished but Proto neurons showed clear beta band oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Proto-D2-Arky mode, as we inhibited STN neurons, firing rate of the Proto neurons decreased and oscillations in STN population diminished but Proto neurons showed clear beta band oscillations (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "170a9122-45c5-40a6-87eb-cf03e7a10cf3",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C67",
+      "claim": "In spiking neuron model simulations with STN-Proto loop generating oscillations, increasing the STN inhibition abolished the oscillations in both STN and Proto neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, and as expected when STN-Proto loop was generating the oscillations, increasing the STN inhibition abolished the oscillations in both STN and Proto neurons (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "70544d0d-ef9b-4daf-9229-bb6921f9e092",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C68",
+      "claim": "In STN-Proto loop, when STN is inhibited, there is no cycle left in the network and therefore oscillations diminished, whereas the Proto-D2-Arky loop remains unaffected by the STN inhibition (except for a change in the firing rate of the Proto neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "In STN-Proto loop, when STN is inhibited, there is no cycle left in the network and therefore oscillations diminished, whereas the Proto-D2-Arky loop remains unaffected by the STN inhibition (except for a change in the firing rate of the Proto neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the simulation results based on network structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "553fa2de-4146-4614-8727-114b4c5cd9d2",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C69",
+      "claim": "Whether oscillations are generated by the Proto-D2-Arky or STN-Proto loop depends on the relative input to the D2 or STN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4c, whether oscillations are generated by the Proto-D2-Arky or STN-Proto loop depends on the relative input to the D2 or STN neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the simulation results shown in Figure 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "71bd7615-87e6-4317-a409-a68d151452e2",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C70",
+      "claim": "It is possible that in rodents, D2-SPN have stronger input from the cortex than STN and therefore, oscillations survive despite near complete inhibition of STN.",
+      "claim_type": "EXPLICIT",
+      "source": "So it is possible that in rodents, D2-SPN have stronger input from the cortex than STN and therefore, oscillations survive despite near complete inhibition of STN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the simulation results and experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "6a41d3e7-c38e-490c-972e-1ac2f588afd2",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C71",
+      "claim": "Together with previous results of Snoussi, 1998 and Gouz\u00e9, 1998, this work further expands the scope within which we can comment on the potential of a network to generate oscillation based only on the connectivity structure alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, together with previous results of Snoussi, 1998 and Gouz\u00e9, 1998 we further expand the scope within which we can comment on the potential of a network to generate oscillation based only on the connectivity structure alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the contribution of the work in relation to previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "bb2295b4-2a4b-4243-943a-dea9cfd2ef22",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C72",
+      "claim": "The weights' strength needs to be strong enough for a system to possibly oscillate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we complete this condition by one on weights' strength stating that the latter needs to be strong enough for the system to possibly oscillate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the analytical results (Theorem 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "aaa93a96-8134-4358-93f1-1c1c867d0448",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C73",
+      "claim": "Oscillations can be quenched by adding positive external input to excited nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, oscillations can be quenched by adding positive external input to excited nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the analytical results (Remark 3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "66db0bda-061b-4cf4-acc9-bf837c39e0ff",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C74",
+      "claim": "A key assumption of the analysis is that there are no delays in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "A key assumption of our analysis is that there are no delays in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the assumptions of the analytical work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "0c909f2e-2bcc-482a-9b18-39ccaaf075e7",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C75",
+      "claim": "Delays within and between subnetwork connections can have a big effect on the oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, delays within and between subnetwork connections can have a big effect on the oscillations Kim et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "e86907f8-d17e-4a04-ab0a-2ab9ca3d88c3",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C76",
+      "claim": "In numerical simulations of BG network with biologically realistic synaptic delays, such delays do not influence the results and they only determine the oscillation frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In the numerical simulations of BG network, we included biologically realistic synaptic delays (i.e. connection delays were shorter than the time constants of the neurons). Our results suggest that such delays do not influence our results and they only determine the oscillation frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "fe3114a4-1044-423b-833f-584e80a8e2ea",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C77",
+      "claim": "It is not possible to comment on how the results may change when delays become longer than the time constant of the node.",
+      "claim_type": "EXPLICIT",
+      "source": "But it is not possible to comment on how the results may change when delays become longer than the time constant of the node.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "131cb00d-44e2-4b9f-b191-e24ba4996fa7",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C78",
+      "claim": "Previous models suggest that when we excite the excitatory node or inhibit the inhibitory node oscillations can emerge and strengthen.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous models suggest that when we excite the excitatory node or inhibit the inhibitory node oscillations can emerge and strengthen Kumar et al., 2011; Ledoux and Brunel, 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "718978f7-d5a0-4e94-ac14-238492280ba9",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C79",
+      "claim": "When we inhibit the excitatory node or excite the inhibitory node, oscillations are quenched.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, when we inhibit the excitatory node or excite the inhibitory node, oscillations are quenched.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on previous models and general understanding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "e0a170f7-5a17-4b00-b070-0870d6a301e0",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C80",
+      "claim": "The 'Oscillations Sign Rule' states that if we multiply the sign of the node and sign of the stimulation, we can comment on the fate of oscillations in a qualitative manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be summarised as the 'Oscillations Sign Rule'. Let us label the excitatory population as positive and inhibitory as negative. Let us also label excitatory inputs as positive and inhibitory inputs as negative. Now if we multiple the sign of the node and sign of the stimulation, we can comment on the fate of oscillations in a qualitative manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual framework proposed in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "e604b014-bd29-4bbd-849e-6da46a652324",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C81",
+      "claim": "The 'Oscillation sign rule' scales to larger network with more nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'Oscillation sign rule' scales to larger network with more nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the proposed rule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "077ef8d0-3a04-4f49-966d-f98dbd890dca",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C82",
+      "claim": "When we combine the 'Oscillations Sign Rule' with the 'Odd Cycle Rule' we can get a more complete qualitative picture of whether stimulating a node in a network will generate oscillations or not.",
+      "claim_type": "EXPLICIT",
+      "source": "When we combine the 'Oscillations Sign Rule' with the 'Odd Cycle Rule' we can get a more complete qualitative picture of whether a stimulating a node in a network will generate oscillations or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the combined utility of the two rules.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "6077f5e9-9997-422b-89ab-0dd0ff304e18",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C83",
+      "claim": "Biological properties such as spike frequency adaptation, rebound spiking, short-term-facilitation or short-term-depression can be absorbed in the network structure in the form of an extra inhibitory or excitatory connection.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, biological neurons have the property of spike frequency adaptation or rebound spiking. Similarly, synapses in the brain can increase or decrease their weights based on the recent history of inputs which is referred to as the short-term-facilitation or short-term-depression of synapses Stevens and Wang, 1995. Such biological properties can be absorbed in the network structure in the form of an extra inhibitory or excitatory connection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement about how biological properties can be represented in network models, with a citation for synaptic properties.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "de7de210-e4c9-4979-a274-ef6add606612",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C84",
+      "claim": "From 2-node-motifs to 6-node-motifs in the basal ganglia, the odd cycle rule identified 88 potential directed cycles that can generate oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "From 2-node-motifs to 6-node-motifs, our odd cycle rule identified 88 potential directed cycles that can generate oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the network structure analysis of the basal ganglia.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "82406c01-cd42-450e-976c-0de92603892a",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C85",
+      "claim": "Among the 88 potential oscillatory cycles in the basal ganglia, 81 cycles feature GPe (either Proto or Arky type or both) and 66 feature STN.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, 81 cycles feature GPe (either Proto or Arky type or both) and 66 feature STN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the network structure analysis of the basal ganglia.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "56969fa0-ff49-4522-b430-aa80faca133e",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C86",
+      "claim": "Which specific cycle underlies oscillations in the basal ganglia depends on the exact input structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Which specific cycle underlies oscillations depends on the exact input structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "5808f51e-c14d-4c7d-827e-29e5c51d9b8f",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C87",
+      "claim": "When input to STN is higher than the D2 neurons, the STN-GPe network generates oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, when input to STN is higher than the D2 neurons, the STN-GPe network generates oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "7bce7961-c622-4c9e-98ac-9dea687703bf",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C88",
+      "claim": "When inputs to D2 neurons are stronger, the D2-Proto-Arky cycle can become the oscillator.",
+      "claim_type": "EXPLICIT",
+      "source": "But when inputs to D2 neurons are stronger, the D2-Proto-Arky cycle can become the oscillator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "70fbc7a6-7fe6-455f-a04e-54cb53b49d19",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C89",
+      "claim": "STN is not necessary to generate oscillations in the basal ganglia.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, STN is not necessary to generate oscillations in the BG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analytical and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "99d20d7a-09c1-44c4-9e5d-281a367ed6f9",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C90",
+      "claim": "Besides focusing on the network connectivity, we should also estimate the inputs to different nodes in order to pinpoint the key nodes underlying the PD-related pathological oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also suggest that besides focusing on the network connectivity, we should also estimate the inputs to different nodes in order to pinpoint the key nodes underlying the PD-related pathological oscillations - that would be the way to reconcile the recent findings of Crompe et al., 2020 with previous results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "d8cdc8b9-eadc-4a17-aace-fe26ab91d11e",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C91",
+      "claim": "Ortone et al., 2023 and Azizpour Lindi et al., 2023 have provided a more quantitative explanation of the experimental observation by Crompe et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We would like to note that recently, Ortone et al., 2023 and Azizpour Lindi et al., 2023 have provided a more quantitative explanation of the experimental observation by Crompe et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recent related work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "3d670851-7096-416f-8cd8-9868c70e9a96",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C92",
+      "claim": "Ortone et al., 2023 and Azizpour Lindi et al., 2023 eventually resort to the D2-Proto-Arky cycle to explain BG oscillations in the absence of STN.",
+      "claim_type": "EXPLICIT",
+      "source": "They also eventually resort to the D2-Proto-Arky cycle to explain BG oscillations in the absence of STN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the conclusions of recent related work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "b9a1e2b0-7741-4010-9ee2-0b675b3020ef",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C93",
+      "claim": "The work provides the necessary theory to explain the results of Ortone et al., 2023 and Azizpour Lindi et al., 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work provides the necessary theory to explain their results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the contribution of the current work in relation to recent research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "0e4ff951-c8a3-40ee-85b5-ab7b9c6f5183",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C94",
+      "claim": "Oscillatory dynamics and the odd cycle rule show up in many chemical, biological and even social systems such as neuronal networks, psychological networks, social and political networks, resting-state networks in autism and gene networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, oscillatory dynamics and the odd cycle rule show up in many chemical, biological and even social systems such as neuronal networks Bel et al., 2021, psychological networks Greenwald et al., 2002, social and political networks Leskovec et al., 2010; Milo et al., 2004; Heider, 1946; Cartwright and Harary, 1956, resting-state networks in autism Moradimanesh et al., 2021 and gene networks Farcot and Gouz\u00e9, 2010; Allahyari et al., 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to various fields.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "8141e3ae-4ebe-4b8f-9403-aeb2f8b19eec",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C95",
+      "claim": "Originally Thomas' conjecture about the structural conditions for oscillations was made for gene regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, originally Thomas' conjecture Thomas, 1980 about the structural conditions for oscillations was made for gene regulatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about Thomas' conjecture, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "58cc306c-b9a8-401e-a89e-55525f632903",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "claim_id": "C96",
+      "claim": "Insights obtained from the analytical work can be extended to many other chemical, biological and social networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we think that insights obtained from our analytical work can be extended to many other chemical, biological and social networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader applicability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors prove analytically that in a single cycle threshold-linear network (TLN), an odd number of inhibitory nodes and sufficiently strong connections are necessary conditions for oscillations to emerge. When connections are weak, the system has a unique globally stable fixed point regardless of loop sign. When connections are strong enough and the number of inhibitory nodes is odd, the system has no stable fixed point and exhibits limit cycle, quasi-periodic, or chaotic behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C12, C13, C14, C30, C31, and C72 collectively present the core analytical result (Theorem 2) with rigorous mathematical proof using dynamical systems theory. The theorem establishes both necessary conditions (odd inhibitory nodes) and sufficient conditions (strong connections) for oscillations, with clear characterization of system behavior in different parameter regimes. The proof is stated to be provided in the appendix.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "8ee6c7c1-4110-402c-915c-a98d127c3200",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Oscillations in a single cycle threshold-linear network can be quenched by introducing positive external input to excitatory nodes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C73 present an analytical result (Remark 3) showing that positive external input to excitatory nodes can eliminate oscillations. This is proven analytically and represents an important control mechanism for oscillatory dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors provide intuitive explanations for why specific small network motifs can or cannot oscillate based on the number of inhibitory connections. Two mutually connected excitatory or inhibitory populations cannot oscillate, but an excitatory-inhibitory (EI) pair can. In three-node cycles, motifs with one or three inhibitory connections can oscillate, while those with zero or two inhibitory connections cannot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C27 provide intuitive reasoning supported by citations (Ermentrout 1992, Ledoux and Brunel 2011, Rabinovich et al. 2001) and illustrated in Figure 1a. These examples build intuition for the general odd-cycle rule and are consistent with established network dynamics principles. The reasoning is logical and well-supported by prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Wilson-Cowan model simulations demonstrate that III networks (odd inhibitory connections) show sustained oscillations while EII networks (even inhibitory connections) show only transient oscillations across a wide range of parameters. Oscillation frequency depends on synaptic delays (decreases with increasing delay), synaptic weights (generally decreases with increasing strength), external input (non-monotonic relationship with mid-range input producing maximum frequency), and self-inhibition (increases frequency until node silencing occurs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C47 present systematic numerical simulation results shown in Figure 3 and supplementary figures. The simulations test the analytical predictions in a more realistic model and characterize how various parameters affect oscillation properties. The results are clearly documented with appropriate figures and parameter tables.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of the cortico-basal ganglia (CBG) network structure identifies six potential oscillatory cycles with odd numbers of inhibitory connections: Proto-STN, STN-GPi-Th-cortex, STN-Arky-D2-Proto, Proto-Arky-D2, Proto-FSN-D2, and Proto-GPi-Th-Cortex-D2. Among 246 possible subnetworks (2-7 nodes), 96 contain one or more of these oscillatory loops. GPe (Proto or Arky) is involved in 81 of 88 identified oscillatory cycles, while STN is involved in 66.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, C53-C55, C84-C85 present a systematic enumeration of network motifs in the CBG based on the odd-cycle rule. The analysis is clearly documented with specific numbers and illustrated in Figure 4 and supplementary figures. The structural analysis is straightforward application of graph theory to the known CBG connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Wilson-Cowan simulations of a four-node BG motif show that Proto-STN and Proto-D2-Arky subnetworks compete to generate oscillations depending on relative inputs to STN and D2-SPNs. When D2-SPN to Proto projections are removed, only Proto-STN generates oscillations (high-frequency beta, narrow input range). When STN output is removed, Proto-D2-Arky generates oscillations (lower frequency due to three-synapse loop). This demonstrates that the CBG network can oscillate even without STN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 and C69 present simulation results from systematic 'lesion' experiments in the Wilson-Cowan model (Figure 4c-e). The simulations test specific predictions about which cycles dominate under different input conditions and demonstrate input-dependent competition between oscillatory mechanisms. The results are clearly illustrated and logically interpreted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "1e5dc440-9a62-4464-a7fb-2f4c528b614d",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Spiking neuron model simulations show that Proto-D2-FSN and Proto-D2-Arky loops can generate beta oscillations. When STN is inhibited in the Proto-D2-Arky mode, Proto neurons maintain beta oscillations while STN oscillations diminish. In contrast, STN inhibition abolishes oscillations in both STN and Proto when the STN-Proto loop dominates. The authors speculate that in rodents, stronger cortical input to D2-SPNs than STN may explain why oscillations survive STN inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 present spiking neuron simulation results (Figure 5) that validate the Wilson-Cowan findings in a more biologically realistic model. The simulations clearly demonstrate differential effects of STN inhibition depending on which cycle dominates. However, C70 is speculative about rodent-specific input patterns, which is appropriately acknowledged as a hypothesis rather than demonstrated fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "35b6dae3-2110-481f-a9ea-046e75346d96",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors review prior work on oscillations in Parkinson's disease, noting that the STN-GPe subnetwork has traditionally been considered the key oscillator, but recent experiments by Crompe et al. 2020 showed that GPe inhibition (but not STN inhibition) is sufficient to quench oscillations, challenging previous models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, C48-C52 accurately summarize prior literature with appropriate citations. The apparent contradiction between traditional views and recent experiments (Crompe et al. 2020) is correctly identified and motivates the current study. These are background claims supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "77f213aa-38aa-4250-980b-add026f466d4",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors conclude that which specific cycle generates oscillations in the basal ganglia depends on the input structure to different nodes. When STN receives stronger input than D2 neurons, STN-GPe oscillates; when D2 neurons receive stronger input, the D2-Proto-Arky cycle dominates. STN is not necessary for BG oscillations. The authors recommend estimating inputs to different nodes to identify key nodes underlying PD oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C90 present conclusions drawn from the simulation results (C56-C69). The conclusion that STN is not necessary is supported by both Wilson-Cowan and spiking neuron simulations showing oscillations can persist without STN. The recommendation in C90 is a logical extension of the findings, though it represents future work rather than demonstrated results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "a8e2cbcb-64f5-4752-9978-b8ce54893ab5",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors position their work as extending previous results by Snoussi 1998 and Gouz\u00e9 1998 to threshold-linear networks, and note that recent work by Ortone et al. 2023 and Azizpour Lindi et al. 2023 also invokes the D2-Proto-Arky cycle to explain BG oscillations without STN. The authors claim their work provides the necessary theory to explain these recent results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C91-C93 appropriately contextualize the current work relative to prior theoretical work and recent related studies. The claim that this work provides theoretical foundation for recent computational studies is reasonable given the analytical results presented, though the exact relationship would require detailed comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "1cc23aa6-f59d-41a3-af58-7e4e9d0ae4e9",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors acknowledge that their analytical results assume no delays in the network, though delays can significantly affect oscillations. In their simulations with biologically realistic delays (shorter than neuronal time constants), delays only determine oscillation frequency without affecting the main results. However, the authors cannot predict effects when delays exceed nodal time constants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 clearly state the assumptions and limitations of the analytical work. C76 presents a conclusion from simulations that is appropriately qualified, and C77 honestly acknowledges the limits of what can be concluded. This represents appropriate scientific caution about the scope of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "dd2f2efa-df70-4e28-b986-69b1b77e2898",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose an 'Oscillations Sign Rule' stating that the effect of stimulation on oscillations can be predicted by multiplying the sign of the node (excitatory=+, inhibitory=-) with the sign of the stimulation (excitatory=+, inhibitory=-). This rule scales to larger networks and can be combined with the 'Odd Cycle Rule' to predict whether stimulating a node will generate oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C82 propose a conceptual framework based on prior work (C78-C79 cite Kumar et al. 2011, Ledoux and Brunel 2011) and the current results. While the rule is intuitive and consistent with known principles, the claims about scalability (C81) and completeness when combined with the odd cycle rule (C82) are not rigorously demonstrated. These represent useful heuristics but lack formal proof or systematic validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "8b71cbce-c412-47b4-89f6-11635442e970",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors suggest that biological properties like spike frequency adaptation, rebound spiking, and short-term synaptic plasticity can be absorbed into network structure as additional inhibitory or excitatory connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C83 proposes a conceptual approach to incorporating biological complexity into the structural framework. While this is a reasonable conceptual statement, it is not demonstrated or validated. The extent to which complex biological properties can be accurately represented as simple connection sign changes is unclear and would require careful analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "ce6ac149-e598-4faf-9cad-561badd4bdb6",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors argue that oscillatory dynamics and the odd cycle rule appear in many systems beyond neural networks (chemical, biological, social systems) and that insights from their analytical work can be extended to these other domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 are appropriately supported by citations showing the odd cycle rule appears in diverse systems. C95 correctly notes the historical origin of Thomas' conjecture in gene regulatory networks. C96 is speculative about applicability but is appropriately qualified ('we think') and represents a reasonable hypothesis given the generality of the mathematical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6",
+      "content_id": "f35e4fc9-62d7-4964-ab7c-9e393d3cf380",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors provide background on oscillations in real-world systems, their functional and dysfunctional roles (particularly in the brain and Parkinson's disease), limitations of existing analytical tools (Poincar\u00e9-Bendixson theorem), practical challenges in measuring network parameters, and prior theoretical work (Thomas' conjecture).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C3-C7, C10-C11 present background information supported by appropriate citations and established knowledge. These claims accurately represent the state of the field and motivate the current work. They are standard background claims that set up the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors prove analytically using dynamical system theory (Theorem 2) that an odd number of inhibitory nodes and sufficiently strong connections are necessary conditions for oscillations in single-cycle threshold-linear networks. When connections are weak, the system has a globally stable fixed point regardless of loop sign; when strong enough, systems with odd inhibitory nodes have no stable fixed point and exhibit limit cycle, quasi-periodic, or chaotic behavior.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the mathematical rigor of these claims. Reviewer 3 states 'The work elegantly and effectively combines a solid mathematical proof with careful numerical simulations' and Reviewer 2 notes 'From the point of nonlinear dynamics, the results are solid, and the intuition behind the proofs of the theorems is well explained.' The analytical findings are treated as the core theoretical contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "6c6ff1ef-2c93-43ed-91a7-e5f4b5648fc6",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors prove analytically (Remark 3) that oscillations in single-cycle threshold-linear networks can be quenched by adding positive external input to excitatory nodes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This analytical result is part of the mathematical framework that reviewers explicitly praised. Reviewer 3 notes the work 'combines a solid mathematical proof' and reviewers raise no concerns about this specific theoretical prediction, treating it as part of the accepted mathematical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "d922a92b-0bbc-4488-9a7f-c61692adf453",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors provide intuitive explanations for why different small network motifs can or cannot oscillate: two mutually excitatory or inhibitory nodes cannot oscillate (synchronization or winner-take-all), three excitatory nodes synchronize, but EI (one inhibitory) and III (three inhibitory) motifs can oscillate, leading to the generalization that odd numbers of inhibitory connections enable oscillations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these intuitive explanations as valid. Reviewer 2 specifically notes 'the intuition behind the proofs of the theorems is well explained' and Reviewer 3 states 'the authors included detailed sections to provide intuition about the mathematical proof, which will be helpful for readers.' No concerns are raised about these conceptual explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "773746ce-d385-44a1-85a3-c372e9215aaa",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Wilson-Cowan model simulations demonstrate that III networks show sustained oscillations while EII networks show only transient oscillations across wide parameter ranges. The simulations characterize how oscillation frequency depends on synaptic delays (decreasing with longer delays), synaptic weights, external inputs (non-monotonic relationship with mid-range optimal), and self-inhibition. Delays are critical for EI-type networks and are the sole mechanism for oscillations in even-inhibitory networks, though such oscillations remain transient unless delays are precisely tuned.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the simulations but express significant concerns about the treatment of delays. Reviewer 2 states 'the impact of the delays is ignored even though they define the synchronizability of the brain network' and notes that 'previous works on the amplitude reduction due to the time-delays in difference-coupled networks of oscillators is not mentioned.' Reviewer 3 notes 'In its updated form, the authors have solved the most pressing issues of the study, by acknowledging the limitations of their work regarding the effects of delays in oscillations, and addressing some of these effects in new simulations,' suggesting initial concerns were partially addressed but limitations remain.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Network structure analysis of the cortico-basal ganglia (CBG) network identifies six oscillatory cycles with odd numbers of inhibitory connections: Proto-STN, STN-GPi-Th-cortex, STN-Arky-D2-Proto, Proto-Arky-D2, Proto-FSN-D2, and Proto-GPi-Th-Cortex-D2. GPe is involved in five of six cycles (81 of 88 total potential oscillatory cycles across all motif sizes), while STN appears in 66 cycles, suggesting GPe's central role in PD oscillations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers question the biological relevance of this motif-based analysis. Reviewer 2 states 'I find motifs in general to be too simplistic for multiscale and generally large networks as it is the case in the brain' and 'decomposing even such a coarse network in all possible (238 in this case) motifs doesn't seem of much relevance, when I'd assume that the emergence of pathological rhythms is more of an emergent phenomena.' The reviewer also notes 'having such a strong dependence on odd/even number of inhibitory links is far from reality' and 'the cortex is considered as a single node' as significant limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "21f24e54-e122-434a-afc9-b3afe8c68317",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Wilson-Cowan simulations of BG motifs show that Proto-STN and Proto-D2-Arky subnetworks compete for oscillation generation depending on relative inputs to STN versus D2-SPNs. When D2-SPN inputs are weak, Proto-STN generates oscillations; when D2-SPN inputs are strong, Proto-D2-Arky generates lower-frequency oscillations. Removing STN output still allows Proto-D2-Arky oscillations, demonstrating that STN is not necessary for CBG network oscillations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge these simulation results, they express concerns about biological applicability. Reviewer 2 questions whether 'they are of significant relevance for biological networks, or in particular for the oscillations of BG-thalamus-cortex loop in PD,' noting the approach is 'too theoretical without a real application for the brain dynamics.' However, Reviewer 3 notes the work 'provides insight on experimental findings regarding abnormal synchrony levels in Parkinson's Disease (PD)' and 'provides testable predictions,' suggesting mixed views on the biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "f4b502f5-fbf7-44be-9475-2ccad3e3da35",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Spiking neuron model simulations demonstrate differential effects of STN inhibition depending on which loop generates oscillations: when Proto-D2-Arky generates oscillations, STN inhibition reduces Proto firing rates but preserves Proto beta oscillations while diminishing STN oscillations; when STN-Proto generates oscillations, STN inhibition abolishes oscillations in both populations because no cycle remains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 notes 'The findings are to some extent confirmed with spiking neurons, though here results are less clear,' suggesting qualified acceptance. Reviewer 3 states the work uses 'a more complex, spike-based neural network of basal ganglia network' as one of the levels of description, treating these simulations as part of the multi-level validation approach that 'provides additional layers of confidence to the study.' No specific critiques of these spiking network results are raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "030e6bb3-19ca-4244-87c5-8242d3081095",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors acknowledge that their analytical framework assumes no delays, though delays can significantly affect oscillations. They report that in their BG network simulations with biologically realistic delays (shorter than neuronal time constants), delays only determine oscillation frequency without changing the main results, but they cannot comment on effects when delays exceed nodal time constants.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 notes 'In its updated form, the authors have solved the most pressing issues of the study, by acknowledging the limitations of their work regarding the effects of delays in oscillations, and addressing some of these effects in new simulations,' indicating this was a major concern that was partially addressed. However, the reviewer adds 'Although some interesting simulations are still not presented in the revised version, they could constitute the focus of future work,' suggesting the treatment of delays remains incomplete. Reviewer 2 emphasizes 'the impact of the delays is ignored' as a significant weakness.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "7f0c618a-fc3f-4433-9f43-3ef5bab9349f",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors speculate that in rodents, D2-SPNs may receive stronger cortical input than STN, explaining why oscillations survive STN inhibition in experiments. They recommend that future work should estimate inputs to different nodes in addition to connectivity to pinpoint key nodes underlying PD oscillations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers treat these as reasonable interpretations and recommendations. Reviewer 3 notes the work 'provides insight on experimental findings regarding abnormal synchrony levels in Parkinson's Disease (PD)' and 'provides testable predictions,' suggesting acceptance of these interpretative claims. No specific critiques of these speculative explanations are raised.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "1a422496-836f-40c2-b2a8-d1f49d1c1466",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors propose an 'Oscillations Sign Rule' stating that multiplying the sign of a node (excitatory=positive, inhibitory=negative) by the sign of stimulation (excitatory=positive, inhibitory=negative) predicts oscillation fate. Combined with the 'Odd Cycle Rule,' this provides a qualitative framework for predicting whether stimulating a node will generate oscillations, extending the scope of structure-based oscillation prediction beyond previous work.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the theoretical contribution, they question its practical applicability. Reviewer 2 states 'they emphasize the higher importance of the topology, compared to the strength of the links, though it is not straightforward to apply this for brain networks where the weights can be distributed several orders of magnitude' and notes 'The odd/even number rule is too strict.' This suggests the conceptual framework is theoretically sound but may have limited biological applicability.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "728b34af-e422-44cb-8cd1-44755c84de00",
+      "content_id": "8a500889-587c-4a47-bf7e-68d4f5ec8a34",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors argue that oscillatory dynamics and the odd cycle rule appear across many chemical, biological, and social systems (neuronal networks, psychological networks, social networks, gene networks), and since Thomas' original conjecture was for gene regulatory networks, their analytical insights should extend broadly beyond neural networks.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these claims about broader applicability. The general editor's summary states the study 'offers valuable insights into the emergence of oscillations in neural networks' without limiting scope to only neural systems. The broad applicability is treated as a strength rather than questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d15eb2ad-0233-4875-a2d4-98c5ce8e4c62",
+      "result_id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462"
+    },
+    {
+      "claim_id": "f3c1ab0c-8e4d-4570-8d2c-67b305380f22",
+      "result_id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462"
+    },
+    {
+      "claim_id": "220aeb03-30dd-421e-845d-712b30dc91aa",
+      "result_id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462"
+    },
+    {
+      "claim_id": "4bc0ac75-0a29-4c30-99b5-039db0911f21",
+      "result_id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462"
+    },
+    {
+      "claim_id": "3d255e5b-3cbb-48d5-bd2f-25006de4ebea",
+      "result_id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462"
+    },
+    {
+      "claim_id": "c1722192-8e20-4b90-8855-88573f9563f0",
+      "result_id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462"
+    },
+    {
+      "claim_id": "bb2295b4-2a4b-4243-943a-dea9cfd2ef22",
+      "result_id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462"
+    },
+    {
+      "claim_id": "1b68e792-e7b7-423a-a0cf-5b7275b76ea3",
+      "result_id": "8ee6c7c1-4110-402c-915c-a98d127c3200"
+    },
+    {
+      "claim_id": "aaa93a96-8134-4358-93f1-1c1c867d0448",
+      "result_id": "8ee6c7c1-4110-402c-915c-a98d127c3200"
+    },
+    {
+      "claim_id": "631aea40-4e72-4ec3-bb74-f957d8f4f766",
+      "result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c"
+    },
+    {
+      "claim_id": "b0d889d5-b8d2-4845-bdf5-768bfe38ec8c",
+      "result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c"
+    },
+    {
+      "claim_id": "85ace7d1-db55-484c-aaf7-71aa01a03a4f",
+      "result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c"
+    },
+    {
+      "claim_id": "2b4476b6-0ecd-429e-8288-92a6fd53fd4d",
+      "result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c"
+    },
+    {
+      "claim_id": "80537476-49bd-4a1d-a018-956bacc612aa",
+      "result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c"
+    },
+    {
+      "claim_id": "11bb8b29-9c5d-4b85-9f2b-5a11b4719137",
+      "result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c"
+    },
+    {
+      "claim_id": "6fa9bd10-3d61-4e9b-af96-9ae78b14e7b5",
+      "result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c"
+    },
+    {
+      "claim_id": "1ca06009-e9ea-4644-902f-195c4b963dd5",
+      "result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c"
+    },
+    {
+      "claim_id": "fb3cc6ba-19f6-4dd0-a0c5-6270cd473808",
+      "result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd"
+    },
+    {
+      "claim_id": "62b81050-bd5e-4f95-8952-adedc53e41f9",
+      "result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd"
+    },
+    {
+      "claim_id": "33ef9cf7-093b-4d8d-9ca1-7aa72bdb3fd0",
+      "result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd"
+    },
+    {
+      "claim_id": "d5918316-f2a4-4203-915e-facf149c03c9",
+      "result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd"
+    },
+    {
+      "claim_id": "4fab03de-0dd1-4b92-927b-7ed9659b7346",
+      "result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd"
+    },
+    {
+      "claim_id": "670c390d-7f51-4652-a42b-091739715c84",
+      "result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd"
+    },
+    {
+      "claim_id": "32e5e5a1-0bb5-4991-8284-22f3a07aa8ef",
+      "result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd"
+    },
+    {
+      "claim_id": "cd7be802-9c37-4779-84fb-24c8212fbf4c",
+      "result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd"
+    },
+    {
+      "claim_id": "b5461ba6-9805-45b1-af5c-bb7840b8f57c",
+      "result_id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16"
+    },
+    {
+      "claim_id": "80e0faaf-7863-432f-aaa7-1ae30f587f18",
+      "result_id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16"
+    },
+    {
+      "claim_id": "e86c4f0c-ed6f-464b-95dd-47d077179e34",
+      "result_id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16"
+    },
+    {
+      "claim_id": "88b95f3e-02f1-4220-846f-ca703f530126",
+      "result_id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16"
+    },
+    {
+      "claim_id": "f7249eb0-547f-4ed5-8c46-5b0ed08edcad",
+      "result_id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16"
+    },
+    {
+      "claim_id": "de7de210-e4c9-4979-a274-ef6add606612",
+      "result_id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16"
+    },
+    {
+      "claim_id": "82406c01-cd42-450e-976c-0de92603892a",
+      "result_id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16"
+    },
+    {
+      "claim_id": "7f7fe625-1b7b-4b53-aac6-18862bd95bac",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "25a3bf5c-ea63-4c2a-aafd-a692a5ba70bc",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "6e7377c6-4862-4771-83cb-412eeff56ab9",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "73d85b8b-4971-410c-ad7c-c9615f8a47ef",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "10443616-350c-4239-9f51-46b6530583b7",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "6780c42d-8f32-490a-b7b7-85072e5f7af9",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "2d638d2b-4d08-4913-97a8-7ee8ef2b2fdb",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "76530609-f87f-40ef-992c-3644a19c1b23",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "553fa2de-4146-4614-8727-114b4c5cd9d2",
+      "result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b"
+    },
+    {
+      "claim_id": "44cf0b36-081e-40cf-9889-28868d7c7a71",
+      "result_id": "1e5dc440-9a62-4464-a7fb-2f4c528b614d"
+    },
+    {
+      "claim_id": "6933be2c-9842-4856-aedc-835de08a406d",
+      "result_id": "1e5dc440-9a62-4464-a7fb-2f4c528b614d"
+    },
+    {
+      "claim_id": "170a9122-45c5-40a6-87eb-cf03e7a10cf3",
+      "result_id": "1e5dc440-9a62-4464-a7fb-2f4c528b614d"
+    },
+    {
+      "claim_id": "70544d0d-ef9b-4daf-9229-bb6921f9e092",
+      "result_id": "1e5dc440-9a62-4464-a7fb-2f4c528b614d"
+    },
+    {
+      "claim_id": "71bd7615-87e6-4317-a409-a68d151452e2",
+      "result_id": "1e5dc440-9a62-4464-a7fb-2f4c528b614d"
+    },
+    {
+      "claim_id": "005330b5-7e63-4e66-9cce-d5db74d0f402",
+      "result_id": "35b6dae3-2110-481f-a9ea-046e75346d96"
+    },
+    {
+      "claim_id": "80c91f67-ef01-474c-b76b-64b30cd7cca8",
+      "result_id": "35b6dae3-2110-481f-a9ea-046e75346d96"
+    },
+    {
+      "claim_id": "db58f60f-af23-49c9-990d-1fe4ab937adb",
+      "result_id": "35b6dae3-2110-481f-a9ea-046e75346d96"
+    },
+    {
+      "claim_id": "c3505563-b816-4ac2-9e03-50de144a4105",
+      "result_id": "35b6dae3-2110-481f-a9ea-046e75346d96"
+    },
+    {
+      "claim_id": "10599220-4834-4f7d-97c3-8f98a374a214",
+      "result_id": "35b6dae3-2110-481f-a9ea-046e75346d96"
+    },
+    {
+      "claim_id": "7d3e246e-5be7-4ee9-867a-924648a73f02",
+      "result_id": "35b6dae3-2110-481f-a9ea-046e75346d96"
+    },
+    {
+      "claim_id": "ba93b7e5-1e76-4190-9306-a75c209a0e6b",
+      "result_id": "35b6dae3-2110-481f-a9ea-046e75346d96"
+    },
+    {
+      "claim_id": "56969fa0-ff49-4522-b430-aa80faca133e",
+      "result_id": "77f213aa-38aa-4250-980b-add026f466d4"
+    },
+    {
+      "claim_id": "5808f51e-c14d-4c7d-827e-29e5c51d9b8f",
+      "result_id": "77f213aa-38aa-4250-980b-add026f466d4"
+    },
+    {
+      "claim_id": "7bce7961-c622-4c9e-98ac-9dea687703bf",
+      "result_id": "77f213aa-38aa-4250-980b-add026f466d4"
+    },
+    {
+      "claim_id": "70fbc7a6-7fe6-455f-a04e-54cb53b49d19",
+      "result_id": "77f213aa-38aa-4250-980b-add026f466d4"
+    },
+    {
+      "claim_id": "99d20d7a-09c1-44c4-9e5d-281a367ed6f9",
+      "result_id": "77f213aa-38aa-4250-980b-add026f466d4"
+    },
+    {
+      "claim_id": "6a41d3e7-c38e-490c-972e-1ac2f588afd2",
+      "result_id": "a8e2cbcb-64f5-4752-9978-b8ce54893ab5"
+    },
+    {
+      "claim_id": "d8cdc8b9-eadc-4a17-aace-fe26ab91d11e",
+      "result_id": "a8e2cbcb-64f5-4752-9978-b8ce54893ab5"
+    },
+    {
+      "claim_id": "3d670851-7096-416f-8cd8-9868c70e9a96",
+      "result_id": "a8e2cbcb-64f5-4752-9978-b8ce54893ab5"
+    },
+    {
+      "claim_id": "b9a1e2b0-7741-4010-9ee2-0b675b3020ef",
+      "result_id": "a8e2cbcb-64f5-4752-9978-b8ce54893ab5"
+    },
+    {
+      "claim_id": "66db0bda-061b-4cf4-acc9-bf837c39e0ff",
+      "result_id": "1cc23aa6-f59d-41a3-af58-7e4e9d0ae4e9"
+    },
+    {
+      "claim_id": "0c909f2e-2bcc-482a-9b18-39ccaaf075e7",
+      "result_id": "1cc23aa6-f59d-41a3-af58-7e4e9d0ae4e9"
+    },
+    {
+      "claim_id": "e86907f8-d17e-4a04-ab0a-2ab9ca3d88c3",
+      "result_id": "1cc23aa6-f59d-41a3-af58-7e4e9d0ae4e9"
+    },
+    {
+      "claim_id": "fe3114a4-1044-423b-833f-584e80a8e2ea",
+      "result_id": "1cc23aa6-f59d-41a3-af58-7e4e9d0ae4e9"
+    },
+    {
+      "claim_id": "131cb00d-44e2-4b9f-b191-e24ba4996fa7",
+      "result_id": "dd2f2efa-df70-4e28-b986-69b1b77e2898"
+    },
+    {
+      "claim_id": "718978f7-d5a0-4e94-ac14-238492280ba9",
+      "result_id": "dd2f2efa-df70-4e28-b986-69b1b77e2898"
+    },
+    {
+      "claim_id": "e0a170f7-5a17-4b00-b070-0870d6a301e0",
+      "result_id": "dd2f2efa-df70-4e28-b986-69b1b77e2898"
+    },
+    {
+      "claim_id": "e604b014-bd29-4bbd-849e-6da46a652324",
+      "result_id": "dd2f2efa-df70-4e28-b986-69b1b77e2898"
+    },
+    {
+      "claim_id": "077ef8d0-3a04-4f49-966d-f98dbd890dca",
+      "result_id": "dd2f2efa-df70-4e28-b986-69b1b77e2898"
+    },
+    {
+      "claim_id": "6077f5e9-9997-422b-89ab-0dd0ff304e18",
+      "result_id": "8b71cbce-c412-47b4-89f6-11635442e970"
+    },
+    {
+      "claim_id": "0e4ff951-c8a3-40ee-85b5-ab7b9c6f5183",
+      "result_id": "ce6ac149-e598-4faf-9cad-561badd4bdb6"
+    },
+    {
+      "claim_id": "8141e3ae-4ebe-4b8f-9403-aeb2f8b19eec",
+      "result_id": "ce6ac149-e598-4faf-9cad-561badd4bdb6"
+    },
+    {
+      "claim_id": "58cc306c-b9a8-401e-a89e-55525f632903",
+      "result_id": "ce6ac149-e598-4faf-9cad-561badd4bdb6"
+    },
+    {
+      "claim_id": "a6db1ef9-b41e-42a9-a02b-a6163e8a7295",
+      "result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6"
+    },
+    {
+      "claim_id": "e7e53ad9-4315-4b10-9a86-d202d9d3e3fd",
+      "result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6"
+    },
+    {
+      "claim_id": "80634fbb-f69d-483e-bb69-1a903cdab7d5",
+      "result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6"
+    },
+    {
+      "claim_id": "87d1857f-df90-48cd-aac8-b22f7f32b7fc",
+      "result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6"
+    },
+    {
+      "claim_id": "25c3adf0-49cc-4bbd-bf48-81b2f6ebd507",
+      "result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6"
+    },
+    {
+      "claim_id": "97f86be8-f3c5-4b37-bf26-fbc39798d9a7",
+      "result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6"
+    },
+    {
+      "claim_id": "d5055cfa-cef5-4934-a01a-e46bdc3636a1",
+      "result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6"
+    },
+    {
+      "claim_id": "dfed1d48-fe49-4e4e-8461-3ce3cba07322",
+      "result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6"
+    },
+    {
+      "claim_id": "d15eb2ad-0233-4875-a2d4-98c5ce8e4c62",
+      "result_id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb"
+    },
+    {
+      "claim_id": "f3c1ab0c-8e4d-4570-8d2c-67b305380f22",
+      "result_id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb"
+    },
+    {
+      "claim_id": "220aeb03-30dd-421e-845d-712b30dc91aa",
+      "result_id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb"
+    },
+    {
+      "claim_id": "4bc0ac75-0a29-4c30-99b5-039db0911f21",
+      "result_id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb"
+    },
+    {
+      "claim_id": "3d255e5b-3cbb-48d5-bd2f-25006de4ebea",
+      "result_id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb"
+    },
+    {
+      "claim_id": "c1722192-8e20-4b90-8855-88573f9563f0",
+      "result_id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb"
+    },
+    {
+      "claim_id": "bb2295b4-2a4b-4243-943a-dea9cfd2ef22",
+      "result_id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb"
+    },
+    {
+      "claim_id": "1b68e792-e7b7-423a-a0cf-5b7275b76ea3",
+      "result_id": "6c6ff1ef-2c93-43ed-91a7-e5f4b5648fc6"
+    },
+    {
+      "claim_id": "aaa93a96-8134-4358-93f1-1c1c867d0448",
+      "result_id": "6c6ff1ef-2c93-43ed-91a7-e5f4b5648fc6"
+    },
+    {
+      "claim_id": "631aea40-4e72-4ec3-bb74-f957d8f4f766",
+      "result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453"
+    },
+    {
+      "claim_id": "b0d889d5-b8d2-4845-bdf5-768bfe38ec8c",
+      "result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453"
+    },
+    {
+      "claim_id": "85ace7d1-db55-484c-aaf7-71aa01a03a4f",
+      "result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453"
+    },
+    {
+      "claim_id": "2b4476b6-0ecd-429e-8288-92a6fd53fd4d",
+      "result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453"
+    },
+    {
+      "claim_id": "80537476-49bd-4a1d-a018-956bacc612aa",
+      "result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453"
+    },
+    {
+      "claim_id": "11bb8b29-9c5d-4b85-9f2b-5a11b4719137",
+      "result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453"
+    },
+    {
+      "claim_id": "6fa9bd10-3d61-4e9b-af96-9ae78b14e7b5",
+      "result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453"
+    },
+    {
+      "claim_id": "1ca06009-e9ea-4644-902f-195c4b963dd5",
+      "result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453"
+    },
+    {
+      "claim_id": "fb3cc6ba-19f6-4dd0-a0c5-6270cd473808",
+      "result_id": "773746ce-d385-44a1-85a3-c372e9215aaa"
+    },
+    {
+      "claim_id": "62b81050-bd5e-4f95-8952-adedc53e41f9",
+      "result_id": "773746ce-d385-44a1-85a3-c372e9215aaa"
+    },
+    {
+      "claim_id": "33ef9cf7-093b-4d8d-9ca1-7aa72bdb3fd0",
+      "result_id": "773746ce-d385-44a1-85a3-c372e9215aaa"
+    },
+    {
+      "claim_id": "d5918316-f2a4-4203-915e-facf149c03c9",
+      "result_id": "773746ce-d385-44a1-85a3-c372e9215aaa"
+    },
+    {
+      "claim_id": "4fab03de-0dd1-4b92-927b-7ed9659b7346",
+      "result_id": "773746ce-d385-44a1-85a3-c372e9215aaa"
+    },
+    {
+      "claim_id": "670c390d-7f51-4652-a42b-091739715c84",
+      "result_id": "773746ce-d385-44a1-85a3-c372e9215aaa"
+    },
+    {
+      "claim_id": "32e5e5a1-0bb5-4991-8284-22f3a07aa8ef",
+      "result_id": "773746ce-d385-44a1-85a3-c372e9215aaa"
+    },
+    {
+      "claim_id": "cd7be802-9c37-4779-84fb-24c8212fbf4c",
+      "result_id": "773746ce-d385-44a1-85a3-c372e9215aaa"
+    },
+    {
+      "claim_id": "b5461ba6-9805-45b1-af5c-bb7840b8f57c",
+      "result_id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5"
+    },
+    {
+      "claim_id": "80e0faaf-7863-432f-aaa7-1ae30f587f18",
+      "result_id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5"
+    },
+    {
+      "claim_id": "e86c4f0c-ed6f-464b-95dd-47d077179e34",
+      "result_id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5"
+    },
+    {
+      "claim_id": "88b95f3e-02f1-4220-846f-ca703f530126",
+      "result_id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5"
+    },
+    {
+      "claim_id": "f7249eb0-547f-4ed5-8c46-5b0ed08edcad",
+      "result_id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5"
+    },
+    {
+      "claim_id": "de7de210-e4c9-4979-a274-ef6add606612",
+      "result_id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5"
+    },
+    {
+      "claim_id": "82406c01-cd42-450e-976c-0de92603892a",
+      "result_id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5"
+    },
+    {
+      "claim_id": "7f7fe625-1b7b-4b53-aac6-18862bd95bac",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "25a3bf5c-ea63-4c2a-aafd-a692a5ba70bc",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "6e7377c6-4862-4771-83cb-412eeff56ab9",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "73d85b8b-4971-410c-ad7c-c9615f8a47ef",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "10443616-350c-4239-9f51-46b6530583b7",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "6780c42d-8f32-490a-b7b7-85072e5f7af9",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "2d638d2b-4d08-4913-97a8-7ee8ef2b2fdb",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "76530609-f87f-40ef-992c-3644a19c1b23",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "553fa2de-4146-4614-8727-114b4c5cd9d2",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "56969fa0-ff49-4522-b430-aa80faca133e",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "5808f51e-c14d-4c7d-827e-29e5c51d9b8f",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "7bce7961-c622-4c9e-98ac-9dea687703bf",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "70fbc7a6-7fe6-455f-a04e-54cb53b49d19",
+      "result_id": "21f24e54-e122-434a-afc9-b3afe8c68317"
+    },
+    {
+      "claim_id": "6933be2c-9842-4856-aedc-835de08a406d",
+      "result_id": "f4b502f5-fbf7-44be-9475-2ccad3e3da35"
+    },
+    {
+      "claim_id": "170a9122-45c5-40a6-87eb-cf03e7a10cf3",
+      "result_id": "f4b502f5-fbf7-44be-9475-2ccad3e3da35"
+    },
+    {
+      "claim_id": "70544d0d-ef9b-4daf-9229-bb6921f9e092",
+      "result_id": "f4b502f5-fbf7-44be-9475-2ccad3e3da35"
+    },
+    {
+      "claim_id": "66db0bda-061b-4cf4-acc9-bf837c39e0ff",
+      "result_id": "030e6bb3-19ca-4244-87c5-8242d3081095"
+    },
+    {
+      "claim_id": "0c909f2e-2bcc-482a-9b18-39ccaaf075e7",
+      "result_id": "030e6bb3-19ca-4244-87c5-8242d3081095"
+    },
+    {
+      "claim_id": "e86907f8-d17e-4a04-ab0a-2ab9ca3d88c3",
+      "result_id": "030e6bb3-19ca-4244-87c5-8242d3081095"
+    },
+    {
+      "claim_id": "fe3114a4-1044-423b-833f-584e80a8e2ea",
+      "result_id": "030e6bb3-19ca-4244-87c5-8242d3081095"
+    },
+    {
+      "claim_id": "71bd7615-87e6-4317-a409-a68d151452e2",
+      "result_id": "7f0c618a-fc3f-4433-9f43-3ef5bab9349f"
+    },
+    {
+      "claim_id": "99d20d7a-09c1-44c4-9e5d-281a367ed6f9",
+      "result_id": "7f0c618a-fc3f-4433-9f43-3ef5bab9349f"
+    },
+    {
+      "claim_id": "6a41d3e7-c38e-490c-972e-1ac2f588afd2",
+      "result_id": "1a422496-836f-40c2-b2a8-d1f49d1c1466"
+    },
+    {
+      "claim_id": "e0a170f7-5a17-4b00-b070-0870d6a301e0",
+      "result_id": "1a422496-836f-40c2-b2a8-d1f49d1c1466"
+    },
+    {
+      "claim_id": "e604b014-bd29-4bbd-849e-6da46a652324",
+      "result_id": "1a422496-836f-40c2-b2a8-d1f49d1c1466"
+    },
+    {
+      "claim_id": "077ef8d0-3a04-4f49-966d-f98dbd890dca",
+      "result_id": "1a422496-836f-40c2-b2a8-d1f49d1c1466"
+    },
+    {
+      "claim_id": "0e4ff951-c8a3-40ee-85b5-ab7b9c6f5183",
+      "result_id": "728b34af-e422-44cb-8cd1-44755c84de00"
+    },
+    {
+      "claim_id": "8141e3ae-4ebe-4b8f-9403-aeb2f8b19eec",
+      "result_id": "728b34af-e422-44cb-8cd1-44755c84de00"
+    },
+    {
+      "claim_id": "58cc306c-b9a8-401e-a89e-55525f632903",
+      "result_id": "728b34af-e422-44cb-8cd1-44755c84de00"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "6ddd7791-149c-4755-a0ae-dca9b1a7c6b0",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "36bbd46b-a8f4-4ff8-ada9-465c67fc1462",
+      "peer_result_id": "1975e609-2fc4-4c12-9cae-9fea5a8789eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on core analytical results (C2, C12-C14, C30-C31, C72). Both evaluations rate these mathematical proofs as SUPPORTED. OpenEval emphasizes the rigorous proof structure, while peer reviewers explicitly praise the mathematical rigor and solid theoretical foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "fc66792f-a6df-48ad-bd56-eb2efe76bfac",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "8ee6c7c1-4110-402c-915c-a98d127c3200",
+      "peer_result_id": "6c6ff1ef-2c93-43ed-91a7-e5f4b5648fc6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on analytical result about external input eliminating oscillations (C15, C73). Both evaluations rate as SUPPORTED. OpenEval notes the analytical proof, while peer reviewers accept this as part of the praised mathematical framework without specific concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "228e888c-d495-42f9-86d8-5b934f97c69b",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "fb2b4c3d-a1ab-4305-b3ec-830b084be13c",
+      "peer_result_id": "d922a92b-0bbc-4488-9a7f-c61692adf453",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Full agreement on intuitive explanations (C20-C27). Both evaluations rate as SUPPORTED. OpenEval emphasizes citation support and logical consistency, while peer reviewers specifically praise the intuition behind proofs as 'well explained' and 'helpful for readers.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "ead0da29-1102-43a4-8878-e1594ace3f3d",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "936a1f39-1f8e-49e1-8c11-38b7ae8626cd",
+      "peer_result_id": "773746ce-d385-44a1-85a3-c372e9215aaa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on numerical simulations (C40-C47). OpenEval rates as SUPPORTED with clear documentation, but peer reviewers rate as UNCERTAIN due to concerns about delay effects being ignored and questions about biological relevance of the parameter choices.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "679bb2cf-e4ee-40bb-9b01-83718c2e8457",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "ac72005a-20d1-4ab6-a751-fb1c78c63f16",
+      "peer_result_id": "b0a0e2c2-b226-4006-ab9d-b79a576c4ec5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on motif enumeration (C18-C19, C53-C55, C84-C85). OpenEval rates as SUPPORTED as straightforward graph theory application, but peer reviewers rate as UNCERTAIN, questioning whether motif decomposition is 'too simplistic' for brain networks and noting the odd/even rule is 'far from reality.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "00de31d1-82e1-43c0-9441-aa92b37a6b13",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "80fa308b-51c1-4ea3-ab68-0cf1995bb07b",
+      "peer_result_id": "21f24e54-e122-434a-afc9-b3afe8c68317",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial disagreement on lesion simulations (C56-C63, C69). OpenEval rates as SUPPORTED with clear results, but peer reviewers rate as UNCERTAIN, acknowledging the simulations while questioning biological applicability and noting the approach is 'too theoretical without real application for brain dynamics.' However, one reviewer notes it provides testable predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "4c5602df-f69e-4737-b0ef-a56148de6b0c",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "1e5dc440-9a62-4464-a7fb-2f4c528b614d",
+      "peer_result_id": "f4b502f5-fbf7-44be-9475-2ccad3e3da35",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on spiking neuron validation (C66-C68). OpenEval rates as SUPPORTED (noting C70 is speculative), while peer reviewers also rate as SUPPORTED with qualification that 'results are less clear' but provide 'additional layers of confidence.' Both acknowledge these as more biologically realistic.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "0f2e06d4-1c2b-4b4b-8ce9-88445e662c3d",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "1cc23aa6-f59d-41a3-af58-7e4e9d0ae4e9",
+      "peer_result_id": "030e6bb3-19ca-4244-87c5-8242d3081095",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on limitations acknowledgment (C74-C77). OpenEval rates as SUPPORTED for appropriate scientific caution, but peer reviewers rate as UNCERTAIN, noting that while authors addressed delay concerns in revisions, the treatment remains incomplete and delays are still largely ignored.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "3ca20772-ee5d-497b-b600-2895d4aa5673",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ce6ac149-e598-4faf-9cad-561badd4bdb6",
+      "peer_result_id": "728b34af-e422-44cb-8cd1-44755c84de00",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on broader applicability claims (C94-C96). Both evaluations rate as SUPPORTED. OpenEval notes appropriate citations and qualified speculation, while peer reviewers accept broad applicability as a strength without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "0c73a20a-1dd6-4081-90ee-d4e2c68427c1",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "77f213aa-38aa-4250-980b-add026f466d4",
+      "peer_result_id": "21f24e54-e122-434a-afc9-b3afe8c68317",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on conclusions about STN necessity (C86-C89 in OpenEval R9, C56-C63, C69, C86-C89 in Peer R6). OpenEval rates conclusions as SUPPORTED by simulations, while peer reviewers rate the underlying simulations as UNCERTAIN due to biological relevance concerns, though they acknowledge testable predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "27a3fe53-0bdd-4c5d-a714-93a37edd808f",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1e5dc440-9a62-4464-a7fb-2f4c528b614d",
+      "peer_result_id": "7f0c618a-fc3f-4433-9f43-3ef5bab9349f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on rodent-specific speculation (C70). OpenEval notes this is appropriately acknowledged as hypothesis in R7 (SUPPORTED overall), while peer reviewers in R9 treat speculative claims (C70, C90) as reasonable interpretations (SUPPORTED), noting they provide testable predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "8a2db7f4-dcba-46d5-8e35-d0951e3cf55b",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "77f213aa-38aa-4250-980b-add026f466d4",
+      "peer_result_id": "7f0c618a-fc3f-4433-9f43-3ef5bab9349f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on recommendations (C90). OpenEval rates as SUPPORTED noting it represents future work, while peer reviewers also rate as SUPPORTED, treating it as reasonable interpretation that provides testable predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "85036c36-3fb5-402b-843c-5313e0dee50a",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "dd2f2efa-df70-4e28-b986-69b1b77e2898",
+      "peer_result_id": "1a422496-836f-40c2-b2a8-d1f49d1c1466",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Disagreement on conceptual framework (C78-C82 in OpenEval, C71, C80-C82 in Peer). OpenEval rates as UNCERTAIN noting lack of rigorous demonstration of scalability claims, while peer reviewers also rate as UNCERTAIN but focus on practical applicability concerns, noting the odd/even rule is 'too strict' and weight distributions matter.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "7d99ddfd-10ea-4e7b-b0f7-72a0fa7dfe28",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "a8e2cbcb-64f5-4752-9978-b8ce54893ab5",
+      "peer_result_id": "1a422496-836f-40c2-b2a8-d1f49d1c1466",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on contextualization (C71, C91-C93 in OpenEval vs C71, C80-C82 in Peer). OpenEval rates as SUPPORTED for appropriate contextualization, while peer reviewers rate as UNCERTAIN focusing on the practical applicability of the topology-focused framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "a802ca73-5fa1-4e56-afd8-6fd313113535",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "35b6dae3-2110-481f-a9ea-046e75346d96",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background literature claims (C16-C17, C48-C52) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these specific background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "79260943-b3fe-4d62-b815-e80ee709a5a4",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "8b71cbce-c412-47b4-89f6-11635442e970",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates conceptual approach to biological complexity (C83) as UNCERTAIN, noting it lacks demonstration. No corresponding peer review evaluation found for this specific claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    },
+    {
+      "id": "80e6bc19-6b44-4766-90a7-bf821efd0904",
+      "submission_id": "2fd00a6d-07ac-4b4c-b00a-f552b4137f3a",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "11291b7c-7bb3-4ca8-84f0-b5f5260a39e6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background and motivation claims (C1, C3-C7, C10-C11) as SUPPORTED as standard background. No corresponding peer review evaluation found for these specific background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:04:16.547921Z"
+    }
+  ]
+}

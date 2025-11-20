@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Coarse-graining microbial communities drastically reduces global richness, with ~90% reduction at the genus level, occurring at a phylogenetic distance of ~0.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C13 are directly supported by data presented in figures showing the effect of taxonomic and phylogenetic coarse-graining on community member counts. The quantitative findings are clearly documented with specific values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Abundance Fluctuation Distributions (AFDs) retain their shape across phylogenetic and taxonomic scales when rescaled, suggesting they can be described by a single probability distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 are supported by data in Figure 2a and supplementary figures showing invariance of AFD shape across scales. The inference that a single distribution can describe AFDs is reasonable given the consistent pattern across environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The gamma distribution successfully predicts occupancy and the mean abundance-occupancy relationship across scales, but fails to predict variance of occupancy. Prediction error for mean occupancy remains low or decreases with coarse-graining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by extensive data in Figure 2 supplements showing successful prediction of mean occupancy (C16, C17) but failure for variance (C18), with error analysis (C19) confirming model performance. The distinction between first and second moment predictions is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The gamma distribution successfully captures biodiversity patterns under coarse-graining because the sum of multiple gamma distributions can be approximated by a single gamma distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by citation to prior mathematical work, and C24 represents a reasonable inference connecting this mathematical property to the observed empirical success. The logic is sound though the approximation quality depends on parameter similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The gamma distribution predicts mean richness and diversity across phylogenetic and taxonomic scales for all nine environments, while the UNTB fails. Community composition remains largely invariant under coarse-graining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by data in Figure 3 showing successful predictions across environments. C28 is supported by Figure 3 supplement 3. C29 is a reasonable inference from the successful predictions. The contrast with UNTB strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A model of independent gamma-distributed community members cannot predict variance of richness and diversity, but adding empirical covariance estimates enables successful prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by data in Figure 4 showing failure of independence assumption (C30, C31) and success when covariance is included (C32). This clearly demonstrates the necessity of accounting for correlations between community members for higher-order moments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Empirical fine vs. coarse-grained richness slopes are rarely negative across environments, and the gamma distribution predicts positive slopes. The Ecological Controls hypothesis prediction is virtually absent in data and cannot be generated from the SLM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by data in Figure 5a and supplements showing distribution of slopes. C37 is a reasonable inference from the rarity of negative slopes. The consistency across environments strengthens the generality of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The gamma distribution quantitatively predicts fine vs. coarse-grained richness slopes across environments. Higher-order moments and interactions are unnecessary to capture this positive relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by data in Figure 5 supplements showing close match between predicted and observed slopes. C40-C41 are reasonable inferences from the successful prediction without requiring variance predictions. This is a key finding distinguishing richness from diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The UNTB fails to predict fine vs. coarse-grained richness slopes, showing greater bias and variation than the SLM, systematically underpredicting slopes with errors an order of magnitude larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by data in Figure 5 supplements comparing UNTB and SLM predictions. C45 is a reasonable summary conclusion. This provides strong evidence that UNTB is an inappropriate null model for this pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Fine vs. coarse-grained diversity slopes show similar distributions across environments, but the gamma distribution fails to predict these slopes, with squared correlation over an order of magnitude lower than for richness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by data in Figure 5c-d and supplements. The failure for diversity contrasts sharply with success for richness, indicating a fundamental difference in what drives these relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Including correlations between AFDs in simulations enables prediction of fine vs. coarse-grained diversity slopes. Correlations at fine scales contribute to biodiversity at coarse scales, creating the positive relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by data in Figure 6 showing successful prediction with correlations. C49 is a reasonable mechanistic interpretation. This demonstrates that correlations (reflecting interactions) are necessary for diversity but not richness patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Macroecological patterns remain self-similar across scales, with the gamma distribution predicting richness slopes but requiring correlations for diversity slopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are summary conclusions supported by the collective results. The self-similarity (C50-C51) is demonstrated by successful predictions across scales, and the differential requirements for richness vs. diversity (C52-C53) are well-established by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Occupancy depends primarily on sampling depth and mean abundance, containing little ecological information beyond the AFD. Richness-based estimators are inappropriate for identifying novel macroecological patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by citation and the study's results. C56-C57 are strong inferences critiquing prior work, justified by the successful prediction of richness slopes without interactions. This is a significant conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The SLM without interactions cannot capture relationships between scales that depend on evenness of abundance distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is a reasonable inference from the failure to predict diversity slopes (which incorporate evenness) without correlations, contrasted with success for richness (which does not). The logic connecting diversity's dependence on evenness to the need for interactions is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The UNTB is an invalid null model for microbial macroecological patterns because it cannot capture empirical abundance patterns, while the SLM is appropriate because it reproduces multiple empirical patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C61 are supported by citations to prior work. C60 is a strong inference justified by the demonstrated failures of UNTB throughout the study. This establishes a key methodological point about appropriate null model selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Any mechanism capturing the distribution of correlation coefficients can explain fine vs. coarse-grained diversity relationships. Consumer-resource dynamics and cross-feeding are plausible mechanisms compatible with niche construction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is a reasonable inference from the simulation results. C63-C65 are supported by citations connecting to mechanistic models and experimental work. This provides mechanistic context for the statistical patterns, though direct validation would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The SLM has successfully characterized time-series at OTU and strain levels. The fine vs. coarse-grained relationships should remain valid in stationary longitudinal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is supported by citations. However, C68 is explicitly labeled as a prediction and represents speculation about future applicability. While the reasoning is sound, this has not been tested and remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Microbial communities are hierarchical due to shared evolutionary history, exhibit high richness (hundreds to thousands per sample, up to ~10^12 species globally), but taxonomic assignment remains arbitrary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are background statements supported by citations (C2-C4) and established knowledge (C1, C5). These provide context for the study but are not novel findings. They accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Microbial richness/diversity within taxonomic groups is positively correlated with richness/diversity among remaining groups, aligning with the DBD hypothesis. This has been attributed to niche construction through interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 accurately describe prior work through citations. These establish the context and motivation for the current study's investigation of whether this pattern requires ecological interactions or can be explained by a null model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The UNTB fails to capture microbial diversity patterns (e.g., predicting narrow abundance distributions vs. observed lognormal), while the SLM with gamma-distributed abundances successfully captures multiple macroecological patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by citations to prior work. These establish the rationale for using the SLM rather than UNTB as a null model. This background is essential for justifying the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The strongest correlations between AFDs are concentrated among closely related community members, implying correlation effects dissipate with coarse-graining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by citation and is consistent with the study's findings about variance of coarse-grained taxa. This provides mechanistic insight into why the independence assumption works better at coarser scales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "AFD correlation between community members is inversely related to phylogenetic distance, making correlation-based coarse-graining redundant with phylogenetic coarse-graining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by citation and represents a reasonable inference about why alternative coarse-graining approaches were not pursued. This is a minor methodological justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Data from the Earth Microbiome Project was used, with QC-filtered samples annotated using SILVA. Nine environments with 100 random sites each were analyzed using taxonomic and phylogenetic coarse-graining procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 describe the data sources and methods. These are clearly documented and appropriate for the study's goals. The methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C77",
+      "C79"
+    ],
+    "result": "The stationary distribution of the SLM yields a gamma-distributed AFD. Correlated gamma-distributed AFDs were simulated using inverse transform sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by citations to prior derivations. C79 describes the simulation method. These are standard mathematical and computational approaches appropriately applied.",
+    "result_type": "MINOR"
+  }
+]

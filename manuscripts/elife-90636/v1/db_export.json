@@ -1,0 +1,1723 @@
+{
+  "submission": {
+    "id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T19:59:09.795247Z",
+    "updated_at": "2025-11-20T19:59:09.795247Z"
+  },
+  "content": [
+    {
+      "id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "content_type": "manuscript",
+      "content_text": "# Efficient estimation for large-scale linkage disequilibrium patterns of the human genome\n\n## Authors\n\n- Xin Huang<sup>1</sup>\n- Tian-Neng Zhu<sup>1</sup> ([ORCID: 0009-0007-7507-4521](https://orcid.org/0009-0007-7507-4521))\n- Ying-Chao Liu<sup>1</sup>\n- Guo-An Qi<sup>1</sup> ([ORCID: 0000-0002-2412-3932](https://orcid.org/0000-0002-2412-3932))\n- Jian-Nan Zhang<sup>5</sup>\n- Guo-Bo Chen<sup>2</sup> ([ORCID: 0000-0001-5475-8237](https://orcid.org/0000-0001-5475-8237)) \u2020\n\n### Affiliations\n\n1. Institute of Bioinformatics, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n2. Center for General Practice Medicine, Department of General Practice Medicine, Zhejiang Provincial People\u2019s Hospital, People\u2019s Hospital of Hangzhou Medical College Hangzhou China ([ROR:03k14e164](https://ror.org/03k14e164))\n3. Center for Reproductive Medicine, Department of Genetic and Genomic Medicine, and Clinical Research Institute, Zhejiang Provincial People\u2019s Hospital, People\u2019s Hospital of Hangzhou Medical College Zhejiang China ([ROR:03k14e164](https://ror.org/03k14e164))\n4. Hainan Institute of Zhejiang University Hainan China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n5. Alibaba Group Hangzhou China ([ROR:00k642b80](https://ror.org/00k642b80))\n6. Key Laboratory of Endocrine Gland Diseases of Zhejiang Province Hangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn this study, we proposed an efficient algorithm (X-LD) for estimating linkage disequilibrium (LD) patterns for a genomic grid, which can be of inter-chromosomal scale or of small segments. Compared with conventional methods, the proposed method was significantly faster, dropped from O(nm2) to O(n2m)\u2014n the sample size and m the number of SNPs, and consequently we were permitted to explore in depth unknown or reveal long-anticipated LD features of the human genome. Having applied the algorithm for 1000 Genome Project (1KG), we found (1) the extended LD, driven by population structure, universally existed, and the strength of inter-chromosomal LD was about 10% of their respective intra-chromosomal LD in relatively homogeneous cohorts, such as FIN, and to nearly 56% in admixed cohort, such as ASW. (2) After splitting each chromosome into upmost of more than a half million grids, we elucidated the LD of the HLA region was nearly 42 folders higher than chromosome 6 in CEU and 11.58 in ASW; on chromosome 11, we observed that the LD of its centromere was nearly 94.05 folders higher than chromosome 11 in YRI and 42.73 in ASW. (3) We uncovered the long-anticipated inversely proportional linear relationship between the length of a chromosome and the strength of chromosomal LD, and their Pearson\u2019s correlation was on average over 0.80 for 26 1KG cohorts. However, this linear norm was so far perturbed by chromosome 11 given its more completely sequenced centromere region. Uniquely chromosome 8 of ASW was found most deviated from the linear norm than any other autosomes. The proposed algorithm has been realized in C++ (called X-LD) and is available at https://github.com/gc5k/gear2, and can be applied to explore LD features in any sequenced populations.\n\n## Introduction\n\nLinkage disequilibrium (LD) is the association for a pair of loci and the metric of LD serves as the basis for developing genetic applications in agriculture, evolutionary biology, and biomedical research (Weir, 2008; Hill and Robertson, 1966). The structure of LD of the human genome is shaped by many factors, mutation, recombination, population demography, epistatic fitness, and completeness of genomic data itself (Myers et al., 2005; Nei and Li, 1973; Ardlie et al., 2002). Due to its overwhelming cost, LD structure investigation is often compromised to a small genomic region (Chang et al., 2015; Theodoris et al., 2021), and their typical LD structure is as illustrated for a small segment (Barrett et al., 2005). Now, given the availability of large-scale genomic data, such as millions of single-nucleotide polymorphisms (SNPs), the large-scale LD patterns of the human genome play crucial roles in determining genomics studies, and many theories and useful algorithms upon large-scale LD structure, from genome-wide association studies, polygenic risk prediction for complex diseases, and choice for reference panels for genotype imputation (Vilhj\u00e1lmsson et al., 2015; Yang and Zhou, 2020; Bulik-Sullivan et al., 2015; Yang et al., 2011; Das et al., 2016).\n\nHowever, there are impediments, largely due to intensified computational cost, in both investigating large-scale LD and providing high-resolution illustrations for their details. If we consider a genomic grid that consists of $m^{2}$ SNP pairs, given a sample of $n$ individuals and $m$ SNPs ($n\u226am$)\u2014typically as observed in 1000 Genomes Project (1KG) (Lowy et al., 2019), its benchmark computational time cost for calculating all pairwise LD is $O(nm^{2})$, a burden that quickly drains computational resources given the volume of the genomic data. In practice, it is of interest to know the mean LD of the $m_{i}^{2}$ SNP pairs for a genomic grid, which covers $m_{i}\\timesm_{j}$ SNP pairs. Upon how a genomic grid is defined, a genomic grid consequently can consist of (1) the whole genome-wide $m^{2}$ SNP pairs, and we denote their mean LD as $l_{g}$ ; (2) the intra-chromosomal mean LD for the ith chromosome of $m_{i}^{2}$ SNP pairs, and denote as $l_{i}$ ; and (3) the inter-chromosomal mean LD ith and jth chromosomal $m_{i}m_{j}$ SNP pairs, and denoted as $l_{i\u22c5j}$ .\n\nIn this study, we propose an efficient algorithm that can estimate $l_{g}$ , $l_{i}$ , and $l_{i\u22c5j}$ , the computational time of which can be reduced from $O(nm_{i}^{2})$ to $O(n^{2}m_{i})$ for $l_{i}$ and $O(nm_{i}m_{j})$ to $O(n^{2}m_{i}+n^{2}m_{j})$ for $l_{i\u22c5j}$ . The rationale of the proposed method relies on the connection between the genetic relationship matrix (GRM) and LD (Chen, 2014; Goddard, 2009), and in this study a more general transformation from GRM to LD can be established via Isserlis\u2019s theorem (Isserlis, 1918; Zhou, 2017). The statistical properties, such as sampling variance, of the estimated LD have been derived too.\n\nThe proposed method can be analogously considered a more powerful realization for Haploview (Barrett et al., 2005), but additional utility can be derived to bring out an unprecedented survey of LD patterns of the human genome. As demonstrated in 1KG, we consequently investigate how biological factors such as population structure, admixture, or variable local recombination rates can shape large-scale LD patterns of the human genomes.\n\nThe proposed algorithm has been realized in C++ and is available at https://github.com/gc5k/gear2, (copy archived at Chen, 2023). As tested, the software could handle sample sizes as large as 10,000 individuals.\n\n## Methods\n\n### The overall rationale for large-scale LD analysis\n\nWe assume LD for a pair of biallelic loci is measured by squared Pearson\u2019s correlation, $\u03c1_{l_{1}l_{2}}^{2}=\\frac{D_{l_{1}l_{2}}^{2}}{p_{l_{1}}q_{l_{1}}p_{l_{2}}q_{l_{2}}}$ , in which $D_{l_{1}l_{2}}$ the LD of loci $l_{1}$ and $l_{2}$ , $p_{.}$ and $q_{.}$ the reference and the alternative allele frequencies. If we consider the averaged LD for a genomic grid over $m_{i}^{2}$ SNP pairs, the conventional estimator is $l^_{i}=\\frac{1}{m_{i}^{2}}\\suml_{1},l_{2}m_{i}\u03c1_{l_{1}l_{2}}^{2}$ , and, if we consider the averaged LD for $m_{i}$ and $m_{j}$ SNP pairs between two genomic segments, then $l^_{i\u22c5j}=\\frac{1}{m_{i}m_{j}}\\suml_{1},l_{2}m_{i},m_{j}\u03c1_{l_{1}l_{2}}^{2}$ . Now let us consider the 22 human autosomes (Figure 1A). We naturally partition the genome into $C=22$ blocks, and its genomic LD, denoted as $l_{g},$ can be expressed as\n\n$$\nl_{g}=\\frac{1}{m^{2}}\\suml_{1},l_{2}m\u03c1_{l_{1}l_{2}}^{2}=\\frac{1}{m^{2}}(\\sumiC(\\suml_{1},l_{2}m_{i}\u03c1_{l_{1}l_{2}}^{2})+\\sumi\\neqjC(\\suml_{1}m_{i}\\suml_{2}m_{j}\u03c1_{l_{1}l_{2}}^{2}))=\\sumiC\\frac{m_{i}^{2}}{m^{2}}l_{i}+\\sumi\\neqjC\\frac{m_{i}m_{j}}{m^{2}}l_{i\u22c5j}\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig1-v1.jpg)\n\n**Figure 1.:** (A) The 22 human autosomes have consequently 22 $l^_{i}$ and 231 $l^_{i\u22c5j}$ , without (left) and with (right) scaling transformation; Scaling transformation is given in Equation 8. (B) If zoom into chromosome 2 of 420,946 single-nucleotide polymorphisms (SNPs), a chromosome of relative neutrality is expected to have self-similarity structure that harbors many approximately strong $l^_{u}$ along the diagonal, and relatively weak $l^_{uv}$ off-diagonally. Here chromosome 2 of CONVERGE has been split into 1000 blocks and yielded 1000 $l^_{u}$ LD grids, and 499,500 $l^_{uv}$ LD grids. (C) An illustration of the construction process for the LD-decay regression model.\n\nSo we can decompose $l_{g}$ into $C$$l_{i}$ and $\\frac{C(C\u22121)}{2}$ unique $l_{i\u22c5j}$ . Obviously, Equation 1 can be also expressed in the context of a single chromosome $l_{i}=\\frac{1}{\\beta_{i}^{2}}(\\sumu\\beta_{i}l_{u}+\\sumu\\neqv\\beta_{i}l_{uv})$, in which $\\beta_{i}=\\frac{m_{i}}{m}$ the number of SNP segments, each of which has $m$ SNPs. Geometrically it leads to $\\beta_{i}$ diagonal grids and $\\frac{\\beta_{i}\\beta_{i}-1}{2}$ unique off-diagonal grids (Figure 1B).\n\n### LD-decay regression\n\nAs human genome can be boiled down to small LD blocks by genome-widely spread recombination hotspots (Hinch et al., 2019; Li et al., 2022), mechanically there is self-similarity for each chromosome that the relatively strong $l_{i}$ for juxtaposed grids along the diagonal but weak $l_{i\u22c5j}$ for grids slightly off-diagonal. So, for a chromosomal $l_{i}$ , we can further express it as\n\n$$\nl_{i}=\\frac{1}{\\beta_{i}^{2}}(\\sumu\\beta_{i}l_{u}+\\sumu\\neqv\\beta_{i}l_{uv})=E(l_{u})\\frac{1}{\\beta_{i}}+E(l_{uv})(1\u2212\\frac{1}{\\beta_{i}})=\\frac{1}{\\beta_{i}}[E(l_{u})\u2212E(l_{uv})]+E(l_{uv})\n$$\n\nin which $l_{u}$ is the mean LD for a diagonal grid, $l_{uv}$ the mean LD for off-diagonal grids, and $m_{i}$ the number of SNPs on the ith chromosome. Consider a linear model below (see Figure 1C for its illustration),\n\n$$\nl=b_{0}+b_{1}x+e\n$$\n\nin which $l$ represents a vector composed of $Cl_{i},x$ , $x$ represents a vector composed of $C$$x_{i}$, and $x_{i}=\\frac{1}{m_{i}}$ the inversion of the SNP number of the ith chromosome. The regression coefficient and intercept can be estimated as below:\n\n$$\nb_{1}=\\frac{cov(x,l)}{var(x)}=\\frac{E(xl)\u2212E(x)E(l)}{var(x)}\n$$\n\nand\n\n$$\nb_{0}=E(l)\u2212b_{1}E(x)\n$$\n\nThere are some technical details in order to find the interpretation for $b_{0}$ and $b_{1}$ . We itemize them briefly. For the mean and variance of $x$:\n\n$$\n{E(x)=\\frac{1}{C}\\sumiC\\frac{1}{m_{i}}var(x)=\\frac{1}{C}\\sumiC\\frac{1}{m_{i}^{2}}\u2212(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})^{2}\n$$\n\nFor $E(xl)$:\n\n$$\nE(xl)=\\frac{\\sumiC\\frac{1}{m_{i}}{E(l_{u}\\frac{m}{m_{i}})+E(l_{uv})(1\u2212\\frac{m}{m_{i}})}}{C}=\\frac{\\sumiC{E(l_{u}\\frac{m}{m_{i}^{2}})+E(l_{uv})(1\u2212\\frac{m}{m_{i}})}}{C}=[(E(l_{u})\u2212E(l_{uv}))m](\\frac{1}{C}\\sumiC\\frac{1}{m_{i}^{2}})+E(l_{uv})(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})\n$$\n\nFor $E(x)E(l)$:\n\n$$\nE(x)E(l)={\\frac{1}{C}\\sumiC\\frac{1}{m_{i}}}{(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})(E(l_{u})\u22c5m)+[1\u2212m(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})]E(l_{uv})}=[(E(l_{u})\u2212E(l_{uv}))m](\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})^{2}+E(l_{uv})(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})\n$$\n\nThen we integrate these items to have the expectation for $b_{1}:$\n\n$$\nE(b_{1})=\\frac{E(xl)\u2212E(x)E(l)}{var(x)}=\\frac{{[(E(l_{u})\u2212E(l_{uv}))m](\\frac{1}{C}\\sumiC\\frac{1}{m_{i}^{2}})+E(l_{uv})(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})}\u2212{[(E(l_{u})\u2212E(l_{uv}))m](\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})^{2}+E(l_{uv})(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})}}{\\frac{1}{C}\\sumiC\\frac{1}{m_{i}^{2}}\u2212(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})^{2}}=[E(l_{u})\u2212E(l_{uv})]m\n$$\n\nSimilarly, we plug in $E(b_{1})$ so as to derive $b_{0}$ :\n\n$$\nE(b_{0})=E(l)\u2212E(b_{1})E(x)={(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})(E(l_{u})\u22c5m)+[1\u2212m(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})]E(l_{uv})}\u2212{(E(l_{u})\u2212E(l_{uv}))\u22c5m\u22c5(\\frac{1}{C}\\sumiC\\frac{1}{m_{i}})}=E(l_{uv})\n$$\n\nAfter some algebra, if $E(l_{u})\u226bE(l_{uv})$\u2014say if the former is far greater than the latter, the interpretation of $b_{1}$ and $b_{0}$ can be\n\n$$\n{E(b_{1})=E(l_{u}\u2212l_{uv})m\u2248E(l_{u})mE(b_{0})=E(l_{uv})\n$$\n\nIt should be noticed that $E(b_{1})\u2248E(l_{u})m$ quantifies the averaged LD decay of the genome. Conventional LD decay is analyzed via the well-known LD decay analysis, but Equation 4 provides a direct estimate of both LD decay and possible existence of extended LD. We will see the application of the model in Figure 5 that the strength of the long-distance LD is associated with population structure. Of note, the underlying assumption of Equations 3 and 4 is genome-wide spread of recombination hotspots, an established result that has been revealed and confirmed (Hinch et al., 2019).\n\n### Efficient estimation for lg, li, and li\u22c5j\n\nFor the aforementioned analyses, the bottleneck obviously lies in the computational cost in estimating $l_{i}$ and $l_{i\u22c5j}$ . $l_{i}$ and $l_{i\u22c5j}$ are used to be estimated via the current benchmark algorithm as implemented in PLINK (Chang et al., 2015), and the computational time complex is proportional to $O(nm^{2})$. We present a novel approach to estimate $l_{i}$ and $l_{i\u22c5j}$ . Given a genotypic matrix $X$, a $n\\timesm$ matrix, if we assume that there are $m_{i}$ and $m_{j}$ SNPs on chromosomes $i$ and $j$, respectively, we can construct $n\\timesn$ genetic relatedness matrices as below:\n\n$$\n{K_{i}=\\frac{1}{m_{i}}X~_{i}X~_{i}^{T}K_{j}=\\frac{1}{m_{j}}X_{j}~X~_{j}^{T}\n$$\n\nin which $X~_{i}$ is the standardized $X_{i}$ and $x~_{kl}=\\frac{x_{kl}-2p_{l}}{\\sqrt{2(1+F)p_{l}q_{l}}}$ , where $x_{kl}$ is the genotype for the kth individual at the lth biallelic locus, $F$ is the inbreeding coefficient having the value of 0 for random mating population and 1 for an inbred population, and $p_{l}$ and $q_{l}$ are the frequencies of the reference and the alternative alleles ($p_{l}+q_{l}=1$), respectively. When GRM is given, we can obtain some statistical characters of $K_{i}$ . We extract two vectors $k_{i_{o}}$ , which stacks the off-diagonal elements of $K_{i}$ , and $k_{i_{d}}$ , which takes the diagonal elements of $K_{i}$ . The mathematical expectation of $k_{i_{o}}^{2}$ , in which $E(k_{i_{o}}^{2})=\\frac{1}{n(n\u22121)}\\sumk_{1}\\neqk_{2}nk_{k_{1},k_{2}}^{2}$ , can be established according to Isserlis\u2019s theorem in terms of the four-order moment (Isserlis, 1918),\n\n$$\nE(k_{i_{o}}^{2})=\\frac{1}{m_{i}^{2}n(n\u22121)}\\sumk_{1}\\neqk_{2}n\\suml_{1},l_{2}m_{i}[(1+\\theta_{k_{1}k_{2}}^{2})\u03c1_{l_{1}l_{2}}^{2}+\\theta_{k_{1}k_{2}}^{2}]\n$$\n\nin which $E(\\theta_{k_{1}k_{2}})=(\\frac{1}{2})^{r}$ is the expected relatedness score and $r$ indicates the rth-degree relatives. $r=0$ for the same individual, and $r=1$ for the first-degree relatives. Similarly, we can derive for $Ek_{i_{o}}k_{j_{o}}$.Equation 6 establishes the connection between GRM and the aggregated LD estimation that $l_{i}=E(k_{i_{o}}^{2})$ . According to Delta method as exampled in Appendix I of Lynch and Walsh, 1998, the means and the sampling variances for $l_{i}$ and $l_{i\u22c5j}$ are\n\n$$\n{E(k_{i_{o}}^{2})=l_{i}=\\frac{1}{m_{i}^{2}}\\suml_{1},l_{2}m_{i}\u03c1_{l_{1},l_{2}}^{2}var(l_{i})=\\frac{4[var^(k_{i_{o}})]^{2}}{n(n\u22121)}E(k_{i_{o}}k_{k_{o}})=l_{i\u22c5j}=\\frac{1}{m_{i}m_{j}}\\suml_{1},l_{2}=1m_{i},m_{j}\u03c1l_{1}^{2},l_{2}var(k_{i_{o}})=E(k_{i_{o}}^{2})\u2212[E(k_{i_{o}})]^{2}=l_{i}\u2212\\frac{1}{(n\u22121)^{2}}\n$$\n\nin which $var(k_{i_{o}})=E(k_{i_{o}}^{2})\u2212[E(k_{i_{o}})]^{2}=l_{i}\u2212\\frac{1}{(n\u22121)^{2}}$ and $cov(k_{i_{o}},k_{j_{o}})=E(k_{i_{o}}k_{j_{o}})\u2212E(k_{i_{o}})E(k_{j_{o}})=l_{i\u22c5j}\u2212\\frac{1}{(n\u22121)^{2}}$ , respectively. Of note, the properties of $l_{g}$ can be derived similarly if we replace $l_{i}$ with $l_{g}$ in Equation 7. We can develop $l\u223c_{i\u22c5j}$ , a scaled version of $l_{i\u22c5j}$ , as below:\n\n$$\nl\u223c_{i\u22c5j}=\\frac{l_{i\u22c5j}}{\\sqrt{l\u223c_{i}l\u223c_{j}}}\n$$\n\nin which $l\u223c_{i}=\\frac{m_{i}l_{i}\u22121}{m_{i}\u22121}$ , a modification that removed the LD with itself. According to Delta method, the sampling variance of $l\u223c_{i\u22c5j}$ is\n\n$$\nvar(l_{i\u22c5j}~)=\\frac{2(l_{i\u22c5j}~^)^{2}}{n(n\u22121)}[\\frac{var^(k_{i_{o}})var^(k_{j_{o}})}{(cov^(k_{i_{o}},k_{j_{o}}))^{2}}+\\frac{(cov^(k_{i_{o}},k_{j_{o}}))^{2}}{var^(k_{i_{o}})var^(k_{j_{o}})}\u22122]\n$$\n\nOf note, when there is no LD between a pair of loci, $l$ yields zero and its counterpart PLINK estimate yields $\\frac{1}{n}$ , a difference that can be reconciled in practice (see Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig2-v1.jpg)\n\n**Figure 2.:** (A) Consistency examination for the 26 1KG cohorts for their $l^_{i}$ and $l^_{i\u22c5j}$ estimated by X-LD and PLINK (--r2). In each figure, the 22 $l^_{i}$ fitting line is in purple, whereas the 231 $l^_{i\u22c5j}$ fitting line is in green. The gray solid line, $y=\\frac{1}{n}+x$, in which $n$ the sample size of each cohort, represents the expected fit between PLINK and X-LD estimates, and the two estimated regression models at the top-right corner of each plot show this consistency. The sample size of each cohort is in parentheses. (B) Distribution of $R^{2}$ of $l^_{i}$ and $l^_{i\u22c5j}$ fitting lines is based on X-LD and PLINK algorithms in the 26 cohorts; $R^{2}$ represents variation explained by the fitted model. 26 1KG cohorts: MSL (Mende in Sierra Leone), GWD (Gambian in Western Division, The Gambia), YRI (Yoruba in Ibadan, Nigeria), ESN (Esan in Nigeria), ACB (African Caribbean in Barbados), LWK (Luhya in Webuye, Kenya), ASW (African Ancestry in Southwest US), CHS (Han Chinese South), CDX (Chinese Dai in Xishuangbanna, China), KHV (Kinh in Ho Chi Minh City, Vietnam), CHB (Han Chinese in Beijing, China), JPT (Japanese in Tokyo, Japan), BEB (Bengali in Bangladesh), ITU (Indian Telugu in the UK), STU (Sri Lankan Tamil in the UK), PJL (Punjabi in Lahore, Pakistan), GIH (Gujarati Indian in Houston, TX), TSI (Toscani in Italia), IBS (Iberian populations in Spain), CEU (Utah residents [CEPH] with Northern and Western European ancestry), GBR (British in England and Scotland), FIN (Finnish in Finland); MXL (Mexican Ancestry in Los Angeles, CA), PUR (Puerto Rican in Puerto Rico), CLM (Colombian in Medellin, Colombia), and PEL (Peruvian in Lima, Peru).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** In each figure, the 22 $l^_{i}$ fit line is in purple, whereas the 231 $l^_{i\u22c5j}$ fit line is in green. The gray solid line, $y=\\frac{1}{n}+x$, in which $n$ the sample size, represents the expected fit between PLINK and X-LD, and the two estimated regression models at the top-right corner show this consistency.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Considering the high computational cost of PLINK, only the first chromosome was chosen. In the process of evaluating computational efficiency, we kept adding single-nucleotide polymorphisms (SNPs) until the inclusion of the entire chromosome. The bar chart and line chart show the actual calculation time and theoretical calculation complexity, respectively.\n\n### Raise of LD due to population structure\n\nIn this study, the connection between LD and population structure is bridged via two pathways below, in terms of a pair of loci and of the aggregated LD for all pair of loci. For a pair of loci, their LD is often simplified as $\u03c1_{l_{1}l_{2}}^{2}=\\frac{D_{l_{1}l_{2}}^{2}}{p_{l_{1}}q_{l_{1}}p_{l_{2}}q_{l_{2}}}$ , but will be inflated if there are subgroups (Nei and Li, 1973). In addition, it is well established the connection between population structure and eigenvalues, and in particular the largest eigenvalue is associated with divergence of subgroups (Patterson et al., 2006). In this study, the existence of subgroups of cohort is surrogated by the largest eigenvalue $\\lambda_{1}$ or $F-_{st}\u2248\\frac{\\lambda_{1}}{n}$ .\n\n### Data description and quality control\n\nThe 1KG (Auton et al., 2015), which was launched to produce a deep catalog of human genomic variation by whole-genome sequencing (WGS) or whole-exome sequencing (WES), and 2503 strategically selected individuals of global diversity were included (containing 26 cohorts). We used the following criteria for SNP inclusion for each of the 26 1KG cohorts: (1) autosomal SNPs only; (2) SNPs with missing genotype rates higher than 0.2 were removed, and missing genotypes were imputed; and (3) only SNPs with minor allele frequencies higher than 0.05 were retained. Then 2,997,635 consensus SNPs that were present in each of the 26 cohorts were retained. According to their origins, the 26 cohorts are grouped as African (AFR: MSL, GWD, YRI, ESN, ACB, LWK, and ASW), European (EUR: TSI, IBS, CEU, GBR, and FIN), East Asian (EA: CHS, CDX, KHV, CHB, and JPT), South Asian (SA: BEB, ITU, STU, PJL, and GIH), and American (AMR: MXL, PUR, CLM, and PEL), respectively.\n\nIn addition, to test the capacity of the developed software (X-LD), we also included CONVERGE cohort ($n=10,640$), which was used to investigate major depressive disorder (MDD) in the Han Chinese population (Cai et al., 2015). We performed the same criteria for SNP inclusion as that of the 1KG cohorts, and $m=5,215,820$ SNPs remained for analyses.\n\n### X-LD software implementation\n\nThe proposed algorithm has been realized in our X-LD software, which is written in C++ and reads in binary genotype data as often used in PLINK. As multi-thread programming is adopted, the efficiency of X-LD can be improved upon the availability of computational resources. We have tested X-LD in various independent datasets for its reliability and robustness. Certain data management options, such as flexible inclusion or exclusion of chromosomes, have been built into the commands of X-LD. In X-LD, missing genotypes are naively imputed according to Hardy\u2013Weinberg proportions; however, when the missing rate is high, we suggest the genotype matrix should be imputed by other advanced imputation tools.\n\nThe most time-consuming part of X-LD was the construction of GRM $K=\\frac{1}{m}X~X~^{T}$ , and the established computational time complex was $O(n^{2}m)$. However, if $X~$ is decomposed into $X~=[X~_{t_{1},}\u22eeX~_{t_{2},}\u22ee\u22ef\u22eeX~_{t_{z},}]$, in which $X~_{[t_{i},]}$ has dimension of $n\\timesB$, using Mailman algorithm the computational time complex for building $K$ can be reduced to $O(\\frac{n^{2}m}{log_{3}\u2061m})$ (Liberty and Zucker, 2009). This idea of embedding Mailman algorithm into certain high-throughput genomic studies has been successful, and our X-LD software is also leveraged by absorbing its recent practice in genetic application (Wu and Sankararaman, 2018).\n\n## Results\n\n### Statistical properties of the proposed method\n\nTable 1 introduces the symbols frequently cited in this study. As schematically illustrated in Figure 1, $l_{g}$ could be decomposed into $Cl_{i}$ and $\\frac{C(C\u22121)}{2}$ unique $l_{i\u22c5j}$ components. We compared the estimated $l_{i}$ and $l_{i\u22c5j}$ in X-LD with those being estimated in PLINK (known as \u2018--r2,\u2019 and the estimated squared Pearson\u2019s correlation LD is denoted as $r^{2}$). Considering the substantial computational cost of PLINK, only 100,000 randomly selected autosome SNPs were used for each 1KG cohort, and 22 $l^_{i}$ and 231 $l^_{i\u22c5j}$ were estimated. After regressing 22 $l^_{i}$ against those of PLINK, we found that the regression slope was close to unity and bore an anticipated intercept a quantity of approximately $\\frac{1}{n}$ (Figure 2A and B). In other words, PLINK gave $\\frac{1}{n}$ even for SNPs of no LD. However, when regressing 231 $l^_{i\u22c5j}$ estimates against those of PLINK, it was found that largely because of the tiny quantity of $l^_{i\u22c5j}$ it was slightly smaller than 1 but statistically insignificant from 1 in these 26 1KG cohorts (mean of 0.86 and SD of 0.10, and its 95% CI was (0.664, 1.056)); when the entire 1KG samples were used, its much larger LD due to subgroups, nearly no estimation bias was found (Figure 2A and B). In contrast, because of their much larger values, $l^_{i}$ components were always consistent with their corresponding estimates from PLINK (mean of 1.03 and SD of 0.012, 95% CI was (1.006, 1.053), bearing an ignorable bias). Furthermore, we also combined the African cohorts together (MSL, GWD, YRI, ESN, LWK, totaling 599 individuals), the East Asian cohorts together (CHS, CDX, KHV, CHB, and JPT, totaling 504 individuals), and the European cohorts together (TSI, IBS, CEU, GBR, and FIN, totaling 503 individuals), and the resemblance pattern between X-LD and PLINK was similar as observed in each cohort alone (Figure 2\u2014figure supplement 1). The empirical data in 1KG verified that the proposed method was sufficiently accurate.\n\n**Table 1.**\n Notation definitions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Notation</th>\n      <th>Definition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>C</td>\n      <td>The number of chromosomes.</td>\n    </tr>\n    <tr>\n      <td>i and j</td>\n      <td>Subscripts index chromosome i and j.</td>\n    </tr>\n    <tr>\n      <td>\u03b2i</td>\n      <td>The number of SNP segments of chromosome i, each of which has m SNPs.</td>\n    </tr>\n    <tr>\n      <td>Dl1l2</td>\n      <td>The difference between the observed and expected haplotype frequencies, with Dl1l2=pl1l2-pl1pl2 .</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>The inbreeding coefficient.</td>\n    </tr>\n    <tr>\n      <td>Ki</td>\n      <td>Genetic relatedness matrix for chromosome i, and two vectors, kio and kid , from Ki , where kio stacks the off-diagonal elements and kid stacks the diagonal elements.</td>\n    </tr>\n    <tr>\n      <td>k</td>\n      <td>Subscript indexes individual.</td>\n    </tr>\n    <tr>\n      <td>l1 and l2</td>\n      <td>Subscripts index a pair of SNPs.</td>\n    </tr>\n    <tr>\n      <td>m</td>\n      <td>The number of SNPs; mi the number of SNPs on chromosome i.</td>\n    </tr>\n    <tr>\n      <td>n</td>\n      <td>The number of samples; ni , the number of samples in subpopulation i.</td>\n    </tr>\n    <tr>\n      <td>pl and ql</td>\n      <td>Frequency of the lth reference allele and alternative allele in the population.</td>\n    </tr>\n    <tr>\n      <td>\u03b8k1k2</td>\n      <td>The relatedness score between individual k1 and k2 .</td>\n    </tr>\n    <tr>\n      <td>xkl</td>\n      <td>The genotype for the kth individual at the lth biallelic locus.</td>\n    </tr>\n    <tr>\n      <td>Xi and X~i</td>\n      <td>Genotype and standardized genotype matrixes for chromosome i.</td>\n    </tr>\n    <tr>\n      <td>\u03c1l1l22</td>\n      <td>Squared Pearson\u2019s correlation coefficient for any pair of SNPs, including an SNP to itself when l1=l2 .</td>\n    </tr>\n    <tr>\n      <td>r2</td>\n      <td>Squared Pearson\u2019s correlation metric for LD but estimated from PLINK (--r2) or PopLDdecay.</td>\n    </tr>\n    <tr>\n      <td>lg</td>\n      <td>The mean LD of the whole genome-wide m2 SNP pairs.</td>\n    </tr>\n    <tr>\n      <td>li</td>\n      <td>The intra-chromosomal mean LD for the ith chromosome of mi2 SNP pairs.</td>\n    </tr>\n    <tr>\n      <td>li\u22c5j</td>\n      <td>The inter-chromosomal mean LD ith and jth chromosomal mimj SNP pairs, a scaled version is \u2113\u223cij .</td>\n    </tr>\n    <tr>\n      <td>lu</td>\n      <td>The mean LD for a diagonal grid.</td>\n    </tr>\n    <tr>\n      <td>luv</td>\n      <td>The mean LD for off-diagonal grids.</td>\n    </tr>\n  </tbody>\n</table>\n\n_LD, linkage disequilibrium; SNP, single-nucleotide polymorphism._\n\nTo fairly evaluate the computational efficiency of the proposed method, the benchmark comparison was conducted on the first chromosome of the entire 1KG dataset ($n=2,503$ and $m=225,967$), and 10 CPUs were used for multi-thread computing. Compared with PLINK, the calculation efficiency of X-LD was nearly 30\u201340 times faster for the tested chromosome, and its computational time of X-LD was proportional to $O(\\frac{n^{2}m}{log_{3}\u2061m})$ (Figure 2\u2014figure supplement 2). So, X-LD provided a feasible and reliable estimation of large-scale complex LD patterns. More detailed computational time of the tested tasks is reported in their corresponding sections below; since each 1KG cohort had a sample size of around 100, otherwise specified the computational time was reported for CHB ($n=103$) as a reference (Table 2). In order to test the capability of the software, the largest dataset tested was CONVERGE ($n=10,640$, and $m=5,215,820$), and it took 77,508.00 s, about 22 hr, to estimate 22 autosomal $l^_{i}$ and 231 $l^_{i\u22c5j}$ (Figure 1A); when zooming into chromosome 2 of CONVERGE, on which 420,949 SNPs had been evenly split into 1000 blocks and yielded 1000 $l^_{u}$ grids, and 499,500 $l^_{uv}$ LD grids, it took 45,125.00 s, about 12.6 hr, to finish the task (Figure 1B).\n\n**Table 2.**\n Computational time for the demonstrated estimation tasks.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cohort</th>\n      <th>Task description</th>\n      <th>Time cost</th>\n      <th>Computational time complex</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CHB (n=103, m=2,997,655)</td>\n      <td>Estimation for 22 autosomal \u2113i , and 231 inter-chromosomal \u2113i\u22c5j . For results, see Figure 3 and Table 3.</td>\n      <td>101,34 s</td>\n      <td>O(n2m)</td>\n    </tr>\n    <tr>\n      <td>1KG (n=2,503, m=2,997,655)</td>\n      <td>Same as above.</td>\n      <td>3008.29 s</td>\n      <td>Same as above</td>\n    </tr>\n    <tr>\n      <td>CONVERGE (n=10,640, m=5,215,820)</td>\n      <td>Same as above. For results, see Figure 1A.</td>\n      <td>77,508.00 s</td>\n      <td>Same as above</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Estimation for high-resolution LD interaction given bin size of 250 SNPs</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CHB (n=103, m2=241,241)</td>\n      <td>Chromosome 2, estimation for 965 li, and 465,130 li\u22c5j . For results, see Figure 4.</td>\n      <td>66.86 s</td>\n      <td>O(n2(mi+(mi250)2))</td>\n    </tr>\n    <tr>\n      <td>CHB (n=103, m22=40,378)</td>\n      <td>Chromosome 22, estimation for 162 li, and 13,041 li\u22c5j . For results, see Figure 4.</td>\n      <td>3.22 s</td>\n      <td>Same as above</td>\n    </tr>\n    <tr>\n      <td>CONVERGE (n=10,640, m22=71,407)</td>\n      <td>Chromosome 22, estimation for 286 li, and 40,755 li\u22c5j .</td>\n      <td>8,736.29 s</td>\n      <td>Same as above</td>\n    </tr>\n    <tr>\n      <td>CONVERGE (n=10,640, m2=420,949)</td>\n      <td>Chromosome 2, estimation for 1000 li, and 499,500 li\u22c5j . For results, see Figure 1B.</td>\n      <td>45,125.00 s</td>\n      <td>Chromosome 2 was split into 1000 blocks, each of which had about 420 SNPs</td>\n    </tr>\n  </tbody>\n</table>\n\n_For the sake of fair comparison, 10 CPUs were used for multi-thread computing.LD, linkage disequilibrium; SNP, single-nucleotide polymorphism._\n\n### Ubiquitously extended LD and population structure/admixture\n\nWe partitioned the 2,997,635 SNPs into 22 autosomes ( Figure 3A , Figure 3\u2014figure supplement 1), and the general LD patterns were as illustrated for CEU, CHB, YRI, ASW, and 1KG. As expected, $l^_{i\u22c5j}<l^_{g}<l^_{i}$ for each cohort (Figure 3B). As observed in these 1KG cohorts, all three LD measures were associated with population structure, which was surrogated by $F-_{st}\u2248\\frac{\\lambda_{1}}{n}$ , and their squared correlation $R^{2}$ was greater than 0.8. ACB, ASW, PEL, and MXL, which all showed certain admixture, tended to have much greater $l^_{g}$ , $l^_{i}$ , and $l^_{i\u22c5j}$ (Table 3 and Figure 3B). In contrast, East Asian (EA) and European (EUR)-orientated cohorts, which showed little within-cohort genetic differentiation\u2014as their largest eigenvalues were slightly greater than 1\u2014had their aggregated LD relatively low and resembled each other (Table 3). Furthermore, for several European (TSI, IBS, and FIN) and East Asian (JPT) cohorts, the ratio between $l^_{i\u22c5j}$ and $l^_{i}$ components could be smaller than 0.1, and the smallest ratio was found to be about 0.091 in FIN. The largest ratio was found in 1KG that $l^_{i\u22c5j}=5.7e\u22123$ and $l^_{i}=6.5e\u22123$, and the ratio was 0.877 because of the inflated LD due to population structure. A more concise statistic to describe the ratio between $l_{i\u22c5j}$ and $l_{i}$ was $l\u223c_{i\u22c5j}$ (Equation 8), and the corresponding value for 231 scaled $l\u223c_{i\u22c5j}$ for FIN was $l\u223c^_{i\u22c5j}=0.10$ (SD of 0.027) and for 1KG was $l\u223c^_{i\u22c5j}=0.88$ (SD of 0.028).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig3-v1.jpg)\n\n**Figure 3.:** (A) Chromosomal scale LD components for five representative cohorts (CEU, CHB, YRI, ASW, and 1KG). The upper parts of each figure represent $l^_{i}$ (along the diagonal) and $l^_{i\u22c5j}$ (off-diagonal), and the lower part $l\u223c^_{i\u22c5j}$ as in Equation 8. For visualization purposes, the quantity of LD before scaling is transformed to a -log10 scale, with smaller values (red hues) representing larger LD, and a value of 0 representing that all single-nucleotide polymorphisms (SNPs) are in LD. (B) The relationship between the degree of population structure (approximated by $F-_{st}$) and $l^_{i}$ , $l^_{g}$ , and $l^_{i\u22c5j}$ in the 26 1KG cohorts.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The upper and lower parts of each figure represent the LD before and after scaling according to Equation 8. $l^_{i}$ and $l^_{i\u22c5j}$ are represented by the diagonal and the off-diagonal elements, respectively. For visualization purposes, LD before scaling is transformed to a -log10-scale, with smaller values (red hues) representing larger LD, and a value of 0 representing that all single-nucleotide polymorphisms (SNPs) are in LD.\n\n**Table 3.**\n X-LD estimation for complex LD components (2,997,635 SNPs).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cohort (n)</th>\n      <th>Ancestry</th>\n      <th>\u03bb1(Fst)*</th>\n      <th>l^g (SE)\u2020</th>\n      <th>l\u00afi^ (SD) \u2021</th>\n      <th>l\u00afi\u22c5j^ (SD) \u2021</th>\n      <th>l\u223c^i\u22c5j (SD) \u2021</th>\n      <th>Lower bound of LD \u00a7</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MSL (85)</td>\n      <td>AFR</td>\n      <td>1.10 (0.013)</td>\n      <td>1.9e-4 (1.21e-6)</td>\n      <td>6.9e-4 (2.0e-4)</td>\n      <td>1.7e-4 (1.7e-5)</td>\n      <td>0.26 (0.053)</td>\n      <td>0.161971831</td>\n    </tr>\n    <tr>\n      <td>GWD (113)</td>\n      <td>AFR</td>\n      <td>1.07 (0.009)</td>\n      <td>1.1e-4 (5.61e-7)</td>\n      <td>6.0e-4 (2.0e-4)</td>\n      <td>8.7e-5 (8.1e-6)</td>\n      <td>0.16 (0.037)</td>\n      <td>0.247218789</td>\n    </tr>\n    <tr>\n      <td>YRI (107)</td>\n      <td>AFR</td>\n      <td>1.05 (0.010)</td>\n      <td>1.1e-4 (4.23e-7)</td>\n      <td>5.9e-4 (2.0e-4)</td>\n      <td>8.8e-5 (6.9e-6)</td>\n      <td>0.16 (0.04)</td>\n      <td>0.242001641</td>\n    </tr>\n    <tr>\n      <td>ESN (99)</td>\n      <td>AFR</td>\n      <td>1.09 (0.011)</td>\n      <td>1.4e-4 (7.67e-7)</td>\n      <td>7.0e-4 (2.2e-4)</td>\n      <td>1.2e-4 (1.2e-5)</td>\n      <td>0.19 (0.043)</td>\n      <td>0.217391304</td>\n    </tr>\n    <tr>\n      <td>ACB (96)</td>\n      <td>AFR</td>\n      <td>2.01 (0.021)</td>\n      <td>2.9e-4 (3.78e-6)</td>\n      <td>9.1e-4 (2.5e-4)</td>\n      <td>2.5e-4 (3.6e-5)</td>\n      <td>0.29 (0.070)</td>\n      <td>0.147727273</td>\n    </tr>\n    <tr>\n      <td>LWK (99)</td>\n      <td>AFR</td>\n      <td>1.35 (0.014)</td>\n      <td>2.2e-4 (2.38e-6)</td>\n      <td>8.4e-4 (2.5e-4)</td>\n      <td>1.9e-4 (3.2e-5)</td>\n      <td>0.24 (0.052)</td>\n      <td>0.173913043</td>\n    </tr>\n    <tr>\n      <td>ASW (61)</td>\n      <td>AFR</td>\n      <td>1.90 (0.031)</td>\n      <td>1.1e-3 (2.73e-5)</td>\n      <td>2.0e-3 (3.2e-4)</td>\n      <td>1.1e-3 (6.2e-5)</td>\n      <td>0.57 (0.059)</td>\n      <td>0.079681275</td>\n    </tr>\n    <tr>\n      <td>CHS (105)</td>\n      <td>EA</td>\n      <td>1.08 (0.010)</td>\n      <td>1.4e-4 (9.39e-7)</td>\n      <td>9.5e-4 (3.4e-4)</td>\n      <td>1.0e-4 (1.3e-5)</td>\n      <td>0.12 (0.030)</td>\n      <td>0.31147541</td>\n    </tr>\n    <tr>\n      <td>CDX (93)</td>\n      <td>EA</td>\n      <td>1.11 (0.012)</td>\n      <td>1.8e-4 (1.38e-6)</td>\n      <td>1.1e-3 (3.6e-4)</td>\n      <td>1.4e-4 (2.0e-5)</td>\n      <td>0.14 (0.040)</td>\n      <td>0.272277228</td>\n    </tr>\n    <tr>\n      <td>KHV (99)</td>\n      <td>EA</td>\n      <td>1.07 (0.011)</td>\n      <td>1.4e-4 (7.67e-7)</td>\n      <td>9.5e-4 (3.5e-4)</td>\n      <td>1.0e-4 (1.2e-5)</td>\n      <td>0.12 (0.031)</td>\n      <td>0.31147541</td>\n    </tr>\n    <tr>\n      <td>CHB (103)</td>\n      <td>EA</td>\n      <td>1.07 (0.010)</td>\n      <td>1.3e-4 (6.94e-7)</td>\n      <td>9.3e-4 (3.4e-4)</td>\n      <td>9.5e-5 (1.1e-5)</td>\n      <td>0.11 (0.030)</td>\n      <td>0.317948718</td>\n    </tr>\n    <tr>\n      <td>JPT (104)</td>\n      <td>EA</td>\n      <td>1.06 (0.010)</td>\n      <td>1.3e-4 (7.22e-7)</td>\n      <td>1.0e-3 (3.8e-4)</td>\n      <td>9.3e-5 (1.2e-5)</td>\n      <td>0.10 (0.028)</td>\n      <td>0.338638673</td>\n    </tr>\n    <tr>\n      <td>BEB (86)</td>\n      <td>SA</td>\n      <td>1.07 (0.012)</td>\n      <td>1.7e-4 (8.09e-7)</td>\n      <td>9.1e-4 (3.1e-4)</td>\n      <td>1.4e-4 (1.5e-5)</td>\n      <td>0.17 (0.042)</td>\n      <td>0.236363636</td>\n    </tr>\n    <tr>\n      <td>ITU (102)</td>\n      <td>SA</td>\n      <td>1.61 (0.016)</td>\n      <td>1.9e-4 (1.84e-6)</td>\n      <td>9.5e-4 (3.1e-4)</td>\n      <td>1.5e-4 (1.7e-5)</td>\n      <td>0.18 (0.044)</td>\n      <td>0.231707317</td>\n    </tr>\n    <tr>\n      <td>STU (102)</td>\n      <td>SA</td>\n      <td>1.56 (0.015)</td>\n      <td>2.6e-4 (3.21e-6)</td>\n      <td>1.0e-3 (3.3e-4)</td>\n      <td>2.3e-4 (3.1e-5)</td>\n      <td>0.23 (0.047)</td>\n      <td>0.171526587</td>\n    </tr>\n    <tr>\n      <td>PJL (96)</td>\n      <td>SA</td>\n      <td>1.67 (0.017)</td>\n      <td>2.4e-4 (2.74e-6)</td>\n      <td>1.1e-3 (3.4e-4)</td>\n      <td>2.0e-4 (2.2e-5)</td>\n      <td>0.21 (0.048)</td>\n      <td>0.20754717</td>\n    </tr>\n    <tr>\n      <td>GIH (103)</td>\n      <td>SA</td>\n      <td>1.73 (0.017)</td>\n      <td>2.7e-4 (3.41e-6)</td>\n      <td>1.1e-3 (3.4e-4)</td>\n      <td>2.4e-4 (1.9e-5)</td>\n      <td>0.23 (0.049)</td>\n      <td>0.179153094</td>\n    </tr>\n    <tr>\n      <td>TSI (107)</td>\n      <td>EUR</td>\n      <td>1.07 (0.010)</td>\n      <td>1.2e-4 (6.10e-7)</td>\n      <td>9.1e-4 (3.3e-4)</td>\n      <td>9.0e-5 (1.1e-5)</td>\n      <td>0.11 (0.029)</td>\n      <td>0.325</td>\n    </tr>\n    <tr>\n      <td>IBS (107)</td>\n      <td>EUR</td>\n      <td>1.07 (0.010)</td>\n      <td>1.2e-4 (6.10e-7)</td>\n      <td>9.1e-4 (3.3e-4)</td>\n      <td>8.8e-5 (1.1e-5)</td>\n      <td>0.11 (0.028)</td>\n      <td>0.329949239</td>\n    </tr>\n    <tr>\n      <td>CEU (99)</td>\n      <td>EUR</td>\n      <td>1.07 (0.011)</td>\n      <td>1.4e-4 (7.67e-7)</td>\n      <td>9.6e-4 (3.4e-4)</td>\n      <td>1.1e-4 (1.3e-5)</td>\n      <td>0.12 (0.030)</td>\n      <td>0.293577982</td>\n    </tr>\n    <tr>\n      <td>GBR (91)</td>\n      <td>EUR</td>\n      <td>1.11 (0.012)</td>\n      <td>1.7e-4 (1.08e-6)</td>\n      <td>1.0e-3 (3.6e-4)</td>\n      <td>1.4e-4 (1.8e-5)</td>\n      <td>0.15 (0.036)</td>\n      <td>0.253807107</td>\n    </tr>\n    <tr>\n      <td>FIN (99)</td>\n      <td>EUR</td>\n      <td>1.09 (0.011)</td>\n      <td>1.5e-4 (9.69e-7)</td>\n      <td>1.1e-3 (3.8e-4)</td>\n      <td>1.0e-4 (1.5e-5)</td>\n      <td>0.10 (0.027)</td>\n      <td>0.34375</td>\n    </tr>\n    <tr>\n      <td>MXL (64)</td>\n      <td>AMR</td>\n      <td>2.29 (0.036)</td>\n      <td>7.2e-4 (1.49e-5)</td>\n      <td>2.1e-3 (4.1e-4)</td>\n      <td>6.3e-4 (9.6e-5)</td>\n      <td>0.32 (0.072)</td>\n      <td>0.136986301</td>\n    </tr>\n    <tr>\n      <td>PUR (104)</td>\n      <td>AMR</td>\n      <td>1.43 (0.014)</td>\n      <td>1.6e-4 (1.30e-6)</td>\n      <td>1.2e-3 (4.2e-4)</td>\n      <td>1.2e-4 (1.7e-5)</td>\n      <td>0.11 (0.026)</td>\n      <td>0.322580645</td>\n    </tr>\n    <tr>\n      <td>CLM (94)</td>\n      <td>AMR</td>\n      <td>1.58 (0.017)</td>\n      <td>2.3e-4 (2.49e-6)</td>\n      <td>1.4e-3 (4.5e-4)</td>\n      <td>1.7e-4 (2.6e-5)</td>\n      <td>0.13 (0.035)</td>\n      <td>0.281690141</td>\n    </tr>\n    <tr>\n      <td>PEL (85)</td>\n      <td>AMR</td>\n      <td>2.38 (0.028)</td>\n      <td>4.5e-4 (7.33e-6)</td>\n      <td>1.9e-3 (5.1e-4)</td>\n      <td>3.7e-4 (8.5e-5)</td>\n      <td>0.21 (0.062)</td>\n      <td>0.196483971</td>\n    </tr>\n    <tr>\n      <td>1KG (2503)</td>\n      <td>MIX</td>\n      <td>164.20 (0.066)</td>\n      <td>5.8e-3 (4.63e-6)</td>\n      <td>6.5e-3 (4.1e-4)</td>\n      <td>5.7e-3 (2.4e-4)</td>\n      <td>0.88 (0.028)</td>\n      <td>0.051505547</td>\n    </tr>\n  </tbody>\n</table>\n\n_LD, linkage disequilibrium; SNPs, single-nucleotide polymorphisms.*Eigenvalue was estimated. In parentheses is the ratio between the listed largest eigenvalue and the sample size. Since there exists an approximation that F-st\u2248\u03bb1n , the ratio can be taken as an approximation of population structure.\u2020Standard error was calculated as 2n(n\u22121)[l^g\u22121(n\u22121)2], as Equation 7.\u2021Estimated empirically from C chromosomal l^i ; Estimated empirically from C(C\u22121)2 inter-chromosomal l^i\u22c5j .\u00a7It is estimated by 22\u2113\u00af^i22\u2113\u00af^i+231\u2113\u00af^i\u22c5j , indicating lower bound of true LD._\n\nIn terms of computational time, for 103 CHB samples, it took about 101.34 s to estimate 22 autosomal $l^_{i}$ and 231 $l^_{i\u22c5j}$ ; for all 1KG 2503 samples, X-LD took about 3008.29 s (Table 1). Conventional methods took too long to complete the analyses in this section, so no comparable computational time was provided. For detailed 22 $l^_{i}$ and 231 $l^_{i\u22c5j}$ estimates for each 1KG cohort, please refer to Supplementary file 1 (Excel sheet 1\u201327).\n\n### Detecting exceedingly high LD grids shaped by variable recombination rates\n\nWe further explored each autosome with high-resolution grid LD visualization. We set $m=250$, so each grid had the $l_{uv}$ for 250 \u00d7 250 SNP pairs. The computational time complex was $O(n^{2}(m_{i}+\\frac{\\beta_{i}^{2}}{4}))$, in which $\\beta_{i}=\\frac{m_{i}}{250}$ , and with our proposed method in CHB it cost 66.86 s for chromosome 2, which had 241,241 SNPs and totaled 466,095 unique grids, and 3.22 s only for chromosome 22, which had 40,378 SNPs and totaled 13,203 unique grids (Table 1). In contrast, under conventional methods those LD grids were not very likely to be exhaustively surveyed because its computational cost was $O(nm_{i}^{2})$: for CHB chromosome 2, it would have taken about 40 hr as estimated. As the result was very similar for $m=500$ (Figure 4\u2014figure supplement 1), we only report the results under $m=250$ below.\n\nAs expected, chromosome 6 (206,165 SNPs, totaling 340,725 unique grids) had its HLA cluster showing much higher LD than the rest of chromosome 6. In addition, we found a very dramatic variation of the HLA cluster LD $l^_{HLA}$ (28,477,797\u201333,448,354 bp, totaling 3160 unique grids) across ethnicities. For CEU, CHB, YRI, and ASW, their $l^_{6}=0.0010$, 0.00090, 0.00064, and 0.0019, respectively, but their corresponding HLA cluster grids had $l^_{HLA}=0.042$, 0.029, 0.025, and 0.022, respectively (Figure 4). Consequently, the largest ratio for $\\frac{l^_{HLA}}{l^_{6}}$ was 42.00 in CEU, 39.06 in YRI, and 32.22 in CHB, but was reduced to 11.58 in ASW. Before the release of CHM13 (Hoyt et al., 2022), chromosome 11 had the most completely sequenced centromere region, which had much rarer recombination events, and all four cohorts showed a strong LD $l^_{11.c}$ around the centromere (46,061,947\u201359,413,484 bp, totaling 1035 unique grids) regardless of their ethnicities (Figure 4). $l^_{11}=0.0012$, 0.0012, 0.00084, and 0.0022, respectively, and $l^_{11.c}=0.098$, 0.10, 0.079, and 0.094, respectively; the ratio for $\\frac{l^_{11.c}}{l^_{11}}=$ 81.67, 83,33, and 94,05, for CEU, CHB, and YRI, respectively; the lowest ratio was found in ASW of 42.73. In addition, removing the HLA region of chromosome 6 or the centromere region of chromosome 11 would significantly reduce $l^_{6}$ or $l^_{11}$ in comparison with the random removal of other regions (Figure 4\u2014figure supplement 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig4-v1.jpg)\n\n**Figure 4.:** High-resolution illustration for linkage disequilibrium (LD) grids for CEU, CHB, YRI, and ASW ($m=250$).For each cohort, we partition chromosomes 6 and 11 into high-resolution LD grids (each LD grid contains 250 \u00d7250 single-nucleotide polymorphism [SNP] pairs). The bottom half of each figure shows the LD grids for the entire chromosome. Further zooming into HLA on chromosome 6 and the centromere region on chromosome 11, and their detailed LD in the relevant regions are also provided in the upper half of each figure. For visualization purposes, LD is transformed to a -log10-scale, with smaller values (red hues) representing larger LD, and a value of 0 representing that all SNPs are in LD.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** High-resolution illustration for linkage disequilibrium (LD) grids for CEU, CHB, YRI, and ASW ($m=500$).For each cohort, we partitioned each chromosome into consecutive LD grids (each LD grid containing 500 single-nucleotide polymorphisms [SNPs]). For visualization purposes, LD is transformed to a -log10-scale, with smaller values (red hues) representing larger LD, and a value of 0 representing that all SNPs are in LD.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** When another region was removed, to avoid chance, the same number of consecutive single-nucleotide polymorphisms (SNPs) as HLA region or centromere region was randomly removed from the genomic region, and this operation was repeated 100 times.\n\n### Model-based LD decay regression revealed LD composition\n\nThe real LD block size was not exact of $m=250$ or $m=500$, but an unknown parameter that should be inferred in computational intensive \u2018LD decay\u2019 analysis (Zhang et al., 2019; Chang et al., 2015). We conducted the conventional LD decay for the 26 1KG cohorts (Figure 5A), and the time cost was 1491.94 s for CHB. For each cohort, we took the area under the LD decay curve in the LD decay plot, and it quantified approximately the LD decay score for each cohort. The smallest score was 0.0421 for MSL, and the largest was 0.0598 for PEL (Table 5). However, this estimation did not take into account the real extent of LD, so it was not precise enough to reflect the LD decay score. For example, for admixture population, such as the American cohorts, the extent of LD would be longer.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig5-v1.jpg)\n\n**Figure 5.:** (A) Conventional LD decay analysis in PLINK for 26 cohorts. To eliminate the influence of sample size, the inverse of sample size has been subtracted from the original LD values. The YRI cohort, represented by the orange dotted line, is chosen as the reference cohort in each plot. The top-down arrow shows the order of LDdecay values according to Table 5. (B) Model-based LD decay analysis for the 26 1KG cohorts. We regressed each autosomal $l^_{i}$ against its corresponding inversion of the single-nucleotide polymorphism (SNP) number for each cohort. Regression coefficient $b_{1}$ quantifies the averaged LD decay of the genome and intercept $b_{0}$ provides a direct estimate of the possible existence of long-distance LD. The $R$ values in the first three plots indicate the correlation between $b^_{1}$ and LD decay score in three different physical distance and the correlation between $b^_{1}$ (left-side vertical axis) and LD decay score (right-side vertical axis) and the correlation between $b^_{0}$ (left-side vertical axis) and $F-_{st}$ (right-side vertical axis), respectively. The last plot assessed the impact of centromere region of chromosome 11 on the linear relationship between chromosomal LD and the inverse of the SNP number. The dark and light gray dashed lines represent the mean of the $R$ with and without the presence of centromere region of chromosome 11.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig5-figsupp1-v1.jpg)\n\nIn contrast, we proposed a model-based method, as given in Equation 3, which could estimate LD decay score (regression coefficient $b_{1}$) and long-distance LD score (intercept $b_{0}$) jointly. Given the estimated 22 $l^_{i}$ (Supplementary file 1; see Table 4 for four representative cohorts and Supplementary R code), we regressed each autosomal $l^_{i}$ against its corresponding inversion of SNP number, and all yielded positive slopes (Pearson\u2019s correlation $R>0.80$, Table 5 and Figure 5B), an observation that was consistent with genome-wide spread of recombination hotspots. This linear relationship could consequently be considered the norm for a relatively homogeneous population as observed in most 1KG cohorts (Figure 5\u2014figure supplement 1), while for all the 2503 1KG samples $R=0.55$ only (Table 5), indicating that the population structure and possible differentiated recombination hotspots across ethnicities disturbed the assumption underlying Equation 3 and smeared the linearity. We extracted $b^_{0}$ and $b^_{1}$ for the 26 1KG cohorts for further analysis. The rates of LD decay score, as indicated by $b^_{1}$ , within the African cohorts (AFR) were significantly faster than the other continents, consistent with previous observation that the African population had relatively shorter LD Gabriel et al., 2002; while subgroups within the American continent (AMR) tended to have extended LD range due to their admixed genetic composition (Table 4 and Figure 5). Notably, the correlation between $b^_{1}$ and the approximated LD decay score was $R=0.88$. The estimated $F-_{st}$ was highly correlated with $b^_{0}$ ($R=0.94$).\n\n**Table 4.**\n Estimates for 22 autosomal \ufeff$l^_{i}$ in CEU, CHB, YRI, and ASW, respectively.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Chromosome</th>\n      <th rowspan=\"2\">SNP number</th>\n      <th></th>\n      <th colspan=\"4\">l^i</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>CEU</th>\n      <th>CHB</th>\n      <th>YRI</th>\n      <th>ASW</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>225,967</td>\n      <td></td>\n      <td>5.0e-4 (8.2e-6)</td>\n      <td>0.00049 (7.8e-6)</td>\n      <td>0.00032 (4.3e-6)</td>\n      <td>0.0015 (4e-05)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>241,241</td>\n      <td></td>\n      <td>5.0e-4 (8.1e-6)</td>\n      <td>5.0e-4 (7.9e-6)</td>\n      <td>3.0e-4 (4.1e-6)</td>\n      <td>0.0015 (4e-05)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>212,670</td>\n      <td></td>\n      <td>6.0e-04 (1.0e-5)</td>\n      <td>0.00058 (9.5e-6)</td>\n      <td>0.00039 (5.7e-6)</td>\n      <td>0.0018 (5.1e-5)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>222,241</td>\n      <td></td>\n      <td>0.00062 (1.0e-5)</td>\n      <td>0.00061 (1.0e-5)</td>\n      <td>0.00038 (5.4e-6)</td>\n      <td>0.0018 (5.0e-5)</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>193,632</td>\n      <td></td>\n      <td>0.00069 (1.2e-5)</td>\n      <td>7.0e-04 (1.2e-5)</td>\n      <td>0.00043 (6.5e-6)</td>\n      <td>0.0018 (4.9e-5)</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>206,165</td>\n      <td></td>\n      <td>0.0010 (1.9e-5)</td>\n      <td>9.0e-04 (1.6e-5)</td>\n      <td>0.00064 (1.0e-5)</td>\n      <td>0.0019 (5.4e-5)</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>177,414</td>\n      <td></td>\n      <td>0.00073 (1.3e-5)</td>\n      <td>0.00071 (1.2e-5)</td>\n      <td>0.00045 (6.8e-6)</td>\n      <td>0.0016 (4.3e-5)</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>163,436</td>\n      <td></td>\n      <td>0.00075 (1.3e-5)</td>\n      <td>0.00069 (1.2e-5)</td>\n      <td>0.00043 (6.5e-6)</td>\n      <td>0.0022 (6.4e-5)</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>129,440</td>\n      <td></td>\n      <td>0.00074 (1.3e-5)</td>\n      <td>0.00074 (1.3e-5)</td>\n      <td>0.00047 (7.2e-6)</td>\n      <td>0.0018 (5.0e-5)</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>152,251</td>\n      <td></td>\n      <td>0.00078 (1.4e-5)</td>\n      <td>8.0e-04 (1.4e-5)</td>\n      <td>0.00058 (9.3e-6)</td>\n      <td>0.0019 (5.6e-5)</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>151,751</td>\n      <td></td>\n      <td>0.0012 (2.3e-5)</td>\n      <td>0.0012 (2.2e-5)</td>\n      <td>0.00084 (1.4e-5)</td>\n      <td>0.0022 (6.2e-5)</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>139,684</td>\n      <td></td>\n      <td>8.0e-4 (1.4e-5)</td>\n      <td>0.00073 (1.2e-5)</td>\n      <td>0.00049 (7.5e-6)</td>\n      <td>0.0017 (4.8e-5)</td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>113,390</td>\n      <td></td>\n      <td>0.0010 (1.8e-5)</td>\n      <td>0.00094 (1.6e-5)</td>\n      <td>0.00061 (9.8e-6)</td>\n      <td>0.0018 (4.9e-5)</td>\n    </tr>\n    <tr>\n      <td>14</td>\n      <td>97,335</td>\n      <td></td>\n      <td>0.0011 (2.0e-5)</td>\n      <td>0.0010 (1.8e-5)</td>\n      <td>0.00065 (1.1e-5)</td>\n      <td>0.0020 (5.6e-5)</td>\n    </tr>\n    <tr>\n      <td>15</td>\n      <td>85,307</td>\n      <td></td>\n      <td>0.0010 (1.8e-5)</td>\n      <td>0.00098 (1.7e-5)</td>\n      <td>6.0e-4 (9.6e-6)</td>\n      <td>0.0020 (5.8e-5)</td>\n    </tr>\n    <tr>\n      <td>16</td>\n      <td>92,007</td>\n      <td></td>\n      <td>0.00088 (1.6e-5)</td>\n      <td>0.00084 (1.5e-5)</td>\n      <td>0.00054 (8.4e-6)</td>\n      <td>0.0021 (6.2e-5)</td>\n    </tr>\n    <tr>\n      <td>17</td>\n      <td>79,478</td>\n      <td></td>\n      <td>0.0012 (2.3e-5)</td>\n      <td>0.0011 (2.0e-5)</td>\n      <td>0.00069 (1.1e-5)</td>\n      <td>0.0021 (6.0e-5)</td>\n    </tr>\n    <tr>\n      <td>18</td>\n      <td>87,105</td>\n      <td></td>\n      <td>0.0010 (1.8e-5)</td>\n      <td>0.00095 (1.7e-5)</td>\n      <td>0.00058 (9.2e-6)</td>\n      <td>0.0023 (6.8e-5)</td>\n    </tr>\n    <tr>\n      <td>19</td>\n      <td>72,794</td>\n      <td></td>\n      <td>0.0012 (2.3e-05)</td>\n      <td>0.0012 (2.1e-5)</td>\n      <td>0.00082 (1.4e-5)</td>\n      <td>0.0022 (6.2e-5)</td>\n    </tr>\n    <tr>\n      <td>20</td>\n      <td>68,881</td>\n      <td></td>\n      <td>0.0014 (2.6e-5)</td>\n      <td>0.0015 (2.7e-5)</td>\n      <td>0.00078 (1.3e-5)</td>\n      <td>0.0024 (7.0e-5)</td>\n    </tr>\n    <tr>\n      <td>21</td>\n      <td>45,068</td>\n      <td></td>\n      <td>0.0018 (3.4e-5)</td>\n      <td>0.0017 (3.2e-5)</td>\n      <td>0.00098 (1.7e-5)</td>\n      <td>0.0024 (7.1e-5)</td>\n    </tr>\n    <tr>\n      <td>22</td>\n      <td>40,378</td>\n      <td></td>\n      <td>0.0016 (3.1e-5)</td>\n      <td>0.0016 (2.9e-5)</td>\n      <td>0.0010 (1.8e-5)</td>\n      <td>0.0027 (8.1e-5)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Each l^i and its standard error are in parentheses, as estimated in Equation 7.SNP, single-nucleotide polymorphism._\n\n**Table 5.**\n LD decay regression analysis for 26 cohorts.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Cohort (n)</th>\n      <th colspan=\"3\">LD-decay regression*</th>\n      <th colspan=\"3\">Population parameters\u2020</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th>b^0</th>\n      <th>b^1</th>\n      <th>R</th>\n      <th>LD decay score</th>\n      <th>Fst\u00af\u00a0(%)</th>\n      <th>Ancestry</th>\n      <th>True LD \u2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MSL (85)</td>\n      <td>0.00041</td>\n      <td>29.97</td>\n      <td>0.84</td>\n      <td>0.0421</td>\n      <td>0.013</td>\n      <td>AFR</td>\n      <td>0.62727273</td>\n    </tr>\n    <tr>\n      <td>GWD (113)</td>\n      <td>0.00031</td>\n      <td>30.17</td>\n      <td>0.83</td>\n      <td>0.0439</td>\n      <td>0.009</td>\n      <td>AFR</td>\n      <td>0.65934066</td>\n    </tr>\n    <tr>\n      <td>YRI (107)</td>\n      <td>0.00030</td>\n      <td>30.64</td>\n      <td>0.85</td>\n      <td>0.0436</td>\n      <td>0.010</td>\n      <td>AFR</td>\n      <td>0.66292135</td>\n    </tr>\n    <tr>\n      <td>ESN (99)</td>\n      <td>0.00037</td>\n      <td>34.82</td>\n      <td>0.87</td>\n      <td>0.0436</td>\n      <td>0.011</td>\n      <td>AFR</td>\n      <td>0.65420561</td>\n    </tr>\n    <tr>\n      <td>ACB (96)</td>\n      <td>0.00053</td>\n      <td>39.62</td>\n      <td>0.88</td>\n      <td>0.0451</td>\n      <td>0.021</td>\n      <td>AFR</td>\n      <td>0.63194444</td>\n    </tr>\n    <tr>\n      <td>LWK (99)</td>\n      <td>0.00046</td>\n      <td>40.52</td>\n      <td>0.92</td>\n      <td>0.0447</td>\n      <td>0.014</td>\n      <td>AFR</td>\n      <td>0.64615385</td>\n    </tr>\n    <tr>\n      <td>ASW (61)</td>\n      <td>0.0015</td>\n      <td>46.88</td>\n      <td>0.83</td>\n      <td>0.0472</td>\n      <td>0.031</td>\n      <td>AFR</td>\n      <td>0.57142857</td>\n    </tr>\n    <tr>\n      <td>CHS (105)</td>\n      <td>0.00046</td>\n      <td>52.36</td>\n      <td>0.87</td>\n      <td>0.0555</td>\n      <td>0.010</td>\n      <td>EA</td>\n      <td>0.67375887</td>\n    </tr>\n    <tr>\n      <td>CDX (93)</td>\n      <td>0.00055</td>\n      <td>53.77</td>\n      <td>0.83</td>\n      <td>0.0557</td>\n      <td>0.012</td>\n      <td>EA</td>\n      <td>0.66666667</td>\n    </tr>\n    <tr>\n      <td>KHV (99)</td>\n      <td>0.00044</td>\n      <td>53.79</td>\n      <td>0.87</td>\n      <td>0.0560</td>\n      <td>0.011</td>\n      <td>EA</td>\n      <td>0.68345324</td>\n    </tr>\n    <tr>\n      <td>CHB (103)</td>\n      <td>0.00041</td>\n      <td>54.90</td>\n      <td>0.90</td>\n      <td>0.0558</td>\n      <td>0.010</td>\n      <td>EA</td>\n      <td>0.69402985</td>\n    </tr>\n    <tr>\n      <td>JPT (104)</td>\n      <td>0.00045</td>\n      <td>57.75</td>\n      <td>0.85</td>\n      <td>0.0568</td>\n      <td>0.010</td>\n      <td>EA</td>\n      <td>0.68965517</td>\n    </tr>\n    <tr>\n      <td>BEB (86)</td>\n      <td>0.00045</td>\n      <td>48.84</td>\n      <td>0.88</td>\n      <td>0.0556</td>\n      <td>0.012</td>\n      <td>SA</td>\n      <td>0.66911765</td>\n    </tr>\n    <tr>\n      <td>ITU (102)</td>\n      <td>0.00048</td>\n      <td>49.58</td>\n      <td>0.89</td>\n      <td>0.0546</td>\n      <td>0.016</td>\n      <td>SA</td>\n      <td>0.66433566</td>\n    </tr>\n    <tr>\n      <td>STU (102)</td>\n      <td>0.00055</td>\n      <td>52.84</td>\n      <td>0.89</td>\n      <td>0.0546</td>\n      <td>0.015</td>\n      <td>SA</td>\n      <td>0.64516129</td>\n    </tr>\n    <tr>\n      <td>PJL (96)</td>\n      <td>0.00054</td>\n      <td>54.00</td>\n      <td>0.90</td>\n      <td>0.0546</td>\n      <td>0.017</td>\n      <td>SA</td>\n      <td>0.67073171</td>\n    </tr>\n    <tr>\n      <td>GIH (103)</td>\n      <td>0.00057</td>\n      <td>55.81</td>\n      <td>0.91</td>\n      <td>0.0562</td>\n      <td>0.017</td>\n      <td>SA</td>\n      <td>0.65868263</td>\n    </tr>\n    <tr>\n      <td>TSI (107)</td>\n      <td>0.00041</td>\n      <td>53.17</td>\n      <td>0.91</td>\n      <td>0.0558</td>\n      <td>0.010</td>\n      <td>EUR</td>\n      <td>0.68939394</td>\n    </tr>\n    <tr>\n      <td>IBS (107)</td>\n      <td>0.00039</td>\n      <td>54.22</td>\n      <td>0.92</td>\n      <td>0.0555</td>\n      <td>0.010</td>\n      <td>EUR</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>CEU (99)</td>\n      <td>0.00045</td>\n      <td>54.23</td>\n      <td>0.89</td>\n      <td>0.0559</td>\n      <td>0.011</td>\n      <td>EUR</td>\n      <td>0.68085106</td>\n    </tr>\n    <tr>\n      <td>GBR (91)</td>\n      <td>0.00047</td>\n      <td>58.23</td>\n      <td>0.91</td>\n      <td>0.0555</td>\n      <td>0.012</td>\n      <td>EUR</td>\n      <td>0.68027211</td>\n    </tr>\n    <tr>\n      <td>FIN (99)</td>\n      <td>0.00054</td>\n      <td>59.24</td>\n      <td>0.86</td>\n      <td>0.0579</td>\n      <td>0.011</td>\n      <td>EUR</td>\n      <td>0.67073171</td>\n    </tr>\n    <tr>\n      <td>MXL (64)</td>\n      <td>0.0014</td>\n      <td>66.13</td>\n      <td>0.89</td>\n      <td>0.0558</td>\n      <td>0.036</td>\n      <td>AMR</td>\n      <td>0.6</td>\n    </tr>\n    <tr>\n      <td>PUR (104)</td>\n      <td>0.00059</td>\n      <td>67.20</td>\n      <td>0.89</td>\n      <td>0.0571</td>\n      <td>0.014</td>\n      <td>AMR</td>\n      <td>0.67039106</td>\n    </tr>\n    <tr>\n      <td>CLM (94)</td>\n      <td>0.00069</td>\n      <td>75.97</td>\n      <td>0.95</td>\n      <td>0.0572</td>\n      <td>0.017</td>\n      <td>AMR</td>\n      <td>0.66985646</td>\n    </tr>\n    <tr>\n      <td>PEL (85)</td>\n      <td>0.0012</td>\n      <td>78.15</td>\n      <td>0.85</td>\n      <td>0.0598</td>\n      <td>0.028</td>\n      <td>AMR</td>\n      <td>0.61290323</td>\n    </tr>\n    <tr>\n      <td>1KG (2503)</td>\n      <td>0.0061</td>\n      <td>40.65</td>\n      <td>0.55</td>\n      <td></td>\n      <td>0.066</td>\n      <td>Mixed</td>\n      <td>0.51587302</td>\n    </tr>\n  </tbody>\n</table>\n\n_LD, linkage disequilibrium; SNP, single-nucleotide polymorphism.*The regression intercept b^0 and the coefficients b^1 are as represented in Equation 3.\u2020The column for LD decay score was taken as the mean of the estimated r2-1n from PopLDdecay in a physical distance of 1500 kb, which was approximated to the area under the curve in Figure 5A for each cohort; Fst was approximated by \u03bb1n , in which \u03bb1 the largest eigenvalue for the cohort. r2 was the estimated LD statistic from PLINK (--r2).\u2021True LD is defined as l\u00af^i\u22c5jl\u00af^i\u22c5j+b^0 ._\n\nA common feature was universally relative high LD of chromosome 6 and 11 in the 26 1KG cohorts (Figure 5\u2014figure supplement 1). We quantified the impact of chromosome 6 and 11 by leave-one-chromosome-out test in CEU, CHB, YRI, and ASW for details (Figure 6A and B) and found that dropping chromosome 6 off could lift $R$ on average by 0.017 and chromosome 11 by 0.046. One possible explanation was that the centromere regions of chromosomes 6 and 11 have been assembled more completely than other chromosomes before the completion of CHM13 (Hoyt et al., 2022), whereas meiotic recombination tended to be reduced around the centromeres (Hinch et al., 2019). We estimated $l_{i}$ after having knocked out the centromere region (46,061,947\u201359,413,484 bp, chr 11) in CEU, CHB, YRI, and ASW, and chromosome 11 then did not deviate much from their respective fitted lines (Figure 6C). A notable exceptional pattern was found in ASW, chromosome 8 of which had even more deviation than chromosome 11 ($R$ was 0.83 and 0.87 with and without chromosome 8 in leave-one-chromosome out test) (Figure 6B). The deviation of chromosome 8 of ASW was consistent even more SNPs were added (Figure 6\u2014figure supplement 1). We also provided high-resolution LD grids illustration for chromosome 8 (163,436 SNPs, totaling 214,185 grids) of the four representative cohorts for more detailed virtualization (Figure 6D). ASW had $l^_{8}=$ 0.0022, but 0.00075, 0.00069, and 0.00043 for CEU, CHB, and YRI, respectively.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig6-v1.jpg)\n\n**Figure 6.:** The correlation between the inversion of the single-nucleotide polymorphism (SNP) number and $l^_{i}$.(A) The correlation between the inversion of the SNP number and $l^_{i}$ in CEU, CHB, YRI, and ASW. (B) Leave-one-chromosome-out strategy is adopted to evaluate the contribution of a certain chromosome on the correlation between the inverse of the SNP number and $l^_{i}$ . (C) The correlation between the inversion of the SNP number and chromosomal linkage disequilibrium (LD) in CEU, CHB, YRI, and ASW after removing the centromere region of chromosome 11. (D) High-resolution illustration for LD grids for chromosome 8 in CEU, CHB, YRI, and ASW. For each cohort, we partition chromosome 8 into consecutive LD grids (each LD grid contains 250 \u00d7250 SNP pairs). For visualization purposes, LD is transformed to a -log10-scale, with smaller values (red hues) representing larger LD, and a value of 0 representing that all SNPs are in LD.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90636/elife-90636-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Randomly selected SNPs that were presented in ASW but were not 2,997,635 consensus SNPs were added to the ASW cohort to demonstrate the stable pattern of chromosome 8.\n\n## Discussion\n\nIn this study, we present a computationally efficient method to estimate the mean LD of genomic grids of many SNP pairs. Our LD analysis framework is based on GRM, which has been embedded in variance component analysis for complex traits and genomic selection (Goddard, 2009; Visscher et al., 2014; Chen, 2014). The key connection from GRM to LD is bridged via the transformation between $n\\timesn$ matrix and $m\\timesm$ matrix, in particular here via Isserlis\u2019s theorem under the fourth-order moment (Isserlis, 1918). With this connection, the computational cost for estimating the mean LD of $m\\timesm$ SNP pairs is reduced from $O(nm^{2})$ to $O(n^{2}m)$, and the statistical properties of the proposed method are derived in theory and validated in 1KG datasets. In addition, as the genotype matrix $X$ is of limited entries {0, 1, 2}, assuming missing genotypes are imputed first, using Mailman algorithm the computational cost of GRM can be further reduced to $O(\\frac{n^{2}m}{log_{3}\u2061m})$ (Liberty and Zucker, 2009). The largest data tested so far for the proposed method has a sample size of 10,640 and more than 5 million SNPs, so it can complete genomic LD analysis in 77,508.00 s (Table 1). The weakness of the proposed method is obvious that the algorithm remains slow when the sample size is large or the grid resolution is increased. With the availability of such a UK Biobank data (Bycroft et al., 2018), the proposed method may not be adequate, and much advanced methods, such as randomized implementation for the proposed methods, are needed.\n\nWe also applied the proposed method into 1KG and revealed certain characteristics of the human genomes. Firstly, we found the ubiquitous existence of extended LD, which likely emerged because of population structure, even very slightly, and admixture history. We quantified the $l^_{i}$ and $l^_{i\u22c5j}$ in 1KG, and as indicated by $l\u223c_{i\u22c5j}$ we found that the inter-chromosomal LD was nearly an order lower than intra-chromosomal LD; for admixed cohorts, the ratio was much higher, even very close to each other such as in all 1KG samples. Secondly, variable recombination rates shaped peak of local LD. For example, the HLA region showed high LD in the European and East Asian cohorts, but relatively low LD in such as YRI, consistent with their much longer population history. Thirdly, there existed a general linear correlation between $l_{i}$ and the inversion of the SNP number, a long-anticipated result that is as predicted with genome-wide spread of recombination hotspots (Hinch et al., 2019). One outlier of this linear norm was chromosome 11, which had so far the most completely genotyped centromere and consequently had more elevated LD compared with other autosomes. We anticipate that with the release of CHM13 the linear correlation should be much closer to unity (Hoyt et al., 2022). Of note, under the variance component analysis for complex traits, it is often a positive correlation between the length of a chromosome (as surrogated by the number of SNPs) and the proportion of heritability explained (Chen et al., 2014).\n\nIn contrast, throughout the study recurrent outstanding observations were found in ASW. For example, in ASW the ratio of $l^_{HLA}/l^_{6}$ substantially dropped compared with that of CEU, CHB, or YRI as illustrated in Figure 4. Furthermore, chromosome 8 in ASW fluctuated upward most from the linear correlation (Figure 6) even after various analyses, such as expanding SNP numbers. One possible explanation may lie under the complex demographic history of ASW, which can be investigated and tested in additional African American samples or possible existence for epistatic fitness (Ni et al., 2020).\n",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alexander Young, University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90636.3.sa0](https://doi.org/10.7554/eLife.90636.3.sa0)\n\nThis study presents a useful new approach for efficient computation of statistics on correlations between genetic variants (linkage disequilibrium, or LD), which the authors apply to quantify the extent of LD across chromosomes. The method and its derivation are solid. The authors document that cross-chromosome LD can be substantial, which has implications for geneticists who are interested in population structure and its impact on genetic association studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90636.3.sa1](https://doi.org/10.7554/eLife.90636.3.sa1)\n\nSummary:\n\nIn this paper, the authors point out that the standard approach of estimating LD is inefficient for datasets with large numbers of SNPs, with a computational cost of O(nm^2), where n is the number of individuals and m is the number of SNPs. Using the known relationship between the LD matrix and the genomic-relatedness matrix, they can calculate the mean level of LD within the genome or across genomic segments with a computational cost of O(n^2m). Since in most datasets, n<\n\nStrengths:\n\nGenerally, for computational papers like this, the proof is in the pudding, and the authors have been successful at their aim of producing an efficient computational tool. The most compelling evidence of this in the paper are Figure 2 and Supplementary Figure S2. In Figure 2, they report how well their X-LD estimates of LD compare to estimates based on the standard approach using PLINK. They appear to have very good agreement. In Figure S2, they report the computational runtime of X-LD vs PLINK, and as expected X-LD is faster than PLINK as long as it is evaluating LD for more than 8000 SNPs.\n\nWeakness:\n\nThis method seems to be limited to calculating average levels of LD in broad regions of the genome. While it would be possible to make the regions more fine-grained, doing so appears to make this approach much less efficient. As such, applications of this method may be limited to those proposed in the paper, for questions where average LD of large chromosomal segments is informative.\n\nImpact:\n\nThis approach seems to produce real gains for settings where broad average levels of LD are useful to know, but it will likely have less of an impact in settings where fine-grained levels are LD are necessary (e.g., accounting for LD in GWAS summary statistics).\n",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "95182a42-a3f9-4955-af46-76219f70e357",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C1",
+      "claim": "The proposed X-LD algorithm reduces computational time complexity from O(nm\u00b2) to O(n\u00b2m), where n is the sample size and m is the number of SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with conventional methods, the proposed method was significantly faster, dropped from O(nm2) to O(n2m)\u2014n the sample size and m the number of SNPs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the computational complexity reduction in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "3f6f49ef-d5f9-486b-858f-a0ae250e6533",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C2",
+      "claim": "In relatively homogeneous cohorts such as FIN, the strength of inter-chromosomal LD was about 10% of their respective intra-chromosomal LD.",
+      "claim_type": "EXPLICIT",
+      "source": "the strength of inter-chromosomal LD was about 10% of their respective intra-chromosomal LD in relatively homogeneous cohorts, such as FIN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific quantitative findings from the 1000 Genomes Project analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "42120085-8cc4-486f-9b4f-d1029aac663f",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C3",
+      "claim": "In admixed cohort ASW, the inter-chromosomal LD reached nearly 56% of intra-chromosomal LD.",
+      "claim_type": "EXPLICIT",
+      "source": "to nearly 56% in admixed cohort, such as ASW",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific quantitative findings from the 1000 Genomes Project analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "f1799c40-47b2-4a05-a9c8-6159e9922c1b",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C4",
+      "claim": "The LD of the HLA region was nearly 42 folders higher than chromosome 6 in CEU.",
+      "claim_type": "EXPLICIT",
+      "source": "we elucidated the LD of the HLA region was nearly 42 folders higher than chromosome 6 in CEU",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific quantitative findings from high-resolution LD analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "dad60f48-d6d3-4db1-8567-b529683ba227",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C5",
+      "claim": "The LD of the HLA region was 11.58 folders higher than chromosome 6 in ASW.",
+      "claim_type": "EXPLICIT",
+      "source": "11.58 in ASW",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific quantitative findings from high-resolution LD analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "d93f291d-d8d3-45c9-805e-0c5198e7076f",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C6",
+      "claim": "The LD of chromosome 11 centromere was nearly 94.05 folders higher than chromosome 11 in YRI.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed that the LD of its centromere was nearly 94.05 folders higher than chromosome 11 in YRI",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific quantitative findings from high-resolution LD analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "a0f51e11-d205-49d7-8efc-33a853b0bfca",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C7",
+      "claim": "The LD of chromosome 11 centromere was 42.73 folders higher than chromosome 11 in ASW.",
+      "claim_type": "EXPLICIT",
+      "source": "42.73 in ASW",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific quantitative findings from high-resolution LD analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "7b9a9815-2521-4268-80f5-9428715f3eda",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C8",
+      "claim": "There is an inversely proportional linear relationship between the length of a chromosome and the strength of chromosomal LD.",
+      "claim_type": "EXPLICIT",
+      "source": "We uncovered the long-anticipated inversely proportional linear relationship between the length of a chromosome and the strength of chromosomal LD",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a discovered relationship from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "9b9bec68-f926-4d00-9a20-ec18d7225e97",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C9",
+      "claim": "The Pearson's correlation between chromosome length and chromosomal LD strength was on average over 0.80 for 26 1KG cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "their Pearson's correlation was on average over 0.80 for 26 1KG cohorts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific statistical correlation values from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "5e905245-9b63-4413-8b93-6f3bab22364d",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C10",
+      "claim": "Chromosome 11 perturbs the linear relationship between chromosome length and LD strength due to its more completely sequenced centromere region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this linear norm was so far perturbed by chromosome 11 given its more completely sequenced centromere region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports an observation and provides an explanation based on genomic data completeness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "40f7912e-fa4a-4826-817b-80318e545b99",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C11",
+      "claim": "Chromosome 8 of ASW was found most deviated from the linear norm than any other autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Uniquely chromosome 8 of ASW was found most deviated from the linear norm than any other autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a unique observation specific to ASW cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "f2f2dc11-8256-44dc-84ab-1ae3d6112869",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C12",
+      "claim": "The X-LD software is available at https://github.com/gc5k/gear2.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed algorithm has been realized in C++ (called X-LD) and is available at https://github.com/gc5k/gear2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "f139dc7f-6891-4a54-b70f-37cddf48c27d",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C13",
+      "claim": "LD structure of the human genome is shaped by mutation, recombination, population demography, epistatic fitness, and completeness of genomic data.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of LD of the human genome is shaped by many factors, mutation, recombination, population demography, epistatic fitness, and completeness of genomic data itself (Myers et al., 2005; Nei and Li, 1973; Ardlie et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established literature to support this claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "f5e5781d-e341-4dea-b3b0-456cb8148202",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C14",
+      "claim": "Large-scale LD patterns of the human genome play crucial roles in genome-wide association studies, polygenic risk prediction for complex diseases, and choice for reference panels for genotype imputation.",
+      "claim_type": "EXPLICIT",
+      "source": "the large-scale LD patterns of the human genome play crucial roles in determining genomics studies, and many theories and useful algorithms upon large-scale LD structure, from genome-wide association studies, polygenic risk prediction for complex diseases, and choice for reference panels for genotype imputation (Vilhj\u00e1lmsson et al., 2015; Yang and Zhou, 2020; Bulik-Sullivan et al., 2015; Yang et al., 2011; Das et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple references to support the importance of LD patterns in various genomic applications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "fa4aa9b4-f25c-43ea-a8cb-744428b615b0",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C18",
+      "claim": "The rationale of the proposed method relies on the connection between the genetic relationship matrix (GRM) and LD.",
+      "claim_type": "EXPLICIT",
+      "source": "The rationale of the proposed method relies on the connection between the genetic relationship matrix (GRM) and LD (Chen, 2014; Goddard, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support the methodological foundation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "b9bba8a0-47c4-408d-bb33-8e80df9361c8",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C19",
+      "claim": "A more general transformation from GRM to LD can be established via Isserlis's theorem.",
+      "claim_type": "EXPLICIT",
+      "source": "in this study a more general transformation from GRM to LD can be established via Isserlis's theorem (Isserlis, 1918; Zhou, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites Isserlis's theorem as the mathematical foundation for the transformation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "af99b4e2-b2ea-45b0-892d-f8fc42afd999",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C20",
+      "claim": "The X-LD software could handle sample sizes as large as 10,000 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "As tested, the software could handle sample sizes as large as 10,000 individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports testing results for the software's capacity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "f3be1440-85c4-4b73-ab65-eef23139dd44",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C22",
+      "claim": "The human genome can be boiled down to small LD blocks by genome-widely spread recombination hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "As human genome can be boiled down to small LD blocks by genome-widely spread recombination hotspots (Hinch et al., 2019; Li et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites references to support this established genomic feature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "cc043ed4-839a-423d-a14b-28960639ee69",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C23",
+      "claim": "The connection between LD and population structure is bridged via the relationship between LD and eigenvalues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is well established the connection between population structure and eigenvalues, and in particular the largest eigenvalue is associated with divergence of subgroups (Patterson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support the connection between eigenvalues and population structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "2c45b54f-d0f3-4ac6-92b6-9972d4b77fc3",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C25",
+      "claim": "The 1000 Genomes Project included 2503 strategically selected individuals of global diversity containing 26 cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1KG (Auton et al., 2015), which was launched to produce a deep catalog of human genomic variation by whole-genome sequencing (WGS) or whole-exome sequencing (WES), and 2503 strategically selected individuals of global diversity were included (containing 26 cohorts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the 1000 Genomes Project and describes its composition.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "45b1548d-6b2c-4f6e-b5c6-48699b979bac",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C26",
+      "claim": "After quality control, 2,997,635 consensus SNPs were retained across all 26 1KG cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Then 2,997,635 consensus SNPs that were present in each of the 26 cohorts were retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of SNPs after quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "3b482543-0d51-41e8-bcfe-306da3e751e2",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C29",
+      "claim": "The X-LD software is written in C++ and reads in binary genotype data as often used in PLINK.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed algorithm has been realized in our X-LD software, which is written in C++ and reads in binary genotype data as often used in PLINK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the implementation details of the software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "2532c87d-6cbd-4581-9ada-313fa58c3924",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C30",
+      "claim": "Multi-thread programming is adopted in X-LD to improve efficiency upon the availability of computational resources.",
+      "claim_type": "EXPLICIT",
+      "source": "As multi-thread programming is adopted, the efficiency of X-LD can be improved upon the availability of computational resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a feature of the software implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "73066b99-b874-42a4-bad9-e9e14e9bc30c",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C37",
+      "claim": "Compared with PLINK, the calculation efficiency of X-LD was nearly 30-40 times faster for the tested chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with PLINK, the calculation efficiency of X-LD was nearly 30\u201340 times faster for the tested chromosome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports benchmark comparison results, referencing Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "fd0be354-7c3b-45e4-9379-82592626828d",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C41",
+      "claim": "Extended LD driven by population structure universally existed across all cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Having applied the algorithm for 1000 Genome Project (1KG), we found (1) the extended LD, driven by population structure, universally existed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a finding from the 1KG analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "35892aa6-fd99-46a8-9acd-5b00b6eb0bff",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C44",
+      "claim": "East Asian and European-orientated cohorts with little within-cohort genetic differentiation had their aggregated LD relatively low and resembled each other.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, East Asian (EA) and European (EUR)-orientated cohorts, which showed little within-cohort genetic differentiation\u2014as their largest eigenvalues were slightly greater than 1\u2014had their aggregated LD relatively low and resembled each other (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observations about homogeneous populations with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "5a1a9ae7-0d7c-42dc-bcc2-af8fcfa76ad9",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C46",
+      "claim": "The smallest ratio between inter-chromosomal and intra-chromosomal LD was found to be about 0.091 in FIN.",
+      "claim_type": "EXPLICIT",
+      "source": "the smallest ratio was found to be about 0.091 in FIN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the minimum ratio observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "1c2d0339-2e49-49b9-9f5d-e41cc2944e1e",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C51",
+      "claim": "For all 1KG 2503 samples, X-LD took about 3008.29 s to estimate 22 autosomal l\u0302_i and 231 l\u0302_i\u00b7j.",
+      "claim_type": "EXPLICIT",
+      "source": "for all 1KG 2503 samples, X-LD took about 3008.29 s (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific computational time for the entire 1KG dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "095e45d5-0f55-47a0-8cb3-0e618d9d0014",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C52",
+      "claim": "For CHB chromosome 2 with 241,241 SNPs totaling 466,095 unique grids, it cost 66.86 s.",
+      "claim_type": "EXPLICIT",
+      "source": "with our proposed method in CHB it cost 66.86 s for chromosome 2, which had 241,241 SNPs and totaled 466,095 unique grids",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific computational time for high-resolution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "0a38a50f-6a15-4ce5-a1d7-bcf0574e3d52",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C53",
+      "claim": "For CHB chromosome 22 with 40,378 SNPs totaling 13,203 unique grids, it cost 3.22 s.",
+      "claim_type": "EXPLICIT",
+      "source": "3.22 s only for chromosome 22, which had 40,378 SNPs and totaled 13,203 unique grids (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific computational time for high-resolution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "9b1f6cc5-4ebc-4b5b-8c33-13494cad9056",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C55",
+      "claim": "Chromosome 6 had its HLA cluster showing much higher LD than the rest of chromosome 6.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, chromosome 6 (206,165 SNPs, totaling 340,725 unique grids) had its HLA cluster showing much higher LD than the rest of chromosome 6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports an observation about the HLA region.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "ce4ddf64-ce21-4789-b97d-eed644f7c661",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C60",
+      "claim": "Chromosome 11 had the most completely sequenced centromere region before the release of CHM13.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the release of CHM13 (Hoyt et al., 2022), chromosome 11 had the most completely sequenced centromere region",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites CHM13 and states a fact about chromosome 11 sequencing completeness.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "e0ce077d-a97b-430a-b100-12290b4c4814",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C65",
+      "claim": "The lowest ratio l\u0302_11.c/l\u0302_11 was found in ASW of 42.73.",
+      "claim_type": "EXPLICIT",
+      "source": "the lowest ratio was found in ASW of 42.73",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the minimum ratio for chromosome 11 centromere.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "bbbb3c51-9596-4d99-bac5-ed8da754ee68",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C67",
+      "claim": "The conventional LD decay time cost was 1491.94 s for CHB.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted the conventional LD decay for the 26 1KG cohorts (Figure 5A), and the time cost was 1491.94 s for CHB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports computational time for conventional LD decay analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "d3b993b2-4337-4703-8fd0-95fa836671d5",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C68",
+      "claim": "The smallest LD decay score was 0.0421 for MSL.",
+      "claim_type": "EXPLICIT",
+      "source": "The smallest score was 0.0421 for MSL",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the minimum LD decay score observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "9766aa08-c103-4e66-9b26-27f201175c0c",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C69",
+      "claim": "The largest LD decay score was 0.0598 for PEL.",
+      "claim_type": "EXPLICIT",
+      "source": "the largest was 0.0598 for PEL (Table 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the maximum LD decay score observed with reference to a table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "c6ac4fbc-06ca-4d54-a043-d3f85ff580d2",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C71",
+      "claim": "This linear relationship is consistent with genome-wide spread of recombination hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "an observation that was consistent with genome-wide spread of recombination hotspots",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the linear relationship in the context of known genomic features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "607fd863-3182-4482-b435-9784d48fab41",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C74",
+      "claim": "This observation is consistent with previous findings that the African population had relatively shorter LD.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with previous observation that the African population had relatively shorter LD Gabriel et al., 2002",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support consistency with prior findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "b9a11084-7bef-48d0-8586-b174a28b6d9f",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C75",
+      "claim": "Subgroups within the American continent tended to have extended LD range due to their admixed genetic composition.",
+      "claim_type": "EXPLICIT",
+      "source": "while subgroups within the American continent (AMR) tended to have extended LD range due to their admixed genetic composition (Table 4 and Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports an observation about American cohorts with reference to table and figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "abdc918f-e7f3-4ab1-abeb-bee009a62289",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C79",
+      "claim": "Dropping chromosome 11 could lift R on average by 0.046.",
+      "claim_type": "EXPLICIT",
+      "source": "chromosome 11 by 0.046",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports results from leave-one-out analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "39a02b1a-aa47-4bb7-8645-f490173d65c1",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C80",
+      "claim": "Meiotic recombination tends to be reduced around the centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas meiotic recombination tended to be reduced around the centromeres (Hinch et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support this established genomic feature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "f068d77b-342e-4e15-9a17-36c88d5b28f4",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C83",
+      "claim": "The deviation of chromosome 8 of ASW was consistent even when more SNPs were added.",
+      "claim_type": "EXPLICIT",
+      "source": "The deviation of chromosome 8 of ASW was consistent even more SNPs were added (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports robustness of the chromosome 8 observation with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "2e346f53-61c8-44d6-bd00-95a509fbf4c5",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C86",
+      "claim": "The weakness of the proposed method is that the algorithm remains slow when the sample size is large or the grid resolution is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The weakness of the proposed method is obvious that the algorithm remains slow when the sample size is large or the grid resolution is increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "a690310b-8e83-4539-80d9-b9c9df93f1a1",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C87",
+      "claim": "With UK Biobank data availability, the proposed method may not be adequate, and much advanced methods such as randomized implementation are needed.",
+      "claim_type": "EXPLICIT",
+      "source": "With the availability of such a UK Biobank data (Bycroft et al., 2018), the proposed method may not be adequate, and much advanced methods, such as randomized implementation for the proposed methods, are needed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites UK Biobank and discusses limitations and future directions.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "006a5277-c34a-4caf-93d1-4ad1839f5b55",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C88",
+      "claim": "The HLA region showed high LD in European and East Asian cohorts but relatively low LD in YRI, consistent with their much longer population history.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the HLA region showed high LD in the European and East Asian cohorts, but relatively low LD in such as YRI, consistent with their much longer population history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports an observation and provides an evolutionary interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "2d486485-c8a1-4b30-82ed-d91b7ba17cde",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C89",
+      "claim": "With the release of CHM13, the linear correlation between chromosome length and LD should be much closer to unity.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that with the release of CHM13 the linear correlation should be much closer to unity (Hoyt et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites CHM13 and makes a prediction about future analyses.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "098f9d8b-a055-4506-aef0-a38dc4670fba",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C90",
+      "claim": "Under variance component analysis for complex traits, there is often a positive correlation between the length of a chromosome and the proportion of heritability explained.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, under the variance component analysis for complex traits, it is often a positive correlation between the length of a chromosome (as surrogated by the number of SNPs) and the proportion of heritability explained (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference to support a related observation in heritability analysis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "17650ad0-6c43-4f1e-8b92-695ce63a514f",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "claim_id": "C92",
+      "claim": "One possible explanation for chromosome 8 deviation in ASW may lie under the complex demographic history of ASW.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation may lie under the complex demographic history of ASW, which can be investigated and tested in additional African American samples or possible existence for epistatic fitness (Ni et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a reference and proposes a speculative explanation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9be1f649-03ed-4fb1-aa6c-acb236857619",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The X-LD algorithm reduces computational complexity from O(nm\u00b2) to O(n\u00b2m), achieving 30-40\u00d7 speedup over PLINK. Specific timing benchmarks are provided: for all 1KG samples (n=2503), X-LD took 3008.29s to estimate 22 autosomal LD components and 231 inter-chromosomal components; for CHB chromosome 2 (241,241 SNPs), it took 66.86s; for CHB chromosome 22 (40,378 SNPs), it took 3.22s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C37, C51-C53 provide consistent computational complexity analysis and empirical timing data across multiple datasets and chromosomes. The theoretical complexity reduction is validated by benchmark comparisons with PLINK (C37) showing 30-40\u00d7 speedup, and specific timing measurements are provided for different data scales (C51-C53). The consistency across different sample sizes and SNP counts supports the claimed algorithmic improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "1315ae2d-bfd3-4eb8-a467-75cfa0345d96",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Extended LD driven by population structure universally exists across all 1KG cohorts. In homogeneous cohorts like FIN, inter-chromosomal LD is about 10% (ratio 0.091) of intra-chromosomal LD, while in admixed cohort ASW it reaches 56% of intra-chromosomal LD. East Asian and European cohorts with little within-cohort differentiation show relatively low and similar aggregated LD patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C41, C44, C46 present a coherent picture of population structure effects on LD patterns, supported by quantitative data from Table 3 and Figure 3. The reported ratios (10% for FIN, 56% for ASW) are specific and consistent with the broader observation that population structure drives extended LD (C41). The distinction between homogeneous and admixed populations is well-documented with eigenvalue data showing genetic differentiation levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "bf5a45ad-f806-4280-a873-2ed73ce18d12",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High-resolution LD analysis reveals dramatically elevated LD in specific genomic regions: the HLA region on chromosome 6 shows 42-fold higher LD than the rest of chromosome 6 in CEU (11.58-fold in ASW), and the centromere region of chromosome 11 shows 94.05-fold higher LD than the rest of chromosome 11 in YRI (42.73-fold in ASW). Chromosome 11 had the most completely sequenced centromere region before CHM13 release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7, C55, C60, C65 provide specific quantitative fold-change measurements for HLA and centromere regions across multiple cohorts, supported by Figure 4 visualization. The variation across ethnicities (higher ratios in CEU/YRI, lower in ASW) is consistent and biologically plausible. The explanation linking chromosome 11's elevated LD to more complete centromere sequencing (C60) is supported by citation to CHM13 and provides mechanistic context for the observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "b9fe9688-a905-4acb-9ed5-04ea417fb6bc",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "An inversely proportional linear relationship exists between chromosome length and chromosomal LD strength, with Pearson's correlation averaging over 0.80 across 26 1KG cohorts. This relationship is consistent with genome-wide spread of recombination hotspots. However, chromosome 11 perturbs this linear relationship due to its more completely sequenced centromere region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C71 describe a major finding supported by regression analysis in Figure 5B and Table 5, showing R>0.80 for most cohorts. The linear relationship is theoretically grounded in the LD-decay regression model (Equation 3) and consistent with known recombination biology (C71). The chromosome 11 exception (C10) is well-documented with leave-one-out analysis (C79) showing R improvement of 0.046 when chromosome 11 is removed, providing quantitative support for the perturbation claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "9a51e1e6-c89d-4655-81a0-7bda8c9a76f3",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Chromosome 8 of ASW uniquely deviates from the linear relationship between chromosome length and LD more than any other autosome. This deviation persists when additional SNPs are added. One possible explanation involves the complex demographic history of ASW or possible epistatic fitness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11 and C83 report a robust observation specific to ASW chromosome 8, supported by Figure 6 and supplementary analysis. However, C92 acknowledges this is speculative, proposing demographic history or epistatic fitness as possible explanations without providing direct evidence. The observation is well-documented but the mechanistic explanation remains hypothetical, requiring additional validation in independent African American samples as the authors suggest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "769f6e30-0eda-4e3b-944a-15f13a53c383",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Conventional LD decay analysis shows the smallest decay score of 0.0421 for MSL and largest of 0.0598 for PEL. African populations show faster LD decay rates consistent with previous findings of relatively shorter LD, while American continent subgroups show extended LD range due to admixed genetic composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69, C74-C75 present LD decay analysis results supported by Figure 5A and Table 5. The computational time (1491.94s for CHB) and specific decay scores are reported. The interpretation linking African populations to faster decay (C74) is supported by citation to Gabriel et al. 2002, and the admixture explanation for American populations (C75) is consistent with the population structure data in Table 3 and Figure 5.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "a59ced48-11f5-4203-972a-9fea2db1f7e4",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Leave-one-chromosome-out analysis shows dropping chromosome 11 lifts correlation R by 0.046 on average. The HLA region shows high LD in European and East Asian cohorts but relatively low LD in YRI, consistent with longer population history. Meiotic recombination tends to be reduced around centromeres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80, C88 provide supporting evidence for the chromosome 11 and HLA findings. The quantitative impact of chromosome 11 removal (C79) is documented in Figure 6B. The HLA variation across populations (C88) is supported by Figure 4 data and provides evolutionary interpretation. The recombination biology (C80) is cited to Hinch et al. 2019, providing mechanistic context for centromere LD patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "cf5feb5e-3c9b-455c-b9dd-aad2ce63f6fa",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The methodological rationale relies on the connection between genetic relationship matrix (GRM) and LD, with transformation established via Isserlis's theorem. The human genome can be partitioned into small LD blocks by genome-wide recombination hotspots. The connection between LD and population structure is bridged via eigenvalues, with the largest eigenvalue associated with subgroup divergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19, C22-C23 describe the theoretical foundation of the method, all supported by appropriate citations (Chen 2014, Goddard 2009, Isserlis 1918, Hinch et al. 2019, Patterson et al. 2006). These establish the mathematical basis (Isserlis's theorem), biological context (recombination hotspots), and population genetics framework (eigenvalue-structure connection) that underpin the X-LD algorithm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "fcc79d8f-4fff-496b-aac1-8afd54bff304",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The X-LD software is implemented in C++, available at https://github.com/gc5k/gear2, reads PLINK binary format, uses multi-threading for efficiency, and can handle sample sizes up to 10,000 individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C20, C29-C30 describe software implementation details that are straightforward and verifiable. The GitHub availability (C12), capacity testing with 10,000 individuals (C20), C++ implementation with PLINK compatibility (C29), and multi-threading (C30) are all explicitly stated in the Methods section and demonstrated with the CONVERGE dataset (n=10,640).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "56b23053-20ea-4800-a47c-1cc52cb8ac66",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LD structure is shaped by mutation, recombination, population demography, epistatic fitness, and data completeness. Large-scale LD patterns are crucial for GWAS, polygenic risk prediction, and imputation panel selection. The 1000 Genomes Project included 2503 individuals across 26 cohorts, with 2,997,635 consensus SNPs retained after quality control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14, C25-C26 provide background context and data description, all supported by appropriate citations. The factors shaping LD (C13) and applications (C14) are well-established in the literature with multiple citations. The 1KG dataset description (C25-C26) matches the published 1000 Genomes Project specifications and the quality control procedures are standard.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "0361f7d1-7310-4732-be3d-249e713bd340",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The method has acknowledged limitations: it remains slow when sample size is large or grid resolution increases, and may not be adequate for UK Biobank-scale data, requiring advanced methods like randomized implementation. With CHM13 release, the linear correlation between chromosome length and LD should improve toward unity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87, C89 represent honest acknowledgment of limitations and future directions. The computational limitations (C86-C87) are consistent with the O(n\u00b2m) complexity and the authors appropriately suggest that larger datasets like UK Biobank would require algorithmic advances. The CHM13 prediction (C89) is a reasonable speculation based on the chromosome 11 findings showing that incomplete centromere sequencing perturbs the linear relationship.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "eaad11f3-e9d2-4b09-8b99-0d821c109d29",
+      "content_id": "574c1375-6f66-4838-82d1-3426a7a24fc5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Under variance component analysis for complex traits, there is often a positive correlation between chromosome length (as surrogated by SNP number) and the proportion of heritability explained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is a cited observation from Chen et al. 2014 that provides relevant context for interpreting the chromosome length-LD relationship. This is appropriately presented as established knowledge from prior work rather than a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "f7d5b514-72d9-4e53-8628-c2f736301dab",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The X-LD algorithm achieves substantial computational efficiency improvements over conventional methods, reducing complexity from O(nm\u00b2) to O(n\u00b2m) and demonstrating 30-40 times faster performance than PLINK in benchmark tests. Specific runtime examples include 3008.29s for all 1KG samples and 66.86s for CHB chromosome 2.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm the computational efficiency gains. The first reviewer states 'the method and its derivation are solid' and the second reviewer notes 'the authors have been successful at their aim of producing an efficient computational tool,' citing Figure 2 and Supplementary Figure S2 as 'compelling evidence' showing 'X-LD is faster than PLINK as long as it is evaluating LD for more than 8000 SNPs.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "aa7f3614-f204-45c0-9e96-6fcb26b78ecb",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Cross-chromosome LD varies substantially by population structure, with inter-chromosomal LD representing about 10% of intra-chromosomal LD in homogeneous cohorts like FIN (ratio 0.091) but reaching 56% in admixed cohorts like ASW. Extended LD driven by population structure was found universally across all cohorts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer explicitly states 'The authors document that cross-chromosome LD can be substantial, which has implications for geneticists who are interested in population structure and its impact on genetic association studies.' No concerns are raised about these quantitative findings, indicating reviewer acceptance of the cross-chromosome LD patterns reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "0cf64819-7a48-48fe-b05e-922733e59d80",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The HLA region on chromosome 6 exhibits dramatically elevated LD compared to the rest of the chromosome, with ratios of 42-fold in CEU and 11.58-fold in ASW. The HLA region showed high LD in European and East Asian cohorts but relatively low LD in YRI, consistent with longer population history.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer questions these HLA findings. The first reviewer's statement that 'the method and its derivation are solid' and the second reviewer's confirmation that X-LD estimates 'appear to have very good agreement' with PLINK (Figure 2) implicitly support the validity of these specific regional LD measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "7d3d457b-4066-4405-82e2-62a4e6d2ea87",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Chromosome 11's centromere region shows exceptionally high LD (94.05-fold higher than chromosome 11 baseline in YRI, 42.73-fold in ASW), attributed to its more completely sequenced centromere region before CHM13 release. This causes chromosome 11 to perturb the otherwise linear relationship between chromosome length and LD strength.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not challenge these chromosome 11 findings. The second reviewer's acknowledgment that the method produces 'very good agreement' with standard approaches and the first reviewer's statement that 'the method and its derivation are solid' provide implicit support for these specific observations about chromosome 11's unique characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "07bf530f-96ee-49eb-bd8a-b48ee35029ad",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "An inversely proportional linear relationship exists between chromosome length and chromosomal LD strength, with Pearson's correlation averaging over 0.80 across 26 1KG cohorts. This relationship is consistent with genome-wide spread of recombination hotspots, and dropping chromosome 11 improves the correlation by 0.046.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer questions this linear relationship finding. The first reviewer's statement that the authors 'apply to quantify the extent of LD across chromosomes' and that 'the method and its derivation are solid' indicates acceptance of this key biological observation derived from the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "a39fe4e8-baaa-44d6-b472-1b2ce6ba5802",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Chromosome 8 of ASW uniquely deviates from the linear relationship between chromosome length and LD more than any other autosome, with this deviation remaining consistent even when more SNPs are added. A possible explanation involves the complex demographic history of ASW.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers do not challenge this specific observation about chromosome 8 in ASW. The second reviewer's confirmation that X-LD produces results with 'very good agreement' to PLINK supports the validity of this unusual finding, though the speculative explanation is not directly addressed by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "1e99642d-64a8-4f61-8fb4-be3f8b8fab6b",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The methodological foundation relies on the connection between the genetic relationship matrix (GRM) and LD, with a more general transformation established via Isserlis's theorem.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer explicitly states 'the method and its derivation are solid,' directly affirming the mathematical and methodological foundation of the approach including the GRM-LD connection and use of Isserlis's theorem.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "3e63f417-9e02-4e58-881e-b851fd737655",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The method has limitations: it remains slow when sample size is large or grid resolution is increased, may not be adequate for UK Biobank-scale data, and was tested to handle up to 10,000 individuals. Advanced methods such as randomized implementation may be needed for larger datasets.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly identifies this limitation, stating 'This method seems to be limited to calculating average levels of LD in broad regions of the genome. While it would be possible to make the regions more fine-grained, doing so appears to make this approach much less efficient.' This directly corroborates the authors' acknowledged weaknesses.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "dc36525d-ef5e-4861-b981-0a79d20e4061",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "LD decay analysis shows variation across populations, with scores ranging from 0.0421 (MSL) to 0.0598 (PEL), consistent with previous findings that African populations have relatively shorter LD. American continent subgroups show extended LD range due to admixed genetic composition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer's statement that the authors 'document that cross-chromosome LD can be substantial, which has implications for geneticists who are interested in population structure' encompasses these LD decay findings. Neither reviewer challenges the population-specific LD patterns reported.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "95622ea3-4aa0-40c0-8171-2916b8fdb3a4",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The X-LD software is implemented in C++, available at https://github.com/gc5k/gear2, reads PLINK binary genotype data, and uses multi-thread programming to improve efficiency with available computational resources.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer confirms the software's functionality by stating 'the authors have been successful at their aim of producing an efficient computational tool' and references the computational runtime comparisons (Figure S2), implicitly validating the software implementation and availability.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "cc626f95-bfb6-4db5-936b-c4247d931ccb",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Background claims about LD structure being shaped by mutation, recombination, population demography, epistatic fitness, and data completeness; the importance of LD patterns for GWAS and polygenic risk prediction; genome-wide recombination hotspots; and connections between LD, eigenvalues, and population structure.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established background knowledge claims cited from literature. Neither reviewer challenges these foundational concepts. The first reviewer's acknowledgment that the findings have 'implications for geneticists who are interested in population structure and its impact on genetic association studies' implicitly accepts this background framework.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "c9b97ace-c244-4233-bf9c-8dce2949ab5d",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "The 1000 Genomes Project dataset used includes 2503 individuals across 26 cohorts, with 2,997,635 consensus SNPs retained after quality control.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer questions the dataset composition or quality control procedures. The second reviewer's confirmation that X-LD estimates show 'very good agreement' with PLINK (Figure 2) implicitly validates the data processing pipeline.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "81e84276-9db5-479f-b6c4-6604b16e9914",
+      "content_id": "d2bed23b-2158-4a87-b614-c99eedf3c314",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "A prediction that with the release of CHM13, the linear correlation between chromosome length and LD should be much closer to unity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a speculative claim about future analyses. Neither reviewer comments on this prediction, and it represents an untested hypothesis rather than a current finding. The lack of reviewer discussion leaves this claim's validity uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "95182a42-a3f9-4955-af46-76219f70e357",
+      "result_id": "9be1f649-03ed-4fb1-aa6c-acb236857619"
+    },
+    {
+      "claim_id": "73066b99-b874-42a4-bad9-e9e14e9bc30c",
+      "result_id": "9be1f649-03ed-4fb1-aa6c-acb236857619"
+    },
+    {
+      "claim_id": "1c2d0339-2e49-49b9-9f5d-e41cc2944e1e",
+      "result_id": "9be1f649-03ed-4fb1-aa6c-acb236857619"
+    },
+    {
+      "claim_id": "095e45d5-0f55-47a0-8cb3-0e618d9d0014",
+      "result_id": "9be1f649-03ed-4fb1-aa6c-acb236857619"
+    },
+    {
+      "claim_id": "0a38a50f-6a15-4ce5-a1d7-bcf0574e3d52",
+      "result_id": "9be1f649-03ed-4fb1-aa6c-acb236857619"
+    },
+    {
+      "claim_id": "3f6f49ef-d5f9-486b-858f-a0ae250e6533",
+      "result_id": "1315ae2d-bfd3-4eb8-a467-75cfa0345d96"
+    },
+    {
+      "claim_id": "42120085-8cc4-486f-9b4f-d1029aac663f",
+      "result_id": "1315ae2d-bfd3-4eb8-a467-75cfa0345d96"
+    },
+    {
+      "claim_id": "fd0be354-7c3b-45e4-9379-82592626828d",
+      "result_id": "1315ae2d-bfd3-4eb8-a467-75cfa0345d96"
+    },
+    {
+      "claim_id": "35892aa6-fd99-46a8-9acd-5b00b6eb0bff",
+      "result_id": "1315ae2d-bfd3-4eb8-a467-75cfa0345d96"
+    },
+    {
+      "claim_id": "5a1a9ae7-0d7c-42dc-bcc2-af8fcfa76ad9",
+      "result_id": "1315ae2d-bfd3-4eb8-a467-75cfa0345d96"
+    },
+    {
+      "claim_id": "f1799c40-47b2-4a05-a9c8-6159e9922c1b",
+      "result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12"
+    },
+    {
+      "claim_id": "dad60f48-d6d3-4db1-8567-b529683ba227",
+      "result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12"
+    },
+    {
+      "claim_id": "d93f291d-d8d3-45c9-805e-0c5198e7076f",
+      "result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12"
+    },
+    {
+      "claim_id": "a0f51e11-d205-49d7-8efc-33a853b0bfca",
+      "result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12"
+    },
+    {
+      "claim_id": "9b1f6cc5-4ebc-4b5b-8c33-13494cad9056",
+      "result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12"
+    },
+    {
+      "claim_id": "ce4ddf64-ce21-4789-b97d-eed644f7c661",
+      "result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12"
+    },
+    {
+      "claim_id": "e0ce077d-a97b-430a-b100-12290b4c4814",
+      "result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12"
+    },
+    {
+      "claim_id": "7b9a9815-2521-4268-80f5-9428715f3eda",
+      "result_id": "b9fe9688-a905-4acb-9ed5-04ea417fb6bc"
+    },
+    {
+      "claim_id": "9b9bec68-f926-4d00-9a20-ec18d7225e97",
+      "result_id": "b9fe9688-a905-4acb-9ed5-04ea417fb6bc"
+    },
+    {
+      "claim_id": "5e905245-9b63-4413-8b93-6f3bab22364d",
+      "result_id": "b9fe9688-a905-4acb-9ed5-04ea417fb6bc"
+    },
+    {
+      "claim_id": "c6ac4fbc-06ca-4d54-a043-d3f85ff580d2",
+      "result_id": "b9fe9688-a905-4acb-9ed5-04ea417fb6bc"
+    },
+    {
+      "claim_id": "40f7912e-fa4a-4826-817b-80318e545b99",
+      "result_id": "9a51e1e6-c89d-4655-81a0-7bda8c9a76f3"
+    },
+    {
+      "claim_id": "f068d77b-342e-4e15-9a17-36c88d5b28f4",
+      "result_id": "9a51e1e6-c89d-4655-81a0-7bda8c9a76f3"
+    },
+    {
+      "claim_id": "17650ad0-6c43-4f1e-8b92-695ce63a514f",
+      "result_id": "9a51e1e6-c89d-4655-81a0-7bda8c9a76f3"
+    },
+    {
+      "claim_id": "bbbb3c51-9596-4d99-bac5-ed8da754ee68",
+      "result_id": "769f6e30-0eda-4e3b-944a-15f13a53c383"
+    },
+    {
+      "claim_id": "d3b993b2-4337-4703-8fd0-95fa836671d5",
+      "result_id": "769f6e30-0eda-4e3b-944a-15f13a53c383"
+    },
+    {
+      "claim_id": "9766aa08-c103-4e66-9b26-27f201175c0c",
+      "result_id": "769f6e30-0eda-4e3b-944a-15f13a53c383"
+    },
+    {
+      "claim_id": "607fd863-3182-4482-b435-9784d48fab41",
+      "result_id": "769f6e30-0eda-4e3b-944a-15f13a53c383"
+    },
+    {
+      "claim_id": "b9a11084-7bef-48d0-8586-b174a28b6d9f",
+      "result_id": "769f6e30-0eda-4e3b-944a-15f13a53c383"
+    },
+    {
+      "claim_id": "abdc918f-e7f3-4ab1-abeb-bee009a62289",
+      "result_id": "a59ced48-11f5-4203-972a-9fea2db1f7e4"
+    },
+    {
+      "claim_id": "39a02b1a-aa47-4bb7-8645-f490173d65c1",
+      "result_id": "a59ced48-11f5-4203-972a-9fea2db1f7e4"
+    },
+    {
+      "claim_id": "006a5277-c34a-4caf-93d1-4ad1839f5b55",
+      "result_id": "a59ced48-11f5-4203-972a-9fea2db1f7e4"
+    },
+    {
+      "claim_id": "fa4aa9b4-f25c-43ea-a8cb-744428b615b0",
+      "result_id": "cf5feb5e-3c9b-455c-b9dd-aad2ce63f6fa"
+    },
+    {
+      "claim_id": "b9bba8a0-47c4-408d-bb33-8e80df9361c8",
+      "result_id": "cf5feb5e-3c9b-455c-b9dd-aad2ce63f6fa"
+    },
+    {
+      "claim_id": "f3be1440-85c4-4b73-ab65-eef23139dd44",
+      "result_id": "cf5feb5e-3c9b-455c-b9dd-aad2ce63f6fa"
+    },
+    {
+      "claim_id": "cc043ed4-839a-423d-a14b-28960639ee69",
+      "result_id": "cf5feb5e-3c9b-455c-b9dd-aad2ce63f6fa"
+    },
+    {
+      "claim_id": "f2f2dc11-8256-44dc-84ab-1ae3d6112869",
+      "result_id": "fcc79d8f-4fff-496b-aac1-8afd54bff304"
+    },
+    {
+      "claim_id": "af99b4e2-b2ea-45b0-892d-f8fc42afd999",
+      "result_id": "fcc79d8f-4fff-496b-aac1-8afd54bff304"
+    },
+    {
+      "claim_id": "3b482543-0d51-41e8-bcfe-306da3e751e2",
+      "result_id": "fcc79d8f-4fff-496b-aac1-8afd54bff304"
+    },
+    {
+      "claim_id": "2532c87d-6cbd-4581-9ada-313fa58c3924",
+      "result_id": "fcc79d8f-4fff-496b-aac1-8afd54bff304"
+    },
+    {
+      "claim_id": "f139dc7f-6891-4a54-b70f-37cddf48c27d",
+      "result_id": "56b23053-20ea-4800-a47c-1cc52cb8ac66"
+    },
+    {
+      "claim_id": "f5e5781d-e341-4dea-b3b0-456cb8148202",
+      "result_id": "56b23053-20ea-4800-a47c-1cc52cb8ac66"
+    },
+    {
+      "claim_id": "2c45b54f-d0f3-4ac6-92b6-9972d4b77fc3",
+      "result_id": "56b23053-20ea-4800-a47c-1cc52cb8ac66"
+    },
+    {
+      "claim_id": "45b1548d-6b2c-4f6e-b5c6-48699b979bac",
+      "result_id": "56b23053-20ea-4800-a47c-1cc52cb8ac66"
+    },
+    {
+      "claim_id": "2e346f53-61c8-44d6-bd00-95a509fbf4c5",
+      "result_id": "0361f7d1-7310-4732-be3d-249e713bd340"
+    },
+    {
+      "claim_id": "a690310b-8e83-4539-80d9-b9c9df93f1a1",
+      "result_id": "0361f7d1-7310-4732-be3d-249e713bd340"
+    },
+    {
+      "claim_id": "2d486485-c8a1-4b30-82ed-d91b7ba17cde",
+      "result_id": "0361f7d1-7310-4732-be3d-249e713bd340"
+    },
+    {
+      "claim_id": "098f9d8b-a055-4506-aef0-a38dc4670fba",
+      "result_id": "eaad11f3-e9d2-4b09-8b99-0d821c109d29"
+    },
+    {
+      "claim_id": "95182a42-a3f9-4955-af46-76219f70e357",
+      "result_id": "f7d5b514-72d9-4e53-8628-c2f736301dab"
+    },
+    {
+      "claim_id": "73066b99-b874-42a4-bad9-e9e14e9bc30c",
+      "result_id": "f7d5b514-72d9-4e53-8628-c2f736301dab"
+    },
+    {
+      "claim_id": "1c2d0339-2e49-49b9-9f5d-e41cc2944e1e",
+      "result_id": "f7d5b514-72d9-4e53-8628-c2f736301dab"
+    },
+    {
+      "claim_id": "095e45d5-0f55-47a0-8cb3-0e618d9d0014",
+      "result_id": "f7d5b514-72d9-4e53-8628-c2f736301dab"
+    },
+    {
+      "claim_id": "0a38a50f-6a15-4ce5-a1d7-bcf0574e3d52",
+      "result_id": "f7d5b514-72d9-4e53-8628-c2f736301dab"
+    },
+    {
+      "claim_id": "3f6f49ef-d5f9-486b-858f-a0ae250e6533",
+      "result_id": "aa7f3614-f204-45c0-9e96-6fcb26b78ecb"
+    },
+    {
+      "claim_id": "42120085-8cc4-486f-9b4f-d1029aac663f",
+      "result_id": "aa7f3614-f204-45c0-9e96-6fcb26b78ecb"
+    },
+    {
+      "claim_id": "fd0be354-7c3b-45e4-9379-82592626828d",
+      "result_id": "aa7f3614-f204-45c0-9e96-6fcb26b78ecb"
+    },
+    {
+      "claim_id": "35892aa6-fd99-46a8-9acd-5b00b6eb0bff",
+      "result_id": "aa7f3614-f204-45c0-9e96-6fcb26b78ecb"
+    },
+    {
+      "claim_id": "5a1a9ae7-0d7c-42dc-bcc2-af8fcfa76ad9",
+      "result_id": "aa7f3614-f204-45c0-9e96-6fcb26b78ecb"
+    },
+    {
+      "claim_id": "f1799c40-47b2-4a05-a9c8-6159e9922c1b",
+      "result_id": "0cf64819-7a48-48fe-b05e-922733e59d80"
+    },
+    {
+      "claim_id": "dad60f48-d6d3-4db1-8567-b529683ba227",
+      "result_id": "0cf64819-7a48-48fe-b05e-922733e59d80"
+    },
+    {
+      "claim_id": "9b1f6cc5-4ebc-4b5b-8c33-13494cad9056",
+      "result_id": "0cf64819-7a48-48fe-b05e-922733e59d80"
+    },
+    {
+      "claim_id": "006a5277-c34a-4caf-93d1-4ad1839f5b55",
+      "result_id": "0cf64819-7a48-48fe-b05e-922733e59d80"
+    },
+    {
+      "claim_id": "d93f291d-d8d3-45c9-805e-0c5198e7076f",
+      "result_id": "7d3d457b-4066-4405-82e2-62a4e6d2ea87"
+    },
+    {
+      "claim_id": "a0f51e11-d205-49d7-8efc-33a853b0bfca",
+      "result_id": "7d3d457b-4066-4405-82e2-62a4e6d2ea87"
+    },
+    {
+      "claim_id": "ce4ddf64-ce21-4789-b97d-eed644f7c661",
+      "result_id": "7d3d457b-4066-4405-82e2-62a4e6d2ea87"
+    },
+    {
+      "claim_id": "e0ce077d-a97b-430a-b100-12290b4c4814",
+      "result_id": "7d3d457b-4066-4405-82e2-62a4e6d2ea87"
+    },
+    {
+      "claim_id": "5e905245-9b63-4413-8b93-6f3bab22364d",
+      "result_id": "7d3d457b-4066-4405-82e2-62a4e6d2ea87"
+    },
+    {
+      "claim_id": "7b9a9815-2521-4268-80f5-9428715f3eda",
+      "result_id": "07bf530f-96ee-49eb-bd8a-b48ee35029ad"
+    },
+    {
+      "claim_id": "9b9bec68-f926-4d00-9a20-ec18d7225e97",
+      "result_id": "07bf530f-96ee-49eb-bd8a-b48ee35029ad"
+    },
+    {
+      "claim_id": "c6ac4fbc-06ca-4d54-a043-d3f85ff580d2",
+      "result_id": "07bf530f-96ee-49eb-bd8a-b48ee35029ad"
+    },
+    {
+      "claim_id": "abdc918f-e7f3-4ab1-abeb-bee009a62289",
+      "result_id": "07bf530f-96ee-49eb-bd8a-b48ee35029ad"
+    },
+    {
+      "claim_id": "40f7912e-fa4a-4826-817b-80318e545b99",
+      "result_id": "a39fe4e8-baaa-44d6-b472-1b2ce6ba5802"
+    },
+    {
+      "claim_id": "f068d77b-342e-4e15-9a17-36c88d5b28f4",
+      "result_id": "a39fe4e8-baaa-44d6-b472-1b2ce6ba5802"
+    },
+    {
+      "claim_id": "17650ad0-6c43-4f1e-8b92-695ce63a514f",
+      "result_id": "a39fe4e8-baaa-44d6-b472-1b2ce6ba5802"
+    },
+    {
+      "claim_id": "fa4aa9b4-f25c-43ea-a8cb-744428b615b0",
+      "result_id": "1e99642d-64a8-4f61-8fb4-be3f8b8fab6b"
+    },
+    {
+      "claim_id": "b9bba8a0-47c4-408d-bb33-8e80df9361c8",
+      "result_id": "1e99642d-64a8-4f61-8fb4-be3f8b8fab6b"
+    },
+    {
+      "claim_id": "2e346f53-61c8-44d6-bd00-95a509fbf4c5",
+      "result_id": "3e63f417-9e02-4e58-881e-b851fd737655"
+    },
+    {
+      "claim_id": "a690310b-8e83-4539-80d9-b9c9df93f1a1",
+      "result_id": "3e63f417-9e02-4e58-881e-b851fd737655"
+    },
+    {
+      "claim_id": "af99b4e2-b2ea-45b0-892d-f8fc42afd999",
+      "result_id": "3e63f417-9e02-4e58-881e-b851fd737655"
+    },
+    {
+      "claim_id": "bbbb3c51-9596-4d99-bac5-ed8da754ee68",
+      "result_id": "dc36525d-ef5e-4861-b981-0a79d20e4061"
+    },
+    {
+      "claim_id": "d3b993b2-4337-4703-8fd0-95fa836671d5",
+      "result_id": "dc36525d-ef5e-4861-b981-0a79d20e4061"
+    },
+    {
+      "claim_id": "9766aa08-c103-4e66-9b26-27f201175c0c",
+      "result_id": "dc36525d-ef5e-4861-b981-0a79d20e4061"
+    },
+    {
+      "claim_id": "607fd863-3182-4482-b435-9784d48fab41",
+      "result_id": "dc36525d-ef5e-4861-b981-0a79d20e4061"
+    },
+    {
+      "claim_id": "b9a11084-7bef-48d0-8586-b174a28b6d9f",
+      "result_id": "dc36525d-ef5e-4861-b981-0a79d20e4061"
+    },
+    {
+      "claim_id": "f2f2dc11-8256-44dc-84ab-1ae3d6112869",
+      "result_id": "95622ea3-4aa0-40c0-8171-2916b8fdb3a4"
+    },
+    {
+      "claim_id": "3b482543-0d51-41e8-bcfe-306da3e751e2",
+      "result_id": "95622ea3-4aa0-40c0-8171-2916b8fdb3a4"
+    },
+    {
+      "claim_id": "2532c87d-6cbd-4581-9ada-313fa58c3924",
+      "result_id": "95622ea3-4aa0-40c0-8171-2916b8fdb3a4"
+    },
+    {
+      "claim_id": "f139dc7f-6891-4a54-b70f-37cddf48c27d",
+      "result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb"
+    },
+    {
+      "claim_id": "f5e5781d-e341-4dea-b3b0-456cb8148202",
+      "result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb"
+    },
+    {
+      "claim_id": "f3be1440-85c4-4b73-ab65-eef23139dd44",
+      "result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb"
+    },
+    {
+      "claim_id": "cc043ed4-839a-423d-a14b-28960639ee69",
+      "result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb"
+    },
+    {
+      "claim_id": "39a02b1a-aa47-4bb7-8645-f490173d65c1",
+      "result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb"
+    },
+    {
+      "claim_id": "098f9d8b-a055-4506-aef0-a38dc4670fba",
+      "result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb"
+    },
+    {
+      "claim_id": "2c45b54f-d0f3-4ac6-92b6-9972d4b77fc3",
+      "result_id": "c9b97ace-c244-4233-bf9c-8dce2949ab5d"
+    },
+    {
+      "claim_id": "45b1548d-6b2c-4f6e-b5c6-48699b979bac",
+      "result_id": "c9b97ace-c244-4233-bf9c-8dce2949ab5d"
+    },
+    {
+      "claim_id": "2d486485-c8a1-4b30-82ed-d91b7ba17cde",
+      "result_id": "81e84276-9db5-479f-b6c4-6604b16e9914"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "47e88d00-ca99-46be-a868-7249afdfd832",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "9be1f649-03ed-4fb1-aa6c-acb236857619",
+      "peer_result_id": "f7d5b514-72d9-4e53-8628-c2f736301dab",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on computational efficiency claims (C1, C37, C51-C53). Both evaluations find the speedup claims well-supported, with peer reviewers explicitly citing Figure 2 and Supplementary Figure S2 as compelling evidence, matching OpenEval's assessment of 30-40\u00d7 speedup validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "904c309d-a175-4189-b3a5-eb0f93eb6e9b",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "1315ae2d-bfd3-4eb8-a467-75cfa0345d96",
+      "peer_result_id": "aa7f3614-f204-45c0-9e96-6fcb26b78ecb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on population structure effects on LD (C2, C3, C41, C44, C46). Both evaluations support these claims, with peer reviewers explicitly acknowledging that 'cross-chromosome LD can be substantial' with implications for population structure studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "ca92071a-7c19-4fd0-a6a0-f7401cfcdc95",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12",
+      "peer_result_id": "0cf64819-7a48-48fe-b05e-922733e59d80",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on HLA findings (C4, C5, C55). OpenEval addresses broader set including centromere claims (C6, C7, C60, C65), while peer review focuses on HLA-specific findings (C4, C5, C55, C88). Both find claims supported, with peer reviewers implicitly validating through method validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "39ab89ea-871e-4c49-beec-d04f86738dfe",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "bf5a45ad-f806-4280-a873-2ed73ce18d12",
+      "peer_result_id": "7d3d457b-4066-4405-82e2-62a4e6d2ea87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlap on centromere findings (C6, C7, C60, C65). OpenEval groups HLA and centromere claims together, while peer review separates them. Both evaluations support the chromosome 11 centromere observations, with peer reviewers noting 'very good agreement' with PLINK validates these findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "4e4641a0-761e-439e-9ff4-aaf47af5fd0f",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "b9fe9688-a905-4acb-9ed5-04ea417fb6bc",
+      "peer_result_id": "07bf530f-96ee-49eb-bd8a-b48ee35029ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on chromosome length-LD linear relationship (C8, C9, C71). OpenEval includes chromosome 11 exception (C10) and quantitative leave-one-out analysis (C79), while peer review focuses on the core linear relationship. Both find claims supported through method validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "5de46714-8719-4b4c-8edd-2ff8cdfb4758",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "9a51e1e6-c89d-4655-81a0-7bda8c9a76f3",
+      "peer_result_id": "a39fe4e8-baaa-44d6-b472-1b2ce6ba5802",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Perfect agreement on ASW chromosome 8 anomaly (C11, C83, C92). OpenEval rates as UNCERTAIN due to speculative mechanistic explanation (C92), while peer reviewers rate SUPPORTED but don't directly address the speculation, focusing on observational validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "01eab22c-2161-4eaa-abdf-9fa8de677203",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "769f6e30-0eda-4e3b-944a-15f13a53c383",
+      "peer_result_id": "dc36525d-ef5e-4861-b981-0a79d20e4061",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on LD decay analysis (C67-C69, C74-C75). Both evaluations support these claims about population-specific LD patterns, with peer reviewers noting implications for population structure studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "e2f33c4d-5255-482e-a194-cac9878f0fe6",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a59ced48-11f5-4203-972a-9fea2db1f7e4",
+      "peer_result_id": "0cf64819-7a48-48fe-b05e-922733e59d80",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on HLA variation claim (C88). OpenEval groups this with chromosome 11 and recombination biology claims (C79, C80), while peer review includes it with HLA findings. Both find it supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "615ea62a-a70e-4f2b-b5b8-0a81177c8edc",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "a59ced48-11f5-4203-972a-9fea2db1f7e4",
+      "peer_result_id": "07bf530f-96ee-49eb-bd8a-b48ee35029ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on leave-one-out analysis (C79). OpenEval groups this with HLA and recombination claims, while peer review includes it with linear relationship findings. Both support the quantitative validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "b68908e1-52b2-4a1b-adae-c08444585ba1",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "cf5feb5e-3c9b-455c-b9dd-aad2ce63f6fa",
+      "peer_result_id": "1e99642d-64a8-4f61-8fb4-be3f8b8fab6b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on theoretical foundation (C18, C19). OpenEval includes additional citations (C22, C23), while peer review focuses on core mathematical derivation. Peer reviewer explicitly states 'the method and its derivation are solid.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "9afe4036-100a-48d2-91be-253f89d75767",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "cf5feb5e-3c9b-455c-b9dd-aad2ce63f6fa",
+      "peer_result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on background context (C22, C23). OpenEval groups these with theoretical foundation, while peer review includes them with broader background claims. Both find established literature appropriately cited.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "a43b9b1e-db97-4a0f-8382-b8871331f7c4",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "fcc79d8f-4fff-496b-aac1-8afd54bff304",
+      "peer_result_id": "95622ea3-4aa0-40c0-8171-2916b8fdb3a4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on software implementation (C12, C29, C30). OpenEval includes capacity testing (C20), while peer review focuses on core implementation claims. Both confirm software functionality and availability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "66cef6c9-01eb-4574-8ea7-e8959b0b94f0",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "fcc79d8f-4fff-496b-aac1-8afd54bff304",
+      "peer_result_id": "3e63f417-9e02-4e58-881e-b851fd737655",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on capacity testing (C20). OpenEval groups this with software implementation, while peer review includes it with computational limitations. Both support the claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "ae35ebb0-d21a-4c3f-83bb-b85e83b1003b",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "56b23053-20ea-4800-a47c-1cc52cb8ac66",
+      "peer_result_id": "c9b97ace-c244-4233-bf9c-8dce2949ab5d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on dataset description (C25, C26). OpenEval includes broader background context (C13, C14), while peer review focuses on data quality. Both find data processing appropriately described.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "d024e3e3-421f-4975-a131-2e1fc93822a9",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "56b23053-20ea-4800-a47c-1cc52cb8ac66",
+      "peer_result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on background context (C13, C14). OpenEval groups these with dataset description, while peer review includes them with broader literature context. Both find background appropriately cited.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "01db335d-9587-4928-adce-d7d3989c3cd3",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "0361f7d1-7310-4732-be3d-249e713bd340",
+      "peer_result_id": "3e63f417-9e02-4e58-881e-b851fd737655",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on computational limitations (C86, C87). OpenEval includes future directions (C89), while peer review focuses on current limitations. Peer reviewer explicitly confirms the fine-grained resolution limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "3f3752fc-82fd-4c95-84aa-879fa8e9caf8",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "0361f7d1-7310-4732-be3d-249e713bd340",
+      "peer_result_id": "81e84276-9db5-479f-b6c4-6604b16e9914",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on CHM13 prediction (C89) but different evaluation types. OpenEval rates as SUPPORTED (reasonable speculation), while peer review rates as UNCERTAIN (untested hypothesis). Both acknowledge speculative nature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "10d0b394-5c3a-4772-89a4-2858b41e2cbf",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "eaad11f3-e9d2-4b09-8b99-0d821c109d29",
+      "peer_result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on cited observation (C90). OpenEval treats this as standalone cited claim, while peer review includes it with broader background literature. Both find it appropriately cited.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "5ed9b3b5-d5a4-41e5-b18b-e32cb671bf21",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "a59ced48-11f5-4203-972a-9fea2db1f7e4",
+      "peer_result_id": "cc626f95-bfb6-4db5-936b-c4247d931ccb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on recombination biology (C80). OpenEval groups this with chromosome 11 findings, while peer review includes it with background literature. Both find citation appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    },
+    {
+      "id": "213aefbe-fc4f-45fc-a618-b4ca7d308437",
+      "submission_id": "ada2295f-99b5-40d3-bdf5-dcb98253a1ca",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "b9fe9688-a905-4acb-9ed5-04ea417fb6bc",
+      "peer_result_id": "7d3d457b-4066-4405-82e2-62a4e6d2ea87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on chromosome 11 exception (C10). OpenEval emphasizes this as part of linear relationship analysis, while peer review includes it with centromere findings. Both support the observation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:09.795247Z"
+    }
+  ]
+}

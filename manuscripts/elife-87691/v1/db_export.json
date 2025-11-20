@@ -1,0 +1,2392 @@
+{
+  "submission": {
+    "id": "31bffab2-5799-4edc-8a25-732310726b82",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T19:26:31.746354Z",
+    "updated_at": "2025-11-20T19:26:31.746354Z"
+  },
+  "content": [
+    {
+      "id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "content_type": "manuscript",
+      "content_text": "# Mesotrode chronic simultaneous mesoscale cortical imaging and subcortical or peripheral nerve spiking activity recording in mice\n\n## Authors\n\n- Dongsheng Xiao<sup>1</sup> ([ORCID: 0000-0002-1669-0021](https://orcid.org/0000-0002-1669-0021))\n- Yuhao Yan<sup>1</sup>\n- Timothy H Murphy<sup>1</sup> ([ORCID: 0000-0002-0093-4490](https://orcid.org/0000-0002-0093-4490)) \u2020\n\n### Affiliations\n\n1. University of British Columbia, Department of Psychiatry, Kinsmen Laboratory of Neurological Research Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))\n2. Djavad Mowafaghian Centre for Brain Health, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBrain function originates from hierarchical spatial-temporal neural dynamics distributed across cortical and subcortical networks. However, techniques available to assess large-scale brain network activity with single-neuron resolution in behaving animals remain limited. Here, we present Mesotrode that integrates chronic wide-field mesoscale cortical imaging and compact multi-site cortical/subcortical cellular electrophysiology in head-fixed mice that undergo self-initiated running or orofacial movements. Specifically, we harnessed the flexibility of chronic multi-site tetrode recordings to monitor single-neuron activity in multiple subcortical structures while simultaneously imaging the mesoscale activity of the entire dorsal cortex. A mesoscale spike-triggered averaging procedure allowed the identification of cortical activity motifs preferentially associated with single-neuron spiking. Using this approach, we were able to characterize chronic single-neuron-related functional connectivity maps for up to 60 days post-implantation. Neurons recorded from distinct subcortical structures display diverse but segregated cortical maps, suggesting that neurons of different origins participate in distinct cortico-subcortical pathways. We extended the capability of Mesotrode by implanting the micro-electrode at the facial motor nerve and found that facial nerve spiking is functionally associated with the PTA, RSP, and M2 network, and optogenetic inhibition of the PTA area significantly reduced the facial movement of the mice. These findings demonstrate that Mesotrode can be used to sample different combinations of cortico-subcortical networks over prolonged periods, generating multimodal and multi-scale network activity from a single implant, offering new insights into the neural mechanisms underlying specific behaviors.\n\n## Introduction\n\nSystem-level mechanisms of cognition and action across networks of single neurons in awake, behaving mice remain largely elusive (Buzs\u00e1ki, 2006; Aru et al., 2020; Roth and Ding, 2020). The difficulty comes from recording neural activity over large spatial scales but with single neuron resolution during sensory and motor processes (Alivisatos et al., 2012). In the mammalian brain, large-scale cortical network activity is dynamically sculpted by local or long-range inputs from individual neurons in various cortical or subcortical structures (Koch et al., 2016). Decoding the principles of neuronal network activity is essential for understanding brain function (Oh et al., 2014; Jiang et al., 2015). One important aspect of such understanding is mapping the functional connectivity of single neurons in relation to cortical networks. Emerging studies using in vivo electrophysiological and imaging techniques have revealed that activities of single neurons are functionally coupled to those of local microcircuits or the global cortical networks, and such connectivity is dynamically regulated depending on the behavioral state of the animal (Barson et al., 2018; Chen et al., 2013a; Xiao et al., 2017; Clancy et al., 2019). While most of the current studies only provide a snapshot of the connectivity map of a single neuron, the development of procedures where both single-unit activity and large-scale cortical network dynamics of awake-behaving mice can be chronically recorded is desirable.\n\nPreviously, chronic extracellular recordings in rodent brains were achieved most widely using bundled microwires called tetrodes, and more recently extended to the use of high-throughput recording devices such as silicon probes including Neuropixels (Bragin et al., 2000; Nguyen et al., 2009; Vandecasteele et al., 2012; Voigts et al., 2013; Delcasso et al., 2018; Juavinett et al., 2019; Steinmetz et al., 2021). In the case of conventional chronic tetrode recording setups, a common feature is the inclusion of a microdrive that provides axial control over the positioning of the electrodes which allows the electrode position to be adjusted for better recording qualities throughout the experimental periods. However, this microdrive hinders simultaneous wide-field optical imaging of the cortex, making it difficult to investigate the correlation between subcortical single-unit activation and cortical network activity. On the other hand, chronic silicon probe recordings rely on a skull-mounted probe and a large headstage, also have the same limitation of not allowing for simultaneous wide-field imaging.\n\nTo overcome these challenges, we designed the Mesotrode system where we combine in vivo electrophysiology via multi-site tetrode implants and mesoscale brain imaging to characterize the functional connectivity of individual cortical or subcortical neurons chronically. We show that these tetrode preparations can obtain high-fidelity, single-unit activity in any cortical or subcortical structure. More importantly, this setup preserves optical access to the entire cranial window of the animal which permits simultaneous functional brain imaging as well as optogenetic manipulation of neuronal activity across the whole dorsal cortex. To obtain high-resolution wide-field imaging of mouse brain activity, we chose to utilize GCaMP6, a genetically encoded Ca2+ indicator (GECI) widely used to optically record suprathreshold neuronal activation due to its high sensitivity and optimal signal-to-noise ratio (Chen et al., 2013b). Furthermore, it has been shown that GECIs can stably report neuronal activity over several months (Huber et al., 2012; Margolis et al., 2012; Silasi et al., 2016), making them ideal for chronic studies of cortical network dynamics. We found that neurons from various subcortical structures, including the hippocampus, thalamus, striatum, and other midbrain areas, display distinct functional connectivity patterns with the cortex. More importantly, we show that the spike-triggered maps (STMs) of recorded neurons can be stable for up to two months. Moreover, we extended Mesotrode to record facial nerve spiking activity and identified a novel cortical network that is causally involved in controlling facial movement, further highlighting the wide applicability of this technique. These results indicate that our Mesotrode can be widely exploited to investigate multiscale functional connectivity within the central nervous system of mice over an extended timescale.\n\n## Results\n\n### Chronic single-unit recording with wide-field transcranial imaging window\n\nWe developed the Mesotrode implantation procedure with the aim to make them low profile, flexible in location, minimally invasive, and yet stable while maintaining optical access to the entire dorsal cortex such that we can record chronic single neuron activity and mesoscale cortical dynamics simultaneously. Briefly, we fabricated tetrodes from tungsten wires which were then soldered to a miniature connector that was cemented onto the back of the mouse skull during surgery (see Materials and methods). The single tetrode was stiff enough to be straightly inserted into the deep brain areas through a small burr hole (<1 mm; Figure 1A). The body of the tetrode that remained outside of the brain was bent parallel to the skull and the minimal size helped preserve optical transparency during imaging sessions (Figure 1B). As the miniature connectors are low-profile, mice were group-housed after the surgery (Figure 1C), and we did not observe significant damage to the window or the connectors after long-term monitoring. The tetrodes can be flexibly implanted in almost any brain structure of interest, either cortical or subcortical. We have successfully obtained high-quality recordings in the mouse cortex, hippocampus, thalamus, striatum, and midbrain. The recording site of each tetrode is confirmed using post-hoc histological analysis (Figure 1D). We found that the single unit activity was relatively stable during 1 week, 2 weeks, and 2 months of recordings after implantation (Figure 1F and G), which is consistent with previously reported chronic tetrode recordings in mice (Tolias et al., 2007; Hong and Lieber, 2019; Kim et al., 2020; Voigts et al., 2020b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig1-v1.jpg)\n\n**Figure 1.:** (A) Images of skull surface during tetrode implantation. Panels depict the location of 4 tetrodes placed in skull burr holes using a micromanipulator. (B) Image showing transcranial window with tetrodes placed in the striatum, thalamus, and midbrain. (C) Chronic tetrode recording is compatible with group-housed mice. (D) Post-mortem histology is performed to confirm the tetrode location. (E) Cartoon of tetrode and local neurons. (F) Example of long-term recording using transcranial imaging window plus tetrodes. (G) Sorted spikes from (F) (brown, blue, and gray indicate 1 week, 2 weeks, and 2 months after tetrode implantation).\n\nWe implanted a total of 29 tetrodes in the midbrain, hippocampus, thalamus, striatum, and cortex of 14 mice, and recorded the activity of 110 neurons with simultaneous mesoscale cortical imaging for up to 2 months after implantation (Figure 2). We registered all the putative positions of the recorded neurons as well as the tetrode tracks to a 3D mouse brain model, which was reconstructed from an MRI scan (Egan et al., 2015; Figure 2A and B). First, we compared the firing profiles of the neurons from different brain regions. On average, we obtained 3\u20135 neurons per tetrode implanted, and this yield was consistent across regions (Figure 2C). The inter-spike interval (ISI) of neurons recorded from most brain regions ranged between 0.2 and 0.7 s, except for neurons of the striatum, which fires significantly less compared to neurons in other brain regions (Figure 2D, p<0.05). The coefficient of variation (CV) of ISI, a metric that indicates the consistency of the firing rate, was similar across brain regions (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig2-v1.jpg)\n\n**Figure 2.:** (A) Labels corresponding to mouse IDs (n=14 mice) were registered to a 3D mouse brain model based on tetrode locations. (B) Side view of the 3D reconstruction of 29 tetrode tracks implanted in 14 mice registered to the 3D mouse brain model. (C) The mean number of well-isolated neurons recorded per tetrode implanted in different brain regions. (D) Mean inter-spike interval (ISI) of neurons recorded in different brain regions (Dunn\u2019s Multiple Comparison Test, striatum vs midbrain, p<0.01, thalamus vs midbrain, p<0.05, n=14 mice). (E) Mean coefficient of variation of ISIs of neurons across brain regions (Dunn\u2019s Multiple Comparison Test, thalamus vs hippocampus, p<0.05, n=14 mice).\n\n### Spike-triggered average mapping of the thalamus, striatum, hippocampus, and midbrain neuron-defined mesoscale cortical networks\n\nSpike-triggered average mapping (STM) has been previously used to investigate functional connectivity between single spiking neurons and cortical networks (Barson et al., 2018; Xiao et al., 2017; Clancy et al., 2019; Liu et al., 2021a). However, this has only been achieved using acute preparation. To assess the functional connectivity of the chronically recorded neurons, we combined electrophysiological recordings with simultaneous mesoscale cortical imaging through a bilateral window that encompassed the entire dorsal cortex in head-fixed, awake mice (Figure 3A and B, Videos 1 and 2). To obtain STMs of the recorded neuron, we calculated the peak response of normalized Ca2+ activity (\u0394F/F) of each pixel averaged between 3 s before and after (\u00b13 s) the onset of each spike, which gave us a wide-field mapping of the cortical areas that were associated with spiking activity of the recorded neuron (Xiao et al., 2017). Green reflectance signals, which were recorded with the same frequency as the GCaMP6 signal, were used to correct hemodynamic artifacts (Figure 3C and D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illustration of experiment setup incorporating wide-field imaging, and tetrode recording with simultaneous behavioral monitoring. (B) Example tetrodes implantation in the thalamus, BCS1, and striatum. The middle and bottom panel shows the tetrode location registered in a 3D model of the mouse brain. (C) Spike-triggered average of GCaMP6s fluorescence (left), hemodynamic signal (middle, green reflectance), and hemodynamic-subtracted cortical maps (right) of thalamic, BCS1, and striatal neurons. (D) Average traces of GCaMP6s epi-fluorescence (blue), hemodynamic signal (green reflectance), and hemodynamic-subtracted signal (red) surrounding spikes of single neurons, and random trigger average traces (black). The gray bands correspond to the standard deviation of random trigger average traces.\n\n![Video 1.](https://cdn.elifesciences.org/articles/87691/elife-87691-video1.mp4.jpg)\n\n**Video 1.:** Brain activity data was registered in a 3D mouse brain model. Calcium dynamic intensity and neuronal firing rate of subcortical neurons (Top) were color-coded in the ROIs in the 3D mouse brain model (bottom left). The calcium dynamic was overlaid on a cortical atlas (bottom right).\n\n![Video 2.](https://cdn.elifesciences.org/articles/87691/elife-87691-video2.mp4.jpg)\n\nWe found that single neuron defined functional maps were stable across recording sessions and days. For example, the STM of a hippocampus neuron was associated with the RSP, BCS, and M2 region for 10 recording sessions on different days (Figure 4A and B). To better visualize the stability of STMs across recording, we used Mesonet, a machine-learning based toolbox for parcellating brain regions, to accurately align our mesoscale images to a common brain atlas (Xiao et al., 2021). We show that the STMs of a midbrain neuron were relatively stable over 2 months (Figure 4C and D). The spiking activity of the neuron on different days was highly correlated with the lower limb, upper limb, and trunk sensorimotor areas on both hemispheres of the cortex. To examine the neural correlates of different behaviors, we also incorporated a Raspberry pi camera to monitor the spontaneous behavior of the mice during brain activity recordings (Figure 4C and E). In this example, we show that the instantaneous firing rate and patterns of this midbrain neuron were highly correlated with the paw movement of the mouse, consistent with our finding that this neuron is functionally associated with the limb sensorimotor areas. These results highlight the power of this multimodal approach, in that it can link high-resolution single neuron activity with network dynamics of the entire cortex and concurrent animal behavior, which greatly improves our ability to dissect the functional role of individual neurons of any brain region.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig4-v1.jpg)\n\n**Figure 4.:** (A) Unfiltered brain RGB image showing the position of the tetrode (left), GCaMP6 fluorescence image (middle), and histology showing the recording site of the tetrode (right). (B) Example raw and high-pass filtered (>300 Hz) electrophysiological traces of hippocampal recording 7 days after tetrode implantation and STMs of the hippocampal neuron across recording sessions(top). Another day of hippocampal recording and STMs of the hippocampal neuron across recording sessions(bottom). (C) Unfiltered brain RGB image showing the position of the tetrode (top) and behavior video recording (bottom). (D) Top: Ca2+ images recorded 1 week (left), 2 weeks (middle), and 2 months (right) after tetrode implanted in the midbrain overlaid with automatically registered brain atlas using Mesonet. Bottom: STMs of the midbrain neuron recorded at the same time points as Top. (E) Synchronized traces of paw movements, instantaneous firing rate, and electrophysiological signals of the midbrain neuron are shown in (C).\n\nTo quantify the distribution of distinctively patterned STMs of neurons across brain regions, we applied a graph-based clustering algorithm, Phenograph, on z-scored STMs (Levine et al., 2015; Figure 5). In total, we included 1146 STMs of 110 neurons recorded during multiple sessions. This resulted in 10 clusters with each cluster representing a distinct STM pattern evidenced by their within-cluster averaged map (Figure 5A). Un-matched STMs that were below the similarity threshold (Pearson\u2019s correlation <0.3) compared to any of the 10 cluster average maps were excluded (94 out of 1146 STMs). For all clusters, individual STMs within the clusters showed high similarity to the cluster average maps (Figure 5B). In order to validate the optimal number of clusters for partitioning our dataset, we evaluated the clustering effectiveness of a varied number of clusters when applying K-means clustering algorithm using Silhouette score (Rousseeuw, 1987) and confirmed that 10 clusters are most appropriate (Figure 5C). Degrees of separation between clusters were visually inspected by projecting dimensionally reduced STMs onto 3D space using t-distributed stochastic neighbor embedding (t-SNE), a commonly used statistical method for plotting high-dimensional data points onto 3D space (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig5-v1.jpg)\n\n**Figure 5.:** (A) Average z-scored STM of each cluster. Each cluster represents a unique cortical functional network that individual neurons were associated with. STMs of the same neurons recorded during different sessions were included (1146 total STMs from 110 neurons of 14 mice). (B) Box plot showing the correlation between individual STM and average STM of its assigned cluster. (C) Silhouette coefficient of varying numbers of clusters to validate the optimal number of clusters. (D) 3D-t-SNE plot showing dimensionality reduced representation of clustered individual STMs. (E) The proportion of neurons in each cortical and subcortical region assigned to each STM cluster.\n\nFigure 5E shows the proportions of STMs of neurons in different brain regions that were assigned to each cluster. We found that STMs in each region exhibited a stereotypical distribution pattern. For example, STMs of cortical neurons were primarily assigned to clusters #1\u20133 and #5\u20137, corresponding to motor, barrel, and primary somatosensory cortex activation patterns. These activation areas also matched the locations of the recorded cortical neurons (e.g. motor cortical neurons showed motor area activated STMs), suggesting that the functional connectivity patterns of cortical neurons were localized to cortical areas surrounding the recorded neuron, which is consistent with previous reports (Xiao et al., 2017; Clancy et al., 2019). Hippocampal neurons primarily displayed STMs with retrosplenial cortex activation (cluster#10, 59.6% of all hippocampal neuron STMs), reaffirming the dense functional connectivity between these two regions (Karimi Abadchi et al., 2020). STMs of striatal neurons were dominated by two opposing patterns, where 47.7% of them showed a global activation except for the body (limb and trunk) somatosensory regions (cluster#4) and 28.8% of them showed only activation in the body sensory regions (cluster#9). Thalamic neurons exhibited diverse STM patterns with the primary activated regions in lateral anterior cortical regions (cluster#5, 5.6%, cluster#6, 23.3%, cluster#7 26.3% of all thalamic STMs) and medial cortical regions (cluster#8, 6.5%, cluster#9, 11.6%, cluster#10, 9.9% of all thalamic STMs). This suggested that thalamic neurons had diverse functional connectivity patterns in relation to the dorsal cortex, consistent with previous studies (Xiao et al., 2017). STMs of midbrain neurons were most assigned to cluster#8 with medial frontal and somatosensory cortex activation (cluster#8, 44.6% of all midbrain STMs), but also included functional connectivity patterns with various other cortical regions (cluster#6, 10.5%, cluster#9, 12.6%, cluster#10, 11.2% of all midbrain STMs). Interestingly, we found that neurons of different subcortical origins sometimes have overlapping STMs (e.g. cluster#9, and #10 exhibited by neurons from all subcortical regions), which suggests that they may be involved in the same subcortico-cortical functional pathway (Figure 5E). Taken together, these findings highlighted the capability of Mesotrode to capture the diverse cortical functional connectivity patterns of neurons across brain regions using chronic electrodes.\n\n### Linkage of spiking peripheral nerve to specific mesoscopic cortical maps\n\nOne key advantage of using our minimally invasive micro-electrode setup is the flexibility of the location where they can be implanted and the relatively small footprint at the insertion site. This allows us to explore the functional connectivity of neurons that are otherwise difficult to study. For example, it\u2019s difficult to simultaneously record the neural activity of the facial motor nucleus and cortex in order to investigate the cortico-brainstem motor pathways that directly innervate facial muscles that control whisker movement and facial expressions in mice (Petersen, 2014; Sreenivasan et al., 2016; Mercer Lindsay et al., 2019). Here, we implanted micro-wires on the facial motor nerve to record the spiking activity of the axonal projections from the facial motor neurons (Figure 6A and B). We obtained the STMs of facial motor nerves by simultaneous wide-field imaging of GCaMP6 mice (n=5 mice). Surprisingly, we found a distinct cortical pattern, activation in RSP, M2, and PTA areas (Table 1), associated with facial motor nerve spiking activity (Figure 6C, D and E, Figure 6\u2014figure supplement 1, Video 3) in awake mice showing spontaneous movements. Using automated light-based mapping technology (Ayling et al., 2009), we found a broad area of the dorsal cortex, including the PTA region could evoke facial motor nerve spiking activity when optogenetically stimulated (Figure 6F, G and H, Figure 6\u2014figure supplements 2\u20137, Video 4) within Thy1-ChR2 mice (n=6 mice). To further investigate causal relationships, we directly inhibited the PTA by optogenetically stimulating inhibitory neurons of the PTA region of VGAT-ChR2 mice (n=3 mice). Echoing our previous finding, inhibiting the PTA not only stopped the PTA neurons from firing but also prevented the facial movements of these mice when the blue light stimulation was on (Figure 7, Video 5). To eliminate the possibility that this observation is due to indirect inhibition of other brain areas, we simultaneously recorded neuronal activities in M1 and the barrel cortex (BCS). We confirmed that the neuron firing in these brain areas was not decreased by PTA inhibition (Figure 7A and B). More interestingly, we saw a \u2018rebound effect\u2019, a sudden increase in PTA neuron firing and facial movement, right after the stimulation is turned off (Figure 7C and D). This \u2018off response\u2019 supports the causal relationships between PTA and facial movement. These findings are consistent with the previous report that the PTA is involved in controlling active movements (Chapman et al., 2002; Cohen and Andersen, 2002; Rathelot et al., 2017; Auffret et al., 2018; Lyamzin and Benucci, 2019; Lee et al., 2022). It also underscores that our chronic tetrode implants in combination with optogenetics and optical imaging can be a powerful tool in mapping and identifying novel functional pathways.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig6-v1.jpg)\n\n**Figure 6.:** (A) Mouse anatomy illustrates facial motor nucleus axons (facial nerve) that innervate facial muscles. Micro-wire was implanted in the facial nerve. (B) Example spiking activity recorded from facial motor nerve using the micro-wire. (C) Example calcium imaging during facial nerve recording. (D) Facial nerve spike-triggered average map temporal dynamics surrounding facial nerve spikes (t=0ms) of a single mouse (top row) or the average of 5 mice (bottom row). (E) Reference atlas (white outlines; 2004 Allen Institute for Brain Science. Allen Mouse Brain Atlas. Available from: http://mouse.brain-map.org/) (F) Illustration of automated light-based mapping of the dorsal cortex (8x8 grid) by photoactivation of Thy1-ChR2 mice. (G) Example single trial facial nerve response after light stimulation. (H) Average change of facial nerve responses of 6 mice represented on a 2D color-coded map corresponding to each stimulation coordinate overlayed on an example cortical image of Thy1-ChR2 mouse. The amplitude of the average change for each stimulation coordinate corresponds to the total variance of all the trials (>5 trials, within 200ms after stimulus) where there is no facial nerve spiking before the stimulus.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig6-figsupp1-v1.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Averaged responses (>5 trials) were normalized to the range of 0 and 1 (right).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Averaged responses (>5 trials) were normalized to the range of 0 and 1 (right).\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Averaged responses (>5 trials) were normalized to the range of 0 and 1 (right).\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig6-figsupp5-v1.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Averaged responses (>5 trials) were nomalized to the range of 0 and 1 (right).\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig6-figsupp6-v1.jpg)\n\n**Figure 6\u2014figure supplement 6.:** Averaged responses (>5 trials) were normalized to the range of 0 and 1 (right).\n\n![Figure 6\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig6-figsupp7-v1.jpg)\n\n**Figure 6\u2014figure supplement 7.:** Averaged responses (>5 trials) were normalized to the range of 0 and 1 (right).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/87691/elife-87691-fig7-v1.jpg)\n\n**Figure 7.:** (A) Unfiltered brain RGB image showing the position of the tetrodes. (B) Simultaneous cellular electrophysiological recording in the cortical regions of M1, BCS, and PTA with optogenetic inhibition on the PTA region. (C) Behavioral image showing masks used for facial movement detection (top). Brain image of a VGAT-ChR2 mouse (ChR2 expressed in cortical inhibitory neurons) with laser targeting the PTA area (bottom). (D) Synchronized traces of optogenetic activation of PTA inhibitory neurons, facial movement, and LFP of the PTA region. Inhibiting the PTA region strongly inhibited facial nerve activity. Cessation of PTA inhibition reliably induced rebound PTA neuron firing and facial movements. (E) The neuronal firing of 12 trials of optogenetic inhibition in PTA. (F) Facial movements ((gradient-mean)/mean) 3 s before, 3 s during, and 3 s immediately after optogenetic inhibition in PTA for 29 trials (Dunn\u2019s Multiple Comparison Test, p<0.001, n=3 mice).\n\n**Table 1.**\n Abbreviation used to define different cortical/sub-cortical areas.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mop (M1)</th>\n      <th>Primary motor area</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Mos (M2)</td>\n      <td>Secondary motor area</td>\n    </tr>\n    <tr>\n      <td>SSp-m</td>\n      <td>Primary somatosensory area, mouse</td>\n    </tr>\n    <tr>\n      <td>SSp-ul</td>\n      <td>Primary somatosensory area, upper limb</td>\n    </tr>\n    <tr>\n      <td>SSp-ll</td>\n      <td>Primary somatosensory area, lower limb</td>\n    </tr>\n    <tr>\n      <td>SSp-n</td>\n      <td>Primary somatosensory area, nose</td>\n    </tr>\n    <tr>\n      <td>SSp-bfd</td>\n      <td>Primary somatosensory area, barrel field</td>\n    </tr>\n    <tr>\n      <td>SSp-tr</td>\n      <td>Primary somatosensory area, trunk</td>\n    </tr>\n    <tr>\n      <td>VISp</td>\n      <td>Primary visual area</td>\n    </tr>\n    <tr>\n      <td>VISa</td>\n      <td>Anterior visual area</td>\n    </tr>\n    <tr>\n      <td>VISam</td>\n      <td>Anteromedial visual area</td>\n    </tr>\n    <tr>\n      <td>VISpm</td>\n      <td>Posteromedial visual area</td>\n    </tr>\n    <tr>\n      <td>VISrl</td>\n      <td>Rostrolateral visual area</td>\n    </tr>\n    <tr>\n      <td>VISal</td>\n      <td>Anterolateral visual area</td>\n    </tr>\n    <tr>\n      <td>VISI</td>\n      <td>Lateral visual area</td>\n    </tr>\n    <tr>\n      <td>RSP</td>\n      <td>Retrosplenial area</td>\n    </tr>\n    <tr>\n      <td>AUD</td>\n      <td>Auditory areas</td>\n    </tr>\n    <tr>\n      <td>PTA</td>\n      <td>Parietal association area</td>\n    </tr>\n    <tr>\n      <td>HPF</td>\n      <td>Hippocampal formation</td>\n    </tr>\n    <tr>\n      <td>VTA</td>\n      <td>Ventral tegmental area</td>\n    </tr>\n  </tbody>\n</table>\n\n![Video 3.](https://cdn.elifesciences.org/articles/87691/elife-87691-video3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/87691/elife-87691-video4.mp4.jpg)\n\n![Video 5.](https://cdn.elifesciences.org/articles/87691/elife-87691-video5.mp4.jpg)\n\n## Discussion\n\nHow activities of individual neurons contribute to brain-wide population dynamics remains poorly understood (Brecht et al., 2004; Rancz et al., 2007; Houweling and Brecht, 2008; Packer et al., 2015). It is additionally challenging to study long-range connectivities (e.g. those between subcortical and cortical structures) given the extraordinary complexity of neuronal wiring between brain regions. Non-invasive methods such as fMRI have generated important connectivity models, such as the default mode network (DMN) model, which advanced our understanding of how distinct brain regions communicate with each other during different behavioral contexts (White et al., 2011; Gutierrez-Barragan et al., 2022). However, these methods typically lack the spatial and temporal resolution to understand the connectivity patterns of individual neurons. On the other hand, for more invasive techniques such as viral tracing, although they often provide detailed characterizations of the anatomical patterns between brain areas, the nature of the preparation for these techniques precludes gaining insights into the dynamic nature of the connectivity rules. In this study, we developed the Mesotrode that combined chronic tetrode recording with mesoscale Ca2+ imaging to characterize mesoscale connectivity patterns of individual neurons. We showed that the functional connectivity patterns of individual neurons are relatively stable in the same behavioral state, and neurons from different brain regions display distinct distributions of these patterns. We further showcased the utility of our procedure by recording from the facial motor nerve and found a distinct cortical activation associated with facial nerve activity. Additionally, Mesotrode provides a wide-field access window for optogenetic stimulations. We showed a causal link between PTA activity and facial movement in mice. These findings established that our multimodal recordings combining chronic electrophysiology, mesoscale imaging, optogenetics, and behavioral characterization can be widely applied to further our understanding of neuronal connectivity and behaviors.\n\n### Compared to other chronic recording setups\n\nOur work employs compact tetrode electrodes that permit simultaneous resolution of single units and mesoscale GCAMP activity. It is conceivable that improvements in spike sorting fidelity could be made by switching to more densely spaced silicon probes. While this is an obvious advantage, these probes do not have a compact footprint and would interfere with regional imaging. Our approach adds to the plethora of techniques previously described to characterize long-range functional connectivity by combining single-neuron activity recording and mesoscale cortical imaging. These techniques typically differ in how and where the individual neurons\u2019 activities are recorded. For instance, Barson et.al used two-photon imaging to record individual cortical neurons\u2019 activities, which allows differentiation of different neuronal types through genetic manipulation (Barson et al., 2018), but it has lower temporal resolution and is restricted to recording cortical neurons. Xiao et.al, Clancy et.al, Peters et.al, and Liu et.al all used either silicon probes or neuropixel probes to record large populations of cortical or subcortical neurons (Xiao et al., 2017; Clancy et al., 2019; Liu et al., 2021b; Peters et al., 2021), but it remains difficult to use these setups to track activities of the same neurons over days. In addition to these approaches, we can use our chronic tetrode implantation to track neuronal activities at multiple brain regions over long periods of time to better describe the dynamic nature of global neuronal affiliations; however, the number of neurons that can be recorded per tetrode is limited which does reduce our data acquisition throughput.\n\nCompared to most of the previously reported chronic tetrodes setups with the inclusion of a microdrive, our approach has the unique advantages that setting up the apparatus and implanting the tetrodes is a lot more straightforward, mini-connector enables group housing and it is compatible with overhead cameras which permits simultaneous optical interrogation of neuronal circuits (Battaglia et al., 2009; Nguyen et al., 2009; Voigts et al., 2013; Billard et al., 2018; Delcasso et al., 2018; Voigts and Harnett, 2020a). However, it does come with the price that the tetrode cannot be moved after it is implanted, which means that the implant would fail if the health of the neuron deteriorates too much over time. Albeit, since our goal is to record the activity of the same neurons, we deemed it a worthy tradeoff for our purpose. Future studies could include experiments that would take advantage of bilateral symmetry by placing high-resolution silicon probes in one hemisphere and then reading out mesoscale maps in the other.\n\n### Variability of spike-triggered average maps in different brain regions\n\nActivities of cortical pyramidal neurons are known to be coupled to local network activity; as such, STMs of these neurons often display activity motifs localized to the cortical regions they reside, indicating that their functional connections are mostly involved in local networks (Xiao et al., 2017; Clancy et al., 2019). On the other hand, subcortical neurons (i.e. thalamic neurons) can display more diverse and distal connectivity patterns with cortical networks that are less confined by their locations (Xiao et al., 2017). Here, we extended these characterizations to more subcortical regions (i.e. striatum, hippocampus, and midbrain), and found that these neurons, similar to thalamic neurons, generate functionally diverse STMs. This can be attributed to the diverse cell types within these structures (Phillips and Irvine, 1979; Cembrowski et al., 2016). Furthermore, by classifying these STMs, we found that the connectivity patterns of neurons in different subcortical structures are varied. For instance, STMs of midbrain neurons can be primarily categorized into 4 classes, with each class having distinct activity motifs, which is in contrast to the striatum neurons, the STMs of which are grouped into only two main classes. More interestingly, STMs of different subcortical regions display low levels of overlap, suggesting that neurons of different subcortical origins form their own distinct connectivity pattern to the cortex.\n\n### The spike-triggered average map associated with specific brain function\n\nThe single neuron defined functional maps (STMs) can reveal functional cortical architecture related to the activity of individual cortical and subcortical-cortical neurons (Xiao et al., 2017). The distinct STM patterns indicate that single neuron embedded large-scale subcortico-cortical networks may be associated with specific brain functions (Pessoa, 2014; Liu et al., 2021a; Amunts et al., 2022). To explore this possibility, for the first time, we simultaneously record the output spiking activity of the facial motor nucleus and wide-field calcium dynamics of the cortex, which enable us to investigate the cortico-brainstem motor pathways that directly control facial movements in mice. Interestingly, we found that facial nerve spike-triggered average map functionally associated with active facial movements, and the causal relationship can be tested by optogenetic stimulation or inhibition of the PTA area. Previous studies using anterograde virus tracing have revealed that the motor cortex sends few direct projections to the facial nucleus while the most prominent projections from the motor, somatosensory, and association cortex are polysynaptic, presumably through nuclei in the brainstem (Grinevich et al., 2005; Matyas et al., 2010; Rathelot et al., 2017). Studies in humans and monkeys have identified parietal-eye-field and reach-specific areas that involve voluntary control of eye or hand movement (Lynch, 1980; Andersen, 1989; Sakata et al., 1997; Chapman et al., 2002; Konen and Kastner, 2008; Archambault et al., 2009; Pouget, 2015; Rathelot et al., 2017). Our findings suggest that the PTA region is also involved in facial movements in mice, and supplement the current understanding of the functional connectivity between cortex and facial nucleus motor neurons.\n\n### Conclusion\n\nOur results demonstrated that our minimally invasive, flexible, low profile, low cost, chronically implanted Mesotrode can be readily applied to interrogating the functional connectivity between single neurons and large-scale cortical networks, and the causal relationship can be tested by optogenetic stimulation.\n\n## Materials and methods\n\n### Mice\n\nAnimal protocols (A13-0336-A22-0054 and A14-0266-A22-0258) were approved by the University of British Columbia Animal Care Committee and conformed to the Canadian Council on Animal Care and Use guidelines and animals were housed in a vivarium on a 12 h daylight cycle (7 AM lights on). Most experiments were performed toward the end of the mouse light cycle. Transgenic GCaMP6s mice (males, 2\u20134 months of age, weighing 20\u201330 g; n=19) were produced by crossing Emx1-cre (B6.129S2-Emx1tm1(cre)Krj/J, Jax #005628), CaMK2-tTA (B6.Cg-Tg(Camk2a-tTA)1Mmay/DboJ, Jax #007004) and TITL-GCaMP6s (Ai94;B6.Cg-Igs7tm94.1(tetO-GCaMP6s)Hze/J, Jax #024104) strain. The presence of GCaMP expression was determined by genotyping each animal before each surgical procedure with PCR amplification. These crossings are expected to produce a stable expression of the calcium indicator (Chen et al., 2013b) specifically within all excitatory neurons across all layers of the cortex (Vanni and Murphy, 2014). Channelrhodopsin-2 transgenic mice (Arenkiel et al., 2007) (n=6) were obtained from the Jackson Labs (line 18, stock 007612, strain B6.Cg-Tg(Thy1-COP4/EYFP)18Gfng/J). Neuronal activity was driven by optically activating inhibitory neurons targeted in VGAT-ChR2-YFP expressing mice (Zhao et al., 2011; n=3). No method of randomization was used since all mice belonged to the same sample group. Samples sizes were chosen based on previous studies using similar approaches (Mohajerani et al., 2013; Vanni and Murphy, 2014). Given the use of automated acquisition and analysis procedures, we did not employ blinding.\n\n### Tetrode fabrication\n\nPolyimide insulated, tungsten wire (40 cm long, diameter 25 \u03bcm, Stablohm 650, California Fine Wire, USA) was folded into four wires and clamped together with the modified alligator clip. The loop of wires was hung over the horizontal bar. The alligator clip was placed into the motorized stage. Eighty clockwise twists were applied and followed by forty counter clock-wise twists to the wire bundle over the course of approximately three minutes. After tetrode twisting was completed, the wires were fused together by heating from three different angles with a heat gun (420 \u00b0C or 790 \u00b0F), using medium-low flow. For each angle, begin 1\u20132 cm below where the wire bundle splits, the heat gun was held 2 cm away from the wire and moved periodically over the length of the wire for about 5 s. The tetrode was removed from the twisting apparatus by gently lifting the alligator clip to relieve tension on the tetrode, and cutting the tetrode near the alligator clip. At the other end, the loop was cut off such that there were four non-bonded strands of wire of equal length. The tetrode was then soldered to a miniature connector using a fine-tip soldering iron (Thermaltronics M8MF375 Micro Fine 0.25 mm).\n\n### Surgical procedures\n\nMice were anesthetized with isoflurane (4% for induction and 1.5% for maintenance in air). The eyes were covered with eye lubricant (Lacrilube; https://www.well.ca/) and body temperature was maintained at 37 \u00b0C with a heating pad with feedback regulation. Mice were then placed in a stereotaxic frame and received an injection of Lidocaine (0.1 ml, 0.2%) under the scalp. Mice also received a 0.5 ml subcutaneous injection of a saline solution containing buprenorphine (2 mg/ml), atropine (3 \u03bcg/ml), and glucose (20 mM). Respiration rate and response to toe pinch were checked every 10\u201315 min to maintain the surgical anesthetic plane. A skin flap extending over both hemispheres approximately 8 mm in diameter (3 mm anterior to bregma to the posterior end of the skull and down lateral to eye level) was cut and removed. Fascia or connective tissue is lightly scraped away from the skull and small (<1 mm diameter) holes are drilled through the skull, using a high-speed dental drill with a sterile bit, over the cortex. Tetrode was directed toward the center of the hole and placed in the target using a motorized micromanipulator (MP-225, Sutter Instrument Company). Miniature connectors (2x2 x 2 mm) are cemented to the skull (with dental adhesive) around the imaging window (the total weight is <1 gm). Ground and reference electrodes are fixed into place on the surface of the posterior skull.\n\nAfter tetrode implantation, the chronic transcranial window was implanted as previously described (Silasi et al., 2016). Briefly, the skin between the ears and the eyes was properly cleaned with Betadine dissolved in water and ethanol. The skin covering the occipital, parietal, and frontal bones was cut away. The fascia and any connective tissue on the skull surface were gently wiped off. C&B-Metabond transparent dental cement (Parkell, Edgewood NY, USA; Product: C&B Metabond) was prepared in a ceramic bowl and used to glue a head-fixing titanium bar to the cerebellar plate or a 4/40 stainless steel setscrew slightly angled posteriorly (~120\u00b0 relative to skull). With the bar or the setscrew in place, a thick layer of dental adhesive was applied to the skull. A coverglass (Marien-feld, Lauda-Konigshofen, Germany; Cat n: 0111520) previously cut to the size of the final cranial window (~8 mm diameter), was placed on top of the dental cement before it solidified, preventing the formation of bubbles. The cement remains transparent after it solidifies and the surface vasculature should be readily seen through the final result.\n\nFor facial nerve recordings, peripheral nerve activity was measured by fine wire recording directly from the nerves subserving the whisker. During surgery, mice will be anesthetized and positioned on a warming pad connected to a rectal probe and temperature maintained at 37 \u00b0C. A skin incision was made, exposing a small part of the buccal branch of the left facial nerve. Magnification of the surgical field with a dissecting microscope allowed a careful dissection of a nerve branch with minimum disruption of the tissues and blood supply surrounding the nerve. The appropriate site of exposure was determined by using two projection lines: a vertical line running downward, posterior from the outer corner of the eye, and a horizontal line running in caudal direction, starting at the whisker E-row. Then two insulated fine wires (about 25 \u00b5m tips) were hooked and placed around the nerve separated about 2 mm from one another. The insulation at the ends of the wires was removed and a knot was made on each wire to prevent it from slipping. The opposite ends of each wire were soldered to a mini connector attached by dental cement to the skull. Finally, 6\u20130 silk sutures were used to close the skin incisions.\n\n### Recovery and post-operative monitoring\n\nAt the end of the surgical procedures, mice received a subcutaneous injection of saline (0.5 ml) with 20 mM of glucose and were allowed to recover in their home cages with an overhead heat lamp. The activity level of mice that underwent the procedure was monitored hourly for the first 4 hr and every 4\u20138 hr thereafter. Mice are allowed to recover for 7 days from the window implantation before performing electrophysiology recording.\n\n### Electrophysiology data acquisition\n\nFor Electrophysiology recordings, a custom adapter was connected to the miniature connector. The tetrode signals were amplified using a 16-channel data acquisition system (20 kHz, USB-ME16-FAI-System, Multi-Channel Systems) and recorded for at least 30 min every day.\n\nRaw extracellular traces were imported into Spike2 (Cambridge Electronic Design, Cambridge, UK) or SpikeSorter software (Swindale and Spacek, 2014; Swindale et al., 2021) for spike sorting and analysis. Briefly, data were high pass-filtered at 1 kHz, and excitatory spikes were detected using a threshold of 4.5 times the median of the standard deviation over 0.675. Sorting was carried out by an automated method previously described (Swindale and Spacek, 2014) and followed by manual visual inspection of units.\n\n### Wide-field calcium imaging\n\nAll mice were habituated for 1 week prior to data collection. Awake mice were head-fixed and placed on a wheel in a dark imaging chamber for data collection. A behavioral camera (Raspberry Pi camera) and an infrared light were placed inside the imaging chamber to monitor active behaviors, such as running or whisking. A Pantera 1M60 CCD camera (Dalsa) was equipped with two front-to-front lenses (50 mm, f \u00bc 1.435 mm, f \u00bc 2; Nikon Nikkor) and a bandpass emission filter (525/36 nm, Chroma). The 12-bit images were captured at a frame rate of 120 Hz (exposure time of 7ms) with 8\u00d78 on-chip spatial binning using EPIX XCAP v3.8 imaging software. The cortex was sequentially illuminated with alternating blue and green LEDs (Thorlabs). Blue light (473 nm) with a bandpass filter (467\u2013499 nm) was used to excite calcium indicators and green light (525 nm) with a bandpass filter (525/50 nm) was used to observe changes in cerebral blood volume. The blue and green LEDs were sequentially activated and synchronized to the start of each frame\u2019s exposure period with transistor-transistor logic such that each frame collected only fluorescence or reflectance signals at 60 Hz each. This LED strobe frequency of 60 Hz exceeded the critical flicker fusion frequency for mice, which marks the highest temporal frequency that an observer can resolve flicker before it becomes indistinguishable from constant light and was likely imperceptible to the mice. Reflectance signals were subtracted from fluorescence signals to mitigate the contribution of hemodynamics to fluorescence signals.\n\n### Optogenetic stimulation protocols\n\nInhibitory neurons in the cortex were optogenetically manipulated separately in VGAT-ChR2 mice. A 473 nm laser (Crystal Laser BCL-473\u2013050, Reno, NV, USA) was connected to a fiber optic patch cable (0.22 NA, 200 \u00b5m gauge; Thorlabs FG200UCC, USA). During the experiment, 1 mW (measured from the end of the cable) of optical stimulation was delivered for an overall time of 10 s. For automated Thy1-ChR2-based facial motor mapping, we chose a relatively collimated 473 nm laser targeted through a simple microscope. The laser was moved in random order to each of the predefined stimulation locations (8x8 grid) and delivered a flash of laser light (10ms, 2.0 mW) to each point while collecting facial motor nerve response.\n\n### Spike-triggered average maps (STM) Clustering\n\nWe employed an unsupervised clustering algorithm, PhenoGraph (Levine et al., 2015), to categorize STMs. The graph was built in 2 steps: (1) it finds k nearest neighbors for N input vectors (4096 dimensions for 64x64 STMs) using Euclidean distance, resulting in N sets of k nearest neighbors, (2) a weighted graph is built where the edge weight between pairs of nodes depends on the number of neighbors they share. We then perform Louvain community detection (Blondel et al., 2008) on this graph to partition the graph that maximizes modularity. This algorithm only requires one input parameter which is k, the number of nearest neighbors to be found for each input vector, and the resulting number of clusters (10) is relatively insensitive to the k chosen over the range of typically chosen values. We also performed k-means clustering using the same input and compared clustering effectiveness using the Silhouette score and found that 10 clusters were optimal. We then performed a cluster identity refinement step, where an individual STM whose similarity (Pearson correlation value) with the cluster average STM of the assigned cluster was lower than 0.3 was manually reassigned if its similarity with group average STMs of any other clusters was higher than 0.3; otherwise, that STM was excluded. A total of 94 out of 1146 STMs (8.2%) were excluded.\n\n### Histology\n\nAt the end of each experiment, animals were killed with an intraperitoneal injection of pentobarbital (24 mg). Mice were transcardially perfused with PBS followed by chilled 4% PFA in PBS. Coronal or sagittal brain sections (50 \u00b5m thickness) were cut on a vibratome (Leica VT1000S). Images of brain tissues with counter-stained DAPI were acquired using confocal microscopy (Zeiss LSM510) to reveal the electrode track and help identify the approximate cortical/subcortical location of recorded cells.\n\n### Statistical analysis\n\nStatistical analyses were performed using GraphPad Prism, Version 9. Statistical tests and results are reported in the figure legends. More than two groups were compared using one-way ANOVA followed by Dunnett\u2019s test comparing experimental flies to each control. All graphs represent mean \u00b1 SEM. Sample sizes are listed in the figure legends. No explicit power analyses were used to determine sample sizes prior to experimentation. Minimum sample sizes were decided prior to experimentation based on previous experience or pilot experiments revealing how many samples are typically sufficient to detect reasonable effect sizes.\n",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Inna Slutsky\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87691.2.sa0](https://doi.org/10.7554/eLife.87691.2.sa0)\n\nThis valuable study combines chronic widefield calcium imaging of dorsal cortex activity at the mesoscale level with electrical recording of single neurons in specific cortical and subcortical locations. This work provides compelling evidence for recording neuronal activity at multiple temporal and spatial scales by combination of optical and electrophysiological methods. This work will be of broad interest to system neuroscientists studying neural circuits.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87691.2.sa1](https://doi.org/10.7554/eLife.87691.2.sa1)\n\nThe paper by Dongsheng Xiao, Yuhao Yan and Timothy H Murphy presents a timely approach to record neuronal activity at multiple temporal and spatial scales. Such approaches are at the forefront of system neuroscience and a few examples include, among others, fMRI alongside electrophysiology (Logothetis et al, 2021. Nature) or widefield calcium imaging (Lake et al, 2020. Nat Meth) , or functional ultrasound imaging and multi unit recording (Claron et al, 2023 Cell Reports), The method presented here combines \"low resolution\" (i.e. cortical regions) widefield calcium imaging across most of the dorsal portions of the murine cortex combined with electrical recording of single neurons in specific cortical and subcortical locations (as a matter of fact, this later components can be used everywhere in the murine brain).\n\nThe method presented here is straightforward to implement and very well documented. Examples of novel insights that this approach can generate are well presented and demonstrate the strength of the presented approach, some aspects of the analysis require clarification.\n\nFor example, the author reveal Spike-Triggered average cortical activation Maps (STMs) linked to the activity of single neurons (Figs 4 and 5) This allows to directly asses the functional connectivity between cortical and sub-cortical areas. It nevertheless unclear what is the stability of the established relationships. The nature of the \"recordings\" in Fig 4. is unclear. It looks like these are imaging sessions on the same day, the length of these recordings as well as the interval between them is not stated. It will be fundamental to build a metric to compare STMs variability across sessions/recordings/days; a root-mean-square from an average map across all recordings could provide a starting point.\n\nAlso with respect to the STMs analysis, the data-driven choice of 10 clusters might need a bit more explorations. While the silhouette clustering accuracy peaks at 10 (Fig 5A), this metrics comes without a confidence intervals making it difficult to know if a difference of less than 10% (i.e. 11 or 13 clusters) should be deemed different. Maybe a bootstrapping approach could be used here to build such confidence intervals. Another approach to reach the number of cluster to use could be based on \"consensus\" between different partitioning algorithms (e.g. Strehl, A. & Ghosh, J. itions. J. Mach. Learn. Res. 3, 583-617 [2001]). A much stronger argument should be provided to use the 0.3 correlation cutoff value which seems to be arbitrarily low. The main point here is that the authors should show that their conclusions hold within a range of parameter values (number of clusters and correlation threshold).\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87691.2.sa2](https://doi.org/10.7554/eLife.87691.2.sa2)\n\nThe article presents 'Mesotrode,' a technique that integrates chronic widefield calcium imaging and electrophysiology recordings using tetrodes in head-fixed mice. This approach allows recording the activity of a few single neurons in multiple cortical/subcortical structures, in which the tetrodes are implanted, in combination with widefield imaging of dorsal cortex activity on the mesoscale level, albeit without cellular resolution. The authors claim that Mesotrode can be used to sample different combinations of cortico-subcortical networks over prolonged periods of time, up to 60 days post-implantation. The results demonstrate that the activity of neurons recorded from distinct cortical and subcortical structures are coupled to diverse but segregated cortical functional maps, suggesting that neurons of different origins participate in distinct cortico-subcortical pathways. The study also extends the capability of Mesotrode by conducting electrophysiological recordings from the facial motor nerve. It demonstrates that facial nerve spiking is functionally associated with several cortical areas( PTA, RSP, and M2), and optogenetic inhibition of the PTA area significantly reduced the facial movement of the mice.\n\nStudying the relationship between widefield cortical activity patterns and the activity of individual neurons in cortical and subcortical areas is very important, and Murphy's lab has been a pioneer in the field. However, the choice of low-yield recording methods (tetrode) instead of more high-yield recording techniques, such as silicon probes, makes the approach presented in this study somewhat less appealing. Also, the authors claim that a tetrode-based approach can allow chronic recordings of single neural activity over days - a topic that is very controversial. In terms of results, I was under the impression that most of the conclusions presented in the bulk of the paper ( Figures 1-5) are very similar to what previous work from Murphy's lab and other labs has shown using acute preparation. In this respect, the paper can benefit from a more in-depth analysis of the heterogeneity of single-neuron functional coupling. The last part of the facial nerve recording is interesting (Figure 6), but I think it can be integrated better into the rest of the paper.\n",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "db9c6b5e-621a-494b-b0df-1c5df538e3c1",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C1",
+      "claim": "Mesotrode integrates chronic wide-field mesoscale cortical imaging and compact multi-site cortical/subcortical cellular electrophysiology in head-fixed mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present Mesotrode that integrates chronic wide-field mesoscale cortical imaging and compact multi-site cortical/subcortical cellular electrophysiology in head-fixed mice that undergo self-initiated running or orofacial movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a description of the developed technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "ffe113ae-6eee-4450-ab4a-c575eabcf1f0",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C2",
+      "claim": "Mesotrode can characterize chronic single-neuron-related functional connectivity maps for up to 60 days post-implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we were able to characterize chronic single-neuron-related functional connectivity maps for up to 60 days post-implantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data shown in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "1dc5f3a5-7fea-4c14-97e4-e98e3dd52977",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C3",
+      "claim": "Neurons recorded from distinct subcortical structures display diverse but segregated cortical maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons recorded from distinct subcortical structures display diverse but segregated cortical maps, suggesting that neurons of different origins participate in distinct cortico-subcortical pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by clustering analysis in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "b12a3a66-ff22-4dd3-b7bb-498bd47404e4",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C4",
+      "claim": "Facial nerve spiking is functionally associated with the PTA, RSP, and M2 network.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended the capability of Mesotrode by implanting the micro-electrode at the facial motor nerve and found that facial nerve spiking is functionally associated with the PTA, RSP, and M2 network",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by spike-triggered average maps in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "1da42fc4-aa08-4a7a-b07a-a4aca69ac1b7",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C5",
+      "claim": "Optogenetic inhibition of the PTA area significantly reduced the facial movement of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "optogenetic inhibition of the PTA area significantly reduced the facial movement of the mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated experimentally in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "a16692ec-c1cb-46c4-ae8c-4040df59a7bb",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C6",
+      "claim": "Large-scale cortical network activity is dynamically sculpted by local or long-range inputs from individual neurons in various cortical or subcortical structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mammalian brain, large-scale cortical network activity is dynamically sculpted by local or long-range inputs from individual neurons in various cortical or subcortical structures (Koch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Koch et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "3d7a0ef2-2006-48e1-a29b-8ed4e4cc9edf",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C7",
+      "claim": "Activities of single neurons are functionally coupled to those of local microcircuits or the global cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging studies using in vivo electrophysiological and imaging techniques have revealed that activities of single neurons are functionally coupled to those of local microcircuits or the global cortical networks, and such connectivity is dynamically regulated depending on the behavioral state of the animal (Barson et al., 2018; Chen et al., 2013a; Xiao et al., 2017; Clancy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "a20a393c-687c-45b8-80b2-a8d60c5566d0",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C8",
+      "claim": "Chronic extracellular recordings in rodent brains were achieved most widely using bundled microwires called tetrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, chronic extracellular recordings in rodent brains were achieved most widely using bundled microwires called tetrodes, and more recently extended to the use of high-throughput recording devices such as silicon probes including Neuropixels (Bragin et al., 2000; Nguyen et al., 2009; Vandecasteele et al., 2012; Voigts et al., 2013; Delcasso et al., 2018; Juavinett et al., 2019; Steinmetz et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "4bd5dce3-fb5f-485b-b8ed-a024fb6d49cc",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C9",
+      "claim": "Conventional chronic tetrode recording setups include a microdrive that provides axial control over the positioning of the electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of conventional chronic tetrode recording setups, a common feature is the inclusion of a microdrive that provides axial control over the positioning of the electrodes which allows the electrode position to be adjusted for better recording qualities throughout the experimental periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge about conventional tetrode setups.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "6388cfa5-4fe0-4242-ba9a-c1e25141b5b6",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C10",
+      "claim": "The microdrive in conventional tetrode setups hinders simultaneous wide-field optical imaging of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this microdrive hinders simultaneous wide-field optical imaging of the cortex, making it difficult to investigate the correlation between subcortical single-unit activation and cortical network activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of conventional approaches that motivates the development of Mesotrode.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "73ea3960-fdb4-49b9-b611-6f20b0a4f690",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C11",
+      "claim": "GCaMP6 is a genetically encoded Ca2+ indicator widely used to optically record suprathreshold neuronal activation due to its high sensitivity and optimal signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain high-resolution wide-field imaging of mouse brain activity, we chose to utilize GCaMP6, a genetically encoded Ca2+ indicator (GECI) widely used to optically record suprathreshold neuronal activation due to its high sensitivity and optimal signal-to-noise ratio (Chen et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chen et al., 2013b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "d5b531ec-1bf6-440f-9481-2cb4d7830050",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C12",
+      "claim": "GECIs can stably report neuronal activity over several months.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been shown that GECIs can stably report neuronal activity over several months (Huber et al., 2012; Margolis et al., 2012; Silasi et al., 2016), making them ideal for chronic studies of cortical network dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "ee3fb7f6-1b28-48b0-8bca-ad885cce8860",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C13",
+      "claim": "Neurons from various subcortical structures, including the hippocampus, thalamus, striatum, and other midbrain areas, display distinct functional connectivity patterns with the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neurons from various subcortical structures, including the hippocampus, thalamus, striatum, and other midbrain areas, display distinct functional connectivity patterns with the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "fd61395b-00c6-46dc-83ae-a9639f0fb5c2",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C14",
+      "claim": "The spike-triggered maps (STMs) of recorded neurons can be stable for up to two months.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, we show that the spike-triggered maps (STMs) of recorded neurons can be stable for up to two months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and demonstrated in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "994f3236-db80-4c82-ae5e-c180c19a772e",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C15",
+      "claim": "Tetrodes were fabricated from tungsten wires which were then soldered to a miniature connector that was cemented onto the back of the mouse skull during surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, we fabricated tetrodes from tungsten wires which were then soldered to a miniature connector that was cemented onto the back of the mouse skull during surgery (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fabrication procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "38cd8f61-bad3-4ca0-aabb-bb8ff24b3e23",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C16",
+      "claim": "The single tetrode was stiff enough to be straightly inserted into the deep brain areas through a small burr hole (<1 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "The single tetrode was stiff enough to be straightly inserted into the deep brain areas through a small burr hole (<1 mm; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "ae56406b-1efc-4775-9b4e-0aa1a9192041",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C17",
+      "claim": "Mice were group-housed after the surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "As the miniature connectors are low-profile, mice were group-housed after the surgery (Figure 1C), and we did not observe significant damage to the window or the connectors after long-term monitoring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "43c3b50f-6a48-4365-afea-ead9d0f9d9b2",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C18",
+      "claim": "The tetrodes can be flexibly implanted in almost any brain structure of interest, either cortical or subcortical.",
+      "claim_type": "EXPLICIT",
+      "source": "The tetrodes can be flexibly implanted in almost any brain structure of interest, either cortical or subcortical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of the technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "c0eee7d1-b343-4d62-9caf-f76c2dba7ca3",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C19",
+      "claim": "High-quality recordings were successfully obtained in the mouse cortex, hippocampus, thalamus, striatum, and midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "We have successfully obtained high-quality recordings in the mouse cortex, hippocampus, thalamus, striatum, and midbrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of the technique.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "fcc25e76-c64a-4224-9c37-e1294cde7dba",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C20",
+      "claim": "The recording site of each tetrode is confirmed using post-hoc histological analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The recording site of each tetrode is confirmed using post-hoc histological analysis (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "073ad5a7-bd19-4b2f-a4cc-3c35b25f583c",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C21",
+      "claim": "The single unit activity was relatively stable during 1 week, 2 weeks, and 2 months of recordings after implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the single unit activity was relatively stable during 1 week, 2 weeks, and 2 months of recordings after implantation (Figure 1F and G), which is consistent with previously reported chronic tetrode recordings in mice (Tolias et al., 2007; Hong and Lieber, 2019; Kim et al., 2020; Voigts et al., 2020b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text, shown in Figure 1F and G, and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "65201226-20dd-4d61-9013-dcd3e4a71b88",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C22",
+      "claim": "A total of 29 tetrodes were implanted in the midbrain, hippocampus, thalamus, striatum, and cortex of 14 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We implanted a total of 29 tetrodes in the midbrain, hippocampus, thalamus, striatum, and cortex of 14 mice, and recorded the activity of 110 neurons with simultaneous mesoscale cortical imaging for up to 2 months after implantation (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "643cbe53-58d8-43cf-8cc5-ccad24323346",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C23",
+      "claim": "110 neurons were recorded with simultaneous mesoscale cortical imaging for up to 2 months after implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "We implanted a total of 29 tetrodes in the midbrain, hippocampus, thalamus, striatum, and cortex of 14 mice, and recorded the activity of 110 neurons with simultaneous mesoscale cortical imaging for up to 2 months after implantation (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental sample size and duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "a3cbbdc7-c821-4cdb-ad8a-ea48c14705a5",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C24",
+      "claim": "On average, 3\u20135 neurons per tetrode were obtained, and this yield was consistent across regions.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, we obtained 3\u20135 neurons per tetrode implanted, and this yield was consistent across regions (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "654ff1a5-38a5-4736-b62f-93283e6227e7",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C25",
+      "claim": "The inter-spike interval (ISI) of neurons recorded from most brain regions ranged between 0.2 and 0.7 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-spike interval (ISI) of neurons recorded from most brain regions ranged between 0.2 and 0.7 s, except for neurons of the striatum, which fires significantly less compared to neurons in other brain regions (Figure 2D, p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2D with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "82c55527-d93f-434e-87fc-3b6dbd6902fb",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C26",
+      "claim": "Neurons of the striatum fire significantly less compared to neurons in other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-spike interval (ISI) of neurons recorded from most brain regions ranged between 0.2 and 0.7 s, except for neurons of the striatum, which fires significantly less compared to neurons in other brain regions (Figure 2D, p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2D with statistical significance (p<0.05).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "542588fd-2178-4597-9719-70b8b98bc055",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C27",
+      "claim": "The coefficient of variation (CV) of ISI was similar across brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The coefficient of variation (CV) of ISI, a metric that indicates the consistency of the firing rate, was similar across brain regions (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "2d0f486f-77e7-4a82-a318-03f878d38e4a",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C28",
+      "claim": "Spike-triggered average mapping (STM) has been previously used to investigate functional connectivity between single spiking neurons and cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike-triggered average mapping (STM) has been previously used to investigate functional connectivity between single spiking neurons and cortical networks (Barson et al., 2018; Xiao et al., 2017; Clancy et al., 2019; Liu et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "1231828f-37b2-4912-acd6-4962bd99215d",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C29",
+      "claim": "Previous STM studies have only been achieved using acute preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this has only been achieved using acute preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "52d0e28e-467e-4e4f-8136-7cca67020f77",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C30",
+      "claim": "Green reflectance signals were used to correct hemodynamic artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Green reflectance signals, which were recorded with the same frequency as the GCaMP6 signal, were used to correct hemodynamic artifacts (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological approach shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "9199063f-2c54-4622-8053-870beeb4d13f",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C31",
+      "claim": "Single neuron defined functional maps were stable across recording sessions and days.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that single neuron defined functional maps were stable across recording sessions and days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding and demonstrated in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "f45af68e-cafa-4244-83bb-ecaa167a29a4",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C32",
+      "claim": "The STM of a hippocampus neuron was associated with the RSP, BCS, and M2 region for 10 recording sessions on different days.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the STM of a hippocampus neuron was associated with the RSP, BCS, and M2 region for 10 recording sessions on different days (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "946db1a4-acb0-49ee-949a-91490f52e063",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C33",
+      "claim": "Mesonet is a machine-learning based toolbox for parcellating brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "To better visualize the stability of STMs across recording, we used Mesonet, a machine-learning based toolbox for parcellating brain regions, to accurately align our mesoscale images to a common brain atlas (Xiao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a tool used in the analysis, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "5135485a-6fda-4934-9eeb-442e1bddf413",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C34",
+      "claim": "The STMs of a midbrain neuron were relatively stable over 2 months.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the STMs of a midbrain neuron were relatively stable over 2 months (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "0a07b442-b5d5-4d38-9b3b-cc9913a5d448",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C35",
+      "claim": "The spiking activity of a midbrain neuron on different days was highly correlated with the lower limb, upper limb, and trunk sensorimotor areas on both hemispheres of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The spiking activity of the neuron on different days was highly correlated with the lower limb, upper limb, and trunk sensorimotor areas on both hemispheres of the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "7d04030c-aab9-4839-af6c-8055676c0282",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C36",
+      "claim": "The instantaneous firing rate and patterns of a midbrain neuron were highly correlated with the paw movement of the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In this example, we show that the instantaneous firing rate and patterns of this midbrain neuron were highly correlated with the paw movement of the mouse, consistent with our finding that this neuron is functionally associated with the limb sensorimotor areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "ac9d190a-94a0-4d21-b7d3-1d19f3138446",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C37",
+      "claim": "A total of 1146 STMs of 110 neurons recorded during multiple sessions were included in the clustering analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we included 1146 STMs of 110 neurons recorded during multiple sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used for clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "12053efa-e5f9-411c-984b-90ac0a32398b",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C38",
+      "claim": "Phenograph clustering resulted in 10 clusters with each cluster representing a distinct STM pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in 10 clusters with each cluster representing a distinct STM pattern evidenced by their within-cluster averaged map (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the result of the clustering analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "cec6592d-7a68-491c-b2d1-db301ce1c7fb",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C39",
+      "claim": "94 out of 1146 STMs were excluded from the clustering analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Un-matched STMs that were below the similarity threshold (Pearson's correlation <0.3) compared to any of the 10 cluster average maps were excluded (94 out of 1146 STMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "4a9cde5b-9d7a-4f8b-af05-3a1c9e9e1ac4",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C40",
+      "claim": "Individual STMs within the clusters showed high similarity to the cluster average maps.",
+      "claim_type": "EXPLICIT",
+      "source": "For all clusters, individual STMs within the clusters showed high similarity to the cluster average maps (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "b2a114af-75b7-404c-944c-431c0fac1f53",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C41",
+      "claim": "K-means clustering with Silhouette score confirmed that 10 clusters are most appropriate.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to validate the optimal number of clusters for partitioning our dataset, we evaluated the clustering effectiveness of a varied number of clusters when applying K-means clustering algorithm using Silhouette score (Rousseeuw, 1987) and confirmed that 10 clusters are most appropriate (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a validation analysis shown in Figure 5C, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "bfecaec1-1e3a-4ee0-bdf1-88606b8bfde4",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C42",
+      "claim": "STMs of cortical neurons were primarily assigned to clusters #1\u20133 and #5\u20137, corresponding to motor, barrel, and primary somatosensory cortex activation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, STMs of cortical neurons were primarily assigned to clusters #1\u20133 and #5\u20137, corresponding to motor, barrel, and primary somatosensory cortex activation patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "5c547363-0d52-4778-8f89-96ccd4c828cf",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C43",
+      "claim": "The functional connectivity patterns of cortical neurons were localized to cortical areas surrounding the recorded neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "These activation areas also matched the locations of the recorded cortical neurons (e.g. motor cortical neurons showed motor area activated STMs), suggesting that the functional connectivity patterns of cortical neurons were localized to cortical areas surrounding the recorded neuron, which is consistent with previous reports (Xiao et al., 2017; Clancy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "6e123816-ed5e-4eef-a8cc-e924b88e333d",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C44",
+      "claim": "59.6% of all hippocampal neuron STMs primarily displayed STMs with retrosplenial cortex activation (cluster#10).",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal neurons primarily displayed STMs with retrosplenial cortex activation (cluster#10, 59.6% of all hippocampal neuron STMs), reaffirming the dense functional connectivity between these two regions (Karimi Abadchi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "ce75600f-a234-4252-afb9-cdaec610e0d7",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C45",
+      "claim": "47.7% of striatal neuron STMs showed a global activation except for the body (limb and trunk) somatosensory regions (cluster#4).",
+      "claim_type": "EXPLICIT",
+      "source": "STMs of striatal neurons were dominated by two opposing patterns, where 47.7% of them showed a global activation except for the body (limb and trunk) somatosensory regions (cluster#4) and 28.8% of them showed only activation in the body sensory regions (cluster#9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "4a1898a1-27ec-4a94-95c9-b034d505a684",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C46",
+      "claim": "28.8% of striatal neuron STMs showed only activation in the body sensory regions (cluster#9).",
+      "claim_type": "EXPLICIT",
+      "source": "STMs of striatal neurons were dominated by two opposing patterns, where 47.7% of them showed a global activation except for the body (limb and trunk) somatosensory regions (cluster#4) and 28.8% of them showed only activation in the body sensory regions (cluster#9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "28b4acf1-8beb-41bc-9d77-8ce7f08907e2",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C47",
+      "claim": "Thalamic neurons exhibited diverse STM patterns with the primary activated regions in lateral anterior cortical regions and medial cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thalamic neurons exhibited diverse STM patterns with the primary activated regions in lateral anterior cortical regions (cluster#5, 5.6%, cluster#6, 23.3%, cluster#7 26.3% of all thalamic STMs) and medial cortical regions (cluster#8, 6.5%, cluster#9, 11.6%, cluster#10, 9.9% of all thalamic STMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "8415f5e6-fb6c-485c-8056-12c42469c5dc",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C48",
+      "claim": "Thalamic neurons had diverse functional connectivity patterns in relation to the dorsal cortex, consistent with previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that thalamic neurons had diverse functional connectivity patterns in relation to the dorsal cortex, consistent with previous studies (Xiao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the findings and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "d60ddfbd-7ea8-4e73-988f-2959870bc447",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C49",
+      "claim": "44.6% of midbrain neuron STMs were most assigned to cluster#8 with medial frontal and somatosensory cortex activation.",
+      "claim_type": "EXPLICIT",
+      "source": "STMs of midbrain neurons were most assigned to cluster#8 with medial frontal and somatosensory cortex activation (cluster#8, 44.6% of all midbrain STMs), but also included functional connectivity patterns with various other cortical regions (cluster#6, 10.5%, cluster#9, 12.6%, cluster#10, 11.2% of all midbrain STMs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "178d3c42-22c2-46c1-a39a-510a24dfacac",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C50",
+      "claim": "Neurons of different subcortical origins sometimes have overlapping STMs (e.g. cluster#9, and #10 exhibited by neurons from all subcortical regions).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that neurons of different subcortical origins sometimes have overlapping STMs (e.g. cluster#9, and #10 exhibited by neurons from all subcortical regions), which suggests that they may be involved in the same subcortico-cortical functional pathway (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "fa14425e-c817-4122-80ab-7ee4c9616062",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C51",
+      "claim": "Micro-wires were implanted on the facial motor nerve to record the spiking activity of the axonal projections from the facial motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we implanted micro-wires on the facial motor nerve to record the spiking activity of the axonal projections from the facial motor neurons (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "a0f59b7d-be88-4731-a052-bb0f49359780",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C52",
+      "claim": "A distinct cortical pattern, activation in RSP, M2, and PTA areas, was associated with facial motor nerve spiking activity in awake mice showing spontaneous movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found a distinct cortical pattern, activation in RSP, M2, and PTA areas (Table 1), associated with facial motor nerve spiking activity (Figure 6C, D and E, Figure 6\u2014figure supplement 1, Video 3) in awake mice showing spontaneous movements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding and shown in Figure 6C, D, E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "60444464-ca54-45e3-ad7b-ba290f52cd20",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C53",
+      "claim": "A broad area of the dorsal cortex, including the PTA region, could evoke facial motor nerve spiking activity when optogenetically stimulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using automated light-based mapping technology (Ayling et al., 2009), we found a broad area of the dorsal cortex, including the PTA region could evoke facial motor nerve spiking activity when optogenetically stimulated (Figure 6F, G and H, Figure 6\u2014figure supplements 2\u20137, Video 4) within Thy1-ChR2 mice (n=6 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding and shown in Figure 6F, G, H and supplementary figures, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "85f9fd1b-5891-4dad-84d2-147219cab50c",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C54",
+      "claim": "Inhibiting the PTA not only stopped the PTA neurons from firing but also prevented the facial movements of mice when the blue light stimulation was on.",
+      "claim_type": "EXPLICIT",
+      "source": "Echoing our previous finding, inhibiting the PTA not only stopped the PTA neurons from firing but also prevented the facial movements of these mice when the blue light stimulation was on (Figure 7, Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding and shown in Figure 7 and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "6b89b90f-10f2-48ea-9623-dc7d478a2032",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C55",
+      "claim": "Neuron firing in M1 and the barrel cortex (BCS) was not decreased by PTA inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "To eliminate the possibility that this observation is due to indirect inhibition of other brain areas, we simultaneously recorded neuronal activities in M1 and the barrel cortex (BCS). We confirmed that the neuron firing in these brain areas was not decreased by PTA inhibition (Figure 7A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a control experiment shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "848579f4-9cf8-455b-910c-72194568074e",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C56",
+      "claim": "A 'rebound effect', a sudden increase in PTA neuron firing and facial movement, occurred right after the stimulation is turned off.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, we saw a 'rebound effect', a sudden increase in PTA neuron firing and facial movement, right after the stimulation is turned off (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding and shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "b532b753-24f9-4af7-a6a2-8567bda3fa45",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C57",
+      "claim": "The 'off response' supports the causal relationships between PTA and facial movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'off response' supports the causal relationships between PTA and facial movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the rebound effect.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "1a294f5d-26f0-4ab6-8394-750c567f6d94",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C58",
+      "claim": "The findings are consistent with previous reports that the PTA is involved in controlling active movements.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the previous report that the PTA is involved in controlling active movements (Chapman et al., 2002; Cohen and Andersen, 2002; Rathelot et al., 2017; Auffret et al., 2018; Lyamzin and Benucci, 2019; Lee et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to previous work and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "e473650c-cb94-47d0-8926-45a918107d43",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C59",
+      "claim": "Activities of cortical pyramidal neurons are known to be coupled to local network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Activities of cortical pyramidal neurons are known to be coupled to local network activity; as such, STMs of these neurons often display activity motifs localized to the cortical regions they reside, indicating that their functional connections are mostly involved in local networks (Xiao et al., 2017; Clancy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "f5216e7f-1221-479c-ae1d-784a7fa71e88",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C60",
+      "claim": "Subcortical neurons (i.e. thalamic neurons) can display more diverse and distal connectivity patterns with cortical networks that are less confined by their locations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, subcortical neurons (i.e. thalamic neurons) can display more diverse and distal connectivity patterns with cortical networks that are less confined by their locations (Xiao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "3a8882ec-26d9-43e6-a77d-417682173fb4",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C61",
+      "claim": "The connectivity patterns of neurons in different subcortical structures are varied.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by classifying these STMs, we found that the connectivity patterns of neurons in different subcortical structures are varied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "af93c3bf-e910-4321-afb6-93798446b590",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C62",
+      "claim": "STMs of midbrain neurons can be primarily categorized into 4 classes, with each class having distinct activity motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, STMs of midbrain neurons can be primarily categorized into 4 classes, with each class having distinct activity motifs, which is in contrast to the striatum neurons, the STMs of which are grouped into only two main classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "ff994782-3244-4459-9cc9-16cd1e59964c",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C63",
+      "claim": "STMs of striatum neurons are grouped into only two main classes.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, STMs of midbrain neurons can be primarily categorized into 4 classes, with each class having distinct activity motifs, which is in contrast to the striatum neurons, the STMs of which are grouped into only two main classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "b006f0fa-6cb8-4662-999d-c7d0295d0918",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C64",
+      "claim": "STMs of different subcortical regions display low levels of overlap, suggesting that neurons of different subcortical origins form their own distinct connectivity pattern to the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, STMs of different subcortical regions display low levels of overlap, suggesting that neurons of different subcortical origins form their own distinct connectivity pattern to the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding and interpretation from the clustering analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "f0424984-8e47-4f5a-90f3-ac522b2f59f8",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C65",
+      "claim": "The single neuron defined functional maps (STMs) can reveal functional cortical architecture related to the activity of individual cortical and subcortical-cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The single neuron defined functional maps (STMs) can reveal functional cortical architecture related to the activity of individual cortical and subcortical-cortical neurons (Xiao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "89419431-cf66-4123-ac55-b0672d74fc52",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C66",
+      "claim": "The distinct STM patterns indicate that single neuron embedded large-scale subcortico-cortical networks may be associated with specific brain functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The distinct STM patterns indicate that single neuron embedded large-scale subcortico-cortical networks may be associated with specific brain functions (Pessoa, 2014; Liu et al., 2021a; Amunts et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "ee1e5249-788c-42c4-83e3-592fb95f119c",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C67",
+      "claim": "Previous studies using anterograde virus tracing have revealed that the motor cortex sends few direct projections to the facial nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using anterograde virus tracing have revealed that the motor cortex sends few direct projections to the facial nucleus while the most prominent projections from the motor, somatosensory, and association cortex are polysynaptic, presumably through nuclei in the brainstem (Grinevich et al., 2005; Matyas et al., 2010; Rathelot et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "0df4d70b-0242-4520-abcf-5b4ce504bc6c",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C68",
+      "claim": "The most prominent projections from the motor, somatosensory, and association cortex to the facial nucleus are polysynaptic, presumably through nuclei in the brainstem.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using anterograde virus tracing have revealed that the motor cortex sends few direct projections to the facial nucleus while the most prominent projections from the motor, somatosensory, and association cortex are polysynaptic, presumably through nuclei in the brainstem (Grinevich et al., 2005; Matyas et al., 2010; Rathelot et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "674f9a00-1096-4e98-ae96-cf7a9d55065a",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C69",
+      "claim": "Studies in humans and monkeys have identified parietal-eye-field and reach-specific areas that involve voluntary control of eye or hand movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in humans and monkeys have identified parietal-eye-field and reach-specific areas that involve voluntary control of eye or hand movement (Lynch, 1980; Andersen, 1989; Sakata et al., 1997; Chapman et al., 2002; Konen and Kastner, 2008; Archambault et al., 2009; Pouget, 2015; Rathelot et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "707236e0-6e33-4307-bd9e-a6b6c538eced",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C70",
+      "claim": "The PTA region is involved in facial movements in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the PTA region is also involved in facial movements in mice, and supplement the current understanding of the functional connectivity between cortex and facial nucleus motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "5343bc2d-b849-4d2b-9532-5752640742b5",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C71",
+      "claim": "Tetrodes were fabricated from polyimide insulated tungsten wire (40 cm long, diameter 25 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "Polyimide insulated, tungsten wire (40 cm long, diameter 25 \u03bcm, Stablohm 650, California Fine Wire, USA) was folded into four wires and clamped together with the modified alligator clip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the materials and methods used for tetrode fabrication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "cb54cd01-6168-4716-92f1-5535a0ab2d83",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C72",
+      "claim": "Eighty clockwise twists were applied and followed by forty counter clock-wise twists to the wire bundle during tetrode fabrication.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighty clockwise twists were applied and followed by forty counter clock-wise twists to the wire bundle over the course of approximately three minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fabrication procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "01bc70f5-328a-4ce1-9448-d7f97bf7ba1c",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C73",
+      "claim": "Transgenic GCaMP6s mice (n=19) were produced by crossing Emx1-cre, CaMK2-tTA and TITL-GCaMP6s strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic GCaMP6s mice (males, 2\u20134 months of age, weighing 20\u201330 g; n=19) were produced by crossing Emx1-cre (B6.129S2-Emx1tm1(cre)Krj/J, Jax #005628), CaMK2-tTA (B6.Cg-Tg(Camk2a-tTA)1Mmay/DboJ, Jax #007004) and TITL-GCaMP6s (Ai94;B6.Cg-Igs7tm94.1(tetO-GCaMP6s)Hze/J, Jax #024104) strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mouse strains used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "14a2999e-fe06-4575-8502-2f1be7758d32",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C74",
+      "claim": "Channelrhodopsin-2 transgenic mice (n=6) were obtained from the Jackson Labs (line 18, stock 007612).",
+      "claim_type": "EXPLICIT",
+      "source": "Channelrhodopsin-2 transgenic mice (Arenkiel et al., 2007) (n=6) were obtained from the Jackson Labs (line 18, stock 007612, strain B6.Cg-Tg(Thy1-COP4/EYFP)18Gfng/J).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mouse strains used in the study, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "3e6a0548-ed7f-4b20-9c4d-5c1b32738ab0",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C75",
+      "claim": "VGAT-ChR2-YFP expressing mice (n=3) were used for optogenetic inhibition experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal activity was driven by optically activating inhibitory neurons targeted in VGAT-ChR2-YFP expressing mice (Zhao et al., 2011; n=3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mouse strains used in the study, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "5b58b102-8cfb-4e1f-8442-2f26d881d706",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C76",
+      "claim": "The tetrode signals were amplified using a 16-channel data acquisition system (20 kHz, USB-ME16-FAI-System, Multi-Channel Systems).",
+      "claim_type": "EXPLICIT",
+      "source": "The tetrode signals were amplified using a 16-channel data acquisition system (20 kHz, USB-ME16-FAI-System, Multi-Channel Systems) and recorded for at least 30 min every day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition system used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "851665f5-b012-473f-bd55-6ba95f6d2858",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C77",
+      "claim": "Data were high pass-filtered at 1 kHz for spike sorting.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, data were high pass-filtered at 1 kHz, and excitatory spikes were detected using a threshold of 4.5 times the median of the standard deviation over 0.675.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "5b0024dc-2228-446f-a25d-a2ae85058f5e",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C78",
+      "claim": "Excitatory spikes were detected using a threshold of 4.5 times the median of the standard deviation over 0.675.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, data were high pass-filtered at 1 kHz, and excitatory spikes were detected using a threshold of 4.5 times the median of the standard deviation over 0.675.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spike detection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "2a1bf28f-e6de-41b6-af7d-b9f80c28d6ea",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C79",
+      "claim": "The 12-bit images were captured at a frame rate of 120 Hz (exposure time of 7ms) with 8\u00d78 on-chip spatial binning.",
+      "claim_type": "EXPLICIT",
+      "source": "The 12-bit images were captured at a frame rate of 120 Hz (exposure time of 7ms) with 8\u00d78 on-chip spatial binning using EPIX XCAP v3.8 imaging software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "e3ead95f-71a6-490d-b0ed-ff72a3a485ee",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C80",
+      "claim": "Blue light (473 nm) with a bandpass filter (467\u2013499 nm) was used to excite calcium indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue light (473 nm) with a bandpass filter (467\u2013499 nm) was used to excite calcium indicators and green light (525 nm) with a bandpass filter (525/50 nm) was used to observe changes in cerebral blood volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "3d49dc4a-338e-454b-88bb-73faf0ec9e9f",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C81",
+      "claim": "Green light (525 nm) with a bandpass filter (525/50 nm) was used to observe changes in cerebral blood volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue light (473 nm) with a bandpass filter (467\u2013499 nm) was used to excite calcium indicators and green light (525 nm) with a bandpass filter (525/50 nm) was used to observe changes in cerebral blood volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "7843482c-0207-469f-8064-bf07cb19ca50",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C82",
+      "claim": "The LED strobe frequency of 60 Hz exceeded the critical flicker fusion frequency for mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This LED strobe frequency of 60 Hz exceeded the critical flicker fusion frequency for mice, which marks the highest temporal frequency that an observer can resolve flicker before it becomes indistinguishable from constant light and was likely imperceptible to the mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging methodology and its rationale.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "e268b2f7-5bd4-4267-8534-e1c1c8f7e8ff",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C83",
+      "claim": "1 mW of optical stimulation was delivered for an overall time of 10 s for optogenetic inhibition experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "During the experiment, 1 mW (measured from the end of the cable) of optical stimulation was delivered for an overall time of 10 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optogenetic stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "14f08106-bb12-4641-bd49-2d5b9efb531f",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C84",
+      "claim": "For automated Thy1-ChR2-based facial motor mapping, a flash of laser light (10ms, 2.0 mW) was delivered to each point in an 8x8 grid.",
+      "claim_type": "EXPLICIT",
+      "source": "For automated Thy1-ChR2-based facial motor mapping, we chose a relatively collimated 473 nm laser targeted through a simple microscope. The laser was moved in random order to each of the predefined stimulation locations (8x8 grid) and delivered a flash of laser light (10ms, 2.0 mW) to each point while collecting facial motor nerve response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optogenetic mapping procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "033469b2-ba51-45bb-b68f-d8efc75c28b0",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C85",
+      "claim": "PhenoGraph clustering only requires one input parameter which is k, the number of nearest neighbors to be found for each input vector.",
+      "claim_type": "EXPLICIT",
+      "source": "This algorithm only requires one input parameter which is k, the number of nearest neighbors to be found for each input vector, and the resulting number of clusters (10) is relatively insensitive to the k chosen over the range of typically chosen values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clustering algorithm used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "5520fcb4-ca21-43a9-94b4-342fd6f47a7f",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C86",
+      "claim": "An individual STM whose similarity (Pearson correlation value) with the cluster average STM of the assigned cluster was lower than 0.3 was manually reassigned or excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed a cluster identity refinement step, where an individual STM whose similarity (Pearson correlation value) with the cluster average STM of the assigned cluster was lower than 0.3 was manually reassigned if its similarity with group average STMs of any other clusters was higher than 0.3; otherwise, that STM was excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data refinement procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "1cc29934-9272-4588-8cff-de0d6cbe7310",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "claim_id": "C87",
+      "claim": "Animal protocols (A13-0336-A22-0054 and A14-0266-A22-0258) were approved by the University of British Columbia Animal Care Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal protocols (A13-0336-A22-0054 and A14-0266-A22-0258) were approved by the University of British Columbia Animal Care Committee and conformed to the Canadian Council on Animal Care and Use guidelines and animals were housed in a vivarium on a 12 h daylight cycle (7 AM lights on).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Mesotrode technique was developed to enable chronic wide-field mesoscale cortical imaging combined with compact multi-site cortical/subcortical cellular electrophysiology in head-fixed mice. Tetrodes fabricated from tungsten wires were implanted through small burr holes (<1 mm) and soldered to miniature connectors cemented to the skull, allowing flexible implantation in various brain structures while preserving optical access to the dorsal cortex. The low-profile design permitted group housing of mice post-surgery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15-C20 collectively describe the technical development and validation of the Mesotrode system. The methodology is clearly described with specific materials and dimensions (C15, C16, C71, C72), surgical procedures are detailed (C15-C17), and the flexibility and success of the approach across multiple brain regions is demonstrated (C18-C20). The technique's compatibility with group housing (C17) and preservation of optical access are key features that are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Chronic single-unit recordings using Mesotrode were stable for up to 2 months post-implantation. A total of 29 tetrodes were implanted in 14 mice, recording 110 neurons with an average yield of 3-5 neurons per tetrode. Spike-triggered maps (STMs) of individual neurons remained stable across recording sessions and days, with examples showing stability over 2 months.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24, C2, C14, C31-C32, and C34 provide converging evidence for chronic recording stability. The sample sizes are clearly stated (C22, C23), recording duration is specified (C21, C2, C14, C34), and stability is demonstrated through multiple examples with visual data (Figure 1F-G, Figure 4). The consistency of neuron yield across regions (C24) and temporal stability of STMs (C31, C32, C34) are well-documented with both quantitative and qualitative evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "a1608bbc-c8d2-4ef6-9f02-c6f38677a13a",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neurons recorded from different brain regions showed distinct firing characteristics. The inter-spike interval (ISI) ranged between 0.2 and 0.7 s for most brain regions, except striatal neurons which fired significantly less (p<0.05). The coefficient of variation of ISI was similar across brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 describe basic electrophysiological characterization with appropriate statistical analysis. The ISI measurements are quantified (C25), statistical significance is reported for striatal differences (C26, p<0.05), and the CV analysis shows consistency across regions (C27). The data are presented in Figure 2D-E with proper statistical testing (Dunn's Multiple Comparison Test).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neurons from distinct subcortical structures (hippocampus, thalamus, striatum, midbrain) displayed diverse but segregated cortical functional connectivity patterns. Clustering analysis of 1146 STMs from 110 neurons identified 10 distinct clusters representing different cortical activation patterns. Each brain region showed characteristic distributions across clusters: cortical neurons showed localized patterns, hippocampal neurons primarily connected to retrosplenial cortex (59.6%), striatal neurons showed two opposing patterns, thalamic neurons exhibited diverse patterns, and midbrain neurons were primarily assigned to medial frontal/somatosensory activation (44.6%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C13, C37-C50, C61-C64 provide comprehensive evidence for region-specific functional connectivity patterns. The clustering methodology is well-described (C37-C41, C85-C86), validated with multiple approaches (PhenoGraph and K-means with Silhouette score, C41), and the results are quantified with specific percentages for each region (C42-C49). The finding that different subcortical regions show low overlap (C64) is supported by the cluster distribution data (Figure 5E). The sample size (1146 STMs from 110 neurons) is substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "20827d4d-fa0e-46f7-8850-236d1861fcfa",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Facial motor nerve spiking activity was functionally associated with specific cortical regions (PTA, RSP, M2). Micro-wire recordings from the facial nerve revealed a distinct cortical activation pattern during spontaneous facial movements. Optogenetic stimulation mapping in Thy1-ChR2 mice (n=6) confirmed that a broad area of dorsal cortex, including PTA, could evoke facial nerve spiking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C51-C53 demonstrate a novel functional connectivity between facial nerve activity and specific cortical regions. The approach is methodologically sound with both correlative (STM analysis, C52) and causal (optogenetic mapping, C53) evidence. The sample size for optogenetic experiments is stated (n=6 mice, C53), and the findings are supported by multiple figures (Figure 6C-H) and supplementary data. The use of automated light-based mapping (C53, C84) adds rigor to the spatial characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "8dbd195b-a39f-4989-8da9-e6ed7ae3b962",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of the PTA region significantly reduced facial movements in mice, establishing a causal role for PTA in facial motor control. Control recordings from M1 and barrel cortex confirmed that the effect was specific to PTA inhibition. A rebound effect (increased PTA firing and facial movement) occurred immediately after stimulation cessation, further supporting the causal relationship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C54-C57, C70 provide strong causal evidence through optogenetic manipulation. The experimental design includes appropriate controls (C55) to rule out indirect effects, the rebound phenomenon (C56) provides additional support for causality (C57), and statistical significance is reported (Figure 7F, p<0.001, n=3 mice). The convergence of inhibition effects, control experiments, and rebound responses provides robust support for the causal claim. However, the sample size for the inhibition experiments is relatively small (n=3 mice, C75).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "f3642a6d-979f-4722-864f-09c24c1c3294",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The imaging methodology employed alternating blue (473 nm) and green (525 nm) LED illumination at 60 Hz each to simultaneously capture GCaMP6 fluorescence and hemodynamic signals. Green reflectance signals were used to correct for hemodynamic artifacts in the calcium imaging data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C80-C82 describe the imaging methodology with appropriate technical details. The dual-wavelength approach for hemodynamic correction (C30, C80, C81) is a standard technique, and the LED strobe frequency rationale (C82) is properly justified. The methodology is demonstrated in Figure 3C-D showing the correction process. The technical specifications are clearly stated (C79-C81).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "07c3212a-63e1-42d9-8c35-efdd15cccb39",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mesonet, a machine-learning based toolbox, was used to accurately align mesoscale images to a common brain atlas for visualization and analysis of STMs. STMs can reveal functional cortical architecture related to individual cortical and subcortical-cortical neuron activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C65 describe analytical tools and their interpretation. Mesonet is properly cited (C33, Xiao et al., 2021) and its application is demonstrated in Figure 4D. The interpretation of STMs as revealing functional architecture (C65) is supported by citation and consistent with the data presented throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "069d2bdd-72ef-4ab4-9372-f09d6b70892c",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A midbrain neuron's spiking activity was highly correlated with lower limb, upper limb, and trunk sensorimotor areas bilaterally, and its instantaneous firing rate and patterns were highly correlated with paw movement, consistent with its functional association with limb sensorimotor areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 provide a specific example linking single-neuron activity to both cortical networks and behavior. The correlation between neural activity and cortical regions (C35) is demonstrated through STM analysis (Figure 4C-D), and the behavioral correlation (C36) is shown through synchronized recordings of neural activity and paw movement (Figure 4E). This example effectively demonstrates the multimodal capability of the technique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on prior work regarding cortical network dynamics, single-neuron functional connectivity, chronic recording techniques, and cortical control of facial movements. Previous STM studies were limited to acute preparations, and conventional tetrode setups with microdrives hindered simultaneous wide-field imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C12, C28-C29, C59-C60, C67-C69 represent background knowledge and literature review. All claims are properly supported by citations to relevant prior work. The identification of limitations in previous approaches (C10, C29) appropriately motivates the development of Mesotrode. These claims accurately represent the state of the field based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "3bbd54f7-af22-4b52-bc08-98fc5ac057f0",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The distinct STM patterns indicate that single neuron embedded large-scale subcortico-cortical networks may be associated with specific brain functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 is speculative (as indicated by 'may be associated') and represents an interpretation rather than a direct finding. While the observation of distinct STM patterns is well-supported (C3, C13, C38-C50), the functional significance of these patterns requires additional experimental validation beyond correlation. The claim is appropriately hedged and supported by citations, but the causal link to specific brain functions is not directly demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "d374529a-b11f-415d-9da2-04ad3446aee3",
+      "content_id": "f2e0d35e-9d12-4ced-a536-26bc63061e43",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Detailed methodological procedures are described for tetrode fabrication, mouse strains, data acquisition, spike sorting, imaging parameters, optogenetic stimulation, and clustering analysis. Animal protocols were approved by the University of British Columbia Animal Care Committee.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C87 provide comprehensive methodological details. The procedures are described with sufficient specificity to enable replication, including materials (C71), fabrication steps (C72), mouse strains with stock numbers (C73-C75), equipment specifications (C76, C79), data processing parameters (C77-C78), and analysis methods (C85-C86). Ethical approval is documented (C87). These methodological claims are appropriately detailed for a methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "90a5dae4-481e-41ed-968a-a5ccd879c752",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The Mesotrode technique integrates chronic widefield mesoscale cortical imaging with compact multi-site electrophysiology using tetrodes fabricated from tungsten wires. The tetrodes can be flexibly implanted in various cortical and subcortical structures through small burr holes, and mice can be group-housed after surgery. High-quality recordings were obtained across multiple brain regions with histological confirmation of recording sites.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the technique as 'straightforward to implement and very well documented' and describe it as providing 'compelling evidence for recording neuronal activity at multiple temporal and spatial scales.' The methodological approach is accepted without critique of the basic implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "8d2a4285-1c77-4e10-80d8-7f8d7cb029ae",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Mesotrode enables chronic recordings for up to 60 days post-implantation with relatively stable single unit activity. A total of 29 tetrodes were implanted in 14 mice, recording 110 neurons with an average yield of 3-5 neurons per tetrode across regions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer notes that 'the authors claim that a tetrode-based approach can allow chronic recordings of single neural activity over days - a topic that is very controversial.' Another reviewer questions the stability metrics, stating 'it is unclear what is the stability of the established relationships' and requests 'a metric to compare STMs variability across sessions/recordings/days.' The chronic recording capability is questioned rather than fully accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "24d7b0aa-24af-4f4c-ba0c-e94ce851718f",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The inter-spike interval (ISI) of neurons ranged between 0.2 and 0.7 s across most brain regions, except striatal neurons which fired significantly less (p<0.05). The coefficient of variation of ISI was similar across brain regions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These basic electrophysiological characterization data are presented without reviewer critique or questioning. The statistical significance is noted and the findings are consistent with expected regional differences.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "764dab51-d19e-4bef-880e-5da67d260379",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Spike-triggered maps (STMs) of recorded neurons can be stable for up to two months. Single neuron defined functional maps were stable across recording sessions and days, with specific examples showing hippocampal and midbrain neurons maintaining consistent cortical activation patterns over extended periods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "A reviewer explicitly questions the stability claims, noting 'it is unclear what is the stability of the established relationships' and that 'the nature of the \"recordings\" in Fig 4. is unclear.' The reviewer requests 'a metric to compare STMs variability across sessions/recordings/days' and notes 'the length of these recordings as well as the interval between them is not stated.' The stability is presented but not convincingly demonstrated according to reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Neurons from distinct subcortical structures (hippocampus, thalamus, striatum, midbrain) display diverse but segregated cortical functional connectivity maps. Clustering analysis of 1146 STMs from 110 neurons resulted in 10 distinct clusters, with neurons from different origins showing region-specific patterns (e.g., 59.6% of hippocampal STMs in cluster #10 with retrosplenial activation, striatal neurons in two opposing patterns). This suggests neurons of different origins participate in distinct cortico-subcortical pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raise significant concerns about the clustering analysis. One notes 'the data-driven choice of 10 clusters might need a bit more explorations' and that 'the silhouette clustering accuracy peaks at 10 (Fig 5A), this metrics comes without a confidence intervals.' The reviewer requests bootstrapping and states 'a much stronger argument should be provided to use the 0.3 correlation cutoff value which seems to be arbitrarily low.' Another reviewer notes 'most of the conclusions presented in the bulk of the paper (Figures 1-5) are very similar to what previous work from Murphy's lab and other labs has shown using acute preparation,' suggesting limited novelty. The clustering methodology and interpretation are questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "4722a82a-65d0-4f8b-8c84-fa6292a154ef",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Facial nerve spiking is functionally associated with the PTA, RSP, and M2 cortical network. Micro-wires implanted on the facial motor nerve revealed a distinct cortical activation pattern in these areas during spontaneous facial movements. Optogenetic mapping showed that a broad area of dorsal cortex, including PTA, could evoke facial motor nerve spiking.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the facial nerve recording work as 'interesting' and note it 'demonstrates that facial nerve spiking is functionally associated with several cortical areas.' While one reviewer suggests 'it can be integrated better into the rest of the paper,' the findings themselves are not challenged and are treated as a valid extension of the technique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "8ce457d6-c257-4cf7-a4e5-ce42f776a9c1",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Optogenetic inhibition of the PTA area significantly reduced facial movement in mice. Control recordings confirmed that M1 and barrel cortex activity was not decreased by PTA inhibition. A rebound effect (sudden increase in PTA neuron firing and facial movement) occurred after stimulation ended, supporting causal relationships between PTA and facial movement.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this finding, with one stating the study 'demonstrates that...optogenetic inhibition of the PTA area significantly reduced the facial movement of the mice.' The causal manipulation and control experiments are not questioned, and the finding is treated as a valid contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "a926e87d-5606-44d4-b99b-9f4265311b50",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Methodological details including hemodynamic artifact correction using green reflectance signals, tetrode fabrication procedures, mouse strains, data acquisition parameters, spike detection thresholds, imaging parameters, optogenetic stimulation parameters, and clustering algorithms (PhenoGraph with k parameter, 0.3 correlation threshold for refinement).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers state the method is 'very well documented,' specific methodological choices are questioned. The 0.3 correlation cutoff is described as 'arbitrarily low' and requiring 'a much stronger argument.' Reviewers request that 'the authors should show that their conclusions hold within a range of parameter values (number of clusters and correlation threshold).' The documentation is appreciated but key analytical choices need better justification.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d",
+      "content_id": "bb043f49-6a0c-48bd-a612-a26486a50eae",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims establishing the scientific context, including that cortical network activity is sculpted by inputs from individual neurons, that conventional tetrode setups with microdrives hinder widefield imaging, that GCaMP6 is suitable for chronic imaging, that STM has been used previously only in acute preparations, and that PTA is involved in controlling active movements consistent with prior literature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are primarily literature-based contextual claims supported by citations. Reviewers do not challenge these background statements and use them to frame their evaluation of the novel contributions. The context is accepted as establishing the rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "db9c6b5e-621a-494b-b0df-1c5df538e3c1",
+      "result_id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76"
+    },
+    {
+      "claim_id": "994f3236-db80-4c82-ae5e-c180c19a772e",
+      "result_id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76"
+    },
+    {
+      "claim_id": "38cd8f61-bad3-4ca0-aabb-bb8ff24b3e23",
+      "result_id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76"
+    },
+    {
+      "claim_id": "ae56406b-1efc-4775-9b4e-0aa1a9192041",
+      "result_id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76"
+    },
+    {
+      "claim_id": "43c3b50f-6a48-4365-afea-ead9d0f9d9b2",
+      "result_id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76"
+    },
+    {
+      "claim_id": "c0eee7d1-b343-4d62-9caf-f76c2dba7ca3",
+      "result_id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76"
+    },
+    {
+      "claim_id": "fcc25e76-c64a-4224-9c37-e1294cde7dba",
+      "result_id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76"
+    },
+    {
+      "claim_id": "073ad5a7-bd19-4b2f-a4cc-3c35b25f583c",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "65201226-20dd-4d61-9013-dcd3e4a71b88",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "643cbe53-58d8-43cf-8cc5-ccad24323346",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "a3cbbdc7-c821-4cdb-ad8a-ea48c14705a5",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "ffe113ae-6eee-4450-ab4a-c575eabcf1f0",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "fd61395b-00c6-46dc-83ae-a9639f0fb5c2",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "9199063f-2c54-4622-8053-870beeb4d13f",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "f45af68e-cafa-4244-83bb-ecaa167a29a4",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "5135485a-6fda-4934-9eeb-442e1bddf413",
+      "result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58"
+    },
+    {
+      "claim_id": "654ff1a5-38a5-4736-b62f-93283e6227e7",
+      "result_id": "a1608bbc-c8d2-4ef6-9f02-c6f38677a13a"
+    },
+    {
+      "claim_id": "82c55527-d93f-434e-87fc-3b6dbd6902fb",
+      "result_id": "a1608bbc-c8d2-4ef6-9f02-c6f38677a13a"
+    },
+    {
+      "claim_id": "542588fd-2178-4597-9719-70b8b98bc055",
+      "result_id": "a1608bbc-c8d2-4ef6-9f02-c6f38677a13a"
+    },
+    {
+      "claim_id": "1dc5f3a5-7fea-4c14-97e4-e98e3dd52977",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "ee3fb7f6-1b28-48b0-8bca-ad885cce8860",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "ac9d190a-94a0-4d21-b7d3-1d19f3138446",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "12053efa-e5f9-411c-984b-90ac0a32398b",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "cec6592d-7a68-491c-b2d1-db301ce1c7fb",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "4a9cde5b-9d7a-4f8b-af05-3a1c9e9e1ac4",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "b2a114af-75b7-404c-944c-431c0fac1f53",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "bfecaec1-1e3a-4ee0-bdf1-88606b8bfde4",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "5c547363-0d52-4778-8f89-96ccd4c828cf",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "6e123816-ed5e-4eef-a8cc-e924b88e333d",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "ce75600f-a234-4252-afb9-cdaec610e0d7",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "4a1898a1-27ec-4a94-95c9-b034d505a684",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "28b4acf1-8beb-41bc-9d77-8ce7f08907e2",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "8415f5e6-fb6c-485c-8056-12c42469c5dc",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "d60ddfbd-7ea8-4e73-988f-2959870bc447",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "178d3c42-22c2-46c1-a39a-510a24dfacac",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "3a8882ec-26d9-43e6-a77d-417682173fb4",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "af93c3bf-e910-4321-afb6-93798446b590",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "ff994782-3244-4459-9cc9-16cd1e59964c",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "b006f0fa-6cb8-4662-999d-c7d0295d0918",
+      "result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe"
+    },
+    {
+      "claim_id": "b12a3a66-ff22-4dd3-b7bb-498bd47404e4",
+      "result_id": "20827d4d-fa0e-46f7-8850-236d1861fcfa"
+    },
+    {
+      "claim_id": "fa14425e-c817-4122-80ab-7ee4c9616062",
+      "result_id": "20827d4d-fa0e-46f7-8850-236d1861fcfa"
+    },
+    {
+      "claim_id": "a0f59b7d-be88-4731-a052-bb0f49359780",
+      "result_id": "20827d4d-fa0e-46f7-8850-236d1861fcfa"
+    },
+    {
+      "claim_id": "60444464-ca54-45e3-ad7b-ba290f52cd20",
+      "result_id": "20827d4d-fa0e-46f7-8850-236d1861fcfa"
+    },
+    {
+      "claim_id": "1da42fc4-aa08-4a7a-b07a-a4aca69ac1b7",
+      "result_id": "8dbd195b-a39f-4989-8da9-e6ed7ae3b962"
+    },
+    {
+      "claim_id": "85f9fd1b-5891-4dad-84d2-147219cab50c",
+      "result_id": "8dbd195b-a39f-4989-8da9-e6ed7ae3b962"
+    },
+    {
+      "claim_id": "6b89b90f-10f2-48ea-9623-dc7d478a2032",
+      "result_id": "8dbd195b-a39f-4989-8da9-e6ed7ae3b962"
+    },
+    {
+      "claim_id": "848579f4-9cf8-455b-910c-72194568074e",
+      "result_id": "8dbd195b-a39f-4989-8da9-e6ed7ae3b962"
+    },
+    {
+      "claim_id": "b532b753-24f9-4af7-a6a2-8567bda3fa45",
+      "result_id": "8dbd195b-a39f-4989-8da9-e6ed7ae3b962"
+    },
+    {
+      "claim_id": "707236e0-6e33-4307-bd9e-a6b6c538eced",
+      "result_id": "8dbd195b-a39f-4989-8da9-e6ed7ae3b962"
+    },
+    {
+      "claim_id": "52d0e28e-467e-4e4f-8136-7cca67020f77",
+      "result_id": "f3642a6d-979f-4722-864f-09c24c1c3294"
+    },
+    {
+      "claim_id": "e3ead95f-71a6-490d-b0ed-ff72a3a485ee",
+      "result_id": "f3642a6d-979f-4722-864f-09c24c1c3294"
+    },
+    {
+      "claim_id": "3d49dc4a-338e-454b-88bb-73faf0ec9e9f",
+      "result_id": "f3642a6d-979f-4722-864f-09c24c1c3294"
+    },
+    {
+      "claim_id": "7843482c-0207-469f-8064-bf07cb19ca50",
+      "result_id": "f3642a6d-979f-4722-864f-09c24c1c3294"
+    },
+    {
+      "claim_id": "946db1a4-acb0-49ee-949a-91490f52e063",
+      "result_id": "07c3212a-63e1-42d9-8c35-efdd15cccb39"
+    },
+    {
+      "claim_id": "f0424984-8e47-4f5a-90f3-ac522b2f59f8",
+      "result_id": "07c3212a-63e1-42d9-8c35-efdd15cccb39"
+    },
+    {
+      "claim_id": "0a07b442-b5d5-4d38-9b3b-cc9913a5d448",
+      "result_id": "069d2bdd-72ef-4ab4-9372-f09d6b70892c"
+    },
+    {
+      "claim_id": "7d04030c-aab9-4839-af6c-8055676c0282",
+      "result_id": "069d2bdd-72ef-4ab4-9372-f09d6b70892c"
+    },
+    {
+      "claim_id": "a16692ec-c1cb-46c4-ae8c-4040df59a7bb",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "3d7a0ef2-2006-48e1-a29b-8ed4e4cc9edf",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "a20a393c-687c-45b8-80b2-a8d60c5566d0",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "4bd5dce3-fb5f-485b-b8ed-a024fb6d49cc",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "6388cfa5-4fe0-4242-ba9a-c1e25141b5b6",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "73ea3960-fdb4-49b9-b611-6f20b0a4f690",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "d5b531ec-1bf6-440f-9481-2cb4d7830050",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "2d0f486f-77e7-4a82-a318-03f878d38e4a",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "1231828f-37b2-4912-acd6-4962bd99215d",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "e473650c-cb94-47d0-8926-45a918107d43",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "f5216e7f-1221-479c-ae1d-784a7fa71e88",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "ee1e5249-788c-42c4-83e3-592fb95f119c",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "0df4d70b-0242-4520-abcf-5b4ce504bc6c",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "674f9a00-1096-4e98-ae96-cf7a9d55065a",
+      "result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed"
+    },
+    {
+      "claim_id": "89419431-cf66-4123-ac55-b0672d74fc52",
+      "result_id": "3bbd54f7-af22-4b52-bc08-98fc5ac057f0"
+    },
+    {
+      "claim_id": "5343bc2d-b849-4d2b-9532-5752640742b5",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "cb54cd01-6168-4716-92f1-5535a0ab2d83",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "01bc70f5-328a-4ce1-9448-d7f97bf7ba1c",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "14a2999e-fe06-4575-8502-2f1be7758d32",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "3e6a0548-ed7f-4b20-9c4d-5c1b32738ab0",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "5b58b102-8cfb-4e1f-8442-2f26d881d706",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "851665f5-b012-473f-bd55-6ba95f6d2858",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "5b0024dc-2228-446f-a25d-a2ae85058f5e",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "2a1bf28f-e6de-41b6-af7d-b9f80c28d6ea",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "e268b2f7-5bd4-4267-8534-e1c1c8f7e8ff",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "14f08106-bb12-4641-bd49-2d5b9efb531f",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "033469b2-ba51-45bb-b68f-d8efc75c28b0",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "5520fcb4-ca21-43a9-94b4-342fd6f47a7f",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "1cc29934-9272-4588-8cff-de0d6cbe7310",
+      "result_id": "d374529a-b11f-415d-9da2-04ad3446aee3"
+    },
+    {
+      "claim_id": "db9c6b5e-621a-494b-b0df-1c5df538e3c1",
+      "result_id": "90a5dae4-481e-41ed-968a-a5ccd879c752"
+    },
+    {
+      "claim_id": "994f3236-db80-4c82-ae5e-c180c19a772e",
+      "result_id": "90a5dae4-481e-41ed-968a-a5ccd879c752"
+    },
+    {
+      "claim_id": "38cd8f61-bad3-4ca0-aabb-bb8ff24b3e23",
+      "result_id": "90a5dae4-481e-41ed-968a-a5ccd879c752"
+    },
+    {
+      "claim_id": "ae56406b-1efc-4775-9b4e-0aa1a9192041",
+      "result_id": "90a5dae4-481e-41ed-968a-a5ccd879c752"
+    },
+    {
+      "claim_id": "43c3b50f-6a48-4365-afea-ead9d0f9d9b2",
+      "result_id": "90a5dae4-481e-41ed-968a-a5ccd879c752"
+    },
+    {
+      "claim_id": "c0eee7d1-b343-4d62-9caf-f76c2dba7ca3",
+      "result_id": "90a5dae4-481e-41ed-968a-a5ccd879c752"
+    },
+    {
+      "claim_id": "fcc25e76-c64a-4224-9c37-e1294cde7dba",
+      "result_id": "90a5dae4-481e-41ed-968a-a5ccd879c752"
+    },
+    {
+      "claim_id": "ffe113ae-6eee-4450-ab4a-c575eabcf1f0",
+      "result_id": "8d2a4285-1c77-4e10-80d8-7f8d7cb029ae"
+    },
+    {
+      "claim_id": "073ad5a7-bd19-4b2f-a4cc-3c35b25f583c",
+      "result_id": "8d2a4285-1c77-4e10-80d8-7f8d7cb029ae"
+    },
+    {
+      "claim_id": "65201226-20dd-4d61-9013-dcd3e4a71b88",
+      "result_id": "8d2a4285-1c77-4e10-80d8-7f8d7cb029ae"
+    },
+    {
+      "claim_id": "643cbe53-58d8-43cf-8cc5-ccad24323346",
+      "result_id": "8d2a4285-1c77-4e10-80d8-7f8d7cb029ae"
+    },
+    {
+      "claim_id": "a3cbbdc7-c821-4cdb-ad8a-ea48c14705a5",
+      "result_id": "8d2a4285-1c77-4e10-80d8-7f8d7cb029ae"
+    },
+    {
+      "claim_id": "654ff1a5-38a5-4736-b62f-93283e6227e7",
+      "result_id": "24d7b0aa-24af-4f4c-ba0c-e94ce851718f"
+    },
+    {
+      "claim_id": "82c55527-d93f-434e-87fc-3b6dbd6902fb",
+      "result_id": "24d7b0aa-24af-4f4c-ba0c-e94ce851718f"
+    },
+    {
+      "claim_id": "542588fd-2178-4597-9719-70b8b98bc055",
+      "result_id": "24d7b0aa-24af-4f4c-ba0c-e94ce851718f"
+    },
+    {
+      "claim_id": "fd61395b-00c6-46dc-83ae-a9639f0fb5c2",
+      "result_id": "764dab51-d19e-4bef-880e-5da67d260379"
+    },
+    {
+      "claim_id": "9199063f-2c54-4622-8053-870beeb4d13f",
+      "result_id": "764dab51-d19e-4bef-880e-5da67d260379"
+    },
+    {
+      "claim_id": "f45af68e-cafa-4244-83bb-ecaa167a29a4",
+      "result_id": "764dab51-d19e-4bef-880e-5da67d260379"
+    },
+    {
+      "claim_id": "5135485a-6fda-4934-9eeb-442e1bddf413",
+      "result_id": "764dab51-d19e-4bef-880e-5da67d260379"
+    },
+    {
+      "claim_id": "0a07b442-b5d5-4d38-9b3b-cc9913a5d448",
+      "result_id": "764dab51-d19e-4bef-880e-5da67d260379"
+    },
+    {
+      "claim_id": "7d04030c-aab9-4839-af6c-8055676c0282",
+      "result_id": "764dab51-d19e-4bef-880e-5da67d260379"
+    },
+    {
+      "claim_id": "1dc5f3a5-7fea-4c14-97e4-e98e3dd52977",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "ee3fb7f6-1b28-48b0-8bca-ad885cce8860",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "ac9d190a-94a0-4d21-b7d3-1d19f3138446",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "12053efa-e5f9-411c-984b-90ac0a32398b",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "cec6592d-7a68-491c-b2d1-db301ce1c7fb",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "4a9cde5b-9d7a-4f8b-af05-3a1c9e9e1ac4",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "b2a114af-75b7-404c-944c-431c0fac1f53",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "bfecaec1-1e3a-4ee0-bdf1-88606b8bfde4",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "5c547363-0d52-4778-8f89-96ccd4c828cf",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "6e123816-ed5e-4eef-a8cc-e924b88e333d",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "ce75600f-a234-4252-afb9-cdaec610e0d7",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "4a1898a1-27ec-4a94-95c9-b034d505a684",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "28b4acf1-8beb-41bc-9d77-8ce7f08907e2",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "8415f5e6-fb6c-485c-8056-12c42469c5dc",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "d60ddfbd-7ea8-4e73-988f-2959870bc447",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "178d3c42-22c2-46c1-a39a-510a24dfacac",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "3a8882ec-26d9-43e6-a77d-417682173fb4",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "af93c3bf-e910-4321-afb6-93798446b590",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "ff994782-3244-4459-9cc9-16cd1e59964c",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "b006f0fa-6cb8-4662-999d-c7d0295d0918",
+      "result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9"
+    },
+    {
+      "claim_id": "b12a3a66-ff22-4dd3-b7bb-498bd47404e4",
+      "result_id": "4722a82a-65d0-4f8b-8c84-fa6292a154ef"
+    },
+    {
+      "claim_id": "fa14425e-c817-4122-80ab-7ee4c9616062",
+      "result_id": "4722a82a-65d0-4f8b-8c84-fa6292a154ef"
+    },
+    {
+      "claim_id": "a0f59b7d-be88-4731-a052-bb0f49359780",
+      "result_id": "4722a82a-65d0-4f8b-8c84-fa6292a154ef"
+    },
+    {
+      "claim_id": "60444464-ca54-45e3-ad7b-ba290f52cd20",
+      "result_id": "4722a82a-65d0-4f8b-8c84-fa6292a154ef"
+    },
+    {
+      "claim_id": "1da42fc4-aa08-4a7a-b07a-a4aca69ac1b7",
+      "result_id": "8ce457d6-c257-4cf7-a4e5-ce42f776a9c1"
+    },
+    {
+      "claim_id": "85f9fd1b-5891-4dad-84d2-147219cab50c",
+      "result_id": "8ce457d6-c257-4cf7-a4e5-ce42f776a9c1"
+    },
+    {
+      "claim_id": "6b89b90f-10f2-48ea-9623-dc7d478a2032",
+      "result_id": "8ce457d6-c257-4cf7-a4e5-ce42f776a9c1"
+    },
+    {
+      "claim_id": "848579f4-9cf8-455b-910c-72194568074e",
+      "result_id": "8ce457d6-c257-4cf7-a4e5-ce42f776a9c1"
+    },
+    {
+      "claim_id": "b532b753-24f9-4af7-a6a2-8567bda3fa45",
+      "result_id": "8ce457d6-c257-4cf7-a4e5-ce42f776a9c1"
+    },
+    {
+      "claim_id": "707236e0-6e33-4307-bd9e-a6b6c538eced",
+      "result_id": "8ce457d6-c257-4cf7-a4e5-ce42f776a9c1"
+    },
+    {
+      "claim_id": "52d0e28e-467e-4e4f-8136-7cca67020f77",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "946db1a4-acb0-49ee-949a-91490f52e063",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "5343bc2d-b849-4d2b-9532-5752640742b5",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "cb54cd01-6168-4716-92f1-5535a0ab2d83",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "01bc70f5-328a-4ce1-9448-d7f97bf7ba1c",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "14a2999e-fe06-4575-8502-2f1be7758d32",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "3e6a0548-ed7f-4b20-9c4d-5c1b32738ab0",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "5b58b102-8cfb-4e1f-8442-2f26d881d706",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "851665f5-b012-473f-bd55-6ba95f6d2858",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "5b0024dc-2228-446f-a25d-a2ae85058f5e",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "2a1bf28f-e6de-41b6-af7d-b9f80c28d6ea",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "e3ead95f-71a6-490d-b0ed-ff72a3a485ee",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "3d49dc4a-338e-454b-88bb-73faf0ec9e9f",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "7843482c-0207-469f-8064-bf07cb19ca50",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "e268b2f7-5bd4-4267-8534-e1c1c8f7e8ff",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "14f08106-bb12-4641-bd49-2d5b9efb531f",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "033469b2-ba51-45bb-b68f-d8efc75c28b0",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "5520fcb4-ca21-43a9-94b4-342fd6f47a7f",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "1cc29934-9272-4588-8cff-de0d6cbe7310",
+      "result_id": "a926e87d-5606-44d4-b99b-9f4265311b50"
+    },
+    {
+      "claim_id": "a16692ec-c1cb-46c4-ae8c-4040df59a7bb",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "3d7a0ef2-2006-48e1-a29b-8ed4e4cc9edf",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "a20a393c-687c-45b8-80b2-a8d60c5566d0",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "4bd5dce3-fb5f-485b-b8ed-a024fb6d49cc",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "6388cfa5-4fe0-4242-ba9a-c1e25141b5b6",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "73ea3960-fdb4-49b9-b611-6f20b0a4f690",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "d5b531ec-1bf6-440f-9481-2cb4d7830050",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "2d0f486f-77e7-4a82-a318-03f878d38e4a",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "1231828f-37b2-4912-acd6-4962bd99215d",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "1a294f5d-26f0-4ab6-8394-750c567f6d94",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "e473650c-cb94-47d0-8926-45a918107d43",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "f5216e7f-1221-479c-ae1d-784a7fa71e88",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "f0424984-8e47-4f5a-90f3-ac522b2f59f8",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "89419431-cf66-4123-ac55-b0672d74fc52",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "ee1e5249-788c-42c4-83e3-592fb95f119c",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "0df4d70b-0242-4520-abcf-5b4ce504bc6c",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    },
+    {
+      "claim_id": "674f9a00-1096-4e98-ae96-cf7a9d55065a",
+      "result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "53af9581-c5ee-4df8-b9a3-f13f71b7d98d",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "94f26b82-5fcf-4809-b2cf-7849cf6f3d76",
+      "peer_result_id": "90a5dae4-481e-41ed-968a-a5ccd879c752",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on technical development and validation of Mesotrode system (C1, C15-C20). Both evaluations rate as SUPPORTED. Reviewers explicitly affirm the technique as 'straightforward to implement and very well documented,' matching OpenEval's assessment of clear methodology and successful validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "920fe58f-81e0-4688-8e09-a98843ab4fb2",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a1608bbc-c8d2-4ef6-9f02-c6f38677a13a",
+      "peer_result_id": "24d7b0aa-24af-4f4c-ba0c-e94ce851718f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on basic electrophysiological characterization (C25-C27). Both evaluations rate as SUPPORTED. Peer reviewers accept the statistical analysis and findings without critique, consistent with OpenEval's assessment of appropriate quantification and statistical testing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "5589c3ac-b669-4bc3-9485-123884520fa8",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "58e9bbb5-c6a8-439a-979a-4494ef4ee0fe",
+      "peer_result_id": "0db83a7b-f860-4874-92ba-2344c7bcc6f9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on region-specific functional connectivity patterns (C3, C13, C37-C50, C61-C64). OpenEval rates as SUPPORTED with comprehensive validation, while peer reviewers rate as UNCERTAIN, questioning the clustering methodology (silhouette score lacks confidence intervals, 0.3 correlation cutoff 'arbitrarily low'), requesting bootstrapping, and noting limited novelty compared to prior work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "dc430c87-920f-453c-b71c-ca9db71bd3ee",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "20827d4d-fa0e-46f7-8850-236d1861fcfa",
+      "peer_result_id": "4722a82a-65d0-4f8b-8c84-fa6292a154ef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on facial nerve connectivity findings (C4, C51-C53). Both evaluations rate as SUPPORTED. Peer reviewers describe the work as 'interesting' and accept the functional association findings, consistent with OpenEval's assessment of methodologically sound correlative and causal evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "aeab0165-53dc-435f-91c3-abc85ba5fb01",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "8dbd195b-a39f-4989-8da9-e6ed7ae3b962",
+      "peer_result_id": "8ce457d6-c257-4cf7-a4e5-ce42f776a9c1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on causal optogenetic manipulation results (C5, C54-C57, C70). Both evaluations rate as SUPPORTED. Peer reviewers acknowledge the optogenetic inhibition findings without challenge, matching OpenEval's assessment of strong causal evidence despite noting the small sample size (n=3 mice).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "a2ebed53-4ad4-4986-9d4e-98ec579b7b77",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58",
+      "peer_result_id": "8d2a4285-1c77-4e10-80d8-7f8d7cb029ae",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on chronic recording stability (C2, C21-C24). OpenEval rates as SUPPORTED based on clear sample sizes and temporal stability documentation, while peer reviewers rate as UNCERTAIN, noting the chronic recording capability is 'very controversial' and questioning whether stability is convincingly demonstrated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "2291461a-06f8-43f7-beca-3bb6a76cfbd3",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "96d68a4c-b9fb-45c6-bfea-cdfaf2538e58",
+      "peer_result_id": "764dab51-d19e-4bef-880e-5da67d260379",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on temporal stability claims (C14, C31-C32, C34). OpenEval includes these in SUPPORTED chronic recording evaluation (R2), while peer reviewers group them with other stability concerns in UNCERTAIN evaluation (R4), requesting metrics to compare STM variability across sessions and clarification of recording intervals.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "3f9703b4-42d4-4767-b593-f8afb4852274",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "069d2bdd-72ef-4ab4-9372-f09d6b70892c",
+      "peer_result_id": "764dab51-d19e-4bef-880e-5da67d260379",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on specific example linking neural activity to cortical networks and behavior (C35-C36). OpenEval rates as SUPPORTED demonstration of multimodal capability, while peer reviewers include these claims in UNCERTAIN evaluation, noting 'the nature of the \"recordings\" in Fig 4. is unclear' and questioning temporal stability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "a2b849f2-031a-4eb1-b5f8-99e49f85d995",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "cf92c6c1-dd36-4cc5-9de9-85bf8ad08bed",
+      "peer_result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background literature and context (C6-C12, C28-C29, C59-C60, C67-C69). Both evaluations rate as SUPPORTED. Peer reviewers accept these contextual claims without challenge, consistent with OpenEval's assessment that citations properly support the literature review and motivation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "484bbfee-ceee-422c-a2a9-ebd104b96204",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d374529a-b11f-415d-9da2-04ad3446aee3",
+      "peer_result_id": "a926e87d-5606-44d4-b99b-9f4265311b50",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial disagreement on methodological details (C71-C87 vs C30, C33, C71-C87). OpenEval rates comprehensive methods as SUPPORTED with sufficient replication detail, while peer reviewers rate as UNCERTAIN despite acknowledging 'very well documented' methods, questioning specific analytical choices like the 0.3 correlation cutoff as 'arbitrarily low' and requesting parameter sensitivity analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "730e6f4d-7c65-4c8a-b8f1-46c4be65dd0d",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "f3642a6d-979f-4722-864f-09c24c1c3294",
+      "peer_result_id": "a926e87d-5606-44d4-b99b-9f4265311b50",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on imaging methodology (C30, C80-C82). OpenEval rates as SUPPORTED with appropriate technical details, while peer reviewers include imaging parameters in broader UNCERTAIN methodological evaluation, though the dual-wavelength hemodynamic correction approach itself is not specifically challenged.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "cb0b00d8-10f2-4a0a-bbda-1a10d52e7338",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "3bbd54f7-af22-4b52-bc08-98fc5ac057f0",
+      "peer_result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address speculative interpretation (C66). OpenEval rates as UNCERTAIN, appropriately noting the claim is hedged and requires additional validation beyond correlation. Peer reviewers include this in SUPPORTED background claims, treating it as contextual rather than a primary finding requiring validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "66fc587c-1a2c-4f1a-88c3-29ce6aeba46a",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "07c3212a-63e1-42d9-8c35-efdd15cccb39",
+      "peer_result_id": "79094e0e-75ad-447f-bcc2-5a30e91c1c0d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on analytical tool interpretation (C33, C65). OpenEval rates as SUPPORTED with proper citation and demonstrated application, while peer reviewers include C65 in broader SUPPORTED background context without specific evaluation of the Mesonet tool or STM interpretation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    },
+    {
+      "id": "153ccd84-b1d3-4c3d-9a34-c87aa1a7f39b",
+      "submission_id": "31bffab2-5799-4edc-8a25-732310726b82",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "07c3212a-63e1-42d9-8c35-efdd15cccb39",
+      "peer_result_id": "a926e87d-5606-44d4-b99b-9f4265311b50",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap on Mesonet citation (C33). OpenEval includes this in SUPPORTED analytical tools evaluation, while peer reviewers include it tangentially in UNCERTAIN methodological evaluation focused on parameter choices rather than the cited tool itself.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:26:31.746354Z"
+    }
+  ]
+}

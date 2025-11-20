@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The baseline malaria distribution in 2000 showed 105 endemic countries with distinct patterns: clinical burden concentrated in high-transmission P. falciparum-only settings (primarily Africa), while 89% of the population at risk resided in low-transmission co-endemic settings (with India contributing substantially).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are well-supported by the described data sources (prevalence estimates from Malaria Atlas Project, WorldPop population data). The methods clearly describe how countries were classified and Figure 1 provides visual confirmation. The data processing approach is transparent and appropriate for establishing baseline conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Model simulations demonstrated that ITN effectiveness varied substantially by transmission intensity (EIR) and parasite species, with greater relative impact in low-EIR settings and for P. falciparum compared to P. vivax. Even 80% ITN usage could not eliminate malaria in the highest transmission settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 are supported by the deterministic compartmental models adapted from validated individual-based models (Griffin et al., White et al.). Figure 2 clearly shows the modeled relationships. However, the models make simplifying assumptions (e.g., only ITNs as intervention, anthropophagic mosquitoes, no seasonality) that may affect generalizability, which the authors acknowledge in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "At maximum ITN usage (80%), models projected potential reductions of 83.6% for P. falciparum cases (from 252.0 million) and 99.9% for P. vivax cases (from 69.3 million) globally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 represent model projections based on the simulation framework described. The large difference in reduction potential between species (83.6% vs 99.9%) aligns with the differential effectiveness shown in C15. However, these are theoretical maxima assuming uniform 80% coverage globally, which may not be achievable in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Optimization analysis revealed that strategies prioritizing high-transmission settings achieved the greatest case reductions (76% for optimal, 66% for high-transmission priority at intermediate budgets), substantially outperforming proportional allocation (53%) and low-transmission prioritization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are supported by the optimization framework using generalized simulated annealing. Figure 3A and Table 1 provide clear quantitative support. The optimization methodology is appropriate, though the results depend on model assumptions about ITN effectiveness and cost structures. The relative rankings across strategies appear robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A fundamental trade-off exists between reducing global cases and reducing the global population at risk. Strategies optimizing for case reduction achieved minimal population-at-risk reduction until high budgets (19-58% at high budget), while proportional allocation had almost no effect on this outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 identify a key policy tension supported by Figure 3B and Table 1. This trade-off emerges logically from the model structure: high-burden settings have smaller populations while low-transmission settings have larger populations. The finding is internally consistent and has important policy implications, though it depends on how elimination is defined in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C51",
+      "C52"
+    ],
+    "result": "Prioritizing low-transmission settings achieved rapid population-at-risk reduction (56% at intermediate budgets, 42% of settings reaching elimination) but resulted in 3.2-3.8 times more clinical cases than optimal allocation, demonstrating the cost of a 'shrink the map' strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C51-C52 quantify the trade-off from the opposite perspective. The dramatic difference in case burden (3.2-3.8x more cases) provides strong evidence against prioritizing low-transmission settings when case reduction is the primary goal. The quantitative estimates are model-dependent but the qualitative finding appears robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The optimal strategy for case reduction and pre-elimination led to pre-elimination in more settings than all other strategies while maintaining near-minimum case levels across all budgets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by Appendix 1-figure 7 and Figure 3, showing this strategy balances both objectives. The weighting parameter (1:1 shown, but tested 0.5-100) allows flexibility. This represents a potential compromise strategy, though the specific weighting choice involves value judgments not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C58"
+    ],
+    "result": "Allocation strategies had differential impacts on P. falciparum versus P. vivax, with P. falciparum cases generally declining first (except when prioritizing low-transmission settings). Proportional allocation had minimal effect on P. vivax burden, leading to a temporary increase in P. vivax's proportional contribution to total cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C58 are supported by Figure 3C and align with the differential effectiveness shown in C15. The temporary increase in P. vivax proportion is a logical consequence of preferentially reducing P. falciparum. Citation to Battle et al. 2019 and Price et al. 2020 provides external validation of this pattern in real-world near-elimination settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C54",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The optimal funding distribution was budget-dependent: at low budgets, 76-85% of funding targeted moderate-to-high transmission P. falciparum-only settings (achieving 80% ITN coverage in high-transmission areas); at high budgets, 62-70% shifted to low-transmission co-endemic settings once high-transmission settings were saturated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41, C54, C86-C87, C89 describe the optimal allocation pattern supported by Figure 4 and Appendix figures. The budget-dependent shift is logical given diminishing returns at high coverage and the non-linear cost structure. This represents a key policy-relevant finding, though it depends on the specific cost assumptions and model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Sensitivity analyses showed results were robust to assumptions about ITN cost structures (linear vs. non-linear). Dynamic re-allocation every 3 years produced similar outcomes to one-time optimization at high budgets, with modest improvements at lower budgets and potential cost savings through resource reallocation from eliminated settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by Appendix figures 10-11. These sensitivity analyses strengthen confidence in the main findings. However, only limited sensitivity analyses are presented (cost structure and temporal allocation), and other assumptions (e.g., mosquito species, seasonality, treatment rates) are not systematically varied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "At high budgets, different allocation strategies achieved varying levels of case reduction: optimal allocation (83%), optimal with pre-elimination (82%), high-transmission priority (81%), proportional allocation (61%), and low-transmission priority (37%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide summary comparisons supported by the optimization results. The rank ordering is consistent across budget levels. These represent the key policy-relevant summary statistics, though they are model-dependent and assume ITNs as the sole intervention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Allocation strategies with greatest impact on case reductions were associated with lesser near-term impacts on the global population at risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 summarizes the fundamental trade-off identified in the analysis. This is well-supported by the results and represents a key policy insight. The claim appropriately qualifies this as 'near-term' impacts, acknowledging that long-term dynamics may differ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C56",
+      "C59"
+    ],
+    "result": "Prior research supports prioritizing high-burden countries, with studies showing that the 20 highest-burden countries need 88% of investments to meet GTS goals, and that targeting local hot-spots within countries leads to higher cost savings and elimination potential than universal application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C55-C56, C59 cite specific prior studies (Patouillard et al. 2017, Barrenho et al. 2017, Bousema et al. 2012, Snow et al. 2010) that support the current findings. These citations appear appropriate and provide external validation. However, the accuracy of these prior work claims cannot be fully verified without examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C93"
+    ],
+    "result": "The authors conclude that global funding should focus on low-transmission co-endemic settings only at high budgets after maximizing ITN use in high-transmission settings, and that achieving elimination from all endemic countries will ultimately require addressing P. vivax burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C93 represent interpretive conclusions based on the modeling results. These are appropriately qualified ('suggest', 'will ultimately require') and follow logically from the findings. However, these involve policy judgments beyond what the model strictly demonstrates, and C93 particularly depends on assumptions about future intervention availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Background context establishes that over 100 countries have eliminated malaria since the 1900s (10 WHO-certified in last two decades), but 41-57% of the global population remains at risk, with 247 million cases and 600,000 deaths in 2021. Current funding ($3.4B) falls short of the $6.8B needed for GTS 2016-2030 goals, with international donors providing 68% of funding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C75 provide background context from the introduction, citing WHO reports and other authoritative sources. These establish the motivation for the study. The citations appear appropriate for these factual claims about malaria epidemiology and funding. However, the specific numbers should be verified against the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "ITNs were selected as the model intervention because they provide both individual protection and population-level transmission reduction, are the most widely used intervention besides treatment, and have extensive distribution and costing data available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 justify the methodological choice to focus on ITNs. These are reasonable justifications supported by general knowledge of malaria interventions. However, this simplification (single intervention) is a significant limitation that the authors acknowledge affects the generalizability of specific quantitative findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The models used were deterministic versions of previously validated individual-based models: the P. falciparum model fitted to sub-Saharan African data (Griffin et al. 2016) and the P. vivax model calibrated to Papua New Guinea data but validated globally (White et al. 2018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe the model provenance with appropriate citations. The use of previously validated models strengthens confidence, though the conversion to deterministic versions and application to global optimization represents a novel use. The validation history supports the model structure but doesn't guarantee accuracy for all settings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The cost model incorporated non-linear increases in marginal distribution costs at high ITN coverage (based on Bertozzi-Villa et al. 2021), with a unit cost of $3.50 per ITN (Sherrard-Smith et al. 2022).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe key cost assumptions with appropriate citations. The non-linear cost structure is important for the optimization results. However, cost structures may vary by setting, and the $3.50 unit cost is a simplification. Sensitivity analysis (C42) shows results are robust to the linear vs. non-linear assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "National governments contribute 31% of global malaria funding (with government financing being a major source in near-elimination countries), and subnational elimination can provide motivation for continued elimination efforts in other areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 provide context about funding sources and elimination dynamics, with appropriate citations (WHO 2020, Haakenstad et al. 2019, Lindblade and Kachur 2020). These support the discussion of how the modeling framework relates to real-world funding decisions, though the model itself treats all funding as a unified global pool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The analysis used WHO definitions for elimination (indigenous transmission interrupted for 3+ years with capacity to prevent return) and pre-elimination (less than 1 case per 1000 persons at risk).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe methodological definitions with appropriate citations (WHO 2018, Mendis et al. 2009). These standard definitions are appropriately applied, though the model's operationalization (elimination = <1 case per total population) is slightly different from the WHO definition and may affect quantitative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "For P. vivax specifically, reducing global burden and achieving elimination will depend on incorporating hypnozoitocidal treatment and G6PD screening into case management.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 identifies a key limitation of ITN-only strategies for P. vivax, citing Devine et al. 2021. This is an important caveat given that the model only considers ITNs. The claim appropriately acknowledges that additional interventions beyond the model scope will be needed for P. vivax elimination.",
+    "result_type": "MINOR"
+  }
+]

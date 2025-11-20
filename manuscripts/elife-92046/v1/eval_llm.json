@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Spatial transcriptomics of human spinal cord identified 17 cell types that were classified into five major clusters: neurons, Schwann cells, a mixed population of neurons and astrocytes, a mixed population of meningeal and vascular cells, and a mixed population of glial cells. Due to the lower resolution of spatial transcriptomics, neurons were not well separated from surrounding astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe the spatial transcriptomics workflow, initial identification of 17 cell types, their classification into 5 major clusters, and technical limitations. The data are supported by appropriate figures (1A-G) showing UMAP plots, marker gene expression, and spatial distribution. The technical limitation regarding neuron-astrocyte separation (C20) is appropriately acknowledged and consistent with known spatial transcriptomics resolution constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Single-nucleus RNA-seq of 64,021 nuclei from nine human donors identified eight major cell types with distinct spatial distributions: oligodendrocytes (58.8%), microglia (13.1%), neurons (11.9%), astrocytes (5.2%), OPCs (4.6%), vascular cells (3%), meningeal cells (2.1%), and Schwann cells (1.2%). Neurons were predominantly in gray matter, while oligodendrocytes and microglia were mainly in white matter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 present the single-nucleus RNA-seq results with appropriate sample sizes (n=9 donors, 64,021 nuclei), cell type identification with percentages, gene detection rates, and spatial validation by IF staining. The data are well-supported by Figures 2A-F and supplementary figures. Quality control verification showing each donor contributed to each cluster (C24) strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Human spinal cord neurons were classified into 21 subclusters based on transcriptional characteristics and neurotransmitter status: 11 excitatory (54.4%), 8 inhibitory (34.5%), 1 mixed (9.6%), and 1 motor neuron cluster (1.5%). Spatial mapping and gene set variation analysis revealed distinct distributions across superficial dorsal horn, deep dorsal horn, and ventral horn, validated by immunofluorescence staining of marker genes including PDYN, CCK, SST, and FOXP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 describe the neuronal subclassification with appropriate methodology (transcriptional characteristics, neurotransmitter markers), spatial localization using GSVA, and validation by IF staining. The results are supported by comprehensive figures (3A-J, supplementary figures) showing UMAP plots, marker expression, spatial distribution, and IF validation. The consistency with published literature (citations to Yadav et al., 2023; Todd, 2017) adds credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Comparison of human and mouse spinal cord neurons revealed overall similarity in transcriptional profiles with homologous clusters showing highly similar gene expression patterns. Shared representative genes were identified across species, including ZFHX3 for C2, SOX5 for C4, and differential expression of calcium channels (CACNA2D1 in excitatory, CACNA2D3 in inhibitory neurons) was conserved between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 present cross-species comparison using appropriate integration methods (Seurat anchoring, homology mapping). The results are supported by Figures 4A-C showing UMAP coclustering and heatmaps of conserved gene expression. The identification of shared marker genes and conserved differential expression patterns (e.g., calcium channels) is well-documented and consistent with prior literature (Russ et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Transcriptional profiling of classical spinal cord markers revealed both conserved and divergent expression patterns between human and mouse. While genes like TAC1 and NPY showed similar expression in superficial dorsal neurons across species, species-specific differences were observed: CALCA was selectively expressed in mouse C20 but nearly absent in human neurons, while GRP was predominantly in human C7 but showed little expression in mouse. Several genes (PAM, OPRM1, EBF1, GABRG3, GRIK2, SCN1A, KCND2, RORA) were highly expressed in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 describe differential and conserved gene expression patterns across species, supported by dot plots and heatmaps (Figures 4D-K, supplementary figures). The validation by RNAscope ISH and IF staining (C51) strengthens the findings. The identification of both conserved targets for translation and species-specific differences is important for clinical translation considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Sex difference analysis revealed that males and females have the same spinal neuronal subtypes, with similar gene expression profiles across most clusters except motor neurons (C20). In motor neurons, males showed higher expression of potassium channel genes and lower expression of sodium channel genes compared to females, validated by IF staining of SCN10A. Additional pain-related genes (HCN1, FGF13, LRFN5, HTR2C, KCNQ3) were differentially expressed in motor neurons between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 present sex difference analysis with appropriate statistical criteria (FC \u2265 1.33, adjusted p<0.05) and validation by IF staining (Figures 5F-G). The finding of sex-specific differences primarily in motor neurons (C20) is well-supported by volcano plots, violin plots, and GO term analysis. The validation of SCN10A expression differences by quantitative IF analysis adds rigor. However, the functional implications of these differences remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Spatial transcriptomics of human DRG from six donors identified 16 cell clusters categorized into six major populations: fibroblasts, immune cells, RBCs, Schwann cells, VECs/VSMCs, and neurons/SGCs. Due to technical limitations, neurons and surrounding satellite glial cells could not be completely separated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 describe DRG spatial transcriptomics with appropriate methodology and acknowledgment of technical limitations. The results are supported by Figures 6A-F showing workflow, UMAP plots, and marker gene expression. The verification that each donor contributed to each cluster (C70) demonstrates data quality. The acknowledged limitation of neuron-SGC separation (C69) is consistent with spatial transcriptomics resolution constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "DRG neurons were classified into 13 subclusters: peptidergic (PEP1-6), nonpeptidergic (NP1-2), and neurofilament neurons (NF1-5), with functional annotations including nociceptors, proprioceptors, and LTMRs. Comparison with mouse DRG revealed overall similarity but notable differences: SST was widely expressed across human DRG subclusters but represented a distinct subcluster in mice; PVALB was widely expressed in human but showed low expression in mouse; TH was present in mouse but nearly absent in human DRG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 present DRG neuronal classification with appropriate marker genes and functional annotations consistent with published literature (Tavares-Ferreira et al., 2022). The cross-species comparison is supported by dot plots and heatmaps (Figures 7A-G, supplementary figures), with validation by RNAscope ISH and IF staining (C82). The identification of species-specific expression patterns is well-documented and important for translational research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Ligand-receptor interaction analysis between DRG and spinal cord neurons revealed putative connections including: CALCA-CALCRL (DRG to spinal C16), NGF-NGFR (DRG to spinal C0 and C16), SST-SSTR1 (DRG to spinal C6, C8, C19), APOE-LRP1 (DRG to spinal C6, C8, C10, C12), SLIT2-ROBO2 (NF4 to multiple spinal clusters), TAC1-TACR1 (PEP2-4 to dorsal spinal clusters), and NRG1-ERBB4 (NF clusters to superficial dorsal horn).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 present ligand-receptor interaction analysis using appropriate computational methods (SingleCellSignalR). The results are supported by Figure 8A-H showing interaction networks and spatial localization. While the interactions are computationally predicted and represent putative connections, the methodology is appropriate and the results are consistent with known biology (e.g., NRG1-ERBB4 interactions supported by citations to Calvo et al., 2010; Wang et al., 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "IL4R, IL31RA, and IL13RA1 (type 2 inflammatory cytokine receptors) were more widely expressed across human DRG neuron subtypes than in mice. Additionally, PVALB and SST showed broader expression across human DRG neuronal clusters than in mice, suggesting genes are more selectively expressed in mice than in human DRGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 describe species differences in inflammatory cytokine receptor and marker gene expression, supported by Figure 7\u2014figure supplement 4 and consistent with previous studies (Jung et al., 2023; Tavares-Ferreira et al., 2022). The inference that genes are more selectively expressed in mice (C130) is reasonable based on the observed broader expression patterns in humans, though this represents a generalization from limited examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "NRG1 from NF clusters (myelinated DRG neurons) is paired with ERBB4 in spinal superficial dorsal horn clusters, consistent with previous studies. This suggests NRG1 is likely secreted by NF clusters, activates ERBB4+ neurons in the superficial dorsal horn, and may induce heat hypersensitivity. NGFR and CALCRL in spinal C16 received broad inputs from various DRG neuronal clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C138 present ligand-receptor pairing data (C136, supported by Figure 8H and citations) but make mechanistic inferences about NRG1 secretion and heat hypersensitivity (C137) and functional importance of C16 (C138) that go beyond the computational predictions. While consistent with prior literature (Wang et al., 2022; Calvo et al., 2010), these functional claims require experimental validation (e.g., functional assays, perturbation experiments) that are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work has established the cellular composition and heterogeneity of the spinal cord, the advantages of single-nucleus RNA sequencing, and previous studies in mouse and developing human spinal cord. However, limited research has defined neuronal heterogeneity and spatial distribution in the adult human spinal cord at single-cell resolution, which is important because findings from animal experiments cannot always be directly replicated in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 summarize prior work and establish the rationale for the current study. All claims are supported by appropriate citations to published literature. The gap in knowledge regarding adult human spinal cord (C11) and the challenge of translating animal findings to humans (C12) provide clear justification for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "This study classified human spinal cord neurons into 21 subtypes with distinct transcriptional patterns, molecular markers, and functional annotations. The overall molecular and cellular organization is similar to mice with some heterogeneity. Several genes showed sex differences in motor neurons, and a publicly available website was created for data exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 summarize the main findings of the study, which are supported by the detailed results presented in subsequent claims and figures. The creation of a publicly available website (C16) enhances the impact and accessibility of the resource.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion of prior work on pain prevalence, sex differences, spinal cord function, and comparison with recent studies (Yadav et al., 2023) showing consistent findings regarding cell type distribution and marker gene expression. Species differences were noted, including the classification of cholinergic clusters as independent in human but part of excitatory clusters in mouse, and differences in expression patterns of opioid peptide genes (PENK, PDYN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C112 provide context from prior literature and compare current findings with recent work (Yadav et al., 2023). The claims are well-supported by appropriate citations and the comparisons with Yadav et al. demonstrate consistency in major findings while highlighting specific differences. The discussion of species differences in cholinergic cluster classification (C106-C107) and opioid peptide expression (C111-C112) is supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Discussion of prior work on DRG heterogeneity in rodents and humans, noting that multiple studies have characterized human DRG neurons with varying nomenclatures and cluster definitions. Previous studies identified genes differentially expressed between human and mouse DRG, including broader expression of SCN4B, IL31RA, IL4R, IL10RA, IL13RA1, TRPV1, SCN8A, and CALCA in human compared to mouse. Inconsistent nomenclatures across studies hinder comparison and clinical translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C127 summarize prior work on DRG characterization and highlight the challenge of inconsistent nomenclatures across studies (C124). All claims are supported by appropriate citations. The discussion of species differences in gene expression (C125-C126) and the role of inflammatory cytokines (C127) provides important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Discussion of prior work on DRG-spinal cord connections, noting that dorsal spinal neurons receive different DRG primary afferents to process sensory information, and that primary afferent axons terminate in different laminae. Previous studies showed NRG1 is mainly produced in myelinated neurons and that DRG TRPV1+ neuron-spinal ErbB4+ neuron connections are involved in heat sensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 provide context from prior literature on DRG-spinal cord connectivity and NRG1-ERBB4 signaling. All claims are supported by appropriate citations (Todd, 2010; Todd, 2017; Wang et al., 2022; Calvo et al., 2010; Velanac et al., 2012; Willem et al., 2006). This context supports the interpretation of the ligand-receptor interaction analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Methods: Lumbar spinal cord and L3-5 DRGs were isolated from nine adult brain-dead human donors (6 males, 3 females, 35-59 years old) within 90 minutes of cross-clamping. Donors had no acute/chronic pain and died from cerebral hernia or intraventricular hemorrhage. All procedures were approved by appropriate ethics committees and informed consent was obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 describe the sample collection and ethical procedures. The methods are appropriate with clear inclusion/exclusion criteria, rapid tissue collection (within 90 min), and proper ethical approvals. The sample size (n=9 donors) is reasonable for this type of study, though larger samples would strengthen statistical power for sex difference analyses.",
+    "result_type": "MINOR"
+  }
+]

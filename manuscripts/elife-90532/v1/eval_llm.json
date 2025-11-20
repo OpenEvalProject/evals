@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C44"
+    ],
+    "result": "FLT3-ITD mutations in AML occur in different domains (JMD vs TKD) and the location of the ITD is a crucial prognostic factor. Treatment with Midostaurin shows beneficial effects only in JMD patients, not in TKD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 and C44 establish the clinical context based on prior work (citations provided). These claims describe established knowledge about FLT3-ITD mutations and differential treatment responses, which form the motivation for the current study. The claims are consistently supported by citations to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C66",
+      "C67"
+    ],
+    "result": "Differences in TKI sensitivity between FLT3-ITD subtypes are related to genotype-specific rewiring of signaling networks, previously shown to involve the WEE1-CDK1 axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C66, and C67 describe prior findings from the authors' previous work, establishing the foundation for the current study. These are supported by citations and represent established knowledge from previous publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C46",
+      "C47",
+      "C73"
+    ],
+    "result": "A FLT3-ITD-specific prior knowledge network (PKN) was manually curated from the SIGNOR database, containing 76 nodes and 193 edges, and was enriched with experimental data due to limited knowledge about FLT3ITD-TKD signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C46, C47, and C73 describe the construction of the PKN. The network structure is quantitatively specified (C10), the data source is described (C46), the rationale for enrichment is provided (C47), and data availability is confirmed (C73). These are methodological claims that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C49",
+      "C50",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Multiparametric analysis of 14 sentinel proteins across 16 experimental conditions showed good reproducibility (Pearson r=0.75-1.0) and stratified cells by FLT3 activation status and cytokine stimulation, but not by ITD insertion site. JNKi treatment uniquely clustered with FLT3i treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15, C49-C50, and C74-C76 describe the multiparametric experimental results. Reproducibility is quantified (C12), PCA results are described (C13-C15), and the inability to distinguish JMD from TKD by targeted measurements is noted (C15, C76). The observation about JNKi clustering (C14) is a key finding. These claims are supported by referenced figures and are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C52",
+      "C53",
+      "C79",
+      "C80"
+    ],
+    "result": "Two genotype-specific Boolean models were generated (206-208 nodes, 756-782 edges) with different topologies and mostly cell-specific interactions, demonstrating profound signaling rewiring downstream of FLT3 due to different ITD locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C52-C53, and C79-C80 describe the structure and interpretation of the Boolean models. The network sizes are quantified (C16), differences are explained (C52-C53), and the biological interpretation of rewiring is provided (C19, C80). The better fit of the JMD model is attributed to more extensive prior characterization (C17, C54). These claims are well-supported by the methodology and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C81",
+      "C82"
+    ],
+    "result": "The Boolean models were validated using independent phosphoproteomic data and drug sensitivity screening data, demonstrating that they can recapitulate the differential TKI sensitivity of FLT3ITD-JMD versus FLT3ITD-TKD cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C81-C82 describe model validation using two independent datasets. The models' predictions are compared to phosphoproteomic data (C20) and Beat AML drug sensitivity data (C82), and the models successfully recapitulate known differential TKI sensitivity (C21, C81). This validation is critical for establishing model credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C83"
+    ],
+    "result": "In silico simulations predicted that combined JNK and FLT3 inhibition uniquely restores TKI sensitivity in FLT3ITD-TKD cells. This was validated experimentally: JNK inhibition (SP600125) alone or with Midostaurin significantly increased apoptosis and decreased proliferation in FLT3ITD-TKD cells and patient-derived blasts, while ERK1/2 or p38 inhibition had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 and C83 describe the key discovery of JNK's role. The in silico prediction (C22, C83) is followed by experimental validation in cell lines (C23, C25) and patient samples (C24), with appropriate negative controls (C26). The experimental data support the computational predictions, though the patient sample size is small (n=2 for TKD, n=3 for JMD+TKD in C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C55",
+      "C56",
+      "C84",
+      "C85"
+    ],
+    "result": "JNK plays a crucial role in TKI response through a cell cycle-dependent mechanism. In FLT3ITD-JMD cells, Midostaurin increases dephosphorylated CDK1 and inactivates CDK2, leading to G1 arrest. In FLT3ITD-TKD cells, Midostaurin triggers formation of inactive CDK1-CyclinB1 complex and G2-M accumulation. Combined JNK and FLT3 inhibition induces CDK1 dephosphorylation at Tyr15 in TKD cells, impacting cell cycle progression and reactivating apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C27-C31, C55-C56, and C84-C85 describe the mechanistic role of JNK in cell cycle regulation. The differential effects in JMD vs TKD cells are described (C27-C30), and the interpretation linking JNK to CDK1 activity is provided (C31, C84). This builds on prior work (C55-C56, C85) and is supported by western blot and cell cycle analysis data (referenced figures). The mechanism is plausible and consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C57",
+      "C86",
+      "C87"
+    ],
+    "result": "A pilot cohort of 14 FLT3-ITD AML patients (8 JMD, 4 JMD+TKD, 2 TKD) was analyzed, revealing genetic heterogeneity and high co-occurring alterations. Unsupervised clustering of mutational or expression profiles could not stratify patients by FLT3-ITD subtype. Patient-specific Boolean models were generated by integrating mutation and transcriptome data with cell-derived models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C57, and C86-C87 describe the patient cohort analysis. The cohort composition is specified (C32), genetic heterogeneity is documented (C33), and the inability to stratify by standard approaches is noted (C34). The integration strategy for patient-specific models is described (C87). These claims are supported by the data, though the small cohort size (especially only 2 TKD patients) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C88",
+      "C89"
+    ],
+    "result": "Patient-specific model predictions were confirmed by clinical data for 8 of 10 patients with follow-up. For some patients (JMD5, TKD1), predictions did not match clinical outcomes, possibly due to genetic complexity. For the TKD2 patient (clinically non-responsive), JNK inhibition was predicted to alleviate resistance through the STAT3/STAT5A axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C38 and C88-C89 describe patient-specific predictions and their validation. While predictions matched clinical data for 8/10 patients (C35, C88), there were discrepancies for 2 patients (C36, C89). The prediction for TKD2 (C37-C38) is interesting but represents a prospective prediction without experimental validation in that specific patient. The small sample size and mixed validation results make this result uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Limitations of the patient-specific models include: the complex mutational landscape of some patients may not be captured by the scaffold model, the patient subgroups may be too small for significant conclusions, the panel of molecular readouts may be too limited, and more heterogeneous training data may be needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C90-C92 acknowledge limitations of the approach. These are speculative explanations (C58, C90-C92) for the observed discrepancies between model predictions and clinical outcomes. The authors appropriately identify potential sources of error and limitations, which is important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C64",
+      "C72"
+    ],
+    "result": "Boolean logic models are crucial for predicting drug synergy and can test the effect of perturbations on phenotypes. CellNOptR was used to implement an integrated strategy combining PKNs with multiparametric analysis and Boolean modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43, C64, and C72 describe the general principles and capabilities of Boolean modeling and the specific software used. These are methodological claims supported by citations to prior work and represent established knowledge about the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C11",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The experimental model consisted of Ba/F3 cells expressing FLT3ITD-JMD or FLT3ITD-TKD. Cells were treated with various kinase inhibitors and stimuli across 16 experimental conditions, and 14 sentinel proteins were measured using xMAP technology. Inhibitors and stimuli were selected and optimized to perturb key signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C11, and C96-C109 describe the experimental system and methodology in detail. The cell lines are specified (C45, C96), culture conditions are described (C97-C101), and the rationale for experimental design is provided (C102-C107). The methodology is well-documented and appropriate for the study goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C51",
+      "C54",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C77",
+      "C78"
+    ],
+    "result": "General background knowledge: MAPKs, PI3K-AKT-mTOR, and STATs are main pathways downstream of FLT3, IGF1R, and TNFR. Cancer is a signaling disease, and targeted therapies often fail due to resistance. Genotype-dependent rewiring requires modeling approaches. Unbiased phosphoproteomics can discriminate FLT3-ITD subtypes, while targeted measurements may not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C51, C54, C60-C63, C77-C78 represent general background knowledge and contextual information. These are supported by citations or represent established knowledge in the field. They provide context for the study but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study aimed to generate clinically relevant predictive models of FLT3-ITD cell states to predict TKI sensitivity, generate personalized models, and propose patient-specific treatments. The integration of multiparametric data with PKNs in a Boolean framework enabled generation of optimized mechanistic models, providing proof-of-concept for a clinically valid personalized informatics approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 and C93-C95 describe the study goals and overall conclusions. The aims are clearly stated (C68-C71), and the conclusions (C93-C95) are supported by the results presented, though with acknowledged limitations. The proof-of-concept claim (C94) is reasonable given the mixed validation results, and the future potential (C95) is appropriately speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The two trained Boolean logic models have predictive power and can contribute to identifying potential therapeutic strategies improving clinical outcome of FLT3ITD-TKD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is a broad conclusion about the predictive power of the models. While the models showed some predictive ability (8/10 patients with matching predictions), the small sample size, limited validation, and acknowledged limitations make this claim uncertain. The models show promise but require further validation in larger cohorts.",
+    "result_type": "MAJOR"
+  }
+]

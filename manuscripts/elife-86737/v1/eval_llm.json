@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Foxb1-expressing neurons are located in the dorsal premammillary nucleus (PMd) and parvafox nucleus of the lateral hypothalamus, with projections terminating in the dorsolateral periaqueductal gray (dlPAG). These anatomical features are established through developmental lineage tracing and prior anatomical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C10 establish the anatomical organization of Foxb1+ neurons through citations to established literature (Alvarez-Bolado et al., 2000; Canteras and Swanson, 1992; Bilella et al., 2016). These are well-documented anatomical facts that provide the foundation for the functional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Chemogenetic activation of Foxb1+ neurons using hM3Dq with clozapine or CNO increases respiratory rate (BPM) by selectively shortening inspiratory time through increased peak inspiratory flow, without altering tidal volume. This effect is specific to hM3Dq-expressing animals and not observed in control or hM4Di groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C34 provide comprehensive statistical evidence from whole-body plethysmography with appropriate controls (DREADD_neg, hM4Di), multiple ligands (clozapine, CNO), and c-Fos validation. The mixed-design ANOVA with post-hoc tests and effect size calculations support the respiratory phenotype. The specificity is confirmed by lack of effects in controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Chemogenetic activation of Foxb1+ neurons produces only small or negligible effects on locomotor activity that are unlikely to explain the large respiratory changes observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 demonstrate that while some statistically significant effects on locomotion were observed, the effect sizes were small (g=0.225) or negligible (g=0.081), contrasting with the large effect sizes for respiratory parameters. This appropriately addresses potential confounds and strengthens the respiratory findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C58",
+      "C59"
+    ],
+    "result": "Optogenetic activation of Foxb1+ terminals in the rostral dlPAG induces immobility with short latency, characterized by decreased distance moved, reduced speed, increased time immobile, and altered spatial distribution. The effect is anatomically specific to the rostral dlPAG and shows dose-dependency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C52, C58-C59 provide quantitative behavioral data with appropriate statistics (Welch's t-tests, large effect sizes g>1.0) and anatomical specificity (OnTarget vs OffTarget groups). The behavioral phenotype is well-characterized across multiple parameters with consistent directionality. Videos provide qualitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C60",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Optogenetic inhibition using ArchT3.0 produces bidirectional effects opposite to ChR2 activation, supporting the specificity of the projection and arguing against antidromic propagation artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C60, C137-C140 demonstrate bidirectional control with ArchT3.0 producing opposite effects to ChR2. This is critical for establishing causality and ruling out technical artifacts. The logic regarding antidromic propagation (C140) is sound, and the use of inhibitory opsins circumvents backpropagation concerns (C137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The optogenetic experiments co-activate both parvafoxFoxb1 and PMdFoxb1 terminals in the dlPAG due to viral spread, though only PMd among mammillary nuclei projects to rostral dlPAG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 acknowledge an important technical limitation with appropriate citations (Vertes, 1992; Canteras and Swanson, 1992). The authors correctly identify that viral spread affects interpretation but provide anatomical evidence that only PMd among mammillary nuclei projects to the stimulation site. This transparency is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Single-cell RNA sequencing reveals that the PMd contains distinct subpopulations of Cck+ and Foxb1+ neurons with biased spatial distribution, establishing PMdFoxb1 as a novel functional subdivision distinct from PMdCck.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 provide computational analysis of published scRNA-seq data with appropriate clustering, marker validation, and visualization. The identification of single-positive populations for Cck and Foxb1 with spatial segregation supports the existence of distinct subpopulations. The analysis is methodologically sound with proper quality control and validation against Allen Brain Atlas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Optogenetic manipulation of Foxb1+ terminals does not affect thermal nociception in hot plate tests, though the immobility phenotype can be overcome by nociceptive stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 show no significant differences in hot plate responses across groups with appropriate statistical tests. The interpretation that immobility can be escaped with sufficient stimulus intensity (C74) is reasonable given the lack of altered latencies. This addresses the relationship to prior work on parvafoxPvalb and pain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Optogenetic activation of Foxb1+ terminals in the rostral dlPAG induces bradycardia in a subset of mice (3/8) with rapid onset and offset kinetics, anatomical specificity, and increased heart rate variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C82 describe cardiovascular effects in only 3 of 8 mice with appropriate anatomical specificity and temporal characteristics. However, the authors explicitly state this is 'observational' with insufficient sample size for statistical conclusions. The anatomical specificity (C79-C81) and HRV changes (C82) are compelling, but the limited n and lack of statistical validation prevent full support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C143",
+      "C144"
+    ],
+    "result": "Chemogenetic and optogenetic activation of Foxb1+ neurons produces a phenotype consistent with innate defensive behavior, including tachypnea, immobility, and bradycardia, mediated at least partly through projections to the dlPAG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85, C143-C144 synthesize the main findings across experimental modalities. The convergence of chemogenetic (respiratory) and optogenetic (immobility, bradycardia) results supports the overall conclusion. The inference that effects are mediated through dlPAG projections (C85) is reasonable given the anatomical and functional data, though the chemogenetic approach lacks projection specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C113",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors propose that Foxb1+ and Cck+ neurons in the PMd represent distinct populations mediating opposite behaviors (immobility vs escape), potentially through differential targeting of GABAergic vs glutamatergic neurons in the dlPAG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62, C104-C108, C111-C113, C145-C146 present a mechanistic hypothesis to reconcile opposing behavioral effects. While the scRNA-seq data (C112) supports distinct populations, the circuit mechanism (C107-C108, C111) remains speculative without direct evidence of differential connectivity to GABAergic interneurons. The hypothesis is plausible but requires validation through intersectional approaches or connectivity mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The dlPAG receives multiple inputs including from Foxb1+ hypothalamic neurons, SF1+ VMH neurons, and glutamatergic superior colliculus neurons, all implicated in defensive behaviors with distinct functional properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 establish the broader circuit context through citations to established literature. These provide important background for interpreting the current findings but represent prior work rather than new results. The citations are appropriate and accurately represent the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors propose downstream circuit mechanisms involving the cuneiform nucleus, vagal motor nuclei, and parasympathetic control to explain the respiratory and cardiovascular effects, supported by literature on dlPAG efferents and autonomic control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C88, C114-C126 propose circuit mechanisms based on literature citations. While the proposed pathways are anatomically plausible and supported by prior work, they remain speculative in the context of this study. The interpretation of HRV changes as parasympathetic (C124) is reasonable with appropriate citation, but direct circuit validation is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors discuss observations from unreported social interaction experiments and recent literature on social avoidance, suggesting that motor deficits may confound interpretation of social behaviors during Foxb1+ neuron activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C129 describe unreported observations that cannot be fully evaluated. Claims C130-C133 appropriately critique recent literature (Liu et al., 2022) by noting potential motor confounds, which is a valid concern given the immobility phenotype. However, without systematic data, this remains speculative. Claim C134 reasonably interprets the hot plate data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors acknowledge technical limitations of optogenetic terminal stimulation including potential antidromic propagation and pH-mediated side effects of ArchT3.0, implementing appropriate experimental controls and stimulation paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136, C141-C142 demonstrate appropriate awareness of technical limitations with citations (Mahn et al., 2016, 2021; Rost et al., 2022). The use of intermittent stimulation for ArchT3.0 (C141) shows methodological sophistication. This transparency strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors provide extensive discussion of anatomical connectivity patterns and functional properties of PMd and parvafoxFoxb1 neurons based on prior literature, establishing the context for differential functional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C103 synthesize prior anatomical and functional literature with appropriate citations. These establish important context for interpreting the current findings and support the hypothesis of distinct functional roles. The citations are accurate and comprehensive, though these represent background rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C40",
+      "C42",
+      "C43",
+      "C92",
+      "C93",
+      "C101",
+      "C104"
+    ],
+    "result": "The authors introduce genephys, a generative model of electrophysiological brain responses that simulates chaotic oscillatory activity under no stimulation and stimulus-specific responses through multiple configurable mechanisms including phase resetting, additive oscillations, amplitude modulations, and non-oscillatory responses. The model is publicly available as a Python package and is designed to be empirical, accounting for observable signal features without making assumptions about underlying neurobiological causes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23-C30, C34, C40, C42-C43, C92-C93, C101, and C104 collectively describe the design and features of the genephys model. These are methodological descriptions of the model's construction and are internally consistent. The model's availability (C40) and its empirical nature (C34) are straightforward statements. The various response mechanisms (C26-C29) are design choices supported by prior literature (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C35",
+      "C50",
+      "C137"
+    ],
+    "result": "Genephys can reproduce structured patterns of decoding accuracy observed in real data, specifically generating temporal generalisation matrices (TGMs) with characteristic features similar to empirical data including strong diagonals, vertical/horizontal bands, and broadening of accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C35, C50, and C137 are supported by the simulation results presented in Figures 3-7. The authors demonstrate qualitative similarity between synthetic and real TGMs across multiple configurations. However, the evaluation is primarily qualitative rather than quantitative (except for one optimization example in Figure 8), and the authors explicitly state they did not optimize parameters to match specific datasets (C136, C143).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C108",
+      "C109"
+    ],
+    "result": "Two different mechanisms can produce realistic decoding patterns: phase resetting followed by frequency entrainment, or additive oscillations with stimulus-specific phase. Phase resetting is a stronger effect than additive oscillation, but standard decoding analysis can only differentiate between these mechanisms to a limited extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C50-C53, C108-C109 are supported by simulations shown in Figure 3. The authors demonstrate that both mechanisms produce qualitatively similar TGM patterns and explain mechanistically why phase resetting is stronger (C51-C53). The limitation of standard decoding to distinguish these mechanisms (C108-C109) is an important caveat that is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C67",
+      "C113"
+    ],
+    "result": "Stimulus-specific information spans a large number of channels stochastically, requiring both high dimensionality (many relevant channels) and noise/instability (probabilistic activations) to produce realistic decoding patterns. Having only a few relevant channels produces unrealistically geometric TGM patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59, C67, and C113 are supported by simulations shown in Figure 4, which systematically vary the number of relevant channels and activation probability. The progression from geometric to realistic patterns as dimensionality and stochasticity increase is clearly demonstrated. The inference about real data (C56) follows logically from the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C114"
+    ],
+    "result": "The oscillatory effect must span diverse frequencies and latencies across channels to produce realistic decoding patterns. Having uniform frequency or latency produces unrealistic regular patterns (checkerboard or parallel bands), while diversity in both dimensions produces patterns most consistent with real data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C64-C66, C68, and C114 are supported by simulations shown in Figure 5 and Figure 5\u2014figure supplement 1. The systematic manipulation of frequency and latency diversity clearly demonstrates that both are necessary for realistic TGMs. The inference about non-periodic phase trajectories (C64) follows logically from the absence of checkerboard patterns in real data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The broadening of decoding accuracy in TGMs as time progresses can be reproduced through addition of a slowly progressing non-oscillatory response, with decoding accuracy strength growing as the difference in slow response between stimuli increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by simulations shown in Figure 6A. The observation from real data (C69) is documented in Figure 2, and the simulation successfully reproduces this feature. The interpretation (C70) is noted as common in the literature but is not directly tested. The mechanistic explanation (C71-C72) is clearly demonstrated in the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C37",
+      "C111",
+      "C112"
+    ],
+    "result": "Vertical and horizontal bars of high accuracy in TGMs emerge from phase coupling between oscillatory and slower components, with in-phase relationships producing patterns most consistent with real data. This cross-frequency coupling is necessary for realistic decoding patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77, C37, C111-C112 are supported by simulations shown in Figure 6B. The systematic variation of phase relationships between oscillatory and slow components clearly demonstrates the impact on TGM patterns. The finding that in-phase coupling produces the most realistic patterns (C77) is based on qualitative comparison to real data shown in Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C115"
+    ],
+    "result": "Amplitude modulations are not necessary for realistic TGM patterns but can enhance existing patterns. The main TGM features are present regardless of amplitude effect size, though more prominent with higher modulations. Amplitude effects alone without phase effects cannot produce significant decoding accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C115 are supported by simulations shown in Figure 7. The systematic variation of amplitude modulation strength demonstrates that phase effects are primary while amplitude modulations are modulatory. The inference that amplitude alone is insufficient (C80) follows logically from the requirement for cross-trial phase locking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C38",
+      "C39",
+      "C116"
+    ],
+    "result": "Features supporting successful decoding include an oscillatory component spanning multiple channels, frequencies, and latencies, plus an additive slower response with specific cross-frequency phase relations. Despite these stable average patterns, individual trial responses remain highly variable due to factors including phase noise and probabilistic activations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C38-C39, and C116 summarize the main findings from the simulation studies. These are well-supported by the collective evidence from Figures 3-7 and represent the paper's primary conclusions about what signal features support stable decoding despite trial-level variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Brain responses to stimuli are highly variable at the trial level, yet perceptual experience feels stable. Standard decoding models, based on averages, focus on stable features across presentations, but identifying which specific features are most stable requires a generative model. The brain must transit from microscopic sensory variability to macroscopic perceptual invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C14-C18, C83-C87 establish the motivation and context for the work. These are supported by citations to established literature (C12-C13, C16-C17, C85) and represent well-accepted knowledge in neuroscience. The reasoning about the need for generative models (C5) and the brain's transition from variability to stability (C15, C87) are logical inferences that motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C44",
+      "C45",
+      "C46",
+      "C121",
+      "C122"
+    ],
+    "result": "Decoding analysis uses machine learning to predict stimulus identity from brain data and estimates discriminative functions per time point. The temporal generalisation matrix (TGM) provides a read-out of decoding accuracy across training and testing time points. However, it is not straightforward to identify which signal aspects cause observed decoding patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C44-C46, C121-C122 describe established decoding methodology supported by citations (C19, C44). The description of TGM interpretation (C45-C46) reflects standard understanding. The limitation identified (C21-C22) is a valid methodological challenge that motivates the development of genephys.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C69",
+      "C73",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Real-data TGMs from visual perception experiments exhibit characteristic features including a strong narrow diagonal early in trials that broadens and weakens over time, bands of higher-than-baseline accuracy with oscillatory behavior, and vertical/horizontal bars stemming from maximum accuracy points. These patterns show substantial variability across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C69, C73, C141-C143 describe observations from real MEG data shown in Figure 2. These are empirical observations from the reference dataset (Cichy et al., 2016) and are well-documented in the figures. The acknowledgment of inter-subject variability (C81, C142-C143) is important for contextualizing the qualitative nature of the model comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Previous work analyzed brain responses to perceptual stimulation using average evoked responses, arguing for either additive responses or phase resetting, but did not investigate what aspects of data carry information about stimulus identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 characterize prior work and are supported by appropriate citations (C88-C90). The identified limitation (C91) appropriately distinguishes the current work's focus on stimulus-discriminative features from prior work's focus on average responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C110"
+    ],
+    "result": "By contrasting generated TGMs to empirical TGMs, the model can provide insight into mechanisms underlying specific tasks. The demonstrations are intentionally qualitative, but hyperparameters can be optimized for specific datasets using methods like Bayesian optimization, potentially identifying neurobiologically interpretable features. Alternative analysis methods might better disentangle sources of variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 and C110 describe potential future applications and improvements. While the basic capability is demonstrated in Figure 8 (achieving r=0.7 correlation), these remain largely speculative about future utility (C94, C96-C98, C110). The suggestions are reasonable but represent proposed rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C62",
+      "C63",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The model's effects may be underpinned by distinct neural mechanisms, and disentangling them could help resolve questions about oscillations' role in stimulus processing. The list of effects is not exhaustive, and various extensions are possible including non-linear oscillations, coupled oscillators, multiple ongoing frequencies, and different forms of stochasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C33, C62-C63, C99-C100, C102-C103, C105-C107 discuss biological interpretation and potential model extensions. These are appropriately speculative (C31, C33, C62-C63, C100, C106-C107) and acknowledge limitations (C99, C102, C105). The suggestions for extensions (C100, C103, C107) are supported by citations but represent future work rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C133",
+      "C135",
+      "C136",
+      "C139",
+      "C140"
+    ],
+    "result": "The simulations used specific parameters (250 trials, 250 time points, 32 channels, frequencies 0.4-10 Hz) and compared results to MEG data from a visual object recognition task. Model parameters were not optimized to match fine details of real-data TGMs due to variability across subjects and paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C130, C133, C135-C136, C139-C140 describe the simulation setup and reference data. These are straightforward methodological descriptions that are internally consistent. The decision not to optimize parameters (C136) is justified by inter-subject variability and aligns with the qualitative approach taken in most analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Figure 1 shows examples of simulated phase resetting and additive oscillation effects compared to real MEG data, illustrating how the model generates signals with components (phase, frequency, amplitude, additive responses) similar to those observed in empirical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 describe Figure 1, which provides illustrative examples of the model's output. The comparison to real data (C120, citing Cichy et al., 2016) is qualitative but appropriate for demonstrating the model's face validity. The figure effectively illustrates the model's components and their relationship to observable signals.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C43",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Deletion of tricalbins (Tcb1, Tcb2, and Tcb3) causes vacuolar fragmentation in S. cerevisiae. Single deletion of TCB1 or TCB3 is sufficient to induce strong vacuole fragmentation, with tcb1\u03942\u03943\u0394 cells showing decreased percentage of cells with one vacuole and increased percentage with two or more vacuoles compared to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C43, C49-C51 are well-supported by experimental data in Figures 1A and 1B showing vacuolar fragmentation phenotypes in tricalbin deletion strains. The microscopy images and quantification demonstrate clear and statistically significant differences in vacuolar morphology between wild type and mutant strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Vacuolar fragmentation in tricalbin deletion mutants is not due to loss of V-ATPase function. Tricalbin mutant strains grow normally in both acidic and alkaline media, unlike vma3\u0394 mutants which fail to grow at alkaline pH, indicating functional V-ATPase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by growth assay data in Figure 1\u2014figure supplement 1A. The experimental design appropriately uses vma3\u0394 as a negative control for V-ATPase function, and the results clearly distinguish tricalbin mutants from V-ATPase-deficient mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Tricalbin deletion does not impair endosome-vacuole fusion or vacuolar protein delivery. GFP-Cps1p localizes normally to the vacuole lumen in tcb3\u0394 cells, and CPY maturation is unaffected, indicating that tricalbins maintain vacuole morphology through a mechanism independent of vacuolar acidification or endosome-vacuole fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by GFP-Cps1p localization data in Figure 1\u2014figure supplement 1B and cited CPY maturation data (C63). The use of vps4\u0394 as a control for ESCRT dysfunction is appropriate, and the results clearly show normal protein delivery in tricalbin mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Loss of tricalbins primarily affects vacuolar fission machinery rather than fusion. Addition of water to tcb1\u03942\u03943\u0394 cells partially restores vacuole fragmentation, indicating that vacuolar fusion machinery remains functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by experimental data in Figure 1C showing partial rescue of vacuolar fragmentation by hypotonic stress. The logic is sound: if fusion were impaired, hypotonic stress (which promotes fusion) would not rescue the phenotype. However, the rescue is only partial, suggesting the mechanism is more complex than stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Tricalbins and TORC1 act in parallel and opposite ways to regulate vacuole fission. Rapamycin (TORC1 inhibitor) suppresses vacuolar fragmentation in tcb1\u03942\u03943\u0394 cells, but tricalbin deletion does not activate TORC1 as measured by Sch9p phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by data in Figures 1C and 1D. The rapamycin suppression experiment (C72) and Sch9p phosphorylation analysis (C74) provide converging evidence for the parallel pathway model. The conclusion (C76) is a reasonable inference from the data, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The transmembrane (TM) domain of Tcb3p is sufficient to maintain vacuolar morphology by mediating tricalbin complex formation with Tcb1p and Tcb2p. Cells expressing only Tcb3(TM)-GBP maintain normal vacuole morphology, but this requires the presence of Tcb1p and Tcb2p. Structural modeling and coimmunoprecipitation confirm physical interactions between tricalbins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C90 are supported by domain deletion experiments in Figure 2B, coimmunoprecipitation data in Figure 2\u2014figure supplement 1, and AlphaFold2 modeling in Figures 2C-D. The experimental design systematically tests domain requirements, and the structural modeling provides mechanistic insight. The conclusion that the TM domain mediates complex formation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C93"
+    ],
+    "result": "Phytosphingosine (PHS) and other sphingolipid precursors accumulate in tcb1\u03942\u03943\u0394 cells. Lipid analysis shows significant increases in ceramide species, phosphatidylethanolamine, PHS, phosphatidylinositol, complex sphingolipids (IPC and MIPC), and LCB-1P levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C93 are supported by [3H]DHS labeling data in Figure 3A. The lipid analysis is comprehensive and shows statistically significant increases in multiple sphingolipid species. The methodology is appropriate for measuring sphingolipid levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C109"
+    ],
+    "result": "Accumulated PHS triggers vacuolar fragmentation in tricalbin-deleted cells. Exogenous PHS induces vacuolar fragmentation in wild type cells, and lag1\u0394lac1\u0394 cells (which accumulate PHS) show vacuolar fragmentation. PHS-induced fragmentation occurs even in lag1\u0394 cells that cannot convert PHS to ceramide, indicating that PHS itself, not its downstream products, causes fragmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46, C94-C98, C109 are supported by data in Figures 3B-C. The experimental logic is sound: showing that exogenous PHS induces fragmentation (C95), that cells unable to convert PHS to ceramide still fragment (C94), and that lag1\u0394 cells treated with PHS fragment (C97) collectively support the conclusion that PHS accumulation causes fragmentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PHS-induced vacuolar fragmentation requires dephosphorylation of PHS-1P by Lcb3p. PHS-induced fragmentation is completely blocked in lcb3\u0394 cells but occurs in lcb4\u0394 lcb5\u0394 cells, indicating that elevated levels of non-phosphorylated PHS induce vacuolar fragmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 are supported by data in Figure 3D. The genetic dissection of the phosphorylation/dephosphorylation pathway is well-designed, with appropriate controls. The complete block of PHS-induced fragmentation in lcb3\u0394 cells (C103) is particularly strong evidence for the requirement of Lcb3p-mediated dephosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Overexpression of Rsb1p, a translocase that exports LCBs from the inner to outer leaflet of the plasma membrane, decreases vacuole fragmentation in tcb1\u03942\u03943\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by data in Figure 3F. The result is consistent with the model that PHS accumulation causes fragmentation, as exporting PHS would reduce intracellular levels. However, the mechanism by which Rsb1p overexpression affects vacuolar PHS levels is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Vesicle-mediated transport is not required for PHS-induced vacuolar fragmentation. In sec18-20 mutant cells at the restrictive temperature (30\u00b0C) where vesicular transport is abolished, PHS still induces vacuolar fragmentation to the same extent as at the permissive temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 are supported by data in Figure 4A. The use of the temperature-sensitive sec18-20 mutant is an appropriate approach to test the requirement for vesicular transport. The result clearly shows that PHS-induced fragmentation occurs even when vesicular transport is blocked.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C47",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The nucleus-vacuole junction (NVJ) is required for PHS-induced vacuolar fission. Deletion of NVJ tethering proteins (NVJ1, NVJ2, NVJ3, MDM1) suppresses vacuolar fragmentation in both PHS-treated cells and tcb3\u0394 cells, with complete suppression requiring loss of all NVJ factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C47, C115-C117 are supported by data in Figures 4B-C. The genetic approach systematically tests the requirement for NVJ components, showing dose-dependent suppression. The result strongly supports the model that PHS transport across the NVJ induces vacuole division, though direct demonstration of PHS transport is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Hyperosmotic shock-induced vacuole fission is mediated by PHS accumulation and the NVJ. NaCl treatment increases PHS levels (10% at 0.2 M, 30% at 0.8 M) while decreasing ceramide and IPC. Loss of NVJ completely suppresses NaCl-induced vacuolar division, and Rsb1p overexpression suppresses NaCl-induced fragmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 are supported by data in Figures 5A-C. The experiments demonstrate that a physiological stimulus (hyperosmotic shock) induces vacuolar fission through the same PHS/NVJ pathway identified in tricalbin mutants. The lipid analysis (C120-C122) provides mechanistic insight, though the reasons for NaCl-induced changes in sphingolipid metabolism are not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C125",
+      "C148"
+    ],
+    "result": "Vacuolar morphology is maintained by membrane contact sites (MCSs) through regulation of sphingolipid metabolism. MCSs regulate vacuolar morphology in two steps: first, tricalbin-tethered MCSs between ER and PM/Golgi modulate intracellular PHS levels; second, accumulated PHS induces vacuole fission via the NVJ. The NVJ and PHS play a general regulatory role in vacuolar morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C48, C125, C148 represent the main conclusions of the study and are supported by the collective experimental data. The two-step model is well-supported by evidence showing that tricalbin deletion leads to PHS accumulation (Figures 3A), that PHS induces fragmentation (Figure 3C), and that the NVJ is required for this process (Figures 4B-C). The generality of the mechanism is supported by the hyperosmotic shock experiments (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "PHS-induced vacuolar fragmentation can be suppressed by loss of Fab1p and Vac14p, suggesting that PHS-induced fragmentation employs these known fission factors as executioners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 are supported by data in Figure 4\u2014figure supplement 1. The result provides insight into the downstream mechanism of PHS-induced fission, linking it to the established Fab1p/Vac14p/PtdIns[3,5]P2 pathway. However, the mechanism by which PHS activates this pathway is not determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background information on vacuolar biology, fusion/fission mechanisms, and membrane contact sites. These claims establish the scientific context for the study, describing established knowledge about vacuole function, fusion/fission machinery, and MCSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C41 are background claims supported by citations to previous literature or established knowledge. These provide necessary context but do not represent novel findings of this study. The citations appear appropriate and the background information is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Background information on tricalbin proteins and their known functions. Tricalbins are ER membrane tethering proteins that connect ER with PM and Golgi, contributing to PI4P turnover, sterol flux, lipid homeostasis, ER membrane curvature, and ceramide transport. Previous studies showed genetic interactions between tricalbins and NVJ/vacuolar fusion components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44-C45, C149-C156 are background claims supported by citations to previous literature. These establish the rationale for investigating tricalbin function in vacuolar morphology. The citations appear appropriate and provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C87"
+    ],
+    "result": "Background information on tricalbin protein interactions and membrane protein structure. Tcb2p interacts with Tcb1p or Tcb3p through C-terminal domains, and alpha-helical structure is typical for membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C87 are background claims supported by citations to previous literature or established knowledge. These provide context for interpreting the structural modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Discussion of potential mechanisms and prior observations related to sphingolipid metabolism and vacuolar morphology. These claims discuss possible explanations for PHS accumulation in tricalbin mutants, mechanisms of PHS-induced fragmentation, and connections to previous observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92, C126-C147 are primarily speculative discussion points supported by citations to previous literature. While they provide valuable context and potential mechanisms, they represent hypotheses rather than demonstrated findings of this study. Some claims (e.g., C132-C135 about Mdm1p) involve reinterpretation of previous findings. The discussion is reasonable but requires further experimental validation.",
+    "result_type": "MINOR"
+  }
+]

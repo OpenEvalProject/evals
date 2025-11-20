@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C93"
+    ],
+    "result": "The authors developed a novel hybrid computational model combining Kuramoto oscillators (representing the medial septum) with a biophysically realistic hippocampal network to generate both theta-nested gamma oscillations and theta phase reset, addressing limitations of previous models that used fixed theta inputs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praised this as a 'novel model' and 'key innovation,' with one stating the model 'displays phase-amplitude coupling of gamma oscillations, as well as theta resetting, which are known features of physiological theta that have been missing in previous models.' The modeling approach is described as 'convincing' and the study is 'clearly presented and supported by high quality figures.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71"
+    ],
+    "result": "The model successfully replicates theta phase reset during single-pulse stimulation, with the phase response curve (PRC) designed to match experimental observations from hippocampal pyramidal cells showing biphasic behavior.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the model generates phase reset, one reviewer raises a significant concern that 'the phase reset mechanism is important because it underlies several of the phase reset behaviors shown by the full model. However, it is not derived from experimental phase response curves of septal neurons of which there is no direct measurement.' The reviewer suggests 'the work would benefit from the use of a more biologically validated MS model.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C41",
+      "C42",
+      "C82",
+      "C83",
+      "C88",
+      "C89"
+    ],
+    "result": "For moderate theta input (just below threshold), single-pulse stimulation can switch the network from quiescence to sustained theta-nested gamma oscillations, with phase-dependent effects that are eliminated when phase reset is included in the model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers question the generalizability and biological basis of this bistability result. One reviewer states 'the model shows bistability between quiescence and TNGO, however what aspect of the model underlies this, be it some particular network structure or particular ion channel, for example, is not addressed' and notes 'the quiescent state itself shown by this model seems quite artificial.' The reviewer requests 'an intuitive analysis of the basic model ingredients underlying its neurostimulation response properties.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C43",
+      "C44",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "For weaker theta input, pulse train stimulation at theta frequency can transiently restore physiological theta-gamma oscillations during the stimulation period, with phase-dependent effects only when theta reset is not included.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not directly challenge this finding, they express concern about the lack of experimental validation. One reviewer states 'while investigations of hippocampal neurostimulation are important there are few experimental studies from which one could judge the validity of the model findings. All its findings are therefore predictions. It would be much more convincing to first show the model is able to reproduce some measured empirical neurostimulation effect before proceeding to make predictions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C41",
+      "C42",
+      "C44",
+      "C88",
+      "C89",
+      "C99",
+      "C100"
+    ],
+    "result": "The presence of phase reset determines whether stimulation effects depend on the phase at which stimulation is delivered, with practical implications for designing phase-triggered neurostimulation protocols.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not directly validate this finding and raise concerns about the phase reset mechanism's biological validity. One reviewer notes the phase reset mechanism 'is not derived from experimental phase response curves of septal neurons' and another points out that 'the degree of phase reset that follows each stimulation pulse remains unknown and should be investigated in future experimental studies' (as acknowledged by the authors themselves).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In the absence of theta drive, single-pulse stimulation produces transient bursts of activity (one or two bursts depending on amplitude), with the presence of multiple bursts depending on the interplay between CAN and M currents.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this mechanistic finding. One reviewer explicitly acknowledges 'some indication that particular ion channels, CAN and M are relevant is briefly provided,' though they suggest 'the work would be much improved by examining this aspect in more detail.' The finding is treated as a valid mechanistic insight but could be explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Removing CAN currents from the model abolishes the ability of single-pulse stimulation to induce self-sustained theta-nested gamma oscillations, consistent with the known role of this current in EC neuron multistability and hippocampal oscillation generation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this finding. The mechanistic role of CAN currents is acknowledged as relevant to understanding the model's behavior, though reviewers suggest more detailed analysis would strengthen the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The model replicates the PING (pyramidal-interneuronal network gamma) mechanism, showing emergence of gamma oscillations above a certain input threshold through reciprocal excitatory-inhibitory interactions, consistent with optogenetic studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these validation results. The model's ability to replicate known gamma generation mechanisms is implicitly accepted as part of the 'convincing approaches' and 'high quality' modeling work praised by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model replicates experimental findings that interneurons show preferential entrainment around 40-50 Hz when driven by pulsed stimulation, while excitatory neurons respond better to lower frequencies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these validation results against experimental data. These findings are part of the model validation that supports the overall 'convincing approaches' noted by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C64"
+    ],
+    "result": "Under theta drive, the model generates theta-nested gamma oscillations with gamma activity (40-80 Hz) occurring preferentially around the peak of theta, demonstrating theta-gamma phase-amplitude coupling.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this as a key capability of the model. One reviewer states the model 'displays phase-amplitude coupling of gamma oscillations...which are known features of physiological theta that have been missing in previous models.' This is treated as a validated and important model feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C94"
+    ],
+    "result": "The general approach of interfacing Kuramoto oscillators with biophysical models is generalizable to other models and brain structures, as demonstrated by successfully applying it to a neural mass model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this methodological contribution positively. One reviewer notes the 'hybrid interfacing between two levels of abstraction represents an innovation in itself' and that the study has 'strong utility for researchers wanting to explore hypotheses in the field of neurostimulations.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors model pathological states (e.g., Alzheimer's disease) by reducing theta input amplitude to simulate medial septum neurodegeneration, which disrupts theta-gamma oscillations in the model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer directly challenges this modeling choice, stating 'it is not clear what pathology the authors are referring to, especially since a large amount of \"oscillopathies\" in the septohippocampal system are associated with decreased gamma/PAC, but not theta oscillations (e.g. Alzheimer's disease conditions).' The reviewer notes this represents 'a missed opportunity to explain many experimental accounts with this novel model.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The model uses a simplified representation where the medial septum projects only to EC (not directly to CA1 or CA3), based on experimental evidence that septal inputs to EC are the main source of hippocampal theta.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "One reviewer identifies 'anatomical inaccuracies' and states 'the authors omit medial septum projections to area CA1 (in addition to the entorhinal cortex). Moreover, in addition to CA1, CA3 also provides monosynaptic feedback projections to the medial septum.' The reviewer suggests this 'could be of particular relevance to support claims related to effects of neurostimulations' and recommends either updating the model or adding this to the limitations section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The model does not include the lateral septum, which experimental studies have shown plays an important role in regulating hippocampal theta rhythm through projections that can entrain theta oscillations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "One reviewer explicitly notes this limitation, stating 'an experimental study has highlighted the importance of the lateral septum in regulating the hippocampal theta rhythm...an area that has not been included in the model' and mentions that 'an indirect projection from CA1/3 excitatory neurons to the lateral septum, which in turn sends inhibitory projections to the medial septum could be included or mentioned by the authors.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The model simplifies inhibitory interneurons to only basket cells, omitting other interneuron types like OLM cells that have been shown to play crucial roles in theta-gamma PAC and phase relationships.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "One reviewer raises this as a significant limitation, noting 'it includes only excitatory cells and a single type of inhibitory cell. This is particularly important since there are many models and experimental studies where specific cell types, for example, OLM and VIP cells, are strongly implicated in TNGO.' The reviewer emphasizes this is important because 'OLM neurons in the CA1 field have been shown to play a crucial role in synchronizing the activity of pyramidal neurons at gamma frequencies.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "The model does not include synaptic plasticity mechanisms, which could drastically modify network behavior and would enable investigation of LTP-promoting protocols like theta-burst stimulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this as a limitation but do not challenge the authors' acknowledgment of it. One reviewer notes 'other missing ingredients one may think might have a strong impact on model response to neurostimulation (in particular stimulation trains) include the well-known short-term plasticity between different hippocampal cell types.' This is treated as a recognized limitation for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The model uses a simplified representation of electrical stimulation as intracellular current applied equally to all neurons, rather than a more realistic multi-compartment cable model that would capture axonal activation by extracellular fields.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this limitation without directly challenging it. One reviewer notes the model uses 'single-compartment models' and that 'considerable important factors are not included,' mentioning that 'active dendritic properties' are missing. The authors' acknowledgment of this simplification is implicitly accepted.",
+    "result_type": "MINOR"
+  }
+]

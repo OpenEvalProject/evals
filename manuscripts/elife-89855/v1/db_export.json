@@ -1,0 +1,2421 @@
+{
+  "submission": {
+    "id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:43:58.577798Z",
+    "updated_at": "2025-11-20T20:43:58.577798Z"
+  },
+  "content": [
+    {
+      "id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "content_type": "manuscript",
+      "content_text": "# High-resolution kinetics of herbivore-induced plant volatile transfer reveal clocked response patterns in neighboring plants\n\n## Authors\n\n- Jamie Mitchel Waterman<sup>1</sup> ([ORCID: 0000-0003-1782-827X](https://orcid.org/0000-0003-1782-827X)) \u2020\n- Tristan Michael Cofer<sup>1</sup> ([ORCID: 0000-0001-6175-9668](https://orcid.org/0000-0001-6175-9668))\n- Lei Wang<sup>1</sup> ([ORCID: 0000-0002-6332-6476](https://orcid.org/0000-0002-6332-6476))\n- Gaetan Glauser<sup>2</sup> ([ORCID: 0000-0002-0983-8614](https://orcid.org/0000-0002-0983-8614))\n- Matthias Erb<sup>1</sup> ([ORCID: 0000-0002-4446-9834](https://orcid.org/0000-0002-4446-9834)) \u2020\n\n### Affiliations\n\n1. Institute of Plant Sciences, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))\n2. Neuch\u00e2tel Platform of Analytical Chemistry, Faculty of Science, University of Neuch\u00e2tel Neuch\u00e2tel Switzerland ([ROR:00vasag41](https://ror.org/00vasag41))\n\n\u2020 Corresponding author\n\n## Abstract\n\nVolatiles emitted by herbivore-attacked plants (senders) can enhance defenses in neighboring plants (receivers), however, the temporal dynamics of this phenomenon remain poorly studied. Using a custom-built, high-throughput proton transfer reaction time-of-flight mass spectrometry (PTR-ToF-MS) system, we explored temporal patterns of volatile transfer and responses between herbivore-attacked and undamaged maize plants. We found that continuous exposure to natural blends of herbivore-induced volatiles results in clocked temporal response patterns in neighboring plants, characterized by an induced terpene burst at the onset of the second day of exposure. This delayed burst is not explained by terpene accumulation during the night, but coincides with delayed jasmonate accumulation in receiver plants. The delayed burst occurs independent of day:night light transitions and cannot be fully explained by sender volatile dynamics. Instead, it is the result of a stress memory from volatile exposure during the first day and secondary exposure to bioactive volatiles on the second day. Our study reveals that prolonged exposure to natural blends of stress-induced volatiles results in a response that integrates priming and direct induction into a distinct and predictable temporal response pattern. This provides an answer to the long-standing question of whether stress volatiles predominantly induce or prime plant defenses in neighboring plants, by revealing that they can do both in sequence.\n\n## Introduction\n\nPlants rely on chemical cues to identify and mount appropriate responses to herbivores (Waterman et al., 2019; Escobar-Bravo et al., 2023). Among these cues are herbivore-induced plant volatiles (HIPVs) (Meents and Mith\u00f6fer, 2020; Karban, 2021). When perceived by undamaged plants, HIPVs can enhance plant defenses, and thus increase plant resistance to future herbivory (Erb et al., 2015; Kalske et al., 2019; Hu et al., 2019; Engelberth et al., 2004; V\u00e1zquez-Gonz\u00e1lez et al., 2023). HIPVs can directly induce plant defenses (Hu et al., 2019; Engelberth et al., 2004; Wang et al., 2023; Ruther and F\u00fcrstenau, 2005). HIPVs can also prime plant defenses. In this case, HIPV-exposed plants respond more strongly and/or more rapidly to a secondary stimulus such as herbivore attack (Erb et al., 2015; Hu et al., 2019; Engelberth et al., 2004; Mauch-Mani et al., 2017).\n\nPlant responses to environmental cues depend on temporal patterns. For example, artificial herbivory that mimics spatiotemporal patterns of chewing herbivores induces more a similar response to actual herbivore attack than when spatiotemporal patterns are ignored (Mith\u00f6fer et al., 2005). The emission of HIPVs also follows discrete temporal dynamics (Erb et al., 2015; Yu et al., 2017), which, again, is likely to influence defense responses in receiver plants. Green leaf volatiles (GLVs), including (Z)-3-hexenyl acetate (HAC), (Z)-3-hexenal, and (Z)-3-hexen-1-ol, are catabolic products of the lipoxygenase/hydroperoxide lyase pathway and are emitted within minutes following damage (D\u2019Auria et al., 2007; Matsui, 2006). Indole and terpenes are emitted within hours of herbivore attack (Escobar-Bravo et al., 2023; Erb et al., 2015). Indole can mediate interactions between plants as well as between plants and other organisms (Ye et al., 2021; Ye et al., 2018; Veyrat et al., 2016). Terpenes are a very diverse group of volatiles (>80,000 known structures) that are also important as both direct and indirect plant defenses (Kalske et al., 2019; Chen et al., 2021; Zhou and Pichersky, 2020; Riedlmeier et al., 2017). Indole and terpenes take longer to produce in comparison to GLVs and are less transiently emitted (Escobar-Bravo et al., 2023; Erb et al., 2015; D\u2019Auria et al., 2007). In maize, GLVs have been implicated in direct induction (Engelberth et al., 2004; Wang et al., 2023), and both GLVs and indole are known to prime defenses, and are thus considered as \u2018bioactive\u2019 in information transfer between plants (Erb et al., 2015; Hu et al., 2019).\n\nAlthough it is clear that plants can either be primed or directly induced following HIPV exposure, if and how these two phenomena integrate in the context of a natural HIPV exposure sequence is unclear. Studies have yet to monitor induction and priming dynamics in real time and during continuous exposure to HIPVs. It is possible that, through time, continuous HIPV exposure may result in a self-enforced positive feedback loop, whereby priming enhances induction and induction serves as a priming event for subsequent induction. Further, temporal trends might be complicated by dynamic environmental conditions, such as light fluctuations; over a 24 hr period, plants can experience both full sun and darkness. In darkness, the emission of many volatiles, especially those released via stomata, is severely hindered (Seidl-Adams et al., 2015; He et al., 2021; Bl\u00e4sing et al., 2005; Lin et al., 2022).\n\nIn order to understand the kinetics of information transfer between plants and the importance of dynamic temporal emission patterns, we monitored the emission kinetics of terpenes as a marker of defense activation in maize plants that were exposed to HIPVs. We leveraged a highly temporally resolved volatile multiplexing system that allowed us to track continuous volatile emissions in sender and receiver plants for the first time in real time. We further measured foliar terpene pools, stress hormones, and defense gene expression in receiver plants, and determined the impact of day:night light transitions in the observed defense induction kinetics. Finally, we measured defenses upon sequences of short-term HIPV and GLV exposure to unravel the relative importance of direct induction and priming. Together, our experiments reveal how the natural kinetics of herbivore attack result in a clocked defense response in neighboring plants via volatile information transfer.\n\n## Results\n\n### Delayed burst in induced volatile emissions in plants exposed to volatiles of a herbivore-attacked neighbor\n\nWhen maize plants are exposed to volatiles from herbivore-attacked neighbors, they start to release terpenes (Hu et al., 2019; Ruther and F\u00fcrstenau, 2005). To understand the temporal dynamics of this phenomenon, we conducted a detailed time-course analysis of terpene release by receiver plants exposed to volatiles from sender plants under attack by Spodoptera exigua caterpillars (Figure 1). Herbivore feeding began around 12:00 and within 3 hr, we detected a small induction of sesquiterpenes [C15H25+, m/z=205.20], monoterpenes [C10H17+, m/z=137.13], 4,8-dimethylnona-1,3,7-triene (DMNT) [C11H19+, m/z=151.15], and 4,8,12-trimethyltrideca-1,3,7,11-tetraene (TMTT) [C16H27+, m/z=219.21] in undamaged receiver plants. Volatile emission was severely impaired during the night, regardless of treatment. Interestingly, as soon as the light was restored, we observed a strong burst of terpene release from receiver plants, which was two to five times higher than the release the day before (Figure 1). Thus, exposure to volatiles from a herbivore-attacked plant triggers a delayed burst in terpene emission in neighboring plants.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig1-v1.jpg)\n\n**Figure 1.:** Emission kinetics of herbivore-induced plant volatile (HIPV)-induced terpenes in undamaged receiver plants are shown. Dark green points represent mean emission of herbivore-damaged sender plants connected to undamaged receiver plants, with the emissions from damaged sender plants only subtracted. Black points represent undamaged sender plants connected to undamaged receiver plants, with the emissions from undamaged sender plants only subtracted. Blue rectangles represent the night (dark phase). Abbreviations: DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene. Error bars = SE. n=8\u201310. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.\n\n### The delayed burst in terpene emission is not explained by overaccumulation during the night\n\nWhy do receiver plants show a delayed burst in volatile-induced terpenoid release? During the night, plants close their stomata to limit water loss (Caird et al., 2007), which may also impair terpene release, thus leading to an accumulation of terpenes in the leaves and a burst once stomata open again (Seidl-Adams et al., 2015; Loughrin et al., 1994). To determine if terpenes accumulate above daytime levels in maize leaves of HIPV-exposed plants during the night, we measured internal foliar pools of the sesquiterpenes, \u03b2-caryophyllene, \u03b2-farnesene, and \u03b1-bergamotene, as well as the homoterpene, TMTT, over time. Internal pools of \u03b2-caryophyllene, \u03b2-farnesene, and TMTT were marginally induced after 3 hr, but only became significantly induced after 8 hr of exposure to HIPVs (Figure 2A, B, and D, Table 1). For all three, accumulation remained higher during the night (16.75 hr) as well as the following day. \u03b1-Bergamotene only began accumulating in leaves on the second day (Figure 2C, Table 1). Thus, internal terpene pools remain comparable between night and day, suggesting that terpenes do not continue accumulating during the night and that, even when terpenes are emitted in large amounts on day 2, internal pools do not drop below nighttime levels. Nevertheless, the volatiles that are present during the night may be released suddenly the second day. Some control plants accumulated measurable amounts of \u03b2-caryophyllene at night, likely due to biological and experimental variation. This type of variation was not visible in total sesquiterpene emissions measured by proton transfer reaction time-of-flight mass spectrometry (PTR-ToF-MS) (Figure 1), likely because \u03b2-caryophyllene is a minor sesquiterpene in B73 (Block et al., 2018) and closed stomata block sesquiterpene emission at night (Seidl-Adams et al., 2015). To get insight into terpene biosynthesis we measured the expression of terpene synthases in receiver plants. In maize, farnesene pyrophosphate synthase 3 (FPPS3), terpene synthase 2 and 10 (TPS2 and TPS10, respectively), as well as dimethylnonatriene/trimethyltetradecatetraene synthase (CYP92C5) are rate limiting for terpene production (Block et al., 2019; Richter et al., 2015; Richter et al., 2016). All genes were induced by HIPV exposure during daytime, but not during the night. FPPS3 was slightly induced after 3 hr and significantly induced after 8 hr of HIPV exposure (Figure 2E, Table 1). TPS2 was slightly induced 3, 8, and 22 hr after the onset of HIPV exposure (Figure 2F, Table 1). TPS10 was significantly induced after 3 and 22 hr of HIPV exposure (Figure 2G, Table 1). CYP92C5 was only significantly induced after 3 hr of HIPV exposure (Figure 2H, Table 1). The patterns of volatile terpene biosynthesis do not support a scenario where the terpene burst on the second day is due to continued biosynthesis but lack of emission during the night.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig2-v1.jpg)\n\n**Figure 2.:** Accumulation of terpenes and induction of terpene biosynthesis genes in receiver plants was measured over time. (A\u2013D) Internal foliar pools of terpenes in receiver plants. (E\u2013H) Expression of terpene biosynthesis genes in receiver plants. Dark green bars represent receiver plants exposed to herbivore-induced plant volatiles (HIPVs) and light gray bars represent receiver plants connected to undamaged sender plants. Blue rectangles represent the night (dark phase). Abbreviations: TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene; FPPS3, farnesene pyrophosphate synthase 3; TPS2, terpene synthase 2; TPS10, terpene synthase 10; CYP92C5, dimethylnonatriene/trimethyltetradecatetraene synthase. = p<0.1, *=p<0.05, **=p<0.01, ***=p<0.001 as determined by a Welch\u2019s two-sample t-test. Bars = mean \u00b1 SE. n=4\u20136.\n\n**Table 1.**\n Welch\u2019s two-sample t-test results comparing foliar terpene pools, biosynthesis genes, and phytohormone levels between herbivore-induced plant volatile (HIPV)-exposed and control receiver plants.Bold values: p<0.05, underlined values: p<0.1. Abbreviations: \u03b2-car, \u03b2-caryophyllene; \u03b2-farn, \u03b2-farnesene; \u03b1-berg, \u03b1-bergamotene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene; FPPS3, farnesene pyrophosphate synthase 3; TPS2, terpene synthase 2; TPS10, terpene synthase 10; CYP92C5, dimethylnonatriene/trimethyltetradecatetraene synthase; OPDA, 12-oxophytodienoic acid; JA, jasmonic acid; JA-Ile, jasmonic acid-isoleucine; OPR7, oxo-phytodienoate reductase 7.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"12\">Time</th>\n    </tr>\n    <tr>\n      <th>Response</th>\n      <th colspan=\"3\">3 hr</th>\n      <th colspan=\"3\">8 hr</th>\n      <th colspan=\"3\">16.75 hr</th>\n      <th colspan=\"3\">22 hr</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>t</th>\n      <th>p</th>\n      <th>df</th>\n      <th>t</th>\n      <th>p</th>\n      <th>df</th>\n      <th>t</th>\n      <th>p</th>\n      <th>df</th>\n      <th>t</th>\n      <th>p</th>\n      <th>df</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03b2-car</td>\n      <td>\u20132.20</td>\n      <td>0.08</td>\n      <td>5</td>\n      <td>\u20132.65</td>\n      <td>0.03</td>\n      <td>9</td>\n      <td>\u20133.00</td>\n      <td>0.03</td>\n      <td>6</td>\n      <td>\u201314.05</td>\n      <td>&lt;0.001</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>\u03b2-farn</td>\n      <td>\u20132.08</td>\n      <td>0.07</td>\n      <td>8</td>\n      <td>\u20132.60</td>\n      <td>0.03</td>\n      <td>9</td>\n      <td>\u20134.47</td>\n      <td>0.002</td>\n      <td>9</td>\n      <td>\u201311.38</td>\n      <td>&lt;0.001</td>\n      <td>8</td>\n    </tr>\n    <tr>\n      <td>\u03b1-berg</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n      <td>\u20135.56</td>\n      <td>0.003</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>TMTT</td>\n      <td>\u20131.80</td>\n      <td>0.13</td>\n      <td>5</td>\n      <td>\u20132.68</td>\n      <td>0.03</td>\n      <td>7</td>\n      <td>\u20139.18</td>\n      <td>&lt;0.001</td>\n      <td>4</td>\n      <td>\u20135.23</td>\n      <td>0.003</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>FPPS3</td>\n      <td>\u20132.31</td>\n      <td>0.05</td>\n      <td>8</td>\n      <td>\u20132.62</td>\n      <td>0.03</td>\n      <td>9</td>\n      <td>\u20130.82</td>\n      <td>0.44</td>\n      <td>7</td>\n      <td>\u20130.28</td>\n      <td>0.78</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>TPS2</td>\n      <td>\u20132.39</td>\n      <td>0.05</td>\n      <td>6</td>\n      <td>\u20132.19</td>\n      <td>0.09</td>\n      <td>4</td>\n      <td>\u20130.62</td>\n      <td>0.55</td>\n      <td>8</td>\n      <td>\u20132.24</td>\n      <td>0.07</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>TPS10</td>\n      <td>\u20132.65</td>\n      <td>0.05</td>\n      <td>5</td>\n      <td>\u20131.97</td>\n      <td>0.12</td>\n      <td>4</td>\n      <td>\u20131.34</td>\n      <td>0.25</td>\n      <td>4</td>\n      <td>\u20133.50</td>\n      <td>0.02</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>CYP92C5</td>\n      <td>\u20133.62</td>\n      <td>0.01</td>\n      <td>6</td>\n      <td>\u20131.11</td>\n      <td>0.30</td>\n      <td>8</td>\n      <td>\u20131.94</td>\n      <td>0.11</td>\n      <td>5</td>\n      <td>\u20131.38</td>\n      <td>0.22</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>OPDA</td>\n      <td>\u20130.26</td>\n      <td>0.80</td>\n      <td>4</td>\n      <td>0.07</td>\n      <td>0.95</td>\n      <td>5</td>\n      <td>0.65</td>\n      <td>0.55</td>\n      <td>4</td>\n      <td>\u20134.18</td>\n      <td>0.008</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>JA</td>\n      <td>0.32</td>\n      <td>0.78</td>\n      <td>2</td>\n      <td>1.22</td>\n      <td>0.31</td>\n      <td>3</td>\n      <td>0.91</td>\n      <td>0.41</td>\n      <td>4</td>\n      <td>\u20131.40</td>\n      <td>0.22</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>JA-Ile</td>\n      <td>\u20130.48</td>\n      <td>0.68</td>\n      <td>2</td>\n      <td>1.21</td>\n      <td>0.31</td>\n      <td>3</td>\n      <td>0.24</td>\n      <td>0.82</td>\n      <td>5</td>\n      <td>\u20132.98</td>\n      <td>0.04</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>OPR7</td>\n      <td>\u20135.70</td>\n      <td>0.002</td>\n      <td>5</td>\n      <td>\u20132.36</td>\n      <td>0.05</td>\n      <td>7</td>\n      <td>1.32</td>\n      <td>0.22</td>\n      <td>10</td>\n      <td>\u20133.01</td>\n      <td>0.02</td>\n      <td>7</td>\n    </tr>\n  </tbody>\n</table>\n\n### The delayed burst in terpenoid emission is associated with clocked jasmonate production\n\nVolatile release in maize is regulated by jasmonates (Martin et al., 2003; Ament et al., 2004). To understand whether the delayed terpene burst is associated with jasmonate signaling, we measured the levels of 12-oxo-phytodienoic acid (OPDA), jasmonic acid (JA), and jasmonic acid-isoleucine (JA-Ile), as well as the expression of oxo-phytodienoate reductase 7 (OPR7), which is critical for JA biosynthesis (Yan et al., 2012). We found a significant induction of OPDA and JA-Ile production as well as OPR7 expression at the beginning of the second day, 22 hr after the onset of volatile exposure (Figure 3, Table 1). Thus, jasmonate production is temporally aligned with the delayed terpene burst at the onset of the second day.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig3-v1.jpg)\n\n**Figure 3.:** Foliar jasmonate concentrations (A\u2013C) and jasmonate biosynthesis (OPR7; D) in receiver plants over time are shown. Dark green bars represent receiver plants exposed to herbivore-induced plant volatiles (HIPVs) and light gray bars represent receiver plants connected to undamaged sender plants. Blue rectangles represent the night (dark phase). Abbreviations: OPDA, 12-oxophytodienoic acid; JA, jasmonic acid; JA-Ile, jasmonic acid-isoleucine; OPR7, oxo-phytodienoate reductase 7. = p<0.1, *=p<0.05, **=p<0.01, ***=p<0.001 as determined by a Welch\u2019s two-sample t-test. Bars = mean \u00b1 SE. n=3\u20136.\n\n### The delayed volatile burst is conserved under continuous light\n\nTo test whether the delayed burst in terpene volatiles is linked to light:dark transitions, we exposed maize plants to HIPVs under continuous light. Similar to exposure during a normal light regime, the largest burst of terpene emission occurred ca. 12\u201318 hr after the onset of volatile exposure (Figure 4), suggesting that the temporal delay in volatile emission in receiver plants is not dependent on light fluctuations, but is otherwise clocked. In order to control for potential differences in induction capacity at different times of day, we designed a second continuous light experiment. However, instead of starting the herbivory treatment at ca. 12:00 hr, we started it around 20:00 hr. Similarly, we observed an initial bump in terpene emission followed by a larger burst 10\u201312 hr after HIPV exposure (Figure 4\u2014figure supplement 1). In both continuous light experiments the \u2018second day\u2019 burst occurred somewhat earlier than under normal light conditions. It is possible that stomata, which are closed in the dark, delay the onset of the terpene burst under dark:light transitions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig4-v1.jpg)\n\n**Figure 4.:** Emission kinetics of herbivore-induced plant volatile (HIPV)-induced terpenes in undamaged receiver plants under continuous light are shown. Plants were grown under normal light conditions. Lights were left on continuously following the start of the treatment. Dark green points represent the mean emission of herbivore damaged sender plants connected to undamaged receiver plants with the emissions from damaged sender plants only subtracted. Black points represent undamaged sender plants connected to undamaged receiver plants, with the emissions from undamaged sender plants only subtracted. Yellow rectangles represent when the lights would typically be turned off. Abbreviations: DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene. Error bars = SE. n=8\u201310. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Emission kinetics of herbivore-induced plant volatile (HIPV)-induced terpenes in undamaged receiver plants under continuous light are shown. Herbivory on sender plants ca. 1 hr before lights would typically be turned off (around 20:00 hr). Plants were grown under normal light conditions. Lights were left on continuously following the start of the treatment. Dark green points represent the mean emission of herbivore damaged sender plants connected to undamaged receiver plants with the emissions from damaged sender plants only subtracted. Black points represent undamaged sender plants connected to undamaged receiver plants, with the emissions from undamaged sender plants only subtracted. Yellow rectangles represent when the lights would typically be turned off. Abbreviations: DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene. Error bars = SE. n=6. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.\n\n### The delayed volatile burst cannot be fully explained by the emission kinetics of bioactive herbivory-induced volatiles\n\nA simple explanation for the delayed volatile burst may be that the bioactive volatiles are more strongly emitted from sender plants at the onset of day 2, thus triggering a stronger volatile response in the receiver plants at this time. To test this hypothesis, we analyzed volatile emission kinetics of S. exigua-infested plants over time. We focused our analysis on GLVs and indole, which are known to induce and/or prime volatile release in neighboring maize plants (Hu et al., 2019; Engelberth et al., 2004; Wang et al., 2023; Ruther and F\u00fcrstenau, 2005). Terpenes are not known to prime or induce volatile release in maize, and were thus not included in the sender plant analysis (Ruther and F\u00fcrstenau, 2005). We analyzed GLV and indole emission data of the sender plants from the experiments depicted in Figure 1 and Figure 4, Figure 5, and then correlated their emission with the induction of terpenes in receiver plants (Figure 6). We found strong positive correlations between hexenyl acetate, hexenal, hexen-1-ol, and indole emissions in sender plants and terpene responses in receiver plants when plants had a dark period (Figure 6). Interestingly, this was not the case under continuous light, where the apex of bioactive volatile emission in sender plants was not temporally aligned with the apex of terpene responses in receiver plants (Figure 6). Sender plant emissions even showed slight negative correlations with terpene induction in receiver plants under continuous light. Thus, the emission kinetics of bioactive volatiles from sender plants cannot fully explain the delayed terpene burst.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig5-v1.jpg)\n\n**Figure 5.:** Pink points represent the mean emission of herbivore-damaged sender plants. Gray points represent mean emissions of undamaged sender plants. Blue rectangles represent the night (dark phase). Yellow rectangles represent when the lights would typically be turned off. Continuous light-exposed plants were grown under normal light conditions, however lights were left on continuously following the start of the treatment. Error bars = SE. n=8\u201310. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig6-v1.jpg)\n\n**Figure 6.:** The left panels depict scatter plot correlation matrices of bioactive volatile emissions from damaged sender plants and terpene emissions from herbivore-induced plant volatile (HIPV)-exposed receiver plants. Only data from the first measurement following the addition of herbivores to sender plants are included. Upper scatter plot (blue box) shows correlations under normal light conditions and lower scatter plot (yellow box) depicts correlations under continuous light. For continuous light-exposed plants, lights were left on continuously following the start of the treatment. Each black point represents the mean value of all individuals at a given time point after herbivory began. Regression curves are only shown for significant relationships (p<0.05). Panels on the right-hand side depict heat maps based on the value of Pearson\u2019s correlation coefficient between two given compounds. Numbers in the center of each square are Pearson\u2019s correlation coefficient. Correlation coefficients contained in a pink rectangles indicate a significant correlation (p<0.05). (Z)-3-hexenyl acetate (HAC), hexenal (Hexa), hexen-1-ol (Hexo), and indole (Ind) were from sender plants, and sesquiterpenes (SQT), monoterpenes (MNT), 4,8-dimethylnona-1,3,7-triene (DMNT), and 4,8,12-trimethyltrideca-1,3,7,11-tetraene (TMTT) were from receiver plants.\n\n### The combination of direct induction and priming can explain the delayed terpene burst in receiver plants\n\nBased on the above observations, we reasoned that, under natural conditions, the strong delayed volatile burst may be due to the interaction of an initial volatile burst that primes plants for higher volatile release at the onset of the second day, and a secondary trigger in the form of bioactive volatiles released from sender plants at the onset of the second day. To test this hypothesis, we exposed receiver plants to volatiles from control plants or volatiles from herbivory-induced plants for 1.25 hr. We then disconnected the receiver plants and exposed them to clean air for 17 hr, until the beginning of the next day. Half of the plants were then exposed to HAC as a secondary trigger. HAC was selected as an inducer as it showed the strongest correlation with all measured terpenes (Figure 6). Following the short exposure to HIPVs, we detected a generally small, but significant, induction of sesquiterpenes, monoterpenes, DMNT, and TMTT emissions in receiver plants (Figure 7, Table 2). During the night, no differences between treatments were detected any more. At the beginning of the next day, we found a slight induction in terpene emissions, most apparent for sesquiterpenes and TMTT, in plants that had been exposed to herbivory-induced volatiles 18 hr prior (Figure 7, Table 2). HAC exposure at the beginning of the next day also induced terpene emissions. Furthermore, HAC induced a stronger release of all terpenes in plants that had been exposed to HIPVs the previous day. In an independent experiment, we also tested whether HAC sensitivity per se may be higher at the start of the light period. We exposed maize seedlings to HAC dispensers either 30 min or 4 hr 30 min after lights came on. We found induction in terpene emission to be similar regardless of when induction began (Figure 7\u2014figure supplement 1). Thus, exposure to HIPVs prompts maize plants to release more terpenes the next day and also primes maize plants to respond more strongly to a secondary HIPV trigger. Together, these two phenomena result in a pronounced terpene burst.\n\n**Table 2.**\n Aligned rank transformed nonparametric factorial repeated measures ANOVA results from data presented in Figure 7.Bold values: p<0.05 and underlined values: p<0.1. Abbreviations: HAC, (Z)-3-hexenyl acetate; SQT, sesquiterpenes; MNT, monoterpenes; DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Herb</th>\n      <th colspan=\"3\">HAC</th>\n      <th colspan=\"3\">Time</th>\n      <th colspan=\"3\">Herb \u00d7 HAC</th>\n      <th colspan=\"3\">Herb \u00d7 Time</th>\n      <th colspan=\"3\">HAC \u00d7 Time</th>\n      <th colspan=\"3\">Herb \u00d7 HAC \u00d7 Time</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>F</th>\n      <th>p</th>\n      <th>df</th>\n      <th>F</th>\n      <th>p</th>\n      <th>df</th>\n      <th>F</th>\n      <th>p</th>\n      <th>df</th>\n      <th>F</th>\n      <th>p</th>\n      <th>df</th>\n      <th>F</th>\n      <th>p</th>\n      <th>df</th>\n      <th>F</th>\n      <th>p</th>\n      <th>df</th>\n      <th>F</th>\n      <th>p</th>\n      <th>df</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SQT</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Base</td>\n      <td>0.22</td>\n      <td>0.64</td>\n      <td>1,54</td>\n      <td>0.23</td>\n      <td>0.62</td>\n      <td>1,54</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>0.05</td>\n      <td>0.82</td>\n      <td>1,54</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>D1</td>\n      <td>13.8</td>\n      <td>&lt;0.001</td>\n      <td>1,54</td>\n      <td>0.40</td>\n      <td>0.53</td>\n      <td>1,54</td>\n      <td>8.03</td>\n      <td>&lt;0.001</td>\n      <td>4,216</td>\n      <td>0.30</td>\n      <td>0.59</td>\n      <td>1,54</td>\n      <td>1.85</td>\n      <td>0.12</td>\n      <td>4,216</td>\n      <td>0.10</td>\n      <td>0.98</td>\n      <td>4,216</td>\n      <td>0.23</td>\n      <td>0.92</td>\n      <td>4,216</td>\n    </tr>\n    <tr>\n      <td>Dark</td>\n      <td>2.15</td>\n      <td>0.15</td>\n      <td>1,54</td>\n      <td>0.17</td>\n      <td>0.69</td>\n      <td>1,54</td>\n      <td>118</td>\n      <td>&lt;0.001</td>\n      <td>6,324</td>\n      <td>0.28</td>\n      <td>0.60</td>\n      <td>1,54</td>\n      <td>1.65</td>\n      <td>0.13</td>\n      <td>6,324</td>\n      <td>1.06</td>\n      <td>0.39</td>\n      <td>6,324</td>\n      <td>0.83</td>\n      <td>0.55</td>\n      <td>6,324</td>\n    </tr>\n    <tr>\n      <td>D2</td>\n      <td>8.39</td>\n      <td>0.005</td>\n      <td>1,54</td>\n      <td>8.69</td>\n      <td>0.005</td>\n      <td>1,54</td>\n      <td>12.8</td>\n      <td>&lt;0.001</td>\n      <td>5,270</td>\n      <td>0.002</td>\n      <td>0.97</td>\n      <td>1,54</td>\n      <td>1.22</td>\n      <td>0.30</td>\n      <td>5,270</td>\n      <td>23.9</td>\n      <td>&lt;0.001</td>\n      <td>5,270</td>\n      <td>0.93</td>\n      <td>0.46</td>\n      <td>2,570</td>\n    </tr>\n    <tr>\n      <td>MNT</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Base</td>\n      <td>0.05</td>\n      <td>0.82</td>\n      <td>1,54</td>\n      <td>0.01</td>\n      <td>0.94</td>\n      <td>1,54</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>1.33</td>\n      <td>0.25</td>\n      <td>1,54</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>D1</td>\n      <td>7.84</td>\n      <td>0.007</td>\n      <td>1,54</td>\n      <td>0.02</td>\n      <td>0.88</td>\n      <td>1,54</td>\n      <td>36.5</td>\n      <td>&lt;0.001</td>\n      <td>4,216</td>\n      <td>2.03</td>\n      <td>0.16</td>\n      <td>1,54</td>\n      <td>1.17</td>\n      <td>0.32</td>\n      <td>4,216</td>\n      <td>0.47</td>\n      <td>0.76</td>\n      <td>4,216</td>\n      <td>0.83</td>\n      <td>0.51</td>\n      <td>4,216</td>\n    </tr>\n    <tr>\n      <td>Dark</td>\n      <td>2.75</td>\n      <td>0.10</td>\n      <td>1,54</td>\n      <td>1.41</td>\n      <td>0.24</td>\n      <td>1,54</td>\n      <td>28.1</td>\n      <td>&lt;0.001</td>\n      <td>6,324</td>\n      <td>2.62</td>\n      <td>0.11</td>\n      <td>1,54</td>\n      <td>1.04</td>\n      <td>0.40</td>\n      <td>6,324</td>\n      <td>1.04</td>\n      <td>0.40</td>\n      <td>6,324</td>\n      <td>1.02</td>\n      <td>0.41</td>\n      <td>6,324</td>\n    </tr>\n    <tr>\n      <td>D2</td>\n      <td>4.82</td>\n      <td>0.03</td>\n      <td>1,54</td>\n      <td>5.73</td>\n      <td>0.02</td>\n      <td>1,54</td>\n      <td>197</td>\n      <td>&lt;0.001</td>\n      <td>5,270</td>\n      <td>1.68</td>\n      <td>0.20</td>\n      <td>1,54</td>\n      <td>2.57</td>\n      <td>0.03</td>\n      <td>5,270</td>\n      <td>9.90</td>\n      <td>&lt;0.001</td>\n      <td>5,270</td>\n      <td>2.82</td>\n      <td>0.02</td>\n      <td>5,270</td>\n    </tr>\n    <tr>\n      <td>DMNT</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Base</td>\n      <td>0.60</td>\n      <td>0.44</td>\n      <td>1,54</td>\n      <td>0.91</td>\n      <td>0.34</td>\n      <td>1,54</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>3.52</td>\n      <td>0.07</td>\n      <td>1,54</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>D1</td>\n      <td>66.3</td>\n      <td>&lt;0.001</td>\n      <td>1,54</td>\n      <td>2.55</td>\n      <td>0.12</td>\n      <td>1,54</td>\n      <td>81.4</td>\n      <td>&lt;0.001</td>\n      <td>4,216</td>\n      <td>0.69</td>\n      <td>0.41</td>\n      <td>1,54</td>\n      <td>65.1</td>\n      <td>&lt;0.001</td>\n      <td>4,216</td>\n      <td>0.62</td>\n      <td>0.65</td>\n      <td>4,216</td>\n      <td>1.10</td>\n      <td>0.36</td>\n      <td>4,216</td>\n    </tr>\n    <tr>\n      <td>Dark</td>\n      <td>2.34</td>\n      <td>0.13</td>\n      <td>1,54</td>\n      <td>0.45</td>\n      <td>0.50</td>\n      <td>1,54</td>\n      <td>10.7</td>\n      <td>&lt;0.001</td>\n      <td>6,324</td>\n      <td>0.51</td>\n      <td>0.48</td>\n      <td>1,54</td>\n      <td>1.05</td>\n      <td>0.40</td>\n      <td>6,324</td>\n      <td>0.20</td>\n      <td>0.98</td>\n      <td>6,324</td>\n      <td>0.30</td>\n      <td>0.94</td>\n      <td>6,324</td>\n    </tr>\n    <tr>\n      <td>D2</td>\n      <td>7.01</td>\n      <td>0.01</td>\n      <td>1,54</td>\n      <td>155</td>\n      <td>&lt;0.001</td>\n      <td>1,54</td>\n      <td>52.4</td>\n      <td>&lt;0.001</td>\n      <td>5,270</td>\n      <td>3.67</td>\n      <td>0.06</td>\n      <td>1,54</td>\n      <td>1.74</td>\n      <td>0.13</td>\n      <td>5,270</td>\n      <td>54.6</td>\n      <td>&lt;0.001</td>\n      <td>5,270</td>\n      <td>2.09</td>\n      <td>0.07</td>\n      <td>5,270</td>\n    </tr>\n    <tr>\n      <td>TMTT</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Base</td>\n      <td>0.12</td>\n      <td>0.73</td>\n      <td>1,54</td>\n      <td>0</td>\n      <td>0.99</td>\n      <td>1,54</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>2.23</td>\n      <td>0.14</td>\n      <td>1,54</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>D1</td>\n      <td>8.91</td>\n      <td>0.004</td>\n      <td>1,54</td>\n      <td>0.67</td>\n      <td>0.42</td>\n      <td>1,54</td>\n      <td>3.05</td>\n      <td>0.02</td>\n      <td>4,216</td>\n      <td>0.01</td>\n      <td>0.92</td>\n      <td>1,54</td>\n      <td>1.43</td>\n      <td>0.23</td>\n      <td>4,216</td>\n      <td>0.58</td>\n      <td>0.68</td>\n      <td>4,216</td>\n      <td>0.43</td>\n      <td>0.79</td>\n      <td>4,216</td>\n    </tr>\n    <tr>\n      <td>Dark</td>\n      <td>2.68</td>\n      <td>0.11</td>\n      <td>1,54</td>\n      <td>0.33</td>\n      <td>0.57</td>\n      <td>1,54</td>\n      <td>7.67</td>\n      <td>&lt;0.001</td>\n      <td>6,324</td>\n      <td>1.43</td>\n      <td>0.24</td>\n      <td>1,54</td>\n      <td>1.22</td>\n      <td>0.30</td>\n      <td>6,324</td>\n      <td>0.46</td>\n      <td>0.84</td>\n      <td>6,324</td>\n      <td>2.00</td>\n      <td>0.07</td>\n      <td>6,324</td>\n    </tr>\n    <tr>\n      <td>D2</td>\n      <td>5.83</td>\n      <td>0.02</td>\n      <td>1,54</td>\n      <td>15.2</td>\n      <td>&lt;0.001</td>\n      <td>1,54</td>\n      <td>5.28</td>\n      <td>&lt;0.001</td>\n      <td>5,270</td>\n      <td>0.01</td>\n      <td>0.93</td>\n      <td>1,54</td>\n      <td>0.35</td>\n      <td>0.88</td>\n      <td>5,270</td>\n      <td>1.69</td>\n      <td>0.14</td>\n      <td>5,270</td>\n      <td>1.03</td>\n      <td>0.40</td>\n      <td>5,270</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 7.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig7-v1.jpg)\n\n**Figure 7.:** Sender plants were connected to receiver plants 30 min prior to herbivore exposure on sender plants and left connected for 1.25 hr following exposure (time between perforated vertical lines). After 1.25 hr, chambers were disconnected and measurements were collected from receiver plant chambers only. The following day, after light was restored, plants were treated with (Z)-3-hexenyl acetate (HAC) dispensers to simulate bioactive signals (indicated by red solid vertical line). Blue rectangles represent the night (dark phase). *=p<0.05, **=p<0.01, ***=p<0.001 as determined by aligned rank transformed nonparametric factorial repeated measures ANOVA. Abbreviations: HIPV, herbivore-induced plant volatile; DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene. Colored points represent mean emissions standardized by fresh weight (fw). Error bars = SE. n=12\u201316. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig7-figsupp1-v1.jpg)\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Representative GLV emissions from a single attacked plant on the second day of herbivory (18\u201324 hr of exposure to herbivore-induced plant volatiles [HIPVs]) are shown in black. The perforated red horizontal line represents the average across all time points presented. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.\n\n## Discussion\n\nHIPVs play an important role in mediating interactions between damaged and undamaged plants (Escobar-Bravo et al., 2023). However, the kinetics and temporal dynamics of this information transfer remain poorly understood. We show that, somewhat surprisingly, upon continuous exposure to HIPVs, receiver plants show a pronounced activation of defenses at the onset of the second day. We find that this is the result of volatile-mediated priming on the first day that yields a clocked response to the volatiles that are perceived the next day. Here, we discuss the mechanisms and biological implications of this phenomenon.\n\nPlants are well known to respond to herbivore-induced volatiles by increasing their own defenses. Defense activation can happen directly, with plants increasing their defense hormone production and volatile release (Engelberth et al., 2004; Wang et al., 2023), and/or via priming effects, with plants increasing their defenses more strongly upon a secondary stimulus (Erb et al., 2015; Hu et al., 2019). Here, we show that these two phenomena operate together to trigger strong defense activation in receiver plants with predictable temporal kinetics. So far, studies in maize and other plants showing priming effects have often exposed receiver plants to HIPVs for several hours, overnight, or even for multiple days, and induced them, e.g., by simulated herbivory, on the following day in the absence of HIPVs (Erb et al., 2015; Engelberth et al., 2004; Ton et al., 2007; Ali et al., 2013; Paudel Timilsena et al., 2020). Indeed, such a setup would reveal clear priming, with minor or no direct induction by the volatile treatment. Our findings demonstrate that more natural continuous exposure to volatiles results in the same pattern without the need for another stimulus. We thus conclude that HIPVs are sufficient to trigger robust, clocked defense activation in neighboring plants.\n\nWhat is the mechanism that results in a strong activation of defenses on the onset of the second day of exposure to HIPVs? In maize, GLVs directly induce and prime jasmonate production and terpene release (Hu et al., 2019; Engelberth et al., 2004; Wang et al., 2023). Indole can prime, but not directly induce these two responses (Erb et al., 2015). GLVs and indole again can interact to increase defense priming upon a secondary stimulus (Hu et al., 2019). Given these considerations, together with the observed volatile release, response kinetics, and our manipulative experiments, we can draw up the following scenario: On day 1, maize plants are exposed to GLVs, which trigger a small burst of terpene release in receiver plants. At the same time, receiver plants are primed to respond more strongly on the next day, once light is restored. At the onset of the second day, four things happen simultaneously. First, the emission of GLVs from the neighboring plants increases. Second, the defense priming mechanism responding to these cues kicks into gear. Third, terpene production is activated. Fourth, stomata open and enable volatile emission. Together, these elements result in a strong terpene burst. The orchestration of these elements is noteworthy and results in a predictable response pattern under variable HIPV exposure. Further experiments will reveal whether similar patterns are observed in other plants, and how they may operate on a mechanistic level. Additionally, considering we observed an induction in jasmonates coinciding with terpene bursts it is likely that non-volatile jasmonate-dependent defenses follow similar temporal patterns. Our experiments reveal the importance of tracking plant defense responses in real time as they perceive the dynamic natural volatile blend of herbivore-attacked neighbors.\n\nWhat is the ecological relevance of the clocked temporal kinetics of defense activation in neighboring plants? We propose several hypotheses. First, responding most strongly to volatile cues on the second day may avoid unnecessary energy expenditure (Waterman et al., 2019; Mith\u00f6fer et al., 2005). GLVs are emitted upon both herbivore attack and mechanical damage (Gardiner et al., 2016). However, when damage is not sustained, GLVs will dissipate rapidly (D\u2019Auria et al., 2007). Thus, responding most strongly to repeated GLV exposure could avoid false negatives and allow plants to respond more robustly to the presence of actual herbivory. Second, sending out volatiles on the second day may maximize indirect defenses. Attracting natural enemies too early to herbivore-free plants could have fitness costs for both the plant and herbivore natural enemies. Responding on the second day could be advantageous, as by this time, the natural enemies would have located and interacted with the herbivores on sender plants, and would thus be ready to move over to the next plant in anticipation of herbivore arrival. As fitness outcomes are likely highly nuanced, especially considering HIPVs also attract herbivores (Zu et al., 2020), investigation into information transfer on the multi-plant scale, namely in the context of multi-trophic interactions, will be critical. Considerable work will be needed to understand whether the observed defense activation pattern has any adaptive benefit.\n\nAirborne information transfer has the potential to play a major role in plant communities, as it functions as a signaling viaduct between plants not physically connected to one another (Karban, 2021; Hu et al., 2019; Wenig et al., 2019). Although it has been established for decades that plants transmit airborne chemical information between individuals, we are only scratching the surface of the dynamic nature of this phenomenon. The kinetics of information transfer at the detailed temporal resolution of this study provide some insights regarding how HIPVs act across time and space. On this basis, a more comprehensive understanding of volatile-mediated information transfer between plants can be built.\n\n## Materials and methods\n\n### Plant and insect growth\n\nV2-stage Zea mays (maize, B73) was used throughout this study. At this stage, maize has four leaves: two are fully developed, one is expanding and one is emerging. Maize plants were grown in commercial potting soil (Selmaterra, BiglerSamen, Switzerland) in 180 ml pots. Plants were grown in a greenhouse supplemented with artificial lights (ca. 300 \u00b5mol m\u20132 s\u20131). Between light and dark phases, plants were supplemented with lower light (ca. 60 \u00b5mol m\u20132 s\u20131) for 15 min to more accurately simulate day:night transitions. The greenhouse was maintained at 22 \u00b1 2\u00b0C, 40\u201360% relative humidity, with a 14 hr:10 hr, light:dark cycle. S. exigua (Frontier Agricultural Sciences, USA) were reared from eggs on artificial diet (Maag et al., 2014) and used for experiments when they reached the fourth instar stage.\n\n### Herbivore treatment and experimental setup\n\nThe herbivore treatment consisted of adding 3 fourth instar larvae onto plants (sender plants). For controls, sender plants were left undamaged. Two principal experimental setups were used to determine the kinetics of HIPV emissions in both sender plants (damaged by herbivores) and receiver plants (exposed to HIPVs from sender plants).\n\n#### Setup 1\n\nSingle plants (senders) in transparent glass chambers (\u00d8\u00d7H 12\u00d745 cm) were connected with PTFE tubing to a second transparent glass chamber that was either left empty or filled with a second plant (receiver). Chambers were sealed other than an airflow inlet on the first chamber and an air outlet on the second chamber, allowing HIPVs from sender plants to pass through the second chamber. Cumulative HIPV emissions from senders and receivers were measured as described in the section \u2018Volatile sampling\u2019. In order to determine emissions from receiver plants alone, HIPV emissions from sender plants connected to an empty chamber were subtracted from sender plants connected to receiver plants (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig8-v1.jpg)\n\n#### Setup 2\n\nTo isolate emissions solely from receiver plants, chambers containing sender and receiver plants were initially kept separate for basal HIPV emission profiling. Chambers were then connected as in setup 1 for 30 min before herbivore treatment. After herbivores were added to sender plants, chambers remained connected for 1.25 hr, after which time sender and receiver plants were once again disconnected and rearranged so that receiver plants had both clean air flowing through the inlet and an outlet for volatile collection and profiling (Figure 8).\n\n### Preparation of HAC dispensers\n\nHAC dispensers were prepared as previously described with modifications (Hu et al., 2019; Wang et al., 2023). In brief, 1.5 ml glass vials (\u00d8\u00d7H 11.6\u00d732 mm) containing ca. 100 mg glass wool were filled with 200 \u00b5l HAC (>98%; Sigma-Aldrich, Buchs, Switzerland) diluted 50-fold in EtOH and sealed with screw caps containing a rubber septum. The caps were pierced with a 1 \u00b5l glass capillary and sealed with PTFE tape. Vials were then covered with aluminum foil and equilibrated for at least 5 days before use. The (Z)-3 isomers of all GLVs measured in this study (hexenyl acetate, hexenal, and hexen-1-ol) are known to be bioactive (Engelberth et al., 2004; Matsui et al., 2012) and interconvertible, with hexenal and hexenyl acetate for instance being transformed into hexen-1-ol. As such, we designed the dispensers to emit a molar concentration of HAC comparable to the molar concentration of all (Z)-3 GLVs emitted by herbivore-infested plants. HAC dispensers emitted HAC at a rate of 4.68 (\u00b10.40 SD) nmol hr\u20131 and maize seedlings infested with 3 fourth instar S. exigua larvae emitted all GLVs at a rate of 1.94 nmol hr\u20131 (\u00b10.25 SD). Of note, GLV emissions induced by caterpillars vary over time, and can be more than twofold higher than the average during times of strong active feeding (Figure 7\u2014figure supplement 2). Thus, the release rate of the dispensers is within the plant\u2019s physiological range.\n\n### Volatile sampling\n\nVolatile emissions were sampled using setups 1 and 2. Volatile profiling was measured with a high-throughput platform comprised of a PTR-ToF-MS (Tofwerk, Switzerland) and an automated headspace sampling system (Abon Life Sciences, Switzerland) supplied with clean airflow (0.8 l min\u20131). An outlet on receiver plants was accessible to the autosampler/PTR-ToF-MS system. The PTR-ToF-MS system drew air at 0.1 l min\u20131. Between samples, a zero gas measurement was performed for 3 s to avoid contamination. At each time point volatiles were continuously measured for 15\u201325 s and averaged to a single mean per sample. Complete mass spectra (0\u2013500 m/z) were recorded in positive mode at ca. 10 Hz. The PTR was operated at 100\u00b0C and an E/N of approximately 120 Td. The volatile data extraction and processing were conducted using Tofware software package v3.2.2 (Tofwerk, Switzerland). Protonated compounds were identified based on their molecular weight+1. During volatile collection LED lights (DYNA, heliospectra) were placed ca. 80 cm above the glass cylinders and provided light at ca. 300 \u03bcmol m\u20132 s \u20131. Identical light:dark cycle timing as in the greenhouse for plant growth was used. In order to quantify GLVs emitted from herbivore-infested plants and HAC dispensers, we collected total volatile emissions for 1 hr using an identical volatile collection and analysis method described in Erb et al., 2015. In brief, volatiles were collected in Super-Q adsorbent traps, which were then eluted in dichloromethane and injected into a GC-MS (Agilent, USA). Compound identities were confirmed with mass spectroscopy analysis and similarity to library matches (NIST search 2.2 Mass Spectral Library, USA). Emission rates of the Z-3 isomers of GLVs were quantified using a standard curve with synthetic compounds.\n\n### Foliar terpene pools and gene expression\n\nSetup 1 was used to determine terpene pools and gene expression. After 3, 8, 16.75, and 22 hr of exposure to HIPVs, the oldest developing leaf of receiver plants was harvested and flash-frozen on liquid nitrogen. The oldest developing leaf was chosen as it is the largest and highly responsive to bioactive HIPVs (Wang et al., 2023). A new set of plants was used for each time point. Analysis of foliar terpene pools was conducted using slightly modified, previously described, methods (Escobar-Bravo et al., 2022). In brief, ca. 15 mg of ground fresh frozen leaf tissue was added to a 20 ml precision thread headspace glass vial sealed with a magnetic screw cap fitted with a silicone/PTFE septum (Gertel GmbH & Co. KG, Germany). Immediately after a vial was prepared, an SPME fiber (100 \u03bcm polydimethylsiloxane coating; Supelco, USA) was inserted into the vial and volatiles were collected for 40 min at 50\u00b0C. After collection, volatiles were thermally desorbed for 3 min at 220\u00b0C and analyzed using GC-MS (Agilent, USA). Helium was used as the carrier gas at a flow-rate of 1 ml min\u20131 with a temperature gradient of 5 \u00b0C min\u20131 from 60\u00b0C (1 min hold) to 250\u00b0C. Compound identification was based on similarity to library matches (NIST search 2.2 Mass Spectral Library, USA). For quantification of gene expression, total RNA was extracted and purified from ca. 80 mg ground fresh frozen tissue using the GeneJET plant RNA extraction kit following the manufacturer\u2019s instructions. Genomic DNA was removed from 1 \u03bcg purified RNA using gDNA Eraser (PrimeScript RT Reagent Kit, Perfect Real Time) following the manufacturer\u2019s instructions (Takara Bio Inc, Kusatsu, Japan). Reverse transcription and cDNA was synthesized using PrimeScript Reverse Transcriptase (TaKaRa Bio). Gene expression was determined with quantitative reverse transcription polymerase chain reaction using ORA SEE qPCR Mix (highQu GmbH, Germany) on an Applied Biosystems QuantStudio 5 Real-Time PCR system. The normalized expression (NE) values were calculated as: NE=(1/(PEtargetCttarget))/(1/(PEreferenceCtreference)) where PE = primer efficiency and Ct = cycle threshold (Alba et al., 2015). Ubiquitin (UBI1) was used as the reference gene. Gene identifiers and primer sequences are listed in Supplementary file 1.\n\n### Phytohormone quantification\n\nPlant treatments and tissue collection for phytohormone were identical to foliar terpene and gene expression analysis. The phytohormones JA, JA-Ile, and OPDA were extracted, analyzed, and quantified using a slightly modified version of the method detailed in Glauser et al., 2014. In brief, ca. 80 mg of finely ground fresh frozen leaf tissue was extracted with 1 ml ethylacetate:formic acid (99.5:0.5, vol/vol) spiked with isotopically labeled forms of the abovementioned phytohormones. d5-JA was acquired from CDN Isotopes (Canada), d5-OPDA was acquired from OLChemIm (Czechia), and 13C6-JA-Ile was synthesized at the University of Neuch\u00e2tel according to a previously described method (Kramell et al., 1997). Extracts were dried and re-suspended in 200 \u03bcl 50% MeOH using a sonicating bath for 30 min. Phytohormones were analyzed using UPLC-MS-MS fitted with an Acuity BEH C18 column (Waters, USA) using a flow-rate of 400 \u03bcl/min and an injection volume of 2 \u03bcl. The two mobile phases used were 0.05% formic acid in water (A) and 0.05% formic acid in acetonitrile (B) with the following gradient conditions: 5\u201350% B over 5 min, 60\u2013100% B over 3 min, 100% B for 4 min, and a final re-equilibration at 5% B for 4 min.\n\n### Statistical analyses\n\nAll statistical analyses were performed in R version 4.2.2 (R Core Team, 2022). Volatile emissions were analyzed by aligned rank transformed nonparametric factorial repeated measures ANOVA using the package ARTool, as individual plant emission kinetics were measured repeatedly over time (Wobbrock et al., 2011). Internal terpene pools, gene expression, and phytohormone levels were analyzed using Welch\u2019s t-tests between control and HIPV-exposed receiver plants within each time point.\n",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sergio Rasmann, University of Neuch\u00e2tel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89855.3.sa0](https://doi.org/10.7554/eLife.89855.3.sa0)\n\nThis fundamental study examines the effects of herbivory-induced maize volatiles on neighbouring plants and their responses over time. Measurements of volatile compound classes and gene expression in receiver plants exposed to these volatiles led to the conclusion that the delayed emission of certain terpenes in receiver plants after the onset of light may be a result of stress memory, highlighting the role of priming and induction in plant defences triggered by herbivore-induced plant volatiles. The evidence supporting the conclusions is compelling, with rigorous chemical assays of and state-of-the-art high throughput real time mass spectrometry. The work will be of broad interest to plant biologists and chemical ecologists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89855.3.sa1](https://doi.org/10.7554/eLife.89855.3.sa1)\n\nThe authors of the manuscript \"High-resolution kinetics of herbivore-induced plant volatile transfer reveal tightly clocked responses in neighboring plants\" assessed the effects of herbivory induced maize volatiles on receiver plants over a period of time in order to assess the dynamics of the responses of receiver plants. Different volatile compound classes were measured over a period of time using PTR-ToF-MS and GC-MS, under both natural light:dark conditions, and continuous light. They also measured gene expression of related genes as well as defense related phytohormones. The effects of a secondary exposure to GLVs on primed receiver plants was also measured.\n\nThe paper addresses some interesting points, however some questions arise regarding some of the methods employed. Firstly, I am wondering why VOCs (as measured by GC-MS) were not quantified. While I understand that quantification is time consuming and requires more work, it allows for comparisons to be made between lines of the same species, as well as across other literature on the subject. Simply relying on the area under the curve and presenting results using arbitrary units is not enough for analyses like these. AU values do not allow for conclusions regarding total quantities, and while I understand that this is not the main focus of this paper, it raises a lot of uncertainty for readers (for example, the references cited show that TMTT has been found to accumulate at similar levels of caryophyllene, however the AU values reported are an order of magnitude higher for TMTT. Again, without actual quantification this is meaningless, but for readers it is confusing).\n\nWith regards to the correlation analyses shown in figure 6, the results presented in many of the correlation plots are not actually informative. While there is a trend, I do not think that this is an appropriate way to show the data, as there are clearly other relationships at play. The comparison between plants under continuous light and normal light:dark conditions is interesting.\n\nThis paper addresses a very interesting idea and I look forward to seeing further work that builds on these ideas.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89855.3.sa2](https://doi.org/10.7554/eLife.89855.3.sa2)\n\nThe exact dynamics of responses to volatiles from herbivore-attacked neighbouring plants have been little studied so far. Also, we still lack evidence whether herbivore-induced plant volatiles (HIPVs) induce or prime plant defences of neighbours. The authors investigated the volatile emission patterns of receiver plants that respond to the volatile emission of neighbouring sender plants which are fed upon by herbivorous caterpillars. They applied a very elegant approach (more rigorous than the current state-of-the-art) to monitor temporal response patterns of neighbouring plants to HIPVs by measuring volatile emissions of senders and receivers, senders only and receivers only. Different terpenoids were produced within 2 h of such exposure in receiver plants, but not during the dark phase. Once the light turned on again, large amounts of terpenoids were released from the receiver plants. This may indicate a delayed terpene burst, but terpenoids may also be induced by the sudden change in light. As one contrasting control, the authors also studied the time-delay in volatile emission when plants were just kept under continuous light. Here they also found a delayed terpenoid production, but this seemed to be lower compared to the plants exposed to the day-night-cycle. Another helpful control was now performed for the revision in which the herbivory treatment was started in the evening hours and lights were left on. This experiment revealed that the burst of terpenoid emission indeed shifted somewhat. Circadiane and diurnal processes must thus interact.\n\nInterestingly, internal terpene pools of one of the leaves tested here remained more comparable between night and day, indicating that their pools stay higher in plants exposed to HIPVs. In contrast, terpene synthases were only induced during the light-phase, not in the dark-phase. Moreover, jasmonates were only significantly induced 22 h after onset of the volatile exposure and thus parallel with the burst of terpene release.\n\nAn additional experiment exposing plants to the green leaf volatile (glv) (Z)-3-hexenyl acetate revealed that plants can be primed by this glv, leading to a stronger terpene burst. The results are discussed with nice logic and considering potential ecological consequences. All data are now well discussed.\n\nOverall, this study provides intriguing insights in the potential interplay between priming and induction, which may co-occur, enhancing (indirect and direct) plant defence. Follow-up studies are suggested that may provide additional evidence.\n",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d875824c-259b-4064-aabc-47c2281c100f",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C1",
+      "claim": "Continuous exposure to natural blends of herbivore-induced volatiles results in clocked temporal response patterns in neighboring plants, characterized by an induced terpene burst at the onset of the second day of exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a custom-built, high-throughput proton transfer reaction time-of-flight mass spectrometry (PTR-ToF-MS) system, we explored temporal patterns of volatile transfer and responses between herbivore-attacked and undamaged maize plants. We found that continuous exposure to natural blends of herbivore-induced volatiles results in clocked temporal response patterns in neighboring plants, characterized by an induced terpene burst at the onset of the second day of exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from PTR-ToF-MS measurements showing temporal patterns of volatile responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "7d545da0-79ac-4c9c-85ea-9c71a0b0d29f",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C2",
+      "claim": "The delayed terpene burst is not explained by terpene accumulation during the night.",
+      "claim_type": "EXPLICIT",
+      "source": "This delayed burst is not explained by terpene accumulation during the night, but coincides with delayed jasmonate accumulation in receiver plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements of internal terpene pools showing they remain comparable between night and day.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "58c3b2f6-7bed-41b5-8003-68876eafd9fb",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C3",
+      "claim": "The delayed terpene burst coincides with delayed jasmonate accumulation in receiver plants.",
+      "claim_type": "EXPLICIT",
+      "source": "This delayed burst is not explained by terpene accumulation during the night, but coincides with delayed jasmonate accumulation in receiver plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phytohormone measurements showing jasmonate induction at 22 hours.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "85aae2a3-d4c3-48cf-90ec-5b66c1da8cbe",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C4",
+      "claim": "The delayed burst occurs independent of day:night light transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "The delayed burst occurs independent of day:night light transitions and cannot be fully explained by sender volatile dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by continuous light experiments showing similar delayed burst patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "7822d8d0-025d-4aa9-8f97-fc55a08536fb",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C5",
+      "claim": "The delayed burst cannot be fully explained by sender volatile dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The delayed burst occurs independent of day:night light transitions and cannot be fully explained by sender volatile dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by correlation analysis showing bioactive volatile emissions from sender plants do not fully explain receiver plant responses under continuous light.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "37a20235-3f4c-4045-94ec-cac73cec6efc",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C6",
+      "claim": "The delayed burst is the result of a stress memory from volatile exposure during the first day and secondary exposure to bioactive volatiles on the second day.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, it is the result of a stress memory from volatile exposure during the first day and secondary exposure to bioactive volatiles on the second day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experiments showing that short HIPV exposure followed by HAC treatment the next day produces enhanced terpene responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "8ff989c3-47c5-4575-8e9a-a2798a646e1f",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C7",
+      "claim": "Prolonged exposure to natural blends of stress-induced volatiles results in a response that integrates priming and direct induction into a distinct and predictable temporal response pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals that prolonged exposure to natural blends of stress-induced volatiles results in a response that integrates priming and direct induction into a distinct and predictable temporal response pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing both priming effects and direct induction occurring sequentially.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "5a132570-867e-4e67-8791-62ebfb628c19",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C8",
+      "claim": "Plants rely on chemical cues to identify and mount appropriate responses to herbivores.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants rely on chemical cues to identify and mount appropriate responses to herbivores (Waterman et al., 2019; Escobar-Bravo et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "424a3701-d5a6-4869-b6f9-103ca8c7bf7b",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C9",
+      "claim": "When perceived by undamaged plants, HIPVs can enhance plant defenses, and thus increase plant resistance to future herbivory.",
+      "claim_type": "EXPLICIT",
+      "source": "When perceived by undamaged plants, HIPVs can enhance plant defenses, and thus increase plant resistance to future herbivory (Erb et al., 2015; Kalske et al., 2019; Hu et al., 2019; Engelberth et al., 2004; V\u00e1zquez-Gonz\u00e1lez et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "b586a3d6-f408-4249-be26-762526dbebe5",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C10",
+      "claim": "HIPVs can directly induce plant defenses.",
+      "claim_type": "EXPLICIT",
+      "source": "HIPVs can directly induce plant defenses (Hu et al., 2019; Engelberth et al., 2004; Wang et al., 2023; Ruther and F\u00fcrstenau, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "549a9e21-8ac8-467a-9df5-fbea9829af4f",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C11",
+      "claim": "HIPVs can prime plant defenses, where HIPV-exposed plants respond more strongly and/or more rapidly to a secondary stimulus such as herbivore attack.",
+      "claim_type": "EXPLICIT",
+      "source": "HIPVs can also prime plant defenses. In this case, HIPV-exposed plants respond more strongly and/or more rapidly to a secondary stimulus such as herbivore attack (Erb et al., 2015; Hu et al., 2019; Engelberth et al., 2004; Mauch-Mani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "aca942b9-3f92-41ae-af6c-d9b6a07e0e53",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C12",
+      "claim": "Artificial herbivory that mimics spatiotemporal patterns of chewing herbivores induces more a similar response to actual herbivore attack than when spatiotemporal patterns are ignored.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, artificial herbivory that mimics spatiotemporal patterns of chewing herbivores induces more a similar response to actual herbivore attack than when spatiotemporal patterns are ignored (Mith\u00f6fer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "0e578e18-f4ba-4780-ad56-52ce99fe6a70",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C13",
+      "claim": "The emission of HIPVs follows discrete temporal dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The emission of HIPVs also follows discrete temporal dynamics (Erb et al., 2015; Yu et al., 2017), which, again, is likely to influence defense responses in receiver plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "9c3fb220-1aa6-42c0-804a-56e23274b63a",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C14",
+      "claim": "Green leaf volatiles are catabolic products of the lipoxygenase/hydroperoxide lyase pathway and are emitted within minutes following damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Green leaf volatiles (GLVs), including (Z)-3-hexenyl acetate (HAC), (Z)-3-hexenal, and (Z)-3-hexen-1-ol, are catabolic products of the lipoxygenase/hydroperoxide lyase pathway and are emitted within minutes following damage (D'Auria et al., 2007; Matsui, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "f300e6f2-a8fe-4436-9789-b09e69527dd0",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C15",
+      "claim": "Indole and terpenes are emitted within hours of herbivore attack.",
+      "claim_type": "EXPLICIT",
+      "source": "Indole and terpenes are emitted within hours of herbivore attack (Escobar-Bravo et al., 2023; Erb et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "65869a29-91eb-4055-862e-0717dfb6b7dd",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C16",
+      "claim": "Indole can mediate interactions between plants as well as between plants and other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indole can mediate interactions between plants as well as between plants and other organisms (Ye et al., 2021; Ye et al., 2018; Veyrat et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "c60e70e0-e775-4b21-990d-12187aaf7327",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C17",
+      "claim": "Terpenes are a very diverse group of volatiles (>80,000 known structures) that are important as both direct and indirect plant defenses.",
+      "claim_type": "EXPLICIT",
+      "source": "Terpenes are a very diverse group of volatiles (>80,000 known structures) that are also important as both direct and indirect plant defenses (Kalske et al., 2019; Chen et al., 2021; Zhou and Pichersky, 2020; Riedlmeier et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "aae4b478-ecc8-4458-83ac-fb98c48483c0",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C18",
+      "claim": "Indole and terpenes take longer to produce in comparison to GLVs and are less transiently emitted.",
+      "claim_type": "EXPLICIT",
+      "source": "Indole and terpenes take longer to produce in comparison to GLVs and are less transiently emitted (Escobar-Bravo et al., 2023; Erb et al., 2015; D'Auria et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "555d2207-634d-4df4-b34f-826742036be3",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C19",
+      "claim": "In maize, GLVs have been implicated in direct induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In maize, GLVs have been implicated in direct induction (Engelberth et al., 2004; Wang et al., 2023), and both GLVs and indole are known to prime defenses, and are thus considered as 'bioactive' in information transfer between plants (Erb et al., 2015; Hu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "c2047f78-e972-44ad-8cdc-3874a8fbeb6c",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C20",
+      "claim": "Both GLVs and indole are known to prime defenses, and are thus considered as 'bioactive' in information transfer between plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In maize, GLVs have been implicated in direct induction (Engelberth et al., 2004; Wang et al., 2023), and both GLVs and indole are known to prime defenses, and are thus considered as 'bioactive' in information transfer between plants (Erb et al., 2015; Hu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "76cf3210-bae2-4b77-ad32-daef3eddf53a",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C21",
+      "claim": "In darkness, the emission of many volatiles, especially those released via stomata, is severely hindered.",
+      "claim_type": "EXPLICIT",
+      "source": "In darkness, the emission of many volatiles, especially those released via stomata, is severely hindered (Seidl-Adams et al., 2015; He et al., 2021; Bl\u00e4sing et al., 2005; Lin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "46fe8898-cadb-4390-b527-8b32b0803ef4",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C22",
+      "claim": "Within 3 hr of herbivore feeding, a small induction of sesquiterpenes, monoterpenes, DMNT, and TMTT was detected in undamaged receiver plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Herbivore feeding began around 12:00 and within 3 hr, we detected a small induction of sesquiterpenes [C15H25+, m/z=205.20], monoterpenes [C10H17+, m/z=137.13], 4,8-dimethylnona-1,3,7-triene (DMNT) [C11H19+, m/z=151.15], and 4,8,12-trimethyltrideca-1,3,7,11-tetraene (TMTT) [C16H27+, m/z=219.21] in undamaged receiver plants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PTR-ToF-MS measurements shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "aef7569e-730f-4d53-bf95-ed237ff38c8d",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C23",
+      "claim": "Volatile emission was severely impaired during the night, regardless of treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Volatile emission was severely impaired during the night, regardless of treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1 showing reduced emissions during dark periods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "f9155af0-ae3c-4752-bdeb-b0d6d23211ab",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C24",
+      "claim": "As soon as the light was restored, a strong burst of terpene release from receiver plants was observed, which was two to five times higher than the release the day before.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, as soon as the light was restored, we observed a strong burst of terpene release from receiver plants, which was two to five times higher than the release the day before (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PTR-ToF-MS data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "b77997b0-4ae4-4923-8052-3b57d8603350",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C25",
+      "claim": "Exposure to volatiles from a herbivore-attacked plant triggers a delayed burst in terpene emission in neighboring plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, exposure to volatiles from a herbivore-attacked plant triggers a delayed burst in terpene emission in neighboring plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from PTR-ToF-MS measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "455fbc89-3ba4-46ae-bc41-455504cd01d6",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C26",
+      "claim": "During the night, plants close their stomata to limit water loss.",
+      "claim_type": "EXPLICIT",
+      "source": "During the night, plants close their stomata to limit water loss (Caird et al., 2007), which may also impair terpene release, thus leading to an accumulation of terpenes in the leaves and a burst once stomata open again (Seidl-Adams et al., 2015; Loughrin et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "9789c6bf-05ba-4f86-8c64-31f50bff51c4",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C27",
+      "claim": "Internal pools of \u03b2-caryophyllene, \u03b2-farnesene, and TMTT were marginally induced after 3 hr, but only became significantly induced after 8 hr of exposure to HIPVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Internal pools of \u03b2-caryophyllene, \u03b2-farnesene, and TMTT were marginally induced after 3 hr, but only became significantly induced after 8 hr of exposure to HIPVs (Figure 2A, B, and D, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements of internal terpene pools shown in Figure 2 and statistical analysis in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "1925e59d-a90d-4058-bbdb-2fbfa980fc7b",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C28",
+      "claim": "For \u03b2-caryophyllene, \u03b2-farnesene, and TMTT, accumulation remained higher during the night (16.75 hr) as well as the following day.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three, accumulation remained higher during the night (16.75 hr) as well as the following day.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "0497b8c2-4afa-43e9-8c30-5ec968585fb8",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C29",
+      "claim": "\u03b1-Bergamotene only began accumulating in leaves on the second day.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Bergamotene only began accumulating in leaves on the second day (Figure 2C, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by measurements shown in Figure 2C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "c8510220-ab85-478d-ad11-30591adf9bc3",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C30",
+      "claim": "Internal terpene pools remain comparable between night and day.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, internal terpene pools remain comparable between night and day, suggesting that terpenes do not continue accumulating during the night and that, even when terpenes are emitted in large amounts on day 2, internal pools do not drop below nighttime levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements of internal terpene pools over time.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "bf610ea8-2a75-494d-8a5d-0ad025a9d513",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C31",
+      "claim": "In maize, farnesene pyrophosphate synthase 3 (FPPS3), terpene synthase 2 and 10 (TPS2 and TPS10, respectively), as well as dimethylnonatriene/trimethyltetradecatetraene synthase (CYP92C5) are rate limiting for terpene production.",
+      "claim_type": "EXPLICIT",
+      "source": "In maize, farnesene pyrophosphate synthase 3 (FPPS3), terpene synthase 2 and 10 (TPS2 and TPS10, respectively), as well as dimethylnonatriene/trimethyltetradecatetraene synthase (CYP92C5) are rate limiting for terpene production (Block et al., 2019; Richter et al., 2015; Richter et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "3dfd1f1f-96b6-477c-ba6f-928414465974",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C32",
+      "claim": "All terpene biosynthesis genes (FPPS3, TPS2, TPS10, CYP92C5) were induced by HIPV exposure during daytime, but not during the night.",
+      "claim_type": "EXPLICIT",
+      "source": "All genes were induced by HIPV exposure during daytime, but not during the night.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 2E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "f13e7e52-cb21-4024-a33c-f16357535818",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C33",
+      "claim": "FPPS3 was slightly induced after 3 hr and significantly induced after 8 hr of HIPV exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "FPPS3 was slightly induced after 3 hr and significantly induced after 8 hr of HIPV exposure (Figure 2E, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 2E and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "146cb8e0-017e-4b8f-b7ca-847118c3a001",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C34",
+      "claim": "TPS2 was slightly induced 3, 8, and 22 hr after the onset of HIPV exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "TPS2 was slightly induced 3, 8, and 22 hr after the onset of HIPV exposure (Figure 2F, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 2F and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "2fa91fa9-c71a-4f40-80b7-5cb0a820bcf1",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C35",
+      "claim": "TPS10 was significantly induced after 3 and 22 hr of HIPV exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "TPS10 was significantly induced after 3 and 22 hr of HIPV exposure (Figure 2G, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 2G and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "3472b44c-5a4a-413a-916b-13878724b604",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C36",
+      "claim": "CYP92C5 was only significantly induced after 3 hr of HIPV exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "CYP92C5 was only significantly induced after 3 hr of HIPV exposure (Figure 2H, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene expression data shown in Figure 2H and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "f214688b-9c8d-4489-8aa1-d35494095238",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C37",
+      "claim": "The patterns of volatile terpene biosynthesis do not support a scenario where the terpene burst on the second day is due to continued biosynthesis but lack of emission during the night.",
+      "claim_type": "EXPLICIT",
+      "source": "The patterns of volatile terpene biosynthesis do not support a scenario where the terpene burst on the second day is due to continued biosynthesis but lack of emission during the night.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from gene expression data showing no induction during the night.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "6ca4332a-269b-446b-bb5d-c9941ef2c719",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C38",
+      "claim": "Volatile release in maize is regulated by jasmonates.",
+      "claim_type": "EXPLICIT",
+      "source": "Volatile release in maize is regulated by jasmonates (Martin et al., 2003; Ament et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "2e579151-f8cb-4d54-bbb5-5c9ebb1363e6",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C39",
+      "claim": "A significant induction of OPDA and JA-Ile production as well as OPR7 expression was found at the beginning of the second day, 22 hr after the onset of volatile exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant induction of OPDA and JA-Ile production as well as OPR7 expression at the beginning of the second day, 22 hr after the onset of volatile exposure (Figure 3, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phytohormone measurements and gene expression data shown in Figure 3 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "f1512a3e-81fc-4436-96e6-9091228d78b4",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C40",
+      "claim": "Jasmonate production is temporally aligned with the delayed terpene burst at the onset of the second day.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, jasmonate production is temporally aligned with the delayed terpene burst at the onset of the second day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the temporal correlation between jasmonate and terpene measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "2afd719a-5923-4dbe-b87d-f61019caf543",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C41",
+      "claim": "Under continuous light, the largest burst of terpene emission occurred ca. 12\u201318 hr after the onset of volatile exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to exposure during a normal light regime, the largest burst of terpene emission occurred ca. 12\u201318 hr after the onset of volatile exposure (Figure 4), suggesting that the temporal delay in volatile emission in receiver plants is not dependent on light fluctuations, but is otherwise clocked.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PTR-ToF-MS data from continuous light experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "b83c6aa6-b443-4075-97a6-1de62fbe97a4",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C42",
+      "claim": "The temporal delay in volatile emission in receiver plants is not dependent on light fluctuations, but is otherwise clocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to exposure during a normal light regime, the largest burst of terpene emission occurred ca. 12\u201318 hr after the onset of volatile exposure (Figure 4), suggesting that the temporal delay in volatile emission in receiver plants is not dependent on light fluctuations, but is otherwise clocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from continuous light experiments showing similar delayed burst patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "f6cf817a-de99-4889-bfe6-e57688f6d672",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C43",
+      "claim": "When herbivory treatment started around 20:00 hr under continuous light, a terpene burst was observed 10\u201312 hr after HIPV exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, instead of starting the herbivory treatment at ca. 12:00 hr, we started it around 20:00 hr. Similarly, we observed an initial bump in terpene emission followed by a larger burst 10\u201312 hr after HIPV exposure (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "9320b480-a411-4cae-9bcf-4533d4ed56df",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C44",
+      "claim": "In both continuous light experiments the 'second day' burst occurred somewhat earlier than under normal light conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In both continuous light experiments the 'second day' burst occurred somewhat earlier than under normal light conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of data from continuous light and normal light experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "1c11b84f-5cfe-4422-9eab-96179ed4b6bf",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C45",
+      "claim": "Stomata, which are closed in the dark, may delay the onset of the terpene burst under dark:light transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that stomata, which are closed in the dark, delay the onset of the terpene burst under dark:light transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on stomatal behavior.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "8822f7c3-8657-4e4b-8374-9d8a626b6ed1",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C46",
+      "claim": "Strong positive correlations were found between hexenyl acetate, hexenal, hexen-1-ol, and indole emissions in sender plants and terpene responses in receiver plants when plants had a dark period.",
+      "claim_type": "EXPLICIT",
+      "source": "We found strong positive correlations between hexenyl acetate, hexenal, hexen-1-ol, and indole emissions in sender plants and terpene responses in receiver plants when plants had a dark period (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "47e83388-86dc-4ed3-aba7-c12c385238dc",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C47",
+      "claim": "Under continuous light, the apex of bioactive volatile emission in sender plants was not temporally aligned with the apex of terpene responses in receiver plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this was not the case under continuous light, where the apex of bioactive volatile emission in sender plants was not temporally aligned with the apex of terpene responses in receiver plants (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "662d9b7f-9cb6-4bd7-ad89-05fc1fc87310",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C48",
+      "claim": "Sender plant emissions showed slight negative correlations with terpene induction in receiver plants under continuous light.",
+      "claim_type": "EXPLICIT",
+      "source": "Sender plant emissions even showed slight negative correlations with terpene induction in receiver plants under continuous light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "aa40c3a6-1345-445c-8fe2-a81f2c65594a",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C49",
+      "claim": "The emission kinetics of bioactive volatiles from sender plants cannot fully explain the delayed terpene burst.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the emission kinetics of bioactive volatiles from sender plants cannot fully explain the delayed terpene burst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from correlation analysis showing lack of alignment under continuous light.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "cdd95920-f63d-4e31-812f-9ccc40e7e423",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C50",
+      "claim": "Following short exposure to HIPVs, a generally small, but significant, induction of sesquiterpenes, monoterpenes, DMNT, and TMTT emissions was detected in receiver plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the short exposure to HIPVs, we detected a generally small, but significant, induction of sesquiterpenes, monoterpenes, DMNT, and TMTT emissions in receiver plants (Figure 7, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PTR-ToF-MS data shown in Figure 7 and statistical analysis in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "0169531e-3a29-49bf-bced-f0af50055248",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C51",
+      "claim": "At the beginning of the next day, a slight induction in terpene emissions was found, most apparent for sesquiterpenes and TMTT, in plants that had been exposed to herbivory-induced volatiles 18 hr prior.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of the next day, we found a slight induction in terpene emissions, most apparent for sesquiterpenes and TMTT, in plants that had been exposed to herbivory-induced volatiles 18 hr prior (Figure 7, Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PTR-ToF-MS data shown in Figure 7 and statistical analysis in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "3252153b-1599-4b06-833b-77218e32c6ac",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C52",
+      "claim": "HAC exposure at the beginning of the next day induced terpene emissions.",
+      "claim_type": "EXPLICIT",
+      "source": "HAC exposure at the beginning of the next day also induced terpene emissions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "56df974c-2187-4a6b-8499-63a15ef22cb2",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C53",
+      "claim": "HAC induced a stronger release of all terpenes in plants that had been exposed to HIPVs the previous day.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, HAC induced a stronger release of all terpenes in plants that had been exposed to HIPVs the previous day.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 7 showing interaction effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "47e57bbc-6d60-4ff9-bf85-6ce529df8174",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C54",
+      "claim": "Induction in terpene emission by HAC was similar regardless of whether induction began 30 min or 4 hr 30 min after lights came on.",
+      "claim_type": "EXPLICIT",
+      "source": "We exposed maize seedlings to HAC dispensers either 30 min or 4 hr 30 min after lights came on. We found induction in terpene emission to be similar regardless of when induction began (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "6fbeba58-4f6b-442c-92af-612f2ddd67c7",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C55",
+      "claim": "Exposure to HIPVs prompts maize plants to release more terpenes the next day.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, exposure to HIPVs prompts maize plants to release more terpenes the next day and also primes maize plants to respond more strongly to a secondary HIPV trigger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data showing delayed terpene induction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "35d97d7a-f186-480e-b919-443221c9fbb0",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C56",
+      "claim": "Exposure to HIPVs primes maize plants to respond more strongly to a secondary HIPV trigger.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, exposure to HIPVs prompts maize plants to release more terpenes the next day and also primes maize plants to respond more strongly to a secondary HIPV trigger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data showing enhanced response to HAC after HIPV priming.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "8176ea80-46fb-4b75-b732-367f4a5a03e1",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C57",
+      "claim": "The combination of delayed terpene release and priming results in a pronounced terpene burst.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these two phenomena result in a pronounced terpene burst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data showing both priming and direct induction effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "7e737486-4e6c-4105-b12a-2714aa290fe0",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C58",
+      "claim": "More natural continuous exposure to volatiles results in the same priming pattern without the need for another stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that more natural continuous exposure to volatiles results in the same pattern without the need for another stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data comparing continuous exposure to short-term exposure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "83e3db38-bab6-49b5-9228-182391fadbd1",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C59",
+      "claim": "HIPVs are sufficient to trigger robust, clocked defense activation in neighboring plants.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that HIPVs are sufficient to trigger robust, clocked defense activation in neighboring plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "52a23fe4-147b-42c4-a196-d42305e50c16",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C60",
+      "claim": "On day 1, maize plants are exposed to GLVs, which trigger a small burst of terpene release in receiver plants.",
+      "claim_type": "EXPLICIT",
+      "source": "On day 1, maize plants are exposed to GLVs, which trigger a small burst of terpene release in receiver plants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a mechanistic scenario inferred from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "12950c93-a06f-4734-abae-4ad498f885d3",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C61",
+      "claim": "Receiver plants are primed to respond more strongly on the next day, once light is restored.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, receiver plants are primed to respond more strongly on the next day, once light is restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a mechanistic scenario inferred from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "b96401f5-8360-45e4-9e74-532d315d53bc",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C62",
+      "claim": "At the onset of the second day, the emission of GLVs from the neighboring plants increases.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of the second day, four things happen simultaneously. First, the emission of GLVs from the neighboring plants increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a mechanistic scenario inferred from sender plant volatile emission data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "4fbaf14d-79b1-460d-bb14-efd89a29732c",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C63",
+      "claim": "At the onset of the second day, the defense priming mechanism responding to GLV cues kicks into gear.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the defense priming mechanism responding to these cues kicks into gear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a mechanistic scenario inferred from priming experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "1f93f9f1-2117-46f2-98db-4e00c644604e",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C64",
+      "claim": "At the onset of the second day, terpene production is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, terpene production is activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a mechanistic scenario inferred from gene expression and terpene accumulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "a7385fb3-01dc-4a31-ac5c-7f16615cfb7e",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C65",
+      "claim": "At the onset of the second day, stomata open and enable volatile emission.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, stomata open and enable volatile emission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is part of a mechanistic scenario based on established knowledge of stomatal behavior.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "ed43bbb8-3cc8-40bd-9b06-0714f4ca1784",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C66",
+      "claim": "The orchestration of GLV emission increase, priming activation, terpene production, and stomatal opening results in a strong terpene burst.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these elements result in a strong terpene burst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a synthesis of the mechanistic scenario inferred from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "0ee6e834-be71-4f98-a7ce-1b1a8a962fbe",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C67",
+      "claim": "Considering we observed an induction in jasmonates coinciding with terpene bursts it is likely that non-volatile jasmonate-dependent defenses follow similar temporal patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, considering we observed an induction in jasmonates coinciding with terpene bursts it is likely that non-volatile jasmonate-dependent defenses follow similar temporal patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on observed jasmonate induction patterns.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "8fbafb4e-f0fa-454d-aaf6-540bed41e3c6",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C68",
+      "claim": "Responding most strongly to volatile cues on the second day may avoid unnecessary energy expenditure.",
+      "claim_type": "EXPLICIT",
+      "source": "First, responding most strongly to volatile cues on the second day may avoid unnecessary energy expenditure (Waterman et al., 2019; Mith\u00f6fer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis about ecological relevance supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "dad5200b-84f6-40cc-a5ec-94088cb439e3",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C69",
+      "claim": "GLVs are emitted upon both herbivore attack and mechanical damage.",
+      "claim_type": "EXPLICIT",
+      "source": "GLVs are emitted upon both herbivore attack and mechanical damage (Gardiner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "e76edd49-4b06-4b16-b026-4078c1299954",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C70",
+      "claim": "When damage is not sustained, GLVs will dissipate rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when damage is not sustained, GLVs will dissipate rapidly (D'Auria et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "e54be022-18c0-4fc8-888a-b93b4cad9a67",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C71",
+      "claim": "Responding most strongly to repeated GLV exposure could avoid false negatives and allow plants to respond more robustly to the presence of actual herbivory.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, responding most strongly to repeated GLV exposure could avoid false negatives and allow plants to respond more robustly to the presence of actual herbivory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about adaptive benefits.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "529b9c9c-3df9-4cab-b478-5d8a5c857a85",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C72",
+      "claim": "Sending out volatiles on the second day may maximize indirect defenses.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, sending out volatiles on the second day may maximize indirect defenses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis about ecological relevance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "88884aab-1771-466b-b501-a46087dafee3",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C73",
+      "claim": "Attracting natural enemies too early to herbivore-free plants could have fitness costs for both the plant and herbivore natural enemies.",
+      "claim_type": "EXPLICIT",
+      "source": "Attracting natural enemies too early to herbivore-free plants could have fitness costs for both the plant and herbivore natural enemies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about ecological costs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "83d14b0d-ce92-4f53-9667-ff325775f4f8",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C74",
+      "claim": "Responding on the second day could be advantageous, as by this time, the natural enemies would have located and interacted with the herbivores on sender plants, and would thus be ready to move over to the next plant in anticipation of herbivore arrival.",
+      "claim_type": "EXPLICIT",
+      "source": "Responding on the second day could be advantageous, as by this time, the natural enemies would have located and interacted with the herbivores on sender plants, and would thus be ready to move over to the next plant in anticipation of herbivore arrival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about ecological advantages.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "06cd53b9-d874-4868-be1a-726e1270875f",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C75",
+      "claim": "HIPVs also attract herbivores.",
+      "claim_type": "EXPLICIT",
+      "source": "As fitness outcomes are likely highly nuanced, especially considering HIPVs also attract herbivores (Zu et al., 2020), investigation into information transfer on the multi-plant scale, namely in the context of multi-trophic interactions, will be critical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "ef87f599-cb0b-4982-a037-c1c5a9454f70",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C76",
+      "claim": "V2-stage Zea mays (maize, B73) was used throughout this study.",
+      "claim_type": "EXPLICIT",
+      "source": "V2-stage Zea mays (maize, B73) was used throughout this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "05bc8a5a-f822-4c50-b706-6a6c1aa2f7ba",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C77",
+      "claim": "At V2 stage, maize has four leaves: two are fully developed, one is expanding and one is emerging.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage, maize has four leaves: two are fully developed, one is expanding and one is emerging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a description of plant developmental stage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "0672f2f7-dd08-4f1c-899b-c54954641abe",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C78",
+      "claim": "S. exigua were reared from eggs on artificial diet and used for experiments when they reached the fourth instar stage.",
+      "claim_type": "EXPLICIT",
+      "source": "S. exigua (Frontier Agricultural Sciences, USA) were reared from eggs on artificial diet (Maag et al., 2014) and used for experiments when they reached the fourth instar stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "36dea5e1-6309-48c9-b342-d77fe39749a8",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C79",
+      "claim": "The herbivore treatment consisted of adding 3 fourth instar larvae onto plants (sender plants).",
+      "claim_type": "EXPLICIT",
+      "source": "The herbivore treatment consisted of adding 3 fourth instar larvae onto plants (sender plants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "ad4ec3ab-9689-4bd8-ae30-1162b8ff3e56",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C80",
+      "claim": "HAC dispensers emitted HAC at a rate of 4.68 (\u00b10.40 SD) nmol hr\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "HAC dispensers emitted HAC at a rate of 4.68 (\u00b10.40 SD) nmol hr\u20131 and maize seedlings infested with 3 fourth instar S. exigua larvae emitted all GLVs at a rate of 1.94 nmol hr\u20131 (\u00b10.25 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements of dispenser emission rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "aa4ef627-180a-411e-9355-a6af611dff70",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C81",
+      "claim": "Maize seedlings infested with 3 fourth instar S. exigua larvae emitted all GLVs at a rate of 1.94 nmol hr\u20131 (\u00b10.25 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "HAC dispensers emitted HAC at a rate of 4.68 (\u00b10.40 SD) nmol hr\u20131 and maize seedlings infested with 3 fourth instar S. exigua larvae emitted all GLVs at a rate of 1.94 nmol hr\u20131 (\u00b10.25 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements of plant GLV emission rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "9bd54a9a-53b5-470f-bca3-26401769c43d",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C82",
+      "claim": "GLV emissions induced by caterpillars vary over time, and can be more than twofold higher than the average during times of strong active feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, GLV emissions induced by caterpillars vary over time, and can be more than twofold higher than the average during times of strong active feeding (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "69fb8262-5ec3-4a8c-8cf7-58e0d499ae13",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C83",
+      "claim": "The release rate of the HAC dispensers is within the plant's physiological range.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the release rate of the dispensers is within the plant's physiological range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparison of dispenser and plant emission rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "fc93dd4e-44c0-4ae3-af4f-abd22fcd3003",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C84",
+      "claim": "Terpenes are not known to prime or induce volatile release in maize.",
+      "claim_type": "EXPLICIT",
+      "source": "Terpenes are not known to prime or induce volatile release in maize, and were thus not included in the sender plant analysis (Ruther and F\u00fcrstenau, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "3e83bde4-5844-4c66-88cd-9fc01b0dbfe4",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C85",
+      "claim": "In maize, GLVs directly induce and prime jasmonate production and terpene release.",
+      "claim_type": "EXPLICIT",
+      "source": "In maize, GLVs directly induce and prime jasmonate production and terpene release (Hu et al., 2019; Engelberth et al., 2004; Wang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "17b01c19-6275-420d-95ff-93410616730a",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C86",
+      "claim": "Indole can prime, but not directly induce jasmonate production and terpene release.",
+      "claim_type": "EXPLICIT",
+      "source": "Indole can prime, but not directly induce these two responses (Erb et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "84577e02-9de9-477a-bb7c-0a32a0a08b59",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C87",
+      "claim": "GLVs and indole can interact to increase defense priming upon a secondary stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "GLVs and indole again can interact to increase defense priming upon a secondary stimulus (Hu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "77ad648b-125e-4066-8bec-535bf0e514f2",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C88",
+      "claim": "\u03b2-caryophyllene is a minor sesquiterpene in B73.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of variation was not visible in total sesquiterpene emissions measured by proton transfer reaction time-of-flight mass spectrometry (PTR-ToF-MS) (Figure 1), likely because \u03b2-caryophyllene is a minor sesquiterpene in B73 (Block et al., 2018) and closed stomata block sesquiterpene emission at night (Seidl-Adams et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "ea85d7b8-3427-43bf-b2ad-82ea3646f1aa",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C89",
+      "claim": "Closed stomata block sesquiterpene emission at night.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of variation was not visible in total sesquiterpene emissions measured by proton transfer reaction time-of-flight mass spectrometry (PTR-ToF-MS) (Figure 1), likely because \u03b2-caryophyllene is a minor sesquiterpene in B73 (Block et al., 2018) and closed stomata block sesquiterpene emission at night (Seidl-Adams et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "f0ede8f4-11c1-4ecb-b9b1-e1605837ff7d",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C90",
+      "claim": "OPR7 is critical for JA biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand whether the delayed terpene burst is associated with jasmonate signaling, we measured the levels of 12-oxo-phytodienoic acid (OPDA), jasmonic acid (JA), and jasmonic acid-isoleucine (JA-Ile), as well as the expression of oxo-phytodienoate reductase 7 (OPR7), which is critical for JA biosynthesis (Yan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "21988de7-f2e5-4c34-b7dd-45632f70052b",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C91",
+      "claim": "The (Z)-3 isomers of all GLVs measured in this study (hexenyl acetate, hexenal, and hexen-1-ol) are known to be bioactive.",
+      "claim_type": "EXPLICIT",
+      "source": "The (Z)-3 isomers of all GLVs measured in this study (hexenyl acetate, hexenal, and hexen-1-ol) are known to be bioactive (Engelberth et al., 2004; Matsui et al., 2012) and interconvertible, with hexenal and hexenyl acetate for instance being transformed into hexen-1-ol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "52ab9e0a-60e3-40d9-84c4-94b450ec364e",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "claim_id": "C92",
+      "claim": "The (Z)-3 isomers of GLVs are interconvertible, with hexenal and hexenyl acetate being transformed into hexen-1-ol.",
+      "claim_type": "EXPLICIT",
+      "source": "The (Z)-3 isomers of all GLVs measured in this study (hexenyl acetate, hexenal, and hexen-1-ol) are known to be bioactive (Engelberth et al., 2004; Matsui et al., 2012) and interconvertible, with hexenal and hexenyl acetate for instance being transformed into hexen-1-ol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge of GLV biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d0ad034d-d18a-443f-96fa-051160d61fa8",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Continuous exposure to herbivore-induced plant volatiles (HIPVs) results in a delayed terpene burst in receiver plants at the onset of the second day. Within 3 hours of herbivore feeding, a small induction of terpenes was detected, but volatile emission was severely impaired during the night. Upon light restoration, a strong burst of terpene release occurred, 2-5 times higher than the previous day.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C22-C25 are well-supported by PTR-ToF-MS data shown in Figure 1, demonstrating clear temporal patterns with initial small induction followed by a pronounced delayed burst. The experimental design appropriately controls for sender plant emissions by subtraction, and the pattern is consistent and reproducible across multiple terpene classes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "9e7847a1-cdf6-4321-ab41-e03e07947578",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The delayed terpene burst is not explained by nighttime accumulation of terpenes in leaves. Internal terpene pools and biosynthesis gene expression were measured over time, showing that terpene pools remain comparable between night and day, and biosynthesis genes were not induced during the night, ruling out continued biosynthesis with blocked emission as the mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C27-C37 are supported by complementary measurements of internal terpene pools (Figure 2A-D, Table 1) and gene expression (Figure 2E-H, Table 1). The data consistently show that terpenes do not accumulate above daytime levels during the night and biosynthesis genes are not induced during darkness, providing strong evidence against the accumulation hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "90cd7a1f-60b9-42a7-89ac-3480e7dad846",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The delayed terpene burst coincides with delayed jasmonate accumulation in receiver plants. Significant induction of OPDA, JA-Ile, and OPR7 expression was detected at 22 hours (beginning of second day), temporally aligned with the terpene burst.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C38-C40 are supported by phytohormone measurements and gene expression data (Figure 3, Table 1) showing significant jasmonate induction at 22 hours. The temporal correlation between jasmonate and terpene induction is clear, though the data demonstrate correlation rather than causation. The known regulatory role of jasmonates in volatile release (C38, cited) provides mechanistic plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "7d2f82f7-6048-42e9-abd9-a74bdfb7416c",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The delayed terpene burst occurs independent of day:night light transitions. Under continuous light conditions, the largest burst occurred 12-18 hours after HIPV exposure onset, similar to normal light conditions, though occurring somewhat earlier. This demonstrates the response is temporally clocked rather than driven by light transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41-C44 are supported by continuous light experiments (Figure 4, Figure 4\u2014figure supplement 1) showing similar delayed burst patterns regardless of light regime. The experiments appropriately control for time-of-day effects by starting herbivory at different times. Claim C45 is speculative but reasonable. The earlier timing under continuous light suggests stomatal dynamics may modulate but not drive the core timing mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "47a0f5c7-c457-4dad-97e2-a1b059de1578",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The delayed terpene burst cannot be fully explained by sender plant volatile emission dynamics. While strong positive correlations existed between bioactive volatile emissions from senders and terpene responses in receivers under normal light conditions, these correlations were absent or negative under continuous light, indicating sender dynamics alone do not explain the receiver response pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C46-C49 are supported by correlation analysis (Figure 6) comparing sender emissions with receiver responses under different light regimes. The contrasting correlation patterns between normal and continuous light conditions provide strong evidence that sender dynamics are insufficient to explain receiver responses. However, the analysis is correlational and the biological interpretation of negative correlations under continuous light (C48) is unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The delayed burst results from stress memory (priming) from first-day volatile exposure combined with secondary exposure to bioactive volatiles on the second day. Short HIPV exposure followed by HAC treatment the next day produced enhanced terpene responses compared to either treatment alone, demonstrating both direct induction and priming effects that together create the pronounced burst.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C50-C57 are supported by experimental manipulation (Figure 7, Table 2) showing that short HIPV exposure primes plants for enhanced response to subsequent HAC treatment. The factorial design appropriately tests the interaction between priming and direct induction. Statistical analysis (Table 2) confirms significant interaction effects. Claim C54 controls for time-of-day sensitivity. This provides strong mechanistic evidence for the integration of priming and direct induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prolonged exposure to natural HIPV blends integrates priming and direct induction into a distinct temporal response pattern. The proposed mechanism involves: (1) first-day GLV exposure triggering small terpene release and priming, (2) second-day increases in GLV emission, priming activation, terpene biosynthesis, and stomatal opening occurring simultaneously to produce the strong burst.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C58-C66 synthesize the experimental findings into a coherent mechanistic model. The model is well-supported by the collective evidence from continuous exposure experiments (C1), priming experiments (C6), correlation analyses (C5), and molecular measurements (C2-C3). However, claims C60-C66 represent an inferred mechanistic scenario rather than directly demonstrated causality. The model is plausible and consistent with all data, but individual mechanistic steps (especially C63-C65) are not independently validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "3173ab16-ea8e-48f0-a07b-b3b802e77569",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose ecological hypotheses for the adaptive significance of delayed defense responses, including avoiding unnecessary energy expenditure by responding only to sustained damage signals, and optimizing indirect defenses by timing volatile emission to when natural enemies are ready to move from sender to receiver plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C74 are speculative hypotheses about ecological relevance that are not tested in this study. While the reasoning is plausible and supported by citations (C68-C70, C75), no fitness measurements, herbivore bioassays, or natural enemy attraction experiments are presented. Claim C67 about non-volatile defenses is reasonable extrapolation from jasmonate data but untested. These remain interesting hypotheses requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "b2733c72-6199-4235-827e-04815fbe7303",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The experimental system used V2-stage maize plants exposed to fourth instar S. exigua larvae, with HAC dispensers calibrated to emit at physiologically relevant rates (4.68 nmol/hr) comparable to GLV emissions from herbivore-infested plants (1.94 nmol/hr total GLVs, with peaks >2-fold higher during active feeding).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C83 describe methodological details that are well-documented. The HAC dispenser calibration (C80-C83) is particularly important, with measurements showing the dispensers emit within the physiological range of plant GLV emissions, including natural temporal variation (Figure 7\u2014figure supplement 2). This validates the use of synthetic dispensers as appropriate experimental tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "cff87a03-32b7-49dc-a69d-bb7efa200d72",
+      "content_id": "6e65c804-c718-4006-be82-3f6a5328c953",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about plant volatile signaling, including: plants use chemical cues for herbivore responses; HIPVs can directly induce or prime defenses; GLVs, indole, and terpenes have distinct emission kinetics and bioactivities; volatile emission is light-dependent; and specific biosynthetic genes and pathways regulate these responses in maize.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C21, C26, C31, C84-C92 represent established background knowledge supported by appropriate citations to prior literature. These claims provide necessary context for interpreting the current results. The citations appear appropriate and the knowledge claims are consistent with the field. Some claims (C26, C92) represent general plant biology knowledge that is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "a36b0ed2-cac3-49ae-8aca-69df65ab92f5",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Continuous exposure to herbivore-induced plant volatiles (HIPVs) triggers a clocked temporal response in receiver plants, characterized by a small initial terpene induction within 3 hours, severely impaired emission during the night, and a strong delayed terpene burst (2-5 times higher) at the onset of the second day when light is restored.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers affirm this core finding. The editor states 'the evidence supporting the conclusions is compelling, with rigorous chemical assays and state-of-the-art high throughput real time mass spectrometry.' Reviewer 3 explicitly confirms 'Different terpenoids were produced within 2 h of such exposure in receiver plants, but not during the dark phase. Once the light turned on again, large amounts of terpenoids were released from the receiver plants.' No concerns were raised about these fundamental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "0407ff4d-548c-45c0-8246-02bd32ebb003",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The delayed terpene burst is not explained by nighttime accumulation of terpenes in leaves. Internal pools of \u03b2-caryophyllene, \u03b2-farnesene, and TMTT were induced after 8 hours and remained elevated, while \u03b1-bergamotene only accumulated on day 2, but overall internal terpene pools remained comparable between night and day.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly confirms this finding: 'Interestingly, internal terpene pools of one of the leaves tested here remained more comparable between night and day, indicating that their pools stay higher in plants exposed to HIPVs.' The editor notes the evidence is 'compelling' and no reviewer challenged the internal pool measurements or their interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "9fe2572f-ce69-448c-a117-ff580e645868",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Terpene biosynthesis genes (FPPS3, TPS2, TPS10, CYP92C5) were induced by HIPV exposure during daytime but not during the night, with varying temporal patterns. This gene expression pattern does not support continued biosynthesis during the night as an explanation for the day 2 burst.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly states 'In contrast, terpene synthases were only induced during the light-phase, not in the dark-phase.' The editor describes the evidence as 'compelling' and no reviewer questioned the gene expression data or the inference that nighttime biosynthesis does not explain the burst.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "4152e88b-b60e-43db-9acd-71e9935037fd",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The delayed terpene burst coincides with delayed jasmonate accumulation in receiver plants. Significant induction of OPDA, JA-Ile, and OPR7 expression occurred at 22 hours after volatile exposure onset, temporally aligned with the terpene burst at the beginning of the second day.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 confirms 'Moreover, jasmonates were only significantly induced 22 h after onset of the volatile exposure and thus parallel with the burst of terpene release.' The editor notes the work highlights 'the role of priming and induction in plant defences' and describes the evidence as 'compelling.' No concerns were raised about the jasmonate measurements or temporal correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "18235949-efa9-403a-80d3-a52ee940c0f1",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The delayed terpene burst occurs independent of day:night light transitions. Under continuous light, the largest burst occurred 12-18 hours after volatile exposure onset, though somewhat earlier than under normal light conditions. When herbivory started at 20:00 under continuous light, the burst shifted to 10-12 hours post-exposure.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly discusses this finding: 'As one contrasting control, the authors also studied the time-delay in volatile emission when plants were just kept under continuous light. Here they also found a delayed terpenoid production...Another helpful control was now performed for the revision in which the herbivory treatment was started in the evening hours and lights were left on. This experiment revealed that the burst of terpenoid emission indeed shifted somewhat. Circadiane and diurnal processes must thus interact.' The reviewer treats this as supporting evidence for the clocked nature of the response.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "9d1aeb2f-47c8-4507-ba13-390f854dbaff",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The delayed burst cannot be fully explained by sender volatile dynamics. Strong positive correlations were found between bioactive volatile emissions (GLVs and indole) from sender plants and terpene responses in receivers under normal light:dark conditions, but under continuous light these correlations were absent or negative, indicating sender emissions do not fully explain the receiver burst.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises significant concerns about the correlation analysis in Figure 6: 'With regards to the correlation analyses shown in figure 6, the results presented in many of the correlation plots are not actually informative. While there is a trend, I do not think that this is an appropriate way to show the data, as there are clearly other relationships at play.' However, Reviewer 3 finds 'The comparison between plants under continuous light and normal light:dark conditions is interesting' without expressing methodological concerns. The interpretation is accepted but the analytical approach is questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "1a74c383-0b26-4928-ad5f-3e394390b3e0",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The delayed burst results from stress memory (priming) from first-day volatile exposure combined with secondary exposure to bioactive volatiles on day 2. Short HIPV exposure followed by HAC treatment the next day produced enhanced terpene responses, demonstrating both delayed release and priming effects that together create the pronounced burst.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly confirms this mechanism: 'An additional experiment exposing plants to the green leaf volatile (glv) (Z)-3-hexenyl acetate revealed that plants can be primed by this glv, leading to a stronger terpene burst.' The editor highlights 'the delayed emission of certain terpenes in receiver plants after the onset of light may be a result of stress memory, highlighting the role of priming and induction.' No reviewer challenged this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "bcf8393b-2eae-4675-b79b-1f9a117ef392",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Prolonged exposure to natural blends of stress-induced volatiles integrates priming and direct induction into a distinct, predictable temporal response pattern. HIPVs are sufficient to trigger robust, clocked defense activation in neighboring plants without requiring additional stimuli.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states this is a 'fundamental study' and that 'the evidence supporting the conclusions is compelling.' Reviewer 3 concludes 'Overall, this study provides intriguing insights in the potential interplay between priming and induction, which may co-occur, enhancing (indirect and direct) plant defence.' All reviewers accept this integrative conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "1664a6bf-105e-490e-905f-40bee1c18d59",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Internal terpene pool measurements by GC-MS showed specific temporal accumulation patterns for \u03b2-caryophyllene, \u03b2-farnesene, TMTT, and \u03b1-bergamotene in response to HIPV exposure.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises methodological concerns: 'I am wondering why VOCs (as measured by GC-MS) were not quantified...Simply relying on the area under the curve and presenting results using arbitrary units is not enough for analyses like these. AU values do not allow for conclusions regarding total quantities...the references cited show that TMTT has been found to accumulate at similar levels of caryophyllene, however the AU values reported are an order of magnitude higher for TMTT.' While the patterns are accepted, the quantification method is questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "849b1209-c526-4f1a-9fb4-bb4a06d80946",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The timing of HAC-induced terpene emission was similar whether HAC exposure began 30 minutes or 4.5 hours after lights came on.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This control experiment is not specifically discussed by reviewers, suggesting implicit acceptance. No concerns were raised about this supporting observation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "7dd24d25-477b-4577-b915-fddc404984e5",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The mechanistic scenario proposes that on day 1, GLVs trigger a small terpene burst and prime receivers; on day 2, four simultaneous events (increased GLV emission, priming activation, terpene production, and stomatal opening) orchestrate the strong burst.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 states 'The results are discussed with nice logic and considering potential ecological consequences. All data are now well discussed.' The editor notes the work is 'fundamental' and evidence is 'compelling.' This mechanistic synthesis is accepted as a logical integration of the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "29d7f62a-3ec3-4c20-8090-0ce8d9fa7cde",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Speculative ecological interpretations suggest the delayed response may avoid unnecessary energy expenditure, reduce false positives from transient damage, and optimize timing for natural enemy attraction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly states 'The results are discussed with nice logic and considering potential ecological consequences.' These speculative claims are presented as hypotheses and are accepted as reasonable interpretations by reviewers without challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "160795a2-879f-4f3b-ac37-45ccdd4574b0",
+      "content_id": "8f507c09-53dd-4823-832c-feed3f4af478",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "Methodological details including plant developmental stage (V2), herbivore treatment (3 fourth instar S. exigua larvae), and HAC dispenser emission rates (4.68 nmol/hr, within physiological range compared to plant GLV emissions of 1.94 nmol/hr).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer raised concerns about these methodological details. The editor describes the methods as involving 'rigorous chemical assays and state-of-the-art high throughput real time mass spectrometry,' indicating acceptance of the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d875824c-259b-4064-aabc-47c2281c100f",
+      "result_id": "d0ad034d-d18a-443f-96fa-051160d61fa8"
+    },
+    {
+      "claim_id": "46fe8898-cadb-4390-b527-8b32b0803ef4",
+      "result_id": "d0ad034d-d18a-443f-96fa-051160d61fa8"
+    },
+    {
+      "claim_id": "aef7569e-730f-4d53-bf95-ed237ff38c8d",
+      "result_id": "d0ad034d-d18a-443f-96fa-051160d61fa8"
+    },
+    {
+      "claim_id": "f9155af0-ae3c-4752-bdeb-b0d6d23211ab",
+      "result_id": "d0ad034d-d18a-443f-96fa-051160d61fa8"
+    },
+    {
+      "claim_id": "b77997b0-4ae4-4923-8052-3b57d8603350",
+      "result_id": "d0ad034d-d18a-443f-96fa-051160d61fa8"
+    },
+    {
+      "claim_id": "7d545da0-79ac-4c9c-85ea-9c71a0b0d29f",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "9789c6bf-05ba-4f86-8c64-31f50bff51c4",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "1925e59d-a90d-4058-bbdb-2fbfa980fc7b",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "0497b8c2-4afa-43e9-8c30-5ec968585fb8",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "c8510220-ab85-478d-ad11-30591adf9bc3",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "3dfd1f1f-96b6-477c-ba6f-928414465974",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "f13e7e52-cb21-4024-a33c-f16357535818",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "146cb8e0-017e-4b8f-b7ca-847118c3a001",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "2fa91fa9-c71a-4f40-80b7-5cb0a820bcf1",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "3472b44c-5a4a-413a-916b-13878724b604",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "f214688b-9c8d-4489-8aa1-d35494095238",
+      "result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578"
+    },
+    {
+      "claim_id": "58c3b2f6-7bed-41b5-8003-68876eafd9fb",
+      "result_id": "90cd7a1f-60b9-42a7-89ac-3480e7dad846"
+    },
+    {
+      "claim_id": "6ca4332a-269b-446b-bb5d-c9941ef2c719",
+      "result_id": "90cd7a1f-60b9-42a7-89ac-3480e7dad846"
+    },
+    {
+      "claim_id": "2e579151-f8cb-4d54-bbb5-5c9ebb1363e6",
+      "result_id": "90cd7a1f-60b9-42a7-89ac-3480e7dad846"
+    },
+    {
+      "claim_id": "f1512a3e-81fc-4436-96e6-9091228d78b4",
+      "result_id": "90cd7a1f-60b9-42a7-89ac-3480e7dad846"
+    },
+    {
+      "claim_id": "85aae2a3-d4c3-48cf-90ec-5b66c1da8cbe",
+      "result_id": "7d2f82f7-6048-42e9-abd9-a74bdfb7416c"
+    },
+    {
+      "claim_id": "2afd719a-5923-4dbe-b87d-f61019caf543",
+      "result_id": "7d2f82f7-6048-42e9-abd9-a74bdfb7416c"
+    },
+    {
+      "claim_id": "b83c6aa6-b443-4075-97a6-1de62fbe97a4",
+      "result_id": "7d2f82f7-6048-42e9-abd9-a74bdfb7416c"
+    },
+    {
+      "claim_id": "f6cf817a-de99-4889-bfe6-e57688f6d672",
+      "result_id": "7d2f82f7-6048-42e9-abd9-a74bdfb7416c"
+    },
+    {
+      "claim_id": "9320b480-a411-4cae-9bcf-4533d4ed56df",
+      "result_id": "7d2f82f7-6048-42e9-abd9-a74bdfb7416c"
+    },
+    {
+      "claim_id": "1c11b84f-5cfe-4422-9eab-96179ed4b6bf",
+      "result_id": "7d2f82f7-6048-42e9-abd9-a74bdfb7416c"
+    },
+    {
+      "claim_id": "7822d8d0-025d-4aa9-8f97-fc55a08536fb",
+      "result_id": "47a0f5c7-c457-4dad-97e2-a1b059de1578"
+    },
+    {
+      "claim_id": "8822f7c3-8657-4e4b-8374-9d8a626b6ed1",
+      "result_id": "47a0f5c7-c457-4dad-97e2-a1b059de1578"
+    },
+    {
+      "claim_id": "47e83388-86dc-4ed3-aba7-c12c385238dc",
+      "result_id": "47a0f5c7-c457-4dad-97e2-a1b059de1578"
+    },
+    {
+      "claim_id": "662d9b7f-9cb6-4bd7-ad89-05fc1fc87310",
+      "result_id": "47a0f5c7-c457-4dad-97e2-a1b059de1578"
+    },
+    {
+      "claim_id": "aa40c3a6-1345-445c-8fe2-a81f2c65594a",
+      "result_id": "47a0f5c7-c457-4dad-97e2-a1b059de1578"
+    },
+    {
+      "claim_id": "37a20235-3f4c-4045-94ec-cac73cec6efc",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "cdd95920-f63d-4e31-812f-9ccc40e7e423",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "0169531e-3a29-49bf-bced-f0af50055248",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "3252153b-1599-4b06-833b-77218e32c6ac",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "56df974c-2187-4a6b-8499-63a15ef22cb2",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "47e57bbc-6d60-4ff9-bf85-6ce529df8174",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "6fbeba58-4f6b-442c-92af-612f2ddd67c7",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "35d97d7a-f186-480e-b919-443221c9fbb0",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "8176ea80-46fb-4b75-b732-367f4a5a03e1",
+      "result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4"
+    },
+    {
+      "claim_id": "8ff989c3-47c5-4575-8e9a-a2798a646e1f",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "7e737486-4e6c-4105-b12a-2714aa290fe0",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "83e3db38-bab6-49b5-9228-182391fadbd1",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "52a23fe4-147b-42c4-a196-d42305e50c16",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "12950c93-a06f-4734-abae-4ad498f885d3",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "b96401f5-8360-45e4-9e74-532d315d53bc",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "4fbaf14d-79b1-460d-bb14-efd89a29732c",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "1f93f9f1-2117-46f2-98db-4e00c644604e",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "a7385fb3-01dc-4a31-ac5c-7f16615cfb7e",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "ed43bbb8-3cc8-40bd-9b06-0714f4ca1784",
+      "result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4"
+    },
+    {
+      "claim_id": "0ee6e834-be71-4f98-a7ce-1b1a8a962fbe",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "8fbafb4e-f0fa-454d-aaf6-540bed41e3c6",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "dad5200b-84f6-40cc-a5ec-94088cb439e3",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "e76edd49-4b06-4b16-b026-4078c1299954",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "e54be022-18c0-4fc8-888a-b93b4cad9a67",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "529b9c9c-3df9-4cab-b478-5d8a5c857a85",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "88884aab-1771-466b-b501-a46087dafee3",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "83d14b0d-ce92-4f53-9667-ff325775f4f8",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "06cd53b9-d874-4868-be1a-726e1270875f",
+      "result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569"
+    },
+    {
+      "claim_id": "ef87f599-cb0b-4982-a037-c1c5a9454f70",
+      "result_id": "b2733c72-6199-4235-827e-04815fbe7303"
+    },
+    {
+      "claim_id": "05bc8a5a-f822-4c50-b706-6a6c1aa2f7ba",
+      "result_id": "b2733c72-6199-4235-827e-04815fbe7303"
+    },
+    {
+      "claim_id": "0672f2f7-dd08-4f1c-899b-c54954641abe",
+      "result_id": "b2733c72-6199-4235-827e-04815fbe7303"
+    },
+    {
+      "claim_id": "36dea5e1-6309-48c9-b342-d77fe39749a8",
+      "result_id": "b2733c72-6199-4235-827e-04815fbe7303"
+    },
+    {
+      "claim_id": "ad4ec3ab-9689-4bd8-ae30-1162b8ff3e56",
+      "result_id": "b2733c72-6199-4235-827e-04815fbe7303"
+    },
+    {
+      "claim_id": "aa4ef627-180a-411e-9355-a6af611dff70",
+      "result_id": "b2733c72-6199-4235-827e-04815fbe7303"
+    },
+    {
+      "claim_id": "9bd54a9a-53b5-470f-bca3-26401769c43d",
+      "result_id": "b2733c72-6199-4235-827e-04815fbe7303"
+    },
+    {
+      "claim_id": "69fb8262-5ec3-4a8c-8cf7-58e0d499ae13",
+      "result_id": "b2733c72-6199-4235-827e-04815fbe7303"
+    },
+    {
+      "claim_id": "5a132570-867e-4e67-8791-62ebfb628c19",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "424a3701-d5a6-4869-b6f9-103ca8c7bf7b",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "b586a3d6-f408-4249-be26-762526dbebe5",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "549a9e21-8ac8-467a-9df5-fbea9829af4f",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "aca942b9-3f92-41ae-af6c-d9b6a07e0e53",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "0e578e18-f4ba-4780-ad56-52ce99fe6a70",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "9c3fb220-1aa6-42c0-804a-56e23274b63a",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "f300e6f2-a8fe-4436-9789-b09e69527dd0",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "65869a29-91eb-4055-862e-0717dfb6b7dd",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "c60e70e0-e775-4b21-990d-12187aaf7327",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "aae4b478-ecc8-4458-83ac-fb98c48483c0",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "555d2207-634d-4df4-b34f-826742036be3",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "c2047f78-e972-44ad-8cdc-3874a8fbeb6c",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "76cf3210-bae2-4b77-ad32-daef3eddf53a",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "455fbc89-3ba4-46ae-bc41-455504cd01d6",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "bf610ea8-2a75-494d-8a5d-0ad025a9d513",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "fc93dd4e-44c0-4ae3-af4f-abd22fcd3003",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "3e83bde4-5844-4c66-88cd-9fc01b0dbfe4",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "17b01c19-6275-420d-95ff-93410616730a",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "84577e02-9de9-477a-bb7c-0a32a0a08b59",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "77ad648b-125e-4066-8bec-535bf0e514f2",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "ea85d7b8-3427-43bf-b2ad-82ea3646f1aa",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "f0ede8f4-11c1-4ecb-b9b1-e1605837ff7d",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "21988de7-f2e5-4c34-b7dd-45632f70052b",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "52ab9e0a-60e3-40d9-84c4-94b450ec364e",
+      "result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72"
+    },
+    {
+      "claim_id": "d875824c-259b-4064-aabc-47c2281c100f",
+      "result_id": "a36b0ed2-cac3-49ae-8aca-69df65ab92f5"
+    },
+    {
+      "claim_id": "46fe8898-cadb-4390-b527-8b32b0803ef4",
+      "result_id": "a36b0ed2-cac3-49ae-8aca-69df65ab92f5"
+    },
+    {
+      "claim_id": "aef7569e-730f-4d53-bf95-ed237ff38c8d",
+      "result_id": "a36b0ed2-cac3-49ae-8aca-69df65ab92f5"
+    },
+    {
+      "claim_id": "f9155af0-ae3c-4752-bdeb-b0d6d23211ab",
+      "result_id": "a36b0ed2-cac3-49ae-8aca-69df65ab92f5"
+    },
+    {
+      "claim_id": "b77997b0-4ae4-4923-8052-3b57d8603350",
+      "result_id": "a36b0ed2-cac3-49ae-8aca-69df65ab92f5"
+    },
+    {
+      "claim_id": "7d545da0-79ac-4c9c-85ea-9c71a0b0d29f",
+      "result_id": "0407ff4d-548c-45c0-8246-02bd32ebb003"
+    },
+    {
+      "claim_id": "9789c6bf-05ba-4f86-8c64-31f50bff51c4",
+      "result_id": "0407ff4d-548c-45c0-8246-02bd32ebb003"
+    },
+    {
+      "claim_id": "1925e59d-a90d-4058-bbdb-2fbfa980fc7b",
+      "result_id": "0407ff4d-548c-45c0-8246-02bd32ebb003"
+    },
+    {
+      "claim_id": "0497b8c2-4afa-43e9-8c30-5ec968585fb8",
+      "result_id": "0407ff4d-548c-45c0-8246-02bd32ebb003"
+    },
+    {
+      "claim_id": "c8510220-ab85-478d-ad11-30591adf9bc3",
+      "result_id": "0407ff4d-548c-45c0-8246-02bd32ebb003"
+    },
+    {
+      "claim_id": "3dfd1f1f-96b6-477c-ba6f-928414465974",
+      "result_id": "9fe2572f-ce69-448c-a117-ff580e645868"
+    },
+    {
+      "claim_id": "f13e7e52-cb21-4024-a33c-f16357535818",
+      "result_id": "9fe2572f-ce69-448c-a117-ff580e645868"
+    },
+    {
+      "claim_id": "146cb8e0-017e-4b8f-b7ca-847118c3a001",
+      "result_id": "9fe2572f-ce69-448c-a117-ff580e645868"
+    },
+    {
+      "claim_id": "2fa91fa9-c71a-4f40-80b7-5cb0a820bcf1",
+      "result_id": "9fe2572f-ce69-448c-a117-ff580e645868"
+    },
+    {
+      "claim_id": "3472b44c-5a4a-413a-916b-13878724b604",
+      "result_id": "9fe2572f-ce69-448c-a117-ff580e645868"
+    },
+    {
+      "claim_id": "f214688b-9c8d-4489-8aa1-d35494095238",
+      "result_id": "9fe2572f-ce69-448c-a117-ff580e645868"
+    },
+    {
+      "claim_id": "58c3b2f6-7bed-41b5-8003-68876eafd9fb",
+      "result_id": "4152e88b-b60e-43db-9acd-71e9935037fd"
+    },
+    {
+      "claim_id": "2e579151-f8cb-4d54-bbb5-5c9ebb1363e6",
+      "result_id": "4152e88b-b60e-43db-9acd-71e9935037fd"
+    },
+    {
+      "claim_id": "f1512a3e-81fc-4436-96e6-9091228d78b4",
+      "result_id": "4152e88b-b60e-43db-9acd-71e9935037fd"
+    },
+    {
+      "claim_id": "85aae2a3-d4c3-48cf-90ec-5b66c1da8cbe",
+      "result_id": "18235949-efa9-403a-80d3-a52ee940c0f1"
+    },
+    {
+      "claim_id": "2afd719a-5923-4dbe-b87d-f61019caf543",
+      "result_id": "18235949-efa9-403a-80d3-a52ee940c0f1"
+    },
+    {
+      "claim_id": "b83c6aa6-b443-4075-97a6-1de62fbe97a4",
+      "result_id": "18235949-efa9-403a-80d3-a52ee940c0f1"
+    },
+    {
+      "claim_id": "f6cf817a-de99-4889-bfe6-e57688f6d672",
+      "result_id": "18235949-efa9-403a-80d3-a52ee940c0f1"
+    },
+    {
+      "claim_id": "9320b480-a411-4cae-9bcf-4533d4ed56df",
+      "result_id": "18235949-efa9-403a-80d3-a52ee940c0f1"
+    },
+    {
+      "claim_id": "7822d8d0-025d-4aa9-8f97-fc55a08536fb",
+      "result_id": "9d1aeb2f-47c8-4507-ba13-390f854dbaff"
+    },
+    {
+      "claim_id": "8822f7c3-8657-4e4b-8374-9d8a626b6ed1",
+      "result_id": "9d1aeb2f-47c8-4507-ba13-390f854dbaff"
+    },
+    {
+      "claim_id": "47e83388-86dc-4ed3-aba7-c12c385238dc",
+      "result_id": "9d1aeb2f-47c8-4507-ba13-390f854dbaff"
+    },
+    {
+      "claim_id": "662d9b7f-9cb6-4bd7-ad89-05fc1fc87310",
+      "result_id": "9d1aeb2f-47c8-4507-ba13-390f854dbaff"
+    },
+    {
+      "claim_id": "aa40c3a6-1345-445c-8fe2-a81f2c65594a",
+      "result_id": "9d1aeb2f-47c8-4507-ba13-390f854dbaff"
+    },
+    {
+      "claim_id": "37a20235-3f4c-4045-94ec-cac73cec6efc",
+      "result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0"
+    },
+    {
+      "claim_id": "cdd95920-f63d-4e31-812f-9ccc40e7e423",
+      "result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0"
+    },
+    {
+      "claim_id": "0169531e-3a29-49bf-bced-f0af50055248",
+      "result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0"
+    },
+    {
+      "claim_id": "3252153b-1599-4b06-833b-77218e32c6ac",
+      "result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0"
+    },
+    {
+      "claim_id": "56df974c-2187-4a6b-8499-63a15ef22cb2",
+      "result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0"
+    },
+    {
+      "claim_id": "6fbeba58-4f6b-442c-92af-612f2ddd67c7",
+      "result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0"
+    },
+    {
+      "claim_id": "35d97d7a-f186-480e-b919-443221c9fbb0",
+      "result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0"
+    },
+    {
+      "claim_id": "8176ea80-46fb-4b75-b732-367f4a5a03e1",
+      "result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0"
+    },
+    {
+      "claim_id": "8ff989c3-47c5-4575-8e9a-a2798a646e1f",
+      "result_id": "bcf8393b-2eae-4675-b79b-1f9a117ef392"
+    },
+    {
+      "claim_id": "7e737486-4e6c-4105-b12a-2714aa290fe0",
+      "result_id": "bcf8393b-2eae-4675-b79b-1f9a117ef392"
+    },
+    {
+      "claim_id": "83e3db38-bab6-49b5-9228-182391fadbd1",
+      "result_id": "bcf8393b-2eae-4675-b79b-1f9a117ef392"
+    },
+    {
+      "claim_id": "9789c6bf-05ba-4f86-8c64-31f50bff51c4",
+      "result_id": "1664a6bf-105e-490e-905f-40bee1c18d59"
+    },
+    {
+      "claim_id": "1925e59d-a90d-4058-bbdb-2fbfa980fc7b",
+      "result_id": "1664a6bf-105e-490e-905f-40bee1c18d59"
+    },
+    {
+      "claim_id": "0497b8c2-4afa-43e9-8c30-5ec968585fb8",
+      "result_id": "1664a6bf-105e-490e-905f-40bee1c18d59"
+    },
+    {
+      "claim_id": "47e57bbc-6d60-4ff9-bf85-6ce529df8174",
+      "result_id": "849b1209-c526-4f1a-9fb4-bb4a06d80946"
+    },
+    {
+      "claim_id": "52a23fe4-147b-42c4-a196-d42305e50c16",
+      "result_id": "7dd24d25-477b-4577-b915-fddc404984e5"
+    },
+    {
+      "claim_id": "12950c93-a06f-4734-abae-4ad498f885d3",
+      "result_id": "7dd24d25-477b-4577-b915-fddc404984e5"
+    },
+    {
+      "claim_id": "b96401f5-8360-45e4-9e74-532d315d53bc",
+      "result_id": "7dd24d25-477b-4577-b915-fddc404984e5"
+    },
+    {
+      "claim_id": "4fbaf14d-79b1-460d-bb14-efd89a29732c",
+      "result_id": "7dd24d25-477b-4577-b915-fddc404984e5"
+    },
+    {
+      "claim_id": "1f93f9f1-2117-46f2-98db-4e00c644604e",
+      "result_id": "7dd24d25-477b-4577-b915-fddc404984e5"
+    },
+    {
+      "claim_id": "a7385fb3-01dc-4a31-ac5c-7f16615cfb7e",
+      "result_id": "7dd24d25-477b-4577-b915-fddc404984e5"
+    },
+    {
+      "claim_id": "ed43bbb8-3cc8-40bd-9b06-0714f4ca1784",
+      "result_id": "7dd24d25-477b-4577-b915-fddc404984e5"
+    },
+    {
+      "claim_id": "0ee6e834-be71-4f98-a7ce-1b1a8a962fbe",
+      "result_id": "29d7f62a-3ec3-4c20-8090-0ce8d9fa7cde"
+    },
+    {
+      "claim_id": "8fbafb4e-f0fa-454d-aaf6-540bed41e3c6",
+      "result_id": "29d7f62a-3ec3-4c20-8090-0ce8d9fa7cde"
+    },
+    {
+      "claim_id": "e54be022-18c0-4fc8-888a-b93b4cad9a67",
+      "result_id": "29d7f62a-3ec3-4c20-8090-0ce8d9fa7cde"
+    },
+    {
+      "claim_id": "529b9c9c-3df9-4cab-b478-5d8a5c857a85",
+      "result_id": "29d7f62a-3ec3-4c20-8090-0ce8d9fa7cde"
+    },
+    {
+      "claim_id": "88884aab-1771-466b-b501-a46087dafee3",
+      "result_id": "29d7f62a-3ec3-4c20-8090-0ce8d9fa7cde"
+    },
+    {
+      "claim_id": "83d14b0d-ce92-4f53-9667-ff325775f4f8",
+      "result_id": "29d7f62a-3ec3-4c20-8090-0ce8d9fa7cde"
+    },
+    {
+      "claim_id": "ef87f599-cb0b-4982-a037-c1c5a9454f70",
+      "result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0"
+    },
+    {
+      "claim_id": "05bc8a5a-f822-4c50-b706-6a6c1aa2f7ba",
+      "result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0"
+    },
+    {
+      "claim_id": "0672f2f7-dd08-4f1c-899b-c54954641abe",
+      "result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0"
+    },
+    {
+      "claim_id": "36dea5e1-6309-48c9-b342-d77fe39749a8",
+      "result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0"
+    },
+    {
+      "claim_id": "ad4ec3ab-9689-4bd8-ae30-1162b8ff3e56",
+      "result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0"
+    },
+    {
+      "claim_id": "aa4ef627-180a-411e-9355-a6af611dff70",
+      "result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0"
+    },
+    {
+      "claim_id": "9bd54a9a-53b5-470f-bca3-26401769c43d",
+      "result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0"
+    },
+    {
+      "claim_id": "69fb8262-5ec3-4a8c-8cf7-58e0d499ae13",
+      "result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "d67d7d87-85e6-4cdb-b8cc-25c795adb83a",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "d0ad034d-d18a-443f-96fa-051160d61fa8",
+      "peer_result_id": "a36b0ed2-cac3-49ae-8aca-69df65ab92f5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C1, C22-C25 regarding the delayed burst pattern of terpene emissions. Both evaluations find the evidence compelling and well-supported by PTR-ToF-MS data. The editor and all reviewers affirm this core finding without concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "744dad64-7fea-47a8-b81a-c798ca90e185",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578",
+      "peer_result_id": "0407ff4d-548c-45c0-8246-02bd32ebb003",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support claims C2, C27-C30 regarding internal terpene pools remaining comparable between night and day. OpenEval evaluates the full set of claims C2, C27-C37 including gene expression data, while peer review R2 focuses specifically on internal pool measurements. No concerns raised about these findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "3c5f631b-dad6-457c-8b72-697b98903deb",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578",
+      "peer_result_id": "9fe2572f-ce69-448c-a117-ff580e645868",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the gene expression findings (C32-C37) showing terpene synthases are only induced during light phase. OpenEval groups these with internal pool data in a comprehensive evaluation, while peer review R3 treats gene expression separately. Both find evidence compelling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "e482ffc8-7922-44b3-bb3c-33f1ca02b04a",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "9e7847a1-cdf6-4321-ab41-e03e07947578",
+      "peer_result_id": "1664a6bf-105e-490e-905f-40bee1c18d59",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Overlapping claims C27-C29 about internal terpene measurements. OpenEval finds all internal pool and gene expression data well-supported. Peer review R9 raises methodological concerns about quantification using arbitrary units rather than absolute quantities, questioning whether AU values allow proper conclusions about total quantities, though accepting the general patterns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "a4285c9c-6c48-4cdd-9773-5eb68bb746d3",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "90cd7a1f-60b9-42a7-89ac-3480e7dad846",
+      "peer_result_id": "4152e88b-b60e-43db-9acd-71e9935037fd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C3, C39-C40 regarding jasmonate induction at 22 hours and temporal correlation with terpene burst. Both evaluations find the evidence compelling. OpenEval notes the data show correlation rather than causation; peer reviewers accept the temporal relationship without expressing this caveat.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "58499a6e-3225-4ae8-9e0c-80a0f5ec51e7",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "7d2f82f7-6048-42e9-abd9-a74bdfb7416c",
+      "peer_result_id": "18235949-efa9-403a-80d3-a52ee940c0f1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C4, C41-C44 regarding continuous light experiments showing delayed burst patterns regardless of light regime. Both evaluations accept this as evidence for a clocked response. Reviewer 3 explicitly discusses the circadian/diurnal interaction, consistent with OpenEval's interpretation that stomatal dynamics modulate but don't drive the core timing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "61f5e120-1bf8-4802-b3b4-8a7cafcd76f5",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "47a0f5c7-c457-4dad-97e2-a1b059de1578",
+      "peer_result_id": "9d1aeb2f-47c8-4507-ba13-390f854dbaff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C5, C46-C49 regarding correlation analysis comparing sender emissions with receiver responses. OpenEval finds the evidence supportive but notes unclear biological interpretation of negative correlations. Peer review shows disagreement: Reviewer 2 questions the analytical approach as not informative, while Reviewer 3 finds it interesting. Overall peer evaluation is UNCERTAIN vs OpenEval's SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "c4c1ed14-1c97-49ca-97e9-779995ac3368",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4",
+      "peer_result_id": "1a74c383-0b26-4928-ad5f-3e394390b3e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C6, C50-C53, C55-C57 regarding priming experiments with HAC exposure. Both evaluations find the factorial design appropriate and the evidence for priming-induction integration compelling. OpenEval includes C54 (time-of-day control) which peer review addresses separately in R10.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "64694279-563e-4bcc-855a-4188124cfdf1",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "bf352cf6-29bf-4e80-bdfc-1ce752e096e4",
+      "peer_result_id": "849b1209-c526-4f1a-9fb4-bb4a06d80946",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claim C54 regarding time-of-day control in priming experiments. OpenEval explicitly notes this control supports the findings. Peer review implicitly accepts it without specific discussion, suggesting no concerns were raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "eb8d86ca-fe40-4df7-ac14-c423186cf9a4",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4",
+      "peer_result_id": "bcf8393b-2eae-4675-b79b-1f9a117ef392",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the integrative mechanistic model (C7, C58-C59). OpenEval finds it well-supported but notes C60-C66 represent inferred rather than directly demonstrated mechanisms. Peer review R8 accepts the integrative conclusion as compelling and fundamental, with all reviewers affirming the overall synthesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "9cc2fe82-38d5-4446-86c9-21a0244d4a4d",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "d13fe8df-94d9-41d0-adc8-fb992ca9d9f4",
+      "peer_result_id": "7dd24d25-477b-4577-b915-fddc404984e5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address detailed mechanistic claims C60-C66 about the priming-induction integration model. OpenEval rates as SUPPORTED but emphasizes these are inferred scenarios not independently validated. Peer review R11 accepts the mechanistic synthesis as logical integration with 'nice logic,' treating it as SUPPORTED without expressing the validation caveat.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "257403d3-3e55-4bc5-b00f-3d540eb4102d",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "3173ab16-ea8e-48f0-a07b-b3b802e77569",
+      "peer_result_id": "29d7f62a-3ec3-4c20-8090-0ce8d9fa7cde",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address ecological speculation claims C67-C68, C71-C74. OpenEval rates as UNCERTAIN, explicitly noting these are untested hypotheses requiring future validation. Peer review R12 rates as SUPPORTED, accepting them as reasonable hypotheses presented with 'nice logic' considering ecological consequences. Different standards for speculative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "62ce52e0-cbb1-4270-a91e-8c85b6e606b0",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "b2733c72-6199-4235-827e-04815fbe7303",
+      "peer_result_id": "160795a2-879f-4f3b-ac37-45ccdd4574b0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C76-C83 regarding methodological details and HAC dispenser calibration. Both evaluations find the methods well-documented and appropriate. Editor describes methods as 'rigorous' with 'state-of-the-art' techniques. No concerns raised by either evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    },
+    {
+      "id": "6c701072-d491-4b66-90ae-0d15fa283d6f",
+      "submission_id": "ff1d65ad-c066-492a-91df-0c78884ea3c0",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "cff87a03-32b7-49dc-a69d-bb7efa200d72",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background knowledge claims C8-C21, C26, C31, C84-C92 as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as reviewers typically do not explicitly evaluate established background knowledge unless concerns arise.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:43:58.577798Z"
+    }
+  ]
+}

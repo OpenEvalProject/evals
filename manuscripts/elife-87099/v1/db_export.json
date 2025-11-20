@@ -1,0 +1,2296 @@
+{
+  "submission": {
+    "id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:23:03.798638Z",
+    "updated_at": "2025-11-20T20:23:03.798638Z"
+  },
+  "content": [
+    {
+      "id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "content_type": "manuscript",
+      "content_text": "# Gene regulatory patterning codes in early cell fate specification of the C. elegans embryo\n\n## Authors\n\n- Alison G Cole<sup>1</sup> ([ORCID: 0000-0002-7515-7489](https://orcid.org/0000-0002-7515-7489))\n- Tamar Hashimshony<sup>3</sup> ([ORCID: 0000-0002-4786-838X](https://orcid.org/0000-0002-4786-838X))\n- Zhuo Du<sup>4</sup> ([ORCID: 0000-0002-6322-4656](https://orcid.org/0000-0002-6322-4656))\n- Itai Yanai<sup>5</sup> ([ORCID: 0000-0002-8438-2741](https://orcid.org/0000-0002-8438-2741)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Evolution and Development, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))\n2. University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))\n3. Department of Biology, Technion \u2013 Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))\n4. State Key Laboratory of Molecular Developmental Biology, Institute of Genetics and Developmental Biology, Chinese Academy of Sciences Beijing China ([ROR:02aee5m12](https://ror.org/02aee5m12))\n5. Institute for Computational Medicine, NYU School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPattern formation originates during embryogenesis by a series of symmetry-breaking steps throughout an expanding cell lineage. In Drosophila, classic work has shown that segmentation in the embryo is established by morphogens within a syncytium, and the subsequent action of the gap, pair-rule, and segment polarity genes. This classic model however does not translate directly to species that lack a syncytium \u2013 such as Caenorhabditis elegans \u2013 where cell fate is specified by cell-autonomous cell lineage programs and their inter-signaling. Previous single-cell RNA-Seq studies in C. elegans have analyzed cells from a mixed suspension of cells from many embryos to study late differentiation stages, or individual early stage embryos to study early gene expression in the embryo. To study the intermediate stages of early and late gastrulation (28- to 102-cells stages) missed by these approaches, here we determine the transcriptomes of the 1- to 102-cell stage to identify 119 embryonic cell states during cell fate specification, including \u2018equivalence-group\u2019 cell identities. We find that gene expression programs are modular according to the sub-cell lineages, each establishing a set of stripes by combinations of transcription factor gene expression across the anterior-posterior axis. In particular, expression of the homeodomain genes establishes a comprehensive lineage-specific positioning system throughout the embryo beginning at the 28-cell stage. Moreover, we find that genes that segment the entire embryo in Drosophila have orthologs in C. elegans that exhibit sub-lineage-specific expression. These results suggest that the C. elegans embryo is patterned by a juxtaposition of distinct lineage-specific gene regulatory programs each with a unique encoding of cell location and fate. This use of homologous gene regulatory patterning codes suggests a deep homology of cell fate specification programs across diverse modes of development.\n\n## Introduction\n\nDevelopmental toolkit genes constitute the genomic repertoire that underlies the pathways patterning the organism (Carroll, 2008). These genes are generally involved in signaling transduction modules and transcription factors (TFs) (Degnan et al., 2009; Gerhart, 1999). Their assembly into specific temporal and spatial gene regulatory pathways leads to the specification of cell fates in the embryo. For example, the Caenorhabditis elegans endoderm is specified by a cascade of TFs operating sequentially (Maduro and Rothman, 2002). Identifying the principles of gene regulation has been a central endeavor in developmental biology.\n\nJohn Sulston and colleagues elucidated the 1340 cells generated throughout the embryogenesis of the nematode C. elegans, leading to a hatched worm with 558 cells, each with a described name, lineage, and fate (Sulston et al., 1983). The cell lineage is delineated into a germ-line lineage \u2013 P \u2013 and five \u2018founder\u2019 somatic cell lineages \u2013 AB, MS, E, C, and D \u2013 that each have characteristic cell cycle timings (Deppe et al., 1978) and cell fates (Figure 1a). All founder cell lineages are present by the 28-cell stage, when gastrulation initiates, and by the 102-cell stage the progeny of most of the cells have a single fate.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig1-v1.jpg)\n\n**Figure 1.:** (a) The embryonic C. elegans cell lineage as deciphered by Sulston et al., 1983. The number of cells present at each stage is indicated on the left and schematic images of the embryo are shown for several stages to the right with cells colored by founder cell lineages AB, MS, E, C, D, and P4. The fate of the cells at the last stage is also indicated according to the legend at the foot of the lineage. The number of embryos examined in this study is indicated on the right. Colored bars correspond to the windows in which embryos were considered to be at the same stage. (b) A t-distributed stochastic neighbor embedding (tSNE) map of the cells isolated in this study. Circles indicate the individual cells, colored by the stage of development of the embryo from which they were manually collected. (c\u2013d) Gene expression for the indicated lineage and fate marker genes on the tSNE map shown in (b).\n\nThe invariant cell lineage of the C. elegans embryo provides an opportunity to systematically study developmental gene pathways. Overall, there are 934 annotated TFs in C. elegans, with 40% having experimentally studied DNA-binding specificities (Narasimhan et al., 2015). The overall set can be classified into families according to their DNA-binding domain, including the homeodomain, bHLH, bZIP, T-box, C2H2 zinc finger, and the very large nuclear hormone receptor domain family. While mapping the location of signaling pathways is difficult from gene expression data, effects of signaling on the transcriptional output are detectable and consequently studying TF expression provides an entry point into gene expression pathway characterization.\n\nHere, we use single-cell RNA-Seq to identify the transcriptomes of each of the cells up to the 102-cell stage. We find that homeodomain genes are expressed in stripes along the anterior-posterior axis, as early as the 28-cell stage. Interestingly, each founder cell lineage \u2013 AB, MS, C, and E \u2013 establishes its own regionalization code. These Drosophila-like stripe patterns suggest a deep homology in cell fate specification between the embryogenesis of non-segmented and segmented animals, despite differences in syncytium-based and cell-cleavage-based modes of development.\n\n## Results\n\nPrevious studies analyzed cells from a mixed suspension of cells from different C. elegans embryos (Packer et al., 2019). However, this approach does not ensure sampling of each of the individual cells of the early stages, where it is difficult to dissociate the cells. A complementary approach is to manually collect cells by mouth pipette thus ensuring that all cells are collected. Other works employed this approach to study the early stages, however only arrived at the 15-cell stage (Hashimshony et al., 2016; Tintori et al., 2016). Up to this stage, few new TFs are induced and the transcriptome is dominated by the maternal deposit. As we were interested in studying early specification events in the embryo, we thus manually isolated individual cells from dissociated embryos and processed them for scRNA-Seq (Figure 1b). Overall, we studied 840 cells from 38 embryos up to the 102-cell stage, collecting all or most cells of each embryo (Figure 1b and Supplementary file 1).\n\nAnalyzing the transcriptomes, we found that embryo-to-embryo variation could be efficiently normalized by standardizing each gene\u2019s expression across all cells collected from the same embryo (see Methods), and this is another benefit of the manual collection approach. A dimensional reduction map of the examined cells (Figure 1b) reveals the unfolding of development with cells from the early stages occupying the center while cells from later stages occupy the periphery. We found that cells followed developmental trajectories according to their founder cell origin, each identified by the expression of genes known to be expressed in a lineage-specific manner: ceh-51 (MS), elt-7 (E), pal-1 (C,D and P), pes-1 (D), and nos-2 (P) (Figure 1c; Broitman-Maduro et al., 2009; Hunter and Kenyon, 1996; Lee et al., 2017; Maduro and Rothman, 2002). As also observed by other studies (Packer et al., 2019), the founder cell lineage trajectories are oriented according to cell fates, with similar cell fates converging between lineages (Figure 1b and d): the cells of the ecto-mesoderm producing C lineage formed a bi-lobed cloud with the muscle part adjacent to that of the MS and D lineages. Similarly, MS cells that will form the pharynx orient toward the pharynx producing portion of the AB lineage.\n\nIn order to infer the precise identity of each cell, we first organized the embryos into eight developmental stages: the 1-, 2-, 4-, 8-, 15-, 28-, 51-, and 102-cell stages (Figure 1a). For each stage, we studied cells from multiple embryos and identified clusters of cells according to differential gene expression. Figure 2a demonstrates this analysis for the 15-cell stage and Figure 2\u2014figure supplement 1 for all other stages. The identified clusters contain cells from each of the individual embryos, thus confirming our underlying assumption that embryo to embryo gene expression variation is minimal relative to the coherence of the cell states within an embryo. Finally, we inferred the cell identity of each cluster with reference to known gene markers from the literature (Supplementary files 2 and 3). Figure 2b illustrates our approach for the cells of the 28-cell stage (see Figure 2\u2014figure supplements 2\u20137 for all other stages). We required a new marker to distinguish some of the cell identities. Studying F19F10.1 by single-molecule fluorescent in situ hybridization (FISH), we found that this previously uncharacterized ets-factor is expressed in the posterior daughter cell through 2-cell cycle divisions (Figure 2c). We further tested for the robustness of the cell identity assignments and ensured that each cell is most similar to its assigned identity (computed with itself excluded; Figure 2\u2014figure supplements 2\u20137, bottom of each subfigure). We identified 5433 genes as being differentially expressed within a stage, collectively across all of the stages (see Methods). Of these, 395 are TFs during this period of cell specification (Supplementary file 6).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-v1.jpg)\n\n**Figure 2.:** (a) t-Distributed stochastic neighbor embedding (tSNE) clusters of cells from 15-cell stage embryos, shown in terms of their embryo of origin (top), cell clustering (middle), and inferred cell identity (bottom). (b) Gene expression for the indicated genes across the assigned cell states of the 28-cell stage. Rows correspond to genes and each bar within a cell state indicates the expression level of a sample. Black boxes indicate differential gene expression. Colors in the bottom row indicate the embryo of origin. (c) Double single-molecule RNA in situ hybridization showing spatial identity of F19F10.1 expressing nuclei (yellow). The positions of all nuclei are shown with DAPI staining (blue), and the embryos were oriented with the posterior landmark gene pal-1 (purple) (Hunter and Kenyon, 1996). Cell identities were manually annotated based on previous descriptions (Supplementary file 4). (d) Average expression of cluster identity genes through the first 8 cell divisions of embryonic development. Each bar represents the inferred transcriptome of a cell state and shows the standardized expression for the indicated genes, using the same color bar as in (b). Equivalent transcriptomes derived from sister cells are indicated by blue circles. Lineage symmetry gives rise to left/right equivalence groups indicated with black boxes. (e) Expression of ceh-43 according to lineage of the inferred transcriptomes (top) and a transcriptional reporter strain (bottom), where highest expression is shown in red and no detected expression is black (see also Figure 2\u2014figure supplement 9).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) A schematic indicating how transcriptomes are collected. Individual embryos are opened and the cells were manually isolated such that for each cell the embryo of origin is also recorded. (b) t-Distributed stochastic neighbor embedding (tSNE) plots for the indicated cell stages. (Left) Cells are colored by embryo of origin. (Right) Cells are colored by inferred cell fate.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** For the 2-cell (a), 4-cell (b) and 8-cell (c) stages, the two plots indicate (1) the expression of known cell state markers (Supplementary files 2 and 3) and (2) the similarity (correlation coefficient) across the cells in terms of these genes. Cells are colored by embryo of origin. Expression levels are indicated as z-scores. Cell states with a name including an \u2018x\u2019 indicate the multiple cell states with consistent name (Sulston et al., 1983). Cell similarity scores are shown by the colormap. To the right, the embryo of origin is indicated.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** For the 15-cell stage, the two plots indicate (1) the expression of known cell state markers (Supplementary files 2 and 3) and (2) the similarity (correlation coefficient) across the cells in terms of these genes. Cells are colored by embryo of origin. Expression levels are indicated as z-scores. Cell states with a name including an \u2018x\u2019, indicate the multiple cell states with consistent name (Sulston et al., 1983). Cell similarity scores are shown by the colormap. To the right, the embryo of origin is indicated.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** For the 28-cell stage, the two plots indicate (1) the expression of known cell state markers (Supplementary files 2 and 3) and (2) the similarity (correlation coefficient) across the cells in terms of these genes. Cells are colored by embryo of origin. Expression levels are indicated as z-scores. Cell states with a name including an \u2018x\u2019, indicate the multiple cell states with consistent name (Sulston et al., 1983). Cell similarity scores are shown by the colormap. To the right, the embryo of origin is indicated.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** For the 51-cell stage, the two plots indicate (1) the expression of known cell state markers (Supplementary files 2 and 3) and (2) the similarity (correlation coefficient) across the cells in terms of these genes. Cells are colored by embryo of origin. Expression levels are indicated as z-scores. Cell states with a name including an \u2018x\u2019, indicate the multiple cell states with consistent name (Sulston et al., 1983). Cell similarity scores are shown by the colormap. To the right, the embryo of origin is indicated.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** For the 102-cell stage, the expression of known cell state markers (Supplementary files 2 and 3). Expression levels are indicated as z-scores. Cell states with a name including an \u2018x\u2019, indicate the multiple cell states with consistent name (Sulston et al., 1983).\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** For the 102-cell stage, the similarity (correlation coefficient) across the cells in terms of the cell state markers. Cells are colored by embryo of origin. Expression levels are indicated as z-scores. Cell states with a name including an \u2018x\u2019, indicate the multiple cell states with consistent name (Sulston et al., 1983). Cell similarity scores are shown by the colormap. To the right, the embryo of origin is indicated.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp8-v1.jpg)\n\n**Figure 2\u2014figure supplement 8.:** Columns and rows correspond to cell identities (both in the same order). Light and dark colors correspond to identity and distinctness. For the 51- and 102-cell stages the cells are ordered the same as in Figures 1 and 2. The number above each plot indicates the number of cell states identified at the particular stage.\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig2-figsupp9-v1.jpg)\n\n**Figure 2\u2014figure supplement 9.:** As in Figure 2d, expression of dmd-4 and unc-30 according to lineage of the inferred transcriptomes (top) and a transcriptional reporter strain (bottom), where highest expression is shown in red and no detected expression is black.\n\nFor some cell identities within a stage we were not able to distinguish distinct transcriptomes, and we thus denoted these as composing \u2018equivalence groups\u2019. These may either be attributed to daughter cells whose transcriptomes have yet to diverge, such as cells Ca and Cp in the 15-cell state, or to sets of cousins whose sub-lineages form repeating units, such as cells ABplp and ABprp (also of the 15-cell stage) (Sulston et al., 1983). In the first case, this indicates that sister cells are transcriptomically very similar shortly after division. Altogether we describe 119-cell identities with distinct transcriptome profiles, which by stage, are as follows: 1 (1-cell), 2 (2-cell), 4 (4-cell), 6 (8-cell), 11 (15-cell), 20 (28-cell), 38 (51-cell), and 37 (102-cell), with 64 of these representing equivalence groups of at least two cell states (Figure 2d, Supplementary file 5, and Figure 2\u2014figure supplement 8). For each cell state that we assigned, we have an average of seven replicate cells (Supplementary file 4). We validated our annotations by imaging GFP reporters and found good correspondence, as illustrated for ceh-43, dmd-4, and unc-30 (Figure 2e and Figure 2\u2014figure supplement 9). The delay between the GFP expression and the mRNA detected here is expected as previously described (Murray et al., 2012).\n\nWe next asked if the genes that are members of the same gene family have similar spatial and temporal expression arrangements. To test for this mode of expression, we considered groups of genes with the same DNA binding domain, as annotated by the PFAM database (Finn et al., 2016). For each cell, we queried for enrichments or depletions of genes of specific domain families, among its expressed TFs. As an example, the \u2018ABplppp\u2019 cell differentially expresses 14 TFs according to our analysis, including seven homeobox domain (HD) TFs, though overall HDs only account for 11% of the TFs (Figure 3a). We used the hypergeometric distribution to compute a significance of p=0.00015 for this overlap, given the overall number of TFs and the number of HD and \u2018ABplppp\u2019 TFs. Conversely, only two of the 69 TFs expressed by the Eala cell are HDs, a significant depletion (p=0.01, hypergeometric distribution). Figure 3b shows the overall pattern of enrichments and depletions of HDs across all of the examined cells, indicating enrichment of HDs in the 51-cell stage, in particular in the ABp lineage, and depletion in the E lineage. For the GATA type zinc factors we found enrichment in the E lineage, as well as some of the AB cells (Figure 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig3-v1.jpg)\n\n**Figure 3.:** (a) Detecting enrichment and depletion of genes of the same gene family, among the TFs expressed by a cell, using the hypergeometric distribution. (b\u2013c) For the homeobox domain (b) and GATA zinc finger domain (c) gene families, the enrichments and depletions are indicated for each cell of the lineage, plotted as in Figure 2d. (d) TF family stage and lineage enrichments. For each cell (column), the enrichment and depletion for the genes of a TF family (row) is indicated (similar to b, c). The top bars indicate the lineage and stage of the cell. (e) For the indicated TF family the significance for enrichments is shown using the t-test between the values shown in (d) for the noted stage and lineage.\n\nExamining the pattern of such biases, we found that TF families showed significant enrichments across lineages and developmental stages (Figure 3d\u2013e). Four TF gene families are enriched in the AB lineage: the T-box domain, the helix-loop-helix (HLH) DNA-binding domain, the HD domain, and the high mobility group (HMG) box domain (Figure 3d). Each of these families also has enrichments for specific AB stages, from early expression (T-box and HLH) to later expression (HD and HMG).\n\nFrom Figure 3 analysis we concluded that the homeodomain (HD) TF family in particular exhibited lineage-specific expression. Studying this in more detail, we observed that in the 28-cell stage, each of the 16 AB cells contains expression of at least one homeodomain gene, with 8 distinct cell state patterns (Figure 4a). This is mostly also apparent in the 51- and 102-cell stages. The expression patterns of all homeodomain genes across the lineage are not mono-phyletic. For example, ceh-43 is expressed in nine of the sixteen AB cells at the 28-cell stage in a complex pattern (Figure 4a). Thus, continuous symmetry breaking (Zacharias and Murray, 2016) does not appear to be a mechanism by which differential expression is generally established.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig4-v1.jpg)\n\n**Figure 4.:** (a) Lineage expression patterns for the indicated genes in the 28-, 51-, and 102-cell stage. Thick and thin lines indicate binarized \u2018on\u2019 and \u2018off\u2019 expressions, respectively. (b) Three-dimensional expression patterns separated by lineage (AB/MS/C) for the genes indicated in (a).Circles represent cells in the embryo at the particular stage examined. Expression of each gene is indicated by a circle of a different size and color. Light gray cells indicate cells in other lineages. (c) Clustering of cells according to gene expression of the indicated lineage and stage. Colors distinguish K-means clustering.\n\nWe asked if the relative spatial location of the cells within the embryo can provide insight into the observed homeodomain expression patterns. For this analysis, we mapped the binarized expression of genes onto the known three-dimensional locations of cells in the embryo. Studying the 28-cell stage, we found that the homeodomain genes expressed in each lineage revealed dorsal-ventral stripes along the anterior-posterior axis (Figure 4b). For example, the ceh-43-expressing cells, deriving from distinct AB sub-lineages, are physically proximate. Clustering the AB lineage cells into eight groups according to their binarized expression, we mapped the gene expression combinations of each stripe. One stripe, for example, includes the expression of unc-30, ceh-36, and ceh-13; the adjacent stripe has expression of unc-30 and ceh-36 (Figure 4b). At the 51-cell stage, 4 new homeodomain genes are expressed in the AB lineage, and again position along the anterior-posterior axis correlates with gene expression. In the 102-cell stage, expression becomes more complicated as the AB lineage forms an external shell around the gastrulating non-AB cells. Generalizing this approach, we also found distinct positional systems for the MS and C lineages (Figure 4b and c). For the MS lineage, ceh-32 and ceh-51 are in the anterior and posterior, respectively, while for the C lineage vab-7 (even-skipped) and hmbx-1 are in the anterior and posterior, respectively. We thus provide evidence that distinct regionalization codes occur across the embryonic sub-lineages.\n\nTo compare the patterning code elucidated for C. elegans embryogenesis to the well-studied patterning pathway in Drosophila, we also studied the expression of C. elegans orthologous genes. Drosophila development proceeds through a series of molecular events which partition the syncytial embryo along the anterior-posterior axis (Wolpert et al., 2019). We found that the C. elegans genes such as nos-1,2 (nanos) and puf genes (pumilio) which are maternal genes in both systems are restricted to the primary germ cell lineage in C. elegans (Figure 5). Moreover, gap and pair-rule genes, such as pal-1 (caudal) and cwn-1 (wg), show C lineage and sub-lineage restriction, respectively (Figure 5). Thus, it is evident that while Drosophila patterning follows in a lineage-independent manner, in C. elegans, lineage dependency is coincident with specific expression of patterning genes across the founder cell lineages.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87099/elife-87099-fig5-v1.jpg)\n\n**Figure 5.:** Lineage expression patterns in the 28-cell stage for the indicated genes whose orthologs function as maternal, gap, pair-rule, and segment polarity genes in Drosophila. Thick and thin lines indicate binarized \u2018on\u2019 and \u2018off\u2019 differential expressions, respectively.\n\n## Discussion\n\nCollectively, our analysis reveals that during embryogenesis, in between the early signaling period \u2013 involving Notch (Priess, 2005) and Wnt (Rocheleau et al., 1997; Thorpe et al., 1997) signaling \u2013 and the later cell fate differentiation period \u2013 involving myogenic factors such as myoD/hlh-1 (Chen et al., 1992) and GATA/elt-2 (Fukushige et al., 1998) \u2013 there is a period of lineage-specific patterning. Three of the homeodomain genes whose expression we have described \u2013 ceh-13, php-3, and nob-1 (Figure 4) \u2013 are members of the HOX sub-family, known to provide regionalization during embryogenesis in bilaterians (Carroll et al., 2004). Indeed, we observed that expression of these HOX genes transcends the founder lineages and patterns the posterior region in multiple lineages (Figure 4). However, we find 51 other homeodomain genes that likely pattern the lineages and set up locations in the embryo. This is a large genetic repertoire relative to Drosophila (97 genes in C. elegans, relative to 104 in Drosophila) despite the higher complexity of the latter in terms of cell types and total number of cells. Thus, in species where regionalization is under lineage control, as opposed to morphogen gradients, there is apparently a greater necessity for distinct positional systems across distinct sub-lineages \u2013 here the founder cell lineages. We find lineage-specific gene expression stripes (Figure 4), suggesting that such a developmental patterning mechanism may not be restricted to segmented organisms but is rather a universal feature of animal embryogenesis. The centrality of homeodomain genes to this system highlights the adaptability of this TF family to both lineage-dependent and position-dependent functions. It will be interesting to further compare other species at the single-cell level in order to trace the evolutionary origin of gene expression developmental patterning codes.\n\n## Methods\n\n### Cell isolations\n\nEmbryos were isolated from adult worms and removed from their egg shells as described in Edgar and Goldstein, 2012. Individual embryos were manually dissociated by gentle pipetting through progressively smaller glass-bore pipettes in calcium/magnesium-free EGM. Cell collection was limited to a 30 min window from the beginning of the dissociation process. For embryos with more than 28 cells, collection was performed as a team. Cell losses during dissociation were noted and single dissociated cells from an individual embryo were counted, collected as previously described (Hashimshony et al., 2012), and stored at \u201380\u00b0C until further processing.\n\n### Single-cell RNA-Seq\n\nIndividual embryo, multiplexed single-cell RNA-Seq libraries were produced following the CEL-Seq2 protocol (Hashimshony et al., 2016). Briefly, individually harvested cells were barcoded with a reverse transcription reaction, and RNA molecules were tagged with unique molecular identifiers (UMIs) (Kivioja et al., 2011). All barcoded cells from a single embryo were then combined into a single IVT amplification reaction which was used to generate an Illumina library for sequencing. Multiple sequencing libraries with compatible Illumina sequencing indexes were sequenced together on an Illumina HiSeq 2500 using standard paired-end sequencing protocols. For Read 1, used to determine the barcode, the first 15 bp were sequenced and for Read 2, used to determine the identity of the transcript, the first 35 bp were sequenced. The CEL-Seq2 pipeline is available at GitHub (copy archived at YanaiLab, 2017). Mapping of the reads used BWA33, version 0.6.1, against the C. elegans WBCel215 genome (bwa aln -n 0.04 -o 1 -e -1 -d 16 -i 5 -k 2 -M 3 -O 11 -E 4). Read counting used htseq-count version 0.5.3p1 defaults, against WS230 annotation exons.\n\n### Initial processing of the CEL-Seq2 data\n\nGene expression values were calculated as UMI-corrected reads normalized to the number of transcripts per 50,000; only cells with more than 10,000 mapped reads were included in the analysis. In order to compare gene expression patterns between embryos, gene expression was first standardized among the cells of an individual embryo (such that the mean expression for each gene across the cells of the embryo is 0 and the standard deviation is 1), and these standardized expression profiles were used for comparisons between embryos.\n\n### Cell clustering\n\nt-Distributed stochastic neighbor embedding (tSNE) (van der Maaten and Hinton, 2008) was performed on full dataset using the top 1000 most variable genes (according to the Fano factor), with 20 initial dimensions and perplexity set at 50. For reproducibility, a non-random initiation of the objective function was set (https://lvdmaaten.github.io/tsne/).\n\n### Cell identity inference\n\nFor each of the eight examined stages \u2013 1-cell, 2-cell, 4-cell, 8-cell, 15-cell, 28-cell, 51-cell, and 102-cell \u2013 the isolated cells were first clustered according to their position on a tSNE plot using genes of known expression patterns (Supplementary file 2). We next manually and iteratively accepted clusters based upon their homogenous embryo composition, by removing the accepted cluster and re-clustering the remaining cells. These clusterings were based upon the restricted set of genes with known cell identity (Supplementary file 2). Cell state was then annotated to the clusters by comparing the average gene expression of the cluster with a collated database of known gene expression patterns (Supplementary file 3). The robustness of the clustering was tested by only retaining cells whose expression is most similar to the mean expression of each cluster, computed without it (Figure 2\u2014figure supplements 2\u20137). The cell state transcriptome was then computed as the average expression of all members, together with standard deviation (Supplementary file 6).\n\n### FISH analysis\n\nCustom Stellaris FISH probe sets were designed against the entire coding sequence of F19F10.1 (25 non-overlapping probes labeled with CAL Fluor Orange 560 Dye) and pal-1 (25 non-overlapping probes labeled with C3-Fluorescein Dye), using the Stellaris FISH Probe Designer (Biosearch Technologies, Inc, Petaluma, CA, USA). FISH was performed according to the protocol available on the Stellaris website for fixation of embryonic C. elegans material, with the following modification: all steps were performed in 1.5 mL Eppendorf tubes. Hybridization of two non-overlapping probe sets was performed using 125 nM of each probe set contemporaneously. Within 48 hr from completing the hybridization protocol, embryos were mounted on glass slides under #0 coverglass (85\u2013115 \u00b5M thickness), supported on each corner by small amounts of plasticine to avoid crushing the embryos. Slides were imaged immediately after mounting with a Zeiss LSM 510 confocal microscope.\n\n### Lineage tracing and single-cell fluorescence quantification\n\nEmbryo mounting and live imaging were performed as previously described. Briefly, 2- to 4-cell stage embryos were mounted between two cover slips in M9 buffer containing 20 \u03bcm microspheres (Polyscience). Dual-color 3D time-lapse imaging was performed using a Spinning disc confocal microscopy. Images were acquired with 30 focal planes at 1 \u03bcm Z resolution for every 75 s during a 6 hr duration of embryogenesis. Ubiquitously expressed mCherry was used for automated cell identification and lineage tracing using StarryNite program followed by systematic manual correction of errors (Santella et al., 2014). Protein fusion GFP was used to quantify expression level of corresponding gene in each cell using a previous established method (Murray et al., 2008). GFP intensity was measured by calculating the average GFP intensity for each cell and then with the local background intensity subtracted. GFP intensity at different time point for a same cell was averaged to quantify expression level of a gene in a cell. These data are further described in the recently published atlas (Ma et al., 2021).\n\n### Differential gene expression analysis\n\nFor each gene, at each stage, we identified differential gene expression using the following approach. We compared the standardized gene expression values across the cell states of the stage, and identified the two groups of cell states that correspond to the most significantly different groups, assayed by a t-test p-value. In order to establish the significance, we then asked if that p-value is better than that expected by shuffling the expression values across states. To find the two groupings with the best p-value, we began by computing a t-test between the expression values for each cell state and the rest of the expression levels of the remaining states. The cell state with the best p-value was used to seed a group and we next computed the p-value of a super-group composed of this cell state in turn with each other cell state, comparing with the expression values of the remaining cell states. If one of these super-groups had a better p-value than the original best p-value state alone, we selected it and continued this process, iteratively adding to the super-group until the p-value can no longer improve. This process results in a 1-cell state or a super-group of cell states with expression and a group without expression. Each gene will thus have a binary profile and an associated p-value. To select the genes with sufficiently significant p-values we repeated the procedure on 10,000 shuffled sample to cell state assignments. Sorting the p-values from the shufflings, the p-value at 1% of this list was used as the threshold, for a false discovery rate of 1%. We excluded differential expression of genes expressed in more than 50% of the cells of a given stage, and also restricted differential expression to those genes whose maximum expression is at least three quarters of a log10 TPM unit greater than the minimum expression at the given stage.\n\n### Enrichments and depletions of TF families in cells\n\nFor each cell, we computed both the enrichment and depletion of the set of genes in a given TF family among its expressed TFs. The enrichment and depletion is computed as the cumulative hypergeometric p-value with and without subtracted from unity, respectively. The smallest number between these two tests distinguishes an enrichment from a depletion (see Figure 3a), and we multiplied the \u2013log10 p-value by 1 and \u20131, to distinguish these in the plots shown in Figure 3b, c. To compute the significance of enrichments for particular lineages and stages, we used the t-test on the \u2013log10 p-values of the enrichment values.\n\n### Materials availability statement\n\nThe complete dataset has been deposited to the NCBI GEO database GSE83523. The authors declare no competing financial interests. Correspondence and requests for materials should be addressed to IY (itai.yanai@nyulangone.org).\n",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael B Eisen, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87099.3.sa0](https://doi.org/10.7554/eLife.87099.3.sa0)\n\nThis valuable work fills a gap in the mapping of gene expression patterns in the early embryo of C. elegans. The presented data are solid and provides a resource for future analysis.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87099.3.sa1](https://doi.org/10.7554/eLife.87099.3.sa1)\n\nC. elegans is a pre-eminent model for developmental genetics, and its invariant lineage makes it possible in theory to define molecular features such as gene expression comprehensively and at single cell resolution across the organism.\n\nPreviously published single-cell RNA-seq studies have mapped gene expression across the lineage through the 16-cell stage (Tintori et al 2017, Hashimshony et al 2016), and at later stages (Packer et al 2019, with good coverage starting at the 100-cell stage and some coverage at the ~50-cell stage). This left the critical period around gastrulation (~28-cell and ~50-cell) without comprehensive transcriptome data. This study covers this gap with a heroic effort involving the manual isolation and analysis of over 800 cells from embryos of known stage, combined with painstaking curation using known markers from small scale studies and larger imaging-based expression atlases. Importantly, the dataset overlaps at early and late stages with data prior studies.\n\nThe data quality and overlap with Tintori and Packer datasets both appear high, but to make this inference required additional analysis from Supplemental Table 6 by this reviewer as it is not explored or described in the manuscript. Analyses demonstrating continuity with these datasets would greatly increase the value of the resource.\n\nThe authors show that specific lineages and stages preferentially express TFs with different classes of DNA binding domains. This extends previous work implicating homeodomains as preferentially involved in nervous system patterning and as enriched in neural and muscle progenitors in mid-stage embryos.\n\nThey also show that C. elegans homologs of Drosophila early embryonic regulators (which function based on spatial position in that system) tend to also be patterned in early C. elegans embryos, but with lineage-specific patterns. This conserved use of regulators would be fairly remarkable given the dramatically different developmental modes in these two species, although this observation is not backed up by quantitative analyses.\n\nFinally, there is an argument that combinations of TFs expressed in lineage-specific patterns give rise to \"stripe\" patterns. This section is also not based on statistical analyses but suggests the possibility that lineage and positional regulation may be more convoluted than was previously thought.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87099.3.sa2](https://doi.org/10.7554/eLife.87099.3.sa2)\n\nThe C. elegans embryo has been model system of study for more than 30 years because of the ease of doing forward and reverse genetics, coupled with its nearly invariant lineage which allows a description of development at high resolution. 4D time lapse imaging coupled with spatially resolved gene expression has enabled identification of transcriptional signatures of cells in space and time, and in the past decade this has been advanced with single-cell transcriptomics methods, using individually isolated embryonic cells (which can retain their identity) or by deconvolving complex mixtures of early cells. Recent work using these methods has resolved spatiotemporal expression patterns for many genes, defining cells up to gastrulation stage, but then changing to more tissue-specific patterns during morphogenesis. A key paradigm of specification in C. elegans and other systems is that early maternal factors initiate or restrict patterns of transcription factor expression from the zygotic genome. Combinatorial expression patterns and some symmetries broken by autonomous or extrinsic cell inductions ultimately program lineages towards their fates. To date, only simple networks have been elucidated, as the increasing complexity of these networks and the high level of redundancy has made functional dissection of such pathways difficult. Hence, almost all of the work in recent years has been descriptive.\n\nIn this work the authors fill a knowledge gap from the early embryo (~16 cells) to the ~100-cell stage and describe new patterns of gene expression. They reconcile their findings with that of others who have defined expression patterns using other methods, such as scRNA-Seq from complex mixtures of cells, and from transcription factor expression analyses. The resulting description of embryonic develop is the most precise to date, and offers a potentially useful resource for other researchers.\n\nThe authors attempt to use their results to find patterns of gene expression that could hint at phylogenetic conservation of specification mechanisms. They find some supporting evidence that expression of homeobox genes occurs in anterior-posterior stripes, which recalls the elaborate A/P patterning system elucidated in the Drosophila embryo, which belongs to the sister phylum Arthropoda in the Ecdysozoan clade of molting animals. It felt as if the authors chose the Hox genes they need to support this conclusion.\n\nSome caveats exist to the work. The expression patterns seem to be well-validated, and following prior work from the Yanai group are likely to be strongly correlated with expression in living embryos. When cells are separated, they could lose some expression patterns that require cell-cell interactions, so it is expected that there might be a small minority of expression patterns that are more complex than what has been documented here.\n\nA major caveat is the idea of the stripes of Hox expression. I just did not find these arguments to be compelling. Seeing these 'stripes' requires organizing the data in a way that maximizes their appearance, for one. Since there is not a lot of movement of cells away from their birth in the early embryo, the AB descendants are anterior to those of MS, anterior to those of E, anterior to those of C, D, and P4. Lineage-specific expression will just naturally fall into 'stripes'. Second, the conservation of Hox expression patterns typically comes with collinearity of the genes along the length of a chromosome (i.e. the so-called Hox clusters) with expression along the body axis, as well as posterior-to-anterior fate transformations when Hox specification is disrupted.\n\nA minor note is the detection of an enrichment of GATA factors in the early E lineage. This has now been found to be a derived condition even within the genus see Broitman-Maduro et al. Development 149 (21): dev200984, as other species like C. angaria show only a simpler network of elt-3 -> elt-2. This suggests that many of the other patterns of gene expression, particularly in the early embryo, could be highly derived as well; some caution is warranted in generalizing the results as being conserved with arthropods as some of this could be convergent.\n\nGiven what the authors are proposing about Hox stripes, some omissions of prior work were surprising (or maybe I missed them). For example, a comprehensive study of Hox genes in C. elegans by Hench et al. (2015) (PLoS One 10(5): e0126947) evaluated all the homeobox genes and examined their genomic locations and expression patterns in the embryo at high spatiotemporal resolution. Work from the Hobert lab (Nature 2020, 584(7822):595-601) showed how homeobox codes specify classes of C. elegans neurons, and the Murray lab (PLoS Genet. 18(5):e1010187) examined Hox control of posterior lineage specification at high resolution, with functional assays.\n\nThe Discussion section of the paper is brief, consistent with the descriptive nature of the work overall, but it would have been nice to see the findings related to other published studies as indicated above.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87099.3.sa3](https://doi.org/10.7554/eLife.87099.3.sa3)\n\nThe authors claim that this dataset covers a timepoint of embryogenesis that is not well covered in the other published single cell datasets (Tintori et al 2016 and Packer et al 2019). The Tintori data indeed do not cover the 28-102-cell stages sufficiently, but it is unclear how the data presented here compare to the Packer et al data. It is true that the Packer et al data have fewer cells at earlier timepoints than at later ones, but given that they sequenced tens of thousands of cells, they report that they still have ~10,000 cells <210 min of embryogenesis. It seems that if the authors want to make any claims about how their data enables exploration of a stage that was previously not accessible, this would require a better comparison to the available data.\n\nThe authors provide thorough support for how they assigned cell identities in their data. It is surprising though that at the 102-cell stage they only identify 37 unique cell identities. They suggest that this is because there are many equivalence groups at this stage. However, I would strongly encourage the authors to perform a similar analysis or otherwise compare their obtained identities with the data from Packer et al. 2019. It seems possible that given the low number of cells in this dataset, the authors are missing certain identities and it would be important to know this.\n\nThe main analysis the authors perform is to look at expression patterns of various classes of TFs and ask whether they are enriched in particular lineages or at specific timepoints. This analysis is interesting but would be more informative if the authors provided in Figure 3d the numbers of each class of TFs. The authors then focus on the homeodomain class of TFs as they display interesting lineage-specific expression patterns, which when mapped on the embryo form stripes. The stripe pattern however is not that obvious, at least not as shown in Figure 4b. Perhaps separate embryo schematics showing the different TF expression patterns would show this more clearly. Moreover, given the relatively small number of cell identities found in this dataset (particularly at the 102-cell stage), a similar analysis using the Packer data would provide further support to these patterns. The localization of cells with shared expression patterns does show a stripe pattern at the 28-cell stage, but also not so clearly beyond this timepoint.\n\nI am also unsure about the validity/value of the comparison of the stripes to Drosophila and the centrality of homeodomain TFs to anterior-posterior positional identity. First, it would be important to map other TFs, very likely there are several other TFs that correlate with positional identity. Also, even if the expression of the homeodomain TFs in C. elegans form stripes, there are still several cells within that stripe that do not express these TFs, it is thus unclear whether these TFs encode positional information or the identity of cells with different positions in the embryo.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87099.3.sa4](https://doi.org/10.7554/eLife.87099.3.sa4)\n\nThis is an admirable piece of work. The authors build on a previous dataset they assembled, but expand it to include all stages of early development in the nematode Caenorhabditis elegans. Cell collection was done manually, which is very impressive, and is clearly far better than pooled unidentified cells. I will not comment on the specific sequencing and analysis, since this is not my expertise, but will comment on the general conclusions and comparative framework in which the authors place their results.\n\nWhile the Introduction and Discussion sections are actually fairly short, much of the presentation of the results is based on a certain comparative framework, which is explicitly a comparison between C. elegans and Drosophila melanogaster. This is an important perspective, but I feel the authors' interpretation is in some places exaggerated and in other places almost trivial.\n\nDrosophila and C. elegans are two of the main models for developmental biology. However, it has been clear for over two decades that both species are highly derived and specialized and therefore, treating them as representative for their taxa is problematic. Much of the authors' discussion hinges on the question of comparing syncytial and lineage-dependent development. The syncytial early development of Drosophila is very specific and is clearly a recent innovation within a restricted group of flies. The canonical Drosophila segmentation cascade is mostly a novelty and most elements within the cascade are recent. Specifically, the expression of gap genes in regional stripes is not found very broadly. Conversely, the polarizing role of Caudal is very ancient and is probably found in all Bilateria. When making comparisons with a distantly related species, it is important to keep this in mind. Not as much is known about development of other nematodes, but the little that is known indicates that C. elegans is also unusual, and specifically the eutelic development (conserved cell lineages in development) is not found in all nematodes.\n\nThe authors suggest that regional expression of transcription factors in stripes is a conserved characteristic of development. This is true for Hox genes and has been known for decades. The regional expression they show for other genes is not convincing as \"stripes\". It is no surprise that developmental transcription factors are regionalized, but linking this to the stripes of Drosophila gap genes and even more so to Drosophila pair-rule and segment-polarity genes is a bit far-fetched. Yes, many genes are expressed in restricted domains along the A-P axis, but that is all that can be said based on the data. Calling them \"Drosophila-like\" is unfounded.\n",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "011068c1-f9f5-4af3-8886-a6458fd83907",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C1",
+      "claim": "John Sulston and colleagues elucidated the 1340 cells generated throughout the embryogenesis of the nematode C. elegans, leading to a hatched worm with 558 cells, each with a described name, lineage, and fate.",
+      "claim_type": "EXPLICIT",
+      "source": "John Sulston and colleagues elucidated the 1340 cells generated throughout the embryogenesis of the nematode C. elegans, leading to a hatched worm with 558 cells, each with a described name, lineage, and fate (Sulston et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sulston et al., 1983, which is a reference to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "a85c8f3b-e20d-4044-97c5-c605c541115e",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C2",
+      "claim": "The C. elegans cell lineage is delineated into a germ-line lineage (P) and five 'founder' somatic cell lineages (AB, MS, E, C, and D) that each have characteristic cell cycle timings.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell lineage is delineated into a germ-line lineage \u2013 P \u2013 and five 'founder' somatic cell lineages \u2013 AB, MS, E, C, and D \u2013 that each have characteristic cell cycle timings (Deppe et al., 1978) and cell fates (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Deppe et al., 1978, and reference to Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "ea359ff4-404c-49a9-aa19-b8a8687cedb9",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C3",
+      "claim": "All founder cell lineages are present by the 28-cell stage, when gastrulation initiates.",
+      "claim_type": "EXPLICIT",
+      "source": "All founder cell lineages are present by the 28-cell stage, when gastrulation initiates, and by the 102-cell stage the progeny of most of the cells have a single fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about C. elegans development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "1edd416f-69a2-4441-b9b3-9bb17dfe752e",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C4",
+      "claim": "By the 102-cell stage the progeny of most of the cells have a single fate.",
+      "claim_type": "EXPLICIT",
+      "source": "All founder cell lineages are present by the 28-cell stage, when gastrulation initiates, and by the 102-cell stage the progeny of most of the cells have a single fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about C. elegans development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "9ac9737f-3f90-46ab-8ce1-b6c089664dea",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C5",
+      "claim": "There are 934 annotated transcription factors in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, there are 934 annotated TFs in C. elegans, with 40% having experimentally studied DNA-binding specificities (Narasimhan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Narasimhan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "3f89373d-b56f-40c5-a1a0-8d2a9e63965f",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C6",
+      "claim": "40% of C. elegans transcription factors have experimentally studied DNA-binding specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, there are 934 annotated TFs in C. elegans, with 40% having experimentally studied DNA-binding specificities (Narasimhan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Narasimhan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "79d0ae19-ddcc-4f80-a3f2-f74e1143ff5a",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C7",
+      "claim": "The study analyzed 840 cells from 38 embryos up to the 102-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we studied 840 cells from 38 embryos up to the 102-cell stage, collecting all or most cells of each embryo (Figure 1b and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental data collected in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "a2388409-bafc-48fa-9a2b-9b9c15bc7cba",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C8",
+      "claim": "Embryo-to-embryo variation could be efficiently normalized by standardizing each gene's expression across all cells collected from the same embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing the transcriptomes, we found that embryo-to-embryo variation could be efficiently normalized by standardizing each gene's expression across all cells collected from the same embryo (see Methods), and this is another benefit of the manual collection approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "bdef6006-6489-493f-8916-cf022ee11add",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C9",
+      "claim": "Cells from early stages occupy the center of the dimensional reduction map while cells from later stages occupy the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "A dimensional reduction map of the examined cells (Figure 1b) reveals the unfolding of development with cells from the early stages occupying the center while cells from later stages occupy the periphery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the dimensional reduction analysis shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "680e9cc4-d6b9-4736-8f51-3d905b25918a",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C10",
+      "claim": "Cells followed developmental trajectories according to their founder cell origin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells followed developmental trajectories according to their founder cell origin, each identified by the expression of genes known to be expressed in a lineage-specific manner: ceh-51 (MS), elt-7 (E), pal-1 (C,D and P), pes-1 (D), and nos-2 (P) (Figure 1c; Broitman-Maduro et al., 2009; Hunter and Kenyon, 1996; Lee et al., 2017; Maduro and Rothman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data shown in Figure 1c and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "781d92e7-026f-4e64-ba5c-90e942774f4c",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C11",
+      "claim": "ceh-51 is expressed in a lineage-specific manner in the MS lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells followed developmental trajectories according to their founder cell origin, each identified by the expression of genes known to be expressed in a lineage-specific manner: ceh-51 (MS), elt-7 (E), pal-1 (C,D and P), pes-1 (D), and nos-2 (P) (Figure 1c; Broitman-Maduro et al., 2009; Hunter and Kenyon, 1996; Lee et al., 2017; Maduro and Rothman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and data in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "7a787bc8-22a9-4892-8408-09542759e074",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C12",
+      "claim": "elt-7 is expressed in a lineage-specific manner in the E lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells followed developmental trajectories according to their founder cell origin, each identified by the expression of genes known to be expressed in a lineage-specific manner: ceh-51 (MS), elt-7 (E), pal-1 (C,D and P), pes-1 (D), and nos-2 (P) (Figure 1c; Broitman-Maduro et al., 2009; Hunter and Kenyon, 1996; Lee et al., 2017; Maduro and Rothman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and data in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "aefbe693-8bd3-4b2e-a7d3-0d1b1a852d93",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C13",
+      "claim": "pal-1 is expressed in a lineage-specific manner in the C, D, and P lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells followed developmental trajectories according to their founder cell origin, each identified by the expression of genes known to be expressed in a lineage-specific manner: ceh-51 (MS), elt-7 (E), pal-1 (C,D and P), pes-1 (D), and nos-2 (P) (Figure 1c; Broitman-Maduro et al., 2009; Hunter and Kenyon, 1996; Lee et al., 2017; Maduro and Rothman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and data in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "dcbe63e5-3ea2-4183-b105-f6398c891749",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C14",
+      "claim": "pes-1 is expressed in a lineage-specific manner in the D lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells followed developmental trajectories according to their founder cell origin, each identified by the expression of genes known to be expressed in a lineage-specific manner: ceh-51 (MS), elt-7 (E), pal-1 (C,D and P), pes-1 (D), and nos-2 (P) (Figure 1c; Broitman-Maduro et al., 2009; Hunter and Kenyon, 1996; Lee et al., 2017; Maduro and Rothman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and data in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "38e20c90-af1c-49ae-9b19-c3d02535fa08",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C15",
+      "claim": "nos-2 is expressed in a lineage-specific manner in the P lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that cells followed developmental trajectories according to their founder cell origin, each identified by the expression of genes known to be expressed in a lineage-specific manner: ceh-51 (MS), elt-7 (E), pal-1 (C,D and P), pes-1 (D), and nos-2 (P) (Figure 1c; Broitman-Maduro et al., 2009; Hunter and Kenyon, 1996; Lee et al., 2017; Maduro and Rothman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work and data in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "f63554a9-dc5e-480c-9727-98b81d5aa9af",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C16",
+      "claim": "The founder cell lineage trajectories are oriented according to cell fates, with similar cell fates converging between lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "As also observed by other studies (Packer et al., 2019), the founder cell lineage trajectories are oriented according to cell fates, with similar cell fates converging between lineages (Figure 1b and d): the cells of the ecto-mesoderm producing C lineage formed a bi-lobed cloud with the muscle part adjacent to that of the MS and D lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 1b and d, and a citation to Packer et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "21e66797-b492-48d4-bc36-503e45d20429",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C17",
+      "claim": "The cells of the ecto-mesoderm producing C lineage formed a bi-lobed cloud with the muscle part adjacent to that of the MS and D lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "As also observed by other studies (Packer et al., 2019), the founder cell lineage trajectories are oriented according to cell fates, with similar cell fates converging between lineages (Figure 1b and d): the cells of the ecto-mesoderm producing C lineage formed a bi-lobed cloud with the muscle part adjacent to that of the MS and D lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Figure 1b and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "2ab58377-62f5-45f1-ac93-511ad3ed3f61",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C18",
+      "claim": "MS cells that will form the pharynx orient toward the pharynx producing portion of the AB lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, MS cells that will form the pharynx orient toward the pharynx producing portion of the AB lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data analysis in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "4d9a9d45-e379-4b72-be90-2c9b50084bf9",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C19",
+      "claim": "The study organized embryos into eight developmental stages: 1-, 2-, 4-, 8-, 15-, 28-, 51-, and 102-cell stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to infer the precise identity of each cell, we first organized the embryos into eight developmental stages: the 1-, 2-, 4-, 8-, 15-, 28-, 51-, and 102-cell stages (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "711e9793-5a7e-4df1-bf4a-30d7cbce1908",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C20",
+      "claim": "The identified clusters contain cells from each of the individual embryos, confirming that embryo to embryo gene expression variation is minimal relative to the coherence of the cell states within an embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "The identified clusters contain cells from each of the individual embryos, thus confirming our underlying assumption that embryo to embryo gene expression variation is minimal relative to the coherence of the cell states within an embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the clustering analysis performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "eb214bdf-3a46-45ed-b517-6381f20511c9",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C21",
+      "claim": "F19F10.1 is a previously uncharacterized ets-factor that is expressed in the posterior daughter cell through 2-cell cycle divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying F19F10.1 by single-molecule fluorescent in situ hybridization (FISH), we found that this previously uncharacterized ets-factor is expressed in the posterior daughter cell through 2-cell cycle divisions (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FISH data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "a2dcb57b-b1fd-4513-a791-925ebb1b9240",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C22",
+      "claim": "5433 genes were identified as being differentially expressed within a stage, collectively across all of the stages.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 5433 genes as being differentially expressed within a stage, collectively across all of the stages (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the results of differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "4ede9a27-9e57-4c1d-b302-b4646d9347ed",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C23",
+      "claim": "395 transcription factors are differentially expressed during the period of cell specification studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 395 are TFs during this period of cell specification (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "c6770978-0de5-4cef-916c-005b3a711254",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C24",
+      "claim": "The study describes 119 cell identities with distinct transcriptome profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether we describe 119-cell identities with distinct transcriptome profiles, which by stage, are as follows: 1 (1-cell), 2 (2-cell), 4 (4-cell), 6 (8-cell), 11 (15-cell), 20 (28-cell), 38 (51-cell), and 37 (102-cell), with 64 of these representing equivalence groups of at least two cell states (Figure 2d, Supplementary file 5, and Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the cell identity analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "12fa0d3b-0fa9-47da-9cea-faf7376425f9",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C25",
+      "claim": "64 of the 119 cell identities represent equivalence groups of at least two cell states.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether we describe 119-cell identities with distinct transcriptome profiles, which by stage, are as follows: 1 (1-cell), 2 (2-cell), 4 (4-cell), 6 (8-cell), 11 (15-cell), 20 (28-cell), 38 (51-cell), and 37 (102-cell), with 64 of these representing equivalence groups of at least two cell states (Figure 2d, Supplementary file 5, and Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the cell identity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "d23312ae-93a2-416f-af43-0ac87fcaec50",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C26",
+      "claim": "Each cell state has an average of seven replicate cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For each cell state that we assigned, we have an average of seven replicate cells (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the sampling depth of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "24429e7d-65e6-4273-b9a5-5967d4a686c7",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C27",
+      "claim": "The delay between GFP expression and mRNA detection is expected as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "The delay between the GFP expression and the mRNA detected here is expected as previously described (Murray et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Murray et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "0ff98c8a-e01a-4692-994c-a86e6b490e41",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C28",
+      "claim": "The ABplppp cell differentially expresses 14 transcription factors, including seven homeobox domain TFs.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, the 'ABplppp' cell differentially expresses 14 TFs according to our analysis, including seven homeobox domain (HD) TFs, though overall HDs only account for 11% of the TFs (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "820d6c68-c42d-4657-89a9-00d6707bbdd3",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C29",
+      "claim": "Homeobox domain TFs account for 11% of all transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, the 'ABplppp' cell differentially expresses 14 TFs according to our analysis, including seven homeobox domain (HD) TFs, though overall HDs only account for 11% of the TFs (Figure 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of TF families.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "08caca6e-2b53-41ac-a82c-ba3c5a42e0ca",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C30",
+      "claim": "The enrichment of seven homeobox domain TFs in the ABplppp cell has a significance of p=0.00015.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the hypergeometric distribution to compute a significance of p=0.00015 for this overlap, given the overall number of TFs and the number of HD and 'ABplppp' TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis using the hypergeometric distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "202d6fa0-e18b-4115-8c33-8c26bc7e59ef",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C31",
+      "claim": "Only two of the 69 TFs expressed by the Eala cell are homeobox domain TFs, representing a significant depletion (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, only two of the 69 TFs expressed by the Eala cell are HDs, a significant depletion (p=0.01, hypergeometric distribution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis using the hypergeometric distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "e8516392-6121-430a-a368-b0e82b6a5469",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C32",
+      "claim": "Homeobox domain TFs are enriched in the 51-cell stage, particularly in the ABp lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3b shows the overall pattern of enrichments and depletions of HDs across all of the examined cells, indicating enrichment of HDs in the 51-cell stage, in particular in the ABp lineage, and depletion in the E lineage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "236a1e5b-d0c9-4cb7-91a9-5bb37609b6f5",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C33",
+      "claim": "Homeobox domain TFs are depleted in the E lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3b shows the overall pattern of enrichments and depletions of HDs across all of the examined cells, indicating enrichment of HDs in the 51-cell stage, in particular in the ABp lineage, and depletion in the E lineage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "be2f6099-da02-4b2b-8d61-6d2a52af1e5d",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C34",
+      "claim": "GATA type zinc factors are enriched in the E lineage and some AB cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For the GATA type zinc factors we found enrichment in the E lineage, as well as some of the AB cells (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "3b7988db-579f-4db6-92a3-358906c240de",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C35",
+      "claim": "TF families showed significant enrichments across lineages and developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the pattern of such biases, we found that TF families showed significant enrichments across lineages and developmental stages (Figure 3d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 3d-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "c7ea85c9-e403-4920-ac05-8bda161a5e7f",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C36",
+      "claim": "Four TF gene families are enriched in the AB lineage: the T-box domain, the helix-loop-helix DNA-binding domain, the homeodomain, and the high mobility group box domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Four TF gene families are enriched in the AB lineage: the T-box domain, the helix-loop-helix (HLH) DNA-binding domain, the HD domain, and the high mobility group (HMG) box domain (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "581600e2-d03a-4868-87c0-080ee30fd893",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C37",
+      "claim": "In the 28-cell stage, each of the 16 AB cells contains expression of at least one homeodomain gene, with 8 distinct cell state patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying this in more detail, we observed that in the 28-cell stage, each of the 16 AB cells contains expression of at least one homeodomain gene, with 8 distinct cell state patterns (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "95828e1a-e023-4645-b961-58e3d7ce21b8",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C38",
+      "claim": "ceh-43 is expressed in nine of the sixteen AB cells at the 28-cell stage in a complex pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, ceh-43 is expressed in nine of the sixteen AB cells at the 28-cell stage in a complex pattern (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "957d1da1-4278-4c2a-9d8d-697e40144acf",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C39",
+      "claim": "Continuous symmetry breaking does not appear to be a mechanism by which differential expression is generally established.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, continuous symmetry breaking (Zacharias and Murray, 2016) does not appear to be a mechanism by which differential expression is generally established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the observed expression patterns and includes a citation to Zacharias and Murray, 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "72407dfb-72d7-4c03-9167-e9557572c1a9",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C40",
+      "claim": "The homeodomain genes expressed in each lineage revealed dorsal-ventral stripes along the anterior-posterior axis at the 28-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Studying the 28-cell stage, we found that the homeodomain genes expressed in each lineage revealed dorsal-ventral stripes along the anterior-posterior axis (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the spatial analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "1c30600c-9206-4c37-bc87-1385fa42ffb5",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C41",
+      "claim": "The ceh-43-expressing cells, deriving from distinct AB sub-lineages, are physically proximate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the ceh-43-expressing cells, deriving from distinct AB sub-lineages, are physically proximate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the spatial mapping analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "0317659c-4ca6-4191-aae4-f231756b03ef",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C42",
+      "claim": "At the 51-cell stage, 4 new homeodomain genes are expressed in the AB lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 51-cell stage, 4 new homeodomain genes are expressed in the AB lineage, and again position along the anterior-posterior axis correlates with gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of gene expression at the 51-cell stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "ede4aff2-ee35-4b42-859d-b30a95908221",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C43",
+      "claim": "Position along the anterior-posterior axis correlates with gene expression at the 51-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 51-cell stage, 4 new homeodomain genes are expressed in the AB lineage, and again position along the anterior-posterior axis correlates with gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the spatial analysis of gene expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "24e60caa-e33c-4595-821d-6fde73cdd540",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C44",
+      "claim": "At the 102-cell stage, expression becomes more complicated as the AB lineage forms an external shell around the gastrulating non-AB cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 102-cell stage, expression becomes more complicated as the AB lineage forms an external shell around the gastrulating non-AB cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of the 102-cell stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "2ab7cb5f-75f5-4fe3-960f-b69c23564951",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C45",
+      "claim": "For the MS lineage, ceh-32 and ceh-51 are in the anterior and posterior, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For the MS lineage, ceh-32 and ceh-51 are in the anterior and posterior, respectively, while for the C lineage vab-7 (even-skipped) and hmbx-1 are in the anterior and posterior, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the spatial analysis of gene expression in the MS lineage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "ff27e2ff-e829-4826-8da8-ae61e6aab0cc",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C46",
+      "claim": "For the C lineage, vab-7 (even-skipped) and hmbx-1 are in the anterior and posterior, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For the MS lineage, ceh-32 and ceh-51 are in the anterior and posterior, respectively, while for the C lineage vab-7 (even-skipped) and hmbx-1 are in the anterior and posterior, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the spatial analysis of gene expression in the C lineage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "fb6ba816-b55a-4613-98cb-3b020b263710",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C47",
+      "claim": "Distinct regionalization codes occur across the embryonic sub-lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus provide evidence that distinct regionalization codes occur across the embryonic sub-lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the spatial analysis of gene expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "be2a2df3-60ad-4205-b449-2b88812ab52c",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C48",
+      "claim": "C. elegans genes nos-1,2 (nanos) and puf genes (pumilio) are restricted to the primary germ cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the C. elegans genes such as nos-1,2 (nanos) and puf genes (pumilio) which are maternal genes in both systems are restricted to the primary germ cell lineage in C. elegans (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "d67546db-5947-4a78-a181-a37088e55533",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C49",
+      "claim": "Gap and pair-rule genes, such as pal-1 (caudal) and cwn-1 (wg), show C lineage and sub-lineage restriction, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, gap and pair-rule genes, such as pal-1 (caudal) and cwn-1 (wg), show C lineage and sub-lineage restriction, respectively (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "7761a780-f6f5-4b33-b254-59af7c619976",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C50",
+      "claim": "While Drosophila patterning follows in a lineage-independent manner, in C. elegans, lineage dependency is coincident with specific expression of patterning genes across the founder cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is evident that while Drosophila patterning follows in a lineage-independent manner, in C. elegans, lineage dependency is coincident with specific expression of patterning genes across the founder cell lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the comparison of patterning mechanisms between Drosophila and C. elegans.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "dd292f4f-13b4-49d2-8153-9d0dae8c2d0c",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C51",
+      "claim": "Three of the homeodomain genes whose expression was described (ceh-13, php-3, and nob-1) are members of the HOX sub-family.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the homeodomain genes whose expression we have described \u2013 ceh-13, php-3, and nob-1 (Figure 4) \u2013 are members of the HOX sub-family, known to provide regionalization during embryogenesis in bilaterians (Carroll et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to Figure 4 and a citation to Carroll et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "4cf825d1-1ddc-4e20-b287-dfafb0b511db",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C52",
+      "claim": "HOX genes are known to provide regionalization during embryogenesis in bilaterians.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the homeodomain genes whose expression we have described \u2013 ceh-13, php-3, and nob-1 (Figure 4) \u2013 are members of the HOX sub-family, known to provide regionalization during embryogenesis in bilaterians (Carroll et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Carroll et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "4295fcea-0225-438e-9db0-dcac4bf43e24",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C53",
+      "claim": "Expression of HOX genes transcends the founder lineages and patterns the posterior region in multiple lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that expression of these HOX genes transcends the founder lineages and patterns the posterior region in multiple lineages (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "a684d20c-2f82-471a-8f2a-da4a5b9d7c70",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C54",
+      "claim": "51 other homeodomain genes likely pattern the lineages and set up locations in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find 51 other homeodomain genes that likely pattern the lineages and set up locations in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of homeodomain gene expression and involves speculation about their function.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "18fa69f9-5565-4e12-9ff1-d3ad0d724ff5",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C55",
+      "claim": "C. elegans has 97 homeodomain genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a large genetic repertoire relative to Drosophila (97 genes in C. elegans, relative to 104 in Drosophila) despite the higher complexity of the latter in terms of cell types and total number of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of the genomic repertoire of C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "1aa71e56-8968-41c7-bf29-8aa4892d7237",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C56",
+      "claim": "Drosophila has 104 homeodomain genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a large genetic repertoire relative to Drosophila (97 genes in C. elegans, relative to 104 in Drosophila) despite the higher complexity of the latter in terms of cell types and total number of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of the genomic repertoire of Drosophila.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "556f8f4f-9ab6-442a-8a82-80a6d8fb5387",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C57",
+      "claim": "In species where regionalization is under lineage control, as opposed to morphogen gradients, there is apparently a greater necessity for distinct positional systems across distinct sub-lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in species where regionalization is under lineage control, as opposed to morphogen gradients, there is apparently a greater necessity for distinct positional systems across distinct sub-lineages \u2013 here the founder cell lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the comparison of C. elegans and Drosophila.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "68bf2615-d9e4-4c01-825f-74b92c00e405",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C58",
+      "claim": "Lineage-specific gene expression stripes suggest that developmental patterning mechanisms may not be restricted to segmented organisms but is rather a universal feature of animal embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find lineage-specific gene expression stripes (Figure 4), suggesting that such a developmental patterning mechanism may not be restricted to segmented organisms but is rather a universal feature of animal embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation based on the observed gene expression patterns.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "742f036e-da40-47f8-a99a-7d03d15691f1",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C59",
+      "claim": "The centrality of homeodomain genes to the patterning system highlights the adaptability of this TF family to both lineage-dependent and position-dependent functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The centrality of homeodomain genes to this system highlights the adaptability of this TF family to both lineage-dependent and position-dependent functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the observed role of homeodomain genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "5c939a66-a74f-42fd-943a-7f812c2ae820",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C60",
+      "claim": "The C. elegans embryo is patterned by a juxtaposition of distinct lineage-specific gene regulatory programs each with a unique encoding of cell location and fate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the C. elegans embryo is patterned by a juxtaposition of distinct lineage-specific gene regulatory programs each with a unique encoding of cell location and fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the overall findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "766a1e0c-c3b9-4bac-a6bd-13a1e66847fe",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C61",
+      "claim": "The use of homologous gene regulatory patterning codes suggests a deep homology of cell fate specification programs across diverse modes of development.",
+      "claim_type": "EXPLICIT",
+      "source": "This use of homologous gene regulatory patterning codes suggests a deep homology of cell fate specification programs across diverse modes of development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation about evolutionary conservation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "7ec73ff7-82da-4a0d-a3c2-c22eee11742f",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C62",
+      "claim": "Developmental toolkit genes constitute the genomic repertoire that underlies the pathways patterning the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmental toolkit genes constitute the genomic repertoire that underlies the pathways patterning the organism (Carroll, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Carroll, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "49c4171d-3eb5-4c62-8228-f9588d1c7c6c",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C63",
+      "claim": "Developmental toolkit genes are generally involved in signaling transduction modules and transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes are generally involved in signaling transduction modules and transcription factors (TFs) (Degnan et al., 2009; Gerhart, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Degnan et al., 2009 and Gerhart, 1999.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "5fce1cb8-02bb-462a-8789-387b1e64a361",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C64",
+      "claim": "The C. elegans endoderm is specified by a cascade of TFs operating sequentially.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Caenorhabditis elegans endoderm is specified by a cascade of TFs operating sequentially (Maduro and Rothman, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Maduro and Rothman, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "7fdf0ab9-d490-4b5d-b4d6-bf49b9bf6099",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C65",
+      "claim": "Segmentation in the Drosophila embryo is established by morphogens within a syncytium, and the subsequent action of the gap, pair-rule, and segment polarity genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, classic work has shown that segmentation in the embryo is established by morphogens within a syncytium, and the subsequent action of the gap, pair-rule, and segment polarity genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about Drosophila development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "767dbbaf-55da-4272-a4fb-66dfa21c7e52",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C66",
+      "claim": "The classic Drosophila segmentation model does not translate directly to species that lack a syncytium, such as C. elegans, where cell fate is specified by cell-autonomous cell lineage programs and their inter-signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This classic model however does not translate directly to species that lack a syncytium \u2013 such as Caenorhabditis elegans \u2013 where cell fate is specified by cell-autonomous cell lineage programs and their inter-signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge about differences in developmental mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "28d26447-e99d-428f-857a-a0033cd22ce4",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C67",
+      "claim": "Previous single-cell RNA-Seq studies in C. elegans have analyzed cells from a mixed suspension of cells from many embryos to study late differentiation stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous single-cell RNA-Seq studies in C. elegans have analyzed cells from a mixed suspension of cells from many embryos to study late differentiation stages, or individual early stage embryos to study early gene expression in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes previous research approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "8ea83b13-4b05-4641-a1e6-f4770486afa5",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C68",
+      "claim": "Previous single-cell RNA-Seq studies in C. elegans have analyzed individual early stage embryos to study early gene expression in the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous single-cell RNA-Seq studies in C. elegans have analyzed cells from a mixed suspension of cells from many embryos to study late differentiation stages, or individual early stage embryos to study early gene expression in the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes previous research approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "4994599e-d848-4410-920a-133309806187",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C69",
+      "claim": "The study determined the transcriptomes of the 1- to 102-cell stage to identify 119 embryonic cell states during cell fate specification, including 'equivalence-group' cell identities.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the intermediate stages of early and late gastrulation (28- to 102-cells stages) missed by these approaches, here we determine the transcriptomes of the 1- to 102-cell stage to identify 119 embryonic cell states during cell fate specification, including 'equivalence-group' cell identities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "6872fa54-c0a4-47eb-a49b-fc5681774136",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C70",
+      "claim": "Gene expression programs are modular according to the sub-cell lineages, each establishing a set of stripes by combinations of transcription factor gene expression across the anterior-posterior axis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that gene expression programs are modular according to the sub-cell lineages, each establishing a set of stripes by combinations of transcription factor gene expression across the anterior-posterior axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the analysis of gene expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "9f897f6a-85d0-4510-88e2-749020ce0fae",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C71",
+      "claim": "Expression of the homeodomain genes establishes a comprehensive lineage-specific positioning system throughout the embryo beginning at the 28-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, expression of the homeodomain genes establishes a comprehensive lineage-specific positioning system throughout the embryo beginning at the 28-cell stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the analysis of homeodomain gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "cdf7003c-5ba1-46c1-92c4-b3e10a89ea34",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C72",
+      "claim": "Genes that segment the entire embryo in Drosophila have orthologs in C. elegans that exhibit sub-lineage-specific expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that genes that segment the entire embryo in Drosophila have orthologs in C. elegans that exhibit sub-lineage-specific expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the comparative analysis of gene expression between Drosophila and C. elegans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "dd8db414-ddd3-49c6-b2a5-850fe6023162",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C73",
+      "claim": "Individual embryos were manually dissociated by gentle pipetting through progressively smaller glass-bore pipettes in calcium/magnesium-free EGM.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual embryos were manually dissociated by gentle pipetting through progressively smaller glass-bore pipettes in calcium/magnesium-free EGM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "3755beb0-f036-4d05-b74d-3d33549d5f36",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C74",
+      "claim": "Cell collection was limited to a 30 min window from the beginning of the dissociation process.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell collection was limited to a 30 min window from the beginning of the dissociation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "b40562b8-49b9-41b6-8721-fe76b0505b31",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C75",
+      "claim": "Individual embryo, multiplexed single-cell RNA-Seq libraries were produced following the CEL-Seq2 protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual embryo, multiplexed single-cell RNA-Seq libraries were produced following the CEL-Seq2 protocol (Hashimshony et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental method and is supported by a citation to Hashimshony et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "4cdb513d-e156-4b57-8ae9-f31baa41c529",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C76",
+      "claim": "RNA molecules were tagged with unique molecular identifiers (UMIs).",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, individually harvested cells were barcoded with a reverse transcription reaction, and RNA molecules were tagged with unique molecular identifiers (UMIs) (Kivioja et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental method and is supported by a citation to Kivioja et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "915a1aa0-9a28-492e-99ad-21e9975efbb3",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C77",
+      "claim": "Only cells with more than 10,000 mapped reads were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression values were calculated as UMI-corrected reads normalized to the number of transcripts per 50,000; only cells with more than 10,000 mapped reads were included in the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "1f754a2b-6701-48bb-bb1e-ae3d0235ec05",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C78",
+      "claim": "Gene expression was standardized among the cells of an individual embryo such that the mean expression for each gene across the cells of the embryo is 0 and the standard deviation is 1.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to compare gene expression patterns between embryos, gene expression was first standardized among the cells of an individual embryo (such that the mean expression for each gene across the cells of the embryo is 0 and the standard deviation is 1), and these standardized expression profiles were used for comparisons between embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the data normalization method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "8efc6401-60aa-45e1-8281-58c94bc15368",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C79",
+      "claim": "t-SNE was performed on the full dataset using the top 1000 most variable genes according to the Fano factor, with 20 initial dimensions and perplexity set at 50.",
+      "claim_type": "EXPLICIT",
+      "source": "t-Distributed stochastic neighbor embedding (tSNE) (van der Maaten and Hinton, 2008) was performed on full dataset using the top 1000 most variable genes (according to the Fano factor), with 20 initial dimensions and perplexity set at 50.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the computational method used and includes a citation to van der Maaten and Hinton, 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "c5ac424f-a1f5-472a-a184-f6cd848ff716",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "claim_id": "C80",
+      "claim": "The complete dataset has been deposited to the NCBI GEO database GSE83523.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete dataset has been deposited to the NCBI GEO database GSE83523.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f652428f-76c5-45b9-8773-822830707298",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study manually isolated and sequenced 840 cells from 38 C. elegans embryos across eight developmental stages (1- to 102-cell), using CEL-Seq2 protocol with UMI tagging. Gene expression was standardized within embryos and analyzed using t-SNE dimensionality reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C19, C73-C80 collectively describe a well-documented experimental approach with appropriate technical details including cell collection protocols, library preparation methods (CEL-Seq2), normalization strategies, and computational analysis parameters. The methods are standard for single-cell RNA-seq studies and include proper quality control thresholds (>10,000 mapped reads).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "5cda2716-f66c-4bd9-b65d-dba5726639d4",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Embryo-to-embryo variation was efficiently normalized by standardizing gene expression within each embryo. Cell clustering confirmed minimal inter-embryo variation relative to intra-embryo cell state coherence, with an average of seven replicate cells per cell state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C20, and C26 describe the normalization approach and its validation through clustering analysis. The observation that clusters contain cells from multiple embryos (C20) provides empirical support for the normalization strategy (C8). The replication depth (C26) is adequate for the analysis performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "77e29083-3b67-404b-bda5-c6c30e3274e2",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dimensional reduction analysis revealed developmental trajectories with early-stage cells at the center and late-stage cells at the periphery. Cells followed trajectories according to founder cell lineages (AB, MS, E, C, D, P), identified by lineage-specific markers, with similar cell fates converging between lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C18 describe t-SNE visualization results supported by Figure 1b-d. The lineage-specific markers (ceh-51, elt-7, pal-1, pes-1, nos-2) are validated by multiple citations to prior work (C11-C15). The convergence of similar fates between lineages (C16-C18) is consistent with known C. elegans developmental biology and supported by visual data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "9067bff5-fba9-4406-b40a-693ae986e7c9",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study identified 119 cell identities with distinct transcriptome profiles across developmental stages, including 64 equivalence groups. A total of 5,433 genes were differentially expressed, including 395 transcription factors. F19F10.1 was validated as a new marker expressed in posterior daughter cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 describe the main cell identity classification results. The identification of 119 cell states (C24) with supporting differential expression analysis (C22-C23) is well-documented. The FISH validation of F19F10.1 (C21) provides experimental confirmation of computational predictions. The equivalence group concept (C25) is appropriately applied to sister cells and symmetric lineages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "7e142f97-4011-4dbe-8050-0d7092785972",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Transcription factor families show lineage- and stage-specific enrichment patterns. Homeobox domain TFs are enriched in the ABp lineage at the 51-cell stage (particularly in ABplppp, p=0.00015) and depleted in the E lineage. GATA zinc finger TFs are enriched in the E lineage. Four TF families (T-box, HLH, HD, HMG) are enriched in the AB lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36 describe TF family enrichment analysis using hypergeometric distribution tests. The statistical approach is appropriate for testing enrichment (C30-C31), and the patterns described (C32-C36) are supported by Figure 3. The analysis appropriately accounts for multiple testing by examining family-level patterns rather than individual genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "1f5ae78d-36d3-4304-9250-d14860eee381",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Homeodomain genes establish lineage-specific spatial patterning codes. At the 28-cell stage, each of 16 AB cells expresses at least one homeodomain gene in 8 distinct patterns forming dorsal-ventral stripes along the anterior-posterior axis. Similar spatial patterns occur in MS and C lineages. Expression patterns are not monophyletic, arguing against continuous symmetry breaking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C47 describe spatial patterning of homeodomain genes supported by Figure 4. The mapping of gene expression to 3D cell positions (C40-C41) provides strong evidence for spatial patterning codes. The observation that patterns are not monophyletic (C38-C39) appropriately challenges continuous symmetry breaking models. The lineage-specific codes in MS and C lineages (C45-C47) extend the finding beyond AB.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "C. elegans orthologs of Drosophila patterning genes show lineage-specific expression. Maternal genes (nos-1,2, puf) are restricted to germ lineage, while gap and pair-rule genes (pal-1, cwn-1) show C lineage restriction. HOX genes (ceh-13, php-3, nob-1) transcend founder lineages to pattern posterior regions. This contrasts with lineage-independent patterning in Drosophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 and C72 describe comparative analysis with Drosophila supported by Figure 5. The lineage-specific restriction of orthologous genes (C48-C49) is clearly demonstrated. The HOX gene expression patterns (C51-C53) are supported by both data and appropriate citations. The comparison to Drosophila (C50) is conceptually sound, though the conclusion about lineage-dependency requires careful interpretation as it reflects different developmental modes rather than direct homology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study proposes that C. elegans uses 51 non-HOX homeodomain genes for lineage-specific patterning, representing a large repertoire (97 total HD genes) compared to Drosophila (104 HD genes). This suggests lineage-controlled regionalization requires more distinct positional systems than morphogen-based patterning, potentially representing a universal feature of animal embryogenesis with deep homology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C61 present interpretive conclusions that extend beyond the direct data. While the gene counts (C55-C56) are factual and the spatial patterning is demonstrated (C58), the functional claims about the 51 homeodomain genes (C54) are speculative ('likely pattern'). The evolutionary interpretations (C57, C61) about necessity for distinct positional systems and deep homology are reasonable hypotheses but require additional comparative data across species to be fully supported. The universality claim (C58) is particularly speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "3020d177-56db-462e-a9ef-47e205b03afc",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establish that C. elegans has a well-characterized cell lineage with 1,340 cells during embryogenesis leading to 558 cells at hatching, organized into germ-line (P) and five founder somatic lineages (AB, MS, E, C, D). The genome encodes 934 transcription factors, 40% with known DNA-binding specificities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide established background information supported by appropriate citations (Sulston et al. 1983, Deppe et al. 1978, Narasimhan et al. 2015). These are well-accepted facts in the C. elegans field and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The introduction establishes that developmental toolkit genes (signaling modules and transcription factors) pattern organisms through gene regulatory pathways. Previous C. elegans single-cell studies analyzed either mixed cell suspensions from multiple embryos or individual early-stage embryos, missing intermediate gastrulation stages (28-102 cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 provide appropriate background and rationale supported by relevant citations. The characterization of previous approaches (C67-C68) accurately identifies the gap in knowledge that motivates the current study. The general principles about developmental toolkit genes (C62-C63) and differences between Drosophila and C. elegans (C65-C66) are well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "8bc95b01-5cb7-48b8-876e-958db42c6b76",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The delay between GFP expression and mRNA detection in reporter validation is expected based on prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 appropriately acknowledges a known technical consideration in comparing transcriptional reporters to mRNA measurements, supported by citation to Murray et al. 2012. This is a minor methodological note.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "6991b6af-55ef-4ec4-bee4-ba37c86e0da0",
+      "content_id": "5071781f-1b24-42e4-80b1-4b0c98d14e6d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study's main conclusions are that gene expression programs are modular according to sub-cell lineages, establishing stripes of TF expression along the anterior-posterior axis, with homeodomain genes establishing a comprehensive lineage-specific positioning system beginning at the 28-cell stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 summarize the study's major findings, which are well-supported by the detailed results in other claim groups. These represent appropriate synthesis of the experimental observations into broader conclusions about C. elegans patterning mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study manually collected and analyzed 840 cells from 38 embryos across eight developmental stages (1- to 102-cell), identifying 119 distinct cell identities with an average of seven replicate cells per state, including 64 equivalence groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple reviewers affirm the dataset as 'solid' and a 'valuable resource' that fills a critical gap in C. elegans developmental mapping. One reviewer notes the 'heroic effort' and 'painstaking curation' involved, while another describes it as 'the most precise to date.' The data quality is accepted without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "4839108b-75c0-40c4-acbc-ffb03ee89046",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Embryo-to-embryo variation was efficiently normalized by standardizing gene expression across cells from the same embryo, with clustering analysis confirming minimal inter-embryo variation relative to intra-embryo cell state coherence.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question the normalization approach or the finding of minimal embryo-to-embryo variation. One reviewer notes this as 'another benefit of the manual collection approach,' implicitly accepting the methodology and conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "c582ce79-3c77-4bde-9632-1b6339665a7b",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Dimensional reduction analysis revealed developmental trajectories organized by founder cell lineages (AB, MS, E, C, D, P) with lineage-specific marker expression, and trajectories oriented according to cell fates with convergence of similar fates between lineages.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the lineage trajectory findings without criticism. One reviewer notes the data 'overlap with Tintori and Packer datasets both appear high,' providing external validation. The lineage-specific expression patterns are treated as established findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "c18792db-2bf6-4834-bc98-064139e3b98e",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "F19F10.1, a previously uncharacterized ets-factor, is expressed in the posterior daughter cell through 2-cell cycle divisions, as validated by single-molecule FISH.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This specific finding is not challenged by any reviewer. The FISH validation provides orthogonal experimental support for the transcriptomic data, and reviewers note that expression patterns are 'well-validated.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "76838771-3a65-44dc-80a2-04b3a329c255",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The study identified 5,433 differentially expressed genes across developmental stages, including 395 transcription factors active during cell specification.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these quantitative findings. One reviewer describes the work as providing 'a potentially useful resource for other researchers,' implicitly accepting the differential expression analysis as valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Transcription factor families show lineage- and stage-specific enrichment patterns, with homeodomain TFs enriched in the AB lineage (particularly at 51-cell stage) and depleted in E lineage, while GATA factors are enriched in E lineage.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the TF family enrichment analysis. One reviewer states this 'extends previous work implicating homeodomains as preferentially involved in nervous system patterning,' treating it as a valid extension of prior findings. The statistical approach using hypergeometric distribution is not challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "da70da3e-704c-45f3-ba31-9adec1275771",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Homeodomain genes establish lineage-specific spatial patterning with dorsal-ventral stripes along the anterior-posterior axis beginning at the 28-cell stage, with distinct regionalization codes across embryonic sub-lineages forming a comprehensive positioning system.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Multiple reviewers express significant skepticism about the 'stripe' interpretation. One states 'the stripe pattern however is not that obvious' and another finds the arguments 'not compelling,' noting that 'lineage-specific expression will just naturally fall into stripes' due to cell positioning. A third reviewer questions whether these patterns 'encode positional information' given incomplete coverage. The lack of statistical support is noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "958fdafe-2b5e-4d2a-8153-0b80fb5a434e",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "C. elegans orthologs of Drosophila patterning genes (nanos, pumilio, caudal, wingless) show lineage-restricted expression patterns, contrasting with Drosophila's lineage-independent patterning and indicating lineage-dependent specification coincident with patterning gene expression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers are divided on this comparative analysis. One notes the conserved use of regulators 'would be fairly remarkable' but criticizes that 'this observation is not backed up by quantitative analyses.' Another reviewer finds the comparison 'exaggerated' and states that linking C. elegans patterns to Drosophila gap/pair-rule genes is 'a bit far-fetched,' cautioning that patterns 'could be convergent' rather than conserved.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "HOX genes and 51 other homeodomain genes pattern multiple lineages across the posterior region, with C. elegans possessing a large homeodomain repertoire (97 genes) suggesting greater necessity for distinct positional systems in lineage-controlled development, potentially representing a universal feature of animal embryogenesis with deep homology.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express substantial concerns about the evolutionary and mechanistic interpretations. One reviewer notes the authors 'chose the Hox genes they need to support this conclusion' and that 'conservation of Hox expression patterns typically comes with collinearity' not demonstrated here. Another states the comparison is 'in some places exaggerated and in other places almost trivial,' warning that both species are 'highly derived' and the Drosophila segmentation cascade is 'mostly a novelty.' The speculation about universality lacks support.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "fb06db3b-b9b7-4500-8144-2a2e9811e490",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Continuous symmetry breaking does not appear to be a general mechanism for establishing differential expression in early C. elegans development.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This negative conclusion is not challenged by reviewers. It is presented as an inference from observed expression patterns and is consistent with the lineage-based specification model that reviewers accept.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "8261dc7f-8d2d-4a06-a444-97c485bd9320",
+      "content_id": "2a6799ed-82a3-4391-99ba-25a8e46afc8c",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The study employed manual embryo dissociation, CEL-Seq2 protocol with UMI tagging, quality filtering (>10,000 mapped reads), and t-SNE dimensional reduction for analysis, with data deposited in GEO database GSE83523.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers praise the methodology, with one calling the manual collection 'very impressive' and 'clearly far better than pooled unidentified cells.' The technical approach is accepted without criticism, though one reviewer notes they cannot comment on 'specific sequencing and analysis' details.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "79d0ae19-ddcc-4f80-a3f2-f74e1143ff5a",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "4d9a9d45-e379-4b72-be90-2c9b50084bf9",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "dd8db414-ddd3-49c6-b2a5-850fe6023162",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "3755beb0-f036-4d05-b74d-3d33549d5f36",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "b40562b8-49b9-41b6-8721-fe76b0505b31",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "4cdb513d-e156-4b57-8ae9-f31baa41c529",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "915a1aa0-9a28-492e-99ad-21e9975efbb3",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "1f754a2b-6701-48bb-bb1e-ae3d0235ec05",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "8efc6401-60aa-45e1-8281-58c94bc15368",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "c5ac424f-a1f5-472a-a184-f6cd848ff716",
+      "result_id": "f652428f-76c5-45b9-8773-822830707298"
+    },
+    {
+      "claim_id": "a2388409-bafc-48fa-9a2b-9b9c15bc7cba",
+      "result_id": "5cda2716-f66c-4bd9-b65d-dba5726639d4"
+    },
+    {
+      "claim_id": "711e9793-5a7e-4df1-bf4a-30d7cbce1908",
+      "result_id": "5cda2716-f66c-4bd9-b65d-dba5726639d4"
+    },
+    {
+      "claim_id": "d23312ae-93a2-416f-af43-0ac87fcaec50",
+      "result_id": "5cda2716-f66c-4bd9-b65d-dba5726639d4"
+    },
+    {
+      "claim_id": "bdef6006-6489-493f-8916-cf022ee11add",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "680e9cc4-d6b9-4736-8f51-3d905b25918a",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "781d92e7-026f-4e64-ba5c-90e942774f4c",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "7a787bc8-22a9-4892-8408-09542759e074",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "aefbe693-8bd3-4b2e-a7d3-0d1b1a852d93",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "dcbe63e5-3ea2-4183-b105-f6398c891749",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "38e20c90-af1c-49ae-9b19-c3d02535fa08",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "f63554a9-dc5e-480c-9727-98b81d5aa9af",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "21e66797-b492-48d4-bc36-503e45d20429",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "2ab58377-62f5-45f1-ac93-511ad3ed3f61",
+      "result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2"
+    },
+    {
+      "claim_id": "eb214bdf-3a46-45ed-b517-6381f20511c9",
+      "result_id": "9067bff5-fba9-4406-b40a-693ae986e7c9"
+    },
+    {
+      "claim_id": "a2dcb57b-b1fd-4513-a791-925ebb1b9240",
+      "result_id": "9067bff5-fba9-4406-b40a-693ae986e7c9"
+    },
+    {
+      "claim_id": "4ede9a27-9e57-4c1d-b302-b4646d9347ed",
+      "result_id": "9067bff5-fba9-4406-b40a-693ae986e7c9"
+    },
+    {
+      "claim_id": "c6770978-0de5-4cef-916c-005b3a711254",
+      "result_id": "9067bff5-fba9-4406-b40a-693ae986e7c9"
+    },
+    {
+      "claim_id": "12fa0d3b-0fa9-47da-9cea-faf7376425f9",
+      "result_id": "9067bff5-fba9-4406-b40a-693ae986e7c9"
+    },
+    {
+      "claim_id": "0ff98c8a-e01a-4692-994c-a86e6b490e41",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "820d6c68-c42d-4657-89a9-00d6707bbdd3",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "08caca6e-2b53-41ac-a82c-ba3c5a42e0ca",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "202d6fa0-e18b-4115-8c33-8c26bc7e59ef",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "e8516392-6121-430a-a368-b0e82b6a5469",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "236a1e5b-d0c9-4cb7-91a9-5bb37609b6f5",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "be2f6099-da02-4b2b-8d61-6d2a52af1e5d",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "3b7988db-579f-4db6-92a3-358906c240de",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "c7ea85c9-e403-4920-ac05-8bda161a5e7f",
+      "result_id": "7e142f97-4011-4dbe-8050-0d7092785972"
+    },
+    {
+      "claim_id": "581600e2-d03a-4868-87c0-080ee30fd893",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "95828e1a-e023-4645-b961-58e3d7ce21b8",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "957d1da1-4278-4c2a-9d8d-697e40144acf",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "72407dfb-72d7-4c03-9167-e9557572c1a9",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "1c30600c-9206-4c37-bc87-1385fa42ffb5",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "0317659c-4ca6-4191-aae4-f231756b03ef",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "ede4aff2-ee35-4b42-859d-b30a95908221",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "24e60caa-e33c-4595-821d-6fde73cdd540",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "2ab7cb5f-75f5-4fe3-960f-b69c23564951",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "ff27e2ff-e829-4826-8da8-ae61e6aab0cc",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "fb6ba816-b55a-4613-98cb-3b020b263710",
+      "result_id": "1f5ae78d-36d3-4304-9250-d14860eee381"
+    },
+    {
+      "claim_id": "be2a2df3-60ad-4205-b449-2b88812ab52c",
+      "result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b"
+    },
+    {
+      "claim_id": "d67546db-5947-4a78-a181-a37088e55533",
+      "result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b"
+    },
+    {
+      "claim_id": "7761a780-f6f5-4b33-b254-59af7c619976",
+      "result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b"
+    },
+    {
+      "claim_id": "dd292f4f-13b4-49d2-8153-9d0dae8c2d0c",
+      "result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b"
+    },
+    {
+      "claim_id": "4cf825d1-1ddc-4e20-b287-dfafb0b511db",
+      "result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b"
+    },
+    {
+      "claim_id": "4295fcea-0225-438e-9db0-dcac4bf43e24",
+      "result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b"
+    },
+    {
+      "claim_id": "cdf7003c-5ba1-46c1-92c4-b3e10a89ea34",
+      "result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b"
+    },
+    {
+      "claim_id": "a684d20c-2f82-471a-8f2a-da4a5b9d7c70",
+      "result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c"
+    },
+    {
+      "claim_id": "18fa69f9-5565-4e12-9ff1-d3ad0d724ff5",
+      "result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c"
+    },
+    {
+      "claim_id": "1aa71e56-8968-41c7-bf29-8aa4892d7237",
+      "result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c"
+    },
+    {
+      "claim_id": "556f8f4f-9ab6-442a-8a82-80a6d8fb5387",
+      "result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c"
+    },
+    {
+      "claim_id": "68bf2615-d9e4-4c01-825f-74b92c00e405",
+      "result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c"
+    },
+    {
+      "claim_id": "742f036e-da40-47f8-a99a-7d03d15691f1",
+      "result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c"
+    },
+    {
+      "claim_id": "5c939a66-a74f-42fd-943a-7f812c2ae820",
+      "result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c"
+    },
+    {
+      "claim_id": "766a1e0c-c3b9-4bac-a6bd-13a1e66847fe",
+      "result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c"
+    },
+    {
+      "claim_id": "011068c1-f9f5-4af3-8886-a6458fd83907",
+      "result_id": "3020d177-56db-462e-a9ef-47e205b03afc"
+    },
+    {
+      "claim_id": "a85c8f3b-e20d-4044-97c5-c605c541115e",
+      "result_id": "3020d177-56db-462e-a9ef-47e205b03afc"
+    },
+    {
+      "claim_id": "ea359ff4-404c-49a9-aa19-b8a8687cedb9",
+      "result_id": "3020d177-56db-462e-a9ef-47e205b03afc"
+    },
+    {
+      "claim_id": "1edd416f-69a2-4441-b9b3-9bb17dfe752e",
+      "result_id": "3020d177-56db-462e-a9ef-47e205b03afc"
+    },
+    {
+      "claim_id": "9ac9737f-3f90-46ab-8ce1-b6c089664dea",
+      "result_id": "3020d177-56db-462e-a9ef-47e205b03afc"
+    },
+    {
+      "claim_id": "3f89373d-b56f-40c5-a1a0-8d2a9e63965f",
+      "result_id": "3020d177-56db-462e-a9ef-47e205b03afc"
+    },
+    {
+      "claim_id": "7ec73ff7-82da-4a0d-a3c2-c22eee11742f",
+      "result_id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0"
+    },
+    {
+      "claim_id": "49c4171d-3eb5-4c62-8228-f9588d1c7c6c",
+      "result_id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0"
+    },
+    {
+      "claim_id": "5fce1cb8-02bb-462a-8789-387b1e64a361",
+      "result_id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0"
+    },
+    {
+      "claim_id": "7fdf0ab9-d490-4b5d-b4d6-bf49b9bf6099",
+      "result_id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0"
+    },
+    {
+      "claim_id": "767dbbaf-55da-4272-a4fb-66dfa21c7e52",
+      "result_id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0"
+    },
+    {
+      "claim_id": "28d26447-e99d-428f-857a-a0033cd22ce4",
+      "result_id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0"
+    },
+    {
+      "claim_id": "8ea83b13-4b05-4641-a1e6-f4770486afa5",
+      "result_id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0"
+    },
+    {
+      "claim_id": "24429e7d-65e6-4273-b9a5-5967d4a686c7",
+      "result_id": "8bc95b01-5cb7-48b8-876e-958db42c6b76"
+    },
+    {
+      "claim_id": "4994599e-d848-4410-920a-133309806187",
+      "result_id": "6991b6af-55ef-4ec4-bee4-ba37c86e0da0"
+    },
+    {
+      "claim_id": "6872fa54-c0a4-47eb-a49b-fc5681774136",
+      "result_id": "6991b6af-55ef-4ec4-bee4-ba37c86e0da0"
+    },
+    {
+      "claim_id": "9f897f6a-85d0-4510-88e2-749020ce0fae",
+      "result_id": "6991b6af-55ef-4ec4-bee4-ba37c86e0da0"
+    },
+    {
+      "claim_id": "79d0ae19-ddcc-4f80-a3f2-f74e1143ff5a",
+      "result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42"
+    },
+    {
+      "claim_id": "4d9a9d45-e379-4b72-be90-2c9b50084bf9",
+      "result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42"
+    },
+    {
+      "claim_id": "c6770978-0de5-4cef-916c-005b3a711254",
+      "result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42"
+    },
+    {
+      "claim_id": "12fa0d3b-0fa9-47da-9cea-faf7376425f9",
+      "result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42"
+    },
+    {
+      "claim_id": "d23312ae-93a2-416f-af43-0ac87fcaec50",
+      "result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42"
+    },
+    {
+      "claim_id": "4994599e-d848-4410-920a-133309806187",
+      "result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42"
+    },
+    {
+      "claim_id": "a2388409-bafc-48fa-9a2b-9b9c15bc7cba",
+      "result_id": "4839108b-75c0-40c4-acbc-ffb03ee89046"
+    },
+    {
+      "claim_id": "711e9793-5a7e-4df1-bf4a-30d7cbce1908",
+      "result_id": "4839108b-75c0-40c4-acbc-ffb03ee89046"
+    },
+    {
+      "claim_id": "1f754a2b-6701-48bb-bb1e-ae3d0235ec05",
+      "result_id": "4839108b-75c0-40c4-acbc-ffb03ee89046"
+    },
+    {
+      "claim_id": "bdef6006-6489-493f-8916-cf022ee11add",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "680e9cc4-d6b9-4736-8f51-3d905b25918a",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "781d92e7-026f-4e64-ba5c-90e942774f4c",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "7a787bc8-22a9-4892-8408-09542759e074",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "aefbe693-8bd3-4b2e-a7d3-0d1b1a852d93",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "dcbe63e5-3ea2-4183-b105-f6398c891749",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "38e20c90-af1c-49ae-9b19-c3d02535fa08",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "f63554a9-dc5e-480c-9727-98b81d5aa9af",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "21e66797-b492-48d4-bc36-503e45d20429",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "2ab58377-62f5-45f1-ac93-511ad3ed3f61",
+      "result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b"
+    },
+    {
+      "claim_id": "eb214bdf-3a46-45ed-b517-6381f20511c9",
+      "result_id": "c18792db-2bf6-4834-bc98-064139e3b98e"
+    },
+    {
+      "claim_id": "a2dcb57b-b1fd-4513-a791-925ebb1b9240",
+      "result_id": "76838771-3a65-44dc-80a2-04b3a329c255"
+    },
+    {
+      "claim_id": "4ede9a27-9e57-4c1d-b302-b4646d9347ed",
+      "result_id": "76838771-3a65-44dc-80a2-04b3a329c255"
+    },
+    {
+      "claim_id": "0ff98c8a-e01a-4692-994c-a86e6b490e41",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "820d6c68-c42d-4657-89a9-00d6707bbdd3",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "08caca6e-2b53-41ac-a82c-ba3c5a42e0ca",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "202d6fa0-e18b-4115-8c33-8c26bc7e59ef",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "e8516392-6121-430a-a368-b0e82b6a5469",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "236a1e5b-d0c9-4cb7-91a9-5bb37609b6f5",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "be2f6099-da02-4b2b-8d61-6d2a52af1e5d",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "3b7988db-579f-4db6-92a3-358906c240de",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "c7ea85c9-e403-4920-ac05-8bda161a5e7f",
+      "result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c"
+    },
+    {
+      "claim_id": "581600e2-d03a-4868-87c0-080ee30fd893",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "95828e1a-e023-4645-b961-58e3d7ce21b8",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "72407dfb-72d7-4c03-9167-e9557572c1a9",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "1c30600c-9206-4c37-bc87-1385fa42ffb5",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "0317659c-4ca6-4191-aae4-f231756b03ef",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "ede4aff2-ee35-4b42-859d-b30a95908221",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "24e60caa-e33c-4595-821d-6fde73cdd540",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "2ab7cb5f-75f5-4fe3-960f-b69c23564951",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "ff27e2ff-e829-4826-8da8-ae61e6aab0cc",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "fb6ba816-b55a-4613-98cb-3b020b263710",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "6872fa54-c0a4-47eb-a49b-fc5681774136",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "9f897f6a-85d0-4510-88e2-749020ce0fae",
+      "result_id": "da70da3e-704c-45f3-ba31-9adec1275771"
+    },
+    {
+      "claim_id": "be2a2df3-60ad-4205-b449-2b88812ab52c",
+      "result_id": "958fdafe-2b5e-4d2a-8153-0b80fb5a434e"
+    },
+    {
+      "claim_id": "d67546db-5947-4a78-a181-a37088e55533",
+      "result_id": "958fdafe-2b5e-4d2a-8153-0b80fb5a434e"
+    },
+    {
+      "claim_id": "7761a780-f6f5-4b33-b254-59af7c619976",
+      "result_id": "958fdafe-2b5e-4d2a-8153-0b80fb5a434e"
+    },
+    {
+      "claim_id": "cdf7003c-5ba1-46c1-92c4-b3e10a89ea34",
+      "result_id": "958fdafe-2b5e-4d2a-8153-0b80fb5a434e"
+    },
+    {
+      "claim_id": "dd292f4f-13b4-49d2-8153-9d0dae8c2d0c",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "4cf825d1-1ddc-4e20-b287-dfafb0b511db",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "4295fcea-0225-438e-9db0-dcac4bf43e24",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "a684d20c-2f82-471a-8f2a-da4a5b9d7c70",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "18fa69f9-5565-4e12-9ff1-d3ad0d724ff5",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "1aa71e56-8968-41c7-bf29-8aa4892d7237",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "556f8f4f-9ab6-442a-8a82-80a6d8fb5387",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "68bf2615-d9e4-4c01-825f-74b92c00e405",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "742f036e-da40-47f8-a99a-7d03d15691f1",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "5c939a66-a74f-42fd-943a-7f812c2ae820",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "766a1e0c-c3b9-4bac-a6bd-13a1e66847fe",
+      "result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9"
+    },
+    {
+      "claim_id": "957d1da1-4278-4c2a-9d8d-697e40144acf",
+      "result_id": "fb06db3b-b9b7-4500-8144-2a2e9811e490"
+    },
+    {
+      "claim_id": "dd8db414-ddd3-49c6-b2a5-850fe6023162",
+      "result_id": "8261dc7f-8d2d-4a06-a444-97c485bd9320"
+    },
+    {
+      "claim_id": "3755beb0-f036-4d05-b74d-3d33549d5f36",
+      "result_id": "8261dc7f-8d2d-4a06-a444-97c485bd9320"
+    },
+    {
+      "claim_id": "b40562b8-49b9-41b6-8721-fe76b0505b31",
+      "result_id": "8261dc7f-8d2d-4a06-a444-97c485bd9320"
+    },
+    {
+      "claim_id": "4cdb513d-e156-4b57-8ae9-f31baa41c529",
+      "result_id": "8261dc7f-8d2d-4a06-a444-97c485bd9320"
+    },
+    {
+      "claim_id": "915a1aa0-9a28-492e-99ad-21e9975efbb3",
+      "result_id": "8261dc7f-8d2d-4a06-a444-97c485bd9320"
+    },
+    {
+      "claim_id": "8efc6401-60aa-45e1-8281-58c94bc15368",
+      "result_id": "8261dc7f-8d2d-4a06-a444-97c485bd9320"
+    },
+    {
+      "claim_id": "c5ac424f-a1f5-472a-a184-f6cd848ff716",
+      "result_id": "8261dc7f-8d2d-4a06-a444-97c485bd9320"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "9219c1d7-e7a8-4fd7-9d95-abf6a6e51a43",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "77e29083-3b67-404b-bda5-c6c30e3274e2",
+      "peer_result_id": "c582ce79-3c77-4bde-9632-1b6339665a7b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on lineage trajectory findings (C9-C18). Both evaluations find the t-SNE visualization, lineage-specific markers, and convergence patterns well-supported. OpenEval cites figure support and prior literature validation; peer reviewers accept findings without criticism and note high overlap with external datasets.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "188a231e-66e2-4141-a33a-c7c090ed66ce",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "7e142f97-4011-4dbe-8050-0d7092785972",
+      "peer_result_id": "0bcb675e-c5ec-40e4-a288-efa19c0f254c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on TF family enrichment analysis (C28-C36). Both evaluations support the hypergeometric distribution approach and accept the patterns described. OpenEval notes appropriate statistical methodology; peer reviewers treat it as valid extension of prior work on homeodomain involvement in nervous system patterning.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "eba86a14-e73d-4c39-9c9a-4f258cefb0e6",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1f5ae78d-36d3-4304-9250-d14860eee381",
+      "peer_result_id": "da70da3e-704c-45f3-ba31-9adec1275771",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on spatial patterning interpretation (C37-C47). OpenEval finds the homeodomain stripe patterns well-supported by Figure 4 and appropriately challenges continuous symmetry models. Peer reviewers express significant skepticism, finding stripe patterns 'not obvious,' arguments 'not compelling,' and noting lack of statistical support. Reviewers suggest patterns may be artifacts of lineage-based cell positioning rather than functional positional codes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "a1729c43-ad55-4aa0-8343-18d8617401ba",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "34a1c3e1-31ff-494e-a816-fc0418e0cb0c",
+      "peer_result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Substantial disagreement on evolutionary and mechanistic interpretations (C54-C61). OpenEval rates these claims as UNCERTAIN, noting they are speculative and extend beyond direct data. Peer reviewers similarly express concerns but more strongly, criticizing selective use of Hox genes, lack of collinearity demonstration, and warning that both species are highly derived. Both identify the universality claim as particularly problematic.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "aa631e73-9a48-4357-8607-8061a99b38f2",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b",
+      "peer_result_id": "958fdafe-2b5e-4d2a-8153-0b80fb5a434e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on comparative analysis with Drosophila (C48-C50, C72). OpenEval finds the lineage-specific restriction and HOX patterns supported, though notes the comparison requires careful interpretation. Peer reviewers are more critical, finding the comparison 'exaggerated' and 'far-fetched,' noting lack of quantitative analyses and warning that patterns could be convergent rather than conserved.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "c9a8f9d7-ab2a-41c1-8189-ea3f8334f310",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "f652428f-76c5-45b9-8773-822830707298",
+      "peer_result_id": "8261dc7f-8d2d-4a06-a444-97c485bd9320",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on methodology and technical approach (C7, C19, C73-C80). OpenEval describes methods as well-documented and standard with appropriate quality control. Peer reviewers praise the 'heroic effort,' 'very impressive' manual collection, and describe approach as 'clearly far better than pooled unidentified cells.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "48845b6b-e4a7-498e-a1df-e47eb58d9fb5",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "5cda2716-f66c-4bd9-b65d-dba5726639d4",
+      "peer_result_id": "4839108b-75c0-40c4-acbc-ffb03ee89046",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on normalization approach and validation (C8, C20). OpenEval finds the normalization strategy empirically supported by clustering results showing cells from multiple embryos. Peer reviewers accept methodology without question and note minimal embryo-to-embryo variation as 'another benefit of the manual collection approach.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "ffcb40ab-e93c-4967-989e-3624db6260f8",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "9067bff5-fba9-4406-b40a-693ae986e7c9",
+      "peer_result_id": "76838771-3a65-44dc-80a2-04b3a329c255",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on differential expression analysis (C22-C23). OpenEval finds the analysis well-documented. Peer reviewers do not question these quantitative findings and describe the work as providing 'a potentially useful resource,' implicitly accepting the differential expression analysis as valid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "3dc9b3cf-7417-499a-a5f0-20418abe8ea0",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "9067bff5-fba9-4406-b40a-693ae986e7c9",
+      "peer_result_id": "c18792db-2bf6-4834-bc98-064139e3b98e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on FISH validation (C21). OpenEval notes this provides experimental confirmation of computational predictions. Peer reviewers accept the finding without challenge, noting that expression patterns are 'well-validated' with orthogonal experimental support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "83f4e2a0-1bb8-4d12-a8dc-19b9b11f5a10",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "9067bff5-fba9-4406-b40a-693ae986e7c9",
+      "peer_result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cell state identification (C24-C25). OpenEval finds the 119 cell states well-documented with appropriate application of equivalence groups. Peer reviewers affirm the dataset as 'solid' and 'valuable resource' that fills a critical gap, accepting the cell state classifications without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "cd151e31-9371-4e35-8ffd-7ed1f41067a3",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1f5ae78d-36d3-4304-9250-d14860eee381",
+      "peer_result_id": "fb06db3b-b9b7-4500-8144-2a2e9811e490",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on negative conclusion about continuous symmetry breaking (C39). OpenEval notes this appropriately challenges continuous symmetry breaking models based on non-monophyletic patterns. Peer reviewers accept this negative conclusion without challenge, treating it as consistent with the lineage-based specification model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "809cd29c-a37c-4cf0-92cf-1e4b1afda9f1",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "dca63e49-4516-4d5a-b23a-ebe681e2c11b",
+      "peer_result_id": "8edbc364-b40e-4eb0-9bd1-c3de6bd579f9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on HOX gene expression (C51-C53). OpenEval finds these patterns supported by data and citations. Peer reviewers include these claims in their broader criticism of evolutionary interpretations, noting selective use of Hox genes and lack of demonstrated collinearity, though they don't specifically challenge the expression patterns themselves.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "b1f189d6-c2f6-409f-ae06-9926e885ed61",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "6991b6af-55ef-4ec4-bee4-ba37c86e0da0",
+      "peer_result_id": "da70da3e-704c-45f3-ba31-9adec1275771",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Indirect relationship through summary claims (C69-C71). OpenEval finds these summary claims well-supported by detailed results. Peer reviewers' evaluation of C70-C71 is embedded in their skepticism about stripe patterns, questioning whether the spatial patterning conclusions are justified.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "d1ec2382-6812-4a8c-ab35-aca92b4940c5",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "3020d177-56db-462e-a9ef-47e205b03afc",
+      "peer_result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background information (C1-C6 vs C69 context). OpenEval finds the background well-established with appropriate citations. Peer reviewers' acceptance of the dataset as filling a 'critical gap' implicitly validates the background context, though they evaluate different specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "e1dc960f-97bb-4452-9b3f-6585d261b6be",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "0c3c7381-90bb-4f34-b7bc-83b0dffeefd0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background and rationale claims (C62-C68) as supported with appropriate citations. No corresponding peer review evaluation found for these specific background claims, though peer reviewers' overall acceptance of the study's motivation is consistent.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "ba167569-58a1-46cc-8043-ba3f5d3cdb4c",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "8bc95b01-5cb7-48b8-876e-958db42c6b76",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates technical consideration about transcriptional reporters vs mRNA (C27) as appropriately acknowledged. No corresponding peer review evaluation found for this specific methodological note.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "932f46cf-20ec-4785-8ae2-a901e6840da6",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "f652428f-76c5-45b9-8773-822830707298",
+      "peer_result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on dataset quality (C7, C19, C26, C69). OpenEval focuses on technical documentation of methods. Peer reviewers emphasize the dataset as 'solid,' 'valuable resource,' and result of 'heroic effort,' evaluating overall contribution rather than specific methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "da791dc8-4e87-46bf-99f1-d1fec624e148",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "5cda2716-f66c-4bd9-b65d-dba5726639d4",
+      "peer_result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on replication depth (C26). OpenEval finds replication adequate for analysis performed. Peer reviewers include this in their overall acceptance of dataset quality but don't specifically evaluate replication depth.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    },
+    {
+      "id": "28fbf32a-5dbe-4db9-bd0f-e6e3c336b211",
+      "submission_id": "71474c35-e468-47b6-8683-dc5bfcdd73ee",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "6991b6af-55ef-4ec4-bee4-ba37c86e0da0",
+      "peer_result_id": "82ad500a-b2d8-4d14-a163-9bb95b7fbd42",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on major findings summary (C69). OpenEval treats this as appropriate synthesis of results. Peer reviewers' acceptance of the dataset as filling a gap relates to this claim but evaluates it in context of overall contribution rather than as a specific finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:23:03.798638Z"
+    }
+  ]
+}

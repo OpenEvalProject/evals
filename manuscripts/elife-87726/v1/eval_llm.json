@@ -1,0 +1,132 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The new whole transcript approach for var gene assembly outperforms previous methods across multiple metrics. It produces fewer but longer transcripts with higher N50 scores, dramatically reduces misassemblies (2 vs 336), improves N-terminal region assembly (4% vs 58% failure rate), increases assembly completeness of lowly expressed var genes fivefold, and achieves 96% concordance with DBL\u03b1-tag validation (vs 83% in the original approach). The method works across different parasite life cycle stages and expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 provide quantitative benchmarking data comparing the new approach to the original method, showing clear improvements across assembly metrics. Claims C30-C33 provide independent validation through DBL\u03b1-tag sequencing with specific concordance percentages. Claims C34-C35 demonstrate the method's capabilities across different conditions. The evidence is comprehensive, includes appropriate controls (comparison to known 3D7 sequences), and uses multiple validation approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C36",
+      "C42",
+      "C49"
+    ],
+    "result": "Analysis of paired ex vivo and cultured parasite samples reveals modest but unpredictable var gene switching during short-term culture. In 23% (3/13) of patient samples, the dominant var gene changed within one cycle of cultivation, with some showing switches between var gene groups (e.g., group A to group B/C). While most samples maintained relatively stable var expression, the unpredictability necessitates confirmation that in vivo expression matches in vitro expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 provide specific quantitative data on var gene switching with patient identifiers. Claim C18 establishes that most samples were monoclonal, strengthening the interpretation. Claims C36, C42, and C49 provide appropriate interpretation of the findings. The use of paired samples from the same patients provides strong internal controls, and the DBL\u03b1-tag validation (mentioned in methods) supports the RNA-seq findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C36",
+      "C40",
+      "C41"
+    ],
+    "result": "Parasites show convergence toward var2csa expression during short-term culture, with significant upregulation between generation 1 and generation 2 (padj = 0.029). This convergence begins within two cycles of cultivation, consistent with var2csa's proposed role as the dominant 'sink node' in var gene switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 provides statistical evidence with appropriate paired testing and p-value. Claims C40-C41 cite prior literature supporting the biological interpretation. The finding is consistent with previous observations in long-term culture but demonstrates this occurs earlier than previously recognized. The statistical test is appropriate for paired data, though the sample size for generation 2 (n=10) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C43",
+      "C44"
+    ],
+    "result": "At the var domain and var group levels, minimal systematic changes were observed during culture transition. Only one domain (CIDR\u03b12.5) was significantly differentially expressed between ex vivo and generation 1, and no significant changes in total group A or group B/C expression were detected. The impact of culture was most apparent at the individual var transcript level rather than at aggregate domain or group levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 provide specific results from differential expression analysis with appropriate statistical testing (DESeq2 with life cycle stage adjustment). Claim C43 offers a reasonable interpretation that lack of systematic patterns suggests loss of in vivo selection rather than active in vitro selection. Claim C44 appropriately summarizes the multi-level analysis. The findings are internally consistent with the transcript-level results showing individual switching without group-level patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C38",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Short-term culture induces substantial changes in the core transcriptome, with 920 genes (19%) differentially expressed between ex vivo and generation 1 samples, most being upregulated. Eight AP2 transcription factors were upregulated, and genes related to invasion, cytoskeletal organization, and stress response showed significant changes. Notably, 206 genes differentially expressed between na\u00efve and pre-exposed patients ex vivo showed no differences after one cycle of culture, suggesting culture homogenizes transcriptomes and diminishes in vivo signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide specific quantitative data from differential expression analysis with appropriate statistical methods (DESeq2 with life cycle stage adjustment). Claims C28-C29 demonstrate loss of disease-related signatures in culture. Claims C45-C47 offer reasonable interpretations supported by pathway analysis and comparison to prior studies. The finding was validated by restricting analysis to samples without schizonts/gametocytes (Figure 7\u2014supplement 2), addressing potential confounding by stage differences. The large effect size (19% of transcriptome) and consistency across samples strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C48",
+      "C50"
+    ],
+    "result": "The substantial transcriptional changes observed during short-term culture cast doubt on using cultured parasites to make inferences about in vivo phenotype and behavior. The impact of culture can override differences in both core and var transcriptomes associated with different disease manifestations, with potential implications for understanding parasite biology including growth rates and drug susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims (C37, C48, C50) are well-supported by the empirical findings in C25-C29 showing extensive core transcriptome changes and loss of disease-associated signatures. The conclusion is appropriately cautious, acknowledging that while var expression is often maintained, the core transcriptome changes are substantial. The claims represent reasonable scientific interpretation of the data, though C50 is somewhat speculative about implications for growth rates and drug susceptibility (no direct data provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background information on malaria epidemiology, P. falciparum biology, var gene organization, PfEMP1 classification, and receptor binding phenotypes is established through citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C11, C39-C41) provide established background knowledge supported by appropriate citations to prior literature. They are not novel findings of this study but provide necessary context. The citations appear appropriate for the claims made, though verification of the cited sources would be needed to fully assess accuracy of attribution.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C40",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors developed a high-performance computational framework using a spin glass model with pairwise epistatic interactions to simulate microbial evolution under serial dilution. The model includes both additive and epistatic terms with tunable parameters, and employs algorithmic advances (efficient fitness computation, hashing-based storage) to enable simulations over realistic population sizes (~100 million cells) and timescales (~10,000 generations).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this methodological contribution. Reviewer 1 states the study 'describes a high performance computational approach' with 'compelling' evidence. Reviewer 2 calls it 'an important advance' that allows 'explicit modeling of microscopic epistasis in non-SSWM scenarios.' Reviewer 3 emphasizes the 'astute choice of model' and notes the 'high performance algorithm' as a foundation for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C75",
+      "C81"
+    ],
+    "result": "The study finds that stronger microscopic epistasis slows fitness trajectory growth independent of clonal interference levels. This occurs through two mechanisms: beneficial mutations become rarer at each fitness level, and more mutations are required to reach the fitness peak due to smaller typical fitness increments. The mechanism is common to both SSWM and clonal interference regimes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly confirms this finding, stating 'epistasis generically slows down the growth of fitness trajectories regardless of the amount of clonal interference' and that the authors 'quantitatively characterize these observations using asymptotic power law fits.' Reviewer 3 also notes the mechanistic explanation is 'well supported by quantitative macroscopic models.' No reviewer challenges these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study demonstrates that the effect of clonal interference on fitness trajectories depends on the strength of microscopic epistasis. Without epistasis, clonal interference accelerates fitness trajectories, but with sufficiently strong epistasis, clonal interference does not quantitatively affect the speed of the trajectory.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 directly confirms this result, stating 'in the absence of epistasis, clonal interference speeds up the growth of fitness trajectories, but leaves the growth unchanged in the presence of epistasis.' The reviewer notes this is a key finding about how 'the role of clonal interference depends intimately on the underlying fitness landscape.' No concerns are raised about this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The study shows that hill-climbing dynamics on a random sparse fitness landscape with two-point interactions cannot reproduce the slow, low-exponent power law trajectories observed in Lenski's LTEE, even with clonal interference.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While not explicitly discussed in detail by reviewers, this finding is implicitly accepted as part of the overall study contributions. Reviewer 1 notes the study 'offers several insights' into adaptive evolution, and no reviewer challenges this specific conclusion about the LTEE comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C111"
+    ],
+    "result": "The study demonstrates that any macroscopic fitness-parameterized model describing a microscopic process must depend intrinsically on the level of clonal interference, meaning the distribution of fitness effects (DFE) must be tuned to the mutation rate of the culture.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 implicitly supports this by noting the authors 'employ more simplified macroscopic models that are informed by their empirical findings' and that 'the authors' data analysis is quite solid and their conclusions are well supported.' The finding about mutation rate dependence is part of the accepted framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C123"
+    ],
+    "result": "The study observes that for all nonzero values of epistasis parameter \u03b2, the expected beneficial increment behaves linearly as a function of fitness (macroscopic/global epistasis), and that the beneficial mutation rate becomes increasingly linear with fitness as epistasis strength increases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes the authors 'show that epistasis leads to a broadening of the distribution of fitness increments' and that their analysis reveals 'mechanistic origins' of fitness dynamics. The observation of global epistasis is accepted as part of the characterization of the model's behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors develop a random walk model that neglects dynamical correlations to understand the mechanism of epistasis-mediated slowing. The model predicts monotonically decreasing exponents and increasing fixed mutations with \u03b2, and is qualitatively consistent with full simulations, though it underestimates mutation generation due to neglecting correlations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states the authors 'employ more simplified macroscopic models that are informed by their empirical findings, to reveal the mechanistic origins of the epistasis mediated slowing down of fitness growth' and that these models are 'well supported.' The random walk model is part of this mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study characterizes how clonal interference affects the distribution of fitness effects: higher clonal interference leads to more sharply peaked distributions by suppressing low-effect mutations, and the expected increment decreases with increasing mutation rate at fixed fitness. The rank behavior differs between epistatic and non-epistatic landscapes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes the authors 'show that epistasis leads to a broadening of the distribution of fitness increments, leading to the fixation of a large number of mutations that confer small benefits.' The detailed characterization of how clonal interference modulates these distributions is accepted as part of the solid data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The simulation approach enables probing microscopic details challenging to obtain experimentally (distribution of fitness effects, rank over time) and allows study of regimes (strong epistasis, strong clonal interference) that have eluded previous theoretical study.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states the framework 'represents an important advance' allowing 'explicit modeling of microscopic epistasis in non-SSWM scenarios' and that it 'promises to be a valuable tool.' Reviewer 3 notes the model's 'flexibility' and ability to achieve results 'over realistic population sizes and timescales.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript provides background context on microscopic epistasis, clonal interference, SSWM limitations, and previous modeling approaches including rugged landscapes, fitness-parameterized models, and spin glass models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept this background framing. Reviewer 2 notes 'Previous works that explicitly modeled microscopic epistasis typically assumed strong selection & weak mutation (SSWM)' confirming the context. Reviewer 3 discusses how 'most theoretical efforts rely on making simplifications such as the SSWM limit' validating the motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C135",
+      "C136",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors suggest potential future applications including inferring epistasis strength experimentally by measuring beneficial mutation rates, exploring horizontal gene transfer effects, and probing the transition point where clonal interference effects vanish.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly notes 'there is considerable scope for utilizing data generated by such models to train machine learning algorithms for quantifying parameters associated with epistasis, clonal interference, and the distribution of fitness effects in laboratory experiments,' affirming the potential for future applications suggested by the authors.",
+    "result_type": "MINOR"
+  }
+]

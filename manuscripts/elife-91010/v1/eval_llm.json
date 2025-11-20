@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Expression of RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO all led to increased mTORC1 signaling (measured by p-S6 staining) and increased neuron soma size, with gene-specific magnitudes of enlargement. MTORS2215Y and RhebY35L showed the largest increases (>3-fold), PtenKO showed 2.7-fold increase, Tsc1KO showed 2.1-fold increase, and Depdc5KO showed the smallest increase (1.7-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 are well-supported by immunostaining data (Figure 1c-d) showing increased p-S6 levels and quantitative morphometric analysis (Figure 1e) demonstrating statistically significant, gene-specific increases in soma size. The data include appropriate sample sizes (4-8 mice per group, 6-15 cells per animal) and statistical analyses (nested one-way ANOVA with post-hoc tests).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C82"
+    ],
+    "result": "All experimental conditions except PtenKO resulted in neuron mispositioning, with RhebY35L and MTORS2215Y showing the most severe phenotype (~70-80% misplaced), Depdc5KO and Tsc1KO showing intermediate phenotypes (~45-60% misplaced), and PtenKO neurons remaining correctly positioned in layer 2/3 despite large soma size. This suggests that neuronal positioning defects occur independently of cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 and C82 are supported by quantitative positioning data (Figure 1f-h) showing statistically significant differences in neuron placement across conditions. The observation that PtenKO neurons have large soma size but correct positioning provides strong evidence for the independence of these phenotypes. Sample sizes (3-7 mice per group) and statistical methods (one-way ANOVA, two-way repeated measures ANOVA) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "All experimental conditions showed increased membrane capacitance and resting membrane conductance, with gene-specific magnitudes. MTORS2215Y neurons had larger capacitance increases than RhebY35L, while PtenKO and Tsc1KO had similar increases that were both larger than Depdc5KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by electrophysiological recordings (Figure 2b-c) from 5-10 mice per group with 16-50 cells analyzed per animal. The data show statistically significant increases in capacitance and conductance across all conditions, with appropriate statistical analyses (nested one-way ANOVA). The findings are consistent with the observed increases in soma size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C41"
+    ],
+    "result": "RhebY35L, MTORS2215Y, and Tsc1KO expression led to depolarized resting membrane potential (RMP), while Depdc5KO and PtenKO expression did not significantly affect RMP. Despite depolarized RMPs, RhebY35L, MTORS2215Y, and Tsc1KO neurons showed decreased ability to generate action potentials upon depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C41 are supported by electrophysiological data (Figure 2d) showing gene-specific effects on RMP. The paradoxical finding of depolarized RMP with decreased excitability is well-documented with appropriate sample sizes and statistical analyses. The inference in C41 is reasonable given the combined observations of RMP and rheobase data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C49"
+    ],
+    "result": "All experimental conditions led to decreased depolarization-induced excitability, as evidenced by fewer action potentials fired in response to current injections above 100 pA and increased rheobase. MTORS2215Y and RhebY35L conditions showed the largest rheobase increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C49 are supported by comprehensive electrophysiological data (Figure 2e-g) showing statistically significant decreases in AP firing and increases in rheobase across all conditions. The data include appropriate sample sizes, controls, and statistical analyses (nested one-way ANOVA, mixed-effects ANOVA). This represents a convergent phenotype across different mTORC1 pathway mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Control neurons displayed an initial spike doublet consistent with layer 2/3 mPFC pyramidal neurons, which was absent in all experimental conditions except PtenKO. RhebY35L, MTORS2215Y, Depdc5KO, and Tsc1KO neurons showed significantly increased first interspike interval (ISI), while PtenKO neurons did not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by electrophysiological recordings (Figure 2e, 2h) showing altered firing patterns. The presence of spike doublets in controls is validated by citation to Kroon et al., 2019. The quantitative ISI data show statistically significant increases in most conditions except PtenKO, with appropriate statistical analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "No differences in AP threshold were observed across conditions. AP peak amplitude was decreased in MTORS2215Y and Tsc1KO conditions, while AP half-width was decreased in RhebY35L, MTORS2215Y, and PtenKO conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by electrophysiological data (Figure 2i-k) showing gene-specific effects on AP properties. The data include appropriate sample sizes and statistical analyses. These findings represent gene-specific differences in action potential kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C74"
+    ],
+    "result": "All experimental conditions (RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, Tsc1KO) showed significantly increased HCN4 channel expression compared to controls, which exhibited no HCN4 staining. The increased HCN4 staining was specific to electroporated neurons in the ipsilateral cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 and C74 are supported by immunostaining data (Figure 3a-b) using previously validated antibodies. The data show statistically significant increases in HCN4 staining intensity across all conditions (4-8 mice per group, 4-15 cells per animal). The specificity is confirmed by ipsilateral vs. contralateral comparisons and no-primary antibody controls (Figure 3\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Hyperpolarizing voltage pulses elicited significantly larger inward currents and Ih amplitudes in all experimental conditions compared to controls. MTORS2215Y showed larger currents than RhebY35L, and PtenKO showed the largest currents compared to Depdc5KO and Tsc1KO. At -90 mV, Ih amplitudes were significantly higher in MTORS2215Y and Tsc1KO conditions. Ih currents were present in a subset of RhebY35L, Depdc5KO, and PtenKO neurons, and most MTORS2215Y and Tsc1KO neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by voltage-clamp recordings (Figure 3c-f) with appropriate sample sizes (5-10 mice per group, 24-47 cells per animal). The data show statistically significant increases in inward currents and Ih amplitudes, with gene-specific magnitudes. The inference in C63 about proportionality to soma size is reasonable. The conclusion in C66 about subset expression is appropriately cautious given the variability in some conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "Application of the HCN channel blocker zatebradine (40 \u00b5M) to MTORS2215Y neurons reduced overall inward currents and \u0394I, with \u0394I at -90 mV decreasing from -167.7 \u00b1 54.2 pA to 0.75 \u00b1 8.2 pA. Zatebradine-sensitive currents reversed near -50 mV, consistent with HCN4 channel reversal potentials. Zatebradine hyperpolarized RMP in MTORS2215Y neurons but not in control neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70, C72-C73 are supported by pharmacological experiments (Figure 3g-l) showing specific blockade of Ih by zatebradine. The reversal potential near -50 mV is consistent with published HCN4 channel properties (cited: Tae et al., 2017). The effect on RMP is consistent with Ih function in maintaining depolarized RMP (multiple citations provided). Sample sizes are adequate (4-6 neurons, paired measurements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C97"
+    ],
+    "result": "Application of the Kir channel blocker BaCl2 (200 \u00b5M) substantially reduced overall inward currents and depolarized RMP in Tsc1KO neurons but had no effects on \u0394I (Ih).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C97 are supported by pharmacological experiments (Figure 3\u2014figure supplement 3) showing that BaCl2 blocks Kir channels but not Ih. This provides important control data distinguishing Kir-mediated currents from HCN-mediated currents. Sample sizes are adequate (10-13 neurons per group) with appropriate statistical analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "sEPSC frequency was unchanged in all conditions except Tsc1KO (significantly increased). sEPSC amplitude was larger in RhebY35L, MTORS2215Y, and PtenKO conditions. sEPSC total charge was increased in all conditions except RhebY35L. These findings suggest that all experimental conditions except RhebY35L lead to increased synaptic excitability, with variable impacts on frequency and amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by spontaneous EPSC recordings (Figure 4) with appropriate sample sizes (5-9 mice per group, 17-34 cells per animal). The data show gene-specific effects on synaptic transmission with statistically significant differences. The inference in C80 about increased synaptic excitability is reasonable based on the total charge data, though the RhebY35L exception is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C111",
+      "C112"
+    ],
+    "result": "Activation of Rheb or MTOR or biallelic inactivation of Depdc5, Tsc1, or Pten largely leads to similar alterations in neuron morphology and membrane excitability but differentially impacts excitatory synaptic transmission. These findings suggest that cortical neurons harboring different mTORC1 pathway gene mutations may differentially affect how neurons receive and process cortical inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C111, and C112 represent the main conclusions of the study, synthesizing data from all experimental approaches. The claims are well-supported by the comprehensive histological, electrophysiological, and synaptic data presented throughout the manuscript. The conclusion about convergent morphological/membrane phenotypes and divergent synaptic phenotypes is justified by the data, though the mechanistic implications remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The lack of mispositioning of PtenKO neurons was surprising given that increased mTORC1 activity is thought to lead to neuronal misplacement, and aberrant migration of PtenKO neurons has been reported in hippocampus. Despite both PTEN and TSC1 having long half-lives (5-20 hr for PTEN, ~22 hr for TSC1), only Tsc1KO affected neuronal positioning, suggesting PTEN has gene-specific biological mechanisms that contribute to the lack of severe neuronal mispositioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C87 present a discussion of the unexpected PtenKO positioning phenotype. While the observation is well-documented (C30, C82), the mechanistic explanation based on protein half-life (C85-C86) is speculative. The inference in C87 about gene-specific mechanisms is reasonable but not directly tested. The comparison to hippocampal data (C84) is appropriately cited but may not be directly applicable to cortical migration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "MTORS2215Y exhibited the strongest phenotypes in neuron size and positioning, which is consistent with mTOR forming the catalytic subunit of mTORC1. Depdc5KO exhibited the mildest changes. Unlike other genes that regulate mTORC1 via the canonical PI3K-mTORC1 pathway, DEPDC5 regulates mTORC1 via the GATOR1 complex in response to amino acid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by the histological data (Figure 1) and established knowledge of mTORC1 pathway organization. The observation about MTORS2215Y severity is well-documented. The explanation for Depdc5KO mildness based on different regulatory mechanisms (C90) is supported by citation to Iffland et al., 2019 and represents reasonable interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C93",
+      "C94",
+      "C95",
+      "C98"
+    ],
+    "result": "Previous work showed that RhebS16H neurons display abnormal HCN4 channel expression that gives rise to Ih normally absent in layer 2/3 pyramidal neurons. This aberrant Ih preceded seizure onset (detected by P8-12) and was prevented/alleviated by rapamycin and constitutive active 4E-BP1, indicating mTORC1-dependence. The current study extends these findings to show that RhebY35L, MTORS2215Y, Depdc5KO, PtenKO, and Tsc1KO also display aberrant HCN4 expression, suggesting this is a conserved mechanism across mTORC1-activating gene conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55, C93-C95, and C98 appropriately cite prior work (Hsieh et al., 2020; Nguyen et al., 2022) and extend those findings to additional gene conditions. The current data (Figure 3) support the extension to new gene conditions. However, the claim of mTORC1-dependence for the new conditions (C95, C98) is inferred from prior work rather than directly tested with rapamycin in each condition, which represents a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "All gene manipulations led to increased membrane conductance but decreased AP firing upon membrane depolarization, consistent with previous reports. However, inhibiting firing in RhebS16H neurons via Kir2.1 channel co-expression prevents seizures, supporting a cell-autonomous mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by the current electrophysiological data (Figure 2) and appropriately cite previous studies showing similar findings in other cortical regions and the RhebS16H condition. The citation to Hsieh et al., 2020 regarding seizure prevention by Kir2.1 is appropriate and helps reconcile the apparent paradox of decreased intrinsic excitability in epilepsy models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "In addition to HCN4 channels, increased Kir channels contribute to the enlarged inward currents in all conditions investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is based on inference from electrophysiological data and knowledge of Kir channel function, but is only directly tested in Tsc1KO neurons (C97, Figure 3\u2014figure supplement 3). While the inference is reasonable given the large inward currents at hyperpolarized potentials, the claim that this applies to \"all conditions\" is not fully supported by direct experimental evidence in each condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The finding of increased sEPSC frequency in Tsc1KO neurons corroborates a previous study in Tsc1 conditional KO mice. The sEPSC frequency in RhebY35L neurons was reduced by 25% (not statistically significant), similar to previous reports for RhebS16H neurons. These findings suggest that different mTORC1 pathway gene mutations can affect synaptic activity differently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 appropriately cite previous work (Wu et al., 2022; Lin et al., 2016) and compare current findings to published data. The observation of gene-specific effects on synaptic activity is well-supported by the data (Figure 4). The inference in C101 about differential effects is reasonable and represents a key conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Loss of PTEN increases mTORC2 activity, whereas loss of TSC1/2 and DEPDC5 is associated with decreased mTORC2 activity. Studies show conflicting results regarding whether mTORC2 inhibition reduces seizures, with some showing reduction of neuronal overgrowth but not synaptic defects/seizures in PTEN loss models, while others report seizure reduction in MTORS2215F and Pten KO models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 appropriately cite multiple studies on mTORC2 activity and its role in epilepsy. The claims accurately represent the conflicting findings in the literature regarding mTORC2's contribution to seizures. However, these claims are entirely based on prior work and do not represent new findings from the current study. The discussion appropriately acknowledges the uncertainty in this area.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Human electrophysiology studies showed that cytomegalic neurons have increased capacitance and decreased input resistance, consistent with current findings in mice. Comparisons between TSC and FCDII cases showed similar passive membrane properties but differences in sEPSC frequency (higher in TSC), with authors concluding there are subtle functional differences between these disorders. A functional reduction of GABAA-mediated synaptic transmission in FCDII has also been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 appropriately cite human electrophysiology studies (Cepeda et al., 2003, 2005, 2010; Calcagnotto et al., 2005) and compare findings to the current mouse data. The citations appear accurate and the comparisons are reasonable. However, the genetic etiology of the human FCDII cases is unknown, limiting direct comparison to the gene-specific mouse models. The discussion appropriately acknowledges this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C110"
+    ],
+    "result": "Background claims establishing that brain somatic mutations in mTORC1 pathway components are major causes of focal malformations of cortical development (FMCDs) and intractable epilepsy, describing the mTORC1 pathway organization and regulation, and noting that these mutations occur in neural progenitor cells during fetal development resulting in brain somatic mosaicism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C19, and C110 represent background information appropriately supported by citations to established literature. These claims accurately describe the current understanding of mTORopathies, the mTORC1 signaling pathway, and the genetic basis of FMCDs. The citations appear appropriate and the claims represent accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "The main findings of the study: in utero activation of Rheb or MTOR or biallelic inactivation of Depdc5, Tsc1, or Pten leads to shared alterations in pyramidal neuron morphology, positioning, and membrane excitability but different changes in excitatory synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C3 represent the main findings stated in the abstract and are well-supported by the comprehensive experimental data presented throughout the manuscript, including histological analyses (Figure 1), electrophysiological recordings (Figures 2-3), and synaptic measurements (Figure 4). These claims accurately summarize the key results of the study.",
+    "result_type": "MAJOR"
+  }
+]

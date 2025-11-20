@@ -1,0 +1,156 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C94"
+    ],
+    "result": "The authors analyzed 113 genome-wide origin datasets from five different techniques (SNS-seq, Repli-seq, Rerep-seq, OK-seq, Bubble-seq) and found that only 0.27% (20,250) of ~7.5 million union origins were reproducibly identified across datasets. PCA and correlation analyses showed that datasets from the same technique cluster together more than datasets from different techniques, with no clear clustering by cell type.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises fundamental concerns about the methodology, stating that 'the approach of combining diverse methods that monitor different objects related to DNA replication leads to a base dataset that is highly flawed' and that 'only SNS-seq can actually identify origins rather than initiation zones.' Reviewer 1 also criticizes giving 'equal weight to all datasets' when 'some earlier versions have significantly different technical designs.' Reviewer 2 questions 'how can these two [noise and stochasticity] be differentiated' and expresses concern about the inclusion/exclusion logic. The reviewers fundamentally challenge the validity of the meta-analysis approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The shared origins (20,250 high-confidence origins) show enrichment at gene promoters (21% overlap), TF-binding hotspots, constitutive CTCF sites, and have higher GC content and G-quadruplex overlap compared to union origins. They also show enrichment of activating histone marks (H3K4me3, H3/H4 acetylation) and association with transcription factors like PAF1, EZH2, ZNF282, POLR2A, and GTF2I.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 acknowledges that 'the authors show that high-confidence origins recapitulate several known features of origins (e.g., correspondence with open chromatin, overlap with transcriptional promoters, CTCF binding sites)' and notes that 'many of the major genomic features analyzed have already been found to be associated with origin sites.' Reviewer 3 states the work 'reaches a very similar conclusion of these previous studies' regarding chromatin features. While reviewers note these findings are not novel, they do not dispute their validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "The authors report surprisingly low overlap between shared origins and ORC-binding sites: only 6.4% of shared origins are within 1 kb of ORC-binding sites, and only 1.7% directly overlap. Even in cell line-matched data (K562, HeLa), overlaps remain low (12.8% and 6.1% respectively). Additionally, only 21% of ORC1 peaks overlap with ORC2 peaks, and 68% of ORC1 peaks are \u22652 kb from the closest ORC2 peak.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the most contentious finding. The Editor notes 'the lack of overlap between binding sites for ORC1 and ORC2, which are known to form a complex in human cells, is a particular concern and points to the evidence for the accurate localization of their binding sites in the genome being incomplete.' Reviewer 1 states 'if true, a clear lack of colocalization of ORC and origins would be a striking finding' but questions whether the data support this conclusion. Reviewer 2 expresses being 'on the fence about how much existing datasets are \"junk\" vs how much the prevailing hypothesis about replication needs to be revisited' and notes 'the key missing dataset is ORC1 and ORC2 CHiP-seq from the same cell type.' Reviewer 3 acknowledges the finding but notes 'this is most certainly not the case in metazoans where it has already been reported that chromatin bindings sites of ORC and Mcm2-7 do not necessarily overlap.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors report similarly low overlap between shared origins and MCM-binding sites: only ~4.5% of shared human origins are within 1 kb of MCM-binding sites, compared to ~95% in yeast. Cell line-specific analyses show 3.8-5.5% overlap with MCM3-7 in K562 cells and 19.5% with MCM2 in HCT116 cells. Phospho-S108 MCM2 showed the best overlap at 22%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes 'the resolution and the overlap of the MCM Chip-seq datasets is poor' and states 'I am not at all persuaded' by the conclusions. Reviewer 2 expresses concern about 'the lack of overlap with MCM' and states 'if true, these are potentially major discoveries that butts heads with numerous other studies that have suggested otherwise.' Reviewer 3 notes that 'Mcm2-7 is loaded in excess and thus only a fraction of Mcm2-7 would be predicted to coincide with replication start sites,' suggesting the low overlap may be expected rather than surprising.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C80"
+    ],
+    "result": "In yeast S. cerevisiae, nearly 100% of shared origins overlap with ORC-binding sites and ~95% are close to MCM sites, in stark contrast to the low overlap observed in human cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not dispute the yeast data, which serves as a positive control. Reviewer 1 acknowledges the contrast between yeast and human systems. The yeast findings are used by all reviewers as a reference point for evaluating the human data, and no concerns are raised about the yeast analysis itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C88"
+    ],
+    "result": "The authors identify 1,300 'highest-confidence origins' (shared origins proximate to ORC-binding sites) that show even stronger co-localization with promoters, TF-binding hotspots, and CTCF sites compared to shared origins alone. These origins are associated with higher gene expression levels and replicate earlier in S phase. Only 74 origins were identified near both ORC and MCM binding sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states 'the method for identification of strong origins is not robust and of insufficient resolution' and questions the validity of this subset analysis. The small number of origins (74) that meet all criteria is not specifically discussed by reviewers, but the overall methodological concerns raised by Reviewer 1 cast doubt on these refined subsets. Reviewer 3 notes the analysis is 'comprehensive' but lacks 'novel biological insight.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "The authors conclude that shared origins represent only a small subset of all origins, are located in epigenetically active chromatin with preference for promoters, and that the extensive variation between datasets is due to technical noise and stochasticity of origin selection. They recommend that ORC/MCM binding sites should not be used as surrogate markers for origins in human cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 fundamentally disagrees with the conclusions, stating 'I do not find the authors responses sufficiently compelling to change my mind about the significance of the study or veracity of the conclusions.' Reviewer 2 remains 'on the fence' about whether the conclusions reflect dataset quality issues or genuine biology. Reviewer 3 acknowledges the conclusions are 'thought-provoking' but notes 'the major weakness of this paper is the lack of novel biological insight' and that the findings are 'already widely appreciated in the field.' The Editor expresses 'concerns regarding the conclusion that there might be alternative mechanisms.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C104",
+      "C106"
+    ],
+    "result": "Permutation testing shows that overlap of shared origins with promoters, G-quadruplexes, R-loops, and CTCF-binding sites are all significantly above background. However, promoters also show significant overlap with these same features, making it unclear whether these features independently specify origins or are simply enriched because origins are near promoters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the statistical analysis or the permutation testing approach. The finding that these associations exist but may be confounded by promoter proximity is acknowledged as a limitation by the authors themselves and is not disputed by reviewers. This represents a methodologically sound analysis even if it doesn't resolve the mechanistic question.",
+    "result_type": "MINOR"
+  }
+]

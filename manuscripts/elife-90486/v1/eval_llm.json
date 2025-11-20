@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C42",
+      "C43",
+      "C44",
+      "C98",
+      "C99"
+    ],
+    "result": "Using 2DTM on a published \u03b2-galactosidase dataset with a template lacking the ligand binding pocket, the authors achieved a 2.2 \u00c5 reconstruction showing clear density for PETG ligand and water molecules in regions omitted from the template, demonstrating high-resolution recovery of features not present in the template.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C44 provide converging evidence: the experimental design used an independent template (C29-C32), detected 55,627 particles (C33, C35), achieved 2.2 \u00c5 resolution (C37), and showed clear density for omitted features (C42) that matched the published map (C43). Local resolution of ~1.8 \u00c5 in the binding pocket (C44) supports genuine high-resolution recovery. The use of an independent X-ray structure as template (C29-C30) strengthens the demonstration that 2DTM can utilize unrelated structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C100",
+      "C101"
+    ],
+    "result": "2DTM applied to FIB-milled yeast lamellae identified 12,210 LSU particles and generated a 3.1 \u00c5 reconstruction showing density for SSU and tRNAs not present in the template, with parts of the SSU resolved at <4 \u00c5 resolution despite conformational variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C56 document the complete workflow: particle detection (C45), refinement (C46-C48), and recovery of non-template features (C53-C54). The observation that further refinement decreased resolution (C49) and the mechanistic explanation involving high spatial frequencies (C50-C52) demonstrate critical analysis. The <4 \u00c5 resolution for SSU (C54) is appropriately qualified as likely an underestimate due to heterogeneity (C55-C56), showing scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C112"
+    ],
+    "result": "Baited reconstruction revealed in vivo binding of cycloheximide (CHX) to the ribosomal E site and spermidine binding, confirming that CHX stalls ribosomes in the classical PRE translocation state and demonstrating the method can visualize drug-target interactions and small molecule binding in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 provide complementary structural evidence: tRNA occupancy patterns (C57), mechanistic interpretation supported by prior work (C58), and clear density for CHX (C60-C61) and spermidine (C62-C63). The consistency with published crystal structures (C60) and in vitro data (C62) validates the findings. However, C64 appropriately notes uncertainty about the mechanism of spermidine binding, showing appropriate caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Using omit templates lacking either ribosomal protein L7A or 3% of randomly distributed residues, the authors demonstrated recovery of high-resolution features (3.2-4.5 \u00c5 for L7A, clear density for individual nucleotides and amino acids) in regions absent from the template, validating that baited reconstruction can generate bias-free high-resolution maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 describe two complementary validation experiments with consistent results. The L7A omission (C69-C72) showed indistinguishable resolution from surrounding density (C71) with visible side chains (C72). The 3% residue omission (C75-C78) had minimal impact on detection (<1% missed, C77) while showing clear density for omitted features (C78). The logical inference that omitted features cannot derive from template bias (C70) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C84",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C144",
+      "C160"
+    ],
+    "result": "The authors developed a quantitative metric (\u03a9) for template bias by comparing reconstructions from full and omit templates, finding that template bias is approximately proportional to false positive rate when accounting for the actual number of true targets rather than Gaussian noise model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 describe the experimental approach and key finding. The observation that template bias deviates from Gaussian predictions (C89) is explained mechanistically by variable background (C90-C91), and the corrected analysis shows proportionality (C92). The development of the measure_template_bias program (C5, C144) provides a practical tool. However, C93 appropriately notes that further work is needed for improved noise models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C68",
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Template bias can affect FSC-based resolution estimates and lead to reproduction of template features in reconstructions, but is generally avoided in 2DTM by using SNR thresholds that reject false positives, though regions overlapping the template require validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C23, C38-C39, and C68 establish the problem of template bias and its effects on resolution estimates. Claims C80-C83 explain the theoretical basis and mitigation strategy. The acknowledgment that resolution estimates may be unreliable (C39, C68) and the call for validation (C159) demonstrate appropriate scientific caution. The mechanistic explanation (C23, C88) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The 2DTM SNR threshold that excludes false positives also rejects true positives, with the detection limit for 150 nm yeast lamellae being approximately 300 kDa, though this limit is expected to improve with methodological and instrumental advances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 describe the trade-off in threshold selection and establish the current detection limit based on experimental data (C95-C96). The inference about the 300 kDa limit (C96) is supported by reference to Figure 4\u2014figure supplement 1. Claim C97 about future improvements is speculative but reasonable given the citation to relevant work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Baited reconstruction with 2DTM is faster and more streamlined than cryo-ET/subtomogram averaging, uses fewer particles to achieve high-resolution structures, is more sensitive than isSPA (detecting 300 kDa particles), and avoids overfitting by eliminating statistically indistinguishable noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C116-C117, C120-C121 establish the efficiency advantages through logical inference from methodological differences. Claims C127-C131 compare 2DTM to isSPA, with C128 providing specific data (300 kDa detection). The advantages are well-reasoned based on the fundamental differences in approaches (high-resolution vs. low-resolution templates, direct parameter determination vs. iterative refinement).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "2DTM achieved the same 2.2 \u00c5 reconstruction of \u03b2-galactosidase as the traditional workflow without manual intervention, and demonstrated high discrimination between true and false positives by detecting only 53 GroEL targets (none above threshold 9.0) in the same dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 compare the traditional workflow (requiring extensive classification) with 2DTM (simple automated run), demonstrating practical advantages. The GroEL control experiment (C137-C138) provides strong evidence for specificity, as a particle of comparable size to Bgal yielded minimal false detections. This supports the inference about discrimination capability (C138-C139).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Baited reconstruction can recover single-residue detail and water molecules, is analogous to OMIT maps in crystallography and M-free scores in subtomogram averaging but provides higher precision by sampling random residues throughout the sequence, with success depending on the noise model and threshold for excluding false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C152 is supported by the experimental results (C42, C44, C72, C78). The analogies to established methods (C153-C154) are appropriate and well-cited. The claimed advantage of higher precision (C155) is a reasonable inference from the distributed sampling approach. Claims C156-C159 appropriately discuss limitations and the need for validation, showing scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work established that 2DTM can localize macromolecular complexes with high precision in cellular backgrounds, determine all parameters needed for 3D reconstruction, and reveal novel structural features including VP1 on rotavirus, SSU/tRNAs on ribosomes, and differences between bacterial LSUs, though with size limitations due to background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize prior work (C1, C12, C16-C20) with appropriate citations. They establish the foundation for the current study. Claim C14 about size limitations is well-cited. Claim C17 about parameter determination is based on established methodology. These provide essential context but represent prior rather than current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C110",
+      "C114",
+      "C132",
+      "C140",
+      "C141",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Baited reconstruction could be applied to drug discovery, leveraging existing structural data and AI-predicted models to streamline structure determination of drug-target complexes, characterize antibiotic mechanisms in cells, enable studies of less abundant complexes, and provide quantitative metrics for particle classification and map quality assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C106-C107, C110, C114, C132, C140-C141, C145-C147) are primarily speculative about future applications, as indicated by their SPECULATION evidence type. While the proposed applications are logical extensions of the demonstrated capabilities, they lack experimental validation in the current work. The potential is reasonable but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C108",
+      "C109",
+      "C111",
+      "C117",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C142",
+      "C143"
+    ],
+    "result": "Background context on cryo-EM capabilities, computational requirements, drug development workflows, and current methodological approaches including isSPA and validation challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge about cryo-EM (C6-C11), drug development (C108-C109, C111), current methods (C117, C123-C126), and validation challenges (C142-C143). All are appropriately cited or represent common knowledge in the field. They provide context but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Recent work has explored high-resolution template matching for cryo-ET, which reduces false positives and improves localization but may introduce template bias in subtomogram averaging; baited reconstruction and quality metrics could be applied to these pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 accurately summarize recent developments in cryo-ET with appropriate citations. Claim C150 makes a reasonable inference about potential template bias. Claim C151 is speculative about future applications but logical. This represents a minor extension discussing applicability to related methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "A composite OMIT map strategy could serve as a gold standard for bias-free reconstructions but is currently computationally expensive; partial validation may be sufficient if false positives are excluded, though this assumption may not hold with conformational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C163 propose a future gold standard approach but acknowledge it's currently infeasible (C162). Claims C164-C166 discuss when partial validation is sufficient, appropriately noting limitations with heterogeneity. These are reasonable inferences but lack experimental validation and represent future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C65",
+      "C93",
+      "C118",
+      "C119"
+    ],
+    "result": "Future applications and methodological improvements including studying small targets attached to larger complexes, probing polyamide function in translation, developing improved noise models, and using focused classification with fixed alignment parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C26, C65, C93, C118-C119) are speculative about future work. While C26 states a principle, C93 explicitly calls for further work, and C118 expresses an expectation. C119 suggests a methodological approach but without validation. These represent reasonable future directions but are not demonstrated in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C15",
+      "C103",
+      "C104",
+      "C105",
+      "C115",
+      "C122"
+    ],
+    "result": "Methodological context: 2DTM can be combined with 3DTM, is analogous to pulldown assays, differs from prior strategies by using high-resolution templates, and differs from isSPA in its approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide methodological context and comparisons. C13 and C15 discuss complementary use of 2DTM and 3DTM (inference/citation-based). C103-C105 provide useful analogies and distinctions. C115 notes an advantage of 2DTM. C122 establishes difference from isSPA. These are valid contextual points but not primary findings.",
+    "result_type": "MINOR"
+  }
+]

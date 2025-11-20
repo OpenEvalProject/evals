@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C58",
+      "C74"
+    ],
+    "result": "voyAGEr is a free, open-source web tool that provides flexible visualization of age-related gene expression alterations across 49 human tissues using GTEx data from over 900 individuals. The tool was designed to assist researchers without bioinformatics expertise and allows investigation from both gene-centric and tissue-centric perspectives.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm the tool's purpose and capabilities. Reviewer 1 states the tool 'enables the identification and visualization of key genes and tissues impacted by aging' and that 'methods and analyses are convincing.' Reviewer 2 describes it as 'a shiny-based interface for easy exploration of the GTEx dataset by non- or novice programmers' and notes it is 'open source and available from github.' Reviewer 3 confirms the tool 'allows for easy navigation and exploration of gene expression patterns for biologists' with an 'intuitive and user-friendly interface.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C68"
+    ],
+    "result": "The ShARP-LM pipeline performs differential gene expression analysis using a sliding window approach with 16-year windows (adjusted to 11-16 years at the edges) to provide yearly age resolution for profiling transcriptional landscapes across adult human tissues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the ShARP-LM methodology without critique. Reviewer 2 describes it as 'a pipeline for modeling age-related changes in gene expression' that 'underlies the later analyses.' Reviewer 4 notes the authors 'achieved this goal by calculating the significance of gene expression alterations within a sliding window, using their unique algorithm' and acknowledges it provides 'yearly age resolution,' though noting 'limited statistical power due to its calculation within a 16-year window.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C18",
+      "C46",
+      "C47",
+      "C48",
+      "C59"
+    ],
+    "result": "voyAGEr reveals tissue-specific asynchronous aging patterns, showing that different tissues undergo major transcriptional changes at different ages. Examples include the uterus showing prominent changes coinciding with menopause onset, and subcutaneous adipose tissue showing two distinct periods of transcriptional changes (late 20s and after 45 years).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm these findings without challenge. Reviewer 1 states the tool 'enables the identification and visualization of key genes and tissues impacted by aging.' Reviewer 3 specifically highlights 'the tool's ability to show tissue-specific gene expression patterns' as 'essential for elucidating the paradigm of tissue-specific asynchronous aging' and calls it 'a unique and valuable resource.' The asynchronous aging finding is treated as a key contribution by all reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C42",
+      "C43"
+    ],
+    "result": "Specific gene expression patterns with age are demonstrated, including: major age-related transcriptional alterations in coronary artery around 60 years; sex-specific expression differences across age ranges; CDKN2A expression increasing with age in most tissues; and PCNA/MKI67 showing complex age-related expression profiles in lung.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these specific gene expression findings. Reviewer 2 notes the tool 'implements many kinds of interesting R-based tools' for analysis and that 'figures and supplementary information are all clear and all add to the manuscript,' implicitly accepting the presented gene expression data. No reviewer raises concerns about the validity of these specific examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C63",
+      "C64"
+    ],
+    "result": "voyAGEr enables assessment of sex-specific gene expression patterns and their temporal dynamics, corroborating previous findings (e.g., SALL1 and DDX43 sex biases) while adding temporal resolution. The tool shows mammary tissue has the most sex-differentiated expression, and several tissues show sex-related biases arising mainly in late life.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the sex-specific analysis capabilities without critique. Reviewer 2 notes the tool allows users to 'begin a query based on a tissue or a gene of possible interest' and that the analyses are 'labeled by tissue.' Reviewer 4 acknowledges the tool 'enables the exploration of gene expression changes over age in a tissue- and sex-specific manner.' The validation of previous findings is treated as strengthening the tool's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "voyAGEr performs Gene Set Enrichment Analysis (GSEA) using the Reactome database, with pathways clustered into families including KEGG and Gene Ontology terms. The tool enables visualization of how pathway enrichment changes with age, revealing overlapping metabolic pathways in different age periods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the pathway analysis functionality. Reviewer 2 explicitly states 'voyAGEr implements many kinds of interesting R-based tools such as pathway overrepresentation analysis' in a way that 'makes these approaches accessible to non-bioinformaticist aging researchers.' No concerns are raised about the GSEA implementation or pathway clustering approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C56",
+      "C57",
+      "C95"
+    ],
+    "result": "voyAGEr enables examination of co-expressed gene modules in four tissues (brain cortex, skeletal muscle, heart left ventricle, whole blood), showing their enrichment in cell types, pathways, and disease associations. For example, the MEblue module in brain cortex shows astrocyte marker enrichment and age-related expression increases potentially reflecting astrocyte activation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the module analysis functionality. Reviewer 2 notes 'voyAGEr implements many kinds of interesting R-based tools such as... gene co-expression module analysis' that are made accessible to non-bioinformaticians. Reviewer 4 acknowledges the authors 'examined the enrichment of cell types, pathways, and diseases by defining the co-expressed gene modules in four selected tissues.' The specific example interpretations are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C61",
+      "C62"
+    ],
+    "result": "Variance analysis shows tissue accounts for ~90% of total variance, donor ~10%, and age ~1%. The majority of GTEx donors contributed samples to multiple tissues, but analyses suggest limited global confounding between donor and age effects on gene expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these variance findings or the assessment of confounding. The authors' acknowledgment of potential biases and their analyses to address them (downsampling, variance partitioning) are implicitly accepted. No reviewer requests additional controls or expresses concern about the confounding issue beyond what the authors already addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Batch effect correction was performed for five conditions (COHORT, SMRIN, DTHHRDY, MHSMKYRS, and number of detected genes), with the COHORT variable being the main batch effect in most non-brain tissues. Before correction, 17.7% of variance was explained by COHORT; after correction, this effect was eliminated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the batch correction approach without critique. The detailed description of batch effect identification and correction, including the SFTPA2 example demonstrating the importance of correction, is not questioned. Reviewer 3 notes the authors 'acknowledge the limitations of the statistical inference tests and their interpretation in the manuscript, contributing to its transparency,' which includes the batch correction discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C69",
+      "C70"
+    ],
+    "result": "The statistical power for detecting transcriptional changes is influenced by the age distribution of donors, with higher power in age ranges with more samples (typically older individuals). Downsampling to balance age distribution shows loss of power but maintains considerable correlation with original results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this limitation and the authors' analysis of it. Reviewer 4 explicitly acknowledges 'the algorithm ShARP-LM has limited statistical power due to its calculation within a 16-year window' but notes 'the voyAGEr was developed as a discovery tool.' The authors' transparency about this limitation and their downsampling analysis to assess its impact are implicitly accepted by all reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C65",
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "The authors acknowledge several limitations: voyAGEr may not be suited for direct tissue comparisons due to tissue-specific preprocessing; sex chromosome results require caution; most GTEx donors had health conditions; and module-based analyses require careful interpretation to avoid misleading conclusions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers appreciate the authors' transparency about limitations. Reviewer 3 explicitly states 'the authors acknowledge the limitations of the statistical inference tests and their interpretation in the manuscript, contributing to its transparency.' No reviewer challenges these stated limitations or requests additional caveats, suggesting acceptance of the authors' assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C75"
+    ],
+    "result": "The authors envision voyAGEr as a continually evolving resource that can accommodate new data and expand functionalities. Future improvements are expected from accumulation of transcriptomes in public databases, and the observed findings may inform diagnostic tools and personalized therapies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the tool's potential for future development. Reviewer 2 states 'due to the open source approach they or anyone else including but not limited to the present authors can implement additional features in the future. I look forward to using this tool and to staying abreast of its future development.' Reviewer 3 notes 'the authors envision the platform as continuously evolving, with ongoing development and expansion to include new data and features.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The methods section details the computational implementation (R 4.1.2, Shiny, Docker deployment), data sources (GTEx v8, dbGaP), preprocessing steps (filtering, normalization with voom/limma), statistical modeling (linear models, loess regression), FDR control (50,000 permutations), GSEA parameters, WGCNA module definition, and cell type enrichment analysis approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the methodological details without substantive critique. Reviewer 1 states 'the methods and analyses are convincing.' Reviewer 2 notes the methods are clearly described and that 'figures and supplementary information are all clear.' Reviewer 3 comments that 'the authors have shared the code for preprocessing and the tool itself,' facilitating reproducibility. No reviewer identifies methodological flaws or requests clarification of the technical approaches.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2601 @@
+{
+  "submission": {
+    "id": "416c1d32-f646-4dad-8214-6871663e962a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:51:02.145048Z",
+    "updated_at": "2025-11-20T20:51:02.145048Z"
+  },
+  "content": [
+    {
+      "id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "content_type": "manuscript",
+      "content_text": "# Evolutionary rate covariation is a reliable predictor of co-functional interactions but not necessarily physical interactions\n\n## Authors\n\n- Jordan Little<sup>1</sup> ([ORCID: 0000-0002-8590-9357](https://orcid.org/0000-0002-8590-9357))\n- Maria Chikina<sup>2</sup>\n- Nathan L Clark<sup>1</sup> ([ORCID: 0000-0003-0006-8374](https://orcid.org/0000-0003-0006-8374)) \u2020\n\n### Affiliations\n\n1. Department of Human Genetics, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))\n2. Department of Computational Biology, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n3. Department of Biological Sciences, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCo-functional proteins tend to have rates of evolution that covary over time. This correlation between evolutionary rates can be measured over the branches of a phylogenetic tree through methods such as evolutionary rate covariation (ERC), and then used to construct gene networks by the identification of proteins with functional interactions. The cause of this correlation has been hypothesized to result from both compensatory coevolution at physical interfaces and nonphysical forces such as shared changes in selective pressure. This study explores whether coevolution due to compensatory mutations has a measurable effect on the ERC signal. We examined the difference in ERC signal between physically interacting protein domains within complexes compared to domains of the same proteins that do not physically interact. We found no generalizable relationship between physical interaction and high ERC, although a few complexes ranked physical interactions higher than nonphysical interactions. Therefore, we conclude that coevolution due to physical interaction is weak, but present in the signal captured by ERC, and we hypothesize that the stronger signal instead comes from selective pressures on the protein as a whole and maintenance of the general function.\n\n## Introduction\n\nThe evolutionary rate of any protein-coding gene varies over time and hence between species. It has been observed that some genes have rates that covary over time with those of other genes and that they tend to be functionally related (Clark et al., 2012). Evolutionary rate covariation (ERC) is a measure of that correlation in relative evolutionary rates (RER) (Kowalczyk et al., 2019), which is the gene-specific evolutionary rate on a phylogenetic tree branch normalized by the genome-wide evolutionary rate on that branch. If one considers the set of branches relating the orthologous copies of a given gene, an ERC value measures how correlated its branch-specific rates of sequence divergence are with those of another gene.\n\nProtein pairs that have high ERC values (i.e., high rate covariation over time) are often found to participate in shared cellular functions, such as in a metabolic pathway (Findlay et al., 2014; Steenwyk et al., 2021; Steenwyk et al., 2022) or meiosis (Clark et al., 2013) or being in a protein complex together. It was previously shown that physical interaction is not required for co-functional proteins to have correlated evolutionary rates, such as between the proteins of a metabolic pathway (Clark et al., 2012; Juan et al., 2008). However, it is still unclear whether the correlation between physically interacting proteins is strengthened by coevolution at their physical interface. Many co-functional proteins physically interact, such as those in protein complexes and enzyme\u2013substrate interactions (Gershoni et al., 2010; Fraser et al., 2004; Hakes et al., 2007). For example, SMC5 and SMC6 form a complex and have a shared function in the spatial organization of chromatin. They also have similar variation in rates of evolution across the branches of a yeast phylogeny (Figure 1A). Their strong rate covariation is quantified as a Fisher transformed correlation coefficient (ftERC = 24.944). Given the statistical corrections performed, this value for SMC5-SMC6 is highly elevated because the expectation for noncorrelated pairs is zero. Yet, which forces led to this high correlation? Does their physical interaction play a role? Given the strong association between physical interactions and other indicators of co-functionality, the relative contribution of their physical interaction is difficult to dissect for SMC5 and SMC6, as well as for most physically interacting proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig1-v1.jpg)\n\n**Figure 1.:** Proteins that share functional/physical relationships have similar relative rates of evolution across the phylogeny, as shown in (A) with SMC5 and SMC6. The color scale along the bottom indicates the relative evolutionary rate (RER) of the specific protein for that species compared to the genome-wide average. A higher (red) RER indicates that the protein is evolving at a faster rate than the genome average for that branch. Conversely, a lower (blue) RER indicates that protein is evolving at a slower rate than the genome average. The ERC (right) is a Pearson correlation of the RERs for each shared branch of the gene pair. (B) Suppose the correlation in RERs between two proteins is due to compensatory coevolution and physical interactions. In that case, the correlation of their rates (.ie., ERC value) would be higher for just the amino acids in the physically interacting domain. (C) Outline of experimental design. All panels were created with Biorender.com and published using a CC BY-NC-ND license with permission.\n\nThere are two hypotheses addressing the relative contributions of physical interaction versus co-function to correlated evolutionary rates. The idea that physical interactions contribute more to correlated evolutionary rates hinges on the maintenance of proper binding (Ramani and Marcotte, 2003; Salmanian et al., 2020; Goh et al., 2000). Under this hypothesis, a mutation in one binding partner will result in a compensatory mutation in the other, that is, coevolution, consistent with the \u2018lock and key\u2019 model for maintenance of physical interactions (Ramani and Marcotte, 2003; Goh et al., 2000). Such coincident compensatory changes over long periods of time could lead to correlated changes in rate between the two physically interacting proteins. If the physical interaction hypothesis holds, then there is great interest in using rate covariation tools, such as ERC, to predict quaternary structure and connectivity in protein complexes. However, there is a competing hypothesis that diminishes that potential utility. The second hypothesis is that rate correlations are primarily the result of parallel changes in selective pressures acting upon all genes in that function. Shared selective pressures can result in correlated rates of evolution due to several underlying causes. These causes include relaxation of constraint on a function, which results in accelerated rates for the gene set providing that function. Similarly, increased importance of a function in a species could lead to increased constraint and result in a decrease in evolutionary rate in that species for all genes involved. Adaptive change to a specific function on a branch could also create a rate acceleration for that function\u2019s genes, specifically on that branch. Other sources of variation in selective pressure could result from changes in essentiality or expression level, network connectivity, among other forces.\n\nFor the purposes of this study, the forces that contribute to correlated evolutionary rates are grouped into two bins, physical and nonphysical. The physical force is coevolution occurring at physical interaction interfaces. Nonphysical forces include gene co-expression, codon adaptation, selective pressures, and gene essentiality. There is a well-accepted negative relationship between gene expression and rate of protein evolution where genes that are highly expressed generally have slower rates of evolution (Drummond et al., 2006; Drummond et al., 2005). However, Cope et al., 2020 found that there is a weak relationship between both gene expression and the number of interactions a protein has with the coevolution of expression level. Conversely, they found a strong relationship between proteins that physically interact and the coevolution of gene expression. These findings illuminate the difference between the strong relationship of gene expression level on the average evolutionary rate of a protein and the weak contribution of gene expression level to correlated evolutionary rates of proteins across branches. The finding that physically interacting proteins have strong expression-level coevolution brings to question how much coevolution of physically interacting proteins contributes to overall covariation in protein evolutionary rates.\n\nPrevious studies have weighed whether physical coevolution is a strong contributor to rate covariation over time (Hakes et al., 2007; Jothi et al., 2006; Kann et al., 2009). The conclusions drawn from these studies are variable and, in some cases, contradictory. Furthermore, the studies had differing sample sizes and used different protein units to examine the physical interaction, such as surface residues (Hakes et al., 2007), the binding neighborhood (Kann et al., 2009), and protein domains (Jothi et al., 2006). It is difficult to compare the conclusions between these different experimental designs. The different units of the protein will, by nature, give different results. For instance, surface residues are under different constraints than buried residues, making it difficult to assess whether the physical interaction is driving the change or if it instead reflects selection on stability of the protein structure. Whereas examining protein domains gives a view of how the entire three-dimensional structure of the protein is potentially affected by changes in the binding partner. Given the contradictory conclusions and lack of statistical power in previous studies, the overall question regarding the contribution of coevolution to the overall rate covariation remains unanswered.\n\nIn this study, we test the contribution of compensatory physical coevolution to rate covariation by measuring ERC on a large dataset of 343 yeast species. Specifically, we ask whether physically interacting domains have higher ERC than domains of the same proteins that do not physically interact (Figure 1B). To illustrate the expectation being tested under the physical coevolution hypothesis, we present a hypothetical two-protein complex in Figure 1B. Only its two physically interacting domains would have an elevated ERC value above the null expectation of zero, or no correlation. Since domains can be analyzed separately, their ERC can be easily quantified in a practical workflow (Figure 1C). By looking only within complexes rather than across all proteins with annotated physical interactions, we normalize signals from functional associations, assuming that proteins in the same complex will be under the same functional constraints and, therefore, the same selective pressures and other nonphysical forces. Ultimately, we show a weak contribution from physical coevolution and, therefore, poor predictability of physical interactions based on ERC scores, regardless of complex size or average complex ERC. We further show that the ranking of physically interacting domains across the complex has little generalizability in predicting which domains or proteins physically interact.\n\n## Results\n\n### Protein pathways and complexes both have elevated ERC\n\nProtein pathways and complexes are both functional units of the cell; however, complexes are defined by their physical interactions, while pathways may contain many proteins that do not physically interact at all. To investigate the discrepancy between contributions to ERC signal from co-function and physical interaction, we used a dataset of 343 evolutionarily distant yeast species. In total, 332 of the species are Saccharomycotina with 11 closely related outgroup species providing as much evolutionary divergence as between humans to roundworms (Shen et al., 2018). This dataset started with 12,552 orthologous genes, which we parsed into annotated pathways from KEGG (Kanehisa et al., 2023) and YeastPathway (Cherry et al., 2012) and protein complexes from the EMBL-EBI yeast complex portal (Meldal et al., 2019).\n\nERC was calculated for all pairs of the 12,552 genes. For each pair, the correlation is Fisher transformed to normalize for the number of shared branches that contribute to the correlation. This normalization is necessary to reduce false positives that have high correlation solely due to a small number of data points. This normalization also allows for direct comparison of ERC between gene pairs that have differing numbers of branches contributing to the score.\n\nIn general, ERC values for pathways and complexes were both high and had similar distributions after accounting for their sizes (Figure 2A). A majority of complexes (346 of 617) and pathways (109 of 125) had mean ERC values significantly greater (p<0.05) than a null distribution consisting of random size-matched protein sets (Figure 2\u2014figure supplement 1). While protein complexes have higher mean ERC scores (median 5.366) than the pathways (median 4.597), the members of a given complex are also co-functional, making interpretation of the relative contribution of physical interactions to the average ERC score difficult.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig2-v1.jpg)\n\n**Figure 2.:** (A) The mean ERC values for 617 protein complexes (purple, median 5.366) and 125 cellular pathways (orange, median 4.597) versus the number of members contributing to the score. (B) Heat maps of the ERC scores for each protein pair in the motor proteins pathway (left) and SLIK complex (right). ERC for members of the motor proteins pathways that physically interact was set to NA (gray). (C) Scatter plots of the relative evolutionary rates for the top scoring pair from the motor proteins pathway (orange) and SLIK complex (purple).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Median = 0.953.\n\nTo illustrate this difficulty at a more granular level, we present two examples, the SLIK protein complex and the motor protein pathway, both of which have significantly high average ERC values (p<0.001; Figure 2B). It is notable that when the ERC values for all physical interactions within the motor protein pathway are removed, it continues to have a significantly high average ERC. While the highest scoring protein pair in the SLIK complex, TAF5 and TAF6, physically interact and have a highly elevated ERC score (in top 1% genome-wide; Figure 2\u2014figure supplement 2), the highest scoring pair in the motor protein pathway, TUB3 and TPM1, also have a highly elevated ERC score but do not physically interact (Figure 2C). This observation, which reflects the global pattern, makes it difficult to determine whether the higher score between TAF5 and TAF6 is indicative of a stronger contribution from physical interaction to the ERC value or whether co-functionality is the main driver. These observations at both the global level and in individual complexes and pathways prompted further investigation into individual complexes to determine whether the physical interactions within a complex have higher average ERC scores.\n\n### ERC does not distinguish physical interactions from nonphysical interactions within a given protein complex\n\nTo more directly test whether the signal contributing to the high rate covariation comes from the coevolution of physical interactions, we divided the proteins in a complex into their domains. A domain-level ERC analysis allowed us to directly contrast physically interacting domains with nonphysically interacting domains. To maintain the highest level of confidence in the analyses, we only selected complexes whose members had well-defined domain boundaries and annotated physical interactions between complex members (\u2018Methods\u2019). This resulted in a dataset of 14 complexes spanning functions from transcription and translation to autophagosome formation. We also added three complexes from Jothi et al., 2006: mitochondrial F1-ATPase, SEC23/24 heterodimer, and exportin CSE1 with substrate (Table 1).\n\n**Table 1.**\n Evolutionary rate covariation for 17 protein complexes and their physically interacting domains.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Complex</th>\n      <th>Complex ERC</th>\n      <th>Complex permutation p-value</th>\n      <th>Physically interacting domain ERC</th>\n      <th>Nonphysically interacting domain ERC</th>\n      <th>Number of proteins (domains)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Eukaryotic translation initiation factor 3 core complex (Politis et al., 2015)</td>\n      <td>11.539</td>\n      <td>&lt;0.001</td>\n      <td>8.852</td>\n      <td>11.125</td>\n      <td>6 (14)</td>\n    </tr>\n    <tr>\n      <td>MCM complex (Frigola et al., 2017)</td>\n      <td>12.116</td>\n      <td>&lt;0.001</td>\n      <td>10.283</td>\n      <td>8.000</td>\n      <td>6 (26)</td>\n    </tr>\n    <tr>\n      <td>NUP84 (Shi et al., 2014)</td>\n      <td>3.590</td>\n      <td>0.001</td>\n      <td>1.541</td>\n      <td>4.411</td>\n      <td>5 (9)</td>\n    </tr>\n    <tr>\n      <td>Origin of replication complex (Feng et al., 2021)</td>\n      <td>5.420</td>\n      <td>0.012</td>\n      <td>5.250</td>\n      <td>4.035</td>\n      <td>6 (15)</td>\n    </tr>\n    <tr>\n      <td>PAN1 actin cytoskeleton-regulatory complex (Complex Portal, 2023)</td>\n      <td>6.140</td>\n      <td>0.014</td>\n      <td>4.963</td>\n      <td>4.716</td>\n      <td>3 (13)</td>\n    </tr>\n    <tr>\n      <td>SMC5-6 SUMO ligase complex (Yu et al., 2021)</td>\n      <td>8.813</td>\n      <td>0.004</td>\n      <td>5.153</td>\n      <td>4.110</td>\n      <td>4 (15)</td>\n    </tr>\n    <tr>\n      <td>TREX (Xie et al., 2021)</td>\n      <td>5.368</td>\n      <td>0.02</td>\n      <td>4.157</td>\n      <td>4.129</td>\n      <td>5 (12)</td>\n    </tr>\n    <tr>\n      <td>EXOCYST (Ganesan et al., 2020)</td>\n      <td>12.040</td>\n      <td>&lt;0.001</td>\n      <td>6.221</td>\n      <td>5.974</td>\n      <td>8 (21)</td>\n    </tr>\n    <tr>\n      <td>COMA complex (Fischb\u00f6ck-Halwachs et al., 2019)</td>\n      <td>2.883</td>\n      <td>0.157</td>\n      <td>3.051</td>\n      <td>2.869</td>\n      <td>4 (11)</td>\n    </tr>\n    <tr>\n      <td>SWI/SNF chromatin remodeling complex (Han et al., 2020; Schubert et al., 2013)</td>\n      <td>1.853</td>\n      <td>0.291</td>\n      <td>4.121</td>\n      <td>1.783</td>\n      <td>7 (20)</td>\n    </tr>\n    <tr>\n      <td>CUL8-MMS1-MMS22-CTF4 E3 ubiquitin ligase complex (Mimura et al., 2010)</td>\n      <td>0.9925</td>\n      <td>0.175</td>\n      <td>2.611</td>\n      <td>1.576</td>\n      <td>5 (14)</td>\n    </tr>\n    <tr>\n      <td>GET4-GET5 transmembrane domain recognition complex (Chang et al., 2010)</td>\n      <td>2.501</td>\n      <td>0.17</td>\n      <td>4.569</td>\n      <td>3.302</td>\n      <td>4 (7)</td>\n    </tr>\n    <tr>\n      <td>ATG17-ATG31-ATG29 complex (Ragusa et al., 2012)</td>\n      <td>1.825</td>\n      <td>0.29</td>\n      <td>3.444</td>\n      <td>1.584</td>\n      <td>5 (9)</td>\n    </tr>\n    <tr>\n      <td>ESCRT-I complex (Kostelansky et al., 2007)</td>\n      <td>2.752</td>\n      <td>0.137</td>\n      <td>4.041</td>\n      <td>2.402</td>\n      <td>4 (8)</td>\n    </tr>\n    <tr>\n      <td>Mitochondrial F1 ATPase (Jothi et al., 2006)</td>\n      <td>11.015</td>\n      <td>&lt;0.001</td>\n      <td>4.883</td>\n      <td>5.654</td>\n      <td>3 (7)</td>\n    </tr>\n    <tr>\n      <td>SEC23/24 heterodimer (Jothi et al., 2006)</td>\n      <td>9.321</td>\n      <td>0.004</td>\n      <td>10.530</td>\n      <td>7.754</td>\n      <td>2 (10)</td>\n    </tr>\n    <tr>\n      <td>Exportin CSE1 with cargo (Jothi et al., 2006)</td>\n      <td>10.902</td>\n      <td>&lt;0.001</td>\n      <td>8.871</td>\n      <td>6.326</td>\n      <td>2 (12)</td>\n    </tr>\n  </tbody>\n</table>\n\n_ERC, evolutionary rate covariation._\n\nWe split the proteins from the 17 complexes into their annotated domains (\u2018Methods\u2019) and calculated ERC between all domains in a complex. The average ERC for the physically interacting and nonphysically interacting domains for each complex was compared. Of the 17 complexes, 12 had higher average ERC for the physically interacting than the nonphysically interacting. When we look at an individual complex such as the COMA complex (Figure 3), the physically interacting domains have some of the highest ERC values. However, other physically interacting domains have some of the lowest ERC scores. To classify how often physically interacting domains have greater ERC and the statistical significance of such results, we proceeded with a rank-based analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig3-v1.jpg)\n\n**Figure 3.:** The table shows the evolutionary rate covariation (ERC) values for each domain pair as labeled in the cartoon on the right. The domain pairs with physical interactions are highlighted in green.\n\nThe rank-based method, receiver-operating characteristic (ROC) curve analysis, ranks the domain pairs based on their ERC score and calculates the true positive rate (TPR) and false positive rate (FPR) based on whether each pair is physically interacting (positive) or not (negative). The relationship between TPR and FPR is then plotted on a curve that scores the ability to rank a true positive above a false positive; the curve is summarized by the area under the curve (ROC-AUC). In our analysis, the ROC-AUC gives the proportion of times a random pair of physically interacting domains has a higher ERC score than a random pair of nonphysically interacting domains where a value of 1 would indicate that all physical interactions ranked above all nonphysical interactions.\n\nOf the 17 complexes, 12 had an ROC-AUC > 0.5. Since the random expectation would be that half would exceed 0.5, this is a significant excess (binomial test, p=0.0245). Moreover, five complexes had AUCs > 0.7 (Figure 4). These results indicate that physically interacting domains tend to have a higher ERC than nonphysically interacting domains in those complexes. Likewise, four complexes had their physically interacting domains ranked significantly higher than noninteracting domains at an alpha of 5% (one-tailed Mann\u2013Whitney U test), which is also a significant excess of complexes overall (binomial test, p=0.0012). Once again, this indicates a significant amount of ERC signal coming from physically interacting domain pairs within these complexes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig4-v1.jpg)\n\n**Figure 4.:** Of the 17 complexes, 12 have an ROC-AUC > 0.5. The SEC23/24 complex (bright green) has the highest ROC-AUC at 1, and the NUP84 complex (marigold) has the lowest AUC of 0.247. One-tailed Mann\u2013Whitney U test, *p<0.05, **p<0.01. AUC, area under the curve.\n\nWe then applied a third test for a general pattern among all 17 complexes. We generated a null ROC-AUC distribution by permuting the location of the positive class along the ranked list for each complex (\u2018Methods\u2019). We compared the true average ROC-AUC from the 17 complexes (0.596) to the permuted distribution of average ROC-AUCs, which resulted in a permutation p-value of 0.08. The lack of significance in the global permutation test suggests that the global signal for the contribution of physical coevolution to ERC is weak enough that it can be masked by the majority of complexes that show no evidence in favor.\n\n### The power of ERC to detect physically interacting domains is not generalizable in single protein pairs\n\nThe wide range in ROC-AUCs from the previous analysis suggested the possibility of confounding factors masking the signal. Potential confounders could be members of the complex moonlighting in other pathways (Mani et al., 2015) or core membership versus peripheral membership within the complex itself (Chakraborty et al., 2010). To test for the effect of physical interaction free from these confounders, we broke each complex down and only compared the domains within two proteins at a time. Thus, the variation introduced by these potential confounders will be consistent across all domains between a single protein pair, and comparing only their domains pair-by-pair allows cleaner testing of the contribution of physical coevolution to the ERC signal. This analysis also allowed us to determine the significance of a complex having a physical interaction ranked first. If the ranking is significant, it would indicate a future use case of ERC to predict physical interactions.\n\nTo determine the significance of the physically interacting domain ranking within each pair of complex proteins, we calculated the proportional rank of the physically interacting domain pair versus all other domain pairs (\u2018Methods\u2019). This metric gave us the proportion of times the physical interaction ranked higher than nonphysical interactions. The complexes had individual protein pair proportional rank values spanning the entire range of 0\u20131 without clustering at either extreme (Figure 5). These results indicate that even within the same complex, there is a wide variation in how strongly the physical interaction correlates with high ERC.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig5-v1.jpg)\n\n**Figure 5.:** The domains from individual protein pairs within each complex were ranked, and the proportional ranking of the physically interacting domain was calculated. Each dot represents the proportional rank of the interacting domain pair for a protein pair, with colors representing the compledataxes. A score of 1 indicates that the physically interacting domains were ranked first. A score of 0 indicates that the physically interacting domains were ranked last. Permutation test, p<0.05 (bold), p<0.01 (bold and underlined).\n\nWe then looked at the complex average proportional rank to determine whether there was some overarching signal. We took the average for all protein pairs within a complex to get the mean complex proportional rank. The significance of the complex proportional rank was determined by generating a null distribution of proportional rank values for each protein pair and randomly sampling from that to generate a complex-wide null distribution. The observed average for each complex was compared to the null. At a permutation p-value of 0.01, only two complexes had significantly high proportional rank, indicating a strong contribution from physical interactions: CUL8-MMS1-MMS22-CTF4 E3 ubiquitin ligase and exportin complexes (Figure 5). Three additional complexes were significant at a permutation p-value of 0.05: MCM, ORC, and ESCRT-I. This leaves over two-thirds of the complexes with no significant contribution from physical interactions to the ERC signal.\n\nGiven that some of the complexes ranked the physically interacting domains significantly higher in the proportional rank test, it suggests that compensatory co-evolution does contribute to the ERC signal. However, the inconsistency of the ranking indicates that there is not a consistent enough signal to confidently call an interaction physical or not and would be of little value to an experimentalist wanting to infer interacting domains. Ultimately, the contribution from physical interactions on the ERC signal is not strong enough to determine whether a high-ranking protein pair is associated due to physical interaction instead of nonphysical forces.\n\n## Discussion\n\nGiven the differing conclusions reached in previous studies about the strength of contribution from physical interaction to correlated evolutionary rates (Hakes et al., 2007; Jothi et al., 2006; Kann et al., 2009), we aimed to provide a robust conclusion with improved experimental design and sample size. Upon the addition of hundreds of species to the analysis, we were able to look at evidence of compensatory coevolution with increased power at a number of scales: whole protein, domains within complexes, and domains between individual protein pairs. We propose that using entire domains as a unit of study, rather than amino acids at physical interfaces, captures structural changes that could still impact the binding and would not be captured by just examining the binding residues themselves. These changes would still be selected for through compensatory coevolution, and relegating them to the noninteracting category could potentially mask correlated signals.\n\nWe found that compensatory coevolution due to physical interaction contributes to ERC but only in some complexes. Looking across all complexes in our study, a proportion higher than random chance showed elevated ERC between interacting domains; this result was reflected in 12 of the 17 complexes with ROC-AUCs over 0.5 and the 4 complexes with individually significant rankings. Moreover, when we examined only single protein pairs, we found a similar excess of high-scoring physically interacting domains. This indicates that there is a non-negligible signal from physical interaction contributing to ERC. Evidence for physical coevolution however was tempered by a global permutation test, which did not reach significance, indicating that this inference is sensitive to approach and further underlines the weak contribution of physical coevolution. In light of this weak contribution and inconsistency between individual protein complexes, the practical application of a tool such as ERC to provide actionable hypotheses for physically interacting domains is not advisable, given the uncertainty as to which complexes would have high ERC between physically interacting domains.\n\nPrevious studies attributed varying degrees of ERC signal to physical interactions between proteins. On one extreme, Hakes et al., 2007 found no evidence that the physical interaction interface between two proteins had a greater correlation of evolutionary rates than the whole protein or just surface residues. They concluded this after examining surface and potentially interacting residues across 32 complexes in at least 12 eukaryotic species for each complex using the Saccharomyces cerevisiae sequence as the BLAST query. On the other extreme, Jothi et al., 2006 concluded that there was a strong enough signal to predict which domains of a protein complex interact with significant accuracy; however, their analysis was limited to just three protein complexes with orthologs in at least 10 of 93 eukaryotic genomes. Because of their conclusions, we included their complexes in our own study and achieved similar rankings of the physically interacting domains. However, only one of their complexes was statistically significant in our analysis that we attribute to a lack of power given that one of the complexes only had one physically interacting domain pair out of 24 pairs. Kann et al., 2009 reached a similar conclusion to our study using 70 bacterial species. They found that binding neighborhoods from 26 interacting pairs have a higher ERC on average than 1291 random nonbinding sequences of the same length, ultimately concluding that while physical interactions are not the sole contributor to evolutionary covariation, they still contribute strongly enough to be detected.\n\nThese previous studies agreed that compensatory coevolution is not the sole force behind ERC but they came to differing conclusions as to how much it contributes. This study concludes that there is a detectable but weak contribution from physical interactions that is not strong enough to confidently predict which domains physically interact. This study also found that the contribution of physical interaction was limited to a minority of complexes despite the high power lent from using hundreds of species to calculate ERC; this inconsistent effect across complexes might explain why previous studies and this one found varying degrees of contribution since results could have depended on which complexes were chosen and which species were used. Among the complexes we found to have a physical coevolution component, there is no obvious reason why these specific complexes would exhibit stronger coevolution between physically interacting domains when compared to other complexes. We hypothesize that while compensatory coevolution is a known phenomenon (Gershoni et al., 2010; Juan et al., 2008), amino acid changes resulting from it are relatively rare and are unlikely to contribute greatly to the general ERC signal between co-functional proteins. In contrast, previous work finds evidence that relaxation of selective constraint can lead to drastic rate variation and hence a strong covariation signal (ERC) (Clark et al., 2013). Overall, variations in selective constraint, and other nonphysical forces, such as essentiality, expression level, codon adaptation, and network connectivity, seem to be the primary contributors to ERC. Indeed, the results of these forces are visible in the elevated ERC values of genetic pathways that do not physically interact (Figure 2).\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ERC</td>\n      <td>https://github.com/nclark-lab/erc/; copy archived at Clark and Little, 2023</td>\n      <td></td>\n      <td>See \u2018Calculating ERC\u2019</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>343 yeast amino acid sequences and trees</td>\n      <td>https://doi.org/10.1016/j.cell.2018.10.023</td>\n      <td>https://doi.org/10.6084/m9.figshare.5854692.v1</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Calculating ERC\n\nERC is calculated by correlating RERs between two gene trees using a Pearson correlation. The RER is the rate at which a branch on a gene tree changes compared to the genome-wide average and is calculated as described by Kowalczyk et al., 2019. The method limits comparisons to gene trees that share at least 15 species and requires that all trees have the same topology. Prior to correlation, the RERs are Winsorized, taking the three most extreme values and condensing them to the fourth. This reduces false positives that are due to single outliers skewing the correlation. After calculating the correlation between RERs for each gene pair, the correlation values are Fisher transformed using the equation\n\n$$\nftERC=arctan(correlation)\u2217\\sqrt{numberofbranches\u22123}\n$$\n\nThis allows for a direct comparison between gene pairs that do not have the same number of branches contributing.\n\nThe full ERC pipeline can be found at https://github.com/nclark-lab/erc/tree/main/physical_interaction_paper.\n\n### Complex and pathway ERC permutation test\n\nWe took the entire yeast complexome from the EMBL complex portal (Meldal et al., 2019) and curated yeast pathways from KEGG (Kanehisa et al., 2023) and YeastPathway (Cherry et al., 2012). These lists were then compared to our dataset and pared down to complexes/pathways that had greater than four members. This resulted in 617 protein complexes and 125 pathways.\n\nWe then ran 1000 permutations to find the significance of the ERC scores between complex/pathway members. The null distribution was generated by sampling the same number of random genes in the complex/pathway from the entire dataset. The average ERC from the complex/pathway was then compared to the null distribution to get a p-value.\n\n### Preparing the protein complexes\n\nFourteen complexes were chosen by searching for protein complexes within the EMBL yeast complex portal with crosslink, crosslink/mass spectrometry, or crystallographic data. Three additional complexes were added based on Jothi et al., 2006: mitochondrial F1 ATPase, SEC23/24 heterodimer, and the exportin CSE1P complexed with cargo. The physical interactions were collected from the literature sources for each complex .\n\nEach protein was subdivided into domains by running the amino acid sequence through interpro scan (Jones et al., 2014). New gene trees were generated for each domain using phangorn (Schliep, 2011), and ERC was run to calculate an all-domain-by-all-domain matrix. We generated domain-vs-domain ERC matrices for each of the 17 complexes that were used for all analyses.\n\n### Generating ROC curves\n\nROC curve analysis was performed using the PRROC package (Grau et al., 2015). First, the ERC matrices for each complex were turned into pairwise edge lists with columns [GENEA, GENEB, ERC, class] and ranked by ERC value. The positive class was defined as the physical interactions found in the primary reference for each complex and denoted with a \u20181\u2019. The negative class was any protein domain pair without annotated physical interactions, denoted with a \u20180\u2019.\n\nThe statistical significance of the ROC-AUC was determined by a one-tailed Mann\u2013Whitney U test, using the relationship between AUC and U defined by\n\n$$\nAUC\u00a0=\u00a0\\frac{U}{n_{0}\u2217\u00a0n_{1}}\n$$\n\nwhere n0 is the number of nonphysically interacting domains and n1 is the number of physically interacting domains.\n\nROC-AUC permutations were calculated by randomly shuffling the order of physical interactions within each complex ranked list 1000 times. The permuted AUC was calculated using the same pipeline as described above. The full study analysis was performed by taking the average from each of the 1000 permutations across all complexes.\n\n### Calculating proportional rank of physically interacting domain pairs versus all other domain pairs\n\nTo test how often ERC ranks the physical interactions higher than nonphysical, we compared each pair of proteins individually, where each protein\u2019s domains were only compared to one other protein\u2019s domains if they shared a physical interaction somewhere along the full protein. For example, in the COMA complex, the domains for OKP1 were only compared to the domains of AME1 because OKP1 does not share a physical interaction with either CTF19 or MCM21. The matrix was then ranked by ERC score. The proportional ranking of the physically interacting domain pair was calculated by:\n\n$$\n1\u2212\u00a0\\frac{1\u00a0\u2212\u00a0(rank\u00a0of\u00a0physical\u00a0interaction)}{1\u00a0\u2212\u00a0(total\u00a0number\u00a0of\u00a0pairs)}\n$$\n\nA score of 1 indicates the physically interacting domain pair is ranked first. A score of 0 indicates the domain pair with a physical interaction was ranked last. If the protein pair had more than one domain pair that had a physical interaction, the average proportional rank score was taken. The observed complex proportional rank score is the average of each protein\u2019s score .\n\nThe permutation p-value for the complex proportional rank score was calculated by randomly shuffling the ranking of the physical interaction(s) between two proteins 1000 times and calculating the proportional rank each time to generate a null distribution. The null distribution for the entire complex was calculated by randomly selecting a proportional rank value from the null distribution of each protein pair from the complex and averaging it. The observed complex average proportional rank was then compared to this null distribution to calculate the p-value.\n",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, https://ror.org/0243gzr89 Max Planck Institute for Biology T\u00fcbingen Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93333.3.sa0](https://doi.org/10.7554/eLife.93333.3.sa0)\n\nThis useful study seeks to address the importance of physical interaction between proteins in higher-order complexes for covariation of evolutionary rates at different sites in these interacting proteins. Following up on a previous analysis with a smaller dataset, the authors provide compelling evidence that the exact contribution of physical interactions, if any, remains difficult to quantify. The work will be of relevance to anyone interested in protein evolution.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93333.3.sa1](https://doi.org/10.7554/eLife.93333.3.sa1)\n\nSummary:\n\nIn the manuscript titled \"Coevolution due to physical interactions is not a major driving force behind evolutionary rate covariation\" by Little et al., explores the potential contribution of physical interaction between correlated evolutionary rates among gene pairs. They find that physical interaction is not the main driving of evolutionary rate covariation (ECR). This finding is similar to a previous report by Clark et al. (2012), Genome Research, wherein the authors stated that \"direct physical interaction is not required to produce ERC.\" The previous study used 18 Saccharomycotina yeast species, whereas the present study used 332 Saccharomycotina yeast species and 11 outgroup taxa. As a result, the present study is better positioned to evaluate the interplay between physical interaction and ECR more robustly.\n\nStrengths & Weaknesses:\n\nVarious analyses nicely support the authors' claims.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93333.3.sa2](https://doi.org/10.7554/eLife.93333.3.sa2)\n\nSummary:\n\nThe authors address an important outstanding question: what forces are the primary drivers of evolutionary rate covariation? Exploration of this topic is important because it is currently difficult to interpret the functional/mechanistic implications of evolutionary covariation. These analyses also speak to the predictive power (and limits) of evolutionary rate covariation. This study reinforces the existing paradigm that covariation is driven by a varied/mixed set of interaction-types that all fall under the umbrella explanation of 'co-functional interactions'.\n\nStrengths:\n\nVery smart experimental design that leverages individual protein domains for increased resolution.\n\nWeaknesses:\n\nNuanced and sometimes inconclusive results that are difficult to capture in a short title/abstract statement.\n\nEDIT: The authors have done a satisfactory job of honing their language to get the nuanced ideas across clearly. The added scholarship and theoretical discussion they added strengthen the impact of the manuscript. The revised edition addresses my concerns.\n",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4ca83286-3e7e-46b3-a436-d5a1a41bca37",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C1",
+      "claim": "Co-functional proteins tend to have rates of evolution that covary over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-functional proteins tend to have rates of evolution that covary over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract that sets up the study's premise.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "4435326b-67bb-42e8-a2f6-98b8ff5bacd0",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C2",
+      "claim": "Correlation between evolutionary rates can be measured over the branches of a phylogenetic tree through methods such as evolutionary rate covariation (ERC).",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation between evolutionary rates can be measured over the branches of a phylogenetic tree through methods such as evolutionary rate covariation (ERC), and then used to construct gene networks by the identification of proteins with functional interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the ERC method as established in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "6f3adf3d-464a-4f51-bd36-6b314c48e137",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C3",
+      "claim": "ERC can be used to construct gene networks by the identification of proteins with functional interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation between evolutionary rates can be measured over the branches of a phylogenetic tree through methods such as evolutionary rate covariation (ERC), and then used to construct gene networks by the identification of proteins with functional interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "States an application of ERC based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "166c9dbb-6334-41ed-98e6-58bbc8170909",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C4",
+      "claim": "The cause of correlation between evolutionary rates has been hypothesized to result from both compensatory coevolution at physical interfaces and nonphysical forces such as shared changes in selective pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The cause of this correlation has been hypothesized to result from both compensatory coevolution at physical interfaces and nonphysical forces such as shared changes in selective pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References existing hypotheses in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "21da9b12-10ba-4d5d-9323-48b21004fa74",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C5",
+      "claim": "There is no generalizable relationship between physical interaction and high ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no generalizable relationship between physical interaction and high ERC, although a few complexes ranked physical interactions higher than nonphysical interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on the data analysis presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "11094e5c-9327-41ff-ab58-8eb4cc082986",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C6",
+      "claim": "A few complexes ranked physical interactions higher than nonphysical interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no generalizable relationship between physical interaction and high ERC, although a few complexes ranked physical interactions higher than nonphysical interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "be89ad6d-03b1-4b82-827c-e8db04724f8f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C7",
+      "claim": "Coevolution due to physical interaction is weak but present in the signal captured by ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that coevolution due to physical interaction is weak, but present in the signal captured by ERC, and we hypothesize that the stronger signal instead comes from selective pressures on the protein as a whole and maintenance of the general function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "24f4efc1-8989-47bc-b791-f3503106c974",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C8",
+      "claim": "The stronger ERC signal comes from selective pressures on the protein as a whole and maintenance of the general function.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that coevolution due to physical interaction is weak, but present in the signal captured by ERC, and we hypothesize that the stronger signal instead comes from selective pressures on the protein as a whole and maintenance of the general function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "b2909167-e96d-4dea-9de2-bdb528bd7d8b",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C9",
+      "claim": "Some genes have rates that covary over time with those of other genes and tend to be functionally related.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been observed that some genes have rates that covary over time with those of other genes and that they tend to be functionally related (Clark et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "149a1f74-0b1e-40cc-a3b1-9fd29fa78a22",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C10",
+      "claim": "Evolutionary rate covariation (ERC) is a measure of correlation in relative evolutionary rates (RER).",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary rate covariation (ERC) is a measure of that correlation in relative evolutionary rates (RER) (Kowalczyk et al., 2019), which is the gene-specific evolutionary rate on a phylogenetic tree branch normalized by the genome-wide evolutionary rate on that branch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "63dce154-e0c4-49e6-8af0-5c8f80cdc31a",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C11",
+      "claim": "RER is the gene-specific evolutionary rate on a phylogenetic tree branch normalized by the genome-wide evolutionary rate on that branch.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary rate covariation (ERC) is a measure of that correlation in relative evolutionary rates (RER) (Kowalczyk et al., 2019), which is the gene-specific evolutionary rate on a phylogenetic tree branch normalized by the genome-wide evolutionary rate on that branch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of RER.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "438f7360-c088-40e9-b873-bcd0b4359824",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C12",
+      "claim": "Protein pairs that have high ERC values are often found to participate in shared cellular functions, such as in a metabolic pathway or meiosis or being in a protein complex together.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein pairs that have high ERC values (i.e., high rate covariation over time) are often found to participate in shared cellular functions, such as in a metabolic pathway (Findlay et al., 2014; Steenwyk et al., 2021; Steenwyk et al., 2022) or meiosis (Clark et al., 2013) or being in a protein complex together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "17c4b132-9067-4d65-a265-29405ae31577",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C13",
+      "claim": "Physical interaction is not required for co-functional proteins to have correlated evolutionary rates, such as between the proteins of a metabolic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that physical interaction is not required for co-functional proteins to have correlated evolutionary rates, such as between the proteins of a metabolic pathway (Clark et al., 2012; Juan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "0f008960-7ef2-4f3e-bf12-2bb2ea6d79cd",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C14",
+      "claim": "It is unclear whether the correlation between physically interacting proteins is strengthened by coevolution at their physical interface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is still unclear whether the correlation between physically interacting proteins is strengthened by coevolution at their physical interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "4ebcddfc-8d35-47a1-99a2-93cbefa9822b",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C15",
+      "claim": "Many co-functional proteins physically interact, such as those in protein complexes and enzyme\u2013substrate interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Many co-functional proteins physically interact, such as those in protein complexes and enzyme\u2013substrate interactions (Gershoni et al., 2010; Fraser et al., 2004; Hakes et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "2d34c099-2b12-4f6b-83d5-d36ee048f2c9",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C16",
+      "claim": "SMC5 and SMC6 form a complex and have a shared function in the spatial organization of chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, SMC5 and SMC6 form a complex and have a shared function in the spatial organization of chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific example provided in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "1cdf05dc-40d0-4956-b6df-84345cfaf32c",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C17",
+      "claim": "SMC5 and SMC6 have similar variation in rates of evolution across the branches of a yeast phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "They also have similar variation in rates of evolution across the branches of a yeast phylogeny (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "17b0cd3c-b0ae-4f5d-a112-e3bd41ed925a",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C18",
+      "claim": "SMC5 and SMC6 have a Fisher transformed correlation coefficient (ftERC) of 24.944.",
+      "claim_type": "EXPLICIT",
+      "source": "Their strong rate covariation is quantified as a Fisher transformed correlation coefficient (ftERC = 24.944).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific data point from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "9b35e4d1-f3fe-4fe2-a6a8-d66c8b4eb622",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C19",
+      "claim": "The ftERC value for SMC5-SMC6 is highly elevated because the expectation for noncorrelated pairs is zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the statistical corrections performed, this value for SMC5-SMC6 is highly elevated because the expectation for noncorrelated pairs is zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the interpretation of the ftERC value.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "cc4135a2-4598-4866-9bc1-4d227ed7ed5b",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C20",
+      "claim": "There is a negative relationship between gene expression and rate of protein evolution where genes that are highly expressed generally have slower rates of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a well-accepted negative relationship between gene expression and rate of protein evolution where genes that are highly expressed generally have slower rates of evolution (Drummond et al., 2006; Drummond et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "3c685937-17d2-45e1-9229-a8261be26fb6",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C21",
+      "claim": "Cope et al., 2020 found that there is a weak relationship between both gene expression and the number of interactions a protein has with the coevolution of expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Cope et al., 2020 found that there is a weak relationship between both gene expression and the number of interactions a protein has with the coevolution of expression level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "24d008e9-a637-40f3-9fa8-113a322a1210",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C22",
+      "claim": "Cope et al., 2020 found a strong relationship between proteins that physically interact and the coevolution of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, they found a strong relationship between proteins that physically interact and the coevolution of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "eb961f87-b39c-48e9-a8f5-97995e7ba41a",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C23",
+      "claim": "Previous studies have weighed whether physical coevolution is a strong contributor to rate covariation over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have weighed whether physical coevolution is a strong contributor to rate covariation over time (Hakes et al., 2007; Jothi et al., 2006; Kann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references previous work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "eacb9857-f6e0-45c7-abcc-1a037564806f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C24",
+      "claim": "The conclusions drawn from previous studies on physical coevolution are variable and, in some cases, contradictory.",
+      "claim_type": "EXPLICIT",
+      "source": "The conclusions drawn from these studies are variable and, in some cases, contradictory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "3486a0de-30be-4a01-9c23-dc1e1d6561ee",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C25",
+      "claim": "Previous studies had differing sample sizes and used different protein units to examine the physical interaction, such as surface residues, the binding neighborhood, and protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the studies had differing sample sizes and used different protein units to examine the physical interaction, such as surface residues (Hakes et al., 2007), the binding neighborhood (Kann et al., 2009), and protein domains (Jothi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes methodological differences in previous studies with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "92995782-fb07-45eb-a985-de62674d59e6",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C26",
+      "claim": "The study tests the contribution of compensatory physical coevolution to rate covariation by measuring ERC on a large dataset of 343 yeast species.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we test the contribution of compensatory physical coevolution to rate covariation by measuring ERC on a large dataset of 343 yeast species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study's methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "2d6c156c-32fa-433f-97cd-edc04a0e5c8e",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C27",
+      "claim": "The study asks whether physically interacting domains have higher ERC than domains of the same proteins that do not physically interact.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we ask whether physically interacting domains have higher ERC than domains of the same proteins that do not physically interact (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the specific research question of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "d62fa2d6-daff-4c31-be6f-741ba4ae12df",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C28",
+      "claim": "By looking only within complexes rather than across all proteins with annotated physical interactions, the study normalizes signals from functional associations.",
+      "claim_type": "EXPLICIT",
+      "source": "By looking only within complexes rather than across all proteins with annotated physical interactions, we normalize signals from functional associations, assuming that proteins in the same complex will be under the same functional constraints and, therefore, the same selective pressures and other nonphysical forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "47eef883-0752-408a-9471-454c68cdb2f4",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C29",
+      "claim": "The study shows a weak contribution from physical coevolution and poor predictability of physical interactions based on ERC scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, we show a weak contribution from physical coevolution and, therefore, poor predictability of physical interactions based on ERC scores, regardless of complex size or average complex ERC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "8d015cb9-f33e-4f47-b20e-d40374681645",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C30",
+      "claim": "The ranking of physically interacting domains across the complex has little generalizability in predicting which domains or proteins physically interact.",
+      "claim_type": "EXPLICIT",
+      "source": "We further show that the ranking of physically interacting domains across the complex has little generalizability in predicting which domains or proteins physically interact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "e22bbd42-17de-4cd4-ad78-a6a678b9a247",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C31",
+      "claim": "The dataset used in the study consists of 343 evolutionarily distant yeast species.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the discrepancy between contributions to ERC signal from co-function and physical interaction, we used a dataset of 343 evolutionarily distant yeast species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "afcc3bbd-3bf0-4622-ba04-c49f2f550fe8",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C32",
+      "claim": "332 of the species in the dataset are Saccharomycotina with 11 closely related outgroup species.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 332 of the species are Saccharomycotina with 11 closely related outgroup species providing as much evolutionary divergence as between humans to roundworms (Shen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the dataset with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "16d71cf9-9389-4465-a5a4-3190fda4af7f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C33",
+      "claim": "The dataset provides as much evolutionary divergence as between humans to roundworms.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 332 of the species are Saccharomycotina with 11 closely related outgroup species providing as much evolutionary divergence as between humans to roundworms (Shen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "1c406b69-d386-413e-9c15-c2ee1569747d",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C34",
+      "claim": "The dataset started with 12,552 orthologous genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This dataset started with 12,552 orthologous genes, which we parsed into annotated pathways from KEGG (Kanehisa et al., 2023) and YeastPathway (Cherry et al., 2012) and protein complexes from the EMBL-EBI yeast complex portal (Meldal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "0eae0cca-1430-4ed2-ae69-1482203e3a57",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C35",
+      "claim": "ERC was calculated for all pairs of the 12,552 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "ERC was calculated for all pairs of the 12,552 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "e4abebb1-c61d-48ee-8093-7d42439b197f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C36",
+      "claim": "For each pair, the correlation is Fisher transformed to normalize for the number of shared branches that contribute to the correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "For each pair, the correlation is Fisher transformed to normalize for the number of shared branches that contribute to the correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "9f5599ad-5f26-4825-8f8d-52ed1a2d109e",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C37",
+      "claim": "Fisher transformation is necessary to reduce false positives that have high correlation solely due to a small number of data points.",
+      "claim_type": "EXPLICIT",
+      "source": "This normalization is necessary to reduce false positives that have high correlation solely due to a small number of data points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the Fisher transformation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "8a811ff4-9372-4a6e-b047-7d55ea21f39c",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C38",
+      "claim": "Fisher transformation allows for direct comparison of ERC between gene pairs that have differing numbers of branches contributing to the score.",
+      "claim_type": "EXPLICIT",
+      "source": "This normalization also allows for direct comparison of ERC between gene pairs that have differing numbers of branches contributing to the score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains another benefit of the Fisher transformation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "8c8a0f89-d8d7-4601-8f67-64e902193baf",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C39",
+      "claim": "ERC values for pathways and complexes were both high and had similar distributions after accounting for their sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, ERC values for pathways and complexes were both high and had similar distributions after accounting for their sizes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "880d3134-c8a7-4d88-be7a-8354e2092f39",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C40",
+      "claim": "A majority of complexes (346 of 617) had mean ERC values significantly greater (p<0.05) than a null distribution consisting of random size-matched protein sets.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of complexes (346 of 617) and pathways (109 of 125) had mean ERC values significantly greater (p<0.05) than a null distribution consisting of random size-matched protein sets (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "780f22e3-9949-434e-80ad-490d9522bd7f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C41",
+      "claim": "A majority of pathways (109 of 125) had mean ERC values significantly greater (p<0.05) than a null distribution consisting of random size-matched protein sets.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of complexes (346 of 617) and pathways (109 of 125) had mean ERC values significantly greater (p<0.05) than a null distribution consisting of random size-matched protein sets (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "50834bf8-5033-47d6-98e9-9ab40fa3dd27",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C42",
+      "claim": "Protein complexes have higher mean ERC scores (median 5.366) than the pathways (median 4.597).",
+      "claim_type": "EXPLICIT",
+      "source": "While protein complexes have higher mean ERC scores (median 5.366) than the pathways (median 4.597), the members of a given complex are also co-functional, making interpretation of the relative contribution of physical interactions to the average ERC score difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of median values from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "4688ed95-2d13-463d-9a80-68719530defa",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C43",
+      "claim": "The members of a given complex are co-functional, making interpretation of the relative contribution of physical interactions to the average ERC score difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "While protein complexes have higher mean ERC scores (median 5.366) than the pathways (median 4.597), the members of a given complex are also co-functional, making interpretation of the relative contribution of physical interactions to the average ERC score difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "37458a89-4caa-4fdc-8b82-586100563b64",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C44",
+      "claim": "The SLIK protein complex has significantly high average ERC values (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate this difficulty at a more granular level, we present two examples, the SLIK protein complex and the motor protein pathway, both of which have significantly high average ERC values (p<0.001; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "79889467-58c2-4e36-ad6b-b7a22fc137a5",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C45",
+      "claim": "The motor protein pathway has significantly high average ERC values (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate this difficulty at a more granular level, we present two examples, the SLIK protein complex and the motor protein pathway, both of which have significantly high average ERC values (p<0.001; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "ce5f9d23-379a-4c06-be59-8cc8605d9ed0",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C46",
+      "claim": "When the ERC values for all physical interactions within the motor protein pathway are removed, it continues to have a significantly high average ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that when the ERC values for all physical interactions within the motor protein pathway are removed, it continues to have a significantly high average ERC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "49b05852-e1b3-465c-bad1-1a53b8b830f2",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C47",
+      "claim": "The highest scoring protein pair in the SLIK complex, TAF5 and TAF6, physically interact and have a highly elevated ERC score (in top 1% genome-wide).",
+      "claim_type": "EXPLICIT",
+      "source": "While the highest scoring protein pair in the SLIK complex, TAF5 and TAF6, physically interact and have a highly elevated ERC score (in top 1% genome-wide; Figure 2\u2014figure supplement 2), the highest scoring pair in the motor protein pathway, TUB3 and TPM1, also have a highly elevated ERC score but do not physically interact (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "671fab06-a29e-4464-990a-522960b4edc0",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C48",
+      "claim": "The highest scoring pair in the motor protein pathway, TUB3 and TPM1, have a highly elevated ERC score but do not physically interact.",
+      "claim_type": "EXPLICIT",
+      "source": "While the highest scoring protein pair in the SLIK complex, TAF5 and TAF6, physically interact and have a highly elevated ERC score (in top 1% genome-wide; Figure 2\u2014figure supplement 2), the highest scoring pair in the motor protein pathway, TUB3 and TPM1, also have a highly elevated ERC score but do not physically interact (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "fe5a3c7a-70e3-49db-94e7-a05bd249c312",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C49",
+      "claim": "The study selected complexes whose members had well-defined domain boundaries and annotated physical interactions between complex members.",
+      "claim_type": "EXPLICIT",
+      "source": "To maintain the highest level of confidence in the analyses, we only selected complexes whose members had well-defined domain boundaries and annotated physical interactions between complex members ('Methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria for the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "d1cfdb49-69fb-4fe4-83ac-8c0265cb4738",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C50",
+      "claim": "The dataset resulted in 14 complexes spanning functions from transcription and translation to autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a dataset of 14 complexes spanning functions from transcription and translation to autophagosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the resulting dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "4daaef1f-3042-4838-bff7-f232c2c63f28",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C51",
+      "claim": "Three complexes from Jothi et al., 2006 were added: mitochondrial F1-ATPase, SEC23/24 heterodimer, and exportin CSE1 with substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "We also added three complexes from Jothi et al., 2006: mitochondrial F1-ATPase, SEC23/24 heterodimer, and exportin CSE1 with substrate (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes additional complexes added to the dataset.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "7eb402e4-fae8-4a68-8bb2-59c541a1a068",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C52",
+      "claim": "Of the 17 complexes, 12 had higher average ERC for the physically interacting than the nonphysically interacting domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 17 complexes, 12 had higher average ERC for the physically interacting than the nonphysically interacting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "3e5a8a1c-c0ad-4022-91ca-6be55b73a699",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C53",
+      "claim": "Of the 17 complexes, 12 had an ROC-AUC > 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 17 complexes, 12 had an ROC-AUC > 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the ROC analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "adaacf12-b559-4711-8aca-6f5521da70c3",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C54",
+      "claim": "12 complexes having an ROC-AUC > 0.5 is a significant excess (binomial test, p=0.0245).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the random expectation would be that half would exceed 0.5, this is a significant excess (binomial test, p=0.0245).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical test result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "7bfa1376-f9f4-4c77-9b5d-560490c9d088",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C55",
+      "claim": "Five complexes had AUCs > 0.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, five complexes had AUCs > 0.7 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "d9cb0caa-585d-45e8-b579-909653ff921d",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C56",
+      "claim": "Four complexes had their physically interacting domains ranked significantly higher than noninteracting domains at an alpha of 5% (one-tailed Mann\u2013Whitney U test).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, four complexes had their physically interacting domains ranked significantly higher than noninteracting domains at an alpha of 5% (one-tailed Mann\u2013Whitney U test), which is also a significant excess of complexes overall (binomial test, p=0.0012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "9bb723fd-24ab-4d2d-b275-7d8611e2e46a",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C57",
+      "claim": "Four complexes having significantly higher rankings is a significant excess of complexes overall (binomial test, p=0.0012).",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, four complexes had their physically interacting domains ranked significantly higher than noninteracting domains at an alpha of 5% (one-tailed Mann\u2013Whitney U test), which is also a significant excess of complexes overall (binomial test, p=0.0012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical test result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "28f77e0f-d65a-4607-b301-ccc415287648",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C58",
+      "claim": "The true average ROC-AUC from the 17 complexes is 0.596.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the true average ROC-AUC from the 17 complexes (0.596) to the permuted distribution of average ROC-AUCs, which resulted in a permutation p-value of 0.08.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "f1988c6f-cbb1-4c41-af02-3dda4df16480",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C59",
+      "claim": "The comparison of the true average ROC-AUC to the permuted distribution resulted in a permutation p-value of 0.08.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the true average ROC-AUC from the 17 complexes (0.596) to the permuted distribution of average ROC-AUCs, which resulted in a permutation p-value of 0.08.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical test result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "5a0b8d5a-ec60-4882-ba2b-37ffb8cbeeec",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C60",
+      "claim": "The lack of significance in the global permutation test suggests that the global signal for the contribution of physical coevolution to ERC is weak enough that it can be masked by the majority of complexes that show no evidence in favor.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of significance in the global permutation test suggests that the global signal for the contribution of physical coevolution to ERC is weak enough that it can be masked by the majority of complexes that show no evidence in favor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "289aab1b-37a9-4ccd-bdc1-4af4dc9df7bb",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C61",
+      "claim": "The complexes had individual protein pair proportional rank values spanning the entire range of 0\u20131 without clustering at either extreme.",
+      "claim_type": "EXPLICIT",
+      "source": "The complexes had individual protein pair proportional rank values spanning the entire range of 0\u20131 without clustering at either extreme (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "9f635e51-0718-4f80-8c43-864da9957960",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C62",
+      "claim": "Even within the same complex, there is a wide variation in how strongly the physical interaction correlates with high ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that even within the same complex, there is a wide variation in how strongly the physical interaction correlates with high ERC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "26c535f0-401f-4fb6-a038-8ab12321a19b",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C63",
+      "claim": "At a permutation p-value of 0.01, only two complexes had significantly high proportional rank: CUL8-MMS1-MMS22-CTF4 E3 ubiquitin ligase and exportin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "At a permutation p-value of 0.01, only two complexes had significantly high proportional rank, indicating a strong contribution from physical interactions: CUL8-MMS1-MMS22-CTF4 E3 ubiquitin ligase and exportin complexes (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "cb84148b-11b4-4264-b758-6b642de3daf4",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C64",
+      "claim": "Three additional complexes were significant at a permutation p-value of 0.05: MCM, ORC, and ESCRT-I.",
+      "claim_type": "EXPLICIT",
+      "source": "Three additional complexes were significant at a permutation p-value of 0.05: MCM, ORC, and ESCRT-I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "2f3fd856-e3ca-4998-9004-568c428eaf23",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C65",
+      "claim": "Over two-thirds of the complexes have no significant contribution from physical interactions to the ERC signal.",
+      "claim_type": "EXPLICIT",
+      "source": "This leaves over two-thirds of the complexes with no significant contribution from physical interactions to the ERC signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the statistical findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "bd0204de-2573-4525-90d4-261d913668ce",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C66",
+      "claim": "Some complexes ranked the physically interacting domains significantly higher in the proportional rank test, suggesting that compensatory co-evolution does contribute to the ERC signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that some of the complexes ranked the physically interacting domains significantly higher in the proportional rank test, it suggests that compensatory co-evolution does contribute to the ERC signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "67e5aab8-39f7-4376-b66a-6469de4eb8ae",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C67",
+      "claim": "The inconsistency of the ranking indicates that there is not a consistent enough signal to confidently call an interaction physical or not.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the inconsistency of the ranking indicates that there is not a consistent enough signal to confidently call an interaction physical or not and would be of little value to an experimentalist wanting to infer interacting domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "9f44fc58-463c-45da-b076-b4b4e0d43582",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C68",
+      "claim": "The contribution from physical interactions on the ERC signal is not strong enough to determine whether a high-ranking protein pair is associated due to physical interaction instead of nonphysical forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the contribution from physical interactions on the ERC signal is not strong enough to determine whether a high-ranking protein pair is associated due to physical interaction instead of nonphysical forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "59619a31-f13d-4e99-915b-68ef303a82ee",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C69",
+      "claim": "Upon the addition of hundreds of species to the analysis, the study was able to look at evidence of compensatory coevolution with increased power at a number of scales: whole protein, domains within complexes, and domains between individual protein pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon the addition of hundreds of species to the analysis, we were able to look at evidence of compensatory coevolution with increased power at a number of scales: whole protein, domains within complexes, and domains between individual protein pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study's approach and its advantages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "7f7a56df-2140-40a9-82b4-3ada3b338428",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C70",
+      "claim": "Using entire domains as a unit of study, rather than amino acids at physical interfaces, captures structural changes that could still impact the binding and would not be captured by just examining the binding residues themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that using entire domains as a unit of study, rather than amino acids at physical interfaces, captures structural changes that could still impact the binding and would not be captured by just examining the binding residues themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological rationale proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "6503f328-464e-4c55-bd3a-b45fb942b9aa",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C71",
+      "claim": "Compensatory coevolution due to physical interaction contributes to ERC but only in some complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that compensatory coevolution due to physical interaction contributes to ERC but only in some complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "cf4cecff-9527-46a7-9c07-5be101c4a1c4",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C72",
+      "claim": "Looking across all complexes in the study, a proportion higher than random chance showed elevated ERC between interacting domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking across all complexes in our study, a proportion higher than random chance showed elevated ERC between interacting domains; this result was reflected in 12 of the 17 complexes with ROC-AUCs over 0.5 and the 4 complexes with individually significant rankings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "a09aba28-383f-4f15-aa3e-cf6a5795caed",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C73",
+      "claim": "When examining only single protein pairs, a similar excess of high-scoring physically interacting domains was found.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when we examined only single protein pairs, we found a similar excess of high-scoring physically interacting domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "015ce838-f8da-469f-b634-5a212e31f308",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C74",
+      "claim": "There is a non-negligible signal from physical interaction contributing to ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that there is a non-negligible signal from physical interaction contributing to ERC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "481232fe-e880-46ed-8734-c0e678bb3fe7",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C75",
+      "claim": "Evidence for physical coevolution was tempered by a global permutation test, which did not reach significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for physical coevolution however was tempered by a global permutation test, which did not reach significance, indicating that this inference is sensitive to approach and further underlines the weak contribution of physical coevolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "a61c6743-871b-4e37-8dbf-0fe1cbba245d",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C76",
+      "claim": "The practical application of a tool such as ERC to provide actionable hypotheses for physically interacting domains is not advisable, given the uncertainty as to which complexes would have high ERC between physically interacting domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of this weak contribution and inconsistency between individual protein complexes, the practical application of a tool such as ERC to provide actionable hypotheses for physically interacting domains is not advisable, given the uncertainty as to which complexes would have high ERC between physically interacting domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the practical utility of ERC.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "4600d4bf-5697-4d8c-9d21-8c1d13f3cdb3",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C77",
+      "claim": "Hakes et al., 2007 found no evidence that the physical interaction interface between two proteins had a greater correlation of evolutionary rates than the whole protein or just surface residues.",
+      "claim_type": "EXPLICIT",
+      "source": "On one extreme, Hakes et al., 2007 found no evidence that the physical interaction interface between two proteins had a greater correlation of evolutionary rates than the whole protein or just surface residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "b16a083a-bdfb-4b3e-b623-9bd8a22f11ea",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C78",
+      "claim": "Hakes et al., 2007 examined surface and potentially interacting residues across 32 complexes in at least 12 eukaryotic species for each complex using the Saccharomyces cerevisiae sequence as the BLAST query.",
+      "claim_type": "EXPLICIT",
+      "source": "They concluded this after examining surface and potentially interacting residues across 32 complexes in at least 12 eukaryotic species for each complex using the Saccharomyces cerevisiae sequence as the BLAST query.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "b91fde8d-eb12-4013-ad89-8e376f1ca57f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C79",
+      "claim": "Jothi et al., 2006 concluded that there was a strong enough signal to predict which domains of a protein complex interact with significant accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other extreme, Jothi et al., 2006 concluded that there was a strong enough signal to predict which domains of a protein complex interact with significant accuracy; however, their analysis was limited to just three protein complexes with orthologs in at least 10 of 93 eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "d2e1670e-8af1-4200-b5dd-98f62100c93a",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C80",
+      "claim": "Jothi et al., 2006's analysis was limited to just three protein complexes with orthologs in at least 10 of 93 eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other extreme, Jothi et al., 2006 concluded that there was a strong enough signal to predict which domains of a protein complex interact with significant accuracy; however, their analysis was limited to just three protein complexes with orthologs in at least 10 of 93 eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the limitations of a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "135e8855-effc-4e15-9b95-6b0bf781e7f5",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C81",
+      "claim": "The study included complexes from Jothi et al., 2006 and achieved similar rankings of the physically interacting domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of their conclusions, we included their complexes in our own study and achieved similar rankings of the physically interacting domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a comparison with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "62b649cd-f054-4046-a77f-c01125ec10bc",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C82",
+      "claim": "Only one of Jothi et al., 2006's complexes was statistically significant in the current study's analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only one of their complexes was statistically significant in our analysis that we attribute to a lack of power given that one of the complexes only had one physically interacting domain pair out of 24 pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the current study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "b23913ca-29a3-4d3a-9295-6022ba3a3b61",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C83",
+      "claim": "Kann et al., 2009 reached a similar conclusion to the current study using 70 bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Kann et al., 2009 reached a similar conclusion to our study using 70 bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "35800d17-87b0-47ce-b637-832b2b40a87d",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C84",
+      "claim": "Kann et al., 2009 found that binding neighborhoods from 26 interacting pairs have a higher ERC on average than 1291 random nonbinding sequences of the same length.",
+      "claim_type": "EXPLICIT",
+      "source": "They found that binding neighborhoods from 26 interacting pairs have a higher ERC on average than 1291 random nonbinding sequences of the same length, ultimately concluding that while physical interactions are not the sole contributor to evolutionary covariation, they still contribute strongly enough to be detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "47da90a4-fe11-4925-8b33-ae8a37cda53f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C85",
+      "claim": "Previous studies agreed that compensatory coevolution is not the sole force behind ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "These previous studies agreed that compensatory coevolution is not the sole force behind ERC but they came to differing conclusions as to how much it contributes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "24fc819f-6e3c-4f2a-96ce-325b0fbb8366",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C86",
+      "claim": "The current study concludes that there is a detectable but weak contribution from physical interactions that is not strong enough to confidently predict which domains physically interact.",
+      "claim_type": "EXPLICIT",
+      "source": "This study concludes that there is a detectable but weak contribution from physical interactions that is not strong enough to confidently predict which domains physically interact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion of the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "5cdd0b33-d92b-4542-b9d9-a1269bde9685",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C87",
+      "claim": "The contribution of physical interaction was limited to a minority of complexes despite the high power lent from using hundreds of species to calculate ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "This study also found that the contribution of physical interaction was limited to a minority of complexes despite the high power lent from using hundreds of species to calculate ERC; this inconsistent effect across complexes might explain why previous studies and this one found varying degrees of contribution since results could have depended on which complexes were chosen and which species were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding and interpretation from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "748f2fc9-6ac8-4900-af7f-362c885437ef",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C88",
+      "claim": "Among the complexes found to have a physical coevolution component, there is no obvious reason why these specific complexes would exhibit stronger coevolution between physically interacting domains when compared to other complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the complexes we found to have a physical coevolution component, there is no obvious reason why these specific complexes would exhibit stronger coevolution between physically interacting domains when compared to other complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "8745b20e-1dcf-4464-8ef5-2264fef301b8",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C89",
+      "claim": "While compensatory coevolution is a known phenomenon, amino acid changes resulting from it are relatively rare and are unlikely to contribute greatly to the general ERC signal between co-functional proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that while compensatory coevolution is a known phenomenon (Gershoni et al., 2010; Juan et al., 2008), amino acid changes resulting from it are relatively rare and are unlikely to contribute greatly to the general ERC signal between co-functional proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors with supporting citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "3d677362-126e-41c0-8bb2-ded1fa428329",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C90",
+      "claim": "Previous work finds evidence that relaxation of selective constraint can lead to drastic rate variation and hence a strong covariation signal (ERC).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, previous work finds evidence that relaxation of selective constraint can lead to drastic rate variation and hence a strong covariation signal (ERC) (Clark et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "3b866a68-f226-4b38-b444-e7d94025ccb0",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C91",
+      "claim": "Variations in selective constraint, and other nonphysical forces, such as essentiality, expression level, codon adaptation, and network connectivity, seem to be the primary contributors to ERC.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, variations in selective constraint, and other nonphysical forces, such as essentiality, expression level, codon adaptation, and network connectivity, seem to be the primary contributors to ERC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "7617ceb1-1a7e-4235-931b-cdd365f05332",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C92",
+      "claim": "The results of nonphysical forces are visible in the elevated ERC values of genetic pathways that do not physically interact.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the results of these forces are visible in the elevated ERC values of genetic pathways that do not physically interact (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "3dcb00b4-6d9a-44db-8ba5-e4e662bff67f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C93",
+      "claim": "ERC is calculated by correlating RERs between two gene trees using a Pearson correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "ERC is calculated by correlating RERs between two gene trees using a Pearson correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ERC calculation method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "c5fe6d5f-cde0-4622-a187-67a0d62b1e15",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C94",
+      "claim": "The RER is the rate at which a branch on a gene tree changes compared to the genome-wide average and is calculated as described by Kowalczyk et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The RER is the rate at which a branch on a gene tree changes compared to the genome-wide average and is calculated as described by Kowalczyk et al., 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the RER calculation with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "7196ebb3-0ab4-4cc3-8106-e5f9d2d5d781",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C95",
+      "claim": "The method limits comparisons to gene trees that share at least 15 species and requires that all trees have the same topology.",
+      "claim_type": "EXPLICIT",
+      "source": "The method limits comparisons to gene trees that share at least 15 species and requires that all trees have the same topology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes methodological constraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "10d142cb-0e5a-4565-8d6e-95d5bf35cb9c",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C96",
+      "claim": "Prior to correlation, the RERs are Winsorized, taking the three most extreme values and condensing them to the fourth.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to correlation, the RERs are Winsorized, taking the three most extreme values and condensing them to the fourth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a data processing step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "56b06e12-adad-4d08-be91-f7bba2f469af",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "claim_id": "C97",
+      "claim": "Winsorization reduces false positives that are due to single outliers skewing the correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduces false positives that are due to single outliers skewing the correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for Winsorization.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Co-functional proteins exhibit evolutionary rate covariation (ERC), which measures correlation in relative evolutionary rates (RER) across phylogenetic branches. Protein pairs with high ERC values are often functionally related, participating in shared cellular functions such as metabolic pathways, meiosis, or protein complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C9-C12 establish the foundational concept of ERC as a measure of evolutionary rate correlation among co-functional proteins. These claims are well-supported by citations to established literature and represent accepted knowledge in the field, providing the conceptual framework for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The relative contributions of physical interaction (compensatory coevolution at interfaces) versus nonphysical forces (shared selective pressures) to ERC remain unclear, with previous studies reaching variable and sometimes contradictory conclusions due to differing methodologies and sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C13-C15, and C20-C25 accurately summarize the state of prior knowledge and identify the research gap. The characterization of previous literature as contradictory is supported by appropriate citations, establishing the motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "846ed8fb-4383-44fd-b719-01bbdc1d614f",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study analyzed 343 yeast species (332 Saccharomycotina plus 11 outgroups) with 12,552 orthologous genes, focusing on 17 protein complexes with well-defined domain boundaries and annotated physical interactions to test whether physically interacting domains have higher ERC than non-interacting domains within the same complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C31-C35, and C49-C51 describe the study design and dataset. The methodology is clearly described with appropriate sample sizes and selection criteria. The experimental design of comparing domains within complexes to control for functional constraints is sound and addresses the research question effectively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ERC was calculated using Pearson correlation of RERs between gene trees, with Fisher transformation applied to normalize for the number of shared branches and Winsorization to reduce false positives from outliers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 and C93-C97 describe the computational methodology for ERC calculation. The statistical procedures (Fisher transformation, Winsorization) are appropriate and well-justified for the analysis. The methods are clearly described with proper citations and rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both protein complexes and pathways showed elevated ERC values compared to random protein sets (346/617 complexes and 109/125 pathways with p<0.05), with complexes having slightly higher median ERC (5.366) than pathways (4.597). However, high ERC scores were observed for both physically interacting pairs (e.g., TAF5-TAF6 in SLIK complex) and non-interacting pairs (e.g., TUB3-TPM1 in motor protein pathway), making it difficult to attribute ERC signal specifically to physical interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C48 present the initial comparative analysis between complexes and pathways. The statistical tests are appropriate (permutation tests with p<0.05), sample sizes are adequate, and the examples effectively illustrate the difficulty in distinguishing physical from functional contributions to ERC. The data support the conclusion that co-functionality confounds interpretation of physical interaction contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "a0c090e8-54f9-4487-a6a7-9941d3c50f42",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among 17 protein complexes analyzed at the domain level, 12 had ROC-AUC > 0.5 (binomial test p=0.0245) and 4 had significantly higher rankings for physically interacting domains (Mann-Whitney U test, \u03b1=0.05; binomial test p=0.0012), indicating a statistically significant but modest tendency for physically interacting domains to have higher ERC than non-interacting domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 present the ROC analysis results with appropriate statistical tests. The binomial tests correctly assess whether the observed proportions exceed random expectation. The use of ROC-AUC and Mann-Whitney U tests is appropriate for ranking analysis. The statistical significance is properly reported, though the effect sizes are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "71f8b854-a013-4dc5-b789-0ff46251b59e",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A global permutation test comparing the average ROC-AUC (0.596) across all 17 complexes to a permuted null distribution yielded p=0.08, failing to reach statistical significance and suggesting that the global signal for physical coevolution contribution to ERC is weak and can be masked by complexes showing no evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 present a critical global test that tempers the individual complex findings. The permutation test is appropriately designed and executed. The p-value of 0.08 correctly fails to reach conventional significance thresholds (0.05), and the interpretation that this indicates a weak global signal is reasonable. This result provides important context for the more positive findings from individual tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "ecb4c10d-9f88-487b-bb5f-8806e2265816",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of proportional ranks for physically interacting domain pairs within individual protein pairs showed wide variation (spanning 0-1 range), with only 2 complexes showing significantly high proportional rank at p<0.01 (CUL8-MMS1-MMS22-CTF4 E3 ubiquitin ligase and exportin) and 3 additional at p<0.05 (MCM, ORC, ESCRT-I), leaving over two-thirds of complexes with no significant contribution from physical interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 present the proportional rank analysis with appropriate permutation tests. The finding that only 5/17 complexes show significant effects at p<0.05 is clearly reported. The wide variation in proportional ranks (0-1 range) is well-documented in Figure 5. The statistical approach is sound and the interpretation that most complexes lack significant physical interaction signal is justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study concludes there is no generalizable relationship between physical interaction and high ERC, though a few complexes show elevated ERC for physical interactions. Physical coevolution contributes a detectable but weak signal to ERC that is inconsistent across complexes and insufficient for confidently predicting physical interactions, making ERC unsuitable for providing actionable hypotheses about physically interacting domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C29-C30, and C66-C68, C71-C76 present the main conclusions. These are well-supported by the multiple lines of evidence: (1) 12/17 complexes with ROC-AUC>0.5 shows a modest excess, (2) global permutation test p=0.08 fails significance, (3) only 5/17 complexes significant in proportional rank test, (4) wide variation within complexes. The conclusion that physical coevolution is 'weak but present' is appropriately nuanced and supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "34b7c3e1-3873-4ac5-8bec-2f89b9097c54",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors hypothesize that the stronger ERC signal comes from selective pressures on proteins as a whole and maintenance of general function, with nonphysical forces (selective constraint variation, essentiality, expression level, codon adaptation, network connectivity) being the primary contributors to ERC, as evidenced by elevated ERC in non-physically interacting pathway proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8, C89-C92 present a hypothesis about the primary drivers of ERC. While the hypothesis is reasonable and supported by the observation that pathways without physical interactions show elevated ERC (C92), this remains speculative. The study demonstrates that physical interactions contribute weakly but does not directly test the relative contributions of the various nonphysical forces listed. Additional experiments would be needed to validate this hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The current study's findings are compared to previous work: Hakes et al. (2007) found no evidence for physical interface contribution, Jothi et al. (2006) concluded strong predictive signal (though limited to 3 complexes), and Kann et al. (2009) reached similar conclusions to the current study. The current study concludes the contribution is detectable but weak and limited to a minority of complexes, potentially explaining the variability in previous findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C88 provide appropriate context by comparing to prior work. The citations appear accurate based on the descriptions provided. The reanalysis of Jothi et al.'s complexes (C81-C82) provides direct validation, finding similar rankings but only 1/3 reaching significance, which the authors attribute to statistical power issues. The synthesis that inconsistent effects across complexes may explain variable prior conclusions (C87) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "44cf9169-12b9-4d72-92a0-ff0e9ee287b1",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study's approach of using hundreds of species and analyzing entire domains rather than just interface residues provides increased statistical power and captures structural changes that could impact binding beyond just the binding residues themselves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 describe methodological advantages. The use of 343 species does provide substantially more power than previous studies (12-93 species in prior work). The rationale for using entire domains (C70) is reasonable, though this remains a proposal rather than a demonstrated advantage. The claim is appropriately framed as a methodological choice with theoretical justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "48f328b4-4f0e-4e2c-b50c-66bec706f06a",
+      "content_id": "93f23eb0-de2f-4943-987a-ce83192f6548",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "SMC5 and SMC6, which form a complex with shared function in chromatin organization, exhibit similar evolutionary rate variation across yeast phylogeny with a highly elevated Fisher transformed correlation coefficient (ftERC = 24.944), far above the expectation of zero for non-correlated pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 present a specific example (SMC5-SMC6) to illustrate the ERC concept. The ftERC value of 24.944 is clearly stated and shown in Figure 1A. The interpretation that this is highly elevated compared to the null expectation of zero is appropriate given the Fisher transformation methodology. This serves as an effective illustrative example.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "2efba33d-11d5-49c6-83b8-0d3196edd537",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study's central finding is that there is no generalizable relationship between physical interaction and high ERC, although physical coevolution is weak but present in the signal. The authors conclude that the stronger ERC signal comes from selective pressures on the protein as a whole rather than compensatory coevolution at physical interfaces, and that ERC has poor predictability for identifying physical interactions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers affirm the study's main conclusions without challenge. The editor describes the work as providing 'compelling evidence that the exact contribution of physical interactions, if any, remains difficult to quantify.' Reviewer 1 states that 'various analyses nicely support the authors' claims,' and Reviewer 2 notes the study 'reinforces the existing paradigm that covariation is driven by a varied/mixed set of interaction-types.' No reviewer questions these core findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "05fa61bb-455e-4c20-93de-52c33f7affd0",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The study employs a large dataset of 343 yeast species (332 Saccharomycotina plus 11 outgroups) and uses a domain-level analysis approach within 17 protein complexes to test whether physically interacting domains have higher ERC than non-interacting domains of the same proteins. This design aims to normalize functional signals by comparing within complexes rather than across all proteins.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the methodological approach. Reviewer 1 notes the study 'is better positioned to evaluate the interplay between physical interaction and ECR more robustly' compared to previous work with fewer species. Reviewer 2 describes it as 'very smart experimental design that leverages individual protein domains for increased resolution.' The editor characterizes this as a 'follow-up on a previous analysis with a smaller dataset,' implicitly accepting the methodological improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "c786c9f8-48d5-4a39-a742-e24aa410e295",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The study finds that both pathways and complexes show elevated ERC values, with a majority having significantly higher mean ERC than random protein sets. Protein complexes have slightly higher median ERC (5.366) than pathways (4.597). Specific examples like the SLIK complex and motor protein pathway illustrate that high ERC can occur both with and without physical interactions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these descriptive findings about ERC distributions in pathways and complexes. Reviewer 1 states 'various analyses nicely support the authors' claims,' which would encompass these data. The editor's summary that the work addresses 'covariation of evolutionary rates at different sites in these interacting proteins' implicitly accepts the reported ERC patterns. No concerns are raised about these observations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "22c9f0b9-4196-466c-b030-482d27b832bd",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Statistical analyses reveal that 12 of 17 complexes had ROC-AUC > 0.5 (p=0.0245) and 4 had significantly higher rankings for physically interacting domains (p=0.0012), indicating a detectable but weak signal from physical interactions. However, a global permutation test yielded p=0.08, failing to reach significance and suggesting the signal is weak enough to be masked by complexes showing no evidence.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these nuanced statistical findings without objection. Reviewer 2 acknowledges the results are 'nuanced and sometimes inconclusive' but notes in their edit that 'the authors have done a satisfactory job of honing their language to get the nuanced ideas across clearly.' The editor's statement that the work provides 'compelling evidence that the exact contribution of physical interactions, if any, remains difficult to quantify' directly aligns with these mixed statistical results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "63e21358-9b8a-4de2-8705-95b0f3230f06",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Analysis of proportional rank values shows wide variation across complexes, with only 2 complexes (CUL8 and exportin) showing significantly high proportional rank at p=0.01, and 3 more (MCM, ORC, ESCRT-I) at p=0.05. Over two-thirds of complexes show no significant contribution from physical interactions, leading to the conclusion that ERC is not advisable for predicting physical interactions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these findings or their interpretation. Reviewer 2's acknowledgment of 'nuanced and sometimes inconclusive results' and subsequent satisfaction with how the authors 'honed their language' suggests acceptance of these complex-specific findings. The editor's characterization of the work as demonstrating that 'the exact contribution of physical interactions, if any, remains difficult to quantify' is consistent with these heterogeneous results across complexes.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "4ac509f5-a267-4470-9c97-b8e955bb5873",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The study contextualizes its findings relative to previous contradictory work (Hakes et al. 2007, Jothi et al. 2006, Kann et al. 2009), noting that the contribution of physical interaction was limited to a minority of complexes despite high statistical power, which may explain why previous studies reached varying conclusions depending on which complexes and species were examined.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this contextualization without critique. Reviewer 1 explicitly notes the finding 'is similar to a previous report by Clark et al. (2012)' and that the current study 'is better positioned to evaluate the interplay between physical interaction and ECR more robustly.' Reviewer 2 states the study 'reinforces the existing paradigm,' indicating acceptance of how the work fits within the broader literature. No reviewer questions the comparison to previous studies.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "507e1a60-e51e-427d-ab44-9eab93649491",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors hypothesize that compensatory coevolution is relatively rare and unlikely to contribute greatly to ERC, proposing instead that variations in selective constraint and other nonphysical forces (essentiality, expression level, codon adaptation, network connectivity) are the primary contributors to ERC, as evidenced by elevated ERC in non-physically-interacting pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this mechanistic interpretation. Reviewer 2 states the study 'reinforces the existing paradigm that covariation is driven by a varied/mixed set of interaction-types that all fall under the umbrella explanation of co-functional interactions,' which directly aligns with the authors' hypothesis about nonphysical forces. The editor's summary that the work addresses 'the importance of physical interaction' and finds its contribution 'difficult to quantify' is consistent with this interpretation favoring nonphysical forces.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "b07a8c44-b535-47a4-9a33-c860f381aba6",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The manuscript establishes foundational background on ERC methodology, including that co-functional proteins have covarying evolutionary rates, that ERC measures correlation in relative evolutionary rates across phylogenetic trees, and that previous hypotheses have proposed both physical coevolution and nonphysical forces as potential causes. The study identifies a knowledge gap regarding whether physical interfaces strengthen correlations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question any of these background claims or methodological definitions. The editor's description of the study as addressing 'covariation of evolutionary rates at different sites in these interacting proteins' and Reviewer 1's statement that the work 'explores the potential contribution of physical interaction between correlated evolutionary rates' both implicitly accept the foundational ERC framework. No reviewer raises concerns about the background or definitions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "a0094856-1556-4b2f-befe-0c1a9e020c01",
+      "content_id": "6b2bbdd6-2807-470d-acf5-d987f7a05f4e",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The study calculated ERC for all pairs of 12,552 orthologous genes using Fisher-transformed Pearson correlations of relative evolutionary rates (RERs), with Winsorization applied to reduce false positives from outliers. The method requires at least 15 shared species and consistent tree topology.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question the computational methodology or statistical corrections. Reviewer 1's statement that 'various analyses nicely support the authors' claims' encompasses acceptance of the analytical approach. Reviewer 2's praise for the 'very smart experimental design' and the editor's characterization of the evidence as 'compelling' both suggest the methodological details are sound and not contested.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4ca83286-3e7e-46b3-a436-d5a1a41bca37",
+      "result_id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f"
+    },
+    {
+      "claim_id": "4435326b-67bb-42e8-a2f6-98b8ff5bacd0",
+      "result_id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f"
+    },
+    {
+      "claim_id": "6f3adf3d-464a-4f51-bd36-6b314c48e137",
+      "result_id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f"
+    },
+    {
+      "claim_id": "b2909167-e96d-4dea-9de2-bdb528bd7d8b",
+      "result_id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f"
+    },
+    {
+      "claim_id": "149a1f74-0b1e-40cc-a3b1-9fd29fa78a22",
+      "result_id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f"
+    },
+    {
+      "claim_id": "63dce154-e0c4-49e6-8af0-5c8f80cdc31a",
+      "result_id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f"
+    },
+    {
+      "claim_id": "438f7360-c088-40e9-b873-bcd0b4359824",
+      "result_id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f"
+    },
+    {
+      "claim_id": "166c9dbb-6334-41ed-98e6-58bbc8170909",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "17c4b132-9067-4d65-a265-29405ae31577",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "0f008960-7ef2-4f3e-bf12-2bb2ea6d79cd",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "4ebcddfc-8d35-47a1-99a2-93cbefa9822b",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "cc4135a2-4598-4866-9bc1-4d227ed7ed5b",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "3c685937-17d2-45e1-9229-a8261be26fb6",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "24d008e9-a637-40f3-9fa8-113a322a1210",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "eb961f87-b39c-48e9-a8f5-97995e7ba41a",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "eacb9857-f6e0-45c7-abcc-1a037564806f",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "3486a0de-30be-4a01-9c23-dc1e1d6561ee",
+      "result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc"
+    },
+    {
+      "claim_id": "92995782-fb07-45eb-a985-de62674d59e6",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "2d6c156c-32fa-433f-97cd-edc04a0e5c8e",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "d62fa2d6-daff-4c31-be6f-741ba4ae12df",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "e22bbd42-17de-4cd4-ad78-a6a678b9a247",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "afcc3bbd-3bf0-4622-ba04-c49f2f550fe8",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "16d71cf9-9389-4465-a5a4-3190fda4af7f",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "1c406b69-d386-413e-9c15-c2ee1569747d",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "0eae0cca-1430-4ed2-ae69-1482203e3a57",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "fe5a3c7a-70e3-49db-94e7-a05bd249c312",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "d1cfdb49-69fb-4fe4-83ac-8c0265cb4738",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "4daaef1f-3042-4838-bff7-f232c2c63f28",
+      "result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f"
+    },
+    {
+      "claim_id": "e4abebb1-c61d-48ee-8093-7d42439b197f",
+      "result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e"
+    },
+    {
+      "claim_id": "9f5599ad-5f26-4825-8f8d-52ed1a2d109e",
+      "result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e"
+    },
+    {
+      "claim_id": "8a811ff4-9372-4a6e-b047-7d55ea21f39c",
+      "result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e"
+    },
+    {
+      "claim_id": "3dcb00b4-6d9a-44db-8ba5-e4e662bff67f",
+      "result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e"
+    },
+    {
+      "claim_id": "c5fe6d5f-cde0-4622-a187-67a0d62b1e15",
+      "result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e"
+    },
+    {
+      "claim_id": "7196ebb3-0ab4-4cc3-8106-e5f9d2d5d781",
+      "result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e"
+    },
+    {
+      "claim_id": "10d142cb-0e5a-4565-8d6e-95d5bf35cb9c",
+      "result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e"
+    },
+    {
+      "claim_id": "56b06e12-adad-4d08-be91-f7bba2f469af",
+      "result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e"
+    },
+    {
+      "claim_id": "8c8a0f89-d8d7-4601-8f67-64e902193baf",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "880d3134-c8a7-4d88-be7a-8354e2092f39",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "780f22e3-9949-434e-80ad-490d9522bd7f",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "50834bf8-5033-47d6-98e9-9ab40fa3dd27",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "4688ed95-2d13-463d-9a80-68719530defa",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "37458a89-4caa-4fdc-8b82-586100563b64",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "79889467-58c2-4e36-ad6b-b7a22fc137a5",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "ce5f9d23-379a-4c06-be59-8cc8605d9ed0",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "49b05852-e1b3-465c-bad1-1a53b8b830f2",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "671fab06-a29e-4464-990a-522960b4edc0",
+      "result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5"
+    },
+    {
+      "claim_id": "7eb402e4-fae8-4a68-8bb2-59c541a1a068",
+      "result_id": "a0c090e8-54f9-4487-a6a7-9941d3c50f42"
+    },
+    {
+      "claim_id": "3e5a8a1c-c0ad-4022-91ca-6be55b73a699",
+      "result_id": "a0c090e8-54f9-4487-a6a7-9941d3c50f42"
+    },
+    {
+      "claim_id": "adaacf12-b559-4711-8aca-6f5521da70c3",
+      "result_id": "a0c090e8-54f9-4487-a6a7-9941d3c50f42"
+    },
+    {
+      "claim_id": "7bfa1376-f9f4-4c77-9b5d-560490c9d088",
+      "result_id": "a0c090e8-54f9-4487-a6a7-9941d3c50f42"
+    },
+    {
+      "claim_id": "d9cb0caa-585d-45e8-b579-909653ff921d",
+      "result_id": "a0c090e8-54f9-4487-a6a7-9941d3c50f42"
+    },
+    {
+      "claim_id": "9bb723fd-24ab-4d2d-b275-7d8611e2e46a",
+      "result_id": "a0c090e8-54f9-4487-a6a7-9941d3c50f42"
+    },
+    {
+      "claim_id": "28f77e0f-d65a-4607-b301-ccc415287648",
+      "result_id": "71f8b854-a013-4dc5-b789-0ff46251b59e"
+    },
+    {
+      "claim_id": "f1988c6f-cbb1-4c41-af02-3dda4df16480",
+      "result_id": "71f8b854-a013-4dc5-b789-0ff46251b59e"
+    },
+    {
+      "claim_id": "5a0b8d5a-ec60-4882-ba2b-37ffb8cbeeec",
+      "result_id": "71f8b854-a013-4dc5-b789-0ff46251b59e"
+    },
+    {
+      "claim_id": "289aab1b-37a9-4ccd-bdc1-4af4dc9df7bb",
+      "result_id": "ecb4c10d-9f88-487b-bb5f-8806e2265816"
+    },
+    {
+      "claim_id": "9f635e51-0718-4f80-8c43-864da9957960",
+      "result_id": "ecb4c10d-9f88-487b-bb5f-8806e2265816"
+    },
+    {
+      "claim_id": "26c535f0-401f-4fb6-a038-8ab12321a19b",
+      "result_id": "ecb4c10d-9f88-487b-bb5f-8806e2265816"
+    },
+    {
+      "claim_id": "cb84148b-11b4-4264-b758-6b642de3daf4",
+      "result_id": "ecb4c10d-9f88-487b-bb5f-8806e2265816"
+    },
+    {
+      "claim_id": "2f3fd856-e3ca-4998-9004-568c428eaf23",
+      "result_id": "ecb4c10d-9f88-487b-bb5f-8806e2265816"
+    },
+    {
+      "claim_id": "21da9b12-10ba-4d5d-9323-48b21004fa74",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "11094e5c-9327-41ff-ab58-8eb4cc082986",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "be89ad6d-03b1-4b82-827c-e8db04724f8f",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "47eef883-0752-408a-9471-454c68cdb2f4",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "8d015cb9-f33e-4f47-b20e-d40374681645",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "bd0204de-2573-4525-90d4-261d913668ce",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "67e5aab8-39f7-4376-b66a-6469de4eb8ae",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "9f44fc58-463c-45da-b076-b4b4e0d43582",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "6503f328-464e-4c55-bd3a-b45fb942b9aa",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "cf4cecff-9527-46a7-9c07-5be101c4a1c4",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "a09aba28-383f-4f15-aa3e-cf6a5795caed",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "015ce838-f8da-469f-b634-5a212e31f308",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "481232fe-e880-46ed-8734-c0e678bb3fe7",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "a61c6743-871b-4e37-8dbf-0fe1cbba245d",
+      "result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4"
+    },
+    {
+      "claim_id": "24f4efc1-8989-47bc-b791-f3503106c974",
+      "result_id": "34b7c3e1-3873-4ac5-8bec-2f89b9097c54"
+    },
+    {
+      "claim_id": "8745b20e-1dcf-4464-8ef5-2264fef301b8",
+      "result_id": "34b7c3e1-3873-4ac5-8bec-2f89b9097c54"
+    },
+    {
+      "claim_id": "3d677362-126e-41c0-8bb2-ded1fa428329",
+      "result_id": "34b7c3e1-3873-4ac5-8bec-2f89b9097c54"
+    },
+    {
+      "claim_id": "3b866a68-f226-4b38-b444-e7d94025ccb0",
+      "result_id": "34b7c3e1-3873-4ac5-8bec-2f89b9097c54"
+    },
+    {
+      "claim_id": "7617ceb1-1a7e-4235-931b-cdd365f05332",
+      "result_id": "34b7c3e1-3873-4ac5-8bec-2f89b9097c54"
+    },
+    {
+      "claim_id": "4600d4bf-5697-4d8c-9d21-8c1d13f3cdb3",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "b16a083a-bdfb-4b3e-b623-9bd8a22f11ea",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "b91fde8d-eb12-4013-ad89-8e376f1ca57f",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "d2e1670e-8af1-4200-b5dd-98f62100c93a",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "135e8855-effc-4e15-9b95-6b0bf781e7f5",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "62b649cd-f054-4046-a77f-c01125ec10bc",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "b23913ca-29a3-4d3a-9295-6022ba3a3b61",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "35800d17-87b0-47ce-b637-832b2b40a87d",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "47da90a4-fe11-4925-8b33-ae8a37cda53f",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "24fc819f-6e3c-4f2a-96ce-325b0fbb8366",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "5cdd0b33-d92b-4542-b9d9-a1269bde9685",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "748f2fc9-6ac8-4900-af7f-362c885437ef",
+      "result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb"
+    },
+    {
+      "claim_id": "59619a31-f13d-4e99-915b-68ef303a82ee",
+      "result_id": "44cf9169-12b9-4d72-92a0-ff0e9ee287b1"
+    },
+    {
+      "claim_id": "7f7a56df-2140-40a9-82b4-3ada3b338428",
+      "result_id": "44cf9169-12b9-4d72-92a0-ff0e9ee287b1"
+    },
+    {
+      "claim_id": "2d34c099-2b12-4f6b-83d5-d36ee048f2c9",
+      "result_id": "48f328b4-4f0e-4e2c-b50c-66bec706f06a"
+    },
+    {
+      "claim_id": "1cdf05dc-40d0-4956-b6df-84345cfaf32c",
+      "result_id": "48f328b4-4f0e-4e2c-b50c-66bec706f06a"
+    },
+    {
+      "claim_id": "17b0cd3c-b0ae-4f5d-a112-e3bd41ed925a",
+      "result_id": "48f328b4-4f0e-4e2c-b50c-66bec706f06a"
+    },
+    {
+      "claim_id": "9b35e4d1-f3fe-4fe2-a6a8-d66c8b4eb622",
+      "result_id": "48f328b4-4f0e-4e2c-b50c-66bec706f06a"
+    },
+    {
+      "claim_id": "21da9b12-10ba-4d5d-9323-48b21004fa74",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "11094e5c-9327-41ff-ab58-8eb4cc082986",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "be89ad6d-03b1-4b82-827c-e8db04724f8f",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "24f4efc1-8989-47bc-b791-f3503106c974",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "47eef883-0752-408a-9471-454c68cdb2f4",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "8d015cb9-f33e-4f47-b20e-d40374681645",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "9f44fc58-463c-45da-b076-b4b4e0d43582",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "6503f328-464e-4c55-bd3a-b45fb942b9aa",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "24fc819f-6e3c-4f2a-96ce-325b0fbb8366",
+      "result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537"
+    },
+    {
+      "claim_id": "92995782-fb07-45eb-a985-de62674d59e6",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "2d6c156c-32fa-433f-97cd-edc04a0e5c8e",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "d62fa2d6-daff-4c31-be6f-741ba4ae12df",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "e22bbd42-17de-4cd4-ad78-a6a678b9a247",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "afcc3bbd-3bf0-4622-ba04-c49f2f550fe8",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "16d71cf9-9389-4465-a5a4-3190fda4af7f",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "1c406b69-d386-413e-9c15-c2ee1569747d",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "fe5a3c7a-70e3-49db-94e7-a05bd249c312",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "d1cfdb49-69fb-4fe4-83ac-8c0265cb4738",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "4daaef1f-3042-4838-bff7-f232c2c63f28",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "59619a31-f13d-4e99-915b-68ef303a82ee",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "7f7a56df-2140-40a9-82b4-3ada3b338428",
+      "result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0"
+    },
+    {
+      "claim_id": "8c8a0f89-d8d7-4601-8f67-64e902193baf",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "880d3134-c8a7-4d88-be7a-8354e2092f39",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "780f22e3-9949-434e-80ad-490d9522bd7f",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "50834bf8-5033-47d6-98e9-9ab40fa3dd27",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "37458a89-4caa-4fdc-8b82-586100563b64",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "79889467-58c2-4e36-ad6b-b7a22fc137a5",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "ce5f9d23-379a-4c06-be59-8cc8605d9ed0",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "49b05852-e1b3-465c-bad1-1a53b8b830f2",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "671fab06-a29e-4464-990a-522960b4edc0",
+      "result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295"
+    },
+    {
+      "claim_id": "7eb402e4-fae8-4a68-8bb2-59c541a1a068",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "3e5a8a1c-c0ad-4022-91ca-6be55b73a699",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "adaacf12-b559-4711-8aca-6f5521da70c3",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "7bfa1376-f9f4-4c77-9b5d-560490c9d088",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "d9cb0caa-585d-45e8-b579-909653ff921d",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "9bb723fd-24ab-4d2d-b275-7d8611e2e46a",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "28f77e0f-d65a-4607-b301-ccc415287648",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "f1988c6f-cbb1-4c41-af02-3dda4df16480",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "5a0b8d5a-ec60-4882-ba2b-37ffb8cbeeec",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "cf4cecff-9527-46a7-9c07-5be101c4a1c4",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "a09aba28-383f-4f15-aa3e-cf6a5795caed",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "015ce838-f8da-469f-b634-5a212e31f308",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "481232fe-e880-46ed-8734-c0e678bb3fe7",
+      "result_id": "22c9f0b9-4196-466c-b030-482d27b832bd"
+    },
+    {
+      "claim_id": "289aab1b-37a9-4ccd-bdc1-4af4dc9df7bb",
+      "result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06"
+    },
+    {
+      "claim_id": "9f635e51-0718-4f80-8c43-864da9957960",
+      "result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06"
+    },
+    {
+      "claim_id": "26c535f0-401f-4fb6-a038-8ab12321a19b",
+      "result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06"
+    },
+    {
+      "claim_id": "cb84148b-11b4-4264-b758-6b642de3daf4",
+      "result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06"
+    },
+    {
+      "claim_id": "2f3fd856-e3ca-4998-9004-568c428eaf23",
+      "result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06"
+    },
+    {
+      "claim_id": "bd0204de-2573-4525-90d4-261d913668ce",
+      "result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06"
+    },
+    {
+      "claim_id": "67e5aab8-39f7-4376-b66a-6469de4eb8ae",
+      "result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06"
+    },
+    {
+      "claim_id": "a61c6743-871b-4e37-8dbf-0fe1cbba245d",
+      "result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06"
+    },
+    {
+      "claim_id": "4600d4bf-5697-4d8c-9d21-8c1d13f3cdb3",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "b16a083a-bdfb-4b3e-b623-9bd8a22f11ea",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "b91fde8d-eb12-4013-ad89-8e376f1ca57f",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "d2e1670e-8af1-4200-b5dd-98f62100c93a",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "135e8855-effc-4e15-9b95-6b0bf781e7f5",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "62b649cd-f054-4046-a77f-c01125ec10bc",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "b23913ca-29a3-4d3a-9295-6022ba3a3b61",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "35800d17-87b0-47ce-b637-832b2b40a87d",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "47da90a4-fe11-4925-8b33-ae8a37cda53f",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "5cdd0b33-d92b-4542-b9d9-a1269bde9685",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "748f2fc9-6ac8-4900-af7f-362c885437ef",
+      "result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873"
+    },
+    {
+      "claim_id": "8745b20e-1dcf-4464-8ef5-2264fef301b8",
+      "result_id": "507e1a60-e51e-427d-ab44-9eab93649491"
+    },
+    {
+      "claim_id": "3d677362-126e-41c0-8bb2-ded1fa428329",
+      "result_id": "507e1a60-e51e-427d-ab44-9eab93649491"
+    },
+    {
+      "claim_id": "3b866a68-f226-4b38-b444-e7d94025ccb0",
+      "result_id": "507e1a60-e51e-427d-ab44-9eab93649491"
+    },
+    {
+      "claim_id": "7617ceb1-1a7e-4235-931b-cdd365f05332",
+      "result_id": "507e1a60-e51e-427d-ab44-9eab93649491"
+    },
+    {
+      "claim_id": "4ca83286-3e7e-46b3-a436-d5a1a41bca37",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "4435326b-67bb-42e8-a2f6-98b8ff5bacd0",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "6f3adf3d-464a-4f51-bd36-6b314c48e137",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "166c9dbb-6334-41ed-98e6-58bbc8170909",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "b2909167-e96d-4dea-9de2-bdb528bd7d8b",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "149a1f74-0b1e-40cc-a3b1-9fd29fa78a22",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "63dce154-e0c4-49e6-8af0-5c8f80cdc31a",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "438f7360-c088-40e9-b873-bcd0b4359824",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "17c4b132-9067-4d65-a265-29405ae31577",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "0f008960-7ef2-4f3e-bf12-2bb2ea6d79cd",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "4ebcddfc-8d35-47a1-99a2-93cbefa9822b",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "2d34c099-2b12-4f6b-83d5-d36ee048f2c9",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "1cdf05dc-40d0-4956-b6df-84345cfaf32c",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "17b0cd3c-b0ae-4f5d-a112-e3bd41ed925a",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "9b35e4d1-f3fe-4fe2-a6a8-d66c8b4eb622",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "cc4135a2-4598-4866-9bc1-4d227ed7ed5b",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "3c685937-17d2-45e1-9229-a8261be26fb6",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "24d008e9-a637-40f3-9fa8-113a322a1210",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "eb961f87-b39c-48e9-a8f5-97995e7ba41a",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "eacb9857-f6e0-45c7-abcc-1a037564806f",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "3486a0de-30be-4a01-9c23-dc1e1d6561ee",
+      "result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6"
+    },
+    {
+      "claim_id": "0eae0cca-1430-4ed2-ae69-1482203e3a57",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    },
+    {
+      "claim_id": "e4abebb1-c61d-48ee-8093-7d42439b197f",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    },
+    {
+      "claim_id": "9f5599ad-5f26-4825-8f8d-52ed1a2d109e",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    },
+    {
+      "claim_id": "8a811ff4-9372-4a6e-b047-7d55ea21f39c",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    },
+    {
+      "claim_id": "3dcb00b4-6d9a-44db-8ba5-e4e662bff67f",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    },
+    {
+      "claim_id": "c5fe6d5f-cde0-4622-a187-67a0d62b1e15",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    },
+    {
+      "claim_id": "7196ebb3-0ab4-4cc3-8106-e5f9d2d5d781",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    },
+    {
+      "claim_id": "10d142cb-0e5a-4565-8d6e-95d5bf35cb9c",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    },
+    {
+      "claim_id": "56b06e12-adad-4d08-be91-f7bba2f469af",
+      "result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b56481ed-e59a-4f4c-8d30-7fbe96d6c908",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "1a44f058-b993-4ca3-bf6f-7015abc8aecb",
+      "peer_result_id": "4ac509f5-a267-4470-9c97-b8e955bb5873",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly agree on the contextualization of results within prior literature (C77-C88). OpenEval finds the comparison to prior work appropriate and well-cited, while peer reviewers explicitly accept the positioning relative to Clark et al. (2012) and other studies. Both view the synthesis as reinforcing existing paradigms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "217470fb-771c-416f-a9d1-ae0df5cced8a",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "52871c01-1426-4d33-8a7a-61b2a2bb16e5",
+      "peer_result_id": "c786c9f8-48d5-4a39-a742-e24aa410e295",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the initial comparative analysis between complexes and pathways (C39-C48). OpenEval validates the statistical tests and interpretation that co-functionality confounds physical interaction contributions. Peer reviewers accept these descriptive findings without question, with Reviewer 1 stating 'various analyses nicely support the authors' claims.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "36714df6-e280-440e-94eb-a70a79d46d11",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "84010418-c4ea-4b24-a37a-043fd5ac9a4e",
+      "peer_result_id": "a0094856-1556-4b2f-befe-0c1a9e020c01",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the computational methodology and statistical procedures (C36-C38, C93-C97). OpenEval finds the Fisher transformation and Winsorization appropriate and well-justified. Peer reviewers do not question the analytical approach, with acceptance implicit in their praise for the 'compelling' evidence and 'smart experimental design.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "af54b41d-d184-41c5-9787-a009ba9e7b6b",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "34b7c3e1-3873-4ac5-8bec-2f89b9097c54",
+      "peer_result_id": "507e1a60-e51e-427d-ab44-9eab93649491",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergence in evaluation type: OpenEval rates the hypothesis about nonphysical forces (C8, C89-C92) as UNCERTAIN, noting it remains speculative and requires additional experiments. Peer reviewers rate it as SUPPORTED, with Reviewer 2 stating it 'reinforces the existing paradigm that covariation is driven by a varied/mixed set of interaction-types.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "888e5af8-d3fe-4bd7-8f33-273e64f16aa7",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "846ed8fb-4383-44fd-b719-01bbdc1d614f",
+      "peer_result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the study design and dataset (C26-C28, C31-C35, C49-C51, C69-C70). OpenEval validates the methodology as sound with appropriate sample sizes. Peer reviewers explicitly praise the approach, with Reviewer 1 noting it's 'better positioned' than previous work and Reviewer 2 calling it 'very smart experimental design.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "259dfc54-40f8-416f-9fd8-f42d6bb2a98b",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "ecb4c10d-9f88-487b-bb5f-8806e2265816",
+      "peer_result_id": "63e21358-9b8a-4de2-8705-95b0f3230f06",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the proportional rank analysis findings (C61-C65). OpenEval validates the permutation tests and interpretation that most complexes lack significant physical interaction signal. Peer reviewers accept these heterogeneous results, with Reviewer 2 acknowledging the 'nuanced and sometimes inconclusive results' and expressing satisfaction with the authors' language.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "61bdce1f-12c2-4561-ade4-af02d56a29f7",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a0c090e8-54f9-4487-a6a7-9941d3c50f42",
+      "peer_result_id": "22c9f0b9-4196-466c-b030-482d27b832bd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the ROC analysis and global permutation test results (C52-C60, C72-C75). OpenEval validates the statistical tests and notes the p=0.08 appropriately fails significance. Peer reviewers accept these mixed results, with the editor's statement about 'difficult to quantify' contributions aligning with the nuanced statistical findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "b4b94870-65f2-480f-b175-b49e18d6d34b",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "0f21b0f8-074a-4bba-83f4-3b1b57deacb4",
+      "peer_result_id": "2efba33d-11d5-49c6-83b8-0d3196edd537",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the main conclusions (C5-C7, C29-C30, C66-C68, C71-C76). OpenEval finds the 'weak but present' conclusion appropriately nuanced and supported by multiple lines of evidence. All three peer reviewers affirm the conclusions without challenge, with the editor describing 'compelling evidence' and reviewers noting the analyses 'nicely support the authors' claims.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "8597abbe-eacb-4a3a-8ab2-27007222b510",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f632b7db-bc54-4369-b2e2-53c2cab99c3f",
+      "peer_result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the foundational ERC concepts and background (C1-C3, C9-C12). OpenEval validates these as well-supported by established literature. Peer reviewers implicitly accept the framework through their descriptions of the study addressing 'covariation of evolutionary rates' without questioning any background claims or definitions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "85536ba1-c1f3-46a1-bd81-86e2bf401e8c",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "106da6b7-e4b6-48ae-9ef6-1f399acff9fc",
+      "peer_result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the characterization of prior literature and research gap (C4, C13-C15, C20-C25). OpenEval validates the identification of contradictory prior work as appropriately cited. Peer reviewers accept this contextualization without critique, implicitly through their acceptance of the study's motivation and positioning.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "aebaee20-70d2-4eec-a3c1-b5dfa0eb8257",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "71f8b854-a013-4dc5-b789-0ff46251b59e",
+      "peer_result_id": "22c9f0b9-4196-466c-b030-482d27b832bd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the global permutation test results (C58-C60). OpenEval validates the p=0.08 as appropriately failing significance and providing important context. Peer reviewers accept this nuanced finding as part of the evidence that physical interaction contributions are 'difficult to quantify.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "fdcc343c-ed99-4832-9e86-088d82d043d4",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "48f328b4-4f0e-4e2c-b50c-66bec706f06a",
+      "peer_result_id": "b07a8c44-b535-47a4-9a33-c860f381aba6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the SMC5-SMC6 example (C16-C19). OpenEval validates this as an effective illustration of the ERC concept with appropriate interpretation. Peer reviewers do not question this example, accepting it as part of the foundational framework without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    },
+    {
+      "id": "e74db0df-d099-4f89-98b8-134b41bd3740",
+      "submission_id": "416c1d32-f646-4dad-8214-6871663e962a",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "44cf9169-12b9-4d72-92a0-ff0e9ee287b1",
+      "peer_result_id": "05fa61bb-455e-4c20-93de-52c33f7affd0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the methodological advantages claims (C69-C70). OpenEval validates the 343 species providing more power and finds the domain-level rationale reasonable. Peer reviewers explicitly praise this aspect, with Reviewer 1 noting the study is 'better positioned' with more species and Reviewer 2 praising the domain-level resolution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:51:02.145048Z"
+    }
+  ]
+}

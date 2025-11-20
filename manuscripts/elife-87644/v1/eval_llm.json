@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Mice learned the 2-8s action selection task, achieving >90% correct rate. During correct 8s trials, 80.8% of SNr neurons showed task-related firing changes, categorized into four types. Type 1 and Type 2 neurons (comprising ~80% of task-related SNr neurons) showed monotonic firing changes co-varying with action selection. The SNr net output (Type 2 minus Type 1 activity) strongly correlated with behavioral choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 provide converging evidence from behavioral training (C19), neuronal recordings (C20-C23), and correlation analysis (C24-C25). The data show clear task-related neuronal dynamics in SNr that predict behavioral choice. Sample sizes are adequate (n=10 mice for behavior, n=9 mice for recordings, 211/261 neurons task-related), and statistical significance is reported. The strong linear correlation (Figure 1M) between SNr net output and psychometric curve provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "SNr neuronal activity encodes action selection rather than time passage or reward value. In 16s probe trials, Type 1 SNr neurons predicted whether mice selected right or left levers. In a reversed task where action-interval contingencies were switched, Type 1 and Type 2 SNr neurons reversed their dynamics consistent with the new behavioral choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 demonstrate that SNr activity reflects action selection through two complementary experiments: 16s probe trials (C26-C28) and reversed task (C29-C30). The reversal of neuronal dynamics when task contingencies are reversed (C29) provides strong evidence against time/value encoding. The experimental design effectively controls for confounding variables by maintaining identical sensory inputs and timing while changing only the action-reward contingency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Striatal SPNs show similar task-related dynamics to SNr neurons. 83.4% of recorded SPNs (341/409) were task-related, showing the same four types of dynamics observed in SNr. Both D1-SPNs and D2-SPNs exhibited all four types of dynamics, but D1-SPNs showed significantly more Type 1 than Type 2 neurons, while D2-SPNs showed similar proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by optogenetic tagging experiments identifying D1- vs D2-SPNs (n=19 mice, 409 SPNs total). The classification criteria are clearly defined (\u22646ms latency, R\u22650.95 waveform correlation). The finding that both pathways contain all four neuronal types is important for understanding pathway function. Statistical comparisons between D1 and D2 proportions are reported (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C95",
+      "C96"
+    ],
+    "result": "NMDA receptors on both D1-SPNs and D2-SPNs are critical for learning action selection, but deletion in each pathway impairs choice differently. D1-NR1 KO mice showed selective impairment in long interval trials with bias toward short intervals, while D2-NR1 KO mice showed impairment across both short and long intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C95-C96 are supported by genetic knockout experiments with appropriate littermate controls (D1-NR1 KO: n=16 vs n=11 controls; D2-NR1 KO: n=10 vs n=17 controls). Statistical significance is reported (Figure 4A-D). The differential impairment patterns between D1 and D2 knockouts provide evidence for distinct pathway functions. However, the mechanism by which NMDA receptor deletion impairs learning is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C73",
+      "C74"
+    ],
+    "result": "Striatal activity is necessary for proper execution of learned action selection. Bilateral muscimol infusion into dorsal striatum significantly reduced performance compared to saline controls, with impairment particularly evident in long interval trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C73-C74 are supported by pharmacological inactivation experiments (n=9 mice) with appropriate pre- and post-saline controls. The within-subject design strengthens the conclusion. Statistical significance is reported (Figure 4F-G). The result demonstrates necessity of striatal activity for task performance, though it doesn't distinguish between D1 and D2 pathway contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C75",
+      "C97",
+      "C98"
+    ],
+    "result": "Selective ablation of either D1-SPNs or D2-SPNs impairs action selection but in distinct patterns. D1-SPN ablation caused selective impairment in long interval trials with mice sticking to the left side, while D2-SPN ablation caused deficits in both short and long trials with disrupted stereotyped movement sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C75, C97-C98 are supported by cell-type-specific ablation experiments using DTR/DT approach (D1-DTR: n=8 vs n=9 controls; D2-DTR: n=8 vs n=8 controls). Statistical significance is reported (Figure 4J-K, O-P). The differential behavioral phenotypes provide strong evidence for distinct pathway functions. Movement trajectory analysis (C97-C98) adds mechanistic insight. The ablation is permanent, which differs from transient optogenetic manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C60",
+      "C61",
+      "C62",
+      "C76"
+    ],
+    "result": "Optogenetic manipulation of D1-SPNs bidirectionally regulates action selection in a linear manner. Activation of D1-SPNs increased correct rate in 8s trials but not 2s trials, while inhibition decreased correct rate in 8s trials. D1-SPN activity is positively correlated with choice performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C60-C62, C76 are supported by bidirectional optogenetic experiments (activation: n=11 mice; inhibition: n=6 mice). Statistical significance is reported (Figure 5D-E). The selective effect on 8s trials is consistent across manipulations. The within-subject design (50% stimulation trials) provides good controls. The linear relationship is further supported by computational modeling (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C63",
+      "C64",
+      "C77"
+    ],
+    "result": "Optogenetic manipulation of D2-SPNs bidirectionally regulates action selection. Activation of D2-SPNs decreased correct rate in both 2s and 8s trials, while inhibition increased correct rates for both trial types. This pattern is consistent with the Go/No-go model prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C63-C64, C77 are supported by bidirectional optogenetic experiments (activation: n=8 mice; inhibition: n=5 mice). Statistical significance is reported (Figure 5F-G). The effects on both trial types differ from D1-SPN manipulations. However, these results appear to contradict the D2-SPN ablation results (C41, C65), which the authors address through their Triple-control model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C100"
+    ],
+    "result": "Selective ablation of D2-SPNs impairs action selection, which contradicts the Go/No-go model prediction but is consistent with the Co-activation model. Neither the Go/No-go nor Co-activation model alone can fully explain all experimental results, particularly for D2-SPN manipulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C100 identify a critical contradiction: D2-SPN ablation impairs choice (supporting Co-activation model) while D2-SPN inhibition improves choice (supporting Go/No-go model). This apparent contradiction is well-documented with appropriate controls and statistics. The authors acknowledge this limitation of existing models, which motivates their new Triple-control model. The evaluation is logical and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C46",
+      "C47",
+      "C66",
+      "C67",
+      "C78",
+      "C79"
+    ],
+    "result": "A new 'Triple-control' model of basal ganglia is proposed with one direct pathway and two indirect pathway subpopulations (D2-SPN #1 in Co-activation module and D2-SPN #2 in Go/No-go module). The Co-activation module inhibits the Go/No-go module through D2-SPN collaterals with short-term depression. This model can replicate physiological and behavioral observations that cannot be explained by existing models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C46-C47, C66-C67, C78-C79 describe the new computational model. The model is based on realistic neuroanatomy (C79 cites known D2-SPN collaterals) and successfully replicates both lesion effects (C46-C47) and optogenetic manipulation results. The model parameters are specified in Methods. The key innovation is the activity-dependent switching between modules via short-term depression. However, direct experimental evidence for two distinct D2-SPN subpopulations is not provided\u2014this is a model inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C50",
+      "C51",
+      "C81"
+    ],
+    "result": "The direct pathway regulates action selection in a linear manner, while the indirect pathway exerts nonlinear inverted-U-shaped control. Computational modeling shows linear relationship between D1-SPN activity and choice performance in 8s trials, but inverted-U-shaped relationship for D2-SPNs across ablation, inhibition, and activation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C50-C51, C81 are supported by systematic computational modeling across a wide range of manipulation strengths (Figure 7). The linear vs nonlinear distinction is a key finding that reconciles contradictory experimental results. The model predictions match experimental observations. However, the inverted-U relationship for D2-SPNs is demonstrated in the model but not directly tested experimentally across a continuous range of activity levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C80"
+    ],
+    "result": "D2-SPN collaterals with short-term depression modulate SNr activity in a firing rate-dependent manner. Activating D2-SPNs at 1s vs 7s during 8s trials caused differential effects on Type 1 and Type 2 SNr neurons, consistent with the Triple-control model prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C80 are supported by simultaneous optogenetic stimulation and recording experiments. The firing rate-dependent modulation provides experimental support for a key mechanism in the Triple-control model. Statistical significance is reported (Figure 6\u2014figure supplement 2T). However, the number of recorded neurons and mice is not clearly stated for this specific experiment, and the interpretation relies on the model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C85"
+    ],
+    "result": "The Triple-control model can replicate dopamine manipulation effects on behavioral choice and predicts an inverted-U-shaped relationship between striatal dopamine concentration and action selection. Moderate dopamine increase improves decision making, while excessive changes in either direction impair choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53, C85 extend the model to dopamine modulation. The model replicates previous experimental results (Howard et al., 2017), which provides some validation. However, the inverted-U relationship for dopamine is a model prediction that is not directly tested in the current study. The prediction is plausible given known dopamine effects, but requires experimental validation. The model parameters for dopamine modulation are specified but the biological basis is not fully justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C111",
+      "C112"
+    ],
+    "result": "In Parkinson's disease, dopamine loss leads to D2-SPN hyperactivity and disrupted collaterals, which would break the balance between pathways and disrupt multiple dynamic controls from the indirect pathway. Action selection would remain problematic even with L-DOPA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54, C111-C112 discuss implications for Parkinson's disease. C54 is established knowledge (supported by citations). C111-C112 are inferences from the Triple-control model about disease mechanisms. These are reasonable predictions but are not tested experimentally in the current study. The claims about L-DOPA limitations (C112) are speculative, though the citation to Bastide et al., 2015 provides some support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The Triple-control model provides mechanistic insights into schizophrenia treatment. Increased striatal D2 receptor density in schizophrenia patients is treated with D2R antagonists, but drug dose is critical\u2014overdose causes adverse effects including extrapyramidal symptoms. Dose-dependent effects are also observed in cognitive tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C57, C113-C115 discuss implications for schizophrenia. C55-C57, C114-C115 are established clinical knowledge (well-cited). C113 claims the model provides mechanistic insights, but this is speculative\u2014no direct modeling or experimental work on schizophrenia is presented. The connection between the model and schizophrenia pathophysiology is plausible but not demonstrated. These are reasonable discussion points but not tested results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Summary of key experimental findings: SNr net output predicts behavioral choice; pathway-specific neurons are activated during action selection; the 2-8s task enables observation of internal choice switching; SNr neurons reverse dynamics in reversed task; striatal SPNs share similar dynamics with SNr; D1-SPNs show bias toward preferred choice while D2-SPNs encode choices equally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C86-C94 summarize major experimental findings that are well-supported by the data presented throughout the manuscript. These are restatements of results already evaluated in other groups. C90-C91 provide interpretations of the analytical approach (subtraction of Type 1 and Type 2) and anatomical basis (SNr collaterals) that are reasonable given the data and literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The 2-8s task design provides unique opportunity to study internally driven action selection. Mice showed stereotyped movement trajectories in correct but not incorrect 8s trials. Type 1 and Type 2 dynamics are action selection-dependent, not simply sensory or position-related, as evidenced by differences between correct and incorrect trials with identical sensory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe task design rationale and control analyses. C69 is a clear observation from behavioral tracking. C71-C72 provide important controls showing that neuronal dynamics are not explained by sensory or spatial factors. The logic is sound: same sensory inputs and positions produce different neural activity depending on whether the choice is correct or incorrect, supporting action selection encoding. These are well-supported methodological and control points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Mechanistic explanations from the Triple-control model: D2 stimulation effects are not due to decreased locomotion but altered action selection; simple combination of Go/No-go and Co-activation models cannot reproduce observations; the model explains differential effects of D2-SPN ablation vs manipulation through module switching via short-term depression; the basal ganglia may employ complex functional module reconfiguration for flexible control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101-C105 provide mechanistic interpretations from the model. C99 is a reasonable interpretation of the optogenetic data. C101 is demonstrated through simulation (Figure 4\u2014figure supplement 1G-I). C102-C104 explain model behavior based on the implemented mechanisms. C105 is a broader conclusion about basal ganglia dynamics that follows from the modeling results. These interpretations are logical given the model structure and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Discussion of model mechanisms and alternatives: D2 pathway amplitude is pivotal to behavioral outcome (supported by Meng et al., 2018); previous models treated pathways as uniform populations; D2-SPN collaterals with short-term plasticity could mediate module switching; alternative mechanisms involving GPe, interneurons, or downstream nuclei are possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C110 discuss model mechanisms and alternatives. C106 cites supporting evidence. C107 accurately describes limitations of previous models. C108 is the model's hypothesis about mechanism. C109-C110 acknowledge alternative mechanisms that could produce similar functional outcomes. These are reasonable speculations but C108-C110 are not directly tested. The model assumes D2-SPN collaterals as the mechanism, but other circuit configurations could potentially produce similar behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background and context: Basal ganglia are essential for action selection; their functional role remains unresolved; action selection is critical for survival; basal ganglia dysfunction causes movement disorders; direct and indirect pathways process motor commands; Go/No-go and Co-activation models propose different pathway functions; previous studies show both opposing and co-active pathway functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C18 provide established background knowledge and context for the study. These are well-supported by appropriate citations to the literature. C1, C7-C13 describe established facts about basal ganglia anatomy and function. C14-C15 accurately describe existing theoretical models. C16-C18 cite previous experimental findings that motivate the current study. These background claims are appropriately referenced and accurate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study generated high-quality transcriptome data from T. pilosa floral tissues, with 276 million clean reads assembled into 59,051 unigenes showing 89.7% completeness by BUSCO assessment and 80% strong homology to known sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide converging evidence of transcriptome quality through multiple metrics: read count, assembly statistics, BUSCO completeness, and annotation success. These are standard quality control measures for de novo transcriptome assembly and the values reported indicate a high-quality dataset suitable for downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "Sex-biased gene expression is pervasive in T. pilosa floral buds (9.50% female-biased, 7.86% male-biased) but minimal in flowers at anthesis (0.70% female-biased, 0.43% male-biased), with approximately 15-fold more sex-biased genes in floral buds, suggesting these genes are predominantly associated with meiotic processes and sex differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C62-C63, C67-C68, and C71 present consistent quantitative data showing stage-specific sex-biased expression patterns. The 15-fold difference is directly calculated from the reported numbers and statistically robust. The interpretation that sex-biased genes are associated with meiotic processes (C68) is reasonable given the developmental timing, though this is an inference rather than direct functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Hierarchical clustering analysis revealed that female floral buds cluster most distantly from female flowers at anthesis, while male floral buds cluster with female flowers at anthesis, suggesting male floral buds may tend toward feminization in early developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 describe clustering patterns (C64-C65) and offer an interpretation (C66). While the clustering observation is data-based, the interpretation of 'feminization' is speculative and not well-supported. Alternative explanations (e.g., shared developmental programs, technical artifacts, or other biological processes) are not considered. The claim would benefit from additional functional or molecular validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Males exhibit higher tissue-bias than females, with male-biased genes showing substantial overlap with tissue-biased genes (23.97% in floral buds, 62.23% in flowers at anthesis) while female-biased genes show minimal overlap (1.67% in floral buds, 1.32% in flowers at anthesis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 present quantitative overlap data between sex-biased and tissue-biased gene sets. The percentages are clearly stated and the pattern is consistent across developmental stages. The interpretation that males have higher tissue-bias (C74) follows logically from the data. The analysis is straightforward and the conclusions are well-supported by the reported numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Male-biased genes in T. pilosa floral buds exhibit significantly higher evolutionary rates (\u03c9 values) compared to female-biased and unbiased genes, with male-biased genes showing 13-19% higher median \u03c9 values depending on the evolutionary model used (two-ratio or free-ratio).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C79-C84, and C87-C89 present consistent evidence across two different evolutionary models (two-ratio and free-ratio) showing elevated \u03c9 values for male-biased genes in floral buds. Statistical significance is demonstrated with appropriate tests (Wilcoxon rank sum tests with p<0.01). The consistency across models strengthens the finding. This represents the first report of this pattern in angiosperms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In flowers at anthesis, evolutionary rate patterns differ from floral buds, with no consistent significant differences among sex-biased gene categories, possibly due to low statistical power from the small number of sex-biased genes at this stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 and C90-C92 report non-significant or inconsistent results for flowers at anthesis, with the authors appropriately noting the limitation of low statistical power (C86). The free-ratio model shows female-biased genes evolving faster than male-biased (C91), opposite to the floral bud pattern, but this is acknowledged as potentially unreliable due to sample size. The evaluation is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C130",
+      "C131"
+    ],
+    "result": "Approximately 28.57% of male-biased genes in floral buds show evidence of positive selection using multiple complementary methods (CodeML: 11.34%, aBSREL: 24.49%, BUSTED: 20.01%), with 32 genes (9.30%) identified by all three methods, representing a ~10% higher proportion than female-biased and unbiased genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 and C130-C131 present convergent evidence from three independent methods for detecting positive selection. The use of multiple methods is appropriate given known limitations of individual approaches. The percentages are clearly stated and the overlap analysis (C96) provides additional confidence. The comparison showing ~10% higher proportion in male-biased genes (C131) is supported by the data presented for female-biased (C104) and unbiased genes (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C149",
+      "C150"
+    ],
+    "result": "18 out of 343 male-biased genes (5.23%) show evidence of relaxed purifying selection (K=0.0184-0.6497), with most being members of gene families generated by gene duplication, including LBD18, WRKY72, and PRK3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 and C149-C150 present evidence for relaxed selection using the RELAX model with appropriate statistical thresholds. The connection to gene duplication (C98, C150) is supported by supplementary data and provides a mechanistic explanation. Specific gene family examples are provided with citations (C150), strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "61 out of 343 male-biased genes (17.73%) show evidence of intensified positive selection (K=2.3363-50, \u03c92\u22651), consistent with results from CodeML, aBSREL, and BUSTED analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 reports intensified selection using the RELAX model, with results consistent across multiple methods. The K values and \u03c9 thresholds are appropriate for identifying intensified selection. The consistency with other methods (CodeML, aBSREL, BUSTED) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Male-biased genes in floral buds exhibit stronger codon bias (lower ENC values) and higher synonymous substitution rates (dS) than female-biased and unbiased genes, indicating that rapid evolutionary rates are not associated with reduced codon usage bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 present codon usage bias analysis with appropriate statistical testing (Wilcoxon rank sum tests, p<0.05). The finding that male-biased genes have stronger codon bias (C100-C101) contradicts the expectation that rapid evolution is associated with reduced bias, which the authors appropriately note (C103). The higher dS values (C102) are consistent with stronger codon bias and provide an alternative explanation for elevated \u03c9 values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Comparative analysis shows male-biased genes have a higher proportion of positively selected genes (~10% more) than female-biased and unbiased genes, while relaxed selection proportions are similar, suggesting both positive and relaxed selection drive rapid evolution of male-biased genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 provide comparative data across all three gene categories (female-biased, male-biased, unbiased) for both positive and relaxed selection. The ~10% higher proportion of positively selected male-biased genes (C108) is supported by the specific percentages reported. The conclusion that both forces contribute (C110) is reasonable given the data, though positive selection appears to be the stronger driver.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C132",
+      "C133"
+    ],
+    "result": "Male-biased genes under positive selection are functionally associated with abiotic stress and immune responses, suggesting adaptive evolution drives high evolutionary rates in these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C111-C114, C132-C133 present KEGG pathway enrichment analysis (C111) showing male-biased genes enriched in stress and immune pathways (C113-C114, C132). The interpretation that this represents adaptive evolution (C7, C133) is reasonable and consistent with findings in Drosophila and Ectocarpus (C133). However, the functional enrichment alone does not definitively prove adaptive evolution\u2014it is an inference based on the combination of positive selection signatures and functional categories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C134",
+      "C135"
+    ],
+    "result": "Several male-biased genes under positive selection are functionally related to early flowering (phyB) and pollen development, suggesting a small fraction may experience adaptive evolution due to sexual selection driven by male-male competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C134-C135 identify specific genes with known functions in flowering time and pollen development, supported by citations. The interpretation of sexual selection (C135) is reasonable given the functional categories, though it remains speculative without direct evidence of male-male competition or fitness effects. The claim is appropriately cautious ('may experience', 'small fraction').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Ten rapidly evolving male-biased genes overlap with tissue-biased genes, suggesting elevated evolutionary rates may partly be linked to low evolutionary constraints, consistent with patterns in Anastrepha and Fucus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 present overlap analysis between male-biased genes with high evolutionary rates and tissue-biased genes. The small overlap (27 out of 343, 7.87%) with further overlap with positively selected (9/98) and relaxed selection (1/18) genes yields 10 genes (C144). The interpretation of low constraints (C145) is reasonable and supported by comparison to other systems. However, the small number of genes limits the strength of this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Female-biased genes in floral buds outnumber male-biased genes by ~21% and are enriched in defense pathways (terpenoid biosynthesis) and resource acquisition pathways (photosynthesis, chlorophyll metabolism), suggesting different adaptive strategies between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C120-C123 present the unexpected finding that female-biased genes outnumber male-biased genes (C120), contrary to patterns in some other dioecious plants. The functional enrichment data (C122-C123) support the interpretation of sex-specific physiological roles. The explanation invoking defense and resource needs (C121) is reasonable and supported by citations, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Male floral buds adapt to environmental conditions through rapidly evolving genes associated with stress responses, while also showing enrichment in autophagy and senescence pathways consistent with faster flower senescence, indicating expression changes in sex-biased genes drive sexual dimorphism in physiology and morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 integrate functional enrichment data with physiological observations (faster senescence, C125) and morphological differences (raceme development, C126). The interpretation that sex-biased gene expression drives dimorphism (C127) is well-supported by the combined evidence, though the causal direction cannot be definitively established from expression data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C128",
+      "C129"
+    ],
+    "result": "This study represents the first report of rapid evolution of male-biased genes in angiosperms, contrasting with previous studies in dioecious plants that found no evidence of elevated evolutionary rates in sex-biased genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C128-C129 establish the novelty of the finding by contrasting with established patterns in animals (C128) and the absence of such patterns in previous plant studies (C129). The claim of being 'first' (C9) is supported by the literature review showing five previous studies in dioecious angiosperms found no such pattern (C26-C30). This represents a significant advance in understanding plant sex-biased gene evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "Sex-linked genes represent comparable low proportions across male-biased (0.087%), female-biased (1.66%), and unbiased genes (1.51%), suggesting sex chromosomes contribute relatively little to rapid evolution of male-biased genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 present analysis distinguishing sex-linked from autosomal genes following established methods (Sandler et al., 2018). The low and comparable proportions across categories (C153) support the interpretation that sex linkage is not a major driver (C154). This appropriately addresses a potential confounding factor (C152) in evolutionary rate analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Gene duplication may promote rapid evolution through relaxed purifying selection, as observed in other systems (human progesterone receptor family, Brassicales CYP98A9 clade) and consistent with findings in T. pilosa male-biased genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C146-C148 establish the theoretical framework (C146) and provide comparative examples (C147-C148) supporting the role of gene duplication in relaxed selection. The connection to T. pilosa findings (C8) is supported by the observation that most genes under relaxed selection are duplicates (C98, C150). This provides a mechanistic explanation for the observed patterns.",
+    "result_type": "MINOR"
+  }
+]

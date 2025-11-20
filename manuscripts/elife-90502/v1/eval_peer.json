@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors generated extensive training datasets for ADeS, including over 10,000 apoptotic instances. The in vitro dataset contains 13,120 apoptotic and 301,630 nonapoptotic nuclei sequences, while the in vivo dataset was generated from 30 MP-IVM movies yielding 120 apoptotic sequences and 535 nonapoptotic samples.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge the large training datasets as a strength. One reviewer states the authors 'trained and successfully evaluated ADeS' and another notes 'the classifier is trained on large datasets,' indicating acceptance of the dataset claims without raising concerns about size or composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C45",
+      "C46"
+    ],
+    "result": "ADeS achieved high classification accuracy in both in vitro and in vivo settings. The Conv-Transformer architecture achieved 98.27% \u00b1 0.25% accuracy with F1 score of 0.98 and AUC of 0.997 for in vitro data, with a misclassification rate of only 2.68%. For in vivo data, the classifier achieved 97.80% accuracy with 2.20% misclassification rate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm these performance metrics. One reviewer states the classifier 'provides robust classification accuracies in test sets,' and another notes the authors 'convincingly presented their results.' The editor describes the evidence as 'solid,' indicating acceptance of the reported accuracy values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C54",
+      "C55"
+    ],
+    "result": "ADeS outperformed state-of-the-art solutions for apoptosis detection. The Conv-Transformer architecture outperformed CNN, 3DCNN, and Conv-LSTM networks. ADeS is the only algorithm for cell death quantification applied in vivo, and only ADeS and Vicar et al. 2020 effectively detected apoptotic cells in fully uncropped microscopy movies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the comparative performance claims. One reviewer states ADeS provides accuracies 'comparable to and even outperform existing deep learning architectures for apoptosis detection,' and another notes the authors 'compared its performance with available state-of-the-art tools.' The novelty of in vivo application is acknowledged without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C49",
+      "C68",
+      "C82"
+    ],
+    "result": "ADeS is the first method capable of detecting the location and duration of multiple apoptotic events in full microscopy timelapses, surpassing human performance. It represents a crucial bridge between activity recognition and bioimaging analysis, constituting a novel solution combining state-of-the-art microscopy and deep learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support the novelty claims. One reviewer states 'ADeS is an example of successful deployment of activity recognition (AR) in the automated bioimage analysis space,' and the editor describes it as 'innovative.' The comparison to human performance (C49) is supported by data showing no significant difference in TPR and FPR, which reviewers do not challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ADeS demonstrated strong performance on in vitro testing movies with 82.01% TPR and 5.95% FPR. The apoptotic count showed high correlation (r=0.998) with ground truth, with average spatial prediction distance of 30 pixels and temporal difference of 3.46 frames. ADeS showed a bias toward late detections of apoptosis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the in vitro validation as strong. One reviewer notes 'the utility of ADeS is obvious in identifying apoptotic events among FOVs containing ~1700 cells' and states the authors provide 'a wealth of information about the generation and validation of their DL classifier for in vitro movies.' The performance metrics are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ADeS detected apoptotic events in vivo with 81.3% TPR and 3.65% FPR, with tracking accuracy (TRA) above 0.9. Performance was affected by cell number (decreased TPR with higher cell density) and video quality (PPV lower with poor SNR; strong correlation of 0.72 between video quality and sensitivity for suboptimal videos).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express concerns about in vivo validation strength. One reviewer states 'the evidence is not as strong for in vivo use cases' and questions whether 'the cell density appears to be quite low, questioning the need for automated apoptotic detection.' Another notes the authors 'mention that video quality altered the sensitivity of ADeS in vivo (Fig 6L) but fail to provide an example of ADeS implementation on a video of poor quality.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "3D volumetric rotations enabled a 100-fold increase in the in vivo dataset without introducing imaging artifacts, as each volume rotation was a physiological representation of the cell.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly questions this approach, stating 'it is not clear how this strategy would provide a suitable training dataset for understanding the duration of apoptotic events in vivo since the temporal information remains the same.' This indicates concern about whether the augmentation method is appropriate for temporal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ADeS demonstrated effectiveness and robustness across various imaging modalities (confocal and intravital two-photon), cell types, and staining techniques. The datasets include different biological models with nuclear markers for in vitro and cytoplasmic/membrane staining for in vivo applications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the versatility. One reviewer states 'the authors also integrate ADeS into the analysis of data generated using different types of fluorescent markers in a variety of cell types and imaging modalities, which increases its adaptability by a larger number of researchers.' This indicates acceptance of the robustness claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "ADeS successfully quantified dose-dependent toxicity in doxorubicin-treated epithelial cells, measuring mortality from 62 cells (PBS) to 289 cells (5.00 \u03bcM doxorubicin) at 24 hours. It predicted distinct pharmacodynamics with EC50 values of 2.35 at 5 hr and 4.47 at 24 hr, showing that 10 \u03bcM doxorubicin attains 86% of maximum effect.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the toxicity assay application. One reviewer states the authors 'thoroughly evaluated ADeS for potential toxicity assay,' indicating acceptance of this use case. The pharmacodynamic analysis is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Following apoptotic events in lymph nodes, ADeS detected a sharp decrease in distance between neighboring cells and the apoptotic centroid, along with a pronounced increase in instantaneous speed of neighboring cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer questions the necessity of ADeS for these observations, stating 'In the use cases for in vivo apoptotic detection using ADeS (Fig 8), it appears that the location of the apoptotic event itself was obvious and did not need ADeS, as in the case of laser ablation in the spleen and the sparse distribution of GFP labeled neutrophils in the lymph nodes.' This suggests the biological insights may not require automated detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C67",
+      "C75"
+    ],
+    "result": "No computational method can deliver robust detection of apoptosis in microscopy timelapses depicting multiple cells. Probe-free detection represents a critical advancement, and ADeS can be applied directly to nuclear or cytoplasmic staining without additional fluorescent reporters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers challenge the 'probe-free' framing. One reviewer states 'the authors also emphasize the need for label-free apoptotic cell detection in both their abstract and their introduction but have not demonstrated the performance of ADeS in a true label-free environment where the cells do not express any fluorescent markers.' Another notes 'the use of ADeS is still restricted to samples where cells are fluorescently labeled either in the cytoplasm or in the nucleus.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C72"
+    ],
+    "result": "The Conv-Transformer architecture uses convolutional layers to extract spatial features and attention-based blocks to evaluate temporal relationships. This study established a landmark in the application of attention-based networks in activity recognition for live-cell imaging.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the architectural innovation. One reviewer describes it as a 'transformer based deep learning architecture' and states 'ADeS is an example of successful deployment of activity recognition (AR) in the automated bioimage analysis space, highlighting the potential benefits of AR to quantifying other intra- and intercellular processes.' The novelty of applying transformers to this problem is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Nuclear shrinkage and chromatin condensation are prototypical hallmarks of apoptosis used for manual annotation. Nonapoptotic nuclei had constant area and chromatin density, while apoptotic nuclei underwent decreased area and increased chromatin condensation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These morphological criteria are standard in the field and reviewers do not challenge them. The quantification is presented as validation of the annotation approach, and reviewers accept the dataset generation methodology without raising concerns about these specific features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The median duration of morphological changes associated with apoptosis in vivo corresponds to eight frames. Apoptotic cells exhibited speed not significantly different from arrested cells despite longer track length due to passive transport.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These characterization claims about in vivo apoptosis dynamics are presented as dataset validation and are not challenged by reviewers. They are treated as descriptive findings supporting the dataset design rather than major biological discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "For all biological categories tested, classification accuracy was above 80%, except for overlapping cells and cells with high membrane plasticity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This limitation is acknowledged by the authors and not disputed by reviewers. It represents an honest assessment of the method's boundaries and is consistent with reviewer concerns about cell density affecting performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "ADeS can be usefully applied in high-throughput live-cell imaging, minimizing annotation time and research bias. Integrating spatial-temporal characteristics could lay groundwork for understanding complex signaling pathways and facilitate development of predictive models correlating cell death dynamics with underlying stimuli.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers support the potential applications. One states 'ADeS will be a useful tool to improve output quality and accelerate the evaluation of assays in several research areas with basic and applied aims.' Another notes it will be 'of broad interest to cell biologists and neuroscientists.' These forward-looking claims are treated as reasonable extensions of the demonstrated capabilities.",
+    "result_type": "MINOR"
+  }
+]

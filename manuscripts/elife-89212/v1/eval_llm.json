@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C25",
+      "C71",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study quantified 23,126 high-confidence phosphosites from 28,809 phosphopeptides across 95 biological samples from five genetically distinct inbred mouse strains (C57Bl6J, NOD, BXH9, BXD34, CAST) fed either CHOW or HFD diets, with or without acute insulin stimulation. The strains exhibited diverse morphometric and metabolic phenotypes, and phosphopeptide quantification was reproducible with minimal impact from varying soleus mass across strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C25, C71, C87-C90 collectively describe the experimental design and phosphoproteomics quantification. The data show robust quantification across samples with appropriate controls for tissue mass variation (C89), high correlation within biological replicates (C90), and comprehensive coverage exceeding prior studies (C25, C91). The methodology using EasyPhos and DIA-MS is well-established (C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C91",
+      "C92"
+    ],
+    "result": "The study identified 441 insulin-regulated phosphopeptides on 232 proteins, which is more than recent comparable studies. The analysis recovered well-characterized insulin-regulated phosphosites including Akt substrates and showed enrichment for insulin regulation compared to a previous human study, though only half were previously annotated as insulin-regulated in existing databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C91-C92 demonstrate successful identification of insulin-regulated phosphosites with appropriate validation. The recovery of known sites (C26), enrichment in prior human data (C27, fold enrichment=4.22, p=9.50\u00d710\u207b\u00b2\u2074), and GO enrichment of canonical pathways (C92) provide strong validation. The finding that only 50% were previously annotated (C28) is appropriately framed as discovery potential rather than a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C33",
+      "C54",
+      "C96"
+    ],
+    "result": "Almost half (approximately 50%) of the 441 insulin-regulated phosphopeptides displayed strain effects, with insulin responses generally weaker in four strains compared to C57Bl6J. Each strain exhibited a unique fingerprint of insulin signalling, demonstrating that genetic background profoundly influences the insulin-regulated phosphoproteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29, C33, C54, C96 are supported by the data showing strain effects in approximately half of insulin-regulated phosphopeptides (C29) with strain-specific patterns (C33, C96). The statistical analysis used appropriate methods (ANOVA, t-tests with multiple testing correction) and the heatmap visualization (Figure 2f) clearly shows distinct strain-specific patterns. The conclusion about genetic influence (C54, C96) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "High-fat high-sugar feeding affected insulin signalling in a strain-dependent manner, with Strain\u00d7Diet effects (110 phosphopeptides) being more prevalent than Uniform diet effects (10 phosphopeptides). HFD-feeding exerted complex effects with strain-specific directions of change, and PCA showed that HFD displaced each strain in distinct directions in principal component space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C97-C102 demonstrate strain-dependent dietary effects with strong statistical support. The 11-fold difference between Strain\u00d7Diet and Uniform diet effects (C34) is striking and well-documented. The PCA analysis (C100) and detailed characterization of effect directions (C98-C99) provide robust evidence. The statistical framework appropriately separates uniform and interaction effects using two-way ANOVA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "WGCNA identified eight subnetworks of coregulated insulin-responsive phosphopeptides (16-120 phosphopeptides each) that captured distinct effects of genetics and diet. Substrates of the same kinase (e.g., Akt) clustered into distinct groups, and subnetworks showed enrichment in specific cellular compartments, biological processes, and temporal dynamics, revealing complex organizational structure beyond linear kinase cascades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44-C45, C113-C119 describe the WGCNA-derived subnetwork structure with appropriate methodology. The finding that Akt substrates cluster into four distinct groups (C44) with poor correlation between some substrates (C43, r=0.202) challenges simple linear models. Enrichment analyses for compartments (C115), processes (C116), and temporal dynamics (C117) are appropriately conducted with statistical testing. The interpretation that this reveals organizational complexity (C118-C119) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C109",
+      "C110"
+    ],
+    "result": "KSEA accurately captured activation of canonical insulin-regulated kinases (Akt, mTOR, p70S6K, p90RSK) and deactivation of GSK3. Seven kinases were differentially enriched across strains in CHOW-fed mice, and Strain\u00d7Diet effects on kinases (5 kinases) were more prevalent than Uniform diet effects (1 kinase), suggesting altered kinase regulation contributes to observed phosphosite changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C109-C110 demonstrate appropriate use of KSEA with validation against known kinases (C40). The identification of strain-specific kinase enrichment (C41, 7 kinases, ANOVA p<0.05) and predominant Strain\u00d7Diet effects (C42, 5 vs 1 kinase) is statistically sound. The interpretation that kinase regulation contributes to phosphosite changes (C110) is reasonable but appropriately cautious ('could be partly due to').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C120"
+    ],
+    "result": "Insulin-stimulated glucose uptake differed by more than twofold across strains (two-way ANOVA strain effect p=4.78\u00d710\u207b\u2077) and was almost uniformly decreased by HFD-feeding (diet effect p=1.83\u00d710\u207b\u2075), demonstrating that genetic background and dietary status are key determinants of insulin responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C120 present glucose uptake measurements with strong statistical support (highly significant p-values from two-way ANOVA). The >2-fold difference across strains and uniform HFD effect are clearly demonstrated. The conclusion that genetics and diet are key determinants (C120) is directly supported by the significant main effects in the ANOVA model. Sample sizes (n=4-6) are adequate for these effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C60",
+      "C121",
+      "C122"
+    ],
+    "result": "Correlation analysis identified 37 phosphopeptides whose insulin-stimulated intensity correlated with glucose uptake and 13 phosphopeptides whose insulin response correlated with glucose uptake (r>0.35 or <-0.35, q<0.1). Most glucose uptake-phosphosite associations were not driven by protein abundance changes, as only 2 of 16 overlapping proteins also correlated at the protein level in a prior proteomics study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C60-C61, C121-C122 describe correlation analyses with appropriate statistical thresholds and multiple testing correction. The finding that only 2/16 proteins show abundance correlation (C121) supports the interpretation that phosphorylation provides unique information (C122). The relatively small number of correlated phosphopeptides (C60) is appropriately noted and discussed in context of permissive vs. regulatory sites (C61). The inclusion of known regulators like Nos3 (C75) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Two WGCNA subnetworks correlated with glucose uptake: subnetwork V (r=0.436, p=0.00173) and subnetwork I (r=0.332, p=0.0197). Subnetwork V could modulate glucose uptake through multiple mechanisms including actin remodeling, glucose metabolism, and GLUT4 trafficking, and was enriched in GSK3 substrates. This suggests compartmentalization of insulin-responsive phosphosites may enable independent control of insulin's functional outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C51, C125-C128 identify subnetwork-glucose uptake correlations with appropriate statistics. The mechanistic interpretation for subnetwork V (C125) is speculative but reasonable given the enrichment data. The conclusion about compartmentalization enabling independent control (C128) is appropriately framed as speculative ('may enable'). The finding that only 2/8 subnetworks correlate with glucose uptake supports functional specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C129",
+      "C130",
+      "C131",
+      "C133",
+      "C135"
+    ],
+    "result": "Pfkfb3 overexpression increased glycolytic capacity in L6-GLUT4-HA myotubes and restored insulin-responsive glucose uptake to normal levels in palmitate-treated cells, confirming the role of glycolysis in modulating insulin action in insulin resistance. This validates prior findings linking glycolytic flux to insulin responsiveness and the correlation of Pfkfb2 S469 with glucose uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C52-C53, C76-C79, C129-C131, C133, C135 describe validation experiments with appropriate controls. Pfkfb3 overexpression increased ECAR (C52) and rescued insulin-stimulated glucose uptake specifically in palmitate+insulin conditions (C53, C85), supporting a specific effect on insulin action. The rationale for using Pfkfb3 rather than Pfkfb2 (C131-C133) is sound. The results confirm prior findings (C76-C79) and validate the correlation-based discovery approach. However, C86 notes that canonical insulin signaling sites showed minimal changes, indicating the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C136"
+    ],
+    "result": "Genetic and diet-driven signaling changes did not transmit linearly through the current model of the insulin signaling network. Substrates of kinases such as Akt clustered into distinct groups based on differing insulin responses, demonstrating that it is an oversimplification to model signaling pathways as networks of individual kinases since substrates of the same kinase display independent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C136 present an important conceptual finding supported by the Akt substrate clustering analysis (C44) and poor correlation between some Akt substrates (C43). The conclusion that linear kinase-centric models are oversimplified (C57) is well-supported by the data showing substrate-specific regulation. This is further validated by prior observations in humans (C111). The interpretation appropriately acknowledges model incompleteness (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C58",
+      "C59",
+      "C102",
+      "C108",
+      "C138"
+    ],
+    "result": "Genetics shapes global signaling responses and their adaptability to environmental changes. The work represents the first global portrait of insulin signaling network plasticity in response to genetic and environmental variation, demonstrating that insulin responses in C57Bl6J are not necessarily generalizable to other mouse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C54, C58-C59, C102, C108, C138 present the overarching conclusions of the study. These are well-supported by the extensive data on strain effects (C2, C29), diet effects (C3, C34), and their interactions (C97-C102). The claim of novelty (C138, 'first global portrait') is reasonable given the scope. The caution about C57Bl6J generalizability (C59) is supported by strain-specific responses like Rnmt S15. The emphasis on studying biological diversity (C7) is justified by the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Analysis of a curated network of 160 insulin-regulated phosphosites showed that strain and diet affected both canonical and non-canonical insulin signaling proteins to similar extents, with no functional pathways overrepresented among affected sites. This implies that genetics and environment modulate most or all outcomes of insulin action, with the notable exception of Plin1 phosphosites showing enrichment for diet effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C103-C108 describe the curated network analysis with appropriate methodology (C103). The finding that canonical and non-canonical proteins are similarly affected (C38) and that Strain/Diet effects overlap significantly (C39, fold enrichment=1.50, p=4.40\u00d710\u207b\u2079) is well-supported. The interpretation that genetics/environment modulate most insulin outcomes (C104-C105) is reasonable given the lack of pathway enrichment. The Plin1 exception (C106) is appropriately noted, though the mechanistic interpretation (C107) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C94"
+    ],
+    "result": "Vamp3 S48 is predicted to be highly functional (functional score=0.750), its phosphorylation correlates with glucose uptake in human skeletal muscle, and Vamp3 overexpression rescues GLUT4 translocation in insulin resistance, suggesting this site may represent a genetically variable control point of GLUT4 trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C32, C94 compile evidence from prior studies (citations provided) about Vamp3 S48, but the current study only shows it has a strain effect (C29, Figure 2d). The speculation that it represents a 'genetically variable control point' (C94) is reasonable but not directly tested in this study. The claim would require functional validation of the S48 site specifically in the context of genetic variation to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C95"
+    ],
+    "result": "Map2k4 S78 showed a Strain\u00d7Diet effect, with insulin response attenuated by HFD-feeding only in C57Bl6J and CAST. Since Map2k4 activates p38 and JNK kinases implicated in HFD-induced insulin resistance, the orchestration of this detrimental signaling axis in HFD-feeding may depend on genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C95 present a specific example of Strain\u00d7Diet interaction with mechanistic context from prior literature (C35). The observation of strain-specific HFD effects on Map2k4 S78 (Figure 2h) is clear. The interpretation about genetic background dependence (C95) is appropriately speculative ('may depend') and is supported by the data, though functional validation would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C123",
+      "C124"
+    ],
+    "result": "None of the four primary Akt regulatory sites on Tbc1d4 featured strong positive correlations with glucose uptake, despite their requirement for GLUT4 translocation. Additionally, kinase enrichment scores affected by strain or diet did not correlate with glucose uptake, suggesting insulin action is not dominated by the net activity of specific kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C123-C124 present negative results that are important for interpretation. The lack of correlation for Tbc1d4 sites (C61) despite their known requirement (Sano et al., 2003) is appropriately discussed as evidence for permissive vs. regulatory roles. The lack of kinase-level correlation (C123) supports the interpretation about substrate-specific regulation (C57). These negative results are well-documented and appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study has several acknowledged limitations: it focused on male mice and only five inbred strains, which may have underpowered the association analysis; it examined only a single 10-min insulin timepoint; and it did not measure total proteomes in parallel, though prior studies suggest minimal contribution of protein abundance to phosphosite changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 appropriately acknowledge study limitations. The limitation about sample size (C62-C63) is fairly stated - it doesn't invalidate findings but may limit discovery. The single timepoint limitation (C66) is acknowledged with appropriate justification. The lack of parallel proteomics (C67-C68) is addressed by citing prior studies showing minimal correlation between phosphorylation and abundance changes, which is reasonable but not definitive for this specific dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction establishes the biological context: phosphorylation enables rapid cellular responses at low metabolic cost and is involved in nearly all biological processes; the phosphoproteome comprises vast interconnected networks; insulin signaling regulates over a thousand phosphosites; insulin resistance is triggered by genetic and environmental factors with unresolved mechanisms; and how global phosphorylation networks are regulated across genetic backgrounds is relatively unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C22 provide background context with appropriate citations to prior work. These are well-established facts in the field (C8-C15) or appropriately cited recent findings (C21-C22). The identification of the knowledge gap (C20) is reasonable and sets up the study rationale. All claims are appropriately supported by citations and represent accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The methods section describes appropriate experimental conditions and model systems: mice were housed under standard conditions and randomly allocated to diets; skeletal muscle (specifically soleus) was chosen as the primary site of glucose uptake and insulin resistance; and L6-GLUT4-HA myotubes were selected over C2C12 cells for validation due to their robust insulin-responsive GLUT4 trafficking and ability to model palmitate-induced insulin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C72-C74, C81-C84 describe methodological choices with appropriate justification. The choice of soleus muscle (C72-C74) is well-justified by citations. The choice of L6 cells over C2C12 (C81-C84) is appropriately justified by prior literature showing C2C12 limitations. Housing conditions (C69) and randomization (C70) are standard and appropriate. These represent sound experimental design decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C80",
+      "C86",
+      "C131",
+      "C132"
+    ],
+    "result": "The study includes appropriate positive controls and mechanistic context: Nos3 S1176 serves as a positive control for glucose uptake correlation analysis as it is known to promote glucose uptake via vasodilation; Pfkfb3 was chosen for overexpression because it has high basal F2,6BP production rates and lacks Akt-dependent regulation unlike Pfkfb2; however, immunoblotting showed minimal effects on canonical insulin signaling sites, indicating the mechanism requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C80, C86, C131-C132 describe validation controls and mechanistic considerations. The use of Nos3 as a positive control (C75) is appropriate and well-justified by citations. The rationale for using Pfkfb3 (C80, C131-C132) is sound and based on biochemical properties. The acknowledgment that canonical signaling sites were minimally affected (C86) is important and appropriately noted as requiring further investigation. These demonstrate scientific rigor in validation approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C111"
+    ],
+    "result": "A small subset of phosphosites were regulated by both insulin in this study and exercise in two separate human phosphoproteomics studies, providing a starting point for exploring conserved signaling regulators of GLUT4 translocation. Similar heterogeneity in Akt substrate insulin responses has been observed in human skeletal muscle with differing metabolic health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C111 connect the current findings to prior human studies. The identification of insulin/exercise-regulated sites (C93) is appropriately presented as a starting point for future work. The validation of Akt substrate heterogeneity in humans (C111, Tonks et al., 2013) strengthens the biological relevance of the findings. These represent appropriate contextualization within the broader literature.",
+    "result_type": "MINOR"
+  }
+]

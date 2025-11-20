@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C44",
+      "C45",
+      "C46",
+      "C49"
+    ],
+    "result": "6mA is present at very low levels in Drosophila genome under axenic conditions. Using LC-MS/MS, the authors measured 0.00025% 6mA in whole larvae and 0.0005% in larval CNS under axenic conditions, corresponding to approximately 200-400 methylated adenines per haplogenome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28, C44, C45, C46, and C49 are well-supported by LC-MS/MS measurements presented in Figures 1B and 1C. The measurements were performed under carefully controlled axenic conditions with validated absence of bacterial contamination (C42, C43), addressing a major confounding factor. The quantification is consistent across multiple tissues and the conversion to absolute numbers of methylated adenines per genome is straightforward.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C61",
+      "C63",
+      "C66",
+      "C82",
+      "C83",
+      "C87"
+    ],
+    "result": "TET loss does not lead to increased 6mA levels in Drosophila. The authors found no significant increase in 6mA levels in TET mutants (tetnull or tetDMAD1/DMAD2) across multiple tissues (larval CNS, whole larvae, embryos, adult brains) under both axenic and conventional conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29-C32, C61, C63, C66, C82-C83, and C87 are strongly supported by comprehensive LC-MS/MS measurements across multiple tissues, developmental stages, and breeding conditions (Figures 1B-G). The authors tested multiple TET alleles and controlled for bacterial contamination. The lack of statistical significance is explicitly stated (C86: p=0.075 for the only apparent increase). This contradicts prior literature (C51) but is well-documented here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "SMRT-seq analysis reveals high false positive rates for 6mA detection but shows no TET-dependent differences. The authors found that SMRT-seq identified 0.158-0.172% potential 6mA sites, much higher than LC-MS/MS measurements, with only 2.6% reproducible across all three replicates. Increasing quality value (QV) thresholds improved reproducibility but revealed no significant differences between wild-type and TET mutant samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C100 are supported by detailed SMRT-seq analysis (Figure 2 and supplements). The authors systematically evaluated the effect of coverage and QV parameters on 6mA detection, demonstrating high false positive rates consistent with prior literature (C95). The lack of difference between wild-type and TET mutants (C98, C100) is shown across multiple QV thresholds. However, the interpretation that SMRT-seq is 'noisy' (C99) could benefit from more quantitative assessment of signal-to-noise ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In vitro enzymatic assays show that Drosophila TET efficiently oxidizes 5mC but not 6mA. Recombinant TET catalytic domain drastically reduced 5mC levels within 1 minute with concomitant appearance of oxidation products (5hmC, 5fC), while 6mA levels remained constant even after 30 minutes of incubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are well-supported by in vitro LC-MS/MS measurements (Figure 3A-B). The dramatic difference in substrate preference (near-complete 5mC oxidation in 1 min vs. no detectable 6mA oxidation in 30 min) provides strong biochemical evidence. The control experiment with unmodified DNA (C105, C106) appropriately rules out contamination. However, the authors acknowledge differences in experimental conditions compared to prior studies (C107-C109), and the speculative claim C110 about 'much lower affinity' would require kinetic measurements for full support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Sequence analysis shows that key residues required for 6mA oxidation in fungal TET are not conserved in Drosophila TET. The authors compared Drosophila TET with Coprinopsis cinerea TET, which can oxidize both 5mC and 6mA, and found that critical residues for 6mA binding are absent in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by sequence alignment data (Figure 3\u2014figure supplement 2) and citation to prior literature (C112). The structural argument that Drosophila TET lacks key residues for 6mA binding provides mechanistic support for the biochemical observations. However, the evaluation would be strengthened by structural modeling or mutagenesis experiments to directly test the functional importance of these residues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "A catalytic-dead TET mutant (tetCD) was generated by mutating the conserved HxD iron-binding motif. The H1947Y/D1949A mutation does not alter TET expression or nuclear localization in larval CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by the methods description and immunostaining data (Figure 4A-H). The CRISPR/Cas9-mediated generation of the catalytic-dead allele is well-documented, and the immunostaining confirms proper expression and localization. This is a critical control showing that the mutation specifically affects catalytic activity without disrupting protein stability or localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C130"
+    ],
+    "result": "TET function in Drosophila development is largely catalytic-independent. While tetnull homozygotes die at the pupal stage, tetCD/CD and tetCD/null flies are viable and do not exhibit developmental defects (wing positioning, ovarian development, mushroom body formation) observed in TET-null mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 and C130 are strongly supported by comprehensive viability and phenotypic analyses (Figure 4I-L and supplements). The striking difference between null and catalytic-dead alleles provides compelling genetic evidence that TET's essential function is independent of its enzymatic activity. The rescue of lethality and developmental defects in tetCD mutants is clear and well-documented. This is a major finding that reinterprets TET's role in Drosophila.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C33",
+      "C71",
+      "C72",
+      "C129"
+    ],
+    "result": "TET is not involved in 6mA or 5mC demethylation in Drosophila. This conclusion is based on the lack of 6mA/5mC accumulation in TET mutants, the absence of in vitro 6mA demethylation activity, and the viability of catalytic-dead TET mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C33, C71, C72, and C129 represent the central conclusion of the manuscript, supported by converging evidence from multiple experimental approaches: LC-MS/MS measurements (no accumulation in mutants), SMRT-seq (no differences), in vitro assays (no 6mA oxidation), sequence analysis (lack of key residues), and genetic analysis (catalytic-dead mutants are viable). The evidence is comprehensive and internally consistent, though the conclusion contradicts prior literature (C2, C26, C51, C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C34"
+    ],
+    "result": "TET acts in an enzymatic-independent manner that is important for Drosophila development. The viability of catalytic-dead mutants demonstrates that TET's essential function does not require its catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, and C34 are supported by the genetic analysis showing that tetCD mutants are viable and phenotypically normal (C122-C125). However, the manuscript does not investigate the mechanism of TET's non-enzymatic function. The authors acknowledge this limitation (C132) and call for future work. The claim is well-supported as stated but leaves the mechanistic question open.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Axenic Drosophila lines were successfully generated and validated to be free of bacterial contamination. PCR and genomic sequencing confirmed <0.003% bacterial DNA in axenic samples versus ~2% in conventional flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C43, C75, C76, and C77 are supported by PCR data (Figure 1A) and genomic sequencing analysis (Figure 1\u2014figure supplement 1). The validation of axenic conditions is critical for addressing the major confounding factor of bacterial contamination in 6mA measurements (C21, C38). The methods are appropriate and the difference between conventional and axenic samples is substantial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "6mA levels are higher and more variable in conventional versus axenic flies. Similar 6mA levels were observed in larval CNS under both conditions, but embryos and adult brains showed elevated levels in conventional flies, suggesting contamination affects some tissues more than others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, C78-C81 are supported by LC-MS/MS measurements (Figure 1C, F, G). The tissue-specific differences in contamination sensitivity are interesting and suggest that larval CNS may be more protected from bacterial contamination. However, the inference that contamination is 'not a major problem' in CNS (C48) is somewhat at odds with the general caution about interpreting non-axenic data (C81). The data support the claims but the interpretation could be more nuanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Very low levels of 5mC (~0.001%) were observed in larval CNS with no increase upon TET loss, and 5hmC was below detection limit. This confirms that TET does not control 5mC oxidation in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by LC-MS/MS measurements (Figure 1E) and consistent with prior literature (C67 cites Zhang et al., 2015). The extremely low 5mC levels and absence of 5hmC are consistent with the known lack of DNA methyltransferases in Drosophila (C57, C58). This provides important context for understanding why TET might have evolved alternative functions in this organism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "An apparent increase in 6mA levels in tetDMAD1/DMAD2 axenic embryos was not reproduced in tetnull embryos and was not statistically significant (p=0.075), suggesting it does not reflect TET loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by LC-MS/MS data and statistical analysis. The lack of reproducibility between different TET alleles and the borderline p-value appropriately lead the authors to conclude this is not a genuine effect. This careful analysis of an apparent positive result demonstrates scientific rigor. However, the p-value of 0.075 is close to the conventional threshold, and additional replicates or alternative statistical approaches might strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors' in vitro results contrast with prior studies showing TET can demethylate 6mA. Differences in reaction time, protein source, and post-translational modifications may explain the discrepancy. The authors suggest TET may oxidize 6mA with much lower affinity than 5mC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111 attempt to reconcile conflicting results with prior literature. C107-C109 accurately cite prior work, and C108 correctly identifies methodological differences. However, C110 is speculative (labeled as SPECULATION in evidence_type) and not directly tested\u2014true affinity measurements would require kinetic analysis. C111 is also speculative. While the discussion is reasonable, the claims about 'much lower affinity' and effects of post-translational modifications are not experimentally supported in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors conclude that 6mA is unlikely to play a major regulatory function in Drosophila under normal conditions and call for further investigation of regulated adenine methylation/demethylation and TET's non-enzymatic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is partially speculative (labeled as SPECULATION in evidence_type)\u2014while the very low 6mA levels are well-established, the inference that this precludes 'major regulatory function' assumes that regulatory importance requires high abundance, which may not always be true. Claims C131 and C132 are statements about future research needs rather than experimental findings. These represent reasonable interpretations and future directions but are not directly supported by experimental data.",
+    "result_type": "MINOR"
+  }
+]

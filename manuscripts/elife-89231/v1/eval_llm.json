@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Computational simulations predict that self-acting and interface-acting nucleotide mechanisms produce distinct effects on plus- and minus-end growth rates in the presence of GDP-tubulin. In the self-acting model, both ends are equally affected by GDP-tubulin, whereas in the interface-acting model, plus-end growth is disproportionately inhibited compared to minus-end growth. This prediction is robust across different parameter choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C22, C23, C60, and C61 consistently demonstrate through simulations that the two mechanisms produce distinguishable predictions. Claim C62 confirms robustness across parameter variations (Figure 1\u2014figure supplement 3). The simulation methodology is clearly described (C59), and the predictions are internally consistent and logically derived from the structural differences between plus- and minus-ends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C63",
+      "C64"
+    ],
+    "result": "Experimental measurements using mixed nucleotide assays (GMPCPP and GDP) demonstrate that plus-end growth rates are disproportionately inhibited by GDP-tubulin compared to minus-end growth rates. At 25 \u00b5M GDP, plus-end growth decreased by ~50% while minus-end growth decreased by only ~30%, with this ~1.5-fold differential maintained across multiple nucleotide ratios and statistically significant (P<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 and C63-C64 provide consistent experimental evidence with appropriate statistical analysis (two-sided t-test, P<0.001). The measurements are quantitative, reproducible across conditions, and directly test the predictions from simulations. Sample sizes appear adequate (n=39-125 depending on condition), and the use of GMPCPP to prevent catastrophe is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Tubulin binds GMPCPP 12.5-fold less tightly than GDP, as determined by fitting minus-end growth rates to a competitive binding model and confirmed by direct nucleotide binding measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is derived from a well-described competitive binding model fit to experimental data (Figure 3B), and C33 confirms this inference with independent direct measurements (Figure 3\u2014figure supplement 1) that agree with prior literature. The convergence of indirect (kinetic) and direct (binding) measurements strengthens confidence in this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Plus-end growth rates decrease super-stoichiometrically with increasing GDP-tubulin concentration, while minus-end growth rates decrease stoichiometrically. This differential effect is most apparent when 25-55% of unpolymerized tubulin is GDP-bound and provides strong support for the interface-acting mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe clear experimental observations shown in Figure 3C-D. The super-stoichiometric effect at the plus-end (C35, C36) contrasts with the stoichiometric effect at the minus-end (C34), directly matching the predictions of the interface-acting model. Claim C37's conclusion is well-supported by the convergence of simulation predictions and experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Simulations using an interface-acting nucleotide model with fitted biochemical parameters successfully recapitulate experimental growth rates for both ends in pure GMPCPP and the linear decrease in minus-end growth with GDP-tubulin. However, the model overpredicts the magnitude of GDP-induced super-stoichiometric inhibition at the plus-end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate that the model successfully fits baseline conditions and minus-end behavior. Claim C42 honestly acknowledges a quantitative discrepancy between model predictions and experimental observations at the plus-end, which is appropriately addressed in subsequent analysis (nucleotide exchange). The transparency about model limitations strengthens rather than weakens the overall evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44"
+    ],
+    "result": "In the interface-acting mechanism, GDP-tubulin 'poisons' plus-ends by binding tightly when the interfacial nucleotide is GMPCPP, resulting in an extended residence time that blocks further growth. This mechanism explains the super-stoichiometric effect of GDP-tubulin on plus-end growth but does not occur at minus-ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 provide a clear mechanistic explanation for the observed super-stoichiometric effect, illustrated in Figure 4D. Claim C7 summarizes this mechanism. The explanation is logically consistent with the interface-acting model and the structural differences between plus- and minus-ends. The mechanism is supported by both simulation results and experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C45",
+      "C46"
+    ],
+    "result": "Incorporating nucleotide exchange at terminal plus-end subunits into simulations mitigates the GDP-poisoning effect and improves quantitative agreement with experimental data. The optimal exchange rate of 0.3-0.5 s\u207b\u00b9 is consistent with prior estimates from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 demonstrate that including nucleotide exchange resolves the quantitative discrepancy noted in C42. The fitted exchange rate agrees with independent literature values, providing external validation. Claim C8 summarizes this finding. The approach is methodologically sound, though it introduces an additional parameter to improve model fit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C9",
+      "C47",
+      "C55"
+    ],
+    "result": "The combined simulation and experimental evidence demonstrates that the interfacial nucleotide determines tubulin:tubulin interaction strength, providing the most direct evidence to date for the interface-acting mechanism and settling the longstanding debate over nucleotide action in microtubule dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47, and C55 represent the main conclusions, supported by the convergence of simulation predictions (C4-C5, C22-C23) and experimental observations (C27-C31, C35-C36). Claim C9 states the central conclusion. The evidence is strong: the differential sensitivity of plus- and minus-ends to GDP-tubulin is incompatible with a self-acting mechanism and consistent with interface-acting mechanism across multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C54"
+    ],
+    "result": "The findings support an emerging view of the growing microtubule end as a 'mosaic' of nucleotide states rather than a uniform GTP cap, with GDP-terminated protofilaments influencing growth, fluctuations, catastrophe, and regulation without always initiating catastrophe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C51, and C54 place the current findings in the context of recent literature (C49), which is well-supported by multiple citations. The 'mosaic' model is consistent with the demonstrated ability of GDP-tubulin to modulate plus-end growth in a graded manner. This represents a conceptual advance in understanding microtubule dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The tendency for plus-end growth to 'stutter' and fluctuate, and the higher frequency of catastrophe at plus-ends, might be explained by exposed GDP-tubulin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52 and C53 are explicitly speculative ('might be explained') and supported only by citations to prior work showing these phenomena exist. While the speculation is reasonable given the demonstrated effects of GDP-tubulin on plus-end growth, the current study does not directly test these specific phenomena (stuttering, fluctuations, catastrophe frequency). Additional experiments would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Similarities between microtubules and AAA proteins in their use of interfacial nucleotides may indicate a shared, convergently evolved mechanism for achieving force production in oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56 and C57 accurately describe features of AAA proteins supported by citations. However, C58 is explicitly speculative ('we speculate') and represents a broad evolutionary hypothesis that extends well beyond the scope of the current study. While the parallel is interesting, the claim about convergent evolution would require comparative structural, biochemical, and evolutionary analyses not presented here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C50"
+    ],
+    "result": "Background knowledge about microtubule structure, dynamics, and historical models of nucleotide action, including the structural distinction between plus- and minus-ends and the evolution of thinking about the GTP cap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C21, C24, and C50 represent established knowledge in the field, appropriately cited and accurately described. These provide necessary context for understanding the current work. Claim C15 is particularly important as it describes prior work that contradicted the early cis-acting model, motivating the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Definitions of self-acting (cis) and interface-acting (trans) mechanisms for how nucleotide state controls tubulin:tubulin interaction strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C3 provide clear, accurate definitions of the two competing mechanistic models being tested. These definitions are essential for understanding the study design and interpreting the results. The definitions are consistent with usage in the cited literature.",
+    "result_type": "MINOR"
+  }
+]

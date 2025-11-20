@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript provides background context on colorectal cancer epidemiology, risk factors, and the potential role of metabolism and circulating metabolites in CRC development. These claims establish that CRC is a major global health burden with both genetic and modifiable risk factors, and that metabolites (particularly PUFAs) may be involved in disease pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 are all supported by appropriate citations to prior literature and represent established knowledge in the field. These background claims provide necessary context for the study but do not constitute novel findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript describes the Mendelian randomization (MR) methodology, explaining that it uses genetic variants as instrumental variables to assess causal relationships between traits and disease, with the advantage of reduced confounding due to random assortment of germline variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 accurately describe established MR methodology principles. These are methodological descriptions rather than novel findings and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The study utilized three cohorts: ALSPAC (6,221 individuals with metabolomics data), UK Biobank (488,377 genotyped participants, 117,121 with metabolomics), and a CRC GWAS meta-analysis (52,775 cases and 45,940 controls, excluding UK Biobank to avoid sample overlap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 provide accurate descriptions of the study populations with appropriate citations. The sample sizes and study designs are clearly documented. The exclusion of UK Biobank from the CRC GWAS to avoid overlap bias is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A genetic risk score (GRS) for CRC was constructed from 108 independent SNPs from GWAS meta-analyses, filtered to 72 SNPs after removing those in linkage disequilibrium (R\u00b2 > 0.001), with 65 available in ALSPAC data. Site-specific GRS were also constructed given known heterogeneity across CRC anatomical sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe appropriate methods for constructing genetic instruments. The LD pruning threshold (R\u00b2 > 0.001) is standard practice, and the construction of site-specific GRS is justified by known heterogeneity. The methods are clearly documented with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Metabolites were measured using 1H-NMR spectroscopy in ALSPAC at ages 8, 16, 18, and 25 years (non-fasting at age 8, fasting at other ages), quantifying up to 231 metabolites. UK Biobank measured 249 metabolic traits in 117,121 participants (median age 58 years) using the same platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 accurately describe the metabolomics measurements with appropriate citations. The use of the same NMR platform across cohorts enhances comparability. Sample sizes at each timepoint are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In ALSPAC, genetic liability to CRC showed no strong associations with metabolites at age 8 or 25 years, but was associated with higher lipid traits at age 16 years and multiple lipid, apolipoprotein, and fatty acid traits (including omega-3 and DHA) at age 18 years. Site-specific analyses showed associations with omega-3 and DHA for colon cancer at age 18. Excluding FADS SNPs reduced evidence strength but maintained consistent effect directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 report the primary GRS analysis results with effect sizes and confidence intervals. The age-specific pattern (strongest at 18 years) is clearly documented. The sensitivity analysis excluding FADS SNPs is appropriate given potential pleiotropy, though the authors acknowledge this may not fully address pleiotropy. Statistical significance is based on FDR correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Reverse MR analysis in UK Biobank showed F-statistics >10 (indicating adequate instrument strength), but little evidence for associations at FDR-P < 0.05. However, effect directions were consistent with ALSPAC findings, showing weak associations between CRC liability and higher non-HDLs, lipoproteins, and fatty acids. Subsite analysis showed evidence for proximal colon cancer liability affecting total fatty acids and omega-6 fatty acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C54 report replication attempts in UK Biobank. While F-statistics indicate adequate instrument strength (C50), the lack of statistical significance at the pre-specified threshold (C51) contrasts with the ALSPAC findings. The authors note directional consistency (C52), but this represents weak evidence. The difference in age between cohorts (median 58 vs. mean 18-25 in ALSPAC) and potential medication use may explain discrepancies, but this limits interpretability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Forward MR analysis showed F-statistics >10 and strong evidence for effects of multiple fatty acid traits on CRC risk, including omega-3 (OR=1.13), DHA (OR=1.76), omega-3/total fatty acid ratio (OR=1.18), DHA/total fatty acid ratio (OR=1.20), and omega-6/omega-3 ratio (OR=0.86). Effects were strongest for distal colon cancer. Excluding FADS SNPs eliminated statistical significance but maintained consistent effect directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C66 report forward MR results suggesting causal effects of fatty acids on CRC. However, there are significant concerns: (1) The OR for DHA (1.76, C57) appears inconsistent with the confidence interval (1.08-1.28), suggesting a potential error. (2) The authors acknowledge substantial pleiotropy among fatty acid SNPs (C72), which violates MR assumptions. (3) Loss of significance when excluding FADS SNPs (C61) suggests results may be driven by pleiotropic effects. (4) The NMR platform has limited fatty acid coverage (C74), preventing investigation of specific fatty acids like arachidonic acid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C75",
+      "C82"
+    ],
+    "result": "The study concludes that genetic liability to CRC is associated with altered circulating metabolites (particularly lipoproteins, apolipoproteins, and fatty acids) in young adults, with strongest evidence at age 18 years. Results were directionally consistent but weaker in middle-aged adults. Forward MR suggests PUFAs may have a causal role in CRC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71, C75, and C82 summarize the main conclusions. While the GRS analysis in ALSPAC shows clear associations (supporting C67-C69, C75), the replication in UK Biobank is weak (C70), and the forward MR results are compromised by pleiotropy concerns (C71). The conclusion that metabolites are \"associated with\" CRC liability is supported, but the causal interpretation for PUFAs (C71, C82) is uncertain given the methodological limitations acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study acknowledges important limitations: SNPs associated with one fatty acid typically affect multiple fatty acid and non-fatty acid traits (pleiotropy), FADS1/FADS2 enzymes affect both omega-3 and omega-6 metabolism, and the NMR platform has limited fatty acid coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 accurately describe methodological limitations with appropriate citations. These limitations are critical for interpreting the forward MR results and are appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The discussion contextualizes findings relative to prior work and acknowledges additional limitations including: previous MR studies found little evidence for cholesterol effects on CRC; high-fat diet may increase CRC risk through multiple pathways; median CRC diagnosis age is 64 years (much older than ALSPAC participants); analyses were restricted to white Europeans; and UK Biobank participants' median age (58 years) means widespread statin use may attenuate estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 provide appropriate contextualization and acknowledge important limitations. The age discrepancy between ALSPAC participants and typical CRC diagnosis (C79) is particularly relevant for interpreting the reverse MR results. The potential for statin use to attenuate forward MR estimates (C81) is a valid concern. Restriction to white Europeans (C80) limits generalizability.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study identified 12,963 phosphopeptides and 3,646 phosphoproteins using TMT-labeling mass spectrometry, with 781 phosphoproteins differentially regulated by genotype (741 increased, 40 decreased in TGAC8 vs. WT). PCA analysis showed complete separation between TGAC8 and WT samples, indicating a general upregulation of phosphorylation in TGAC8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, C18, C21-C24 provide converging evidence from mass spectrometry data showing comprehensive phosphoproteomic profiling with clear genotypic differences. The PCA analysis (C22, Figure 1A) demonstrates robust separation between groups, and the statistical cutoffs applied (C23) are reasonable for phosphoproteomics studies. The predominance of upregulated phosphoproteins (C24) is well-documented in the volcano plot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26"
+    ],
+    "result": "Cardiac hypertrophy signaling (enhanced) was the most highly activated pathway (z-score 4.867) in TGAC8 vs. WT, with elevated phosphorylation of proteins involved in calcium cycling, contraction, and relaxation including Ca2+ ATPase, RyR2, and Ncx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C25 reports high activation of cardiac hypertrophy signaling based on IPA analysis, claims C27-C28 indicate that LV mass and pathologic hypertrophic markers were NOT increased at 3 months. This apparent contradiction between pathway activation and phenotypic outcome requires reconciliation. The authors suggest protective mechanisms prevent pathological hypertrophy, but this interpretation needs stronger experimental validation beyond computational pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Analysis of 2,264 unambiguous phosphosites revealed that the majority were serines (89%) and threonines (10%), with the R-R-X-pS/T motif being the most abundant, consistent with PKA and AKT substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are well-supported by the phosphoproteomics data and motif analysis (Figure 2A-D). The predominance of serine/threonine phosphorylation is expected, and the identification of the R-R-X-pS/T motif is consistent with known PKA/AKT substrate preferences, supported by citations C37. The motif analysis using WebLogo and iceLogo provides robust bioinformatic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C43"
+    ],
+    "result": "IPA predicted 26 kinases responsible for phosphorylation motifs, with PDPK1, PAK1, PTK2B, and GSK3B showing increased phosphorylation in TGAC8. These kinases regulate 27 proteins involved in cardiac stress signaling pathways including PKA, ERK/MAPK, and cardiac hypertrophy signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C38-C39, C43 rely heavily on computational predictions from IPA software without experimental validation of the predicted kinase activities. While the phosphoproteomics data showing increased phosphorylation of these kinases is solid (C39), the causal relationships and regulatory networks (C43) are inferred rather than experimentally demonstrated. The prediction that these specific kinases phosphorylate the 27 identified proteins requires direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Increased phosphorylation of BAD (S112, S136, S155) and ULK1 (S450, S521, S637/638) in TGAC8 may be linked to activated PDPK1, based on prior studies showing PDPK1 phosphorylates these proteins in other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is speculative, extrapolating from studies in human glioblastoma cells (C40) and mouse myoblasts (C41) to cardiac tissue. While the phosphorylation sites are detected in the current study, the direct link to PDPK1 activity in this cardiac context is not experimentally validated. The inference is reasonable but requires validation through kinase inhibition or knockdown experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49"
+    ],
+    "result": "Downstream functional enrichment analysis revealed three main categories: cell viability (with cellular assembly/organization, cellular function/maintenance, and cell death/survival as top terms), protein quality control, and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48-C49 are supported by IPA functional enrichment analysis (Figure 1F). The categorization into cell viability, protein quality control, and metabolism is reasonable based on the enriched molecular and cellular functions. However, the interpretation that these functions are causally linked to cardiac adaptation (C49) is inferential rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "GSK3B was phosphorylated at multiple sites (S9, Y216, S219, S545) in TGAC8, with PDPK1 phosphorylating S9 and PTK2B phosphorylating S9 and Y216 to inhibit GSK3B kinase activity, linking GSK3B inhibition to cardiac adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C46 documents multiple phosphorylation sites on GSK3B in the phosphoproteomics data, claims C44-C45 about which specific kinases phosphorylate which sites are based on citations to prior studies in other systems, not direct evidence in this cardiac model. The link to cardiac adaptation (C47) is inferential, supported by citations but not experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Correlation analysis showed moderate correlation (r=0.41) between phosphoproteome and transcriptome changes, and stronger correlation (r=0.65) between phosphoproteome and proteome changes by genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by correlation scatter plots (Figure 3B-C) with statistical significance (p<0.0001). The moderate transcriptome-phosphoproteome correlation and stronger proteome-phosphoproteome correlation are appropriately quantified and suggest that phosphorylation changes are more closely tied to protein abundance than mRNA levels, which is biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "About half of the 196 kinases, 71 phosphatases, and 191 transcription factors identified in the phosphoproteome differed significantly by genotype (p<0.05), with the majority showing increased phosphorylation in TGAC8 vs. WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are well-supported by the phosphoproteomics data analysis (Figure 3F-J). The identification of these regulatory proteins and their differential phosphorylation status provides important context for understanding the reprogrammed phosphoproteome. The statistical threshold (p<0.05) is appropriate for this exploratory analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "GO analysis of the TGAC8 transcriptome revealed enrichment of phosphorylation-related processes, with IPA predicting 60 upstream kinases (mostly activated) and fewer phosphatases (mostly inhibited) as regulators of the transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is supported by GO analysis (Figure 4A), but claims C55-C56 rely on computational predictions from IPA without experimental validation. The prediction of 60 activated kinases and inhibited phosphatases is based on the IPA knowledge base and transcriptome changes, but these activation states are not directly measured. The asymmetry between kinases and phosphatases is interesting but requires experimental confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Of 191 transcription factors in the phosphoproteome, 92 showed significantly increased phosphorylation in TGAC8 (except Purg). KEGG pathway analysis revealed enrichment of immunity, cancer, and metabolism pathways, with marked inhibition of the sumoylation pathway, suggesting coordinated regulation of transcription through phosphorylation and sumoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 are supported by phosphoproteomics data (Figure 4G), and C60-C61 by KEGG analysis (Figure 4H). However, claim C62 proposing coordinated regulation through phosphorylation and sumoylation is speculative, based on pathway analysis and citations (Tomanov 2018, Khan 2014) rather than direct experimental evidence. The hypothesis is reasonable but requires validation through measurement of sumoylation levels and functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "GO analysis of the TGAC8 proteome showed enrichment of phosphorylation-related processes, with 29 kinases predicted as upstream regulators (most activated) of the proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is supported by GO analysis (Figure 5A), but C64 relies on IPA predictions without experimental validation of kinase activation states. The prediction is based on proteome changes and the IPA knowledge base, but direct measurement of kinase activities is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "After normalizing phosphorylation levels to protein expression levels for 2,164 proteins identified in both datasets, PCA showed clear genotypic separation, and canonical pathway enrichments remained consistent with the unnormalized phosphoproteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are well-supported by the normalization analysis (Figure 5G-J). The consistency between normalized and unnormalized phosphoproteome pathway enrichments (C67) strengthens confidence that the observed phosphorylation changes are not simply due to changes in protein abundance. This is an important control analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Three signaling pathways (PI3K/AKT, ERK/MAPK, and ubiquitin labeling) were concordantly regulated at transcriptional, translational, and phosphorylation levels in TGAC8. Western blot validation confirmed activation of PI3K/AKT and ERK/MAPK signaling, and increased ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C68-C72 provide strong converging evidence from multi-omics integration (Figure 6B) and Western blot validation (Figure 6C-E, Figure 6\u2014figure supplement 1). The concordant regulation across multiple levels and experimental validation of key pathways strengthens confidence in these findings. The link to protein quality control (C71) is supported by citation to prior work (Tarasov 2022) and additional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Phosphorylation levels of AKT peptide substrates were mostly elevated in TGAC8 vs. WT, indicating downstream activation of AKT signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by substrate mapping analysis (Figure 6G) showing increased phosphorylation of multiple AKT substrates. This provides functional evidence for AKT pathway activation beyond just measuring AKT phosphorylation itself, strengthening the conclusion about pathway activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Among 443 proteins differing in both phosphorylation and expression levels, 33 showed discordant regulation (opposite directions). GO and Reactome analyses revealed enrichment of mitochondrial components and metabolic pathways, indicating phosphorylation plays a distinct role in regulating mitochondria and metabolism independent of protein expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are well-supported by the discordance analysis (Figure 7A-D). The identification of proteins with opposite changes at phosphorylation vs. expression levels is methodologically sound, and the enrichment of mitochondrial/metabolic functions (C75-C76) provides biological insight. The interpretation (C77) that phosphorylation has distinct regulatory roles is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C16"
+    ],
+    "result": "Reprogramming of the cardiac phosphoproteome, proteome, and transcriptome confers resilience to chronic adenylyl cyclase-driven stress, with protein phosphorylation modification playing a crucial role in the adaptive capacity of the TGAC8 heart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C16 represent the main conclusions of the study. While the multi-omics data (phosphoproteome, proteome, transcriptome) show extensive reprogramming in TGAC8, the causal link between this reprogramming and resilience/adaptation is inferential rather than experimentally demonstrated. The study is primarily descriptive/correlative. Demonstrating that the reprogramming \"confers resilience\" would require perturbation experiments (e.g., blocking specific pathways and showing loss of adaptation). The conclusion is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Activated PKA signaling can restrict AC8 activity as negative feedback. Increased phosphorylation of HSP90 and Akt increases eNOS activity, producing NO that modulates RyR2 function. The study identified upregulated phosphorylation of RyR2 peptide at S2809, consistent with PKA-mediated regulation of Ca2+ spark amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C31 are based entirely on citations to prior studies without experimental validation in this system. Claim C32 provides phosphoproteomics evidence for RyR2 phosphorylation, but the specific site assignment and functional consequences (C33) rely on prior literature. The mechanistic connections proposed are plausible but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior studies established that TGAC8 mice show markedly increased heart rate and ejection fraction (chronic cardiac exercise phenotype) and survive up to one year despite elevated AC8-cAMP-PKA-Ca2+ signaling, with adaptive mechanisms involving enrichment of proteins in nutrient sensing, energy production, growth factor signaling, and cell proliferation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12 appropriately cite prior work (Tarasov 2022 and others) to establish the background and phenotype of the TGAC8 model. These claims provide essential context for the current study and are well-supported by the cited literature. The characterization of the model is important for interpreting the phosphoproteomics findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "At 3 months of age, LV mass is not elevated in TGAC8 vs. WT, and pathologic hypertrophic markers are not increased, despite activation of cardiac hypertrophy signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by citation to prior work (Tarasov 2022) that characterized the cardiac phenotype. This is important context that distinguishes the TGAC8 model from pathological hypertrophy, though it creates an apparent paradox with the activated hypertrophy signaling pathways (C25). The authors suggest protective mechanisms prevent pathological outcomes, but this requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior studies show AC8 is required for glucose homeostasis, GSK3B phosphorylation mediates cardioprotection, and phosphorylation of STAT1/3, HTT, and CREB1 activates transcription and immune responses. The current study identified increased phosphorylation of STAT1 S727 and STAT3 S726/S727, consistent with activation of inflammation/immune pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 appropriately cite prior literature to provide mechanistic context. Claim C82 connects this prior knowledge to the current phosphoproteomics findings, showing increased phosphorylation of STAT1/3 at specific sites. This integration of current data with prior knowledge is appropriate and strengthens the biological interpretation.",
+    "result_type": "MINOR"
+  }
+]

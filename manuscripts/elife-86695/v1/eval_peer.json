@@ -1,0 +1,154 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C27",
+      "C28",
+      "C90"
+    ],
+    "result": "Coccinella is an open-source reductionist framework that combines high-throughput behavioral analysis using ethoscopes (inexpensive Raspberry Pi-based devices costing ~\u00a375) with statistical learning (HCTSA/Catch22), extracting only maximal velocity as a single behavioral feature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the system's design and accessibility, stating 'the protocols employ inexpensive, off the shelf hardware' and describing it as 'an important open-source resource for high-throughput behavioral screening.' The reductionist approach based on a single feature is acknowledged without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "Coccinella outperforms state-of-the-art alternatives (DeepLabCut + B-SOiD) in pharmacobehavioral classification, achieving 42.4% accuracy vs. 25.4% for the best alternative method when discriminating 12 drug treatments, despite using only a single behavioral feature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these comparative results, noting that 'in cases where such analyses are sufficient for characterizing the behaviors of interest this system performs as well as other state-of-the-art systems.' The comparison is acknowledged as valid, though reviewers note the trade-off: 'the rapidity of the platform comes at a cost--loss of information on subtle but important behavioral alterations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51"
+    ],
+    "result": "In pharmacobehavioral screening with 17 treatments at 1000 ppm, coccinella achieved 71.4% accuracy (vs. 5.8% random), with dose-dependent performance decreasing to 61.8% at 100 ppm and 36.1% at 1 ppm, indicating the system operates on pharmacologically-induced, biologically meaningful behavioral correlates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these quantitative results without challenge. The dose-dependent decrease in accuracy is implicitly supported as evidence of biological validity, consistent with the reviewers' statement that 'the evidence in support of the conclusions is solid.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Testing drug-resistant mutants (paraL1029F with DDT, RdlA301S with dieldrin) created confusion in the classification algorithm, with reduced discrimination between drug and control conditions, suggesting coccinella works on biologically relevant behavioral signatures with high sensitivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these genetic validation experiments. The use of drug-resistant mutants to validate biological relevance aligns with the reviewers' acceptance that the system detects 'biologically meaningful behavioral correlates,' as evidenced by their statement that 'the evidence in support of the conclusions is solid.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In a high-throughput screen with 40 treatments (2192 flies) at 100 ppm, coccinella correctly first-guessed 39 out of 40 treatments with 44.5% overall accuracy (vs. 2.5% random), with only Syngenta Compound #5 as an exception.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the high-throughput capability, stating the protocols 'allow real-time analysis of hundreds of behaving flies' and that the system is useful for 'high-throughput analysis focused on gross locomotor defects.' The quantitative results are not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "In sleep deprivation experiments with different immobility triggers (20-1000s), coccinella could not discriminate baseline conditions (9% vs. 9% random) but successfully clustered rebound sleep data around a 300s threshold, independently confirming the established 5-min 'sleep quantum' rule in Drosophila.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these sleep analysis results as demonstrating the system's validity. The inability to discriminate baseline conditions followed by successful clustering of biologically meaningful rebound data supports the reviewers' statement that 'the evidence in support of the conclusions is solid' and shows the system is 'not simply overfitting data.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C92",
+      "C93"
+    ],
+    "result": "The ethoscope system operates at 2.2 fps (444\u00b1127 ms per frame) in real-time mode, which is sufficient for Drosophila but represents a trade-off between temporal resolution and throughput/cost, with limited computing power compared to industrial cameras.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this trade-off, noting 'the rapidity of the platform comes at a cost--loss of information on subtle but important behavioral alterations' and that the system is appropriate for 'gross locomotor defects' but 'when seeking subtle modifications in animal behavior, solutions like DeepLabCut...would be more appropriate.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Coccinella is a reductionist tool that cannot apply behavioral labels but can successfully identify large behavioral phenotypes, explore pharmacobehavioral space, and discern subtle differences in naturally occurring behaviors like sleep, complementing rather than replacing high-resolution methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this characterization, stating 'the new paradigm should be of interest to researchers involved in drug screens, and more generally, in high-throughput analysis focused on gross locomotor defects' while acknowledging that 'when seeking subtle modifications in animal behavior, solutions like DeepLabCut...would be more appropriate.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Coccinella uses maximal velocity over 10-second windows as the sole behavioral feature, which is then analyzed using HCTSA (>7700 statistical tests) or Catch22 (reduced feature set) followed by linear SVM classification.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accept the overall approach, one reviewer notes 'the current manuscript does not provide much explanation on Highly Comparative Time-Series Classification (HCTSA) or SVM' and requests 'explaining in more detail how HCTSA operates...will make the method more convincing.' This suggests some uncertainty about the analytical framework despite accepting the results.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "P300 is a widely studied evoked response in EEG/MEG research, typically assessed using oddball paradigms, and consists of P3a and P3b components, though its exact generation mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide well-established background knowledge about P300, supported by appropriate citations to the literature. These claims accurately represent the current state of knowledge in the field and set up the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Previous literature demonstrates that oddball target stimuli concurrently cause P300 and alpha rhythm attenuation (8-12 Hz), with 38 studies showing concomitant occurrence, though the degree of temporal and spatial overlap varies across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 provide a comprehensive literature review with specific citations. The authors acknowledge both supporting evidence (C8-C11) and contrary findings (C12), demonstrating balanced reporting. The quantitative summary (38 studies, 17 with overlap) is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The baseline-shift mechanism (BSM) theoretically links evoked responses to oscillatory activity through amplitude modulation of non-zero mean oscillations, with the polarity of the evoked response depending on the sign of the oscillatory mean and direction of modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 describe the theoretical framework of BSM with appropriate mathematical reasoning and visual support (Figure 1). Claims C19-C20 provide empirical support from previous studies in somatosensory and visual domains, establishing the plausibility of BSM for P300 generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "P300 and alpha amplitude envelope show inverse temporal relationships, with P300 rising and alpha amplitude decreasing in the 200-400ms window, both reaching maximum magnitude in the 400-700ms window, and demonstrating significant negative correlation (r=-0.86 at Pz) at posterior regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 present the first BSM prerequisite with clear empirical support from Figure 2. The temporal correlation analysis is appropriate, with specific quantitative values provided. The large sample size (N=2230) strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "When participants are binned by alpha amplitude modulation depth, P300 amplitude scales proportionally, with stronger alpha modulation corresponding to higher P300 amplitude, showing significant differences in posterior regions (electrodes CP6, P3, P4, P7, Pz, O1, O2, PO9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 demonstrate a key prediction of BSM through binning analysis. The statistical approach (t-test with cluster-based permutation) is appropriate, and the spatial specificity of effects supports the BSM hypothesis. The analysis directly tests the relationship between alpha modulation depth and P300 amplitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Spatial distributions of P300 and alpha amplitude modulation show considerable overlap (Spearman correlation = -0.80, p<0.0001), with both showing maximum amplitude in posterior electrodes at the P300 peak latency (509\u00b1171ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 address the second BSM prerequisite with strong quantitative evidence from topographical analysis (Figure 4). The high negative correlation and spatial overlap support BSM predictions. The timing analysis is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Source reconstruction reveals that both P300 and alpha amplitude changes localize to the parietal midline (precuneus, posterior cingulate cortex, BA 7, 31, 23), consistent with previous P300 localization studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide source-space confirmation of sensor-space findings (Figure 5). The localization is consistent with prior literature (C33), though the limited electrode coverage (31 channels) is a noted limitation. The overlap analysis strengthens the BSM case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Baseline-shift indices (BSI) at posterior sites are predominantly negative (mean=-0.12, mode=-0.85 at Pz), with distribution showing a trough around zero, and more negative BSIs corresponding to higher P300 amplitudes across centro-parietal regions (300-700ms window).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 address the third BSM prerequisite using resting-state data. The BSI analysis (Figure 6) demonstrates non-zero mean oscillations with appropriate sign to explain P300 polarity. The binning analysis and cluster-based statistics support the BSM prediction. However, the BSI topography differs from P300 topography, which the authors acknowledge is expected for resting-state measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "P300 and alpha oscillation parameters correlate similarly with cognitive scores (attention, memory, executive function), with latencies showing consistent relationships across domains and mediation analysis indicating alpha oscillations partially explain P300-cognition correlations (12-14% mediation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 address the fourth BSM prerequisite through cognitive correlations (Figure 7). The analysis appropriately controls for age and uses spatial filtering to improve signal-to-noise. The similar correlation directions for P300 and alpha support BSM, though the partial mediation (12-14%) indicates BSM explains only a fraction of P300. The authors acknowledge temporal separation between EEG and cognitive testing as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C85",
+      "C122"
+    ],
+    "result": "All four BSM prerequisites are validated: temporal similarity, spatial similarity, appropriate sign of oscillatory mean, and similar cognitive correlations, leading to the conclusion that P300 is at least partially generated through stimulus-triggered modulation of alpha oscillations with non-zero mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C85, and C122 represent the main conclusion, appropriately qualified as 'partial' or 'at least to some degree.' The four prerequisites are systematically validated through independent analyses. The conclusion is conservative and acknowledges that BSM may not explain the entire P300 complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study analyzed EEG data from 2230 elderly participants (60-82 years) from the LIFE dataset who completed both resting-state and auditory oddball paradigm sessions, with rigorous quality control procedures applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 and C125-C133 describe the study sample and selection criteria. The sample size is large and well-characterized. Quality control procedures are clearly described, including exclusion criteria for medications, data quality, and spectral characteristics. The final sample characteristics are appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Resting-state EEG was recorded for 20 minutes with eyes closed using 31 electrodes in the 10-20 system, sampled at 1000 Hz, with impedances under 10 k\u03a9 and common average reference, with only the first 10 minutes used for BSI computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C141 provide detailed methodological information about resting-state recordings. The procedures are standard and appropriate, though the 31-channel setup is a limitation acknowledged by the authors. The restriction to first 10 minutes is justified to avoid sleep contamination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The oddball paradigm used three stimuli (standard 76%, target 12%, novelty 12%) with individualized hearing thresholds, 1500ms ISI, and required button press responses to targets, with hand switching at mid-session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C156 describe the experimental paradigm in detail. The design is standard for P300 research with appropriate stimulus probabilities and timing. Individualized hearing thresholds and practice sessions ensure task comprehension. The hand-switching procedure is noted but may introduce motor-related confounds (acknowledged in C68-C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Cognitive scores from attention, memory, and executive function tests were available for 1549 participants, showed significant age correlations, and were analyzed controlling for age effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 describe the cognitive assessment subsample and analysis approach. The age correction is appropriate given significant age-cognition correlations. The reduced sample size (1549 vs 2230) is clearly stated. The temporal separation between cognitive testing and EEG is a limitation acknowledged in C61.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The baseline-shift index (BSI) serves as a proxy for oscillatory mean, with predominantly negative BSIs at posterior sites indicating inverted P300-alpha amplitude relationships, consistent with observed positive P300 deflection coinciding with alpha amplitude decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe the BSI methodology and its interpretation. The approach is supported by citation (Nikulin et al., 2010) and the findings are internally consistent with BSM predictions. The inference from BSI to oscillatory mean is theoretically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Previous literature has established associations between P300 and attention/memory/executive function, and between alpha rhythm and attention/memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide appropriate background for the cognitive correlation analysis, supported by multiple citations. This establishes the rationale for testing similar correlations as a BSM prerequisite.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Mediation analysis shows alpha oscillations only partially explain P300-cognition correlations, consistent with the idea that only a fraction of P300 is explained by alpha amplitude changes, as alpha changes extend beyond P300 generation regions and cognitive tests were temporally separated from EEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 appropriately interpret the partial mediation findings. The authors acknowledge limitations (spatial extent of alpha changes, temporal separation of assessments) that would reduce expected mediation effects. The interpretation is conservative and scientifically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "While most previous studies show P300-alpha overlap, some discrepancies exist, potentially explained by multiple simultaneous alpha sources (occipital, motor-related mu) that can obscure the specific alpha source responsible for P300 generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 provide balanced discussion of literature inconsistencies with plausible explanations. The authors identify specific confounds in their own data (eyes-closed occipital alpha, motor-related mu) that support their hypothesis about why some studies failed to find relationships. This demonstrates critical thinking about methodological challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "No previous studies explicitly tested P300 compliance with BSM, and the current study extends analysis by showing resting-state baseline shifts relate to alpha amplitude similarly to how P300 relates to stimulus-triggered alpha changes, emphasizing the necessity of evaluating all BSM predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 establish the novelty of the current work and its methodological contribution. The systematic evaluation of all four BSM prerequisites represents a significant advance over previous correlational observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Alternative mechanisms (additive, phase-reset) are difficult to distinguish from BSM using non-invasive EEG because P300 always shows low-frequency power increases and phase alignment, which are compatible with all three mechanisms, making current predictions insufficient for mechanism disambiguation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 provide critical analysis of alternative mechanisms with appropriate citations. The authors correctly identify fundamental limitations in distinguishing mechanisms with EEG/MEG (C76, C79) and explain why BSM can mimic evidence for other mechanisms (C80). The argument for BSM's advantage is that its prerequisites are testable (C84-C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The evidence supports partial rather than complete explanation of P300 through BSM, as P300 is a complex with multiple components (P3a, P3b, slow wave) that may be generated by different mechanisms, and determining the exact variance explained by BSM is challenging due to synchronization effects on scalp-level measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 provide appropriately qualified conclusions acknowledging P300 complexity and measurement limitations. The discussion of synchronization effects (C94-C95, Figure 3-supplement 2) demonstrates sophisticated understanding of how neural population dynamics affect scalp recordings. The scope limitation (C96) is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Despite previous difficulties detecting baseline shifts in elderly populations, the large sample size enabled detection of significant associations, with 97% of participants showing alpha attenuation to targets and 91% showing measurable P300.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 address potential concerns about studying elderly populations. The large sample size overcomes previous limitations (C97-C98), and the high prevalence of detectable signals (C99-C103) validates the approach. The descriptive statistics support the feasibility of BSM analysis in this population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study's use of only 31 EEG channels is a limitation that reduces source reconstruction accuracy, though this coverage is sufficient for the large P300 and alpha amplitude changes in the oddball paradigm, but may be insufficient for other paradigms or higher frequency rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 provide honest assessment of methodological limitations with appropriate citations (C107). The justification for adequacy in the current context (C108) is reasonable given the large, clearly detectable signals. The acknowledgment of limitations for other applications (C109) demonstrates appropriate scope awareness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The P300-alpha link suggests P300 may reflect disinhibition/activation for target processing rather than inhibition of irrelevant activity, as alpha amplitude decrease indicates regional disinhibition, with alpha linked to attention and working memory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C117 propose a functional reinterpretation of P300 based on the BSM findings. While the logic is internally consistent (alpha decrease = disinhibition, therefore P300 = activation), this remains speculative. The interpretation relies on established alpha-cognition relationships (C114-C116) but the functional inference (C117) requires additional validation beyond the current correlational evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The analytic pipeline is applicable to other evoked responses that coincide with oscillatory modulation, including CNV, N400, ELAN, and readiness potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 appropriately suggest future applications with supporting citations showing these ERs coincide with alpha oscillations. This is a reasonable extension of the methodology, though actual validation would require future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C123",
+      "C124"
+    ],
+    "result": "The study demonstrates that alpha oscillations partially generate P300 via BSM, providing a unifying framework for understanding ER generation from oscillatory dynamics, and recommending that P300 interpretations should consider oscillatory dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 summarize the main contribution and implications. The conclusion is appropriately qualified ('partially,' 'at least partially') and the recommendation (C123) is justified by the findings. The claim of a 'unifying framework' (C124) is somewhat strong but defensible given the systematic validation of BSM prerequisites.",
+    "result_type": "MAJOR"
+  }
+]

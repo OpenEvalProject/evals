@@ -1,0 +1,424 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Males have significantly larger total brain volume than females in humans (13.5% larger, p<2e-16), but there is no significant sex difference in total brain volume in mice (0.3% larger in males, p=0.481).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 are well-supported by statistical analyses with appropriate sample sizes (humans: 597F/496M; mice: 213F/216M) and clear statistical significance testing. The contrasting findings between species are robustly demonstrated with strong effect sizes in humans and null results in mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "In humans, males have significantly larger total gray matter (p<2e-16) and white matter volumes (p<2e-16) than females. In mice, there is no sex difference in gray matter volume (p=0.68), but males have significantly larger white matter volume (p=0.045).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by statistical analyses controlling for age and quality metrics. The human findings show strong effects, while the mouse white matter finding is marginally significant (p=0.045), which warrants cautious interpretation given the threshold for significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "After controlling for total brain volume and multiple comparisons, approximately two-thirds of brain regions show significant sex differences in volume in both humans (65.8%) and mice (58.6%), with modest effect sizes and a slight female bias in the proportion of regions showing sex differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 are supported by appropriate statistical methods including FDR correction for multiple comparisons. The descriptive statistics of effect sizes are clearly reported, showing generally small to moderate effects. The analyses appropriately control for total tissue volume.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Specific brain regions show sex-biased volumes in humans and mice, with females showing larger volumes in cortical regions (frontal, cingulate, somatosensory, motor cortex) and males showing larger volumes in subcortical regions (amygdala, hippocampus, BNST, hypothalamus) in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by statistical analyses with FDR correction (q<0.05). The regional patterns are consistent with prior literature and show both convergent and divergent patterns across species, which is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Cross-species comparison reveals both congruent sex differences (e.g., larger hypothalamus, BNST, amygdala in males; larger frontal, cingulate cortex in females) and opposing sex differences (e.g., nucleus accumbens, cerebellum male-biased in humans but female-biased in mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 appropriately synthesize the regional findings to identify patterns of conservation and divergence. The claims are based on direct comparison of statistically significant effects in both species, though the interpretation involves some inference about biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Variance in total and regional brain volumes is significantly greater in human males than females (F=10.19, p=0.0014 for total volume), but mice show no sex differences in variance (F=0.765, p=0.382).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by appropriate use of Levene's test for variance differences with FDR correction for regional analyses. The contrast between species is clearly demonstrated, though the biological interpretation of variance differences requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The correlation of sex effect sizes across 60 homologous brain regions between humans and mice is modest (r=0.30, p=0.013), with stronger correlation in cortex (r=0.33, p=0.10) than non-cortex (r=0.16, p=0.35), though neither compartment shows statistically significant correlation in isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by robust correlation analysis. However, the stratified analyses (cortex vs. non-cortex) lose statistical significance, likely due to reduced sample size. The overall correlation is modest but significant, appropriately interpreted by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Specific homologous regions show statistically significant sex differences in the same direction in both species, including female-biased primary somatosensory cortex, primary auditory cortex, and anterior cingulate cortex, and male-biased amygdala, globus pallidus, hippocampus, BNST, hypothalamus, and brainstem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 are well-supported by statistical analyses with FDR correction (q<0.05) in both species. The effect sizes are reported for each region, allowing assessment of magnitude. These represent the most conserved sex differences across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The bilateral agranular insula and cerebellar cortex show incongruent sex differences between species, being female-biased in mice but male-biased in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by statistical analyses showing significant effects in opposite directions between species. This represents an important finding of divergence, though the biological mechanisms underlying this divergence are not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Transcriptional similarity between species (based on 2835 homologous genes) is positively correlated with anatomical sex effect similarity across homologous regions (r=0.24, p=0.08), with this relationship being stronger and statistically significant in cortical regions (r=0.60, p=0.0013) than non-cortical regions (r=0.03, p=0.88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by correlation analyses between anatomical and transcriptional measures. The overall correlation is marginally non-significant (p=0.08), but the stratified cortical analysis shows strong significance. The approach is methodologically sound, though the gene expression data are derived from predominantly male samples, which is a noted limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Primary sensory cortical regions show high congruence in both sex effects and gene expression between species, while limbic cortices show weaker congruence in both features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 represent appropriate synthesis of the correlation patterns observed in C43-C45. The differentiation between primary sensory and limbic regions is supported by the data patterns, though this involves some interpretive inference about regional functional classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Sensitivity analyses using X-linked genes show similar patterns to the full gene set (r=0.25, p=0.07), while analyses using sex hormone pathway genes reveal differential patterns: androgen pathway genes show weak cortical correlation (r=0.05, p=0.81) but strong non-cortical correlation (r=0.46, p=0.01), whereas estrogen/progesterone pathway genes show positive cortical correlation (r=0.29, p=0.15) but negative non-cortical correlation (r=-0.27, p=0.15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by appropriate sensitivity analyses using biologically relevant gene subsets. The differential patterns for androgen vs. estrogen/progesterone pathways are intriguing, though most correlations do not reach statistical significance. The findings suggest hypotheses for future investigation rather than definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Sex differences in overall brain volume are not conserved between humans and mice, but there is meaningful cross-species concordance for regional volumetric sex differences, particularly in regions with similar transcriptional profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 appropriately synthesize the major findings of the study. The conclusions are well-supported by the data presented in earlier claims, representing a fair summary of the evidence for both divergence (total volume) and conservation (regional volumes) of sex differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Greater neuroanatomical variance in human males compared to females, which is not observed in mice, challenges the theory that males are more variable due to being heterogametic (XY), since male mice are also heterogametic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by Levene's test results showing species differences in variance patterns. The logical inference challenging the heterogametic theory is valid given that both species have XY males. However, this represents one piece of evidence against the theory rather than definitive refutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Prior rodent studies have established that male-biased volumetric sex differences in regions like BNST and MeA align with developmental sex differences in apoptosis and synaptic organization, are influenced by hormonal masculinization, and show effects of both gonadal sex and sex chromosome complement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 appropriately cite prior literature to establish mechanistic context. These are literature-based claims rather than new findings from this study, and they are properly attributed to cited sources. The claims provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Human neuroimaging studies suggest that male-biased regional volume differences emerge in early development and may be sensitive to fetal testosterone exposure, while female-biased volume enlargements tend to emerge during puberty, potentially reflecting pubertal hormone effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 cite prior human neuroimaging studies but involve speculative language ('may be sensitive,' 'may point to'). While the cited studies support the developmental timing observations, the mechanistic interpretations about hormone sensitivity are inferential. The evidence is suggestive but not definitive for causal hormone effects in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Species differences in sex effects may be explained by differences in regional cellular composition, as evidenced by studies showing species-specific cell populations in cerebellum and differential neuron-glia interactions, with regions showing more similar gene expression profiles also showing more similar sex differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 appropriately cite comparative cellular studies and integrate them with the current transcriptional findings. The mechanistic explanations are speculative but well-grounded in cited evidence. Claim C69 directly connects to the study's own findings on transcriptional-anatomical correlations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Transcriptional similarity based on androgen pathway genes is weakly correlated with cortical sex effects (r=0.05, p=0.81) but strongly correlated with non-cortical sex effects (r=0.46, p=0.01), while estrogen/progesterone pathway genes show opposite patterns, suggesting differential roles for sex hormones in cortical vs. non-cortical sex differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 are supported by correlation analyses, but C73's interpretation about differential hormone roles is speculative. The correlations are based on gene expression patterns rather than direct hormone measurements, and most correlations do not reach significance. The findings warrant further investigation but do not definitively establish differential hormone roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Humans and mice show very different sex effects on overall brain size, with human sex differences in total brain volume apparent from prenatal development through toddlerhood, likely reflecting pre- and perinatal influences of sex steroids and/or sex chromosome dosage, including the perinatal testosterone surge in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are well-supported by citations to developmental neuroimaging studies. Claims C78-C79 involve mechanistic inference based on the early emergence of sex differences and established biological knowledge about perinatal hormone exposure. The inference is reasonable but represents hypothesis rather than demonstrated causation in humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Brain organoid studies show species-specific responses to sex hormones, with human organoids showing increased progenitor proliferation in response to androgens, while mouse organoids respond to estradiol but not testosterone, aligning with evidence that mouse brain masculinization depends on aromatized testosterone activating estrogen receptors, whereas primate brain masculinization depends more on direct androgen receptor activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 appropriately cite organoid and mechanistic studies to explain potential species differences in hormone effects. The cited evidence supports the differential mechanisms of hormone action between species, providing plausible mechanistic context for the observed anatomical differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Sex chromosome aneuploidy studies show that increased Y-chromosome dosage is associated with increased brain size in humans while increased X-chromosome dosage is associated with decreased brain size, but these effects are not observed in mice, potentially explained by species differences in Y-chromosome gene content (expanded ampliconic genes in mice) and X-inactivation escape (12-15% in humans vs. 2-5% in mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 appropriately cite sex chromosome aneuploidy studies and comparative genomics research. The evidence supports species differences in sex chromosome effects on brain size and provides plausible mechanistic explanations based on genomic differences. The integration of multiple lines of evidence is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Sex differences in human brain development are likely uniquely shaped by gender (a construct typically considered absent in non-human animals), and sex differences in brain anatomy provide no information regarding brain function or behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 represent important conceptual caveats about interpreting the findings. C89-C90 appropriately distinguish sex from gender and note the human-specific nature of gender. C91 is a critical methodological caveat supported by citation, appropriately cautioning against functional interpretations of anatomical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Human-mouse congruence in volumetric sex differences is stronger for cortical compared to non-cortical structures and is echoed by cross-species similarities in regional gene expression, especially in cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately synthesize the major findings from the correlation analyses. The conclusions are well-supported by the stratified analyses showing stronger cortical than non-cortical correlations for both anatomical sex effects and their relationship to transcriptional similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Humans show numerous sex differences in the prevalence and presentation of brain-related conditions (with males disproportionately affected by early-onset neurodevelopmental conditions and females by adolescent/adult-onset conditions) and in certain cognitive and behavioral traits including language, face processing, spatial rotation, and aggression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 appropriately cite established literature on sex differences in neuropsychiatric conditions and cognitive traits. These provide important motivational context for the study but are not new findings. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The literature on sex differences in human brain anatomy shows considerable heterogeneity potentially due to methodological variation, but several large-scale studies recover highly reproducible sex differences in regional brain volumes (larger limbic/temporal volumes in males, larger cingulate/prefrontal volumes in females) beyond total brain size differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 appropriately characterize the prior literature, acknowledging both heterogeneity and reproducible findings. The claims are well-supported by citations to multiple large-scale studies and provide important context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Understanding sex differences in the human brain is challenging due to practical and ethical constraints, but rodent studies using histology and sMRI have identified robust sex differences in regional brain volumes (including canonical male-biased BNST, MeA, MPON and other regions), which correspond to cellular composition differences and can be mechanistically dissected using models like the four core genotype system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C114 appropriately review the rodent literature and establish the rationale for comparative studies. The claims are well-supported by citations to relevant studies and accurately characterize the state of knowledge about rodent brain sex differences and available mechanistic tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Systematic comparison of volumetric sex differences between humans and mice would advance understanding of brain evolution by testing conservation of sex-specific brain organization and would identify high-priority targets for translational research by revealing regions with congruent sex differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 appropriately articulate the rationale and potential impact of the study. These represent logical inferences about the value of comparative work rather than empirical findings, and they are well-justified by the preceding context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The study analyzed 597 females and 496 males aged 22-35 years from the Human Connectome Project and 216 male and 213 female mice (mean age ~PND 62-63, range PND 56-90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 accurately describe the samples used in the study. The sample sizes are adequate for the analyses performed, and the age ranges are appropriate for young adult comparisons in both species.",
+    "result_type": "MINOR"
+  }
+]

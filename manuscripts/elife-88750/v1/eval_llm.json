@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The division rate of yeast cells decreases as the frequency of osmotic stress increases, with 2.2-fold and 3.8-fold reductions observed in 2% and 0.1% glucose respectively between periods of 192 min and 12 min. This negative relationship was also observed in HOG pathway mutants, indicating that growth slowdown is not solely due to HOG pathway overactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 provide quantitative data from Figure 2a showing frequency-dependent division rate decreases. Claims C26-C27 demonstrate this effect persists in HOG mutants (Figure 2\u2014figure supplement 3), ruling out HOG overactivation as the sole mechanism. The data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Yeast cells exhibit opposite frequency responses to glucose availability versus osmotic stress: division rate increases with glucose fluctuation frequency in 2% glucose but not in 0.1% glucose. Cells behave as a low-pass filter for osmotic stress and a high-pass filter for glucose fluctuations with respect to division rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide quantitative data from Figure 2b showing the positive relationship between glucose fluctuation frequency and division rate in 2% glucose. Claims C33-C35 provide mechanistic insight about delayed growth arrest. Claims C36-C37 appropriately characterize the filter behavior based on the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Dual fluctuations of glucose and osmotic stress have synergistic effects on cell growth, with cells dividing approximately twice as fast under in-phase stresses (IPS) compared to alternating stresses (AS). Under IPS, division rate fluctuates dramatically between glucose-present and glucose-absent periods, while under AS it remains relatively constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide comprehensive quantitative data from Figure 3 showing the synergistic effects and phasing-dependent differences across multiple conditions (different periods and glucose concentrations). Statistical significance is properly reported (p-values). Claims C45-C48 describe temporal dynamics that explain the mechanistic basis for the observed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The hypothesis that glucose allocation to glycerol synthesis explains slower growth under AS versus IPS was tested using HOG pathway and glycerol synthesis mutants. Mutations that reduce glycerol accumulation did not attenuate the IPS vs AS growth differences, ruling out this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide experimental data from Figure 4 showing that most mutants (hog1\u0394, pbs2\u0394, gpd1\u0394, gpd2\u0394, gpd1\u0394;gpd2\u0394, fps1\u0394) still exhibit lower division rates under AS than IPS. Claims C54-C55 appropriately conclude that glycerol synthesis allocation is not responsible. The genetic approach is sound and the conclusion is well-supported by the mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Alternative hypotheses for the IPS vs AS growth difference were tested, including glucose starvation-induced transcriptional/translational inhibition (using galactose), glycogen storage (using glc3\u0394), and Sic1p-mediated cell cycle arrest (using sic1 mutants). None of these mechanisms explained the observed differences, leaving the mechanism elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 show galactose experiments (Figure 4\u2014figure supplement 2) rule out glucose-specific starvation responses. Claims C60 and C62 show glc3\u0394 and sic1 mutants still exhibit IPS vs AS differences. Claim C63 appropriately acknowledges the mechanism remains unknown. The negative results are properly documented and the conclusion of uncertainty is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cell death is significantly higher under AS than IPS conditions, with death events occurring primarily during hypo-osmotic shock following sorbitol removal. HOG pathway mutants show dramatically reduced death rates under AS (e.g., hog1\u0394: 5.2\u00d710\u207b\u2075 min\u207b\u00b9 vs WT: 2.4\u00d710\u207b\u00b3 min\u207b\u00b9), while fps1\u0394 shows increased death, consistent with glycerol accumulation causing osmotic lysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 document the death phenotype with visual and quantitative data (Figure 5). Claims C70-C73 provide comprehensive mutant analysis showing death rates correlate with glycerol accumulation capacity. Claims C74-C76 show temporal dynamics consistent with glycerol accumulation. The mechanistic hypothesis is well-supported by converging genetic and temporal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "HOG pathway mutants (hog1\u0394, pbs2\u0394) exhibit higher population growth rates than wild-type under fast alternating stresses (24 min period), with positive growth rates for mutants versus negative for wild-type. This fitness advantage is frequency-dependent and disappears at slower fluctuation periods (96 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide quantitative population growth data from Figure 5d showing mutants outcompete wild-type under specific dynamic conditions. Claim C81 shows the frequency-dependence. Claims C82-C83 appropriately generalize that adaptations to constant stress can be detrimental under dynamic conditions. The data support this counterintuitive but important evolutionary conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Hog1-GFP nuclear localization dynamics differ dramatically between IPS and AS conditions. Under AS, Hog1-GFP peaks at 6 min and returns to baseline by 30 min. Under IPS, Hog1-GFP peaks at 6 min but remains nuclear for at least 48 min, suggesting impaired feedback loop activity in the absence of glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 provide detailed temporal dynamics from Figure 6 showing the differential Hog1p adaptation kinetics. Claim C93 shows eventual adaptation occurs even without glucose (after ~2 hr). Claim C94 proposes a mechanistic hypothesis that is reasonable given the data. The imaging data are clear and the temporal resolution is adequate for the conclusions drawn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Osmoregulation, measured by cell size recovery, is impaired under IPS but not AS conditions. Under IPS, cells do not recover size during osmotic stress and only recover when glucose is restored. This suggests glucose is necessary for rapid osmoregulation, possibly because glucose is required for glycerol synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide cell size measurements from Figure 6d showing differential osmoregulation. Claims C99-C100 appropriately conclude glucose is necessary for rapid osmoregulation. Claims C101-C102 connect to prior knowledge about glycerol synthesis mechanisms. The cell size data correlate well with Hog1p dynamics and support the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "PSTL1-mCitrine expression shows hyper-activation under AS conditions (4.1-fold at 413 min) and repeated osmotic stress (10.2-fold at 11 hr), but minimal induction under IPS (0.7-fold at 11 hr). This indicates the STL1 promoter is not activated by osmotic stress in the absence of glucose, despite Hog1p nuclear translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 establish baseline PSTL1 response to single osmotic pulses. Claims C109-C113 provide quantitative fluorescence data from Figure 7 showing differential expression under different dynamic conditions. Claim C114 appropriately concludes that glucose is required for PSTL1 activation. Claim C115 proposes glucose starvation dominates over osmotic stress signaling, which is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The phasing of periodic osmotic stress and glucose deprivation has striking impacts on multiple cellular phenotypes including division rate, survival, and transcriptional responses. Glucose availability regulates yeast responses to dynamic osmotic stress, demonstrating that the classic picture of osmotic stress adaptation cannot fully explain behavior under fluctuating conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the major findings across all experiments. Claims C2-C6 state the main results supported by the comprehensive experimental data. Claims C116-C120 provide appropriate high-level conclusions about the synergistic effects and the importance of glucose in stress responses. The conclusions are well-justified by the totality of the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Mutants with impaired osmotic stress response are better adapted to fast alternating stresses than wild-type cells, demonstrating that genetic mechanisms of adaptation to persistent stress can be detrimental under dynamically interacting conditions. This suggests cells can be killed by exploiting their adaptive responses through periodic stress application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C125-C127 are supported by the population growth data showing HOG mutants outcompete wild-type under specific dynamic conditions. Claims C128-C130 draw appropriate conclusions about exploiting adaptive responses. Claim C131 is speculative about evolutionary escape routes but is clearly marked as such. The evolutionary implications are significant and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction establishes the biological context and prior knowledge about dynamic environments, the HOG pathway, resource allocation, and the limitations of previous studies conducted in glucose-rich conditions. These claims provide the rationale for studying the interaction between metabolic fluctuations and osmotic stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are primarily background knowledge supported by appropriate citations (C9-C21). Claim C1 is a general statement about natural environments. Claims C13-C19 accurately describe the HOG pathway based on cited literature. Claim C20 correctly identifies a gap in previous studies. Claim C21 proposes the hypothesis that motivates the current work. All are appropriately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The findings are contextualized relative to recent work by Shen et al., 2023, which showed stronger responses at lower glucose concentrations. Key experimental differences (dynamic vs. static stress, complete depletion vs. low concentration) explain apparent discrepancies and suggest subtle metabolic changes profoundly impact stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 accurately describe prior work and identify methodological differences that explain different results. Claim C123 draws an appropriate general conclusion. Claim C124 cites additional relevant work. The comparison to prior work is fair and the explanation of differences is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C137"
+    ],
+    "result": "The materials and methods describe the yeast strains, microfluidic device design, and image analysis approaches used in the study. All strains are derived from BY4741/BY4742, the reference strain expresses HTB2-mCherry for nuclear tracking, and cells were cultured in custom microfluidic devices with automated image analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the experimental methods and materials. Claims C132-C133 specify strain backgrounds and reporters. Claims C134-C135 describe the microfluidic system design. Claim C137 describes image analysis software. All are straightforward methodological descriptions that are adequately detailed for the study.",
+    "result_type": "MINOR"
+  }
+]

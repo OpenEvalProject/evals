@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Diacetyl exposure causes reversible downregulation of chemosensory receptor gene expression in Drosophila. Five days of diacetyl exposure abolished GFP expression driven by Gr63a and Gr21a promoters in both the V-glomerulus and ab1C neurons, which was restored after 5 days of recovery in clean air. This effect is attributed to changes in promoter expression rather than neuronal cell death, as olfactory neurons do not regenerate in fruit flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 provide converging evidence from imaging (C5-C8), prior knowledge about neuronal regeneration (C9), inference about mechanism (C10), and qPCR validation (C11-C12). The reversibility demonstrated in C8 and C12 strengthens the conclusion that this is a transcriptional regulatory effect. The experimental design includes appropriate controls and recovery experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Diacetyl and structurally related volatiles act as HDAC inhibitors in vitro. Diacetyl inhibited all tested human HDACs (class I: HDAC1, 2, 3, 8; class II: HDAC6) with IC50 values ranging from 7.3 to 24.5 mM, comparable to the known HDAC inhibitor \u03b2-hydroxybutyrate. Multiple structurally related compounds also showed HDAC inhibitory activity with varying specificity profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 present direct biochemical evidence from in vitro HDAC assays with purified enzymes. The IC50 values are quantified and compared to a known inhibitor (C18), providing appropriate benchmarking. The structural relationship to known HDAC inhibitors (C13-C14) and membrane permeability (C15) provide mechanistic context. The data support the conclusion that diacetyl functions as an HDAC inhibitor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Diacetyl increases H3K9 acetylation in human cells in a dose- and time-dependent manner. Treatment with 10 mM diacetyl significantly increased H3K9 acetylation within 2 hours, with further increases at 6 hours, while H3K14 and H4K5 acetylation were unaffected. Even at lower concentrations (100 \u03bcM), H3K9 acetylation increased significantly after 96-120 hours of exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide western blot evidence showing specific, dose-dependent, and time-dependent effects on histone acetylation. The specificity for H3K9 (C21-C22) is consistent with prior observations for the related compound \u03b2-hydroxybutyrate (C23), strengthening the mechanistic link. The demonstration of effects at physiologically relevant low concentrations (C25) is particularly important for biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Diacetyl exposure causes widespread transcriptional changes in Drosophila antennae. Five days of diacetyl exposure resulted in 1234 differentially expressed genes (645 upregulated, 589 downregulated), with the most enriched GO term in downregulated genes being 'sensory perception of chemical stimulus'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 present RNA-seq data with appropriate statistical thresholds (FDR < 0.05). The large number of DEGs is consistent with HDAC inhibition affecting broad gene regulatory programs. The GO enrichment analysis (C29) provides biological interpretation. However, the manuscript should clarify whether batch effects were adequately controlled and whether biological replicates were sufficient (n=2 mentioned in methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Diacetyl exposure causes dose-dependent transcriptional changes in mouse lungs, including downregulation of ACE2. Gene expression changes were more pronounced with 1% versus 0.1% diacetyl exposure, with significant overlap between doses. ACE2, the SARS-CoV-2 entry receptor ortholog, showed reduced expression (log2 FC = -0.62, FDR = 2.02 \u00d7 10\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 demonstrate dose-dependent effects in a mammalian system with appropriate statistical analysis. The significant overlap between doses (C32) supports dose-dependency. However, the biological significance of ACE2 downregulation (C33) requires caution in interpretation\u2014the authors appropriately note uncertainty about whether this translates to humans. The exposure concentrations (peak 1920 ppm) are very high and may not reflect environmental exposures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Diacetyl-induced gene expression changes show significant overlap with known HDAC inhibitors and are partially reversible. Following recovery from diacetyl exposure, downregulated genes significantly overlapped with those upregulated during treatment. Additionally, 113 genes upregulated by diacetyl were also upregulated by sodium butyrate or valproic acid, with highly significant overlaps (p=6\u00d710\u207b\u00b9\u00b9 and p=2\u00d710\u207b\u2076\u2075, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide important validation through comparison with established HDAC inhibitors and demonstration of reversibility. The statistical significance of overlaps is very strong. The reversibility (C34) is consistent with epigenetic regulation. However, the unique gene sets for each treatment suggest delivery route and HDAC isoform specificity matter, which the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C71",
+      "C72"
+    ],
+    "result": "Diacetyl crosses the blood-brain barrier and modulates gene expression in mouse brain. Exposure to diacetyl vapors resulted in dose-dependent differential expression of genes in mouse brain (49 DEGs at 0.1%, 1779 DEGs at 1%), with highly significant overlap between brain and lung transcriptomes (p=2\u00d710\u207b\u00b9\u2070\u00b9 for upregulated, p=3\u00d710\u207b\u00b9\u2076\u00b3 for downregulated genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C41 and C71-C72 present RNA-seq evidence of brain gene expression changes. However, the inference that diacetyl crosses the blood-brain barrier (C71) is not directly demonstrated\u2014gene expression changes could result from indirect systemic effects, intranasal delivery bypassing the BBB, or other mechanisms. Direct measurement of diacetyl in brain tissue or CSF would be needed to definitively support BBB crossing. The overlap with lung transcriptome (C40-C41) suggests systemic effects but doesn't prove direct BBB penetration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C73"
+    ],
+    "result": "Diacetyl exposure downregulates neuroblastoma-associated genes in mouse brain and specifically inhibits neuroblastoma cell proliferation. Key neuroblastoma genes (MYCN, Alk, NCAN, STK33, ERCC6L2) were significantly downregulated in diacetyl-exposed mouse brains. In cell culture, diacetyl significantly reduced proliferation of SH-SY5Y neuroblastoma cells but not other cancer cell lines (A549, SK-MEL-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 identify specific gene expression changes with strong statistical significance. Claims C47-C48 and C73 demonstrate cell-line-specific anti-proliferative effects, which is important for ruling out general toxicity. However, the connection between brain gene expression changes in mice and neuroblastoma cell proliferation in culture is correlative rather than mechanistic. The specificity for neuroblastoma cells (C48) is compelling but based on limited cell lines (n=3 types tested).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C74"
+    ],
+    "result": "Diacetyl vapor exposure slows photoreceptor degeneration in a Drosophila Huntington's disease model. HTTQ120 flies exposed to 1% diacetyl headspace showed approximately 50% reduction in rhabdomere loss compared to controls, with the majority of ommatidia retaining 6-7 rhabdomeres at day 5 and 2-3 rhabdomeres at day 10 versus ~1-2 in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 and C74 present a well-controlled experiment using an established disease model. The quantification of rhabdomeres provides an objective phenotypic readout. The ~50% reduction in degeneration (C52) is substantial and statistically significant (p<0.0001 shown in Figure 6B). This result is consistent with prior work showing orally administered HDAC inhibitors have similar effects (C65), providing mechanistic plausibility. The exposure paradigm (daily replacement) mimics a treatment regimen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C78"
+    ],
+    "result": "Background context: Drosophila melanogaster naturally encounter diacetyl in their ecological niche, and prior work showed CO2 exposure causes structural changes in the antennal lobe. Diacetyl is an inhibitory odorant of the CO2 receptor, and D. melanogaster use fermenting fruits (where diacetyl is produced) as their food source and oviposition site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, and C78 provide ecological and physiological context from prior literature. These establish the biological relevance of studying diacetyl in Drosophila and provide rationale for the experimental design. The claims are well-supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C56",
+      "C57"
+    ],
+    "result": "Diacetyl is a naturally occurring volatile found in fermenting fruits and many foods. It is produced at high levels by yeast (1350 ppb in ripe banana) and by microorganisms during fermentation, and is generated from metabolism of triglycerides, sugars, and amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C56-C57 establish the natural occurrence and sources of diacetyl, supported by appropriate citations. The specific concentration in banana (C3) provides quantitative context for environmental exposure levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Safety context: High-level diacetyl exposure causes bronchiolitis obliterans ('popcorn lung'), but it is GRAS-listed at low concentrations. Rodent studies show respiratory toxicity at high doses, and cigarette smoke contains very high levels (250-361 ppm per cigarette). HDAC inhibitors generally show dose-dependent effects with toxicity at high doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide important safety context from prior literature. The authors appropriately acknowledge known toxicity at high doses while noting GRAS status at low concentrations. The cigarette smoke data (C63) provides perspective on human exposure levels. This balanced presentation of risks is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "HDAC biology context: HDACs are ancient, conserved enzymes that regulate gene expression through histone deacetylation. They are promising drug targets for cancers and neurodegenerative diseases, with several orally administered HDAC inhibitors showing efficacy in attenuating disease progression, including in Huntington's disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C79-C81 provide essential background on HDAC biology and therapeutic relevance, all supported by appropriate citations. This context is necessary for interpreting the significance of discovering volatile HDAC inhibitors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C76",
+      "C77"
+    ],
+    "result": "Microbiome metabolite context: Approximately half of metabolites in mammalian blood are produced or altered by microbes, and microbial metabolites like \u03b2-hydroxybutyrate can influence host gene expression and immunity through mechanisms including HDAC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C76-C77 establish the broader context of microbiome-host interactions through metabolites, supported by appropriate citations. This frames the discovery of volatile HDAC inhibitors within the larger field of microbiome research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75"
+    ],
+    "result": "Summary claims: Diacetyl exposure alters gene expression in Drosophila antennae, inhibits HDACs, increases H3K9 acetylation in human cells, and causes gene expression changes in both Drosophila and mice, suggesting that environmental volatiles can have profound effects on histone acetylation, gene expression, and physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C75 are summary statements supported by the detailed experimental results in other claim groups. These appropriately synthesize the major findings of the manuscript.",
+    "result_type": "MINOR"
+  }
+]

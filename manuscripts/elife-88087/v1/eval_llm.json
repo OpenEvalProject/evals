@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study identified 17,618 candidate Mcm binding sites (CMBSs) genome-wide with signal intensities varying over three orders of magnitude, with high reproducibility (r\u00b2 = 0.98-0.99) and 650\u00d7 average coverage. The vast majority (82%) of known origins correspond to the 500 most abundant CMBSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C34 collectively demonstrate robust technical performance and validation against known origins. The high reproducibility (C31), deep coverage (C30), and strong correspondence with known origins (C32-C34) provide converging evidence that the ChEC method successfully identifies Mcm binding sites across a wide dynamic range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Replication initiation, as measured by ssDNA accumulation, occurs at the most abundant 1600 CMBSs, with activity paralleling Mcm abundance. The top cohort shows ~69% licensing, declining to ~1% at ranks 1401-1600, representing the detection limit of the ssDNA assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C41 provide multiple lines of converging evidence linking Mcm abundance to replication activity. The ssDNA data (C4, C35, C36), licensing measurements (C37-C40), and correlation analysis (C41) are internally consistent and supported by appropriate controls and quantification methods shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The most abundant 5000 CMBSs localize to nucleosome-free regions (NFRs) flanked by well-positioned nucleosomes, while CMBSs ranked >5000 correspond largely to nucleosomes. Mcm is present predominantly as a single double hexamer across all abundance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C45 are supported by two orthogonal nucleosome mapping methods (chemical cleavage and MNase-seq) shown in Figure 3. The observation that single double hexamers predominate (C44) argues against models of multiple loading (C45), providing mechanistic insight. The convergence of independent methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CMBSs ranked \u22645000 are predominantly intergenic (89% for top 500), with an abrupt transition to genic localization at rank ~5000 coinciding with increased transcription levels. Lower abundance intergenic sites (ranks 500-4000) show preference for divergent gene orientation, while the top 500 prefer convergent orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 describe consistent patterns of genomic localization supported by quantitative data in Figure 4. The abrupt transition at rank 5000 (C48-C49) aligns with other criteria distinguishing functional origins from background. The gene orientation preferences (C50-C51) are consistent with prior reports and support the interpretation that Mcm is loaded in situ (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "The most abundant 5500 CMBSs are flanked by ARS consensus sequences (ACSs) positioned ~35 bp from Mcm binding midpoints, with ACS quality scores declining and disappearing by rank 6000. Sites with strong ACS on one strand remain enriched for ACS on the opposite strand, supporting dual Orc binding site models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C53-C56, C61 demonstrate systematic enrichment of ACS motifs at CMBSs using position weight matrix analysis (Figure 5A-C). The bidirectional ACS enrichment (C56) provides evidence for dual Orc binding sites. The gradual decline in ACS scores with rank (C55) and convergence with other criteria at rank ~5500-6000 supports the conclusion that these sites can function as origins (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mcm is typically loaded downstream of the ACS, with 77% (112/146) of CMBSs within 100 bp of known ACSs positioned downstream. This provides the first in vivo confirmation of directional loading predicted by in vitro studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C76-C77 provide quantitative evidence for directional Mcm loading using high-resolution ChEC data (Figure 5D). The 77% downstream positioning (C58, C77) is statistically significant and consistent with in vitro predictions. The authors appropriately acknowledge potential confounders (C78) including ACS misidentification and Mcm sliding. This represents a technical advance over prior ChIP-based methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C80",
+      "C81"
+    ],
+    "result": "The most abundant 5500-6000 CMBSs exhibit GC skew patterns characteristic of replication origins, with a general rise in GC skew across binding sites and a short reversal at the midpoint consistent with Mcm hexamer crossover during bidirectional replication initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C64-C67, C80-C81 demonstrate GC skew patterns consistent with replication origins extending to rank ~6000 (Figure 6). The midpoint reversal (C66, C80-C81) provides additional mechanistic insight consistent with biochemical data. The requirement for precise alignment at Mcm binding sites (rather than ACS) to detect this subtle signal demonstrates the importance of high-resolution mapping and validates the biological significance of the identified sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C68",
+      "C70",
+      "C85"
+    ],
+    "result": "Multiple independent criteria (ssDNA, nucleosome positioning, intergenic localization, ACS flanking, GC skew) converge on ~5500 total replication origins, representing at least a threefold increase over the ~500 previously known origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C68, C70, C85 synthesize evidence from multiple orthogonal approaches that independently converge on ~5500 origins (Table 1). The consistency across methods (nucleosome mapping, genomic localization, sequence motifs, evolutionary signatures) provides strong support for this estimate. The authors appropriately note that the top 5000 CMBSs appear relatively homogeneous (C70), supporting a quantitative rather than qualitative difference in origin activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C72"
+    ],
+    "result": "Replication may occasionally initiate in essentially every intergenic region, given ~6000 genes in the yeast genome and ~5500 identified origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C72 represent speculative extrapolations from the data. While the arithmetic is correct (~6000 genes, ~5500 origins), the claim that replication \"may occasionally initiate in essentially every intergenic region\" goes beyond what the data directly demonstrate. The authors appropriately frame this as a suggestion, but it remains uncertain whether all intergenic regions have functional origin potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C26",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The distribution of Mcm abundance is consistent with single-molecule studies showing 9-20% of replication initiates outside known origins, with ~15% of initiation distributed among 5000 sites, explaining why these events appear unique in single-molecule studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C26, C73-C75 reconcile the current findings with prior single-molecule studies. The calculation that the top 500 sites comprise 85% of total signal (C73), leaving 15% distributed among 5000 sites (C75), is consistent with the 9-20% extra-origin initiation reported previously (C10, C26, C74). This provides a coherent explanation for apparently discrepant observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C85"
+    ],
+    "result": "The broader distribution of replication origins in yeast suggests S phase may be less distinct from that in humans than widely assumed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C85 draw a comparative conclusion supported by the finding of more dispersed origins in yeast. While the comparison to humans is not directly tested, the logic is sound: the traditional view of yeast having highly defined origins versus mammalian cells having more diffuse initiation is challenged by finding ~5500 origins in yeast. This represents a valid inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C82"
+    ],
+    "result": "Origin activity control operates through modulation of the fraction of cells with a single double hexamer bound, rather than through variation in the number of double hexamers at individual sites within single cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C82 describe a mechanistic model supported by the observation that single double hexamers predominate across all abundance levels (Figure 3A). This argues against models of multiple loading per cell and supports population-level licensing control. The inference is logical and consistent with the data, though direct single-cell measurements would provide stronger support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The size distribution of DNA fragments produced by MCM-MNase cleavage peaked at 61 base pairs, corresponding to the length of DNA covered by the MCM double hexamer in cryo-EM studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 link the observed fragment size distribution to structural data, providing validation that the ChEC method captures Mcm double hexamers. The correspondence between the 61 bp peak and cryo-EM measurements supports the specificity of the approach. This is a technical validation result consistent with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "ChEC allows identification of Mcm double hexamer loading sites with both high resolution and high sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 summarizes the technical capabilities of the ChEC method, supported by the authors' previous work and validated throughout the current study. The comparison with ChIP-based methods (Figure 1C) demonstrates superior resolution and sensitivity. This is an established methodological claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Mcm double hexamers can slide along DNA after loading, and at ARS1, the B2 element is required for Mcm loading though not for Orc binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 cite established knowledge from prior studies. These are important caveats for interpreting the ChEC data but represent background knowledge rather than new findings. The citations support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The relationship between the ACS consensus sequence and actual Orc binding is weak, with approximately half of SGD-reported origins lacking a specified ACS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 describes a limitation in ACS identification that is important for interpreting the results. This is an observation about the state of the field rather than a new finding, but it appropriately contextualizes the ACS analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C71"
+    ],
+    "result": "The continuous decline in replication activity may reflect an increasing fraction of CMBSs with zero origin activity, though the authors assume that loaded Mcm complexes can potentially be activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69 and C71 represent alternative interpretations and assumptions underlying the analysis. C69 is explicitly framed as an extreme model, while C71 acknowledges a key assumption. These are appropriately presented as uncertain interpretations rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Low activity origins may leave evolutionary GC skew footprints either because cytosine deamination acts as a unidirectional ratchet or because origin activity fluctuates over evolutionary time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 propose speculative mechanisms to explain the persistence of GC skew at low-activity origins. While these are plausible hypotheses, they are not directly tested and remain speculative. The authors appropriately frame these as suggestions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background knowledge about yeast replication origins, including their number (~500 known), mechanism of action (ORC binding, MCM loading, activation), and characteristics (NFR localization, GC skew).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C25 represent established background knowledge supported by appropriate citations. These provide context for the current study and are well-supported by the literature. They are not new findings but necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "The authors previously showed that known origins are typically bound by a single Mcm double hexamer loaded adjacent to the ACS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 references the authors' prior work, which is appropriately cited. This establishes the foundation for the current genome-wide extension of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "GC skew at replication origins reflects the mechanistic differences between leading and lagging strand synthesis, including differential single-stranded exposure and cytosine deamination susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 explain the mechanistic basis for GC skew, representing established knowledge that contextualizes the GC skew analysis. This is background information rather than a new finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Exceptions to downstream Mcm loading may reflect incorrect ACS identification, incorrect directionality inference, or Mcm sliding after loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 proposes potential explanations for the 34 exceptions to downstream loading but does not test these hypotheses. This represents appropriate acknowledgment of limitations and alternative explanations.",
+    "result_type": "MINOR"
+  }
+]

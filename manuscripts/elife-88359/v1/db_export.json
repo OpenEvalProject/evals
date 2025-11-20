@@ -1,0 +1,2346 @@
+{
+  "submission": {
+    "id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T19:30:09.344152Z",
+    "updated_at": "2025-11-20T19:30:09.344152Z"
+  },
+  "content": [
+    {
+      "id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "content_type": "manuscript",
+      "content_text": "# Sleep regularity and mortality: a prospective analysis in the UK Biobank\n\n## Authors\n\n- Lachlan Cribb<sup>1</sup> ([ORCID: 0000-0001-5276-5249](https://orcid.org/0000-0001-5276-5249))\n- Ramon Sha<sup>1</sup>\n- Stephanie Yiallourou<sup>1</sup> ([ORCID: 0000-0002-2433-6372](https://orcid.org/0000-0002-2433-6372))\n- Natalie A Grima<sup>1</sup>\n- Marina Cavuoto<sup>1</sup>\n- Andree-Ann Baril<sup>3</sup>\n- Matthew P Pase<sup>1</sup> ([ORCID: 0000-0002-4143-8485](https://orcid.org/0000-0002-4143-8485)) \u2020\n\n### Affiliations\n\n1. Turner Institute for Brain and Mental Health, School of Psychological Sciences, Monash University Melbourne Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))\n2. National Ageing Research Institute Melbourne Australia ([ROR:00200ya62](https://ror.org/00200ya62))\n3. Douglas Mental Health University Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))\n4. Harvard T.H. Chan School of Public Health, Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Irregular sleep-wake timing may cause circadian disruption leading to several chronic age-related diseases. We examined the relationship between sleep regularity and risk of all-cause, cardiovascular disease (CVD), and cancer mortality in 88,975 participants from the prospective UK Biobank cohort.Methods:The sleep regularity index (SRI) was calculated as the probability of an individual being in the same state (asleep or awake) at any two time points 24 hr apart, averaged over 7 days of accelerometry (range 0\u2013100, with 100 being perfectly regular). The SRI was related to the risk of mortality in time-to-event models.Results:The mean sample age was 62 years (standard deviation [SD], 8), 56% were women, and the median SRI was 60 (SD, 10). There were 3010 deaths during a mean follow-up of 7.1 years. Following adjustments for demographic and clinical variables, we identified a non-linear relationship between the SRI and all-cause mortality hazard (p [global test of spline term]<0.001). Hazard ratios, relative to the median SRI, were 1.53 (95% confidence interval [CI]: 1.41, 1.66) for participants with SRI at the 5th percentile (SRI = 41) and 0.90 (95% CI: 0.81, 1.00) for those with SRI at the 95th percentile (SRI = 75), respectively. Findings for CVD mortality and cancer mortality followed a similar pattern.Conclusions:Irregular sleep-wake patterns are associated with higher mortality risk.Funding:National Health and Medical Research Council of Australia (GTN2009264; GTN1158384), National Institute on Aging (AG062531), Alzheimer\u2019s Association (2018-AARG-591358), and the Banting Fellowship Program (#454104).\n\n## Introduction\n\nCircadian rhythms are endogenous cycles in physiological, hormonal, and behavioral processes largely synchronized to the external 24 hr light-dark cycle. The sleep-wake cycle is perhaps the most notable biological process that follows the 24 hr circadian rhythm (Zee and Vitiello, 2009). The timing of light exposure is the primary external driver of circadian rhythms. Therefore, rapid changes in sleep timing can cause circadian misalignment through fluctuating light-dark exposure (Zeitzer et al., 2000).\n\nCircadian misalignment is associated with several age-related diseases, including cancer and cardiovascular disease (CVD) (Torquati et al., 2018; International-Agency-for-Research-on-Cancer, 2010; Janszky and Ljung, 2008). However, the health impacts of irregular sleep-wake timing are still emerging. This remains an important area of study since modern societal and lifestyle trends, including exposure to artificial and blue light at night, longer work hours, shift work, and the 24-7 lifestyle, have blurred the distinction between day and night, increasing the propensity for circadian disruption (Walker et al., 2020). The present study assessed the relationship between sleep regularity and the risk of incident all-cause mortality, cancer mortality, and CVD mortality in the UK Biobank (UKB). We measured sleep regularity via accelerometry to calculate the sleep regularity index (SRI), a new metric sensitive to differences in sleep-wake timing on a circadian timescale.\n\n## Methods\n\n### Participants\n\nOver 500,000 adults aged 40\u201369 years were recruited to the UKB cohort between 2006 and 2010 across 22 assessment centers. Participants were invited by the UK National Health Service patient registers, resulting in a 5.5% participation rate. Respondents were more likely to be older, female, and less likely to live in socioeconomically deprived areas than the general population (Fry et al., 2017). Baseline demographics, medical history, lifestyle, vitals, and blood samples were collected. A total of 106,053 participants completed a 7-day wrist-worn accelerometer study through random selection between February 2013 and December 2015. UKB has approval from the North West Multi-centre Research Ethics Committee as a Research Tissue Bank (RTB) approval (No. 16/NW/0274; 21/NW/0157). This approval means that the present study operates under the RTB approval and a separate ethical clearance was not required.\n\n### Measurement of sleep regularity\n\nAccelerometry data were collected using a wrist-worn device (Axivity AX3, United Kingdom) over a 7-day/night period. Estimated sleep status (awake or asleep) at a given time was calculated using the open-source R package GGIR version 2.7-1 (Migueles et al., 2019), using available algorithms (van Hees et al., 2015; van Hees et al., 2018). To distinguish sleep from sustained periods of inactivity without reference to a sleep diary (not available in the UKB), GGIR uses an algorithm to determine a daily \u2018sleep period time window\u2019 for each participant (van Hees et al., 2018). This defines the time window between the onset and end of the main daily sleep period, during which periods of sustained inactivity are interpreted as sleep. The algorithm does not, by default, detect bouts of sleep outside of this window and hence is not able to identify naps. Accelerometry data of low quality were removed using established UKB criteria (Appendix 1). Most participants (88%) provided complete accelerometry data. Participants with fewer than two valid SRI measurements (i.e., less than 2 contiguous 24 hr wear periods; <1%) were excluded. In total, 88,975 (84%) participants provided valid SRI data and were included in the study.\n\nThe SRI captures the probability of a participant being in the same state (asleep or awake) at any two time points 24 hr apart (Phillips et al., 2017). An individual who sleeps and wakes at precisely the same time each day would have an index of 100, whereas an individual who sleeps and wakes at entirely random times would have an index of 0. Each participant provided k-1 SRI measurements (where k is the number of valid 24 hr periods), one for each contiguous 2-day pair. These SRI measurements were averaged using a linear mixed effects model with a random intercept for the participant and fixed effects for the day of the week and daylight savings transition. The average SRI was standardized over the day of the week and daylight savings transitions, so all SRI results were comparable.\n\n### Mortality ascertainment\n\nMortality occurrence was identified through linkage with NHS Digital for participants from England and Wales and the NHS Central Register for participants from Scotland, with complete records available until January 2022. Death records included the date of death and the ICD-10 code for the primary cause. ICD-10 codes I00-I99 and C00-C97 defined CVD and cancer mortality, respectively.\n\n### Ascertainment of disease status at baseline\n\nHistory of cancer (ICD-10 codes D00-D09 and D37-D48), diabetes (codes E10-E14), mental and behavioral disorders (codes F00-F99), nervous system disorders (codes G00-G99), and CVD (codes I00-I99) at the time of the accelerometry study were ascertained through self-report at the UKB baseline session and through linkage with hospital inpatient records using the above ICD-10 codes. Linkage with hospital inpatient records was also used to identify disease occurrence between the UKB baseline session and the time of the accelerometry study.\n\n### Data analysis\n\nData analysis was performed using R version 4.2.1. Cox proportional hazards models were used to examine associations between the SRI and incident all-cause mortality, CVD mortality, and cancer mortality. Surveillance for mortality commenced from the time of accelerometry (2013\u20132015) until the end of follow-up (January 2022), with a median follow-up time of 7.1 years (Q1, Q3: 6.6, 7.6). Non-events were censored at the last date they were known to be alive. For CVD and cancer mortality, deaths from competing causes were censored at the time of death. The SRI and all continuous confounders were modeled with restricted cubic splines with knots at the 10th, 50th, and 90th percentiles to allow for departures from linearity. Effect modification was assessed by adding product terms to Cox models. Missing data were infrequent (<2%) for most confounder variables and were imputed (10 imputations) by predictive mean matching using the aregImpute function of R package Hmisc (Harrell and Harrell, 2019).\n\nIn addition to Cox models, discrete-time hazards models, including an interaction between SRI and time (aggregated into 3-month intervals and modeled with a restricted cubic spline with knots at the 5th, 35th, 65th, and 95th percentiles), were fitted to relax the assumption of proportionality and allow hazard ratios (HRs) to vary over time (Singer and Willett, 2003). The SRI by time interaction in this model provided a test of proportionality (a small p-value would indicate strong evidence against the proportional hazards assumption). Time-varying HRs were then displayed visually. In cases where HRs showed clear time variation (i.e., hazards were non-proportional), we nonetheless present HRs from the Cox models as these can be interpreted as a weighted average of the time-varying HRs (Stensrud and Hern\u00e1n, 2020). The discrete-time hazards model for all-cause mortality was also used to estimate standardized cumulative incidence (risk) across levels of SRI, with confidence intervals obtained by bootstrapping (Hern\u00e1n and Robins, 2010). To reduce computation demand, only single imputation was used for the discrete-time hazards models.\n\nAll models were adjusted for the following variables that were selected using a directed acyclic graph (Appendix 3\u2014figure 1): age, sex, ethnicity (White, Asian, mixed race, Black, or other), Townsend deprivation index, retirement status (retired vs. all other work arrangements), shift work (shift worker vs. non-shift worker), sick or disabled (self-reported employment category), household income (ordinal with five levels), highest level of education (ordinal with six levels), smoking status (current, former, never), smoking (pack years), and use of sedative, antidepressant, or antipsychotic medication.\n\n### Sensitivity analyses\n\nWe fitted a second statistical model to determine whether the observed associations were independent of sleep time and disruption. Therefore, Model 2 included additional adjustments for overnight sleep duration and wake after sleep onset (WASO), averaged across accelerometry days (plus primary model covariates). In the second sensitivity analysis (Model 3), we adjusted for history of several diseases at baseline (cancer, CVD, mental and behavioral disorders, nervous system disorders, diabetes), in addition to the variables in the primary model. These variables were included as part of a sensitivity analysis as it is unclear whether they may be mediators or confounders of the SRI-mortality relationship. Long-standing irregular sleep may lead to prevalent disease (or a history of disease) at baseline and influence disease risk factors (Fritz et al., 2021; Huang and Redline, 2019; Huang et al., 2023; Zuraikat et al., 2020), indicating that these disease variables may play a mediating role (and consequently should not be adjusted). Conversely, such diseases may have effects disruptive to regular sleep and these variables may therefore confound the SRI-mortality relationship. Disease risk factor variables body mass index (BMI), moderate and vigorous physical activity (accelerometry-derived), systolic blood pressure (BP), and use of BP lowering medication, in addition to the variables in Model 3, were included in a final sensitivity analysis (Model 4), as it is similarly unclear whether they may confound or mediate the SRI-mortality relationship.\n\n### Comparison of SRI with other regularity measures\n\nPreliminary reports which identified irregular sleep as a potential CVD risk factor measured sleep regularity as the amount of deviation in sleep patterns from an individual\u2019s average (i.e., the standard deviation [SD] of nocturnal sleep duration and sleep onset time) (Nikbakhtian et al., 2021; Huang et al., 2020). To contrast these SD-based metrics with the SRI, we fitted independent Cox models (each with primary model covariates) and estimated HRs for all-cause mortality for each of the three measures. Additionally, we added the SRI to a model containing both SD-based regularity measures (alongside primary model covariates) to test whether the SRI contained additional mortality risk information beyond that captured by the two SD metrics.\n\n## Results\n\nTable 1 displays sample characteristics. The final sample size was 88,975. There were 3010 all-cause deaths during a median follow-up of 7.1 years (Q1, Q3: 6.6, 7.6). The most common primary cause of death was cancer (n=1701, 57%) followed by CVD (n=616, 20%).\n\n**Table 1.**\n Sample characteristics (n=88,975).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">SRI tertile</th>\n    </tr>\n    <tr>\n      <th>Characteristic</th>\n      <th>&lt;56.8n=29,361</th>\n      <th>56.8\u201365.2n=29,361</th>\n      <th>&gt;65.2n=30,252</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sex (male), n (%)</td>\n      <td>16,429 (56%)</td>\n      <td>12,747 (43%)</td>\n      <td>9691 (32%)</td>\n    </tr>\n    <tr>\n      <td>Age (years)</td>\n      <td>62.3 (7.8)</td>\n      <td>61.8 (7.8)</td>\n      <td>61.6 (7.9)</td>\n    </tr>\n    <tr>\n      <td>BMI</td>\n      <td>27.8 (4.9)</td>\n      <td>26.6 (4.3)</td>\n      <td>25.8 (4.1)</td>\n    </tr>\n    <tr>\n      <td>Ethnicity, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Asian</td>\n      <td>1199 (4.1%)</td>\n      <td>1110 (3.8%)</td>\n      <td>1114 (3.7%)</td>\n    </tr>\n    <tr>\n      <td>Black</td>\n      <td>159 (0.5%)</td>\n      <td>107 (0.4%)</td>\n      <td>76 (0.3%)</td>\n    </tr>\n    <tr>\n      <td>Mixed race</td>\n      <td>1024 (3.5%)</td>\n      <td>831 (2.8%)</td>\n      <td>658 (2.2%)</td>\n    </tr>\n    <tr>\n      <td>White</td>\n      <td>26,621 (91%)</td>\n      <td>27,070 (93%)</td>\n      <td>28,210 (93%)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>233 (0.8%)</td>\n      <td>145 (0.5%)</td>\n      <td>129 (0.4%)</td>\n    </tr>\n    <tr>\n      <td>Townsend deprivation index (score units)</td>\n      <td>\u20131.36 (3.01)</td>\n      <td>\u20131.79 (2.76)</td>\n      <td>\u20132.01 (2.63)</td>\n    </tr>\n    <tr>\n      <td>Household income* (thousands), n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>&lt;18</td>\n      <td>4917 (19%)</td>\n      <td>3601 (14%)</td>\n      <td>3266 (12%)</td>\n    </tr>\n    <tr>\n      <td>18\u201330</td>\n      <td>6665 (25%)</td>\n      <td>6225 (24%)</td>\n      <td>6450 (24%)</td>\n    </tr>\n    <tr>\n      <td>31\u201350</td>\n      <td>7352 (28%)</td>\n      <td>7741 (29%)</td>\n      <td>7843 (29%)</td>\n    </tr>\n    <tr>\n      <td>51\u2013100</td>\n      <td>5888 (22%)</td>\n      <td>6816 (26%)</td>\n      <td>7280 (27%)</td>\n    </tr>\n    <tr>\n      <td>&gt;100</td>\n      <td>1633 (6.2%)</td>\n      <td>1994 (7.6%)</td>\n      <td>2159 (8.0%)</td>\n    </tr>\n    <tr>\n      <td>Retired, n (%)</td>\n      <td>9467 (32%)</td>\n      <td>8984 (31%)</td>\n      <td>9442 (31%)</td>\n    </tr>\n    <tr>\n      <td>Shift worker, n (%)</td>\n      <td>1869 (6.4%)</td>\n      <td>1146 (3.9%)</td>\n      <td>912 (3.0%)</td>\n    </tr>\n    <tr>\n      <td>Smoking status, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Current</td>\n      <td>2790 (9.5%)</td>\n      <td>1863 (6.4%)</td>\n      <td>1451 (4.8%)</td>\n    </tr>\n    <tr>\n      <td>Former</td>\n      <td>10,956 (37%)</td>\n      <td>10,587 (36%)</td>\n      <td>10,367 (34%)</td>\n    </tr>\n    <tr>\n      <td>Never</td>\n      <td>15,526 (53%)</td>\n      <td>16,830 (57%)</td>\n      <td>18,361 (61%)</td>\n    </tr>\n    <tr>\n      <td>Sedative medication, n (%)</td>\n      <td>334 (1.1%)</td>\n      <td>231 (0.8%)</td>\n      <td>216 (0.7%)</td>\n    </tr>\n    <tr>\n      <td>Antidepressant medication, n (%)</td>\n      <td>2217 (7.6%)</td>\n      <td>1543 (5.3%)</td>\n      <td>1385 (4.6%)</td>\n    </tr>\n    <tr>\n      <td>History of cancer, n (%)</td>\n      <td>3941 (13%)</td>\n      <td>3800 (13%)</td>\n      <td>3897 (13%)</td>\n    </tr>\n    <tr>\n      <td>History of CVD, n (%)</td>\n      <td>13,949 (48%)</td>\n      <td>11,602 (40%)</td>\n      <td>10,727 (35%)</td>\n    </tr>\n    <tr>\n      <td>History of diabetes, n (%)</td>\n      <td>1976 (6.7%)</td>\n      <td>1059 (3.6%)</td>\n      <td>724 (2.4%)</td>\n    </tr>\n    <tr>\n      <td>History of neurological disease, n (%)</td>\n      <td>3946 (13%)</td>\n      <td>3380 (12%)</td>\n      <td>3467 (11%)</td>\n    </tr>\n    <tr>\n      <td>History of mental/behavioral disorder, n (%)</td>\n      <td>3521 (12%)</td>\n      <td>2482 (8.5%)</td>\n      <td>2184 (7.2%)</td>\n    </tr>\n    <tr>\n      <td>Average night time sleep duration (hours; actigraphy-derived)</td>\n      <td>6.33 (0.97)</td>\n      <td>6.59 (0.78)</td>\n      <td>6.79 (0.66)</td>\n    </tr>\n    <tr>\n      <td>Average night time wake after sleep onset (hours; actigraphy-derived)</td>\n      <td>0.86 (0.30)</td>\n      <td>0.80 (0.26)</td>\n      <td>0.70 (0.23)</td>\n    </tr>\n    <tr>\n      <td>Sleep duration SD, hours</td>\n      <td>1.33 (0.64)</td>\n      <td>1.11 (0.52)</td>\n      <td>0.94 (0.48)</td>\n    </tr>\n    <tr>\n      <td>Sleep onset time SD, hours</td>\n      <td>1.41 (1.12)</td>\n      <td>0.96 (0.64)</td>\n      <td>0.72 (0.51)</td>\n    </tr>\n    <tr>\n      <td>SRI, score units</td>\n      <td>48.5 (7.3)</td>\n      <td>61.2 (2.4)</td>\n      <td>70.3 (3.7)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Data are mean (SD), unless specified otherwise. *pounds. SRI = sleep regularity index; CVD = cardiovascular disease._\n\n### SRI and all-cause mortality\n\nWe identified a non-linear association between the SRI and all-cause mortality hazard (p [global test of spline term]<0.001) (Figure 1). Compared to the sample median (SRI = 61), mortality rates were highest among those with the most irregular sleep and decreased almost linearly as SRI approached its median, after which the decrease began to plateau (Figure 1). HRs, relative to the median SRI, were 1.53 (95% CI: 1.41, 1.66) for participants with SRI at the 5th percentile (SRI = 41) and 0.90 (95% CI: 0.81, 1.00) for those with SRI at the 95th percentile (SRI = 75), respectively. Standardized cumulative incidence curves for all-cause mortality are displayed for the SRI at the 5th percentile, median, and 95th percentile in Figure 2. There was little indication that HRs varied according to age (p interaction = 0.48), sex (p=0.36), household income (p=0.62), sleep duration (p=0.47), moderate to vigorous physical activity (p=0.13), history of CVD (p=0.48), or cancer (p=0.29).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/88359/elife-88359-fig1-v1.jpg)\n\n**Figure 1.:** p-Values from global (2 degrees of freedom) test of spline term. HRs are relative to the median sleep regularity index (SRI) (SRI = 60). HRs for all-cause mortality, CVD mortality, and cancer mortality were estimated using Cox proportional hazards models, adjusted for age, Townsend deprivation index, sex, antidepressant, antipsychotic, and sedative medication, ethnicity, household income, education, smoking status (former, current, never), smoking pack years, shift work, retirement status, and sick or disabled (self-reported employment category). All continuous confounders and the SRI were modeled with restricted cubic splines (knots at 10th, 50th, and 90th percentiles) to allow for departures from linearity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/88359/elife-88359-fig2-v1.jpg)\n\n**Figure 2.:** Standardized cumulative incidence of all-cause mortality for SRI at 41 (5th percentile), 61 (median), and 75 (95th percentile). Estimates from a discrete-time hazards models including an interaction between SRI and time (aggregated into 3-month intervals and modeled with a restricted cubic spline with knots at the 5th, 35th, 65th, and 95th percentiles) and primary model covariates. Confidence intervals were obtained by bootstrapping.\n\nThere was strong evidence against the proportionality assumption in the discrete-time hazards model (p [time \u00d7 SRI interaction]<0.001). Time-varying HRs for the 5th and 95th SRI percentiles compared to the median are displayed in the appendix (Appendix 3\u2014figure 2). For the 5th percentile relative to the median, HRs were greatest in the earliest period of follow-up (HRs >2), declining until approximately 2.5 years, after which they remained approximately stable with an HR of around 1.5. There was no clear time variation in the HR for the 95th percentile of SRI vs. the median.\n\n### CVD-specific mortality\n\nThe SRI was associated with CVD-specific mortality in the primary model (p [global]<0.001; Figure 1). HRs, relative to the median SRI, were 1.88 (95% CI: 1.61, 2.21) and 0.93 (95% CI: 0.73, 1.20) for the 5th and 95th percentiles, respectively. There was no evidence of non-proportional hazards in the discrete-time hazards model (p [time \u00d7 SRI interaction]=0.57). There was little indication that HRs varied according to age (p interaction = 0.17), household income (p=0.30), sleep duration (p=0.69), moderate to vigorous physical activity (p=0.95), history of CVD (p=0.16), or history of cancer (p=0.24). HRs for low SRI were larger for females than males (p interaction = 0.006; Appendix 3\u2014figure 4).\n\n### Cancer-specific mortality\n\nThe SRI was associated with cancer mortality in the primary model (p [global]<0.001). HRs, relative to the median SRI, were 1.36 (95% CI: 1.22, 1.53) and 0.89 (95% CI: 0.77, 1.02) for the 5th and 95th percentiles, respectively. There was strong evidence of non-proportional hazards in the cancer mortality discrete-time hazards model (p [time \u00d7 SRI interaction]<0.001). HRs, for the 5th percentile vs. the median, were large at the beginning of follow-up (HRs >2) and declined until approximately 4 years, after which they were small (~1.05) and compatible with the null (Appendix 3\u2014figure 3). There was no indication that HRs for the 95th SRI percentile relative to the median varied over follow-up. There was little indication that hazard ratios varied according to age (p interaction = 0.48), sex (p=0.36), household income (p=0.62), sleep duration (p=0.49), moderate to vigorous physical activity (p=0.42), history of CVD (p=0.82), or history of cancer (p=0.12).\n\n### Sensitivity analyses\n\nSensitivity analyses are displayed in the appendix (Appendix 3\u2014figures 5\u20137). Overall, results were similar and not meaningfully altered following adjustments for sleep time and WASO (Model 2) or history of disease at baseline, including cancer and CVD (Model 3). The SRI remained associated with mortality after further adjustments for disease history, BMI, systolic BP, BP treatment, and physical activity (Model 4), though effect sizes were attenuated. For example, when comparing the 5th percentile to the median, HRs were 1.22 (95% CI: 1.07, 1.39) for all-cause, 1.43 (95% CI: 1.21, 1.69) for CVD, and 1.15 (95% CI: 1.01, 1.29) for cancer mortality.\n\n### Comparison of SRI with sleep duration SD and sleep onset time SD\n\nThe SRI was modestly negatively correlated with the sleep duration SD (\u20130.32) and sleep onset time SD (\u20130.42; see correlation matrix in Appendix 3\u2014table 1). Figure 3 displays HRs, relative to the median, for the SRI, sleep duration SD, and sleep onset time SD. For each measure, greater sleep irregularity (i.e., lower SRI or higher SD representing more day-to-day variability) was associated with an increased all-cause mortality rate in independent models (all p [global]<0.001). HRs, for low regularity compared to the median, were largest for the SRI (Figure 3). The addition of the SRI to a model containing both SD metrics (alongside primary model covariates) improved model fit (p [likelihood ratio test]<0.001). Conversely, the addition of sleep duration SD and sleep onset time SD to a model containing the SRI (and primary model covariates) did not meaningfully improve model fit (p [likelihood ratio test]=0.10).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/88359/elife-88359-fig3-v1.jpg)\n\n**Figure 3.:** p-Values from global (2 degrees of freedom) test of exposure spline term. HRs are relative to the median SRI (SRI = 60). HRs were estimated using Cox proportional hazards models, adjusted for age, Townsend deprivation index, sex, antidepressant, antipsychotic, and sedative medication, ethnicity, household income, education, smoking status (former, current, never), smoking pack years, shift work, retirement status, and sick or disabled (self-reported employment category). All continuous confounders and the sleep regularity metrics were modeled with restricted cubic splines (knots at 10th, 50th, and 90th percentiles) to allow for departures from linearity.\n\n## Discussion\n\nAmong 88,975 individuals followed for a median of 7.1 years, there was a non-linear association between sleep regularity and the risk of mortality; mortality rates were highest in persons with the most irregular sleep and decreased approximately linearly as sleep regularity approached its median, after which the decrease began to plateau. Our findings were independent of several illness (including history of cancer and CVD at baseline), sleep duration, sleep fragmentation, and other confounding factors. Overall, these data indicate a relationship between sleep regularity and longevity in a large community-based cohort.\n\nPhysiological processes associated with CVD and cancer are under circadian control. Mutations or deletions to circadian clock genes such as CLOCK, PER, and BMAL1 influence BP, endothelial function, and glucose homeostasis (Viswambharan et al., 2007; Curtis et al., 2007; Anea et al., 2009; Rudic et al., 2004). Both major (e.g., chronic shift work) and minor (e.g., daylight savings transitions) stressors to the circadian system have been associated with a higher risk of CVD (Torquati et al., 2018; Janszky and Ljung, 2008). Similarly, circadian misalignment has also been implicated in the pathogenesis of cancer. For example, circadian clocks are critical to the orchestration of cell division (Reddy et al., 2005), and altered clock function can precipitate aberrant cell proliferation (Wang et al., 2016) as well as growth and DNA damage in cancer cells (Gery et al., 2006). Many systems are under circadian influence, including the sleep-wake cycle, and less clear has been the extent to which differences in sleep regularity are related to negative health outcomes. We extend this research by demonstrating that differences in sleep regularity are associated with the risk of mortality from both CVD and cancer.\n\nWhereas sleep regularity has not been examined with respect to incident cancer or mortality, the current findings extend research showing that greater sleep-wake variability, as measured by the SD of sleep onset or duration, was independently associated with a higher risk of incident CVD in the multi-ethnic study of atherosclerosis but not the UKB (Nikbakhtian et al., 2021; Huang et al., 2020) We demonstrate that the SRI contains information about mortality risk beyond that contained in the SD of sleep duration and onset, whereas the converse was not the case. The SRI may be superior to the SD-based metrics because the SRI captures rapid changes in sleep patterns across consecutive days, as compared to the SD-based metrics which only calculate deviation from an individual\u2019s average. Rapid changes in sleep timing have been hypothesized as being principally challenging for the circadian system to accommodate (Phillips et al., 2017) which may, in turn, produce negative health outcomes.\n\nWe found evidence that hazard rates across levels of SRI were non-proportional (i.e., varied across the follow-up period) for all-cause and cancer mortality (which accounted for most deaths), though not for CVD mortality. For cancer mortality, HRs for low SRI compared to the median were largest in the earliest follow-up period and decreased thereafter. One plausible interpretation of this finding is that irregular sleep may be a manifestation of the underlying physiological processes of cancer itself or of cancer treatment (i.e., the SRI-cancer mortality association may be due to reverse causation). However, this thesis is challenged by the fact that associations between the SRI and cancer mortality remained similar after adjusting for history of cancer at baseline. In the case of CVD mortality, no such evidence of a decline in HRs over follow-up time was evident; a potential causal role of irregular sleep on CVD death cannot be easily ruled out.\n\nSleep of insufficient or excessive duration is associated with many adverse health outcomes, including increased mortality risk (Cappuccio et al., 2010). As of 2022, sleep duration was included by the American Heart Association in their Essential Eight guidelines for CVD prevention (Lloyd-Jones et al., 2022). However, sleep is far more complex than its habitual duration and quality, with sleep regularity receiving comparatively little attention. As sleep-tracking wearables become more accessible, objective measurement of sleep regularity has the potential for public and clinical use. Much like sleep duration, replicating the current findings across different samples will be necessary for establishing population norms and clinical targets. Furthermore, identifying the determinants of poor sleep regularity may be of import, not only considering biological factors, but broader social determinants that impact circadian rhythmicity (e.g., racial/ethnic disparities [Chung et al., 2021], neighborhood factors [Richardson et al., 2021]) and consequently overall health.\n\nOur study is not without limitations. First, the study was observational. We are, therefore, unable to establish cause and effect. Although we performed extensive analyses to control for confounding, we cannot exclude the possibility that our results are explained by residual confounding. As such, although therapies exist for improving sleep regularity, it\u2019s not clear if these interventions are able to extend the lifespan. Second, sleep and wake were estimated through activity patterns from accelerometry. As compared to polysomnography, there is the potential to misclassify sleep and wake, although accelerometry is more suited to estimate circadian patterns over several days; there are several strengths to using accelerometry (e.g., days of continuous recording, minimal technical apparatus affecting sleep quality), making it the recommended clinical tool for assessing circadian rhythms (Smith et al., 2018). In addition, sleep diaries in the UKB were not available. Consequently, the algorithm we used to determine sleep and wake relied on the identification of a main \u2018sleep period time window\u2019 and did not identify napping.\n\nCircadian rhythms have a major influence on health and disease. Although sleep wake timing is under circadian control, research on sleep regularity as a risk factor for mortality was equivocal. These data suggest sleep regularity as an important correlate of longevity, independent of sleep duration, fragmentation, and quality. Future work is needed to determine the underlying mechanisms to inform possible interventions to extend the lifespan.\n",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Edward D Janus, University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.88359.3.sa0](https://doi.org/10.7554/eLife.88359.3.sa0)\n\nThis manuscript provides fundamental findings on the association between sleep regularity and mortality in the UK Biobank, which is a popular topic in recent sleep and circadian research in population-based studies. The study is based on a large accelerometer study with validated follow-up of incident diseases and deaths, and the data quality and large sample size are convincing and strengthen the credibility of the conclusion. This will be of wide interest to researchers in the sleep study field, epidemiologists, practicing clinicians and the general public.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.88359.3.sa1](https://doi.org/10.7554/eLife.88359.3.sa1)\n\nThis manuscript provides important evidence on the association between sleep regularity and mortality in the UK Biobank, which is a popular topic in recent sleep and circadian research in population-based studies. The analysis reported robust associations between sleep irregularity and increased total, CVD and cancer mortality, and provided evidence to support the role of sleep and circadian health in disease progression and longevity in human populations. The Sleep Regularity Index (SRI) used in this study is a novel metric that quantifies the consistency in rest-activity rhythms over consecutive 24 hour periods, thus providing objective assessment of potential circadian disruption. The study is based on a large accelerometer study with validated follow-up of incident diseases and deaths. The data quality and large sample size strengthen the credibility of the conclusion. Overall, the analyses are appropriately done and the manuscript is clearly written.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.88359.3.sa2](https://doi.org/10.7554/eLife.88359.3.sa2)\n\nThis interesting research commendably revealed irregular sleep-wake patterns are associated with higher mortality risk. However, as authors acknowledged, the analysis can not to accurately identify the cause and effect. In my opinion, the causality is important for this topic, cuz, sleep regularity and health (e.g. chronic disease) were long-term simultaneous status. especially given the participants are older. I suggest that the author could utilize MR analysis to find out for more evidence.\n",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dcfe77fd-bd4b-4c9e-a7c9-24e94cef7576",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C1",
+      "claim": "Circadian rhythms are endogenous cycles in physiological, hormonal, and behavioral processes largely synchronized to the external 24 hr light-dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Circadian rhythms are endogenous cycles in physiological, hormonal, and behavioral processes largely synchronized to the external 24 hr light-dark cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about circadian rhythms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "32f8e10a-c51e-4cd7-9174-76516901434c",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C2",
+      "claim": "The sleep-wake cycle is the most notable biological process that follows the 24 hr circadian rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "The sleep-wake cycle is perhaps the most notable biological process that follows the 24 hr circadian rhythm (Zee and Vitiello, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zee and Vitiello, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "a05c349e-6b04-497e-a70e-a763a5ae3720",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C3",
+      "claim": "The timing of light exposure is the primary external driver of circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of light exposure is the primary external driver of circadian rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about circadian regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "37a97eaf-8ed9-4bc7-9bbc-b65e61222a10",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C4",
+      "claim": "Rapid changes in sleep timing can cause circadian misalignment through fluctuating light-dark exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, rapid changes in sleep timing can cause circadian misalignment through fluctuating light-dark exposure (Zeitzer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zeitzer et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "e0c64fc2-0d84-4256-bac5-d6618ad64e3f",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C5",
+      "claim": "Circadian misalignment is associated with several age-related diseases, including cancer and cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Circadian misalignment is associated with several age-related diseases, including cancer and cardiovascular disease (CVD) (Torquati et al., 2018; International-Agency-for-Research-on-Cancer, 2010; Janszky and Ljung, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "9a397a25-b103-417b-8445-017d180095ec",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C6",
+      "claim": "Modern societal and lifestyle trends have blurred the distinction between day and night, increasing the propensity for circadian disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the health impacts of irregular sleep-wake timing are still emerging. This remains an important area of study since modern societal and lifestyle trends, including exposure to artificial and blue light at night, longer work hours, shift work, and the 24-7 lifestyle, have blurred the distinction between day and night, increasing the propensity for circadian disruption (Walker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Walker et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "45bd6916-722f-48eb-9978-e34267d93977",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C7",
+      "claim": "Over 500,000 adults aged 40\u201369 years were recruited to the UK Biobank cohort between 2006 and 2010 across 22 assessment centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 500,000 adults aged 40\u201369 years were recruited to the UKB cohort between 2006 and 2010 across 22 assessment centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the study cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "dfded3d2-45f8-43dd-9a51-b71b662ddb5a",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C8",
+      "claim": "The UK Biobank had a 5.5% participation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants were invited by the UK National Health Service patient registers, resulting in a 5.5% participation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the study participation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "844dfad3-9415-4dcc-850e-97d22c135f21",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C9",
+      "claim": "UK Biobank respondents were more likely to be older, female, and less likely to live in socioeconomically deprived areas than the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "Respondents were more likely to be older, female, and less likely to live in socioeconomically deprived areas than the general population (Fry et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fry et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "0ce22339-674d-4763-884a-23537279178e",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C10",
+      "claim": "A total of 106,053 participants completed a 7-day wrist-worn accelerometer study through random selection between February 2013 and December 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 106,053 participants completed a 7-day wrist-worn accelerometer study through random selection between February 2013 and December 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the accelerometry substudy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "1a7e0825-e04c-442a-b2b2-70c1efa39539",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C11",
+      "claim": "The sleep regularity index captures the probability of a participant being in the same state (asleep or awake) at any two time points 24 hr apart.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRI captures the probability of a participant being in the same state (asleep or awake) at any two time points 24 hr apart (Phillips et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Phillips et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "df475f2e-e5cd-4dff-8afc-556373205684",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C12",
+      "claim": "An individual who sleeps and wakes at precisely the same time each day would have a sleep regularity index of 100.",
+      "claim_type": "EXPLICIT",
+      "source": "An individual who sleeps and wakes at precisely the same time each day would have an index of 100, whereas an individual who sleeps and wakes at entirely random times would have an index of 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the SRI metric is defined.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "03b34dcc-2aac-4fb7-af53-d4677cb0300a",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C13",
+      "claim": "An individual who sleeps and wakes at entirely random times would have a sleep regularity index of 0.",
+      "claim_type": "EXPLICIT",
+      "source": "An individual who sleeps and wakes at precisely the same time each day would have an index of 100, whereas an individual who sleeps and wakes at entirely random times would have an index of 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the SRI metric is defined.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "2cc47c5b-7bb6-4c81-b8b6-a0e432bed89b",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C14",
+      "claim": "Most UK Biobank participants (88%) provided complete accelerometry data.",
+      "claim_type": "EXPLICIT",
+      "source": "Most participants (88%) provided complete accelerometry data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of data completeness in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "720d72c8-173e-4ee7-b17e-920ed82a5386",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C15",
+      "claim": "88,975 (84%) participants provided valid SRI data and were included in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 88,975 (84%) participants provided valid SRI data and were included in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the final study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "2ce03cb3-9e14-4c74-90c8-988d8c9b5da7",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C16",
+      "claim": "The mean sample age was 62 years (standard deviation 8).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean sample age was 62 years (standard deviation [SD], 8), 56% were women, and the median SRI was 60 (SD, 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "efdde44c-8b93-42ec-b347-24b4b3f12652",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C17",
+      "claim": "56% of the study sample were women.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean sample age was 62 years (standard deviation [SD], 8), 56% were women, and the median SRI was 60 (SD, 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "c528bceb-5f4a-47b6-9ad0-9ad27982ac76",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C18",
+      "claim": "The median SRI was 60 (SD, 10).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean sample age was 62 years (standard deviation [SD], 8), 56% were women, and the median SRI was 60 (SD, 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "c06b5edd-f1f2-4baf-a65d-a1256d115be8",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C19",
+      "claim": "There were 3010 deaths during a mean follow-up of 7.1 years.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 3010 deaths during a mean follow-up of 7.1 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of mortality outcomes in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "431cd4e0-dbf1-4f00-a228-dd91bdd21fc0",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C20",
+      "claim": "There is a non-linear relationship between the SRI and all-cause mortality hazard (p [global test of spline term]<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Following adjustments for demographic and clinical variables, we identified a non-linear relationship between the SRI and all-cause mortality hazard (p [global test of spline term]<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "8eec282a-5941-4141-b543-dc2751debeae",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C21",
+      "claim": "The hazard ratio for all-cause mortality was 1.53 (95% CI: 1.41, 1.66) for participants with SRI at the 5th percentile (SRI = 41) relative to the median SRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Hazard ratios, relative to the median SRI, were 1.53 (95% confidence interval [CI]: 1.41, 1.66) for participants with SRI at the 5th percentile (SRI = 41) and 0.90 (95% CI: 0.81, 1.00) for those with SRI at the 95th percentile (SRI = 75), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "ed4be404-6d05-45a0-89ae-0649c6f4ae58",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C22",
+      "claim": "The hazard ratio for all-cause mortality was 0.90 (95% CI: 0.81, 1.00) for participants with SRI at the 95th percentile (SRI = 75) relative to the median SRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Hazard ratios, relative to the median SRI, were 1.53 (95% confidence interval [CI]: 1.41, 1.66) for participants with SRI at the 5th percentile (SRI = 41) and 0.90 (95% CI: 0.81, 1.00) for those with SRI at the 95th percentile (SRI = 75), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "f9834e0e-d856-473a-941f-6a1c492dedc9",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C23",
+      "claim": "Findings for CVD mortality and cancer mortality followed a similar pattern to all-cause mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings for CVD mortality and cancer mortality followed a similar pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "e59e0cfb-2c7c-4322-8681-290278546cdf",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C24",
+      "claim": "Irregular sleep-wake patterns are associated with higher mortality risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Conclusions:Irregular sleep-wake patterns are associated with higher mortality risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the study's data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "dbd4cd6a-c24d-43f5-9dd6-7e0ccbef2f7c",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C25",
+      "claim": "There were 3010 all-cause deaths during a median follow-up of 7.1 years (Q1, Q3: 6.6, 7.6).",
+      "claim_type": "EXPLICIT",
+      "source": "There were 3010 all-cause deaths during a median follow-up of 7.1 years (Q1, Q3: 6.6, 7.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of mortality outcomes in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "965a44f8-67f2-482d-99af-6c5600989912",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C26",
+      "claim": "The most common primary cause of death was cancer (n=1701, 57%).",
+      "claim_type": "EXPLICIT",
+      "source": "The most common primary cause of death was cancer (n=1701, 57%) followed by CVD (n=616, 20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study's mortality data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "619ded48-4037-4d3c-9186-7fd13d846772",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C27",
+      "claim": "CVD was the second most common primary cause of death (n=616, 20%).",
+      "claim_type": "EXPLICIT",
+      "source": "The most common primary cause of death was cancer (n=1701, 57%) followed by CVD (n=616, 20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the study's mortality data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "6a18bf5e-aa03-46c4-a9f1-06b1a199ea80",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C28",
+      "claim": "Mortality rates were highest among those with the most irregular sleep and decreased almost linearly as SRI approached its median, after which the decrease began to plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the sample median (SRI = 61), mortality rates were highest among those with the most irregular sleep and decreased almost linearly as SRI approached its median, after which the decrease began to plateau (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study's data analysis, supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "36b892d3-f3e4-4211-bc1c-bac942a650ae",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C29",
+      "claim": "There was strong evidence against the proportionality assumption for all-cause mortality (p [time \u00d7 SRI interaction]<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "There was strong evidence against the proportionality assumption in the discrete-time hazards model (p [time \u00d7 SRI interaction]<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "62d01e36-ea17-4448-a3e1-ceaf420bb58b",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C30",
+      "claim": "For the 5th percentile relative to the median SRI, hazard ratios for all-cause mortality were greatest in the earliest period of follow-up (HRs >2), declining until approximately 2.5 years, after which they remained approximately stable with an HR of around 1.5.",
+      "claim_type": "EXPLICIT",
+      "source": "For the 5th percentile relative to the median, HRs were greatest in the earliest period of follow-up (HRs >2), declining until approximately 2.5 years, after which they remained approximately stable with an HR of around 1.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the time-varying hazards analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "51675064-bbad-409c-baa6-213f0fc9d489",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C31",
+      "claim": "The SRI was associated with CVD-specific mortality in the primary model (p [global]<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The SRI was associated with CVD-specific mortality in the primary model (p [global]<0.001; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "db687937-ded6-46bd-b576-d0a3edc6bb2e",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C32",
+      "claim": "The hazard ratio for CVD mortality was 1.88 (95% CI: 1.61, 2.21) for the 5th percentile relative to the median SRI.",
+      "claim_type": "EXPLICIT",
+      "source": "HRs, relative to the median SRI, were 1.88 (95% CI: 1.61, 2.21) and 0.93 (95% CI: 0.73, 1.20) for the 5th and 95th percentiles, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "28d06452-0eb0-4b07-9c18-b452b762081b",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C33",
+      "claim": "The hazard ratio for CVD mortality was 0.93 (95% CI: 0.73, 1.20) for the 95th percentile relative to the median SRI.",
+      "claim_type": "EXPLICIT",
+      "source": "HRs, relative to the median SRI, were 1.88 (95% CI: 1.61, 2.21) and 0.93 (95% CI: 0.73, 1.20) for the 5th and 95th percentiles, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "26bb19a9-e38e-4a2b-b61e-7a19ef8d5973",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C34",
+      "claim": "There was no evidence of non-proportional hazards for CVD mortality in the discrete-time hazards model (p [time \u00d7 SRI interaction]=0.57).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence of non-proportional hazards in the discrete-time hazards model (p [time \u00d7 SRI interaction]=0.57).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "ad41bdef-f99b-4526-8d46-5ff32e9c3b62",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C35",
+      "claim": "Hazard ratios for low SRI were larger for females than males for CVD mortality (p interaction = 0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "HRs for low SRI were larger for females than males (p interaction = 0.006; Appendix 3\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study's interaction analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "241b2a3d-2a60-4e4e-837a-a79b116c5536",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C36",
+      "claim": "The SRI was associated with cancer mortality in the primary model (p [global]<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The SRI was associated with cancer mortality in the primary model (p [global]<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "dd2bbd95-e48d-4253-8b88-e2ef59ced017",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C37",
+      "claim": "The hazard ratio for cancer mortality was 1.36 (95% CI: 1.22, 1.53) for the 5th percentile relative to the median SRI.",
+      "claim_type": "EXPLICIT",
+      "source": "HRs, relative to the median SRI, were 1.36 (95% CI: 1.22, 1.53) and 0.89 (95% CI: 0.77, 1.02) for the 5th and 95th percentiles, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "e6720c4e-8d92-4400-baa2-fec340c5752f",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C38",
+      "claim": "The hazard ratio for cancer mortality was 0.89 (95% CI: 0.77, 1.02) for the 95th percentile relative to the median SRI.",
+      "claim_type": "EXPLICIT",
+      "source": "HRs, relative to the median SRI, were 1.36 (95% CI: 1.22, 1.53) and 0.89 (95% CI: 0.77, 1.02) for the 5th and 95th percentiles, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "101ec117-c153-4744-aafe-97dbd5cdc18b",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C39",
+      "claim": "There was strong evidence of non-proportional hazards for cancer mortality in the discrete-time hazards model (p [time \u00d7 SRI interaction]<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "There was strong evidence of non-proportional hazards in the cancer mortality discrete-time hazards model (p [time \u00d7 SRI interaction]<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "9ac58154-b195-46dc-9655-1d4e127c1fdd",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C40",
+      "claim": "For cancer mortality, hazard ratios for the 5th percentile vs. the median were large at the beginning of follow-up (HRs >2) and declined until approximately 4 years, after which they were small (~1.05) and compatible with the null.",
+      "claim_type": "EXPLICIT",
+      "source": "HRs, for the 5th percentile vs. the median, were large at the beginning of follow-up (HRs >2) and declined until approximately 4 years, after which they were small (~1.05) and compatible with the null (Appendix 3\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the time-varying hazards analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "cca88eab-c358-47ba-bb37-d11742fa476b",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C41",
+      "claim": "Results were similar and not meaningfully altered following adjustments for sleep time and WASO (Model 2).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, results were similar and not meaningfully altered following adjustments for sleep time and WASO (Model 2) or history of disease at baseline, including cancer and CVD (Model 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "53172b98-6bf7-4ccb-954f-49de44ac2708",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C42",
+      "claim": "Results were similar and not meaningfully altered following adjustments for history of disease at baseline, including cancer and CVD (Model 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, results were similar and not meaningfully altered following adjustments for sleep time and WASO (Model 2) or history of disease at baseline, including cancer and CVD (Model 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "6e770f39-ce60-4ccf-a60a-ef2005aac436",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C43",
+      "claim": "The SRI remained associated with mortality after further adjustments for disease history, BMI, systolic BP, BP treatment, and physical activity (Model 4), though effect sizes were attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRI remained associated with mortality after further adjustments for disease history, BMI, systolic BP, BP treatment, and physical activity (Model 4), though effect sizes were attenuated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "84043605-7386-4b7f-95ca-af1f3562431f",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C44",
+      "claim": "When comparing the 5th percentile to the median in Model 4, the hazard ratio was 1.22 (95% CI: 1.07, 1.39) for all-cause mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when comparing the 5th percentile to the median, HRs were 1.22 (95% CI: 1.07, 1.39) for all-cause, 1.43 (95% CI: 1.21, 1.69) for CVD, and 1.15 (95% CI: 1.01, 1.29) for cancer mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "11d1b887-c257-425d-919a-7b3e2124afd3",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C45",
+      "claim": "When comparing the 5th percentile to the median in Model 4, the hazard ratio was 1.43 (95% CI: 1.21, 1.69) for CVD mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when comparing the 5th percentile to the median, HRs were 1.22 (95% CI: 1.07, 1.39) for all-cause, 1.43 (95% CI: 1.21, 1.69) for CVD, and 1.15 (95% CI: 1.01, 1.29) for cancer mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "aad79a7b-4663-4763-ac5c-829c0956bb12",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C46",
+      "claim": "When comparing the 5th percentile to the median in Model 4, the hazard ratio was 1.15 (95% CI: 1.01, 1.29) for cancer mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when comparing the 5th percentile to the median, HRs were 1.22 (95% CI: 1.07, 1.39) for all-cause, 1.43 (95% CI: 1.21, 1.69) for CVD, and 1.15 (95% CI: 1.01, 1.29) for cancer mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "9aafb295-6258-4b01-8699-90fedb47391e",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C47",
+      "claim": "The SRI was modestly negatively correlated with the sleep duration SD (\u20130.32).",
+      "claim_type": "EXPLICIT",
+      "source": "The SRI was modestly negatively correlated with the sleep duration SD (\u20130.32) and sleep onset time SD (\u20130.42; see correlation matrix in Appendix 3\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "3b38c9e5-8b57-44a3-b9fe-04dfe67344bd",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C48",
+      "claim": "The SRI was modestly negatively correlated with the sleep onset time SD (\u20130.42).",
+      "claim_type": "EXPLICIT",
+      "source": "The SRI was modestly negatively correlated with the sleep duration SD (\u20130.32) and sleep onset time SD (\u20130.42; see correlation matrix in Appendix 3\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "064eda35-0a2c-4f89-8ef4-50350a7a6e5a",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C49",
+      "claim": "For each measure (SRI, sleep duration SD, sleep onset time SD), greater sleep irregularity was associated with an increased all-cause mortality rate in independent models (all p [global]<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "For each measure, greater sleep irregularity (i.e., lower SRI or higher SD representing more day-to-day variability) was associated with an increased all-cause mortality rate in independent models (all p [global]<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the comparative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "b53565c2-763f-4994-a4d9-9aff699b4d20",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C50",
+      "claim": "Hazard ratios for low regularity compared to the median were largest for the SRI compared to SD-based metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "HRs, for low regularity compared to the median, were largest for the SRI (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the comparative analysis, supported by Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "c5d71799-9b6c-425a-96c4-611005f1601e",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C51",
+      "claim": "The addition of the SRI to a model containing both SD metrics improved model fit (p [likelihood ratio test]<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of the SRI to a model containing both SD metrics (alongside primary model covariates) improved model fit (p [likelihood ratio test]<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "94da6371-4846-44af-8fbd-e8492a327791",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C52",
+      "claim": "The addition of sleep duration SD and sleep onset time SD to a model containing the SRI did not meaningfully improve model fit (p [likelihood ratio test]=0.10).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the addition of sleep duration SD and sleep onset time SD to a model containing the SRI (and primary model covariates) did not meaningfully improve model fit (p [likelihood ratio test]=0.10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "f529b935-a415-4197-bec8-d70a1dd950bd",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C53",
+      "claim": "Mutations or deletions to circadian clock genes such as CLOCK, PER, and BMAL1 influence BP, endothelial function, and glucose homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations or deletions to circadian clock genes such as CLOCK, PER, and BMAL1 influence BP, endothelial function, and glucose homeostasis (Viswambharan et al., 2007; Curtis et al., 2007; Anea et al., 2009; Rudic et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "d6d0052a-26f3-4581-abe5-9cd0e96e57c9",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C54",
+      "claim": "Both major (e.g., chronic shift work) and minor (e.g., daylight savings transitions) stressors to the circadian system have been associated with a higher risk of CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Both major (e.g., chronic shift work) and minor (e.g., daylight savings transitions) stressors to the circadian system have been associated with a higher risk of CVD (Torquati et al., 2018; Janszky and Ljung, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "33918e14-41ce-4b0f-aabe-db26982c7547",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C55",
+      "claim": "Circadian clocks are critical to the orchestration of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, circadian clocks are critical to the orchestration of cell division (Reddy et al., 2005), and altered clock function can precipitate aberrant cell proliferation (Wang et al., 2016) as well as growth and DNA damage in cancer cells (Gery et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reddy et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "41c8a7f3-a2e8-43e0-952a-ac1d8a85dc6c",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C56",
+      "claim": "Altered clock function can precipitate aberrant cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, circadian clocks are critical to the orchestration of cell division (Reddy et al., 2005), and altered clock function can precipitate aberrant cell proliferation (Wang et al., 2016) as well as growth and DNA damage in cancer cells (Gery et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "05bf7582-24cf-4b23-90ba-ea824ef76c8a",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C57",
+      "claim": "Altered clock function can precipitate growth and DNA damage in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, circadian clocks are critical to the orchestration of cell division (Reddy et al., 2005), and altered clock function can precipitate aberrant cell proliferation (Wang et al., 2016) as well as growth and DNA damage in cancer cells (Gery et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gery et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "5eb2c25a-09a7-4c3e-aa59-27e5ad6a8231",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C58",
+      "claim": "Greater sleep-wake variability, as measured by the SD of sleep onset or duration, was independently associated with a higher risk of incident CVD in the multi-ethnic study of atherosclerosis but not the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas sleep regularity has not been examined with respect to incident cancer or mortality, the current findings extend research showing that greater sleep-wake variability, as measured by the SD of sleep onset or duration, was independently associated with a higher risk of incident CVD in the multi-ethnic study of atherosclerosis but not the UKB (Nikbakhtian et al., 2021; Huang et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nikbakhtian et al., 2021 and Huang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "d7531000-15eb-4633-8f0f-ad492a5c2d13",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C59",
+      "claim": "The SRI may be superior to SD-based metrics because the SRI captures rapid changes in sleep patterns across consecutive days, as compared to the SD-based metrics which only calculate deviation from an individual's average.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRI may be superior to the SD-based metrics because the SRI captures rapid changes in sleep patterns across consecutive days, as compared to the SD-based metrics which only calculate deviation from an individual's average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparative analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "6654c459-aa66-466e-9c6c-bc43b9c6c34b",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C60",
+      "claim": "Rapid changes in sleep timing have been hypothesized as being principally challenging for the circadian system to accommodate.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid changes in sleep timing have been hypothesized as being principally challenging for the circadian system to accommodate (Phillips et al., 2017) which may, in turn, produce negative health outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Phillips et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "d67148ab-f4fc-419d-b11d-b631f3fa2d99",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C61",
+      "claim": "Sleep of insufficient or excessive duration is associated with many adverse health outcomes, including increased mortality risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep of insufficient or excessive duration is associated with many adverse health outcomes, including increased mortality risk (Cappuccio et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cappuccio et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "8d261482-4576-42c8-8e36-d016c720ba83",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C62",
+      "claim": "As of 2022, sleep duration was included by the American Heart Association in their Essential Eight guidelines for CVD prevention.",
+      "claim_type": "EXPLICIT",
+      "source": "As of 2022, sleep duration was included by the American Heart Association in their Essential Eight guidelines for CVD prevention (Lloyd-Jones et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lloyd-Jones et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "9460ab64-9f9d-4bce-af11-13d1727544ec",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C63",
+      "claim": "The study was observational and therefore unable to establish cause and effect.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the study was observational. We are, therefore, unable to establish cause and effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors based on the study design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "3d508731-0273-4ec8-bf82-0c5be5e2b354",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C64",
+      "claim": "Accelerometry is the recommended clinical tool for assessing circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, sleep diaries in the UKB were not available. Consequently, the algorithm we used to determine sleep and wake relied on the identification of a main 'sleep period time window' and did not identify napping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "a0963294-ff4e-44e0-a3d1-ac8496d6d775",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C65",
+      "claim": "The algorithm used to determine sleep and wake relied on the identification of a main 'sleep period time window' and did not identify napping.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the algorithm we used to determine sleep and wake relied on the identification of a main 'sleep period time window' and did not identify napping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's methodology and its limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "b37551f1-9432-40d4-b824-fb3649f6f43a",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C66",
+      "claim": "The findings were independent of several illness (including history of cancer and CVD at baseline), sleep duration, sleep fragmentation, and other confounding factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings were independent of several illness (including history of cancer and CVD at baseline), sleep duration, sleep fragmentation, and other confounding factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings after adjustment for confounders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "9d05b1b8-5622-4533-80a3-a75a37e6de64",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C67",
+      "claim": "These data indicate a relationship between sleep regularity and longevity in a large community-based cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data indicate a relationship between sleep regularity and longevity in a large community-based cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "6a44ff27-0777-40f8-9ada-654bb3446a64",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C68",
+      "claim": "Irregular sleep may be a manifestation of the underlying physiological processes of cancer itself or of cancer treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "One plausible interpretation of this finding is that irregular sleep may be a manifestation of the underlying physiological processes of cancer itself or of cancer treatment (i.e., the SRI-cancer mortality association may be due to reverse causation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the time-varying hazard ratios.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "a96e174a-7e96-46b3-b5d4-4389618787da",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C69",
+      "claim": "A potential causal role of irregular sleep on CVD death cannot be easily ruled out.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of CVD mortality, no such evidence of a decline in HRs over follow-up time was evident; a potential causal role of irregular sleep on CVD death cannot be easily ruled out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the pattern of hazard ratios over time.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "655ad088-1b47-4783-a76d-349ccffb9f06",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C70",
+      "claim": "Accelerometry data were collected using a wrist-worn device (Axivity AX3, United Kingdom) over a 7-day/night period.",
+      "claim_type": "EXPLICIT",
+      "source": "Accelerometry data were collected using a wrist-worn device (Axivity AX3, United Kingdom) over a 7-day/night period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's data collection methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "5448800d-0b9b-48e7-810b-16d01c08fbb7",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C71",
+      "claim": "Estimated sleep status (awake or asleep) at a given time was calculated using the open-source R package GGIR version 2.7-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimated sleep status (awake or asleep) at a given time was calculated using the open-source R package GGIR version 2.7-1 (Migueles et al., 2019), using available algorithms (van Hees et al., 2015; van Hees et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's data processing methodology, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "21a9c7e1-91e3-4ad8-ba25-10c13011ca15",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C72",
+      "claim": "GGIR uses an algorithm to determine a daily 'sleep period time window' for each participant.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish sleep from sustained periods of inactivity without reference to a sleep diary (not available in the UKB), GGIR uses an algorithm to determine a daily 'sleep period time window' for each participant (van Hees et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the GGIR algorithm, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "598a3dfb-ec8b-47a8-91e9-b9a3cb681c83",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C73",
+      "claim": "The algorithm does not, by default, detect bouts of sleep outside of the sleep period time window and hence is not able to identify naps.",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm does not, by default, detect bouts of sleep outside of this window and hence is not able to identify naps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a limitation of the GGIR algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "de35a597-6453-4769-aad7-762dd3537a0f",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C74",
+      "claim": "Mortality occurrence was identified through linkage with NHS Digital for participants from England and Wales and the NHS Central Register for participants from Scotland, with complete records available until January 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "Mortality occurrence was identified through linkage with NHS Digital for participants from England and Wales and the NHS Central Register for participants from Scotland, with complete records available until January 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's mortality ascertainment methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "38e10e82-2c1b-40b9-8d61-efdc2fc9cbe6",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C75",
+      "claim": "ICD-10 codes I00-I99 and C00-C97 defined CVD and cancer mortality, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "ICD-10 codes I00-I99 and C00-C97 defined CVD and cancer mortality, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's outcome definitions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "ab45a139-7085-4038-808c-93c856df0224",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C76",
+      "claim": "Cox proportional hazards models were used to examine associations between the SRI and incident all-cause mortality, CVD mortality, and cancer mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Cox proportional hazards models were used to examine associations between the SRI and incident all-cause mortality, CVD mortality, and cancer mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's statistical methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "97683d14-da10-4f10-b408-d422cc89b09f",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C77",
+      "claim": "Surveillance for mortality commenced from the time of accelerometry (2013\u20132015) until the end of follow-up (January 2022), with a median follow-up time of 7.1 years (Q1, Q3: 6.6, 7.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Surveillance for mortality commenced from the time of accelerometry (2013\u20132015) until the end of follow-up (January 2022), with a median follow-up time of 7.1 years (Q1, Q3: 6.6, 7.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's follow-up period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "24bfc749-adab-4445-bc6d-7ac76dbf6c2e",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C78",
+      "claim": "The SRI and all continuous confounders were modeled with restricted cubic splines with knots at the 10th, 50th, and 90th percentiles to allow for departures from linearity.",
+      "claim_type": "EXPLICIT",
+      "source": "The SRI and all continuous confounders were modeled with restricted cubic splines with knots at the 10th, 50th, and 90th percentiles to allow for departures from linearity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's statistical methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "3ce34f61-a32f-4d8d-866a-092ff29e852d",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "claim_id": "C79",
+      "claim": "Missing data were infrequent (<2%) for most confounder variables and were imputed (10 imputations) by predictive mean matching.",
+      "claim_type": "EXPLICIT",
+      "source": "Missing data were infrequent (<2%) for most confounder variables and were imputed (10 imputations) by predictive mean matching using the aregImpute function of R package Hmisc (Harrell and Harrell, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study's handling of missing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6244cc66-82e3-4421-82ef-f02d5d783a32",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 88,975 UK Biobank participants (mean age 62 years, 56% women, median SRI 60) who completed 7-day accelerometry between 2013-2015. The cohort had a 5.5% participation rate and was not representative of the general UK population, being older, more female, and less socioeconomically deprived.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C18 provide consistent descriptive statistics about the study cohort. The sample characteristics are clearly documented with appropriate measures of central tendency and dispersion. The acknowledgment of selection bias (C9) strengthens the transparency of the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Over 7.1 years of follow-up with 3010 deaths, irregular sleep (low SRI) was associated with increased all-cause mortality in a non-linear fashion. Participants at the 5th percentile of SRI (SRI=41) had 53% higher mortality risk (HR=1.53, 95% CI: 1.41-1.66) compared to median SRI, while those at the 95th percentile (SRI=75) showed no significant mortality reduction (HR=0.90, 95% CI: 0.81-1.00). Similar patterns were observed for CVD and cancer mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C28 present the primary finding with appropriate statistical evidence including p-values, hazard ratios, and confidence intervals. The non-linear relationship is supported by spline modeling (p<0.001) and visualized in Figure 1. The finding that mortality risk plateaus at higher SRI values is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "490f3c49-4468-4ee5-a362-027662216c1c",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The proportional hazards assumption was violated for all-cause mortality (p<0.001), with hazard ratios varying over time. For participants at the 5th percentile SRI, mortality risk was highest early in follow-up (HR>2), declining until 2.5 years, then stabilizing around HR=1.5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 appropriately identify and characterize non-proportional hazards using discrete-time models with time\u00d7SRI interaction terms. The time-varying pattern is clearly described and suggests the relationship between sleep irregularity and mortality changes over the follow-up period.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "731816ed-96e3-4666-9891-ce7a2bc6ff1b",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Sleep regularity was associated with CVD mortality (p<0.001), with participants at the 5th percentile SRI showing 88% higher risk (HR=1.88, 95% CI: 1.61-2.21) compared to median. The proportional hazards assumption held for CVD mortality (p=0.57), and the association was stronger in females than males (p interaction=0.006).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35 provide statistically significant evidence for the SRI-CVD mortality relationship with appropriate hazard ratios and confidence intervals. The sex difference finding (C35) is supported by a significant interaction test, though this warrants cautious interpretation given multiple comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "eec65f86-f09f-4204-9c69-0841d4c97d20",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sleep regularity was associated with cancer mortality (p<0.001), with 5th percentile SRI showing 36% higher risk (HR=1.36, 95% CI: 1.22-1.53). However, hazards were non-proportional (p<0.001), with large early hazard ratios (HR>2) declining to near-null values (~1.05) after 4 years of follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 document the cancer mortality association with appropriate statistics. The time-varying hazard pattern (C39-C40) is critical and suggests potential reverse causation, where irregular sleep may be a consequence rather than cause of cancer. This interpretation is appropriately discussed by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "8820ac55-8c9b-4250-abfe-142dd29372ce",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The association between sleep regularity and mortality persisted across multiple sensitivity analyses adjusting for sleep duration, WASO, disease history, BMI, blood pressure, and physical activity, though effect sizes were attenuated in the fully adjusted model (Model 4: all-cause HR=1.22, CVD HR=1.43, cancer HR=1.15 for 5th vs median percentile).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 demonstrate robustness of findings through systematic sensitivity analyses. The attenuation of effect sizes in Model 4 is appropriately reported and suggests some of the association may be mediated by or confounded with cardiovascular risk factors. All confidence intervals remain statistically significant or borderline significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "0f60e024-cc59-4dad-8a3f-4cab95aed669",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The SRI was modestly correlated with sleep duration SD (-0.32) and sleep onset time SD (-0.42). While all three metrics were independently associated with mortality (all p<0.001), the SRI showed the largest hazard ratios and adding SRI to a model with both SD metrics improved fit (p<0.001), whereas adding SD metrics to an SRI model did not (p=0.10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 provide compelling evidence that SRI captures mortality risk information beyond traditional SD-based variability metrics. The likelihood ratio tests (C51-C52) appropriately demonstrate incremental predictive value. This comparative analysis strengthens the case for SRI as a superior measure of sleep regularity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "47291b4b-54f4-4ac5-abac-012413dce50b",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sleep regularity was measured using the Sleep Regularity Index (SRI), which quantifies the probability of being in the same sleep/wake state at time points 24 hours apart (range 0-100). Sleep/wake states were determined from 7-day wrist accelerometry using the GGIR algorithm (version 2.7-1), which identifies a daily sleep period time window but does not detect naps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 and C70-C73 clearly describe the SRI metric and data collection methodology. The citation to Phillips et al. 2017 (C11) provides validation for the SRI approach. The limitation that naps are not detected (C73) is appropriately acknowledged and represents a methodological constraint of the GGIR algorithm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "dab2dda6-3111-4ded-aa2f-f5046ca5eb59",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mortality was ascertained through NHS linkage until January 2022 with median 7.1-year follow-up. Cox proportional hazards models with restricted cubic splines were used to examine SRI-mortality associations, with missing covariate data (<2%) handled by multiple imputation using predictive mean matching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 describe appropriate statistical methodology for survival analysis. The use of restricted cubic splines (C78) appropriately allows for non-linear relationships. Multiple imputation for missing data (C79) is a sound approach, though the low missingness rate minimizes concerns about imputation bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "62ae9c34-443f-4e8f-bae0-ed31107d4316",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study is motivated by established knowledge that circadian rhythms are 24-hour endogenous cycles synchronized by light exposure, with the sleep-wake cycle being the most notable circadian process. Rapid changes in sleep timing can cause circadian misalignment, which is associated with age-related diseases including cancer and CVD. Modern lifestyle factors have increased propensity for circadian disruption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide appropriate background context supported by citations to established literature. These claims accurately represent current scientific understanding of circadian biology and its health implications, providing rationale for investigating sleep regularity and mortality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "b9665273-1e3d-4ee7-af41-d7a607ac8dec",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Circadian clock genes (CLOCK, PER, BMAL1) influence cardiovascular and metabolic function, and both major and minor circadian stressors are associated with CVD risk. Circadian clocks regulate cell division, and altered clock function can lead to aberrant cell proliferation and DNA damage in cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 accurately summarize prior mechanistic research linking circadian disruption to CVD and cancer pathogenesis, supported by appropriate citations. These claims provide biological plausibility for the observed epidemiological associations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "df9156a1-9c38-4963-b867-c2e13cb10191",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior studies found that SD-based sleep variability metrics were associated with incident CVD in some cohorts but not others. The authors propose that SRI may be superior because it captures rapid day-to-day changes in sleep patterns, which are hypothesized to be particularly challenging for the circadian system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 appropriately contextualize the current findings within prior literature and provide a mechanistic rationale for why SRI might outperform SD-based metrics. The hypothesis about rapid changes (C60) is supported by citation to Phillips et al. 2017 and is consistent with the comparative analysis results (C51-C52).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "0e44678d-8196-4428-a346-1b77241c6ead",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge key limitations: the observational design precludes causal inference (C63), and the GGIR algorithm cannot detect naps (C65). Despite these limitations, findings were independent of multiple confounders including disease history, sleep duration, and fragmentation, indicating a relationship between sleep regularity and longevity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 appropriately acknowledge study limitations while summarizing the robustness of findings. The inability to establish causation (C63) is a fundamental limitation of observational studies. The claim about independence from confounders (C66) is supported by the sensitivity analyses (C41-C46), though residual confounding cannot be excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "748d16c2-152c-4f48-979f-8d51157ceaa2",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors interpret the time-varying hazards differently for cancer versus CVD mortality. For cancer, the declining hazard ratios over time suggest possible reverse causation (irregular sleep as a manifestation of cancer). For CVD, the stable hazards over time suggest a potential causal role of irregular sleep cannot be easily ruled out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 present speculative interpretations of the time-varying hazard patterns. While the differential patterns are real (C29-C30, C39-C40), the mechanistic interpretations remain uncertain. The reverse causation hypothesis for cancer (C68) is plausible but not definitively established, as adjusting for baseline cancer history (C42) did not eliminate the association. These interpretations require validation in future studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "c2545fb6-bf16-40c5-a3c6-e719500c3272",
+      "content_id": "a24dbeeb-4f8c-4f0e-aedc-0240de7a0646",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Sleep duration is an established risk factor for adverse health outcomes including mortality, and was included in the American Heart Association's Essential Eight guidelines for CVD prevention as of 2022.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 accurately cite established knowledge about sleep duration and health, supported by appropriate references. These claims provide context for why sleep regularity, as a distinct dimension of sleep health, warrants investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "da858bcd-9ea2-4790-9a34-3d24180063d1",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study found a non-linear relationship between sleep regularity (measured by SRI) and all-cause mortality, with irregular sleep (low SRI) associated with significantly increased mortality risk. Participants at the 5th percentile of SRI (41) had a hazard ratio of 1.53 (95% CI: 1.41, 1.66) compared to the median, while those at the 95th percentile (75) had an HR of 0.90 (95% CI: 0.81, 1.00).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirmed these findings. Reviewer 1 stated the manuscript provides 'fundamental findings' with 'convincing' data quality. Reviewer 2 noted the analysis 'reported robust associations between sleep irregularity and increased total...mortality' and that 'the data quality and large sample size strengthen the credibility of the conclusion.' No reviewer questioned the statistical findings or methodology for all-cause mortality.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "2dd9ca58-8b52-44d9-ac29-586837d4bc9c",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The SRI was significantly associated with CVD-specific mortality (p<0.001), with a hazard ratio of 1.88 (95% CI: 1.61, 2.21) for the 5th percentile relative to the median. The association showed proportional hazards over time and was stronger in females than males (p interaction = 0.006).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly stated the analysis 'reported robust associations between sleep irregularity and increased...CVD...mortality.' Reviewer 1 noted the findings will be of 'wide interest' and the data quality is 'convincing.' No reviewer challenged the CVD mortality findings or the sex-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "6e88255d-663a-4226-baaa-de62b69780d1",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The SRI was associated with cancer mortality (p<0.001), with a hazard ratio of 1.36 (95% CI: 1.22, 1.53) for the 5th percentile relative to the median. However, the association showed non-proportional hazards over time, with hazard ratios declining from >2 at baseline to ~1.05 after 4 years.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 confirmed 'robust associations between sleep irregularity and increased...cancer mortality.' The time-varying nature of the cancer mortality association was not questioned by any reviewer, though Reviewer 3 raised concerns about causality more broadly (discussed separately). The statistical findings themselves were accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "21df1c29-0633-4146-b649-b061eca9821e",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The associations between SRI and mortality remained significant after adjusting for multiple confounders including sleep duration, WASO, disease history, BMI, blood pressure, and physical activity, though effect sizes were attenuated in the fully adjusted model (Model 4).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 noted 'the analyses are appropriately done' and praised the robustness of the findings. Reviewer 1 stated the 'data quality and large sample size are convincing and strengthen the credibility of the conclusion.' No reviewer questioned the sensitivity analyses or adjustment strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "17d5bb06-0587-4fb2-851a-790e17d95d47",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The Sleep Regularity Index (SRI) was superior to standard deviation-based metrics (sleep duration SD and sleep onset time SD) in predicting mortality. The SRI improved model fit when added to SD-based metrics (p<0.001), but SD metrics did not improve fit when added to SRI models (p=0.10).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 specifically highlighted that 'The Sleep Regularity Index (SRI) used in this study is a novel metric that quantifies the consistency in rest-activity rhythms over consecutive 24 hour periods, thus providing objective assessment of potential circadian disruption.' The comparative superiority of SRI over SD-based metrics was not challenged by any reviewer.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "81fb0df8-a943-4f42-b44c-47208b85ffa8",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Time-varying hazard analysis revealed that for all-cause mortality, hazard ratios for low SRI (5th percentile) were highest early in follow-up (HRs >2), declining until ~2.5 years, then stabilizing at HR ~1.5.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the time-varying hazard findings without challenge. Reviewer 2 stated 'Overall, the analyses are appropriately done' and Reviewer 1 found the data 'convincing.' The statistical methodology for time-varying effects was not questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "3a8f30f8-19c4-4367-b902-607bd0bef289",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors acknowledge the observational study design limits causal inference. They suggest irregular sleep may be a manifestation of cancer itself (reverse causation) but note that a causal role for irregular sleep on CVD death cannot be easily ruled out.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 explicitly raised this concern, stating 'the analysis can not to accurately identify the cause and effect' and that 'causality is important for this topic' given that 'sleep regularity and health...were long-term simultaneous status.' Reviewer 3 suggested 'the author could utilize MR analysis to find out for more evidence,' indicating the causal interpretation remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "372cb364-d08e-4c51-bedb-3546a1b24f89",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The study analyzed 88,975 UK Biobank participants (mean age 62 years, 56% women, median SRI 60) with 7-day accelerometry data, documenting 3,010 deaths over 7.1 years of follow-up, with cancer (57%) and CVD (20%) as the most common causes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 stated 'The study is based on a large accelerometer study with validated follow-up of incident diseases and deaths, and the data quality and large sample size are convincing.' Reviewer 2 similarly noted 'The data quality and large sample size strengthen the credibility of the conclusion.' No reviewer questioned the cohort characteristics or data quality.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "405859cc-1e17-4f10-9ae8-2720145b4c30",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Accelerometry data were collected using wrist-worn devices and processed using the GGIR algorithm, which identifies a main sleep period time window but does not detect napping. The authors acknowledge this methodological limitation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 noted that accelerometry 'providing objective assessment of potential circadian disruption' and that 'the analyses are appropriately done.' No reviewer challenged the accelerometry methodology or the GGIR algorithm, though the limitation regarding nap detection was acknowledged by the authors and not disputed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "ce910152-667e-413e-bd87-3638ec68129b",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Mortality was ascertained through NHS linkage with complete records until January 2022. Cox proportional hazards models with restricted cubic splines were used for analysis, with missing data (<2%) imputed by predictive mean matching.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 noted 'validated follow-up of incident diseases and deaths' and Reviewer 2 stated 'the analyses are appropriately done.' The statistical methodology was not questioned by any reviewer.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "d883d860-0090-4973-9824-37379972590e",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The manuscript provides background on circadian rhythms, their regulation by light exposure, and associations between circadian disruption and age-related diseases including cancer and CVD. It contextualizes the study within existing literature on sleep-wake variability and health outcomes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 noted the manuscript 'provided evidence to support the role of sleep and circadian health in disease progression and longevity in human populations' and that it is 'a popular topic in recent sleep and circadian research.' The background and contextualization were accepted without challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "4b6e8c00-8e8d-4cec-8aeb-73a96467a478",
+      "content_id": "61d9e08e-75fe-4b18-99b0-4b5e70eaaf6d",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "The authors conclude that these data indicate a relationship between sleep regularity and longevity in a large community-based cohort.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 stated the findings will be 'of wide interest to researchers in the sleep study field, epidemiologists, practicing clinicians and the general public.' Reviewer 2 noted the study 'provided evidence to support the role of sleep and circadian health in disease progression and longevity.' The overall conclusion was affirmed by reviewers despite the causality concerns raised separately.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "45bd6916-722f-48eb-9978-e34267d93977",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "dfded3d2-45f8-43dd-9a51-b71b662ddb5a",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "844dfad3-9415-4dcc-850e-97d22c135f21",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "0ce22339-674d-4763-884a-23537279178e",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "2cc47c5b-7bb6-4c81-b8b6-a0e432bed89b",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "720d72c8-173e-4ee7-b17e-920ed82a5386",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "2ce03cb3-9e14-4c74-90c8-988d8c9b5da7",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "efdde44c-8b93-42ec-b347-24b4b3f12652",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "c528bceb-5f4a-47b6-9ad0-9ad27982ac76",
+      "result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32"
+    },
+    {
+      "claim_id": "c06b5edd-f1f2-4baf-a65d-a1256d115be8",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "431cd4e0-dbf1-4f00-a228-dd91bdd21fc0",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "8eec282a-5941-4141-b543-dc2751debeae",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "ed4be404-6d05-45a0-89ae-0649c6f4ae58",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "f9834e0e-d856-473a-941f-6a1c492dedc9",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "e59e0cfb-2c7c-4322-8681-290278546cdf",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "dbd4cd6a-c24d-43f5-9dd6-7e0ccbef2f7c",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "965a44f8-67f2-482d-99af-6c5600989912",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "619ded48-4037-4d3c-9186-7fd13d846772",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "6a18bf5e-aa03-46c4-a9f1-06b1a199ea80",
+      "result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3"
+    },
+    {
+      "claim_id": "36b892d3-f3e4-4211-bc1c-bac942a650ae",
+      "result_id": "490f3c49-4468-4ee5-a362-027662216c1c"
+    },
+    {
+      "claim_id": "62d01e36-ea17-4448-a3e1-ceaf420bb58b",
+      "result_id": "490f3c49-4468-4ee5-a362-027662216c1c"
+    },
+    {
+      "claim_id": "51675064-bbad-409c-baa6-213f0fc9d489",
+      "result_id": "731816ed-96e3-4666-9891-ce7a2bc6ff1b"
+    },
+    {
+      "claim_id": "db687937-ded6-46bd-b576-d0a3edc6bb2e",
+      "result_id": "731816ed-96e3-4666-9891-ce7a2bc6ff1b"
+    },
+    {
+      "claim_id": "28d06452-0eb0-4b07-9c18-b452b762081b",
+      "result_id": "731816ed-96e3-4666-9891-ce7a2bc6ff1b"
+    },
+    {
+      "claim_id": "26bb19a9-e38e-4a2b-b61e-7a19ef8d5973",
+      "result_id": "731816ed-96e3-4666-9891-ce7a2bc6ff1b"
+    },
+    {
+      "claim_id": "ad41bdef-f99b-4526-8d46-5ff32e9c3b62",
+      "result_id": "731816ed-96e3-4666-9891-ce7a2bc6ff1b"
+    },
+    {
+      "claim_id": "241b2a3d-2a60-4e4e-837a-a79b116c5536",
+      "result_id": "eec65f86-f09f-4204-9c69-0841d4c97d20"
+    },
+    {
+      "claim_id": "dd2bbd95-e48d-4253-8b88-e2ef59ced017",
+      "result_id": "eec65f86-f09f-4204-9c69-0841d4c97d20"
+    },
+    {
+      "claim_id": "e6720c4e-8d92-4400-baa2-fec340c5752f",
+      "result_id": "eec65f86-f09f-4204-9c69-0841d4c97d20"
+    },
+    {
+      "claim_id": "101ec117-c153-4744-aafe-97dbd5cdc18b",
+      "result_id": "eec65f86-f09f-4204-9c69-0841d4c97d20"
+    },
+    {
+      "claim_id": "9ac58154-b195-46dc-9655-1d4e127c1fdd",
+      "result_id": "eec65f86-f09f-4204-9c69-0841d4c97d20"
+    },
+    {
+      "claim_id": "cca88eab-c358-47ba-bb37-d11742fa476b",
+      "result_id": "8820ac55-8c9b-4250-abfe-142dd29372ce"
+    },
+    {
+      "claim_id": "53172b98-6bf7-4ccb-954f-49de44ac2708",
+      "result_id": "8820ac55-8c9b-4250-abfe-142dd29372ce"
+    },
+    {
+      "claim_id": "6e770f39-ce60-4ccf-a60a-ef2005aac436",
+      "result_id": "8820ac55-8c9b-4250-abfe-142dd29372ce"
+    },
+    {
+      "claim_id": "84043605-7386-4b7f-95ca-af1f3562431f",
+      "result_id": "8820ac55-8c9b-4250-abfe-142dd29372ce"
+    },
+    {
+      "claim_id": "11d1b887-c257-425d-919a-7b3e2124afd3",
+      "result_id": "8820ac55-8c9b-4250-abfe-142dd29372ce"
+    },
+    {
+      "claim_id": "aad79a7b-4663-4763-ac5c-829c0956bb12",
+      "result_id": "8820ac55-8c9b-4250-abfe-142dd29372ce"
+    },
+    {
+      "claim_id": "9aafb295-6258-4b01-8699-90fedb47391e",
+      "result_id": "0f60e024-cc59-4dad-8a3f-4cab95aed669"
+    },
+    {
+      "claim_id": "3b38c9e5-8b57-44a3-b9fe-04dfe67344bd",
+      "result_id": "0f60e024-cc59-4dad-8a3f-4cab95aed669"
+    },
+    {
+      "claim_id": "064eda35-0a2c-4f89-8ef4-50350a7a6e5a",
+      "result_id": "0f60e024-cc59-4dad-8a3f-4cab95aed669"
+    },
+    {
+      "claim_id": "b53565c2-763f-4994-a4d9-9aff699b4d20",
+      "result_id": "0f60e024-cc59-4dad-8a3f-4cab95aed669"
+    },
+    {
+      "claim_id": "c5d71799-9b6c-425a-96c4-611005f1601e",
+      "result_id": "0f60e024-cc59-4dad-8a3f-4cab95aed669"
+    },
+    {
+      "claim_id": "94da6371-4846-44af-8fbd-e8492a327791",
+      "result_id": "0f60e024-cc59-4dad-8a3f-4cab95aed669"
+    },
+    {
+      "claim_id": "1a7e0825-e04c-442a-b2b2-70c1efa39539",
+      "result_id": "47291b4b-54f4-4ac5-abac-012413dce50b"
+    },
+    {
+      "claim_id": "df475f2e-e5cd-4dff-8afc-556373205684",
+      "result_id": "47291b4b-54f4-4ac5-abac-012413dce50b"
+    },
+    {
+      "claim_id": "03b34dcc-2aac-4fb7-af53-d4677cb0300a",
+      "result_id": "47291b4b-54f4-4ac5-abac-012413dce50b"
+    },
+    {
+      "claim_id": "655ad088-1b47-4783-a76d-349ccffb9f06",
+      "result_id": "47291b4b-54f4-4ac5-abac-012413dce50b"
+    },
+    {
+      "claim_id": "5448800d-0b9b-48e7-810b-16d01c08fbb7",
+      "result_id": "47291b4b-54f4-4ac5-abac-012413dce50b"
+    },
+    {
+      "claim_id": "21a9c7e1-91e3-4ad8-ba25-10c13011ca15",
+      "result_id": "47291b4b-54f4-4ac5-abac-012413dce50b"
+    },
+    {
+      "claim_id": "598a3dfb-ec8b-47a8-91e9-b9a3cb681c83",
+      "result_id": "47291b4b-54f4-4ac5-abac-012413dce50b"
+    },
+    {
+      "claim_id": "de35a597-6453-4769-aad7-762dd3537a0f",
+      "result_id": "dab2dda6-3111-4ded-aa2f-f5046ca5eb59"
+    },
+    {
+      "claim_id": "38e10e82-2c1b-40b9-8d61-efdc2fc9cbe6",
+      "result_id": "dab2dda6-3111-4ded-aa2f-f5046ca5eb59"
+    },
+    {
+      "claim_id": "ab45a139-7085-4038-808c-93c856df0224",
+      "result_id": "dab2dda6-3111-4ded-aa2f-f5046ca5eb59"
+    },
+    {
+      "claim_id": "97683d14-da10-4f10-b408-d422cc89b09f",
+      "result_id": "dab2dda6-3111-4ded-aa2f-f5046ca5eb59"
+    },
+    {
+      "claim_id": "24bfc749-adab-4445-bc6d-7ac76dbf6c2e",
+      "result_id": "dab2dda6-3111-4ded-aa2f-f5046ca5eb59"
+    },
+    {
+      "claim_id": "3ce34f61-a32f-4d8d-866a-092ff29e852d",
+      "result_id": "dab2dda6-3111-4ded-aa2f-f5046ca5eb59"
+    },
+    {
+      "claim_id": "dcfe77fd-bd4b-4c9e-a7c9-24e94cef7576",
+      "result_id": "62ae9c34-443f-4e8f-bae0-ed31107d4316"
+    },
+    {
+      "claim_id": "32f8e10a-c51e-4cd7-9174-76516901434c",
+      "result_id": "62ae9c34-443f-4e8f-bae0-ed31107d4316"
+    },
+    {
+      "claim_id": "a05c349e-6b04-497e-a70e-a763a5ae3720",
+      "result_id": "62ae9c34-443f-4e8f-bae0-ed31107d4316"
+    },
+    {
+      "claim_id": "37a97eaf-8ed9-4bc7-9bbc-b65e61222a10",
+      "result_id": "62ae9c34-443f-4e8f-bae0-ed31107d4316"
+    },
+    {
+      "claim_id": "e0c64fc2-0d84-4256-bac5-d6618ad64e3f",
+      "result_id": "62ae9c34-443f-4e8f-bae0-ed31107d4316"
+    },
+    {
+      "claim_id": "9a397a25-b103-417b-8445-017d180095ec",
+      "result_id": "62ae9c34-443f-4e8f-bae0-ed31107d4316"
+    },
+    {
+      "claim_id": "f529b935-a415-4197-bec8-d70a1dd950bd",
+      "result_id": "b9665273-1e3d-4ee7-af41-d7a607ac8dec"
+    },
+    {
+      "claim_id": "d6d0052a-26f3-4581-abe5-9cd0e96e57c9",
+      "result_id": "b9665273-1e3d-4ee7-af41-d7a607ac8dec"
+    },
+    {
+      "claim_id": "33918e14-41ce-4b0f-aabe-db26982c7547",
+      "result_id": "b9665273-1e3d-4ee7-af41-d7a607ac8dec"
+    },
+    {
+      "claim_id": "41c8a7f3-a2e8-43e0-952a-ac1d8a85dc6c",
+      "result_id": "b9665273-1e3d-4ee7-af41-d7a607ac8dec"
+    },
+    {
+      "claim_id": "05bf7582-24cf-4b23-90ba-ea824ef76c8a",
+      "result_id": "b9665273-1e3d-4ee7-af41-d7a607ac8dec"
+    },
+    {
+      "claim_id": "5eb2c25a-09a7-4c3e-aa59-27e5ad6a8231",
+      "result_id": "df9156a1-9c38-4963-b867-c2e13cb10191"
+    },
+    {
+      "claim_id": "d7531000-15eb-4633-8f0f-ad492a5c2d13",
+      "result_id": "df9156a1-9c38-4963-b867-c2e13cb10191"
+    },
+    {
+      "claim_id": "6654c459-aa66-466e-9c6c-bc43b9c6c34b",
+      "result_id": "df9156a1-9c38-4963-b867-c2e13cb10191"
+    },
+    {
+      "claim_id": "9460ab64-9f9d-4bce-af11-13d1727544ec",
+      "result_id": "0e44678d-8196-4428-a346-1b77241c6ead"
+    },
+    {
+      "claim_id": "3d508731-0273-4ec8-bf82-0c5be5e2b354",
+      "result_id": "0e44678d-8196-4428-a346-1b77241c6ead"
+    },
+    {
+      "claim_id": "a0963294-ff4e-44e0-a3d1-ac8496d6d775",
+      "result_id": "0e44678d-8196-4428-a346-1b77241c6ead"
+    },
+    {
+      "claim_id": "b37551f1-9432-40d4-b824-fb3649f6f43a",
+      "result_id": "0e44678d-8196-4428-a346-1b77241c6ead"
+    },
+    {
+      "claim_id": "9d05b1b8-5622-4533-80a3-a75a37e6de64",
+      "result_id": "0e44678d-8196-4428-a346-1b77241c6ead"
+    },
+    {
+      "claim_id": "6a44ff27-0777-40f8-9ada-654bb3446a64",
+      "result_id": "748d16c2-152c-4f48-979f-8d51157ceaa2"
+    },
+    {
+      "claim_id": "a96e174a-7e96-46b3-b5d4-4389618787da",
+      "result_id": "748d16c2-152c-4f48-979f-8d51157ceaa2"
+    },
+    {
+      "claim_id": "d67148ab-f4fc-419d-b11d-b631f3fa2d99",
+      "result_id": "c2545fb6-bf16-40c5-a3c6-e719500c3272"
+    },
+    {
+      "claim_id": "8d261482-4576-42c8-8e36-d016c720ba83",
+      "result_id": "c2545fb6-bf16-40c5-a3c6-e719500c3272"
+    },
+    {
+      "claim_id": "431cd4e0-dbf1-4f00-a228-dd91bdd21fc0",
+      "result_id": "da858bcd-9ea2-4790-9a34-3d24180063d1"
+    },
+    {
+      "claim_id": "8eec282a-5941-4141-b543-dc2751debeae",
+      "result_id": "da858bcd-9ea2-4790-9a34-3d24180063d1"
+    },
+    {
+      "claim_id": "ed4be404-6d05-45a0-89ae-0649c6f4ae58",
+      "result_id": "da858bcd-9ea2-4790-9a34-3d24180063d1"
+    },
+    {
+      "claim_id": "6a18bf5e-aa03-46c4-a9f1-06b1a199ea80",
+      "result_id": "da858bcd-9ea2-4790-9a34-3d24180063d1"
+    },
+    {
+      "claim_id": "e59e0cfb-2c7c-4322-8681-290278546cdf",
+      "result_id": "da858bcd-9ea2-4790-9a34-3d24180063d1"
+    },
+    {
+      "claim_id": "51675064-bbad-409c-baa6-213f0fc9d489",
+      "result_id": "2dd9ca58-8b52-44d9-ac29-586837d4bc9c"
+    },
+    {
+      "claim_id": "db687937-ded6-46bd-b576-d0a3edc6bb2e",
+      "result_id": "2dd9ca58-8b52-44d9-ac29-586837d4bc9c"
+    },
+    {
+      "claim_id": "28d06452-0eb0-4b07-9c18-b452b762081b",
+      "result_id": "2dd9ca58-8b52-44d9-ac29-586837d4bc9c"
+    },
+    {
+      "claim_id": "26bb19a9-e38e-4a2b-b61e-7a19ef8d5973",
+      "result_id": "2dd9ca58-8b52-44d9-ac29-586837d4bc9c"
+    },
+    {
+      "claim_id": "ad41bdef-f99b-4526-8d46-5ff32e9c3b62",
+      "result_id": "2dd9ca58-8b52-44d9-ac29-586837d4bc9c"
+    },
+    {
+      "claim_id": "f9834e0e-d856-473a-941f-6a1c492dedc9",
+      "result_id": "2dd9ca58-8b52-44d9-ac29-586837d4bc9c"
+    },
+    {
+      "claim_id": "241b2a3d-2a60-4e4e-837a-a79b116c5536",
+      "result_id": "6e88255d-663a-4226-baaa-de62b69780d1"
+    },
+    {
+      "claim_id": "dd2bbd95-e48d-4253-8b88-e2ef59ced017",
+      "result_id": "6e88255d-663a-4226-baaa-de62b69780d1"
+    },
+    {
+      "claim_id": "e6720c4e-8d92-4400-baa2-fec340c5752f",
+      "result_id": "6e88255d-663a-4226-baaa-de62b69780d1"
+    },
+    {
+      "claim_id": "101ec117-c153-4744-aafe-97dbd5cdc18b",
+      "result_id": "6e88255d-663a-4226-baaa-de62b69780d1"
+    },
+    {
+      "claim_id": "9ac58154-b195-46dc-9655-1d4e127c1fdd",
+      "result_id": "6e88255d-663a-4226-baaa-de62b69780d1"
+    },
+    {
+      "claim_id": "f9834e0e-d856-473a-941f-6a1c492dedc9",
+      "result_id": "6e88255d-663a-4226-baaa-de62b69780d1"
+    },
+    {
+      "claim_id": "cca88eab-c358-47ba-bb37-d11742fa476b",
+      "result_id": "21df1c29-0633-4146-b649-b061eca9821e"
+    },
+    {
+      "claim_id": "53172b98-6bf7-4ccb-954f-49de44ac2708",
+      "result_id": "21df1c29-0633-4146-b649-b061eca9821e"
+    },
+    {
+      "claim_id": "6e770f39-ce60-4ccf-a60a-ef2005aac436",
+      "result_id": "21df1c29-0633-4146-b649-b061eca9821e"
+    },
+    {
+      "claim_id": "84043605-7386-4b7f-95ca-af1f3562431f",
+      "result_id": "21df1c29-0633-4146-b649-b061eca9821e"
+    },
+    {
+      "claim_id": "11d1b887-c257-425d-919a-7b3e2124afd3",
+      "result_id": "21df1c29-0633-4146-b649-b061eca9821e"
+    },
+    {
+      "claim_id": "aad79a7b-4663-4763-ac5c-829c0956bb12",
+      "result_id": "21df1c29-0633-4146-b649-b061eca9821e"
+    },
+    {
+      "claim_id": "b37551f1-9432-40d4-b824-fb3649f6f43a",
+      "result_id": "21df1c29-0633-4146-b649-b061eca9821e"
+    },
+    {
+      "claim_id": "1a7e0825-e04c-442a-b2b2-70c1efa39539",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "df475f2e-e5cd-4dff-8afc-556373205684",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "03b34dcc-2aac-4fb7-af53-d4677cb0300a",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "9aafb295-6258-4b01-8699-90fedb47391e",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "3b38c9e5-8b57-44a3-b9fe-04dfe67344bd",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "064eda35-0a2c-4f89-8ef4-50350a7a6e5a",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "b53565c2-763f-4994-a4d9-9aff699b4d20",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "c5d71799-9b6c-425a-96c4-611005f1601e",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "94da6371-4846-44af-8fbd-e8492a327791",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "d7531000-15eb-4633-8f0f-ad492a5c2d13",
+      "result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47"
+    },
+    {
+      "claim_id": "36b892d3-f3e4-4211-bc1c-bac942a650ae",
+      "result_id": "81fb0df8-a943-4f42-b44c-47208b85ffa8"
+    },
+    {
+      "claim_id": "62d01e36-ea17-4448-a3e1-ceaf420bb58b",
+      "result_id": "81fb0df8-a943-4f42-b44c-47208b85ffa8"
+    },
+    {
+      "claim_id": "9460ab64-9f9d-4bce-af11-13d1727544ec",
+      "result_id": "3a8f30f8-19c4-4367-b902-607bd0bef289"
+    },
+    {
+      "claim_id": "6a44ff27-0777-40f8-9ada-654bb3446a64",
+      "result_id": "3a8f30f8-19c4-4367-b902-607bd0bef289"
+    },
+    {
+      "claim_id": "a96e174a-7e96-46b3-b5d4-4389618787da",
+      "result_id": "3a8f30f8-19c4-4367-b902-607bd0bef289"
+    },
+    {
+      "claim_id": "45bd6916-722f-48eb-9978-e34267d93977",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "dfded3d2-45f8-43dd-9a51-b71b662ddb5a",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "844dfad3-9415-4dcc-850e-97d22c135f21",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "0ce22339-674d-4763-884a-23537279178e",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "2cc47c5b-7bb6-4c81-b8b6-a0e432bed89b",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "720d72c8-173e-4ee7-b17e-920ed82a5386",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "2ce03cb3-9e14-4c74-90c8-988d8c9b5da7",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "efdde44c-8b93-42ec-b347-24b4b3f12652",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "c528bceb-5f4a-47b6-9ad0-9ad27982ac76",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "c06b5edd-f1f2-4baf-a65d-a1256d115be8",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "dbd4cd6a-c24d-43f5-9dd6-7e0ccbef2f7c",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "965a44f8-67f2-482d-99af-6c5600989912",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "619ded48-4037-4d3c-9186-7fd13d846772",
+      "result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89"
+    },
+    {
+      "claim_id": "655ad088-1b47-4783-a76d-349ccffb9f06",
+      "result_id": "405859cc-1e17-4f10-9ae8-2720145b4c30"
+    },
+    {
+      "claim_id": "5448800d-0b9b-48e7-810b-16d01c08fbb7",
+      "result_id": "405859cc-1e17-4f10-9ae8-2720145b4c30"
+    },
+    {
+      "claim_id": "21a9c7e1-91e3-4ad8-ba25-10c13011ca15",
+      "result_id": "405859cc-1e17-4f10-9ae8-2720145b4c30"
+    },
+    {
+      "claim_id": "598a3dfb-ec8b-47a8-91e9-b9a3cb681c83",
+      "result_id": "405859cc-1e17-4f10-9ae8-2720145b4c30"
+    },
+    {
+      "claim_id": "3d508731-0273-4ec8-bf82-0c5be5e2b354",
+      "result_id": "405859cc-1e17-4f10-9ae8-2720145b4c30"
+    },
+    {
+      "claim_id": "a0963294-ff4e-44e0-a3d1-ac8496d6d775",
+      "result_id": "405859cc-1e17-4f10-9ae8-2720145b4c30"
+    },
+    {
+      "claim_id": "de35a597-6453-4769-aad7-762dd3537a0f",
+      "result_id": "ce910152-667e-413e-bd87-3638ec68129b"
+    },
+    {
+      "claim_id": "38e10e82-2c1b-40b9-8d61-efdc2fc9cbe6",
+      "result_id": "ce910152-667e-413e-bd87-3638ec68129b"
+    },
+    {
+      "claim_id": "ab45a139-7085-4038-808c-93c856df0224",
+      "result_id": "ce910152-667e-413e-bd87-3638ec68129b"
+    },
+    {
+      "claim_id": "97683d14-da10-4f10-b408-d422cc89b09f",
+      "result_id": "ce910152-667e-413e-bd87-3638ec68129b"
+    },
+    {
+      "claim_id": "24bfc749-adab-4445-bc6d-7ac76dbf6c2e",
+      "result_id": "ce910152-667e-413e-bd87-3638ec68129b"
+    },
+    {
+      "claim_id": "3ce34f61-a32f-4d8d-866a-092ff29e852d",
+      "result_id": "ce910152-667e-413e-bd87-3638ec68129b"
+    },
+    {
+      "claim_id": "dcfe77fd-bd4b-4c9e-a7c9-24e94cef7576",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "32f8e10a-c51e-4cd7-9174-76516901434c",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "a05c349e-6b04-497e-a70e-a763a5ae3720",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "37a97eaf-8ed9-4bc7-9bbc-b65e61222a10",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "e0c64fc2-0d84-4256-bac5-d6618ad64e3f",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "9a397a25-b103-417b-8445-017d180095ec",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "f529b935-a415-4197-bec8-d70a1dd950bd",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "d6d0052a-26f3-4581-abe5-9cd0e96e57c9",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "33918e14-41ce-4b0f-aabe-db26982c7547",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "41c8a7f3-a2e8-43e0-952a-ac1d8a85dc6c",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "05bf7582-24cf-4b23-90ba-ea824ef76c8a",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "5eb2c25a-09a7-4c3e-aa59-27e5ad6a8231",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "6654c459-aa66-466e-9c6c-bc43b9c6c34b",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "d67148ab-f4fc-419d-b11d-b631f3fa2d99",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "8d261482-4576-42c8-8e36-d016c720ba83",
+      "result_id": "d883d860-0090-4973-9824-37379972590e"
+    },
+    {
+      "claim_id": "9d05b1b8-5622-4533-80a3-a75a37e6de64",
+      "result_id": "4b6e8c00-8e8d-4cec-8aeb-73a96467a478"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "d51118e7-9f14-4fb8-bdc8-93af85670181",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "490f3c49-4468-4ee5-a362-027662216c1c",
+      "peer_result_id": "81fb0df8-a943-4f42-b44c-47208b85ffa8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on time-varying hazard findings (C29-C30). Both OpenEval and peer reviewers support the non-proportional hazards methodology and findings. OpenEval provides detailed methodological assessment while peer reviewers affirm the statistical approach was appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "a7f9e6f6-e4ce-41b0-a1bd-7fd9ed8cad4d",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "dab2dda6-3111-4ded-aa2f-f5046ca5eb59",
+      "peer_result_id": "ce910152-667e-413e-bd87-3638ec68129b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on statistical methodology (C74-C79). Both support the survival analysis approach including restricted cubic splines and multiple imputation. OpenEval provides technical validation while peer reviewers confirm analyses were appropriately done.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "72095789-f768-49d6-afff-ffd471d4edf6",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "8820ac55-8c9b-4250-abfe-142dd29372ce",
+      "peer_result_id": "21df1c29-0633-4146-b649-b061eca9821e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on sensitivity analyses (C41-C46, C66). Both evaluations support the robustness of findings across multiple adjustment models. OpenEval notes appropriate attenuation in Model 4, while peer reviewers praise the comprehensive adjustment strategy and data quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "3d8a279f-9697-4860-8de0-444bcf907ddb",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "731816ed-96e3-4666-9891-ce7a2bc6ff1b",
+      "peer_result_id": "2dd9ca58-8b52-44d9-ac29-586837d4bc9c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on CVD mortality findings (C31-C35). Both support the statistical significance and sex-specific effects. OpenEval notes caution needed for multiple comparisons while peer reviewers emphasize robust associations and convincing data quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "b7d72424-c2ec-4814-871b-e32a709ece8c",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "eec65f86-f09f-4204-9c69-0841d4c97d20",
+      "peer_result_id": "6e88255d-663a-4226-baaa-de62b69780d1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on cancer mortality findings (C36-C40). Both support the statistical associations and time-varying hazard patterns. OpenEval discusses reverse causation interpretation while peer reviewers accept the robust associations without challenging the temporal patterns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "58e30be2-470b-4a90-a75e-444ff51cae76",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4d981086-155c-43d5-9bec-4dbd3f9eb0e3",
+      "peer_result_id": "da858bcd-9ea2-4790-9a34-3d24180063d1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on all-cause mortality findings (C20-C22, C24, C28). Both support the primary statistical findings including non-linear relationship and mortality risk plateau. OpenEval emphasizes spline modeling evidence while peer reviewers highlight fundamental findings with convincing data quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "7aac4a7c-9f97-4bd2-95b0-633a52b16873",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "6244cc66-82e3-4421-82ef-f02d5d783a32",
+      "peer_result_id": "372cb364-d08e-4c51-bedb-3546a1b24f89",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on cohort characteristics (C7-C10, C14-C18). Both support the descriptive statistics and sample documentation. OpenEval praises transparency including selection bias acknowledgment, while peer reviewers emphasize large sample size and data quality as strengthening credibility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "9e62d100-5b08-4cfa-8dc1-a48e33397426",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "748d16c2-152c-4f48-979f-8d51157ceaa2",
+      "peer_result_id": "3a8f30f8-19c4-4367-b902-607bd0bef289",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations express uncertainty about causal interpretations (C63, C68-C69). OpenEval rates mechanistic interpretations as UNCERTAIN requiring validation, while peer reviewers explicitly question causality and suggest Mendelian randomization analysis for stronger evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "b49b4af7-1d82-47ae-88a6-bf4444246c00",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0f60e024-cc59-4dad-8a3f-4cab95aed669",
+      "peer_result_id": "17d5bb06-0587-4fb2-851a-790e17d95d47",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on SRI superiority over SD-based metrics (C47-C52, C11-C13, C59). Both support the comparative analysis and incremental predictive value. OpenEval emphasizes likelihood ratio tests, while peer reviewers highlight SRI as a novel metric providing objective circadian disruption assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "d392fcbb-3358-4893-8d3f-ef9a1e100912",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "47291b4b-54f4-4ac5-abac-012413dce50b",
+      "peer_result_id": "405859cc-1e17-4f10-9ae8-2720145b4c30",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on accelerometry methodology (C70-C73, C11-C13). Both support the data collection approach and GGIR algorithm. OpenEval notes appropriate acknowledgment of nap detection limitation, while peer reviewers affirm objective assessment quality without challenging methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "15554480-61e1-4478-93b7-25d020fce955",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "62ae9c34-443f-4e8f-bae0-ed31107d4316",
+      "peer_result_id": "d883d860-0090-4973-9824-37379972590e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background context and circadian biology (C1-C6). Both support the foundational claims about circadian disruption and health. OpenEval validates citations to established literature, while peer reviewers note the topic is popular in sleep and circadian research.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "b024b361-b81c-4c23-8dfd-3d9c8bd7c472",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "b9665273-1e3d-4ee7-af41-d7a607ac8dec",
+      "peer_result_id": "d883d860-0090-4973-9824-37379972590e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on mechanistic literature (C53-C57). Both support the prior research linking circadian disruption to CVD and cancer pathogenesis. OpenEval emphasizes biological plausibility for observed associations, while peer reviewers accept the contextualization within existing evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "0970c364-b7a1-4908-ace5-fb33ca16c880",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "df9156a1-9c38-4963-b867-c2e13cb10191",
+      "peer_result_id": "d883d860-0090-4973-9824-37379972590e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on contextualization of findings (C58-C60). Both support the rationale for why SRI might outperform SD-based metrics. OpenEval validates the mechanistic hypothesis about rapid changes, while peer reviewers accept the evidence supporting sleep and circadian health roles.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "456af308-1230-40c1-9f72-e552bd6fc8bd",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "0e44678d-8196-4428-a346-1b77241c6ead",
+      "peer_result_id": "4b6e8c00-8e8d-4cec-8aeb-73a96467a478",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on study conclusions and impact (C67). Both support the overall findings despite limitations. OpenEval notes robustness while acknowledging residual confounding cannot be excluded, while peer reviewers affirm wide interest and evidence for sleep-health relationships.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "e62cdaa8-e899-4757-a6d8-c11104d645e1",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "c2545fb6-bf16-40c5-a3c6-e719500c3272",
+      "peer_result_id": "d883d860-0090-4973-9824-37379972590e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on sleep duration literature context (C61-C62). Both support the established knowledge citations. OpenEval validates the rationale for investigating sleep regularity as distinct dimension, while peer reviewers accept the background without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    },
+    {
+      "id": "90f28188-578d-4117-90d9-97479159f3ea",
+      "submission_id": "505a254f-9d0a-43ac-ac04-900e5ef05a7f",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "0e44678d-8196-4428-a346-1b77241c6ead",
+      "peer_result_id": "3a8f30f8-19c4-4367-b902-607bd0bef289",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on limitations (C63). OpenEval supports acknowledgment of observational study limitations, while peer reviewers specifically emphasize causality concerns and suggest additional analytical approaches like Mendelian randomization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:30:09.344152Z"
+    }
+  ]
+}

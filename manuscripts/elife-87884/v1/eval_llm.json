@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C25",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Analysis of >13 million SARS-CoV-2 genome sequences identified T12I, T102I, and A104V as the three most frequent NSP10 variants, with frequencies of 0.131%, 0.166%, and 0.107% respectively. The analysis was performed in two phases, with consistent results across both datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C40 collectively describe a comprehensive bioinformatics analysis with clear methodology, appropriate data filtering, and consistent results across two independent analyses (7M and 13M sequences). The identification of the top three variants is well-documented with specific counts and frequencies, and the methodology is reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "NSP10 shows significantly lower mutation propensity compared to other SARS-CoV-2 proteins. Only 6 positions mutate with frequency >0.1%, and NSP10 has only 735 unique sequences in 3M genomes compared to 99,254 for spike in 2M genomes and 115,373 for NSP3 in 2.4M genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 and C65-C69 provide strong comparative evidence from multiple independent datasets (GISAID and NCBI Genbank) showing NSP10's low mutation propensity. The mutational propensity analysis (Figure 6) and comparative statistics across proteins provide robust support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Computational predictions using DynaMut2 indicate that the three most frequent NSP10 variants (T12I, T102I, A104V) have destabilizing effects with \u0394\u0394G values of -0.68, -0.1, and -0.1 kcal/mol respectively, but are not predicted to be deleterious to structural viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 report computational predictions using an established algorithm (DynaMut2). The predictions are internally consistent and provide specific quantitative values. However, these are computational predictions that require experimental validation, which is provided in subsequent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Thermal shift assays experimentally confirmed that all three NSP10 variants (T12I, T102I, A104V) are less thermally stable than wild-type, with TM values of 41.3\u00b10.1\u00b0C, 44.0\u00b10.1\u00b0C, and 44.9\u00b10.1\u00b0C compared to 47.4\u00b10.0\u00b0C for wild-type NSP10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 present experimental thermal shift data with appropriate error bars and replicates (stated as triplicate). The results confirm the computational predictions of destabilization and provide quantitative measurements. The significant decrease in TM (2-6\u00b0C) validates the predicted destabilizing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C84",
+      "C85",
+      "C99"
+    ],
+    "result": "MST experiments show that NSP10 variants have minimal effects on binding affinity to NSP16, with Kd values of 1000.2\u00b1195.0 nM (T12I), 359.4\u00b197.8 nM (T102I), and 473.5\u00b1117.4 nM (A104V) compared to 957.1\u00b1181.5 nM for wild-type, indicating either similar or slightly improved binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C57, C84-C85, and C99 present MST binding data with appropriate error measurements and replicates. The Kd values show that variants either maintain or slightly improve binding affinity to NSP16, supporting the conclusion that these mutations do not significantly impair NSP10 function. The error bars overlap substantially, confirming minimal functional impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C84",
+      "C85",
+      "C99"
+    ],
+    "result": "MST experiments demonstrate that NSP10 variants show minimal effects on binding to NSP14 ExoN domain, with Kd values of 1.46\u00b10.38 \u03bcM (T12I), 3.88\u00b11.39 \u03bcM (T102I), and 2.37\u00b11.36 \u03bcM (A104V) compared to 3.9\u00b11.0 \u03bcM for wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 report MST data for NSP14 binding. However, there is a critical error in C56: the Kd for T12I is reported as '1.46\u00b10.38 M' (molar) which is physically implausible and likely a typo for \u03bcM. This unit inconsistency raises concerns about data accuracy. The large error bars and overlapping confidence intervals make it difficult to assess whether differences are meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C98"
+    ],
+    "result": "Crystal structure of NSP10 variant T102I was solved to 2.2 \u00c5 resolution and shows no significant conformational changes compared to wild-type NSP10, with an RMSD of 0.26 \u00c5. The only observable difference is loss of a water-mediated interaction at position 102.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 and C98 present crystallographic data with appropriate statistics (Table 2) and structural analysis. The low RMSD (0.26 \u00c5) strongly supports the conclusion of minimal structural change. The identification of a single water-mediated interaction difference is consistent with the modest destabilization observed in thermal shift assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Well-tempered metadynamics simulations show that NSP10 variants explore similar conformational landscapes as wild-type, with RMSD values of 0.77 \u00c5 (T12I), 0.69 \u00c5 (T102I), and 0.63 \u00c5 (A104V), indicating variants cannot influence major conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 present enhanced sampling MD simulation data using an appropriate method (well-tempered metadynamics). The low RMSD values and similar free energy landscapes (Figure 5) support the conclusion that variants do not cause major conformational changes. This computational result is consistent with the experimental crystallographic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Structural analysis reveals that T12 is at the NSP10-NSP14 interface and makes hydrogen bonds with N61 in NSP14, while T102 and A104 are solvent-exposed on helix H5 and distant from both NSP14 and NSP16 binding interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe structural features based on crystal structure analysis. These observations are verifiable from the deposited structures and are consistent with the functional data showing that T102I and A104V have minimal effects on binding while T12I is at a protein-protein interface.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Structural mapping shows no frequent mutations around zinc finger domains, all identified mutations are outside the NSP10-NSP16 interface, and only T12I (of 8 interface mutations with NSP14) shows frequency >0.1%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 integrate sequence analysis with structural data to map mutation locations. The observations are consistent with the functional importance of zinc fingers and protein-protein interfaces, and explain why these regions are conserved. The data support the evolutionary constraint hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Two ligand binding sites in NSP10 are located near the NSP14/NSP16 interfaces. Residues S11 and S15 in site 1 show low mutation frequency while T12 shows high frequency. Site 2 residues show medium frequency except T49 which shows high frequency, suggesting potential for resistance mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 present structural and mutational analysis of ligand binding sites. However, C83 is explicitly labeled as speculation/hypothesis. While the mutation frequency data for binding site residues is supported, the conclusion about resistance potential is speculative and not experimentally validated. This would require functional assays with actual ligands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C76",
+      "C77",
+      "C87",
+      "C88",
+      "C100"
+    ],
+    "result": "The low mutation frequency and functional conservation of NSP10 reflects its essential role as a cofactor for NSP14 and NSP16. The integrity of NSP10 is critical for viral survival, and there is limited capacity for the virus to overcome NSP10-targeting inhibitors through resistance mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C76-C77, C87-C88, and C100 present interpretations and inferences from the combined data. While these are interpretive claims, they are well-supported by the convergent evidence from sequence analysis, structural studies, biophysical assays, and simulations. The conclusion about limited resistance potential (C88) is a reasonable inference but would benefit from experimental validation with actual inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background information on SARS-CoV-2, COVID-19 statistics, viral genome structure, NSP functions, RNA capping mechanism, mutation rates, and the roles of NSP10, NSP14, and NSP16 in viral replication and immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23, C29, and C89-C97 provide background context supported by appropriate citations to published literature. These establish the scientific foundation for the study but do not represent novel findings from this work. The claims are well-established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Higher affinity of NSP10 variants for binding partners may lead to slightly increased capping activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C86 is explicitly labeled as speculation and is not supported by experimental data. The manuscript does not present capping activity assays to test this hypothesis. While the binding affinity data shows slight improvements for some variants, the functional consequence on capping activity remains untested.",
+    "result_type": "MINOR"
+  }
+]

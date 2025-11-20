@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MS patients show increased recall error compared to healthy controls in both MGL and sequential paradigms. In the MGL paradigm, SPMS patients showed significantly higher recall error than both healthy controls and RRMS patients, while RRMS did not differ from controls. In the sequential paradigms (both high and low memory load), both RRMS and SPMS showed significantly higher recall error than controls. In the low memory load condition, SPMS showed higher error than RRMS. These effects remained significant after adjusting for demographic and cognitive variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide comprehensive statistical evidence with appropriate tests (mixed-model ANOVA, post hoc tests, hierarchical regression) and consistent p-values across multiple conditions. The pattern of results is internally consistent and supported by visual data in Figure 2. The adjustment for confounding variables strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "MS patients show decreased recall precision compared to healthy controls. In the MGL paradigm, SPMS showed significantly lower precision than both RRMS and healthy controls, with no difference between RRMS and controls. In the high memory load sequential paradigm, both RRMS and SPMS showed lower precision than controls, with no difference between MS subtypes. In the low memory load condition, all three groups differed significantly, with healthy controls showing highest precision, followed by RRMS, then SPMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide consistent statistical evidence across multiple paradigms with appropriate tests and adjustments for confounders. The pattern shows a graded impairment that is paradigm-dependent, which is well-documented with statistical support and visual confirmation in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The von Mises standard deviation (circular SD) of recall error was significantly higher in MS patients compared to controls in both high and low memory load conditions. In the high memory load condition, both RRMS and SPMS showed higher von Mises SD than controls with no difference between MS subtypes. In the low memory load condition, all three groups differed significantly, with SPMS showing the highest von Mises SD, followed by RRMS, then healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide consistent statistical evidence using appropriate circular statistics methods for angular data. The pattern mirrors the recall precision results, which is expected since von Mises SD is related to precision. The results are supported by Figure 3A and remain significant after covariate adjustment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Target response proportion (probability of correctly reporting the target orientation) was significantly lower in MS patients compared to controls in the high memory load condition. Both RRMS and SPMS showed lower target proportion than controls, with no difference between MS subtypes. Nearest-neighbor analysis confirmed these findings for the isolated effect of orientation. In the low memory load condition, the initial significant difference between healthy controls and SPMS became non-significant after adjusting for demographic and cognitive variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide robust statistical evidence for impaired target response in MS under high memory load, with convergent evidence from nearest-neighbor analysis. The finding that low memory load effects disappear after covariate adjustment (C78) is appropriately reported and suggests the effect may be confounded in that condition. The high memory load results remain the primary supported finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Swap error (mistakenly reporting the orientation of non-target bars) was significantly higher in MS patients compared to controls in the high memory load condition. Both RRMS and SPMS showed higher swap error than controls, with no significant difference between MS subtypes. This finding, combined with imprecision in decoding information (target response), was identified as responsible for WM dysfunction in MS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide clear statistical evidence for increased swap error in MS patients using the Mixture Model approach. The computational modeling appropriately decomposes error sources. However, the causal language in C7 and C8 ('responsible for') is stronger than warranted by correlational data, though the mechanistic interpretation is reasonable given the modeling framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Uniform response proportion (random responses) was significantly different between groups in the high memory load condition, with healthy controls showing lower uniform responses than both RRMS and SPMS. However, after adjusting for gender, this effect became non-significant when age, education, or cognitive ability were added to the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While initial statistical significance is reported (C85, C87, C88), the text indicates this effect became insignificant after full covariate adjustment. The claims don't provide the full hierarchical regression results, making it unclear whether uniform response proportion represents a true MS-related deficit or is confounded by demographic factors. This uncertainty undermines confidence in this as a robust finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The paradigms showed dissociable classification performance. Sequential paradigms (especially 1-bar: 86.2% accuracy) were better at distinguishing healthy controls from RRMS (79.3-79.6%), while MGL was superior at discriminating MS subtypes (SPMS from RRMS: 84.7% vs. 62-72.3% for sequential paradigms). MGL showed poor ability to distinguish healthy controls from RRMS (64.1%). All paradigms showed good accuracy (88.4-94.4%) in distinguishing healthy controls from SPMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ROC analysis results are clearly presented with specific AUC values and are supported by Figure 4. The dissociable pattern is internally consistent with the earlier findings showing different sensitivity of paradigms to MS subtypes. The classification accuracies are reasonable and the complementary strengths of the paradigms are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors propose that the MGL paradigm's superior ability to discriminate SPMS from RRMS may reflect greater hippocampal disruption in SPMS, based on the association between spatial WM and hippocampal function. This interpretation is supported by prior literature showing greater hippocampal regional loss and neuroinflammatory activity in SPMS compared to RRMS. The authors suggest spatial WM assessment could be a specific marker for WM system disorganization in SPMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the interpretation is plausible and supported by relevant citations (C104, C105), this remains speculative (C106 is explicitly marked as speculation). The current study did not directly measure hippocampal structure or function, so the mechanistic link is inferred rather than demonstrated. The authors appropriately acknowledge this limitation in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose that swap error in their study can be attributed to variability in the color dimension (the cue feature), based on recent literature showing this mechanism can solely account for swap errors. They suggest the neural basis involves disturbed neural activity during WM tasks in MS, including disturbed theta band oscillation in the hippocampus which plays a crucial role in WM encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanistic interpretation relies heavily on cited literature (C107, C109, C110) rather than direct measurements in the current study. While the interpretation is reasonable and well-grounded in prior work, the current study did not measure neural activity, theta oscillations, or directly test the color variability hypothesis. These remain plausible interpretations rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors discuss that swap errors have been observed in various neurological disorders and propose neuroanatomical substrates. They suggest parietal regions and globus pallidus as candidate regions for conjunctive processing impairment in MS, based on convergence between brain regions involved in conjunctive processing and those affected in MS. They also expect relational processing impairment based on hippocampal involvement in MS, though their study design did not evaluate this.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are primarily speculative interpretations (C120, C121 explicitly marked as speculation) based on synthesizing prior literature with current behavioral findings. No neuroimaging or neuroanatomical data were collected in the current study. While the reasoning is logical and well-cited, these remain hypotheses for future testing rather than supported findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "The authors interpret the insignificant results from the low memory load condition as suggesting more impairment in visual WM under high memory load situations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable inference from the pattern of results showing stronger and more consistent group differences in the high memory load (3-bar) condition compared to the low memory load (1-bar) condition. This interpretation is consistent with the data pattern, though it is an inference rather than a directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C123",
+      "C124"
+    ],
+    "result": "The study included 121 MS patients (61 RRMS, 60 SPMS) and 73 healthy controls recruited from a comprehensive MS clinic between February 2021 and January 2022. After exclusions for extreme outliers, the MGL paradigm included 45 patients (19 RRMS, 26 SPMS) and 24 controls (5 excluded), while sequential paradigms included 76 patients (42 RRMS, 34 SPMS) and 49 controls (8 excluded).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The participant numbers are clearly stated and internally consistent. The exclusion criteria and numbers are explicitly reported. However, the substantial difference in sample sizes between paradigms (45 vs 76 patients) is not explained, which raises questions about whether different subsets of patients participated in different paradigms or if there were additional exclusions not fully described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study used rigorous inclusion/exclusion criteria including 2017 McDonald criteria for MS diagnosis, specific age and disease duration ranges, EDSS scores 0-6.5, normal vision and motor function, and exclusion of confounding conditions. Cognitive ability was assessed using MoCA with standard scoring ranges. The study received ethical approval and followed Declaration of Helsinki guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details are clearly stated with appropriate citations. The inclusion/exclusion criteria are comprehensive and appropriate for the study aims. Ethical compliance is properly documented. These represent standard methodological practices that are adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes that WM is frequently affected in MS, describes the slot model and resource-based model frameworks for understanding WM, and notes that continuous reproduction paradigms can assess error distribution. Prior work has shown that different error sources (random response, swap error) contribute to WM impairment in other neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background claims appropriately supported by citations to establish context and rationale for the study. They represent established knowledge in the field and are not novel findings from this work. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

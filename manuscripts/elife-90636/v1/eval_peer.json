@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C37",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The X-LD algorithm achieves substantial computational efficiency improvements over conventional methods, reducing complexity from O(nm\u00b2) to O(n\u00b2m) and demonstrating 30-40 times faster performance than PLINK in benchmark tests. Specific runtime examples include 3008.29s for all 1KG samples and 66.86s for CHB chromosome 2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly affirm the computational efficiency gains. The first reviewer states 'the method and its derivation are solid' and the second reviewer notes 'the authors have been successful at their aim of producing an efficient computational tool,' citing Figure 2 and Supplementary Figure S2 as 'compelling evidence' showing 'X-LD is faster than PLINK as long as it is evaluating LD for more than 8000 SNPs.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C41",
+      "C44",
+      "C46"
+    ],
+    "result": "Cross-chromosome LD varies substantially by population structure, with inter-chromosomal LD representing about 10% of intra-chromosomal LD in homogeneous cohorts like FIN (ratio 0.091) but reaching 56% in admixed cohorts like ASW. Extended LD driven by population structure was found universally across all cohorts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer explicitly states 'The authors document that cross-chromosome LD can be substantial, which has implications for geneticists who are interested in population structure and its impact on genetic association studies.' No concerns are raised about these quantitative findings, indicating reviewer acceptance of the cross-chromosome LD patterns reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C55",
+      "C88"
+    ],
+    "result": "The HLA region on chromosome 6 exhibits dramatically elevated LD compared to the rest of the chromosome, with ratios of 42-fold in CEU and 11.58-fold in ASW. The HLA region showed high LD in European and East Asian cohorts but relatively low LD in YRI, consistent with longer population history.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer questions these HLA findings. The first reviewer's statement that 'the method and its derivation are solid' and the second reviewer's confirmation that X-LD estimates 'appear to have very good agreement' with PLINK (Figure 2) implicitly support the validity of these specific regional LD measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C60",
+      "C65",
+      "C10"
+    ],
+    "result": "Chromosome 11's centromere region shows exceptionally high LD (94.05-fold higher than chromosome 11 baseline in YRI, 42.73-fold in ASW), attributed to its more completely sequenced centromere region before CHM13 release. This causes chromosome 11 to perturb the otherwise linear relationship between chromosome length and LD strength.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge these chromosome 11 findings. The second reviewer's acknowledgment that the method produces 'very good agreement' with standard approaches and the first reviewer's statement that 'the method and its derivation are solid' provide implicit support for these specific observations about chromosome 11's unique characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C71",
+      "C79"
+    ],
+    "result": "An inversely proportional linear relationship exists between chromosome length and chromosomal LD strength, with Pearson's correlation averaging over 0.80 across 26 1KG cohorts. This relationship is consistent with genome-wide spread of recombination hotspots, and dropping chromosome 11 improves the correlation by 0.046.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer questions this linear relationship finding. The first reviewer's statement that the authors 'apply to quantify the extent of LD across chromosomes' and that 'the method and its derivation are solid' indicates acceptance of this key biological observation derived from the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C83",
+      "C92"
+    ],
+    "result": "Chromosome 8 of ASW uniquely deviates from the linear relationship between chromosome length and LD more than any other autosome, with this deviation remaining consistent even when more SNPs are added. A possible explanation involves the complex demographic history of ASW.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers do not challenge this specific observation about chromosome 8 in ASW. The second reviewer's confirmation that X-LD produces results with 'very good agreement' to PLINK supports the validity of this unusual finding, though the speculative explanation is not directly addressed by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The methodological foundation relies on the connection between the genetic relationship matrix (GRM) and LD, with a more general transformation established via Isserlis's theorem.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer explicitly states 'the method and its derivation are solid,' directly affirming the mathematical and methodological foundation of the approach including the GRM-LD connection and use of Isserlis's theorem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C20"
+    ],
+    "result": "The method has limitations: it remains slow when sample size is large or grid resolution is increased, may not be adequate for UK Biobank-scale data, and was tested to handle up to 10,000 individuals. Advanced methods such as randomized implementation may be needed for larger datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The second reviewer explicitly identifies this limitation, stating 'This method seems to be limited to calculating average levels of LD in broad regions of the genome. While it would be possible to make the regions more fine-grained, doing so appears to make this approach much less efficient.' This directly corroborates the authors' acknowledged weaknesses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75"
+    ],
+    "result": "LD decay analysis shows variation across populations, with scores ranging from 0.0421 (MSL) to 0.0598 (PEL), consistent with previous findings that African populations have relatively shorter LD. American continent subgroups show extended LD range due to admixed genetic composition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer's statement that the authors 'document that cross-chromosome LD can be substantial, which has implications for geneticists who are interested in population structure' encompasses these LD decay findings. Neither reviewer challenges the population-specific LD patterns reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C29",
+      "C30"
+    ],
+    "result": "The X-LD software is implemented in C++, available at https://github.com/gc5k/gear2, reads PLINK binary genotype data, and uses multi-thread programming to improve efficiency with available computational resources.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The second reviewer confirms the software's functionality by stating 'the authors have been successful at their aim of producing an efficient computational tool' and references the computational runtime comparisons (Figure S2), implicitly validating the software implementation and availability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C22",
+      "C23",
+      "C80",
+      "C90"
+    ],
+    "result": "Background claims about LD structure being shaped by mutation, recombination, population demography, epistatic fitness, and data completeness; the importance of LD patterns for GWAS and polygenic risk prediction; genome-wide recombination hotspots; and connections between LD, eigenvalues, and population structure.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background knowledge claims cited from literature. Neither reviewer challenges these foundational concepts. The first reviewer's acknowledgment that the findings have 'implications for geneticists who are interested in population structure and its impact on genetic association studies' implicitly accepts this background framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The 1000 Genomes Project dataset used includes 2503 individuals across 26 cohorts, with 2,997,635 consensus SNPs retained after quality control.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer questions the dataset composition or quality control procedures. The second reviewer's confirmation that X-LD estimates show 'very good agreement' with PLINK (Figure 2) implicitly validates the data processing pipeline.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "A prediction that with the release of CHM13, the linear correlation between chromosome length and LD should be much closer to unity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative claim about future analyses. Neither reviewer comments on this prediction, and it represents an untested hypothesis rather than a current finding. The lack of reviewer discussion leaves this claim's validity uncertain.",
+    "result_type": "MINOR"
+  }
+]

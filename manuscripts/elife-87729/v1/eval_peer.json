@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C40",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors introduce genephys, a generative model of brain electrophysiological responses that can reproduce temporal generalization matrix (TGM) patterns observed in real decoding data. The model includes multiple configurable response types (phase resetting, additive oscillations, amplitude modulations, non-oscillatory responses) and is publicly available as a Python package.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge the model as a 'valuable finding' and 'state-of-the-art generative model' with 'convincing' evidence. Reviewers explicitly note the model's ability to 'capture empirical observations' and appreciate that it is 'publicly shared in open source code.' No concerns are raised about the model's basic functionality or availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C50",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The model demonstrates that realistic TGM patterns require an oscillatory component spanning multiple channels with diverse frequencies and latencies, coupled with a slower non-oscillatory response. Two mechanisms can produce realistic results: phase resetting with frequency entrainment, or additive oscillations, both requiring cross-frequency coupling with the slower component.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state that the authors 'identify that the correspondence between the mimicked and the experimental TGM to depend on an oscillatory component that spans multiple channels, frequencies, and latencies of response; and an additive, slower response with a specific (cross-frequency) relation to the phase of the oscillatory, faster component.' The evidence is described as 'convincing' and the model 'shows that complexity is necessary in terms of spatial configuration, frequencies and latencies.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C67",
+      "C68",
+      "C116"
+    ],
+    "result": "The model shows that stimulus-specific information must span a large number of channels stochastically, with probabilistic activations introducing necessary noise. The stimulus-relevant subspace must be high-dimensional both spatially and temporally, while remaining highly stochastic at the single-trial level.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge that 'the model shows that complexity is necessary in terms of spatial configuration, frequencies and latencies' and note the paper 'considers the complexity of neural data.' The finding about high-dimensional, stochastic responses is implicitly accepted as part of the model's ability to capture empirical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The model demonstrates that diversity in both frequencies and latencies across channels is necessary to produce realistic TGM patterns. Having only frequency or latency diversity produces unrealistic geometric patterns, while combining both produces patterns matching real data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is part of the reviewers' summary that the model identifies the need for 'an oscillatory component that spans multiple channels, frequencies, and latencies of response.' The evidence is described as 'convincing' and no concerns are raised about these specific requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The broadening of decoding accuracy over time in TGMs can be reproduced by adding a slowly progressing non-oscillatory response. The vertical and horizontal bars of high accuracy emerge from phase coupling between oscillatory and slower components, with in-phase relations producing the most realistic patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are part of the overall model validation that reviewers describe as having 'convincing' evidence. The cross-frequency coupling mechanism is explicitly mentioned in reviewer summaries as a key finding, indicating acceptance of these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Amplitude modulations are not necessary for realistic TGM patterns but can enhance existing patterns. The main TGM features are present regardless of amplitude effect size, though more prominent with higher modulations. Amplitude effects alone without phase effects cannot produce significant decoding accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about these findings, which are presented as part of the model's systematic exploration of different signal components. The evidence is implicitly accepted as part of the 'convincing' overall demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Standard decoding analysis can only differentiate between different signal generation mechanisms (phase resetting vs. additive oscillations) to a limited extent, as they produce similar TGM patterns. Alternative analysis methods may be needed to disentangle these sources of variation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This limitation is acknowledged by reviewers who note 'there is no unambiguous mapping between neurobiological mechanisms and different signal generators, making it hard to draw firm conclusions about neural underpinnings.' This represents acceptance of the finding while highlighting its implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C94",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model's different effects may relate to distinct neurobiological mechanisms, and the model can potentially be used to gain insight into mechanisms underlying specific tasks. Hyperparameters can be optimized to specific datasets using methods like Bayesian optimization to identify neurobiologically interpretable features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concern about the neurobiological interpretation, stating 'there is no unambiguous mapping between neurobiological mechanisms and different signal generators, making it hard to draw firm conclusions about neural underpinnings.' One reviewer requests 'more profound explanation of the conclusions that can be drawn' and 'which added value the model may have in understanding the nature of underlaying brain mechanism (rather than a mere technical characterization of sensor data).'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C136",
+      "C143"
+    ],
+    "result": "The demonstrations are intentionally qualitative and not tailored to specific datasets, as TGMs vary across subjects and experiments. Model parameters were not optimized to match fine details of real-data TGMs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express concern about this approach, noting 'the power of the model is illustrated for only one specific set of parameters, added in a stepwise manner and the comparison to on specific empirical TGM, assumed to be prototypical; And that this comparison remains descriptive.' One reviewer questions 'could a different selection of parameters lead to similar results and is there TGM data which matches these settings less well.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "At the individual trial level, responses are highly variable due to factors like phase noise and probabilistic activations. This variability reflects brain degeneracy and plasticity, though how this translates to stable perceptual experience remains an open question.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the paper 'considers the complexity of neural data' and the model's ability to capture trial-level variability. The stochastic nature of responses is implicitly accepted as part of the model's realistic representation of brain activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The model makes several simplifications: the list of effects is not exhaustive, sources are modeled as independent with correlations only through induced effects, and each channel has one endogenous frequency. Alternative configurations (coupled oscillators, correlated noise, multiple frequencies, non-linear oscillations) are possible extensions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these acknowledged limitations. The transparency about simplifications is consistent with reviewers' overall assessment that the work is 'valuable' while noting areas for future development.",
+    "result_type": "MINOR"
+  }
+]

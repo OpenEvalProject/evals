@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Co-functional proteins exhibit evolutionary rate covariation (ERC), which measures correlation in relative evolutionary rates (RER) across phylogenetic branches. Protein pairs with high ERC values are often functionally related, participating in shared cellular functions such as metabolic pathways, meiosis, or protein complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C9-C12 establish the foundational concept of ERC as a measure of evolutionary rate correlation among co-functional proteins. These claims are well-supported by citations to established literature and represent accepted knowledge in the field, providing the conceptual framework for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The relative contributions of physical interaction (compensatory coevolution at interfaces) versus nonphysical forces (shared selective pressures) to ERC remain unclear, with previous studies reaching variable and sometimes contradictory conclusions due to differing methodologies and sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C13-C15, and C20-C25 accurately summarize the state of prior knowledge and identify the research gap. The characterization of previous literature as contradictory is supported by appropriate citations, establishing the motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study analyzed 343 yeast species (332 Saccharomycotina plus 11 outgroups) with 12,552 orthologous genes, focusing on 17 protein complexes with well-defined domain boundaries and annotated physical interactions to test whether physically interacting domains have higher ERC than non-interacting domains within the same complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C31-C35, and C49-C51 describe the study design and dataset. The methodology is clearly described with appropriate sample sizes and selection criteria. The experimental design of comparing domains within complexes to control for functional constraints is sound and addresses the research question effectively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "ERC was calculated using Pearson correlation of RERs between gene trees, with Fisher transformation applied to normalize for the number of shared branches and Winsorization to reduce false positives from outliers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C93-C97 describe the computational methodology for ERC calculation. The statistical procedures (Fisher transformation, Winsorization) are appropriate and well-justified for the analysis. The methods are clearly described with proper citations and rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Both protein complexes and pathways showed elevated ERC values compared to random protein sets (346/617 complexes and 109/125 pathways with p<0.05), with complexes having slightly higher median ERC (5.366) than pathways (4.597). However, high ERC scores were observed for both physically interacting pairs (e.g., TAF5-TAF6 in SLIK complex) and non-interacting pairs (e.g., TUB3-TPM1 in motor protein pathway), making it difficult to attribute ERC signal specifically to physical interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 present the initial comparative analysis between complexes and pathways. The statistical tests are appropriate (permutation tests with p<0.05), sample sizes are adequate, and the examples effectively illustrate the difficulty in distinguishing physical from functional contributions to ERC. The data support the conclusion that co-functionality confounds interpretation of physical interaction contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Among 17 protein complexes analyzed at the domain level, 12 had ROC-AUC > 0.5 (binomial test p=0.0245) and 4 had significantly higher rankings for physically interacting domains (Mann-Whitney U test, \u03b1=0.05; binomial test p=0.0012), indicating a statistically significant but modest tendency for physically interacting domains to have higher ERC than non-interacting domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 present the ROC analysis results with appropriate statistical tests. The binomial tests correctly assess whether the observed proportions exceed random expectation. The use of ROC-AUC and Mann-Whitney U tests is appropriate for ranking analysis. The statistical significance is properly reported, though the effect sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "A global permutation test comparing the average ROC-AUC (0.596) across all 17 complexes to a permuted null distribution yielded p=0.08, failing to reach statistical significance and suggesting that the global signal for physical coevolution contribution to ERC is weak and can be masked by complexes showing no evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 present a critical global test that tempers the individual complex findings. The permutation test is appropriately designed and executed. The p-value of 0.08 correctly fails to reach conventional significance thresholds (0.05), and the interpretation that this indicates a weak global signal is reasonable. This result provides important context for the more positive findings from individual tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Analysis of proportional ranks for physically interacting domain pairs within individual protein pairs showed wide variation (spanning 0-1 range), with only 2 complexes showing significantly high proportional rank at p<0.01 (CUL8-MMS1-MMS22-CTF4 E3 ubiquitin ligase and exportin) and 3 additional at p<0.05 (MCM, ORC, ESCRT-I), leaving over two-thirds of complexes with no significant contribution from physical interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 present the proportional rank analysis with appropriate permutation tests. The finding that only 5/17 complexes show significant effects at p<0.05 is clearly reported. The wide variation in proportional ranks (0-1 range) is well-documented in Figure 5. The statistical approach is sound and the interpretation that most complexes lack significant physical interaction signal is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C29",
+      "C30",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study concludes there is no generalizable relationship between physical interaction and high ERC, though a few complexes show elevated ERC for physical interactions. Physical coevolution contributes a detectable but weak signal to ERC that is inconsistent across complexes and insufficient for confidently predicting physical interactions, making ERC unsuitable for providing actionable hypotheses about physically interacting domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C29-C30, and C66-C68, C71-C76 present the main conclusions. These are well-supported by the multiple lines of evidence: (1) 12/17 complexes with ROC-AUC>0.5 shows a modest excess, (2) global permutation test p=0.08 fails significance, (3) only 5/17 complexes significant in proportional rank test, (4) wide variation within complexes. The conclusion that physical coevolution is 'weak but present' is appropriately nuanced and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors hypothesize that the stronger ERC signal comes from selective pressures on proteins as a whole and maintenance of general function, with nonphysical forces (selective constraint variation, essentiality, expression level, codon adaptation, network connectivity) being the primary contributors to ERC, as evidenced by elevated ERC in non-physically interacting pathway proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C89-C92 present a hypothesis about the primary drivers of ERC. While the hypothesis is reasonable and supported by the observation that pathways without physical interactions show elevated ERC (C92), this remains speculative. The study demonstrates that physical interactions contribute weakly but does not directly test the relative contributions of the various nonphysical forces listed. Additional experiments would be needed to validate this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The current study's findings are compared to previous work: Hakes et al. (2007) found no evidence for physical interface contribution, Jothi et al. (2006) concluded strong predictive signal (though limited to 3 complexes), and Kann et al. (2009) reached similar conclusions to the current study. The current study concludes the contribution is detectable but weak and limited to a minority of complexes, potentially explaining the variability in previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C88 provide appropriate context by comparing to prior work. The citations appear accurate based on the descriptions provided. The reanalysis of Jothi et al.'s complexes (C81-C82) provides direct validation, finding similar rankings but only 1/3 reaching significance, which the authors attribute to statistical power issues. The synthesis that inconsistent effects across complexes may explain variable prior conclusions (C87) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The study's approach of using hundreds of species and analyzing entire domains rather than just interface residues provides increased statistical power and captures structural changes that could impact binding beyond just the binding residues themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe methodological advantages. The use of 343 species does provide substantially more power than previous studies (12-93 species in prior work). The rationale for using entire domains (C70) is reasonable, though this remains a proposal rather than a demonstrated advantage. The claim is appropriately framed as a methodological choice with theoretical justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "SMC5 and SMC6, which form a complex with shared function in chromatin organization, exhibit similar evolutionary rate variation across yeast phylogeny with a highly elevated Fisher transformed correlation coefficient (ftERC = 24.944), far above the expectation of zero for non-correlated pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 present a specific example (SMC5-SMC6) to illustrate the ERC concept. The ftERC value of 24.944 is clearly stated and shown in Figure 1A. The interpretation that this is highly elevated compared to the null expectation of zero is appropriate given the Fisher transformation methodology. This serves as an effective illustrative example.",
+    "result_type": "MINOR"
+  }
+]

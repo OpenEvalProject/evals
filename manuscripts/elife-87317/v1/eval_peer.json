@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C24",
+      "C26",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors developed a novel movement-based prosthesis control system that uses an ANN to predict distal joint angles from proximal shoulder movements and target information. The system was designed to be intuitive and usable without prior training, incorporating several methodological improvements over previous work including expanded workspace, use of entire movement trajectories, morphology-specific tuning, and applicability to people with limb loss.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers across all reviews acknowledged the novelty and elegance of the approach. The editor stated 'the provided evidence convincingly demonstrates the approach's feasibility,' and Reviewer 1 noted 'the strength of this paper is that it proposes a method of control for people with transhumeral limb loss which does not rely upon additional surgical intervention.' Reviewer 3 highlighted that 'the approach worked well without requiring user calibration' as 'the most interesting aspect of the work.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In Experiment 1, 10 intact-limb participants achieved median success rates of 99.7% with the Own ANN control and 100% with natural movements, with movement times of 1.25s vs 1.17s (not significantly different, p=0.378) and comparable shoulder volumes (0.22 vs 0.18 dm\u00b3, p=0.058).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these specific quantitative results from Exp1. However, Reviewer 1 raised concerns about whether 'movement times in the virtual space would present a very different distribution to natural movements, while the mean values could be similar,' requesting 'individual participant data showing distributions of movement times.' This suggests acceptance of the reported values but questions about their interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In Experiment 2, 12 participants (including left-handed) tested both Generic and Own ANN models, achieving success rates >99% in all conditions with movement times below 1.4s (no significant difference, p=0.181). The Generic model showed moderately increased shoulder volume (0.43 dm\u00b3) compared to natural movements (0.14 dm\u00b3, p=0.025), but volumes never exceeded 1 liter.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these results without direct challenge. Reviewer 2 expressed intrigue about 'how the Generic ANN model has been trained' and suggested alternative approaches like 'few shot calibration methods,' but did not dispute the reported performance. The moderate increase in compensatory movements was acknowledged by the authors and appears accepted by reviewers as reasonable given the wide workspace.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C116"
+    ],
+    "result": "In Experiment 3, seven participants with transhumeral limb loss achieved success rates >99% without prior training using the Generic ANN, with movement times in the second block (1.16s) significantly faster than their valid arm (1.40s, p=0.014). Participants provided enthusiastic qualitative feedback about the intuitiveness of the control.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged this as a strength. Reviewer 3 noted 'the work was also tested with a reasonable number of subjects, including those with limb-loss' and that 'the approach worked well without requiring user calibration.' The qualitative feedback was not challenged, though Reviewer 2 questioned whether 'no familiarisation would be needed' if the method is truly 'intuitive,' suggesting some uncertainty about the interpretation of 'no training.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A physical proof-of-concept demonstrated that 15 participants (including 3 with limb differences) could reach and grasp real objects with a robotic arm using the movement-based control. Success rates were 93% with the Generic control vs 100% with natural control (p=0.0003), with similar movement times (6.08s vs 5.98s, p=0.7026).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the physical demonstration, they raised significant concerns about its limitations. Reviewer 1 noted 'the teleoperation proof of concept of movement based control does not seem to feature a similar range of object distance from the user as the virtual environment' and emphasized that 'real world prosthesis control introduces numerous challenges which do not exist in virtual spaces or in teleoperation robotics.' Reviewer 3 pointed out the device was tested 'without it being physically attached to the user' and that 'the weight of a device attached to a user will impact the shoulder movements.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C40",
+      "C41",
+      "C50",
+      "C51",
+      "C62",
+      "C63",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Movement times with the control system were comparable to natural movements across all experiments, with typical times around 1.3s in virtual reality and 6s in the physical proof-of-concept.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned the interpretation of movement time results. Reviewer 1 raised concerns about whether the ANN's instantaneous predictions might artificially reduce movement times: 'at the start of each trial period, either pick or place, the ANN appears to have already selected the position of the five joints it controls, leaving the user to position the upper arm such that the end effector reaches the target.' They suggested 'individual participant data showing distributions of movement times' would better support the claims. The editor noted the approach demonstrates 'feasibility' but requires 'additional improvements' for 'practical requirements.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors acknowledge limitations including the reliance on target information as input, the need for natural trajectories rather than instantaneous jumps, and the need to generalize to multiple tasks and more constrained reaches. They argue that advances in computer vision and AI make target detection feasible.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers emphasized these limitations as significant concerns. Reviewer 1 stated 'it can be argued that a great many problems in upper limb prosthesis control can be solved given precise knowledge of the object to be grasped, its relative position in 3D space and its orientation' and that 'scaling this approach to work robustly in a real world environment will necessitate solving a number of challenges in machine learning and in particular computer vision which are not trivial in nature.' Reviewer 3 noted 'the reliance on target position is a complicating factor in deploying this technology.' The editor concluded 'additional improvements are needed for this proof-of-concept neuro-model to fulfil practical requirements.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C89"
+    ],
+    "result": "The workspace was expanded by generating 300 'plausible' targets within full range of motion, then using a self-organizing network to identify 200 'possible' targets that represent arm postures actually produced by participants during natural movements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this methodological approach. Reviewer 3 noted 'the authors did a nice job spanning the workspace,' though they added concerns about whether 'the unconstrained nature of reaches could make restoring additional activities problematic.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The control requires actuated wrist joints (flexion-extension and radial-ulnar deviation) which are not available in most commercial prostheses, though exceptions like the LUKE/DEKA and RIC arms exist.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged this hardware limitation. Reviewer 2 noted 'the availability of prosthetic hardware that offers such functionality' as one of the 'limitations/challenges that the approach suffers from.' This limitation was accepted as a practical constraint rather than a flaw in the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors propose that their control is complementary to other approaches, suitable for arm positioning but not fine hand control, and could be combined with invasive neural interfaces, osseointegration, semi-autonomous grasp control, or used for phantom limb pain management in VR.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these as reasonable future directions and applications. Reviewer 2 suggested the authors 'could also briefly discuss how they foresee the method could be expanded to enable a grasp command beyond the proximity between the end-point and the target,' indicating interest in these complementary approaches. Reviewer 3 noted the approach 'could be used to help complete meaningful functional activities of daily living that require semi-consistent movements, such as feeding and grooming.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study included appropriate participant demographics across experiments (29 total participants including 7 with limb loss) with proper ethical approvals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the participant demographics or ethical compliance. The sample sizes were implicitly accepted as adequate, with Reviewer 3 noting 'the work was also tested with a reasonable number of subjects, including those with limb-loss.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The methods describe the virtual arm model, ANN architecture (two 256-neuron layers, dropout, 64-neuron layer), training parameters (30 epochs for Own ANN, 10 for Generic ANN with specific learning rates), task constraints (2cm/5\u00b0 hard, 4cm/10\u00b0 relaxed), and data filtering (removing 3.8% of trials with motion capture errors).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these methodological details. Reviewer 2 expressed interest in understanding 'the relative importance of the target information versus body posture in the estimation of the arm position' and how to 'distinguish' this 'beyond looking at the weights in the neural network,' but did not dispute the methods themselves.",
+    "result_type": "MINOR"
+  }
+]

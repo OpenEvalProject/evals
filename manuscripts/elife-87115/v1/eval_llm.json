@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Widespread eccDNA formation occurs in human sperms and across mouse spermatogenesis stages (SPA, RST, EST, sperm), with sperm cells showing significantly higher eccDNA numbers (97,372 on average) compared to other stages. However, reproducibility between biological replicates was low (~2.4%), and detection appeared unsaturated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C36, C40 are directly supported by Circle-seq data across multiple biological replicates (Figure 1A-B). The quantitative differences between cell types (C54-C57) are statistically significant. Low reproducibility (C41) and unsaturation (C42) are acknowledged limitations but don't invalidate the core finding of widespread eccDNA presence. The within-group similarity being marginally higher than between-group (C43) provides some validation despite low absolute reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C61",
+      "C62",
+      "C63",
+      "C108",
+      "C109"
+    ],
+    "result": "EccDNAs show characteristic size distributions with peaks at ~180 bp and ~360 bp, corresponding to mono- and di-nucleosomal fragments. Sperm eccDNAs uniquely display multimodal distribution with pronounced ~180 bp periodicity, while other spermatogenic cells show unimodal distributions centered at ~180 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The size distribution data (C45, C61) are clearly shown in Figure 1C and Figure 1\u2014figure supplement 3. The interpretation linking ~180 bp fragments to nucleosome core plus linker regions (C62-C63) is well-supported by established nucleosome biology and citation to apoptotic cell literature. The human sperm data (C108-C109) in Figure 5A-C corroborate these findings across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78"
+    ],
+    "result": "Germline eccDNAs are derived from oligonucleosomal DNA fragmentation and are directly associated with specific histone variants and modifications. EccDNAs show higher GC content, elevated nucleosome occupancy probability, and enrichment with H3, H2A.Z, TH2A, TH2B variants and H3K27ac, H3K4me1, H3K9ac, H3K27me3 modifications, but depletion of H3.3 and lack of enrichment for H3K4me3, H3K36me3, H3K9me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by computational predictions and GC content analysis (Figure 2A-B). The ChIP-seq integration (C69-C75) provides direct experimental evidence linking eccDNAs to specific histone marks, though only 7.46% of eccDNAs directly overlap ChIP-seq peaks. The meta-gene analysis strengthens the association. The inference that eccDNAs originate from nucleosome-protected fragments (C3) is well-supported by converging lines of evidence: size periodicity, GC content, nucleosome occupancy predictions, and histone ChIP-seq associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "Small-sized eccDNAs (<3 kb) are preferentially associated with euchromatin (H3K27ac-marked regions) and genic regions, while large-sized eccDNAs (\u22653 kb) are enriched at heterochromatin (H3K9me3-marked regions) and non-genic regions. Large eccDNAs show weak negative correlation with gene density and Alu elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C81-C83 are directly supported by ChIP-seq enrichment analysis (Figure 3A-B). The correlation analyses (C85) provide quantitative support. The mechanistic interpretation (C86) that heterochromatin is too condensed for small eccDNA formation is speculative but reasonable given the data. The 3 kb cutoff for size classification is justified by reconciling discrepancies with prior literature (Henriksen et al., 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Di-nucleosomal (~360 bp) eccDNAs, but not mono-nucleosomal (~180 bp) eccDNAs, show periodic distribution of nucleosomes and preferentially originate from well-positioned nucleosome arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by ChIP-seq signal patterns in Figure 2E showing periodic H3K27me3 distribution for ~360 bp but not ~180 bp eccDNAs. The inference (C80) that di-nucleosomal eccDNAs originate from well-positioned arrays is logical given the observed periodicity. However, the mechanism underlying this difference could benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C110",
+      "C111"
+    ],
+    "result": "Sperm eccDNAs are barely associated with de novo germline deletions or meiotic recombination hotspots. Only <0.15% of mouse eccDNAs and <0.7% of human eccDNAs have both breakpoints in recombination hotspots, and minimal overlap exists with known genomic deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 and C110-C111 are supported by systematic comparison with recombination hotspot maps and structural variation databases (Figure 4A-B, Figure 5D-E). The quantitative analysis shows very low overlap rates. This effectively refutes the hypothesis that meiotic recombination is a major source of germline eccDNAs. The conclusion (C95) that eccDNAs are not associated with heritable deletions is well-supported, though the caveat (C124-C125) that some eccDNAs in viable sperm might still contribute is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Meiosis does not significantly contribute to eccDNA biogenesis. SPA cells (undergoing meiosis) do not show elevated eccDNA numbers. The observed correlations between eccDNA density and meiotic recombination rates at the chromosomal level are indirect reflections of chromatin state preferences rather than mechanistic links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by the observation that SPA cells don't have more eccDNAs than RST cells (Figure 1B), despite undergoing meiosis. The reconciliation of conflicting literature (C120-C121) by considering eccDNA size and chromatin preferences is logical and supported by data in Figure 3\u2014figure supplement 1. The interpretation (C123) that chromosomal-level correlations reflect chromatin preferences rather than direct mechanistic links is a reasonable inference that resolves apparent contradictions in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Microhomology-mediated end joining (MMEJ) is the major eccDNA biogenesis mechanism. More than one-third of eccDNAs have microhomologous sequences (mostly <5 bp) at breakpoints, with higher GC content than controls. Longer eccDNAs show longer microhomologies, and imperfect homologies are detected through sequence motif analysis. This mechanism is conserved between human and mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by precise breakpoint analysis enabled by the authors' novel method (Figure 4D-E). The correlation between eccDNA size and microhomology length (C99-C101, C113) provides strong mechanistic support. The motif analysis for eccDNAs lacking perfect matches (C102) extends the evidence. The proposed mechanism (C103) is reasonable and supported by prior literature on DNA ligase III. Conservation across species (C112-C114) strengthens the conclusion. However, the authors acknowledge (C118-C119) that their method may favor detection of small eccDNAs with microhomologies, which could bias the estimated prevalence of MMEJ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C129"
+    ],
+    "result": "Germline eccDNAs are likely products of cell death during spermatogenesis. The association with oligonucleosomal DNA fragmentation is a typical feature of cell death, and eccDNA features match those from apoptotic DNA fragmentation. The number of sperm eccDNAs may be highly associated with cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 correctly identifies oligonucleosomal fragmentation as a cell death hallmark. The literature support (C88) for spontaneous germ cell death during spermatogenesis is appropriate. The comparison with apoptotic eccDNAs (C91, Figure 4\u2014figure supplement 1) provides strong supporting evidence. However, the specific claim about sperm apoptosis (C89-C90) acknowledges ongoing debate in the field. The inference (C129) about association with cell death is reasonable but remains somewhat speculative without direct markers of apoptosis in the same samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The eccDNA biogenesis mechanism (microhomology-directed ligation of oligonucleosomal fragments in apoptotic cells) is conserved across different mouse somatic tissues, as demonstrated by analysis of public data from brain, heart, kidney, liver, lung, muscle, spleen, testis, and thymus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by reanalysis of published data (Dillon et al., 2015) shown in Figure 5\u2014figure supplement 1A-B. The same signatures (nucleosome occupancy, microhomology prevalence, size distribution) are observed across tissues. The conclusion (C107) of conservation is well-supported, though the analysis relies on public data and the authors' detection method, which may have systematic biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "A novel bioinformatics method was developed that achieves 97.4% accuracy in eccDNA breakpoint assignment, substantially outperforming existing methods (\u226415% accuracy). The method correctly handles microhomologous sequences that interfere with precise breakpoint detection in other approaches, with at least 60% of eccDNAs with homologous sequences being misannotated by existing tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 are supported by systematic benchmarking using simulated data (Figure 4\u2014figure supplement 2C-D) and real data comparisons (Figure 4\u2014figure supplement 2A, F). The method's superior performance is clearly demonstrated. Claim C28 correctly identifies a widespread problem in the field. The method description in Materials and Methods and Figure 4\u2014figure supplement 2B provides sufficient detail. However, the method's reliance on uniquely mapped reads (C119) may introduce biases favoring small eccDNAs with microhomologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C130"
+    ],
+    "result": "Germline eccDNAs provide a potential new way for quality assessment of human sperms, as sperm eccDNA levels may serve as a clinical biomarker for sperm quality based on their association with cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C4 and C130 are speculative and not directly tested in this study. While the association between eccDNAs and cell death markers is established (C87, C91), no validation is provided showing that eccDNA levels correlate with established sperm quality metrics or clinical outcomes. This would require analysis of sperm samples with known quality parameters and clinical validation studies, which are not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "EccDNAs are enriched at gene-rich regions (especially 5'UTR), positively correlated with SINE element density, negatively correlated with LINE element density, and show strong association with DNA transposons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by enrichment analysis (Figure 1E-F) and quantitative correlations (Figure 1\u2014figure supplement 1F-G). The interpretation linking SINE/LINE associations to A/B compartments (C51) is supported by appropriate citation. The DNA transposon association (C52) is an interesting observation, though the speculation about circularization vs. reintegration (C53) requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Sperm eccDNA species have higher complexity than other cell types, potentially explained by higher starting cell numbers. Any oligonucleosomal fragments with microhomologous sequences at ends might form eccDNAs, suggesting extremely large theoretical eccDNA diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is an inference from higher detected eccDNA numbers despite equal input amounts. However, C60 and C117 acknowledge that higher starting cell numbers might explain this observation, making it unclear whether sperm cells intrinsically produce more diverse eccDNAs or if this is a methodological artifact. Claims C115-C116 are speculative extrapolations from the MMEJ mechanism. The low reproducibility between replicates (C41) and unsaturated detection (C42) complicate interpretation of eccDNA diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Different modes of eccDNA size distribution between sperm and other spermatogenic cells might be due to distinct nucleosome compositions and structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is speculative and not directly tested. While the observation of different size distribution modes is clear (C61), the mechanistic explanation requires additional experiments examining nucleosome composition differences between cell types. The known histone-to-protamine transition in sperm (C32, C65) provides biological plausibility but not direct evidence for this specific claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "DNA transposons might get circularized rather than or in addition to being reintegrated into the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C53 is purely speculative based on the observed association between eccDNAs and DNA transposons (C52). No experimental evidence is provided to distinguish between circularization and reintegration, or to demonstrate that DNA transposons are actively transposing in these cells. This interesting hypothesis requires dedicated experimental investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "EccDNAs might have various biological functions including stimulating innate immune responses, serving as extracellular vesicles encoding small RNAs, and functioning as biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C125-C128 are speculative future directions based on citations to other work. None of these potential functions are investigated in this study. While the citations provide some support for these possibilities in other contexts, no data are presented linking germline eccDNAs to these specific functions.",
+    "result_type": "MINOR"
+  }
+]

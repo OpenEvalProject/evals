@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study used fMRI to identify individual auditory regions and optimized tACS electrode montages for each participant. Three montages (ring-electrode, standard, and individualized) were compared using simulated electric field properties. The ring-electrode montage was most focal but had the weakest field strength and poorest spatial targeting. The standard montage had the strongest field but was least focal. The individualized montage showed intermediate properties with better focality than standard but weaker field strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide comprehensive statistical comparisons of simulated E-field properties across three montages (N=39 participants). All comparisons include appropriate statistical tests with Bonferroni correction and are supported by Figure 2. The results demonstrate clear trade-offs between field strength, focality, and spatial targeting across montages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "FM-stimulus modulation of gap detection behavior was reliable across sessions. FM-amplitude was significantly above chance for most participants in both sessions (33/37 in S1, 27/37 in S2), FM-phase was clustered across participants in both sessions, and both measures showed no significant differences between sessions. FM-amplitude correlated significantly between sessions (r=0.516, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 demonstrate robust behavioral entrainment to FM stimuli with appropriate statistical tests (permutation tests, Rayleigh tests, t-tests, correlations). The results replicate prior findings from the authors and establish baseline reliability necessary for evaluating tACS effects. Sample size (N=37) is adequate for the reported effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C67"
+    ],
+    "result": "tACS did not shift the optimal FM-stimulus phase for gap detection. Optimal FM-phase remained clustered around the same angle across all tACS lag conditions in both sessions. Model comparison showed that FM-stimulus phase alone best predicted gap detection performance, with no added value from including tACS phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C67 provide converging evidence from circular statistics (V-tests) and model comparison (AICc) that tACS did not overwrite neural entrainment to the FM stimulus. The negative result is well-supported and appropriately interpreted as indicating tACS cannot override strong sensory entrainment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C68"
+    ],
+    "result": "tACS modulated the amplitude of FM-stimulus driven behavioral entrainment in a phase-lag specific manner. FM-amplitude was significantly higher at optimal tACS lags (tACS+) compared to both sham and anti-phase lags (tACS-), and significantly lower at tACS(-) compared to sham. This effect was significant (F(2,70)=26.202, p=3.203e-09) and validated against surrogate distributions. No effects of session or montage were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C68 demonstrate robust tACS effects using appropriate statistical methods (rmANOVA, post-hoc tests with Bonferroni correction, permutation testing). The bidirectional modulation (enhancement and suppression) relative to sham is particularly compelling. The lack of montage effect is notable but well-documented. Sample size (N=37) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C69"
+    ],
+    "result": "Neither the optimal tACS lag (tACS-phase) nor the magnitude of tACS effects (tACS-amplitude) were reliable across sessions. tACS-amplitude showed no significant correlation between sessions (r=-0.162, p=0.337). tACS-phase showed high inter-individual variability with no clustering (Rayleigh test: S1 Z=0.931, p=0.397; S2 Z=0.133, p=0.877) and no correlation between sessions (Rho=0.237, p=0.137).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 and C69 provide comprehensive evidence for lack of test-retest reliability using appropriate circular and linear statistics. The contrast with reliable FM-phase (C51) strengthens the interpretation. This is a critical negative finding with important implications for tACS experimental design. Statistical tests are appropriate for the data types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "When data were pooled across sessions, tACS-amplitude was significantly smaller than when calculated separately per session and averaged (t(36)=-2.452, p=0.019). This suggests tACS effect cancellation due to inter-session variability in optimal phase, rather than insufficient trial numbers for phase estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide a clever analysis demonstrating that unreliability is not due to insufficient statistical power but reflects genuine inter-session variability. The logic is sound: if low trial numbers were the issue, pooling would improve estimates, but instead it worsens them due to phase cancellation. The statistical test is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Inter-session differences in tACS-amplitude were predicted by the number of days between sessions (\u03b2=-0.383, p=0.016) and time-of-day differences (\u03b2=0.350, p=0.026), with the model explaining 25.7% of variance. However, no significant predictors were found for inter-session variability in tACS-phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 report results from model comparison using appropriate methods (AICc, likelihood ratio test). The finding that temporal factors partially explain amplitude but not phase variability is interesting and well-supported. However, the R\u00b2=0.257 indicates substantial unexplained variance, appropriately acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C70",
+      "C5",
+      "C89"
+    ],
+    "result": "Inter-individual variability in tACS effects was best explained by interactions between normal E-field strength and both field focality (\u03b2=0.735, p=0.003) and distance to target ROI (\u03b2=0.548, p=0.009). The model explained 37.8% of variance. High field strength was beneficial only when the field was focal and accurately targeted; otherwise, high field strength was detrimental.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C70, C5, and C89 present a sophisticated analysis showing that E-field strength alone is insufficient\u2014spatial properties matter critically. The interaction effects are statistically significant and visualized clearly in Figure 6. The interpretation that off-target stimulation is detrimental is logical. Sample size (N=34 with fMRI) is adequate for the model complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C6",
+      "C95"
+    ],
+    "result": "The individualized montage showed suggestive evidence of reduced inter-individual variability compared to the standard montage, but this was only statistically significant for one specific condition (tACS(-) in session 2, F(20,15)=4.31, p=0.023). Overall variance comparison was not significant (F(20,15)=1.441, p=0.475). The authors conclude more evidence is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66, C6, and C95 appropriately acknowledge limited evidence for the benefit of individualized montages. The single significant variance test out of multiple comparisons is weak evidence, and the authors correctly note the study was not designed to test variance differences. The tentative conclusion and call for more evidence is appropriate given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors hypothesize that tACS failed to shift FM-phase because the 67% modulation depth created entrainment too strong for tACS to overwrite. They cite evidence that tACS is most effective when endogenous oscillations are not too strong, and predict tACS might shift phase with weaker stimuli or in populations with weaker auditory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 present reasonable hypotheses supported by citations to prior work (C74, C75), but these remain speculative interpretations of the negative result. The predictions (C76) are testable but not tested in this study. The reasoning is logical but the claims are explicitly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The authors infer that the phase-specific tACS modulation of FM-driven behavior suggests neural entrainment is causally linked to auditory perception, and predict that enhancing entrainment with tACS should improve cocktail party listening or musical prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 make reasonable inferences from the data but go beyond what was directly tested. The causal claim (C77) is supported by the phase-specific effects but the study did not directly measure neural entrainment during tACS. The predictions (C78) are logical extensions but remain untested. These are appropriately framed as inferences and predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study included 42 healthy participants (18 female, mean age 27.3\u00b15.8 years), with 39 completing two tACS sessions separated by 3-301 days (median 7 days). Participants detected silent gaps in 20-second frequency-modulated stimuli (2 Hz modulation, 67% depth, 1000-1400 Hz center frequency) while receiving 2 Hz tACS targeting auditory regions. The procedure was ethically approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C97-C105 provide clear methodological details about participants, stimuli, and procedures. The large inter-session interval variability (3-301 days) due to COVID-19 lockdowns is appropriately documented. Sample size is adequate for the within-subject design. Ethical approval is documented. Methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2566 @@
+{
+  "submission": {
+    "id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T19:03:48.945991Z",
+    "updated_at": "2025-11-20T19:03:48.945991Z"
+  },
+  "content": [
+    {
+      "id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "content_type": "manuscript",
+      "content_text": "# Absence of electron-transfer-associated changes in the time-dependent X-ray free-electron laser structures of the photosynthetic reaction center\n\n## Authors\n\n- Gai Nishikawa<sup>1</sup>\n- Yu Sugo<sup>1</sup>\n- Keisuke Saito<sup>1</sup> ([ORCID: 0000-0002-2293-9743](https://orcid.org/0000-0002-2293-9743))\n- Hiroshi Ishikita<sup>1</sup> ([ORCID: 0000-0002-5849-8150](https://orcid.org/0000-0002-5849-8150)) \u2020\n\n### Affiliations\n\n1. Department of Applied Chemistry, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n2. Research Center for Advanced Science and Technology, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))\n\n\u2020 Corresponding author\n\n## Abstract\n\nUsing the X-ray free-electron laser (XFEL) structures of the photosynthetic reaction center from Blastochloris viridis that show light-induced time-dependent structural changes (Dods et al., (2021) Nature 589, 310\u2013314), we investigated time-dependent changes in the energetics of the electron-transfer pathway, considering the entire protein environment of the protein structures and titrating the redox-active sites in the presence of all fully equilibrated titratable residues. In the dark and charge separation intermediate structures, the calculated redox potential (Em) values for the accessory bacteriochlorophyll and bacteriopheophytin in the electron-transfer-active branch (BL and HL) are higher than those in the electron-transfer-inactive branch (BM and HM). However, the stabilization of the charge-separated [PLPM]\u2022+HL\u2022\u2013 state owing to protein reorganization is not clearly observed in the Em(HL) values in the charge-separated 5 ps ([PLPM]\u2022+HL\u2022\u2013 state) structure. Furthermore, the expected chlorin ring deformation upon formation of HL\u2022\u2013 (saddling mode) is absent in the HL geometry of the original 5 ps structure. These findings suggest that there is no clear link between the time-dependent structural changes and the electron-transfer events in the XFEL structures.\n\n## Introduction\n\nPhotosynthetic reaction centers from purple bacteria (PbRC) are heterodimeric reaction centers, which are formed by the protein subunits L and M (Figure 1). In PbRC from Blastochloris viridis, the electronic excitation of the bacteriochlorophyll b (BChlb) pair, [PLPM], leads to electron transfer to accessory BChlb, BL, followed by electron transfer via bacteriopheophytin b (BPheob), HL, to menaquinone, QA, along the electron-transfer active L-branch (A-branch) (Deisenhofer et al., 1985). Electron transfer further proceeds from QA to ubiquinone, QB, which is coupled with proton transfer via charged and polar residues in the QB binding region (Rabenstein et al., 1998). Although the counterpart M-branch (B-branch) is essentially electron-transfer inactive, mutations of the Phe-L181/Tyr-M208 pair to tyrosine/phenylalanine lead to an increase in the yield of [PLPM]\u2022+HM\u2022\u2013 formation (~30%), which suggests that these residues are responsible for the energetic asymmetry in the electron-transfer branches (e.g., Kirmaier et al., 2003). The anionic states BL\u2022\u2013, HL\u2022\u2013, and QA\u2022\u2013 form in ~3.5 ps, ~5 ps, and ~200 ps upon the formation of the electronically excited [PLPM]* state, respectively (Holzapfel et al., 1990). The anionic state formation induces not only reoriganization of the protein environment (Marcus and Sutin, 1985) but also out-of-plane distortion of the chlorin ring (Saito et al., 2012). Two distinct conformations of HL\u2022\u2013 were reported in spectroscopic studies of PbRC from Rhodobacter sphaeroides (M\u00fch et al., 1998).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig1-v1.jpg)\n\n**Figure 1.:** The PbRC is composed of the L (red), M (blue), H (gold), and C (yellow) subunits. [PLPM]: BChlb pair; BL and BM: accessory BChlb; HL and HM: BPheob; QA: primary quinone (menaquinone); Fe: non-heme Fe complex.\n\nRecently, using the X-ray free-electron laser (XFEL), light-induced electron density changes and structural changes of PbRC were analyzed at 1 ps, 5 ps, 20 ps, 300 ps, and 8 \u03bcs upon the electronic excitation of [PLPM] at 960 nm (Dods et al., 2021): the 1 ps XFEL structure represents the [PLPM]* state, the 5 ps and 20 ps XFEL structures represent the charge-separated [PLPM]\u2022+HL\u2022\u2013 state, and the 300 ps and 8 \u03bcs XFEL structures represent the charge-separated [PLPM]\u2022+QA\u2022\u2013 state. According to Dods et al., 2021, these XFEL structures revealed how the charge separation process was stabilized by protein conformational dynamics. However, the conclusions drawn from these XFEL structures are based on data with limited resolution. Specifically, eight out of nine XFEL structures have a relatively low resolution of 2.8 \u00c5 (atomic coordinates from PDB codes: 5O4C, 6ZI4, and 6ZI5 for dataset a and 6ZHW, 6ZID, 6ZI6, 6ZI9, and 6ZIA for dataset b) (Dods et al., 2021). In addition, the data statistics may indicate that the high-resolution range of some XFEL datasets exhibits high levels of noise (e.g., low CC1/2). These observations raise concerns about the reliable comparison of subtle conformational changes among these XFEL structures. Hence, caution must be exercised when interpreting these XFEL structures in terms of their ability to accurately capture relevant conformational changes.\n\nHere, we investigated how the redox potential (Em) values of the BChlb and BPheob cofactors for one-electron reduction change as electron transfer proceeds using the dark (0 ps), 1 ps, 5 ps, 20 ps, 300 ps, and 8 \u03bcs XFEL structures, solving the linear Poisson-Boltzmann equation, and considering the protonation states of all titratable sites in the entire protein. Structural changes (e.g., side-chain reorientation) in the protein environment can be analyzed in the Em shift, as Em is predominantly determined by the sum of the electrostatic interactions between the redox-active site and all other groups (i.e., residues and cofactors) in the protein structure. Subtle structural changes of the BChlb and BPheob chlorin rings, which may not be pronounced even in the Em shift (Saito et al., 2012), can be analyzed in the out-of-plane distortion of the chlorin rings using a normal-coordinate structural decomposition (NSD) analysis (Jentzen et al., 1997; Shelnutt et al., 1998) with a combination of a quantum mechanical/molecular mechanical (QM/MM) approach in the entire PbRC protein environment.\n\n## Results and discussion\n\n### Energetically asymmetric electron-transfer branches\n\nThe XFEL structures show that the Em values for BL are ~50 mV higher than those for BM, which facilitates the formation of the charge-separated [PLPM]\u2022+BL\u2022\u2013 state and thereby electron transfer along the L-branch (Figures 2 and 3). As the Em profile is substantially consistent with the Em profile for PbRC from R. sphaeroides (Kawashima and Ishikita, 2018), it seems plausible that the charge-separated [PLPM]\u2022+BL\u2022\u2013 and [PLPM]\u2022+HL\u2022\u2013 states in the active L-branch are energetically lower than the [PLPM]\u2022+BM\u2022\u2013 and [PLPM]\u2022+HM\u2022\u2013 states in the inactive M-branch, respectively, as demonstrated in QM/MM calculations (Tamura et al., 2020). Indeed, the calculated Em values are largely correlated with the lowest unoccupied molecular orbital (LUMO) levels calculated using a QM/MM approach, as suggested previously (coefficient of determination R2=0.98, Figure 2\u2014figure supplement 1). The Em(HL) value of \u2013597 mV (in dataset a; \u2013598 mV in dataset b) is in line with the experimentally estimated value of ca. \u2013600 mV for HL in PbRC from B. viridis (Rutherford et al., 1979).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig2-v1.jpg)\n\n**Figure 2.:** (a) 0 ps. (b) 5 ps. (c) 300 ps.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig2-figsupp1-v1.jpg)\n\n![Figure 3.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig3-v1.jpg)\n\n**Figure 3.:** (a) 0 ps. (b) 1 ps. (c) 5 ps. (d) 20 ps. (e) 300 ps. (f) 8 \u03bcs.\n\nAmong the L/M residue pairs, the Phe-L181/Tyr-M208 pair contributes to Em(BL)>Em(BM) most significantly (25 mV), facilitating L-branch electron transfer, as suggested in theoretical studies (Gunner et al., 1996; Table 1, Figure 2; Figure 3; Figure 4). This result is also consistent with the contribution of the Phe-L181/Tyr-M210 pair to the difference between Em(BL) and Em(BM), which was the largest in PbRC from R. sphaeroides (Parson et al., 1990) (26 mV; Kawashima and Ishikita, 2018). The Asn-L158/Thr-M185 pair also contributes to the difference between Em(BL) and Em(BM) (12 mV, Table 1), as does the Val-L157/Thr-M186 pair in PbRC from R. sphaeroides (22 mV; Kawashima and Ishikita, 2018).\n\n**Table 1.**\n Contributions of the L/M residue pairs that are responsible for Em(BL)>Em(BM) (more than 10 mV) in the dark-state structure (mV).Difference: [contribution of subunit L to Em(BL)] + [contribution of subunit M to Em(BL)] \u2013 [contribution of subunit L to Em(BM)] \u2013 [contribution of subunit M to Em(BM)].\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Subunit L</th>\n      <th>Em(BL)</th>\n      <th>Em(BM)</th>\n      <th>Subunit M</th>\n      <th>Em(BL)</th>\n      <th>Em(BM)</th>\n      <th>Difference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Phe-L181</td>\n      <td>0</td>\n      <td>17</td>\n      <td>Tyr-M208</td>\n      <td>39</td>\n      <td>\u20133</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>His-L144</td>\n      <td>\u20138</td>\n      <td>\u20132</td>\n      <td>Glu-M171</td>\n      <td>\u201314</td>\n      <td>\u201345</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>Asn-L158</td>\n      <td>5</td>\n      <td>\u20136</td>\n      <td>Thr-M185</td>\n      <td>\u20133</td>\n      <td>\u20134</td>\n      <td>12</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 4.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig4-v1.jpg)\n\nFor dataset b, the Em values for HL are >50 mV higher than those for HM , as observed in Em(BL) and Em(BM) (Figure 3). However, the Em difference decreases to ~30 mV in the 8 \u03bcs XFEL structure (Figure 3f), which implies that the 8 \u03bcs XFEL structure is distinct from the other XFEL structures (see below). Below, we discuss the dark-state structure if not otherwise specified.\n\nThe Ala-L120/Asn-M147 pair contributes to Em(HL)>Em(HM) most significantly (38 mV) (Table 2, Figure 5). However, this holds true only for PbRC from B. viridis, as Asn-M147 is replaced with alanine (Ala-M149) in PbRC from R. sphaeroides. The Asp-L218/Trp-M252 pair decreases Em(HM) with respect to Em(HL), thereby contributing to Em(HL)>Em(HM) (20 mV) (Table 2; Figure 5). Arg-L103 orients toward the protein interior, whereas Arg-M130 orients toward the protein exterior (Figure 5), which contributes to Em(HL)>Em(HM) (17 mV) (Table 2). Ser-M271 forms an H-bond with Asn-M147 near HM (Figure 5). Thus, the contribution of Ser-M271 to Em(HL) is large, although this residue is replaced with alanine (Ala-M273) in PbRC from R. sphaeroides.\n\n**Table 2.**\n Contributions of the L/M residue pairs that are responsible for Em(HL)>Em(HM) (more than 10 mV) in the dark-state structure (mV).Difference: [contribution of subunit L to Em(HL)] + [contribution of subunit M to Em(HL)] \u2013 [contribution of subunit L to Em(HM)] \u2013 [contribution of subunit M to Em(HM)].\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Subunit L</th>\n      <th>Em(HL)</th>\n      <th>Em(HM)</th>\n      <th>Subunit M</th>\n      <th>Em(HL)</th>\n      <th>Em(HM)</th>\n      <th>Difference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ala-L120</td>\n      <td>\u20134</td>\n      <td>0</td>\n      <td>Asn-M147</td>\n      <td>0</td>\n      <td>\u201342</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td>Asp-L218</td>\n      <td>\u20132</td>\n      <td>\u201322</td>\n      <td>Trp-M252</td>\n      <td>1</td>\n      <td>0</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>Arg-L103</td>\n      <td>77</td>\n      <td>3</td>\n      <td>Arg-M130</td>\n      <td>3</td>\n      <td>59</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Ala-L237</td>\n      <td>\u20132</td>\n      <td>0</td>\n      <td>Ser-M271</td>\n      <td>3</td>\n      <td>\u201316</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>Lys-L110</td>\n      <td>17</td>\n      <td>2</td>\n      <td>Ala-M137</td>\n      <td>0</td>\n      <td>3</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>Val-L219</td>\n      <td>1</td>\n      <td>5</td>\n      <td>Thr-M253</td>\n      <td>17</td>\n      <td>1</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>His-L211</td>\n      <td>1</td>\n      <td>0</td>\n      <td>Arg-M245</td>\n      <td>14</td>\n      <td>4</td>\n      <td>11</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 5.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig5-v1.jpg)\n\n### Relevance of structural changes observed in XFEL structures\n\nAccording to Dods et al., the 5 ps and 20 ps structures correspond to the charge-separated [PLPM]\u2022+HL\u2022\u2013 state (Dods et al., 2021). If this is the case, Em(HL) is expected to be exclusively higher in the 5 ps and 20 ps structures than in the other XFEL structures due to the stabilization of the [PLPM]\u2022+HL\u2022\u2013 state by protein reorganization. In dataset a, the Em(HL) value is only 4 mV higher in the 5 ps structure than in the dark structure (Figure 6a). In dataset b, the Em(HL) value is ~20 mV higher in the 5 ps and 20 ps structures than in the dark structure (Figure 6b). However, the Em(HL) value is 25 mV higher in the 300 ps structure than in the dark structure. Tables 3 and 4 show the residues that contribute to the slight increase in Em(HL) most significantly in the 5 ps and 20 ps structures. Most of these residues were in the region where Dods et al. specifically performed multiple rounds of partial occupancy refinement (e.g., 153\u2013178, 190, 230, and 236\u2013248 of subunit L and 193\u2013221, 232, 243\u2013253, 257\u2013266 of subunit M) (Dods et al., 2021). In dataset b (Table 4), which has more data points than dataset a (Table 3), the contributions of these residues to Em(HL) often fluctuate (e.g., upshift/downshift followed by downshift/upshift) at different time intervals (e.g., 1\u20135 ps, 5\u201320 ps, and 20\u2013300 ps). This result suggests that the structural differences among the XFEL structures are not related to the actual time course of charge separation. Furthermore, the Em(HM) value in the inactive M-branch is also ~15 mV higher in the 5 ps and 20 ps structures than in the dark structure (Figure 6b). These results suggest that the ~20 mV higher Em(HL) value in the 5 ps and 20 ps structures is not specifically due to the formation of the [PLPM]\u2022+HL\u2022\u2013 state. Thus, the stabilization of the [PLPM]\u2022+HL\u2022\u2013 state owing to protein reorganization is not clearly observed in the Em(HL) values.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig6-v1.jpg)\n\n**Figure 6.:** (a) Dataset a. (b) Dataset b. \u0394Em denotes the Em shift with respect to the dark-state structure. Black solid lines: PL; black dotted lines: PM; blue solid lines BL; blue dotted lines: BM; red solid lines: HL; red dotted lines: HM.\n\n**Table 3.**\n Residues that shift Em(HL) most significantly during putative electron transfer in the XFEL structures (dataset a) (mV).The same residues are highlighted in the same colors for clarity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset a</th>\n      <th></th>\n      <th>Shift</th>\n      <th></th>\n      <th>Shift</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0\u20135 ps</td>\n      <td>Ser-L176</td>\n      <td>5</td>\n      <td>Cys-M210</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Thr-M220</td>\n      <td>\u20137</td>\n      <td>BL</td>\n      <td>\u20135</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>5\u2013300 ps</td>\n      <td>BL</td>\n      <td>7</td>\n      <td>Gly-M209</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Gly-M211</td>\n      <td>\u201311</td>\n      <td>Leu-M212</td>\n      <td>\u20138</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Residues that shift Em(HL) most significantly during putative electron transfer in the XFEL structures (dataset b) (mV).The same residues are highlighted in the same colors for clarity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset b</th>\n      <th></th>\n      <th>Shift</th>\n      <th></th>\n      <th>Shift</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>0\u20131 ps</td>\n      <td>Ser-L238</td>\n      <td>8</td>\n      <td>Ser-L176</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>BL</td>\n      <td>\u20137</td>\n      <td>Leu-M213</td>\n      <td>\u20133</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1\u20135 ps</td>\n      <td>Gly-M211</td>\n      <td>6</td>\n      <td>Leu-M213</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Ser-L238</td>\n      <td>\u20136</td>\n      <td>Thr-M253</td>\n      <td>\u20135</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>5\u201320 ps</td>\n      <td>BL</td>\n      <td>12</td>\n      <td>Thr-M253</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Leu-M213</td>\n      <td>\u20134</td>\n      <td>PM</td>\n      <td>\u20133</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>20\u2013300 ps</td>\n      <td>Ser-L238</td>\n      <td>3</td>\n      <td>Gly-M211</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>BL</td>\n      <td>\u201310</td>\n      <td>Glu-L212</td>\n      <td>\u20134</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>300 ps to 8 \u03bcs</td>\n      <td>Glu-L212</td>\n      <td>4</td>\n      <td>Leu-M213</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>BL</td>\n      <td>\u20136</td>\n      <td>Gly-M211</td>\n      <td>\u20135</td>\n    </tr>\n  </tbody>\n</table>\n\nAn NSD analysis (Jentzen et al., 1997; Shelnutt et al., 1998) of the out-of-plane distortion of the chlorin ring is sensitive to subtle structural changes in the chlorin ring, which are not distinct in the Em changes (Saito et al., 2012). QM/MM calculations indicate that HL\u2022\u2013 formation induces the saddling mode in the chlorin ring, which describes the movement of rings I and III being in the opposite direction to the movement of rings II and IV along the normal axis of the chlorin ring (Tables 5 and 6). However, (i) in the XFEL structures, the saddling mode of HL remains practically unchanged in dataset a during electron transfer (Figure 7 and Supplementary files 1 and 2). In dataset b, the saddling mode of HL is induced most significantly at 1 ps, which does not correspond to the charge-separated [PLPM]\u2022+HL\u2022\u2013 state (Figure 8). (ii) In addition, the ruffling mode is more pronounced than the saddling mode in HL (Figure 8), which suggests that the observed deformation of HL is not directly associated with the reduction of HL.\n\n**Table 5.**\n Induced out-of-plane distortion of HL and HM in the PbRC protein environment of the dark structure for dataset a in response to the reduction (\u00c5).Table 5\u2014source data 1.Numerical source data for Table 5.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th>Saddling</th>\n      <th>Ruffling</th>\n      <th>Doming</th>\n      <th>Waving</th>\n      <th></th>\n      <th>Propellering</th>\n    </tr>\n    <tr>\n      <th>B2u</th>\n      <th>B1u</th>\n      <th>A2u</th>\n      <th>Eg(x)</th>\n      <th>Eg(y)</th>\n      <th>A1u</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HL</td>\n      <td>0.18</td>\n      <td>0.35</td>\n      <td>\u20130.10</td>\n      <td>0.13</td>\n      <td>\u20130.11</td>\n      <td>0.13</td>\n    </tr>\n    <tr>\n      <td>HL\u2022\u2013</td>\n      <td>0.24</td>\n      <td>0.35</td>\n      <td>\u20130.09</td>\n      <td>0.12</td>\n      <td>\u20130.12</td>\n      <td>0.13</td>\n    </tr>\n    <tr>\n      <td>(PL\u2022+HL\u2022\u2013)</td>\n      <td>(0.22)</td>\n      <td>(0.36)</td>\n      <td>(\u20130.07)</td>\n      <td>(0.13)</td>\n      <td>(\u20130.13)</td>\n      <td>(0.13)</td>\n    </tr>\n    <tr>\n      <td>HL/HL\u2022\u2013 difference</td>\n      <td>0.06</td>\n      <td>0.00</td>\n      <td>0.01</td>\n      <td>\u20130.01</td>\n      <td>\u20130.01</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HM</td>\n      <td>0.06</td>\n      <td>0.40</td>\n      <td>\u20130.20</td>\n      <td>0.37</td>\n      <td>0.12</td>\n      <td>0.19</td>\n    </tr>\n    <tr>\n      <td>HM\u2022\u2013</td>\n      <td>0.12</td>\n      <td>0.38</td>\n      <td>\u20130.22</td>\n      <td>0.33</td>\n      <td>0.09</td>\n      <td>0.22</td>\n    </tr>\n    <tr>\n      <td>(PL\u2022+HM\u2022\u2013)</td>\n      <td>(0.14)</td>\n      <td>(0.38)</td>\n      <td>(\u20130.22)</td>\n      <td>(0.33)</td>\n      <td>(0.10)</td>\n      <td>(0.22)</td>\n    </tr>\n    <tr>\n      <td>HM/HM\u2022\u2013 difference</td>\n      <td>0.06</td>\n      <td>\u20130.02</td>\n      <td>\u20130.02</td>\n      <td>\u20130.04</td>\n      <td>\u20130.03</td>\n      <td>0.03</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 6.**\n Induced out-of-plane distortion of HL and HM in the PbRC protein environment of the dark structure for dataset b in response to the reduction (\u00c5).Table 6\u2014source data 1.Numerical source data for Table 6.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th>Saddling</th>\n      <th>Ruffling</th>\n      <th>Doming</th>\n      <th>Waving</th>\n      <th></th>\n      <th>Propellering</th>\n    </tr>\n    <tr>\n      <th>B2u</th>\n      <th>B1u</th>\n      <th>A2u</th>\n      <th>Eg(x)</th>\n      <th>Eg(y)</th>\n      <th>A1u</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HL</td>\n      <td>0.13</td>\n      <td>0.35</td>\n      <td>\u20130.13</td>\n      <td>0.07</td>\n      <td>\u20130.09</td>\n      <td>0.20</td>\n    </tr>\n    <tr>\n      <td>HL\u2022\u2013</td>\n      <td>0.25</td>\n      <td>0.34</td>\n      <td>\u20130.02</td>\n      <td>0.12</td>\n      <td>\u20130.16</td>\n      <td>0.13</td>\n    </tr>\n    <tr>\n      <td>(PL\u2022+HL\u2022\u2013)</td>\n      <td>(0.23)</td>\n      <td>(0.34)</td>\n      <td>(\u20130.03)</td>\n      <td>(0.12)</td>\n      <td>(\u20130.16)</td>\n      <td>(0.12)</td>\n    </tr>\n    <tr>\n      <td>HL/HL\u2022\u2013 difference</td>\n      <td>0.12</td>\n      <td>\u20130.01</td>\n      <td>0.11</td>\n      <td>0.05</td>\n      <td>\u20130.07</td>\n      <td>\u20130.07</td>\n    </tr>\n    <tr>\n      <td>HM</td>\n      <td>0.08</td>\n      <td>0.57</td>\n      <td>\u20130.11</td>\n      <td>0.16</td>\n      <td>0.20</td>\n      <td>0.32</td>\n    </tr>\n    <tr>\n      <td>HM\u2022\u2013</td>\n      <td>0.16</td>\n      <td>0.36</td>\n      <td>\u20130.19</td>\n      <td>0.36</td>\n      <td>0.18</td>\n      <td>0.21</td>\n    </tr>\n    <tr>\n      <td>(PL\u2022+HM\u2022\u2013)</td>\n      <td>(0.16)</td>\n      <td>(0.36)</td>\n      <td>(\u20130.20)</td>\n      <td>(0.36)</td>\n      <td>(0.18)</td>\n      <td>(0.21)</td>\n    </tr>\n    <tr>\n      <td>HM/HM\u2022\u2013 difference</td>\n      <td>0.08</td>\n      <td>\u20130.21</td>\n      <td>\u20130.08</td>\n      <td>0.20</td>\n      <td>\u20130.02</td>\n      <td>\u20130.11</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 7.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig7-v1.jpg)\n\n**Figure 7.:** Sad: saddling (red); ruf: ruffling (blue); dom: doming (green); wav(x, y): waving (x, y) (gray, dark blue); pro: propellering (orange). Solid and dotted lines indicate L- and M-branches, respectively. See Supplementary file 1 for the absolute values in the dark state for dataset a.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig8-v1.jpg)\n\n**Figure 8.:** Sad: saddling (red); ruf: ruffling (blue); dom: doming (green); wav(x, y): waving (x, y) (gray, dark blue); pro: propellering (orange). Solid and dotted lines indicate L- and M-branches, respectively. See Supplementary file 2 for the absolute values in the dark state for dataset b Figure 8\u2014source data 1.\n\nOne might argue that the loss of the link between the formation of the charge-separated state and the Em(HL) change (Figure 6) is not due to experimental errors, including data processing artifacts, but rather represents the actual ps timescale phenomena during the primary charge-separation reactions (e.g., Dods et al. noted that \u2018the primary electron-transfer step to HL is more rapid than conventional Marcus theory\u2019; Dods et al., 2021). Even if this were the case, this hypothesis regarding the relevance of the XFEL structures to the electron-transfer events could be further explored by examining the changes in Em(QA) among the XFEL structures, considering the relatively slow electron-transfer step to QA that allows sufficient protein relaxation to occur (e.g., Dods et al. stated that \u2018the electron-transfer step to QA has a single exponential decay time of 230\u00b130 ps, consistent with conventional Marcus theory\u2019; Dods et al., 2021). That is, if the Em(QA) values are not higher in the 300 ps and 8 \u03bcs structures than in the other structures, it suggests that significant experimental errors exist, rendering the XFEL structures irrelevant to the electron-transfer events. Consistent with this perspective, the present results demonstrate that the Em(QA) values in the 300 ps and 8 \u03bcs structures are not significantly higher than those in the other structures, including the dark-state structure (Figure 9). Consequently, the lack of a clear relationship between the charge-separated state and the changes in Em(QA) at 300 ps and 8 \u03bcs further strengthens the argument that the XFEL structures are irrelevant to the electron-transfer events.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/88955/elife-88955-fig9-v1.jpg)\n\n**Figure 9.:** (a) Dataset a. (b) Dataset b. \u0394Em denotes the Em shift with respect to the dark-state structure. Note that the calculated Em(QA) values for dataset a and dataset b in the dark structure are \u2013223 mV and \u2013209 mV, respectively, which are comparable to experimentally measured values of \u2013150 mV for PbRC from B. viridis (menaquinone) (Prince et al., 1976) and \u2013180 mV for PbRC from R. sphaeroides (ubiquinone) (Prince and Dutton, 1976).\n\nIn summary, the Em values in the active L-branch are higher than those in the inactive M-branch in the XFEL structures, which suggests that electron transfer via BL\u2022\u2013 and HL\u2022\u2013 is energetically more favored than that via BM\u2022\u2013 and HM\u2022\u2013 (Figure 2). The Phe-L181/Tyr-M208 pair contributes to the difference between Em(BL) and Em(BM) the most significantly, as observed in the Phe-L181/Tyr-M210 pair in PbRC from R. sphaeroides (Kawashima and Ishikita, 2018; Parson et al., 1990). The stabilization of the [PLPM]\u2022+HL\u2022\u2013 state owing to protein reorganization is not clearly observed in the Em(HL) values (Figure 6). The absence of the induced saddling mode in the HL chlorin ring in the 5 ps and 20 ps structures suggests that HL\u2022\u2013 does not specifically exist in these XFEL structures (Figures 7 and 8). The cyclic fluctuations in the contributions of the residues to Em(HL) at different time intervals suggest that the structural differences among the XFEL structures are not related to the actual time course of charge separation (Table 4). The major limitation of the structural studies conducted by Dods et al., 2021, is the relatively low resolution of their XFEL structures, primarily at 2.8 \u00c5. Consequently, the observed changes in Em values and chlorin ring deformations are more likely to reflect experimental errors or data processing artifacts rather than actual structural changes induced by electron-transfer events. This concern is reinforced by the lack of a clear relationship between the actual QA\u2022\u2013 formation and the Em(QA) values in the 300 ps and 8 \u03bcs structures (Figure 9). Consequently, the time-dependent structural changes proposed by Dods et al., 2021, are highly likely irrelevant to the electron-transfer events.\n\nHence, it is crucial to exercise caution when interpreting time-dependent XFEL structures, especially in the absence of comprehensive evaluations of the energetics for accompanying structural changes. This cautionary note should serve as a counterargument in the future, highlighting the potential pitfalls associated with presenting time-dependent XFEL structures of insufficient quality and drawing conclusive interpretations of protein structural changes that may not be distinguishable from significant experimental errors or data processing artifacts. Future high-resolution structures may provide further insights into the actual structural changes relevant to electron-transfer events. By combining both high-resolution structures and rigorous energetic evaluations, a more comprehensive understanding of the protein structure-function relationship can be achieved.\n\n## Methods\n\n### Coordinates and atomic partial charges\n\nThe atomic coordinates of PbRC from B. viridis were taken from the XFEL structures determined at 0 ps (dark state; PDB code 5O4C for dataset a and 5NJ4 for dataset b), 1 ps ([PLPM]* state; PDB code, 6ZHW for dataset b), 5 ps ([PLPM] \u2022+HL\u2022\u2013 state; PDB code, 6ZI4 for dataset a and 6ZID for dataset b), 20 ps ([PLPM] \u2022+HL\u2022\u2013 state; PDB code, 6ZI6 for dataset b), 300 ps ([PLPM] \u2022+QA\u2022\u2013 state; PDB code, 6ZI5 for dataset a and 6ZI9 for dataset b), and 8 \u03bcs ([PLPM] \u2022+QA\u2022\u2013 state; PDB code, 6ZIA for dataset b). Atoms with 30% occupancy for the photoactivated state (Dods et al., 2021) were used wherever present. Hydrogen atoms were generated and energetically optimized with CHARMM (Brooks et al., 1983). The atomic partial charges of the amino acids were obtained from the all-atom CHARMM22 (MacKerell et al., 1998) parameter set. For diacylglycerol, the Fe complex (Kawashima and Ishikita, 2018), and menaquinone (Kawashima and Ishikita, 2017), the atomic charges were adopted from previous studies. The atomic charges of BChlb and BPheob (BChlb, BChlb\u2022+, BChlb\u2022\u2013, BPheob, and BPheob\u2022\u2013) were determined by fitting the electrostatic potential in the neighborhood of these molecules using the RESP procedure (Bayly et al., 1993; Supplementary file 3). The electronic densities were calculated after geometry optimization using the density functional theory (DFT) method with the B3LYP functional and 6-31G** basis sets in the JAGUAR program (Jaguar, 2012). For the atomic charges of the nonpolar CHn groups in the cofactors (e.g., the phytol chains of BChlb and BPheob and the isoprene side chains of quinone), a value of +0.09 was assigned to nonpolar H atoms.\n\n### Calculation of Em: solving the linear Poisson-Boltzmann equation\n\nThe Em values in the protein were determined by calculating the electrostatic energy difference between the two redox states in a reference model system. This was achieved by solving the linear Poisson-Boltzmann equation with the MEAD program (Bashford and Karplus, 1990) and using Em(BChlb) = \u2013665 mV and Em(BPheob) = \u2013429 mV (based on Em(BChlb) = \u2013700 mV and Em(BPheob) = \u2013500 mV for one-electron reduction measured in dimethylformamide; Fajer et al., 1976; Watanabe and Kobayashi, 1991), considering the solvation energy difference. The Em(QA) value was calculated, using the reference Em value of \u2013256 mV versus NHE for menaquinone-2 in water (Kishi et al., 2017). The difference in the Em value of the protein relative to the reference system was added to the known Em value. To account for the ensemble of protonation patterns, a Monte Carlo method with Karlsberg was used for sampling (Rabenstein and Knapp, 2001). The linear Poisson-Boltzmann equation was solved using a three-step grid-focusing procedure with resolutions of 2.5 \u00c5, 1.0 \u00c5, and 0.3 \u00c5. Monte Carlo sampling provided the probabilities [Aox] and [Ared] of the two redox states of molecule A, and Em was evaluated using the Nernst equation. A bias potential was applied to ensure an equal amount of both redox states ([Aox] = [Ared]), thus determining the redox midpoint potential as the resulting bias potential. To ensure consistency with previous computational results, we used identical computational conditions and parameters as previous studies (e.g., Kawashima and Ishikita, 2018), performing all computations at 300 K, pH 7.0, and an ionic strength of 100 mM. The dielectric constants were set to 4 for the protein interior and 80 for water.\n\n### QM/MM calculations\n\nWe employed the restricted DFT method for describing the closed-shell electronic structure and the unrestricted DFT method for the open-shell electronic structure with the B3LYP functional and LACVP* basis sets using the QSite (QSite, 2012) program. To neutralize the entire system, counter ions were added randomly around the protein using the Autoionize plugin in VMD (Humphrey et al., 1996). In the QM region, all atom positions were relaxed in the QM region, while the H-atom positions were relaxed in the MM region. The QM regions were defined as follows: for the BChlb pair [PLPM]: the side chains of the ligand residues (His-L173 and His-M200) and H-bond partners (His-L168, Tyr-M195, and Thr-L248); for accessory BChlb: BL/BM and the side chain of the ligand residue (His-L153 for BL/His-M180 for BM); for BPheob: HL/HM.\n\n### NSD analysis\n\nTo analyze the out-of-plane distortions of chlorin rings, we employed an NSD procedure with the minimal basis approximation, where the deformation profile can be represented by the six lowest-frequency normal modes, that is, ruffling (B1u), saddling (B2u), doming (A2u), waving (Eg(x) and Eg(y)), and propellering (A1u) modes (Jentzen et al., 1997; Shelnutt et al., 1998). The NSD analysis was performed in the following three steps, as performed previously (Saito et al., 2012). First, the atomic coordinates of the Mg-substituted macrocycle were extracted from the crystal or QM/MM optimized structures (Table 5\u2014source data 1, Table 6\u2014source data 1). Second, the extracted coordinates were superimposed on the reference coordinates of the macrocycle. The superimposition is based on a least-square method, and the mathematical procedure is described in Zucchelli et al., 2007. Finally, the out-of-plane distortion in the superimposed coordinates was decomposed into the six lowest-frequency normal modes by the projection to the reference normal mode coordinates as\n\n$$\nd^{\u0393}=\\sumi=1N\u0394z_{i}(n_{z}^{\u0393})_{i},\n$$\n\nwhere $d^{\u0393}$ represents the distortion component of the mode \u0393 (i.e., \u0393 = B1u, B2u, A2u, Eg(x), Eg(y), or A1u), $\u0394z_{i}$ is the z-component of the superimposed coordinates in the ith heavy atom, and $(n_{z}^{\u0393})_{i}$ is the z-component of the normalized eigenvector of the reference normal mode \u0393 in the ith heavy atom. N represents the number of heavy atoms. See Saito et al., 2012, for further details.\n",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "af948009-e66b-440e-9024-e195f532470d",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.88955.4.sa0](https://doi.org/10.7554/eLife.88955.4.sa0)\n\nThe manuscript describes valuable theoretical calculations focusing on the structural changes in the photosynthetic reaction center postulated by others based on time-resolved crystallography using XFEL (Dods et al., Nature, 2021). The authors provide solid arguments that calculated changes in redox potential Em and deformations using the XEFL structures may reflect experimental errors or data processing artifacts rather than real structural changes.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.88955.4.sa1](https://doi.org/10.7554/eLife.88955.4.sa1)\n\nFirst, I agree with the authors of this manuscript that conformational changes in the XFEL structures with 2.8 A resolution are not reliable enough for demonstrating the subtle changes in the electron transfer events in this bacterial photosynthesis system. Actually, the data statistics in the paper by Dods et al. showed that the high-resolution range of some of the XFEL datasets may include pretty high noise (low CC1/2 and high Rsplit) so the comparison of the subtle conformational changes of the structures is problematic.\n\nThe manuscript by Gai Nishikawa investigated time-dependent changes in the energetics of the electron transfer pathway based on the structures by Dods et al. by calculating redox potential of the active and inactive branches in the structures and found no clear link between the time-dependent structural changes and the electron transfer events in the XFEL structures published by Dods, R.et al. (2021). This study provided validation for the interpretation of the structures of those electron-transferring proteins.\n\nThe paper was well prepared.\n\nComments on latest version:\n\nThe revisions the authors have made have improved the manuscript.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.88955.4.sa2](https://doi.org/10.7554/eLife.88955.4.sa2)\n\nThe manuscript by Nishikawa et al. addresses time-dependent changes in the electron transfer energetics in the photosynthetic reaction center from Blastochloris viridis, whose time-dependent structural changes upon light illumination were recently demonstrated by time-resolved serial femtosecond crystallography (SFX) using X-ray free-electron laser (XFEL) (Dods et al., Nature, 2021). Based on the redox potential Em values of bacteriopheophytin in the electron transfer active branch (BL) by solving the linear Poisson-Boltzmann equation, the authors found that Em(HL) values in the charge-separated 5-ps structure obtained by XFEL are not clearly changed, suggesting that the P+HL- state is not stabilized owing to protein reorganization. Furthermore, chlorin ring deformation upon HL- formation, which was expected from their QM/MM calculation, is not recognized in the 5-ps XFEL structure. Then the authors concluded that the structural changes in the XFEL structures are not related to the actual time course of charge separation. They argued that their calculated changes in Em and chlorin ring deformations using the XEFL structures may reflect the experimental errors rather than the real structural changes; they mentioned this problem is due to the fact that the XFEL structures were obtained at not high resolutions (mostly at 2.8 \u00c5). I consider that their systematic calculations may suggest a useful theoretical interpretation of the XFEL study.\n\nComments on latest version:\n\nThe authors have satisfied my concerns. I consider that their present manuscript is more attractive and informative for readers.\n",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7f0b8d85-7f10-46c6-9647-56d044ceb437",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C1",
+      "claim": "The photosynthetic reaction center from Blastochloris viridis shows light-induced time-dependent structural changes in XFEL structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the X-ray free-electron laser (XFEL) structures of the photosynthetic reaction center from Blastochloris viridis that show light-induced time-dependent structural changes (Dods et al., (2021) Nature 589, 310\u2013314)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dods et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "0fbc86dc-1f81-4a0c-a869-b9f1cad76dc2",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C2",
+      "claim": "In the dark and charge separation intermediate structures, the calculated redox potential (Em) values for the accessory bacteriochlorophyll in the electron-transfer-active branch (BL) are higher than those in the electron-transfer-inactive branch (BM).",
+      "claim_type": "EXPLICIT",
+      "source": "In the dark and charge separation intermediate structures, the calculated redox potential (Em) values for the accessory bacteriochlorophyll and bacteriopheophytin in the electron-transfer-active branch (BL and HL) are higher than those in the electron-transfer-inactive branch (BM and HM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "436e2d2a-6fc7-4772-a24b-8fca81e5b50c",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C3",
+      "claim": "In the dark and charge separation intermediate structures, the calculated redox potential (Em) values for bacteriopheophytin in the electron-transfer-active branch (HL) are higher than those in the electron-transfer-inactive branch (HM).",
+      "claim_type": "EXPLICIT",
+      "source": "In the dark and charge separation intermediate structures, the calculated redox potential (Em) values for the accessory bacteriochlorophyll and bacteriopheophytin in the electron-transfer-active branch (BL and HL) are higher than those in the electron-transfer-inactive branch (BM and HM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "927a7816-af38-4721-a3f0-40135b31a9f2",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C4",
+      "claim": "The stabilization of the charge-separated [PLPM]\u2022+HL\u2022\u2013 state owing to protein reorganization is not clearly observed in the Em(HL) values in the charge-separated 5 ps structure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the stabilization of the charge-separated [PLPM]\u2022+HL\u2022\u2013 state owing to protein reorganization is not clearly observed in the Em(HL) values in the charge-separated 5 ps ([PLPM]\u2022+HL\u2022\u2013 state) structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "68b80342-136b-40e2-bb4c-39169c5d9c01",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C5",
+      "claim": "The expected chlorin ring deformation upon formation of HL\u2022\u2013 (saddling mode) is absent in the HL geometry of the original 5 ps structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the expected chlorin ring deformation upon formation of HL\u2022\u2013 (saddling mode) is absent in the HL geometry of the original 5 ps structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by NSD analysis data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "307130a6-686d-4e9b-be20-3b60a0323346",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C6",
+      "claim": "There is no clear link between the time-dependent structural changes and the electron-transfer events in the XFEL structures.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that there is no clear link between the time-dependent structural changes and the electron-transfer events in the XFEL structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "171e8e86-d882-4427-9f49-5be41d150456",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C7",
+      "claim": "Photosynthetic reaction centers from purple bacteria (PbRC) are heterodimeric reaction centers formed by the protein subunits L and M.",
+      "claim_type": "EXPLICIT",
+      "source": "Photosynthetic reaction centers from purple bacteria (PbRC) are heterodimeric reaction centers, which are formed by the protein subunits L and M (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by established scientific knowledge and reference to Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "52ab021a-854e-4ba3-a552-1a0d061d3e75",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C8",
+      "claim": "In PbRC from Blastochloris viridis, the electronic excitation of the bacteriochlorophyll b (BChlb) pair, [PLPM], leads to electron transfer to accessory BChlb, BL.",
+      "claim_type": "EXPLICIT",
+      "source": "In PbRC from Blastochloris viridis, the electronic excitation of the bacteriochlorophyll b (BChlb) pair, [PLPM], leads to electron transfer to accessory BChlb, BL, followed by electron transfer via bacteriopheophytin b (BPheob), HL, to menaquinone, QA, along the electron-transfer active L-branch (A-branch) (Deisenhofer et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Deisenhofer et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "131c8933-fe01-40ef-8d75-83449e61a8e5",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C9",
+      "claim": "Electron transfer proceeds from BL via bacteriopheophytin b (BPheob), HL, to menaquinone, QA, along the electron-transfer active L-branch.",
+      "claim_type": "EXPLICIT",
+      "source": "In PbRC from Blastochloris viridis, the electronic excitation of the bacteriochlorophyll b (BChlb) pair, [PLPM], leads to electron transfer to accessory BChlb, BL, followed by electron transfer via bacteriopheophytin b (BPheob), HL, to menaquinone, QA, along the electron-transfer active L-branch (A-branch) (Deisenhofer et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Deisenhofer et al., 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "825c9783-f50d-4a5f-b4ba-936ea687e5ec",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C10",
+      "claim": "Electron transfer further proceeds from QA to ubiquinone, QB, which is coupled with proton transfer via charged and polar residues in the QB binding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Electron transfer further proceeds from QA to ubiquinone, QB, which is coupled with proton transfer via charged and polar residues in the QB binding region (Rabenstein et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Rabenstein et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "a377f80e-7404-4dfb-b58a-bf26e878c2b6",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C11",
+      "claim": "The counterpart M-branch (B-branch) is essentially electron-transfer inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the counterpart M-branch (B-branch) is essentially electron-transfer inactive, mutations of the Phe-L181/Tyr-M208 pair to tyrosine/phenylalanine lead to an increase in the yield of [PLPM]\u2022+HM\u2022\u2013 formation (~30%), which suggests that these residues are responsible for the energetic asymmetry in the electron-transfer branches (e.g., Kirmaier et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge and citation to Kirmaier et al., 2003.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "d612f605-e251-4361-ab12-033bb9b04ff7",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C12",
+      "claim": "Mutations of the Phe-L181/Tyr-M208 pair to tyrosine/phenylalanine lead to an increase in the yield of [PLPM]\u2022+HM\u2022\u2013 formation (~30%).",
+      "claim_type": "EXPLICIT",
+      "source": "Although the counterpart M-branch (B-branch) is essentially electron-transfer inactive, mutations of the Phe-L181/Tyr-M208 pair to tyrosine/phenylalanine lead to an increase in the yield of [PLPM]\u2022+HM\u2022\u2013 formation (~30%), which suggests that these residues are responsible for the energetic asymmetry in the electron-transfer branches (e.g., Kirmaier et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kirmaier et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "a6ff0cc2-b109-4573-b294-52b26d1c7634",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C13",
+      "claim": "The Phe-L181/Tyr-M208 residues are responsible for the energetic asymmetry in the electron-transfer branches.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the counterpart M-branch (B-branch) is essentially electron-transfer inactive, mutations of the Phe-L181/Tyr-M208 pair to tyrosine/phenylalanine lead to an increase in the yield of [PLPM]\u2022+HM\u2022\u2013 formation (~30%), which suggests that these residues are responsible for the energetic asymmetry in the electron-transfer branches (e.g., Kirmaier et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kirmaier et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "248bafd2-7de8-4fdd-a375-4ff30c18f10f",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C14",
+      "claim": "The anionic state BL\u2022\u2013 forms in ~3.5 ps upon the formation of the electronically excited [PLPM]* state.",
+      "claim_type": "EXPLICIT",
+      "source": "The anionic states BL\u2022\u2013, HL\u2022\u2013, and QA\u2022\u2013 form in ~3.5 ps, ~5 ps, and ~200 ps upon the formation of the electronically excited [PLPM]* state, respectively (Holzapfel et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Holzapfel et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "d5add56e-6a79-4c88-b0f6-a5694cf0c316",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C15",
+      "claim": "The anionic state HL\u2022\u2013 forms in ~5 ps upon the formation of the electronically excited [PLPM]* state.",
+      "claim_type": "EXPLICIT",
+      "source": "The anionic states BL\u2022\u2013, HL\u2022\u2013, and QA\u2022\u2013 form in ~3.5 ps, ~5 ps, and ~200 ps upon the formation of the electronically excited [PLPM]* state, respectively (Holzapfel et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Holzapfel et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "86e00772-0746-4c8f-80b3-bf1bb49ebd6d",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C16",
+      "claim": "The anionic state QA\u2022\u2013 forms in ~200 ps upon the formation of the electronically excited [PLPM]* state.",
+      "claim_type": "EXPLICIT",
+      "source": "The anionic states BL\u2022\u2013, HL\u2022\u2013, and QA\u2022\u2013 form in ~3.5 ps, ~5 ps, and ~200 ps upon the formation of the electronically excited [PLPM]* state, respectively (Holzapfel et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Holzapfel et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "4b047796-827e-4194-8684-d2fe70945642",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C17",
+      "claim": "The anionic state formation induces reorganization of the protein environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The anionic state formation induces not only reoriganization of the protein environment (Marcus and Sutin, 1985) but also out-of-plane distortion of the chlorin ring (Saito et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Marcus and Sutin, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "7000ac08-42fa-4931-a78e-b3b8e81260e6",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C18",
+      "claim": "The anionic state formation induces out-of-plane distortion of the chlorin ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The anionic state formation induces not only reoriganization of the protein environment (Marcus and Sutin, 1985) but also out-of-plane distortion of the chlorin ring (Saito et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saito et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "c0e343e4-e6e3-4bab-bfc1-ec7f7365bbcc",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C19",
+      "claim": "Two distinct conformations of HL\u2022\u2013 were reported in spectroscopic studies of PbRC from Rhodobacter sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "Two distinct conformations of HL\u2022\u2013 were reported in spectroscopic studies of PbRC from Rhodobacter sphaeroides (M\u00fch et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to M\u00fch et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "989160ac-ddfc-422b-81ba-7dccfaeee53f",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C20",
+      "claim": "Light-induced electron density changes and structural changes of PbRC were analyzed at 1 ps, 5 ps, 20 ps, 300 ps, and 8 \u03bcs upon the electronic excitation of [PLPM] at 960 nm using XFEL.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, using the X-ray free-electron laser (XFEL), light-induced electron density changes and structural changes of PbRC were analyzed at 1 ps, 5 ps, 20 ps, 300 ps, and 8 \u03bcs upon the electronic excitation of [PLPM] at 960 nm (Dods et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dods et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "17469683-8b0c-40e2-b6b3-e799cbb65f51",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C21",
+      "claim": "The 1 ps XFEL structure represents the [PLPM]* state.",
+      "claim_type": "EXPLICIT",
+      "source": "the 1 ps XFEL structure represents the [PLPM]* state, the 5 ps and 20 ps XFEL structures represent the charge-separated [PLPM]\u2022+HL\u2022\u2013 state, and the 300 ps and 8 \u03bcs XFEL structures represent the charge-separated [PLPM]\u2022+QA\u2022\u2013 state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the interpretation of XFEL data from Dods et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "4767454c-7106-4663-a332-0f49208c8940",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C22",
+      "claim": "The 5 ps and 20 ps XFEL structures represent the charge-separated [PLPM]\u2022+HL\u2022\u2013 state.",
+      "claim_type": "EXPLICIT",
+      "source": "the 1 ps XFEL structure represents the [PLPM]* state, the 5 ps and 20 ps XFEL structures represent the charge-separated [PLPM]\u2022+HL\u2022\u2013 state, and the 300 ps and 8 \u03bcs XFEL structures represent the charge-separated [PLPM]\u2022+QA\u2022\u2013 state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the interpretation of XFEL data from Dods et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "097441ba-465e-48ff-9765-b0fdb77beb66",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C23",
+      "claim": "The 300 ps and 8 \u03bcs XFEL structures represent the charge-separated [PLPM]\u2022+QA\u2022\u2013 state.",
+      "claim_type": "EXPLICIT",
+      "source": "the 1 ps XFEL structure represents the [PLPM]* state, the 5 ps and 20 ps XFEL structures represent the charge-separated [PLPM]\u2022+HL\u2022\u2013 state, and the 300 ps and 8 \u03bcs XFEL structures represent the charge-separated [PLPM]\u2022+QA\u2022\u2013 state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the interpretation of XFEL data from Dods et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "1e56557a-8946-4e8c-87c7-cb83b60d7801",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C24",
+      "claim": "According to Dods et al., 2021, the XFEL structures revealed how the charge separation process was stabilized by protein conformational dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Dods et al., 2021, these XFEL structures revealed how the charge separation process was stabilized by protein conformational dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dods et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "c4802d5a-9f2f-4a76-bc7d-3861e4d3bf11",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C25",
+      "claim": "Eight out of nine XFEL structures have a relatively low resolution of 2.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, eight out of nine XFEL structures have a relatively low resolution of 2.8 \u00c5 (atomic coordinates from PDB codes: 5O4C, 6ZI4, and 6ZI5 for dataset a and 6ZHW, 6ZID, 6ZI6, 6ZI9, and 6ZIA for dataset b) (Dods et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dods et al., 2021 and reference to PDB codes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "487e22e0-7e8c-4844-a3da-1b4f2bb421e5",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C26",
+      "claim": "The data statistics may indicate that the high-resolution range of some XFEL datasets exhibits high levels of noise (e.g., low CC1/2).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the data statistics may indicate that the high-resolution range of some XFEL datasets exhibits high levels of noise (e.g., low CC1/2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from data statistics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "ff841113-46b1-461f-8b62-b5a0c4a983f7",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C27",
+      "claim": "Caution must be exercised when interpreting these XFEL structures in terms of their ability to accurately capture relevant conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, caution must be exercised when interpreting these XFEL structures in terms of their ability to accurately capture relevant conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the limitations of the XFEL data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "4377ba43-3a63-4a25-94b5-59c36c44a351",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C28",
+      "claim": "The XFEL structures show that the Em values for BL are ~50 mV higher than those for BM.",
+      "claim_type": "EXPLICIT",
+      "source": "The XFEL structures show that the Em values for BL are ~50 mV higher than those for BM, which facilitates the formation of the charge-separated [PLPM]\u2022+BL\u2022\u2013 state and thereby electron transfer along the L-branch (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "e318aae0-a625-4532-8904-77d0e6a6f789",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C29",
+      "claim": "The higher Em values for BL compared to BM facilitate the formation of the charge-separated [PLPM]\u2022+BL\u2022\u2013 state and thereby electron transfer along the L-branch.",
+      "claim_type": "EXPLICIT",
+      "source": "The XFEL structures show that the Em values for BL are ~50 mV higher than those for BM, which facilitates the formation of the charge-separated [PLPM]\u2022+BL\u2022\u2013 state and thereby electron transfer along the L-branch (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the computational data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "94df0a33-69a0-46a4-af69-cccd655892ac",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C30",
+      "claim": "The Em profile is substantially consistent with the Em profile for PbRC from R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "As the Em profile is substantially consistent with the Em profile for PbRC from R. sphaeroides (Kawashima and Ishikita, 2018), it seems plausible that the charge-separated [PLPM]\u2022+BL\u2022\u2013 and [PLPM]\u2022+HL\u2022\u2013 states in the active L-branch are energetically lower than the [PLPM]\u2022+BM\u2022\u2013 and [PLPM]\u2022+HM\u2022\u2013 states in the inactive M-branch, respectively, as demonstrated in QM/MM calculations (Tamura et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kawashima and Ishikita, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "c8fc3410-f4a9-4761-9db0-677971d8c71f",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C31",
+      "claim": "The charge-separated [PLPM]\u2022+BL\u2022\u2013 and [PLPM]\u2022+HL\u2022\u2013 states in the active L-branch are energetically lower than the [PLPM]\u2022+BM\u2022\u2013 and [PLPM]\u2022+HM\u2022\u2013 states in the inactive M-branch.",
+      "claim_type": "EXPLICIT",
+      "source": "As the Em profile is substantially consistent with the Em profile for PbRC from R. sphaeroides (Kawashima and Ishikita, 2018), it seems plausible that the charge-separated [PLPM]\u2022+BL\u2022\u2013 and [PLPM]\u2022+HL\u2022\u2013 states in the active L-branch are energetically lower than the [PLPM]\u2022+BM\u2022\u2013 and [PLPM]\u2022+HM\u2022\u2013 states in the inactive M-branch, respectively, as demonstrated in QM/MM calculations (Tamura et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kawashima and Ishikita, 2018 and Tamura et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "612c6e4b-c797-4976-acbf-28c943a93f3b",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C32",
+      "claim": "The calculated Em values are largely correlated with the lowest unoccupied molecular orbital (LUMO) levels calculated using a QM/MM approach (coefficient of determination R2=0.98).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the calculated Em values are largely correlated with the lowest unoccupied molecular orbital (LUMO) levels calculated using a QM/MM approach, as suggested previously (coefficient of determination R2=0.98, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "d6c6f1a5-aa5e-45d0-8ab0-011a83979cde",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C33",
+      "claim": "The Em(HL) value of \u2013597 mV (in dataset a; \u2013598 mV in dataset b) is in line with the experimentally estimated value of ca. \u2013600 mV for HL in PbRC from B. viridis.",
+      "claim_type": "EXPLICIT",
+      "source": "The Em(HL) value of \u2013597 mV (in dataset a; \u2013598 mV in dataset b) is in line with the experimentally estimated value of ca. \u2013600 mV for HL in PbRC from B. viridis (Rutherford et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data and citation to Rutherford et al., 1979.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "a30f8f2c-0985-4e6d-b5f3-3bda3ccef7fe",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C34",
+      "claim": "Among the L/M residue pairs, the Phe-L181/Tyr-M208 pair contributes to Em(BL)>Em(BM) most significantly (25 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the L/M residue pairs, the Phe-L181/Tyr-M208 pair contributes to Em(BL)>Em(BM) most significantly (25 mV), facilitating L-branch electron transfer, as suggested in theoretical studies (Gunner et al., 1996; Table 1, Figure 2; Figure 3; Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Table 1, Figure 2, Figure 3, and Figure 4, and citation to Gunner et al., 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "893b4e21-2f07-434a-974c-029404c6f700",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C35",
+      "claim": "The contribution of the Phe-L181/Tyr-M210 pair to the difference between Em(BL) and Em(BM) was the largest in PbRC from R. sphaeroides (26 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "This result is also consistent with the contribution of the Phe-L181/Tyr-M210 pair to the difference between Em(BL) and Em(BM), which was the largest in PbRC from R. sphaeroides (Parson et al., 1990) (26 mV; Kawashima and Ishikita, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Parson et al., 1990 and Kawashima and Ishikita, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "a7bc16da-d9cc-480b-9e05-1413dbd72e8b",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C36",
+      "claim": "The Asn-L158/Thr-M185 pair contributes to the difference between Em(BL) and Em(BM) (12 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "The Asn-L158/Thr-M185 pair also contributes to the difference between Em(BL) and Em(BM) (12 mV, Table 1), as does the Val-L157/Thr-M186 pair in PbRC from R. sphaeroides (22 mV; Kawashima and Ishikita, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "604f9a31-bccd-42b6-bf52-71b675a0a6bd",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C37",
+      "claim": "The Val-L157/Thr-M186 pair in PbRC from R. sphaeroides contributes to the difference between Em(BL) and Em(BM) (22 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "The Asn-L158/Thr-M185 pair also contributes to the difference between Em(BL) and Em(BM) (12 mV, Table 1), as does the Val-L157/Thr-M186 pair in PbRC from R. sphaeroides (22 mV; Kawashima and Ishikita, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kawashima and Ishikita, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "19eae265-644c-4b4a-91a4-05ba78317bac",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C38",
+      "claim": "For dataset b, the Em values for HL are >50 mV higher than those for HM.",
+      "claim_type": "EXPLICIT",
+      "source": "For dataset b, the Em values for HL are >50 mV higher than those for HM , as observed in Em(BL) and Em(BM) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "dc91eb89-1114-4c47-b7b5-8f718e30bb84",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C39",
+      "claim": "The Em difference between HL and HM decreases to ~30 mV in the 8 \u03bcs XFEL structure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Em difference decreases to ~30 mV in the 8 \u03bcs XFEL structure (Figure 3f), which implies that the 8 \u03bcs XFEL structure is distinct from the other XFEL structures (see below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "df29b9aa-8b31-4109-8658-ee7d6c81868d",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C40",
+      "claim": "The 8 \u03bcs XFEL structure is distinct from the other XFEL structures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Em difference decreases to ~30 mV in the 8 \u03bcs XFEL structure (Figure 3f), which implies that the 8 \u03bcs XFEL structure is distinct from the other XFEL structures (see below).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the computational data presented in Figure 3f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "8037280a-b1bf-44d4-828c-6f02f332f989",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C41",
+      "claim": "The Ala-L120/Asn-M147 pair contributes to Em(HL)>Em(HM) most significantly (38 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "The Ala-L120/Asn-M147 pair contributes to Em(HL)>Em(HM) most significantly (38 mV) (Table 2, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Table 2 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "5ee2befa-8e55-47ef-bbe0-2c94b5657571",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C42",
+      "claim": "The Ala-L120/Asn-M147 pair contribution to Em(HL)>Em(HM) holds true only for PbRC from B. viridis, as Asn-M147 is replaced with alanine (Ala-M149) in PbRC from R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this holds true only for PbRC from B. viridis, as Asn-M147 is replaced with alanine (Ala-M149) in PbRC from R. sphaeroides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of sequence differences between species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "d4a1434a-8bd9-4664-b566-14eb0be42d10",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C43",
+      "claim": "The Asp-L218/Trp-M252 pair decreases Em(HM) with respect to Em(HL), thereby contributing to Em(HL)>Em(HM) (20 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "The Asp-L218/Trp-M252 pair decreases Em(HM) with respect to Em(HL), thereby contributing to Em(HL)>Em(HM) (20 mV) (Table 2; Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Table 2 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "1244c482-6009-4e38-8f51-47badd152670",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C44",
+      "claim": "Arg-L103 orients toward the protein interior, whereas Arg-M130 orients toward the protein exterior.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg-L103 orients toward the protein interior, whereas Arg-M130 orients toward the protein exterior (Figure 5), which contributes to Em(HL)>Em(HM) (17 mV) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "f0b6f24d-ba35-4482-90db-88c655799d29",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C45",
+      "claim": "The different orientations of Arg-L103 and Arg-M130 contribute to Em(HL)>Em(HM) (17 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Arg-L103 orients toward the protein interior, whereas Arg-M130 orients toward the protein exterior (Figure 5), which contributes to Em(HL)>Em(HM) (17 mV) (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Table 2 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "ee90552d-a48c-4f89-a88a-c7c73b19fea0",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C46",
+      "claim": "Ser-M271 forms an H-bond with Asn-M147 near HM.",
+      "claim_type": "EXPLICIT",
+      "source": "Ser-M271 forms an H-bond with Asn-M147 near HM (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural data presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "88598104-4715-43cc-9ed9-9848cd8e2e89",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C47",
+      "claim": "The contribution of Ser-M271 to Em(HL) is large, although this residue is replaced with alanine (Ala-M273) in PbRC from R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the contribution of Ser-M271 to Em(HL) is large, although this residue is replaced with alanine (Ala-M273) in PbRC from R. sphaeroides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational data and knowledge of sequence differences between species.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "edba309c-3895-4468-bd87-2a70943515b2",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C48",
+      "claim": "In dataset a, the Em(HL) value is only 4 mV higher in the 5 ps structure than in the dark structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In dataset a, the Em(HL) value is only 4 mV higher in the 5 ps structure than in the dark structure (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "a9d76631-0921-43d2-8ba7-d36696e5fe41",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C49",
+      "claim": "In dataset b, the Em(HL) value is ~20 mV higher in the 5 ps and 20 ps structures than in the dark structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In dataset b, the Em(HL) value is ~20 mV higher in the 5 ps and 20 ps structures than in the dark structure (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "71481402-7cc7-4796-98f5-6e330f6b4b05",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C50",
+      "claim": "In dataset b, the Em(HL) value is 25 mV higher in the 300 ps structure than in the dark structure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Em(HL) value is 25 mV higher in the 300 ps structure than in the dark structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "69481f3a-5c56-4c49-be3a-a069135dd622",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C51",
+      "claim": "Most of the residues that contribute to the slight increase in Em(HL) in the 5 ps and 20 ps structures were in the region where Dods et al. specifically performed multiple rounds of partial occupancy refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these residues were in the region where Dods et al. specifically performed multiple rounds of partial occupancy refinement (e.g., 153\u2013178, 190, 230, and 236\u2013248 of subunit L and 193\u2013221, 232, 243\u2013253, 257\u2013266 of subunit M) (Dods et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Dods et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "ce338494-00e9-4ffd-90a8-869ad77a80dc",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C52",
+      "claim": "In dataset b, the contributions of residues to Em(HL) often fluctuate (e.g., upshift/downshift followed by downshift/upshift) at different time intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "In dataset b (Table 4), which has more data points than dataset a (Table 3), the contributions of these residues to Em(HL) often fluctuate (e.g., upshift/downshift followed by downshift/upshift) at different time intervals (e.g., 1\u20135 ps, 5\u201320 ps, and 20\u2013300 ps).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "bf3b971f-f39d-4206-9f29-3bee2c219f79",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C53",
+      "claim": "The structural differences among the XFEL structures are not related to the actual time course of charge separation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the structural differences among the XFEL structures are not related to the actual time course of charge separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "b4fa3852-b8f8-4a05-b49e-9104096e8713",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C54",
+      "claim": "The Em(HM) value in the inactive M-branch is also ~15 mV higher in the 5 ps and 20 ps structures than in the dark structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the Em(HM) value in the inactive M-branch is also ~15 mV higher in the 5 ps and 20 ps structures than in the dark structure (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "2e2603f2-02b4-4e89-b915-d2b818659e27",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C55",
+      "claim": "The ~20 mV higher Em(HL) value in the 5 ps and 20 ps structures is not specifically due to the formation of the [PLPM]\u2022+HL\u2022\u2013 state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the ~20 mV higher Em(HL) value in the 5 ps and 20 ps structures is not specifically due to the formation of the [PLPM]\u2022+HL\u2022\u2013 state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "e6b54ccc-c88c-4a84-b08f-d396c77aec3a",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C56",
+      "claim": "QM/MM calculations indicate that HL\u2022\u2013 formation induces the saddling mode in the chlorin ring.",
+      "claim_type": "EXPLICIT",
+      "source": "QM/MM calculations indicate that HL\u2022\u2013 formation induces the saddling mode in the chlorin ring, which describes the movement of rings I and III being in the opposite direction to the movement of rings II and IV along the normal axis of the chlorin ring (Tables 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Tables 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "2ec9b1bb-39c9-478d-8aa8-6ef64e1e339f",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C57",
+      "claim": "The saddling mode describes the movement of rings I and III being in the opposite direction to the movement of rings II and IV along the normal axis of the chlorin ring.",
+      "claim_type": "EXPLICIT",
+      "source": "QM/MM calculations indicate that HL\u2022\u2013 formation induces the saddling mode in the chlorin ring, which describes the movement of rings I and III being in the opposite direction to the movement of rings II and IV along the normal axis of the chlorin ring (Tables 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on knowledge of structural deformation modes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "efc9c6f6-0462-4905-b3b0-65b97371f9fe",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C58",
+      "claim": "In the XFEL structures, the saddling mode of HL remains practically unchanged in dataset a during electron transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, (i) in the XFEL structures, the saddling mode of HL remains practically unchanged in dataset a during electron transfer (Figure 7 and Supplementary files 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NSD analysis data presented in Figure 7 and Supplementary files 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "2a637c41-f38e-448b-85e7-be83f47bbe49",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C59",
+      "claim": "In dataset b, the saddling mode of HL is induced most significantly at 1 ps, which does not correspond to the charge-separated [PLPM]\u2022+HL\u2022\u2013 state.",
+      "claim_type": "EXPLICIT",
+      "source": "In dataset b, the saddling mode of HL is induced most significantly at 1 ps, which does not correspond to the charge-separated [PLPM]\u2022+HL\u2022\u2013 state (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NSD analysis data presented in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "11cd3368-33cb-48e5-a50b-833bfe8104dd",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C60",
+      "claim": "The ruffling mode is more pronounced than the saddling mode in HL.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) In addition, the ruffling mode is more pronounced than the saddling mode in HL (Figure 8), which suggests that the observed deformation of HL is not directly associated with the reduction of HL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by NSD analysis data presented in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "af4dd49c-c295-480c-a8d8-25f68d904e0b",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C61",
+      "claim": "The observed deformation of HL is not directly associated with the reduction of HL.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) In addition, the ruffling mode is more pronounced than the saddling mode in HL (Figure 8), which suggests that the observed deformation of HL is not directly associated with the reduction of HL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the NSD analysis data presented in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "c1fc6ed5-d253-49e9-8c45-99c85cdd5eaf",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C62",
+      "claim": "The Em(QA) values in the 300 ps and 8 \u03bcs structures are not significantly higher than those in the other structures, including the dark-state structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this perspective, the present results demonstrate that the Em(QA) values in the 300 ps and 8 \u03bcs structures are not significantly higher than those in the other structures, including the dark-state structure (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "285a3b44-cf55-41d9-89f6-656370327548",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C63",
+      "claim": "The lack of a clear relationship between the charge-separated state and the changes in Em(QA) at 300 ps and 8 \u03bcs strengthens the argument that the XFEL structures are irrelevant to the electron-transfer events.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the lack of a clear relationship between the charge-separated state and the changes in Em(QA) at 300 ps and 8 \u03bcs further strengthens the argument that the XFEL structures are irrelevant to the electron-transfer events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "10d8e00f-9c15-4f8f-b674-5a592077e941",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C64",
+      "claim": "The Em values in the active L-branch are higher than those in the inactive M-branch in the XFEL structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the Em values in the active L-branch are higher than those in the inactive M-branch in the XFEL structures, which suggests that electron transfer via BL\u2022\u2013 and HL\u2022\u2013 is energetically more favored than that via BM\u2022\u2013 and HM\u2022\u2013 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by computational data presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "0b2b2391-f345-46a2-b3fd-48cdd3d1ac04",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C65",
+      "claim": "Electron transfer via BL\u2022\u2013 and HL\u2022\u2013 is energetically more favored than that via BM\u2022\u2013 and HM\u2022\u2013.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the Em values in the active L-branch are higher than those in the inactive M-branch in the XFEL structures, which suggests that electron transfer via BL\u2022\u2013 and HL\u2022\u2013 is energetically more favored than that via BM\u2022\u2013 and HM\u2022\u2013 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the computational data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "67d9e7ba-b1ff-46ea-b7a5-bf18035c029b",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C66",
+      "claim": "The Phe-L181/Tyr-M208 pair contributes to the difference between Em(BL) and Em(BM) the most significantly, as observed in the Phe-L181/Tyr-M210 pair in PbRC from R. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "The Phe-L181/Tyr-M208 pair contributes to the difference between Em(BL) and Em(BM) the most significantly, as observed in the Phe-L181/Tyr-M210 pair in PbRC from R. sphaeroides (Kawashima and Ishikita, 2018; Parson et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data and citations to Kawashima and Ishikita, 2018 and Parson et al., 1990.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "5c8988db-e66b-41a5-9d04-34f15f7ba747",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C67",
+      "claim": "The absence of the induced saddling mode in the HL chlorin ring in the 5 ps and 20 ps structures suggests that HL\u2022\u2013 does not specifically exist in these XFEL structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of the induced saddling mode in the HL chlorin ring in the 5 ps and 20 ps structures suggests that HL\u2022\u2013 does not specifically exist in these XFEL structures (Figures 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the NSD analysis data presented in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "33ebf9f6-0026-400f-a2bf-3568ad21ca90",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C68",
+      "claim": "The cyclic fluctuations in the contributions of the residues to Em(HL) at different time intervals suggest that the structural differences among the XFEL structures are not related to the actual time course of charge separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The cyclic fluctuations in the contributions of the residues to Em(HL) at different time intervals suggest that the structural differences among the XFEL structures are not related to the actual time course of charge separation (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the computational data presented in Table 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "c62164ae-5dc6-479e-9f69-2d78c7d389c9",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C69",
+      "claim": "The major limitation of the structural studies conducted by Dods et al., 2021, is the relatively low resolution of their XFEL structures, primarily at 2.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The major limitation of the structural studies conducted by Dods et al., 2021, is the relatively low resolution of their XFEL structures, primarily at 2.8 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the resolution of the XFEL structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "4032d060-93d1-4fd4-8446-5234517b95eb",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C70",
+      "claim": "The observed changes in Em values and chlorin ring deformations are more likely to reflect experimental errors or data processing artifacts rather than actual structural changes induced by electron-transfer events.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the observed changes in Em values and chlorin ring deformations are more likely to reflect experimental errors or data processing artifacts rather than actual structural changes induced by electron-transfer events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational data analysis and the limitations of the XFEL structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "56d11fc8-cf28-43e4-8cdf-e0ef7ee6af8b",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C71",
+      "claim": "The lack of a clear relationship between the actual QA\u2022\u2013 formation and the Em(QA) values in the 300 ps and 8 \u03bcs structures reinforces the concern that the observed changes reflect experimental errors or data processing artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "This concern is reinforced by the lack of a clear relationship between the actual QA\u2022\u2013 formation and the Em(QA) values in the 300 ps and 8 \u03bcs structures (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the computational data presented in Figure 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "f1e8e62f-68f2-46c3-9929-09b344dd01a7",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C72",
+      "claim": "The time-dependent structural changes proposed by Dods et al., 2021, are highly likely irrelevant to the electron-transfer events.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the time-dependent structural changes proposed by Dods et al., 2021, are highly likely irrelevant to the electron-transfer events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the computational data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "d2d12236-bd61-4a0f-8676-5cca2b76e8cf",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C73",
+      "claim": "It is crucial to exercise caution when interpreting time-dependent XFEL structures, especially in the absence of comprehensive evaluations of the energetics for accompanying structural changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it is crucial to exercise caution when interpreting time-dependent XFEL structures, especially in the absence of comprehensive evaluations of the energetics for accompanying structural changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the limitations of the XFEL structures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "569489fb-e203-445f-9e4d-89f28594590b",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C74",
+      "claim": "Future high-resolution structures may provide further insights into the actual structural changes relevant to electron-transfer events.",
+      "claim_type": "EXPLICIT",
+      "source": "Future high-resolution structures may provide further insights into the actual structural changes relevant to electron-transfer events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "fb3be985-88bd-47bb-82c8-f7740b2cfeac",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C75",
+      "claim": "By combining both high-resolution structures and rigorous energetic evaluations, a more comprehensive understanding of the protein structure-function relationship can be achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining both high-resolution structures and rigorous energetic evaluations, a more comprehensive understanding of the protein structure-function relationship can be achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about future research approaches.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "0de8fd2c-3d1a-4653-a4a2-5d1f7c853704",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C76",
+      "claim": "The calculated Em(QA) values for dataset a and dataset b in the dark structure are \u2013223 mV and \u2013209 mV, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the calculated Em(QA) values for dataset a and dataset b in the dark structure are \u2013223 mV and \u2013209 mV, respectively, which are comparable to experimentally measured values of \u2013150 mV for PbRC from B. viridis (menaquinone) (Prince et al., 1976) and \u2013180 mV for PbRC from R. sphaeroides (ubiquinone) (Prince and Dutton, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "9a13c6f2-86d5-4886-8e10-8bc873221c3e",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C77",
+      "claim": "The calculated Em(QA) values are comparable to experimentally measured values of \u2013150 mV for PbRC from B. viridis (menaquinone) and \u2013180 mV for PbRC from R. sphaeroides (ubiquinone).",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the calculated Em(QA) values for dataset a and dataset b in the dark structure are \u2013223 mV and \u2013209 mV, respectively, which are comparable to experimentally measured values of \u2013150 mV for PbRC from B. viridis (menaquinone) (Prince et al., 1976) and \u2013180 mV for PbRC from R. sphaeroides (ubiquinone) (Prince and Dutton, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by computational data and citations to Prince et al., 1976 and Prince and Dutton, 1976.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "5f1a72ad-eaad-4ac8-9eac-9dde97c03288",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C78",
+      "claim": "The atomic coordinates of PbRC from B. viridis were taken from the XFEL structures determined at 0 ps (dark state; PDB code 5O4C for dataset a and 5NJ4 for dataset b).",
+      "claim_type": "EXPLICIT",
+      "source": "The atomic coordinates of PbRC from B. viridis were taken from the XFEL structures determined at 0 ps (dark state; PDB code 5O4C for dataset a and 5NJ4 for dataset b), 1 ps ([PLPM]* state; PDB code, 6ZHW for dataset b), 5 ps ([PLPM] \u2022+HL\u2022\u2013 state; PDB code, 6ZI4 for dataset a and 6ZID for dataset b), 20 ps ([PLPM] \u2022+HL\u2022\u2013 state; PDB code, 6ZI6 for dataset b), 300 ps ([PLPM] \u2022+QA\u2022\u2013 state; PDB code, 6ZI5 for dataset a and 6ZI9 for dataset b), and 8 \u03bcs ([PLPM] \u2022+QA\u2022\u2013 state; PDB code, 6ZIA for dataset b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data sources used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "3dc9e7ac-650f-4049-ac5d-84c86245a3c2",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C79",
+      "claim": "Atoms with 30% occupancy for the photoactivated state were used wherever present.",
+      "claim_type": "EXPLICIT",
+      "source": "Atoms with 30% occupancy for the photoactivated state (Dods et al., 2021) were used wherever present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "36d5f3ac-c7cb-4b35-98b5-44fa002b0dde",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C80",
+      "claim": "Hydrogen atoms were generated and energetically optimized with CHARMM.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrogen atoms were generated and energetically optimized with CHARMM (Brooks et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "fed871af-2c83-4f8a-9ecf-c40db65928d2",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C81",
+      "claim": "The atomic partial charges of the amino acids were obtained from the all-atom CHARMM22 parameter set.",
+      "claim_type": "EXPLICIT",
+      "source": "The atomic partial charges of the amino acids were obtained from the all-atom CHARMM22 (MacKerell et al., 1998) parameter set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "3b02bc79-6109-48e0-b4a6-670bc913aa53",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C82",
+      "claim": "The atomic charges of BChlb and BPheob were determined by fitting the electrostatic potential in the neighborhood of these molecules using the RESP procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "The atomic charges of BChlb and BPheob (BChlb, BChlb\u2022+, BChlb\u2022\u2013, BPheob, and BPheob\u2022\u2013) were determined by fitting the electrostatic potential in the neighborhood of these molecules using the RESP procedure (Bayly et al., 1993; Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "1b66e65b-9ae4-499e-8d81-322e02cf83f1",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C83",
+      "claim": "The electronic densities were calculated after geometry optimization using the density functional theory (DFT) method with the B3LYP functional and 6-31G** basis sets in the JAGUAR program.",
+      "claim_type": "EXPLICIT",
+      "source": "The electronic densities were calculated after geometry optimization using the density functional theory (DFT) method with the B3LYP functional and 6-31G** basis sets in the JAGUAR program (Jaguar, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "48694136-8af1-401f-8d30-b1358c47c998",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C84",
+      "claim": "The Em values in the protein were determined by calculating the electrostatic energy difference between the two redox states in a reference model system.",
+      "claim_type": "EXPLICIT",
+      "source": "The Em values in the protein were determined by calculating the electrostatic energy difference between the two redox states in a reference model system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "f0e146af-72af-49fe-82ce-a5d9d04e7365",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C85",
+      "claim": "The linear Poisson-Boltzmann equation was solved with the MEAD program.",
+      "claim_type": "EXPLICIT",
+      "source": "This was achieved by solving the linear Poisson-Boltzmann equation with the MEAD program (Bashford and Karplus, 1990) and using Em(BChlb) = \u2013665 mV and Em(BPheob) = \u2013429 mV (based on Em(BChlb) = \u2013700 mV and Em(BPheob) = \u2013500 mV for one-electron reduction measured in dimethylformamide; Fajer et al., 1976; Watanabe and Kobayashi, 1991), considering the solvation energy difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "db1688a0-c73a-4a89-9756-ff0180ae8866",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C86",
+      "claim": "A Monte Carlo method with Karlsberg was used for sampling to account for the ensemble of protonation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for the ensemble of protonation patterns, a Monte Carlo method with Karlsberg was used for sampling (Rabenstein and Knapp, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "0ed5d01a-9465-425f-99d1-3166be209b2c",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C87",
+      "claim": "All computations were performed at 300 K, pH 7.0, and an ionic strength of 100 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure consistency with previous computational results, we used identical computational conditions and parameters as previous studies (e.g., Kawashima and Ishikita, 2018), performing all computations at 300 K, pH 7.0, and an ionic strength of 100 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "42c9bd55-5861-49f9-a423-ab34222cb4f5",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C88",
+      "claim": "The dielectric constants were set to 4 for the protein interior and 80 for water.",
+      "claim_type": "EXPLICIT",
+      "source": "The dielectric constants were set to 4 for the protein interior and 80 for water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "bd406256-cd07-46be-a114-da2396f51d24",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C89",
+      "claim": "The restricted DFT method was employed for describing the closed-shell electronic structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed the restricted DFT method for describing the closed-shell electronic structure and the unrestricted DFT method for the open-shell electronic structure with the B3LYP functional and LACVP* basis sets using the QSite (QSite, 2012) program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "640e6a21-499e-46af-b4d0-793aaab4b495",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C90",
+      "claim": "The unrestricted DFT method was employed for the open-shell electronic structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed the restricted DFT method for describing the closed-shell electronic structure and the unrestricted DFT method for the open-shell electronic structure with the B3LYP functional and LACVP* basis sets using the QSite (QSite, 2012) program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "70834ea3-e0e8-494c-9bd7-c7d36002d7ca",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C91",
+      "claim": "Counter ions were added randomly around the protein using the Autoionize plugin in VMD to neutralize the entire system.",
+      "claim_type": "EXPLICIT",
+      "source": "To neutralize the entire system, counter ions were added randomly around the protein using the Autoionize plugin in VMD (Humphrey et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "99f71166-cb1d-49d5-9640-916bd0306974",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C92",
+      "claim": "An NSD procedure with the minimal basis approximation was employed to analyze the out-of-plane distortions of chlorin rings.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze the out-of-plane distortions of chlorin rings, we employed an NSD procedure with the minimal basis approximation, where the deformation profile can be represented by the six lowest-frequency normal modes, that is, ruffling (B1u), saddling (B2u), doming (A2u), waving (Eg(x) and Eg(y)), and propellering (A1u) modes (Jentzen et al., 1997; Shelnutt et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "911f8834-e1c2-48e0-8000-e3372a77d72f",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "claim_id": "C93",
+      "claim": "The deformation profile can be represented by the six lowest-frequency normal modes: ruffling (B1u), saddling (B2u), doming (A2u), waving (Eg(x) and Eg(y)), and propellering (A1u) modes.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze the out-of-plane distortions of chlorin rings, we employed an NSD procedure with the minimal basis approximation, where the deformation profile can be represented by the six lowest-frequency normal modes, that is, ruffling (B1u), saddling (B2u), doming (A2u), waving (Eg(x) and Eg(y)), and propellering (A1u) modes (Jentzen et al., 1997; Shelnutt et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of structural deformation modes and citations to Jentzen et al., 1997 and Shelnutt et al., 1998.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "293042c9-9166-43c3-82d4-b80755c324b1",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the structure and electron transfer pathway of photosynthetic reaction centers from purple bacteria (PbRC), including the heterodimeric L/M structure, the electron transfer pathway along the L-branch (BL \u2192 HL \u2192 QA \u2192 QB), the inactivity of the M-branch, the role of specific residue pairs in energetic asymmetry, the timescales of anionic state formation, and the structural consequences of charge separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C19 are well-supported by established knowledge and appropriate citations to prior work (Deisenhofer et al., 1985; Rabenstein et al., 1998; Kirmaier et al., 2003; Holzapfel et al., 1990; Marcus and Sutin, 1985; Saito et al., 2012; M\u00fch et al., 1998). These claims provide essential background context for the study and are not contested by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes prior XFEL structural work by Dods et al. (2021) that reported time-dependent structural changes in PbRC at multiple time points (1 ps, 5 ps, 20 ps, 300 ps, 8 \u03bcs), with specific assignments to charge-separated states. However, the authors note that these structures have relatively low resolution (2.8 \u00c5 for 8 of 9 structures) and potentially high noise levels, warranting caution in interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C20-C27 accurately describe the prior work of Dods et al. (2021) and appropriately identify limitations of the XFEL data (low resolution, potential noise). The authors correctly cite the source work and provide reasonable concerns about data quality that motivate their computational reanalysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "9f6826a9-498b-40b9-be36-6507365531aa",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Computational analysis of the XFEL structures shows that redox potentials (Em) for cofactors in the electron-transfer-active L-branch (BL and HL) are consistently higher than those in the inactive M-branch (BM and HM), with BL ~50 mV higher than BM. This energetic asymmetry favors electron transfer along the L-branch and is consistent with prior computational work on R. sphaeroides. The calculated Em values correlate well with QM/MM LUMO levels (R\u00b2=0.98) and agree with experimental measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C28-C33, C64-C65 are well-supported by computational data presented in Figures 2-3 and Figure 2\u2014figure supplement 1. The Em calculations use established methods (Poisson-Boltzmann equation, Monte Carlo sampling) and show good agreement with prior computational work (Kawashima and Ishikita, 2018; Tamura et al., 2020) and experimental data (Rutherford et al., 1979). The correlation with LUMO levels provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "f739a743-ff76-4295-915c-25fce0431f22",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Phe-L181/Tyr-M208 residue pair contributes most significantly (25 mV) to the Em(BL) > Em(BM) difference, facilitating L-branch electron transfer. This finding is consistent with the analogous Phe-L181/Tyr-M210 pair in R. sphaeroides (26 mV). The Asn-L158/Thr-M185 pair also contributes 12 mV to this asymmetry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37, C66 are supported by computational data in Table 1 and Figures 2-4, with appropriate citations to prior work (Gunner et al., 1996; Parson et al., 1990; Kawashima and Ishikita, 2018). The identification of key residue pairs responsible for energetic asymmetry is consistent across species and computational approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For dataset b, Em(HL) is >50 mV higher than Em(HM), though this difference decreases to ~30 mV in the 8 \u03bcs structure, suggesting this structure is distinct. The Ala-L120/Asn-M147 pair contributes most significantly (38 mV) to Em(HL) > Em(HM), but this is specific to B. viridis. Other contributing residue pairs include Asp-L218/Trp-M252 (20 mV) and the differential orientations of Arg-L103/Arg-M130 (17 mV).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C47 are supported by computational data in Figure 3, Table 2, and Figure 5. The identification of species-specific contributions (e.g., Asn-M147 in B. viridis vs. Ala-M149 in R. sphaeroides) demonstrates appropriate consideration of sequence differences. The anomalous behavior of the 8 \u03bcs structure is noted but requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The expected stabilization of the charge-separated [PLPM]\u2022+HL\u2022\u2013 state through protein reorganization is not clearly observed in Em(HL) values at 5 ps and 20 ps. In dataset a, Em(HL) increases only 4 mV at 5 ps; in dataset b, it increases ~20 mV at 5 ps and 20 ps, but also increases 25 mV at 300 ps. Residue contributions fluctuate cyclically across time points, and Em(HM) in the inactive M-branch also increases ~15 mV at 5 ps and 20 ps, suggesting the changes are not specifically due to [PLPM]\u2022+HL\u2022\u2013 formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C48-C55 are supported by computational data in Figure 6 and Tables 3-4. The absence of expected Em(HL) stabilization specifically at the 5 ps and 20 ps time points (when HL\u2022\u2013 should be present) is a key finding. The cyclic fluctuations in residue contributions and the parallel increase in Em(HM) provide strong evidence that the observed changes are not related to the actual charge separation process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "c5c9c8ad-2895-4636-9661-0e436022629b",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "QM/MM calculations predict that HL\u2022\u2013 formation should induce a saddling mode deformation in the chlorin ring. However, NSD analysis of the XFEL structures shows that the saddling mode remains practically unchanged in dataset a during electron transfer. In dataset b, the saddling mode is most pronounced at 1 ps (not corresponding to [PLPM]\u2022+HL\u2022\u2013), and the ruffling mode is more pronounced than saddling, suggesting the observed deformation is not associated with HL reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C56-C61, C67 are supported by QM/MM calculations (Tables 5-6) and NSD analysis (Figures 7-8, Supplementary files 1-2). The absence of the expected saddling mode at 5 ps and 20 ps, when HL\u2022\u2013 should be present, is a critical finding that contradicts the interpretation of Dods et al. The dominance of ruffling over saddling further supports the conclusion that the observed structural changes are not related to electron transfer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "018a062e-5ec2-49a1-bc18-45e81ad96e9a",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Em(QA) values in the 300 ps and 8 \u03bcs structures (when QA\u2022\u2013 should be present) are not significantly higher than in other structures, including the dark state. The calculated Em(QA) values (\u2013223 mV for dataset a, \u2013209 mV for dataset b) are comparable to experimental values (\u2013150 mV for B. viridis, \u2013180 mV for R. sphaeroides). This lack of clear relationship between charge-separated state and Em(QA) changes strengthens the argument that XFEL structures are irrelevant to electron-transfer events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63, C71, C76-C77 are supported by computational data in Figure 9. The absence of expected Em(QA) stabilization at 300 ps and 8 \u03bcs is particularly significant because QA reduction occurs on a slower timescale (~200 ps) that should allow sufficient protein relaxation. The reasonable agreement with experimental Em(QA) values validates the computational approach, making the absence of time-dependent changes more compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors conclude that there is no clear link between the time-dependent structural changes in the XFEL structures and the electron-transfer events. The cyclic fluctuations in residue contributions, the low resolution (2.8 \u00c5) of the XFEL structures, and the absence of expected energetic and structural signatures suggest that the observed changes likely reflect experimental errors or data processing artifacts rather than actual electron-transfer-induced structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C68-C70, C72-C73 represent the main conclusion of the manuscript and are supported by the cumulative evidence from Em calculations (C4, C48-C55, C62-C63) and NSD analysis (C5, C58-C61). The authors appropriately identify limitations of the XFEL data and provide multiple independent lines of computational evidence that the time-dependent changes do not correlate with expected electron-transfer signatures. However, the conclusion relies heavily on the accuracy of the computational methods and the assumption that protein reorganization should produce detectable Em shifts and specific chlorin ring deformations on the timescales examined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "7cdb98ce-aa14-4a4d-814e-d8d7bd81d224",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors suggest that future high-resolution structures combined with rigorous energetic evaluations may provide better insights into actual structural changes relevant to electron-transfer events and achieve a more comprehensive understanding of protein structure-function relationships.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are reasonable forward-looking statements based on the limitations identified in the current work. These are appropriately framed as suggestions for future research rather than definitive conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "3a13d144-d770-42f2-ac46-87222f111ec4",
+      "content_id": "bab742b5-8ad7-4548-9a84-5673affa8eb4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript describes the computational methods used, including the source of atomic coordinates (XFEL structures from Dods et al., 2021), hydrogen atom generation and optimization (CHARMM), atomic charge determination (CHARMM22, RESP procedure, DFT calculations), Em calculation methods (Poisson-Boltzmann equation with MEAD, Monte Carlo sampling with Karlsberg), QM/MM calculations (restricted/unrestricted DFT with B3LYP functional), and NSD analysis for chlorin ring deformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C93 accurately describe the computational methods with appropriate citations. The methods are standard approaches for this type of analysis and are described in sufficient detail. The use of consistent parameters with prior studies (Kawashima and Ishikita, 2018) is appropriate for comparison. However, some methodological details could be more explicit (e.g., convergence criteria, grid sizes beyond the three-step focusing procedure, validation of QM region size).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "8b011062-f259-40ad-b330-e26da92e583c",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors calculated redox potential (Em) values for bacteriochlorophyll and bacteriopheophytin cofactors in both the active L-branch and inactive M-branch using XFEL structures. They found that Em values in the active L-branch (BL and HL) are consistently higher than in the inactive M-branch (BM and HM), with specific residue pairs (particularly Phe-L181/Tyr-M208) contributing most significantly to this energetic asymmetry that favors electron transfer along the L-branch.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers accept these computational findings without challenge. The editor notes the authors 'provide solid arguments' about calculated Em changes, and Reviewer 1 describes the calculations as 'systematic' and providing 'useful theoretical interpretation.' Reviewer 2 states the manuscript 'investigated time-dependent changes in the energetics' and found the results regarding branch asymmetry, with no criticism of these specific Em calculations or the residue contribution analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "624fa853-8130-428c-b9f4-aab632f8d3be",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors found that the stabilization of the charge-separated [PLPM]\u2022+HL\u2022\u2212 state through protein reorganization is not clearly observed in the Em(HL) values of the 5 ps and 20 ps XFEL structures. The Em(HL) values show only modest increases (4-20 mV) that are inconsistent across datasets, with contributions from residues fluctuating cyclically at different time intervals rather than showing progressive changes expected for actual charge separation events.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support this conclusion. Reviewer 2 states the authors 'found that Em(HL) values in the charge-separated 5-ps structure obtained by XFEL are not clearly changed, suggesting that the P+HL- state is not stabilized owing to protein reorganization.' The editor affirms the authors 'provide solid arguments' about these findings. No reviewer challenges the interpretation that the lack of clear Em changes indicates problems with the XFEL structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "1b396f47-346b-45dd-a346-db4210dd6022",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors performed QM/MM calculations showing that HL\u2022\u2212 formation should induce a saddling mode deformation in the chlorin ring, but this expected deformation is absent in the HL geometry of the 5 ps and 20 ps XFEL structures. Instead, the ruffling mode is more pronounced than the saddling mode, suggesting the observed deformation is not directly associated with HL reduction and that HL\u2022\u2212 does not specifically exist in these structures.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly acknowledges this finding, stating 'chlorin ring deformation upon HL- formation, which was expected from their QM/MM calculation, is not recognized in the 5-ps XFEL structure.' The editor notes the authors provide solid arguments about 'deformations using the XEFL structures.' No reviewer questions the NSD analysis methodology or challenges the conclusion that the absence of expected saddling mode deformation indicates problems with the XFEL structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "e347899c-db4f-482f-b926-87a84ebb6c40",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors conclude there is no clear link between the time-dependent structural changes in the XFEL structures and the actual electron-transfer events. They argue that observed changes in Em values and chlorin ring deformations more likely reflect experimental errors or data processing artifacts rather than real structural changes induced by electron transfer, with this concern reinforced by the lack of clear relationships between charge-separated states and Em(QA) values at 300 ps and 8 \u03bcs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly support this central conclusion. Reviewer 1 states the manuscript 'found no clear link between the time-dependent structural changes and the electron transfer events in the XFEL structures.' Reviewer 2 notes the authors 'concluded that the structural changes in the XFEL structures are not related to the actual time course of charge separation' and that changes 'may reflect the experimental errors rather than the real structural changes.' The editor affirms the authors 'provide solid arguments' for this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "b0119579-7d4b-4ae1-a665-073d3805a562",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors identify the major limitation of the XFEL structures as their relatively low resolution (primarily 2.8 \u00c5) and high noise levels in some datasets (low CC1/2), arguing that caution must be exercised when interpreting these structures for capturing conformational changes relevant to electron transfer.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly agree with this assessment. Reviewer 1 states 'I agree with the authors of this manuscript that conformational changes in the XFEL structures with 2.8 A resolution are not reliable enough for demonstrating the subtle changes in the electron transfer events' and notes 'the data statistics in the paper by Dods et al. showed that the high-resolution range of some of the XFEL datasets may include pretty high noise (low CC1/2 and high Rsplit).' Reviewer 2 acknowledges the authors 'mentioned this problem is due to the fact that the XFEL structures were obtained at not high resolutions (mostly at 2.8 \u00c5).'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "b063c032-6bf2-4157-be19-288c0b5c2d7f",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors reference the XFEL study by Dods et al. (2021) that reported light-induced time-dependent structural changes in the photosynthetic reaction center, with structures at different time points (1 ps, 5 ps, 20 ps, 300 ps, 8 \u03bcs) representing different charge-separated states, and which claimed to reveal how charge separation was stabilized by protein conformational dynamics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are background claims citing the Dods et al. study that the current manuscript is evaluating. All reviewers accept these as accurate representations of what Dods et al. reported. Reviewer 1 refers to 'the XFEL structures published by Dods, R.et al. (2021)' and Reviewer 2 discusses 'time-dependent structural changes upon light illumination were recently demonstrated by time-resolved serial femtosecond crystallography (SFX) using X-ray free-electron laser (XFEL) (Dods et al., Nature, 2021).' No reviewer disputes the characterization of the Dods study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "cd0f89a0-3d79-4825-8c87-8320899ef137",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors provide established background on the structure and electron transfer mechanism of photosynthetic reaction centers from purple bacteria, including the heterodimeric L/M structure, the electron transfer pathway through the active L-branch, the inactive M-branch, timescales of anionic state formation, and effects of mutations on branch activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established background claims supported by multiple literature citations. No reviewer questions or challenges any of this background information. The reviewers treat this foundational knowledge as accepted context for evaluating the new computational findings. Reviewer 2 acknowledges this is about 'the photosynthetic reaction center from Blastochloris viridis' without disputing the mechanistic details.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "c3819a78-e212-4950-ba1b-c1306168eec4",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors identify specific residue pairs that contribute to the Em difference between HL and HM, including Ala-L120/Asn-M147 (38 mV), Asp-L218/Trp-M252 (20 mV), and the differential orientations of Arg-L103/Arg-M130 (17 mV), with some contributions being species-specific to B. viridis versus R. sphaeroides.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These detailed computational findings about specific residue contributions are presented as part of the overall Em analysis that reviewers accept. No reviewer challenges these specific residue-level calculations or the species comparisons. Reviewer 1 notes the study 'provided validation for the interpretation of the structures' and Reviewer 2 describes the calculations as 'systematic,' implicitly accepting the detailed residue analysis as part of the validated computational approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "5d92b275-cc49-430c-b8db-e3a304b52573",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors report that their calculated Em(QA) values for the dark structure (\u2212223 mV for dataset a, \u2212209 mV for dataset b) are comparable to experimentally measured values of \u2212150 mV for B. viridis and \u2212180 mV for R. sphaeroides, validating their computational approach.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This validation of the computational method through comparison with experimental values is implicitly accepted by reviewers who praise the 'systematic calculations' (Reviewer 2) and note the study 'provided validation' (Reviewer 1). No reviewer questions the accuracy of the computational method or these validation comparisons. The agreement with experimental values supports the credibility of the other Em calculations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "6f2ee00c-5cba-4bb8-a014-93520daac02d",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors describe their computational methodology in detail, including the use of XFEL structure coordinates from specific PDB codes, CHARMM for hydrogen optimization, DFT methods with B3LYP functional, Poisson-Boltzmann calculations with MEAD, Monte Carlo sampling with Karlsberg, QM/MM approaches, and NSD analysis for chlorin ring deformations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The computational methods are accepted by all reviewers without criticism. Reviewer 1 states 'The paper was well prepared' and Reviewer 2 describes the work as involving 'systematic calculations,' indicating acceptance of the methodological approach. The editor's summary that the manuscript 'describes valuable theoretical calculations' further affirms acceptance of the computational methods. No reviewer raises concerns about the appropriateness or rigor of any specific computational technique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "87fc3502-7e2a-4dfc-9420-583280b96ced",
+      "content_id": "af948009-e66b-440e-9024-e195f532470d",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors suggest that future high-resolution structures combined with rigorous energetic evaluations may provide further insights into actual structural changes relevant to electron-transfer events and achieve a more comprehensive understanding of protein structure-function relationships.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These forward-looking statements about future research directions are not challenged by any reviewer. They represent reasonable conclusions from the study's findings about current limitations. Reviewer 2 notes in the final comment that 'their present manuscript is more attractive and informative for readers,' suggesting acceptance of the authors' perspective on what future work should entail. No reviewer disputes these recommendations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "171e8e86-d882-4427-9f49-5be41d150456",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "52ab021a-854e-4ba3-a552-1a0d061d3e75",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "131c8933-fe01-40ef-8d75-83449e61a8e5",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "825c9783-f50d-4a5f-b4ba-936ea687e5ec",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "a377f80e-7404-4dfb-b58a-bf26e878c2b6",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "d612f605-e251-4361-ab12-033bb9b04ff7",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "a6ff0cc2-b109-4573-b294-52b26d1c7634",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "248bafd2-7de8-4fdd-a375-4ff30c18f10f",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "d5add56e-6a79-4c88-b0f6-a5694cf0c316",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "86e00772-0746-4c8f-80b3-bf1bb49ebd6d",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "4b047796-827e-4194-8684-d2fe70945642",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "7000ac08-42fa-4931-a78e-b3b8e81260e6",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "c0e343e4-e6e3-4bab-bfc1-ec7f7365bbcc",
+      "result_id": "293042c9-9166-43c3-82d4-b80755c324b1"
+    },
+    {
+      "claim_id": "7f0b8d85-7f10-46c6-9647-56d044ceb437",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "989160ac-ddfc-422b-81ba-7dccfaeee53f",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "17469683-8b0c-40e2-b6b3-e799cbb65f51",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "4767454c-7106-4663-a332-0f49208c8940",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "097441ba-465e-48ff-9765-b0fdb77beb66",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "1e56557a-8946-4e8c-87c7-cb83b60d7801",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "c4802d5a-9f2f-4a76-bc7d-3861e4d3bf11",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "487e22e0-7e8c-4844-a3da-1b4f2bb421e5",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "ff841113-46b1-461f-8b62-b5a0c4a983f7",
+      "result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd"
+    },
+    {
+      "claim_id": "0fbc86dc-1f81-4a0c-a869-b9f1cad76dc2",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "436e2d2a-6fc7-4772-a24b-8fca81e5b50c",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "4377ba43-3a63-4a25-94b5-59c36c44a351",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "e318aae0-a625-4532-8904-77d0e6a6f789",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "94df0a33-69a0-46a4-af69-cccd655892ac",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "c8fc3410-f4a9-4761-9db0-677971d8c71f",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "612c6e4b-c797-4976-acbf-28c943a93f3b",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "d6c6f1a5-aa5e-45d0-8ab0-011a83979cde",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "10d8e00f-9c15-4f8f-b674-5a592077e941",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "0b2b2391-f345-46a2-b3fd-48cdd3d1ac04",
+      "result_id": "9f6826a9-498b-40b9-be36-6507365531aa"
+    },
+    {
+      "claim_id": "a30f8f2c-0985-4e6d-b5f3-3bda3ccef7fe",
+      "result_id": "f739a743-ff76-4295-915c-25fce0431f22"
+    },
+    {
+      "claim_id": "893b4e21-2f07-434a-974c-029404c6f700",
+      "result_id": "f739a743-ff76-4295-915c-25fce0431f22"
+    },
+    {
+      "claim_id": "a7bc16da-d9cc-480b-9e05-1413dbd72e8b",
+      "result_id": "f739a743-ff76-4295-915c-25fce0431f22"
+    },
+    {
+      "claim_id": "604f9a31-bccd-42b6-bf52-71b675a0a6bd",
+      "result_id": "f739a743-ff76-4295-915c-25fce0431f22"
+    },
+    {
+      "claim_id": "67d9e7ba-b1ff-46ea-b7a5-bf18035c029b",
+      "result_id": "f739a743-ff76-4295-915c-25fce0431f22"
+    },
+    {
+      "claim_id": "19eae265-644c-4b4a-91a4-05ba78317bac",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "dc91eb89-1114-4c47-b7b5-8f718e30bb84",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "df29b9aa-8b31-4109-8658-ee7d6c81868d",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "8037280a-b1bf-44d4-828c-6f02f332f989",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "5ee2befa-8e55-47ef-bbe0-2c94b5657571",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "d4a1434a-8bd9-4664-b566-14eb0be42d10",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "1244c482-6009-4e38-8f51-47badd152670",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "f0b6f24d-ba35-4482-90db-88c655799d29",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "ee90552d-a48c-4f89-a88a-c7c73b19fea0",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "88598104-4715-43cc-9ed9-9848cd8e2e89",
+      "result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c"
+    },
+    {
+      "claim_id": "927a7816-af38-4721-a3f0-40135b31a9f2",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "edba309c-3895-4468-bd87-2a70943515b2",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "a9d76631-0921-43d2-8ba7-d36696e5fe41",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "71481402-7cc7-4796-98f5-6e330f6b4b05",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "69481f3a-5c56-4c49-be3a-a069135dd622",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "ce338494-00e9-4ffd-90a8-869ad77a80dc",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "bf3b971f-f39d-4206-9f29-3bee2c219f79",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "b4fa3852-b8f8-4a05-b49e-9104096e8713",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "2e2603f2-02b4-4e89-b915-d2b818659e27",
+      "result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7"
+    },
+    {
+      "claim_id": "68b80342-136b-40e2-bb4c-39169c5d9c01",
+      "result_id": "c5c9c8ad-2895-4636-9661-0e436022629b"
+    },
+    {
+      "claim_id": "e6b54ccc-c88c-4a84-b08f-d396c77aec3a",
+      "result_id": "c5c9c8ad-2895-4636-9661-0e436022629b"
+    },
+    {
+      "claim_id": "2ec9b1bb-39c9-478d-8aa8-6ef64e1e339f",
+      "result_id": "c5c9c8ad-2895-4636-9661-0e436022629b"
+    },
+    {
+      "claim_id": "efc9c6f6-0462-4905-b3b0-65b97371f9fe",
+      "result_id": "c5c9c8ad-2895-4636-9661-0e436022629b"
+    },
+    {
+      "claim_id": "2a637c41-f38e-448b-85e7-be83f47bbe49",
+      "result_id": "c5c9c8ad-2895-4636-9661-0e436022629b"
+    },
+    {
+      "claim_id": "11cd3368-33cb-48e5-a50b-833bfe8104dd",
+      "result_id": "c5c9c8ad-2895-4636-9661-0e436022629b"
+    },
+    {
+      "claim_id": "af4dd49c-c295-480c-a8d8-25f68d904e0b",
+      "result_id": "c5c9c8ad-2895-4636-9661-0e436022629b"
+    },
+    {
+      "claim_id": "5c8988db-e66b-41a5-9d04-34f15f7ba747",
+      "result_id": "c5c9c8ad-2895-4636-9661-0e436022629b"
+    },
+    {
+      "claim_id": "c1fc6ed5-d253-49e9-8c45-99c85cdd5eaf",
+      "result_id": "018a062e-5ec2-49a1-bc18-45e81ad96e9a"
+    },
+    {
+      "claim_id": "285a3b44-cf55-41d9-89f6-656370327548",
+      "result_id": "018a062e-5ec2-49a1-bc18-45e81ad96e9a"
+    },
+    {
+      "claim_id": "56d11fc8-cf28-43e4-8cdf-e0ef7ee6af8b",
+      "result_id": "018a062e-5ec2-49a1-bc18-45e81ad96e9a"
+    },
+    {
+      "claim_id": "0de8fd2c-3d1a-4653-a4a2-5d1f7c853704",
+      "result_id": "018a062e-5ec2-49a1-bc18-45e81ad96e9a"
+    },
+    {
+      "claim_id": "9a13c6f2-86d5-4886-8e10-8bc873221c3e",
+      "result_id": "018a062e-5ec2-49a1-bc18-45e81ad96e9a"
+    },
+    {
+      "claim_id": "307130a6-686d-4e9b-be20-3b60a0323346",
+      "result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b"
+    },
+    {
+      "claim_id": "33ebf9f6-0026-400f-a2bf-3568ad21ca90",
+      "result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b"
+    },
+    {
+      "claim_id": "c62164ae-5dc6-479e-9f69-2d78c7d389c9",
+      "result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b"
+    },
+    {
+      "claim_id": "4032d060-93d1-4fd4-8446-5234517b95eb",
+      "result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b"
+    },
+    {
+      "claim_id": "f1e8e62f-68f2-46c3-9929-09b344dd01a7",
+      "result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b"
+    },
+    {
+      "claim_id": "d2d12236-bd61-4a0f-8676-5cca2b76e8cf",
+      "result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b"
+    },
+    {
+      "claim_id": "569489fb-e203-445f-9e4d-89f28594590b",
+      "result_id": "7cdb98ce-aa14-4a4d-814e-d8d7bd81d224"
+    },
+    {
+      "claim_id": "fb3be985-88bd-47bb-82c8-f7740b2cfeac",
+      "result_id": "7cdb98ce-aa14-4a4d-814e-d8d7bd81d224"
+    },
+    {
+      "claim_id": "5f1a72ad-eaad-4ac8-9eac-9dde97c03288",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "3dc9e7ac-650f-4049-ac5d-84c86245a3c2",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "36d5f3ac-c7cb-4b35-98b5-44fa002b0dde",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "fed871af-2c83-4f8a-9ecf-c40db65928d2",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "3b02bc79-6109-48e0-b4a6-670bc913aa53",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "1b66e65b-9ae4-499e-8d81-322e02cf83f1",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "48694136-8af1-401f-8d30-b1358c47c998",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "f0e146af-72af-49fe-82ce-a5d9d04e7365",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "db1688a0-c73a-4a89-9756-ff0180ae8866",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "0ed5d01a-9465-425f-99d1-3166be209b2c",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "42c9bd55-5861-49f9-a423-ab34222cb4f5",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "bd406256-cd07-46be-a114-da2396f51d24",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "640e6a21-499e-46af-b4d0-793aaab4b495",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "70834ea3-e0e8-494c-9bd7-c7d36002d7ca",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "99f71166-cb1d-49d5-9640-916bd0306974",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "911f8834-e1c2-48e0-8000-e3372a77d72f",
+      "result_id": "3a13d144-d770-42f2-ac46-87222f111ec4"
+    },
+    {
+      "claim_id": "0fbc86dc-1f81-4a0c-a869-b9f1cad76dc2",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "436e2d2a-6fc7-4772-a24b-8fca81e5b50c",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "4377ba43-3a63-4a25-94b5-59c36c44a351",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "e318aae0-a625-4532-8904-77d0e6a6f789",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "94df0a33-69a0-46a4-af69-cccd655892ac",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "c8fc3410-f4a9-4761-9db0-677971d8c71f",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "612c6e4b-c797-4976-acbf-28c943a93f3b",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "d6c6f1a5-aa5e-45d0-8ab0-011a83979cde",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "a30f8f2c-0985-4e6d-b5f3-3bda3ccef7fe",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "893b4e21-2f07-434a-974c-029404c6f700",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "a7bc16da-d9cc-480b-9e05-1413dbd72e8b",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "604f9a31-bccd-42b6-bf52-71b675a0a6bd",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "19eae265-644c-4b4a-91a4-05ba78317bac",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "10d8e00f-9c15-4f8f-b674-5a592077e941",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "0b2b2391-f345-46a2-b3fd-48cdd3d1ac04",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "67d9e7ba-b1ff-46ea-b7a5-bf18035c029b",
+      "result_id": "8b011062-f259-40ad-b330-e26da92e583c"
+    },
+    {
+      "claim_id": "927a7816-af38-4721-a3f0-40135b31a9f2",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "edba309c-3895-4468-bd87-2a70943515b2",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "a9d76631-0921-43d2-8ba7-d36696e5fe41",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "71481402-7cc7-4796-98f5-6e330f6b4b05",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "69481f3a-5c56-4c49-be3a-a069135dd622",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "ce338494-00e9-4ffd-90a8-869ad77a80dc",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "bf3b971f-f39d-4206-9f29-3bee2c219f79",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "b4fa3852-b8f8-4a05-b49e-9104096e8713",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "2e2603f2-02b4-4e89-b915-d2b818659e27",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "33ebf9f6-0026-400f-a2bf-3568ad21ca90",
+      "result_id": "624fa853-8130-428c-b9f4-aab632f8d3be"
+    },
+    {
+      "claim_id": "68b80342-136b-40e2-bb4c-39169c5d9c01",
+      "result_id": "1b396f47-346b-45dd-a346-db4210dd6022"
+    },
+    {
+      "claim_id": "e6b54ccc-c88c-4a84-b08f-d396c77aec3a",
+      "result_id": "1b396f47-346b-45dd-a346-db4210dd6022"
+    },
+    {
+      "claim_id": "2ec9b1bb-39c9-478d-8aa8-6ef64e1e339f",
+      "result_id": "1b396f47-346b-45dd-a346-db4210dd6022"
+    },
+    {
+      "claim_id": "efc9c6f6-0462-4905-b3b0-65b97371f9fe",
+      "result_id": "1b396f47-346b-45dd-a346-db4210dd6022"
+    },
+    {
+      "claim_id": "2a637c41-f38e-448b-85e7-be83f47bbe49",
+      "result_id": "1b396f47-346b-45dd-a346-db4210dd6022"
+    },
+    {
+      "claim_id": "11cd3368-33cb-48e5-a50b-833bfe8104dd",
+      "result_id": "1b396f47-346b-45dd-a346-db4210dd6022"
+    },
+    {
+      "claim_id": "af4dd49c-c295-480c-a8d8-25f68d904e0b",
+      "result_id": "1b396f47-346b-45dd-a346-db4210dd6022"
+    },
+    {
+      "claim_id": "5c8988db-e66b-41a5-9d04-34f15f7ba747",
+      "result_id": "1b396f47-346b-45dd-a346-db4210dd6022"
+    },
+    {
+      "claim_id": "307130a6-686d-4e9b-be20-3b60a0323346",
+      "result_id": "e347899c-db4f-482f-b926-87a84ebb6c40"
+    },
+    {
+      "claim_id": "c1fc6ed5-d253-49e9-8c45-99c85cdd5eaf",
+      "result_id": "e347899c-db4f-482f-b926-87a84ebb6c40"
+    },
+    {
+      "claim_id": "285a3b44-cf55-41d9-89f6-656370327548",
+      "result_id": "e347899c-db4f-482f-b926-87a84ebb6c40"
+    },
+    {
+      "claim_id": "4032d060-93d1-4fd4-8446-5234517b95eb",
+      "result_id": "e347899c-db4f-482f-b926-87a84ebb6c40"
+    },
+    {
+      "claim_id": "56d11fc8-cf28-43e4-8cdf-e0ef7ee6af8b",
+      "result_id": "e347899c-db4f-482f-b926-87a84ebb6c40"
+    },
+    {
+      "claim_id": "f1e8e62f-68f2-46c3-9929-09b344dd01a7",
+      "result_id": "e347899c-db4f-482f-b926-87a84ebb6c40"
+    },
+    {
+      "claim_id": "c4802d5a-9f2f-4a76-bc7d-3861e4d3bf11",
+      "result_id": "b0119579-7d4b-4ae1-a665-073d3805a562"
+    },
+    {
+      "claim_id": "487e22e0-7e8c-4844-a3da-1b4f2bb421e5",
+      "result_id": "b0119579-7d4b-4ae1-a665-073d3805a562"
+    },
+    {
+      "claim_id": "ff841113-46b1-461f-8b62-b5a0c4a983f7",
+      "result_id": "b0119579-7d4b-4ae1-a665-073d3805a562"
+    },
+    {
+      "claim_id": "c62164ae-5dc6-479e-9f69-2d78c7d389c9",
+      "result_id": "b0119579-7d4b-4ae1-a665-073d3805a562"
+    },
+    {
+      "claim_id": "d2d12236-bd61-4a0f-8676-5cca2b76e8cf",
+      "result_id": "b0119579-7d4b-4ae1-a665-073d3805a562"
+    },
+    {
+      "claim_id": "7f0b8d85-7f10-46c6-9647-56d044ceb437",
+      "result_id": "b063c032-6bf2-4157-be19-288c0b5c2d7f"
+    },
+    {
+      "claim_id": "989160ac-ddfc-422b-81ba-7dccfaeee53f",
+      "result_id": "b063c032-6bf2-4157-be19-288c0b5c2d7f"
+    },
+    {
+      "claim_id": "17469683-8b0c-40e2-b6b3-e799cbb65f51",
+      "result_id": "b063c032-6bf2-4157-be19-288c0b5c2d7f"
+    },
+    {
+      "claim_id": "4767454c-7106-4663-a332-0f49208c8940",
+      "result_id": "b063c032-6bf2-4157-be19-288c0b5c2d7f"
+    },
+    {
+      "claim_id": "097441ba-465e-48ff-9765-b0fdb77beb66",
+      "result_id": "b063c032-6bf2-4157-be19-288c0b5c2d7f"
+    },
+    {
+      "claim_id": "1e56557a-8946-4e8c-87c7-cb83b60d7801",
+      "result_id": "b063c032-6bf2-4157-be19-288c0b5c2d7f"
+    },
+    {
+      "claim_id": "171e8e86-d882-4427-9f49-5be41d150456",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "52ab021a-854e-4ba3-a552-1a0d061d3e75",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "131c8933-fe01-40ef-8d75-83449e61a8e5",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "825c9783-f50d-4a5f-b4ba-936ea687e5ec",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "a377f80e-7404-4dfb-b58a-bf26e878c2b6",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "d612f605-e251-4361-ab12-033bb9b04ff7",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "a6ff0cc2-b109-4573-b294-52b26d1c7634",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "248bafd2-7de8-4fdd-a375-4ff30c18f10f",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "d5add56e-6a79-4c88-b0f6-a5694cf0c316",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "86e00772-0746-4c8f-80b3-bf1bb49ebd6d",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "4b047796-827e-4194-8684-d2fe70945642",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "7000ac08-42fa-4931-a78e-b3b8e81260e6",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "c0e343e4-e6e3-4bab-bfc1-ec7f7365bbcc",
+      "result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137"
+    },
+    {
+      "claim_id": "dc91eb89-1114-4c47-b7b5-8f718e30bb84",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "df29b9aa-8b31-4109-8658-ee7d6c81868d",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "8037280a-b1bf-44d4-828c-6f02f332f989",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "5ee2befa-8e55-47ef-bbe0-2c94b5657571",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "d4a1434a-8bd9-4664-b566-14eb0be42d10",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "1244c482-6009-4e38-8f51-47badd152670",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "f0b6f24d-ba35-4482-90db-88c655799d29",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "ee90552d-a48c-4f89-a88a-c7c73b19fea0",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "88598104-4715-43cc-9ed9-9848cd8e2e89",
+      "result_id": "c3819a78-e212-4950-ba1b-c1306168eec4"
+    },
+    {
+      "claim_id": "0de8fd2c-3d1a-4653-a4a2-5d1f7c853704",
+      "result_id": "5d92b275-cc49-430c-b8db-e3a304b52573"
+    },
+    {
+      "claim_id": "9a13c6f2-86d5-4886-8e10-8bc873221c3e",
+      "result_id": "5d92b275-cc49-430c-b8db-e3a304b52573"
+    },
+    {
+      "claim_id": "5f1a72ad-eaad-4ac8-9eac-9dde97c03288",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "3dc9e7ac-650f-4049-ac5d-84c86245a3c2",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "36d5f3ac-c7cb-4b35-98b5-44fa002b0dde",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "fed871af-2c83-4f8a-9ecf-c40db65928d2",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "3b02bc79-6109-48e0-b4a6-670bc913aa53",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "1b66e65b-9ae4-499e-8d81-322e02cf83f1",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "48694136-8af1-401f-8d30-b1358c47c998",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "f0e146af-72af-49fe-82ce-a5d9d04e7365",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "db1688a0-c73a-4a89-9756-ff0180ae8866",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "0ed5d01a-9465-425f-99d1-3166be209b2c",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "42c9bd55-5861-49f9-a423-ab34222cb4f5",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "bd406256-cd07-46be-a114-da2396f51d24",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "640e6a21-499e-46af-b4d0-793aaab4b495",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "70834ea3-e0e8-494c-9bd7-c7d36002d7ca",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "99f71166-cb1d-49d5-9640-916bd0306974",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "911f8834-e1c2-48e0-8000-e3372a77d72f",
+      "result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d"
+    },
+    {
+      "claim_id": "569489fb-e203-445f-9e4d-89f28594590b",
+      "result_id": "87fc3502-7e2a-4dfc-9420-583280b96ced"
+    },
+    {
+      "claim_id": "fb3be985-88bd-47bb-82c8-f7740b2cfeac",
+      "result_id": "87fc3502-7e2a-4dfc-9420-583280b96ced"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "35e68f48-85d1-433e-a5df-cb6e8ba7dfc2",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "293042c9-9166-43c3-82d4-b80755c324b1",
+      "peer_result_id": "cd0f89a0-3d79-4825-8c87-8320899ef137",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on background claims C7-C19. Both evaluations recognize these as well-established foundational knowledge about photosynthetic reaction centers, supported by appropriate literature citations. No challenges from either evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "909db652-5b49-4637-8941-69b85b27fca1",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "c5c9c8ad-2895-4636-9661-0e436022629b",
+      "peer_result_id": "1b396f47-346b-45dd-a346-db4210dd6022",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on NSD analysis claims C5, C56-C61, C67. Both evaluations support the finding that expected saddling mode deformation is absent at 5 ps and 20 ps when HL\u2022\u2013 should be present. Peer reviewer explicitly acknowledges this contradicts the XFEL structure interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "5cfb19f8-64c7-4875-bf49-7e269e503f36",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "3a13d144-d770-42f2-ac46-87222f111ec4",
+      "peer_result_id": "6f2ee00c-5cba-4bb8-a014-93520daac02d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on computational methods C78-C93. Both evaluations accept the methodological approach as appropriate and rigorous. Peer reviewers describe calculations as 'systematic' and 'well prepared,' while OpenEval notes methods are standard with appropriate citations, though suggests some details could be more explicit.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "c75b349f-f7e5-49df-a1d7-7d17f95fd6ec",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "7cdb98ce-aa14-4a4d-814e-d8d7bd81d224",
+      "peer_result_id": "87fc3502-7e2a-4dfc-9420-583280b96ced",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on forward-looking claims C74-C75. Both evaluations accept these as reasonable suggestions for future research based on identified limitations. No challenges from either evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "6050756f-0344-40f0-bbb5-4b85859207d4",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d60a64f5-d89b-4a9f-a6fc-91c16d678ba7",
+      "peer_result_id": "624fa853-8130-428c-b9f4-aab632f8d3be",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on Em(HL) analysis claims C4, C48-C55 (90% overlap). Both evaluations support the finding that absence of expected Em(HL) stabilization at 5 ps and 20 ps indicates problems with XFEL structures. Peer reviewer explicitly states Em values 'are not clearly changed,' confirming the interpretation. OpenEval also includes C68 which peer review addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "1f428981-9fcc-45ad-897c-c904139c0686",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c",
+      "peer_result_id": "c3819a78-e212-4950-ba1b-c1306168eec4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on species-specific residue contributions C39-C47 (90% overlap). Both evaluations accept these detailed computational findings about residue-level contributions to energetic asymmetry. Peer reviewers implicitly accept through praise of 'systematic calculations,' while OpenEval explicitly validates the species comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "140116d7-9726-496b-a5cc-05eec1a92da2",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "9f6826a9-498b-40b9-be36-6507365531aa",
+      "peer_result_id": "8b011062-f259-40ad-b330-e26da92e583c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on Em calculations and residue contributions C2-C3, C28-C33, C64-C65 (62.5% overlap). Both evaluations support the computational findings. Peer review also includes claims about branch asymmetry (C34-C38, C66) that OpenEval addresses in separate result R4. Both note good agreement with prior work and experimental data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "e3ffd6fd-4280-47eb-aaf9-6df6ffc3b2c7",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f739a743-ff76-4295-915c-25fce0431f22",
+      "peer_result_id": "8b011062-f259-40ad-b330-e26da92e583c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on branch asymmetry claims C34-C37, C66 (31.2% overlap). OpenEval addresses these separately while peer review groups them with broader Em calculations. Both evaluations support the identification of key residue pairs responsible for energetic asymmetry across species.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "135ba535-8c97-4535-8f23-51d2c0ffbc74",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd",
+      "peer_result_id": "b063c032-6bf2-4157-be19-288c0b5c2d7f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on characterization of Dods et al. study C1, C20-C24 (66.7% overlap). Both evaluations accept these as accurate representations of the prior XFEL work being evaluated. OpenEval also includes C25-C27 about data quality concerns, which peer review addresses in R5.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "a33bb1c5-59f0-4b00-9851-e9a5a20c2d31",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "5dac6c7d-b7b0-4acc-9e92-33cc217f0abd",
+      "peer_result_id": "b0119579-7d4b-4ae1-a665-073d3805a562",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on XFEL data quality concerns C25-C27 (27.3% overlap). Both evaluations support the assessment that low resolution and noise in XFEL data are problematic. Peer reviewer explicitly agrees conformational changes at 2.8 \u00c5 resolution 'are not reliable enough.' Peer review also includes broader interpretation claims (C69, C73) addressed in OpenEval R9.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "7e82f18f-2b77-421f-a000-31be2c66df57",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b",
+      "peer_result_id": "e347899c-db4f-482f-b926-87a84ebb6c40",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Moderate agreement on main conclusion claims C6, C70, C72 (33.3% overlap). Both evaluations strongly support the central conclusion that structural changes in XFEL structures are not related to actual charge separation. Peer reviewers explicitly state authors 'found no clear link' and changes 'may reflect experimental errors.' OpenEval also includes C68-C69, C73 which peer review addresses across multiple results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "4673a996-24eb-4694-a29f-ab574a96d8c0",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "018a062e-5ec2-49a1-bc18-45e81ad96e9a",
+      "peer_result_id": "e347899c-db4f-482f-b926-87a84ebb6c40",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on QA analysis claims C62-C63, C71 (37.5% overlap). Both evaluations support findings about absence of expected Em(QA) stabilization. Peer review groups these with broader conclusion claims (C6, C70, C72) that OpenEval addresses in R9. OpenEval also includes validation claims C76-C77 addressed in peer R9.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "3e5deb06-8148-49ba-a232-8031c6849d24",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "018a062e-5ec2-49a1-bc18-45e81ad96e9a",
+      "peer_result_id": "5d92b275-cc49-430c-b8db-e3a304b52573",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on computational validation C76-C77 (40% overlap). Both evaluations accept the validation of computational methods through comparison with experimental Em(QA) values. Peer reviewers implicitly accept through praise of 'systematic calculations,' while OpenEval explicitly notes this validates the computational approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "cb46e271-bb29-4783-a8c5-807bb634080a",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b",
+      "peer_result_id": "b0119579-7d4b-4ae1-a665-073d3805a562",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on interpretation of data limitations C69, C73 (22.2% overlap). Both evaluations support the conclusion that observed changes may reflect experimental errors rather than real structural changes. Peer review also addresses data quality concerns (C25-C27) that OpenEval includes in R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "01961d95-758d-46c5-a6fc-8386bae77bf2",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "9e04a12f-deea-47fa-bf3f-a5c416591a1b",
+      "peer_result_id": "624fa853-8130-428c-b9f4-aab632f8d3be",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C68 (6.7% overlap). Both evaluations support this claim about lack of correlation between structural changes and electron transfer signatures, though peer review groups it with Em(HL) analysis while OpenEval includes it in the main conclusion discussion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    },
+    {
+      "id": "5e27d9b9-5349-4d35-956e-62c02030bbe0",
+      "submission_id": "c7b75b1f-a0a5-4365-98cf-bce95e076f8b",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "2bb7e1ba-f131-4485-b0e3-100ecc4aa97c",
+      "peer_result_id": "8b011062-f259-40ad-b330-e26da92e583c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C38 (4% overlap). Both evaluations support this claim about computational findings, though it represents a small connection between OpenEval's species-specific analysis and peer review's broader acceptance of Em calculations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:03:48.945991Z"
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C98",
+      "C99"
+    ],
+    "result": "TF binding position dictates chromatin fiber folding and microdomain formation in a linker DNA length-dependent manner. Fibers with medium (44 bp) and long (62 bp) linker DNAs show clear microdomains in ensemble contact maps that depend on TF binding positions, while short linker (26 bp) fibers show more diffuse microdomains due to fiber rigidity. Life-like fibers with heterogeneous linker lengths also form microdomains, though these are less defined than uniform fibers due to fiber polymorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C24-C35, C98-C99 are supported by contact maps (Figure 1), clustering analysis (Figure 1\u2014figure supplements 1-2), and structural data showing clear linker-length-dependent effects on microdomain formation. The mechanistic explanation linking fiber flexibility to TF-mediated folding is well-supported by both simulation data and cited literature on chromatin structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Microdomains emerge as ensemble properties from TF binding, visible in population-averaged contact maps but not in single-trajectory maps. This parallels experimental Hi-C data where ensemble TAD structures result from preferential positioning of boundaries at protein binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by the comparison of single-trajectory versus ensemble contact maps (Figure 2) and agreement with experimental Hi-C data (Bintu et al., 2018). The methodological description is clear and the analogy to experimental Hi-C is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C105"
+    ],
+    "result": "TF binding effects on chromatin compaction depend on linker DNA length. Short linker fibers (26-35 bp) show no increase in packing ratio upon TF binding, with saturation at 25% TF concentration. Medium and long linker fibers (44-80 bp) show increased packing ratios and sedimentation coefficients upon TF binding, with larger effects for longer linkers. Life-like fibers behave similarly to medium/long linker fibers but are less sensitive to TF concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55, C105 are well-supported by quantitative data in Figure 3A and Figure 3\u2014figure supplement 1, showing clear trends in packing ratios and sedimentation coefficients across different linker lengths and TF concentrations. The structural basis is supported by fiber configurations in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Histone acetylation diminishes the effect of TF binding on chromatin compaction. When acetylation islands are incorporated, the trends in packing ratios and sedimentation coefficients remain similar to wildtype but with reduced magnitude, because acetylation disrupts internucleosome contacts (opposite effect to TF binding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C111-C114 are supported by data in Figure 3B showing reduced TF effects in acetylated systems, and by prior work (Collepardo-Guevara et al., 2015) establishing acetylation's role in opening chromatin. The mechanistic explanation of opposing effects is logical and data-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Linker histone (LH) binding impairs TF effects on chromatin architecture, particularly for short linker fibers. LH produces straighter, more rigid structures that compete with TF for chromatin compaction. For short linker fibers with LH, TF dimer interactions cannot form in many trajectories, indicating that LH-induced rigidity prevents TF function. The LH C-terminal domain competes for linker DNA with TF binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68, C115-C122 are supported by data in Figure 3C showing diminished TF effects with LH, structural data in Figure 4, and experimental evidence (Burge et al., 2022) showing LH C-terminal domain unbinding upon TF binding. The mechanistic explanation of competition and rigidity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C123",
+      "C124"
+    ],
+    "result": "Life-like fibers with heterogeneous linker lengths better accommodate simultaneous LH and TF binding compared to uniform fibers. The increase in packing ratio upon TF binding is slightly higher for life-like fibers with LH than wildtype, indicating that fiber fluidity (polymorphism) is essential for regulation by multiple protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C123-C124 are supported by data in Figure 3C showing that life-like fibers maintain TF responsiveness even with LH present, unlike uniform short-linker fibers. The interpretation regarding fiber fluidity is consistent with prior work (Collepardo-Guevara and Schlick, 2014) and the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C125"
+    ],
+    "result": "TF binding to the Eed gene increases internucleosome contacts, hairpin motifs, and hierarchical loops, leading to increased fiber compaction and occlusion of the promoter region. The contact matrix density increases by ~9%, sedimentation coefficient increases, radius of gyration decreases, and the promoter area and volume are reduced ~1.5-fold upon TF binding, providing a mechanism for Myc:Max-mediated repression of Eed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C88, C125 are well-supported by multiple lines of evidence: ensemble and single-trajectory contact maps (Figure 5A-B), contact frequency plots (Figure 5\u2014figure supplement 1), fiber structures (Figure 5C), and quantitative measurements in Table 1. The radii of gyration agree with experimental/theoretical values for similar-sized fibers (Kadam et al., 2023; Boettiger et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Increased LH density (0.8 LH/nucleosome) upon cell differentiation reverses TF-mediated repression of Eed. At this LH density, the fiber becomes more compact and rigid, preventing Myc:Max dimer interactions (only 1/20 trajectories showed dimer engagement). Systems with and without TF at high LH density exhibit similar properties, structures, and genomic contacts, implicating LH in gene activation by impairing repressive protein effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97, C126-C128 are supported by data in Figure 6, Table 1, and Figure 6\u2014figure supplement 1 showing that high LH density prevents TF-mediated changes. The biological context is supported by literature (Woodcock et al., 2006) and the mechanistic explanation is consistent with the fiber rigidity observed in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The simulation results agree with experimental observations that protein clustering produces TAD-like structures, silent chromatin has longer linker DNA than active chromatin, and longer linkers provide flexibility for loop formation and transcriptional repression. Life-like fibers are sensitive to TF binding but form less defined microdomains due to chromatin heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104, C106-C108 appropriately contextualize the simulation results with experimental Hi-C data (Rao et al., 2014; Ma et al., 2018; Hsieh et al., 2020), cryo-EM results (Dombrowski et al., 2022), and genomic observations (Valouev et al., 2011). The agreement between simulation and experiment strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The synergy between TF and LH binding in regulating gene expression agrees with experimental observations that LH depletion can both increase and decrease gene expression in mESC and down-regulate euchromatin genes in Drosophila. Epigenetic regulation by TFs depends on the complex interplay of multiple internal and external factors including LH, acetylation, and linker DNA length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 appropriately integrate the simulation findings with experimental observations (Fan et al., 2005; Vujatovic et al., 2012) showing complex LH effects on gene expression. The conclusion about multifactorial regulation is well-supported by the comprehensive simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on chromatin organization and Myc:Max biology: Nucleosomes are the basic repeating unit of chromatin; proteins like CTCF/cohesin, linker histones, and transcription factors regulate chromatin architecture; Myc:Max heterodimers bind E-boxes and can form heterotetramers to bridge distant genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide established background knowledge supported by appropriate citations to foundational and recent literature. These are well-accepted facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior computational work has studied TF binding at nucleosome level (Oct4, Sox2) and at kb/chromosome level (polymer models), and HMG protein binding at nucleosome resolution, but TF effects on chromatin architecture at nucleosome resolution have not been studied before this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 accurately summarize prior computational work with appropriate citations (Huertas et al., 2020; Tan and Takada, 2020; Brackley et al., 2013; Buckle et al., 2018; Bajpai et al., 2017) and correctly identify the gap this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior work from this group established that histone acetylation affects chromatin compaction, nucleosome clutch size/compaction, and domain segregation; LH density controls chromatin folding, compaction, and clutch properties; and LH and acetylation act cooperatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 accurately cite the authors' prior work (Collepardo-Guevara et al., 2015; Portillo-Ledesma et al., 2021, 2022; Rao et al., 2017; Bascom and Schlick, 2017; Grigoryev et al., 2016) establishing the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C89"
+    ],
+    "result": "Biological context for Eed gene study: Myc maintains pluripotency by activating pluripotency genes and repressing differentiation genes; Eed encodes a Polycomb protein required for silencing pluripotency genes upon ESC differentiation, so Eed is repressed in ESCs; less accessible promoters impair transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C89 provide appropriate biological context supported by citations (Smith et al., 2010; Krepelova et al., 2014; Obier et al., 2015) and established knowledge of gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Histone tails extend from nucleosome cores and interact with other nucleosomes and linker DNA; acetylation makes tails globular, impairing internucleosome interactions and opening chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 cite established work (Arya and Schlick, 2006; Collepardo-Guevara et al., 2015) on histone tail structure and acetylation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "LH depletion causes excess loading of condensin and topoisomerase II to chromosomes, producing aberrant chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 appropriately cites experimental work (Choppakatla et al., 2021) showing similar effects of LH on other chromatin-binding proteins, supporting the generality of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Microdomains and loops affect access to transcription start sites, translating into regulation of cell differentiation, development, and disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C134 make broad statements about biological implications that go beyond what the simulations directly demonstrate. While C133 is reasonable based on general knowledge, C134's claims about disease progression are speculative and not directly supported by the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Genome regulation involves many factors beyond TFs; the implicit TF modeling provides clear trends and insights; future explicit modeling will increase understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 appropriately acknowledge limitations (C135), assess the modeling approach (C136), and suggest future directions (C137). These are reasonable statements about the scope and limitations of the work.",
+    "result_type": "MINOR"
+  }
+]

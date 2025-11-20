@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "PCCs are rare neuroendocrine tumors originating from adrenal chromaffin cells with diverse driver alterations. Despite molecular classification efforts, 50-60% remain unclassified, and all PCCs are now considered malignant with metastatic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by citations to established literature. These claims provide essential background context about PCC biology, classification challenges, and clinical significance, forming the foundation for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C81",
+      "C82"
+    ],
+    "result": "Single-cell RNA sequencing of 133,894 cells from PCC specimens identified 13 distinct cell types in the tumor microenvironment, with pathological validation confirming PCC characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C81-C82 are supported by scRNA-seq data processing, marker gene expression analysis, and histological/immunohistochemical validation. The cell type identification using established markers and correlation analysis is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Intra-tumoral heterogeneity was less extensive than inter-individual heterogeneity in PCCs, with distinct cellular composition patterns distinguishing patients despite variable PASS scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C19-C22 are supported by correlation analysis and cell type composition data. The finding that scRNA-seq reveals different heterogeneity patterns than PASS scoring is well-documented with quantitative evidence from Figures 2A-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CopyKAT algorithm successfully distinguished tumor cells from normal cells based on CNV patterns, identifying two distinct tumor clusters with different chromosomal alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C83-C85 are supported by CNV analysis and marker gene expression validation. The use of CopyKAT is appropriately cited and the distinction between aneuploid tumor cells and diploid normal cells is validated by marker expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C86",
+      "C87"
+    ],
+    "result": "Unclassified PCCs were divided into metabolism-type (marked by NDUFA4L2/COX4I2) and kinase-type (marked by RET/PNMT) based on gene expression and CNV patterns, validated by immunohistochemistry and corresponding to TCGA classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C27-C35 are well-supported by scRNA-seq data, GO enrichment analysis, and protein-level validation. The classification is biologically coherent with established knowledge (C29-C31) and appropriately linked to TCGA categories (C86-C87). However, the sample size is limited (n=4 sporadic, n=1 VHL).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C88",
+      "C89"
+    ],
+    "result": "Clinical and molecular features of kinase-type PCCs align with TCGA kinase-signaling classification, showing elevated catecholamine metabolites and PNMT expression. The VHL patient displays metabolic reprogramming consistent with metabolism-type classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C88-C89 are supported by clinical data and literature citations. The correlation between molecular classification and clinical phenotype strengthens the validity of the proposed classification scheme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C90"
+    ],
+    "result": "Trajectory analysis revealed that metabolism-type PCCs display consistently active metabolism with increasing metastasis potential over tumor evolution, marked by early expression of metabolic genes and late upregulation of invasion-promoting genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C37-C40 are supported by pseudotime trajectory analysis. The progression from tumor suppressor (SPINT2) to oncogene (JUNB) expression and upregulation of EMT markers (S100A4, TAGLN) provides coherent evidence for increased metastatic potential. Claim C90 appropriately infers higher metastatic potential from gene expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C91"
+    ],
+    "result": "Kinase-type PCCs showed decreased epinephrine synthesis and acquisition of neuron-like phenotypes during evolution, with clonal shift from subcluster 1 to 2 and late RET upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C41-C45 are supported by pseudotime analysis and validated by prior literature on RET-associated neuron-like phenotypes. The temporal dynamics of PNMT (early) versus neuron-specific genes (late) are clearly demonstrated in Figure 5F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Metabolism-type PCCs exhibit activation of the annexin pathway (primarily ANXA1-FPR1) and strong inflammatory response, with elevated neutrophils and monocytes/macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C46-C50 are supported by CellChat analysis, GSEA enrichment, and cell composition data. The connection between annexin pathway activation and inflammatory response is well-established in cited literature (C48), and the elevated immune cell proportions provide mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C51",
+      "C52",
+      "C53",
+      "C92",
+      "C93"
+    ],
+    "result": "The VHL patient (P5) showed VEGF pathway activation through PLGF-VEGFR1 and VEGFA-VEGFR1/2 pairs, consistent with vascular endothelial hyperplasia characteristic of VHL syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C51-C53 are supported by CellChat analysis and gene expression data. The consistency with known VHL syndrome phenotype (C92) and elevated endothelial cell proportion strengthens the finding. Claim C93 appropriately infers functional consequences from expression patterns and established pathway knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C94"
+    ],
+    "result": "Kinase-type PCCs display FGF signaling activation through FGF1-FGFR1 interactions among tumor, stromal, and immune cells, regulating tumor proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C54-C57 are supported by CellChat analysis and expression data. The cell-cell communication inference is appropriately validated by literature citation (C57). Claim C94 reasonably infers functional significance from expression patterns and prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C95"
+    ],
+    "result": "Kinase-type PCCs may benefit from FGFR inhibitors based on FGF pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is speculative and based solely on pathway activation without functional validation. While C95 cites literature supporting FGFR inhibitor effects on proliferation, no experimental evidence is provided for PCCs specifically. This therapeutic suggestion requires validation in follow-up studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Both PCC types lack CD8+ T cell infiltration, but only kinase-type PCCs show downregulated HLA-I expression, suggesting distinct immune escape mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C59-C64 are supported by multispectral immunofluorescence, scRNA-seq expression analysis, and immunohistochemistry. The differential HLA-I expression between types is well-documented. Claim C61 appropriately infers immune evasion from lack of tumor-T cell communication, though the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Eight immune cell types were identified with altered proportions in tumor versus normal tissue. CD8+ T cells were rare and restricted to tumor stroma, indicating immune escape in both PCC types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by marker-based cell type identification and multispectral immunofluorescence validation. The spatial restriction of CD8+ T cells to stroma (not tumor parenchyma) is clearly demonstrated in Figure 7G, providing strong evidence for immune escape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C70",
+      "C71"
+    ],
+    "result": "Kinase-type PCCs exhibit HLA-I downregulation possibly regulated by RET, based on co-expression patterns and prior literature on kinase regulation of HLA-I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C13 is supported by expression and IHC data, but C14 and C71 are speculative. While C70 cites literature on kinase regulation of HLA-I, the direct regulatory relationship between RET and HLA-I in PCCs is not experimentally validated. The correlation is suggestive but requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15",
+      "C72",
+      "C97"
+    ],
+    "result": "Kinase-type PCCs have potential for combined kinase inhibitor and immunotherapy based on HLA-I downregulation and RET expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15 and C97 are speculative therapeutic suggestions without experimental validation. While C72 establishes RET inhibitor approval for other cancers, the efficacy in PCCs and potential synergy with immunotherapy remain unproven. This requires clinical validation as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C96"
+    ],
+    "result": "Immunotherapy application to metabolism-type PCCs is likely unsuitable despite antigen presentation ability, though the immune escape mechanism requires further exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C16 is speculative based on lack of CD8+ T cell infiltration despite HLA-I expression. The paradox of antigen presentation without T cell recruitment (C96) indicates incomplete mechanistic understanding. The therapeutic conclusion is premature without understanding the escape mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Current PCC classification systems leave 50-60% unclassified, and existing therapies show limited efficacy with low response rates and significant limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are well-supported by citations to prior literature, establishing the clinical need for improved classification and therapeutic strategies. These claims provide important context for the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Whole exome sequencing identified somatic mutations in sporadic PCCs (JAK2, ARHGEF39, KMT2D, MST1) and germline VHL mutation in the hereditary case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by WES data in supplementary files. The mutations identified do not fit established TCGA categories, justifying the focus on unclassified PCCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Study limitations include single VHL patient, no other hereditary types, no metastatic tumors, and limited sporadic cases due to low PCC incidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are appropriately acknowledged limitations by the authors. These constraints affect generalizability and highlight the need for larger, more diverse cohorts in future studies.",
+    "result_type": "MINOR"
+  }
+]

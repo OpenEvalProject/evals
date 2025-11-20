@@ -1,0 +1,2559 @@
+{
+  "submission": {
+    "id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:19:01.570814Z",
+    "updated_at": "2025-11-20T20:19:01.570814Z"
+  },
+  "content": [
+    {
+      "id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "content_type": "manuscript",
+      "content_text": "# Splicing factor SRSF1 is essential for homing of precursor spermatogonial stem cells in mice\n\n## Authors\n\n- Longjie Sun<sup>1</sup> ([ORCID: 0000-0002-1285-3823](https://orcid.org/0000-0002-1285-3823))\n- Zheng Lv<sup>1</sup>\n- Xuexue Chen<sup>1</sup>\n- Rong Ye<sup>2</sup>\n- Shuang Tian<sup>1</sup>\n- Chaofan Wang<sup>1</sup>\n- Xiaomei Xie<sup>1</sup>\n- Lu Yan<sup>1</sup>\n- Xiaohong Yao<sup>1</sup>\n- Yujing Shao<sup>1</sup>\n- Sheng Cui<sup>3</sup> ([ORCID: 0000-0002-3826-3768](https://orcid.org/0000-0002-3826-3768))\n- Juan Chen<sup>4</sup> \u2020\n- Jiali Liu<sup>1</sup> ([ORCID: 0000-0002-6214-569X](https://orcid.org/0000-0002-6214-569X)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Animal Biotech Breeding, College of Biological Sciences, China Agricultural University Beijing China ([ROR:04v3ywz14](https://ror.org/04v3ywz14))\n2. Key Laboratory of RNA Biology, Institute of Biophysics, Chinese Academy of Sciences Beijing China ([ROR:01tyv8576](https://ror.org/01tyv8576))\n3. College of Veterinary Medicine, Yangzhou University Jiangsu China ([ROR:03tqb8s11](https://ror.org/03tqb8s11))\n4. Key Laboratory of Precision Nutrition and Food Quality, Department of Nutrition and Health, China, Agricultural University Beijing China ([ROR:04v3ywz14](https://ror.org/04v3ywz14))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpermatogonial stem cells (SSCs) are essential for continuous spermatogenesis and male fertility. The underlying mechanisms of alternative splicing (AS) in mouse SSCs are still largely unclear. We demonstrated that SRSF1 is essential for gene expression and splicing in mouse SSCs. Crosslinking immunoprecipitation and sequencing data revealed that spermatogonia-related genes (e.g. Plzf, Id4, Setdb1, Stra8, Tial1/Tiar, Bcas2, Ddx5, Srsf10, Uhrf1, and Bud31) were bound by SRSF1 in the mouse testes. Specific deletion of Srsf1 in mouse germ cells impairs homing of precursor SSCs leading to male infertility. Whole-mount staining data showed the absence of germ cells in the testes of adult conditional knockout (cKO) mice, which indicates Sertoli cell-only syndrome in cKO mice. The expression of spermatogonia-related genes (e.g. Gfra1, Pou5f1, Plzf, Dnd1, Stra8, and Taf4b) was significantly reduced in the testes of cKO mice. Moreover, multiomics analysis suggests that SRSF1 may affect survival of spermatogonia by directly binding and regulating Tial1/Tiar expression through AS. In addition, immunoprecipitation mass spectrometry and co-immunoprecipitation data showed that SRSF1 interacts with RNA splicing-related proteins (e.g. SART1, RBM15, and SRSF10). Collectively, our data reveal the critical role of SRSF1 in spermatogonia survival, which may provide a framework to elucidate the molecular mechanisms of the posttranscriptional network underlying homing of precursor SSCs.\n\n## Introduction\n\nSertoli cell-only syndrome (SCOS), also known as del Castillo syndrome or germ cell aplasia, is one of the most common causes of severe non-obstructive azoospermia (NOA) (Wang et al., 2023). SCOS is the presence of only Sertoli cells in the testicular tubules of the testes, with no germ cells present (Juul et al., 2014; Wang et al., 2023). It is well known that abnormal self-renewal and differentiation of spermatogonial stem cells (SSCs) lead to SCOS (Kanatsu-Shinohara and Shinohara, 2013; La and Hobbs, 2019). In mice, gonocytes begin homing at 0\u20133 days postpartum (dpp) and then develop into SSCs at 4\u20136 dpp for continuous self-renewal and differentiation (Lee and Shinohara, 2011; McLean et al., 2003; Tan and Wilkinson, 2020). The mechanisms regulating homing of precursor SSCs are hence crucial for forming SSC pools and establishing niches (Oatley and Brinster, 2012). Spermatogonia migrate to form two distinct subtypes in mice. The first subtype develops into precursor SSCs that provide an SSC population for adult spermatogenesis, whereas the second subtype transitions directly to differentiated spermatogonia that contribute to the first round of spermatogenesis but do not self-renew (Kluin and de Rooij, 1981; Law et al., 2019). Therefore, homing of precursor SSCs to establish niches is essential for SSC self-renewal and differentiation.\n\nMany transcription factors (e.g. FOXO1, PLZF, POU5F1, TAF4B, CHD4, BCL6B, BRACHYURY, ETV5, ID4, LHX1, POU3F1, DMRT1, NGN3, SOHLH1, SOHLH2, SOX3, and STAT3) promote SSC self-renewal and differentiation (Cafe et al., 2021; Song and Wilkinson, 2014). However, the molecular mechanisms of the posttranscriptional network underlying homing of precursor SSCs are not sufficiently clear. Previous studies have identified the key RNA-binding proteins DND1 and DDX5 in SSCs with a unique and dominant role in posttranscriptional regulation (Legrand et al., 2019; Yamaji et al., 2017). Surprisingly, recent studies have found that the RNA-binding proteins SRSF10, UHRF1, BUD31, and BCAS2 regulate alternative splicing (AS) in mouse spermatogonia (Liu et al., 2022; Liu et al., 2017; Qin et al., 2023; Zhou et al., 2022). It is well known that testes are rich in AS events (Mazin et al., 2021; Venables, 2002). Thus, understanding the mechanisms of AS in human reproduction can provide new insights into clinical diagnosis. However, the underlying mechanisms of how AS functions in homing of precursor SSCs are still largely unclear.\n\nSerine/arginine-rich splicing factor 1 (SRSF1, previously SF2/ASF) is a widely studied and important splicing factor involved in cancer progression, heart development, and thymus development (Du et al., 2021; Katsuyama et al., 2019; Katsuyama and Moulton, 2021; Liu et al., 2021; Lv et al., 2021; Qi et al., 2021; Xu et al., 2005). Our previous work has shown that SRSF1 deficiency impairs primordial follicle formation during meiotic prophase I and leads to primary ovarian insufficiency (Sun et al., 2023b). However, the underlying mechanisms by which SRSF1 regulates pre-mRNA splicing in mouse SSCs remain unknown. A mouse model with Srsf1 conditional deletion can effectively address this uncertainty. This study showed that specific deletion of Srsf1 in mouse germ cells leads to NOA by impairing homing of mouse precursor SSCs. We further verified that SRSF1 directly binds and regulates Tial1/Tiar expression via AS, which may be critical for homing of mouse precursor SSCs.\n\n## Results\n\n### SRSF1 may have a vital role in posttranscriptional regulation in the testes\n\nTo investigate the role of SRSF1 in spermatogenesis, the dynamic localisation of SRSF1 in the testis was evaluated. Fascinatingly, the results of SRSF1 and \u03b3H2AX co-staining revealed that SRSF1 was expressed during spermatogenesis (Figure 1A and Figure 1\u2014figure supplement 1). RT-qPCR and western blotting results showed that the expression of SRSF1 fluctuated during the developmental stages of the testes (Figure 1B and C). Concurrently, the results of SRSF1 and PLZF co-staining revealed that SRSF1 was highly expressed in the nuclei of spermatogonia (Figure 1D). To further explore the function of SRSF1 in regulating SSC self-renewal and differentiation, crosslinking immunoprecipitation and sequencing (CLIP-seq) was performed in adult mouse testes (Sun et al., 2023a). Gene Ontology (GO) enrichment analyses of the SRSF1 peak-containing genes revealed that spermatogenesis-related genes were regulated by SRSF1 (Figure 2A and Supplementary file 1). In combination with previous studies, we found that spermatogonia-related genes (e.g. Plzf, Id4, Setdb1, Stra8, Tial1/Tiar, Bcas2, Ddx5, Srsf10, Uhrf1, and Bud31) were bound by SRSF1. To provide in-depth insight into the binding of spermatogonia-associated genes, the SRSF1-binding peaks of the gene transcripts were shown by using Integrative Genomics Viewer (IGV) (Figure 2B). The co-staining results showed localisation and expression of the spermatogonia-related proteins in mouse testes (Figure 2C). Together, these results suggested that SRSF1 may have a vital role in posttranscriptional regulation in the testes, particularly during spermatogonial development.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig1-v1.jpg)\n\n**Figure 1.:** (A) Dynamic localisation of SRSF1 during spermatogenesis. Co-immunostaining was performed using SRSF1 and \u03b3H2AX antibodies in adult mouse testes. DNA was stained with DAPI. Scale bar, 20 \u03bcm. (B) Expression of Srsf1 in testes at different stages of development. The RT-qPCR data were normalised to Gapdh. N=3. (C) Western blotting of SRSF1 expression in testes at different stages of development. ACTB served as a loading control. The value in 16.5 days post-coitus (dpc) testes were set as 1.0, and the relative values of testes in other developmental periods are indicated. N=3. (D) Localisation and expression of SRSF1 in spermatogonia. Co-immunostaining was performed using PLZF and SRSF1 antibodies in 7 days postpartum (dpp), 14 dpp, and adult mouse testes. DNA was stained with DAPI. Arrowheads, spermatogonia. Scale bar, 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Co-immunostaining was performed using SRSF1 and \u03b3H2AX antibodies in adult mouse testes. DNA was stained with DAPI. Scale bar, 40 \u03bcm.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig2-v1.jpg)\n\n**Figure 2.:** (A) Network showing Gene Ontology (GO) enrichment analyses of SRSF1-binding genes. (B) Representative genome browser views of spermatogonia-related gene transcripts bound by SRSF1. Higher peaks are marked by a lavender area. (C) Localisation of the spermatogonia-related proteins in mouse testes. Scale bar, 5 \u03bcm.\n\n### SRSF1 deficiency leads to SCOS\n\nTo define the specific involvement of SRSF1 in spermatogonia, we studied the physiological roles of SRSF1 in vivo using a mouse model. Considering that global Srsf1 knockout is lethal in mice (Xu et al., 2005), we used a conditional allele of Srsf1 (Srsf1Fl) in which exons 2, 3, and 4 of Srsf1 are flanked by two loxP sites (Figure 3A). By crossing Srsf1Fl and Vasa-Cre mice, we obtained Vasa-Cre Srsf1Fl/del mice with Srsf1 deletion in germ cells (Figure 3A and B). We verified the absence of the SRSF1 protein in germ cells by co-immunofluorescence analyses with SRSF1 and PLZF antibodies (Figure 3C). Subsequently, the breeding experiment indicated that conditional knockout (cKO) mice had a standard mating capacity but that the absence of Srsf1 led to complete infertility in males (Figure 3D). Histological examination of cKO epididymides revealed that sperm could not be found in the cauda epididymis (Figure 3E). Considering the limitations of sectioning, the cauda epididymal sperm count further validated this conclusion (Figure 3F). It was clear that spermatogenesis in the testes was severely impaired. Therefore, we focused our attention on the testes. The adult cKO mice were normal in size (Figure 3G). However, the sizes of cKO mouse testes were significantly reduced (Figure 3H). Histological examination of cKO testis sections showed that no germ cells could be visualised, and only a large number of Sertoli cells were observed in the testes of cKO mice (Figure 3I). Together, these results demonstrated that SRSF1 is critical for spermatogenesis and that its absence leads to SCOS.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig3-v1.jpg)\n\n**Figure 3.:** (A) Vasa-Cre mice were crossed with Srsf1Fl/Fl mice to generate Srsf1 conditional knockout (cKO) mice. Cre-mediated deletion removed exons 2, 3, and 4 of Srsf1 and generated a null protein allele. (B) Genotyping PCR was performed using Vasa-Cre and Srsf1 primers. (C) Co-immunostaining of SRSF1 and PLZF in 7 days postpartum (dpp) control (Ctrl) and cKO testis. DNA was stained with DAPI. Scale bar, 10 \u03bcm. (D) Fertility test results showed a male infertility phenotype in the cKO mice (N=5) compared to the Ctrl mice (N=8). The number of pups per litter was determined in the cKO (N=5) and Ctrl (N=8) mice. (E) Haematoxylin-eosin-stained epididymis sections from adult Ctrl and cKO mice were obtained. Scale bar, 100 \u03bcm. (F) Cauda epididymal sperm counting was performed. N=3. (G) Normal body weight in cKO mice. The body sizes and weights of adult Ctrl and cKO mice are shown as the mean \u00b1\u2009SEM. N=3. (H) Testis atrophy in adult cKO mice. Testis sizes and weights/body of adult Ctrl and cKO mice are shown as the mean \u00b1 SEM. N=5. (I) Haematoxylin-eosin-stained testis sections from adult Ctrl and cKO mice were obtained. Scale bar, left panel: 200 \u03bcm, right panel: 100 \u03bcm. SC, Sertoli cell; SPG, spermatogonium; SPC, spermatocyte; RS, round spermatid; ES, elongated spermatid. Unpaired Student\u2019s t-test determined significance; exact p value p\u2009\u2265\u20090.05, ****p\u2009<\u20090.0001. The points and error bars represent the mean \u00b1 SEM.\n\n### Loss of SRSF1 impairs spermatogonia survival\n\nTo further confirm the absence of germ cells in the testes of cKO mice, PLZF and \u03b3H2AX co-staining was performed in adult mouse testes. These data suggested that SRSF1 deficiency impaired germ cell survival (Figure 4A). The results of VASA and TRA98 co-staining further confirmed this phenotype (Figure 4B). Considering the limitations of sectioning, we used whole-mount immunostaining to perform a comprehensive analysis and found that germ cells were indeed absent in the testes of adult cKO mice (Figure 4C). To dynamically analyse the loss of germ cells, we collected testes from 5 dpp, 7 dpp, and 14 dpp mice. Morphological results showed that the testes of 7 dpp and 14 dpp cKO mice were much smaller than those of Ctrl mice (Figure 5A). To determine the presence of germ cells in cKO testes, VASA staining was performed in 5 dpp, 7 dpp, and 14 dpp Ctrl and cKO testes. The results showed that germ cells were still present in cKO mice but were significantly reduced in 7 dpp and 14 dpp cKO testes (Figure 5B). The quantifications of germ cells per tubule showed a significant reduction in the number of 7 dpp and 14dpp cKO testes, especially 14 dpp cKO testes (Figure 5B). In addition, TUNEL results showed that apoptosis significantly increased in cKO testes (Figure 5C). These data suggested that the absence of SRSF1 causes apoptosis in a large number of spermatogonia that are unable to survive.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig4-v1.jpg)\n\n**Figure 4.:** (A) Co-immunostaining of PLZF and \u03b3H2AX in adult control (Ctrl) and cKO testis. DNA was stained with DAPI. Scale bar, right panel: 25 \u03bcm, other panels: 100 \u03bcm. (B) Co-immunostaining of VASA and TRA98 in adult Ctrl and cKO testis. DNA was stained with DAPI. Scale bar, right panel: 25 \u03bcm, other panels: 100 \u03bcm. (C) Whole-mount co-immunostaining of TRA98 and SOX9 in adult Ctrl and cKO testis. DNA was stained with DAPI. White dashed lines, boundary of the tubule. Scale bar, right panel: 20 \u03bcm, other panels: 100 \u03bcm.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig5-v1.jpg)\n\n**Figure 5.:** (A) Testis sizes of 5 days postpartum (dpp), 7 dpp, and 14 dpp control (Ctrl) and conditional knockout (cKO) mice are shown. The testis/body weight ratios (g/kg) of 5 dpp, 7 dpp, 14 dpp, and adult Ctrl and cKO mice are shown as the mean \u00b1\u2009SEM. N=4. (B) Immunostaining of VASA in 5 dpp, 7 dpp, and 14 dpp Ctrl and cKO testis. DNA was stained with DAPI. Scale bar, 200 \u03bcm. Number of VASA-positive cells per tubule is the mean\u2009\u00b1\u2009SEM. N=3. (C) TUNEL apoptosis assay was performed on sections from 7 dpp Ctrl and cKO testis. DNA was stained with DAPI. Scale bar, 20 \u03bcm. Percentage of germ cells apoptosis is the mean \u00b1\u2009SEM. N=3. Unpaired Student\u2019s t-test determined significance; exact p value p\u2009\u2265\u20090.05, **p\u2009<\u20090.01, ****p\u2009<\u20090.0001. The points and error bars represent the mean \u00b1\u2009SEM.\n\n### Loss of SRSF1 impairs homing of precursor SSCs\n\nTo further investigate the reason for the failure of spermatogonia to survive, we observed homing of precursor SSCs in the testes of mice at 5 dpp. Interestingly, the results of VASA and SOX9 co-staining showed that partial germ cells could not complete homing in 5 dpp cKO testes (Figure 6A and B). In mice, starting at 3 dpp, cytoplasmic FOXO1 in some gonocytes begins to enter the nucleus (Goertz et al., 2011). These cells further develop into prospermatogonia, which are expected to develop into SSCs (Goertz et al., 2011). Thus, immunohistochemical staining for FOXO1 was performed on 5 dpp mouse testis sections (Figure 6C). Further, germ cell statistics of FOXO1 expression in the nucleus showed a reduced number of prospermatogonia in cKO mice (Figure 6D). And germ cells in which FOXO1 is expressed in the nucleus similarly undergo abnormal homing (Figure 6E). Thus, all the above data indicated that SRSF1 has an essential role in the homing of precursor SSCs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig6-v1.jpg)\n\n**Figure 6.:** (A) Co-immunostaining of VASA and SOX9 in 5 days postpartum (dpp) control (Ctrl) and conditional knockout (cKO) testis. DNA was stained with DAPI. Scale bar, 10 \u03bcm. Red dashed circles, tubule. White dashed circles, germ cell. (B) The percentage of VASA-positive basal cells is shown as the mean\u2009\u00b1\u2009SEM. N=4. (C) Immunohistochemical staining of FOXO1 in 5 dpp Ctrl and cKO testis. The nuclei were stained with haematoxylin. Scale bar, 10 \u03bcm. Arrowheads, FOXO1 in the nucleus. Arrows, FOXO1 in the cytoplasm. H, homing. AH, abnormal homing. (D) The percentage of FOXO1-positive cells with nuclear FOXO1 is shown as the mean\u2009\u00b1\u2009SEM. 913 Ctrl germ cells and 592 cKO germ cells were obtained from four animals. (E) The percentage of FOXO1-positive basal cells with nuclear FOXO1 is shown as the mean \u00b1\u2009SEM. 913 Ctrl germ cells and 592 cKO germ cells were obtained from four animals. Unpaired Student\u2019s t-test determined significance; ***p\u2009<\u20090.001, ****p\u2009<\u20090.0001. The points and error bars represent the mean \u00b1 SEM.\n\n### SRSF1 is essential for gene expression in spermatogonia\n\nTo investigate the molecular mechanisms of SRSF1 in spermatogonia, we isolated mRNA from 5 dpp cKO and Ctrl mouse testes and performed RNA-seq (Figure 7\u2014figure supplement 1). RNA-seq and RT-qPCR results showed a significant reduction in the expression of Srsf1 in 5 dpp cKO mouse testes (Figure 7A). Western blotting results showed that SRSF1 expression was significantly reduced in the testes of cKO mice at 5 dpp (Figure 7B). Hence, for Ctrl and cKO samples, the confidence level of the RNA-seq data was high. The volcano map and cluster heatmap showed 715 downregulated and 258 upregulated genes identified by RNA-seq data in 5 dpp cKO mouse testes (Figure 7C and D and Supplementary file 2). These gene GO enrichment analyses indicated abnormal germ cell development and cell cycle arrest in 5 dpp cKO mouse testes (Figure 7E). Surprisingly, the heatmap showed that spermatogonia-associated gene (e.g. Gfra1, Pou5f1, Plzf, Nanos3, Dnd1, Stra8, and Taf4b) expression was significantly reduced in the testes of cKO mice at 5 dpp (Figure 7F). Simultaneously, the tracks of differentially expressed genes are demonstrated by using IGV (Figure 7G). Next, we validated the abnormal expression of spermatogonia-associated genes (downregulated: Gfra1, Pou5f1, Plzf, Dnd1, Stra8, and Taf4b; unchanged: Nanos3) by RT-qPCR (Figure 7H). Together, these data indicated that germ cell-specific deletion of Srsf1 impairs the expression of spermatogonia-associated genes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig7-v1.jpg)\n\n**Figure 7.:** (A) Expression of Srsf1 in 5 days postpartum (dpp) control (Ctrl) and conditional knockout (cKO) mouse testis. The RT-qPCR data were normalised to Gapdh. N=5. The expression of Srsf1 is shown as reading coverage in 5 dpp mouse testis. (B) Western blotting of SRSF1 expression in 5 dpp mouse testis. ACTB served as a loading control. The value in Ctrl testes was set as 1.0, and the relative values in cKO testis are indicated. N=5. (C) Volcano map displaying the distribution of differentially expressed genes from RNA-seq data. The abscissa in the figure represents the gene fold change in 5 dpp cKO and Ctrl mouse testis. |log2FoldChange|\u22650. The ordinate indicates the significance of gene expression differences between 5 dpp cKO and Ctrl mouse testis. padj \u22640.05. Upregulated genes are shown as red dots, and downregulated genes are shown as green dots. (D) Cluster heatmap of differentially expressed genes. The ordinate is the genotype, and the abscissa is the normalised FPKM (fragments per kilobase million) value of the differentially expressed gene. Red indicates a higher expression level, while blue indicates a lower expression level. (E) Network showing Gene Ontology (GO) enrichment analyses of differentially expressed genes. (F) Heatmap of spermatogonia-related gene expression. (G) The expression of spermatogonia-related genes is shown as read coverage. (H) The expression of spermatogonia-related genes in 5 dpp cKO and Ctrl mouse testis. The RT-qPCR data were normalised to Gapdh. The value in the Ctrl group was set as 1.0, and the relative value in the cKO group is indicated. N=3. Unpaired Student\u2019s t-test determined significance; exact p value p\u2009\u2265\u20090.05, *p\u2009<\u20090.05, **p\u2009<\u20090.01, ***p\u2009<\u20090.001, ****p\u2009<\u20090.0001. The points and error bars represent the mean \u00b1\u2009SEM.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Filtering of sequencing data per sample. (B) Distribution of sequenced reads across genomic regions for all samples. (C) Gene expression values (fragments per kilobase million [FPKM]) of all samples were subjected to principal component analysis (PCA). (D) The distribution of gene expression levels of different samples is demonstrated by violin plots as shown below. The horizontal coordinate of the graph is the name of the sample, and the vertical coordinate is log2 (FPKM + 1).\n\n### SRSF1 directly binds and regulates the expression and AS of Tial1/Tiar\n\nMultiomics analyses were carried out in a subsequent study to identify the molecular mechanisms by which SRSF1 regulates spermatogonia survival. Considering that the CLIP-seq data were obtained from adult mouse testis, the set of genes bound by CLIP-seq was restricted to those expressed only in the 5 dpp mouse testis RNA-seq data. we found that 3543 of the 4824 genes bound by SRSF1 were expressed in testes at 5 dpp. Venn diagram data revealed that 9 out of 715 downregulated genes were bound by SRSF1 and underwent abnormal AS (Figure 8A). And 1 out of 258 upregulated genes was bound by SRSF1 and underwent abnormal AS (Figure 8A). Interestingly, we found that 39 unchanged genes were bound by SRSF1 and underwent abnormal AS (Figure 8A). The AS genes were subsequently investigated in 5 dpp cKO mouse testes using transcriptomic analyses. RNA-seq analyses showed that 162 AS events were significantly affected (false discovery rate [FDR] <0.05) in cKO mouse testes (Figure 8B and C and Supplementary file 3). Most of the 133 affected AS events (162) were classified as skipped exons (SEs), with 10 AS events categorised as retained introns (RIs), 13 as mutually exclusive exons (MXEs), 4 as alternative 5' splice sites (A5SSs), and 2 as alternative 3' splice sites (A3SSs) (Figure 8C). Additionally, the overall analysis of aberrant AS events showed that SRSF1 effectively inhibits the occurrence of SE and MXE events and promotes the occurrence of RI events (Figure 8C). Then, GO enrichment analyses of AS genes revealed that four genes concerning germ cell development were altered in AS forms (Figure 8D). It has been shown that Tial1/Tiar affects the survival of primordial germ cells (Beck et al., 1998). Moreover, Tial1/Tiar is 1 of 39 unchanged genes that are bound by SRSF1 and undergo abnormal AS. Thus, multiomics analyses suggested that Tial1/Tiar were posttranscriptionally regulated by SRSF1. Next, we investigated the mechanism by which SRSF1 regulates the AS of Tial1/Tiar, RT-PCR results showed that the pre-mRNA of Tial1/Tiar in 5 dpp cKO mouse testes exhibited abnormal AS (Figure 8E). We then visualised the different types of AS based on RNA-seq data by using IGV (Figure 8F and Figure 8\u2014figure supplement 1). The results of RNA immunoprecipitation (RIP)-qPCR showed that SRSF1 could bind to the pre-mRNA of Tial1/Tiar (Figure 8G). Interestingly, RNA-seq analyses showed that the fragments per kilobase million (FPKM) of Tial1/Tiar was unchanged in 5 dpp cKO mouse testes (Figure 8H). RT-qPCR results showed that Tial1/Tiar transcript levels were not inhibited (Figure 8I). However, western blotting showed that expression levels of TIAL1/TIAR isoform X2 were significantly suppressed (Figure 8J and Figure 8\u2014figure supplement 1). In summary, the data indicate that SRSF1 is required for TIAL1/TIAR expression and splicing in spermatogonia survival.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig8-v1.jpg)\n\n**Figure 8.:** (A) Venn diagram showing the correlation among downregulated, upregulated, alternatively spliced, and SRSF1-binding genes. (B) Schematic diagram showing the classes of splicing events. (C) Splicing events were analysed by number, exclusion, and inclusion. (D) Network showing Gene Ontology (GO) enrichment analyses of AS genes. (E) The AS of Tial1/Tiar in 5 days postpartum (dpp) Ctrl and conditional knockout (cKO) mouse testes was analysed by RT-PCR. N=3. The ratio of inclusion (Incl) to exclusion (Excl) is shown accordingly. (F) Analyses of Tial1/Tiar expression and exon-exon junctions were performed. (G) SRSF1 directly binds the pre-mRNA of Tial1/Tiar by RNA immunoprecipitation (RIP)-qPCR in 5 dpp mouse testes. N=3. (H) The fragments per kilobase million (FPKM) of Tial1/Tiar in 5 dpp Ctrl and cKO mouse testes. (I) The expression of Tial1/Tiar in 5 dpp Ctrl and cKO mouse testes. The RT-qPCR data were normalised to Gapdh. The value in the Ctrl group was set as 1.0, and the relative value in the cKO group is indicated. N=3. (J) Western blotting of TIAL1/TIAR expression in 5 dpp mouse testes. ACTB served as a loading control. The FL/isoform X2 value of TIAL1/TIAR in the Ctrl group was set as 1.0, and the relative value in the cKO group is indicated. N=3. FL, full length. Unpaired Student\u2019s t-test determined significance; exact p value p\u2009\u2265\u20090.05, ***p\u2009<\u20090.001, ****p\u2009<\u20090.0001. The points and error bars represent the mean \u00b1\u2009SEM.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Transcription and translation information for Tial1/Tiar was obtained from genome data viewer.\n\n### SRSF1 recruits AS-related proteins to modulate AS in testes\n\nTo identify the interacting proteins for which SRSF1 exerts its AS role, we performed MS analyses of IP samples from 5 dpp mouse testis extracts. The silver-stained gel of SRSF1 and normal IgG showed several SRSF1-interacting proteins from 5 dpp mouse testis extracts (Figure 9A). The IP results indicated that SRSF1 was able to effectively IP the testis extracts of 5 dpp mice (Figure 9B). Immunoprecipitation mass spectrometry (IP-MS) data demonstrated the efficient enrichment of SRSF1 (Figure 9C and Supplementary file 4). These data showed that the two samples were highly reproducible, especially for SRSF1 (Figure 9D). Then, GO enrichment analyses of the IP proteins revealed that AS-related proteins could interact with SRSF1 (Figure 9E). A circular heatmap showed that SRSF1 could interact with AS-related proteins (e.g. SRSF10, SART1, RBM15, SRRM2, SF3B6, and SF3A2) (Figure 9F). The co-immunoprecipitation (Co-IP) results indicated that FLAG-SRSF1 interacted with HA-SART1, HA-RBM15, and HA-SRSF10 in 293T cells (Figure 9G). In addition, the fluorescence results showed complete co-localisation of mCherry-SRSF1 with eGFP-SART1, eGFP-RBM15, and eGFP-SRSF10 in 293T cells (Figure 9H). Co-IP suggested that the RRM1 domain of SRSF1 interacted with HA-SART1, HA-RBM15, and HA-SRSF10 in 293T cells (Figure 9I). Determining the complex structures of these interactions is valuable, in which molecular docking has played an important role (Yan et al., 2017). HDOCK is a novel web server of our hybrid docking algorithm of template-based modelling and free docking (Yan et al., 2017). The HDOCK analysis results depicted the RRM1 domain of SRSF1 with SRSF10, SART1, and RBM15 docking based on a hybrid strategy (Figure 9J). Together, the above data show that SRSF1 may interact with SRSF10, SART1, and RBM15 to regulate AS in 5 dpp mouse testes.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/89316/elife-89316-fig9-v1.jpg)\n\n**Figure 9.:** (A) Silver-stained gel of SRSF1 and control immunoprecipitates from 5 days postpartum (dpp) mouse testis extracts. (B) IP experiment was performed in 5 dpp mouse testis extracts. (C) IP of SRSF1 from immunoprecipitation mass spectrometry (IP-MS) data. (D) Pearson\u2019s correlation analysis showed the coefficient between the two samples for IP-MS data. (E) Network showing Gene Ontology (GO) enrichment analyses of SRSF1-binding proteins. (F) Circular heatmap of AS-related proteins. (G) Co-immunoprecipitation (Co-IP) experiment for detecting the SRSF1 association between SART1, RBM15, and SRSF10 in 293T cells. (H) SRSF1-mCherry cotransfected with SART1-eGFP, RBM15-eGFP, and SRSF10-eGFP 293T cells is shown. DNA was stained with DAPI. Scale bar, 10 \u03bcm. (I) Co-IP experiment for detecting the SRSF1-truncated protein association between SART1, RBM15, and SRSF10 in 293T cells. (J) A schematic diagram of protein interactions is shown. (K) Schematic illustration of the molecular mechanisms by which SRSF1 regulates homing of mouse precursor spermatogonial stem cells (SSCs).\n\n## Discussion\n\n### Failure of spermatogonia survival led to SCOS\n\nDisturbed spermatogenesis can cause SCOS and ultimately male sterility (Jiao et al., 2021). In recent years, it has been reported that many spermatogonia-related gene deletions have disrupted SSC self-renewal and differentiation in patient and mouse models (La and Hobbs, 2019; Tan and Wilkinson, 2020; Wang et al., 2021). SCOS was observed in Ddx5, Tial1/Tiar, Uhrf1, Pramef12, Dot1l, and Rad51 deletion mouse models (Beck et al., 1998; Legrand et al., 2019; Lin et al., 2022; Qin et al., 2022; Wang et al., 2019; Zhou et al., 2022). Mouse models are still of great significance and reference for human SCOS studies, and they will provide a better understanding of how SCOS occurs and develops over time. Interestingly, our mouse model had SCOS (Figure 3D\u2013I and Figure 4). The absence of germ cells represents classical SCOS in adult mouse testes (Figure 4; Wang et al., 2023). In addition, we found abnormal expression of spermatogonia-related genes (e.g. Gfra1, Pou5f1, Plzf, Dnd1, Stra8, and Taf4b) in cKO mouse testes (Figure 7F\u2013H). These differentially expressed genes regulate SSC self-renewal and differentiation in mouse testes (Kanatsu-Shinohara and Shinohara, 2013; La and Hobbs, 2019; Tan and Wilkinson, 2020). Thus, this provided an opportunity for us to better study the underlying molecular mechanisms. These data indicate that SRSF1 deficiency impairs spermatogonia survival, leading to SCOS in male mice.\n\n### The formation of SSC pools and the establishment of niches are essential for spermatogenesis\n\nThe earliest event in the development of the SSC population is the migration of prospermatogonia from the centre of seminiferous cords where they have resided since sex determination of the embryonic gonad to the basement membrane (Oatley and Brinster, 2012). In mice, this process is also known as homing of precursor SSCs, which occurs in the initial 3 dpp and then develops into SSCs at 4\u20136 dpp for continuous self-renewal and differentiation (Lee and Shinohara, 2011; McLean et al., 2003; Oatley and Brinster, 2012; Tan and Wilkinson, 2020). Therefore, homing analysis of precursor SSCs was performed in 5 dpp cKO mouse testes. Interestingly, the VASA and SOX9 co-staining results demonstrated that partial germ cells could not complete homing in 5 dpp cKO testes (Figure 6A and B). Further, immunohistochemical staining for FOXO1 and statistical results indicated that germ cells in which FOXO1 is expressed in the nucleus similarly undergo abnormal homing (Figure 6C\u2013E). Germ cells that do not migrate to the basement membrane are unable to form SSC pools and establish niches (McLean et al., 2003). These SSCs that lose their ecological niche will cease to exist. In our data, TUNEL results showed that apoptosis significantly increased in 7 dpp cKO mouse testes. At once, the quantifications of germ cells per tubule showed a significant reduction in 7 dpp and 14 dpp cKO testes, especially 14 dpp cKO testes (Figure 5B). In conclusion, SRSF1 is crucial for the formation of SSC pools and the establishment of niches through homing of precursor SSCs.\n\n### Abnormal AS impaired the survival of spermatogonia\n\nAS is commonly found in mammals, especially in the brain and testes (Mazin et al., 2021; Merkin et al., 2012; Wang et al., 2008). AS plays essential roles in the posttranscriptional regulation of gene expression during many developmental processes, such as SSC self-renewal and differentiation (Chen et al., 2018; Song et al., 2020). Recently, BUD31-mediated AS of Cdk2 was shown to be required for SSC self-renewal and differentiation (Qin et al., 2023). Srsf10 depletion disturbed the AS of genes, including Nasp, Bclaf1, Rif1, Dazl, Kit, Ret, and Sycp1 (Liu et al., 2022). UHRF1 interacts with snRNAs and regulates AS of Tle3 in mouse SSCs (Zhou et al., 2022). Mettl3-mediated m6A regulates AS of Sohlh1 and Dazl (Xu et al., 2017). We found that SRSF1 acts as an alternative RNA splicing regulator and directly interacts with Tial1/Tiar transcripts to regulate splicing events in spermatogonia (Figure 8E\u2013G). Additionally, expression levels of TIAL1/TIAR isoform X2 were significantly suppressed (Figure 8J). Interestingly, Tial1/Tiar transcript levels were not inhibited (Figure 8H and I). These results suggested that SRSF1 explicitly regulates the expression of Tial1/Tiar via AS. Studies have reported that TIAL1/TIAR is essential for primordial germ cell development in mouse testes (Beck et al., 1998). Tial1/Tiar deletion impairs germ cell survival leading to SCOS, consistent with our phenotype (Figures 3E\u2013I\u20134A\u2013C; Beck et al., 1998). Taken together, SRSF1 may affect germ cell survival by directly binding and regulating Tial1/Tiar expression through AS.\n\nWe found that SRSF1 could interact with AS-related proteins (e.g. SRSF10, SART1, RBM15, SRRM2, SF3B6, and SF3A2) (Figure 9F). A recent study reported that SRSF10 deficiency impaired spermatogonia differentiation but did not affect homing of precursor SSCs (Liu et al., 2022). However, our data showed that SRSF1 is essential for homing of mouse precursor SSCs. Therefore, this suggests that SRSF1 has a specific function in the homing of precursor SSCs independent of SRSF10.\n\n### SRSF1-mediated posttranscriptional regulation during homing of precursor SSCs provides new insights into the treatment of human reproductive diseases\n\nAberrant homing of precursor SSCs often lead to gametogenic failure, resulting in subfertility or infertility (Jiao et al., 2021; Kanatsu-Shinohara and Shinohara, 2013; La and Hobbs, 2019; Song and Wilkinson, 2014). Loss-of-function mutations in humans and corresponding knockout/mutated mice have been extensively researched (Jiao et al., 2021). However, AS-related posttranscriptional regulation during meiosis has not been well studied. In recent years, there have been reports that the RNA-binding proteins SRSF10, UHRF1, BUD31, and BCAS2 regulate AS in mouse SSCs (Liu et al., 2022; Liu et al., 2017; Qin et al., 2023; Zhou et al., 2022). This study used a multiomics approach to perform in-depth analyses of SRSF1-mediated posttranscriptional regulatory mechanisms to enrich the field. It also provides new ideas and insights for clinical diagnosis and treatment.\n\nIn summary, this study demonstrates that SRSF1 plays a critical role in posttranscriptional regulation to implement homing of precursor SSCs (Figure 9K). Thus, the posttranscriptional regulation of SRSF1-mediated splicing is resolved during the formation of SSC pools and the establishment of niches.\n\n## Materials and methods\n\n### Mouse strains\n\nC57BL/6N and ICR mice were purchased from Beijing Vital River Laboratory Animal Technology Co., Ltd. Srsf1Fl/Fl mice were generated in the laboratory of Prof. Xiangdong Fu (University of California, San Diego, CA, USA) and were kindly provided by Prof. Yuanchao Xue (Institute of Biophysics, Chinese Academy of Sciences, Beijing, China) (Xu et al., 2005). Vasa-Cre mice were obtained from The Jackson Laboratory (Gallardo et al., 2007). To generate Srsf1 cKO mice, Vasa-Cre mice were crossed with Srsf1Fl/Fl mice. The primers used for PCR to genotype Srsf1Fl/Fl and Vasa-Cre mice are shown in Supplementary file 5. All mice were bred and housed under specific pathogen-free conditions with a controlled temperature (22 \u00b1 1\u00b0C) and exposed to a constant 12 hr light-dark cycle in the animal facilities of China Agricultural University. All experiments were conducted according to the guidelines and with the approval of the Institutional Animal Care and Use Committee of China Agricultural University (No. AW80401202-3-3).\n\n### Cell\n\nHEK293T cells were obtained from the American Type Culture Collection (ATCC) and cultured in Dulbecco\u2019s modified Eagle\u2019s medium (C11995500BT, Gibco) supplemented with 10% fetal bovine serum (SE200-ES, VISTECH), Penicillin-Streptomycin Solution (C0222, Beyotime). All cells were maintained in a humidified incubator containing 5% CO2 at 37\u00b0C. In addition, all of the cells used in the study tested negative in routine tests for Mycoplasma species using RT-PCR.\n\n### Fertility test\n\nFor 15 days, two 8-week-old ICR female mice were caged with one 8-week-old male control (Ctrl) or cKO mouse. The mice were kept individually after the appearance of the vaginal plug, and the dates were recorded. Male mice continue to be caged after 2 days. The number of pups from each female was recorded each day, and the date of parturition was recorded.\n\n### Immunostaining and histological analyses\n\nMouse testes were fixed with 4% paraformaldehyde (PFA, P6148-500G, Sigma-Aldrich) in PBS (pH 7.4) at 4\u00b0C overnight, dehydrated in graded ethanol solutions, vitrified with xylene, and embedded in paraffin. Testis sections were cut at a 5 \u03bcm thickness for immunostaining and histological analyses. For histological analyses, sections were dewaxed in xylene, rehydrated in a graded ethanol solution, and stained with haematoxylin-eosin. After sealing the slides with neutral resin, a Ventana DP200 system was used for imaging. For immunofluorescence analyses, antigen retrieval was performed by microwaving the sections with sodium citrate buffer (pH 6.0). After blocking with 10% normal goat serum at room temperature for 1 hr, the sections were incubated with primary antibodies (Supplementary file 6) in 5% normal goat serum overnight at 4\u00b0C. After washing with PBS, the sections were incubated with secondary antibodies (Supplementary file 6) at room temperature in the dark for 1 hr. The slides were mounted in an antifade mounting medium with DAPI (P0131, Beyotime). Photographs were taken with a Nikon A1 laser scanning confocal microscope and a Zeiss OPTOME fluorescence microscope. For immunohistochemistry analyses, antigen retrieval was performed by microwaving the sections with sodium citrate buffer (pH 6.0). Five dpp testis sections were prepared as described in the instructions for Immunohistochemistry Kit (PV-9001, ZSGB-BIO). After sealing the slides with neutral resin, a Ventana DP200 system was used for imaging.\n\n### Whole-mount immunostaining\n\nThe testes were collected and dispersed with 5 ml syringes. Blown-out tubules were fixed in PFA at 4\u00b0C for 4 hr. The tubules were washed three times with PBS (pH 7.4) for 5 min each and stored at 4\u00b0C. The tubules were permeated with 0.3% Triton X-100 for 1 hr at 4\u00b0C. Then, whole-mount staining followed the immunofluorescence protocol.\n\n### TUNEL apoptosis analyses\n\nSeven dpp testis sections were prepared as described in the instructions for the TUNEL Apoptosis Assay Kit (C1088, Beyotime). Photographs were taken with a Nikon A1 laser scanning confocal microscope and a Zeiss OPTOME fluorescence microscope. Apoptosis rate was derived from the number of TUNEL-positive signals in tubules as a percentage of the total number of germ cells.\n\n### RT-PCR and RT-qPCR\n\nTotal RNA was extracted by using RNAiso Plus (9109, Takara), and the concentration was measured with a Nano-300 ultramicro spectrophotometer (Allsheng). cDNA was obtained according to the instructions of a TIANScript II RT kit (KR107, TIANGEN). The expression of transcripts of the target gene was measured by using a LightCycle 96 instrument (Roche) with Hieff UNICON SYBR green master mix (11198ES08, Yeasen). AS analyses were performed on a RePure-A PCR instrument (BIO-GENER). Primers were synthesised by Sangon Biotech (Supplementary file 5). The expression level of Gapdh or Actb was used as the control, and this value was set as 1. Other samples\u2019 relative transcript expression levels were obtained by comparing them with the control results.\n\n### RNA-seq\n\nTotal RNA was extracted from mouse testes according to the above protocol at 5 dpp. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. After fragmentation, we established a transcriptome sequencing library and assessed library quality on an Agilent Bioanalyzer 2100 system. The clustering of the index-coded samples was performed on a cBot Cluster Generation System using a TruSeq PE Cluster kit v3-cBot-HS (Illumina) according to the manufacturer\u2019s instructions. After cluster generation, the library preparations were sequenced on the Illumina NovaSeq platform, and 150 bp paired-end reads were generated. After quality control, all downstream analyses were performed on clean, high-quality data. The reference genome index was built, and paired-end clean reads were aligned to the reference genome using HISAT2 software (version 2.0.5). FeatureCounts (version 1.5.0) counted the reads mapped to each gene. Then, the FPKM value of each gene was calculated based on the length of the gene and the read count mapped to this gene. Differential expression analyses of cKO/Ctrl mouse testes (three biological replicates per condition) were performed using the DESeq2 R package (version 1.20.0). Genes with a padj \u22640.05 identified by DESeq2 were considered differentially expressed.\n\n### AS analyses\n\nrMATS software (version 3.2.5) was used to analyse the AS events in cKO mouse germ cells based on RNA-seq data. Five types of AS events (SE, RI, MXE, A5SS, and A3SS) were revealed by rMATS software. Our threshold for screening differentially significant AS events was an FDR of less than 0.05. Splicing events with an FDR less than 0.05 and an inclusion-level difference with a significance of at least 5% (0.05) were considered statistically significant. IGV (2.16.0) software was used to visualise and confirm AS events based on RNA-seq data.\n\n### GO enrichment analyses\n\nThe GO enrichment analyses of differentially expressed genes and AS genes were implemented with the clusterProfiler R package (version 3.4.4), in which gene length bias was corrected. All expressed genes (TPM sum of all samples \u22651) are listed background. GRCm38/mm10 was used as a mouse reference genome, and the Benjamini-Hochberg multiple methods was applied to adjust for multiple testing. GO enrichment analyses with corrected p values of less than 0.05 were significantly enriched for differentially expressed genes and AS genes.\n\n### Western blotting\n\nTotal protein was extracted with cell lysis buffer (P0013, Beyotime) containing PMSF (1:100, ST506, Beyotime) and a protease inhibitor cocktail (1:100, P1005, Beyotime). Protein concentration was determined with the BCA Protein Assay Kit (CW0014S, CWBiotech). The protein lysates were electrophoretically separated on sodium dodecyl sulfate-polyacrylamide gels and electrically transferred to polyvinylidene fluoride membranes (IPVH00010, Millipore). The membranes were blocked in 5% skimmed milk for 1 hr and incubated with the primary antibodies (Supplementary file 6) for one night at 4\u00b0C. Then, the membranes were incubated with secondary antibodies (Supplementary file 6) at room temperature for 1 hr. The proteins were visualised using a Tanon 5200 chemiluminescence imaging system following incubation with BeyoECL Plus (P0018S, Beyotime).\n\n### IP, IP-MS, Co-IP\n\nTotal protein was extracted with cell lysis buffer (P0013, Beyotime) containing PMSF (1:100, ST506, Beyotime) and a protease inhibitor cocktail (1:100, P1005, Beyotime). After incubation on ice for 20 min, the lysate was added to 20 \u03bcl of protein A agarose (P2051-2 ml, Beyotime) for pre-clearing at 4\u00b0C for 1 hr. Two micrograms of an SRSF1 antibody (sc-33652, Santa Cruz Biotechnology) and a normal mouse IgG (sc-3879, Santa Cruz Biotechnology) were added to the lysate and the mixture was incubated overnight at 4\u00b0C. The next day, 60 \u03bcl of protein A agarose was added to the lysate, which was then incubated at 4\u00b0C for 4 hr. The agarose complexes containing antibodies and target proteins were washed three times for 5 min at 4\u00b0C. IP and Co-IP were performed according to the above western blotting protocol. The complex was sent to the protein mass spectrometry laboratory for IP-MS analyses using a Thermo Q-Exactive high-resolution mass spectrometer (Thermo Scientific, Waltham, MA, USA). Raw data from the mass spectrometer were preprocessed with Mascot Distiller 2.4 for peak picking. The resulting peak lists were searched against the uniport mouse database using Mascot 2.5 search engine.\n\n### RIP and RIP-qPCR\n\nAs described previously (Gagliardi and Matarazzo, 2016), RIP was performed using 5 dpp mouse testes. The testes were lysed in cell lysis buffer (P0013, Beyotime) containing PMSF (1:100, ST506, Beyotime), a proteinase inhibitor cocktail (1:100, P1005, Beyotime), DTT (1:50, ST041-2 ml, Beyotime), and an RNase inhibitor (1:20, R0102-10 kU, Beyotime). After incubation on ice for 20 min, the lysate was added to 20 \u03bcl of protein A agarose (P2051-2 ml, Beyotime) for pre-clearing at 4\u00b0C for 1 hr. Two micrograms of an SRSF1 antibody (sc-33652, Santa Cruz Biotechnology) and a normal mouse IgG (sc-3879, Santa Cruz Biotechnology) were added to the lysate, which was then incubated overnight at 4\u00b0C. The next day, 60 \u03bcl of protein A agarose was added to the lysate, and the mixture was incubated at 4\u00b0C for 4 hr. The agarose complexes containing antibodies, target proteins, and RNA were washed three times for 5 min at 4\u00b0C and repeated. Protein-bound RNA was extracted using RNAiso Plus and a Direct-zol RNA MicroPrep Kit. RIP-qPCR was performed according to the above RT-qPCR protocol.\n\n### Statistical analyses\n\nPearson\u2019s correlation coefficients (R) were calculated by using the scores of the two samples for MS. GraphPad Prism software (version 9.0.0) was used for the statistical analyses, and the values and error bars represent the mean\u2009\u00b1\u2009SEM. Significant differences between the two groups were analysed using Student\u2019s t-test. Statistical significance is indicated as follows: exact p value p\u2009\u2265\u20090.05; *p\u2009<\u20090.05; **p\u2009<\u20090.01; ***p\u2009<\u20090.001; ****p\u2009<\u20090.0001.\n",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bluma Lesch, Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89316.4.sa0](https://doi.org/10.7554/eLife.89316.4.sa0)\n\nIn this valuable study, the authors characterize the role of splicing factor SRSF1 during spermatogenesis with a conditional knockout of Srsf1 in male germ cells. The phenotype and molecular role of SRSF1 in regulating alternative splicing in precursor spermatogonial stem cells in juvenile testes are convincingly supported. The paper also provides convincing evidence that the mRNA encoding Tial, a factor relevant to spermatogonial maintenance and male fertility, is alternatively spliced in testis and that this splicing is regulated by SRSF1. The work will be of interest to the fields of reproductive biology, stem cell biology, and alternative splicing.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89316.4.sa1](https://doi.org/10.7554/eLife.89316.4.sa1)\n\nIn this study, the authors seek to characterize the role of splicing factor SRSF1 during spermatogenesis using Vasa-Cre;Srsf1Fl/del mice model. The authors first revealed that spermatogonia-related genes (e.g., Plzf, Id4, Setdb1, Stra8, Tial1/Tiar, Bcas2, Ddx5, Srsf10, Uhrf1, and Bud31) were bound by SRSF1 in the mouse testes by CLIP-seq. The authors convincingly demonstrated that specific deletion of SRSF1 in mouse gem cells with vasa-cre lead to NOA by impairing homing and failure survival of spermatogonia. To investigate the molecular mechanisms of SRSF1 in spermatogonia, further multiomics analysis including CLIP-seq, IP-MS, and RNA-seq were conducted. The results showed that SRSF1 coordinated with other RNA splicing-related proteins to directly bind and regulate the expression of nine spermatogonia-related genes especially Tial1/Tiar via alternative splicing. The authors revealed the critical role of SRSF1-mediated AS in precursor SSCs homing and survival, which may provide a framework to elucidate the molecular mechanisms of the posttranscriptional network underlying the formation of SSC pools and the establishment of niches. This work will be of interest to stem cell and reproductive biologists. The experiments are well-designed and conducted, and the overall methods and results are convincing except for the claim that altered splicing of the Tial1 transcript mediates the effect of SRSF1 loss.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89316.4.sa2](https://doi.org/10.7554/eLife.89316.4.sa2)\n\nSummary\n\nThe authors seek to characterize the role of splicing factor SRSF1 during spermatogenesis. Using a conditional deletion of Srsf1 in germ cells, they find that SRSF1 is required for male fertility. Via immunostaining and RNA-seq analysis of the Srsf1 conditional knockout (cKO) testes, combined with SRSF1 CLIP-seq and IP-MS data from the testis, they ultimately conclude that Srsf1 is required for homing of precursor spermatogonial stem cells (SCCs) due to alternative splicing.\n\nStrengths\n\nThe overall methods and results are robust. The histological analysis of the Srsf1 cKO traces the origins of the fertility defect to the postnatal testis, and the authors have generated interesting datasets characterizing SRSF1's RNA targets and interacting proteins specifically in the testis.\n\nUltimately, the authors have shown that SRSF1's effects on alternative splicing are required to establish spermatogenesis. In the absence of Srsf1, the postnatal gonocytes do not properly mature into spermatogonia and consequently never initiate spermatogenesis.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89316.4.sa3](https://doi.org/10.7554/eLife.89316.4.sa3)\n\nIn this study, Sun et al examine the role of the splicing factor SRSF1 in spermatogenesis in mice. Alternative splicing is important for spermatogenic development, but its regulation and major developmental roles during spermatogenesis are not well understood. The authors set out to better define both SRSF1 function in testes and the contribution of alternative splicing. They generate several large 'omics datasets to define SRSF1 targets in testis, including RNA interactions by CLIP-seq in whole testis, protein interactions by IP-mass spec in whole testis, and RNA sequencing to detect expression levels and splice variants. They also examine the phenotype of germline conditional knockouts (cKO) for Srsf1, using the early-acting Vasa-Cre, and find a severe depletion of germ cells starting at 7 days post partum (dpp) and culminating with a lack of germ cells (Sertoli Cell Only Syndrome) by adulthood. They detect differences in gene expression as well as differences in splicing between control and knockout, including 9 genes that are downregulated, experience alternative splicing, and whose transcripts are also bound by SRSF1, and identify the Tial1/Tiar transcript as one of these targets. They conclude that SRSF1 is required for homing and self-renewal of precursor spermatogonial stem cells, and suggest that this role may be mediated in part though its regulation of Tial1/Tiar splicing.\n\nStrengths of the paper include detailed phenotyping of the Srsf1 cKO, which convincingly supports the Sertoli Cell Only phenotype, establishes the timing of the first appearance of the spermatogonial defect, and provides new insight into the role of splicing factors and SRSF1 specifically in spermatogenesis. Another strength is the generation of CLIP-seq, IP-MS, and RNA-seq datasets which will be a useful resource for the field of germ cell development. Overall, the results support the claims made. While the study does not provide a full mechanistic understanding of how alternative splicing mediated by SRSF1 affects SSC precursors, the contributions are novel and useful, and will be of interest to the fields of alternative splicing and male reproductive biology.\n",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc5966c9-dac4-451f-b114-13df63e613f9",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C1",
+      "claim": "SRSF1 is essential for gene expression and splicing in mouse SSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated that SRSF1 is essential for gene expression and splicing in mouse SSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4bfdb56d-f57c-407b-a1c1-567ac969a69f",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C2",
+      "claim": "Spermatogonia-related genes (e.g. Plzf, Id4, Setdb1, Stra8, Tial1/Tiar, Bcas2, Ddx5, Srsf10, Uhrf1, and Bud31) were bound by SRSF1 in the mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosslinking immunoprecipitation and sequencing data revealed that spermatogonia-related genes (e.g. Plzf, Id4, Setdb1, Stra8, Tial1/Tiar, Bcas2, Ddx5, Srsf10, Uhrf1, and Bud31) were bound by SRSF1 in the mouse testes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by CLIP-seq experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "0dc119f4-f2c1-411a-96a1-f2f2b32b3c1c",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C3",
+      "claim": "Specific deletion of Srsf1 in mouse germ cells impairs homing of precursor SSCs leading to male infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific deletion of Srsf1 in mouse germ cells impairs homing of precursor SSCs leading to male infertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "37995494-9b65-4fa4-822e-40063f4c2f80",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C4",
+      "claim": "Germ cells are absent in the testes of adult conditional knockout (cKO) mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-mount staining data showed the absence of germ cells in the testes of adult conditional knockout (cKO) mice, which indicates Sertoli cell-only syndrome in cKO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by whole-mount staining experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "46a74954-d625-4bb7-8a56-7c9440aea1b8",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C5",
+      "claim": "cKO mice exhibit Sertoli cell-only syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-mount staining data showed the absence of germ cells in the testes of adult conditional knockout (cKO) mice, which indicates Sertoli cell-only syndrome in cKO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the absence of germ cells shown by whole-mount staining data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "369ff93b-97c2-4ec5-8434-4ba2b2b2814a",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C6",
+      "claim": "The expression of spermatogonia-related genes (e.g. Gfra1, Pou5f1, Plzf, Dnd1, Stra8, and Taf4b) was significantly reduced in the testes of cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of spermatogonia-related genes (e.g. Gfra1, Pou5f1, Plzf, Dnd1, Stra8, and Taf4b) was significantly reduced in the testes of cKO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq and RT-qPCR data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "ec85a99a-3ccd-45d7-9d34-7ec2edc47c6e",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C7",
+      "claim": "SRSF1 may affect survival of spermatogonia by directly binding and regulating Tial1/Tiar expression through AS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, multiomics analysis suggests that SRSF1 may affect survival of spermatogonia by directly binding and regulating Tial1/Tiar expression through AS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is suggested by multiomics analysis combining CLIP-seq, RNA-seq, and AS analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "b7d80eb4-6c41-4b2b-9d09-a1268f497801",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C8",
+      "claim": "SRSF1 interacts with RNA splicing-related proteins (e.g. SART1, RBM15, and SRSF10).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, immunoprecipitation mass spectrometry and co-immunoprecipitation data showed that SRSF1 interacts with RNA splicing-related proteins (e.g. SART1, RBM15, and SRSF10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by IP-MS and Co-IP experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "f148b788-f052-431e-97ea-9af686bf8579",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C9",
+      "claim": "SCOS is one of the most common causes of severe non-obstructive azoospermia (NOA).",
+      "claim_type": "EXPLICIT",
+      "source": "Sertoli cell-only syndrome (SCOS), also known as del Castillo syndrome or germ cell aplasia, is one of the most common causes of severe non-obstructive azoospermia (NOA) (Wang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d81f96ef-a9d9-4c48-a014-007cc2081a18",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C10",
+      "claim": "SCOS is the presence of only Sertoli cells in the testicular tubules of the testes, with no germ cells present.",
+      "claim_type": "EXPLICIT",
+      "source": "SCOS is the presence of only Sertoli cells in the testicular tubules of the testes, with no germ cells present (Juul et al., 2014; Wang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Juul et al., 2014 and Wang et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "7f540507-20e6-4e28-91cf-747e2a3016c6",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C11",
+      "claim": "Abnormal self-renewal and differentiation of spermatogonial stem cells (SSCs) lead to SCOS.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that abnormal self-renewal and differentiation of spermatogonial stem cells (SSCs) lead to SCOS (Kanatsu-Shinohara and Shinohara, 2013; La and Hobbs, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kanatsu-Shinohara and Shinohara, 2013 and La and Hobbs, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "6ae5e946-899b-490e-9bbd-47aab3fdadfe",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C12",
+      "claim": "In mice, gonocytes begin homing at 0\u20133 days postpartum (dpp) and then develop into SSCs at 4\u20136 dpp for continuous self-renewal and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, gonocytes begin homing at 0\u20133 days postpartum (dpp) and then develop into SSCs at 4\u20136 dpp for continuous self-renewal and differentiation (Lee and Shinohara, 2011; McLean et al., 2003; Tan and Wilkinson, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lee and Shinohara, 2011; McLean et al., 2003; and Tan and Wilkinson, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "51228828-0973-4c2a-9e9f-b12d9a61aa96",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C13",
+      "claim": "Homing of precursor SSCs is crucial for forming SSC pools and establishing niches.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms regulating homing of precursor SSCs are hence crucial for forming SSC pools and establishing niches (Oatley and Brinster, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Oatley and Brinster, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "a99a1d42-2d0b-46c1-92c8-22f0a13487dd",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C14",
+      "claim": "Spermatogonia migrate to form two distinct subtypes in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Spermatogonia migrate to form two distinct subtypes in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "2acc150a-f759-461b-bd47-2ada7044a8b2",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C15",
+      "claim": "The first subtype of spermatogonia develops into precursor SSCs that provide an SSC population for adult spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The first subtype develops into precursor SSCs that provide an SSC population for adult spermatogenesis, whereas the second subtype transitions directly to differentiated spermatogonia that contribute to the first round of spermatogenesis but do not self-renew (Kluin and de Rooij, 1981; Law et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kluin and de Rooij, 1981 and Law et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d1946ff0-b286-4f08-81c6-c8ee80e0d539",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C16",
+      "claim": "The second subtype of spermatogonia transitions directly to differentiated spermatogonia that contribute to the first round of spermatogenesis but do not self-renew.",
+      "claim_type": "EXPLICIT",
+      "source": "The first subtype develops into precursor SSCs that provide an SSC population for adult spermatogenesis, whereas the second subtype transitions directly to differentiated spermatogonia that contribute to the first round of spermatogenesis but do not self-renew (Kluin and de Rooij, 1981; Law et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kluin and de Rooij, 1981 and Law et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "25cbd9ed-ef7d-4b02-9c43-9c3848bd20b1",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C17",
+      "claim": "Many transcription factors (e.g. FOXO1, PLZF, POU5F1, TAF4B, CHD4, BCL6B, BRACHYURY, ETV5, ID4, LHX1, POU3F1, DMRT1, NGN3, SOHLH1, SOHLH2, SOX3, and STAT3) promote SSC self-renewal and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Many transcription factors (e.g. FOXO1, PLZF, POU5F1, TAF4B, CHD4, BCL6B, BRACHYURY, ETV5, ID4, LHX1, POU3F1, DMRT1, NGN3, SOHLH1, SOHLH2, SOX3, and STAT3) promote SSC self-renewal and differentiation (Cafe et al., 2021; Song and Wilkinson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cafe et al., 2021 and Song and Wilkinson, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "f24629b1-587f-41b6-92cf-7be71c20d951",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C18",
+      "claim": "The molecular mechanisms of the posttranscriptional network underlying homing of precursor SSCs are not sufficiently clear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the molecular mechanisms of the posttranscriptional network underlying homing of precursor SSCs are not sufficiently clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "39453cd2-5c91-41e4-bcce-044088b0d432",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C19",
+      "claim": "DND1 and DDX5 are key RNA-binding proteins in SSCs with a unique and dominant role in posttranscriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have identified the key RNA-binding proteins DND1 and DDX5 in SSCs with a unique and dominant role in posttranscriptional regulation (Legrand et al., 2019; Yamaji et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Legrand et al., 2019 and Yamaji et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "dd472057-60c1-4973-bed8-b176a5007c32",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C20",
+      "claim": "The RNA-binding proteins SRSF10, UHRF1, BUD31, and BCAS2 regulate alternative splicing (AS) in mouse spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, recent studies have found that the RNA-binding proteins SRSF10, UHRF1, BUD31, and BCAS2 regulate alternative splicing (AS) in mouse spermatogonia (Liu et al., 2022; Liu et al., 2017; Qin et al., 2023; Zhou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liu et al., 2022; Liu et al., 2017; Qin et al., 2023; and Zhou et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "fa9dce10-d469-4ecc-89b3-1a718884f247",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C21",
+      "claim": "Testes are rich in AS events.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that testes are rich in AS events (Mazin et al., 2021; Venables, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mazin et al., 2021 and Venables, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d6fe8e34-d8ef-4268-ab9a-696d42bde7fd",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C22",
+      "claim": "The underlying mechanisms of how AS functions in homing of precursor SSCs are still largely unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the underlying mechanisms of how AS functions in homing of precursor SSCs are still largely unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "08e0a55c-28db-4c51-bba0-37a2b87a7603",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C23",
+      "claim": "SRSF1 is a widely studied and important splicing factor involved in cancer progression, heart development, and thymus development.",
+      "claim_type": "EXPLICIT",
+      "source": "Serine/arginine-rich splicing factor 1 (SRSF1, previously SF2/ASF) is a widely studied and important splicing factor involved in cancer progression, heart development, and thymus development (Du et al., 2021; Katsuyama et al., 2019; Katsuyama and Moulton, 2021; Liu et al., 2021; Lv et al., 2021; Qi et al., 2021; Xu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to Du et al., 2021; Katsuyama et al., 2019; Katsuyama and Moulton, 2021; Liu et al., 2021; Lv et al., 2021; Qi et al., 2021; and Xu et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "f93c42a2-28cf-456f-aa1b-1f5417a894b1",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C24",
+      "claim": "SRSF1 deficiency impairs primordial follicle formation during meiotic prophase I and leads to primary ovarian insufficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work has shown that SRSF1 deficiency impairs primordial follicle formation during meiotic prophase I and leads to primary ovarian insufficiency (Sun et al., 2023b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sun et al., 2023b, which is the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "fb051a58-ebbb-4e87-b1ef-61c145c31c6b",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C25",
+      "claim": "The underlying mechanisms by which SRSF1 regulates pre-mRNA splicing in mouse SSCs remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the underlying mechanisms by which SRSF1 regulates pre-mRNA splicing in mouse SSCs remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "2e6e8323-e7bc-43be-a3c0-b20e543bdf56",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C26",
+      "claim": "SRSF1 was expressed during spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Fascinatingly, the results of SRSF1 and \u03b3H2AX co-staining revealed that SRSF1 was expressed during spermatogenesis (Figure 1A and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "a54b6897-2310-4232-ab2b-9a2edb25535c",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C27",
+      "claim": "The expression of SRSF1 fluctuated during the developmental stages of the testes.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR and western blotting results showed that the expression of SRSF1 fluctuated during the developmental stages of the testes (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR and western blotting data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4034e8ef-8bed-463a-9127-2a741d2da39a",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C28",
+      "claim": "SRSF1 was highly expressed in the nuclei of spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, the results of SRSF1 and PLZF co-staining revealed that SRSF1 was highly expressed in the nuclei of spermatogonia (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-staining data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "478e4125-4192-4131-b1cd-9b2ccf4415f3",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C29",
+      "claim": "Spermatogenesis-related genes were regulated by SRSF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) enrichment analyses of the SRSF1 peak-containing genes revealed that spermatogenesis-related genes were regulated by SRSF1 (Figure 2A and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis of CLIP-seq data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "e96a2038-405f-4992-8ea3-b1bbb2da51d5",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C30",
+      "claim": "Global Srsf1 knockout is lethal in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that global Srsf1 knockout is lethal in mice (Xu et al., 2005), we used a conditional allele of Srsf1 (Srsf1Fl) in which exons 2, 3, and 4 of Srsf1 are flanked by two loxP sites (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Xu et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4d4a6bac-0d75-4c71-821e-3fbf6bd7374a",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C31",
+      "claim": "Vasa-Cre Srsf1Fl/del mice have Srsf1 deletion in germ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By crossing Srsf1Fl and Vasa-Cre mice, we obtained Vasa-Cre Srsf1Fl/del mice with Srsf1 deletion in germ cells (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the breeding strategy and genotyping data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d23bc4f6-0156-44d7-b4bf-34028b9f0872",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C32",
+      "claim": "The SRSF1 protein is absent in germ cells of cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified the absence of the SRSF1 protein in germ cells by co-immunofluorescence analyses with SRSF1 and PLZF antibodies (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunofluorescence data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "08301723-5a79-4643-b570-fa1463d3b9a3",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C33",
+      "claim": "cKO mice had a standard mating capacity but the absence of Srsf1 led to complete infertility in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the breeding experiment indicated that conditional knockout (cKO) mice had a standard mating capacity but that the absence of Srsf1 led to complete infertility in males (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fertility test data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d2ab9c7e-8f73-407d-b888-0cffe155267d",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C34",
+      "claim": "Sperm could not be found in the cauda epididymis of cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological examination of cKO epididymides revealed that sperm could not be found in the cauda epididymis (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological examination data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "015fe2a7-b9b1-4051-8c83-8f71a6065cd6",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C35",
+      "claim": "The adult cKO mice were normal in size.",
+      "claim_type": "EXPLICIT",
+      "source": "The adult cKO mice were normal in size (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by body size and weight data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "30d5bbf6-53a7-473f-8415-4830d9d491e4",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C36",
+      "claim": "The sizes of cKO mouse testes were significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sizes of cKO mouse testes were significantly reduced (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by testis size and weight data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4958e02e-a3c5-40b0-90ff-e91ba5b52c34",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C37",
+      "claim": "No germ cells could be visualised in the testes of cKO mice, and only a large number of Sertoli cells were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological examination of cKO testis sections showed that no germ cells could be visualised, and only a large number of Sertoli cells were observed in the testes of cKO mice (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological examination data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "f5808df3-c1c5-4575-8c30-3fbe390ada04",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C38",
+      "claim": "SRSF1 is critical for spermatogenesis and its absence leads to SCOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrated that SRSF1 is critical for spermatogenesis and that its absence leads to SCOS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "5756c866-d3a8-4f14-a98b-ef41cfebae1b",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C39",
+      "claim": "SRSF1 deficiency impaired germ cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggested that SRSF1 deficiency impaired germ cell survival (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PLZF and \u03b3H2AX co-staining data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "88c34432-b5f7-4eb7-ab89-95ccced55517",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C40",
+      "claim": "Germ cells were indeed absent in the testes of adult cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the limitations of sectioning, we used whole-mount immunostaining to perform a comprehensive analysis and found that germ cells were indeed absent in the testes of adult cKO mice (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-mount immunostaining data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "069a9da4-113d-45c1-a2fa-e2950d9266d8",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C41",
+      "claim": "The testes of 7 dpp and 14 dpp cKO mice were much smaller than those of Ctrl mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphological results showed that the testes of 7 dpp and 14 dpp cKO mice were much smaller than those of Ctrl mice (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by morphological data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "915f647e-5732-4435-a611-5ae79a1e9652",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C42",
+      "claim": "Germ cells were still present in cKO mice but were significantly reduced in 7 dpp and 14 dpp cKO testes.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that germ cells were still present in cKO mice but were significantly reduced in 7 dpp and 14 dpp cKO testes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by VASA staining data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "e5a34a18-a962-485e-86ba-f2007e79a249",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C43",
+      "claim": "Apoptosis significantly increased in cKO testes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, TUNEL results showed that apoptosis significantly increased in cKO testes (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TUNEL assay data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "fee967b1-9bf4-4f00-b5c5-00c8f6b9968f",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C44",
+      "claim": "The absence of SRSF1 causes apoptosis in a large number of spermatogonia that are unable to survive.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggested that the absence of SRSF1 causes apoptosis in a large number of spermatogonia that are unable to survive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from TUNEL and VASA staining data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "3972ab32-016a-4ba8-a815-d205fd919d50",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C45",
+      "claim": "Partial germ cells could not complete homing in 5 dpp cKO testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the results of VASA and SOX9 co-staining showed that partial germ cells could not complete homing in 5 dpp cKO testes (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by VASA and SOX9 co-staining data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "cc629123-9ed3-404b-bc68-9070aba4f1cd",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C46",
+      "claim": "In mice, starting at 3 dpp, cytoplasmic FOXO1 in some gonocytes begins to enter the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, starting at 3 dpp, cytoplasmic FOXO1 in some gonocytes begins to enter the nucleus (Goertz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Goertz et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4d564467-adcd-46be-8bdd-6302efc13ab0",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C47",
+      "claim": "Gonocytes with nuclear FOXO1 further develop into prospermatogonia, which are expected to develop into SSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells further develop into prospermatogonia, which are expected to develop into SSCs (Goertz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Goertz et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "501388de-4a95-472e-97af-c6ccd7a5987f",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C48",
+      "claim": "There was a reduced number of prospermatogonia in cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, germ cell statistics of FOXO1 expression in the nucleus showed a reduced number of prospermatogonia in cKO mice (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FOXO1 immunohistochemical staining and quantification data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "ce3dde94-fc8a-4b15-bbd6-91120c627d43",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C49",
+      "claim": "Germ cells in which FOXO1 is expressed in the nucleus similarly undergo abnormal homing.",
+      "claim_type": "EXPLICIT",
+      "source": "And germ cells in which FOXO1 is expressed in the nucleus similarly undergo abnormal homing (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FOXO1 immunohistochemical staining and quantification data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "2a774346-0154-45f6-8127-c0392585249b",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C50",
+      "claim": "SRSF1 has an essential role in the homing of precursor SSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, all the above data indicated that SRSF1 has an essential role in the homing of precursor SSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental results on homing defects in cKO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "2b7d82ac-cb2b-413b-bcec-6c1f163597f0",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C51",
+      "claim": "The expression of Srsf1 was significantly reduced in 5 dpp cKO mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq and RT-qPCR results showed a significant reduction in the expression of Srsf1 in 5 dpp cKO mouse testes (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq and RT-qPCR data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "7580bbc6-898d-4142-9b54-ee8bb3cd18b9",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C52",
+      "claim": "SRSF1 expression was significantly reduced in the testes of cKO mice at 5 dpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting results showed that SRSF1 expression was significantly reduced in the testes of cKO mice at 5 dpp (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blotting data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "eab3722c-81a5-4891-9fd2-a106d2e27e96",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C53",
+      "claim": "715 downregulated and 258 upregulated genes were identified by RNA-seq data in 5 dpp cKO mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "The volcano map and cluster heatmap showed 715 downregulated and 258 upregulated genes identified by RNA-seq data in 5 dpp cKO mouse testes (Figure 7C and D and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "c9edb6bc-303a-4f02-89e8-a8e13309d34c",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C54",
+      "claim": "Gene GO enrichment analyses indicated abnormal germ cell development and cell cycle arrest in 5 dpp cKO mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "These gene GO enrichment analyses indicated abnormal germ cell development and cell cycle arrest in 5 dpp cKO mouse testes (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis of RNA-seq data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "29a8986f-6f63-4669-8f2d-e99bb22cfa45",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C55",
+      "claim": "Spermatogonia-associated gene (e.g. Gfra1, Pou5f1, Plzf, Nanos3, Dnd1, Stra8, and Taf4b) expression was significantly reduced in the testes of cKO mice at 5 dpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the heatmap showed that spermatogonia-associated gene (e.g. Gfra1, Pou5f1, Plzf, Nanos3, Dnd1, Stra8, and Taf4b) expression was significantly reduced in the testes of cKO mice at 5 dpp (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "55741917-3a86-43e0-b040-cd2b9885026f",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C56",
+      "claim": "Germ cell-specific deletion of Srsf1 impairs the expression of spermatogonia-associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicated that germ cell-specific deletion of Srsf1 impairs the expression of spermatogonia-associated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from RNA-seq and RT-qPCR data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "1d76e59b-4946-4eee-9225-59e92a0a1534",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C57",
+      "claim": "3543 of the 4824 genes bound by SRSF1 were expressed in testes at 5 dpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the CLIP-seq data were obtained from adult mouse testis, the set of genes bound by CLIP-seq was restricted to those expressed only in the 5 dpp mouse testis RNA-seq data. we found that 3543 of the 4824 genes bound by SRSF1 were expressed in testes at 5 dpp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on integration of CLIP-seq and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4250a382-d94b-41a6-90c7-889a247599b3",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C58",
+      "claim": "9 out of 715 downregulated genes were bound by SRSF1 and underwent abnormal AS.",
+      "claim_type": "EXPLICIT",
+      "source": "Venn diagram data revealed that 9 out of 715 downregulated genes were bound by SRSF1 and underwent abnormal AS (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Venn diagram analysis shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "96a35d91-42c6-4828-a1e4-3994dce98917",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C59",
+      "claim": "1 out of 258 upregulated genes was bound by SRSF1 and underwent abnormal AS.",
+      "claim_type": "EXPLICIT",
+      "source": "And 1 out of 258 upregulated genes was bound by SRSF1 and underwent abnormal AS (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Venn diagram analysis shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "75331698-be72-42cc-98df-5d423048424d",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C60",
+      "claim": "39 unchanged genes were bound by SRSF1 and underwent abnormal AS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that 39 unchanged genes were bound by SRSF1 and underwent abnormal AS (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Venn diagram analysis shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "84ae1412-fc9b-42b8-b718-246082f30c41",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C61",
+      "claim": "162 AS events were significantly affected (false discovery rate [FDR] <0.05) in cKO mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq analyses showed that 162 AS events were significantly affected (false discovery rate [FDR] <0.05) in cKO mouse testes (Figure 8B and C and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq AS analysis shown in Figure 8B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "09e2812f-5e39-4dbe-be40-1b7275950b4b",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C62",
+      "claim": "Most of the 133 affected AS events (162) were classified as skipped exons (SEs), with 10 AS events categorised as retained introns (RIs), 13 as mutually exclusive exons (MXEs), 4 as alternative 5' splice sites (A5SSs), and 2 as alternative 3' splice sites (A3SSs).",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the 133 affected AS events (162) were classified as skipped exons (SEs), with 10 AS events categorised as retained introns (RIs), 13 as mutually exclusive exons (MXEs), 4 as alternative 5' splice sites (A5SSs), and 2 as alternative 3' splice sites (A3SSs) (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AS analysis shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "42c47cad-3d3a-4d18-86df-228bb12e8b2a",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C63",
+      "claim": "SRSF1 effectively inhibits the occurrence of SE and MXE events and promotes the occurrence of RI events.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the overall analysis of aberrant AS events showed that SRSF1 effectively inhibits the occurrence of SE and MXE events and promotes the occurrence of RI events (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by AS analysis shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4f2b18a0-12d2-4f1d-85d6-2393ffba4d04",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C64",
+      "claim": "Four genes concerning germ cell development were altered in AS forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, GO enrichment analyses of AS genes revealed that four genes concerning germ cell development were altered in AS forms (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "5e553185-ecc5-40cb-8709-8b665a728cc4",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C65",
+      "claim": "Tial1/Tiar affects the survival of primordial germ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that Tial1/Tiar affects the survival of primordial germ cells (Beck et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Beck et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "f7422490-fc14-4b19-bde0-6dd0194c51f8",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C66",
+      "claim": "Tial1/Tiar is 1 of 39 unchanged genes that are bound by SRSF1 and undergo abnormal AS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Tial1/Tiar is 1 of 39 unchanged genes that are bound by SRSF1 and undergo abnormal AS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on integration of CLIP-seq, RNA-seq, and AS analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d5f4ce50-7804-4130-834f-acdc3c996732",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C67",
+      "claim": "Multiomics analyses suggested that Tial1/Tiar were posttranscriptionally regulated by SRSF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, multiomics analyses suggested that Tial1/Tiar were posttranscriptionally regulated by SRSF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiomics analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "93ae02e3-5910-4c79-8633-73d2f22f6d0a",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C68",
+      "claim": "The pre-mRNA of Tial1/Tiar in 5 dpp cKO mouse testes exhibited abnormal AS.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we investigated the mechanism by which SRSF1 regulates the AS of Tial1/Tiar, RT-PCR results showed that the pre-mRNA of Tial1/Tiar in 5 dpp cKO mouse testes exhibited abnormal AS (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "f77afeee-3f20-4bf9-abdc-8fb15186ab12",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C69",
+      "claim": "SRSF1 could bind to the pre-mRNA of Tial1/Tiar.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of RNA immunoprecipitation (RIP)-qPCR showed that SRSF1 could bind to the pre-mRNA of Tial1/Tiar (Figure 8G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RIP-qPCR data shown in Figure 8G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "6fe1357d-bcac-4b70-a5b6-bcab23dec098",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C70",
+      "claim": "The fragments per kilobase million (FPKM) of Tial1/Tiar was unchanged in 5 dpp cKO mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNA-seq analyses showed that the fragments per kilobase million (FPKM) of Tial1/Tiar was unchanged in 5 dpp cKO mouse testes (Figure 8H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 8H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "cae944fe-de4c-4560-91a7-f52d3ca82ce9",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C71",
+      "claim": "Tial1/Tiar transcript levels were not inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR results showed that Tial1/Tiar transcript levels were not inhibited (Figure 8I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 8I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "9a668bcf-db7f-41f4-8e00-0b6ef57ba07e",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C72",
+      "claim": "Expression levels of TIAL1/TIAR isoform X2 were significantly suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, western blotting showed that expression levels of TIAL1/TIAR isoform X2 were significantly suppressed (Figure 8J and Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blotting data shown in Figure 8J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "7f6760b7-fd6d-48b4-a8ae-65416899b20d",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C73",
+      "claim": "SRSF1 is required for TIAL1/TIAR expression and splicing in spermatogonia survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the data indicate that SRSF1 is required for TIAL1/TIAR expression and splicing in spermatogonia survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental results on Tial1/Tiar regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4f37fd6d-15eb-4932-8135-1788798b993a",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C74",
+      "claim": "SRSF1 could interact with AS-related proteins (e.g. SRSF10, SART1, RBM15, SRRM2, SF3B6, and SF3A2).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SRSF1 could interact with AS-related proteins (e.g. SRSF10, SART1, RBM15, SRRM2, SF3B6, and SF3A2) (Figure 9F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IP-MS data shown in Figure 9F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "255eee8b-dc80-4c78-ac1a-476579cc4373",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C75",
+      "claim": "FLAG-SRSF1 interacted with HA-SART1, HA-RBM15, and HA-SRSF10 in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-immunoprecipitation (Co-IP) results indicated that FLAG-SRSF1 interacted with HA-SART1, HA-RBM15, and HA-SRSF10 in 293T cells (Figure 9G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Co-IP data shown in Figure 9G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4a56abea-f876-464c-941e-88fcb6310606",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C76",
+      "claim": "mCherry-SRSF1 completely co-localised with eGFP-SART1, eGFP-RBM15, and eGFP-SRSF10 in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fluorescence results showed complete co-localisation of mCherry-SRSF1 with eGFP-SART1, eGFP-RBM15, and eGFP-SRSF10 in 293T cells (Figure 9H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 9H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "76e5cd15-c461-4aec-9ca2-3a79cb02984b",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C77",
+      "claim": "The RRM1 domain of SRSF1 interacted with HA-SART1, HA-RBM15, and HA-SRSF10 in 293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-IP suggested that the RRM1 domain of SRSF1 interacted with HA-SART1, HA-RBM15, and HA-SRSF10 in 293T cells (Figure 9I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Co-IP data with SRSF1 truncated proteins shown in Figure 9I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "b2a9f971-c09f-4d32-87fd-c6b6696e5916",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C78",
+      "claim": "SRSF1 may interact with SRSF10, SART1, and RBM15 to regulate AS in 5 dpp mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the above data show that SRSF1 may interact with SRSF10, SART1, and RBM15 to regulate AS in 5 dpp mouse testes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from IP-MS, Co-IP, and fluorescence microscopy data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "c01147c5-33bb-42fe-a493-25dbcd80d457",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C79",
+      "claim": "SCOS was observed in Ddx5, Tial1/Tiar, Uhrf1, Pramef12, Dot1l, and Rad51 deletion mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "SCOS was observed in Ddx5, Tial1/Tiar, Uhrf1, Pramef12, Dot1l, and Rad51 deletion mouse models (Beck et al., 1998; Legrand et al., 2019; Lin et al., 2022; Qin et al., 2022; Wang et al., 2019; Zhou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beck et al., 1998; Legrand et al., 2019; Lin et al., 2022; Qin et al., 2022; Wang et al., 2019; and Zhou et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "83d60195-5464-4f57-989c-7c725f71d936",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C80",
+      "claim": "The absence of germ cells represents classical SCOS in adult mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of germ cells represents classical SCOS in adult mouse testes (Figure 4; Wang et al., 2023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 4 and a citation to Wang et al., 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "ea0884da-77f8-4f92-b15a-6d8da78c8940",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C81",
+      "claim": "SRSF1 deficiency impairs spermatogonia survival, leading to SCOS in male mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that SRSF1 deficiency impairs spermatogonia survival, leading to SCOS in male mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d4390244-5199-496b-92d9-75b0cdbe7b67",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C82",
+      "claim": "The earliest event in the development of the SSC population is the migration of prospermatogonia from the centre of seminiferous cords to the basement membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest event in the development of the SSC population is the migration of prospermatogonia from the centre of seminiferous cords where they have resided since sex determination of the embryonic gonad to the basement membrane (Oatley and Brinster, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Oatley and Brinster, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "fff21996-4f22-43ff-a786-7fa9ace11fac",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C83",
+      "claim": "Germ cells that do not migrate to the basement membrane are unable to form SSC pools and establish niches.",
+      "claim_type": "EXPLICIT",
+      "source": "Germ cells that do not migrate to the basement membrane are unable to form SSC pools and establish niches (McLean et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to McLean et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "430d0387-780e-4682-a813-3f911bc8d2ea",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C84",
+      "claim": "SSCs that lose their ecological niche will cease to exist.",
+      "claim_type": "IMPLICIT",
+      "source": "Germ cells that do not migrate to the basement membrane are unable to form SSC pools and establish niches (McLean et al., 2003). These SSCs that lose their ecological niche will cease to exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the statement about SSCs losing their niche and the subsequent observation of apoptosis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "e7da898d-064f-4b91-830c-67fa3b2500f6",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C85",
+      "claim": "SRSF1 is crucial for the formation of SSC pools and the establishment of niches through homing of precursor SSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, SRSF1 is crucial for the formation of SSC pools and the establishment of niches through homing of precursor SSCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental results on homing defects and germ cell loss in cKO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "3d922cd0-ba3b-4068-bf14-fb6acdb40156",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C86",
+      "claim": "AS is commonly found in mammals, especially in the brain and testes.",
+      "claim_type": "EXPLICIT",
+      "source": "AS is commonly found in mammals, especially in the brain and testes (Mazin et al., 2021; Merkin et al., 2012; Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mazin et al., 2021; Merkin et al., 2012; and Wang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "c606f340-ede1-41f8-8096-491b17d245e8",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C87",
+      "claim": "AS plays essential roles in the posttranscriptional regulation of gene expression during many developmental processes, such as SSC self-renewal and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "AS plays essential roles in the posttranscriptional regulation of gene expression during many developmental processes, such as SSC self-renewal and differentiation (Chen et al., 2018; Song et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2018 and Song et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "5db4713b-7dd0-4fc3-b86a-84d68dbbb2c2",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C88",
+      "claim": "BUD31-mediated AS of Cdk2 was shown to be required for SSC self-renewal and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, BUD31-mediated AS of Cdk2 was shown to be required for SSC self-renewal and differentiation (Qin et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Qin et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "22e8e37b-a7bb-4fd4-ae51-757cab1c0fd9",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C89",
+      "claim": "Srsf10 depletion disturbed the AS of genes, including Nasp, Bclaf1, Rif1, Dazl, Kit, Ret, and Sycp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Srsf10 depletion disturbed the AS of genes, including Nasp, Bclaf1, Rif1, Dazl, Kit, Ret, and Sycp1 (Liu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "67581e0f-60b6-472c-85be-45e40d25cabe",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C90",
+      "claim": "UHRF1 interacts with snRNAs and regulates AS of Tle3 in mouse SSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "UHRF1 interacts with snRNAs and regulates AS of Tle3 in mouse SSCs (Zhou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Zhou et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "88a73465-359c-4598-9632-2045af9eb6bf",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C91",
+      "claim": "Mettl3-mediated m6A regulates AS of Sohlh1 and Dazl.",
+      "claim_type": "EXPLICIT",
+      "source": "Mettl3-mediated m6A regulates AS of Sohlh1 and Dazl (Xu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Xu et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "a39a983e-4f4d-4bca-9f85-cb4fb1d295b1",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C92",
+      "claim": "SRSF1 acts as an alternative RNA splicing regulator and directly interacts with Tial1/Tiar transcripts to regulate splicing events in spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SRSF1 acts as an alternative RNA splicing regulator and directly interacts with Tial1/Tiar transcripts to regulate splicing events in spermatogonia (Figure 8E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR, RNA-seq, and RIP-qPCR data shown in Figure 8E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "fe159b31-581e-4423-be68-6a1b2f1a4b94",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C93",
+      "claim": "SRSF1 explicitly regulates the expression of Tial1/Tiar via AS.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that SRSF1 explicitly regulates the expression of Tial1/Tiar via AS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from RT-PCR, RNA-seq, RIP-qPCR, and western blotting data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "b92819ea-9292-4b59-bb45-6ecfbbafd866",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C94",
+      "claim": "TIAL1/TIAR is essential for primordial germ cell development in mouse testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies have reported that TIAL1/TIAR is essential for primordial germ cell development in mouse testes (Beck et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Beck et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "3312a703-379a-424b-8f86-44cb16d02f3a",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C95",
+      "claim": "Tial1/Tiar deletion impairs germ cell survival leading to SCOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Tial1/Tiar deletion impairs germ cell survival leading to SCOS, consistent with our phenotype (Figures 3E\u2013I\u20134A\u2013C; Beck et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to Beck et al., 1998 and comparison with the phenotype shown in Figures 3E-I and 4A-C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "a700a2fd-2a79-4cf6-ad7a-91a15c4e02ce",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C96",
+      "claim": "SRSF1 may affect germ cell survival by directly binding and regulating Tial1/Tiar expression through AS.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, SRSF1 may affect germ cell survival by directly binding and regulating Tial1/Tiar expression through AS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple experimental results on SRSF1-Tial1/Tiar interaction and regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "24cda74f-49fd-46dd-937a-9eddfd0ced18",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C97",
+      "claim": "SRSF10 deficiency impaired spermatogonia differentiation but did not affect homing of precursor SSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study reported that SRSF10 deficiency impaired spermatogonia differentiation but did not affect homing of precursor SSCs (Liu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Liu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "be3a41e5-df23-4035-af01-0db042e4adf8",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C98",
+      "claim": "SRSF1 has a specific function in the homing of precursor SSCs independent of SRSF10.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this suggests that SRSF1 has a specific function in the homing of precursor SSCs independent of SRSF10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison between SRSF1 and SRSF10 phenotypes.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "b474653e-bc41-487a-a1cd-b262a28ac9a8",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C99",
+      "claim": "Aberrant homing of precursor SSCs often lead to gametogenic failure, resulting in subfertility or infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant homing of precursor SSCs often lead to gametogenic failure, resulting in subfertility or infertility (Jiao et al., 2021; Kanatsu-Shinohara and Shinohara, 2013; La and Hobbs, 2019; Song and Wilkinson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jiao et al., 2021; Kanatsu-Shinohara and Shinohara, 2013; La and Hobbs, 2019; and Song and Wilkinson, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "8952193b-f04f-4d36-916b-3846106cb0bb",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C100",
+      "claim": "Loss-of-function mutations in humans and corresponding knockout/mutated mice have been extensively researched.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations in humans and corresponding knockout/mutated mice have been extensively researched (Jiao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jiao et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "41ccf666-a95d-4bdf-8682-90bbcbcdcdf4",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C101",
+      "claim": "AS-related posttranscriptional regulation during meiosis has not been well studied.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AS-related posttranscriptional regulation during meiosis has not been well studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "ca155c09-2d00-43ce-a81e-02e608fe4ad1",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C102",
+      "claim": "SRSF1 plays a critical role in posttranscriptional regulation to implement homing of precursor SSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this study demonstrates that SRSF1 plays a critical role in posttranscriptional regulation to implement homing of precursor SSCs (Figure 9K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary conclusion of the study supported by multiple experimental results and illustrated in Figure 9K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "b37639d0-023f-4f5f-aaa5-922848c368e3",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "claim_id": "C103",
+      "claim": "The posttranscriptional regulation of SRSF1-mediated splicing is resolved during the formation of SSC pools and the establishment of niches.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the posttranscriptional regulation of SRSF1-mediated splicing is resolved during the formation of SSC pools and the establishment of niches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "44c94727-9fcb-4155-a7ad-23f8d41ed36b",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SRSF1 is expressed in spermatogonia and binds to spermatogonia-related genes. SRSF1 expression fluctuates during testicular development and is highly expressed in the nuclei of spermatogonia. CLIP-seq data shows SRSF1 binds to spermatogonia-related genes including Plzf, Id4, Setdb1, Stra8, Tial1/Tiar, Bcas2, Ddx5, Srsf10, Uhrf1, and Bud31.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 and C2 are supported by immunostaining (Figure 1A, 1D), RT-qPCR and western blotting (Figure 1B-C), CLIP-seq data (Figure 2A-B), and GO enrichment analysis. The data consistently demonstrate SRSF1 expression patterns and binding targets in spermatogonia.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "610b850c-623f-4a37-abe2-dc0708dc217e",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Germ cell-specific deletion of Srsf1 leads to male infertility and Sertoli cell-only syndrome (SCOS). Vasa-Cre Srsf1Fl/del mice show complete absence of SRSF1 in germ cells, complete male infertility, absence of sperm in the epididymis, and severely reduced testis size with only Sertoli cells present in adult testes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38, C4, and C5 are well-supported by genetic validation (Figure 3A-C), fertility tests (Figure 3D), histological examination (Figure 3E, 3I), sperm counts (Figure 3F), and morphological analysis (Figure 3G-H). The phenotype is consistent and reproducible across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "c2b26d14-d4f8-4a8a-b1e3-0935cb982755",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SRSF1 deficiency impairs germ cell survival through increased apoptosis. Germ cells are absent in adult cKO testes, progressively reduced at 7 and 14 dpp, and show significantly increased apoptosis at 7 dpp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by immunostaining (Figure 4A-C), whole-mount staining (Figure 4C), morphological analysis (Figure 5A), VASA staining with quantification (Figure 5B), and TUNEL assays (Figure 5C). The temporal progression of germ cell loss and increased apoptosis is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "f5e9f471-e62f-4e4a-b50b-3bb796c19ea0",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SRSF1 is essential for homing of precursor SSCs. In 5 dpp cKO testes, partial germ cells fail to complete homing to the basement membrane, and there is a reduced number of prospermatogonia with nuclear FOXO1 that also show abnormal homing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C48-C50, and C3 are supported by VASA/SOX9 co-staining with quantification (Figure 6A-B) and FOXO1 immunohistochemistry with statistical analysis (Figure 6C-E). The homing defect is quantitatively demonstrated and represents a key mechanistic finding linking SRSF1 to SSC pool formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SRSF1 deficiency leads to widespread transcriptional changes in spermatogonia. RNA-seq of 5 dpp cKO testes shows 715 downregulated and 258 upregulated genes, with GO enrichment indicating abnormal germ cell development and cell cycle arrest. Spermatogonia-associated genes (Gfra1, Pou5f1, Plzf, Nanos3, Dnd1, Stra8, Taf4b) are significantly reduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 and C6 are supported by RNA-seq data (Figure 7A-G), RT-qPCR validation (Figure 7H), western blotting (Figure 7B), and GO enrichment analysis (Figure 7E). The RNA-seq quality control is adequate (Figure 7\u2014figure supplement 1), and key findings are validated by orthogonal methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SRSF1 regulates alternative splicing in spermatogonia. Integration of CLIP-seq and RNA-seq data reveals 162 significantly affected AS events (FDR <0.05) in cKO testes, predominantly skipped exons (133 events). SRSF1 inhibits SE and MXE events while promoting RI events. Four genes related to germ cell development show altered AS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 are supported by multiomics integration (Figure 8A), AS analysis (Figure 8B-C), and GO enrichment (Figure 8D). The statistical threshold (FDR <0.05) is appropriate, and the classification of AS event types is standard. However, the functional consequences of most AS changes remain to be validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SRSF1 directly regulates Tial1/Tiar expression through alternative splicing. Tial1/Tiar is bound by SRSF1 and undergoes abnormal AS in cKO testes. While transcript levels remain unchanged, TIAL1/TIAR isoform X2 protein expression is significantly suppressed, suggesting post-transcriptional regulation affects spermatogonia survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73, C7, C92-C93, and C96 are supported by multiomics integration (Figure 8A), RT-PCR (Figure 8E), RNA-seq visualization (Figure 8F), RIP-qPCR (Figure 8G), RNA-seq quantification (Figure 8H), RT-qPCR (Figure 8I), and western blotting (Figure 8J). The data consistently show SRSF1 binds Tial1/Tiar and regulates its splicing, though the mechanistic link to survival requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "acd848ca-bf85-4fcd-a339-50098e0b0365",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SRSF1 interacts with splicing-related proteins SART1, RBM15, and SRSF10 through its RRM1 domain. IP-MS identifies multiple AS-related protein interactions, which are validated by Co-IP and fluorescence co-localization in 293T cells. Domain mapping shows the RRM1 domain mediates these interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 and C8 are supported by IP-MS (Figure 9A-F), Co-IP validation (Figure 9G), fluorescence microscopy (Figure 9H), and domain mapping (Figure 9I). The protein-protein interactions are validated by multiple orthogonal methods. However, the functional significance of these interactions in vivo and their specific roles in AS regulation in spermatogonia remain to be demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d6666fab-3371-415c-a62b-c3101f1df204",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SRSF1 plays a critical role in posttranscriptional regulation during homing of precursor SSCs, which is essential for SSC pool formation and niche establishment. This represents a novel mechanism linking splicing regulation to early spermatogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C102-C103, and C85 represent the main conclusions of the study and are supported by the collective evidence from genetic, phenotypic, transcriptomic, and molecular interaction data. The homing defect (C45-C50), transcriptional changes (C51-C56), AS alterations (C57-C64), and Tial1/Tiar regulation (C66-C73) provide converging evidence for this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background and context claims about SCOS, SSC biology, alternative splicing, and SRSF1. These claims establish the scientific context and knowledge gaps that motivate the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C25 and C30 are background claims supported by appropriate citations to the literature. These establish the context for the study and are not primary findings. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "997e705d-6e96-46c0-b997-9075cd3ddfce",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Discussion claims contextualizing the findings within existing literature on SSC biology, SCOS, alternative splicing, and related proteins. These claims interpret the results in light of prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C65, C79-C80, C82-C84, C86-C91, C94-C95, C97, C99-C101 are discussion claims supported by appropriate citations. These contextualize the findings and compare them to related work. The comparisons are reasonable and the citations appear appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "1fdf5ecf-523a-4ddf-aeed-c9b12c8f2fa2",
+      "content_id": "d0d65760-aec0-43e3-88ae-77cfc3a5737e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SRSF1 has a specific function in homing of precursor SSCs independent of SRSF10, based on comparison with prior work showing SRSF10 deficiency impairs differentiation but not homing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C98 is inferred from comparing the current phenotype with a cited study (Liu et al., 2022). While the comparison is reasonable, the claim of independence is not directly tested. The two proteins could have overlapping functions with different phenotypic thresholds, or SRSF1 could act upstream of or in parallel to SRSF10. Direct genetic or biochemical evidence would be needed to support the claim of independence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "500b8107-0503-49a3-a23b-63f69aa79cb9",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "SRSF1 is expressed during spermatogenesis, with fluctuating expression levels across developmental stages and high expression in the nuclei of spermatogonia (claims C26-C28).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accept these expression pattern findings without question. The data from immunostaining, RT-qPCR, and western blotting are described as robust and convincing by multiple reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "5d61acd0-a309-40c0-8360-145551f5705b",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "SRSF1 binds to spermatogonia-related genes in mouse testes, as demonstrated by CLIP-seq showing binding to genes like Plzf, Id4, Setdb1, Stra8, Tial1/Tiar, and others, with GO enrichment indicating regulation of spermatogenesis-related genes (claims C2, C29).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently describe the CLIP-seq data as convincing and note that the datasets will be 'a useful resource for the field.' One reviewer explicitly states the authors 'revealed that spermatogonia-related genes...were bound by SRSF1' and describes this as convincingly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d1258599-89fd-4e78-9c8d-0789d7298bb0",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Conditional knockout of Srsf1 in germ cells using Vasa-Cre results in male infertility with complete absence of germ cells in adult testes (Sertoli cell-only syndrome), reduced testis size, absence of sperm in epididymis, while body size remains normal (claims C31-C38, C3-C5).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers affirm this phenotype. One reviewer states the authors 'convincingly demonstrated that specific deletion of SRSF1 in mouse germ cells...lead to NOA.' Another notes 'detailed phenotyping of the Srsf1 cKO, which convincingly supports the Sertoli Cell Only phenotype.' A third reviewer describes the 'histological analysis' as 'robust.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "6be19456-d6d9-4173-ac75-1b0517b1a8ec",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Developmental analysis shows that testes of 7 dpp and 14 dpp cKO mice are smaller with significantly reduced germ cells and increased apoptosis, indicating SRSF1 deficiency impairs germ cell survival (claims C39, C41-C44).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this timing analysis. One states the work 'establishes the timing of the first appearance of the spermatogonial defect.' Another notes the 'histological analysis of the Srsf1 cKO traces the origins of the fertility defect to the postnatal testis' and describes findings as 'robust.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "5cfc7f14-8b73-4d84-8147-c143436d81a0",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "SRSF1 is essential for homing of precursor SSCs, as evidenced by partial germ cells failing to complete homing in 5 dpp cKO testes, reduced prospermatogonia numbers, and abnormal homing of FOXO1-positive germ cells (claims C45, C48-C50).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently affirm the homing defect. One states the authors 'conclude that Srsf1 is required for homing of precursor spermatogonial stem cells' and that results 'support the claims made.' Another describes the phenotype as 'convincingly supported' and notes the work provides 'new insight into the role of splicing factors...in spermatogenesis.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "83428721-d3fe-4029-b80d-e620a0257b76",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "RNA-seq analysis of 5 dpp cKO testes reveals significantly reduced Srsf1 expression, 715 downregulated and 258 upregulated genes, abnormal germ cell development and cell cycle arrest, and significantly reduced expression of spermatogonia-associated genes like Gfra1, Pou5f1, Plzf, Dnd1, Stra8, and Taf4b (claims C6, C51-C56).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the RNA-seq findings. One notes the authors 'detect differences in gene expression' and that 'overall methods and results are robust.' Another states the datasets are 'interesting' and 'will be a useful resource for the field.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "8160f028-2f97-40a9-8673-f958b1ce5acc",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Alternative splicing analysis reveals 162 significantly affected AS events in cKO testes, with 9 downregulated genes, 1 upregulated gene, and 39 unchanged genes that are bound by SRSF1 and undergo abnormal AS. SRSF1 inhibits SE and MXE events while promoting RI events, with four germ cell development genes showing altered AS (claims C58-C64).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the AS analysis. One states 'the phenotype and molecular role of SRSF1 in regulating alternative splicing in precursor spermatogonial stem cells in juvenile testes are convincingly supported.' Another notes the authors 'detect differences...in splicing' and that 'overall methods and results are robust.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "SRSF1 regulates Tial1/Tiar through alternative splicing: Tial1/Tiar is bound by SRSF1, exhibits abnormal AS in cKO testes, maintains unchanged transcript levels but shows significantly suppressed TIAL1/TIAR isoform X2 protein expression, suggesting SRSF1 affects spermatogonia survival by regulating Tial1/Tiar expression through AS (claims C7, C66-C73, C92-C93, C96).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express mixed views on this mechanistic claim. One reviewer explicitly states the results are 'convincing except for the claim that altered splicing of the Tial1 transcript mediates the effect of SRSF1 loss.' Another notes 'the paper also provides convincing evidence that the mRNA encoding Tial, a factor relevant to spermatogonial maintenance and male fertility, is alternatively spliced in testis and that this splicing is regulated by SRSF1,' but a third reviewer acknowledges 'the study does not provide a full mechanistic understanding.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "05711508-49a3-4506-b8bf-3dae78d71be3",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "SRSF1 interacts with RNA splicing-related proteins including SRSF10, SART1, RBM15, SRRM2, SF3B6, and SF3A2, as demonstrated by IP-MS, Co-IP, and fluorescence colocalization. The RRM1 domain of SRSF1 mediates these interactions, suggesting SRSF1 coordinates with these proteins to regulate AS in testes (claims C8, C74-C78).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the protein interaction data. One notes the authors 'generate several large 'omics datasets' including 'protein interactions by IP-mass spec' and that these are 'interesting datasets' that 'will be a useful resource.' The methods are described as 'well-designed and conducted' and 'robust.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "86a46719-b2bf-42e8-b5cd-2230005db7e6",
+      "content_id": "baab868e-39d0-49ad-8cd6-b5619db9b414",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Overall conclusion that SRSF1 is essential for gene expression and splicing in mouse SSCs, plays a critical role in posttranscriptional regulation to implement homing of precursor SSCs, and is crucial for formation of SSC pools and establishment of niches through SRSF1-mediated splicing (claims C1, C85, C102-C103).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the main conclusions. One states this is a 'valuable study' where 'the phenotype and molecular role of SRSF1...are convincingly supported.' Another notes 'the authors have shown that SRSF1's effects on alternative splicing are required to establish spermatogenesis' and that 'overall, the results support the claims made.' The work is described as providing 'new insight' and being 'of interest to the fields of reproductive biology, stem cell biology, and alternative splicing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2e6e8323-e7bc-43be-a3c0-b20e543bdf56",
+      "result_id": "44c94727-9fcb-4155-a7ad-23f8d41ed36b"
+    },
+    {
+      "claim_id": "a54b6897-2310-4232-ab2b-9a2edb25535c",
+      "result_id": "44c94727-9fcb-4155-a7ad-23f8d41ed36b"
+    },
+    {
+      "claim_id": "4034e8ef-8bed-463a-9127-2a741d2da39a",
+      "result_id": "44c94727-9fcb-4155-a7ad-23f8d41ed36b"
+    },
+    {
+      "claim_id": "478e4125-4192-4131-b1cd-9b2ccf4415f3",
+      "result_id": "44c94727-9fcb-4155-a7ad-23f8d41ed36b"
+    },
+    {
+      "claim_id": "4bfdb56d-f57c-407b-a1c1-567ac969a69f",
+      "result_id": "44c94727-9fcb-4155-a7ad-23f8d41ed36b"
+    },
+    {
+      "claim_id": "4d4a6bac-0d75-4c71-821e-3fbf6bd7374a",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "d23bc4f6-0156-44d7-b4bf-34028b9f0872",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "08301723-5a79-4643-b570-fa1463d3b9a3",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "d2ab9c7e-8f73-407d-b888-0cffe155267d",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "015fe2a7-b9b1-4051-8c83-8f71a6065cd6",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "30d5bbf6-53a7-473f-8415-4830d9d491e4",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "4958e02e-a3c5-40b0-90ff-e91ba5b52c34",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "f5808df3-c1c5-4575-8c30-3fbe390ada04",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "37995494-9b65-4fa4-822e-40063f4c2f80",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "46a74954-d625-4bb7-8a56-7c9440aea1b8",
+      "result_id": "610b850c-623f-4a37-abe2-dc0708dc217e"
+    },
+    {
+      "claim_id": "5756c866-d3a8-4f14-a98b-ef41cfebae1b",
+      "result_id": "c2b26d14-d4f8-4a8a-b1e3-0935cb982755"
+    },
+    {
+      "claim_id": "88c34432-b5f7-4eb7-ab89-95ccced55517",
+      "result_id": "c2b26d14-d4f8-4a8a-b1e3-0935cb982755"
+    },
+    {
+      "claim_id": "069a9da4-113d-45c1-a2fa-e2950d9266d8",
+      "result_id": "c2b26d14-d4f8-4a8a-b1e3-0935cb982755"
+    },
+    {
+      "claim_id": "915f647e-5732-4435-a611-5ae79a1e9652",
+      "result_id": "c2b26d14-d4f8-4a8a-b1e3-0935cb982755"
+    },
+    {
+      "claim_id": "e5a34a18-a962-485e-86ba-f2007e79a249",
+      "result_id": "c2b26d14-d4f8-4a8a-b1e3-0935cb982755"
+    },
+    {
+      "claim_id": "fee967b1-9bf4-4f00-b5c5-00c8f6b9968f",
+      "result_id": "c2b26d14-d4f8-4a8a-b1e3-0935cb982755"
+    },
+    {
+      "claim_id": "3972ab32-016a-4ba8-a815-d205fd919d50",
+      "result_id": "f5e9f471-e62f-4e4a-b50b-3bb796c19ea0"
+    },
+    {
+      "claim_id": "501388de-4a95-472e-97af-c6ccd7a5987f",
+      "result_id": "f5e9f471-e62f-4e4a-b50b-3bb796c19ea0"
+    },
+    {
+      "claim_id": "ce3dde94-fc8a-4b15-bbd6-91120c627d43",
+      "result_id": "f5e9f471-e62f-4e4a-b50b-3bb796c19ea0"
+    },
+    {
+      "claim_id": "2a774346-0154-45f6-8127-c0392585249b",
+      "result_id": "f5e9f471-e62f-4e4a-b50b-3bb796c19ea0"
+    },
+    {
+      "claim_id": "0dc119f4-f2c1-411a-96a1-f2f2b32b3c1c",
+      "result_id": "f5e9f471-e62f-4e4a-b50b-3bb796c19ea0"
+    },
+    {
+      "claim_id": "2b7d82ac-cb2b-413b-bcec-6c1f163597f0",
+      "result_id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8"
+    },
+    {
+      "claim_id": "7580bbc6-898d-4142-9b54-ee8bb3cd18b9",
+      "result_id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8"
+    },
+    {
+      "claim_id": "eab3722c-81a5-4891-9fd2-a106d2e27e96",
+      "result_id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8"
+    },
+    {
+      "claim_id": "c9edb6bc-303a-4f02-89e8-a8e13309d34c",
+      "result_id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8"
+    },
+    {
+      "claim_id": "29a8986f-6f63-4669-8f2d-e99bb22cfa45",
+      "result_id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8"
+    },
+    {
+      "claim_id": "55741917-3a86-43e0-b040-cd2b9885026f",
+      "result_id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8"
+    },
+    {
+      "claim_id": "369ff93b-97c2-4ec5-8434-4ba2b2b2814a",
+      "result_id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8"
+    },
+    {
+      "claim_id": "1d76e59b-4946-4eee-9225-59e92a0a1534",
+      "result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d"
+    },
+    {
+      "claim_id": "4250a382-d94b-41a6-90c7-889a247599b3",
+      "result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d"
+    },
+    {
+      "claim_id": "96a35d91-42c6-4828-a1e4-3994dce98917",
+      "result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d"
+    },
+    {
+      "claim_id": "75331698-be72-42cc-98df-5d423048424d",
+      "result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d"
+    },
+    {
+      "claim_id": "84ae1412-fc9b-42b8-b718-246082f30c41",
+      "result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d"
+    },
+    {
+      "claim_id": "09e2812f-5e39-4dbe-be40-1b7275950b4b",
+      "result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d"
+    },
+    {
+      "claim_id": "42c47cad-3d3a-4d18-86df-228bb12e8b2a",
+      "result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d"
+    },
+    {
+      "claim_id": "4f2b18a0-12d2-4f1d-85d6-2393ffba4d04",
+      "result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d"
+    },
+    {
+      "claim_id": "f7422490-fc14-4b19-bde0-6dd0194c51f8",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "d5f4ce50-7804-4130-834f-acdc3c996732",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "93ae02e3-5910-4c79-8633-73d2f22f6d0a",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "f77afeee-3f20-4bf9-abdc-8fb15186ab12",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "6fe1357d-bcac-4b70-a5b6-bcab23dec098",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "cae944fe-de4c-4560-91a7-f52d3ca82ce9",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "9a668bcf-db7f-41f4-8e00-0b6ef57ba07e",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "7f6760b7-fd6d-48b4-a8ae-65416899b20d",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "ec85a99a-3ccd-45d7-9d34-7ec2edc47c6e",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "a39a983e-4f4d-4bca-9f85-cb4fb1d295b1",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "fe159b31-581e-4423-be68-6a1b2f1a4b94",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "a700a2fd-2a79-4cf6-ad7a-91a15c4e02ce",
+      "result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985"
+    },
+    {
+      "claim_id": "4f37fd6d-15eb-4932-8135-1788798b993a",
+      "result_id": "acd848ca-bf85-4fcd-a339-50098e0b0365"
+    },
+    {
+      "claim_id": "255eee8b-dc80-4c78-ac1a-476579cc4373",
+      "result_id": "acd848ca-bf85-4fcd-a339-50098e0b0365"
+    },
+    {
+      "claim_id": "4a56abea-f876-464c-941e-88fcb6310606",
+      "result_id": "acd848ca-bf85-4fcd-a339-50098e0b0365"
+    },
+    {
+      "claim_id": "76e5cd15-c461-4aec-9ca2-3a79cb02984b",
+      "result_id": "acd848ca-bf85-4fcd-a339-50098e0b0365"
+    },
+    {
+      "claim_id": "b2a9f971-c09f-4d32-87fd-c6b6696e5916",
+      "result_id": "acd848ca-bf85-4fcd-a339-50098e0b0365"
+    },
+    {
+      "claim_id": "b7d80eb4-6c41-4b2b-9d09-a1268f497801",
+      "result_id": "acd848ca-bf85-4fcd-a339-50098e0b0365"
+    },
+    {
+      "claim_id": "bc5966c9-dac4-451f-b114-13df63e613f9",
+      "result_id": "d6666fab-3371-415c-a62b-c3101f1df204"
+    },
+    {
+      "claim_id": "ca155c09-2d00-43ce-a81e-02e608fe4ad1",
+      "result_id": "d6666fab-3371-415c-a62b-c3101f1df204"
+    },
+    {
+      "claim_id": "b37639d0-023f-4f5f-aaa5-922848c368e3",
+      "result_id": "d6666fab-3371-415c-a62b-c3101f1df204"
+    },
+    {
+      "claim_id": "e7da898d-064f-4b91-830c-67fa3b2500f6",
+      "result_id": "d6666fab-3371-415c-a62b-c3101f1df204"
+    },
+    {
+      "claim_id": "f148b788-f052-431e-97ea-9af686bf8579",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "d81f96ef-a9d9-4c48-a014-007cc2081a18",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "7f540507-20e6-4e28-91cf-747e2a3016c6",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "6ae5e946-899b-490e-9bbd-47aab3fdadfe",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "51228828-0973-4c2a-9e9f-b12d9a61aa96",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "a99a1d42-2d0b-46c1-92c8-22f0a13487dd",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "2acc150a-f759-461b-bd47-2ada7044a8b2",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "d1946ff0-b286-4f08-81c6-c8ee80e0d539",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "25cbd9ed-ef7d-4b02-9c43-9c3848bd20b1",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "f24629b1-587f-41b6-92cf-7be71c20d951",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "39453cd2-5c91-41e4-bcce-044088b0d432",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "dd472057-60c1-4973-bed8-b176a5007c32",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "fa9dce10-d469-4ecc-89b3-1a718884f247",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "d6fe8e34-d8ef-4268-ab9a-696d42bde7fd",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "08e0a55c-28db-4c51-bba0-37a2b87a7603",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "f93c42a2-28cf-456f-aa1b-1f5417a894b1",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "fb051a58-ebbb-4e87-b1ef-61c145c31c6b",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "e96a2038-405f-4992-8ea3-b1bbb2da51d5",
+      "result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580"
+    },
+    {
+      "claim_id": "cc629123-9ed3-404b-bc68-9070aba4f1cd",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "4d564467-adcd-46be-8bdd-6302efc13ab0",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "5e553185-ecc5-40cb-8709-8b665a728cc4",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "c01147c5-33bb-42fe-a493-25dbcd80d457",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "83d60195-5464-4f57-989c-7c725f71d936",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "d4390244-5199-496b-92d9-75b0cdbe7b67",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "fff21996-4f22-43ff-a786-7fa9ace11fac",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "430d0387-780e-4682-a813-3f911bc8d2ea",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "3d922cd0-ba3b-4068-bf14-fb6acdb40156",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "c606f340-ede1-41f8-8096-491b17d245e8",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "5db4713b-7dd0-4fc3-b86a-84d68dbbb2c2",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "22e8e37b-a7bb-4fd4-ae51-757cab1c0fd9",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "67581e0f-60b6-472c-85be-45e40d25cabe",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "88a73465-359c-4598-9632-2045af9eb6bf",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "b92819ea-9292-4b59-bb45-6ecfbbafd866",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "3312a703-379a-424b-8f86-44cb16d02f3a",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "24cda74f-49fd-46dd-937a-9eddfd0ced18",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "b474653e-bc41-487a-a1cd-b262a28ac9a8",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "8952193b-f04f-4d36-916b-3846106cb0bb",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "41ccf666-a95d-4bdf-8682-90bbcbcdcdf4",
+      "result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce"
+    },
+    {
+      "claim_id": "be3a41e5-df23-4035-af01-0db042e4adf8",
+      "result_id": "1fdf5ecf-523a-4ddf-aeed-c9b12c8f2fa2"
+    },
+    {
+      "claim_id": "2e6e8323-e7bc-43be-a3c0-b20e543bdf56",
+      "result_id": "500b8107-0503-49a3-a23b-63f69aa79cb9"
+    },
+    {
+      "claim_id": "a54b6897-2310-4232-ab2b-9a2edb25535c",
+      "result_id": "500b8107-0503-49a3-a23b-63f69aa79cb9"
+    },
+    {
+      "claim_id": "4034e8ef-8bed-463a-9127-2a741d2da39a",
+      "result_id": "500b8107-0503-49a3-a23b-63f69aa79cb9"
+    },
+    {
+      "claim_id": "4bfdb56d-f57c-407b-a1c1-567ac969a69f",
+      "result_id": "5d61acd0-a309-40c0-8360-145551f5705b"
+    },
+    {
+      "claim_id": "478e4125-4192-4131-b1cd-9b2ccf4415f3",
+      "result_id": "5d61acd0-a309-40c0-8360-145551f5705b"
+    },
+    {
+      "claim_id": "4d4a6bac-0d75-4c71-821e-3fbf6bd7374a",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "d23bc4f6-0156-44d7-b4bf-34028b9f0872",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "08301723-5a79-4643-b570-fa1463d3b9a3",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "d2ab9c7e-8f73-407d-b888-0cffe155267d",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "015fe2a7-b9b1-4051-8c83-8f71a6065cd6",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "30d5bbf6-53a7-473f-8415-4830d9d491e4",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "4958e02e-a3c5-40b0-90ff-e91ba5b52c34",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "f5808df3-c1c5-4575-8c30-3fbe390ada04",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "0dc119f4-f2c1-411a-96a1-f2f2b32b3c1c",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "37995494-9b65-4fa4-822e-40063f4c2f80",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "46a74954-d625-4bb7-8a56-7c9440aea1b8",
+      "result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0"
+    },
+    {
+      "claim_id": "069a9da4-113d-45c1-a2fa-e2950d9266d8",
+      "result_id": "6be19456-d6d9-4173-ac75-1b0517b1a8ec"
+    },
+    {
+      "claim_id": "915f647e-5732-4435-a611-5ae79a1e9652",
+      "result_id": "6be19456-d6d9-4173-ac75-1b0517b1a8ec"
+    },
+    {
+      "claim_id": "e5a34a18-a962-485e-86ba-f2007e79a249",
+      "result_id": "6be19456-d6d9-4173-ac75-1b0517b1a8ec"
+    },
+    {
+      "claim_id": "fee967b1-9bf4-4f00-b5c5-00c8f6b9968f",
+      "result_id": "6be19456-d6d9-4173-ac75-1b0517b1a8ec"
+    },
+    {
+      "claim_id": "5756c866-d3a8-4f14-a98b-ef41cfebae1b",
+      "result_id": "6be19456-d6d9-4173-ac75-1b0517b1a8ec"
+    },
+    {
+      "claim_id": "3972ab32-016a-4ba8-a815-d205fd919d50",
+      "result_id": "5cfc7f14-8b73-4d84-8147-c143436d81a0"
+    },
+    {
+      "claim_id": "501388de-4a95-472e-97af-c6ccd7a5987f",
+      "result_id": "5cfc7f14-8b73-4d84-8147-c143436d81a0"
+    },
+    {
+      "claim_id": "ce3dde94-fc8a-4b15-bbd6-91120c627d43",
+      "result_id": "5cfc7f14-8b73-4d84-8147-c143436d81a0"
+    },
+    {
+      "claim_id": "2a774346-0154-45f6-8127-c0392585249b",
+      "result_id": "5cfc7f14-8b73-4d84-8147-c143436d81a0"
+    },
+    {
+      "claim_id": "2b7d82ac-cb2b-413b-bcec-6c1f163597f0",
+      "result_id": "83428721-d3fe-4029-b80d-e620a0257b76"
+    },
+    {
+      "claim_id": "7580bbc6-898d-4142-9b54-ee8bb3cd18b9",
+      "result_id": "83428721-d3fe-4029-b80d-e620a0257b76"
+    },
+    {
+      "claim_id": "eab3722c-81a5-4891-9fd2-a106d2e27e96",
+      "result_id": "83428721-d3fe-4029-b80d-e620a0257b76"
+    },
+    {
+      "claim_id": "c9edb6bc-303a-4f02-89e8-a8e13309d34c",
+      "result_id": "83428721-d3fe-4029-b80d-e620a0257b76"
+    },
+    {
+      "claim_id": "29a8986f-6f63-4669-8f2d-e99bb22cfa45",
+      "result_id": "83428721-d3fe-4029-b80d-e620a0257b76"
+    },
+    {
+      "claim_id": "55741917-3a86-43e0-b040-cd2b9885026f",
+      "result_id": "83428721-d3fe-4029-b80d-e620a0257b76"
+    },
+    {
+      "claim_id": "369ff93b-97c2-4ec5-8434-4ba2b2b2814a",
+      "result_id": "83428721-d3fe-4029-b80d-e620a0257b76"
+    },
+    {
+      "claim_id": "4250a382-d94b-41a6-90c7-889a247599b3",
+      "result_id": "8160f028-2f97-40a9-8673-f958b1ce5acc"
+    },
+    {
+      "claim_id": "96a35d91-42c6-4828-a1e4-3994dce98917",
+      "result_id": "8160f028-2f97-40a9-8673-f958b1ce5acc"
+    },
+    {
+      "claim_id": "75331698-be72-42cc-98df-5d423048424d",
+      "result_id": "8160f028-2f97-40a9-8673-f958b1ce5acc"
+    },
+    {
+      "claim_id": "84ae1412-fc9b-42b8-b718-246082f30c41",
+      "result_id": "8160f028-2f97-40a9-8673-f958b1ce5acc"
+    },
+    {
+      "claim_id": "09e2812f-5e39-4dbe-be40-1b7275950b4b",
+      "result_id": "8160f028-2f97-40a9-8673-f958b1ce5acc"
+    },
+    {
+      "claim_id": "42c47cad-3d3a-4d18-86df-228bb12e8b2a",
+      "result_id": "8160f028-2f97-40a9-8673-f958b1ce5acc"
+    },
+    {
+      "claim_id": "4f2b18a0-12d2-4f1d-85d6-2393ffba4d04",
+      "result_id": "8160f028-2f97-40a9-8673-f958b1ce5acc"
+    },
+    {
+      "claim_id": "f7422490-fc14-4b19-bde0-6dd0194c51f8",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "d5f4ce50-7804-4130-834f-acdc3c996732",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "93ae02e3-5910-4c79-8633-73d2f22f6d0a",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "f77afeee-3f20-4bf9-abdc-8fb15186ab12",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "6fe1357d-bcac-4b70-a5b6-bcab23dec098",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "cae944fe-de4c-4560-91a7-f52d3ca82ce9",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "9a668bcf-db7f-41f4-8e00-0b6ef57ba07e",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "7f6760b7-fd6d-48b4-a8ae-65416899b20d",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "ec85a99a-3ccd-45d7-9d34-7ec2edc47c6e",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "a39a983e-4f4d-4bca-9f85-cb4fb1d295b1",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "fe159b31-581e-4423-be68-6a1b2f1a4b94",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "a700a2fd-2a79-4cf6-ad7a-91a15c4e02ce",
+      "result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c"
+    },
+    {
+      "claim_id": "4f37fd6d-15eb-4932-8135-1788798b993a",
+      "result_id": "05711508-49a3-4506-b8bf-3dae78d71be3"
+    },
+    {
+      "claim_id": "255eee8b-dc80-4c78-ac1a-476579cc4373",
+      "result_id": "05711508-49a3-4506-b8bf-3dae78d71be3"
+    },
+    {
+      "claim_id": "4a56abea-f876-464c-941e-88fcb6310606",
+      "result_id": "05711508-49a3-4506-b8bf-3dae78d71be3"
+    },
+    {
+      "claim_id": "76e5cd15-c461-4aec-9ca2-3a79cb02984b",
+      "result_id": "05711508-49a3-4506-b8bf-3dae78d71be3"
+    },
+    {
+      "claim_id": "b2a9f971-c09f-4d32-87fd-c6b6696e5916",
+      "result_id": "05711508-49a3-4506-b8bf-3dae78d71be3"
+    },
+    {
+      "claim_id": "b7d80eb4-6c41-4b2b-9d09-a1268f497801",
+      "result_id": "05711508-49a3-4506-b8bf-3dae78d71be3"
+    },
+    {
+      "claim_id": "bc5966c9-dac4-451f-b114-13df63e613f9",
+      "result_id": "86a46719-b2bf-42e8-b5cd-2230005db7e6"
+    },
+    {
+      "claim_id": "ca155c09-2d00-43ce-a81e-02e608fe4ad1",
+      "result_id": "86a46719-b2bf-42e8-b5cd-2230005db7e6"
+    },
+    {
+      "claim_id": "b37639d0-023f-4f5f-aaa5-922848c368e3",
+      "result_id": "86a46719-b2bf-42e8-b5cd-2230005db7e6"
+    },
+    {
+      "claim_id": "e7da898d-064f-4b91-830c-67fa3b2500f6",
+      "result_id": "86a46719-b2bf-42e8-b5cd-2230005db7e6"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "066dbd71-0c3c-4698-977f-97c398b04810",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "44c94727-9fcb-4155-a7ad-23f8d41ed36b",
+      "peer_result_id": "500b8107-0503-49a3-a23b-63f69aa79cb9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate SRSF1 expression patterns (C26-C28) as SUPPORTED. OpenEval groups these with CLIP-seq binding data (C29, C2), while peer review separates expression patterns from binding targets. Both find immunostaining, RT-qPCR, and western blotting data robust and convincing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "4e227834-e583-4966-bc4b-57c4f116078f",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "44c94727-9fcb-4155-a7ad-23f8d41ed36b",
+      "peer_result_id": "5d61acd0-a309-40c0-8360-145551f5705b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate CLIP-seq binding data (C2, C29) as SUPPORTED. OpenEval groups these with expression patterns (C26-C28), while peer review focuses specifically on binding targets. Both describe CLIP-seq data as convincing and a useful resource for the field.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "8ee23e0d-c9ff-4660-aeef-9f98528fa6b5",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "610b850c-623f-4a37-abe2-dc0708dc217e",
+      "peer_result_id": "d1258599-89fd-4e78-9c8d-0789d7298bb0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the knockout phenotype (C31-C38, C4-C5) as SUPPORTED with high agreement. OpenEval includes C3 in this group while peer review includes it separately. Both describe genetic validation, fertility tests, histological examination, and phenotypic characterization as convincing and robust, with peer reviewers explicitly affirming the NOA and Sertoli Cell Only phenotype.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "27e6c4fc-2341-4aca-b5aa-5ba7fd5bb89a",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "c2b26d14-d4f8-4a8a-b1e3-0935cb982755",
+      "peer_result_id": "6be19456-d6d9-4173-ac75-1b0517b1a8ec",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate temporal progression of germ cell loss (C39, C41-C44) as SUPPORTED. OpenEval includes C40 while peer review does not explicitly address it. Both affirm the timing analysis and histological tracing of the fertility defect to postnatal testis, describing the data as robust.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "28217b91-350d-4786-8f8d-1639e28787bf",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "f5e9f471-e62f-4e4a-b50b-3bb796c19ea0",
+      "peer_result_id": "5cfc7f14-8b73-4d84-8147-c143436d81a0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the homing defect (C45, C48-C50) as SUPPORTED with complete agreement. OpenEval also includes C3 in this group. Both describe the VASA/SOX9 co-staining and FOXO1 data as convincing, with peer reviewers affirming this represents a key mechanistic finding about SSC precursor homing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "02cdb2ee-d2bf-45b1-9cfa-b48473c9f7bd",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "735e1f57-e1e9-4ee4-99ae-a1ca51b1dae8",
+      "peer_result_id": "83428721-d3fe-4029-b80d-e620a0257b76",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on RNA-seq findings (C51-C56, C6) with both evaluating as SUPPORTED. Both accept the transcriptional changes, describe methods as robust, and note the datasets will be a useful resource for the field. OpenEval provides more detail on quality control and orthogonal validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "7fd6f73f-e69b-439f-a393-dd50ea328ec6",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "1b753b1b-254d-4f2c-b45c-10ebe5409e2d",
+      "peer_result_id": "8160f028-2f97-40a9-8673-f958b1ce5acc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate alternative splicing analysis (C58-C64) as SUPPORTED with strong agreement. OpenEval includes C57 while peer review does not explicitly address it. Both affirm the AS detection methods and results as robust and convincing, though OpenEval notes functional consequences remain to be validated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "b38334cf-8e02-440d-be6c-ebb74dc238bf",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "e428880c-ae9c-4cfd-b38e-4b6db57fe985",
+      "peer_result_id": "9e1d52ad-1d9c-4b6b-aa60-74f15cd6630c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address Tial1/Tiar regulation (C66-C73, C7, C92-C93, C96) but with different evaluations. OpenEval rates as SUPPORTED while peer review rates as UNCERTAIN. OpenEval finds the binding and splicing regulation data convincing, while peer reviewers express mixed views, with one explicitly questioning whether altered Tial1 splicing mediates SRSF1 loss effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "8762463f-26de-4db3-98d4-472604bf7b0c",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "acd848ca-bf85-4fcd-a339-50098e0b0365",
+      "peer_result_id": "05711508-49a3-4506-b8bf-3dae78d71be3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on protein interaction data (C74-C78, C8) with both evaluating as SUPPORTED. Both accept the IP-MS, Co-IP, and domain mapping data as convincing and well-designed. OpenEval notes that functional significance in vivo requires further demonstration, while peer reviewers describe datasets as useful resources.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "d4a864f0-8e6f-41b8-85ff-f6fc5c511bf8",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d6666fab-3371-415c-a62b-c3101f1df204",
+      "peer_result_id": "86a46719-b2bf-42e8-b5cd-2230005db7e6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on main conclusions (C1, C102-C103, C85) with both evaluating as SUPPORTED. Both affirm that the collective evidence from genetic, phenotypic, transcriptomic, and molecular data supports the main claims. Peer reviewers describe the study as valuable and providing new insights into splicing factors in spermatogenesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "6283bac3-8bb3-428d-80b2-6ed8931d664f",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "afe681d3-0faf-4c4d-a7b0-dfcbdafe1580",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background/literature claims (C9-C25, C30) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as peer reviewers typically focus on primary findings rather than background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "5ab58595-1cb1-447b-a427-7ade359981d5",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "997e705d-6e96-46c0-b997-9075cd3ddfce",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates discussion claims (C46-C47, C65, C79-C80, C82-C84, C86-C91, C94-C95, C97, C99-C101) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as peer reviewers typically do not separately evaluate discussion contextualization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    },
+    {
+      "id": "2ce321ef-6619-4ffa-8ae5-bd08e398ab6c",
+      "submission_id": "fd7ebdf0-8a0c-44b5-8be2-48fdece52f5b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "1fdf5ecf-523a-4ddf-aeed-c9b12c8f2fa2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claim C98 (independence from SRSF10) as UNCERTAIN, noting the comparison is reasonable but not directly tested. No corresponding peer review evaluation found for this specific claim about functional independence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:19:01.570814Z"
+    }
+  ]
+}

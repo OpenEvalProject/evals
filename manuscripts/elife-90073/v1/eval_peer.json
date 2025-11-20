@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C93",
+      "C94"
+    ],
+    "result": "The coarse-grained explicit ion model accurately reproduces experimental energetics for protein-DNA binding and nucleosomal DNA unwinding. The simulated free energy profiles match well with experimental measurements across diverse protein-DNA complexes and DNA unwinding trajectories (Figures 2B and 2\u2014figure supplement 1).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the model's accuracy, stating 'The data presented are solid' and noting that 'The model reproduces the scale and, in some cases, the shape of the experimental free energy profile for specific molecule interactions.' The anonymous reviewer acknowledges successful validation through comparison with experimental values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C90",
+      "C91",
+      "C96"
+    ],
+    "result": "The model resolves differential effects of monovalent versus divalent ions on chromatin conformations and compaction. Simulations reproduce experimental sedimentation coefficients under varying salt conditions, showing that divalent ions are more effective at chromatin packaging despite lower concentrations, with Mg2+ binding more efficiently than Na+ (Figure 3).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this finding, with the anonymous reviewer stating 'The strength of this method lies in the explicit representation of counterions, especially divalent ions, which are notoriously difficult to model.' The editor notes the data are 'solid' and provide 'new insights,' implicitly accepting these salt-dependent findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C44",
+      "C45",
+      "C83",
+      "C95"
+    ],
+    "result": "The model reconciles discrepant experimental measurements of nucleosome binding energy (2 kBT vs 14 kBT) by demonstrating that DNA-origami device constraints restrict nucleosome orientations. Unrestricted simulations yield ~15 kBT binding energy, while orientation-restricted simulations reproduce the experimental ~2 kBT value, with the difference explained by loss of inter-nucleosomal contacts (Figure 4).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this reconciliation. The anonymous reviewer states 'the authors' method resolves certain experimental discrepancies related to determining the strength of inter-nucleosomal interactions.' The editor affirms the data are 'solid' and provide valuable insights for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C47",
+      "C88",
+      "C89"
+    ],
+    "result": "Nucleosome interaction strength is sensitive to DNA linker length and linker histone presence. Increasing nucleosome repeat length (NRL) weakens interactions to ~6 kBT, but linker histone H1 compensates by extending its C-terminal tail to stabilize inter-nucleosomal contacts, restoring strong binding at longer NRL (Figure 5C-D).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings without challenge. The anonymous reviewer notes the model 'reproduces the scale and, in some cases, the shape of the experimental free energy profile' and acknowledges successful validation. The editor's statement that data are 'solid' encompasses these linker-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C43",
+      "C92"
+    ],
+    "result": "The model captures counterion atmosphere dynamics during nucleosomal DNA unwrapping, showing modest ion association with outer DNA layer unwrapping but significantly more ion binding when the inner layer unwraps after 73 bp. This suggests counterion release contributes more to inner layer wrapping due to tighter protein-DNA interfaces (Figure 2C).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the model's treatment of counterions. The anonymous reviewer emphasizes 'The strength of this method lies in the explicit representation of counterions' and notes the model 'can efficiently capture the conformational sampling of molecules while maintaining a low computational cost.' No concerns are raised about these ion dynamics findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C86",
+      "C87"
+    ],
+    "result": "As inter-nucleosome distance increases, nucleosomes undergo ~90\u00b0 rotation to adopt perpendicular positions that are energetically favorable at intermediate distances, allowing nucleosomes to remain in contact. This orientation preference diminishes at large distances when nucleosomes completely detach (Figure 5B).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not explicitly challenge this finding, the anonymous reviewer raises concern about Figure S4 (related supplementary data), stating 'the statement \"The agreement is evident\" may not sufficiently capture the essence of Figure S4, as there is a shortage of substantial agreement.' This suggests some uncertainty about orientation-dependent energy profiles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "DNA sequence affects nucleosome binding energy modestly (~2 kBT variation). Poly-dA:dT sequences produce stronger binding while poly-dG:dC weakens interactions, potentially due to increased stiffness of poly-dA:dT DNA causing more frequent unwrapping and increased cross-nucleosome contacts (Figure 5\u2014figure supplement 1-2).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about sequence-dependent effects. The anonymous reviewer's general statement that the model 'reproduces the scale and, in some cases, the shape of the experimental free energy profile' and the editor's affirmation that data are 'solid' implicitly accept these sequence-dependent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C81"
+    ],
+    "result": "The study concludes that intrinsic inter-nucleosome physicochemical interactions are important players in chromatin organization in vivo, strongly supporting their contribution to phase behavior of chromatin aggregates and nuclear chromatin organization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this conclusion. The anonymous reviewer states 'the results from this study support the crucial role of intrinsic physicochemical interactions in governing chromatin organization within the nucleus.' The editor notes the tools 'will be valuable for the chromosome biology field,' affirming the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C63",
+      "C65",
+      "C82"
+    ],
+    "result": "The coarse-grained model represents each amino acid with one bead and three beads per nucleotide, explicitly representing ions to enable faithful description of counterion condensation while remaining computationally efficient for large-scale conformational sampling and free energy calculations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the model's design and capabilities. The anonymous reviewer states 'The significance of this study lies in the authors' coarse-grained model which can efficiently capture the conformational sampling of molecules while maintaining a low computational cost.' The editor calls the approach 'compelling.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The Pearson correlation coefficient between experimental and simulated binding free energies for nine protein-DNA complexes is 0.6, which the authors interpret as supporting model accuracy (Figure 2\u2014figure supplement 1).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not explicitly challenge this correlation, the anonymous reviewer's concern about Figure S4 agreement ('there is a shortage of substantial agreement') suggests some skepticism about the strength of quantitative agreement. A correlation of 0.6 shows moderate but not strong agreement, which may underlie the reviewer's concern.",
+    "result_type": "MINOR"
+  }
+]

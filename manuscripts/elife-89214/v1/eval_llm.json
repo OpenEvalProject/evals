@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study employed a multi-omics approach (proteomics, phosphoproteomics, and transcriptomics) to investigate cardiac adaptations to intermittent fasting in C57BL/6 male mice subjected to different fasting regimens (IF12, IF16, EOD, and AL control) for 6 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C36-C46 collectively describe the experimental design, which is well-documented with appropriate ethical approvals (C41), standardized housing conditions (C43-C44), randomized group assignments (C45), and clear fasting protocols (C46). The multi-omics methodology is explicitly stated and represents a comprehensive approach to studying cardiac remodeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Intermittent fasting regimens produced distinct metabolic effects: EOD mice showed significantly decreased blood glucose and threefold increased ketone levels compared to AL controls, while all IF groups exhibited lower body weight than AL mice without differences in total energy intake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 present physiological measurements with statistical support (n=20 per group) and reference to figures. The findings are internally consistent: EOD produced the strongest metabolic effects, all IF groups reduced body weight, yet energy intake remained similar across groups, suggesting metabolic rather than caloric restriction effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Proteomics analysis identified 6,972 proteins with 9% differentially expressed across IF regimens, showing regimen-specific effects with EOD producing the most extensive changes (44% exclusive modulations) and consistent suppression of glycolytic enzymes across all IF groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 describe proteomics findings with appropriate statistical thresholds (Dunnett adjusted p<0.01) and clear quantification. The hierarchical nature of effects (IF12<IF16<EOD) is well-established, and specific enzyme changes (e.g., PFKFKB1/2 decrease, PCK2 increase) are documented with supplementary data references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Different IF regimens produced distinct pathway modulations: EOD uniquely upregulated mRNA processing, autophagy, and stress response while downregulating cholesterol transport; all IF regimens reduced oxidative phosphorylation and BCAA metabolism; and signaling pathway activation (cAMP, ERK) varied by fasting duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C69 describe pathway-level changes supported by proteomics data with FDR<0.05. The findings show clear regimen-specificity and are supported by figures (Figure 1). The observation that different fasting durations activate distinct signaling pathways (C66-C68) is consistent with the dose-dependent effects observed throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Progressive fasting duration induced sequential functional remodeling: IF12 enhanced structural integrity and immune response; IF16 downregulated inflammatory pathways; EOD induced epigenetic changes, chromatin remodeling, and reduced mitochondrial ETC components while downregulating blood coagulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 describe regimen-specific functional transitions supported by GSEA analysis (p<0.01) and enrichment maps (Figure 2). The progression from structural (IF12) to metabolic (IF16) to epigenetic (EOD) changes represents a coherent biological narrative supported by pathway enrichment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Transcriptome-proteome correlation analysis revealed modest overall correlation (r~0.47) but identified post-transcriptional buffering, particularly in EOD mice, where key metabolic enzymes (fatty acid oxidation enzymes, PLPP1) and regulatory proteins (NAT10, RNASE4, CWC27) showed discordant mRNA-protein expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 describe multi-omics integration with appropriate correlation analysis and 2-D enrichment (FDR<0.05). The identification of post-transcriptional regulation is well-supported by specific examples (C83-C85) showing protein-level changes without corresponding mRNA changes, particularly in EOD, suggesting additional regulatory layers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Clock gene expression patterns were similar across IF12, IF16, and EOD groups despite different feeding schedules, suggesting fasting-induced circadian effects independent of feeding timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 describes clock gene analysis but lacks statistical detail and only mentions transcript-level data. While the observation is interesting, the manuscript acknowledges this as a limitation and notes that only two clock proteins (CLOCK, CRY1) were reliably quantified without showing differential expression. More comprehensive analysis would be needed to support strong conclusions about circadian regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Protein-protein interaction network analysis revealed time-resolved remodeling with 79 proteins changing early (IF12) and 189 proteins exclusively in EOD, identifying key functional clusters including fatty acid \u03b2-oxidation/PPAR signaling (with cardioprotective ACOT1 upregulation), lipid metabolism (apolipoprotein downregulation), and insulin receptor/MAPK signaling, regulated by transcription factors including PPAR\u03b1/\u03b3 and FOXA1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C99 describe comprehensive network analysis using Pathway Commons database with appropriate clustering methods (Cluster ONE, p<0.1). The identification of specific functional clusters is supported by enrichment analysis, and the cardioprotective role of ACOT1 (C92) is appropriately cited. The transcription factor analysis (C99) provides mechanistic insight into observed changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Protein co-regulation network analysis identified 44,966 protein associations with ~40% showing IF-induced perturbations, predominantly affecting IF16 (69 proteins) and EOD (118 proteins) groups, with perturbed proteins enriched in mitochondrial localization and metabolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 describe association network analysis using IMAHP methodology with appropriate statistical thresholds (p<0.05, correlation p<0.01). The finding that mitochondrial proteins are enriched among perturbed associations (C103) is supported by radar plot analysis and provides mechanistic insight into IF effects on cardiac metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Phosphoproteomics analysis identified 12,540 phosphorylation sites on 2,931 proteins, with EOD showing the greatest changes and predominantly increased phosphorylation (contrasting with proteome). Kinase motif analysis revealed PKA/PKC activation across all IF regimens, AMPK activation in longer fasting, and conserved modulation of insulin signaling, focal adhesion, and cardioprotective cGMP-PKG signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C115 describe comprehensive phosphoproteomics with appropriate quality metrics (66% overlap with PhosphoSitePlus, 81% class I sites, FDR<0.01). The kinase motif enrichment (p<0.05) and pathway analysis provide mechanistic insights. The observation that phosphorylation changes are largely independent of protein abundance (C108) is important and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "Immunoblot validation confirmed proteomic findings, showing significantly higher expression of pAMPK/AMPK, PPAR\u03b3, MYPT1, and IRS1 in IF16 compared to AL mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 describes orthogonal validation of key proteomic findings using immunoblotting (n=6 per group). This validation strengthens confidence in the mass spectrometry-based quantification and confirms the activation of key metabolic and signaling pathways identified in the multi-omics analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Functional echocardiography demonstrated that IF16 mice showed significantly enhanced cardiac functional reserve under dobutamine stress compared to AL mice, with improved heart rate, ejection fraction, fractional shortening, and strain measurements, suggesting IF preserves systolic contractile reserve that deteriorates with age in AL mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 present functional cardiac assessment data (n=10 per group) with statistical support and figure references. The dobutamine stress test is an appropriate method to assess cardiac reserve. The findings provide functional validation of the molecular changes observed in the multi-omics analyses, demonstrating that IF improves cardiac stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The introduction establishes the context that IF reduces cardiovascular risk factors and protects against ischemic injury in animals and humans, but the underlying molecular mechanisms in the cardiovascular system remain unclear, justifying the need for comprehensive omics-based investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C35 provide literature context supported by appropriate citations. These claims establish the rationale for the study by documenting known beneficial effects of IF (C1-C2, C14-C27) while identifying the knowledge gap regarding cardiac-specific molecular mechanisms (C3, C30), which the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The discussion contextualizes findings by comparing IF effects to exercise training and prior IF studies, noting similarities in parasympathetic tone, mitochondrial biogenesis, and cardioprotection, while providing mechanistic interpretation of observed molecular changes through cited literature on ACOT1, PKA, AMPK, and other key regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C135 provide appropriate contextualization of results through literature comparison and mechanistic interpretation. All claims are supported by citations to prior work. These claims help interpret the study's findings within the broader context of exercise physiology and metabolic regulation, though they represent discussion rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The study's main findings demonstrate that IF significantly affects multiple cardiac pathways (cGMP signaling, lipid/amino acid metabolism, cell adhesion, cell death, inflammation) in a duration-dependent manner, with IF16 and EOD showing the most significant protein network remodeling and improved cardiac function compared to AL feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10, C38-C40 summarize the study's primary conclusions, which are well-supported by the comprehensive multi-omics data (proteomics, phosphoproteomics, transcriptomics) and functional validation (echocardiography). The duration-dependent effects are consistently demonstrated across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  }
+]

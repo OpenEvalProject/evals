@@ -1,0 +1,1289 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "OpenApePose is a new public dataset of 71,868 photographs annotated with 16 body landmarks of six ape species in naturalistic contexts.",
+    "claim_type": "EXPLICIT",
+    "source": "Here we present OpenApePose, a new public dataset of 71,868 photographs, annotated with 16 body landmarks of six ape species in naturalistic contexts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract explicitly states the dataset size, number of landmarks, and species coverage.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "A standard deep net (HRNet-W48) trained on ape photos can reliably track out-of-sample ape photos better than networks trained on monkeys (OpenMonkeyPose dataset) and on humans (COCO).",
+    "claim_type": "EXPLICIT",
+    "source": "We show that a standard deep net (HRNet-W48) trained on ape photos can reliably track out-of-sample ape photos better than networks trained on monkeys (specifically, the OpenMonkeyPose dataset) and on humans (COCO) can.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract presents experimental results comparing model performance across different training datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Models trained without one of the six ape species can track the held-out species better than the monkey and human models can.",
+    "claim_type": "EXPLICIT",
+    "source": "models trained without one of the six ape species can track the held-out species better than the monkey and human models can.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract reports results from leave-one-species-out experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The ability to automatically track moving animals using video systems has been a great boon for the life sciences, including biomedicine.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability to automatically track moving animals using video systems has been a great boon for the life sciences, including biomedicine (Calhoun and Murthy, 2017; Marshall et al., 2022; Mathis and Mathis, 2020; Pereira et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The statement is supported by multiple citations to prior literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The field has witnessed the development of sophisticated tracking systems that can track and identify behavior in species important for biological research, including humans, worms, flies, and mice.",
+    "claim_type": "EXPLICIT",
+    "source": "In recent years, the field has witnessed the development of sophisticated tracking systems that can track and identify behavior in species important for biological research, including humans, worms, flies, and mice (e.g., Bohnslav et al., 2021; Calhoun et al., 2019; Hsu and Yttri, 2021; Marques et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to multiple studies demonstrating tracking systems for various species.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Tracking is more difficult for monkeys, although significant progress has been made.",
+    "claim_type": "EXPLICIT",
+    "source": "This problem is more difficult for monkeys, although, even here, significant progress has been made (Bain et al., 2021; Bala et al., 2020; Dunn et al., 2021; Labuguen et al., 2020; Marks et al., 2022; reviewed in Hayden et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to multiple studies on monkey tracking.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Large and precisely annotated databases (ones with tens of thousands of images or more) may be needed as training sets to achieve robust performance.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, large and precisely annotated databases (ones with tens of thousands of images or more) may be needed as training sets to achieve robust performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about machine learning requirements based on the authors' experience and knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "The monkey tracking in OpenMonkeyStudio required over 100,000 annotated images, and performance continued to improve even at larger numbers of images in the training set.",
+    "claim_type": "EXPLICIT",
+    "source": "The monkey tracking in our monkey-specific system (OpenMonkeyStudio), for example, required over 100,000 annotated images, and performance continued to improve even at larger numbers of images in the training set (Bala et al., 2020; Yao et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to prior work by the authors.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "There is no currently publicly available database specifically for non-human apes.",
+    "claim_type": "EXPLICIT",
+    "source": "However, there is no currently publicly available database specifically for non-human apes, which in turn means that readily usable tracking solutions specific to apes do not exist.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the state of available resources at the time of writing.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Apes are particularly challenging to track due to their homogeneous body texture and exponentially large number of pose configurations.",
+    "claim_type": "EXPLICIT",
+    "source": "Like monkeys, apes are particularly challenging to track due to their homogeneous body texture and exponentially large number of pose configurations (Yao et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "The need for high-quality training datasets is a major barrier to progress for much of machine learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, the need for high-quality training datasets is a major barrier to progress for much of machine learning (Deng et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by a citation to prior literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The ape (Hominoidea) superfamily includes the great apes (among them, humans, Hominidae family) and the lesser apes, gibbons and siamangs (Hylobatidae family).",
+    "claim_type": "EXPLICIT",
+    "source": "The ape (Hominoidea) superfamily includes the great apes (among them, humans, Hominidae family) and the lesser apes, gibbons and siamangs (Hylobatidae family).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of established taxonomic knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Apes represent humans' closest relatives in the animal kingdom.",
+    "claim_type": "EXPLICIT",
+    "source": "These species, which represent humans' closest relatives in the animal kingdom, have complex social and foraging behavior, a high level of intelligence, and a behavioral repertoire characterized by flexibility and creativity (Smuts et al., 2008; Strier, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established biological knowledge supported by citations.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Apes have complex social and foraging behavior, a high level of intelligence, and a behavioral repertoire characterized by flexibility and creativity.",
+    "claim_type": "EXPLICIT",
+    "source": "These species, which represent humans' closest relatives in the animal kingdom, have complex social and foraging behavior, a high level of intelligence, and a behavioral repertoire characterized by flexibility and creativity (Smuts et al., 2008; Strier, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to prior literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The ability to perform sophisticated video tracking of apes would bring great benefits to primatology and comparative psychology, as well as to related fields like anthropology and kinesiology.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability to perform sophisticated video tracking of apes would bring great benefits to primatology and comparative psychology, as well as to related fields like anthropology and kinesiology (Hayden et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by a citation to prior work.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Tracking systems could be deployed to improve ape welfare and to supplement in situ conservation efforts.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, tracking systems could be deployed to improve ape welfare and to supplement in situ conservation efforts (Knaebe et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by a citation and represents a potential application.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The OpenApePose dataset includes four species from the Hominidae family: bonobos, chimpanzees, gorillas, orangutans, and several species from the Hylobatidae family, pooled into two categories of gibbons and siamangs.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset includes four species from the Hominidae family: bonobos, chimpanzees, gorillas, orangutans, and several species from the Hylobatidae family, pooled into two categories of gibbons and siamangs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the composition of the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The OpenApePose dataset consists primarily of photographs taken at zoos, and also includes images from online sources, including publicly available photographs and videos.",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset consists primarily of photographs taken at zoos, and also includes images from online sources, including publicly available photographs and videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the sources of images in the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The OpenApePose database is designed to have a rich sampling of poses and backgrounds, as well as a range of image features.",
+    "claim_type": "EXPLICIT",
+    "source": "Our database is designed to have a rich sampling of poses and backgrounds, as well as a range of image features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design goals of the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Tracking models built using the OpenApePose database do a good job tracking from a large sample of ape images.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that tracking models built using this database do a good job tracking from a large sample of ape images, and do a better job than networks trained with monkey (OpenMonkeyPose, Yao et al., 2023) or human (COCO, Lin et al., 2014) databases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of experimental results presented in the paper.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Tracking models built using the OpenApePose database do a better job than networks trained with monkey (OpenMonkeyPose) or human (COCO) databases.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that tracking models built using this database do a good job tracking from a large sample of ape images, and do a better job than networks trained with monkey (OpenMonkeyPose, Yao et al., 2023) or human (COCO, Lin et al., 2014) databases.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of experimental results comparing different training datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Tracking quality of OpenApePose is comparable to monkey and human databases tracking their own species, although performance lags slightly behind both.",
+    "claim_type": "EXPLICIT",
+    "source": "We also show that tracking quality is comparable to these two databases tracking their own species (although performance lags slightly behind both).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of experimental results comparing within-species tracking performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The final OpenApePose dataset has 71,868 annotated ape images.",
+    "claim_type": "EXPLICIT",
+    "source": "Combined, our final dataset has 71,868 annotated ape images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct statement about the dataset size.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The OpenApePose image set contains 11,685 bonobos (Pan paniscus), 18,010 chimpanzees (Pan troglodytes), 12,905 gorillas (Gorilla gorilla), 12,722 orangutans (Pongo sp.), 9274 gibbons (genus Hylobates and Nomascus) and 7272 siamangs (Symphalangus syndactylus).",
+    "claim_type": "EXPLICIT",
+    "source": "Our image set contains 11,685 bonobos (Pan paniscus), 18,010 chimpanzees (Pan troglodytes), 12,905 gorillas (Gorilla gorilla), 12,722 orangutans (Pongo sp.), and 9274 gibbons (genus Hylobates and Nomascus) and 7272 siamangs (Symphalangus syndactylus, Figure 2A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This provides the breakdown of images by species, with reference to Figure 2A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The Hylobatidae family (gibbons and siamangs) form somewhat separate pose clusters from the Hominidae family (bonobos, chimpanzees, gorillas, and orangutans) in UMAP space.",
+    "claim_type": "EXPLICIT",
+    "source": "We observe that the Hylobatidae family (gibbons and siamangs) form somewhat separate pose clusters from the Hominidae family (bonobos, chimpanzees, gorillas, and orangutans, Figure 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from UMAP visualization shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The pose clusters likely reflect the differences in locomotion styles between Hylobatidae and Hominidae families, with Hylobatidae being true brachiators, whereas Hominidae spend more time moving on the ground.",
+    "claim_type": "EXPLICIT",
+    "source": "These clusters likely reflect the differences in locomotion styles between these families, Hylobatidae being true brachiators, whereas Hominidae spend more time on moving on the ground.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the UMAP clustering and known locomotion patterns.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Orangutans spend the most time in the trees like the Hylobatidae among the Hominidae, and this is reflected in the overlap of their poses with the Hylobatidae.",
+    "claim_type": "EXPLICIT",
+    "source": "Of the Hominidae, the orangutans spend the most time in the trees like the Hylobatidae, and this is reflected in the overlap of their poses with the Hylobatidae.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the UMAP visualization and known behavior patterns.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The PCK@0.2 for the HRNet-W48 model trained on OpenApePose and tested on apes was 0.876.",
+    "claim_type": "EXPLICIT",
+    "source": "The PCK@0.2 for this model was 0.876, and the area under the curve of PCK at all thresholds (AUC) for this model was 0.897.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The AUC for the HRNet-W48 model trained on OpenApePose and tested on apes was 0.897.",
+    "claim_type": "EXPLICIT",
+    "source": "The PCK@0.2 for this model was 0.876, and the area under the curve of PCK at all thresholds (AUC) for this model was 0.897.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The monkey dataset (OpenMonkeyPose) showed poorer performance when estimating landmarks on photos of apes, with PCK@0.2 of 0.584.",
+    "claim_type": "EXPLICIT",
+    "source": "The monkey dataset showed poorer performance when it comes to estimating landmarks on photos of apes. Specifically, at a threshold of 0.2, the PCK was 0.584, which is lower than the analogous value for OpenApePose (PCK@0.2 = 0.876, p-adjusted<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results comparing datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The AUC for the OpenMonkeyPose model tested on apes was 0.743, compared to 0.897 for OpenApePose (p-adjusted<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, the AUC was also substantially lower (0.743, compared to 0.897 for OpenApePose, p-adjusted<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results with statistical significance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "For tracking apes, models trained on monkey images have some value, but they are not nearly as good as models trained on apes.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, for tracking apes, models trained on monkey images have some value, but they are not nearly as good as models trained on apes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The COCO dataset (trained on humans) showed poorer performance at predicting landmarks on apes than the model trained on the OpenApePose dataset, with PCK@0.2 of 0.569 vs 0.876 (p-adjusted<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset showed poorer performance at predicting landmarks on apes than the model trained on the OAP dataset. Specifically, the PCK@0.2 value of 0.569 was lower than the PCK@0.2 value of 0.876 for OAP (p-adjusted<0.001) and the AUC value of 0.710 was lower than the AUC value of 0.897 for OAP (p-adjusted<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results with statistical significance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "COCO was worse at pose estimation for apes than the OpenMonkeyPose dataset was (PCK@0.2: 0.569 vs 0.584, p-adjusted<0.001; and AUC: 0.710 vs 0.743, p-adjusted<0.001), despite being a much larger dataset (262,465 vs 56,694 training images).",
+    "claim_type": "EXPLICIT",
+    "source": "COCO was worse at pose estimation for apes than the OpenMonkeyPose dataset was (PCK@0.2: 0.569 vs 0.584, p-adjusted<0.001; and AUC: 0.710 vs 0.743, p-adjusted<0.001), despite the fact that it is a much larger dataset (262,465 vs 56,694 training images).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results comparing datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The COCO model predicts landmarks on apes better than it predicts landmarks on monkeys (PCK@0.2 values: 0.568 vs 0.332, p-adjusted<0.001; AUC values: 0.710 vs 0.578, p-adjusted<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "However, it is interesting to note that the COCO model predicts landmarks on apes better than it predicts landmarks on monkeys (PCK@0.2 values: 0.568 vs 0.332, p-adjusted<0.001; AUC values: 0.710 vs 0.578, p-adjusted<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The OpenApePose-trained model predicted apes at an AUC value of 0.897, while the OpenMonkeyPose dataset predicted monkeys at an AUC value of 0.929, which are significantly different (p-adjusted<0.001).",
+    "claim_type": "EXPLICIT",
+    "source": "While the OpenApePose-trained model predicted apes at an AUC value of 0.897, the OpenMonkeyPose dataset predicted monkeys at an AUC value of 0.929. These values are close, but significantly different (p-adjusted<0.001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results with statistical significance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The superior performance of OpenMonkeyPose dataset may be due to the diversity of species and to its larger size.",
+    "claim_type": "EXPLICIT",
+    "source": "We surmise that the superior performance of OpenMonkeyPose dataset may be due to the diversity of species and to its larger size.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation for observed results.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The model based on the COCO dataset predicted human poses at an AUC value of 0.956, better than either the OMP or OAP within group predictions.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, the model based on the COCO dataset predicted human poses even better still, at an AUC value of 0.956, than either the OMP or OAP within group predictions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The COCO dataset's advantage in predicting human poses presumably reflects, among other things, the larger size of the dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "This advantage presumably reflects, among other things, the larger size of the dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative explanation for observed results.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "There is a gradual increase in performance with training set size for the OpenApePose dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We found a gradual increase in performance with training set size.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of experimental results from the decimation procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Performance begins to saturate at around 70% of the full OpenApePose training set size.",
+    "claim_type": "EXPLICIT",
+    "source": "These results suggest that performance begins to saturate at around 70% size and that increasingly larger sets may not provide additional improvement in tracking and might lead to overfitting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The performance at 100% of the OpenApePose training set was not significantly greater than the performance at 70% (PCK@0.2: 0.876 vs 0.878, and AUC: 0.897 vs 0.899, p-adjusted>0.9 for both).",
+    "claim_type": "EXPLICIT",
+    "source": "However, the performance at 100% was not significantly greater than the performance at 70% (PCK@0.2: 0.876 vs 0.878, and AUC: 0.897 vs 0.899, p-adjusted>0.9 for both).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct report of experimental results with statistical significance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "All the models excluding a species perform worse than the full model on the same species.",
+    "claim_type": "EXPLICIT",
+    "source": "Not surprisingly, we find that all the models excluding a species perform worse than the full model on the same species (Figure 5A and B; PCK@0.2 and AUC for bonobos: 0.871 vs 0.881 and 0.896 vs 0.903; chimpanzees: 0.754 vs 0.882 and 0.836 vs 0.902; gibbons: 0.763 vs 0.855 and 0.827 vs 0.883; gorillas: 0.869 vs 0.893 and 0.896 vs 0.908; orangutans: 0.774 vs 0.859 and 0.839 vs 0.886; siamangs: 0.797 vs 0.869 and 0.848 vs 0.889; p-adjusted<0.001 for all comparisons).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct report of experimental results with statistical significance, referencing Figure 5.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The OpenApePose model with a specific species removed still performs better on that species than the OpenMonkeyPose model.",
+    "claim_type": "EXPLICIT",
+    "source": "We observe that the OpenApePose model with a specific species removed still performs better on that species than the OpenMonkeyPose model (Figure 5\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct report of experimental results referencing a supplementary figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "There is some species-specific information in the model that aids in tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "This result suggests that there is indeed some species-specific information in the model that aids in tracking and raises the possibility that larger sets devoted to a single species may be superior to our more general multi-species dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from the experimental results.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Given current models, large tailored species-specific annotated sets are superior to large multispecies sets.",
+    "claim_type": "EXPLICIT",
+    "source": "At the same time, this finding highlights a major finding of this project\u2014that, given current models, large tailored species-specific annotated sets are superior to large multispecies sets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Current models have limited capacity of generalizing across species, even within taxonomic families.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, current models have limited capacity of generalizing across species, even within taxonomic families.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The dataset missing gorillas was the most accurate, suggesting that gorillas are the least difficult to track (PCK@0.2: 0.869; AUC: 0.896).",
+    "claim_type": "EXPLICIT",
+    "source": "Among these close values, the dataset missing gorillas was the most accurate, suggesting that gorillas are the least difficult to track, perhaps because their bodies are the least variable (PCK@0.2: 0.869; AUC: 0.896).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The dataset missing gibbons was the least accurate, suggesting that gibbons are the most difficult to track (PCK@0.2: 0.763; AUC: 0.827).",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, the dataset missing gibbons was the least accurate, suggesting that gibbons are the most difficult to track (PCK@0.2: 0.763; AUC: 0.827).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference drawn from experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Gibbons' habit of brachiation, combined with the variety of poses they exhibit, makes guessing their landmarks particularly tricky for human annotators.",
+    "claim_type": "EXPLICIT",
+    "source": "This observation is consistent with our own intuitions at hand-annotating images\u2014 gibbons' habit of brachiation, combined with the variety of poses they exhibit, makes guessing their landmarks particularly tricky for human annotators as well.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation based on the authors' experience during annotation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Models with one ape species removed still perform better at tracking the held-out species more accurately than the OpenMonkeyPose model on that species.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that models with one ape species removed still perform better at tracking the held-out species more accurately than the OpenMonkeyPose model on that species (Figure 5B and C; PCK@0.2 and AUC for bonobos: 0.871 vs 0.542 and 0.896 vs 0.727; chimpanzees: 0.754 vs 0.688 and 0.836 vs 0.803; gibbons: 0.763 vs 0.587 and 0.827 vs 0.730; gorillas: 0.869 vs 0.564 and 0.896 vs 0.744; orangutans: 0.774 vs 0.529 and 0.839 vs 0.707; siamangs: 0.797 vs 0.556 and 0.848 vs 0.711; p-adjusted<0.001 for all comparisons).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a direct report of experimental results with statistical significance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The close phylogenetic relationship between ape species brings about benefits in tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, the close phylogenetic relationship between ape species does seem to bring about benefits in tracking.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The deep high-resolution net architecture (HRNet) works with higher resolution feature representations that facilitate better performance compared to other architectures.",
+    "claim_type": "EXPLICIT",
+    "source": "As opposed to architectures such as CPM (Wei et al., 2016), hourglass (Newell et al., 2016), simple baselines (ResNet, Xiao et al., 2018), HRNet works with higher resolution feature representations that facilitate better performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the HRNet architecture supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Pose estimation studies often compare a variety of architectures to test performance, but increasingly, studies find HRNet to outperform other architectures.",
+    "claim_type": "EXPLICIT",
+    "source": "Pose estimation studies often compare a variety of these architectures to test performance, but increasingly, studies find HRNet to outperform other architectures (Yu et al., 2021; Li et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the literature supported by citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "HRNet-W48 currently remains the best performing architecture for pose estimation.",
+    "claim_type": "EXPLICIT",
+    "source": "HRNet-W48 currently remains the best performing architecture for pose estimation, and hence, for this study, we train HRNet-W48 models for comparing the performance on our proposed dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of the field based on the authors' knowledge and prior work.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Relative to other animal datasets (with the exception of rat datasets), the OpenApePose dataset is much larger (n ~ 71,000).",
+    "claim_type": "EXPLICIT",
+    "source": "Relative to these other datasets (with the exception of the rat datasets), our ape dataset is much larger (n ~ 71,000).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of dataset sizes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The OpenApePose dataset contains multiple closely related species and a wide range of backgrounds and poses.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, our dataset contains multiple closely related species and a wide range of backgrounds and poses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes characteristics of the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "A major strength of the OpenApePose dataset is that it contains many different types of unique individuals, which is rare as most such datasets include only a few unique individuals.",
+    "claim_type": "EXPLICIT",
+    "source": "Another major strength of our dataset is that it contains many different types of unique individuals, which is rare as most of such datasets include only a few unique individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a characteristic of the dataset in comparison to others.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The main benefit of the OpenApePose database will be for future researchers to develop algorithms that can perform tracking of apes in photos and videos, including videos collected in field sites.",
+    "claim_type": "EXPLICIT",
+    "source": "We anticipate that the main benefit of our database will be for future researchers to develop algorithms that can perform tracking of apes in photos and videos, including videos collected in field sites.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the anticipated use of the dataset.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Relative to simpler animals like worms and mice, primates are highly complex and have a great deal more variety in their poses.",
+    "claim_type": "EXPLICIT",
+    "source": "Relative to simpler animals like worms and mice, primates are highly complex and have a great deal more variety in their poses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement based on biological knowledge and observation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "In the absence of better deep learning techniques, the best way to come up with generalizable models is to have large and variegated datasets for each animal type of interest.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, in the absence of better deep learning techniques, the best way to come up with generalizable models is to have large and variegated datasets for each animal type of interest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the authors' experience and experimental results.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Even monkeys and apes\u2014which are in the same order and have superficially similar body shapes and movements\u2014are sufficiently different that monkey photos do not work as well for ape pose tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "Our results here indicate that even monkeys and apes\u2014which are in the same order and have superficially similar body shapes and movements\u2014are sufficiently different that monkey photos do not work as well for ape pose tracking.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Despite the remarkable growth of human tracking systems, these systems do not readily generalize to apes in spite of our close phylogenetic similarity to them.",
+    "claim_type": "EXPLICIT",
+    "source": "Likewise, despite the remarkable growth of human tracking systems, these systems do not readily generalize to apes in spite of our close phylogenetic similarity to them.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "There is growing interest in leveraging human-tracking systems to develop better animal-tracking systems, but such systems are still in their infancy.",
+    "claim_type": "EXPLICIT",
+    "source": "While there is growing interest in leveraging human-tracking systems to develop better animal-tracking systems, such systems are still in their infancy (Sanakoyeu et al., 2020; Yu et al., 2021; Mathis et al., 2021; Arnk\u00e6rn et al., 2022; Cao et al., 2019; Kleanthous et al., 2022; Bethell et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of the field supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "There are better and more usable general pose estimation systems for animals, such as DeepLabCut, SLEAP, LEAP, and DeepPoseKit, that allow pose estimation with small numbers (thousands) of images.",
+    "claim_type": "EXPLICIT",
+    "source": "At the same time, there are better and more usable general pose estimation systems for animals, such as DeepLabCut (Mathis et al., 2018), SLEAP (Pereira et al., 2022), LEAP (Pereira et al., 2019), and DeepPoseKit (Graving et al., 2019), that allow pose estimation with small numbers (thousands) of images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about available tools supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Pose estimation systems can be combined with downstream analysis algorithms and software tools such as MoSeq, SimBA, and B-SOiD for behavior tracking.",
+    "claim_type": "EXPLICIT",
+    "source": "These poses can be combined with downstream analysis algorithms and software tools such as MoSeq (Wiltschko et al., 2020), SimBA (Nilsson et al., 2020), and B-SOiD (Hsu and Yttri, 2021) for behavior tracking.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about available tools and their applications supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Pose estimation systems can benefit from much larger stimulus sets.",
+    "claim_type": "EXPLICIT",
+    "source": "However, it is clear that such systems can benefit from much larger stimulus sets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion based on the experimental results and general machine learning principles.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The OpenApePose dataset is mostly dominated by images taken in captive settings at zoos and sanctuaries.",
+    "claim_type": "EXPLICIT",
+    "source": "First, while we have attempted to include as many backgrounds, poses, and individuals as possible, our dataset is mostly dominated by images taken in captive settings at zoos and sanctuaries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The captive setting bias may not reflect the conditions in wild settings accurately and may result in reduced performance for applications involving tracking apes in the wild from camera trap footage.",
+    "claim_type": "EXPLICIT",
+    "source": "This may not reflect the conditions in wild settings accurately and may result in reduced performance for applications involving tracking apes in the wild from camera trap footage, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about potential limitations of the dataset.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "OpenApePose remains the most diverse of currently available datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, OpenApePose still remains the most diverse of currently available datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative statement about the dataset.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The OpenApePose dataset only enables 2D pose tracking as it does not include simultaneous multiview images that are required for 3D pose estimation.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, this dataset only enables 2D pose tracking as it does not include simultaneous multiview images that are required for 3D pose estimation (Bala et al., 2020; Kearney et al., 2020; Dunn et al., 2021; Marshall et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the dataset with citations to work on 3D pose estimation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "While many images in the OpenApePose dataset include multiple individuals, only one individual is labeled in each image.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, while many images in our dataset include multiple individuals, we only have one individual labeled in each image.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The single-individual labeling limits, but does not eliminate, the ability to track multiple individuals simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "This limits, but does not eliminate, our ability to track multiple individuals simultaneously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an assessment of the dataset's capabilities.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The OpenApePose dataset does not contain high-resolution tracking of finer features, such as face and hands.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, our dataset does not contain high-resolution tracking of finer features, such as face, hands, etc.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "There are important ethical reasons why apes cannot\u2014and should not\u2014serve as subjects in invasive neuroscientific experiments.",
+    "claim_type": "EXPLICIT",
+    "source": "There are several important ethical reasons why apes cannot\u2014and should not\u2014serve as subjects in invasive neuroscientific experiments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about ethical considerations in research.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Analysis of behavior is an important tool in neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, analysis of behavior is an important tool in neuroscience (Niv, 2021; Krakauer et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about neuroscience methodology supported by citations.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Tracking has the potential ability to provide data of such high quality that it can, in some cases, serve to adjudicate between hypotheses that would otherwise require brain measures.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we have also argued that tracking has another entirely different benefit\u2014it has the potential ability to provide data of such high quality that it can, in some cases, serve to adjudicate between hypotheses that would otherwise require brain measures (Knaebe et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the potential of tracking supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Tracking data has the potential to reduce the need for non-behavior neuroscientific tools and for invasive and/or stressful recording techniques.",
+    "claim_type": "EXPLICIT",
+    "source": "For this reason, tracking data has the potential to reduce the need for non-behavior neuroscientific tools and for invasive and/or stressful recording techniques.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about the potential benefits of tracking.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "Better ape tracking systems will greatly expand the utility of apes in non-invasive studies of the mind and brain.",
+    "claim_type": "EXPLICIT",
+    "source": "We are optimistic that better ape tracking systems will greatly expand the utility of apes in non-invasive studies of the mind and brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about the future impact of the work.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The OpenApePose dataset consists of 71,868 photographs of apes collected between August 2021 and September 2022 from zoos, sanctuaries, and internet videos.",
+    "claim_type": "EXPLICIT",
+    "source": "The OpenApePose dataset consists of 71,868 photographs of apes. We collected images between August 2021 and September 2022 from zoos, sanctuaries, and internet videos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "A subset of 16,984 images from the OpenApePose dataset also appeared in the OpenMonkeyPose dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that a subset of these images (16,984 images from the train, validation, and test sets combined) also appeared in the OpenMonkeyPose dataset (Yao et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the overlap between datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Images were obtained from several zoos in Atlanta, Chicago, Cincinnati, Columbus, Dallas, Denver, Detroit, Erie (Pennsylvania), Fort Worth, Houston, Indianapolis, Jacksonville, Kansas City, Madison, Memphis, Miami, Milwaukee, Minneapolis, Phoenix, Sacramento, San Diego, Saint Paul, San Francisco, Seattle, and Toronto.",
+    "claim_type": "EXPLICIT",
+    "source": "These include zoos in Atlanta, Chicago, Cincinnati, Columbus, Dallas, Denver, Detroit, Erie (Pennsylvania), Fort Worth, Houston, Indianapolis, Jacksonville, Kansas City, Madison, Memphis, Miami, Milwaukee, Minneapolis, Phoenix, Sacramento, San Diego, Saint Paul, San Francisco, Seattle, and Toronto, as well as sanctuaries including the Chimpanzee Conservation Center, Project Chimps, Chimp Haven, and the Ape Initiative (Des Moines).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This lists the sources of zoo images.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "Zoo photographs were taken either by the authors, their lab members, or by photographers hired on temporary contracts using TaskRabbit.",
+    "claim_type": "EXPLICIT",
+    "source": "These zoo photographs were taken either by ourselves, our lab members, or by photographers hired on temporary contracts using TaskRabbit (https://www.taskrabbit.com/) to take pictures at these zoos.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the data collection methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Images were also obtained from internet sources including Facebook, Instagram, and YouTube.",
+    "claim_type": "EXPLICIT",
+    "source": "We also obtained a smaller number of images from internet sources including Facebook, Instagram, and YouTube.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes additional data sources.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Use of photographic images from internet sources is protected by Fair Use Laws and has been expressly approved by the legal office at the University of Minnesota.",
+    "claim_type": "EXPLICIT",
+    "source": "Use of photographic images from these sources is protected by Fair Use Laws and has been expressly approved by the legal office at the University of Minnesota.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the legal basis for using internet images.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The majority of initially obtained images (>75%) did not pass quality checks because they were either blurry or too small or were too similar to others or showed too much occlusion.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of these images (>75%) did not pass our quality checks. Specifically, they were either blurry or too small or were too similar to others or showed too much occlusion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the quality control process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The quality control process led to 52,946 images in total.",
+    "claim_type": "EXPLICIT",
+    "source": "This process led to 52,946 images in total.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the result of the quality control process.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "A commercial service (Hive AI) was used to manually annotate 16 landmarks in the images.",
+    "claim_type": "EXPLICIT",
+    "source": "We used a commercial service (Hive AI) to manually annotate 16 landmarks in these images, a process similar to the one we used previously (Yao et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the annotation methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The annotations were ensured to be accurate by visualizing five random samples of 100 images with the annotations overlayed on the images, for each batch of 10,000 images, resulting in a total of ~2500 inspected images.",
+    "claim_type": "EXPLICIT",
+    "source": "We ensured that the annotations were accurate by visualizing five random samples of 100 images with the annotations overlayed on the images, for each batch of 10,000 images, resulting in a total of ~2500 inspected images.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the quality assurance process for annotations.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The dataset was split into training (60%: 43,120 images), validation (20%: 14,374 images), and testing (20%: 14,374 images) using the train_test_split() function in the scikit-learn Python library.",
+    "claim_type": "EXPLICIT",
+    "source": "To facilitate the evaluation of generalizability of the OpenApePose dataset, we split the full dataset into three sets: training (60%: 43,120 images), validation (20%: 14,374 images), and testing (20%: 14,374 images) using the train_test_split() function in the scikit-learn Python library (Pedregosa et al., 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the dataset splitting methodology.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The training set was not balanced for species as the authors wanted to utilize the full variation in the dataset and assess models trained with the proportion of species as reflected in the dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "We did not balance our training set for the species as we wanted to utilize the full variation in the dataset and assess models trained with the proportion of species as reflected in the dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological choice in dataset preparation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "The OpenMMlab Python library was used to train the models.",
+    "claim_type": "EXPLICIT",
+    "source": "To train our models, we used the pipelines and tools available in the OpenMMlab Python library (Chen et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the software tools used for model training.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "All HRNet-W48 models were trained for 210 epochs.",
+    "claim_type": "EXPLICIT",
+    "source": "We trained all models for 210 epochs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a training parameter.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "The original OpenMonkeyPose dataset included 16,984 images of apes\u201410,223 in the training, 3378 in the validation, and 3383 in the testing set.",
+    "claim_type": "EXPLICIT",
+    "source": "The original OpenMonkeyPose dataset included 16,984 images of apes\u201410,223 in the training, 3378 in the validation, and 3383 in the testing set.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the composition of the original OpenMonkeyPose dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "For a fair comparison between HRNet-W48 models trained on monkeys vs apes, the ape images were moved from the OpenMonkeyPose dataset to the OpenApePose dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Hence, for a fair comparison between HRNet-W48 models trained on monkeys vs apes, we moved these ape images from the OpenMonkeyPose dataset to the OpenApePose dataset (we provide the annotations for the OpenApePose dataset with the ape images from OpenMonkeyPose included in OpenApePose, as well as separately, to enable future replications and comparisons).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a methodological decision for fair comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "To perform statistical significance tests, a bootstrap approach was used where 100 different test sets were simulated by randomly sampling 500 images without replacement from a test set of interest.",
+    "claim_type": "EXPLICIT",
+    "source": "To perform statistical significance tests of differences in model performance for the aforementioned performance metrics, we take a bootstrap approach. We simulate 100 different test sets by randomly sampling 500 images without replacement, 100 times, from a test set of interest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the statistical methodology used.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

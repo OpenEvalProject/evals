@@ -1,0 +1,156 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "SCA-seq is a novel method that uses methyltransferases (EcoGII or M.CviPI) to mark accessible chromatin, preserves accessibility as methylation marks, and captures high-cardinality genome conformation along with CpG methylation, chromatin inaccessibility, and high-order chromatin conformation data compared to existing methods like Trac-loop, Hi-CAR, and NicE-C.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers acknowledge SCA-seq as a valuable methodological advance. The first reviewer states 'Most of the conclusions are supported by convincing data' and that 'SCA-seq has the potential to become a useful tool.' The second reviewer explicitly recognizes SCA-seq as 'one step forward' compared to existing methods and states 'I am convinced that this is a valuable addition to the toolsets of multi-OMIC long-read sequencing mapping.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript compares two methyltransferase approaches: EcoGII produces m6A modifications that block restriction enzymes and reduce resolution, while M.CviPI produces GpC methylation that allows efficient cutting by DpnII and other enzymes, making M.CviPI the preferred choice for unbiased digestion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about these technical optimization claims. The first reviewer states 'Most of the conclusions are supported by convincing data,' and the second reviewer notes 'The QC metrics appear to be good,' implicitly accepting the methodological choices and optimization described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "SCA-seq generated high-quality sequencing data (129.94 Gb, 36.9\u00d7 coverage, N50 = 4446 bp) with accurate methylation calling validated by WGBS (AUC CpG = 0.908, GpC = 0.984), low background GpC methylation (1.8%), and significantly higher GpC ratios in treated samples (>10-fold change, p < 2.6 \u00d7 10\u207b\u00b2\u00b9\u2076).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The second reviewer explicitly states 'The QC metrics appear to be good,' directly affirming the quality of the sequencing data and validation. The first reviewer's statement that 'Most of the conclusions are supported by convincing data' encompasses these technical validation results without raising specific concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "SCA-seq chromatin accessibility measurements show 80% overlap with ATAC-seq/DNase-seq peaks, with sensitivity of 0.73 and specificity of 0.91, and recapitulate expected patterns around CTCF-binding sites and TSSs, including nucleosome depletion at active TSSs and correlation between accessibility and gene expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The second reviewer explicitly acknowledges the 'benchmark analyses testing the performance of SCA-seq in generating each data module (open chromatin and 3D genome)' and states the QC metrics are good. The first reviewer's statement that conclusions are 'supported by convincing data' encompasses these validation results without raising concerns about the chromatin accessibility measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "SCA-seq captures chromatin conformation with median segment length ~700 bp, generates diverse contact distances (75.1% >200 kb), resolves high-cardinality interactions (5.4% of reads with >5 segments), shows comparable reproducibility to pore-C (correlation ~0.94), and achieves moderate correlation with Hi-C for eigenvector (0.91) and insulation scores (0.84), with similar false positive rates and superior high-cardinality capture compared to Trac-loop and HiCAR.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The second reviewer explicitly acknowledges 'benchmark analyses testing the performance of SCA-seq in generating each data module (open chromatin and 3D genome)' and confirms 'The QC metrics appear to be good.' The first reviewer states 'Most of the conclusions are supported by convincing data,' encompassing these 3D genome characterization results without raising specific concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Analysis of concatemers reveals 66% are compartment-specific while 34% are mixed, CTCF binding creates ~50 bp inaccessible regions and results in higher cardinality and more distal interactions than non-CTCF binding, with enzyme labeling efficiency of 79-88% based on CTCF motifs and lambda DNA controls.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are part of the overall analysis that the first reviewer describes as having 'convincing data' supporting 'most of the conclusions.' The second reviewer's acceptance of the method as 'a valuable addition' and acknowledgment of good QC metrics implicitly supports these analytical results, with no specific concerns raised about compartment or CTCF binding analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SCA-seq reveals heterogeneous accessibility in spatially neighboring DNA regions, with 62.2% of concatemers being 'hybrid' (mixed accessible/inaccessible segments) that accumulate at TAD boundaries, contain more enhancer/promoter elements, and show that while accessible enhancer-promoter contacts correlate with gene expression, 51.2% of enhancer-promoter interactions are independent of accessibility status.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer states 'Most of the conclusions are supported by convincing data,' which encompasses these novel findings about accessibility heterogeneity. The second reviewer recognizes SCA-seq as 'a valuable addition to the toolsets' that can obtain 'chromatin accessibility, methylation, and 3D genome information at the same time,' implicitly supporting the integration of these data types to reveal accessibility patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Analysis of orphan CpG islands (oCGIs) shows 76,418 reads on chromosome 7, with oCGIs spatially close to CTCF-binding motifs and active histone markers, demonstrating lower CpG methylation and higher accessibility, with 60% tethering regulatory elements (preferentially CTCF and promoters, p < 2.6 \u00d7 10\u207b\u00b2\u00b9\u2076), though CpG methylation on oCGIs shows weak correlation with promoter accessibility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer's statement that 'Most of the conclusions are supported by convincing data' encompasses these oCGI findings. The second reviewer's recognition of SCA-seq as combining multiple data types ('chromatin accessibility, methylation, and 3D genome information') and being 'a valuable addition' implicitly supports these integrated analyses of CpG islands, with no specific concerns raised about these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SCA-seq has practical considerations including cost (~1300 USD per 40\u00d7 depth sample), requires Oxford nanopore R9.4.1 chip, achieves moderate correlation with Hi-C (0.91 and 0.84 for eigenvalue and insulation score, similar to other multiplex methods), and has resolution of ~700 bp for conformation capture versus ~200 bp for conventional accessibility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These practical and technical specifications are part of the method description that reviewers accept. The first reviewer's statement that 'SCA-seq has the potential to become a useful tool to the scientific communities' acknowledges the practical utility despite these limitations. The second reviewer's conclusion that this is 'a valuable addition to the toolsets' indicates acceptance of the method's specifications and performance characteristics.",
+    "result_type": "MINOR"
+  }
+]

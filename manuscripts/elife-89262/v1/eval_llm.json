@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study demonstrates that Tip-Stalk cell patterning undergoes an order-disorder transition at high VEGF levels. At low VEGF (10 ng/ml), patterns are ordered with ~25% Tip cells in a 'salt-and-pepper' arrangement. At high VEGF (100 ng/ml), patterns become disordered with ~32% Tip cells frequently in contact with each other, with the transition occurring in the 10-100 ng/ml VEGF range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C30 provide converging experimental and modeling evidence for the order-disorder transition. The mathematical model predictions (C25-C27) are validated by experimental measurements at both VEGF concentrations (C28-C29), with clear quantitative agreement. The transition range is reasonably inferred from the two experimental data points (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Experimental Tip cell spatial distributions closely match mathematical model predictions for disordered patterns. Tip cells frequently contact each other (80% adjacent to at least one other Tip, 40% to two Tips, 20% to three Tips), with average distance to closest Tip around 0.5 cells, deviating substantially from ordered 'salt-and-pepper' predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide strong quantitative validation of the disordered pattern model through direct comparison of experimental measurements with model predictions up to the fourth nearest neighbor (C32). The frequent Tip-Tip contacts (C33-C34) are well-documented experimentally and consistent with model expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Mini-sprouts exhibit highly dynamic behavior with temporal instability. By 28 hours, 45.8% of cells that became mini-sprouts retracted to Stalk state, 41.5% remained as mini-sprouts, and only 12.7% progressed to sprout-leading Tip cells. Most sprouts (86.7%) emerged from newly formed mini-sprouts, and conversion rates decreased over time (13.6%, 2.9%, 7.5% at successive time intervals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are well-supported by quantitative dynamic tracking data shown in Figure 4. The Sankey diagram and temporal analysis provide clear evidence for the transient nature of mini-sprouts and their differential fates. Sample sizes and percentages are explicitly stated, though statistical tests are not reported for these descriptive measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Sprouts form in a manner maximizing their mutual distance, consistent with a 'random uniform' distribution model. Sprouts are always separated by at least one non-sprout cell, and the 'random uniform' model better predicts sprout-sprout distances compared to cell-autonomous or repulsion models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41-C43 are supported by systematic comparison of three alternative models against experimental data (Figure 5). The 'random uniform' model shows the best quantitative agreement with both the constraint that sprouts never contact (C41) and the distribution of inter-sprout distances (C42-C43). The analysis appropriately normalizes for sprout density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Fibronectin distribution supports a Turing-like mechanism for sprout pattern formation. Fibronectin is enriched at sprout bases but not tips, with similar levels in quiescent cells and mini-sprouts. Regions around sprouts show higher fibronectin than threshold, while regions around mini-sprouts show lower levels, consistent with local enrichment and depletion mediating sprout stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide experimental immunostaining data (Figure 6) showing differential fibronectin distribution. The inference that fibronectin mediates Turing-like patterning (C8, C50) is reasonable given the spatial distribution data, though the mechanism remains correlative rather than causally demonstrated. Statistical significance is shown for key comparisons (C46-C47), and the regional analysis (C49) provides additional spatial context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C9",
+      "C51",
+      "C52",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "NOTCH signaling enables but does not instruct sprout formation, resulting in robust but temporally unstable differentiation. At low VEGF, ordered patterns produce ~25% Tip cells with few becoming sprouts. At high VEGF, disordered patterns increase sensitivity to external cues like fibronectin. The instability may increase sensitivity to additional cues and facilitate dynamic fate switching, as evidenced by continuous mini-sprout retraction and extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C9, C51-C52, C70-C72, C74 synthesize experimental and modeling results into a coherent mechanistic framework. The distinction between NOTCH-mediated differentiation and sprout formation is supported by the observation that not all Tip cells become sprouts (C5-C6) and the role of fibronectin (C51-C52). The instability interpretation (C71-C72, C74) is reasonably inferred from the dynamic tracking data, though some aspects remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The mathematical model shows that Delta and NOTCH distributions are largely bimodal across a wide range of VEGF inputs, with average Delta expression increasing with VEGF input due to positive regulation by activated VEGF receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are directly supported by modeling results shown in Figure 2B-C and supplementary figures. The bimodal distributions enable clear classification of Tip vs Stalk cells, and the VEGF-dependent increase in Delta is consistent with the circuit architecture. This is a computational result that provides the foundation for subsequent experimental comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C31"
+    ],
+    "result": "The 3D vessel experimental system produces both mini-sprouts (one-cell extensions) and full-fledged multicellular sprouts with lumens at various growth stages. Mini-sprouts form throughout the vessel, while sprouts develop in specific zones with other zones remaining devoid of sprouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C31 describe basic experimental observations directly shown in Figure 1 and supplementary figures. These are well-documented descriptive findings that establish the experimental system and the distinction between mini-sprouts and sprouts, which is central to subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background knowledge on angiogenesis: Angiogenesis involves formation of new vessels from existing ones in hypoxic environments, with Tip and Stalk cell differentiation controlled by NOTCH signaling. VEGF promotes Tip fate while NOTCH signaling promotes Stalk fate. Both Tip cell migration and Stalk cell proliferation are essential for sprout formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C16 represent well-established background knowledge in angiogenesis research, supported by citations to prior literature and scientific consensus. These provide the conceptual foundation for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Prior mathematical modeling predicts bistability between Tip and Stalk phenotypes and 'salt-and-pepper' patterns with 25% Tip cells in 2D arrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 accurately cite prior modeling work (Boareto et al., 2015b; Bocci et al., 2020) that provides the theoretical foundation for the current study. These are established results from previous publications that inform the current model development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C57",
+      "C58"
+    ],
+    "result": "Prior literature establishes that collagen can be reorganized by growing sprouts, fibronectin is critical for lumenized sprout formation and can promote lumen formation, and TNF binds avidly to fibronectin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C57-C58 accurately cite relevant prior literature that supports the rationale for investigating fibronectin distribution. These are established findings from other groups that provide context for the current experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C59",
+      "C78",
+      "C79"
+    ],
+    "result": "Mechanistic interpretations: High VEGF enables sprout initiation from adjacent Tip cells. Progressive sprout formation leads to maximization of inter-sprout distance, consistent with non-local inhibition mediated by fibronectin redistribution. Fibronectin enrichment at sprout bases contributes to lumenization, and TNF binding to fibronectin may explain anti-angiogenic effects at sprout sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C56, C59, C78-C79 represent mechanistic inferences and speculations based on the experimental observations. While plausible and consistent with the data, these mechanisms are not directly tested. C53 is supported by occasional observations, but C54-C56 and C59 involve proposed mechanisms that would require additional experiments to validate. C78-C79 are reasonable inferences but remain correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Pathophysiological implications: Disorder and plasticity at high VEGF may contribute to pathological states in hypoxic conditions. Elevated VEGF in wound healing, ischemia, or tumor growth may dysregulate sprout formation due to increased Tip cell co-localization and altered ECM synthesis, leading to denser, less developed vascular beds characteristic of tumor angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C65 extrapolate the findings to pathophysiological contexts. While C62 and C65 cite established knowledge about VEGF regulation and tumor angiogenesis, C61, C63-C64 are speculative extensions of the current findings to disease contexts without direct experimental validation in those settings. These represent plausible hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Comparisons to other systems and prior work: The findings are contextualized relative to prior models of molecular noise in NOTCH signaling, EGF-induced NOTCH signaling in C. elegans, order-disorder transitions in materials, NOTCH oscillations in other differentiation processes, and neurogenic progenitor states. Prior work showed VEGF alone produces mini-sprouts but not full sprouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C73, C75-C77 appropriately cite and contextualize the current findings relative to prior work in related systems. These comparisons are supported by appropriate citations and help position the current findings within broader biological and physical frameworks. C76 cites the authors' own prior work appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Alternative Turing mechanisms have been proposed for sprout branching involving different molecular mechanisms than proposed here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 appropriately cites recent alternative models (Guo et al., 2021; Xu et al., 2017) and acknowledges that different molecular mechanisms have been proposed for related patterning phenomena. This provides appropriate context for the current mechanistic proposal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Methodological assumptions: The analysis assumes Stalk cells in sprouts emerge through proliferation rather than migration from the parental vessel, and that all non-Tip cells adopt Stalk fates in the observed patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 describe key assumptions made for the quantitative analysis methodology. While these assumptions are reasonable given the observed patterns and enable the experimental-model comparison, they are not directly validated. The assumption about proliferation vs migration (C80) could affect interpretation of sprout composition, and the binary Tip/Stalk classification (C81) may oversimplify intermediate states.",
+    "result_type": "MINOR"
+  }
+]

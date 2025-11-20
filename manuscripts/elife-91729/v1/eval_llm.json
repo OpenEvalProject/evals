@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C29",
+      "C38"
+    ],
+    "result": "The study performed multiomic profiling (snRNA-seq and snATAC-seq) on six distinct primary cultures of human aortic ECs exposed to activating environments in vitro, achieving median sequencing depths of 29,732\u201384,476 reads for RNA and 22,939\u2013126,122 reads for ATAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C29, and C38 provide clear experimental design and sequencing metrics. The methodology is well-documented with appropriate depth for single-cell multiomics, and the approach is standard for this type of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C3"
+    ],
+    "result": "Five distinct EC subtypes (EC1-EC5) were identified with reproducible molecular signatures across donors: EC1-angiogenic, EC2-proliferative, EC3-activated/mesenchymal-like, and EC4-mesenchymal, with EC5 being donor-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 and C3 collectively demonstrate robust identification of EC subtypes with pathway enrichment analysis and marker gene expression. The reproducibility across multiple donors (except EC5) and statistical significance of pathway enrichments (p-values provided) support these classifications. However, EC5 is appropriately noted as donor-specific and excluded from further analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "EC subtypes exhibit distinct chromatin accessibility profiles with EC1-2 enriched for ETS motifs (likely driven by ERG), EC4 enriched for TEAD motifs characteristic of mesenchymal cells, confirming EC1-2 as canonically EC-like and EC4 as most mesenchymal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 provide comprehensive chromatin accessibility analysis with appropriate statistical testing (adjusted p-values). The motif enrichment analysis is well-supported, and the correlation between ERG expression and ETS motif enrichment (C44) provides mechanistic insight. The TEAD enrichment in EC4 is consistent with known VSMC biology (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C9"
+    ],
+    "result": "Pro-EndMT perturbations (IL1B, TGFB2, siERG) only modestly shifted cells between subpopulations, with EC3 showing modest increases upon perturbation while EC4 did not increase as hypothesized. Perturbations explained more variance (38-56%) than donor (17-27%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C9 are supported by Figure 3 and PCA analysis. The statistical testing (paired t-tests with p-values) is appropriate, though some results are marginally significant (p=0.08 for IL1B in EC3). The finding contradicts the authors' hypothesis but is honestly reported. The PCA variance decomposition is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C100",
+      "C101"
+    ],
+    "result": "EC subtypes exhibit heterogeneous transcriptional responses to perturbations: EC1-2 predominantly respond to siERG, EC3 to IL1B, and EC4 to TGFB2 (>80% of differentially expressed transcripts), with pathway enrichments reflecting mesenchymal and inflammatory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60, C100-C101 demonstrate subtype-specific responses with differential expression analysis and pathway enrichment. The use of pseudobulk DESeq2 analysis is appropriate. Pathway enrichments are statistically significant with p-values provided. The heterogeneity in response is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Chromatin accessibility changes show subtype-specific patterns: EC1-2 DARs predominantly respond to siERG, EC3 to IL1B, while EC4 shows discordance between transcriptional (TGFB2) and epigenetic (IL1B) responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by differential accessibility analysis with appropriate statistical thresholds (p<0.005). The interesting discordance in EC4 between transcriptional and epigenetic responses (C63) is clearly documented and raises important biological questions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Meta-analysis of 17 ex vivo human arterial specimens identified 24 cell clusters including two EC populations: Endo1 (canonical EC phenotype enriched in ribosomal pathways) and Endo2 (EndMT-related phenotype enriched in mesenchymal pathways), with ribosomal pathway depletion potentially serving as a hallmark of activated endothelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C64-C70 describe comprehensive meta-analysis with appropriate integration methods. Pathway enrichments are statistically significant (p-values provided). The interpretation of Endo1 vs Endo2 is supported by pathway analysis, though the suggestion about ribosomal depletion as a hallmark (C69) is appropriately stated as speculative ('may serve').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Module score analysis reveals that in vitro EC4 cells score highest for ex vivo VSMC5 (a transitional cluster), in vitro EC1 for Endo1, and EC3 for Endo2. TGFB2 increases VSMC5 scores in EC3-4 but not EC1-2, while siERG decreases Endo1 scores and increases VSMC5 scores across subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 are supported by module score analysis with statistical testing (Wilcoxon tests, adjusted p-values provided). The unexpected finding that VSMC5 generates highest scores (C71) is interesting and well-documented. The differential responses to perturbations are statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C4",
+      "C107"
+    ],
+    "result": "Quantitative comparison using Spearman correlation shows in vitro EC4 is most similar to ex vivo mesenchymal cells (VSMCs/fibroblasts), EC1-2-3 to Endo1/Endo2, with EC subtype being a greater determinant of similarity than perturbation. Control EC1 cells show modest correlation (rho=0.56) to healthy Endo1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83, C4, C107 are supported by hierarchical clustering analysis using Spearman correlation. The modest correlation coefficient (rho=0.56) is honestly reported and discussed. The finding that subtype matters more than perturbation is clearly demonstrated in Figure 6A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C7"
+    ],
+    "result": "Accessible chromatin regions across all EC subtypes (panEC) and specifically in EC2 and EC4 are significantly enriched for CAD-associated SNPs from GWAS, with EC4 showing greatest enrichment (OR=1.74, adj. p=7.85\u00d710\u207b\u2076), suggesting these phenotypes harbor CAD-modulating mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C84-C87, C7 demonstrate significant GWAS enrichment with appropriate statistical testing (Fisher's exact test, adjusted p-values, odds ratios). The enrichment is genome-wide significant. However, the conclusion that these phenotypes 'harbor CAD-modulating mechanisms' (C7) is appropriately stated as a suggestion, as enrichment alone does not prove causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Peak-to-gene linkage analysis identified 81 significant SNP-peak-gene trios representing 46 unique genes in EC4, enriched in EndMT-related pathways including blood vessel development and TGFB signaling, indicating common genetic variation influences CAD through ECM-organizing functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by peak-to-gene linkage analysis with pathway enrichment. The p-value threshold (p<0.05) for linkage is reasonable. Pathway enrichments are statistically significant. The conclusion (C90) appropriately integrates GWAS enrichment with functional pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C91",
+      "C92",
+      "C95"
+    ],
+    "result": "Primary EC cultures contain markedly heterogeneous cell subtypes that respond divergently to perturbations, demonstrating that EC heterogeneity is prevalent both in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C91, C92, C95 represent the main conclusions of the study, well-supported by the comprehensive multiomics data, subtype identification, differential responses to perturbations, and comparison with ex vivo data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "EC4 is most mesenchymal with minimal effects elicited by siERG and IL1B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 states EC4 shows 'minimal effects' from siERG and IL1B, but this conflicts with other claims showing EC4 does respond to these perturbations (e.g., C63 shows IL1B affects EC4 chromatin, C79 shows siERG increases VSMC5 scores). The claim may refer specifically to cell proportion changes (C49) but is ambiguously stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The exact origin of EC heterogeneity is unknown, with EC4 potentially representing cells that underwent EndMT in vivo or SMC-origin cells that persisted in culture, though lineage tracing would be required to distinguish these possibilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97, C98-C99, C103-C105 appropriately acknowledge limitations and uncertainties. The authors honestly state what cannot be determined from their data and propose alternative hypotheses. This represents good scientific practice in discussing limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Similarities between IL1B and siERG responses may be explained by ERG depletion increasing IL1B production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by citation to prior work (Hogan et al., 2017) and is stated as a possible explanation. This represents appropriate integration of current findings with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Distinct cell subpopulations respond differently to disease-relevant exposures of IL1B, TGFB2, and ERG depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is a summary conclusion well-supported by the differential expression and accessibility analyses across subtypes (C52-C63). This represents a confident conclusion from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The moderate correlation between in vitro and ex vivo ECs may be explained by anatomic differences (aortic vs coronary/carotid arteries).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 proposes anatomic differences as an explanation for modest correlation, but this is stated as speculation ('cannot exclude the possibility'). No data are provided to test this hypothesis. Other factors (culture conditions, disease state of ex vivo samples) could equally explain the difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "EC3 may represent a reversible state lacking in EC4, which would explain enrichment of EC4 but not EC3 in CAD-related SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is stated as a hypothesis to explain differential GWAS enrichment. While plausible, no direct evidence for reversibility is provided. This represents speculation that would require additional experiments (e.g., time-course studies, perturbation removal) to test.",
+    "result_type": "MINOR"
+  }
+]

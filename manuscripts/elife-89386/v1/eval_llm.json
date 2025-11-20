@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "AF2 models demonstrate substantially better global structural accuracy than traditional template-based models for GPCRs. The median all-atom RMSD between AF2 models and experimentally determined structures is 2.9 \u00c5, compared to 4.3 \u00c5 for traditional models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are well-supported by data presented in Figure 1\u2014figure supplement 1, with clear quantitative metrics showing AF2's superior global structural accuracy. The comparison is appropriately controlled, using proteins without experimentally determined structures available before the AF2 training cutoff date.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C35",
+      "C36"
+    ],
+    "result": "AF2 models predict binding pocket structures with much higher accuracy than traditional models, with median RMSD of 1.3 \u00c5 versus 3.3 \u00c5. The binding pocket accuracy of AF2 models approaches the natural variation between experimentally determined structures of the same protein with different ligands bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C35-C36 are strongly supported by data in Figure 1, showing AF2's superior binding pocket prediction. The comparison to natural structural variation provides important context. However, C23 notes some AF2 models have highly inaccurate binding pockets (~5 \u00c5 RMSD), indicating the method is not uniformly reliable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C37",
+      "C51",
+      "C52"
+    ],
+    "result": "Despite superior binding pocket structural accuracy, AF2 models yield ligand-binding pose prediction accuracy (15% correct) similar to traditional models (9%, p > 0.5) and substantially worse than experimentally determined structures (44%). This holds across multiple docking methods (Glide SP, Glide XP, Rosetta).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C37, C51-C52 are supported by data in Figure 2 and supplements, with appropriate statistical testing. This is the central finding of the paper. The result is robust across three different docking methods (C28-C29, C50), strengthening the conclusion. The sample sizes (40-54 ligands per condition, C72) appear adequate for the statistical comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C77",
+      "C78",
+      "C58"
+    ],
+    "result": "At equivalent binding pocket RMSD values, AF2 models yield lower pose prediction accuracy than experimentally determined structures, with statistically significant differences for RMSD values below 1.1 \u00c5. Traditional models and experimental structures show similar pose prediction accuracy at equivalent binding pocket RMSD. This demonstrates that binding pocket RMSD is not a good predictor of docking utility for AF2 models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C77-C78, C58 are supported by data in Figure 5 and supplements using kernel smoothing analysis with appropriate statistical testing. This analysis reveals a critical insight: structural accuracy metrics do not predict functional utility for ligand docking when using AF2 models. The methodology appears sound, though the reference to Figure 3 in C30 appears to be an error (should be Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C50"
+    ],
+    "result": "The finding that AF2 models do not significantly outperform traditional models for pose prediction is consistent across three different docking methods: Glide SP, Glide XP, and Rosetta docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C50 are supported by data in Figure 2\u2014figure supplement 2. Testing across multiple docking methods strengthens the generalizability of the main findings and rules out method-specific artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Even when excluding cases where the experimental structure was determined with a ligand similar to the one being docked, experimentally determined structures still yield significantly more accurate pose predictions than AF2 models (p < 0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by data in supplementary figures with statistical testing. This control addresses a potential confounding factor and strengthens the main conclusion that experimental structures outperform AF2 models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "For NK1R, the AF2 model has a more accurate binding pocket (1.6 \u00c5 RMSD) than an experimentally determined structure with a different ligand (2.6 \u00c5 RMSD), yet produces a less accurate docked pose for aprepitant (10.6 \u00c5 vs 1.9 \u00c5 ligand RMSD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by visual and quantitative data in Figure 3. This case study illustrates the paradoxical finding that better structural accuracy does not guarantee better docking performance for AF2 models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "For 5HT2A, the AF2 model has a more accurate binding pocket (0.7 \u00c5 RMSD) than the traditional model (1.1 \u00c5 RMSD), yet produces a less accurate docked pose for LSD (2.3 \u00c5 vs 0.9 \u00c5 ligand RMSD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by visual and quantitative data in Figure 4. This case study demonstrates that AF2 models can underperform even traditional models in pose prediction despite superior structural accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study systematically evaluated 54 experimentally determined structures of 18 GPCRs (17 class A, 1 class B) for which no structure was available before April 30, 2018 (AF2's training cutoff). AF2 models were generated with template cutoff matching this date, and traditional models from GPCRdb (dated 2018-04-06) with \u226540% sequence identity were used for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16, C62-C69 describe the study design and are explicitly stated with appropriate methodological rigor. The temporal controls ensure fair comparison by preventing data leakage. The focus on GPCRs is justified by their importance as drug targets (C12) and diversity (C13). The 40% sequence identity threshold for traditional models is standard practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study used standard methodological criteria: binding pockets defined as residues within 5 \u00c5 of the ligand, correct poses defined as \u22642.0 \u00c5 RMSD from experimental pose, with sample sizes of 40-54 ligands per condition and 52-150 RMSD comparisons for structural analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C70-C72 describe methodological details that are standard in the field and explicitly stated. The 2.0 \u00c5 RMSD criterion for correct poses is widely used (supported by citations in C24). Sample sizes appear adequate for the statistical comparisons performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "AlphaFold 2 demonstrated unprecedented ability to predict protein structures with atomic accuracy in CASP, sometimes rivaling experimental methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 are supported by citations to published CASP evaluation studies. This represents established prior work providing context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Protein structures play a critical role in rational drug design, particularly for determining ligand-binding modes. Experimental structure determination is slow and expensive, motivating development of computational docking methods that have accelerated drug discovery when high-resolution structures are available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 represent established knowledge in structural biology and drug discovery, supported by appropriate citations. These provide important context for why accurate structure prediction matters for drug discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Protein structure prediction methods are typically evaluated using metrics focused on overall structural accuracy rather than utility for ligand binding, though improvements in structure prediction are widely assumed to improve ligand-binding predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 accurately characterize the field's assumptions and evaluation practices. C9 is based on knowledge of CASP metrics, while C10 is supported by citations. These claims motivate the study's focus on evaluating utility for ligand binding rather than just structural accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "While building traditional template-based models requires suitable templates (\u226540% sequence identity in this study), 80% of human drug targets have \u226550% sequence identity to proteins with known structures. Expert modelers could potentially build better traditional models than those used in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide important caveats about the generalizability of the findings. C40 is supported by citation, while C41 is a reasonable inference supported by citations about expert modeling strategies. These appropriately acknowledge limitations of the comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "GPCRs have very diverse binding pockets evolved to bind a broad range of ligands with high specificity, suggesting the study's conclusions likely apply to many non-GPCR drug targets. GPCRs account for roughly half of drug discovery projects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 justify the focus on GPCRs and argue for generalizability. C42 is supported by citation, while C43 is reasonable inference and C44 represents field knowledge. The diversity argument for generalizability is logical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "For GPCRs, docking performance can be improved by using structures in the appropriate activation state, but this study did not limit ligands by activation state because: many drug targets lack well-defined activation states, the preferred state may be unknown in practice, and AF2 does not produce activation state-specific models by default.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 explain an important methodological choice. C45 is supported by citations, while C47-C49 represent reasonable knowledge-based justifications. This choice makes the study more representative of practical drug discovery scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Despite limitations for pose prediction, AF2 models may prove valuable for drug discovery because they are readily available for all human proteins, while building good traditional models requires expertise and suitable templates are not always available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C57 represent speculation about future utility (C53) combined with factual statements about availability (C54, C56) and requirements (C55). While C54 is supported by citations and C55-C56 represent accurate knowledge, C53's speculation about future value is not directly tested. The practical advantages cited are real but don't overcome the demonstrated performance limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C61"
+    ],
+    "result": "Future improvements could include: developing structure prediction methods optimized for ligand-binding prediction rather than structural accuracy, and redesigning docking methods to perform better with computationally predicted models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59 and C61 represent speculation about future method development. While these are reasonable suggestions motivated by the findings (C58 shows RMSD doesn't predict docking utility; C60 notes docking software was developed using experimental structures), they are not tested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Existing deep-learning structure prediction methods were developed to maximize structural accuracy. Protein structures depend on which ligand is bound, but neither AF2 nor the GPCRdb traditional models allow specification of a bound ligand during model generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 represent accurate knowledge about method development and protein flexibility. These provide important context for understanding why models may not capture ligand-specific conformations.",
+    "result_type": "MINOR"
+  }
+]

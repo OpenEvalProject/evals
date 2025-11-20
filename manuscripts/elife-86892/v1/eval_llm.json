@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Difficulty judgments enable task selection, resource allocation, and performance prediction. These claims establish the functional importance of prospective difficulty estimation in decision-making contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C13-C15 are well-supported by citations to prior work establishing the role of difficulty estimation in decision-making. These are foundational claims about the importance of the research question rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior difficulty judgment studies used complex naturalistic tasks that preclude quantitative modeling. This motivates the current study's use of simpler, tractable perceptual tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 accurately characterize limitations of prior work (supported by citations) and provide clear rationale for the methodological approach. This is a standard literature review establishing the research gap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In a color judgment task, participants' accuracy increased and reaction times decreased with increasing color strength, consistent with a drift diffusion model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 describe the experimental design, while C24-C27 report standard behavioral findings that are well-fit by drift diffusion models. This is a validation task establishing that the basic perceptual decision follows expected patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C88"
+    ],
+    "result": "In difficulty judgments, accuracy improved with difference in stimulus difficulties, but reaction times showed a complex pattern including a 'magnitude effect' where matched-difficulty trials were faster for easier stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C28-C31 describe the core behavioral findings from Experiment 1, supported by data in Figure 1d. The magnitude effect (C88) is a key empirical observation that distinguishes between models. Statistical support is provided (e.g., t-test comparing hard-hard vs easy-easy conditions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C22",
+      "C23",
+      "C36",
+      "C44",
+      "C110",
+      "C111"
+    ],
+    "result": "The difference model, in which participants compare absolute accumulated evidence from each stimulus and terminate when the difference reaches a threshold, best explains difficulty judgments across multiple task variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C22-C23 state the main theoretical conclusion, while C36, C44 provide quantitative model comparison evidence (BIC, exceedance probability). The difference model was preferred for 12/20 participants overall and 14/20 when compared to the two-step model. Claims C110-C111 summarize the broad applicability across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C42"
+    ],
+    "result": "Alternative models (race, absolute momentary evidence, two-step) were systematically evaluated and found inferior to the difference model, though the two-step model provided similar fits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C40 identify specific failures of the race and absolute momentary evidence models. C42 acknowledges the two-step model's similar performance but notes it requires an additional parameter. Model comparison is supported by BIC values and model recovery analysis showing 77% correct classification for two-step vs 100% for difference model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C58",
+      "C59",
+      "C69",
+      "C70",
+      "C94"
+    ],
+    "result": "When color dominance is known, the difference model predicts RTs depend only on difficulty difference (not magnitude), which was confirmed in Experiment 2 showing faster RTs and elimination of the magnitude effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 states the prediction, C48 explains the theoretical basis, and C49-C52 report the empirical confirmation in Experiment 2. Statistical support includes ANOVA showing variance explained by difficulty difference increases significantly in the known color condition. Claims C58-C59 and C69-C70 provide mechanistic interpretation. This is a strong prediction-confirmation cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C62",
+      "C63",
+      "C64",
+      "C108"
+    ],
+    "result": "The difference model is preferred over a confidence-based model because difficulty judgments are based directly on decision variables rather than requiring explicit confidence calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 states the conclusion, while C62-C64 explain the theoretical distinction and C108 provides the interpretation. The confidence model showed poor fits (\u0394BIC = 38, 56, 47 for three participants) and failed to explain the known color condition (Figure 6). The mechanistic explanation based on supra-linear confidence scaling is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C69"
+    ],
+    "result": "In a controlled duration task, accuracy improved with stimulus duration and was higher when color dominance was known, consistent with the difference model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims supported by data in Figure 7 showing accuracy increases with duration and is significantly higher in known vs unknown color conditions (Fisher's exact test p<0.001 for each participant). Model fits using a single drift rate parameter across conditions were preferred over models with separate parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "An optimal model maximizing reward rate qualitatively reproduces participant behavior including the magnitude effect and criss-cross RT pattern, with the difference model providing the best fit to optimal model simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C95-C96 report qualitative agreement between optimal model and data. C74-C75 describe the optimal decision space structure. C97-C98 conclude the observed patterns don't reflect suboptimality. The optimal model analysis is thorough (POMDP formulation, 200,000 simulated trials) and model comparison to simulated data strongly favors the difference model (\u0394BIC = 2,847 for next best model).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Difficulty judgments can be completed faster than at least one of the underlying perceptual decisions, demonstrating that difficulty assessment does not require completion of the color decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 make an important conceptual point about the independence of difficulty judgments from perceptual decision completion. C82 provides a specific quantitative example. This is supported by the model structure where difficulty decisions are based on ongoing accumulation rather than completed decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The magnitude effect in difficulty judgments differs mechanistically from similar effects in value-based decision-making, as it can be abolished by providing color dominance information, and arises from the geometry of decision bounds in the difference model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 establish the parallel with value-based decision-making, while C91 shows the attention-based explanation doesn't apply (magnitude effect abolished in known color condition). C92-C94 provide the mechanistic explanation based on model geometry. The explanation is well-supported by both empirical data and model simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The comparative judgment approach avoids participant-specific scaling issues and instantiates difficulty estimation as a hierarchical metacognitive process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 provides methodological justification (supported by citation to Mamassian, 2020) for the comparative approach. C85 offers a conceptual interpretation of the model as hierarchical. These are reasonable methodological and theoretical points, though C85 is more interpretive than empirical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The difference model could be neurally implemented using a max operation over competing accumulations and potentially extended to more than two stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are speculative proposals about neural implementation and extensions. While plausible, these are not tested empirically and represent future directions rather than established findings. The neural implementation suggestion is reasonable but lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The results are robust to whether evidence accumulation is serial or parallel, and the focus on accumulation models is justified by prior work on perceptual decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 addresses a potential concern about serial vs parallel processing, explaining that the distinction affects parameters but not predictions. C102 describes the relationship between models. C103 justifies the focus on accumulation models with citations. These are reasonable methodological clarifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The generalizability of findings to naturalistic tasks is uncertain, though accumulation models have been successfully applied to complex tasks like chess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 appropriately acknowledge limitations regarding generalization to real-world tasks and differences in feedback. C106 provides some optimism based on prior work extending accumulation models to chess. This is a fair and balanced discussion of limitations and future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Confidence calculations may be necessary for difficulty judgments when comparing different types of decisions with non-comparable decision variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is a reasonable speculation about when confidence-based models might be necessary (e.g., comparing color vs motion decisions), supported by a citation. However, this is untested and represents a hypothesis for future work rather than an established finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Experiments were conducted online during the pandemic with appropriate participant recruitment, exclusion criteria based on accuracy (not RT), and counterbalanced stimulus presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C127 describe methodological details including sample sizes (51 recruited, 20 included for Exp 1; 4 recruited, 3 included for Exp 2), exclusion criteria (sensitivity thresholds), and experimental procedures. The exclusion criteria are appropriate and clearly justified. The online implementation is adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "For difficulty judgments to be useful for planning, they should not require task completion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is a logical inference about the utility of prospective difficulty judgments. This is a reasonable conceptual point that motivates the research question, though it's more of a definitional statement than an empirical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Confidence and difficulty are related metacognitive judgments, with confidence convertible to difficulty given decision time, and difficulty estimation can be prospective or retrospective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 establish background on confidence and difficulty as metacognitive constructs, supported by citations to prior work. These are accurate characterizations of the literature that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Evidence accumulation models are appropriate for this task given their success in explaining perceptual and mnemonic decisions, with all models assuming momentary color evidence extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 justifies the modeling approach with citations, while C34 describes a common assumption across models. This is a reasonable methodological choice given the perceptual nature of the task and extensive prior validation of accumulation models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The two-step model requires an additional parameter for the initial color bound compared to the difference model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is a straightforward description of model structure. This is accurate and relevant for model comparison, as the additional parameter penalizes the two-step model in BIC calculations.",
+    "result_type": "MINOR"
+  }
+]

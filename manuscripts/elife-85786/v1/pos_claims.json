@@ -1,0 +1,1640 @@
+[
+  {
+    "query": "Datasets collected in neuroscientific studies are of ever-growing complexity, often combining high-dimensional time series data from multiple data acquisition modalities.",
+    "matched_segment": "Datasets collected in neuroscientific studies are of ever-growing complexity, often combining high-dimensional time series data from multiple data acquisition modalities.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 170
+    },
+    "len": 170
+  },
+  {
+    "query": "Here, we present Pynapple, the PYthon Neural Analysis Package, a lightweight python package designed to process a broad range of time-resolved data in systems neuroscience.",
+    "matched_segment": "Here, we present Pynapple, the PYthon Neural Analysis Package, a lightweight python package designed to process a broad range of time-resolved data in systems neuroscience.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 365
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 537
+    },
+    "len": 172
+  },
+  {
+    "query": "The core feature of this package is a small number of versatile objects that support the manipulation of any data streams and task parameters.",
+    "matched_segment": "The core feature of this package is a small number of versatile objects that support the manipulation of any data streams and task parameters.",
+    "start": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 538
+    },
+    "stop": {
+      "xpath": "/article/front/article-meta/abstract",
+      "char_offset": 680
+    },
+    "len": 142
+  },
+  {
+    "query": "While various programming environments such as Matlab and R have long been commonly used in data science, Python has progressively become one of the most popular programming languages (McKinney, 2011). This is due to its open nature, large community-driven development, and versatility of usage.",
+    "matched_segment": "While various programming environments such as Matlab and R have long been commonly used in data science, Python has progressively become one of the most popular programming languages (McKinney, 2011). This is due to its open nature, large community-driven development, and versatility of usage.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 235
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[1]",
+      "char_offset": 530
+    },
+    "len": 295
+  },
+  {
+    "query": "In systems neuroscience, calcium imaging and high-density electrophysiology make it possible to simultaneously monitor the activity of an increasingly large number of neurons (Stevenson and Kording, 2011; Urai et al., 2022).",
+    "matched_segment": "In systems neuroscience, calcium imaging and high-density electrophysiology make it possible to simultaneously monitor the activity of an increasingly large number of neurons (Stevenson and Kording, 2011; Urai et al., 2022).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 224
+    },
+    "len": 224
+  },
+  {
+    "query": "Despite this rapid progress, data analysis often relies on custom-made, lab-specific code, which is susceptible to error and can be difficult to compare across research groups.",
+    "matched_segment": "Despite this rapid progress, data analysis often relies on custom-made, lab-specific code, which is susceptible to error and can be difficult to compare across research groups.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 715
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 891
+    },
+    "len": 176
+  },
+  {
+    "query": "While several toolboxes are available to perform neuronal data analysis (Oostenveld et al., 2011; Bokil et al., 2010; Garcia et al., 2014; Freeman et al., 2014; Nasiotis et al., 2019; Zugaro, 2018; Ackermann et al., 2018) (see Unakafova and Gail, 2019, for review), most of these programs focus on producing high-level analysis from specified types of data, and do not offer the versatility required for rapidly changing analytical methods and experimental methods.",
+    "matched_segment": "While several toolboxes are available to perform neuronal data analysis (Oostenveld et al., 2011; Bokil et al., 2010; Garcia et al., 2014; Freeman et al., 2014; Nasiotis et al., 2019; Zugaro, 2018; Ackermann et al., 2018) (see Unakafova and Gail, 2019, for review), most of these programs focus on producing high-level analysis from specified types of data, and do not offer the versatility required for rapidly changing analytical methods and experimental methods.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 892
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[2]",
+      "char_offset": 1357
+    },
+    "len": 465
+  },
+  {
+    "query": "The first property of such a toolbox is that it should be object-oriented, organizing software around data. This makes the programming environment very efficient for data analysis, particularly in systems neuroscience where data streams can be of very different types.",
+    "matched_segment": "The first property of such a toolbox is that it should be object-oriented, organizing software around data. This makes the programming environment very efficient for data analysis, particularly in systems neuroscience where data streams can be of very different types.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 268
+    },
+    "len": 268
+  },
+  {
+    "query": "In contrast, an object which is specifically designed to represent a series of event times can ameliorate these concerns. For example, it can be created from a specific data loader that ensures proper definition of time units and support epochs (i.e., true beginning and end of the observation time).",
+    "matched_segment": "In contrast, an object which is specifically designed to represent a series of event times can ameliorate these concerns. For example, it can be created from a specific data loader that ensures proper definition of time units and support epochs (i.e., true beginning and end of the observation time).",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 1025
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[4]",
+      "char_offset": 1325
+    },
+    "len": 300
+  },
+  {
+    "query": "Pynapple is built around only five objects that are divided into three categories: two objects represent event timestamps (one or several), two represent time-varying data (one or several time series at the same sampling times), and one represents time epochs.",
+    "matched_segment": "Pynapple is built around only five objects that are divided into three categories: two objects represent event timestamps (one or several), two represent time-varying data (one or several time series at the same sampling times), and one represents time epochs.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 469
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 729
+    },
+    "len": 260
+  },
+  {
+    "query": "Pynapple is built with objects from the Pandas library (McKinney, 2011).",
+    "matched_segment": "Pynapple is built with objects from the Pandas library (McKinney, 2011).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 72
+    },
+    "len": 72
+  },
+  {
+    "query": "Specifically, a Tsd object is an extension of (or 'inherits' in object-orienting programming) Pandas Series object and TsdFrame of Pandas DataFrame object.",
+    "matched_segment": "Specifically, a Tsd object is an extension of (or 'inherits' in object-orienting programming) Pandas Series object and TsdFrame of Pandas DataFrame object.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 210
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 365
+    },
+    "len": 155
+  },
+  {
+    "query": "Timestamps are by default in units of seconds but can be readily converted to other time units using the as_units method in any object.",
+    "matched_segment": "Timestamps are by default in units of seconds but can be readily converted to other time units using the as_units method in any object.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 502
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 637
+    },
+    "len": 135
+  },
+  {
+    "query": "Furthermore, all objects have a time_support property, which keeps track of the time interval over which the data is valid.",
+    "matched_segment": "Furthermore, all objects have a time_support property, which keeps track of the time interval over which the data is valid.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[5]",
+      "char_offset": 123
+    },
+    "len": 123
+  },
+  {
+    "query": "Crucially, all units are indexed by seconds across the entire package, which limits the need for users to account for indexing and alignment between different streams of data at different sampling rates.",
+    "matched_segment": "Crucially, all units are indexed by seconds across the entire package, which limits the need for users to account for indexing and alignment between different streams of data at different sampling rates.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[9]",
+      "char_offset": 418
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[9]",
+      "char_offset": 621
+    },
+    "len": 203
+  },
+  {
+    "query": "To ease the process of loading and synchronizing data from various streams, Pynapple includes an I/O layer that allows the user to load multiple types of datasets and write them to a common format for further analysis and sharing.",
+    "matched_segment": "To ease the process of loading and synchronizing data from various streams, Pynapple includes an I/O layer that allows the user to load multiple types of datasets and write them to a common format for further analysis and sharing.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[2]",
+      "char_offset": 230
+    },
+    "len": 230
+  },
+  {
+    "query": "Recently, Neurodata Without Borders (NWB) (Teeters et al., 2015; Rübel et al., 2022) has emerged as a flexible data format used for public data sharing and large databases such as those collected by the Allen Institute. Thus, we chose to use the NWB format for fast and universal data loading and saving with Pynapple.",
+    "matched_segment": "Recently, Neurodata Without Borders (NWB) (Teeters et al., 2015; Rübel et al., 2022) has emerged as a flexible data format used for public data sharing and large databases such as those collected by the Allen Institute. Thus, we chose to use the NWB format for fast and universal data loading and saving with Pynapple.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[7]",
+      "char_offset": 230
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[7]",
+      "char_offset": 548
+    },
+    "len": 318
+  },
+  {
+    "query": "The first foundational analysis is computing neural tuning curves. Tuning curves relate specific stimuli to the firing rate of neurons.",
+    "matched_segment": "The first foundational analysis is computing neural tuning curves. Tuning curves relate specific stimuli to the firing rate of neurons.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[2]",
+      "char_offset": 135
+    },
+    "len": 135
+  },
+  {
+    "query": "Once computed, Pynapple is able to use tuning curves from a population of neurons to decode stimuli using a Bayesian decoder (Zhang et al., 1998; Brown et al., 1998; Figure 4a).",
+    "matched_segment": "Once computed, Pynapple is able to use tuning curves from a population of neurons to decode stimuli using a Bayesian decoder (Zhang et al., 1998; Brown et al., 1998; Figure 4a).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[2]",
+      "char_offset": 407
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[2]",
+      "char_offset": 584
+    },
+    "len": 177
+  },
+  {
+    "query": "The second foundational analysis is computing auto- and cross-correlograms of event data.",
+    "matched_segment": "The second foundational analysis is computing auto- and cross-correlograms of event data.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[3]",
+      "char_offset": 89
+    },
+    "len": 89
+  },
+  {
+    "query": "The third and final foundational analysis is peri-event alignment. This involves aligning a specified window from Ts/Tsd/TsGroup data to a specific Ts, known as 'TimeStamp Reference''.",
+    "matched_segment": "The third and final foundational analysis is peri-event alignment. This involves aligning a specified window from Ts/Tsd/TsGroup data to a specific Ts, known as 'TimeStamp Reference''.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[4]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[4]",
+      "char_offset": 184
+    },
+    "len": 184
+  },
+  {
+    "query": "Additionally, we introduce Pynacollada, a collaborative repository for higher-level analyses built from the basic functionality provided by Pynapple.",
+    "matched_segment": "Additionally, we introduce Pynacollada, a collaborative repository for higher-level analyses built from the basic functionality provided by Pynapple.",
+    "start": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 391
+    },
+    "stop": {
+      "xpath": "/article/body/sec[1]/p[7]",
+      "char_offset": 540
+    },
+    "len": 149
+  },
+  {
+    "query": "To balance the needs for stability and flexibility, high-level functions were separated from Pynapple and included instead in Pynacollada: the Pynapple Collaborative repository hosted on GitHub.",
+    "matched_segment": "To balance the needs for stability and flexibility, high-level functions were separated from Pynapple and included instead in Pynacollada: the Pynapple Collaborative repository hosted on GitHub.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 463
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 657
+    },
+    "len": 194
+  },
+  {
+    "query": "Each library developed for Pynacollada takes the form of a Jupyter notebook (or python scripts) which guides the user through the analysis step-by-step.",
+    "matched_segment": "Each library developed for Pynacollada takes the form of a Jupyter notebook (or python scripts) which guides the user through the analysis step-by-step.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[2]",
+      "char_offset": 68
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[2]",
+      "char_offset": 220
+    },
+    "len": 152
+  },
+  {
+    "query": "Pynapple was developed to be lightweight, stable, and simple.",
+    "matched_segment": "Pynapple was developed to be lightweight, stable, and simple.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 61
+    },
+    "len": 61
+  },
+  {
+    "query": "As simplicity does not necessarily imply backward compatibility (i.e., long-term stability of the code), Pynapple main objects and their properties will remain the same for the foreseeable future, even if the code in the backend may eventually change (e.g., not relying on Pandas in future versions).",
+    "matched_segment": "As simplicity does not necessarily imply backward compatibility (i.e., long-term stability of the code), Pynapple main objects and their properties will remain the same for the foreseeable future, even if the code in the backend may eventually change (e.g., not relying on Pandas in future versions).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 62
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 362
+    },
+    "len": 300
+  },
+  {
+    "query": "Pynapple is built around the idea that raw data have already been preprocessed (e.g., spike sorting and detection of ROIs).",
+    "matched_segment": "Pynapple is built around the idea that raw data have already been preprocessed (e.g., spike sorting and detection of ROIs).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 87
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 210
+    },
+    "len": 123
+  },
+  {
+    "query": "Pynapple makes this interoperability possible as, once the data are loaded in the Pynapple framework, the same code can be used to analyze different datasets.",
+    "matched_segment": "Pynapple makes this interoperability possible as, once the data are loaded in the Pynapple framework, the same code can be used to analyze different datasets.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 320
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 478
+    },
+    "len": 158
+  },
+  {
+    "query": "To note, Pynapple can be used without the I/O layer and independent of NWB for generic, on-the-fly analysis of data.",
+    "matched_segment": "To note, Pynapple can be used without the I/O layer and independent of NWB for generic, on-the-fly analysis of data.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 1348
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 1464
+    },
+    "len": 116
+  },
+  {
+    "query": "The first issue is that Pynapple is currently only available through Python.",
+    "matched_segment": "The first issue is that Pynapple is currently only available through Python.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 103
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 179
+    },
+    "len": 76
+  },
+  {
+    "query": "Pynapple is based on Pandas, whose methods are already highly optimized.",
+    "matched_segment": "Pynapple is based on Pandas, whose methods are already highly optimized.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 776
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 848
+    },
+    "len": 72
+  },
+  {
+    "query": "restrict, which 'restricts' a time series object, extracting only the data contained within a set of time intervals defined by an IntervalSet object",
+    "matched_segment": "restrict, which 'restricts' a time series object, extracting only the data contained within a set of time intervals defined by an IntervalSet object",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[4]",
+      "char_offset": 425
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[4]",
+      "char_offset": 573
+    },
+    "len": 148
+  },
+  {
+    "query": "value_from, which gets the value from one time series object at the (closest) timestamps from another",
+    "matched_segment": "value_from, which gets the value from one time series object at the (closest) timestamps from another",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[4]",
+      "char_offset": 322
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[4]",
+      "char_offset": 423
+    },
+    "len": 101
+  },
+  {
+    "query": "count, which counts the number of timestamps from a time series object in windows of a given bin size",
+    "matched_segment": "count, which counts the number of timestamps from a time series object in windows of a given bin size",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[4]",
+      "char_offset": 575
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[4]",
+      "char_offset": 676
+    },
+    "len": 101
+  },
+  {
+    "query": "threshold, which applies a threshold to the data within a Ts or Tsd object and returns a Tsd containing the data above or below the threshold",
+    "matched_segment": "threshold, which applies a threshold to the data within a Ts or Tsd object and returns a Tsd containing the data above or below the threshold",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[4]",
+      "char_offset": 678
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[4]",
+      "char_offset": 819
+    },
+    "len": 141
+  },
+  {
+    "query": "intersect, which returns the set intersection of two IntervalSet objects",
+    "matched_segment": "intersect, which returns the set intersection of two IntervalSet objects",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[6]",
+      "char_offset": 208
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[6]",
+      "char_offset": 280
+    },
+    "len": 72
+  },
+  {
+    "query": "union, which returns the set union of two IntervalSets",
+    "matched_segment": "union, which returns the set union of two IntervalSets",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[6]",
+      "char_offset": 282
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[6]",
+      "char_offset": 336
+    },
+    "len": 54
+  },
+  {
+    "query": "set_diff, which returns the set difference of two IntervalSet",
+    "matched_segment": "set_diff, which returns the set difference of two IntervalSet",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[6]",
+      "char_offset": 338
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[6]",
+      "char_offset": 399
+    },
+    "len": 61
+  },
+  {
+    "query": "The data loaders ensure that all loaded objects have the same time base.",
+    "matched_segment": "The data loaders ensure that all loaded objects have the same time base.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 823
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 895
+    },
+    "len": 72
+  },
+  {
+    "query": "Specifically, to simplify analysis for users, Pynapple offers simple wrappers for loading data with popular preprocessing pipelines.",
+    "matched_segment": "Specifically, to simplify analysis for users, Pynapple offers simple wrappers for loading data with popular preprocessing pipelines.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 479
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 611
+    },
+    "len": 132
+  },
+  {
+    "query": "To cover the variety of preprocessing analysis pipelines currently used in systems neuroscience, the Pynapple I/O can load data formats from popular preprocessing pipelines (e.g., CNMF-E, Phy, NeuroSuite, or Suite2P).",
+    "matched_segment": "To cover the variety of preprocessing analysis pipelines currently used in systems neuroscience, the Pynapple I/O can load data formats from popular preprocessing pipelines (e.g., CNMF-E, Phy, NeuroSuite, or Suite2P).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[5]",
+      "char_offset": 147
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[5]",
+      "char_offset": 364
+    },
+    "len": 217
+  },
+  {
+    "query": "The BaseLoader is responsible for initializing the NWB file within the session folder (i.e., it creates a new NWB file if none is present) (Figure 3c).",
+    "matched_segment": "The BaseLoader is responsible for initializing the NWB file within the session folder (i.e., it creates a new NWB file if none is present) (Figure 3c).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[7]",
+      "char_offset": 549
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[7]",
+      "char_offset": 700
+    },
+    "len": 151
+  },
+  {
+    "query": "Converting user's data to NWB format encourages standardization and can facilitate sharing both data and analysis pipelines written with Pynapple.",
+    "matched_segment": "Converting user's data to NWB format encourages standardization and can facilitate sharing both data and analysis pipelines written with Pynapple.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[7]",
+      "char_offset": 701
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[7]",
+      "char_offset": 847
+    },
+    "len": 146
+  },
+  {
+    "query": "First, future development of new I/O classes will not affect the core and processing layers of Pynapple.",
+    "matched_segment": "First, future development of new I/O classes will not affect the core and processing layers of Pynapple.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[8]",
+      "char_offset": 464
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[8]",
+      "char_offset": 568
+    },
+    "len": 104
+  },
+  {
+    "query": "Second, users can develop their own custom I/O using available template classes.",
+    "matched_segment": "Second, users can develop their own custom I/O using available template classes.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[8]",
+      "char_offset": 618
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[8]",
+      "char_offset": 698
+    },
+    "len": 80
+  },
+  {
+    "query": "Third, users can still use Pynapple without using the I/O layer of Pynapple.",
+    "matched_segment": "Third, users can still use Pynapple without using the I/O layer of Pynapple.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[8]",
+      "char_offset": 804
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[8]",
+      "char_offset": 880
+    },
+    "len": 76
+  },
+  {
+    "query": "In addition, Pynacollada currently includes libraries for spike waveform processing, EEG analysis, and video tracking, among others.",
+    "matched_segment": "In addition, Pynacollada currently includes libraries for spike waveform processing, EEG analysis, and video tracking, among others.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[5]",
+      "char_offset": 132
+    },
+    "len": 132
+  },
+  {
+    "query": "We invite the community to contribute to this repository by improving current libraries or upload new ones.",
+    "matched_segment": "We invite the community to contribute to this repository by improving current libraries or upload new ones.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[5]",
+      "char_offset": 133
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[5]",
+      "char_offset": 240
+    },
+    "len": 107
+  },
+  {
+    "query": "The path from data collection to reliable results involves a number of critical steps: exploratory data analysis, development of an analysis pipeline that can involve custom-made developed processing steps, and ideally the use of that pipeline and others to replicate the results. Pynapple provides a platform for these steps.",
+    "matched_segment": "The path from data collection to reliable results involves a number of critical steps: exploratory data analysis, development of an analysis pipeline that can involve custom-made developed processing steps, and ideally the use of that pipeline and others to replicate the results. Pynapple provides a platform for these steps.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[2]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[2]",
+      "char_offset": 326
+    },
+    "len": 326
+  },
+  {
+    "query": "The design of the package around objects is a strength in many regards but could represent a challenge for users who are not accustomed to this programming approach.",
+    "matched_segment": "The design of the package around objects is a strength in many regards but could represent a challenge for users who are not accustomed to this programming approach.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 332
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 497
+    },
+    "len": 165
+  },
+  {
+    "query": "Yet, current development is underway to improve computation speed and these developments are transparent for the users as they won't change the organization of the package.",
+    "matched_segment": "Yet, current development is underway to improve computation speed and these developments are transparent for the users as they won't change the organization of the package.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 849
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 1021
+    },
+    "len": 172
+  },
+  {
+    "query": "Soon, Pynapple will be part of an entire suite of plugin libraries that we are developing to further enhance Pynapple. To keep Pynapple robust and stable, we will develop these plugins as standalone packages. These external packages will include an automated datalogger for recapitulating analyses, an online visualizer for Pynapple objects, and a package for parallel computing in Pynapple.",
+    "matched_segment": "Soon, Pynapple will be part of an entire suite of plugin libraries that we are developing to further enhance Pynapple. To keep Pynapple robust and stable, we will develop these plugins as standalone packages. These external packages will include an automated datalogger for recapitulating analyses, an online visualizer for Pynapple objects, and a package for parallel computing in Pynapple.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[9]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[9]",
+      "char_offset": 391
+    },
+    "len": 391
+  },
+  {
+    "query": "A TsGroup is a child of UserDict, a built-in python object for inheriting dictionaries.",
+    "matched_segment": "A TsGroup is a child of UserDict, a built-in python object for inheriting dictionaries.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 366
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 453
+    },
+    "len": 87
+  },
+  {
+    "query": "Finally, IntervalSet inherits Pandas DataFrame.",
+    "matched_segment": "Finally, IntervalSet inherits Pandas DataFrame.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 454
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 501
+    },
+    "len": 47
+  },
+  {
+    "query": "Pynapple includes specialized functions that can compute the tuning of a continuous value with respect to a feature, as shown for the modulation of fluorescence in calcium imaging with respect to the speed of the animal (Figure 5a) or of the position of a vertical bar on a screen in the fly's ellipsoid body (Figure 5b).",
+    "matched_segment": "Pynapple includes specialized functions that can compute the tuning of a continuous value with respect to a feature, as shown for the modulation of fluorescence in calcium imaging with respect to the speed of the animal (Figure 5a) or of the position of a vertical bar on a screen in the fly's ellipsoid body (Figure 5b).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[5]",
+      "char_offset": 169
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[5]",
+      "char_offset": 490
+    },
+    "len": 321
+  },
+  {
+    "query": "The Pynacollada 'neural_manifold' library contains a Jupyter notebook that provides a step-by-step process for recreating a ring manifold using spiking data recorded from a population of head-direction neurons (Figure 6).",
+    "matched_segment": "The Pynacollada 'neural_manifold' library contains a Jupyter notebook that provides a step-by-step process for recreating a ring manifold using spiking data recorded from a population of head-direction neurons (Figure 6).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[3]",
+      "char_offset": 406
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[3]",
+      "char_offset": 627
+    },
+    "len": 221
+  },
+  {
+    "query": "In this case, the Jupyter notebook showcases an example of detecting SWRs, a well-characterized oscillation of the hippocampus (Figure 6).",
+    "matched_segment": "In this case, the Jupyter notebook showcases an example of detecting SWRs, a well-characterized oscillation of the hippocampus (Figure 6).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[4]",
+      "char_offset": 222
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[4]",
+      "char_offset": 360
+    },
+    "len": 138
+  },
+  {
+    "query": "For new libraries, only rapid screening and tests will be performed, but the code will not go through the kind of validation that is in place for Pynapple as an external library will never affect the functioning of the core package.",
+    "matched_segment": "For new libraries, only rapid screening and tests will be performed, but the code will not go through the kind of validation that is in place for Pynapple as an external library will never affect the functioning of the core package.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[5]",
+      "char_offset": 241
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[5]",
+      "char_offset": 473
+    },
+    "len": 232
+  },
+  {
+    "query": "As such, Pynapple objects inherit the long-term consistency of the code and the computational flexibility from this widely used package.",
+    "matched_segment": "As such, Pynapple objects inherit the long-term consistency of the code and the computational flexibility from this widely used package.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 73
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[3]",
+      "char_offset": 209
+    },
+    "len": 136
+  },
+  {
+    "query": "This is a crucial property as, otherwise, it is impossible to know whether periods without data correspond to an epoch during which the underlying event was not observed or because this period has previously been excluded by a restrict method.",
+    "matched_segment": "This is a crucial property as, otherwise, it is impossible to know whether periods without data correspond to an epoch during which the underlying event was not observed or because this period has previously been excluded by a restrict method.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[5]",
+      "char_offset": 237
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[5]",
+      "char_offset": 480
+    },
+    "len": 243
+  },
+  {
+    "query": "Many experiments in neuroscience are based on trials, each associated with different conditions. IntervalSets are perfectly suited for this, as one IntervalSet can represent all start and end times of trials.",
+    "matched_segment": "Many experiments in neuroscience are based on trials, each associated with different conditions. IntervalSets are perfectly suited for this, as one IntervalSet can represent all start and end times of trials.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[7]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[7]",
+      "char_offset": 208
+    },
+    "len": 208
+  },
+  {
+    "query": "The nature of each trial (e.g., left/right, correct/error) can be stored as a third column within the IntervalSet dataframe object.",
+    "matched_segment": "The nature of each trial (e.g., left/right, correct/error) can be stored as a third column within the IntervalSet dataframe object.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[7]",
+      "char_offset": 209
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[7]",
+      "char_offset": 340
+    },
+    "len": 131
+  },
+  {
+    "query": "In addition to the ability to apply any methods of the Ts object to its members, TsGroup has a set of methods to calculate and store metadata about the elements of the group (Figure 2c).",
+    "matched_segment": "In addition to the ability to apply any methods of the Ts object to its members, TsGroup has a set of methods to calculate and store metadata about the elements of the group (Figure 2c).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[8]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[8]",
+      "char_offset": 186
+    },
+    "len": 186
+  },
+  {
+    "query": "The primary way by which a user interacts with the I/O layer is an object that represents an experimental session, with the properties of the object being the various time series.",
+    "matched_segment": "The primary way by which a user interacts with the I/O layer is an object that represents an experimental session, with the properties of the object being the various time series.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[2]",
+      "char_offset": 231
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[2]",
+      "char_offset": 410
+    },
+    "len": 179
+  },
+  {
+    "query": "This I/O object is created by calling the function load_session, which will load all data associated with that session (Figure 3a).",
+    "matched_segment": "This I/O object is created by calling the function load_session, which will load all data associated with that session (Figure 3a).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[2]",
+      "char_offset": 411
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[2]",
+      "char_offset": 542
+    },
+    "len": 131
+  },
+  {
+    "query": "Data synchronization is the crux of any analysis pipeline.",
+    "matched_segment": "Data synchronization is the crux of any analysis pipeline.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[3]",
+      "char_offset": 58
+    },
+    "len": 58
+  },
+  {
+    "query": "The load_session function is thus a crucial step in using the package.",
+    "matched_segment": "The load_session function is thus a crucial step in using the package.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[3]",
+      "char_offset": 59
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[3]",
+      "char_offset": 129
+    },
+    "len": 70
+  },
+  {
+    "query": "For unsupported data types, it is the responsibility of the users to design the preprocessing scripts that align the data streams in the same absolute time base.",
+    "matched_segment": "For unsupported data types, it is the responsibility of the users to design the preprocessing scripts that align the data streams in the same absolute time base.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[3]",
+      "char_offset": 130
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[3]",
+      "char_offset": 291
+    },
+    "len": 161
+  },
+  {
+    "query": "When loading a session for the first time, the I/O process starts with a graphical user interface (GUI) in which the user can quickly and easily input the general information as well as any session epoch and behavioral tracking data (Figure 3b).",
+    "matched_segment": "When loading a session for the first time, the I/O process starts with a graphical user interface (GUI) in which the user can quickly and easily input the general information as well as any session epoch and behavioral tracking data (Figure 3b).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[4]",
+      "char_offset": 257
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[4]",
+      "char_offset": 502
+    },
+    "len": 245
+  },
+  {
+    "query": "This information is saved in a BaseLoader class.",
+    "matched_segment": "This information is saved in a BaseLoader class.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[4]",
+      "char_offset": 503
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[4]",
+      "char_offset": 551
+    },
+    "len": 48
+  },
+  {
+    "query": "This is implemented via a set of specialized object subclasses of the BaseLoader class, avoiding the need to redefine I/O operations in each subclass.",
+    "matched_segment": "This is implemented via a set of specialized object subclasses of the BaseLoader class, avoiding the need to redefine I/O operations in each subclass.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[5]",
+      "char_offset": 365
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[5]",
+      "char_offset": 515
+    },
+    "len": 150
+  },
+  {
+    "query": "This is a core aspect of object-oriented programming, and it means that these specialized I/O classes have all the methods and properties of the parent BaseLoader objects.",
+    "matched_segment": "This is a core aspect of object-oriented programming, and it means that these specialized I/O classes have all the methods and properties of the parent BaseLoader objects.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[5]",
+      "char_offset": 516
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[5]",
+      "char_offset": 687
+    },
+    "len": 171
+  },
+  {
+    "query": "However, once generated, these specialized I/O classes are unique and independent from each other, ensuring long-term backward compatibility.",
+    "matched_segment": "However, once generated, these specialized I/O classes are unique and independent from each other, ensuring long-term backward compatibility.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[5]",
+      "char_offset": 749
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[5]",
+      "char_offset": 890
+    },
+    "len": 141
+  },
+  {
+    "query": "Like the BaseLoader class, a specialized GUI for electrophysiology and calcium imaging is provided, with relevant metadata fields, for example electrode position in electrophysiology and type of fluorescence indicator in calcium imaging (Figure 3b).",
+    "matched_segment": "Like the BaseLoader class, a specialized GUI for electrophysiology and calcium imaging is provided, with relevant metadata fields, for example electrode position in electrophysiology and type of fluorescence indicator in calcium imaging (Figure 3b).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[6]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[6]",
+      "char_offset": 249
+    },
+    "len": 249
+  },
+  {
+    "query": "To accommodate present and future needs for these specific pipelines, the documentation of Pynapple provides an easy-to-follow recipe for creating a custom I/O class that inherits the BaseLoader and can interact with a pre-existing NWB file.",
+    "matched_segment": "To accommodate present and future needs for these specific pipelines, the documentation of Pynapple provides an easy-to-follow recipe for creating a custom I/O class that inherits the BaseLoader and can interact with a pre-existing NWB file.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[8]",
+      "char_offset": 108
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[1]/p[8]",
+      "char_offset": 349
+    },
+    "len": 241
+  },
+  {
+    "query": "The basic methods that manipulate the core objects in Pynapple allow users to perform common, but powerful, neuroscience analyses (Figure 2).",
+    "matched_segment": "The basic methods that manipulate the core objects in Pynapple allow users to perform common, but powerful, neuroscience analyses (Figure 2).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[1]",
+      "char_offset": 141
+    },
+    "len": 141
+  },
+  {
+    "query": "These analyses are easy to use because they describe the relationships between time series objects, while requiring the fewest number of parameters to be set by the user.",
+    "matched_segment": "These analyses are easy to use because they describe the relationships between time series objects, while requiring the fewest number of parameters to be set by the user.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[1]",
+      "char_offset": 142
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[1]",
+      "char_offset": 312
+    },
+    "len": 170
+  },
+  {
+    "query": "The operations in Pynapple can recreate neuroscience analyses from a broad number of subdisciplines.",
+    "matched_segment": "The operations in Pynapple can recreate neuroscience analyses from a broad number of subdisciplines.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[1]",
+      "char_offset": 375
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[1]",
+      "char_offset": 475
+    },
+    "len": 100
+  },
+  {
+    "query": "To illustrate the versatility of Pynapple and how it can be used, we reanalyzed five openly available datasets.",
+    "matched_segment": "To illustrate the versatility of Pynapple and how it can be used, we reanalyzed five openly available datasets.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[1]",
+      "char_offset": 554
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[1]",
+      "char_offset": 665
+    },
+    "len": 111
+  },
+  {
+    "query": "To this end, Pynapple computes the firing rate of a neuron (or any other timestamped data) during each epoch in an IntervalSet object, for example for discrete conditions such as 'ON/OFF'' stimuli.",
+    "matched_segment": "To this end, Pynapple computes the firing rate of a neuron (or any other timestamped data) during each epoch in an IntervalSet object, for example for discrete conditions such as 'ON/OFF'' stimuli.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[2]",
+      "char_offset": 136
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[2]",
+      "char_offset": 333
+    },
+    "len": 197
+  },
+  {
+    "query": "Tuning curves can also be computed with respect to a continuous feature.",
+    "matched_segment": "Tuning curves can also be computed with respect to a continuous feature.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[2]",
+      "char_offset": 334
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[2]",
+      "char_offset": 406
+    },
+    "len": 72
+  },
+  {
+    "query": "In Pynapple, cross-correlograms can be generated for any two series of events by computing the event rate for each time bin of a target time series relative to each event of a reference time series.",
+    "matched_segment": "In Pynapple, cross-correlograms can be generated for any two series of events by computing the event rate for each time bin of a target time series relative to each event of a reference time series.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[3]",
+      "char_offset": 225
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[3]",
+      "char_offset": 423
+    },
+    "len": 198
+  },
+  {
+    "query": "However, Pynapple does not limit this function to spiking data and correlograms may be performed on any event-based data.",
+    "matched_segment": "However, Pynapple does not limit this function to spiking data and correlograms may be performed on any event-based data.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[3]",
+      "char_offset": 650
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[3]",
+      "char_offset": 771
+    },
+    "len": 121
+  },
+  {
+    "query": "This allows users to align data to specific points in time, and measure changes in rates around this specified time point (Figure 4c).",
+    "matched_segment": "This allows users to align data to specific points in time, and measure changes in rates around this specified time point (Figure 4c).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[4]",
+      "char_offset": 185
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[4]",
+      "char_offset": 319
+    },
+    "len": 134
+  },
+  {
+    "query": "Some of the analyses presented so far are designed for spikes (and discrete events in general) and cannot be applied for continuous traces such as calcium imaging data.",
+    "matched_segment": "Some of the analyses presented so far are designed for spikes (and discrete events in general) and cannot be applied for continuous traces such as calcium imaging data.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[5]",
+      "char_offset": 168
+    },
+    "len": 168
+  },
+  {
+    "query": "Overall, these foundational functions form the building blocks of most other analyses in systems neuroscience.",
+    "matched_segment": "Overall, these foundational functions form the building blocks of most other analyses in systems neuroscience.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[6]",
+      "char_offset": 169
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[6]",
+      "char_offset": 279
+    },
+    "len": 110
+  },
+  {
+    "query": "Importantly, they are for the most part built-in and only depend on a few widely used external packages.",
+    "matched_segment": "Importantly, they are for the most part built-in and only depend on a few widely used external packages.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[6]",
+      "char_offset": 280
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[6]",
+      "char_offset": 384
+    },
+    "len": 104
+  },
+  {
+    "query": "This ensures that the package can be used in a near stand-alone fashion, without relying on packages that are at risk of not being maintained or of not being compatible in the near future.",
+    "matched_segment": "This ensures that the package can be used in a near stand-alone fashion, without relying on packages that are at risk of not being maintained or of not being compatible in the near future.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[6]",
+      "char_offset": 385
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[6]",
+      "char_offset": 573
+    },
+    "len": 188
+  },
+  {
+    "query": "All other developments of analysis pipelines take place outside Pynapple, ensuring the core package is only updated rarely and remains lightweight.",
+    "matched_segment": "All other developments of analysis pipelines take place outside Pynapple, ensuring the core package is only updated rarely and remains lightweight.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[6]",
+      "char_offset": 574
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[2]/p[6]",
+      "char_offset": 721
+    },
+    "len": 147
+  },
+  {
+    "query": "Pynapple is designed to be stable in the foreseeable future and its core functionality is not meant to be modified.",
+    "matched_segment": "Pynapple is designed to be stable in the foreseeable future and its core functionality is not meant to be modified.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 115
+    },
+    "len": 115
+  },
+  {
+    "query": "However, actual data analysis usually requires more than the available core functions.",
+    "matched_segment": "However, actual data analysis usually requires more than the available core functions.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 116
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 202
+    },
+    "len": 86
+  },
+  {
+    "query": "This type of data analysis is 'fluid', constantly updated by new software developments and theoretical work.",
+    "matched_segment": "This type of data analysis is 'fluid', constantly updated by new software developments and theoretical work.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 203
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 311
+    },
+    "len": 108
+  },
+  {
+    "query": "Furthermore, this kind of development is collaborative in nature and the supervision of such projects is less sensitive than that of a stable package.",
+    "matched_segment": "Furthermore, this kind of development is collaborative in nature and the supervision of such projects is less sensitive than that of a stable package.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 312
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[1]",
+      "char_offset": 462
+    },
+    "len": 150
+  },
+  {
+    "query": "As such, libraries built for Pynacollada should provide training, promote good practice in programming, and allow users to easily adapt code to their own project.",
+    "matched_segment": "As such, libraries built for Pynacollada should provide training, promote good practice in programming, and allow users to easily adapt code to their own project.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[2]",
+      "char_offset": 221
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[2]",
+      "char_offset": 383
+    },
+    "len": 162
+  },
+  {
+    "query": "Recent advances in the application of manifold theory to neural data analysis have allowed neuroscientists to project high-dimensional data into three or fewer dimensions (Chaudhuri et al., 2019; Viejo and Peyrache, 2020; Gardner et al., 2022).",
+    "matched_segment": "Recent advances in the application of manifold theory to neural data analysis have allowed neuroscientists to project high-dimensional data into three or fewer dimensions (Chaudhuri et al., 2019; Viejo and Peyrache, 2020; Gardner et al., 2022).",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[3]",
+      "char_offset": 244
+    },
+    "len": 244
+  },
+  {
+    "query": "The structure of these projections reflects the structure of these higher-dimensional processes, allowing us to infer the information encoded by the population.",
+    "matched_segment": "The structure of these projections reflects the structure of these higher-dimensional processes, allowing us to infer the information encoded by the population.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[3]",
+      "char_offset": 245
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[3]",
+      "char_offset": 405
+    },
+    "len": 160
+  },
+  {
+    "query": "Detecting oscillatory events is a routine procedure in electrophysiology, yet usually depends on many arbitrary choices of parameters.",
+    "matched_segment": "Detecting oscillatory events is a routine procedure in electrophysiology, yet usually depends on many arbitrary choices of parameters.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[4]",
+      "char_offset": 87
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/sec[3]/p[4]",
+      "char_offset": 221
+    },
+    "len": 134
+  },
+  {
+    "query": "The goal of this package is to offer a versatile set of tools to study typical neurophysiological and behavioral data, specifically time series (e.g., spike times, behavioral events, and continuous time series) and time intervals (e.g., trials and brain states).",
+    "matched_segment": "The goal of this package is to offer a versatile set of tools to study typical neurophysiological and behavioral data, specifically time series (e.g., spike times, behavioral events, and continuous time series) and time intervals (e.g., trials and brain states).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 101
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 363
+    },
+    "len": 262
+  },
+  {
+    "query": "It also provides users with generic functions for neuroscience analyses such as tuning curves and cross-correlograms.",
+    "matched_segment": "It also provides users with generic functions for neuroscience analyses such as tuning curves and cross-correlograms.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 364
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 481
+    },
+    "len": 117
+  },
+  {
+    "query": "Finally, Pynapple was designed to rely on a minimum number of dependencies, which are themselves very common and thus highly stable.",
+    "matched_segment": "Finally, Pynapple was designed to rely on a minimum number of dependencies, which are themselves very common and thus highly stable.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 482
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 614
+    },
+    "len": 132
+  },
+  {
+    "query": "As such, accessibility is the guiding axiom of Pynapple.",
+    "matched_segment": "As such, accessibility is the guiding axiom of Pynapple.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 615
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[1]",
+      "char_offset": 671
+    },
+    "len": 56
+  },
+  {
+    "query": "Because objects are designed to be self-contained and interact with each other through well-defined methods, users are less likely to make errors when using them.",
+    "matched_segment": "Because objects are designed to be self-contained and interact with each other through well-defined methods, users are less likely to make errors when using them.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 42
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 204
+    },
+    "len": 162
+  },
+  {
+    "query": "This is because objects can enforce their own internal consistency, reducing the chances of data inconsistencies or unexpected behavior.",
+    "matched_segment": "This is because objects can enforce their own internal consistency, reducing the chances of data inconsistencies or unexpected behavior.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 205
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 341
+    },
+    "len": 136
+  },
+  {
+    "query": "Overall, object-oriented programming is a powerful tool for managing complexity and reducing errors in scientific programming.",
+    "matched_segment": "Overall, object-oriented programming is a powerful tool for managing complexity and reducing errors in scientific programming.",
+    "start": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 342
+    },
+    "stop": {
+      "xpath": "/article/body/sec[2]/sec/p[1]",
+      "char_offset": 468
+    },
+    "len": 126
+  },
+  {
+    "query": "The design of Pynapple is centered around the manipulation of simple, abstract objects that are common to most neurophysiological and behavioral datasets.",
+    "matched_segment": "The design of Pynapple is centered around the manipulation of simple, abstract objects that are common to most neurophysiological and behavioral datasets.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[3]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[3]",
+      "char_offset": 154
+    },
+    "len": 154
+  },
+  {
+    "query": "Building around these fundamental objects and properties means Pynapple is highly flexible and able to handle most neurophysiological and behavioral datasets, making it accessible to most systems neuroscientists.",
+    "matched_segment": "Building around these fundamental objects and properties means Pynapple is highly flexible and able to handle most neurophysiological and behavioral datasets, making it accessible to most systems neuroscientists.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[3]",
+      "char_offset": 448
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[3]",
+      "char_offset": 660
+    },
+    "len": 212
+  },
+  {
+    "query": "The small number of external dependencies also decreases the need to adapt the code to new versions of external packages.",
+    "matched_segment": "The small number of external dependencies also decreases the need to adapt the code to new versions of external packages.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 363
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 484
+    },
+    "len": 121
+  },
+  {
+    "query": "This approach favors long-term backward compatibility.",
+    "matched_segment": "This approach favors long-term backward compatibility.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 485
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[4]",
+      "char_offset": 539
+    },
+    "len": 54
+  },
+  {
+    "query": "Data in neuroscience vary widely in their structure, size, and need for preprocessing.",
+    "matched_segment": "Data in neuroscience vary widely in their structure, size, and need for preprocessing.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 86
+    },
+    "len": 86
+  },
+  {
+    "query": "According to the FAIR principles, preprocessed data should interoperate across different analysis pipelines.",
+    "matched_segment": "According to the FAIR principles, preprocessed data should interoperate across different analysis pipelines.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 211
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 319
+    },
+    "len": 108
+  },
+  {
+    "query": "Data produced in neuroscience has a wide variety of file types, which are often only loaded by specific analysis software.",
+    "matched_segment": "Data produced in neuroscience has a wide variety of file types, which are often only loaded by specific analysis software.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 746
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 868
+    },
+    "len": 122
+  },
+  {
+    "query": "Data is also largely experiment-specific.",
+    "matched_segment": "Data is also largely experiment-specific.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 869
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 910
+    },
+    "len": 41
+  },
+  {
+    "query": "In addition to being able to load current popular data formats, this customizable data loader means emerging file formats may continue to be loaded in the future, without significant overhauls to the main package.",
+    "matched_segment": "In addition to being able to load current popular data formats, this customizable data loader means emerging file formats may continue to be loaded in the future, without significant overhauls to the main package.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 1007
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 1220
+    },
+    "len": 213
+  },
+  {
+    "query": "This offers Pynapple long-term stability and means that Pynapple will continue to remain accessible in the foreseeable future.",
+    "matched_segment": "This offers Pynapple long-term stability and means that Pynapple will continue to remain accessible in the foreseeable future.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 1221
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[5]",
+      "char_offset": 1347
+    },
+    "len": 126
+  },
+  {
+    "query": "However, these higher-order analyses are more prone to customization, thereby making them relatively more flexible.",
+    "matched_segment": "However, these higher-order analyses are more prone to customization, thereby making them relatively more flexible.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 423
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 538
+    },
+    "len": 115
+  },
+  {
+    "query": "This keeps the core Pynapple package stable, while allowing the user to integrate new advances in neurophysiological and behavioral analysis into their workflow.",
+    "matched_segment": "This keeps the core Pynapple package stable, while allowing the user to integrate new advances in neurophysiological and behavioral analysis into their workflow.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 635
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[6]",
+      "char_offset": 796
+    },
+    "len": 161
+  },
+  {
+    "query": "Other software provide programming environments which deal with common neuroscientific data and an interface between stored data and analytical methods (Garcia et al., 2014).",
+    "matched_segment": "Other software provide programming environments which deal with common neuroscientific data and an interface between stored data and analytical methods (Garcia et al., 2014).",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[7]",
+      "char_offset": 0
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[7]",
+      "char_offset": 174
+    },
+    "len": 174
+  },
+  {
+    "query": "However, one problem that arises from this structure is that objects and data structures are rigidly defined, leading to a lack of versatility for new types of data or task design.",
+    "matched_segment": "However, one problem that arises from this structure is that objects and data structures are rigidly defined, leading to a lack of versatility for new types of data or task design.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[7]",
+      "char_offset": 175
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[7]",
+      "char_offset": 355
+    },
+    "len": 180
+  },
+  {
+    "query": "In contrast, Pynapple offers a more flexible working environment and will remain accessible even as user requirements change.",
+    "matched_segment": "In contrast, Pynapple offers a more flexible working environment and will remain accessible even as user requirements change.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[7]",
+      "char_offset": 356
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[7]",
+      "char_offset": 481
+    },
+    "len": 125
+  },
+  {
+    "query": "Thus, some transition is required for those primarily trained in other programming languages commonly used in neuroscience, including MATLAB and Julia.",
+    "matched_segment": "Thus, some transition is required for those primarily trained in other programming languages commonly used in neuroscience, including MATLAB and Julia.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 180
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 331
+    },
+    "len": 151
+  },
+  {
+    "query": "We have addressed this concern by providing users with detailed documentation, which includes a broad variety of examples.",
+    "matched_segment": "We have addressed this concern by providing users with detailed documentation, which includes a broad variety of examples.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 498
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 620
+    },
+    "len": 122
+  },
+  {
+    "query": "We will also keep on providing training opportunities for all future users.",
+    "matched_segment": "We will also keep on providing training opportunities for all future users.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 621
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 696
+    },
+    "len": 75
+  },
+  {
+    "query": "Last, Python code may run slower than similar code written in other languages.",
+    "matched_segment": "Last, Python code may run slower than similar code written in other languages.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 697
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 775
+    },
+    "len": 78
+  },
+  {
+    "query": "Yet, current development is underway to improve computation speed and these developments are transparent for the users as they won't change the organization of the package.",
+    "matched_segment": "Yet, current development is underway to improve computation speed and these developments are transparent for the users as they won't change the organization of the package.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 849
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[8]",
+      "char_offset": 1021
+    },
+    "len": 172
+  },
+  {
+    "query": "This will address the speed issue inherent to code written in Python by allowing multiple analyses to be performed simultaneously.",
+    "matched_segment": "This will address the speed issue inherent to code written in Python by allowing multiple analyses to be performed simultaneously.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[9]",
+      "char_offset": 392
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[9]",
+      "char_offset": 522
+    },
+    "len": 130
+  },
+  {
+    "query": "These packages will begin to address the limitations of Pynapple we described previously, enhancing the long-term stability of Pynapple, and streamlining accessibility for its users.",
+    "matched_segment": "These packages will begin to address the limitations of Pynapple we described previously, enhancing the long-term stability of Pynapple, and streamlining accessibility for its users.",
+    "start": {
+      "xpath": "/article/body/sec[3]/p[9]",
+      "char_offset": 523
+    },
+    "stop": {
+      "xpath": "/article/body/sec[3]/p[9]",
+      "char_offset": 705
+    },
+    "len": 182
+  }
+]

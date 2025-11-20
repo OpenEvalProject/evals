@@ -1,0 +1,148 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C96"
+    ],
+    "result": "The authors identify that a non-negligible fraction of TADs (P-TADs) is preserved after cohesin depletion. Specifically, they report that roughly 16% (659 out of 4176) of TADs are preserved after removing Nipbl in mouse liver cells, and 26% (1226 out of 4733) are preserved upon RAD21 loss in HCT-116 cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple reviewers explicitly affirm this finding. Reviewer 2 states the authors 'observe that in ensemble methods, a significant subset of TADs are retained,' and Reviewer 3 notes the manuscript 'presents a thorough analysis of the prevalence...of TAD conservation upon cohesin loss.' The editor describes this as a 'valuable study' with 'convincing' data quality and strength of conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C51",
+      "C62",
+      "C66",
+      "C67",
+      "C68",
+      "C97"
+    ],
+    "result": "The authors demonstrate through polymer simulations and experimental Hi-C data analysis that TADs with epigenetic switches (A/B compartment transitions) across their boundaries are preferentially preserved after cohesin depletion. They report 280 P-TADs in mouse liver and 396 P-TADs in HCT-116 cells are associated with epigenetic switches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently support this finding. Reviewer 1 states 'Simulations using the CCM model confirm that epigenetic switching can mechanistically explain TAD boundary preservation.' Reviewer 3 notes 'they find that those TADs that survive cohesin removal contain a switch in epigenetic marks.' Reviewer 2 observes 'Their results also challenge current dogma in the field about epigenetic state being more related to compartment formation rather than TAD boundaries.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C63",
+      "C69",
+      "C73",
+      "C75",
+      "C98"
+    ],
+    "result": "The authors find that P-TADs exhibit sharp physical boundaries in 3D structures, with prominent peaks in boundary probabilities present in both WT and cohesin-depleted cells. They report that approximately 67% of P-TADs have high peaks in boundary probabilities, and that physical boundaries can identify P-TADs even without epigenetic switches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor raises a critical concern: 'it is unfortunately still unclear whether physical boundaries (of domains?) in the model appear to be a consequence of preserved TADs, or whether preserved TADs are caused by the physical boundaries.' Reviewer 2 notes 'It is unclear what defines a physical barrier' and requests clarification. While reviewers acknowledge the finding, the causal relationship and definition remain ambiguous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C86"
+    ],
+    "result": "The authors' computational predictions using the HIPPS method show that single-cell structures display TAD-like features with cell-to-cell variations in boundary locations even after cohesin depletion, which they claim is in excellent agreement with imaging experiments (Bintu et al., 2018).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'Their structure/simulation based approach appears to be a powerful means to generate 3D structures from ensemble HiC data, and provide chromosome conformations that mimic the data from single-cell based experiments.' Reviewer 3 notes the study provides 'interesting insights into genome folding and interpretations of conflicting results on the role of cohesin on TAD formation.' The agreement with imaging data is explicitly acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C100"
+    ],
+    "result": "The authors propose that some P-TADs are relevant to the retention of enhancer-promoter (E-P) and promoter-promoter (P-P) interactions after cohesin loss. They report that 525 out of 1536 P-TADs have E-P/P-P loops coinciding with their boundaries, and suggest these interactions could explain P-TADs even without epigenetic switches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'The added analysis of the prevalence of enhancer and promoter interactions at TAD boundaries strengthens the authors' claim that these interactions could play an important role in TAD preservation.' Reviewer 2 notes 'Figure 7 adds an interesting take to their approach' and suggests incorporating this data into the main text 'because it provides a biological context where P-TADs would have a rather critical role.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C70",
+      "C102"
+    ],
+    "result": "The authors validate their computational approaches (CCM simulations and HIPPS method) by showing they reproduce experimental Hi-C contact maps, compartment structures, and TAD features. They report a Pearson correlation coefficient of 0.83 between experimental and simulated contact maps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the 'theoretical approaches and quantitative analysis' as 'state-of-the-art' with 'convincing' data quality. Reviewer 2 states the approach 'appears to be a powerful means to generate 3D structures from ensemble HiC data' and notes 'By using HiC data to generate high quality simulated structural data, they overcome this limitation.' Reviewer 3 describes the study as 'well-executed.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C99"
+    ],
+    "result": "The authors conclude that preservation of a subset of TADs upon removing cohesin is a robust phenomenon valid across multiple cell lines, including mouse liver, HCT-116, and GM12878 cells, suggesting P-TADs may be 'universal.'",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'By reananalyzing a number of HiC datasets from different cell types, the authors observe that in ensemble methods, a significant subset of TADs are retained.' The editor describes this as a 'valuable study' with convincing conclusions. No reviewer challenges the cross-cell-line robustness claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C42",
+      "C64"
+    ],
+    "result": "The authors acknowledge that the actual number of P-TADs depends on the TAD-calling protocol and resolution, and note that TopDom predictions are sometimes not compatible with boundaries deduced from 3D structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological caveat is implicitly accepted by reviewers. Reviewer 2's concern about defining physical barriers relates to this issue but does not challenge the acknowledgment itself. The authors' transparency about methodological limitations is not contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The authors find that A-type loci form larger spatial clusters after cohesin removal, consistent with the enhancement of compartments inferred from Hi-C contact maps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding aligns with established knowledge cited in the manuscript (C3, C28) and is not challenged by any reviewer. The editor notes the study examines 'how many TADs remain after cohesin depletion' and that compartmentalization is preserved, implicitly accepting this result.",
+    "result_type": "MINOR"
+  }
+]

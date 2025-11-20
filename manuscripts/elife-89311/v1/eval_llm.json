@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors designed 60 sentence sets with structurally ambiguous sentences differing in Verb1 transitivity (HiTrans vs LoTrans), where interpretation depends on integrating linguistic constraints (verb transitivity) and non-linguistic constraints (subject noun thematic role/agenthood). The ambiguity is resolved upon presentation of the actual main verb, which confirms the passive interpretation in all sentences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 describe the experimental design with clear methodological detail. The stimulus construction is well-motivated by constraint-based theories of sentence processing (C8-C9) and appropriately manipulates verb transitivity while controlling other factors. The design successfully creates graded ambiguity rather than categorical differences, which is appropriate for testing probabilistic constraint integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Behavioral continuation pre-tests demonstrated that human listeners showed probabilistic interpretative preferences consistent with constraint-based processing: HiTrans sentences elicited more direct object continuations after Verb1 and higher main verb probability after the prepositional phrase compared to LoTrans sentences. Crucially, the distributions overlapped rather than showing complete separation, and human preferences significantly correlated with corpus-based lexical constraints (subject noun agenthood/patienthood and Verb1 transitivity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 present behavioral validation data that directly support the constraint-based hypothesis. The continuation pre-tests provide independent evidence that the stimuli elicit the intended interpretative preferences. The correlation with corpus-based measures (C27, Figure 2D) validates that the experimental manipulation captures real linguistic constraints. The overlapping distributions (C26) are particularly important as they demonstrate probabilistic rather than categorical processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "BERT structural measures (parse depth vectors extracted via structural probing) captured incremental structural interpretation in a manner consistent with constraint-based processing and human behavior. BERT parse depths formed distributions around context-free parse depths for passive/active interpretations (C28), with content words contributing more than function words (C29). HiTrans sentences moved toward passive interpretation landmarks while LoTrans sentences initially approached active landmarks before reorienting to passive upon main verb presentation (C30-C31). BERT measures correlated with lexical constraints and human continuation probabilities (C32-C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 demonstrate that BERT structural measures align with both theoretical predictions and human behavioral data. The trajectory analysis (C30-C31, Figure 3D-E) provides compelling visualization of dynamic interpretation. The correlations with corpus-based measures and human data (C32-C35, Figure 4) validate BERT as a model of constraint integration. However, the claim that BERT 'effectively approximates' constraint integration (C3) involves some inferential leap\u2014BERT may capture statistical regularities without implementing the same computational mechanisms as humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Structural probing models trained on BERT layers 12-16 were used to extract parse depth representations, with layer 14 showing the best overall performance in reconstructing dependency parse trees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe a methodological choice supported by empirical evaluation (Figure 3\u2014figure supplement 1). The inclusion of neighboring layers (12-13, 15-16) is a reasonable approach to capture potentially distributed information across layers. This is a standard practice in probing studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C43",
+      "C64",
+      "C71"
+    ],
+    "result": "Spatiotemporal searchlight RSA revealed that incremental BERT parse depth vectors fit brain activity across three epochs (Verb1, preposition, main verb). Neural representations initially emerged bilaterally in frontal and anterior-to-middle temporal regions during Verb1 processing, then became left-lateralized in fronto-temporal regions as the sentence unfolded. The most sustained effects were observed in left IFG and ATL across epochs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C43, C64, C71 present the core neuroimaging findings with appropriate statistical correction (cluster-based permutation tests). The shift from bilateral to left-lateralized activation is well-documented and consistent with prior literature on syntactic processing. The temporal dynamics align with word recognition timings (uniqueness points). However, the interpretation that left-lateralization reflects 'more complex syntactic properties' (C71) is somewhat inferential\u2014it could also reflect increased certainty or integration demands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of interpretative mismatch (distance from passive/active landmarks) revealed that only active interpretation mismatch showed significant effects in the Verb1 epoch, while passive interpretation mismatch fit brain activity in preposition and main verb epochs. This suggests listeners initially preferred active interpretation but shifted toward passive interpretation as the prepositional phrase was heard, consistent with the tendency to process sentence-initial nouns as agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 describe a theoretically important finding about the time course of interpretation preference. The pattern is consistent with prior work on agent-first processing biases (C42, citations provided). However, the marginal significance in the main verb epoch (p=0.06, C40) weakens this result slightly. The interpretation that listeners 'in general' preferred active interpretation (C41) is reasonable but involves some inference beyond the data\u2014individual differences may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C72"
+    ],
+    "result": "Beyond the classical fronto-temporal language network, structural interpretation engaged the multiple-demand network (left prefrontal and inferior parietal regions) and the default mode network. The involvement of prefrontal regions may reflect varying working memory demands for maintaining different structural interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C72 extend the findings beyond traditional language regions. The identification of multiple-demand network involvement (C44) is supported by the data (Figure 6C) and citation to Duncan (2010). However, the interpretation about working memory demands (C45) is speculative\u2014the cited papers (Nelson et al., 2017; Pallier et al., 2011) support this interpretation but the current data don't directly test working memory load. The DMN involvement is interesting but requires more mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The dynamic updating of Verb1 parse depth was tracked by examining the change in BERT Verb1 parse depth when the main verb was presented. Significant effects emerged in left posterior temporal and inferior parietal regions at the main verb uniqueness point, then extended to anterior temporal regions. The declining effects of Verb1 parse depth change overlapped with arising effects of updated Verb1 parse depth in left anterior temporal cortex. Left hippocampus was also activated, suggesting episodic memory may contribute to structural interpretation updating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide detailed spatiotemporal characterization of ambiguity resolution. The sequential activation pattern (posterior to anterior temporal) is well-documented in the data (Figure 7). The hippocampal involvement (C48) is intriguing and supported by the imaging data, though the interpretation about episodic memory is somewhat speculative\u2014the citations support this interpretation but alternative explanations (e.g., relational processing) are possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Subject noun thematic role properties (agenthood and patienthood) showed significant neural effects in preposition and main verb epochs, with effects of the subject noun preceding those of incremental BERT parse depth vectors in the same epochs. This temporal ordering suggests that thematic role evaluation may occur before building the overall structural interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe an important temporal dissociation between lexical-semantic and structural processing. The data support the temporal ordering (C51, comparing Figures 8A-B with 6B-C). However, the interpretation that thematic role is 'evaluated before' structural interpretation (C52) involves inferential reasoning\u2014the temporal precedence could reflect different processing speeds rather than sequential stages. The claim is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A non-directional measure of interpretative coherence (quantifying constraint coherence regardless of which interpretation is preferred) showed effects in both hemispheres immediately after main verb onset, lasting until offset. The most sustained regions included left ATL, angular gyrus, and precuneus\u2014classical default mode network areas involved in integrating external input with prior knowledge and building thematic relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 present an interesting finding about domain-general integration processes. The bilateral activation pattern and DMN involvement are well-documented (Figure 8C). The interpretation about DMN function (C54) is supported by citation to Yeshurun et al. (2021) and is consistent with current theories. The specific roles of precuneus and AG (C55) are supported by citations to Baldassano et al. (2017) and Humphreys et al. (2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C66"
+    ],
+    "result": "Following the non-directional coherence effects, passive index (coherence favoring passive interpretation) showed significant effects in right anterior fronto-temporal regions, while BERT parse depth vector effects were found in left hemisphere. Granger causality analysis revealed information flows from right hemisphere passive index components to left hemisphere BERT parse depth components, suggesting that sentence structure in the left hemisphere is influenced by event plausibility estimates from broad world knowledge in the right hemisphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C66 present a sophisticated analysis of hemispheric specialization and inter-hemispheric communication. The spatial dissociation (C56, C58) is supported by the data (Figures 8D, 6C). The Granger causality analysis (C59, Figure 8E) provides evidence for directed information flow, though GC has well-known limitations in inferring true causality from observational data. The interpretation about hemispheric specialization (C57, C59) is supported by citations but involves theoretical inference. The analysis is rigorous but the causal interpretation should be stated more cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C73"
+    ],
+    "result": "Direct comparisons showed that BERT structural measures fit neural activity better than corpus-based measures (Verb1 transitivity) or behavioral measures (continuation probabilities). Corpus-based and behavioral measures showed no significant fits in several epochs, and BERT effects remained largely unchanged after controlling for behavioral measures. This superior performance may be attributed to BERT's ability to capture more nuanced and contextually rich representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C73 present an important methodological finding. The comparisons are appropriate and the results are clear (Figure 6\u2014figure supplements 4-6). However, the interpretation about why BERT performs better (C63, C73) is somewhat speculative. BERT's advantage could reflect: (1) better approximation of human processing, (2) richer feature space that captures variance unrelated to the theoretical constructs, or (3) overfitting to idiosyncratic sentence properties. The authors acknowledge the complementary role of traditional measures (C74) which is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C67"
+    ],
+    "result": "The findings provide empirical evidence for the constraint-based approach to sentence processing, which proposes that speech comprehension is concurrently governed by multiple types of probabilistic constraints (linguistic and non-linguistic) with no delay in utilization and no fixed priority, where interpretative coherence drives successful comprehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C9, C67 frame the theoretical context and conclusions. The empirical findings (behavioral correlations with constraints, BERT validation, neural dynamics) are consistent with constraint-based theories. However, the study doesn't directly test alternative theories (e.g., two-stage models) with competing predictions. The evidence is consistent with constraint-based processing but doesn't definitively rule out alternatives. The claim of 'no delay' (C9) is supported by citations but not directly tested in the current paradigm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Deep language models, particularly BERT, can serve as computational tools for investigating neural basis of language comprehension. Recent studies show congruence between DLM representations and brain activity, and DLMs excel at flexible combination of different feature types in rich internal representations. The current study confirms that BERT structural measures incorporate relevant lexical constraints and exhibit both behavioral and neural alignments with human listeners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C13, C68-C70 establish the rationale for using DLMs as cognitive models. The claims about DLM capabilities (C10-C12) are well-supported by citations. The brain-model alignment literature (C13, C69) is appropriately cited. The validation of BERT in the current study (C70) is supported by the correlation analyses. However, the claim that BERT 'effectively approximates' constraint integration (C3) should be more cautious\u2014alignment doesn't prove mechanistic equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors discuss important differences between BERT and human sentence processing: BERT's bidirectional attention provides updated representations of all preceding words (useful for tracking dynamic changes), but BERT processes consecutive inputs independently rather than continuously updating like humans. For some hypotheses (e.g., parallel parsing), recurrent DLMs might be more suitable. Future DLMs with more human-like architecture and rigorous evaluation hold potential for revealing neural implementation of incremental processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 provide important methodological discussion about BERT's limitations and appropriate use cases. The characterization of BERT's architecture (C75-C76, C79) is accurate. The comparison with human processing (C80) is supported by citation. The acknowledgment of limitations and suggestions for future work (C81-C82) are appropriate and well-reasoned. This discussion strengthens the paper by clearly delineating what can and cannot be concluded from the current approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study included 16 participants (after one exclusion) with sample size determined by previous MEG studies. Stimuli were carefully constructed with Verb1 in HiTrans sentences having significantly higher preference for direct objects than LoTrans sentences (SCF probability: HiTrans 0.71\u00b10.16 vs LoTrans 0.44\u00b10.19, p=9.3\u00d710\u207b\u00b9\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 describe methodological details. The sample size (n=16) is justified by citations to similar studies (C85) and is reasonable for within-subject MEG designs with high trial counts. The participant exclusion (C84) is appropriately reported. The stimulus validation (C88) shows clear statistical differences in verb transitivity. Ethical approval is documented (C86). The methodology is sound though a larger sample would increase confidence in individual differences analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The study revealed a pattern of sequential activations in the left lateral temporal regions, updating the structured interpretation as syntactic ambiguity is resolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 summarizes a key finding about sequential temporal lobe activation. This is well-supported by the data showing progression from posterior to anterior temporal regions during ambiguity resolution (Figures 7, 8). The sequential pattern is consistent with hierarchical processing models of temporal lobe function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Despite BERT's superior neural fit, corpus-based and behavioral measures remain crucial for interpreting BERT measures and understanding their alignment with neural activity, including temporal sequences of constraint activation and spatial distribution of effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 makes an important methodological point about the complementary roles of different types of measures. This is supported by the analyses showing how traditional measures help interpret BERT effects (e.g., temporal ordering in Figures 8A-B vs 6B-C, hemispheric dissociations in Figures 8D vs 6C). This integrative approach is a strength of the study.",
+    "result_type": "MINOR"
+  }
+]

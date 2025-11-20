@@ -1,0 +1,1776 @@
+{
+  "submission": {
+    "id": "d97785d7-bb73-4a24-9936-869214c704c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:10:11.955062Z",
+    "updated_at": "2025-11-20T20:10:11.955062Z"
+  },
+  "content": [
+    {
+      "id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "content_type": "manuscript",
+      "content_text": "# Illuminating T cell-dendritic cell interactions in vivo by FlAsHing antigens\n\n## Authors\n\n- Munir Akkaya<sup>1</sup>\n- Jafar Al Souz<sup>4</sup>\n- Daniel Williams<sup>4</sup>\n- Rahul Kamdar<sup>4</sup>\n- Olena Kamenyeva<sup>4</sup> ([ORCID: 0000-0002-6541-5616](https://orcid.org/0000-0002-6541-5616))\n- Juraj Kabat<sup>4</sup>\n- Ethan Shevach<sup>4</sup>\n- Billur Akkaya<sup>3</sup> ([ORCID: 0000-0002-6808-3776](https://orcid.org/0000-0002-6808-3776)) \u2020\n\n### Affiliations\n\n1. Department of Internal Medicine, Division of Rheumatology and Immunology, The College of Medicine, The Ohio State University Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))\n2. Microbial Infection and Immunity, The Ohio State University Wexner Medical Center Columbus United States ([ROR:00c01js51](https://ror.org/00c01js51))\n3. Pelotonia Institute for Immuno-Oncology, The Ohio State University Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))\n4. National Institute of Allergy and Infectious Diseases Bethesda United States ([ROR:043z4tv69](https://ror.org/043z4tv69))\n5. Department of Neurology, The Ohio State University Wexner Medical Center Columbus United States ([ROR:00c01js51](https://ror.org/00c01js51))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDelineating the complex network of interactions between antigen-specific T cells and antigen presenting cells (APCs) is crucial for effective precision therapies against cancer, chronic infections, and autoimmunity. However, the existing arsenal for examining antigen-specific T cell interactions is restricted to a select few antigen-T cell receptor pairs, with limited in situ utility. This lack of versatility is largely due to the disruptive effects of reagents on the immune synapse, which hinder real-time monitoring of antigen-specific interactions. To address this limitation, we have developed a novel and versatile immune monitoring strategy by adding a short cysteine-rich tag to antigenic peptides that emits fluorescence upon binding to thiol-reactive biarsenical hairpin compounds. Our findings demonstrate the specificity and durability of the novel antigen-targeting probes during dynamic immune monitoring in vitro and in vivo. This strategy opens new avenues for biological validation of T-cell receptors with newly identified epitopes by revealing the behavior of previously unrecognized antigen-receptor pairs, expanding our understanding of T cell responses.\n\n## Introduction\n\nThe interactions between T cells and APCs form the cornerstone of adaptive immunity. Within the intricate milieu of lymphoid tissue, T cell priming stands out as a discrete and precise process, occurring amidst the multitude of dynamic cellular interactions. Multimerized peptide-major histocompatibility complex (pMHC) labeling has been the gold standard tool for capturing antigen-specific T cells from a polyclonal repertoire (Jenkins et al., 2010). However, such multimers, most commonly tetramers, have limitations in monitoring dynamic interactions of antigen-specific T cells in real-time due to their blocking effect on the immune synapse. Likewise, currently available T cell receptor-like (TCRL), also known as peptide-in-groove (PIG), antibodies that detect pMHC complexes are known to disrupt the immune synapse, making them unsuitable for real-time monitoring of antigen-specific T cell interactions (Dahan and Reiter, 2012; H\u00f8ydahl et al., 2019). Although alternative approaches for labeling antigenic peptides with conventional tags such as fluorescent proteins, fluorophores, and biotin-streptavidin have been used, these tags have limitations such as size constraints, membrane impermeability, and photophysically unstable nature, which restrict their use in applications for dynamic monitoring (Giepmans et al., 2006; Hoffmann et al., 2010; Toseland, 2013; Liu and Cui, 2020).\n\nTo overcome these drawbacks, we have developed a highly specific and minimally disruptive labeling strategy for studying antigen-specific T cell-APC interactions. Our approach involves introducing a six-amino acid tetracysteine tag (CCPGCC) on antigenic peptides and inducing fluorescence using membrane permeable thiol-reactive Arsenical Hairpin (AsH) probes (Hoffmann et al., 2010; Adams et al., 2002). We have engineered the OVA(323-339) peptide by placing the tetracysteine tag at either the amino or the carboxy terminus, away from the TCR and MHC binding sites, to avoid disrupting T cell- APC synapse in vitro and in vivo (Robertson et al., 2000). Owing to these modifications, our labeling strategy preserves the T cell priming ability and allows for the detection of the fluorescent signal on the surface of APCs in an MHCII-dependent manner. Using flow cytometry and live microscopy, we found that the labeled peptide is readily taken up by the cognate CD4+ T cells with precise specificity in vivo, as previously shown for pMHC complexes taken up from the immune synapse via processes such as trogocytosis and transendocytosis (Aucher et al., 2008; Daubeuf et al., 2006; Wetzel et al., 2005; Hudrisier et al., 2001; Huang et al., 1999). Furthermore, we have created new variants of the tetracysteine-tagged OVA(323-339) peptide with altered TCR-binding sites and have shown that the AsH probe labeling can track the TCR-mediated uptake of nuanced pMHC complexes. This indicates that our labeling strategy is highly robust and forges a novel path for investigating immune responses against altered antigens such as those derived from self, microbiota, and tumor microenvironment. Overall, AsH probe-mediated immune monitoring offers significant advantages over existing methods, making it a versatile tool for in vitro and in vivo applications including live imaging of the T cell synapse within intact tissue architecture. This novel approach will further our understanding of T cell-mediated immune responses by also complementing tetramers for sorting antigen-specific T cells with precision and extending it to newly discovered epitopes.\n\n## Results\n\n### Signal intensity is determined by the sequence and placement of tetracysteine tag\n\nWe first generated OVA323-339 variants by placing a tetracysteine tag \u2018CCPGCC\u2019 at amino or carboxy termini, either consecutively or via a flexible $\u03f5$-amino-caproic acid ($\u03f5$-ACA) linker to prevent endosomal-lysosomal enzymatic digestion to the tag. This yielded four variant peptides named as C- (carboxy terminus without linker), N- (amino terminus without linker), NACA- (amino terminus with $\u03f5$-ACA), and CACA- (carboxy terminus with $\u03f5$-ACA) (Figure 1a). We used these variants to load mature C57BL/6 CD11c+ splenic DCs from C57BL/6 mice and induced fluorescence by treating cells with Fluorescein-AsH (FlAsH) probe. Flow cytometry analysis showed that CACA- peptide combination but not the other tested variants induced a distinguished fluorescent signal (Figure 1b). Cysteine is naturally oxidation prone and this may reduce FlAsH binding to tetracysteine tag. We addressed this problem by pre-treating OVACACA with tris-2-carboxyethylphosphine (TCEP), an irreversible reducing agent that blocks cystine disulfide bridge formation and elicited a consistent FlAsH signal (Figure 1c). Moreover, we used another AsH probe excitable by 561 nm laser, called ReAsH, to occupy non-specific cysteine residues that would otherwise attract FlAsH (Stroffekova et al., 2001). Pre-incubation of DCs with ReAsH improved signal-to-noise ratio significantly (Figure 1d). We have created additional OVA variants to enhance signal intensity. These variants include one with two tetracysteine residues and another with a longer tetracysteine tag that withstands the British anti-Lewisite (BAL) wash, a crucial step to reduce background labeling by removing excess AsH probe (Machleidt et al., 2007). However, new variants provided FlAsH intensity comparable to the original CACA variant, indicating no additional benefit for longer tags (Figure 1e).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91809/elife-91809-fig1-v1.jpg)\n\n**Figure 1.:** (a) Arsenical Hairpin (AsH)- probe labeling strategy for the tetracysteine-tagged peptides and the four OVA323-339 variants generated for the study. (b) FlAsH signal intensity on splenic dendritic cells (DCs) pulsed with tagged OVA323-339 variants. (c) FlAsH signal intensity on splenic DCs pulsed with CACA-variant following treatment with Tris Carboxy Ethyl Phosphene (TCEP), a strong reducing agent. (d) Signal intensity following pre-treatment of splenic DCs with ReAsH, followed by pulsing with CACA-variant and FlAsH treatment. (e) FlAsH signal intensity of modified CACA-variant peptide with a duplicated CCPGCC sequence (CACA-2xTetracysteine) and CACA-variant peptide flanked with BAL-resistant peptide sequences (CACA-BAL resistant). Data in (b\u2013d) are representative of three independent experiments, each performed with three biological replicates.\n\n### Tetracysteine tag does not alter the immunogenicity of peptide\n\nNext, we sought to compare the CD4+ T cell priming ability of four tetracysteine-tagged OVA323-339 variants and that of native peptides in vitro. To do so, na\u00efve CD4+ T cells were isolated from OVA323-339 specific TCR transgenic OTII mice, labeled with a proliferation dye, and cocultured with mature CD11c+ DCs that were pre-loaded with equimolar amount peptides for three days. Proliferation and activation status of OTII T cells were not altered by the presence or placement of the tag (Figure 2a\u2013d). Subsequently, DCs were pulsed with OVACACA vs. native peptide, treated with FlAsH, and cocultured with fluorescently labeled OTII T cells for live confocal microscopy imaging. Within the first hours of coculture, OTII T cells established stable contact with OVACACA-pulsed DCs, and FlAsH-labeled peptide gradually concentrated at the contact site (Figure 2e). At 24 hr after treatment, OTII T cells in the peptide-treated groups exhibited increased volume and a shift towards a less spherical shape, indicative of T cell blasting (Figure 2f). Furthermore, the interaction of T cells with OVACACA and native OVA323-339 pulsed DCs resulted in a comparable decrease in T cell motility, suggesting that the tag had no impact on their dynamics in vitro (Figure 2g).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91809/elife-91809-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2013d) Dendritic cells (DCs) were loaded with the indicated peptides (5 \u2009\u03bcM) and co-cultured with e450-labeled na\u00efve OT-II T cells (5\u2009\u00d7\u2009104) at a 1:10 DC to T cell ratio. (a) Histograms (a) and the bar graph (b) demonstrate the proliferation status of T cells at 72 hr. Histograms (c) and the bar graph (d) depict the surface expression of CD44, a T cell activation marker. The bars (b,d) indicate the mean of three biological replicates; the error bars show the standard deviation. Data are representative of three independent experiments. p-values refer to comparisons between each group and the native peptide, calculated using one-way ANOVA with Dunnett\u2019s multiple comparisons test. (e\u2013g) Peptide-pulsed DCs (2\u2009\u00d7\u2009105) were treated with Fluorescein-AsH (FlAsH), cocultured 1:1 with e450-labeled na\u00efve OT-II T cells and imaged for real-time interactions for 3 \u2009hr (blue, OTII; green, FlAsH). (e) Time-lapse images depict the clustering of OTII T cells around OVACACA-pulsed DCs. (f) Histocytometry plots for OTII T cell volume and sphericity. (g) Graph shows the average track speed of OTII T cells. The lines mark the means of n=3 replicates (one per symbol). Data are representative of two independent experiments. p-values were calculated using a one-way ANOVA with Tukey\u2019s test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91809/elife-91809-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a\u2013b) Na\u00efve OTII and C57BL/6 (Polyclonal) T cells were differentiated into iTreg cells for 3\u20134 days. DsRed+ DCs were double-pulsed with 5 \u2009\u03bcM OVACACA and OVA-biotin and cocultured 1:1 with e450-labeled na\u00efve T cells or iTregs for 18 hr. (a) Experimental scheme. (b) Overlaid histograms for the polyclonal and OTII T cell and iTreg levels of OVACACA (FlAsH), MHCII, and OVA-biotin (detected with streptavidin-BV650). Data are representative of two independent experiments performed with n=3 biological replicates. (c\u2013f) Na\u00efve OTII and C57BL/6 (Polyclonal) T cells were differentiated into induced Treg (iTreg) cells, labeled with e450 and e670, respectively, and injected i.v. into CD45.1 recipients (1\u20132\u2009\u00d7\u2009106 cells/mouse per Treg type). 2\u20134\u2009\u00d7\u2009106 DsRed+ DCs were double-pulsed with 5 \u2009\u03bcM OVACACA and 5 \u2009\u03bcM OVA-biotin and adoptively transferred via footpad. Popliteal lymph nodes were either imaged at 18 \u2009hr or analyzed by flow cytometry at 18 \u2009hr or 48 hr post-transfer. (c) Experimental approach. (d) Summary data from live microscopy depicting DC-Treg cell interaction. (e) Treg levels of OVACACA (FlAsH), MHCII, and OVA-biotin (detected with streptavidin-BV650) at 18 hr (top) and 48 hr (bottom) following adoptive transfer. (f) Proliferation of OTII Tnaive and iTreg cells at 48 hr following adoptive transfer with DCs that had been pulsed with indicated peptides. Imaging data are representative of two independent experiments with n=2 mice. Flow cytometry data are representative of three independent experiments with n=3 mice per group.\n\nNext, we performed a series of adoptive transfers to measure the immunogenicity and signal persistence of tetracysteine-tagged peptides in vivo using two-photon microscopy and flow cytometry. Splenic DCs from \u03b2-Actin DsRed mice were treated with ReAsH to prime them for FlAsH labeling. Because DsRed and ReAsH do not get transferred to T cells during immune synapse, their overlapping fluorescence emission do not pose any problem for tracking the DCs. Next, DCs were pulsed with a peptide mix comprised of equimolar amounts of OVA-Biotin and OVACACA, where OVA-Biotin served as a positive control for flow cytometry. This was followed by optimized FlAsH treatments as indicated in Figure 1 and adoptive transfer into C57BL/6 recipients via footpad injection. Na\u00efve CD4+ T cells were isolated from OTII and WT C57BL/6 spleens, labeled with distinct cell-tracker dyes, mixed 1:1, and transferred into recipients via retroorbital i.v. injection (Figure 3a). As previously demonstrated, adoptively transferred DCs were detectable in the popliteal lymph node 18\u201324 hr post-transfer and they largely disappeared by 48 hr (Baj\u00e9noff et al., 2003; Bousso, 2008; Ingulli et al., 1997). FlAsH signal remained stable on DCs for the entire duration DCs were present in the lymph node (Figure 3b). Strikingly, FlAsH was picked up by the cognate OTII T cells, suggestive of an antigen-specific peptide major histocompatibility complex II (pMHCII) trogocytosis in-vivo (Figure 3c and d). Antigen-specific transfer was also confirmed by OVA-Biotin staining on OTII T cells by fluorochrome-conjugated streptavidin (Figure 3c and d). We had previously shown that antigen-specific Treg cells trogocytose pMHCII from DC synapse more efficiently than their effector CD4 +T cell counterparts (Akkaya et al., 2019). To quantify FlAsH signal picked up by OVA323-339-specific Treg cells, na\u00efve OTII T cells were differentiated into induced Treg (iTreg) cells. While iTreg cells cocultured with antigen-pulsed DCs performed greater MHCII trogocytosis than na\u00efve T cells at 18 hr in vitro, peptide-specific trogocytosis was indiscernible within this time frame (Figure 2\u2014figure supplement 1a, b). Similar to na\u00efve OTII T cells, OTII iTreg cells acquired OVACACA and OVA-Biotin, with distinct peptide-specific signal and proliferative response on day 2 post-adoptive transfer (Figure 2\u2014figure supplement 1c\u2013f).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91809/elife-91809-fig3-v1.jpg)\n\n**Figure 3.:** DsRed+ splenic dendritic cells (DCs) were double-pulsed with 5 \u2009\u03bcM OVACACA and 5 \u2009\u03bcM OVA-biotin and adoptively transferred into CD45.1 recipients (2\u2009\u00d7\u2009106 cells) via footpad. Na\u00efve e450-labeled OTII (1\u2009\u00d7\u2009106 cells) and e670-labeled polyclonal T cells (1\u2009\u00d7\u2009106 cells) were injected i.v. Popliteal lymph nodes were either imaged at 18 \u2009hr or analyzed by flow cytometry at 18 \u2009hr or 48 hr post-transfer. (a), Experimental approach. (b) Flow cytometry plots gating on DsRed+ DCs over 48 hr (top panel) and demonstrating the OVACACA levels (Fluorescein-AsH: FlAsH, bottom panel). (c) Gating strategy for T cells of the recipient (CD45.1) and donor (CD45.2). (d) T cell levels of OVACACA (FlAsH), MHCII, and OVA-biotin (detected with streptavidin) at 48 hr following adoptive transfer. (a\u2013d) Data are representative of three independent experiments with n=3 mice per time point. (e\u2013i) Summary data from live microscopy showing OTII cell blasting (e), DC-T cell interaction with 45 min intervals (f), plots for the DC-T cell contact duration and volume, graphs for the FlAsH intensity limited to the DC-T cell contact regions (g\u2013h) and average Flash intensity acquired by T cells (i). Data are representative of four independent experiments with n=2 mice per experiment. p-values were calculated using two-sided Welch\u2019s t-test.\n\nIntravital two-photon microscopy of the popliteal lymph node further confirmed the antigenicity of OVACACA in vivo by revealing the morphological changes compatible with T cell priming such as increased T cell volume and decreased sphericity (Figure 3e). OTII-DC synapses had greater 3D volume and duration and harbored more FlAsH than surrounding regions (Figure 3g\u2013h). Overall, FlAsH signal was exclusively picked up by OTII T cells imaged, as early as 18 hr (Figure 3i, Video 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/91809/elife-91809-video1.mp4.jpg)\n\n**Video 1.:** Na\u00efve e450-labeled OTII and e670-labeled polyclonal T cells (1\u2009\u00d7\u2009106 cells) were injected i.v. via retroorbital sinus. Popliteal lymph nodes were imaged by intravital two-photon microscopy at 18 \u2009hr after adoptive transfer. Video shows movement and interaction of naive OT-II (blue) cells with DCs (red). OVACACA-Fluorescein-AsH, FlAsH is visualized as cyan-green speckles in DCs and OTII cells. Polyclonal T cells (magenta) don\u2019t engage in sustained interactions with DCs and don\u2019t acquire FlAsH. Data are representative of four independent experiments.\n\n### AsH-probe robustly tracks pMHCII complexes\n\nTo delineate whether FlAsH labeling reports free vs. MHCII-bound peptide in cells, we initially assessed how surface MHCII expression of cells correlates with the OVACACA-FlAsH signal. C57BL/6 splenocytes were incubated with OVA-Biotin or OVACACA and peptide distributions among the T cells, B cells and DCs were quantified by flow cytometry using streptavidin or FlAsH (Figure 4a). Both streptavidin and FlAsH signals correlated significantly with MHCII expression, providing the strongest signal in DCs, where CD4+ T cells served as a negative control due to lack of MHCII expression in mouse T cells (Schooten et al., 2005; Figure 4b, Figure 4\u2014figure supplement 1). It is worth mentioning that streptavidin detection of biotinylated peptide is a viable option for quantifying peptide loading on cells. However, size and membrane impermeable nature of streptavidin makes it unsuitable for assays that include live monitoring of the T-DC interaction (Dundas et al., 2013). Next, we addressed whether FlAsH labeling of OVACACA-pulsed DCs is dependent on the MHC expression. CD11c+ DCs were isolated from MHCII single knockout or MHCI and II double knockout (KO) mice, labeled with tracking dyes, and mixed 1:1 with WT C57BL/6 DCs. Subsequently, they were incubated with OVACACA and treated with ReAsH and FlAsH as in Figure 1 (Figure 4e). To make a fair comparison between WT and KO DCs and minimize autofluorescence, we performed adoptive transfers, aiming to facilitate in vivo elimination of apoptotic and possibly defective KO DCs (Humblet-Baron et al., 2019; Loschko et al., 2016). Flow cytometry analysis of the draining lymph node demonstrated that WT DCs, but not MHCII KO DCs, harbored FlAsH. Two-photon microscopy of the lymph node further confirmed these findings, indicating that FlAsH robustly marks OVACACA-MHCII complexes (Figure 4e\u2013h).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91809/elife-91809-fig4-v1.jpg)\n\n**Figure 4.:** (a-c), Relationship between surface MHCII expression and peptide load. (a) Experimental scheme. (b) Plots (top) show the surface levels of MHCII and OVA-biotin, graph (bottom) shows their correlation. Data are representative of two independent experiments performed with n=2 biological replicates (one per symbol). (c) Surface levels of MHCII and OVACACA (Fluorescein-AsH, FlAsH) and their correlation. Data are representative of two independent experiments performed with n=6 biological replicates (one per symbol). Simple linear regression and Pearson correlation were used to demonstrate the relationship between surface MHCII and peptide load, gray area and dotted lines mark the standard error of the fitted line (b, c). (d) Schematic depicting in vivo adoptive transfer approach. Wild-type (WT) and KO DCs were labeled, mixed, pulsed with 5 \u2009\u03bcM OVACACA, labeled with FlAsH and adoptively transferred to WT recipients via footpad (1\u20132\u2009\u00d7\u2009106 cells). (e\u2013f) Flow cytometry plots (e), and graphs (f) showing FlAsH intensity of WT, MHCII-KO, or MHCI/II double-KO DCs that had migrated to the lymph node within 18 h following adoptive transfer. Data are representative of two independent experiments with n=4 mice per group. p-values were calculated using two-sided Student\u2019s t-test. (g\u2013h) Microscopy images of popliteal lymph node following anti-CD31 (red) antibody injection i.v., yellow arrows point to WT, white arrows point to KO DCs (g), FlAsH intensity of adoptively transferred dendritic cells (DCs) (h). Data are representative of four independent experiments with n=2 mice per experiment. p-values were calculated using two-sided Welch\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91809/elife-91809-fig4-figsupp1-v1.jpg)\n\nTo address how FlAsH acquisition from synapse marks antigen-specific vs. bystander T cells, DCs were labeled with ReAsH and cell membrane dye PKH-26, pulsed with OVACACA, E\u03b1(52-68) or left unpulsed. Next, they were treated with FlAsH and injected into the recipient mice via footpad. Subsequently, 1:1 mixture of labeled na\u00efve OTII and E\u03b1-specific T cells were adoptively transferred into via retroorbital sinus i.v. and the popliteal lymph nodes of the recipients were removed 36\u201342 hr after the transfer (Figure 5a). Flow cytometry analysis showed that OTII and E\u03b1-specific T cells both acquired PKH-26 from double-pulsed DCs, indicating that they captured DC cell membrane from synapse (Figure 5b). This process is termed as TCR-mediated trogocytosis and has previously been described as a feature of the DC-T cell synapse (Daubeuf et al., 2006). Although both T cell types trogocytosed double-pulsed DC cell membrane, FlAsH signal was picked up only by OTII T cells, suggesting that FlAsH tracks pMHCII mobility with a high precision (Figure 5c).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91809/elife-91809-fig5-v1.jpg)\n\n**Figure 5.:** (a\u2013c) Dendritic cells (DCs) were labeled with ReAsH and PKH-26, single/ double-pulsed with 5 \u2009\u03bcM OVACACA, E\u03b1(52-68), or left unpulsed. They were labeled with Fluorescein-AsH (FlAsH) and adoptively transferred into wild-type (WT) mice (0.5\u20131\u2009\u00d7\u2009106 cells) via footpad. Na\u00efve e450-labeled OTII and e670-labeled E\u03b1-specific T cells were mixed 1:1 (0.25\u20130.5\u2009\u00d7\u2009106 / T cell type) and injected i.v. Popliteal lymph node was analyzed by flow cytometry at 36\u201342 hr post-transfer. (a) Experimental scheme. (b) Summary plots. (c) PKH-26 and FlAsH MFI in OTII and E\u03b1-specific T cells. Data are representative of two independent experiments with n=3 mice per group. p-values were calculated using two-way ANOVA with Sidak\u2019s multiple comparisons test. (d-f) DCs were labeled with ReAsH and single/double-pulsed with 5 \u2009\u03bcM OVACACA, LCMV GP61-80, labeled with FlAsH and adoptively transferred into WT mice (1\u20132\u2009\u00d7\u2009106 cells) via footpad. Na\u00efve e450-labeled OTII and e670-labeled SMARTA T cells were mixed 1:1 (0.5\u20131\u2009\u00d7\u2009106 / T cell type) and injected i.v. Live popliteal lymph node sections were imaged at 18 \u2009hr. (d) Time series representative of DC-T cell interactions. (e) Average Flash intensity of the adoptively transferred cells. (f) T cell blasting (left and middle panels) and motility (right) following adoptive transfer with DCs pulsed with the indicated peptides. Data are representative of three independent experiments with n=2 mice per group. p-values were calculated using one-way ANOVA with Tukey\u2019s multiple comparisons test.\n\nFurthermore, we visualized dynamic CD4+ T cell-DC contact and pMHCII mobility in vivo at 18 hr after the transfer. DCs were labeled with ReAsH and pulsed with OVACACA and/or LCMV GP(61-80) and treated with FlAsH. Recipient mice were injected with unpulsed, OVACACA single or OVACACA- GP(61-80) double pulsed DCs via footpad along with a 1:1 mixture of labeled na\u00efve OTII and SMARTA T cells i.v. via retroorbital sinus. Popliteal lymph node microscopy confirmed that OTII and SMARTA T cells had stable contacts with double-pulsed DCs (Figure 5d, Video 2). Similar to E\u03b1-specific T cells, SMARTA also failed to pick up FlAsH signal despite showing signs of antigen-specific contact such as increased volume, reduced sphericity, and decreased track speed (Figure 5e\u2013f).\n\n![Video 2.](https://cdn.elifesciences.org/articles/91809/elife-91809-video2.mp4.jpg)\n\n**Video 2.:** Na\u00efve e450-labeled OTII and e670-labeled SMARTA T cells were mixed 1:1 and injected i.v. via retroorbital sinus. Popliteal lymph nodes of the recipient mice were surgically removed 18 hr after transfer, sectioned, and recovered at 37 \u2009\u00b0C until the resumption of cell migration in the tissue. Sections were then imaged at 37 \u2009\u00b0C by confocal microscopy for 4 hr. Video shows that both OTII (blue) and SMARTA T cells (magenta) have sustained contacts with the DC (Red). Gray: 3D surface rendering for the DCs. Data are representative of three independent experiments.\n\n### Tetracysteine-tagging of peptides provides a sensitive tool to visualize interactions with altered TCR affinity\n\nThe lack of adaptable antigen-targeted probes presents a significant obstacle in the dynamic visualization of antigen-specific immunity. To address this gap, we sought to determine the robustness of tetracysteine tagging in visualizing nuanced pMHCII variants. We created three variants by introducing alanine mutations at the TCR binding residues 331, 333, and 335 of OVACACA (Figure 6a). The mutations at 331 and 333, depicted as variants 1 and 2, respectively, were previously reported to abolish the binding of OTII TCR to OVA323-339 (Robertson et al., 2000). Although the residue 335 is flanked between the core OTII TCR binding residues 333 and 336, mutant 335 was shown to elicit the normal proliferative response in vitro (Robertson et al., 2000). We addressed how pMHCII uptake by T cells is influenced by the mutation of TCR binding residues of OVACACA. DCs were isolated from CD45.1 congenic mice, loaded with variant peptides, and cocultured with na\u00efve CD45.2 OTII T cells for three days (Figure 6b\u2013e). In line with earlier observations, variants 1 and 2 interrupted T cell priming while variant 3 led to a proliferative response similar to native peptide (Figure 6c\u2013d). TCR-mediated uptake of the FlAsH-labeled pMHCII complexes followed the same pattern and only variant 3 complexes produced a comparable signal to that of OVACACA (Figure 6e). These suggest that AsH-probe labeling can be a sensitive method to track low affinity/nuanced pMHCII complexes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/91809/elife-91809-fig6-v1.jpg)\n\n**Figure 6.:** (a\u2013b) Graphical depiction of the alanine-mutants for OVACACA TCR binding site and experimental approach. 0,5\u2009\u00d7\u2009105 CD45.1+ DCs were pulsed with the indicated peptides, labeled with FlAsH, and cocultured with 2,5\u2009\u00d7\u2009105 e450-labeled OTII cells for 3 days. (c) Gating strategy for T cells and dendritic cell (DCs). (d) Representative flow cytometry plots for OTII T cell proliferation with a partial agonist (top) and two antagonist peptides (bottom). (e) FlAsH signal intensity of DCs and OTII cells with partial agonist (top) and antagonist peptides (bottom) adoptive transfer with the indicated peptides followed by FlAsH treatment. Data are representative of two independent experiments performed with n=3 biological replicates.\n\n## Discussion\n\nDynamic monitoring of antigen-specific T cell responses in vivo poses challenges due to the limited availability of reagents and the size constraints of the immune synapse. Here, we address this issue by presenting a novel strategy for visualizing T cell-APC interactions via tetracysteine tagging of antigenic peptides. While tetracysteine tagging has been previously applied in cell biology and virology, these applications have been mostly limited to cell lines and in vitro studies in immunology-unrelated experimental settings (Griffin et al., 1998; Mohl and Roy, 2017; Li et al., 2022; Ng et al., 2019). On the other hand, our technique labels antigenic peptides and tracks pMHCII complexes in primary APCs during their interactions with T cells both in vitro and in vivo. Our approach is superior as compared to other strategies for monitoring T cell-DC interactions, in the way it robustly targets specific pMHCII complexes in real-time in vivo. There is no need for special organisms or genetic modifications, and the technique can easily be expanded to new antigens and T cell-APC pairs from both mice and humans. This strategy can, for instance, be integrated into validation efforts for antigen discovery and utilized in the investigation of the synapses of newly deorphanized human T cells, a largely unexplored area where tools are scarce (Dobson et al., 2022; Wang et al., 2022; Lewis and Peters, 2023; Pogorelyy et al., 2022). Given that is a two-part system (tag and FlAsH), it also carries the added capability of being inducible at different time points to allow for increased flexibility in interrogating pMHCII-TCR interactions over time. On the other hand, this introduces a high background due to the non-specific binding of FlAsH to endogenous cysteines. Thus, we implemented a ReAsH pretreatment strategy, successfully improving the signal-to-noise profile for FlAsH. It\u2019s worth mentioning our unpublished attempts to load dendritic cells (DCs) with preconjugated peptide and FlAsH to mitigate the background. Unfortunately, this endeavor led to almost a complete loss of the FlAsH signal and has not been pursued further. Therefore, exploring new peptide probes chemically conjugated to small organic dyes emerges as a potential avenue for future investigation.\n\nMost important of all, our experiments demonstrate that tetracysteine-tagged peptides can be transferred from DCs to T cells via synaptic processes, such as antigen-specific pMHCII trogocytosis/transendocytosis, marking acceptor T cells for several days. Although the turnover of pMHCII in acceptor T cells and its temporal relationship to the TCR downstream events require further elucidation, our visualization of tetracysteine-tagged pMHCII can complement tetramers in detecting antigen-specific T cells in vivo. Additionally, we show that tetracysteine tagging of pMHCII does not broadly alter or disturb T cell-DC synapse by functional read-outs. Although the ratio of peptide-FlAsH conjugates to free peptide in DCs would be needed to support this claim, our approach offers an advantage over tetramers in that it is suitable for real-time monitoring of the immune synapse. Finally, it is worth noting that tetracysteine tags can be visualized as electron-dense particles by Transmission Electron Microscopy (Ellisman et al., 2012; Cortese et al., 2009), providing potential for the detailed investigation of T-DC synapse and subcellular localization of pMHCII complexes. Although TEM application was out of scope for this study, it offers a promising avenue for future research. In conclusion, the tetracysteine labeling approach described here provides a powerful and unique tool to advance our understanding of T cell-APC interactions, offering new opportunities to investigate the immune response and develop improved immunotherapies.\n\n## Materials and methods\n\n### Animals and reagents\n\nC57BL/6, DsRed.T3, H2-K1/H2-D1 knockout (MHCI KO), E\u03b152-68, LCMV GP61\u201380-specific (SMARTA), and OVA323\u2013339-specific (OT-II) TCR transgenic mice were acquired from The Jackson Laboratory. H2-Ab1 knockout (MHCII KO) mice were obtained from Taconic Biosciences. MHCI-II double knockout mice were obtained by breeding single knockout mice to homozygosity. All mice were maintained in Ohio State University ULAR and National Institutes of Health (NIH) animal facilities in compliance with Institutional Animal Care and Use Committee (IACUC) standards. All animal experiments were conducted in accordance with the ethical guidelines under the protocols OSU IACUC 2022A00000061 and NIAID LISB-13E.\n\nCell cultures were maintained in sterile complete Roswell Park Memorial Institute (RPMI) media. The RPMI 1640 medium was supplemented with 10% heat-inactivated fetal bovine serum, 50 \u2009U/ml penicillin, 50 \u2009\u00b5M streptomycin, 1 \u2009mM sodium pyruvate, 2 \u2009mM L-glutamine, 0.1 \u2009mM non-essential amino acids, 50 \u2009\u00b5M 2-mercaptoethanol, and 10 \u2009mM HEPES (Thermo Fisher Scientific). For magnetic separations, cells were maintained in filtered and degassed magnetic-activated cell sorting (MACS) buffer. The MACS buffer consisted of PBS (Lonza) supplemented with 0.5%\u2009BSA (Sigma-Aldrich) and 2 \u2009mM EDTA (Sigma-Aldrich). For splenic DC isolation, Liberase TM (Blendzyme) and DNase I were purchased from Roche. 50 mg Liberase was dissolved in complete RPMI, resulting in a final concentration of 5 mg/mL. The solution was kept on ice, stirred gently every 5 min for 30 min, and aliquoted into 1 mL portions. 10 mg/mL DNAse stock solution was prepared with 0.15 M NaCl and divided into 500 \u00b5L aliquots. Both enzymes were stored at \u201320 \u00b0C.\n\nSamples were stained for flow cytometry using fluorescence-activated cell sorting (FACS) buffer (either PBS or Hanks\u2019 balanced salt solution (HBSS) supplemented with 2% fetal bovine serum, 1%\u2009HEPES, and 10 \u2009mM sodium azide (Sigma-Aldrich)). For confocal microscopy, PBS supplemented with 1% BSA was used. The antibodies used for flow cytometry are as follows: anti-CD4-efluor450 (clone GK1.5), anti-B220-PE (clone RA3-6B2), anti-CD11c-AF700 (clone N418), anti-CD45.1-PE.Cy7 (clone A20, Thermo Fisher Scientific), anti-CD45.2-AF700 (clone 104), anti-CD44-BUV395 (clone IM7, BD Biosciences), anti-I-A/I-E-BV605 (clone M5/114.15.2), anti-I-A/I-E-BV785 (clone M5/114.15.2), streptavidin-BV650, streptavidin-AF647 and purified anti-CD16/32 (clone 93). The antibodies were purchased from BioLegend unless stated otherwise. All peptides used in the study (Supplementary file 1) were obtained from the NIH Research Technologies Branch, NIAID Peptide Core Facility.\n\nFor AsH probe labeling, peptides were pre-treated with fresh Tris Carboxy Ethyl Phosphene (TCEP, Sigma-Aldrich) to protect tetracysteine residues from oxidation. 10 mM ReAsH stock solution was prepared by adding 45 \u00b5L sterile cell-culture grade DMSO (Sigma-Aldrich) to 250 \u00b5g solid ReAsH (Cayman Chemical) and 10 mM FlAsH solution was prepared by adding 150 uL DMSO to 1 mg FlAsH powder (Cayman Chemical). British Anti-Lewisite (BAL, Alfa Aesar) and HBSS with Ca++ and Mg++ (Thermo Fisher Scientific) was used to wash excess FlAsH off the cells. BAL is resuspended in sterile degassed water to obtain 8 mM stock solution. FlAsH, ReAsH, and BAL are highly sensitive to oxidation, therefore, their activity may decline in subsequent uses. This may be averted, at least in part, by quickly purging stock solution containers with 4 M Argon gas (Sigma-Aldrich, 501247), placing container in a 50 mL tube, purging again with Argon before storing FlAsH and ReAsH at \u201320 \u00b0C, BAL at 4 \u00b0C. We do not recommend storage longer than one month or repeated use of the same reagent stock.\n\n#### DC isolation, peptide loading, and -AsH probe labeling\n\nMature splenic DCs were isolated as previously described (Akkaya et al., 2021) and resuspended in complete RPMI. Peptides were added into 20 mM TCEP solution at twice the desired concentration for loading DCs. The solution was vortexed thoroughly and incubated at 37 \u00b0C for 30 min. Meanwhile, ReAsH stock solution was diluted to 100 uM in complete RPMI and added on DC suspension to obtain 1 uM final ReAsH concentration. Cells were incubated at 37 \u00b0C for 30 min and washed twice with complete RPMI. ReAsH-labeled DCs were mixed with an equal volume of peptide-TCEP solution, incubated at 37 \u00b0C for 30 min, washed twice, and resuspended in complete RPMI to proceed with FlAsH labeling. Flash was added to cell suspension to achieve 1 uM final concentration, incubated at 37 \u00b0C for 30 min and washed twice with complete RPMI. To remove excess FlAsH and reduce non-specific binding, cells were resuspended in 240 uM BAL diluted in HBSS with Ca++ and Mg++, washed twice, then washed a third time with PBS, and resuspended in PBS.\n\n#### DC-T cell cocultures\n\nFreshly isolated DCs were pulsed with peptide in complete RPMI and were incubated at 37 \u2009\u00b0C for 30 \u2009min followed by three washes with complete RPMI to remove unbound peptide. Pulsed DCs were then treated with -AsH as described above and then seeded into flat-bottom 96-well plates (Corning) at a density of 5\u2009\u00d7\u2009104\u20131 \u00d7 105 cells per well. T cells and iTreg cells were labeled with e450 or e670 (eBioscience) according to the manufacturer\u2019s protocol. Cells were cocultured at 37 \u00b0C for indicated periods, at a 1:10 ratio of DCs to T cells for proliferation assays and 1:1 for trogocytosis assays.\n\n#### iTreg differentiation\n\nFor iTreg differentiation, Tnaive cells were isolated, and 24-well sterile tissue culture plates (Corning) were coated with anti-CD3\u03b5 (BioLegend) and anti-CD28 (BioLegend) as described (Akkaya et al., 2017). Na\u00efve CD4+ T cells were resuspended in complete RPMI media supplemented with 100 \u2009IU\u2009ml\u22121 recombinant human IL-2 (Peprotech) and 5 \u2009ng\u2009ml\u22121 recombinant human TGF-\u03b2 (Peprotech). 3\u2009\u00d7\u2009105 cells were added to the wells at a volume of 1 \u2009ml per well. Cells were cultured at 37 \u2009\u00b0C, 5%\u2009CO2 for 3\u20134 days.\n\n#### Trogocytosis assay\n\nTrogocytosis assays were performed as described in Akkaya et al., 2019. Briefly, freshly isolated splenic DCs were labeled with 4 \u03bcM PKH26 (Sigma-Aldrich) for labeling of the cell membrane as described in Puaux et al., DCs were then pulsed with 10 \u2009\u03bcM peptide, treated with -AsH, and were cocultured with T cells for up to 18 \u2009hr. Cell conjugates were dissociated by washing cells with MACS buffer with 2 \u2009mM EDTA; cell suspensions were prepared for flow cytometry.\n\n#### Flow cytometry\n\nCells were stained in FACS buffer containing fluorochrome-conjugated antibodies for 30 min at 4 \u00b0C, protected from light. Data acquisition was performed with BD LSRFortessa and BD LSR II cytometers (BD Biosciences). Data analysis was performed with FlowJo v10.8.1.\n\n#### Adoptive transfer\n\nMice were anesthetized in an induction chamber with 1.5% isoflurane USP (Baxter). Pulsed DCs were adoptively transferred through the right footpad in 50 uL sterile PBS. T cells labeled with e450 or e670 (Thermo Fisher Scientific) were injected intravenously in 100 uL sterile PBS through the retro-orbital sinus.\n\n#### Confocal microscopy\n\n35 mm dishes with a 14 mm glass coverslip bottom (MatTek) were pre-treated with 10 ug/ml fibronectin (Sigma-Aldrich) in PBS for 1 hr at room temperature and washed twice. Splenic DCs were added onto the glass coverslip in complete RPMI and pulsed with 5\u201310 \u03bcM peptide at 37 \u00b0C for 1 hr. Excess peptide was washed off with complete RPMI before the addition of CD4 T cells. Co-cultures were imaged for 3\u201318 hr using a Leica SP-8 inverted microscope (Leica Microsystems) equipped with a full range of visible lasers, two hybrid detectors, three photomultiplier detectors, and a motorized stage. 63x objective (Leica Microsystems) was used and microscope configuration was set up for 3D analysis (x, y, z) of the cellular layer. The following lasers were used: diode laser for 405 \u2009nm excitation; argon laser for 488 and 514 \u2009nm excitation; diode-pumped solid-state laser for 561 \u2009nm; and HeNe laser for 594 and 633 \u2009nm excitation. All lasers were tuned to minimal power (between 0.3% and 2%) to prevent photobleaching. z stacking of images of 10\u201312 \u2009\u00b5m were collected. Mosaic images of large cell culture areas (1 \u2009mm2) were generated by acquiring multiple z stacks using the Tile scan mode and were assembled into tiled images using LAS X v4.0 (Leica Microsystems).\n\n#### Intravital two-photon laser-scanning microscopy of mouse popliteal lymph nodes\n\nMice were anesthetized in 1.5% isoflurane USP (Baxter) through a rodent nose cone followed by surgery to expose the right popliteal lymph node. Warm PBS was added to maintain lymph node moisture. Mouse body temperature was maintained with an infrared blanket (Braintree Scientific) throughout the imaging process after which they were euthanized through cervical dislocation under anesthesia. Mice were imaged on a glass stage with a two-photon laser-scanning microscopy setup with a Leica SP8 inverted confocal microscope with dual multi-photon lasers, Mai Tai and InSight DS (Spectra-Physics), L 25.0 water-immersion objective, 0.95\u2009NA (Leica Microsystems), and a 37 \u2009\u00b0C incubation chamber (NIH, Division of Scientific Equipment and Instrumentation Services). The Mai Tai laser was tuned to 890 \u2009nm to excite e450 and FlAsH; the InSight DS laser was tuned to 1150 \u2009nm to excite DsRed/ PKH-26 /ReAsH and e670. For time-lapse imaging, a z stack consisting of 10\u201312 single planes (5 \u2009\u03bcm each over a total tissue depth of 50\u201360 \u2009\u03bcm) was acquired at 15 s intervals for a total period of 1\u20134 hr.\n\n#### Two-photon laser-scanning microscopy of live lymph node sections\n\nLive lymph node sections were imaged ex vivo by two-photon microscopy. To maintain tissue architecture, popliteal lymph nodes were immediately transferred to PBS with 1% BSA and kept on ice immediately following harvest. Residual fat and connective tissue were removed using a Leica MZ6 StereoZoom microscope (Leica Microsystems). Lymph nodes were suspended at 38 \u2009\u00b0C agarose in DMEM and kept over ice. Following complete agarose solidification, complete RPMI was added and blocks were cut containing one lymph node each. Lymph node blocks were cut into 200 \u2009\u00b5m sections with a Leica VT1000 S vibrating blade microtome (Leica Microsystems) at speed 5 in ice-cold PBS and frozen at \u201380 \u2009\u00b0C. Prior to imaging, a complete RPMI medium was added to tissue sections and incubated at 37 \u2009\u00b0C for 2 \u2009hr. Sections were held down with tissue anchors (Warner Instruments) in 35 mm dishes with a 14 mm glass coverslip bottom (MatTek) and were imaged with a Leica SP8 inverted five-channel confocal microscope equipped with an environmental chamber (NIH, Division of Scientific Equipment and Instrumentation Services) and a motorized stage. The microscope configuration was set up for four-dimensional analysis (x, y, z, t) of cell segregation and migration within tissue sections. A diode laser for 405 \u2009nm, an argon laser for 488 and 514 \u2009nm, a diode-pumped solid-state laser for 561 \u2009nm, and a HeNe laser for 594 and 633 \u2009nm excitation wavelengths were tuned to minimal power (between 0.3% and 2%). z-stack of images of 10\u201325 \u2009\u00b5m were collected. Mosaic images of whole lymph nodes were generated by acquiring multiple z stacks using a motorized stage to cover the whole lymph node area and assembled into a tiled image with the LAS X software. For time-lapse analysis of cell migration, tiled z-stacks were collected over time (1\u20134 \u2009hr).\n\n#### Image analysis\n\nAnalysis of confocal and intravital two-photon images was performed using Imaris v9.2.1 and v10.0.0 (Bitplane) as previously described (Akkaya et al., 2021). In brief, e450 and e670 signals were utilized for reconstructing the 3D structure of T cells and iTreg cells as surface objects. To reconstruct the 3D structure of DCs, overlapping DsRed, PKH-26, and ReAsH signals were employed. Imaris v10.0.0\u2019s built-in algorithms were used to calculate 3D volumes, track velocities, surface-to-surface colocalization parameters, and FlAsH (green) intensities of cells.\n\n#### Statistical analysis\n\nStatistical analysis was conducted on Prism v9.5.1 (GraphPad). Statistical tests and relevant p-values for each figure are indicated in the figure or figure legend.\n",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91809.3.sa0](https://doi.org/10.7554/eLife.91809.3.sa0)\n\nThis is an important study that develops a method to fluorescently label peptide MHC complexes on live dendritic cells to enable detection of antigen specific T cells in polyclonal populations. Solid evidence that this can be used to effectively identify antigen specific T cells in vitro and in vivo is provided for one model antigen systems (Ova-OTII). The approach has exciting potential as prior single step methods with directly conjugated single peptides have generally failed due to high background. Thus, this approach potentially moves the state of the art forward, but further work is needed to realise and determine the limits and ultimate utility of the approach.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91809.3.sa1](https://doi.org/10.7554/eLife.91809.3.sa1)\n\nSummary:\n\nThe authors develop a method to fluorescently tagged peptides loaded onto dendritic cells using a three step method. These include a pre blocking step to block endogenous cysteine motifs on the DC surface, loading a tetracystein motif modified peptide on surface MHC and a labelling step done on the surface of live DC using a dye with high affinity for the added motif. The results are convincing in demonstrating in vitro and in vivo T cell activation and efficient label transfer to specific T cells in vivo. The label transfer technique will be useful to identify T cell that have recognised a DC presenting a specific peptide antigen to allow the isolation of the T cell and cloning of its TCR subunits, for example. It may also be useful as a general assay for in vitro or in vivo T-DC communication that can allow detection of genetic or chemical modulators.\n\nStrengths:\n\nThe study include both in vitro and in vivo analysis including flow cytometry and two photon laser scanning microscopy. The results are convincing and the level of T cell labelling with the fluorescent pMHC is surprisingly robust and suggests that the approach is potentially revealing something about fundamental mechanisms beyond the state of the art. They also provide practical information about the challenges of the method and discuss limitations.\n\nWeaknesses:\n\nThe method is demonstrated only at high pMHC density and it would need to be re-optimised to determine if it can be used at lower densities that may often be encountered physiologically.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91809.3.sa2](https://doi.org/10.7554/eLife.91809.3.sa2)\n\nSummary:\n\nThe authors have developed novel Ovalbumin model (OTII) peptide that can be labeled with a site-specific FlAsH dye to track agonist peptides both in vitro and in vivo. The utility of this tool could allow better tracking of activated polyclonal T cells particularly in novel systems. The authors have provided solid evidence that peptides are functional, capable of activating OTII T cells, and these peptides can undergo trogocytosis by cognate T cells only.\n\nStrengths:\n\n-An extensive array of in vitro and in vivo studies are used to assess peptide functionality.\n\n-Nice use of cutting edge intravital imaging,\n\n-internal controls such as multiple non-cogate T cells were used to improve robustness of the results\n\n-One of the strengths is the direct labeling of the peptide, and the potential utility in other systems.\n\nWeaknesses:\n\n-Peptide labeling specificity and efficiency is not clear. High levels of background labeling. While it was sufficient for demonstrating the system works, it may pose problems depending on the peptide sequence, and/or use at lower dose.\n\n-Only one peptide system was tested, namely OVA323-339 region.\n\n-Limited novel biological findings. This study mostly describes a new tool that may have exciting potential.\n",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6112bf14-fafb-4705-9072-d8b07b7b2429",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C1",
+      "claim": "Multimerized peptide-major histocompatibility complex (pMHC) labeling has been the gold standard tool for capturing antigen-specific T cells from a polyclonal repertoire.",
+      "claim_type": "EXPLICIT",
+      "source": "Multimerized peptide-major histocompatibility complex (pMHC) labeling has been the gold standard tool for capturing antigen-specific T cells from a polyclonal repertoire (Jenkins et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jenkins et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "7632c327-9f2f-4b16-afa7-dd053f16eb89",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C2",
+      "claim": "Tetramers have limitations in monitoring dynamic interactions of antigen-specific T cells in real-time due to their blocking effect on the immune synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such multimers, most commonly tetramers, have limitations in monitoring dynamic interactions of antigen-specific T cells in real-time due to their blocking effect on the immune synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about tetramer properties and their effects on immune synapses",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "137d54b0-cfd2-4778-a4a5-20400fb960ef",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C3",
+      "claim": "T cell receptor-like (TCRL) antibodies that detect pMHC complexes are known to disrupt the immune synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, currently available T cell receptor-like (TCRL), also known as peptide-in-groove (PIG), antibodies that detect pMHC complexes are known to disrupt the immune synapse, making them unsuitable for real-time monitoring of antigen-specific T cell interactions (Dahan and Reiter, 2012; H\u00f8ydahl et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dahan and Reiter, 2012 and H\u00f8ydahl et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "626ee2fd-40da-4530-92a1-8b929592988f",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C4",
+      "claim": "Alternative approaches for labeling antigenic peptides with conventional tags have limitations such as size constraints, membrane impermeability, and photophysically unstable nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Although alternative approaches for labeling antigenic peptides with conventional tags such as fluorescent proteins, fluorophores, and biotin-streptavidin have been used, these tags have limitations such as size constraints, membrane impermeability, and photophysically unstable nature, which restrict their use in applications for dynamic monitoring (Giepmans et al., 2006; Hoffmann et al., 2010; Toseland, 2013; Liu and Cui, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations describing limitations of conventional labeling approaches",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "c7e327e9-259f-485e-91ac-50fe84f42d9c",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C5",
+      "claim": "The authors developed a labeling strategy involving a six-amino acid tetracysteine tag (CCPGCC) on antigenic peptides that induces fluorescence using membrane permeable thiol-reactive Arsenical Hairpin (AsH) probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach involves introducing a six-amino acid tetracysteine tag (CCPGCC) on antigenic peptides and inducing fluorescence using membrane permeable thiol-reactive Arsenical Hairpin (AsH) probes (Hoffmann et al., 2010; Adams et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the methodology developed in this study, with citations to prior work on AsH probes",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "f9129bc1-f7dc-42d5-bad0-26a9faaaaf63",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C6",
+      "claim": "The OVA(323-339) peptide was engineered by placing the tetracysteine tag at either the amino or the carboxy terminus, away from the TCR and MHC binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We have engineered the OVA(323-339) peptide by placing the tetracysteine tag at either the amino or the carboxy terminus, away from the TCR and MHC binding sites, to avoid disrupting T cell- APC synapse in vitro and in vivo (Robertson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental design with citation to Robertson et al., 2000 for binding site information",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "661c66e4-fd76-485b-9541-fac48867dfb2",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C7",
+      "claim": "The labeling strategy preserves the T cell priming ability and allows for the detection of the fluorescent signal on the surface of APCs in an MHCII-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Owing to these modifications, our labeling strategy preserves the T cell priming ability and allows for the detection of the fluorescent signal on the surface of APCs in an MHCII-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "2d8bb4b6-474c-4712-9fc5-f0d40458cf8d",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C8",
+      "claim": "The labeled peptide is readily taken up by cognate CD4+ T cells with precise specificity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using flow cytometry and live microscopy, we found that the labeled peptide is readily taken up by the cognate CD4+ T cells with precise specificity in vivo, as previously shown for pMHC complexes taken up from the immune synapse via processes such as trogocytosis and transendocytosis (Aucher et al., 2008; Daubeuf et al., 2006; Wetzel et al., 2005; Hudrisier et al., 2001; Huang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from flow cytometry and microscopy, with citations to prior work on trogocytosis",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "68a9adc6-3522-4308-8f5e-d730f974e4da",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C9",
+      "claim": "pMHC complexes are taken up from the immune synapse via processes such as trogocytosis and transendocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "as previously shown for pMHC complexes taken up from the immune synapse via processes such as trogocytosis and transendocytosis (Aucher et al., 2008; Daubeuf et al., 2006; Wetzel et al., 2005; Hudrisier et al., 2001; Huang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "13f63097-4b90-4393-b4f6-fd8347613c9b",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C10",
+      "claim": "The CACA-variant peptide combination induced a distinguished fluorescent signal compared to other tested variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis showed that CACA- peptide combination but not the other tested variants induced a distinguished fluorescent signal (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "93cfb117-b580-46f5-89eb-13dc0d61ab1e",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C11",
+      "claim": "Pre-treating OVACACA with tris-2-carboxyethylphosphine (TCEP) blocks cystine disulfide bridge formation and elicits a consistent FlAsH signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We addressed this problem by pre-treating OVACACA with tris-2-carboxyethylphosphine (TCEP), an irreversible reducing agent that blocks cystine disulfide bridge formation and elicited a consistent FlAsH signal (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "a7b3583c-db36-4cea-bd78-c2716d43ca35",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C12",
+      "claim": "Pre-incubation of DCs with ReAsH improved signal-to-noise ratio significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we used another AsH probe excitable by 561 nm laser, called ReAsH, to occupy non-specific cysteine residues that would otherwise attract FlAsH (Stroffekova et al., 2001). Pre-incubation of DCs with ReAsH improved signal-to-noise ratio significantly (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1d, with citation to Stroffekova et al., 2001",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "4359e00b-4f0a-4219-8980-adc08608403a",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C13",
+      "claim": "New variants with two tetracysteine residues or a longer tetracysteine tag provided FlAsH intensity comparable to the original CACA variant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, new variants provided FlAsH intensity comparable to the original CACA variant, indicating no additional benefit for longer tags (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "cea62dbf-829f-4b3f-9a52-22187e7986d4",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C14",
+      "claim": "Proliferation and activation status of OTII T cells were not altered by the presence or placement of the tetracysteine tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferation and activation status of OTII T cells were not altered by the presence or placement of the tag (Figure 2a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2a-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "42546ce8-c92c-4658-bd96-8e32c9787b62",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C15",
+      "claim": "Within the first hours of coculture, OTII T cells established stable contact with OVACACA-pulsed DCs, and FlAsH-labeled peptide gradually concentrated at the contact site.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the first hours of coculture, OTII T cells established stable contact with OVACACA-pulsed DCs, and FlAsH-labeled peptide gradually concentrated at the contact site (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live confocal microscopy data shown in Figure 2e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "a5d6cc60-0521-4982-a93f-905181bdf958",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C16",
+      "claim": "At 24 hr after treatment, OTII T cells in the peptide-treated groups exhibited increased volume and a shift towards a less spherical shape, indicative of T cell blasting.",
+      "claim_type": "EXPLICIT",
+      "source": "At 24 hr after treatment, OTII T cells in the peptide-treated groups exhibited increased volume and a shift towards a less spherical shape, indicative of T cell blasting (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by histocytometry data shown in Figure 2f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "24dd0b2a-168e-4a76-8b81-49bc8e52e4f0",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C17",
+      "claim": "The interaction of T cells with OVACACA and native OVA323-339 pulsed DCs resulted in a comparable decrease in T cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the interaction of T cells with OVACACA and native OVA323-339 pulsed DCs resulted in a comparable decrease in T cell motility, suggesting that the tag had no impact on their dynamics in vitro (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "4c80777b-6c8d-4f01-8c0e-b72c58e0033c",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C18",
+      "claim": "Adoptively transferred DCs were detectable in the popliteal lymph node 18\u201324 hr post-transfer and they largely disappeared by 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously demonstrated, adoptively transferred DCs were detectable in the popliteal lymph node 18\u201324 hr post-transfer and they largely disappeared by 48 hr (Baj\u00e9noff et al., 2003; Bousso, 2008; Ingulli et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on DC kinetics after adoptive transfer",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "821e4295-2079-49ac-b3ff-428885bb8436",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C19",
+      "claim": "FlAsH signal remained stable on DCs for the entire duration DCs were present in the lymph node.",
+      "claim_type": "EXPLICIT",
+      "source": "FlAsH signal remained stable on DCs for the entire duration DCs were present in the lymph node (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "62af3707-17dd-4f5f-a92a-2080b87a3650",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C20",
+      "claim": "FlAsH was picked up by the cognate OTII T cells, suggestive of an antigen-specific peptide major histocompatibility complex II (pMHCII) trogocytosis in-vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, FlAsH was picked up by the cognate OTII T cells, suggestive of an antigen-specific peptide major histocompatibility complex II (pMHCII) trogocytosis in-vivo (Figure 3c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 3c and d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "b7b00e26-09fd-4418-8a6e-bbda8fd731b5",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C21",
+      "claim": "Antigen-specific transfer was confirmed by OVA-Biotin staining on OTII T cells by fluorochrome-conjugated streptavidin.",
+      "claim_type": "EXPLICIT",
+      "source": "Antigen-specific transfer was also confirmed by OVA-Biotin staining on OTII T cells by fluorochrome-conjugated streptavidin (Figure 3c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 3c and d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "933de313-c0df-4d9b-a852-2f668d758d4d",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C22",
+      "claim": "Antigen-specific Treg cells trogocytose pMHCII from DC synapse more efficiently than their effector CD4+ T cell counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "We had previously shown that antigen-specific Treg cells trogocytose pMHCII from DC synapse more efficiently than their effector CD4 +T cell counterparts (Akkaya et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior work by Akkaya et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "29991906-52fc-4349-a8fe-408c2b9db2fc",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C23",
+      "claim": "iTreg cells cocultured with antigen-pulsed DCs performed greater MHCII trogocytosis than na\u00efve T cells at 18 hr in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "While iTreg cells cocultured with antigen-pulsed DCs performed greater MHCII trogocytosis than na\u00efve T cells at 18 hr in vitro, peptide-specific trogocytosis was indiscernible within this time frame (Figure 2\u2014figure supplement 1a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1a, b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "fbf6d1c8-3d82-4ddc-af5a-a4055948832b",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C24",
+      "claim": "OTII iTreg cells acquired OVACACA and OVA-Biotin, with distinct peptide-specific signal and proliferative response on day 2 post-adoptive transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to na\u00efve OTII T cells, OTII iTreg cells acquired OVACACA and OVA-Biotin, with distinct peptide-specific signal and proliferative response on day 2 post-adoptive transfer (Figure 2\u2014figure supplement 1c\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1c-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "44ae57cc-45e5-407c-98c3-1952673f5033",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C25",
+      "claim": "Intravital two-photon microscopy of the popliteal lymph node confirmed the antigenicity of OVACACA in vivo by revealing morphological changes compatible with T cell priming such as increased T cell volume and decreased sphericity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intravital two-photon microscopy of the popliteal lymph node further confirmed the antigenicity of OVACACA in vivo by revealing the morphological changes compatible with T cell priming such as increased T cell volume and decreased sphericity (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by two-photon microscopy data shown in Figure 3e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "aee9dff7-3165-494a-9b95-1652fb5c9320",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C26",
+      "claim": "OTII-DC synapses had greater 3D volume and duration and harbored more FlAsH than surrounding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "OTII-DC synapses had greater 3D volume and duration and harbored more FlAsH than surrounding regions (Figure 3g\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 3g-h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "9c2b28e5-7702-4943-8a2a-eeab71f8cbac",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C27",
+      "claim": "FlAsH signal was exclusively picked up by OTII T cells imaged, as early as 18 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, FlAsH signal was exclusively picked up by OTII T cells imaged, as early as 18 hr (Figure 3i, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 3i and Video 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "d2e5d8b6-8dfb-46d4-93b9-beb84d57c867",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C28",
+      "claim": "Both streptavidin and FlAsH signals correlated significantly with MHCII expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Both streptavidin and FlAsH signals correlated significantly with MHCII expression, providing the strongest signal in DCs, where CD4+ T cells served as a negative control due to lack of MHCII expression in mouse T cells (Schooten et al., 2005; Figure 4b, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4b and Figure 4\u2014figure supplement 1, with citation to Schooten et al., 2005",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "5442bbad-c9ae-418b-add2-db914f3cc871",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C29",
+      "claim": "Mouse CD4+ T cells lack MHCII expression.",
+      "claim_type": "EXPLICIT",
+      "source": "where CD4+ T cells served as a negative control due to lack of MHCII expression in mouse T cells (Schooten et al., 2005; Figure 4b, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Schooten et al., 2005 and experimental data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "213bab27-c604-465d-8a99-62023439ed24",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C30",
+      "claim": "WT DCs, but not MHCII KO DCs, harbored FlAsH signal after adoptive transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis of the draining lymph node demonstrated that WT DCs, but not MHCII KO DCs, harbored FlAsH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by flow cytometry data from adoptive transfer experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "7fc18c2e-0373-43a6-bef8-7f1a6ff01f10",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C31",
+      "claim": "Two-photon microscopy of the lymph node confirmed that FlAsH robustly marks OVACACA-MHCII complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Two-photon microscopy of the lymph node further confirmed these findings, indicating that FlAsH robustly marks OVACACA-MHCII complexes (Figure 4e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by two-photon microscopy data shown in Figure 4e-h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "73006135-787f-494b-9b4b-b02923e00b8d",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C32",
+      "claim": "OTII and E\u03b1-specific T cells both acquired PKH-26 from double-pulsed DCs, indicating that they captured DC cell membrane from synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry analysis showed that OTII and E\u03b1-specific T cells both acquired PKH-26 from double-pulsed DCs, indicating that they captured DC cell membrane from synapse (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 5b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "c3c9802a-bd82-4e05-a518-9b3086345719",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C33",
+      "claim": "TCR-mediated trogocytosis has previously been described as a feature of the DC-T cell synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is termed as TCR-mediated trogocytosis and has previously been described as a feature of the DC-T cell synapse (Daubeuf et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Daubeuf et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "c664af9e-faa0-4f56-a08d-c0a6659b65a8",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C34",
+      "claim": "FlAsH signal was picked up only by OTII T cells despite both T cell types trogocytosing double-pulsed DC cell membrane, suggesting that FlAsH tracks pMHCII mobility with a high precision.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both T cell types trogocytosed double-pulsed DC cell membrane, FlAsH signal was picked up only by OTII T cells, suggesting that FlAsH tracks pMHCII mobility with a high precision (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "0c101222-f454-4de5-8328-e10ac5cafaa7",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C35",
+      "claim": "OTII and SMARTA T cells had stable contacts with double-pulsed DCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Popliteal lymph node microscopy confirmed that OTII and SMARTA T cells had stable contacts with double-pulsed DCs (Figure 5d, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 5d and Video 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "e0173b8d-cba6-46e7-8f22-42e83ebc15d2",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C36",
+      "claim": "SMARTA T cells failed to pick up FlAsH signal despite showing signs of antigen-specific contact such as increased volume, reduced sphericity, and decreased track speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to E\u03b1-specific T cells, SMARTA also failed to pick up FlAsH signal despite showing signs of antigen-specific contact such as increased volume, reduced sphericity, and decreased track speed (Figure 5e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 5e-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "7021370f-00e1-4785-b339-9d2624562dd5",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C37",
+      "claim": "Mutations at residues 331 and 333 of OVA323-339 were previously reported to abolish the binding of OTII TCR to OVA323-339.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations at 331 and 333, depicted as variants 1 and 2, respectively, were previously reported to abolish the binding of OTII TCR to OVA323-339 (Robertson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Robertson et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "8f174965-6fea-497a-b60c-c8cfd7a8706e",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C38",
+      "claim": "Mutant 335 was shown to elicit the normal proliferative response in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the residue 335 is flanked between the core OTII TCR binding residues 333 and 336, mutant 335 was shown to elicit the normal proliferative response in vitro (Robertson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Robertson et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "8df7b7d0-7dac-4695-a121-2db5658cbd88",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C39",
+      "claim": "Variants 1 and 2 interrupted T cell priming while variant 3 led to a proliferative response similar to native peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with earlier observations, variants 1 and 2 interrupted T cell priming while variant 3 led to a proliferative response similar to native peptide (Figure 6c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6c-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "8b6f0226-6f67-4fed-9182-4d7be7a093c6",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C40",
+      "claim": "TCR-mediated uptake of the FlAsH-labeled pMHCII complexes followed the same pattern as T cell proliferation, with only variant 3 complexes producing a comparable signal to that of OVACACA.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR-mediated uptake of the FlAsH-labeled pMHCII complexes followed the same pattern and only variant 3 complexes produced a comparable signal to that of OVACACA (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "8638f4c3-4450-4488-9129-faad9a33b5d0",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C41",
+      "claim": "AsH-probe labeling can be a sensitive method to track low affinity/nuanced pMHCII complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "These suggest that AsH-probe labeling can be a sensitive method to track low affinity/nuanced pMHCII complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental results with variant peptides",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "bb8bafa6-63fe-4a2e-84d6-18181632a6e3",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C42",
+      "claim": "Tetracysteine tagging has been previously applied in cell biology and virology, mostly limited to cell lines and in vitro studies in immunology-unrelated experimental settings.",
+      "claim_type": "EXPLICIT",
+      "source": "While tetracysteine tagging has been previously applied in cell biology and virology, these applications have been mostly limited to cell lines and in vitro studies in immunology-unrelated experimental settings (Griffin et al., 1998; Mohl and Roy, 2017; Li et al., 2022; Ng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on tetracysteine tagging",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "c47919a1-91b4-491b-b52d-94442725f69d",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C43",
+      "claim": "The technique labels antigenic peptides and tracks pMHCII complexes in primary APCs during their interactions with T cells both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, our technique labels antigenic peptides and tracks pMHCII complexes in primary APCs during their interactions with T cells both in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the capabilities of the technique developed in this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "83e74f41-8801-4b1a-a81a-adc0eb9a503d",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C44",
+      "claim": "The approach is superior to other strategies for monitoring T cell-DC interactions in the way it robustly targets specific pMHCII complexes in real-time in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is superior as compared to other strategies for monitoring T cell-DC interactions, in the way it robustly targets specific pMHCII complexes in real-time in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative claim based on the study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "bd2b72d2-873a-4227-a184-9e7381b0d965",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C45",
+      "claim": "There is no need for special organisms or genetic modifications, and the technique can easily be expanded to new antigens and T cell-APC pairs from both mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no need for special organisms or genetic modifications, and the technique can easily be expanded to new antigens and T cell-APC pairs from both mice and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the versatility of the technique",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "26c6341d-be0a-465b-89cd-5dc7cd630eb8",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C46",
+      "claim": "The strategy can be integrated into validation efforts for antigen discovery and utilized in the investigation of the synapses of newly deorphanized human T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy can, for instance, be integrated into validation efforts for antigen discovery and utilized in the investigation of the synapses of newly deorphanized human T cells, a largely unexplored area where tools are scarce (Dobson et al., 2022; Wang et al., 2022; Lewis and Peters, 2023; Pogorelyy et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes potential applications with citations to relevant work",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "769f729d-024f-47c1-8052-9fd49f27a852",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C47",
+      "claim": "The two-part system (tag and FlAsH) carries the added capability of being inducible at different time points to allow for increased flexibility in interrogating pMHCII-TCR interactions over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that is a two-part system (tag and FlAsH), it also carries the added capability of being inducible at different time points to allow for increased flexibility in interrogating pMHCII-TCR interactions over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a feature of the technique",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "d5716626-4e21-4190-ba25-11c84b6f7e31",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C48",
+      "claim": "The two-part system introduces a high background due to the non-specific binding of FlAsH to endogenous cysteines.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, this introduces a high background due to the non-specific binding of FlAsH to endogenous cysteines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes a limitation of the technique",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "95cd77ca-47bd-4414-97c0-a8e4b1032586",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C49",
+      "claim": "ReAsH pretreatment strategy successfully improved the signal-to-noise profile for FlAsH.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we implemented a ReAsH pretreatment strategy, successfully improving the signal-to-noise profile for FlAsH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental optimization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "874feb33-13cc-4def-a358-b3e5978c8a69",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C50",
+      "claim": "Tetracysteine-tagged peptides can be transferred from DCs to T cells via synaptic processes, such as antigen-specific pMHCII trogocytosis/transendocytosis, marking acceptor T cells for several days.",
+      "claim_type": "EXPLICIT",
+      "source": "Most important of all, our experiments demonstrate that tetracysteine-tagged peptides can be transferred from DCs to T cells via synaptic processes, such as antigen-specific pMHCII trogocytosis/transendocytosis, marking acceptor T cells for several days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes key experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "242953e4-9670-4f43-b918-de55bceadb60",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C51",
+      "claim": "Visualization of tetracysteine-tagged pMHCII can complement tetramers in detecting antigen-specific T cells in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the turnover of pMHCII in acceptor T cells and its temporal relationship to the TCR downstream events require further elucidation, our visualization of tetracysteine-tagged pMHCII can complement tetramers in detecting antigen-specific T cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes potential application of the technique",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "762fe80e-e10d-412d-8cbf-b1ba09697bb3",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C52",
+      "claim": "Tetracysteine tagging of pMHCII does not broadly alter or disturb T cell-DC synapse by functional read-outs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we show that tetracysteine tagging of pMHCII does not broadly alter or disturb T cell-DC synapse by functional read-outs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes experimental findings on the impact of the tag",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "3f4d6dc7-0bb3-4ae1-82bb-1962b2e9d462",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C53",
+      "claim": "The approach offers an advantage over tetramers in that it is suitable for real-time monitoring of the immune synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the ratio of peptide-FlAsH conjugates to free peptide in DCs would be needed to support this claim, our approach offers an advantage over tetramers in that it is suitable for real-time monitoring of the immune synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparative claim based on the properties of the technique",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "e73a328b-ee16-42e8-807c-54e8da0a6edf",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C54",
+      "claim": "Tetracysteine tags can be visualized as electron-dense particles by Transmission Electron Microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is worth noting that tetracysteine tags can be visualized as electron-dense particles by Transmission Electron Microscopy (Ellisman et al., 2012; Cortese et al., 2009), providing potential for the detailed investigation of T-DC synapse and subcellular localization of pMHCII complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on TEM visualization of tetracysteine tags",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "ab972965-7dba-4f79-aa4b-dc234ee8eed8",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C55",
+      "claim": "The tetracysteine labeling approach provides a powerful and unique tool to advance our understanding of T cell-APC interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the tetracysteine labeling approach described here provides a powerful and unique tool to advance our understanding of T cell-APC interactions, offering new opportunities to investigate the immune response and develop improved immunotherapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement about the significance of the work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "d745efab-c6f6-4cfa-865b-4a90529790f4",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C56",
+      "claim": "Streptavidin detection of biotinylated peptide is a viable option for quantifying peptide loading on cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth mentioning that streptavidin detection of biotinylated peptide is a viable option for quantifying peptide loading on cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes an alternative method",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "f3921af6-2840-4104-a34a-380c4f4e295e",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "claim_id": "C57",
+      "claim": "Size and membrane impermeable nature of streptavidin makes it unsuitable for assays that include live monitoring of the T-DC interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, size and membrane impermeable nature of streptavidin makes it unsuitable for assays that include live monitoring of the T-DC interaction (Dundas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dundas et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c79536ee-ceb8-45ee-9ed2-72d13e30b8e5",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Existing methods for monitoring antigen-specific T cell interactions have significant limitations. Tetramers and TCRL antibodies disrupt the immune synapse, while conventional tags (fluorescent proteins, fluorophores, biotin-streptavidin) have size constraints, membrane impermeability, and photostability issues that restrict their use in dynamic monitoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the limitations of existing approaches through citations to prior work. These claims provide appropriate context for the need for a new labeling strategy and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "81f007e8-9b7e-45d3-a032-94fb193fa679",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a tetracysteine-tagged peptide labeling strategy using a CCPGCC tag placed at the termini of OVA(323-339) peptide, with the CACA-variant showing optimal fluorescence when combined with FlAsH probe. Signal optimization was achieved through TCEP pre-treatment and ReAsH pre-incubation to reduce background, while longer tags provided no additional benefit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C10-C13 describe the development and optimization of the labeling strategy with supporting flow cytometry data (Figures 1b-e). The experimental design is logical, placing the tag away from TCR/MHC binding sites, and the optimization steps are well-documented with quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "4d88d8db-577e-4a7e-839b-413efa8b5ba6",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The tetracysteine tag does not alter T cell priming or dynamics in vitro. OTII T cells showed normal proliferation, activation (CD44 expression), and motility when cultured with OVACACA-pulsed DCs compared to native peptide. Live microscopy revealed normal T cell-DC contact formation and T cell blasting at 24 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 and C52 demonstrate that the tag preserves normal T cell function through multiple functional readouts (proliferation, activation markers, morphology, motility) shown in Figure 2a-g. The data provide converging evidence that the modification does not disrupt the immune synapse, though the authors acknowledge that the ratio of peptide-FlAsH conjugates to free peptide is unknown (C53).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "3db93724-efcb-4c0c-8014-990ec5085c30",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FlAsH labeling specifically marks MHCII-bound peptide complexes. Both streptavidin and FlAsH signals correlated significantly with MHCII expression across different cell types, with the strongest signal in DCs. Only WT DCs, not MHCII KO DCs, harbored FlAsH signal after adoptive transfer, confirming MHCII-dependent labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C28-C31 demonstrate MHCII-dependent labeling through correlation analysis (Figure 4b) and genetic knockout experiments (Figure 4e-h). The use of MHCII KO and MHCI/II double KO controls provides strong evidence for specificity. The correlation data and knockout experiments converge to support MHCII-dependent labeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "1c50b7f2-df41-472d-a85a-8f8f523557fc",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Tetracysteine-tagged peptides are specifically transferred from DCs to cognate T cells in vivo. FlAsH signal remained stable on adoptively transferred DCs for 18-48 hours and was exclusively picked up by OTII T cells (not polyclonal controls) as early as 18 hours post-transfer, confirmed by both FlAsH and OVA-Biotin staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C18-C21, and C27 describe antigen-specific peptide transfer in vivo with supporting flow cytometry (Figure 3b-d) and two-photon microscopy data (Figure 3i, Video 1). The use of polyclonal T cells as negative controls and dual confirmation with OVA-Biotin strengthens the specificity claim. The temporal stability data is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "a80ac7d5-df50-407f-9f84-2d3e95db15fd",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "OTII iTreg cells acquire OVACACA and OVA-Biotin with distinct peptide-specific signal and proliferative response by day 2 post-adoptive transfer, though peptide-specific trogocytosis was not detectable at 18 hours in vitro despite greater MHCII trogocytosis compared to na\u00efve T cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 describe iTreg cell behavior with supporting data from Figure 2\u2014figure supplement 1. The temporal difference between MHCII and peptide-specific trogocytosis is clearly documented, though the mechanism for this difference is not explored. The data are consistent with prior work (C22, Akkaya et al., 2019).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "8453f3f4-5561-45f7-8916-54cc276be62e",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Two-photon microscopy revealed that OTII T cells undergo morphological changes consistent with priming (increased volume, decreased sphericity) and form synapses with DCs that have greater 3D volume and duration and harbor more FlAsH than surrounding regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 describe in vivo imaging results with supporting data from Figure 3e and 3g-h. The morphological parameters and synapse characteristics are quantified, providing strong evidence for antigen-specific interactions. The data complement the flow cytometry results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "f1330049-6fb2-4725-bb42-e0177c6a91fa",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FlAsH labeling tracks pMHCII mobility with high precision and specificity. While both OTII and E\u03b1-specific (or SMARTA) T cells trogocytosed DC membrane (PKH-26), only OTII T cells acquired FlAsH signal from DCs pulsed with OVACACA, despite both T cell types showing signs of antigen-specific contact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 demonstrate antigen-specificity through elegant double-pulsing experiments (Figure 5). The separation of membrane trogocytosis (PKH-26, non-specific) from peptide-specific transfer (FlAsH) provides strong evidence for precision. The use of two different non-cognate T cell types (E\u03b1-specific and SMARTA) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "3bc1c804-a0c8-42cb-8041-17c08fd86eab",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AsH-probe labeling can sensitively track TCR-mediated uptake of pMHCII complexes with altered affinity. Alanine mutations at TCR binding residues 331 and 333 abolished T cell priming and FlAsH uptake, while mutation at residue 335 preserved both, matching patterns from prior work and suggesting the method can track low affinity/nuanced pMHCII complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 demonstrate sensitivity to TCR affinity through mutagenesis experiments (Figure 6). The results match prior characterization of these variants (Robertson et al., 2000), validating the approach. The parallel between proliferation and FlAsH uptake patterns supports the claim that the method tracks TCR-mediated interactions, though the inference about low-affinity complexes (C41) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "f978bdb0-c620-484e-8972-7b08b2223edd",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The tetracysteine labeling approach represents a superior and versatile tool for monitoring T cell-APC interactions compared to existing methods. It requires no genetic modifications, can be applied to primary cells in vitro and in vivo, is suitable for real-time monitoring, and can potentially be expanded to new antigens and species, with future applications in antigen discovery and TEM visualization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C47 and C53-C55 make broad comparative and prospective statements. While the technical advantages are demonstrated (C43), the superiority claim (C44) lacks direct head-to-head comparisons with other methods. The versatility claims (C45-C46) are largely speculative, and the TEM application (C54) is acknowledged as out of scope. These represent potential rather than demonstrated capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "04fc8529-a129-4dba-92ef-8020e106a2fc",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The two-part labeling system introduces high background due to non-specific FlAsH binding to endogenous cysteines, but this was successfully mitigated through ReAsH pretreatment strategy to improve signal-to-noise ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 acknowledge a limitation and describe the solution with supporting data (Figure 1d). The authors transparently discuss the background issue and provide quantitative evidence for the improvement achieved through ReAsH pretreatment. This represents good scientific practice in acknowledging and addressing technical limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "5d0e7031-a63a-4ebb-b9d9-bfd0d74df8fb",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Tetracysteine-tagged peptides can be transferred from DCs to T cells via antigen-specific pMHCII trogocytosis/transendocytosis, marking acceptor T cells for several days, potentially complementing tetramers for detecting antigen-specific T cells in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 describe a key finding about peptide transfer with supporting data throughout the manuscript (Figures 3, 5). The temporal persistence is documented, though the authors acknowledge that the turnover kinetics and relationship to TCR signaling require further study. The potential to complement tetramers (C51) is reasonable but not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "544050a2-a997-4797-a9b0-ee18ac93b3bb",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "While streptavidin detection of biotinylated peptide is viable for quantifying peptide loading, its size and membrane impermeability make it unsuitable for live monitoring of T-DC interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 provide context for why the authors' approach is needed, with C57 supported by citation to Dundas et al., 2013. This comparison helps justify the development of the new method, though it represents background knowledge rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "32c710e2-7f5d-4d45-b4c0-612be85cbb45",
+      "content_id": "fa497e7c-f186-4e37-9e04-886d9f3c528d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "pMHC complexes are taken up from the immune synapse via trogocytosis and transendocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C9 represents established knowledge supported by multiple citations to prior work. This provides important context for interpreting the peptide transfer results but is not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "a85d07c5-5adc-4b35-88c7-2990f46f3653",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed a tetracysteine-tagged peptide labeling strategy using FlAsH probes, optimizing tag placement and signal quality through TCEP pretreatment and ReAsH blocking. The CACA-variant peptide combination produced the best fluorescent signal, and the labeling strategy preserves T cell priming ability while allowing MHCII-dependent detection on APCs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers acknowledge the method development as convincing. Reviewer 1 states 'The results are convincing in demonstrating in vitro and in vivo T cell activation' and Reviewer 2 notes 'solid evidence that peptides are functional, capable of activating OTII T cells.' The editor confirms 'Solid evidence that this can be used to effectively identify antigen specific T cells in vitro and in vivo is provided.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "4da2414f-8340-4272-bfaa-f77a4ac15f4c",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The tetracysteine tag does not alter T cell function or dynamics, as demonstrated by preserved proliferation, activation status, and motility of OTII T cells. Live microscopy showed FlAsH-labeled peptide concentrated at the T cell-DC contact site, with T cells exhibiting normal blasting morphology and comparable motility to native peptide controls.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these functional validation results without critique. Reviewer 2 specifically notes 'An extensive array of in vitro and in vivo studies are used to assess peptide functionality' and Reviewer 1 states the results are 'convincing.' The preservation of T cell function is treated as established by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "280a45af-e334-4525-b90d-d7b1f25d94c2",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "In vivo experiments demonstrated that FlAsH-labeled peptide remains stable on DCs in lymph nodes and is specifically transferred to cognate OTII T cells via antigen-specific trogocytosis. Two-photon microscopy confirmed T cell priming morphology and showed FlAsH signal was exclusively picked up by OTII T cells as early as 18 hours, with OTII-DC synapses harboring more FlAsH than surrounding regions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly support these in vivo findings. Reviewer 1 notes 'efficient label transfer to specific T cells in vivo' and states 'the level of T cell labelling with the fluorescent pMHC is surprisingly robust and suggests that the approach is potentially revealing something about fundamental mechanisms beyond the state of the art.' Reviewer 2 confirms 'solid evidence' for trogocytosis by cognate T cells only.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "de6ba9c4-9847-4327-8bf6-689b3e199b31",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "FlAsH and streptavidin signals correlated significantly with MHCII expression, with the strongest signal in DCs. Wild-type DCs but not MHCII KO DCs harbored FlAsH signal after adoptive transfer, confirming that FlAsH robustly marks OVACACA-MHCII complexes in an MHCII-dependent manner.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the MHCII-dependence data without objection. The use of MHCII KO controls is consistent with rigorous experimental design that reviewers praised. Reviewer 2 notes 'internal controls such as multiple non-cognate T cells were used to improve robustness of the results,' indicating acceptance of the control strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "6c53b1e1-c46e-4d0e-bca0-56a8c54c1814",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Specificity experiments using double-pulsed DCs showed that while both OTII and non-cognate T cells (E\u03b1-specific, SMARTA) trogocytosed DC membrane (PKH-26), only OTII T cells picked up FlAsH signal. This demonstrates that FlAsH tracks pMHCII mobility with high precision despite general membrane trogocytosis occurring.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the specificity controls. Reviewer 2 states 'internal controls such as multiple non-cognate T cells were used to improve robustness of the results' as a strength. The demonstration of antigen-specific labeling despite non-specific membrane transfer is accepted as convincing evidence for the method's precision.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "da620ff9-5483-4685-832c-6b8a68bf36f3",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Testing peptide variants with mutations at TCR binding residues showed that variants 1 and 2 (mutations at positions 331 and 333) interrupted T cell priming and FlAsH uptake, while variant 3 (mutation at position 335) produced responses similar to native peptide. This pattern suggests AsH-probe labeling can sensitively track low affinity/nuanced pMHCII complexes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these variant experiments. The use of well-characterized OVA variants with known TCR binding properties (cited to Robertson et al., 2000) provides a solid foundation. The parallel between proliferation and FlAsH uptake patterns strengthens the claim that the method tracks functional pMHCII complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "eecb37c4-f47c-49c1-803f-88331cf8b1e9",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "OTII iTreg cells acquired OVACACA and OVA-Biotin with distinct peptide-specific signal and proliferative response on day 2 post-adoptive transfer, though peptide-specific trogocytosis was indiscernible at 18 hours in vitro despite iTreg cells performing greater MHCII trogocytosis than na\u00efve T cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These Treg experiments are presented as supplementary data and are not specifically discussed by reviewers, but they are consistent with the authors' prior work (Akkaya et al., 2019) and follow the same experimental logic as the main na\u00efve T cell experiments that reviewers found convincing.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors claim their technique is superior to other strategies for monitoring T cell-DC interactions because it robustly targets specific pMHCII complexes in real-time in vivo without requiring genetic modifications, can be expanded to new antigens and species, and can complement tetramers in detecting antigen-specific T cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the method's potential but express reservations about its ultimate utility. The editor states 'this approach potentially moves the state of the art forward, but further work is needed to realise and determine the limits and ultimate utility of the approach.' Reviewer 1 notes it was 'demonstrated only at high pMHC density and it would need to be re-optimised to determine if it can be used at lower densities.' Reviewer 2 states 'Limited novel biological findings. This study mostly describes a new tool that may have exciting potential.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "7a5da017-fdce-4f87-a79a-f466c7ec7efa",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The two-part system introduces high background due to non-specific FlAsH binding to endogenous cysteines, but ReAsH pretreatment successfully improved the signal-to-noise profile.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 explicitly identifies this as a weakness: 'Peptide labeling specificity and efficiency is not clear. High levels of background labeling. While it was sufficient for demonstrating the system works, it may pose problems depending on the peptide sequence, and/or use at lower dose.' The authors acknowledge and address the issue, but reviewers remain concerned about its impact on broader applications.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "9481898d-63af-4735-b072-a599939c803a",
+      "content_id": "74a520d4-9a11-49f4-aa32-6a64a09f36a0",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors provide background context that existing methods (tetramers, TCRL antibodies, conventional tags) have limitations for real-time monitoring of antigen-specific T cell interactions due to immune synapse disruption, size constraints, or photophysical instability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this background framing without challenge. The editor acknowledges 'prior single step methods with directly conjugated single peptides have generally failed due to high background,' supporting the authors' rationale for developing an alternative approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6112bf14-fafb-4705-9072-d8b07b7b2429",
+      "result_id": "c79536ee-ceb8-45ee-9ed2-72d13e30b8e5"
+    },
+    {
+      "claim_id": "7632c327-9f2f-4b16-afa7-dd053f16eb89",
+      "result_id": "c79536ee-ceb8-45ee-9ed2-72d13e30b8e5"
+    },
+    {
+      "claim_id": "137d54b0-cfd2-4778-a4a5-20400fb960ef",
+      "result_id": "c79536ee-ceb8-45ee-9ed2-72d13e30b8e5"
+    },
+    {
+      "claim_id": "626ee2fd-40da-4530-92a1-8b929592988f",
+      "result_id": "c79536ee-ceb8-45ee-9ed2-72d13e30b8e5"
+    },
+    {
+      "claim_id": "c7e327e9-259f-485e-91ac-50fe84f42d9c",
+      "result_id": "81f007e8-9b7e-45d3-a032-94fb193fa679"
+    },
+    {
+      "claim_id": "f9129bc1-f7dc-42d5-bad0-26a9faaaaf63",
+      "result_id": "81f007e8-9b7e-45d3-a032-94fb193fa679"
+    },
+    {
+      "claim_id": "13f63097-4b90-4393-b4f6-fd8347613c9b",
+      "result_id": "81f007e8-9b7e-45d3-a032-94fb193fa679"
+    },
+    {
+      "claim_id": "93cfb117-b580-46f5-89eb-13dc0d61ab1e",
+      "result_id": "81f007e8-9b7e-45d3-a032-94fb193fa679"
+    },
+    {
+      "claim_id": "a7b3583c-db36-4cea-bd78-c2716d43ca35",
+      "result_id": "81f007e8-9b7e-45d3-a032-94fb193fa679"
+    },
+    {
+      "claim_id": "4359e00b-4f0a-4219-8980-adc08608403a",
+      "result_id": "81f007e8-9b7e-45d3-a032-94fb193fa679"
+    },
+    {
+      "claim_id": "cea62dbf-829f-4b3f-9a52-22187e7986d4",
+      "result_id": "4d88d8db-577e-4a7e-839b-413efa8b5ba6"
+    },
+    {
+      "claim_id": "42546ce8-c92c-4658-bd96-8e32c9787b62",
+      "result_id": "4d88d8db-577e-4a7e-839b-413efa8b5ba6"
+    },
+    {
+      "claim_id": "a5d6cc60-0521-4982-a93f-905181bdf958",
+      "result_id": "4d88d8db-577e-4a7e-839b-413efa8b5ba6"
+    },
+    {
+      "claim_id": "24dd0b2a-168e-4a76-8b81-49bc8e52e4f0",
+      "result_id": "4d88d8db-577e-4a7e-839b-413efa8b5ba6"
+    },
+    {
+      "claim_id": "762fe80e-e10d-412d-8cbf-b1ba09697bb3",
+      "result_id": "4d88d8db-577e-4a7e-839b-413efa8b5ba6"
+    },
+    {
+      "claim_id": "661c66e4-fd76-485b-9541-fac48867dfb2",
+      "result_id": "3db93724-efcb-4c0c-8014-990ec5085c30"
+    },
+    {
+      "claim_id": "d2e5d8b6-8dfb-46d4-93b9-beb84d57c867",
+      "result_id": "3db93724-efcb-4c0c-8014-990ec5085c30"
+    },
+    {
+      "claim_id": "5442bbad-c9ae-418b-add2-db914f3cc871",
+      "result_id": "3db93724-efcb-4c0c-8014-990ec5085c30"
+    },
+    {
+      "claim_id": "213bab27-c604-465d-8a99-62023439ed24",
+      "result_id": "3db93724-efcb-4c0c-8014-990ec5085c30"
+    },
+    {
+      "claim_id": "7fc18c2e-0373-43a6-bef8-7f1a6ff01f10",
+      "result_id": "3db93724-efcb-4c0c-8014-990ec5085c30"
+    },
+    {
+      "claim_id": "2d8bb4b6-474c-4712-9fc5-f0d40458cf8d",
+      "result_id": "1c50b7f2-df41-472d-a85a-8f8f523557fc"
+    },
+    {
+      "claim_id": "4c80777b-6c8d-4f01-8c0e-b72c58e0033c",
+      "result_id": "1c50b7f2-df41-472d-a85a-8f8f523557fc"
+    },
+    {
+      "claim_id": "821e4295-2079-49ac-b3ff-428885bb8436",
+      "result_id": "1c50b7f2-df41-472d-a85a-8f8f523557fc"
+    },
+    {
+      "claim_id": "62af3707-17dd-4f5f-a92a-2080b87a3650",
+      "result_id": "1c50b7f2-df41-472d-a85a-8f8f523557fc"
+    },
+    {
+      "claim_id": "b7b00e26-09fd-4418-8a6e-bbda8fd731b5",
+      "result_id": "1c50b7f2-df41-472d-a85a-8f8f523557fc"
+    },
+    {
+      "claim_id": "9c2b28e5-7702-4943-8a2a-eeab71f8cbac",
+      "result_id": "1c50b7f2-df41-472d-a85a-8f8f523557fc"
+    },
+    {
+      "claim_id": "933de313-c0df-4d9b-a852-2f668d758d4d",
+      "result_id": "a80ac7d5-df50-407f-9f84-2d3e95db15fd"
+    },
+    {
+      "claim_id": "29991906-52fc-4349-a8fe-408c2b9db2fc",
+      "result_id": "a80ac7d5-df50-407f-9f84-2d3e95db15fd"
+    },
+    {
+      "claim_id": "fbf6d1c8-3d82-4ddc-af5a-a4055948832b",
+      "result_id": "a80ac7d5-df50-407f-9f84-2d3e95db15fd"
+    },
+    {
+      "claim_id": "44ae57cc-45e5-407c-98c3-1952673f5033",
+      "result_id": "8453f3f4-5561-45f7-8916-54cc276be62e"
+    },
+    {
+      "claim_id": "aee9dff7-3165-494a-9b95-1652fb5c9320",
+      "result_id": "8453f3f4-5561-45f7-8916-54cc276be62e"
+    },
+    {
+      "claim_id": "73006135-787f-494b-9b4b-b02923e00b8d",
+      "result_id": "f1330049-6fb2-4725-bb42-e0177c6a91fa"
+    },
+    {
+      "claim_id": "c3c9802a-bd82-4e05-a518-9b3086345719",
+      "result_id": "f1330049-6fb2-4725-bb42-e0177c6a91fa"
+    },
+    {
+      "claim_id": "c664af9e-faa0-4f56-a08d-c0a6659b65a8",
+      "result_id": "f1330049-6fb2-4725-bb42-e0177c6a91fa"
+    },
+    {
+      "claim_id": "0c101222-f454-4de5-8328-e10ac5cafaa7",
+      "result_id": "f1330049-6fb2-4725-bb42-e0177c6a91fa"
+    },
+    {
+      "claim_id": "e0173b8d-cba6-46e7-8f22-42e83ebc15d2",
+      "result_id": "f1330049-6fb2-4725-bb42-e0177c6a91fa"
+    },
+    {
+      "claim_id": "7021370f-00e1-4785-b339-9d2624562dd5",
+      "result_id": "3bc1c804-a0c8-42cb-8041-17c08fd86eab"
+    },
+    {
+      "claim_id": "8f174965-6fea-497a-b60c-c8cfd7a8706e",
+      "result_id": "3bc1c804-a0c8-42cb-8041-17c08fd86eab"
+    },
+    {
+      "claim_id": "8df7b7d0-7dac-4695-a121-2db5658cbd88",
+      "result_id": "3bc1c804-a0c8-42cb-8041-17c08fd86eab"
+    },
+    {
+      "claim_id": "8b6f0226-6f67-4fed-9182-4d7be7a093c6",
+      "result_id": "3bc1c804-a0c8-42cb-8041-17c08fd86eab"
+    },
+    {
+      "claim_id": "8638f4c3-4450-4488-9129-faad9a33b5d0",
+      "result_id": "3bc1c804-a0c8-42cb-8041-17c08fd86eab"
+    },
+    {
+      "claim_id": "bb8bafa6-63fe-4a2e-84d6-18181632a6e3",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "c47919a1-91b4-491b-b52d-94442725f69d",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "83e74f41-8801-4b1a-a81a-adc0eb9a503d",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "bd2b72d2-873a-4227-a184-9e7381b0d965",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "26c6341d-be0a-465b-89cd-5dc7cd630eb8",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "769f729d-024f-47c1-8052-9fd49f27a852",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "3f4d6dc7-0bb3-4ae1-82bb-1962b2e9d462",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "e73a328b-ee16-42e8-807c-54e8da0a6edf",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "ab972965-7dba-4f79-aa4b-dc234ee8eed8",
+      "result_id": "f978bdb0-c620-484e-8972-7b08b2223edd"
+    },
+    {
+      "claim_id": "d5716626-4e21-4190-ba25-11c84b6f7e31",
+      "result_id": "04fc8529-a129-4dba-92ef-8020e106a2fc"
+    },
+    {
+      "claim_id": "95cd77ca-47bd-4414-97c0-a8e4b1032586",
+      "result_id": "04fc8529-a129-4dba-92ef-8020e106a2fc"
+    },
+    {
+      "claim_id": "874feb33-13cc-4def-a358-b3e5978c8a69",
+      "result_id": "5d0e7031-a63a-4ebb-b9d9-bfd0d74df8fb"
+    },
+    {
+      "claim_id": "242953e4-9670-4f43-b918-de55bceadb60",
+      "result_id": "5d0e7031-a63a-4ebb-b9d9-bfd0d74df8fb"
+    },
+    {
+      "claim_id": "d745efab-c6f6-4cfa-865b-4a90529790f4",
+      "result_id": "544050a2-a997-4797-a9b0-ee18ac93b3bb"
+    },
+    {
+      "claim_id": "f3921af6-2840-4104-a34a-380c4f4e295e",
+      "result_id": "544050a2-a997-4797-a9b0-ee18ac93b3bb"
+    },
+    {
+      "claim_id": "68a9adc6-3522-4308-8f5e-d730f974e4da",
+      "result_id": "32c710e2-7f5d-4d45-b4c0-612be85cbb45"
+    },
+    {
+      "claim_id": "c7e327e9-259f-485e-91ac-50fe84f42d9c",
+      "result_id": "a85d07c5-5adc-4b35-88c7-2990f46f3653"
+    },
+    {
+      "claim_id": "f9129bc1-f7dc-42d5-bad0-26a9faaaaf63",
+      "result_id": "a85d07c5-5adc-4b35-88c7-2990f46f3653"
+    },
+    {
+      "claim_id": "661c66e4-fd76-485b-9541-fac48867dfb2",
+      "result_id": "a85d07c5-5adc-4b35-88c7-2990f46f3653"
+    },
+    {
+      "claim_id": "13f63097-4b90-4393-b4f6-fd8347613c9b",
+      "result_id": "a85d07c5-5adc-4b35-88c7-2990f46f3653"
+    },
+    {
+      "claim_id": "93cfb117-b580-46f5-89eb-13dc0d61ab1e",
+      "result_id": "a85d07c5-5adc-4b35-88c7-2990f46f3653"
+    },
+    {
+      "claim_id": "a7b3583c-db36-4cea-bd78-c2716d43ca35",
+      "result_id": "a85d07c5-5adc-4b35-88c7-2990f46f3653"
+    },
+    {
+      "claim_id": "4359e00b-4f0a-4219-8980-adc08608403a",
+      "result_id": "a85d07c5-5adc-4b35-88c7-2990f46f3653"
+    },
+    {
+      "claim_id": "cea62dbf-829f-4b3f-9a52-22187e7986d4",
+      "result_id": "4da2414f-8340-4272-bfaa-f77a4ac15f4c"
+    },
+    {
+      "claim_id": "42546ce8-c92c-4658-bd96-8e32c9787b62",
+      "result_id": "4da2414f-8340-4272-bfaa-f77a4ac15f4c"
+    },
+    {
+      "claim_id": "a5d6cc60-0521-4982-a93f-905181bdf958",
+      "result_id": "4da2414f-8340-4272-bfaa-f77a4ac15f4c"
+    },
+    {
+      "claim_id": "24dd0b2a-168e-4a76-8b81-49bc8e52e4f0",
+      "result_id": "4da2414f-8340-4272-bfaa-f77a4ac15f4c"
+    },
+    {
+      "claim_id": "762fe80e-e10d-412d-8cbf-b1ba09697bb3",
+      "result_id": "4da2414f-8340-4272-bfaa-f77a4ac15f4c"
+    },
+    {
+      "claim_id": "821e4295-2079-49ac-b3ff-428885bb8436",
+      "result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2"
+    },
+    {
+      "claim_id": "62af3707-17dd-4f5f-a92a-2080b87a3650",
+      "result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2"
+    },
+    {
+      "claim_id": "b7b00e26-09fd-4418-8a6e-bbda8fd731b5",
+      "result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2"
+    },
+    {
+      "claim_id": "44ae57cc-45e5-407c-98c3-1952673f5033",
+      "result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2"
+    },
+    {
+      "claim_id": "aee9dff7-3165-494a-9b95-1652fb5c9320",
+      "result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2"
+    },
+    {
+      "claim_id": "9c2b28e5-7702-4943-8a2a-eeab71f8cbac",
+      "result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2"
+    },
+    {
+      "claim_id": "874feb33-13cc-4def-a358-b3e5978c8a69",
+      "result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2"
+    },
+    {
+      "claim_id": "d2e5d8b6-8dfb-46d4-93b9-beb84d57c867",
+      "result_id": "de6ba9c4-9847-4327-8bf6-689b3e199b31"
+    },
+    {
+      "claim_id": "5442bbad-c9ae-418b-add2-db914f3cc871",
+      "result_id": "de6ba9c4-9847-4327-8bf6-689b3e199b31"
+    },
+    {
+      "claim_id": "213bab27-c604-465d-8a99-62023439ed24",
+      "result_id": "de6ba9c4-9847-4327-8bf6-689b3e199b31"
+    },
+    {
+      "claim_id": "7fc18c2e-0373-43a6-bef8-7f1a6ff01f10",
+      "result_id": "de6ba9c4-9847-4327-8bf6-689b3e199b31"
+    },
+    {
+      "claim_id": "73006135-787f-494b-9b4b-b02923e00b8d",
+      "result_id": "6c53b1e1-c46e-4d0e-bca0-56a8c54c1814"
+    },
+    {
+      "claim_id": "c3c9802a-bd82-4e05-a518-9b3086345719",
+      "result_id": "6c53b1e1-c46e-4d0e-bca0-56a8c54c1814"
+    },
+    {
+      "claim_id": "c664af9e-faa0-4f56-a08d-c0a6659b65a8",
+      "result_id": "6c53b1e1-c46e-4d0e-bca0-56a8c54c1814"
+    },
+    {
+      "claim_id": "0c101222-f454-4de5-8328-e10ac5cafaa7",
+      "result_id": "6c53b1e1-c46e-4d0e-bca0-56a8c54c1814"
+    },
+    {
+      "claim_id": "e0173b8d-cba6-46e7-8f22-42e83ebc15d2",
+      "result_id": "6c53b1e1-c46e-4d0e-bca0-56a8c54c1814"
+    },
+    {
+      "claim_id": "7021370f-00e1-4785-b339-9d2624562dd5",
+      "result_id": "da620ff9-5483-4685-832c-6b8a68bf36f3"
+    },
+    {
+      "claim_id": "8f174965-6fea-497a-b60c-c8cfd7a8706e",
+      "result_id": "da620ff9-5483-4685-832c-6b8a68bf36f3"
+    },
+    {
+      "claim_id": "8df7b7d0-7dac-4695-a121-2db5658cbd88",
+      "result_id": "da620ff9-5483-4685-832c-6b8a68bf36f3"
+    },
+    {
+      "claim_id": "8b6f0226-6f67-4fed-9182-4d7be7a093c6",
+      "result_id": "da620ff9-5483-4685-832c-6b8a68bf36f3"
+    },
+    {
+      "claim_id": "8638f4c3-4450-4488-9129-faad9a33b5d0",
+      "result_id": "da620ff9-5483-4685-832c-6b8a68bf36f3"
+    },
+    {
+      "claim_id": "29991906-52fc-4349-a8fe-408c2b9db2fc",
+      "result_id": "eecb37c4-f47c-49c1-803f-88331cf8b1e9"
+    },
+    {
+      "claim_id": "fbf6d1c8-3d82-4ddc-af5a-a4055948832b",
+      "result_id": "eecb37c4-f47c-49c1-803f-88331cf8b1e9"
+    },
+    {
+      "claim_id": "c47919a1-91b4-491b-b52d-94442725f69d",
+      "result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f"
+    },
+    {
+      "claim_id": "83e74f41-8801-4b1a-a81a-adc0eb9a503d",
+      "result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f"
+    },
+    {
+      "claim_id": "bd2b72d2-873a-4227-a184-9e7381b0d965",
+      "result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f"
+    },
+    {
+      "claim_id": "26c6341d-be0a-465b-89cd-5dc7cd630eb8",
+      "result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f"
+    },
+    {
+      "claim_id": "769f729d-024f-47c1-8052-9fd49f27a852",
+      "result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f"
+    },
+    {
+      "claim_id": "242953e4-9670-4f43-b918-de55bceadb60",
+      "result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f"
+    },
+    {
+      "claim_id": "3f4d6dc7-0bb3-4ae1-82bb-1962b2e9d462",
+      "result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f"
+    },
+    {
+      "claim_id": "ab972965-7dba-4f79-aa4b-dc234ee8eed8",
+      "result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f"
+    },
+    {
+      "claim_id": "d5716626-4e21-4190-ba25-11c84b6f7e31",
+      "result_id": "7a5da017-fdce-4f87-a79a-f466c7ec7efa"
+    },
+    {
+      "claim_id": "95cd77ca-47bd-4414-97c0-a8e4b1032586",
+      "result_id": "7a5da017-fdce-4f87-a79a-f466c7ec7efa"
+    },
+    {
+      "claim_id": "6112bf14-fafb-4705-9072-d8b07b7b2429",
+      "result_id": "9481898d-63af-4735-b072-a599939c803a"
+    },
+    {
+      "claim_id": "7632c327-9f2f-4b16-afa7-dd053f16eb89",
+      "result_id": "9481898d-63af-4735-b072-a599939c803a"
+    },
+    {
+      "claim_id": "137d54b0-cfd2-4778-a4a5-20400fb960ef",
+      "result_id": "9481898d-63af-4735-b072-a599939c803a"
+    },
+    {
+      "claim_id": "626ee2fd-40da-4530-92a1-8b929592988f",
+      "result_id": "9481898d-63af-4735-b072-a599939c803a"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "ab2e0059-d2bf-4fe4-b181-f7db2c2aaaa9",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "c79536ee-ceb8-45ee-9ed2-72d13e30b8e5",
+      "peer_result_id": "9481898d-63af-4735-b072-a599939c803a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C1-C4 regarding limitations of existing approaches. Both evaluations find these background claims SUPPORTED. OpenEval notes they provide appropriate context through citations, while peer reviewers accept this framing without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "66d18474-bdb6-4e8d-9d12-e0168adb35e7",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "81f007e8-9b7e-45d3-a032-94fb193fa679",
+      "peer_result_id": "a85d07c5-5adc-4b35-88c7-2990f46f3653",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on method development claims C5-C6, C10-C13. Both find the labeling strategy development SUPPORTED. OpenEval emphasizes flow cytometry data and optimization steps, while peer reviewers describe results as 'convincing' and provide 'solid evidence.' Peer result also includes C7 (MHCII-dependence) not in OpenEval R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "7462a3c9-2932-4de2-a3e7-164a6be6602a",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "4d88d8db-577e-4a7e-839b-413efa8b5ba6",
+      "peer_result_id": "4da2414f-8340-4272-bfaa-f77a4ac15f4c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on functional validation claims C14-C17, C52. Both evaluations find these SUPPORTED. OpenEval highlights multiple functional readouts demonstrating preserved T cell function, while peer reviewers note 'extensive array' of studies and find results 'convincing.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "6e317abb-f8ad-41ec-9d04-eb7ead849639",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "3db93724-efcb-4c0c-8014-990ec5085c30",
+      "peer_result_id": "de6ba9c4-9847-4327-8bf6-689b3e199b31",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on MHCII-dependence claims C28-C31. Both find these SUPPORTED. OpenEval emphasizes correlation analysis and knockout experiments as strong evidence, while peer reviewers accept the control strategy without objection. OpenEval R4 also includes C7 not in peer R4.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "d14c619c-92e2-4db8-a0e6-7762517ee2b8",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "1c50b7f2-df41-472d-a85a-8f8f523557fc",
+      "peer_result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on in vivo peptide transfer claims C18-C21, C27, though peer result groups these with additional claims C25-C26, C50. Both find evidence SUPPORTED. OpenEval highlights flow cytometry and two-photon microscopy data, while peer reviewers note 'surprisingly robust' labeling and 'solid evidence' for cognate-only trogocytosis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "bc932b9e-b1ff-406b-8ea8-f5b323de690e",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a80ac7d5-df50-407f-9f84-2d3e95db15fd",
+      "peer_result_id": "eecb37c4-f47c-49c1-803f-88331cf8b1e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on iTreg claims C22-C24. Both find these SUPPORTED. OpenEval notes temporal differences are documented though mechanism unexplored, while peer reviewers accept these supplementary data as consistent with main experiments. Peer result only addresses C23-C24 explicitly.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "a5d8dd2c-5dd8-4160-8470-4b51508cef80",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "8453f3f4-5561-45f7-8916-54cc276be62e",
+      "peer_result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on in vivo imaging claims C25-C26. Both find these SUPPORTED. OpenEval emphasizes quantified morphological parameters and synapse characteristics, while peer reviewers group these with broader in vivo findings (C19-C21, C27, C50) and praise the robustness of labeling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "c09a2d74-a898-4d9b-93c2-aa2cc8f20761",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f1330049-6fb2-4725-bb42-e0177c6a91fa",
+      "peer_result_id": "6c53b1e1-c46e-4d0e-bca0-56a8c54c1814",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on antigen-specificity claims C32-C36. Both find these SUPPORTED. OpenEval describes double-pulsing experiments as 'elegant' evidence for precision, while peer reviewers explicitly praise the use of 'multiple non-cognate T cells' as a strength improving robustness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "bbc86b76-a81b-4e0b-9797-e1a51ad6b992",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "3bc1c804-a0c8-42cb-8041-17c08fd86eab",
+      "peer_result_id": "da620ff9-5483-4685-832c-6b8a68bf36f3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on TCR affinity sensitivity claims C37-C41. Both find these SUPPORTED. OpenEval notes results match prior characterization but finds C41 somewhat speculative, while peer reviewers accept the variant experiments without challenge, treating the well-characterized variants as solid foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "838fa79f-6c9b-4bf9-b05e-59f97465351c",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "f978bdb0-c620-484e-8972-7b08b2223edd",
+      "peer_result_id": "07bb85ca-0e1c-4b3a-bace-4b1e5af1d65f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on uncertainty regarding broad comparative and prospective claims C42-C47, C53-C55. Both evaluate as UNCERTAIN. OpenEval notes lack of head-to-head comparisons and speculative nature of versatility claims, while peer reviewers express reservations about 'ultimate utility' and note 'limited novel biological findings,' emphasizing need for further work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "6eff74d5-26b6-4c0d-9043-b63267b7e925",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "04fc8529-a129-4dba-92ef-8020e106a2fc",
+      "peer_result_id": "7a5da017-fdce-4f87-a79a-f466c7ec7efa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on background labeling limitation claims C48-C49. OpenEval finds these SUPPORTED, praising transparent acknowledgment and quantitative improvement data. Peer reviewers evaluate as UNCERTAIN, explicitly identifying this as a weakness that 'may pose problems' for broader applications despite authors' mitigation efforts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "0fabba94-2374-4c96-b47b-d6aeec2d3d33",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "5d0e7031-a63a-4ebb-b9d9-bfd0d74df8fb",
+      "peer_result_id": "280a45af-e334-4525-b90d-d7b1f25d94c2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on peptide transfer findings C50-C51. OpenEval finds C50-C51 SUPPORTED with documented temporal persistence. Peer result addresses C50 within broader in vivo findings (C19-C21, C25-C27) and finds it SUPPORTED, praising robustness and potential to reveal fundamental mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "bdb53933-446c-4821-8a75-14f18cc57b40",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "544050a2-a997-4797-a9b0-ee18ac93b3bb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background context claims C56-C57 as SUPPORTED, noting they justify the new method through comparison to prior work. No corresponding peer review evaluation found for these specific background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    },
+    {
+      "id": "8a6c0383-f9a8-4a4a-b40f-c025950c5bc8",
+      "submission_id": "d97785d7-bb73-4a24-9936-869214c704c6",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "32c710e2-7f5d-4d45-b4c0-612be85cbb45",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates established knowledge claim C9 as SUPPORTED, noting it provides important context from prior work. No corresponding peer review evaluation found for this specific background claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:10:11.955062Z"
+    }
+  ]
+}

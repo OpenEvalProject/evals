@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Existing methods for monitoring antigen-specific T cell interactions have significant limitations. Tetramers and TCRL antibodies disrupt the immune synapse, while conventional tags (fluorescent proteins, fluorophores, biotin-streptavidin) have size constraints, membrane impermeability, and photostability issues that restrict their use in dynamic monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the limitations of existing approaches through citations to prior work. These claims provide appropriate context for the need for a new labeling strategy and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors developed a tetracysteine-tagged peptide labeling strategy using a CCPGCC tag placed at the termini of OVA(323-339) peptide, with the CACA-variant showing optimal fluorescence when combined with FlAsH probe. Signal optimization was achieved through TCEP pre-treatment and ReAsH pre-incubation to reduce background, while longer tags provided no additional benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C10-C13 describe the development and optimization of the labeling strategy with supporting flow cytometry data (Figures 1b-e). The experimental design is logical, placing the tag away from TCR/MHC binding sites, and the optimization steps are well-documented with quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C52"
+    ],
+    "result": "The tetracysteine tag does not alter T cell priming or dynamics in vitro. OTII T cells showed normal proliferation, activation (CD44 expression), and motility when cultured with OVACACA-pulsed DCs compared to native peptide. Live microscopy revealed normal T cell-DC contact formation and T cell blasting at 24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C52 demonstrate that the tag preserves normal T cell function through multiple functional readouts (proliferation, activation markers, morphology, motility) shown in Figure 2a-g. The data provide converging evidence that the modification does not disrupt the immune synapse, though the authors acknowledge that the ratio of peptide-FlAsH conjugates to free peptide is unknown (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "FlAsH labeling specifically marks MHCII-bound peptide complexes. Both streptavidin and FlAsH signals correlated significantly with MHCII expression across different cell types, with the strongest signal in DCs. Only WT DCs, not MHCII KO DCs, harbored FlAsH signal after adoptive transfer, confirming MHCII-dependent labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C28-C31 demonstrate MHCII-dependent labeling through correlation analysis (Figure 4b) and genetic knockout experiments (Figure 4e-h). The use of MHCII KO and MHCI/II double KO controls provides strong evidence for specificity. The correlation data and knockout experiments converge to support MHCII-dependent labeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C27"
+    ],
+    "result": "Tetracysteine-tagged peptides are specifically transferred from DCs to cognate T cells in vivo. FlAsH signal remained stable on adoptively transferred DCs for 18-48 hours and was exclusively picked up by OTII T cells (not polyclonal controls) as early as 18 hours post-transfer, confirmed by both FlAsH and OVA-Biotin staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C18-C21, and C27 describe antigen-specific peptide transfer in vivo with supporting flow cytometry (Figure 3b-d) and two-photon microscopy data (Figure 3i, Video 1). The use of polyclonal T cells as negative controls and dual confirmation with OVA-Biotin strengthens the specificity claim. The temporal stability data is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "OTII iTreg cells acquire OVACACA and OVA-Biotin with distinct peptide-specific signal and proliferative response by day 2 post-adoptive transfer, though peptide-specific trogocytosis was not detectable at 18 hours in vitro despite greater MHCII trogocytosis compared to na\u00efve T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe iTreg cell behavior with supporting data from Figure 2\u2014figure supplement 1. The temporal difference between MHCII and peptide-specific trogocytosis is clearly documented, though the mechanism for this difference is not explored. The data are consistent with prior work (C22, Akkaya et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Two-photon microscopy revealed that OTII T cells undergo morphological changes consistent with priming (increased volume, decreased sphericity) and form synapses with DCs that have greater 3D volume and duration and harbor more FlAsH than surrounding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe in vivo imaging results with supporting data from Figure 3e and 3g-h. The morphological parameters and synapse characteristics are quantified, providing strong evidence for antigen-specific interactions. The data complement the flow cytometry results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "FlAsH labeling tracks pMHCII mobility with high precision and specificity. While both OTII and E\u03b1-specific (or SMARTA) T cells trogocytosed DC membrane (PKH-26), only OTII T cells acquired FlAsH signal from DCs pulsed with OVACACA, despite both T cell types showing signs of antigen-specific contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 demonstrate antigen-specificity through elegant double-pulsing experiments (Figure 5). The separation of membrane trogocytosis (PKH-26, non-specific) from peptide-specific transfer (FlAsH) provides strong evidence for precision. The use of two different non-cognate T cell types (E\u03b1-specific and SMARTA) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "AsH-probe labeling can sensitively track TCR-mediated uptake of pMHCII complexes with altered affinity. Alanine mutations at TCR binding residues 331 and 333 abolished T cell priming and FlAsH uptake, while mutation at residue 335 preserved both, matching patterns from prior work and suggesting the method can track low affinity/nuanced pMHCII complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 demonstrate sensitivity to TCR affinity through mutagenesis experiments (Figure 6). The results match prior characterization of these variants (Robertson et al., 2000), validating the approach. The parallel between proliferation and FlAsH uptake patterns supports the claim that the method tracks TCR-mediated interactions, though the inference about low-affinity complexes (C41) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The tetracysteine labeling approach represents a superior and versatile tool for monitoring T cell-APC interactions compared to existing methods. It requires no genetic modifications, can be applied to primary cells in vitro and in vivo, is suitable for real-time monitoring, and can potentially be expanded to new antigens and species, with future applications in antigen discovery and TEM visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C47 and C53-C55 make broad comparative and prospective statements. While the technical advantages are demonstrated (C43), the superiority claim (C44) lacks direct head-to-head comparisons with other methods. The versatility claims (C45-C46) are largely speculative, and the TEM application (C54) is acknowledged as out of scope. These represent potential rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The two-part labeling system introduces high background due to non-specific FlAsH binding to endogenous cysteines, but this was successfully mitigated through ReAsH pretreatment strategy to improve signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 acknowledge a limitation and describe the solution with supporting data (Figure 1d). The authors transparently discuss the background issue and provide quantitative evidence for the improvement achieved through ReAsH pretreatment. This represents good scientific practice in acknowledging and addressing technical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Tetracysteine-tagged peptides can be transferred from DCs to T cells via antigen-specific pMHCII trogocytosis/transendocytosis, marking acceptor T cells for several days, potentially complementing tetramers for detecting antigen-specific T cells in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe a key finding about peptide transfer with supporting data throughout the manuscript (Figures 3, 5). The temporal persistence is documented, though the authors acknowledge that the turnover kinetics and relationship to TCR signaling require further study. The potential to complement tetramers (C51) is reasonable but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "While streptavidin detection of biotinylated peptide is viable for quantifying peptide loading, its size and membrane impermeability make it unsuitable for live monitoring of T-DC interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide context for why the authors' approach is needed, with C57 supported by citation to Dundas et al., 2013. This comparison helps justify the development of the new method, though it represents background knowledge rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "pMHC complexes are taken up from the immune synapse via trogocytosis and transendocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 represents established knowledge supported by multiple citations to prior work. This provides important context for interpreting the peptide transfer results but is not a novel finding of this study.",
+    "result_type": "MINOR"
+  }
+]

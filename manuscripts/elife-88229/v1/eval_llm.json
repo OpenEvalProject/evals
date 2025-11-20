@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C116",
+      "C117"
+    ],
+    "result": "The study performed comprehensive colony-based phenotyping of 3509 deletion mutants across 131 diverse conditions, detecting phenotypes in 99.6% of mutants (3492/3506) including all 124 priority unstudied gene mutants, generating 103,520 phenotypes that exceed all phenotypes currently in PomBase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C22, C23, C76-C79 provide consistent, converging evidence for the scope and success of the phenotyping screen. The specific numbers reported (3509 mutants tested, 131 conditions, 99.6% phenotype detection rate, 103,520 phenotypes) are internally consistent across multiple claims. The comparison to PomBase (C79, C117) validates the dataset's significance. The detailed breakdowns by media type (C18-C19, C86-C89) and the identification of pleiotropic genes (C90) add supporting detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Over 900 proteins were newly implicated in oxidative stress response, with 610 genes conferring sensitivity and 365 conferring resistance when deleted, showing dose-specific effects and diverse functional enrichments including metabolic processes, endosomal transport, transcription regulation, and ribosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C40 provide detailed, statistically significant evidence (with p-values) for oxidative stress phenotypes. The dose-specificity (C26-C27) is well-documented, and functional enrichments (C30-C36) are supported by appropriate statistical tests. The comparison with existing PomBase annotations (C37-C39) demonstrates novelty. Claims C91-C92 provide literature support for the biological interpretation. The only speculative element is C93 (specialized ribosomal protein roles), which is appropriately framed as a possibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "K-medoids clustering of phenotype data revealed eight functionally distinct clusters with specific enrichments in GO and KEGG pathway terms, encompassing all priority unstudied genes and providing functional context through guilt-by-association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 describe a systematic clustering analysis with clear methodology (k-medoids) and validation through functional enrichment. Each cluster (C43-C50) shows distinct, biologically coherent enrichments supported by literature citations. The inclusion of priority unstudied genes in each cluster (with specific counts) demonstrates the utility of the approach for functional inference. The enrichment analyses use established tools (Metascape, AnGeLi) cited in C42.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C4",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C80",
+      "C82",
+      "C115"
+    ],
+    "result": "The NET-FF machine learning method generated 56,594 high-scoring GO predictions, of which 22,060 had high information content, with 15,426 predictions identical to PomBase annotations and 1675 novel predictions for 783 genes including 47 predictions for 23 priority unstudied proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 and C80-C82 provide consistent numbers throughout the filtering pipeline from 2.4M initial predictions to 1675 novel predictions. The validation against PomBase (C56-C57, C82) shows substantial overlap (15,426 identical predictions), supporting method validity. The training approach (C115) is clearly described. The specific breakdown of novel predictions (C59: 1481 new GO tree regions, 194 more informative) demonstrates careful filtering. Numbers are internally consistent across all claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C81",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "NET-FF predictions showed higher semantic similarity to PomBase annotations than random (median GOGO scores 0.52 for BP, 0.64 for MF) and comparable information content, with NET-FF providing more informative BP terms for priority unstudied genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C81, C111-C114 provide quantitative validation metrics comparing NET-FF to PomBase. The GOGO semantic similarity analysis (C54) with randomization controls demonstrates above-random performance. The information content comparison (C111-C114) shows nuanced results: PomBase generally more informative overall, but NET-FF more informative for BP terms in priority unstudied genes (14.9% vs 8.5%), which is the key target population. This is biologically meaningful and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Manual validation of 312 selected NET-FF predictions showed 52.9% already supported by PomBase annotations, with 47.1% representing novel predictions, and phenotype data validated predictions across multiple functional categories including 91% validation rate for DNA damage/repair genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 provide systematic manual validation with clear proportions. Claims C107-C110 demonstrate orthogonal experimental validation using the phenotype data, with high validation rates (e.g., 30/31 genes for DNA damage/repair). The variation in novelty across categories (C62: 15.4% for histone acetylation vs 91.7% for aging) is biologically interpretable and adds confidence. The convergence of computational predictions and experimental phenotypes strongly supports the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C95",
+      "C96",
+      "C97",
+      "C6"
+    ],
+    "result": "Experimental validation of aging predictions identified seven of eight tested mutants with chronological lifespan effects, including a priority unstudied gene (SPAC23C4.09c) with strong longevity phenotype that forms a phenotype-correlation network with known aging genes and is predicted to function in DNA damage repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide direct experimental validation with clear results (7/8 mutants validated). The SPAC23C4.09c example is well-supported by multiple lines of evidence: experimental CLS phenotype (C63), network analysis (C65), growth phenotype on non-fermentable media (C66), and NET-FF prediction (C96). The context-dependent effects (C64, C95) are appropriately cited and add biological nuance. The connection to DNA repair and aging (C96-C97) is supported by literature. This represents strong validation of the integrated approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C83"
+    ],
+    "result": "Integration of NET-FF predictions with phenotype correlations identified 553 BP and 606 MF gene pairs with concordant high GOGO and PHEPHE scores, and phenotype-correlation networks showed 425 protein pairs concordant with STRING interactions and enrichment for GO similarities in 6 of 9 large clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 report concordance between GO predictions and phenotype correlations with specific numbers. Claim C83 provides independent validation against STRING database with randomization controls (Figure 2\u2014figure supplement 2). Claims C71-C73 show network-level validation with statistical enrichment. The convergence of three independent data types (NET-FF predictions, phenotype correlations, STRING interactions) provides strong mutual validation. The addition of 63 GO-term enrichments by NET-FF (C73) demonstrates added value beyond PomBase alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Of 124 priority unstudied genes, 70 showed phenotype correlations with characterized genes, including five genes implicated in mitochondrial functions that correlated with known mitochondrial genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 demonstrate the utility of phenotype correlations for functional inference of unstudied genes. The proportion (70/124 = 56.5%) showing correlations with characterized genes is substantial. The mitochondrial example (C75) provides specific functional context. This is supported by the network visualizations described and the guilt-by-association principle established in the clustering analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Network embeddings (AUPR 0.58) outperformed FunFam homology data (AUPR 0.42) for GO prediction, with their combination achieving AUPR 0.60; adding phenotype data decreased performance, suggesting redundancy with network information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide clear performance metrics with appropriate evaluation (AUPR). The modest improvement from combining features (3% increase) is honestly reported. Claims C101-C103 describe the surprising finding that phenotype data decreased performance and provide a reasonable interpretation (redundancy with STRING network). The decision to use phenotype data for validation rather than prediction (C103) is methodologically sound. The performance metrics are supported by Figure 4\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The screen confirmed 40.8% of previously annotated slow-growth mutants but only 9% of fast-growth mutants from PomBase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 report low concordance with existing PomBase annotations, particularly for fast-growth mutants (9%). While the authors suggest technical differences (mutant type, solid vs liquid media, isolation vs pools), the low validation rate raises concerns about either the current screen's accuracy or the reliability of prior annotations. Without additional validation or explanation of the discrepancies, this result is uncertain. The 40.8% confirmation rate for slow-growth mutants is more reassuring but still indicates substantial disagreement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C118",
+      "C119"
+    ],
+    "result": "Growth phenotypes showed medium-specific effects, with mutants growing slowly only in minimal medium enriched for amino-acid biosynthesis and sulfate assimilation, while those slow only in rich medium were enriched for DNA replication maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C118-C119 describe biologically coherent medium-specific phenotypes. The Fil1 example (C20) is supported by a citation and demonstrates the principle. The functional enrichments (C118-C119) are biologically interpretable: auxotrophies explain minimal medium phenotypes, while DNA replication quality control explains rich medium phenotypes. However, the interpretation for rich medium (C119) is speculative ('possibly reflecting'), appropriately marked as inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "NET-FF predicted specific functions for priority unstudied genes including SPAC15A10.10 (nuclear division/actin regulation), SPAC25B8.08 (actin-dependent ATPase/organelle localization), and SPBC2D10.03c (heat response), with the latter validated by temperature-sensitive growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 report specific NET-FF predictions for priority unstudied genes. Claim C106 provides experimental validation for one prediction (SPBC2D10.03c heat response) with a literature citation. While only one of three predictions is experimentally validated here, this is appropriate for demonstrating proof-of-principle. The predictions are specific and testable, representing valuable functional hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background context establishes that research bias toward well-studied genes persists, many proteins remain uncharacterized even in minimal genomes, S. pombe contains 641 unknown genes including 135 priority unstudied proteins with human orthologs, and fission yeast provides advantages for functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C17 provide well-cited background establishing the motivation for the study. The claims about research bias (C7), uncharacterized proteins (C8-C9), and S. pombe genome composition (C10, C14-C16) are supported by appropriate citations. The advantages of S. pombe (C11-C13) are established in the literature. These claims provide essential context but are not primary results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "Literature-supported biological context for results includes dose-dependent stress responses, poor correlation between stress-induced and stress-required genes, links between cAMP signaling and RNA interference, context-dependent aging effects, and the importance of DNA repair for aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92, C94-C95, C97 provide literature-cited context supporting the biological interpretation of results. These are appropriately used to explain findings (e.g., dose-specific oxidative stress responses) or provide mechanistic context (e.g., DNA repair in aging). Claim C93 is speculative but appropriately framed as a possibility. These claims support interpretation but are not primary findings.",
+    "result_type": "MINOR"
+  }
+]

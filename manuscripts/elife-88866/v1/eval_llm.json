@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study identified 15 novel apicoplast membrane proteins in T. gondii using a combination of hyperLOPIT, ACP-BioID, and APT1-TurboID proximity labeling approaches. The APT1-TurboID approach proved particularly robust, identifying 14 of the 15 novel proteins, with 12 annotated as putative transporters or carriers and 3 as hypothetical proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C38 and C97-C99 collectively demonstrate a systematic screening approach that successfully identified novel apicoplast transporters. The volcano map analysis (C33, C97), mass spectrometry data, and subsequent IFA validation (C34-C38) provide converging evidence. The methodology is well-documented with appropriate controls and replicates (N=3), and the TurboID approach is validated against known apicoplast proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C73",
+      "C74",
+      "C100",
+      "C101",
+      "C102",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Evolutionary analysis revealed that most novel transporters were likely derived from the red algal endosymbiont, while AMT1 and AMT2 (a pair of monocarboxylate transporters) appear to have originated from the putative host cell that engulfed the red alga. AMT1 and AMT2 are absent in red algae, green algae, and plants but are conserved across Apicomplexa including plastid-deficient taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C73-C74, C100-C113 provide consistent evolutionary evidence based on conservation analysis using HMM profiling (E-value cutoff 1\u00d710\u207b\u2077). The conservation heatmaps (Figure 2A, B) show clear patterns distinguishing AMT1/AMT2 from other transporters. The presence in plastid-deficient taxa (Gregarina, Cryptosporidium) supports endosymbiont gene transfer, while the absence of AMTs in algae/plants but presence in host-derived lineages supports the host cell origin hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "AMT1 and AMT2 co-localize at the apicoplast membranes as demonstrated by confocal microscopy (PCC=0.94) and immuno-EM. However, the precise topology within the complex four-membrane system remains to be determined, and the processing of these proteins (precursor vs. mature forms) requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 provide strong localization evidence through two independent methods (confocal microscopy with high PCC and immuno-EM showing gold particles at membranes). Claims C115-C116 appropriately acknowledge limitations regarding precise topology and processing mechanisms. The evidence supports membrane localization but correctly identifies areas requiring additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Depletion of AMT1 and AMT2 using the AID system resulted in efficient protein degradation within 3-36 hours and caused severe growth defects including loss of plaque formation and significantly impaired parasite replication, particularly in the third 24-hour cycle. The parasites showed delayed death phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C117-C120 demonstrate consistent phenotypic defects across multiple assays (western blots, IFA, plaque assays, replication assays). The data show statistical significance (p<0.0001) with appropriate replicates (N=3 with triplicates). The observation of two bands on western blots (C44) is noted but appropriately presented as speculation. The delayed death phenotype is well-documented through time-course experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "AMT depletion caused progressive ACP diffusion and apicoplast swelling/breakdown, with AMT2 depletion resulting in significantly more severe defects (~60-70% ACP diffusion) compared to AMT1 depletion (~30%). The defects were more pronounced in extracellular parasites and increased over successive replication cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C121-C123 provide quantitative evidence of differential effects between AMT1 and AMT2 depletion. The data are supported by systematic scoring of >150 vacuoles/parasites per replicate across three independent experiments. The progressive nature of the defect and the distinction between intracellular and extracellular parasites are well-documented. The conclusion that AMT2 depletion causes more severe defects is statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "AMT depletion significantly reduced IPP synthesis as evidenced by impaired GFP vesicle transport to the VAC (~8% vs >20% in controls) and reduced Rab1B protein abundance. Notably, AMT1 and AMT2 depletion showed similar levels of IPP reduction at 12 hours of induction, despite differential effects on other phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C124-C127 use an indirect but validated assay for IPP levels based on protein prenylation-dependent GFP transport. The assay includes appropriate controls (atorvastatin and zoledronate treatments) and shows statistical significance (p<0.0001). The observation that both AMT1 and AMT2 show similar IPP reduction at 12 hours (C53, C127) is important and well-supported, though it contrasts with other differential phenotypes, suggesting complex temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C138",
+      "C139",
+      "C143"
+    ],
+    "result": "Untargeted metabolomics identified 13 shared differential metabolites across the three AID lines, including reduced levels of C14, C16, and C18 fatty acids and phospholipids, indicating significant impairment of FASII-mediated de novo fatty acid biosynthesis. AMT2 depletion showed stronger impairment of the FASII pathway compared to AMT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C132-C135, C138-C139, and C143 present comprehensive metabolomics data (66 total metabolites detected, analyzed by Dunnett's multiple comparison, p<0.05). The identification of reduced fatty acids is consistent with FASII pathway impairment and is supported by prior literature (C134-C135). The differential effect between AMT1 and AMT2 (C138-C139) is supported by quantitative data showing lower fatty acid levels in AMT2-depleted parasites. The conclusion that host-derived lipids are unaffected (C137) provides important specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C128",
+      "C129",
+      "C140",
+      "C141"
+    ],
+    "result": "Metabolomics also identified reduced TCA cycle-related metabolites (GABA, glutamic acid, succinic acid) and reduced mitochondrial membrane potential in AMT-depleted parasites, likely resulting from decreased IPP availability for ubiquinone synthesis or impaired heme biosynthesis requiring apicoplast-mitochondrion cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C128-C129, and C140-C141 connect metabolomics findings with mitochondrial dysfunction through a logical mechanistic chain supported by literature (C129 on ubiquinone, C140 on heme biosynthesis). The mitotracker data (C128) provides independent validation of mitochondrial defects. However, the mechanistic interpretation (C140) is somewhat speculative as it proposes multiple possible pathways without distinguishing between them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "AMT2 depletion specifically caused loss of ACC1 (a key FASII enzyme) in the majority of parasites within vacuoles (~60% showed complete or partial loss), while AMT1 depletion did not affect ACC1 levels. The remaining ACC1 was still biotinylated, indicating the effect is unrelated to biotin availability but rather to ACC1 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 and C145-C149 provide strong evidence for AMT2-specific effects on ACC1 through multiple approaches (western blots, IFA, quantification of vacuole types). The observation that ACC1 remains biotinylated (C60) is important for ruling out biotin transport as the mechanism. The failed attempts to delete ACC1 (C147) support its essentiality (C148). This provides a mechanistic explanation for stronger FASII defects in AMT2-depleted parasites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "TEM analysis revealed that AMT depletion caused loosening of apicoplast membranes and electron-lucent lumen. AMT1 depletion caused modest apicoplast loss (detectable at 24-36 hours), while AMT2 depletion caused more severe and earlier apicoplast loss (detectable at 12 hours, with only 3 apicoplasts identified at 36 hours out of 300 parasites examined).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 and C153-C157 provide ultrastructural evidence with systematic quantification (300 parasites per time point per line). The progressive nature of apicoplast loss and the clear differential between AMT1 and AMT2 are well-documented. The quantification of normal vs. abnormal apicoplasts provides objective metrics. The TEM data corroborate the ACP diffusion results and provide additional mechanistic insight into organelle integrity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "In vivo mouse infection studies showed that AMT2 depletion completely prevented acute virulence and mouse death, while AMT1 depletion only postponed death. The discrepancy between strong in vitro growth defects and reduced (but not eliminated) in vivo virulence for AMT1 may relate to modest apicoplast defects allowing sufficient metabolite production for survival in mice, or to different substrate transport capabilities of AMT1 vs. AMT2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 demonstrate clear in vivo phenotypes with appropriate controls (n=5 mice per group, three independent experiments, statistical significance p<0.0001). The efficient degradation of AMT1-AID in mice within 24 hours (C68) validates the system. Claims C158-C163 appropriately acknowledge and discuss the in vitro/in vivo discrepancy for AMT1, offering plausible explanations while noting they are speculative. The sera analysis (C158) confirms successful infection. The conclusion that AMT2 is essential for virulence (C69) is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C75",
+      "C76",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C93",
+      "C94"
+    ],
+    "result": "Overall, AMT1 and AMT2 are critical for parasite growth and are associated with MEP and FASII biosynthesis pathways, but AMT2 shows consistently stronger phenotypic defects across multiple assays including ACP diffusion, fatty acid synthesis, ACC1 stability, apicoplast loss, and mouse virulence, suggesting complex and differential transporting functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C75-C76, C80-C83, C93-C94 synthesize findings across multiple experimental approaches. The conclusion that both transporters are critical (C6, C80-C81) is supported by severe growth defects. The differential effects of AMT2 (C8, C76, C82-C83, C94) are consistently observed across independent assays (plaque formation, replication, metabolomics, TEM, mouse infections). The interpretation of complex functions (C77, C94) is reasonable given the data, though the specific mechanisms remain to be elucidated (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C142",
+      "C165"
+    ],
+    "result": "Based on MCT family characteristics, AMT1 and AMT2 are hypothesized to transport pyruvate, lactate, and amino acids. Pyruvate is a central metabolite and the key carbon source for both MEP and FASII pathways in the apicoplast, which could explain the observed defects. However, pyruvate was not detected in the untargeted metabolomics, and direct substrate transport capability remains to be demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C90 and C142, C165 present a logical hypothesis based on MCT family function (C85, C107) and the known role of pyruvate in apicoplast metabolism (C86-C89). The hypothesis provides a plausible explanation for the observed phenotypes (C90). However, this remains speculative as acknowledged by the authors - pyruvate was not detected in metabolomics (C142), and attempts to directly demonstrate transport function were unsuccessful (mentioned in limitations). The claims are appropriately presented as speculation (C85, C90, C165) rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C164",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The study acknowledges important limitations: phenotypic outcomes may result from reduced substrate supply rather than direct apicoplast loss, though the highly efficient AID system minimizes pleiotropic effects compared to slower systems. Further work is needed to determine precise topology, protein interactions, substrate transport capability, and to resolve in vitro/in vivo discrepancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C170 appropriately identify limitations and future directions. The distinction between direct effects and pleiotropic effects of apicoplast loss (C164, C166-C167) is important and honestly addressed. The acknowledgment that substrate identity remains unclear (C95, C168) and that more sophisticated approaches are needed (C169) demonstrates scientific rigor. These limitations do not undermine the major findings but correctly identify areas requiring additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C70",
+      "C71",
+      "C78",
+      "C84",
+      "C102",
+      "C105",
+      "C107",
+      "C110",
+      "C129",
+      "C134",
+      "C135",
+      "C136",
+      "C152"
+    ],
+    "result": "The introduction and discussion provide appropriate context from prior literature regarding apicoplast structure, evolution, metabolic pathways (FASII, MEP, heme, Fe-S clusters), known transporters (APT1, TPC), and the knowledge gap regarding metabolite transport mechanisms. This background appropriately frames the current study's contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C27, C70-C71, C78, C84, C102, C105, C107, C110, C129, C134-C136, C152 accurately represent established knowledge from the literature with appropriate citations. These claims provide necessary context and correctly identify the knowledge gap (C3, C20, C27, C71) that motivates the study. The citations appear appropriate and the characterization of prior work is accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C72",
+      "C91",
+      "C92",
+      "C96"
+    ],
+    "result": "This study successfully identified several novel apicoplast transporters using TurboID proximity labeling and genome engineering in T. gondii, with the key finding being the identification of AMT1 and AMT2 as monocarboxylate transporters likely derived from the host cell during secondary endosymbiosis. These transporters likely control essential processes in apicomplexan parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C72, C91-C92, C96 accurately summarize the study's major contributions. The methodology (TurboID and genome engineering) is well-validated throughout the results. The identification of novel transporters (C91) is supported by comprehensive screening and validation. The evolutionary origin of AMT1/AMT2 (C92) is supported by conservation analysis. The broader significance for apicomplexans (C96) is reasonable given the conservation data, though direct functional studies in other species would strengthen this claim.",
+    "result_type": "MAJOR"
+  }
+]

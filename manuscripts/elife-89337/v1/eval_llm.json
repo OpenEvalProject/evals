@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Avalanche criticality has been widely observed across diverse biological systems, from cultured neurons to humans, exhibiting power laws with exponent relationships predicted by physical theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 document observations across multiple species with appropriate citations. C7 provides theoretical grounding. These are literature review claims establishing the phenomenon's ubiquity and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Multiple forms of neural criticality beyond avalanches have been observed, including Zipf's law and coarse-grained criticality, which simple neural network models fail to explain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 document different criticality phenomena with appropriate citations. C13 establishes the motivation for the current work by noting the inadequacy of simple models. These background claims are well-supported by literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Low-dimensional structure in neural populations can be modeled by coupling to latent dynamical variables, which has successfully explained coarse-grained criticality and Zipf's law, but the relationship to avalanche criticality remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 establish the latent variable modeling framework with appropriate citations. C18-C20 identify the gap in understanding regarding avalanche criticality. These background claims appropriately set up the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The latent dynamical variable model generates avalanche criticality across a wide parameter range without fine-tuning, with multiple latent variables producing critical behavior more broadly than single variables, and two distinct critical regimes differing in information content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are directly supported by simulation data presented in Figures 2-5. C25 is an inference from these results. The computational experiments systematically demonstrate these findings with appropriate statistical analysis and multiple parameter combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A specific simulation with 5 latent variables produced critical exponents \u03c4=1.89\u00b10.02, \u03b1=2.11\u00b10.02, and \u03b3_fit=1.24\u00b10.02, with \u03b3_fit matching the predicted value \u03b3_pred=1.24\u00b10.02.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 report specific numerical results from a representative simulation shown in Figure 1. The exponent values and their agreement are clearly documented with error estimates. This demonstrates the model's ability to produce crackling noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The five-variable model produces better power-law fits with lower cutoffs and crackling compared to the single-variable model at the same timescale (\u03c4_F=5000).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 compare single vs. multiple latent variable models with data from Figure 2. The comparison is direct and well-documented, showing clear differences in power-law quality and crackling behavior between the two conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Avalanche scaling depends on the timescale of latent variables, with single-variable models showing abrupt transitions around \u03c4_F=10^4 while five-variable models show gradual changes, but both produce critical scaling at sufficiently slow timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 describe systematic parameter sweeps shown in Figure 2G-J. The data clearly show the different behaviors of single vs. multiple variable models across timescales, supporting the conclusion that slow dynamics enable criticality in both cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In the quasi-static limit, the model produces avalanche criticality across a wide range of \u03b7 and \u03b5 parameters without fine-tuning, with \u03b3_fit - \u03b3_pred typically less than 0.1, except at extreme parameter values where avalanches merge or become too sparse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 describe results from Figure 3 showing parameter sweeps. The data demonstrate robust criticality across intermediate parameter ranges with appropriate boundary conditions. C44-C45 provide quantitative agreement metrics consistent with experimental literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C56"
+    ],
+    "result": "Two distinct avalanche regimes exist: Type-1 (\u03b5<\u03b5_0) with high cutoffs and rare large avalanches, and Type-2 (\u03b5>\u03b5_0) with low cutoffs, both exhibiting crackling, with Type-1 corresponding to highest information about latent variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C54, C56 describe the two-regime structure shown in Figures 4-5. The analytical derivation of \u03b5_0 and numerical verification of the two regimes with different cutoff behaviors is well-documented. The information analysis in Figure 5 supports the Type-1/high-information correspondence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Information about latent variables is higher in avalanche-generating regions but varies across the critical regime, indicating that avalanche criticality alone does not predict optimal information transmission, though scaling is more readily observed in high-information states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C55, C57-C59 describe information analysis from Figure 5. The data clearly show that the avalanche region encompasses both high and low information states, supporting the conclusion that criticality and information optimization are distinct. C59 provides an important practical observation about observability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C88"
+    ],
+    "result": "Observing avalanche criticality requires sufficient sampling of the latent variable space, which depends on both simulation/recording length and the timescale of latent dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C88 identify a key requirement for observing criticality, supported by the timescale analysis in Figure 2 and discussion of observation times. This is an important practical consideration well-supported by the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Experimental studies report a wide range of critical exponents (\u03c4 from 1.5-2.7, \u03b3 near 1.2 when crackling holds), with the seminal Beggs and Plenz work finding \u03c4=1.5, \u03b1=2.0, \u03b3=2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 summarize experimental literature with appropriate citations. These provide context for evaluating the model's exponent values and are well-documented review claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The model produces exponents (\u03c4: 1.9-2.5, \u03b3: 1.1-1.3) that are inconsistent with critical branching processes (\u03b3=2) but match experimental ranges, particularly those reported by Fontenele et al., 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide theoretical context, while C72-C75 report the model's exponent ranges from Figures 2-3. The comparison to experiments and alternative models is appropriate. The model successfully reproduces experimentally observed exponent ranges rather than theoretical predictions from branching processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Differences in spatial/temporal sampling and analysis decisions across experiments systematically affect measured exponents, potentially explaining variability in reported values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 discuss methodological challenges in comparing experimental results, supported by appropriate citations. This is a well-established issue in the field and the claims are appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The model differs from Priesemann and Shriki's inhomogeneous Poisson process by producing \u03b3 values (1.1-1.3) close to predictions from \u03b1 and \u03c4, rather than \u03b3=1, potentially due to nonlinearity in the latent-to-activity mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 accurately describe prior work. C81 documents the current model's different behavior with data support. C82 offers a mechanistic speculation that is appropriately labeled as such. The comparison is fair and the distinction is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C94"
+    ],
+    "result": "Latent variables are ubiquitous in neural recordings, reflected in low-dimensional structure, and the same model that generates coarse-grained criticality also produces avalanche criticality when latent structure can be inferred from population activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 establish the biological relevance with appropriate citations. C86-C87 report the main finding connecting coarse-grained and avalanche criticality. C94 provides the overarching conclusion. The progression from prior work to current findings is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Zipf's law emerges generically in systems with slow latent variables but is more readily observed at smaller system sizes in high-information regimes, suggesting that adapted sensory systems should exhibit critical signatures at modest dataset sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C89 cite prior work on Zipf's law appropriately. C90 draws an inference about fine-tuning that follows logically. C91 is speculative but clearly labeled and follows from the information analysis. The connection to biological adaptation is reasonable though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Monocular deprivation experiments show transient loss and recovery of scaling, which could be explained by neural adaptation adjusting \u03b7 and \u03b5 parameters in the model framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C92 cites experimental observations appropriately. However, C93 is speculative and the model has not been directly tested against these experimental manipulations. The speculation is reasonable but lacks direct supporting evidence from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The latent dynamical variable model with at least five latent variables can produce power laws under coarse-graining analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C26 cites the authors' previous work appropriately to justify model choice. This is a well-supported background claim establishing why this particular model was selected.",
+    "result_type": "MINOR"
+  }
+]

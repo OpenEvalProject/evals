@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Genomic annotation of the Ubx locus in Nymphalinae butterflies reveals conserved organization including two long non-coding RNAs: lncRNA:Ubx-IT1 (intronic, antisense to Ubx, conserved across Lepidoptera) and lincRNA:Ubx-AS5' (5' of Ubx, potentially Nymphalinae-specific).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by genomic annotations from multiple species (Figure 1A) and comparative analysis of NCBI RefSeq data. The identification of Ubx-IT1 orthologs across Lepidoptera (C64) provides strong evidence for conservation, while the absence of Ubx-AS5' outside Nymphalinae (C67) supports lineage-specificity, though this remains tentative (C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Transcriptomic analysis in K. inachus shows Ubx is strongly enriched in hindwings across larval and pupal stages, while Ubx-IT1 shows similar but much lower expression (~100-fold less), Antp shows minor forewing enrichment, and abd-A is largely undetected in wings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 are supported by DESeq2 analysis of K. inachus RNA-seq data (Figure 1B). The differential expression patterns are consistent with prior studies (C69) and provide quantitative evidence for segment-specific regulation. Statistical significance is indicated in the figure, supporting the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Hi-C analysis of J. coenia larval forewings reveals three TADs in the Hox cluster, with a boundary element (Antp-Ubx_BE) in the last intron of Ubx containing convergent CTCF binding sites, suggesting insulator function between Antp and Ubx regulatory domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by Hi-C data (Figures 2-3) and CTCF motif analysis (Figure 2\u2014supplement 1). The TAD structure is clearly visible in contact maps, boundary calling is described in methods, and CTCF motif predictions align with the boundary. The inference about insulator function (C80) is reasonable but speculative, based on established CTCF biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "ATAC-seq analysis shows chromatin accessibility is partitioned along the Antp/Ubx/abd-A interval with forewing-enriched regions near Antp, shared accessibility stopping at Antp-Ubx_BE, strong hindwing enrichment around Ubx, and no differential accessibility near abd-A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by ATAC-seq data (Figure 2B). The differential accessibility patterns are clearly visible and consistent with expression data. The correlation with TAD boundaries strengthens the interpretation. This provides strong evidence for segment-specific chromatin regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Comparison of Hi-C data between larval forewings and pupal hindwings shows dynamic TAD reorganization, but the Antp-Ubx_BE boundary remains relatively stable across stages and wing types, maintaining separation between Antp and Ubx domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C98 are based on Hi-C data from different stages and tissues (Figure 3), making it difficult to disentangle developmental vs. tissue-specific effects (acknowledged by authors in C91-C92). While the data show TAD differences, the confounding of stage and tissue limits strong conclusions about boundary stability (C98). Additional stage-matched comparisons would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The forewing-enriched ATAC-seq peak at Antp-Ubx_BE coincides with Hi-C boundary predictions and contains clustered CTCF binding sites conserved across Lepidoptera and Trichoptera, suggesting it functions as a transcriptional insulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by integration of ATAC-seq, Hi-C, and motif analysis (Figure 2B, 4A, Figure 2\u2014supplement 1). The convergence of multiple lines of evidence (accessibility, 3D structure, CTCF motifs, conservation) strongly supports the insulator hypothesis (C103), though direct functional validation is provided by subsequent CRISPR experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "CRISPR mutagenesis of Antp-Ubx_BE induces forewing-to-hindwing homeotic transformations with no hindwing effects, including pattern shifts, venation defects, shape changes, and ectopic Ubx expression in forewings, demonstrating that this boundary element prevents spurious Ubx expression in T2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C120 are strongly supported by CRISPR experiments with multiple lines of evidence: adult phenotypes (Figures 4B-C, supplements), pupal phenotypes (Figure 4\u2014supplement 2), genotyping (Figure 4\u2014supplement 3), and immunofluorescence showing ectopic Ubx (Figures 4D-E, supplement 4). The unidirectional effect (only forewings affected, C108) and ectopic Ubx expression (C119) provide strong mechanistic support for boundary function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "CRISPR targeting of Ubx-IT1 (first exon in J. coenia and promoter in V. cardui) produced rare crispants (11/236) with small bidirectional homeotic phenotypes, which may reflect regulatory perturbation of Ubx rather than lncRNA function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C125 are based on CRISPR experiments (Figure 5, supplement 1) but interpretation is uncertain. The low frequency (C123), small clone size, and bidirectional effects make it difficult to distinguish lncRNA function from cis-regulatory disruption (C125). The authors appropriately acknowledge this ambiguity. Without G1 genotyping or additional functional validation, the role of Ubx-IT1 remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "CRISPR targeting of Ubx-AS5' (first exon, 5' of Ubx promoter) yielded 12 hindwing and 1 forewing mutant, with effects potentially explained by regulatory disruption of Ubx transcription due to proximity to the promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128 are based on CRISPR experiments (Figure 6, supplement 1) but suffer from similar interpretational challenges as Ubx-IT1. The predominance of hindwing phenotypes (C126) and proximity to the Ubx promoter (C127) suggest regulatory disruption rather than lncRNA-specific function. The speculation about mechanism (C127) is reasonable but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "CRISPR targeting of CRM11 ATAC-seq peaks (subdomains 11a and 11c) with multiple or single sgRNAs produced bidirectional homeotic transformations, with hindwing phenotypes 2.75\u00d7 more common than forewing, suggesting the presence of both activating and repressing regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C141 are supported by CRISPR experiments (Figure 7B-D, supplement 1) showing dual homeoses. The similarity of hindwing phenotypes to Ubx knockouts (C138-C139) supports loss-of-function interpretation. However, the bidirectional effects and lack of G1 genotyping limit mechanistic conclusions (C141 is speculative). The data clearly show regulatory activity but cannot definitively separate enhancer from silencer functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Multiple sgRNA targeting in CRM11 experiments resulted in high embryonic lethality (~10% hatching) compared to single targets (55% hatching), possibly due to chromosomal damage from multiple CRISPR cuts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by injection data (Table 1) showing clear differences in hatching rates between single and multiple targeting. The speculation about chromosomal damage (C144) is reasonable given literature precedent but remains unvalidated in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "CRISPR targeting of CRM11 subdomain 11b, which shows deep conservation across Lepidoptera and Trichoptera, produced exclusively hindwing-to-forewing transformations (6/6 crispants) with phenotypes matching Ubx CDS mutants, suggesting 11b encodes a hindwing-specific enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 are supported by conservation analysis (Figure 7\u2014supplement 2A-B), CRISPR experiments with unidirectional effects (C150), and phenotypic similarity to Ubx knockouts (C151). The consistency of effects and deep conservation provide strong evidence for enhancer function (C152), though this remains an inference without direct enhancer assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Analysis of 15 spontaneous Heliconius homeotic mutants shows predominantly hindwing-to-forewing transformations (12/15), restricted to posterior wing regions (posterior to M2), mostly ventral (13/15), with complete scale type conversions and local shape changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 are supported by systematic documentation of spontaneous mutants (Figure 8, supplements 1-2). The phenotypic patterns are clearly described and quantified. This provides valuable natural variation data complementing the CRISPR experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C159"
+    ],
+    "result": "Spontaneous fore/hindwing homeotic aberrations in nature and captive stocks may result from mutations at the Ubx locus itself, based on similarity to CRISPR-induced phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C159 is speculative inference based on phenotypic similarity between spontaneous and CRISPR-induced mutants. While the similarity is suggestive, without genetic mapping or sequencing of spontaneous mutants, alternative explanations (mutations in Ubx regulators, other Hox genes, or downstream targets) cannot be excluded. This remains a reasonable hypothesis requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "All CRISPR targets at the Ubx locus yielded homeotic phenotypes with two types of effects (forewing gain-of-function and hindwing loss-of-function), indicating the presence of both repressing and activating regulatory sequences in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 are supported by the comprehensive summary of CRISPR experiments (Figure 9, Table 1). The consistent recovery of homeotic phenotypes across all targets and the bidirectional effects provide strong evidence for complex regulatory architecture. However, the inference about specific regulatory sequences (C131) is limited by the lack of G1 genotyping and potential for large deletions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "The authors failed to establish G1 lines from Ubx locus G0 mutations, possibly due to lethal effects, limiting analysis to mosaic G0 individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C134 is a straightforward statement of experimental limitation acknowledged by the authors. This is an important caveat affecting interpretation of all CRISPR results, as it prevents definitive genotype-phenotype correlations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C120"
+    ],
+    "result": "The study demonstrates the existence of silencing and insulating sequences that prevent spurious Ubx expression in forewings, with the Antp-Ubx_BE boundary element playing a key role in maintaining segment-specific Ubx repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C120 represent the main conclusion, supported by convergent evidence from Hi-C (TAD structure), ATAC-seq (differential accessibility), CTCF motif analysis (insulator binding sites), and CRISPR functional validation (ectopic Ubx upon BE disruption). The Antp-Ubx_BE experiments provide the strongest functional evidence, while other targets show regulatory activity but with less clear mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

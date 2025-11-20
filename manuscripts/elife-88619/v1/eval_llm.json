@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Three SNAP25 mutations (V48F, D166Y, I67N) are associated with epileptic encephalopathy in human patients. V48F and D166Y are located in the Syt1-binding interface, while I67N destabilizes the SNARE complex. Clinical presentations include seizures, intellectual disability, and brain imaging abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 establish the disease association with appropriate clinical citations (C58-C61). The structural locations (C5-C6) are consistent with known SNARE complex architecture. The clinical phenotypes are documented in peer-reviewed case reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C92",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "All three mutations (V48F, D166Y, I67N) reduced Syt1-dependent vesicle docking and Ca2+-stimulated membrane fusion in vitro. The I67N mutation additionally reduced SNARE complex stability (melting temperature from 71\u00b0C to 56\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In vitro biochemical assays (C7-C9, C92, C100-C102) demonstrate consistent functional deficits across all three mutations. The data are supported by multiple independent assays (docking, fusion, thermal stability) with appropriate controls and quantification shown in Figure 8.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "V48F and D166Y mutations rescue survival of SNAP25 KO neurons but strongly increase spontaneous release (mEPSC frequency). The mutations show incompletely dominant or co-dominant behavior when co-expressed with WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neuronal rescue experiments (C62-C64) demonstrate functional expression. Electrophysiology data (C65-C67) show robust increases in mEPSC frequency with appropriate statistical testing. Co-expression experiments (C68-C69) provide genetic evidence for dominance patterns, though the mechanism of incomplete dominance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C91"
+    ],
+    "result": "V48F and D166Y mutations reduce RRP size (measured by sucrose application) with D166Y showing greater potency than V48F. The mutations lower the energy barrier for fusion and increase release probability, representing gain-of-function features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measurements (C78-C83, C91) using dual sucrose concentrations demonstrate reduced RRP size and altered energy barriers. The potency ranking (D166Y > V48F) is consistent across assays. However, the discrepancy with prior work (C53) regarding RRP size is acknowledged but attributed to methodological differences in sucrose application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The reduced RRP size in V48F and D166Y results from multiple mechanisms: increased spontaneous release, reduced forward priming rate (k1), and decreased depriming rate (k-1). The major contributor is reduced priming rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Kinetic modeling (C87-C90, Table 1, Figure 6) dissects the contributions of three rate constants to RRP size. The mathematical framework is sound and the parameter estimates are derived from experimental data. However, the model assumes certain simplifications (e.g., single pool, high sucrose effect) that are justified but could affect quantitative conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "V48F and D166Y mutations reduce evoked EPSC amplitude and shift kinetics toward more asynchronous release. The phenotype differs from Syt1 KO, which shows stronger reduction in total charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Evoked release measurements (C70-C77) are well-documented with appropriate controls including Syt1 KO comparison. The kinetic analysis (C73-C74) demonstrates desynchronization. The comparison to Syt1 KO (C75-C77) supports the conclusion that these mutations have distinct features beyond simple loss of Syt1 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "V48F and D166Y mutations exhibit gain-of-function features (lowered energy barrier, increased release probability) not found in Syt1 KO neurons. Normalized mEPSC rates follow the potency order D166Y > V48F > Syt1 KO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to Syt1 KO (C17-C18, C84-C86) is critical for establishing gain-of-function. Multiple independent measurements (energy barrier, release probability, normalized mEPSC rates) converge on this conclusion. The potency ranking is consistent across assays, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "V48F and D166Y mutations increase spontaneous association with partner SNAREs (syntaxin-1, VAMP2), resulting in unregulated membrane fusion. This gain-of-function is demonstrated both in vitro and in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-flotation assays (C97-C99) directly demonstrate increased SNARE interactions, with D166Y showing stronger effects than V48F. In vitro fusion assays (C93-C96) show impaired complexin clamping and increased pre-Ca2+ fusion. The minimal reconstituted system (C95) establishes that these effects are intrinsic to the SNARE machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The I67N mutation decreases both spontaneous (mEPSC) and evoked release due to an increased energy barrier for fusion, while RRP size remains unaffected. The mutation is dominant negative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Electrophysiology data (C21-C22, C107-C108) demonstrate reduced release. The dominant-negative behavior (C109) is established by co-expression experiments. However, the claim that RRP is unaffected (C24) requires qualification - it is unaffected when measured with high sucrose (0.75 M) but appears reduced with standard 0.5 M sucrose (C110-C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The I67N mutation increases the apparent fusion barrier height. The RRP appears intact when probed with high sucrose concentrations (0.75 M) but reduced with standard concentrations (0.5 M), indicating vesicles face a higher energy barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sucrose titration experiments (C110-C114) elegantly demonstrate that the fusion barrier, not priming, is affected by I67N. The interpretation (C113-C115) is logical and consistent with the in vitro data showing reduced fusion. This represents a key mechanistic distinction from V48F/D166Y.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C25"
+    ],
+    "result": "Combining I67N with the 4K mutation (adding 6 positive charges) rescues spontaneous release to WT levels but evoked release remains depressed. The electrostatic mechanism of triggering is preserved in I67N.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The charge rescue experiments (C116-C118) provide strong evidence that the I67N defect is related to the energy barrier that can be modulated by electrostatic forces. The differential rescue of spontaneous vs. evoked release (C117) is consistent with the model. The quantitative analysis (C118, Figure 12F) shows the charge effect is similar in I67N and WT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C26"
+    ],
+    "result": "V48F and D166Y are neomorphic mutations with both loss-of-function (priming) and gain-of-function (fusion) features. I67N is a dominant-negative mutation. Overall, pathogenic SNAP25 mutations cause complex changes in the energy landscape for priming and fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification (C119-C120) is well-supported by the totality of evidence. The energy landscape analysis (C121-C122, C26, Figure 13) integrates multiple experimental observations into a coherent framework. The conclusion appropriately captures the complexity of these mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background on SNARE complex structure and function: SNAP25 is one of three neuronal SNAREs forming a ternary complex with VAMP2 and syntaxin-1. The complex assembles in a zipper-like manner and is regulated by Munc18-1, Munc13s, and Syt1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C27-C34) represent well-established background knowledge appropriately cited from the literature. They provide necessary context for interpreting the mutation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Background on SNAREopathy: De novo mutations in SNAREs cause epileptic encephalopathy ('SNAREopathy'). Most mutations are in STXBP1 (haploinsufficiency), while SNAP25 and Syt1 mutations change function without causing protein instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C35-C52) are appropriately cited from prior literature and provide context for the current study. They establish the rationale for investigating SNAP25 mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Prior work by Alten et al. reported unchanged RRP for V48F/D166Y and smaller RRP for I67N. The authors' prior work suggested the primary Syt1:SNARE interface is involved in priming, and I67 affects fusion rather than priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C53-C57) accurately represent prior published work and identify discrepancies that motivated the current study. The authors appropriately acknowledge and address these discrepancies in their discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "I67N mutant viruses express at similar levels to WT but show reduced neuronal survival rescue compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C105, Figure 10A-C) confirm expression levels. Survival data (C106, Figure 10D) show reduced rescue. These are straightforward experimental observations supporting the functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Overall conclusion from in vitro data: I67N is inferior in membrane fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim (C103) appropriately integrates the in vitro findings (C100-C102) into a concise conclusion.",
+    "result_type": "MINOR"
+  }
+]

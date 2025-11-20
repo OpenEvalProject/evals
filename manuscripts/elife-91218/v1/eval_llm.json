@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The manuscript provides background on voltage-gated sodium channels (Na\u1d65), their structure, function, and role in disease. These claims establish the biological context for the study, describing the channel architecture, functional states, and clinical relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C38 represent well-established knowledge about Na\u1d65 channels, supported by appropriate citations to the literature. These background claims provide necessary context and are not contested findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C100"
+    ],
+    "result": "PI(4,5)P2 negatively regulates Na\u1d651.4 by causing a depolarizing shift in voltage dependence of activation, accelerating fast inactivation, and slowing recovery from inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C44-C46, and C100 are supported by citation to prior experimental work (Gada et al., 2023). These represent established experimental findings that motivate the current computational study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Phosphoinositides, particularly PI(4,5)P2, are known to bind and modulate various voltage-gated ion channels, including potassium and calcium channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by appropriate citations to the literature describing PIP interactions with other ion channels. This provides comparative context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Coarse-grained simulations in a complex mammalian membrane revealed lipid enrichment patterns around Na\u1d651.4, with glycosphingolipid, PIP, and diacylglycerol highly enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are directly supported by simulation data presented in Figure 2B and supplementary figures. The enrichment analysis is clearly documented with appropriate methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "PIPs are highly enriched near the DIII-IV linker and VSD-IV, with a putative binding site identified involving K1330, R1463, K1466, and R1469 that shows >80% occupancy and specificity for PIPs over other negatively charged lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by occupancy analysis from coarse-grained simulations (Figure 2C-D). The statistical threshold (>80% occupancy) is clearly defined and the specificity analysis comparing different lipid types strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Enriched PIP simulations revealed that all three PIP species bind at the identified site with distinct binding characteristics: PIP1 binds from VSD-I side with 2-3 interactions, PIP2 forms the most stable interactions with ~5 contacts, and PIP3 behaves similarly to PIP1 despite greater charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C66 are supported by extensive analysis of 10 replicate simulations totaling 800 \u00b5s (Figure 3). The binding event analysis (156 events >2 \u00b5s) provides robust statistics, and the interaction patterns are clearly documented. The unexpected finding that PIP3 behaves like PIP1 is interesting and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "In silico mutation of the eight binding site residues to leucine or glutamate significantly reduced PIP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by mutant simulation data (Figure 3\u2014figure supplement 3). This provides validation of the identified binding site through computational mutagenesis, though experimental validation would strengthen this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Atomistic simulations revealed that PI(4,5)P2 binds stably (RMSD <2.2 \u00c5) with the 5'-phosphate primarily coordinating VSD-IV residues (R1463, K1466, R1469) and the 4'-phosphate interacting with both VSD-IV and DIII-IV linker residues. PI(4)P also binds stably but with fewer interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 are supported by atomistic simulation data (5 replicates \u00d7 1.5 \u00b5s each) showing stable binding and detailed interaction analysis (Figure 4A-B). The differential roles of the 4'- and 5'-phosphates are well-documented through interaction frequency analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "PI(4,5)P2 binding significantly reduces the mobility of residues in both the DIV S4-S5 linker (including K1466 and R1469) and the DIII-IV linker (P1336 and R1337).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by RMSF analysis from atomistic simulations with statistical testing (Figure 4C). The reduced mobility is consistent with the proposed mechanism of stabilizing the inactivated state, though the timescale of simulations (1.5 \u00b5s) is much shorter than the biological recovery process (milliseconds).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "PIP stabilizes the IFM motif in the inactivated state, and increases the probability of the IQM mutant motif associating with its receptor pocket, suggesting PIP may partially rescue inactivation-deficient mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are supported by coarse-grained simulation data (Figure 4E), but C80 is speculative. While the simulations show increased stability/association with PIP present, the claim about 'partial rescue' of pathogenic variants requires experimental validation. The IQM mutant simulations provide supporting evidence but are not definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The identified PIP binding site shows structural and sequence similarity to PI(4,5)P2 binding sites in K\u1d657.1 and Ca\u1d652.2, and is conserved across the nine human Na\u1d65 channel subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 and C96-C99 are supported by structural alignment (Figure 5A) and sequence analysis (Figure 5B-C). The conservation analysis strengthens the biological relevance of the findings, though the functional significance of this conservation requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PIPs bind to the analogous site in Na\u1d651.7 structures with state-dependent differences: longer binding durations occur in the inactivated state compared to structures with deactivated VSD-IV, and CTD binding prevents simultaneous PIP interaction with the DIII-IV linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by coarse-grained simulations of three different Na\u1d651.7 structures (Figure 6B-D). The state-dependent binding differences are well-documented, though the resting state model is acknowledged to be uncertain since no experimental structure exists.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "State-dependent differences in PIP occupancy at VSD gating charges were observed, with increased PIP binding to deactivated VSDs, particularly VSD-I in the resting state model. CTD binding reduces PIP occupancy at VSD-IV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91 are supported by simulation data (Figure 6E-F), but the resting state model is acknowledged to be uncertain. The authors note that 'no resting state mammalian Na\u1d65 channel structure has been resolved' and the modeled VSDs 'may not reflect the fully deactivated state.' This uncertainty limits confidence in these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C15"
+    ],
+    "result": "The authors hypothesize that PI(4,5)P2 prolongs inactivation by competitively binding to the DIV S4-S5 linker site, preventing CTD rebinding, and that PIP binding to gating charges may impede VSD activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10 and C15 are explicitly stated as hypotheses and mechanistic interpretations. While supported by the simulation data showing PIP binding at the proposed CTD binding site and at gating charges, these mechanisms require experimental validation. The competitive binding hypothesis is plausible but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The PIP binding residues are conserved across Na\u1d651.1-1.9, and mutations at these conserved positions in other subtypes cause diseases characterized by accelerated recovery from inactivation, consistent with reduced PI(4,5)P2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by sequence conservation analysis (Figure 5C) and citations to disease-causing mutations. Claim C95 is an interpretation connecting the simulation findings to disease mechanisms, which is plausible but speculative without direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "PI(4)P may play a compensatory role when PI(4,5)P2 is absent, binding to the same site but with shorter duration and fewer interactions, making PI(4,5)P2 more effective at stabilizing the inactivated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 integrate experimental observations (C100, C101 from Gada et al., 2023) with simulation data (C102-C103). The interpretation that PI(4,5)P2 is more effective (C104-C105) is well-supported by the comparative binding data, though the mechanistic details remain inferential.",
+    "result_type": "MAJOR"
+  }
+]

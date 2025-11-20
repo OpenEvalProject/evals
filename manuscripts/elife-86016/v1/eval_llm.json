@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript provides background on pentameric ligand-gated ion channels (pLGICs), their gating mechanisms, and lipid interactions. Claims establish that pLGICs transduce electrochemical signals, undergo conformational changes upon ligand binding, and interact with membrane lipids, though structural details of these lipid interactions remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by appropriate citations to prior literature (Tasneem et al., 2005; Duncan et al., 2020; Popot et al., 1981; Thompson and Baenziger, 2020; Poveda et al., 2017). These claims accurately represent established knowledge in the field and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Previous structural studies of GLIC have reported several lipid binding sites in open/activating states, but lipid positions vary between structures and are often incompletely resolved. No lipids were reported in the closed-state X-ray structure, possibly due to state-dependence or limited resolution (4.0 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 accurately summarize the state of prior structural knowledge with appropriate citations (Zhu et al., 2018; Masiulis et al., 2019; Hu et al., 2018; Sauguet et al., 2014; Thompson and Baenziger, 2020). The claims correctly identify gaps in knowledge that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors previously developed extensive MD simulations (120 \u00b5s) and Markov state models of GLIC gating under resting (pH 7, deprotonated residues) and activating (pH <6, protonated residues) conditions, capturing different distributions of functional states. They also reported the first cryo-EM structures of GLIC in closed conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 describe the authors' prior methodological work (Bergh et al., 2021; Rov\u0161nik et al., 2021) and standard MD simulation approaches. The pH-based approximation of resting vs. activating conditions is reasonable given GLIC's known pH-dependent activation mechanism. These claims establish the foundation for the current integrative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C36",
+      "C89"
+    ],
+    "result": "The authors present a 2.9 \u00c5 cryo-EM structure of closed-state GLIC\u2014the highest resolution for this state\u2014in which 25 bound lipids (5 per subunit) were confidently built for the first time in a closed conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C36, and C89 represent major findings supported by the cryo-EM data (Figure 1, Table 1). The 2.9 \u00c5 resolution is documented in Table 1 with appropriate validation metrics (FSC curves, Molprobity scores). The novelty claim is reasonable given the literature review (C13, C56). However, the claim of 'confident' building should be tempered by the fact that lipid identities could not be precisely determined (C102-C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C51",
+      "C90",
+      "C91"
+    ],
+    "result": "The cryo-EM structure was obtained by merging datasets from pH 7, 5, and 3, revealing non-protein densities with forked shapes characteristic of phospholipids. These lipids remained bound despite detergent solubilization, indicating tight binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C51, C90-C91 describe the cryo-EM methodology and observations. The merging of pH datasets is justified by simulation results showing pH-insensitivity of lipid occupancies (C108). The forked density shapes are consistent with phospholipid structure. The persistence through detergent solubilization is a reasonable inference, though direct binding affinity measurements are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Simulations were conducted under resting (neutral pH, deprotonated residues) and activating (acidic pH, protonated residues) conditions. Both open and closed conformations were sampled in both conditions with different probabilities. Analysis of 500 trajectories (100 simulations \u00d7 5 subunits) revealed symmetric patterns of lipid association, and lipid binding sites from simulations corresponded closely to cryo-EM densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34, C105-C107 describe the simulation methodology and validation. The large number of trajectories (500) provides robust statistics. The correspondence between simulation-derived occupancies and cryo-EM densities (Figure 1F-H, Figure 1\u2014figure supplement 1C-D) validates the computational approach. The symmetric patterns despite stochastic simulations support the reliability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Lipids in the cryo-EM structure contact multiple membrane-proximal regions (Pro-loop, pre-M1, M2-M3 loop, M3 C-terminus, M4). These regions correspond to long-duration lipid interactions in simulations. Lipid diffusion analysis shows relatively slow lateral diffusion (0.68 nm\u00b2/\u00b5s for first shell, 1.47 nm\u00b2/\u00b5s for bulk), but lipids exchange at multiple residues, indicating that interaction durations reflect stability rather than solely sampling limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 integrate structural and simulation data (Figure 2). The diffusion coefficient calculations use appropriate methodology (Einstein relation, Equation 1). The root mean square displacement values (2.15 nm for first shell, 3.16 nm for bulk) support the conclusion that exchange events occur. The interpretation that duration reflects stability is reasonable given the exchange data, though some very long interactions (approaching 1.7 \u00b5s) may still be sampling-limited (acknowledged in C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Three lipid binding sites were identified in the inner leaflet, with densities largely superimposable between closed and open states, indicating state-independent interactions. These include interfacial (M3-M1), principal-face (M3-M4), and complementary-face (M1-M4) sites. The complementary site has not been previously reported in GLIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 describe inner-leaflet lipid sites supported by both cryo-EM (Figure 3B) and simulation data (Figure 3A, Figure 1\u2014figure supplement 1). The state-independence is demonstrated by superimposable densities. The novelty claim for the complementary site (C56) is supported by literature review, though the phrasing 'to our knowledge' appropriately acknowledges potential limitations in literature coverage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C113"
+    ],
+    "result": "At the inner-leaflet interfacial site, lipids showed some of the longest-lived interactions, particularly involving the unsaturated C=C bond of POPC. Lipids adopted two poses depending on whether the unsaturated or saturated tail occupied the intersubunit cleft. When the saturated tail entered, it sampled more deeply buried poses. Lipid saturation was associated with different head group positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C113 describe detailed lipid binding modes from simulations (Figure 3C-E). The identification of two distinct poses based on tail saturation is novel and supported by contact analysis. However, the simulations used only POPC lipids, so the generalizability to other lipid species is uncertain (acknowledged in C104). The functional significance of saturation-dependent binding remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C112"
+    ],
+    "result": "Mutagenesis simulations showed that T274 remained a long-duration contact site even when mutated to alanine or tryptophan, but W217A mutation dramatically shortened lipid contacts at T274. This indicates that W217 sidechain identity influences lipid binding pose, while T274 contacts are sustained by buried position rather than sidechain size. W217A was previously shown to suppress GLIC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C112 describe mutant simulation results (Figure 3F, Figure 3\u2014figure supplement 1) that test the roles of specific residues. The differential effects of T274 vs. W217 mutations provide mechanistic insight. The connection to prior functional data (Therien and Baenziger, 2017) strengthens the interpretation. However, the mutant simulations used only 8 trajectories per mutant (vs. 100 for wild-type), which may limit statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Two outer-leaflet lipid sites were built in the closed cryo-EM structure at complementary and principal faces. The complementary site matches previous open-state structures, while the principal site has only been reported as a detergent in one open structure. Simulation occupancies were largely superimposable between resting and activating conditions, indicating reproducibility and pH-insensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe outer-leaflet sites with appropriate comparison to prior structures (Bocquet et al., 2009; Hu et al., 2018). The pH-insensitivity (C69-C70) is supported by Figure 4B-C and Figure 1\u2014figure supplement 1. However, the interpretation of pH-insensitivity should be qualified: while lipid occupancy patterns are similar, state-dependent differences were observed (C71), suggesting that conformational state rather than pH per se drives differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C116"
+    ],
+    "result": "At the complementary-face outer-leaflet site, lipid tails penetrated deeper into the intrasubunit pocket in open states (18 \u00c5 from pore) compared to closed states, with even deeper penetration (15 \u00c5) in a desensitization-associated state. This site can host allosteric modulators like propofol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75, C116 describe state-dependent lipid penetration supported by simulation data (Figure 4C, Figure 4\u2014figure supplement 1-2). The quantitative differences (5-10% probability increase) are modest but consistent. The connection to propofol binding (Heusser et al., 2018) provides functional context. However, the cryo-EM structure did not definitively capture buried tail interactions, so this remains primarily a computational prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "At the principal-face outer-leaflet site, the lipid head preferred different orientations in closed (tilted toward M3) vs. open (tilted toward M4) states in simulations. However, the closed cryo-EM structure was more consistent with the open-state orientation. The relevance of the inward-facing pose remains uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78, C118-C120 describe an apparent discrepancy between cryo-EM and simulation predictions for the principal-face site. While the outward orientation was sampled in closed simulations at lower frequency (C78, Figure 4\u2014figure supplement 2D), the predominant closed-state simulation density differed from the cryo-EM structure. This inconsistency is acknowledged (C120) but not fully resolved. Possible explanations include lipid heterogeneity, force field limitations, or conformational heterogeneity in the cryo-EM sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A putative outer-leaflet intersubunit lipid site showed state-dependent occupancy, present in open but not closed states. This site makes contacts with P250 (M2-M3 loop residue implicated in gating) and shows relatively long residence times. Lipid binding at this site preceded pore opening in MSMs, coinciding with crossing an energy barrier between closed and intermediate states. Similar intersubunit sites have been reported in other pLGICs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe a novel state-dependent lipid site supported by simulation data (Figure 5B, Figure 4\u2014figure supplement 3). The absence in closed-state cryo-EM and simulations (C80) contrasts with presence in open simulations. The connection to P250 and gating energetics (C83, Figure 4\u2014figure supplement 3D) is intriguing. Support from other pLGIC structures (C82: ELIC, GluCl, GABA-A) strengthens the finding. However, this site has not been experimentally validated in GLIC, and the functional role (C84) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C92",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study identified five lipids per subunit in closed-state GLIC (three inner-leaflet, two outer-leaflet intrasubunit sites), compared to three sites per subunit previously reported in open states. Inner-leaflet sites appear primarily structural as they show minimal state-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C92, C109-C111 summarize the lipid binding site inventory. The identification of five sites per subunit (25 total) is supported by integrated cryo-EM and simulation data. The comparison to previous open-state structures is appropriate. The interpretation of structural roles for inner-leaflet lipids (C109) is reasonable given the lack of state-dependence, though this remains somewhat speculative without direct functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study used unrestrained atomistic MD simulations (100 \u00d7 1.7 \u00b5s) to identify lipid binding sites, addressing limitations of previous approaches that used coarse-grained force fields or protein restraints. While not capturing maximal interaction durations, simulations sampled exchange of up to four lipids and showed lipid diffusion enabling exchange even from distant bulk regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 describe methodological advantages and limitations. The use of unrestrained atomistic simulations is a strength compared to prior studies (supported by citations). The acknowledgment of limitations (C96) is appropriate. The diffusion analysis (C98-C100) provides quantitative support for adequate sampling. However, the 1.7 \u00b5s timescale may still be limiting for very stable interactions, and the use of a single lipid type (POPC) is a simplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Simulations used pure POPC bilayers, which prior experiments showed support full GLIC function. The cryo-EM sample likely contained E. coli lipids (phosphatidylglycerol or phosphatidylethanolamine), but POPC was modeled for comparison with simulations. Different lipid species might influence GLIC function, particularly via interactions with charged residues at the TMD/ECD interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 acknowledge an important limitation: lipid composition mismatch between simulations (POPC) and experiments (E. coli lipids). The justification for using POPC (C101, C103) is reasonable given prior functional data. The speculation about lipid-specific effects (C104) is appropriate. However, this limitation means that specific lipid-protein interactions involving head groups may not be accurately captured, potentially affecting the interpretation of some binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C115"
+    ],
+    "result": "Lipid occupancy densities varied little between resting and activating pH conditions, indicating state rather than pH dependence. Outer-leaflet interactions were more variable between states and methods, possibly reflecting larger conformational changes in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108 and C115 provide important interpretations supported by Figure 1\u2014figure supplement 1. The distinction between pH and conformational state effects is valuable. The greater variability in the outer leaflet (C115) is consistent with known conformational changes during gating. This interpretation justifies the merging of cryo-EM datasets from different pH values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "This work demonstrates the combined power of cryo-EM and MD simulations to characterize membrane protein-lipid interactions, capturing features of lipid-tail saturation and state dependence not available from structural data alone. Such knowledge may prove useful for developing lipid-like drugs or treatments for pLGIC-related diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88, C122-C124 provide context and summarize the methodological contribution. The integration of cryo-EM and simulations is indeed a strength of the work. The identification of saturation-dependent binding modes and state-dependent sites represents novel insights. However, the therapeutic implications (C124) are highly speculative and would require extensive additional work to validate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The LTEE is a long-running experimental evolution system with 12 E. coli populations that have evolved for >75,000 generations in carbon-limited medium, showing parallel increases in fitness and cell size, similar gene expression profiles despite genetic variability, and documented metabolic changes including citrate metabolism in A-3, ecotype formation in A-2, and altered growth on various carbon sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide well-established background on the LTEE system, all supported by appropriate citations to prior work. These claims accurately describe the experimental design, evolutionary outcomes, and known phenotypic changes that provide essential context for the current metabolomics study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "LC/MS metabolomics was performed on ancestral strains and 12 evolved LTEE lines at 50,000 generations, sampling at 2 hr (exponential phase) and 24 hr (stationary phase) with two biological replicates per line, using standard LTEE culture conditions and protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C112-C117 clearly describe the experimental design and methodology. The sampling strategy is appropriate for capturing different growth phases, biological replicates provide statistical power, and the methods are adequately described with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C104"
+    ],
+    "result": "The metabolomics dataset detected 196 metabolites (168 present in all samples in at least one ionization mode, 28 with missing values). Missing data were imputed using QRILC method, with imputed values falling below detected values as expected. High correlations between biological replicates and modest correlations between ionization modes were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 and C104 describe data completeness and processing with appropriate methodological rigor. The imputation approach is justified and validated (C122), replicate correlations are high (C123), and the limitation of detecting only 196/3755 annotated E. coli metabolites is acknowledged (C104).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "PCA reveals that within-growth-phase metabolite correlations exceed across-phase correlations. A-3 separates strongly from other lines in both exponential and stationary phase, likely due to citrate metabolism. A-2 also shows separation in stationary phase, possibly related to its L ecotype identity which grows poorly on acetate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 and C32-C37 describe PCA results with appropriate statistical observations and biological interpretations. The separation of A-3 is well-explained by its unique citrate metabolism (C25, C27), and the A-2 separation is reasonably attributed to ecotype differences (C37), though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C38",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mutator lines (6 of 12) have >10-fold more mutations than non-mutators but show no strong separation in exponential phase PCA. However, in stationary phase, mutator status drives PC2 variation, with mutators showing lower nucleoside monophosphate abundances. Mutators are less flexible in carbon source utilization due to gene deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C38, C106-C108 describe mutator effects with appropriate citations and data interpretation. The lack of mutator effect in exponential phase (C29) is consistent with prior gene expression data (C30), while the stationary phase effect (C38, C106) represents a novel observation that is clearly documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C43",
+      "C44"
+    ],
+    "result": "Pairwise correlations of metabolite fold-changes across evolved lines are significantly higher than expected by chance. More parallel changes are observed in higher numbers of lines than expected, suggesting beneficial changes, while features altered in few lines show expected or fewer changes, possibly representing deleterious alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41, C43-C44 describe parallelism analysis with appropriate statistical framework (SINIB method). The interpretation distinguishes between likely beneficial (C44) and potentially deleterious (C43) changes based on observed vs. expected frequencies, though C44 appropriately notes that additional experiments are needed for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C103"
+    ],
+    "result": "All evolved lines have mutations in nadR, which encodes a transcriptional repressor of NAD biosynthesis genes. These mutations lead to upregulation of target genes and substantial increases in NAD, NADH, NADP, and NADPH (median fold-changes 3.32, 4.65, 2.34, and 3.54 respectively) in exponential phase, along with increases in pathway intermediates like aspartate and nicotinamide mononucleotide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C61 and C103 provide a complete genotype-to-metabolite connection. The genetic changes (C45), gene expression changes (C50), and metabolite increases (C51-C56, C58-C59) form a coherent chain of evidence. The quantitative measurements are specific and well-documented in figures, supporting the conclusion that nadR mutations increase intracellular NAD (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Mutations in argR, a transcriptional repressor of arginine biosynthesis, occur across evolved lines and lead to upregulation of target genes. Arginine levels increased in 9-10 of 12 evolved lines (median fold-change 1.9) in both exponential and stationary phases, though other pathway intermediates show variable changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 describe another genotype-to-metabolite connection. The genetic changes (C62, C64), predicted effects (C65), gene expression changes (C66), and metabolite measurements (C67-C69) are well-documented. However, the functional significance remains unclear, and the variable changes in other pathway compounds (C70) suggest complexity that requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In the carbon-limited LTEE environment, evolved lines show changes in central carbon metabolism. Glyoxylate cycle genes (aceB, aceA, aceK) are upregulated, and metabolites malate, aconitate, and succinate are elevated (median fold-changes 5.38, 1.66, 2.30). However, acetate quantification was prevented by methodological limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C83 describe central carbon metabolism changes with appropriate context and data. The gene expression changes (C76) and metabolite increases (C83) are documented, though the inability to measure acetate (C81) and glyoxylate (C80) limits interpretation. The connection between genetic/expression changes and metabolite levels is reasonable but not definitive due to pathway complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Despite increased glucose uptake rates (from prior work), evolved lines show similar or lower intracellular glucose, likely because glucose is rapidly consumed once imported. PEP is elevated (median fold-change 6.72), consistent with pykF mutations in all evolved lines that reduce PEP-to-pyruvate conversion, potentially increasing glucose uptake by increasing PEP availability for the phosphotransferase system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 reconcile an apparent discrepancy (C84) with a reasonable explanation (C85) and provide supporting evidence (C86-C87). The connection to pykF mutations (C88-C90) and the interpretation that PEP accumulation supports the glucose uptake hypothesis (C91) are logical, though the mechanism remains somewhat speculative and would benefit from direct flux measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Alpha-ketoglutarate and malate, which are NAD reduction points in the citric acid cycle, show elevated levels (median fold-changes 3.13 and 5.38) that correlate with NAD increases within evolved lines, potentially allowing faster citric acid cycle operation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C96 describe correlations between citric acid cycle intermediates and NAD compounds (C95) with a speculative interpretation (C96). While the measurements are documented (C94) and the biochemical context is accurate (C92-C93), the causal interpretation is uncertain. Alternative explanations (overflow metabolism, pathway regulation) are not fully explored, and flux measurements would be needed to confirm the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Overflow metabolism appears common in evolved lines, as evidenced by PEP accumulation. This may allow access to glycolytic intermediates for other purposes like sugar import, similar to the Warburg effect in cancer cells and acetate production in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C100 propose overflow metabolism as an explanation for metabolite patterns. While the definition (C98) and examples (C99) are appropriate, and PEP accumulation (C100) is documented, the interpretation remains speculative. The manuscript appropriately notes that radioactive tracer experiments are needed to confirm flux patterns and test this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C105"
+    ],
+    "result": "The metabolome integrates environment, genetics, and gene expression. Despite limited metabolome coverage (196/3755 metabolites), distinct clustering of A-3 and A-2 in PCA demonstrates that unique lineage characteristics are observable at the metabolic level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 and C105 provide appropriate conceptual framing and interpretation. The observation that limited metabolome sampling still captures lineage-specific differences (C105) is well-supported by the PCA results, though the limitation of coverage should be considered when generalizing findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Prior work shows that E. coli continues to accumulate mutations and undergo adaptive evolution during long-term stationary phase (around 3 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 accurately cites prior work on stationary phase evolution. This provides relevant context for interpreting the 24 hr stationary phase samples in the current study, though the manuscript appropriately notes that differences between early, mid, and late stationary phases in the LTEE remain unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The specific clones used in this experiment are the citrate-metabolizing variant of A-3 and the L ecotype of A-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 clearly specify which clonal variants were used, which is essential for interpreting the metabolic differences observed in these lineages. This information is properly cited and consistent with prior characterization of these populations.",
+    "result_type": "MINOR"
+  }
+]

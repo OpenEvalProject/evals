@@ -1,0 +1,404 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Cervical cancer causes approximately 600,000 incident cases and 340,000 deaths annually worldwide, with nearly 85-90% occurring in low- and middle-income countries. The disease is caused by persistent infection with approximately 13 carcinogenic HPV types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe well-established epidemiological facts about cervical cancer burden and etiology, all supported by appropriate citations to authoritative sources (Singh et al., 2023; Schiffman et al., 2007; IARC, 2022; Ferlay et al., 2020). These are background claims establishing the public health context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C57",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Modeling projections suggest that screening adult women aged 30-49 can advance cervical cancer control by 20 years compared to vaccination of adolescents (40 years to maximum benefit). A one-time screening campaign would cost ~$2.5 billion to avert ~570,000 deaths ($4,400/death), while vaccination would cost ~$2.0 billion to avert ~640,000 deaths ($3,200/death), with similar numbers needed to treat (293 vs 278).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C8 and C57, C71-C81 present modeling results with multiple acknowledged limitations (C79-C81: undiscounted, no treatment cost offsets, no demographic changes, no indirect benefits). The modeling assumptions are crude and conservative (C72, C76), and the 25% death aversion rate and other parameters lack detailed justification. While the general conclusion about timing differences is plausible, the specific quantitative estimates should be considered preliminary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "HPV DNA testing is the most sensitive screening method and is preferred by WHO over VIA where resources permit. Self-collected samples show similar sensitivity and specificity to clinician-collected samples for detecting cervical precancer, and seven LMICs were recommending HPV self-collection as of 2022.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 summarize established evidence from the literature with appropriate citations (Demarco et al., 2022; Castle et al., 2012; WHO, 2021; Arbyn et al., 2018; Serrano et al., 2022). These are well-supported background claims establishing the scientific rationale for the study approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Screen-and-treat approaches may substantially overtreat HPV infections. Visual examination techniques (VIA) have limitations including human error and low accuracy. HPV genotyping provides more accurate triage, with carcinogenicity varying predictably (HPV16 > HPV18/45 > HPV31/33/35/52/58 > HPV39/51/56/59/68). AI-based automated visual evaluation shows promise as a triage method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 present established knowledge about screening triage methods with appropriate citations (Demarco et al., 2020; Sankaranarayanan et al., 2003, 2009; Catarino et al., 2018; Qiao et al., 2008; Guan et al., 2012; Desai et al., 2020, 2022b). These background claims establish the rationale for the PAVE triage strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The PAVE study is a two-phase (efficacy 2023-2024, effectiveness 2024-2025) multi-country study aiming to recruit up to 100,000 women aged 25-49 (if HIV+) or 30-49 years across nine countries (Brazil, Cambodia, Dominican Republic, El Salvador, Eswatini, Honduras, Malawi, Nigeria, Tanzania), anticipating 1000-2000 precancers total.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 and C82-C87 describe the study design, which is clearly stated in the protocol. The anticipated precancer prevalence (C24-C25) is reasonable based on typical HPV+ populations, though actual results will depend on recruitment. These are straightforward protocol descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The PAVE protocol involves self-collection using FLOQSwab, HPV testing with ScreenFire assay (anticipating ~80% HPV-negative), followed by speculum exam with acetic acid, cervical imaging with Iris device, and biopsy collection (up to 4 acetowhite areas or endocervical sampling if none visible) for HPV-positive women. Sites using VIA employ Softbiopsy/SoftECC brush biopsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 and C92-C96 describe the study procedures as stated in the protocol. The 80% HPV-negative rate (C28) is a reasonable estimate for this age group. The protocol is clearly described with appropriate detail for a methods paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The PAVE strategy combines HPV genotyping (4 risk groups) with AI-based automated visual evaluation (3 classes: normal, indeterminate, precancer+) to create 12 risk strata. The primary objective is to compare sensitivity at a given specificity of PAVE versus standard of care (SOC), hypothesizing PAVE will show significantly greater sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 clearly describe the PAVE triage algorithm and primary study objective. The 12-stratum approach (4 HPV groups \u00d7 3 AVE classes) is logical and well-defined. The hypothesis and statistical approach are appropriate for the study design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The ScreenFire HPV assay is an isothermal multiplex nucleic acid amplification test detecting 13 hrHPV genotypes in 4 risk groups, with internal quality control, requiring basic pipetting skills and 2.5-3 hours total time for 1-96 samples. Validation in 2078 specimens showed >90% concordance and 94.2% sensitivity for CIN3+, similar to Linear Array (93.1%) and TypeSeq (95.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 and C102-C110 describe the ScreenFire assay characteristics and validation results. The validation data (C42-C46) are supported by citation to Inturrisi et al., 2024. The assay characteristics are clearly stated. However, C108 notes regulatory approval requires additional comparisons, indicating this is not yet a fully validated clinical test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Four AI algorithms are being developed: cervix detector, image quality classifier, disease classifier for precancer, and treatability/SCJ classifier. Images from the Iris device will be transferred securely and shared with the AI team for algorithm training. A pilot phase will retrain the algorithm for the Iris device, with expected success based on device similarities to previously tested cameras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C111-C114 describe the AI algorithm development plan. The need for retraining (C113) is appropriate given the new device. The expectation of success (C114) is supported by citation to prior work (Parham et al., 2023), though this remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Pathology quality assurance includes centralized expert review of all CIN2+/HSIL cases, all HPV16+ with <CIN2, all AVE precancer+ cases, and 5% of normal biopsies. Local pathologists complete performance competency review on 20 standardized cases. Results are classified as normal, low-grade (<CIN2), high-grade (CIN2, CIN3), AIS, or invasive cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C115-C118 describe comprehensive quality assurance procedures appropriate for a multi-site study. The selective review strategy is efficient and targets high-risk discordances. The competency assessment and videoconference training are appropriate quality control measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Among CIN3+ cases, approximately 50% are estimated to be HPV16+, 10-15% HPV18/45+, and 20% prevalence for each of the remaining two HPV channels (HPV31/33/35/52/58 and HPV39/51/56/59/68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 present reasonable estimates for HPV genotype distribution in CIN3+ cases based on established literature. These estimates are used for power calculations and are consistent with known HPV carcinogenicity patterns, though actual distributions may vary by population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C60"
+    ],
+    "result": "During the efficacy phase, clinicians are not provided with HPV genotyping, AI outputs, or risk strata to allow unbiased evaluation. The efficacy phase aims to refine the AVE protocol and demonstrate PAVE superiority for detecting precancer. The effectiveness phase will begin if PAVE outperforms SOC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C60 describe appropriate blinding during the efficacy phase to prevent bias. The conditional progression to effectiveness phase (C55) is a reasonable study design decision based on efficacy results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The statistical analysis will plot 12-stratum PAVE risk scores as ROC curves, yielding AUC for both PAVE and SOC strategies. Sensitivity will be compared at the (1-specificity) value produced by SOC, with analysis stratified by HIV status where available. Reproducibility will be assessed by measuring AUC variability across sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 describe appropriate statistical methods for comparing screening strategies. The approach of comparing sensitivities at matched specificity is standard for triage test evaluation. HIV stratification and cross-site reproducibility assessment are important secondary analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "During the effectiveness phase, AI algorithms will guide image capture and provide disease classification (normal/indeterminate/precancer+) and SCJ visibility assessment (fully/partially/not visible). Combined with HPV genotyping, the device outputs risk categories (lowest/low/medium/high/highest) to aid treatment decisions. This phase assesses feasibility and acceptability in clinical practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 describe the planned effectiveness phase implementation. The real-time clinical decision support is a logical next step after efficacy validation. The focus on feasibility and acceptability (C130) is appropriate for implementation research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "A microsimulation model of genotype-specific HPV natural history is being developed for evaluating novel triage tests including AVE. Micro-costing efforts are underway to estimate screening episode costs. These tools will estimate real-world costs and health benefits and can be adapted to different settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C131-C133 describe appropriate health economics methods. The microsimulation model (C56, supported by Campos et al., 2021) and micro-costing (C131) are standard approaches for cost-effectiveness analysis. The adaptability claim (C133) is reasonable but remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "A Communication and Retention Workgroup is conducting a mixed-methods pilot study at four sites (Brazil, El Salvador, Nigeria, Tanzania) to explore stakeholders' knowledge, perceptions, and attitudes regarding cervical cancer prevention and screening, aiming to develop effective engagement strategies for LMIC communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 describe an appropriate ancillary study to support implementation. Understanding stakeholder perspectives is important for dissemination and implementation, though the actual findings are not yet available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C137"
+    ],
+    "result": "The study has been initiated in nine countries. A preliminary interim analysis is expected by early 2024, with field recruitment completed by end of 2024.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C137 state the study timeline and current status. These are straightforward statements about study progress, though actual timelines may vary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Ethical oversight is conducted by local IRBs following local guidelines. All participants provide informed consent and can withdraw anytime. Data are de-identified before transfer outside countries of origin, with data rights remaining with study site partners. De-identified data are transferred via EHAS to NCI-IMS for analysis, with data on loan and subject to withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 and C97-C101 describe appropriate ethical and data management procedures. The data sovereignty arrangement (C100-C101) is noteworthy and appropriate for international research, respecting partner country data rights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The effectiveness phase will examine feasibility, acceptability, and cost-effectiveness. The Iris device with AI algorithms provides decision support by evaluating image quality, lesion presence, and SCJ visibility. The AI serves as an assistant to medical management, integrating with HPV data and clinical findings. Regulatory guidance on AI algorithm use is expected before implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 and C138-C146 appropriately discuss regulatory and ethical considerations for AI in healthcare. The characterization of AI as decision support (C63, C143-C144) is appropriate. The expectation of clearer guidance (C146) is reasonable given WHO's active evaluation (C145).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Device/assay selection is based on accuracy and affordability, with no commercial conflicts of interest among NCI collaborators. Implementation will require stakeholder buy-in, workforce retraining, and de-implementation of existing strategies. Cytology/colposcopy programs are effective but limited and costly. Countries switching to PAVE will need funding for equipment and materials, with workforce implications including reduced cytotechnologist/pathologist needs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 and C148-C156 appropriately discuss implementation challenges and resource implications. The conflict of interest disclosure (C65) is important. The discussion of implementation barriers (C66, C150, C153-C156) is realistic, though these are speculative projections about future adoption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C157"
+    ],
+    "result": "The PAVE objective is to create an accurate, feasible, cost-effective screening and triage protocol for resource-limited settings. If proven effective, cost-effective, feasible, and acceptable, the strategy could have major impact in reducing cervical cancer, particularly among non-vaccinated adult women. The project is supported by the U.S. Cancer Moonshot initiative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 and C157 state the study objectives and potential impact. The conditional statement about impact (C69) is appropriately cautious. The Cancer Moonshot support (C70) is documented. These are appropriate concluding statements for a protocol paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Consortial sites are responsible for their own study costs. Research equipment, supplies, and NCI-affiliated staff are funded by the NCI Intramural Research Program with Cancer Moonshot supplemental funding. No commercial support was obtained. Brian Befano was supported by NCI/NIH Grant T32CA09168.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 provide clear funding disclosures as stated in the manuscript. These are straightforward factual statements about funding sources.",
+    "result_type": "MINOR"
+  }
+]

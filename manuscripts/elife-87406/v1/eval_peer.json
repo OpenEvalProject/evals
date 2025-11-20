@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Bactabolize is a reference-based tool that rapidly produces strain-specific metabolic models and growth phenotype predictions in under 3 minutes per genome. The tool builds upon established methods, leverages the COBRApy framework and BiGG nomenclature, uses bi-directional BLAST for ortholog identification, and employs a conservative gap-filling approach.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers acknowledge Bactabolize as a valuable and useful tool for rapid metabolic model reconstruction. Reviewer 1 states it is 'a valuable tool for the rapid genome-scale reconstruction of bacteria,' Reviewer 2 describes it as 'a useful tool' with 'well-presented' data, and Reviewer 3 acknowledges the authors 'present a pipeline for generating strain-specific genome-scale metabolic models.' The core functionality and methodological approach are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The KpSC-pan v1 model comprises 1265 distinct genes, 2319 reactions, and 1696 metabolites, constructed by combining 37 manually curated models with previously demonstrated high accuracy (88.3\u201396.8%) representing diverse KpSC taxa.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the construction and characteristics of the KpSC-pan v1 model without criticism. Reviewer 1 notes the tool 'relies on a reference pan-genome model' and that 'the evidence in this specific case is solid.' The model's composition and validation are not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C70",
+      "C71",
+      "C72",
+      "C83",
+      "C84",
+      "C90",
+      "C91",
+      "C92",
+      "C95",
+      "C144"
+    ],
+    "result": "The Bactabolize-derived model for K. pneumoniae KPPR1 performed comparatively or better than CarveMe and gapseq across substrate and knockout predictions, achieving the highest overall accuracy metrics with fewer false-positive predictions. Bactabolize outperformed even the manually curated iKp1289 model for the same strain.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly confirms these findings, stating 'They then compared predictions of carbon, nitrogen, phosphor, and sulfur sources and found that the Bactabolize reconstruction had the overall highest accuracy.' Reviewer 1 notes 'the evidence in this specific case is solid.' The comparative performance data are accepted without challenge across all reviews.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C49",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Draft genomes passing systematically defined quality control criteria resulted in models with high completeness (\u226599% genes and reactions) and high accuracy (mean 0.97, n=10). Assembly quality metrics including graph dead-ends, contig counts, and N50 were systematically analyzed to establish optimal QC thresholds, with assembly graph dead-ends \u2264200 providing the best balance of sensitivity and specificity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'the evidence in this specific case is solid' and notes the methodology is 'validated.' Reviewer 2 describes the data as 'well-presented' and the paper as 'well-written,' indicating acceptance of the systematic quality control analysis. The detailed QC criteria and their validation are not challenged by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Draft models for 10 novel KpSC clinical isolates were associated with high accuracy metrics for growth predictions on 16 carbon sources, with models for isolates with STs represented in the reference performing slightly better (mean accuracy 0.98) than non-represented STs (mean accuracy 0.95).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'they built draft reconstructions for 10 clinical isolates of K. pneumoniae and evaluated their predictive performance,' accepting this validation without criticism. The high accuracy across diverse isolates is acknowledged as part of the overall solid evidence base mentioned by Reviewer 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C53",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Bactabolize addresses the gap in available tools for constructing strain-specific metabolic models at scale. However, its reference-based reconstruction approach is reductive, requiring a high-quality reference model that captures species diversity. While a pan-model from 37 strains proved sufficient for KpSC, the tool's effectiveness depends on the quality and relatedness of the reference model used.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises a critical concern that 'the tool requires a reference pan-genome-based complete model to generate the strain-specific model of the species of interest, which in this study is Klebsiella pneumoniae. This requirement renders the tool redundant for high-throughput purposes since the process of building or generating the pan-genome reference model is performed separately.' Reviewer 3 further notes 'this tool, on its own, can only work specifically with the available pan-genome model of reference, which in this case is only applicable to Klebsiella pneumoniae. Its effectiveness with other bacteria has not been proven.' This directly challenges the generalizability and high-throughput utility claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C163"
+    ],
+    "result": "Several open-source tools exist for rapid metabolic model construction (CarveMe, gapseq, ModelSEED, KBase), each with distinct advantages and limitations. CarveMe and gapseq show good performance but have specificity concerns with universal models. Bactabolize demonstrates competitive speed (98 seconds) compared to CarveMe (20-30 seconds) but is much faster than gapseq (5.46 hours), making gapseq inappropriate for datasets with hundreds to thousands of genomes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis of existing tools is accepted by reviewers. Reviewer 2 notes the comparison with 'CarveMe as well as a manually curated reconstruction' without criticism. The timing and performance comparisons are presented as factual benchmarking data that reviewers do not challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Of 901 draft assemblies passing QC criteria, 23 failed to simulate growth on M9 minimal media with glucose. Conservative gap-filling (median 1 reaction added) restored growth in 21 of 23 cases, with 18/21 achieving \u226599% prediction concordance across 846 growth conditions, demonstrating that gap-filled models passing QC are suitable for substrate growth prediction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gap-filling analysis and its validation are accepted without challenge. Reviewer 1's statement that 'the evidence in this specific case is solid' encompasses these methodological details. The conservative gap-filling approach and its effectiveness are not questioned by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "MEMOTE scores provide a measure of model portability and database connectivity but bear no reflection on model accuracy. Bactabolize performs on the lower end of MEMOTE scores compared to CarveMe universal and gapseq, though it outperforms CarveMe's model propagation mode when using the same reference.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MEMOTE score analysis is presented as a quality metric assessment and is not challenged by reviewers. The distinction between metadata quality (MEMOTE) and predictive accuracy is accepted as part of the comprehensive benchmarking approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "For gene essentiality predictions, gapseq produced the highest absolute number of true-positives (79/1403), followed by Bactabolize (44/1220) and CarveMe (39/1951). However, Bactabolize achieved the greatest precision and specificity, while gapseq had the highest F1 score and sensitivity. Overall accuracies were high for all three methods (80.57-83.96%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene essentiality prediction results are part of the comprehensive benchmarking accepted by reviewers. Reviewer 2's acknowledgment of the 'well-presented' data includes these comparative metrics, which are not challenged by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C169",
+      "C170"
+    ],
+    "result": "Bactabolize and the KpSC pan v1 model are freely available under open-source licenses, satisfy FAIR principles, and will facilitate population-wide metabolic analyses for understanding pathogen transmission, disease, drug resistance evolution, and identifying therapeutic targets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The availability and potential applications are acknowledged by reviewers without challenge. Reviewer 1 describes the tool as 'valuable' and Reviewer 2 as 'useful,' implicitly accepting its potential utility for the stated applications.",
+    "result_type": "MINOR"
+  }
+]

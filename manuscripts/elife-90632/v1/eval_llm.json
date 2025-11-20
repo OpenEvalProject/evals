@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Doc2\u03b1 is the major Ca2+ sensor for asynchronous release after single action potentials at excitatory mouse hippocampal synapses. Using iGluSnFR imaging, electrophysiology, and electron microscopy, the authors demonstrate that Doc2\u03b1 KO neurons show 54-67% reduction in asynchronous release after single stimuli, while syt7 KO neurons show no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (iGluSnFR imaging in cultured neurons, patch-clamp electrophysiology in acute slices, and zap-and-freeze electron microscopy) consistently demonstrate that Doc2\u03b1 deletion reduces asynchronous release by 54-67% after single action potentials, while syt7 deletion has no significant effect. The convergence of evidence from three distinct methodologies strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "Syt7 is absolutely required for transient docking of synaptic vesicles on millisecond timescales. Electron microscopy experiments show that in syt7 KO neurons, docked vesicles fail to recover after depletion (remaining at less than half of baseline at 14 ms), while WT neurons show complete recovery to baseline by 14 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electron microscopy data (C59-C62) provide direct ultrastructural evidence that syt7 KO neurons fail to replenish docked vesicles after stimulation, with quantitative measurements showing significant differences at 14 ms (p<0.0001). The conclusion (C63, C66) is well-supported by the morphological data, though the mechanism by which syt7 promotes docking remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "During repetitive stimulation, both Doc2\u03b1 and syt7 contribute to asynchronous release from the second pulse onward. Both knockouts show ~50-65% reduction in asynchronous release during train stimulation, with syt7 KO additionally showing severe synaptic depression and paired-pulse depression instead of facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The train stimulation experiments using both iGluSnFR imaging (C41-C47) and electrophysiology (C49-C53) consistently demonstrate that both Doc2\u03b1 and syt7 are required for asynchronous release during repetitive activity. The quantitative measurements show similar reductions (~50-65%) in both knockouts, with additional short-term plasticity defects in syt7 KO. The data are internally consistent across methodologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Doc2\u03b1 is dispensable for activity-dependent docking but continues to mediate asynchronous release during repetitive stimulation. Doc2\u03b1 KO neurons show normal or even faster docked vesicle recovery (40% greater at 11 ms) but maintain reduced asynchronous release throughout train stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electron microscopy data (C64-C65) directly demonstrate that Doc2\u03b1 KO neurons have normal or enhanced docking recovery, while functional data (C9) show persistent reduction in asynchronous release. This dissociation between docking and release phenotypes supports the conclusion that Doc2\u03b1 acts as a fusion sensor rather than a docking factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Epistasis experiments using Doc2\u03b1/syt7 double knockout mice demonstrate non-additive effects on asynchronous release, supporting a sequential model where syt7 acts upstream of Doc2\u03b1. The DKO phenotype resembles Doc2\u03b1 KO for asynchronous release but shows unique short-term plasticity defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis experiments (C90-C94) provide strong genetic evidence for a sequential pathway. The non-additive phenotype for asynchronous release (C90-C91) indicates that syt7 and Doc2\u03b1 function in the same pathway rather than parallel pathways. The unique short-term plasticity phenotype in DKO (C92-C94) is consistent with syt7's role in docking affecting both synchronous and asynchronous release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C68",
+      "C69",
+      "C89",
+      "C95",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors propose a sequential model where syt7 drives activity-dependent docking to supply vesicles for both synchronous (syt1-mediated) and asynchronous (Doc2\u03b1-mediated) release during ongoing transmission. This model is supported by both experimental data and mathematical modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequential model (C11, C68-C69, C89) is well-supported by the integration of functional, ultrastructural, and genetic epistasis data. The mathematical modeling (C103-C105) demonstrates that this mechanism can qualitatively recapitulate the experimental observations. However, the model makes simplifying assumptions and alternative mechanisms cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A mathematical model implementing syt7 as a docking catalyst and Doc2\u03b1 as a fusion sensor qualitatively recapitulates the experimental observations. The model shows that syt7-mediated docking promotes both synchronous and asynchronous release from the second stimulus onward, while Doc2\u03b1 specifically promotes asynchronous release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical model (C70-C88) provides a mechanistic framework that is qualitatively consistent with experimental data. However, the authors acknowledge that parameters are not uniquely determined (C88) and that the model makes simplifying assumptions (C113-C118). The model serves as a proof-of-concept that the proposed mechanism is plausible but does not provide quantitative predictions or rule out alternative mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Unstimulated syt7 and Doc2\u03b1 KO synapses appear morphologically normal with no changes in the number of docked vesicles at rest or distribution of vesicles near the active zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electron microscopy data (C54-C55) demonstrate that baseline synaptic ultrastructure is unaffected in both knockouts, establishing that the observed functional defects are not due to developmental or structural abnormalities. This is an important control for interpreting the activity-dependent phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Doc2\u03b1 KO neurons show normal paired-pulse facilitation but slower synaptic depression during train stimulation compared to WT, eventually reaching the same steady-state depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The iGluSnFR imaging data (C43-C44) demonstrate that Doc2\u03b1 deletion does not affect initial paired-pulse responses but alters the time course of depression during trains. This is consistent with the model that reduced asynchronous release spares vesicles for synchronous transmission.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "No spatial segregation of asynchronous release was observed during the first two responses in train stimulation, based on analysis of 923 boutons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial analysis (C48) addresses a potential confound that different boutons might respond differently to sequential stimuli. The finding that asynchronous release is not spatially segregated supports the interpretation that the observed phenotypes reflect changes in release properties at individual synapses rather than selective activation of different synapse populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The model implements syt7 as a catalyst for docking, increasing both docking and undocking rates, which ensures steady-state docking is independent of syt7 presence. However, this catalytic function does not explain syt7's established role in facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The catalytic model for syt7 (C106-C107) is consistent with the observation that steady-state docking is normal in syt7 KO, but the authors acknowledge it does not explain facilitation (C108), which has been proposed to depend on increased docking. The authors suggest alternative mechanisms (C109) but do not test them, leaving this aspect of syt7 function unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The model implements competition between syt1 and Doc2\u03b1 for Ca2+ binding, which was necessary to recapitulate the reduced depression observed in Doc2\u03b1 KO neurons. This competition may reflect limited 'slots' at release sites or competition for docked vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The implementation of competition between sensors (C113-C114) was necessary for the model to match experimental observations, and the authors provide plausible molecular interpretations (C115-C116) supported by prior literature. However, the model lumps together multiple processes (C117) and cannot distinguish between different forms of competition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript provides extensive background on the controversy regarding Ca2+ sensors for asynchronous release, documenting conflicting findings in the literature regarding both Doc2\u03b1 and syt7 across different synapse types and experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C12-C29) accurately summarize established knowledge and controversies in the field, supported by appropriate citations. They provide essential context for understanding the significance of the current work but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors discuss recent proposals that rapid vesicle docking during activity underlies asynchronous release and short-term plasticity, and note that syt7's plasma membrane localization (rather than vesicular) may be relevant to its role in docking versus fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C96-C102) provide important context from recent literature and the authors' prior work. The speculation about syt7 localization (C102) is reasonable given the cited evidence but remains to be directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The cultured hippocampal neurons used in this study only facilitate very slightly, making it difficult to assess syt7's role in facilitation in this preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation (C111) is supported by the data in Figure 3 and represents an important limitation of the experimental system for addressing certain questions about syt7 function. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Recent analysis indicates that syt1 pre-associates with release site 'slots' at resting Ca2+ concentrations, which would limit access for other sensors and account for syt1's clamping effect on spontaneous transmission and asynchronous release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C119-C120) cite recent literature to discuss mechanisms not explicitly modeled in the current work. They provide useful context for interpreting the competition between sensors but represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Notch signaling is activated in newborn L4 neurons but not L5 neurons, as evidenced by Hey expression in L4 but not L5. Hey is expressed prior to the initiation of secondary HDTFs Ap and Pdm3, suggesting a causal relationship between Notch signaling and differential HDTF activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 provide converging evidence from immunostaining (Hey colocalization with Bsh+ L4 but not L5) and temporal analysis (Hey expression precedes Ap/Pdm3 initiation). The data are consistent with Notch activation specifically in L4 neurons during neurogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "L4 and L5 neurons are not siblings generated from an asymmetric LPC division. Twin-spot MARCM experiments show that sibling pairs are either both L4 or both L5 neurons, ruling out obligate asymmetric division to produce L4/L5 siblings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by twin-spot MARCM lineage tracing data (Figure 1E-H). The observation that GFP/RFP pairs are both L4 or both L5 directly contradicts the hypothesis of L4/L5 as obligate siblings and supports an extrinsic mechanism for differential Notch activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "Delta is specifically expressed in L1 neurons and a subset of LPCs, and Delta expression in L1 is required for activating Notch signaling in adjacent L4 neurons. Delta knockdown abolishes Hey expression in L4 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C40-C41 are supported by immunostaining showing Delta expression in L1 neurons adjacent to L4 (Figure 2A-B) and Delta-KD experiments showing loss of Hey in L4 (Figure 2E-F''). This establishes a causal link between L1-derived Delta and L4 Notch activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Delta expression in L1 neurons does not depend on the L1-specific transcription factor Svp, suggesting Delta may be inherited from Delta-expressing LPCs rather than activated by Svp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by Svp-KD experiments (Figure 2\u2014figure supplement 1) showing that Delta and Hey expression remain unaffected despite loss of Svp. However, the inference that Delta is inherited from LPCs is speculative and requires additional lineage tracing or temporal analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In the absence of Notch signaling (N-KD or Delta-KD), Bsh activates Pdm3 but not Ap, resulting in specification of L5 fate at the expense of L4. The total number of Bsh+ neurons remains unchanged, but they adopt L5 identity and settle in a single mixed layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by N-KD and Delta-KD experiments showing loss of Hey, increased Pdm3+ neurons, decreased Ap+ neurons, and altered cell body positioning (Figures 3, Figure 3\u2014figure supplement 2). The data demonstrate necessity of Notch for L4 fate specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Notch signaling is sufficient for Bsh to activate Ap and specify L4 fate. Ectopic Notch activation (N-ICD) in newborn L5 neurons results in ectopic Hey expression, followed by Ap expression and L4-like morphology and connectivity, at the expense of L5 fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by N-ICD gain-of-function experiments showing ectopic Hey in L5, increased Ap+ neurons, decreased Pdm3+ neurons, and L4-like morphology/connectivity (Figure 4, Figure 4\u2014figure supplements 1-3). This demonstrates sufficiency of Notch for L4 fate specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Notch signaling and Bsh expression are mutually independent. N-KD does not affect Bsh expression, and Bsh-KD does not affect Hey expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by reciprocal knockdown experiments (Figure 5A-F) showing that loss of Notch does not affect Bsh+ cell number and loss of Bsh does not affect Hey expression. This establishes independence of these two pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In the absence of Bsh, NotchON neurons (Hey+) adopt L3 fate, expressing L3 markers Zfh1 and Erm and exhibiting L3-specific morphology and connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by Bsh-KD experiments with Hey+ neuron tracing (Figure 5G-O) showing that Hey+ neurons express L3 markers and adopt L3 morphology/connectivity in the absence of Bsh. This demonstrates that Notch alone is insufficient for L4 fate without Bsh.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "L4 and L5 neurons show distinct open chromatin landscapes. L4-distinct open chromatin regions are enriched for Su(H) binding motifs and L4-specific transcribed genes, while L5-distinct regions are enriched for L5-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by TaDa experiments (Figure 6B, Figure 6\u2014figure supplement 2) showing differential open chromatin between L4 and L5, with significant enrichment of cell-type-specific genes in corresponding open chromatin regions. The Su(H) motif enrichment in L4 regions is consistent with Notch signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "L4 and L5 neurons show distinct Bsh genome-binding loci, and L4-distinct Bsh-bound loci are enriched for L4-specific transcribed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by Bsh:Dam TaDa experiments (Figure 6C) showing differential Bsh binding between L4 and L5, with significant enrichment of L4-specific genes at L4-distinct Bsh-bound loci. This links differential chromatin accessibility to differential Bsh binding and gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "L5-specific transcribed genes are not significantly enriched in L5-distinct Bsh-bound loci, suggesting another factor (e.g., Pdm3) may be required for L5-specific gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by the lack of significant enrichment in the TaDa analysis (Figure 6\u2014figure supplement 2C). However, the interpretation that Pdm3 may be required is speculative and requires experimental validation. The result is nonetheless clearly stated and supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C73"
+    ],
+    "result": "The primary HDTF Bsh integrates with Notch signaling to specify distinct neuronal fates: Bsh with Notch specifies L4, Bsh alone specifies L5, and in the absence of Bsh, Notch with ectopic Zfh1 specifies L3 (NotchON) or L1 (NotchOFF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C73 synthesize the major findings from loss- and gain-of-function experiments. The model is well-supported by the collective data showing how Notch and Bsh combinatorially specify cell fates, with Bsh-KD revealing ectopic L3/L1 fates (Figure 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Bsh is a primary HDTF that is initiated in LPCs and maintained in L4 and L5 neurons, where it activates secondary HDTFs Ap (L4) and Pdm3 (L5) and couples initial fate decisions to circuit formation and functional gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C17-C18, C29-C31 are from the companion paper (Xu et al., 2023) and provide essential context. While these are cited findings rather than new data in this manuscript, they are accurately represented and form the foundation for the current study's hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background knowledge about Notch signaling, neuronal diversification, and Drosophila lamina structure is established through multiple citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C16, C19-C28 represent established knowledge from the literature with appropriate citations. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Discussion of Notch signaling in other systems (ventral nerve cord, cultured cells) and the role of transcription factors in neuronal specification provides comparative context for the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 cite established knowledge from other systems to contextualize the findings. These are accurately represented with appropriate citations and support the discussion of the study's broader implications.",
+    "result_type": "MINOR"
+  }
+]

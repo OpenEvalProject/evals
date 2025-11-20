@@ -1,0 +1,1822 @@
+{
+  "submission": {
+    "id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T19:59:48.863210Z",
+    "updated_at": "2025-11-20T19:59:48.863210Z"
+  },
+  "content": [
+    {
+      "id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "content_type": "manuscript",
+      "content_text": "# Interface-acting nucleotide controls polymerization dynamics at microtubule plus- and minus-ends\n\n## Authors\n\n- Luke M Rice<sup>1</sup> ([ORCID: 0000-0001-6551-3307](https://orcid.org/0000-0001-6551-3307)) \u2020\n- Lauren A McCormick<sup>1</sup> ([ORCID: 0000-0001-9164-0932](https://orcid.org/0000-0001-9164-0932))\n- Joseph M Cleary<sup>2</sup> ([ORCID: 0000-0003-0879-2543](https://orcid.org/0000-0003-0879-2543))\n- William O Hancock<sup>2</sup> ([ORCID: 0000-0001-5547-8755](https://orcid.org/0000-0001-5547-8755)) \u2020\n\n### Affiliations\n\n1. Department of Biophysics and Biochemistry, the University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n2. Department of Biomedical Engineering, Pennsylvania State University State College United States ([ROR:04p491231](https://ror.org/04p491231))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGTP-tubulin is preferentially incorporated at growing microtubule ends, but the biochemical mechanism by which the bound nucleotide regulates the strength of tubulin:tubulin interactions is debated. The \u2018self-acting\u2019 (cis) model posits that the nucleotide (GTP or GDP) bound to a particular tubulin dictates how strongly that tubulin interacts, whereas the \u2018interface-acting\u2019 (trans) model posits that the nucleotide at the interface of two tubulin dimers is the determinant. We identified a testable difference between these mechanisms using mixed nucleotide simulations of microtubule elongation: with a self-acting nucleotide, plus- and minus-end growth rates decreased in the same proportion to the amount of GDP-tubulin, whereas with interface-acting nucleotide, plus-end growth rates decreased disproportionately. We then experimentally measured plus- and minus-end elongation rates in mixed nucleotides and observed a disproportionate effect of GDP-tubulin on plus-end growth rates. Simulations of microtubule growth were consistent with GDP-tubulin binding at and \u2018poisoning\u2019 plus-ends but not at minus-ends. Quantitative agreement between simulations and experiments required nucleotide exchange at terminal plus-end subunits to mitigate the poisoning effect of GDP-tubulin there. Our results indicate that the interfacial nucleotide determines tubulin:tubulin interaction strength, thereby settling a longstanding debate over the effect of nucleotide state on microtubule dynamics.\n\n## Introduction\n\nMicrotubules are dynamic polymers of \u03b1\u03b2-tubulin that support motor-based transport of cargo through the cytoplasm and orchestrate the movement of chromosomes in dividing cells (Akhmanova and Kapitein, 2022; Barlan and Gelfand, 2017; Cleary and Hancock, 2021; Gudimchuk and McIntosh, 2021; Prosser and Pelletier, 2017). Microtubules grow by the addition of GTP-bound tubulin to the polymer ends. Once incorporated into the microtubule lattice, tubulins hydrolyze their bound GTP. The change in nucleotide state triggers conformational changes that weaken interactions between neighboring tubulins and ultimately results in catastrophe, the switch from growth to shrinkage (Bowne-Anderson et al., 2013; Gudimchuk and McIntosh, 2021; LaFrance et al., 2022; Manka and Moores, 2018; Roostalu et al., 2020; Seetapun et al., 2012; Zanic et al., 2013). Defining the connection between nucleotide state and tubulin:microtubule binding kinetics is crucial for understanding how microtubules grow and how they transition to catastrophe. However, the mechanism by which nucleotide controls the strength of tubulin:tubulin interactions remains debated.\n\nAn early model explained the nucleotide-dependence of microtubule stability by positing that nucleotide state determines the conformation of tubulin: GTP-tubulin would form strong lattice contacts because GTP favors a \u2018straight\u2019 conformation compatible with the microtubule lattice, and GDP-tubulin would form weak lattice contacts because GDP favors a \u2018curved\u2019 conformation incompatible with the microtubule lattice (Drechsel and Kirschner, 1994; Howard and Timasheff, 1986; Melki et al., 1989; Nicholson et al., 1999; Shearwin et al., 1994; Tran et al., 1997; Wang and Nogales, 2005). By assuming that nucleotide controls the conformation of the tubulin to which it is bound, this model embodied a \u2018cis-acting\u2019 view of nucleotide action. However, subsequent work demonstrated that both GTP- and GDP-tubulin adopt the same curved conformation (Nawrotek et al., 2011; Pecqueur et al., 2012; Rice et al., 2008), which contradicted a core assumption of the cis-acting model. These structural findings led to the proposal of a \u2018trans-acting\u2019 mechanism in which the nucleotide bound to one tubulin controls the strength of its interactions with the next tubulin through direct contacts and/or by causing loop movements that lead to better polymerization contacts (Ayaz et al., 2012; Buey et al., 2006; Nawrotek et al., 2011; Piedra et al., 2016; Rice et al., 2008). The \u2018trans\u2019 mechanism is supported by the knowledge that the nucleotide binding site on \u03b2-tubulin forms part of the polymerization interface with the \u03b1-tubulin from the next subunit in the protofilament, and it is also consistent with the largest nucleotide-dependent conformational changes in the microtubule occurring in \u03b1-tubulin adjacent to the \u03b2-tubulin-bound nucleotide (Alushin et al., 2014; Manka and Moores, 2018; Zhang et al., 2015). However, the field has still not reached a consensus on the mechanism of nucleotide action (Brouhard, 2015; Brouhard and Rice, 2018; Brun et al., 2009; Luo et al., 2023; Margolin et al., 2012; Schmidt and Kierfeld, 2021; Stewman et al., 2020; VanBuren et al., 2005; VanBuren et al., 2002; Zakharov et al., 2015) and this persistent ambiguity about how nucleotide state influences tubulin:tubulin interactions limits our understanding of microtubule dynamics.\n\nMicrotubule plus- and minus-ends are structurally distinct: plus-ends present a \u03b2-tubulin polymerization interface that contains the exchangeable nucleotide, whereas minus-ends present an \u03b1-tubulin polymerization interface that does not expose a nucleotide. Debate over cis- and trans-acting mechanisms (reviewed in Gudimchuk and McIntosh, 2021) has persisted in part because most studies have focused solely on the plus-end, where two nucleotides \u2013 one bound to the terminal tubulin (the cis nucleotide), and one at the interface between the terminal tubulin and the next subunit in the microtubule lattice (the trans nucleotide) \u2013 could in principle be dictating the strength of lattice contacts. At the minus-end, by contrast, the exchangeable nucleotide of the terminal tubulin is already buried in the microtubule lattice. We reasoned that this fundamental difference between the plus- and minus-ends might provide a new way to test the conflicting mechanisms of nucleotide action. A few studies have compared plus- and minus-end dynamics (Strothman et al., 2019; Tanaka-Takiguchi et al., 1998; Walker et al., 1988), but only one of them sought to manipulate nucleotide state in a controlled manner (Tanaka-Takiguchi et al., 1998). For generality in considering both ends, we will hereafter refer to the trans mechanism as \u2018interface-acting\u2019, and the cis mechanism as \u2018self-acting\u2019.\n\nThe goal of the present study was to determine whether self-acting or interface-acting mechanisms of nucleotide action govern the strength of tubulin:tubulin contacts in the microtubule. Our approach used simulations and experiments to compare how plus- and minus-end elongation are affected by GDP-tubulin. We first simulated microtubule elongation in mixed nucleotide states using models that implemented self- or interface-acting mechanisms. These simulations revealed a striking difference between the two mechanisms of nucleotide action: in the self-acting model, GDP-tubulin inhibited plus- and minus-ended growth to the same extent, but in the interface-acting model, GDP-tubulin disproportionately inhibited plus-ended growth. This observation was consistent with an earlier study that showed a selective suppression of plus-end elongation when GDP was included in the reaction mixture (Tanaka-Takiguchi et al., 1998). However, the reaction conditions in that earlier study did not suppress GTPase activity, and the consequent high frequency of plus-end catastrophe prevented an examination of how GDP affected microtubule growth rates. We tested our predictions experimentally using \u2018mixed nucleotide\u2019 assays (containing both slowly hydrolyzable GMPCPP and GDP) to prevent catastrophe, allowing us to directly compare the relative effects of GDP-tubulin on plus- and minus-end growth rates. We found that plus-end growth was disproportionately affected by GDP-tubulin, providing strong new evidence in support of the interface-acting mechanism. Further simulations revealed that nucleotide exchange can modulate the magnitude of plus-end poisoning by GDP-tubulin (Cleary et al., 2022b; Piedra et al., 2016; Vandecandelaere et al., 1995). By ruling out a self-acting (cis-acting) mechanism of nucleotide action, our findings provide new evidence that resolves a longstanding debate about how the bound nucleotide governs the tubulin:tubulin interactions that dictate microtubule growth.\n\n## Results\n\n### Self- and interface-acting mechanisms of nucleotide action predict different effects of GDP-tubulin on plus- and minus-end growth\n\nThe self- and interface-acting mechanisms for how nucleotide dictates the strength of tubulin:tubulin interactions are illustrated in Figure 1A: the self-acting mechanism posits that the nucleotide bound to \u03b2-tubulin (GTP or GDP) controls how tightly that tubulin interacts with the lattice, whereas the interface-acting mechanism posits that the nucleotide at the interface between tubulin dimers controls how tightly they interact. At the plus-end, the two mechanisms can lead to different outcomes because there are two nucleotides involved \u2013 one bound to the terminal tubulin and one at the interface below (Figure 1A, top panels). At the minus-end, however, the two mechanisms are indistinguishable because there is only one nucleotide involved: the nucleotide bound to the terminal subunit is also the nucleotide at the interface with the lattice (Figure 1A, bottom panels). Using kinetic simulations of microtubule elongation, we sought to identify a testable difference between the self- and interface-acting mechanisms. We first expanded our model (Ayaz et al., 2014; Cleary et al., 2022b; Kim and Rice, 2019; Piedra et al., 2016) to simulate both plus- and minus-end elongation and to include multiple nucleotide states for unpolymerized tubulin (summarized in Figure 1\u2014figure supplement 1). We then used the model to predict how GDP-tubulin might affect plus- and minus-end elongation with either the self- or interface-acting mechanisms of nucleotide action.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cartoon showing self- (cis) or interface-acting (trans) nucleotide mechanisms. In an interface-acting mechanism, the nucleotide at the interface of two tubulin dimers controls their interaction affinity, shown by a white arrow. In a self-acting mechanism, the nucleotide bound to the terminal tubulin controls how tightly that tubulin interacts with the lattice. At the plus-end, the two mechanisms can lead to different outcomes because there are two nucleotides involved \u2013 one bound to the terminal \u03b2-tubulin, and one at the interface between the terminal tubulin and the microtubule lattice. At the minus-end, however, self-acting and interface-acting mechanisms are equivalent because the incoming nucleotide becomes the interfacial nucleotide. T=GTP, T/D=GTP or GDP, D=GDP. (B and C) Simulated growth rates of GTP microtubule plus- and minus-ends, using arbitrarily chosen parameters that support elongation in the chosen concentration range. (B) In a self-acting mechanism, both plus-end (circles) and minus-end (squares) growth rates are predicted to decrease linearly with the amount of GDP-tubulin. (C) In an interface-acting mechanism, plus-end (circles) growth rates are predicted to be disproportionately impacted by GDP-tubulin relative to minus-end growth rates. Error bars are standard deviation (n=50 per condition) and if not visible, are obscured by the symbols. Simulation parameters are: kon: 1.0 \u03bcM\u20131 s\u20131, KDlong = 100 \u03bcM, KDcorner = 100 nM, KDlong,GDP = 300 mM. The predicted difference between mechanisms at the plus-end is robust across different choices for KDlong, KDcorner, and the GDP weakening effect (Figure 1\u2014figure supplement 3). Note that because the two mechanisms are equivalent at the minus-end, interface-acting simulations for the minus-end use the same simulation results as the self-acting simulations. The total [tubulin] is constant, thus minus-end growth rates decrease in proportion to the decrease in the concentration of GTP-tubulin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The microtubule lattice is represented as a two-dimensional grid; interactions between edge protofilaments generate the seam (dashed line) and mimic the cylindrical nature of the microtubule lattice. Grey and blue boxes represent GMPCPP- and GDP-\u03b1\u03b2-tubulin, respectively; white boxes represent empty positions (no tubulin). Arrows show how new subunits can associate at the plus-end or minus-end, respectively. Simulations begin with a microtubule seed, shown here as three rows of GMPCPP-tubulin. Subunit on rates are determined by the on-rate constant (konplus or konminus) and the concentration of tubulin. (B) Implementation of self-acting and interface-acting nucleotide mechanisms in plus-end simulations. Arrows indicate tubulin off-rates from the lattice, with black arrows denoting GMPCPP-tubulin off-rates and blue arrows denoting GDP-tubulin off-rates. (C) Tubulin dissociation rates from the lattice vary with the number of nearest neighbors. Plus-end simulations use the plus-end on-rate constant (konplus), and minus-end simulations use the minus-end on-rate constant (konminus).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Simulated minus-end and plus-end growth rates (nm/s) for interface-acting or self-acting nucleotide mechanisms using parameters shown in Figure 1. If growth rate markers are not visible, they are obscured by another marker. Error bars are standard deviation, with n=50 independent simulations per concentration of GDP-tubulin. (B) Growth rate ratios are defined as the growth rate for the interface-acting mechanism divided by the growth rate for the self-acting nucleotide mechanism, as a function of the GDP-tubulin concentration. A ratio of 1 indicates that no difference in growth rates is predicted for self- and interface-acting nucleotide mechanisms. (C) Growth rate ratios of plus- and minus-ends from panel (B) plotted together to emphasize how self- and interface-acting mechanisms predict increasingly different plus-end growth rates with increasing GDP-tubulin, whereas the two mechanisms predict similar minus-end growth rates across a range of GDP-tubulin concentrations.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A\u2013C) Ratios of simulated plus-end (open symbols) and minus-end (filled symbols) growth rates for interface- and self-acting nucleotide mechanisms. Growth rate ratios are calculated by dividing the interface-acting growth rate by the self-acting growth rate. A ratio of 1 means that no difference in growth rates is predicted. For each simulation parameter, a weaker and stronger choice (relative to the value used in Figure 1) was tested. The predicted difference between interface-acting and self-acting mechanisms persists, even for different choices of (A) GDP weakening factor (100-fold range), (B) longitudinal interaction (KDlong, 100-fold range), and (C) corner interaction (KDcorner, 25-fold range). The original conditions used in Figure 1 are: GDP weakening factor of 3000, KDlong of 100 \u03bcM, and KDcorner of 100 nM. The GDP weakening factor describes the fold change between the GDP- and GTP-type interactions. N=50 simulations per concentration.\n\nWe performed \u2018mixed nucleotide\u2019 simulations of plus- and minus-end growth at 1 \u00b5M total tubulin with varying fractions of GDP-tubulin (0\u201320%). For simplicity, simulations used arbitrarily chosen parameters that supported elongation in the chosen concentration regime (Table 1). To provide the simplest possible biochemical setting and to set the stage for experiments described below, simulations did not attempt to explicitly model different conformations of \u03b1\u03b2-tubulin (see Discussion), and also ignored GTP hydrolysis. For both self-acting and interface-acting nucleotide, simulated minus-end growth rates decreased identically and in linear proportion to the amount of GDP-tubulin in the simulation (Figure 1B). However, simulated plus-end growth rates decreased much more for interface-acting nucleotide than for self-acting nucleotide (Figure 1C). Similar results were obtained for alternative parameter choices (Figure 1\u2014figure supplements 2 and 3). Based on these robust end-specific differences from simulations, comparative measurements of how GDP-tubulin affects plus- and minus-end elongation should provide a new way to test the self- or interface-acting mechanisms of nucleotide action.\n\n**Table 1.**\n Simulation parameters for Figures 1\u20145.Dashed lines denote figure panels where either plus-end or minus-end simulations were not performed; these panels focused on simulations of only one end.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>konplus(\u00b5M\u20131 s\u20131)</th>\n      <th>konminus(\u00b5M\u20131 s\u20131)</th>\n      <th>KDlong(\u00b5M)</th>\n      <th>KDcorner(\u00b5M)</th>\n      <th>KDlong GDP(\u00b5M)</th>\n      <th>KDcorner GDP(\u00b5M)</th>\n      <th>Tubulin(\u00b5M)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 1</td>\n      <td>1.0</td>\n      <td>1.0</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 4A</td>\n      <td>0.74</td>\n      <td>0.31</td>\n      <td>86</td>\n      <td>0.025</td>\n      <td>3x105</td>\n      <td>87</td>\n      <td>1.25</td>\n    </tr>\n    <tr>\n      <td>Figure 4B</td>\n      <td>0.74</td>\n      <td>---</td>\n      <td>86</td>\n      <td>0.025</td>\n      <td>3x105</td>\n      <td>87</td>\n      <td>1.25</td>\n    </tr>\n    <tr>\n      <td>Figure 4C</td>\n      <td>---</td>\n      <td>0.31</td>\n      <td>86</td>\n      <td>0.025</td>\n      <td>3x105</td>\n      <td>87</td>\n      <td>1.25</td>\n    </tr>\n    <tr>\n      <td>Figure 5B</td>\n      <td>0.74</td>\n      <td>---</td>\n      <td>86</td>\n      <td>0.025</td>\n      <td>3x105</td>\n      <td>87</td>\n      <td>1.25</td>\n    </tr>\n  </tbody>\n</table>\n\n### Mixed nucleotide experiments reveal different effects of GDP-tubulin on plus- and minus-ends\n\nTo establish a baseline for measurements with mixed nucleotides, we first used interference reflection microscopy (IRM) to measure plus-and minus-end growth rates in 1 mM GMPCPP (a slowly hydrolyzable GTP analog) at multiple concentrations of bovine brain tubulin. Growth rates displayed the expected linear dependence on tubulin concentration (Figure 2A). Both ends showed the same apparent critical concentration (Ccapp) of 50 nM, but plus-end growth showed a roughly two-fold higher apparent on-rate constant (konapp) than minus-end growth, 3 \u00b5M\u20131 s\u20131 MT\u20131 and 1.5 \u00b5M\u20131 s\u20131 MT\u20131, respectively (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of the in vitro assay, in which biotinylated GMPCPP microtubule seeds are attached to a neutravidin-coated cover slip, and microtubule assembly in the presence of tubulin bound to either GDP or GMPCPP is monitored using Interference Reflection Microscopy (IRM). (B) Growth rates of microtubule plus- and minus-ends in GMPCPP as a function of tubulin concentration (n=64\u2013125 for the plus-end and n=39\u201395 for the minus-end). The error bars denote standard deviation. (C) Plus- (left y-axis) and minus-end (right y-axis) growth rates at 1.25 \u03bcM tubulin in mixtures of GDP and GMPCPP containing 1 mM total nucleotide (n=66\u2013121 for the plus-end and n=44\u201394 for the minus-end). The gray line denotes the \u2018all GMPCPP\u2019 growth rates of the two ends. The error bars denote standard deviation. Using a two-sided t-test with unequal variance, differences in the mean normalized growth rates at plus- and minus-ends were statistically significant with P<0.001 for all nucleotide mixtures except 0% GDP.\n\nAs a way to test the predictions from our simulations (Figure 1BC), we next measured the growth rates of microtubule plus- and minus-ends at a constant concentration of tubulin (1.25 \u00b5M) but using different ratios of GDP and GMPCPP (1 mM total nucleotide concentration). Growth rates at both ends decreased substantially in mixtures containing as little as 2.5% GDP (25 \u00b5M GDP and 975 \u00b5M GMPCPP) (Figure 2C), but plus-end growth rates decreased to a greater degree than minus-end growth rates. For instance, at 25 \u00b5M GDP, plus-end growth rates fell ~50% (from 2.2 nm/s to 1.1 nm/s) relative to \u2018all GMPCPP\u2019 growth rates, whereas minus-end growth rates only fell ~30% (from 1 nm/s to 0.7 nm/s). This ~1.5-fold stronger inhibition by GDP of plus-end growth rates held across multiple nucleotide mixing ratios (Figure 2C). Importantly, the larger decrease in the growth rate at the plus-end agrees with the predictions made by the interface-acting mechanism (Figure 1A) compared to the self-acting mechanism.\n\n### Plus-end growth is super-stoichiometrically suppressed by GDP-tubulin\n\nTubulin binds different nucleotides with different affinities (Aldaz et al., 2005; Chakrabarti et al., 2000; Correia et al., 1987; Fishback and Yarbrough, 1984; Hyman et al., 1992; Mejillano and Himes, 1991; Monasterio and Timasheff, 1987; Zeeberg and Caplow, 1979), so the ratio of GDP and GMPCPP in a reaction does not directly translate to the fractions of GDP- and GMPCPP-tubulin. To estimate the concentrations of GDP- and GMPCPP-tubulin for each nucleotide mixture, we assumed that only GMPCPP-tubulin contributes to minus-ended growth, consistent with our simulations (Figure 1 BC). This assumption allowed us to estimate the concentration of GMPCPP-tubulin in each nucleotide mixture by matching the observed growth rates to the control \u2018all GMPCPP\u2019 growth curve (Figure 2B). A potential problem with this approach is that the estimated GMPCPP-tubulin concentration in each mixture will be affected by error in the growth rate measurements. To minimize the impact of error, we performed a global fit to all measurements using a simple competitive inhibition model that enforced consistent nucleotide binding affinity (Figure 3A). The GMPCPP-tubulin concentrations that best recapitulate minus-end growth rates are consistent with tubulin binding 12.5-fold less tightly to GMPCPP (KDGMPCPP) than to GDP (KDGDP) (Figure 3B). This inferred difference of affinities was supported by direct measurements of nucleotide binding (Figure 3\u2014figure supplement 1), and agrees with prior reports (Correia et al., 1987; Hyman et al., 1992).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig3-v1.jpg)\n\n**Figure 3.:** (A) Competitive nucleotide binding model. Mixed nucleotide assays result in either GDP- or GMPCPP-bound tubulin landing and creating a nucleotide interface at the minus-end. The concentration of GMPCPP bound tubulin was determined using the concentrations of each nucleotide and their relative affinities (KDCPP/ KDGDP) through a competitive binding model (inset equation). (B) Minus-end growth rates as a function of GDP concentration. GMPCPP-tubulin was assumed to be the only tubulin that can contribute to minus-end growth in the mixed nucleotide assays. Minus-end growth rates over varying GDP concentrations were globally fit to a competitive inhibition model (equation in panel A), which resulted in a GMPCPP-tubulin concentration that was consistent with the \u2018all-GMPCPP\u2019 minus-growth curves (Figure 2B). The relative affinity of tubulin for GMPCPP compared to GDP (KDCPP/ KDGDP) was the only free parameter in the model. (C\u2013D) Growth rates from Figure 2C plotted as a function of the fraction of GDP-tubulin, estimated using the known nucleotide content and binding affinities. Growth rates are considered suppressed when falling below the solid lines exhibiting the \u2018all-GMPCPP\u2019 minus- and plus-end growth curves. Insets plot growth rates normalized to the \u2018GMPCPP-only\u2019 growth rates (gray solid line), showing a disproportionate decrease (~1.5-fold for most concentrations) in plus-end growth. Differences in mean normalized growth rates at plus- and minus-ends were statistically significant with P<0.001 for all nucleotide mixtures except 0% GDP (see Figure 2).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The affinity of tubulin for 6-Thio GTP measured by nucleotide-dependent quenching of the tubulin tryptophan fluorescence. Values are the tubulin fluorescence (0.2 \u03bcM tubulin) divided by the fluorescence of a signal matched BSA sample to correct for the inner filter effect. Error bars are SEM for n=6 determinations for each sample, accounting for errors in the concentrations of tubulin and BSA, and in the buffer control. (B) Determination of tubulin affinity for GDP. Increasing concentrations of GDP were added to a solution of 0.2 \u03bcM tubulin in the presence of 3 \u03bcM 6-Thio GTP. GDP displaces 6-Thio GTP from the tubulin, causing unquenching of tryptophan fluorescence. Error bars denote SEM with n=6\u201311 determinations per point. (C) Determination of tubulin affinity for GMPCPP using an identical approach. Error bars are SEM with n=6 determinations per point.\n\nTo determine whether the observed decrease in growth rate was stoichiometric with the amount of GMPCPP-tubulin in the assay, we used the binding affinities and the known nucleotide concentrations in each mixture (Figure 3B) to extrapolate equivalent \u2018GMPCPP-only\u2019 growth rates (Figure 3 CD solid lines) from the control \u2018all GMPCPP\u2019 curves (Figure 2A). Minus-end growth rates decreased stoichiometrically as the concentration of GDP-tubulin increased, matching or even slightly exceeding the \u2018all GMPCPP\u2019 extrapolation. The only exception was at the highest concentration of GDP-tubulin (Figure 3C inset), where growth rates were slow and most challenging to quantify. In contrast, plus-end growth rates decreased super-stoichiometrically (were slower than expected based on the \u2018all GMPCPP\u2019 extrapolation) for a given concentration of GDP-tubulin (Figure 3D). This super-stoichiometric effect at the plus-end was observed over a range of GDP-tubulin concentrations, and was most apparent when 25\u201355% of unpolymerized tubulin was bound to GDP (Figure 3D inset). The super-stoichiometric effect of GDP-tubulin on plus-end growth over a wide range of GDP-tubulin concentrations provides strong support for the interface-acting nucleotide mechanism.\n\n### Why is plus-end growth hypersensitive to GDP-tubulin?\n\nTo establish a biochemical baseline for simulating mixed nucleotide states, we first fit the interface-acting nucleotide model to the \u2018all GMPCPP\u2019 data (Figure 2). The plus-end growth rates were recapitulated well using the same parameters obtained in a prior study (Cleary et al., 2022b; konplus of 0.74 \u00b5M\u20131 s\u20131, KDlongitudinal of 86 \u00b5M, KDcorner of 25 nM; Figure 4A). To extend the model to fit the minus-end growth rates, we retained the same interaction affinities as for the plus-end (consistent with the equal apparent critical concentration at both ends, Figure 2B) and optimized a minus-end-specific on-rate constant. This procedure yielded a konminus of 0.31 \u00b5M\u20131 s\u20131 (Figure 4A), roughly 2-fold slower than the plus-end, which is in line with the ~twofold lower concentration-dependence of growth rates observed at the minus-end (Figure 2A). We next performed mixed nucleotide (GMPCPP and GDP) simulations at a constant tubulin concentration of 1.25 \u00b5M. Simulated minus-end growth rates decreased linearly as the concentration of GDP-tubulin increased, recapitulating the experimental measurements (Figure 4B) and in agreement with our initial prediction using arbitrary parameters (Figure 1). In contrast, simulated plus-end growth rates decreased super-stoichiometrically as the concentration of GDP-tubulin increased (Figure 4C). An outsized effect of GDP-tubulin at the plus-end is expected from the interface-acting mechanism, but the model overpredicted the magnitude of the effect.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig4-v1.jpg)\n\n**Figure 4.:** (A) Measured and simulated growth rates for plus- and minus-ends of GMPCPP microtubules. Inset shows the best-fit values for the plus-end and minus-end on-rate constants (konplus and konminus, respectively), longitudinal interaction (KDlong), and corner interaction (KDcorner). Error bars show standard deviation (n=50 per simulated concentration) and are obscured by symbols in some cases; experimental data are replotted from Figure 3. (B and C) Simulated and experimental growth rates at 1.25 \u03bcM tubulin in the presence of variable amounts of GDP-tubulin for microtubule minus-ends (B) and plus-ends (C).(D) Cartoon showing how off-rates (koff) of GDP-tubulin at the plus-end are dependent upon the interfacial nucleotide; C=GMPCPP, D=GDP (shaded grey). Long-residing GDP-tubulin bound at corner- (one longitudinal and one lateral contact) or bucket-type (one longitudinal and two lateral contacts) binding sites explains the outsized effects of GDP-tubulin on plus-end elongation.\n\nIn the interface-acting nucleotide mechanism, the outsized effect of GDP at the plus-end occurs because GDP-tubulin can bind tightly to (and reside longer at) the plus-end if the interfacial nucleotide is GMPCPP (Figure 4D). This \u2018extended stay\u2019 of GDP-tubulin on the plus-end poisons the protofilament end against further growth and is the origin of the super-stoichiometric effect of GDP-tubulin at the plus-end (Figure 4D). We reasoned that our model might be overpredicting the magnitude of the GDP-poisoning effect (Figure 4C) because it was neglecting some other mechanism that normally limits the lifetime of GDP-tubulin at the plus-end.\n\n### Nucleotide exchange at the plus-end can alleviate protofilament \u2018poisoning\u2019 by GDP-tubulin\n\nRecent work (Luo et al., 2023; Piedra et al., 2016) has reinforced early results (Chen and Hill, 1983; Chen and Hill, 1985; Mitchison, 1993) that pointed to the potential role of nucleotide exchange in microtubule dynamics at the plus-end. We implemented a finite rate of nucleotide exchange in the model (see Methods) to determine whether exchange might allow the simulations to better recapitulate the magnitude by which GDP-tubulin super-stoichiometrically decreased plus-end growth (Figure 5A). We performed interface-acting plus-end simulations using a range of nucleotide exchange rates (Figure 5\u2014figure supplement 1). Faster rates of nucleotide exchange yielded smaller decreases in plus-end growth rates for a given concentration of GDP-tubulin (Figure 5B). The rate of nucleotide exchange that best recapitulated the observed effects was 0.3\u20130.5 s\u20131, which compares favorably to other estimates (Amayed et al., 2000; Melki et al., 1989; Yarbrough and Fishback, 1985; Figure 5\u2014figure supplement 1). In summary, using simulations and measurements of plus- and minus-end growth, we showed that microtubule plus- and minus-ends exhibit different sensitivities to GDP-tubulin, lending strong support for the interface-acting mechanism of nucleotide action.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig5-v1.jpg)\n\n**Figure 5.:** (A) Nucleotide exchange on terminal subunits can mitigate protofilament poisoning at microtubule plus-ends by reducing the lifetime of GDP on the microtubule end. (B) Simulated growth rates of microtubule plus-ends as a function of the nucleotide exchange rate (N=50 per simulated concentration, see Methods), showing that faster rates of exchange modulate the effect of protofilament poisoning. Orange circles show the measured plus-end growth rates (Figure 3).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89231/elife-89231-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Implementation of nucleotide exchange in simulations of plus-ended growth. Terminal exposed subunits can undergo exchange with a finite first-order rate, kexchange (s\u20131). The probability of exchange to GDP or GMPCPP is determined by the relative concentration of each nucleotide. (B) Root-mean-squared error (RMSE) of predicted growth rates vs. experimental growth rates for a series of exchange rates, across the tested range of GDP- and GMPCPP-tubulin mixtures. Fraction total error is defined as the relative error compared to the error when exchange rate is 0 s\u20131.\n\n## Discussion\n\nA connection between tubulin nucleotide state and microtubule stability has long been appreciated, but the molecular mechanism underlying the connection has been surprisingly difficult to determine. At one extreme, a self-acting mechanism inspired by conformational differences between unpolymerized and polymerized tubulin posits that GTP dictates microtubule stability by promoting a more microtubule-compatible conformation for the tubulin to which it is bound. At the other extreme, an interface-acting mechanism inspired by direct participation of nucleotide in tubulin:tubulin polymerization contacts posits that the nucleotide influences the behavior of the next tubulin along the protofilament. Ruling out either the self- or interface-acting mechanism has been challenging because it has not been possible to manipulate the nucleotide on the plus-end separately from the nucleotide on unpolymerized tubulin. Consequently, tests to date have relied on indirect data.\n\nIn the present study, we took advantage of microtubule polarity to address the debate about the mechanism of nucleotide action in a new way. Our approach rests on an asymmetry in the way that nucleotide participates in plus- and minus-end interactions. At the minus-end, there is no difference between self- and interface-acting nucleotide mechanisms because the nucleotide on the terminal tubulin is also the interfacial nucleotide that participates in contacts along the protofilament. At the plus-end, however, two different nucleotide binding sites are involved: the one exposed on the terminal tubulin, and one at the interface with (underneath) the terminal tubulin. Our computational simulations of microtubule elongation revealed that the two mechanisms make different predictions about the sensitivity of plus- and minus-end elongation to GDP-tubulin. We used mixed nucleotide (GMPCPP and GDP) experiments to measure the effects of GDP-tubulin on elongation of plus- and minus-ends in a way that controls nucleotide state(s) while also avoiding complications associated with microtubule catastrophe.\n\nWe observed that the decrease in elongation rate was proportionally greater for the plus-end than for the minus-end over a wide range of GDP-tubulin fractions. This outsized effect at the plus-end is consistent with an earlier study that observed a loss of plus-end elongation when using mixtures of GTP and GDP (Tanaka-Takiguchi et al., 1998). The outsized effect at the plus-end conforms to predictions of the interface-acting mechanism and is incompatible with the self-acting mechanism. To recapitulate the magnitude of GDP-tubulin-induced suppression of growth rates, the simulations required a finite rate of nucleotide exchange on plus-end protofilaments. Our experiments and simulations provide strong new data that support the interface-acting mechanism of nucleotide action.\n\nThe outsized effect of GDP on plus-ends provides new insights into the fundamental mechanisms of microtubule dynamics and adds to a growing body of evidence that suggests GDP-terminated protofilaments influence microtubule growth (Carlier and Pantaloni, 1978; Hamel et al., 1986; Valiron et al., 2010), fluctuations (Cleary et al., 2022b), catastrophe (Caplow and Shanks, 1996; Piedra et al., 2016), and regulation (Lawrence et al., 2022; Luo et al., 2023). Our results point to a more nuanced view of the GTP cap model, which posits that growing microtubule ends are protected against depolymerization by a \u2018cap\u2019 of GTP-tubulin (Mitchison and Kirschner, 1984), reviewed in Gudimchuk and McIntosh, 2021. Early views of the GTP cap did not anticipate the influence of GDP-tubulin on growing plus-ends, but there is now increasing evidence (Carlier and Pantaloni, 1978; Farmer and Zanic, 2023; Hamel et al., 1986; Margolin et al., 2012; Maurer et al., 2012; Roth et al., 2018; Valiron et al., 2010) that the cap is not \u2018all or nothing\u2019, and that GDP-tubulin can modulate microtubule growth without always initiating a catastrophe. Indeed, the tendency for plus-ended growth to \u2018stutter\u2019 (Mahserejian et al., 2022) and fluctuate (Cleary et al., 2022b) might be explained by exposed GDP-tubulin; exposed GDP-tubulin may also contribute to the higher frequency of catastrophe at the plus-end (Strothman et al., 2019; Walker et al., 1988). Our work supports an emerging view of the growing microtubule end as a \u2018mosaic\u2019 of nucleotide states rather than a uniform assembly of GTP-tubulin (Brouhard and Sept, 2012; Brouhard and Rice, 2018; Cross, 2019; Duellberg et al., 2016; Farmer et al., 2021; Farmer and Zanic, 2023; Gudimchuk and McIntosh, 2021; Howard and Hyman, 2009; Margolin et al., 2012; Maurer et al., 2012; Roostalu et al., 2020; Roth et al., 2018). By allowing for the possibility of multiple nucleotide states on the microtubule end, our work also resonates with recent studies of the microtubule regulatory factor CLASP (Lawrence et al., 2022; Luo et al., 2023), which regulates microtubule plus-ends differently depending on the nucleotide state of the terminal subunit at the protofilament plus-end.\n\nOur modeling purposefully implemented the simplest forms of self- and interface-acting nucleotide mechanisms. We did not attempt to explicitly model how conformations of \u03b1\u03b2-tubulin might influence the strength of tubulin:tubulin interactions: there is no consensus about how to do so, and modeling different conformations introduces substantially more adjustable parameters into the model, which complicates fitting and interpretation (Coombes et al., 2013; Molodtsov et al., 2005; Stewman et al., 2020; VanBuren et al., 2005; Zakharov et al., 2015). In support of a simpler model, our use of GMPCPP and GDP mixtures simplified the biochemical picture by ensuring that, except for the very end, the microtubule lattice will be predominantly in a single nucleotide state (GMPCPP). This choice diminishes the importance of explicitly modeling different conformations. The model might also implicitly capture a subset of the conformation-dependent effects on tubulin:tubulin interfaces because the longitudinal and corner affinities are refined independently: the strength of longitudinal interactions could therefore be different for corner than for pure longitudinal sites, potentially reflecting the cost of tubulin \u2018straightening\u2019 during polymerization. In the interest of minimizing the number of adjustable parameters in the model, we also did not consider \u2018hybrid\u2019 models incorporating elements from both self- and interface-acting mechanisms. While we acknowledge the possibility that self-acting mechanisms may contribute to modulation of plus-end stability, the large differences we predicted and observed between plus- and minus-ends indicate that interface-acting nucleotide effects are sufficient to explain the observations. This interface-centric view of nucleotide action is also consistent with cryo-EM studies, which show that the largest nucleotide-dependent conformational changes in the microtubule occur in the \u03b1-tubulin subunit above and directly contacting the \u03b2-tubulin exchangeable nucleotide (Alushin et al., 2014; Manka and Moores, 2018; Zhang et al., 2015).\n\nIn summary, the findings reported here provide the most direct evidence to date in support of an interface-acting mechanism for nucleotide in microtubule stabilization. Depolymerizing microtubules can also perform mechanical work, and it is interesting to consider parallels with other work-performing, oligomeric nucleotide hydrolases. The curling protofilaments that occur during microtubule depolymerization are effectively linear oligomers held together (and to the microtubule end) by nucleotide-dependent interactions at the tubulin:tubulin interfaces. AAA-family proteins, which are oligomeric ATPases that use nucleotide-dependent reorganization of quaternary structure to unfold proteins, package viral DNA, and remodel the structure of nucleic acids (Banerjee et al., 2016; Brunger and DeLaBarre, 2003; Davies et al., 2005; Erzberger and Berger, 2006), also appear to use an interface-acting mechanism for their bound adenosine nucleotide. Indeed, just as the GTP-binding site on \u03b2-tubulin forms part of the longitudinal interface between tubulin subunits, the ATP binding site in AAA proteins resides at a protomer:protomer interface and dictates the geometry of oligomerization contacts (Erzberger and Berger, 2006). Furthermore, for both AAA proteins and microtubules, residues important for nucleotide hydrolysis on one subunit are contributed by the next subunit in the oligomer or polymer (Banerjee et al., 2016; Brunger and DeLaBarre, 2003; Davies et al., 2005). We speculate that these similarities involving interfacial nucleotides in otherwise unrelated proteins may indicate a shared, convergently evolved mechanism for achieving force production in oligomers.\n\n## Methods\n\n### Protein purification and labeling\n\nPC-grade bovine brain tubulin was purified as previously described (Cleary et al., 2022b; Uppalapati et al., 2009), double cycled, quantified by absorbance at 280 nm (\u03b5tubulin of 115,000 M\u20131 cm\u20131), diluted to 100 \u00b5M in BRB80 (80 mM K-Pipes, 2 mM EGTA, 2 mM MgCl2, pH 6.9), aliquoted, flash frozen in liquid nitrogen, and stored at \u201380 \u00b0C. Prior to experiments, tubulin aliquots were thawed on ice, diluted to 20 \u00b5M in BRB80, and concentrations reconfirmed by A280.\n\nTubulin was biotinylated as previously described (Cleary et al., 2022b). Briefly, microtubules were polymerized by combining 40 \u00b5M tubulin, 1 mM GTP, 1 mM MgCl2 and 5% DMSO in BRB80, incubating at 37 \u00b0C for 30 min. An equimolar amount of EZ-Link NHS-Biotin in DMSO (ThermoFisher 20217) was added and allowed to react for 30 min at 37 \u00b0C. Microtubules were then pelleted, the pellet resuspended in cold BRB80 and incubated on ice for 30 min to depolymerize the microtubules, the solution centrifuged at 30 psi for 10 min in a Beckman Airfuge using a pre-chilled rotor, and supernatant collected. This biotinylated tubulin was then cycled, the tubulin concentration checked by A280, and the degree of biotinylation quantified using the Biocytin Biotin Quantification Kit (Thermo Fisher Scientific #44610). Final stocks of biotinylated tubulin were mixed with unlabeled tubulin to 40 \u00b5M total tubulin to obtain a 33% biotin-labeled fraction, aliquoted, frozen in liquid nitrogen, and stored at \u201380 \u00b0C.\n\nBiotinylated microtubule seeds were polymerized by combining 20 \u00b5M biotinylated tubulin (33% biotin-labeled), 1 mM GMPCPP (Jena Biosciences) and 4 mM MgCl2, and incubating at 37 \u00b0C for 1 hr. The seeds were then elongated by diluting the total tubulin concentration to 2 \u00b5M in BRB80 with 0.5 mM GMPCPP and 2 mM MgCl2 and incubating for 5 hr at 37 \u00b0C. The seeds were pelleted, resuspended in BRB80 with 20% glycerol, flash frozen in liquid nitrogen, and stored at \u201380 \u00b0C. On the day of experiments, the aliquot was rapidly thawed at 37 \u00b0C, the seeds pelleted to remove glycerol, and resuspended in a solution containing 0.5 mM Mg-GMPCPP.\n\n### Microtubule dynamics assays\n\nCoverslips (18\u00d718 mm Corning) were cleaned in 7X Cleaning Detergent (MP Biomedicals 097667093) diluted to 1X in ddH2O. The solution was heated at 45 \u00b0C until clear, the coverslips were then immersed for 2 hours, removed and rinsed with ddH2O, and plasma cleaned (Harrick Plasma) for 12 min. Following cleaning, coverslips were silanized by incubating in a vacuum-sealed desiccator with 1 H,1H,2H,2H-perfluorodecyltrichlorosilane (Alfa Aesar L165804-03) overnight. Before use, the degree of silanization was checked using a droplet test to confirm hydrophobicity.\n\nTo construct flow cells, a second ethanol-washed and ddH2O-rinsed coverslip (60x24 mm Corning) was scored, split to a width smaller than 18 mm, and attached to the silanized coverslip with two strips of double-sided tape spaced roughly 10 mm apart. For the experiment, 600 nM neutravidin (Thermo Fisher) was flowed into the chamber, followed by 5% F127 (Sigma P2443-250G), 2 mg/mL casein (Sigma C-7078), and biotinylated microtubule seeds at a concentration that resulted in approximately 10 seeds per 90x90 \u00b5m2 field of view. Biotinylated BSA (1 mg/mL) was then added to the flow chamber to block any free neutravidin on the cover slip.\n\nDue to the slow growth conditions in these experiments, it was necessary to pre-establish the plus- and minus-ends of the seeds in every field of view. Polarity was determined by injecting into the flow cell a solution containing 12.5 \u00b5M tubulin, 1 mM Mg-GTP and an oxygen scavenging system consisting of 80 \u03bcg/mL Catalase (Sigma C1345-1G), 100 mM DTT, 200 mM D-Glucose (EMD Millipore Corp DX0145-1), and 200 \u03bcg/mL Glucose Oxidase (EMD Millipore Corp 345386\u201310 gm) in BRB80. The flow cell was allowed to warm for 5 min in contact with the objective of the Nikon TE-2000 TIRF with an objective heater set to 30 \u00b0C. Microtubules were visualized using IRM with a blue (440 nm) LED at 0.5% power (pE-300white, CoolLED, UK). Microtubule growth in GTP was monitored for 5 min, and the faster growing end of each microtubule in the field was defined as the plus-end. The tubulin solution was then replaced with tubulin-free cold BRB80, the flow cell was incubated for 5 min to depolymerize the microtubules with depolymerization confirmed by visualization, and finally any residual tubulin was removed by flowing through five flow cell volumes of cold BRB80.\n\nWhile monitoring the same field of view, a solution was introduced containing tubulin, 1 mM nucleotide (either Mg-GMPCPP or a mixture of Mg-GDP/GMPCPP, with concentrations quantified by absorbance at 252 nm, using \u03b5=13,700 M\u20131 cm\u20131), and an oxygen scavenging system. Once the final polymerization mixture was introduced, the chamber was sealed with nail polish and allowed to equilibrate to 30 \u00b0C while in contact with the objective. Images were subsequently taken at 1 frame per second for up to 2.5 hr. All measurements were performed at least two separate times, except for the 25% GDP condition.\n\n### Image analysis and processing\n\nEach video was flat-fielded to correct for uneven illumination, as follows using ImageJ (Schindelin et al., 2015). First, an out-of-focus movie was acquired and a median image generated. The median image was then converted to 32-bits, and normalized to 1 by dividing every pixel value by the mean pixel intensity in the image. Finally, every experimental video was flat-fielded by dividing the intensity values in every frame by this normalized median image. Stage drift was corrected as previously described (Cleary et al., 2022b): fiduciary markers were tracked using FIESTA (Ruhnow et al., 2011) and used as input for an in-house drift correction program written in Matlab. To quantify microtubule growth, kymographs were generated from pixel-corrected movies using the line-scan tool in ImageJ. Plus- and minus-end growth rates were determined by fitting a line to smooth and continuous growth events and calculating the slope.\n\n### Global fit of minus-end growth\n\nThe relative binding affinities of tubulin for GDP and GMPCPP were estimated by fitting the minus-end growth rates at varying nucleotide ratios to a model in which only GMPCPP-tubulin contributes to minus-end growth, as follows. From Figure 2B, the minus-end growth rate (GRminus in nm/s) as a function of [tubulinGMPCPP] (in \u00b5M) was:\n\n$$\nGR_{minus}=0.9\u2217[tubulin_{GMPCPP}]\u22120.05\n$$\n\nIn a mixture of GMPCPP and GDP, the concentration of GMPCPP-tubulin can be determined by a competitive binding model (analogous to competitive inhibition of an enzyme Cheng and Prusoff, 1973) in which the two nucleotides compete for binding to tubulin:\n\n$$\n[tubulin_{GMPCPP}]=[tubulin_{total}](\\frac{[GMPCPP]}{[GMPCPP]+K_{D}^{GMPCPP}(1+\\frac{[GDP]}{K_{D}^{GDP}})})\n$$\n\nBecause [GMPCPP] was relatively high in all cases, we made the assumption that $GMPCPP\u226bK_{D}^{GMPCPP}$, which simplifies Equation 2 to:\n\n$$\n[tubulin_{GMPCPP}]=[tubulin_{total}](\\frac{[GMPCPP]}{[GMPCPP]+[GDP]\\frac{K_{D}^{GMPCPP}}{K_{D}^{GDP}}})\n$$\n\nPlugging (3) into (1) gives:\n\n$$\nGR_{minus}=0.9\u2217[tubulin_{total}](\\frac{[GMPCPP]}{[GMPCPP]+[GDP]\\frac{K_{D}^{GMPCPP}}{K_{D}^{GDP}}})\u22120.05\n$$\n\nFinally, because the total nucleotide concentration was kept constant at 1000 \u00b5M, we could replace [GMPCPP] by 1000 \u2013 [GDP], yielding:\n\n$$\nGR_{minus}=0.9\u2217[tubulin_{total}](\\frac{1000\u2212[GDP]}{1000\u2212[GDP]+[GDP]\\frac{K_{D}^{GMPCPP}}{K_{D}^{GDP}}})\u22120.05\n$$\n\nThe minus-end growth rates as a function of [GDP] in Figure 2B (where $tubulin_{total}$ was 1.25 \u00b5M) were fit to Equation 5. Here, the only free parameter is the relative affinity of tubulin for GMPCPP and GDP ($K_{D}^{GMPCPP}$ / $K_{D}^{GDP}$). The fit was weighted by the inverse of the standard error of the mean (SEM).\n\n### Nucleotide binding affinity assays\n\nThe affinity of tubulin for GMPCPP and GDP was determined using a competition assay that relies on the quenching of tryptophan fluorescence by 6-Thio GTP (Amayed et al., 2000; Fishback and Yarbrough, 1984; Piedra et al., 2016). Aliquots of tubulin (~80 \u03bcM) and Bovine Serum Albumin (BSA \u2013 50 mg/mL) were rapidly thawed, filtered through a 0.1 \u00b5m spin filter (Millipore-Sigma, UFC30VV25) at 11,000 rpm and 4 \u00b0C to remove aggregates, and concentrations quantified by absorbance at A280 with \u03b5tubulin=115,000 M\u20131 cm\u20131 and \u03b5BSA=43,824 M\u20131 cm\u20131. The affinity of 6-Thio GTP for tubulin was measured by preparing 220 \u03bcL samples of either 0.2 \u03bcM tubulin or 0.56 \u03bcM BSA with varying concentrations of 6-Thio GTP. The BSA concentration was chosen to match the tryptophan fluorescence of tubulin, which allowed for the correction of the inner filter effect due to absorbance of 6-Thio GTP at the tryptophan emission peak. A buffer-only well was included in every plate as a zero fluorescence control, and the value of the blank was subtracted from each BSA and tubulin measurement. Tryptophan fluorescence readings (297 nm excitation and 332 nm emission) were performed in 96-well, flat bottom, UV-star plates (Greiner bio-one, 655809) on a Molecular Devices FlexStation 3 Multimode Microplate Reader. Each recorded fluorescence value was an average of 250 signal determinations. The fluorescence readings were corrected for the inner filter effect by dividing the tubulin fluorescence signal by the BSA fluorescence signal at each nucleotide concentration (Fishback and Yarbrough, 1984). The standard error of the mean (SEM) was calculated using propagated errors of the relative SEM for each variable:\n\n$$\nSEM=(\\sqrt{\\frac{(SEM_{BSA})}{BSA\u00af}^{2}+\\frac{(SEM_{Tubulin})}{Tubulin\u00af}^{2}+\\frac{(SEM_{Blank})}{Blank\u00af}^{2}})\u2217(\\frac{Tubulin\u00af}{BSA\u00af})\n$$\n\nThe affinity of tubulin for 6-Thio GTP (KD6-Thio GTP) was determined by adding increasing concentrations of 6-Thio GTP, measuring the fall in fluorescence due to fluorescence quenching by the nucleotide, and fitting the data to a binding isotherm weighted by the inverse of the SEM:\n\n$$\ny=B-\\frac{A*6-ThioGTP}{6-ThioGTP+K_{D}^{6-ThioGTP}}\n$$\n\nwhere A corresponds to the amplitude of the fall in fluorescence and (B - A) is the remaining fluorescence under full quenching conditions. Competition assays were then performed by adding increasing concentrations of GMPCPP or GDP to a solution containing 3 \u03bcM 6-Thio GTP. Competition between the unlabeled nucleotides and the 6-Thio GTP caused unquenching of fluorescence, allowing for determination of the affinity of tubulin for GMPCPP (KDGMPCPP) and GDP (KDGDP). Data for each nucleotide were fit to a competition model:\n\n$$\ny=C+\\frac{A*Nucleotide}{Nucleotide+K_{D}^{Nucleotide}1+\\frac{6-ThioGTP}{K_{D}^{6-ThioGTP}}}\n$$\n\nHere, A is the amplitude fluorescence quenching, which was constrained by the measured value at 3 \u03bcM 6-Thio GTP, and C is a free parameter corresponding to the quenched fluorescence value at zero unlabeled nucleotide. For this fit, the means were weighted by the inverse of the SEM.\n\n### Simulating microtubule growth of plus- and minus-ends\n\nSimulations of plus- and minus-end elongation were performed using extended versions of previously-described code and analysis algorithms (Cleary et al., 2022a; Cleary et al., 2022b; Kim and Rice, 2019; Mickolajczyk et al., 2019; Piedra et al., 2016). The main features of the model are outlined in Figure 1\u2014figure supplement 1 and described in detail in our previous publication (Cleary et al., 2022b). Briefly, the code performs kinetic Monte Carlo simulations of microtubule elongation at the level of individual association and dissociation events, creating a \u2018biochemical movie\u2019 of polymerization with one reaction (association, dissociation, or nucleotide exchange) per frame. First-order subunit association rate constants are calculated by multiplying the bimolecular on-rate constant (kon) by the tubulin concentration (on-rate=kon*[tubulin]). Subunit dissociation rates (koff = kon*KD) are dependent on the interaction affinity (KD) at a specific site, which is determined by the number and type of tubulin-tubulin interactions at the respective site.\n\nThe simulation code from the present work is available as a GitLab repository (Rice et al., 2023). To compare the effects of interface-acting and self-acting mechanisms, plus-end simulation code was modified to implement self-acting (cis) nucleotide instead of interface-acting nucleotide (Figure 1\u2014figure supplement 1B). To simulate the minus-end, simulation rules were updated to reflect the lack of an exposed nucleotide on the minus-end, and the orientation of interactions across the seam (Figure 1\u2014figure supplement 1C). Simulating GDP- and GMPCPP-tubulin mixtures required two new parameters: (1) the concentration of GDP-tubulin and (2) a factor to weaken GDP-mediated contacts, represented as a multiplicative factor on the GMPCPP interaction affinity. We assumed that there were no inherent differences between the association rates of GMPCPP- and GDP-tubulin, and used the same on-rate constant (konplus or konminus, respectively) for GDP- and GMPCPP-tubulin.\n\nWe generalized our prior implementation of nucleotide exchange (Piedra et al., 2016) to allow all terminal nucleotides (whether GMPCPP or GDP) to exchange. The probability of replacement by GDP or GMPCPP was set to be proportional to the fractional concentration of either nucleotide. Our implementation assumes that the rate-limiting step in nucleotide exchange is dissociation of the (previously) bound nucleotide. To reflect the 12.5-fold difference between the affinity of tubulin for GDP and GMPCPP, the rate of GMPCPP exchange (the off-rate) was set to be 12.5-fold faster than the rate of GDP exchange (as measured in Figure 3).\n\n### Constraining biochemical parameters for simulations\n\nExperimental plus-end growth rates were recapitulated using biochemical parameters obtained in a prior study (konplus = 0.74 \u00b5M-1 s\u20131, KDlongitudinal = 86 \u00b5M, KDcorner = 25 nM; Cleary et al., 2022b ). Simulations of the minus-end used the same KDlongitudinal and KDcorner as for the plus-end. Iterative fitting in MATLAB was used to optimize an on-rate constant (konminus) that could best recapitulate experimentally observed minus-end growth rates. Each fitting attempt used 50 independent simulations, 300 s in length, of minus-end growth at the same concentrations used for measurements of GMPCPP microtubules.\n\nFor all other simulations, 50 independent simulations of 600 s were run for each condition tested. Mixed nucleotide simulations in Figure 1 were performed at 1 \u00b5M total [\u03b1\u03b2-tubulin], with varying percentages of GDP-tubulin (up to 20%, in 5% increments). Mixed nucleotide simulations in Figures 4 and 5 were performed at 1.25 \u00b5M total [\u03b1\u03b2-tubulin] to mimic experimental conditions, with varied percentages of GDP-tubulin (up to 50%, in 5% increments). Simulations with GDP-tubulin used a \u2018GDP weakening factor\u2019 comparable to one used previously (Cleary et al., 2022b), such that the GDP longitudinal interface was 3000- (in Figure 1, where we used arbitrary affinities) or 3500-fold weaker (in Figures 4 and 5, where we fit affinities to recapitulate growth rates) than the GMPCPP-longitudinal interface; this magnitude weakening is consistent with the large difference between depolymerization rates of GMPCPP and GDP microtubules. Additional simulations in Figure 1\u2014figure supplements 2 and 3 used a GDP weakening factor such that the GDP longitudinal interface was 300-fold or 30,000-fold weaker than the GTP longitudinal interface.\n\nSimulation parameters and calculated rates for Figures 1\u20145 are summarized in Tables 1 and 2. Parameters and calculated rates for Supplemental Figures are summarized in Tables 3 and 4.\n\n**Table 2.**\n Calculated on-rates and off-rates for simulations presented in 1\u20145Figures 1\u20145.On-rate is calculated using the biochemical kon and the concentration of tubulin [\u00b5M]. Off-rate is calculated using the biochemical kon and the dissociation constant KD.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Simulated end</th>\n      <th>On-rate (s\u20131)</th>\n      <th>kofflong (s\u20131)</th>\n      <th>koffcorner(s\u20131)</th>\n      <th>kofflong GDP (s\u20131)</th>\n      <th>koffcorner GDP (s\u20131)</th>\n      <th>Tubulin(\u00b5M)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 1</td>\n      <td>plus</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>minus</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 4A</td>\n      <td>plus</td>\n      <td>0.9</td>\n      <td>64</td>\n      <td>0.019</td>\n      <td>2.2x105</td>\n      <td>65</td>\n      <td>1.25</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>minus</td>\n      <td>0.4</td>\n      <td>27</td>\n      <td>0.0078</td>\n      <td>9.3x104</td>\n      <td>27.3</td>\n      <td>1.25</td>\n    </tr>\n    <tr>\n      <td>Figure 4B</td>\n      <td>plus</td>\n      <td>0.9</td>\n      <td>64</td>\n      <td>0.019</td>\n      <td>2.2x105</td>\n      <td>65</td>\n      <td>1.25</td>\n    </tr>\n    <tr>\n      <td>Figure 4C</td>\n      <td>minus</td>\n      <td>0.4</td>\n      <td>27</td>\n      <td>0.0078</td>\n      <td>9.3x104</td>\n      <td>27.3</td>\n      <td>1.25</td>\n    </tr>\n    <tr>\n      <td>Figure 5B</td>\n      <td>plus</td>\n      <td>0.9</td>\n      <td>64</td>\n      <td>0.019</td>\n      <td>2.2x105</td>\n      <td>65</td>\n      <td>1.25</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Simulation parameters for Figure 1\u2014figure supplement 1.Shading has been added to highlight which simulation parameters were changed, with respect to the reference parameters used in Figure 1. The GDP fold weaker values are the fold change between the GTP- and GDP-type interaction.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Figure 1\u2014figure supplement 3</th>\n      <th>change</th>\n      <th>kon(\u00b5M\u20131 s\u20131)</th>\n      <th>KDlongGTP(\u00b5M)</th>\n      <th>KDcornerGTP(\u00b5M)</th>\n      <th>KDlongGDP(\u00b5M)</th>\n      <th>KDcornerGDP(\u00b5M)</th>\n      <th>GDPlong fold weaker</th>\n      <th>GDPcorner fold weaker</th>\n      <th>Tubulin (\u00b5M)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3A</td>\n      <td>GDP weakening</td>\n      <td>1.0</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x106</td>\n      <td>3000</td>\n      <td>30,000</td>\n      <td>30,000</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3A</td>\n      <td>GDP weakening</td>\n      <td>1.0</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>3,000</td>\n      <td>3,000</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3</td>\n      <td>GDP weakening</td>\n      <td>1.0</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x104</td>\n      <td>30</td>\n      <td>300</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3</td>\n      <td>KDlong</td>\n      <td>1.0</td>\n      <td>1000</td>\n      <td>0.1</td>\n      <td>3x106</td>\n      <td>300</td>\n      <td>3000</td>\n      <td>3000</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3</td>\n      <td>KDlong</td>\n      <td>1.0</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>3000</td>\n      <td>3000</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3</td>\n      <td>KDlong</td>\n      <td>1.0</td>\n      <td>10</td>\n      <td>0.1</td>\n      <td>3x104</td>\n      <td>300</td>\n      <td>3000</td>\n      <td>3000</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3</td>\n      <td>KDcorner</td>\n      <td>1.0</td>\n      <td>100</td>\n      <td>0.5</td>\n      <td>3x105</td>\n      <td>1500</td>\n      <td>3000</td>\n      <td>3000</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3</td>\n      <td>KDcorner</td>\n      <td>1.0</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>3000</td>\n      <td>3000</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3</td>\n      <td>KDcorner</td>\n      <td>1.0</td>\n      <td>100</td>\n      <td>0.02</td>\n      <td>3x105</td>\n      <td>60</td>\n      <td>3000</td>\n      <td>3000</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Calculated on-rates and off-rates for simulations in Figure 1\u2014figure supplement 1.On-rate is calculated using the biochemical kon and the concentration of tubulin [\u00b5M]. Off-rate is calculated using the biochemical kon and the dissociation constant KD. All simulations in Figure 1\u2014figure supplements 2 and 3 use the same biochemical kon for plus-end and minus-end simulations, as was done in Figure 1. Shading highlights which off-rates changed, with respect to the original values in Figure 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Figure 1\u2014figure supplement 3</th>\n      <th>On-rate (s\u20131)</th>\n      <th>kofflong GTP (s\u20131)</th>\n      <th>koffcorner GTP (s\u20131)</th>\n      <th>kofflong GDP (s\u20131)</th>\n      <th>koffcorner GDP (s\u20131)</th>\n      <th>Tubulin (\u00b5M)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3A</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x106</td>\n      <td>3000</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3A</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3A</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x104</td>\n      <td>30</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3B</td>\n      <td>1</td>\n      <td>1000</td>\n      <td>0.1</td>\n      <td>3x106</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3B</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3B</td>\n      <td>1</td>\n      <td>10</td>\n      <td>0.1</td>\n      <td>3x104</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3C</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.5</td>\n      <td>3x105</td>\n      <td>1500</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3C</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.1</td>\n      <td>3x105</td>\n      <td>300</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>Figure 1\u2014figure supplement 3C</td>\n      <td>1</td>\n      <td>100</td>\n      <td>0.02</td>\n      <td>3x105</td>\n      <td>60</td>\n      <td>1</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kassandra M Ori-McKenney, University of California of Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89231.3.sa0](https://doi.org/10.7554/eLife.89231.3.sa0)\n\nThis important study combines in vitro experiments with simulations to identify the mechanisms governing modulation of microtubule dynamics by GTP hydrolysis. The authors introduce a convincing new approach by using a mixed GDP/GMPCPP lattice and varying GDP concentration to reveal that the nucleotide at the interface of two tubulin dimers determines the strength of the interaction between two dimers. Overall, the findings will be of interest to biophysicists and cell biologists, especially in the field of microtubule biology.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89231.3.sa1](https://doi.org/10.7554/eLife.89231.3.sa1)\n\nThis study addresses the fundamental question of how the nucleotide, associated with the beta-subunit of the tubulin dimer, dictates the tubulin-tubulin interaction strength in the microtubule polymer. This problem has been a topic of debate in the field for over a decade, and it is essential for understanding microtubule dynamics.\n\nMcCormick and colleagues focus their attention on two hypotheses, which they call the \"self-acting\" model and the \"interface-acting\" model. Both models have been previously discussed in the literature and they are related to the specific way, in which the GTP hydrolysis in the beta-tubulin subunit exerts an effect on the microtubule lattice. The authors argue that the two considered models can be discriminated based on a quantitative analysis of the sensitivity of the growth rates at the plus- and minus-ends of microtubules to the concentration of GDP-tubulins in mixed nucleotide (GDP/GMPCPP) experiments. By combing computational simulations and in vitro observations, they conclude that the tubulin-tubulin interaction strength is determined by the interfacial nucleotide.\n\nThe major strength of the paper is a systematic and thorough consideration of GDP as a modulator of microtubule dynamics, which brings novel insights about the structure of the stabilizing cap on the growing microtubule end.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89231.3.sa2](https://doi.org/10.7554/eLife.89231.3.sa2)\n\nIn their manuscript, McCormick, Cleary et al., explore the question of how the nucleotide state of the tubulin heterodimer affects the interaction between adjacent tubulins. They use a solid combination of biochemical reconstitution assays and modeling to reveal that the nucleotide at the interface of two tubulin dimers determines the strength of the interaction between two dimers. Overall, the findings will be valuable to the field of microtubule biology.\n",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4ab035e-99de-4e52-80bb-b78d722565b4",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C1",
+      "claim": "GTP-tubulin is preferentially incorporated at growing microtubule ends.",
+      "claim_type": "EXPLICIT",
+      "source": "GTP-tubulin is preferentially incorporated at growing microtubule ends, but the biochemical mechanism by which the bound nucleotide regulates the strength of tubulin:tubulin interactions is debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "58f598c1-0a40-4cea-b79f-37c3b4fdf16a",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C2",
+      "claim": "The 'self-acting' (cis) model posits that the nucleotide (GTP or GDP) bound to a particular tubulin dictates how strongly that tubulin interacts.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'self-acting' (cis) model posits that the nucleotide (GTP or GDP) bound to a particular tubulin dictates how strongly that tubulin interacts, whereas the 'interface-acting' (trans) model posits that the nucleotide at the interface of two tubulin dimers is the determinant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the self-acting model provided in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "1d9fca48-e3eb-4fe0-91b8-7e8363bf0a52",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C3",
+      "claim": "The 'interface-acting' (trans) model posits that the nucleotide at the interface of two tubulin dimers is the determinant of interaction strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'self-acting' (cis) model posits that the nucleotide (GTP or GDP) bound to a particular tubulin dictates how strongly that tubulin interacts, whereas the 'interface-acting' (trans) model posits that the nucleotide at the interface of two tubulin dimers is the determinant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the interface-acting model provided in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "cfd46430-26a5-4cb6-9598-785e317efa37",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C4",
+      "claim": "With a self-acting nucleotide, plus- and minus-end growth rates decreased in the same proportion to the amount of GDP-tubulin in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "with a self-acting nucleotide, plus- and minus-end growth rates decreased in the same proportion to the amount of GDP-tubulin, whereas with interface-acting nucleotide, plus-end growth rates decreased disproportionately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from computational simulations described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "80e538df-8bfe-4bb4-a0a0-2a71d2e7947e",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C5",
+      "claim": "With interface-acting nucleotide, plus-end growth rates decreased disproportionately compared to minus-end growth rates in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "with a self-acting nucleotide, plus- and minus-end growth rates decreased in the same proportion to the amount of GDP-tubulin, whereas with interface-acting nucleotide, plus-end growth rates decreased disproportionately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from computational simulations described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "5cbf172a-440f-4211-8fd7-24cae33e3dc9",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C6",
+      "claim": "Experimental measurements showed a disproportionate effect of GDP-tubulin on plus-end growth rates compared to minus-end growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "We then experimentally measured plus- and minus-end elongation rates in mixed nucleotides and observed a disproportionate effect of GDP-tubulin on plus-end growth rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "28c03568-2048-435b-b203-d0bc5d233456",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C7",
+      "claim": "GDP-tubulin binds at and 'poisons' plus-ends but not at minus-ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of microtubule growth were consistent with GDP-tubulin binding at and 'poisoning' plus-ends but not at minus-ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from simulations described in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "77a7dbbd-3d4e-450d-ae07-2071407eca2c",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C8",
+      "claim": "Nucleotide exchange at terminal plus-end subunits mitigates the poisoning effect of GDP-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative agreement between simulations and experiments required nucleotide exchange at terminal plus-end subunits to mitigate the poisoning effect of GDP-tubulin there.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing simulations to experiments, described in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "3cda5510-71a8-4ca4-b30d-6a896777abb4",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C9",
+      "claim": "The interfacial nucleotide determines tubulin:tubulin interaction strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the interfacial nucleotide determines tubulin:tubulin interaction strength, thereby settling a longstanding debate over the effect of nucleotide state on microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "e7a5aac0-1170-4c0a-9a89-e8d52e52de51",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C10",
+      "claim": "Microtubules grow by the addition of GTP-bound tubulin to the polymer ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules grow by the addition of GTP-bound tubulin to the polymer ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "493c77c9-6618-4f0b-aecb-24eb600448c5",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C11",
+      "claim": "Once incorporated into the microtubule lattice, tubulins hydrolyze their bound GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Once incorporated into the microtubule lattice, tubulins hydrolyze their bound GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "f85823ad-8a88-400e-88cc-4c54b4fd282b",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C12",
+      "claim": "The change in nucleotide state triggers conformational changes that weaken interactions between neighboring tubulins and ultimately results in catastrophe.",
+      "claim_type": "EXPLICIT",
+      "source": "The change in nucleotide state triggers conformational changes that weaken interactions between neighboring tubulins and ultimately results in catastrophe, the switch from growth to shrinkage (Bowne-Anderson et al., 2013; Gudimchuk and McIntosh, 2021; LaFrance et al., 2022; Manka and Moores, 2018; Roostalu et al., 2020; Seetapun et al., 2012; Zanic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "40bc7d98-e891-4b3a-af7b-432d4216a79c",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C13",
+      "claim": "An early model posited that GTP-tubulin would form strong lattice contacts because GTP favors a 'straight' conformation compatible with the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "An early model explained the nucleotide-dependence of microtubule stability by positing that nucleotide state determines the conformation of tubulin: GTP-tubulin would form strong lattice contacts because GTP favors a 'straight' conformation compatible with the microtubule lattice, and GDP-tubulin would form weak lattice contacts because GDP favors a 'curved' conformation incompatible with the microtubule lattice (Drechsel and Kirschner, 1994; Howard and Timasheff, 1986; Melki et al., 1989; Nicholson et al., 1999; Shearwin et al., 1994; Tran et al., 1997; Wang and Nogales, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical model supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "36df6452-6f2e-4737-8cdb-bc41f825dcd5",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C14",
+      "claim": "GDP-tubulin would form weak lattice contacts because GDP favors a 'curved' conformation incompatible with the microtubule lattice according to an early model.",
+      "claim_type": "EXPLICIT",
+      "source": "An early model explained the nucleotide-dependence of microtubule stability by positing that nucleotide state determines the conformation of tubulin: GTP-tubulin would form strong lattice contacts because GTP favors a 'straight' conformation compatible with the microtubule lattice, and GDP-tubulin would form weak lattice contacts because GDP favors a 'curved' conformation incompatible with the microtubule lattice (Drechsel and Kirschner, 1994; Howard and Timasheff, 1986; Melki et al., 1989; Nicholson et al., 1999; Shearwin et al., 1994; Tran et al., 1997; Wang and Nogales, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical model supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "e9363b67-c3dc-4b31-b635-8f3707dfb33b",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C15",
+      "claim": "Both GTP- and GDP-tubulin adopt the same curved conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subsequent work demonstrated that both GTP- and GDP-tubulin adopt the same curved conformation (Nawrotek et al., 2011; Pecqueur et al., 2012; Rice et al., 2008), which contradicted a core assumption of the cis-acting model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8a908445-3ecf-4c38-8189-a5959361e9b5",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C16",
+      "claim": "The nucleotide binding site on \u03b2-tubulin forms part of the polymerization interface with the \u03b1-tubulin from the next subunit in the protofilament.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'trans' mechanism is supported by the knowledge that the nucleotide binding site on \u03b2-tubulin forms part of the polymerization interface with the \u03b1-tubulin from the next subunit in the protofilament, and it is also consistent with the largest nucleotide-dependent conformational changes in the microtubule occurring in \u03b1-tubulin adjacent to the \u03b2-tubulin-bound nucleotide (Alushin et al., 2014; Manka and Moores, 2018; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "f6b011d8-d253-4053-9992-c6aa37d646e8",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C17",
+      "claim": "The largest nucleotide-dependent conformational changes in the microtubule occur in \u03b1-tubulin adjacent to the \u03b2-tubulin-bound nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'trans' mechanism is supported by the knowledge that the nucleotide binding site on \u03b2-tubulin forms part of the polymerization interface with the \u03b1-tubulin from the next subunit in the protofilament, and it is also consistent with the largest nucleotide-dependent conformational changes in the microtubule occurring in \u03b1-tubulin adjacent to the \u03b2-tubulin-bound nucleotide (Alushin et al., 2014; Manka and Moores, 2018; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to cryo-EM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "15a52b47-734e-4c69-b398-13fe7b87066c",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C18",
+      "claim": "Microtubule plus-ends present a \u03b2-tubulin polymerization interface that contains the exchangeable nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule plus- and minus-ends are structurally distinct: plus-ends present a \u03b2-tubulin polymerization interface that contains the exchangeable nucleotide, whereas minus-ends present an \u03b1-tubulin polymerization interface that does not expose a nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established structural knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "be32b1f8-6596-43ac-9a91-d149b1ec4e7a",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C19",
+      "claim": "Microtubule minus-ends present an \u03b1-tubulin polymerization interface that does not expose a nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule plus- and minus-ends are structurally distinct: plus-ends present a \u03b2-tubulin polymerization interface that contains the exchangeable nucleotide, whereas minus-ends present an \u03b1-tubulin polymerization interface that does not expose a nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established structural knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "2427b289-c052-46dd-b11e-bdc74a48164a",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C20",
+      "claim": "At the plus-end, two nucleotides could in principle be dictating the strength of lattice contacts: one bound to the terminal tubulin (the cis nucleotide), and one at the interface between the terminal tubulin and the next subunit in the microtubule lattice (the trans nucleotide).",
+      "claim_type": "EXPLICIT",
+      "source": "Debate over cis- and trans-acting mechanisms (reviewed in Gudimchuk and McIntosh, 2021) has persisted in part because most studies have focused solely on the plus-end, where two nucleotides \u2013 one bound to the terminal tubulin (the cis nucleotide), and one at the interface between the terminal tubulin and the next subunit in the microtubule lattice (the trans nucleotide) \u2013 could in principle be dictating the strength of lattice contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the structural arrangement at the plus-end.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8f3c9803-1ed5-460c-b914-5c60d9dd9cc7",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C21",
+      "claim": "At the minus-end, the exchangeable nucleotide of the terminal tubulin is already buried in the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "At the minus-end, by contrast, the exchangeable nucleotide of the terminal tubulin is already buried in the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural fact about the minus-end.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "a69aea69-dd09-4695-9e19-5c7867750ff6",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C22",
+      "claim": "In the self-acting model, GDP-tubulin inhibited plus- and minus-ended growth to the same extent in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations revealed a striking difference between the two mechanisms of nucleotide action: in the self-acting model, GDP-tubulin inhibited plus- and minus-ended growth to the same extent, but in the interface-acting model, GDP-tubulin disproportionately inhibited plus-ended growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "17a72f4c-2b54-44f7-a76c-dae385fcc47a",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C23",
+      "claim": "In the interface-acting model, GDP-tubulin disproportionately inhibited plus-ended growth in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulations revealed a striking difference between the two mechanisms of nucleotide action: in the self-acting model, GDP-tubulin inhibited plus- and minus-ended growth to the same extent, but in the interface-acting model, GDP-tubulin disproportionately inhibited plus-ended growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "dbd9068b-a52c-4a4b-9873-f4d71adb932e",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C24",
+      "claim": "An earlier study showed a selective suppression of plus-end elongation when GDP was included in the reaction mixture.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation was consistent with an earlier study that showed a selective suppression of plus-end elongation when GDP was included in the reaction mixture (Tanaka-Takiguchi et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "733e23ff-664c-4d4e-8666-db693baa7200",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C25",
+      "claim": "Plus-end growth showed a roughly two-fold higher apparent on-rate constant than minus-end growth (3 \u00b5M\u20131 s\u20131 MT\u20131 and 1.5 \u00b5M\u20131 s\u20131 MT\u20131, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Both ends showed the same apparent critical concentration (Ccapp) of 50 nM, but plus-end growth showed a roughly two-fold higher apparent on-rate constant (konapp) than minus-end growth, 3 \u00b5M\u20131 s\u20131 MT\u20131 and 1.5 \u00b5M\u20131 s\u20131 MT\u20131, respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental measurement shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "249dc033-d7ab-4be2-af73-7c7c5009fbae",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C26",
+      "claim": "Both plus- and minus-ends showed the same apparent critical concentration (Ccapp) of 50 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ends showed the same apparent critical concentration (Ccapp) of 50 nM, but plus-end growth showed a roughly two-fold higher apparent on-rate constant (konapp) than minus-end growth, 3 \u00b5M\u20131 s\u20131 MT\u20131 and 1.5 \u00b5M\u20131 s\u20131 MT\u20131, respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental measurement shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "665bd2ea-839a-4994-a569-2698113f6690",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C27",
+      "claim": "Growth rates at both ends decreased substantially in mixtures containing as little as 2.5% GDP (25 \u00b5M GDP and 975 \u00b5M GMPCPP).",
+      "claim_type": "EXPLICIT",
+      "source": "Growth rates at both ends decreased substantially in mixtures containing as little as 2.5% GDP (25 \u00b5M GDP and 975 \u00b5M GMPCPP) (Figure 2C), but plus-end growth rates decreased to a greater degree than minus-end growth rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "a6deb474-3e7b-4721-a3be-2e4044ac39bd",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C28",
+      "claim": "Plus-end growth rates decreased to a greater degree than minus-end growth rates in mixed nucleotide experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth rates at both ends decreased substantially in mixtures containing as little as 2.5% GDP (25 \u00b5M GDP and 975 \u00b5M GMPCPP) (Figure 2C), but plus-end growth rates decreased to a greater degree than minus-end growth rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "19131369-0b94-4314-a08a-b34f2032dde1",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C29",
+      "claim": "At 25 \u00b5M GDP, plus-end growth rates fell ~50% (from 2.2 nm/s to 1.1 nm/s) relative to 'all GMPCPP' growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, at 25 \u00b5M GDP, plus-end growth rates fell ~50% (from 2.2 nm/s to 1.1 nm/s) relative to 'all GMPCPP' growth rates, whereas minus-end growth rates only fell ~30% (from 1 nm/s to 0.7 nm/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "aecca514-95e4-4381-908a-b9795c6049a5",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C30",
+      "claim": "At 25 \u00b5M GDP, minus-end growth rates only fell ~30% (from 1 nm/s to 0.7 nm/s) relative to 'all GMPCPP' growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, at 25 \u00b5M GDP, plus-end growth rates fell ~50% (from 2.2 nm/s to 1.1 nm/s) relative to 'all GMPCPP' growth rates, whereas minus-end growth rates only fell ~30% (from 1 nm/s to 0.7 nm/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "c679e0e6-efbe-4931-9264-679ff9b58de5",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C31",
+      "claim": "The ~1.5-fold stronger inhibition by GDP of plus-end growth rates held across multiple nucleotide mixing ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "This ~1.5-fold stronger inhibition by GDP of plus-end growth rates held across multiple nucleotide mixing ratios (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "86f19f13-c86c-4325-9512-21de545f267f",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C32",
+      "claim": "Tubulin binds 12.5-fold less tightly to GMPCPP than to GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "The GMPCPP-tubulin concentrations that best recapitulate minus-end growth rates are consistent with tubulin binding 12.5-fold less tightly to GMPCPP (KDGMPCPP) than to GDP (KDGDP) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from fitting experimental data and supported by direct measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "487dc676-b74c-4042-9a25-021f33c3eccb",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C33",
+      "claim": "The inferred 12.5-fold difference in nucleotide binding affinities was supported by direct measurements of nucleotide binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This inferred difference of affinities was supported by direct measurements of nucleotide binding (Figure 3\u2014figure supplement 1), and agrees with prior reports (Correia et al., 1987; Hyman et al., 1992).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data in Figure 3\u2014figure supplement 1 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "65c50827-872d-4324-a962-99fcd35a57ba",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C34",
+      "claim": "Minus-end growth rates decreased stoichiometrically as the concentration of GDP-tubulin increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Minus-end growth rates decreased stoichiometrically as the concentration of GDP-tubulin increased, matching or even slightly exceeding the 'all GMPCPP' extrapolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the mixed nucleotide assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "7bb7043e-add8-4cba-b19e-e24b41d8a6f4",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C35",
+      "claim": "Plus-end growth rates decreased super-stoichiometrically for a given concentration of GDP-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, plus-end growth rates decreased super-stoichiometrically (were slower than expected based on the 'all GMPCPP' extrapolation) for a given concentration of GDP-tubulin (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "1b7e94b4-87d4-402b-b61b-1254530df5dc",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C36",
+      "claim": "The super-stoichiometric effect at the plus-end was most apparent when 25\u201355% of unpolymerized tubulin was bound to GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "This super-stoichiometric effect at the plus-end was observed over a range of GDP-tubulin concentrations, and was most apparent when 25\u201355% of unpolymerized tubulin was bound to GDP (Figure 3D inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 3D inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "d683715d-9ce0-4ae1-a746-f32f01e47d67",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C37",
+      "claim": "The super-stoichiometric effect of GDP-tubulin on plus-end growth over a wide range of GDP-tubulin concentrations provides strong support for the interface-acting nucleotide mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The super-stoichiometric effect of GDP-tubulin on plus-end growth over a wide range of GDP-tubulin concentrations provides strong support for the interface-acting nucleotide mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "6ccdcff9-545b-4427-856e-b956d3640890",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C38",
+      "claim": "The plus-end growth rates were recapitulated well using konplus of 0.74 \u00b5M\u20131 s\u20131, KDlongitudinal of 86 \u00b5M, and KDcorner of 25 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The plus-end growth rates were recapitulated well using the same parameters obtained in a prior study (Cleary et al., 2022b; konplus of 0.74 \u00b5M\u20131 s\u20131, KDlongitudinal of 86 \u00b5M, KDcorner of 25 nM; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting simulations to experimental data, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "68c4764c-a235-4a49-8484-a5fe3425318b",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C39",
+      "claim": "The minus-end-specific on-rate constant (konminus) was determined to be 0.31 \u00b5M\u20131 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "To extend the model to fit the minus-end growth rates, we retained the same interaction affinities as for the plus-end (consistent with the equal apparent critical concentration at both ends, Figure 2B) and optimized a minus-end-specific on-rate constant. This procedure yielded a konminus of 0.31 \u00b5M\u20131 s\u20131 (Figure 4A), roughly 2-fold slower than the plus-end, which is in line with the ~twofold lower concentration-dependence of growth rates observed at the minus-end (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting simulations to experimental data, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "33d92ffb-c02c-4402-bec8-e5c837076e83",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C40",
+      "claim": "Simulated minus-end growth rates decreased linearly as the concentration of GDP-tubulin increased, recapitulating the experimental measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulated minus-end growth rates decreased linearly as the concentration of GDP-tubulin increased, recapitulating the experimental measurements (Figure 4B) and in agreement with our initial prediction using arbitrary parameters (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from simulations shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8439138f-1bf9-4ebb-83a7-dcb0b0cddd98",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C41",
+      "claim": "Simulated plus-end growth rates decreased super-stoichiometrically as the concentration of GDP-tubulin increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, simulated plus-end growth rates decreased super-stoichiometrically as the concentration of GDP-tubulin increased (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from simulations shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "7ac2c419-8fb4-46be-b60a-3602d7ecebed",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C42",
+      "claim": "The model overpredicted the magnitude of the GDP-poisoning effect at the plus-end.",
+      "claim_type": "EXPLICIT",
+      "source": "An outsized effect of GDP-tubulin at the plus-end is expected from the interface-acting mechanism, but the model overpredicted the magnitude of the effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing simulations to experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "9340a94e-8776-4d52-831b-1e34142138c9",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C43",
+      "claim": "In the interface-acting nucleotide mechanism, the outsized effect of GDP at the plus-end occurs because GDP-tubulin can bind tightly to (and reside longer at) the plus-end if the interfacial nucleotide is GMPCPP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the interface-acting nucleotide mechanism, the outsized effect of GDP at the plus-end occurs because GDP-tubulin can bind tightly to (and reside longer at) the plus-end if the interfacial nucleotide is GMPCPP (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of the mechanism illustrated in Figure 4D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "f652d505-413a-4836-bb6c-e0384bc3d0a4",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C44",
+      "claim": "The 'extended stay' of GDP-tubulin on the plus-end poisons the protofilament end against further growth and is the origin of the super-stoichiometric effect of GDP-tubulin at the plus-end.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'extended stay' of GDP-tubulin on the plus-end poisons the protofilament end against further growth and is the origin of the super-stoichiometric effect of GDP-tubulin at the plus-end (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of the mechanism illustrated in Figure 4D.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "6c340c2e-430c-4a9c-8eeb-754e8619449c",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C45",
+      "claim": "Faster rates of nucleotide exchange yielded smaller decreases in plus-end growth rates for a given concentration of GDP-tubulin in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Faster rates of nucleotide exchange yielded smaller decreases in plus-end growth rates for a given concentration of GDP-tubulin (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from simulations shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "ec2d8966-b05a-41dc-ba2c-539d72aa8413",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C46",
+      "claim": "The rate of nucleotide exchange that best recapitulated the observed effects was 0.3\u20130.5 s\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of nucleotide exchange that best recapitulated the observed effects was 0.3\u20130.5 s\u20131, which compares favorably to other estimates (Amayed et al., 2000; Melki et al., 1989; Yarbrough and Fishback, 1985; Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting simulations to experiments and is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "c9eef5f4-87d2-4565-becb-04dcf0c75818",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C47",
+      "claim": "Microtubule plus- and minus-ends exhibit different sensitivities to GDP-tubulin, lending strong support for the interface-acting mechanism of nucleotide action.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, using simulations and measurements of plus- and minus-end growth, we showed that microtubule plus- and minus-ends exhibit different sensitivities to GDP-tubulin, lending strong support for the interface-acting mechanism of nucleotide action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "84a48bdc-7603-410c-8513-bca7bb3ce1b4",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C48",
+      "claim": "The outsized effect of GDP on plus-ends provides new insights into the fundamental mechanisms of microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The outsized effect of GDP on plus-ends provides new insights into the fundamental mechanisms of microtubule dynamics and adds to a growing body of evidence that suggests GDP-terminated protofilaments influence microtubule growth (Carlier and Pantaloni, 1978; Hamel et al., 1986; Valiron et al., 2010), fluctuations (Cleary et al., 2022b), catastrophe (Caplow and Shanks, 1996; Piedra et al., 2016), and regulation (Lawrence et al., 2022; Luo et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the current work and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "494f4bde-7f39-4ac5-afa0-73aeb995b5c3",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C49",
+      "claim": "GDP-terminated protofilaments influence microtubule growth, fluctuations, catastrophe, and regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The outsized effect of GDP on plus-ends provides new insights into the fundamental mechanisms of microtubule dynamics and adds to a growing body of evidence that suggests GDP-terminated protofilaments influence microtubule growth (Carlier and Pantaloni, 1978; Hamel et al., 1986; Valiron et al., 2010), fluctuations (Cleary et al., 2022b), catastrophe (Caplow and Shanks, 1996; Piedra et al., 2016), and regulation (Lawrence et al., 2022; Luo et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "65e362d2-c49f-458e-8ac2-a654925c1e96",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C50",
+      "claim": "Early views of the GTP cap did not anticipate the influence of GDP-tubulin on growing plus-ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Early views of the GTP cap did not anticipate the influence of GDP-tubulin on growing plus-ends, but there is now increasing evidence (Carlier and Pantaloni, 1978; Farmer and Zanic, 2023; Hamel et al., 1986; Margolin et al., 2012; Maurer et al., 2012; Roth et al., 2018; Valiron et al., 2010) that the cap is not 'all or nothing', and that GDP-tubulin can modulate microtubule growth without always initiating a catastrophe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the historical development of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "d9a0728d-16df-4040-9970-7cea3f00fb4d",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C51",
+      "claim": "There is increasing evidence that the GTP cap is not 'all or nothing', and that GDP-tubulin can modulate microtubule growth without always initiating a catastrophe.",
+      "claim_type": "EXPLICIT",
+      "source": "Early views of the GTP cap did not anticipate the influence of GDP-tubulin on growing plus-ends, but there is now increasing evidence (Carlier and Pantaloni, 1978; Farmer and Zanic, 2023; Hamel et al., 1986; Margolin et al., 2012; Maurer et al., 2012; Roth et al., 2018; Valiron et al., 2010) that the cap is not 'all or nothing', and that GDP-tubulin can modulate microtubule growth without always initiating a catastrophe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "b4dd5269-c6a0-4764-afa2-cb60fdb58caf",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C52",
+      "claim": "The tendency for plus-ended growth to 'stutter' and fluctuate might be explained by exposed GDP-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the tendency for plus-ended growth to 'stutter' (Mahserejian et al., 2022) and fluctuate (Cleary et al., 2022b) might be explained by exposed GDP-tubulin; exposed GDP-tubulin may also contribute to the higher frequency of catastrophe at the plus-end (Strothman et al., 2019; Walker et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8994bf79-3a7d-47ba-9fee-94873a1c44b9",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C53",
+      "claim": "Exposed GDP-tubulin may contribute to the higher frequency of catastrophe at the plus-end.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the tendency for plus-ended growth to 'stutter' (Mahserejian et al., 2022) and fluctuate (Cleary et al., 2022b) might be explained by exposed GDP-tubulin; exposed GDP-tubulin may also contribute to the higher frequency of catastrophe at the plus-end (Strothman et al., 2019; Walker et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "470b388f-4384-40ba-ae8f-cb0538b504ba",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C54",
+      "claim": "The work supports an emerging view of the growing microtubule end as a 'mosaic' of nucleotide states rather than a uniform assembly of GTP-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work supports an emerging view of the growing microtubule end as a 'mosaic' of nucleotide states rather than a uniform assembly of GTP-tubulin (Brouhard and Sept, 2012; Brouhard and Rice, 2018; Cross, 2019; Duellberg et al., 2016; Farmer et al., 2021; Farmer and Zanic, 2023; Gudimchuk and McIntosh, 2021; Howard and Hyman, 2009; Margolin et al., 2012; Maurer et al., 2012; Roostalu et al., 2020; Roth et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the current work and multiple citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "257c39c6-b209-46bf-aa2f-fbcf693e1ffa",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C55",
+      "claim": "The findings provide the most direct evidence to date in support of an interface-acting mechanism for nucleotide in microtubule stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the findings reported here provide the most direct evidence to date in support of an interface-acting mechanism for nucleotide in microtubule stabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the Discussion section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "325f6853-1d0a-4a53-aba5-ce4b2972c3da",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C56",
+      "claim": "The ATP binding site in AAA proteins resides at a protomer:protomer interface and dictates the geometry of oligomerization contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, just as the GTP-binding site on \u03b2-tubulin forms part of the longitudinal interface between tubulin subunits, the ATP binding site in AAA proteins resides at a protomer:protomer interface and dictates the geometry of oligomerization contacts (Erzberger and Berger, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work on AAA proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "de617655-36a5-4bbe-9e12-acd946446123",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C57",
+      "claim": "For both AAA proteins and microtubules, residues important for nucleotide hydrolysis on one subunit are contributed by the next subunit in the oligomer or polymer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for both AAA proteins and microtubules, residues important for nucleotide hydrolysis on one subunit are contributed by the next subunit in the oligomer or polymer (Banerjee et al., 2016; Brunger and DeLaBarre, 2003; Davies et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "5e5ecf78-195f-4209-8938-40bdfc673622",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C58",
+      "claim": "Similarities involving interfacial nucleotides in otherwise unrelated proteins may indicate a shared, convergently evolved mechanism for achieving force production in oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that these similarities involving interfacial nucleotides in otherwise unrelated proteins may indicate a shared, convergently evolved mechanism for achieving force production in oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the comparison between microtubules and AAA proteins.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "dc64790a-54fb-46dc-a9bc-a744a5e3a77d",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C59",
+      "claim": "Simulated growth rates of GTP microtubule plus- and minus-ends were performed using arbitrarily chosen parameters that support elongation in the chosen concentration range.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulated growth rates of GTP microtubule plus- and minus-ends, using arbitrarily chosen parameters that support elongation in the chosen concentration range.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "9aeeb06d-33b3-4173-a3fb-a845e674accf",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C60",
+      "claim": "In a self-acting mechanism, both plus-end and minus-end growth rates are predicted to decrease linearly with the amount of GDP-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "In a self-acting mechanism, both plus-end (circles) and minus-end (squares) growth rates are predicted to decrease linearly with the amount of GDP-tubulin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1B and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "be78eac6-5af8-48ad-b8dd-ed2bea40f37e",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C61",
+      "claim": "In an interface-acting mechanism, plus-end growth rates are predicted to be disproportionately impacted by GDP-tubulin relative to minus-end growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In an interface-acting mechanism, plus-end (circles) growth rates are predicted to be disproportionately impacted by GDP-tubulin relative to minus-end growth rates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1C and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "76453bf8-b487-488d-bb96-f0868d52d79f",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C62",
+      "claim": "The predicted difference between self-acting and interface-acting mechanisms at the plus-end is robust across different choices for KDlong, KDcorner, and the GDP weakening effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted difference between mechanisms at the plus-end is robust across different choices for KDlong, KDcorner, and the GDP weakening effect (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1 and shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "4dd3e79b-6c46-40a7-84ce-700132f35c71",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C63",
+      "claim": "At 25 \u00b5M GDP, plus-end growth rates fell ~50% relative to 'all GMPCPP' growth rates, whereas minus-end growth rates only fell ~30%.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, at 25 \u00b5M GDP, plus-end growth rates fell ~50% (from 2.2 nm/s to 1.1 nm/s) relative to 'all GMPCPP' growth rates, whereas minus-end growth rates only fell ~30% (from 1 nm/s to 0.7 nm/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "851de025-7e93-4c1a-8bfe-102da71a3c21",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "claim_id": "C64",
+      "claim": "Differences in the mean normalized growth rates at plus- and minus-ends were statistically significant with P<0.001 for all nucleotide mixtures except 0% GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a two-sided t-test with unequal variance, differences in the mean normalized growth rates at plus- and minus-ends were statistically significant with P<0.001 for all nucleotide mixtures except 0% GDP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 2 and represents statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Computational simulations predict that self-acting and interface-acting nucleotide mechanisms produce distinct effects on plus- and minus-end growth rates in the presence of GDP-tubulin. In the self-acting model, both ends are equally affected by GDP-tubulin, whereas in the interface-acting model, plus-end growth is disproportionately inhibited compared to minus-end growth. This prediction is robust across different parameter choices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C22, C23, C60, and C61 consistently demonstrate through simulations that the two mechanisms produce distinguishable predictions. Claim C62 confirms robustness across parameter variations (Figure 1\u2014figure supplement 3). The simulation methodology is clearly described (C59), and the predictions are internally consistent and logically derived from the structural differences between plus- and minus-ends.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experimental measurements using mixed nucleotide assays (GMPCPP and GDP) demonstrate that plus-end growth rates are disproportionately inhibited by GDP-tubulin compared to minus-end growth rates. At 25 \u00b5M GDP, plus-end growth decreased by ~50% while minus-end growth decreased by only ~30%, with this ~1.5-fold differential maintained across multiple nucleotide ratios and statistically significant (P<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 and C63-C64 provide consistent experimental evidence with appropriate statistical analysis (two-sided t-test, P<0.001). The measurements are quantitative, reproducible across conditions, and directly test the predictions from simulations. Sample sizes appear adequate (n=39-125 depending on condition), and the use of GMPCPP to prevent catastrophe is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "a93b8ce8-0336-497d-929e-4603d30a2398",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Tubulin binds GMPCPP 12.5-fold less tightly than GDP, as determined by fitting minus-end growth rates to a competitive binding model and confirmed by direct nucleotide binding measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is derived from a well-described competitive binding model fit to experimental data (Figure 3B), and C33 confirms this inference with independent direct measurements (Figure 3\u2014figure supplement 1) that agree with prior literature. The convergence of indirect (kinetic) and direct (binding) measurements strengthens confidence in this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "5ef25410-5116-49c5-8924-dbc6a92d5101",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Plus-end growth rates decrease super-stoichiometrically with increasing GDP-tubulin concentration, while minus-end growth rates decrease stoichiometrically. This differential effect is most apparent when 25-55% of unpolymerized tubulin is GDP-bound and provides strong support for the interface-acting mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 describe clear experimental observations shown in Figure 3C-D. The super-stoichiometric effect at the plus-end (C35, C36) contrasts with the stoichiometric effect at the minus-end (C34), directly matching the predictions of the interface-acting model. Claim C37's conclusion is well-supported by the convergence of simulation predictions and experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "ebd0a6a6-28d9-4128-9fd2-5c8d88073fdd",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Simulations using an interface-acting nucleotide model with fitted biochemical parameters successfully recapitulate experimental growth rates for both ends in pure GMPCPP and the linear decrease in minus-end growth with GDP-tubulin. However, the model overpredicts the magnitude of GDP-induced super-stoichiometric inhibition at the plus-end.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 demonstrate that the model successfully fits baseline conditions and minus-end behavior. Claim C42 honestly acknowledges a quantitative discrepancy between model predictions and experimental observations at the plus-end, which is appropriately addressed in subsequent analysis (nucleotide exchange). The transparency about model limitations strengthens rather than weakens the overall evaluation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "49a87046-62fe-430a-ba14-8e6ad136b13e",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In the interface-acting mechanism, GDP-tubulin 'poisons' plus-ends by binding tightly when the interfacial nucleotide is GMPCPP, resulting in an extended residence time that blocks further growth. This mechanism explains the super-stoichiometric effect of GDP-tubulin on plus-end growth but does not occur at minus-ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C44 provide a clear mechanistic explanation for the observed super-stoichiometric effect, illustrated in Figure 4D. Claim C7 summarizes this mechanism. The explanation is logically consistent with the interface-acting model and the structural differences between plus- and minus-ends. The mechanism is supported by both simulation results and experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "5a6efb74-2fac-41dc-9d4d-9268272bab5a",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Incorporating nucleotide exchange at terminal plus-end subunits into simulations mitigates the GDP-poisoning effect and improves quantitative agreement with experimental data. The optimal exchange rate of 0.3-0.5 s\u207b\u00b9 is consistent with prior estimates from the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C46 demonstrate that including nucleotide exchange resolves the quantitative discrepancy noted in C42. The fitted exchange rate agrees with independent literature values, providing external validation. Claim C8 summarizes this finding. The approach is methodologically sound, though it introduces an additional parameter to improve model fit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "a027fb76-da4d-4775-962e-14e11deae1c2",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The combined simulation and experimental evidence demonstrates that the interfacial nucleotide determines tubulin:tubulin interaction strength, providing the most direct evidence to date for the interface-acting mechanism and settling the longstanding debate over nucleotide action in microtubule dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47, and C55 represent the main conclusions, supported by the convergence of simulation predictions (C4-C5, C22-C23) and experimental observations (C27-C31, C35-C36). Claim C9 states the central conclusion. The evidence is strong: the differential sensitivity of plus- and minus-ends to GDP-tubulin is incompatible with a self-acting mechanism and consistent with interface-acting mechanism across multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "76175226-ea74-4eed-b427-111fbc591fa6",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings support an emerging view of the growing microtubule end as a 'mosaic' of nucleotide states rather than a uniform GTP cap, with GDP-terminated protofilaments influencing growth, fluctuations, catastrophe, and regulation without always initiating catastrophe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C51, and C54 place the current findings in the context of recent literature (C49), which is well-supported by multiple citations. The 'mosaic' model is consistent with the demonstrated ability of GDP-tubulin to modulate plus-end growth in a graded manner. This represents a conceptual advance in understanding microtubule dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8376595d-e35d-40c1-819b-a811c4c42780",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The tendency for plus-end growth to 'stutter' and fluctuate, and the higher frequency of catastrophe at plus-ends, might be explained by exposed GDP-tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52 and C53 are explicitly speculative ('might be explained') and supported only by citations to prior work showing these phenomena exist. While the speculation is reasonable given the demonstrated effects of GDP-tubulin on plus-end growth, the current study does not directly test these specific phenomena (stuttering, fluctuations, catastrophe frequency). Additional experiments would be needed to support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "453ecba7-dd5b-4cc1-8ccf-6a658e3f8c27",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Similarities between microtubules and AAA proteins in their use of interfacial nucleotides may indicate a shared, convergently evolved mechanism for achieving force production in oligomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56 and C57 accurately describe features of AAA proteins supported by citations. However, C58 is explicitly speculative ('we speculate') and represents a broad evolutionary hypothesis that extends well beyond the scope of the current study. While the parallel is interesting, the claim about convergent evolution would require comparative structural, biochemical, and evolutionary analyses not presented here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "66ec958a-0453-4814-9a5b-8c5642da2f9b",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge about microtubule structure, dynamics, and historical models of nucleotide action, including the structural distinction between plus- and minus-ends and the evolution of thinking about the GTP cap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C21, C24, and C50 represent established knowledge in the field, appropriately cited and accurately described. These provide necessary context for understanding the current work. Claim C15 is particularly important as it describes prior work that contradicted the early cis-acting model, motivating the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "233d98a3-36ed-4127-b2b5-d4ad4d328bb6",
+      "content_id": "ef118f5e-9917-4276-aeec-b250a9b99b00",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Definitions of self-acting (cis) and interface-acting (trans) mechanisms for how nucleotide state controls tubulin:tubulin interaction strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C3 provide clear, accurate definitions of the two competing mechanistic models being tested. These definitions are essential for understanding the study design and interpreting the results. The definitions are consistent with usage in the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "4834d83e-0d23-4609-a28a-b689cccc1d30",
+      "content_id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Computational simulations predicted that self-acting and interface-acting nucleotide mechanisms produce distinct effects on microtubule growth: with self-acting nucleotide, plus- and minus-end growth rates decrease proportionally with GDP-tubulin, whereas with interface-acting nucleotide, plus-end growth rates decrease disproportionately compared to minus-ends.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers affirm the computational approach and predictions. Reviewer 1 states the study 'combines in vitro experiments with simulations' and finds the approach 'convincing.' Reviewer 2 describes the work as 'systematic and thorough,' and Reviewer 3 notes the 'solid combination of biochemical reconstitution assays and modeling.' No concerns are raised about the simulation predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3",
+      "content_id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Experimental measurements using mixed GDP/GMPCPP nucleotides showed that GDP-tubulin has a disproportionate inhibitory effect on plus-end growth rates (~50% reduction at 25 \u00b5M GDP) compared to minus-end growth rates (~30% reduction), with this differential effect holding across multiple nucleotide mixing ratios and being statistically significant (P<0.001).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly endorse the experimental findings. Reviewer 1 describes the mixed nucleotide approach as 'convincing' and states it successfully 'reveal[s] that the nucleotide at the interface of two tubulin dimers determines the strength of the interaction.' Reviewers 2 and 3 similarly affirm the experimental observations without raising concerns about the data quality or interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8e57f850-821e-44da-915e-9cb0e7ab9af4",
+      "content_id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Analysis of growth rates as a function of GDP-tubulin concentration revealed that minus-end growth decreased stoichiometrically while plus-end growth decreased super-stoichiometrically, with the effect most apparent at 25-55% GDP-tubulin. This super-stoichiometric effect provides strong support for GDP-tubulin 'poisoning' plus-ends but not minus-ends, consistent with the interface-acting mechanism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this key finding without challenge. Reviewer 2 highlights this as bringing 'novel insights about the structure of the stabilizing cap on the growing microtubule end,' indicating acceptance of the poisoning interpretation. Reviewer 1 affirms the conclusion that 'the nucleotide at the interface of two tubulin dimers determines the strength of the interaction,' which directly supports the poisoning mechanism described.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "c78d3ef7-1023-4cde-9c91-0126c150ed4c",
+      "content_id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Quantitative agreement between simulations and experiments required incorporating nucleotide exchange at terminal plus-end subunits (rate 0.3-0.5 s\u207b\u00b9) to mitigate GDP-tubulin poisoning. The model initially overpredicted the poisoning effect, but including exchange resolved this discrepancy by allowing GDP-tubulin to be replaced with GMPCPP before causing excessive growth inhibition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question the nucleotide exchange mechanism or the fitted parameters. Reviewer 2 describes the work as 'systematic and thorough,' implicitly accepting the refinements needed for quantitative agreement. The lack of any reviewer critique of this mechanistic detail, combined with overall endorsement of the findings, indicates acceptance of this result.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "3a8757fc-1266-420d-aa96-6ea878234d98",
+      "content_id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The combined simulation and experimental evidence demonstrates that the interfacial nucleotide determines tubulin:tubulin interaction strength, providing the most direct evidence to date for the interface-acting mechanism and settling a longstanding debate in the field.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly endorse this main conclusion. Reviewer 1 states the study 'reveal[s] that the nucleotide at the interface of two tubulin dimers determines the strength of the interaction.' Reviewer 2 affirms that the authors 'conclude that the tubulin-tubulin interaction strength is determined by the interfacial nucleotide.' Reviewer 3 similarly states the findings 'reveal that the nucleotide at the interface of two tubulin dimers determines the strength of the interaction.' This unanimous acceptance indicates strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "e8409ae2-56f8-4958-8efb-76107425def3",
+      "content_id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Model fitting to experimental data determined key kinetic parameters: tubulin binds 12.5-fold less tightly to GMPCPP than GDP, plus-end kon = 0.74 \u00b5M\u207b\u00b9s\u207b\u00b9, minus-end kon = 0.31 \u00b5M\u207b\u00b9s\u207b\u00b9, KD_longitudinal = 86 \u00b5M, and KD_corner = 25 nM. Simulations with these parameters successfully recapitulated the linear decrease in minus-end growth and super-stoichiometric decrease in plus-end growth with increasing GDP-tubulin.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the modeling approach and parameter fitting without objection. Reviewer 1 describes the combination of 'in vitro experiments with simulations' as convincing, and Reviewer 3 notes the 'solid combination of biochemical reconstitution assays and modeling.' The lack of any critique regarding parameter values or model fitting, combined with endorsement of the overall conclusions, indicates acceptance of these quantitative results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "d1e1f4d2-6e74-4bbd-a406-b02ebcfd5a3c",
+      "content_id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The findings provide new insights into microtubule dynamics by supporting an emerging view of the growing microtubule end as a 'mosaic' of nucleotide states rather than a uniform GTP cap, with GDP-terminated protofilaments influencing growth, fluctuations, catastrophe, and regulation without always initiating catastrophe.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly highlights this contribution, stating the work 'brings novel insights about the structure of the stabilizing cap on the growing microtubule end.' Reviewer 1 notes the findings 'will be of interest to biophysicists and cell biologists, especially in the field of microtubule biology,' indicating acceptance of the broader implications. No reviewer challenges the mosaic cap interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "5daa6f4f-a57c-41ca-9040-cb720b2358b1",
+      "content_id": "80183301-e945-4a18-924b-8acff319c3e0",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors speculate that exposed GDP-tubulin might explain plus-end growth 'stuttering' and fluctuations, may contribute to higher catastrophe frequency at plus-ends, and that similarities between microtubules and AAA proteins may indicate convergent evolution of interfacial nucleotide mechanisms for force production in oligomers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these speculative interpretations. While these are explicitly framed as speculations in the manuscript, the reviewers' overall positive assessment and lack of critique suggests implicit acceptance of these as reasonable interpretations. However, no reviewer explicitly endorses these specific speculations, so support is inferred from absence of objection rather than explicit affirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cfd46430-26a5-4cb6-9598-785e317efa37",
+      "result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83"
+    },
+    {
+      "claim_id": "80e538df-8bfe-4bb4-a0a0-2a71d2e7947e",
+      "result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83"
+    },
+    {
+      "claim_id": "a69aea69-dd09-4695-9e19-5c7867750ff6",
+      "result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83"
+    },
+    {
+      "claim_id": "17a72f4c-2b54-44f7-a76c-dae385fcc47a",
+      "result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83"
+    },
+    {
+      "claim_id": "dc64790a-54fb-46dc-a9bc-a744a5e3a77d",
+      "result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83"
+    },
+    {
+      "claim_id": "9aeeb06d-33b3-4173-a3fb-a845e674accf",
+      "result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83"
+    },
+    {
+      "claim_id": "be78eac6-5af8-48ad-b8dd-ed2bea40f37e",
+      "result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83"
+    },
+    {
+      "claim_id": "76453bf8-b487-488d-bb96-f0868d52d79f",
+      "result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83"
+    },
+    {
+      "claim_id": "733e23ff-664c-4d4e-8666-db693baa7200",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "249dc033-d7ab-4be2-af73-7c7c5009fbae",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "665bd2ea-839a-4994-a569-2698113f6690",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "a6deb474-3e7b-4721-a3be-2e4044ac39bd",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "19131369-0b94-4314-a08a-b34f2032dde1",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "aecca514-95e4-4381-908a-b9795c6049a5",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "c679e0e6-efbe-4931-9264-679ff9b58de5",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "4dd3e79b-6c46-40a7-84ce-700132f35c71",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "851de025-7e93-4c1a-8bfe-102da71a3c21",
+      "result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3"
+    },
+    {
+      "claim_id": "86f19f13-c86c-4325-9512-21de545f267f",
+      "result_id": "a93b8ce8-0336-497d-929e-4603d30a2398"
+    },
+    {
+      "claim_id": "487dc676-b74c-4042-9a25-021f33c3eccb",
+      "result_id": "a93b8ce8-0336-497d-929e-4603d30a2398"
+    },
+    {
+      "claim_id": "65c50827-872d-4324-a962-99fcd35a57ba",
+      "result_id": "5ef25410-5116-49c5-8924-dbc6a92d5101"
+    },
+    {
+      "claim_id": "7bb7043e-add8-4cba-b19e-e24b41d8a6f4",
+      "result_id": "5ef25410-5116-49c5-8924-dbc6a92d5101"
+    },
+    {
+      "claim_id": "1b7e94b4-87d4-402b-b61b-1254530df5dc",
+      "result_id": "5ef25410-5116-49c5-8924-dbc6a92d5101"
+    },
+    {
+      "claim_id": "d683715d-9ce0-4ae1-a746-f32f01e47d67",
+      "result_id": "5ef25410-5116-49c5-8924-dbc6a92d5101"
+    },
+    {
+      "claim_id": "6ccdcff9-545b-4427-856e-b956d3640890",
+      "result_id": "ebd0a6a6-28d9-4128-9fd2-5c8d88073fdd"
+    },
+    {
+      "claim_id": "68c4764c-a235-4a49-8484-a5fe3425318b",
+      "result_id": "ebd0a6a6-28d9-4128-9fd2-5c8d88073fdd"
+    },
+    {
+      "claim_id": "33d92ffb-c02c-4402-bec8-e5c837076e83",
+      "result_id": "ebd0a6a6-28d9-4128-9fd2-5c8d88073fdd"
+    },
+    {
+      "claim_id": "8439138f-1bf9-4ebb-83a7-dcb0b0cddd98",
+      "result_id": "ebd0a6a6-28d9-4128-9fd2-5c8d88073fdd"
+    },
+    {
+      "claim_id": "7ac2c419-8fb4-46be-b60a-3602d7ecebed",
+      "result_id": "ebd0a6a6-28d9-4128-9fd2-5c8d88073fdd"
+    },
+    {
+      "claim_id": "28c03568-2048-435b-b203-d0bc5d233456",
+      "result_id": "49a87046-62fe-430a-ba14-8e6ad136b13e"
+    },
+    {
+      "claim_id": "9340a94e-8776-4d52-831b-1e34142138c9",
+      "result_id": "49a87046-62fe-430a-ba14-8e6ad136b13e"
+    },
+    {
+      "claim_id": "f652d505-413a-4836-bb6c-e0384bc3d0a4",
+      "result_id": "49a87046-62fe-430a-ba14-8e6ad136b13e"
+    },
+    {
+      "claim_id": "77a7dbbd-3d4e-450d-ae07-2071407eca2c",
+      "result_id": "5a6efb74-2fac-41dc-9d4d-9268272bab5a"
+    },
+    {
+      "claim_id": "6c340c2e-430c-4a9c-8eeb-754e8619449c",
+      "result_id": "5a6efb74-2fac-41dc-9d4d-9268272bab5a"
+    },
+    {
+      "claim_id": "ec2d8966-b05a-41dc-ba2c-539d72aa8413",
+      "result_id": "5a6efb74-2fac-41dc-9d4d-9268272bab5a"
+    },
+    {
+      "claim_id": "5cbf172a-440f-4211-8fd7-24cae33e3dc9",
+      "result_id": "a027fb76-da4d-4775-962e-14e11deae1c2"
+    },
+    {
+      "claim_id": "3cda5510-71a8-4ca4-b30d-6a896777abb4",
+      "result_id": "a027fb76-da4d-4775-962e-14e11deae1c2"
+    },
+    {
+      "claim_id": "c9eef5f4-87d2-4565-becb-04dcf0c75818",
+      "result_id": "a027fb76-da4d-4775-962e-14e11deae1c2"
+    },
+    {
+      "claim_id": "257c39c6-b209-46bf-aa2f-fbcf693e1ffa",
+      "result_id": "a027fb76-da4d-4775-962e-14e11deae1c2"
+    },
+    {
+      "claim_id": "84a48bdc-7603-410c-8513-bca7bb3ce1b4",
+      "result_id": "76175226-ea74-4eed-b427-111fbc591fa6"
+    },
+    {
+      "claim_id": "494f4bde-7f39-4ac5-afa0-73aeb995b5c3",
+      "result_id": "76175226-ea74-4eed-b427-111fbc591fa6"
+    },
+    {
+      "claim_id": "d9a0728d-16df-4040-9970-7cea3f00fb4d",
+      "result_id": "76175226-ea74-4eed-b427-111fbc591fa6"
+    },
+    {
+      "claim_id": "470b388f-4384-40ba-ae8f-cb0538b504ba",
+      "result_id": "76175226-ea74-4eed-b427-111fbc591fa6"
+    },
+    {
+      "claim_id": "b4dd5269-c6a0-4764-afa2-cb60fdb58caf",
+      "result_id": "8376595d-e35d-40c1-819b-a811c4c42780"
+    },
+    {
+      "claim_id": "8994bf79-3a7d-47ba-9fee-94873a1c44b9",
+      "result_id": "8376595d-e35d-40c1-819b-a811c4c42780"
+    },
+    {
+      "claim_id": "325f6853-1d0a-4a53-aba5-ce4b2972c3da",
+      "result_id": "453ecba7-dd5b-4cc1-8ccf-6a658e3f8c27"
+    },
+    {
+      "claim_id": "de617655-36a5-4bbe-9e12-acd946446123",
+      "result_id": "453ecba7-dd5b-4cc1-8ccf-6a658e3f8c27"
+    },
+    {
+      "claim_id": "5e5ecf78-195f-4209-8938-40bdfc673622",
+      "result_id": "453ecba7-dd5b-4cc1-8ccf-6a658e3f8c27"
+    },
+    {
+      "claim_id": "a4ab035e-99de-4e52-80bb-b78d722565b4",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "e7a5aac0-1170-4c0a-9a89-e8d52e52de51",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "493c77c9-6618-4f0b-aecb-24eb600448c5",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "f85823ad-8a88-400e-88cc-4c54b4fd282b",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "40bc7d98-e891-4b3a-af7b-432d4216a79c",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "36df6452-6f2e-4737-8cdb-bc41f825dcd5",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "e9363b67-c3dc-4b31-b635-8f3707dfb33b",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "8a908445-3ecf-4c38-8189-a5959361e9b5",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "f6b011d8-d253-4053-9992-c6aa37d646e8",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "15a52b47-734e-4c69-b398-13fe7b87066c",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "be32b1f8-6596-43ac-9a91-d149b1ec4e7a",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "2427b289-c052-46dd-b11e-bdc74a48164a",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "8f3c9803-1ed5-460c-b914-5c60d9dd9cc7",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "dbd9068b-a52c-4a4b-9873-f4d71adb932e",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "65e362d2-c49f-458e-8ac2-a654925c1e96",
+      "result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b"
+    },
+    {
+      "claim_id": "58f598c1-0a40-4cea-b79f-37c3b4fdf16a",
+      "result_id": "233d98a3-36ed-4127-b2b5-d4ad4d328bb6"
+    },
+    {
+      "claim_id": "1d9fca48-e3eb-4fe0-91b8-7e8363bf0a52",
+      "result_id": "233d98a3-36ed-4127-b2b5-d4ad4d328bb6"
+    },
+    {
+      "claim_id": "cfd46430-26a5-4cb6-9598-785e317efa37",
+      "result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30"
+    },
+    {
+      "claim_id": "80e538df-8bfe-4bb4-a0a0-2a71d2e7947e",
+      "result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30"
+    },
+    {
+      "claim_id": "a69aea69-dd09-4695-9e19-5c7867750ff6",
+      "result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30"
+    },
+    {
+      "claim_id": "17a72f4c-2b54-44f7-a76c-dae385fcc47a",
+      "result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30"
+    },
+    {
+      "claim_id": "dc64790a-54fb-46dc-a9bc-a744a5e3a77d",
+      "result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30"
+    },
+    {
+      "claim_id": "9aeeb06d-33b3-4173-a3fb-a845e674accf",
+      "result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30"
+    },
+    {
+      "claim_id": "be78eac6-5af8-48ad-b8dd-ed2bea40f37e",
+      "result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30"
+    },
+    {
+      "claim_id": "76453bf8-b487-488d-bb96-f0868d52d79f",
+      "result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30"
+    },
+    {
+      "claim_id": "5cbf172a-440f-4211-8fd7-24cae33e3dc9",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "733e23ff-664c-4d4e-8666-db693baa7200",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "249dc033-d7ab-4be2-af73-7c7c5009fbae",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "665bd2ea-839a-4994-a569-2698113f6690",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "a6deb474-3e7b-4721-a3be-2e4044ac39bd",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "19131369-0b94-4314-a08a-b34f2032dde1",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "aecca514-95e4-4381-908a-b9795c6049a5",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "c679e0e6-efbe-4931-9264-679ff9b58de5",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "4dd3e79b-6c46-40a7-84ce-700132f35c71",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "851de025-7e93-4c1a-8bfe-102da71a3c21",
+      "result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3"
+    },
+    {
+      "claim_id": "28c03568-2048-435b-b203-d0bc5d233456",
+      "result_id": "8e57f850-821e-44da-915e-9cb0e7ab9af4"
+    },
+    {
+      "claim_id": "65c50827-872d-4324-a962-99fcd35a57ba",
+      "result_id": "8e57f850-821e-44da-915e-9cb0e7ab9af4"
+    },
+    {
+      "claim_id": "7bb7043e-add8-4cba-b19e-e24b41d8a6f4",
+      "result_id": "8e57f850-821e-44da-915e-9cb0e7ab9af4"
+    },
+    {
+      "claim_id": "1b7e94b4-87d4-402b-b61b-1254530df5dc",
+      "result_id": "8e57f850-821e-44da-915e-9cb0e7ab9af4"
+    },
+    {
+      "claim_id": "d683715d-9ce0-4ae1-a746-f32f01e47d67",
+      "result_id": "8e57f850-821e-44da-915e-9cb0e7ab9af4"
+    },
+    {
+      "claim_id": "77a7dbbd-3d4e-450d-ae07-2071407eca2c",
+      "result_id": "c78d3ef7-1023-4cde-9c91-0126c150ed4c"
+    },
+    {
+      "claim_id": "7ac2c419-8fb4-46be-b60a-3602d7ecebed",
+      "result_id": "c78d3ef7-1023-4cde-9c91-0126c150ed4c"
+    },
+    {
+      "claim_id": "9340a94e-8776-4d52-831b-1e34142138c9",
+      "result_id": "c78d3ef7-1023-4cde-9c91-0126c150ed4c"
+    },
+    {
+      "claim_id": "f652d505-413a-4836-bb6c-e0384bc3d0a4",
+      "result_id": "c78d3ef7-1023-4cde-9c91-0126c150ed4c"
+    },
+    {
+      "claim_id": "6c340c2e-430c-4a9c-8eeb-754e8619449c",
+      "result_id": "c78d3ef7-1023-4cde-9c91-0126c150ed4c"
+    },
+    {
+      "claim_id": "ec2d8966-b05a-41dc-ba2c-539d72aa8413",
+      "result_id": "c78d3ef7-1023-4cde-9c91-0126c150ed4c"
+    },
+    {
+      "claim_id": "3cda5510-71a8-4ca4-b30d-6a896777abb4",
+      "result_id": "3a8757fc-1266-420d-aa96-6ea878234d98"
+    },
+    {
+      "claim_id": "c9eef5f4-87d2-4565-becb-04dcf0c75818",
+      "result_id": "3a8757fc-1266-420d-aa96-6ea878234d98"
+    },
+    {
+      "claim_id": "257c39c6-b209-46bf-aa2f-fbcf693e1ffa",
+      "result_id": "3a8757fc-1266-420d-aa96-6ea878234d98"
+    },
+    {
+      "claim_id": "86f19f13-c86c-4325-9512-21de545f267f",
+      "result_id": "e8409ae2-56f8-4958-8efb-76107425def3"
+    },
+    {
+      "claim_id": "487dc676-b74c-4042-9a25-021f33c3eccb",
+      "result_id": "e8409ae2-56f8-4958-8efb-76107425def3"
+    },
+    {
+      "claim_id": "6ccdcff9-545b-4427-856e-b956d3640890",
+      "result_id": "e8409ae2-56f8-4958-8efb-76107425def3"
+    },
+    {
+      "claim_id": "68c4764c-a235-4a49-8484-a5fe3425318b",
+      "result_id": "e8409ae2-56f8-4958-8efb-76107425def3"
+    },
+    {
+      "claim_id": "33d92ffb-c02c-4402-bec8-e5c837076e83",
+      "result_id": "e8409ae2-56f8-4958-8efb-76107425def3"
+    },
+    {
+      "claim_id": "8439138f-1bf9-4ebb-83a7-dcb0b0cddd98",
+      "result_id": "e8409ae2-56f8-4958-8efb-76107425def3"
+    },
+    {
+      "claim_id": "84a48bdc-7603-410c-8513-bca7bb3ce1b4",
+      "result_id": "d1e1f4d2-6e74-4bbd-a406-b02ebcfd5a3c"
+    },
+    {
+      "claim_id": "494f4bde-7f39-4ac5-afa0-73aeb995b5c3",
+      "result_id": "d1e1f4d2-6e74-4bbd-a406-b02ebcfd5a3c"
+    },
+    {
+      "claim_id": "d9a0728d-16df-4040-9970-7cea3f00fb4d",
+      "result_id": "d1e1f4d2-6e74-4bbd-a406-b02ebcfd5a3c"
+    },
+    {
+      "claim_id": "470b388f-4384-40ba-ae8f-cb0538b504ba",
+      "result_id": "d1e1f4d2-6e74-4bbd-a406-b02ebcfd5a3c"
+    },
+    {
+      "claim_id": "b4dd5269-c6a0-4764-afa2-cb60fdb58caf",
+      "result_id": "5daa6f4f-a57c-41ca-9040-cb720b2358b1"
+    },
+    {
+      "claim_id": "8994bf79-3a7d-47ba-9fee-94873a1c44b9",
+      "result_id": "5daa6f4f-a57c-41ca-9040-cb720b2358b1"
+    },
+    {
+      "claim_id": "5e5ecf78-195f-4209-8938-40bdfc673622",
+      "result_id": "5daa6f4f-a57c-41ca-9040-cb720b2358b1"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "7e799cde-f5f6-48c7-a2b5-aca847acd6d6",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "4bd49e0c-b27f-4d75-99b5-8a7832268d83",
+      "peer_result_id": "4834d83e-0d23-4609-a28a-b689cccc1d30",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on simulation predictions (C4, C5, C22, C23, C59-C62). Both evaluations find the computational approach convincing and well-supported. OpenEval emphasizes methodological details and robustness testing, while peer reviewers highlight the systematic combination of simulations with experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "63b8a331-bc3a-4b55-885b-9a96a3036328",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "c612a7e7-2fd4-47fb-b061-8830545ab8f3",
+      "peer_result_id": "137a7fd7-a53e-4fce-8db4-5f11c00a4ff3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on experimental findings (C25-C31, C63-C64). Both evaluations endorse the mixed nucleotide experimental approach. OpenEval provides detailed statistical validation (P<0.001, sample sizes), while peer reviewers affirm the convincing nature of the approach without questioning data quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8af9780e-b779-43a1-bfb2-bb5aaa84317b",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "5ef25410-5116-49c5-8924-dbc6a92d5101",
+      "peer_result_id": "8e57f850-821e-44da-915e-9cb0e7ab9af4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on super-stoichiometric poisoning effect (C34-C37). Both evaluations accept the differential behavior at plus- vs minus-ends. OpenEval emphasizes how observations match simulation predictions, while peer reviewers highlight novel insights about cap structure.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "ddce7811-bf16-4553-bb49-07288ffbba0b",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "a027fb76-da4d-4775-962e-14e11deae1c2",
+      "peer_result_id": "3a8757fc-1266-420d-aa96-6ea878234d98",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Full agreement on main conclusion (C6, C9, C47, C55). All three peer reviewers explicitly endorse the interface-acting mechanism, matching OpenEval's assessment that evidence strongly supports this conclusion through convergence of multiple lines of evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "5470856f-5f52-4e53-9fa3-22456fa6092b",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "76175226-ea74-4eed-b427-111fbc591fa6",
+      "peer_result_id": "d1e1f4d2-6e74-4bbd-a406-b02ebcfd5a3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on mosaic cap model implications (C48, C49, C51, C54). Both evaluations support the broader conceptual advance. OpenEval notes consistency with literature, while peer reviewers explicitly highlight novel insights about cap structure.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "5f832240-5e35-49a2-8eae-95af685da8a2",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "5a6efb74-2fac-41dc-9d4d-9268272bab5a",
+      "peer_result_id": "c78d3ef7-1023-4cde-9c91-0126c150ed4c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on nucleotide exchange mechanism (C8, C45, C46). Both evaluations accept the resolution of quantitative discrepancy through exchange parameter. OpenEval provides detailed validation against literature values, while peer reviewers implicitly accept through overall endorsement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "2737dbfe-1c4a-4347-a349-6bb02e15e320",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "49a87046-62fe-430a-ba14-8e6ad136b13e",
+      "peer_result_id": "8e57f850-821e-44da-915e-9cb0e7ab9af4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on poisoning mechanism (C7, C43, C44 in OpenEval vs C7, C34-C37 in peer). Both support the mechanistic explanation. OpenEval focuses on the super-stoichiometric mechanism details, while peer reviewers emphasize the overall poisoning interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "e9afa450-f702-4c91-afdd-88159d6736a2",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "ebd0a6a6-28d9-4128-9fd2-5c8d88073fdd",
+      "peer_result_id": "e8409ae2-56f8-4958-8efb-76107425def3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on model fitting and baseline behavior (C38-C42). Both evaluations accept the modeling approach. OpenEval explicitly notes the acknowledged discrepancy at plus-end as strengthening transparency, while peer reviewers accept the overall modeling without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8e9d780e-cc81-4594-952d-7b43926352a8",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "a93b8ce8-0336-497d-929e-4603d30a2398",
+      "peer_result_id": "e8409ae2-56f8-4958-8efb-76107425def3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on binding affinity measurements (C32, C33). Both evaluations support the convergence of kinetic and direct binding measurements. OpenEval emphasizes methodological validation, while peer reviewers accept parameter fitting without objection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "86b443b0-4791-41cf-b5e1-1b2f2d293438",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "8376595d-e35d-40c1-819b-a811c4c42780",
+      "peer_result_id": "5daa6f4f-a57c-41ca-9040-cb720b2358b1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent assessment of speculative claims (C52, C53, C58). OpenEval rates as UNCERTAIN, noting speculation lacks direct experimental support. Peer reviewers do not challenge these speculations, suggesting implicit acceptance, though without explicit endorsement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "8094a499-985c-43a3-be54-2a738b5c47a7",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "453ecba7-dd5b-4cc1-8ccf-6a658e3f8c27",
+      "peer_result_id": "5daa6f4f-a57c-41ca-9040-cb720b2358b1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent assessment of evolutionary speculation (C56-C58). OpenEval rates as UNCERTAIN, noting the broad evolutionary hypothesis extends beyond study scope. Peer reviewers do not object to speculation, but also do not explicitly endorse it.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "fbf90213-0c01-441e-8c85-cfbd124e967d",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "66ec958a-0453-4814-9a5b-8c5642da2f9b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background/context claims (C1, C10-C21, C24, C50) as SUPPORTED, noting they represent established knowledge appropriately cited. Peer reviewers do not separately evaluate background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    },
+    {
+      "id": "a0b56a65-1889-48aa-bc3a-3b6d7987ef63",
+      "submission_id": "2cb6ede2-8f17-4540-b6d1-8202763420e6",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "233d98a3-36ed-4127-b2b5-d4ad4d328bb6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates definitional claims (C2, C3) as SUPPORTED, noting clear definitions of competing models. Peer reviewers do not separately evaluate these foundational definitions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:59:48.863210Z"
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "RIME mass spectrometry identified TRIM28 and ADNP as the highest scoring ZMYM2 interactors, with ZMYM2 being part of larger protein networks including the ChAHP complex and GTF3C complex. Ten ZMYM2 binding proteins including SUMO2 and SUMO3 were uniquely identified in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are well-supported by RIME mass spectrometry data (Figure 1A, Supplementary file 3) showing spectral counts and protein identifications. The identification of novel interactors and comparison with previous studies provides robust evidence for these protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Physical interactions between ZMYM2 and ADNP, as well as between ADNP and ZMYM3, were validated by co-immunoprecipitation. ADNP2 was also detected as a ZMYM2 interactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by co-IP experiments (Figure 1C, Figure 1\u2014figure supplement 1B) and are consistent with previous mass spectrometry datasets. The validation of endogenous protein interactions strengthens the RIME findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ChIP-seq analysis identified 5108 ADNP binding peaks in U2OS cells with enrichment of HBP1 and IRF motifs. A previously identified ADNP motif from mouse ESCs was found at lower frequency (15%) in U2OS cells. Significant overlap exists between ZMYM2 and ADNP chromatin occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by ChIP-seq data (Figure 1D, 1E, 1F) with appropriate motif analysis and statistical validation. The cell-type specific differences in motif frequency are appropriately noted and suggest alternative recruitment mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ZMYM2 and ADNP show highly significant functional overlap in gene regulation, with substantial overlap in both upregulated and downregulated genes following depletion of either factor, but minimal reciprocal regulation. This demonstrates that ZMYM2 and ADNP co-ordinately control gene activity through a transcriptional regulatory complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by RNA-seq data (Figure 1G, Figure 1\u2014figure supplement 1C, 1E, Supplementary file 4) with statistical significance values provided. The overlap analysis and scatter plots provide strong evidence for functional cooperation between ZMYM2 and ADNP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Clustering analysis of ZMYM2 ChIP-seq data revealed three distinct clusters with different chromatin features. Cluster 1 is enriched for ZMYM2 and TRIM28 binding, depleted of active chromatin marks (ATAC-seq, H3K18ac), and enriched for repressive marks (H3K9me3, SUMO2/3). These findings were validated in both U2OS cells and mouse ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 are well-supported by comprehensive ChIP-seq analysis (Figure 2A, B, Figure 2\u2014figure supplement 1A-D) including clustering, heatmaps, tag density plots, and ChIP-qPCR validation. Cross-species validation strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "ZMYM2 cluster 2 shows little TRIM28 binding, higher levels of active chromatin marks (ATAC-seq, H3K18ac), and strong binding of SUMO-binding defective ZMYM2(SIM2mut), suggesting SUMO-independent ZMYM2 activity at this cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by ChIP-seq data (Figure 2A, B, Figure 2\u2014figure supplement 1E) showing distinct chromatin features and differential binding of the SIM2mut mutant. The inference about SUMO-independence is reasonable based on the mutant binding pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Motif analysis revealed distinct enriched motifs in ZMYM2 clusters 1 and 2. Cluster 2 shares motifs with ADNP peaks (including HBP1 and CTCFL/BORIS), and shows highest ADNP occupancy as predicted from motif analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by motif enrichment analysis (Figure 3A) and ChIP-seq overlap data (Figure 3B, C). The consistency between motif predictions and actual ADNP binding strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Cluster 3 ZMYM2 peaks showed enrichment of ASCL2 and ETS transcription factor binding motifs. Genomic distribution analysis revealed that cluster 1 peaks are predominantly intergenic or intronic, while cluster 2 and 3 peaks are more commonly located in promoter-proximal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by motif analysis (Figure 3\u2014figure supplement 1A) and genomic distribution analysis (Figure 3D, Figure 3\u2014figure supplement 1B). The distinct genomic distributions support the functional differences between clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ZMYM2 and TRIM28 physically interact in a SUMO-dependent manner. Co-precipitation was only detected in the presence of NEM (which preserves SUMOylation), and the SUMO-binding defective ZMYM2(SIM2mut) showed weaker interactions with TRIM28. Interactions were validated by PLA and ChIP-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are well-supported by multiple orthogonal approaches including co-IP (Figure 4A, Figure 4\u2014figure supplement 1A-C), PLA (Figure 4B), and ChIP-qPCR (Figure 4\u2014figure supplement 1D). The requirement for NEM and reduced binding of SIM2mut provide strong evidence for SUMO-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "ZMYM2 depletion did not affect TRIM28 binding to its target regions, ruling out a simple recruitment model. TRIM28 also co-binds with the ZMYM2 paralog ZMYM3, indicating that these interactions extend to other ZMYM2 family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by ChIP-qPCR (Figure 4\u2014figure supplement 1E) and co-IP (Figure 4\u2014figure supplement 1F) experiments. The negative result for ZMYM2-dependent TRIM28 recruitment is appropriately controlled and interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ZMYM2 and TRIM28 show substantial and highly significant functional overlap in gene regulation, with both factors regulating roughly equal numbers of up- and downregulated genes. GO analysis revealed that downregulated genes are associated with cell identity terms (ossification, skeletal system development) while upregulated genes are associated with metabolism and cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by RNA-seq data (Figure 4C, Figure 4\u2014figure supplement 1G-I, Supplementary file 4) and GO analysis (Figure 4D). Statistical significance is provided for overlaps, and the bidirectional regulation is appropriately noted and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Very few ZMYM2 cluster 1 peaks are associated with co-regulated genes using the nearest gene model. Distance-based analysis shows that upregulated genes are significantly associated with ZMYM2 peaks across all distance brackets, while downregulated genes show no enrichment. ZMYM2 cluster 1 peaks show more significant association with upregulated rather than downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by comprehensive distance-based association analysis (Figure 5A, B, Figure 5\u2014figure supplement 1A) with appropriate statistical controls using randomly selected genes. The differential association with upregulated vs downregulated genes supports a repressive function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "TADs containing cluster 1 ZMYM2 binding regions contain significantly more upregulated genes compared to TADs lacking ZMYM2 peaks. Genes are more likely to be negatively regulated by ZMYM2 when located in the same TAD as a cluster 1 peak. There is no general spreading of transcriptional deregulation around ZMYM2 peaks in a distance-dependent manner across TAD boundaries. ZMYM2 peaks in all clusters are significantly closer to TAD boundaries than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by TAD-based analysis (Figure 5C, D, Figure 5\u2014figure supplement 1B, C) with appropriate statistical testing. The analysis of genes in adjacent TADs (C90) provides strong evidence against simple distance-dependent spreading. The proximity to TAD boundaries is intriguing and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "All three ZMYM2 clusters show high overlap with repetitive elements (80% in cluster 1). The distribution of retrotransposon classes differs among clusters: cluster 1 and 3 favor LTRs (with cluster 3 dominated by ERV-L and cluster 1 by ERV-1), while cluster 2 is mainly associated with SINEs. This is consistent with ADNP's known role in SINE control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by retrotransposon overlap analysis (Figure 6A, B) and are consistent with known functions of ADNP (citation to Kaaij et al., 2019). The distinct distributions of retrotransposon subclasses across clusters support the functional distinctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "LTRs and SINEs showed upregulation following ZMYM2 or ADNP depletion, consistent with repressive activity. Cluster 2 ZMYM2 peaks are associated with equal numbers of Alu repeats and MIR elements. Depletion of either ZMYM2 or ADNP caused increased activity of several SINEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by RT-qPCR data (Figure 6D, E, F, Figure 6\u2014figure supplement 1A, B) showing upregulation of specific retrotransposon elements upon depletion. The consistency between ZMYM2 and ADNP depletion effects on SINEs supports their functional cooperation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "ZMYM2 associates with LTR-containing regions and promotes their repression in combination with TRIM28, while it works alongside ADNP to control SINE element expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are well-supported by the combined ChIP-seq and RT-qPCR data showing differential association of ZMYM2-TRIM28 with LTRs and ZMYM2-ADNP with SINEs, along with functional validation of repression. This represents a major conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C104"
+    ],
+    "result": "The ZMYM2-TRIM28 complex forms in a SUMO-dependent manner, as retention of SUMOylation is required to detect binding by co-IP and ZMYM2 binding to cluster 1 regions requires the SUMO interaction motifs in ZMYM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C104 are supported by co-IP experiments showing binding only in the presence of NEM (Figure 4A), reduced binding of SIM2mut (Figure 4\u2014figure supplement 1C), and ChIP-seq data showing SUMO-dependent binding to cluster 1 (Figure 2A). Multiple lines of evidence converge on SUMO-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C56"
+    ],
+    "result": "The ZMYM2-TRIM28 complex is associated with repressive chromatin, as cluster 1 regions are depleted of active chromatin marks (ATAC-seq, H3K18ac) and enriched for repressive marks (H3K9me3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C56 are supported by ChIP-seq data (Figure 2A, B, Figure 2\u2014figure supplement 1A, B) showing clear depletion of active marks and enrichment of repressive marks at ZMYM2-TRIM28 co-bound regions. The chromatin state is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C79"
+    ],
+    "result": "ZMYM2 and TRIM28 show strong functional similarity and co-regulate a large number of genes, with substantial and highly significant overlap in regulated genes irrespective of directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C79 are supported by RNA-seq data (Figure 4C) showing significant overlaps with p-values provided. The functional similarity is well-documented, though the bidirectional regulation (both up and down) creates some interpretive complexity that is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C83",
+      "C84"
+    ],
+    "result": "There are no strong links between ZMYM2-TRIM28 binding events and nearby individual gene regulation. Very few ZMYM2 cluster 1 peaks are associated with co-regulated genes using the nearest gene model, and very few differentially expressed genes are found within 20 kb of a ZMYM2 peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C83, and C84 are supported by distance-based association analysis (Figure 5A, Figure 5\u2014figure supplement 1A) showing weak associations at short distances. This negative result is important for understanding the mechanism of ZMYM2 action and is appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C88"
+    ],
+    "result": "ZMYM2-TRIM28 appears to regulate genes in a more regionally defined manner within TADs, as TADs containing cluster 1 binding regions contain significantly more upregulated genes compared to TADs lacking ZMYM2 binding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C88 are supported by TAD-based analysis (Figure 5C) with statistical significance. The regional regulation model is well-supported by the data, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12",
+      "C96"
+    ],
+    "result": "ZMYM2-TRIM28 can directly regulate co-associated retrotransposon expression, as ZMYM2 binds to LTR elements and these elements show upregulation upon ZMYM2 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C96 are supported by ChIP-seq data showing ZMYM2 binding to LTRs (Figure 6A, C) and RT-qPCR data showing upregulation of LTRs upon ZMYM2 depletion (Figure 6D). The direct binding and functional regulation provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Different types of ZMYM2 binding complex associate with and regulate distinct subclasses of retrotransposons: ZMYM2-ADNP complexes at SINEs and ZMYM2-TRIM28 complexes at LTR elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by ChIP-seq data showing differential enrichment of ADNP in cluster 2 (enriched for SINEs) and TRIM28 in cluster 1 (enriched for LTRs) (Figure 2A, Figure 3B, C, Figure 6A). The functional validation by RT-qPCR strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "ZMYM2 acts directly through retrotransposon regulation, which may then potentially affect the local chromatin environment and associated coding gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 is a proposed model that integrates the findings. While the direct regulation of retrotransposons is well-supported, the mechanism by which this affects coding gene expression remains speculative. The model is reasonable but requires additional experimental validation to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C102"
+    ],
+    "result": "ZMYM2 is a zinc finger transcriptional regulator that plays a key role in promoting and maintaining cell identity and has been established as an important regulator of cell fate identity and commitment, particularly at the pluripotency stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C102 are general characterizations supported by extensive prior literature (multiple citations in introduction) and are consistent with the findings presented in this study. These represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C103"
+    ],
+    "result": "Multiple prior studies have established ZMYM2's roles in disease (congenital kidney anomalies, cancer fusion proteins), development (ESC differentiation, pluripotency, reprogramming), transcriptional repression (LSD1-CoREST-HDAC1 complex), DNA repair, and SUMO interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C16-C34, and C103 are all supported by appropriate citations to prior literature. These claims establish the context and prior knowledge about ZMYM2 and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "ZMYM2 is part of distinct chromatin-bound complexes including the established LSD1-CoREST-HDAC1 corepressor complex, and has new functional and physical interactions with ADNP and TRIM28/KAP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 represent major findings of this study, supported by RIME data (Figure 1A), co-IP experiments (Figure 1C, Figure 4A), and functional studies (RNA-seq). The identification of ADNP and TRIM28 as novel ZMYM2 interactors is a key contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Discussion of ZMYM2 and TRIM28 SUMOylation, TRIM28's role as a SUMO E3 ligase, TRIM28's function in retrotransposon repression via KRAB-zinc finger proteins, ZMYM2's lack of KRAB domain, TRIM28's ability to bind histone H4 tails, ZMYM2's role in imprinting control, and associations with retrotransposons and chromatin topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C116 are discussion points supported by appropriate citations to prior literature and are consistent with the data presented. These claims provide important context for interpreting the findings.",
+    "result_type": "MINOR"
+  }
+]

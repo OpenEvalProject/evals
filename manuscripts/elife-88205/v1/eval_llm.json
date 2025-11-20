@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C6",
+      "C24"
+    ],
+    "result": "The meta-analysis found that experimental manipulations increasing metabolic rate (MR) were associated with increased glucocorticoid (GC) levels in the majority of studies (20/21 studies, 32/35 effect sizes). The overall average GC effect size was 0.73 \u00b1 0.11, significantly different from zero, and there was a strong positive correlation between MR and GC effect sizes (p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C24-C26 provide converging quantitative evidence from the meta-analysis showing both qualitative (direction) and quantitative (magnitude) associations between MR and GC changes. The statistical significance (p=0.003), effect size estimates, and consistency across studies (32/35 effect sizes positive) provide strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C30",
+      "C31",
+      "C32",
+      "C40"
+    ],
+    "result": "The positive association between MR and GC effect sizes was independent of taxonomic group (birds vs. mammals), experimental design features (before/after, experiment/control), metabolic variable measured, and treatment type. Residual heterogeneity did not exceed levels expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C30-C32 demonstrate through meta-regression that the MR-GC relationship persisted across multiple potential moderating variables, with no significant interactions. Claim C40 provides additional statistical support showing low residual heterogeneity, indicating the model accounts for variation well. This robustness analysis strengthens the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C35",
+      "C36",
+      "C57"
+    ],
+    "result": "The authors conclude that metabolic rate is a major driver of GC variation within individuals, with GC secretion facilitating increases in MR, and that fluctuations in energy turnover are a key factor driving GC variation. They argue this causal interpretation is the most parsimonious explanation of their findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C9, C35-C36, and C57 represent the authors' interpretations of the meta-analysis results, the causal directionality (whether GCs facilitate MR or MR drives GC secretion) cannot be definitively established from correlational meta-analytic data alone. The authors acknowledge this limitation (C57) but argue for parsimony. The interpretation is reasonable but requires experimental validation through direct MR manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors propose a framework where within-individual GC variation signals the organism's current MR to all body systems, with downstream effects of GCs (e.g., immune suppression, reproductive downregulation) representing evolved allocation adjustments to the metabolic level at which organisms operate. They suggest this relationship is asymmetric, with GCs affecting energy allocation but no direct feedback from these processes to GC levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C39 and C64-C65 present an interpretive framework based on the meta-analysis findings, but this represents theoretical inference rather than direct empirical demonstration. While the framework is logically consistent with the observed MR-GC correlation, the proposed mechanistic model (signaling function, asymmetric relationships, evolved responses) requires independent experimental validation and is not directly tested by the meta-analysis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The authors ln-transformed MR Cohen's D values to normalize the distribution, which significantly improved model fit compared to untransformed values (AICc = 70.58 vs. 74.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe a methodological decision supported by model comparison statistics showing improved fit with transformation. The AICc difference of 4.39 exceeds the conventional threshold of 2 for meaningful improvement, justifying the transformation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Studies with within-individual experimental designs and those without before/after comparisons showed trends toward higher GC effect sizes, though these effects were not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 accurately report non-significant trends in the expected directions based on supplementary data. The authors appropriately note these are non-significant findings, providing transparent reporting of design-related patterns that did not reach statistical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The meta-analysis included 21 papers (12 on birds, 9 on mammals), with 9 papers containing multiple experimental treatments, yielding 35 total effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide straightforward descriptive statistics about the meta-analysis dataset. These are directly verifiable from the study selection process and are internally consistent (note: C70 mentions 22 papers, likely a typo given C67 states 21).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Residual heterogeneity in the meta-analysis did not exceed levels expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 reports a statistical finding from Table 1 (QE(df=33)=28.40, p=0.70), indicating good model fit. This supports the conclusion that the MR effect size adequately explains GC variation without substantial unexplained heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors predict that the MR-GC association will be less evident in natural contexts compared to experimental settings due to temporal dynamics, individual variation in GC reactivity, and differences between within-individual versus between-individual analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C46 present predictions about the generalizability of findings to natural contexts. While these predictions are logically reasoned and supported by citations to relevant literature (C46), they represent speculation about untested conditions rather than empirical findings from the current study. The predictions are plausible but require empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Previous comparative studies show mixed evidence for MR-GC associations across taxa: positive correlations in mammals and recent findings in birds (thermoregulatory costs) and lizards (body temperature), but inconsistent associations in earlier avian studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 accurately summarize prior literature through appropriate citations. These claims provide context for the current meta-analysis by describing the state of comparative evidence, showing both supporting and conflicting prior findings across different taxonomic groups and study designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors interpret examples of anticipatory GC increases (cortisol awakening response in humans, pre-competition increases in athletes) as consistent with their framework of GCs preparing for increased MR, noting that early chronotypes show higher morning GC levels than late chronotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 cite specific examples from the literature that are consistent with the authors' interpretive framework. The citations appropriately support the factual claims (C52-C53), while C51 represents a reasonable interpretation of the cortisol awakening response, though the authors acknowledge confounding factors (psychological stress) in some contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The authors suggest that direct MR manipulation using thyroid hormones could test their causal framework, but predict that GC administration alone would not increase MR if GCs function to facilitate rather than regulate MR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 correctly cites evidence that thyroid hormones affect MR, supporting the feasibility of the proposed experiment. However, C59 represents an untested prediction based on the authors' theoretical framework. The prediction is logically derived from their model but requires empirical validation and represents speculation about experimental outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The authors propose that positive GC-fitness associations may indicate individuals sustaining high MRs attain higher fitness, while negative associations indicate the opposite, reframing traditional interpretations of GC-fitness relationships through their metabolic framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 present reinterpretations of GC-fitness associations from the literature through the lens of the authors' MR-GC framework. While the interpretations are logically consistent with their model and cite relevant examples, these represent theoretical reframings rather than direct empirical tests. The alternative interpretations are plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors establish that while GCs have historically been interpreted as stress indicators, associations between GCs and fitness are diverse and context-dependent, and several authors have challenged the simplified stress hormone view, though this interpretation persists in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C16, C18-C19 accurately characterize the historical context and current debates in the field through appropriate citations. These claims establish the motivation for the study by documenting both traditional interpretations and recent critiques, providing essential background for the authors' alternative framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors provide historical context on Hans Selye's identification of glucocorticoids as mediators of the stress reaction, their naming based on glucose-elevating capacity, and Selye's evolving definition of stress as a nonspecific response to any demand.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 present well-established historical facts about Selye's work, supported by direct citations to his original publications (1950, 1976). These claims accurately represent the historical development of stress physiology concepts and provide important context for understanding how GC interpretation has evolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors describe the established physiological role of GCs in orchestrating energy availability through HPA axis activation and modulating glucose, fat, and protein metabolism in response to homeostatic challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C22 present well-established physiological knowledge about GC function, supported by citations to authoritative sources. These claims accurately describe the mechanistic basis for the authors' hypothesis linking GCs to metabolic rate and provide the physiological foundation for their meta-analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C20"
+    ],
+    "result": "The authors note that acute GC increases define the stress response, but GCs also increase in contexts not typically considered stressful (e.g., sexual activity), highlighting inconsistencies in stress-based interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C20 are supported by appropriate citations to established literature. C17 describes the conventional view of GC increases in stress responses, while C20 provides specific examples that challenge this interpretation, effectively motivating the need for alternative frameworks for understanding GC variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The authors identify a gap in the literature: while the energetic role of GCs is commonly acknowledged, quantitative assessment of how much GC variation is explained by energy expenditure has rarely been addressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 accurately identifies a research gap, supported by citations showing that while the GC-energy link is conceptually recognized, few studies have quantitatively examined this relationship. This claim effectively justifies the need for the current meta-analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The authors note that GC receptor types differ in sensitivity, potentially generating step functions in responses to GC level increases, distinguishing between continuous GC variation and discrete functional consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 accurately represents established knowledge about GC receptor biology, supported by appropriate citations. This claim acknowledges an important nuance: while GC levels may vary continuously with MR, functional responses may be non-linear due to receptor properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The authors acknowledge that GCs have diverse downstream effects including suppression of immune function and growth, citing established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 accurately represent well-established physiological effects of GCs, supported by appropriate citations. These claims acknowledge the complexity of GC effects beyond metabolism, which the authors then integrate into their interpretive framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The authors justify including heart rate as a metabolic measure in their meta-analysis based on strong correlations between heart rate and metabolic rate documented in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by multiple citations demonstrating the heart rate-MR correlation. This methodological decision is appropriately justified, allowing inclusion of additional studies that used heart rate as a proxy for metabolic rate.",
+    "result_type": "MINOR"
+  }
+]

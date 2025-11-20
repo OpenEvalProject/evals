@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The cryo-EM structure of human SIRT6 bound to a nucleosome was determined at 2.9 \u00c5 overall resolution for the nucleosome, with the zinc finger domain resolved at 3.0 \u00c5 and the Rossmann fold domain at 4.0\u20136.0 \u00c5. SIRT6 binds predominantly at the 'right' TA-poor arm of the Widom-601 sequence where DNA interactions with the histone octamer are looser, positioning the active site just above where the H3 tail enters the nucleosome disc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are well-supported by the cryo-EM data presented in Figures 1 and supplementary figures. The resolution values are clearly stated and the structural features are documented with appropriate figures showing the density maps and fitted models. The preferential binding to the looser DNA arm is supported by both structural data and citation to prior work on DNA-histone interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The zinc finger domain of SIRT6 associates tightly with the acidic patch of the nucleosome through four positively charged residues (R175, R172, R178, K170) that interact with acidic residues from H2A and H2B. These residues are conserved among vertebrates but not present in other human sirtuins. Mutation of these residues (SIRT6-4A) significantly weakens nucleosome binding and diminishes H3K9Ac deacetylase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C60-C67 are strongly supported by structural data (Figure 3a), mutagenesis experiments (Figure 3\u2014figure supplement 1a,b), and sequence conservation analysis (Figure 3b,c). The structural interactions are clearly resolved, the functional importance is validated by biochemical assays, and the evolutionary conservation supports the specificity of SIRT6 for chromatin binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The Rossmann fold domain binds to the DNA terminus at SHL 6 and 7, causing detachment of two turns of DNA from the histone octamer and altering the DNA path by 37\u00b0. This DNA movement is coupled to SIRT6 interactions, as evidenced by the absence of DNA deviation in free nucleosomes and increased DNA flexibility in MD simulations with bound SIRT6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C49-C56 are well-supported by cryo-EM structural data (Figures 1, 2, and Figure 1\u2014figure supplement 5b,c) and MD simulations (Figure 2\u2014figure supplement 2). The DNA unwrapping is a major conformational change clearly visible in the structures, and the control experiments showing no deviation in free nucleosomes strengthen the conclusion that this is SIRT6-induced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The Rossmann fold domain shows flexibility with respect to the fixed zinc finger domain, with shifts of up to 20 \u00c5 observed in particles where the DNA remains in its canonical position. This flexibility is enabled by a unique hinge region between the two domains and may serve to fine-tune the position of the active site relative to the H3 tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C57-C59 are supported by cryoDRGN analysis (Figure 2d-f) and structural comparisons with other sirtuins (Figure 1\u2014figure supplement 1). The conformational heterogeneity is clearly documented, and the proposed functional role in fine-tuning active site positioning is supported by subsequent MD analysis (C85, Figure 4c,d).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "Three highly conserved arginines from the Rossmann fold domain (R220, R231, R248) bind the phosphate backbone at SHL 6 and 7 of the nucleosomal DNA. Mutation of these residues (SIRT6-3A) severely diminishes H3K9Ac deacetylase activity, suggesting they are required to correctly position the Rossmann fold and catalytic site with respect to the H3 tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C70-C71 are supported by structural data (Figure 3d) and mutagenesis experiments (Figure 3\u2014figure supplement 1b). The structural interactions are clearly visible, and the functional importance is validated by the loss of activity in the mutant. The proposed role in positioning is a reasonable inference from the combined structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "MD simulations using published H3 tail conformations show that the active site of SIRT6 is positioned to trap target residues K9 and K18, which are located in close proximity (<15 \u00c5) to the active site in several conformations. The flexibility of the Rossmann fold domain serves as a fine-tuning mechanism for short-range scanning. The absence of other histone tails near the active site provides selectivity for H3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C83-C89 are supported by MD simulations using published H3 tail conformations (Figure 4a-d). The analysis is based on established MD data from Morrison et al., 2018, and the conclusions about positioning and selectivity are well-supported by the structural data. The scanning mechanism is a reasonable inference from the observed flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "MD simulations reveal new H3 tail conformations in which the tail protrudes through the space between DNA and octamer created by SIRT6-mediated DNA unwrapping. These pathways allow lysines closer to the H3 core (e.g., K27) to reach the active site without circling around the DNA. Experimental validation shows SIRT6 can efficiently deacetylate H3K27Ac, although at a slower rate than H3K9Ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by MD simulations (Figure 4e) and experimental validation (Figure 4f, Figure 3\u2014figure supplement 1c). The MD simulations show novel tail pathways, and the experimental demonstration of H3K27Ac deacetylation provides strong support for the functional relevance of these pathways. The statistical significance of the deacetylation is properly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "SIRT6 binding to nucleosomes is mildly but statistically significantly stronger when H2A.Z is incorporated instead of H2A. This finding may relate to SIRT6's role in repressing gene expression, as H2A.Z is enriched in nucleosomes flanking transcription start sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by gel-shift assays (Figure 3f, Figure 3\u2014figure supplement 3) showing statistically significant differences (p=0.0016). The connection to gene expression is speculative but reasonable given established knowledge about H2A.Z localization. The experimental data are solid, though the functional interpretation is more tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The N-terminal part of the Rossmann fold domain associates with the C-terminal tail of histone H2A at residue K119, suggesting that monoubiquitination at this position could interfere with SIRT6 binding or regulate its activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is supported by structural data (Figure 3e), but C77 is purely speculative without experimental validation. While the structural observation is clear, the functional consequence of H2A K119 ubiquitination on SIRT6 binding or activity has not been tested. This would require additional experiments with ubiquitinated nucleosomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Helix \u03b13 is not observed in the cryo-EM map of SIRT6 bound to nucleosome. The authors speculate that in the context of the nucleosome, this helix assumes a flexible loop conformation that will bind the cofactor only after stabilization by the acetyl lysine substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is supported by the structural data (Figure 3\u2014figure supplement 2b), but C75 is explicitly stated as speculation. The absence of density for helix \u03b13 is clear, but the proposed mechanism for cofactor binding is not experimentally validated. This interpretation is reasonable based on comparison to other sirtuins but remains speculative without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "SIRT6 is an NAD+-dependent histone H3 deacetylase that is prominently found associated with chromatin, attenuates transcriptionally active promoters, and regulates DNA repair, metabolic homeostasis, and lifespan. Unlike other sirtuins, it has low affinity to free histone tails but demonstrates strong binding to nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are background claims supported by multiple citations to prior work. These are well-established facts in the field and are appropriately cited. While not original findings of this manuscript, they provide essential context and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background information on the sirtuin family, SIRT6 structure, function, and biological roles including effects on aging, cancer, and metabolism. SIRT6 has unique structural features (splayed zinc finger, lack of stabilizing helix bundle) that likely confer flexibility, and shows dramatically enhanced activity on nucleosomes compared to free peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C41 are background claims from the introduction, all supported by appropriate citations to prior work. These establish the context and motivation for the structural study. While not original findings, they are accurately represented and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The binding of SIRT6 to the nucleosome and its intrinsic scanning capability account for its much higher enzymatic efficiency on nucleosomes compared to isolated peptides (1000-fold slower on peptides). Multiple interactions position the active site to trap target residues K9 and K18, and the position ensures selectivity for H3 by excluding other histone tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 synthesize the structural and MD findings into a mechanistic model. C95-C96 cite prior work on the activity difference. C97-C100 are well-supported inferences from the structural data, MD simulations, and mutagenesis experiments presented in the manuscript. The mechanistic conclusions logically follow from the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The recognition mode of nucleosomal H3 by SIRT6 is reminiscent of PRC1's recognition of H2A Lys119, with both requiring nucleosome substrates and using multiple interactions to position the active site. However, SIRT6 exhibits flexibility and scanning capacity that is lacking in PRC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 make a comparison to PRC1 based on cited work (McGinty et al., 2014). The comparison is reasonable and highlights both similarities and differences. The distinction regarding flexibility is supported by the structural data presented in this manuscript (Figure 2) and the known structure of PRC1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The flexibility of SIRT6 that enables its scanning mechanism was previously suggested to be responsible for its low activity on isolated peptides. It is only when constrained to the proximity of target residues through nucleosome binding that this flexibility facilitates enzyme function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 synthesize prior work (Pan et al., 2011) with the current findings to provide a unified mechanistic explanation. The interpretation is well-supported by the combination of prior biochemical data and the structural/MD findings presented here. This represents a satisfying resolution of an apparent paradox.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The space formed between DNA and octamer by SIRT6 binding allows additional H3 tail conformations that enable lysines closer to the H3 core (e.g., K27) to reach the active site. K56, which lies at the core of H3 within a stable helix, was also reported as a SIRT6 target, suggesting the enzyme may employ additional recognition modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 are supported by MD simulations and experimental validation of K27 deacetylation. C108 cites prior work on K56 as a target. C109 is a reasonable speculation given that K56 would be difficult to access via the mechanism described. The speculation is appropriately qualified and acknowledges the limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Other H3 modifying enzymes such as GCN5 HAT might place their active sites in positions similar to SIRT6 and possibly displace DNA from the histone octamer. However, Gcn5 has significant affinity for the H3 tail and might have less stringent requirements for positioning, potentially combining a SIRT6-like recognition mode with sequence-specific binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 are speculative predictions about other enzymes based on the SIRT6 structure. While the speculation is reasonable and appropriately qualified, there is no experimental evidence presented to support these predictions. These represent testable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Two concurrent studies describing the structure of SIRT6-nucleosome appeared in press during review, with conclusions regarding SIRT6 position on the nucleosome and DNA unwinding similar to the findings in this manuscript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 acknowledge concurrent work (Chio et al., 2023; Wang et al., 2023) and note agreement on major structural features. This is an appropriate acknowledgment of the competitive landscape and validates the reproducibility of the key structural findings across independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C73"
+    ],
+    "result": "The intrinsically disordered C-terminal domain of SIRT6 is necessary for tight nucleosome interaction via DNA binding (cited from prior work). Unlike other sirtuins, SIRT6 binds NAD+ in the absence of acetylated substrate, attributed to a rigid helix (\u03b13) where other sirtuins have a flexible cofactor binding loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C72-C73 cite prior biochemical and structural work (Liu et al., 2020; Imai et al., 2000; Pan et al., 2011). These are established findings that provide context for interpreting the current structure. The citations are appropriate and the claims are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Recent NMR studies and molecular dynamics predictions show that the H3 tail collapses onto the nucleosome core driven by robust interactions with DNA, adopting multiple structurally heterogeneous but energetically similar states that dynamically transition between conformations interacting with the last superhelix location of nucleosomal DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 cite prior NMR and MD studies (Ikebe et al., 2016; St\u00fctzer et al., 2016; Morrison et al., 2018) that provide the basis for the H3 tail conformations used in the analysis. These are well-established findings in the field and are appropriately cited as the foundation for the MD analysis in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

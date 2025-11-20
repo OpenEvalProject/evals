@@ -1,0 +1,1659 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Datasets collected in neuroscientific studies are of ever-growing complexity, often combining high-dimensional time series data from multiple data acquisition modalities.",
+    "claim_type": "EXPLICIT",
+    "source": "Datasets collected in neuroscientific studies are of ever-growing complexity, often combining high-dimensional time series data from multiple data acquisition modalities.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the state of neuroscience data that reflects established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Pynapple is a lightweight python package designed to process a broad range of time-resolved data in systems neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present Pynapple, the PYthon Neural Analysis Package, a lightweight python package designed to process a broad range of time-resolved data in systems neuroscience.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of what Pynapple is, as stated by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The core feature of Pynapple is a small number of versatile objects that support the manipulation of any data streams and task parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "The core feature of this package is a small number of versatile objects that support the manipulation of any data streams and task parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design principle of Pynapple as stated by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Python has progressively become one of the most popular programming languages due to its open nature, large community-driven development, and versatility of usage.",
+    "claim_type": "EXPLICIT",
+    "source": "While various programming environments such as Matlab and R have long been commonly used in data science, Python has progressively become one of the most popular programming languages (McKinney, 2011). This is due to its open nature, large community-driven development, and versatility of usage.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation to McKinney, 2011, and reflects established knowledge about Python's popularity.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Calcium imaging and high-density electrophysiology make it possible to simultaneously monitor the activity of an increasingly large number of neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "In systems neuroscience, calcium imaging and high-density electrophysiology make it possible to simultaneously monitor the activity of an increasingly large number of neurons (Stevenson and Kording, 2011; Urai et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Stevenson and Kording, 2011, and Urai et al., 2022.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Data analysis in neuroscience often relies on custom-made, lab-specific code, which is susceptible to error and can be difficult to compare across research groups.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this rapid progress, data analysis often relies on custom-made, lab-specific code, which is susceptible to error and can be difficult to compare across research groups.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of data analysis practices in neuroscience, reflecting established knowledge and common challenges in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Most existing neuroscience toolboxes focus on producing high-level analysis from specified types of data and do not offer the versatility required for rapidly changing analytical methods and experimental methods.",
+    "claim_type": "EXPLICIT",
+    "source": "While several toolboxes are available to perform neuronal data analysis (Oostenveld et al., 2011; Bokil et al., 2010; Garcia et al., 2014; Freeman et al., 2014; Nasiotis et al., 2019; Zugaro, 2018; Ackermann et al., 2018) (see Unakafova and Gail, 2019, for review), most of these programs focus on producing high-level analysis from specified types of data, and do not offer the versatility required for rapidly changing analytical methods and experimental methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations and represents an inference about the limitations of existing tools.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Object-oriented programming makes the programming environment very efficient for data analysis, particularly in systems neuroscience where data streams can be of very different types.",
+    "claim_type": "EXPLICIT",
+    "source": "The first property of such a toolbox is that it should be object-oriented, organizing software around data. This makes the programming environment very efficient for data analysis, particularly in systems neuroscience where data streams can be of very different types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a design principle stated by the authors, representing their reasoning about software design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "An object which is specifically designed to represent a series of event times can ameliorate concerns about proper definition of time units and support epochs.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, an object which is specifically designed to represent a series of event times can ameliorate these concerns. For example, it can be created from a specific data loader that ensures proper definition of time units and support epochs (i.e., true beginning and end of the observation time).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design feature of Pynapple and its intended benefits, based on the authors' implementation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Pynapple is built around only five objects that are divided into three categories: two objects represent event timestamps, two represent time-varying data, and one represents time epochs.",
+    "claim_type": "EXPLICIT",
+    "source": "Pynapple is built around only five objects that are divided into three categories: two objects represent event timestamps (one or several), two represent time-varying data (one or several time series at the same sampling times), and one represents time epochs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of Pynapple's core architecture as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Pynapple objects inherit from the Pandas library.",
+    "claim_type": "EXPLICIT",
+    "source": "Pynapple is built with objects from the Pandas library (McKinney, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical implementation detail stated by the authors and supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "A Tsd object is an extension of Pandas Series object and TsdFrame of Pandas DataFrame object.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, a Tsd object is an extension of (or 'inherits' in object-orienting programming) Pandas Series object and TsdFrame of Pandas DataFrame object.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical implementation of Pynapple objects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Timestamps in Pynapple are by default in units of seconds but can be readily converted to other time units using the as_units method.",
+    "claim_type": "EXPLICIT",
+    "source": "Timestamps are by default in units of seconds but can be readily converted to other time units using the as_units method in any object.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a specific feature of Pynapple's implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "All Pynapple objects have a time_support property, which keeps track of the time interval over which the data is valid.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, all objects have a time_support property, which keeps track of the time interval over which the data is valid.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a core feature of Pynapple objects as implemented.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "All units are indexed by seconds across the entire Pynapple package.",
+    "claim_type": "EXPLICIT",
+    "source": "Crucially, all units are indexed by seconds across the entire package, which limits the need for users to account for indexing and alignment between different streams of data at different sampling rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision in Pynapple's implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Pynapple includes an I/O layer that allows the user to load multiple types of datasets and write them to a common format for further analysis and sharing.",
+    "claim_type": "EXPLICIT",
+    "source": "To ease the process of loading and synchronizing data from various streams, Pynapple includes an I/O layer that allows the user to load multiple types of datasets and write them to a common format for further analysis and sharing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of Pynapple as implemented by the authors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Pynapple saves all synchronized data into the NWB (Neurodata Without Borders) format.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently, Neurodata Without Borders (NWB) (Teeters et al., 2015; R\u00fcbel et al., 2022) has emerged as a flexible data format used for public data sharing and large databases such as those collected by the Allen Institute. Thus, we chose to use the NWB format for fast and universal data loading and saving with Pynapple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision supported by citations to NWB publications.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Pynapple can compute neural tuning curves that relate specific stimuli to the firing rate of neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "The first foundational analysis is computing neural tuning curves. Tuning curves relate specific stimuli to the firing rate of neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a foundational analysis capability of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Pynapple is able to use tuning curves from a population of neurons to decode stimuli using a Bayesian decoder.",
+    "claim_type": "EXPLICIT",
+    "source": "Once computed, Pynapple is able to use tuning curves from a population of neurons to decode stimuli using a Bayesian decoder (Zhang et al., 1998; Brown et al., 1998; Figure 4a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a capability of Pynapple supported by citations and demonstrated in Figure 4a.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Pynapple can compute auto- and cross-correlograms of event data.",
+    "claim_type": "EXPLICIT",
+    "source": "The second foundational analysis is computing auto- and cross-correlograms of event data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a foundational analysis capability of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Pynapple can perform peri-event alignment, which involves aligning a specified window from Ts/Tsd/TsGroup data to a specific Ts.",
+    "claim_type": "EXPLICIT",
+    "source": "The third and final foundational analysis is peri-event alignment. This involves aligning a specified window from Ts/Tsd/TsGroup data to a specific Ts, known as 'TimeStamp Reference''.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a foundational analysis capability of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Pynacollada is a collaborative repository for higher-level analyses built from the basic functionality provided by Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, we introduce Pynacollada, a collaborative repository for higher-level analyses built from the basic functionality provided by Pynapple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This introduces Pynacollada as a companion repository to Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "High-level functions were separated from Pynapple and included instead in Pynacollada to balance the needs for stability and flexibility.",
+    "claim_type": "EXPLICIT",
+    "source": "To balance the needs for stability and flexibility, high-level functions were separated from Pynapple and included instead in Pynacollada: the Pynapple Collaborative repository hosted on GitHub.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design decision about the separation of core and higher-level functionality.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Each library developed for Pynacollada takes the form of a Jupyter notebook or python scripts which guides the user through the analysis step-by-step.",
+    "claim_type": "EXPLICIT",
+    "source": "Each library developed for Pynacollada takes the form of a Jupyter notebook (or python scripts) which guides the user through the analysis step-by-step.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the format of contributions to Pynacollada.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Pynapple is designed to be lightweight, stable, and simple.",
+    "claim_type": "EXPLICIT",
+    "source": "Pynapple was developed to be lightweight, stable, and simple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the design goals of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Pynapple main objects and their properties will remain the same for the foreseeable future.",
+    "claim_type": "EXPLICIT",
+    "source": "As simplicity does not necessarily imply backward compatibility (i.e., long-term stability of the code), Pynapple main objects and their properties will remain the same for the foreseeable future, even if the code in the backend may eventually change (e.g., not relying on Pandas in future versions).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a commitment about the future stability of Pynapple's API.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Pynapple is built around the idea that raw data have already been preprocessed.",
+    "claim_type": "EXPLICIT",
+    "source": "Pynapple is built around the idea that raw data have already been preprocessed (e.g., spike sorting and detection of ROIs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design assumption of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Once data are loaded in the Pynapple framework, the same code can be used to analyze different datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Pynapple makes this interoperability possible as, once the data are loaded in the Pynapple framework, the same code can be used to analyze different datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a benefit of Pynapple's design for data interoperability.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Pynapple can be used without the I/O layer and independent of NWB for generic, on-the-fly analysis of data.",
+    "claim_type": "EXPLICIT",
+    "source": "To note, Pynapple can be used without the I/O layer and independent of NWB for generic, on-the-fly analysis of data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the flexibility of Pynapple's usage.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Pynapple is currently only available through Python.",
+    "claim_type": "EXPLICIT",
+    "source": "The first issue is that Pynapple is currently only available through Python.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states a limitation of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Pynapple is based on Pandas, whose methods are already highly optimized.",
+    "claim_type": "EXPLICIT",
+    "source": "Pynapple is based on Pandas, whose methods are already highly optimized.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a technical aspect of Pynapple's implementation.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The restrict method extracts only the data contained within a set of time intervals defined by an IntervalSet object.",
+    "claim_type": "EXPLICIT",
+    "source": "restrict, which 'restricts' a time series object, extracting only the data contained within a set of time intervals defined by an IntervalSet object",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functionality of a specific Pynapple method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The value_from method gets the value from one time series object at the closest timestamps from another.",
+    "claim_type": "EXPLICIT",
+    "source": "value_from, which gets the value from one time series object at the (closest) timestamps from another",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functionality of a specific Pynapple method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The count method counts the number of timestamps from a time series object in windows of a given bin size.",
+    "claim_type": "EXPLICIT",
+    "source": "count, which counts the number of timestamps from a time series object in windows of a given bin size",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functionality of a specific Pynapple method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The threshold method applies a threshold to the data within a Ts or Tsd object and returns a Tsd containing the data above or below the threshold.",
+    "claim_type": "EXPLICIT",
+    "source": "threshold, which applies a threshold to the data within a Ts or Tsd object and returns a Tsd containing the data above or below the threshold",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functionality of a specific Pynapple method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The intersect method returns the set intersection of two IntervalSet objects.",
+    "claim_type": "EXPLICIT",
+    "source": "intersect, which returns the set intersection of two IntervalSet objects",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functionality of a specific Pynapple method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The union method returns the set union of two IntervalSets.",
+    "claim_type": "EXPLICIT",
+    "source": "union, which returns the set union of two IntervalSets",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functionality of a specific Pynapple method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The set_diff method returns the set difference of two IntervalSet objects.",
+    "claim_type": "EXPLICIT",
+    "source": "set_diff, which returns the set difference of two IntervalSet",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the functionality of a specific Pynapple method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The data loaders ensure that all loaded objects have the same time base.",
+    "claim_type": "EXPLICIT",
+    "source": "The data loaders ensure that all loaded objects have the same time base.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a key function of Pynapple's data loading system.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Pynapple offers simple wrappers for loading data with popular preprocessing pipelines.",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, to simplify analysis for users, Pynapple offers simple wrappers for loading data with popular preprocessing pipelines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a feature of Pynapple's I/O capabilities.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Pynapple can load data formats from popular preprocessing pipelines such as CNMF-E, Phy, NeuroSuite, or Suite2P.",
+    "claim_type": "EXPLICIT",
+    "source": "To cover the variety of preprocessing analysis pipelines currently used in systems neuroscience, the Pynapple I/O can load data formats from popular preprocessing pipelines (e.g., CNMF-E, Phy, NeuroSuite, or Suite2P).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes specific preprocessing pipelines that Pynapple supports.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The BaseLoader is responsible for initializing the NWB file within the session folder.",
+    "claim_type": "EXPLICIT",
+    "source": "The BaseLoader is responsible for initializing the NWB file within the session folder (i.e., it creates a new NWB file if none is present) (Figure 3c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the function of the BaseLoader class in Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Converting user's data to NWB format encourages standardization and can facilitate sharing both data and analysis pipelines written with Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "Converting user's data to NWB format encourages standardization and can facilitate sharing both data and analysis pipelines written with Pynapple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of using NWB format.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Future development of new I/O classes will not affect the core and processing layers of Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "First, future development of new I/O classes will not affect the core and processing layers of Pynapple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design benefit of Pynapple's architecture.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Users can develop their own custom I/O using available template classes in Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, users can develop their own custom I/O using available template classes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability provided by Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Users can still use Pynapple without using the I/O layer of Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, users can still use Pynapple without using the I/O layer of Pynapple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the flexibility of Pynapple usage.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Pynacollada currently includes libraries for spike waveform processing, EEG analysis, and video tracking, among others.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition, Pynacollada currently includes libraries for spike waveform processing, EEG analysis, and video tracking, among others.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the current contents of the Pynacollada repository.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The authors invite the community to contribute to Pynacollada by improving current libraries or uploading new ones.",
+    "claim_type": "EXPLICIT",
+    "source": "We invite the community to contribute to this repository by improving current libraries or upload new ones.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement of the authors' intentions for community involvement.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Pynapple provides a platform for exploratory data analysis, development of analysis pipelines, and replication of results.",
+    "claim_type": "EXPLICIT",
+    "source": "The path from data collection to reliable results involves a number of critical steps: exploratory data analysis, development of an analysis pipeline that can involve custom-made developed processing steps, and ideally the use of that pipeline and others to replicate the results. Pynapple provides a platform for these steps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the intended use cases for Pynapple.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The design of Pynapple around objects and properties is a strength but could represent a challenge for users who are not accustomed to object-oriented programming.",
+    "claim_type": "EXPLICIT",
+    "source": "The design of the package around objects is a strength in many regards but could represent a challenge for users who are not accustomed to this programming approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges both a strength and limitation of Pynapple's design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Current development is underway to improve computation speed in Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, current development is underway to improve computation speed and these developments are transparent for the users as they won't change the organization of the package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes ongoing development work on Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Pynapple will soon be part of an entire suite of plugin libraries including an automated datalogger, an online visualizer, and a package for parallel computing.",
+    "claim_type": "EXPLICIT",
+    "source": "Soon, Pynapple will be part of an entire suite of plugin libraries that we are developing to further enhance Pynapple. To keep Pynapple robust and stable, we will develop these plugins as standalone packages. These external packages will include an automated datalogger for recapitulating analyses, an online visualizer for Pynapple objects, and a package for parallel computing in Pynapple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes future planned developments for the Pynapple ecosystem.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "A TsGroup is a child of UserDict, a built-in python object for inheriting dictionaries.",
+    "claim_type": "EXPLICIT",
+    "source": "A TsGroup is a child of UserDict, a built-in python object for inheriting dictionaries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical implementation of the TsGroup object.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "IntervalSet inherits Pandas DataFrame.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, IntervalSet inherits Pandas DataFrame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical implementation of the IntervalSet object.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Pynapple includes specialized functions that can compute the tuning of a continuous value with respect to a feature.",
+    "claim_type": "EXPLICIT",
+    "source": "Pynapple includes specialized functions that can compute the tuning of a continuous value with respect to a feature, as shown for the modulation of fluorescence in calcium imaging with respect to the speed of the animal (Figure 5a) or of the position of a vertical bar on a screen in the fly's ellipsoid body (Figure 5b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a capability of Pynapple demonstrated in Figures 5a and 5b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The Pynacollada 'neural_manifold' library contains a Jupyter notebook that provides a step-by-step process for recreating a ring manifold using spiking data recorded from a population of head-direction neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "The Pynacollada 'neural_manifold' library contains a Jupyter notebook that provides a step-by-step process for recreating a ring manifold using spiking data recorded from a population of head-direction neurons (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a specific library in Pynacollada as shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Pynacollada includes a Jupyter notebook that showcases an example of detecting sharp wave-ripples.",
+    "claim_type": "EXPLICIT",
+    "source": "In this case, the Jupyter notebook showcases an example of detecting SWRs, a well-characterized oscillation of the hippocampus (Figure 6).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a specific analysis example in Pynacollada shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "For new Pynacollada libraries, only rapid screening and tests will be performed, but the code will not go through the kind of validation that is in place for Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "For new libraries, only rapid screening and tests will be performed, but the code will not go through the kind of validation that is in place for Pynapple as an external library will never affect the functioning of the core package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the quality control process for Pynacollada contributions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Pynapple objects inherit the long-term consistency of the code and the computational flexibility from the Pandas library.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, Pynapple objects inherit the long-term consistency of the code and the computational flexibility from this widely used package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a benefit of building Pynapple on Pandas.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The time_support property is crucial because otherwise it is impossible to know whether periods without data correspond to an epoch during which the underlying event was not observed or because this period has previously been excluded by a restrict method.",
+    "claim_type": "EXPLICIT",
+    "source": "This is a crucial property as, otherwise, it is impossible to know whether periods without data correspond to an epoch during which the underlying event was not observed or because this period has previously been excluded by a restrict method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains the importance of the time_support property through logical reasoning.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "IntervalSets are suited for representing trials in experiments, as one IntervalSet can represent all start and end times of trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Many experiments in neuroscience are based on trials, each associated with different conditions. IntervalSets are perfectly suited for this, as one IntervalSet can represent all start and end times of trials.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a use case for IntervalSet objects based on inference about experimental design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The nature of each trial can be stored as a third column within the IntervalSet dataframe object.",
+    "claim_type": "EXPLICIT",
+    "source": "The nature of each trial (e.g., left/right, correct/error) can be stored as a third column within the IntervalSet dataframe object.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of IntervalSet objects.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "TsGroup has a set of methods to calculate and store metadata about the elements of the group.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to the ability to apply any methods of the Ts object to its members, TsGroup has a set of methods to calculate and store metadata about the elements of the group (Figure 2c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes functionality of TsGroup objects shown in Figure 2c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The primary way by which a user interacts with the I/O layer is an object that represents an experimental session, with the properties of the object being the various time series.",
+    "claim_type": "EXPLICIT",
+    "source": "The primary way by which a user interacts with the I/O layer is an object that represents an experimental session, with the properties of the object being the various time series.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design of Pynapple's I/O interface.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "This I/O object is created by calling the function load_session, which will load all data associated with that session.",
+    "claim_type": "EXPLICIT",
+    "source": "This I/O object is created by calling the function load_session, which will load all data associated with that session (Figure 3a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes how to use Pynapple's I/O functionality as shown in Figure 3a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Data synchronization is the crux of any analysis pipeline.",
+    "claim_type": "EXPLICIT",
+    "source": "Data synchronization is the crux of any analysis pipeline.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the importance of data synchronization in analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The load_session function is a crucial step in using the Pynapple package.",
+    "claim_type": "EXPLICIT",
+    "source": "The load_session function is thus a crucial step in using the package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the importance of the load_session function.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "For unsupported data types, it is the responsibility of the users to design the preprocessing scripts that align the data streams in the same absolute time base.",
+    "claim_type": "EXPLICIT",
+    "source": "For unsupported data types, it is the responsibility of the users to design the preprocessing scripts that align the data streams in the same absolute time base.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes user responsibilities when working with custom data types.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "When loading a session for the first time, the I/O process starts with a graphical user interface in which the user can input general information as well as any session epoch and behavioral tracking data.",
+    "claim_type": "EXPLICIT",
+    "source": "When loading a session for the first time, the I/O process starts with a graphical user interface (GUI) in which the user can quickly and easily input the general information as well as any session epoch and behavioral tracking data (Figure 3b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the data loading workflow shown in Figure 3b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "This information is saved in a BaseLoader class.",
+    "claim_type": "EXPLICIT",
+    "source": "This information is saved in a BaseLoader class.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how session information is stored in Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Pynapple I/O can load data formats through a set of specialized object subclasses of the BaseLoader class.",
+    "claim_type": "EXPLICIT",
+    "source": "This is implemented via a set of specialized object subclasses of the BaseLoader class, avoiding the need to redefine I/O operations in each subclass.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the technical implementation of Pynapple's I/O system.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Specialized I/O classes have all the methods and properties of the parent BaseLoader objects.",
+    "claim_type": "EXPLICIT",
+    "source": "This is a core aspect of object-oriented programming, and it means that these specialized I/O classes have all the methods and properties of the parent BaseLoader objects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how inheritance works in Pynapple's I/O system.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Once generated, specialized I/O classes are unique and independent from each other, ensuring long-term backward compatibility.",
+    "claim_type": "EXPLICIT",
+    "source": "However, once generated, these specialized I/O classes are unique and independent from each other, ensuring long-term backward compatibility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design benefit of Pynapple's I/O architecture.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "A specialized GUI for electrophysiology and calcium imaging is provided, with relevant metadata fields.",
+    "claim_type": "EXPLICIT",
+    "source": "Like the BaseLoader class, a specialized GUI for electrophysiology and calcium imaging is provided, with relevant metadata fields, for example electrode position in electrophysiology and type of fluorescence indicator in calcium imaging (Figure 3b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes specialized GUI features shown in Figure 3b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The documentation of Pynapple provides an easy-to-follow recipe for creating a custom I/O class that inherits the BaseLoader.",
+    "claim_type": "EXPLICIT",
+    "source": "To accommodate present and future needs for these specific pipelines, the documentation of Pynapple provides an easy-to-follow recipe for creating a custom I/O class that inherits the BaseLoader and can interact with a pre-existing NWB file.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes documentation provided with Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The basic methods that manipulate the core objects in Pynapple allow users to perform common, but powerful, neuroscience analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "The basic methods that manipulate the core objects in Pynapple allow users to perform common, but powerful, neuroscience analyses (Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the capabilities enabled by Pynapple's core methods as shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "These analyses are easy to use because they describe the relationships between time series objects, while requiring the fewest number of parameters to be set by the user.",
+    "claim_type": "EXPLICIT",
+    "source": "These analyses are easy to use because they describe the relationships between time series objects, while requiring the fewest number of parameters to be set by the user.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design principle of Pynapple's analysis functions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The operations in Pynapple can recreate neuroscience analyses from a broad number of subdisciplines.",
+    "claim_type": "EXPLICIT",
+    "source": "The operations in Pynapple can recreate neuroscience analyses from a broad number of subdisciplines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the versatility of Pynapple.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Five openly available datasets were reanalyzed to illustrate the versatility of Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "To illustrate the versatility of Pynapple and how it can be used, we reanalyzed five openly available datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the approach taken in the manuscript to demonstrate Pynapple's capabilities.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Pynapple computes the firing rate of a neuron during each epoch in an IntervalSet object for discrete conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "To this end, Pynapple computes the firing rate of a neuron (or any other timestamped data) during each epoch in an IntervalSet object, for example for discrete conditions such as 'ON/OFF'' stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how Pynapple computes tuning curves for discrete conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Tuning curves can be computed with respect to a continuous feature.",
+    "claim_type": "EXPLICIT",
+    "source": "Tuning curves can also be computed with respect to a continuous feature.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a capability of Pynapple's tuning curve computation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "In Pynapple, cross-correlograms can be generated for any two series of events by computing the event rate for each time bin of a target time series relative to each event of a reference time series.",
+    "claim_type": "EXPLICIT",
+    "source": "In Pynapple, cross-correlograms can be generated for any two series of events by computing the event rate for each time bin of a target time series relative to each event of a reference time series.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how Pynapple computes cross-correlograms.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Pynapple does not limit the correlogram function to spiking data and correlograms may be performed on any event-based data.",
+    "claim_type": "EXPLICIT",
+    "source": "However, Pynapple does not limit this function to spiking data and correlograms may be performed on any event-based data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the generality of Pynapple's correlogram function.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Peri-event alignment allows users to align data to specific points in time and measure changes in rates around this specified time point.",
+    "claim_type": "EXPLICIT",
+    "source": "This allows users to align data to specific points in time, and measure changes in rates around this specified time point (Figure 4c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the purpose of peri-event alignment as shown in Figure 4c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Some of the analyses in Pynapple are designed for spikes and discrete events in general and cannot be applied for continuous traces such as calcium imaging data.",
+    "claim_type": "EXPLICIT",
+    "source": "Some of the analyses presented so far are designed for spikes (and discrete events in general) and cannot be applied for continuous traces such as calcium imaging data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of certain Pynapple analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The foundational functions in Pynapple form the building blocks of most other analyses in systems neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, these foundational functions form the building blocks of most other analyses in systems neuroscience.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the importance and generality of Pynapple's foundational functions.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The foundational functions in Pynapple are for the most part built-in and only depend on a few widely used external packages.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, they are for the most part built-in and only depend on a few widely used external packages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the dependency structure of Pynapple's core functionality.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Pynapple can be used in a near stand-alone fashion, without relying on packages that are at risk of not being maintained or of not being compatible in the near future.",
+    "claim_type": "EXPLICIT",
+    "source": "This ensures that the package can be used in a near stand-alone fashion, without relying on packages that are at risk of not being maintained or of not being compatible in the near future.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of Pynapple's minimal dependencies.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "All other developments of analysis pipelines take place outside Pynapple, ensuring the core package is only updated rarely and remains lightweight.",
+    "claim_type": "EXPLICIT",
+    "source": "All other developments of analysis pipelines take place outside Pynapple, ensuring the core package is only updated rarely and remains lightweight.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design strategy for maintaining Pynapple's stability.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Pynapple is designed to be stable in the foreseeable future and its core functionality is not meant to be modified.",
+    "claim_type": "EXPLICIT",
+    "source": "Pynapple is designed to be stable in the foreseeable future and its core functionality is not meant to be modified.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the design philosophy for Pynapple's core.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Actual data analysis usually requires more than the available core functions in Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "However, actual data analysis usually requires more than the available core functions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges a limitation of Pynapple's core functionality.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "High-level data analysis is 'fluid', constantly updated by new software developments and theoretical work.",
+    "claim_type": "EXPLICIT",
+    "source": "This type of data analysis is 'fluid', constantly updated by new software developments and theoretical work.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the nature of advanced data analysis in neuroscience.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "High-level development is collaborative in nature and the supervision of such projects is less sensitive than that of a stable package.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, this kind of development is collaborative in nature and the supervision of such projects is less sensitive than that of a stable package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a reasoning about the nature of collaborative software development.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Libraries built for Pynacollada should provide training, promote good practice in programming, and allow users to easily adapt code to their own project.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, libraries built for Pynacollada should provide training, promote good practice in programming, and allow users to easily adapt code to their own project.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the intended purpose and design of Pynacollada libraries.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Recent advances in the application of manifold theory to neural data analysis have allowed neuroscientists to project high-dimensional data into three or fewer dimensions.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent advances in the application of manifold theory to neural data analysis have allowed neuroscientists to project high-dimensional data into three or fewer dimensions (Chaudhuri et al., 2019; Viejo and Peyrache, 2020; Gardner et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations to recent work on manifold analysis.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "The structure of manifold projections reflects the structure of higher-dimensional processes, allowing inference of the information encoded by the population.",
+    "claim_type": "EXPLICIT",
+    "source": "The structure of these projections reflects the structure of these higher-dimensional processes, allowing us to infer the information encoded by the population.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the principle behind manifold analysis in neuroscience.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Detecting oscillatory events is a routine procedure in electrophysiology, yet usually depends on many arbitrary choices of parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Detecting oscillatory events is a routine procedure in electrophysiology, yet usually depends on many arbitrary choices of parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a common challenge in electrophysiology analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The goal of Pynapple is to offer a versatile set of tools to study typical neurophysiological and behavioral data, specifically time series and time intervals.",
+    "claim_type": "EXPLICIT",
+    "source": "The goal of this package is to offer a versatile set of tools to study typical neurophysiological and behavioral data, specifically time series (e.g., spike times, behavioral events, and continuous time series) and time intervals (e.g., trials and brain states).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the primary goal of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Pynapple provides users with generic functions for neuroscience analyses such as tuning curves and cross-correlograms.",
+    "claim_type": "EXPLICIT",
+    "source": "It also provides users with generic functions for neuroscience analyses such as tuning curves and cross-correlograms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes functionality provided by Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "Pynapple was designed to rely on a minimum number of dependencies, which are themselves very common and thus highly stable.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, Pynapple was designed to rely on a minimum number of dependencies, which are themselves very common and thus highly stable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design principle of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Accessibility is the guiding axiom of Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "As such, accessibility is the guiding axiom of Pynapple.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This states the primary design principle of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Objects in Pynapple are designed to be self-contained and interact with each other through well-defined methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Because objects are designed to be self-contained and interact with each other through well-defined methods, users are less likely to make errors when using them.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a design principle and its intended benefit.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Objects in Pynapple can enforce their own internal consistency, reducing the chances of data inconsistencies or unexpected behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "This is because objects can enforce their own internal consistency, reducing the chances of data inconsistencies or unexpected behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This explains a benefit of object-oriented design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Object-oriented programming is a powerful tool for managing complexity and reducing errors in scientific programming.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, object-oriented programming is a powerful tool for managing complexity and reducing errors in scientific programming.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the benefits of object-oriented programming.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "The design of Pynapple is centered around the manipulation of simple, abstract objects that are common to most neurophysiological and behavioral datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "The design of Pynapple is centered around the manipulation of simple, abstract objects that are common to most neurophysiological and behavioral datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the design philosophy of Pynapple.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Building around fundamental objects and properties means Pynapple is highly flexible and able to handle most neurophysiological and behavioral datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Building around these fundamental objects and properties means Pynapple is highly flexible and able to handle most neurophysiological and behavioral datasets, making it accessible to most systems neuroscientists.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of Pynapple's design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The small number of external dependencies in Pynapple decreases the need to adapt the code to new versions of external packages.",
+    "claim_type": "EXPLICIT",
+    "source": "The small number of external dependencies also decreases the need to adapt the code to new versions of external packages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of minimal dependencies.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "This approach favors long-term backward compatibility in Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach favors long-term backward compatibility.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of Pynapple's design approach.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Data in neuroscience vary widely in their structure, size, and need for preprocessing.",
+    "claim_type": "EXPLICIT",
+    "source": "Data in neuroscience vary widely in their structure, size, and need for preprocessing.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the nature of neuroscience data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "According to the FAIR principles, preprocessed data should interoperate across different analysis pipelines.",
+    "claim_type": "EXPLICIT",
+    "source": "According to the FAIR principles, preprocessed data should interoperate across different analysis pipelines.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This references the FAIR principles, which are established guidelines for data management.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Data produced in neuroscience has a wide variety of file types, which are often only loaded by specific analysis software.",
+    "claim_type": "EXPLICIT",
+    "source": "Data produced in neuroscience has a wide variety of file types, which are often only loaded by specific analysis software.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a common challenge in neuroscience data analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "Data in neuroscience is largely experiment-specific.",
+    "claim_type": "EXPLICIT",
+    "source": "Data is also largely experiment-specific.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a characteristic of neuroscience data.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Pynapple's customizable data loader means emerging file formats may continue to be loaded in the future, without significant overhauls to the main package.",
+    "claim_type": "EXPLICIT",
+    "source": "In addition to being able to load current popular data formats, this customizable data loader means emerging file formats may continue to be loaded in the future, without significant overhauls to the main package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of Pynapple's customizable loader.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "This offers Pynapple long-term stability and means that Pynapple will continue to remain accessible in the foreseeable future.",
+    "claim_type": "EXPLICIT",
+    "source": "This offers Pynapple long-term stability and means that Pynapple will continue to remain accessible in the foreseeable future.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about Pynapple's future based on its design.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Higher-order analyses in neuroscience are more prone to customization than foundational analyses.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these higher-order analyses are more prone to customization, thereby making them relatively more flexible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the nature of different types of analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Storing higher-order analyses in Pynacollada keeps the core Pynapple package stable, while allowing the user to integrate new advances in neurophysiological and behavioral analysis into their workflow.",
+    "claim_type": "EXPLICIT",
+    "source": "This keeps the core Pynapple package stable, while allowing the user to integrate new advances in neurophysiological and behavioral analysis into their workflow.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the benefits of separating core and higher-level functionality.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "Other software provide programming environments which deal with common neuroscientific data and an interface between stored data and analytical methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Other software provide programming environments which deal with common neuroscientific data and an interface between stored data and analytical methods (Garcia et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by a citation and describes existing software.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "One problem with other software is that objects and data structures are rigidly defined, leading to a lack of versatility for new types of data or task design.",
+    "claim_type": "EXPLICIT",
+    "source": "However, one problem that arises from this structure is that objects and data structures are rigidly defined, leading to a lack of versatility for new types of data or task design.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critique of existing software based on inference.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Pynapple offers a more flexible working environment than other software and will remain accessible even as user requirements change.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, Pynapple offers a more flexible working environment and will remain accessible even as user requirements change.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative claim about Pynapple's advantages.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Some transition is required for those primarily trained in other programming languages to use Pynapple.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, some transition is required for those primarily trained in other programming languages commonly used in neuroscience, including MATLAB and Julia.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This acknowledges a limitation for certain users.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "The authors have addressed the challenge of object-oriented programming by providing users with detailed documentation, which includes a broad variety of examples.",
+    "claim_type": "EXPLICIT",
+    "source": "We have addressed this concern by providing users with detailed documentation, which includes a broad variety of examples.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how the authors have addressed a potential limitation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "The authors will keep on providing training opportunities for all future users.",
+    "claim_type": "EXPLICIT",
+    "source": "We will also keep on providing training opportunities for all future users.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a commitment about future support for Pynapple.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Python code may run slower than similar code written in other languages.",
+    "claim_type": "EXPLICIT",
+    "source": "Last, Python code may run slower than similar code written in other languages.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about Python's performance characteristics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "These developments to improve computation speed are transparent for the users as they won't change the organization of the package.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, current development is underway to improve computation speed and these developments are transparent for the users as they won't change the organization of the package.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes ongoing development work and its impact on users.",
+    "evidence_type": [
+      "DATA",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "These external packages will address the speed issue inherent to code written in Python by allowing multiple analyses to be performed simultaneously.",
+    "claim_type": "EXPLICIT",
+    "source": "This will address the speed issue inherent to code written in Python by allowing multiple analyses to be performed simultaneously.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about how future developments will address current limitations.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "These packages will begin to address the limitations of Pynapple, enhancing the long-term stability of Pynapple, and streamlining accessibility for its users.",
+    "claim_type": "EXPLICIT",
+    "source": "These packages will begin to address the limitations of Pynapple we described previously, enhancing the long-term stability of Pynapple, and streamlining accessibility for its users.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about the benefits of future developments.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

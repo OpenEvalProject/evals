@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A novel 96-well plate assay was developed using micromachined steel molds to generate 3D cardiac rings around optically transparent PEG hydrogel pillars. The molds contain 21 identical conical structures with reversed hourglass-shaped cavities, and the PEG gels have a Young's modulus of 11.4\u00b10.5 kPa, which is within the physiological range for human cardiac tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C19 collectively describe the design and characterization of the platform. The mold design is verified by SEM (C16, Figure 1A), the cavity shape is confirmed by PDMS replicas (C17, Figure 1B), and the gel stiffness is measured and validated against physiological values (C18-C19, Figure 1\u2014figure supplement 1B). The measurements and imaging data provide strong support for the technical specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "Optimization experiments determined that a 3:1 ratio of hiPSC-CMs to fibroblasts is optimal for generating stable ring-shaped cardiac constructs. Without fibroblasts, cardiomyocytes formed clusters and malformed rings, while the 3:1 ratio yielded an average of 10.75\u00b10.48 stable tissues per well maintained for at least 20 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C22, C24 describe the optimization of cell ratios with supporting data in Figures 2A-B. The comparison of different ratios (4:1, 3:1, 2:1) is shown in Figure 2B, and Figure 2\u2014figure supplement 1 shows no significant differences in contractile parameters between ratios. The data support the conclusion that 3:1 is optimal for tissue stability, though the criterion is based on tissue number rather than functional superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C74",
+      "C75"
+    ],
+    "result": "Immunofluorescence imaging revealed the 3D organization of the cardiac tissues, with fibroblasts forming a basal layer in contact with the glass substrate and cardiomyocytes forming a compact ring above with striated elongated fibers. The tissues are 75.5\u00b11.8 \u00b5m high with a toric shape, and the organization develops over the first 7 days after seeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C30, C74-C75 describe the structural organization supported by extensive immunofluorescence data (Figures 2C-E, Figure 2\u2014figure supplements 2-3). The spatial segregation of cell types, sarcomere alignment, and temporal development are well-documented. The 3D reconstruction (Figure 2E) confirms the toric geometry and tissue dimensions. The evidence strongly supports the structural characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "The cardiac tissues began contracting within 24 hours after seeding, with contractile parameters developing over time. Beat rate initially decreased then increased to 0.58\u00b10.030 Hz by day 14. Contraction stress increased from day 1 to day 7, stabilizing at 1.4\u00b10.1 mN/mm\u00b2 with a fractional shortening of 25\u00b11%. Contraction and relaxation speeds similarly increased and plateaued by day 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C31-C34, C36 describe the temporal development of contractile function supported by quantitative data in Figure 3. The custom MATLAB analysis tracks pillar deformation to calculate stress, strain, and kinetic parameters. Statistical significance is demonstrated (p<0.0001) with appropriate sample sizes (n=36-59 tissues from three differentiations). The measurements are internally consistent and the methodology is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42",
+      "C57"
+    ],
+    "result": "The ring-shaped tissues are compatible with live fluorescence imaging using voltage-sensitive dyes. Tissue depolarization induced visible fluorescence increases that were synchronous across all pixels, with no detectable sparks or re-entrant waves. The repolarization signal was noisy, likely due to tissue motion during contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C42, C57 describe live imaging capabilities supported by FluoVolt dye experiments (Figure 4B-C, Figure 4\u2014video 1). The synchronous depolarization and correlation with contraction are demonstrated. However, C42 acknowledges a technical limitation (noisy repolarization signal) with a speculative explanation. The proof-of-concept for simultaneous optical and mechanical readouts is established, though with acknowledged limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C66"
+    ],
+    "result": "The cardiac constructs exhibited a positive inotropic response to increasing extracellular calcium concentration, with contraction amplitude increasing by 600% and an EC50 of 1.346 mM [1.159-1.535 mM]. Changes in contraction stress and speeds were statistically significant (p<0.0001), and the EC50 value is consistent with literature values for hiPSC-CM-based EHTs (0.4-1.8 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43-C44, C66 describe calcium dose-response experiments supported by data in Figure 5A. The EC50 determination includes confidence intervals, and statistical significance is reported. The comparison to literature values (C66) provides external validation. The experimental design with sequential calcium additions and appropriate controls supports the conclusions. Sample sizes (>20 tissues from three differentiations) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C67"
+    ],
+    "result": "Verapamil, an L-type calcium channel inhibitor, induced a dose-dependent negative inotropic effect, with complete cessation of contraction at 10 \u00b5M. The IC50 was 0.677 \u00b5M [4.278-12.81\u00d710\u207b\u2077 M], consistent with literature values for other EHTs (0.3-0.6 \u00b5M). Changes in beating parameters were statistically significant (p=0.0053 for beat rate, p<0.0001 for other parameters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45-C47, C67 describe verapamil dose-response experiments supported by data in Figure 5B. The IC50 determination and statistical analysis are appropriate. The comparison to literature values (C67) provides validation. The expected pharmacological response is recapitulated. However, there is an inconsistency in the confidence interval notation in C47 (appears to be incorrectly formatted), though the IC50 value itself is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C79",
+      "C80"
+    ],
+    "result": "Isoproterenol treatment showed a trend toward increased contraction amplitude and significant increases in contraction and relaxation speeds (p=0.0004 for stress, p<0.0001 for speeds) without changes in beat rate. The authors hypothesize this reflects translation of increased kinetics into force rather than frequency, consistent with the immature phenotype of hiPSC-CMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C49, C79-C80 describe isoproterenol responses supported by data in Figure 5C. The statistical significance for kinetic parameters is established, though the force increase is described as a 'trend' rather than significant. The interpretation (C79) is explicitly stated as a hypothesis and is reasonable given the known immaturity of hiPSC-CMs (C80). The result is supported but includes appropriate caveats about the unexpected response pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C68"
+    ],
+    "result": "Dofetilide, an IKr inhibitor, significantly reduced contraction stress and speeds (p<0.0001) until complete cessation at 10 nM. Arrhythmic events were observed at 3 and 7 nM, with Poincar\u00e9 analysis showing increased contraction-to-contraction intervals and erratic beats at increasing concentrations. This recapitulates the known pro-arrhythmic effects of dofetilide in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C50-C53, C68 describe dofetilide effects supported by data in Figure 5D-E. The dose-dependent reduction in contractility and arrhythmia detection via Poincar\u00e9 analysis are well-documented. The comparison to clinical effects (C68) provides validation. The statistical analysis is appropriate (p<0.0001). The arrhythmia detection methodology is sound, though the authors acknowledge limitations in detecting re-entrant waves due to camera speed constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The differentiation efficiency of iPSCs into cardiomyocytes was 96.9\u00b10.8% as determined by flow cytometry for cardiac troponin T.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 reports differentiation efficiency supported by flow cytometry data in Figure 1\u2014figure supplement 2. The high efficiency (>96%) is consistent with optimized differentiation protocols including glucose starvation steps (C70). The measurement method (troponin T staining) is appropriate and standard. The data support the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C77"
+    ],
+    "result": "Tissues began spontaneous beating within 24 hours after seeding, and this activity was maintained over several weeks, allowing contractile measurements and pharmacological testing under auto-pacing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C77 describe spontaneous contractile activity supported by video evidence (Figure 1\u2014video 1) and longitudinal data (Figures 2B, 3). The maintenance of beating over weeks is demonstrated in stability experiments. This functional characteristic is essential for the platform's utility and is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58"
+    ],
+    "result": "The platform enables fast, reproducible formation of up to 21 cardiac tissues per well using 112,500 hiPSC-CMs, with fibroblasts essential for tissue structure. The tissues contract around a deformable transparent pillar allowing force estimation, and display appropriate responses to inotropes and arrhythmogenic drugs for drug testing applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C58 summarize the main findings stated in the Discussion. These are supported by the collective experimental evidence from tissue generation (Figures 1-2), contractility analysis (Figure 3), and pharmacological testing (Figure 5). The claims accurately reflect the demonstrated capabilities of the platform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The tissues develop a fractional shortening of ~25%, close to human heart contraction, with stress of 1.4 mN/mm\u00b2 similar to other hiPSC-CM-based EHT models. However, adult human heart muscle generates significantly higher force (~44 mN/mm\u00b2) than currently available platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 compare the platform's performance to native tissue and other models, supported by citations. The fractional shortening (C59, supported by Figure 3) and stress values (C60) are appropriately benchmarked. The acknowledgment that adult heart force exceeds current platforms (C61-C62) is an honest assessment of limitations. The comparisons are well-supported by literature citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The circular geometry induces homogeneous distribution of cardiomyocytes and contraction forces. The central pillar provides resistance and its controlled stiffness facilitates force calculation. The pillar stiffness can be adapted to model pathological changes in extracellular matrix stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe design advantages and potential applications. C71 is supported by the observed uniform tissue organization (Figure 2). C72 is supported by the successful force measurements (Figure 3). C73 is a reasonable inference about future applications given the demonstrated control of gel stiffness (Figure 1\u2014figure supplement 1). These are well-reasoned interpretations of the platform's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The EHTs mimic the composition and organization of native myocardial tissue, even though only composed of cardiomyocytes and fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is an interpretive statement supported by the structural characterization data (Figure 2). The organized layering of fibroblasts and cardiomyocytes with aligned sarcomeres does recapitulate aspects of native tissue organization. However, the claim appropriately acknowledges the limitation of using only two cell types. The interpretation is reasonable given the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Based on tissue perimeter (~1.13 mm) and expected conduction velocity (15 cm/s), a camera speed of at least 120 fps would be required to detect conduction in the tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 presents a calculation based on tissue dimensions and known conduction velocities in iPSC-CMs (C65). The calculation is straightforward: perimeter/velocity = time for one cycle, requiring sufficient frame rate to capture propagation. The reasoning is sound and the calculation appears correct. This explains why conduction waves were not detected with the 40-50 fps camera used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The platform has limitations including small tissue size (400 \u00b5m), lack of external pacing capability, and inability to perform tissue stretching experiments or determine length-tension relationships. However, pharmacological responses including arrhythmia detection were successfully measured under spontaneous beating conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 honestly acknowledge platform limitations. The small size (C81) is inherent to the high-throughput design. The lack of external pacing (C82) is a technical limitation, though C83 demonstrates that meaningful pharmacological data can still be obtained. The inability to perform stretching experiments (C84-C85) is a consequence of miniaturization. These are fair assessments of current capabilities and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background context on cardiac tissue engineering: the heart lacks regenerative capacity, leading to development of EHTs for regenerative medicine, disease modeling, and drug development. Various EHT geometries have been generated, optimally using multiple cell types, but face trade-offs between miniaturization and biological complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 provide background context supported by extensive literature citations. These are standard knowledge claims in the field that accurately represent the state of cardiac tissue engineering. The citations appear appropriate for the claims made. This background appropriately motivates the development of the new platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C69",
+      "C70"
+    ],
+    "result": "Supporting methodological and literature context: fibroblasts play important roles in cardiac tissue, multi-cellular approaches are important for EHTs, iPSC-CM conduction velocity is slower than adult cardiomyocytes, the cell line used is from a healthy subject, and glucose starvation improves differentiation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C69-C70 provide methodological context and literature support. Each claim is backed by appropriate citations. C63-C65 justify the experimental design choices. C69 documents the cell line source. C70 justifies the differentiation protocol. These are well-supported contextual claims.",
+    "result_type": "MINOR"
+  }
+]

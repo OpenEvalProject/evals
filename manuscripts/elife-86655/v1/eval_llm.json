@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background context on colorectal cancer (CRC), describing it as the third leading cause of cancer death, a heterogeneous disease with slow progression, and noting that tumor heterogeneity poses challenges for treatment selection. The TNM staging system is identified as the current gold standard for diagnosis and prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 present well-established background knowledge about CRC. C1 and C2 describe general characteristics of CRC that are widely accepted in the field. C3 articulates a recognized challenge in oncology. C4 is supported by citation to Amin, 2017, establishing the TNM system's role. These are appropriate contextual claims for the introduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The development of high-throughput molecular technologies led to molecular taxonomies of CRC, with consensus molecular subtypes (CMS) representing a common framework. Single-cell sequencing further refined this classification by adding intrinsic epithelial subtypes (iCMS2/3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 accurately summarize the evolution of CRC molecular classification, supported by appropriate citations (Guinney et al., 2015 for CMS; Joanito et al., 2022 for iCMS). These represent established prior work that provides essential context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Whole transcriptome profiling of tissue sections represents a weighted mean of contributions from each cell type, driven by the most abundant cells, with signals from less abundant cell types being reduced or silenced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 describe a fundamental limitation of bulk RNA sequencing that is well-established in the field. This is a logical inference based on the nature of the technology and provides important motivation for the morphotype-based sampling approach used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Previous studies have established links between CRC morphology and molecular features. Jass (2007) identified morphological features associated with molecular groups but found them insufficient for prediction. Budinska et al. (2013) proposed six morphotypes strongly associated with molecular subtypes, and subsequent image-based classifiers selected similar morphological motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 accurately summarize prior work establishing morphology-molecular feature relationships, all supported by appropriate citations. This provides essential context for the current study's focus on morphotype-based profiling and demonstrates continuity with previous research by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Gene expression profiles may depend on the tumor region sampled, and the sensitivity of gene-based classifiers to tumor sampling has raised concerns about the stability of molecular subtypes and may explain low biomarker translation to clinical practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 present a logical inference (C15) supported by citations to relevant concerns in the literature (C16: Dunne et al., 2016; Stewart et al., 2017). This establishes the key motivation for the current study's approach to intra-tumoral heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study collected 202 tumor regions from 111 stage II-IV CRC cases, including 126 'core samples' with at least 80% morphological purity. The only statistically significant clinical association was between MU/TB morphotypes and grade 3 tumors, and SE with lower grade tumors (p=0.019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C25-C27 describe the study design and sample collection. The sample sizes and selection criteria are clearly stated. The statistical finding (C27) is appropriately qualified with a p-value. However, the relatively small sample sizes for some morphotypes (e.g., TB: n=9) may limit statistical power for some analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Computational deconvolution revealed distinct cellular compositions across morphotypes: ST, DE, and MU showed high stromal content and enrichment in CAFs, endothelial cells, and immune cells, while TB and SE had high epithelial content. NR regions were enriched in differentiated epithelial cell signatures, while tumor morphotypes were depleted in these signatures but enriched in basal crypt cell and stem cell signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 present findings from computational deconvolution analyses (ESTIMATE, Isella signatures, gene set enrichment) shown in Figure 2. The results are internally consistent and align with expected morphological characteristics (e.g., desmoplastic regions having high stromal content). The use of established signatures with appropriate citations strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Immune cell deconvolution using quanTIseq revealed that all tumor morphotypes were enriched in M1 macrophages (maximal in MU and DE), while M2 macrophages, NK cells, and myeloid dendritic cells were highly present in stroma and normal regions. TB morphotype had the lowest scores for regulatory T cells and B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 present findings from immune cell deconvolution analysis shown in Figure 2C. The use of quanTIseq, an established computational method, provides appropriate quantification. The findings are biologically plausible and consistent with the morphological characteristics of the regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Analysis of cancer-associated fibroblast (CAF) subpopulations revealed that ST, MU, and DE had high enrichment of most CAF types, while CT, PP, SE, and TB were depleted. DE and MU were most enriched in ECM-myCAF S1 (associated with immunosuppressive and pro-metastatic functions) and wound-healing myCAF S1, while adjacent stroma showed signatures of normal fibroblasts and inflammatory CAF populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 present detailed CAF subpopulation analysis shown in Figure 2D, using signatures from recent single-cell studies (Pelka et al., 2021; Kieffer et al., 2020). The functional characterization of ECM-myCAF S1 (C41) is appropriately cited. The findings provide important mechanistic insights into morphotype differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Pathway analysis revealed major molecular gradients between morphotypes along EMT/TNF-\u03b1 signaling versus MYC/E2F targets axes. DE and MU shared active immune response, neoangiogenesis, and metastatic potential pathways. CT and TB had activated proliferation pathways, with TB additionally sharing immune response pathways with MU and DE. PP and SE had activated MYC and E2F targets, with PP showing downregulated KRAS and upregulated WNT-\u03b2 catenin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 present comprehensive pathway analysis findings shown in Table 1 and Figure 3A. The use of hallmark pathways from MSigDB provides a standardized framework. The identification of major gradients (EMT/TNF-\u03b1 vs. MYC/E2F) is well-supported by the data and provides a clear organizing principle for understanding morphotype differences. The findings are biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "CMS classification showed that all ST regions were CMS4, 82.4% of NR were CMS3, while morphotypes showed more distributed predictions: DE and MU were predominantly CMS4 (63.6% and 58.8%), PP/SE/CT were predominantly CMS2, and TB was predominantly CMS1 (80%). Importantly, intra-tumoral CMS heterogeneity was observed, with different regions within the same tumor assigned to different subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 present CMS classification results shown in Figure 4A and Figure 5. The finding of intra-tumoral CMS heterogeneity (C56) is a key result of the study. However, the relatively small number of cases with multiple regions (n=18 for matched analysis per C101) limits the generalizability of the heterogeneity findings. The percentages provided are descriptive statistics without confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Intrinsic molecular subtypes (iCMS2/3) were much more stable than CMS, with most morphotypes within a tumor sharing the same iCMS label. NR, MU, TB, and ST were predominantly iCMS3, while PP, CT, and DE were predominantly iCMS2. SE morphotype was almost equally distributed between iCMS2 (58%) and iCMS3 (42%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 present iCMS classification results shown in Figure 4B. The finding that iCMS is more stable than CMS within tumors is important and suggests that iCMS better captures intrinsic epithelial features independent of stromal contamination. This is biologically plausible given that iCMS was designed to focus on epithelial cell intrinsic features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Two prognostic signatures (Eschrich and Jorissen) showed statistically significant variation across morphotypes (p=0.0228 and p=0.00085, respectively). When comparing tumor regions to matched whole tumor, the amplitude of differences exceeded 50% of the whole tumor score in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 present prognostic signature analysis shown in Figure 4C-D. The statistical significance is appropriately reported with p-values. The finding of large regional variations (>50% difference from whole tumor) is striking and has important implications for biomarker reproducibility. However, the number of matched samples is limited, and no correction for multiple testing across the 10 signatures tested is mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Predicted drug sensitivity/resistance varied across morphotypes: MU showed resistance to gefitinib; DE showed sensitivity to azacitidine, dasatinib, and aplidin, and resistance to tamoxifen and gefitinib; PP showed resistance to cantharidin; SE showed resistance to aplidin; CT showed sensitivity to alkylating agents. Some tumors predicted as sensitive based on whole tumor had regions of predicted resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C68 present drug sensitivity predictions shown in Figure 6. However, these are computational predictions based on gene expression signatures, not experimental validation. The manuscript does not provide details on the validation status of these drug sensitivity signatures or their accuracy in CRC. The finding of intra-tumoral heterogeneity in drug sensitivity predictions (C68) is interesting but requires experimental validation to be clinically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C23"
+    ],
+    "result": "The study identified morphotype-specific gene expression profiles and molecular programs, with cell type proportions (fibroblasts, epithelial, immune cells) and epithelial cell differentiation being main drivers of disparities. Activation of EMT and TNF-\u03b1 signaling versus MYC and E2F targets defined major molecular gradients. Morphotype-based sampling allows detection of molecular features that would be diluted in whole tumor profiles while maintaining histopathology context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C23 present the core findings and conclusions of the study. The identification of morphotype-specific profiles is well-supported by the comprehensive analyses presented (differential expression, pathway analysis, deconvolution). The conclusion about morphotype-based sampling (C23) is a reasonable inference from the data, though it represents an interpretation rather than a directly tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Most gene expression-based classifiers, prognostic and predictive signatures exhibited important morphotype-dependent variability within the same tumor, with regional predictions often contradicting whole-tumor classification. In about 60% of cases (11 out of 18), the whole tumor CMS class differed from at least one constituent region. All prognostic signatures varied with morphological regions, with some morphotype scores exceeding whole tumor scores by more than 50%, suggesting whole tumor predictions may be too optimistic and fail to recognize higher risk cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C101-C103 present key findings on classifier instability across morphotypes. The data supporting intra-tumoral heterogeneity in CMS classification (60% discordance) and prognostic signatures (>50% differences) are clearly shown in Figures 4-5. However, the sample size for matched comparisons is limited (n=18 for CMS), and the interpretation that whole tumor predictions are 'too optimistic' (C103) is speculative without clinical outcome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C24",
+      "C104",
+      "C105"
+    ],
+    "result": "Morphotype-based sampling represents a practical approach to improving reproducibility of expression profiling and gene-based classifiers. Prognostic and therapy response signatures may predict more severe cases when applied to subregions than to whole tumor, and signature failure in real-world validation might be due to morphologically heterogeneous tumors requiring multiple sampling locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24, C104-C105 present conclusions and speculations about the practical implications of the findings. While the observation of regional variability is well-supported, the claims about improving reproducibility (C24) and explaining signature failures (C105) are speculative. No direct evidence is provided that morphotype-based sampling actually improves classifier performance or that this explains real-world validation failures. These would require prospective validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MU and DE morphotypes exhibited high scores for genes associated with TGF-\u03b2 signaling, stromal content, CAFs, and immune response pathways. Detailed CAF analysis revealed that supportive stroma had the complete panel of fibroblasts tested, while DE and MU notably lacked 'normal CAFs'. The main difference between DE and MU was that DE was enriched in inflammatory response-associated CAFs (IL-iCAF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present detailed characterization of fibroblast-rich morphotypes using signatures from single-cell studies (Pelka et al., 2021; Kieffer et al., 2020). The findings are well-supported by the data and provide mechanistic insights into morphotype differences. The distinction between DE and MU based on IL-iCAF enrichment is a novel observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The poor prognosis associated with CMS4 could be explained by the stromal component, as high stromal invasion/desmoplastic reaction is prognostic of shorter time to relapse according to cited studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 present an interpretation of CMS4 prognosis supported by citations to Roseweir et al., 2020 and Ten Hoorn et al., 2022. This is a reasonable synthesis of the current findings with prior literature, though it represents an interpretation rather than a directly tested hypothesis in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CT morphotype was previously associated with subtype B/CMS2 in Budinska et al., 2013. TB morphotype appears to represent higher-grade tumors and was associated with CMS1. Both CT and TB showed significant enrichment of normal colon basal cell signatures in contrast to normal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 connect current findings to previous work and provide characterization of CT and TB morphotypes. C74 appropriately references prior work. C75 is an observation from the current data (supported by C27 showing TB association with grade 3). C76 is supported by gene set enrichment analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SE and PP morphologies may indicate the 'serrated pathway' and share common features (well to moderately differentiated, low stromal content, preserved crypt structure). Both were distributed similarly across molecular subtypes and had similar pathway activation: downregulation of EMT, IL2/STAT5, IL6/STAT3, and KRAS signaling, with upregulation of MYC targets. Androgen response, heme metabolism, and IL6/STAT3 (all silenced) appeared specific to SE and PP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 characterize SE and PP morphotypes. The speculation about the serrated pathway (C77) is appropriately qualified and cited (De Palma et al., 2019). The morphological similarities (C78) are observational. The molecular similarities (C79-C81) are supported by the pathway analysis data, though the sample sizes for PP (n=10) and SE (n=33) are relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "TB had the most differentially expressed genes (n=662) compared to other morphotypes. Top genes included FBXO5 (prognostic of shorter time-to-relapse), FLRT3 (proapoptotic, inhibits EMT when overexpressed), SETSIP (chromatin-binding protein involved in fibroblast reprogramming), E2F7 (up-regulated by p53 in DNA damage response), CXCL14 (context-dependent tumor suppressive or supporting role), and SEMA5A (proposed prognostic marker in CRC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 present differential expression findings for TB morphotype with functional characterization of top genes. The number of DEGs (C82) is clearly stated. The functional characterizations (C83-C88) are all supported by appropriate citations. However, these are literature-based functional annotations rather than experimental validation in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Top overexpressed genes in MU morphotype included FGF7 (disrupted signaling associated with deregulated cell differentiation) and MUC2 (downregulation suggested as adverse outcome marker). MUC2 was also among DE-specific genes but downregulated, consistent with desmoplastic reaction being a marker of shorter relapse-free survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 present differential expression findings for MU and DE morphotypes with functional/clinical context from cited literature (Patel et al., 2019; Betge et al., 2016; Ueno et al., 2021). The observation that MUC2 is upregulated in MU but downregulated in DE is interesting and biologically plausible given their different clinical characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Top overexpressed genes in DE morphotype included PIEZO2 (paralog of PIEZO1 involved in CRC metastases), SLIT3 (member of Slit/Robo pathway, regulator of oncogenic pathways and potential therapeutic target), and OLFML2B (potential biomarker for MEK inhibitor resistance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 present differential expression findings for DE morphotype with functional characterization from cited literature (Sun et al., 2020; Gara et al., 2015; Hu et al., 2022). These provide mechanistic insights into DE morphotype biology, though experimental validation in the current study is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "SE morphotype had only one significantly overexpressed gene (CCDC175) at FDR \u22640.15. Significantly downregulated genes included DPYD (variants predictive of 5-fluorouracil toxicity), GLIPR2 (participates in ERK1/2 cascade and EMT), HOXA9A (overexpression contributes to stem cell overpopulation in CRC), and GLI3 (participates in Shh-Gli tumorigenesis; loss sensitizes to 5-FU and bevacizumab).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 present differential expression findings for SE morphotype. The limited number of overexpressed genes (C96) may reflect the stringent FDR threshold or biological characteristics of SE. The functional characterizations of downregulated genes (C97-C100) are supported by appropriate citations and have potential clinical relevance, particularly DPYD for chemotherapy toxicity prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study received ethical approval from the Committee for Ethics of Masaryk Memorial Cancer Institute (number 2018/861/MOU), all patients provided written informed consent, and the data are publicly available in ArrayExpress under accession E-MTAB-12599.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 describe ethical compliance and data availability. These are straightforward statements about study conduct and data sharing that meet standard requirements for publication. The public data availability is commendable and supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Using multicompartmental NEURON simulations, the authors demonstrate that SAC dendrites exhibit significant compartmentalization, with ~40% signal propagation within the same branch but >20-fold attenuation across branches separated by the soma. Despite this morphological isolation, global activation of all dendrites produces comparable voltage responses to focal stimulation due to the larger number of distributed inputs compensating for individual synapse attenuation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge these findings, with one stating 'The computational modeling demonstrates intriguing results: SAC dendritic morphology produces dendritic isolation, and a massive input overcomes the dendritic isolation (Figure 1).' The modeling approach and conclusions about compartmentalization are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Using evolutionary algorithms with synthetic bipolar cell inputs, the authors show that optimal space-time wiring can achieve DSI of 37\u00b13% across velocities. Analysis reveals that temporal RF characteristics (response delay and decay times) contribute more to DS than spatial properties, with models differing only in delay or decay achieving DSI of 29\u00b12% and 35\u00b13% respectively. Importantly, DS levels are largely independent of postsynaptic compartmentalization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praise this work, noting 'By evolving bipolar inputs to produce robust DS in a model network, these authors provide a sound framework for understanding which kinetic properties could potentially be important for driving downstream DS. They suggest that response delay/decay kinetics, rather than the center/surround dynamics are likely to be most relevant.' One reviewer specifically highlights that 'The space-time wiring model was evaluated by changing bipolar cell response properties in the proximal and distal SAC dendrites. Many response parameters in bipolar cells are compared, and DSI is compared in Figure 3. These parameter comparisons are valuable to the field.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors performed iGluSnFR imaging in ChAT-Cre mice to measure glutamate release dynamics onto SACs in response to full-field flashes and moving bars at five velocities. Hierarchical clustering identified seven functional groups for ON-SACs and six for OFF-SACs, sorted by response transiency, with BC dynamics varying systematically with IPL stratification level.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently praise the experimental approach. One states 'Two-photon microscopy was used to measure the bipolar cell glutamate outputs onto SACs by conducting iGluSnFR imaging. All the data sets, including images and transients, are elegantly presented. The authors analyzed the response based on various parameters, which generated more than several response clusters. The clustering is convincing.' Another notes 'The experimental results based on glutamate imaging assess the kinetics of glutamate release under conditions of visual stimulation across a large region of retina largely confirm previous observations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors discovered an unexpected reversed relationship (r=-0.98) between flash response delays and motion response delays: functional clusters with the longest lags to flashes responded quickest to moving bars, with some showing negative delays indicating glutamate release before the bar reaches the cell position. This relationship is explained by RF spatial properties, with a strong correlation (r=-0.99) between motion response lag and RF half-width.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is highlighted as a key contribution by reviewers. One states the work incorporates 'new findings regarding dynamic receptive field properties, an improvement over previous modeling and experimental results based on static visual stimuli.' The discovery that 'presynaptic signals can exhibit prolonged flash-lags yet generate early responses to motion, a phenomenon explained by their spatial RF structure' is accepted as an important advance addressing limitations of prior studies focused on static stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors developed RF models that faithfully reproduce empirical glutamate dynamics for both training (motion) and test (flash) datasets. The models converged on narrow RFs (50-100 \u03bcm) for most clusters, consistent with classical BC RF descriptions, but predicted significantly larger RFs for ON-C1 (379\u00b113 \u03bcm) and ON-C4 (198\u00b16.7 \u03bcm), matching experimentally mapped RFs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this as a methodological contribution, with one noting 'We present a novel application of model fitting to map RFs based on responses to moving stimuli.' The validation across both motion and flash stimuli is implicitly accepted through the overall positive assessment of the experimental approach and the lack of criticism of these specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "When experimental glutamate waveforms were integrated into SAC models, optimal DS was achieved with specific proximal-distal cluster pairs (ON: C6-C2, DSI=17\u00b12%; OFF: C1-C5, DSI=21\u00b13%), representing 3-4 fold improvement over identical BC inputs (DSI=5-7%). Simulations with multiple clusters converged on solutions where two clusters dominated proximal and distal regions, with DS levels independent of dendritic compartmentalization but dependent on clear spatial segregation of BC types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support these findings. One states 'By combining their model with this experiment data, they conclude that even the optimal space-time wiring is not sufficient to explain the SAC process DS. Though there is no conclusion which of the many other proposed cellular and circuit mechanisms could potentially contribute to this computation, the limited role for spacetime wiring is firmly established.' Another notes 'these authors report that the experimentally measured BC responses are far from optimal for generating DS. Thus, the BC-based DS mechanism does not appear to explain the robust DS observed experimentally.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Comparison of experimental BC kinetics to optimal synthetic inputs reveals that experimentally recorded clusters have substantially slower dynamics: distal clusters (ON-C2, OFF-C1) are ~2-fold slower than optimal, while proximal clusters (ON-C6, OFF-C5) show even larger differences in duration (1.25-1.28s vs 0.31s) and transiency index (~0.4 vs 0.87). The authors conclude that glutamate release has slow dynamics that can mediate substantial but suboptimal DS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is central to the reviewers' assessment. One states 'the waveforms produced by presynaptic cells in response to moving objects do not fully exploit the potential for directional tuning that can be achieved with synthetic BCs.' Another notes 'the experimentally measured BC responses are far from optimal for generating DS,' supporting the claim that while space-time wiring contributes to DS, it does so suboptimally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors demonstrate low correlation between BC response dynamics to motion versus static stimuli, replicating this finding on a new dataset. They show that presynaptic signals can exhibit prolonged flash-lags yet generate early responses to motion, explained by spatial RF structure, reinforcing that signal kinetics are stimulus-dependent rather than fixed cellular properties.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers emphasize this as a key strength, noting the work incorporates 'new findings regarding dynamic receptive field properties, an improvement over previous modeling and experimental results based on static visual stimuli.' The finding that BC kinetics differ between static and moving stimuli is accepted as addressing a critical limitation of prior space-time wiring studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The authors demonstrate that compartmentalization has little effect on directional tuning produced by the space-time wiring model, in contrast to other postsynaptic mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer raises a concern about this finding, asking 'The computational modeling demonstrates intriguing results: SAC dendritic morphology produces dendritic isolation, and a massive input overcomes the dendritic isolation (Figure 1). This modeling seems to be generated by basic dendritic cable properties. However, it has been reported that SAC dendrites express Kv3 and voltage-gated Ca channels. Are they incorporated into this model? If not, how about comparing these channel contributions?' This suggests the reviewer questions whether the passive model adequately captures the role of compartmentalization when active conductances are considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The number of functional clusters (7 ON, 6 OFF) exceeds the known number of BC subtypes connecting to SACs (4 ON, 5 OFF). The authors suggest this could be explained by gap-junction coupling among BCs or contributions from glutamatergic amacrine cells, noting that some clusters were observed rarely, possibly due to different adaptation states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer directly questions this finding: 'The authors found that there are seven ON clusters and six OFF clusters, which are supposed to be bipolar cell terminals. However, bipolar cells reported to provide synaptic inputs are T-7, T-6, and multiple T-5s for ON SACs and T-1, T-2, and T-3s for OFF SACs. The number of types is less than the number of clusters. Is there a possibility of clusters belonging to glutamatergic amacrine cells? Please provide a discussion regarding the relations between clusters and cell types.' This indicates uncertainty about the cellular identity of the clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study did not detect directionally tuned release from individual BC terminals, which the authors attribute to the sparsity of directionally tuned sites being overshadowed by non-directionally tuned units. They note it remains unknown whether DS boutons align with the soma-dendritic axis to enhance outward DS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer specifically asks about this: 'In Figure 5B, representative traces are shown responding to moving bars in horizontal directions. These did not show different responses to two directional stimuli. Is there any directional preference from other ROIs? Yonehara's group recently exhibited the bipolar cells' direction selectivity (Matsumoto et al 2021). Did you see any correlations with their results? Please discuss.' This indicates the reviewer is uncertain about whether the lack of detection represents a true absence or a methodological limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors discovered presynaptic cells with broad RFs spanning hundreds of microns, resembling recent findings of elongated RFs in type 5A BCs. They speculate this could be explained by gap-junction coupling among neighboring BCs, potentially as part of adaptive changes to repeated stimulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not explicitly critique this finding, the speculative nature of the mechanistic explanation and the unexpected nature of the observation (challenging classical understanding of BC RF structure) suggest this result requires further validation. The authors themselves frame this as speculation ('One plausible mechanistic explanation'), indicating uncertainty about the underlying mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "The authors conclude that additional mechanisms beyond space-time wiring are necessary to account for the observed DS capabilities in SACs, as the experimentally measured BC responses fall short of optimal DS generation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is strongly endorsed by reviewers. One states 'they conclude that even the optimal space-time wiring is not sufficient to explain the SAC process DS... the limited role for spacetime wiring is firmly established.' Another notes 'the BC-based DS mechanism does not appear to explain the robust DS observed experimentally (even with mutual inhibition blocked).' The editor's assessment calls this an 'important study' showing how space-time wiring 'contributes minimally to a dendritic computation.'",
+    "result_type": "MAJOR"
+  }
+]

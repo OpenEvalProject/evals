@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript establishes the biological and theoretical context for studying microscopic epistasis and clonal interference. Microscopic epistasis (where mutation effects depend on genetic background) and clonal interference (multiple competing strains) are both prevalent in laboratory evolution, but the SSWM limit commonly used in theory neglects clonal interference and is invalid for standard laboratory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by appropriate citations to experimental and theoretical literature. These claims establish accepted knowledge in the field and correctly characterize the limitations of existing theoretical frameworks (SSWM) relative to experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript reviews existing modeling approaches for fitness landscapes, contrasting macroscopic models (rugged/fitness-parameterized) with microscopic models that treat genomes as sequences of loci. Rugged landscapes make predictions that violate experimental measurements, while microscopic models like the NK model and Fourier expansion approaches offer alternatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 accurately summarize prior work on fitness landscape models with appropriate citations. The characterization of rugged landscape limitations (C8) and the description of microscopic modeling approaches are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Prior spin glass studies of adaptive dynamics have provided insights into epistasis effects but were limited to the SSWM regime due to computational constraints, leaving the combined effects of microscopic epistasis and clonal interference unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 correctly identify the gap in prior work that motivates this study. The citations to recent spin glass work (Guo et al., 2019; Reddy and Desai, 2021) and the characterization of their SSWM limitation are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C40",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study develops a spin glass-type microscopic fitness model with tunable epistasis (parameter \u03b2) applied to serial dilution dynamics. The model contains additive and pairwise epistatic terms, represents a Fourier expansion approximation of arbitrary fitness functions on the Boolean hypercube, and uses biologically motivated parameters (initial rank=100, serial dilution protocol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C40, C49-C51 describe the model construction with appropriate mathematical justification (Fourier expansion, C50) and biological motivation. The model design is sound and the parameter choices are reasonably justified, though some choices (like initial rank=100) are somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C56",
+      "C57"
+    ],
+    "result": "The study developed a high-performance C++ implementation with algorithmic advances including adaptive fast fitness computation, hash-based strain storage, and efficient dilution methods. These advances enable simulation of realistic population sizes (10^8 bacteria) over long timescales (tens of thousands of generations) while tracking complete microscopic details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C56-C57 describe substantial computational contributions. The claim of \"several orders of magnitude\" speedup (C57) is plausible given the algorithmic optimizations described, though specific benchmarks are not provided. The code availability enhances reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The model exhibits expected behavior across mutation rate regimes: low mutation rates produce SSWM dynamics with sequential sweeps, while higher mutation rates enable clonal interference with multiple mutations, stochastic tunneling, and competing populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 describe model validation showing it captures known evolutionary phenomena. The observations are supported by Figure 1D and citations to relevant theory. This demonstrates the model behaves as expected across parameter regimes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Stronger microscopic epistasis (higher \u03b2) slows fitness trajectories independent of clonal interference level. This occurs through two mechanisms: more fixed mutations are required to reach the fitness peak, and each fixation generates additional beneficial mutations through epistatic interactions, corresponding to increased prevalence of flat landscape regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C58-C62 present a major finding supported by Figure 2 data showing slower trajectories and more fixations with increasing \u03b2. The mechanistic interpretation (C60-C62) is reasonable given the model structure, though the connection to flat regions (C62) relies on analogy to spin glass physics rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Mapping to fitness-parameterized landscapes reveals that microscopic epistasis slows trajectories through two complementary effects: beneficial mutations become rarer at fixed fitness (decreasing rank), and typical fitness increments decrease. The expected beneficial increment exhibits global epistasis (linear decrease with fitness) for all \u03b2>0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 present analysis supported by Figure 3 showing rank and expected increment behavior. The emergence of global epistasis (C69-C70) is consistent with prior work (Reddy and Desai, 2021). The two-mechanism explanation (C75) logically follows from the observed rank and increment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C85",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A random walk model neglecting dynamical correlations qualitatively reproduces the effect of epistasis on fitness trajectories. The model predicts monotonically decreasing exponents and increasing fixations with \u03b2, explained by diffusive flux from deleterious to beneficial mutations due to noise broadening of the fitness increment distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C85, C88, C90-C95 present a simplified mechanistic model supported by Figure 4. The random walk approximation (neglecting correlations, C88) is justified by analogy to spin glass physics. The qualitative agreement (C91) is demonstrated, though quantitative discrepancies (C92) indicate correlation effects matter. The diffusive flux mechanism (C95) provides intuitive understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Hill-climbing dynamics on random sparse fitness landscapes with pairwise interactions cannot reproduce the slow power-law trajectories observed in Lenski's LTEE, even with clonal interference, suggesting other factors like structured interactions may be important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C21 makes a negative conclusion about reproducing LTEE dynamics. However, the manuscript does not provide explicit comparison of their simulated exponents with LTEE data or systematic exploration of parameter space to rule out matching LTEE trajectories. The conclusion may be correct but requires more direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C103",
+      "C104",
+      "C105",
+      "C111"
+    ],
+    "result": "The effect of clonal interference on fitness trajectory shape depends on epistasis strength: without epistasis, clonal interference accelerates trajectories, but with sufficient epistasis, clonal interference has no effect on trajectory speed. Any macroscopic fitness-parameterized model must depend on mutation rate, contrary to standard frameworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C103-C105, C111 present major findings supported by Figure 5 showing differential effects of mutation rate depending on \u03b2. The observation that effective macroscopic models depend on mutation rate (C111) is novel and important. However, the specific \u03b2 threshold where clonal interference effects vanish is not precisely determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Increasing mutation rate has dual effects: it increases clonal interference and allows more mutations per day. When time is normalized by mutation rate to isolate clonal interference effects, clonal interference decelerates trajectories due to suppressed fixation probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 correctly distinguish between two effects of changing mutation rate and describe an appropriate normalization approach. The deceleration due to suppressed fixation probabilities (C108) is supported by Appendix 1-figure 1 and consistent with known clonal interference effects (C97-C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The conditional distribution of fitness effects depends on mutation rate in both epistatic and non-epistatic landscapes, becoming more peaked at higher clonal interference levels. This occurs because clonal interference suppresses low-effect mutations. Rank behavior differs between landscapes: increasing monotonically with \u03bc without epistasis but non-monotonically with epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 present detailed analysis supported by Figure 6. The observation that the DFE depends on mutation rate (C113) is well-demonstrated. The mechanistic explanation via suppression of low-effect mutations (C114) is reasonable. The contrasting rank behavior (C118-C119) is clearly shown, though the non-monotonicity with epistasis (C119) is complex and could benefit from deeper mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Prior work established that clonal interference reduces fixation probabilities and slows adaptation rates. In fitness-parameterized models with weak clonal interference, the effect on trajectory shape depends on how beneficial mutation rate changes with fitness, typically accelerating trajectories when beneficial mutations become less prevalent. However, the general effect remains poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 accurately summarize prior knowledge with appropriate citations. These claims establish the context for understanding how the current study's findings (C103-C105) differ from or extend prior predictions, particularly regarding the role of epistasis in modulating clonal interference effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C126"
+    ],
+    "result": "The simulation approach enables probing microscopic details difficult to obtain experimentally and studying previously intractable regimes. As epistasis increases, beneficial mutation rate becomes increasingly linear in fitness (similar to global epistasis), suggesting epistasis strength could be inferred experimentally. The beneficial mutation rate plays a central role in setting trajectory speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123, C126 discuss implications and observations from the analysis. The linearity of beneficial mutation rate with fitness (C123) is supported by Figure 3. The suggestion about experimental inference (C124, not included here but related) is reasonable speculation. The central role of beneficial mutation rate (C126) is a synthesis consistent with the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C130",
+      "C134"
+    ],
+    "result": "The study establishes a novel connection between spin glass physics (two-point correlation functions) and population genetics (substitution trajectories). Unlike standard spin glasses with stretched exponential relaxations, the substitution trajectory follows power-law relaxation. The four-point correlator contains no additional information beyond the two-point function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128, C130, C134 present connections to spin glass physics. The mathematical relationship (C128) is valid. The contrast with stretched exponentials (C130) is appropriately cited. The equivalence of \u03c7\u2084 and \u03c7\u2082\u00b2 (C134) is stated to be demonstrated in Appendix 1-figure 4, though this represents a specific property of the fixation dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C138",
+      "C139"
+    ],
+    "result": "Future work could explore horizontal gene transfer effects (which might slow or accelerate trajectories), probe the precise \u03b2 value where clonal interference effects vanish, and potentially develop methods to measure epistasis strength experimentally by studying trajectory dependence on clonal interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136, C138-C139 are speculations about future directions. These are reasonable extensions given the current findings, though they remain untested hypotheses. The suggestions are appropriately framed as possibilities rather than established results.",
+    "result_type": "MINOR"
+  }
+]

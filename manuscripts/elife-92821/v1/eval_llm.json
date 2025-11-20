@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Healthy mice exhibit a lateral sequence gait pattern with anti-phase front-rear limb coordination, and stride parameters (length, frequency, speed) are normally distributed and similar across limbs. Faster strides correlate with higher length and frequency, and whole-body speed strongly correlates with stride speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 are supported by behavioral data in Figures 1E-L, showing consistent gait kinematics. The findings confirm expected relationships between stride parameters and are consistent with cited prior work (Machado et al., 2015). The measurements appear methodologically sound with appropriate statistical characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Approximately 45% of striatal neurons show significant phase-locking to individual limb gait cycles, with similar vector lengths across limbs and phase angle distributions consistent with limb motion patterns. Most phase-locked neurons are entrained to single limbs or diagonal limb pairs, with vector length negatively correlated with firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C29 are well-supported by electrophysiology data in Figures 2H-K and supplementary figures. The spike time jitter test provides appropriate statistical validation. The finding of ~45% phase-locked neurons represents a substantial population, and the characterization across limbs is thorough with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C67"
+    ],
+    "result": "A substantial proportion of striatal neurons exhibit mixed encoding of single-limb phase, body speed, and movement initiation/cessation, with approximately one-third encoding all three factors simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C67 are supported by data in Figures 3A-G showing overlapping populations encoding multiple movement parameters. The Venn diagram analysis appropriately quantifies the overlap. This demonstrates that striatal neurons can multiplex different aspects of locomotor control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In healthy mice, D1 and D2 MSNs show balanced phase-locking to the gait cycle with similar vector lengths and angles, and similar proportions of neurons encoding limb phase, movement initiation, and body speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C37 are supported by optogenetic tagging data in Figures 4D-H. The identification of 39 D1 and 40 D2 MSNs provides adequate sample sizes, and statistical tests show no significant differences in phase-locking properties between cell types. The balanced encoding is a key finding for understanding healthy striatal function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C56"
+    ],
+    "result": "D1 MSNs show significantly higher fractional change in activity during movement initiation compared to D2 MSNs in healthy animals, while responses to movement cessation and body speed are similar between cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C56 are supported by data in Figures 4I-J and 6I showing a significant bias toward D1 MSN activity at movement start (p=0.048 in healthy, confirmed in sham). The temporal resolution of electrophysiology may explain why this was not detected in prior calcium imaging studies. This represents an important refinement of understanding D1/D2 balance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C86"
+    ],
+    "result": "Unilateral 6OHDA lesions produce dopamine loss in dorsal striatum and recapitulate multiple motor impairments including reduced movement initiation, ipsiversive turning, slower body speed, and altered single-limb gait parameters (shorter, slower, more variable strides with increased stance phase duration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 and C86 are well-supported by behavioral data in Figures 5A-J and supplementary figures. The 6OHDA lesion model is well-established, and the characterization of both whole-body and single-limb deficits is thorough. The findings are consistent with prior work on Parkinson's disease models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C87"
+    ],
+    "result": "Dopamine depletion disrupts the balanced phase-locking between D1 and D2 MSNs, leading to significantly stronger phase-locking in D2 MSNs while D1 MSN coupling remains unaltered. The preferred phase angles remain similar between cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C53, and C87 are supported by data in Figures 6E-G showing significantly higher D2 MSN vector length in 6OHDA animals (two-way ANOVA, p<0.0001). Sham controls (C49-C50) validate that this is specific to dopamine loss. This is a central finding linking altered striatal dynamics to motor impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The imbalance in phase-locking vector length after dopamine lesions cannot be explained by changes in overall firing rate, as session-wide firing rates remain similar between D1 and D2 MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by data in Figure 6H showing no significant difference in firing rates between D1 and D2 MSNs after lesions. This control is important for ruling out a trivial explanation and strengthens the interpretation that the vector length change reflects altered temporal coupling to gait.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C88"
+    ],
+    "result": "Dopamine lesions attenuate the bias toward higher D1 MSN activity during movement initiation, resulting in similar start-related activity levels between D1 and D2 MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C88 are supported by data in Figure 6J showing loss of the D1 bias present in sham animals (Figure 6I). This represents a second major effect of dopamine loss on D1/D2 balance, specifically affecting movement initiation rather than ongoing gait.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C95"
+    ],
+    "result": "Movement cessation and body speed encoding show no significant differences between D1 and D2 MSNs in both sham and 6OHDA groups, though dopamine lesions reduce the overall speed coding score for both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C95 are supported by data in Figure 6\u2014figure supplement 1B-E. The lack of D1/D2 differences in speed coding contrasts with the phase-locking changes, suggesting that dopamine loss has selective effects on different aspects of locomotor encoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C90"
+    ],
+    "result": "Dopamine lesions primarily alter the relative levels of D1 and D2 MSN activity during two critical stages: movement initiation (reducing D1 bias) and gait cycle performance (increasing D2 phase-locking), with effects varying across different measures of movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C90 appropriately synthesize the findings from C51-C59. The interpretation is well-supported by the data showing differential effects on phase-locking versus initiation. This represents a key conceptual advance in understanding how dopamine loss affects striatal function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Optogenetic activation of D2 MSNs reversibly alters whole-body motion and produces changes in single-limb stride parameters (duration, speed, and modest changes in length and swing-to-stance ratio), demonstrating that elevated D2 MSN activity is sufficient to produce motor impairments qualitatively similar to dopamine lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C63 are supported by data in Figure 6\u2014figure supplement 2, but the authors acknowledge a critical limitation: stimulation was not phase-locked to the gait cycle. This limits the ability to directly test whether phase-locked D2 activity specifically causes gait deficits. The qualitative similarity to lesion effects is suggestive but not definitive. Sample size (n=4) is also small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C91"
+    ],
+    "result": "Elevated limb phase-locking of D2 MSNs may underlie gait impairments associated with dopamine loss, potentially contributing to bradykinetic symptoms (gait cycle maintenance) while reduced D1 MSN start activity may contribute to akinetic symptoms (movement initiation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7 and C91 are speculative interpretations linking the observed electrophysiological changes to behavioral symptoms. While the correlation between altered D2 phase-locking and gait deficits is compelling, causality is not established. The optogenetic experiment (C63) provides some support but has limitations. Additional causal manipulations would be needed to definitively support this mechanistic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Limb phase coding cells represent a smaller population (~45%) compared to start/stop (~90%) or speed (~90%) coding cells, and nearly all phase coding cells also respond to start/stop or speed, while many start/stop or speed coding cells are not phase-locked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by the Venn diagram analysis in Figure 3C. This quantification reveals the hierarchical organization of striatal encoding, with phase coding being more selective than other locomotor parameters. The asymmetry in overlap is informative about striatal functional organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The D1 MSN bias during movement initiation was not reported in previous calcium imaging studies, likely due to differences in temporal resolution between electrophysiology and calcium imaging, as the bias appears only in the initial stages of movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C82 provide a speculative explanation for discrepancies with prior work. While the temporal resolution hypothesis is plausible and supported by comparison to whole-cell recordings (Sippy et al., 2015), this remains speculative without direct experimental validation. The explanation is reasonable but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Unilateral 6OHDA lesions produce asymmetric gait with ipsiversive turning and greater stride length reduction in ipsilateral limbs, but prior work suggests this does not simply reflect a turning signal as D1 MSNs show bias during turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is well-supported by data in Figure 5G, but the interpretation in C94 relies on external work (Varin et al., 2023) to address the confound of turning. The authors acknowledge insufficient data to directly compare turning versus straight walking in their own dataset. This limitation introduces uncertainty about whether the D2 phase-locking increase reflects gait deficits or turning behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "D1 and D2 MSNs were identified using an optogenetic tagging protocol with ChR2 stimulation at the end of recording sessions, using criteria of short-latency excitation, waveform correlation, and amplitude ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by detailed methods and validation data in Figures 4A-C. The three-criterion approach (latency, waveform correlation >0.95, amplitude ratio <2) is rigorous and follows established protocols (Jin et al., 2014). Photoelectric artifacts were appropriately controlled by removing spikes within 0.6ms of laser onset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C66",
+      "C96",
+      "C97"
+    ],
+    "result": "The study demonstrates that striatal neurons represent gait on a single-limb and step basis, significantly expanding on prior work by quantitatively comparing gait phase coding across limbs, cell types, and dopaminergic states, revealing insights less accessible with whole-body speed measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C64, C66, C96-C97 appropriately summarize the study's contributions. The single-limb resolution approach is novel and well-executed, providing insights beyond prior whole-body measurements. The systematic comparison across conditions (healthy, sham, 6OHDA) and cell types (D1, D2) represents a significant advance in understanding striatal control of locomotion.",
+    "result_type": "MAJOR"
+  }
+]

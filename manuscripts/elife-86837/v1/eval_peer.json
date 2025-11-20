@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C29",
+      "C65",
+      "C66",
+      "C71",
+      "C75",
+      "C111"
+    ],
+    "result": "The computational model proposes a hybrid mechanism where sensorimotor input drives extrinsic theta sequences in CA3 while CA3-DG feedback loops generate intrinsic sequences that are independent of running trajectory. These two types of sequences can propagate simultaneously in different directions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly recognize this as a core contribution. The editor states the study provides 'a convincing theoretical framework explaining the segregation of sequences reflecting navigation and sequences reflecting internal dynamics in the DG-CA3 loop.' Reviewer 2 notes 'the idea of combining intrinsic and extrinsic mechanisms for theta sequences is novel' and that 'the model effectively incorporates two crucial phenomena.' No concerns are raised about this fundamental model architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C21",
+      "C33",
+      "C100",
+      "C106",
+      "C107",
+      "C113",
+      "C148"
+    ],
+    "result": "Intrinsic sequences are less prominent than extrinsic sequences but serve as running-direction independent landmark cues that provide stable temporal patterns recognizable across multiple movement directions, allowing reliable spatial decoding through temporal correlations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly highlights that 'the authors propose a novel interpretation for intrinsic sequences, namely to signal a landmark cue that is independent of direction of traversal' as a key contribution. The editor describes this as part of the 'convincing theoretical framework.' The functional interpretation of intrinsic sequences as stable landmarks is treated as an important novel insight without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C58",
+      "C59",
+      "C72",
+      "C73",
+      "C74",
+      "C117",
+      "C122",
+      "C123"
+    ],
+    "result": "The model simulations quantitatively reproduce experimental observations including directionality properties of phase precession and spike correlations, with specific agreement on metrics like spike phase differences between best/worst directions and extrinsicity ratios for different cell pair types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'the model effectively incorporates two crucial phenomena: phase precession and directionality of theta sequences' and commends 'a systematic comparison' with experiments. The editor describes the framework as 'convincing' based on 'numerical simulations and comparison to experiments.' The quantitative agreement with experimental data (Yiu et al., 2022) is implicitly accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C84",
+      "C85",
+      "C112"
+    ],
+    "result": "The model predicts that DG lesions reduce theta compression and phase range of phase precession in CA3, demonstrating DG's role in temporal organization of CA3 sequences, which is consistent with experimental lesion studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes the study is 'partly based on previous work from the authors, including published (Leibold, 2020, Yiu et al., 2022) and unpublished (Ahmedi et al., 2022. bioRxiv) work,' acknowledging the connection to lesion experiments. The model's ability to account for lesion effects is treated as supporting evidence without criticism. No reviewer questions these predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Using a tempotron decoder, the model demonstrates that intrinsic sequences from the DG loop can be recognized across all running directions, while extrinsic sequences without the DG loop fail to be reliably identified, because intrinsic spike patterns remain similar despite different approach directions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'a readout neuron can be trained to distinguish extrinsic from intrinsic sequences' as part of the study's contributions. The tempotron analysis is mentioned without criticism and appears to be accepted as a valid demonstration of the functional distinction between sequence types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Simulations of the intrinsic Tsodyks et al. 1996 model show that phase precession depends on alignment between running direction and asymmetric connectivity, with spike correlations remaining invariant to movement direction, which cannot explain experimental observations of direction-independent phase precession.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 commends 'the authors' efforts to integrate previous theories into their model and conduct a systematic comparison,' explicitly stating 'This is exactly what our community needs: not only the development of new models, but also understanding the critical relationships between different models.' The characterization of intrinsic model limitations is accepted as part of this systematic comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Simulations of the extrinsic Romani and Tsodyks 2015 model recover direction-independent phase precession and symmetrically reversed theta spike correlations matching CA1 experimental data, with sequences playing out in the direction of movement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is part of the systematic model comparison that Reviewer 2 explicitly praises. The characterization of the extrinsic model's properties is presented as established background and is not questioned by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C108",
+      "C109",
+      "C110",
+      "C118"
+    ],
+    "result": "CA3 theta sequences are neither solely extrinsic nor solely intrinsic, requiring both mechanisms to explain experimental observations that phase precession properties change with running direction while correlation reversal is still observed, which purely extrinsic models with directional input cannot explain.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central motivation for the hybrid model that all reviewers recognize. The editor describes it as explaining 'the segregation of sequences,' Reviewer 1 notes it addresses observations 'in a previous paper by the authors,' and Reviewer 2 states both mechanisms are needed to explain 'the complexity of the phenomena.' This claim is foundational and uncontested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The model incorporates directional and positional sensory input modulation with short-term facilitation (STF) to generate steeper phase precession slopes matching experimental reports, and includes directionally-biased synaptic weights based on Hebbian plasticity principles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are technical model features that enable the model to match experimental data. Reviewer 2 notes 'the model effectively incorporates two crucial phenomena' without raising concerns about the specific mechanisms. The implementation details are treated as methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Rate directionality and directional bias in recurrent connectivity can render phase precession directionally dependent but are not sufficient to account for intrinsic sequences, as directionality of input does not affect spike pair correlations which remain solely extrinsic.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is part of the systematic exploration of model mechanisms that Reviewer 2 praises. It demonstrates the necessity of the DG loop component, which is central to the model's novelty. No reviewer questions this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C76",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "When running direction aligns with DG-CA3 projections, phase precession starts from higher phases due to forward activation through DG; when running against the projection, extrinsic sequences remain forward but intrinsic sequences play backward. The interaction produces directional dependence in phase precession properties and demonstrates distinct functional roles: extrinsic sequences represent trajectory direction while intrinsic sequences represent associative memory toward specific locations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are key predictions of the hybrid model mechanism that distinguish it from purely extrinsic or intrinsic models. The editor's statement that the study provides a 'convincing theoretical framework' implicitly encompasses these mechanistic predictions. No reviewer raises concerns about these model behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The combination of extrinsic and intrinsic theta sequence activity is robust to changes in short-term synaptic plasticity parameters and running speed, as long as place fields are wide enough to allow spikes in sufficiently many theta cycles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This robustness analysis supports the model's generality. While not explicitly discussed by reviewers, it is presented as supplementary evidence and no concerns are raised about parameter sensitivity or model robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C93",
+      "C124",
+      "C125"
+    ],
+    "result": "The model predicts intrinsic sequences with higher marginal spike phases along DG-loop projections that extend outside trajectories, producing 'off-track' spikes at high phases and direction-dependent place field expansion, consistent with observed remote activation of CA3 place cells at reward locations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions connect the model to experimental observations of out-of-field firing. Reviewer 1 notes the study addresses 'theta sequences independent of animal movement trajectories,' which relates to these predictions. The connection to existing experimental observations (Sasaki et al., 2018) is presented without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Simulations without CA3 recurrence show that extrinsic sequences can be generated by spatial input alone relying on short-term facilitation, and that the temporal order of extrinsic sequences does not necessarily require CA3 recurrence but can be coordinated solely by sensorimotor drive.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an important mechanistic insight about the sufficiency of sensorimotor drive for extrinsic sequences. It is part of the systematic model analysis that Reviewer 2 praises. No concerns are raised about these simulations or their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C35",
+      "C155"
+    ],
+    "result": "The authors hypothesize and speculate that intrinsic sequences largely reflect replay and preplay activity during non-theta states, may reflect the mechanistic basis for replay, and would correspond to intrinsic activity patterns indicating context expectation of an animal.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly stated as hypotheses and speculations by the authors. While Reviewer 1 notes the study addresses 'the interpretation in terms of navigation and neural coding,' no reviewer explicitly evaluates these specific speculative claims about replay/preplay. They remain untested predictions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C152",
+      "C153",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The model makes several speculative predictions: intrinsic sequences should not remap and should be observable across environments; they may act as scaffolds for building new spatial codes in similar contexts; their functional roles may extend beyond spatial memory to represent working memory contents for decision making.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are forward-looking predictions and speculations about broader implications. While Reviewer 1 states 'the manuscript will contribute to the understanding of the mechanisms behind phase precession, as well as to how we interpret hippocampal temporal coding,' no reviewer explicitly evaluates these specific untested predictions. They represent potential future directions rather than current findings.",
+    "result_type": "MINOR"
+  }
+]

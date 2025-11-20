@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors solved the cryo-EM structure of OSCA3.1 at 2.6 \u00c5 resolution in nanodiscs, building a model for 537 of 724 residues. The structure shows marked conservation with OSCA1.1 and OSCA1.2, with the BLD modeled as poly-Ala helices due to increased flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C39-C47, C124-C125 describe the structural determination workflow and results. The 2.6 \u00c5 resolution (C44), model completeness (C45), and structural conservation (C48-C50, C125) are well-documented with appropriate cryo-EM methodology and validation metrics (Table 1, Figure 1). The BLD flexibility observation (C46-C47) is a reasonable interpretation of the density quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "OSCA3.1 shows good structural agreement with OSCA1.1 and OSCA1.2 (C\u03b1 RMSD 1.243 \u00c5 and 1.152 \u00c5 respectively), with maintained pore profiles and \u03c0-helical turns. The small pore radii suggest a closed/non-conductive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 provide quantitative structural comparisons with specific RMSD values and cite previous MD simulations supporting the closed state interpretation. The pore profile analysis (Figure 1d) and \u03c0-helical turn conservation are standard structural observations that are well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C126"
+    ],
+    "result": "Multiple lipid-like densities were identified in the OSCA3.1 structure, including one at the pore fenestration at a position similar to previous MD simulations of OSCA1.2. This supports the proposed occupation of the pore pathway by lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe lipid densities observed in the cryo-EM map (Figure 1e, Figure 1\u2014figure supplement 3). The positioning is consistent with prior MD simulations (C55) and recent structures (C57), providing convergent evidence. The interpretation that lipids occupy the pore pathway (C56) is reasonable given the density location and prior computational work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The OSCA3.1 nanodisc structure represents a further 'extended' state compared to previous digitonin and LMNG structures, with outward TM movements of ~4-8 \u00c5. The structure enabled improved residue assignment, particularly for TM0, with a two-residue registry shift relative to the digitonin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 compare the current structure to previous OSCA3.1 structures with specific measurements of conformational differences (C61). The improved resolution enabled better residue assignment (C63-C64), which is a standard outcome of higher-quality structures. The 'extended' state designation (C62) is consistent with cited work and the observed TM movements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The amphipathic helix (AH) between TM0 and TM1 is a conserved feature of OSCA channels. AHs can serve as membrane anchors and sensors of membrane deformation and are present in many MA ion channels, including MscL where an AH links membrane tension to protein conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 establish the structural conservation of the AH (C65) and its functional role in other MA channels (C66-C68). These are well-supported by structural data (Figure 2a, Figure 2\u2014figure supplement 1) and appropriate citations. The comparison to TMEM16 (C69-C70) provides important context for distinguishing direct mechanosensitivity from calcium-dependent responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C127"
+    ],
+    "result": "Single (W75K, L80E) and double (W75K/L80E) mutations in the OSCA1.2 amphipathic helix strongly abrogated the response to poking (only 3/24, 2/16, and 2/24 cells responded vs 47/51 for WT), with increased apparent threshold for activation. This suggests the AH plays an important role in poke-activated responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 present clear electrophysiological data showing dramatic reduction in poke responsiveness with AH mutations. The sample sizes are adequate (C73-C76), the apparent threshold measurements are quantified (C77-C80), and the conclusion that the AH is important for poking (C82) is well-supported. The control that this is not due to poor trafficking (C81) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C132"
+    ],
+    "result": "All AH mutants (W75K, L80E, W75K/L80E) showed stretch-activated currents in cell-attached patches (25/26, 3/3, 5/5, 11/11 cells respectively) with similar activation thresholds to WT (-48\u00b15, -56\u00b111, -41\u00b16, -53\u00b18 mmHg). The stretch response was not affected by AH mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C93 demonstrate that AH mutations selectively affect poke but not stretch responses. The data show consistent stretch activation across all mutants (C83-C87) with statistically similar thresholds (C88-C92). This selective effect is a key finding that distinguishes the mechanisms of poke vs stretch activation. Sample sizes are adequate and electrode resistances were controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C130"
+    ],
+    "result": "The OSCA1.2P77R mutation (swapping a divergent residue with OSCA3.1) had no effect on poke response, suggesting the difference in poke sensitivity between OSCA1.2 and OSCA3.1 is not due to the AH sequence itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C130 present a control experiment testing whether a specific sequence difference in the AH accounts for functional differences. The negative result (Figure 2\u2014figure supplement 3) is informative and supports the interpretation that the AH's amphipathic properties, rather than specific sequence, are critical for poke responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "OSCA3.1 can be activated by poking in a few cases (3/10 cells vs 6/6 for OSCA1.2), with a higher but not statistically significant apparent threshold (13.8\u00b10.9 \u00b5m vs 10.4\u00b11.2 \u00b5m). The poking stimulus can activate OSCA3.1 but the required intensity is close to the cell rupture point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C101 report occasional poke activation of OSCA3.1. However, the very low response rate (3/10) and small sample size (N=3 for threshold) make it difficult to draw strong conclusions. The authors appropriately note the lack of statistical significance (C98) and acknowledge the limitation that the threshold is near rupture (C101). This result is uncertain due to insufficient statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C129",
+      "C137"
+    ],
+    "result": "Replacing the BLD of OSCA1.2 with that from OSCA3.1 produced similar MA currents in both poke and stretch assays, with only a slightly stronger displacement stimulus required for poke activation. This suggests the BLD is not solely responsible for poke activation but plays a role in force-induced gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 describe the BLD chimera experiment. The results show the BLD swap has minimal effect on poke (C106) and no effect on stretch (C106), suggesting it's not the primary determinant of poke sensitivity (C107). However, the slight increase in apparent threshold (Figure 3b) and evolutionary coupling evidence (C133-C137) support a modulatory role. The conclusion is appropriately nuanced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C128",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The double mutant OSCA1.2K435I/K536I (replacing lysines with isoleucines at the pore fenestration) responded poorly to poking (1/20 cells) but showed normal stretch-activated currents with similar thresholds to WT. This demonstrates that lipid-interacting residues at the fenestration selectively impair poke responses without affecting stretch activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C123 present a second set of mutations targeting lipid-interacting residues. The dramatic loss of poke responsiveness (1/20 cells, C118) with preserved stretch activation (C119-C122) parallels the AH mutation results. The control showing normal SAC Imax (C119) rules out expression issues. The conclusion about selective impairment (C123) is well-supported and represents a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C37",
+      "C38",
+      "C131",
+      "C148",
+      "C149",
+      "C151",
+      "C153",
+      "C154"
+    ],
+    "result": "Structure-function analyses reveal selective disruption of poke-activated currents without affecting stretch-activated currents through mutations in the amphipathic helix and lipid-interacting residues. These features may serve to tune responses to different mechanical stimuli and represent potential sources of functional diversity within the OSCA/TMEM63 family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C37-C38, C131, C148-C149, C151, C153-C154 synthesize the main findings. The selective disruption of poke vs stretch responses is consistently demonstrated across two independent sets of mutations (AH and fenestration residues). The interpretation that these features tune responses to different stimuli (C149, C153) is supported by the differential effects. The proposal that this represents functional diversity (C12, C154) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Evolutionary coupling analysis suggests three potential salt bridges between the BLD and TM6b (R/K257-E557, E260-R553, R/K261-E/D554). Chimera studies with TMEM63A and monomeric OSCA1.2 mutants support a role for the BLD in force-induced gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 cite recent work on evolutionary coupling and chimera studies. While these are cited results rather than data from the current study, they provide important context for interpreting the BLD chimera results. The integration of these findings with the current data (C137) strengthens the conclusion about BLD involvement in mechanogating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The structure of OSCA3.1 exhibits an open fenestration where lipids are expected to populate, similar to OSCA1.2. Loss of positive charges may weaken lipid-residue interactions, potentially decreasing tension generated by lipids upon mechanical stimulus and increasing the force needed to open the channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C146 propose a mechanistic model for how lipid interactions affect gating. While the structural observations (C138) and comparisons to other channels (C143) are supported, the mechanistic proposals (C144-C146) are speculative. The authors appropriately use cautious language ('may weaken', 'could decrease'), but these hypotheses require further testing, such as MD simulations or direct lipid manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "The membrane of plant cells contains a different lipid composition than HEK293 cells, which may alter how OSCA channels respond to physiological stimuli in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C147 is a well-established fact about lipid composition differences between plant and mammalian cells. This is an important caveat for interpreting the functional studies, as the authors appropriately acknowledge that the heterologous expression system may not fully recapitulate native channel behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "Polymodal activation mechanisms have been reported for PIEZO2, where mutagenesis revealed differential effects on poking and stretch responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C150 cites recent work on PIEZO2 showing similar polymodal activation. This is a relevant comparison that supports the broader significance of the OSCA findings, demonstrating that differential mechanosensing mechanisms may be a general feature of MA channels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C152"
+    ],
+    "result": "The participation of residues from TM4 and TM6 hints at further similarities with the TMEM16 family, but the extent is unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C152 notes structural similarities between OSCA and TMEM16 families regarding TM4 and TM6 involvement in gating. This is appropriately presented as speculative ('hints at') and acknowledges the uncertainty. The comparison is reasonable given the structural homology but requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

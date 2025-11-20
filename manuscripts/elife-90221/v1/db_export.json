@@ -1,0 +1,2461 @@
+{
+  "submission": {
+    "id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:06:32.233141Z",
+    "updated_at": "2025-11-20T20:06:32.233141Z"
+  },
+  "content": [
+    {
+      "id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "content_type": "manuscript",
+      "content_text": "# BRAIDing receptors for cell-specific targeting\n\n## Authors\n\n- Hui Chen<sup>1</sup>\n- Sung-Jin Lee<sup>1</sup>\n- Ryan Li<sup>1</sup>\n- Asmiti Sura<sup>1</sup>\n- Nicholas Suen<sup>1</sup>\n- Archana Dilip<sup>1</sup>\n- Yan Pomogov<sup>1</sup>\n- Meghah Vuppalapaty<sup>1</sup>\n- Timothy T Suen<sup>1</sup>\n- Chenggang Lu<sup>1</sup>\n- Yorick Post<sup>1</sup>\n- Yang Li<sup>1</sup> ([ORCID: 0000-0002-7134-5685](https://orcid.org/0000-0002-7134-5685)) \u2020\n\n### Affiliations\n\n1. Surrozen Inc South San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSystemic toxicity is a major challenge in the development of therapeutics. Consequently, cell-type-specific targeting is needed to improve on-target efficacy while reducing off-target toxicity. Here, we describe a cell-targeting system we have termed BRAID (BRidged Activation by Intra/intermolecular Division) whereby an active molecule is divided into two inactive or less active parts that are subsequently brought together via a so-called \u2018bridging receptor\u2019 on the target cell. This concept was validated using the WNT/\u03b2-catenin signaling system, demonstrating that a multivalent WNT agonist molecule divided into two inactive components assembled from different epitopes via the hepatocyte receptor \u03b2Klotho induces signaling specifically on hepatocytes. These data provide proof of concept for this cell-specific targeting strategy, and in principle, this may also allow activation of multiple signaling pathways where desirable. This approach has broad application potential for other receptor systems.\n\n## Introduction\n\nReceptor-mediated signaling is fundamental to cell\u2013cell communication, regulation of cellular growth/differentiation, maintenance of tissue function/homeostasis, and regulation of injury repair. When a cell-specific response is necessary, nature achieves that selectivity through various mechanisms such as cell-specific receptors, ligand gradient, short-range ligands, and direct cell\u2013cell contacts. However, most ligand receptor systems have pleiotropic effects due to the broad expressions of receptors on multiple cell types. While this may be important when a coordinated response in multiple cell types or tissues is needed, achieving cell-specific signaling to avoid systemic toxicity or off-target effects remains a major challenge in both research and therapeutic development. In addition, it is often difficult to identify differences between normal and diseased cells for a particular signaling pathway of interest, making it challenging, if not impossible, to modulate that signaling pathway selectively in either diseased or normal cells. Therefore, methods for effective cell targeting are needed for both research and therapeutic development.\n\nCompared with cell-targeted antagonists, cell-targeted agonists are more complex to design. In addition to cell targeting, agonist molecules are also subject to stringent requirements in terms of affinity, epitope, and geometry (Dickopf et al., 2020). Previous efforts to engineer cell-selective growth factors and cytokines have employed various approaches, such as the \u2018chimeric activators\u2019 concept (Cironi et al., 2008), where a cell-targeting arm (\u2018targeting element\u2019) is attached to either the wild-type ligand or a mutated ligand with reduced affinity toward the signaling receptor (\u2018activity element\u2019). Such an approach has been applied to several signaling pathways, such as those based on erythropoietin (Taylor et al., 2010; Burrill et al., 2016), interferons (Cironi et al., 2008; Garcin et al., 2014), and interleukin-2 (Ghasemi et al., 2016; Lazear et al., 2017). While some selectivity has been achieved by attaching a targeting arm to a wild-type ligand, up to 1000-fold selectivity has been achieved using a mutated ligand (Garcin et al., 2014).\n\nThe \u2018chimeric activators\u2019 approach is based on the cooperativity concept, where mutations that weaken the affinity of a natural ligand to its receptor are selected as the \u2018activity element.\u2019 Due to this weakened affinity, the mutant \u2018activity element\u2019 alone displays a significantly right-shifted dose\u2013response curve (i.e., lower potency) in an activity assay, for both target and non-target cells that express the signaling receptors. When the \u2018targeting element\u2019 is tethered to the mutant \u2018activity element,\u2019 the \u2018targeting element\u2019 helps increase the local concentration of the mutant \u2018activity element\u2019 on the desired target cell surface. This combination drives engagement of the signaling receptor and subsequent intracellular signaling activation, left-shifting the dose\u2013response curve (i.e., higher potency) on the target cell and creating a separation between target vs. non-target cells. While conceptually elegant, identifying the appropriate mutations that achieve the precise reduction of affinity to be rescued by the \u2018targeting element\u2019 is not trivial. In some cases, while the potency could be rescued, the maximal signaling strength remained compromised, resulting in a partial agonist. In addition, the selectivity is not exquisite, with most literature examples reporting a modest tenfold separation between target vs. non-target cells. Additional strategies that show promising results have also been reported; for example, inactive pro-drugs that require tumor-associated proteases for activation (Puskas et al., 2011; Skrombolas et al., 2019); complementation of two inactive components via targeted assembly in trans (Banaszek et al., 2019) and passive enrichment on the target cell leading to colocalization of monomeric subunits (Mock et al., 2020) or inactive \u2018split\u2019 components (Quijano-Rubio et al., 2023).\n\nHere, we present a novel concept to achieve cell targeting for ligand/receptor systems that involves multicomponent receptor complexes, where a productive signaling competent receptor complex is directly assembled through a \u2018bridging element.\u2019 We have tested this concept using the WNT/\u03b2-catenin signaling pathway as a model system.\n\nThe WNT pathway is highly conserved across species and crucial for embryonic development as well as adult tissue homeostasis and regeneration (Nusse and Clevers, 2017). WNT-induced signaling through \u03b2-catenin stabilization has been widely studied and is achieved by the ligand binding to frizzled (FZD) and the low-density lipoprotein receptor-related protein (LRP) families of receptors. There are 19 mammalian WNTs, 10 FZDs (FZD1-10), and 2 LRPs (LRP5 and LRP6). WNTs are highly hydrophobic due to lipidation, which is required for them to function, and they are promiscuous, capable of binding and activating multiple FZD and LRP pairs (Janda et al., 2012; Kadowaki et al., 1996; Dijksterhuis et al., 2015). Elucidating the functions of individual FZDs in tissues has been hampered by difficulties in producing the ligands and their lack of receptor and tissue selectivity. Recent breakthroughs in the development of WNT-mimetic molecules have largely resolved the production and receptor-specificity challenges (Janda et al., 2017; Chen et al., 2020; Tao et al., 2019; Miao et al., 2020). Although tissue selectivity has been partly achieved by tissue injury (damaged tissues seem more sensitive to WNTs; Xie et al., 2022), the ability to target WNTs to specific cells and tissues would be a significant technical and therapeutic advancement.\n\nThe WNT mimetics reported so far are all bispecific and can simultaneously bind to FZDs and LRPs, and their optimal stoichiometry (at least for the antibody-based molecules) are tetravalent bispecific (2:2 format), requiring two FZD binders and two LRP binders in the same molecule to achieve efficient signaling (Tao et al., 2019; Chen et al., 2020). We have taken advantage of the fact that two FZD binders alone and two LRP binders alone do not signal. Cell specificity may be achieved by attaching a \u2018targeting element\u2019 (capable of binding to another cell surface receptor, called a bridging receptor here) to these two inactive molecules. Signaling-competent receptor complexes consisting of two FZDs and two LRPs could then be assembled via the bridging receptor on the target cell surface. This approach reduces or eliminates the need to mutate and reduce the affinity of the \u2018active elements\u2019 toward the signaling receptor, and creates a highly cell-specific activation of the signaling pathway as the individual components are inactive. A detailed proof-of-concept study based on the WNT/\u03b2-catenin signaling pathway is presented herein. We have termed the use of cell-targeted WNT mimetics SWIFT (Splitting of WNT to Induce Functional Targeting).\n\n## Results\n\n### Conceptual design of cell-targeted activators via a bridging receptor\n\nFigure 1A shows one optimized design for a WNT mimetic that is a tetravalent bispecific antibody-based molecule. It is important to note that efficient WNT/\u03b2-catenin signaling requires two FZD-binding domains and two LRP-binding domains in one molecule (Chen et al., 2020). Figure 1B shows a cell-targeting approach using the bridging receptor concept, that is, the SWIFT approach. The first step of this concept is to split the active molecule into inactive components. In the case of the tetravalent bispecific WNT mimetic, the active molecule is split into one molecule having two FZD-binding arms and a second molecule having two LRP-binding arms. These two inactive components are then each tethered to a different \u2018bridging element\u2019 binding to a different epitope on the same bridging receptor (the tethered molecules named \u03b1LRP-\u03b1BR-1 and \u03b1FZD-\u03b1BR-2 in Figure 1B, top two panels). \u03b1LRP-\u03b1BR-1 and \u03b1FZD-\u03b1BR-2 are each inactive on non-targeting cells where the bridging receptor is not expressed (Figure 1B, top panels). On targeting cells where the bridging receptor is expressed, FZD and LRP are then assembled or brought into proximity with one another by \u03b1LRP-\u03b1BR-1 and \u03b1FZD-\u03b1BR-2 via the bridging receptor, recreating the signaling-competent receptor complex (Figure 1B, bottom panel).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90221/elife-90221-fig1-v1.jpg)\n\n**Figure 1.:** (A) Efficient WNT/\u03b2-catenin signaling requires two frizzled (FZD)-binding domains and two lipoprotein receptor-related protein (LRP)-binding domains in one WNT mimetic molecule. (B) WNT mimetic molecule is split into one molecule having two FZD-binding arms (2:0) and a second molecule having two LRP-binding arms (0:2) and then each tethered to a different \u2018bridging element\u2019 binding to a different epitope on the same bridging receptor (named \u03b1LRP-\u03b1BR-1 and \u03b1FZD-\u03b1BR-2) (top two panels). On target cells where the bridging receptor is expressed, FZD and LRP are then assembled by \u03b1LRP-\u03b1BR-1 and \u03b1FZD-\u03b1BR-2 via the bridging receptor, recreating the signaling-competent receptor complexes (bottom panel). Arrows indicate activation of WNT/\u03b2-catenin signaling.\n\n### Proof of concept with the targeted WNT mimetic molecules\n\nTo test the concept shown in Figure 1B, we selected the \u03b2Klotho and endocrine fibroblast growth factor 21 (FGF21) ligand system as the bridging receptor system. FGF21 is an endocrine hormone produced by the liver that regulates metabolic homeostasis (BonDurant and Potthoff, 2018). FGF21 signals through FGFR1c, FGFR2c, and FGFR3c in the presence of co-receptor \u03b2Klotho (Zhang and Li, 2015). The binding of FGF21 to the receptor complex is primarily driven by its affinity toward \u03b2Klotho via its C-terminal domain (Lee et al., 2018; Shi et al., 2018), while its N-terminal domain is important for FGFR interaction and signaling (Yie et al., 2012; Micanovic et al., 2009). \u03b2Klotho-binding antibodies that could induce \u03b2Klotho/FGFR signaling have also been identified, and one particular agonistic \u03b2Klotho antibody binds to a different epitope on \u03b2Klotho from FGF21 and does not compete with FGF21 binding (Min et al., 2018). Therefore, the following bridging receptor (\u03b2Klotho)-binding elements were selected to test the cell-targeting SWIFT concept:\n\nThe FZD- and LRP-binding domains selected were F (binds FZD1,2,5,7,8) and L (binds LRP6), previously termed F1 and L2, respectively (Chen et al., 2020). Graphic representations of the binders and their various combinations are shown in Figure 2A\u2013C.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90221/elife-90221-fig2-v1.jpg)\n\n**Figure 2.:** (A) Elements that are used in the split molecules. The LRP6 binder element is in scFv format; frizzled (FZD) binder is in IgG1 format; both \u03b1GFP IgG1 and \u03b1GFP scFv are used for assembly of the negative control molecules. Two types of \u03b2Klotho binders are used. Binder#1, 39F7 IgG1, a \u03b2Klotho monoclonal antibody; Binder#2, FGF21FL and different deletion variants. (B) Assembled SWIFT molecules. (C) Assembled negative control molecules. (D\u2013G) Bindings of various F-FGF21 fusion proteins to FZD7 and \u03b2Klotho. Bindings of FZD7 and \u03b2-Klotho to F-FGF21FL (D), F-FGF21\u0394N (E), F-FGF21\u0394C (F), or F-FGF21\u0394N\u0394C (G) were determined by Octet. (H\u2013J) Binding of LRP6 and \u03b2Klotho to L-39F7 (H), \u03b1GFP-39F7 (I), or L-\u03b1GFP (J) were determined by Octet. Mean KD values were calculated for the binding curves with global fits (red dotted lines) using a 1:1 Langmuir binding model. (K) Step bindings of FZD7 and \u03b2Klotho to various F-FGF21 fusion proteins. Sequential binding of F-FGF21FL (blue sensorgram), F-FGF21\u0394N (red sensorgram), F-FGF21\u0394C (light-blue sensorgram), or F-FGF21\u0394N\u0394C (green sensorgram), followed by FZD7 CRD, then followed by addition of \u03b2Klotho on Octet shows simultaneous engagement of both FZD7 and \u03b2Klotho to the indicated F-FGF21 proteins. Sensorgrams for FZD7 and \u03b2Klotho area (red dotted box) are enlarged at the right. (L) Step binding of LRP6 and \u03b2Klotho to L-39F7 and its control proteins. Sequential binding L-39F7 (blue sensorgram), L-\u03b1GFP (light-blue sensorgram), \u03b1GFP-39F7 (red sensorgram), or 39F7 IgG (green sensorgram), followed by LRP6E3E4, then followed by addition of \u03b2Klotho on Octet shows simultaneous engagement of both LRP6 and \u03b2Klotho to the indicated L-39F7 and its control proteins. Sensorgrams for LRP6 and \u03b2Klotho area (red dotted box) are enlarged on the right.\n\nTo test the concept in Figure 1B, the FZD binder (F) was combined with two versions of the bridging receptor (\u03b2Klotho) binder, F-FGF21FL and F-FGF21\u2206N (Figure 2B), and the LRP binder (L) was combined with the other bridging receptor (\u03b2Klotho) binder 39F7 as L-39F7 (Figure 2B).\n\nWe first confirmed the binding of the various fusion molecules shown in Figure 2B and C to their respective target proteins. All F- and L-containing molecules bind to either FZD7 or LRP6E3E4 fragments as expected (Figure 2D\u2013J). FGF21FL, FGF21\u0394N, and 39F7 bind to \u03b2Klotho, while FGF21 without its C-terminal domain (FGF21\u2206C and FGF21\u2206N\u2206C) does not bind to \u03b2Klotho (Figure 2D\u2013J). Therefore, the molecule formats of the various fusion proteins have no significant impact on the individual element\u2019s binding to their target receptors.\n\nNext, we performed Octet-binding assays to assess whether F-FGF21 or L-39F7 allow simultaneous bindings to their target receptors. Sequential additions of the various F-FGF21 fusion molecules to the sensor surface, followed by FZD7 CRD and then \u03b2Klotho show that a stepwise increase in binding signal is observed with FZD7 CRD, and that F-FGF21FL and F-FGF21\u0394N show additional binding to \u03b2Klotho but not F-FGF21\u0394C nor F-FGF21\u0394N\u0394C (Figure 2K). This suggests that F-FGF21FL or F-FGF21\u0394N are capable of simultaneous binding to both FZD7 and \u03b2Klotho receptors.\n\nSequential additions of the various L, 39F7, and \u03b1GFP (a negative control antibody) combinations to the sensor surface followed by LRP6E3E4 and then \u03b2Klotho revealed a stepwise increase in binding signal with L-39F7 but not the other negative control molecules, \u03b1GFP-39F7 and L-\u03b1GFP (Figure 2L). This suggests that L-39F7 can simultaneously bind to both LRP6 and \u03b2Klotho receptors.\n\nThe ability of this set of molecules to activate WNT/\u03b2-catenin signaling was assessed in WNT-responsive Huh7 and HEK293 Super TOP-FLASH (STF) reporter cells (Zhang et al., 2020). As shown in Figure 3B, the combination of F-FGF21FL or F-FGF21\u2206N with L-39F7 resulted in WNT/\u03b2-catenin signaling in Huh7 cells, a liver cell line that expresses the bridging receptor \u03b2Klotho (KLB), but not in HEK293 cells, where \u03b2Klotho is not expressed (Figure 3A and G). This signaling depends on the presence of both FZD- and LRP-binding arms and the ability to bind the bridging receptor, as the removal of the LRP-binding arm L from L-39F7 or inactivation of \u03b2Klotho-binding arms (use of FGF21\u2206C or FGF21\u2206N\u2206C, or the replacement of 39F7 with \u03b1GFP) removes activity in both cells (Figure 3A\u2013F). We further examined the target cell-selective WNT signal activation in a two-layer cell culture system as depicted in Figure 3H. In this co-culture system, two different cell types are separated by a permeable membrane, and the two different cell lines are stimulated with the same treatment medium in the same vessel. The combination of F-FGF21\u0394N and L-39F7 showed a robust increase in WNT/\u03b2-catenin signaling in Huh7 cells as compared to the negative control mixture of F-FGF21\u0394N\u0394C and L-39F7. The target cell-specific WNT/\u03b2-catenin signaling activation was not detected in HEK293 cells (Figure 3H). Plating cells in the upper or lower level of the co-culture system did not affect specificity or potency. These results provide experimental evidence supporting the SWIFT concept presented in Figure 1B.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90221/elife-90221-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013F) Various F-FGF21 fusion proteins in the presence of L-39F7 in HEK293 STF cells (A) and Huh7 STF cells (B); various F-FGF21 fusion proteins in the presence of L-\u03b1GFP in HEK293 STF cells (C) and Huh7 STF cells (D); and various F-FGF21 fusion proteins in the presence of \u03b1GFP-39F7 in HEK293 STF cells (E) and Huh7 STF cells (F). (G) Expression of bridging receptor \u03b2Klotho (KLB) in HEK293 and Huh7 cells normalized to ACTB, relative to HEK293 expression. (H) STF responses in a two-layer cell culture system after 16 hr treatment with 10 nM of indicated molecules. Data are representative of three independent experiments performed in triplicate and are shown as mean \u00b1 SD. *p<0.05, ***p\u22640.001 (unpaired t-test).\n\n### Validation of liver-specific targeting with primary human cells\n\nTo test the potency of these molecules in cells directly derived from the tissue of interest, we selected primary human hepatocytes and human small intestinal organoids (Figure 4A). These cultures better represent the physiological and transcriptional characteristics of the liver and intestine compared to cell lines. As expected, primary human hepatocytes express bridging receptor \u03b2Klotho, while human small intestinal cells do not (Figure 4B). The combination of F-FGF21\u2206N and L-39F7 in human hepatocytes causes a significant increase in the expression of WNT target gene AXIN2 after 24 hr compared with the control (Figure 4C). The combination with the negative control F-FGF21\u2206N\u2206C does not upregulate AXIN2. The same panel of molecules does not elicit any target gene expression in human small intestinal cells, confirming the need for bridging receptor expression for activity (Figure 4D). These results in primary cells support the feasibility of this cell-specific targeting strategy, and we expected them to be predictive of tissue specific in vivo responses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90221/elife-90221-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative images of primary human hepatocyte cultures in 2D or human small intestinal organoids. Scale bar: 200 \u00b5m. (B) Expression of bridging receptor \u03b2Klotho (KLB) in hepatocytes or small intestinal cells. (C) WNT target gene AXIN2 expression normalized to control treatment after 24 hr treatment with 10 nM of the indicated molecules in human hepatocytes. (D) WNT target gene AXIN2 expression normalized to control treatment after 24 hr treatment with 10 nM of the indicated molecules in human small intestinal organoids. *p<0.05 (unpaired t-test), ***p\u22640.001 (one-way ANOVA), each data point represents an independent experiment performed in duplicate.\n\n### Discussion\n\nA major challenge in the development of new therapeutics is the effective targeting of drugs toward a desired cell type. Due to the pleiotropic expression and actions of most drug targets in many cell types/organs and the lack of differentiation between diseased vs. normal cells, many drugs exhibit either dose-limiting toxicity or act on multiple cell types of opposing activity, rendering them less effective. Therefore, developing effective cell-targeting methods would allow reduced systemic toxicity and higher efficacy for more effective treatments.\n\nHerein, we have described a novel cell-targeting approach termed BRAID whereby an active drug molecule is divided into inactive parts that are assembled via a bridging receptor specific to the target cell. Although complementation and splitting a molecule into inactive parts have been explored previously, the novelty of our approach is that there is no requirement for the two split inactive components to interact with one another. Therefore, it does not require cooperative interactions between the split components and receptors for activity. In our approach, assembly of the signaling complex is achieved by simultaneous binding of the two divided inactive components through a common bridging receptor (Figure 1B).\n\nWe tested this concept using the WNT/\u03b2-catenin signaling pathway as a model system. This signaling system requires two receptors, FZD and LRP. The present authors (and others) have generated antibody-based WNT mimetic molecules by linking FZD binders and LRP binders in a single molecule to activate the FZD/LRP receptor complex (Chen et al., 2020; Janda et al., 2017; Tao et al., 2019). To explore the BRAID concept with the WNT signaling receptors, we first divided a tetravalent bispecific WNT mimetic into two components, one containing two FZD-binding domains and the other containing two LRP-binding domains. To each of these two inactive components, a moiety that binds to the bridging receptor, in this case \u03b2Klotho (predominantly expressed in hepatocytes), was attached. The two bridging receptor-binding moieties are FGF21 and 39F7, which bind to non-overlapping regions on \u03b2Klotho (Min et al., 2018). As demonstrated both on WNT-responsive reporter cell lines as well as on primary human hepatocytes and human intestinal organoids, target-cell-specific WNT signaling is indeed observed when the two inactive components are combined. The signaling only occurs on the target-cell hepatocytes and not on HEK293 nor intestinal cells. Furthermore, activity depends on the presence of \u03b2Klotho-binding domains on the two inactive components, as removal of \u03b2Klotho-binding ability from either the FZD or the LRP half of the molecule (or having \u03b2Klotho but not LRP binding) resulted in inactive combinations (Figures 3 and 4).\n\nThese results provided compelling evidence for this novel cell-targeting concept. We envision that other potential ways of dividing the WNT or WNT-mimetic molecules, including different geometries, FZD/LRP stoichiometry ratios, and linker lengths, or having one FZD- and LRP-binding arm in each component, may also result in active targeted WNT mimetics. We have termed this cell-targeted WNT system SWIFT. Our studies here focused on the WNT signaling pathway, and \u03b2Klotho/FGF21/39F7 receptor ligand system was used to illustrate the BRAID/SWIFT cell-targeting concept. Whether these molecules may additionally modulate endocrine FGF signaling and metabolic homeostasis could be the subject of future studies.\n\nWNT plays important roles in many tissues during development as well as in adult tissue homeostasis and injury repair, and dysregulated WNT signaling results in various human disease conditions (Nusse and Clevers, 2017). Accordingly, SWIFT offers the opportunity to specifically target WNT activation in desired cell types, facilitating both academic research and the development of novel therapeutics.\n\nIn conclusion, we have described a novel cell-targeting approach that may be broadly applied to various signaling systems. This approach, in principle, also allows action upon a combination of different signaling pathways simultaneously, potentially providing additive or synergistic effects.\n\n### Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Expi293F cells</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>A14527</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK293 STF</td>\n      <td>https://doi.org/10.1371/journal.pone.0009370</td>\n      <td></td>\n      <td>Cells containing a luciferase gene controlled by a WNT-responsive promoter</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>Huh7 STF</td>\n      <td>https://doi.org/10.1038/s41598-020-70912-3</td>\n      <td></td>\n      <td>Cells containing a luciferase gene controlled by a WNT-responsive promoter</td>\n    </tr>\n    <tr>\n      <td>Biological sample (H. sapiens)</td>\n      <td>Primary hepatocytes</td>\n      <td>BioIVT</td>\n      <td>X008001-P</td>\n      <td>10-Donor Human Cryoplateable</td>\n    </tr>\n    <tr>\n      <td>Biological sample (H. sapiens)</td>\n      <td>Human small intestinal organoids</td>\n      <td>Kuo Lab Stanford</td>\n      <td>NA</td>\n      <td>Primary cell derived 3D organoid culture</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human \u03b2Klotho</td>\n      <td>Fisher Scientific</td>\n      <td>Cat# 5889KB-050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human FZD7 CRD</td>\n      <td>https://doi.org/10.1038/s41467-021-23374-8</td>\n      <td></td>\n      <td>Produced in Expi293F cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human LRP6 E3E4</td>\n      <td>https://doi.org/10.1016/j.chembiol.2020.02.009</td>\n      <td></td>\n      <td>Produced in Expi293F cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Fc-R-spondin 2</td>\n      <td>https://doi.org/10.1038/s41598-020-70912-3</td>\n      <td></td>\n      <td>Produced in Expi293F cells</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant Human EGF</td>\n      <td>PeproTech</td>\n      <td>Cat# AF-100-15</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Recombinant Human Noggin</td>\n      <td>PeproTech</td>\n      <td>Cat# 120-10C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Human Gastrin I</td>\n      <td>Tocris</td>\n      <td>Cat# 30061</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Luciferase Assay System</td>\n      <td>Promega</td>\n      <td>E1501</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IWP2</td>\n      <td>Tocris Bioscience</td>\n      <td>Cat# 3533</td>\n      <td>Porcupine inhibitor</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>B27</td>\n      <td>Thermo Scientific</td>\n      <td>Cat# 17504044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N2</td>\n      <td>Thermo Scientific</td>\n      <td>Cat# 17502048</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-Acetylcysteine</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# A9165</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Nicotinamide</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# N0636</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>A83-01</td>\n      <td>Tocris</td>\n      <td>Cat# 2939</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SB202190</td>\n      <td>Tocris</td>\n      <td>Cat# 126410</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Octet Data Analysis 9.0</td>\n      <td>Sartorius</td>\n      <td>https://www.sartorius.com/en/products/protein-analysis/octet-bli-detection/octet-systems-software</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>GraphPad</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Matrigel Matrix</td>\n      <td>Corning</td>\n      <td>CB40230C</td>\n      <td>Extracellular matrix for 3D organoid growth and plate coating</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines\n\nExpi293F cells were grown in Expi293 Expression Medium (Thermo Fisher Scientific) at 37\u00b0C with humidified atmosphere of 8% CO2 in air on an orbital shaker. HEK293 STF cells were maintained in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) supplemented with 10% fetal bovine serum (Fisher Scientific) at 37\u00b0C in a 5% CO2 environment. Huh7 STF cells were maintained in DMEM supplemented with 10% fetal bovine serum and non-essential amino acids (Fisher Scientific) at 37\u00b0C in a 5% CO2 environment. Cell line authentications were performed by the vendor or the source, mycoplasma testing by PCR Mycoplasma detection kit.\n\n### Molecular cloning\n\nAll constructs were cloned into pcDNA3.1(+) mammalian expression vector (Thermo Fisher). The L-scFv binder was constructed by fusing the heavy-chain variable region (VH) to the N-terminus of the light-chain variable (VL) region with a 15-mer linker (GSAASGSSGGSSSGA). The anti-GFP scFv binder was constructed by fusing the VH to the N-terminus of the VL with a 15-mer-linker (GGGGSGGGGSGGGGS). All human IgG1 constructs contain the L234A/L235A/P329G mutations (LALAPG) in Fc domain to eliminate effector function (Lo et al., 2017). For generating the constructs of scFv-39F7 IgG1, the scFv binder was fused to the N-terminus of 39F7 LC with a 5-mer-linker GSGSG. To generate the construct of L-\u03b1GFP IgG1, the L-scFv was fused to the N-terminus of \u03b1GFP LC with a 15-mer-linker GSGSGGSGSGGSSGG. To generate the FGF21-variant-appended F IgG molecules, FGF21 variants were fused to the C-terminus of the LC of F IgG1 (LALAPG) with a 5-mer-linker (GGSGS). FGF21FL has the mature protein sequence (H29-S209) with RGE mutations in the C-terminus (Stanislaus et al., 2017); FGF21\u2206N is the sequence of FGF21FL with the deletion of the N-terminus H29\u2013R45; FGF21\u2206C is the sequence of FGF21FL with the deletion of the C-terminus S190\u2013S209; FGF21\u2206N\u2206C is the sequence of FGF21FL with the deletion of both the N-terminal H29\u2013R45 and the C-terminal S190\u2013S209.\n\n### Protein production\n\nAll recombinant proteins were produced in Expi293F cells (Thermo Fisher Scientific) by transient transfection. The proteins were first purified using CaptivA Protein A affinity resin (Repligen), unless otherwise specified. All proteins were further purified with Superdex 200 Increase 10/300 GL (GE Healthcare Life Sciences) size-exclusion chromatography (SEC) using 1\u00d7 HBS buffer (20 mM HEPES pH 7.4, 150 mM NaCl). The proteins were subsequently examined by SDS-polyacrylamide electrophoresis and estimated to have >90% purity.\n\n### STF assays\n\nWNT signaling activity was measured using HEK293 and Huh7 cells containing a luciferase gene controlled by a WNT-responsive promoter (STF assay) as previously reported by Zhang et al., 2020. In brief, cells were seeded at a density of 10,000 per well in 96-well plates. For two-layer cell culture, either Huh7 STF or HEK293 STF cells were seeded into tissue culture-treated 6.5-mm transwell inserts (top well, Corning) with the density of 20,000. The transwell inserts were then placed into wells in a 24-well plate where HEK293 STF or Huh7 STF cells were plated with the density of 116,000 (bottom well), respectively. Then, 24 hr later, indicated WNT signaling activators were added in the presence of 3 \u03bcM IWP2 to inhibit the production of endogenous WNTs and the presence of 20 nM Fc-R-Spodin 2. Cells were lysed with Luciferase Cell Culture Lysis Reagent (Promega), and luciferase activity was measured with Luciferase Assay System (Promega) using vendor-suggested procedures.\n\n### Affinity measurement and step-binding assay\n\nBinding kinetics of F-FGF21 series (F-FGF21FL, F-FGF21\u0394N, F-FGF21\u0394C, and F-FGF21\u0394N\u0394C) to human FZD7 CRD and \u03b2Klotho (Fisher Scientific) or L-39F7 series (L-39F7, \u03b1GFP-39F7, and L-\u03b1GFP) to human LRP6E3E4 and \u03b2Klotho, respectively, were determined by bio-layer interferometry (BLI) using an Octet Red 96 (PALL ForteBio) instrument at 30\u00b0C and 1000 rpm with AHC biosensors (Sartorius). Various F-FGF21 or L-39F7 proteins were diluted to 50 nM in the running buffer and captured by the AHC biosensor, followed by dipping into wells containing the FZD7 CRD, LRP6E3E4, and \u03b2Klotho at different concentrations in a running buffer or into a well with only the running buffer as a reference channel. The dissociation of the interaction was followed with the running buffer. The monovalent KD for each binder was calculated using Octet System software, based on fitting to a 1:1 binding model.\n\nStep-binding assays were performed with the BLI using the Octet Red 96 instrument at 30\u00b0C and 1000 rpm with AHC biosensors. Various F-FGF21 or L-39F7 proteins were diluted to 50 nM in the running buffer and captured by the AHC biosensor, followed by dipping into wells containing the 100 nM FZD7 CRD or 100 nM LRP6E3E4. The sensor chips next moved into 150 nM \u03b2Klothos containing 100 nM FZD7 CRD or containing 100 nM LRP6E3E4 to check the additional bindings of \u03b2-Klotho. Sensorgram slopes were compared for \u03b2Klotho bindings.\n\n### Primary human cells\n\nHuman hepatocytes were purchased from BioIVT (10-donor pooled cryoplateable X008001-P) and cultured in LONZA hepatocyte maintenance medium (CC-3198). Briefly, plastic culture plates were coated with 20% Matrigel Matrix (CB40230C) and cells were plated in plating medium (BioIVT Z990003). After 4 hr, the medium was changed to maintenance medium and refreshed every day for 3 d prior to the 24 hr experiment.\n\nHuman small intestinal organoids were kindly supplied by the Calvin Kuo Lab at Stanford. Organoids were maintained and expanded as previously described (Sato et al., 2011). Briefly, adapted expansion medium contained advanced DMEM, 10 mM HEPES, 1\u00d7 GlutaMAX, 1\u00d7 penicillin\u2013streptomycin, 1\u00d7 B27, 1\u00d7 N2, 1.25 mM N-acetylcysteine, 10 mM nicotinamide, 50 ng/mL recombinant human EGF, 50 ng/mL recombinant human Noggin, 20 nM R-Spondin 2, 0.1 nM L-F Wnt mimetic, 10 nM recombinant gastrin, 500 nM A83-01, and 10 \u03bcM SB202190.\n\nTreatment of molecules was done in the presence of 20 nM R-Spondin 2 for 24 hr at a concentration of 10 nM. After 24 hr, the cells were harvested and RNA collected for quantitative polymerase chain reaction (qPCR). Each experiment with both primary human hepatocytes and human small intestinal organoids was repeated three times.\n\n### qPCR analysis of gene expression\n\nRNAs from HEK293, Huh7 cells, or primary human cells were extracted using the QIAGEN RNeasy Micro Kit (QIAGEN). cDNA was produced using the SuperScript IV VILO cDNA Synthesis Kit (Thermo Fisher). \u03b2Klotho (KLB) RNA was quantified using Maxima SYBR Green qPCR master mix on a Bio-Rad CFX96 real-time PCR machine.\n\nCycle threshold (Ct) values were normalized to the expression of constitutive ACTINB RNA using the following oligomers: ACTB_F1: CTGGAACGGTGAAGGTGACA. ACTB_R1: AAGGGACTTCCTGTAACAATGCA. KLB_F1: ATCTAGTGGCTTGGCATGGG. KLB_R1:CCAAACTTTCGAGTGAGCCTTG. KLB_F2:CACTGAATCTGTTCTTAAGCCCG. KLB_R2: GGCGTTCCACACGTACAGA. KLB_F3: GGAGGTGCTGAAAGCATACCT. KLB_R3: TCTCTTCAGCCAGTTTGAATGC.\n\n### Materials availability statement\n\nAll unique/stable reagents generated in this study are available with a completed Materials Transfer Agreement.\n",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alan Talevi, National University of La Plata Argentina\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90221.3.sa0](https://doi.org/10.7554/eLife.90221.3.sa0)\n\nThis important study presents a new way to selectively activate a cell signaling pathway in a specific cell type by designer ligands that link signaling co-receptors to a marker specific to the target cells. Convincing experimental results demonstrate that the agonist molecules activate Wnt signaling in target cells expressing the marker as intended. More broadly, this concept could be used to induce Wnt signaling or another pathway initiated by co-receptor association in a cell type-specific manner. In vitro results in this study could be further strengthened by assessing the biological consequences of Wnt activation in target cells.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90221.3.sa1](https://doi.org/10.7554/eLife.90221.3.sa1)\n\nSummary: The goal of this study was to develop and validate novel molecules to selectively activate a cell signaling pathway, the Wnt pathway in this case, in target cells expressing a specific receptor. This was achieved through a two-component system that the authors call BRAID, where each component simultaneously binds the target cell-specific marker BKlotho and a Wnt co-receptor. These components, called SWIFT molecules, bring together the Wnt co-receptors LRP and FZD, activating the pathway specifically in cells that express BKlotho.\n\nResults presented in the study demonstrate the desired activity of SWIFT molecules; the binding assays support simultaneous association of SWIFT with BKlotho and a Wnt co-receptor, and the Wnt reporter and qPCR assays support pathway activation in cell lines and primary cells in a BKlotho-dependent manner. In the future, the BRAID approach could be applied to activate Wnt signaling or another pathway initiated by a co-receptor complex in a cell type-specific manner, and/or in a FZD subtype-specific manner to activate distinct branches of Wnt signaling.\n\nStrengths:\n\n\u2022 This study successfully demonstrates a novel way to activate Wnt signaling in target cells expressing a specific marker. Given the role of the Wnt signaling pathway in key processes such as cell proliferation and tissue renewal and the value of modulating cell signaling in a cell type-specific manner, the cell targeting system developed here holds great therapeutic and research potential. It will be curious to see whether the BRAID design can be applied to other cell surface markers for Wnt activation, or for activation of other signaling pathways that require co-receptor association.\n\n\u2022 Octet assay results show simultaneous binding of SWIFT molecules to both the Wnt co-receptor FZD/LRP and BKlotho, while negative control molecules without the FZD/LRP or BKlotho-binding module show neither receptor binding nor Wnt pathway activation. These results indicate that SWIFT molecules function through the intended mechanism.\n\n\u2022 Exposure of two cell types simultaneously exposed to the SWIFT molecules in 2-layer cell culture demonstrated the ability of the molecules to activate Wnt signaling in a cell type- and BKlotho expression-specific manner.\n\nWeaknesses:\n\n\u2022 The study does not address whether the targeted cells express FGFR1c/2c/3c and whether the FGF21 full length moiety or the 39F7 IgG moiety of SWIFT molecules could unintentionally activate FGF signaling in these cells.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90221.3.sa2](https://doi.org/10.7554/eLife.90221.3.sa2)\n\nSummary:\n\nThe study introduces BRAID, a novel approach for targeting drugs to specific cell types, addressing the challenges of pleiotropic drug actions. Unlike existing methods, this one involves breaking a protein drug molecule into inactive parts that are then put back together using a bridging receptor on the target cell. The individual components of this assembly are not required to be together, thereby affording it a degree of flexibility. The authors applied this idea to the WNT/-catenin signaling pathway by splitting a WNT mimic into two parts with FZD and LRP binding domains and bridging receptors. This combined method, which is called SWIFT, showed that WNT signaling was turned on in target cells, showing that cell-specific targeting is. The technique shows promise for the development of therapeutics, as it provides a way to more precisely target signaling pathways.\n\nThe authors have effectively elucidated their strategy through visually appealing diagrams, providing clear and thorough visual aids that facilitate comprehension of the concept. In addition, the authors have provided convincing evidence that the C-terminal region of FGF21 is essential for the binding process. Their meticulous and thorough presentation of experimental results emphasizes the significance of this specific binding domain and validates their findings.\n\nStrengths:\n\nBRAID, a novel cell targeting method, divides an active drug molecule into inactive components formed by a bridging receptor. This novel approach to cell-specific drug action may reduce systemic toxicity.\n\nThe SWIFT approach successfully targets cells in the WNT/\u03b2-catenin signaling pathway. The approach activates WNT signaling only in target cells (hepatocytes), proving its specificity.\n\nThe study indicates that the BRAID approach can target various signaling systems beyond WNT/\u03b2-catenin, indicating its versatility. Therapeutic development may benefit from this adaptability.\n\nWeaknesses:\n\nThe study shows the SWIFT approach works in vitro using cell lines, primary human hepatocytes, and human intestinal organoids, but it lacks in vivo animal model or clinical validation. I believe future studies will determine this aspect.\n\nThe success of SWIFT depends on the presence and expression of the bridging receptor (\u03b2Klotho) on target cells. The approach may fail if the target receptor is not expressed.\n",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ef2382a-a723-4ad5-9a46-7e4bc0d78758",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C1",
+      "claim": "Systemic toxicity is a major challenge in the development of therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic toxicity is a major challenge in the development of therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about therapeutic development challenges presented in the abstract without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "035c2573-b241-4a41-9c21-509f42e4002b",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C2",
+      "claim": "Cell-type-specific targeting is needed to improve on-target efficacy while reducing off-target toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, cell-type-specific targeting is needed to improve on-target efficacy while reducing off-target toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence stated in the abstract based on established therapeutic development principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "d98c92db-0e9b-4bbc-a765-cdcb502b46c3",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C3",
+      "claim": "BRAID is a cell-targeting system whereby an active molecule is divided into two inactive or less active parts that are subsequently brought together via a bridging receptor on the target cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a cell-targeting system we have termed BRAID (BRidged Activation by Intra/intermolecular Division) whereby an active molecule is divided into two inactive or less active parts that are subsequently brought together via a so-called 'bridging receptor' on the target cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conceptual claim of the manuscript describing the BRAID system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "6a69c58d-fc6b-4d15-a0e6-daad03d89b02",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C4",
+      "claim": "A multivalent WNT agonist molecule divided into two inactive components assembled from different epitopes via the hepatocyte receptor \u03b2Klotho induces signaling specifically on hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This concept was validated using the WNT/\u03b2-catenin signaling system, demonstrating that a multivalent WNT agonist molecule divided into two inactive components assembled from different epitopes via the hepatocyte receptor \u03b2Klotho induces signaling specifically on hepatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 3 and 4 showing hepatocyte-specific signaling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "99161622-b54c-4d18-8eac-9171a5ba8c3d",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C5",
+      "claim": "The BRAID approach may allow activation of multiple signaling pathways where desirable.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach, in principle, also allows action upon a combination of different signaling pathways simultaneously, potentially providing additive or synergistic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "e74cbf7d-84c8-4d5d-aafc-f717d552b375",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C6",
+      "claim": "The BRAID approach has broad application potential for other receptor systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has broad application potential for other receptor systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the generalizability of the approach.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "78354afb-d3fc-4d16-b04d-8ce03c31fbc6",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C7",
+      "claim": "Receptor-mediated signaling is fundamental to cell\u2013cell communication, regulation of cellular growth/differentiation, maintenance of tissue function/homeostasis, and regulation of injury repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor-mediated signaling is fundamental to cell\u2013cell communication, regulation of cellular growth/differentiation, maintenance of tissue function/homeostasis, and regulation of injury repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge about receptor signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "6c5a1b7e-253a-4106-851b-69f745ff6775",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C8",
+      "claim": "Nature achieves cell-specific response selectivity through various mechanisms such as cell-specific receptors, ligand gradient, short-range ligands, and direct cell\u2013cell contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "When a cell-specific response is necessary, nature achieves that selectivity through various mechanisms such as cell-specific receptors, ligand gradient, short-range ligands, and direct cell\u2013cell contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established biological knowledge about cell signaling mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "c644d6cb-ee0d-433a-aa35-7065a59adefa",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C9",
+      "claim": "Most ligand receptor systems have pleiotropic effects due to the broad expressions of receptors on multiple cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most ligand receptor systems have pleiotropic effects due to the broad expressions of receptors on multiple cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge of receptor biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "4d306384-1ef5-4682-a6e8-86d609ba92c6",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C10",
+      "claim": "It is often difficult to identify differences between normal and diseased cells for a particular signaling pathway of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it is often difficult to identify differences between normal and diseased cells for a particular signaling pathway of interest, making it challenging, if not impossible, to modulate that signaling pathway selectively in either diseased or normal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about challenges in therapeutic development based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "4b954748-2c60-465f-a72a-65817f473a12",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C11",
+      "claim": "Cell-targeted agonists are more complex to design compared with cell-targeted antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with cell-targeted antagonists, cell-targeted agonists are more complex to design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about drug design complexity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "344ba64f-31b8-4ad5-beab-754dd75f4949",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C12",
+      "claim": "Agonist molecules are subject to stringent requirements in terms of affinity, epitope, and geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to cell targeting, agonist molecules are also subject to stringent requirements in terms of affinity, epitope, and geometry (Dickopf et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dickopf et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "5a811625-48ff-465d-9ee9-c18283a67b5e",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C13",
+      "claim": "The 'chimeric activators' concept involves attaching a cell-targeting arm to either the wild-type ligand or a mutated ligand with reduced affinity toward the signaling receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous efforts to engineer cell-selective growth factors and cytokines have employed various approaches, such as the 'chimeric activators' concept (Cironi et al., 2008), where a cell-targeting arm ('targeting element') is attached to either the wild-type ligand or a mutated ligand with reduced affinity toward the signaling receptor ('activity element').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Cironi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "de51e8b1-aa5b-4f4b-9fce-b5bbe17f8521",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C14",
+      "claim": "The chimeric activators approach has been applied to signaling pathways based on erythropoietin.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approach has been applied to several signaling pathways, such as those based on erythropoietin (Taylor et al., 2010; Burrill et al., 2016), interferons (Cironi et al., 2008; Garcin et al., 2014), and interleukin-2 (Ghasemi et al., 2016; Lazear et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Taylor et al., 2010 and Burrill et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "95054a00-b1b9-40f7-ad49-237ceba1d34f",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C15",
+      "claim": "The chimeric activators approach has been applied to signaling pathways based on interferons.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approach has been applied to several signaling pathways, such as those based on erythropoietin (Taylor et al., 2010; Burrill et al., 2016), interferons (Cironi et al., 2008; Garcin et al., 2014), and interleukin-2 (Ghasemi et al., 2016; Lazear et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cironi et al., 2008 and Garcin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "faa9fcf1-6fa7-44d4-a36d-1c08230c4df6",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C16",
+      "claim": "The chimeric activators approach has been applied to signaling pathways based on interleukin-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approach has been applied to several signaling pathways, such as those based on erythropoietin (Taylor et al., 2010; Burrill et al., 2016), interferons (Cironi et al., 2008; Garcin et al., 2014), and interleukin-2 (Ghasemi et al., 2016; Lazear et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ghasemi et al., 2016 and Lazear et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "6e476f58-f47c-4946-8901-4704f7561062",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C17",
+      "claim": "Up to 1000-fold selectivity has been achieved using a mutated ligand in the chimeric activators approach.",
+      "claim_type": "EXPLICIT",
+      "source": "While some selectivity has been achieved by attaching a targeting arm to a wild-type ligand, up to 1000-fold selectivity has been achieved using a mutated ligand (Garcin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Garcin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "2a03ed30-86bc-4ee2-bf25-226d0522cefd",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C18",
+      "claim": "The chimeric activators approach is based on the cooperativity concept where mutations weaken the affinity of a natural ligand to its receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'chimeric activators' approach is based on the cooperativity concept, where mutations that weaken the affinity of a natural ligand to its receptor are selected as the 'activity element.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism underlying the chimeric activators approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "9622000b-8688-483d-8dca-b63739981f2d",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C19",
+      "claim": "The mutant 'activity element' alone displays a significantly right-shifted dose\u2013response curve in an activity assay for both target and non-target cells that express the signaling receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to this weakened affinity, the mutant 'activity element' alone displays a significantly right-shifted dose\u2013response curve (i.e., lower potency) in an activity assay, for both target and non-target cells that express the signaling receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the functional consequence of weakened affinity in the chimeric activators approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "ea2a0c0c-4d89-442d-b228-dec058a40440",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C20",
+      "claim": "When the 'targeting element' is tethered to the mutant 'activity element,' the 'targeting element' helps increase the local concentration of the mutant 'activity element' on the desired target cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "When the 'targeting element' is tethered to the mutant 'activity element,' the 'targeting element' helps increase the local concentration of the mutant 'activity element' on the desired target cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism by which the chimeric activators approach achieves selectivity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "23b2069e-466f-46a7-9223-0626699ec3f8",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C21",
+      "claim": "Identifying the appropriate mutations that achieve the precise reduction of affinity to be rescued by the 'targeting element' is not trivial.",
+      "claim_type": "EXPLICIT",
+      "source": "While conceptually elegant, identifying the appropriate mutations that achieve the precise reduction of affinity to be rescued by the 'targeting element' is not trivial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical challenges of the chimeric activators approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "cf2788be-ce73-4c15-b1ce-9af5b26d172d",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C22",
+      "claim": "In some cases of the chimeric activators approach, while the potency could be rescued, the maximal signaling strength remained compromised, resulting in a partial agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, while the potency could be rescued, the maximal signaling strength remained compromised, resulting in a partial agonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of the chimeric activators approach based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "5db10c6d-9f81-4ad9-8055-45758f7b8a34",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C23",
+      "claim": "Most literature examples of the chimeric activators approach report a modest tenfold separation between target vs. non-target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the selectivity is not exquisite, with most literature examples reporting a modest tenfold separation between target vs. non-target cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the selectivity achieved by chimeric activators based on literature review.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "eb8922b6-4bbf-4759-b492-a826ceb353fa",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C24",
+      "claim": "Inactive pro-drugs that require tumor-associated proteases for activation show promising results as a cell-targeting strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional strategies that show promising results have also been reported; for example, inactive pro-drugs that require tumor-associated proteases for activation (Puskas et al., 2011; Skrombolas et al., 2019); complementation of two inactive components via targeted assembly in trans (Banaszek et al., 2019) and passive enrichment on the target cell leading to colocalization of monomeric subunits (Mock et al., 2020) or inactive 'split' components (Quijano-Rubio et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Puskas et al., 2011 and Skrombolas et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "95c265c4-2ec4-48ff-94ac-b2eea9870022",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C25",
+      "claim": "Complementation of two inactive components via targeted assembly in trans shows promising results as a cell-targeting strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional strategies that show promising results have also been reported; for example, inactive pro-drugs that require tumor-associated proteases for activation (Puskas et al., 2011; Skrombolas et al., 2019); complementation of two inactive components via targeted assembly in trans (Banaszek et al., 2019) and passive enrichment on the target cell leading to colocalization of monomeric subunits (Mock et al., 2020) or inactive 'split' components (Quijano-Rubio et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Banaszek et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "404c1c53-fed6-49d5-ad17-98d365f1eb9f",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C26",
+      "claim": "Passive enrichment on the target cell leading to colocalization of monomeric subunits shows promising results as a cell-targeting strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional strategies that show promising results have also been reported; for example, inactive pro-drugs that require tumor-associated proteases for activation (Puskas et al., 2011; Skrombolas et al., 2019); complementation of two inactive components via targeted assembly in trans (Banaszek et al., 2019) and passive enrichment on the target cell leading to colocalization of monomeric subunits (Mock et al., 2020) or inactive 'split' components (Quijano-Rubio et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Mock et al., 2020 and Quijano-Rubio et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "cf82f293-fdf8-4433-9bd0-745fbca46961",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C27",
+      "claim": "The WNT pathway is highly conserved across species and crucial for embryonic development as well as adult tissue homeostasis and regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The WNT pathway is highly conserved across species and crucial for embryonic development as well as adult tissue homeostasis and regeneration (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nusse and Clevers, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "56e96381-8d7f-4fe1-a0f4-175b3a91bcfc",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C28",
+      "claim": "WNT-induced signaling through \u03b2-catenin stabilization is achieved by the ligand binding to frizzled (FZD) and the low-density lipoprotein receptor-related protein (LRP) families of receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "WNT-induced signaling through \u03b2-catenin stabilization has been widely studied and is achieved by the ligand binding to frizzled (FZD) and the low-density lipoprotein receptor-related protein (LRP) families of receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge of WNT signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "4f7dc821-5727-4e05-a7fb-8a8795b8bb84",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C29",
+      "claim": "There are 19 mammalian WNTs, 10 FZDs (FZD1-10), and 2 LRPs (LRP5 and LRP6).",
+      "claim_type": "EXPLICIT",
+      "source": "There are 19 mammalian WNTs, 10 FZDs (FZD1-10), and 2 LRPs (LRP5 and LRP6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the number of WNT pathway components based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "cdf08c3c-2c3a-43b9-94ba-55767fe81b39",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C30",
+      "claim": "WNTs are highly hydrophobic due to lipidation, which is required for them to function.",
+      "claim_type": "EXPLICIT",
+      "source": "WNTs are highly hydrophobic due to lipidation, which is required for them to function, and they are promiscuous, capable of binding and activating multiple FZD and LRP pairs (Janda et al., 2012; Kadowaki et al., 1996; Dijksterhuis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Janda et al., 2012; Kadowaki et al., 1996; Dijksterhuis et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "09d954f2-4b52-4e4e-a595-2647496ea24f",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C31",
+      "claim": "WNTs are promiscuous, capable of binding and activating multiple FZD and LRP pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "WNTs are highly hydrophobic due to lipidation, which is required for them to function, and they are promiscuous, capable of binding and activating multiple FZD and LRP pairs (Janda et al., 2012; Kadowaki et al., 1996; Dijksterhuis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Janda et al., 2012; Kadowaki et al., 1996; Dijksterhuis et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "ff3ee4ca-58d5-4a49-a769-769fd5c7b1e9",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C32",
+      "claim": "Elucidating the functions of individual FZDs in tissues has been hampered by difficulties in producing the ligands and their lack of receptor and tissue selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Elucidating the functions of individual FZDs in tissues has been hampered by difficulties in producing the ligands and their lack of receptor and tissue selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about challenges in WNT research based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "9cddf429-c3de-43f4-8c1c-eea012c4211d",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C33",
+      "claim": "Recent breakthroughs in the development of WNT-mimetic molecules have largely resolved the production and receptor-specificity challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent breakthroughs in the development of WNT-mimetic molecules have largely resolved the production and receptor-specificity challenges (Janda et al., 2017; Chen et al., 2020; Tao et al., 2019; Miao et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Janda et al., 2017; Chen et al., 2020; Tao et al., 2019; Miao et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "462c75d1-0a08-4b7a-997f-31680b183493",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C34",
+      "claim": "Tissue selectivity has been partly achieved by tissue injury, as damaged tissues seem more sensitive to WNTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although tissue selectivity has been partly achieved by tissue injury (damaged tissues seem more sensitive to WNTs; Xie et al., 2022), the ability to target WNTs to specific cells and tissues would be a significant technical and therapeutic advancement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Xie et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "3711139f-3be6-485c-8f40-80b3b4232c4d",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C35",
+      "claim": "WNT mimetics reported so far are all bispecific and can simultaneously bind to FZDs and LRPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The WNT mimetics reported so far are all bispecific and can simultaneously bind to FZDs and LRPs, and their optimal stoichiometry (at least for the antibody-based molecules) are tetravalent bispecific (2:2 format), requiring two FZD binders and two LRP binders in the same molecule to achieve efficient signaling (Tao et al., 2019; Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tao et al., 2019 and Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "21209fc5-28a0-4faa-b0f8-b716aedf8e4a",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C36",
+      "claim": "The optimal stoichiometry for antibody-based WNT mimetics is tetravalent bispecific (2:2 format), requiring two FZD binders and two LRP binders in the same molecule to achieve efficient signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The WNT mimetics reported so far are all bispecific and can simultaneously bind to FZDs and LRPs, and their optimal stoichiometry (at least for the antibody-based molecules) are tetravalent bispecific (2:2 format), requiring two FZD binders and two LRP binders in the same molecule to achieve efficient signaling (Tao et al., 2019; Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tao et al., 2019 and Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "faf745ed-091a-473a-9064-751ab09a68f6",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C37",
+      "claim": "Two FZD binders alone do not signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We have taken advantage of the fact that two FZD binders alone and two LRP binders alone do not signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "7c66e855-4b62-47e2-b4cd-77b33f850967",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C38",
+      "claim": "Two LRP binders alone do not signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We have taken advantage of the fact that two FZD binders alone and two LRP binders alone do not signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "81de9fc2-3b82-4cb0-8a97-218879680db1",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C39",
+      "claim": "Efficient WNT/\u03b2-catenin signaling requires two FZD-binding domains and two LRP-binding domains in one molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that efficient WNT/\u03b2-catenin signaling requires two FZD-binding domains and two LRP-binding domains in one molecule (Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "77541fcc-5e49-47cb-adbc-f3111b2f0ad1",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C40",
+      "claim": "FGF21 is an endocrine hormone produced by the liver that regulates metabolic homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21 is an endocrine hormone produced by the liver that regulates metabolic homeostasis (BonDurant and Potthoff, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to BonDurant and Potthoff, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "dff5a755-2d1a-44cf-9576-af1875a45889",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C41",
+      "claim": "FGF21 signals through FGFR1c, FGFR2c, and FGFR3c in the presence of co-receptor \u03b2Klotho.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21 signals through FGFR1c, FGFR2c, and FGFR3c in the presence of co-receptor \u03b2Klotho (Zhang and Li, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zhang and Li, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "7dd6f21f-46c2-4b19-890b-911b4cc071fb",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C42",
+      "claim": "The binding of FGF21 to the receptor complex is primarily driven by its affinity toward \u03b2Klotho via its C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of FGF21 to the receptor complex is primarily driven by its affinity toward \u03b2Klotho via its C-terminal domain (Lee et al., 2018; Shi et al., 2018), while its N-terminal domain is important for FGFR interaction and signaling (Yie et al., 2012; Micanovic et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lee et al., 2018 and Shi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "f8f67006-9553-4e07-9d78-10894890974a",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C43",
+      "claim": "The N-terminal domain of FGF21 is important for FGFR interaction and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of FGF21 to the receptor complex is primarily driven by its affinity toward \u03b2Klotho via its C-terminal domain (Lee et al., 2018; Shi et al., 2018), while its N-terminal domain is important for FGFR interaction and signaling (Yie et al., 2012; Micanovic et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yie et al., 2012 and Micanovic et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "b50a4cd8-068e-40b5-b25e-4ee517496f02",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C44",
+      "claim": "\u03b2Klotho-binding antibodies that could induce \u03b2Klotho/FGFR signaling have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2Klotho-binding antibodies that could induce \u03b2Klotho/FGFR signaling have also been identified, and one particular agonistic \u03b2Klotho antibody binds to a different epitope on \u03b2Klotho from FGF21 and does not compete with FGF21 binding (Min et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Min et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "83f5c8c4-a3d7-4525-9bce-356a93098ab1",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C45",
+      "claim": "One particular agonistic \u03b2Klotho antibody binds to a different epitope on \u03b2Klotho from FGF21 and does not compete with FGF21 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2Klotho-binding antibodies that could induce \u03b2Klotho/FGFR signaling have also been identified, and one particular agonistic \u03b2Klotho antibody binds to a different epitope on \u03b2Klotho from FGF21 and does not compete with FGF21 binding (Min et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Min et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "d9121531-13ec-4d36-b4a2-75bb33d78ccb",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C46",
+      "claim": "All F- and L-containing molecules bind to either FZD7 or LRP6E3E4 fragments as expected.",
+      "claim_type": "EXPLICIT",
+      "source": "All F- and L-containing molecules bind to either FZD7 or LRP6E3E4 fragments as expected (Figure 2D\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 2D-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "b638ec8b-ec53-416a-89ef-907dbb9c6c7c",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C47",
+      "claim": "FGF21FL, FGF21\u0394N, and 39F7 bind to \u03b2Klotho.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21FL, FGF21\u0394N, and 39F7 bind to \u03b2Klotho, while FGF21 without its C-terminal domain (FGF21\u2206C and FGF21\u2206N\u2206C) does not bind to \u03b2Klotho (Figure 2D\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 2D-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "8aff66b7-2b0d-4fa1-b1b0-4d8b7dc2de3e",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C48",
+      "claim": "FGF21 without its C-terminal domain (FGF21\u2206C and FGF21\u2206N\u2206C) does not bind to \u03b2Klotho.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21FL, FGF21\u0394N, and 39F7 bind to \u03b2Klotho, while FGF21 without its C-terminal domain (FGF21\u2206C and FGF21\u2206N\u2206C) does not bind to \u03b2Klotho (Figure 2D\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 2D-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "9b1dbd1d-370c-4c9b-b030-bcc3efff8c80",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C49",
+      "claim": "The molecule formats of the various fusion proteins have no significant impact on the individual element's binding to their target receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the molecule formats of the various fusion proteins have no significant impact on the individual element's binding to their target receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the binding data presented in Figure 2D-J.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "d6347114-e92a-48ca-a82b-c937db52497e",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C50",
+      "claim": "F-FGF21FL and F-FGF21\u0394N are capable of simultaneous binding to both FZD7 and \u03b2Klotho receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that F-FGF21FL or F-FGF21\u0394N are capable of simultaneous binding to both FZD7 and \u03b2Klotho receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by step-binding assay data shown in Figure 2K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "70e8f3ed-7491-4e03-ae53-9ef6c813aff9",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C51",
+      "claim": "L-39F7 can simultaneously bind to both LRP6 and \u03b2Klotho receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that L-39F7 can simultaneously bind to both LRP6 and \u03b2Klotho receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by step-binding assay data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "0643493d-8b35-4537-bd7b-cc987c50ef3b",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C52",
+      "claim": "The combination of F-FGF21FL or F-FGF21\u2206N with L-39F7 resulted in WNT/\u03b2-catenin signaling in Huh7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, the combination of F-FGF21FL or F-FGF21\u2206N with L-39F7 resulted in WNT/\u03b2-catenin signaling in Huh7 cells, a liver cell line that expresses the bridging receptor \u03b2Klotho (KLB), but not in HEK293 cells, where \u03b2Klotho is not expressed (Figure 3A and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "217cfda4-c1e0-4b71-a4b9-805e5bb8da3b",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C53",
+      "claim": "The combination of F-FGF21FL or F-FGF21\u2206N with L-39F7 did not result in WNT/\u03b2-catenin signaling in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, the combination of F-FGF21FL or F-FGF21\u2206N with L-39F7 resulted in WNT/\u03b2-catenin signaling in Huh7 cells, a liver cell line that expresses the bridging receptor \u03b2Klotho (KLB), but not in HEK293 cells, where \u03b2Klotho is not expressed (Figure 3A and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "1e625a5e-877d-4011-b487-94a94b5f7c1c",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C54",
+      "claim": "Huh7 is a liver cell line that expresses the bridging receptor \u03b2Klotho (KLB).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, the combination of F-FGF21FL or F-FGF21\u2206N with L-39F7 resulted in WNT/\u03b2-catenin signaling in Huh7 cells, a liver cell line that expresses the bridging receptor \u03b2Klotho (KLB), but not in HEK293 cells, where \u03b2Klotho is not expressed (Figure 3A and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by expression data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "5fcea3a1-909e-4814-830e-cf136e7a9f3d",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C55",
+      "claim": "\u03b2Klotho is not expressed in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, the combination of F-FGF21FL or F-FGF21\u2206N with L-39F7 resulted in WNT/\u03b2-catenin signaling in Huh7 cells, a liver cell line that expresses the bridging receptor \u03b2Klotho (KLB), but not in HEK293 cells, where \u03b2Klotho is not expressed (Figure 3A and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by expression data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "bbe13dcc-a5c3-4699-a7ef-2f92e7906646",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C56",
+      "claim": "Signaling depends on the presence of both FZD- and LRP-binding arms.",
+      "claim_type": "EXPLICIT",
+      "source": "This signaling depends on the presence of both FZD- and LRP-binding arms and the ability to bind the bridging receptor, as the removal of the LRP-binding arm L from L-39F7 or inactivation of \u03b2Klotho-binding arms (use of FGF21\u2206C or FGF21\u2206N\u2206C, or the replacement of 39F7 with \u03b1GFP) removes activity in both cells (Figure 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "0b031582-282b-4c80-a834-ebb9c79c09eb",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C57",
+      "claim": "Signaling depends on the ability to bind the bridging receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "This signaling depends on the presence of both FZD- and LRP-binding arms and the ability to bind the bridging receptor, as the removal of the LRP-binding arm L from L-39F7 or inactivation of \u03b2Klotho-binding arms (use of FGF21\u2206C or FGF21\u2206N\u2206C, or the replacement of 39F7 with \u03b1GFP) removes activity in both cells (Figure 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "8dbfe824-c681-4784-8e7b-75969271a0a8",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C58",
+      "claim": "The removal of the LRP-binding arm L from L-39F7 removes activity in both Huh7 and HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This signaling depends on the presence of both FZD- and LRP-binding arms and the ability to bind the bridging receptor, as the removal of the LRP-binding arm L from L-39F7 or inactivation of \u03b2Klotho-binding arms (use of FGF21\u2206C or FGF21\u2206N\u2206C, or the replacement of 39F7 with \u03b1GFP) removes activity in both cells (Figure 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "8821f28a-1a53-432e-9dde-aa1f634f5596",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C59",
+      "claim": "Inactivation of \u03b2Klotho-binding arms (use of FGF21\u2206C or FGF21\u2206N\u2206C, or the replacement of 39F7 with \u03b1GFP) removes activity in both Huh7 and HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This signaling depends on the presence of both FZD- and LRP-binding arms and the ability to bind the bridging receptor, as the removal of the LRP-binding arm L from L-39F7 or inactivation of \u03b2Klotho-binding arms (use of FGF21\u2206C or FGF21\u2206N\u2206C, or the replacement of 39F7 with \u03b1GFP) removes activity in both cells (Figure 3A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "9b41399d-a148-44e9-90df-92e31efc501b",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C60",
+      "claim": "The combination of F-FGF21\u0394N and L-39F7 showed a robust increase in WNT/\u03b2-catenin signaling in Huh7 cells in a two-layer cell culture system.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of F-FGF21\u0394N and L-39F7 showed a robust increase in WNT/\u03b2-catenin signaling in Huh7 cells as compared to the negative control mixture of F-FGF21\u0394N\u0394C and L-39F7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "8273becf-a656-4447-b660-28f0bba26470",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C61",
+      "claim": "The target cell-specific WNT/\u03b2-catenin signaling activation was not detected in HEK293 cells in a two-layer cell culture system.",
+      "claim_type": "EXPLICIT",
+      "source": "The target cell-specific WNT/\u03b2-catenin signaling activation was not detected in HEK293 cells (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "f4be1b99-e5f1-477f-a14b-eca8604df65f",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C62",
+      "claim": "Plating cells in the upper or lower level of the co-culture system did not affect specificity or potency.",
+      "claim_type": "EXPLICIT",
+      "source": "Plating cells in the upper or lower level of the co-culture system did not affect specificity or potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about experimental observations from the co-culture system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "5e6a7bfd-e274-4495-9933-9fc887d98608",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C63",
+      "claim": "Primary human hepatocytes express bridging receptor \u03b2Klotho.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, primary human hepatocytes express bridging receptor \u03b2Klotho, while human small intestinal cells do not (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by expression data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "e607d59f-9345-4e33-aa6e-04dbc32e3dd7",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C64",
+      "claim": "Human small intestinal cells do not express bridging receptor \u03b2Klotho.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, primary human hepatocytes express bridging receptor \u03b2Klotho, while human small intestinal cells do not (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by expression data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "aac152c3-b1b3-42fe-aa79-c5b14a15fa97",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C65",
+      "claim": "The combination of F-FGF21\u2206N and L-39F7 in human hepatocytes causes a significant increase in the expression of WNT target gene AXIN2 after 24 hr compared with the control.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of F-FGF21\u2206N and L-39F7 in human hepatocytes causes a significant increase in the expression of WNT target gene AXIN2 after 24 hr compared with the control (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "bed58a81-ee4c-4b4c-8232-c6dde89845af",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C66",
+      "claim": "The combination with the negative control F-FGF21\u2206N\u2206C does not upregulate AXIN2 in human hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination with the negative control F-FGF21\u2206N\u2206C does not upregulate AXIN2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "a8e842d8-4dfd-413a-98f8-f73bf19fe0af",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C67",
+      "claim": "The same panel of molecules does not elicit any target gene expression in human small intestinal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The same panel of molecules does not elicit any target gene expression in human small intestinal cells, confirming the need for bridging receptor expression for activity (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "cf310c7a-283f-4ef1-a69a-b9b075a1c611",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C68",
+      "claim": "The results in primary cells support the feasibility of this cell-specific targeting strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "These results in primary cells support the feasibility of this cell-specific targeting strategy, and we expected them to be predictive of tissue specific in vivo responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the primary cell data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "4b3c5cf1-b5ec-459a-ad14-2ca37bc86ccf",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C69",
+      "claim": "The results in primary cells are expected to be predictive of tissue specific in vivo responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These results in primary cells support the feasibility of this cell-specific targeting strategy, and we expected them to be predictive of tissue specific in vivo responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the predictive value of the primary cell data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "fb545486-fe23-481e-a4c7-a9043dfa25a9",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C70",
+      "claim": "Due to the pleiotropic expression and actions of most drug targets in many cell types/organs and the lack of differentiation between diseased vs. normal cells, many drugs exhibit either dose-limiting toxicity or act on multiple cell types of opposing activity, rendering them less effective.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the pleiotropic expression and actions of most drug targets in many cell types/organs and the lack of differentiation between diseased vs. normal cells, many drugs exhibit either dose-limiting toxicity or act on multiple cell types of opposing activity, rendering them less effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about drug development challenges based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "521736dd-1689-46f4-8aa3-bb15bab1e8db",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C71",
+      "claim": "Developing effective cell-targeting methods would allow reduced systemic toxicity and higher efficacy for more effective treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, developing effective cell-targeting methods would allow reduced systemic toxicity and higher efficacy for more effective treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the benefits of cell-targeting methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "4eacc9b7-94c7-49b7-8666-420732faea8e",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C72",
+      "claim": "Complementation and splitting a molecule into inactive parts have been explored previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Although complementation and splitting a molecule into inactive parts have been explored previously, the novelty of our approach is that there is no requirement for the two split inactive components to interact with one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "e5b9a651-0867-48a5-a776-6c600c22891d",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C73",
+      "claim": "In the BRAID approach, there is no requirement for the two split inactive components to interact with one another.",
+      "claim_type": "EXPLICIT",
+      "source": "Although complementation and splitting a molecule into inactive parts have been explored previously, the novelty of our approach is that there is no requirement for the two split inactive components to interact with one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a key feature of the BRAID approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "17387af1-bb22-41ba-a9cc-2e53527a730f",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C74",
+      "claim": "The BRAID approach does not require cooperative interactions between the split components and receptors for activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it does not require cooperative interactions between the split components and receptors for activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a key feature of the BRAID approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "2d5615ad-483f-4ce5-92ea-b7029471847a",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C75",
+      "claim": "In the BRAID approach, assembly of the signaling complex is achieved by simultaneous binding of the two divided inactive components through a common bridging receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In our approach, assembly of the signaling complex is achieved by simultaneous binding of the two divided inactive components through a common bridging receptor (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the mechanism of the BRAID approach, illustrated in Figure 1B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "ec30a2d8-eafc-4338-a2db-5dd598bab626",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C76",
+      "claim": "Other potential ways of dividing the WNT or WNT-mimetic molecules, including different geometries, FZD/LRP stoichiometry ratios, and linker lengths, or having one FZD- and LRP-binding arm in each component, may also result in active targeted WNT mimetics.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that other potential ways of dividing the WNT or WNT-mimetic molecules, including different geometries, FZD/LRP stoichiometry ratios, and linker lengths, or having one FZD- and LRP-binding arm in each component, may also result in active targeted WNT mimetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential variations of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "eb8d15e2-1e95-46a3-84ce-bc644b7fc886",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C77",
+      "claim": "SWIFT is the term for the cell-targeted WNT system described in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We have termed this cell-targeted WNT system SWIFT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the term SWIFT.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "af98ede0-02d3-4c06-954f-376cfd1e0bb6",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C78",
+      "claim": "\u03b2Klotho/FGF21/39F7 receptor ligand system was used to illustrate the BRAID/SWIFT cell-targeting concept.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies here focused on the WNT signaling pathway, and \u03b2Klotho/FGF21/39F7 receptor ligand system was used to illustrate the BRAID/SWIFT cell-targeting concept.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the experimental system used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "96d4a59c-139e-4228-ab36-5d2156688c35",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C79",
+      "claim": "Whether these molecules may additionally modulate endocrine FGF signaling and metabolic homeostasis could be the subject of future studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether these molecules may additionally modulate endocrine FGF signaling and metabolic homeostasis could be the subject of future studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "03a77695-cc64-40c7-a00c-9a2852c8f09c",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C80",
+      "claim": "WNT plays important roles in many tissues during development as well as in adult tissue homeostasis and injury repair.",
+      "claim_type": "EXPLICIT",
+      "source": "WNT plays important roles in many tissues during development as well as in adult tissue homeostasis and injury repair, and dysregulated WNT signaling results in various human disease conditions (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nusse and Clevers, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "e4131f68-07bf-4422-ac4f-8f33270421be",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C81",
+      "claim": "Dysregulated WNT signaling results in various human disease conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "WNT plays important roles in many tissues during development as well as in adult tissue homeostasis and injury repair, and dysregulated WNT signaling results in various human disease conditions (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nusse and Clevers, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "12be7ca8-f8c6-480a-ae08-97e66915a1f1",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C82",
+      "claim": "SWIFT offers the opportunity to specifically target WNT activation in desired cell types, facilitating both academic research and the development of novel therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, SWIFT offers the opportunity to specifically target WNT activation in desired cell types, facilitating both academic research and the development of novel therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of SWIFT based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "00145c85-6468-4c64-b125-93daf46b6d37",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C83",
+      "claim": "The BRAID approach may be broadly applied to various signaling systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have described a novel cell-targeting approach that may be broadly applied to various signaling systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the generalizability of the approach.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "ed3e7102-900a-413d-b00e-06846caa0963",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C84",
+      "claim": "The BRAID approach, in principle, allows action upon a combination of different signaling pathways simultaneously, potentially providing additive or synergistic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach, in principle, also allows action upon a combination of different signaling pathways simultaneously, potentially providing additive or synergistic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "a1c12c04-206f-426a-811b-0d40f1920031",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C91",
+      "claim": "L-39F7 binds to LRP6 with a KD of 6.4 \u00b1 0.06 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of LRP6 and \u03b2Klotho to L-39F7 (H), \u03b1GFP-39F7 (I), or L-\u03b1GFP (J) were determined by Octet. Mean KD values were calculated for the binding curves with global fits (red dotted lines) using a 1:1 Langmuir binding model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "6b39c821-29a8-4599-bb63-32605d023a5e",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C92",
+      "claim": "L-39F7 binds to \u03b2Klotho with a KD of 1.7 \u00b1 0.41 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of LRP6 and \u03b2Klotho to L-39F7 (H), \u03b1GFP-39F7 (I), or L-\u03b1GFP (J) were determined by Octet. Mean KD values were calculated for the binding curves with global fits (red dotted lines) using a 1:1 Langmuir binding model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "96a82b84-6b46-4d86-a65e-180f5d73d80b",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C93",
+      "claim": "\u03b1GFP-39F7 binds to \u03b2Klotho with a KD < pM \u00b1 0.02 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of LRP6 and \u03b2Klotho to L-39F7 (H), \u03b1GFP-39F7 (I), or L-\u03b1GFP (J) were determined by Octet. Mean KD values were calculated for the binding curves with global fits (red dotted lines) using a 1:1 Langmuir binding model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "14c75c04-9b15-4b33-b17e-3f71bd55c810",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C94",
+      "claim": "L-\u03b1GFP binds to LRP6 with a KD of 9.7 \u00b1 0.07 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of LRP6 and \u03b2Klotho to L-39F7 (H), \u03b1GFP-39F7 (I), or L-\u03b1GFP (J) were determined by Octet. Mean KD values were calculated for the binding curves with global fits (red dotted lines) using a 1:1 Langmuir binding model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "b540619e-fd78-4a38-a202-056fae135799",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C95",
+      "claim": "All human IgG1 constructs contain the L234A/L235A/P329G mutations (LALAPG) in Fc domain to eliminate effector function.",
+      "claim_type": "EXPLICIT",
+      "source": "All human IgG1 constructs contain the L234A/L235A/P329G mutations (LALAPG) in Fc domain to eliminate effector function (Lo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the molecular constructs used in the study, supported by citation to Lo et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "c9a64162-ea96-4168-94c2-3b2a29a38903",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C96",
+      "claim": "FGF21FL has the mature protein sequence (H29-S209) with RGE mutations in the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21FL has the mature protein sequence (H29-S209) with RGE mutations in the C-terminus (Stanislaus et al., 2017); FGF21\u2206N is the sequence of FGF21FL with the deletion of the N-terminus H29\u2013R45; FGF21\u2206C is the sequence of FGF21FL with the deletion of the C-terminus S190\u2013S209; FGF21\u2206N\u2206C is the sequence of FGF21FL with the deletion of both the N-terminal H29\u2013R45 and the C-terminal S190\u2013S209.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the molecular constructs used in the study, supported by citation to Stanislaus et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "0c943a19-5a8d-4fe9-bb49-df9818a2b406",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C97",
+      "claim": "FGF21\u2206N is the sequence of FGF21FL with the deletion of the N-terminus H29\u2013R45.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21FL has the mature protein sequence (H29-S209) with RGE mutations in the C-terminus (Stanislaus et al., 2017); FGF21\u2206N is the sequence of FGF21FL with the deletion of the N-terminus H29\u2013R45; FGF21\u2206C is the sequence of FGF21FL with the deletion of the C-terminus S190\u2013S209; FGF21\u2206N\u2206C is the sequence of FGF21FL with the deletion of both the N-terminal H29\u2013R45 and the C-terminal S190\u2013S209.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the molecular constructs used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "4a456492-04a3-4bd9-98db-44f5a2d15eac",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C98",
+      "claim": "FGF21\u2206C is the sequence of FGF21FL with the deletion of the C-terminus S190\u2013S209.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21FL has the mature protein sequence (H29-S209) with RGE mutations in the C-terminus (Stanislaus et al., 2017); FGF21\u2206N is the sequence of FGF21FL with the deletion of the N-terminus H29\u2013R45; FGF21\u2206C is the sequence of FGF21FL with the deletion of the C-terminus S190\u2013S209; FGF21\u2206N\u2206C is the sequence of FGF21FL with the deletion of both the N-terminal H29\u2013R45 and the C-terminal S190\u2013S209.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the molecular constructs used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "91e46e8c-ed7b-4cc1-942c-a183a0175d41",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "claim_id": "C99",
+      "claim": "FGF21\u2206N\u2206C is the sequence of FGF21FL with the deletion of both the N-terminal H29\u2013R45 and the C-terminal S190\u2013S209.",
+      "claim_type": "EXPLICIT",
+      "source": "FGF21FL has the mature protein sequence (H29-S209) with RGE mutations in the C-terminus (Stanislaus et al., 2017); FGF21\u2206N is the sequence of FGF21FL with the deletion of the N-terminus H29\u2013R45; FGF21\u2206C is the sequence of FGF21FL with the deletion of the C-terminus S190\u2013S209; FGF21\u2206N\u2206C is the sequence of FGF21FL with the deletion of both the N-terminal H29\u2013R45 and the C-terminal S190\u2013S209.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the molecular constructs used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "35fd7b1e-406d-4371-8300-f6c244449bb4",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors establish the therapeutic rationale for cell-specific targeting by stating that systemic toxicity is a major challenge in drug development, and that cell-type-specific targeting is needed to improve on-target efficacy while reducing off-target toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C70, and C71 collectively present well-established principles in therapeutic development. These are general knowledge claims about drug development challenges that are widely accepted in the field and serve as the motivation for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "ba5df6da-ee70-4bfb-8532-fc4d9696e392",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors describe BRAID as a novel cell-targeting system where an active molecule is divided into two inactive parts that are brought together via a bridging receptor on the target cell, without requiring direct interaction between the split components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C73, C74, and C75 define the conceptual framework of BRAID. The novelty claim (C73) is supported by distinguishing BRAID from prior complementation approaches, and the mechanism (C75) is clearly illustrated in Figure 1B.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "c7339ea9-56e7-4d42-b25b-6b2ed5f3475c",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors provide background on receptor-mediated signaling, natural mechanisms for cell-specific responses, challenges with pleiotropic receptor expression, and the complexity of designing cell-targeted agonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 present established biological knowledge about receptor signaling and drug design challenges. These are well-supported by general scientific knowledge and citation (C12), serving as appropriate background context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors review the 'chimeric activators' approach as prior art, describing its mechanism, applications to various signaling pathways, achievements (up to 1000-fold selectivity), and limitations (difficulty in mutation selection, partial agonism, modest selectivity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C23 accurately describe prior work on chimeric activators with appropriate citations. The characterization of limitations (C21-C23) provides context for the novelty of the BRAID approach, though the claim of 'modest tenfold separation' (C23) as typical may oversimplify the literature given C17's mention of 1000-fold selectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "2c1bee6e-e34e-4ced-bfeb-62e5b8c966ca",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors cite additional cell-targeting strategies from the literature including protease-activated prodrugs, complementation via targeted assembly in trans, and passive enrichment leading to colocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 appropriately cite alternative approaches from the literature with proper references. These provide comprehensive context for the field of cell-targeting strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors provide background on the WNT pathway, describing its biological importance, signaling mechanism through FZD and LRP receptors, the number of pathway components, WNT properties (hydrophobicity, promiscuity), challenges in studying individual FZDs, and recent advances in WNT-mimetic molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 present established knowledge about WNT signaling with appropriate citations. These provide necessary background for understanding the experimental system used to test the BRAID concept.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "aa36f270-5cd9-424a-8ac6-27152d781590",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors establish that WNT mimetics require tetravalent bispecific format (2 FZD and 2 LRP binders) for efficient signaling, and that two FZD binders alone or two LRP binders alone do not signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 are well-supported by citations (C35, C36, C39) and experimental data in Figure 3 (C37, C38). This establishes the critical foundation for the BRAID splitting strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "7eaf351f-ed31-428e-9fbf-c6f19f5c01d6",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors describe the FGF21/\u03b2Klotho system as the bridging receptor system, including FGF21's role as an endocrine hormone, its signaling through FGFRs with \u03b2Klotho as co-receptor, the functional importance of FGF21's C-terminal and N-terminal domains, and the existence of \u03b2Klotho antibodies that bind non-overlapping epitopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are well-supported by appropriate citations to the literature. This establishes the rationale for selecting \u03b2Klotho/FGF21 as the bridging receptor system for proof-of-concept studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "59c5297a-9084-4561-8243-08a7e2eef57f",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors demonstrate that fusion proteins containing F (FZD binder), L (LRP binder), FGF21 variants, and 39F7 antibody bind to their respective target receptors (FZD7, LRP6, \u03b2Klotho) with nanomolar affinities, and that fusion formats do not significantly impact binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 and C91-C94 are directly supported by binding data in Figure 2D-J showing expected binding profiles and KD values. The data demonstrate that the molecular engineering preserved binding functions of individual components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "ae1bea1f-e3be-41f6-a1c9-dcfec7632b6a",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors demonstrate that F-FGF21FL/\u0394N can simultaneously bind both FZD7 and \u03b2Klotho, and that L-39F7 can simultaneously bind both LRP6 and \u03b2Klotho.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C51 are supported by step-binding assay data in Figure 2K and 2L showing sequential binding of both receptors. This is critical evidence that the split components can engage both the signaling receptor and the bridging receptor simultaneously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "1ab50a94-4650-4ae9-8292-468be2adb185",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors demonstrate that combining F-FGF21FL or F-FGF21\u0394N with L-39F7 activates WNT/\u03b2-catenin signaling specifically in Huh7 cells (which express \u03b2Klotho) but not in HEK293 cells (which lack \u03b2Klotho), and that this signaling depends on the presence of both FZD- and LRP-binding arms and the ability to bind the bridging receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 are strongly supported by STF reporter assay data in Figure 3A-F showing cell-type-specific activation and appropriate negative controls. The dependence on all components is demonstrated through systematic removal of binding domains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "a99323da-1453-446a-a99f-fcfd2dde9e78",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors demonstrate cell-specific WNT signaling activation in a two-layer co-culture system where F-FGF21\u0394N and L-39F7 activate signaling in Huh7 cells but not HEK293 cells, regardless of which cell type is in the upper or lower chamber.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by co-culture data in Figure 3H. This experiment strengthens the specificity claim by showing that both cell types are exposed to the same medium, yet only \u03b2Klotho-expressing cells respond.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "7d4d801c-36b8-4dd6-b258-5082f152363f",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors validate hepatocyte-specific targeting in primary human cells, showing that primary human hepatocytes express \u03b2Klotho while human small intestinal cells do not, and that F-FGF21\u0394N + L-39F7 significantly increases AXIN2 expression in hepatocytes but not intestinal cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 are supported by expression data (Figure 4B) and gene expression analysis (Figure 4C-D) in primary human cells. This provides critical validation in physiologically relevant cells beyond cell lines, though the number of replicates appears limited (n=3 experiments).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "78473959-8a6c-4a80-b2f8-26d883140f65",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors state that results in primary cells are expected to be predictive of tissue-specific in vivo responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is speculative and not directly tested. While primary cell data provides stronger evidence than cell lines, in vivo validation would be required to support this predictive claim. The manuscript lacks in vivo data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "6de7b07a-6fee-4685-b83e-cd703dc8cd9c",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors distinguish BRAID from prior complementation approaches, suggest potential variations of the WNT-splitting strategy, name the WNT-specific application SWIFT, and describe the experimental system used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C78 provide appropriate context and nomenclature. C72 accurately distinguishes BRAID from prior work, C76 appropriately acknowledges untested variations, and C77-C78 define terminology and experimental choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate about potential applications of BRAID including activation of multiple signaling pathways, broad applicability to other receptor systems, potential effects on FGF signaling, and therapeutic opportunities for WNT activation in specific cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C6, C79, C82, C83, and C84 are speculative statements about potential applications not demonstrated in the manuscript. While C80-C81 provide appropriate background on WNT biology, the application claims require additional experimental validation beyond the proof-of-concept shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "84b84686-0ca7-4ff5-97c6-29e60d70b0e1",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors claim that a multivalent WNT agonist molecule divided into two inactive components assembled via \u03b2Klotho induces signaling specifically on hepatocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 is the main conclusion of the manuscript and is well-supported by the collective experimental evidence in Figures 2-4, including binding assays, cell line reporter assays, co-culture experiments, and primary cell validation. The specificity is demonstrated through appropriate controls and differential expression of the bridging receptor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "fbfd74fe-d1bc-46af-9b73-c65f0dd08d1f",
+      "content_id": "ff22ad03-8c0e-4e17-b7d7-232b7f4afd84",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors describe the molecular constructs used in the study, including LALAPG mutations in IgG1 Fc domains and various FGF21 deletion variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C99 provide methodological details about construct design with appropriate citations. These are straightforward descriptions of the engineered molecules used in the experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "058f276b-519f-4fb3-8686-289648e59ef0",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The BRAID system is a novel cell-targeting approach where an active molecule is divided into two inactive parts that are brought together via a bridging receptor on the target cell, without requiring the split components to interact with each other or cooperative interactions between components and receptors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm the novelty and conceptual validity of the BRAID approach. The editor states it presents 'a new way to selectively activate a cell signaling pathway' and Reviewer 2 notes 'BRAID, a novel cell targeting method, divides an active drug molecule into inactive components formed by a bridging receptor.' Reviewer 1 confirms 'This study successfully demonstrates a novel way to activate Wnt signaling in target cells expressing a specific marker.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The SWIFT molecules (F-FGF21FL/\u0394N combined with L-39F7) activate WNT/\u03b2-catenin signaling specifically in Huh7 cells expressing \u03b2Klotho but not in HEK293 cells lacking \u03b2Klotho, and this signaling depends on the presence of both FZD- and LRP-binding arms and the ability to bind the bridging receptor.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the cell-type specificity demonstrated in the study. The editor states 'Convincing experimental results demonstrate that the agonist molecules activate Wnt signaling in target cells expressing the marker as intended.' Reviewer 1 notes 'the Wnt reporter and qPCR assays support pathway activation in cell lines and primary cells in a BKlotho-dependent manner' and confirms 'negative control molecules without the FZD/LRP or BKlotho-binding module show neither receptor binding nor Wnt pathway activation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "a84587d4-7251-4f7d-a943-8d660623a7ad",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Binding assays demonstrate that F- and L-containing molecules bind to their respective receptors (FZD7, LRP6, \u03b2Klotho) as expected, with F-FGF21FL/\u0394N capable of simultaneous binding to both FZD7 and \u03b2Klotho, and L-39F7 capable of simultaneous binding to both LRP6 and \u03b2Klotho.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly affirms the binding data: 'Octet assay results show simultaneous binding of SWIFT molecules to both the Wnt co-receptor FZD/LRP and BKlotho.' The reviewer further notes that 'These results indicate that SWIFT molecules function through the intended mechanism.' No concerns about the binding data are raised by any reviewer.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "2f81661b-0556-454a-ac94-d13a9a03efef",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "In a two-layer cell culture system with simultaneous exposure of both cell types, F-FGF21\u0394N and L-39F7 showed robust WNT/\u03b2-catenin signaling activation in Huh7 cells but not in HEK293 cells, demonstrating cell type-specific targeting.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 specifically highlights this result as a strength: 'Exposure of two cell types simultaneously exposed to the SWIFT molecules in 2-layer cell culture demonstrated the ability of the molecules to activate Wnt signaling in a cell type- and BKlotho expression-specific manner.' No concerns are raised about this experimental approach or its conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "2d378521-bb9c-48b9-8cb8-060933f774f8",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "In primary human hepatocytes expressing \u03b2Klotho, F-FGF21\u0394N combined with L-39F7 significantly increased WNT target gene AXIN2 expression, while the same molecules did not elicit target gene expression in human small intestinal cells lacking \u03b2Klotho, supporting the feasibility of this cell-specific targeting strategy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly affirms the primary cell data: 'the Wnt reporter and qPCR assays support pathway activation in cell lines and primary cells in a BKlotho-dependent manner.' The editor notes the results are 'convincing' but suggests they 'could be further strengthened by assessing the biological consequences of Wnt activation in target cells,' indicating acceptance of the data but desire for additional functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "26b4e019-43dc-453f-949a-8022644fd48a",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors claim that results in primary cells are expected to be predictive of tissue-specific in vivo responses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 identifies the lack of in vivo validation as a weakness: 'The study shows the SWIFT approach works in vitro using cell lines, primary human hepatocytes, and human intestinal organoids, but it lacks in vivo animal model or clinical validation. I believe future studies will determine this aspect.' This indicates the predictive claim is speculative and requires future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "34379b7c-4b1e-46e1-a688-aff148e04591",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors claim the BRAID approach has broad application potential for other receptor systems and signaling pathways, potentially allowing activation of multiple pathways simultaneously for additive or synergistic effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the potential but treat it as speculative. Reviewer 1 states 'It will be curious to see whether the BRAID design can be applied to other cell surface markers for Wnt activation, or for activation of other signaling pathways that require co-receptor association.' Reviewer 2 notes 'The study indicates that the BRAID approach can target various signaling systems beyond WNT/\u03b2-catenin, indicating its versatility' but this is framed as potential rather than demonstrated capability.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "2587685d-8bdc-4152-b562-926782efeb58",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors acknowledge that whether SWIFT molecules may additionally modulate endocrine FGF signaling and metabolic homeostasis could be the subject of future studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raises this as a weakness: 'The study does not address whether the targeted cells express FGFR1c/2c/3c and whether the FGF21 full length moiety or the 39F7 IgG moiety of SWIFT molecules could unintentionally activate FGF signaling in these cells.' This indicates the potential for off-target FGF signaling has not been adequately addressed and represents an unresolved concern.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "8139a21d-9e47-448f-a5f0-c1766e75719c",
+      "content_id": "f2be652e-cb21-40ff-bd95-2ea6c4712d10",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Two FZD binders alone and two LRP binders alone do not signal, and efficient WNT/\u03b2-catenin signaling requires two FZD-binding domains and two LRP-binding domains in one molecule.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mechanistic claim is implicitly supported by reviewers' acceptance of the overall approach and the negative control data. Reviewer 1 notes that 'negative control molecules without the FZD/LRP or BKlotho-binding module show neither receptor binding nor Wnt pathway activation,' which validates the requirement for both binding domains.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0ef2382a-a723-4ad5-9a46-7e4bc0d78758",
+      "result_id": "35fd7b1e-406d-4371-8300-f6c244449bb4"
+    },
+    {
+      "claim_id": "035c2573-b241-4a41-9c21-509f42e4002b",
+      "result_id": "35fd7b1e-406d-4371-8300-f6c244449bb4"
+    },
+    {
+      "claim_id": "fb545486-fe23-481e-a4c7-a9043dfa25a9",
+      "result_id": "35fd7b1e-406d-4371-8300-f6c244449bb4"
+    },
+    {
+      "claim_id": "521736dd-1689-46f4-8aa3-bb15bab1e8db",
+      "result_id": "35fd7b1e-406d-4371-8300-f6c244449bb4"
+    },
+    {
+      "claim_id": "d98c92db-0e9b-4bbc-a765-cdcb502b46c3",
+      "result_id": "ba5df6da-ee70-4bfb-8532-fc4d9696e392"
+    },
+    {
+      "claim_id": "e5b9a651-0867-48a5-a776-6c600c22891d",
+      "result_id": "ba5df6da-ee70-4bfb-8532-fc4d9696e392"
+    },
+    {
+      "claim_id": "17387af1-bb22-41ba-a9cc-2e53527a730f",
+      "result_id": "ba5df6da-ee70-4bfb-8532-fc4d9696e392"
+    },
+    {
+      "claim_id": "2d5615ad-483f-4ce5-92ea-b7029471847a",
+      "result_id": "ba5df6da-ee70-4bfb-8532-fc4d9696e392"
+    },
+    {
+      "claim_id": "78354afb-d3fc-4d16-b04d-8ce03c31fbc6",
+      "result_id": "c7339ea9-56e7-4d42-b25b-6b2ed5f3475c"
+    },
+    {
+      "claim_id": "6c5a1b7e-253a-4106-851b-69f745ff6775",
+      "result_id": "c7339ea9-56e7-4d42-b25b-6b2ed5f3475c"
+    },
+    {
+      "claim_id": "c644d6cb-ee0d-433a-aa35-7065a59adefa",
+      "result_id": "c7339ea9-56e7-4d42-b25b-6b2ed5f3475c"
+    },
+    {
+      "claim_id": "4d306384-1ef5-4682-a6e8-86d609ba92c6",
+      "result_id": "c7339ea9-56e7-4d42-b25b-6b2ed5f3475c"
+    },
+    {
+      "claim_id": "4b954748-2c60-465f-a72a-65817f473a12",
+      "result_id": "c7339ea9-56e7-4d42-b25b-6b2ed5f3475c"
+    },
+    {
+      "claim_id": "344ba64f-31b8-4ad5-beab-754dd75f4949",
+      "result_id": "c7339ea9-56e7-4d42-b25b-6b2ed5f3475c"
+    },
+    {
+      "claim_id": "5a811625-48ff-465d-9ee9-c18283a67b5e",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "de51e8b1-aa5b-4f4b-9fce-b5bbe17f8521",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "95054a00-b1b9-40f7-ad49-237ceba1d34f",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "faa9fcf1-6fa7-44d4-a36d-1c08230c4df6",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "6e476f58-f47c-4946-8901-4704f7561062",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "2a03ed30-86bc-4ee2-bf25-226d0522cefd",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "9622000b-8688-483d-8dca-b63739981f2d",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "ea2a0c0c-4d89-442d-b228-dec058a40440",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "23b2069e-466f-46a7-9223-0626699ec3f8",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "cf2788be-ce73-4c15-b1ce-9af5b26d172d",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "5db10c6d-9f81-4ad9-8055-45758f7b8a34",
+      "result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27"
+    },
+    {
+      "claim_id": "eb8922b6-4bbf-4759-b492-a826ceb353fa",
+      "result_id": "2c1bee6e-e34e-4ced-bfeb-62e5b8c966ca"
+    },
+    {
+      "claim_id": "95c265c4-2ec4-48ff-94ac-b2eea9870022",
+      "result_id": "2c1bee6e-e34e-4ced-bfeb-62e5b8c966ca"
+    },
+    {
+      "claim_id": "404c1c53-fed6-49d5-ad17-98d365f1eb9f",
+      "result_id": "2c1bee6e-e34e-4ced-bfeb-62e5b8c966ca"
+    },
+    {
+      "claim_id": "cf82f293-fdf8-4433-9bd0-745fbca46961",
+      "result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9"
+    },
+    {
+      "claim_id": "56e96381-8d7f-4fe1-a0f4-175b3a91bcfc",
+      "result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9"
+    },
+    {
+      "claim_id": "4f7dc821-5727-4e05-a7fb-8a8795b8bb84",
+      "result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9"
+    },
+    {
+      "claim_id": "cdf08c3c-2c3a-43b9-94ba-55767fe81b39",
+      "result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9"
+    },
+    {
+      "claim_id": "09d954f2-4b52-4e4e-a595-2647496ea24f",
+      "result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9"
+    },
+    {
+      "claim_id": "ff3ee4ca-58d5-4a49-a769-769fd5c7b1e9",
+      "result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9"
+    },
+    {
+      "claim_id": "9cddf429-c3de-43f4-8c1c-eea012c4211d",
+      "result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9"
+    },
+    {
+      "claim_id": "462c75d1-0a08-4b7a-997f-31680b183493",
+      "result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9"
+    },
+    {
+      "claim_id": "3711139f-3be6-485c-8f40-80b3b4232c4d",
+      "result_id": "aa36f270-5cd9-424a-8ac6-27152d781590"
+    },
+    {
+      "claim_id": "21209fc5-28a0-4faa-b0f8-b716aedf8e4a",
+      "result_id": "aa36f270-5cd9-424a-8ac6-27152d781590"
+    },
+    {
+      "claim_id": "faf745ed-091a-473a-9064-751ab09a68f6",
+      "result_id": "aa36f270-5cd9-424a-8ac6-27152d781590"
+    },
+    {
+      "claim_id": "7c66e855-4b62-47e2-b4cd-77b33f850967",
+      "result_id": "aa36f270-5cd9-424a-8ac6-27152d781590"
+    },
+    {
+      "claim_id": "81de9fc2-3b82-4cb0-8a97-218879680db1",
+      "result_id": "aa36f270-5cd9-424a-8ac6-27152d781590"
+    },
+    {
+      "claim_id": "77541fcc-5e49-47cb-adbc-f3111b2f0ad1",
+      "result_id": "7eaf351f-ed31-428e-9fbf-c6f19f5c01d6"
+    },
+    {
+      "claim_id": "dff5a755-2d1a-44cf-9576-af1875a45889",
+      "result_id": "7eaf351f-ed31-428e-9fbf-c6f19f5c01d6"
+    },
+    {
+      "claim_id": "7dd6f21f-46c2-4b19-890b-911b4cc071fb",
+      "result_id": "7eaf351f-ed31-428e-9fbf-c6f19f5c01d6"
+    },
+    {
+      "claim_id": "f8f67006-9553-4e07-9d78-10894890974a",
+      "result_id": "7eaf351f-ed31-428e-9fbf-c6f19f5c01d6"
+    },
+    {
+      "claim_id": "b50a4cd8-068e-40b5-b25e-4ee517496f02",
+      "result_id": "7eaf351f-ed31-428e-9fbf-c6f19f5c01d6"
+    },
+    {
+      "claim_id": "83f5c8c4-a3d7-4525-9bce-356a93098ab1",
+      "result_id": "7eaf351f-ed31-428e-9fbf-c6f19f5c01d6"
+    },
+    {
+      "claim_id": "d9121531-13ec-4d36-b4a2-75bb33d78ccb",
+      "result_id": "59c5297a-9084-4561-8243-08a7e2eef57f"
+    },
+    {
+      "claim_id": "b638ec8b-ec53-416a-89ef-907dbb9c6c7c",
+      "result_id": "59c5297a-9084-4561-8243-08a7e2eef57f"
+    },
+    {
+      "claim_id": "8aff66b7-2b0d-4fa1-b1b0-4d8b7dc2de3e",
+      "result_id": "59c5297a-9084-4561-8243-08a7e2eef57f"
+    },
+    {
+      "claim_id": "9b1dbd1d-370c-4c9b-b030-bcc3efff8c80",
+      "result_id": "59c5297a-9084-4561-8243-08a7e2eef57f"
+    },
+    {
+      "claim_id": "a1c12c04-206f-426a-811b-0d40f1920031",
+      "result_id": "59c5297a-9084-4561-8243-08a7e2eef57f"
+    },
+    {
+      "claim_id": "6b39c821-29a8-4599-bb63-32605d023a5e",
+      "result_id": "59c5297a-9084-4561-8243-08a7e2eef57f"
+    },
+    {
+      "claim_id": "96a82b84-6b46-4d86-a65e-180f5d73d80b",
+      "result_id": "59c5297a-9084-4561-8243-08a7e2eef57f"
+    },
+    {
+      "claim_id": "14c75c04-9b15-4b33-b17e-3f71bd55c810",
+      "result_id": "59c5297a-9084-4561-8243-08a7e2eef57f"
+    },
+    {
+      "claim_id": "d6347114-e92a-48ca-a82b-c937db52497e",
+      "result_id": "ae1bea1f-e3be-41f6-a1c9-dcfec7632b6a"
+    },
+    {
+      "claim_id": "70e8f3ed-7491-4e03-ae53-9ef6c813aff9",
+      "result_id": "ae1bea1f-e3be-41f6-a1c9-dcfec7632b6a"
+    },
+    {
+      "claim_id": "0643493d-8b35-4537-bd7b-cc987c50ef3b",
+      "result_id": "1ab50a94-4650-4ae9-8292-468be2adb185"
+    },
+    {
+      "claim_id": "217cfda4-c1e0-4b71-a4b9-805e5bb8da3b",
+      "result_id": "1ab50a94-4650-4ae9-8292-468be2adb185"
+    },
+    {
+      "claim_id": "1e625a5e-877d-4011-b487-94a94b5f7c1c",
+      "result_id": "1ab50a94-4650-4ae9-8292-468be2adb185"
+    },
+    {
+      "claim_id": "5fcea3a1-909e-4814-830e-cf136e7a9f3d",
+      "result_id": "1ab50a94-4650-4ae9-8292-468be2adb185"
+    },
+    {
+      "claim_id": "bbe13dcc-a5c3-4699-a7ef-2f92e7906646",
+      "result_id": "1ab50a94-4650-4ae9-8292-468be2adb185"
+    },
+    {
+      "claim_id": "0b031582-282b-4c80-a834-ebb9c79c09eb",
+      "result_id": "1ab50a94-4650-4ae9-8292-468be2adb185"
+    },
+    {
+      "claim_id": "8dbfe824-c681-4784-8e7b-75969271a0a8",
+      "result_id": "1ab50a94-4650-4ae9-8292-468be2adb185"
+    },
+    {
+      "claim_id": "8821f28a-1a53-432e-9dde-aa1f634f5596",
+      "result_id": "1ab50a94-4650-4ae9-8292-468be2adb185"
+    },
+    {
+      "claim_id": "9b41399d-a148-44e9-90df-92e31efc501b",
+      "result_id": "a99323da-1453-446a-a99f-fcfd2dde9e78"
+    },
+    {
+      "claim_id": "8273becf-a656-4447-b660-28f0bba26470",
+      "result_id": "a99323da-1453-446a-a99f-fcfd2dde9e78"
+    },
+    {
+      "claim_id": "f4be1b99-e5f1-477f-a14b-eca8604df65f",
+      "result_id": "a99323da-1453-446a-a99f-fcfd2dde9e78"
+    },
+    {
+      "claim_id": "5e6a7bfd-e274-4495-9933-9fc887d98608",
+      "result_id": "7d4d801c-36b8-4dd6-b258-5082f152363f"
+    },
+    {
+      "claim_id": "e607d59f-9345-4e33-aa6e-04dbc32e3dd7",
+      "result_id": "7d4d801c-36b8-4dd6-b258-5082f152363f"
+    },
+    {
+      "claim_id": "aac152c3-b1b3-42fe-aa79-c5b14a15fa97",
+      "result_id": "7d4d801c-36b8-4dd6-b258-5082f152363f"
+    },
+    {
+      "claim_id": "bed58a81-ee4c-4b4c-8232-c6dde89845af",
+      "result_id": "7d4d801c-36b8-4dd6-b258-5082f152363f"
+    },
+    {
+      "claim_id": "a8e842d8-4dfd-413a-98f8-f73bf19fe0af",
+      "result_id": "7d4d801c-36b8-4dd6-b258-5082f152363f"
+    },
+    {
+      "claim_id": "cf310c7a-283f-4ef1-a69a-b9b075a1c611",
+      "result_id": "7d4d801c-36b8-4dd6-b258-5082f152363f"
+    },
+    {
+      "claim_id": "4b3c5cf1-b5ec-459a-ad14-2ca37bc86ccf",
+      "result_id": "78473959-8a6c-4a80-b2f8-26d883140f65"
+    },
+    {
+      "claim_id": "4eacc9b7-94c7-49b7-8666-420732faea8e",
+      "result_id": "6de7b07a-6fee-4685-b83e-cd703dc8cd9c"
+    },
+    {
+      "claim_id": "ec30a2d8-eafc-4338-a2db-5dd598bab626",
+      "result_id": "6de7b07a-6fee-4685-b83e-cd703dc8cd9c"
+    },
+    {
+      "claim_id": "eb8d15e2-1e95-46a3-84ce-bc644b7fc886",
+      "result_id": "6de7b07a-6fee-4685-b83e-cd703dc8cd9c"
+    },
+    {
+      "claim_id": "af98ede0-02d3-4c06-954f-376cfd1e0bb6",
+      "result_id": "6de7b07a-6fee-4685-b83e-cd703dc8cd9c"
+    },
+    {
+      "claim_id": "99161622-b54c-4d18-8eac-9171a5ba8c3d",
+      "result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8"
+    },
+    {
+      "claim_id": "e74cbf7d-84c8-4d5d-aafc-f717d552b375",
+      "result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8"
+    },
+    {
+      "claim_id": "96d4a59c-139e-4228-ab36-5d2156688c35",
+      "result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8"
+    },
+    {
+      "claim_id": "03a77695-cc64-40c7-a00c-9a2852c8f09c",
+      "result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8"
+    },
+    {
+      "claim_id": "e4131f68-07bf-4422-ac4f-8f33270421be",
+      "result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8"
+    },
+    {
+      "claim_id": "12be7ca8-f8c6-480a-ae08-97e66915a1f1",
+      "result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8"
+    },
+    {
+      "claim_id": "00145c85-6468-4c64-b125-93daf46b6d37",
+      "result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8"
+    },
+    {
+      "claim_id": "ed3e7102-900a-413d-b00e-06846caa0963",
+      "result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8"
+    },
+    {
+      "claim_id": "6a69c58d-fc6b-4d15-a0e6-daad03d89b02",
+      "result_id": "84b84686-0ca7-4ff5-97c6-29e60d70b0e1"
+    },
+    {
+      "claim_id": "b540619e-fd78-4a38-a202-056fae135799",
+      "result_id": "fbfd74fe-d1bc-46af-9b73-c65f0dd08d1f"
+    },
+    {
+      "claim_id": "c9a64162-ea96-4168-94c2-3b2a29a38903",
+      "result_id": "fbfd74fe-d1bc-46af-9b73-c65f0dd08d1f"
+    },
+    {
+      "claim_id": "0c943a19-5a8d-4fe9-bb49-df9818a2b406",
+      "result_id": "fbfd74fe-d1bc-46af-9b73-c65f0dd08d1f"
+    },
+    {
+      "claim_id": "4a456492-04a3-4bd9-98db-44f5a2d15eac",
+      "result_id": "fbfd74fe-d1bc-46af-9b73-c65f0dd08d1f"
+    },
+    {
+      "claim_id": "91e46e8c-ed7b-4cc1-942c-a183a0175d41",
+      "result_id": "fbfd74fe-d1bc-46af-9b73-c65f0dd08d1f"
+    },
+    {
+      "claim_id": "d98c92db-0e9b-4bbc-a765-cdcb502b46c3",
+      "result_id": "058f276b-519f-4fb3-8686-289648e59ef0"
+    },
+    {
+      "claim_id": "e5b9a651-0867-48a5-a776-6c600c22891d",
+      "result_id": "058f276b-519f-4fb3-8686-289648e59ef0"
+    },
+    {
+      "claim_id": "17387af1-bb22-41ba-a9cc-2e53527a730f",
+      "result_id": "058f276b-519f-4fb3-8686-289648e59ef0"
+    },
+    {
+      "claim_id": "2d5615ad-483f-4ce5-92ea-b7029471847a",
+      "result_id": "058f276b-519f-4fb3-8686-289648e59ef0"
+    },
+    {
+      "claim_id": "6a69c58d-fc6b-4d15-a0e6-daad03d89b02",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "0643493d-8b35-4537-bd7b-cc987c50ef3b",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "217cfda4-c1e0-4b71-a4b9-805e5bb8da3b",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "1e625a5e-877d-4011-b487-94a94b5f7c1c",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "5fcea3a1-909e-4814-830e-cf136e7a9f3d",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "bbe13dcc-a5c3-4699-a7ef-2f92e7906646",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "0b031582-282b-4c80-a834-ebb9c79c09eb",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "8dbfe824-c681-4784-8e7b-75969271a0a8",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "8821f28a-1a53-432e-9dde-aa1f634f5596",
+      "result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461"
+    },
+    {
+      "claim_id": "d9121531-13ec-4d36-b4a2-75bb33d78ccb",
+      "result_id": "a84587d4-7251-4f7d-a943-8d660623a7ad"
+    },
+    {
+      "claim_id": "b638ec8b-ec53-416a-89ef-907dbb9c6c7c",
+      "result_id": "a84587d4-7251-4f7d-a943-8d660623a7ad"
+    },
+    {
+      "claim_id": "8aff66b7-2b0d-4fa1-b1b0-4d8b7dc2de3e",
+      "result_id": "a84587d4-7251-4f7d-a943-8d660623a7ad"
+    },
+    {
+      "claim_id": "9b1dbd1d-370c-4c9b-b030-bcc3efff8c80",
+      "result_id": "a84587d4-7251-4f7d-a943-8d660623a7ad"
+    },
+    {
+      "claim_id": "d6347114-e92a-48ca-a82b-c937db52497e",
+      "result_id": "a84587d4-7251-4f7d-a943-8d660623a7ad"
+    },
+    {
+      "claim_id": "70e8f3ed-7491-4e03-ae53-9ef6c813aff9",
+      "result_id": "a84587d4-7251-4f7d-a943-8d660623a7ad"
+    },
+    {
+      "claim_id": "9b41399d-a148-44e9-90df-92e31efc501b",
+      "result_id": "2f81661b-0556-454a-ac94-d13a9a03efef"
+    },
+    {
+      "claim_id": "8273becf-a656-4447-b660-28f0bba26470",
+      "result_id": "2f81661b-0556-454a-ac94-d13a9a03efef"
+    },
+    {
+      "claim_id": "f4be1b99-e5f1-477f-a14b-eca8604df65f",
+      "result_id": "2f81661b-0556-454a-ac94-d13a9a03efef"
+    },
+    {
+      "claim_id": "5e6a7bfd-e274-4495-9933-9fc887d98608",
+      "result_id": "2d378521-bb9c-48b9-8cb8-060933f774f8"
+    },
+    {
+      "claim_id": "e607d59f-9345-4e33-aa6e-04dbc32e3dd7",
+      "result_id": "2d378521-bb9c-48b9-8cb8-060933f774f8"
+    },
+    {
+      "claim_id": "aac152c3-b1b3-42fe-aa79-c5b14a15fa97",
+      "result_id": "2d378521-bb9c-48b9-8cb8-060933f774f8"
+    },
+    {
+      "claim_id": "bed58a81-ee4c-4b4c-8232-c6dde89845af",
+      "result_id": "2d378521-bb9c-48b9-8cb8-060933f774f8"
+    },
+    {
+      "claim_id": "a8e842d8-4dfd-413a-98f8-f73bf19fe0af",
+      "result_id": "2d378521-bb9c-48b9-8cb8-060933f774f8"
+    },
+    {
+      "claim_id": "cf310c7a-283f-4ef1-a69a-b9b075a1c611",
+      "result_id": "2d378521-bb9c-48b9-8cb8-060933f774f8"
+    },
+    {
+      "claim_id": "4b3c5cf1-b5ec-459a-ad14-2ca37bc86ccf",
+      "result_id": "26b4e019-43dc-453f-949a-8022644fd48a"
+    },
+    {
+      "claim_id": "99161622-b54c-4d18-8eac-9171a5ba8c3d",
+      "result_id": "34379b7c-4b1e-46e1-a688-aff148e04591"
+    },
+    {
+      "claim_id": "e74cbf7d-84c8-4d5d-aafc-f717d552b375",
+      "result_id": "34379b7c-4b1e-46e1-a688-aff148e04591"
+    },
+    {
+      "claim_id": "ec30a2d8-eafc-4338-a2db-5dd598bab626",
+      "result_id": "34379b7c-4b1e-46e1-a688-aff148e04591"
+    },
+    {
+      "claim_id": "00145c85-6468-4c64-b125-93daf46b6d37",
+      "result_id": "34379b7c-4b1e-46e1-a688-aff148e04591"
+    },
+    {
+      "claim_id": "ed3e7102-900a-413d-b00e-06846caa0963",
+      "result_id": "34379b7c-4b1e-46e1-a688-aff148e04591"
+    },
+    {
+      "claim_id": "96d4a59c-139e-4228-ab36-5d2156688c35",
+      "result_id": "2587685d-8bdc-4152-b562-926782efeb58"
+    },
+    {
+      "claim_id": "faf745ed-091a-473a-9064-751ab09a68f6",
+      "result_id": "8139a21d-9e47-448f-a5f0-c1766e75719c"
+    },
+    {
+      "claim_id": "7c66e855-4b62-47e2-b4cd-77b33f850967",
+      "result_id": "8139a21d-9e47-448f-a5f0-c1766e75719c"
+    },
+    {
+      "claim_id": "81de9fc2-3b82-4cb0-8a97-218879680db1",
+      "result_id": "8139a21d-9e47-448f-a5f0-c1766e75719c"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "268a5079-6b03-4fff-93ca-803f6355f1d8",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "ba5df6da-ee70-4bfb-8532-fc4d9696e392",
+      "peer_result_id": "058f276b-519f-4fb3-8686-289648e59ef0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on BRAID novelty and conceptual framework (C3, C73, C74, C75). Both OpenEval and all three peer reviewers explicitly affirm the novelty of the BRAID approach and its mechanistic validity. OpenEval notes the distinction from prior complementation approaches is well-supported by Figure 1B.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "f17b17c4-9cbd-425f-a146-0d0d34d22d1c",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a99323da-1453-446a-a99f-fcfd2dde9e78",
+      "peer_result_id": "2f81661b-0556-454a-ac94-d13a9a03efef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on co-culture specificity data (C60, C61, C62). Both evaluations recognize this as strong evidence for cell-type-specific activation. Reviewer 1 specifically highlights this as a strength, and OpenEval notes it strengthens specificity claims by exposing both cell types to the same medium.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "a30cb971-e634-4147-b5ba-c3fbfa89bfda",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "7d4d801c-36b8-4dd6-b258-5082f152363f",
+      "peer_result_id": "2d378521-bb9c-48b9-8cb8-060933f774f8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on primary cell validation (C63-C68). Both evaluations support the primary cell data as convincing evidence. OpenEval notes limited replicates (n=3), while peer reviewers suggest additional functional validation would strengthen conclusions but accept the current data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "6317e3c8-00dd-43b8-9669-4300e15d47bd",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "78473959-8a6c-4a80-b2f8-26d883140f65",
+      "peer_result_id": "26b4e019-43dc-453f-949a-8022644fd48a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on uncertainty (C69). Both evaluations identify this predictive claim as speculative and requiring in vivo validation. OpenEval notes the manuscript lacks in vivo data, and Reviewer 2 explicitly states future studies will be needed to determine this aspect.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "10addfa5-6b0e-48b6-aa96-baaba1e94e6c",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "1ab50a94-4650-4ae9-8292-468be2adb185",
+      "peer_result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on cell-type specificity and reporter assay data (C52-C59, C4). Both evaluations affirm the STF reporter data and negative controls demonstrate cell-type-specific activation. Peer reviewers describe results as 'convincing' and OpenEval notes 'strong support' from systematic component removal experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "fa83ba2a-c38e-4db6-9642-09af724e2c90",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "59c5297a-9084-4561-8243-08a7e2eef57f",
+      "peer_result_id": "a84587d4-7251-4f7d-a943-8d660623a7ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on binding data (C46-C49). Both evaluations support the binding assay results. Reviewer 1 explicitly affirms simultaneous binding to both receptors, and OpenEval notes Figure 2D-J demonstrates preserved binding functions with expected KD values.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "2725fa66-5910-4837-a5d5-aa121e1def44",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ae1bea1f-e3be-41f6-a1c9-dcfec7632b6a",
+      "peer_result_id": "a84587d4-7251-4f7d-a943-8d660623a7ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on sequential binding data (C50, C51). Both evaluations support the step-binding assays. OpenEval emphasizes this as critical evidence for simultaneous engagement of both receptors, while peer reviewers accept this as part of the overall binding validation showing the intended mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "81ab003a-e706-4e30-ab11-6cfc2132cdca",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "aa36f270-5cd9-424a-8ac6-27152d781590",
+      "peer_result_id": "8139a21d-9e47-448f-a5f0-c1766e75719c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on WNT splitting mechanism (C35-C39, with overlap on C37-C39). Both evaluations support the mechanistic foundation. OpenEval cites Figure 3 data and appropriate citations, while peer reviewers implicitly validate this through acceptance of negative control data showing requirement for both binding domains.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "6aed76fb-a767-4955-b927-8bdbf4ce9f47",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8",
+      "peer_result_id": "34379b7c-4b1e-46e1-a688-aff148e04591",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty of broader applications (C5, C6, C76, C83, C84). Both evaluations treat generalizability claims as speculative. OpenEval marks these as uncertain requiring additional validation, while peer reviewers frame them as potential future directions rather than demonstrated capabilities.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "925028c8-7913-4f42-a4b2-0f358f1ebc7d",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c3f0ea3f-4b2c-4e1b-9851-e0ccca8ac6f8",
+      "peer_result_id": "2587685d-8bdc-4152-b562-926782efeb58",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty regarding off-target effects (C79). Both identify potential FGF signaling as an unresolved concern. OpenEval groups this with other speculative application claims, while Reviewer 1 specifically raises this as a weakness requiring experimental address.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "54a59904-37b7-40c2-b5c2-fda644b6272f",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "84b84686-0ca7-4ff5-97c6-29e60d70b0e1",
+      "peer_result_id": "31edf8f6-93b7-4ea1-aabd-5aa28be0e461",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on main conclusion (C4). Both evaluations support the primary claim of cell-type-specific pathway activation. OpenEval notes comprehensive experimental support across Figures 2-4, while peer reviewers describe results as 'convincing' with appropriate controls demonstrating specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "21b617cd-2b83-4990-89c1-2784db49d67e",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "6de7b07a-6fee-4685-b83e-cd703dc8cd9c",
+      "peer_result_id": "34379b7c-4b1e-46e1-a688-aff148e04591",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on untested variations (C76). Both acknowledge limitations in scope. OpenEval notes C76 appropriately acknowledges untested variations, while peer reviewers frame broader applications as future curiosities rather than current demonstrations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "f8eb278c-3f88-4693-be2d-5328fcb569e7",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "35fd7b1e-406d-4371-8300-f6c244449bb4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background claims about therapeutic development challenges (C1, C2, C70, C71) as well-established general knowledge. No corresponding peer review evaluation found, as reviewers focused on novel findings rather than background context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "8c3cba70-fa87-4fc6-98c7-564f9ab87ef3",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "c7339ea9-56e7-4d42-b25b-6b2ed5f3475c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background claims about receptor signaling and drug design (C7-C12) as well-supported general knowledge. No corresponding peer review evaluation found, as reviewers did not comment on these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "32a0c3b4-51dd-4801-a476-5eb0fd8966dc",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "dec083d0-1963-4ea1-8b0c-1cc3713e9e27",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated prior work on chimeric activators (C13-C23) as appropriately cited, noting potential oversimplification in C23. No corresponding peer review evaluation found, as reviewers did not specifically assess these literature citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "ad55c234-0951-4d8b-9a47-4e5e6817faae",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "2c1bee6e-e34e-4ced-bfeb-62e5b8c966ca",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated alternative approaches from literature (C24-C26) as appropriately cited. No corresponding peer review evaluation found, as reviewers did not comment on these contextual citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "3295685a-b068-4378-91ef-454374904ed1",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "f7d91ff3-65b6-4236-bfa3-79fc99a795d9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated WNT signaling background (C27-C34) as established knowledge with appropriate citations. No corresponding peer review evaluation found, as reviewers did not assess these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "c407e600-40b9-4b52-8dfb-edf0de3f9d1d",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "7eaf351f-ed31-428e-9fbf-c6f19f5c01d6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated rationale for \u03b2Klotho/FGF21 selection (C40-C45) as well-supported by citations. No corresponding peer review evaluation found, as reviewers did not specifically comment on the justification for this system choice.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    },
+    {
+      "id": "48acf575-d7b6-4241-8b0d-a18b54687210",
+      "submission_id": "a8b77efc-3755-47a4-b337-a9a9236faa9a",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "fbfd74fe-d1bc-46af-9b73-c65f0dd08d1f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated methodological details about construct design (C95-C99) as straightforward descriptions with appropriate citations. No corresponding peer review evaluation found, as reviewers did not comment on these technical details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:06:32.233141Z"
+    }
+  ]
+}

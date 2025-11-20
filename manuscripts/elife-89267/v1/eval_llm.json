@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The study validated that TH-Cre transgenic rats behave similarly to wild-type Long-Evans rats and successfully targeted noradrenergic LC neurons with viral vectors. Histological analysis confirmed ~73% infection rate in ChR2 experiments with high selectivity (97% of infected cells were TH+), and no behavioral differences were observed between TH-Cre and wild-type controls during training, extinction, or testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide statistical evidence (p>0.05) showing no behavioral differences between TH-Cre and wild-type controls across all phases. Claims C47, C51-C52 provide quantitative histological data on neuron counts and infection rates. Claims C164-C166 confirm the validity of using TH-Cre rats as a model. The convergence of behavioral and histological evidence strongly supports the experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Optogenetic LC stimulation during extinction training did not affect the rate of extinction itself. All groups showed equivalent response rates at the end of acquisition (p=0.113) and similar decreases in lever-pressing across extinction days (p=0.402 for group effect), with no day\u00d7group interaction (p=0.381).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide consistent statistical evidence from ANOVA showing no immediate effects of LC stimulation on extinction performance. The data in Figure 2B-C support these claims with appropriate statistical tests. This establishes that LC stimulation's effects are on retention rather than acquisition of extinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "LC stimulation during extinction significantly reduced spontaneous recovery when tested 1 day later. The ChR2 group showed significantly less responding than both control (p=0.003) and offset (p=0.049) groups in test 1. Trial-by-trial analysis revealed spontaneous recovery in control (p=0.001) and marginally in offset (p=0.055) groups, but not in the ChR2 group (p=0.890).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 provide comprehensive statistical evidence for reduced spontaneous recovery in the ChR2 group. The combination of group comparisons (C58-C61) and within-group trial analyses (C62-C66) converge to support the interpretation in C67. The data demonstrate both between-group differences and absence of spontaneous recovery specifically in the ChR2 group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The reduction in spontaneous recovery persisted when tested again 1 week later. The ChR2 group continued to show significantly less responding than control (p=0.006) and offset (p=0.024) groups in test 2. Control and offset groups demonstrated spontaneous recovery (p=0.002 and p=0.049 respectively), while the ChR2 group showed no change from extinction (p=0.256).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 demonstrate the durability of the LC stimulation effect with parallel statistical evidence to test 1. The persistence of group differences and continued absence of spontaneous recovery in the ChR2 group at 1 week strongly supports the conclusion that LC stimulation produces lasting enhancement of extinction retention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C148",
+      "C149",
+      "C151"
+    ],
+    "result": "LC stimulation with the parameters used did not produce conditioned place aversion or anxiety-like behavior. Rats spent equivalent time in contexts paired with LC stimulation versus no stimulation (p=0.261), indicating no preference or aversion developed. This suggests the reduced responding in extinction tests was due to enhanced extinction learning rather than aversive conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 provide direct experimental evidence from a place preference test showing no aversion. Claims C148-C149, C151 draw appropriate inferences from this negative result to rule out alternative explanations. The control experiment addresses a critical confound given prior literature (C78-C80) showing LC stimulation can produce anxiety under some conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The timing of LC stimulation was critical for enhancing extinction - stimulation specifically during stimulus presentations (when reward omission occurred) was necessary. The offset group, which received equivalent stimulation during inter-trial intervals, showed no enhancement relative to controls, demonstrating temporal specificity of the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 are supported by the behavioral data showing the offset group performed similarly to controls (C61, C71) despite receiving equivalent total stimulation. This temporal control strengthens the interpretation that LC stimulation enhances extinction learning specifically when coinciding with reward omission, rather than through general arousal or attention effects (C120, C124).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Optogenetic inhibition of LC neurons during extinction reduced responding during the extinction sessions themselves. The eNpHR group showed lower overall response rates during extinction (p=0.021) compared to controls, though both groups showed similar rates at the end of acquisition (p=0.728). Histological analysis confirmed 55\u00b18.7% infection rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 provide statistical evidence for the acute effect of LC inhibition during extinction sessions. Claim C84 documents the infection rate, which is relevant for interpreting the results. The data show a clear immediate effect of LC inhibition on responding, though this did not translate to long-term changes (addressed in next result).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "LC inhibition during extinction did not produce long-lasting changes in extinction retention. No group differences were observed in spontaneous recovery tests conducted 1 day (p=0.949) or 1 week (p=0.507) later. Both groups showed spontaneous recovery at both time points (p=0.020 and p=0.011), with no group\u00d7trial interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 provide comprehensive statistical evidence showing equivalent spontaneous recovery in both groups despite the acute effects during extinction. Claims C98-C99 appropriately interpret these null results. The data are internally consistent and the statistical tests are appropriate for detecting group differences if they existed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C134",
+      "C135"
+    ],
+    "result": "The incomplete infection rate (55\u00b18.7%) in the inhibition experiment may have limited the effectiveness of LC inhibition. The authors speculate that remaining activity in uninfected noradrenergic LC cells may have been sufficient to permit normal extinction learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C11 provides factual data on infection rate, but C12, C134-C135 are speculative explanations for the null result. While the speculation is reasonable and the infection rate is documented, there is no direct evidence that higher infection rates would produce different results. This remains a limitation requiring future investigation (C155).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C116",
+      "C117",
+      "C150"
+    ],
+    "result": "The study demonstrates that optogenetic stimulation of the LC can strengthen appetitive extinction learning, making it resistant to spontaneous recovery, while inhibition with the tested parameters did not impact long-term extinction expression. This extends the role of LC beyond fear extinction to appetitive learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C100-C102, C116-C117, C150) are well-supported by the convergence of results from the stimulation experiments (reduced spontaneous recovery at 1 and 7 days) and inhibition experiments (no long-term effects). The claims appropriately synthesize the major findings and place them in context of prior fear conditioning literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors propose several speculative explanations for why LC inhibition did not affect long-term extinction: LC activity may be lower in appetitive versus aversive paradigms, shorter extinction training might reveal effects, extended training may have been sufficient for both groups to learn, or global LC manipulation may have affected competing pathways with opposing roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C138 are explicitly speculative (evidence_type: SPECULATION) and represent post-hoc explanations for null results. While these are reasonable hypotheses for future testing, they lack direct empirical support in the current study. The speculation is appropriately qualified by the authors but does not constitute supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The theoretical framework establishes that extinction involves new inhibitory learning rather than erasure of original learning, evidenced by phenomena including spontaneous recovery, reinstatement, and renewal. This provides the conceptual foundation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C13-C16 present well-established theoretical concepts supported by extensive prior literature (evidence_type: KNOWLEDGE, CITATION). These are not novel findings of this study but provide essential background. The claims accurately represent current extinction theory and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior pharmacological studies demonstrate that noradrenaline modulates extinction learning: atomoxetine (NA reuptake inhibitor) augments extinction of reward-related behaviors, while propranolol (\u03b2-receptor antagonist) impairs extinction of both rewarding and fear-provoking events. Fast-scan voltammetry detected NA release surges coinciding with reward omission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17-C20 accurately summarize prior pharmacological literature (evidence_type: CITATION) that motivated the current study. These establish the rationale for investigating LC's role in extinction. The claims are well-supported by multiple citations and represent established findings rather than new results from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The LC has anatomical connections with brain regions involved in extinction (BLA, IFC) and shows activity changes during learning. LC activity increases with novel stimuli (rapidly habituating), when stimuli are followed by reward, during contingency reversals, and during extinction, suggesting involvement in detecting and responding to changes in expected outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 summarize prior anatomical and electrophysiological literature (evidence_type: CITATION, KNOWLEDGE) establishing LC's potential role in extinction. These are well-documented findings from prior studies that provide rationale for the current experiments. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior studies using lesions and optogenetic/chemogenetic methods show mixed results on LC's role in extinction. LC lesions impaired fear extinction and 6-OHDA lesions slowed appetitive extinction, but electrolytic lesions had little effect. Recent optogenetic studies show conflicting results, potentially explained by stimulation intensity, fear levels, or LC's modular organization with different projection targets having distinct roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 accurately summarize prior literature (evidence_type: CITATION) showing inconsistent findings that motivated the current study. The claims appropriately note the conflicting results and propose reasonable explanations (C33-C34) based on cited work. This establishes the knowledge gap the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C5"
+    ],
+    "result": "Recent studies have focused predominantly on fear extinction, with relatively less known about LC's role in appetitive extinction. The source and role of endogenous NA in appetitive extinction effects remain unknown, representing a key knowledge gap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35-C36 accurately characterize the state of the literature (evidence_type: KNOWLEDGE) and identify the specific gap the current study addresses. This is a fair assessment of prior work and clearly motivates the focus on appetitive extinction using optogenetic methods to manipulate endogenous LC activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The current findings showing reduced spontaneous recovery with LC stimulation are consistent with prior pharmacological studies using atomoxetine, which also improved long-term extinction expression without obvious effects during extinction training itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 appropriately compare current findings to prior pharmacological work (evidence_type: CITATION, INFERENCE). The parallel between optogenetic LC stimulation and atomoxetine (which increases NA availability) strengthens the interpretation that endogenous LC-derived NA enhances extinction retention. This is a valid comparison supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In fear conditioning paradigms, LC activity modulates the salience/magnitude of aversive stimuli in a pathway-specific manner. LC stimulation enhances fear conditioning while inhibition or \u03b2-receptor blockade disrupts it. During extinction, LC-IFC projections support extinction learning while LC-BLA projections may have opposing roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 accurately summarize prior fear conditioning literature (evidence_type: CITATION) showing pathway-specific LC effects. These establish important context for interpreting the current appetitive extinction results and highlight the complexity of LC function. The claims are well-supported by the cited optogenetic and pharmacological studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The LC has modular functional organization with pathway-specific and cell-type-specific roles. Targeting LC-BLA versus LC-IFC projections produces different effects on fear and extinction. Recent work identified two LC neuron types with distinct properties, with type II neurons specifically involved in reward omission detection. Future pathway-specific or cell-type-specific targeting may refine understanding of LC's role in appetitive extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C144 accurately summarize recent literature (evidence_type: CITATION, KNOWLEDGE) on LC organization and heterogeneity. Claim C145 appropriately suggests future directions (evidence_type: SPECULATION) based on these findings. This provides important context for interpreting the global LC manipulation results and suggests productive future experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors identify three areas requiring further investigation to fully understand LC inhibition effects: higher infection rates for more complete LC inhibition, conditions generating more responding (e.g., compound extinction), and selective targeting of specific LC efferent pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 appropriately identify limitations of the current inhibition experiments and suggest specific follow-up studies (evidence_type: SPECULATION). These are reasonable next steps given the null results with global LC inhibition. The suggestions are grounded in the experimental limitations and prior literature on pathway specificity.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes foundational information-theoretic definitions for channel capacity and mutual information in the context of cellular signaling networks. Channel capacity quantifies sensing fidelity, with 1 bit indicating the ability to distinguish only two input levels (e.g., presence/absence).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, and C10 present well-established definitions from information theory applied to signaling networks. These are foundational concepts supported by standard information theory literature and do not require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Previous studies estimated channel capacities of ~1-1.5 bits for mammalian signaling networks when output is defined as single protein levels at fixed time, suggesting cells can barely detect presence/absence of signals. These calculations implicitly assumed similar sensing abilities across all cells in a population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C16 accurately summarize prior work with appropriate citations. The characterization of previous approaches as assuming homogeneous sensing abilities (C16) is a reasonable inference about implicit assumptions in prior methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Cell state variables exhibit extensive heterogeneity that is temporally stable and leads to heterogeneous responses to extracellular cues. The authors hypothesize that sensing ability varies from cell to cell in a cell state-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C19 are well-supported by multiple citations to previous studies documenting cell state heterogeneity. Claim C20 represents the central hypothesis logically derived from these observations, making this a well-founded starting point for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C35"
+    ],
+    "result": "The authors introduce CeeMI (Cell state-dependent Mutual Information), a novel information-theoretic framework to quantify variation in sensing abilities in cell populations. Maximum entropy inference can estimate the distribution of single-cell sensing abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C35 describe the methodological contribution. The framework is mathematically well-defined (Section 1 of Materials and Methods) and builds on established maximum entropy approaches. The theoretical foundation appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Using a toy receptor-ligand model, the authors demonstrate that cell state-agnostic mutual information estimates can severely underestimate individual cells' sensing abilities when cell state variables are heterogeneously distributed. This occurs because population response distributions have significantly larger overlap than single-cell response distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C45-C47 are supported by the toy model analysis shown in Figure 2A-B. The mathematical relationship I_Cee \u2265 I_CSA is proven in Section 1 of Materials and Methods. The illustrative example effectively demonstrates the conceptual point.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors constructed stochastic biochemical models for EGF/EGFR and IGF/FoxO pathways based on known interactions and previous models. These models fit single-cell data accurately and were used to define pathway-specific outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C54-C55, C57-C59 describe the modeling approach with appropriate citations to previous work. The models are based on established biochemical interactions. However, the claim of accurate fit (C55) would benefit from quantitative goodness-of-fit metrics beyond visual inspection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C26",
+      "C27",
+      "C61",
+      "C63",
+      "C73"
+    ],
+    "result": "For both EGF/EGFR and IGF/FoxO pathways, sensing abilities are widely distributed in cell populations. While cell state-agnostic channel capacity estimates are ~1 bit, most individual cells are predicted to be significantly better at resolving different inputs, with cellular signaling fidelity skewing toward 2 bits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C26-C27, C61, C63, C73 present the main computational findings shown in Figure 2D-E. The results are internally consistent with the theoretical framework. However, the computational predictions rely on the accuracy of the inferred parameter distributions from maximum entropy inference, which introduces model-dependent uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C70",
+      "C72"
+    ],
+    "result": "Using live-cell imaging data for the IGF/FoxO pathway, the authors verified that experimentally evaluated single-cell signaling fidelities match closely with computational estimates. The distribution of steady-state FoxO levels was well resolved at the single-cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28, C70, C72 describe experimental validation shown in Figure 2E. The close match between experimental and computational distributions provides strong support for the CeeMI framework. This is a critical validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The variability in cell states and heterogeneity in sensing abilities are likely stable over time. The same cell's FoxO responses to the same input have significantly less variation compared to variation within the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by analysis in Figure 2\u2014figure supplement 7, which shows that within-cell variability is much smaller than between-cell variability. This validates a key assumption of the framework about temporal stability of cell states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C24",
+      "C29",
+      "C77",
+      "C85",
+      "C116"
+    ],
+    "result": "The authors identified cell state variables that correlate with cells' sensing abilities in the IGF/FoxO pathway. Response range strongly correlates with sensing ability (r=0.53 computational, r=0.29 experimental), while total nuclear FoxO levels show weak correlation (r=0.16 computational, r=0.04 experimental).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C24, C29, C77, C85, C116 are supported by Figure 3 showing joint distributions. The model captures the experimental observation that cells with large response range perform well while those with small response range have variable abilities. The correlation coefficients provide quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Using a simple receptor-ligand model with mRNA dynamics, the authors demonstrate that the time scale of cell state dynamics affects cells' individuality and sensing abilities. When mRNA dynamics are slow, cell state-conditioned mutual information depends strongly on cell state. As dynamics become faster, cells lose memory of cell state conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C86-C96 describe the analysis in Figure 4 examining the role of cell state dynamics. The model effectively demonstrates how the time scale of state variable fluctuations relative to signaling dynamics determines whether cell-to-cell differences in sensing ability are maintained. This addresses a key limitation of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C101",
+      "C104",
+      "C114",
+      "C115"
+    ],
+    "result": "The CeeMI approach can accurately estimate variation in signaling performances using readily collected experimental data and stochastic biochemical models. Individual cells in real populations are much better at sensing their environment than traditional channel capacity estimates suggest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C101, C104, C114-C115 summarize the main conclusions. These are well-supported by the combination of computational predictions and experimental validation for the IGF/FoxO pathway. The approach successfully bridges computational modeling and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C117"
+    ],
+    "result": "The authors discuss potential applications of CeeMI, including identifying bottlenecks in signal transduction and understanding where information is lost in cellular phenotypes like chemotaxis. They suggest CeeMI will be useful for disentangling effects of cell state heterogeneity from noisy cellular responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79, C105-C109, C117 are largely speculative statements about potential applications and future utility. While the suggestions are reasonable given the demonstrated capabilities of the framework, they represent proposed rather than demonstrated applications. The actual utility for these applications remains to be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "At least some cells in the population have better sensing abilities compared to the cell state-agnostic mutual information, following from the inequality I_Cee \u2265 I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is a direct mathematical consequence of the proven inequality I_Cee \u2265 I_CSA (shown in Section 1 of Materials and Methods). This is a logically sound inference from the theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "Cell populations are characterized by heterogeneity in cell state variables responsible for phenotypic differences. This heterogeneity arises from stochasticity in underlying processes and is revealed by conditioning on cell state variables, which narrows response distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98, C110-C111, C113 provide context and mechanistic interpretation supported by citations to previous work. The explanation of how conditioning reveals heterogeneity is conceptually sound and consistent with the framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Typical single-cell data are time-stamped snapshots that do not provide information about single-cell dynamics or the dependence of cell-to-cell variability on cell state variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 accurately describe limitations of typical experimental approaches. This is a well-recognized constraint in the field and motivates the need for computational modeling approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Following IGF stimulation, FoxO is pulled out of the nucleus, reaching approximate steady state within 30-45 minutes with FoxO levels decreasing with increasing IGF dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe established biological responses in the IGF/FoxO pathway supported by citation to Gross et al., 2019. These are well-characterized features of the pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Channel capacity can be used to identify bottlenecks in signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by citations to previous work (Rhee et al., 2012; Hansen and O'Shea, 2015) demonstrating this application of channel capacity analysis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C55"
+    ],
+    "result": "The authors developed a Cy3-dUTP labeling method to directly label chromatin in an unbiased manner during S-phase. The labeled chromatin structures were stable over cell cycle progression, and DNA quantification revealed that labeled domains ranged from 0.5 to 10 Mbp, with the majority at ~0.5 Mbp, corresponding to topologically associated domains (TADs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 and C55 describe the labeling methodology and quantification of labeled chromatin domains. The method is well-established (C16 with citations), stability is demonstrated (C17), and quantification is provided with specific measurements (C18-C19). The interpretation that these correspond to TADs (C55) is reasonable given the size range and is supported by citation. The methodology appears sound and the measurements are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Chromatin motion decreases during S-phase compared to G1/G2 phases in both HeLa and IMR90 cells. The effect was stronger in IMR90 cells. Quantitative measurements showed diffusion rates dropped from D=133.6 to 105.6 \u03bcm\u00b2/s\u00d710\u207b\u2075 in HeLa and from D=86.5 to 43.7 \u03bcm\u00b2/s\u00d710\u207b\u2075 in IMR90 during S-phase. The motion exhibited anomalous subdiffusion with \u03b1 values between 0.1 and 0.9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 present the core finding that chromatin motion is constrained during S-phase. The measurements are quantitative (C23-C24), the motion type is characterized (C25), and the anomalous diffusion is consistent with prior literature (C26). The data are presented with appropriate controls (fixed cells) and the effect is observed in two different cell types, strengthening the conclusion. Statistical significance is implied but not explicitly stated with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Chromatin within 1 \u03bcm center-to-center distance of active replication sites (marked by PCNA) exhibited more restricted motion compared to chromatin outside this distance, with the effect vanishing at distances greater than 1 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 describes a spatial correlation between chromatin motion restriction and proximity to active replication sites. The proximity analysis is methodologically sound (described in methods and Figure 4), and the 1 \u03bcm distance threshold is clearly defined. This finding provides mechanistic insight into the S-phase motion restriction observed in the previous result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C36",
+      "C37"
+    ],
+    "result": "Aphidicolin treatment rapidly inhibited DNA synthesis, with 99% of cells showing inhibition within 30 minutes. Upon treatment, PCNA dissociated from chromatin while RPA accumulated at replication sites, as demonstrated by both live cell imaging and high-throughput microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C36-C37 establish the effectiveness of aphidicolin treatment and characterize the immediate molecular consequences. The quantification of DNA synthesis inhibition is rigorous (99% within 30 min, C29), and the PCNA dissociation and RPA accumulation are demonstrated by multiple complementary methods (live imaging, western blot, high-throughput microscopy). These observations are consistent with prior literature (C30 cites supporting studies).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C51"
+    ],
+    "result": "Upon aphidicolin treatment, MCM2 helicase subunit levels on chromatin remained unchanged, but phosphorylated MCM2 (MCM2p108) levels increased, indicating activation of already-loaded helicase complexes rather than new loading. The phosphorylated form is the active form for DNA unwinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C38-C39, and C51 describe helicase behavior upon replication stress. The distinction between total MCM2 and phosphorylated MCM2 is important and is demonstrated by both western blot (C32-C33) and high-throughput microscopy (C38). The interpretation that this reflects activation rather than new loading (C39) is reasonable and supported by citations. The knowledge that phosphorylated MCM2 is the active form (C51) is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C40",
+      "C52",
+      "C53"
+    ],
+    "result": "DNA polymerase \u03b1 accumulated on chromatin upon aphidicolin treatment, while processive DNA polymerases \u03b4 and \u03b5 showed minor or no changes. This differential behavior is consistent with PCNA's selective association with polymerases \u03b4 and \u03b5 but not \u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C40 describe differential polymerase behavior upon stress, demonstrated by both western blot and immunofluorescence. The observation is internally consistent across methods. Claims C52-C53 provide mechanistic context based on established knowledge about PCNA-polymerase interactions. The differential accumulation of polymerase \u03b1 versus \u03b4/\u03b5 is a key observation supporting the authors' model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Aphidicolin treatment did not affect chromatin motion in G1/G2 cells but caused additional decrease in chromatin motion during S-phase, making chromatin even more constrained than at active replication sites in untreated S-phase cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present the key experimental result that inhibiting DNA synthesis paradoxically further restricts chromatin motion. The G1/G2 control (C41) is appropriate and shows specificity to S-phase. The comparison to proximity of active replication sites (C43) is particularly important as it demonstrates that stalled replisomes are more constraining than active ones. This is the central finding supporting the authors' main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C44"
+    ],
+    "result": "The authors propose that replisome loading, rather than catalytic DNA synthesis activity, reduces chromatin dynamics during S-phase. Specifically, the accumulation of helicase and polymerase complexes together with continuous RPA loading on ssDNA stiffens the DNA polymer and restricts its diffusional motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C44 present the main mechanistic conclusion of the study. This conclusion is well-supported by the experimental evidence: (1) chromatin motion is restricted near active replication sites (C27), (2) inhibiting DNA synthesis while maintaining helicase activity and increasing polymerase loading further restricts motion (C42-C43), and (3) the molecular characterization shows accumulation of helicases, polymerases, and RPA upon synthesis inhibition (C32-C40). The logic connecting observations to conclusion is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C26",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors provide extensive background on chromatin dynamics, including prior findings on anomalous diffusion, effects of transcription and DNA damage on chromatin mobility, and previous observations of S-phase chromatin constraint in yeast and mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C6-C15, C26, C61-C67) represent literature review and established knowledge, all supported by appropriate citations. They provide context for the current study but are not novel findings. The authors accurately represent prior work, though some findings are contradictory (C8 vs C9), which the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors describe established methodological and biological knowledge including aphidicolin mechanism of action, PCNA as a replication marker and its cell cycle-dependent localization, genome sizes of cell lines used, and fundamental properties of the nucleus and genome replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 and C58-C60 represent established knowledge and methodological details, all appropriately cited or representing common knowledge. These provide necessary context and validation of experimental approaches but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors discuss potential mechanisms and implications, including possible recruitment of alternative polymerase clamp 9-1-1 due to increased polymerase \u03b1, and the relationship between replication origin firing and chromatin organization preservation across cell generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is explicitly speculative ('could lead to'), supported by citations but not tested in this study. Claims C56-C57 are cited from prior work and provide context but are not directly tested here. These represent reasonable speculation and literature context but lack direct experimental support in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The authors present osl-dynamics, a Python-based toolbox that uses machine learning generative models to identify and describe recurrent brain dynamics on fast timescales (tens of milliseconds) across multiple neuroimaging modalities. The toolbox is open-source, avoids paid licenses, and leverages modern deep learning libraries like TensorFlow for scalability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the toolbox's utility and comprehensive nature. Reviewer 1 states 'The utility of the toolbox is compelling and demonstrated through a series of exemplar brain imaging datasets' and calls it 'fundamental work.' Reviewer 3 notes 'This toolbox will be a great asset to the brain imaging community.' No concerns were raised about the core capabilities or implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C40",
+      "C41"
+    ],
+    "result": "The TDE-HMM can identify oscillatory bursts in a data-driven fashion without pre-specifying frequency, amplitude threshold, or duration. The identified bursts have lifetimes ranging from hundreds of milliseconds and the method is less sensitive to amplitude than conventional thresholding approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises concerns about validation, stating 'it would be very interesting to test whether this method can \"keep up\" as the data is made more challenging' with synthetic data. They note that 'showing results from brain signals directly (e.g., Figure 7) is nice, it will be even more impactful if it is backed up with results obtained from synthetic data with known properties.' While the authors note concerns were 'addressed' in revision, the original concern about synthetic validation remains documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The AE-HMM identifies plausible functional networks (default mode, visual, frontotemporal, sensorimotor) with fast dynamics (~50 ms lifetimes). In task data, visual networks show significant activation 50-100 ms after visual stimuli, and a frontotemporal network activates 300-900 ms post-stimulus.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings without challenge. Reviewer 1 notes the methods are 'well described and demonstrated within multiple peer reviewed articles.' Reviewer 2 acknowledges 'We see similarities between states across multiple runs (reproducibility analysis) and across tasks (e.g. Figure 8 vs 9) and even methods (Figure 8 vs 10), which is great.' The task-evoked responses align with expected timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The TDE-HMM identifies networks with distinct spectral activity and fast dynamics (~50 ms lifetimes). Power maps show similar spatial patterns to AE-HMM amplitude maps, regions with high power show high coherence, and similar networks are observed in rest and task data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings. Reviewer 2 explicitly notes 'We see similarities between states across multiple runs (reproducibility analysis) and across tasks (e.g. Figure 8 vs 9) and even methods (Figure 8 vs 10), which is great,' confirming the consistency across methods and conditions. The rest-task similarity is supported by citation to fMRI literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C67"
+    ],
+    "result": "Age-related differences show increased fractional occupancy and switching rate of the sensorimotor network, decreased mean lifetime of the visual network, and wider distribution of mean intervals for default mode and suppressed states in older participants (34-60 years) compared to younger (18-34 years). These findings are consistent with existing studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 specifically requests clarification: 'the comparison across subjects is interesting, but it is not clear why sensory-motor areas show a difference and the mean lifetime of the visual network decreases. Can you please explain this better? The promised discussion in section 3.5 can be expanded as well.' While the authors cite consistency with Coquelet et al. 2020, the reviewer indicates the mechanistic interpretation needs strengthening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "DyNeMo identifies more localized power activations and cleaner network structure than TDE-HMM, with distinct spectral characteristics and overlapping networks that vary in mixing ratios. DyNeMo reveals stronger effect sizes (p<0.01 vs p<0.05) for age-related differences in sensorimotor network contribution and decreased variability in left temporal network in older participants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings. Reviewer 2 notes the consistency 'across tasks (e.g. Figure 8 vs 9) and even methods (Figure 8 vs 10), which is great.' Reviewer 3 states 'The only question I had (originally) was how to objectively/quantitatively compare different network models. This has now been addressed by the authors in the latest revision,' indicating acceptance of the comparative claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The TDE-HMM models dynamics in oscillatory amplitude and phase synchronization while AE-HMM models only amplitude. HMM assumes mutually exclusive states while DyNeMo assumes mixed modes. DyNeMo uses richer temporal regularization and captures longer-range temporal structure, but HMM's stronger assumptions simplify interpretation. The methods provide complementary descriptions, with better downstream task performance indicating a more useful model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly confirms 'The only question I had (originally) was how to objectively/quantitatively compare different network models. This has now been addressed by the authors in the latest revision.' This indicates acceptance of the comparative framework and the complementary nature of the methods. No reviewer challenges the methodological distinctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The sliding window approach suffers from a tradeoff between temporal precision and accurate estimation and is inadequate for studying fast changes in functional connectivity. Generative models overcome this by identifying non-contiguous segments sharing the same latent variable, leading to more robust estimates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this methodological rationale. Reviewer 3 affirms 'The methods described are principled, based on generative probabilistic models. This makes them compact descriptors of the complex time-frequency data. Few initial assumptions are necessary.' The citation to Liuzzi et al. 2019 supports the inadequacy claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The HMM uses variational Bayesian inference to account for uncertainty in latent states and has been successfully used in various neuroimaging settings. DyNeMo overcomes HMM limitations using amortized variational Bayesian inference, which is highly efficient and scalable to large datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'The methods described are principled, based on generative probabilistic models' and 'The methods are well described and demonstrated within multiple peer reviewed articles.' The extensive citations support the successful application claims. No reviewer challenges the inference methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Time-delay embedding augments time series with time-lagged channels, embedding the autocorrelation function into the covariance matrix. This makes the covariance sensitive to oscillation frequency and allows study of dynamics in oscillatory amplitude and phase synchronization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the TDE methodology. Reviewer 3 notes 'Few initial assumptions are necessary in order to reveal this compact description,' which aligns with the data-driven nature of TDE. The technical description is accepted without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "HMM and DyNeMo are trained by minimizing variational free energy but suffer from local optimum issues leading to run-to-run variability. The strategy of training multiple models and selecting the best run (lowest free energy) from a set of 10 consistently finds the same model parameters, establishing reproducibility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 initially requested 'The authors should explain the reproducibility results (variational free energy and best run analysis) in the Results section itself, to better orient the reader on what to look for.' The revised manuscript addresses this, and Reviewer 2 confirms 'the authors have addressed all the concerns raised earlier.' The reproducibility approach is accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Static differences in power between age groups can arise from multiple dynamic mechanisms: more frequent network activations or altered power within networks while dynamics remain unchanged.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are presented as interpretive possibilities rather than definitive claims. Reviewer 2's request for better explanation of age differences suggests these interpretations are reasonable but could be expanded. No reviewer challenges the logic of these alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "osl-dynamics can compute static network descriptions using the same methodology as dynamic approaches, facilitating comparisons. Both HMM and DyNeMo have been validated on simulated data for burst detection and dynamic network identification.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes the importance of synthetic validation but acknowledges existing validation work through citations (Quinn et al. 2019; Vidaurre et al. 2016; Gohil et al. 2022). While requesting additional synthetic validation for the specific applications shown, the reviewer accepts that validation has been performed in prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Neural oscillations are linked to cognitive processes, communication, and disease. Recent evidence suggests neuronal populations exhibit short bursts of oscillatory activity (~100 ms) across cortical networks, with network dynamics linked to memory replay, behavioral traits, and disease prediction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-cited and not challenged by any reviewer. They provide established context for the toolbox's purpose. Reviewers focus their evaluation on the novel methodological contributions rather than questioning the motivating neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Technical implementation details including single-channel burst detection assumptions, multitaper spectral estimation, PCA dimensionality reduction after TDE, non-negative matrix factorization for frequency band identification, GLM-based PSD calculation in DyNeMo, mode time course renormalization, GMM-based binarization and thresholding approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'The methods described are principled, based on generative probabilistic models' and 'The methods are well described and demonstrated within multiple peer reviewed articles.' These technical details are presented with appropriate citations and are not challenged by reviewers.",
+    "result_type": "MINOR"
+  }
+]

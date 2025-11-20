@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript provides background on arbovirus disease burden and the limitations of current mosquito control methods. Hundreds of millions of people are infected annually with arboviruses transmitted by Aedes aegypti, with 3.9 billion people at risk. Traditional insecticide-based control is limited by resistance and environmental/health concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the public health context and rationale for the study. These are well-established facts supported by appropriate citations (C3, C4, C6, C7) and general knowledge (C1, C2, C5). The claims provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The dsx gene on chromosome 1R produces sex-specific isoforms through alternative splicing, with exon 5b retained in female-specific transcripts. The ix gene on chromosome 3L is orthologous to Drosophila ix and interacts with dsxF but not dsxM to produce female-specific activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe the molecular biology of target genes based on prior literature (Salvemini et al., 2011; Chase and Baker, 1995; Garrett-Engele et al., 2002). These are established facts that provide the scientific rationale for targeting these genes, not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C70"
+    ],
+    "result": "Disruption of either dsx or ix transformed all trans-hemizygous females into intersexes with malformed morphology, independent of maternal or paternal Cas9 inheritance. dsx disruption resulted in ~50% blood feeding with unhatchable eggs, while ix disruption allowed hatchable eggs. Trans-hemizygous males showed normal courtship behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23, C70 describe experimental results from single-gene disruption experiments supported by data in figures and supplementary files. Sanger sequencing confirmed mutations (C70). The phenotypic observations are well-documented with appropriate controls and replication. These findings establish the individual effects of targeting dsx and ix genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The \u03b2Tub gene is specifically expressed in mosquito testes and is essential for sperm maturation, elongation, and motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 describe established knowledge about \u03b2Tub function supported by multiple citations (Akbari et al., 2013; Degner et al., 2019; Gamez et al., 2020; Chen et al., 2021; Li et al., 2021). This provides rationale for targeting \u03b2Tub for male sterility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C26",
+      "C27",
+      "C68",
+      "C69"
+    ],
+    "result": "The gRNAdsx,ix,\u03b2Tub construct harbors six gRNAs targeting dsx, ix, and \u03b2Tub genes. The strain harbored a single transgene copy on chromosome 3. Single copies of Cas9 and gRNAdsx,ix,\u03b2Tub induced mutagenesis at all six target sites simultaneously, validated by genome and RNA sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C26-C27, C68-C69 describe the multiplexed construct design and validation. Genome sequencing confirmed single-copy integration (C26), and both DNA and RNA sequencing validated mutations at all target sites (C27, C68, C69). This demonstrates successful multiplexed gene targeting, a key technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The pgSIT system produced ~94% males due to ~95% intersex lethality before eclosion. Surviving intersexes were sterile with severe fitness defects including inability to blood feed, reduced flight activity, smaller body size, and 4x-reduced longevity. The system induces female lethality or transformation into sterile unfit intersexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C56-C61 describe the female-lethal phenotype of the multiplexed pgSIT system. The high male bias and intersex lethality are well-documented with quantitative data (C28, C29). Multiple fitness parameters were measured showing severe defects in surviving intersexes (C56-C60). This demonstrates effective female elimination, a core goal of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C62",
+      "C63"
+    ],
+    "result": "Both pgSIT\u2640Cas9 and pgSIT\u2642Cas9 males were nearly completely sterile. pgSIT\u2640Cas9 males showed reduced flight activity and delayed development compared to wild-type, while longevity was not significantly different. Both types were competitive and mated with wild-type females to suppress their fertility. Maternal Cas9 deposition may induce fitness costs that can be avoided by paternal Cas9 inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34, C62-C63 characterize pgSIT male phenotypes. Near-complete sterility is documented (C30), with some fitness differences between maternal and paternal Cas9 inheritance (C31-C32). Despite fitness costs, both types remained competitive (C34). The inference about maternal effects (C62) is reasonable given the observed differences, though the mechanism is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C64"
+    ],
+    "result": "In cage trials, high release ratios (20:1, 40:1) of pgSIT males eliminated all populations in five generations, while lower ratios (10:1, 5:1) caused significant suppression. Both pgSIT\u2640Cas9 and pgSIT\u2642Cas9 males behaved similarly. Controls showed no effect. Only 3 of 30 cages showed any transgenic larvae, confirming male sterility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C64 describe cage trial results demonstrating population suppression capability. The experiments included appropriate controls (C37), multiple release ratios, and replication. The low frequency of transgenic offspring (C38) confirms near-complete male sterility. This is a critical demonstration of the system's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C47",
+      "C65"
+    ],
+    "result": "Mathematical modeling showed that a window of protection exceeding 2 years is achieved with female viability 0-0.15 and male fertility 0-0.15, given ~23 releases of \u2265100 pgSIT eggs per wild adult. For \u226590% elimination probability, female viability and male fertility should both be 0-0.10 with ~26 releases of 250 eggs per wild adult. The described pgSIT strain (female viability 0, male fertility ~0.01) falls within these bounds. Outcomes were most sensitive to release parameters, male fertility, and female viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C47, C65 present mathematical modeling results. The modeling framework (MGDrivE) is established and appropriate. Sensitivity analysis identified key parameters (C65). The modeling provides quantitative predictions for field deployment and shows the current system meets target specifications (C41, C47). However, the model assumptions (e.g., random mixing, density-dependent mortality) may not fully capture field conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C66"
+    ],
+    "result": "SENSR effectively detected transgenic sequences from both Cas9 and gRNAdsx,ix,\u03b2Tub constructs even at the lowest dilution (1:50), reaching half-maximum fluorescence in less than 20 minutes. SENSR is validated as a rapid and sensitive assay for transgene detection in mosquito pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C66 describe validation of the SENSR detection assay. The assay showed sensitivity down to 1:50 dilution with rapid detection (<20 min). Controls showed no signal. This provides a practical tool for monitoring transgenic mosquitoes, though field validation is still needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "pgSIT males were not 100% sterile, with ~1% producing progeny, possibly due to using only two gRNAs targeting \u03b2Tub compared to four in the previous system. Maternal fitness effects can be avoided by ensuring paternal Cas9 inheritance, as pgSIT phenotypes occur with either maternal or paternal Cas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 acknowledge limitations and propose explanations. The ~1% residual fertility (C44) is documented in cage trials. The comparison to prior work (C45) is appropriately cited. The suggestion about avoiding maternal effects (C46) is reasonable given the observed phenotypic differences, though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Previously published analyses showed fitness costs of 0-25% are well tolerated for pgSIT constructs. Perfection is not required for an effective pgSIT system, though improvements could reduce introduction ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 synthesize findings with prior work. The tolerance for fitness costs (C48) is supported by citation to Li et al., 2021. The conclusion that perfection is not required (C49) is reasonable given the modeling and cage trial results, though somewhat qualitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The pgSIT system requires a genetic cross to produce releasable insects, necessitating a scalable genetic sexing system. Sophisticated mechanical sexing systems exist but may be cost prohibitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 discuss practical limitations. The need for genetic crosses (C50) is inherent to the system design. The existence of mechanical sexing (C51) is cited to Crawford et al., 2020. The cost concern (C52) is speculative but reasonable. These are honest assessments of implementation challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "pgSIT is self-limiting and inherently safe but requires genetic modification, necessitating regulatory authorization. The self-limiting nature offers a controllable alternative to gene drives that persist and spread uncontrollably.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 characterize the technology's safety profile and regulatory context. The self-limiting nature (C53) follows from the system design (sterile males don't propagate). Regulatory requirements (C54) are factual. The comparison to gene drives (C55) is reasonable based on known characteristics of both technologies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The study developed a next-generation CRISPR-based pgSIT system for Aedes aegypti that disrupts genes essential for sex determination and fertility, producing predominantly sterile males deployable at any life stage. Released pgSIT males can effectively compete with, suppress, and eliminate caged mosquito populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are the main conclusions of the study, supported by the experimental results (single and multiplexed gene disruption, cage trials) and modeling. The system successfully produces sterile males (C9) through disruption of sex determination and fertility genes (C8), and demonstrates population suppression in cages (C10). However, 'any life stage' deployment (C9) is stated but not extensively demonstrated - most experiments used adult releases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Wing beat frequency measurements showed no significant differences between genotypes within each sex (p>0.05 by ANOVA). Males across all genotypes exhibited robust phonotaxis responses with no significant differences (p>0.05 by Chi-squared test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 report behavioral assays showing normal courtship-related traits in trans-hemizygous males. Appropriate statistical tests were used (ANOVA, Chi-squared). The average female WBF of 468 Hz (C71) is a measured value. These results support the conclusion that male mating behavior is not impaired.",
+    "result_type": "MINOR"
+  }
+]

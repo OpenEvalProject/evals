@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C73",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study generated whole-brain reference maps of cellular abundance for six canonical cell types (neurons, astrocytes, oligodendrocytes, microglia, endothelial cells, and oligodendrocyte precursor cells) by combining Allen Human Brain Atlas gene expression data with Gaussian process regression for spatial interpolation and BRETIGEA deconvolution methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C20-C22, C73, C95-C97 collectively describe a methodologically sound approach combining validated transcriptomic data (AHBA with 3702 samples from 6 healthy brains), established spatial interpolation (Gaussian process regression), and a validated deconvolution method (BRETIGEA) to estimate cell type proportions. The approach is well-documented with specific technical details (80 gene markers used, Figure 1B visualization), and the deconvolution method is supported by prior validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C29",
+      "C39",
+      "C44",
+      "C48",
+      "C49",
+      "C51",
+      "C59",
+      "C60",
+      "C83"
+    ],
+    "result": "Astrocytes and microglia showed the strongest spatial associations with atrophy across most neurodegenerative conditions (p<0.001, FDR-corrected), while neurons and oligodendrocyte precursor cells showed the weakest associations. Notably, in ALS, neuronal proportions positively correlated with tissue integrity, suggesting a protective effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C29, C39, C44, C48-C49, C51, C59-C60, C83 are supported by statistical analyses with appropriate multiple comparison correction (FDR) and clear visualization in Figures 2 and 3. The positive correlation between neuronal density and tissue integrity in ALS (C49) is a specific, statistically significant finding that contrasts with other conditions. The hierarchical clustering analysis (C59-C60) provides additional support for the systematic patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C67"
+    ],
+    "result": "Hierarchical clustering revealed that histologically confirmed dementia conditions formed distinct clusters, with early-onset Alzheimer's disease grouping with presenilin-1 mutations. Clinical FTD variants clustered with Parkinson's disease separately from FTLD pathologies, which grouped with dementia conditions. Despite shared protein pathologies, ALS did not cluster with FTD/FTLD variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C56-C58, C67 describe clustering patterns supported by hierarchical analysis shown in Figure 3. The grouping of EOAD with PS1 mutations (C54) is biologically plausible given PS1's role in familial EOAD. The separation of clinical FTD variants from FTLD pathologies (C57) is acknowledged by the authors as potentially influenced by different data sources. The failure of ALS to cluster with FTLD despite shared TDP-43 pathology (C67) is a meaningful finding supporting the role of network topology beyond protein aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Astrocytes and endothelial cells play critical roles in blood-brain barrier maintenance and vascular function. Astrocytes are susceptible to senescence and oxidative damage, while endothelial cells regulate cerebral blood flow. Disruption of the blood-brain barrier and vascular dysregulation are early pathological biomarkers in neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C30-C32 are well-supported by multiple citations to established literature. These claims provide biological context for the observed associations between astrocyte/endothelial cell distributions and atrophy patterns. The roles of these cell types in BBB maintenance and vascular function are well-established in the field, and the connection to early pathological changes in neurodegeneration is supported by cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Microglia are resident macrophages of the CNS that play key roles in neurodegeneration through prolonged activation and neuroinflammation. Early-stage microgliosis and astrogliosis occur in response to protein accumulation, with excessive proliferation leading to transition to disease-associated microglia via TREM2-APOE signaling. Microglial activation can convert resting astrocytes to reactive astrocytes, and both cell types regulate inflammatory responses and protein clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38, C61-C64 are supported by extensive citations to established literature describing microglial biology and pathophysiology. The mechanistic details about TREM2-APOE signaling (C36), dystrophic microglia (C37), and astrocyte-microglia interactions (C64) are well-documented in the cited literature. These claims provide essential biological context for interpreting the spatial association findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Oligodendrocytes synthesize and maintain myelin, and demyelination leads to neuronal dysfunction. Myelin dysfunction can cause secondary inflammation and impaired amyloid-\u03b2 clearance. Oligodendrocytes are genetically associated with Parkinson's disease, and oligodendrocyte precursor cells regulate neural activity and harbor immune/vascular functions. In AD, PD, and ALS, OPCs lose differentiation capacity, reducing myelin production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C45-C47 are supported by appropriate citations describing oligodendrocyte biology and pathophysiology. The genetic association with PD (C43) is supported by multiple studies. The functional roles of OPCs (C45-C46) and their dysfunction in disease (C47) provide biological context for the observed spatial associations with atrophy patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Previous studies showed mixed findings regarding cell type changes in diseased tissue, with some reporting reduced cell proportions and others reporting increased proportions of non-neuronal cells in atrophied regions. The current study's findings of increased astrocyte and microglia proportions associated with atrophy align with bulk-RNA analyses and may reflect cellular proliferation through microglial activation in response to pathological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 contextualize the current findings within prior literature, noting both concordant and discordant results. The authors appropriately acknowledge that their findings (C83) align with some prior studies (C79-C82) showing increased non-neuronal cell proportions in atrophied regions. The mechanistic interpretation (C84-C85) is supported by citations and provides a plausible explanation for the observed patterns, though the authors appropriately note this is correlational data from healthy brain reference maps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C71"
+    ],
+    "result": "The protective effect of neuronal density in ALS and the weak neuronal associations in FTD variants and Parkinson's disease suggest these conditions may be primarily associated with supportive cell types. The dissimilarities between conditions with shared protein pathologies emphasize the fundamental role of network topology and factors beyond toxic protein accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50 and C52 involve inferential interpretations of correlational data. While the positive correlation between neuronal density and tissue integrity in ALS (C49) is statistically supported, the interpretation of a \"protective effect\" (C50) is speculative without mechanistic validation. Similarly, the inference that FTD/PD are \"primarily associated with supportive cell types\" (C52) is based on weak correlations but lacks direct evidence. Claim C71 about network topology is an inference from clustering patterns but represents a reasonable interpretation supported by cited literature. These claims would benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Despite shared protein pathologies (alpha-synuclein in DLB and PD; TDP-43 in ALS and FTLD), cellular vulnerability patterns differed between these condition pairs. This dissimilarity suggests that protein pathology alone does not determine cellular vulnerability patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe important negative findings where conditions with shared protein pathologies (alpha-synuclein for DLB/PD in C66; TDP-43 for ALS/FTLD in C68-C70) showed different cellular vulnerability patterns in clustering analyses. These observations are supported by the data in Figure 3C and hierarchical clustering results. The authors appropriately acknowledge potential confounding from different data sources but the findings remain valid and biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C98",
+      "C99"
+    ],
+    "result": "The study has several acknowledged limitations including focus on stereotypic atrophy patterns, disease heterogeneity, sex differences in transcriptional changes, limitations of deconvolution methods, dynamic gene expression during disease progression, postmortem RNA degradation, and limited ability of bulk RNA-seq to capture cell-to-cell variability. Robustness analyses showed results were independent of smoothing parameters and brain parcellation scheme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 appropriately acknowledge multiple limitations of the study approach, supported by relevant citations. The authors demonstrate scientific rigor by discussing these limitations transparently. Claims C98-C99 describe robustness analyses that strengthen confidence in the main findings by showing independence from technical parameters (smoothing, parcellation). These limitations are important for interpreting the results but do not invalidate the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Neurodegenerative diseases involve neuronal loss and progressive damage to brain regions, with different diseases affecting different systems. Most neurodegenerative disorders share molecular and cellular mechanisms, with non-neuronal cells playing increasingly recognized roles. Gene expression patterns are associated with regional vulnerability, but previous analyses have been limited to isolated brain regions, and no whole-brain cellular abundance maps currently exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide background context supported by appropriate citations to established literature. These claims establish the scientific rationale for the study by describing known features of neurodegeneration (C1-C5), the emerging importance of non-neuronal cells (C6-C12), prior work on gene expression and vulnerability (C13-C14), and gaps in current knowledge (C15-C16). All claims are well-supported by citations and represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C72",
+      "C94"
+    ],
+    "result": "The study analyzed spatial associations between healthy cell type distributions and atrophy patterns in 13 neurodegenerative conditions using MRI data from 186 individuals with histopathologically confirmed dementia plus additional cohorts for PD, ALS, and clinical FTD variants. The analysis confirmed that non-neuronal cells express substantial vulnerability to tissue loss across most conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C72, C94 describe the study design and main conclusion. The sample sizes are substantial (186 histopathologically confirmed cases plus additional cohorts), and the inclusion of 13 different conditions provides comprehensive coverage. The main conclusion (C19) that non-neuronal cells show substantial vulnerability is supported by the statistical analyses presented. However, it's important to note this is based on correlations between healthy brain cell distributions and disease atrophy patterns, not direct measurements in diseased tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Previous cellular analyses have been restricted to isolated brain regions due to technical limitations. Since neurodegeneration-related genes have similar expression in affected and unaffected areas, characterizing tissue loss associated with reference cell type proportions in health may provide clearer insights into cellular vulnerability patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 establish the rationale for the study's approach of using healthy brain cell type distributions to understand disease vulnerability. The limitation of prior work to isolated regions (C74-C75) is well-documented. The observation that disease genes have similar expression in affected/unaffected areas (C76) provides justification for the approach, though this also highlights a potential limitation of using healthy brain reference maps to understand disease processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "All canonical cell types express vulnerability to dementia-related brain tissue atrophy, suggesting disruption of molecular pathways involving specific cell types can contribute to their dysfunctions and clinical symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 represents a broad conclusion that extends beyond what the correlational data directly support. While the study demonstrates spatial associations between healthy cell type distributions and atrophy patterns, inferring that \"all canonical cell types express vulnerability\" and that this reflects \"disruption of molecular pathways\" involves mechanistic assumptions not directly tested. The study shows correlations between where cells are normally located and where atrophy occurs, but this doesn't necessarily mean those specific cell types are vulnerable or dysfunctional in disease. Validation in diseased tissue would strengthen this claim.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C22",
+      "C23",
+      "C24",
+      "C28",
+      "C76",
+      "C77",
+      "C78",
+      "C102"
+    ],
+    "result": "The authors developed voyAGEr, a free, open-source web application for analyzing age-related gene expression alterations in 49 human tissues using GTEx v8 RNA-seq data from over 900 individuals aged 20-70 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C8, C22-C24, C28, C76-C78, and C102 collectively establish that voyAGEr is a functional web tool with documented data sources, implementation details, and public availability. The tool's existence is verifiable through the provided URL and GitHub repository, and the technical specifications are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C68",
+      "C89"
+    ],
+    "result": "The authors developed ShARP-LM (Shifting Age Range Pipeline for Linear Modelling), a novel bioinformatics pipeline that performs differential gene expression analysis using sliding age windows of 16 years (11-16 years at dataset extremes) with 1-year steps, modeling Age, Sex, and Age\u00d7Sex interaction effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C68, and C89 describe the ShARP-LM methodology with sufficient detail including window size rationale, edge case handling, and statistical modeling approach. The method is clearly documented and the parameters are justified based on data constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C18",
+      "C46",
+      "C59"
+    ],
+    "result": "voyAGEr reveals asynchronous, tissue-specific aging patterns with non-linear transcriptional progression throughout the human lifespan, consistent with prior multi-tissue studies in humans and rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C18, C46, and C59 are supported by the heatmap visualizations (Figure 3A) showing tissue-specific patterns of transcriptional changes and are corroborated by multiple cited studies. The findings are consistent with established knowledge of asynchronous tissue aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In coronary artery, major age-related transcriptional alterations occur around 60 years of age, sex differences in gene expression occur across the age range, and sex-specific age-related alterations are observed throughout the studied age range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are directly supported by Figure 1 panels showing coronary artery data with specific gene examples (COX11, CD99, AKT2). The visualizations clearly demonstrate the described patterns with both statistical significance plots and individual gene expression trajectories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C62"
+    ],
+    "result": "Variance analysis shows tissue accounts for ~90% of total variance, donor ~10%, and age ~1%, with limited confounding between donor and age effects as demonstrated by variance decomposition and downsampling analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C62 are supported by Figure 1\u2014figure supplement 1B showing variance partitioning results and downsampling analyses. The low age contribution is appropriately attributed to subtle effects and tissue specificity. The analyses address potential confounding systematically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Batch effects, primarily from COHORT variable (organ donor vs. post-mortem), SMRIN, DTHHRDY, MHSMKYRS, and number of detected genes, were identified and corrected using adapted limma removeBatchEffect function with imputation for missing values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C83-C88 describe a systematic batch effect identification and correction procedure supported by Figure 1\u2014figure supplement 2 showing before/after PCA results and the SFTPA2 example (Figure 2\u2014figure supplement 4) demonstrating the impact of correction. The methodology is well-documented and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "CDKN2A expression increases with age in the vast majority of tissues, while PCNA and MKI67 show altered expression with age in lung with a specific temporal pattern (decreasing 25-30 years, constant 35-50 years, decreasing in older ages).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by Figure 2\u2014figure supplement 1A for CDKN2A and Figure 2C for PCNA/MKI67 in lung. These findings are consistent with known biology of senescence markers (CDKN2A) and proliferation markers (PCNA, MKI67), with appropriate citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "voyAGEr recapitulates previously reported sex biases in SALL1 (adipose tissue) and DDX43 (lung) expression and additionally identifies the temporal windows where these biases occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by Figure 2\u2014figure supplement 2 showing sex-specific expression patterns for both genes with temporal resolution. The validation of prior findings (Kassam et al., 2019) combined with novel temporal information demonstrates the tool's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "voyAGEr identifies a prominent period of transcriptional alterations in the uterus coinciding with menopause onset (late 40s to early 50s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by Figure 3\u2014figure supplement 1 showing substantial transcriptional changes in uterus during the expected menopausal age range. The temporal alignment with known menopause timing (Kaczmarek, 2014) provides biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C54"
+    ],
+    "result": "Subcutaneous adipose tissue exhibits two distinct periods of transcriptional changes: a major peak in late 20s (~13% altered genes) and a minor peak after 45 years (~5% altered genes), with overlapping metabolism-related pathways including mitochondrial processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C54 are supported by Figure 3B showing the two peaks and Figure 4A demonstrating pathway enrichment patterns. The identification of distinct gene sets and shared metabolic pathways between peaks provides biological insight into adipose tissue aging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C64"
+    ],
+    "result": "Mammary tissue shows the most sex-differentiated gene expression, while several tissues (adipose-subcutaneous, skin-not sun exposed, thyroid, nerve-tibial, muscle-skeletal, spleen) show sex-related biases primarily in late life, corroborating findings from Gershoni and Pietrokovski (2017).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C64 are supported by Figure 3\u2014figure supplement 2 showing tissue-specific sex differences over age and correlation with prior work. The validation of previous findings while adding temporal resolution demonstrates the tool's value for extending existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C69",
+      "C70"
+    ],
+    "result": "Statistical power for detecting transcriptional changes is influenced by age distribution of donors, with higher power in age ranges with more samples (typically older individuals), though downsampling analyses show considerable correlation with original results despite power loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C69, and C70 are supported by Figure 3\u2014figure supplement 3 showing age distribution effects and Figure 3\u2014figure supplement 4 demonstrating downsampling results. The authors appropriately acknowledge this limitation and provide evidence that it does not fundamentally compromise the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C92",
+      "C93"
+    ],
+    "result": "voyAGEr performs GSEA using Reactome database (15-500 genes per pathway) with pathways clustered into families including KEGG and GO Biological Processes level 3 based on gene overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C92-C93 describe the pathway enrichment methodology with appropriate citations and clear filtering criteria. The clustering approach (Figure 4\u2014figure supplement 1) reduces redundancy and facilitates biological interpretation through integration of multiple databases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "voyAGEr enables module-based analysis of co-expressed genes (defined by WGCNA with \u03b2=12) in four tissues (brain cortex, skeletal muscle, heart left ventricle, whole blood), with enrichment analysis for cell types, pathways, and diseases. The MEblue module in brain cortex shows astrocyte enrichment and age-related expression increase consistent with known astrocyte activation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C95-C99 describe the module analysis methodology and provide a specific example (MEblue in brain cortex) supported by Figure 5. The WGCNA parameters are justified, cell type enrichment methods are appropriate (Fisher tests), and the biological interpretation is consistent with cited literature (Palmer and Ousman, 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "voyAGEr provides both gene-centric (how individual genes' expression changes with age in tissues) and tissue-centric (how tissue transcriptomes change with age) analytical perspectives, with module analysis available for four tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe the dual analytical framework of voyAGEr, which is clearly demonstrated through the tool's interface (Figures 2-5) showing both gene-level and tissue-level analyses. The functionality is well-documented and accessible through the web interface.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "voyAGEr has limitations for direct tissue comparisons due to tissue-specific preprocessing and data centering/scaling, and potential biases from donors contributing samples to multiple tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 appropriately identify methodological limitations. The tissue-specific preprocessing is necessary for the analysis but does limit cross-tissue comparisons. The common donor issue is acknowledged with supporting data (Figure 1\u2014figure supplement 1), though analyses suggest limited global confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Sex chromosome-specific gene results require cautious interpretation, as demonstrated by spurious age-related peaks in Y-chromosome gene DDX3Y driven by low-level female expression in the background noise range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by Figure 2\u2014figure supplement 3 showing DDX3Y expression patterns. This appropriately identifies a technical limitation where background noise in female samples can create spurious age-related signals for sex chromosome genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Most GTEx donors had health conditions with increasing frequency with age, preventing definition of a 'healthy' cohort, though large sample sizes and biological variability are expected to mitigate confounding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 identify an important limitation but the mitigation argument (C67) is speculative. While large sample sizes do help, the systematic increase in health conditions with age could confound age-related transcriptional changes. The tool allows condition-based stratification (Figure 2\u2014figure supplement 1B) but this doesn't fully address the limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Module-based analysis requires cautious interpretation as direct and literal interpretations may be misleading (e.g., disease enrichments may not indicate disease occurrence in that tissue).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 appropriately cautions against over-interpretation of module-disease associations. The example of rheumatoid arthritis enrichment in brain cortex immune modules illustrates how enrichment reflects shared molecular signatures rather than disease occurrence, which is an important interpretive caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C21",
+      "C58",
+      "C74"
+    ],
+    "result": "voyAGEr was designed as a discovery tool to assist researchers without bioinformatics expertise in exploring age-related transcriptional changes, generating and testing hypotheses, and laying groundwork for experimental research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C21, C58, and C74 describe the tool's intended purpose and target audience. The web interface design, visualization capabilities, and lack of required computational expertise support this goal. However, the claim remains somewhat aspirational as actual usability by non-bioinformaticians is not empirically demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C75"
+    ],
+    "result": "Future improvements to voyAGEr are anticipated through accumulation of public transcriptome data, expansion of module analysis to additional tissues, integration of perturbagen data, and potential applications in diagnostic tool and personalized therapy design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71, C73, and C75 are speculative statements about future work and potential applications. While the open-source nature (C28) enables future development, these claims represent aspirations rather than demonstrated results. The potential clinical applications (C75) are particularly speculative without validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C100",
+      "C101"
+    ],
+    "result": "Data preprocessing involved downloading GTEx v8 RNA-seq read counts, excluding 5 tissues with <50 samples, filtering genes with <1 CPM in <40% of samples, and normalizing/log-transforming with voom from limma package.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 and C100-C101 describe standard RNA-seq preprocessing procedures with appropriate citations. The filtering criteria are reasonable and well-justified. Data sources are properly documented with accession numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Visualization uses loess regression for gene expression trends, and FDR control involves 50,000 random permutations of ages and sexes within each age window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 describe appropriate statistical methods for visualization and multiple testing correction. The permutation-based FDR control with 50,000 iterations provides robust significance assessment for the percentage of altered genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C63"
+    ],
+    "result": "The introduction establishes prior knowledge about aging, transcriptional changes, and sex differences based on extensive literature citations, including that age is a risk factor for diseases, transcripts vary with age in tissue- and sex-specific manners, and multi-tissue studies reveal asynchronous tissue aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C20 and C63 summarize established knowledge from the literature with appropriate citations. These claims provide context for the study but do not represent novel findings from this work. The citations appear appropriate and the characterizations of prior work are reasonable.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C103",
+      "C104"
+    ],
+    "result": "The manuscript establishes the biological context for studying allopolyploidization in Capsella bursa-pastoris, describing it as a natural allotetraploid that originated ~100,000 years ago from C. orientalis (self-compatible) and C. grandiflora (self-incompatible) progenitors. Prior work has characterized C. bursa-pastoris as having well-retained subgenomes with moderate expression bias and tissue-specific gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19, C103-C104 provide background information supported by appropriate citations to prior literature (Douglas et al., 2015; Hurka et al., 2012; Bachmann et al., 2019; Kryvokhyzha et al., 2019a; Neuffer and Paetsch, 2013). These claims establish the scientific context and are appropriately attributed to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C77",
+      "C86"
+    ],
+    "result": "Natural C. bursa-pastoris exhibits a selfing syndrome with smaller floral organs, fewer pollen grains, and shorter stems compared to resynthesized allotetraploids, which more closely resemble the outcrossing parent C. grandiflora. This suggests the selfing syndrome evolved after allopolyploidization rather than arising immediately from dominance of C. orientalis alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 are supported by statistical analyses (ANOVA, Tukey's HSD tests) with appropriate sample sizes (n=28-171 depending on trait) and significant p-values (<0.001). The morphological measurements in Figure 2a-k show clear differences between groups. The inference in C86 that the selfing syndrome evolved post-allopolyploidization is logically supported by the observation that resynthesized allotetraploids lack these traits despite having C. orientalis as a parent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Resynthesized allotetraploids show reduced pollen viability and increased abnormal seed production compared to natural C. bursa-pastoris and diploid parents, suggesting that improved meiotic behavior evolved in natural allotetraploids over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by statistical analyses (GLM with quasi-binomial distribution, Tukey's HSD tests) showing significant differences (p<0.001) between groups. The data show resynthesized allotetraploids have 69.6-77.5% normal seeds versus 99.6% in natural Cbp. Claims C87-C89 provide mechanistic context from prior literature, though C87 is speculative about the mechanism in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "RNA-sequencing analysis reveals that resynthesized allotetraploids have gene expression patterns intermediate between diploid parents, while natural C. bursa-pastoris shows divergence from resynthesized allotetraploids, indicating long-term evolutionary changes in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by MDS analysis of RNA-seq data from 60 samples (5 groups \u00d7 6 lines \u00d7 2 tissues). Claims C99-C101 describe the experimental design and data quality metrics (average 38.4-70.0 million mapped reads). The phasing analysis (C37) shows 44.7-53.7% of reads could be assigned to homoeologs. The MDS plots in Figure 3 visually support the intermediate positioning of resynthesized allotetraploids and divergence of natural Cbp.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Differential expression analysis reveals no significant DEGs between the two resynthesized allotetraploid groups, but 311-2888 DEGs in other comparisons. Most DEGs in allotetraploids are up-regulated compared to diploid parents, with the proportion of down-regulated DEGs increasing in natural allotetraploids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by differential expression analysis using appropriate statistical methods (edgeR, FC>2, FDR<0.05) on 21,937 genes in flowers and 18,999 genes in leaves. The lack of DEGs between Sd and Sh groups (C40) is notable and suggests reproducible effects. Claim C46 reports GO enrichment analysis results, though only one term (proteolysis) remained significant after multiple testing correction, limiting biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C78",
+      "C79",
+      "C80",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Expression level dominance (ELD) doubled in natural allotetraploids (10.2%) compared to resynthesized allotetraploids (5.5%), with 40% of natural ELD cases already present in resynthesized allotetraploids. The direction of ELD shifted toward the self-fertilizing parent (C. orientalis) in natural allotetraploids, particularly in flowers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 are supported by gene expression classification analysis using appropriate statistical thresholds (FC>2, FDR<0.05). The Venn diagram analysis (Figure 4c) shows 63.3-72.2% of shared ELD retained in natural allotetraploids, supporting the inference of short-term deterministic mechanisms (C90). However, 56.6-60.8% of ELD in natural allotetraploids is Cbp-specific, supporting long-term evolution (C91). The shift from predominantly Cg-ELD in resynthesized to more Co-ELD in natural allotetraploids (C51-C54) is well-documented. Claim C92 about intergenomic interactions is inferential but reasonably supported by the repeatability of ELD patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C93"
+    ],
+    "result": "Transgressive expression (TRE) is virtually absent in resynthesized allotetraploids (<5 genes) but present in ~1.3% of genes in natural C. bursa-pastoris, indicating that transcriptional novelties arise primarily during long-term evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by gene expression classification data shown in Figure 4. The stark contrast between resynthesized (<5 genes) and natural allotetraploids (~1.3% or ~280 genes) is clear. Claim C93 appropriately cites prior work (Flagel and Wendel, 2010; Yoo et al., 2013; Zhang et al., 2016b) showing similar patterns in other systems, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C81",
+      "C82"
+    ],
+    "result": "Resynthesized allotetraploids show striking variation in homoeolog expression bias (HEB) among chromosomes and individuals, with homoeologous synapsis being the primary source. HMM analysis reveals that only 39 of 96 chromosome quartets showed no sign of homoeologous synapsis, and the estimated copy number of homoeologs explains 48.4-46.8% of HEB variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 are supported by comprehensive HEB analysis on 18,255 genes in flowers and 15,581 genes in leaves. The average HEB values (C57-C58) show no strong bias, but Levene's test (C59, p<0.001) confirms greater variation in resynthesized allotetraploids. The HMM segmentation analysis (C64-C66) provides quantitative evidence for homoeologous synapsis, with an average of 0.833\u00b10.097 breakpoints per chromosome quartet and 31.0% of genes having unbalanced homoeolog numbers. The GLM analysis (C67, p<0.001) demonstrates that copy number explains substantial HEB variance. The distribution patterns in Figure 5 with peaks at 0, 0.25, 0.75, and 1 (C61) are consistent with segregation of homoeologous chromosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C83",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "Natural C. bursa-pastoris shows more uniform HEB distribution than resynthesized allotetraploids, though some candidate segments with unbalanced homoeolog content are shared within populations, suggesting that occasional homoeologous synapsis may still contribute to genetic variation despite improved preferential synapsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is supported by HEB distribution analysis (Figure 5), showing more uniform patterns in natural Cbp. However, claims C69, C83, C94-C95, C97-C98 are more speculative. The authors acknowledge limitations in detecting smaller segments with RNA-seq data alone (low resolution, technical variation). The HMM segmentation in natural Cbp (Figure 6) identifies candidate segments, but without genomic DNA sequencing or cytological validation, it's uncertain whether these represent true homoeologous exchanges, secondary introgression, or technical artifacts. The inference that preferential synapsis improved rapidly (C94) or that selection favored balanced homoeolog numbers (C95) is logical but not directly tested. Claims C97-C98 about the potential importance of low-frequency homoeologous synapsis are reasonable speculation but lack direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Most resynthesized allotetraploids show lower levels of homoeolog-specific expression loss (average 1.0% in natural Cbp) than natural allotetraploids, but three outlier individuals (Sd-6-4, Sd-8-5, Sh-5-5) show extremely high expression loss restricted to chromosome 3, likely caused by homoeologous chromosome segregation and recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by homoeolog expression loss analysis (Figure 7) using genes with CPM>5 in all diploid individuals but CPM<0.5 in allotetraploids. The three outliers show dramatically elevated expression loss. Claim C73 is a reasonable inference supported by the observation that extreme HEB in these individuals is restricted to chromosome 3 (Figure 5b, Figure 5\u2014figure supplements 3-6), consistent with loss or replacement of an entire chromosome or large chromosomal segment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In resynthesized allotetraploids, ELD is primarily achieved through expression changes in the EL-recessive homoeolog while the EL-dominant homoeolog remains relatively unchanged, consistent with intergenomic regulatory interactions. In natural allotetraploids, both homoeologs show expression changes, particularly for Cbp-specific ELD and TRE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by homoeolog expression change analysis (Figure 8). The pattern in resynthesized allotetraploids (C74) fits the third scenario of intergenomic cis-trans interactions, where EL-recessive homoeologs show larger expression changes while EL-dominant homoeologs remain near zero. The different pattern in Cbp-specific ELD (C75) and TRE (C76), where both homoeologs change expression, suggests different mechanisms operate during long-term evolution. The analysis appropriately considers alternative mechanisms (homoeologous synapsis, random effects, regulatory interactions) and uses the data to distinguish among them.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Both short-term and long-term mechanisms contributed to transcriptomic and phenotypic changes in natural allotetraploids, but initial gene expression changes were largely reshaped during long-term evolution, leading to further morphological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 represent the main conclusions of the study, synthesizing results from phenotypic, differential expression, ELD, TRE, and HEB analyses. The evidence shows that while ~40% of ELD is shared between resynthesized and natural allotetraploids (short-term), ~60% is Cbp-specific (long-term). TRE is almost entirely absent in resynthesized allotetraploids but present in natural ones. The selfing syndrome is absent in resynthesized allotetraploids despite having the self-compatible parent. These multiple lines of evidence collectively support the two-phase model of allopolyploid evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Transposable elements (TEs) may not function as a strong mutagenic mechanism of HEB variation but could affect selection on HEB variation as a form of genetic load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is speculative and not directly tested in this study. The authors discuss TE content as a potential mechanism for HEB based on prior literature (Woodhouse et al., 2014) but do not analyze TE content or distribution in their samples. The claim is presented as speculation in the discussion to reconcile their findings with prior observations, but lacks direct supporting evidence from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The breakdown of self-incompatibility in allotetraploid Capsella can directly result from hybridizing with the self-fertilizing species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by citations to Bachmann et al., 2021 and Duan et al., 2023. This provides context for understanding the self-compatibility of the resynthesized allotetraploids used in this study.",
+    "result_type": "MINOR"
+  }
+]

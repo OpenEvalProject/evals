@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C27",
+      "C85",
+      "C86"
+    ],
+    "result": "A high-throughput screen of the ReFRAME library (~13,000 compounds) at three concentrations (200 nM, 2 \u00b5M, 10 \u00b5M) identified nine kinase inhibitors as reproducible YAP activators using a TEAD-LUC reporter assay with hits defined as >5 robust Z-scores above mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C27, C85, and C86 provide consistent methodological details and results from the screening campaign. The library composition (C1), screening conditions (C85), hit criteria (C86), and final hit count (C27) are all explicitly stated and supported by Figure 1, forming a coherent description of the screening approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C91"
+    ],
+    "result": "SM04690, a clinical-stage CLK2 inhibitor in trials for osteoarthritis, activates YAP with an EC50 of 1.2 nM in TEAD-LUC assays, increases YAP target gene transcripts (ANKRD1, CTGF), decreases YAP phosphorylation, promotes nuclear YAP translocation, and enhances keratinocyte proliferation at non-cytotoxic concentrations (<0.5 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C33-C38, and C91 collectively demonstrate SM04690's YAP-activating properties through multiple complementary assays (reporter, RT-qPCR, Western blot, immunofluorescence, proliferation). The YAP-dependency is confirmed by shRNA knockdown (C36), and all data are supported by figures. The EC50 value and functional outcomes are consistent across experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The screen identified additional YAP-activating kinase inhibitors including Cerdulatinib (SYK/JAK inhibitor, EC50=0.31 \u00b5M), Peficitinib (pan-JAK inhibitor, EC50=2.4 \u00b5M), KX02 (SRC family inhibitor, EC50=3.7 \u00b5M), XL-999 (pan RTK inhibitor, EC50=1.5 \u00b5M), and CEP-1347 (JNK inhibitor, EC50=2.5 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 report EC50 values and target specificities for five kinase inhibitors identified in the screen. These are supported by dose-response data in Figure 1D and citations to prior literature characterizing these compounds. The data are internally consistent and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Target deconvolution studies identified CLK2 as the relevant target of SM04690 responsible for YAP activation. Among SM04690's known targets (CLK2, CLK3, DYRK1A/B, HIPK1/2), only CLK2, DYRK1B, HIPK1, and HIPK2 are expressed in HEK293A cells. Only CLK2-selective inhibitors (CC671, CLK-in-T3, T025) activated YAP, while DYRK and CLK4 inhibitors showed no activity. CLK2 knockdown by ~50% with three different shRNAs increased YAP target transcripts (ANKRD1, CTGF, CYR61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide a systematic target identification approach combining expression profiling (C41), pharmacological validation with orthogonal inhibitors (C42-C43), and genetic validation via shRNA knockdown (C44). The convergence of chemical and genetic evidence strongly supports CLK2 as the relevant target. Data are shown in Figures 3A-B and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CLK2 phosphorylates SR proteins of the spliceosomal complex, regulating their localization and pre-mRNA interactions. CLK2 inhibition leads to hypophosphorylated SR proteins and alternative splicing, predominantly exon skipping. Published RNA-seq data shows exon 5 of AMOTL2 is the third most skipped exon transcriptome-wide upon CLK2 inhibition (~3,000 new junction reads), with exon 9 also skipped to a lesser extent (~700 junction reads).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 establish the mechanistic link between CLK2 and alternative splicing, supported by citations to established literature (C45-C47) and reanalysis of published RNA-seq data (C48-C49, citing Araki et al., 2015). The identification of AMOTL2 as a major splicing target provides a plausible connection to Hippo pathway regulation. Figure 3\u2014figure supplement 2 supports C48.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "SM04690 treatment induces alternative splicing of AMOTL2, with 24 hr treatment at 1 \u00b5M causing 629-fold increase in exon 5 skipping and 80-fold increase in exon 9 skipping. Exon skipping is observed at concentrations as low as 10 nM. SM04690 also increases total AMOTL2 transcript levels by 2.3-fold. AMOTL2 interacts with YAP's WW domain and its knockdown promotes YAP nuclear translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 demonstrate SM04690-induced AMOTL2 splicing changes through RT-qPCR and semi-quantitative PCR (Figures 3C, 3\u2014figure supplement 3). The magnitude of splicing changes is substantial and dose-dependent. Claims C50-C51 provide established context from prior literature about AMOTL2's role in YAP regulation, appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The three AMOTL2 splice variants (\u03945, \u03949, \u03945\u03949) retain similar YAP-binding ability as wild-type AMOTL2. However, AMOTL2 \u03945\u03949 overexpression uniquely increases YAP target transcripts 1.5-2-fold compared to wild-type AMOTL2. Overexpression of wild-type AMOTL2 inhibits SM04690-induced upregulation of ANKRD1, CTGF, and CYR61, indicating that alternative splicing is essential to SM04690's mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 demonstrate that exon-skipped AMOTL2 variants activate YAP despite retaining YAP binding (C56), with the double-skipped variant showing the strongest effect (C57). The rescue experiment with wild-type AMOTL2 overexpression (C58) provides critical evidence that splicing is mechanistically required. Data are shown in Figures 3E-G with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "AMOTL2 localizes to tight junctions at the plasma membrane in high-density MDCK cells. SM04690 treatment (1 \u00b5M, 24 hr) causes AMOTL2 to delocalize from the plasma membrane, with >2-fold loss of colocalization with E-cadherin and formation of cytoplasmic puncta (10-fold increase in HEK293A cells). Overexpression of AMOTL2 \u03945\u03949 shows >10-fold increase in puncta compared to wild-type AMOTL2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 demonstrate that SM04690-induced splicing changes AMOTL2 subcellular localization from membrane to cytoplasmic puncta, shown by immunofluorescence and colocalization analysis (Figures 4A-D, supplementary figures). The effect is recapitulated by overexpressing splice variants, providing orthogonal validation. Quantification is rigorous with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SM04690 treatment (1 \u00b5M, 24 hr) decreases AMOTL2 colocalization with tight junction proteins PALS1 and MAGI1 by ~2-fold. AMOTL2 \u03949 and \u03945\u03949 splice variants lose their ability to interact with MAGI1 WW domains. AMOTL2 was originally identified as a MAGI1 interactor and also binds PALS1, localizing YAP to tight junctions where it is inactivated by phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 show that exon-skipped AMOTL2 cannot interact with membrane-associated proteins, demonstrated by colocalization studies (C64-C65, Figures 4E-F, supplementary) and co-immunoprecipitation (C66, Figure 4G). Claims C67-C69 provide established context from prior literature. Together, these explain how splicing disrupts AMOTL2's scaffolding function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "AMOTL2 serves a central role in regulating the Hippo pathway by inhibiting YAP through plasma membrane restraint and stimulating LATS1/2 enzymatic activity. AMOTL2 functions as a scaffolding protein bringing LATS1/2 near MST1/2 at the plasma membrane. Overexpression of wild-type AMOTL2 attenuates YAP-controlled gene transcription in the context of SM04690 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 synthesize established knowledge about AMOTL2's role (C70-C72, appropriately cited) with new experimental evidence (C73, Figure 3G). The integration of prior knowledge with current findings is appropriate and well-supported. C73 provides functional validation that AMOTL2 negatively regulates YAP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The related protein AMOT regulates Hippo pathway activity through biomolecular condensates that concentrate core kinases and potentially sequester YAP. There is considerable redundancy between AMOT and AMOTL2, suggesting AMOTL2 may also regulate YAP through condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76 discuss the possibility that AMOTL2 functions through biomolecular condensates like AMOT, based on functional redundancy between the proteins. While the citations support AMOT's condensate formation (C74) and AMOT/AMOTL2 redundancy (C76), no direct evidence is provided that AMOTL2 forms condensates or that the observed puncta represent phase-separated condensates. This remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Alternative splicing regulates multiple Hippo pathway components: YAP has 8 isoforms affecting LATS1/2 and TEAD interactions; LATS1 and LATS2 exist as 7 and 2 splice variants affecting scaffolding protein interactions and catalytic activity. Breast cancer cell lines show variable CLK2 expression, and YAP hyperactivity is essential in several tumor types including breast cancer, suggesting lower CLK2 activity may increase cancer aggressiveness through this splicing mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 establish that alternative splicing broadly regulates Hippo pathway components, appropriately cited. Claims C80-C81 connect CLK2 expression variability to cancer biology through the demonstrated mechanism, though this connection is somewhat speculative. The logic is sound but would benefit from direct experimental validation in cancer models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "SM04690 was initially reported as a Wnt signaling inhibitor (EC50=19.5 nM) and has been used locally to treat knee osteoarthritis. However, CLK family inhibition induces widespread alternative splicing across many transcripts, suggesting caution is warranted for broad-acting splicing modulators due to potential off-target effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 appropriately contextualize SM04690's prior characterization and clinical use while raising valid concerns about pleiotropy. The comparison of Wnt inhibition EC50 (19.5 nM) to YAP activation EC50 (1.2 nM) suggests YAP effects may occur at therapeutic doses. The caution about widespread splicing effects is well-founded given the transcriptome-wide data cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The Hippo pathway is an evolutionarily conserved kinase cascade regulating cellular proliferation and tissue growth. The core pathway involves MST1/2 phosphorylating LATS1/2, which phosphorylates YAP leading to cytoplasmic retention. When inactivated, YAP translocates to the nucleus and activates TEAD-dependent transcription of proliferation/survival genes. YAP activity is critical for tissue regeneration in liver, skin, and heart, while decreased YAP prevents organ overgrowth. Genetic YAP activation enhances wound repair in multiple tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C23 and C94-C102 provide established background on Hippo pathway biology, all appropriately cited to primary literature. These claims establish the biological rationale for seeking YAP activators as regenerative therapeutics. The citations are appropriate and the knowledge claims are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "The authors previously identified PY-60 as a YAP activator that binds annexin A2 (ANXA2), which they defined as a central component of the Hippo pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 reference the authors' prior work (Shalhout et al., 2021) establishing precedent for discovering YAP activators through chemical screening. This provides appropriate context for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Exon 5 of AMOTL2 is 93 base pairs long with a PCR amplicon of 132 bp including primers. Exon 9 is 180 base pairs long with a PCR amplicon of 218 bp including primers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 provide technical details about AMOTL2 exon sizes used to design and interpret PCR experiments. These are supported by Figure 3\u2014figure supplement 3C showing primer design and gel electrophoresis results matching predicted sizes.",
+    "result_type": "MINOR"
+  }
+]

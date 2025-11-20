@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "YiiP from Shewanella oneidensis is a prokaryotic Zn2+/H+ antiporter that serves as a model for the CDF superfamily. Previous studies have established that YiiP has a homodimeric architecture with three distinct Zn2+ binding sites (A, B, and C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the basic context and prior knowledge about YiiP. These are well-established facts from prior literature (C4, C5) and general knowledge about the CDF superfamily (C1-C3), appropriately cited and providing necessary background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C62",
+      "C68",
+      "C69",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Site C in the cytoplasmic domain is primarily responsible for stabilizing the YiiP homodimer. Removal of Zn2+ from site C (by chelation or mutation) causes CTD movement and weakens dimer interactions, as evidenced by domain swapping in the D287A/H263A mutant and increased distance between CTD residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C62, C68-69, C102-105 collectively demonstrate site C's role in dimer stabilization through multiple lines of evidence: structural analysis showing domain swapping when site C is disrupted (C68-69), SEC analysis showing oligomerization (C62-63), and comparison of binding affinities between full-length and isolated CTDs (C104). The convergence of structural, biochemical, and thermodynamic data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Site B at the cytoplasmic membrane surface controls the structural transition from an inward-facing to an occluded conformation. The D70A mutation resulted in two distinct structures showing progressive conformational changes, with the TM2/TM3 loop becoming disordered when Zn2+ is absent and eventually adopting an extended conformation that occludes site A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40-56, C106-109 provide comprehensive structural and computational evidence for site B's role in conformational transitions. The cryo-EM structures of D70A mutants (C40-46) show clear conformational changes, MD simulations (C50-52) confirm increased loop mobility without Zn2+, and the structural analysis demonstrates occlusion of site A (C45-46, C56). The convergence of experimental structures and computational predictions strongly supports this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Intramembrane site A, which is directly responsible for transport, displays dramatic pH dependence with Kd ranging from 1 nM at pH 7.4 to 302 \u03bcM at pH 5.6 (five orders of magnitude change). Sites B and C show much more modest pH dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-9, C73-74, C77-79 present MST experimental data showing the pH-dependent binding affinity at each site. The dramatic pH dependence at site A (C77) is well-documented with specific Kd values across multiple pH conditions, while sites B and C show more modest changes (C78-79). The data is internally consistent and appropriately quantified with confidence intervals (Table 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C130",
+      "C131",
+      "C132",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "A comprehensive thermodynamic model indicates a transport stoichiometry of 1 Zn2+ to 2-3 H+ depending on external pH. This stoichiometry would be favorable physiologically, allowing the cell to use both the proton gradient and membrane potential to drive Zn2+ export, potentially generating Zn2+ gradients of 10\u00b2 to 10\u2074\u00b7\u2074 depending on stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-11, C130-132, C137-141 present the stoichiometry determination from MST inference modeling (C130-132) and its thermodynamic implications (C137-141). The model is based on experimental MST data refined through computational analysis (C88), and the thermodynamic calculations follow from established Nernst equation principles (C137-141). The stoichiometry conclusion is well-supported by the integration of experimental binding data with thermodynamic modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The D51A mutation effectively eliminated Zn2+ binding at site A, as confirmed by cryo-EM structure at 3.6 \u00c5 resolution showing clear density at sites B and C but no density at site A, while maintaining overall architecture similar to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C30-34 demonstrate successful mutagenesis strategy with structural validation. The cryo-EM structure (C30-31) confirms the mutation's intended effect (C34) while showing minimal perturbation to overall structure (C31-32). The presence of density at sites B and C (C33) serves as an internal control confirming the specificity of the mutation's effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The wild-type structure solved at 3.8 \u00c5 resolution is nearly indistinguishable from the previously published structure 7KZZ (RMSD 1.07 \u00c5). Comparison with D51A shows movements of TM1, TM4, and TM5, with the cytoplasmic end of TM5 showing the largest differences including a kink near His155 and disorder in the TM4-TM5 loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-39 provide structural validation and comparison. The low RMSD to the published structure (C36) validates the experimental approach, while the specific structural differences in D51A (C37-39) are well-documented with quantitative RMSD values. The observations are consistent with loss of Zn2+ coordination at site A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C112",
+      "C113"
+    ],
+    "result": "The access channel to site A in the IF protomer is negatively charged, while the occluded conformation shows positive charge dominating the cytoplasmic surface. Occlusion involves bending of TM5 and tilting of TM1 and TM4, closing off cytoplasmic access and creating a positively charged surface that would repel Zn2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-58, C112-113 describe the electrostatic changes accompanying conformational transitions, supported by structural analysis and electrostatic mapping (Figure 3K-L). The structural basis for occlusion (C112) is clearly documented in the D70A_asym structure, and the electrostatic consequences (C113) provide a mechanistic explanation for directional ion movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The D287A single mutant unexpectedly retained Zn2+ at site C and showed no structural changes. The D287A/H263A double mutant formed higher-order oligomers stabilized by an unprecedented domain swap, with the TM6-CTD linker reconfigured into a long continuous \u03b1-helix, though TMDs remained congruent with wild-type structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-61, C63-67, C70-72 document an unexpected finding that required additional mutagenesis. The structural characterization of the domain-swapped complex is thorough (C65-67, C70-72), and SEC analysis (C63-64) confirms the oligomeric state. However, C82 suggests this domain swap may be Fab-induced, which somewhat limits the physiological interpretation but doesn't invalidate the structural observations about site C's role in dimer stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C80"
+    ],
+    "result": "Site C is binuclear with cooperative Zn2+ binding. Isolating individual C1 and C2 sites reduced apparent affinity (Kd from 33 nM to 153-223 nM), and cooperativity is reflected in a high Hill coefficient at pH 7 (n=2.9) that decreases at lower pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-76, C80 demonstrate cooperative binding at site C through MST experiments with site-specific mutants. The reduced affinity when sites are isolated (C75) and the high Hill coefficient (C80) are consistent with positive cooperativity. However, the variability in Hill coefficients noted in Table 3 introduces some uncertainty about the quantitative interpretation of cooperativity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "All mutants used for MST studies eluted from SEC at the same volume as wild-type in the absence of Fab, indicating they adopted native dimeric structure. This suggests the domain-swapping in D287A/H263A was Fab-induced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-82 provide important controls for the MST experiments, demonstrating that the mutations don't disrupt native structure in the absence of Fab. The SEC analysis (Figure 4\u2014supplement 1I-J) directly supports the inference that Fab induces the domain swap (C82), which is important for interpreting the physiological relevance of the D287A/H263A structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CpHMD simulations predicted pKa values for residues at sites A and B, but the CpHMD-based model did not agree with experimental MST data. After refinement using MST inference, the model closely reproduced pH-dependent Zn2+ binding and revealed that at cytosolic pH, site A has 2 protons bound (His155 and Asp159 forming a cooperative system), while site B has 1 proton bound. Zn2+ binding displaces all protons at both sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-95 describe a sophisticated computational-experimental integration. The initial CpHMD predictions (C83-86) didn't match experiments (C87), requiring refinement through MST inference (C88). The refined model (C89-95) provides detailed mechanistic insights about protonation states. The approach is methodologically sound, though the need for substantial parameter refinement (Table 4 shows large pKa shifts) indicates limitations in the initial computational predictions. The final model's agreement with experimental data (C88) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Dimerization is a universal feature of CDF transporters with conserved dimer interface elements. The TMD interface is remarkably conserved in D70A and D287A/H263A mutants despite large conformational changes, leading to the conclusion that TMDs are unlikely to undergo large-scale scissoring movements during transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-100 synthesize structural observations across multiple structures to reach a mechanistic conclusion. The conservation of the TMD interface despite dramatic conformational changes in CTD and loops (C99) provides strong evidence against scissoring movements (C100). This conclusion is well-supported by the structural data and comparison with other CDF structures (Figure 5\u2014supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "While isolated CTDs show metal ion-dependent scissor-like movements, full-length YiiP shows CTD movement when Zn2+ is removed from site C. The Fab-induced domain swap in D287A/H263A indicates weakened CTD interactions without Zn2+, but dimer stabilization via TMD interactions likely enhances Zn2+ binding in the CTD (Kd 33 nM vs. micromolar for isolated CTDs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-105 reconcile observations from isolated domains with full-length protein behavior. The comparison of binding affinities between full-length and isolated CTDs (C104) provides quantitative support for the role of TMD interactions in enhancing CTD stability. The inference about physiological site C occupancy (C105) follows logically from the high affinity at pH 7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Occlusion occurs in only one protomer of the D70A_asym structure, suggesting lack of synchrony across the dimer axis and implying that one protomer may undergo transport while the other remains inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-118 describe an important mechanistic observation from the D70A_asym structure. The asymmetry is clearly documented in the structure (C44-46), and the inference about independent protomer function (C118) is reasonable. This finding has important implications for the transport mechanism and is consistent with asymmetric states observed in other transporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "A two-step mechanism involving initial Zn2+ recruitment to site B followed by transfer to site A might be necessary because essentially all cytoplasmic Zn2+ exists in chelated form. Site B's accessibility makes it a plausible initial recruitment site, and transfer to site A would be facilitated by the large affinity difference and negative charge of the access channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-123 present a speculative mechanistic model. While the observations about chelated Zn2+ (C120, cited), site B accessibility (C121), and affinity differences (C123) are well-supported, the proposed two-step mechanism (C119, C122) is speculative (C119 explicitly states 'might be necessary'). The model is plausible and consistent with the data, but lacks direct experimental validation of the proposed Zn2+ transfer pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The analysis predicts significant pKa shifts for Zn-binding residues, reflecting strong Coulomb interactions due to the low dielectric of the membrane and clustering of titratable residues. Such environmental effects on pKa values are well-documented in the literature, with shifts up to 9 pH units for acidic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-136 discuss the theoretical basis for the observed pKa shifts. The prediction of significant shifts (C133) is supported by the modeling results (Table 4), and the mechanistic explanation (C134) is sound. The citation of prior work showing similar pKa shifts (C135-136) provides important context and validation for the magnitude of shifts observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The pH dependence of Zn2+ binding has implications for transport kinetics. The dramatic difference in Kd between cytoplasmic pH 7.4 (1 nM) and periplasmic pH 6 (6 \u03bcM) implies that the on-rate dominates in the cytoplasm while the off-rate is enhanced in the periplasm, greatly enhancing the rate of transport and equilibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-144 present kinetic implications of the thermodynamic measurements. The inference about differential on/off rates (C143) follows logically from the Kd differences, and the conclusion about enhanced transport rates (C144) is thermodynamically sound and appropriately cited (Tanford, 1983). This represents a valid extension of the experimental findings to kinetic considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "YiiP has three aspartates and one histidine at site A, whereas mammalian Znt's have two histidines. Two histidines would make 1:2 stoichiometry almost certain and 1:3 highly plausible. The resulting electrogenicity could be desirable for eukaryotic cells where these transporters operate in intracellular organelles, as the modest pH gradient would benefit from additional driving force from membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-148 extend the findings to other CDF family members and physiological contexts. The sequence comparison (C145) is factual, and the inference about stoichiometry with two histidines (C146) is reasonable based on the modeling. However, the speculation about physiological advantages in eukaryotic organelles (C147-148) is explicitly speculative and lacks direct experimental support. While plausible, this represents extrapolation beyond the experimental system studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The D70A_sym and D70A_asym structures are speculated to represent a sequence of conformational changes leading to the occluded state, with the novel TM2/TM3 loop-CTD interaction potentially driving helix displacement and site A occlusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-111 are explicitly speculative (C110 states 'We speculate', C111 states 'may drive'). While the structural observations are solid (C44-46, C56), the interpretation as a sequential pathway is inferential. The structures represent different conformational states, but whether they represent sequential steps in a single pathway or alternative states is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Interaction of Leu154 and Leu199 may stabilize the occluded state, though bending of TM5 and tilting of TM1/TM4 may be more directly responsible for blocking site A access. The IF state appears to be a low-energy ground state when Zn2+ is present at all three sites, and removal of Zn2+ from site B can be viewed as providing energy for conformational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-116 discuss the structural basis of occlusion and energetics. The observations about Leu154/Leu199 and helix movements (C114) are supported by structural analysis, though the relative importance is somewhat speculative. The conclusion about the IF state as ground state (C115) is supported by the prevalence of this conformation across multiple structures. The energetic interpretation (C116) is a reasonable inference from the structural observations.",
+    "result_type": "MINOR"
+  }
+]

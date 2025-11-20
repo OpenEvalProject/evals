@@ -1,0 +1,1932 @@
+{
+  "submission": {
+    "id": "82069bfb-acf6-436e-a439-d955802defaf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:59:40.721661Z",
+    "updated_at": "2025-11-20T20:59:40.721661Z"
+  },
+  "content": [
+    {
+      "id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "content_type": "manuscript",
+      "content_text": "# Neural attentional filters and behavioural outcome follow independent individual trajectories over the adult lifespan\n\n## Authors\n\n- Sarah Tune<sup>1</sup> ([ORCID: 0000-0001-9022-9965](https://orcid.org/0000-0001-9022-9965)) \u2020\n- Jonas Obleser<sup>1</sup> ([ORCID: 0000-0002-7619-0459](https://orcid.org/0000-0002-7619-0459)) \u2020\n\n### Affiliations\n\n1. Center of Brain, Behavior, and Metabolism, University of L\u00fcbeck L\u00fcbeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))\n2. Department of Psychology, University of L\u00fcbeck L\u00fcbeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreserved communication abilities promote healthy ageing. To this end, the age-typical loss of sensory acuity might in part be compensated for by an individual\u2019s preserved attentional neural filtering. Is such a compensatory brain\u2013behaviour link longitudinally stable? Can it predict individual change in listening behaviour? We here show that individual listening behaviour and neural filtering ability follow largely independent developmental trajectories modelling electroencephalographic and behavioural data of N = 105 ageing individuals (39\u201382 y). First, despite the expected decline in hearing-threshold-derived sensory acuity, listening-task performance proved stable over 2 y. Second, neural filtering and behaviour were correlated only within each separate measurement timepoint (T1, T2). Longitudinally, however, our results raise caution on attention-guided neural filtering metrics as predictors of individual trajectories in listening behaviour: neither neural filtering at T1 nor its 2-year change could predict individual 2-year behavioural change, under a combination of modelling strategies.\n\n## Introduction\n\nSpeech comprehension is an essential aspect of human communication, enabling us to understand and interact with others effectively. Preserved communication is therefore critical to social well-being and healthy ageing (Lindenberger, 2014). Any translational advance aimed at maintaining and restoring successful cognitive ageing crucially relies on understanding the factors that explain and predict individual trajectories of listening performance. However, the evidence on these potential factors is astonishingly limited.\n\nAs we age, our ability to comprehend speech can decline due to age-related changes in the auditory system (i.e. sensory acuity) and in cognitive resources. Age-related hearing loss reduces the ability to detect and discriminate speech sounds, especially in noisy environments. However, it has long been recognised that increasing age and hearing loss cannot fully account for the considerable degree of inter-individual differences observed in listening behaviour and its lifespan change (Akeroyd, 2008; Houtgast and Festen, 2008; Humes et al., 2012).\n\nRecent research has focused on the neurobiological mechanisms that promote successful speech comprehension by implementing \u2018neural filters\u2019 that segregate behaviourally relevant from irrelevant sounds. Such neural filter mechanisms act by selectively increasing the sensory gain for behaviourally relevant inputs or by inhibiting the processing of irrelevant inputs (Cherry, 1953; Broadbent, 1958; W\u00f6stmann et al., 2020). A growing body of evidence suggests that speech comprehension is neurally supported by an attention-guided filter mechanism that modulates sensory gain and arises from primary auditory and perisylvian brain regions: by synchronising its neural activity with the temporal structure of the speech signal of interest, the brain \u2018tracks\u2019 and thereby better encodes behaviourally relevant auditory inputs to enable attentive listening (Ding and Simon, 2012; Zion Golumbic et al., 2013; Obleser and Kayser, 2019; Lakatos et al., 2008).\n\nIn a large age-varying cohort (N = 155; 39\u201380 y), we have previously shown how the fidelity of this neural filtering strategy can help explain differences in listening behaviour (i) from individual to individual and (ii) within individuals from sentence to sentence (Tune et al., 2021; O\u2019Sullivan et al., 2015; Mesgarani and Chang, 2012). As participants performed a challenging dual-talker listening task, we recorded their electroencephalogram (EEG). We observed that enhanced neural filtering\u2014defined as stronger neural tracking of attended vs. ignored speech\u2014led to more accurate and overall faster responses. Notably, we observed both neural filtering as well as its link to behaviour to be independent of chronological age and severity of hearing loss (Tune et al., 2021; Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig1-v1.jpg)\n\n**Figure 1.:** (A) Listening behaviour at a given timepoint is shaped by an individual\u2019s sensory and neural functioning. Increased age decreases listening behaviour both directly and indirectly via age-related hearing loss. Listening behaviour is supported by better neural filtering ability, independently of age and hearing acuity. (B) Conceptual depiction of individual 2-year changes along the neural (blue) and behavioural (red) domain. Thin coloured lines show individual trajectories across the adult lifespan, while thick lines and black arrows highlight 2-year changes in a single individual. (C) Left schematic diagram highlighting the key research questions detailed in the introduction and how they are addressed in the current study using latent change score modelling. Right: across individuals, co-occurring changes in the neural and behavioural domain may be correlated (top) or independent of one another (bottom).\n\nThe observation of such brain\u2013behaviour relationships critically advances our understanding of the neurobiological foundation of cognitive functioning by showing, for example, how neural implementations of auditory selective attention support attentive listening. They also provide fruitful ground for scientific inquiries into the translational potential of neural markers. However, the potency of neural markers to predict future behavioural outcomes is often only implicitly assumed but seldom put to the test (Woo et al., 2017).\n\nUsing auditory cognition as a model system, we here aim to overcome this limitation by testing directly the hitherto unknown longitudinal stability of neural filtering as a neural compensatory mechanism upholding communication success. Going further, we ask to what extent an individual\u2019s attentional neural-filtering ability measured at a given moment is able to predict their future trajectory in listening performance. Only if this is the case, and only if such an association can plausibly be assumed to be causal for future changes in communication ability, neural filtering would be a potential translational target.\n\nWe here aim to fill this gap by analysing 2-year changes in the sensory, neural, and behavioural domain in a longitudinal subsample (N = 105; 39\u201382 y) of the original AUDADAPT cohort (Tune et al., 2021; Figure 2A). We apply a combination of advanced cross-sectional and longitudinal modelling strategies to address the following specific research questions (Figure 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig2-v1.jpg)\n\n**Figure 2.:** (A) Longitudinal cohort of healthy middle-aged and older adults measured twice, 2 y apart. Circles represent individual participants at a given measurement time (dark grey: timepoint [T] 1, light grey: T2, white: dropouts after T1). Bottom: age distribution at T1 and T2 across 5-year bins. (B) Left: T1(N = 155) air conduction hearing thresholds per individual (thin grey lines) and age group (thick coloured lines). Note that for didactic purposes, throughout the article, thresholds are expressed as \u2013dB HL to highlight the decrease in hearing acuity with age (left). Right: Pure-tone average hearing acuity (0.5, 1, 2, and 4 kHz across both ears; higher is better) negatively correlates with age (N = 155; r = \u20130.43, p=3.73 \u00d7 10\u20136). (C) Participants listened to two sentences presented simultaneously to the left and right ear. In 50% of trials, a preceding visual cue indicated the to-be-attended target sentence. Listening behaviour is quantified via the accuracy and speed in identifying the final word of the target sentence. (D) Left: neural speech tracking as a proxy of an individual\u2019s neural filtering ability. Stimulus envelopes of attended and ignored sentences were reconstructed from source-localised electroencephalogram (EEG) activity in auditory cortex (see \u2018Materials and methods\u2019 for details) and correlated with the actual envelopes. Right: better neural filtering results from stronger neural tracking of attended compared to ignored speech. We analysed neural filtering derived from the entire sentence presentation period.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Trial structure of dichotic listening task. In each trial, participants listened to two dichotically presented short sentences spoken by the same speaker. They had to identify the final word in one of the two sentences. Sentence presentation was preceded by two visual cues. (B) 2 \u00d7 2 design in which the presentation of the spatial-attention and semantic cue was fully crossed. Each cue was presented in either an informative or uninformative neural version. (C) Prior to the listening task, we recorded resting-state electroencephalogram (EEG) data. The listening task was presented in six blocks of 60 trials with break in between.\n\nFirst, by focusing on each domain individually, we ask how sensory, neural, and behavioural functioning evolve cross-sectionally across the middle and older adult lifespan (Figure 1B). More importantly, we also ask how they change longitudinally across the studied 2-year period (Figure 1C, Q1), and whether ageing individuals differ significantly in their degree of change (Q2). We expect individuals\u2019 hearing acuity and behaviour to decrease from T1 to T2. Since we previously observed inter-individual differences in neural filtering to be independent of age and hearing status, we did not expect any systematic longitudinal change in neural filtering.\n\nSecond, we test the longitudinal stability of the previously observed age- and hearing-loss-independent effect of neural filtering on both accuracy and response speed (Figure 1A). To this end, we analyse the multivariate direct and indirect relationships of hearing acuity, neural filtering, and listening behaviour within and across timepoints.\n\nThird, leveraging the strengths of latent change score modelling (LCSM) (McArdle, 2009; Kievit et al., 2018), we fuse cross-sectional and longitudinal perspectives to probe the role of neural filtering as a precursor of behavioural change in two different ways: we ask whether an individual\u2019s T1 neural filtering strength can predict the observed behavioural longitudinal change (Q3), and whether 2-year change in neural filtering can explain concurrent change in listening behaviour (Q4). Here, irrespective of the observed magnitude and direction of T1\u2013T2 developments, two scenarios are conceivable: Intra-individual neural and behavioural change may be either be correlated\u2014lending support to a compensatory role of neural filtering\u2014or instead follow independent trajectories (Oschwald et al., 2019; Figure 1C).\n\nAnswering these questions is vital for understanding the neurobiological mechanisms of successful communication across the lifespan. Answering them will also critically inform the development of interventions targeted at maintaining or restoring communication success and therefore concerns basic and applied researchers alike.\n\n## Results\n\nWe studied an age-varying cohort of healthy middle-aged and older adults longitudinally (N = 105, 39\u201382 y, median age at T2: 63 y). The mean time difference between the two measurement timepoints reported here was 23.2 (SD: 4.0) mo. We characterise the multivariate relationship of key measures of sensory, neural, and behavioural functioning to explain and predict individual trajectories of listening performance.\n\nAt each of two measurement timepoints, participants underwent audiological assessment followed by EEG recording during which they performed a difficult dual-talker dichotic listening task (Figure 2A and B; Tune et al., 2021; Alavash et al., 2021; Alavash et al., 2019). In each trial of the task, participants listened to two temporally aligned but spatially separated five-word sentences. They then had to identify the final word in one of the two sentences from a visual array of four alternatives given a 4 s time limit (Figure 2C, Figure 2\u2014figure supplement 1). In 50% of the trials, a visual spatial-attention cue indicated the side of target sentence presentation, the other half of trials were preceded by an uninformative neutral cue.\n\nWe extracted individuals\u2019 mean accuracy and response speed (calculated as the inverse of reaction time) as key readouts of listening behaviour. On the basis of source-localised 1\u20138 Hz auditory cortical activity, we further quantified individuals\u2019 neural filtering ability as their attention-guided neural tracking of relevant vs. irrelevant speech (Figure 2D; see also Tune et al., 2021 and \u2018Materials and methods\u2019 for details). Our main analyses focus on neural filtering and listening performance averaged across all trials and thereby also across two separate spatial-attention conditions. This choice allowed us to most directly probe the trait-like nature and relationships of neural filtering. It was additionally supported by our previous observation of a general boost in behavioural performance with stronger neural filtering, irrespective of spatial attention (Tune et al., 2021).\n\nWe follow a three-step analysis strategy to address our specific research questions. First, we provide a largely descriptive overview of the observed average 2-year change per studied domain. Second, we follow up on this fundamental analysis with a causal mediation analysis (Imai et al., 2010) and single-trial mixed-effect model analysis geared to assess the longitudinal stability of our recently reported effects of age, hearing acuity, and neural filtering on listening task performance. Third, we integrate and extend the first two analysis perspectives in a joint LCSM (McArdle, 2009) to most directly probe the role of neural filtering ability as a predictor of future attentive listening ability. Addressing our key change-related research questions at the latent rather than the manifest level supersedes the manual calculation of notoriously noisy differences scores and effectively removes the influence of each metric\u2019s reliability on the estimation of change-related relationships (McArdle, 2009; Kievit et al., 2018; McArdle and Nesselroade, 1994).\n\n### Listening performance remains stable despite decreased hearing acuity\n\nIn a first analysis (Figure 3), we characterised how hearing acuity, neural filtering, and listening performance change across the middle to older adult lifespan. Additionally, we analysed longitudinal change from timepoint 1 (T1) to timepoint 2 (T2). We used the same linear mixed-effect models to test cross-sectional effects of age and longitudinal changes with time. We additionally quantified each measure\u2019s test\u2013retest reliability as their T1\u2013T2 Pearson\u2019s correlation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig3-v1.jpg)\n\n**Figure 3.:** For each domain, coloured vectors (colour coding four age groups for illustrative purposes, only) in the respective left subpanels show an individual\u2019s change from T1 to T2 (N = 105), along with the cross-sectional trend plus 95% confidence interval (CI) separately for T1 (dark grey) and T2 (light grey). Top right subpanels: correlation of T1 and T2 as a measure of test\u2013retest reliability along with the 45\u00b0 line (grey) and individual data points (black circles). Bottom right panels: mean longitudinal change per age group (coloured vectors) and grand mean change (grey). Note that accuracy is expressed here as proportion correct for illustrative purposes, but was analysed logit-transformed or by applying generalised linear models.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Mean progression of hearing loss from T1 to T2 as calculated from 2-year differences in the individual pure-tone average hearing thresholds at 0.5, 1,2, and 4 kHz. Coloured dots represent the single-subject difference across four age groups (total N = 105 participants), while black dots and error bars indicate grand-average and bootstrapped 95% confidence interval (CI). Box plots show median centre line, 25th to 75th percentile hinges, whiskers indicate minimum and maximum within 1.5\u00d7 interquartile range. (B) Analogue to panel (A) but showing the projected hearing loss progression (increase in db HL per decade) assuming a constant rate of change per individual.\n\nNote that throughout the article and all analyses, we reversed the sign of pure-tone average (PTA) values to express them as an index of hearing acuity rather than hearing loss (i.e. higher values indicating better acuity). Similarly, for more intuitive interpretation, accuracy is visually presented as mean proportion correct but was logit-transformed for all statistical analyses to satisfy model assumptions.\n\nAs expected, hearing acuity decreased linearly with increasing age (Figure 3A, \u03b2 = \u20133.4, standard error [SE] = 0.71, p<0.001) and on average by 1.2 dB from T1 to T2 (\u03b2 = \u20131.18, SE = 0.27, p<0.001; meanT1: \u201313.72 dB HL [SD: 7.8]; meanT2: \u201314.90 dB HL [8.3]). The effect of age did not change with time (age \u00d7 timepoint \u03b2 = \u20130.35, SE = 0.28, p=0.21). Assuming constant individual progression rates, this observed change corresponds to a projected average decrease in hearing acuity per decade of \u20136.3 (SD: 15.3) dB HL (Figure 3\u2014figure supplement 1). The magnitude of observed and projected hearing loss progression is well in line with recent large-sample reports (Linssen et al., 2014; Rigters et al., 2018; Wiley et al., 2008). Measurements of hearing acuity showed high test\u2013retest reliability (r = 0.94, p<0.001), underscoring the high fidelity of our audiological assessment.\n\nIn line with known deleterious effects of age, both behavioural outcomes (response speed and accuracy) declined with increasing age, and did so to a similar degree in T1 and T2 (Figure 3C and D; speed: \u03b2 = \u20130.02, SE = 0.01, p=0.004; accuracy: \u03b2 = \u20130.23, SE = 0.07, p=0.0001; timepoint \u00d7 age p>0.12). At the same time and contrary to our expectations, average performance levels remained stable from T1 to T2 (speed: \u03b2 = 0.004, SE = 0.01, p=0.44; meanT1: 0.62 s\u20131 [0.08]; meanT2: 0.62 s\u20131 [0.08]; accuracy: \u03b2 = 0.04, SE = 0.05, p=0.36, meanT1: 0.88% [0.09]; meanT2: 0.88% [0.11]). Accuracy and response speed showed moderately high test\u2013retest reliability (speed: r = 0.70, p<0.001; accuracy: r = 0.72, p<0.001).\n\nThe analysis of change in neural filtering revealed that its strength varied independently of age at both timepoints (Figure 3B, \u03b2 = 0.0003, SE = 0.0005, p=0.48; timepoint \u00d7 age \u03b2 = \u20130.0002, SE = 0.0006, p=0.79), confirming our previously reported T1 results (Tune et al., 2021). As shown in Figure 3 (bottom-left panel), magnitude and direction of observed longitudinal change are highly variable across individuals and age groups, and we did not find evidence of any systematic group-level change from T1 to T2 (\u03b2 = 0.001, SE = 0.001, p=0.16). In addition, individual neural filtering strength correlated only weakly across time (r = 0.21, p=0.03).\n\nWe also assessed the reliability of two established neural traits using resting-state EEG from the same recording sessions: the individual alpha frequency (IAF) (Corcoran et al., 2018) and the slope of 1/f neural noise (Donoghue et al., 2020; Voytek et al., 2015). As expected, both metrics showed high test\u2013retest reliability (IAF: r = 0.83, p<0.001; 1/f slope: r = 0.78, p<0.001). These findings provide a reference level on reliability, demonstrating that the weak reliability of the neural filtering metric is not due primarily to differences in EEG signal quality across sessions.\n\nThe temporal instability of neural filtering challenges its status as a candidate trait-like neural marker of attentive listening ability. At the same time, irrespective of the degree of reliability of neural filtering itself, across individuals it may still be reliably linked to the behavioural outcome (Figure 1). This will be addressed next.\n\n### Neural filtering reliably supports listening performance independent of age and hearing status\n\nOn the basis of the full (T1 and T2) dataset, we aimed to replicate our key T1 results and test whether the previously observed between-subjects brain\u2013behaviour relationship would hold across time: we expected an individual\u2019s neural filtering ability to impact their listening performance (accuracy and response speed) independently of age or hearing status (Tune et al., 2021). Given the moderately strong correlation of age and hearing acuity (r = \u20130.43; p<0.001; Figure 2B), we employed causal mediation analysis to model the direct as well as the hearing-acuity-mediated effect of age on the behavioural outcome (Imai et al., 2010). To formally test the stability of direct and indirect relationships across time, we used a moderated mediation analysis. In this analysis, the inclusion of interactions by timepoint tested whether the influence of age, sensory acuity, and neural filtering on behaviour varied significantly across time.\n\nOur expectations on the direct relationships were indeed borne out by the data: higher age was associated with poorer hearing ability (\u03b2 = \u20130.43, SE = 0.09, p<0.001) and listening performance (speed: \u03b2 = \u20130.33, SE = 0.06, p<0.001; accuracy: \u03b2 = \u20130.26, SE = 0.06, p<0.001). Better hearing ability, on the other hand, boosted accuracy but not response speed (accuracy: \u03b2 = 0.30, SE = 0.1, p=0.003; speed: \u03b2 = \u20130.06, SE = 0.1, p=0.56). These direct effects remained stable from T1 to T2 (all interactions by timepoint p>0.56; all log Bayes factors [logBF01] >2.5).\n\nAge also impacted accuracy indirectly: the total effect of age was partially mediated via its detrimental effect on hearing acuity (average causal mediation effect [ACME], \u03b2 = \u20130.12, SE = 0.04, p<0.001). We did not find evidence for an analogous indirect effect on speed (ACME: \u03b2 = 0.008, SE = 0.03, p=0.77). Again, the hearing-acuity-mediated effect of age on accuracy did not change from T1 to T2 as evidenced by moderated mediation analysis (interaction by timepoint p=0.73).\n\nSpeaking to the robustness of our previous results, we observed the beneficial effect of stronger neural filtering fidelity on both measures of listening performance (accuracy: \u03b2 = 0.21, SE = 0.09, p=0.02; speed: \u03b2 = 0.33, SE = 0.09, p<0.001). Note that the magnitude of this direct brain\u2013behaviour effect is comparable to that of the direct effect of age. Alternative models that included indirect, neural filtering-mediated paths from either age or hearing acuity to behaviour did not reveal any significant mediation effects.\n\nMost importantly, the longitudinal stability of the observed direct brain\u2013behaviour link was further supported by the absence of any significant changes with time (interactions by timepoint; all p>0.28, all logBF01 > 2.1).\n\nIn our previous T1 analysis (N = 155) (Tune et al., 2021), we had found evidence for the here analysed brain\u2013behaviour link at two different levels of observation: (i) at the trait level\u2014individuals with overall stronger neural filtering also performed better overall\u2014and (ii) at the state level\u2014stronger neural filtering in a given trial raised the chances of responding correctly. Aiming at replication of the state-level (i.e. within-participant) relationship, we ran a single-trial linear mixed-effect model analysis on our longitudinal N = 105 sample. This analysis utilised single-trial data of both T1 and T2.\n\nLending credibility to our previous results, stronger single-trial neural filtering was associated with higher listening success at both T1 and T2 (logistic mixed-effect model; within-participant effect of neural filtering on accuracy: odds ratio [OR] = 1.08, SE = 0.02, p<0.001; interaction neural filtering \u00d7 timepoint: OR = 0.99, SE = 0.03, p=0.82; Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig4-v1.jpg)\n\n**Figure 4.:** Causal mediation analysis of age, hearing acuity, and neural filtering on response speed (A) and logit-transformed accuracy (B) of N = 105 individuals. Graphs next to each path indicate standardised coefficients plus 95% confidence interval (CIs) separately for the full dataset (black), T1 (dark grey), and T2 (light grey). We did not find any significant modulation of the observed effects with time (see text for results). (C) Neural filtering strength was found to be predictive of accuracy at the single-trial level at both T1 (top) and T2 (bottom). Grey lines show individual effects, while blue thick line shows the group-level fixed effect along with 95% CI. OR = odds ratio, **p<0.01.\n\n### Accuracy is longitudinally stable but speed and neural filtering increase at T2\n\nHaving established the longitudinal stability of the beneficial impact of intact neural filtering on listening performance, we turned to our final, most comprehensive analysis.\n\nIn an LCSM, in its bivariate form sometimes termed a parallel process model (McArdle, 2009; Kievit et al., 2018), we connected the neural and behavioural domain. This allowed us to most directly probe the potential role of neural filtering as a precursor of behavioural changes. Specifically, we asked: (i) Is an individual\u2019s baseline (T1) level of neural filtering ability predictive of their 2-year change in behaviour? (ii) Are individual differences in longitudinal dynamics in the behavioural domain associated with those in the neural domain?\n\nAs a technical note, it is worth reiterating that in the present data the highly variable, weakly reliable surface measure of neural filtering was nonetheless robustly connected to the behavioural outcome (see above and Figure 4). It is in such scenarios that the LCSM framework comes with particular methodological benefits: by expressing individuals\u2019 T1 and T2 levels, as well as their T1\u2013T2 change as latent variables instead of manifest indicators, these types of models circumvent the calculation of notoriously unreliable noisy difference scores. They also avoid potential regression to the mean due to random errors (Kievit et al., 2018; McArdle and Nesselroade, 1994). Instead, the measurement errors of both, latent variables and their associated indicators, are explicitly modelled and thus effectively removed from the estimates of individual differences and relationships of interest (McArdle, 2009).\n\nAccordingly, for our metrics, we estimated T1 and T2 latent variables of behavioural and neural filtering from two manifest indicators each. These indicators were the average of each metric across the first and second half of the experiment, respectively (see \u2018Materials and methods\u2019 for details). For all measurement models, the standardised factor loadings were significant (all ps<0.05; all standardised \u03bb > 0.55). The assumption of strict factorial invariance across time could be maintained for all models (all \u0394\u03c72(df = 1) < 3.4, all p>0.07).\n\nWe then constructed univariate LCSMs to test for significant mean change in each metric from T1 to T2 while adjusting for their respective baseline (T1) level. The univariate models had acceptable (speed: \u03c72(df = 5) = 9.7, p=0.085, comparative fit index [CFI] = 0.988, root mean square error of approximation [RMSEA] = 0.094) to excellent fit (accuracy: \u03c72(df = 5) = 5.1, p=0.40, CFI = 0.999, RMSEA = 0.016; neural filtering: \u03c72(df = 5) = 0.6, p=0.99, CFI = 1, RMSEA = 0) according to established indices (Raykov and Marcoulides, 2006).\n\nOn average, listening task accuracy remained stable (b0 = 0.053, SE = 0.045, \u0394\u03c72(df = 1) = 1.33, p=0.25). Response speed, on the other hand, showed a significant mean increase over time (b0 = 0.13, SE = 0.03, \u0394\u03c72(df = 1) = 12.79, p<0.001; Figure 5A). Similarly, the model of neural filtering showed a (marginally) significant mean increase (b0 = 0.24, SE = 0.11, \u0394\u03c72(df = 1) = 2.98, p=0.08; Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig5-v1.jpg)\n\n**Figure 5.:** (A) Univariate latent change score models (LCSM) for response speed (left) and neural filtering (right). All paths denoted with Latin letters refer to freely estimated but constrained to be equal parameters of the respective measurement models. Greek letters refer to freely estimated parameters of the structural model. Highlighted in black is the estimated mean longitudinal change from T1 to T2. Scatterplots in the top-left corner illustrate how capturing T1 and T2 neural and behavioural functioning as latent factors improves their respective test\u2013retest reliability. (B) LCSM relating 2-year changes in neural filtering strength to changes in response speed. Black arrows indicate paths or covariances of interest. Solid black arrows reflect freely estimated and statistically significant effects, while dashed black arrows reflect non-significant effects. All estimates are standardised. Grey arrows show paths that were freely estimated or fixed as part of the structural model but that did not relate to the main research questions. For visual clarity, manifest indicators of the measurement model and all symbols relating to the estimated mean structure are omitted but are identical to those shown in panel (A). ***p<0.001, **p<0.01, *p<0.05, \u271dp=0.08. (C) Scatterplots of model-predicted factor scores that refer to the highlighted paths in panel (B). Top panel shows that baseline-level neural filtering did not predict 2-year change in behavioural functioning, while bottom panel shows the absence of a significant change\u2013change correlation. All panels include data of N = 105 individuals.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Model estimated brain\u2013behaviour baseline\u2013change (via regression) and change\u2013change (via their covariance) relationship. First-order latent variables (T1, T2) were constructed from manifest neural and behavioural metrics extracted from the first and second half of the experiment, respectively. M, mean; COV, covariance; REG, regression path; RES, residual; \u03bb,factor loading; \u0394, change. Residuals and covariances of manifest variables of the same metric were each set to be equal.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Bottom: N = 105 individuals sorted by their change in neural filtering. Positive values indicate an increase in neural filtering over time, while negative values indicae a decrease. Applying the same ordering to individuals\u2019 longitudinal change in response speed (top) does not uncover a systematic relationship in cross-domain changes.\n\nAs a proof of principle, we extracted latent factor scores for T1/T2 neural filtering and response speed from their respective univariate LCSM. By correlating T1 and T2 factor scores per domain, we show how the explicit modelling of measurement errors helps to improve the test\u2013retest reliability compared to that observed at the level of manifest variables (see insets in Figure 5A; neural filtering: r = 0.65, p<0.001, response speed: r = 0.75, p<.001).\n\n### Baseline neural functioning does not predict future change in listening behaviour\n\nBased on the univariate results, we then connected the two metrics that showed a significant mean change, namely speed and neural filtering, in a bivariate model of change (Figure 5B; see also Figure 5\u2014figure supplement 1 for full model details).\n\nIn line with our hypotheses, we modelled the longitudinal impact of T1 neural functioning on the change in speed and tested for a change\u2013change correlation. Since the analyses conducted up to this point have either directly shown or have suggested that longitudinal change per domain may be affected by age, we included individuals\u2019 age at T1 as a time-invariant covariate in the final model. We modelled the influence of age on neural and behavioural functioning at T1 but also on individual change per domain. By accounting for linear effects of age on longitudinal change, we also minimise its potential impact on the estimation of change\u2013change relationship of interest. Note that we refrained from fitting separate models per age group due to both limited and different number of data points per age group. The model fit the data well (\u03c72(df = 27) = 25.65, p=0.54, CFI = 1, RMSEA = 0, 95% CI [0.07]).\n\nHaving ensured factorial invariance and goodness of fit, we can confidently interpret the estimates of individual differences and bivariate relationships that speak to our specific research questions. Crucial to our change-related inquiries, we observed reliable variance (i.e. individual differences) in the longitudinal change in both speed (standardised estimate \u03d5 = 0.88, SE = 0.07, \u0394\u03c72(df = 5) = 94.07, p<0.01) and neural filtering (\u03d5 = 0.81, SE = 0.14, \u0394\u03c72(df = 4) = 25.64, p<.001).\n\nIndividuals\u2019 baseline levels of both speed and neural filtering strength were predictive of their respective longitudinal change: individuals with relatively strong neural filtering or fast responses at T1 showed a smaller increase from T1 to T2, possibly indicating ceiling effects (speed: \u03b2 = \u20130.43, SE = 0.12, \u0394\u03c72(df = 1) = 8.75, p=0.003; neural filtering: \u03b2 = \u20130.44, SE = 0.16, \u0394\u03c72(df = 1) = 4.17, p=0.04).\n\nWe also observed that participants\u2019 age at T1 covaried with the individual degree of change in speed but not with that in neural filtering: The older a participant at T1, the smaller their longitudinal increase in speed (speed: \u03d5 = \u20130.24, SE = 0.11, \u0394\u03c72(df = 1) = 4.38, p=0.037; neural filtering: \u03d5 = \u20130.02, SE = 0.14, \u0394\u03c72(df = 1) = 0.02, p=0.89).\n\nImportantly, however, an individual\u2019s latent T1 level of neural filtering strength was not predictive of the ensuing latent T1\u2013T2 change in response speed (\u03b2 = 0.02, SE = 0.16, \u0394\u03c72(df = 1) = 0.02, p=0.90). We did not have any a priori hypotheses on the influence of T1 speed on the individual T1\u2013T2 change in neural filtering. Still, in a control analysis that freely estimated the respective path, we found that an individual\u2019s latent T1 level of response speed was not predictive of the ensuing latent T1\u2013T2 change in neural filtering (\u03b2 = \u20130.11, SE = 0.21, \u0394\u03c72(df = 1) = 0.31, p=0.58).\n\n### Neural filtering ability and listening behaviour follow independent developmental trajectories in later adulthood\n\nFinally, we turn to the last piece in our investigation where we address the question of whether individual differences in the neural and behavioural longitudinal change are connected. In other words: Are the contemporaneous changes along the two studied domains correlated or do they occur largely independently of one another?\n\nChange score modelling revealed that longitudinal change in the neural and the behavioural domain occurred largely independent of one another despite their systematic relationship within each separate measurement timepoint (\u03d5 = 0.25, SE = 0.15, \u0394\u03c72(df = 1) = 2.74, p=0.1). In other words, those individuals who showed the largest change in neural filtering were not necessarily the ones who also changed the most in terms of their behavioural functioning (see Figure 5C, bottom panel, and Figure 5\u2014figure supplement 2).\n\n### Control analyses: The weak correlation of behavioural and neural change is robust against different quantifications of neural filtering\n\nTaken together, our main analyses revealed that inter-individual differences in behavioural change could only be predicted by baseline age and baseline behavioural but not neural functioning, and did not correlate with contemporaneous neural changes.\n\nHowever, one could ask in how far core methodological decisions taken in the current study, namely our focus on (i) the differential neural tracking of relevant vs. irrelevant speech as proxy of neural filtering, and (ii) on its trait-level characterisation that averaged across different spatial-attention conditions may have impacted these results. Specifically, if the neural filtering index (compared to the neural tracking of attended speech alone) is found to be less stable generally, would this also impact the chances of observing a systematic change\u2013change relationship? Relatedly, did the analysis of neural filtering across all trials underestimate the effects of interest?\n\nTo evaluate the impact of these consideration on our main findings, we conducted two additional control analyses. First, we repeated the main analyses using the neural filtering index (and response speed) averaged across selective-attention trials, only. Second, we repeated the main analyses focused on the neural tracking of attended speech only, again averaged across selective-attention trials.\n\nAs shown in Figure 6, taken together, the control analyses provide compelling empirical support for the robustness of our main results: linking response speed and neural filtering under selective attention strengthened their relationship at T1 (\u03d5 = 0.54, SE = 0.15, \u0394\u03c72(df = 1) = 2.74, p=0.1; Figure 6B; see also Figure 6\u2014figure supplement 1) but did not yield any significant effects for the influence of T1 neural filtering on behavioural change (\u03b2 = 0.13, SE = 0.21, \u0394\u03c72(df = 1) = 0.43, p=0.51), or for the relationship of neural and behavioural change (\u03d5 = 0.26, SE = 0.14, \u0394\u03c72(df = 1) = 3.1, p=0.08; please note the close correspondence to path estimates reported in Figure 5).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig6-v1.jpg)\n\n**Figure 6.:** Cross-sectional and longitudinal change in neural filtering (A) and neural tracking of attended speech (C) averaged across selective-attention trials, only. Coloured vectors (colour coding four age groups for illustrative purposes, only) in the left subpanels show individual T1\u2013T2 change along with the cross-sectional trend plus 95% confidence interval (CI) separately for T1 (dark grey) and T2 (light grey). Top right: correlation of T1 and T2 as a measure of test\u2013retest reliability along with the 45\u00b0 line (grey) and individual data points (black circles). Bottom right: mean longitudinal change per age group and grand mean change (grey). (B, D) Latent change score model (LCSM) relating 2-year changes in neural filtering (B) /neural tracking (D) strength to changes in response speed. Black arrows show the paths or covariances of interest that were freely estimates, while grey arrows show paths that were freely estimated or fixed as part of the structural model but did not relate to the main research questions. Solid arrows indicate statistically significant effects, while dashed arrows reflect non-significant paths. All estimates are standardised. ***p<0.001, **p<0.01, *p<0.05. All panels include data from N = 105 individuals.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Coloured vectors (colour coding four age groups for illustrative purposes, only) in the left subpanels show individual T1\u2013T2 change in N = 105 individuals along with the cross-sectional trend plus 95% confidence interval (CI) separately for T1 (dark grey) and T2 (light grey). Top right: correlation of T1 and T2 as a measure of test\u2013retest reliability along with the 45\u00b0 line (grey) and individual data points (black circles). Bottom right: mean longitudinal change per age group and grand mean change (grey).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92079/elife-92079-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Coloured vectors (colour coding four age groups for illustrative purposes, only) in the left subpanels show individual T1\u2013T2 change in N = 105 individuals along with the cross-sectional trend plus 95% confidence interval (CI) separately for T1 (dark grey) and T2 (light grey). Top right: correlation of T1 and T2 as a measure of test\u2013retest reliability along with the 45\u00b0 line (grey) and individual data points (black circles). Bottom right: mean longitudinal change per age group and grand mean change (grey).\n\nThe second control analysis revealed a substantially higher manifest-level test\u2013retest reliability of neural tracking of attended speech (r = 0.65, p<0.001; Figure 6C, see also Figure 6\u2014figure supplement 2 for neural tracking of ignored speech) compared to that of the neural tracking index. However, when linked to longitudinal changes in response speed, this analysis provided even less evidence for systematic change-related relationships: baseline levels of attended-speech tracking did not predict future change in response speed (\u03b2 = 0.18, SE = 0.11, \u0394\u03c72(df = 1) = 2.73, p=0.10), and changes in neural and behavioural functioning occurred independently of one another (\u03d5 = \u20130.03, SE = 0.12, \u0394\u03c72(df = 1) = 0.06, p=0.81).\n\nIn sum, the two control analyses provide additional empirical support for the results revealed by our main analysis.\n\n## Discussion\n\nSuccessfully comprehending speech in noisy environments is a challenging task, particularly for ageing listeners whose hearing ability gradually declines (Peelle and Wingfield, 2016). A much-researched neural support mechanism here is attention-guided neural \u2018tracking\u2019 of behaviourally relevant speech signals, as one neural strategy to maintain listening success (W\u00f6stmann et al., 2020; Ding and Simon, 2012; Zion Golumbic et al., 2013; Obleser and Kayser, 2019; Mesgarani and Chang, 2012; Power et al., 2012; O\u2019Sullivan et al., 2019; Gross et al., 2013).\n\nHowever, to date, it is unknown whether the fidelity with which an individual implements this filtering strategy does represent a stable neural trait-like marker of individual attentive listening ability. Of direct relevance to any future translational efforts building on neural speech tracking, it is also unknown whether differences in neural filtering strength observed between ageing listeners are predictive at all of how their attentive listening ability will develop in the future. We here have addressed these questions leveraging a new representative prospective cohort sample of healthy middle-aged to older listeners.\n\nOver 2 y from T1 to T2, individuals\u2019 hearing ability worsened as expected (Linssen et al., 2014; Rigters et al., 2018; Wiley et al., 2008). Their listening performance, however, stayed stable. In addition, an individual\u2019s baseline (T1) neural filtering strength proved to be a strikingly poor indicator of their future (T2) level of neural filtering. On the other hand, bolstering previous results, neural filtering reliably supported listening behaviour within the same session\u2014both at T1 and T2\u2014at two levels of granularity: individuals with generally stronger neural tracking of target vs. distractor speech performed the listening task on average more accurately and faster. They were also more likely to respond correctly in a given trial with relatively stronger neural filtering in that trial.\n\nCrucially, however, momentary states of neural functioning were not predictive of future behavioural change, and the dynamics of longitudinal change at the neural and behavioural level appear to follow largely independent trajectories. Notably, these key findings hold for different definitions of neural-attentional filtering and under different spatial-attention conditions (see \u2018Control analyses\u2019).\n\n### Neural filtering fidelity as a trait-like neural marker of individual attentive listening ability?\n\nIn recent years, the enhanced representation of behaviourally relevant sounds via their prioritised neural tracking has been reported in numerous listening studies investigating different acoustic environments, participant populations, and stages of auditory processing (Tune et al., 2021; O\u2019Sullivan et al., 2015; Fiedler et al., 2019; Kaufman and Zion Golumbic, 2023; Kraus et al., 2021; Brodbeck et al., 2020; Forte et al., 2017; Fuglsang et al., 2020).\n\nThis neural signature is commonly interpreted as a neural instantiation of selective auditory attention in the service of successful speech comprehension. Note however that its link to behaviour is not always explicitly established (but see Tune et al., 2021; O\u2019Sullivan et al., 2015; Mesgarani and Chang, 2012; Orf et al., 2023; Schmitt et al., 2022). Given how robustly the current data show the enhanced neural tracking of attended vs. ignored speech at the group level, the weak reliability of individual neural filtering strength may come as a surprise. At the same time, stronger neural filtering was reliably linked to better behavioural performance within both T1 and T2.\n\nHow can these two findings be reconciled? Based on the current and previous results, what may be concluded about the role of neural filtering as a potential neural marker of individual attentive listening ability?\n\nPrevious studies on attention-guided neural speech tracking have not provided any direct evidence on the temporal stability of neural filtering nor on its relationship with behaviour. Studies on related neural signatures such as speech-aligned auditory brainstem responses or the entrainment of auditory cortical activity to rhythmic (non-speech) stimulation reported moderate to high reliability (Song et al., 2011; Easwar et al., 2020; Cabral-Calderin and Henry, 2022; Panela et al., 2024). However, these studies have (i) investigated the temporal stability across sessions spaced only days or weeks apart, (ii) focused on younger normal-hearing populations, or (iii) quantified the neural encoding of speech or non-speech stimulation that involved less or no attentional control. In contrast, we here explicitly focused on a definition of neural filtering that incorporated the neural tracking of attended and ignored speech to highlight the dependence of communication success on the attention-guided differential neural encoding of relevant vs. irrelevant input. These differences render a direct comparison to our approach difficult, but there is reason to consider a model-derived, latent representation of neural filtering as employed here the more generalisable metric (Hertzog and Schaie, 1988). Leaving the latent-variable framework aside, it is worth emphasising that the neural tracking of attended speech alone proved to be substantially more stable over time, with a retest reliability in the rtt = 0.6 range.\n\nOur current results broadly align with a view of attention-guided neural speech tracking as a form of \u2018neural entrainment in the broad sense\u2019 that reflects a listener\u2019s neural attentional state (Obleser and Kayser, 2019; Lakatos et al., 2016; Lakatos et al., 2019).\n\nUnder this interpretation, the stable link of neural filtering to listening behaviour at different levels of granularity is noteworthy: an individual\u2019s ability to exert top-down selective attention to prioritise the neural encoding of behaviourally relevant information is far from stable but it fluctuates at different time scales (Schroeder and Lakatos, 2009; Schroeder et al., 2010; Helfrich et al., 2018; Buschman and Kastner, 2015). This entails that at a longer time scale, here captured by two distinct measurement timepoints, ageing individuals will differ with respect to their overall level of neural filtering and associated listening behaviour. Their level of neural and behavioural functioning will differ from other individuals\u2019 levels at the same timepoint but also from their own level at a different timepoint. Moreover, a listener\u2019s behavioural outcome at either timepoint is not only shaped by their broad neural attentional state with which they enter a communication situation. It is also critically influenced by short-term fluctuations in neural filtering strength around their current overall level of neural functioning (Figure 4C; Tune et al., 2021). As our control analyses have revealed, these fluctuations are more pronounced if neural filtering is defined by the tracking of both attended and ignored speech rather than by attended-speech tracking alone.\n\nWhat does this mean for the potential translational value of neural tracking? Their highly dynamic nature gives neural tracking-based metrics value as online neural indicators of a listener\u2019s momentary attentional focus. As such, they could serve as critical neural read-outs in novel brain\u2013computer interfaces such as neurally steered hearing aids (Van Eyndhoven et al., 2017; Ceolini et al., 2020; O\u2019Sullivan et al., 2017). At the same time, however, their non-stationarity over time limits their potential as translational targets for diagnosis and therapeutic intervention (Panela et al., 2024; Gillis et al., 2021; Di Liberto et al., 2022).\n\n### Individual trajectories of listening behaviour cannot be explained by changes within a single domain\n\nAs a second central query of the current study, we went beyond the establishment of robust brain\u2013behaviour relationships and directly probed the potency of neural filtering to predict behavioural change over time (Woo et al., 2017). We asked whether individual trajectories of listening behaviour could be predicted by past levels of neural filtering or by co-occurring changes in neural filtering.\n\nPast studies have observed enhanced cortical speech tracking in ageing compared to young adults. This suggests a compensatory role of increased speech\u2013brain coupling to counteract the deleterious effect of age or of hearing loss on speech comprehension (Schmitt et al., 2022; Gillis et al., 2022a; Presacco et al., 2019; Presacco et al., 2016; Decruy et al., 2019; Decruy et al., 2020). As a corollary of this relationship, typically observed cross-sectionally, one might expect an individual\u2019s neural filtering strength to be connected not only to present but also to future trajectories of listening behaviour.\n\nSuch relationships, if shown to be causal, would provide the strongest evidence for the role of neural speech tracking as a neural compensatory mechanism supporting communication success (Peelle and Wingfield, 2016). However, when analysed in our longitudinal sample of ageing listeners, irrespective of the precise definition of neural filtering, we did not find evidence for a predictive role of neural filtering despite supporting brain\u2013behaviour links observed within each timepoint. What are the potential reasons for this absent connection (Figure 5)?\n\nOne obvious explanation, both in statistical and substantive terms, may lie in the low retest reliability of our neural filtering metric as discussed above. Analytically, however, we were able to mitigate this problem by adopting a modelling approach which effectively removes the influence of measurement error (McArdle and Nesselroade, 1994; shown in Figure 5A). Still, individual change in response speed could only be predicted by an individual\u2019s baseline speed and age but not by baseline neural filtering nor by its longitudinal change. Moreover, our control analysis of attended-speech tracking provided additional empirical support for the absence of such a predictive link despite the neural metric\u2019s moderate manifest-level reliability. These findings call for a more substantive explanation that transcends methodological details.\n\nWhile most desirable from a translational perspective and a core quest in the cognitive neuroscience of ageing, predicting change in cognitive functioning, here listening behaviour, from baseline or longitudinal change in brain function or structure is a non-trivial endeavour. Connecting individual trajectories of neural or cognitive functioning goes beyond the establishment of domain-specific age trends (Lindenberger et al., 2011; Tucker-Drob et al., 2022). It also goes beyond the mere extrapolation of (age-independent) brain\u2013behaviour relationships observed at a given moment (Boker and Martin, 2018; Raz and Lindenberger, 2011). Indeed, empirical evidence\u2014and to some degree also theoretical grounds\u2014for robust brain\u2013behaviour baseline\u2013change or change\u2013change associations is limited (Oschwald et al., 2019).\n\nMost empirical studies reporting such significant cross-domain change\u2013change correlations have in fact connected behavioural change to alterations in brain structure rather than brain function (Raz et al., 2005; McArdle et al., 2004; Bender et al., 2016; Ritchie et al., 2015; L\u00f6vd\u00e9n et al., 2014; Persson et al., 2016). Focusing on structural change may be advantageous: not only can structural feature be quantified more directly and reliably, they also follow systematic age-dependent trajectories, thereby providing clearer causal pathways for ensuing behavioural change (Bennett and Madden, 2014; Grady, 2012). Still, less than half of the studies testing such cross-domain associations have indeed observed them (Oschwald et al., 2019). From the perspective of theoretical models of neurobiological and cognitive ageing (Reuter-Lorenz and Park, 2014; Cabeza et al., 2018; Stern et al., 2019), the absence of correlated trajectories of neural and cognitive functioning may indeed be the more expected result. These models highlight the multifaceted nature of healthy cognitive ageing in which environmental variables, neurobiology, and cognition are dynamically interrelated (Freund et al., 2013). Neural compensatory mechanisms, such as the neural filtering correlate targeted here, are thought to offset structural decline but are themselves influenced by a number of factors. This leads to increased inter-individual variability that may circumvent the emergence of group-level correlated change relationships.\n\nImportantly, the behavioural outcome of interest, that is, the speed and accuracy with which an ageing individual solves a difficult listening situation, involves the orchestration of different perceptual and cognitive processes (Anderson et al., 2013; Peelle, 2016). We here focused on one candidate neurobiological implementation of an auditory attentional filter to help explain inter-individual differences in listening behaviour and its lifespan trajectories. Yet, ageing individuals may rely on different alternative neural or cognitive strategies (Tune et al., 2018). A complete understanding of inter-individual differences in listening behaviour in ageing adults will therefore depend on a number of different factors among which the attention-modulated tracking of relevant speech constitutes one, potentially necessary, but not sufficient neural correlate (W\u00f6stmann et al., 2020; Obleser and Kayser, 2019; Tune et al., 2021; Gillis et al., 2022b; Strau\u00df et al., 2014).\n\nNot least, there are a number of methodological choices that might constrain the conclusions afforded by our current study. First, the current study was limited to two distinct timepoints spaced only 2 y apart. This limits the ability to model linear as well as non-linear dynamics of change. Second, it also does not allow the separation of distinct patterns of change co-occurring at the same time: one continuous, constant change with age along with a separate process in which relative change is proportional to the level observed at prior timepoints (Jacobucci et al., 2019). Third, we here focus on a single dichotic listening task from which both neural and behavioural functioning are derived. We therefore cannot assess whether the observed pattern would generalise to other listening tasks. Lastly, denser sampling across a longer time interval would have also increased statistical power to detect correlated change (Rast and Hofer, 2014). It would have also allowed to more directly test hypotheses on causal pathways by which change in the neural domain should precede change in the behavioural domain.\n\nThe conclusion stands, though, that individual trajectories in listening behaviour cannot be explained by longitudinal change along a single dimension. Instead, a better understanding of the influences shaping individual listening behaviour across the adult lifespan will critically rely on uncovering the relative contribution and age-dependent dynamics of sensory, neural, and cognitive factors.\n\n### Conclusion\n\nThe results presented here support the role of attention-guided neural filtering as a readout of an individual\u2019s neural attentional state. At the same time, the state-like nature of neural tracking-based metrics limits their translational potential as predictors of longitudinal change in listening behaviour over middle to older adulthood. Our data caution against explaining audiology-typical listening performance solely from changes in aspects of neural functioning as listening behaviour and neural filtering ability follow largely independent developmental trajectories. Our results critically inform translational efforts aimed at the preservation and restoring of speech comprehension abilities in ageing individuals.\n\n## Materials and methods\n\n### Data collection\n\nThe analysed data are part of a large-scale longitudinal study on the neural and cognitive mechanisms supporting adaptive listening behaviour in a prospective cohort of healthy middle-aged and older adults (\u2018The listening challenge: How ageing brains adapt (AUDADAPT)\u2019; https://cordis.europa.eu/project/rcn/197855_en.html). This project encompassed the collection of different demographic, audiological, behavioural, and neurophysiological measures across initially two timepoints spaced approximately 2 y apart. The analyses carried out on the data aim at relating adaptive listening behaviour to changes in different neural dynamics. Given the longitudinal nature of the current study, all procedures concerning data collection, as well as EEG recording and analysis, are identical to those detailed in our recently published analysis of T1 data using the same experimental paradigm (Figure 2\u2014figure supplement 1; Tune et al., 2021).\n\n### Participants and procedure\n\nWe here report on a total N = 105 right-handed German native speakers (median age at T2 63 y; age range 39\u201382 y; 61 females) who underwent audiological, behavioural, and EEG assessment at two separate timepoints. On average, the measurement timepoints were spaced 23.2 (\u00b1 SD 4.0) mo apart.\n\nAt T1, we had screened a total of N = 184 participants. Included participants had normal or corrected-to-normal vision, and did not report any neurological, psychiatric, or other disorders. They were also screened for mild cognitive impairment using the German version of the 6-Item Cognitive Impairment Test (6CIT [Jefferies and Gale, 2012] and the MoCA [Nasreddine et al., 2005]). Only participants with normal hearing or age-adequate mild-to-moderate hearing loss were included (Figure 2B for individual audiograms at T1). Handedness was assessed using a translated version of the Edinburgh Handedness Inventory (Oldfield, 1971). As a result of the initial screening procedure, 17 participants were excluded prior to EEG recording due to a medical history or non-age-related hearing loss. Three participants dropped out of the study prior to EEG recording and an additional nine participants were excluded from analyses after EEG recording due to incidental findings after structural MR acquisition (N = 3) or due to EEG data quality issues (N = 9). Again, all detailed criteria can be found in Tune et al., 2021.\n\nAt T2, N = 115 participants returned for follow-up measurements. All individuals passed the repeat screening procedures identical to those at T1. Ten participants had to be excluded from the analyses reported here: three participants had dropped out prior to EEG recording, three participants were excluded due to EEG data quality issues, and four participants because their EEG data had been excluded at T1. This resulted in a final longitudinal sample of N = 105 individuals.\n\nDropout at T2 could not be predicted from participants\u2019 T1 age, hearing loss, behavioural performance (accuracy, speed), or neural filtering strength (all p>0.13). This indicates that compared to the full T1 cohort reported on in previous studies (Tune et al., 2021; Alavash et al., 2021) our reduced longitudinal sample was not biased in terms of sensory, cognitive, or neural functioning.\n\nAt each measurement timepoint, participants underwent detailed pure-tone and speech audiometric measurements, along with an extensive battery of cognitive tests and personality profiling (see Tune et al., 2018 for details). On a separate day, we recorded participants\u2019 EEG during rest (5 min each of eyes-open and eyes-closed measurements) followed by six blocks of the same dichotic listening task (see Figure 2C and Tune et al., 2021 for details).\n\nParticipants gave written informed consent and received financial compensation (10\u20ac per hour). Procedures were approved by the ethics committee of the University of L\u00fcbeck and were in accordance with the Declaration of Helsinki.\n\n### Dichotic listening task\n\nAt each timepoint, participants performed a previously established dichotic listening task (Alavash et al., 2019). We provide full details on trial structure, stimulus construction, recording, and presentation in our previously published study on the first (N = 155) wave of data collection (but see also Figure 2\u2014figure supplement 1; Tune et al., 2021).\n\nIn short, in each of the 240 trials, participants listened to two competing, dichotically presented five-word sentences spoken by the same female speaker. They were probed on the sentence-final noun in one of the two sentences. Participants were instructed to respond within a given 4 s time window beginning with the onset of a probe screen showing four alternatives. They were not explicitly instructed to respond as quickly as possible. The probe screen showed four alternative words presented either on the left or right side of the screen, indicating the probed ear. Two visual cues preceded auditory presentation. First, a spatial-attention cue either indicated the to-be-probed ear, thus invoking selective attention, or did not provide any information about the to-be-probed ear, thus invoking divided attention. Second, but irrelevant to the current study, a semantic cue specified a general or a specific semantic category for the final word of both sentences, thus allowing to utilise a semantic prediction. Cue levels were fully crossed in a 2 \u00d7 2 design and presentation of cue combinations varied on a trial-by-trial level. All participants listened to the same 240 sentence pairs at each of the two measurement timepoints. The order of sentence pair presentation was randomised for each participant and at each timepoint.\n\nTo account for differences in hearing acuity within our group of participants, all stimuli were presented 50 dB above the individual sensation level.\n\n### EEG recording and analysis\n\nThe approach for EEG recording, pre-processing, and subsequent analysis is identical to the procedures carried out for T1 data collection and analysis (Tune et al., 2021).\n\nIn short, 64-channel EEG data were recorded, cleaned for artefacts using a custom ICA-based pipeline, downsampled to 125 Hz, filtered between 1 and 8 Hz, and cut into single-trial epochs covering the presentation of auditory stimuli. Following source localisation via beamforming, we focused on auditory cortical activity to train and test decoding models of attended and ignored speech using cross-validated regularised regression. Models were trained on selective-attention trials, only, but then also tested on divided-attention trials. As results, we obtained single-trial reconstruction accuracy (Pearson\u2019s r) estimates as metrics of the degree of attended and ignored neural speech tracking, respectively.\n\nWe then calculated a neural filtering index across the entire sentence presentation period. The index quantifies the difference in neural tracking of the to-be-attended and of the to-be-ignored sentence [neural filtering index = (rattended \u2212 rignored)/(rattended +rignored)], and thus indexes the strength of neural filtering at the single-trial level. Positive values indicate successful neural filtering in line with the behavioural goal.\n\nThe EEG analyses were carried out in MATLAB 2016b using the Fieldtrip toolbox (v. 2017-04-28), the Human Connectome Project Workbench software (v1.5), FreeSurfer (v.6.0), and the multivariate temporal response function (mTRF) toolbox (v1.5) (Crosse et al., 2016).\n\n### Behavioural and audiological data analysis\n\nWe evaluated participants\u2019 behavioural performance in the listening task with respect to accuracy and response speed. For the binary measure of accuracy, we excluded trials in which participants failed to answer within the given 4 s response window (\u2018timeouts\u2019). Spatial stream confusions, that is, trials in which the sentence-final word of the to-be-ignored speech stream were selected, and random errors were jointly classified as incorrect answers. The analysis of response speed, defined as the inverse of reaction time, was based on correct trials only.\n\nWe defined participants\u2019 hearing acuity as their PTA composed of (air-conduction) hearing thresholds at the frequencies of 0.5, 1, 2, and 4 kHz. Individual PTA values were then averaged across the left and right ear.\n\n### Statistical analysis\n\nFor statistical analyses focused on between-participant (\u2018trait-level\u2019) effects, behavioural performance metrics and neural filtering index values were averaged across all trials and experimental conditions to arrive at one trait-level estimate per participants. This approach was also motivated by previous results based on T1 data: here, we had observed that stronger neural speech tracking led to overall faster and to more trials with accurate responses irrespective of the specific cue-cue condition (Tune et al., 2021). Accuracy was logit-transformed for statistical analysis but expressed as proportion correct for illustrative purposes. Similarly, for more intuitive interpretation, we reversed the sign of PTA values for higher values to correspond to better hearing ability.\n\nAll analyses were performed in R (v.4.2.2; R Development Core Team, 2019) using the packages lme4 (v.1.1-31; Bates et al., 2015), mediation (v4.5.0; Tingley et al., 2014), lavaan (v0.6-12; Rosseel, 2012), and OpenMx (v2.21.8; Neale et al., 2016).\n\n### Linear mixed-effect modelling\n\nAs the first step of our three-part analysis approach, we applied general linear mixed-effect models to test for cross-sectional and longitudinal changes in trait-level sensory acuity, neural filtering, and listening performance. These models included age, timepoint, and their interaction as fixed effect regressors and allowed random participant-specific intercepts.\n\nIn the second step of the analysis, we also aimed at replicating the previously observed single-trial state-level relationship of neural filtering and accuracy. To this end, we applied a single generalised linear mixed-effect model (binomial distribution, logit link function) on single-trial data of both T1 and T2. This model represents an adapted version of the brain\u2013behaviour model reported in Tune et al., 2021. In short, we included all experimental manipulation predictors, as well as age, hearing acuity, and neural filtering metrics. We omitted previously shown to be non-significant higher-order interactions and additionally included interactions by timepoint to directly test for any longitudinal change in the effect of neural filtering on behaviour.\n\nTo tease apart state-level (i.e. within-participant) and trait-level (i.e. between-participants) effects, we included two separate neural regressors: for the between-participant effect regressor, we averaged single-trial neural filtering values per individual across all trials. By contrast, the within-participant effect of interest was modelled by the trial-by-trial deviation from the subject-level mean (Bell et al., 2019). We included participant- and item-specific random intercepts as well as random slopes for the effect of the spatial-attention cue and the probed ear.\n\nWe used deviation coding for categorical predictors and z-scored all continuous regressors. p-Values for individual model terms in general linear mixed-effect models are based on the Satterthwaite approximation for degrees of freedom, and on z-values and asymptotic Wald tests for the generalised linear mixed-effect model of accuracy (Luke, 2017).\n\n### Causal mediation analysis\n\nWe performed causal mediation analysis to model the direct as well as the hearing-acuity-mediated effect of age on accuracy and response speed (Imai et al., 2010). Critically, these models also included a direct (i.e. independent of age and hearing loss) path of neural filtering on behaviour. To formally test the stability of direct and indirect relationships across time, we used a moderated mediation analysis (Preacher et al., 2007). In this analysis, the inclusion of interactions by timepoint tested whether the influence of age, sensory acuity, and neural functioning on behaviour varied across time. We z-scored all dependent and independent variables, and estimated the magnitude of direct and mediated effects along with percentile-based confidence intervals on the basis of 1000 replications.\n\n### Bayes factor calculation\n\nTo facilitate interpretation of non-significant effects, we calculated the Bayes factor (BF) based on the comparison of Bayesian information criterion (BIC) (Wagenmakers, 2007). We report log Bayes factors, with a log BF01 of 0 representing equal evidence for and against the null hypothesis; log BF01 with a positive sign indicating relatively more evidence for the null hypothesis than the alternative hypothesis, and vice versa. Magnitudes >1 are taken as moderate, >2.3 as strong evidence for either of the alternative or null hypotheses, respectively (Lee and Wagenmakers, 2014).\n\n### Latent change score modelling\n\nIn the third and final step of our analysis approach, we used structural equation modelling (SEM) to investigate the role of neural filtering as a predictor of behavioural change. We used LCSM (McArdle, 2009; Kievit et al., 2018) to test (i) whether an individual\u2019s T1 neural filtering strength can be predictive of 2-year changes in behaviour, and (ii) whether 2-year changes in neural filtering and listening behaviour are systematically related. All models were specified and fitted with the R-based package lavaan (Rosseel, 2012) using maximum likelihood estimation.\n\nTo bring all manifest variables onto the same scale while preserving mean differences over time, we first stacked them across timepoint and then rescaled them using the proportion of maximum scale (\u2018POMS\u2019) method (Moeller, 2015; Little, 2013). We assessed model fit using established indices including the \u03c72 test, the RMSEA, and the CFI (Raykov and Marcoulides, 2006; Kline, 2023). Likelihood ratio tests helped us decide whether (i) constraining individual parameters to be equal significantly decreased model fit and (ii) individual parameter estimates were statistically significant. We report standardised parameter estimates.\n\nIn a first step, we specified separate unstructured measurement models of accuracy, speed, and neural filtering to establish factorial invariance across time using a series of tests (Kievit et al., 2018; Polk et al., 2022). Latent variables representing each metric at T1 and T2 were constructed from the observed individual means averaged across the first and second half of the experiment, respectively. Covariances between T1 and T2 latent variables were freely estimated, and residual covariances were set to be equal for the first and second half of the experiment. The factor loading and mean of the first manifest variable were set to 1 and 0, respectively, to ensure model identification (Little, 2013). Given our choice of POMS transformation of raw values to preserve mean differences over time, the mean of the second manifest variable had to be freely estimated to avoid model misfit. We sequentially tested for metric (i.e. identical factor loadings), strong (i.e. identical means), and strict (i.e. identical residuals) time invariance using likelihood ratio tests.\n\nNext, for those metrics surviving factorial invariance testing, we constructed separate (i.e. univariate) change score models to test for group-level mean change following the tutorial by Kievit et al., 2018. We included a regression path from the T1 latent variable to the latent change variable to test how baseline functioning impacted the degree of longitudinal change. A likelihood ratio test of nested models (with mean change being freely estimated vs. constrained to be 0) determined the significance of group-level mean change.\n\nIn the last and final step, we constructed the bivariate LCSM that connected changes in response speed and neural filtering, which both significantly increased over time (see Figure 5\u2014figure supplement 1 for full model details). We modelled the covariance between the baseline neural filtering and speed, as well as the covariance between neural and behavioural change. In addition, we included a regression path from T1 neural filtering to the T1\u2013T2 change in response speed to directly test the predictive potency of baseline neural functioning to explain behavioural change.\n\nFollowing the logic of a generalised variance test (Brandmaier et al., 2018), we tested for significant inter-individual differences in neural and behavioural change. Note that such reliable variance in change is a necessary prerequisite for testing change\u2013change correlations. In short, per domain (neural, behaviour), a likelihood ratio test compared the full model with a restricted model in which all paths pointing to or connected with the latent change variable are fixed to 0.\n\nFinally, we asked whether neural and behavioural change covaried significantly. We ran a likelihood ratio test on the full model compared to a restricted model in which the covariance parameter was fixed to 0. For visualisation of results, we refit the final model using OpenMx (Neale et al., 2016) to predict latent factor scores based on maximum likelihood.\n",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nai Ding, Zhejiang University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92079.3.sa0](https://doi.org/10.7554/eLife.92079.3.sa0)\n\nThis study provides a valuable contribution to understanding the neural mechanisms underlying age-related changes in attention and speech understanding. The large dataset (N = 105) provides convincing evidence for how speech recognition behaviour and neural tracking of speech separately evolve in about 2 y. The work would be of interest to psychologists, neuroscientists, and audiologists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92079.3.sa1](https://doi.org/10.7554/eLife.92079.3.sa1)\n\nSummary:\n\nThis study investigated behavioural performance on a competing speech task and neural attentional filtering over the course of two years in a group of middle-aged to older adults. Neural attentional filtering was quantified using EEG by comparing neural envelope tracking to an attended vs. an unattended sentence. This dataset was used to examine the stability of the link between behavior and neural filtering over time. They found that neural filtering and behavior were correlated during each measurement, but EEG measures at the first timepoint did not predict behavioural performance two years later. Further, while behavioural measures showed relatively high test-retest reliability, the neural filtering reliability was weak with an r value of 0.21. The authors conclude that neural tracking-based metrics have limited ability to predict longitudinal changes in listening behavior.\n\nStrengths:\n\nThis study is novel in its tracking of behavioural performance and neural envelope tracking over time, and it includes an impressively large dataset of 105 participants. The manuscript is clearly written.\n\nWeaknesses:\n\nThe weaknesses are minor, primarily concerning how the reviewers interpret their data. Specifically, the envelope tracking measure is often quite low, close to the noise floor, and this may affect test-retest reliability. Furthermore, the trajectories may be affected by accelerated age-related declines that are more apparent in neural tracking than in behaviour.\n\nComments on revised version:\n\nThe authors have satisfactorily addressed my previous comments and they present a strong case for the interpretation of their findings.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92079.3.sa2](https://doi.org/10.7554/eLife.92079.3.sa2)\n\nSummary:\n\nThis study examined the longitudinal brain-behaviour link between attentional neural filtering and listening behaviour among a sample of aging individuals. The results based on the latent change score modeling showed that neither attentional neural filtering at T1 nor its T1-T2 change predicted individual two-year listening performance change. The findings suggest that neural filtering and listening behaviour may follow independent developmental trajectories. This study focuses on an interesting topic and has the potential to contribute a better understanding of the neurobiological mechanisms of successful communication across the lifespan.\n\nStrengths:\n\nAlthough research suggests that speech comprehension is neurally supported by an attention-guided filter mechanism, the evidence on their causal association is limited. This study addresses this gap by testing longitudinal stability of neural filtering as a neural mechanism upholding listening performance, potentially shedding lights on translational efforts aiming at the preservation of speech comprehension abilities among aging individuals.\n\nThe latent change score modeling approach is appropriately used as a tool to examine key developmental questions and distinguish the complex processes underlying lifespan development in brain and behaviour with longitudinal data.\n\nWeaknesses:\n\nAlthough the paper does have strengths in principle, the weaknesses of the paper are that the findings are merely based on a single listening task. Since both neural and behavioral indicators are derived from the same task, the results may be applicable only to this specific task, and it is difficult to extrapolate them to cognitive and listening abilities measured by the other tasks. Therefore, more listening tasks are required to comprehensively measure speech comprehension and neural markers.\n\nThe age span of the sample is relatively large. Although no longitudinal change from T1 to T2 was found at the group-level, from the cross-sectional and longitudinal change results (see Figure 3), individuals of different age groups showed different development pattern. Particularly, individuals over the age of 70 show a clear downward trend in both neural filtering index and accuracy. Therefore, different results may be found based on different age groups, especially older groups. However, due to sample limitations, this study was unable to examine whether age has a moderating effect on this brain-behaviour link.\n\nIn the Dichotic listening task, valid and invalid cues were manipulated. According to the task description, the former could invoke selective attention, whereas the latter could invoke divided attention. It is possible that under the two conditions, the neural filtering index may reflect different underlying cognitive processes, and thus may differ in its predictive effect on behavioral performance. The author could perform a more in-depth data analysis on indicators under different conditions.\n",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "09e50dd7-f5b8-4c44-bb43-a2c48abf84da",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C1",
+      "claim": "Preserved communication abilities promote healthy ageing.",
+      "claim_type": "EXPLICIT",
+      "source": "Preserved communication abilities promote healthy ageing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract supported by established scientific understanding about healthy aging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f15ef0fe-69e6-4998-9bfd-e399471f3545",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C2",
+      "claim": "The age-typical loss of sensory acuity might in part be compensated for by an individual's preserved attentional neural filtering.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, the age-typical loss of sensory acuity might in part be compensated for by an individual's preserved attentional neural filtering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about a potential compensatory mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "ad176292-4f08-419e-9661-c5aa6b423fd6",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C3",
+      "claim": "Individual listening behaviour and neural filtering ability follow largely independent developmental trajectories in a cohort of N = 105 ageing individuals (39\u201382 y).",
+      "claim_type": "EXPLICIT",
+      "source": "We here show that individual listening behaviour and neural filtering ability follow largely independent developmental trajectories modelling electroencephalographic and behavioural data of N = 105 ageing individuals (39\u201382 y).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "96d13d1e-8217-460c-bbc3-1a4a7d38c1a1",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C4",
+      "claim": "Despite the expected decline in hearing-threshold-derived sensory acuity, listening-task performance proved stable over 2 y.",
+      "claim_type": "EXPLICIT",
+      "source": "First, despite the expected decline in hearing-threshold-derived sensory acuity, listening-task performance proved stable over 2 y.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the longitudinal data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "e731faca-1c2d-427c-a242-d3d173b25e03",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C5",
+      "claim": "Neural filtering and behaviour were correlated only within each separate measurement timepoint (T1, T2).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, neural filtering and behaviour were correlated only within each separate measurement timepoint (T1, T2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the cross-sectional analysis at each timepoint.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f0e67a44-9b53-418b-84f2-c6769e0131ce",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C6",
+      "claim": "Neither neural filtering at T1 nor its 2-year change could predict individual 2-year behavioural change.",
+      "claim_type": "EXPLICIT",
+      "source": "Longitudinally, however, our results raise caution on attention-guided neural filtering metrics as predictors of individual trajectories in listening behaviour: neither neural filtering at T1 nor its 2-year change could predict individual 2-year behavioural change, under a combination of modelling strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the longitudinal change score modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "8a3e4b90-b6e9-48c7-89da-199dea5abe29",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C7",
+      "claim": "Speech comprehension is an essential aspect of human communication, enabling us to understand and interact with others effectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Speech comprehension is an essential aspect of human communication, enabling us to understand and interact with others effectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge about human communication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "0ad5ec36-c8ac-4628-afce-6e9ee7733d77",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C8",
+      "claim": "Preserved communication is critical to social well-being and healthy ageing.",
+      "claim_type": "EXPLICIT",
+      "source": "Preserved communication is therefore critical to social well-being and healthy ageing (Lindenberger, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "7cc2730d-c60c-4ef3-8ece-3e3c5e18e640",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C9",
+      "claim": "As we age, our ability to comprehend speech can decline due to age-related changes in the auditory system (i.e. sensory acuity) and in cognitive resources.",
+      "claim_type": "EXPLICIT",
+      "source": "As we age, our ability to comprehend speech can decline due to age-related changes in the auditory system (i.e. sensory acuity) and in cognitive resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge about aging and speech comprehension.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "2a2fcf68-81fa-4746-85ea-cda9256ef4ae",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C10",
+      "claim": "Age-related hearing loss reduces the ability to detect and discriminate speech sounds, especially in noisy environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Age-related hearing loss reduces the ability to detect and discriminate speech sounds, especially in noisy environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement based on established knowledge about age-related hearing loss.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "43c1c710-c6b7-4348-80ec-53a76e67797a",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C11",
+      "claim": "Increasing age and hearing loss cannot fully account for the considerable degree of inter-individual differences observed in listening behaviour and its lifespan change.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has long been recognised that increasing age and hearing loss cannot fully account for the considerable degree of inter-individual differences observed in listening behaviour and its lifespan change (Akeroyd, 2008; Houtgast and Festen, 2008; Humes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "df1e9caf-74c7-4325-be30-82b5a3e572a2",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C12",
+      "claim": "Neural filter mechanisms act by selectively increasing the sensory gain for behaviourally relevant inputs or by inhibiting the processing of irrelevant inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such neural filter mechanisms act by selectively increasing the sensory gain for behaviourally relevant inputs or by inhibiting the processing of irrelevant inputs (Cherry, 1953; Broadbent, 1958; W\u00f6stmann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "606a7a20-c531-446a-8bb3-a5dffecfd550",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C13",
+      "claim": "Speech comprehension is neurally supported by an attention-guided filter mechanism that modulates sensory gain and arises from primary auditory and perisylvian brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A growing body of evidence suggests that speech comprehension is neurally supported by an attention-guided filter mechanism that modulates sensory gain and arises from primary auditory and perisylvian brain regions: by synchronising its neural activity with the temporal structure of the speech signal of interest, the brain 'tracks' and thereby better encodes behaviourally relevant auditory inputs to enable attentive listening (Ding and Simon, 2012; Zion Golumbic et al., 2013; Obleser and Kayser, 2019; Lakatos et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f2d17a0f-eeb6-4e33-842a-414c7f6c408c",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C14",
+      "claim": "In a large age-varying cohort (N = 155; 39\u201380 y), the fidelity of neural filtering strategy can help explain differences in listening behaviour from individual to individual and within individuals from sentence to sentence.",
+      "claim_type": "EXPLICIT",
+      "source": "In a large age-varying cohort (N = 155; 39\u201380 y), we have previously shown how the fidelity of this neural filtering strategy can help explain differences in listening behaviour (i) from individual to individual and (ii) within individuals from sentence to sentence (Tune et al., 2021; O'Sullivan et al., 2015; Mesgarani and Chang, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research including the authors' own previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "e8ebaf4b-7a87-4b8d-a946-6bf473147187",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C15",
+      "claim": "Enhanced neural filtering\u2014defined as stronger neural tracking of attended vs. ignored speech\u2014led to more accurate and overall faster responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that enhanced neural filtering\u2014defined as stronger neural tracking of attended vs. ignored speech\u2014led to more accurate and overall faster responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "58ff1e65-6f78-403c-a581-cd4aac4905f5",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C16",
+      "claim": "Both neural filtering as well as its link to behaviour were independent of chronological age and severity of hearing loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we observed both neural filtering as well as its link to behaviour to be independent of chronological age and severity of hearing loss (Tune et al., 2021; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' previous research, also illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "74251f68-e4ac-48f2-a5cf-1729920ccd48",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C17",
+      "claim": "The longitudinal sample consisted of N = 105 individuals aged 39\u201382 y at T2 with a median age of 63 y.",
+      "claim_type": "EXPLICIT",
+      "source": "We studied an age-varying cohort of healthy middle-aged and older adults longitudinally (N = 105, 39\u201382 y, median age at T2: 63 y).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "cd74402e-6596-4b92-8da8-58c7dc8a0c7e",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C18",
+      "claim": "The mean time difference between the two measurement timepoints was 23.2 (SD: 4.0) mo.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean time difference between the two measurement timepoints reported here was 23.2 (SD: 4.0) mo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "6061c965-c088-436f-8792-d2c6013bfc6e",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C19",
+      "claim": "Hearing acuity decreased linearly with increasing age (\u03b2 = \u20133.4, standard error [SE] = 0.71, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, hearing acuity decreased linearly with increasing age (Figure 3A, \u03b2 = \u20133.4, standard error [SE] = 0.71, p<0.001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis of the data, also shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "6c3583e8-3b86-4d54-85e8-de987aa1040d",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C20",
+      "claim": "Hearing acuity decreased on average by 1.2 dB from T1 to T2 (\u03b2 = \u20131.18, SE = 0.27, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "and on average by 1.2 dB from T1 to T2 (\u03b2 = \u20131.18, SE = 0.27, p<0.001; meanT1: \u201313.72 dB HL [SD: 7.8]; meanT2: \u201314.90 dB HL [8.3]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis of the longitudinal data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "e84115b4-6955-4463-8aa1-36d5300700fc",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C21",
+      "claim": "The effect of age on hearing acuity did not change with time (age \u00d7 timepoint \u03b2 = \u20130.35, SE = 0.28, p=0.21).",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of age did not change with time (age \u00d7 timepoint \u03b2 = \u20130.35, SE = 0.28, p=0.21).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis testing for interaction effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "55878fe9-4fd8-40b8-a16b-ed59a07b4408",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C22",
+      "claim": "The observed change in hearing acuity corresponds to a projected average decrease per decade of \u20136.3 (SD: 15.3) dB HL.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming constant individual progression rates, this observed change corresponds to a projected average decrease in hearing acuity per decade of \u20136.3 (SD: 15.3) dB HL (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed data, also shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "cf38ee9e-a1c8-466e-9eeb-5ab5396d2654",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C23",
+      "claim": "The magnitude of observed and projected hearing loss progression is well in line with recent large-sample reports.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of observed and projected hearing loss progression is well in line with recent large-sample reports (Linssen et al., 2014; Rigters et al., 2018; Wiley et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares the current findings to prior research cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "ea8b6c28-6526-473c-84dc-2d669cd72420",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C24",
+      "claim": "Measurements of hearing acuity showed high test\u2013retest reliability (r = 0.94, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of hearing acuity showed high test\u2013retest reliability (r = 0.94, p<0.001), underscoring the high fidelity of our audiological assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the reliability analysis of the hearing acuity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "45fb2ee6-8be8-4dcf-b024-48fab17e22cd",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C25",
+      "claim": "Both behavioural outcomes (response speed and accuracy) declined with increasing age at T1 and T2 (speed: \u03b2 = \u20130.02, SE = 0.01, p=0.004; accuracy: \u03b2 = \u20130.23, SE = 0.07, p=0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with known deleterious effects of age, both behavioural outcomes (response speed and accuracy) declined with increasing age, and did so to a similar degree in T1 and T2 (Figure 3C and D; speed: \u03b2 = \u20130.02, SE = 0.01, p=0.004; accuracy: \u03b2 = \u20130.23, SE = 0.07, p=0.0001; timepoint \u00d7 age p>0.12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis, also shown in Figures 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "39ea1ffd-b1ae-4431-8437-af7a45f164ef",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C26",
+      "claim": "Average performance levels remained stable from T1 to T2 (speed: \u03b2 = 0.004, SE = 0.01, p=0.44; accuracy: \u03b2 = 0.04, SE = 0.05, p=0.36).",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time and contrary to our expectations, average performance levels remained stable from T1 to T2 (speed: \u03b2 = 0.004, SE = 0.01, p=0.44; meanT1: 0.62 s\u20131 [0.08]; meanT2: 0.62 s\u20131 [0.08]; accuracy: \u03b2 = 0.04, SE = 0.05, p=0.36, meanT1: 0.88% [0.09]; meanT2: 0.88% [0.11]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis of longitudinal change in behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "11d54cde-ca19-4a0c-a5eb-82a6f8b2c1fb",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C27",
+      "claim": "Accuracy and response speed showed moderately high test\u2013retest reliability (speed: r = 0.70, p<0.001; accuracy: r = 0.72, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Accuracy and response speed showed moderately high test\u2013retest reliability (speed: r = 0.70, p<0.001; accuracy: r = 0.72, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the reliability analysis of the behavioral measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "be32fe83-0022-4b2a-937f-2b9d38efd654",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C28",
+      "claim": "Neural filtering strength varied independently of age at both timepoints (\u03b2 = 0.0003, SE = 0.0005, p=0.48; timepoint \u00d7 age \u03b2 = \u20130.0002, SE = 0.0006, p=0.79).",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of change in neural filtering revealed that its strength varied independently of age at both timepoints (Figure 3B, \u03b2 = 0.0003, SE = 0.0005, p=0.48; timepoint \u00d7 age \u03b2 = \u20130.0002, SE = 0.0006, p=0.79), confirming our previously reported T1 results (Tune et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis, also shown in Figure 3B, and confirms prior results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "06fe1dd8-db1d-4cec-b435-c6c6fd3c32dc",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C29",
+      "claim": "There was no evidence of any systematic group-level change in neural filtering from T1 to T2 (\u03b2 = 0.001, SE = 0.001, p=0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3 (bottom-left panel), magnitude and direction of observed longitudinal change are highly variable across individuals and age groups, and we did not find evidence of any systematic group-level change from T1 to T2 (\u03b2 = 0.001, SE = 0.001, p=0.16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis, also shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "09373288-7fc8-4d06-9415-a45f71fad1c6",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C30",
+      "claim": "Individual neural filtering strength correlated only weakly across time (r = 0.21, p=0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, individual neural filtering strength correlated only weakly across time (r = 0.21, p=0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the reliability analysis of the neural filtering measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f4f33466-f12f-49a4-a9c8-7407c3ec25ad",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C31",
+      "claim": "Individual alpha frequency (IAF) showed high test\u2013retest reliability (r = 0.83, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both metrics showed high test\u2013retest reliability (IAF: r = 0.83, p<0.001; 1/f slope: r = 0.78, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the reliability analysis of resting-state EEG metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "914bfbaa-c371-4cee-9ffb-1884cafc3643",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C32",
+      "claim": "The slope of 1/f neural noise showed high test\u2013retest reliability (r = 0.78, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both metrics showed high test\u2013retest reliability (IAF: r = 0.83, p<0.001; 1/f slope: r = 0.78, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the reliability analysis of resting-state EEG metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "e053f66d-138c-4d67-899b-821de605a44f",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C33",
+      "claim": "Higher age was associated with poorer hearing ability (\u03b2 = \u20130.43, SE = 0.09, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Our expectations on the direct relationships were indeed borne out by the data: higher age was associated with poorer hearing ability (\u03b2 = \u20130.43, SE = 0.09, p<0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the causal mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "fc24d253-dc65-490b-b524-2f31c39ea952",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C34",
+      "claim": "Higher age was associated with poorer listening performance (speed: \u03b2 = \u20130.33, SE = 0.06, p<0.001; accuracy: \u03b2 = \u20130.26, SE = 0.06, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "and listening performance (speed: \u03b2 = \u20130.33, SE = 0.06, p<0.001; accuracy: \u03b2 = \u20130.26, SE = 0.06, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the causal mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "503307c7-62cb-412a-b363-fe163d2943b3",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C35",
+      "claim": "Better hearing ability boosted accuracy but not response speed (accuracy: \u03b2 = 0.30, SE = 0.1, p=0.003; speed: \u03b2 = \u20130.06, SE = 0.1, p=0.56).",
+      "claim_type": "EXPLICIT",
+      "source": "Better hearing ability, on the other hand, boosted accuracy but not response speed (accuracy: \u03b2 = 0.30, SE = 0.1, p=0.003; speed: \u03b2 = \u20130.06, SE = 0.1, p=0.56).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the causal mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "1c834d2c-d4aa-4ac7-b754-9e54ed64baac",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C36",
+      "claim": "The direct effects of age and hearing on behavior remained stable from T1 to T2 (all interactions by timepoint p>0.56; all log Bayes factors [logBF01] >2.5).",
+      "claim_type": "EXPLICIT",
+      "source": "These direct effects remained stable from T1 to T2 (all interactions by timepoint p>0.56; all log Bayes factors [logBF01] >2.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the moderated mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "48f61aab-b976-46d0-8da5-7f794b7b2eed",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C37",
+      "claim": "The total effect of age on accuracy was partially mediated via its detrimental effect on hearing acuity (average causal mediation effect [ACME], \u03b2 = \u20130.12, SE = 0.04, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Age also impacted accuracy indirectly: the total effect of age was partially mediated via its detrimental effect on hearing acuity (average causal mediation effect [ACME], \u03b2 = \u20130.12, SE = 0.04, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the causal mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "a44f6370-09dd-45c2-8eb5-f3cfccc19ec6",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C38",
+      "claim": "There was no evidence for an indirect effect of age on speed mediated by hearing acuity (ACME: \u03b2 = 0.008, SE = 0.03, p=0.77).",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find evidence for an analogous indirect effect on speed (ACME: \u03b2 = 0.008, SE = 0.03, p=0.77).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the causal mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "44552871-78b5-4bf1-b10f-49261d04211d",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C39",
+      "claim": "The hearing-acuity-mediated effect of age on accuracy did not change from T1 to T2 (interaction by timepoint p=0.73).",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the hearing-acuity-mediated effect of age on accuracy did not change from T1 to T2 as evidenced by moderated mediation analysis (interaction by timepoint p=0.73).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the moderated mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "105268e2-88e5-4064-9afa-ffd3cf8b4ab5",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C40",
+      "claim": "Stronger neural filtering fidelity had a beneficial effect on both measures of listening performance (accuracy: \u03b2 = 0.21, SE = 0.09, p=0.02; speed: \u03b2 = 0.33, SE = 0.09, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Speaking to the robustness of our previous results, we observed the beneficial effect of stronger neural filtering fidelity on both measures of listening performance (accuracy: \u03b2 = 0.21, SE = 0.09, p=0.02; speed: \u03b2 = 0.33, SE = 0.09, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the causal mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "962a2ca9-cac8-4a74-8d1a-931869546eb6",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C41",
+      "claim": "The longitudinal stability of the direct brain\u2013behaviour link was supported by the absence of any significant changes with time (interactions by timepoint; all p>0.28, all logBF01 > 2.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, the longitudinal stability of the observed direct brain\u2013behaviour link was further supported by the absence of any significant changes with time (interactions by timepoint; all p>0.28, all logBF01 > 2.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the moderated mediation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "ff4a6e1b-9f11-4975-b35d-8620927d15f0",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C42",
+      "claim": "Stronger single-trial neural filtering was associated with higher listening success at both T1 and T2 (odds ratio [OR] = 1.08, SE = 0.02, p<0.001; interaction neural filtering \u00d7 timepoint: OR = 0.99, SE = 0.03, p=0.82).",
+      "claim_type": "EXPLICIT",
+      "source": "Lending credibility to our previous results, stronger single-trial neural filtering was associated with higher listening success at both T1 and T2 (logistic mixed-effect model; within-participant effect of neural filtering on accuracy: odds ratio [OR] = 1.08, SE = 0.02, p<0.001; interaction neural filtering \u00d7 timepoint: OR = 0.99, SE = 0.03, p=0.82; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the single-trial mixed-effect model analysis, also shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "c36d95ef-74e8-46a7-952e-ac7de7ed0440",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C43",
+      "claim": "Listening task accuracy remained stable on average (b0 = 0.053, SE = 0.045, \u0394\u03c72(df = 1) = 1.33, p=0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, listening task accuracy remained stable (b0 = 0.053, SE = 0.045, \u0394\u03c72(df = 1) = 1.33, p=0.25).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the univariate latent change score model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "2eb3c017-bcd1-4fad-b83c-022125997792",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C44",
+      "claim": "Response speed showed a significant mean increase over time (b0 = 0.13, SE = 0.03, \u0394\u03c72(df = 1) = 12.79, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Response speed, on the other hand, showed a significant mean increase over time (b0 = 0.13, SE = 0.03, \u0394\u03c72(df = 1) = 12.79, p<0.001; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the univariate latent change score model, also shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "3bde6bdc-da96-4a10-9159-8ff9deeed5f3",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C45",
+      "claim": "The model of neural filtering showed a (marginally) significant mean increase (b0 = 0.24, SE = 0.11, \u0394\u03c72(df = 1) = 2.98, p=0.08).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the model of neural filtering showed a (marginally) significant mean increase (b0 = 0.24, SE = 0.11, \u0394\u03c72(df = 1) = 2.98, p=0.08; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the univariate latent change score model, also shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "49bb6271-0312-4074-8c67-b1873de122e1",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C46",
+      "claim": "There was reliable variance (i.e. individual differences) in the longitudinal change in both speed (standardised estimate \u03d5 = 0.88, SE = 0.07, \u0394\u03c72(df = 5) = 94.07, p<0.01) and neural filtering (\u03d5 = 0.81, SE = 0.14, \u0394\u03c72(df = 4) = 25.64, p<.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Crucial to our change-related inquiries, we observed reliable variance (i.e. individual differences) in the longitudinal change in both speed (standardised estimate \u03d5 = 0.88, SE = 0.07, \u0394\u03c72(df = 5) = 94.07, p<0.01) and neural filtering (\u03d5 = 0.81, SE = 0.14, \u0394\u03c72(df = 4) = 25.64, p<.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bivariate latent change score model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "a01eeb29-6052-499d-9f9d-1b05812e9947",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C47",
+      "claim": "Individuals with relatively strong neural filtering or fast responses at T1 showed a smaller increase from T1 to T2 (speed: \u03b2 = \u20130.43, SE = 0.12, \u0394\u03c72(df = 1) = 8.75, p=0.003; neural filtering: \u03b2 = \u20130.44, SE = 0.16, \u0394\u03c72(df = 1) = 4.17, p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals' baseline levels of both speed and neural filtering strength were predictive of their respective longitudinal change: individuals with relatively strong neural filtering or fast responses at T1 showed a smaller increase from T1 to T2, possibly indicating ceiling effects (speed: \u03b2 = \u20130.43, SE = 0.12, \u0394\u03c72(df = 1) = 8.75, p=0.003; neural filtering: \u03b2 = \u20130.44, SE = 0.16, \u0394\u03c72(df = 1) = 4.17, p=0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bivariate latent change score model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f420e915-66a1-4657-be82-b28381b4f3b9",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C48",
+      "claim": "The older a participant at T1, the smaller their longitudinal increase in speed (speed: \u03d5 = \u20130.24, SE = 0.11, \u0394\u03c72(df = 1) = 4.38, p=0.037).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that participants' age at T1 covaried with the individual degree of change in speed but not with that in neural filtering: The older a participant at T1, the smaller their longitudinal increase in speed (speed: \u03d5 = \u20130.24, SE = 0.11, \u0394\u03c72(df = 1) = 4.38, p=0.037; neural filtering: \u03d5 = \u20130.02, SE = 0.14, \u0394\u03c72(df = 1) = 0.02, p=0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bivariate latent change score model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "26b37c8c-14d0-44c7-b09e-0fe7aa3b4766",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C49",
+      "claim": "Age at T1 did not covary with the individual degree of change in neural filtering (neural filtering: \u03d5 = \u20130.02, SE = 0.14, \u0394\u03c72(df = 1) = 0.02, p=0.89).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that participants' age at T1 covaried with the individual degree of change in speed but not with that in neural filtering: The older a participant at T1, the smaller their longitudinal increase in speed (speed: \u03d5 = \u20130.24, SE = 0.11, \u0394\u03c72(df = 1) = 4.38, p=0.037; neural filtering: \u03d5 = \u20130.02, SE = 0.14, \u0394\u03c72(df = 1) = 0.02, p=0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bivariate latent change score model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "a4c98213-52ad-4f08-b09d-ab6ef0efd70a",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C50",
+      "claim": "An individual's latent T1 level of neural filtering strength was not predictive of the ensuing latent T1\u2013T2 change in response speed (\u03b2 = 0.02, SE = 0.16, \u0394\u03c72(df = 1) = 0.02, p=0.90).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, an individual's latent T1 level of neural filtering strength was not predictive of the ensuing latent T1\u2013T2 change in response speed (\u03b2 = 0.02, SE = 0.16, \u0394\u03c72(df = 1) = 0.02, p=0.90).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bivariate latent change score model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "924a4049-9df4-474e-abfc-25105765d6bc",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C51",
+      "claim": "An individual's latent T1 level of response speed was not predictive of the ensuing latent T1\u2013T2 change in neural filtering (\u03b2 = \u20130.11, SE = 0.21, \u0394\u03c72(df = 1) = 0.31, p=0.58).",
+      "claim_type": "EXPLICIT",
+      "source": "Still, in a control analysis that freely estimated the respective path, we found that an individual's latent T1 level of response speed was not predictive of the ensuing latent T1\u2013T2 change in neural filtering (\u03b2 = \u20130.11, SE = 0.21, \u0394\u03c72(df = 1) = 0.31, p=0.58).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a control analysis of the bivariate latent change score model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "6eaa8afe-2aae-483b-9ae5-dc59dd250c12",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C52",
+      "claim": "Longitudinal change in the neural and the behavioural domain occurred largely independent of one another (\u03d5 = 0.25, SE = 0.15, \u0394\u03c72(df = 1) = 2.74, p=0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Change score modelling revealed that longitudinal change in the neural and the behavioural domain occurred largely independent of one another despite their systematic relationship within each separate measurement timepoint (\u03d5 = 0.25, SE = 0.15, \u0394\u03c72(df = 1) = 2.74, p=0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the bivariate latent change score model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "4ba955e9-a91b-4068-ac7b-43dca000cfa8",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C53",
+      "claim": "Linking response speed and neural filtering under selective attention strengthened their relationship at T1 (\u03d5 = 0.54, SE = 0.15, \u0394\u03c72(df = 1) = 2.74, p=0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6, taken together, the control analyses provide compelling empirical support for the robustness of our main results: linking response speed and neural filtering under selective attention strengthened their relationship at T1 (\u03d5 = 0.54, SE = 0.15, \u0394\u03c72(df = 1) = 2.74, p=0.1; Figure 6B; see also Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the control analysis, also shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f2087132-62b1-44ec-81a3-d20fa94bd3bc",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C54",
+      "claim": "In the control analysis with selective attention trials, T1 neural filtering did not predict behavioural change (\u03b2 = 0.13, SE = 0.21, \u0394\u03c72(df = 1) = 0.43, p=0.51).",
+      "claim_type": "EXPLICIT",
+      "source": "but did not yield any significant effects for the influence of T1 neural filtering on behavioural change (\u03b2 = 0.13, SE = 0.21, \u0394\u03c72(df = 1) = 0.43, p=0.51),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "d8aeb35e-1619-4d74-86a3-8f28c63c6411",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C55",
+      "claim": "In the control analysis with selective attention trials, the relationship of neural and behavioural change was not significant (\u03d5 = 0.26, SE = 0.14, \u0394\u03c72(df = 1) = 3.1, p=0.08).",
+      "claim_type": "EXPLICIT",
+      "source": "or for the relationship of neural and behavioural change (\u03d5 = 0.26, SE = 0.14, \u0394\u03c72(df = 1) = 3.1, p=0.08; please note the close correspondence to path estimates reported in Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "b830afce-4137-4df2-b423-2944b345278b",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C56",
+      "claim": "Neural tracking of attended speech showed substantially higher manifest-level test\u2013retest reliability (r = 0.65, p<0.001) compared to that of the neural tracking index.",
+      "claim_type": "EXPLICIT",
+      "source": "The second control analysis revealed a substantially higher manifest-level test\u2013retest reliability of neural tracking of attended speech (r = 0.65, p<0.001; Figure 6C, see also Figure 6\u2014figure supplement 2 for neural tracking of ignored speech) compared to that of the neural tracking index.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the control analysis, also shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "9010f23a-331a-4485-a0b4-ac9f1891d47b",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C57",
+      "claim": "In the control analysis with attended-speech tracking, baseline levels of attended-speech tracking did not predict future change in response speed (\u03b2 = 0.18, SE = 0.11, \u0394\u03c72(df = 1) = 2.73, p=0.10).",
+      "claim_type": "EXPLICIT",
+      "source": "However, when linked to longitudinal changes in response speed, this analysis provided even less evidence for systematic change-related relationships: baseline levels of attended-speech tracking did not predict future change in response speed (\u03b2 = 0.18, SE = 0.11, \u0394\u03c72(df = 1) = 2.73, p=0.10),",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "87e15351-352d-4828-a697-155ad4598b86",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C58",
+      "claim": "In the control analysis with attended-speech tracking, changes in neural and behavioural functioning occurred independently of one another (\u03d5 = \u20130.03, SE = 0.12, \u0394\u03c72(df = 1) = 0.06, p=0.81).",
+      "claim_type": "EXPLICIT",
+      "source": "and changes in neural and behavioural functioning occurred independently of one another (\u03d5 = \u20130.03, SE = 0.12, \u0394\u03c72(df = 1) = 0.06, p=0.81).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "63afc0b8-dafa-4886-8c04-55d7262fedab",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C59",
+      "claim": "Dropout at T2 could not be predicted from participants' T1 age, hearing loss, behavioural performance (accuracy, speed), or neural filtering strength (all p>0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "Dropout at T2 could not be predicted from participants' T1 age, hearing loss, behavioural performance (accuracy, speed), or neural filtering strength (all p>0.13).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of dropout patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "6ecada0a-60e8-4b82-9a6d-1d5c20b9a264",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C60",
+      "claim": "The reduced longitudinal sample was not biased in terms of sensory, cognitive, or neural functioning compared to the full T1 cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that compared to the full T1 cohort reported on in previous studies (Tune et al., 2021; Alavash et al., 2021) our reduced longitudinal sample was not biased in terms of sensory, cognitive, or neural functioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the dropout analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "73aef7e1-8a58-4086-aa25-bcd8866c7bed",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C61",
+      "claim": "Participants gave written informed consent and received financial compensation (10\u20ac per hour).",
+      "claim_type": "EXPLICIT",
+      "source": "Participants gave written informed consent and received financial compensation (10\u20ac per hour).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "02ea15f0-a183-4c9d-8bd5-c698656975d3",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "claim_id": "C62",
+      "claim": "Procedures were approved by the ethics committee of the University of L\u00fcbeck and were in accordance with the Declaration of Helsinki.",
+      "claim_type": "EXPLICIT",
+      "source": "Procedures were approved by the ethics committee of the University of L\u00fcbeck and were in accordance with the Declaration of Helsinki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "67f9dbf5-7751-4385-975d-57e8c045f5a5",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Hearing acuity declined with age and over the 2-year study period. Cross-sectionally, hearing acuity decreased linearly with age (\u03b2 = \u22123.4, p<0.001), and longitudinally decreased by 1.2 dB from T1 to T2 (\u03b2 = \u22121.18, p<0.001), corresponding to a projected decline of \u22126.3 dB HL per decade. This progression aligns with prior large-sample reports and showed high test-retest reliability (r = 0.94).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 provide converging evidence from cross-sectional and longitudinal analyses with appropriate statistical tests, significant p-values, and high reliability. The findings are consistent with cited prior research (C23), strengthening their validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "a04c62a4-73d1-4e66-b335-08cdb8c992d3",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Behavioral performance (accuracy and speed) showed age-related decline cross-sectionally but remained stable longitudinally over 2 years. Both measures declined with age at T1 and T2 (speed: \u03b2 = \u22120.02, p=0.004; accuracy: \u03b2 = \u22120.23, p=0.0001), but average performance did not change from T1 to T2 (speed: p=0.44; accuracy: p=0.36). Both measures showed moderately high test-retest reliability (r = 0.70-0.72).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are well-supported by statistical analyses with appropriate tests and significant p-values for cross-sectional effects. The longitudinal stability is demonstrated by non-significant timepoint effects, and reliability metrics support measurement quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "bdca7660-4769-4a85-bb44-b8498811dfbe",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neural filtering strength was independent of age and showed no systematic longitudinal change, but exhibited weak test-retest reliability. Neural filtering varied independently of age at both timepoints (\u03b2 = 0.0003, p=0.48) with no systematic group-level change from T1 to T2 (\u03b2 = 0.001, p=0.16). However, individual neural filtering strength correlated only weakly across time (r = 0.21, p=0.03).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by appropriate statistical tests showing non-significant age effects and longitudinal change. The weak reliability (C30) is a critical finding that contrasts with the high reliability of other neural measures (C31-C32), suggesting neural filtering may be more state-like than trait-like.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "355174cf-6a85-4800-9e9a-60a1dcfec972",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Resting-state EEG metrics (individual alpha frequency and 1/f slope) showed high test-retest reliability. Both IAF (r = 0.83, p<0.001) and 1/f slope (r = 0.78, p<0.001) demonstrated substantially higher reliability than the neural filtering index.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by reliability analyses with significant correlations. These serve as important control measures demonstrating that low neural filtering reliability is not due to general EEG data quality issues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Age affects listening performance both directly and indirectly through hearing acuity, with these relationships remaining stable over time. Higher age was associated with poorer hearing (\u03b2 = \u22120.43, p<0.001) and listening performance (speed: \u03b2 = \u22120.33, p<0.001; accuracy: \u03b2 = \u22120.26, p<0.001). Better hearing boosted accuracy (\u03b2 = 0.30, p=0.003) but not speed (\u03b2 = \u22120.06, p=0.56). Age's effect on accuracy was partially mediated by hearing acuity (ACME \u03b2 = \u22120.12, p<0.001), with all effects stable from T1 to T2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 are well-supported by causal mediation analysis with appropriate statistical tests, significant p-values for key paths, and Bayes factors supporting stability over time. The differential effects on accuracy versus speed are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "5eb3fe7d-b5a3-4041-b438-15bdce003f8a",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neural filtering reliably supports listening performance within each timepoint at both trait and state levels, with this relationship remaining stable over time. Stronger neural filtering improved both accuracy (\u03b2 = 0.21, p=0.02) and speed (\u03b2 = 0.33, p<0.001), with no significant changes across timepoints (all p>0.28, logBF01 > 2.1). At the single-trial level, stronger neural filtering increased odds of correct response (OR = 1.08, p<0.001) at both T1 and T2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are strongly supported by converging evidence from causal mediation analysis and single-trial mixed-effects models. The longitudinal stability is demonstrated through non-significant interactions and Bayes factors favoring the null hypothesis of no change.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "130282fa-9e9b-4694-a2eb-b4184e642b7b",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Univariate latent change score models revealed differential patterns of change across measures. Accuracy remained stable (p=0.25), while response speed (b0 = 0.13, p<0.001) and neural filtering (b0 = 0.24, p=0.08) showed mean increases. Reliable individual differences in longitudinal change were observed for both speed (\u03d5 = 0.88, p<0.01) and neural filtering (\u03d5 = 0.81, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by appropriate latent change score modeling with likelihood ratio tests. The presence of reliable individual differences in change (C46) is crucial for testing change-change relationships and is properly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f4ecf490-4247-4ada-8e3d-0b2f92a67022",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Baseline levels and age predicted within-domain longitudinal change. Individuals with stronger baseline neural filtering or faster responses showed smaller increases over time (speed: \u03b2 = \u22120.43, p=0.003; neural filtering: \u03b2 = \u22120.44, p=0.04), possibly indicating ceiling effects. Older age at T1 predicted smaller increases in speed (\u03d5 = \u22120.24, p=0.037) but not neural filtering (\u03d5 = \u22120.02, p=0.89).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by bivariate latent change score modeling with appropriate statistical tests. The differential age effects on speed versus neural filtering change are clearly demonstrated and properly interpreted as potential ceiling effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "4cc6ef2d-a1a8-4968-ad72-f7848c699ab0",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neural filtering at baseline does not predict behavioral change, and longitudinal changes in neural and behavioral domains are independent. T1 neural filtering did not predict T1-T2 change in speed (\u03b2 = 0.02, p=0.90), nor did T1 speed predict neural filtering change (\u03b2 = \u22120.11, p=0.58). Longitudinal changes in the two domains occurred largely independently (\u03d5 = 0.25, p=0.1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are the central findings of the study and are well-supported by bivariate latent change score modeling. The non-significant cross-domain predictive relationships are properly tested and interpreted, directly addressing the study's main research questions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "fb4bbf0f-b02f-4566-a444-072cb90c2b47",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Control analysis using selective attention trials only confirmed the main findings. Restricting to selective attention trials strengthened the T1 cross-sectional relationship (\u03d5 = 0.54, p=0.1) but did not yield significant effects for T1 neural filtering predicting behavioral change (\u03b2 = 0.13, p=0.51) or for the change-change relationship (\u03d5 = 0.26, p=0.08).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by appropriate control analyses that test the robustness of main findings to methodological choices. The consistency with main results (Figure 5) strengthens confidence in the primary conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "c393729c-cb94-4057-8dc3-05d5699699a8",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Control analysis using attended-speech tracking showed higher reliability but weaker predictive relationships. Neural tracking of attended speech showed substantially higher test-retest reliability (r = 0.65, p<0.001) than the neural filtering index, but baseline attended-speech tracking did not predict future speed change (\u03b2 = 0.18, p=0.10), and changes occurred independently (\u03d5 = \u22120.03, p=0.81).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 provide important control analyses demonstrating that the lack of predictive relationships is not simply due to low reliability of the neural filtering index. Even with higher reliability, attended-speech tracking alone does not predict behavioral change.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "ece4fc69-fefe-42bd-9e65-d06c6fa5f8bf",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The longitudinal sample showed no evidence of selective dropout bias. Dropout at T2 could not be predicted from T1 measures of age, hearing loss, behavioral performance, or neural filtering (all p>0.13), indicating the reduced sample was not biased in terms of sensory, cognitive, or neural functioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by appropriate dropout analyses. This is important for establishing that the longitudinal findings are not confounded by selective attrition, though the inference in C60 could be strengthened with additional analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "d22d7608-cc3b-4e40-825d-1cd25904250f",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study's main conclusion is that listening behavior and neural filtering follow largely independent developmental trajectories over 2 years in aging adults (N=105, 39-82y). Despite stable listening performance and declining hearing acuity, neural filtering and behavior correlated only within timepoints, and neither baseline neural filtering nor its change predicted behavioral change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 represent the study's primary conclusions and are well-supported by the comprehensive analyses presented (C19-C58). The combination of cross-sectional stability, longitudinal independence, and robust control analyses provides strong evidence for these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "64f8c34b-d99e-4ad4-b02b-8aca02004e1d",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study examined N=105 individuals aged 39-82y (median 63y) at two timepoints separated by mean 23.2 months. Participants provided informed consent, received compensation, and procedures were ethically approved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C61-C62 describe basic study design and ethical procedures. These are straightforward descriptive claims that are adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "cca82458-3bd9-46d5-8ae3-e37e0ffe48e4",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establish that preserved communication promotes healthy aging, speech comprehension is essential for communication, and age-related changes in auditory and cognitive systems affect speech comprehension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C10 are general background statements supported by established knowledge and appropriate citations (C8). These provide context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "e296762a-e958-4ff1-b04a-c92619842350",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior research establishes that age and hearing loss cannot fully explain individual differences in listening behavior, that neural filtering mechanisms support speech comprehension, and that neural filtering was previously found to be independent of age and hearing loss while supporting listening performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 accurately represent prior research findings through appropriate citations, including the authors' previous work (Tune et al., 2021). These establish the foundation for the current longitudinal investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "5bb0cec8-4bb8-42b3-af2c-473dea320d83",
+      "content_id": "ba4b489e-d508-48e0-a2ec-ab086acc532c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The speculative claim that age-related sensory acuity loss might be compensated by preserved attentional neural filtering serves as a motivating hypothesis for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C2 is explicitly speculative and serves as a hypothesis to be tested. The study's findings (C3-C6, C50-C52) actually provide evidence against this compensatory mechanism at the longitudinal level, though cross-sectional relationships support it within timepoints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "85ddbac7-6aea-4122-8a27-c4d2584d9a05",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Hearing acuity declined with age cross-sectionally and longitudinally over 2 years, with high test-retest reliability (r=0.94). The observed decline (1.2 dB from T1 to T2) corresponds to a projected decrease of -6.3 dB HL per decade, consistent with prior large-sample reports.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly accepted the hearing acuity findings without critique. The first reviewer noted the study 'provides convincing evidence for how speech recognition behaviour and neural tracking of speech separately evolve in about 2 y,' implicitly accepting the sensory decline data as valid context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "1a24f3c6-90c6-452d-a50e-e017c600efdf",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Behavioral performance (speed and accuracy) declined with age cross-sectionally but remained stable on average from T1 to T2, with moderately high test-retest reliability (r=0.70-0.72).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the behavioral stability findings. The first reviewer stated the dataset 'provides convincing evidence for how speech recognition behaviour and neural tracking of speech separately evolve,' and the second reviewer summarized the findings accurately without challenging the behavioral stability claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "1f6cfcf0-23a2-42bb-a695-21a60538f1cc",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Neural filtering strength was independent of age at both timepoints, showed no systematic group-level change from T1 to T2, but had weak test-retest reliability (r=0.21).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The second reviewer raised concerns about the weak test-retest reliability (r=0.21), noting 'the envelope tracking measure is often quite low, close to the noise floor, and this may affect test-retest reliability.' This suggests uncertainty about the reliability and interpretability of the neural filtering metric, though the authors' interpretation was ultimately accepted after revision.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "e7707669-68fe-40eb-a527-2c231c4aa579",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Neural filtering and behavior were correlated within each timepoint (T1, T2), with stronger neural filtering associated with better listening performance. This cross-sectional brain-behavior link remained stable longitudinally.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the within-timepoint correlations. The second reviewer acknowledged 'neural filtering and behavior were correlated during each measurement' and the third reviewer noted the study 'addresses this gap by testing longitudinal stability of neural filtering as a neural mechanism upholding listening performance.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "443ccceb-c515-4a74-a1ca-246129c782f9",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Neural filtering and listening behavior follow largely independent developmental trajectories: neither neural filtering at T1 nor its 2-year change predicted individual 2-year behavioral change.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted this core finding. The first reviewer stated the study 'provides convincing evidence for how speech recognition behaviour and neural tracking of speech separately evolve,' and the second reviewer noted 'EEG measures at the first timepoint did not predict behavioural performance two years later,' concluding that 'the authors present a strong case for the interpretation of their findings.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Age-related effects on listening behavior were mediated by hearing acuity for accuracy but not speed, and these relationships remained stable from T1 to T2.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the mediation analysis findings. The acceptance of the overall study design and conclusions implies acceptance of these supporting analyses showing how age, hearing, and behavior interrelate.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "5574eccd-2f71-4206-8aad-b6a0765f0a80",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Latent change score modeling revealed reliable individual differences in longitudinal change for both speed and neural filtering, with baseline levels predicting their own change (ceiling effects) and age at T1 predicting speed change but not neural filtering change.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The third reviewer explicitly praised the methodology: 'The latent change score modeling approach is appropriately used as a tool to examine key developmental questions and distinguish the complex processes underlying lifespan development in brain and behaviour with longitudinal data.' This indicates acceptance of these modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "e6d1bf01-47cf-4130-9f9a-49db82915a23",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Control analyses using selective-attention trials and attended-speech tracking showed similar patterns: stronger cross-sectional relationships but no predictive value of neural measures for behavioral change, despite higher test-retest reliability for attended-speech tracking (r=0.65).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The third reviewer suggested 'more in-depth data analysis on indicators under different conditions' (valid vs. invalid cues), and the control analyses appear to address this concern. The second reviewer's acceptance after revision ('The authors have satisfactorily addressed my previous comments') suggests these control analyses were convincing.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "8bf7085f-d673-486b-96a9-be9330525af2",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Resting-state EEG metrics (individual alpha frequency and 1/f slope) showed high test-retest reliability (r=0.78-0.83).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These reliability findings were not challenged by reviewers and serve as a methodological control showing that the low reliability of neural filtering is specific to that measure rather than a general EEG data quality issue.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "e72a3851-5173-4286-9691-3d1e97bd0d78",
+      "content_id": "1424d0c4-9a5e-4984-a6b0-076bd8d57c5b",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Dropout analysis showed no bias in the longitudinal sample compared to the full T1 cohort in terms of age, hearing, behavior, or neural filtering.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the dropout analysis or sample characteristics. The large sample size (N=105) was explicitly praised by the second reviewer as 'impressively large.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6061c965-c088-436f-8792-d2c6013bfc6e",
+      "result_id": "67f9dbf5-7751-4385-975d-57e8c045f5a5"
+    },
+    {
+      "claim_id": "6c3583e8-3b86-4d54-85e8-de987aa1040d",
+      "result_id": "67f9dbf5-7751-4385-975d-57e8c045f5a5"
+    },
+    {
+      "claim_id": "e84115b4-6955-4463-8aa1-36d5300700fc",
+      "result_id": "67f9dbf5-7751-4385-975d-57e8c045f5a5"
+    },
+    {
+      "claim_id": "55878fe9-4fd8-40b8-a16b-ed59a07b4408",
+      "result_id": "67f9dbf5-7751-4385-975d-57e8c045f5a5"
+    },
+    {
+      "claim_id": "cf38ee9e-a1c8-466e-9eeb-5ab5396d2654",
+      "result_id": "67f9dbf5-7751-4385-975d-57e8c045f5a5"
+    },
+    {
+      "claim_id": "ea8b6c28-6526-473c-84dc-2d669cd72420",
+      "result_id": "67f9dbf5-7751-4385-975d-57e8c045f5a5"
+    },
+    {
+      "claim_id": "45fb2ee6-8be8-4dcf-b024-48fab17e22cd",
+      "result_id": "a04c62a4-73d1-4e66-b335-08cdb8c992d3"
+    },
+    {
+      "claim_id": "39ea1ffd-b1ae-4431-8437-af7a45f164ef",
+      "result_id": "a04c62a4-73d1-4e66-b335-08cdb8c992d3"
+    },
+    {
+      "claim_id": "11d54cde-ca19-4a0c-a5eb-82a6f8b2c1fb",
+      "result_id": "a04c62a4-73d1-4e66-b335-08cdb8c992d3"
+    },
+    {
+      "claim_id": "be32fe83-0022-4b2a-937f-2b9d38efd654",
+      "result_id": "bdca7660-4769-4a85-bb44-b8498811dfbe"
+    },
+    {
+      "claim_id": "06fe1dd8-db1d-4cec-b435-c6c6fd3c32dc",
+      "result_id": "bdca7660-4769-4a85-bb44-b8498811dfbe"
+    },
+    {
+      "claim_id": "09373288-7fc8-4d06-9415-a45f71fad1c6",
+      "result_id": "bdca7660-4769-4a85-bb44-b8498811dfbe"
+    },
+    {
+      "claim_id": "f4f33466-f12f-49a4-a9c8-7407c3ec25ad",
+      "result_id": "355174cf-6a85-4800-9e9a-60a1dcfec972"
+    },
+    {
+      "claim_id": "914bfbaa-c371-4cee-9ffb-1884cafc3643",
+      "result_id": "355174cf-6a85-4800-9e9a-60a1dcfec972"
+    },
+    {
+      "claim_id": "e053f66d-138c-4d67-899b-821de605a44f",
+      "result_id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7"
+    },
+    {
+      "claim_id": "fc24d253-dc65-490b-b524-2f31c39ea952",
+      "result_id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7"
+    },
+    {
+      "claim_id": "503307c7-62cb-412a-b363-fe163d2943b3",
+      "result_id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7"
+    },
+    {
+      "claim_id": "1c834d2c-d4aa-4ac7-b754-9e54ed64baac",
+      "result_id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7"
+    },
+    {
+      "claim_id": "48f61aab-b976-46d0-8da5-7f794b7b2eed",
+      "result_id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7"
+    },
+    {
+      "claim_id": "a44f6370-09dd-45c2-8eb5-f3cfccc19ec6",
+      "result_id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7"
+    },
+    {
+      "claim_id": "44552871-78b5-4bf1-b10f-49261d04211d",
+      "result_id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7"
+    },
+    {
+      "claim_id": "105268e2-88e5-4064-9afa-ffd3cf8b4ab5",
+      "result_id": "5eb3fe7d-b5a3-4041-b438-15bdce003f8a"
+    },
+    {
+      "claim_id": "962a2ca9-cac8-4a74-8d1a-931869546eb6",
+      "result_id": "5eb3fe7d-b5a3-4041-b438-15bdce003f8a"
+    },
+    {
+      "claim_id": "ff4a6e1b-9f11-4975-b35d-8620927d15f0",
+      "result_id": "5eb3fe7d-b5a3-4041-b438-15bdce003f8a"
+    },
+    {
+      "claim_id": "c36d95ef-74e8-46a7-952e-ac7de7ed0440",
+      "result_id": "130282fa-9e9b-4694-a2eb-b4184e642b7b"
+    },
+    {
+      "claim_id": "2eb3c017-bcd1-4fad-b83c-022125997792",
+      "result_id": "130282fa-9e9b-4694-a2eb-b4184e642b7b"
+    },
+    {
+      "claim_id": "3bde6bdc-da96-4a10-9159-8ff9deeed5f3",
+      "result_id": "130282fa-9e9b-4694-a2eb-b4184e642b7b"
+    },
+    {
+      "claim_id": "49bb6271-0312-4074-8c67-b1873de122e1",
+      "result_id": "130282fa-9e9b-4694-a2eb-b4184e642b7b"
+    },
+    {
+      "claim_id": "a01eeb29-6052-499d-9f9d-1b05812e9947",
+      "result_id": "f4ecf490-4247-4ada-8e3d-0b2f92a67022"
+    },
+    {
+      "claim_id": "f420e915-66a1-4657-be82-b28381b4f3b9",
+      "result_id": "f4ecf490-4247-4ada-8e3d-0b2f92a67022"
+    },
+    {
+      "claim_id": "26b37c8c-14d0-44c7-b09e-0fe7aa3b4766",
+      "result_id": "f4ecf490-4247-4ada-8e3d-0b2f92a67022"
+    },
+    {
+      "claim_id": "a4c98213-52ad-4f08-b09d-ab6ef0efd70a",
+      "result_id": "4cc6ef2d-a1a8-4968-ad72-f7848c699ab0"
+    },
+    {
+      "claim_id": "924a4049-9df4-474e-abfc-25105765d6bc",
+      "result_id": "4cc6ef2d-a1a8-4968-ad72-f7848c699ab0"
+    },
+    {
+      "claim_id": "6eaa8afe-2aae-483b-9ae5-dc59dd250c12",
+      "result_id": "4cc6ef2d-a1a8-4968-ad72-f7848c699ab0"
+    },
+    {
+      "claim_id": "4ba955e9-a91b-4068-ac7b-43dca000cfa8",
+      "result_id": "fb4bbf0f-b02f-4566-a444-072cb90c2b47"
+    },
+    {
+      "claim_id": "f2087132-62b1-44ec-81a3-d20fa94bd3bc",
+      "result_id": "fb4bbf0f-b02f-4566-a444-072cb90c2b47"
+    },
+    {
+      "claim_id": "d8aeb35e-1619-4d74-86a3-8f28c63c6411",
+      "result_id": "fb4bbf0f-b02f-4566-a444-072cb90c2b47"
+    },
+    {
+      "claim_id": "b830afce-4137-4df2-b423-2944b345278b",
+      "result_id": "c393729c-cb94-4057-8dc3-05d5699699a8"
+    },
+    {
+      "claim_id": "9010f23a-331a-4485-a0b4-ac9f1891d47b",
+      "result_id": "c393729c-cb94-4057-8dc3-05d5699699a8"
+    },
+    {
+      "claim_id": "87e15351-352d-4828-a697-155ad4598b86",
+      "result_id": "c393729c-cb94-4057-8dc3-05d5699699a8"
+    },
+    {
+      "claim_id": "63afc0b8-dafa-4886-8c04-55d7262fedab",
+      "result_id": "ece4fc69-fefe-42bd-9e65-d06c6fa5f8bf"
+    },
+    {
+      "claim_id": "6ecada0a-60e8-4b82-9a6d-1d5c20b9a264",
+      "result_id": "ece4fc69-fefe-42bd-9e65-d06c6fa5f8bf"
+    },
+    {
+      "claim_id": "ad176292-4f08-419e-9661-c5aa6b423fd6",
+      "result_id": "d22d7608-cc3b-4e40-825d-1cd25904250f"
+    },
+    {
+      "claim_id": "96d13d1e-8217-460c-bbc3-1a4a7d38c1a1",
+      "result_id": "d22d7608-cc3b-4e40-825d-1cd25904250f"
+    },
+    {
+      "claim_id": "e731faca-1c2d-427c-a242-d3d173b25e03",
+      "result_id": "d22d7608-cc3b-4e40-825d-1cd25904250f"
+    },
+    {
+      "claim_id": "f0e67a44-9b53-418b-84f2-c6769e0131ce",
+      "result_id": "d22d7608-cc3b-4e40-825d-1cd25904250f"
+    },
+    {
+      "claim_id": "74251f68-e4ac-48f2-a5cf-1729920ccd48",
+      "result_id": "64f8c34b-d99e-4ad4-b02b-8aca02004e1d"
+    },
+    {
+      "claim_id": "cd74402e-6596-4b92-8da8-58c7dc8a0c7e",
+      "result_id": "64f8c34b-d99e-4ad4-b02b-8aca02004e1d"
+    },
+    {
+      "claim_id": "73aef7e1-8a58-4086-aa25-bcd8866c7bed",
+      "result_id": "64f8c34b-d99e-4ad4-b02b-8aca02004e1d"
+    },
+    {
+      "claim_id": "02ea15f0-a183-4c9d-8bd5-c698656975d3",
+      "result_id": "64f8c34b-d99e-4ad4-b02b-8aca02004e1d"
+    },
+    {
+      "claim_id": "09e50dd7-f5b8-4c44-bb43-a2c48abf84da",
+      "result_id": "cca82458-3bd9-46d5-8ae3-e37e0ffe48e4"
+    },
+    {
+      "claim_id": "8a3e4b90-b6e9-48c7-89da-199dea5abe29",
+      "result_id": "cca82458-3bd9-46d5-8ae3-e37e0ffe48e4"
+    },
+    {
+      "claim_id": "0ad5ec36-c8ac-4628-afce-6e9ee7733d77",
+      "result_id": "cca82458-3bd9-46d5-8ae3-e37e0ffe48e4"
+    },
+    {
+      "claim_id": "7cc2730d-c60c-4ef3-8ece-3e3c5e18e640",
+      "result_id": "cca82458-3bd9-46d5-8ae3-e37e0ffe48e4"
+    },
+    {
+      "claim_id": "2a2fcf68-81fa-4746-85ea-cda9256ef4ae",
+      "result_id": "cca82458-3bd9-46d5-8ae3-e37e0ffe48e4"
+    },
+    {
+      "claim_id": "43c1c710-c6b7-4348-80ec-53a76e67797a",
+      "result_id": "e296762a-e958-4ff1-b04a-c92619842350"
+    },
+    {
+      "claim_id": "df1e9caf-74c7-4325-be30-82b5a3e572a2",
+      "result_id": "e296762a-e958-4ff1-b04a-c92619842350"
+    },
+    {
+      "claim_id": "606a7a20-c531-446a-8bb3-a5dffecfd550",
+      "result_id": "e296762a-e958-4ff1-b04a-c92619842350"
+    },
+    {
+      "claim_id": "f2d17a0f-eeb6-4e33-842a-414c7f6c408c",
+      "result_id": "e296762a-e958-4ff1-b04a-c92619842350"
+    },
+    {
+      "claim_id": "e8ebaf4b-7a87-4b8d-a946-6bf473147187",
+      "result_id": "e296762a-e958-4ff1-b04a-c92619842350"
+    },
+    {
+      "claim_id": "58ff1e65-6f78-403c-a581-cd4aac4905f5",
+      "result_id": "e296762a-e958-4ff1-b04a-c92619842350"
+    },
+    {
+      "claim_id": "f15ef0fe-69e6-4998-9bfd-e399471f3545",
+      "result_id": "5bb0cec8-4bb8-42b3-af2c-473dea320d83"
+    },
+    {
+      "claim_id": "6061c965-c088-436f-8792-d2c6013bfc6e",
+      "result_id": "85ddbac7-6aea-4122-8a27-c4d2584d9a05"
+    },
+    {
+      "claim_id": "6c3583e8-3b86-4d54-85e8-de987aa1040d",
+      "result_id": "85ddbac7-6aea-4122-8a27-c4d2584d9a05"
+    },
+    {
+      "claim_id": "e84115b4-6955-4463-8aa1-36d5300700fc",
+      "result_id": "85ddbac7-6aea-4122-8a27-c4d2584d9a05"
+    },
+    {
+      "claim_id": "55878fe9-4fd8-40b8-a16b-ed59a07b4408",
+      "result_id": "85ddbac7-6aea-4122-8a27-c4d2584d9a05"
+    },
+    {
+      "claim_id": "cf38ee9e-a1c8-466e-9eeb-5ab5396d2654",
+      "result_id": "85ddbac7-6aea-4122-8a27-c4d2584d9a05"
+    },
+    {
+      "claim_id": "ea8b6c28-6526-473c-84dc-2d669cd72420",
+      "result_id": "85ddbac7-6aea-4122-8a27-c4d2584d9a05"
+    },
+    {
+      "claim_id": "45fb2ee6-8be8-4dcf-b024-48fab17e22cd",
+      "result_id": "1a24f3c6-90c6-452d-a50e-e017c600efdf"
+    },
+    {
+      "claim_id": "39ea1ffd-b1ae-4431-8437-af7a45f164ef",
+      "result_id": "1a24f3c6-90c6-452d-a50e-e017c600efdf"
+    },
+    {
+      "claim_id": "11d54cde-ca19-4a0c-a5eb-82a6f8b2c1fb",
+      "result_id": "1a24f3c6-90c6-452d-a50e-e017c600efdf"
+    },
+    {
+      "claim_id": "be32fe83-0022-4b2a-937f-2b9d38efd654",
+      "result_id": "1f6cfcf0-23a2-42bb-a695-21a60538f1cc"
+    },
+    {
+      "claim_id": "06fe1dd8-db1d-4cec-b435-c6c6fd3c32dc",
+      "result_id": "1f6cfcf0-23a2-42bb-a695-21a60538f1cc"
+    },
+    {
+      "claim_id": "09373288-7fc8-4d06-9415-a45f71fad1c6",
+      "result_id": "1f6cfcf0-23a2-42bb-a695-21a60538f1cc"
+    },
+    {
+      "claim_id": "e731faca-1c2d-427c-a242-d3d173b25e03",
+      "result_id": "e7707669-68fe-40eb-a527-2c231c4aa579"
+    },
+    {
+      "claim_id": "105268e2-88e5-4064-9afa-ffd3cf8b4ab5",
+      "result_id": "e7707669-68fe-40eb-a527-2c231c4aa579"
+    },
+    {
+      "claim_id": "962a2ca9-cac8-4a74-8d1a-931869546eb6",
+      "result_id": "e7707669-68fe-40eb-a527-2c231c4aa579"
+    },
+    {
+      "claim_id": "ff4a6e1b-9f11-4975-b35d-8620927d15f0",
+      "result_id": "e7707669-68fe-40eb-a527-2c231c4aa579"
+    },
+    {
+      "claim_id": "ad176292-4f08-419e-9661-c5aa6b423fd6",
+      "result_id": "443ccceb-c515-4a74-a1ca-246129c782f9"
+    },
+    {
+      "claim_id": "f0e67a44-9b53-418b-84f2-c6769e0131ce",
+      "result_id": "443ccceb-c515-4a74-a1ca-246129c782f9"
+    },
+    {
+      "claim_id": "a4c98213-52ad-4f08-b09d-ab6ef0efd70a",
+      "result_id": "443ccceb-c515-4a74-a1ca-246129c782f9"
+    },
+    {
+      "claim_id": "924a4049-9df4-474e-abfc-25105765d6bc",
+      "result_id": "443ccceb-c515-4a74-a1ca-246129c782f9"
+    },
+    {
+      "claim_id": "6eaa8afe-2aae-483b-9ae5-dc59dd250c12",
+      "result_id": "443ccceb-c515-4a74-a1ca-246129c782f9"
+    },
+    {
+      "claim_id": "e053f66d-138c-4d67-899b-821de605a44f",
+      "result_id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf"
+    },
+    {
+      "claim_id": "fc24d253-dc65-490b-b524-2f31c39ea952",
+      "result_id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf"
+    },
+    {
+      "claim_id": "503307c7-62cb-412a-b363-fe163d2943b3",
+      "result_id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf"
+    },
+    {
+      "claim_id": "1c834d2c-d4aa-4ac7-b754-9e54ed64baac",
+      "result_id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf"
+    },
+    {
+      "claim_id": "48f61aab-b976-46d0-8da5-7f794b7b2eed",
+      "result_id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf"
+    },
+    {
+      "claim_id": "a44f6370-09dd-45c2-8eb5-f3cfccc19ec6",
+      "result_id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf"
+    },
+    {
+      "claim_id": "44552871-78b5-4bf1-b10f-49261d04211d",
+      "result_id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf"
+    },
+    {
+      "claim_id": "c36d95ef-74e8-46a7-952e-ac7de7ed0440",
+      "result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80"
+    },
+    {
+      "claim_id": "2eb3c017-bcd1-4fad-b83c-022125997792",
+      "result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80"
+    },
+    {
+      "claim_id": "3bde6bdc-da96-4a10-9159-8ff9deeed5f3",
+      "result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80"
+    },
+    {
+      "claim_id": "49bb6271-0312-4074-8c67-b1873de122e1",
+      "result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80"
+    },
+    {
+      "claim_id": "a01eeb29-6052-499d-9f9d-1b05812e9947",
+      "result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80"
+    },
+    {
+      "claim_id": "f420e915-66a1-4657-be82-b28381b4f3b9",
+      "result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80"
+    },
+    {
+      "claim_id": "26b37c8c-14d0-44c7-b09e-0fe7aa3b4766",
+      "result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80"
+    },
+    {
+      "claim_id": "4ba955e9-a91b-4068-ac7b-43dca000cfa8",
+      "result_id": "e6d1bf01-47cf-4130-9f9a-49db82915a23"
+    },
+    {
+      "claim_id": "f2087132-62b1-44ec-81a3-d20fa94bd3bc",
+      "result_id": "e6d1bf01-47cf-4130-9f9a-49db82915a23"
+    },
+    {
+      "claim_id": "d8aeb35e-1619-4d74-86a3-8f28c63c6411",
+      "result_id": "e6d1bf01-47cf-4130-9f9a-49db82915a23"
+    },
+    {
+      "claim_id": "b830afce-4137-4df2-b423-2944b345278b",
+      "result_id": "e6d1bf01-47cf-4130-9f9a-49db82915a23"
+    },
+    {
+      "claim_id": "9010f23a-331a-4485-a0b4-ac9f1891d47b",
+      "result_id": "e6d1bf01-47cf-4130-9f9a-49db82915a23"
+    },
+    {
+      "claim_id": "87e15351-352d-4828-a697-155ad4598b86",
+      "result_id": "e6d1bf01-47cf-4130-9f9a-49db82915a23"
+    },
+    {
+      "claim_id": "f4f33466-f12f-49a4-a9c8-7407c3ec25ad",
+      "result_id": "8bf7085f-d673-486b-96a9-be9330525af2"
+    },
+    {
+      "claim_id": "914bfbaa-c371-4cee-9ffb-1884cafc3643",
+      "result_id": "8bf7085f-d673-486b-96a9-be9330525af2"
+    },
+    {
+      "claim_id": "63afc0b8-dafa-4886-8c04-55d7262fedab",
+      "result_id": "e72a3851-5173-4286-9691-3d1e97bd0d78"
+    },
+    {
+      "claim_id": "6ecada0a-60e8-4b82-9a6d-1d5c20b9a264",
+      "result_id": "e72a3851-5173-4286-9691-3d1e97bd0d78"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "3ca965c3-4ff8-4375-8cbb-deb0c0421e25",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "67f9dbf5-7751-4385-975d-57e8c045f5a5",
+      "peer_result_id": "85ddbac7-6aea-4122-8a27-c4d2584d9a05",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on hearing acuity findings (C19-C24). Both evaluations find the claims SUPPORTED with converging evidence from cross-sectional and longitudinal analyses. Peer reviewers accepted these findings without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "029ada8b-5fec-4762-b3e9-e18cb2506ec2",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a04c62a4-73d1-4e66-b335-08cdb8c992d3",
+      "peer_result_id": "1a24f3c6-90c6-452d-a50e-e017c600efdf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on behavioral stability (C25-C27). Both evaluations find the claims SUPPORTED. OpenEval emphasizes statistical rigor while peer reviewers accepted the behavioral stability as part of the overall convincing evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "7f2a7484-752a-4087-9082-f6904d034c60",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "bdca7660-4769-4a85-bb44-b8498811dfbe",
+      "peer_result_id": "1f6cfcf0-23a2-42bb-a695-21a60538f1cc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on neural filtering reliability (C28-C30). OpenEval finds claims SUPPORTED and interprets weak reliability as meaningful (state-like vs trait-like). Peer reviewers marked UNCERTAIN, raising concerns about low reliability (r=0.21) being close to noise floor, though ultimately accepted after revision.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "0af19b56-a281-4985-8307-cb0fcd39d65c",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "355174cf-6a85-4800-9e9a-60a1dcfec972",
+      "peer_result_id": "8bf7085f-d673-486b-96a9-be9330525af2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on EEG reliability controls (C31-C32). Both evaluations find claims SUPPORTED. These serve as methodological controls demonstrating that low neural filtering reliability is specific rather than a general data quality issue.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "d494e3cd-2f0b-4ee6-bbfa-46c4dd6c40cd",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "96687a8f-ef68-414c-89f7-a8ce0c9a05d7",
+      "peer_result_id": "99c819e9-ca85-4a84-90ef-a918ad72dcaf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on mediation analysis (C33-C39). Both evaluations find claims SUPPORTED. OpenEval details the statistical rigor while peer reviewers implicitly accepted these analyses as part of the overall study design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "c56f55b2-b5ba-4ed8-9b13-bf2f0e9d9b63",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "5eb3fe7d-b5a3-4041-b438-15bdce003f8a",
+      "peer_result_id": "e7707669-68fe-40eb-a527-2c231c4aa579",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on within-timepoint correlations (C40-C42). Both find claims SUPPORTED. OpenEval emphasizes C40-C42 specifically, while peer review R4 groups these with broader claim C5, acknowledging neural filtering and behavior correlate within each measurement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "8d332cf9-fcc1-4961-981d-c2f33f94e990",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "130282fa-9e9b-4694-a2eb-b4184e642b7b",
+      "peer_result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on latent change score modeling (C43-C46). Both find claims SUPPORTED. OpenEval focuses on C43-C46, while peer review R7 covers C43-C49 together, with explicit praise for the methodology as 'appropriately used.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "02e36d1b-f6bd-4ebf-ac7d-931a05f388e3",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f4ecf490-4247-4ada-8e3d-0b2f92a67022",
+      "peer_result_id": "5574eccd-2f71-4206-8aad-b6a0765f0a80",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on differential age effects (C47-C49). Both find claims SUPPORTED. OpenEval evaluates C47-C49 separately, while peer review R7 includes these in broader methodological praise for latent change score modeling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "19295855-41e4-4d8c-9a73-c027e5a8499b",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "4cc6ef2d-a1a8-4968-ad72-f7848c699ab0",
+      "peer_result_id": "443ccceb-c515-4a74-a1ca-246129c782f9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on core longitudinal findings (C50-C52). Both find claims SUPPORTED. OpenEval emphasizes these as central findings with non-significant cross-domain predictions. Peer reviewers accepted this as 'convincing evidence' that neural tracking and behavior 'separately evolve.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "488926aa-2b85-43ed-8ac5-38f1e5807acf",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "fb4bbf0f-b02f-4566-a444-072cb90c2b47",
+      "peer_result_id": "e6d1bf01-47cf-4130-9f9a-49db82915a23",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on control analyses robustness (C53-C55). Both find claims SUPPORTED. OpenEval focuses on C53-C55, while peer review R8 covers C53-C58 together, noting these analyses addressed reviewer concerns about different conditions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "db015e0e-b70a-4085-987f-f93d7e13cf56",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "c393729c-cb94-4057-8dc3-05d5699699a8",
+      "peer_result_id": "e6d1bf01-47cf-4130-9f9a-49db82915a23",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on attended-speech tracking controls (C56-C58). Both find claims SUPPORTED. OpenEval evaluates C56-C58 separately as important controls, while peer review R8 groups these with C53-C55 as addressing reviewer suggestions for in-depth analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "4f52c50c-748f-4eed-989b-9d8aa084bee1",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ece4fc69-fefe-42bd-9e65-d06c6fa5f8bf",
+      "peer_result_id": "e72a3851-5173-4286-9691-3d1e97bd0d78",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on dropout analysis (C59-C60). Both find claims SUPPORTED. OpenEval notes inference could be strengthened, while peer reviewers praised the large sample size (N=105) without challenging dropout findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "d5311322-13f6-440d-acc6-afd1fdfa450a",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "d22d7608-cc3b-4e40-825d-1cd25904250f",
+      "peer_result_id": "443ccceb-c515-4a74-a1ca-246129c782f9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on primary conclusions (C3-C6). Both find claims SUPPORTED. OpenEval evaluates C3-C6 together as well-supported by comprehensive analyses. Peer review R5 focuses on C3, C6, C50-C52, presenting 'a strong case for the interpretation.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "6ee60040-6332-4ac5-87f8-20dfaf15ecde",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "64f8c34b-d99e-4ad4-b02b-8aca02004e1d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated basic study design and ethical procedures (C17-C18, C61-C62) as SUPPORTED descriptive claims. No corresponding peer review evaluation found for these methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f07588a2-c4b3-488b-859b-f7a360d2c951",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "cca82458-3bd9-46d5-8ae3-e37e0ffe48e4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background statements (C1, C7-C10) as SUPPORTED by established knowledge and citations. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "827c5bc1-c6c9-4117-9570-f737b4c46ab5",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "e296762a-e958-4ff1-b04a-c92619842350",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated prior research citations (C11-C16) as SUPPORTED and appropriately representing the literature foundation. No corresponding peer review evaluation found for these literature review claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    },
+    {
+      "id": "f2a521e1-7dc7-49d9-915b-36acecda7407",
+      "submission_id": "82069bfb-acf6-436e-a439-d955802defaf",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "5bb0cec8-4bb8-42b3-af2c-473dea320d83",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated the compensatory mechanism hypothesis (C2) as UNCERTAIN, noting it is speculative and the study findings actually provide evidence against it longitudinally. No corresponding peer review evaluation found for this specific hypothesis claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:59:40.721661Z"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The Mesotrode technique integrates chronic widefield mesoscale cortical imaging with compact multi-site electrophysiology using tetrodes fabricated from tungsten wires. The tetrodes can be flexibly implanted in various cortical and subcortical structures through small burr holes, and mice can be group-housed after surgery. High-quality recordings were obtained across multiple brain regions with histological confirmation of recording sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the technique as 'straightforward to implement and very well documented' and describe it as providing 'compelling evidence for recording neuronal activity at multiple temporal and spatial scales.' The methodological approach is accepted without critique of the basic implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mesotrode enables chronic recordings for up to 60 days post-implantation with relatively stable single unit activity. A total of 29 tetrodes were implanted in 14 mice, recording 110 neurons with an average yield of 3-5 neurons per tetrode across regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer notes that 'the authors claim that a tetrode-based approach can allow chronic recordings of single neural activity over days - a topic that is very controversial.' Another reviewer questions the stability metrics, stating 'it is unclear what is the stability of the established relationships' and requests 'a metric to compare STMs variability across sessions/recordings/days.' The chronic recording capability is questioned rather than fully accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The inter-spike interval (ISI) of neurons ranged between 0.2 and 0.7 s across most brain regions, except striatal neurons which fired significantly less (p<0.05). The coefficient of variation of ISI was similar across brain regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These basic electrophysiological characterization data are presented without reviewer critique or questioning. The statistical significance is noted and the findings are consistent with expected regional differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Spike-triggered maps (STMs) of recorded neurons can be stable for up to two months. Single neuron defined functional maps were stable across recording sessions and days, with specific examples showing hippocampal and midbrain neurons maintaining consistent cortical activation patterns over extended periods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "A reviewer explicitly questions the stability claims, noting 'it is unclear what is the stability of the established relationships' and that 'the nature of the \"recordings\" in Fig 4. is unclear.' The reviewer requests 'a metric to compare STMs variability across sessions/recordings/days' and notes 'the length of these recordings as well as the interval between them is not stated.' The stability is presented but not convincingly demonstrated according to reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Neurons from distinct subcortical structures (hippocampus, thalamus, striatum, midbrain) display diverse but segregated cortical functional connectivity maps. Clustering analysis of 1146 STMs from 110 neurons resulted in 10 distinct clusters, with neurons from different origins showing region-specific patterns (e.g., 59.6% of hippocampal STMs in cluster #10 with retrosplenial activation, striatal neurons in two opposing patterns). This suggests neurons of different origins participate in distinct cortico-subcortical pathways.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raise significant concerns about the clustering analysis. One notes 'the data-driven choice of 10 clusters might need a bit more explorations' and that 'the silhouette clustering accuracy peaks at 10 (Fig 5A), this metrics comes without a confidence intervals.' The reviewer requests bootstrapping and states 'a much stronger argument should be provided to use the 0.3 correlation cutoff value which seems to be arbitrarily low.' Another reviewer notes 'most of the conclusions presented in the bulk of the paper (Figures 1-5) are very similar to what previous work from Murphy's lab and other labs has shown using acute preparation,' suggesting limited novelty. The clustering methodology and interpretation are questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Facial nerve spiking is functionally associated with the PTA, RSP, and M2 cortical network. Micro-wires implanted on the facial motor nerve revealed a distinct cortical activation pattern in these areas during spontaneous facial movements. Optogenetic mapping showed that a broad area of dorsal cortex, including PTA, could evoke facial motor nerve spiking.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers describe the facial nerve recording work as 'interesting' and note it 'demonstrates that facial nerve spiking is functionally associated with several cortical areas.' While one reviewer suggests 'it can be integrated better into the rest of the paper,' the findings themselves are not challenged and are treated as a valid extension of the technique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C70"
+    ],
+    "result": "Optogenetic inhibition of the PTA area significantly reduced facial movement in mice. Control recordings confirmed that M1 and barrel cortex activity was not decreased by PTA inhibition. A rebound effect (sudden increase in PTA neuron firing and facial movement) occurred after stimulation ended, supporting causal relationships between PTA and facial movement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this finding, with one stating the study 'demonstrates that...optogenetic inhibition of the PTA area significantly reduced the facial movement of the mice.' The causal manipulation and control experiments are not questioned, and the finding is treated as a valid contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C33",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Methodological details including hemodynamic artifact correction using green reflectance signals, tetrode fabrication procedures, mouse strains, data acquisition parameters, spike detection thresholds, imaging parameters, optogenetic stimulation parameters, and clustering algorithms (PhenoGraph with k parameter, 0.3 correlation threshold for refinement).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers state the method is 'very well documented,' specific methodological choices are questioned. The 0.3 correlation cutoff is described as 'arbitrarily low' and requiring 'a much stronger argument.' Reviewers request that 'the authors should show that their conclusions hold within a range of parameter values (number of clusters and correlation threshold).' The documentation is appreciated but key analytical choices need better justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C28",
+      "C29",
+      "C58",
+      "C59",
+      "C60",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Background claims establishing the scientific context, including that cortical network activity is sculpted by inputs from individual neurons, that conventional tetrode setups with microdrives hinder widefield imaging, that GCaMP6 is suitable for chronic imaging, that STM has been used previously only in acute preparations, and that PTA is involved in controlling active movements consistent with prior literature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are primarily literature-based contextual claims supported by citations. Reviewers do not challenge these background statements and use them to frame their evaluation of the novel contributions. The context is accepted as establishing the rationale for the study.",
+    "result_type": "MINOR"
+  }
+]

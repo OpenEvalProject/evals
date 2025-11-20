@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The global structural accuracy of AF2 models is substantially better than traditional template-based models for GPCRs, with median RMSD of 2.9 \u00c5 for AF2 versus 4.3 \u00c5 for traditional models when comparing to experimentally determined structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this finding without challenge. Reviewer 1 states the authors 'find that binding sites are significantly more accurately modeled by AF2 compared to traditional template-based approaches,' and the editor notes the study provides 'compelling results for the GPCR protein family data.' This result is treated as an expected confirmation of AF2's superior global structural accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C35",
+      "C36"
+    ],
+    "result": "AF2 predictions of binding pocket structures are typically very accurate, with median RMSD of 1.3 \u00c5 compared to 3.3 \u00c5 for traditional models. The binding pocket RMSD between AF2 models and experimental structures is comparable to the RMSD between different experimental structures with different ligands bound.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding as demonstrated by the data. Reviewer 1 notes 'the rigorous analysis of the binding site RMSD and docked ligand pose RMSD is novel to my knowledge and is particularly insightful.' Reviewer 3 acknowledges 'the observation that the accuracy of AF models is similar to that between different holo structures of the same protein is interesting,' though they suggest this comparison to cross-docking is not entirely novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C37",
+      "C52"
+    ],
+    "result": "Despite superior binding pocket accuracy, AF2 models yield similar pose prediction accuracy to traditional models (15% vs 9%, p > 0.5) and much worse than experimentally determined structures (44%), demonstrating that improved structural accuracy does not translate to better docking performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central finding that all reviewers explicitly acknowledge and support. The editor calls it an 'important study' with 'broad implications.' Reviewer 1 states this finding has 'broad implications for the use of AF2 models in ligand binding pose prediction.' Reviewer 3 notes 'the authors have very clearly communicated that the use of AlphaFold-generated structures in traditional docking might not be a good idea,' though they suggest the conclusion may be 'obvious' to experts and question novelty relative to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C50"
+    ],
+    "result": "Experimentally determined structures yield substantially higher pose prediction accuracy (44%) than AF2 models across multiple docking methods (Glide SP, Glide XP, Rosetta), with consistent results showing AF2 models do not significantly outperform traditional models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding. Reviewer 1 notes 'the fact that they use three state-of-the-art ligand docking methods is a strength of the work; many studies use just one.' The consistency across methods strengthens the conclusion. No reviewer challenges the statistical significance or the magnitude of differences observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C32",
+      "C58",
+      "C77",
+      "C78"
+    ],
+    "result": "For the same binding pocket RMSD, AF2 models yield lower pose prediction accuracy than experimentally determined structures, demonstrating that binding pocket RMSD is not a good predictor of docking performance and that AF2 models have qualitatively different properties than experimental structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this key mechanistic insight. Reviewer 3 states 'the main conclusion of the paper, that structural accuracy (expressed as RMSD) of the protein model is not a good predictor of the accuracy the model will show in rigid docking protein-ligand pose prediction, is a good reminder of the well-appreciated need for high-quality side chain placements in docking.' However, Reviewer 3 notes this may not be entirely novel, citing that 'Ref. 3 might have already addressed the question of correlation between binding site RMSD and docking pose prediction accuracy.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Specific case examples (NK1R with aprepitant, 5HT2A with LSD) demonstrate that despite AF2 models having more accurate binding pockets than alternative structures, they yield worse pose predictions, illustrating the disconnect between pocket accuracy and docking performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 acknowledges these examples but requests more detailed analysis: 'Fig. 3 presents an example of a very accurate AlphaFold prediction leading to the ligand being docked completely outside of the binding pocket. Close inspection of the Figure suggests a clash of the ligand with the slightly displaced tryptophan residue in the AF model that might be to blame...but has not been discussed by the authors.' The reviewer wants 'deeper insights into the reasons for AF model failures' including 'discussion of the problematic structural elements (clashes of side chain with ligands, missing interactions/waters, etc.).'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Traditional models and experimentally determined structures with similar binding pocket accuracies yield similar pose prediction accuracies, contrasting with AF2 models which underperform even when pocket accuracy is matched.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is presented in supplementary data and supports the main conclusion about AF2's qualitatively different behavior. Reviewers do not explicitly challenge this claim, and it logically follows from the accepted finding that AF2 models underperform relative to their pocket accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Even when eliminating cases where the experimental structure was determined with a similar ligand, experimentally determined structures continue to yield significantly more accurate pose predictions than AF2 models (p < 0.01).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This control analysis addresses a potential confound and is accepted by reviewers. The statistical significance is clearly stated and the analysis demonstrates the robustness of the main findings. No reviewer challenges this control experiment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C39",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study design focused on 18 GPCRs (54 structures) for which no experimental structure was available before AF2's training cutoff date (April 30, 2018), using AF2 models, traditional template-based models from GPCRdb (\u226540% sequence identity), and cross-docking to evaluate pose prediction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the careful study design but raise methodological concerns. Reviewer 1 praises 'the rigor and careful, thoughtful comparison that cleverly leverages the cut-off date of April 30th, 2018.' However, Reviewer 3 questions the approach: 'The use of a time limit seems less preferable than the approach taken in Ref. 1 of discarding templates above a sequence identity cutoff' and notes 'the ablation test performed in Ref. 2 showed no loss in accuracy when no templates were used at all. Authors should discuss in more detail whether these modeling choices could change anything in their conclusions.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "GPCRs have very diverse binding pockets evolved to bind diverse ligands with high specificity, making them a representative test case whose conclusions likely apply to many non-GPCR drug targets, with GPCRs accounting for roughly half of drug discovery projects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the rationale but express some reservation about generalizability. Reviewer 1 notes 'the authors focus only on GPCRs for reasons they state but make a good argument as to why the conclusions are likely to extend to other protein classes.' However, this remains a limitation that reviewers identify, suggesting the generalizability claim requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Protein structures depend on which ligand is bound due to flexibility, but AF2 and the GPCRdb traditional models were generated without specifying a bound ligand, potentially producing apo-like structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises significant concerns about this issue: 'the authors should discuss the commonly brought up problem of AlphaFold generating more apo-like structures - are the models used here actually holo-like because of the low RMSDs? (what RMSD differences are to be expected between apo and holo structures of these systems?)' The reviewer notes that previous work attributed poor docking to 'difficulties in performing docking into apo-like structures' and that 'rigid docking (as done here) would not succeed' for apo structures, with flexible docking improving AF2 performance. This represents a major interpretive concern about the mechanism underlying the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Despite dramatic improvements in protein structure prediction, AF2 models yield substantially poorer accuracy than experimentally determined structures for ligand-binding mode prediction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is accepted by all reviewers as the main finding. The editor calls it 'important' with 'broad implications,' Reviewer 1 states it has 'broad implications for the use of AF2 models in ligand binding pose prediction,' and Reviewer 3 acknowledges 'the authors have very clearly communicated' this conclusion, though noting it may be 'obvious' to experts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The study used only the top-scoring AF2 model out of five generated models for each protein.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 specifically questions this choice: 'One possible experiment is to explore whether using multiple AF2 models (there are five by default) would have an effect on pose accuracy, perhaps for selected examples such as NK1R, 5HT2A, and DRD1 to help build out the discussion further.' This suggests the single-model approach may not fully capture AF2's potential utility, and exploring multiple models could strengthen or modify the conclusions.",
+    "result_type": "MINOR"
+  }
+]

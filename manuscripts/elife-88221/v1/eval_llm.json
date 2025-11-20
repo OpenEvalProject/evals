@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed a Hidden Markov Model (HMM) to predict intrinsically disordered regions (IDRs) from the Drosophila proteome. The HMM uses IUPred scores as input and successfully distinguishes structured domains from unstructured regions, showing strong enrichment for predicted structured sequences in known Pfam/SMART domains and agreement with the MobiDB database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 describe the development and validation of the HMM for IDR prediction. The method is well-documented with appropriate validation against known structured domains (Figure 1B-C) and external databases (MobiDB). The approach is methodologically sound and the validation data support the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C68",
+      "C126"
+    ],
+    "result": "A high-throughput imaging screen of 75 IDRs in S2 cells revealed that 73 of 75 IDRs (97%) were distributed homogeneously within the nucleus and did not drive subnuclear clustering. Only two IDRs (from MESR4 and Brk) showed clustering behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 and C68 are well-supported by the imaging data shown in Figure 2A-B. The screen was comprehensive and the quantitative result (73/75 IDRs showing no clustering) is clearly documented. However, the interpretation that IDRs are 'insufficient' requires caution as only isolated IDRs were tested, not IDRs in their native protein context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C81",
+      "C127"
+    ],
+    "result": "Three full-length transcription factors (CG10321, Spps, and CG31510) showed substantial subnuclear clustering in S2 cells, while their isolated IDRs did not cluster, suggesting that sequences outside the IDRs are necessary for clustering behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C81, and C127 are supported by comparative imaging data in Figure 3 showing differential clustering between full-length proteins and their isolated IDRs. The inference that non-IDR sequences are necessary is reasonable but could benefit from additional controls testing whether DNA-binding domains alone are sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Live embryo imaging recapitulated S2 cell findings: IDRs alone were largely homogeneous within nuclei, while full-length TFs showed diverse subnuclear localization patterns. Three TFs (CG10321, Spps, CG31510) showed substantial clustering in embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by imaging data in Figure 4A-B. The consistency between S2 cells and embryos strengthens the conclusions. However, the authors acknowledge limitations of bulk confocal imaging (C130) which may miss transient interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The Brk IDR localized to the histone locus body (HLB) in embryos, co-localizing with the HLB marker Mxc. This demonstrates that some IDRs can concentrate factors within specific nuclear compartments, though this is not a common function of IDRs in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 are supported by co-localization imaging data in Figure 4\u2014figure supplement 1. The HLB localization is well-documented, though the authors appropriately note this is exceptional (only 1/75 IDRs) and may be due to the DNA-binding domain contained within this particular IDR (C58, C102).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C128"
+    ],
+    "result": "IDR deletion experiments showed that the three most strongly clustering TFs (CG10321, Spps, CG31510) maintained their clustering behavior with IDRs deleted, demonstrating that IDRs are not necessary for subnuclear clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 and C128 are supported by imaging data in Figure 6. The persistence of clustering after IDR deletion is clear evidence that IDRs are not necessary. However, four TFs showed severely reduced nuclear expression upon IDR deletion (C109), which complicates interpretation and suggests IDRs may have other important functions (e.g., nuclear localization, C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "For the spatially restricted TFs Brk and Disco, IDR deletion constructs maintained their subnuclear localization patterns even in regions where endogenous protein was absent, ruling out interactions with endogenous full-length protein as an explanation for clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 are supported by imaging data in Figure 5\u2014figure supplement 1. This is an important control that strengthens the conclusion that IDRs are not necessary for clustering. The experimental design appropriately leverages the patterned expression of these TFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors conclude that IDRs are neither necessary nor sufficient to drive subnuclear clustering of transcription factors, ruling out IDRs as major contributors to TF hub formation and demonstrating that clustering is not an emergent behavior of IDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 and C123-C125 represent the main conclusions of the study. These are well-supported by the comprehensive experimental data from both S2 cells and embryos, including sufficiency tests (IDRs alone don't cluster) and necessity tests (IDR deletions maintain clustering). However, the conclusions should be tempered by acknowledged limitations: bulk imaging may miss transient interactions (C130-C132), and the Brk IDR contains a DNA-binding domain which complicates interpretation (C58, C129).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "MESR4, one of the two IDRs showing clustering in S2 cells, is a protein with multiple zinc fingers that has been identified in various genetic screens and as a component of the histone locus body, though HLB localization likely does not explain the observed clustering pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 provide background on MESR4 supported by appropriate citations. The inference that HLB localization doesn't explain the clustering (C55) is reasonable given that the HLB appears as a single spot while MESR4 IDR shows multiple clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C102",
+      "C129"
+    ],
+    "result": "The Brk IDR, which showed clustering in S2 cells and HLB localization in embryos, contains a DNA-binding domain that is unstructured in the absence of DNA but folds upon DNA binding. This raises the possibility that the observed clustering results from DNA binding rather than IDR-IDR interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C102, and C129 are supported by citations and represent important caveats to the interpretation of Brk IDR behavior. The authors appropriately acknowledge this complication and suggest it may indicate TF hub formation is more dependent on DNA binding than IDR interactions (C129). This is speculation but well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Some IDRs showed specialized subcellular localization patterns (e.g., IDR13 to nucleus and plasma membrane, IDR31 to nucleolus), suggesting these IDRs retain functional roles in protein localization from their full-length proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are supported by imaging data in Figure 2C and appropriate citations. The inference that these IDRs play functional roles in localization (C66-C67) is reasonable but somewhat speculative. These observations are interesting but peripheral to the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Transgenic TFs expressed from the same promoter showed a range of nuclear expression levels similar to endogenous proteins, indicating post-transcriptional regulation. These transgenic lines reproduced endogenous clustering patterns and revealed additional details not visible with endogenous tagging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 are supported by imaging data in Figure 5. The observation of variable expression from the same promoter (C104) supporting post-transcriptional regulation (C105) is a reasonable inference. The transgenic approach provides useful complementary data to the endogenous tagging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors acknowledge that bulk confocal imaging may be insufficient to observe transient interactions between IDRs alone, and that the observed clustering may represent hubs stably bound to chromatin rather than dynamic IDR-mediated interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 represent appropriate acknowledgment of methodological limitations. The authors correctly note that their bulk imaging approach may miss dynamics observable by single-molecule tracking. This is an important caveat that appropriately qualifies the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors contextualize their findings within the literature on IDR-mediated phase separation, noting that while IDRs have been implicated in forming transcriptional condensates, this role has recently been questioned given the dynamic nature of TF hubs and concentration requirements for true phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 accurately summarize the current state of the field based on appropriate citations. This provides important context for interpreting the current results and positions the work within ongoing debates about phase separation in transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Recent literature suggests IDRs can adopt different conformations depending on intramolecular interactions with adjacent folded domains, influence binding affinity in protein-protein interactions, and modulate DNA-binding specificity, indicating that IDR effects may be specialized and context-dependent rather than generalizable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 accurately summarize recent literature with appropriate citations. This discussion provides important perspective on alternative roles for IDRs beyond driving clustering, helping to contextualize why IDRs might be important for TF function even if they don't drive clustering.",
+    "result_type": "MINOR"
+  }
+]

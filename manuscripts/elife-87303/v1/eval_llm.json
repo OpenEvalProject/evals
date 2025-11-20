@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C106"
+    ],
+    "result": "The authors engineered LOVdeg, a light-inducible protein degradation tag for E. coli, by truncating AsLOV2 to expose a C-terminal 'E-A-A' sequence and incorporating eight stabilizing mutations from iLID (AsLOV2*). The resulting AsLOV2*(543) tag exhibits 11.5\u00d7 lower expression under blue light compared to dark conditions, with low basal degradation in the dark.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C55 and C106 collectively demonstrate the rational design and experimental validation of the LOVdeg tag. The structural analysis (C40-C42), mutation strategy (C49-C52), and experimental data showing light-dependent degradation (C54-C55) provide converging evidence. The comparison between wild-type and mutant versions (C44-C46, C53-C54) demonstrates the necessity of the stabilizing mutations for optimal performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "ClpA is involved in LOVdeg-mediated degradation, with other proteases and unfoldases playing complementary roles. Light exposure itself does not affect protein levels or growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are supported by experimental data in supplementary figures showing protease knockout studies and control experiments. The mechanistic investigation provides important validation that the observed effects are due to proteolytic degradation rather than light toxicity or other artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The LOVdeg tag exhibits tunable degradation proportional to light intensity and functions across different growth phases. Light-induced degradation reaches 6\u00d7 compared to 14\u00d7 for the constitutive SsrA tag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by experimental data showing dose-response to light intensity (C58, Figure 1e) and timing experiments (C59, Figure 1f). The quantitative comparison to SsrA (C60) provides important benchmarking, though the authors acknowledge limitations in direct comparison due to temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Microscopy imaging confirmed light-dependent decrease in mCherry expression without visible protein aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by microscopy data (Figure 1\u2014figure supplement 10) that rules out aggregation as an alternative explanation for decreased fluorescence. This control experiment strengthens the conclusion that the observed effects are due to degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C108"
+    ],
+    "result": "The LOVdeg tag demonstrates modularity by successfully tagging diverse proteins including LacI repressor, CRISPRa activator (MCP-SoxS), and the AcrB efflux pump, enabling light-dependent control of their functions with minimal protein engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C62-C76 collectively demonstrate modularity across three functionally distinct protein systems. For LacI (C62-C64), light exposure increased reporter expression though not to IPTG-saturated levels. For CRISPRa (C65-C66), light decreased activation though not completely. For AcrB (C72-C76), chloramphenicol sensitivity assays demonstrated functional light-dependent degradation. The incomplete reversal in some cases (C63, C66) is acknowledged but does not negate the demonstration of modularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The frequency response of the LOVdeg tag can be tuned by incorporating the V416I mutation, which increases light state lifetime and enables >50% degradation at medium frequencies (0.008 s\u207b\u00b9) compared to high frequencies (0.1 s\u207b\u00b9) required for the original tag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by experimental data (Figure 3c) showing frequency-dependent degradation for both LOVdeg variants. The mechanistic rationale (C82-C83) is logical and supported by prior work on AsLOV2 photocycle dynamics (C85). The V416I variant demonstrates improved light sensitivity relevant for bioreactor applications (C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Combining LOVdeg with the EL222 transcriptional repression system provides multilayer control that enhances performance, achieving 23\u00d7 fold change compared to 7\u00d7 and 6\u00d7 for LOVdeg or EL222 alone, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C88-C92 demonstrate synergistic enhancement through multilayer control. The experimental data (Figure 4b) shows faster kinetics and greater fold change for the combined system. The rationale for multilayer control (C88) is supported by citations to prior work, and the quantitative improvement (C92) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The LOVdeg tag enables post-translational control of octanoic acid production in stationary phase E. coli by degrading CpFatB1* enzyme. LOVdeg alone or combined with EL222 significantly decreased octanoic acid production under light, while EL222 alone did not, demonstrating that protein degradation is necessary for effective metabolic control during stationary phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C93-C105 demonstrate a metabolic engineering application. The experimental design addresses the key challenge of stationary phase control (C93-C94). The data (Figure 5b) shows LOVdeg successfully decreased octanoic acid production (C99), EL222 alone was ineffective (C100), and the combination was most effective (C101). The interpretation that degradation is necessary (C102) is well-supported. Observations about promoter strength differences (C103-C105) provide additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The LOVdeg tag offers advantages over transcriptional optogenetic systems including simplified implementation, circumvention of leaky basal expression, and potential for use in native gene regulatory contexts or incoherent circuit designs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107 and C109-C112 represent speculative statements about potential broader applications and advantages. While the reasoning is logical and supported by the demonstrated modularity, these claims about future applications (C111-C112) and broader utility (C107) are not directly tested in this work and remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The LOVdeg system has limitations including potential saturation at high protein levels due to finite proteolytic machinery, resource waste from constitutive expression followed by degradation, and unclear compatibility with other prokaryotic proteasomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 acknowledge important limitations. C113 is supported by citation to prior work on degradation saturation. C114 represents a logical inference about resource utilization. C115 honestly states an open question about portability. These limitations are appropriately discussed and do not undermine the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The manuscript provides extensive background on optogenetic tools, protein degradation in bacteria, and the AsLOV2 photosensor, establishing the rationale for developing a bacterial light-inducible degradation system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C39 represent background knowledge and prior work that is appropriately cited and accurately described. These claims establish the scientific context and rationale for the study. The citations appear appropriate and the characterizations of prior work are consistent with the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The manuscript accurately describes established knowledge about the AcrAB-TolC efflux pump, LOV domain photochemistry, and AsLOV2 photocycle dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 and C77-C81 represent established knowledge about the AcrAB-TolC system and LOV domain photochemistry that is appropriately cited. These claims provide necessary background for understanding the experimental design and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The study used E. coli BW25113 as the wild-type strain, Keio collection knockout strains, Golden Gate cloning for construct assembly, a consistent GS linker for protein fusions, and a light plate apparatus for blue light stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 describe methodological details that are clearly stated in the Materials and methods section. These are straightforward factual claims about experimental procedures that are appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

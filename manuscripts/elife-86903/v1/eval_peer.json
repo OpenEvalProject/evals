@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75",
+      "C76",
+      "C130",
+      "C134",
+      "C135",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors developed MuRCiS, a multiplex randomized CRISPRi sequencing approach using a novel R-S-R oligonucleotide design for randomized self-assembly of CRISPR arrays. The method was paired with PacBio long-read sequencing to enable near-comprehensive interrogation of pairwise gene combinations and can rapidly assign phenotypes to exact spacer combinations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers praised the methodology as 'convincing' (Reviewer 1), 'ingenious' (Reviewer 3), and noted the concept is 'very useful' (Reviewer 2). Reviewer 3 specifically highlighted 'the construction and use of random and multiplexed CRISPRi arrays' as a 'major strength' and stated the approach 'will be useful for further genetic analysis.' The reviewers accepted the technical development without substantive critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors generated two randomized CRISPR array libraries targeting 44 transmembrane effector genes, achieving near-comprehensive coverage of pairwise combinations (75% for U937 macrophages, 71% for A. castellanii). Libraries contained 784 and 1251 unique spacer combinations respectively, with arrays averaging 3.3 spacers per array and each spacer represented equally (~5328 times median).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the library characterization data without challenge. Reviewer 3 noted the approach allows 'an unbiased and comprehensive screen' and Reviewer 2 confirmed the authors 'combined it with self-assembly randomized multiplex CRISPR arrays that they developed.' The sequencing depth and coverage metrics were not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C110",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C124",
+      "C125",
+      "C126",
+      "C147",
+      "C152",
+      "C153"
+    ],
+    "result": "MuRCiS identified several new virulence-critical gene combinations in L. pneumophila, most notably lpg2888 and lpg3000, which showed redundant function in U937 macrophages (synthetic lethality when both deleted) but lpg3000 alone was essential in A. castellanii. Three of five tested gene pair deletions were validated in macrophages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledged these findings. Reviewer 2 stated the authors 'identify certain gene combinations that when knocked down induced a growth defect' and specifically noted 'lpg2888 and lpg3000 were inducing a growth defect only when both were knocked down in U937 cells but in A. castellanii cells lpg3000 alone was sufficient.' Reviewer 3 confirmed 'novel pairs of synergistically functioning effector genes were identified.' The validation data were accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Initial predetermined 10-plex CRISPRi constructs targeting 150+ effector genes based on predicted function and conservation showed limited success: only MC-A and MC-B caused growth defects in U937 macrophages, and no phenotypes were observed in A. castellanii. This demonstrated that predetermined grouping approaches are insufficient for detecting synthetic lethal combinations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these preliminary findings, which served to motivate the randomized approach. The negative results with predetermined arrays were implicitly accepted as justification for developing MuRCiS. No reviewer questioned the interpretation that 'redundancy reached beyond the boundary of conservation or like-function.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors developed a custom bioinformatics pipeline to analyze input vs. output array abundance after infection. In U937 macrophage experiments, 641 spacer combinations were tested, yielding 231 with \u22655-fold reduction, which were refined to 20 critical combinations (mostly 2-3 plex). The mavN control showed expected depletion, validating the approach.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the bioinformatics approach and analysis pipeline without objection. The data analysis methods and thresholds (5-fold reduction, 5 raw read cutoff) were not questioned. Reviewer 3 noted the approach successfully identified 'novel pairs of synergistically functioning effector genes,' implicitly validating the analytical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "In A. castellanii experiments, 571 spacer combinations were tested, yielding 71 with \u22655-fold reduction, refined to 6 critical 2-plex combinations. Several combinations involved lpg3000, and a synergistic phenotype was observed for lpg0096-lpg2888 deletion in amoeba but not macrophages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the A. castellanii findings without challenge. Reviewer 2 specifically noted the host-specific differences in gene requirements. The observation that lpg3000 alone was sufficient in amoeba was acknowledged by reviewers as a key finding. No concerns were raised about the experimental design or data interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C146",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C154",
+      "C155"
+    ],
+    "result": "The combinatorial gene deletions identified produce some of the largest L. pneumophila intracellular replication phenotypes yet observed, comparable only to icmW-icmR (Type IV secretion system components). Bioinformatics analysis suggested lpg2888 resembles pore-forming toxin components while lpg3000 resembles ABC transporters, and lpg3000 appears evolutionarily essential for growth in the natural amoeban host.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the significance claims and biological interpretations. Reviewer 1 called the study 'important' and noted it 'provides a technique that will allow researchers to address functional redundancy.' Reviewer 3 stated the findings represent 'exciting biology' and the approach has 'the potential to uncover virulence effectors of importance that have not been described before.' The comparison to icmW-icmR and evolutionary interpretations were not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors selected 44 transmembrane effector (TME) genes as proof-of-concept targets, reasoning that these are likely incorporated into LCV membranes, unlikely to be functionally replaced by cytosolic effectors, and can be predicted with high confidence using bioinformatics tools.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the target gene selection rationale without objection. Reviewer 3 noted the approach was used 'as a proof-of-concept' with 'spacer arrays targeting 44 transmembrane effector-encoding L. pneumophila genes.' The logic for focusing on transmembrane effectors was not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Individual and pairwise gene deletions were constructed for validation, with all deletion strains whole-genome sequenced to confirm gene deletion and absence of background mutations before use in infection experiments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accepted the validation experiments overall, Reviewer 2 noted in their revised comments that 'the authors have answered our concerns satisfactorily except the point related to the use of only one guide per gene.' This suggests some lingering concern about the validation approach, though the specific issue with single guides was not elaborated in the available review text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Library 1 unexpectedly showed over-representation of arrays targeting five specific genes (lpg0963, lpg2223, lpg2552, lpg2888, lpg3000), accounting for 20% of input reads. These arrays decreased during infection, possibly because silencing these genes provides fitness advantage during axenic growth.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this observation or the speculative explanation. The finding was presented as an interesting feature of the library rather than a flaw, and reviewers accepted it as part of the characterization of the randomized assembly process.",
+    "result_type": "MINOR"
+  }
+]

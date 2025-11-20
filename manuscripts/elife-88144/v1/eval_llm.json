@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "RCS cells express FGFR1 and FGFR2 at the protein level, while FGFR3 and FGFR4 are only detectable at the transcript level. CRISPR/Cas9 was used to generate RCSFgfr1 cells expressing only endogenous FGFR1 by disrupting FGFR2, FGFR3, and FGFR4 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the characterization and generation of the RCSFgfr1 cell line used throughout the study. Western blot data (C1, C2) and qPCR data (C3) support the expression profile, and the CRISPR/Cas9 methodology (C4) is cited and appears standard. This provides a well-characterized experimental system for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "FGF4, FGF8, and FGF9 induce differential ERK pathway activation in RCSFgfr1 cells, with FGF4 inducing the strongest ERK phosphorylation and pKrox24 transactivation signals compared to FGF8 and FGF9. Significant differences were also observed between FGF8 and FGF9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by western blot data (Figure 1B) and transcriptional reporter assays (Figure 1C) showing differential ERK activation. The use of both biochemical and reporter-based readouts strengthens the conclusion. Statistical significance is stated for the differences observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "In the absence of ligand, FGFR1 exists in a monomer/dimer equilibrium at the cell surface at concentrations of 100-200 FGFR1/\u03bcm\u00b2 in the stable cell line, as determined by FIF spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are supported by FIF data in Figure 2A with appropriate monomer and dimer controls (LAT and TrkA+NGF). The brightness distribution analysis and receptor concentration measurements appear methodologically sound and consistent with prior literature values cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C17",
+      "C18"
+    ],
+    "result": "FGF8 and FGF9 binding promotes FGFR1 dimer formation, while FGF4 binding may promote higher-order oligomer formation. At low FGF4 concentration (2.6 nM), FGFR1 exists primarily as monomers and dimers, while higher concentrations (>2.6 nM) induce oligomer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C17-C18 are supported by FIF brightness distribution data (Figure 2) with statistical Z-test analysis. The concentration-dependent oligomerization of FGF4-bound FGFR1 is demonstrated with appropriate controls. The speculative language in C12 is appropriate given the indirect nature of brightness measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "FGF4 exhibits an unusual dose-response curve with phosphorylation increasing up to 2.6 nM followed by a marked decrease at higher concentrations. This cannot be explained by differential FGFR1 degradation or de-phosphorylation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 describe the unusual FGF4 dose-response and systematically rule out alternative explanations. The data in Figures 3C and 4A support these conclusions. The authors appropriately test and exclude receptor downregulation and kinetics as explanations, strengthening their oligomerization hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C77",
+      "C78"
+    ],
+    "result": "FGF4 exhibits the highest potency (EC50 ~0.5 nM) among the three FGFs, while FGF8 exhibits the highest efficacy. FGF8 is generally a full agonist while FGF4 and FGF9 are partial agonists, except for FRS2 phosphorylation where both FGF4 and FGF8 are full agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C77-C78 are supported by dose-response curve fitting (Figure 3C, Table 1). The rectangular hyperbolic fits appear appropriate for FGF8 and FGF9. The truncation approach for FGF4 data is reasonable given the unusual dose-response shape. EC50 and Etop values are reported with standard errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "FGF8 is a biased FGFR1c ligand compared to FGF4 and FGF9. FGF8 preferentially induces FRS2 phosphorylation and extracellular matrix loss, while FGF4 and FGF9 preferentially induce FGFR1c phosphorylation and cell growth arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C38-C40 represent the central finding of ligand bias. Bias coefficients (Table 2) were calculated using established pharmacological methods (Equation 2) and statistical significance was assessed by ANOVA (Supplementary file 4). The bias is demonstrated at both the biochemical (phosphorylation) and functional (cellular response) levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C75",
+      "C76"
+    ],
+    "result": "Time course analysis of phosphorylation shows that FGFR1 phosphorylation kinetics depend strongly on FGF concentration, but there is no discernible correlation between phosphorylation kinetics and ligand bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C75-C76 are supported by time course data in Figure 4. The authors appropriately test whether kinetic differences could explain bias (as proposed for EGFR) and find no correlation. This strengthens their structural mechanism hypothesis by ruling out an alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "FGF8 is more efficient at inducing FGFR1 removal from the plasma membrane after 2 min of ligand treatment compared to FGF9, while total FGFR1 expression is not affected, indicating enhanced internalization rather than degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by confocal microscopy data (Figure 5A) with statistical analysis (ANOVA, p<0.05) and western blot data (Figure 5\u2014figure supplement 1). The interpretation that decreased membrane concentration reflects internalization rather than degradation is reasonable given the short time course.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "FGF8 is more efficient than FGF9 at promoting cell viability reduction under starvation conditions (p<0.015) and apoptosis (p<0.005) in 293T cells, as well as FGFR1 clearance from the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by MTT assay data (Figure 5B) and caspase activity assays (Figure 5C) with appropriate statistical tests (t-tests). The functional differences between FGF8 and FGF9 are modest but statistically significant and consistent with the upstream signaling bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "In RCSFgfr1 cells, FGF4 is the most potent inducer of both collagen 2 reduction and growth arrest. FGF8 is strongly biased toward collagen loss and against growth arrest compared to FGF4 and FGF9, with high statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by dose-response curves (Figure 5E-F), EC50/Etop values (Table 1), and bias coefficient analysis (Table 2) with ANOVA (Supplementary file 4). This demonstrates functional bias in a physiologically relevant cell type (chondrocytes) that models limb development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C67"
+    ],
+    "result": "FRET measurements reveal that the effective distance between fluorescent proteins attached to FGFR1 TM domain C-termini is significantly greater in the presence of FGF8 (60\u00b11 \u00c5) compared to FGF4 (55\u00b11 \u00c5) and FGF9 (56\u00b11 \u00c5), indicating different TM domain dimer conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C67 are supported by QI-FRET data (Figure 6) with appropriate statistical analysis (p<0.01 for FGF8 vs FGF4/FGF9). The methodology follows established protocols (Sarabipour and Hristova, 2016) and uses appropriate controls. The interpretation that distance differences reflect TM domain conformational changes is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C41",
+      "C62",
+      "C63",
+      "C68",
+      "C69"
+    ],
+    "result": "Structural differences in FGFR1 TM domain dimers may underlie the observed signaling bias. The larger TM domain separation in FGF8-bound dimers may facilitate preferential FRS2 phosphorylation, given that the FRS2 binding site is only 32 amino acids from the TM domain C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37, C41, C62-C63, C68-C69 propose a mechanistic link between TM domain conformation and bias. While the correlation between TM domain spacing and bias is demonstrated (C41 is SUPPORTED), the causal mechanism (C37, C62-C63, C69) remains speculative. The authors appropriately use speculative language ('may'). Direct evidence linking TM conformation to differential FRS2 phosphorylation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "There is a correlation between decreased FGFR1 phosphorylation at high FGF4 concentration and the appearance of FGFR1 oligomers larger than dimers. These oligomers are stabilized by kinase-kinase contacts and may be less active than dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 link the unusual FGF4 dose-response to oligomerization. The correlation is supported by FIF data (Figure 2) and the observation that oligomers form only with full-length FGFR1 (C82). The hypothesis that oligomers are less active (C84) is speculative but provides a plausible explanation for the dose-response shape.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "There is no correlation between the unusual shape of the FGF4 dose response and ligand bias, as FGF4 is not biased when compared to FGF9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by the bias coefficient analysis (Table 2) showing no significant bias between FGF4 and FGF9. This appropriately distinguishes between the oligomerization phenomenon (affecting FGF4 dose-response shape) and ligand bias (distinguishing FGF8 from FGF4/FGF9).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Background claims establishing that FGFRs are RTKs that signal via dimerization, that 18 FGF ligands bind to 7 FGFR variants, that FGFR1 plays critical roles in skeletal development and cancer, and that FGF4, FGF8, and FGF9 have distinct but poorly understood roles in limb bud outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C58 provide established background knowledge supported by appropriate citations. These claims set up the biological context and rationale for the study. The statement that the mechanism behind differential FGFR1c responses has not been investigated (C57-C58) appropriately identifies the knowledge gap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C85",
+      "C86",
+      "C89",
+      "C91"
+    ],
+    "result": "Background claims about FRS2 binding, TM domain influence on JM domain conformation, prior evidence of ligand-dependent TM conformations, ligand bias in GPCRs, RTKs as drug targets, alternative mechanisms for differential signaling, and EGFR oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C64-C66, C71-C74, C85-C86, C89, C91 provide relevant background from the literature with appropriate citations. These establish the conceptual framework for interpreting the results, including alternative hypotheses (kinetics-based mechanisms) and precedents (GPCR bias, EGFR oligomers).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C90",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Speculative claims about the functional role of FGFR1 oligomers differing from EGFR oligomers, the importance of quantitative tools in revealing differences, potential future applications to other RTKs, implications for RTK complexity and pathology, and potential for developing biased RTK inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88, C90, C92-C94 are appropriately speculative (using 'perhaps', 'may', 'possible') and represent reasonable extrapolations from the data. However, they lack direct experimental support. C88 (about quantitative tools) is more supported by the actual results obtained. The therapeutic implications (C93-C94) are highly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Conformational differences in the signaling complex in the plasma membrane may underlie biased signaling for both RTKs and GPCRs, the two largest receptor families in the human genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 proposes a unifying mechanism for bias across receptor families. While the FRET data support conformational differences in FGFR1, extrapolating this to all RTKs and comparing to GPCRs is highly speculative. The claim appropriately uses speculative language ('may underlie') but lacks direct supporting evidence.",
+    "result_type": "MINOR"
+  }
+]

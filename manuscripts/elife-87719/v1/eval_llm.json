@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The study developed a computationally-informed experimental design using a large stimulus set with two dimensions (concavity and alignment), trained a CNN to select stimulus pairs targeting different processing levels, and tested 11 rats (1115 sessions) and 45 humans in matched discrimination tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C29-C38, and C109-C125 collectively describe a well-documented experimental design. The methodology is clearly specified including subject numbers, stimulus creation (Blender 3D), CNN architecture (AlexNet), and experimental protocols. The approach of using CNN-informed stimulus selection to contrast processing levels is novel and appropriately justified (C36-C37, C123-C125).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C101"
+    ],
+    "result": "Rats successfully learned the base discrimination task and both stimulus dimensions (concavity and alignment), with performance of 85.83% on the base pair, 78.79% on concavity-only pairs, and 67.83% on alignment-only pairs, all significantly above chance, demonstrating learning beyond simple visual features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C51 and C101 provide convergent evidence with appropriate statistical tests (paired t-tests, one-sample t-tests) showing above-chance performance on dimension-specific pairs. The inference that simple dimensions cannot fully explain performance (C48, C51) is justified by above-chance performance on alignment dimension despite confounding brightness cues (C49-C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Rats generalized to identity-preserving transformations with 83.05% average performance, showing effects of brightness (r=-0.59, p<0.01) but maintaining above-chance performance (lowest 68.83%) even when brightness cues were reversed, suggesting a complex pattern classification task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 demonstrate successful generalization with appropriate statistical analysis. The correlation with brightness (C54-C55) is properly quantified, and the critical observation that performance remains above chance when brightness is reversed (C56-C57) supports the inference of task complexity (C58). However, the comparison to 'other tasks in the rodent literature' (C58) is somewhat vague.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C102",
+      "C103"
+    ],
+    "result": "Rats showed variable generalization performance across six transformation test protocols (all significantly above chance but <80%), with distractor identity having greater impact than target identity in some tests, and performance ranging from just above chance (zero vs. high) to ~70% (position).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 and C102-C103 report generalization results with appropriate statistical tests (binomial tests with confidence intervals). The observation about distractor vs. target effects (C61-C62) is supported by marginal means analysis. The variability across protocols is well-documented, though the biological significance of these differences could be explored further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C91",
+      "C92",
+      "C105"
+    ],
+    "result": "In CNN-informed test protocols, rats performed significantly better on high vs. zero (64.84%) than zero vs. high (56.47%) pairs (t(10)=-4.49, p=0.0012), with a significant species \u00d7 protocol interaction (t(54)=2.50, p=0.016), suggesting rats align with lower-level visual processing strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70, C91-C92, and C105 provide the key evidence for differential processing levels. The statistical tests are appropriate (paired t-test for within-species comparison, unpaired t-test for interaction). The inference about lower-level processing (C70, C92) is justified by the pattern of results, though it relies on the assumption that the CNN hierarchy maps onto biological visual processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C10",
+      "C11",
+      "C107"
+    ],
+    "result": "Rat performance across image pairs correlated significantly with late convolutional CNN layers (layers 8-10 significant in regression, R\u00b2=0.10), with split-half reliability of 0.40 (corrected 0.58), and showed correlations with pixel similarity (r=0.34) and brightness (r=0.39), indicating partial reliance on mid-level visual features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79, C10-C11, and C107 provide convergent evidence from multiple analyses (layer-wise correlations, multiple regression, visual feature correlations). The reliability analysis (C72-C73) appropriately contextualizes the modest correlations. The R\u00b2 of 0.10 (C74) is low but significant, and the regression identifies specific layers (C75). The conclusion of 'partial explanation' (C76, C79) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C104",
+      "C106"
+    ],
+    "result": "Humans significantly outperformed rats across all test protocols (94.34% vs. 62.29% average), with the difference persisting even after normalizing for training performance (t(16)=-6.47, p<0.0001), and humans performed best on the high-level processing protocol, indicating higher degree of invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83, C104, and C106 document clear species differences with appropriate statistical analysis. The normalization for training performance (C82) strengthens the conclusion by controlling for baseline differences. The inference about degree of invariance (C83) is justified by the pattern of generalization performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C7",
+      "C8"
+    ],
+    "result": "Rats and humans showed low convergence in difficulty patterns across image pairs (r=0.18, p<0.001), which is substantially below the combined reliability ceiling (0.60), indicating pronounced species differences in visual strategies despite both species successfully learning the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88, C7-C8 provide critical evidence for species differences. The correlation analysis (C84) is properly conducted with permutation testing. The comparison to reliability (C85-C88) is methodologically sophisticated and strengthens the conclusion that low correlation reflects true strategic differences rather than measurement noise. This is a key finding supporting the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C106"
+    ],
+    "result": "Humans showed the opposite pattern to rats in CNN-informed protocols, performing significantly better on zero vs. high than high vs. zero (t(44)=2.85, p=0.0067), with a significant species \u00d7 protocol interaction, suggesting reliance on higher-level visual processing strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C93, and C106 mirror the rat analysis and provide the critical comparison. The statistical tests are appropriate and the interaction term (C91) directly tests the species difference. The inference about high-level processing (C93) is justified by the pattern, though again relies on CNN-to-biology mapping assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C12",
+      "C108"
+    ],
+    "result": "Human performance correlated strongly with higher CNN layers, especially fully connected layers 11-13 (significant in regression, R\u00b2=0.25), showing a pattern very different from rats and indicating reliance on decisively higher-level strategies despite successful generalization in both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98, C12, and C108 provide the human counterpart to rat CNN analysis. The regression analysis (C97-C98) shows stronger effects (R\u00b2=0.25 vs. 0.10 for rats) and identifies different layers (fully connected vs. convolutional). The inference about different strategies (C95-C96) is well-supported by the contrasting correlation patterns. This is central to the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Human performance showed minimal correlations with pixel similarity (r=0.12) and brightness (r=-0.12), contrasting with rats and consistent with reliance on higher-level features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 provide important negative results that complement the CNN layer analysis. The low correlations contrast appropriately with rat data (C77-C78: r=0.34 and r=0.39), supporting the interpretation of species differences in feature use. The analysis is straightforward and appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C14",
+      "C9",
+      "C13"
+    ],
+    "result": "The computationally informed investigation reveals a strong discrepancy in visual strategies between rats and humans, with rats using lower-level processing and humans using higher-level processing, highlighting the value of computational approaches for designing object recognition tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C14, C9, and C13 represent the main conclusions synthesizing multiple lines of evidence. The conclusion of 'strong discrepancy' (C14) is supported by: (1) low cross-species correlation (C84-C88), (2) opposite patterns in CNN-informed protocols (C89-C91), (3) different CNN layer correlations (C71-C79 vs. C94-C98), and (4) different visual feature correlations (C77-C79 vs. C99-C100). The claim about computational approach value (C13) is justified by the successful differentiation of strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes that many species can recognize objects but comparing strategies is difficult, CNNs have been used to model the ventral visual stream, rodents are important models motivated by genetic tools, and prior work suggested computational approaches could better inform task design and strategy assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C15-C28 provide appropriate background and motivation. The claims about prior work are supported by citations (C17, C19, C22-C23, C26-C28). The motivation for the current study (C3, C28) follows logically from identified gaps. These are standard introductory claims appropriately supported by literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The manuscript describes established Gal4/UAS-based systems for temporal control of gene expression in Drosophila, including temperature-sensitive Gal80ts and drug-inducible systems (GeneSwitch, Q-system).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 accurately describe well-established methodologies in Drosophila genetics, supported by appropriate citations to foundational literature. These are background claims establishing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Existing temporal control systems (Gal80ts and GeneSwitch) have documented adverse effects on Drosophila physiology, including developmental delays, circadian rhythm disruption, aging effects, and metabolic alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are well-supported by citations to published literature documenting these adverse effects. These establish the rationale for evaluating alternative systems like AGES.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The auxin-inducible gene expression system (AGES) was recently developed as an alternative to existing temporal control systems, though emerging evidence suggests insects may synthesize auxin and prior reports indicated no effects in one wild-type strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 accurately describe the AGES system and cite appropriate literature. The claims appropriately note uncertainty about auxin effects across different genetic backgrounds, which motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The AGES system shows minimal leaky Gal4 expression at 0 mM auxin, induces expression comparable to Gal80ts at 5-10 mM auxin, and inactivates Gal4 faster than Gal80ts upon auxin removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by experimental data in Figure 1\u2014figure supplement 1A-B showing GFP expression levels. The comparison demonstrates AGES can recapitulate Gal80ts performance with faster reversibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C15"
+    ],
+    "result": "Auxin exposure at the recommended 5 mM concentration delays larval development in the w1118 strain, indicating genetic background-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by experimental data in Figure 1\u2014figure supplement 1C showing delayed pupariation. This is an important finding demonstrating strain-specific effects not observed in the original AGES characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Adult Drosophila show dose-dependent lethality to auxin exposure with sex-specific differences: males are more sensitive than females (lower BMD values), and AGES transgenic flies show higher resistance to auxin toxicity than control strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by dose-response curves (Figure 1B-C, Table 1) and BMD analysis. The sex differences and strain differences are clearly demonstrated. However, C28 is speculative about mechanism of AGES resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Feeding behavior analysis reveals sex and genetic background differences: females show more feeding events than males, and auxin exposure (10 mM) reduces feeding interactions in females but only reduces interaction duration in males, potentially explaining differential survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are supported by FLIC data (Figure 1D-G, Table 2). The sex-specific behavioral responses to auxin are well-documented. C36 is inferential but reasonably supported by the feeding and survival data together.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Metabolomics analysis shows auxin exposure (10 mM) significantly alters metabolism in both sexes: acylcarnitine and fatty acid metabolites are most decreased in females, while males show decreased fatty acids/acylcarnitines but most significant changes in amino acid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by metabolomics data (Figure 2, Figure 2\u2014figure supplements 1-4) analyzed with MetaboAnalyst. The sex-specific metabolic responses are clearly demonstrated with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Auxin exposure (10 mM) significantly decreases triglyceride (TAG) levels in both sexes across all genotypes, with females showing a greater magnitude of decrease than males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by TAG measurements (Figure 2C-D, Figure 2\u2014figure supplement 2G-H) with appropriate statistical tests. The sex:diet interaction (p=0.001) supports the differential effect. C43 provides reasonable context for lack of baseline sex differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "The effects of auxin on TAG levels show sex-specific reversibility: females show a trend toward recovery after auxin withdrawal while males do not, and prolonged exposure (10 days) causes no additional TAG reduction beyond 5 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by TAG recovery experiments (Figure 2\u2014figure supplement 2I). The sex-specific reversibility is demonstrated, though C48 is somewhat inferential. The plateau effect after 5 days is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C61"
+    ],
+    "result": "Auxin exposure disrupts fatty acid metabolism, resulting in decreased circulating lipids and transcriptomic changes to adjust to altered lipid stores in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C61 are summary conclusions reasonably inferred from the combined metabolomics, TAG, and transcriptomic data. The integration of multiple data types supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RNA-seq analysis reveals auxin exposure (10 mM) significantly alters at least 150 transcripts in both sexes, with drug metabolism genes (glutathione-S-transferases, UDP-glucuronosyltransferases) significantly upregulated, indicating a xenobiotic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by RNA-seq data (Figure 3, Figure 3\u2014figure supplements 1-2) and qRT-PCR validation (Figure 3\u2014figure supplement 2A-B). The xenobiotic response interpretation is reasonable given the upregulation of phase II detoxification enzymes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Auxin exposure causes paradoxical changes in lipid metabolism gene expression: fatty acid metabolism genes (e.g., Fad2) are upregulated while lipases are downregulated, but key lipolysis enzymes (brummer, Lsd-1, Lsd-2) remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by RNA-seq data (Figure 3F, Figure 3\u2014figure supplements) and qRT-PCR validation (Figure 3\u2014figure supplement 2C-D). The paradoxical pattern is clearly demonstrated, though the biological interpretation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The mechanism underlying auxin-induced TAG depletion may involve unknown mobilization pathways or fasting-like responses due to reduced feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C60 are explicitly speculative hypotheses. While the data support that TAG decreases and feeding is reduced, the mechanistic connection is not directly tested. These are reasonable hypotheses for future work but not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Auxin is an essential plant hormone that regulates fatty acid synthesis in plants and has been widely used to manipulate gene expression across multiple organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 accurately describe established knowledge about auxin in plants and its use in research, supported by appropriate citations. This provides context for interpreting the Drosophila findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Auxin has opposite effects on lipid metabolism in Drosophila compared to plants (decreasing rather than increasing triglycerides), suggesting the need for characterization in other model organisms using auxin-based systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is a reasonable inference from the experimental data showing TAG decreases in Drosophila versus known increases in plants. C67 is a recommendation for future work, appropriately supported by the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Auxin exposure (10 mM) does not significantly affect egg laying or hatching rates in any tested genotype, suggesting oocyte quality is maintained despite metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by egg laying and hatching data (Figure 4\u2014figure supplement 1). C74 provides reasonable context for low baseline egg numbers. The conclusion that oocyte quality is unaffected is appropriately inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Auxin exposure (10 mM) does not adversely affect key oogenesis processes: GSC numbers, cap cell numbers, early germline cyst survival, and vitellogenic egg chamber survival all remain comparable to controls despite significant metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by comprehensive oogenesis analysis (Figure 4D-K, Figure 4\u2014figure supplement 3) using appropriate markers and quantification. The conclusion that AGES doesn't affect oogenesis despite metabolic changes is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Lipid content alone (lean or obese) is insufficient to regulate oogenesis processes in adult Drosophila, suggesting AGES may be suitable for studying some aspects of oogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 integrate the current findings with recent literature (Nunes and Drummond-Barbosa, 2023) to reach a reasonable conclusion. C84 appropriately qualifies that AGES may be suitable for 'some' processes, acknowledging limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Alternative temporal control systems (Gal80ts and GeneSwitch) have documented limitations for specific applications including oogenesis aging studies and present workplace safety concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by appropriate citations documenting these limitations. This provides important context for evaluating AGES as an alternative system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Auxin-based systems may not be ideal for studying lipogenesis or lipid-dependent metabolic processes because auxin-induced metabolic changes persist after withdrawal and even short-term treatments may have unwanted physiological effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are reasonable conclusions from the experimental data showing persistent TAG changes in males and metabolic alterations. The recommendation to avoid AGES for lipid metabolism studies is appropriately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "All temporal Gal4/UAS systems have strengths and weaknesses requiring careful vetting, including verification of Gal4 expression patterns, consideration of system-specific limitations (e.g., weaker AGES expression in neuronal drivers), and appropriate controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 provide reasonable recommendations based on the findings and general experimental best practices. C93 is supported by citation to Hawley et al., 2023. These are appropriate conclusions for guiding future experimental design.",
+    "result_type": "MINOR"
+  }
+]

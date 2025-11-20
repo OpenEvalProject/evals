@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The endotaxis algorithm is implemented as a 3-layer neural circuit with four neuron types (resource, point, map, and goal cells) using biologically realistic structures and learning rules. The circuit learns environmental topology through Hebbian plasticity in map cell synapses, and goal cells produce signals that decline systematically with distance from target locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C11-C18 collectively describe the circuit architecture and its key functional property. The mathematical formulations (Equations 1-18), detailed circuit diagrams (Figure 1B), and simulation results (Figures 2-5) provide strong converging evidence that this circuit can implement the proposed functions using local learning rules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C15",
+      "C16"
+    ],
+    "result": "Map cells learn the connectivity structure of the environment through Hebbian strengthening of recurrent synapses when the animal moves between adjacent locations, causing the synaptic weight matrix to converge to the adjacency matrix of the environment graph.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 describe the map learning mechanism with support from mathematical theory (Equations 1-5), citations to established learning theory (Dayan and Abbott, 2001; Galtier et al., 2012), and simulation demonstrations (Figure 2, Figure 4B). The convergence to the adjacency matrix is both theoretically predicted and empirically demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The goal signal computed by the endotaxis network declines monotonically with graph distance from the target, allowing an agent to navigate the shortest path by making local decisions that maximize the goal signal at each step without high-level planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C53-C55 describe the core navigation principle. This is supported by mathematical derivations (Equations 10-17 showing exponential decay with distance), theoretical analysis proving monotonic distance dependence for appropriate parameters, and extensive simulations (Figures 3-5) demonstrating successful shortest-path navigation across diverse graph structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C63",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "At a noise level of \u03b5=0.01, endotaxis enables perfect navigation over distances of approximately 9 steps across diverse graph structures (ring, binary tree, Tower of Hanoi), providing 10-100\u00d7 speedup compared to random navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C60-C63 report quantitative performance metrics from simulations. Figure 5 provides comprehensive data across three different graph types, showing consistent navigation range of ~9 steps and quantified speedup factors. The consistency across structurally different environments strengthens the claim of generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C56",
+      "C57"
+    ],
+    "result": "The endotaxis model requires parameter tuning but is relatively robust, allowing 10-20% variation in parameters for reasonable performance, though the exponential decay of goal signals presents challenges for biological implementation due to finite neuronal signal-to-noise ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C56-C57 address practical implementation constraints. Figure 6 systematically explores parameter sensitivity across three graph types, demonstrating the claimed 10-20% tolerance. The biological constraint discussion (C56-C57) is grounded in established neuroscience knowledge about discrimination thresholds (~1%) and provides context for the noise levels used in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C67"
+    ],
+    "result": "A saturating nonlinear activation function in map neurons improves navigation performance by 1.5-2.2\u00d7 compared to linear activation, by maintaining constant peak map output which has a normalizing effect that prevents learning errors and local maxima in the goal signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C67 describe an enhancement to the basic model. Figure 7 provides quantitative comparisons showing the performance improvements, mechanistic explanations for why saturation helps (Figure 7E-F), and demonstrates the effect across multiple graph types. The explanation linking normalization to improved performance is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C69"
+    ],
+    "result": "Endotaxis can explain the observed homing behavior in mice that navigate back to a labyrinth entrance using the shortest path on their first visit, without retracing their exploratory route.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C69 connect model predictions to experimental observations. The experimental data from Rosenberg et al., 2021 (C29) establishes the phenomenon. Figure 8 demonstrates that the endotaxis model with partially learned maps produces goal signals that enable correct homing behavior, including the specific prediction that agents turn toward shortcuts rather than retracing steps (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C70",
+      "C71"
+    ],
+    "result": "Real mice spend >85% of their time patrolling a learned maze with efficiency between random and optimal, continuing for hours after perfecting navigation to reward locations. The optimal patrol path for the binary tree maze visits all 64 end nodes in 252 steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C70-C71 report experimental observations from Rosenberg et al., 2021. The optimal path calculation (C31) is a computational result shown in Figure 9A. The mouse behavior data (C32, C70-C71) comes from the cited experimental study and is quantified in Figure 9B, providing empirical grounding for the patrolling phenomenon the model aims to explain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Endotaxis with habituation in point cells can implement efficient patrolling behavior, with performance at noise level \u03b5\u22481 matching the efficiency of real mice, which is intermediate between random and optimal patrolling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model extension with habituation (Algorithm 3) produces patrolling behavior demonstrated in Figure 9. At \u03b5=0.01, the model achieves perfect patrolling (Figure 9A), while at \u03b5\u22481 it matches mouse behavior (Figure 9B). The mechanism is clearly specified and the match to experimental data is quantitative, though the habituation parameters (\u03b2=1.2, \u03c4=100) appear to be fitted to produce this match.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Endotaxis operates continuously with the same learning rules during exploration, navigation, and patrolling, integrating latent learning (map acquisition without rewards) and reinforcement learning (goal tagging), enabling navigation to goal locations after a single reinforcement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C80-C83 describe the unified learning framework. Figure 4 demonstrates one-shot goal learning after map acquisition. The integration of latent and reinforcement learning is supported by the mathematical formulation (Equation 18) showing goal signals depend on both map and goal synapses. The historical context (C81-C82) and distinction from prior models strengthens the conceptual claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The mushroom body of arthropod brains contains neural circuit elements analogous to the endotaxis model: Kenyon cells with sparse responses and strong recurrent connections (map cells), output neurons with reward-gated plasticity (goal cells), and connections to turning control circuits, potentially supporting odor-landmark navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C40 propose biological correspondence between the model and insect brain structures. While each anatomical claim is supported by appropriate citations (Heisenberg 2003, Eichler et al. 2017, Cohn et al. 2015, etc.), the functional interpretation that these structures implement endotaxis (C40) is speculative. The citations support the existence of the structures and some of their properties, but not their specific role in the proposed navigation algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Rodent hippocampal place cells show properties consistent with endotaxis predictions: rapid appearance of place fields upon entering new environments, sparse activation of potential place cells, goal cells with large place fields, and sudden formation of fully-formed place fields triggered by dendritic calcium plateaus with multi-second plasticity windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 connect model predictions to mammalian neuroscience. Each claim is supported by specific citations to experimental studies (Wilson & McNaughton 1993, Alme et al. 2014, Hok et al. 2005, Bittner et al. 2017, Magee & Grienberger 2020). The correspondence between model predictions and experimental observations is clearly articulated, though the claims are correlational rather than demonstrating that these neurons actually implement endotaxis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C84",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Endotaxis can be viewed as a form of reinforcement learning that differs from standard approaches and the successor representation by: (1) having no time/reward tradeoff and seeking only shortest paths, (2) externalizing action selection to the environment, and (3) learning only state functions rather than state-action value functions, which simplifies the circuit at the cost of limiting planning capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C84, C87, C89-C92 position endotaxis within reinforcement learning theory. The comparisons are conceptually clear and supported by appropriate citations (Sutton & Barto 2018, Dayan 1993, Stachenfeld et al. 2017). The distinctions are well-articulated and follow logically from the model architecture. However, the evaluation is primarily conceptual/theoretical rather than empirically validated through direct comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Endotaxis distinguishes itself from prior navigation models by using forward signal propagation from current location (rather than backward from goal), having goal neurons that also respond to resources directly, operating continuously without separating learning and navigation phases, and covering all essential functions in a feed-forward neuromorphically plausible manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 compare endotaxis to prior computational models. The review of prior approaches is well-cited (Gaussier et al. 2002, Ponulak & Hopfield 2013, etc.). The distinctions claimed for endotaxis (C95-C96, C97-C98, C100) follow logically from the model architecture described earlier. The claim of being more complete and biologically plausible (C100) is somewhat subjective but reasonably supported by the detailed circuit specification and learning rules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Chemotaxis is universal among motile animals, always includes trial-and-error search strategies, and may have been the original evolutionary driver for brain development, with ancient brain regions like the hippocampus organized around olfactory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 provide evolutionary and behavioral context. C4 and C7 are supported by Baker et al. 2018. C5 is presented as a belief in the field (knowledge claim). C6 is supported by Jacobs 2012 and Aboitiz & Montiel 2015. These are background claims that motivate the model but are not central results of this work. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C75",
+      "C76"
+    ],
+    "result": "Animals navigate using real-world trial-and-error, especially during early learning, as evidenced by vicarious trial-and-error behaviors (head swaying at decision points) observed across species from insects to humans, which may represent sampling of internal virtual odor gradients in endotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C75-C76 connect the model's trial-and-error mechanism to animal behavior. The behavioral observations are well-cited (Redish 2016, Lashley 1912, Tarsitano 2006, Santos-Pata & Verschure 2018). The interpretation that these behaviors reflect sampling of virtual odors (implied connection to endotaxis) is more speculative but follows logically from the model. The evidence supports that trial-and-error occurs but not definitively that it implements endotaxis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C47"
+    ],
+    "result": "Animals entering new environments face challenges of exploration, memorization, and navigation. Endotaxis provides a brain module solution using neural components found across species from insects to humans, interfacing between spatial sensing and chemotaxis modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C1 is a general framing claim about animal behavior (knowledge-based). C3 and C47 propose that endotaxis components exist across species and could serve as an interface module. C3 is supported by the Discussion section's review of insect and mammalian neuroscience. C47 is more speculative about the modular architecture. These are primarily framing and interpretive claims rather than empirical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The ~9 step navigation range of endotaxis at \u03b5=0.01 is ecologically relevant, as personal experience suggests humans rarely learn routes with more than 9 successive decisions, and chess openings typically last about 10 moves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 attempt to validate the model's performance range by comparison to human behavior. C64 is explicitly based on informal personal experience (speculation). C65 about chess openings is factual (knowledge) but the connection to spatial navigation is tenuous. These claims lack rigorous empirical support and the analogies may not be appropriate. The ecological relevance argument is weak.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Mice can navigate novel direct routes through a labyrinth on first attempt and spend most waking time patrolling even after perfecting routes to rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 report experimental observations from Rosenberg et al., 2021. These are empirical findings from a prior study that motivate the current modeling work. The claims are appropriately cited and provide the behavioral phenomena that the endotaxis model aims to explain. These are not results of the current manuscript but important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Endotaxis does not implement advanced spatial reasoning capabilities such as action chunking or internal deliberation for route planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 explicitly acknowledges limitations of the model. This is an honest assessment of what the model does not do, which is important for scientific clarity. The limitation follows logically from the model architecture which makes only local decisions. This is a straightforward descriptive claim about model scope.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C24",
+      "C56",
+      "C57",
+      "C58",
+      "C68",
+      "C70",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors present OpenApePose, a dataset of 71,868 annotated ape images covering six species with 16 body landmarks, collected from zoos, sanctuaries, and online sources. The dataset is designed to have rich sampling of poses, backgrounds, and unique individuals, making it larger and more diverse than most existing animal pose datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers consistently praise the dataset as 'important,' 'terrific,' and having 'excellent annotations,' with one noting 'the diversity and size of the dataset make it particularly useful.' However, one reviewer explicitly states 'the variation in the database with regards to individuals, background, source/setting is not clearly articulated,' indicating that while the dataset's value is recognized, its characterization needs improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Models trained on OpenApePose (HRNet-W48) achieve superior performance on ape pose estimation (PCK@0.2=0.876, AUC=0.897) compared to models trained on monkey images (OpenMonkeyPose: PCK@0.2=0.584, AUC=0.743) or human images (COCO: PCK@0.2=0.569, AUC=0.710), with all differences statistically significant (p<0.001).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding, with one stating the authors 'demonstrate the value of their dataset by training pose estimation networks...ultimately showing that the model trained on their dataset had the best performance.' Another reviewer notes the authors 'rigorously tested the utility of this database...to clearly demonstrate its convincing potential, especially in relation to current alternatives.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C62",
+      "C63"
+    ],
+    "result": "The COCO model (trained on humans) predicts ape landmarks better than monkey landmarks, and phylogenetic similarity matters: human-trained models generalize better to apes than monkey-trained models, despite apes and monkeys being in the same taxonomic order.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer explicitly highlights this as a strength, noting the 'comparison to pose estimation models trained on humans vs monkeys, finding that models trained on human data generalized better to apes than the ones trained on monkeys, in accordance with phylogenetic similarity' and calling it 'evidence for an important consideration in the field.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C51",
+      "C52"
+    ],
+    "result": "Leave-one-species-out experiments show that models trained on five ape species can track the held-out species better than monkey or human models (all p<0.001), though performance is reduced compared to the full model, demonstrating that phylogenetic relatedness among apes provides tracking benefits.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praise the 'ablation experiments where some species are left out' as providing 'solid evidence that their large, specialized dataset is uniquely positioned to aid in the task of pose estimation for ape species.' The experimental design and findings are accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Performance increases gradually with training set size but saturates around 70% of the full dataset, with no significant difference between 70% and 100% (PCK@0.2: 0.878 vs 0.876, AUC: 0.899 vs 0.897, p>0.9).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer explicitly praises the 'sample efficiency experiments' as reflecting 'an important property of pose estimation systems, which indicates how much data would be necessary to generate similar datasets in other species.' The findings are accepted as revealing 'important insights about scaling properties.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "OpenApePose tracking quality (AUC=0.897) is comparable to but slightly lower than OpenMonkeyPose on monkeys (AUC=0.929) and COCO on humans (AUC=0.956), with differences attributed to dataset size and diversity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these comparative performance metrics without challenge. One reviewer notes the work 'rigorously tested the utility of this database in comparison to available Pose image databases for monkeys and humans to clearly demonstrate its solid potential,' implicitly accepting the within-species performance comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "UMAP visualization shows that Hylobatidae (gibbons and siamangs) form somewhat separate pose clusters from Hominidae species, likely reflecting differences in locomotion styles (brachiators vs. ground movement), with orangutans showing overlap with Hylobatidae consistent with their arboreal behavior.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not critique this analysis. The dataset properties are described as 'mostly well described' by one reviewer, and the overall characterization of the dataset is accepted, suggesting these observations about pose clustering are not contested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Species-specific information aids tracking, with gorillas being easiest to track (PCK@0.2=0.869) and gibbons most difficult (PCK@0.2=0.763), leading to the conclusion that large species-specific datasets are superior to multispecies datasets and that current models have limited cross-species generalization even within taxonomic families.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings without challenge. One reviewer notes the 'ablation studies' provide 'solid evidence' for the dataset's utility, and another praises how the work demonstrates the model's performance across species. The conclusions about species-specific training are implicitly supported by reviewer acceptance of the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HRNet-W48 architecture was chosen as it works with higher resolution feature representations and currently remains the best performing architecture for pose estimation, outperforming alternatives like CPM, hourglass, and ResNet.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer explicitly notes that 'sample efficiency experiments also reveal important insights about scaling properties of different model architectures, finding that HRNet saturates in performance improvements as a function of dataset size sooner than other architectures like CPMs (even though HRNets still perform better overall),' accepting the architectural choice and performance claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The dataset has acknowledged limitations: it is dominated by captive settings which may reduce performance in wild settings, enables only 2D (not 3D) pose tracking, labels only one individual per image, and lacks high-resolution tracking of finer features like faces and hands.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly states 'the variation in the database with regards to individuals, background, source/setting is not clearly articulated,' directly addressing the captive setting limitation. While the authors acknowledge these limitations, the reviewer indicates this information needs better articulation, suggesting the characterization of dataset variation is incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C67",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The dataset will benefit future researchers in developing tracking algorithms for apes in various settings, and better tracking systems could expand non-invasive studies of ape cognition while reducing the need for invasive neuroscientific techniques, which are ethically problematic for apes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the dataset's anticipated impact, with one stating it 'will be important for many applications within primatology and the behavioural sciences' and another calling it 'a terrific contribution to the field...likely to have a significant impact on both computer vision and animal behavior.' The ethical and practical motivations are accepted without challenge.",
+    "result_type": "MAJOR"
+  }
+]

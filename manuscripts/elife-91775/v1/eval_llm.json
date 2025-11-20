@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "C. elegans connectomes have been established for multiple sexes, tissues, developmental stages, and physiological states through EM reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by citations to published EM reconstruction studies. These claims establish the prior state of knowledge about C. elegans connectomics and provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Understanding of synaptic connectivity variability and the factors that establish and maintain the connectome remains limited, with a lack of synaptic reporters being a bottleneck for large-scale analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 accurately describe current knowledge gaps in the field, supported by citations and general knowledge. These claims establish the motivation for developing the tools presented in this paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C21"
+    ],
+    "result": "The authors present a toolkit of 30 novel transgenic strains that label chemical or electrical synapses throughout the C. elegans nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C21 describe a major resource contribution of the paper. The strains are documented in Supplementary file 1 and shown in Figure 1B, providing clear evidence for this resource.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C22",
+      "C23",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "WormPsyQi is a generalizable image analysis pipeline that automatically quantifies synaptic features despite heterogeneity in neurite morphology, fluorescence signal, and imaging parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C22-C23, and C29-C32 describe the WormPsyQi pipeline's architecture and capabilities. The pipeline structure is documented in methods and figures, with clear descriptions of the U-Net architecture, masking steps, and pre-trained models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "WormPsyQi achieves high segmentation accuracy with minimal training data, outperforms inter-expert agreement, and provides over 10-fold reduction in processing time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by quantitative validation experiments shown in Figure 2C-D and Figure 2\u2014figure supplement 4E. The IoU scores and processing time comparisons provide strong evidence for the pipeline's performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "WormPsyQi validates sexually dimorphic synaptic connectivity patterns in adult hermaphrodites and males for multiple neuron pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by data in Figure 3 showing statistically significant differences in synapse numbers between sexes for PHB>AVA, PHA>AVG, ADL>AVA, and PHB>AVG connections, consistent with previous EM data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C52",
+      "C53"
+    ],
+    "result": "WormPsyQi quantification shows no statistically significant difference from manual annotation for most datasets analyzed in both CNS and pharyngeal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C52-C53 are supported by validation comparisons shown in Figures 4-6. Statistical tests confirm no significant differences for most reporters, though some limitations are noted for high-density or diffuse signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C48"
+    ],
+    "result": "RAB-3 reporters show more diffuse synaptic signals compared to CLA-1 reporters due to distinct protein localization and function, with CLA-1 being superior for quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 and C48 are supported by comparative data in Figure 4\u2014figure supplement 1C and citations to protein function studies. The diffuse nature of RAB-3 signal is explained by its vesicle localization versus CLA-1's active zone localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "GRASP and iBLINC reporter signals vary across neurons and synapses, likely due to sensitivity to promoter choice, DNA amount, transgene type, and imaging conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by observations in Figure 5 and citations to previous reports. The variability is appropriately attributed to known technical factors affecting transsynaptic labeling methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Having a cytoplasmic reporter in the background enhances WormPsyQi performance and prevents mis-annotation in regions with high background fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by comparative analysis shown in Figure 4\u2014figure supplement 1B, demonstrating that cytoplasmic markers help exclude false-positive autofluorescence and improve segmentation accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "INX-6::GFP puncta in the nerve ring are significantly higher in dauer animals compared to L4 animals, validating previous observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by data in Figure 7 showing statistically significant differences (p<0.0001) between L4 and dauer stages, consistent with previous findings cited from Bhattacharya et al., 2019.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In CNS neurons, axon length and synapse number increase approximately twofold between L1 and adulthood, with synapses added progressively at pre-existing sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by quantitative measurements in Figure 8 showing proportional increases in axon length and synapse number across development for multiple neuron types in the CNS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Previous EM studies showed that system-wide neurite length in the nerve ring increases with animal length and synapses are added progressively, maintaining overall synapse density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 accurately cite findings from Witvliet et al., 2021, providing context for the developmental analysis presented in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The pharynx increases twofold in length while the overall animal increases 4.5-fold between L1 and adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by citations to previous studies (Shibata et al., 2016; Witvliet et al., 2021) and provide important context for interpreting pharyngeal neuron development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Pharyngeal neurons show striking disparity in synapse addition across neuron classes, with MC, I2, and M3 showing constant or modest increases in synapse number despite pharynx elongation, resulting in decreased synapse density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by quantitative data in Figure 9B-D showing that synapse numbers do not scale proportionally with neurite length in these pharyngeal neurons, contrasting with CNS neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "In pharyngeal neurons M4 and NSM, synapses are added proportionately with neurite length and pharynx elongation, largely corresponding to post-embryonically arising neuromuscular junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by data in Figure 9E-F and interpretation based on previous EM studies. The proportional synapse addition in these neurons is distinguished from the core pharyngeal connectome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Developmental synapse addition differs between the enteric nervous system (ENS) and central nervous system (CNS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by comparative analysis of data in Figures 8 and 9, showing distinct patterns of synapse addition in pharyngeal versus somatic neurons during development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "WormPsyQi recapitulates known spatial distributions of synapses in PHA, AIB, and ASK neurons, with quantitative probability density analysis revealing stereotyped and variable synaptic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by spatial distribution analysis in Figure 10A-C, which matches previous EM observations and provides quantitative probability density measurements of synapse localization patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "In ASK neurons, total synapse volume scales proportionately with synapse addition and spatial distribution patterns remain stereotyped across development from L1 to adult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by quantitative analysis in Figure 10D-E showing proportional scaling of synapse volume and maintained probability density peaks across developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The overall brain architecture in C. elegans, including cell body positions, neuronal morphologies, and process arrangements, is largely maintained across development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by citations to multiple recent studies (Witvliet et al., 2021; Moyle et al., 2021; Brittin et al., 2021) and provides context for interpreting the stereotyped synapse distribution patterns observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The transgenic reporters have limitations including potential trafficking artifacts from multicopy arrays and variability across lines, which may explain discrepancies with EM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 appropriately acknowledge limitations of the transgenic approach. The authors provide honest assessment of potential artifacts and variability, which is important for interpreting the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Reporters with endogenously tagged proteins and single-copy transgenes show more consistent expression and spatial localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by general knowledge of transgenic approaches in C. elegans and provides context for future improvements to the reporter toolkit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "WormPsyQi has limitations with diffuse signals and high synapse density but works well for discrete fluorescent signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide an honest assessment of pipeline limitations based on testing with various reporters (Figures 4, 6). The authors clearly specify conditions where the pipeline performs well versus poorly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "WormPsyQi may be utilized for other punctate signals beyond synapses, such as neurotransmitter receptors and cell adhesion molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C24 is speculative about potential broader applications. While the pipeline's design suggests it could work for other punctate signals, no data are provided to validate this claim. This represents future work rather than demonstrated capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Manual synaptic puncta quantification is tedious, low throughput, requires a priori ROI information, and introduces human error and bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 accurately describe well-known limitations of manual quantification, supported by citations and practical experience. These claims establish the need for automated approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The methods section describes strains, culture conditions, microscopy parameters, computational implementation, and data availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C94 provide methodological details that are clearly stated and appropriately documented. The software and data availability statements (C92, C94) support reproducibility.",
+    "result_type": "MINOR"
+  }
+]

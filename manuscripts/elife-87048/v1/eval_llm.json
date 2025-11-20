@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Experiment 1 pupillometry data demonstrate violations of ocularity invariance for flickering luminance stimuli. Binocular presentation consistently produces greater pupil responses than monocular presentation across all contrasts (C23), with significant statistical effects (C28, C30, C32). Cross-frequency conditions reveal interocular suppression effects (C29, C31, C33-C35), indicating non-linear binocular combination in subcortical pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pupillometry results are well-supported by multiple converging lines of evidence including contrast response functions (C22-C23), statistical analyses with reported p-values (C28, C30, C32, C34, C35), and clear spectral signatures (C19-C21). The claims are internally consistent and supported by appropriate experimental controls and quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Experiment 1 EEG data show near-linear binocular combination with minimal interocular suppression for flickering luminance stimuli. Binocular responses at both first and second harmonics substantially exceed monocular responses (C37), with no appreciable cross-frequency suppression effects (C39, C40), suggesting more linear processing in cortical pathways compared to subcortical pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EEG findings are supported by clear spectral data (C36), contrast response functions (C37), and absence of cross-frequency interactions (C39, C40). The inference about linear processing (C41, C42) is reasonable given the pattern of results, though the authors acknowledge alternative interpretations involving monocular channels (C90-C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Binocular-to-monocular response ratios differ systematically between measurement modalities. At low-to-intermediate contrasts, ratios are approximately \u221a2 for all three data types (pupillometry, EEG 1F, EEG 2F). At higher contrasts, EEG data show ratios of 2 or higher, while pupillometry shows much weaker ratios near 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These ratio comparisons (C43-C45) are directly supported by Figure 3 and statistical analysis showing a significant interaction between contrast and data modality. The findings provide quantitative evidence for differential binocular combination rules across cortical and subcortical pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Experiment 2 demonstrates that strong binocular facilitation in EEG responses occurs across temporal frequencies from 2-16 Hz, ruling out the possibility that the 2 Hz frequency used in Experiment 1 was responsible for the observed effects. No measurable EEG responses were observed at 30 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The frequency-dependence results (C51-C53) are clearly supported by Figure 4 data showing consistent binocular summation across multiple frequencies. The inference that 2 Hz flicker is not uniquely responsible for the effects (C54) is logically sound given the replication across frequencies. The comparison to previous grating studies (C50) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C4"
+    ],
+    "result": "Experiment 3 psychophysical matching data reveal near-linear binocular summation for perceived flicker intensity. Monocular targets require substantially higher physical contrast than binocular targets to achieve perceptual equivalence (C55-C56). The data are consistent with linear summation models and inconsistent with winner-take-all models (C57), aligning with cortical EEG responses (C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The matching experiment results (C55-C57) are well-supported by Figure 5 data and model comparisons. The consistency with EEG findings (C58) strengthens the interpretation that perception follows cortical rather than subcortical combination rules. The experimental design appropriately tests perceptual equivalence across different interocular contrast ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Computational modeling reveals that pupillometry data require substantially greater interocular suppression weight (w\u22480.61) compared to EEG and matching data (w\u22480.02-0.09). The posterior distributions show no overlap between pupillometry and other modalities (C61), and all are below the w=1 value predicted by previous grating studies (C62). This explains the differential binocular facilitation and dichoptic masking patterns across modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling results (C59-C64) are well-supported by Figure 6 and Table 1, using appropriate Bayesian hierarchical methods. The model captures key empirical patterns (C59) and provides mechanistic insight into the differential suppression weights (C60-C61). The comparison to prior work (C62) and functional interpretation (C63-C64) are reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Intermodulation frequency analysis reveals nonlinear binocular combination. Pupillometry shows a strong difference response at 0.4 Hz (C93), while EEG shows a sum response at 3.6 Hz (C94). The presence of these intermodulation terms indicates nonlinear processing prior to binocular combination (C96), consistent with the model architecture (C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The intermodulation findings (C93-C94) are clearly supported by Figure 7 data. The inference about nonlinearity (C96) is appropriate given established theory cited. The explanation for asymmetric intermodulation patterns (C95) based on temporal constraints is reasonable. This analysis provides additional evidence against purely linear monocular channel models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C98",
+      "C99"
+    ],
+    "result": "The study demonstrates fundamental differences in binocular combination between cortical and subcortical pathways for flickering luminance. Cortical responses (EEG) show approximately linear combination with minimal interocular suppression (C65), while subcortical responses (pupillometry) show more nonlinear combination with substantial suppression (C66). Perception aligns with cortical processing (C67). Flicker processing differs markedly from spatial pattern processing (C99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary conclusions (C65-C67, C98-C99) are well-supported by the convergent evidence from all three experiments and computational modeling. The claims appropriately synthesize the major findings and are consistent with the empirical data. The comparison to spatial pattern vision (C99) is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C77",
+      "C82"
+    ],
+    "result": "The authors conclude that ocularity invariance is not ubiquitous in visual processing (C5) and propose that the brain repurposes a generic normalization algorithm by adjusting interocular suppression weights for different visual functions (C6, C82). Strong interocular normalization may be specific to spatial pattern vision (C77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data clearly demonstrate violations of ocularity invariance for luminance flicker (supporting C5), the mechanistic interpretation (C6, C82) is more speculative. The proposal that the brain adjusts a single algorithm's parameters is one possible explanation, but alternative architectures (e.g., fundamentally different circuits) are not ruled out. The claim about specificity to spatial pattern vision (C77) is reasonable but requires more direct comparative experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The discussion contextualizes findings within prior literature, noting that previous spatial pattern studies show strong interocular suppression (C68), while various other systems (eye movements C70, melatonin C71, accommodation C72-C73, auditory C74, static luminance C75-C76) show more linear binocular combination, with one exception in prior EEG work (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These literature claims (C68-C76) are appropriately supported by citations to relevant prior work. The authors accurately represent previous findings and use them to contextualize their results. The acknowledgment of Apkarian et al. 1981 (C69) showing similar facilitation is important for scholarly completeness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose functional interpretations: strong interocular suppression implements optimal Kalman filtering for noise reduction (C78-C79), which may be worth the computational cost for pattern vision (C80) but not for phylogenetically older or purely physiological responses (C81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These functional interpretations (C78-C81) are speculative and not directly tested. While the Kalman filter analogy (C78) is supported by citation, the evolutionary/functional arguments (C80-C81) are plausible but lack direct evidence. Alternative explanations (e.g., different computational requirements, anatomical constraints) are not systematically evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors acknowledge potential bidirectional interactions between pupil and cortical responses but argue these effects are likely small (2% pupil modulation at 2 Hz) and unlikely to differentially affect the key comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of pupil-cortex interactions (C83, C85) is appropriate and supported by citations. The quantitative argument that effects would be small (C84) is reasonable given cited literature on pupil modulation magnitudes. The assumption of independence is a simplification but appears justified for the main comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors discuss the possibility that luminance flicker preferentially stimulates monocular, unoriented mechanisms in V1 'blobs' (C86-C89), which might explain weak binocular interactions in EEG (C90). They acknowledge that results could potentially be explained by non-interacting monocular channels with additive EEG responses (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The neurophysiological context (C86-C89) is well-supported by appropriate citations. However, the speculation about preferential blob stimulation (C90) and the alternative monocular channel interpretation (C91) are not directly tested. The intermodulation analysis (C93-C96) provides some evidence against purely linear monocular models, but this alternative explanation is not definitively ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Key results from Experiment 1 were replicated using peripheral stimulation (see Appendix 1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This replication claim (C49) is stated as supported by appendix data, demonstrating that the main findings are not specific to central vision. This strengthens the generalizability of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Methodological details including participant characteristics (C101-C104), stimulus parameters (C105-C107, C114-C115), apparatus (C106, C108-C109), experimental setup (C110-C113), data analysis approaches (C116-C118), and computational modeling choices (C119-C122) are documented. The study was preregistered with a pilot phase (C123-C124).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C101-C124) are clearly documented and appropriate for the research questions. Sample sizes appear adequate (N=30, 12, 10 for the three experiments). The choice of 2 Hz as a compromise frequency (C17) is well-justified. Analysis methods including Fourier analysis (C117-C118) and Bayesian modeling (C119-C122) are appropriate and well-described. Preregistration (C123-C124) enhances transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction establishes background knowledge about ocularity invariance in cortical pattern vision (C1, C8-C12), subcortical pupillary pathways (C7, C13-C15), temporal response properties (C16-C18), and methodological rationale for using 2 Hz flicker and steady-state approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1, C7-C18) are appropriately supported by citations to established literature. The authors accurately represent prior knowledge and use it to motivate their experimental approach. The methodological justification for 2 Hz (C17) is reasonable given the constraints of both measurement techniques.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Intermodulation responses at sum and difference frequencies are a hallmark of nonlinear systems that pool inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological principle (C92) is well-established in the steady-state literature and appropriately cited. It provides the theoretical foundation for the intermodulation analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The computational framework permits direct comparisons between disparate experimental paradigms and data types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C100) about the utility of the modeling approach is supported by the successful fitting of a common model architecture to pupillometry, EEG, and psychophysical data, enabling quantitative parameter comparisons across modalities.",
+    "result_type": "MINOR"
+  }
+]

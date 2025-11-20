@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C27",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "MSI-1* functions as a translation repressor in E. coli, downregulating sfGFP expression by 2.5-fold through specific interaction with the N-terminal coding region of mRNA. The regulation occurs at the translational level, as confirmed by preserved mRNA levels and Crick space analysis, with single-cell measurements showing the percentage of ON cells dropping from 87% to 15% upon induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C27, C34-C38 collectively demonstrate successful implementation of MSI-1* as a translation repressor in E. coli. The 2.5-fold downregulation (C27) is supported by multiple lines of evidence: RT-qPCR confirming mRNA preservation (C35), Crick space analysis showing translational regulation (C34), and single-cell flow cytometry data (C36). The conclusion that eukaryotic regulators can function in prokaryotes (C37-C38) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "The UAG minimal core within the consensus sequence is critical for MSI-1* recognition, with two copies of the consensus sequence necessary for regulation. MSI-1h* binds the original RNA motif with fast association kinetics (kON = 1.1 nM\u207b\u00b9 min\u207b\u00b9, residence time = 1.5 min, KD = 0.62 nM), enabling it to compete with ribosomes and ribonucleases in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C49, C51 provide comprehensive mechanistic insight through mutational analysis and switchSENSE binding kinetics. The importance of UAG (C39-C40) and requirement for two consensus sequences (C41) are experimentally validated. The binding kinetics measurements (C42-C49) are directly obtained using switchSENSE technology, and the comparison to MS2CP (C51) provides context. The fast association rate near the diffusion limit (C45) supports the conclusion that MSI-1* can effectively compete for mRNA binding (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The fold change in sfGFP expression correlates better with the equilibrium constant (1/KD, R\u00b2 = 0.75) than with RBS calculator predictions (R\u00b2 = 0.16), indicating that the protein-RNA interaction in the bacterial circuit operates close to thermodynamic equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 demonstrate that equilibrium binding affinity is a better predictor of regulatory activity than translation initiation rate predictions. The poor correlation with RBS calculator (C52) and good correlation with 1/KD (C53) are both experimentally derived, supporting the conclusion of near-equilibrium thermodynamics (C54). This is consistent with the measured kinetic parameters showing both association and dissociation contribute to regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C58",
+      "C59"
+    ],
+    "result": "A bottom-up mathematical model accurately recapitulates the dynamic response of the system, predicting transient responses for different lactose concentrations with excellent agreement (R\u00b2 = 0.98) and correctly predicting 2.6-fold downregulation in solid medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C58-C59 demonstrate strong predictive power of the mathematical model. The R\u00b2 = 0.98 correlation (C58) between model predictions and experimental time-course data indicates excellent agreement. The model's ability to predict behavior in solid medium (C59) with fold change consistent with liquid medium results validates its robustness across different growth conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Rational redesign of the RNA motif enhanced the dynamic range to 8.6-fold downregulation (redesign-3) by placing two RUnAGU repeats flanking the RBS and maintaining the original motif after the start codon. This design established apparent cooperativity between two MSI-1* proteins (Hill coefficient = 4.5), with 91% of cells in the ON state decreasing to 5.3% upon induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 demonstrate successful rational design to improve system performance. The 8.6-fold downregulation (C61) represents substantial improvement over the original 2.5-fold. The Hill coefficient of 4.5 (C63) and inference of cooperativity (C64) are derived from fitting experimental dose-response data. Single-cell measurements (C65) confirm the enhanced dynamic range at the population level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MSI-1* activity can be allosterically inhibited by oleic acid, which binds RRM1 and prevents RNA recognition. In vitro, 1 mM oleic acid completely disrupts the MSI-1*-RNA interaction (IC50 \u2248 0.5 mM). In vivo, 20 mM oleic acid increases ON cells from 10% to 49% (original system) or from ~0% to 71% (redesign-3 system).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23, C66-C70 demonstrate allosteric regulation by oleic acid through multiple experimental approaches. The mechanism (C66) is established knowledge supported by citations. In vitro gel shift assays (C67-C68) directly demonstrate disruption of protein-RNA interaction with quantified IC50. In vivo flow cytometry data (C69-C70) confirm functional inhibition in cells, with the redesign-3 system showing better dynamic response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C72"
+    ],
+    "result": "MSI-1* can specifically regulate sfGFP expression within a bicistronic operon without affecting mScarlet, enabling intra-operon gene-specific regulation through post-transcriptional control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C72 demonstrate intra-operon regulation capability. The experimental data (Figure 6c) shows differential regulation of sfGFP versus mScarlet when both are in the same transcriptional unit, with MSI-1* specifically targeting sfGFP through its RNA motif. This addresses a key limitation of transcriptional regulation and is well-supported by the combinatorial induction experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C73"
+    ],
+    "result": "MSI-1* enables combinatorial regulation with transcription factors and reduces protein expression noise, with Fano factor reductions of 35-65% depending on implementation when comparing conditions with similar mean expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C73 demonstrate two important applications. Combinatorial regulation (C10) is shown through combined use of lactose and aTC inducers. Noise reduction (C11, C73) is quantified using Fano factor analysis from single-cell flow cytometry data, showing statistically significant reductions when translation regulation dominates the response sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The original system exhibits a regulatory coefficient of 99 \u03bcM lactose and Hill coefficient of 1.7. Transfer function analysis with Hill coefficient of 1 suggests only one MSI-1* protein interacts with a given mRNA, with each RRM binding to a consensus sequence repeat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 characterize the dose-response behavior of the original system. The regulatory coefficient and Hill coefficient (C28-C29) are derived from fitting experimental data. The interpretation that Hill coefficient of 1 indicates single protein binding (C30-C32) is supported by the transfer function analysis and is consistent with the structural model cited (Iwaoka et al., 2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Expression of MSI-1* did not produce significant burden to bacterial cells, as evidenced by constant growth rates across induction conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by growth rate measurements showing nearly constant values across different induction conditions. This is an important control demonstrating that the observed regulatory effects are not confounded by growth defects or metabolic burden from heterologous protein expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "An elongation leakage fraction of 40% was estimated for the system, attributed to ribosomes' ability to elongate even when MSI-1* is bound and their ability to bind mRNA sooner due to transcription-translation coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide mechanistic explanation for incomplete repression. The 40% leakage (C56) is calculated from the mathematical model using the observed 2.5-fold downregulation. The proposed mechanism (C57) involving ribosome elongation and transcription-translation coupling is reasonable and supported by citation to Kohler et al., 2017, though direct experimental validation of this specific mechanism is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The fast protein-RNA association phase makes RRM-containing proteins suitable for regulation in contexts where RNA molecules are short-lived, demonstrating their versatility to function as post-transcriptional regulators across prokaryotes and eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 represent broad conclusions drawn from the successful implementation of MSI-1 in E. coli. The fast association rate (C74) is experimentally measured and compared to mRNA half-life in E. coli. The general conclusion about RRM versatility (C75) is a reasonable inference from the successful cross-kingdom transfer, though it is based on a single example (MSI-1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The C-terminal low-complexity domain of native MSI-1 was removed to create MSI-1* to increase solubility, though this domain might contribute to RNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 describes a design decision in constructing MSI-1*. The rationale for removing the C-terminal domain (increased solubility) is stated and supported by citation to Iwaoka et al., 2017. The acknowledgment that this domain might contribute to RNA binding (J\u00e4rvelin et al., 2016) shows appropriate consideration of potential trade-offs in the design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Human and mouse MSI-1 proteins differ in only one residue (position 127 in RRM2: histidine in mice, glutamine in humans), which is not expected to significantly affect structure or function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 document the sequence difference between the human protein used for in vitro studies (MSI-1h*) and the mouse protein used in the bacterial circuit (MSI-1*). The single amino acid difference (C80) is shown by sequence alignment. The inference that this difference is not functionally significant (C81) is reasonable given the conservative nature of the substitution and its location, though direct experimental comparison was not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C55",
+      "C71",
+      "C79"
+    ],
+    "result": "Background knowledge claims about RRMs, MSI-1, prokaryotic and eukaryotic gene regulation, E. coli metabolism, and clinical relevance of Musashi proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C4, C12-C26, C55, C71, C79 represent established knowledge from the literature, appropriately cited throughout. These provide necessary context for the experimental work but are not novel findings of this study. The citations appear appropriate and the statements are consistent with current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Speculative hypothesis that CRISPR proteins evolved from ancestral RRM-based polymerases and that RRM-containing proteins diversified after polymerases were confined to the nucleus, explaining the prevalence difference between eukaryotes and prokaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 are explicitly speculative hypotheses proposed by the authors to explain evolutionary patterns. While supported by citations noting RRM-like folds in palm domains (Anantharaman et al., 2010) and evolutionary considerations (Maris et al., 2005; Koonin et al., 2020), these remain untested hypotheses rather than demonstrated results. The speculation is reasonable but lacks direct experimental or phylogenetic evidence.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The gatekeeper residues of human IP6K isozymes were identified as Leu210, Leu206, and Leu201 for IP6K1, IP6K2, and IP6K3, respectively. Conventional glycine and alanine gatekeeper mutations rendered IP6K1 and IP6K2 virtually inactive, but a valine gatekeeper mutant (IP6K1L210V) completely retained catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are well-supported by sequence alignment data (Figure 2a) and experimental kinetic measurements (Figure 2c, Figure 2\u2014figure supplement 2). The identification of gatekeeper residues is based on established structural similarity to related kinases, and the activity measurements clearly demonstrate that the valine mutation preserves activity while glycine and alanine mutations do not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The valine gatekeeper mutation (IP6K1L210V) resulted in a twofold reduction in ATP affinity (KM = 412 \u00b1 81 \u00b5M vs. 186 \u00b1 23 \u00b5M for WT) and a 60% increase in vmax, with exacerbated substrate inhibition suggesting changes in protein dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by Michaelis-Menten kinetic measurements (Figure 2d) with appropriate experimental controls and replicates. The KM value for WT is consistent with literature values, and the observed changes in kinetic parameters are quantified with error estimates. The inference about protein dynamics (C33) is reasonable given the kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Established analog-sensitive kinase inhibitors exhibited no inhibitory activity against either IP6K1wt or IP6K1L210V at 10 \u00b5M concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by experimental screening data (Figure 2e, Figure 2\u2014figure supplement 3). The negative results are clearly documented and led to the need for a high-throughput screen to identify suitable inhibitors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A high-throughput screen of 54,912 compounds using a reverse kinase reaction assay with excellent Z'-factor (0.81) identified 258 putative hits, which were reduced to 178 true hits after eliminating false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 describe a well-executed high-throughput screen with appropriate quality controls. The Z'-factor of 0.81 indicates excellent assay quality, the pilot screen validated the approach by identifying known inhibitors (C39), and the hit identification and validation process is clearly documented with specific thresholds and counter-screens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The majority of mutant-selective inhibitors were dietary flavonoids (quercetin, fisetin), which were deemed unsuitable due to promiscuous activity and PAINS motifs. FMP-201300, a non-polyphenolic molecule, displayed good selectivity with IC50 values of 17 \u00b5M and 1.6 \u00b5M against IP6K1wt and IP6K1L210V, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by screening data (Figure 3c, 3d, Supplementary file 1). The dismissal of flavonoids is justified by multiple citations documenting their promiscuous activity (C43), and FMP-201300's selectivity is demonstrated by experimental IC50 measurements with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "FMP-201300 has no known inhibitory activities against other biological targets, displays no PAINS motifs, and was neither redox-active nor cytotoxic against HEK293 or HepG2 cell lines at 10 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by literature searches, structural analysis, and experimental toxicity testing (Supplementary file 2). These characterizations are important for establishing FMP-201300 as a suitable chemical probe.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "NMR validation confirmed FMP-201300 as a potent and mutant-selective inhibitor with IC50 values of 114 nM and 810 nM for IP6K1L210V and IP6K1wt, respectively. Similar selectivity was observed for IP6K2 (190 nM vs. 2.14 \u00b5M) and the E. histolytica ortholog IP6KA when its gatekeeper was mutated to valine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are well-supported by NMR assay data (Figure 4a, 4b, Figure 4\u2014figure supplement 1a) with appropriate replicates and controls. The transferability of the approach to IP6K2 and the evolutionarily distant ortholog strengthens the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Structure-activity relationship analysis showed that FMP-201300 analogs lacking carboxylic acid groups (A1-A4) had severely reduced or no activity, indicating that the carboxylic acid is indispensable for inhibitory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by experimental testing of analogs (Figure 4c). The structure-activity relationship is clearly demonstrated, though the sample size is limited (only 4 analogs tested). The conclusion about the importance of the carboxylic acid (C52) is a reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Lineweaver-Burk measurements revealed that FMP-201300 acts through an allosteric mechanism, distinct from the competitive mechanism of the established inhibitor TNP. Substrate competition was excluded as IC50 values were similar at different InsP6 concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by Lineweaver-Burk plot data (Figure 4d, 4e, Figure 4\u2014figure supplement 2). The allosteric mechanism is clearly demonstrated by the parallel lines in the Lineweaver-Burk plot, and appropriate controls with TNP confirm the competitive mechanism for comparison. The substrate competition experiment (C56) provides additional mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "HDX-MS analysis showed that FMP-201300 binding to IP6K1L210V caused major decreases in deuterium exchange rates near the ATP-binding site (\u03b2 strands 1-3, \u03b1C helix, gatekeeper region). The L210V mutation itself increased flexibility in the \u03b22-\u03b23 strands and \u03b1C helix, suggesting that gatekeeper mutation causes \u03b1C helix displacement that expands an allosteric pocket adjacent to the ATP-binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by comprehensive HDX-MS data (Figure 5, Figure 5\u2014figure supplement 1) with appropriate statistical thresholds (>6% deuterium incorporation, 0.5 Da, p<0.05). The data clearly show differential deuterium exchange patterns between WT and mutant, and between apo and inhibitor-bound forms. The mechanistic interpretation (C60) is a reasonable inference from the HDX-MS data, though it remains putative without high-resolution structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The leucine to valine gatekeeper mutation preserved kinase activity, and FMP-201300 displayed no toxicity in cell culture and was able to recapitulate the reduction of ribosomal RNA synthesis phenotype, indicating sufficient cell membrane permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by kinetic data (C61, from earlier results), toxicity testing (C62, Supplementary file 2), and cellular assay data (C63, Figure 4\u2014figure supplement 3). The cellular activity demonstrates that FMP-201300 can function in a biological context despite having two carboxylic acids.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Crystal structures of WT and mutant EhIP6KA are virtually identical except for the additional space generated by the reduced gatekeeper size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by crystallographic data (Figure 4\u2014figure supplement 1d, PDB: 8OMI). The structural comparison provides direct evidence that the valine mutation creates additional space without major structural perturbations, though this observation is limited to the static crystal structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "IP6Ks are emerging pharmacological targets associated with disease-related phenotypes including insulin signaling, apoptosis, cancer metastasis, and lifespan regulation, with isozyme-specific functions demonstrated by genetic studies. However, a pharmacological tool to distinguish mammalian isozymes is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C9 establish the biological context and motivation for the study. These claims are well-supported by multiple citations to established literature. The gap in available tools (C2) provides clear justification for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Genetic approaches to studying IP6K function have limitations including compensatory effects, transcriptional alterations, loss of non-catalytic functions, and incompatibility with the rapid dynamics of PP-InsP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 are supported by citations to previous studies documenting these limitations. This provides strong rationale for developing pharmacological approaches as an alternative to genetic methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "While recent IP6K inhibitor development has yielded potent compounds like SC-919, the benchmark inhibitor TNP has lost appreciation due to unfavorable properties, and with the exception of Barrow-24 (IP6K1-selective), all other IP6K inhibitors lack isozyme specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by citations to recent literature and reference to Figure 1b. This establishes the current state of IP6K inhibitor development and the need for isozyme-selective tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The analog-sensitive approach, developed by Shokat and colleagues, enables generation of mutually selective kinase-inhibitor pairs by mutating a conserved gatekeeper residue to glycine or alanine, creating an enlarged ATP-binding pocket. This method has been successfully applied to over 80 protein kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 accurately describe the established analog-sensitive approach with appropriate citations to foundational work. This provides the methodological framework for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Application of the analog-sensitive approach to small molecule kinases (lipid and sugar kinases) has been challenging, with variable success in yeast vs. mammalian orthologs (e.g., VPS34, TOR2, mTOR, PI3K p110\u03b1). The structural similarity of InsP kinases to protein kinases facilitates gatekeeper identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by citations to previous studies and establish the challenges of applying the analog-sensitive approach to non-protein kinases. This provides important context for why the valine mutation was explored as an alternative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Approximately 30% of examined protein kinases lose activity upon space-creating gatekeeper mutations, particularly small molecule kinases. Second-site suppressor mutations can rescue activity in some cases. Most kinases in the human kinome carry medium- to large-sized gatekeeper residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by citations to previous studies and provide context for the challenges encountered and the potential broader applicability of the valine mutation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The greater heterogeneity of allosteric pockets could enable isozyme-selective IP6K inhibitors without chemical genetic engineering. FMP-201300 binding to a hydrophobic pocket adjacent to the ATP site via \u03b1C helix displacement is plausible and resembles the mechanism of allosteric EGFR inhibitors that are more potent against gatekeeper mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C75 are largely speculative (C71, C72) or based on analogies to other kinases (C73-C75). While the comparisons to EGFR inhibitors are supported by citations and provide a plausible mechanistic framework, direct structural evidence for FMP-201300's binding mode is lacking. The HDX-MS data support the general location of binding but cannot definitively establish the exact binding mode or pocket.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Other carboxylate-containing IP6K inhibitors have proven efficacious in cells and in vivo, and bioisosteres are available to circumvent potential issues with carboxylic acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by citations to previous studies and established medicinal chemistry knowledge. This addresses potential concerns about the carboxylic acid groups in FMP-201300.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "FMP-201300 constitutes a valuable addition to IP6K inhibitors and could provide a springboard for isozyme-selective inhibition, either as an analog-sensitive kinase inhibitor or as an allosteric lead compound for WT kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are reasonable conclusions based on the experimental findings presented in the manuscript. While C77 contains speculative elements about future applications, it is appropriately framed as potential rather than demonstrated utility. The characterization of FMP-201300 as a valuable tool is supported by the comprehensive biochemical and biophysical data.",
+    "result_type": "MAJOR"
+  }
+]

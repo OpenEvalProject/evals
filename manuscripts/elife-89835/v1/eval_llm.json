@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Dbp5 and Los1 localization are independent of each other. GFP-Dbp5 localization at the nuclear pore complex (NPC) is unchanged in los1\u0394 strains, and Los1-GFP localization remains unchanged upon Dbp5 depletion via auxin-induced degradation (AID), even when mRNA export defects confirm sufficient Dbp5 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by microscopy data (Figures 1A, 1B, and Figure 1\u2014figure supplement 1A) showing that neither protein's localization depends on the other. The mRNA export defect upon Dbp5 depletion serves as a positive control confirming the effectiveness of the AID system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Dbp5 functions independently of Los1 in pre-tRNA export. The los1\u0394 dbp5R423A double mutant shows significantly stronger nuclear accumulation of pre-tRNA than single mutants, indicating additive defects. Elevating nuclear Dbp5 levels (dbp5L12A) does not suppress los1\u0394 phenotypes, and double mutants with los1\u0394/msn5\u0394 show minimal growth defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are well-supported by genetic interaction data (spot assays in Figures 1C and Figure 1\u2014figure supplement 1B) and tRNA FISH quantification (Figures 1D-E). The additive phenotype in the double mutant strongly argues for independent pathways. Statistical significance is reported (p<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Dbp5 binds pre-tRNA in vivo independently of Los1 and Msn5. RNA immunoprecipitation shows that los1\u0394 reduces but does not abolish Dbp5-pre-tRNA interaction (~9.5-fold to ~4.5-fold enrichment), while msn5\u0394 has no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by RNA IP data (Figure 2A) showing quantitative enrichment values. The persistence of Dbp5-tRNA interaction in los1\u0394 (albeit reduced) supports the conclusion of Los1-independent binding. However, the ~2-fold reduction suggests Los1 may facilitate but is not required for the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Dbp5 recruitment to tRNA does not require Mex67, unlike mRNA. Using the Mex67 Anchors Away system, Mex67 relocalization does not affect Dbp5-tRNA interaction (~8.8 to ~8.2-fold enrichment) but abolishes Dbp5-mRNA (FBA1) interaction (from ~8-fold to no enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by RNA IP experiments (Figures 2B-C) with appropriate controls showing mRNA export defects (Figure 2D). The differential effect on tRNA versus mRNA binding provides strong evidence for distinct recruitment mechanisms. Statistical comparisons would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The Dbp5 ATPase cycle and Gle1 regulation are required for tRNA export. Overexpression of dominant-negative mutants dbp5R426Q and dbp5R369G (deficient in RNA binding/ATPase activity and with altered Gle1 binding) causes accumulation of intron-containing pre-tRNA, while dbp5E240Q (ATP hydrolysis mutant) does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by northern blot data (Figures 3C-D) showing increased I/P ratios for dbp5R426Q and dbp5R369G but not dbp5E240Q. The characterization of these mutants is based on prior literature (C41-C46). The differential effects distinguish tRNA export from pre-ribosomal subunit export and support the importance of the ATPase cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Dbp5 directly binds tRNA in vitro in a nucleotide-dependent manner similar to ssRNA binding. EMSAs show band shifts with tRNA in the presence of ADP\u2022BeF3 but not ATP, ADP, or no nucleotide. Estimated Kd values are ~150 nM (Phe tRNA) and ~130 nM (mixed tRNA). Competition assays confirm tRNA competes with labeled ssRNA for Dbp5 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by EMSA data (Figures 4A-C) and fluorescence polarization competition assays (Figure 4D). The nucleotide-state dependence parallels established Dbp5-ssRNA binding properties (C49-C50 from literature). The Kd estimates and competition data provide quantitative support for direct binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "tRNA and dsRNA (poly(I:C)) do not stimulate Dbp5 ATPase activity in the absence of Gle1/InsP6, unlike ssRNA. Despite binding to Dbp5, structured RNAs fail to activate ATP hydrolysis over a range of concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by ATPase assay data (Figure 5A) showing no stimulation by tRNA or poly(I:C) compared to robust stimulation by ssRNA (pA). This is a key finding distinguishing tRNA from mRNA in Dbp5 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Gle1/InsP6 synergistically activates Dbp5 ATPase activity in the presence of tRNA or dsRNA to levels comparable to ssRNA. RNase T1 treatment confirms this activation depends on structured RNA, as treated ssRNA loses activity while treated tRNA/poly(I:C) maintain activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are strongly supported by ATPase assay data (Figures 5B-C) with quantitative measurements and RNase T1 controls. The synergistic activation (1.03\u00b10.04 ATP/s with tRNA+Gle1/InsP6 vs ~0 without) and RNase T1 resistance provide compelling evidence for structure-dependent activation. This is a novel mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Gle1 functions independently of Los1 in pre-tRNA export. The los1\u0394 gle1-4 double mutant shows a strong additive defect in pre-tRNA processing (~5-fold increase in I/P ratio relative to los1\u0394 alone) after 4 hr at 37\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by northern blot data (Figures 5D-E) showing additive genetic interactions. This parallels the Dbp5-Los1 genetic relationship and supports a model where Gle1/Dbp5 function together in a Los1-independent pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study demonstrates three main findings: (1) Dbp5 and Gle1 function independently of Los1 in tRNA export; (2) Dbp5 binds tRNA directly in vitro and independently of Los1, Msn5, and Mex67 in vivo; (3) The Dbp5 ATPase cycle is uniquely modulated by Gle1/InsP6 with structured RNA in vitro and supports tRNA export in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 represent the main conclusions of the study, synthesizing results from genetic, biochemical, and cell biological experiments. All three conclusions are well-supported by the data presented in multiple figures and complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C72",
+      "C73",
+      "C80",
+      "C83",
+      "C87",
+      "C90"
+    ],
+    "result": "The authors propose mechanistic models for Dbp5 function in tRNA export, including: (1) Dbp5 may bind tRNA without ATPase activation and remain bound until reaching Gle1 at the NPC; (2) Dbp5 may form an inhibited intermediate with tRNA that is relieved by Gle1/InsP6; (3) Nuclear Dbp5 may recruit other export factors like Mex67 or Crm1 to tRNA complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65, C72-C73, C80, C83, C87, and C90 are explicitly speculative interpretations of the data (marked as SPECULATION in evidence_type). While these models are consistent with the experimental findings, they represent hypotheses for future testing rather than demonstrated mechanisms. The authors appropriately present these as possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction establishes the background on tRNA processing, export, and the roles of known export factors (Los1, Msn5, Crm1, Mex67, Dbp5) based on published literature. This includes tRNA transcription, processing steps, spatial regulation, and the involvement of mRNA export factors in tRNA export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 are background claims supported by extensive citations to published literature. These establish the context for the current study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Previous work identified Dbp5 shuttling mutants (dbp5L12A and dbp5R423A) that alter nucleocytoplasmic dynamics without disrupting mRNA export. The dbp5R423A mutant with limited nuclear access shows tRNA export defects, and Dbp5-tRNA interaction is elevated in the nuclear-accumulated dbp5L12A mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 describe prior work from the same research group (Lari et al., 2019) that motivated the current study. These are appropriately cited and provide important context for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "The discussion contextualizes findings within existing literature on Dbp5 function in mRNA export, DEAD-box protein mechanisms, and potential parallels with other RNA-binding proteins like the EJC. This includes prior reports on Dbp5-mRNA interactions, Mex67 function, and substrate specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C96 (excluding speculative claims already grouped) represent discussion points drawing on published literature to interpret the current findings. These are appropriately cited and provide context for the novel observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors conclude that Gle1/InsP6 activation is required for both mRNA and tRNA export but dispensable for pre-ribosomal subunit export. They suggest the findings may have broader implications for Dbp5 functions and other DEAD-box proteins, and that Dbp5 and Mex67 should be reconsidered as general RNA export factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by the current data and cited literature. Claims C95, C97-C100 represent broader implications and future directions that are reasonable extrapolations from the findings, though C95 and C97 contain speculative elements about other systems.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32"
+    ],
+    "result": "Homology searches identified 23 candidate tRNA modifying enzymes in Mtb predicted to synthesize 16 tRNA modifications. Using a stringent E-value threshold (<1\u00d710\u207b\u00b9\u2070), 31 Mtb genes homologous to known RNA modification enzymes were identified, of which 23 are predicted to be tRNA-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31, and C32 describe the bioinformatics identification of tRNA modifying enzymes through BLAST homology searches with appropriate stringency thresholds. The methodology is sound and the results are clearly stated with supporting data in supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Five Mtb tRNA modifying enzyme genes (trmD, tilS, tadA, tsaC2, miaA) are essential for growth based on Tn-seq and CRISPRi screens, suggesting their modifications are critical for tRNA function. These enzymes likely have similar functional impacts in Mtb as their E. coli homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 integrate published genetic screen data with functional predictions based on E. coli homology. The essentiality data from prior screens (C33) is properly cited, and the functional inference (C34, C36) is reasonable given conservation, though C36 remains speculative without direct experimental validation in Mtb.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "MiaA is apparently essential in Mtb but non-essential in E. coli under nutrient-rich conditions, suggesting the i6A modification may have more profound roles in Mtb translation than in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 identify a notable difference in MiaA essentiality between organisms. C37 is established knowledge, C38 is supported by cited genetic screens, and C39 is a reasonable speculation based on differential essentiality patterns, though mechanistic validation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C42",
+      "C46",
+      "C47",
+      "C49",
+      "C50"
+    ],
+    "result": "Phylogenetic analysis reveals that some Mtb tRNA modifying enzymes are conserved across all domains of life while others show restricted distribution patterns. TrmI and Pus9 show limited bacterial distribution, and tRNA modification patterns appear similar among mycobacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C42, C46, C47, C49, and C50 describe phylogenetic distribution patterns supported by Figure 1. The analysis appropriately identifies both universally conserved and lineage-specific enzymes, though the functional implications (C48, C50) remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C98"
+    ],
+    "result": "tRNA-seq identified nine modifications in Mtb based on reverse transcription-derived error signatures. Comparison with E. coli enabled prediction of common modifications (ms2i6A, m1G, I, k2C), strongly supported by the presence of corresponding modifying enzymes in the Mtb genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53, C54, and C98 describe the core tRNA-seq results. The comparative approach with E. coli is methodologically sound, and predictions are strengthened by concordance between RT signatures and enzyme homology data (Figure 2). Nine of 16 predicted modifications were detected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C151",
+      "C152"
+    ],
+    "result": "IAA treatment prior to tRNA-seq expanded detection of sulfur modifications beyond s4U to include s2C and s2U derivatives. IAA-treated samples showed increased misincorporation and termination signals at positions corresponding to sulfur modifications, including position 34 in tRNA-Glu1, -Gln1, and -Lys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C65-C69, C151-C152 demonstrate that IAA treatment enhances detection of multiple sulfur modifications. The experimental data (Figures 3-4) clearly show increased RT signatures at expected positions. The conclusion about general utility (C152) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Deletion of mnmA (Rv3024c) eliminated s2U modification signatures at position 34 in tRNA-Glu1, -Gln1, and -Lys, validating that Rv3024c encodes an MnmA-like enzyme responsible for uridine sulfuration at these positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C72-C75 provide genetic validation of the MnmA enzyme function. The deletion mutant shows loss of IAA-induced RT signatures at predicted positions (Figure 4B-C), directly confirming enzyme-modification relationships. This is strong experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "CMC and alkali treatments enabled detection of pseudouridine (\u03a8) and dihydrouridine (D) modifications in E. coli tRNAs. Alkali treatment revealed distinctive RT signature patterns: consecutive Ds cause termination at the following position, while singlet Ds cause misincorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 describe validation of chemical treatment methods in E. coli. The data (Figure 5 and supplements) show expected patterns for known modifications. The distinctive D signature patterns (C80-C81) are clearly demonstrated and enable prediction of D positions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Alkali treatment of Mtb tRNAs revealed dihydrouridine (D) at positions 16, 17, 20, and 20A, likely synthesized by DusB homolog Rv0823c, and m7G at position 46, likely synthesized by TrmB homolog Rv0208c.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 apply validated chemical treatment methods to Mtb. The RT signatures (Figure 6 and supplements) match expected patterns from E. coli, and predictions are supported by presence of appropriate enzyme homologs. The inferences are well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CMC treatment increased termination at position 55 across most Mtb tRNA species, indicating pseudouridine modification. Deletion of truB (Rv2793c) reduced these termination signals, validating that Rv2793c encodes a TruB-like enzyme that modifies position 55 uridines to \u03a8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 provide both chemical and genetic validation of \u03a855 modification. CMC-induced signatures (C90-C91) combined with loss of signal in \u0394truB mutant (C93) provide strong converging evidence for TruB function at this position (Figure 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The presence of TruA homolog (Rv3455c) and CMC-induced termination signatures at positions 38-39 suggest these positions are modified to pseudouridine in multiple Mtb tRNA species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 combine enzyme homology with CMC-induced RT signatures to predict \u03a838-39. The data (Figure 6 supplement 3) show appropriate CMC-dependent signals, and the inference is reasonable, though genetic validation is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "The \u0394mnmA mutant shows no growth defect in vitro but is significantly attenuated for growth in macrophages, including ATRA-treated macrophages, indicating that MnmA-dependent s2U modification facilitates Mtb intracellular growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C99-C104, C106 demonstrate context-dependent essentiality of mnmA. The in vitro growth data (C101, Figure 7A) and macrophage infection data (C103-C104, Figure 7B) clearly show differential phenotypes. The conclusion about intracellular growth requirement (C106) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C112"
+    ],
+    "result": "tRNA-seq has limitations and cannot detect all modifications. Seven predicted modifications (t6A, m5U, mo5U, m5C, Cm, Um, Gm) were not detected, and CMC treatment may not identify all \u03a8 positions. Alternative approaches like mass spectrometry are needed for comprehensive modification mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109, C112 appropriately acknowledge methodological limitations. The gap between 16 predicted and 9 detected modifications (C108) is clearly stated, and the recommendation for complementary approaches (C112) is reasonable and scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Several strong RT signatures were detected in Mtb but not E. coli, showing strict misincorporation patterns (C\u2192A or T\u2192G) that are unlikely to derive from typical purine modifications. Further mass spectrometry analysis is needed to determine if these represent Mtb-specific modifications potentially related to pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C118 identify unexplained RT signatures with unusual patterns. The reasoning that these are unlikely to be typical modifications (C115-C116) is sound, but without validation (C117), the nature and significance of these signals remain uncertain. This requires follow-up work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The role of s2U in Mtb appears unusual compared to other organisms. While s2U elimination causes severe growth defects in most organisms, Mtb \u0394mnmA shows no in vitro growth defect but marked growth retardation in macrophages, suggesting Mtb has different requirements for s2U modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 synthesize the unusual phenotype of mnmA deletion. The contrast with other organisms (C123) is properly cited, the experimental data (C101, C103, C124) clearly demonstrate context-dependent essentiality, and the conclusion about differential requirements (C125-C126) is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The intracellular growth requirement for s2U may reflect needs for general translation efficiency and/or expression of specific virulence genes. Differential codon usage between housekeeping and virulence genes, particularly enrichment of s2U-dependent codons (like GAA for Glu) in intracellular growth genes, could explain the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C135 propose mechanistic hypotheses for the mnmA phenotype, including oxidative stress response (C128-C129) and differential codon usage (C130-C135). While these are reasonable speculations based on E. coli data and wobble pairing rules, they lack experimental validation and remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Mtb lacks apparent homologs of enzymes that add additional modifications to s2U at position 5, suggesting Mtb may contain unmodified s2U or s2U derivatives synthesized by novel enzyme types. Further structural analysis is warranted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 identify an interesting gap in the Mtb modification enzyme repertoire. The absence of known s2U-modifying enzyme homologs (C137) is clearly demonstrated by the homology searches, and the speculation about alternative pathways (C138) is reasonable, though requiring validation (C139).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The unexpected presence of TrmR homolog in Mtb suggests mo5U modification exists, but Mtb lacks an apparent homolog for the hydroxylase that produces ho5U (TrmR's substrate). This suggests either TrmR has alternative substrates or Mtb uses an unknown hydroxylation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C145 identify a puzzling enzyme-substrate mismatch. The presence of TrmR (C140) and absence of the upstream hydroxylase (C143) are clearly demonstrated, but the proposed explanations (C144-C145) are speculative. This requires experimental resolution to determine TrmR function and substrate in Mtb.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "IAA treatment, originally developed for s4U detection in RNA turnover studies, enhances RT signatures of additional sulfur modifications (s2C, s2U), indicating general utility for tRNA-seq-based profiling of sulfur modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 describe an important methodological advance. The original application (C150) is properly cited, the expanded utility (C151) is demonstrated experimentally (Figures 3-4), and the conclusion about general applicability (C152) is well-supported by the data.",
+    "result_type": "MAJOR"
+  }
+]

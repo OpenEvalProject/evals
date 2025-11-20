@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C30",
+      "C31",
+      "C72"
+    ],
+    "result": "The authors prove analytically using dynamical system theory (Theorem 2) that an odd number of inhibitory nodes and sufficiently strong connections are necessary conditions for oscillations in single-cycle threshold-linear networks. When connections are weak, the system has a globally stable fixed point regardless of loop sign; when strong enough, systems with odd inhibitory nodes have no stable fixed point and exhibit limit cycle, quasi-periodic, or chaotic behavior.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the mathematical rigor of these claims. Reviewer 3 states 'The work elegantly and effectively combines a solid mathematical proof with careful numerical simulations' and Reviewer 2 notes 'From the point of nonlinear dynamics, the results are solid, and the intuition behind the proofs of the theorems is well explained.' The analytical findings are treated as the core theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C73"
+    ],
+    "result": "The authors prove analytically (Remark 3) that oscillations in single-cycle threshold-linear networks can be quenched by adding positive external input to excitatory nodes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This analytical result is part of the mathematical framework that reviewers explicitly praised. Reviewer 3 notes the work 'combines a solid mathematical proof' and reviewers raise no concerns about this specific theoretical prediction, treating it as part of the accepted mathematical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors provide intuitive explanations for why different small network motifs can or cannot oscillate: two mutually excitatory or inhibitory nodes cannot oscillate (synchronization or winner-take-all), three excitatory nodes synchronize, but EI (one inhibitory) and III (three inhibitory) motifs can oscillate, leading to the generalization that odd numbers of inhibitory connections enable oscillations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these intuitive explanations as valid. Reviewer 2 specifically notes 'the intuition behind the proofs of the theorems is well explained' and Reviewer 3 states 'the authors included detailed sections to provide intuition about the mathematical proof, which will be helpful for readers.' No concerns are raised about these conceptual explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Wilson-Cowan model simulations demonstrate that III networks show sustained oscillations while EII networks show only transient oscillations across wide parameter ranges. The simulations characterize how oscillation frequency depends on synaptic delays (decreasing with longer delays), synaptic weights, external inputs (non-monotonic relationship with mid-range optimal), and self-inhibition. Delays are critical for EI-type networks and are the sole mechanism for oscillations in even-inhibitory networks, though such oscillations remain transient unless delays are precisely tuned.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the simulations but express significant concerns about the treatment of delays. Reviewer 2 states 'the impact of the delays is ignored even though they define the synchronizability of the brain network' and notes that 'previous works on the amplitude reduction due to the time-delays in difference-coupled networks of oscillators is not mentioned.' Reviewer 3 notes 'In its updated form, the authors have solved the most pressing issues of the study, by acknowledging the limitations of their work regarding the effects of delays in oscillations, and addressing some of these effects in new simulations,' suggesting initial concerns were partially addressed but limitations remain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C53",
+      "C54",
+      "C55",
+      "C84",
+      "C85"
+    ],
+    "result": "Network structure analysis of the cortico-basal ganglia (CBG) network identifies six oscillatory cycles with odd numbers of inhibitory connections: Proto-STN, STN-GPi-Th-cortex, STN-Arky-D2-Proto, Proto-Arky-D2, Proto-FSN-D2, and Proto-GPi-Th-Cortex-D2. GPe is involved in five of six cycles (81 of 88 total potential oscillatory cycles across all motif sizes), while STN appears in 66 cycles, suggesting GPe's central role in PD oscillations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers question the biological relevance of this motif-based analysis. Reviewer 2 states 'I find motifs in general to be too simplistic for multiscale and generally large networks as it is the case in the brain' and 'decomposing even such a coarse network in all possible (238 in this case) motifs doesn't seem of much relevance, when I'd assume that the emergence of pathological rhythms is more of an emergent phenomena.' The reviewer also notes 'having such a strong dependence on odd/even number of inhibitory links is far from reality' and 'the cortex is considered as a single node' as significant limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C69",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Wilson-Cowan simulations of BG motifs show that Proto-STN and Proto-D2-Arky subnetworks compete for oscillation generation depending on relative inputs to STN versus D2-SPNs. When D2-SPN inputs are weak, Proto-STN generates oscillations; when D2-SPN inputs are strong, Proto-D2-Arky generates lower-frequency oscillations. Removing STN output still allows Proto-D2-Arky oscillations, demonstrating that STN is not necessary for CBG network oscillations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge these simulation results, they express concerns about biological applicability. Reviewer 2 questions whether 'they are of significant relevance for biological networks, or in particular for the oscillations of BG-thalamus-cortex loop in PD,' noting the approach is 'too theoretical without a real application for the brain dynamics.' However, Reviewer 3 notes the work 'provides insight on experimental findings regarding abnormal synchrony levels in Parkinson's Disease (PD)' and 'provides testable predictions,' suggesting mixed views on the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Spiking neuron model simulations demonstrate differential effects of STN inhibition depending on which loop generates oscillations: when Proto-D2-Arky generates oscillations, STN inhibition reduces Proto firing rates but preserves Proto beta oscillations while diminishing STN oscillations; when STN-Proto generates oscillations, STN inhibition abolishes oscillations in both populations because no cycle remains.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'The findings are to some extent confirmed with spiking neurons, though here results are less clear,' suggesting qualified acceptance. Reviewer 3 states the work uses 'a more complex, spike-based neural network of basal ganglia network' as one of the levels of description, treating these simulations as part of the multi-level validation approach that 'provides additional layers of confidence to the study.' No specific critiques of these spiking network results are raised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors acknowledge that their analytical framework assumes no delays, though delays can significantly affect oscillations. They report that in their BG network simulations with biologically realistic delays (shorter than neuronal time constants), delays only determine oscillation frequency without changing the main results, but they cannot comment on effects when delays exceed nodal time constants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 notes 'In its updated form, the authors have solved the most pressing issues of the study, by acknowledging the limitations of their work regarding the effects of delays in oscillations, and addressing some of these effects in new simulations,' indicating this was a major concern that was partially addressed. However, the reviewer adds 'Although some interesting simulations are still not presented in the revised version, they could constitute the focus of future work,' suggesting the treatment of delays remains incomplete. Reviewer 2 emphasizes 'the impact of the delays is ignored' as a significant weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C90"
+    ],
+    "result": "The authors speculate that in rodents, D2-SPNs may receive stronger cortical input than STN, explaining why oscillations survive STN inhibition in experiments. They recommend that future work should estimate inputs to different nodes in addition to connectivity to pinpoint key nodes underlying PD oscillations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers treat these as reasonable interpretations and recommendations. Reviewer 3 notes the work 'provides insight on experimental findings regarding abnormal synchrony levels in Parkinson's Disease (PD)' and 'provides testable predictions,' suggesting acceptance of these interpretative claims. No specific critiques of these speculative explanations are raised.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose an 'Oscillations Sign Rule' stating that multiplying the sign of a node (excitatory=positive, inhibitory=negative) by the sign of stimulation (excitatory=positive, inhibitory=negative) predicts oscillation fate. Combined with the 'Odd Cycle Rule,' this provides a qualitative framework for predicting whether stimulating a node will generate oscillations, extending the scope of structure-based oscillation prediction beyond previous work.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the theoretical contribution, they question its practical applicability. Reviewer 2 states 'they emphasize the higher importance of the topology, compared to the strength of the links, though it is not straightforward to apply this for brain networks where the weights can be distributed several orders of magnitude' and notes 'The odd/even number rule is too strict.' This suggests the conceptual framework is theoretically sound but may have limited biological applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors argue that oscillatory dynamics and the odd cycle rule appear across many chemical, biological, and social systems (neuronal networks, psychological networks, social networks, gene networks), and since Thomas' original conjecture was for gene regulatory networks, their analytical insights should extend broadly beyond neural networks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these claims about broader applicability. The general editor's summary states the study 'offers valuable insights into the emergence of oscillations in neural networks' without limiting scope to only neural systems. The broad applicability is treated as a strength rather than questioned.",
+    "result_type": "MINOR"
+  }
+]

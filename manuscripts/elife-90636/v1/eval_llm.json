@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C37",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The X-LD algorithm reduces computational complexity from O(nm\u00b2) to O(n\u00b2m), achieving 30-40\u00d7 speedup over PLINK. Specific timing benchmarks are provided: for all 1KG samples (n=2503), X-LD took 3008.29s to estimate 22 autosomal LD components and 231 inter-chromosomal components; for CHB chromosome 2 (241,241 SNPs), it took 66.86s; for CHB chromosome 22 (40,378 SNPs), it took 3.22s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C37, C51-C53 provide consistent computational complexity analysis and empirical timing data across multiple datasets and chromosomes. The theoretical complexity reduction is validated by benchmark comparisons with PLINK (C37) showing 30-40\u00d7 speedup, and specific timing measurements are provided for different data scales (C51-C53). The consistency across different sample sizes and SNP counts supports the claimed algorithmic improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C41",
+      "C44",
+      "C46"
+    ],
+    "result": "Extended LD driven by population structure universally exists across all 1KG cohorts. In homogeneous cohorts like FIN, inter-chromosomal LD is about 10% (ratio 0.091) of intra-chromosomal LD, while in admixed cohort ASW it reaches 56% of intra-chromosomal LD. East Asian and European cohorts with little within-cohort differentiation show relatively low and similar aggregated LD patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C41, C44, C46 present a coherent picture of population structure effects on LD patterns, supported by quantitative data from Table 3 and Figure 3. The reported ratios (10% for FIN, 56% for ASW) are specific and consistent with the broader observation that population structure drives extended LD (C41). The distinction between homogeneous and admixed populations is well-documented with eigenvalue data showing genetic differentiation levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C55",
+      "C60",
+      "C65"
+    ],
+    "result": "High-resolution LD analysis reveals dramatically elevated LD in specific genomic regions: the HLA region on chromosome 6 shows 42-fold higher LD than the rest of chromosome 6 in CEU (11.58-fold in ASW), and the centromere region of chromosome 11 shows 94.05-fold higher LD than the rest of chromosome 11 in YRI (42.73-fold in ASW). Chromosome 11 had the most completely sequenced centromere region before CHM13 release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C55, C60, C65 provide specific quantitative fold-change measurements for HLA and centromere regions across multiple cohorts, supported by Figure 4 visualization. The variation across ethnicities (higher ratios in CEU/YRI, lower in ASW) is consistent and biologically plausible. The explanation linking chromosome 11's elevated LD to more complete centromere sequencing (C60) is supported by citation to CHM13 and provides mechanistic context for the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C71"
+    ],
+    "result": "An inversely proportional linear relationship exists between chromosome length and chromosomal LD strength, with Pearson's correlation averaging over 0.80 across 26 1KG cohorts. This relationship is consistent with genome-wide spread of recombination hotspots. However, chromosome 11 perturbs this linear relationship due to its more completely sequenced centromere region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C71 describe a major finding supported by regression analysis in Figure 5B and Table 5, showing R>0.80 for most cohorts. The linear relationship is theoretically grounded in the LD-decay regression model (Equation 3) and consistent with known recombination biology (C71). The chromosome 11 exception (C10) is well-documented with leave-one-out analysis (C79) showing R improvement of 0.046 when chromosome 11 is removed, providing quantitative support for the perturbation claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C83",
+      "C92"
+    ],
+    "result": "Chromosome 8 of ASW uniquely deviates from the linear relationship between chromosome length and LD more than any other autosome. This deviation persists when additional SNPs are added. One possible explanation involves the complex demographic history of ASW or possible epistatic fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11 and C83 report a robust observation specific to ASW chromosome 8, supported by Figure 6 and supplementary analysis. However, C92 acknowledges this is speculative, proposing demographic history or epistatic fitness as possible explanations without providing direct evidence. The observation is well-documented but the mechanistic explanation remains hypothetical, requiring additional validation in independent African American samples as the authors suggest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75"
+    ],
+    "result": "Conventional LD decay analysis shows the smallest decay score of 0.0421 for MSL and largest of 0.0598 for PEL. African populations show faster LD decay rates consistent with previous findings of relatively shorter LD, while American continent subgroups show extended LD range due to admixed genetic composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69, C74-C75 present LD decay analysis results supported by Figure 5A and Table 5. The computational time (1491.94s for CHB) and specific decay scores are reported. The interpretation linking African populations to faster decay (C74) is supported by citation to Gabriel et al. 2002, and the admixture explanation for American populations (C75) is consistent with the population structure data in Table 3 and Figure 5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C88"
+    ],
+    "result": "Leave-one-chromosome-out analysis shows dropping chromosome 11 lifts correlation R by 0.046 on average. The HLA region shows high LD in European and East Asian cohorts but relatively low LD in YRI, consistent with longer population history. Meiotic recombination tends to be reduced around centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C88 provide supporting evidence for the chromosome 11 and HLA findings. The quantitative impact of chromosome 11 removal (C79) is documented in Figure 6B. The HLA variation across populations (C88) is supported by Figure 4 data and provides evolutionary interpretation. The recombination biology (C80) is cited to Hinch et al. 2019, providing mechanistic context for centromere LD patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C22",
+      "C23"
+    ],
+    "result": "The methodological rationale relies on the connection between genetic relationship matrix (GRM) and LD, with transformation established via Isserlis's theorem. The human genome can be partitioned into small LD blocks by genome-wide recombination hotspots. The connection between LD and population structure is bridged via eigenvalues, with the largest eigenvalue associated with subgroup divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C22-C23 describe the theoretical foundation of the method, all supported by appropriate citations (Chen 2014, Goddard 2009, Isserlis 1918, Hinch et al. 2019, Patterson et al. 2006). These establish the mathematical basis (Isserlis's theorem), biological context (recombination hotspots), and population genetics framework (eigenvalue-structure connection) that underpin the X-LD algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C20",
+      "C29",
+      "C30"
+    ],
+    "result": "The X-LD software is implemented in C++, available at https://github.com/gc5k/gear2, reads PLINK binary format, uses multi-threading for efficiency, and can handle sample sizes up to 10,000 individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C20, C29-C30 describe software implementation details that are straightforward and verifiable. The GitHub availability (C12), capacity testing with 10,000 individuals (C20), C++ implementation with PLINK compatibility (C29), and multi-threading (C30) are all explicitly stated in the Methods section and demonstrated with the CONVERGE dataset (n=10,640).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C25",
+      "C26"
+    ],
+    "result": "LD structure is shaped by mutation, recombination, population demography, epistatic fitness, and data completeness. Large-scale LD patterns are crucial for GWAS, polygenic risk prediction, and imputation panel selection. The 1000 Genomes Project included 2503 individuals across 26 cohorts, with 2,997,635 consensus SNPs retained after quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C25-C26 provide background context and data description, all supported by appropriate citations. The factors shaping LD (C13) and applications (C14) are well-established in the literature with multiple citations. The 1KG dataset description (C25-C26) matches the published 1000 Genomes Project specifications and the quality control procedures are standard.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The method has acknowledged limitations: it remains slow when sample size is large or grid resolution increases, and may not be adequate for UK Biobank-scale data, requiring advanced methods like randomized implementation. With CHM13 release, the linear correlation between chromosome length and LD should improve toward unity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C89 represent honest acknowledgment of limitations and future directions. The computational limitations (C86-C87) are consistent with the O(n\u00b2m) complexity and the authors appropriately suggest that larger datasets like UK Biobank would require algorithmic advances. The CHM13 prediction (C89) is a reasonable speculation based on the chromosome 11 findings showing that incomplete centromere sequencing perturbs the linear relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Under variance component analysis for complex traits, there is often a positive correlation between chromosome length (as surrogated by SNP number) and the proportion of heritability explained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a cited observation from Chen et al. 2014 that provides relevant context for interpreting the chromosome length-LD relationship. This is appropriately presented as established knowledge from prior work rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "PQ treatment induces dose-dependent lethality in adult Drosophila without causing gut leakage at 15 mM concentration after 18 hours. The 15 mM concentration was selected for further experiments based on prior literature and showed 27.78\u00b15.47% mortality without significant gut damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from dose-response survival assays (C1) and gut integrity assays (C3-C4) that establish the experimental model. The selection of 15 mM PQ is justified by both prior work (C2) and empirical data showing substantial but sub-lethal effects. Statistical analysis and appropriate controls support these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "PQ treatment induces metabolic changes characterized by upregulation of carbohydrate metabolism genes (InR, Pepck, Thor) suggesting foxo activation and reduced insulin signaling, accompanied by depletion of stored glycogen and triglycerides without changes in free glucose levels. Histological analysis confirmed fat body shrinkage and lipid depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 provide complementary molecular (qPCR), biochemical (metabolite assays), and histological evidence for metabolic dysregulation. The interpretation of foxo activation (C6) is reasonable given the gene expression pattern, though it remains inferential. The lack of change in free glucose (C8) despite glycogen depletion (C9) suggests active gluconeogenesis, which is consistent with the observed gene expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Hemocytes are essential for survival during oxidative stress and control energy mobilization. Hemocyte-deficient flies show 43.33\u00b16.30% mortality (vs 13.08\u00b12.63% in controls) on PQ, with impaired triglyceride mobilization and decreased free glucose levels, while hemocyte numbers remain unchanged in wild-type flies during PQ treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 establish a critical role for hemocytes through genetic ablation experiments. The hemocyte-deficient model shows clear metabolic defects (C14-C15) and increased mortality (C13), while controls maintain hemocyte numbers (C12). The conclusions (C17-C18) are well-supported by the experimental evidence, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Single-nucleus RNA-sequencing of 11,839 nuclei from control and PQ-treated flies identified 20 distinct cell clusters including three hemocyte clusters. Re-clustering of 1,354 hemocyte nuclei revealed 8 distinct clusters: 7 plasmatocyte clusters and 1 crystal cell cluster (C8) expressing markers lz, peb, PPO1, and PPO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 describe the technical execution and initial clustering results of the snRNA-seq experiment. The methodology is standard and appropriate (Seurat package, C21), cell type annotations are based on established markers (C23, C25), and quality control metrics are provided (C19-C20). The identification of cell types is consistent with known Drosophila hemocyte biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Hemocyte clusters show treatment-specific distributions: clusters C1 and C7 are enriched in control flies and express homeostatic markers (Hml, Pxn, Sema2a) and metabolic genes, while clusters C2 and C3 are predominantly found in PQ-treated flies and express genes involved in metabolic adaptation including insulin signaling, autophagy (Atg17), and lipolysis (bmm, LpR1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 characterize the differential distribution and gene expression patterns of plasmatocyte clusters. The treatment-specific enrichment (C28-C30) is clearly demonstrated, and the gene expression profiles (C31-C36) are consistent with metabolic stress responses. The interpretation of metabolic adaptation (C37) is reasonable given the gene expression patterns, though it represents an inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Plasmatocyte cluster C6 represents an immune-activated stress-responsive state characterized by profound gene expression changes including Jak/STAT activation (Fas3, TotM), oxidative stress response (Hsp23, Hsp26, Hsp27), and cytoskeletal rearrangement genes (Myo31DF, spir). This cluster shows the most extensive transcriptional changes and is predominantly found in PQ-treated flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C50 identify and characterize cluster C6 as a key stress-responsive population. The gene expression evidence (C42-C44, C48) clearly supports immune activation and stress response. The conclusion that C6 represents a direct oxidative stress response (C49-C50) is well-supported by the transcriptomic data, though functional validation would strengthen this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "S2 cells treated with PQ in vitro show dose-dependent increases in ROS (6hr: 15mM=6735\u00b11096 MFI, 30mM=7435\u00b1237 MFI) and DNA damage (15mM: 147.8\u00b15.5 olive tail moment), with gene expression changes that mimic cluster C6 plasmatocytes in vivo, supporting that C6 represents cells directly responding to oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 use an in vitro model to validate the in vivo findings. The dose-dependent ROS induction (C51) and DNA damage (C52) are well-documented with appropriate assays. The comparison to cluster C6 (C53, C56) is reasonable, though S2 cells may not perfectly recapitulate all aspects of primary hemocytes. The conclusion is appropriately stated as supporting a hypothesis rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Cluster C6 uniquely expresses the pro-inflammatory cytokine upd3 and shows enriched expression of Jak/STAT target genes (Socs36E, TotA, TotM, Fas3) and Gadd45, which links DNA damage to JNK signaling. This cluster represents activated plasmatocytes responding to oxidative stress through JNK and Jak/STAT pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 identify key signaling molecules in cluster C6. The unique expression of upd3 (C58) is particularly significant and well-documented. The enrichment of Gadd45 (C59) provides a mechanistic link between DNA damage and immune activation. The conclusion (C62) is well-supported, though the functional role of upd3 (C63) remains speculative at this point in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Fat body cells show distinct responses to oxidative stress with 8 clusters identified. Control-enriched clusters (C1, C6, C8) express triglyceride storage genes and AMPs, while PQ-enriched clusters (C2-C5) show oxidative stress response, Jak/STAT activation (upd3, Fas3, TotA), JNK activation (puc, kay), and reduced triglyceride storage genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 characterize fat body heterogeneity during oxidative stress. The clustering analysis (C64-C67) is well-executed, and the gene expression patterns (C68-C71) are consistent with metabolic stress and immune activation. The interpretation (C72) appropriately notes that activation could be cell-autonomous or mediated by hemocyte-derived cytokines, acknowledging uncertainty about mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Hemocyte-specific knockdown of DNA damage response genes (mei-41, tefu, nbs) significantly increases susceptibility to PQ (40.7-48.2% mortality vs 10.7% in controls) without affecting normal lifespan or starvation resistance, and without altering hemocyte numbers. Temperature-inducible adult-specific knockdown confirms these findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 establish that DDR signaling in hemocytes is specifically required for oxidative stress resistance. The genetic approach is rigorous, with multiple DDR genes tested (C73), appropriate controls for general fitness (C74-C75), and temporal control experiments (C77). The maintenance of hemocyte numbers (C78-C79) rules out cell loss as the cause of increased susceptibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "DDR-deficient hemocytes show only slight increases in DNA damage but exhibit elevated JNK signaling (puc induction) and upd3 expression, with dysregulated metabolic gene expression (Thor, InR) and efficient triglyceride mobilization. This indicates DDR signaling modulates immune activation rather than preventing DNA damage, acting as a rate-limiting step for stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C90 provide mechanistic insight into DDR function. The modest DNA damage (C80) combined with altered signaling (C82, C85) supports a regulatory rather than protective role for DDR (C81). The gene expression changes (C82-C86) and metabolic measurements (C87) are well-documented. The conclusions (C88-C90) are appropriately stated as inferences from the data, representing a reasonable interpretation of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Hemocyte-specific upd3 overexpression drastically decreases survival on PQ, while upd3 knockdown has no effect. upd3-null mutants show reduced susceptibility to oxidative stress, but hemocyte-specific upd3 expression in the null background restores susceptibility. Loss of upd3 rescues the increased susceptibility of DDR-deficient flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 establish upd3 as a critical mediator of oxidative stress susceptibility through elegant genetic experiments. The overexpression (C91), null mutant (C94), and rescue experiments (C95-C96) provide strong evidence for upd3's role. The genetic epistasis experiment (C96-C97) demonstrates that upd3 acts downstream of DDR signaling, supporting the proposed pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Constitutive JNK activation in hemocytes (hep[act]) increases susceptibility to PQ and induces upd3 expression, while dominant-negative JNK (bsk-DN) has no effect on survival or upd3 levels. This supports JNK-mediated induction of upd3 as a key pathway in oxidative stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 establish JNK as an upstream regulator of upd3. The genetic manipulation experiments are appropriate, with both gain-of-function (C98, C100) and loss-of-function (C99) approaches. The lack of effect with bsk-DN suggests either redundancy or that basal JNK activity is not rate-limiting. The conclusion (C101) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study identifies a defined immune-responsive plasmatocyte subset during oxidative stress, with DNA damage signaling in hemocytes regulating JNK activation and upd3 expression. Loss of DNA damage signaling or overactivation of JNK/upd3 increases susceptibility to oxidative stress, establishing a regulatory pathway controlling systemic stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 synthesize the major findings into a coherent model. The identification of distinct hemocyte states (C102) is well-supported by the snRNA-seq data. The regulatory pathway (C103) is supported by multiple lines of genetic and molecular evidence. The conclusion about susceptibility (C104) integrates results from multiple experimental approaches. This represents a well-supported summary of the manuscript's main conclusions.",
+    "result_type": "MAJOR"
+  }
+]

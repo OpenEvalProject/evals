@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Peptidomimetic screening identified internal \u03b2-signals in OMPs. Six peptides derived from OmpC inhibited EspP assembly, including peptide 23 (the canonical \u03b2-signal) and peptides from internal strands. Sequence analysis of inhibitory peptides revealed a conserved motif \u03a6xxxxx[\u03a9/\u03a6]x[\u03a9/\u03a6], defining an internal signal distinct from but related to the C-terminal \u03b2-signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 provide direct experimental evidence from peptidomimetic screening (Figure 1A) and mutational analysis (Figure 1C) that identified inhibitory peptides and defined the internal signal motif. The experimental design is sound, with appropriate controls (peptide 24, DMSO), and the inference of the motif from sequence comparison is logical and data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Mutations to conserved residues in the -5 strand of OmpC, OmpF, and LamB reduce assembly efficiency. Specifically, mutations at position 0 (\u03a6) and position 6 ([\u03a9/\u03a6]) of the putative internal signal in the -5 strand significantly impaired OMP assembly in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by BN-PAGE analysis (Figure 2A, Figure 2\u2014figure supplement 4) showing reduced assembly efficiency for specific mutants. The sequence conservation analysis (Figure 2B) provides additional support. The experimental approach is rigorous with multiple OMPs tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In vivo analysis demonstrates that either the internal signal or the C-terminal \u03b2-signal must be present for efficient OmpC assembly. Double mutants affecting both signals showed marked reductions in steady-state levels and oligomeric forms, while single mutants of the C-terminal \u03b2-signal alone showed little change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by in vivo experiments using FLAG-tagged OmpC variants (Figure 3C, 3D). The experimental design appropriately distinguishes plasmid-encoded from endogenous OmpC. The conclusion that either signal is sufficient is logically drawn from the differential effects of single versus double mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Position 6 ([\u03a9/\u03a6]) mutations in both -5 and -1 strands impair spontaneous folding of OmpC in vitro, while position 0 (\u03a6) mutations maintain folding ability similar to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by in vitro folding assays (Figure 4\u2014figure supplement 1A) measuring trimer formation in detergent micelles. The differential effects of position 0 versus position 6 mutations are clearly demonstrated, though the manuscript notes that position 6 residues contribute to the aromatic girdle, suggesting dual roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "OmpC(Y286A) forms a stable assembly intermediate with the BAM complex that is not yet inserted into the membrane. This intermediate can be extracted with urea and shows gel-shift with anti-BamC antibodies, indicating prolonged engagement with the BAM complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by multiple complementary experiments: BN-PAGE showing accumulation of high-molecular-weight species (Figure 4A), antibody gel-shift assay (Figure 4B), and urea extraction (Figure 4C). The convergence of these independent methods strongly supports the conclusion of a stalled assembly intermediate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "BamA and BamD independently bind OmpC and recognize both the \u03b2-signal and internal signal. Peptide competition experiments show that peptide 23 inhibits BamA binding, peptide 18 inhibits BamD binding, and peptide 21 inhibits both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by pull-down assays (Figure 5\u2014figure supplement 1) and peptide competition experiments (Figure 5A). The experimental design appropriately tests individual BAM subunits and uses peptide competition to map signal recognition. The conclusion that both BamA and BamD recognize both signals is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Neutron reflectometry reveals that OmpC(Y286A) binds stably to the POTRA3-5 region of BamA and BamD, extending this layer from 29.7\u00b10.8 \u00c5 to 45.5\u00b11.6 \u00c5. Wild-type OmpC shows no detectable binding, consistent with rapid assembly kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by neutron reflectometry data (Figure 5B-D) with appropriate controls and sequential measurements. The quantitative measurements of layer thickness changes provide strong evidence. The failure to detect WT-OmpC binding is appropriately interpreted as rapid kinetics rather than absence of interaction, consistent with BN-PAGE data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Photo-cross-linking with BPA-substituted BamD identifies distinct binding regions: N-terminal residues (60, 65) interact with the internal signal, while C-terminal residues (196, 200, 204) interact with the \u03b2-signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by systematic photo-cross-linking experiments (Figure 6\u2014figure supplement 1) using 40 BamD variants and OmpC mutants. The mapping of distinct binding regions is well-supported by the differential cross-linking patterns with internal signal versus \u03b2-signal mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C89"
+    ],
+    "result": "Disulfide cross-linking confirms that OmpC residues near the internal signal (278, 284, 296, 302) form bonds with N-terminal BamD (49, 65), while residues near the \u03b2-signal (333, 357, 363) form bonds with C-terminal BamD (204).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, and C89 are supported by systematic disulfide cross-linking experiments (Figure 6A, 6B) with appropriate controls (reducing conditions). The results are consistent with the photo-cross-linking data (C66-C67), providing independent validation of the binding site mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In vivo photo-cross-linking shows that BamD positions 49, 53, 65, and 196 (facing the interior of the BAM complex funnel) cross-link to OmpC, while position 114 (which binds BamC) does not, consistent with structural constraints in the intact complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by in vivo photo-cross-linking (Figure 6C) and structural interpretation based on known BAM complex structures. The differential results between in vitro (position 114 cross-links) and in vivo (position 114 does not cross-link) are appropriately explained by BamC occupancy in the intact complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C91"
+    ],
+    "result": "BamD promotes formation of antiparallel \u03b2-strands in OmpC. Incubation of cysteine-variant OmpC with BamD results in intramolecular disulfide bond formation between paired strands (-1 to -5), indicating BamD directly stimulates \u03b2-strand arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C91 are supported by disulfide bond formation assays (Figure 7B) showing faster migration of cysteine-variant OmpC on non-reducing SDS-PAGE only when incubated with BamD. The experimental design with reducing/non-reducing conditions appropriately validates disulfide bond formation. This provides direct evidence for BamD's chaperone function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "BamD mutants Y62A and R197A support bacterial viability but show reduced steady-state levels of porins and decreased OmpF trimer assembly, indicating deleterious effects on \u03b2-barrel protein assembly in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 are supported by growth assays (Figure 8A), immunoblotting (Figure 8B), and BN-PAGE (Figure 8C) using a BamD depletion strain. The experimental design appropriately separates viability from assembly efficiency. The conclusion that these mutations impair but do not abolish function is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The internal signal-BamD system is not essential for viability but is necessary for outer membrane integrity. BamD(Y62A) and OmpC internal signal mutants show increased vancomycin sensitivity, and OmpC(FY) expression reduces levels of other porins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C82-C85 are supported by vancomycin sensitivity assays (Figure 8D-G) and BN-PAGE analysis (Figure 8I). The experimental design appropriately uses vancomycin sensitivity as a measure of membrane integrity. The dominant-negative effect of OmpC(FY) on OmpF levels suggests competition for BAM complex or assembly defects affecting overall membrane homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "BamD recognizes both the internal signal and \u03b2-signal, arranging \u03b2-strands for rapid OMP assembly. This dual recognition system promotes assembly efficiency necessary to support the ~500 molecules of porins assembled per minute per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C92-C94 represent the integrated conclusion from multiple experimental approaches (cross-linking, assembly assays, functional studies). The mechanistic model is well-supported by the collective data, though the precise molecular mechanism of \u03b2-strand arrangement remains somewhat speculative (C97). The quantitative assembly rate (C86, C94) is cited from previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Proposed mechanism: BamD captures the -1 strand and draws the -5 strand by conformational change, catalyzing hydrogen bond formation to create \u03b2-hairpins in neighboring strands, priming the substrate for BamA-mediated insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 is explicitly stated as a proposal based on experimental data. While the disulfide cross-linking data (C74-C77) support that BamD promotes \u03b2-strand pairing, the specific mechanism of conformational change and the sequential capture of -1 then -5 strands is speculative. Additional structural or kinetic studies would be needed to validate this detailed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "After OMP assembly, internal signal residues face the lipid phase of the membrane. Position 6 residues (e.g., Y286 in OmpC) serve dual roles: recognition by BAM complex and structural contribution to the aromatic girdle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by structural analysis of assembled OMPs and the in vitro folding data (C48) showing that position 6 mutations affect both BAM-mediated assembly and spontaneous folding. The dual role interpretation is logical and consistent with the data, though the relative contributions of each role are not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C95"
+    ],
+    "result": "Background knowledge establishing the OMP biogenesis pathway, BAM complex structure and function, \u03b2-signal recognition, and previous observations of internal \u03b2-signal-like motifs in autotransporters and BamA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C33 represent established knowledge appropriately cited from previous literature. Claims C86, C88, C90, and C95 cite specific prior findings relevant to the current work. These provide appropriate context for the novel findings. Claim C31 is noted as a suggestion from prior work, appropriately distinguished from established fact.",
+    "result_type": "MINOR"
+  }
+]

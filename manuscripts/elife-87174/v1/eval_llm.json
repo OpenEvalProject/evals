@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors developed a fluorescence-based assay using freestanding palladium zero-mode waveguides (ZMWs) functionalized with Nsp1 to measure single-molecule translocations through individual nanopores. The method enables optical detection without requiring a bias voltage and is independent of pore diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19-C22 describe the core methodology, which is well-supported by detailed fabrication protocols (C31-C36), surface functionalization procedures (C37-C38, C40), experimental setup (C41-C42, C44-C45), and FDTD simulations (Figure 2). The technical implementation is thoroughly documented with appropriate controls and validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Nsp1-coated pores below 55\u00b15 nm show significant selectivity (3-9 times higher than open pores) that gradually decreases with increasing pore diameter. For small pores, Kap95 translocates efficiently while BSA is hindered ~10-fold; for large pores (>100 nm), BSA hindrance is only ~1.4-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C25, C46-C47, C50-C52, C53, C55, C59-C60, C64-C67 collectively demonstrate the diameter-dependent selectivity through systematic measurements across 46 pores (35-160 nm diameter). The data show consistent trends with appropriate statistical analysis, fitting to quadratic models (C61-C62), and comparison to prior work (C104-C108). The gradual rather than threshold-like behavior is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Coarse-grained molecular dynamics simulations with void analysis reveal that BSA leakage occurs through transient openings in the Nsp1 mesh for small pores (<60 nm), while a persistent central channel forms in larger pores (>80 nm). The simulations reproduce experimental selectivity trends at a grafting density of 1 Nsp1 per 300 nm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26-C27, C68-C82, C110-C113 describe comprehensive CGMD simulations using the 1BPA-1.1 model with void analysis. The simulations quantitatively match experimental data (C75-C77) with a single fitting parameter (grafting density). The mechanistic insights about transient vs. persistent channels (C78-C82, C110-C112) are well-supported by density maps and void distributions (Figure 5). The dynamic transition interpretation (C113) is consistent with the gradual experimental selectivity decrease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C118",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Increasing Kap95 concentration to 1 \u03bcM moderately increases selectivity for small pores (<50 nm) but paradoxically increases BSA translocation rates for large pores (>60 nm). This is attributed to Nsp1 layer compaction, with an estimated ~2-fold reduction in layer thickness at high Kap95 concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28-C30, C86-C94, C118, C120-C122 describe Kap95 concentration effects supported by systematic measurements at 0, 100, and 1000 nM (Figure 6). The counterintuitive increase in BSA translocation for large pores (C29, C120) is explained by a simple geometric model showing Nsp1 layer compaction (C93-C94, C121-C122). However, the high pore-to-pore variability and the fact that 1 \u03bcM Kap95 is below physiological concentrations (C125) introduce some uncertainty in the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The optical approach offers superior signal-to-noise ratio, specificity, and throughput compared to conductance-based methods, with no pore size limitations. However, absolute translocation rates are ~6-fold lower than predicted by Fick's law, likely due to hydrodynamic pressure, protein-pore interactions, and detection algorithm limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 describe methodological advantages that are well-supported by the experimental design and data quality. Claims C99-C103 provide honest assessment of quantitative discrepancies with theoretical predictions and prior work, with plausible explanations. The comparison with Jovanovic-Talisman et al. (C102-C103) shows order-of-magnitude improvement in detection efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Fluorescence correlation spectroscopy shows no reduced diffusivity of Kap95 on the pore exit side, but fluorescence lifetime measurements indicate Kap95 diffuses closer to pore walls than BSA due to Nsp1 interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 describe complementary FCS and lifetime measurements (Appendix 7) that provide mechanistic insights into Kap95-Nsp1 interactions. The shortened lifetime for Kap95 but not BSA (C57) is correctly interpreted as proximity to the metal surface (C58), consistent with the FDTD simulations showing metal-induced fluorescence quenching.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C48",
+      "C54"
+    ],
+    "result": "Experimental controls and corrections were implemented, including accounting for 5% reduction in event rates due to hydrodynamic backflow, testing nine concentration combinations per pore, and reducing labeled protein fraction 5-fold for pores >80 nm to avoid detection nonlinearity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C48, C54 describe important experimental controls and corrections that are well-documented in the methods and appendices. These demonstrate careful attention to potential artifacts and systematic biases in the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The biomimetic ZMW pores differ from native NPCs in that the 90-nm channel is ~3\u00d7 longer than native NPCs, and FG-Nups are grafted to the entire metal surface rather than limited to pore walls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 provide honest acknowledgment of limitations in the biomimetic system compared to native NPCs. These differences are clearly stated and appropriately cited (C97 cites Kim et al., 2018 for native NPC dimensions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The experimentally observed loss of selectivity in the 40-60 nm diameter range coincides with reported NPC dilation from 40 to 60 nm under stress conditions, suggesting NPC dilation might tune permeability to increase selectivity at the cost of lower transport rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 is supported by experimental data, and C115-C116 correctly cite recent findings on NPC dilation. However, C117 is explicitly speculative ('suggests that...might be'), and the connection between the in vitro biomimetic system and cellular NPC regulation remains uncertain. The speculation is reasonable but requires further validation in cellular contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on NPC structure, function, and prior biomimetic approaches is accurately cited from the literature, establishing context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C18 provide literature background with appropriate citations. These establish the biological context and prior methodological approaches, correctly identifying limitations of previous optical (C16-C17) and conductance-based (C18) methods that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Comparison with prior work shows the observed Kap95-induced effects differ from flat surface measurements, potentially due to pore geometry better resembling native NPCs. However, the 1 \u03bcM Kap95 concentration used is below physiological levels (~4 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119, C123 provide appropriate comparisons with prior work (Jovanovic-Talisman et al., 2009; Wagner et al., 2015). Claim C124 offers reasonable speculation about geometry effects. Claim C125 honestly acknowledges the limitation that experimental Kap95 concentrations are sub-physiological, appropriately tempering conclusions about physiological relevance.",
+    "result_type": "MINOR"
+  }
+]

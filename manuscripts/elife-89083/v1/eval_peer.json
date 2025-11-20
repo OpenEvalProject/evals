@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study identified 402 differentially methylated regions (DMRs) in cancer patients compared to healthy controls, with 84.3% hypermethylated and 15.7% hypomethylated. These DMRs were enriched in 36 pathways known to regulate tumorigenesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers acknowledge the study's framework for assessing methylation and other genomic features without raising concerns about the DMR identification or pathway analysis. The reviewers describe the model as 'solid' and note it 'successfully achieved robust prediction power.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Genome-wide methylation analysis revealed global hypomethylation in cancer samples, with 1715 bins (62.7%) significantly hypomethylated across 22 autosomes and only 10 bins hypermethylated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the genome-wide methylation findings as part of the framework that 'assesses methylation, CNA, and other genomic features.' No concerns are raised about the global hypomethylation results or their statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Copy number analysis identified 729 bins with CNA gains and 976 bins with CNA losses across the cancer genome. Chromosome 8 showed the highest proportion of CNA gains while chromosome 22 had the highest CNA losses. Hypomethylated bins showed significantly increased CNA levels, and bins with CNA gains showed decreased methylation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly mention CNA as part of the assessed framework and note the study 'established a solid model' without questioning the CNA findings or the relationship between methylation and copy number changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Fragment length analysis showed that bisulfite sequencing preserves cfDNA fragmentation patterns (R\u00b2>0.9 correlation with non-bisulfite sequencing). Cancer patients showed more fragmented cfDNA with higher frequency of short fragments (\u2264150 bp) and a higher short-to-long fragment ratio (0.29 vs 0.27).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the study's framework includes fragmentomics analysis and note the model achieved 'robust prediction power.' No concerns are raised about the fragment length analysis methodology or findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "End motif analysis detected 78 motifs with increased frequencies and 106 with decreased frequencies in cancer samples. Motifs beginning with cytosine showed the highest number of significant changes, with five specific motifs significantly increased and five significantly decreased in cancer patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the end motif analysis as part of the comprehensive genomic features assessed. The study is described as providing 'insights into the early detection of malignancies' without questioning the end motif findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The stacking ensemble model combining eight features (TM, GW, CNA, FLEN, LONG, TOTAL, RATIO, EM) achieved the best performance with AUC of 0.93 in discovery and 0.95 in validation cohorts, outperforming single-feature models. The model achieved 73.8% sensitivity at 95.1% specificity in discovery and 72.4% sensitivity at 97.0% specificity in validation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly acknowledge the model's high performance. One reviewer states it 'achieved high levels of AUC in discriminating malignancies from healthy controls,' and another notes the study 'successfully achieved robust prediction power.' The large sample size and external validation cohort are praised for raising 'credibility and universality.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cancer-type specific performance showed liver cancer had the highest detection sensitivity (89.6% discovery, 91.1% validation), followed by CRC, lung, and gastric cancer, while breast cancer had the lowest detection rate (58.3% discovery, 49.3% validation).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the model's 'ability to distinguish tumor of origin' without raising concerns about the varying performance across cancer types. The consistent performance between discovery and validation cohorts is implicitly accepted through praise of the validation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Gender analysis showed no significant difference in predicting healthy status between males and females, but higher accuracy in males for cancer prediction. When breast cancer samples were removed, no gender difference was observed, suggesting the bias was due to the high proportion of female breast cancer patients with low detection rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about gender-related performance differences. The study's systematic assessment and large sample size are praised, implicitly accepting the gender analysis findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Age analysis revealed no significant correlation between age differences and model accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the age analysis findings. The study's comprehensive assessment approach is accepted without concerns about potential age-related confounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The model performed better for cancers with higher tumor burden, with patients having tumor diameter \u22653.5 cm more likely to be detected than those with diameter <3.5 cm.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the tumor burden findings without raising concerns. The relationship between tumor size and detection is consistent with expectations and not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C61"
+    ],
+    "result": "Stage-specific performance showed the model achieved AUC of 0.90 for stage I, 0.92 for stage II, and 0.95 for stage IIIA in discovery cohort, with similar patterns in validation (0.94, 0.93, and 0.98 respectively). Sensitivities were 73.9% for stage I, 62.3% for stage II, and 88.3% for stage IIIA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge the early detection capability, with one noting 'the sensitivities for detecting early-stage cancers' as a key finding. Another reviewer emphasizes the study's focus on 'early detection of malignancies' without raising concerns about stage-specific performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "For tumor-of-origin prediction, GCNN was selected for superior performance. Breast cancer had the highest number of important features (497), while lung cancer had the lowest (126). GWM and CNA were the most important features for differentiating cancer types, while EM had the lowest contribution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the 'ability to distinguish tumor of origin' without questioning the GCNN approach or feature importance findings. The systematic assessment is praised as demonstrating 'robust prediction power.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62"
+    ],
+    "result": "The GCNN-based model achieved median TOO accuracy of 0.73 in discovery and 0.70 in validation cohorts. Breast and liver cancers showed highest accuracy (0.87 and 0.82 in discovery; 0.78 and 0.76 in validation), while gastric cancer showed lowest accuracy (0.54 in discovery, 0.55 in validation). CRC and gastric cancer had high misprediction rates between each other.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state the assay 'achieved an accuracy of 0.7' for tumor-of-origin without expressing concerns. The ability to 'pinpoint tissues of origin' is acknowledged as a key achievement of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C63",
+      "C71"
+    ],
+    "result": "SPOT-MAS successfully detected five cancer types with 72.4% sensitivity at 97.0% specificity using significantly lower sequencing depth (~0.55\u00d7) compared to other ctDNA-based assays while achieving comparable performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge the study's success in cancer detection with one noting it 'will demonstrate its practical impacts in the clinic.' Another reviewer emphasizes the 'large sample size with an external validation cohort' supporting the model's credibility. The low sequencing depth advantage is implicitly accepted through praise of the overall approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study recruited 738 treatment-na\u00efve cancer patients (499 discovery, 239 validation) with five cancer types and 1550 healthy controls (1076 discovery, 474 validation). Cancer patients were older than controls in both cohorts, with similar gender distributions. Most patients had non-metastatic disease (stages I-IIIA).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise the 'large sample size with an external validation cohort, which raises the credibility and universality of this model.' The cohort composition and characteristics are accepted without concerns about potential biases or limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "No significant differences in AUC values were observed between discovery and validation cohorts (p=0.1277, DeLong's test).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praise the validation approach and note the model's performance remained consistent, implicitly accepting the statistical comparison between cohorts without raising concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The GCNN model's TOO accuracy of 0.70 was comparable to CancerLocator but lower than Liu et al.'s methylation atlas-based method (93% accuracy), which requires much higher sequencing depth (30\u00d7) and may not be cost-effective for population screening.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the study demonstrates 'comparable performance to other ctDNA-based assays' without questioning the comparisons. The practical implications for clinical use are emphasized by reviewers noting the study 'will demonstrate its practical impacts in the clinic.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Preliminary data from the K-DETEK prospective study demonstrated SPOT-MAS's ability to detect cancer patients who exhibited no symptoms at the time of testing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer notes 'prospective studies are needed to further confirm its predictive capacity,' suggesting the preliminary K-DETEK data is acknowledged but requires further validation. The reviewers do not explicitly evaluate this specific claim but indicate the need for additional prospective evidence.",
+    "result_type": "MINOR"
+  }
+]

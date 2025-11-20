@@ -1,0 +1,171 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors claim improved quality control by removing ~20,000 additional cells compared to Mathys et al., primarily based on stricter mitochondrial read thresholds (10% cutoff vs cluster-based approach). They argue that Mathys et al. retained cells with >75% mitochondrial reads, indicative of cell death and low quality.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewer challenges this claim, stating 'the authors claim they improved the quality control of the dataset but offer no objective metric to assess this putative improvement.' The reviewer notes that Mathys et al.'s cluster-based approach 'also seems reasonable, given that some cells might have a higher mitochondrial read content for reasons other than being low quality,' and that 'simply stating that Mathys' approach was ineffective...is a self-fulfilling prophecy given the difference in approach, and itself not proof that the original QC procedure was inferior.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors claim that dataset integration using LIGER has become common practice and is recommended to remove confounding sources of variation, citing this as an improvement over the original analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewer explicitly challenges this claim: 'While it is true that many authors now choose to perform an integration step...this is by no means uncontroversial as there is a risk of over-integration and loss of true biological differences.' The reviewer states this is 'another example of the authors claiming superiority in analysis without showing proof' and notes they 'had raised this point previously, but the authors chose not to address it.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C24",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors demonstrate that pseudoreplication approaches artificially inflate confidence and produce false positives through permutation analysis (Fig 1f), showing that randomly permuted patient identifiers still yield high DEG counts with cell-count correlation, while pseudobulk analysis does not show this pattern (Fig 1g).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewer acknowledges the permutation analysis shows pseudoreplication is 'prone to false positive (FP) discoveries for high cell numbers (Fig. 1f)' but critically notes 'this does not prove that all of Mathys' DEGs were wrong.' The reviewer also points out that 'the authors even show themselves that their approach is liable to FPs if applied with very low cell numbers in the range of those for microglia and OPCs (Fig. 1g),' undermining the claim that pseudobulk is universally superior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The reanalysis using pseudobulk DE found 26 DEGs (549 times fewer than the original 14,274 at FDR 0.05), with 15-fold larger effect sizes but 8000-fold higher FDR scores compared to Mathys et al.'s results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewer fundamentally challenges the interpretation: 'The authors interpret the fact that they found fewer DEGs with their method than the original paper as a good thing by making the assumption that all genes that were not found were false positives. However, they do not prove this, and it is likely that at least some genes were not found due to a lack of statistical power.' The reviewer notes 'the original paper also had performed independent validations of some genes that were not found here' and that this weakness 'was not explicitly addressed and still pertains to the revised manuscript.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors show near-perfect positive correlations between DEG counts and cell counts for Mathys et al.'s pseudoreplication (Fig 1c) and combinatorial approaches (Fig 1d), but not for their pseudobulk reanalysis (Fig 1e), suggesting the original approach was biased by cell numbers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewer directly challenges this analysis: 'The correlation analysis between cell counts and number of DEGs found is weak. In all three cases (Fig. 1c, d, e) the correlation is largely driven by a single outlier data point.' This undermines the authors' claim that the correlation patterns demonstrate methodological superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors found 96% of DEGs in microglia (vs 3% in Mathys et al.), arguing this 'makes more sense' because microglia is the primary cell type through which genetic risk for AD acts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The reviewer is highly critical: 'I am concerned that almost all DEGs found by the authors are in the rare cell types, foremost the rare microglia.' The reviewer notes the supporting literature is unconvincing, with 'one is their own, published in a journal with suspected lack of appropriate quality assurance measures.' The reviewer also observes that 'Supp. Fig. 3b shows three examples of DEGs, of which one (EGR1) looks like the DE call is indeed largely driven by four outliers, while Supp. Fig 3a shows at least one gene (BEX1) that could be FP of the pseudobulk approach due to insufficient statistical power.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors show high correlation (R=0.87) in fold changes between pseudobulk and pseudoreplication on the same dataset, but only moderate correlation (R=0.57) between analyses using different QC approaches, suggesting low-quality cells affect DE results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor notes the study 'provides a solid comparison of the data process by re-analysis' and the reviewer acknowledges 'the authors demonstrate that the choice of data analysis strategy can have a vast impact on the results of a study.' While the reviewer challenges many interpretations, these correlation findings themselves are not directly disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Pseudobulk DE on the reprocessed data found 16 unique DEGs, compared to 26 DEGs when applied to Mathys et al.'s processed data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This factual finding is not disputed by reviewers, though its interpretation as demonstrating QC improvement is challenged elsewhere. The editor acknowledges the study provides 'a solid comparison of the data process.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22"
+    ],
+    "result": "Background claims about the Mathys et al. study design, methods, and results, including that it was the first snRNA-seq study of AD, profiled ~80,000 cells from 48 individuals, and identified 1031 DEGs using a two-part cell- and patient-level analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are factual descriptions of the original study that are not disputed by reviewers. They provide necessary context for the reanalysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Methodological details of the reanalysis pipeline, including use of emptyDrops, DoubletFinder, LIGER integration, UMAP embedding, Leiden clustering, automated cell typing, and pseudobulk DE with edgeR, all citing best-practice guidelines and benchmarking studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the reviewer acknowledges the pseudobulk approach is 'in line with latest community recommendations,' they conclude that 'due to a lack of comparison with other methods and due to the fact that the author's methodology was only applied to a single dataset, the paper presents merely a case study, which could be useful but falls short of providing a general recommendation for a best practice workflow.' The overall appraisal states 'the authors only show that there are differences but have no convincing (orthogonal) evidence that their methodology was indeed better.'",
+    "result_type": "MAJOR"
+  }
+]

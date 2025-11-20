@@ -1,0 +1,2597 @@
+{
+  "submission": {
+    "id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T21:30:33.321365Z",
+    "updated_at": "2025-11-20T21:30:33.321365Z"
+  },
+  "content": [
+    {
+      "id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "content_type": "manuscript",
+      "content_text": "# STAT3 is a genetic modifier of TGF-beta induced EMT in KRAS mutant pancreatic cancer\n\n## Authors\n\n- Stephen D'Amico<sup>1</sup>\n- Varvara Kirillov<sup>1</sup>\n- Oleksi Petrenko<sup>1</sup>\n- Nancy C Reich<sup>1</sup> ([ORCID: 0000-0003-4367-6097](https://orcid.org/0000-0003-4367-6097)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology and Immunology, Stony Brook University Stony Brook United States ([ROR:05qghxh33](https://ror.org/05qghxh33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOncogenic mutations in KRAS are among the most common in cancer. Classical models suggest that loss of epithelial characteristics and the acquisition of mesenchymal traits are associated with cancer aggressiveness and therapy resistance. However, the mechanistic link between these phenotypes and mutant KRAS biology remains to be established. Here, we identify STAT3 as a genetic modifier of TGF-beta-induced epithelial to mesenchymal transition. Gene expression profiling of pancreatic cancer cells identifies more than 200 genes commonly regulated by STAT3 and oncogenic KRAS. Functional classification of the STAT3-responsive program reveals its major role in tumor maintenance and epithelial homeostasis. The signatures of STAT3-activated cell states can be projected onto human KRAS mutant tumors, suggesting that they faithfully reflect characteristics of human disease. These observations have implications for therapeutic intervention and tumor aggressiveness.\n\n## Introduction\n\nPan-cancer projects, such as The Cancer Genome Atlas (TCGA), have provided a comprehensive view of the mutational landscape in human cancers. The foremost objective has been the discovery of key genes that drive cancer initiation and progression. It is estimated that cancer genomes contain an average of less than five driver mutations, whose outcomes are realized in the context of chromosomal and epigenetic alterations (Sondka et al., 2018; Bailey et al., 2018; Consortium ITP-CAoWG, 2020). While the Cancer Gene Census (CGC) has been largely defined, unraveling the contributions of normal cell functions to cancer development and their influence on tissue homeostasis, plasticity, and differentiation remains a complex task. A large body of evidence suggests that signal transducer and activator of transcription 3 (STAT3) has tumor-promoting properties that it exerts in a context-dependent fashion (Yu et al., 2014; Huynh et al., 2019). Canonical activation of STAT3 occurs following phosphorylation of tyrosine 705 (pY705) by receptor-associated Janus kinases (JAKs) or other tyrosine kinases (Philips et al., 2022). The clinical relevance of hyperactive STAT3 has been linked to subsets of hematological malignancies, with the identification of JAK1/3 or STAT3 mutations (Jerez et al., 2012; Koskela et al., 2012; Crescenzo et al., 2015; Milner et al., 2015). The most common STAT3 mutations, Y640F and D661Y, render STAT3 constitutively active (Jerez et al., 2012; Koskela et al., 2012). In sharp contrast, STAT3 mutations rarely occur in solid tumors. TCGA pan-cancer analysis reveals that most cancers do not express high levels of activated STAT3 (https://www.cancer.gov). Patient-derived xenografts and genetically engineered mouse models have yielded contrasting findings regarding the role of STAT3 in cancer development that range from tumor-promoting to tumor-suppressive, suggesting a high degree of tissue specificity (Huynh et al., 2019).\n\nWe aim to delineate the role of STAT3 in shaping the patterns of oncogenic KRAS dependency in KRAS mutant cancer cells. A previous study from our laboratory uncovered a novel link between STAT3 and cancer showing that activation of STAT3 in KRAS mutant cancers led to the stabilization of epithelial differentiation (D\u2019Amico et al., 2018). This observation suggests that STAT3 plays a dynamic role in modulating the phenotypic diversity of KRAS-driven tumors, ostensibly coupled with the selection of the fittest variants. In this study, we leverage isogenic STAT3 intact and deficient cells to more fully delineate the effects of STAT3 on oncogenic KRAS dependency and the growth of cancer cells in culture or as tumors. To determine whether KRAS-dependent tumor cells are co-dependent on STAT3, we used two wellestablished models of KRAS mutant cancer: mouse embryonic fibroblasts and pancreatic ductal adenocarcinoma (PDAC) cells expressing endogenous KRASG12D. Both in vitro and in vivo assays demonstrate that neither persistent activation of STAT3 nor its loss confers distinct growth advantages on tumor cells. Instead, STAT3 guides morphological and functional characteristics of the transformed cells and tumors. Stabilization of the epithelial phenotype and attenuation of the TGF-\u03b2/SMAD4 pathway are two main driving forces behind STAT3 activity (Oft et al., 1996; David and Massagu\u00e9, 2018; Principe et al., 2021; Gough et al., 2021). The data highlight antagonistic epistasis between SMAD4 and STAT3, where SMAD4 expressing tumors are poorly differentiated and exhibit mesenchymal features only in the absence of STAT3, while SMAD4-deficient tumors are well-differentiated and display epithelial morphology only in presence of STAT3. The results have implications for our understanding of the molecular basis of oncogenic KRAS dependency and therapy response.\n\n## Results\n\n### Effect of STAT3 activity on KRAS-mediated transformation\n\nTo assess the role of STAT3 in KRAS-driven tumorigenesis, we measured proliferation rates, contact inhibition, and tumor formation in mice. We have reported that p53-null mouse embryonic fibroblasts expressing endogenous mutant KrasG12D (termed KP MEFs) exhibit typical features of oncogenic transformation using quantitative and sensitive assays (Ischenko et al., 2013). CRISPR/Cas9-mediated gene editing was used to generate isogenic STAT3 knockouts in the KP MEFs, and gain-of-function (GOF) and loss-of-function (LOF) mutant STAT3 alleles were stably integrated into cells via lentiviral vectors (Figure 1A and B). We used naturally occurring GOF mutants, Y640F, K658Y and D661Y, and a synthetic mutant STAT3C (A662C/N664C), which all render a persistently phosphorylated and thus hyperactive STAT3 pY705 (Crescenzo et al., 2015; Bromberg et al., 1999). LOF mutations targeted the STAT3 DNA binding (EE434-435AA and VVV461-463AAA) and transactivation domains (Y705F and S727A; Horvath et al., 1995; Figure 1\u2014figure supplement 1). All mutants exhibited relatively uniform expression levels that were ~fivefold higher than endogenous STAT3 (Figure 1B, Figure 1\u2014figure supplement 1). As reported, STAT3 Y640F, K658Y, and STAT3C displayed increased levels of Y705 phosphorylation. As neither STAT3 WT nor STAT3 GOFs exhibited robust phosphorylation on S727, we used a validated STAT3 mutant S727E that mimics the phosphorylation of S727 (Qin et al., 2008; Figure 1C, Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92559/elife-92559-fig1-v1.jpg)\n\n**Figure 1.:** (A) Western blot analysis of STAT3 expression in KP MEFs (Contr) transduced with CRISPR/CAS9 lentivirus expressing CAS9 or gRNAs targeting STAT3 (ST3KO). Two independent knockout clones are shown. ERK1/2 is a loading control. (B) Western blot analysis of total and Y705-phosphorylated STAT3 in KP MEFs transduced with lentivirus expressing control (Vector), wild-type (ST3WT) or mutant STAT3 alleles as noted. ERK1/2 is a loading control. (C) Transduced control (Vector) and KP MEFs were evaluated for foci formation. Cells expressing the indicated STAT3 genotypes were co-cultured with 103 p53KO feeder MEFs and macroscopic colonies were counted after 2 weeks (n=3 with six replicate plates for each cell type, *p<0.05). Values correspond to mean \u00b1 s.d. (D) Representative images of tissue culture plates stained with Giemsa to detect foci formed by KP MEFs expressing vector, STAT3 WT or hyperactive STAT3 Y640F. (E) Representative images of transformed foci visualized by fluorescence microscopy. Foci formed by KP MEFs co-expressing GFP with vector alone, STAT3 WT, STAT3 Y705F, or STAT3 Y640F are shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92559/elife-92559-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic representation of STAT3 domain structure and the mutants used in this study. (B) Western blot analysis of KP MEFs harboring STAT3 mutations reveals unperturbed PI3K/AKT and MAPK/ERK signaling. (C) Loss of STAT3 does not affect growth and viability of KRASG12D p53KO MEFs. The cells were cultured for two weeks in 2D adherent cultures. Cumulative cell numbers are shown. Values correspond to mean \u00b1s.d.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92559/elife-92559-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Focus formation assays of p53null MEFs overexpressing STAT3 WT, STAT3 Y640F or STAT3 D661Y. (B) Western blot analyses of total STAT3 and Y705-phosphorylated STAT3 in KP MEFs expressing vector alone, and single and double mutations of STAT3 as noted. ERK1/2 is a loading control. (C) Transactivation by STAT3 mutants of a STAT3-responsive promoter driving a luciferase reporter. Hep3B cells were co-transfected with the p3XGAS-Hsp70-Luc reporter plasmid and mutant STAT3 alleles as noted and stimulated with 20 ng/ml human IL-6 for 24 hr (n=3 for each cell type). Relative luciferase values are presented as mean \u00b1s.d. (D) GO enrichment of differentially expressed genes in KP MEF cells expressing STAT3 Y640F compared to control KP cells. (E) Western blot analysis of SMAD4 KO and TGFBR2 KO KP MEFs. (F) Results of focus formation assays of control KP MEFs, and MEFs ablated for SMAD4 and TGFBR2 expression with or without expression of STAT3 Y640F as indicated (n>6 for each). Values correspond to average and s.d.\n\nIsogenic KP MEF cell lines harboring wild-type or mutant STAT3 were evaluated for growth, tumorigenesis, and pathway activation. Loss of STAT3 expression did not affect cell growth under standard culture conditions (Figure 1\u2014figure supplement 1). Likewise, loss of STAT3 did not affect KRAS-induced transformation. This is indicated by the ability of STAT3 KO cells to grow in multilayers and form transformed foci to the same extent as controls (Figure 1C). Similar results were obtained using LOF mutations in STAT3 DNA binding (EE434-435AA and VVV461-463AAA) and transactivation domains (Y705F and S727A). In contrast, STAT3 GOF mutations, Y640F, D661Y, and K658Y, impaired KRAS-induced focus formation (p<0.005 by two-tailed T test, Figure 1C and D). Because the transduced STAT3 constructs co-expressed a GFP reporter, the formation of transformed foci was visualized by fluorescence microscopy (Figure 1E). Through these real-time studies, we discovered that only a small percentage of cells with hyperactive STAT3 Y640F had some ability to form transformed colonies, while the majority of cells remained contact inhibited. We noted that STAT3 S727E had no significant effect on cell transformation, while the Y640F/S727E double mutant displayed only a marginal increase in the number of transformed foci relative to STAT3 Y640F itself (Figure 1C). Thus, the hyperactive Y640F mutation exerts a dominant influence over S727E in KRAS-transformed MEFs. As expected, lentiviral expression of wild-type or GOF STAT3 alleles, Y640F and D661Y, failed to transform primary p53KO MEFs or immortalized NIH 3T3 cells (Figure 1C and D; Figure 1\u2014figure supplement 2; data not shown), indicating that STAT3 does not display intrinsic oncogenicity on its own.\n\n### STAT3 GOF mutations reduce tumor development in mice\n\nTo investigate tumorigenic effects of STAT3 in vivo, subcutaneous implants of KP MEFs into nude mice were used. Tumors developed by STAT3 KO cells showed growth characteristics similar to those of STAT3 intact vector controls (Figure 2A). In contrast, cells expressing the hyperactive STAT3 Y640F and, to a lesser extent, K658Y mutations were delayed in their ability to form tumors in mice. We used fluorescence-activated cell sorting for GFP to fractionate STAT3 Y640F MEFs into pools with low and high STAT3 pY705 expression (Figure 2B). Following implantation in mice, cell populations with high STAT3 pY705 expression developed tumors more slowly compared to low expressing cells (p=0.005, Figure 2C). Therefore, there is a dose-dependent ability of hyperactive STAT3 Y640F to limit tumorigenicity of KRAS-transformed MEFs. Limiting dilution assays in nude mice revealed that the frequency of tumor-initiating cells was reduced by approximately ninefold in high STAT3 Y640F expressing cells compared to control cells (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92559/elife-92559-fig2-v1.jpg)\n\n**Figure 2.:** (A) Subcutaneous tumor formation in nude mice by KP MEFs expressing vector alone, STAT3 KO, STAT3 K658Y or STAT3 Y640F (104 cells per injection site, n=4 for each cell type). Error bars represent s.d. (B) Western blot analysis of Y705-phosphorylated STAT3 in KP MEFs expressing vector alone, and low or high levels of STAT3 Y640F protein. Cells were fractionated by FACS for GFP. ERK1/2 is a loading control. (C) Subcutaneous tumor formation in nude mice by cells from (B) (104 cells per implant site, n=4 for each cell type). Error bars represent s.d. (D) Quantification of tumor-initiating cell (TIC) frequency in control (Vector) and STAT3 Y640F-expressing KP MEFs by extreme limiting dilution assays (ELDA) in nude mice. (E) Focus formation by KP MEFs expressing vector alone, STAT3 Y640F or double mutants of STAT3 Y640F with DNA binding domain (DBD) mutations, V463\u0394 and R382W, or phospho-inactivating Y705F. Results represent replicates from two independent experiments (n=4 for each cell type). Values correspond to mean \u00b1 s.d.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92559/elife-92559-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Western blots of parental KPC pancreatic ductal adenocarcinoma cells, and two isogenic knockout clones for STAT3, SMAD4 or TGFBR2 generated by CRISPR/Cas9 gene editing. ERK1/2 is a loading control. (B) Top up- and down-regulated subset of genes in STAT3 KO KPC cells compared to parental control cells. (C) Heatmaps of differentially expressed genes in KPC parental cells and the indicated KRAS, STAT3, and SMAD4 knockout genotypes. TGF-\u03b2 super family genes and transcription factors (TFs) are shown. (D) EMT scores of KPC cells of the indicated KRAS, STAT3, and SMAD4 genotypes based on epidermal (EPI) and mesenchymal (MES) genes derived from Serresi et al., 2021;7 (9) shown to right. (E) GO enrichment analysis of top up-regulated genes in KRAS KO cells compared to parental KPC cells. (F) RAS dependency indices of KPC pancreatic whole tumors based on bulk RNA-seq of tumors formed from parental KPC (Contr), KRAS KO or STAT3 KO cells. Murine RAS dependency index (mRDI) was derived from Ischenko et al. Nature Communications, 2021;12 (Sondka et al., 2018):1482.\n\nTo determine whether specific Y705 phosphorylation and DNA binding are required for STAT3 Y640F to exert its suppressive activity, we generated three double mutants: a phosphorylation defective STAT3 Y640F/Y705F, and two DNA-binding domain (DBD) mutants; STAT3 Y640F/R382W and Y640F/V463\u0394 (Figure 1\u2014figure supplement 2). Both R382W and V463\u0394 are recurrent STAT3 mutations observed in humans (Jiao et al., 2008). A STAT3-responsive luciferase reporter assay was used to confirm that the DBD mutants are impaired in their ability to induce STAT3-mediated gene transcription. Notably, the DBD mutants of STAT3 Y640F lost the ability to attenuate KRAS-mediated MEF transformation despite their continuous pY705 phosphorylation (Figure 2E; Figure 1\u2014figure supplement 2). The phosphorylation-defective STAT3 Y640F/Y705F double mutant was likewise impaired. We conclude that STAT3 Y640F-mediated inhibition of tumor development and KRAS-induced MEF transformation is dependent on STAT3 phosphorylation at Y705, DNA binding, and gene-specific transactivation.\n\nTo elucidate the means by which hyperactive STAT3 suppresses KP MEF transformation, we evaluated pathway activity by western blot analysis and whole exome RNA sequencing (RNA-seq). Western blot analyses of control and STAT3 Y640F-expressing MEFs showed unperturbed RAS/MAPK and PI3K/AKT signaling (as assessed by phosphorylated ERK1/2 and AKT1), suggesting that STAT3 does not directly alter these downstream KRAS effectors (Figure 1\u2014figure supplement 1). RNA-seq analysis showed that expression of STAT3 Y640F in MEFs resulted in the differential expression of approximately 290 genes (p<0.05) compared to control cells. Gene ontology (GO) classification of biological processes showed an enrichment of pathways consistent with the role of STAT3 as a mediator of immunity and the inflammatory response (Figure 1\u2014figure supplement 2). Biological processes attenuated by hyperactive STAT3 included differentiation and tissue development, and pathways mediated by TGF-\u03b2 signaling (Oft et al., 1996; David and Massagu\u00e9, 2018; Zhang et al., 2017). We therefore tested whether inactivation of the TGF-\u03b2 pathway could inhibit KRAS-induced MEF transformation. Indeed, ablation of the TGF-\u03b2 signaling components TGFBR2 or SMAD4 in KP MEFs using CRISPR/Cas9-mediated gene editing nearly eliminated foci formation and effects of STAT3 (Figure 1\u2014figure supplement 2). The results support the premise that hyperactive STAT3 interferes with KRAS-induced transformation through suppression of the TGF-\u03b2 pathway. This prompted us to investigate the functional interaction of STAT3 and TGF-\u03b2/SMAD4 in epithelial carcinogenesis.\n\n### STAT3 is a genetic modifier of EMT\n\nA notable feature of KRAS mutant cancers, including those of the pancreas, colon, and lung, is that they tend to fall into two classes based on their canonical KRAS and TGF-\u03b2 signaling; those that have a strong dependence on KRAS signaling (KRAS-dependent) or those that have less dependence on canonical KRAS signaling (KRAS-independent; Singh et al., 2009; Yuan et al., 2018). KRAS-dependent tumors have been associated with an epithelial gene signature and morphology, whereas KRAS-independent tumors show enriched expression of mesenchymal genes. Since STAT3 and TGF-\u03b2 have been shown to compete, cooperate, or antagonize each other in many other contexts (Wang et al., 2016; Babaei et al., 2018; Biffi et al., 2019; Jenkins et al., 2005), we investigated STAT3 as it relates to KRAS dependency. To that end, we used murine pancreatic ductal adenocarcinoma (PDAC)-derived cell lines bearing endogenous KrasG12D and Tp53R172H mutations (termed KPC) (Hingorani et al., 2005). CRISPR/Cas9 gene editing was used to ablate STAT3, SMAD4, or TGFBR2 expression in PDAC cells (Figure 2\u2014figure supplement 1) and the behavior of these cells was tested alongside previously generated KRAS knockout cells (Ischenko et al., 2021). The cells were implanted orthotopically into the pancreata of nude mice, and animals were observed for latency of tumor formation and changes in tumor morphology.\n\nPancreatic tumors were detected within 3 weeks following implantation of 104 parental control, STAT3 knockout (KO), SMAD4 KO, or TGFBR2 KO PDAC cells, and there was no statistical difference in tumor latency between the groups. However, there was considerable difference in tumor morphology. Tumors in the parental (intact) group were characterized by classical adenocarcinoma-like morphology with glandular structures (Figure 3A). In comparison, KRAS KO tumors displayed a highly sarcomatoid morphology indicative of full EMT. Loss of STAT3 also induced a morphological change compatible with EMT, whereas overexpression of hyperactive STAT3 Y640F resulted in the sporadic co-occurrence of squamous and glandular differentiation. Loss of SMAD4 or TGFBR2 was associated with increased epithelial differentiation relative to controls. This is consistent with previous findings showing that the TGF-\u03b2 pathway is a key regulator of tumor cell differentiation and malignant behavior, but not growth rate (Izeradjene et al., 2007; Dai et al., 2021).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92559/elife-92559-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative H&E staining of pancreatic tumor sections derived from KPC cells of the indicated KRAS (n=15`), STAT3 (n=11), TGFBR2 (n=3), and SMAD4 (n=12) genotypes, where n denotes the number of mice injected. At least two independent clones were used. 2mm scale bar. (B) Scatter plot representing differentially expressed genes in parental (STAT3 intact) and STAT3 KO KPC cells. (C) Pie charts representing gene expression profiles of the top 100 upregulated genes in parental control (STAT3 intact) and STAT3 KO KPC cells with percentages linked to specific cellular functions. (D) GO enrichment analysis of the top 100 upregulated genes in STAT3 KO cells compared to STAT3 intact (control) cells. (E) Analysis of overlapping differentially expressed genes (n=243) in STAT3 KO and KRAS KO KPC cell lines relative to parental control cells. (F) Mouse RAS dependency index (RDI) of KPC cells of the indicated KRAS, STAT3, and SMAD4 genotypes.\n\nWe determined whether differences in tumor morphology were coordinate with changes in gene expression. Comparative RNA-seq analyses of parental KPC control and STAT3 KO cell lines revealed distinct transcriptional profiles that included more than 700 differentially expressed genes (Figure 3B). The enriched genes in KPC parental cells included those corresponding to the major structural proteins in epithelial cells, such as cadherins, claudins, and tight junctions (Figure 3C). In contrast, STAT3 KO cells were enriched in signatures of EMT and embryonic organ morphogenesis (Figure 3D). The overall pattern of gene expression suggests that loss of STAT3 is associated with activation of partial rather than complete EMT, since epithelial markers (e.g. CDH1 and EpCAM) continue to be expressed, but mesenchymal markers (e.g. FN1 and various collagens) have been acquired (Brabletz et al., 2018; Lambert and Weinberg, 2021; Figure 2\u2014figure supplement 1). As TGF-\u03b2 classically promotes EMT, we also focused on TGF-\u03b2 family genes (Korkut et al., 2018). Among these genes, STAT3 KO cells had a significant increase in TGFB1, TGFB3 and INHBA expression (Figure 2\u2014figure supplement 1). The expression of EMT-activating transcription factors SNAI, TWIST and ZEB was not strongly affected, indicating that induction of EMT involves additional STAT3 dependent regulators. We did identify transcription factors, such as JUNB and SOX4, that associate with EMT (David et al., 2016). We computed EMT scores using gene expression values of epithelial (EPI) and mesenchymal (MES) genes. STAT3 and KRAS KO KPC cells displayed similar levels of EMT at the level of gene expression (Figure 2\u2014figure supplement 1; Serresi et al., 2021). In contrast, SMAD4 KO cells displayed reduced expression of EMT-related genes, while genes involved in epithelial differentiation and RAS dependency were among the most upregulated.\n\nNotably, comparative analysis between STAT3 and KRAS knockout KPC cells revealed approximately 250 STAT3 target genes (>30%) that were similarly up- or down-regulated (Pearson\u2019s r=0.88, p<0.00001), suggesting that STAT3 loss partially phenocopies the effects of KRAS inactivation (Figure 3E). GO classifications of the overlapping genes in KRAS and STAT3 knockouts included developmental processes and mesenchymal tissue remodeling (Figure 3D; Figure 2\u2014figure supplement 1). As a proof of concept for the functional connection of STAT3 to KRAS dependency, we used gene expression data to compute RAS dependency scores for parental and knockout cells. A mouse KRAS dependency signature (21 genes) was derived from single cell RNA-seq data of KRAS intact vs. KRAS knockout PDAC tumors and used for the analyses (Figure 2\u2014figure supplement 1; Ischenko et al., 2021). Results showed RAS dependency scores had a significant positive correlation with STAT3 and KRAS expression, and a negative correlation with SMAD4 expression (Figure 3F). Whole tumor RNA-seq analysis of STAT3 intact and knockout pancreatic tumors supported these findings (Figure 2\u2014figure supplement 1). Together these data indicate that STAT3 is a genetic modifier that can regulate KRAS dependency and tumor development through counterposing EMT.\n\n### STAT3 and SMAD4 play opposing roles in pancreatic tumorigenesis\n\nThe apparent antagonism between STAT3 and induction of EMT was of particular interest, as TGF-\u03b2-induced EMT appears to confer adaptive resistance to KRAS inhibition (Singh et al., 2009; Hou et al., 2020). To test the relative importance of the STAT3 and TGF-\u03b2 pathways to tumor morphology and functionality, we generated STAT3/SMAD4 and STAT3/TGFBR2 double knockout (DKO) cell lines. DKO cell lines formed pancreatic tumors in mice, but their histological features were distinct from SMAD4 or TGFBR2 single knockouts as they produced mixed epithelial/mesenchymal morphologies with cells expressing both E-cadherin and vimentin (Figure 4A and B). SMAD4 or TGFBR2 intact tumors displayed features of EMT in the absence of STAT3, whereas SMAD4 or TGFBR2 KO tumors displayed a well-differentiated epithelial phenotype only in the presence of STAT3 (Figures 3A and 4A). The data reinforce the notion that functional antagonism of STAT3 and TGF-\u03b2/SMAD4 controls PDAC development and KRAS dependency (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92559/elife-92559-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative H&E staining of pancreatic tumor sections derived from KPC cells of the indicated genotypes, SMAD4 KO (n=12), SMAD4/STAT3 DKO (n=3) and TGFBR2/STAT3 DKO (n=3), where n denotes the number of mice injected. At least two independent clones were used. 2mm scale bar. (B) Western blot analysis of control (Intact), STAT3 KO (ST3KO), STAT3/SMAD4 double KO (ST3/SM4DKO), or STAT3/TGFBR2 double KO (ST3/TRB2DKO) KPC cells. Expression of STAT3, SMAD4, TGFBR2, CDH1 (E-cadherin), and VIM (Vimentin) is shown. ERK1/2 is a loading control. (C) Summary of pancreatic tumor development in nude mice by KPC cells of the indicated STAT3, SMAD4, and TGFBR2 genotypes presented. (D) Pearson correlation heatmap comparing gene expression signatures of SMAD4 KO (SMAD4KO_up, down) and STAT3 KO (STAT3KO_up, down) KPC cells with human PDACs from TCGA (n=168). Signature scores were calculated using the top up- and down-regulated genes in STAT3 and SMAD4 KO KPC cells. The number of genes for each comparison is shown. (E) Pearson correlation heatmap comparing gene expression signature scores of genes regulated in STAT3 KO KPC cells with pancreatic tumors from the COMPASS database (n=92) classified by RAS dependency index (RDI), KRAS-dependent signature (KRAS-sig), KRAS-independent signature (RSK-sig), epithelial (EPI), or mesenchymal (MES) gene signature score.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92559/elife-92559-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Pearson correlation coefficients of STAT3 KO (top) or SMAD4 KO (bottom) gene signature scores with curated human pancreatic tumor samples expressing wild-type SMAD4 from TCGA (n=112). Tumors were classified by Ras dependency index (RDI), KRAS-dependent (KRAS-sig), KRAS-independent (RSK-sig), epithelial (EPI), or mesenchymal (MES) signatures. The number of genes for each comparison is shown. (B) STAT3 Y705 phosphorylation levels in cell lines from the Cancer Cell Line Encyclopedia (n=898).\n\nWe analyzed human PDAC databases to determine if our STAT3 and SMAD4 gene expression signatures could be projected onto human tumors. SMAD4 and STAT3 signature scores were computed from the top up- or down-regulated genes in KPC cell lines (Figure 4\u2014source data 1). When aligned with human PDAC samples from the TCGA cohort (stage I/II tumors), STAT3 and SMAD4-regulated gene signatures demonstrated significant statistical correspondence, supporting the selective antagonism of STAT3 and SMAD4 (Pearson\u2019s r>0.5, p<0.00001; Figure 4D). As SMAD4 is frequently deleted in PDAC, samples expressing only wild-type SMAD4 were manually curated from the TCGA cohort (n=112). Tumors were classified as either epithelial (EPI) or mesenchymal (MES) using previously characterized gene sets (Figure 4\u2014source data 2). Results demonstrate that STAT3-regulated gene expression is closely associated with epithelial differentiation, while SMAD4-regulated gene expression is strongly associated with EMT (Pearson\u2019s r>0.7) (Figure 4E). The association with KRAS dependency status was also revealing. PDAC tumor samples from the TCGA cohort were grouped as KRAS-dependent/KRAS type or KRAS-independent/RSK type based on previously derived KRAS dependency signatures (Figure 4\u2014source data 3; Singh et al., 2009; Yuan et al., 2018). KRAS-dependent tumors showed enriched expression of epithelial genes (EPI) and reduced expression of mesenchymal genes (MES), whereas the KRAS-independent samples displayed the inverse, as previously reported (Singh et al., 2009; Yuan et al., 2018; Tan et al., 2014). Importantly, the KPC STAT3 knockout gene signature (i.e. upregulated genes) co-segregated with human KRAS-independent/mesenchymal PDAC tumors, while the SMAD4 knockout gene signature (i.e. upregulated genes) co-segregated with human KRAS-dependent/epithelial tumors (Figure 4\u2014figure supplement 1). A similar trend was observed for the PanCuRx Translational Research Initiative (COMPASS, stage IV PDAC) cohort mainly composed of liver metastases, as the STAT3-reliant gene signature was also enriched in epithelial and KRAS dependent samples (r>0.7, p<0.00001; Figure 4E). Liver is the main site of PDAC metastases, and pancreatic cancer metastases commonly display a stabilized epithelial phenotype (Carstens et al., 2021; Reichert et al., 2018). Overall, results demonstrate that STAT3-regulated gene expression is closely associated with epithelial differentiation and RAS dependency, while SMAD4-regulated gene expression is strongly associated with EMT and RAS independence. These findings underscore our basic premise that there exists an epistatic antagonism between STAT3 and SMAD4, highlighting a new role for STAT3 as a genetic modifier in KRAS mutant cancer.\n\n## Discussion\n\nThe findings presented in this study have significant implications in two main aspects. We provide evidence that the STAT3 transcription factor acts as a genetic modifier of EMT and KRAS dependency in a mouse model of pancreatic carcinogenesis. Our results demonstrate that neither persistent activation nor genetic ablation of STAT3 confers a selective growth advantage on tumor cells. Instead, STAT3 plays a crucial role in guiding the morphological and functional characteristics of tumors by inhibiting EMT and maintaining epithelial identity. Furthermore, our study uncovers an intriguing relationship between the SMAD4 and STAT3 transcription factors in PDAC. While the involvement of STAT3 in cancer has been predominantly associated with chronic inflammation and fibrosis (Laklai et al., 2016; Ji et al., 2019), our data underscore the significance of epistasis as a key factor that underlies functional antagonism between STAT3 and TGF-\u03b2/SMAD4 signaling. Our findings shed light on the regulatory mechanisms involved in cancer progression.\n\nOncogenic KRAS mutations are observed in approximately 90% of pancreatic cancers and less frequently in other cancer types. However, the role of KRAS in PDAC maintenance, once held to be nearly absolute, has shown limitations. A notable feature of KRAS mutant cancers, including those of the pancreas, colon, and lung, is that they can be either KRAS-dependent or KRAS-independent, based on the degree of their addiction to canonical KRAS signaling. The concept of KRAS dependency, originally introduced as a measure of oncogenic addiction following KRAS inactivation, has proven to be multifaceted. It integrates KRAS signaling outputs, with effector topologies, cooperating mutations, and environmental cues (Singh et al., 2009; Yuan et al., 2018; Ischenko et al., 2021; Brubaker et al., 2019). Cellular morphology (epithelial versus mesenchymal) appears to be one of the most noticeable manifestations of different degrees of KRAS dependency. Although SMAD4 classically promotes EMT and KRAS independence (Singh et al., 2009), approximately 50% of moderately to well-differentiated tumors in the TCGA cohort are, in fact, SMAD4 wild-type. This indicates that SMAD4 mutation alone is not sufficient to predispose cancer cells to a particular RAS phenotype. Our study emphasizes the mutual antagonism of SMAD4 and STAT3, and a fundamental role of STAT3 in the maintenance of epithelial cell identity. While SMAD4 wild-type tumors displayed features of EMT in the absence of STAT3, SMAD4 KO tumors displayed an epithelial phenotype only in the presence of STAT3. The results demonstrate that STAT3 and SMAD4 inversely contribute to oncogenic dependency. STAT3 sustains the KRAS-dependent phenotype and tumor aggressiveness, with the potential for improved efficacy of anti-RAS drugs, whereas SMAD4 promotes KRAS independence at the expense of enhanced therapy resistance. Therefore, the epistatic relationship between SMAD4 and STAT3 has implications for tumor aggressiveness, metastatic propensity, and therapeutic resistance.\n\nGenes involved in cancer (~200 drivers validated to date) affect critical cellular processes, rendering them tumorigenic or tumor suppressive. The Cancer Dependency Map project sets out to model the genetic landscape of cancer in accordance with the oncogene addiction paradigm. By employing high throughput RNAi or CRISPR knockout screens across a multitude of cancer-derived cell lines, the goal is to broadly identify putative cellular dependencies for cancer therapy. While an important undertaking, not all cell lines align well with tumor samples in terms of mutations and gene expression profiles (Warren et al., 2021). STAT3 exemplifies this problem, as efforts to understand its role of STAT3 in cancer have resulted in conflicting reports that show either a positive or negative role in tumor development (Yu et al., 2014; Huynh et al., 2019). Large-scale analysis of patient-derived PDACs (n=84) and pancreatic cell lines from the Cancer Cell Line Encyclopedia (n=39) reveal low to medium levels of STAT3 Y705 phosphorylation (Figure 4\u2014figure supplement 1). Endogenous phosphorylation/activation of STAT3 appears able to function within a narrow operating range in multiple solid tumor types.\n\nCancers are complex biological systems exhibiting inexplicable levels of intractability and unpredictability. For instance, even when challenged with the same lethal anticancer drugs used in vitro, cancers show remarkable resistance in vivo. Further complicating the analysis, there exist KRAS mutant cell lines whose survival and growth are no longer dependent on continued KRAS activity (Ischenko et al., 2021; Muzumdar et al., 2017; Lentsch et al., 2019). This raises doubts regarding their eventual responsiveness to targeted anti-KRAS therapies. Here, we used genetic analyses to identify STAT3 as a relevant dependency in KRAS-driven cancer. While in vitro evidence indicates that STAT3 lacks classical driver properties, it nevertheless plays an essential role in cancer maintenance and epithelial-mesenchymal plasticity. This may explain the rarity of STAT3 GOF mutations in human cancers with mutant KRAS.\n\n## Materials and methods\n\n### Cells and reagents\n\nClonally-derived KrasG12D Tp53KO mouse embryonic fibroblasts (KP MEFs) and pancreatic KrasG12D Tp53R172H (KPC) cells were previously described (Ischenko et al., 2013; Hingorani et al., 2005). Cells were authenticated by partial sequencing and were tested to be free of mycoplasma. Human Hep3B and HEK293T cells were obtained from ATCC. All cells were grown in DMEM media supplemented with 5% FBS (Atlanta Biologicals) and 1 x antibiotic/antimycotic (Gibco). For standard proliferation assays, cells were seeded into six-well plates at a concentration of 4x105 cells per well and counted cumulatively with a Coulter counter (Beckman) every 3 days for 2 weeks. Focus formation assays were performed as described (Ischenko et al., 2013; Ischenko et al., 2014). Briefly, 103 KP MEFs were co-cultured with 105 p53KO feeder MEFs in 6 cm dishes. After 2 weeks, transformation efficiency was evaluated by manually counting macroscopic colonies. Transformed foci were stained with Giemsa (Sigma) for visualization. Stable KP MEF and KPC knockout cell lines were generated via selection in 2 \u03bcg/ml puromycin followed by single colony isolation. In vitro luciferase activity was measured using a Lumat model LB luminometer (Promega) and the Luciferase Reporter Gene Assay according to manufacturer\u2019s instructions (Roche). Hep3B cells were stimulated with human IL-6 (Cell Signaling Technology) at a concentration of 20 ng/ml for 24 hr.\n\n### Lentivirus and plasmids\n\nLentiviral (adapted from the pWPXL/pEF1a backbone) and pEGFP-N1 (Addgene) expression vectors encoding mutant STAT3 alleles were derived using site-directed mutagenesis. The final plasmids were sequence confirmed. The p3XGAS-Hsp70-Luc reporter plasmid was described (Foreman et al., 2017). For CRISPR/Cas9-mediated knockouts, we used single guide RNAs (sgRNAs) for Stat3 (5\u2019-gcagctggacacacgctacc-3\u2019 or 5\u2019-gtacagcgacagcttcccca-3\u2019), Smad4 (5\u2032-ggtggcgttagactctgccg-3\u2032), and Tgfbr2 (5\u2019-ccttgtagacctcggcgaag-3\u2019) cloned into LentiCRISPRv2 puro (Addgene) (Sanjana et al., 2014). Lentiviruses were produced by transient transfection of HEK293T and collected according to standard protocols.\n\n### Tumorigenicity in mice\n\nAll animal studies were approved by the Institutional Animal Care and Use Committee at Stony Brook University. Male NU/J (nude) mice (5 weeks old) (The Jackson Laboratory) were inoculated orthotopically or subcutaneously with 104 cells in 100 \u03bcl of Matrigel (Corning) diluted 1:7 with Opti-MEM (Corning). Orthotopic implantations into the pancreas were performed using standard procedures (L\u00f3pez-Novoa and Nieto, 2009). Pancreatic tumor latency was determined through abdominal palpation. We defined subcutaneous tumor latencies as the period between implantation of tumorigenic cells into mice and the appearance of tumors 1 mm in diameter. The end point was a tumor diameter of 0.5 cm. Statistical analyses were performed using two-tailed Student\u2019s t-test at the 95% confidence interval. p\u22640.05 was considered statistically significant. Tumor-initiating cell (TIC) frequency was determined by extreme limiting dilution assays and online ELDA software (https://bioinf.wehi.edu.au/software/elda/). The number of cells in each subcutaneous injection ranged from 102 to 104. Mouse tumor tissue was harvested, immersion fixed in five volumes of 4% paraformaldehyde for 48 hr, and processed via the Stony Brook University Histology Core. Paraffin-embedded formalin-fixed 5 \u03bcm sections were stained with hematoxylin and eosin for histology.\n\n### Expression analysis\n\nWestern blotting was performed using antibodies against AKT1 (4691), P-AKT1 pS473 (4060), CDH1 (3195), P-ERK1/2 (4370), SMAD4 (46535), P-STAT3 pY705 (9131), VIM (5741) (all from Cell Signaling), ERK1/2 (05\u2013157, Millipore), STAT3 (610190, BD) and TGFBR2 (sc-400, Santa Cruz). Whole cell extracts were prepared by lysing cells in buffer containing 10 mM Tris HCl, pH7.4, 150 mM NaCl, 1 mM EDTA, 10% glycerol, 1% Triton X100, 40 mM NaVO4, 0.1% SDS, and 1 x protease inhibitors (Roche). Western blots were imaged using Image Studio software (LI-COR). Total cellular RNA was isolated using PureLink RNA (Thermo Fisher) according to manufacturer\u2019s specifications and phenol-extracted. Pancreatic tissues were incubated for 24 hr at 4 \u00b0C in \u22655 volumes of RNAlater solution (Thermo Fisher) to preserve RNA integrity. RNA sequencing and bioinformatics were performed by Novogene Corporation (https://en.novogene.com). STAT3 and SMAD4 knockout signature scores (STAT3KO_UP, STAT3KO_DN, SMAD4KO_UP, SMAD4KO_DN) were computed as the average of RNA expression values (fpkm) of the top up- or down-regulated genes in KPC cell lines. EMT and mouse Ras Dependency Index (RDI) scores were calculated using defined gene sets (Ischenko et al., 2021; Serresi et al., 2021; Tan et al., 2014). For publicly available human datasets, RDI, KRAS_sig, RSK_sig, epithelial (EPI) and mesenchymal (MES) gene expression scores were calculated as the sum of RNA expression values (z-scores) using previously characterized gene modules (Singh et al., 2009; Yuan et al., 2018).\n\n### Statistics and reproducibility\n\nStatistical analysis was performed using two-tailed Student\u2019s t-test, Fisher\u2019s exact test or Wilcoxon test, as appropriate for the dataset. ARRIVE guidelines were used in the study as appropriate. An FDR adjusted p-value (q-value) was calculated for multiple comparison correction. Individual mice and tumor cell lines were considered biological replicates. Statistical details for each experiment are denoted in the corresponding figures and figure legends. The micrographs (H&E) represent at least three independent experiments. All data are presented as mean \u00b1 SD. In box and whisker plots, the middle line is plotted at the median, the upper and lower hinges correspond to the first and third quartiles, and the ends of the whisker are set at 1.5 x IQR above the third quartile and 1.5 x IQR below the first quartile (IQR, interquartile range or difference between the 25th and 75th percentiles).\n",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sendurai A Mani, Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92559.2.sa0](https://doi.org/10.7554/eLife.92559.2.sa0)\n\nThis study delves into the complex role of STAT3 signaling and its interplay with TGF-beta and SMAD4 in KRAS mutant pancreatic cancer. The authors demonstrate that both the presence and absence of STAT3, relative to SMAD4, can lead to poor PDAC differentiation and that STAT3 mutations affect p53-null fibroblasts with KRASG12D and induce an EMT-like phenotype. By providing convincing evidence, the authors were able to derive important insights into KRAS mutant cancers.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92559.2.sa1](https://doi.org/10.7554/eLife.92559.2.sa1)\n\nSummary:\n\nThis study presents a valuable finding on the increased activity of two well-studied signal transduction pathways - STAT-3 and TGF-Beta in a specific subtype of pancreatic cancer. Specifically, SMAD4 deficient tumors (commonly observed in pancreatic cancer) are well differentiated in the presence of STAT3. Yet surprisingly, in the presence of SMAD4 in a STAT-3 deficient pancreatic cancer, the phenotype is poorly differentiated in the background of KRASGD12D. The evidence in the animal models supporting the authors' claims is solid, although including TCGA data and/or a larger number of patients would have strengthened the study. The work will be of interest to medical biologists working on pancreatic cancer and potentially the broader field.\n\nStrengths:\n\nStrengths are the animal models and the lead author's expertise in STAT3 signaling.\n\nWeaknesses:\n\nWeaknesses are the absence of correlation between the results from the animal studies and human pancreatic cancers.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92559.2.sa2](https://doi.org/10.7554/eLife.92559.2.sa2)\n\nSummary:\n\nThis manuscript explores mechanisms by which STAT3 may regulate KRAS mutant cancers.\n\nIn the first set of experiments, STAT3 GOF mutants diminished the transformation of p53-null mouse embryonic fibroblasts expressing endogenous mutant KRAS(G12D) (KP MEFs) and this was dependent on direct transcriptional activation induced by phosphorylated STAT3. It appears that this is mediated via a reduction in TGFb signaling such that knockout of either TGFBR2 or SMAD4 can phenocopy the effects of STAT3 GOF mutants in KP MEFs.\n\nIn the next part of the paper, the authors used murine pancreatic ductal adenocarcinoma (PDAC)-derived cell lines bearing endogenous KRAS(G12D) and TP53(R172H) mutations (KPC) to determine the extent to which STAT3 may regulate KRAS dependency. They determined that KRAS and STAT3 KO both induced mesenchymal-like phenotypes and that TGFBR2 and SMAD4 KO induced epithelial phenotypes. The loss of STAT3 appeared to correlate with a KRAS-independent signature, and SMAD4/TGFBR2 KO could not induce epithelial phenotypes when STAT 3 was also knocked out.\n\nStrengths:\n\nOverall, this is an interesting paper that highlights the complicated interactions between KRAS, STAT3, and TGF beta signaling. The authors use multiple models and attempt to link data to patient cohorts.\n\nWeaknesses:\n\nWhile correlations are strong, the study would benefit from additional cause-and-effect type experiments. It would also be beneficial to better tie together the first and second parts of the paper.\n",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "48706337-6447-4f92-97cd-ac4cfe7e4abf",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C1",
+      "claim": "Oncogenic mutations in KRAS are among the most common in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Oncogenic mutations in KRAS are among the most common in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific data or citation in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "11e0c8fa-37ad-46b1-a355-153a06af0a82",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C2",
+      "claim": "Loss of epithelial characteristics and the acquisition of mesenchymal traits are associated with cancer aggressiveness and therapy resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical models suggest that loss of epithelial characteristics and the acquisition of mesenchymal traits are associated with cancer aggressiveness and therapy resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge from classical models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "5d739ce5-6361-47fe-b38b-2a83709437ac",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C3",
+      "claim": "STAT3 is a genetic modifier of TGF-beta-induced epithelial to mesenchymal transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify STAT3 as a genetic modifier of TGF-beta-induced epithelial to mesenchymal transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "6cd6e3ba-a72d-4efd-96af-b8f873176f01",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C4",
+      "claim": "Gene expression profiling of pancreatic cancer cells identifies more than 200 genes commonly regulated by STAT3 and oncogenic KRAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression profiling of pancreatic cancer cells identifies more than 200 genes commonly regulated by STAT3 and oncogenic KRAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from RNA-seq analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "a9dbef7d-a973-48a2-b9c5-3a2b3bb9ceb0",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C5",
+      "claim": "Functional classification of the STAT3-responsive program reveals its major role in tumor maintenance and epithelial homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional classification of the STAT3-responsive program reveals its major role in tumor maintenance and epithelial homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene ontology analysis of STAT3-regulated genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "9bcca311-2f10-4bac-a748-4fac97474d08",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C6",
+      "claim": "Cancer genomes contain an average of less than five driver mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that cancer genomes contain an average of less than five driver mutations, whose outcomes are realized in the context of chromosomal and epigenetic alterations (Sondka et al., 2018; Bailey et al., 2018; Consortium ITP-CAoWG, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "536fc874-a85e-4f4a-837a-cf48e79d5cb3",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C7",
+      "claim": "STAT3 has tumor-promoting properties that it exerts in a context-dependent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "A large body of evidence suggests that signal transducer and activator of transcription 3 (STAT3) has tumor-promoting properties that it exerts in a context-dependent fashion (Yu et al., 2014; Huynh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "abaaf951-dce9-4f96-b021-96621c2cd79a",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C8",
+      "claim": "Canonical activation of STAT3 occurs following phosphorylation of tyrosine 705 (pY705) by receptor-associated Janus kinases (JAKs) or other tyrosine kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonical activation of STAT3 occurs following phosphorylation of tyrosine 705 (pY705) by receptor-associated Janus kinases (JAKs) or other tyrosine kinases (Philips et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "f4d9779d-14e9-470a-bc1e-9302d925415d",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C9",
+      "claim": "The most common STAT3 mutations, Y640F and D661Y, render STAT3 constitutively active.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common STAT3 mutations, Y640F and D661Y, render STAT3 constitutively active (Jerez et al., 2012; Koskela et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "d0385054-cdcf-43dc-8c6f-c31dd80d5e68",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C10",
+      "claim": "STAT3 mutations rarely occur in solid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, STAT3 mutations rarely occur in solid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from TCGA data analysis.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "cba7803d-97e9-43ad-b1c8-3721b7a5fab9",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C11",
+      "claim": "Most cancers do not express high levels of activated STAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "TCGA pan-cancer analysis reveals that most cancers do not express high levels of activated STAT3 (https://www.cancer.gov).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on TCGA database analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "863272b9-5e07-477c-9f26-0c5fc8e59a56",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C12",
+      "claim": "Activation of STAT3 in KRAS mutant cancers led to the stabilization of epithelial differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study from our laboratory uncovered a novel link between STAT3 and cancer showing that activation of STAT3 in KRAS mutant cancers led to the stabilization of epithelial differentiation (D'Amico et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "21aa1720-0215-4fa7-95e6-f88104896c1b",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C13",
+      "claim": "Neither persistent activation of STAT3 nor its loss confers distinct growth advantages on tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Both in vitro and in vivo assays demonstrate that neither persistent activation of STAT3 nor its loss confers distinct growth advantages on tumor cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from in vitro and in vivo assays presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "f4becaa0-d41b-464a-8e9d-74e03e9822bc",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C14",
+      "claim": "Stabilization of the epithelial phenotype and attenuation of the TGF-\u03b2/SMAD4 pathway are two main driving forces behind STAT3 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Stabilization of the epithelial phenotype and attenuation of the TGF-\u03b2/SMAD4 pathway are two main driving forces behind STAT3 activity (Oft et al., 1996; David and Massagu\u00e9, 2018; Principe et al., 2021; Gough et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and experimental data from the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "6fcb1574-b76f-4d64-8096-574763363c2d",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C15",
+      "claim": "SMAD4 expressing tumors are poorly differentiated and exhibit mesenchymal features only in the absence of STAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "The data highlight antagonistic epistasis between SMAD4 and STAT3, where SMAD4 expressing tumors are poorly differentiated and exhibit mesenchymal features only in the absence of STAT3, while SMAD4-deficient tumors are well-differentiated and display epithelial morphology only in presence of STAT3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from tumor morphology studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "e8789989-2d26-4a72-91af-7d03a72dc11c",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C16",
+      "claim": "SMAD4-deficient tumors are well-differentiated and display epithelial morphology only in presence of STAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "The data highlight antagonistic epistasis between SMAD4 and STAT3, where SMAD4 expressing tumors are poorly differentiated and exhibit mesenchymal features only in the absence of STAT3, while SMAD4-deficient tumors are well-differentiated and display epithelial morphology only in presence of STAT3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from tumor morphology studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "354b00dd-c9d5-4585-8863-0cc8d0d54249",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C17",
+      "claim": "CRISPR/Cas9-mediated gene editing was used to generate isogenic STAT3 knockouts in KP MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR/Cas9-mediated gene editing was used to generate isogenic STAT3 knockouts in the KP MEFs, and gain-of-function (GOF) and loss-of-function (LOF) mutant STAT3 alleles were stably integrated into cells via lentiviral vectors (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "ea8787f5-2bcd-43d0-9813-c34d303fde40",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C18",
+      "claim": "STAT3 Y640F, K658Y, and STAT3C displayed increased levels of Y705 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported, STAT3 Y640F, K658Y, and STAT3C displayed increased levels of Y705 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Western blot analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "93b5c70f-f1f9-48e8-851b-8edb5fa8343c",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C19",
+      "claim": "Loss of STAT3 expression did not affect cell growth under standard culture conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of STAT3 expression did not affect cell growth under standard culture conditions (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on cell proliferation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "ce6b6e23-5c44-4967-80df-c71ba3e971d1",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C20",
+      "claim": "Loss of STAT3 did not affect KRAS-induced transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, loss of STAT3 did not affect KRAS-induced transformation. This is indicated by the ability of STAT3 KO cells to grow in multilayers and form transformed foci to the same extent as controls (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on focus formation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "ca944de3-4d0a-448c-a4de-4a1184928df0",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C21",
+      "claim": "STAT3 GOF mutations, Y640F, D661Y, and K658Y, impaired KRAS-induced focus formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, STAT3 GOF mutations, Y640F, D661Y, and K658Y, impaired KRAS-induced focus formation (p<0.005 by two-tailed T test, Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on focus formation assays with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "f87bb789-b01d-4a33-89fa-aec468224963",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C22",
+      "claim": "Only a small percentage of cells with hyperactive STAT3 Y640F had some ability to form transformed colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Through these real-time studies, we discovered that only a small percentage of cells with hyperactive STAT3 Y640F had some ability to form transformed colonies, while the majority of cells remained contact inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fluorescence microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "0f91acb9-abff-44b2-a5ff-baa3031dd42f",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C23",
+      "claim": "STAT3 S727E had no significant effect on cell transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that STAT3 S727E had no significant effect on cell transformation, while the Y640F/S727E double mutant displayed only a marginal increase in the number of transformed foci relative to STAT3 Y640F itself (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on focus formation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "c36a86ca-4789-40e0-9025-f14e606a6097",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C24",
+      "claim": "The hyperactive Y640F mutation exerts a dominant influence over S727E in KRAS-transformed MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the hyperactive Y640F mutation exerts a dominant influence over S727E in KRAS-transformed MEFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of Y640F and Y640F/S727E double mutant effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "4e723fe7-d588-486e-a605-372c785f484a",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C25",
+      "claim": "Lentiviral expression of wild-type or GOF STAT3 alleles, Y640F and D661Y, failed to transform primary p53KO MEFs or immortalized NIH 3T3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, lentiviral expression of wild-type or GOF STAT3 alleles, Y640F and D661Y, failed to transform primary p53KO MEFs or immortalized NIH 3T3 cells (Figure 1C and D; Figure 1\u2014figure supplement 2; data not shown), indicating that STAT3 does not display intrinsic oncogenicity on its own.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transformation assays in different cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "09f76c63-b463-48a8-b73d-0dd8b42ae09a",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C26",
+      "claim": "STAT3 does not display intrinsic oncogenicity on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, lentiviral expression of wild-type or GOF STAT3 alleles, Y640F and D661Y, failed to transform primary p53KO MEFs or immortalized NIH 3T3 cells (Figure 1C and D; Figure 1\u2014figure supplement 2; data not shown), indicating that STAT3 does not display intrinsic oncogenicity on its own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the inability of STAT3 to transform non-KRAS mutant cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "bfc691c3-aefc-465e-9247-178cf8329fcf",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C27",
+      "claim": "Tumors developed by STAT3 KO cells showed growth characteristics similar to those of STAT3 intact vector controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors developed by STAT3 KO cells showed growth characteristics similar to those of STAT3 intact vector controls (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on subcutaneous tumor formation assays in nude mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "306f6f81-628e-40e4-b6f6-c446f04b7c6f",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C28",
+      "claim": "Cells expressing the hyperactive STAT3 Y640F and K658Y mutations were delayed in their ability to form tumors in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells expressing the hyperactive STAT3 Y640F and, to a lesser extent, K658Y mutations were delayed in their ability to form tumors in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on tumor formation kinetics in nude mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "bc93d670-0bf8-4130-95a6-47cde4f0a28c",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C29",
+      "claim": "Cell populations with high STAT3 pY705 expression developed tumors more slowly compared to low expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Following implantation in mice, cell populations with high STAT3 pY705 expression developed tumors more slowly compared to low expressing cells (p=0.005, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on tumor formation assays using FACS-sorted cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "034d70cf-436d-40cd-a115-d17919bd20c7",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C30",
+      "claim": "There is a dose-dependent ability of hyperactive STAT3 Y640F to limit tumorigenicity of KRAS-transformed MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, there is a dose-dependent ability of hyperactive STAT3 Y640F to limit tumorigenicity of KRAS-transformed MEFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between STAT3 pY705 levels and tumor formation delay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "5b936398-1413-4ffb-aeb7-ef4c2e3ab243",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C31",
+      "claim": "The frequency of tumor-initiating cells was reduced by approximately ninefold in high STAT3 Y640F expressing cells compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Limiting dilution assays in nude mice revealed that the frequency of tumor-initiating cells was reduced by approximately ninefold in high STAT3 Y640F expressing cells compared to control cells (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on extreme limiting dilution assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "c260b025-0312-4d63-9f8d-cebb77444af3",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C32",
+      "claim": "The DBD mutants of STAT3 Y640F lost the ability to attenuate KRAS-mediated MEF transformation despite their continuous pY705 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the DBD mutants of STAT3 Y640F lost the ability to attenuate KRAS-mediated MEF transformation despite their continuous pY705 phosphorylation (Figure 2E; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on focus formation assays with DNA binding domain mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "8e161e32-196f-4213-b3f9-c4e7b7e186e4",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C33",
+      "claim": "STAT3 Y640F-mediated inhibition of tumor development and KRAS-induced MEF transformation is dependent on STAT3 phosphorylation at Y705, DNA binding, and gene-specific transactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that STAT3 Y640F-mediated inhibition of tumor development and KRAS-induced MEF transformation is dependent on STAT3 phosphorylation at Y705, DNA binding, and gene-specific transactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from experiments with various STAT3 mutants affecting phosphorylation and DNA binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "d52b203f-5179-40dc-b642-68b1cc5b3661",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C34",
+      "claim": "Western blot analyses of control and STAT3 Y640F-expressing MEFs showed unperturbed RAS/MAPK and PI3K/AKT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analyses of control and STAT3 Y640F-expressing MEFs showed unperturbed RAS/MAPK and PI3K/AKT signaling (as assessed by phosphorylated ERK1/2 and AKT1), suggesting that STAT3 does not directly alter these downstream KRAS effectors (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on Western blot analysis of pathway markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "930773ab-0ecf-4b0a-a0b5-0d017833b9f3",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C35",
+      "claim": "STAT3 does not directly alter RAS/MAPK and PI3K/AKT downstream KRAS effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analyses of control and STAT3 Y640F-expressing MEFs showed unperturbed RAS/MAPK and PI3K/AKT signaling (as assessed by phosphorylated ERK1/2 and AKT1), suggesting that STAT3 does not directly alter these downstream KRAS effectors (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of changes in phosphorylation of ERK1/2 and AKT1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "58f144cb-54f8-45a9-b9da-1882042dcf41",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C36",
+      "claim": "Expression of STAT3 Y640F in MEFs resulted in the differential expression of approximately 290 genes compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq analysis showed that expression of STAT3 Y640F in MEFs resulted in the differential expression of approximately 290 genes (p<0.05) compared to control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "20bb004d-4eda-4f9c-8048-3357b020ba40",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C37",
+      "claim": "Biological processes attenuated by hyperactive STAT3 included differentiation and tissue development, and pathways mediated by TGF-\u03b2 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological processes attenuated by hyperactive STAT3 included differentiation and tissue development, and pathways mediated by TGF-\u03b2 signaling (Oft et al., 1996; David and Massagu\u00e9, 2018; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene ontology analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "61820591-0732-488e-a94d-2f5b9672cd01",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C38",
+      "claim": "Ablation of the TGF-\u03b2 signaling components TGFBR2 or SMAD4 in KP MEFs nearly eliminated foci formation and effects of STAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, ablation of the TGF-\u03b2 signaling components TGFBR2 or SMAD4 in KP MEFs using CRISPR/Cas9-mediated gene editing nearly eliminated foci formation and effects of STAT3 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on focus formation assays with TGFBR2 and SMAD4 knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "10704768-d882-4f4b-b804-4a85d4291a46",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C39",
+      "claim": "Hyperactive STAT3 interferes with KRAS-induced transformation through suppression of the TGF-\u03b2 pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The results support the premise that hyperactive STAT3 interferes with KRAS-induced transformation through suppression of the TGF-\u03b2 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the effects of TGF-\u03b2 pathway ablation on STAT3-mediated suppression of transformation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "3328ae57-3519-4092-a81e-eb9078cf9288",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C40",
+      "claim": "KRAS mutant cancers tend to fall into two classes based on their canonical KRAS and TGF-\u03b2 signaling: KRAS-dependent or KRAS-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable feature of KRAS mutant cancers, including those of the pancreas, colon, and lung, is that they tend to fall into two classes based on their canonical KRAS and TGF-\u03b2 signaling; those that have a strong dependence on KRAS signaling (KRAS-dependent) or those that have less dependence on canonical KRAS signaling (KRAS-independent; Singh et al., 2009; Yuan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "673b5c09-85e8-4f28-8504-564fa04e920b",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C41",
+      "claim": "KRAS-dependent tumors have been associated with an epithelial gene signature and morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "KRAS-dependent tumors have been associated with an epithelial gene signature and morphology, whereas KRAS-independent tumors show enriched expression of mesenchymal genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "4ed10d71-cbca-46a0-9f35-8875c09c9224",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C42",
+      "claim": "KRAS-independent tumors show enriched expression of mesenchymal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "KRAS-dependent tumors have been associated with an epithelial gene signature and morphology, whereas KRAS-independent tumors show enriched expression of mesenchymal genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "9bfd44cb-e7db-4ff8-bf2c-f90cc43384d0",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C43",
+      "claim": "Pancreatic tumors were detected within 3 weeks following implantation of parental control, STAT3 knockout, SMAD4 KO, or TGFBR2 KO PDAC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic tumors were detected within 3 weeks following implantation of 104 parental control, STAT3 knockout (KO), SMAD4 KO, or TGFBR2 KO PDAC cells, and there was no statistical difference in tumor latency between the groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on orthotopic tumor formation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "3bbb67e3-df7c-42b1-96d5-9e32ef6f2f62",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C44",
+      "claim": "There was no statistical difference in tumor latency between parental control, STAT3 knockout, SMAD4 KO, or TGFBR2 KO PDAC cell groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Pancreatic tumors were detected within 3 weeks following implantation of 104 parental control, STAT3 knockout (KO), SMAD4 KO, or TGFBR2 KO PDAC cells, and there was no statistical difference in tumor latency between the groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of tumor formation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "f85e4bfa-368e-4750-8ccc-942f5fc9b44f",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C45",
+      "claim": "Tumors in the parental (intact) group were characterized by classical adenocarcinoma-like morphology with glandular structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors in the parental (intact) group were characterized by classical adenocarcinoma-like morphology with glandular structures (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis of tumor sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "43b7916b-d4b0-42a5-8c6d-8af23ec242c0",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C46",
+      "claim": "KRAS KO tumors displayed a highly sarcomatoid morphology indicative of full EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, KRAS KO tumors displayed a highly sarcomatoid morphology indicative of full EMT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on histological analysis of tumor sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "1efe1f63-aab9-47d8-b014-4fe13550b9f8",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C47",
+      "claim": "Loss of STAT3 induced a morphological change compatible with EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of STAT3 also induced a morphological change compatible with EMT, whereas overexpression of hyperactive STAT3 Y640F resulted in the sporadic co-occurrence of squamous and glandular differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on histological analysis of tumor sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "cb55970b-3c21-445d-b160-a6d8599d08a8",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C48",
+      "claim": "Overexpression of hyperactive STAT3 Y640F resulted in the sporadic co-occurrence of squamous and glandular differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of STAT3 also induced a morphological change compatible with EMT, whereas overexpression of hyperactive STAT3 Y640F resulted in the sporadic co-occurrence of squamous and glandular differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on histological analysis of tumor sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "84259ad6-5ed3-4aa7-9497-4c1b33a8e592",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C49",
+      "claim": "Loss of SMAD4 or TGFBR2 was associated with increased epithelial differentiation relative to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of SMAD4 or TGFBR2 was associated with increased epithelial differentiation relative to controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on histological analysis of tumor sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "6e26ccd0-3348-4b42-a4f7-cdc81ef72902",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C50",
+      "claim": "The TGF-\u03b2 pathway is a key regulator of tumor cell differentiation and malignant behavior, but not growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous findings showing that the TGF-\u03b2 pathway is a key regulator of tumor cell differentiation and malignant behavior, but not growth rate (Izeradjene et al., 2007; Dai et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "5f3f95c8-1a3e-463c-8315-675fd25f1498",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C51",
+      "claim": "Comparative RNA-seq analyses of parental KPC control and STAT3 KO cell lines revealed distinct transcriptional profiles that included more than 700 differentially expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative RNA-seq analyses of parental KPC control and STAT3 KO cell lines revealed distinct transcriptional profiles that included more than 700 differentially expressed genes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "7805a50e-b6d2-4249-b5e0-d32503bbb0d1",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C52",
+      "claim": "The enriched genes in KPC parental cells included those corresponding to the major structural proteins in epithelial cells, such as cadherins, claudins, and tight junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "The enriched genes in KPC parental cells included those corresponding to the major structural proteins in epithelial cells, such as cadherins, claudins, and tight junctions (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "60420966-63f7-4fd4-83d1-e26bddc457ab",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C53",
+      "claim": "STAT3 KO cells were enriched in signatures of EMT and embryonic organ morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, STAT3 KO cells were enriched in signatures of EMT and embryonic organ morphogenesis (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene ontology analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "0e74407e-950b-4d5e-a7a9-569cb71e65f7",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C54",
+      "claim": "Loss of STAT3 is associated with activation of partial rather than complete EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall pattern of gene expression suggests that loss of STAT3 is associated with activation of partial rather than complete EMT, since epithelial markers (e.g. CDH1 and EpCAM) continue to be expressed, but mesenchymal markers (e.g. FN1 and various collagens) have been acquired (Brabletz et al., 2018; Lambert and Weinberg, 2021; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the co-expression of epithelial and mesenchymal markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "1f7a4d8a-9473-4d46-bf2e-0bad3483d7f3",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C55",
+      "claim": "STAT3 KO cells had a significant increase in TGFB1, TGFB3 and INHBA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these genes, STAT3 KO cells had a significant increase in TGFB1, TGFB3 and INHBA expression (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA-seq analysis of TGF-\u03b2 family genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "8c3c1334-3eb4-495c-af9d-50c5af524d33",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C56",
+      "claim": "The expression of EMT-activating transcription factors SNAI, TWIST and ZEB was not strongly affected in STAT3 KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of EMT-activating transcription factors SNAI, TWIST and ZEB was not strongly affected, indicating that induction of EMT involves additional STAT3 dependent regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA-seq analysis of transcription factor expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "4069f79e-98e7-4ab9-9d82-509222bea51b",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C57",
+      "claim": "Induction of EMT involves additional STAT3 dependent regulators beyond SNAI, TWIST and ZEB.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of EMT-activating transcription factors SNAI, TWIST and ZEB was not strongly affected, indicating that induction of EMT involves additional STAT3 dependent regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that EMT occurs without strong changes in classical EMT transcription factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "b77bb87c-99c7-4eaf-a131-6bbfeb3c8d3f",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C58",
+      "claim": "STAT3 and KRAS KO KPC cells displayed similar levels of EMT at the level of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed EMT scores using gene expression values of epithelial (EPI) and mesenchymal (MES) genes. STAT3 and KRAS KO KPC cells displayed similar levels of EMT at the level of gene expression (Figure 2\u2014figure supplement 1; Serresi et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computed EMT scores from gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "49e1e3ff-7076-4ed3-a3ea-f767749e21cb",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C59",
+      "claim": "SMAD4 KO cells displayed reduced expression of EMT-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SMAD4 KO cells displayed reduced expression of EMT-related genes, while genes involved in epithelial differentiation and RAS dependency were among the most upregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "0522783d-315f-41d1-918a-9eec673a62e1",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C60",
+      "claim": "Comparative analysis between STAT3 and KRAS knockout KPC cells revealed approximately 250 STAT3 target genes that were similarly up- or down-regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, comparative analysis between STAT3 and KRAS knockout KPC cells revealed approximately 250 STAT3 target genes (>30%) that were similarly up- or down-regulated (Pearson's r=0.88, p<0.00001), suggesting that STAT3 loss partially phenocopies the effects of KRAS inactivation (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative RNA-seq analysis with statistical correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "98875eeb-17cd-4a89-88e9-58979432d802",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C61",
+      "claim": "STAT3 loss partially phenocopies the effects of KRAS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, comparative analysis between STAT3 and KRAS knockout KPC cells revealed approximately 250 STAT3 target genes (>30%) that were similarly up- or down-regulated (Pearson's r=0.88, p<0.00001), suggesting that STAT3 loss partially phenocopies the effects of KRAS inactivation (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high correlation of gene expression changes between STAT3 and KRAS knockouts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "015c44c6-d496-429b-8fb2-4fd3748e70eb",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C62",
+      "claim": "RAS dependency scores had a significant positive correlation with STAT3 and KRAS expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed RAS dependency scores had a significant positive correlation with STAT3 and KRAS expression, and a negative correlation with SMAD4 expression (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computed RAS dependency scores from gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "653b1ffa-9e3b-4f7a-aa69-6885a09f79aa",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C63",
+      "claim": "RAS dependency scores had a negative correlation with SMAD4 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed RAS dependency scores had a significant positive correlation with STAT3 and KRAS expression, and a negative correlation with SMAD4 expression (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computed RAS dependency scores from gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "9de1c141-b1f1-4a28-9cb0-3177f1eafa26",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C64",
+      "claim": "STAT3 is a genetic modifier that can regulate KRAS dependency and tumor development through counterposing EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data indicate that STAT3 is a genetic modifier that can regulate KRAS dependency and tumor development through counterposing EMT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "d1645ed3-0251-4d61-a1db-8ff8ba84faf4",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C65",
+      "claim": "TGF-\u03b2-induced EMT appears to confer adaptive resistance to KRAS inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent antagonism between STAT3 and induction of EMT was of particular interest, as TGF-\u03b2-induced EMT appears to confer adaptive resistance to KRAS inhibition (Singh et al., 2009; Hou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "9a6ace64-ccdb-40bb-ae27-4eb9dbe4ec37",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C66",
+      "claim": "STAT3/SMAD4 and STAT3/TGFBR2 double knockout cell lines formed pancreatic tumors in mice with distinct histological features from single knockouts.",
+      "claim_type": "EXPLICIT",
+      "source": "DKO cell lines formed pancreatic tumors in mice, but their histological features were distinct from SMAD4 or TGFBR2 single knockouts as they produced mixed epithelial/mesenchymal morphologies with cells expressing both E-cadherin and vimentin (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis and Western blot analysis of tumor markers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "0821e7a6-7f01-4847-b775-75576bd331da",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C67",
+      "claim": "SMAD4 or TGFBR2 intact tumors displayed features of EMT in the absence of STAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD4 or TGFBR2 intact tumors displayed features of EMT in the absence of STAT3, whereas SMAD4 or TGFBR2 KO tumors displayed a well-differentiated epithelial phenotype only in the presence of STAT3 (Figures 3A and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis of tumors with different genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "03dcb14d-6468-4a99-9e1a-e026e03fbc61",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C68",
+      "claim": "SMAD4 or TGFBR2 KO tumors displayed a well-differentiated epithelial phenotype only in the presence of STAT3.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD4 or TGFBR2 intact tumors displayed features of EMT in the absence of STAT3, whereas SMAD4 or TGFBR2 KO tumors displayed a well-differentiated epithelial phenotype only in the presence of STAT3 (Figures 3A and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis of tumors with different genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "83e896f6-4e71-411f-8fbc-deb727ee2cc5",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C69",
+      "claim": "Functional antagonism of STAT3 and TGF-\u03b2/SMAD4 controls PDAC development and KRAS dependency.",
+      "claim_type": "EXPLICIT",
+      "source": "The data reinforce the notion that functional antagonism of STAT3 and TGF-\u03b2/SMAD4 controls PDAC development and KRAS dependency (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the genetic interaction studies between STAT3 and SMAD4/TGFBR2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "92ea0a89-a398-4de8-8029-04392247a45c",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C70",
+      "claim": "STAT3 and SMAD4-regulated gene signatures demonstrated significant statistical correspondence when aligned with human PDAC samples from the TCGA cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "When aligned with human PDAC samples from the TCGA cohort (stage I/II tumors), STAT3 and SMAD4-regulated gene signatures demonstrated significant statistical correspondence, supporting the selective antagonism of STAT3 and SMAD4 (Pearson's r>0.5, p<0.00001; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis of gene signatures with human tumor data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "2ca07761-4c57-4227-a50e-229a604b91cf",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C71",
+      "claim": "STAT3-regulated gene expression is closely associated with epithelial differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Results demonstrate that STAT3-regulated gene expression is closely associated with epithelial differentiation, while SMAD4-regulated gene expression is strongly associated with EMT (Pearson's r>0.7) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis with human tumor samples classified by epithelial/mesenchymal status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "3ca6a8f7-f5b0-4c39-9ae6-7b1d639c3814",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C72",
+      "claim": "SMAD4-regulated gene expression is strongly associated with EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Results demonstrate that STAT3-regulated gene expression is closely associated with epithelial differentiation, while SMAD4-regulated gene expression is strongly associated with EMT (Pearson's r>0.7) (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis with human tumor samples classified by epithelial/mesenchymal status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "f5cc95a3-4282-4d3c-af28-343793bdc25b",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C73",
+      "claim": "KRAS-dependent tumors showed enriched expression of epithelial genes and reduced expression of mesenchymal genes.",
+      "claim_type": "EXPLICIT",
+      "source": "KRAS-dependent tumors showed enriched expression of epithelial genes (EPI) and reduced expression of mesenchymal genes (MES), whereas the KRAS-independent samples displayed the inverse, as previously reported (Singh et al., 2009; Yuan et al., 2018; Tan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on gene expression analysis of human tumor samples with support from citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "d1d9dede-f3ae-41c2-830a-d38c7dab241b",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C74",
+      "claim": "The KPC STAT3 knockout gene signature co-segregated with human KRAS-independent/mesenchymal PDAC tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the KPC STAT3 knockout gene signature (i.e. upregulated genes) co-segregated with human KRAS-independent/mesenchymal PDAC tumors, while the SMAD4 knockout gene signature (i.e. upregulated genes) co-segregated with human KRAS-dependent/epithelial tumors (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis of mouse gene signatures with human tumor classifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "ca73d726-1db9-4ab8-9f46-919280c4f249",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C75",
+      "claim": "The SMAD4 knockout gene signature co-segregated with human KRAS-dependent/epithelial tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the KPC STAT3 knockout gene signature (i.e. upregulated genes) co-segregated with human KRAS-independent/mesenchymal PDAC tumors, while the SMAD4 knockout gene signature (i.e. upregulated genes) co-segregated with human KRAS-dependent/epithelial tumors (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis of mouse gene signatures with human tumor classifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "a3a4747f-dbca-4a0a-b599-83afeff5ad61",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C76",
+      "claim": "Liver is the main site of PDAC metastases.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver is the main site of PDAC metastases, and pancreatic cancer metastases commonly display a stabilized epithelial phenotype (Carstens et al., 2021; Reichert et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "b8046b92-94c5-44e8-963d-09c7bf386284",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C77",
+      "claim": "Pancreatic cancer metastases commonly display a stabilized epithelial phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver is the main site of PDAC metastases, and pancreatic cancer metastases commonly display a stabilized epithelial phenotype (Carstens et al., 2021; Reichert et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "80d65a0d-796a-415c-aaac-983f6c0bf2ab",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C78",
+      "claim": "The STAT3 transcription factor acts as a genetic modifier of EMT and KRAS dependency in a mouse model of pancreatic carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide evidence that the STAT3 transcription factor acts as a genetic modifier of EMT and KRAS dependency in a mouse model of pancreatic carcinogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "0f78477d-e75c-44a0-95b1-1a1b9e71d7a4",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C79",
+      "claim": "STAT3 plays a crucial role in guiding the morphological and functional characteristics of tumors by inhibiting EMT and maintaining epithelial identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that neither persistent activation nor genetic ablation of STAT3 confers a selective growth advantage on tumor cells. Instead, STAT3 plays a crucial role in guiding the morphological and functional characteristics of tumors by inhibiting EMT and maintaining epithelial identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental observations of tumor morphology and gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "160e429b-25aa-4ce4-aacc-0619fcdd8765",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C80",
+      "claim": "The involvement of STAT3 in cancer has been predominantly associated with chronic inflammation and fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "While the involvement of STAT3 in cancer has been predominantly associated with chronic inflammation and fibrosis (Laklai et al., 2016; Ji et al., 2019), our data underscore the significance of epistasis as a key factor that underlies functional antagonism between STAT3 and TGF-\u03b2/SMAD4 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "a6259bed-8578-4499-b068-2e84124b536a",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C81",
+      "claim": "Oncogenic KRAS mutations are observed in approximately 90% of pancreatic cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Oncogenic KRAS mutations are observed in approximately 90% of pancreatic cancers and less frequently in other cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about KRAS mutation frequency in pancreatic cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "10e26bfe-ff42-4da4-ae26-ca132de0ad70",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C82",
+      "claim": "The role of KRAS in PDAC maintenance has shown limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the role of KRAS in PDAC maintenance, once held to be nearly absolute, has shown limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "a29b4a62-be7f-4bc6-8b1b-34f922f1705e",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C83",
+      "claim": "Cellular morphology (epithelial versus mesenchymal) appears to be one of the most noticeable manifestations of different degrees of KRAS dependency.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular morphology (epithelial versus mesenchymal) appears to be one of the most noticeable manifestations of different degrees of KRAS dependency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observations in the study and previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "ac5de1d8-bdc5-4376-b8d1-0d26a4a55e15",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C84",
+      "claim": "Approximately 50% of moderately to well-differentiated tumors in the TCGA cohort are SMAD4 wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Although SMAD4 classically promotes EMT and KRAS independence (Singh et al., 2009), approximately 50% of moderately to well-differentiated tumors in the TCGA cohort are, in fact, SMAD4 wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of TCGA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "9bf8cb2b-4a86-4fd4-a5b0-6b092f94db28",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C85",
+      "claim": "SMAD4 mutation alone is not sufficient to predispose cancer cells to a particular RAS phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that SMAD4 mutation alone is not sufficient to predispose cancer cells to a particular RAS phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that many well-differentiated tumors are SMAD4 wild-type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "14372bb4-af3e-4953-8271-bf491cfccb73",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C86",
+      "claim": "STAT3 sustains the KRAS-dependent phenotype and tumor aggressiveness, with the potential for improved efficacy of anti-RAS drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "STAT3 sustains the KRAS-dependent phenotype and tumor aggressiveness, with the potential for improved efficacy of anti-RAS drugs, whereas SMAD4 promotes KRAS independence at the expense of enhanced therapy resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional relationship between STAT3 and KRAS dependency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "cdb7fae8-c370-46ce-b538-bd4528aa5037",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C87",
+      "claim": "SMAD4 promotes KRAS independence at the expense of enhanced therapy resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "STAT3 sustains the KRAS-dependent phenotype and tumor aggressiveness, with the potential for improved efficacy of anti-RAS drugs, whereas SMAD4 promotes KRAS independence at the expense of enhanced therapy resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional relationship between SMAD4 and KRAS independence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "f61a8b91-6eb7-4c0b-956d-3a700d8e3b36",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C88",
+      "claim": "The epistatic relationship between SMAD4 and STAT3 has implications for tumor aggressiveness, metastatic propensity, and therapeutic resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the epistatic relationship between SMAD4 and STAT3 has implications for tumor aggressiveness, metastatic propensity, and therapeutic resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion about the clinical implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "93e7d27d-e07b-4a73-80fb-e5d941ce084e",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C89",
+      "claim": "Large-scale analysis of patient-derived PDACs and pancreatic cell lines reveal low to medium levels of STAT3 Y705 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Large-scale analysis of patient-derived PDACs (n=84) and pancreatic cell lines from the Cancer Cell Line Encyclopedia (n=39) reveal low to medium levels of STAT3 Y705 phosphorylation (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of patient samples and cell line data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "cf608cf7-f8a6-4ed3-9d15-1d04320da25f",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C90",
+      "claim": "Endogenous phosphorylation/activation of STAT3 appears able to function within a narrow operating range in multiple solid tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous phosphorylation/activation of STAT3 appears able to function within a narrow operating range in multiple solid tumor types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of low to medium STAT3 phosphorylation levels across tumor types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "2012f401-7295-49b0-9b8a-526c610f68da",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C91",
+      "claim": "There exist KRAS mutant cell lines whose survival and growth are no longer dependent on continued KRAS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further complicating the analysis, there exist KRAS mutant cell lines whose survival and growth are no longer dependent on continued KRAS activity (Ischenko et al., 2021; Muzumdar et al., 2017; Lentsch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "8d857340-be6f-49fa-b241-54a50ef905a3",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C92",
+      "claim": "STAT3 lacks classical driver properties in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used genetic analyses to identify STAT3 as a relevant dependency in KRAS-driven cancer. While in vitro evidence indicates that STAT3 lacks classical driver properties, it nevertheless plays an essential role in cancer maintenance and epithelial-mesenchymal plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the inability of STAT3 to transform cells on its own.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "fc54fcc8-8747-44aa-ab01-bcb371832101",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C93",
+      "claim": "STAT3 plays an essential role in cancer maintenance and epithelial-mesenchymal plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "While in vitro evidence indicates that STAT3 lacks classical driver properties, it nevertheless plays an essential role in cancer maintenance and epithelial-mesenchymal plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental data showing STAT3's effects on EMT and tumor morphology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "769a8be5-39f7-4ef3-877f-803ed9755ed4",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "claim_id": "C94",
+      "claim": "The rarity of STAT3 GOF mutations in human cancers with mutant KRAS may be explained by STAT3's role in cancer maintenance and epithelial-mesenchymal plasticity rather than as a classical driver.",
+      "claim_type": "IMPLICIT",
+      "source": "This may explain the rarity of STAT3 GOF mutations in human cancers with mutant KRAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings that STAT3 GOF mutations impair transformation in KRAS mutant cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7472013b-dd8b-4a34-8515-a90947181351",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "STAT3 gain-of-function (GOF) mutations (Y640F, D661Y, K658Y) impair KRAS-induced transformation in MEFs, while STAT3 loss-of-function or knockout does not affect transformation or cell growth. STAT3 GOF mutations show increased Y705 phosphorylation but suppress focus formation, with only a small percentage of Y640F-expressing cells forming transformed colonies. STAT3 alone cannot transform non-KRAS mutant cells, indicating it lacks intrinsic oncogenic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C26 provide converging evidence from multiple experimental approaches (CRISPR knockouts, GOF/LOF mutants, focus formation assays, Western blots) demonstrating that hyperactive STAT3 suppresses KRAS-driven transformation while STAT3 loss has no effect. The data are internally consistent, include appropriate controls, and statistical significance is reported (p<0.005 for C21). The conclusion that STAT3 lacks intrinsic oncogenicity (C26) is well-supported by negative transformation results in non-KRAS mutant cells (C25).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "c94c313e-0d21-4f72-aa80-5c51fd7fa6ed",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vivo tumor formation assays demonstrate that STAT3 knockout does not affect tumorigenicity, while hyperactive STAT3 Y640F and K658Y mutations delay tumor formation in a dose-dependent manner. High STAT3 pY705 expression correlates with slower tumor development (p=0.005), and limiting dilution assays show approximately ninefold reduction in tumor-initiating cell frequency in high STAT3 Y640F-expressing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 present consistent in vivo data from subcutaneous tumor formation assays, FACS-sorted cell populations, and limiting dilution experiments. The dose-dependent relationship between STAT3 activity and tumor suppression is demonstrated through multiple complementary approaches with statistical support. The ninefold reduction in tumor-initiating cells (C31) provides quantitative evidence for STAT3's suppressive effect on tumorigenicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "27e5651d-051a-4e51-9d9c-96a25df661bc",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "STAT3 Y640F-mediated suppression of KRAS-induced transformation requires Y705 phosphorylation, DNA binding capability, and gene-specific transactivation. DNA binding domain (DBD) mutants and phosphorylation-defective mutants lose the ability to suppress transformation despite maintaining Y705 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 demonstrate mechanistic requirements through structure-function analysis using DBD mutants (R382W, V463\u0394) and phosphorylation mutants. The loss of suppressive activity in DBD mutants despite continued phosphorylation (C32) provides strong evidence that transcriptional activity is required. The conclusion (C33) is well-supported by the mutant analysis and luciferase reporter validation of impaired transcriptional activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "9c396767-8385-4c7f-8049-98a4ac4d660a",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "STAT3 Y640F expression does not alter RAS/MAPK or PI3K/AKT signaling but leads to differential expression of ~290 genes, with gene ontology analysis revealing attenuation of TGF-\u03b2 signaling pathways. Ablation of TGF-\u03b2 pathway components (TGFBR2 or SMAD4) eliminates both focus formation and STAT3 effects, supporting that STAT3 suppresses KRAS-induced transformation through TGF-\u03b2 pathway inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 provide mechanistic insight through RNA-seq (C36), pathway analysis (C34, C37), and genetic epistasis experiments (C38). The Western blot data showing unperturbed ERK1/2 and AKT1 phosphorylation (C34) appropriately rules out direct effects on canonical KRAS effectors. The genetic requirement for TGF-\u03b2 pathway components (C38) provides strong evidence for the proposed mechanism (C39), though the inference could be strengthened with rescue experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Orthotopic pancreatic tumor formation from KPC cells shows no difference in latency between parental, STAT3 KO, SMAD4 KO, or TGFBR2 KO cells, but reveals distinct morphological differences. STAT3 KO and KRAS KO tumors display mesenchymal/sarcomatoid morphology indicative of EMT, while SMAD4/TGFBR2 KO tumors show increased epithelial differentiation. STAT3 Y640F overexpression produces mixed squamous and glandular differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 present consistent histological observations from orthotopic tumor models with appropriate sample sizes (n=3-15 mice per group). The morphological characterization is supported by H&E staining images (Figure 3A) and is consistent with the proposed role of STAT3 in maintaining epithelial identity. The lack of effect on tumor latency (C44) while showing morphological changes supports the conclusion that STAT3 affects differentiation rather than growth rate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of KPC parental versus STAT3 KO cells reveals >700 differentially expressed genes. Parental cells are enriched in epithelial structural proteins (cadherins, claudins, tight junctions), while STAT3 KO cells show enrichment in EMT and embryonic morphogenesis signatures. Gene expression patterns suggest partial rather than complete EMT, with increased TGFB1, TGFB3, and INHBA expression but minimal changes in classical EMT transcription factors (SNAI, TWIST, ZEB).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 present comprehensive transcriptomic analysis with appropriate bioinformatic approaches (GO analysis, gene expression profiling). The characterization of partial EMT (C54) is well-supported by the co-expression of epithelial and mesenchymal markers. The observation that classical EMT transcription factors are not strongly affected (C56) while EMT occurs (C53) appropriately leads to the inference of alternative STAT3-dependent regulators (C57), though these regulators are not fully identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "1d24c241-9533-4124-bd93-f43ffca2ea50",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "STAT3 and KRAS knockout KPC cells display similar EMT levels by computed EMT scores, with ~250 genes (>30%) similarly regulated (Pearson's r=0.88, p<0.00001), suggesting STAT3 loss partially phenocopies KRAS inactivation. In contrast, SMAD4 KO cells show reduced EMT-related gene expression. RAS dependency scores positively correlate with STAT3 and KRAS expression and negatively correlate with SMAD4 expression, indicating STAT3 is a genetic modifier regulating KRAS dependency through counterposing EMT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 provide strong statistical evidence (Pearson correlation with highly significant p-values) for the relationship between STAT3 and KRAS. The use of computed EMT scores (C58) and RAS dependency indices (C62-C63) provides quantitative support for the conclusions. The comparative analysis between STAT3, KRAS, and SMAD4 knockouts (C59-C63) demonstrates consistent patterns supporting the main conclusion (C64). The statistical rigor and convergent evidence from multiple analytical approaches strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "3da29330-6633-44a0-95c1-79245aeb06c9",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genetic epistasis experiments demonstrate antagonistic interaction between STAT3 and SMAD4/TGFBR2. SMAD4-expressing tumors show mesenchymal features only in STAT3's absence, while SMAD4-deficient tumors display epithelial morphology only with STAT3 present. Double knockout (STAT3/SMAD4 or STAT3/TGFBR2) tumors show mixed epithelial/mesenchymal morphologies with co-expression of E-cadherin and vimentin, demonstrating functional antagonism controlling PDAC development and KRAS dependency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 and C66-C69 present systematic genetic interaction studies with appropriate single and double knockout controls. The histological characterization is supported by both H&E staining and Western blot analysis of epithelial/mesenchymal markers (C66). The epistatic relationship is clearly demonstrated through the conditional phenotypes (C15-C16, C67-C68), where tumor morphology depends on the combined genotype rather than individual gene status. This provides strong evidence for functional antagonism (C69).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "91110d10-4939-43a0-a56d-ce3a8cf87fe1",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mouse STAT3 and SMAD4 gene signatures correlate with human PDAC samples from TCGA (Pearson's r>0.5-0.7, p<0.00001). STAT3-regulated genes associate with epithelial differentiation and KRAS-dependent tumors, while SMAD4-regulated genes associate with EMT and KRAS-independent tumors. The KPC STAT3 KO signature co-segregates with human KRAS-independent/mesenchymal tumors, while SMAD4 KO signature co-segregates with KRAS-dependent/epithelial tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 demonstrate translational relevance through correlation analysis with human tumor databases (TCGA, COMPASS). The statistical significance is strong (p<0.00001) with substantial correlation coefficients (r>0.5-0.7). The bidirectional validation\u2014showing both STAT3 and SMAD4 signatures correlate appropriately with human tumor classifications (C74-C75)\u2014strengthens the conclusions. The analysis appropriately uses stage-matched tumors and curated SMAD4 wild-type samples, though the correlative nature limits mechanistic conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "STAT3 acts as a genetic modifier of TGF-\u03b2-induced EMT in KRAS mutant pancreatic cancer. Neither STAT3 activation nor loss confers growth advantages, but STAT3 plays a crucial role in tumor maintenance and epithelial homeostasis by stabilizing epithelial phenotype and attenuating the TGF-\u03b2/SMAD4 pathway. STAT3 is essential for cancer maintenance and epithelial-mesenchymal plasticity despite lacking classical driver properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C5, C13-C14, C78-C79, and C93 represent the main conclusions synthesized from the experimental data. These are well-supported by the convergent evidence from in vitro transformation assays (showing no growth advantage from STAT3 manipulation), in vivo tumor studies (demonstrating morphological but not growth effects), transcriptomic analyses (revealing STAT3's role in epithelial homeostasis), and genetic epistasis experiments (establishing antagonism with TGF-\u03b2/SMAD4). The characterization of STAT3 as a modifier rather than driver is appropriately supported by the lack of transformation in non-KRAS contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "d6d5d1e6-03e1-4adc-87b6-2a9056b47085",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Gene expression profiling identifies more than 200 genes commonly regulated by STAT3 and oncogenic KRAS in pancreatic cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 is directly supported by RNA-seq data presented in the abstract and detailed in C60, which reports ~250 genes (>30%) similarly regulated between STAT3 and KRAS knockouts with high statistical correlation (r=0.88, p<0.00001). The claim is consistent with the experimental data and appropriately quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "7624ea0b-ed3b-4c38-a5df-37fa47be3ede",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Approximately 50% of moderately to well-differentiated tumors in the TCGA cohort are SMAD4 wild-type, indicating that SMAD4 mutation alone is not sufficient to predispose cancer cells to a particular RAS phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 present analysis of TCGA data showing that SMAD4 status alone does not determine tumor phenotype. This observation appropriately motivates the investigation of additional modifiers like STAT3. The inference (C85) is reasonable given the data, though it would be strengthened by more detailed analysis of the SMAD4 wild-type tumors' characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "e6492d1e-6bbe-460c-8f10-5cd5c7129fa3",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Large-scale analysis of patient-derived PDACs (n=84) and pancreatic cell lines (n=39) reveals low to medium levels of STAT3 Y705 phosphorylation, suggesting STAT3 functions within a narrow operating range in multiple solid tumor types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 provide important context from human samples and cell line databases. The observation of low to medium STAT3 phosphorylation levels (C89) across samples is appropriately documented. The inference about a narrow operating range (C90) is reasonable given the data, though the functional implications of this observation could be more directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "b0401795-7ded-4c7a-8337-004c833eb232",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "STAT3 sustains the KRAS-dependent phenotype with potential for improved anti-RAS drug efficacy, while SMAD4 promotes KRAS independence with enhanced therapy resistance. The epistatic relationship between SMAD4 and STAT3 has implications for tumor aggressiveness, metastatic propensity, and therapeutic resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C88 extend beyond the experimental data to speculate about therapeutic implications. While the relationship between STAT3, SMAD4, and KRAS dependency is well-established by the data, the claims about drug efficacy (C86) and therapy resistance (C87) are not directly tested. These are reasonable hypotheses based on the findings, but would require validation with drug treatment experiments. The evidence type appropriately includes 'SPECULATION' for these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "25364f4e-9ed7-40b6-8cd8-177864f6622e",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The rarity of STAT3 GOF mutations in human cancers with mutant KRAS may be explained by STAT3's role in cancer maintenance and epithelial-mesenchymal plasticity rather than as a classical driver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C94 proposes an explanation for the clinical observation of rare STAT3 GOF mutations in KRAS mutant cancers. While the experimental data showing that STAT3 GOF mutations suppress KRAS-driven transformation (C21-C22) provides a plausible mechanism, this remains speculative. The claim appropriately acknowledges this as inference/speculation, but additional evidence from human tumor sequencing data or evolutionary modeling would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge claims about KRAS mutations, EMT, STAT3 biology, TGF-\u03b2 signaling, and PDAC characteristics establish the scientific context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C12, C40-C42, C50, C65, C76-C77, C80-C83, and C91 present established knowledge from the literature, appropriately supported by citations. These provide necessary context for interpreting the experimental findings. The claims are accurately represented and properly attributed to prior work. While these are not novel findings, they are appropriately used to frame the study's contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "8b241e63-cdcf-4fd1-b428-a8e18a31274f",
+      "content_id": "2d718bba-63b6-45ae-abd1-0b30957f84de",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "STAT3 lacks classical driver properties in vitro based on its inability to transform cells independently of KRAS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is well-supported by the experimental data showing that STAT3 GOF mutations cannot transform non-KRAS mutant cells (C25-C26) and that STAT3 manipulation does not affect growth in standard culture conditions (C19). This conclusion appropriately distinguishes STAT3 from classical oncogenic drivers and is consistent with the broader characterization of STAT3 as a modifier rather than initiator of transformation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "bc14c8cd-b496-4cef-bb4e-acbe3a2c92a9",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors identify STAT3 as a genetic modifier of TGF-beta-induced EMT in KRAS mutant pancreatic cancer. They demonstrate that STAT3 plays a crucial role in guiding tumor morphology and function by inhibiting EMT and maintaining epithelial identity, rather than conferring growth advantages.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers affirm the main finding. The editor states the authors 'demonstrate that both the presence and absence of STAT3, relative to SMAD4, can lead to poor PDAC differentiation' and provide 'convincing evidence.' Reviewer 1 calls this a 'valuable finding' with 'solid' evidence from animal models. Reviewer 3 describes it as 'an interesting paper that highlights the complicated interactions between KRAS, STAT3, and TGF beta signaling.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "77f0fd19-85c6-40bb-940b-05c5506e51ff",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors show that STAT3 lacks classical driver properties in vitro, as neither persistent activation nor loss of STAT3 confers distinct growth advantages on tumor cells. STAT3 GOF mutations fail to transform cells without KRAS mutation, and STAT3 KO does not affect cell growth or KRAS-induced transformation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer challenges these findings. The editor acknowledges the evidence is 'convincing,' and Reviewer 1 states 'the evidence in the animal models supporting the authors' claims is solid.' The lack of growth effects is implicitly accepted as part of the overall characterization of STAT3's non-driver role.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "5b04ba5b-1508-4ce8-a476-451622ac89fc",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrate that STAT3 GOF mutations (Y640F, D661Y, K658Y) impair KRAS-induced transformation in vitro and delay tumor formation in vivo in a dose-dependent manner. This effect requires STAT3 phosphorylation at Y705, DNA binding, and transcriptional activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor notes the authors 'demonstrate that STAT3 mutations affect p53-null fibroblasts with KRASG12D,' and reviewers do not challenge the mechanistic findings. Reviewer 3 summarizes that 'STAT3 GOF mutants diminished the transformation of p53-null mouse embryonic fibroblasts' without raising concerns about the data quality or interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "d16c6758-ac36-4d7b-bcbd-2876b185b812",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors show antagonistic epistasis between STAT3 and the TGF-\u03b2/SMAD4 pathway. SMAD4-expressing tumors are poorly differentiated with mesenchymal features only in the absence of STAT3, while SMAD4-deficient tumors are well-differentiated and epithelial only in the presence of STAT3. Ablation of TGFBR2 or SMAD4 phenocopies STAT3 GOF effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states the authors 'demonstrate that both the presence and absence of STAT3, relative to SMAD4, can lead to poor PDAC differentiation.' Reviewer 1 highlights this as the key finding: 'SMAD4 deficient tumors are well differentiated in the presence of STAT3. Yet surprisingly, in the presence of SMAD4 in a STAT-3 deficient pancreatic cancer, the phenotype is poorly differentiated.' No reviewer challenges this epistatic relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "1e36a109-b525-4743-b177-13a3e897e9b9",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors characterize tumor morphology in orthotopic models showing that STAT3 KO induces EMT-like morphology, KRAS KO produces sarcomatoid morphology, STAT3 Y640F overexpression causes mixed squamous/glandular differentiation, and SMAD4/TGFBR2 KO increases epithelial differentiation. Tumor latency is similar across genotypes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly affirms 'the evidence in the animal models supporting the authors' claims is solid.' The editor notes the authors provide 'convincing evidence' for their claims. No reviewer questions the histological characterization or tumor latency data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "RNA-seq analysis reveals that STAT3 regulates over 200-700 genes depending on context. STAT3 KO cells show enrichment of EMT and mesenchymal signatures with increased TGFB1/TGFB3/INHBA expression, while maintaining some epithelial markers (partial EMT). Approximately 250 STAT3 target genes overlap with KRAS-regulated genes, suggesting STAT3 loss partially phenocopies KRAS inactivation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 acknowledges the transcriptional findings without criticism, noting 'KRAS and STAT3 KO both induced mesenchymal-like phenotypes.' No reviewer challenges the RNA-seq data or the interpretation of partial EMT. The correlation between STAT3 and KRAS gene signatures is accepted as part of the overall model.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "1e1b6956-879b-4219-8b40-d2869e55cbcb",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors compute RAS dependency scores showing positive correlation with STAT3 and KRAS expression and negative correlation with SMAD4 expression. They conclude STAT3 is a genetic modifier that regulates KRAS dependency through counterposing EMT.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 notes the authors 'determined that the loss of STAT3 appeared to correlate with a KRAS-independent signature' without challenging this finding. The editor affirms the authors 'derive important insights into KRAS mutant cancers.' The computational analysis is implicitly accepted as supporting the main conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "76ebc344-c80e-4f91-9a5e-690478f6db18",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors correlate their mouse model gene signatures with human PDAC samples from TCGA, showing STAT3-regulated genes associate with epithelial differentiation and SMAD4-regulated genes associate with EMT. STAT3 KO signatures co-segregate with KRAS-independent/mesenchymal tumors, while SMAD4 KO signatures co-segregate with KRAS-dependent/epithelial tumors. Analysis of patient samples shows low to medium STAT3 Y705 phosphorylation levels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 identifies a key weakness: 'the absence of correlation between the results from the animal studies and human pancreatic cancers' and notes 'including TCGA data and/or a larger number of patients would have strengthened the study.' While the authors do include TCGA correlations, the reviewer suggests this is insufficient. Reviewer 3 also notes 'the study would benefit from additional cause-and-effect type experiments,' suggesting the correlative nature of the human data is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "df80c1e9-0c49-4288-a28f-f94f05195f02",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Functional classification reveals STAT3's role in tumor maintenance and epithelial homeostasis. Western blot analysis shows STAT3 does not directly alter RAS/MAPK or PI3K/AKT signaling pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer challenges these supporting mechanistic findings. The characterization of STAT3's function and its independence from canonical KRAS effector pathways is accepted as part of the overall model without specific criticism.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "465fb80c-8578-421d-8e48-aa3db37231b5",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors use CRISPR/Cas9 to generate STAT3 knockouts and lentiviral vectors to express STAT3 mutants in KP MEFs. Western blots confirm that STAT3 Y640F, K658Y, and STAT3C display increased Y705 phosphorylation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer questions the methodology or validation of the genetic models. The technical approaches are implicitly accepted as appropriate for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "fcfeafe2-5df8-420f-81a4-9d0bf8fc3478",
+      "content_id": "744c2a44-3c69-409a-acd9-cc632d92b757",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors speculate that STAT3 sustains KRAS-dependent phenotype with potential for improved anti-RAS drug efficacy, while SMAD4 promotes KRAS independence with enhanced therapy resistance. They suggest the epistatic relationship has implications for tumor aggressiveness, metastasis, and therapeutic resistance, and may explain the rarity of STAT3 GOF mutations in KRAS mutant cancers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 notes 'while correlations are strong, the study would benefit from additional cause-and-effect type experiments' and suggests better integration of the paper's parts. These speculative therapeutic implications are not directly tested, and reviewers implicitly indicate that stronger mechanistic or functional validation would strengthen these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "354b00dd-c9d5-4585-8863-0cc8d0d54249",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "ea8787f5-2bcd-43d0-9813-c34d303fde40",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "93b5c70f-f1f9-48e8-851b-8edb5fa8343c",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "ce6b6e23-5c44-4967-80df-c71ba3e971d1",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "ca944de3-4d0a-448c-a4de-4a1184928df0",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "f87bb789-b01d-4a33-89fa-aec468224963",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "0f91acb9-abff-44b2-a5ff-baa3031dd42f",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "c36a86ca-4789-40e0-9025-f14e606a6097",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "4e723fe7-d588-486e-a605-372c785f484a",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "09f76c63-b463-48a8-b73d-0dd8b42ae09a",
+      "result_id": "7472013b-dd8b-4a34-8515-a90947181351"
+    },
+    {
+      "claim_id": "bfc691c3-aefc-465e-9247-178cf8329fcf",
+      "result_id": "c94c313e-0d21-4f72-aa80-5c51fd7fa6ed"
+    },
+    {
+      "claim_id": "306f6f81-628e-40e4-b6f6-c446f04b7c6f",
+      "result_id": "c94c313e-0d21-4f72-aa80-5c51fd7fa6ed"
+    },
+    {
+      "claim_id": "bc93d670-0bf8-4130-95a6-47cde4f0a28c",
+      "result_id": "c94c313e-0d21-4f72-aa80-5c51fd7fa6ed"
+    },
+    {
+      "claim_id": "034d70cf-436d-40cd-a115-d17919bd20c7",
+      "result_id": "c94c313e-0d21-4f72-aa80-5c51fd7fa6ed"
+    },
+    {
+      "claim_id": "5b936398-1413-4ffb-aeb7-ef4c2e3ab243",
+      "result_id": "c94c313e-0d21-4f72-aa80-5c51fd7fa6ed"
+    },
+    {
+      "claim_id": "c260b025-0312-4d63-9f8d-cebb77444af3",
+      "result_id": "27e5651d-051a-4e51-9d9c-96a25df661bc"
+    },
+    {
+      "claim_id": "8e161e32-196f-4213-b3f9-c4e7b7e186e4",
+      "result_id": "27e5651d-051a-4e51-9d9c-96a25df661bc"
+    },
+    {
+      "claim_id": "d52b203f-5179-40dc-b642-68b1cc5b3661",
+      "result_id": "9c396767-8385-4c7f-8049-98a4ac4d660a"
+    },
+    {
+      "claim_id": "930773ab-0ecf-4b0a-a0b5-0d017833b9f3",
+      "result_id": "9c396767-8385-4c7f-8049-98a4ac4d660a"
+    },
+    {
+      "claim_id": "58f144cb-54f8-45a9-b9da-1882042dcf41",
+      "result_id": "9c396767-8385-4c7f-8049-98a4ac4d660a"
+    },
+    {
+      "claim_id": "20bb004d-4eda-4f9c-8048-3357b020ba40",
+      "result_id": "9c396767-8385-4c7f-8049-98a4ac4d660a"
+    },
+    {
+      "claim_id": "61820591-0732-488e-a94d-2f5b9672cd01",
+      "result_id": "9c396767-8385-4c7f-8049-98a4ac4d660a"
+    },
+    {
+      "claim_id": "10704768-d882-4f4b-b804-4a85d4291a46",
+      "result_id": "9c396767-8385-4c7f-8049-98a4ac4d660a"
+    },
+    {
+      "claim_id": "9bfd44cb-e7db-4ff8-bf2c-f90cc43384d0",
+      "result_id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2"
+    },
+    {
+      "claim_id": "3bbb67e3-df7c-42b1-96d5-9e32ef6f2f62",
+      "result_id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2"
+    },
+    {
+      "claim_id": "f85e4bfa-368e-4750-8ccc-942f5fc9b44f",
+      "result_id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2"
+    },
+    {
+      "claim_id": "43b7916b-d4b0-42a5-8c6d-8af23ec242c0",
+      "result_id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2"
+    },
+    {
+      "claim_id": "1efe1f63-aab9-47d8-b014-4fe13550b9f8",
+      "result_id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2"
+    },
+    {
+      "claim_id": "cb55970b-3c21-445d-b160-a6d8599d08a8",
+      "result_id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2"
+    },
+    {
+      "claim_id": "84259ad6-5ed3-4aa7-9497-4c1b33a8e592",
+      "result_id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2"
+    },
+    {
+      "claim_id": "5f3f95c8-1a3e-463c-8315-675fd25f1498",
+      "result_id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007"
+    },
+    {
+      "claim_id": "7805a50e-b6d2-4249-b5e0-d32503bbb0d1",
+      "result_id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007"
+    },
+    {
+      "claim_id": "60420966-63f7-4fd4-83d1-e26bddc457ab",
+      "result_id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007"
+    },
+    {
+      "claim_id": "0e74407e-950b-4d5e-a7a9-569cb71e65f7",
+      "result_id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007"
+    },
+    {
+      "claim_id": "1f7a4d8a-9473-4d46-bf2e-0bad3483d7f3",
+      "result_id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007"
+    },
+    {
+      "claim_id": "8c3c1334-3eb4-495c-af9d-50c5af524d33",
+      "result_id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007"
+    },
+    {
+      "claim_id": "4069f79e-98e7-4ab9-9d82-509222bea51b",
+      "result_id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007"
+    },
+    {
+      "claim_id": "b77bb87c-99c7-4eaf-a131-6bbfeb3c8d3f",
+      "result_id": "1d24c241-9533-4124-bd93-f43ffca2ea50"
+    },
+    {
+      "claim_id": "49e1e3ff-7076-4ed3-a3ea-f767749e21cb",
+      "result_id": "1d24c241-9533-4124-bd93-f43ffca2ea50"
+    },
+    {
+      "claim_id": "0522783d-315f-41d1-918a-9eec673a62e1",
+      "result_id": "1d24c241-9533-4124-bd93-f43ffca2ea50"
+    },
+    {
+      "claim_id": "98875eeb-17cd-4a89-88e9-58979432d802",
+      "result_id": "1d24c241-9533-4124-bd93-f43ffca2ea50"
+    },
+    {
+      "claim_id": "015c44c6-d496-429b-8fb2-4fd3748e70eb",
+      "result_id": "1d24c241-9533-4124-bd93-f43ffca2ea50"
+    },
+    {
+      "claim_id": "653b1ffa-9e3b-4f7a-aa69-6885a09f79aa",
+      "result_id": "1d24c241-9533-4124-bd93-f43ffca2ea50"
+    },
+    {
+      "claim_id": "9de1c141-b1f1-4a28-9cb0-3177f1eafa26",
+      "result_id": "1d24c241-9533-4124-bd93-f43ffca2ea50"
+    },
+    {
+      "claim_id": "6fcb1574-b76f-4d64-8096-574763363c2d",
+      "result_id": "3da29330-6633-44a0-95c1-79245aeb06c9"
+    },
+    {
+      "claim_id": "e8789989-2d26-4a72-91af-7d03a72dc11c",
+      "result_id": "3da29330-6633-44a0-95c1-79245aeb06c9"
+    },
+    {
+      "claim_id": "9a6ace64-ccdb-40bb-ae27-4eb9dbe4ec37",
+      "result_id": "3da29330-6633-44a0-95c1-79245aeb06c9"
+    },
+    {
+      "claim_id": "0821e7a6-7f01-4847-b775-75576bd331da",
+      "result_id": "3da29330-6633-44a0-95c1-79245aeb06c9"
+    },
+    {
+      "claim_id": "03dcb14d-6468-4a99-9e1a-e026e03fbc61",
+      "result_id": "3da29330-6633-44a0-95c1-79245aeb06c9"
+    },
+    {
+      "claim_id": "83e896f6-4e71-411f-8fbc-deb727ee2cc5",
+      "result_id": "3da29330-6633-44a0-95c1-79245aeb06c9"
+    },
+    {
+      "claim_id": "92ea0a89-a398-4de8-8029-04392247a45c",
+      "result_id": "91110d10-4939-43a0-a56d-ce3a8cf87fe1"
+    },
+    {
+      "claim_id": "2ca07761-4c57-4227-a50e-229a604b91cf",
+      "result_id": "91110d10-4939-43a0-a56d-ce3a8cf87fe1"
+    },
+    {
+      "claim_id": "3ca6a8f7-f5b0-4c39-9ae6-7b1d639c3814",
+      "result_id": "91110d10-4939-43a0-a56d-ce3a8cf87fe1"
+    },
+    {
+      "claim_id": "f5cc95a3-4282-4d3c-af28-343793bdc25b",
+      "result_id": "91110d10-4939-43a0-a56d-ce3a8cf87fe1"
+    },
+    {
+      "claim_id": "d1d9dede-f3ae-41c2-830a-d38c7dab241b",
+      "result_id": "91110d10-4939-43a0-a56d-ce3a8cf87fe1"
+    },
+    {
+      "claim_id": "ca73d726-1db9-4ab8-9f46-919280c4f249",
+      "result_id": "91110d10-4939-43a0-a56d-ce3a8cf87fe1"
+    },
+    {
+      "claim_id": "5d739ce5-6361-47fe-b38b-2a83709437ac",
+      "result_id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249"
+    },
+    {
+      "claim_id": "a9dbef7d-a973-48a2-b9c5-3a2b3bb9ceb0",
+      "result_id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249"
+    },
+    {
+      "claim_id": "21aa1720-0215-4fa7-95e6-f88104896c1b",
+      "result_id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249"
+    },
+    {
+      "claim_id": "f4becaa0-d41b-464a-8e9d-74e03e9822bc",
+      "result_id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249"
+    },
+    {
+      "claim_id": "80d65a0d-796a-415c-aaac-983f6c0bf2ab",
+      "result_id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249"
+    },
+    {
+      "claim_id": "0f78477d-e75c-44a0-95b1-1a1b9e71d7a4",
+      "result_id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249"
+    },
+    {
+      "claim_id": "fc54fcc8-8747-44aa-ab01-bcb371832101",
+      "result_id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249"
+    },
+    {
+      "claim_id": "6cd6e3ba-a72d-4efd-96af-b8f873176f01",
+      "result_id": "d6d5d1e6-03e1-4adc-87b6-2a9056b47085"
+    },
+    {
+      "claim_id": "ac5de1d8-bdc5-4376-b8d1-0d26a4a55e15",
+      "result_id": "7624ea0b-ed3b-4c38-a5df-37fa47be3ede"
+    },
+    {
+      "claim_id": "9bf8cb2b-4a86-4fd4-a5b0-6b092f94db28",
+      "result_id": "7624ea0b-ed3b-4c38-a5df-37fa47be3ede"
+    },
+    {
+      "claim_id": "93e7d27d-e07b-4a73-80fb-e5d941ce084e",
+      "result_id": "e6492d1e-6bbe-460c-8f10-5cd5c7129fa3"
+    },
+    {
+      "claim_id": "cf608cf7-f8a6-4ed3-9d15-1d04320da25f",
+      "result_id": "e6492d1e-6bbe-460c-8f10-5cd5c7129fa3"
+    },
+    {
+      "claim_id": "14372bb4-af3e-4953-8271-bf491cfccb73",
+      "result_id": "b0401795-7ded-4c7a-8337-004c833eb232"
+    },
+    {
+      "claim_id": "cdb7fae8-c370-46ce-b538-bd4528aa5037",
+      "result_id": "b0401795-7ded-4c7a-8337-004c833eb232"
+    },
+    {
+      "claim_id": "f61a8b91-6eb7-4c0b-956d-3a700d8e3b36",
+      "result_id": "b0401795-7ded-4c7a-8337-004c833eb232"
+    },
+    {
+      "claim_id": "769a8be5-39f7-4ef3-877f-803ed9755ed4",
+      "result_id": "25364f4e-9ed7-40b6-8cd8-177864f6622e"
+    },
+    {
+      "claim_id": "48706337-6447-4f92-97cd-ac4cfe7e4abf",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "11e0c8fa-37ad-46b1-a355-153a06af0a82",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "9bcca311-2f10-4bac-a748-4fac97474d08",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "536fc874-a85e-4f4a-837a-cf48e79d5cb3",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "abaaf951-dce9-4f96-b021-96621c2cd79a",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "f4d9779d-14e9-470a-bc1e-9302d925415d",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "d0385054-cdcf-43dc-8c6f-c31dd80d5e68",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "cba7803d-97e9-43ad-b1c8-3721b7a5fab9",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "863272b9-5e07-477c-9f26-0c5fc8e59a56",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "3328ae57-3519-4092-a81e-eb9078cf9288",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "673b5c09-85e8-4f28-8504-564fa04e920b",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "4ed10d71-cbca-46a0-9f35-8875c09c9224",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "6e26ccd0-3348-4b42-a4f7-cdc81ef72902",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "d1645ed3-0251-4d61-a1db-8ff8ba84faf4",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "a3a4747f-dbca-4a0a-b599-83afeff5ad61",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "b8046b92-94c5-44e8-963d-09c7bf386284",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "160e429b-25aa-4ce4-aacc-0619fcdd8765",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "a6259bed-8578-4499-b068-2e84124b536a",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "10e26bfe-ff42-4da4-ae26-ca132de0ad70",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "a29b4a62-be7f-4bc6-8b1b-34f922f1705e",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "2012f401-7295-49b0-9b8a-526c610f68da",
+      "result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2"
+    },
+    {
+      "claim_id": "8d857340-be6f-49fa-b241-54a50ef905a3",
+      "result_id": "8b241e63-cdcf-4fd1-b428-a8e18a31274f"
+    },
+    {
+      "claim_id": "5d739ce5-6361-47fe-b38b-2a83709437ac",
+      "result_id": "bc14c8cd-b496-4cef-bb4e-acbe3a2c92a9"
+    },
+    {
+      "claim_id": "80d65a0d-796a-415c-aaac-983f6c0bf2ab",
+      "result_id": "bc14c8cd-b496-4cef-bb4e-acbe3a2c92a9"
+    },
+    {
+      "claim_id": "0f78477d-e75c-44a0-95b1-1a1b9e71d7a4",
+      "result_id": "bc14c8cd-b496-4cef-bb4e-acbe3a2c92a9"
+    },
+    {
+      "claim_id": "fc54fcc8-8747-44aa-ab01-bcb371832101",
+      "result_id": "bc14c8cd-b496-4cef-bb4e-acbe3a2c92a9"
+    },
+    {
+      "claim_id": "21aa1720-0215-4fa7-95e6-f88104896c1b",
+      "result_id": "77f0fd19-85c6-40bb-940b-05c5506e51ff"
+    },
+    {
+      "claim_id": "93b5c70f-f1f9-48e8-851b-8edb5fa8343c",
+      "result_id": "77f0fd19-85c6-40bb-940b-05c5506e51ff"
+    },
+    {
+      "claim_id": "ce6b6e23-5c44-4967-80df-c71ba3e971d1",
+      "result_id": "77f0fd19-85c6-40bb-940b-05c5506e51ff"
+    },
+    {
+      "claim_id": "09f76c63-b463-48a8-b73d-0dd8b42ae09a",
+      "result_id": "77f0fd19-85c6-40bb-940b-05c5506e51ff"
+    },
+    {
+      "claim_id": "bfc691c3-aefc-465e-9247-178cf8329fcf",
+      "result_id": "77f0fd19-85c6-40bb-940b-05c5506e51ff"
+    },
+    {
+      "claim_id": "8d857340-be6f-49fa-b241-54a50ef905a3",
+      "result_id": "77f0fd19-85c6-40bb-940b-05c5506e51ff"
+    },
+    {
+      "claim_id": "ca944de3-4d0a-448c-a4de-4a1184928df0",
+      "result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc"
+    },
+    {
+      "claim_id": "306f6f81-628e-40e4-b6f6-c446f04b7c6f",
+      "result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc"
+    },
+    {
+      "claim_id": "bc93d670-0bf8-4130-95a6-47cde4f0a28c",
+      "result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc"
+    },
+    {
+      "claim_id": "034d70cf-436d-40cd-a115-d17919bd20c7",
+      "result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc"
+    },
+    {
+      "claim_id": "5b936398-1413-4ffb-aeb7-ef4c2e3ab243",
+      "result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc"
+    },
+    {
+      "claim_id": "c260b025-0312-4d63-9f8d-cebb77444af3",
+      "result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc"
+    },
+    {
+      "claim_id": "8e161e32-196f-4213-b3f9-c4e7b7e186e4",
+      "result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc"
+    },
+    {
+      "claim_id": "f4becaa0-d41b-464a-8e9d-74e03e9822bc",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "6fcb1574-b76f-4d64-8096-574763363c2d",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "e8789989-2d26-4a72-91af-7d03a72dc11c",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "20bb004d-4eda-4f9c-8048-3357b020ba40",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "61820591-0732-488e-a94d-2f5b9672cd01",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "10704768-d882-4f4b-b804-4a85d4291a46",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "d1645ed3-0251-4d61-a1db-8ff8ba84faf4",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "9a6ace64-ccdb-40bb-ae27-4eb9dbe4ec37",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "0821e7a6-7f01-4847-b775-75576bd331da",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "03dcb14d-6468-4a99-9e1a-e026e03fbc61",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "83e896f6-4e71-411f-8fbc-deb727ee2cc5",
+      "result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812"
+    },
+    {
+      "claim_id": "9bfd44cb-e7db-4ff8-bf2c-f90cc43384d0",
+      "result_id": "1e36a109-b525-4743-b177-13a3e897e9b9"
+    },
+    {
+      "claim_id": "3bbb67e3-df7c-42b1-96d5-9e32ef6f2f62",
+      "result_id": "1e36a109-b525-4743-b177-13a3e897e9b9"
+    },
+    {
+      "claim_id": "f85e4bfa-368e-4750-8ccc-942f5fc9b44f",
+      "result_id": "1e36a109-b525-4743-b177-13a3e897e9b9"
+    },
+    {
+      "claim_id": "43b7916b-d4b0-42a5-8c6d-8af23ec242c0",
+      "result_id": "1e36a109-b525-4743-b177-13a3e897e9b9"
+    },
+    {
+      "claim_id": "1efe1f63-aab9-47d8-b014-4fe13550b9f8",
+      "result_id": "1e36a109-b525-4743-b177-13a3e897e9b9"
+    },
+    {
+      "claim_id": "cb55970b-3c21-445d-b160-a6d8599d08a8",
+      "result_id": "1e36a109-b525-4743-b177-13a3e897e9b9"
+    },
+    {
+      "claim_id": "84259ad6-5ed3-4aa7-9497-4c1b33a8e592",
+      "result_id": "1e36a109-b525-4743-b177-13a3e897e9b9"
+    },
+    {
+      "claim_id": "6cd6e3ba-a72d-4efd-96af-b8f873176f01",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "58f144cb-54f8-45a9-b9da-1882042dcf41",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "5f3f95c8-1a3e-463c-8315-675fd25f1498",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "7805a50e-b6d2-4249-b5e0-d32503bbb0d1",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "60420966-63f7-4fd4-83d1-e26bddc457ab",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "0e74407e-950b-4d5e-a7a9-569cb71e65f7",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "1f7a4d8a-9473-4d46-bf2e-0bad3483d7f3",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "8c3c1334-3eb4-495c-af9d-50c5af524d33",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "4069f79e-98e7-4ab9-9d82-509222bea51b",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "b77bb87c-99c7-4eaf-a131-6bbfeb3c8d3f",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "49e1e3ff-7076-4ed3-a3ea-f767749e21cb",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "0522783d-315f-41d1-918a-9eec673a62e1",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "98875eeb-17cd-4a89-88e9-58979432d802",
+      "result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74"
+    },
+    {
+      "claim_id": "015c44c6-d496-429b-8fb2-4fd3748e70eb",
+      "result_id": "1e1b6956-879b-4219-8b40-d2869e55cbcb"
+    },
+    {
+      "claim_id": "653b1ffa-9e3b-4f7a-aa69-6885a09f79aa",
+      "result_id": "1e1b6956-879b-4219-8b40-d2869e55cbcb"
+    },
+    {
+      "claim_id": "9de1c141-b1f1-4a28-9cb0-3177f1eafa26",
+      "result_id": "1e1b6956-879b-4219-8b40-d2869e55cbcb"
+    },
+    {
+      "claim_id": "92ea0a89-a398-4de8-8029-04392247a45c",
+      "result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18"
+    },
+    {
+      "claim_id": "2ca07761-4c57-4227-a50e-229a604b91cf",
+      "result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18"
+    },
+    {
+      "claim_id": "3ca6a8f7-f5b0-4c39-9ae6-7b1d639c3814",
+      "result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18"
+    },
+    {
+      "claim_id": "f5cc95a3-4282-4d3c-af28-343793bdc25b",
+      "result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18"
+    },
+    {
+      "claim_id": "d1d9dede-f3ae-41c2-830a-d38c7dab241b",
+      "result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18"
+    },
+    {
+      "claim_id": "ca73d726-1db9-4ab8-9f46-919280c4f249",
+      "result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18"
+    },
+    {
+      "claim_id": "ac5de1d8-bdc5-4376-b8d1-0d26a4a55e15",
+      "result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18"
+    },
+    {
+      "claim_id": "93e7d27d-e07b-4a73-80fb-e5d941ce084e",
+      "result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18"
+    },
+    {
+      "claim_id": "a9dbef7d-a973-48a2-b9c5-3a2b3bb9ceb0",
+      "result_id": "df80c1e9-0c49-4288-a28f-f94f05195f02"
+    },
+    {
+      "claim_id": "d52b203f-5179-40dc-b642-68b1cc5b3661",
+      "result_id": "df80c1e9-0c49-4288-a28f-f94f05195f02"
+    },
+    {
+      "claim_id": "930773ab-0ecf-4b0a-a0b5-0d017833b9f3",
+      "result_id": "df80c1e9-0c49-4288-a28f-f94f05195f02"
+    },
+    {
+      "claim_id": "354b00dd-c9d5-4585-8863-0cc8d0d54249",
+      "result_id": "465fb80c-8578-421d-8e48-aa3db37231b5"
+    },
+    {
+      "claim_id": "ea8787f5-2bcd-43d0-9813-c34d303fde40",
+      "result_id": "465fb80c-8578-421d-8e48-aa3db37231b5"
+    },
+    {
+      "claim_id": "14372bb4-af3e-4953-8271-bf491cfccb73",
+      "result_id": "fcfeafe2-5df8-420f-81a4-9d0bf8fc3478"
+    },
+    {
+      "claim_id": "cdb7fae8-c370-46ce-b538-bd4528aa5037",
+      "result_id": "fcfeafe2-5df8-420f-81a4-9d0bf8fc3478"
+    },
+    {
+      "claim_id": "f61a8b91-6eb7-4c0b-956d-3a700d8e3b36",
+      "result_id": "fcfeafe2-5df8-420f-81a4-9d0bf8fc3478"
+    },
+    {
+      "claim_id": "769a8be5-39f7-4ef3-877f-803ed9755ed4",
+      "result_id": "fcfeafe2-5df8-420f-81a4-9d0bf8fc3478"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "d7671333-1a2b-4944-856e-3d3284eae7a1",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a3c116c8-cef9-46d1-9ee7-cfced2fc81d2",
+      "peer_result_id": "1e36a109-b525-4743-b177-13a3e897e9b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on histological findings (C43-C49). Both evaluations find the orthotopic tumor model data convincing. OpenEval emphasizes appropriate sample sizes and consistency with STAT3's role in epithelial identity. Peer reviewers affirm the animal model evidence is 'solid' without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "9243ad10-8e6a-4039-afdb-900be64720c6",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "91110d10-4939-43a0-a56d-ce3a8cf87fe1",
+      "peer_result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address human tumor correlations (C70-C75, C84, C89). OpenEval finds the TCGA/COMPASS correlations well-supported with strong statistical significance. Peer reviewers rate this UNCERTAIN, noting 'absence of correlation between animal studies and human pancreatic cancers' and suggesting more patient data would strengthen the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "240230bc-6e9e-457c-9cb8-f16625d399b9",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "b0401795-7ded-4c7a-8337-004c833eb232",
+      "peer_result_id": "fcfeafe2-5df8-420f-81a4-9d0bf8fc3478",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address therapeutic implications (C86-C88, C94). OpenEval rates UNCERTAIN, noting these claims extend beyond experimental data and require drug treatment validation. Peer reviewers also rate UNCERTAIN, stating 'the study would benefit from additional cause-and-effect type experiments' for these speculative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "b4b04e8c-626d-436e-9f97-2420c9de2bdc",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "bfb3c79d-3f0d-4803-bba0-6af6c6be1249",
+      "peer_result_id": "bc14c8cd-b496-4cef-bb4e-acbe3a2c92a9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address main conclusions (C3, C78, C79, C93). OpenEval finds these well-supported by convergent evidence from multiple experimental approaches. Peer reviewers unanimously affirm the main finding, with the editor noting 'convincing evidence' and Reviewer 1 calling it a 'valuable finding' with 'solid' evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "e5296608-2ea9-43aa-b387-dc0e97d3f161",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "3da29330-6633-44a0-95c1-79245aeb06c9",
+      "peer_result_id": "d16c6758-ac36-4d7b-bcbd-2876b185b812",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address STAT3-SMAD4 epistasis (C15-C16, C66-C69, plus C14, C37-C39, C65 in peer). OpenEval emphasizes systematic genetic controls and clear demonstration of functional antagonism. Peer reviewers explicitly affirm this key finding, with Reviewer 1 highlighting the surprising phenotype reversal without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "8843f19d-a65c-4734-bf29-8327a917f7ae",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "821b4ee1-600d-4c54-ae9f-5b3ed22f0007",
+      "peer_result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address transcriptomic EMT analysis (C51-C57, plus C4, C36, C58-C61 in peer). OpenEval finds comprehensive bioinformatic support for partial EMT characterization. Peer reviewers accept the RNA-seq findings without criticism, with Reviewer 3 acknowledging the mesenchymal-like phenotypes induced by KRAS and STAT3 KO.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "635b9615-e7f9-498c-bc56-e6d2b777681d",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "c94c313e-0d21-4f72-aa80-5c51fd7fa6ed",
+      "peer_result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on in vivo tumor suppression (C28-C31 shared, plus C27 in OpenEval and C21, C32-C33 in peer). OpenEval emphasizes dose-dependent relationships and limiting dilution data. Peer reviewers accept the mechanistic findings about STAT3 mutations affecting KRASG12D fibroblasts without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "b8358fba-b2b7-4a2f-9493-508a3615e0f5",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "1d24c241-9533-4124-bd93-f43ffca2ea50",
+      "peer_result_id": "1e1b6956-879b-4219-8b40-d2869e55cbcb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address KRAS dependency analysis (C62-C64, plus C58-C61 in OpenEval). OpenEval highlights strong statistical evidence and quantitative EMT/RAS dependency scores. Peer reviewers accept the correlation between STAT3 loss and KRAS-independent signature without challenge, viewing it as supporting the main model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "7ddb8adc-cc40-4001-b124-867c9b9461f8",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "27e5651d-051a-4e51-9d9c-96a25df661bc",
+      "peer_result_id": "5b04ba5b-1508-4ce8-a476-451622ac89fc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address mechanistic requirements via DBD mutants (C32-C33, plus C21, C28-C31 in peer). OpenEval finds strong evidence that transcriptional activity is required for suppressive function. Peer reviewers accept these mechanistic findings as part of the overall demonstration without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "bf8517b6-bb06-41fd-909b-94c6764608dc",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "7472013b-dd8b-4a34-8515-a90947181351",
+      "peer_result_id": "77f0fd19-85c6-40bb-940b-05c5506e51ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on transformation assays (C19-C20, C26 shared, plus C17-C18, C21-C25 in OpenEval and C13, C27, C92 in peer). OpenEval emphasizes converging evidence from multiple approaches demonstrating STAT3 lacks intrinsic oncogenicity. Peer reviewers implicitly accept lack of growth effects as part of STAT3's non-driver characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "6eadeb4a-0def-40e9-b9f9-1a52a93c28e3",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "9c396767-8385-4c7f-8049-98a4ac4d660a",
+      "peer_result_id": "df80c1e9-0c49-4288-a28f-f94f05195f02",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on mechanistic pathways (C34-C35 shared, plus C36-C39 in OpenEval and C5 in peer). OpenEval finds RNA-seq and epistasis experiments support TGF-\u03b2 mechanism. Peer reviewers accept these supporting mechanistic findings without specific criticism as part of the overall model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "d5ca9188-bcc7-46b5-b509-e3cb48e3344a",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "d6d5d1e6-03e1-4adc-87b6-2a9056b47085",
+      "peer_result_id": "dabc71cf-8fe3-4984-a8e1-fbc5246aef74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap (C4 only). OpenEval finds the RNA-seq correlation between STAT3 and KRAS well-supported with quantification. Peer reviewers accept this as part of the transcriptional analysis without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "940dc513-f420-48bf-805b-0d7f03e5186c",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "25364f4e-9ed7-40b6-8cd8-177864f6622e",
+      "peer_result_id": "fcfeafe2-5df8-420f-81a4-9d0bf8fc3478",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address C94 regarding rare STAT3 GOF mutations. OpenEval rates UNCERTAIN, noting this is speculative despite plausible mechanism. Peer reviewers also rate UNCERTAIN, suggesting additional cause-and-effect experiments would strengthen speculative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "9c2e310f-510e-4661-b742-0a45f8928139",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "7624ea0b-ed3b-4c38-a5df-37fa47be3ede",
+      "peer_result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address C84 on SMAD4 status and tumor phenotype. OpenEval finds this observation appropriately motivates investigation of additional modifiers. Peer reviewers rate the broader human correlation analysis UNCERTAIN, wanting stronger patient data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "7d8cd5b2-84ab-45cd-8d9d-279168a809bf",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "e6492d1e-6bbe-460c-8f10-5cd5c7129fa3",
+      "peer_result_id": "76ebc344-c80e-4f91-9a5e-690478f6db18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address C89 on STAT3 phosphorylation levels in human samples. OpenEval finds the observation appropriately documented but notes functional implications need testing. Peer reviewers include this in their UNCERTAIN rating of human correlations, wanting more patient data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "60db2239-d0ec-4dea-b4fb-67df2a33f018",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "7472013b-dd8b-4a34-8515-a90947181351",
+      "peer_result_id": "465fb80c-8578-421d-8e48-aa3db37231b5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address C17-C18 on genetic model methodology. OpenEval includes these in comprehensive evaluation of transformation assays. Peer reviewers implicitly accept the technical approaches as appropriate without questioning methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "83ea282a-5718-45b7-a2b5-f5abdcf363c9",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "8b241e63-cdcf-4fd1-b428-a8e18a31274f",
+      "peer_result_id": "77f0fd19-85c6-40bb-940b-05c5506e51ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address C92 on STAT3 as non-driver. OpenEval finds this well-supported by negative transformation results in non-KRAS contexts. Peer reviewers implicitly accept this characterization as part of the overall non-driver role without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    },
+    {
+      "id": "2e4f5ba1-6ad6-487b-a716-432dd828d590",
+      "submission_id": "8f7f67d2-7197-4392-b4a4-a4c9e6dde38e",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "1cbd40bc-ac6c-467b-a78e-074ae6fe84b2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature context claims (C1-C2, C6-C12, C40-C42, C50, C65, C76-C77, C80-C83, C91) as appropriately supported by citations. No corresponding peer review evaluation found, though peer reviewers implicitly accept the contextual framing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:30:33.321365Z"
+    }
+  ]
+}

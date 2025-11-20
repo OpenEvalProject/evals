@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Sub-minute resolution phosphoproteomics identified 163 proteins phosphorylated in a CDPK1-dependent manner. The zaprinast phosphoproteome included 2570 phosphorylated proteins represented by 10,594 unique phosphopeptides, with 74 unique CDPK1-dependent phosphopeptides belonging to 69 proteins identified across biological replicates. CDPK1 was specifically depleted following auxin treatment, and proteins exhibiting zaprinast-dependent phosphorylation displayed no significant changes at the proteome level over the experimental time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C33 are well-supported by the phosphoproteomic data presented in Figures 1B-F and the methods section. The experimental design includes appropriate controls (DMSO phosphoproteome, auxin depletion validation), biological replicates, and statistical analysis. The specificity of CDPK1 depletion (C29) and protein stability (C33) provide confidence in attributing phosphorylation changes to CDPK1 activity rather than indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Thiophosphorylation experiments identified 123 peptides across 104 proteins as likely direct substrates of CDPK1. Combined with time-resolved phosphoproteomics, 163 proteins were identified as phosphorylated in a CDPK1-dependent manner, categorized into five classes based on overlap between approaches. CDPK1 localization remained unaltered upon aerolysin treatment, and 72 of the 163 targets also displayed CDPK1-independent phosphorylation at distinct sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by the thiophosphorylation data (Figure 3) and the integration with phosphoproteomics. The use of SILAC labeling, comparison between wild-type and mutant CDPK1 (G128M), and validation of CDPK1 localization post-aerolysin treatment (C57) strengthen the identification of direct substrates. The classification scheme (C59-C60) provides a logical framework for prioritizing targets based on evidence strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C103"
+    ],
+    "result": "CDPK1 is myristoylated on Gly2, and the G2A mutation (cMut) abolishes myristoylation. Myristoylated CDPK1 associates with membranous structures or higher molecular weight complexes, as shown by subcellular fractionation. Loss of myristoylation causes cMut CDPK1 to be released into the high-speed supernatant and results in delayed ionophore-induced egress, though egress is eventually achieved. Myristoylation of CDPK1 contributes to the kinase's function during the lytic cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 and C103 are supported by biochemical fractionation (Figure 2E-F), acylation-dependent pulldowns (Figure 2C), and functional assays (Figure 2G-H). The experimental design appropriately compares cWT and cMut parasites with proper controls. However, the mechanistic link between myristoylation and function (C103) is somewhat inferential, as the specific substrates or interactions affected by myristoylation are not definitively identified (C109 is speculation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Immunoprecipitation-MS of CDPK1 identified 15 proteins enriched in cWT or cMut pulldowns. CDPK1 was the most significantly enriched protein. The kelch-repeat protein TGGT1_229290 preferentially associated with cWT CDPK1, while IMPDH and a putative 11S proteasome activator subunit preferentially associated with cMut CDPK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by the IP-MS data (Figure 2I-J) with appropriate statistical analysis (adjusted p-values) and biological replicates. The differential association of specific proteins with cWT versus cMut suggests myristoylation influences CDPK1 protein interactions, though the functional significance of these interactions remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C104"
+    ],
+    "result": "Of the 163 CDPK1 targets identified, 38 have been previously localized and/or functionally characterized, with 13 implicated in regulating motile stages of the parasite. These include proteins involved in microneme exocytosis (CEN2, RNG2), rhoptry exocytosis (ARO, DHHC7, AIP, PL3), gliding motility (AKMT, MyoA), and organelle homeostasis/biogenesis (NHE3, DrpB, VHA1, NST2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 and C104 are supported by literature citations and the phosphoproteomic data (Figure 3G-H). The identification of known motility-related proteins among CDPK1 targets provides validation for the approach and biological relevance. However, these claims primarily represent literature review and annotation rather than new experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C71",
+      "C72",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C105"
+    ],
+    "result": "HOOK (TGGT1_289100) is a CDPK1 target with predicted Hook domain and coiled-coil domains showing homology to activating adaptors. CDPK1-dependent phosphorylation was observed at S167, S177, and S189-191. HOOK forms a complex with FTS (TGGT1_264050), TGGT1_316650, and TGGT1_306920, as confirmed by reciprocal immunoprecipitation-MS. FTS bears homology to E2 ubiquitin-conjugating enzymes but lacks the catalytic cysteine. Multiple HOOK complexes may exist with different compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C6, C71-C72, C81-C83, C85, and C105 are well-supported by phosphoproteomic data (C72), IP-MS experiments (Figure 5A, C), and sequence analysis (C71, C82). The reciprocal IP-MS provides strong evidence for the complex composition. The inference about multiple HOOK complexes (C85) is reasonable based on differential enrichment patterns, though direct biochemical evidence for distinct complexes is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "HOOK was depleted following 24-40 hr auxin treatment and localized primarily to the cytosol with partial microneme co-localization. HOOK depletion impaired plaque formation and invasion efficiency but did not affect parasite replication, microneme/rhoptry biogenesis, or egress. HOOK localization and abundance were unaffected by CDPK1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 are supported by immunoblot (Figure 4B), immunofluorescence (Figure 4C, H), and functional assays (Figures 4D-G). The phenotypic characterization is thorough with appropriate controls. The observation that HOOK depletion does not affect egress (C79) while CDPK1 depletion does suggests HOOK functions downstream of CDPK1 in a subset of its activities, which is consistent with the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "FTS localization is primarily cytosolic with partial microneme overlap, similar to HOOK. FTS was depleted following 40 hr auxin treatment, which completely blocked plaque formation but had no effect on parasite replication or microneme biogenesis. FTS depletion blocked invasion but not egress, phenocopying HOOK depletion effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C86-C89 are supported by immunofluorescence (Figure 5B), immunoblot (Figure 5D), and functional assays (Figures 5E-H). The parallel phenotypes of HOOK and FTS depletion (C89) provide strong evidence that they function in the same pathway. The experimental design includes appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Proximity labeling-MS identified HOOK complex members (HOOK, FTS, TGGT1_306920, TGGT1_316650) as the top four enriched proteins in FTS-TurboID parasites. Parasites depleted of either HOOK or FTS were severely impaired in microneme protein secretion to a similar degree as CDPK1 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by proximity labeling-MS data (Figure 5I) and microneme secretion assays (Figure 5J). The TurboID approach provides independent validation of the HOOK complex composition. The secretion assays include appropriate controls and quantification, demonstrating that the HOOK complex is functionally required for microneme exocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C122"
+    ],
+    "result": "CDPK1 kinase activity and HOOK are required for rapid apical trafficking of micronemes during parasite motility. Microneme relocalization was blocked by CDPK1 inhibition with 3-MB-PP1 but was unaffected in control parasites. Microneme relocalization did not occur in intracellular AID-HOOK parasites regardless of auxin treatment. In extracellular parasites, HOOK depletion caused micronemes to be dispersed throughout the cytosol rather than concentrated apically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C93-C97, and C122 are strongly supported by live microscopy experiments (Figure 6) with appropriate controls and quantification. The use of CLAMP-mNG as a microneme marker allows direct visualization of trafficking dynamics. The differential effects of CDPK1 inhibition versus HOOK depletion on intracellular versus extracellular parasites provide mechanistic insights, though the interpretation requires careful consideration of the N-terminal tagging effects noted for AID-HOOK.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Expansion microscopy of extracellular parasites showed that approximately 60% displayed extruded conoids (indicating active motility), which was unaffected by HOOK knockdown. HOOK-knockdown parasites contained significantly more micronemes overall but had significant depletion of micronemes in the apical region. The distance between micronemes and the nearest microtubule remained unaffected by HOOK knockdown, suggesting mislocalized micronemes remain associated with cortical microtubules by an unknown factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by expansion microscopy data (Figure 7, Figure 7\u2014figure supplement 1) with quantitative analysis. The observation that microneme-microtubule distance is unchanged (C101) despite apical depletion (C100) is particularly interesting and well-documented. However, the inference about an unknown factor maintaining microtubule association (C102) is speculative and would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C106"
+    ],
+    "result": "Parasites lacking HOOK or FTS display impaired microneme protein secretion, leading to a block in invasion of host cells. Knockdown of HOOK or FTS blocked invasion and altered rapid microneme trafficking during Ca2+-regulated motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C106 are well-supported by the combined evidence from secretion assays (Figure 5J), invasion assays (Figures 4F, 5G), and live microscopy (Figure 6). The consistency of phenotypes across multiple experimental approaches strengthens these conclusions. These represent the primary functional findings linking the HOOK complex to microneme exocytosis and invasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "CDPK1-independent phosphorylation and dephosphorylation was prevalent among proteins regulating cyclic nucleotide signaling, lipid signaling, Ca2+ signaling, microneme exocytosis, rhoptry exocytosis, gliding motility, and homeostasis/biogenesis. MyoA phosphorylation at S20 and S21 (previously shown to be CDPK3-dependent) and SCE1 phosphorylation at S225 (also CDPK3-dependent) were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by the phosphoproteomic data with appropriate citations to prior research for functional context. The identification of known CDPK3 sites (C36-C37) provides validation for the approach. These findings reveal the complexity of the signaling network and suggest multiple kinases coordinate parasite motility, though they represent secondary observations rather than the main focus of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C127",
+      "C131",
+      "C132",
+      "C138"
+    ],
+    "result": "HOOK likely functions as an activating adaptor in T. gondii based on homology and functional characterization. Phosphorylation of HOOK by CDPK1 may activate the adaptor by promoting interaction with dynein and dynactin. The HOOK complex only partially explains CDPK1's role during egress, with the initial round of microneme discharge depending on CDPK1 and subsequent rounds requiring the HOOK complex. The HOOK complex has been specifically adapted for microneme trafficking in T. gondii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C127, C131-C132, and C138 involve significant inference and speculation beyond the direct experimental data. While the homology-based prediction (C123) is reasonable and supported by functional data, the mechanistic model of CDPK1-mediated HOOK activation (C127) and the two-phase model of microneme discharge (C132) are speculative. The differential effects on egress (C131) are well-documented but the proposed explanation requires additional experimental validation, such as direct demonstration of CDPK1-dependent HOOK-dynein interactions or temporal analysis of microneme discharge during egress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background knowledge claims about apicomplexan parasite biology, Ca2+-regulated exocytosis, micronemes, rhoptries, CDPKs, and the signaling pathways controlling parasite motility. These establish the biological context for the study, including the role of CDPK1 in T. gondii and the use of zaprinast to artificially induce Ca2+ release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C27 represent established knowledge supported by appropriate citations to prior research. These provide necessary context for the study but do not constitute new findings. The citations appear appropriate and the statements accurately reflect current understanding of apicomplexan biology and Ca2+ signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C107",
+      "C108"
+    ],
+    "result": "Methodological background claims about HOOK homologs in other eukaryotes, CDPK1 structural features enabling use of bulky ATP analogues, thiophosphorylation methods, aerolysin properties, 1B7 nanobody function, and improvements in phosphoproteomic approaches. These describe the technical basis for the experimental approaches used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C55, C107-C108 are supported by appropriate citations to prior research and describe established methods or knowledge. The methodological innovations (semi-permeabilization with aerolysin, use of 1B7 nanobody, TMTpro multiplexing) are well-justified and properly attributed. These provide important context for evaluating the experimental approaches but do not represent primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C135",
+      "C143"
+    ],
+    "result": "Speculative claims about mechanisms and future directions, including how myristoylation might affect CDPK1 function, potential compensatory mechanisms, regulation of activating adaptors by phosphorylation in other systems, and hypotheses about KinesinB function and the timing of dynein-mediated trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C112, C124-C127, C130, C135, and C143 represent speculation and hypotheses that extend beyond the direct experimental evidence. While these are reasonable interpretations and provide valuable discussion points, they require additional experimental validation. The authors appropriately present these as speculation (using terms like 'may,' 'could,' 'speculate'), but they should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C128",
+      "C129",
+      "C133",
+      "C134",
+      "C136",
+      "C137",
+      "C139",
+      "C140",
+      "C141",
+      "C144",
+      "C145"
+    ],
+    "result": "Discussion claims integrating current findings with prior research, including CDPK1's role in parasite transitions, links to rhoptry exocytosis, comparison with dynein systems in other organisms, and the novelty of implicating activating adaptors in apicomplexan pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121, C128-C129, C133-C134, C136-C137, C139-C141, C144-C145 integrate the current findings with prior research through appropriate citations. These provide important context and interpretation but represent synthesis rather than new experimental findings. The claim about novelty (C145) appears justified based on the literature cited, though comprehensive verification would require extensive literature review.",
+    "result_type": "MINOR"
+  }
+]

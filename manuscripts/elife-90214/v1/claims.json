@@ -1,0 +1,869 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Mathys et al. conducted the first single-nucleus RNA-seq (snRNA-seq) study of Alzheimer's disease (AD).",
+    "claim_type": "EXPLICIT",
+    "source": "Mathys et al. conducted the first single-nucleus RNA-seq (snRNA-seq) study of Alzheimer's disease (AD) (Mathys et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Mathys et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "With bulk RNA-seq, changes in gene expression across cell types can be lost, potentially masking the differentially expressed genes (DEGs) across different cell types.",
+    "claim_type": "EXPLICIT",
+    "source": "With bulk RNA-seq, changes in gene expression across cell types can be lost, potentially masking the differentially expressed genes (DEGs) across different cell types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on established understanding of bulk RNA-seq limitations",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The reanalysis resulted in 549 times fewer DEGs at a false discovery rate of 0.05 compared to the original study.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we correct these issues and use best-practice approaches to snRNA-seq differential expression, resulting in 549 times fewer DEGs at a false discovery rate of 0.05.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by the authors' reanalysis data presented in the manuscript",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Mathys et al. profiled the transcriptomes of approximately 80,000 cells from the prefrontal cortex, collected from 48 individuals \u2013 24 of which presented with varying degrees of AD pathology.",
+    "claim_type": "EXPLICIT",
+    "source": "The authors profiled the transcriptomes of approximately 80,000 cells from the prefrontal cortex, collected from 48 individuals \u2013 24 of which presented with varying degrees of AD pathology.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Factual description of the original study design from Mathys et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "High percentages of mitochondrial reads and low number of reads per cell are indicative of low cell quality.",
+    "claim_type": "EXPLICIT",
+    "source": "This is indicative of low cell quality (Ilicic et al., 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Ilicic et al., 2016",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Dataset integration has become a common step in sc-RNA-seq protocols and is recommended to remove confounding sources of variation.",
+    "claim_type": "EXPLICIT",
+    "source": "As the field has matured since the authors' work was published, dataset integration has become a common step in sc-RNA-seq protocols and is recommended by some to remove confounding sources of variation (Heumos et al., 2023; Amezquita et al., 2020; Tran et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to recent best-practice guidelines",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Reprocessing resulted in 50,831 cells passing QC, approximately 20,000 less than the authors' postprocessing set.",
+    "claim_type": "EXPLICIT",
+    "source": "Reprocessing resulted in 50,831 cells passing QC, approximately 20,000 less than the authors' postprocessing set with differing cell-type proportions (Figures 2 and 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by the reanalysis data and referenced figures",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Over 99% of nuclei had less than 200 genes expressed.",
+    "claim_type": "EXPLICIT",
+    "source": "With regards to data quality, it is worth noting that over 99% of nuclei had less than 200 genes expressed (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by data presented in Table 1",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Brase et al.'s recent study of snRNA-seq of autosomal-dominant AD used a more stringent cut-off for the minimum number of expressed genes and still kept 27% (122 times more) of the assayed cells after all QC steps.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, Brase et al.'s recent study of snRNA-seq of autosomal-dominant AD (Brase et al., 2023) used a more stringent cut-off for the minimum number of expressed genes and still kept 27% (122 times more) of the assayed cells after all QC steps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Brase et al., 2023",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The reanalysis used a 10% cut-off for the proportion of mitochondrial reads in a nuclei, as set out in Amezquita et al.'s best-practice guidelines.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach used a 10% cut-off for the proportion of mitochondrial reads in a nuclei, as set out in Amezquita et al.'s best-practice guidelines (Amezquita et al., 2020)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to best-practice guidelines",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Seurat's guidelines recommend a 5% cut-off for mitochondrial reads.",
+    "claim_type": "EXPLICIT",
+    "source": "which is less stringent than Seurat's guidelines (5%) (Hao et al., 2021)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Hao et al., 2021",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Heumos et al., 2023 recommend an 8% cut-off for mitochondrial reads from a median absolute deviations (MAD)-based cut-off selection.",
+    "claim_type": "EXPLICIT",
+    "source": "or that from Heumos et al., 2023 (8% from a median absolute deviations [MAD]-based cut-off selection)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Heumos et al., 2023",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Mathys et al. filtered out high mitochondrial read nuclei based on clusters from their t-SNE projection of the data.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, the authors filtered out high mitochondrial read nuclei based on clusters from their t-SNE projection of the data (Mathys et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to the original Mathys et al., 2019 methods",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Over 16,000 nuclei that were removed in the reanalysis QC pipeline were kept by Mathys et al.",
+    "claim_type": "EXPLICIT",
+    "source": "Even at our lenient cut-off, over 16,000 nuclei that were removed in our QC pipeline were kept by the authors' Figure 2, explaining the discrepancy in the number of nuclei after QC.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by comparison data shown in Figure 2",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "High proportions of mitochondrial reads are indicative of cell death.",
+    "claim_type": "EXPLICIT",
+    "source": "it is clear that the authors' approach was ineffective at removing nuclei with high proportions of mitochondrial reads which is indicative of cell death (Heumos et al., 2023; Ilicic et al., 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Heumos et al., 2023 and Ilicic et al., 2016",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Excitatory and inhibitory nuclei with higher than 75% reads from the mitochondria were kept in the final processed dataset by Mathys et al.",
+    "claim_type": "EXPLICIT",
+    "source": "both excitatory and inhibitory nuclei with higher than 75% reads from the mitochondria were kept in the final processed dataset by the authors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from analysis of the original processed data",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Mathys et al. conducted a DE analysis between the controls and the patients with AD pathology, concentrating on six neuronal and glial cell types: excitatory neurons, inhibitory neurons, astrocytes, microglia, oligodendrocytes, and oligodendrocyte precursor cells.",
+    "claim_type": "EXPLICIT",
+    "source": "The authors conducted a DE analysis between the controls and the patients with AD pathology, concentrating on six neuronal and glial cell types; excitatory neurons, inhibitory neurons, astrocytes, microglia, oligodendrocytes, and oligodendrocyte precursor cells, derived from the Allen Brain Atlas (Tasic et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to the original study methods and Tasic et al., 2018",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Mathys et al. performed a two-part, cell- and patient-level analysis for differential expression.",
+    "claim_type": "EXPLICIT",
+    "source": "However, for this approach, the authors conducted a two-part, cell- and patient-level analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the original study's methods",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The cell-level analysis took each cell as an independent replicate.",
+    "claim_type": "EXPLICIT",
+    "source": "The cell-level analysis took each cell as an independent replicate",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the original study's methods",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Mathys et al. identified 1031 DEGs using their combinatorial approach requiring an FDR < 0.01 in the cell-level and an FDR < 0.05 in the patient-level analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "The authors identified 1031 DEGs using this combinatorial approach \u2013 DEGs requiring a false discovery rate (FDR) < 0.01 in the cell-level and an FDR < 0.05 in the patient-level analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Factual description of results from the original study",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Cell-level DE approach, also known as pseudoreplication, overestimates the confidence in DEGs due to the statistical dependence between cells from the same patient not being considered.",
+    "claim_type": "EXPLICIT",
+    "source": "It is important to note that this cell-level DE approach, also known as pseudoreplication, overestimates the confidence in DEGs due to the statistical dependence between cells from the same patient not being considered (Murphy and Skene, 2022; Squair et al., 2021; Zimmerman et al., 2021; Lazic, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to methodological studies",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "When inspecting all DEGs identified at an FDR of 0.05 from Mathys et al.'s cell-level analysis, the number increases to 14,274.",
+    "claim_type": "EXPLICIT",
+    "source": "When we inspect all DEGs identified at an FDR of 0.05 from the authors' cell-level analysis, this number increases to 14,274.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by reanalysis of the original data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Pseudobulk DE analysis has recently been proven to give optimal performance compared to both mixed models and pseudoreplication approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "Pseudobulk DE analysis has recently been proven to give optimal performance compared to both mixed models and pseudoreplication approaches (Murphy and Skene, 2022; Squair et al., 2021; Crowell et al., 2020; Soneson and Robinson, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to methodological comparison studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Pseudobulk DE analysis aggregates counts to individuals, thus accounting for the dependence between an individual's cells.",
+    "claim_type": "EXPLICIT",
+    "source": "It aggregates counts to individuals, thus accounting for the dependence between an individual's cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the pseudobulk method based on established knowledge",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The reanalysis found 26 unique DEGs when considering the six cell types used by Mathys et al. using pseudobulk DE approach on the authors' original processed data.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, to compare the effect of the different DE approaches in isolation, we apply a pseudobulk DE approach (Chen et al., 2016) to the authors' original processed data. We found 26 unique DEGs when considering the six cell types used by the authors (Table 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by reanalysis data presented in Table 2",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The 26 DEGs found in the reanalysis was 549 times fewer DEGs than that reported originally at an FDR of 0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "This was 549 times fewer DEGs than that reported originally at an FDR of 0.05.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by comparison of reanalysis results to original study",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The absolute log2 fold change (LFC) of the reanalysis DEGs is 15 times larger than Mathys et al.'s DEGs; median LFC of 2.34 and 0.16.",
+    "claim_type": "EXPLICIT",
+    "source": "When we compare these DEGs, we can see that the absolute log2 fold change (LFC) of our DEGs is 15 times larger than the authors'; median LFC of 2.34 and 0.16",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by comparison data from the reanalysis",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Mathys et al.'s DEGs have an FDR score 8000 times smaller than the reanalysis DEGs; median FDR of 2.89 \u00d7 10\u20137 and 0.002.",
+    "claim_type": "EXPLICIT",
+    "source": "despite the authors' DEGs having an FDR score 8000 times smaller; median FDR of 2.89 \u00d7 10\u20137and 0.002 (Figure 1a and b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by comparison data shown in Figure 1",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "There is a high correlation in the genes' fold change values across the pseudobulk analysis and Mathys et al.'s pseudoreplication analysis (Pearson R of 0.87 for an adjusted p-value of 0.05).",
+    "claim_type": "EXPLICIT",
+    "source": "Although we examined a high correlation in the genes' fold change values across our pseudobulk analysis and the authors' pseudoreplication analysis (Pearson R of 0.87 for an adjusted p-value of 0.05, Table 3), the p-values and resulting DEGs vary considerably.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by correlation analysis data presented in Table 3",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "There is a near perfect, positive correlation between DEG and cell counts for Mathys et al.'s pseudoreplication analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "There is a near perfect, positive correlation between DEG and cell counts for the authors' pseudoreplication analysis (Figure 1c)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by correlation analysis shown in Figure 1c",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "There is a near perfect, positive correlation between DEG and cell counts for the 1031 genes from Mathys et al.'s combinatorial approach.",
+    "claim_type": "EXPLICIT",
+    "source": "and for the 1031 genes from the authors' combinatorial approach (Figure 1d)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by correlation analysis shown in Figure 1d",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The positive correlation between DEG and cell counts is not present in the pseudobulk reanalysis.",
+    "claim_type": "EXPLICIT",
+    "source": "which is not present in our pseudobulk reanalysis (Figure 1e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by correlation analysis shown in Figure 1e",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Microglia is the primary cell type by which the genetic risk for AD acts.",
+    "claim_type": "EXPLICIT",
+    "source": "In our opinion, it makes more sense to identify the majority of large effect size DEGs in microglia which recent work has established is the primary cell type by which the genetic risk for AD acts (Skene and Grant, 2016; McQuade and Blurton-Jones, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Skene and Grant, 2016 and McQuade and Blurton-Jones, 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "96% of all DEGs from the reanalysis were in microglia.",
+    "claim_type": "EXPLICIT",
+    "source": "This is what we found with our pseudobulk DE approach \u2013 96% of all DEGs were in microglia (Table 2)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by reanalysis data presented in Table 2",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Only 3% of Mathys et al.'s DEGs were in microglia.",
+    "claim_type": "EXPLICIT",
+    "source": "whereas only 3% of the authors' DEGs were in microglia.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by analysis of the original study's results",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Pseudoreplication approaches result in false positives by artificially inflating the confidence from non-independent samples.",
+    "claim_type": "EXPLICIT",
+    "source": "Although it has been proven that pseudoreplication approaches result in false positives by artificially inflating the confidence from non-independent samples",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on established methodological knowledge",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The cell-level analysis approach with randomly permuted patient identifiers consistently found high numbers of DEGs.",
+    "claim_type": "EXPLICIT",
+    "source": "We ran the same cell-level analysis approach \u2013 a Wilcoxon rank-sum test and FDR multiple-testing correction \u2013 100 times whilst randomly permuting the patient identifiers (Figure 1f). We would expect to find minimal DEGs with this approach given the random mixing of case and control patients. However, this pseudoreplication approach consistently found high numbers of DEGs",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by permutation analysis data shown in Figure 1f",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The same correlation between the number of cells and the number of DEGs was observed with randomly permuted patient identifiers as with Mathys et al.'s results.",
+    "claim_type": "EXPLICIT",
+    "source": "and we observe the same correlation between the number of cells and the number of DEGs as with the authors' results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by permutation analysis data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The correlation between cell counts and DEGs was not observed when running the same permutation analysis with pseudobulk DE.",
+    "claim_type": "EXPLICIT",
+    "source": "We did not observe the same pattern when running the same analysis with pseudobulk DE (Figure 1g).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by permutation analysis data shown in Figure 1g",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Integrating pseudoreplication approach with a mixed model artificially inflates the test confidence for a random sample of the genes resulting in more false discoveries in cell types with bigger counts.",
+    "claim_type": "EXPLICIT",
+    "source": "As a result, we conclude that integrating this pseudoreplication approach with a mixed model like the authors proposed just artificially inflates the test confidence for a random sample of the genes resulting in more false discoveries in cell types with bigger counts.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on inference from the permutation analysis results",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Pseudobulk DE on the reprocessed data found 16 unique DEGs.",
+    "claim_type": "EXPLICIT",
+    "source": "We also performed pseudobulk DE on our reprocessed data and found 16 unique DEGs (Table 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by reanalysis data presented in Table 4",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The fold change correlation between the two DE analyses (reprocessed data vs authors' processed data) on the identified DEGs is only moderate (Pearson R of 0.57).",
+    "claim_type": "EXPLICIT",
+    "source": "It is worth noting that the fold change correlation between our two DE analyses (reprocessed data vs authors' processed data) on the identified DEGs is only moderate (Pearson R of 0.57)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by correlation analysis between the two reanalysis approaches",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The fold change correlation between reprocessed and original processed data (0.57) is lower than that of the correlation between pseudoreplication and pseudobulk on the same dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "and is lower than that of the correlation between pseudoreplication and pseudobulk on the same dataset (Table 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Supported by comparison of correlation values from Table 3",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Low quality high mitochondrial read cells have an effect on DE analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "This highlights the effect that the low quality high mitochondrial read cells have on DE analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from the moderate correlation between analyses using different QC approaches",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The use of pseudoreplication in neuroscience research is not isolated to Mathys et al.'s work; others have used this approach.",
+    "claim_type": "EXPLICIT",
+    "source": "However, we would like to highlight that the use of pseudoreplication in neuroscience research is not isolated to the authors' work; others have used this approach (Fernandes et al., 2020; Lui et al., 2021; Wakhloo et al., 2020), and their results should be similarly scrutinised.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to other studies using pseudoreplication",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The increasing number of snRNA-seq studies being conducted for AD creates the opportunity to conduct differential meta-analyses to increase power.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the increasing number of snRNA-seq studies being conducted for AD creates the opportunity to conduct differential meta-analyses to increase power.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Speculative statement about future research opportunities",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Further work is required in the field to develop methods to conduct meta-analysis, integrating studies and accounting for their heterogeneity, similar to that which has been done for bulk RNA-seq.",
+    "claim_type": "EXPLICIT",
+    "source": "Further work is required in the field to develop methods to conduct such analysis, integrating studies and accounting for their heterogeneity, similar to that which has been done for bulk RNA-seq (Rau et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Rau et al., 2014 for bulk RNA-seq meta-analysis methods",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Some meta-analysis approaches have already been made in COVID-19 research which could be leveraged for neurodegenerative disease.",
+    "claim_type": "EXPLICIT",
+    "source": "Some such approaches have already been made in COVID-19 research which could be leveraged for neurodegenerative disease (Garg et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Garg et al., 2021",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "emptyDrops was used with a lower parameter of <100 counts, an alpha cut-off of \u22640.001, and with 10,000 Monte Carlo iterations to determine ambient RNA profile and distinguish true nuclei from empty droplets.",
+    "claim_type": "EXPLICIT",
+    "source": "To determine ambient RNA profile and distinguish true nuclei from empty droplets, emptyDrops was used with a lower parameter of <100 counts, an alpha cut-off of \u22640.001, and with 10,000 Monte Carlo iterations (Lun et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of methods used in the reanalysis, supported by citation to Lun et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "emptyDrops approach has been recommended as best practice in the literature.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach has been recommended as best practice in the literature (Amezquita et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to best-practice guidelines",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Nuclei were filtered for \u2265200 total counts and \u2265200 total expressed genes, which was defined as a minimum of 2 counts in at least three cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Nuclei were then filtered for \u2265200 total counts and \u2265200 total expressed genes, which was defined as a minimum of 2 counts in at least three cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of QC methods used in the reanalysis",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Nuclei with total counts or total expressed genes with more than 4 MAD defined by an adaptive thresholding method were excluded.",
+    "claim_type": "EXPLICIT",
+    "source": "We excluded any nuclei with total counts or total expressed genes with more than 4 MAD defined by an adaptive thresholding method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of QC methods used in the reanalysis",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Doublets were identified using the DoubletFinder algorithm, with a doublets-per-thousand-cells increment of eight cells and a pK value of 0.005.",
+    "claim_type": "EXPLICIT",
+    "source": "Doublets were identified using the DoubletFinder algorithm, with a doublets-per-thousand-cells increment of eight cells (recommended by 10X Genomics), and a pK value of 0.005 (McGinnis et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of methods used in the reanalysis, supported by citation to McGinnis et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "DoubletFinder was shown to be the best overall performing method in a recent benchmark.",
+    "claim_type": "EXPLICIT",
+    "source": "DoubletFinder was shown to be the best overall performing method in a recent benchmark (Xi and Li, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Xi and Li, 2021",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The linked inference of genomic experimental relationships (LIGER) package was used to calculate integrative factors across samples.",
+    "claim_type": "EXPLICIT",
+    "source": "The linked inference of genomic experimental relationships (LIGER) package was used to calculate integrative factors across samples (Welch et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of methods used in the reanalysis, supported by citation to Welch et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "LIGER was recently found to be one of the top performing methods for batch-effect correction.",
+    "claim_type": "EXPLICIT",
+    "source": "LIGER was recently found to be one of the top performing methods for batch-effect correction (Tran et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Tran et al., 2020",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Two-dimensional embeddings of the LIGER integrated factors were calculated using the Uniform Manifold Approximation and Projection (UMAP) algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "Two-dimensional embeddings of the LIGER integrated factors were calculated using the Uniform Manifold Approximation and Projection (UMAP) algorithm with the following parameters: pca_dims: 50; n_neighbours: 35; init: spectral; metric: euclidean; n_epochs: 200; learning_rate: 1; min_dist: 0.4; spread: 0.85; set_op_mix_ratio: 1; local connectivity: 1; repulsion_strength: 1; negative_sample_rate: 5; and fast_sgd: false (McInnes et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of methods used in the reanalysis, supported by citation to McInnes et al., 2020",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The Leiden community detection algorithm was used to detect clusters of cells from the 2D UMAP (LIGER) embeddings with a resolution parameter of 0.001 and a k value of 50.",
+    "claim_type": "EXPLICIT",
+    "source": "The Leiden community detection algorithm was used to detect clusters of cells from the 2D UMAP (LIGER) embeddings; a resolution parameter of 0.001 and a k value of 50 were used (Traag et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of methods used in the reanalysis, supported by citation to Traag et al., 2019",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The Leiden clustering approach has been noted as best practice by a recent review.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach has been noted as best practice by a recent review (Heumos et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Heumos et al., 2023",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Automated cell typing of the detected clusters was performed using the Expression Weighted Celltype Enrichment algorithm in scFlow against a previously generated cell-type data reference from the Allen Human Brain Atlas.",
+    "claim_type": "EXPLICIT",
+    "source": "Automated cell typing of the detected clusters was performed as previously described using the Expression Weighted Celltype Enrichment algorithm in scFlow against a previously generated cell-type data reference from the Allen Human Brain Atlas (Hodge et al., 2019; Skene and Grant, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of methods used in the reanalysis, supported by citations to Hodge et al., 2019 and Skene and Grant, 2016",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The top five marker genes for each automatically annotated cell type were determined using Monocle 3 and validated against canonical cell-type markers.",
+    "claim_type": "EXPLICIT",
+    "source": "The top five marker genes for each automatically annotated cell type were determined using Monocle 3 and validated against canonical cell-type markers (Trapnell et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of methods used in the reanalysis, supported by citation to Trapnell et al., 2014",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "All DE analyses were conducted using pseudobulk DE approach with sum aggregation and edgeR LRT.",
+    "claim_type": "EXPLICIT",
+    "source": "All DE analyses were conducted using pseudobulk DE approach with sum aggregation and edgeR LRT (Chen et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of methods used in the reanalysis, supported by citation to Chen et al., 2016",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Pseudobulk aggregates nuclei within a biological replicate (an individual) for each cell type, reducing the dropout issue in single-cell data.",
+    "claim_type": "EXPLICIT",
+    "source": "Pseudobulk aggregates nuclei within a biological replicate (an individual) for each cell type, reducing the dropout issue in single-cell data",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of the pseudobulk method based on established knowledge",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Pseudobulk avoids the false inflation of confidence from non-independent samples of pseudoreplication approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "and avoiding the false inflation of confidence from non-independent samples of pseudoreplication approaches (Squair et al., 2021; Murphy and Skene, 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to Squair et al., 2021 and Murphy and Skene, 2022",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The reprocessed data is publicly available through Synapse at https://doi.org/10.7303/syn51758062.1.",
+    "claim_type": "EXPLICIT",
+    "source": "We have made the data from our alternative processing approach publicly available (through Synapse: https://doi.org/10.7303/syn51758062.1) so that researchers can utilise this resource free of low-quality nuclei.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statement about data availability",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

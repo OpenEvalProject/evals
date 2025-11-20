@@ -1,0 +1,410 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "5-FU treatment induces cell cycle progression in HSCs and activates anaerobic glycolysis, as evidenced by doubled glycolytic metabolite levels, unchanged TCA cycle intermediates, increased PPP/NAS intermediates, elevated ECAR, unchanged OCR, and increased glucose uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C24 collectively demonstrate that 5-FU induces HSC cell cycle progression (C16) accompanied by metabolic reprogramming toward anaerobic glycolysis. The evidence includes quantitative tracer analysis (C17-C19), Seahorse measurements (C20), and in vivo glucose uptake assays (C21), all showing consistent activation of glycolysis without increased mitochondrial flux (C18, C24). The data converge to support the conclusion in C23.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "OXPHOS inhibition by oligomycin activates compensatory glycolytic flux in HSCs while suppressing nucleic acid synthesis flux, with HSCs showing increased ECAR but less OCR decrease compared to myeloid progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 demonstrate that oligomycin treatment activates glycolysis (C25, C28) while maintaining TCA/PPP flux but reducing NAS flux (C26, C27). The differential response between HSCs and MyPs (C29-C30) is well-documented by Seahorse data. The metabolic compensation is clearly supported by tracer analysis and real-time measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "13C-MFA reveals that stressed HSCs (5-FU or oligomycin treatment) preferentially activate the first half of glycolysis, particularly PFK activity, as evidenced by reduced flux variation, elevated F1,6BP/F6P ratios, and increased PFK flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by quantitative 13C-MFA simulations showing reduced metabolic flux variation under stress (C31), preferential glycolytic activation (C32), and elevated F1,6BP/F6P ratios (C33). The mathematical modeling and tracer data converge to identify PFK as the key rate-limiting step activated under stress (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "In vivo tracer analysis shows that 5-FU treatment increases labeling of glycolytic, NAS, and TCA cycle metabolites in HSCs, with more glucose-derived metabolites entering the TCA cycle compared to PBS-treated controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by in vivo U-13C6-glucose tracer data showing increased labeling across multiple metabolic pathways. However, the authors acknowledge technical limitations of in vivo labeling (longer labeling time, metabolite exchange between cells) that complicate interpretation of TCA cycle flux compared to in vitro analysis. The core finding of increased glycolytic and NAS labeling is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "5-FU-treated HSCs show increased dependence on glycolysis for ATP production, as demonstrated by greater ATP decrease with 2-DG treatment compared to PBS-treated HSCs, while OXPHOS inhibition depletes ATP similarly in both groups. This metabolic shift is specific to cell-cycling HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by GO-ATeam2 real-time ATP measurements showing differential responses to glycolysis vs. OXPHOS inhibition in 5-FU-treated HSCs (C40-C41). The inference that 5-FU-treated HSCs upregulate glycolytic ATP production (C42) is well-supported. Importantly, C43 demonstrates this is specific to cell-cycling HSCs, not quiescent HSCs at other timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PFKFB3 is the most highly expressed PFKFB isozyme in HSCs and is required for ATP production in 5-FU-treated but not PBS-treated HSCs, with this effect being AMPK-independent during proliferative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by RNA-seq data (C44) and GO-ATeam2 ATP measurements showing PFKFB3 inhibitor decreases ATP specifically in 5-FU-treated HSCs (C45), while AMPK inhibition has no effect (C46). This establishes PFKFB3 as the key enzyme mediating glycolytic activation during proliferative stress through an AMPK-independent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "HSCs, but not HPCs, can maintain ATP levels through compensatory glycolytic activation when OXPHOS is inhibited, demonstrating unique metabolic plasticity. This is evidenced by ATP maintenance with glucose supplementation during oligomycin treatment in HSCs but not HPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 collectively demonstrate HSC-specific metabolic plasticity through GO-ATeam2 measurements. The data show that oligomycin rapidly depletes ATP (C52), but glucose supplementation maintains ATP in HSCs but not HPCs (C55-C56, C58). The differential response between cell types (C54) and consistency across multiple OXPHOS inhibitors (C57) strongly support the conclusion of HSC-specific metabolic flexibility (C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "PFKFB3 mediates compensatory glycolytic ATP production specifically in OXPHOS-inhibited HSCs through an AMPK-dependent mechanism, while HPCs rely on PFKFB3 constitutively. Steady-state HSCs are PFKFB3-independent for ATP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 demonstrate context-dependent PFKFB3 function through ATP measurements. PFKFB3 inhibition decreases ATP only in oligomycin-treated HSCs (C60), with AMP accumulation (C63) but LKB1-independence (C62) suggesting direct AMPK activation. The contrast with HPCs (C64) and steady-state HSCs supports the conclusion of stress-induced, plastic PFKFB3 activation (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Pfkfb3 overexpression in HSCs increases cell cycle progression and confers glycolytic dependence, as shown by increased S/G2/M cells, greater ATP decrease with 2-DG, and enhanced ATP recovery under low glucose with oligomycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by cell cycle analysis (C66) and GO-ATeam2 measurements (C67-C69) showing that Pfkfb3 overexpression increases glycolytic dependence. The data demonstrate both increased proliferation and metabolic reprogramming. The inference that PFKFB3 directly modulates metabolic dependency (C70) is well-supported by the gain-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PFKFB3 activity is regulated by post-translational modifications rather than expression changes: PRMT1-dependent methylation during proliferative stress (5-FU) and AMPK-dependent phosphorylation during OXPHOS inhibition (oligomycin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 demonstrate differential PFKFB3 regulation under different stresses. RNA-seq and immunocytochemistry show unchanged PFKFB3 expression/phosphorylation with 5-FU (C71-C72) but increased Prmt1 expression and PFKFB3 methylation (C74-C75). PRMT1 inhibitor reduces methylation (C76-C77), while oligomycin induces AMPK-dependent phosphorylation (C73). The data clearly support stress-specific post-translational regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Methylated PFKFB3 (m-PFKFB3) regulates glycolytic activity in HSCs, as evidenced by correlation with glucose uptake and the requirement of PRMT1-mediated PFKFB3 methylation for ATP maintenance in 5-FU-treated HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 link PFKFB3 methylation to function through multiple lines of evidence: correlation with glucose uptake (C78-C79), PRMT1 inhibitor effects on ATP (C80), and rescue by Pfkfb3 overexpression (C81). The convergence of correlative and functional data supports the conclusion that PRMT1-mediated methylation activates PFKFB3 to support ATP production (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "PFKFB3 is required for HSC proliferation and differentiation specifically under proliferative conditions, as shown by decreased colony formation with PFKFB3 inhibition/knockout and increased colony formation with overexpression, with transient effects on donor chimerism after transplantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 demonstrate PFKFB3's role in HSC function through loss-of-function (C83-C84), gain-of-function (C85), and transplantation experiments (C86-C87). The effects are specific to proliferative conditions, supporting the conclusion that PFKFB3 regulates HSC proliferation and differentiation (C88). The data are internally consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "PFKFB3 contributes to stress hematopoiesis by promoting HSPC cell cycle progression without affecting apoptosis or homing, as demonstrated by reduced Pfkfb3-KO cell abundance after 5-FU challenge, suppressed cell cycle in Pfkfb3-KO HSPCs, and accelerated cell cycle in Pfkfb3CA-overexpressing HSPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 demonstrate PFKFB3's specific role in stress hematopoiesis through competitive transplantation (C89-C91), cell cycle analysis (C92, C94), and exclusion of alternative mechanisms (C93). The data show PFKFB3 is dispensable for steady-state hematopoiesis but required for stress-induced proliferation. The convergence of loss- and gain-of-function data strongly supports the conclusion (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Under stress, HSCs shift from mitochondrial respiration to glycolytic ATP production and can fully compensate for mitochondrial ATP production through accelerated glycolysis, choosing to modulate glucose utilization efficiency rather than other energy sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 summarize major findings supported by 13C-MFA and GO-ATeam2 data. The shift to glycolysis under proliferative stress (C96) is well-documented. The ability to fully compensate for OXPHOS inhibition (C97) is demonstrated by ATP maintenance with glucose supplementation. The preference for glucose over other substrates (C98) is supported by experiments with FAO and glutaminolysis inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Steady-state HSCs primarily rely on mitochondrial OXPHOS for ATP production, which remains functional even under hypoxic conditions mimicking the bone marrow environment, with fatty acids potentially supporting mitochondrial ATP production independently of glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by ATP measurements showing greater sensitivity to oligomycin than 2-DG in steady-state HSCs (C99). The maintenance of OXPHOS under hypoxia (C100, C102) is supported by the low p50 of mitochondria (C101, citation). The role of fatty acids (C103) is inferred from prior literature. The functional uncoupling of glycolysis and TCA cycle (C104) is directly demonstrated by tracer data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "HSCs exhibit unique metabolic flexibility compared to HPCs: HSCs can activate PFKFB3-dependent glycolysis in response to stress while HPCs constitutively rely on PFKFB3, and glycolytic activation in HSCs is the starting point for overall metabolic enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 synthesize findings on HSC vs. HPC metabolism. The stress-induced glycolytic activation in HSCs (C105-C106) is well-supported by multiple experiments. The differential PFKFB3 dependence between HSCs and HPCs (C107-C108) is clearly demonstrated. The inference that quiescent HSCs have reserve glycolytic capacity (C109) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "PFKFB3 overexpression increases glycolytic dependency in HSCs, demonstrating that PFKFB3 itself can modulate metabolic dependency. This is physiologically relevant given that PFK activity varies significantly within the narrow ATP concentration range where HSCs operate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are supported by gain-of-function experiments showing increased glycolytic dependence with Pfkfb3 overexpression. The citation of Webb et al. (C112) provides important context for why small changes in ATP concentration (observed in the experiments) can have large effects on PFK activity, supporting the physiological relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "PFKFB3 supports hematopoiesis specifically during stress requiring HSPC proliferation, with transient effects after BMT due to its role in cell cycle progression rather than survival or homing. PFKFB3 activity is plastically modified based on HSC state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 synthesize findings on PFKFB3's in vivo function. The requirement for proliferative contexts (C113-C115) is well-demonstrated. The exclusion of effects on apoptosis/homing (C116) and the transient nature of effects (C114, C118) are clearly shown. The inference of plastic PFKFB3 activity (C119) is well-supported by the differential effects under different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "HSC metabolic plasticity is mediated by stress-specific PFKFB3 modifications: PRMT1-dependent methylation during proliferative stress and AMPK-dependent phosphorylation during OXPHOS inhibition. These modifications are functionally interchangeable, as demonstrated by constitutively active PFKFB3 mutant enhancing HSC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 demonstrate the mechanism of metabolic plasticity through differential PFKFB3 modifications. The stress-specific modifications (C121, C124) are well-documented. The link to PRMT1's known role in stress hematopoiesis (C122-C123) strengthens the findings. The functional interchangeability (C126-C127) is demonstrated by the Pfkfb3CA mutant experiments, though this is somewhat indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "HSCs exhibit highly dynamic glycolytic flux that serves as a pivotal energy source under stress while OXPHOS can be uncoupled from glycolysis in steady-state. Multiple PFKFB3 modifications safeguard HSCs against different stresses, suggesting therapeutic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 summarize major conclusions well-supported by the experimental data. The dynamic glycolytic flux (C128), stress-dependent glycolysis (C129), and metabolic uncoupling (C130) are clearly demonstrated. The therapeutic speculation (C132) is appropriately tentative and based on the demonstrated role of PFKFB3 modifications in stress responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "This study provides a platform for comprehensive, quantitative, real-time ATP analysis in rare cells like HSPCs, enabling detection of metabolic activities within diverse cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 describe the methodological contribution of the study. The GO-ATeam2 system successfully enabled real-time ATP measurements in rare HSCs, as demonstrated throughout the manuscript. The applicability to rare cells and diverse populations is clearly shown by the successful analysis of multiple HSPC subsets. This represents a significant technical advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "FAO and glutaminolysis are not essential for short-term ATP maintenance in 5-FU-treated HSCs, though OXPHOS is primarily driven by FAO and can be compensated by PFKFB3-accelerated glycolysis. Glutaminolysis contributes minimally to ATP production in HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by GO-ATeam2 measurements with metabolic inhibitors. The lack of ATP decrease with etomoxir or DON alone (C47-C48) supports limited short-term requirement. The synergistic effect of etomoxir with PFKFB3 inhibitor (C49-C50) suggests FAO drives OXPHOS but can be compensated. The lack of effect with DON plus PFKFB3 inhibitor (C51) supports minimal glutaminolysis contribution. However, the authors acknowledge these are short-term effects and don't address long-term requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "GO-ATeam2 mice show normal hematopoiesis with only mild decrease in Lin- fraction. MyPs show higher ATP consumption than HSCs and are glycolysis-dependent for ATP maintenance, consistent with PKM2 requirement in progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 validate the GO-ATeam2 mouse model and establish baseline differences between HSCs and MyPs. The flow cytometry data (C37) shows minimal perturbation of hematopoiesis. The differential ATP dynamics (C38) and metabolic dependencies (C39) between HSCs and MyPs are clearly demonstrated and consistent with prior literature on PKM2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "HSCs activate PFK during proliferation and OXPHOS inhibition, with rapid PFKFB3-mediated glycolytic acceleration occurring within seconds. PFKFB3 is activated differentially by PRMT1-dependent methylation during proliferative stress and AMPK-dependent phosphorylation during OXPHOS inhibition. Pfkfb3 overexpression promotes while inhibition/loss suppresses HSC proliferation and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 represent the core findings of the manuscript, summarizing results from 13C-MFA (C1), GO-ATeam2 measurements (C2), immunocytochemistry (C3), and functional assays (C4-C5). Each claim is well-supported by multiple experimental approaches presented in detail elsewhere in the manuscript. These abstract-level claims accurately reflect the major conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establishing the importance of ATP regulation, HSC properties, and prior knowledge about glycolytic enzymes, mitochondrial genes, and metabolic reprogramming in HSCs, including recent findings on deeply quiescent HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the study. The citations appear appropriate and the claims accurately represent the cited work. C15 on deeply quiescent HSCs is particularly relevant as it motivated the authors' analysis of whether metabolic changes occur uniformly across all HSCs.",
+    "result_type": "MINOR"
+  }
+]

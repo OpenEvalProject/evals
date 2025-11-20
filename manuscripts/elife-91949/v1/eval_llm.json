@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "osl-dynamics is presented as a Python-based open-source toolbox that uses machine learning generative models to identify and describe recurrent brain dynamics on fast timescales (tens of milliseconds) across multiple neuroimaging modalities including MEG, fMRI, LFP, and ECoG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 describe the toolbox's core capabilities and are supported by the demonstrated applications throughout the manuscript. Claims C47-C49 regarding Python implementation and its advantages are explicitly stated and justified. The multi-modality applicability (C3) is supported by citations to prior work using these methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C40",
+      "C41"
+    ],
+    "result": "The TDE-HMM can identify oscillatory bursts in a data-driven manner without pre-specifying frequency, amplitude threshold, or duration, detecting bursts with lifetimes ranging from hundreds of milliseconds and automatically identifying oscillation frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C14 are directly supported by the burst detection results shown in Figure 1, where the TDE-HMM identifies three states with distinct spectral properties and varying lifetimes. Claims C40-C41 regarding advantages over conventional methods are stated and conceptually sound, though direct comparative validation is not shown in this manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The AE-HMM identifies plausible functional networks (default mode, visual, frontotemporal, sensorimotor) with fast dynamics (~50 ms lifetimes) and detects significant task-related activations of visual networks (50-100 ms post-stimulus, p<0.05) and frontotemporal networks (300-900 ms post-stimulus, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by Figure 2A showing identified networks and their dynamics. Claims C17-C18 regarding task-related activations are supported by Figure 2B with appropriate statistical testing (p<0.05) and permutation testing to control family-wise error rate. The networks are validated as plausible by citation to Buckner et al., 2011.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The TDE-HMM identifies networks with distinct spectral characteristics and fast dynamics (~50 ms lifetimes), showing spatial patterns consistent with AE-HMM results and similar networks across rest and task conditions, with high power regions showing high coherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by Figure 3 showing state-specific PSDs, power maps, and lifetime distributions. Claim C20 is validated by visual comparison between Figures 2 and 3. Claim C22 is supported by comparison of Figures 3 and 4 with citation to Smith et al., 2009. Claim C23 is supported by coherence networks shown in Figures 3AI and 4AI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In the CTF rest dataset, older participants (34-60 years) show significantly increased fractional occupancy and switching rate of the sensorimotor network (p<0.05), decreased mean lifetime of the visual network (p<0.05), and wider distribution of mean intervals for default mode and suppressed states (p<0.05) compared to younger participants (18-34 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are all supported by Figure 4BI with appropriate statistical testing (p<0.05) and permutation testing controlling for family-wise error rate. The authors appropriately note (C67) that these findings are consistent with existing studies (Coquelet et al., 2020) and acknowledge this is an illustrative example requiring more rigorous future study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "DyNeMo identifies more localized power activations and cleaner network structure than TDE-HMM, with networks showing distinct spectral characteristics and overlapping dynamics. In the age comparison, DyNeMo reveals stronger effect sizes (p<0.01) for sensorimotor network differences and identifies decreased variability in the left temporal network (p<0.01) in older participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by Figure 5A showing DyNeMo's network identification and mode correlations. Claims C32-C33 regarding age-related differences are supported by Figure 5BI with appropriate statistical testing. The comparison showing DyNeMo's stronger effect size (p<0.01 vs p<0.05 for HMM) is explicitly demonstrated, though the authors appropriately note this is task-dependent (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C71",
+      "C72"
+    ],
+    "result": "The TDE-HMM models dynamics in both oscillatory amplitude and phase synchronization (unlike AE-HMM which only models amplitude), while HMM assumes mutually exclusive states and DyNeMo assumes mixed modes, providing complementary descriptions of network dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 accurately describe fundamental differences between the methods as stated in the manuscript and supported by the mathematical formulations in Figure 7. Claims C71-C72 regarding complementary nature are appropriately stated as interpretive conclusions supported by citation to Gohil et al., 2022 and demonstrated through the different perspectives shown in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "DyNeMo uses richer temporal regularization through a deep recurrent network compared to HMM, which has been shown to capture longer-range temporal structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by citation to Gohil et al., 2022 and are consistent with the architectural differences shown in Figure 7B. The claim is appropriately attributed to prior validation work rather than being demonstrated de novo in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The sliding window approach for calculating time series properties suffers from a tradeoff between temporal precision and accurate estimation and is inadequate for studying fast changes in functional connectivity, while generative models can identify non-contiguous segments sharing the same latent variable for more robust estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 accurately describes a known limitation of sliding window approaches. Claim C51 is supported by citation to Liuzzi et al., 2019. Claim C52 describes the theoretical advantage of the generative model approach, which is conceptually sound and consistent with the methodology presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The HMM uses variational Bayesian inference to learn latent states with the advantage of accounting for uncertainty, while DyNeMo uses amortized variational Bayesian inference to overcome HMM limitations (mutually exclusive states and limited memory), providing a highly efficient and scalable inference scheme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 regarding HMM are supported by citations to Bishop and Nasrabadi, 2006 and multiple application papers. Claims C56-C58 regarding DyNeMo are supported by citations to Gohil et al., 2022 and Kingma and Welling, 2013. The mathematical formulations in Figure 7 support these methodological descriptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Time-delay embedding augments time series with time-lagged channels, embedding the autocorrelation function into the covariance matrix, making it sensitive to oscillation frequency and enabling study of dynamics in both oscillatory amplitude and phase synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 accurately describe the TDE methodology and are supported by the illustration in Figure 9C. The mathematical relationship between TDE and spectral properties is correctly stated and demonstrated visually.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "HMM and DyNeMo are trained by minimizing variational free energy but suffer from local optimum issues leading to run-to-run variability. The strategy of training 10 models and selecting the best run consistently finds the same model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 accurately describe the training procedure and its limitations. Claim C65 describes the mitigation strategy used. Claim C66 is supported by the reproducibility analysis shown in supplementary figures (Figure 1\u2014figure supplement 1 through Figure 5\u2014figure supplement 1), demonstrating consistent results across independent sets of runs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Both HMM and DyNeMo have been validated on simulated data for burst detection and dynamic network identification applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by citations to Quinn et al., 2019 for HMM burst detection validation and Vidaurre et al., 2016; Gohil et al., 2022 for dynamic network validation. While the validation is not shown in this manuscript, the citations to prior validation work are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70"
+    ],
+    "result": "The observed age-related differences are consistent with existing studies, and static power differences can arise from either more frequent network activations or altered power within networks while dynamics remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is supported by citation to Coquelet et al., 2020. However, claims C69-C70 are explicitly stated as speculative explanations (\"could be due to\", \"may arise from\") without direct validation. The authors appropriately acknowledge these are possible interpretations requiring further investigation, but the mechanistic claims remain unvalidated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Better performance in downstream tasks indicates a more useful model, and osl-dynamics can compute static network descriptions using the same methodology as dynamic approaches for straightforward comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 presents a reasonable criterion for model evaluation, though it is stated as an argument rather than an established principle. Claim C74 is supported by the demonstration in Section 2.5 and Figure 6 showing static network analysis using consistent methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript describes various methodological details including burst detection assumptions, spectral estimation approaches, dimensionality reduction needs, network thresholding methods, and DyNeMo-specific complications regarding mode time course interpretation and renormalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 describe methodological details and implementation choices. These are appropriately documented with citations where applicable (e.g., C79 to Vidaurre et al., 2016; C81 to Vidaurre et al., 2018b; C82 to Quinn et al., 2022a and Gohil et al., 2022; C84-C85 to Gohil et al., 2022). The methods are clearly stated and justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Different state/mode time courses can lead to similar variational free energy values due to local optima, with sensitivity to stochasticity and initial values. Reproducibility is defined as consistently inferring the same model parameters, with only relative differences in free energy being important for a given set of hyperparameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 accurately describe characteristics of the training process and reproducibility criteria. These are standard considerations in variational inference and are appropriately documented. The reproducibility analysis in supplementary figures supports these statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript reviews prior work establishing that neural oscillations are linked to cognitive processes, communication, and disease, with recent evidence for short oscillatory bursts (~100 ms) occurring across cortical networks and network dynamics being predictive of behavioral traits and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 are all appropriately supported by citations to prior work (Ward, 2003; Fries, 2015; Ba\u015far and G\u00fcntekin, 2008; Jones, 2016; Shin et al., 2017; Seedat et al., 2020; Vidaurre et al., 2018b; Quinn et al., 2018; Higgins et al., 2021; Li\u00e9geois et al., 2019; Sitnikova et al., 2018; Du et al., 2018; Van Schependom et al., 2019; Salvan et al., 2021; Sharma et al., 2021; Ma et al., 2020). These claims accurately represent the cited literature and provide appropriate context.",
+    "result_type": "MINOR"
+  }
+]

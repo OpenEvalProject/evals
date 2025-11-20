@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Bioinformatic analysis of 120 INP sequences reveals that WO-coil counts vary considerably (30-70 coils, median 58), while R-coil counts are highly conserved (107 of 120 sequences contain 10 or 12 R-coils). This stark difference in length variation supports the hypothesis that WO-coils and R-coils have different functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are well-supported by bioinformatic analysis data shown in Figure 1C-D. The dataset of 120 sequences from long-read sequencing provides robust evidence for the differential conservation patterns, and the inference about different functions is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Incremental replacement of R-coils with WO-coils causes catastrophic loss of ice nucleation activity. Reducing R-coils from 12 to 6 decreased T50 by 26.9\u00b0C (to -35.7\u00b0C), while reducing WO-coils by half only decreased T50 by ~2\u00b0C. This disproportionate effect is attributed to disruption of INP multimer formation rather than loss of water-organizing surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are strongly supported by experimental data from ice nucleation assays shown in Figure 2B-C. The comparison with prior work on WO-coil deletions (C54) strengthens the conclusion. The attribution to multimer formation (C55) is a reasonable inference given that R-coils lack water-organizing motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C95"
+    ],
+    "result": "The location of R-coils at the C-terminal end of the solenoid is critical for function. Relocating R-coils to the N-terminus reduced activity by 13.6\u00b0C, while midpoint relocation eliminated activity entirely (T50 = -36.1\u00b0C), matching the deletion construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C95 are well-supported by experimental data in Figure 3B. The relocation experiments provide strong evidence that R-coil position is critical, not just their presence. The results are internally consistent and support the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Positive charge in R-coils is critical for ice nucleation activity. Replacing basic residues (R/K/H) with acidic residues decreased T50 by 10.3\u00b0C, while replacing arginines with lysines maintained wild-type activity (p=0.89), indicating that positive charge is more important than side chain geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are strongly supported by experimental data in Figure 4B. The K-coils mutant provides particularly compelling evidence that charge, not specific residue identity, is critical. The inference about charge importance (C62) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Large INP structures are present within the bacterial cytoplasm, as demonstrated by filtered lysate retaining ice nucleation activity (T50 = -9.6\u00b0C) only a few degrees lower than whole bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by experimental data in Figure 5A and agreement with prior work (Kassmannhuber et al., 2020). The inference that large structures exist in the cytoplasm (C64) is reasonable given that 0.2-\u03bcm filtration removes cells but retains activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "INP ice nucleation activity shows minimal pH dependence. Activity decreased by ~8\u00b0C at pH 2.0 and was minimally affected up to pH 11.0, with no major change (\u0394T50 > 10\u00b0C) at pH extremes, suggesting the ice nucleation mechanism is not pH-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by experimental data in Figure 5B and agreement with prior work (Chao et al., 1994). The conclusion about pH-independence (C67) is reasonable given the modest effects observed, though the inference could be strengthened with additional mechanistic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C104"
+    ],
+    "result": "INP multimers exhibit remarkable heat stability, losing only 5\u00b0C of activity after heating to 99\u00b0C for 10 minutes, while the GFP control denatured at 75\u00b0C. A truncated construct (\u0394411-923) showed similar heat resistance, suggesting R-coils and C-terminal cap are mainly responsible for multimer stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 and C104 are well-supported by experimental data in Figure 6A-B. The GFP control provides strong internal validation of heat treatment effectiveness. The inference about R-coils and cap being responsible for stability (C76) is reasonable but could benefit from additional direct evidence. The possibility of reassembly after denaturation is appropriately acknowledged but not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "N-terminal truncations do not significantly affect ice nucleation activity (p=0.82), confirming that the N-terminal domain is not essential for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by experimental data in Figure 7D and agreement with prior work (Kassmannhuber et al., 2020). The statistical test (p=0.82) provides appropriate quantitative support for the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The C-terminal cap is essential for ice nucleation activity. A triple mutant (F1204D, D1208L, Y1230D) designed to disrupt the cap structure showed greatly reduced activity (T50 = -27.8\u00b0C), validating the AlphaFold-predicted cap structure and its importance for solenoid stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by experimental data in Figure 7D and bioinformatic analysis in Figure 7B showing high conservation. The rational design of mutations based on the AlphaFold model and their dramatic effect on activity provides strong validation of the predicted structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C9"
+    ],
+    "result": "Cryo-ET reveals that INP multimers form fibres ~5 nm across and up to 200 nm long in E. coli cytoplasm. Wild-type INP-expressing cells appear lysed after 3 days at 4\u00b0C and contain fibre clusters, while mutants lacking R-coils do not form fibres and maintain intact cell envelopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 and C9 are strongly supported by cryo-ET imaging data in Figure 8. The comparison between wild-type and R-coil deletion mutants provides compelling evidence that R-coils are essential for fibre formation. The in situ visualization is a major technical achievement and provides direct structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "A structural model proposes that INP multimers consist of antiparallel dimers linked end-to-end. Dimers form through tyrosine ladder interactions and are oriented antiparallel (rather than parallel) to avoid steric clashes. End-to-end linking involves electrostatic interactions between positively charged R-coils and negatively charged WO-coils, forming compact fibres with diameters matching cryo-ET observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C113 present a hypothetical model based on inference from experimental data and structural modeling. While the model is consistent with available data (cryo-ET dimensions, mutagenesis results, charge distribution), it lacks direct atomic-resolution structural validation. The antiparallel orientation (C107-C108) is inferred from modeling showing steric clashes in parallel arrangements, but this has not been experimentally verified. The model is plausible and well-reasoned but remains speculative pending high-resolution structural determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The proposed antiparallel dimer model can accommodate the wide range of WO-coil lengths observed in nature (30-70 coils) by adjusting the gap between dimers. This flexibility explains the minimal activity loss with large WO-coil deletions and the heat stability of INP multimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C118 extend the structural model to explain experimental observations. While the model provides a plausible explanation for WO-coil length tolerance and heat stability, these are inferences from the model rather than direct experimental tests. The model's ability to accommodate diverse observations is encouraging but does not constitute proof of the model's correctness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C93"
+    ],
+    "result": "The model explains why R-coil length is critical: shortening below 8 R-coils catastrophically reduces activity because insufficient electrostatic and other interactions remain to bridge dimers together. At least 8 R-coils are required for efficient multimer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 and C93 connect the structural model to experimental observations of R-coil length requirements. While the model itself is hypothetical, the experimental data on R-coil deletions (Figure 2) strongly supports the conclusion that ~8 R-coils are required for function. The mechanistic explanation is plausible but remains to be directly validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C122",
+      "C123"
+    ],
+    "result": "Electrostatic interactions between positively charged R-coils and negatively charged WO-coils contribute to fibre assembly. Charge reversal reduced activity by ~9\u00b0C, while pH changes had smaller effects because protonated acidic residues can still form hydrogen bonds. Residual activity in charge-reversed mutants suggests additional non-electrostatic interactions exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 and C122-C123 are supported by experimental data from charge reversal mutants (Figure 4B) and pH experiments (Figure 5B). The interpretation that electrostatic interactions are important but not solely responsible is well-justified. The inference about hydrogen bonding at low pH (C122) is chemically reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The highly conserved C-terminal cap is involved in additional binding interactions between dimers beyond electrostatics. Mutations disrupting the cap fold eliminated all activity, and extending the tyrosine ladder into R-coils had disruptive effects in charge-reversed mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by experimental data showing complete loss of activity with cap mutations (Figure 7D) and synergistic effects of combining mutations (Figure 4B). The suggestion of cap involvement in dimer interactions (C124) is speculative but reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "R-coil relocation experiments support the model: N-terminal relocation caused ~50% activity loss (possibly due to separation from the cap), while midpoint relocation eliminated activity (incompatible with the model's requirement for terminal positioning).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by experimental data in Figure 3B. The interpretation that midpoint relocation is incompatible with the model is consistent with the complete loss of activity. The speculation about cap separation (C128) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The model predicts that dimer termini are exposed and can accommodate tags and extensions. Experimental evidence shows C-terminal GFP tags and N-terminal domain deletions do not affect activity, and even bulky proteins like mRuby can be inserted into WO-coils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 are supported by experimental data (Figures 6B, 7D) and citations to prior work. The model's ability to explain these observations provides additional support for its plausibility, though the model itself remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The proposed model represents the thinnest possible fibrillar multimer structure and is consistent with dimensions observed by electron microscopy: 4-6 nm diameter in cell-free systems, 5-7 nm in negatively stained isolated multimers, and slightly thinner in cryo-ET (consistent with absence of staining).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137 are supported by comparison of the model with multiple EM datasets from different sources. The consistency across techniques and the reasonable explanation for differences (negative staining) strengthen confidence in the model's dimensional accuracy, though atomic-level validation is still needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The INP solenoid consists of two functional subdomains: WO-coils (80-90% of length) that directly affect ice nucleation temperature through water organization, and R-coils (10-20%) critical for multimer formation. WO-coil counts vary widely in nature (30-70, median 58), and loss of water-organizing surface can be compensated by adding more monomers to multimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 synthesize prior work with current bioinformatic analysis. The functional distinction between subdomains is well-supported by experimental data. The compensation hypothesis (C92) is a reasonable inference from the observation that INPs function as multimers, though direct experimental validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "A positively charged subdomain at the C-terminal end of the central \u03b2-solenoid is crucial for INP multimerization. Truncation, relocation, or charge reversal of this subdomain caused catastrophic loss of ice nucleation ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 represent the central finding of the manuscript and are strongly supported by multiple lines of experimental evidence including deletion mutants (Figure 2), relocation mutants (Figure 3), charge reversal mutants (Figure 4), and cryo-ET showing absence of fibres in R-coil deletion mutants (Figure 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "A model of INP fibres as overlapping series of antiparallel dimers can account for all known properties of INPs and suggests routes to cell-free ice nucleators for biotechnological applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 presents the proposed structural model and its implications. While the model is consistent with available data and can explain multiple experimental observations, it remains a hypothetical model lacking atomic-resolution validation. The suggestion about biotechnological applications is speculative. The model represents an important advance but requires further structural validation.",
+    "result_type": "MAJOR"
+  }
+]

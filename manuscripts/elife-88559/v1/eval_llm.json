@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C35"
+    ],
+    "result": "\u03b2-adrenergic receptor signaling is necessary for a large fraction of stress-induced hippocampal gene expression. Propranolol (\u03b2-antagonist) prevents many stress-induced transcriptional changes in both dorsal and ventral hippocampus without affecting baseline gene expression, and this effect is consistent across both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C4, C5, C6, and C35 provide converging evidence from multiple experimental approaches (pharmacological blockade, RNA-seq, temporal dynamics, sex comparisons) demonstrating that \u03b2-adrenergic signaling is required for stress-induced gene expression. The data include appropriate controls (propranolol without stress), statistical analyses (FDR correction), and replication across sexes and hippocampal subregions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "\u03b11-adrenergic receptor signaling has minimal impact on stress-induced hippocampal transcriptional changes. Prazosin (\u03b11-antagonist) only mildly affects stress-dependent gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by RNA-seq data comparing stress responses with and without prazosin treatment, showing minimal transcriptional effects. This contrasts with the robust effects of \u03b2-receptor blockade, providing important negative control data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Direct hippocampal \u03b2-adrenergic receptor activation is sufficient to induce expression of specific stress-responsive genes. Intra-hippocampal isoproterenol increases Dio2 and Sik1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by qRT-PCR data with statistical significance following direct pharmacological activation. However, the result is limited to only 2 genes showing significant effects out of 4 tested, suggesting \u03b2-receptor activation alone may not be sufficient for all stress-responsive genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Systemic yohimbine administration activates the LC-NA system and mimics the stress-induced transcriptional response in the hippocampus. Yohimbine increases LC cFos expression, cortical NA turnover, induces anxiety-like behavior, and produces hippocampal gene expression changes indistinguishable from stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 provide multi-level validation (immunohistochemistry, neurochemistry, behavior, transcriptomics) that yohimbine activates the LC-NA system and produces stress-like effects. The transcriptomic comparison shows no significant differences between stress and yohimbine conditions, supporting the claim that yohimbine mimics stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Chemogenetic LC activation with hM3Dq/clozapine is sufficient to induce hippocampal transcriptional changes similar to stress. This manipulation increases LC cFos expression, hippocampal NA release, anxiety-like behavior, and significant gene expression changes in both hippocampal subregions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 demonstrate that selective LC activation produces stress-like molecular and behavioral effects through multiple validation methods (immunohistochemistry, fiber photometry, behavior, RNA-seq). The use of hM3Dq- controls and ultra-low clozapine doses strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Optogenetic LC activation at 5 Hz induces rapid, transient hippocampal transcriptional changes. This stimulation triggers immediate NA release, increases LC cFos expression, elevates cortical NA turnover, causes pupil dilation, and induces gene expression changes at 45 minutes that largely resolve by 90 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 provide comprehensive temporal and mechanistic characterization using optogenetics combined with fiber photometry, immunohistochemistry, neurochemistry, pupillometry, and RNA-seq. The temporal resolution demonstrates that LC-NA effects are rapid but transient, with appropriate ChR2- controls throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C39"
+    ],
+    "result": "A highly selective set of 10 genes emerges as the most consistent targets of LC-NA activation across multiple experimental paradigms. These genes (Dio2, Ppp1r3c, Ppp1r3g, Sik1, Tsc22d3, Ppp1r3d, F3, Sertad1, Nr4a1, Timp3) are predominantly enriched in astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C39 are supported by cumulative rank analysis across stress, pharmacological, chemogenetic, and optogenetic experiments, combined with single-cell RNA-seq data showing astrocyte enrichment. The convergent evidence from multiple independent manipulations strengthens confidence in these targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C37"
+    ],
+    "result": "The transcriptional response to LC activation is independent of stimulation frequency and pattern. Tonic (3 Hz, 5 Hz) and phasic (15 Hz) LC stimulation produce similar gene expression changes in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, and C37 are supported by RNA-seq comparing different optogenetic frequencies and experiments in both sexes. However, the analysis is restricted to the top 10 LC-NA responsive genes rather than genome-wide, which limits the generalizability of the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C38",
+      "C48",
+      "C49"
+    ],
+    "result": "Hippocampus-projecting LC neurons directly regulate hippocampal gene expression through local NA release. Retrograde optogenetic activation of these neurons increases hippocampal NA turnover without affecting cortical NA or pupil size, demonstrating modular LC organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C38, C48, and C49 provide strong evidence for direct hippocampal regulation through retrograde optogenetics combined with neurochemistry, pupillometry, and RNA-seq. The lack of cortical effects and pupil changes supports the specificity of hippocampal projections, though C48 is an inference rather than direct anatomical demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "LC-NA responsive genes show distinct temporal patterns and are induced by diverse stressors. Sik1 and Nr4a1 show immediate early gene kinetics (rapid rise and fall), while Dio2, Ppp1r3c, and Ppp1r3g show sustained expression (2-4 hours). All are upregulated by swim, novelty, restraint, and footshock stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by re-analysis of published time-course and multi-stressor datasets. The temporal patterns suggest different regulatory mechanisms, though the sustained expression of some genes implies additional factors beyond initial NA release may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C51"
+    ],
+    "result": "Astrocytes are the primary cellular target of LC-NA mediated transcriptional changes. Dio2, Ppp1r3c, and Ppp1r3g are predominantly expressed in astrocytes, while Sik1 and Nr4a1 show broader expression. These genes are actively translated in astrocytes after stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C51 are supported by single-nucleus RNA-seq showing cell-type specificity and TRAPseq demonstrating active translation. The convergence of transcriptional and translational data strengthens the conclusion, though protein-level validation is acknowledged as missing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "LC-NA activation produces rapid but transient transcriptional changes, while natural stress responses are prolonged through interaction with other stress mediators. Glucocorticoid signaling can extend expression of LC-NA target genes (Dio2, Ppp1r3c, Ppp1r3g) over longer periods, and NA release is required to enable gene expression triggered by other mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 integrate temporal dynamics from optogenetic experiments with re-analysis of glucocorticoid data and propranolol blockade experiments. The interpretation that NA acts as a permissive or enhancing signal is well-supported by the observation that blocking \u03b2-receptors prevents more genes than LC activation alone induces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Classical neuronal immediate early genes (Fos, Egr1, Arc, Dusp1, Npas4) are not upregulated by LC stimulation alone, distinguishing LC-NA effects from general neuronal activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by RNA-seq data showing lack of upregulation of these canonical activity-dependent genes during LC stimulation. This negative result is important for distinguishing direct NA effects from indirect effects via neuronal activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Dio2 is a key astrocytic target of LC-NA signaling that regulates local thyroid hormone availability. Dio2 converts T4 to bioactive T3, its enzymatic activity is increased by noradrenergic transmission, and T3 signaling plays a role in hippocampal memory formation, suggesting LC-NA may regulate memory through astrocytic thyroid hormone metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C59 are well-supported by established knowledge and citations. However, C60 is explicitly speculative, and the connection between NA-induced Dio2 expression and memory effects lacks direct experimental validation in this study. The result represents a plausible hypothesis requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "Three protein phosphatase 1 regulatory subunits (Ppp1r3c, Ppp1r3d, Ppp1r3g) are strongly responsive to LC-NA activity and regulate astrocytic glycogen synthesis. This supports the LC-NA system as a major regulator of brain energy metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 and C66 are supported by the current transcriptomic data showing consistent upregulation across experiments, combined with established knowledge and citations about the function of these genes in glycogen metabolism. The interpretation about energy metabolism is well-grounded in prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "SIK1 is an LC-NA responsive gene that regulates Na+/K+-ATPase activity and may detect glucose availability. Its role in brain energy metabolism during noradrenergic activity is speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is well-supported by citations to previous work. However, C65 explicitly notes that the connection to brain function is speculative, based on liver cell studies. The relevance to LC-NA signaling in the brain requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Nr4a1 is a widely expressed transcription factor responsive to LC-NA that may reduce oxidative stress and inflammation in astrocytes and regulate blood-brain barrier integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by the current data showing Nr4a1 as an LC-NA target, combined with citations to previous work on its functions. However, the functional consequences of Nr4a1 upregulation in this context are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The hippocampus receives exclusive NA input from the LC, and stress-induced transcriptional changes peak at 45-90 minutes. The dorsal and ventral hippocampus are transcriptionally distinct but show similar responses to stress and LC-NA activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C70, C71, and C72 are well-supported by citations to previous anatomical and transcriptomic studies. These claims provide important context for the experimental design and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Yohimbine's broader transcriptional effects compared to direct LC activation may involve corticosterone release and postsynaptic \u03b12-receptor antagonism. Different LC stimulation patterns affect network connectivity differently than gene expression, suggesting \u03b2-adrenergic receptors mediate transcriptional responses while \u03b11-receptors mediate network effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C47 are supported by citations but represent interpretations of differences between experimental conditions rather than direct experimental tests. The mechanistic explanations for why yohimbine produces broader effects than LC activation are plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The stress response involves complex, multi-system molecular cascades. The LC-NA system is immediately activated during stress and serves as a broadcast signal to reorganize brain networks and circuits. Stress-induced molecular changes are part of healthy responses but can be dysregulated in disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C85 provide important background context supported by extensive citations to previous work. These claims establish the scientific foundation and rationale for the current study but do not represent novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C44",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "NA enhances memory consolidation through astrocytic \u03b2-adrenergic receptors, and astrocytic pathways are important for hippocampal learning and memory. NA can increase neuronal excitability, potentially enhancing glutamate-dependent transcriptional cascades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C52, C53, and C54 are well-supported by citations to previous work. These claims provide important functional context for interpreting the molecular findings but represent prior knowledge rather than novel discoveries from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Astrocytic energy metabolism and thyroid hormone signaling are important for LC-mediated hippocampal function, based on the identification of Dio2 and glycogen-related genes as key NA targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 represents a synthesis and interpretation of the major findings (Dio2 and Ppp1r3 genes as top LC-NA targets). While the molecular data are strong, the functional importance for hippocampal function is inferred rather than directly demonstrated through functional manipulations.",
+    "result_type": "MAJOR"
+  }
+]

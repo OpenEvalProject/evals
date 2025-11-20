@@ -1,0 +1,397 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C27",
+      "C28",
+      "C90"
+    ],
+    "result": "Coccinella is an open-source framework that combines ethoscopes (low-cost Raspberry Pi-based tracking devices costing ~\u00a375) with HCTSA/Catch22 statistical analysis to analyze fly behavior using a reductionist approach based on a single feature (maximal velocity over 10 seconds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C18-C20, C27-C28, and C90 collectively describe the coccinella system's architecture and cost. The hardware specifications, cost estimates, and methodological approach are clearly documented in the methods section and supported by citations to prior work (Geissmann et al., 2017; Fulcher and Jones, 2017; Lubba et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The ethoscope system operates in real-time mode with temporal resolution of 2.2 fps (444\u00b1127 ms per frame) on Raspberry Pi3, tracking flies in 11.5 mm diameter circular arenas. Maximal velocity over 10 seconds was chosen as the behavioral metric based on prior validation showing it can differentiate walking, grooming, and feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 describe the technical specifications and rationale for the chosen behavioral metric. The temporal resolution is quantified with measurements (C31), the arena design is specified (C33-C34), and the choice of maximal velocity is justified by citations to prior work (C35-C36: Geissmann et al., 2017; Geissmann, 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Using 17 treatments (16 drugs + control) at 1000 ppm, coccinella achieved 71.4% classification accuracy versus 5.8% for random classifier. Individual compounds showed variable performance (dieldrin 94%, flonicamid 87%, tetramethrin 41%), but all compounds were correctly identified as first choice with first-choice scores averaging 15\u00d7 higher than second-choice (range 3.3-65\u00d7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 present quantitative results from the initial pharmacological screen shown in Figure 1c. The overall accuracy, individual compound accuracies, and discrimination ratios are specific numerical results directly from the experimental data. The consistency of first-choice identification across all compounds supports the system's reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Classification accuracy decreased in a dose-dependent manner: 71.4% at 1000 ppm, 61.8% at 100 ppm, and 36.1% at 1 ppm, indicating the system operates on pharmacologically-induced, biologically meaningful behavioral correlates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate dose-response relationship in classification accuracy (Figure 1c). The monotonic decrease in accuracy with decreasing drug concentration provides strong evidence that the system detects genuine pharmacological effects rather than artifacts. This is a critical validation of biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Testing drug-resistant mutants (paraL1029F for DDT/pyrethroids, RdlA301S for dieldrin/fiproles) created confusion in classification between drug and control conditions, particularly for DDT with paraL1029F. This reduced accuracy suggests coccinella detects biologically relevant behavioral signatures, while residual discrimination indicates high sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe genetic validation experiments (Figure 1\u2014figure supplement 2a). The genetic basis of resistance is supported by citations (C52: Kaduskar et al., 2022; C53: Remnant et al., 2014). The observed reduction in classification accuracy when resistant mutants are challenged with their cognate drugs (C54) provides strong evidence for biological specificity, though the interpretation of residual discrimination (C56) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In a high-throughput screen of 2192 flies across 40 treatments at 100 ppm, coccinella correctly identified 39/40 compounds as first choice (exception: Syngenta Compound #5) with overall accuracy of 44.5% versus 2.5% random classifier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 present results from the large-scale validation (Figure 1d). The sample size (2192 flies), number of treatments (40), and accuracy metrics are clearly stated. The concentration choice (100 ppm) is justified by prior pilot data (C58). The high first-choice identification rate (39/40) despite lower overall accuracy demonstrates the system's scalability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In comparative analysis with 12 treatments, coccinella (42.4% accuracy, 10/12 compounds unambiguously identified) outperformed state-of-the-art approaches: DeepLabCut\u2192B-SoID\u2192Random Forest (25.4%, 3/12 identified), DeepLabCut\u2192B-SoID\u2192Catch22\u2192SVM (lower accuracy), and DeepLabCut\u2192B-SoID\u2192KNN (poorest performance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 present systematic comparison with high-resolution methods (Figure 2). The experimental design is clearly described (C62-C64), and quantitative results are provided for each approach (C65-C70). The comparison is fair as all methods analyzed the same dataset. However, the authors acknowledge this is not conclusive (C71), and alternative combinations might perform better.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Analysis of 727 flies subjected to sleep deprivation with varying inactivity triggers (20-1000s) showed that coccinella could not discriminate baseline conditions (9% vs 9% random), but detected clear clustering in post-deprivation rebound data, segregating samples around the 300s threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe sleep deprivation experiments (Figure 3). The inability to discriminate baseline conditions (C79) provides crucial negative control evidence against overfitting. The detection of clustering in rebound data (C80) demonstrates sensitivity to subtle behavioral changes. The dataset is from prior work (C77: Geissmann et al., 2019a), ensuring independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Coccinella independently identified the 300s (5-min) threshold as discriminating sleep rebound clusters, providing independent confirmation of the established 'sleep quantum' threshold beyond which flies lose arousal response to external stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 present a key validation result. The system's inability to discriminate baseline (C81) rules out overfitting, while detection of the 300s threshold (C84) without prior knowledge of this biological parameter provides strong evidence for biological validity. The threshold's significance is well-established in the literature (C83: Shaw et al., 2000; Hendricks et al., 2000; Joyce et al., 2023).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C67",
+      "C72"
+    ],
+    "result": "Despite its reductionist nature, coccinella outperforms state-of-the-art alternatives in pharmacobehavioral classification while being unmatched in throughput and economic cost, though alternative combinations of methods may eventually match or exceed its performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C21, C67, and C72 present the main conclusion about coccinella's performance. The comparative superiority is demonstrated in Figure 2 (C67), and the cost/throughput advantages are established through hardware specifications (\u00a375 per device, distributed computing). The authors appropriately acknowledge limitations (C71-C72), noting the analysis is not conclusive and better combinations may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Different drug concentrations showed differential effects on short-term lethality, with several compounds reaching 25% lethality at 1000 ppm before experiment end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 report lethality data from Figure 1\u2014figure supplement 1b. These are straightforward observational results documenting drug toxicity, which is important for interpreting behavioral effects and choosing appropriate concentrations for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "HCTSA applies >7700 statistical tests to time series data, followed by normalization using sigmoidal transformation to remove error-producing operations, then classification using linear SVM to generate confusion matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C128-C130 describe the HCTSA analytical pipeline. The method is well-documented with appropriate citations (C37: Fulcher and Jones, 2017; C38: Chatterjee et al., 2022). The normalization and classification procedures are standard approaches for this type of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "For some analyses, Catch-22 (a smaller HCTSA feature subset) was used, which did not require normalization before SVM classification due to the smaller number of features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 describe the use of Catch-22 as an alternative to full HCTSA for certain analyses (Figure 2b, d). This is a methodological detail supported by citation to Lubba et al., 2019. The rationale for not requiring normalization with fewer features is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "No post hoc correction for multiple testing is necessary because the trained classifier makes only a single prediction when running the full feature set on aggregate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C136 addresses an important statistical consideration. While the reasoning is provided (only one test performed per classification), this claim warrants careful scrutiny. The HCTSA method involves testing >7700 features during training, which could be considered multiple comparisons. The claim that no correction is needed because the classifier makes a single prediction may be technically correct for the prediction phase, but doesn't fully address whether multiple testing correction should apply during feature selection/training. This requires expert statistical review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The paraL1029F mutation was introduced via CRISPR/Cas9 genome editing in white1118 flies, with 206 embryos injected, 36 G0 crosses established, 25 F1 positive lines identified, 7 validated by PCR, 1 sequenced, followed by isogenization, balancing, and DsRed marker excision, resulting in hemizygous viable lines with DDT resistance similar to previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C116 provide detailed documentation of the CRISPR/Cas9 genome editing procedure. The methodology is thoroughly described with specific numbers at each step, validation procedures (PCR, sequencing), and confirmation that the resulting mutation confers expected DDT resistance (C105: Samantsidis et al., 2020). This level of detail supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Compounds were supplied by Syngenta, diluted in 5% ethanol/5% acetone/10% DMSO solvent to 1000 ppm then further diluted to 100 and 1 ppm, applied to 5% sucrose/1% agarose surfaces, with male flies briefly anesthetized and experiments started between ZT0-ZT1 with 2-3 biological replicates per condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C124 provide comprehensive methodological details for drug preparation and experimental procedures. The solvent composition, concentrations, timing, and replication are all clearly specified, supporting reproducibility. These are standard experimental details appropriately documented in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "DeepLabCut (v2.1) was used following Nath et al. 2019 protocol: frames extracted from 3 videos using K-means, labeled with 22 body parts, trained with 9:1 test:train split for >150,000 iterations, best checkpoint used for prediction, followed by B-SoID for behavioral grammar extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 document the DeepLabCut/B-SoID pipeline used for comparison. The methodology follows established protocols (C143: Nath et al., 2019; C150: Hsu and Yttri, 2021) with appropriate training parameters and validation procedures. This provides sufficient detail for the comparative analysis in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Ethoscopes can acquire 720p video at 60 fps in offline mode, which is fast enough for Drosophila species but may be insufficient for faster-moving animals like zebrafish larvae, though they are limited in computing power and acquisition rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C92-C94 describe ethoscope capabilities and limitations. The offline mode specifications (C29) are technical facts. The adequacy for Drosophila is supported by citation (C93: Joyce et al., 2023). The speculation about zebrafish (C94) is appropriately qualified as uncertain and represents a reasonable limitation based on the hardware constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Understanding brain-behavior encoding is neuroscience's ultimate goal, requiring objective behavioral quantification. Ethomics has emerged as a subfield focused on high-throughput behavioral analysis, but researchers face trade-offs between throughput and resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C13 provide background context about neuroscience goals and the ethomics field. These are general statements about the field supported by appropriate citations (C8-C9: Brown and de Bivort, 2018; Datta et al., 2019). The throughput-resolution trade-off (C11-C13) is a well-recognized challenge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The field has converged toward high-resolution video recording with industrial cameras (FLIR, Point Grey, Basler), which can achieve millisecond temporal resolution and 3D reconstruction. While recent advances in machine learning enable some compatibility with high-throughput approaches, these systems remain expensive and difficult to scale for most laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 and C22-C26 describe current state-of-the-art in behavioral tracking. The convergence toward high-resolution methods is supported by multiple citations (C14: Wiltschko et al., 2015; Hsu and Yttri, 2021; Nath et al., 2019; Pereira et al., 2019; Gosztolai et al., 2021). The cost and scalability limitations (C16-C17, C24-C26) represent the motivation for developing coccinella.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Drosophila shows conserved homeostatic sleep regulation with rebound after deprivation, but sleep rebound extent only loosely correlates with lost sleep amount, and whether similar rebound amounts differ in 'sleep depth' remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 provide background on Drosophila sleep biology. The homeostatic regulation is well-established (C73: Shaw et al., 2000; Hendricks et al., 2000). The loose correlation observation is from prior work (C74: Geissmann et al., 2019a). The open question about sleep depth (C75) is appropriately cited (Wiggin et al., 2020; French et al., 2021) and motivates the sleep analysis experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C98"
+    ],
+    "result": "Drosophila neuroscience is experiencing a renaissance with the first full-brain connectome and new genetic tools. Machine learning advances have impacted ethomics, enabling high-resolution anatomical tracking, but most systems remain expensive and don't scale easily. High-resolution systems are ideal for identifying behavioral patterns and studying motor control. Drosophila's historical success was built on genetic screens of the 1900s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 and C98 provide discussion context about the current state and history of Drosophila research. These are general statements about the field supported by appropriate citations (C87: Pereira et al., 2019; Mathis et al., 2018). The historical perspective (C98) is accurate and motivates the proposed use of coccinella for genetic screens.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C91",
+      "C95",
+      "C96",
+      "C97",
+      "C99"
+    ],
+    "result": "Coccinella is a reductionist tool meant to complement rather than replace behavioral categorization systems. It cannot apply behavior labels but can identify large behavioral phenotypes and generate unbiased hypotheses. It successfully explores pharmacobehavioral space and discerns subtle sleep behavior differences. It is proposed as an accessible tool for genetic screens without funding or technology barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C95-C97 and C99 present the authors' framing of coccinella's scope and intended use. The complementary nature (C91) and inability to label behaviors (C95) are appropriate acknowledgments of limitations. The successful applications (C96-C97) are supported by the experimental results presented. The proposal for genetic screens (C99) is a reasonable future direction given the demonstrated capabilities and low cost.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Some alternative combination of state-of-the-art approaches will probably manage to match or likely improve over coccinella's performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is an appropriate acknowledgment of limitations in the comparative analysis. The authors correctly note their comparison is not exhaustive and other method combinations might perform better. This demonstrates scientific rigor and appropriate caution in interpreting comparative results.",
+    "result_type": "MINOR"
+  }
+]

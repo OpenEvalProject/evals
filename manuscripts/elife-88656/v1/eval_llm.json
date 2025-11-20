@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "AlphaFold 2 predictions reveal novel mechanisms for cohesin regulation, including formation of a quaternary complex between Wapl, SA, Pds5, and Scc1's NTD where Scc1's NTD is sequestered by Wapl's CTD, distortion-induced dissociation of Scc1 from Smc3 via joint junction during head engagement, Pds5-mediated recruitment of Esco acetyl transferases to Smc3, and Sororin-mediated protection from release by binding the Smc3/Scc1 interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent the core novel hypotheses of the manuscript based on AlphaFold predictions (C7-C11). While the predictions are computationally generated with stated confidence levels and show conservation across species, they remain computational models requiring experimental validation. The authors acknowledge these are 'highly testable' hypotheses (C12) rather than experimentally confirmed mechanisms. The explanatory power for existing mutations is noted but does not constitute direct experimental support for the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "AlphaFold predicts that Smc1/Smc3 heterodimers adopt a folded conformation with coiled coils juxtaposed and joints interdigitated, matching cryo-EM structures, and that head engagement is compatible with Scc1's association with Smc3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AlphaFold predictions for Smc1/Smc3 heterodimer structure (C54-C56) are directly validated by comparison with existing cryo-EM structures (C54, C57), providing strong orthogonal support. The prediction that head engagement is compatible with Scc1-Smc3 association (C52-C53) is supported by both AF predictions and cryo-EM data, making this a well-validated structural finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "AlphaFold predictions reveal that the hinge domain plays an organizing role in coiled coil folding and joint junction formation, with joints having intrinsic affinity for each other that is reinforced by the hinge but independent of Scc2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic AF predictions with truncated and modified constructs (C58, C60) provide consistent evidence for the hinge's organizing role. The predictions are internally consistent across multiple constructs (C61-C62) and the compatibility with Scc2 binding (C63-C64) is demonstrated through AF modeling, making this a well-supported structural insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Head engagement and joint junction can coexist but require coiled coil distortion, which may drive dissociation of Scc1's NTD from Smc3's neck, providing a mechanism for exit gate opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While AF predictions show coexistence of head engagement and joint junction with coiled coil distortion (C65-C66), and this is consistent with low-resolution cryo-EM (C67) and crosslinking data (C68), the mechanistic hypothesis that this drives Scc1 NTD dissociation (C69-C70) remains speculative. The supporting AF predictions with Scc1 NTD (C71) and the explanation of mutant phenotypes (C72) provide circumstantial support, but the causal mechanism requires experimental validation (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "AlphaFold identifies specific Wapl motifs that interact with Pds5, including the TYxxxR[T/S]\u03a6L motif binding to Pds5's APDAP loop and the [F/W]xFLD motif binding to Pds5's WEST site, with genetic evidence supporting the functional importance of the TYxxxR[T/S]\u03a6L motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic experiments directly demonstrate that deletion of the TYxxxR[T/S]\u03a6L motif suppresses eco1\u0394 lethality while deletion of the [M/\u03a6]xxYG[K/R] motif does not (C79-C80), providing strong in vivo validation. The AF predictions for these interactions (C81-C87) are consistent with the genetic data and show conservation across species, making this a well-supported finding combining computational and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "AlphaFold predicts that Wapl's CTD binds to SA/Scc3's CES via its \u03b11 and \u03b12 helices, explaining why mutations in these helices abrogate releasing activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AF predictions (C88-C91) directly explain the phenotypes of multiple existing mutations known to abrogate releasing activity (C92, C75). The congruence between predicted interface residues and independently identified loss-of-function mutations in both yeast and human cells provides strong validation of the predicted interaction, making this a well-supported structural finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "AlphaFold predicts formation of a canonical ternary complex between Pds5, SA/Scc3, and Wapl that is conserved across eukaryotes and requires Wapl's TYxxxR[T/S]\u03a6L motif in fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AF predictions show high confidence for ternary complex formation across multiple eukaryotic lineages (C94-C95), and the dramatic effect of including the TYxxxR[T/S]\u03a6L motif in S. cerevisiae predictions (C98-C99) is consistent with the genetic requirement for this motif (C80). The conservation across animals, plants, and fungi (C95) and the explanation of conserved residue function (C96) provide strong support for this structural model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "AlphaFold predicts that Pds5 organizes the spatial position of Scc1's NTD, placing it near Wapl's CTD cleft, and that Wapl's CTD can sequester Scc1's N-terminal helices (\u03b1-1 and \u03b10) in a conserved manner across eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While AF predictions show consistent positioning of Scc1's NTD near Wapl's CTD cleft across multiple species (C102-C107), and mutations in Wapl's cleft abrogate releasing activity (C108), the actual sequestration mechanism requires partial unfolding of Scc1N that AF does not spontaneously predict (C103-C104). The engineered mutations that promote unpacking (C109) demonstrate the plausibility but also highlight that the native mechanism remains uncertain without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "AlphaFold predicts that Scc3's N-terminal face (containing D189 and E202) binds Smc3's KKD loop (containing K112 and K113), explaining how acetylation of these lysines blocks releasing activity in yeast without requiring Sororin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AF prediction (C110) directly explains the phenotypes of mutations in both Scc3 (D189E, E202K) and Smc3 (K112, K113) that are known to affect releasing activity (C111). The convergence of AF predictions with independently isolated suppressor mutations (from Rowland et al., 2009) provides strong validation, and the mechanism explains a long-standing puzzle about acetylation-mediated protection in yeast (C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "AlphaFold predicts that Eco1/Esco acetyl transferases are recruited to Smc3 through interactions with Pds5's C-terminal HEAT repeats and that Esco1 also binds Pds5's WEST site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AF predictions show Eco1 binding Smc3 in a manner consistent with the crystal structure of the K106-CoA conjugate (C114), providing direct structural validation. The predicted recruitment via Pds5's CTD (C115) and competition with Wapl at the WEST site (C116) are consistent with known functional requirements for Pds5 in acetylation and provide a coherent mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "AlphaFold predicts that Esco2's PBM-A motif binds Mcm7, providing a mechanism for S phase-specific recruitment to the replication fork.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AF prediction (C117) is consistent with prior co-immunoprecipitation and crosslinking mass spectrometry data indicating Mcm7 as the binding partner (cited from Ivanov et al., 2018). The prediction provides structural detail for a previously identified functional interaction, making it well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "AlphaFold predicts that Sororin's C-terminal domain binds the Smc3:Scc1N interface in a conserved manner across eukaryotes, and that Sororin's FGF motif can compete with Scc1's \u03b1-1 helix for binding to Wapl's CTD cleft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AF predictions show remarkably consistent Sororin binding to the Smc3:Scc1N interface across diverse eukaryotic lineages (C120-C121), with specificity for Smc3 over Smc1 (C122). The predicted competition with Wapl's CTD (C123) and alternative binding to Pds5's APDAP (C124) provide a coherent mechanism for how Sororin protects cohesion from Wapl, consistent with known functional requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "AlphaFold predicts two regions of interaction between SA and Nipbl, one matching the cryo-EM clamped state structure and a second novel interaction involving SA's nose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One predicted interaction is directly validated by matching the cryo-EM structure (C126), while the second interaction involving SA's nose (C127) represents a novel prediction. The partial validation by cryo-EM and the high confidence of AF predictions support this finding, though the functional significance of the nose interaction requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The manuscript provides comprehensive background on cohesin structure, function, and regulation, including its role in loop extrusion, sister chromatid cohesion, and the regulatory roles of Wapl, Sororin, and Smc3 acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the cohesin field, supported by extensive citations to prior work (C13-C50). They provide essential context for interpreting the novel AlphaFold predictions but do not constitute new findings from this manuscript. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,487 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background on cancer burden in Vietnam, citing that cancer incidence is increasing globally and that in Vietnam, 80% of patients are diagnosed at late stages (III/IV) with high mortality and low survival rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are supported by citations to external sources (Sung et al., 2021; Pham et al., 2019) and provide context for the study. These are background claims establishing the clinical need for early cancer detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors establish that diagnostic delays worsen outcomes, early detection improves survival and reduces costs, and multi-cancer early detection (MCED) tests can address these challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by citations (Hawkes, 2019; Kakushadze et al., 2017; Liu et al., 2020) and represent established knowledge in the field. These provide rationale for developing MCED tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript reviews prior work on ctDNA-based cancer detection, including various assays (PanSeer, DELFI, Galleri, CancerSEEK) that use methylation, fragmentomics, or combined approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 are supported by citations to prior work and accurately describe existing ctDNA-based assays. These establish the scientific context and prior art for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study recruited 738 cancer patients (5 cancer types) and 1550 healthy controls, divided into discovery (499 cancer, 1076 healthy) and validation (239 cancer, 474 healthy) cohorts. Cancer patients were treatment-na\u00efve and healthy participants remained cancer-free at follow-up. Cancer patients were significantly older than controls in both cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C73-C82 describe the study cohorts with specific numbers and demographics. The data are internally consistent and supported by Table 1. Statistical tests confirm age differences (p<0.0001). However, the age imbalance between cancer and control groups is a potential confounding factor that the authors address in C46 and C99.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Of 450 target regions, 402 were identified as differentially methylated regions (DMRs) in cancer patients, with 84.3% hypermethylated and 15.7% hypomethylated. These DMRs were enriched in 36 pathways known to regulate tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by statistical analysis (Wilcoxon rank-sum test, p<0.05) and pathway enrichment analysis. The target regions were selected from prior publications (C17), and the pathway analysis (C19-C20) provides biological validation. Figure 2 supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Genome-wide methylation analysis revealed global hypomethylation in cancer samples, with 1715 (62.7%) bins significantly hypomethylated and only 10 bins hypermethylated across 22 autosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by statistical tests (Kolmogorov-Smirnov test p<0.0001, Wilcoxon rank-sum test with Benjamini-Hochberg correction p<0.05) and Figure 3. The widespread hypomethylation is consistent with known cancer biology (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Copy number analysis identified 729 bins (27.1%) with significant gains and 976 bins (36.3%) with significant losses across 22 chromosomes, with chromosome 8 showing the highest proportion of gains and chromosome 22 the highest proportion of losses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by statistical analysis (Wilcoxon rank-sum test with Benjamini-Hochberg correction p<0.05) and Figure 4. The findings are consistent with known patterns of chromosomal instability in cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "The study found a significant association between hypomethylation and copy number alterations, with hypomethylated bins showing increased CNA levels (p=0.024) and bins with CNA gains showing decreased methylation (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by statistical tests and Figure 4\u2014figure supplement 1. This finding is consistent with the known link between hypomethylation and genomic instability (C68). The association provides biological validation for the multimodal approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Fragment length analysis showed that bisulfite-treated cfDNA preserves fragment length information (R\u00b2>0.9, p<0.0001 for 12 samples), with cancer patients showing more fragmented cfDNA (higher frequency of fragments \u2264150 bp) and a higher mean ratio of short to long fragments (0.29 vs 0.27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by correlation analysis and Figure 5. The validation that bisulfite treatment preserves fragment length information (C28) is critical for the multimodal approach. The findings are consistent with prior work (C29 cites Cristiano et al., 2019; Jiang et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "End motif analysis identified 78 motifs with increased frequencies and 106 with decreased frequencies in cancer. Motifs beginning with cytosine (C) showed the highest number of significant changes, with specific motifs (CAAA, TAGA, CAGA, CAAG, CAAT) increased and others (CGCT, CGCC, CGCA, GCCT, CGTT) decreased in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by data analysis and Figure 6. The validation that bisulfite treatment preserves end motif profiles (C32) is important. The specific motifs identified (C35) are statistically significant and shown in Figure 6B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Among nine single-feature models, the EM-based model showed the highest AUC (0.90), while the SHORT-based model had the lowest (0.71). A stacking ensemble model combining eight features achieved AUC of 0.93 (discovery) and 0.95 (validation), with sensitivity of 73.8%/72.4% and specificity of 95.1%/97.0% in discovery/validation cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by cross-validation analysis and Figure 7. The ensemble model outperformed single-feature models, demonstrating the value of the multimodal approach. The performance was validated in an independent cohort (C38-C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Cancer-type-specific performance showed liver cancer had the highest sensitivity (89.6% discovery, 91.1% validation), followed by CRC, lung, and gastric cancer, while breast cancer had the lowest detection rate (58.3% discovery, 49.3% validation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by data in Figure 7F-G and Table S8. The variation in detection rates across cancer types is consistent with known differences in ctDNA shedding (C90-C91). The low sensitivity for breast cancer is acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Gender analysis showed no difference in predicting healthy status between males and females, but higher accuracy for males in cancer prediction. When breast cancer samples were removed, there was no gender difference, suggesting the observed bias was due to the high proportion of female breast cancer patients with low detection rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by data in Figure 7\u2014figure supplement 2. The analysis appropriately identifies and explains the apparent gender bias as being driven by the low detection rate for breast cancer (all females). This is a reasonable interpretation supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Age analysis revealed no significant correlation between age and model prediction scores, suggesting age differences are unlikely to affect model accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by correlation analysis shown in Figure 7\u2014figure supplement 2. This addresses the potential confounding effect of age differences between cancer and control groups (C76, C80). However, the lack of correlation does not fully rule out age as a confounding factor, as methylation is known to be age-associated (C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The model performed better for cancers with higher tumor burden, with patients having tumor diameter \u22653.5 cm more likely to be detected than those with diameter <3.5 cm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by data in Figure 7\u2014figure supplement 2. This finding is expected, as larger tumors shed more ctDNA. However, this suggests the assay may have limited sensitivity for very early-stage cancers with small tumor burden.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C61"
+    ],
+    "result": "Stage-specific performance showed the model achieved highest accuracy for stage IIIA (AUC 0.95 discovery, 0.98 validation) and lowest for stage I (AUC 0.90 discovery, 0.94 validation). Sensitivities were 73.9% for stage I, 62.3% for stage II, and 88.3% for stage IIIA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C61 are supported by data in Figure 7\u2014figure supplement 2. The decreasing performance with earlier stages is expected due to lower ctDNA levels. However, the relatively high sensitivity for stage I (73.9%) is encouraging for early detection. Note that 25.7-29.3% of patients lacked staging information (C78, C82), which may affect these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "For tumor-of-origin prediction, GCNN was selected for superior performance. Breast cancer had the highest number of important features (497), while lung cancer had the lowest (126). GWM and CNA were the most important features for differentiating cancer types, while EM had the lowest contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by model comparison (Figure 8\u2014figure supplement 1) and feature importance analysis (Figure 8B-C). The GCNN approach is appropriate for this multi-class classification task (C93). The feature importance analysis provides insight into which features drive TOO prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "The GCNN-based multi-feature model achieved median TOO accuracy of 0.73 (discovery) and 0.70 (validation). Breast and liver cancers had the highest accuracy (0.87 and 0.82 in discovery; 0.78 and 0.76 in validation), while gastric cancer had the lowest (0.54 discovery, 0.55 validation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 and C62 are supported by data in Figure 8E-F. The TOO accuracy of 0.70 is comparable to CancerLocator (C96) but lower than the methylation atlas-based method by Liu et al. (93%, C97). The confusion between CRC and gastric cancer (C59) suggests these cancer types may have similar ctDNA signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "CRC and gastric cancer exhibited the lowest TOO accuracy with high misprediction rates between these two cancer types (0.11 and 0.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by the confusion matrix data. This finding suggests that CRC and gastric cancer may share similar ctDNA signatures, making them difficult to distinguish. This is a limitation of the current approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C63",
+      "C71",
+      "C72"
+    ],
+    "result": "SPOT-MAS uses targeted and shallow genome-wide sequencing (~0.55\u00d7) to simultaneously profile methylomics, fragmentomics, copy number, and end motifs. Applied to 738 cancer patients and 1550 controls, it achieved 72.4% sensitivity at 97.0% specificity, requiring significantly lower sequencing depth than other ctDNA-based assays while achieving comparable performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C63, C71-C72 summarize the main findings. The performance metrics are supported by the data (C39). The comparison to other assays (Table S11) supports the claim of lower sequencing depth. However, 'comparable performance' is somewhat subjective and depends on which assays are compared.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C88"
+    ],
+    "result": "The manuscript cites established knowledge about the biological basis for the ctDNA features analyzed: DNA methylation regulates cancer gene expression, CNAs alter oncogene/tumor suppressor expression, hypomethylation is linked to genomic instability, cfDNA fragmentation is non-random and mediated by apoptosis, and end motifs reflect differential cleavage patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 and C88 are supported by citations to prior work and represent established knowledge in the field. These provide biological rationale for the multimodal approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "SPOT-MAS was previously applied to colorectal and breast cancer cohorts and demonstrated ability for early detection at high sensitivity across different stages and age groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by citations to prior work (Nguyen et al., 2022a; Pham et al., 2023). This establishes that the SPOT-MAS approach has been validated in prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The SPOT-MAS workflow involves bisulfite conversion, library preparation, hybridization to capture target regions, collection of flow-through for genome-wide analysis, and sequencing at ~52\u00d7 (target) and 0.55\u00d7 (genome-wide) depth. Data are processed into five feature types and analyzed using a two-stage model (stacking ensemble for cancer detection, GCNN for TOO).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 describe the methodology and are supported by Figure 1 and the methods section. The workflow is clearly described and appears technically sound. The use of bisulfite sequencing for both methylation and fragmentomics analysis is a key innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors interpret that breast cancer showed the highest TOO accuracy possibly due to the highest number of important features, while noting that breast cancer detection is challenging due to low ctDNA shedding and tumor heterogeneity. Liver cancer's high detection rate is consistent with high ctDNA shedding from liver tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by the data (C52, C40-C42) and citations to prior work (Liu et al., 2020; Caggiano et al., 2021). These interpretations are reasonable and consistent with known biology of ctDNA shedding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "No significant differences in AUC values were observed between discovery and validation cohorts (p=0.1277, DeLong's test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by statistical testing. This demonstrates that the model generalizes well to the independent validation cohort, which is important for assessing the robustness of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors justify their GCNN approach by citing its success in multi-class classification tasks and noting that it avoids bias from reference-based deconvolution approaches. They compare their TOO accuracy (0.70) to CancerLocator (comparable) and note that Liu et al.'s methylation atlas method achieved higher accuracy (93%) but requires 30\u00d7 sequencing depth, which may not be cost-effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by citations and data. The comparison to other methods is fair and acknowledges both strengths and limitations. The cost-effectiveness argument (C98) is reasonable but would benefit from explicit cost analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The authors acknowledge that age could be a confounding variable for methylation and cite prior work supporting this. They also cite preliminary data from a prospective study (K-DETEK) showing SPOT-MAS can detect asymptomatic cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by citations. C99 acknowledges a potential limitation, while C100 provides preliminary evidence for prospective application. However, the K-DETEK study is only at 6-month interim analysis, so longer follow-up is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study enrolled cancer patients confirmed by imaging and biopsy, staged by TNM classification, and limited to non-metastatic stages (I-IIIA), excluding stage IIIB and IV. Patients were recruited from multiple sites in Vietnam from May 2019 to December 2022, with ethics approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 describe the study design and are supported by the methods section. The inclusion/exclusion criteria are clearly defined. However, the lack of staging information for 25.7-29.3% of patients (C78, C82) is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The methods describe blood collection in Streck tubes, plasma isolation by centrifugation, cfDNA extraction using MagMAX kit, bisulfite conversion using EZ DNA Methylation-Gold Kit, library preparation using xGen Methyl-Seq kit with Adaptase technology, hybridization with custom 450-region panel, and sequencing on DNBSEQ-G400 at 20 million reads per fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C114 describe the laboratory methods with specific reagents and protocols. The methods are clearly described and appear technically sound. The use of Streck tubes for cfDNA preservation is appropriate. The custom panel design is cited to prior work (C113).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The bioinformatics methods describe read processing with Trimmomatic, alignment with Bismark, methylation calling with Bismark methylation extractor, genome-wide methylation analysis with Methy-Pipe, CNA analysis with QDNAseq, and end motif analysis using Adaptase technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 describe the bioinformatics methods with specific software versions. The methods are clearly described and use established tools. The use of Adaptase technology for end motif analysis is appropriate (C120).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The machine learning methods describe hyperparameter tuning with GridSearchCV (CV=5), feature selection, model evaluation with 20-fold cross-validation for cancer detection and 10-fold for TOO, and cutoff selection at specificity >95%. For TOO, GCNN was constructed with three message-passing layers, focal loss, and Adam optimizer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C128 describe the machine learning methods. The methods are clearly described and use appropriate techniques. The use of cross-validation and independent validation cohort is appropriate. The GCNN architecture is described in detail (C126-C127).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Statistical methods include Wilcoxon rank-sum test or t-test for group comparisons, Kolmogorov-Smirnov test for distribution comparisons, Benjamini-Hochberg correction for multiple testing (\u03b1\u22640.05), DeLong's test for AUC comparisons, and analysis in R (4.1.0) with ggplot2, pROC, and caret packages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 describe the statistical methods. The methods are appropriate for the analyses performed. The use of Benjamini-Hochberg correction for multiple testing is appropriate. Software versions are specified.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study analyzed 3,496 RNA-seq samples from 53 metazoan species (15 vertebrates and 38 insects) to quantify alternative splicing rates. The dataset focused on BUSCO genes with sufficient sequencing depth (median coverage >200 reads/bp), representing 88.6-99.6% of annotated introns in these conserved genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises a significant concern about taxonomic sampling, noting that 'the authors primarily consider insects and mammals in their study. This only represents a small fraction of metazoan diversity' and that 'sampling from a greater diversity of metazoan lineages would make these results and their relevance to broader metazoans substantially more convincing.' This critique directly challenges the generalizability of the dataset composition claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The study used three proxies for effective population size (Ne): body length, longevity, and dN/dS ratio. These proxies showed positive but not very strong correlations with each other (p < 1\u00d710\u207b\u00b3), suggesting that none provides a perfect estimate of Ne.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 specifically critiques the longevity proxy, stating 'while the longevity of organisms as a measure of effective size seems to work overall, it may not be relevant for discriminating within a clade' and suggests that 'within Hymenoptera, we might expect them to have the same overall longevity, but that effective size would be influenced more by the degree of sociality.' The reviewers acknowledge the proxies are imperfect but question their validity within certain clades.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C68",
+      "C69"
+    ],
+    "result": "The study found a negative correlation between Ne proxies and genome-wide AS rates among species, meaning AS rates tend to increase when Ne decreases. This correlation remained significant when analyzing insects and vertebrates separately and was consistent across all three Ne proxies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states the authors 'present convincing evidence that higher rates of alternative splicing tend to be observed in species with lower effective population size, a key prediction of the drift-barrier hypothesis.' Reviewer 2 summarizes that 'the result describing the inter-specific pattern on a large scale confirms what was already known (there is a negative relationship between effective size and average alternative splicing rate).' Reviewer 3 notes 'all of these findings are consistent with the drift-barrier hypothesis.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In all species analyzed, the distributions of alternative splicing metrics (RAS and RANS) showed clearly bimodal patterns. The first peak (mode <5%) corresponds to minor-isoform introns, while the second peak (mode >95%) corresponds to major-isoform introns. This pattern generalizes across metazoans the previously observed phenomenon in humans that one single transcript largely dominates over other isoforms for most genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 highlights this as a key finding, noting 'what is striking is the light shed on the general very low abundance of alternative isoforms. Depending on the species, 60% to 96% of cases of alternatively spliced introns lead to an isoform whose abundance is less than 5% of the total variants for a given intron.' The reviewers accept this characterization of the bimodal distribution without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C82",
+      "C83"
+    ],
+    "result": "The pattern of negative correlation between Ne and AS rate is dominated by low abundance isoforms (MIRA \u22645%), which represent 62.4-96.9% of the splice variant repertoire depending on species. These rare isoforms are depleted in functional AS events and most likely correspond to splicing errors, while abundant isoforms (MIRA >5%) are strongly enriched in functional variants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 emphasizes this as a major advance: 'The essential novelty of this study lies in (1) the quantification, for each intron studied, of the relative abundance of each isoform, and (2) the analysis of a relationship between this abundance and the evolutionary constraints acting on these isoforms.' Reviewer 3 notes this is 'consistent with the drift-barrier hypothesis.' The distinction between rare and abundant isoforms is central to the reviewers' positive assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "For splice variants with MIRA >5%, the proportion of frame-preserving variants correlates positively with abundance, reaching 60-70% for the most abundant isoforms. In contrast, for MIRA <1%, the proportion fluctuates around 30-40%, close to random expectation (33%). This implies that the fraction of functional variants varies from 0% for low MIRA values to ~50% for the highest MIRA values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 describes this as 'a major step forward in our understanding of alternative splicing' and notes it 'makes it possible to establish a quantitative model directly linking the relative abundance of an isoform with a putative functional role.' The frame-preserving analysis is accepted as evidence distinguishing functional from non-functional variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The positive correlation between AS rate and longevity is mainly driven by introns with low AS rates (enriched in errors). Conversely, introns with high AS rates (enriched in functional SVs) show an opposite trend, with a lower proportion of frame-preserving SVs in vertebrates than in dipterans.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes this finding supports the model, stating 'the comparison between species in this study reveals that the smaller the effective size of a species, the more its genome produces isoforms that are low in abundance and low in constraint. Conversely, species with a large effective size relatively reduce rare isoforms, and increase stress on abundant isoforms.' This differential pattern by isoform abundance is accepted as supporting the drift-barrier hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Population genetic analysis revealed strong signatures of purifying selection on minor splice signals of abundant SVs in Drosophila melanogaster (SNP density reduced by 37-74% compared to controls), but little evidence of selective constraints in Homo sapiens (only weak signal at acceptor sites). This weaker selection in humans compared to Drosophila indicates a lower prevalence of functional variants even among abundant SVs, contradicting the adaptive hypothesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 highlights this as a strength: 'The major strength of this study lies in its complementary approach combining comparative and population genomics... the authors also provide evidence from a population genetics perspective (using resequencing data for humans and fruit flies), making results even more convincing.' The contrast between species is accepted as evidence against the adaptive hypothesis and for the drift-barrier model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A negative correlation between AS rates and gene expression levels was observed in 52 out of 53 species (significant in 48/53 species, p<0.05). This pattern is consistent with the hypothesis that splicing error rates are shaped by selection-mutation-drift balance, as highly expressed genes experience stronger selection for splicing accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 summarizes this finding approvingly: 'Within the same genome, the authors show that only highly expressed genes, i.e. those that tend to be more constrained on average, are also the genes with the lowest alternative splicing rates on average.' This within-genome pattern is accepted as additional support for the drift-barrier hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "When analyzing all introns (including those with abundant SVs enriched in functional variants), most species (31/53) still showed a negative correlation between AS rate and gene expression, but some species like Drosophila melanogaster showed the opposite pattern. This probably reflects that in those species, functional AS events make a significant contribution to the genome-wide average AS rate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This nuanced finding is implicitly accepted by reviewers as part of the overall model. Reviewer 2's summary acknowledges the complexity: 'Only the (rare) isoforms which are abundantly produced are thought to be involved in a biological function,' which is consistent with species-specific variation in the contribution of functional AS to overall rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "While genome-wide AS rates vary according to tissues and organs (with testes and brain showing higher rates than liver and kidney), the variation among organs within each species is limited compared to differences between species. In ANOVA analysis, the species factor explained 89% of total variance while the organ factor explained only 9%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly praises this analysis: 'The authors rule out an effect putatively linked to variations in expression between different organs which could have biased comparisons between different species.' This addresses a potential confounding factor and strengthens the between-species comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C13",
+      "C114"
+    ],
+    "result": "All observations fit qualitatively well with the predictions of the drift barrier model, according to which most variation in AS rates across species reflects differences in splicing error rates. Random genetic drift sets an upper limit on the capacity of selection to prevent splicing errors, and this variation reflects the limits set by drift on the capacity of selection to prevent gene expression errors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states this is a 'fundamental study' with 'convincing evidence' for the drift-barrier hypothesis. Reviewer 2 concludes: 'Taken together, these results reinforce a quantitative view of the evolution of alternative splicing as being mainly the product of imprecision in the splicing machinery, generating a great deal of molecular noise.' Reviewer 3 states 'all of these findings are consistent with the drift-barrier hypothesis.' The main conclusion is strongly endorsed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The BUSCO dataset corresponds to genes that are strongly conserved and often highly expressed, with AS rates on average lower than in other genes even after accounting for expression level. However, results remained qualitatively unchanged when analyses were repeated on the whole set of annotated protein-coding genes, with correlations between AS rates and Ne proxies remaining significant though slightly weaker.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes 'the authors are forward about the study's limitations and explain them in detail,' which includes discussion of BUSCO gene characteristics. The robustness analysis using all protein-coding genes addresses this potential limitation and is implicitly accepted by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Most major-isoform introns have canonical GT/AG splice sites (99.1% on average), with only small fractions having GC/AG (0.8%) or AT/AC (0.1%) boundaries. The fraction of non-canonical splice sites is slightly higher among minor-isoform introns (2.8% GC/AG and 0.3% AT/AC).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises a critical terminological concern: 'Throughout the manuscript, the authors refer to infrequently spliced (mode <5%) introns as \"minor introns\" and frequently spliced (mode >95%) as \"major introns\". This is extremely confusing since \"minor introns\" typically represent introns spliced by the U12 spliceosome, whereas \"major introns\" are those spliced by the U2 spliceosome.' The reviewer also notes 'AT-AC splice sites... are actually canonical splice sites for minor introns.' This confusion about nomenclature and splice site classification creates uncertainty about the interpretation of these findings.",
+    "result_type": "MINOR"
+  }
+]

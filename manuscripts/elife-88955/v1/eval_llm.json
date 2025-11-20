@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript provides background on the structure and electron transfer pathway of photosynthetic reaction centers from purple bacteria (PbRC), including the heterodimeric L/M structure, the electron transfer pathway along the L-branch (BL \u2192 HL \u2192 QA \u2192 QB), the inactivity of the M-branch, the role of specific residue pairs in energetic asymmetry, the timescales of anionic state formation, and the structural consequences of charge separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C19 are well-supported by established knowledge and appropriate citations to prior work (Deisenhofer et al., 1985; Rabenstein et al., 1998; Kirmaier et al., 2003; Holzapfel et al., 1990; Marcus and Sutin, 1985; Saito et al., 2012; M\u00fch et al., 1998). These claims provide essential background context for the study and are not contested by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript describes prior XFEL structural work by Dods et al. (2021) that reported time-dependent structural changes in PbRC at multiple time points (1 ps, 5 ps, 20 ps, 300 ps, 8 \u03bcs), with specific assignments to charge-separated states. However, the authors note that these structures have relatively low resolution (2.8 \u00c5 for 8 of 9 structures) and potentially high noise levels, warranting caution in interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C27 accurately describe the prior work of Dods et al. (2021) and appropriately identify limitations of the XFEL data (low resolution, potential noise). The authors correctly cite the source work and provide reasonable concerns about data quality that motivate their computational reanalysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C64",
+      "C65"
+    ],
+    "result": "Computational analysis of the XFEL structures shows that redox potentials (Em) for cofactors in the electron-transfer-active L-branch (BL and HL) are consistently higher than those in the inactive M-branch (BM and HM), with BL ~50 mV higher than BM. This energetic asymmetry favors electron transfer along the L-branch and is consistent with prior computational work on R. sphaeroides. The calculated Em values correlate well with QM/MM LUMO levels (R\u00b2=0.98) and agree with experimental measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C28-C33, C64-C65 are well-supported by computational data presented in Figures 2-3 and Figure 2\u2014figure supplement 1. The Em calculations use established methods (Poisson-Boltzmann equation, Monte Carlo sampling) and show good agreement with prior computational work (Kawashima and Ishikita, 2018; Tamura et al., 2020) and experimental data (Rutherford et al., 1979). The correlation with LUMO levels provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C66"
+    ],
+    "result": "The Phe-L181/Tyr-M208 residue pair contributes most significantly (25 mV) to the Em(BL) > Em(BM) difference, facilitating L-branch electron transfer. This finding is consistent with the analogous Phe-L181/Tyr-M210 pair in R. sphaeroides (26 mV). The Asn-L158/Thr-M185 pair also contributes 12 mV to this asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C66 are supported by computational data in Table 1 and Figures 2-4, with appropriate citations to prior work (Gunner et al., 1996; Parson et al., 1990; Kawashima and Ishikita, 2018). The identification of key residue pairs responsible for energetic asymmetry is consistent across species and computational approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "For dataset b, Em(HL) is >50 mV higher than Em(HM), though this difference decreases to ~30 mV in the 8 \u03bcs structure, suggesting this structure is distinct. The Ala-L120/Asn-M147 pair contributes most significantly (38 mV) to Em(HL) > Em(HM), but this is specific to B. viridis. Other contributing residue pairs include Asp-L218/Trp-M252 (20 mV) and the differential orientations of Arg-L103/Arg-M130 (17 mV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 are supported by computational data in Figure 3, Table 2, and Figure 5. The identification of species-specific contributions (e.g., Asn-M147 in B. viridis vs. Ala-M149 in R. sphaeroides) demonstrates appropriate consideration of sequence differences. The anomalous behavior of the 8 \u03bcs structure is noted but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The expected stabilization of the charge-separated [PLPM]\u2022+HL\u2022\u2013 state through protein reorganization is not clearly observed in Em(HL) values at 5 ps and 20 ps. In dataset a, Em(HL) increases only 4 mV at 5 ps; in dataset b, it increases ~20 mV at 5 ps and 20 ps, but also increases 25 mV at 300 ps. Residue contributions fluctuate cyclically across time points, and Em(HM) in the inactive M-branch also increases ~15 mV at 5 ps and 20 ps, suggesting the changes are not specifically due to [PLPM]\u2022+HL\u2022\u2013 formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C55 are supported by computational data in Figure 6 and Tables 3-4. The absence of expected Em(HL) stabilization specifically at the 5 ps and 20 ps time points (when HL\u2022\u2013 should be present) is a key finding. The cyclic fluctuations in residue contributions and the parallel increase in Em(HM) provide strong evidence that the observed changes are not related to the actual charge separation process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C67"
+    ],
+    "result": "QM/MM calculations predict that HL\u2022\u2013 formation should induce a saddling mode deformation in the chlorin ring. However, NSD analysis of the XFEL structures shows that the saddling mode remains practically unchanged in dataset a during electron transfer. In dataset b, the saddling mode is most pronounced at 1 ps (not corresponding to [PLPM]\u2022+HL\u2022\u2013), and the ruffling mode is more pronounced than saddling, suggesting the observed deformation is not associated with HL reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56-C61, C67 are supported by QM/MM calculations (Tables 5-6) and NSD analysis (Figures 7-8, Supplementary files 1-2). The absence of the expected saddling mode at 5 ps and 20 ps, when HL\u2022\u2013 should be present, is a critical finding that contradicts the interpretation of Dods et al. The dominance of ruffling over saddling further supports the conclusion that the observed structural changes are not related to electron transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C71",
+      "C76",
+      "C77"
+    ],
+    "result": "Em(QA) values in the 300 ps and 8 \u03bcs structures (when QA\u2022\u2013 should be present) are not significantly higher than in other structures, including the dark state. The calculated Em(QA) values (\u2013223 mV for dataset a, \u2013209 mV for dataset b) are comparable to experimental values (\u2013150 mV for B. viridis, \u2013180 mV for R. sphaeroides). This lack of clear relationship between charge-separated state and Em(QA) changes strengthens the argument that XFEL structures are irrelevant to electron-transfer events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C71, C76-C77 are supported by computational data in Figure 9. The absence of expected Em(QA) stabilization at 300 ps and 8 \u03bcs is particularly significant because QA reduction occurs on a slower timescale (~200 ps) that should allow sufficient protein relaxation. The reasonable agreement with experimental Em(QA) values validates the computational approach, making the absence of time-dependent changes more compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors conclude that there is no clear link between the time-dependent structural changes in the XFEL structures and the electron-transfer events. The cyclic fluctuations in residue contributions, the low resolution (2.8 \u00c5) of the XFEL structures, and the absence of expected energetic and structural signatures suggest that the observed changes likely reflect experimental errors or data processing artifacts rather than actual electron-transfer-induced structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C68-C70, C72-C73 represent the main conclusion of the manuscript and are supported by the cumulative evidence from Em calculations (C4, C48-C55, C62-C63) and NSD analysis (C5, C58-C61). The authors appropriately identify limitations of the XFEL data and provide multiple independent lines of computational evidence that the time-dependent changes do not correlate with expected electron-transfer signatures. However, the conclusion relies heavily on the accuracy of the computational methods and the assumption that protein reorganization should produce detectable Em shifts and specific chlorin ring deformations on the timescales examined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The authors suggest that future high-resolution structures combined with rigorous energetic evaluations may provide better insights into actual structural changes relevant to electron-transfer events and achieve a more comprehensive understanding of protein structure-function relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are reasonable forward-looking statements based on the limitations identified in the current work. These are appropriately framed as suggestions for future research rather than definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The manuscript describes the computational methods used, including the source of atomic coordinates (XFEL structures from Dods et al., 2021), hydrogen atom generation and optimization (CHARMM), atomic charge determination (CHARMM22, RESP procedure, DFT calculations), Em calculation methods (Poisson-Boltzmann equation with MEAD, Monte Carlo sampling with Karlsberg), QM/MM calculations (restricted/unrestricted DFT with B3LYP functional), and NSD analysis for chlorin ring deformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C93 accurately describe the computational methods with appropriate citations. The methods are standard approaches for this type of analysis and are described in sufficient detail. The use of consistent parameters with prior studies (Kawashima and Ishikita, 2018) is appropriate for comparison. However, some methodological details could be more explicit (e.g., convergence criteria, grid sizes beyond the three-step focusing procedure, validation of QM region size).",
+    "result_type": "MINOR"
+  }
+]

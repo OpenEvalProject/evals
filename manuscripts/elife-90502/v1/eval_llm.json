@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C25",
+      "C26",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors generated two comprehensive datasets for training ADeS: an in vitro dataset with 13,120 apoptotic and 301,630 nonapoptotic nuclei from epithelial cells, and an in vivo dataset with 120 apoptotic sequences and 535 nonapoptotic samples from leukocytes imaged via multiphoton intravital microscopy. These datasets encompass different imaging modalities, cell types, staining techniques, and capture the heterogeneity and challenges of apoptosis detection in live-cell imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21, C25, C26, C84-C91 collectively provide detailed, quantitative descriptions of both datasets with specific numbers, imaging parameters, and characterization metrics directly supported by experimental data and figures. The datasets are well-documented with appropriate controls and validation of morphological features (C23-C24, C27-C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors developed a Conv-Transformer architecture that uses convolutional layers for spatial feature extraction and attention-based transformer blocks for temporal relationship evaluation. This architecture achieved 98.27% \u00b1 0.25% sequence accuracy, F1 score of 0.98, and AUC of 0.997, outperforming CNN, 3DCNN, and Conv-LSTM networks in apoptosis classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C92-C95 are directly supported by Table 1 and experimental data showing comparative performance metrics. The architecture details are clearly specified, and the superiority over baseline methods is demonstrated with quantitative metrics. The training methodology is adequately described with specific hyperparameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ADeS achieved high performance on in vitro testing movies with 97.32% overall predictive accuracy, 2.68% misclassification rate, AUC of 0.99, average TPR of 82.01%, and average FPR of 5.95%. The system showed high spatial accuracy (30-pixel average distance to ground truth vs. 52 pixels for random predictions) and temporal accuracy (3.46 frames average difference), with a bias toward late detection of apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 are well-supported by confusion matrices, ROC curves, and spatial-temporal analyses shown in Figure 4. The performance metrics are quantified with appropriate statistical measures. The bias toward late detection (C43) is explained by the difference between annotation criteria (beginning of apoptosis) and what the model learned (nuclear disruption).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The authors implemented 3D volumetric rotations as a data augmentation strategy that enabled a 100-fold increase in the in vivo dataset without introducing imaging artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is directly supported by Figure 5B showing multiple rotational views of the same apoptotic sequence. The approach is well-justified as each rotation represents a physiological representation of the cell. However, the claim that NO artifacts were introduced could benefit from more rigorous validation beyond visual inspection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The in vivo classifier achieved 97.80% classification accuracy with 2.20% misclassification rate (primarily false negatives at 1.80%). When deployed on full movies, ADeS detected apoptotic events with TPR of 81.3%, FPR of 3.65%, and tracking accuracy (TRA) above 0.9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are directly supported by confusion matrices and performance metrics in Figure 6B, 6F, and 6G. The distinction between classifier performance on cropped sequences (C45-C46) and full movie detection (C47-C48) is appropriate, showing the expected performance drop when moving from controlled samples to real-world application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C7"
+    ],
+    "result": "ADeS showed no significant difference in TPR and FPR compared to human annotation, with the authors claiming it surpasses human performance in detecting apoptotic events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 states there was NO significant difference between ADeS and human performance (Figure 6H), which contradicts claim C7 that ADeS 'surpasses' human performance. The data in Figure 6H shows trends but no statistical significance. The claim of surpassing human performance (C7) appears overstated given the statistical analysis presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ADeS performance was significantly affected by video quality parameters, with cell number playing a crucial role (increased cell number decreased TPR and increased FPR). PPV was significantly lower in videos with poor signal-to-noise ratio. Video quality showed weak overall correlation with sensitivity (Pearson r not specified) but strong correlation (0.72) for videos with suboptimal sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by hierarchical clustering analysis (Figure 6I) and correlation analyses (Figures 6J-6M). The identification of factors affecting performance is valuable for understanding system limitations. However, the weak overall correlation becoming strong for a subset suggests potential overfitting or selection bias in the subgroup analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "For all biological categories tested, classification accuracy was above 80%, except for overlapping cells and cells with high membrane plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is directly supported by Figure 6\u2014figure supplement 1D showing accuracy measurements across different biological categories. This provides important information about the system's limitations and failure modes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C6"
+    ],
+    "result": "ADeS is the only algorithm for cell death quantification applied in vivo and, along with Vicar et al. 2020, one of only two methods capable of detecting apoptotic cells in fully uncropped microscopy movies. The authors claim ADeS is the first method capable of detecting location and duration of multiple apoptotic events in full microscopy timelapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C6 are supported by the comparative analysis in Table 2 and citations. However, the claim of being 'first' (C6) should be qualified given that Vicar et al. 2020 also detected apoptosis in full movies, albeit using trajectory-based rather than vision-based methods. The distinction is methodological rather than capability-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "ADeS successfully quantified dose-dependent toxicity of doxorubicin on epithelial cells, measuring mortality at 24 hr (PBS: 62 cells, 1.25 \u03bcM: 95 cells, 2.50 \u03bcM: 167 cells, 5.00 \u03bcM: 289 cells). The system predicted distinct pharmacodynamics with EC50 values of 2.35 at 5 hr and 4.47 at 24 hr, and projected that 10 \u03bcM doxorubicin attains 86% of maximum effect at 24 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by experimental data and dose-response curves in Figure 7. The application demonstrates practical utility of ADeS for toxicity assays. However, the dose-response curves and EC50 calculations would benefit from reporting confidence intervals and goodness-of-fit metrics. The projection to higher concentrations (C58) involves extrapolation beyond tested doses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Following apoptotic events in lymph nodes, neighboring cells showed a sharp decrease in distance to the apoptotic centroid and a pronounced increase in instantaneous speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are directly supported by quantification in Figures 8B and 8C showing temporal dynamics of neighboring cell behavior. This demonstrates a biological application of ADeS for studying cellular responses to apoptosis. However, the sample size (n=22 cells) is relatively small, and statistical significance testing is not clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C20"
+    ],
+    "result": "The authors claim that no computational method can deliver robust detection of apoptosis in microscopy timelapses, and that none of the available methods can be applied for detection of apoptosis in microscopy movies depicting multiple cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2 and C20 are strong negative claims based on literature review. While Table 2 supports that most prior methods focused on single cells or static frames, the claim that 'no method' exists is difficult to definitively prove. The authors acknowledge Vicar et al. 2020 detected apoptosis in full movies (C55), which somewhat contradicts C2 and C20. The claims should be qualified as 'no widely applicable' or 'no vision-based method.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The authors claim this study established a landmark in the application of attention-based networks in activity recognition for live-cell imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 is a self-assessment of significance that, while supported by the superior performance of the Conv-Transformer (C31-C33), represents a subjective evaluation. The claim of 'landmark' status is premature and should be validated by community adoption and independent replication. The result is significant but the characterization as 'landmark' is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C76",
+      "C77",
+      "C96"
+    ],
+    "result": "The manuscript provides extensive background on intravital microscopy, apoptosis biology, traditional detection methods, and their limitations, as well as context on deep learning approaches and activity recognition in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C19, C61-C64, C69, C76-C77, C96 provide background information supported by appropriate citations to established literature. These claims establish the scientific context and motivation for the study. They are generally well-supported by cited references, though they represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors validated that nuclear shrinkage and chromatin condensation are prototypical hallmarks of apoptosis used for annotation. Nonapoptotic nuclei maintained constant area and chromatin density, while apoptotic nuclei showed decreased area and increased chromatin condensation. The median duration of morphological changes in vivo was eight frames, and apoptotic cells showed speed not significantly different from arrested cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24, C27-C28 are supported by quantitative data in Figure 1D and Figure 1\u2014figure supplement 1K-M. These validation experiments establish the biological basis for the annotation criteria and confirm assumptions about apoptotic cell behavior. Statistical testing is appropriately applied (C28).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "ADeS employs a selective search algorithm to compute regions of interest (ROIs) that might contain apoptotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is directly stated and supported by citations to the selective search algorithm (Girshick, 2015; Uijlings et al., 2013) and illustrated in Figure 2B. This is a standard computer vision approach appropriately applied to the detection task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors discuss the need for computational tools in epithelial research, the potential of deep learning and activity recognition for apoptosis detection, advantages of probe-free detection, ADeS as a bridge between activity recognition and bioimaging, tradeoffs in binary classification, advantages over fluorescent probes, and potential future applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C70-C71, C73-C75, C78-C83 represent discussion points, interpretations, and speculative future applications. Most are reasonable inferences from the data (C68, C72, C73, C75, C78, C82, C83) or supported by citations (C70, C71, C73, C74, C76, C77). Speculative claims about future applications (C79, C80, C81) are appropriately qualified as potential uses rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C8"
+    ],
+    "result": "The authors claim ADeS achieved classification accuracy above 98%, outperformed state-of-the-art solutions, and demonstrated effectiveness and robustness across various imaging modalities, cell types, and staining techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C8 are high-level summary claims supported by the detailed results in C31-C33 (in vitro classifier), C45-C48 (in vivo classifier), and applications to different cell types and imaging modalities. However, 'above 98%' (C4) conflates classifier accuracy on cropped sequences with detection performance on full movies, which showed lower TPR (~81-82%). The claim should distinguish between these different performance contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The authors used LysM-cre-GFP mice for in vivo imaging experiments, with all procedures approved by the Swiss Federal Veterinary Office.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 describe the experimental model and ethical compliance, which are directly stated in the methods section. These are standard methodological details appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

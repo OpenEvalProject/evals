@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C42",
+      "C43",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C101"
+    ],
+    "result": "PLS analysis identified a primary latent dimension linking MetS severity to widespread brain morphological abnormalities, explaining 71.20% of shared variance. This dimension showed that increased severity of MetS components (particularly obesity measures) corresponded with lower cortical thickness in orbitofrontal, lateral prefrontal, insular, anterior cingulate, and temporal regions, as well as lower subcortical volumes. The pattern was replicable across UKB and HCHS subsamples and validated through conventional group comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C19, C42-C43, C52-C55, C57, and C101 collectively provide strong convergent evidence for this result. The PLS analysis was appropriately conducted with proper confound removal (C13), permutation testing for significance (C113), bootstrap resampling for stability (C114), and cross-validation for robustness (C116). The finding was replicated across independent subsamples (C19, C43) and validated using alternative analytical approaches (C19), demonstrating methodological rigor and reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A second latent variable (explaining 22.33% of shared variance) identified a distinct pathomechanistic connection between MetS components and brain morphology, linking higher insulin resistance markers (HbA1c, glucose) and lower dyslipidemia to reduced thickness and volume in lateral frontal, posterior temporal, parietal, and occipital regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C63-C65 describe a secondary finding from the PLS analysis that is methodologically sound and represents a distinct covariance pattern from the primary result. The interpretation that insulin resistance drives this relationship (C65) is reasonable given the loading values, though it remains somewhat speculative. The finding adds nuance to understanding MetS-brain relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C44",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "MetS-related brain morphological abnormalities mediate the relationship between MetS severity and cognitive performance across multiple domains. The imaging score fully mediated relationships with Trail Making Test B, Fluid Intelligence, and Matrix Pattern Completion, and partially mediated relationships with Symbol Digit Substitution, Numeric Memory, and Paired Associate Learning tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 and C44, C67-C72 provide comprehensive evidence for mediation effects using appropriate statistical methods (bootstrapping with n=5000, C117). The mediation analysis properly distinguishes between full and partial mediation based on the significance of direct effects. Group comparisons (C69) and subsample PLS analyses (C70) provide convergent evidence. However, the cross-sectional design (acknowledged in C99) limits causal inference despite statistical mediation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86"
+    ],
+    "result": "Virtual histology analysis revealed that MetS-related brain morphological abnormalities are strongest in regions with higher densities of endothelial cells and microglia, suggesting these cell types play key roles in regional susceptibility to MetS effects. Additional associations were found with excitatory neurons type 8, inhibitory neurons type 1, and excitatory neurons type 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34, C77-C82, C85-C86 report associations between MetS effects and cell-type densities using gene expression data from the Allen Human Brain Atlas. While the methodology (ensemble-based GCEA with spatial lag models) is appropriate, the analysis relies on post-mortem tissue (C96) which may differ from in-vivo profiles. The associations with endothelial cells and microglia are biologically plausible and supported by cited literature (C78, C81-C82), but the causal interpretation remains speculative. Some associations (Ex6, In1) lost significance in sensitivity analyses, suggesting instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C95"
+    ],
+    "result": "MetS effects on brain morphology are associated with brain network topology, as evidenced by significant correlations between regional MetS effects and functional (r_sp=0.464) and structural (r_sp=0.764) neighborhood abnormality. This suggests that regions with similar MetS effects tend to be disproportionately interconnected within functional and structural brain networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C87-C90, C95 report robust associations between MetS effects and network topology measures using appropriate null models (spin permutations, brainSMASH, network rewiring). The findings were validated using alternative connectomes from HCHS. The interpretation that network embedding influences regional susceptibility (C90) is reasonable, though mechanistic explanations (C91) remain speculative. The result provides novel insights into how network organization may shape disease effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The frontotemporal morphometric abnormality pattern associated with MetS is consistent with previous research and may be linked to brain regions involved in food-related reward processing, taste, and impulse regulation. A counterintuitive positive association in superior frontal, parietal, and occipital regions was also observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C62 provide context for interpreting the spatial pattern of MetS effects by referencing prior literature. While the consistency with previous studies (C58, C61) supports the validity of findings, the mechanistic interpretations (C59-C60, C62) are explicitly speculative. The positive associations in some regions (C61-C62) are acknowledged as counterintuitive and lack definitive explanation, though a compensatory mechanism is proposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The detected latent variable may represent a continuous disease spectrum from minor cognitive deficits due to cardiometabolic risk to severe deficits in dementia, as the brain morphological pattern is consistent with atrophy patterns in vascular cognitive impairment and Alzheimer's dementia. Interventions targeting cardiometabolic risk factors may mitigate adverse cognitive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 propose a disease continuum hypothesis supported by consistency with dementia atrophy patterns (C75) and prior mediation studies (C73). However, this interpretation is explicitly speculative (C74) and the cross-sectional design (C99) cannot establish disease progression. The therapeutic implications (C76) are supported by cited literature but remain tentative as the definitive role of interventions is not fully established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Excitatory neurons type 8, which reside in cortical layer 6 and maintain long-range cortico-cortical and cortico-thalamic connections, may be particularly susceptible to MetS effects due to exposure to MetS-related white matter disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 propose a mechanism for the observed association with excitatory neurons type 8. While the anatomical properties of layer 6 neurons are well-established (C83), the interpretation of their susceptibility to MetS (C84) is speculative and based on indirect evidence from white matter disease studies. This association also lost significance in sensitivity analyses, suggesting instability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Functional and structural connectivity may provide a scaffold for propagating MetS-related perturbations across brain networks through mechanisms including excitotoxicity, diminished excitation, and metabolic stress, representing a potential spreading phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 propose a network-based spreading mechanism for MetS effects. While this interpretation is consistent with the neighborhood abnormality findings, it is explicitly speculative and lacks direct empirical support. The proposed mechanisms (excitotoxicity, metabolic stress) are cited from general neuroscience literature (C94) but not specifically demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study has several acknowledged limitations: virtual histology relies on post-mortem samples potentially different from in-vivo profiles, UKB predominance may bias results, cognitive assessment reliability issues exist in UKB, and the cross-sectional design restricts causal inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 appropriately acknowledge key limitations of the study. These are valid methodological concerns that affect interpretation of results. The cross-sectional design limitation (C99) is particularly important as it undermines causal claims made elsewhere in the manuscript, including mediation analyses which imply causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study employed rigorous and reproducible methods including standardized MRI acquisition on 3T Siemens Skyra scanners, containerized CAT12 pipeline for image processing, appropriate quality control (75% threshold), k-nearest neighbor imputation for missing data, confound regression, permutation testing (n=5000), bootstrap resampling (n=5000), 10-fold cross-validation, and multiple null models for spatial correlation testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C119 describe comprehensive methodological details demonstrating rigor and reproducibility. The use of containerized pipelines (C107), standardized quality control (C110), appropriate statistical testing with permutations and bootstrapping (C113-C114), cross-validation (C116), and multiple null models (C119) represent best practices. However, some details are missing such as random seeds for stochastic algorithms and complete preprocessing parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Metabolic syndrome represents a cluster of cardiometabolic risk factors with 23-35% prevalence in Western societies, promotes neurodegenerative and cerebrovascular diseases, can be modified by interventions, and consistently shows alterations in cortical gray matter morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide well-established background information supported by appropriate citations to prior literature. These claims accurately represent current knowledge about MetS definition, prevalence, health consequences, modifiability, and brain structural effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The pathophysiology of MetS involves multiple mechanisms including atherosclerosis affecting blood supply and triggering inflammation, endothelial dysfunction reducing cerebral vasoreactivity, blood-brain barrier breakdown inciting inflammatory response, oxidative stress causing neuronal and mitochondrial dysfunction, and small vessel injury leading to white matter damage, microinfarcts, and cerebral microbleeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 accurately summarize established pathophysiological mechanisms of MetS supported by appropriate citations. This background information provides important context for interpreting the study's findings regarding cellular and network-level effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C66"
+    ],
+    "result": "Previous research supports the notion that individual MetS risk factors have overlapping effects on brain morphology and that cognitive performance is consistently linked to cardiometabolic risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C66 appropriately cite prior literature to contextualize the current findings. These claims accurately represent previous research and provide justification for the study's multivariate approach and investigation of cognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study demonstrates that an integrative, multi-modal, and multi-scale analysis approach can lead to a more holistic understanding of MetS neural underpinnings, and that leveraging neuroimaging may improve personalized cardiometabolic risk mitigation approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 appropriately summarize the study's contributions and methodological approach. The integration of multiple analytical scales (cellular, regional, network) represents a strength. However, claim C104 regarding personalized risk mitigation is somewhat speculative as the study does not directly demonstrate clinical utility.",
+    "result_type": "MINOR"
+  }
+]

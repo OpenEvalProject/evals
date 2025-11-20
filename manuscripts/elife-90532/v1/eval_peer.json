@@ -1,0 +1,146 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors claim that combined treatment with JNK inhibitor (SP600125) and Midostaurin significantly increases apoptosis and reduces proliferation in FLT3ITD-TKD cells compared to Midostaurin alone, based on experimental data shown in Figures 4D and 4E.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 1 explicitly challenges this interpretation, stating that 'looking at Figs 4D and 4E, it appears that the effects of the midostaurin/SP600125 combination are virtually identical to SP600125 alone, and midostaurin provides no additional benefit.' The reviewer notes that no p-values are provided comparing the combination to SP600125 alone, and that proper synergy analysis requires specialized mathematical models. The reviewer concludes they 'do not appreciate even an additive effect of midostaurin combined with SP600125 in the data presented.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C83"
+    ],
+    "result": "The Boolean models predict that combined inhibition of JNK and FLT3 exclusively restores TKI sensitivity in silico in the FLT3ITD-TKD model, identifying JNK as a key regulator of TKI sensitivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises a fundamental methodological concern that undermines confidence in this prediction: 'I was very puzzled by the fact that this training dataset appears to contain, among other conditions, the combination of midostaurin with JNK inhibition, i.e. the very combination of drugs that the authors later present as being predicted by their model to have a synergistic effect.' The reviewer characterizes this as a 'self-fulfilling prophecy' and 'an inappropriate use of the same data in training and verification/test datasets.' This circular reasoning issue casts doubt on whether the model genuinely predicted this combination or simply recapitulated its training data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C88",
+      "C89"
+    ],
+    "result": "Patient-specific Boolean models were generated for 14 FLT3-ITD AML patients, with predictions confirmed by clinical follow-up data for some patients (JMD1, JMD2, JMD3, JMD6, JMD7, JMD_TK2, JMD_TKD3, TKD2) but showing discrepancies for others (JMD5, TKD1).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 expresses skepticism about the patient-specific models, stating 'I am not sure that I see significant value in the patient-specific logic models because they are not supported by empirical evidence' and suggests that 'treating primary cells from AML patients with relevant drug combinations would be a feasible and convincing way to validate the computational models.' Reviewer 3 notes 'there are some apparent discrepancies between predicted and observed data that have been seemingly overlooked.' The mixed validation results and lack of experimental validation with patient cells leave the clinical utility uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C80"
+    ],
+    "result": "The two Boolean models (FLT3ITD-JMD and FLT3ITD-TKD) display different network structures with most interactions being cell-specific, demonstrating profound rewiring of FLT3 signaling based on ITD location.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the structural differences between the models or the interpretation of signaling rewiring. The editor's summary states the work demonstrates 'altered protein/signaling networks within cancer cells,' and Reviewer 2 acknowledges the methodology 'to uncover altered protein/signalling networks in cancer cells.' The network architecture findings appear accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C81"
+    ],
+    "result": "The Boolean models successfully recapitulate the differential TKI sensitivity between FLT3ITD-JMD (sensitive) and FLT3ITD-TKD (resistant) cells when FLT3 inhibition is simulated in silico.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the models' ability to reproduce known differential TKI sensitivity. The editor notes 'the level of evidence supporting the conclusions is solid' and that authors 'present analyses on independent, real-world data to validate their approach.' This validation of the basic model behavior appears accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C75",
+      "C76"
+    ],
+    "result": "Principal component analysis of 14 sentinel proteins stratified cells by FLT3 activation status and cytokine stimulation, with JNK inhibitor treatment grouping with FLT3 inhibitor treatment, but the activation profile could not distinguish between FLT3ITD-JMD and FLT3ITD-TKD cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises significant clarity concerns about the PCA analysis, noting 'in the PCA analysis (Fig 2C) there seems to be no reference to the cytokine stimulation status while the authors claim that PC2 stratifies cells according to IGF1 vs TNFalpha.' The reviewer also finds 'Fig 2B is quite confusing overall' and states 'the lack of clarity on what exactly were the experimental conditions makes the interpretation of Fig 2 very challenging.' These presentation issues prevent clear evaluation of the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C49"
+    ],
+    "result": "The multiparametric experimental data showed high reproducibility (Pearson correlation 0.75-1.0) and consistency with literature evidence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the quality or reproducibility of the experimental measurements. These technical validation claims are implicitly accepted through lack of critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The integration of cell-based multiparametric data with prior knowledge networks using Boolean formalism generated clinically valid predictive models that represent a proof-of-concept for personalized medicine approaches generalizable to other cancer types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The overall approach receives mixed evaluation. The editor states this 'could potentially represent a step forward towards personalized medicine' and Reviewer 2 calls it 'useful work,' but Reviewer 1's fundamental concerns about methodology (circular training/testing) and lack of synergy in the key experimental validation undermine confidence in the clinical validity claims. The proof-of-concept status remains uncertain given these unresolved issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C84"
+    ],
+    "result": "JNK impacts cell cycle architecture in FLT3ITD-TKD cells by mediating CDK1 activity, with combined JNK and FLT3 inhibition affecting CDK1 phosphorylation status and cell cycle progression differently in sensitive versus resistant cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the mechanistic cell cycle findings or the role of JNK in CDK1 regulation. These molecular mechanism claims appear accepted, though they are overshadowed by concerns about the therapeutic combination experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C16",
+      "C46",
+      "C73"
+    ],
+    "result": "A FLT3-ITD prior knowledge network was constructed from SIGNOR database and enriched with experimental data, resulting in genotype-specific networks with 206-208 nodes and 756-782 edges, made publicly available following FAIR principles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the network construction methodology or data availability. Reviewer 2 specifically notes as a strength that 'the availability of data as supplementary material and the availability of code in GitHub are also high points.' These methodological and data sharing aspects are accepted.",
+    "result_type": "MINOR"
+  }
+]

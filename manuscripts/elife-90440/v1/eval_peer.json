@@ -1,0 +1,148 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C68",
+      "C71",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors developed a comprehensive in silico testbed for evaluating RF-induced heating of orthopedic implants during MRI. The testbed includes a detailed VHP-Female model (60-year-old, BMI 36, 250 anatomical structures plus 40 implant components), a semiautomatic implant embedding procedure, a parameterizable MR RF birdcage coil model at 1.5T, and coupled electromagnetic and thermal FEM solvers integrated in Ansys Workbench. The testbed received FDA approval as a medical device development tool for 1.5T orthopedic implant examinations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the testbed's value and validation. Reviewer 1 states the testbed is 'solid, based on the widely available human project, and validated.' Reviewer 2 describes it as 'valuable and validated' and notes 'the approval of the testbed by the FDA as a medical device development tool (MDDT) is a good premise for the large-scale adoption.' Reviewer 3 acknowledges the testbed provides 'an open source computational heterogeneous human model' with methods that 'can help realistically model the implant RF exposure.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The testbed was validated against experimental data, including comparison with ASTM phantom tests and an extreme case from Hue et al. 2018 involving a resonant RF ablation needle in ex vivo bovine liver. The testbed predicted a 23\u00b0C temperature increase, agreeing well with experimental measurements of 20\u00b0C (proton resonance frequency shift) and 22\u00b0C (fiber optic sensor). The testbed showed variable agreement with phantom experiments: up to 40% higher temperature predictions in some cases and 50% lower in others. For a titanium femoral nail, simulations demonstrated that 15-min exposures at 2.3 W/kg SAR caused unsafe 10\u00b0C temperature rises, while 4-min exposures with 16-min rest periods were safe.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the validation results without challenge. Reviewer 1 states the testbed is 'validated,' and Reviewer 2 explicitly notes it is 'validated' and 'looks valuable.' The comparison with experimental data from Hue et al. 2018 and the demonstration of the testbed's ability to predict safe vs. unsafe exposure protocols are presented as evidence of the testbed's accuracy and utility, which reviewers do not question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C56"
+    ],
+    "result": "The work focuses solely on RF-induced heating safety aspects of MR labeling for orthopedic implants, acknowledging that implant heating from both RF and gradient coils is a major safety concern for passive and active implants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 explicitly identifies a weakness: 'The proposed method only used radiofrequency (RF) field exposure to evaluate the heating around the implant. However, in the case of bulky implants the rapidly changing gradient field can also produce significant heating due to large eddy currents. So the gradient induced heating still remains an issue to be evaluated.' Reviewer 2 notes this limitation is 'now clearly highlighted' in the revised manuscript and 'correctly taken in consideration in the discussion,' indicating the authors acknowledge but do not address gradient heating in this work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The testbed is limited to a single human model (VHP-Female, obese 60-year-old female), and accessible full-body anatomical virtual human models reflecting major variations in age, sex, race, and obesity are severely lacking. The Virtual Population, while excellent, is relatively homogeneous (younger, fit Caucasian Europeans), and recent obese model additions were mostly obtained via morphing rather than true anatomical segmentation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 identifies this as a weakness: 'the method is limited to a single human model and might not be representative of patients with different age, sex and body weights.' Reviewer 2 notes that 'the way the implant is embedded in the VHP model that should take in consideration how to manage the removed and stretched tissues' is 'now correctly taken in consideration in the discussion,' suggesting the authors acknowledge but do not fully resolve the limitation of model diversity and anatomical representation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C57",
+      "C72"
+    ],
+    "result": "The testbed augments FDA-required ASTM phantom measurements with anatomically realistic multiphysics modeling. The ASTM phantom response differs significantly from real bodies due to homogeneous tissue properties and lack of blood perfusion. The testbed allows rapid testing and adjustment of MR exposure protocols (within 5-7 minutes) to meet FDA requirements for 1-hour MR sessions with specified scan/rest time combinations that limit heating to safe levels (e.g., <5\u00b0C).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these claims about the testbed's intended use and advantages over phantom testing. Reviewer 3 states the testbed 'can help realistically model the implant RF exposure in patient avoiding over- or under-estimation of RF heating measured using rectangular box phantoms such as ASTM phantom.' Reviewer 2 notes the testbed 'overcomes' limitations of ASTM tests and provides 'fast and reliable prediction of temperature increase from RF, in real-life scan conditions on human-like digital models.' No reviewer challenges these methodological claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the clinical context and motivation: increasing prevalence of implants in aging populations (26% of US population over 65 carry orthopedic implants; 12.6 million patients will need MR studies within 10 years), growing FDA 510(k) submissions for MR-conditional labeling (approaching 100 in 2019), limitations of current testing leading to 'MR Not Evaluated' or overly restrictive labels affecting up to 2 million elderly US patients, and clinical importance of MR imaging for conditions like periprosthetic joint infection (1-2% of primary arthroplasties, up to 30% of revisions, 5-8% mortality at 1 year).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this background context without challenge. Reviewer 1 states the work addresses a 'real need in MR safety' and that the method is 'required in clinics.' Reviewer 2 notes the authors 'are trying to satisfy a real need in MR safety, when concerns can rise about the thermal increase due to metallic materials in patients carrying orthopedic implants.' The statistical claims about implant prevalence and clinical impact are treated as established context rather than contested findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C73",
+      "C74"
+    ],
+    "result": "Numerical simulations with virtual human models generate accurate predictions of temperature rise that are accepted by the FDA. The electromagnetic and thermal simulation algorithms based on finite element, finite difference, and boundary element methods are reasonably well developed. Cross-platform compatibility has been established previously, with further validation underway using CST Studio Suite.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these methodological claims. Reviewer 2 notes 'The FDA is pushing this approach' and that FDA approval 'is a good premise for the large-scale adoption of this kind of solution.' Reviewer 3 acknowledges that 'using numerical simulation to predict radiofrequency induced heating will be much easier compared to the experimental measurements in MRI scanner.' The acceptance of these computational methods by reviewers aligns with the claims about their development and FDA acceptance.",
+    "result_type": "MINOR"
+  }
+]

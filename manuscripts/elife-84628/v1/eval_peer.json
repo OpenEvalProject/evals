@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript provides background information on the locus coeruleus (LC), describing its anatomical location, role as the primary source of norepinephrine (NE) in the brain, widespread projections, functional roles in attention/arousal/mood/stress, cell counts in rodents and humans, and involvement in neurodegenerative and neuropsychiatric disorders including Alzheimer's, Parkinson's, ADHD, PTSD, and depression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these background claims, which are well-established facts supported by citations. All reviewers acknowledge the importance of the LC and its role in brain function and disease, treating this foundational information as accepted context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C78"
+    ],
+    "result": "The study represents the first transcriptome-wide characterization of the human LC using spatially-resolved transcriptomics (SRT) and single-nucleus RNA-sequencing (snRNA-seq), analyzing tissue from five neurotypical adult human brain donors, with final datasets from 4 donors (SRT) and 3 donors (snRNA-seq) after quality control, and provides freely accessible data resources.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly recognize this as 'the first comprehensive transcriptome map of the human LC' and 'an important initial study.' Reviewers praise the novelty and importance of the resource, with one stating 'this dataset will be a valuable resource for the neuroscience community.' The use of complementary approaches is highlighted as a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The LC was identified by neuroanatomical landmarks and neuromelanin pigmentation, validated by RNAscope for NE marker genes (TH, SLC6A2), and profiled using 10x Genomics Visium SRT platform with 10 \u03bcm tissue sections placed on capture areas containing ~5000 spots (55 \u03bcm diameter, 100 \u03bcm spacing), with 2-3 sections per capture area, generating n=9 total samples.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the methodological approach without criticism of the tissue identification and SRT procedures. One reviewer notes 'the technologies were used with an astute awareness of their limitations' and praises the use of 'multiple technologies...to paint a more complete and resolved picture.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C91"
+    ],
+    "result": "For 3 of 5 donors, 100 \u03bcm sections were used for snRNA-seq with the 10x Genomics Chromium platform, employing fluorescence-activated nuclear sorting (FANS) for neuronal enrichment prior to library preparation, based on previous success with this approach in other brain regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the snRNA-seq methodology without challenging the FANS enrichment approach. One reviewer notes the study 'uses two independent but complementary approaches' as a strength. The methodological choices are treated as reasonable given the technical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "LC-NE neuron regions were manually annotated based on H&E histology (pigmentation, cell size, morphology), with median 2-5 cells per spot. One sample (Br5459_LC_round2) was excluded due to lack of clear NE marker expression. The final dataset consisted of 12,827 genes and 20,380 spots across n=8 samples, with annotated regions highly enriched for TH and SLC6A2 expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the manual annotation approach or quality control procedures. The validation of annotations through marker gene enrichment is implicitly accepted. One reviewer notes the 'lack of resolution in the spatial transcriptomic platform was compensated by complementary snRNA-seq and single molecule FISH.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C85"
+    ],
+    "result": "Differential expression testing between LC and non-LC regions identified 32 highly significant genes (FDR<10^-3, FC>3), including known NE markers DBH (top-ranked), SLC6A2 (6th), TH (7th), and SLC18A2 (14th), with 31 elevated and 1 (MCM5) depleted. Using standard thresholds (FDR<0.05, FC>2), 437 genes were identified. The analyses validated enrichment of genes for NE synthesis, packaging, and reuptake.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state the results 'validate well-known marker genes for the LC (e.g. DBH, TH, SLC6A2)' and that findings 'confirmed what has been described in the rodent LC.' One reviewer notes 'the analyses validated the enrichment of genes involved in NE synthesis and packaging...as expected.' The identification of known markers is treated as validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C55",
+      "C56",
+      "C82"
+    ],
+    "result": "Cross-species comparison with rodent LC studies showed that a small number of genes (DBH, TH, SLC6A2, GNAS) were highly conserved and associated with LC regions in human data, but the majority of rodent LC genes were expressed at low levels in human data, potentially reflecting species-specific differences or technological differences. The study confirmed partial conservation of LC-associated genes across species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this finding, with one noting 'the potential that the gene regulatory profiles of these cells are only partially conserved across species, humans, and rodents' as an important implication. Another states 'potentially important species differences were also identified.' The limited conservation is accepted as a valid finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C90",
+      "C92",
+      "C93"
+    ],
+    "result": "After processing and QC, 20,191 nuclei were obtained across three snRNA-seq samples. An unexpectedly high proportion of mitochondrial reads was observed in NE neurons, potentially due to ambient mRNA contamination from metabolically active cells, but standard QC metrics (UMI counts, detected genes) fell within normal ranges. Unsupervised clustering identified 30 clusters including 295 NE neurons (expressing DBH, TH, SLC6A2) and other major cell types. The relatively small number of NE neurons may relate to technical factors affecting recovery of large, fragile cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express concern about the snRNA-seq data quality. One notes 'questionable quality' and 'the relatively small number of samples (and questionable quality) for the snRNA-seq data' as a limitation. Another states 'the sample contribution to the results is highly unbalanced.' The high mitochondrial reads and small NE neuron count raise questions, though reviewers acknowledge the authors' explanations and QC efforts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C80",
+      "C84"
+    ],
+    "result": "DE testing identified 327 genes with elevated expression in NE neurons vs. other neurons (including known markers and 13 mitochondrial genes), and 427 genes vs. all other clusters. Comparison between SRT and snRNA-seq datasets identified 51 genes significant in both, including DBH, TH, SLC6A2, and SLC18A2 with high fold-changes. The study identified novel sets of differentially expressed genes enriched in LC-NE neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as valid, with one stating the study 'generate[s] a useful resource that lists genes that are enriched in LC neurons in humans.' The convergence between SRT and snRNA-seq data is treated as validation. Reviewers note 'some intriguing potential genes and modules identified that may be unique to humans.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study identified LC enrichment of genes with disease relevance: SSTR2, PHOX2A, PHOX2B (altered in animal models/human disease); RND3, P2RY1 (associated with apoptosis/pathology in neurodegeneration); and NT5DC2 (associated with ADHD and catecholamine synthesis regulation).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings. One notes the identification of 'genes and modules...that may be unique to humans and have the potential to explain LC-related disease states' as a strength. These disease-relevant genes are treated as important discoveries from the unbiased transcriptomic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C79",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A cluster of 186 potential 5-HT (serotonin) neurons was identified based on TPH2 and SLC6A4 expression, with 361 DE genes. Spatial analysis showed 5-HT markers distributed across both LC and non-LC regions without significant enrichment in LC. RNAscope confirmed NE and 5-HT markers in distinct cells not localized to same regions, with TPH2/SLC6A4 co-expressed in individual cells. The precise anatomical origin is unclear; neurons may be from adjacent dorsal raphe nucleus, though some evidence exists for serotonergic markers in rodent LC.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant caution about this finding. One states 'the authors claim that...a population of serotonin (5-HT) neurons is located within or near the LC. These last two claims must be taken with great caution, as several technological limitations restrict the interpretation.' Another notes 'the presence of unexpected cell types may represent the accidental inclusion of adjacent regions, in this case, serotonergic cells from the Raphe nucleus.' The authors' own uncertainty is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Secondary clustering of inhibitory neurons identified 14 subpopulations varying in expression of markers including CALB1, CALB2, TAC1, CNR1, VIP, and neuropeptides PNOC, TAC1, PENK, similar to recent rodent studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding, with one stating the analyses 'support recent rodent studies that have identified subgroups of interneurons in the region surrounding the LC, which show enrichment for different neuropeptides.' The consistency with rodent data strengthens confidence in these results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C81"
+    ],
+    "result": "Minimal expression of DA neuron marker genes (SLC6A3, ALDH1A1, SLC26A7) was observed in both Visium samples and the NE neuron cluster. High-resolution RNAscope in three independent donors showed no SLC6A3 expression in individual NE neurons (identified by DBH/TH co-expression). Together with RNAscope showing DBH/TH/SLC6A2 co-expression, these results support that observed TH+ cells in the LC are NE-producing neurons, not DA neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raise significant concerns about cell type identification. One states 'TH is the primary marker used to qualify cells as noradrenergic, however, TH catalyzes the synthesis of L-DOPA, a precursor to dopamine...suggesting some of the cells in the region may be dopaminergic and not NE cells. Indeed, there are publications to support the presence of dopaminergic cells in the LC.' Another notes 'the results may be over-interpreted' and 'it is suggested that the nomenclature for the cells be reconsidered.' While the authors provide RNAscope validation, reviewers remain cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Expression of cholinergic marker genes SLC5A7 and ACHE was observed in the NE neuron cluster. RNAscope confirmed co-expression of SLC5A7 and TH in individual cells (donor Br8079). Spatial data showed these markers expressed both within and outside LC regions. This unexpected finding may reflect co-expression in NE cells and/or sparse adjacent cholinergic neurons. Previous work suggests non-cholinergic actions of ACHE in catecholaminergic neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express strong caution about this claim. One states 'the authors claim that some LC neurons co-express cholinergic markers...These last two claims must be taken with great caution, as several technological limitations restrict the interpretation of these results.' The unexpected nature of the finding and potential for technical artifacts or misinterpretation lead reviewers to treat this as uncertain despite RNAscope validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "All datasets are freely accessible as interactive web apps (Shiny for SRT, iSEE for snRNA-seq) and downloadable R/Bioconductor objects (SpatialExperiment and SingleCellExperiment formats) with metadata including annotations and cluster labels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly praise the data accessibility. One states 'having a well-developed app to query and visualize these data will be an enormous asset to the community' and 'this work has been made publicly available and accessible through a user-friendly application.' Another notes the 'freely accessible resource' as a key contribution. The data sharing is treated as a major strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Key results were validated with smFISH RNAscope by assessing co-localization of genes of interest with established marker genes on independent tissue sections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the validation efforts positively. One notes 'the lack of resolution in the spatial transcriptomic platform was compensated by complementary snRNA-seq and single molecule FISH' and 'while the single-nucleus FISH confirms that some of the cells in the region are noradrenergic.' The orthogonal validation is treated as a methodological strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The SRT data using 10x Genomics Visium captured a median of 2-5 cells per measurement location within LC regions per sample, and future studies could apply higher-resolution platforms for single-cell or sub-cellular resolution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this limitation. One states 'the spatial resolution probably not being at the single cell level' as a limitation, while another notes 'the authors are unable to successfully implement unsupervised clustering with the spatial data, this greatly reduces the impact of the spatial technology as it implies that the transcriptomic data generated in the study did not have enough resolution to identify individual cell types.' The authors' acknowledgment of this limitation is accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Brain donations were collected with informed consent under approved IRB protocols. Clinical characterization and neuropathological examinations were performed, excluding subjects with neuropathology. Tissue blocks from five male neurotypical donors of European ancestry were obtained. The LC was identified by visual inspection based on neuroanatomical landmarks and neuromelanin pigmentation, and tissue blocks were dissected from the dorsal pons at the level of the motor trigeminal nucleus and superior cerebellar peduncle, then stored at -80\u00b0C.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the ethical approvals, sample selection, or tissue collection procedures. These methodological details are treated as standard and appropriate for the study.",
+    "result_type": "MINOR"
+  }
+]

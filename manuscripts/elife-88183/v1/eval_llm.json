@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A novel fibroblast subpopulation termed AG (activated to guide) fibroblasts was identified in mouse gingiva, characterized by Col14a1 expression and an immune regulatory gene signature including 'Regulation of leukocyte migration'. This population is distinct from KT (keeping typical) fibroblasts and myofibroblasts, with proportions changing during periodontitis development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C35 collectively demonstrate the identification and characterization of AG fibroblasts through scRNA-seq data (C2, C28), GO enrichment analysis showing immune regulatory functions (C29, C30), and temporal dynamics during disease progression (C34, C35). The data from Figures 2A-F provide strong evidence for this distinct fibroblast subpopulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43"
+    ],
+    "result": "AG fibroblasts localize beneath the gingival epithelium, in connective tissue papillae, and in the cervical periodontal ligament, positioning them strategically for early immune surveillance during periodontitis pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42, and C43 are supported by immunohistochemical data (Figure 3C) showing COL14A1 and CXCL12 positive cells in the described anatomical locations. The inference about suitability for immune surveillance (C43) is reasonable given the anatomical positioning near epithelial barriers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "AG fibroblasts respond to pathological stimuli by upregulating chemokines (Ccl8, Ccl11, Ccl19, Cxcl1, Cxcl10, Cxcl12) and TLR signaling components (Tlr2, Tlr3, Tlr4, Myd88, Irak1, Map3k7, RelA) on days 1 and 4 after ligature placement, with expression decreasing by day 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C36, C37, C39, and C40 are well-supported by scRNA-seq gene expression data shown in Figures 3A and 3B. The temporal pattern of expression provides strong evidence for AG fibroblast activation in early periodontitis. The inference about initiating early inflammation (C41) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The maxillary topical application (MTA) model using CpG ODN and LPS activates AG fibroblasts, induces cathepsin K expression, and triggers localized osteoclastic activity. CpG ODN activates TLR9 downstream signaling without upregulating Tlr9 itself, while LPS upregulates Tlr2/4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57 are supported by histological data (Figure 4C) and scRNA-seq analysis (Figures 4E-G) from the MTA model. The differential TLR expression patterns (C54-C56) are interesting and well-documented. The inference about extracellular biofilm components as triggers (C58) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "AG fibroblasts regulate myeloid cells through chemokine-receptor interactions: CCL8/CCL11-CCR2/CCR5 for macrophages and CCL8-CCR1, CXCL1-CXCR2, CXCL12-CXCR4 for neutrophils. NicheNet analysis reveals increasing ligand-target interactions from day 1 to day 7, with neutrophils becoming the primary target by day 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C71-C80 are supported by computational analysis of scRNA-seq data (Figures 6A-D) matching chemokine ligands to receptors. The NicheNet analysis (C75) provides additional support for intercellular communication. However, these are computational predictions requiring experimental validation, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Neutrophil infiltration increases progressively during periodontitis development (days 1-7), with upregulation of Trem1 and Mmp9 indicating activation and participation in tissue degradation. Both macrophages and neutrophils express various chemokines throughout disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 are well-supported by scRNA-seq data (Figures 5A-F) showing myeloid cell composition changes and gene expression patterns. The inference about continuous neutrophil infiltration (C62) and amplification of inflammation (C64, C70) are reasonable based on the data, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "AG fibroblasts consistently express M-CSF (Csf1) from day 0 to day 7 and RANKL (Tnfsf11) after ligature placement, positioning them as key sources of osteoclastogenic factors. In the MTA model, CpG ODN induces both M-CSF and RANKL in AG fibroblasts, while LPS does not induce RANKL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 are supported by scRNA-seq data (Figures 7A-F) showing expression patterns of osteoclastogenic factors. The differential response to CpG ODN versus LPS (C89, C90) is well-documented. The inference about AG fibroblast-derived factors inducing osteoclastic activity (C91) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C141",
+      "C143"
+    ],
+    "result": "Type 3 innate lymphoid cells (ILC3s), not Th17 cells, are the primary source of IL-17 cytokines in the inflamed gingiva. ILC3s express Nfil3, Rorc, Il17a, and Il17f, but not Tbx21 or Gata3, and emerge on day 7 after ligature placement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C92-C97, C141, and C143 are well-supported by scRNA-seq data (Figure 8A-C) showing the gene expression signature of ILC3s. The surprising finding that IL-17 expression is in ILCs rather than CD4+ Th cells (C141) is clearly documented and represents a significant discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C151",
+      "C152",
+      "C155"
+    ],
+    "result": "Comparative analysis of Rag2-/- and Rag2-/-Il2rg-/- mice demonstrates that ILC3s contribute to cervical alveolar bone resorption. Rag2-/-Il2rg-/- mice show significantly reduced osteoclast numbers in the cervical PDL zone and better preservation of alveolar bone structure compared to Rag2-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C102, C103, C105, C106, C107, C151, C152, and C155 are supported by microCT analysis (Figure 8D-E) and TRAP staining (Figure 8H-I) comparing knockout mouse models. The differential effects in Rag2-/- versus Rag2-/-Il2rg-/- mice provide strong evidence for ILC3 involvement in cervical bone resorption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "AG fibroblasts and neutrophils produce IL-6 during early and late stages of periodontitis, respectively, while IL-23a is expressed by multiple cell types including AG fibroblasts, myeloid cells, and epithelial cells. Chemokine-receptor associations between ILC3s and both AG fibroblasts and neutrophils appear non-specific, suggesting the collective gingival environment contributes to ILC3 differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C110-C112, C115-C118, C157-C160 are supported by scRNA-seq data (Figures 9A-D). The temporal shift in IL-6 sources (C111, C112, C157) is well-documented. However, the inference about ILC3 induction (C7) and the role of the collective environment (C160) are somewhat speculative, as direct causation is not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The ligature-induced periodontitis model shows progressive tissue degradation: minimal immune cell infiltration on day 0, localized CD45+ infiltration and tissue degradation on day 1, more prominent defects by day 3, and extensive gingival degradation with chronic inflammation by day 7. Alveolar bone loss begins on day 3 and increases by day 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are well-supported by histological images (Figure 1A-D), immunohistochemistry, and microCT data (Figure 1\u2014figure supplement 1). The temporal progression is clearly documented and consistent with prior literature (C27), providing validation of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Gingival epithelial cells comprise at least four distinct subpopulations plus an EMT phenotype group on day 7, with IL-6 expressed by several epithelial subpopulations including the EMT subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C114 are supported by scRNA-seq data (Figure 9A, Figure 9\u2014figure supplement 1A-D) showing epithelial cell heterogeneity and IL-6 expression patterns. This provides important context for understanding IL-6 sources in the gingival environment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "NicheNet analysis identifies potential ligand-target gene associations between lymphocytes (including ILC3s) and both fibroblasts and myeloid cells, with ligand expression more prominent in AG fibroblasts than other fibroblast subpopulations and elevated in neutrophils relative to macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by NicheNet computational analysis (Figures 9E-J). The analysis provides additional evidence for intercellular communication networks, though these remain computational predictions requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C161"
+    ],
+    "result": "AG fibroblasts orchestrate chronic gingival inflammation, at least in early stages, and promote alveolar bone resorption via stimulation of neutrophils and ILC3s, serving as oral immune surveillants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 and C161 represent the main conclusions synthesizing the study's findings. These are well-supported by the collective data showing AG fibroblast characteristics, localization, responses to stimuli, and interactions with immune cells. However, direct causation is inferred rather than experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C41",
+      "C44",
+      "C58",
+      "C70",
+      "C91",
+      "C133",
+      "C134",
+      "C138",
+      "C160",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors propose that AG fibroblasts initiate early leukocyte migration, sense microbial signals through TLRs, and play a previously unrecognized role in innate immune regulation. The AG fibroblast-neutrophil-ILC3 axis may provide insights into periodontitis mechanisms and therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38, C41, C44, C58, C70, C91, C133, C134, C138, C160, C162-C165 represent speculative interpretations and hypotheses based on the data. While the underlying data are sound, these claims involve inferences about causation, mechanism, and therapeutic potential that require additional experimental validation. The authors appropriately use cautious language ('might', 'may', 'suggest').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C59",
+      "C66",
+      "C81",
+      "C98",
+      "C109",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C135",
+      "C137",
+      "C139",
+      "C140",
+      "C142",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C153",
+      "C154",
+      "C156"
+    ],
+    "result": "Background claims about periodontitis, oral immunity, chemokines, ILCs, and knockout mouse models are presented, drawing on established literature and general knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C21, C59, C66, C81, C98, C109, C127-C130, C135, C137, C139, C140, C142, C144-C150, C153, C154, and C156 are background statements supported by citations to prior literature or established scientific knowledge. These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors previously reported that mouse ligature microbial composition differs from human oral microbiota, and that human oral biofilm (not planktonic microbes) induces gingival tissue degradation in the MTA model, suggesting extracellular biofilm components are important in periodontitis initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 refer to the authors' previous work (Kondo et al., 2022) and are appropriately cited. These provide rationale for the MTA model used in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The cervical alveolar bone resorption pattern in the mouse model is consistent with human periodontitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is supported by comparison to human clinical images (Figure 8\u2014figure supplement 2A-B) showing similar patterns of cervical bone loss. This validates the translational relevance of the mouse model findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "Not all gingival fibroblasts have immune-sensing capability; rather, AG fibroblasts represent a distinct subpopulation capable of responding to microbial and tissue damage signals for immune surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C132 are supported by the scRNA-seq data showing distinct fibroblast subpopulations with different functional profiles (Figures 2-3). This represents an important refinement of previous understanding about gingival fibroblast heterogeneity.",
+    "result_type": "MAJOR"
+  }
+]

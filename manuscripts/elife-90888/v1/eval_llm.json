@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors motivate the study by noting that antimalarial drug resistance patterns vary across biogeographic regions, with resistant strains often emerging in low-transmission regions despite most infections occurring in sub-Saharan Africa. They argue that existing models lack consensus on the relationship between transmission intensity and drug resistance, possibly due to overlooking the feedback between antigenic diversity, host immunity, and selection for resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 establish the research context and motivation based on established knowledge and literature review. These claims are well-supported by citations and represent accurate characterizations of the field's current understanding and gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors review prior empirical observations showing that drug resistance in malaria exhibits distinct biogeographic patterns: resistant strains often originate in Southeast Asia and South America, reach near-fixation in these low-transmission regions under drug pressure, show variable frequencies in sub-Saharan Africa, decrease after drug withdrawal in high-transmission regions, but persist in low-transmission regions even decades after drug abandonment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 summarize well-established empirical patterns from the literature, each supported by appropriate citations. These claims accurately represent prior work and establish the empirical phenomena the model aims to explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors establish that antigenic diversity of P. falciparum varies by orders of magnitude across biogeographic zones, with hyper-diverse antigens in sub-Saharan Africa resulting from long-term coevolution. In endemic regions, hosts develop non-sterile immunity and can be reinfected with reduced symptoms, serving as asymptomatic reservoirs. Strain-specific immunity to var genes largely determines parasite clearance rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 accurately summarize established knowledge about malaria antigenic diversity and immunity, each supported by appropriate citations. These claims provide the biological foundation for incorporating strain diversity into the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C61",
+      "C65",
+      "C67",
+      "C82",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors developed a novel ODE compartmental model that tracks hosts by generalized immunity class and drug treatment status, with parasites distributed according to a Poisson distribution within host classes. The model incorporates strain-specific immunity through antigenic diversity (6-447 strains), uses a macroparasitic structure suitable for high MOI variation, and models seasonal transmission with a sinusoidal pattern. Key limitations include assuming single-locus resistance, deterministic dynamics without genetic drift, and random association between resistance and antigenic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C87 describe the model structure and key assumptions. The model formulation is clearly explained with appropriate justification for design choices. The stated limitations (C61, C65, C67) demonstrate appropriate self-critique. The model represents a methodological advance by combining epidemiological and population genetic approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Model simulations show that the range of transmission potential leading to highest prevalence increases with strain diversity. Drug treatment reduces prevalence but maintains the same relationship with strain diversity and transmission potential. Empirical data show Africa has much higher strain diversity than other continents, transmission potential varies widely within continents, and Oceania and South America have lower diversity than expected by transmission potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 present model predictions and empirical observations that are well-supported by Figures 2-3 and compiled literature data. The relationship between diversity, transmission, and prevalence is a key model output that aligns with biological expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The model predicts a negative correlation between parasite prevalence and resistance frequency, regardless of resistance cost or efficacy. Resistance frequency decreases with increasing prevalence except at very low transmission where resistance fixes because wild-type strains cannot sustain transmission under treatment. This negative relationship holds even with zero transmissibility cost and is robust to variations in fitness costs, treatment rates, and resistance efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-C33 present the central finding from model simulations shown in Figure 2. The negative correlation is demonstrated across a wide parameter space (Figure 2C, supplements 3-4), supporting the claim of robustness. The exception at very low transmission (C31) is mechanistically explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36"
+    ],
+    "result": "Empirical chloroquine-resistant marker (pfcrt 76T) data from 1990-2000 supports the negative trend between prevalence and resistance frequency predicted by the model. Samples from Asia and South America cluster at low-prevalence/high-resistance, while Oceania and Africa show wide ranges of both prevalence and resistance frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35-C36 present empirical validation shown in Figure 4. The beta regression analysis (p<2e-16) provides statistical support for the negative relationship. The biogeographic patterns qualitatively match model predictions, though the authors appropriately note this is a qualitative comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Model simulations reveal the dynamics of resistance invasion: drug treatment of wild-type-only infections reduces prevalence and generalized immunity, with more hosts in drug-treated status under higher diversity. When resistance invades, it boosts host immunity to pre-treatment levels. Under low diversity, wild-type parasites quickly go extinct, while under high diversity they coexist with resistant strains in the asymptomatic G2 class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 describe model dynamics shown in Figures 5-6. The temporal trajectories clearly demonstrate the proposed mechanisms. The explanation for coexistence (higher transmissibility of wild-type compensating for drug clearance in asymptomatic hosts) is mechanistically sound and supported by the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Post drug discontinuation, the model predicts resistance remains high in low-diversity regions but decreases rapidly in high-diversity regions. Two mechanisms explain this: (1) resistant genotypes retain higher fitness advantage in low-diversity regions where hosts remain symptomatic, and (2) low transmission coupled with low diversity slows population change due to longer generation intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C44-C47 present model predictions from Figure 7 with mechanistic explanations. The two proposed mechanisms (C46-C47) are logically sound. Figure 7 supplement 1 provides additional support by showing the diversity effect holds even when decoupled from transmission potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Empirical data corroborate model predictions: transition to ACT in Africa (Ghana, Kenya) resulted in fast reduction of resistant genotypes, reduction was minor in Oceania, and resistant genotypes remain near fixation in Southeast Asia and South America >30 years after drug policy changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 present empirical validation from Figure 8 showing longitudinal resistance data across regions. The biogeographic patterns match model predictions, providing strong support for the model's ability to explain real-world dynamics of resistance maintenance and decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A generalized-immunity-only model (without strain-specific immunity) produces a valley phenomenon where resistance is high at both low and high prevalence, qualitatively similar to previous models. Comparison between the full model and generalized-immunity-only model demonstrates that incorporating antigenic diversity is essential for generating the negative relationship between resistance and prevalence observed empirically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 present results from the control model (Figure 9) that demonstrate the importance of the key innovation (strain-specific immunity). The comparison effectively shows that previous models lacking this feature cannot reproduce the empirical pattern, strengthening the argument for the full model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors critique previous models and review evidence on resistance costs: models assuming fixed treatment fractions find resistance unrelated to transmission intensity; resistant parasites have slower replication and lower parasitemia but may partially compensate through higher gametocyte production; within-host competition increases resistance costs in mixed infections compared to single-genotype infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide context for model design choices through literature review. Each claim is supported by appropriate citations. The discussion of resistance costs (C58-C60) justifies the model's parameterization of differential costs in single vs. mixed infections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C69"
+    ],
+    "result": "The authors discuss how multilocus resistance and recombination, not included in the current model, could influence resistance dynamics. Previous models show recombination strongly influences resistance spread/maintenance, preexisting partner-drug resistance promotes artemisinin resistance establishment, high selfing rates in low transmission promote multilocus resistance through linkage, and selection for antigenic variation in high transmission slows resistance spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C69 discuss model limitations and relevant prior work on multilocus resistance. Each claim is appropriately cited. The authors reasonably argue these factors would likely augment rather than reverse the predicted negative correlation, though this remains speculative without explicit modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors acknowledge additional model limitations: parasite burdens are empirically over-dispersed (not fully captured by Poisson within classes), resistant genotypes should initially have limited antigenic backgrounds, the model predicts equilibrium states rather than transient dynamics of new drug introduction, and validation focused on pfcrt 76T because it is essential for chloroquine resistance and chloroquine was widely used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C68, C70-C71 present honest limitations and justify analytical choices. The authors appropriately acknowledge that their population-level over-dispersion through host classes may not fully capture within-class heterogeneity (C66), and that equilibrium predictions may not apply to invasion dynamics (C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors conclude that control protocols should vary by region with no one-size-fits-all approach. In low-prevalence regions like Southeast Asia, intensive drug treatment will not aid long-term prevention and vector control is preferable, while in high-prevalence regions like sub-Saharan Africa, prompt switching between drugs and combination therapies will be robust against resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 present policy recommendations based on model predictions. While the recommendations logically follow from the model results, they represent extrapolations beyond what the model directly demonstrates. The model shows resistance patterns but does not explicitly simulate intervention strategies or their outcomes. These are reasonable inferences but would benefit from additional modeling of specific intervention scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The authors parameterize transmission using empirical estimates: infectivity from malaria patients to mosquitoes is ~0.1, and transmissibility from infected mosquitoes to na\u00efve hosts is ~0.8 for sporozoite density >1000 per mosquito, yielding a combined transmission parameter g=0.08.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 describe parameter estimation from literature with appropriate citations. The calculation of g=0.08 from component probabilities is straightforward and appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

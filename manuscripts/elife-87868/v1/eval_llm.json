@@ -1,0 +1,185 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "SCA-seq uses methyltransferase enzymes (EcoGII or M.CviPI) to label accessible chromatin, with M.CviPI being preferred over EcoGII because high-density m6A modifications from EcoGII impair restriction enzyme activity, while M.CviPI-generated GpC methylation allows efficient digestion by DpnII and other enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C5-C7 provide converging experimental evidence showing that M.CviPI is superior to EcoGII for SCA-seq. The gel electrophoresis data (Figure 1\u2014figure supplement 1) directly demonstrates enzyme inhibition by m6A but not GpC methylation, supporting the methodological choice. The experimental validation is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "SCA-seq captures high-cardinality chromatin interactions with multiple segments per concatemer (14.7% with 2 segments, 14.5% with 3-5 segments, 5.4% with >5 segments), enabling detection of multiplex genome conformations and more distal interactions compared to conventional pairwise methods like Hi-C and similar methods like Trac-loop and HiCAR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C19-C24 collectively demonstrate SCA-seq's ability to capture high-order chromatin interactions. The quantitative data on segment distributions and contact distances are well-documented, and comparisons with other methods (Figure 3\u2014figure supplement 2) support the superiority claims. The median segment length of ~700 bp provides appropriate resolution for the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C32"
+    ],
+    "result": "SCA-seq methylation calling achieves high accuracy (AUC CpG=0.908, GpC=0.984) validated by WGBS, with low background GpC methylation (1.8%) and significant enrichment in treated samples (>10-fold, p<2.6\u00d710\u207b\u00b2\u00b9\u2076), and enzyme labeling efficiency of 79-88% based on CTCF motifs and lambda DNA controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 and C32 provide comprehensive validation of the methylation calling pipeline. The WGBS validation (C10) serves as an appropriate gold standard, the statistical significance of enrichment is strong (C12), and the efficiency measurements use appropriate controls (C32). The AUC values indicate good discrimination between methylated and unmethylated sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "SCA-seq chromatin accessibility measurements show 80% overlap with ATAC-seq/DNase-seq peaks, with sensitivity of 0.73 and specificity of 0.91, and correctly identify expected patterns around CTCF binding sites and TSSs, including nucleosome depletion at active TSSs and reduced accessibility at inactive TSSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 demonstrate that SCA-seq produces chromatin accessibility data consistent with established methods. The 80% overlap with gold standard methods (C13), reasonable sensitivity/specificity metrics (C14), and correct identification of known biological patterns (C16-C18) provide strong validation. The unique peaks in ATAC-seq/DNase-seq having larger p-values (C15) suggests they may be less robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C61"
+    ],
+    "result": "SCA-seq chromatin conformation data shows similar false positive rates to Hi-C, high reproducibility (compartment score correlation ~0.94 between replicates), and moderate correlation with Hi-C for eigenvector (0.91) and insulation scores (0.84), with 66% of concatemers being compartment-specific and 34% non-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 and C61 provide validation of SCA-seq's chromatin conformation capture capabilities. The reproducibility metrics are strong (C26), and the moderate correlations with Hi-C (C27, C61) are acknowledged by the authors as typical for multiplex methods. The discussion addresses potential sources of discrepancy (GC bias, amplification differences). The compartment specificity data (C29) provides additional biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "CTCF binding creates ~50 bp inaccessible regions detectable by SCA-seq and results in higher cardinality and more distal chromatin interactions compared to non-CTCF binding regions, suggesting CTCF facilitates formation of more complex chromatin structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 demonstrate SCA-seq's ability to detect transcription factor footprints and relate them to chromatin structure. C30 is supported by prior literature citations, and C31 provides new data showing the relationship between CTCF binding and interaction complexity. The footprint detection validates the resolution and sensitivity of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SCA-seq reveals heterogeneous chromatin accessibility in spatial interactions, with 29% of concatemers fully inaccessible, 62.2% hybrid (mixed accessible/inaccessible), and 8.8% fully accessible. Hybrid concatemers accumulate at TAD boundaries, contain more distal connections, and are enriched for enhancer/promoter elements, with accessible segments showing preference for high-cardinality interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 present a novel finding about spatial heterogeneity of chromatin accessibility. The quantitative data on concatemer types (C35-C36) is clear, and the spatial distribution patterns (C37) and regulatory element enrichment (C39) provide biological validation. The binomial test filtering approach (described in Methods) addresses potential false positives. This represents a key biological insight enabled by the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Among enhancer-promoter contacts on chromosome 7, 30.3% are accessible-accessible, 18.5% accessible-inaccessible, and 51.2% inaccessible-inaccessible. Accessible enhancer/promoter contact frequency correlates with gene expression, but 51.2% of interactions being accessibility-independent suggests spatial interactions are not the sole factor regulating transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide important insights into enhancer-promoter regulation. The quantitative breakdown (C40) is clear, the correlation with gene expression (C41) validates the biological relevance, and the interpretation about multiple regulatory factors (C42) is appropriately cautious. The data support a nuanced model of transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Orphan CpG islands (oCGIs, 65% of all CGIs) show low CpG methylation and high accessibility, are spatially close to CTCF motifs and active histone marks, and 60% tether regulatory elements. oCGIs preferentially interact with CTCF and promoters (p<2.6\u00d710\u207b\u00b2\u00b9\u2076), with 39% of oCGI-enhancer/CTCF concatemers containing multiple enhancers/CTCF motifs, while most oCGIs tether to single promoters. However, CpG methylation on oCGIs shows weak correlation with promoter accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 present a comprehensive analysis of oCGI function. The spatial associations (C45), methylation patterns (C46), and preferential interactions (C48) are well-documented with appropriate statistics. The finding that oCGIs tether multiple enhancers/CTCF sites but single promoters (C49-C50) is interesting. The weak correlation between oCGI methylation and promoter accessibility (C51) is honestly reported and suggests complexity requiring further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The manuscript establishes context by noting that genomes have 3D organization, most epigenetic studies focus on linear dimensions, active genes localize to euchromatin while silenced genes are in heterochromatin, chromatin accessibility regulates gene expression by controlling factor access, and promoter accessibility can be regulated by enhancer/silencer interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 provide background knowledge and context from the literature. These are appropriately cited and represent established concepts in the field. They serve to motivate the development of SCA-seq but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "SCA-seq costs approximately $1,300 per 40\u00d7 depth human sample, requires an Oxford Nanopore R9.4.1 chip, and has resolution of ~700 bp for chromatin conformation capture versus ~200 bp for conventional chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C62 provide practical information about the method's implementation and limitations. The cost estimate (C59) and technical requirements (C60) are clearly stated. The resolution limitation (C62) is honestly reported and represents an important consideration for experimental design. These are factual statements about the method's characteristics.",
+    "result_type": "MINOR"
+  }
+]

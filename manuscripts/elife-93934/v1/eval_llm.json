@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors assembled a training dataset of 6,353 positive TCR observations across 26 peptides from IEDB, VDJdb, and 10x sequencing data, after filtering, redundancy reduction, and full TCR sequence reconstruction using Stitchr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 provide a detailed, step-by-step account of data collection, filtering, and processing. The numbers are internally consistent and the methodology is clearly described, supporting the final dataset composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors describe the negative data generation strategy (1:5 positive to negative ratio via TCR swapping) and CNN model hyperparameters including dropout rate (0.6), learning rate (0.001), batch sizes, and early stopping criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 document methodological details that are factual statements about the experimental design. These are clearly stated and internally consistent, providing reproducible model training specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "In the NetTCR 2.1 framework, peptide-specific models are superior to pan-specific models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by data shown in Figure 2, which demonstrates performance differences between model types. This establishes the baseline performance that motivates subsequent improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Architectural updates (dropout, increased neurons) and peptide-specific sample weighting significantly improved pan-specific model performance, particularly for less abundant peptides, with the updated pan-specific model outperforming peptide-specific models in AUC but not AUC 0.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by Figure 3 data and statistical tests (p<0.0001 for multiple metrics). The results show consistent improvements with appropriate statistical validation, though the differential performance on AUC vs AUC 0.1 suggests metric-dependent behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Reusing redundant data in training did not improve model performance and significantly reduced pan-specific model performance in some metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by Figure 4 and statistical testing (p=0.0041 for unweighted AUC). This finding contradicts the intuition that more data is always better, providing important guidance for data preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Removing potential outliers identified by model predictions (70th percentile threshold) significantly improved model performance compared to training on the full dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by Figure 5 and statistical tests (p=0.0001 to p<0.0001 across metrics). The approach is novel but relies on using model predictions to filter training data, which could introduce circularity. The improvement is significant but the method's generalizability requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "A pre-trained model combining pan-specific and peptide-specific CNN blocks significantly outperformed both pure pan-specific and peptide-specific models across all metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by Figure 6 and highly significant statistical tests (p<0.0001 to p=0.0021). This represents a key architectural innovation that addresses the complementary strengths of both model types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Integrating TCRbase similarity-based predictions as a scaling factor (\u03b1=10) significantly improved performance across all metrics, particularly at low false positive rates (FPR \u2264 0.15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by Figure 7 and statistical testing (p<0.0001). The integration of similarity-based and ML approaches is well-validated, though the optimal \u03b1 varies by peptide and partition, suggesting some instability in the scaling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The model clearly outperforms random baseline in peptide specificity tests, with the percentage of correctly chosen pairs strongly correlating with AUC (PCC=0.740) and AUC 0.1 (PCC=0.830).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by Figure 9 and correlation analysis. The strong correlations provide validation that the model's binding predictions translate to peptide specificity, though 7 low-performing peptides were excluded from this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "In leave-one-out experiments, models showed slightly better than random performance for AUC but nearly random performance for AUC 0.1, indicating poor generalization to completely unseen peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by Figure 11 and supplement. This negative result is important as it demonstrates the fundamental limitation of current approaches for truly novel peptides, consistent with prior work (C14, C16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In leave-most-out experiments, all models showed non-random performance with as few as 5 positive observations, with the TCRbase ensemble achieving AUC ~0.8 with 15+ training points, while CNN models benefited more from increased data than TCRbase alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by Figure 12 data. This is a key finding showing that acceptable performance can be achieved with far fewer observations (15) than previously estimated (~150, C13), though this relies on pre-training on other peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "NetTCR-2.2 Peptide significantly outperformed NetTCR 2.1 on the IMMREP 2022 dataset and achieved state-of-the-art performance (AUC=0.8476) comparable to the best benchmark model TCRex \u03b1\u03b2 (AUC=0.8473).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by Figure 13 and statistical tests (p=0.0034 to p=0.0367). This demonstrates competitive performance on an independent benchmark, validating the improvements on external data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The pre-trained model unexpectedly underperformed on the original IMMREP dataset, which upon inspection contained swapped negatives from test peptides in training data and high redundancy between train/test sets (PCC=0.428 between redundancy and AUC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by Figure 13, Table 4, and correlation analysis. This critical evaluation of the benchmark dataset reveals data leakage issues that particularly affect pan-specific models, explaining the unexpected results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "After applying proper redundancy reduction and swapped negative generation to the IMMREP dataset, the pre-trained models again outperformed peptide-specific models, though overall performance dropped, especially for peptides with high redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by Figure 14 and Supplementary file 2. This validates the authors' modeling approach while revealing that the original benchmark overestimated performance due to data leakage, an important methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "TCR-peptide interaction prediction has significant therapeutic implications, but is hampered by limited paired-chain data skewed toward well-studied epitopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish the motivation and context for the work, supported by general knowledge and inference from the field's challenges. These are well-established facts in the immunology community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The NetTCR 2.2 framework integrating pan-specific, peptide-specific, and similarity-based approaches achieves state-of-the-art performance and acceptable accuracy with as few as 15 positive TCRs per peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 summarize the main findings supported by multiple experiments (Figures 6, 7, 12, 13). This represents the core contribution of the manuscript, validated across multiple datasets and experimental setups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors review prior work establishing TCR structure, the success of MHC prediction models, challenges in TCR specificity prediction including data scarcity and noise, and the benefits of paired-chain data with CDR1/2 information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C19 provide background supported by appropriate citations to established literature. These claims accurately represent prior work and establish the scientific context, though they are primarily literature review rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript establishes that while GAL4/UAS is the dominant system for Drosophila genetic manipulation, there is a significant resource gap for tissue-specific LexA and QF driver lines. Existing collections (FlyLight, StanEx, BDSC) are limited in number, tissue coverage, and specificity, with most lines showing expression in multiple tissues or being restricted to neuronal applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 collectively document the current state of available binary expression systems through citations to published literature and knowledge of stock center resources. The claims accurately describe limitations of existing collections including tissue specificity issues (C16-C17), neuronal bias (C12-C13, C22), and incompatibility issues (C14). This establishes the rationale for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors generated 44 new tissue-specific LexA-GAD and QF2 driver lines by CRISPR-mediated homology-directed repair targeting 23 genes. They used two cloning methods (long HA and drop-in) and selected genes with well-characterized expression patterns covering major fly organs. All knock-ins were verified by PCR and sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C58 describe the experimental strategy and execution, supported by Table 1 showing successful generation of knock-ins for nearly all target genes. The methodology is clearly documented with appropriate citations (C44-C46, C51) and verification steps (C56). The choice of LexA-GAD over p65 (C32) and QF2 over QF (C33) is justified by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Most T2A-LexA-GAD and T2A-QF2 knock-in lines show highly tissue-specific expression patterns that are comparable between the two systems. However, exceptions exist: in daughterless (da) and nubbin (nub) genes, T2A-LexA-GAD shows expected expression while T2A-QF2 shows incomplete expression in correct tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are directly supported by imaging data in Figure 2, showing expression patterns for both systems across multiple tissues. The exceptions (da and nub) are clearly documented with specific figure references (C61-C62: Figure 2A, 2B, 2LL, 2MM), demonstrating systematic comparison of the two systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The 3XP3-RFP transformation marker causes occasional misexpression of LexA-GAD or QF2 in larval gut and anal pad. Removal of the 3XP3-RFP cassette by Cre-Lox recombination eliminates this misexpression while preserving intended expression patterns. The authors removed the marker from 32 of 41 driver lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 are supported by Figure 3 showing misexpression with the marker (C67) and its elimination upon removal (C70). The systematic removal from 32/41 lines (C72) is documented in Table 1. This demonstrates rigorous quality control and addresses a technical artifact affecting expression specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors developed double driver vectors that express both QF2 and LexA-GAD from a single construct, reducing the number of required injections. These vectors successfully drive simultaneous expression of both activators in target tissues (elav, hh, dpp, Ilp2), though T2A-QF2 shows reduced expression in the wing pouch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C85 describe the double driver strategy with clear documentation in Figure 4. The functional validation shows both activators are expressed (C78, C80, C82, C84) with consistent observation of QF2 reduction in wing pouch (C81, C83). This represents an innovative efficiency improvement, though with a reproducible limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors demonstrated that single T2A-QF2 or T2A-LexA-GAD lines can be derived from double drivers using FLP/FRT recombination. Heat shock of hh and dpp double driver lines produced recombinants at frequencies of 9-30% per parent, verified by both fluorescence imaging and PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 describe the FRT/FLP strategy with quantitative data (C91-C94) and dual verification methods (C95-C96). Figure 5 provides visual confirmation and PCR validation. The mechanism is well-established (C86-C87, citing Bosch et al., 2015), and the experimental execution is clearly documented with specific recombination frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors generated pLexAop-WALIUM20 and pQUAS-WALIUM20 shRNA expression vectors and demonstrated their functionality. LexA-GAD drivers produced stronger knockdown phenotypes than QF2 drivers for forked and ebony genes, with the da T2A-LexA-GAD knock-in showing the strongest phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 are supported by Figure 6 showing phenotypic comparisons. The 13X LexAop design (C98-C99) is justified by citation to Pfeiffer et al., 2010. Quantitative phenotypic differences are clearly documented (C103-C105) with visual evidence, demonstrating that both systems work but with different efficiencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "For some target genes, T2A-QF2 showed incomplete expression patterns compared to expectations. T2A-QF2 was particularly difficult to express in the wing pouch, and gut-specific genes (mex1, Myo31Df) showed broader LexA-GAD expression than QF2. The authors speculate this may be due to toxicity or sequence-dependent effects on regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 document systematic differences between the two systems observed across multiple genes. The wing pouch issue (C121) is consistently observed in multiple lines (nub, hh, dpp). The speculation about mechanisms (C124-C125) is appropriately tentative and supported by citation. These observations are important for users choosing between systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "This collection represents the first systematic effort to generate LexA-GAD and QF2 drivers covering major organ systems of Drosophila. The protocol is adaptable and can be guided by scRNAseq data to identify tissue-specific genes, as demonstrated with oenocyte-specific genes CG9458 and CG17560.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 establish the novelty and utility of the resource. The unique focus on organ system coverage (C107) is supported by Table 1. The scRNAseq-guided approach (C110-C111) is demonstrated with specific examples and citation to Li et al., 2022. The adaptability claims (C108, C112-C113) are reasonable inferences from the successful generation of diverse lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The vectors are compatible with both traditional long homology arm and drop-in cloning methods. The drop-in strategy is particularly effective with 100% cloning success rate, minimal troubleshooting, high knock-in rate, and low cost (~$100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 describe methodological advantages supported by citations to Kanca et al., 2019 and 2022. The 100% cloning success rate (C116) is a strong claim but is qualified as 'in our hands' and supported by the authors' experience documented in Table 1. The cost estimate (C119) provides practical information for potential users.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Expression patterns of knock-in lines are expected to differ from enhancer trap GAL4 lines due to different generation methods. Despite the 3XP3-RFP marker causing occasional misexpression, the generated stocks show high tissue specificity based on larval imaging. The authors prioritized marker removal and advise users to do the same.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 provide important caveats and recommendations. The expectation of differences from GAL4 lines (C126) is a reasonable inference. The tissue specificity claim (C127) is supported by extensive imaging in Figure 2. The marker removal recommendation (C130) is justified by the misexpression data in Figure 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Comparison of knockdown efficiency showed that the 13XLexAop vector was more effective than the 5XQUAS vector for forked and ebony shRNAs, though both induced knockdown. Based on these results, TRiP is generating ~100 LexAop shRNA lines targeting commonly ordered genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by phenotypic data in Figure 6. The comparative effectiveness (C131) is clearly demonstrated, and the ongoing resource generation (C133) represents a concrete response to the experimental findings. This establishes the practical utility of the LexA system for RNAi applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C136"
+    ],
+    "result": "The authors generated a comprehensive toolkit including double driver vectors, single driver lines, shRNA expression vectors, and protocols that, combined with existing GAL4 lines, will expand the ability to modulate gene expression in multiple tissues simultaneously. A library of shRNA lines is being generated as a community resource.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 and C136 summarize the overall contribution. The double driver design (C38-C40) is validated experimentally. The shRNA evaluation (C41) is demonstrated in Figure 6. The ongoing library generation (C42, C133) represents a commitment to community resources. This synthesis accurately reflects the scope and impact of the work.",
+    "result_type": "MAJOR"
+  }
+]

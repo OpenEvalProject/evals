@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C30",
+      "C31",
+      "C72"
+    ],
+    "result": "The authors prove analytically that in a single cycle threshold-linear network (TLN), an odd number of inhibitory nodes and sufficiently strong connections are necessary conditions for oscillations to emerge. When connections are weak, the system has a unique globally stable fixed point regardless of loop sign. When connections are strong enough and the number of inhibitory nodes is odd, the system has no stable fixed point and exhibits limit cycle, quasi-periodic, or chaotic behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12, C13, C14, C30, C31, and C72 collectively present the core analytical result (Theorem 2) with rigorous mathematical proof using dynamical systems theory. The theorem establishes both necessary conditions (odd inhibitory nodes) and sufficient conditions (strong connections) for oscillations, with clear characterization of system behavior in different parameter regimes. The proof is stated to be provided in the appendix.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C73"
+    ],
+    "result": "Oscillations in a single cycle threshold-linear network can be quenched by introducing positive external input to excitatory nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C73 present an analytical result (Remark 3) showing that positive external input to excitatory nodes can eliminate oscillations. This is proven analytically and represents an important control mechanism for oscillatory dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors provide intuitive explanations for why specific small network motifs can or cannot oscillate based on the number of inhibitory connections. Two mutually connected excitatory or inhibitory populations cannot oscillate, but an excitatory-inhibitory (EI) pair can. In three-node cycles, motifs with one or three inhibitory connections can oscillate, while those with zero or two inhibitory connections cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 provide intuitive reasoning supported by citations (Ermentrout 1992, Ledoux and Brunel 2011, Rabinovich et al. 2001) and illustrated in Figure 1a. These examples build intuition for the general odd-cycle rule and are consistent with established network dynamics principles. The reasoning is logical and well-supported by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Wilson-Cowan model simulations demonstrate that III networks (odd inhibitory connections) show sustained oscillations while EII networks (even inhibitory connections) show only transient oscillations across a wide range of parameters. Oscillation frequency depends on synaptic delays (decreases with increasing delay), synaptic weights (generally decreases with increasing strength), external input (non-monotonic relationship with mid-range input producing maximum frequency), and self-inhibition (increases frequency until node silencing occurs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 present systematic numerical simulation results shown in Figure 3 and supplementary figures. The simulations test the analytical predictions in a more realistic model and characterize how various parameters affect oscillation properties. The results are clearly documented with appropriate figures and parameter tables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C53",
+      "C54",
+      "C55",
+      "C84",
+      "C85"
+    ],
+    "result": "Analysis of the cortico-basal ganglia (CBG) network structure identifies six potential oscillatory cycles with odd numbers of inhibitory connections: Proto-STN, STN-GPi-Th-cortex, STN-Arky-D2-Proto, Proto-Arky-D2, Proto-FSN-D2, and Proto-GPi-Th-Cortex-D2. Among 246 possible subnetworks (2-7 nodes), 96 contain one or more of these oscillatory loops. GPe (Proto or Arky) is involved in 81 of 88 identified oscillatory cycles, while STN is involved in 66.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, C53-C55, C84-C85 present a systematic enumeration of network motifs in the CBG based on the odd-cycle rule. The analysis is clearly documented with specific numbers and illustrated in Figure 4 and supplementary figures. The structural analysis is straightforward application of graph theory to the known CBG connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C69"
+    ],
+    "result": "Wilson-Cowan simulations of a four-node BG motif show that Proto-STN and Proto-D2-Arky subnetworks compete to generate oscillations depending on relative inputs to STN and D2-SPNs. When D2-SPN to Proto projections are removed, only Proto-STN generates oscillations (high-frequency beta, narrow input range). When STN output is removed, Proto-D2-Arky generates oscillations (lower frequency due to three-synapse loop). This demonstrates that the CBG network can oscillate even without STN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 and C69 present simulation results from systematic 'lesion' experiments in the Wilson-Cowan model (Figure 4c-e). The simulations test specific predictions about which cycles dominate under different input conditions and demonstrate input-dependent competition between oscillatory mechanisms. The results are clearly illustrated and logically interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Spiking neuron model simulations show that Proto-D2-FSN and Proto-D2-Arky loops can generate beta oscillations. When STN is inhibited in the Proto-D2-Arky mode, Proto neurons maintain beta oscillations while STN oscillations diminish. In contrast, STN inhibition abolishes oscillations in both STN and Proto when the STN-Proto loop dominates. The authors speculate that in rodents, stronger cortical input to D2-SPNs than STN may explain why oscillations survive STN inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 present spiking neuron simulation results (Figure 5) that validate the Wilson-Cowan findings in a more biologically realistic model. The simulations clearly demonstrate differential effects of STN inhibition depending on which cycle dominates. However, C70 is speculative about rodent-specific input patterns, which is appropriately acknowledged as a hypothesis rather than demonstrated fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors review prior work on oscillations in Parkinson's disease, noting that the STN-GPe subnetwork has traditionally been considered the key oscillator, but recent experiments by Crompe et al. 2020 showed that GPe inhibition (but not STN inhibition) is sufficient to quench oscillations, challenging previous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C48-C52 accurately summarize prior literature with appropriate citations. The apparent contradiction between traditional views and recent experiments (Crompe et al. 2020) is correctly identified and motivates the current study. These are background claims supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors conclude that which specific cycle generates oscillations in the basal ganglia depends on the input structure to different nodes. When STN receives stronger input than D2 neurons, STN-GPe oscillates; when D2 neurons receive stronger input, the D2-Proto-Arky cycle dominates. STN is not necessary for BG oscillations. The authors recommend estimating inputs to different nodes to identify key nodes underlying PD oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 present conclusions drawn from the simulation results (C56-C69). The conclusion that STN is not necessary is supported by both Wilson-Cowan and spiking neuron simulations showing oscillations can persist without STN. The recommendation in C90 is a logical extension of the findings, though it represents future work rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors position their work as extending previous results by Snoussi 1998 and Gouz\u00e9 1998 to threshold-linear networks, and note that recent work by Ortone et al. 2023 and Azizpour Lindi et al. 2023 also invokes the D2-Proto-Arky cycle to explain BG oscillations without STN. The authors claim their work provides the necessary theory to explain these recent results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C91-C93 appropriately contextualize the current work relative to prior theoretical work and recent related studies. The claim that this work provides theoretical foundation for recent computational studies is reasonable given the analytical results presented, though the exact relationship would require detailed comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors acknowledge that their analytical results assume no delays in the network, though delays can significantly affect oscillations. In their simulations with biologically realistic delays (shorter than neuronal time constants), delays only determine oscillation frequency without affecting the main results. However, the authors cannot predict effects when delays exceed nodal time constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 clearly state the assumptions and limitations of the analytical work. C76 presents a conclusion from simulations that is appropriately qualified, and C77 honestly acknowledges the limits of what can be concluded. This represents appropriate scientific caution about the scope of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose an 'Oscillations Sign Rule' stating that the effect of stimulation on oscillations can be predicted by multiplying the sign of the node (excitatory=+, inhibitory=-) with the sign of the stimulation (excitatory=+, inhibitory=-). This rule scales to larger networks and can be combined with the 'Odd Cycle Rule' to predict whether stimulating a node will generate oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 propose a conceptual framework based on prior work (C78-C79 cite Kumar et al. 2011, Ledoux and Brunel 2011) and the current results. While the rule is intuitive and consistent with known principles, the claims about scalability (C81) and completeness when combined with the odd cycle rule (C82) are not rigorously demonstrated. These represent useful heuristics but lack formal proof or systematic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The authors suggest that biological properties like spike frequency adaptation, rebound spiking, and short-term synaptic plasticity can be absorbed into network structure as additional inhibitory or excitatory connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 proposes a conceptual approach to incorporating biological complexity into the structural framework. While this is a reasonable conceptual statement, it is not demonstrated or validated. The extent to which complex biological properties can be accurately represented as simple connection sign changes is unclear and would require careful analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors argue that oscillatory dynamics and the odd cycle rule appear in many systems beyond neural networks (chemical, biological, social systems) and that insights from their analytical work can be extended to these other domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are appropriately supported by citations showing the odd cycle rule appears in diverse systems. C95 correctly notes the historical origin of Thomas' conjecture in gene regulatory networks. C96 is speculative about applicability but is appropriately qualified ('we think') and represents a reasonable hypothesis given the generality of the mathematical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10",
+      "C11"
+    ],
+    "result": "The authors provide background on oscillations in real-world systems, their functional and dysfunctional roles (particularly in the brain and Parkinson's disease), limitations of existing analytical tools (Poincar\u00e9-Bendixson theorem), practical challenges in measuring network parameters, and prior theoretical work (Thomas' conjecture).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C7, C10-C11 present background information supported by appropriate citations and established knowledge. These claims accurately represent the state of the field and motivate the current work. They are standard background claims that set up the research question.",
+    "result_type": "MINOR"
+  }
+]

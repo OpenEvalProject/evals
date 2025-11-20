@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "An unbiased genetic screen identified loss-of-function mutations in egl-9 and rhy-1 that dramatically increase expression of a Pcdo-1::CDO-1::GFP transgene. These genes encode components of the hypoxia-inducible factor (HIF-1) pathway and are necessary for normal transcriptional repression of cdo-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 describe a forward genetic screen that identified multiple independent alleles in egl-9 and rhy-1, with experimental validation showing dramatic induction of cdo-1 transcription (Figure 1D-E). The identification of multiple independent alleles and functional validation with reference alleles provides strong support for causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The Pcdo-1::CDO-1::GFP fusion protein is functional and rescues cdo-1 loss-of-function, while an active-site mutant does not rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 demonstrate functionality through genetic rescue experiments (Figure 1\u2014figure supplement 1), showing that the wild-type fusion restores Moco-deficient lethality while the C85Y active-site mutant does not. This validates that the reporter reflects endogenous CDO-1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Genetic epistasis experiments establish that rhy-1, cysl-1, and egl-9 function in a negative-regulatory cascade controlling HIF-1 activity, which transcriptionally activates cdo-1. The pathway involves H2S-modulated inhibition of EGL-9 by CYSL-1, and EGL-9-mediated prolyl hydroxylation of HIF-1 leading to VHL-1-dependent degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 describe epistasis experiments (Figure 2) showing that egl-9 induction requires hif-1 but not cysl-1, while rhy-1 induction requires both. This establishes the genetic pathway order. The molecular mechanisms are supported by prior work (citations provided), making this a well-supported result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "HIF-1 directly binds the cdo-1 promoter and activates its transcription. RNA-seq data shows egl-9(-) mutants have 8-fold increased cdo-1 mRNA in a hif-1-dependent manner, and ChIP-seq demonstrates direct HIF-1 binding to the cdo-1 promoter containing three HIF-binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 integrate published RNA-seq and ChIP-seq data with the genetic findings. The convergence of transcriptional induction, HIF-1 dependence, direct promoter binding, and presence of consensus binding motifs strongly supports that cdo-1 is a direct HIF-1 transcriptional target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C66"
+    ],
+    "result": "High levels of cysteine promote cdo-1 transcription in C. elegans. Supplementation with 100 \u03bcM cysteine causes 3.6-fold induction of Pcdo-1::GFP, and also increases CDO-1::GFP protein accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C66 demonstrate cysteine-induced transcription (Figure 3A-C, Figure 4\u2014figure supplement 2). The effect is statistically significant and consistent with mammalian CDO1 regulation. The magnitude is modest compared to genetic perturbations, which the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The RHY-1/CYSL-1/EGL-9/HIF-1 pathway plays a critical physiological role in cysteine homeostasis. cysl-1(-) and hif-1(-) mutants show 100% lethality at 100 \u03bcM cysteine, while egl-9(-) and rhy-1(-) mutants are partially viable at 1000 \u03bcM cysteine (lethal to wild-type).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate opposing phenotypes in cysteine tolerance (Figure 3D-F). The requirement of hif-1 and cysl-1 for survival, and the resistance conferred by egl-9 or rhy-1 loss, establish a clear physiological role for this pathway in cysteine homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cysteine acts in a pathway with egl-9 but operates in parallel to rhy-1. High cysteine does not further induce Pcdo-1::GFP in egl-9(-) mutants but does significantly induce it in rhy-1(-) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 describe epistasis experiments with cysteine treatment (Figure 3A-B). The lack of additivity between cysteine and egl-9(-) suggests they act in the same pathway, while additivity with rhy-1(-) suggests parallel action. This is a logical interpretation of the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "cdo-1 is not necessary for survival under high cysteine conditions, suggesting alternate pathways promote cysteine homeostasis. The authors propose HIF-1 activates additional pathways beyond cdo-1 for cysteine tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 show cdo-1(-) mutants are not cysteine-sensitive (Figure 3D-F), contrasting with the requirement for hif-1. This paradox is appropriately interpreted as evidence for additional HIF-1-dependent pathways. The conclusion is logical given the data, though the additional pathways remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "A CRISPR-generated CDO-1::GFP fusion protein from the endogenous locus is functional and shows prominent expression in the hypodermis, particularly in Hyp7 cells. Expression is increased by egl-9(-) or rhy-1(-) mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C67-C68 describe the endogenous CDO-1::GFP allele with functional validation (Figure 4A-C) and expression analysis (Figure 4B, Figure 4\u2014figure supplement 1). The functional rescue experiment and consistent regulation by egl-9/rhy-1 validate this as a physiologically relevant reporter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Hypodermal-specific expression of cdo-1 is sufficient to rescue cdo-1(-) mutant suppression of Moco-deficient larval arrest in an enzymatically-dependent manner, establishing the hypodermis as a critical tissue for sulfur amino acid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 demonstrate tissue-specific rescue using a hypodermal promoter (Figure 4D). The rescue requires CDO-1 enzymatic activity (C85Y mutant fails to rescue), establishing sufficiency of hypodermal cdo-1 for sulfur amino acid metabolism. This is strong evidence for tissue-specific function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Genetic activation of HIF-1 by egl-9(-) loss causes synthetic sickness with a hypomorphic suox-1 allele, demonstrating increased CDO-1 activity and sulfite production. This synthetic phenotype requires hif-1, cdo-1, and cth-2, but not cysl-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 use a sensitized genetic background (suox-1 hypomorph) to demonstrate functional consequences of HIF-1 activation (Table 1). The suppression by cdo-1 or cth-2 loss, and dependence on hif-1, strongly support that HIF-1 activation increases sulfur amino acid flux through CDO-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "rhy-1 plays a dual role in sulfur amino acid metabolism: as a regulator of HIF-1 activity and as a downstream effector required for sulfur amino acid metabolism. rhy-1(-); suox-1 double mutants are healthy, but rhy-1 is required for egl-9(-)-induced sickness in the suox-1 background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 demonstrate unexpected epistasis where rhy-1(-) suppresses egl-9(-); suox-1 synthetic sickness (Table 1). Combined with evidence that HIF-1 induces rhy-1 transcription 50-fold, this supports a dual role. The interpretation is logical and supported by prior work (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "EGL-9 has prolyl hydroxylase domain-independent and VHL-1-independent activities that repress cdo-1 transcription. The egl-9(H487A) prolyl hydroxylase mutant and vhl-1(-) null cause modest cdo-1 induction compared to egl-9(-) null, and do not cause synthetic sickness with suox-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 demonstrate that canonical hypoxia signaling components are partially dispensable for cdo-1 regulation (Figure 5C-D, Table 1). The incomplete activation by H487A or vhl-1(-) compared to egl-9(-) null, and lack of synthetic sickness, support non-canonical regulation. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C131"
+    ],
+    "result": "Two distinct pathways activate HIF-1 transcription: (i) a hypoxia-sensing pathway dependent on vhl-1 and EGL-9 prolyl hydroxylase activity promoting HIF-1 in the intestine, and (ii) an H2S-sensing pathway independent of vhl-1 and prolyl hydroxylase activity promoting HIF-1 in the hypodermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C127, C131 synthesize current findings with prior work to propose tissue-specific HIF-1 activation pathways. The model is supported by tissue-specific expression patterns, differential requirements for vhl-1 and prolyl hydroxylase activity, and stimulus-specific responses (hypoxia vs H2S). This is a well-supported integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors propose a homeostatic model where H2S acts as a signaling molecule to promote cysteine catabolism. Excess cysteine produces H2S, which activates HIF-1 via RHY-1/CYSL-1/EGL-9, inducing cdo-1 transcription and CDO-1-mediated cysteine degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C139 propose a negative feedback model (Figure 6). While the genetic pathway is well-established and H2S production from cysteine is known (C136), direct evidence that cysteine-induced cdo-1 activation is mediated by H2S is not provided. The model is plausible and consistent with data, but remains speculative without direct H2S measurements or manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The authors suggest CDO1 transcription in mammals might be governed by HIF1\u03b1 in response to cysteine, noting that all pathway components are conserved in mammalian genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 extrapolate C. elegans findings to mammals. While pathway conservation is documented (C105), direct evidence for HIF1\u03b1 regulation of mammalian CDO1 is not provided. This is appropriately presented as speculation for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors compare their findings to prior work showing EglN1 as a cysteine sensor in triple negative breast cancer, noting that in C. elegans high cysteine inhibits EGL-9 (opposite to TNBC), and that cdo-1 regulation is largely independent of prolyl hydroxylase activity and VHL-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C150 appropriately compare and contrast findings with Briggs et al., 2016. The authors correctly note mechanistic differences (opposite cysteine effects, different pathway dependencies) while suggesting the roles may be connected. This is a fair assessment of similarities and differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on cysteine biology and sulfur amino acid metabolism, including cysteine's essential functions, toxicity at high levels, the CDO1 pathway, regulation of CDO1, and the role of CDO-1 in Moco/sulfite oxidase deficiency diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 provide established background information supported by appropriate citations. These claims contextualize the study but do not represent new findings. They are well-supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Summary of HIF-1 function in hypoxia response and the main findings of this study regarding HIF-1 regulation of cdo-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C110 summarize established HIF-1 biology and the key findings of the current study. These are appropriately supported by data presented in the manuscript and prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C128",
+      "C130",
+      "C137",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Speculative discussion of potential physiological contexts for HIF-1/cysteine regulation, including differential O2 requirements of EGL-9 and CDO-1, collagen synthesis during molting, immune responses, and developmental signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112, C128, C130, C137, C151-C155 present speculative hypotheses about physiological contexts. While these are reasonable extrapolations supported by cited literature, they represent future directions rather than demonstrated findings. The speculation is appropriate for a Discussion section.",
+    "result_type": "MINOR"
+  }
+]

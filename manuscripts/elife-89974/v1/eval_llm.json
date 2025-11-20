@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Pufferfish TrGSDME is cleaved by both pufferfish and human CASP3/7 at the DAVD motif. TrGSDME belongs to the GSDMEa lineage and is specifically cleaved by TrCASP3/7 and HsCASP3/7 in a dose-dependent manner at the tetrapeptide motif 255DAVD258, as demonstrated by mutagenesis showing D255R and D258A mutants are resistant to cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39, C41-C48 collectively demonstrate that TrGSDME is cleaved by both fish and human CASP3/7 through multiple lines of evidence: phylogenetic classification (C41), direct cleavage assays (C42, C45), inhibitor studies (C46), and mutagenesis confirming the DAVD cleavage site (C47-C48). The data in Figures 1A-J provide strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "TrGSDME-NT induces pyroptosis when expressed in cells, and CASP3/7 cleavage is required for TrGSDME activation. Expression of TrGSDME-NT causes cell death with LDH release, membrane swelling, and rupture, while full-length TrGSDME requires co-expression with TrCASP3/7 for pyroptosis induction, which is blocked by caspase inhibitors and cleavage site mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 provide comprehensive evidence from cell-based assays (Figure 2) showing that TrGSDME-NT is pyroptotic, full-length TrGSDME requires caspase cleavage for activation, and this can be blocked by inhibitors or mutations. The data include morphology, LDH release, time-lapse imaging, and molecular analysis, providing strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C58",
+      "C59"
+    ],
+    "result": "Human GSDME is cleaved by CASP3 but not by CASP7, despite both caspases recognizing the same DxxD motif. HsCASP7 exhibits proteolytic activity toward the DMPD motif but fails to cleave HsGSDME, while TrCASP7 can cleave HsGSDME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40, C58-C59 are well-supported by experimental data in Figures 1 and 3 showing differential cleavage patterns. The observation that HsCASP7 has activity toward the DMPD peptide but not the full protein suggests substrate discrimination beyond simple motif recognition, setting up the mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The C-terminal domain of GSDME determines cleavability by CASP7. Domain-swapping experiments show that chimeric HsNT-TrCT is cleaved by HsCASP3/7, while TrNT-HsCT is cleaved only by HsCASP3, and deletion of structural regions in HsGSDME-CT does not confer HsCASP7 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by chimera experiments in Figure 3. The domain-swapping approach provides clear evidence that the CT domain controls CASP7 recognition. However, the structural analysis (C60) is based on modeling rather than experimental structures, which introduces some uncertainty about the specific structural features involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The p10 subunit of CASP7 dictates substrate specificity toward GSDME. Chimeric caspases with swapped p10/p20 subunits show that Hsp20-Trp10 gains ability to cleave HsGSDME while Trp20-Hsp10 loses this ability, despite maintaining comparable enzymatic activity toward tetrapeptide substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are well-supported by the chimera experiments in Figure 4. The observation that p10 swapping changes substrate specificity without affecting tetrapeptide cleavage activity (C67) is particularly important, indicating that p10 mediates protein substrate recognition beyond the active site. The data provide strong evidence for the role of p10.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "A single residue (S234 in HsCASP7, N245 in TrCASP7) in the p10 subunit is the key determinant of CASP7 substrate discrimination. The S234N mutation confers HsCASP7 the ability to cleave HsGSDME, while N245S reduces TrCASP7 cleavage of HsGSDME, without affecting cleavage of other CASP7 substrates or TrGSDME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77, C81-C85 are strongly supported by systematic mutagenesis in Figure 5. The reciprocal effects of S234N and N245S mutations (C72-C73), specificity for HsGSDME but not TrGSDME (C74, C81), and retention of activity toward other substrates (C77) provide compelling evidence. The cellular validation (C82-C85) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "HsGSDME cleavage by CASPs does not involve exosite interaction like GSDMD. The exosite region found in CASP1/4 is not conserved in HsCASP7, and mutations at residues Q276, D278, and H283 do not enable HsCASP7 to cleave HsGSDME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by structural analysis and mutagenesis in Figure 5. The negative result (C79) combined with structural differences (C78) provides reasonable evidence against exosite involvement. However, the conclusion (C80) is somewhat speculative as it's based on absence of evidence rather than definitive proof of an alternative mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The conserved Asn residue at position 208 in HsCASP3 is critical for HsGSDME cleavage. The N208S mutant exhibits much weaker cleavage of HsGSDME both in vitro and in cells, indicating this residue plays an analogous role to S234 in CASP7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by sequence analysis and mutagenesis in Figure 6A-D. The parallel between CASP3 N208 and CASP7 S234 strengthens the overall model. However, the effect is described as 'much weaker' rather than abolished, suggesting the residue is important but may not be the sole determinant in CASP3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C123",
+      "C124"
+    ],
+    "result": "The key Asn residue is highly conserved in vertebrate CASP3 and in non-mammalian CASP7, but is replaced by Ser in primate CASP7. Sequence analysis shows the Asn is conserved in teleost, amphibians, reptiles, and birds CASP7, and in non-primate mammals, but is replaced by Ser in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C91-C94, C123-C124 are well-supported by comprehensive sequence analysis in Figure 6. The evolutionary pattern is clearly documented across multiple vertebrate lineages. The data provide strong support for the evolutionary divergence of CASP7 in primates, though the functional significance requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Mouse CASP7 cleaves human GSDME but not mouse GSDME, indicating intra-species barriers and independent evolution. MmCASP7 cleaves HsGSDME in a dose-dependent manner that is abrogated by N234S mutation, but neither MmCASP7 nor its mutant cleaves MmGSDME, while MmCASP3 cleaves MmGSDME efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C95-C100 are supported by experimental data in Figure 6G-I. The cross-species cleavage pattern provides strong evidence for independent evolution of CASP7 and GSDME in mammals. The observation that mouse CASP7 cannot cleave mouse GSDME despite having the conserved Asn is particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "TrGSDME cleavage depends on the tetrapeptide motif and lacks a motif-independent mechanism like GSDMD. Mutation of either P4 or P1 residue of the DAVD motif makes TrGSDME resistant to CASP3/7, suggesting GSDME has a distinct enzyme-substrate engagement mode involving the CT domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by mutagenesis data in Figure 1 and comparison with cited literature (C116). The conclusion about distinct engagement modes (C117) is reasonable but somewhat inferential, as it's based on negative results (lack of motif-independent cleavage) rather than direct demonstration of the alternative mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The p10 subunit, specifically residue 234/245, rather than catalytic or substrate-binding motifs, determines CASP7 substrate discrimination. The catalytic motifs (SHG, QACRG) and substrate-binding motifs (SWR, GSWF) are conserved and not involved in discrimination, while chimeric HsCASP7 with TrCASP7 p10 gains cleavage ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 are well-supported by the systematic dissection in Figures 4-5. The negative results for conserved motifs (C118, C120) combined with positive results for p10 swapping (C121) and specific residue identification (C122) provide strong convergent evidence for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C131"
+    ],
+    "result": "The functional divergence of CASP7 from CASP3 in mammals may reflect specialization in programmed cell death regulation. The authors speculate that CASP7 divergence allows it to engage in other processes while restricting GSDME activation to CASP3, and that mutation-mediated functional alteration enabled CASP specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C127, C130-C131 are speculative interpretations about evolutionary and physiological significance. While the speculation is reasonable given the data, these claims lack direct experimental support. The manuscript provides no functional data demonstrating the proposed physiological consequences or testing alternative hypotheses about selective pressures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C44"
+    ],
+    "result": "Background knowledge about caspases, gasdermins, and pyroptosis mechanisms. These claims establish the known biology of CASP and GSDM families, including their structures, recognition motifs, activation mechanisms, and roles in cell death pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C13-C37, C44 represent established knowledge supported by citations to previous literature. These provide necessary context but are not novel findings of this study. The claims are well-documented in the cited references and represent accepted understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Background on teleost GSDME diversity and activation mechanisms. Teleost have two GSDME orthologs (GSDMEa and GSDMEb) that are activated by different caspases, with GSDMEb activated by inflammatory caspases and GSDMEa by apoptotic caspases, possibly reflecting the need for a single GSDM to respond to multiple signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C101-C113 summarize prior work on teleost GSDME from cited literature. The interpretation about functional diversification (C111-C112) is reasonable but speculative. These claims provide important context for understanding the significance of TrGSDME but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The inability of mouse CASP7 to cleave mouse GSDME is consistent with prior reports of minimal CASP7 involvement in mouse GSDME-mediated pyroptosis, suggesting mutually independent evolution that has distanced these proteins from each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 connect the current findings to prior literature and provide evolutionary interpretation. The consistency with previous reports (C128) strengthens the conclusion, though the evolutionary interpretation (C129) is somewhat speculative. The claims are reasonably supported but represent interpretation rather than direct experimental findings.",
+    "result_type": "MINOR"
+  }
+]

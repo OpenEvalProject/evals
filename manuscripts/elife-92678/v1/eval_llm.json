@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study performed high-depth single-cell RNA sequencing on paired biopsies from tumor center (contrast enhancing), peripheral infiltration zone (T2 hyperintense), and blood from five primary GBM patients, analyzing 45,466 cells total (8,254 from center, 5,954 from periphery, 31,258 PBMCs). Increased cellular density in center vs. periphery was confirmed by DAPI staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C16-C21 provide consistent methodological details and quantitative data about the experimental design. The MRI-guided tissue sampling (C16-C17), DAPI validation (C18), and cell counts (C19-C21) are internally consistent and well-documented with appropriate figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Peripheral microglia (MG) display a regionally distinct transcriptional profile with downregulation of inflammatory genes (FCGBP, CCL20), interferon response genes (IFI6, IFI27, STAT1, ISG15), proliferation marker STMN1, and scavenger receptor CD163. GSEA revealed downregulation of antigen processing/presentation via MHC-I/II, amino acid metabolism, and TNF-\u03b1 signaling in peripheral MG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 and C40-C42 present consistent differential expression findings supported by appropriate statistical analysis (FDR <5%) and GSEA. The findings converge on an impaired activation state of peripheral MG, with multiple independent lines of evidence from gene expression and pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Dendritic cells (DCs) and monocyte-derived macrophages (MdMs) show upregulation of pro-inflammatory gene sets in tumor periphery compared to center, contrasting with the MG phenotype. However, MdMs are less abundant in the periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide consistent evidence from differential expression and GSEA analyses showing pro-inflammatory phenotypes in DCs and MdMs in the periphery. The decreased abundance of MdMs (C47) is supported by differential abundance analysis and corroborated by prior studies (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C48",
+      "C51",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Two transcriptionally distinct MG subsets (MG_1 and MG_2) were identified, with MG_1 enriched for AP-1 transcription factors (FOS, FOSB, JUN, JUNB, MAF, MAFB) but also expressing anti-inflammatory factors (KLF2, DUSP1) and anti-proliferative genes (RHOB, BTG1, BTG2). MG_1 showed downregulation of effector functions including inflammation, immune activation, and immunometabolism, with reduced expression of reactivity markers and increased abundance in tumor periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C48, C51, C54, C57-C62 present a comprehensive characterization of MG_1 subset with consistent findings from clustering, differential expression, and GSEA analyses. The complex phenotype (pro-inflammatory transcription factors alongside anti-inflammatory markers) is acknowledged and supported by multiple gene expression patterns. Stratified analysis (C62) confirms the phenotype is not solely due to differential abundance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83"
+    ],
+    "result": "The tumor-peripheral cytotoxic cell compartment exhibits an impaired activation signature. Peripheral CD8+ T cells showed downregulation of 67 genes including IFN response genes, proliferation markers, and T cell co-stimulation molecules. Similar trends were observed in peripheral NK cells with reduced IFN response, proliferation genes, stimulatory receptors, NF-\u03baB signaling, and cytokine production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C63-C67, C75-C79, C83 provide consistent evidence from differential expression analysis showing impaired activation in peripheral cytotoxic cells. The quantitative data (110 DEGs in CD8+ T cells, C64) and specific gene lists are internally consistent. The parallel findings in NK cells strengthen the conclusion of a general peripheral cytotoxic cell dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "CTLA4 upregulation in center CD8+ T cells suggests T cell activation rather than exhaustion, as CTLA-4 is induced following activation and requires cell cycle entry. Other inhibitory receptors (PD-1, LAG3, TIM-3) and effector function genes were not differentially expressed between sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 present a well-reasoned interpretation of CTLA4 upregulation based on biological knowledge (C69-C70 supported by citations) and negative findings for other exhaustion markers (C72-C73). The interpretation is consistent with observed proliferation gene upregulation in center CD8+ T cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C92"
+    ],
+    "result": "CX3CR1high CD8+ T cells with effector phenotype and CX3CR1int CD8+ T cells with memory phenotype are enriched in blood but absent in the TME. Flow cytometry validation confirmed increased abundance of CX3CR1+ CD8+ T cells in PBMC compared to almost absent in tumor periphery. These cells display a core signature of memory CD8+ T cells with effector function including LFA-1, Tbet, CD62L, Granzyme B, and Perforin 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C84-C87, C91-C92 present consistent findings from scRNA-seq differential expression (1,417 DEGs, C84) and flow cytometry validation in an independent cohort. The characterization of CX3CR1+ cells is supported by gene expression data (C91) and flow cytometry (C92), with appropriate phenotypic markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Tumor CD8+ T cells display a tissue-resident memory (Trm) phenotype with dysfunctional features. They show CD45RO+ memory phenotype, express Trm markers (CD49a, CD103, CD69, CXCR3, CXCR6, CCR5, Hobit, Blimp1), and co-stimulatory molecules (ICOS, OX40, 4-1BB), but also high levels of inhibitory receptors (PD-1, LAG3, TIM-3, CTLA4), decreased cytotoxic molecules (Granzyme B, Perforin 1), and exhaustion-associated transcription factors (NR4A1, MAF, IRF4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C93-C99 provide comprehensive characterization of tumor CD8+ T cells with consistent evidence from flow cytometry (C93, C95) and gene expression analysis (C94, C96-C99). The Trm phenotype is supported by appropriate markers with literature citations (C94), and the exhaustion phenotype is supported by multiple independent markers (inhibitory receptors, cytotoxic molecules, transcription factors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "SPP1 (Osteopontin) was identified as a leading cell-cell interaction mediator between microglia and lymphocytes in the tumor periphery using CellChat analysis. SPP1 is mainly expressed by MG rather than glioma cells. Predicted interactions include MG SPP1 with NK cells via ITGA4-ITGB1 integrin complex and with CD4+/CD8+ T cells via SPP1/CD44 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 present findings from appropriate cell-cell interaction analysis using CellChat platform. The identification of SPP1 as a key mediator is supported by analysis across multiple conditions (C107). The expression pattern (C108) is documented with figures, though it contradicts prior reports. The predicted receptor interactions (C109-C110) are appropriately qualified as predictions from the computational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Differential abundance analysis between tumor center and periphery showed suggestive but not statistically significant changes: CD4+ T cells and monocytes increased in periphery while MdMs decreased. Fine-scale miloR analysis confirmed decreased MdM abundance and increased MG_1 subset abundance in tumor periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 appropriately distinguish between suggestive trends (C27-C29) and statistically significant findings from miloR analysis (C31). The decreased MdM abundance is corroborated by prior studies (C30). The use of miloR for fine-scale analysis is methodologically appropriate and provides increased resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Good overlap of cells across patients was observed for most of the dataset, leading to the decision not to perform correction for patient-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C23 describe a methodological decision based on data characteristics. While the observation is supported by figures (C22), the decision not to correct for patient effects (C23) is concerning given the small sample size (n=5 patients) and potential confounding of patient and batch effects. The CellMixS analysis mentioned in methods shows variable overlap across cell types, with myeloid compartment showing elevated patient-specific structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Hierarchical clustering partitioned cells into clusters annotated into nine distinct immune cell types (including two MG subsets: MG_1 and MG_2) and four CD45-negative cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe the clustering and annotation methodology with appropriate validation using multiple reference datasets (Monaco et al., Klemm et al., Pombo Antunes et al., Neftel et al.). The identification of cell types is supported by marker gene expression and unbiased annotation approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "ID1 (Inhibitor of DNA-Binding 1/Inhibitor of Differentiation 1) was found to be increased in peripheral MG. ID1 is well described in GBM progression, treatment resistance, and glioma stem cell biology, and has been linked to suppression of anti-tumor immune response in the myeloid compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 present a specific finding (ID1 upregulation in peripheral MG) supported by differential expression analysis (C37) with appropriate literature context (C38-C39 with citations). The biological interpretation is appropriately qualified and supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Peripheral CD8+ T cells showed upregulation of inhibitory genes TGFB1 and FCRL6. Peripheral NK cells showed upregulation of effector function genes (CD16, FGFBP2, ITGB2, GZMH, KIR2DS4) but also increased inhibitory receptors (LILRB1, KLRG1), with KLRG1/CX3CR1 co-expression identifying terminally differentiated NK cells with impaired cytotoxic capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C80-C82 present findings from differential expression analysis with appropriate interpretation. The characterization of peripheral NK cells as terminally differentiated with impaired function (C82) is supported by gene expression patterns and literature citation (Scium\u00e8 et al., 2011).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Expression of CX3CR1 distinguishes memory CD8+ T cells with cytotoxic effector function in healthy donors and inflammation-related conditions. A CX3CR1int subpopulation termed peripheral memory (Tpm) was identified that undergoes frequent homeostatic divisions, re-acquires CD62L, homes to lymph nodes, and predominantly surveys peripheral tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 appropriately cite prior literature (B\u00f6ttcher et al., Gerlach et al., Yamauchi et al., Yan et al.) to provide context for the CX3CR1+ CD8+ T cell findings. The characterization of Tpm cells (C89-C90) is based on cited literature (Gerlach et al., 2016) rather than new findings in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "High upregulation of similar genes was observed in tumor periphery vs. PBMC for both CD4+ and CD8+ T cells, including NR4A1-3 transcription factors (key mediators of T cell dysfunction), DUSP2/DUSP4 (negative regulators of MAP kinase associated with impaired T cell effector activity and senescence), and CREM (implicated in IL-2 suppression). These genes could potentially identify pan T cell dysfunction markers within the GBM iTME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 present findings from differential expression analysis with appropriate literature support for gene functions (C102-C104 with citations). The speculation about pan T cell dysfunction markers (C105) is appropriately qualified as potential and supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The SPP1/CD44 axis was recently described to suppress T cell activation and proliferation. The identified MG SPP1-mediated interactions might represent potential targets to modulate MG-lymphocyte crosstalk in the tumor periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 appropriately cite prior literature (Klement et al., 2018) for the SPP1/CD44 function and appropriately qualify the therapeutic implications as speculative (\"might represent potential targets\"). The speculation is reasonable given the identified interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The absence of CX3CR1+ effector CD8+ T cells in the glioma TME could serve as an additional explanation for the disappointing outcome of clinical trials using immune checkpoint inhibitors in glioma patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 presents a reasonable speculation based on the study's findings (absence of CX3CR1+ CD8+ T cells in TME) and cited literature showing these cells are associated with anti-PD-1 therapy response in other cancers. The speculation is appropriately qualified (\"could serve as an additional explanation\") and acknowledges these cells are not GBM-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "GBM harbors a highly immunosuppressive tumor microenvironment that influences glioma growth. Current standard of care (tumor resection followed by adjuvant chemoradiotherapy) results in median overall survival of only 14 months. Clinical trials of systemic T cell checkpoint blockade showed disappointing results, attributed in part to immunosuppressive components of the GBM iTME. Human data on iTME composition in different tumor regions remain scarce.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C15 provide appropriate background context supported by citations to established literature (Stupp et al., 2005; Bowman et al., 2016; Reardon et al., 2017a/b; Klemm et al., 2020; Friebel et al., 2020; Darmanis et al., 2017; Landry et al., 2020). These claims establish the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C36",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Literature-based functional annotations for genes identified in the study: CD163 has a potential role in phagocytic response to beta-amyloid; AP-1 transcription factors convey surveilling phenotype and are involved in cell growth, differentiation, and immune activation; FOSB regulates complement C5a receptor expression in excitotoxic MG activation; KLF2 is anti-inflammatory; DUSP1 inhibits innate inflammation via MAPK pathway; BTG1 is an activation-induced apoptotic sensitizer in MG serving as an autoregulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C49-C50, C52-C53, C55-C56 appropriately cite prior literature to provide functional context for genes identified in the study. The citations are appropriate and the functional annotations are accurately represented. Claim C56 includes appropriate speculation (\"possibly hinting towards an exhausted state\") based on the BTG1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Discussion of prior literature context: Previous studies focused primarily on neoplastic cells rather than immune compartment; some reported differences between IDH1wt and IDH1mut glioma iTME; similar MG subpopulations were described in Alzheimer's disease; IFN response induction is consequence of TCR-mediated IFN-\u03b3 production; regional immunotherapy response differences were observed in GBM explants; CX3CR1+ CD8+ T cells showed anti-tumor activity in melanoma models and were associated with anti-PD-1 response; Trm exhaustion phenotype was reported in hepatocellular carcinoma; brain-resident CD8+ Trm cells show consistent phenotype across neurological conditions; peripheral infections generate brain CD8+ Trm cells; SPP1 is differentially expressed in aging microglia and enriched in GBM; myeloid-derived osteopontin triggers CD8+ T cell dysfunction in GBM mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C131 provide appropriate discussion context by citing relevant prior literature (Darmanis et al., Olah et al., Szabo et al., Shekarian et al., Yan et al., Yamauchi et al., Ma et al., Smolders et al., Urban et al., Sankowski et al., Kilian et al.). The citations are appropriate and accurately represented. Claims C127-C128 include reasonable speculation about mechanisms based on the findings and literature.",
+    "result_type": "MINOR"
+  }
+]

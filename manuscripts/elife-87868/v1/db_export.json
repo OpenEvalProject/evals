@@ -1,0 +1,1814 @@
+{
+  "submission": {
+    "id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:11:08.296499Z",
+    "updated_at": "2025-11-20T20:11:08.296499Z"
+  },
+  "content": [
+    {
+      "id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "content_type": "manuscript",
+      "content_text": "# Spatial chromatin accessibility sequencing resolves high-order spatial interactions of epigenomic markers\n\n## Authors\n\n- Yeming Xie<sup>1</sup>\n- Fengying Ruan<sup>1</sup>\n- Yaning Li<sup>1</sup>\n- Meng Luo<sup>1</sup>\n- Chen Zhang<sup>1</sup>\n- Zhichao Chen<sup>1</sup>\n- Zhe Xie<sup>2</sup>\n- Zhe Weng<sup>1</sup>\n- Weitian Chen<sup>1</sup>\n- Wenfang Chen<sup>1</sup>\n- Yitong Fang<sup>1</sup> ([ORCID: 0000-0001-7255-0958](https://orcid.org/0000-0001-7255-0958))\n- Yuxin Sun<sup>1</sup>\n- Mei Guo<sup>1</sup>\n- Juan Wang<sup>1</sup>\n- Shouping Xu<sup>4</sup>\n- Hongqi Wang<sup>1</sup> \u2020\n- Chong Tang<sup>1</sup> ([ORCID: 0000-0002-6898-8946](https://orcid.org/0000-0002-6898-8946)) \u2020\n\n### Affiliations\n\n1. BGI Genomics, BGI-Shenzhen Shenzhen China ([ROR:045pn2j94](https://ror.org/045pn2j94))\n2. College of Life Sciences, University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))\n3. Department of Biology, Cell Biology and Physiology, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))\n4. Department of Breast Surgery, Harbin Medical University Cancer Hospital Harbin China ([ROR:05jscf583](https://ror.org/05jscf583))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs the genome is organized into a three-dimensional structure in intracellular space, epigenomic information also has a complex spatial arrangement. However, most epigenetic studies describe locations of methylation marks, chromatin accessibility regions, and histone modifications in the horizontal dimension. Proper spatial epigenomic information has rarely been obtained. In this study, we designed spatial chromatin accessibility sequencing (SCA-seq) to resolve the genome conformation by capturing the epigenetic information in single-molecular resolution while simultaneously resolving the genome conformation. Using SCA-seq, we are able to examine the spatial interaction of chromatin accessibility (e.g. enhancer\u2013promoter contacts), CpG island methylation, and spatial insulating functions of the CCCTC-binding factor. We demonstrate that SCA-seq paves the way to explore the mechanism of epigenetic interactions and extends our knowledge in 3D packaging of DNA in the nucleus.\n\n## Introduction\n\nThe linear arrangement of DNA sequences usually gives an illusion of a one-dimensional genome. However, the DNA helix is folded hierarchically into several layers of higher-order structures that undergo complex spatial biological regulation. The link between gene transcription activity and genome structure was established following an observation that active gene expression occurs in the decondensed euchromatin, and silenced genes are localized in the condensed heterochromatin (Klemm et al., 2019). Accessibility of chromatin acts as a potent gene expression regulatory mechanism by controlling the access of regulatory factors (Klemm et al., 2019). Although this model is attractive, it is simplifies the concept of genome accessibility by considering it solely in the horizontal dimension (Misteli, 2007). In reality, the genome is organized into a three-dimensional structure within cells, resulting in similar spatial complexities in the accessibility of genome regions. For example, the accessibility of promoter region could be regulated by the interactions with enhancers or silencers (Kolovos et al., 2012). Therefore, it is imperative to employ sophisticated tools that can provide insights into genome accessibility in relation to the organization of the genome, enabling a comprehensive understanding of the interplay between chromatin activation and genome interactions.\n\nMost of the tools designed to study chromatin accessibility in the linear form are based on the vulnerability of open/decondensed chromatin to treatment with enzymes such as DNase, micrococcal nuclease (MNase), and transposase. In a pioneer study, Crawford lab used DNase-seq to establish the relationship between DNase-hypersensitive regions and open chromatin (Boyle et al., 2008; Song and Crawford, 2010). MNase-seq is based on a similar concept (Schones et al., 2008; Henikoff et al., 2011). Subsequent studies simplified experiments on chromatin accessibility by taking advantage of the ability of mutant transposase to insert sequencing adapters into open chromatin domains (Buenrostro et al., 2013; Buenrostro et al., 2015). All these methods rely on statistical calculations of chromatin domain accessibility based on the frequency of enzyme-dependent tags on the accessible genome. Chromatin accessibility has been studied at a single-molecule resolution in recent years to provide insights about chromatin heterogeneity in vivo. Approaches such as methyltransferase treatment followed by single-molecule long-read sequencing (Wang et al., 2019), single-molecule adenine methylated oligonucleosome sequencing assay (Abdulhay et al., 2020), nanopore sequencing of nucleosome occupancy and methylome (Lee et al., 2020), single-molecule long-read accessible chromatin mapping sequencing (Shipony et al., 2020; Chen et al., 2021), and Fiber-seq Stergachis et al., 2020 have been developed for this purpose. Generally, decondensed genomes were methylated using methyltransferases and directly sequenced using third-generation sequencing platforms (Nanopore, PacBio). These advanced methods offered a single-molecule view of the two-dimensional 2\u201315 kb long chromatin structures.\n\nHowever, it is important to note that chromatin exhibits a higher-order organization, and relying solely on a horizontal dimensional map of chromatin accessibility may not fully capture the complexity of its spatial arrangement. Chromosome conformation capture (3C) techniques, for example, Hi-C, SPRITE, CHIAPET, and pore-C, have been widely used to map genome-wide chromatin architecture (Bonev et al., 2017; Rao et al., 2014; Quinodoz et al., 2018; Fullwood et al., 2009; Deshpande et al., 2022). Most of these techniques do not allow obtaining epigenome information in the process or examining chromatin conformation with multi-omics. Some advanced approaches, such as Trac-looping (Lai et al., 2018), OCEAN-C (Li et al., 2018), and HiCAR (Wei et al., 2020), can capture open chromatin and chromatin conformation information simultaneously by enrichment of accessible chromatin regions through solubility or transposons. These advanced approaches were originally developed to enrich the accessible chromatin and efficiently observe the interactions of cis-regulatory elements. The loss of the condensed chromatin regions and methylation marks restricted the possibility of observing the full-scale genome architecture with multi-omics. Therefore, reconstructing DNA organization with multi-omics information could promote further understanding of the interactive regulation of transcription and enable more detailed studies of DNA interactions.\n\nHere, we developed a novel tool, spatial chromatin accessibility sequencing (SCA-seq), based on methylation labeling and proximity ligation. The long-range fragments carrying the chromatin accessibility, CpG methylation, and chromatin conformation information were sequenced using nanopore technology. We mapped chromatin accessibility and CpG methylation to genome spatial contacts at single-molecule resolution. Our findings revealed the presence of heterogeneous chromatin accessibility in spatial interactions, suggesting complex genome regulation. We believe that SCA-seq may facilitate multi-omics studies of genome spatial organization.\n\n## Results\n\n### Principle of SCA-seq\n\nRecently, there has been an increasing interest in applying methylation labeling and nanopore sequencing for the analysis of chromatin accessibility at a single-molecule level (Wang et al., 2019; Abdulhay et al., 2020; Lee et al., 2020; Shipony et al., 2020; Chen et al., 2021; Weng et al., 2021). In this study, we have used SCA-seq to study chromatin spatial density to resolve the genome organization and chromatin accessibility simultaneously. (Figure 1a,1) After cell fixation, we used a methyltransferase enzyme (EcoGII or M.CviPI) to artificially mark accessible chromatin regions. (Figure 1a,2-3 ) After the chromatin accessibility information was preserved as m6A or GpC methylation marks, we conducted digestion and ligation steps using chromatin conformation capturing protocols, relying on proximity ligation to ligate together multiple linearly distant DNA fragments that are close to each other in the three-dimensional space. (Figure 1a,4) Next, we performed optimized DNA extraction to obtain pure and large DNA fragments. (Figure 1a,5) The DNA fragments that carried chromatin accessibility information, methylation marks, and three-dimensional conformation information were sequenced using the nanopore method and analyzed in our house pipeline from concatemer alignment to single-molecule methylation calling (Figure 1a). The conventional next-generation sequencing-based chromatin conformation protocols only captured the interaction between two genomic loci (Figure 1a). Unlike the conventional protocol, the proximity ligation in SCA-seq, not limited to the first-order ligation, can occur multiple times in one concatemer (genome fragments fixed together as a cluster), informing about the high cardinality of the genome conformation (Figure 1a, b). Compared with the output of the comparable techniques Trac-loop (Lai et al., 2018), Hi-CAR (Wei et al., 2020), and NicE-C (Luo et al., 2022), which also capture the accessible chromatin conformation, the SCA-seq preserved more multi-omics information, for example, CpG methylation epigenetic marks, chromatin inaccessibility, and high-order chromatin conformation data (Figure 1b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig1-v1.jpg)\n\n**Figure 1.:** (a) (1) After fixation, chromatin accessibility can be inferred from the extent of artificial methylation by methyltransferase (m6A or GpC, rare in native genomes). (2\u20134) Restriction enzymes to digest the labeled genome are selected. The interacted segments (>2) stay as a cluster of fragments (concatemer) due to fixation. Next, the spatially interacted segments in one concatemer are proximally ligated, along with the formation of chimeric long fragments. (5) These long chimeric fragments are sequenced using the Nanopore technology. The data-trained Nanopolish model helps calling the labeled artificial methylation marks (GpC or m6A), which reflect the regional chromatin accessibility and native CpG on the chimeric reads. Our algorithm analyzes the composition of the chimeric reads, indicating genome locations of these composed segments. Moreover, SCA-seq can simultaneously capture chromatin accessibility and native methylation information of these segments. (b) Comparison of advantages of SCA-seq with those of other similar technologies.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In SCA-seq, we used methyltransferases (EcoGII or M.CviPI) to label the accessible chromatin and the restriction enzyme to digest the genome and prepare for the ligation step. Methyltransferase EcoGII transferred the methyl group to the 6\u2032-carbon of adenosine (m6A modification). Due to the high density of adenosines in the genome (~25%), the abundant artificial m6A modification may impair restriction enzyme activity. We used EcoGII to treat the HEK293T genomic DNA (m6A+), whereas control DNA was left untreated (m6a\u2212). We tested HindIII, DpnI (a), PstI and NdeI (b) on the methylated and unmethylated genomic DNAs, and all these restriction enzymes were inhibited by the abundant m6A modifications. DpnI is an m6A-dependent restriction enzyme that digests only genomic loci with the m6A modification. NA indicates the genomic DNA control. In a similar way, we tested the activities of HindIII (c) for lambda DNA; DpnII, and NIaIII (d) for HEK293T genomic DNA on the GpC methylated DNA preparations that were treated by methyltransferase M.CviPI. DpnII and NIaIII were not significantly inhibited by GpC methylation. (e) The HEK293T genomic DNA was digested by DpnII (Digestion) and then ligated by T4 DNA ligase (Ligation).\n\nFirst, we experimentally determined the feasibility of SCA-seq. In the methylation reactions, the most suitable methyltransferases, EcoGII and M.CviPI, generated the artificial modifications m6A and m5C (GpC), which are rarely present in the native mammalian genomes (McClelland and Ivarie, 1982; O\u2019Brown et al., 2019). Our previous research showed that EcoGII effectively labels accessible chromatin owing to the high density of adenine in the genome (Chen et al., 2021). However, when EcoGII was used, the high-density labeled m6A modification either blocked or impaired the activity of the majority of restriction enzymes and produced long-digested fragments, leading to lower chromatin conformation resolution (Figure 1\u2014figure supplement 1a, b). We also tried digestion with multiple enzymes, as in Hi-C 3.0 (Lafontaine et al., 2021), and slightly decreased the fragment length. To solve this problem, we selected the m6A-dependent restriction enzyme DpnI that preferentially digests highly methylated DNA containing methylated adenine and leaves blunt ends. However, such m6A-dependent digestion of the highly methylated accessible chromatin was biased, and the blunt ends were not ligated efficiently. We then tried another approach and used M.CviPI that methylates GpCs (m5C) on the accessible chromatin, and these marks occur four times less frequently than adenosine. In the following steps, DpnII and other enzymes (without GC pattern in the recognition sites) efficiently cut DNA molecules with both methylated and unmethylated GpCs (Figure 1\u2014figure supplement 1c\u2013e), followed by ligation. It should be noted that the m5C base-calling algorithm has been gradually improved and is now widely used in nanopore sequencing (Liu et al., 2021). Considering the unbiased digestion, M.CviPI might be a better choice in SCA-seq than EcoGII/DpnI. Next, we analyzed the sequencing data and compared them with those obtained using previous technologies.\n\n### SCA-seq has the comparable ability to identify chromatin accessibility and native methylation marks\n\nOur work was inspired by the concepts of nanoNOME-seq, SMAC-seq, and Fiber-seq methods (Wang et al., 2019; Abdulhay et al., 2020; Lee et al., 2020; Shipony et al., 2020; Chen et al., 2021; Weng et al., 2021), which use either M.CviPI or EcoGII methyltransferases to label chromatin-accessible regions with methylation sites. Our previous experiments (Chen et al., 2021) and validations of the results against published data confirmed the effectiveness of the methyltransferase-mediated labeling, showing technological advantages of the complex genome alignment and single-molecule resolution (Weng et al., 2021). As the SCA-seq generated discontinuous genomic segments by ligating fragments (Figure 1), which might affect data processing, we first validated the accuracy of methylation calling and methyltransferase labeling in SCA-seq.\n\nFirst, we performed the initial quality control of the sequencing data for HEK293 cells by validating the methylation calling. We generated 129.94 Gb (36.9\u00d7 coverage) of mapped sequencing data with an N50 read length of 4446 bp. To obtain the methylation information from the nanopore data, we adopted well-established methylation caller Nanopolish with the cpggpc calling module (Lee et al., 2020) and achieve considerable success (AUC [Area under the ROC Curve] CpG = 0.908, GpC = 0.984). In the further validation of methylation calling, we parallelly performed the gold standard whole-genome bisulfite sequencing (WGBS). The results of the WGBS analysis were highly correlated with those of Nanopolish (Figure 2\u2014figure supplement 1), supporting the accuracy of the methylation caller. In addition to the methylation calling accuracy, there might also be some ambiguity between the native and artificially labeled cytidine methylations. We first checked the native or false positive GpC regions, which were also very rare and accounted for only 1.8% in the unlabeled genome (Figure 2\u2014figure supplement 2a). GpC ratio of the M.CviPI-treated genomes was significantly higher than the background GpC ratio (Figure 2\u2014figure supplement 2b, >10-fold change, <2.6 \u00d7 10\u221216, Student\u2019s t-test). Second, the GCG pattern in the genome might also cause the ambiguity of native methylation CpG or accessibility representing GpC; therefore, we excluded both CpG and GpC methylations from the GCG context (5.6% of GpCs and 24.2% of CpGs) to obtain unbiased methylation information. The excluded GCGs did not significantly affect most of the biological methylation analysis, as reported previously (Lee et al., 2020). In conclusion, our bioinformatic pipeline was able to detect native CpG methylations and artificially labeled GpC methylations.\n\nWe next assessed the potential of SCA-seq to reveal simultaneously endogenous methylation and chromatin accessibility. As the ATAC-seq and DNase-seq are gold standards for detecting chromatin accessibility, we compared the labeling accuracy of SCA-seq with that of ATAC-seq/DNase-seq globally and locally. Of the 87,991 accessibility peaks called from the SCA-seq data in the whole genome, 80% overlapped with peaks observed in ATAC-seq or DNase-seq (Figure 2a). In the evaluation of SCA-seq 1D peak sensitivity and specificity, we considered the non-peak region genomic bins shared by ATAC-seq and DNase-seq as true negatives, and the overlapping peaks of ATAC-seq and DNase-seq as true positives. The obtained results showed a peak sensitivity of 0.73 and a specificity of 0.91 for SCA-seq. These results were comparable to those of a previous study, in which methyltransferase labeling was used (Lee et al., 2020). The ATAC-seq/DNase-seq unique peaks were less frequent, as indicated by the larger p-value calculated by MACS2 (Figure 2b). On the other hand, the sequencing depth could improve the sensitivity of SCA-seq to identify the less frequent peaks (Figure 2\u2014figure supplement 3d, e). Previous publications also suggested that the difference between the outputs of the Nanopore-based and next-generation sequencing-based methods might be explained by sequencing depth (Lee et al., 2020; Shipony et al., 2020). In the local comparison, SCA-seq also showed peak patterns around the ATAC-seq-identified peaks (Figure 2c). Moreover, we computationally predicted binding sites of the CCCTC-binding factor (CTCF), which usually associates with open chromatin (Ong and Corces, 2014). As expected, the native CpG methylation level decreased, whereas GpC accessibility increased around the CTCF-binding sites (Figure 2d). At active human transcription start sites (TSSs) with high expression, \u2018open\u2019 chromatin regions hypersensitive to transposon attack were observed in ATAC-seq/DNase-seq. SCA-seq showed similar nucleosome depletion patterns around TSSs (Figure 2e). Inactive TSSs (low quantile of gene expression) were less accessible than active TSSs (upper quantile of gene expression) (Figure 2e). In the detailed examination of the genome regions, the SCA-seq showed the expected nucleosome pattern co-localizing with various epigenetic marks, for example, H3K4me3 (active) and H3K27ac (active) (Figure 2f and Figure 2\u2014figure supplement 4d). To further estimate the labeling efficiency between different methods, we also compared the fold change values of signal enrichment around TSS with HiCAR, ATAC-seq and DNase-seq, where the accessible chromatin conformation is enriched (Figure 2\u2014figure supplement 3a). All three methods SCA-seq, ATAC-seq, and DNase-seq showed similar labeling efficiency on the TSS. We then explored the time-dose influence on the labeling results. The relationship between the dose and M.CviPI treatment effect demonstrated superior efficiency of the 3 hr treatment, comparing with those achieved after 15 or 30 min treatment (Figure 2\u2014figure supplement 3b, c). Overall, SCA-seq reliably estimated chromatin accessibility at the genome level.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig2-v1.jpg)\n\n**Figure 2.:** (a) Venn diagram of the peak overlap between SCA-seq, ATAC-seq, and DNase-seq. The peak-calling algorithms were adapted from nanoNOME-seq. There were 80% peaks identified in SCA-seq overlapped with those detected by either ATAC-seq or DNase-seq. The upset plot is shown on the left. (b) Overlapping peaks in the violin plot between SCA-seq and ATAC-seq show the higher MACS2 peak q-value than the non-overlapping peaks (p < 2.6 \u00d7 10\u221216, Wilcoxon rank sum test). Similarly, the overlapping peaks in the violin plot between SCA-seq and DNase-seq have the higher F-seq p-value than the non-overlapping peaks (p < 2.6 \u00d7 10\u221216, Wilcoxon rank sum test). (c) ATAC-seq peak centered plot. ATAC-seq peak regions were centered at 0 on the x-axis and are indicated by the dashed line. The y-axis indicates the average methylation ratio on each site (methylation ratio = methylated GpC/all GpC in a 50-bp bin). Blue and green lines indicate the GpC methylation ratio (accessibility) and CpG methylation ratio, respectively. GpC and CpG ratio heatmaps around ATAC-seq peak centers are shown on the right. Each row represents a region of genome with an ATAC-seq peak. (d) CTCF motif centered plot at 0 on the x-axis indicating the CTCF motif position. The y-axis indicates the average methylation ratio among all the molecules across CTCF motifs. SCA-seq demonstrates classic nucleosome depletion patterns around the CTCF motif. GpC and CpG methylation ratio heatmaps around CTCF sites are shown on the right. Each row represents a region of genome with an CTCF site. (e) TSS-centered plot. We classified genes with high expression (upper quantile) and low expression (lower quantile) by the expression ranks. GpC and CpG methylation ratio heatmaps around TSSs are shown on the right. Each row represents a region of genome with a TSS. (f) A representative genome browser view showing chromatin accessibility signal of DNase-seq, ATAC-seq, SCA-seq, as well as H3K4me3 and H3K27ac ChIP-seq signals in a genome browser (47 kb span). The SCA-seq track shows the GpC methylation ratio in each genomic locus.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) The similarity between the whole-genome bisulfite sequencing (WGBS) GpC methylation calls and SCA-seq GpC methylation calls is illustrated. The methylation ratios in 200 bp bins of SCA-seq were scatter plotted against WGBS methylation ratios (Pearson\u2019s correlation, p < 2.6 \u00d7 10\u221216). A similar plot of the CpG methylation ratio is on the right (Pearson\u2019s correlation, p < 2.6 \u00d7 10\u221216). (b) Confusion matrix of GpC methylation calling. Subsets of 100,000 sites in unmethylated pore-C HEK293T samples and methylated lambda DNA samples were methylation called by the default threshold of the Nanopolish cpggpc model. The results are classified into four categories: false positive and true negative from the unmethylated pore-C run and true positive and false negative from the GpC-labeled lambda DNA sample.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** We used lambda DNA as the spiked-in DNA control to monitor M.CviPI efficiency. Genomic DNA without labeling was used as background control to calculate the background level of GpC. The labeled genomic DNA was processed using SCA-seq. We plotted the density plot of GpC ratios (methylated GpC/total GpC) in each segment for background genomic DNA, treated genomic DNA, and spike-in control DNA. The background GpC ratio in each segment was around 0.018 (a, b). Efficiency of spiked-in lambda DNA labeling by M.CviPI was around 0.88 in vitro. We then selected CTCF motifs as control to calculate in vivo labeling efficiency (c). We plotted the CpG methylation ratio (methylated CpG/total CpG) against the GpC methylation ratio in CTCF motifs. Previous publications showed that pre-existing methylation could antagonize CTCF binding to CTCF motifs (Bell and Felsenfeld, 2000; Hark et al., 2000; Kanduri et al., 2000). Therefore, we assumed that CTCF motifs with low methylation (CpG methylation <0.25) marked accessible chromatin regions with capacity for CTCF binding. The CTCF motif labeling efficiency was calculated as NCpGmethylation<0.25&GpCmethylation>0.07/NGpCmethylation<0.25 = 0.79. However, the highly methylated CTCF motifs might also bind CTCF to maintain chromatin accessibility. Therefore, the in vivo labeling efficiency could be estimated only roughly. We then used nanoNOME-seq to cross-validate SCA-seq labeling efficiency (d). Both nanoNOME-seq and SCA-seq were single-molecule assays. nanoNOME-seq could report chromatin accessibility in 2\u201320 kb single DNA molecules. Sixty-eight percent of SCA-seq concatemers (d, left panel) corresponded to similar DNAs identified by nanoNOME-seq (d, right panel). The most matched concatemers contained only two segments, representing the short-distance interaction. The concatemers with multiple segments, representing the long-distance interaction, may be out of the nanoNOME-seq detection range.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) TSS-centered plot illustrating the enrichment score (y-axis) for different methods around TSSs (0 on the x-axis), which shows a significant nucleosome depletion pattern. The enrichment score was calculated as log2(signal in each bin/lowest signal in scale). (b) Test of labeling efficiency at three different labeling times (15 min, twofold higher enzyme concentration; 30 min, twofold higher enzyme concentration; 3 hr, threefold higher enzyme concentration). GpC labeling efficiency was the highest after the 3 hr treatment, and the labeled GpC signal accurately showed the CTCF motif nucleosome pattern (c). The results of the 3 hr treatment were also similar to those obtained for nanoNOME-seq tissue sample preparation (Lee et al., 2020). (d, e) ATAC-seq peaks were identified first, and methylation ratios obtained using SCA-seq are plotted around the identified peaks (center to 0) with different sequencing depths. The line panels show a single-molecular resolution.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Schematic of calling accessible regions on an SCA-seq read. The accessible region of each segment of a read was called independently. The raw GpC methylation signals were divided into sliding windows, and binomial test was performed to determine the significant window (cyan box) where the GpC methylation ratio deviated from the background ratio. The overlapping significant windows were then merged to determine accessible regions (green box). GpC methylation signals outside the accessible regions were filtered out to reduce the background noise of SCA-seq accessibility signal. (b) Examples of calling accessible region on two SCA-seq segments. The top two plots show the raw GpC methylation likelihood ratio (y-axis) on the segment nucleotide position (x-axis). The bottom two plots show the number of merged significant windows (y-axis) on the segment nucleotide position (x-axis). The vertical dash lines aligned the called accessible region with the raw cluster of GpC methylation signal. The random GpC methylation signals (dark red) are highlighted in dark red dashed arrows. (c) Chromatin accessibility signal at various resolutions. The panels show DNase-seq, ATAC-seq, and SCA-seq filtered signal and raw signal in the genome browser. DNase-seq and ATAC-seq results show relative level of read counts in each genomic locus, whereas SCA-seq data represent GpC methylation ratio in each genomic locus. (d) TSS-centered plot demonstrating the filtered and raw SCA-seq GpC methylation signal at up- and downstream 2 k bp of TSS sites genome wide. The enrichment score was calculated as log2(TSS site signal/lowest signal in the 50 bp bin). The TSS-centered GpC methylation ratio heatmaps are shown on the right. Each row represents a TSS-centered region on the genome.\n\n### SCA-seq reveals high-order chromatin organization\n\nIn addition to the methylation information, SCA-seq also preserved genome spatial structure. Therefore, we next validated genome spatial organization. First, we analyzed basic statistical parameters, for example, contact distance and cardinality of SCA-seq. As SCA-seq ligated the multiple fragments together, revealing the multiplex chromatin conformation, we aligned non-singleton chimeric reads into genomic segments and assembled in silico paired-end tags (PETs) in order to compare with Hi-C carrying paired loci. The segment median length was approximately 700 bp (Figure 3\u2014figure supplement 1a). Among the informative intra-chromosome PETs, 0.1% of the PETs (contact distance) were <150 bp; 0.3% of them ranged from 150 to 1000 bp; 24.5% were 1000\u2013200,000 bp; and 75.1% were >200,000 bp. Unlike Hi-C, SCA-seq, derived from pore-C, revealed the multiplex nature of chromatin interactions. As for the intra-chromosome interactions, 14.7% of the reads contained two segments (cardinality = 2); approximately 14.5% of the reads contained 3\u20135 segments (cardinality = 3\u20135); and 5.4% of the reads had more than five segments (cardinality >5) (Figure 3\u2014figure supplement 2a). As in the previous report (Ulahannan et al., 2019), most of the contacts from the reads with fewer segments appeared to have closer contact distance (Figure 3\u2014figure supplement 2b). The contacts from the reads with more segments appeared to have more distal interactions (Figure 3\u2014figure supplement 2c, d). The high cardinality of concatemers with enriched enhancer and/or promoter might indicate the cooperativity in the mammalian transcriptional regulation, as in previous reports (Ulahannan et al., 2019). Compared with the output of similar methods, such as Trac-loop and HiCAR, SCA-seq also resolved more high-cardinality chromatin conformation and distal interactions (Figure 3\u2014figure supplement 2e, f, g). Our results regarding high-order chromatin conformation capturing also agreed with the output of previously published methods, such as SPRITE (Quinodoz et al., 2018), pore-C (Ulahannan et al., 2019), and ChIA-Drop (Zheng et al., 2019), which also disclosed more distal interactions.\n\nWe then compared SCA-seq to the gold standard Hi-C with respect to the false positive call rate, reproducibility, and ability to resolve genome spatial organization. False positive call rates of SCA-seq and Hi-C, inferred from hybrid PETs that consisted of mitochondrial DNA and genomic DNA, were similar (Figure 3\u2014figure supplement 1b). The compartment score correlation between SCA-seq replicates and pore-C replicates was approximately 0.94, suggesting comparable reproducibility (Figure 3\u2014figure supplement 1d). Furthermore, SCA-seq revealed genome organization similar to the one detected using in situ Hi-C. Side-by-side visualization of interaction heatmaps, loops, topologically associating domain (TAD) boundaries, and A/B compartments obtained using SCA-seq and Hi-C showed equivalent genome organizations (Figure 3b, c, e, g, h). The correlation coefficients of the eigenvector and insulation scores were 0.91 and 0.84, that is, slightly lower than we expected (Figure 3d and f). From the analysis of a 130G base run of HEK293T SCA-seq, we successfully identified 105,598,180 ligation junctions and 492,502,643 virtual pairwise contacts, which resulted in coverage of 5,625,908 dpnII digested restriction fragments (7,127,633 dpnII in silico restriction fragments). The sequencing depth of SCA-seq could improve these correlations with Hi-C results (Figure 3\u2014figure supplement 1c). Because SCA-seq is a non-amplification method, whereas Hi-C is an amplification method, these differences might have resulted from the amplification bias of GC regions (Figure 3\u2014figure supplement 1e-h). Notably, we found that 66% of the concatemers were compartment specific (all the segments in one concatemer belonged to either compartment A or B), and 34% were non-specific (mixed composition of segments from compartments A and B) (Tavares-Cadete et al., 2020). Overall, these results suggested that SCA-seq successfully resolved the multiplex nature of chromatin interactions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig3-v1.jpg)\n\n**Figure 3.:** (a) Contact frequency (y-axis) as a function of linear genomic distance (x-axis) was plotted across all hg19 chromosomes for SCA-seq (red) and Hi-C (brown). (b) Comparison of 1.1 M SCA-seq virtual pairwise contacts (lower triangle) and 1.8 M Hi-C contacts (upper triangle) for chromosomes 1\u201322 and X (hg19) in HEK293T cells. Comparison of SCA and Hi-C 250 kb (c) and 25 kb (e) contact maps for chromosome 7. The corresponding eigenvector (c) and insulation score (e) indicating visual consistency between SCA-seq (red) and Hi-C (brown) signal patterns. Color scale bar: log normalized read counts. Scatterplots comparing eigenvector (d) and insulation score (f) between SCA-seq and Hi-C. PCC: Pearson\u2019s correlation coefficient (p < 2.6 \u00d7 10\u221216). (g) Contact map showing an example of CTCF peaks at 10 kb resolution with a loop anchor signal indicated by black circles. Color scale bar: log normalized read counts. The CTCF ChIP-seq tract is plotted in between. (h) Aggregate peak analysis showing visual correspondence of enrichment patterns between Hi-C and SCA-seq within 100 kb of loop anchors at 10 kb resolution. Color scale bar: sum of contacts detected across the entire loop sets at CTCF sites in a coordinate system centered around each loop anchor. (i) The lower density plot shows the inaccessible region length distribution of SCA-seq. The upper panel shows the schematic diagram of the transcription factor binding and nucleosome footprint patterns. (j) The heatmap of GpC methylation level shows chromatin accessibility at the CTCF motif at a single-molecule resolution. A subset of CTCF sites with CTCF-binding footprint (50 bp accessible\u201350 bp inaccessible\u201350 bp accessible) is shown in a magnified view. (k) Cardinality distribution of three sets of concatemers. Concatemers with a CTCF footprint (blue) and without the footprint (yellow) are determined by the CTCF-binding footprint. The genome-wide concatemers are shown in red. Distributions of concatemers with and without CTCF footprint were compared by the Wilcoxon test. (l) Multiplex concatemers were converted to pairwise contacts. The linear distances between pairwise contacts are plotted as density distributions.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) The medium length of fragments in concatemers was around 700 bp. (b) We further calculated the false positive contacts caused by the ligations (contamination). We used the contacts between the mitochondrial genome and nucleic genome/total contacts to calculate the contamination ratios. SCA-seq and Hi-C contamination ratios were 9% and 12%, respectively. (c) We then subsampled the reads to test the sequencing threshold to calculate the eigenvector (AB compartment) and insulation score (TAD). We needed over 5 and 30 million reads to accurately produce results similar to the Hi-C output for in the AB compartment and TAD, respectively. (d) We then tested the correlation (0.93\u20130.94) between SCA-seq and pore-C biological replicates (N = 3) (Ulahannan et al., 2019). SCA-seq demonstrated good consistency between samples. (e) Plot of global eigenvalue correlation (without quality control) between SCA-seq and Hi-C data. (f) The compartment correlations with bias were far from the diagonal line and are colored red. The bias regions had a significantly lower GC ratio than the unbiased region in the violin plot. (g) The GC ratio distribution in SCA-seq and Hi-C. (h) Plot of global insulation score correlation (without quality control) between SCA-seq and Hi-C data.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Intra-chromosome contacts on chromosome 7. The Chr7 cardinality only considers the chr7 intra-chromosome segments that are adjacent to each other on an SCA-seq concatemer. 65.4% of concatemers contain one segment without any intra-chromosome contacts, 14.7% of concatemers contain two segments, 14.5% contain three to five segments. 5.4% of concatemers have \u2265 six segments. (b) Plot of the contact frequency against the contact distance for concatemers of segments on chromosome 7 (intra-chromosome concatemers) with different cardinality values. The high-cardinality concatemers had more distant contacts than the low-cardinality concatemers. (c) The maximum contact distance in each concatemer positively correlates with concatemer cardinality. (d) Concatemers of segments on chromosome 7 with different cardinality values were converted to pairwise contact maps and normalized by the JuicerTools KR method. The high-cardinality concatemers tend to maintain the TAD structures and indicate long-distance interaction. (e) The data output, cell type, and cell number of each method. (f) Genomic interactions at distances of \u226520 and <20 kb were classified as long- and short-range interactions. \u2018Duplicate\u2019 indicates duplicated reads. \u2018Trans\u2019 indicates interaction across chromosomes. (g) The cardinality represented the genome-wide segment number in one read, referring the conformation complexity.\n\n### SCA-seq resolves the relationship between transcription regulator binding and chromatin conformation\n\nWe also could observe chromatin conformation with a specific binding pattern from SCA-seq, for example, the CTCF-binding pattern. As previous publications mentioned, occupation of binding sites by CTCF could lead to the emergence of short regions (~50 bp) inaccessible to methyltransferase labeling (Stergachis et al., 2020; Battaglia et al., 2022), indicating the CTCF-binding status on the CTCF motif loci. As expected, SCA-seq also could resolve the transcription factor specific (~50 bp peak) and nucleosome footprints, as was described previously (Stergachis et al., 2020; Battaglia et al., 2022; Figure 3i). Based on the specific accessibility patterns, we classified chromatin interaction concatemers containing CTCF motifs into two classes: with and without a CTCF footprint (Figure 3j). Considering the relationship between CTCF binding and chromatin structure formation (Hyle et al., 2019), we plotted the concatemer cardinality and interaction distance (Figure 3k, i). We found that the CTCF binding resulted in higher cardinality and more distal interactions than the non-CTCF binding, suggesting that CTCF binding facilitates formation of a more complex structure. As has been reported recently (Battaglia et al., 2022), the methyltransferase accessibility pattern also could reflect other transcription factors\u2019 footprints, enlightening the further exploring the relationship between chromatin conformation with other transcription factors by SCA-seq. Therefore, SCA-seq could help to subgroup chromatin interaction concatemers and investigate the relationship between chromatin conformation and protein binding.\n\n### SCA-seq resolves spatial interactions of accessible and inaccessible chromatin regions\n\nGiven the genome organization is highly heterogeneous in different cells, our chromatin interaction status analysis mainly relied on the single-molecule pattern, which needs high sensitivity and specificity. Single-molecule base modification calling was performed as described previously (Lee et al., 2020). Moreover, we determined enzyme labeling efficiency, which was 79\u201388%, based on the CTCF motifs and the lambda DNA spike-in control measurements (Figure 2\u2014figure supplement 2b, c). Next, we filtered the segments using the binomial test to minimize false positive attribution of the accessible or inaccessible status (see Methods). Unexpectedly, accessible and inaccessible DNAs were ligated together in SCA-seq (Figure 4a), suggesting heterogeneous accessibility of the spatially neighboring DNA regions. Each segment in the concatemer was determined to be either accessible or inaccessible. Then, the fraction of accessible segments in each concatemer was calculated as the Naccessible/(Naccessible+inaccessible). Compartment A had a significantly higher fraction of accessible segments than compartment B (Figure 4\u2014figure supplement 1a, b). Our overall genome concatemer calculations showed that 29% of the genome concatemers were inaccessible on all enclosed segments (the fraction of accessible segments <0.1). Furthermore, 62.2% of genome concatemers had both accessible and inaccessible segments (hybrid concatemers), and only 8.8% maintained all segments as accessible (the fraction of accessible segments >0.9) (Figure 4b). Figure 4a illustrates an example region with 1D genome feature tracks to demonstrate the promoter\u2013enhancer spatial interactions, accessibility, and CpG methylation at a single-molecule resolution. nanoNOME-seq that labels chromatin accessibility in single molecules also confirmed the existence of partial hybrid concatemers (Figure 2\u2014figure supplement 2d). To explore if the concatemer accessibility status was related to spatial location, we plotted the inaccessible concatemers and hybrid concatemers on the 2D contact heatmap. We found that hybrid concatemers tended to accumulate around the TAD boundaries and contain more distant connections (Figure 4b). By plotting the ratio of accessible segments against concatemer cardinality or interaction distance, we revealed that the more accessible segments tended to cluster as high cardinality, also implying their distal and high-cardinality interaction preference on the hybrid concatemers (Figure 4c and Figure 4\u2014figure supplement 1e). Moreover, we found that the hybrid concatemers comprised more enhancer and promoter elements than inaccessible concatemers (Figure 4d), suggesting the relationship between concatemer type and the extent of transcription regulation. We further investigated the enhancer and promoter contacts on chromosome 7, 30.3% of which had accessible\u2013accessible status, 18.5% had accessible\u2013inaccessible status, and 51.2% had inaccessible\u2013inaccessible status (Figure 4e). The frequency of contacts with accessible enhancer/promoter was highly correlated with gene expression levels (Figure 4f, g and Figure 4\u2014figure supplement 1c, d), supporting the transcription model in which active enhancers initiate promoters by spatial contact (Schoenfelder and Fraser, 2019). However, 51.2% of enhancer\u2013promoter interactions were independent of the chromatin-accessible status, suggesting that such spatial interactions were not the only factor regulating the initiation of transcription. Overall, the SCA-seq accessible contact signals suggested that spatial interaction and chromatin accessibility might cooperatively regulate gene expression levels.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig4-v1.jpg)\n\n**Figure 4.:** (a) Demonstration of promoter\u2013enhancer concatemers in the region from 25,800 to 26,400 kb on chromosome 7 on a single-molecule level. Gray, red, and blue tracks indicate chromatin accessibility signals from DNase-seq, ATAC-seq, and SCA-seq, respectively. The spatially inaccessible segments that were proximately ligated together to form one concatemer are shown as a single line in the bottom panel. Purple and green dots indicate chromatin accessibility (GpC) and CpG methylation ratio in one segment of a concatemer, respectively. Each row represents an SCA-seq concatemer. (b) Distribution of concatemers with specific accessible segment ratios. Each segment was considered accessible if at least one accessible region is identified; otherwise, it was considered inaccessible. Then the ratio of accessible segments was calculated as follows: Naccessible/(Naccessible+inaccessible). The colored line-dot plot shows GpC methylation of segments (dots) in each concatemer (each line). In total, 150,000 pairwise contacts were subsampled for the different types of concatemers in the genome region chr7:92,700,000\u2013100,000,000 with a 25-kb resolution. Inaccessible concatemers tend to accumulate inside the TAD and hybrid concatemers have more TAD boundary interactions and distal interactions (gray box). (c) Dot plot with regression curve shows that accessible concatemers (accessible contacts >2 per concatemer) tend to correlate positively with concatemer cardinality (segment number in each concatemer). (d) Violin plot of the enhancer/promoter counts in each concatemer. Hybrid concatemers have significantly more enhancers/promoters than inaccessible concatemers (p < 2.6 \u00d7 10\u221216, Wilcoxon rank sum test). (e) Accessibility contact map of enhancer\u2013promoter contacts. Inaccessible\u2013inaccessible (I\u2013I), inaccessible\u2013accessible (I\u2013A), and accessible\u2013accessible (A\u2013A) pairwise contacts are shown in blue, yellow, and red colors, respectively. The genome region 92,700,000\u2013100,000,000 is shown at a 25-kb resolution as an example. (f) Bar plot showing the relationship of gene expression with different types of accessibility contacts. The y-axis indicates the A\u2013I contact status. The x-axis is the mean RNA expression level the corresponding gene promoters (2 kb upstream of the gene). The accessible enhancer/promoter contacts significantly enhanced gene expression (p < 2.6 \u00d7 10\u221216, Student\u2019s t-test). (g) An example of two genes with similar accessibility on the promoter (2.1% accessibility, promoter-centered plot) but different number of A\u2013A contacts. The curve line track is the chromatin interaction detected by SCA-seq. The cyan and brown tracks are ATAC-seq and RNA-seq by counts on the genome. The top line-dot plot shows the higher-order interaction and accessibility at a single concatemer resolution. The NDUFB2 gene, with a greater number of accessible contacts, had a notably stronger expression level (528 RPKM) than SEMA3E (0 RPKM), which had few accessible contacts.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Plot of compartmental eigenvalues against the average concatemer accessible/inaccessible ratio in the compartments. The average concatemer accessible/inaccessible ratio was correlated with the compartmental eigenvalue (Pearson\u2019s correlation; p < 2.6 \u00d7 10\u221216). The average concatemer accessible/inaccessible ratio was significantly higher in the A compartments (positive eigenvalue) than in the B compartments (negative eigenvalue) (p < 2.6 \u00d7 10\u221216, Student\u2019s t-test). (b) High correlation of compartmental eigenvalues with labeled GpC methylations. The labeled GpC methylations were highly correlated with the compartmental eigenvalue (Pearson\u2019s correlation; p < 2.6 \u00d7 10\u221216). The labeled GpC methylations were significantly more abundant in the A compartments (positive eigenvalue) than in the B compartments (negative eigenvalue) (p < 2.6 \u00d7 10\u221216, Student\u2019s t-test). (c) For enhancer/promoter accessibility contacts in Figure 4d, we summarized the mean contactable accessibility on the promoters/enhancers (inaccessible/inaccessible 0, inaccessible/accessible 1, accessible/accessible 2). The mean contactable accessibilities on promoters highly correlated with the expression level of the corresponding gene (Pearson\u2019s correlation, p < 2.6 \u00d7 10\u221216). (d) Similarly, we summarized the mean GpC methylation ratio on the concatemers with promoter/enhancer regions. Mean concatemer GpC methylation ratios on promoters/enhancers significantly correlated with corresponding gene expression levels (Pearson\u2019s correlation, p < 2.6 \u00d7 10\u221216). (e) The accessible/inaccessible ratios of concatemers were positively correlated with the cardinality (Pearson\u2019s correlation, p = 0.0008). As shown in Figure 3\u2014figure supplement 2b, c, we found that high-order concatemers indicate long-distance interactions.\n\n### SCA-seq resolves CpG methylation on the spatial contacts with orphan CpG islands\n\nCpG islands (CGI), which are widespread features of vertebrate genomes, were associated with ~50% of gene promoters (pCGI). pCGIs control gene transcription by affecting the neighboring promoters with methylation-triggered chromatin changes. Some CGIs are located close to enhancers. In addition, thousands of orphan CGIs (oCGIs), which are at a longer distance (1 kb) from the promoters and enhancers, have been barely known (Figure 5a; Pachano et al., 2021; Bell and Vertino, 2017). In the SCA-seq data that indicated the high-order interaction and CpG methylation, we found 76,418 reads overlapping with CGIs on chromosome 7, and the majority of oCGIs were usually spatially close to the CTCF-binding motifs and active histone markers, such as H3K27ac and H3K4me3, suggesting their active regulatory functions (Figure 5b). By examining the methylation status on reads, as expected, these read segments demonstrated lower CpG methylation and higher chromatin accessibility (GpC methylation), which further supports their roles in gene activation (Figure 5b). In a previously published study (Pachano et al., 2021), oCGIs were considered to act as tethering elements that promote topological interaction between enhancers and distally located genes to regulate gene expression. In SCA-seq, we observed that 60% of oCGIs tethered at least one type of regulatory elements, such as enhancers, CTCFs, and promoters (Figure 5c). After normalizing by the total number of regulatory elements, we found that the oCGIs preferentially interacted with CTCF and promoters, comparing with non-CGIs (p < 2.6 \u00d7 10\u221216, binomial test, background frequency was used as control) (Figure 5d). Further analysis of each concatemer type showed that 39% of oCGI-enhancer concatemers and oCGI-CTCF concatemers included more than two enhancers or CTCF motifs. In contrast, most of the oCGIs tethered to one promoter (Figure 5e). However, we found that CpG methylation on oCGIs was weakly correlated with the chromatin accessibility of promoters in regression analysis, whose mechanism of regulation need to be further studied. Overall, oCGIs were found to tether the enhancers and CTCF motifs to communicate with the promoters, which extends our understanding of oCGI regulatory functions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87868/elife-87868-fig5-v1.jpg)\n\n**Figure 5.:** (a) Schematic illustration of orphan CGI (oCGI) spatial contacts with CTCF, promoter, and enhancer. oCGIs are CpG islands that are far away (at least 1 kb) from enhancers or promoters. The enhancer and promoter annotations were downloaded from ENCODE. The eCGIs and pCGIs are defined as CpG islands near or overlapping with the enhancers and promoters. oCGIs comprised 65% of all CGIs that did not directly contact enhancers or promoters. The pie chart shows the abundance of different types of CGIs. (b) Number of overlaps between three types of CGIs containing concatemers and histone marks/CTCF site. About 83% of the reads contained oCGI with low CpG methylation level, mainly located with active histone markers that shows high level of chromatin accessibility, such as H3K27ac and H3K4me3, as well as the CTCF-binding motif. H3K27me3 and H3K36me3, which are inactive histone makers, were on the opposite DNA methylation state. (c) The upset plots indicate types of interaction between oCGI and other elements in one concatemer. On average, one concatemer has five DNA segments. These segments with oCGIs included CTCF-binding motifs, enhancers, promoters, and other proteins. The y-axis indicates the number of concatemers. (d) Stacked bar plot shows the abundance of each type of elements interacting with concatemers harboring oCGI or random-sampled concatemers (control). The number of interacting elements was normalized by the total number for itself. oCGIs preferentially interacted with CTCF-binding motifs and promoters. (e) Density plot demonstrating the distribution of the number of elements on concatemers. Thirty-nine percent of concatemers have more than one enhancer and CTCF-binding motif with oCGIs. Promoters were in contact only with oCGIs.\n\n## Discussion\n\nWe developed SCA-seq to expand the notion of traditional chromatin accessibility to high-dimensional space by simultaneously resolving chromatin accessibility and genome conformation. Compared with 1D ATAC-seq, SCA-seq might more closely represent the true structure of the native genome. With SCA-seq, we found that genome spatial contacts maintained non-uniform chromatin accessibility, suggesting complex genome regulation in the 3D space. SCA-seq could be a multi-omics tool to simultaneously analyzed the DNA methylation, chromatin accessibility, transcription factor binding, and chromatin conformation.\n\nFor the single-molecule resolution, the efficiency of methyltransferase labeling must be ensured. We used lambda DNA in vitro labeling and in vivo CTCF motif signal to estimate labeling efficiency. The binomial test was utilized to correct the labeling accuracy at a single-molecule level. Then, relatively reliably accessible chromatin markers were obtained. However, it is still possible for such a marker to be missed or overridden in the case of insufficient enzyme activity. Because suboptimal labeling efficiency may lead to deviations from our conclusions, our analysis in the following experiments was mainly based on the single-molecule accessible signals from called accessible region to reduce background noise. Given the high heterogeneity of the dynamic genome structure and SCA-seq resolution, a much higher sequencing throughput is required to achieve analysis at a single-molecule level in a specific spatial location. The cost of sequencing a 40\u00d7 depth human sample using SCA-seq is approximately 1300 USD per sample. The cost may pose a limitation when attempting to perform high-depth SCA-seq profiling of large number of samples. It is important to note that SCA-seq requires the use of a regular Oxford nanopore sequencer with an R9.4.1 chip. While this chip is currently available, there is a possibility that Oxford Nanopore may discontinue it in the future.\n\nThe eigenvalue and insulation score of SCA-seq moderately correlated with those of gold standard Hi-C (0.91 and 0.84), and the moderate correlations were also true in all other multiplex-order chromatin conformation methods, such as pore-C (Deshpande et al., 2022), SPRITE (Quinodoz et al., 2018), and ChIA-Drop (Zheng et al., 2019). After we studied this problem deeper, we found that there may be two reasons for this. First, the conversion from multi-contacts to pairwise contacts overrepresented some interactions. In our algorithm, we significantly resolved this issue by weighted transformation, which increased the correlation coefficient to 0.9. Second, we found that the low correlation regions had lower GC density and low read counts (Figure 2\u2014figure supplement 4e-h). It has been pointed out previously (Niu et al., 2019) that PCR (polymerase chain reaction) amplification could bias eigenvalues and insulation scores. In contrast, pore-C and SCA-seq are non-amplification methods. After the quality filter of low-coverage regions, the correlation between the two methods was significantly improved.\n\nSCA-seq was created as a multi-omics tool to examine both chromosome conformation and chromatin accessibility. It is important to discuss different levels of resolution of chromosome conformation capture and chromatin accessibility. The resolution of the chromosome conformation capture is approximately 700 bp, whereas that of the conventional chromatin accessibility is approximately 200 bp. Not all precise accessible\u2013accessible chromatin interactions can be determined. Therefore, an alternative hypothesis is that the interaction loci are located outside the accessible chromatin. Therefore, improvement of the resolution of chromosome conformation capture in SCA-seq is needed to determine spatial accessibility interaction accurately.\n\nOverall, our results demonstrated that SCA-seq could resolve genome accessibility locations in the three-dimensional space, facilitating the observation of subgroups of chromatin conformation regions with a specific binding pattern, conformation-based chromatin accessibility, and conformation-based native CpG methylation. SCA-seq might pave the way to explore dynamic genome structures in greater detail.\n\n## Methods\n\nThe detailed protocol could be found https://www.protocols.io/view/sca-seq-b6a6rahe. The bioinformatic script could be found https://github.com/genometube/SCA-seq (genometube, 2024). The data source and QC information could be found in Supplementary files 1 and 2.\n\n### Cell culture\n\nMouse mammary gland carcinoma cell line 4T1 and the derivative human embryo kidney cell line which expresses a mutant version of the SV40 large T antigen (HEK293T) were obtained from ATCC. 4T1 were grown in RPMI1640 (Gibco, 11875093) supplemented with 10% fetal bovine serum (FBS; Gibco, 10099141), and 1% penicillin\u2013streptomycin (Gibco, 15140122). HEK 293T was maintained in Dulbecco\u2019s modified Eagle medium-high glucose (Thermo Fisher 11995065) supplemented with 10% FBS (Thermo Fisher 1009141). Cell lines were regularly checked for mycoplasma infection (Yeasen, 40612ES25) and confirmed negative.\n\n### Cross-linking\n\nFive million cells were washed one time in chilled 1\u00d7 phosphate-buffered saline (PBS) in a 15-ml centrifuge tube, pelleted by centrifugation at 500 \u00d7 g for 3 min at 4\u00b0C. Cells were resuspended by gently pipetting in 5 ml 1\u00d7 PBS with formaladehyde (1% final concentration). Incubating cells at room temperature for 10 min, add 265 \u03bcl of 2.5 M glycine (125 mM final concentration) and incubate at room temperature for 5 min to quench the cross-linking. Centrifugate the mix at 500 \u00d7 g for 3 min at 4\u00b0C. Wash cells two times with chilled 1\u00d7 PBS.\n\n### Nuclei isolation and methylation\n\nCell pellet was resuspended with cold lysis buffer: 10 mM HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid) \u2013NaOH pH 7.5, 10 mM NaCl, 3 mM MgCl2, 1\u00d7 proteinase inhibitor (Sigma 11873580001), 0.1% Tween-20, 0.1 mg/ml bovine serum albumin (BSA), 0.1 mM EDTA (Ethylenediaminetetraacetic acid), 0.5% CA-630, incubate on ice for 5 min. Centrifugate lysis mixture at 500 \u00d7 g for 5 min at 4\u00b0C to collect the nuclei. Washed the nuclei once with 1\u00d7 GC buffer (NEB M0227L) then resuspend 2 million nuclei in 500 \u03bcl methylation reaction mixture: 1\u00d7 GC buffer, 200 U M.CvipI (NEB M0227L), 96 \u03bcM S-adenosylmethionine, 300 mM sucrose, 0.1 mg BSA, 1\u00d7 proteinase inhibitor, 0.1% Tween-20. Incubate the reaction for 3 hr at 37, add 96 \u03bcM SAM (S-Adenosylmethionine) and 20 U M.CvipI per hour. Centrifugate at 500 \u00d7 g for 10 min at 4\u00b0C to collect nuclei, wash the nuclei once with chilled HEPES\u2013NaOH pH 7.5 and centrifugate to collect nuclei.\n\n### Restriction enzyme digest\n\nResuspend nuclei with 81 \u03bcl cold HEPES\u2013NaOH pH 7.5, add 9 \u03bcl 1% sodium dodecyl sulfate (SDS) and react at 65\u00b0C for 10 min to denature the chromatin, take the tube on ice immediately after the reaction. We also tried 0.5% SDS, and the results were similar (data not shown). Add 5 \u03bcl 20% Triton X-100 and incubate on ice for 10 min to quench SDS. Prepare digestion mixture: 140 U DpnII (NEB R0543L), 14 \u03bcl 10\u00d7 HEPES-buffer3.1 (50 mM HEPES\u2013NaOH pH 8.0, 100 mM NaCl, 10 mM MgCl2, 100 \u03bcg/ml BSA), add nuclei suspension and nuclease-free water into mixture to achieve a final volume of 140 \u03bcl. Incubate digest mixture in a thermomixer at 37\u00b0C for 18 hr with 900 rpm rotation.\n\n### Ligation\n\nDpnII digests were heat inactivated at 65\u00b0C for 20 min with 700 rpm rotation, average digests to 70 \u03bcl per tube, add 14 \u03bcl T4 DNA Ligase buffer (NEB M0202L), 14 \u03bcl T4 DNA Ligase (NEB M0202L), 1 mM ATP and nuclease-free water to achieve a final volume of 140 \u03bcl. The ligation was incubated at 16\u00b0C for 10 hr with 800 rpm rotation.\n\n### Reverse cross-linking and DNA purification\n\nCollect all ligation into one 1.5 ml tube, add equal volume of 2\u00d7 sera-lysis (2% polyvinylpyrrolidone 40, 2% sodium metabisulfite, 1.0 M sodium chloride, 0.2 M Tris\u2013HCl pH 8.0, 0.1 M EDTA, 2.5% SDS), add 5 \u03bcl RNaseA (QIAGEN 19101), incubate at 56\u00b0C for 30 min. Add 10 \u03bcl Proteinase K (QIAGEN 19131), 50\u00b0C overnight incubation with 900 rpm rotation. DNA was purified with high molecular weight gDNA extraction protocol (Baptiste Mayjonade, 2016).\n\n### Nanopore sequencing\n\nThe DNA from the reactions were purified, and library were prepared following the manufacturer\u2019s protocol of SQK-LSK109 (Nanopore, SQK-LSK109). The library was sequenced in the ONT PromethION platform with R9.4.1 flow cell.\n\n### WGBS\n\nThe WGBS was parallelly performed from the purified DNA product by using MGIEasy Whole Genome Bisulfite Sequencing Library Prep Kit (MGI 1000005251). The final products were sequenced by MGISEQ-2000.\n\n### SCA-seq pipeline\n\nWe developed a reproducible bioinformatics pipeline to analyze the M.CvipI footprint and CpG signal on SCA-seq concatemers. Briefly, the workflow starts with the alignment of SCA-seq reads to a reference genome by bwa (v0.7.12) using the parameter bwa bwasw -b 5 -q 2 -r 1 -T 15 -z 10. The mapping score \u226530, and reads with length <50 bp were set to filter out the low-quality mapping segment. To remove the non-chimeric pairs due to ligation of cognate free ends or incomplete digestion, each alignment is assigned to an in silico restriction digest based on the midpoint of alignment. The locus of each segment on each concatemer is summarized by converting the filtered alignment to a segment bed file sorted by read ID first and then the genome locus. The alignment bam file is also used to call the GpC and CpG methylation by Nanopolish (v0.11.1) call-methylation with the cpggpc model (--methylation cpggpc). The default cut-off for log-likelihood ratios are used to determine methylated GpC (>1) and methylated CpG sites (>1.5) (Lee et al., 2020). The methylation call is then counted to each segment in the segment bed file to derive the methylated and unmethylated count of GpC and CpG for each segment of the concatemers.\n\nTo filter out background GpC methylation signal, we performed a segment-level sliding window analysis combined with a binomial test. The GpC methylation signal was divided into 50 bp sliding windows with a 10-bp step size. For a given window, let the background GpC methylation ratio be the probability of success in a given trail, where the number of methylated GpC sites be the number of successes and the total number of GpC sites be the number of trials. A right-tailed binomial test was performed to determine if the GpC methylation ratio in the given window is significantly greater than the background GpC methylation ratio (p < 0.05). The accessible region on the given segment was then defined by merging the overlapping windows that pass the binomial as well as contain at least 2 GpC sites. Once the accessible regions on each segment of each read is determined, the GpC methylation signal out of the accessible regions are removed to reduce the random noise in GpC methylation signal. For the CTCF footprint analysis, we identify CTCF site with footprints on each segment if the accessible regions are called nearby the CTCF sites (at least 20 bp away from the center of CTCF sites) but not on the CTCF sites.\n\n### SCA-seq and Hi-C comparisons\n\nSCA-seq concatemers were converted into virtual pairwise contacts in order to correlate with the published Hi-C datasets. For a given pair of two segments in an SCA-seq concatemer, the number of segments between the two segments (k) is positively correlated with the spatial distance between them and negatively correlated with the Hi-C observable counts. Therefore, we down-weighted each of the two segments in an SCA-seq concatemer such that each pair of two segments has a weight of 1/2k. The decomposed SCA-seq contact matrix was treated as a Hi-C contact matrix and analyzed by Cooltools (v0.4.1) (Abdennur, 2022). The contact matrix was normalized using cooler balance. Then the eigenvector scores and TAD insulation score were calculated by Cooltools call-compartments and Cooltools diamond-insulation tools. The linear correlation between the pore-C and Hi-C contact matrices was then measured by eigenvector scores (compartment score) and TAD insulation score calculated by Cooltools. The variation of individual pore-C runs, individual SCA-seq runs, and downsampled SCA-seq datasets were also examined by the above metrics. Loop anchors were identified by ENCODE CTCF ChiP-seq peaks (ENCSR135CRI). Cooltools pile-up was used to compute aggregate contact maps at 10 kb resolution and centered at the loop anchors (\u00b1100 kb).\n\n### SCA-seq, ATAC-seq, and DNase-seq comparisons\n\nFor comparison and visualization of bulk accessibility, the conventional bulk ATAC-seq and DNase-seq data of HEK293T peak signals were obtained from Gene Expression Omnibus (GEO) accession GSE108513 and GSM1008573. The SCA-seq accessibility peak calling was performed in a similar way to nanoNOMe (Lee et al., 2020). Briefly, 200 bp window and 20 bp step size continuous regions of GpC methylated counts, unmethylated counts, and GpC methylation ratio were generated from SCA-seq Nanopolish calls. The regions of GpC methylation ratio greater than 99th percentile of the regions were selected as candidate first. The significance of each candidate region was calculated by the one-tailed binomial test of raw frequency of accessibility (methylated GpC site/total GpC site) to reject the null probability, which is defined by the overall regions GpC methylation ratio. The p-values were corrected for multiple testing by Benjamini\u2013Hochberg correction. The adjusted p-values <0.001 and widths greater than 50 bps were determined as the SCA-seq accessibility peaks. The overlapping peaks between SCA-seq, ATAC-seq, and DNase-seq were identified by bedtools (v2.26.0) intersect. The CTCF-binding sites, enhancer regions, and promoter regions are obtained from the Ensembl Regulatory Build (Zerbino et al., 2015) in the 1D track view and pile-up analysis.\n\n### Analysis of cytosine modifications called by WGBS\n\nThe cytosine modification analysis of WGBS data generally follows the rules in Heyn et al., 2012. In brief, the two sets of hg19 genome reference sequences were prepared; the C to T reference that had the C residues replaced by Ts, and the G to A reference that had the T residues replaced by As. The two sets of reads are prepared the same way; the C to T reads and G to A reads. The two sets of reads were aligned to the two sets of genome separately by GEM alignment software (Marco-Sola et al., 2012) which allows 4 mismatches of bases with quality score over 25. The lack of methylation of C residues would be recognized as C to T or G to A conversions. The methylation ratio of methylated GpC or CpG residues in 200 bp windows was then calculated for the correlation analysis with the SCA-seq methylation calling.\n\n### Estimate the labeling efficiency in vivo\n\nAs previous research, the CTCF motif maintained the accessible chromatin in neighboring 200 bp region. Consider the resolution in Hi-C and experimental fragmentation, we selected the 1000 bp bins with the documented CTCF motif in center. The CpG methylation levels were negatively correlated with the chromatin accessibility. Then the segment with low CpG methylation were expected to maintain the accessible chromatin status with CTCF binding. We hypothesized that the segments with low CpG methylation (CpG ratio <0.25) and low chromatin accessibility (GpC ratio <0.1) were not efficiently labeled.\n\n### Identification of accessible segments by binomial test\n\nThe medium segment length is 500 bp, which is close to the general size of accessible chromatin segments. We first calculated the background level of the methyl-GpC (accessible) and non-methyl-GpC (inaccessible) probability on the segments. We used the non-treated genomic DNAs as the background, and 0.03 (GpC background) were the average GpC frequency on segments. Then we performed the binomial test (R basics) for each segment in M.CviPI-treated samples to test the null hypothesis that if labeled GpCs (GpC \u22654) was equal or smaller than the background GpCs. We further to investigate the confidence level of inaccessible chromatin with the non-methyl GpC. The non-methyl-GpC frequency in M.CviPI-treated spike-in is 0.3. Therefore, we roughly estimated that 21% GpCs(p) were not efficiently labeled by M.CviPI. Then we performed the binomial test (R basics) for each segment in M.CviPI-treated samples to test the null hypothesis that if the non-methyl GpCs on heterochromatins were equal or larger than the enzymatic inefficiency. For both p-value, the probabilities were corrected for multiple testing using the Benjamini\u2013Hochberg correction and accessible/inaccessible segments with adjusted p-value less than 0.05. We determined the accessible segments first, and then we further determined the inaccessible segments in the rest. There are ~2 million segments which is undetermined and discarded.\n\n### Statistics\n\nMost of the parametric data which were distributed as normal distribution (log normal distribution), were performed in two-side t-test. The Pearson\u2019s correlation analysis was also performed for normal distribution data. We used the Fisher\u2019s exact test for the differential accessibility analysis in SCA-seq. Other non-parametric or abnormally distributed data were performed as Wilcoxon rank test.\n\n### Data availability\n\nThe data were stored at https://db.cngb.org/search/project/CNP0002862/ and NCBI BioProject PRJNA917827. All custom codes for SCA-seq are available from GitHub https://github.com/genometube/SCA-seq.\n",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Xiaobing Shi, Van Andel Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87868.4.sa0](https://doi.org/10.7554/eLife.87868.4.sa0)\n\nThis paper reports the development of SCA-seq, a new method derived from PORE-C for simultaneously measuring chromatin accessibility, genome 3D and CpG DNA methylation. Most of the conclusions are supported by convincing data. SCA-seq has the potential to become a useful tool to the scientific communities to interrogate genome structure-function relationships.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87868.4.sa1](https://doi.org/10.7554/eLife.87868.4.sa1)\n\nIn this work, Xie et al. developed SCA-seq, which is a multiOME mapping method that can obtain chromatin accessibility, methylation, and 3D genome information at the same time. SCA-seq first uses M.CviPI DNA methyltransferase to treat chromatin, then perform proximity ligation followed by long-read sequencing. This method is highly relevant to a few previously reported long read sequencing technologies. Specifically, NanoNome, SMAC-seq, and Fiber-seq have been reported to use m6A or GpC methyltransferase accessibility to map open chromatin, or open chromatin together with CpG methylation; Pore-C and MC-3C have been reported to use long read sequencing to map multiplex chromatin interactions, or together with CpG methylation. Therefore, as a combination of NanoNome/SMAC-seq/Fiber-seq and Pore-C/MC-3C, SCA-seq is one step forward. The authors tested SCA-seq in 293T cells and performed benchmark analyses testing the performance of SCA-seq in generating each data module (open chromatin and 3D genome). The QC metrics appear to be good and I am convinced that this is a valuable addition to the toolsets of multi-OMIC long-read sequencing mapping.\n",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d598e1f3-4dbd-4ff5-8f6c-bad0d7e98ff7",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C1",
+      "claim": "SCA-seq uses methyltransferase enzyme (EcoGII or M.CviPI) to artificially mark accessible chromatin regions after cell fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "After cell fixation, we used a methyltransferase enzyme (EcoGII or M.CviPI) to artificially mark accessible chromatin regions. (Figure 1a,2-3 )",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly describes the experimental procedure where methyltransferases are used to label accessible chromatin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "5f061b8a-af61-4938-a0ef-aa1c6ca6ddf5",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C2",
+      "claim": "SCA-seq preserves chromatin accessibility information as m6A or GpC methylation marks.",
+      "claim_type": "EXPLICIT",
+      "source": "After the chromatin accessibility information was preserved as m6A or GpC methylation marks, we conducted digestion and ligation steps using chromatin conformation capturing protocols, relying on proximity ligation to ligate together multiple linearly distant DNA fragments that are close to each other in the three-dimensional space. (Figure 1a,4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that accessibility information is preserved as specific methylation marks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "9d664c05-8aac-4319-b942-690442748f53",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C3",
+      "claim": "SCA-seq can capture high cardinality genome conformation, unlike conventional next-generation sequencing-based chromatin conformation protocols that only capture interaction between two genomic loci.",
+      "claim_type": "EXPLICIT",
+      "source": "The conventional next-generation sequencing-based chromatin conformation protocols only captured the interaction between two genomic loci (Figure 1a). Unlike the conventional protocol, the proximity ligation in SCA-seq, not limited to the first-order ligation, can occur multiple times in one concatemer (genome fragments fixed together as a cluster), informing about the high cardinality of the genome conformation (Figure 1a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the technical capability of SCA-seq to capture multiple interactions, supported by Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "9990d8ef-a409-4f13-9c24-f0e40e5083b9",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C4",
+      "claim": "SCA-seq preserves CpG methylation epigenetic marks, chromatin inaccessibility, and high-order chromatin conformation data compared to Trac-loop, Hi-CAR, and NicE-C.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the output of the comparable techniques Trac-loop (Lai et al., 2018), Hi-CAR (Wei et al., 2020), and NicE-C (Luo et al., 2022), which also capture the accessible chromatin conformation, the SCA-seq preserved more multi-omics information, for example, CpG methylation epigenetic marks, chromatin inaccessibility, and high-order chromatin conformation data (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly compares SCA-seq capabilities with other methods, referencing Figure 1b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "36d42938-f440-4733-a576-f1fc4310f572",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C5",
+      "claim": "High-density labeled m6A modification blocks or impairs the activity of the majority of restriction enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when EcoGII was used, the high-density labeled m6A modification either blocked or impaired the activity of the majority of restriction enzymes and produced long-digested fragments, leading to lower chromatin conformation resolution (Figure 1\u2014figure supplement 1a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes experimental observations of enzyme inhibition by m6A modifications, supported by supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "678c9778-8475-4e81-80f4-0e23db3a4be4",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C6",
+      "claim": "DpnII and other enzymes without GC pattern in recognition sites efficiently cut DNA molecules with both methylated and unmethylated GpCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the following steps, DpnII and other enzymes (without GC pattern in the recognition sites) efficiently cut DNA molecules with both methylated and unmethylated GpCs (Figure 1\u2014figure supplement 1c\u2013e), followed by ligation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports experimental results showing enzyme activity on GpC-methylated DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "b16b2895-3d67-4f49-91cc-d4a7287a3636",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C7",
+      "claim": "M.CviPI might be a better choice in SCA-seq than EcoGII/DpnI considering the unbiased digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the unbiased digestion, M.CviPI might be a better choice in SCA-seq than EcoGII/DpnI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a comparative assessment based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "66c4cd26-9179-40fd-bc6b-f00ac774c0e3",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C8",
+      "claim": "SCA-seq generated 129.94 Gb (36.9\u00d7 coverage) of mapped sequencing data with an N50 read length of 4446 bp for HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated 129.94 Gb (36.9\u00d7 coverage) of mapped sequencing data with an N50 read length of 4446 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific sequencing metrics from the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "cef2864b-547e-471a-a174-86e35a5984e9",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C9",
+      "claim": "Nanopolish with the cpggpc calling module achieved considerable success with AUC CpG = 0.908 and GpC = 0.984.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain the methylation information from the nanopore data, we adopted well-established methylation caller Nanopolish with the cpggpc calling module (Lee et al., 2020) and achieve considerable success (AUC [Area under the ROC Curve] CpG = 0.908, GpC = 0.984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific performance metrics for the methylation calling algorithm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "e550a0b8-b625-4488-a87f-9c9265be3f86",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C10",
+      "claim": "The results of WGBS analysis were highly correlated with those of Nanopolish, supporting the accuracy of the methylation caller.",
+      "claim_type": "EXPLICIT",
+      "source": "In the further validation of methylation calling, we parallelly performed the gold standard whole-genome bisulfite sequencing (WGBS). The results of the WGBS analysis were highly correlated with those of Nanopolish (Figure 2\u2014figure supplement 1), supporting the accuracy of the methylation caller.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes validation experiments comparing two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "565e33ba-2f72-4f60-a260-cf17fdc2955a",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C11",
+      "claim": "Native or false positive GpC regions accounted for only 1.8% in the unlabeled genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We first checked the native or false positive GpC regions, which were also very rare and accounted for only 1.8% in the unlabeled genome (Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports a specific measurement of background GpC methylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "686fd5d8-4db9-4678-83d4-7aa924791fff",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C12",
+      "claim": "GpC ratio of the M.CviPI-treated genomes was significantly higher than the background GpC ratio (>10-fold change, <2.6 \u00d7 10\u221216, Student's t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "GpC ratio of the M.CviPI-treated genomes was significantly higher than the background GpC ratio (Figure 2\u2014figure supplement 2b, >10-fold change, <2.6 \u00d7 10\u221216, Student's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison of GpC ratios with specific p-value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "34b733a2-a6a2-45ba-824e-0035ddae79d9",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C13",
+      "claim": "Of the 87,991 accessibility peaks called from the SCA-seq data in the whole genome, 80% overlapped with peaks observed in ATAC-seq or DNase-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 87,991 accessibility peaks called from the SCA-seq data in the whole genome, 80% overlapped with peaks observed in ATAC-seq or DNase-seq (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific overlap statistics between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "23cdeeca-04b6-4ae9-a08a-bae767766cf9",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C14",
+      "claim": "SCA-seq showed a peak sensitivity of 0.73 and a specificity of 0.91.",
+      "claim_type": "EXPLICIT",
+      "source": "The obtained results showed a peak sensitivity of 0.73 and a specificity of 0.91 for SCA-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific performance metrics for SCA-seq.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "b5ad6b9e-577d-429f-b62f-53bd27930042",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C15",
+      "claim": "The ATAC-seq/DNase-seq unique peaks were less frequent, as indicated by the larger p-value calculated by MACS2.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATAC-seq/DNase-seq unique peaks were less frequent, as indicated by the larger p-value calculated by MACS2 (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes statistical analysis of peak calling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "b870d8d2-58c1-4e88-8711-fc4f5a3ddd5e",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C16",
+      "claim": "The native CpG methylation level decreased, whereas GpC accessibility increased around the CTCF-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the native CpG methylation level decreased, whereas GpC accessibility increased around the CTCF-binding sites (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed patterns around CTCF binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "8df2940a-b036-49a3-83f8-9d444d417cc9",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C17",
+      "claim": "SCA-seq showed similar nucleosome depletion patterns around TSSs as ATAC-seq/DNase-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "At active human transcription start sites (TSSs) with high expression, 'open' chromatin regions hypersensitive to transposon attack were observed in ATAC-seq/DNase-seq. SCA-seq showed similar nucleosome depletion patterns around TSSs (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares patterns observed in different methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "33a4642b-a4f2-4597-8ed0-bd6610045ab1",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C18",
+      "claim": "Inactive TSSs (low quantile of gene expression) were less accessible than active TSSs (upper quantile of gene expression).",
+      "claim_type": "EXPLICIT",
+      "source": "Inactive TSSs (low quantile of gene expression) were less accessible than active TSSs (upper quantile of gene expression) (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports correlation between gene expression and accessibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "d7204b7f-20e6-474a-87ae-2ea566512b78",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C19",
+      "claim": "The segment median length was approximately 700 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The segment median length was approximately 700 bp (Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports a specific measurement of fragment length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "98e200f0-bfcd-4711-89f4-b13734beb34f",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C20",
+      "claim": "Among the informative intra-chromosome PETs, 0.1% of the PETs (contact distance) were <150 bp; 0.3% of them ranged from 150 to 1000 bp; 24.5% were 1000\u2013200,000 bp; and 75.1% were >200,000 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the informative intra-chromosome PETs, 0.1% of the PETs (contact distance) were <150 bp; 0.3% of them ranged from 150 to 1000 bp; 24.5% were 1000\u2013200,000 bp; and 75.1% were >200,000 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific distribution statistics of contact distances.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "da8f7197-d0ff-419a-a332-f8dfba38a935",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C21",
+      "claim": "For intra-chromosome interactions, 14.7% of the reads contained two segments (cardinality = 2); approximately 14.5% of the reads contained 3\u20135 segments (cardinality = 3\u20135); and 5.4% of the reads had more than five segments (cardinality >5).",
+      "claim_type": "EXPLICIT",
+      "source": "As for the intra-chromosome interactions, 14.7% of the reads contained two segments (cardinality = 2); approximately 14.5% of the reads contained 3\u20135 segments (cardinality = 3\u20135); and 5.4% of the reads had more than five segments (cardinality >5) (Figure 3\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific distribution of read cardinalities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "4ce90e78-8f51-4c1e-bf3e-667b4261131d",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C22",
+      "claim": "Most of the contacts from the reads with fewer segments appeared to have closer contact distance.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the previous report (Ulahannan et al., 2019), most of the contacts from the reads with fewer segments appeared to have closer contact distance (Figure 3\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed relationship between segment number and contact distance, citing previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "642c8995-7ad4-4a82-ae95-8da9291a496d",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C23",
+      "claim": "The contacts from the reads with more segments appeared to have more distal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The contacts from the reads with more segments appeared to have more distal interactions (Figure 3\u2014figure supplement 2c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed relationship between segment number and interaction distance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "7762b9b3-f0f5-4d82-9652-a92063722cd6",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C24",
+      "claim": "Compared with the output of similar methods, such as Trac-loop and HiCAR, SCA-seq also resolved more high-cardinality chromatin conformation and distal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the output of similar methods, such as Trac-loop and HiCAR, SCA-seq also resolved more high-cardinality chromatin conformation and distal interactions (Figure 3\u2014figure supplement 2e, f, g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares SCA-seq performance with other methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "9d91c9e0-e8c0-4ece-bc74-7f00505c003d",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C25",
+      "claim": "False positive call rates of SCA-seq and Hi-C, inferred from hybrid PETs that consisted of mitochondrial DNA and genomic DNA, were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "False positive call rates of SCA-seq and Hi-C, inferred from hybrid PETs that consisted of mitochondrial DNA and genomic DNA, were similar (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparison of false positive rates between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "0ac58114-3486-4adb-ade8-8883c80b465e",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C26",
+      "claim": "The compartment score correlation between SCA-seq replicates and pore-C replicates was approximately 0.94, suggesting comparable reproducibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The compartment score correlation between SCA-seq replicates and pore-C replicates was approximately 0.94, suggesting comparable reproducibility (Figure 3\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific correlation values as a measure of reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "b2453223-147c-44dc-9926-e6678f51e635",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C27",
+      "claim": "The correlation coefficients of the eigenvector and insulation scores between SCA-seq and Hi-C were 0.91 and 0.84.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation coefficients of the eigenvector and insulation scores were 0.91 and 0.84, that is, slightly lower than we expected (Figure 3d and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific correlation values between methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "2771779b-1492-4a1b-8efc-e88d0c89d02e",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C28",
+      "claim": "From the analysis of a 130G base run of HEK293T SCA-seq, 105,598,180 ligation junctions and 492,502,643 virtual pairwise contacts were successfully identified, which resulted in coverage of 5,625,908 dpnII digested restriction fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "From the analysis of a 130G base run of HEK293T SCA-seq, we successfully identified 105,598,180 ligation junctions and 492,502,643 virtual pairwise contacts, which resulted in coverage of 5,625,908 dpnII digested restriction fragments (7,127,633 dpnII in silico restriction fragments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific quantitative results from the sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "f383285b-08e8-4eed-af7d-48e355c5e212",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C29",
+      "claim": "66% of the concatemers were compartment specific (all the segments in one concatemer belonged to either compartment A or B), and 34% were non-specific (mixed composition of segments from compartments A and B).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that 66% of the concatemers were compartment specific (all the segments in one concatemer belonged to either compartment A or B), and 34% were non-specific (mixed composition of segments from compartments A and B) (Tavares-Cadete et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific percentages of compartment-specific concatemers, citing previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "6bce54c9-936c-4e24-8d35-4011d1cc1440",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C30",
+      "claim": "Occupation of binding sites by CTCF could lead to the emergence of short regions (~50 bp) inaccessible to methyltransferase labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "As previous publications mentioned, occupation of binding sites by CTCF could lead to the emergence of short regions (~50 bp) inaccessible to methyltransferase labeling (Stergachis et al., 2020; Battaglia et al., 2022), indicating the CTCF-binding status on the CTCF motif loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous publications to support this claim about CTCF binding patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "34815798-b601-491e-a3c0-5f129b094021",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C31",
+      "claim": "CTCF binding resulted in higher cardinality and more distal interactions than the non-CTCF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the CTCF binding resulted in higher cardinality and more distal interactions than the non-CTCF binding, suggesting that CTCF binding facilitates formation of a more complex structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports observed differences between CTCF-bound and non-bound regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "a298eac3-992b-4223-a3e0-da644e618476",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C32",
+      "claim": "Enzyme labeling efficiency was 79\u201388%, based on the CTCF motifs and the lambda DNA spike-in control measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we determined enzyme labeling efficiency, which was 79\u201388%, based on the CTCF motifs and the lambda DNA spike-in control measurements (Figure 2\u2014figure supplement 2b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific efficiency measurements from control experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "57c1f567-124a-41e7-84dd-4111e5be8fbb",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C33",
+      "claim": "Accessible and inaccessible DNAs were ligated together in SCA-seq, suggesting heterogeneous accessibility of the spatially neighboring DNA regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, accessible and inaccessible DNAs were ligated together in SCA-seq (Figure 4a), suggesting heterogeneous accessibility of the spatially neighboring DNA regions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports an unexpected observation and provides an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "a7e0fee4-38ab-4558-9719-e1ffcb4d22c2",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C34",
+      "claim": "Compartment A had a significantly higher fraction of accessible segments than compartment B.",
+      "claim_type": "EXPLICIT",
+      "source": "Compartment A had a significantly higher fraction of accessible segments than compartment B (Figure 4\u2014figure supplement 1a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports a significant difference between compartments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "be1f8c5f-2b73-458e-9d20-6f3363f7e881",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C35",
+      "claim": "29% of the genome concatemers were inaccessible on all enclosed segments (the fraction of accessible segments <0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Our overall genome concatemer calculations showed that 29% of the genome concatemers were inaccessible on all enclosed segments (the fraction of accessible segments <0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific percentages from genome-wide analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "8b2b9ed2-f970-447c-b066-719815533d81",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C36",
+      "claim": "62.2% of genome concatemers had both accessible and inaccessible segments (hybrid concatemers), and only 8.8% maintained all segments as accessible (the fraction of accessible segments >0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, 62.2% of genome concatemers had both accessible and inaccessible segments (hybrid concatemers), and only 8.8% maintained all segments as accessible (the fraction of accessible segments >0.9) (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific percentages of different concatemer types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "b55badd6-306c-4002-97ea-f1320bf6fe2f",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C37",
+      "claim": "Hybrid concatemers tended to accumulate around the TAD boundaries and contain more distant connections.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that hybrid concatemers tended to accumulate around the TAD boundaries and contain more distant connections (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed spatial distribution patterns of hybrid concatemers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "7b1f94da-db08-4d72-8ef2-dd9cdb1b6171",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C38",
+      "claim": "The more accessible segments tended to cluster as high cardinality, also implying their distal and high-cardinality interaction preference on the hybrid concatemers.",
+      "claim_type": "EXPLICIT",
+      "source": "By plotting the ratio of accessible segments against concatemer cardinality or interaction distance, we revealed that the more accessible segments tended to cluster as high cardinality, also implying their distal and high-cardinality interaction preference on the hybrid concatemers (Figure 4c and Figure 4\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed correlations between accessibility and structural features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "c1f4540f-1026-4405-928c-8582d2161fde",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C39",
+      "claim": "Hybrid concatemers comprised more enhancer and promoter elements than inaccessible concatemers.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that the hybrid concatemers comprised more enhancer and promoter elements than inaccessible concatemers (Figure 4d), suggesting the relationship between concatemer type and the extent of transcription regulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed differences in regulatory element content between concatemer types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "8e7f66b1-8e1c-42ce-a19e-c57ab3c1d5c3",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C40",
+      "claim": "Of enhancer and promoter contacts on chromosome 7, 30.3% had accessible\u2013accessible status, 18.5% had accessible\u2013inaccessible status, and 51.2% had inaccessible\u2013inaccessible status.",
+      "claim_type": "EXPLICIT",
+      "source": "We further investigated the enhancer and promoter contacts on chromosome 7, 30.3% of which had accessible\u2013accessible status, 18.5% had accessible\u2013inaccessible status, and 51.2% had inaccessible\u2013inaccessible status (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific percentages of different contact types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "227aaf63-64e2-40f9-b748-905b11e6b65f",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C41",
+      "claim": "The frequency of contacts with accessible enhancer/promoter was highly correlated with gene expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of contacts with accessible enhancer/promoter was highly correlated with gene expression levels (Figure 4f, g and Figure 4\u2014figure supplement 1c, d), supporting the transcription model in which active enhancers initiate promoters by spatial contact (Schoenfelder and Fraser, 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed correlation and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "325487fc-69f2-4fa5-8aed-e47120273138",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C42",
+      "claim": "51.2% of enhancer\u2013promoter interactions were independent of the chromatin-accessible status, suggesting that such spatial interactions were not the only factor regulating the initiation of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 51.2% of enhancer\u2013promoter interactions were independent of the chromatin-accessible status, suggesting that such spatial interactions were not the only factor regulating the initiation of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a specific percentage and provides an interpretation about transcription regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "13af0b68-8a41-4932-8592-d40705fc74b0",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C43",
+      "claim": "CpG islands (CGI) are associated with ~50% of gene promoters (pCGI).",
+      "claim_type": "EXPLICIT",
+      "source": "CpG islands (CGI), which are widespread features of vertebrate genomes, were associated with ~50% of gene promoters (pCGI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a known characteristic of CpG islands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "393510ee-b419-4efa-aca0-6133a0637ca4",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C44",
+      "claim": "76,418 reads overlapping with CGIs on chromosome 7 were found in the SCA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCA-seq data that indicated the high-order interaction and CpG methylation, we found 76,418 reads overlapping with CGIs on chromosome 7, and the majority of oCGIs were usually spatially close to the CTCF-binding motifs and active histone markers, such as H3K27ac and H3K4me3, suggesting their active regulatory functions (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific counts from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "4e7d8c8c-ef7a-4d50-abde-b35c4202fcbc",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C45",
+      "claim": "The majority of oCGIs were usually spatially close to the CTCF-binding motifs and active histone markers, such as H3K27ac and H3K4me3, suggesting their active regulatory functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCA-seq data that indicated the high-order interaction and CpG methylation, we found 76,418 reads overlapping with CGIs on chromosome 7, and the majority of oCGIs were usually spatially close to the CTCF-binding motifs and active histone markers, such as H3K27ac and H3K4me3, suggesting their active regulatory functions (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed spatial relationships and provides functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "afd2096b-2f56-4d13-b1c7-4f10d80c3751",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C46",
+      "claim": "oCGI read segments demonstrated lower CpG methylation and higher chromatin accessibility (GpC methylation).",
+      "claim_type": "EXPLICIT",
+      "source": "By examining the methylation status on reads, as expected, these read segments demonstrated lower CpG methylation and higher chromatin accessibility (GpC methylation), which further supports their roles in gene activation (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed methylation patterns in oCGI regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "4dcf0993-e100-4c30-898a-2ae0ba34bd04",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C47",
+      "claim": "60% of oCGIs tethered at least one type of regulatory elements, such as enhancers, CTCFs, and promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In SCA-seq, we observed that 60% of oCGIs tethered at least one type of regulatory elements, such as enhancers, CTCFs, and promoters (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific percentage of oCGIs with regulatory element interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "99eae1df-8a19-4aed-aaff-4ed1e06cbf5c",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C48",
+      "claim": "The oCGIs preferentially interacted with CTCF and promoters, comparing with non-CGIs (p < 2.6 \u00d7 10\u221216, binomial test, background frequency was used as control).",
+      "claim_type": "EXPLICIT",
+      "source": "After normalizing by the total number of regulatory elements, we found that the oCGIs preferentially interacted with CTCF and promoters, comparing with non-CGIs (p < 2.6 \u00d7 10\u221216, binomial test, background frequency was used as control) (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical analysis showing preferential interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "3eabb160-5de4-40ae-94df-57ba4d8e1402",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C49",
+      "claim": "39% of oCGI-enhancer concatemers and oCGI-CTCF concatemers included more than two enhancers or CTCF motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis of each concatemer type showed that 39% of oCGI-enhancer concatemers and oCGI-CTCF concatemers included more than two enhancers or CTCF motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific percentage from concatemer analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "0d9b6a23-c4cc-418b-a6a6-fd45ae82ef41",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C50",
+      "claim": "Most of the oCGIs tethered to one promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, most of the oCGIs tethered to one promoter (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports observed pattern of oCGI-promoter interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "bdcf22e6-2a43-4efd-a20a-fe394116b4ff",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C51",
+      "claim": "CpG methylation on oCGIs was weakly correlated with the chromatin accessibility of promoters in regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that CpG methylation on oCGIs was weakly correlated with the chromatin accessibility of promoters in regression analysis, whose mechanism of regulation need to be further studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports a weak correlation from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "1537f58a-080f-437a-99f4-5e72a7bbb6cf",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C52",
+      "claim": "oCGIs were found to tether the enhancers and CTCF motifs to communicate with the promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, oCGIs were found to tether the enhancers and CTCF motifs to communicate with the promoters, which extends our understanding of oCGI regulatory functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes findings about oCGI function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "085e8b63-2038-4909-859b-7ace2061a4d1",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C53",
+      "claim": "The genome is organized into a three-dimensional structure in intracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "As the genome is organized into a three-dimensional structure in intracellular space, epigenomic information also has a complex spatial arrangement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states a fundamental principle of genome organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "6ab56708-2956-408f-aba9-8616446e8518",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C54",
+      "claim": "Most epigenetic studies describe locations of methylation marks, chromatin accessibility regions, and histone modifications in the horizontal dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most epigenetic studies describe locations of methylation marks, chromatin accessibility regions, and histone modifications in the horizontal dimension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript characterizes the current state of epigenetic research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "64b6b500-43ca-4d8c-b21c-523a97750798",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C55",
+      "claim": "Active gene expression occurs in the decondensed euchromatin, and silenced genes are localized in the condensed heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The link between gene transcription activity and genome structure was established following an observation that active gene expression occurs in the decondensed euchromatin, and silenced genes are localized in the condensed heterochromatin (Klemm et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge about chromatin structure and gene expression.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "89b7379a-6504-4195-8ca3-34a3657616c6",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C56",
+      "claim": "Accessibility of chromatin acts as a potent gene expression regulatory mechanism by controlling the access of regulatory factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Accessibility of chromatin acts as a potent gene expression regulatory mechanism by controlling the access of regulatory factors (Klemm et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge about chromatin accessibility function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "3fd012d6-511f-44ed-80e7-0d50308b49ae",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C57",
+      "claim": "The accessibility of promoter region could be regulated by the interactions with enhancers or silencers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the accessibility of promoter region could be regulated by the interactions with enhancers or silencers (Kolovos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites an example of spatial regulation of accessibility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "3307faad-de0e-4a68-8050-c269e32eed60",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C58",
+      "claim": "Crawford lab used DNase-seq to establish the relationship between DNase-hypersensitive regions and open chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In a pioneer study, Crawford lab used DNase-seq to establish the relationship between DNase-hypersensitive regions and open chromatin (Boyle et al., 2008; Song and Crawford, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites pioneering work in chromatin accessibility mapping.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "90571016-2f47-45fd-9234-1ebb4a8ff377",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C59",
+      "claim": "The cost of sequencing a 40\u00d7 depth human sample using SCA-seq is approximately 1300 USD per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost of sequencing a 40\u00d7 depth human sample using SCA-seq is approximately 1300 USD per sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific cost information for the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "faa6145a-7dab-41dc-99cf-bba5b56b41ea",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C60",
+      "claim": "SCA-seq requires the use of a regular Oxford nanopore sequencer with an R9.4.1 chip.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that SCA-seq requires the use of a regular Oxford nanopore sequencer with an R9.4.1 chip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript specifies technical requirements for the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "b30d632d-313d-497c-b874-e530713f77c0",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C61",
+      "claim": "The eigenvalue and insulation score of SCA-seq moderately correlated with those of gold standard Hi-C (0.91 and 0.84).",
+      "claim_type": "EXPLICIT",
+      "source": "The eigenvalue and insulation score of SCA-seq moderately correlated with those of gold standard Hi-C (0.91 and 0.84), and the moderate correlations were also true in all other multiplex-order chromatin conformation methods, such as pore-C (Deshpande et al., 2022), SPRITE (Quinodoz et al., 2018), and ChIA-Drop (Zheng et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports correlation values and compares with other methods, citing relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "db89128b-935c-480d-a2ee-1d91bb99d384",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "claim_id": "C62",
+      "claim": "The resolution of the chromosome conformation capture in SCA-seq is approximately 700 bp, whereas that of the conventional chromatin accessibility is approximately 200 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution of the chromosome conformation capture is approximately 700 bp, whereas that of the conventional chromatin accessibility is approximately 200 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses resolution limitations of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4fe736e2-b799-4c80-bd7f-1178f8683244",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SCA-seq uses methyltransferase enzymes (EcoGII or M.CviPI) to label accessible chromatin, with M.CviPI being preferred over EcoGII because high-density m6A modifications from EcoGII impair restriction enzyme activity, while M.CviPI-generated GpC methylation allows efficient digestion by DpnII and other enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C5-C7 provide converging experimental evidence showing that M.CviPI is superior to EcoGII for SCA-seq. The gel electrophoresis data (Figure 1\u2014figure supplement 1) directly demonstrates enzyme inhibition by m6A but not GpC methylation, supporting the methodological choice. The experimental validation is clear and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SCA-seq captures high-cardinality chromatin interactions with multiple segments per concatemer (14.7% with 2 segments, 14.5% with 3-5 segments, 5.4% with >5 segments), enabling detection of multiplex genome conformations and more distal interactions compared to conventional pairwise methods like Hi-C and similar methods like Trac-loop and HiCAR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, and C19-C24 collectively demonstrate SCA-seq's ability to capture high-order chromatin interactions. The quantitative data on segment distributions and contact distances are well-documented, and comparisons with other methods (Figure 3\u2014figure supplement 2) support the superiority claims. The median segment length of ~700 bp provides appropriate resolution for the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "c2d6a57f-c1a8-4f51-8a79-84defccedba4",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SCA-seq methylation calling achieves high accuracy (AUC CpG=0.908, GpC=0.984) validated by WGBS, with low background GpC methylation (1.8%) and significant enrichment in treated samples (>10-fold, p<2.6\u00d710\u207b\u00b2\u00b9\u2076), and enzyme labeling efficiency of 79-88% based on CTCF motifs and lambda DNA controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 and C32 provide comprehensive validation of the methylation calling pipeline. The WGBS validation (C10) serves as an appropriate gold standard, the statistical significance of enrichment is strong (C12), and the efficiency measurements use appropriate controls (C32). The AUC values indicate good discrimination between methylated and unmethylated sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "0e5c2bd0-e37f-47b4-8c9e-d668072ec5c7",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SCA-seq chromatin accessibility measurements show 80% overlap with ATAC-seq/DNase-seq peaks, with sensitivity of 0.73 and specificity of 0.91, and correctly identify expected patterns around CTCF binding sites and TSSs, including nucleosome depletion at active TSSs and reduced accessibility at inactive TSSs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 demonstrate that SCA-seq produces chromatin accessibility data consistent with established methods. The 80% overlap with gold standard methods (C13), reasonable sensitivity/specificity metrics (C14), and correct identification of known biological patterns (C16-C18) provide strong validation. The unique peaks in ATAC-seq/DNase-seq having larger p-values (C15) suggests they may be less robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "f60c1cf4-0afa-4140-8a6c-aa58bb4bbafb",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SCA-seq chromatin conformation data shows similar false positive rates to Hi-C, high reproducibility (compartment score correlation ~0.94 between replicates), and moderate correlation with Hi-C for eigenvector (0.91) and insulation scores (0.84), with 66% of concatemers being compartment-specific and 34% non-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 and C61 provide validation of SCA-seq's chromatin conformation capture capabilities. The reproducibility metrics are strong (C26), and the moderate correlations with Hi-C (C27, C61) are acknowledged by the authors as typical for multiplex methods. The discussion addresses potential sources of discrepancy (GC bias, amplification differences). The compartment specificity data (C29) provides additional biological validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "692e3554-fff4-4425-9558-c460791c5550",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CTCF binding creates ~50 bp inaccessible regions detectable by SCA-seq and results in higher cardinality and more distal chromatin interactions compared to non-CTCF binding regions, suggesting CTCF facilitates formation of more complex chromatin structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 demonstrate SCA-seq's ability to detect transcription factor footprints and relate them to chromatin structure. C30 is supported by prior literature citations, and C31 provides new data showing the relationship between CTCF binding and interaction complexity. The footprint detection validates the resolution and sensitivity of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "11d93af0-e520-4589-8daa-0557a062a0b2",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SCA-seq reveals heterogeneous chromatin accessibility in spatial interactions, with 29% of concatemers fully inaccessible, 62.2% hybrid (mixed accessible/inaccessible), and 8.8% fully accessible. Hybrid concatemers accumulate at TAD boundaries, contain more distal connections, and are enriched for enhancer/promoter elements, with accessible segments showing preference for high-cardinality interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C39 present a novel finding about spatial heterogeneity of chromatin accessibility. The quantitative data on concatemer types (C35-C36) is clear, and the spatial distribution patterns (C37) and regulatory element enrichment (C39) provide biological validation. The binomial test filtering approach (described in Methods) addresses potential false positives. This represents a key biological insight enabled by the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "c50311f3-2cf6-4936-803d-299c218bbe81",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Among enhancer-promoter contacts on chromosome 7, 30.3% are accessible-accessible, 18.5% accessible-inaccessible, and 51.2% inaccessible-inaccessible. Accessible enhancer/promoter contact frequency correlates with gene expression, but 51.2% of interactions being accessibility-independent suggests spatial interactions are not the sole factor regulating transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 provide important insights into enhancer-promoter regulation. The quantitative breakdown (C40) is clear, the correlation with gene expression (C41) validates the biological relevance, and the interpretation about multiple regulatory factors (C42) is appropriately cautious. The data support a nuanced model of transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "f9e28dbd-a7fe-4b22-a78e-94985c113372",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Orphan CpG islands (oCGIs, 65% of all CGIs) show low CpG methylation and high accessibility, are spatially close to CTCF motifs and active histone marks, and 60% tether regulatory elements. oCGIs preferentially interact with CTCF and promoters (p<2.6\u00d710\u207b\u00b2\u00b9\u2076), with 39% of oCGI-enhancer/CTCF concatemers containing multiple enhancers/CTCF motifs, while most oCGIs tether to single promoters. However, CpG methylation on oCGIs shows weak correlation with promoter accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C52 present a comprehensive analysis of oCGI function. The spatial associations (C45), methylation patterns (C46), and preferential interactions (C48) are well-documented with appropriate statistics. The finding that oCGIs tether multiple enhancers/CTCF sites but single promoters (C49-C50) is interesting. The weak correlation between oCGI methylation and promoter accessibility (C51) is honestly reported and suggests complexity requiring further study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "1c0aa0ba-6971-4e36-89a0-893e81fa292a",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript establishes context by noting that genomes have 3D organization, most epigenetic studies focus on linear dimensions, active genes localize to euchromatin while silenced genes are in heterochromatin, chromatin accessibility regulates gene expression by controlling factor access, and promoter accessibility can be regulated by enhancer/silencer interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 provide background knowledge and context from the literature. These are appropriately cited and represent established concepts in the field. They serve to motivate the development of SCA-seq but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "327f6745-97ba-4403-8b22-63fa282b08b8",
+      "content_id": "9f415761-13dc-4e03-8375-27c47276796c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SCA-seq costs approximately $1,300 per 40\u00d7 depth human sample, requires an Oxford Nanopore R9.4.1 chip, and has resolution of ~700 bp for chromatin conformation capture versus ~200 bp for conventional chromatin accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 and C62 provide practical information about the method's implementation and limitations. The cost estimate (C59) and technical requirements (C60) are clearly stated. The resolution limitation (C62) is honestly reported and represents an important consideration for experimental design. These are factual statements about the method's characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "cf3bbb72-7748-452b-8503-7a1d3e162b30",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "SCA-seq is a novel method that uses methyltransferases (EcoGII or M.CviPI) to mark accessible chromatin, preserves accessibility as methylation marks, and captures high-cardinality genome conformation along with CpG methylation, chromatin inaccessibility, and high-order chromatin conformation data compared to existing methods like Trac-loop, Hi-CAR, and NicE-C.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers acknowledge SCA-seq as a valuable methodological advance. The first reviewer states 'Most of the conclusions are supported by convincing data' and that 'SCA-seq has the potential to become a useful tool.' The second reviewer explicitly recognizes SCA-seq as 'one step forward' compared to existing methods and states 'I am convinced that this is a valuable addition to the toolsets of multi-OMIC long-read sequencing mapping.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "40044a35-2a54-46f5-8571-801e8f9ef352",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The manuscript compares two methyltransferase approaches: EcoGII produces m6A modifications that block restriction enzymes and reduce resolution, while M.CviPI produces GpC methylation that allows efficient cutting by DpnII and other enzymes, making M.CviPI the preferred choice for unbiased digestion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise concerns about these technical optimization claims. The first reviewer states 'Most of the conclusions are supported by convincing data,' and the second reviewer notes 'The QC metrics appear to be good,' implicitly accepting the methodological choices and optimization described.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "2129af91-4088-4df6-b3ee-ed27333d304c",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "SCA-seq generated high-quality sequencing data (129.94 Gb, 36.9\u00d7 coverage, N50 = 4446 bp) with accurate methylation calling validated by WGBS (AUC CpG = 0.908, GpC = 0.984), low background GpC methylation (1.8%), and significantly higher GpC ratios in treated samples (>10-fold change, p < 2.6 \u00d7 10\u207b\u00b2\u00b9\u2076).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly states 'The QC metrics appear to be good,' directly affirming the quality of the sequencing data and validation. The first reviewer's statement that 'Most of the conclusions are supported by convincing data' encompasses these technical validation results without raising specific concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "bd30123f-9f8f-461e-a5d7-0af9c35690c5",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "SCA-seq chromatin accessibility measurements show 80% overlap with ATAC-seq/DNase-seq peaks, with sensitivity of 0.73 and specificity of 0.91, and recapitulate expected patterns around CTCF-binding sites and TSSs, including nucleosome depletion at active TSSs and correlation between accessibility and gene expression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly acknowledges the 'benchmark analyses testing the performance of SCA-seq in generating each data module (open chromatin and 3D genome)' and states the QC metrics are good. The first reviewer's statement that conclusions are 'supported by convincing data' encompasses these validation results without raising concerns about the chromatin accessibility measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "37b5a033-a1b0-442b-ac4b-62b384d386c8",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "SCA-seq captures chromatin conformation with median segment length ~700 bp, generates diverse contact distances (75.1% >200 kb), resolves high-cardinality interactions (5.4% of reads with >5 segments), shows comparable reproducibility to pore-C (correlation ~0.94), and achieves moderate correlation with Hi-C for eigenvector (0.91) and insulation scores (0.84), with similar false positive rates and superior high-cardinality capture compared to Trac-loop and HiCAR.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly acknowledges 'benchmark analyses testing the performance of SCA-seq in generating each data module (open chromatin and 3D genome)' and confirms 'The QC metrics appear to be good.' The first reviewer states 'Most of the conclusions are supported by convincing data,' encompassing these 3D genome characterization results without raising specific concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "fe862541-1cf9-4acd-b92e-77242ec21f85",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Analysis of concatemers reveals 66% are compartment-specific while 34% are mixed, CTCF binding creates ~50 bp inaccessible regions and results in higher cardinality and more distal interactions than non-CTCF binding, with enzyme labeling efficiency of 79-88% based on CTCF motifs and lambda DNA controls.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings are part of the overall analysis that the first reviewer describes as having 'convincing data' supporting 'most of the conclusions.' The second reviewer's acceptance of the method as 'a valuable addition' and acknowledgment of good QC metrics implicitly supports these analytical results, with no specific concerns raised about compartment or CTCF binding analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "4ed4f799-30ec-4497-964f-8b9da1914db8",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "SCA-seq reveals heterogeneous accessibility in spatially neighboring DNA regions, with 62.2% of concatemers being 'hybrid' (mixed accessible/inaccessible segments) that accumulate at TAD boundaries, contain more enhancer/promoter elements, and show that while accessible enhancer-promoter contacts correlate with gene expression, 51.2% of enhancer-promoter interactions are independent of accessibility status.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer states 'Most of the conclusions are supported by convincing data,' which encompasses these novel findings about accessibility heterogeneity. The second reviewer recognizes SCA-seq as 'a valuable addition to the toolsets' that can obtain 'chromatin accessibility, methylation, and 3D genome information at the same time,' implicitly supporting the integration of these data types to reveal accessibility patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "d0453b41-b0e3-4174-9f96-dc925bfad638",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Analysis of orphan CpG islands (oCGIs) shows 76,418 reads on chromosome 7, with oCGIs spatially close to CTCF-binding motifs and active histone markers, demonstrating lower CpG methylation and higher accessibility, with 60% tethering regulatory elements (preferentially CTCF and promoters, p < 2.6 \u00d7 10\u207b\u00b2\u00b9\u2076), though CpG methylation on oCGIs shows weak correlation with promoter accessibility.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer's statement that 'Most of the conclusions are supported by convincing data' encompasses these oCGI findings. The second reviewer's recognition of SCA-seq as combining multiple data types ('chromatin accessibility, methylation, and 3D genome information') and being 'a valuable addition' implicitly supports these integrated analyses of CpG islands, with no specific concerns raised about these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "a4e8bf5a-12bb-4df4-8d9a-742fbb3e9397",
+      "content_id": "478e85eb-4790-4a24-86e2-0b082ffcb1f9",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "SCA-seq has practical considerations including cost (~1300 USD per 40\u00d7 depth sample), requires Oxford nanopore R9.4.1 chip, achieves moderate correlation with Hi-C (0.91 and 0.84 for eigenvalue and insulation score, similar to other multiplex methods), and has resolution of ~700 bp for conformation capture versus ~200 bp for conventional accessibility.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These practical and technical specifications are part of the method description that reviewers accept. The first reviewer's statement that 'SCA-seq has the potential to become a useful tool to the scientific communities' acknowledges the practical utility despite these limitations. The second reviewer's conclusion that this is 'a valuable addition to the toolsets' indicates acceptance of the method's specifications and performance characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d598e1f3-4dbd-4ff5-8f6c-bad0d7e98ff7",
+      "result_id": "4fe736e2-b799-4c80-bd7f-1178f8683244"
+    },
+    {
+      "claim_id": "5f061b8a-af61-4938-a0ef-aa1c6ca6ddf5",
+      "result_id": "4fe736e2-b799-4c80-bd7f-1178f8683244"
+    },
+    {
+      "claim_id": "36d42938-f440-4733-a576-f1fc4310f572",
+      "result_id": "4fe736e2-b799-4c80-bd7f-1178f8683244"
+    },
+    {
+      "claim_id": "678c9778-8475-4e81-80f4-0e23db3a4be4",
+      "result_id": "4fe736e2-b799-4c80-bd7f-1178f8683244"
+    },
+    {
+      "claim_id": "b16b2895-3d67-4f49-91cc-d4a7287a3636",
+      "result_id": "4fe736e2-b799-4c80-bd7f-1178f8683244"
+    },
+    {
+      "claim_id": "9d664c05-8aac-4319-b942-690442748f53",
+      "result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3"
+    },
+    {
+      "claim_id": "9990d8ef-a409-4f13-9c24-f0e40e5083b9",
+      "result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3"
+    },
+    {
+      "claim_id": "d7204b7f-20e6-474a-87ae-2ea566512b78",
+      "result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3"
+    },
+    {
+      "claim_id": "98e200f0-bfcd-4711-89f4-b13734beb34f",
+      "result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3"
+    },
+    {
+      "claim_id": "da8f7197-d0ff-419a-a332-f8dfba38a935",
+      "result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3"
+    },
+    {
+      "claim_id": "4ce90e78-8f51-4c1e-bf3e-667b4261131d",
+      "result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3"
+    },
+    {
+      "claim_id": "642c8995-7ad4-4a82-ae95-8da9291a496d",
+      "result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3"
+    },
+    {
+      "claim_id": "7762b9b3-f0f5-4d82-9652-a92063722cd6",
+      "result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3"
+    },
+    {
+      "claim_id": "66c4cd26-9179-40fd-bc6b-f00ac774c0e3",
+      "result_id": "c2d6a57f-c1a8-4f51-8a79-84defccedba4"
+    },
+    {
+      "claim_id": "cef2864b-547e-471a-a174-86e35a5984e9",
+      "result_id": "c2d6a57f-c1a8-4f51-8a79-84defccedba4"
+    },
+    {
+      "claim_id": "e550a0b8-b625-4488-a87f-9c9265be3f86",
+      "result_id": "c2d6a57f-c1a8-4f51-8a79-84defccedba4"
+    },
+    {
+      "claim_id": "565e33ba-2f72-4f60-a260-cf17fdc2955a",
+      "result_id": "c2d6a57f-c1a8-4f51-8a79-84defccedba4"
+    },
+    {
+      "claim_id": "686fd5d8-4db9-4678-83d4-7aa924791fff",
+      "result_id": "c2d6a57f-c1a8-4f51-8a79-84defccedba4"
+    },
+    {
+      "claim_id": "a298eac3-992b-4223-a3e0-da644e618476",
+      "result_id": "c2d6a57f-c1a8-4f51-8a79-84defccedba4"
+    },
+    {
+      "claim_id": "34b733a2-a6a2-45ba-824e-0035ddae79d9",
+      "result_id": "0e5c2bd0-e37f-47b4-8c9e-d668072ec5c7"
+    },
+    {
+      "claim_id": "23cdeeca-04b6-4ae9-a08a-bae767766cf9",
+      "result_id": "0e5c2bd0-e37f-47b4-8c9e-d668072ec5c7"
+    },
+    {
+      "claim_id": "b5ad6b9e-577d-429f-b62f-53bd27930042",
+      "result_id": "0e5c2bd0-e37f-47b4-8c9e-d668072ec5c7"
+    },
+    {
+      "claim_id": "b870d8d2-58c1-4e88-8711-fc4f5a3ddd5e",
+      "result_id": "0e5c2bd0-e37f-47b4-8c9e-d668072ec5c7"
+    },
+    {
+      "claim_id": "8df2940a-b036-49a3-83f8-9d444d417cc9",
+      "result_id": "0e5c2bd0-e37f-47b4-8c9e-d668072ec5c7"
+    },
+    {
+      "claim_id": "33a4642b-a4f2-4597-8ed0-bd6610045ab1",
+      "result_id": "0e5c2bd0-e37f-47b4-8c9e-d668072ec5c7"
+    },
+    {
+      "claim_id": "9d91c9e0-e8c0-4ece-bc74-7f00505c003d",
+      "result_id": "f60c1cf4-0afa-4140-8a6c-aa58bb4bbafb"
+    },
+    {
+      "claim_id": "0ac58114-3486-4adb-ade8-8883c80b465e",
+      "result_id": "f60c1cf4-0afa-4140-8a6c-aa58bb4bbafb"
+    },
+    {
+      "claim_id": "b2453223-147c-44dc-9926-e6678f51e635",
+      "result_id": "f60c1cf4-0afa-4140-8a6c-aa58bb4bbafb"
+    },
+    {
+      "claim_id": "2771779b-1492-4a1b-8efc-e88d0c89d02e",
+      "result_id": "f60c1cf4-0afa-4140-8a6c-aa58bb4bbafb"
+    },
+    {
+      "claim_id": "f383285b-08e8-4eed-af7d-48e355c5e212",
+      "result_id": "f60c1cf4-0afa-4140-8a6c-aa58bb4bbafb"
+    },
+    {
+      "claim_id": "b30d632d-313d-497c-b874-e530713f77c0",
+      "result_id": "f60c1cf4-0afa-4140-8a6c-aa58bb4bbafb"
+    },
+    {
+      "claim_id": "6bce54c9-936c-4e24-8d35-4011d1cc1440",
+      "result_id": "692e3554-fff4-4425-9558-c460791c5550"
+    },
+    {
+      "claim_id": "34815798-b601-491e-a3c0-5f129b094021",
+      "result_id": "692e3554-fff4-4425-9558-c460791c5550"
+    },
+    {
+      "claim_id": "57c1f567-124a-41e7-84dd-4111e5be8fbb",
+      "result_id": "11d93af0-e520-4589-8daa-0557a062a0b2"
+    },
+    {
+      "claim_id": "a7e0fee4-38ab-4558-9719-e1ffcb4d22c2",
+      "result_id": "11d93af0-e520-4589-8daa-0557a062a0b2"
+    },
+    {
+      "claim_id": "be1f8c5f-2b73-458e-9d20-6f3363f7e881",
+      "result_id": "11d93af0-e520-4589-8daa-0557a062a0b2"
+    },
+    {
+      "claim_id": "8b2b9ed2-f970-447c-b066-719815533d81",
+      "result_id": "11d93af0-e520-4589-8daa-0557a062a0b2"
+    },
+    {
+      "claim_id": "b55badd6-306c-4002-97ea-f1320bf6fe2f",
+      "result_id": "11d93af0-e520-4589-8daa-0557a062a0b2"
+    },
+    {
+      "claim_id": "7b1f94da-db08-4d72-8ef2-dd9cdb1b6171",
+      "result_id": "11d93af0-e520-4589-8daa-0557a062a0b2"
+    },
+    {
+      "claim_id": "c1f4540f-1026-4405-928c-8582d2161fde",
+      "result_id": "11d93af0-e520-4589-8daa-0557a062a0b2"
+    },
+    {
+      "claim_id": "8e7f66b1-8e1c-42ce-a19e-c57ab3c1d5c3",
+      "result_id": "c50311f3-2cf6-4936-803d-299c218bbe81"
+    },
+    {
+      "claim_id": "227aaf63-64e2-40f9-b748-905b11e6b65f",
+      "result_id": "c50311f3-2cf6-4936-803d-299c218bbe81"
+    },
+    {
+      "claim_id": "325487fc-69f2-4fa5-8aed-e47120273138",
+      "result_id": "c50311f3-2cf6-4936-803d-299c218bbe81"
+    },
+    {
+      "claim_id": "13af0b68-8a41-4932-8592-d40705fc74b0",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "393510ee-b419-4efa-aca0-6133a0637ca4",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "4e7d8c8c-ef7a-4d50-abde-b35c4202fcbc",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "afd2096b-2f56-4d13-b1c7-4f10d80c3751",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "4dcf0993-e100-4c30-898a-2ae0ba34bd04",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "99eae1df-8a19-4aed-aaff-4ed1e06cbf5c",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "3eabb160-5de4-40ae-94df-57ba4d8e1402",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "0d9b6a23-c4cc-418b-a6a6-fd45ae82ef41",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "bdcf22e6-2a43-4efd-a20a-fe394116b4ff",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "1537f58a-080f-437a-99f4-5e72a7bbb6cf",
+      "result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372"
+    },
+    {
+      "claim_id": "085e8b63-2038-4909-859b-7ace2061a4d1",
+      "result_id": "1c0aa0ba-6971-4e36-89a0-893e81fa292a"
+    },
+    {
+      "claim_id": "6ab56708-2956-408f-aba9-8616446e8518",
+      "result_id": "1c0aa0ba-6971-4e36-89a0-893e81fa292a"
+    },
+    {
+      "claim_id": "64b6b500-43ca-4d8c-b21c-523a97750798",
+      "result_id": "1c0aa0ba-6971-4e36-89a0-893e81fa292a"
+    },
+    {
+      "claim_id": "89b7379a-6504-4195-8ca3-34a3657616c6",
+      "result_id": "1c0aa0ba-6971-4e36-89a0-893e81fa292a"
+    },
+    {
+      "claim_id": "3fd012d6-511f-44ed-80e7-0d50308b49ae",
+      "result_id": "1c0aa0ba-6971-4e36-89a0-893e81fa292a"
+    },
+    {
+      "claim_id": "3307faad-de0e-4a68-8050-c269e32eed60",
+      "result_id": "1c0aa0ba-6971-4e36-89a0-893e81fa292a"
+    },
+    {
+      "claim_id": "90571016-2f47-45fd-9234-1ebb4a8ff377",
+      "result_id": "327f6745-97ba-4403-8b22-63fa282b08b8"
+    },
+    {
+      "claim_id": "faa6145a-7dab-41dc-99cf-bba5b56b41ea",
+      "result_id": "327f6745-97ba-4403-8b22-63fa282b08b8"
+    },
+    {
+      "claim_id": "db89128b-935c-480d-a2ee-1d91bb99d384",
+      "result_id": "327f6745-97ba-4403-8b22-63fa282b08b8"
+    },
+    {
+      "claim_id": "d598e1f3-4dbd-4ff5-8f6c-bad0d7e98ff7",
+      "result_id": "cf3bbb72-7748-452b-8503-7a1d3e162b30"
+    },
+    {
+      "claim_id": "5f061b8a-af61-4938-a0ef-aa1c6ca6ddf5",
+      "result_id": "cf3bbb72-7748-452b-8503-7a1d3e162b30"
+    },
+    {
+      "claim_id": "9d664c05-8aac-4319-b942-690442748f53",
+      "result_id": "cf3bbb72-7748-452b-8503-7a1d3e162b30"
+    },
+    {
+      "claim_id": "9990d8ef-a409-4f13-9c24-f0e40e5083b9",
+      "result_id": "cf3bbb72-7748-452b-8503-7a1d3e162b30"
+    },
+    {
+      "claim_id": "36d42938-f440-4733-a576-f1fc4310f572",
+      "result_id": "40044a35-2a54-46f5-8571-801e8f9ef352"
+    },
+    {
+      "claim_id": "678c9778-8475-4e81-80f4-0e23db3a4be4",
+      "result_id": "40044a35-2a54-46f5-8571-801e8f9ef352"
+    },
+    {
+      "claim_id": "b16b2895-3d67-4f49-91cc-d4a7287a3636",
+      "result_id": "40044a35-2a54-46f5-8571-801e8f9ef352"
+    },
+    {
+      "claim_id": "66c4cd26-9179-40fd-bc6b-f00ac774c0e3",
+      "result_id": "2129af91-4088-4df6-b3ee-ed27333d304c"
+    },
+    {
+      "claim_id": "cef2864b-547e-471a-a174-86e35a5984e9",
+      "result_id": "2129af91-4088-4df6-b3ee-ed27333d304c"
+    },
+    {
+      "claim_id": "e550a0b8-b625-4488-a87f-9c9265be3f86",
+      "result_id": "2129af91-4088-4df6-b3ee-ed27333d304c"
+    },
+    {
+      "claim_id": "565e33ba-2f72-4f60-a260-cf17fdc2955a",
+      "result_id": "2129af91-4088-4df6-b3ee-ed27333d304c"
+    },
+    {
+      "claim_id": "686fd5d8-4db9-4678-83d4-7aa924791fff",
+      "result_id": "2129af91-4088-4df6-b3ee-ed27333d304c"
+    },
+    {
+      "claim_id": "34b733a2-a6a2-45ba-824e-0035ddae79d9",
+      "result_id": "bd30123f-9f8f-461e-a5d7-0af9c35690c5"
+    },
+    {
+      "claim_id": "23cdeeca-04b6-4ae9-a08a-bae767766cf9",
+      "result_id": "bd30123f-9f8f-461e-a5d7-0af9c35690c5"
+    },
+    {
+      "claim_id": "b5ad6b9e-577d-429f-b62f-53bd27930042",
+      "result_id": "bd30123f-9f8f-461e-a5d7-0af9c35690c5"
+    },
+    {
+      "claim_id": "b870d8d2-58c1-4e88-8711-fc4f5a3ddd5e",
+      "result_id": "bd30123f-9f8f-461e-a5d7-0af9c35690c5"
+    },
+    {
+      "claim_id": "8df2940a-b036-49a3-83f8-9d444d417cc9",
+      "result_id": "bd30123f-9f8f-461e-a5d7-0af9c35690c5"
+    },
+    {
+      "claim_id": "33a4642b-a4f2-4597-8ed0-bd6610045ab1",
+      "result_id": "bd30123f-9f8f-461e-a5d7-0af9c35690c5"
+    },
+    {
+      "claim_id": "d7204b7f-20e6-474a-87ae-2ea566512b78",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "98e200f0-bfcd-4711-89f4-b13734beb34f",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "da8f7197-d0ff-419a-a332-f8dfba38a935",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "4ce90e78-8f51-4c1e-bf3e-667b4261131d",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "642c8995-7ad4-4a82-ae95-8da9291a496d",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "7762b9b3-f0f5-4d82-9652-a92063722cd6",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "9d91c9e0-e8c0-4ece-bc74-7f00505c003d",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "0ac58114-3486-4adb-ade8-8883c80b465e",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "b2453223-147c-44dc-9926-e6678f51e635",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "2771779b-1492-4a1b-8efc-e88d0c89d02e",
+      "result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8"
+    },
+    {
+      "claim_id": "f383285b-08e8-4eed-af7d-48e355c5e212",
+      "result_id": "fe862541-1cf9-4acd-b92e-77242ec21f85"
+    },
+    {
+      "claim_id": "6bce54c9-936c-4e24-8d35-4011d1cc1440",
+      "result_id": "fe862541-1cf9-4acd-b92e-77242ec21f85"
+    },
+    {
+      "claim_id": "34815798-b601-491e-a3c0-5f129b094021",
+      "result_id": "fe862541-1cf9-4acd-b92e-77242ec21f85"
+    },
+    {
+      "claim_id": "a298eac3-992b-4223-a3e0-da644e618476",
+      "result_id": "fe862541-1cf9-4acd-b92e-77242ec21f85"
+    },
+    {
+      "claim_id": "57c1f567-124a-41e7-84dd-4111e5be8fbb",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "a7e0fee4-38ab-4558-9719-e1ffcb4d22c2",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "be1f8c5f-2b73-458e-9d20-6f3363f7e881",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "8b2b9ed2-f970-447c-b066-719815533d81",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "b55badd6-306c-4002-97ea-f1320bf6fe2f",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "7b1f94da-db08-4d72-8ef2-dd9cdb1b6171",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "c1f4540f-1026-4405-928c-8582d2161fde",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "8e7f66b1-8e1c-42ce-a19e-c57ab3c1d5c3",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "227aaf63-64e2-40f9-b748-905b11e6b65f",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "325487fc-69f2-4fa5-8aed-e47120273138",
+      "result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8"
+    },
+    {
+      "claim_id": "393510ee-b419-4efa-aca0-6133a0637ca4",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "4e7d8c8c-ef7a-4d50-abde-b35c4202fcbc",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "afd2096b-2f56-4d13-b1c7-4f10d80c3751",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "4dcf0993-e100-4c30-898a-2ae0ba34bd04",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "99eae1df-8a19-4aed-aaff-4ed1e06cbf5c",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "3eabb160-5de4-40ae-94df-57ba4d8e1402",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "0d9b6a23-c4cc-418b-a6a6-fd45ae82ef41",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "bdcf22e6-2a43-4efd-a20a-fe394116b4ff",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "1537f58a-080f-437a-99f4-5e72a7bbb6cf",
+      "result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638"
+    },
+    {
+      "claim_id": "90571016-2f47-45fd-9234-1ebb4a8ff377",
+      "result_id": "a4e8bf5a-12bb-4df4-8d9a-742fbb3e9397"
+    },
+    {
+      "claim_id": "faa6145a-7dab-41dc-99cf-bba5b56b41ea",
+      "result_id": "a4e8bf5a-12bb-4df4-8d9a-742fbb3e9397"
+    },
+    {
+      "claim_id": "b30d632d-313d-497c-b874-e530713f77c0",
+      "result_id": "a4e8bf5a-12bb-4df4-8d9a-742fbb3e9397"
+    },
+    {
+      "claim_id": "db89128b-935c-480d-a2ee-1d91bb99d384",
+      "result_id": "a4e8bf5a-12bb-4df4-8d9a-742fbb3e9397"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "551eea9c-37de-4a34-bad3-932c446b1b4f",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "0e5c2bd0-e37f-47b4-8c9e-d668072ec5c7",
+      "peer_result_id": "bd30123f-9f8f-461e-a5d7-0af9c35690c5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on chromatin accessibility validation (C13-C18). Both evaluations support the claims with OpenEval providing detailed quantitative assessment (80% overlap, sensitivity/specificity metrics) while peer reviewers acknowledge good QC metrics and benchmark analyses without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "3b4d60f6-bc45-4487-9556-fff61eac44ff",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f9e28dbd-a7fe-4b22-a78e-94985c113372",
+      "peer_result_id": "d0453b41-b0e3-4174-9f96-dc925bfad638",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on oCGI analysis (C44-C52). Both evaluations support these findings. OpenEval provides detailed assessment of spatial associations, methylation patterns, and interaction preferences. Peer reviewers implicitly support through recognition of integrated multi-omic capabilities and convincing data, with no specific concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "60268653-2ec7-4484-a66c-829b8f3e5f6c",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "c2d6a57f-c1a8-4f51-8a79-84defccedba4",
+      "peer_result_id": "2129af91-4088-4df6-b3ee-ed27333d304c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on methylation calling validation (C8-C12). Both evaluations support the claims. OpenEval details WGBS validation, statistical significance, and AUC values. Peer reviewers explicitly state QC metrics are good and data is convincing, with C32 addressed separately in peer R6.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "a1ea1fde-9d52-4519-8807-0f8f6bfc5e62",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "327f6745-97ba-4403-8b22-63fa282b08b8",
+      "peer_result_id": "a4e8bf5a-12bb-4df4-8d9a-742fbb3e9397",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on practical specifications (C59, C60, C62). Both evaluations support these claims. OpenEval characterizes them as factual statements about method characteristics. Peer reviewers acknowledge practical utility and accept method as valuable addition despite stated limitations. C61 addressed in peer R9 but not OpenEval R11.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "f3007d4f-09af-4f20-8db5-9d7dab55673e",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "11d93af0-e520-4589-8daa-0557a062a0b2",
+      "peer_result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on spatial heterogeneity of chromatin accessibility (C33-C39). Both evaluations support these novel findings. OpenEval provides detailed assessment of quantitative data and biological validation. Peer reviewers support through statement that conclusions are backed by convincing data and recognition of multi-omic integration capabilities. C40-C42 included in peer R7 but addressed separately in OpenEval R8.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "97e83acb-2b92-44de-81f4-f3725ec744aa",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4fe736e2-b799-4c80-bd7f-1178f8683244",
+      "peer_result_id": "40044a35-2a54-46f5-8571-801e8f9ef352",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on technical optimization (C5-C7). Both evaluations support these claims. OpenEval details gel electrophoresis validation and enzyme choice rationale. Peer reviewers implicitly accept through statements about convincing data and good QC metrics. OpenEval R1 also covers C1-C2 which peer reviewers address in R1.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "afcfd1fa-8d4b-4c93-940f-35fa4e72cf32",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3",
+      "peer_result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Moderate alignment on 3D genome capabilities. OpenEval R2 addresses high-order chromatin interactions (C3-C4, C19-C24) while peer R5 covers broader 3D genome validation (C19-C28). Both support the claims. OpenEval provides detailed quantitative assessment while peer reviewers acknowledge good benchmark analyses and QC metrics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "7637c6df-1054-4142-a4f3-cc9bfd9e38de",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "692e3554-fff4-4425-9558-c460791c5550",
+      "peer_result_id": "fe862541-1cf9-4acd-b92e-77242ec21f85",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Alignment on transcription factor footprints and CTCF binding (C30-C31). Both evaluations support these claims. OpenEval details footprint detection validation and relationship to chromatin structure. Peer reviewers implicitly support through acceptance of convincing data. Peer R6 also includes C29 and C32 which OpenEval addresses in R5 and R3 respectively.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "f7ca7bf2-2280-4177-ab53-f8844d309a1b",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f60c1cf4-0afa-4140-8a6c-aa58bb4bbafb",
+      "peer_result_id": "37b5a033-a1b0-442b-ac4b-62b384d386c8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial alignment on chromatin conformation validation. Both address C25-C28 and support the claims. OpenEval R5 also covers C61 (addressed in peer R9) and provides detailed assessment of reproducibility and Hi-C correlations. Peer R5 also covers C19-C24 (addressed in OpenEval R2) and acknowledges good benchmark analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "ab079665-bd5a-4ab1-b582-119c353861b0",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c50311f3-2cf6-4936-803d-299c218bbe81",
+      "peer_result_id": "4ed4f799-30ec-4497-964f-8b9da1914db8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial alignment on enhancer-promoter regulation (C40-C42). Both evaluations support these claims. OpenEval provides detailed assessment of quantitative breakdown and correlation with gene expression. Peer R7 primarily focuses on C33-C39 (spatial heterogeneity) but encompasses C40-C42 through statement about convincing data supporting conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "f3c81e3b-57ac-4bfd-bc80-b362ec469d07",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "4fe736e2-b799-4c80-bd7f-1178f8683244",
+      "peer_result_id": "cf3bbb72-7748-452b-8503-7a1d3e162b30",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial alignment on methodological foundation. Both address C1-C2 and support the claims. OpenEval R1 covers broader technical validation (C1-C2, C5-C7) with detailed enzyme comparison data. Peer R1 focuses on overall methodological advance (C1-C4) and recognizes SCA-seq as valuable tool, with C3-C4 addressed in OpenEval R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "eb0eb7d3-f4aa-4da3-a60a-9d6e18b3ec92",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "25c6c77b-d8d3-430c-b0c0-2cce057562a3",
+      "peer_result_id": "cf3bbb72-7748-452b-8503-7a1d3e162b30",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on methodological claims. OpenEval R2 addresses high-order chromatin interactions (C3-C4, C19-C24) while peer R1 focuses on overall methodological advance (C1-C4). Both support C3-C4. OpenEval provides detailed quantitative validation while peer reviewers provide broad endorsement of method as valuable advance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    },
+    {
+      "id": "0963fe71-2b9a-4ecc-b0f5-f9fe64770ca2",
+      "submission_id": "9485f192-9ace-44df-a959-c6bcd7237b61",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "1c0aa0ba-6971-4e36-89a0-893e81fa292a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R10 addresses background knowledge and literature context (C53-C58). These are established concepts cited to motivate SCA-seq development. No corresponding peer review evaluation found as these represent background rather than novel findings requiring validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:11:08.296499Z"
+    }
+  ]
+}

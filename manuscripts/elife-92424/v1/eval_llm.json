@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "The study generated a comprehensive atlas of 59 hematopoietic stem/progenitor cell (HSPC) and immune cell types from zebrafish kidneys, identifying 13 major cell categories through single-cell RNA sequencing. These categories include neutrophils, macrophage/myeloid cells, B cells, T/NK cells, three HSPC populations, and four kidney cell types, each characterized by specific marker gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, C21, and C31-C40 collectively demonstrate the comprehensive cell type identification through scRNA-seq. The data in Figure 1 shows clear clustering of 13 distinct cell populations with appropriate marker gene expression patterns. The identification of 59 subset cells is supported by subsequent subclustering analyses in Figures 2, 5, 6, 7, and 8. The methodology (SEURAT clustering, marker gene validation) is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Subclustering of HSPCs revealed 11 distinct subpopulations (H0-H10) with specific marker gene expression profiles, including stem/early progenitors (H0-H4) and lineage-committed progenitors for NK cells, myeloid cells, erythrocytes, lymphocytes, endothelial cells, and thrombocytes. Pseudotime trajectory and RNA velocity analyses suggest H0-H4 represent stem and early progenitors that differentiate into late progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C52 are supported by comprehensive gene expression data (Figure 2A-C), pseudotime trajectory analysis (Figure 3A-C), and RNA velocity analysis (Figure 3F). The identification of specific marker genes for each HSPC subpopulation is well-documented, and the differentiation trajectories are consistent with known hematopoietic hierarchies. The presence of H0 and H1 populations is corroborated by previous research (C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "T/NK cell subclustering identified 23 distinct subsets (T0-T22) including various NK cell subsets (CD11b-CD27-, CD11b+CD27+, CD11b+CD27-), NKT cells, CD8+ CTLs, Th1, Th2-like, Th17, Treg, \u03b3\u03b4 T cells, and a distinctive CD4+IgM+ subset, each characterized by specific marker gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C72 are supported by detailed gene expression data shown in Figure 5A-C. The identification of 23 T/NK subsets is based on appropriate lineage-specific markers, and the classification is validated by heatmap and dot plot analyses. The comparison with human NK cell subsets (C65) provides evolutionary context. However, some functional inferences (e.g., C63 about dual helper/cytotoxic activities) are speculative and would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "B cell subclustering revealed 9 distinct subsets (B0-B8) including immature/mature B cells, IgM+IgD+ B cells, pro/pre B cells, plasma cells, germinal center B-like cells, activated B cells/plasmablasts, and B1-like cells. Pseudotime trajectory analysis showed developmental relationships among these subsets, and functional enrichment analyses confirmed subset-specific metabolic profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C89 are supported by comprehensive gene expression data (Figure 6A-B), pseudotime trajectory analysis (Figure 6D-F), and functional enrichment analyses (Figure 6\u2014figure supplement 2). The identification of B cell subsets is based on appropriate marker genes, and the developmental trajectories are consistent with B cell biology. The functional enrichment data (C84-C87) provides additional validation of subset identities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Macrophage/myeloid cells were categorized into 10 distinct subclusters (M0-M9) including M1-typical macrophages, M2-typical macrophages, APC macrophages, macrophage-isg15 population, eosinophils, and dendritic cells (including cDC, pDC, and C1q+DC), each with specific marker gene expression profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by gene expression data shown in Figure 7A-C. The classification of macrophage/myeloid subsets is based on appropriate lineage-specific markers (M1/M2 markers, APC markers, DC markers). The identification of multiple DC populations (C96) is consistent with recent literature. However, the functional implications of some subsets (e.g., macrophage-isg15) would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Neutrophils, the most prevalent kidney leukocyte subset (45% of immune cells), were subdivided into 6 distinct subgroups (N0-N5) with different functional enrichments including C-type lectin receptor pathway (N0), endocytosis (N1), oxidative phosphorylation and interferon-mediated responses (N3), MAPK signaling (N4), and cell cycle processes (N5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 are supported by cell proportion data (Figure 9A-B), subclustering analysis (Figure 8A), and KEGG pathway enrichment analyses (Figure 8D-E, Figure 8\u2014figure supplement 1). The functional characterization of neutrophil subsets is based on appropriate pathway analyses. However, the functional implications would be strengthened by experimental validation of the predicted activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "SVCV infection induced significant changes in kidney cell populations, with increases in macrophage/myeloid cells, neutrophils 2, HSPCs 2, specific neutrophil subsets (N0, N2, N3), NK/NKT cells, Th2-like and Th17 cells, certain macrophage subsets (M1, M2, M4, M5), IgM+IgD+ B cells, pro/pre B cells, germinal center B-like cells, and cycling HSPCs (H1, H3, H4). Conversely, decreases were observed in neutrophils 1, T/NK cells, HSPCs 3, Th1 and Treg cells, CD8+ CTLs, M1/M2-type macrophages, immature/mature B cells, and several HSPC subsets (H0, H2, H6, H7, H8, H9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C22, and C105-C119 are supported by comprehensive cell proportion data shown in Figures 2D-E, 6A-C, 7D-E, 8A-B, and 9A-E. The changes in cell abundances are quantified and statistically significant. However, the manuscript does not provide p-values or statistical tests for most of these changes, which is a limitation. The biological interpretation of these changes (e.g., C116 about B0 cell death) is supported by additional gene expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Interferon genes (ifng1-1, ifng1-2, ifnphi1, ifnphi2, ifnphi3) showed cell-type-specific expression patterns before SVCV infection and were notably upregulated in most corresponding cells after infection, with ifnphi1 displaying the most significant upregulation. IFN-\u03b3 actively participates in antiviral immunity alongside type I IFN, while ifnphi4 and ifnu were barely detectable post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C128 are supported by gene expression data shown in Figure 10A-C. The cell-type-specific expression patterns and infection-induced changes are clearly documented. The inference about IFN-\u03b3 participation in antiviral immunity (C126) is supported by the data and consistent with cited literature. However, the claim about distinct functional roles of IFN\u03d54 and IFN-\u03c5 (C128) is speculative and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Six genes (isg15, CR318588.1, zgc:152791/ifi27.2, ifi45/ifi27.1, CR318588.2, CR318588.3) displayed the strongest responsiveness to SVCV infection across almost every cell cluster. RT-qPCR validation confirmed significant upregulation of isg15, CR318588.3, zgc:152791, ifi45, and CU984600.2 in kidney T/B cells upon SVCV infection. The identification of isg15, ifi45, and ifi27 homologs suggests conserved roles in IFN-associated immunity across vertebrate evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 are supported by differential gene expression analysis (Figure 10F-J, Figure 10\u2014figure supplement 1) and RT-qPCR validation (Figure 10K-L). The identification of key virus-responsive genes is well-documented, and the RT-qPCR validation strengthens the findings. The evolutionary inference (C133) is reasonable given the known roles of these genes in mammalian immunity, though functional validation in zebrafish would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Trained immunity was effectively induced in certain HSPCs, particularly the H0 subset, which showed minimal reduction in vaccinated zebrafish upon second SVCV challenge and exhibited significant expansion (from 19.87% to 41.43%) with upregulation of numerous immune-related genes. Neutrophils in trained zebrafish also exhibited enhanced antiviral immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C136-C142 are supported by cell proportion data (Figure 11A, Figure 11\u2014figure supplement 1) and gene expression data (Figure 11B) from the vaccinated+infected group. The experimental design (vaccination followed by challenge) is appropriate for assessing trained immunity. However, the study lacks mechanistic insights into how trained immunity is established in HSPCs, and the term 'trained immunity' is typically applied to innate immune cells rather than HSPCs. Additional functional assays would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "Viral subgenomic RNAs (sgRNAs) were predominantly detected in macrophage/myeloid cells (clusters 3 and 9), indicating that these cells are the prevailing cell types supporting productive viral replication in zebrafish kidney.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 are supported by viral RNA detection data shown in Figure 12D. The integration of viral sgRNA sequences into scRNA-seq datasets is a valid approach for identifying infected cells. The predominant detection in macrophage/myeloid cells is consistent with the tropism of many viruses. However, the low percentage of cells with detectable viral RNA (0.03-0.15%, Figure 12C) raises questions about whether this represents the full extent of infection or reflects technical limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C24",
+      "C25",
+      "C26",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The zebrafish kidney functions as a secondary lymphoid organ, capable of generating complete adaptive immune responses. CD4+ T, CD8+ T, and IgM+ B cells exhibited significant proliferation, activation (upregulation of CD154 and CD40), and somatic hypermutation in the kidney upon SVCV stimulation. AID expression increased significantly, and the frequency of mutagenesis in IgM V regions showed substantial antigen-dependent increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C24-C26, and C145-C152 are supported by comprehensive experimental data including flow cytometry (Figure 13A, E), immunofluorescence (Figure 13B-D), RT-qPCR (Figure 13E-H), and high-throughput sequencing (Figure 13I). The proliferation, activation, and SHM data provide strong evidence for adaptive immune responses in the kidney. However, the claim that the kidney 'acts as a secondary lymphoid organ' (C9) is an inference that requires consideration of structural features (e.g., organized lymphoid structures) not addressed in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C152",
+      "C177"
+    ],
+    "result": "The fish kidney is a dual-functional entity with functionalities of both primary and secondary lymphoid organs, combining hematopoietic activity (primary lymphoid organ function) with the capacity to generate adaptive immune responses (secondary lymphoid organ function).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C152, and C177 represent the major conclusion of the study, inferring dual functionality from the combined evidence of hematopoiesis and adaptive immune responses. While the data supporting hematopoiesis (HSPCs, progenitors) and adaptive immunity (T/B cell activation, SHM) are strong, the classification as a 'secondary lymphoid organ' is debatable. Secondary lymphoid organs typically have organized structures (e.g., germinal centers, defined T and B cell zones) that are not demonstrated here. The study shows immune responses occur in the kidney but does not establish the structural organization characteristic of secondary lymphoid organs. This is acknowledged by the authors' statement that fish lack 'histologically discernible lymph nodes, Peyer's patches, and germinal centers' (C14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Integrated analysis of kidney and spleen scRNA-seq data revealed substantial overlapping HSPCs and immune cell types between the two organs, with similar cell differentiation trajectories, suggesting analogous functionalities in hematopoiesis and immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by integrated analysis (Figure 4A) and pseudotime trajectory analysis (Figure 4B-E). The comparison between kidney and spleen provides important context for understanding the kidney's role. However, the analysis is limited to transcriptomic similarity and does not address potential functional differences or the relative contributions of each organ to hematopoiesis and immunity in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Single-cell RNA sequencing quality metrics showed mean reads/median genes per cell of 34,501/1090 (control), 29,706/1383 (infected), and 37,611/1379 (vaccinated+infected), with total detected genes of 26,345, 26,865, and 25,342, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 report basic sequencing quality metrics that are directly measured from the data. These metrics indicate good quality sequencing with adequate gene detection. The variation in reads per cell across groups is noted but not concerning given the similar median genes detected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Background claims about vertebrate kidney function, fish immune systems, and comparative immunology establish the context for the study, including the evolutionary position of teleost fish, the absence of bone marrow and lymph nodes in fish, and the kidney's role as a hematopoietic site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11-C16, and C154-C161 represent established knowledge in the field, supported by appropriate citations. These claims provide necessary background and context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous work by the authors identified HSPCs in zebrafish spleen, suggesting the spleen may function as a hematopoietic site beyond its role as a secondary lymphoid organ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 refer to previous work by the authors (Hu et al., 2023) and provide context for the current study. These claims are supported by citation and establish the rationale for investigating the kidney.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C35",
+      "C39",
+      "C49",
+      "C83",
+      "C85",
+      "C87",
+      "C111",
+      "C132",
+      "C134",
+      "C135",
+      "C170"
+    ],
+    "result": "Various established knowledge claims about specific cell types, genes, and immune mechanisms provide context for the interpretation of results, including the existence of Mpeg1.1+ B cells, the role of hsp70 in erythroid differentiation, endothelial progenitors in mouse bone marrow, dual expresser cells, plasma cell function, fish B cell antigen presentation, Th1 regulation of CD8+ CTLs, roles of isg15/ifi45/ifi27 in mammalian immunity, trained immunity, BCG-induced trained immunity in HSCs, and impacts of infections on immune homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C39, C49, C83, C85, C87, C111, C132, C134, C135, and C170 represent established knowledge from the literature, supported by appropriate citations. These claims provide important context for interpreting the study's findings but do not represent novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "Zebrafish exhibited detectable elementary progenitors responsible for generating principal blood cell lineages, suggesting conserved cellular components and developmental pathways underlying adult hematopoiesis across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C163 are supported by the identification of various progenitor populations (Figure 2). The inference about conservation across species (C163) is reasonable given the similarities to mammalian hematopoiesis, though direct comparative studies would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C171"
+    ],
+    "result": "The kidney exhibited robust responsiveness to SVCV infection with significant changes in immune cell abundances. The impairment of immature/mature B cells may be caused by severe cell death, which would attenuate humoral immunity. Three HSPC subsets were markedly upregulated (24-258 fold), while six others were downregulated, potentially hampering differentiation and attenuating antiviral immunity. These disturbances suggest a potential role in disease pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C169 and C171 are supported by cell proportion data and gene expression analyses. The inference about B0 cell death (C165) is supported by pathway enrichment data (Figure 6\u2014figure supplement 1C-D). However, the functional consequences (C166, C168) are speculative and would benefit from experimental validation. The connection to disease pathogenesis (C171) is reasonable but requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C172"
+    ],
+    "result": "The profiles of adaptive immune cells within the kidney closely resemble those observed in the spleen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C172 is supported by the comparative analysis shown in Figure 4. However, this is a descriptive observation that supports the broader conclusion about kidney function rather than a standalone result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The B0 subset experienced severe cell death upon SVCV infection, as evidenced by enrichment of apoptosis, ferroptosis, necroptosis pathways and upregulation of cell death-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is supported by KEGG analysis and gene expression data (Figure 6\u2014figure supplement 1C-D). The inference of cell death is reasonable given the pathway enrichments and gene expression patterns, though direct measurement of cell death (e.g., by flow cytometry) would strengthen this claim.",
+    "result_type": "MINOR"
+  }
+]

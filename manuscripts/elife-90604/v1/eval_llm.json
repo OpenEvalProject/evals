@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C89",
+      "C138"
+    ],
+    "result": "The authors developed the Hernandez-Hernandez computational model, which is the first model to integrate sex-specific variations in voltage-gated KV2.1 and CaV1.2 channels in arterial myocytes from murine resistance arteries. The model was informed and validated with experimental data from male and female vascular myocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C89, and C138 collectively establish the development and novelty of the model. The manuscript provides extensive experimental validation data (Figures 2-5) and demonstrates that the model reproduces key experimental observations. The claim of being 'first-ever' is supported by the literature review showing previous models used only male data (C10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C90"
+    ],
+    "result": "Experimental measurements show that while ICa activation and inactivation kinetics are similar between male and female myocytes, the amplitude of ICa is 40% larger in female than male myocytes over a wide range of membrane potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe experimental measurements with appropriate sample sizes (n=10 male, n=12 female) shown in Figure 2. Statistical significance is reported for amplitude differences (Figure 2D), while kinetic parameters show no significant differences. The 40% difference (C90) is quantitatively supported by the I-V relationship data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C26",
+      "C27",
+      "C36",
+      "C37",
+      "C91",
+      "C92"
+    ],
+    "result": "Female cells exhibit larger KV2.1 channel expression (183,000 vs 75,000 channels) and longer activation time constants compared to male myocytes. The peak KV2.1 current is 70% smaller in males compared to females at +40 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C36, C37 are supported by experimental data in Figure 3B-C with appropriate sample sizes (n=7 male, n=10 female). Claims C26, C27, C92 cite O'Dwyer et al., 2020 for channel expression data. The quantitative differences are statistically significant and consistently reported across multiple measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C38"
+    ],
+    "result": "KV1.5 channel currents show minimal sex-specific differences in amplitudes, kinetics, and voltage dependencies between male and female myocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C38 are supported by experimental data in Figure 3D-E showing comparable steady-state activation and I-V relationships between sexes. The manuscript explicitly states these findings with appropriate statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C63",
+      "C96"
+    ],
+    "result": "Model simulations predict that KV1.5 current is the dominant current regulating membrane potential in male myocytes, contributing 86% of total voltage-gated current at -40 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C62, C96 present model predictions shown in Figure 6A. Claim C63 validates these predictions against previous literature (Lu et al., 2002; Sung et al., 2013; Bratz et al., 2005). The quantitative contribution (C65) is clearly stated and supported by simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C97"
+    ],
+    "result": "Model simulations predict that KV2.1 plays a primary role in controlling membrane potential in female myocytes, contributing 77% of total voltage-gated current at -40 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C64, C97 present model predictions shown in Figure 6B. The quantitative contribution (C65) is clearly stated. This prediction is novel and represents a key sex-specific difference identified by the model, though it requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Experimental recordings show that isolated mesenteric smooth muscle cells exhibit oscillating membrane potential with spontaneous transient hyperpolarizations (1-2.8 Hz) in the range of -50 to -20 mV, with female myocytes maintaining a more depolarized baseline (~-30 mV) compared to males (~-40 mV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 describe experimental observations shown in Figure 5A with clear documentation of sex-specific differences. The frequency measurements and voltage ranges are quantitatively specified and match between experiments and simulations (C54), providing strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C108"
+    ],
+    "result": "Sensitivity analysis and model simulations suggest that nonselective cation currents (INSC) and delayed rectifier currents (IKvTOT) interact to regulate baseline membrane potential, with INSC being the primary depolarizing stimulus. The model predicts that larger INSC in females accounts for their more depolarized membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C60 describe sensitivity analysis results (Figure 5C) showing INSC and IKvTOT as key regulators. However, C108 is speculative about the mechanism ('most likely due to Na+-permeable TRP channels'). The model requires adjusting INSC conductance to reproduce sex differences, but the molecular basis remains unvalidated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C115",
+      "C116"
+    ],
+    "result": "Model simulations predict that at -40 mV, two CaV1.2 channels generate 0.5 pA current in male myocytes while three channels generate 0.65 pA in female myocytes, leading to higher calcium influx in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70, C115-C116 present quantitative model predictions shown in Figure 7. The calculations are internally consistent and supported by the model framework. Claim C117 validates these predictions against Rubart et al., 1996 data from rat cerebral arteries, providing external support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C140"
+    ],
+    "result": "The model predicts that very few ion channels control membrane potential and calcium signaling in the physiological range. At -40 mV, approximately 1 KV2.1 channel is open in males vs 6 in females; at -30 mV, 3 channels in males vs 13 in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C110-C114, C140 present model predictions with specific quantitative estimates based on single-channel current assumptions (0.7 pA). The calculations are mathematically sound given the model parameters. This represents a key mechanistic insight about the small number of channels controlling physiological function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Model simulations predict that clinically relevant nifedipine concentrations (0.1 \u03bcM) reduce ICa by 60-70%, causing similar reductions in both sexes but resulting in larger overall reductions in Ca2+ influx in females than males due to their higher baseline ICa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 describe model predictions shown in Figure 7C-D. Claim C73 appropriately cites Davis et al., 1992 for the nifedipine effect magnitude. The predictions are internally consistent with the model showing females start with higher ICa, thus experience larger absolute reductions despite similar percentage inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C28",
+      "C29",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C130"
+    ],
+    "result": "In a 1D vessel model, simulations predict that female arterial smooth muscle exhibits heightened sensitivity to Ca2+ channel blockers, with nifedipine causing 38-45% reduction in [Ca2+]i in females vs 22-25% in males at physiological pressures. This prediction is validated by experimental recordings showing higher baseline [Ca2+]i in female vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C28, C29, C84-C88, C130 describe both model predictions and experimental validation shown in Figure 9. Claim C84 explicitly states the model predictions were validated by experimental recordings (n=3 male, n=5 female). The quantitative differences are statistically significant (Figure 9B) and mechanistically explained by sex-based differences in L-type Ca2+ currents (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "1D tissue simulations show that uncoupled cells exhibit spontaneous hyperpolarizations which diminish when cells are electrotonically coupled, producing a smoothing effect. The coupled model predicts more depolarized female membrane potential consistent with experimental measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 describe 1D tissue model predictions shown in Figure 8. The smoothing effect is well-established in excitable tissue (C79 cites supporting literature). Claim C83 shows agreement between model predictions and experimental measurements (Figure 8D), providing validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "BKCa channels with \u03b1 and \u03b21 subunits are activated by Ca2+ sparks with [Ca2+]i elevations of 10-100 \u03bcM. Model optimization suggests BKCa channels are exposed to a mean junctional Ca2+ concentration of 10 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 cite extensive literature support for BKCa channel properties and activation mechanisms. Claim C45 presents a model prediction validated against experimental data from Zhuge et al., 2002 (Figure 4A), showing good agreement at 10 \u03bcM [Ca2+]Jun.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The model predictions align with documented sex-specific differences in antihypertensive drug responses, including more pronounced diastolic BP response in women (91.4%) vs men (83%) with dihydropyridine-type channel blockers and more frequent vasodilation-related adverse symptoms in younger women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 cite clinical studies (Kloner et al., 1996; Kajiwara et al., 2014) documenting sex-specific drug responses. These provide external validation for the model predictions about differential Ca2+ channel blocker sensitivity. The clinical data support the translational relevance of the model findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The model predicts that intrinsic oscillatory behavior results from a delicate balance where INSC causes depolarization opposed by IKvTOT, with the CaV1.2 activation threshold at ~-45 mV. Small increases in INSC can overwhelm IKvTOT, triggering ICa activation, followed by BKCa-mediated hyperpolarization that resets the oscillatory cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 present a mechanistic model prediction explaining the oscillatory behavior observed experimentally. The mechanism is internally consistent with the model structure and provides a testable hypothesis. The prediction integrates multiple ion channel interactions in a physiologically plausible manner.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The model predicts that small differences in KV2.1 and CaV1.2 channel numbers can translate into large functional differences in membrane potential and [Ca2+]i, and that the small number of channels makes smooth muscle cells more susceptible to stochastic fluctuations, likely contributing to Ca2+ signaling heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 present logical inferences from the model predictions about small channel numbers. Claim C119 appropriately cites Guarina et al., 2022 for comparison with ventricular myocytes. Claim C120 is more speculative ('likely contributes') but represents a reasonable hypothesis based on the model findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The model describes necessary and sufficient ion channels, pumps, and transporters for isolated cell behavior but does not include complex signaling pathways from endothelial cells, neurotransmitters, and paracrine signals. Mouse arteries show parallels with human arteries but direct applicability requires validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 appropriately describe model limitations. The authors clearly acknowledge the simplified scope (isolated cells without complex signaling) and the use of mouse data. Claim C137 cites studies showing similarities between mouse and human arteries while acknowledging the need for human validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript reviews established mechanisms of myogenic response, including pressure-induced activation of TRP channels, CaV1.2 sparklets, myosin light chain kinase activation, and negative feedback through BKCa and voltage-dependent K+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22 summarize well-established mechanisms from the literature with appropriate citations. These provide necessary background context for the model development. The claims accurately represent cited work and establish the physiological framework for the study.",
+    "result_type": "MINOR"
+  }
+]

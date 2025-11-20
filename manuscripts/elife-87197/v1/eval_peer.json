@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study demonstrates that participants achieved 77.94% accuracy on reading comprehension questions, while simple heuristic models (orthographic: 25.6%, semantic: 27.3%) and RNN-based models (SAR: 47.6%) performed poorly. Transformer-based models achieved 37.08% after pre-training and 73% after fine-tuning, approaching human performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge the task performance results without critique. Reviewer 1 states the evidence is 'convincing,' and Reviewer 2 notes the models 'show a statistically reliable fit to these reading patterns above-and-beyond text- and semantic-similarity baseline metrics.' The comparison across model types is treated as methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Participants in Experiment 1 read passages at 457\u00b1142 words/min, almost twice the normal reading speed for native readers, indicating a specialized reading strategy for the goal-directed task.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these behavioral findings without question. The fast reading speed is implicitly acknowledged as part of the task-directed behavior that the study investigates. No concerns are raised about this measurement or its interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C34",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "Transformer-based DNN attention weights predict human word reading time significantly better than heuristic models and RNN models. Pre-trained transformers achieved ~0.5 predictive power, fine-tuned models reached higher values for local questions, and predictions remained significant even after controlling for text features and question relevance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm this core finding. Reviewer 1 states 'attention-weights from a deep neural network show a statistically reliable fit to the word-level reading patterns,' and Reviewer 2 notes 'statistically reliable fit...above-and-beyond text- and semantic-similarity baseline metrics.' The hierarchical analysis controlling for covariates is accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36"
+    ],
+    "result": "Layout features, word features, and question relevance all significantly predict word reading time. Layout features showed stronger effects for global than local questions, and question relevance remained significant even after controlling for text features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these text/task feature analyses as supporting evidence. Reviewer 3 specifically notes 'the modeling uses text- and question-based features in addition to DNNs, specifically evaluates relevant effects' as a strength. The regression analyses are treated as methodologically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Question-relevant words were uniformly distributed for local questions but concentrated at passage beginnings for global questions. Eye-tracking data confirmed readers spent more time on passage beginnings for global questions and on lines with highest question relevance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings about spatial distribution of attention are accepted by reviewers as part of the evidence for task-directed reading. Reviewer 3 notes the study 'directly modeling the question relevance of each word' as strengthening the conclusions. No concerns are raised about these analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Layout features influenced early reading stages for global questions, word features remained stable across stages, while question relevance effects increased from early to late reading stages, suggesting text-based attention develops early while task influence emerges later.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the temporal dynamics analysis. The distinction between early and late processing stages aligns with the hierarchical attention framework that reviewers find convincing. No methodological concerns are raised about the gaze duration vs. rereading analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Layer-wise analysis revealed that shallow DNN layers are sensitive to word features across all model types, while deep layers become sensitive to question relevance only in fine-tuned models, demonstrating hierarchical evolution of text-based and goal-directed attention.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers treat this hierarchical layer analysis as a key contribution. Reviewer 3 notes 'compares vanilla pretrained and task-finetuned models' as making 'results more transparent and helps assess the contributions of task optimization.' The layer-wise decomposition is accepted as valid evidence for the optimization hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Experiment 2 (mixed question types) showed slower reading (298\u00b1123 words/min) than Experiment 1 (blocked), with higher predictive power for layout/word features but lower for question relevance, indicating that readers developed question-type-specific strategies in the blocked design.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 4 explicitly identifies this as a weakness: 'Experiment 1 tests questions from different types in blocks...the paper provides evidence that this encourages the development of question-type-specific reading strategies...On the other hand, finetuning the model on one of the two types does not seem to reproduce this differential behavior.' This represents a limitation in the model's ability to capture human adaptive behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C103"
+    ],
+    "result": "Experiment 3 with native English speakers showed faster reading (506\u00b1155 words/min) than L2 readers, with weaker task modulation effects. Native readers showed significant but reduced question relevance effects compared to L2 readers, suggesting more efficient processing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the L1 vs. L2 comparison as strengthening the study. Reviewer 3 lists 'conducts experiments on both L2 and L1 speakers' as a strength. The interpretation that native readers show weaker overt attention effects is consistent with the efficiency explanation that reviewers do not challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C86"
+    ],
+    "result": "Experiment 4 (passage preview without question) showed slowest reading (225\u00b140 words/min), with pre-trained and fine-tuned models performing similarly. Question relevance did not predict reading time, confirming task-dependence of goal-directed attention effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this control experiment. Reviewer 3 states the claim 'rests on (i) a role of question relevance in influencing reading in Expts 1-2 but not 4, and (ii) the fact that fine-tuned DNNs improve prediction of gaze in Expts 1-2 but not 4.' This experimental contrast is treated as strong evidence for task optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C87",
+      "C99",
+      "C100",
+      "C114",
+      "C115"
+    ],
+    "result": "The study demonstrates that task-optimized transformer-based DNNs can explain human attention distribution in goal-directed reading without prior knowledge of human reading processes, and that simpler models failing to match human performance also fail to predict attention patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This main theoretical claim is strongly endorsed by reviewers. Reviewer 1 states the work 'strengthens a line of research arguing that attention in reading reflects task optimization.' Reviewer 4 notes 'modeling results contribute to theoretical understanding of human reading behavior, and strengthens a line of research arguing that it reflects task-adaptive behavior.' The evidence is deemed convincing for the optimization hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Pre-training on word prediction tasks introduces sensitivity to word surprisal and text features through learning statistical regularities, which aligns with established findings that word predictability modulates reading time and that pre-trained DNN representations converge with cortical language responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this mechanistic explanation for why pre-trained models capture human reading patterns. The connection to surprisal and prior neuroscience findings is treated as appropriate contextualization. No concerns are raised about this interpretive framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "The study situates its findings within prior reading research showing effects of word length, frequency, predictability, and line position, as well as previous models (E-Z reader, SWIFT) and mixed findings about task-relevance effects that may depend on working memory and topic familiarity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this literature contextualization. Reviewer 3 notes 'the claim that human attention reflects optimal behavior is not new, the paper considers a substantially more high-level task in comparison to prior work' as appropriate framing. The review of prior inconsistent findings is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study addresses mixed prior findings about DNN attention interpretability by showing that last-layer attention is tuned to task-relevant information, but this effect is weak for native readers, potentially explaining inconsistent correlations in prior literature. Shallower layers reliably model text features for all readers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers treat this as a valuable contribution to understanding DNN interpretability. The explanation for prior inconsistencies based on reader proficiency and layer depth is accepted as plausible. No concerns are raised about this reconciliation of prior mixed findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Recent DNN models with attention mechanisms approach or surpass human performance on goal-directed reading tasks, and task-optimized DNNs explain neural response properties across visual and language processing domains.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as established background. Reviewer 1 notes the work is 'methodologically well grounded in the NLP literature,' and Reviewer 3 states 'the paper leverages recent models from the NLP literature which are known to provide strong performance on such question-answering tasks.' This framing is uncontested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors speculate that skilled readers may rely on covert attention for efficient processing, acknowledge that different algorithms might solve the same task, and propose their dataset as a probe for testing biological plausibility of NLP models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these as appropriate interpretive caveats and future directions. Reviewer 4 notes 'the data are likely to be useful as a benchmark in further modeling of eye-movements, an area of interest to computational research on psycholinguistics.' The speculative nature is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study used 800 question/passage pairs from RACE dataset with six question types (local and global), where questions did not directly appear in passages. Participants were high-proficiency L2 readers who showed 90.47% confidence and 3.25/4 mean confidence ratings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the methodological rigor. Reviewer 2 specifically praises 'stimuli consisting of paragraphs read by middle and high school students, covering a wide range of diverse topics' for enhancing 'ecological validity.' The task design is treated as appropriate for testing the optimization hypothesis.",
+    "result_type": "MINOR"
+  }
+]

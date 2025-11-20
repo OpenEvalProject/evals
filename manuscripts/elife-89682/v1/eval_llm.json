@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Mitochondria in ferret layer 2/3 cortical basal dendrites are small and fragmented, with median volume of 0.248 \u00b5m\u00b3, surface area of 2.537 \u00b5m\u00b2, and maximum length of 1.137 \u00b5m, distributed with median inter-mitochondrion distance of 3.025 \u00b5m. These dimensions are smaller than those reported in mouse cortical neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide comprehensive quantitative characterization of mitochondrial morphology with appropriate statistical descriptors (medians and IQRs) from a well-defined sample (n=324 mitochondria from 63 dendritic segments, 4 cells, 2 animals). The comparison to mouse cortical neurons (C6) is appropriately cited. The measurements are internally consistent and supported by referenced figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "A small fraction (4.9%, 10/203) of dendritic spines contain mitochondria in the neck or head. These spine mitochondria are significantly smaller and more spherical than dendritic mitochondria (median volume 0.050 vs 0.248 \u00b5m\u00b3, p<0.0001) and are never continuations of dendritic mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 provide clear quantitative data on spine mitochondria prevalence and morphology with appropriate statistical testing (Mann-Whitney U tests, p<0.0001). The observation that spine mitochondria are never continuations of dendritic mitochondria (C13) is explicitly stated and distinguishes these from dendritic mitochondria. Sample sizes are adequate (n=203 spines for prevalence, n=10 spine mitochondria for morphology).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Mitochondrial volume near spines was quantified at 1 \u00b5m and 5 \u00b5m radii from spine neck base. The 5 \u00b5m radius captures significantly more mitochondrial volume than 1 \u00b5m radius (median 0.771 vs 0.221 \u00b5m\u00b3, p<0.001), though these measures are correlated (r=0.239, p=0.0238). A substantial fraction of spines lack nearby mitochondria (56.8% within 1 \u00b5m, 12.1% within 5 \u00b5m).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 establish the methodological approach for quantifying mitochondrial proximity to spines and provide baseline measurements. The choice of 1 \u00b5m and 5 \u00b5m radii is justified relative to median spine neck length (~1.8 \u00b5m, C20). Statistical testing is appropriate (Mann-Whitney U test, Spearman correlation) with adequate sample size (n=69 spines). The correlation between measurements at different radii (C19) validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Dendritic mitochondrial volume shows no correlation with structural measures of synaptic strength including spine head volume, PSD area, or spine neck length at either 1 \u00b5m or 5 \u00b5m radius (all p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 consistently demonstrate lack of correlation between mitochondrial volume and structural synaptic strength measures across both measurement radii. Sample sizes are adequate (n=60 for 1 \u00b5m, n=121 for 5 \u00b5m radius). All p-values are non-significant (p>0.05) and correlation coefficients are near zero (|r|<0.2), supporting the null hypothesis. This is a key negative result that challenges the initial hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Local mitochondrial volume at 1 \u00b5m radius positively correlates with spine-soma distance (r=0.325, p=0.006), but this relationship is not observed at 5 \u00b5m radius (r=0.104, p=0.129). This is explained by the known increase in mitochondrial volume fraction with distance from soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 provide correlation data with appropriate statistics and sample sizes (n=60 for 1 \u00b5m, n=121 for 5 \u00b5m). The explanation in C29 is supported by citation to Turner et al., 2022. The differential correlation at different radii is consistent with the cited mechanism. However, the explanation relies on prior literature rather than direct demonstration in this dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Mitochondrial volume within 1 \u00b5m radius correlates with spine-soma difference in orientation preference (bootstrapped r=0.315\u00b10.11 s.e.m., p=0.010, n=54), but not at 5 \u00b5m radius (r=0.017\u00b10.10 s.e.m., p=0.432, n=107). This trend was consistent across all four cells examined and could not be attributed to differences in selectivity or response amplitude between co-tuned and differentially tuned spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 establish a key functional correlation using appropriate bootstrapped statistics to account for variability. The sample sizes are adequate (n=54 for 1 \u00b5m, n=107 for 5 \u00b5m), and the finding is replicated across all four cells (C35). The control analysis (C33) rules out confounding by spine functional properties. The use of bootstrapping (C32, C34) is appropriate for the data structure. This is a central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Orientation selectivity and max response amplitude show no relationship to mitochondrial volume at 1 \u00b5m radius, but weak significant correlations at 5 \u00b5m radius (selectivity: r=0.175, p=0.027; amplitude: r=-0.166, p=0.030). This suggests that greater mitochondrial volume at extended distances leads to rapid calcium removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C39 provide correlation data with appropriate statistics and adequate sample sizes. However, the correlations at 5 \u00b5m radius are weak (|r|<0.2) and barely significant (p~0.03), raising concerns about biological significance despite statistical significance. The mechanistic interpretation in C40 is speculative and relies on inference from a modeling study (Leung et al., 2021) rather than direct measurement of calcium dynamics. The weak correlations may not survive multiple testing correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Local heterogeneity in orientation preference strongly correlates with mitochondrial volume at 1 \u00b5m radius (r=0.563, p=0.0005, n=31) but not at 5 \u00b5m radius (r=0.017, p=0.432, n=107). This correlation persists when restricting to differentially tuned spines (r=0.52, p=0.0052, n=50) and is independent of spine co-tuning effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 demonstrate a strong correlation (r=0.563) with highly significant p-value (p=0.0005) at 1 \u00b5m radius. The control analyses (C43-C46) effectively rule out confounding by spine co-tuning, showing the effect is specific to functional heterogeneity among differentially tuned inputs. The sample size for the primary analysis (n=31) is smaller than other analyses but adequate given the strong effect size. This is a key finding supporting the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Local temporal correlation and local average calcium activity show no relationship to mitochondrial volume at 1 \u00b5m radius. However, local average calcium activity negatively correlates with mitochondrial volume at 5 \u00b5m radius (r=-0.320, p=0.0004, n=105), suggesting calcium buffering in regions with large mitochondrial volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide correlation data with appropriate statistics and adequate sample sizes. The negative correlation at 5 \u00b5m radius (C50) is moderate (r=-0.32) and highly significant (p=0.0004). The mechanistic interpretation (C51) is reasonable given the correlation pattern (effect only at extended radius) and is consistent with known mitochondrial calcium buffering function, though it remains inferential rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Spines containing mitochondria in the head or neck have significantly larger spine head volume (median 0.608 vs 0.311 \u00b5m\u00b3, p=0.0014) but do not differ in PSD area (p=0.087), neck length (p=0.382), or distance from soma (p=0.898) compared to spines without mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide statistical comparisons using both Mann-Whitney U tests and permutation tests, with consistent results. The significant difference in spine head volume (C52) is well-supported (p=0.0014), while the trend for PSD area (C53) appropriately does not reach significance. Sample sizes are adequate (n=10 with mitochondria, n=157 without). The selective association with spine volume but not other anatomical features is an important distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Spines with mitochondria in the head or neck are more selective for oriented gratings (median 0.396 vs 0.268, p=0.016) but do not differ in spine-soma orientation preference difference (p=0.451). This suggests spine mitochondria support stronger, more selective synaptic inputs differently than dendritic mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide statistical comparisons with appropriate tests and adequate sample sizes. The significant difference in orientation selectivity (C56, p=0.016) combined with no difference in spine-soma tuning (C57) distinguishes spine mitochondria from dendritic mitochondria. The interpretation (C58) is reasonable given the data and is supported by citation to prior work (Scholl et al., 2021) linking selectivity to synaptic strength. This represents a distinct functional role for spine versus dendritic mitochondria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C120"
+    ],
+    "result": "An unsupervised deep learning method (U-net++ architecture) was used for 3D identification and segmentation of mitochondria in EM volumes, trained on manual segmentations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C120 describe the computational methodology for mitochondrial identification. The use of U-net++ is appropriate for this task and the training on manual segmentations is standard practice. However, the manuscript lacks details on validation metrics, segmentation accuracy, or comparison to manual segmentation, which would strengthen confidence in the automated measurements. The method is described as 'unsupervised' (C82) but requires training on manual segmentations (C120), which is somewhat contradictory terminology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mitochondria are positioned near spines with orientation preferences dissimilar to the soma and near groups of spines with heterogeneous orientation preferences, suggesting they support functionally diverse inputs rather than strong synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 represent the main conclusions of the manuscript, synthesizing results from multiple analyses (C32, C41-C46 for functional diversity; C21-C26 for lack of structural correlation). These conclusions are well-supported by the data presented, though they remain correlative rather than demonstrating causation. The interpretation that mitochondria support functional diversity (C63) is reasonable but speculative regarding mechanism.",
+    "result_type": "MAJOR"
+  }
+]

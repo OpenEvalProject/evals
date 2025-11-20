@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "H3K4me2 chromatin profiling in wildtype, bam mutant, and aly mutant testes reveals stage-specific promoter activation during spermatogenesis. Early germline genes (e.g., nanos) show H3K4me2 enrichment in bam mutants, spermatocyte genes (e.g., loopin-1) in aly mutants and wildtype, and meiotic genes (e.g., Mst36Fa/Fb) only in wildtype testes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C28 provide converging evidence from chromatin profiling experiments using stage-arrest mutants. The H3K4me2 modification tracks with known gene expression timing across developmental stages (C24-C26), with appropriate controls showing no signal in somatic wing discs (C27) and expected marking of somatic genes in all testis samples (C28). The experimental design using bam and aly mutants (C21-C23) provides temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Integration of H3K4me2 chromatin profiling with published gene expression data reveals that while most genes show correspondence between promoter activation and mRNA production, a fraction of genes activate earlier than expected, and late-stage genes show reduced H3K4me2 marking, suggesting diminished H3K4-modifying enzyme activity in late spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C100-C102 are supported by integration of experimental chromatin profiling data with published single-cell RNA-seq data. The observation of reduced H3K4me2 in late stages (C29-C30) is directly shown in Figure 2C, and the inference about reduced enzyme activity (C31) is reasonable given the co-transcriptional nature of this modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "FACS isolation of spermatocytes using heph-GFP marker enables chromatin profiling of this specific cell type. RNAPIIS2p profiling shows broad coating of actively transcribed genes including betaTub85D, protamine genes, and genes normally expressed in post-meiotic cells, indicating RNAPII engagement occurs before transcript detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 describe a well-validated experimental approach. The heph-GFP marker is established (C33-C34), FACS isolation is documented (Figure 3B), and RNAPIIS2p profiling shows expected patterns for spermatocyte-specific genes (C35-C36) and late-expressed genes (C37-C40). The inference that RNAPII engages before transcript detection (C40) is supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "RNAPIIS2p distribution in spermatocytes differs dramatically from somatic cells, showing uniform distribution across active genes rather than the typical 5' peak seen in somatic cells. This suggests absence of promoter-proximal pausing in spermatocytes, necessitating gene regulation solely through transcription factor and RNAPII recruitment. The altered RNAPII distribution is mirrored by changes in H3K4me2 distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 and C103-C107 are well-supported by experimental data comparing spermatocytes to somatic wing disc cells (Figures 3C-F, Figure 3\u2014figure supplement 1). The observation of uniform RNAPII distribution (C43, C46, C104) is clearly shown, and the inference about lack of pausing (C106) is reasonable given established knowledge about RNAPII pausing in somatic cells (C105). The mechanistic interpretation (C107) follows logically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The X chromosome is not dosage compensated in spermatocytes. RNAPIIS2p profiling shows loss of X chromosome enrichment in spermatocytes compared to somatic cells, with median X-linked gene expression equal to autosomes rather than doubled. H4K16ac profiling confirms absence of dosage compensation, showing X chromosome depletion for this modification in spermatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C61 provide strong converging evidence from two independent chromatin marks (RNAPIIS2p and H4K16ac). The experimental data clearly show loss of X chromosome enrichment in spermatocytes (C55, C57, C60) compared to the expected dosage compensation in somatic cells (C56, C59). The conclusion that dosage compensation is absent (C61) is well-supported by both datasets (Figure 4A-C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C117",
+      "C118"
+    ],
+    "result": "The X chromosome does not undergo meiotic sex chromosome inactivation (MSCI) in Drosophila spermatocytes. Profiling of silencing histone modifications (H3K9me2, H3K27me3, uH2A) shows no enrichment on the X chromosome, and RNAPII levels on X-linked genes equal those on autosomes. Instead, reduced X expression is explained by lack of dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C71-C84, C117-C118 provide comprehensive evidence against MSCI in Drosophila. Multiple silencing marks associated with mammalian MSCI (H3K9me2, uH2A) show no X chromosome enrichment (C74, C84, C117), while H3K27me3 shows little change (C78). The equivalent RNAPII levels (C118) combined with lack of silencing marks strongly supports the conclusion that MSCI does not occur (C5), and reduced expression is due to lack of dosage compensation (C6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The Y chromosome shows dramatic enrichment for H4K16ac and uH2A modifications in spermatocytes. RNAPIIS2p accumulation on Y chromosome genes is dramatic, and H4K16ac enrichment suggests this modification is involved in Y chromosome gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C64-C66 are supported by experimental chromatin profiling data (Figures 4A-C, 6A). The dramatic enrichment of RNAPIIS2p (C64), H4K16ac (C65), and uH2A (C7-C8) on the Y chromosome is clearly shown. The inference that H4K16ac is involved in activation (C66) is reasonable given the correlation with transcriptional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The uH2A modification shows striking enrichment on the active Y chromosome in spermatocytes. Immunostaining reveals uH2A accumulates in a stringy wedge pattern that resembles Y chromosome loops, appearing in mid-stage spermatocytes and expanding in late stages. In XO males lacking a Y chromosome, uH2A shows a different focal appearance, suggesting aggregation. Y-linked gene promoters show strong enrichment for both RNAPIIS2p and uH2A in spermatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C96 provide comprehensive evidence from both chromatin profiling (C83-C85, C95-C96) and immunostaining (C86-C94). The temporal and spatial pattern of uH2A accumulation (C86-C87) matches known Y chromosome loop behavior (C88), and the XO control experiment (C89-C90) supports the Y chromosome localization. The correlation between uH2A and RNAPIIS2p at Y-linked promoters (C95-C96) strengthens the association with transcriptional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C139",
+      "C140"
+    ],
+    "result": "Transposons activated in spermatocytes gain both RNAPIIS2p signal and uH2A modification, suggesting uH2A modulates transcriptional activation of heterochromatic regions in spermatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 and C139-C140 are supported by experimental chromatin profiling data (Figure 6D, Supplementary file 1d). The correlation between RNAPIIS2p and uH2A on activated transposons (C97-C98) is clearly shown. The interpretation that uH2A modulates heterochromatic transcription (C99, C140) is reasonable given the data, though it remains somewhat speculative as indicated by the cautious language ('suggest', 'conceivable').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C66"
+    ],
+    "result": "H4K16ac and uH2A modifications may contribute to Y chromosome activation in spermatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C66 propose a functional role for these modifications in Y chromosome activation. While the enrichment of these marks on the active Y chromosome is well-documented (C7-C8, C65), the causal relationship remains speculative. The manuscript uses cautious language ('may contribute', 'suggesting'), and no functional experiments (e.g., perturbation of these modifications) are presented to test causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Spermatogenic gene promoters are distinctively small, and RNAPII binds enzymes that progressively methylate H3K4, with active promoters in somatic cells typically marked by both H3K4me2 and H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by citations to established literature (White-Cooper et al., 2010; Bernstein et al., 2005). These are well-established facts about promoter architecture and histone modifications that provide context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The absence of MSCI in Drosophila may be explained by evolutionary loss of synapsis in male meiosis, which would have required concomitant loss of unpaired chromosome response. Alternatively, MSCI may be linked to X-inactivation systems absent in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 present evolutionary hypotheses to explain the absence of MSCI in Drosophila. The logic is sound: Drosophila males lack synapsis (C120, supported by McKee and Handel, 1993), and MSCI is mechanistically linked to synapsis (C122-C123, supported by Abe et al., 2022). The inference that loss of synapsis required loss of unpaired chromosome response (C121) is logical. The alternative hypothesis about X-inactivation (C124) is also reasonable, though more speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The Drosophila Y chromosome is almost entirely repetitive sequence but carries unique genes required for male fertility. It is heterochromatic in somatic cells but heavily transcribed in spermatocytes, accumulating multiple histone modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 describe established knowledge about the Drosophila Y chromosome, supported by citations (Chang and Larracuente, 2019; Bonaccorsi et al., 1988; Hennig and Weyrich, 2013). These provide important context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The uH2A modification in spermatocytes is likely not catalyzed by the canonical Polycomb enzyme Sce, as Polycomb does not co-localize with the uH2A-coated Y chromosome. Alternative enzymes such as UBR2 homologs or other ubiquitin ligases may be responsible, with some candidates showing male sterile phenotypes when mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 address the enzymatic basis of uH2A in spermatocytes. The inference that Sce is not responsible (C132-C133) is supported by lack of co-localization data. The discussion of alternative enzymes (C134-C136) is well-supported by citations and provides reasonable candidates, though the specific enzyme remains unidentified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The uH2A modification has diverse roles beyond silencing, being associated with both silenced and active genes in developing eye tissue and countering chromatin compaction in early embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by citations to recent literature (Loubiere et al., 2020; Bonnet et al., 2022). These provide important context for understanding the non-canonical role of uH2A in spermatocytes, showing that association with active chromatin is not unprecedented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Drosophila spermatogenesis proceeds through a unique transcriptional program involving germline-specific transcription factors and testis-specific core transcriptional machinery, with activation of Y chromosome genes and reduced X chromosome transcription. The developmental stages and transcriptional programs have been characterized by single-cell RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C20 provide background context supported by established knowledge and citations. These describe the biological system under study and are well-established in the field. They provide essential context for interpreting the experimental results but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "RNAPII density on the fourth chromosome is reduced in spermatocytes, consistent with decreased transcript production. The fourth chromosome is an evolutionary derivative of the X chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by experimental data and citations. However, the authors note that only 10 genes are expressed from this chromosome in spermatocytes, limiting inference about down-regulation. This is a minor observation that does not substantially impact the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Background on sex chromosome regulation in mammals and prior studies in Drosophila. Mammalian MSCI involves precocious silencing of sex chromosomes with enrichment of H3K9me2 and uH2A modifications. In Drosophila, MSCI has been suggested but not observed in transcriptional profiling, and non-canonical dosage compensation occurs in early germline stages but disappears by spermatocyte stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C82 and C111-C116 provide essential background from prior literature, supported by appropriate citations. These establish the context and motivation for the experimental work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,443 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "During meiotic entry, Swi4 protein levels decrease by approximately 30% after 2 hours in sporulation medium, while Mbp1 and Swi6 levels increase. Swi4 is the sole subunit within SBF and MBF whose level declines during meiotic entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by immunoblotting data (Figure 1B-C) showing differential regulation of SBF/MBF subunits during meiotic entry. The quantification is clear and the conclusion is consistent with published mass spectrometry data (C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Most SBF-specific target genes have low or no expression during early meiosis compared to mitotically dividing cells, while most MBF targets display increased expression upon meiotic entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by RNA-seq data analysis (Figure 1D) comparing gene expression in meiotic vs. mitotic conditions. The differential expression patterns are clearly demonstrated and consistent with the functional specialization of SBF and MBF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Overexpression of SWI4 under the ATG8 promoter results in five-fold higher Swi4 levels and leads to significant increases in CLN1 (p=0.0351) and CLN2 (p=0.0013) transcript levels, but does not significantly affect MBF-specific targets CDC21 and RNR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by immunoblotting (Figure 1\u2014figure supplement 1) and RT-qPCR data (Figure 1E) with appropriate statistical testing. The selective activation of SBF targets without affecting MBF targets is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "SWI4 overexpression causes a significant delay in meiotic progression (p=0.0045), demonstrating that downregulation of SWI4 is necessary for timely meiotic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by live-cell imaging data (Figure 1F) with appropriate statistical testing. The conclusion (C28) is a reasonable inference from the experimental observation (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In pATG8-SWI4 cells, there is a 50% reduction in Ime1 protein levels and only approximately 50% of cells have nuclear Ime1 at 2 hours in sporulation medium (p=0.0169), compared to >90% in wild type. Cells with increased nuclear Swi4 levels have reduced levels of nuclear Ime1 (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by immunoblotting (Figure 2\u2014figure supplement 1) and fixed-cell imaging data (Figure 2A-B, E) with appropriate statistical testing. The inverse relationship between Swi4 and Ime1 is clearly demonstrated at both population and single-cell levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "More than 50% of early meiotic genes have a significant decrease in expression upon SWI4 overexpression (padj <0.05). Gene set enrichment analysis reveals significant enrichment of SBF target gene expression (NES=2.88, p<0.001) and significant disenrichment of early meiotic gene expression (NES=\u22122.88, p<0.001) in pATG8-SWI4 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by mRNA-seq data (Figure 2F) and GSEA analysis (Figure 2G). The statistical analyses are appropriate and the results clearly demonstrate the transcriptional consequences of SWI4 overexpression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "There is a significant delay in Rec8-GFP nuclear appearance in pATG8-SWI4 strain compared to wild type (p=0.0005), and sporulation efficiency is decreased by approximately 20% in pATG8-SWI4 strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by live-cell imaging data (Figure 2H-I) and sporulation efficiency measurements (Supplementary file 2) with appropriate statistical testing. These results provide orthogonal validation of the meiotic entry defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "In response to SWI4 overexpression, there is up to twofold increase in Cln1 and tenfold increase in Cln2 protein levels. Deletion of either CLN1 (p=0.0111) or CLN2 (p=0.0478) significantly rescues the meiotic progression delay in pATG8-SWI4 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by immunoblotting data (Figure 3A-D) and live-cell imaging data (Figure 3E-F) with appropriate statistical testing. The rescue experiments establish a causal link between G1 cyclins and the meiotic defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Wild-type cells complete meiosis with >94% sporulation efficiency, while CLN2 overexpression results in only 8.5% sporulation and CLN1 overexpression results in 65% sporulation. When CLN2 is overexpressed, only 5% of cells display nuclear GFP-Ime1 signal during early meiosis compared to >84% in wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by sporulation efficiency data (Figure 4A) and fixed-cell imaging data (Figure 4B-C). The results clearly demonstrate the inhibitory effect of G1 cyclin overexpression on meiotic entry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In pATG8-CLN2 mutant, there is approximately 30% decrease in IME1 transcript and Ime1 protein levels. Rescue of IME1 expression using pCUP1-GFP-IME1 does not rescue sporulation, and the intensity of nuclear Ime1 signal is significantly lower in pATG8-CLN2; pCUP1-GFP-IME1 cells (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by RT-qPCR (Figure 4\u2014figure supplement 1), immunoblotting (Figure 4\u2014figure supplement 2), sporulation efficiency (Figure 4A), and imaging data (Figure 4E-F). The results demonstrate that rescuing IME1 expression alone is insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Tethering Ime1 to Pus1 using PUS1-\u03b1GFP does not interfere with Ime1 function and fully rescues nuclear localization (P=0.6563), but cells with PUS1-\u03b1GFP; pATG8-CLN2 genotype still fail to undergo meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by sporulation efficiency data (Figure 4A) and imaging data (Figure 4H-I). The results demonstrate that rescuing Ime1 nuclear localization alone is also insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C4",
+      "C81"
+    ],
+    "result": "Tethering Ime1 to Ume6 using UME6-\u03b1GFP rescues the sporulation defect of pATG8-CLN2 mutant to levels similar to wild type, demonstrating that G1 cyclins perturb meiotic entry by blocking the interaction between Ime1 and its cofactor Ume6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, C4, and C81 are supported by sporulation efficiency data (Figure 4A) and imaging data (Figure 4K-L). The rescue by tethering Ime1 to Ume6 provides strong evidence for the mechanism by which G1 cyclins inhibit meiotic entry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "A LUTI is expressed from the SWI4 locus in meiotic cells. When SWI4LUTI is expressed, SWI4canon is downregulated. Meiotic cells display a significant increase in SWI4LUTI transcripts (p<0.0001) and a significant decrease in SWI4canon transcripts (p=0.0007) compared to premeiotic state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by RNA-seq data (Figure 5A), smFISH data (Figure 5C-D), and citations to prior work. The inverse expression pattern of the two transcript isoforms is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "In \u0394LUTI cells, there is an increase in the abundance of SWI4canon mRNA and an increase in Swi4 protein abundance compared to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by RNA blotting and immunoblotting data (Figure 5E-F). The results demonstrate the functional consequence of LUTI deletion on Swi4 protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The \u0394uORF mutant has higher levels of Swi4 protein compared to wild type. SWI4canon transcript levels remain similar between wild type and \u0394uORF mutant, whereas SWI4LUTI levels are higher in the \u0394uORF mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by immunoblotting and RNA blotting data (Figure 5G-H). The results demonstrate that uORFs within the LUTI repress translation of the SWI4 CDS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "After 1 hour of IME1 induction, Swi4 levels start to decrease dramatically. Reduction in Swi4 levels is dependent on Ime1 rather than being driven by nutrient deprivation in SPO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by immunoblotting data (Figure 5I-J) using an inducible IME1 allele. The experimental design appropriately controls for nutrient deprivation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Ume6 binds at the SWI4LUTI promoter. UME6-T99N allele, which cannot interact with Ime1, shows a dramatic reduction in SWI4LUTI expression in meiotic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by ChIP-seq data (Figure 5K) and mRNA-seq data (Figure 5\u2014figure supplement 1) from published datasets. The results support the regulation of SWI4LUTI by the Ime1-Ume6 complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C70",
+      "C72"
+    ],
+    "result": "Disruption of LUTI-based regulation alone or WHI5-AA alone is not sufficient to reactivate SBF targets or significantly change the expression of SBF targets or early meiotic genes relative to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C72 are supported by mRNA-seq data (Figure 6A, C). The results demonstrate that neither mechanism alone is sufficient to activate SBF targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Loss of both LUTI and Whi5 regulation results in increased expression of SBF targets and a concomitant decrease in early meiotic transcripts compared to wild type. GSEA reveals significant enrichment of the SBF regulon (NES=1.95, p<0.001) and significant disenrichment of early meiotic genes (NES=\u22123.39, p<0.001) in \u0394LUTI; WHI5-AA double mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by mRNA-seq data (Figure 6D) and GSEA analysis (Figure 6\u2014figure supplement 3). The results demonstrate the redundancy and combined effect of the two regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Loss of either LUTI- or Whi5-based repression of SBF alone is not sufficient to cause a delay in meiotic entry. However, simultaneous perturbation of both pathways leads to a significant delay in meiotic entry (p=0.0112), demonstrating that SWI4LUTI is integrated into a larger regulatory network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by live-cell imaging data (Figure 6E) with appropriate statistical testing. The results provide functional validation of the redundant regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C79",
+      "C80"
+    ],
+    "result": "Two mechanisms work together to restrict SBF activity during meiotic entry: repression of Swi4 through LUTI-based regulation and inhibition of SBF by Whi5. Ime1 downregulates Swi4 protein expression via induction of SWI4LUTI while Whi5 represses SBF activity in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C79, and C80 represent the main conclusions of the study and are supported by the collective evidence from multiple experiments including smFISH, RNA blotting, immunoblotting, anchor-away experiments, and mRNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Untimely SBF activation causes downregulation of early meiotic genes and delays meiotic entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 are supported by mRNA-seq data (Figure 2F-G) and live-cell imaging data (Figure 1F, 2H-I). The results clearly demonstrate the consequences of SBF misregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Genes with significantly increased expression in pATG8-SWI4 are involved in mitosis while those with significantly decreased expression are involved in meiotic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by gene ontology analysis (Figure 2\u2014figure supplement 2) of mRNA-seq data. The results provide functional context for the transcriptional changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Whi5 is expressed during early meiosis (0 hr in SPO) and localizes to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by imaging data (Figure 6\u2014figure supplement 1) and is consistent with a previous report. This observation provides the basis for investigating Whi5's role in meiotic entry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Background information on SBF/MBF transcription factors, Ime1-Ume6 regulation, LUTI-based gene regulation, and their mammalian homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C16, C82-C114 represent background information supported by citations to prior work and established scientific knowledge. These claims provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Overexpression of G1 cyclins CLN1, CLN2, and CLN3 inhibits meiotic entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by a citation to prior work (Colomina et al., 1999). This provides context for investigating the role of CLN1 and CLN2 in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Previous work reported that G1 cyclins do not affect the interaction between Ime1 and Ume6 based on a truncated Ime1 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is a critical evaluation of prior work (Colomina et al., 1999), noting methodological limitations. This provides context for the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Rim15 contains CDK consensus phosphorylation sites and Cln2/CDK activity inhibits Rim15 nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by citations to prior work. These observations are discussed as potential mechanisms for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Technical details about the SWI4LUTI structure and strain background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 represent technical details stated in figure legends and methods. These are straightforward descriptive claims.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "RSC and ISW2 exhibit distinct modes of 1D diffusion on DNA: RSC primarily uses 1D hopping (salt-sensitive, higher diffusion coefficients at elevated salt), while ISW2 employs helically-coupled sliding (salt-insensitive up to 100 mM KCl). RSC is more diffusive than ISW2 under identical buffer conditions, and RSC diffusion increases with ATP\u03b3S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C18 provide converging experimental evidence from optical tweezers and single-particle imaging showing differential salt sensitivity and diffusion coefficients between RSC and ISW2. The interpretation that RSC uses hopping while ISW2 uses sliding (C18) is well-supported by the salt-sensitivity data and is consistent with biophysical principles. C19 adds supporting evidence about nucleotide effects on RSC diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "RSC and ISW2 undergo dynamic collisions during 1D diffusion on DNA, exhibiting three types of interactions: short-lived colocalizations (t1/2 ~0.03 s), longer-lived co-diffusion events (t1/2 ~0.7 s), and rare bypass events (0.2-0.3% of encounters). Both remodelers can scan 150 bp of free DNA within 0.2 s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 present quantitative measurements of remodeler-remodeler collision dynamics with specific half-lives determined from experimental data. The three collision types are well-characterized with supporting figures, and simulation analysis (Figure 2\u2014figure supplement 1) validates the event classification. The scanning speed calculation (C26) is appropriately derived from the diffusion data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Nucleosomes act as barriers to remodeler diffusion, substantially increasing non-diffusive dwell times. Upon nucleosome encounter, RSC and ISW2 dwell times increase 5-8 fold in the absence of ATP or with ATP\u03b3S. With hydrolysable ATP, RSC dwell time remains elevated (T=23 s) while ISW2 dwell time decreases by ~2-fold (T=12 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27-C29 are supported by experimental measurements across multiple nucleotide conditions shown in Figures 3F-K. The differential response to ATP between RSC and ISW2 is clearly documented and appropriately interpreted as reflecting ISW2's known ATP-dependent binding turnover. The data demonstrate that nucleosomes sequester remodelers regardless of nucleotide state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Both RSC and ISW2 processively translocate nucleosomes at ~29 bp/s in an ATP-dependent manner on extended DNA under tension. RSC translocations comprise 42% of nucleosome encounters (median 33 s, 940 bp), while ISW2 translocations comprise 21% (median 22 s, 690 bp). RSC occasionally switches direction (9% of events), while ISW2 does not. Both remodelers show speed changes in ~10% of traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30-C39 present comprehensive characterization of nucleosome translocation with quantitative measurements from Figures 4A-L. The ATP-dependence is clearly demonstrated by controls (C39). The similar translocation speeds for both remodelers despite their size difference is a striking finding. However, the authors acknowledge the caveat that all assays were performed under ~5 pN tension (C70), which may enhance processivity beyond physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "RSC and ISW2 exhibit opposing directional biases in nucleosome translocation relative to their 1D approach: RSC preferentially translocates in the same direction as its approach (20/25 events, 'pushing'), while ISW2 translocates opposite to its approach direction (19/21 events, 'pulling'). This provides direct visual evidence for the push-pull model of NDR regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C44 present directional bias data from limited sample sizes (25 RSC events, 21 ISW2 events) as acknowledged by the authors ('more data are required for a conclusive statement,' C44). While the observed bias is statistically significant and mechanistically consistent with the push-pull model (C71-C72, C74), the small sample size, experimental conditions (5 pN tension, sparse arrays), and potential confounding factors (sequence preferences, nucleosome positioning) warrant caution. The result is promising but requires additional validation under varied conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C62",
+      "C63"
+    ],
+    "result": "The observed nucleosome translocation speeds (29 bp/s) are >10-fold higher than previously reported for ACF (~2 bp/s). Histone H2A fluorescence is retained during long-lived translocation events, indicating no H2A dissociation despite tension-induced DNA unwrapping. Gel-based assays confirm RSC and ISW2 nucleosome sliding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C62-C63 compare current findings to prior work and document histone retention during translocation. The speed difference from prior studies (C49) is appropriately attributed to experimental differences (saturating ATP, tension, DNA sequence). Histone retention (C50) is directly observed and is expected for ISW2 but surprising for RSC given its known eviction activity (C51-C52). The gel assays (C62-C63) validate remodeler activity on defined substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C45"
+    ],
+    "result": "In the presence of ATP, 28% of RSC 'non-diffusive' time represents visible translocation, compared to 14% for ISW2. The 1D search time after NDR binding constitutes only a small fraction of the overall in vivo chromatin-bound lifetime (several seconds).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are derived from calculations integrating data from Figures 3J-K and 4J, providing quantitative estimates of translocation frequency. C45 appropriately contextualizes the rapid 1D search relative to in vivo residence times from cited SPT studies. The inference is logical and well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C20"
+    ],
+    "result": "Background and prior work: Chromatin remodelers establish NDRs at promoters, with RSC and ISW2 having opposing effects on nucleosome positioning in vivo. Live-cell studies show high promoter occupancies (10-90%) and transient binding (seconds). Remodelers exhibit higher diffusion than histones, suggesting 1D search capability. Previous FRET studies demonstrated short-range nucleosome repositioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C13, C20 accurately summarize established knowledge from the literature with appropriate citations. These provide essential context for the current study. The claims are well-supported by the cited references and represent accurate characterization of prior work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C68"
+    ],
+    "result": "Discussion of prior work and mechanistic context: Previous studies established short-range nucleosome translocations (~200 bp) with RSC and ISW2 showing unidirectional movement. CryoEM structures of RSC reveal asymmetric orientation providing structural basis for directional movement. Additional mechanisms may include DNA sequence preferences, transcription factor barriers, and mechanical DNA sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48, C51-C57, C68 appropriately cite and discuss prior structural, biochemical, and functional studies that provide mechanistic context for the current findings. The citations appear accurate and the interpretations are reasonable. These claims establish the knowledge base for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70"
+    ],
+    "result": "Methodological details: Experiments used C-Trap optical tweezers with confocal microscopy, lambda DNA tethered at 5 pN tension, HaloTag-labeled remodelers purified from yeast, and 1D localization precision of 226\u00b132 bp. Assays were performed without histone chaperone Nap1 and under ~5 pN tension throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C64-C66, C69-C70 describe the experimental methodology with appropriate detail. The methods are clearly documented and the caveats (tension, absence of Nap1, localization precision) are appropriately acknowledged. These methodological claims are well-supported by the Materials and Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C73"
+    ],
+    "result": "Speculative interpretations: Tension-induced nucleosome unwrapping may transiently stimulate processivity and speed similar to what is reported. In the native NDR context, remodelers may rapidly traverse the NDR by 1D diffusion to engage and translocate +1/-1 nucleosomes until halted by flanking nucleosomes or protein roadblocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67 and C73 are explicitly speculative statements about how the in vitro findings may relate to in vivo function. While these are reasonable hypotheses based on the data, they remain untested. The speculation is appropriately qualified by the authors but requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

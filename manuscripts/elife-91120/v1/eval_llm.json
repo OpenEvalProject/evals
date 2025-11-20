@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Ingestion of bacterial food inhibits daf-7 expression in the ASJ neurons through an interoceptive signal, while a diffusible external bacterial cue induces daf-7 expression in these neurons. The interoceptive signal is epistatic to the external signal when both are present, and the response occurs rapidly (within 2-3 hours) upon removal of ingestible food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide converging experimental evidence from multiple food conditions (Fed, Aztreonam, Bottom, Lid, Empty) showing differential daf-7 expression patterns. The kinetics data (C8) and spatial separation experiments (C5-C6) support the model of two opposing food cues. The experimental design appropriately controls for different types of food signals (diffusible vs. volatile vs. ingestible).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "DEL-3 and DEL-7 acid-sensing ion channels in NSM neurons mediate the interoceptive detection of ingested food in the pharynx, which inhibits daf-7 expression in the ASJ neurons. Loss of del-3;del-7 function results in elevated daf-7 expression on ingestible food but normal expression on non-ingestible food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 establish a mechanistic link between pharyngeal food detection and daf-7 regulation. The del-3;del-7 mutant phenotype (C10) specifically affects the response to ingestible food while leaving the non-ingestible food response intact, supporting the model of distinct pathways. The prior characterization of DEL-3/DEL-7 (C9) provides mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "C. elegans exhibit two-state foraging behavior (roaming and dwelling), and DAF-7 promotes roaming behavior. daf-7 mutants spend significantly less time roaming compared to wild-type animals, and animals increase roaming on aztreonam-treated (non-ingestible) food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 establish the behavioral context and DAF-7's role in roaming. The experimental data (C17) using worm-tracking software and exploration assays confirm prior findings (C15-C16) about daf-7 mutant phenotypes. Multiple independent alleles (e1372 and ok3125) show consistent phenotypes, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "ASJ-specific expression of daf-7 is sufficient to partially rescue roaming behavior in daf-7 mutants, and ASJ-specific deletion of daf-7 reduces roaming and exploration. This demonstrates that daf-7 expression specifically in the ASJ neurons contributes to roaming behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 provide complementary gain-of-function (rescue) and loss-of-function (Cre-lox deletion) evidence for ASJ-specific daf-7 function. The use of the ASJ-specific trx-1 promoter and Cre-lox system provides cell-specific resolution. The partial rescue (C18) is appropriately interpreted, acknowledging that daf-7 expression in other neurons may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "daf-7 mutant animals exhibit shortened roaming states relative to wild-type animals, consistent with a positive feedback loop model where daf-7 expression promotes the persistence of roaming states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 provides state duration analysis supporting the positive feedback model. The quantification across multiple animals and reference to Figure 2F provide empirical support. However, the authors note wide variation in dwelling state durations precluded detecting significant differences, which is an appropriate acknowledgment of limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Serotonin promotes dwelling states, and tph-1 mutants (deficient in serotonin biosynthesis) spend more time roaming and constitutively express daf-7 in ASJ neurons across all food conditions, though expression retains sensitivity to food environment changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 establish serotonin's role and show correlation between increased roaming and daf-7 expression. The tph-1 mutant data (C23-C24) support the model that serotonin signaling influences daf-7 expression. The observation that daf-7 expression retains food sensitivity in tph-1 mutants suggests serotonin acts in parallel to, rather than downstream of, the food sensing pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "PDF signaling modulates roaming and dwelling behavior. Loss-of-function pdfr-1 mutants show decreased roaming and fail to upregulate daf-7 in ASJ neurons on non-ingestible food, while gain-of-function pdfr-1(syb3826) mutants show increased roaming and constitutive daf-7 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 provide complementary loss-of-function and gain-of-function evidence for PDFR-1's role. The gain-of-function allele (syb3826) was independently generated and validated, strengthening the conclusion. The correlation between roaming behavior and daf-7 expression across genotypes supports the model that PDFR-1 influences daf-7 expression, possibly by modulating sensation of external food cues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "SCD-2, the C. elegans ortholog of mammalian ALK, is required for normal upregulation of daf-7 in ASJ neurons in response to non-ingestible food. Loss-of-function scd-2 mutants show reduced daf-7 upregulation, and SCD-2 has been previously implicated in dauer diapause and sensory integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 establish SCD-2's role through loss-of-function analysis. Multiple scd-2 alleles show consistent phenotypes (C35), and the hen-1 mutant shares the phenotype (C30), consistent with HEN-1 being the SCD-2 ligand. The prior characterization of SCD-2 (C32) and ALK (C33-C34) provides relevant context for interpreting the metabolic and behavioral phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A gain-of-function scd-2(syb2455) allele, engineered based on the conserved F1174L ALK mutation, causes constitutive daf-7 expression in ASJ neurons even on ingestible food, with reduced dynamic range in response to food changes. However, the pathogen-induced daf-7 response remains intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe a rationally designed gain-of-function allele based on human ALK mutations. The constitutive daf-7 expression (C38) and reduced dynamic range (C39) support SCD-2's role in food sensing. The intact PA14 response (C40) suggests SCD-2 specifically regulates the food ingestion pathway rather than globally controlling daf-7 expression. The quantitative analysis (8.1-fold vs 1.7-fold) provides clear evidence of reduced dynamic range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "SCD-2 functions in the AIA interneurons to cell-non-autonomously control daf-7 expression in the ASJ neurons. AIA-specific deletion of scd-2 reduces daf-7 upregulation in response to non-ingestible food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 use cell-specific Cre-lox deletion to demonstrate SCD-2 acts in AIA neurons. The prior work (C41) establishing AIA-specific rescue provides context. The cell-non-autonomous effect (C43) is appropriately inferred from the AIA-specific deletion affecting ASJ neuron gene expression. This is consistent with AIA's known role in sensory integration (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Loss-of-function mutations in scd-2 and hen-1 reduce roaming behavior and lawn exploration. These mutants exhibit shorter roaming states but unchanged dwelling state durations compared to wild-type animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate that scd-2 and hen-1 mutations affect roaming behavior consistent with their effects on daf-7 expression. The state duration analysis (C46) supports the positive feedback model by showing specifically shortened roaming states. Multiple behavioral assays (roaming/dwelling quantification and exploration assay) provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The gain-of-function scd-2(syb2455) mutant shows increased roaming behavior and longer roaming states. The increased roaming is partially dependent on daf-7 expression in ASJ neurons, as ASJ-specific daf-7 deletion reduces the enhanced roaming phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide gain-of-function behavioral data complementing the loss-of-function results. The genetic epistasis experiment (C48) using ASJ-specific daf-7 deletion in the scd-2(gof) background demonstrates that SCD-2 acts at least partially through daf-7 to promote roaming. The word 'partially' appropriately acknowledges that SCD-2 may have additional daf-7-independent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "AIA-specific deletion of scd-2 reduces roaming and exploration compared to control animals, suggesting that SCD-2 functions in the AIA interneurons to promote roaming behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 use cell-specific deletion to localize SCD-2 function to AIA neurons for behavioral control. This complements the daf-7 expression data (C42-C43) and is consistent with AIA's role in sensory integration. The parallel effects on both daf-7 expression and behavior strengthen the model that SCD-2 in AIA controls roaming through daf-7 regulation in ASJ.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Male C. elegans induce daf-7 expression in ASJ neurons upon reaching reproductive maturity, contributing to mate-searching behavior. Males spend more time roaming than hermaphrodites, and male daf-7 expression in ASJ retains sensitivity to ingested food, though with reduced magnitude compared to hermaphrodites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 extend the daf-7-roaming correlation to male-specific behavior. The prior work (C51) is confirmed with new data showing males roam more (C52) and have food-sensitive daf-7 expression (C53). The reduced magnitude of food response in males (about half that of hermaphrodites) is appropriately quantified and may reflect different behavioral priorities (mate-searching vs. foraging).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Pathogenic P. aeruginosa PA14 induces daf-7 expression in ASJ neurons and increases roaming behavior. The nonpathogenic PA14 \u0394gacA mutant produces intermediate levels of both daf-7 expression and roaming, correlating daf-7 expression levels with roaming behavior across different bacterial conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 extend the daf-7-roaming correlation to pathogen avoidance. The graded response to PA14 \u0394gacA (intermediate daf-7 expression and roaming) provides dose-response evidence supporting the correlation. This demonstrates that the daf-7-roaming relationship applies across multiple behavioral contexts (foraging, mate-searching, pathogen avoidance).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The AIA neurons integrate information from multiple food sensory neurons and influence chemoreceptor expression in other neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 summarizes prior work characterizing AIA function. This provides important context for interpreting the cell-specific SCD-2 results but does not represent a new finding from this study. The citations to recent work (Dobosiewicz et al., 2019; McLachlan et al., 2022) appropriately support this established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Human ALK is associated with neuroblastoma through gain-of-function mutations (particularly F1174L), is expressed in the nervous system, and has been implicated in metabolic phenotypes including thinness and triglyceride metabolism in humans, mice, and Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 summarize established knowledge about human ALK from the literature. These claims provide important context for the translational relevance of the C. elegans SCD-2 findings but do not represent new experimental results. The citations appropriately support each claim about ALK function and disease associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Loss-of-function scd-2 mutants behave as if constantly exposed to good food (increased dwelling, reduced daf-7 upregulation, dauer-defective), while gain-of-function scd-2(syb2455) mutants behave as if exposed to bad food (increased roaming, constitutive daf-7 expression, constitutive dauer entry). These phenotypes parallel those seen in ALK-/- mice and Alk RNAi Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 synthesize the behavioral and gene expression data into a coherent model of SCD-2 function. The comparison to mammalian and fly ALK phenotypes (C65) supports evolutionary conservation of function. The opposing phenotypes of loss-of-function and gain-of-function alleles provide strong evidence for SCD-2's role in food sensing and metabolic regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prior work has shown that daf-7 expression in ASJ neurons regulates downstream chemoreceptor expression (e.g., ODR-10 in AWA neurons) to modulate behavior, and that ASJ neurons respond to external food cues including bacterial supernatant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 summarize relevant prior work that supports the current model. The citations appropriately support each claim. These provide important context for understanding how daf-7 expression changes might affect behavior through downstream gene expression changes, though they do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Recent studies in C. elegans demonstrate that neuronal transcriptional responses play key roles in behavioral plasticity in response to environmental stimuli, and ASJ neurons specifically promote roaming and food-leaving behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 cite recent literature establishing the importance of transcriptional regulation in behavioral plasticity and ASJ function. These provide important context for the significance of the daf-7 transcriptional regulation findings but represent prior work rather than new results. The citations appropriately support the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Background context: Many animals increase exploration in response to food deprivation. C. elegans exhibit roaming/dwelling behavior modulated by food conditions, neuromodulators (serotonin, PDF, dopamine, octopamine), and daf-7 expression. daf-7 encodes a TGF-beta ligand expressed in sensory neurons (ASI, ASJ) that regulates diverse behaviors including dauer formation, longevity, metabolism, foraging, pathogen avoidance, and male mate-searching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 provide comprehensive background context from the literature. Each claim is appropriately supported by citations. These establish the conceptual framework and prior knowledge that motivated the current study but do not represent new experimental findings. The extensive citations demonstrate thorough literature review.",
+    "result_type": "MINOR"
+  }
+]

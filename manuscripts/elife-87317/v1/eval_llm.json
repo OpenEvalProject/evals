@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C45",
+      "C46",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors developed a movement-based prosthesis control system that uses an ANN to predict five distal arm joint angles from shoulder kinematics and target location information. Critical methodological improvements over prior work include: expanding the workspace using self-organizing networks, using entire movement trajectories for training, making humeral rotation an ANN output rather than input, creating a generic model tuned to user morphology, and applying mirror symmetry for either amputation side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C87-C95 describe the control system design and key methodological innovations. The approach is well-documented with clear rationale (C87-C88, C94) and implementation details (C27-C29, C31, C33-C36, C45-C46). The improvements address specific limitations from prior work (C25) and are supported by the experimental validation that follows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Experiment 1 demonstrated that the Own ANN control (trained on each participant's own movements) enabled 10 right-handed participants to achieve near-perfect success rates (99.7%) and movement times (1.25s) statistically indistinguishable from natural arm movements (1.17s, p=0.378) when reaching 200 targets in VR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 provide convergent evidence from Exp1 with appropriate statistical tests (McNemar, paired t-tests) and clear quantitative results. Success rates were very high (>99%), movement times were comparable to natural movements with no significant difference, and shoulder volumes showed minimal compensatory movements. The claim of 'no prior training' (C7) is supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Experiment 2 validated that a Generic ANN (trained on data from other participants but tuned to user morphology) enabled 12 new participants (6 left-handed) to achieve success rates >99% and movement times <1.4s comparable to natural movements, regardless of handedness, though with moderately increased shoulder compensatory movements (0.43 dm\u00b3 vs 0.14 dm\u00b3, p=0.025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 demonstrate successful generalization with appropriate statistical analyses (Cochran's Q, RM ANOVA, post-hoc tests). The Generic ANN performed nearly as well as the Own ANN, with only minor differences in success rates (<1%) and a moderate increase in shoulder volume that remained contained (<1 liter). The inclusion of left-handed participants strengthens the generalizability claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C116"
+    ],
+    "result": "Experiment 3 demonstrated that seven participants with transhumeral limb loss achieved performance with the Generic ANN control (success rates >99%, movement times 1.16-1.27s) comparable to or better than their valid arm (1.40s), without any prior training or initial acquisition phase. Participants reported high enthusiasm and found the control intuitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C74, C116 provide strong evidence for the primary clinical application. Statistical tests (Cochran's Q, Friedman) show no significant differences in success rates and even faster movement times with practice (TestGeneric2 vs TestNat, p=0.014). The qualitative feedback (C67-C74) corroborates the quantitative findings. However, the small sample size (n=7) and lack of initial acquisition phase (C58) should be noted as limitations for generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A physical proof-of-concept demonstrated that 15 participants (including 3 with limb differences) could reach and grasp real objects with a robotic arm using the Generic ANN control, achieving 93% success rate and movement times (6.08s) comparable to natural control (5.98s, p=0.7026), despite the robotic platform preventing compensatory trunk movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C86 provide evidence for real-world feasibility. The success rate was lower than in VR (93% vs >99%, p=0.0003) but still high, and movement times were not significantly different. The constraint that trunk movements were not transmitted (C77-C78) strengthens the finding that the control itself is effective. However, the limited testing (only 5 targets for amputees, C83) and lack of statistical analysis for participants with limb differences weakens the generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors establish the context that controlling multiple prosthetic arm joints remains challenging, with myoelectric control performance deteriorating as DoFs increase (96% to 37% success from 1 to 3 DoFs), and no existing solution for simultaneous intuitive control of four arm DoFs needed for transhumeral prostheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C23 accurately cite prior work to establish the problem context. The specific quantitative example (C16) from Nowak et al. 2022 illustrates the performance degradation issue. The anatomical constraints (C17-C18) and limitations of existing approaches (C19-C23) are appropriately referenced. This provides solid motivation for the proposed solution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Prior work by the authors (Mick et al., 2021) showed that adding target information to an ANN improved predictions of distal joints from proximal motion, but performance remained lower than natural movements with increased compensatory movements, limited workspace, and inapplicability to people with limb loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 accurately characterize the authors' prior work and its limitations, providing direct motivation for the current improvements. This is appropriately cited and sets up the methodological advances described in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C32",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The methods describe the experimental apparatus (VR setup, motion trackers), virtual arm model (7-DoF with three rigid segments), ANN architecture (two 256-neuron layers, dropout, 64-neuron output layer), training parameters (30 epochs at 1e-4 for Own ANN, 10 epochs at 1.59e-7 with 0.95 momentum for Generic ANN), task constraints (2cm/5\u00b0 hard, 4cm/10\u00b0 relaxed), and data filtering (removing 3.8% of trials with motion capture errors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C32, C125-C134 provide detailed methodological information. The ANN architecture and training parameters are clearly specified (C126-C130), task constraints are defined (C131-C132), and data quality control is documented (C133-C134). The rationale for methodological choices (e.g., C30 explaining joint interdependence) is provided. These details support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study included appropriate participant populations across experiments: Exp1 (n=10 right-handed intact-limb), Exp2 (n=12 mixed handedness intact-limb), Exp3 (n=7 transhumeral amputees), and POC (n=15 including 3 with limb differences). All participants provided informed consent and the study was approved by local ethics committee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C124 document participant demographics and ethical compliance. Sample sizes are modest but reasonable for proof-of-concept work. The inclusion of participants with limb differences in Exp3 and POC is critical for validating the clinical application. Ethical approval and informed consent are properly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors acknowledge that requiring movement goal as input could be seen as a limitation, but argue that advances in computer vision and AI make this feasible. They also note that further work is needed to generalize to multiple tasks, produce natural trajectories, and address the discontinuity in distal joint predictions at target changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 appropriately acknowledge limitations and provide balanced discussion. The limitation regarding movement goal input (C96) is countered with evidence of technological feasibility (C97-C99). The acknowledgment of trajectory discontinuities (C102) and need for future work (C100-C101) demonstrates scientific rigor. These are honest assessments of current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors discuss practical implementation requirements, noting that actuated wrist joints are needed but rare in commercial prostheses (with LUKE/DEKA and RIC arms as exceptions), and that the approach is complementary to invasive neural interfaces focused on hand/grasp control, potentially benefiting from combination with osseointegration or semi-autonomous grasp control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 provide realistic assessment of implementation challenges and integration opportunities. The requirement for actuated wrist joints (C103-C106) is appropriately cited, and the scope limitation regarding hand control (C107) is clearly stated. The discussion of complementary approaches (C108-C110) is speculative but well-reasoned and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors propose potential applications beyond prosthesis control, including phantom limb pain management in VR (where the control could overcome limitations of mirror therapy for patients with distorted phantom limbs or bilateral limb loss) and augmenting invasive neural interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C10, C111-C115 propose future applications that are speculative but plausible. The phantom limb pain application (C111-C115) is supported by citations about mirror therapy's limitations and VR's potential, but no data is provided to validate this application. The proposal to augment neural interfaces (C10) is reasonable but untested. These remain hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The field of bionic limbs has seen progress including TMR, osseointegration, and chronically implanted sensors for bidirectional neural communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately cite established techniques in the field as background context. These are appropriately referenced and provide relevant background for understanding the current state of prosthesis technology.",
+    "result_type": "MINOR"
+  }
+]

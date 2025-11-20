@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19"
+    ],
+    "result": "The model demonstrates that spontaneous (non-catalyzed) cleavage of chains promotes proliferation by generating new primers. Each cleavage event creates two new potential primers that can be elongated during subsequent night phases through templated replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, and C19 are well-supported by the mathematical model (Equations 2-6) and the logical framework presented. The model shows that random cleavage at rate \u03b2\u2080 generates new chain fragments that act as primers, leading to proliferation. The steady-state analysis confirms this mechanism is sustainable when \u03b2\u2080m\u2080r > \u03b4\u00b2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C33",
+      "C56",
+      "C57"
+    ],
+    "result": "A cooperative catalytic network with four subpopulations (a, \u0101, b, b\u0304) emerges and is maintained primarily by catalytic cleavage. This cooperative system arises through functional differentiation where b/b\u0304 chains act as catalysts cleaving a/\u0101 substrate chains, and this network outcompetes non-catalytic chains across a wide range of conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C33, C56-C57 are supported by the dynamical model (Equations 7-11), phase portraits (Figure 2B), and analytical steady-state solutions. The model demonstrates stable cooperative fixed points where all four subpopulations coexist, with fitness >2 compared to non-cooperative solutions (fitness=1). The phase diagram (Figure 3B) confirms a wide parameter range for cooperative state existence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The cooperative catalytic network requires a catalytic rate enhancement of 10\u00b2-10\u00b3 over spontaneous cleavage. This enhancement is modest compared to highly optimized ribozymes (10\u2079) but comparable to early-stage in vitro selection experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C42-C44 are supported by the model analysis showing the cooperative state exists when \u03b2/\u03b2\u2080 \u2265 10\u00b2-10\u00b3 (Figures 3-4). The comparison with experimental data from Salehi-Ashtiani and Szostak (2001) and Scott et al. (2013) provides appropriate context. The threshold is derived from the boundary conditions in Equation 12.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Evolutionary pressure drives the system toward increased catalytic efficiency through co-evolution of parameters \u03b2 (catalytic rate) and \u03bb (elongation asymmetry). The cooperative state outcompetes non-catalytic chains by achieving lower monomer concentrations (higher fitness), and selection drives both parameters upward along a fitness ridge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C37-C41 are supported by the fitness landscape analysis (Figure 4) and Monte Carlo simulations. The model shows m*coop < 0.5m*, giving fitness >2 for cooperative vs. 1 for non-cooperative states. The fitness ridge and evolutionary trajectory are demonstrated both analytically and through simulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The model is inspired by the hammerhead ribozyme structure, which consists of a 15-nucleotide core flanked by three helical stems with cleavage occurring at a specific site. Similar two-chain structures exist in DNA-cleaving DNA enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25-C28 are well-supported by citations to structural and functional studies of hammerhead ribozymes and DNA enzymes. The biological inspiration for the model is appropriately documented with references to Pley et al. (1994), Scott et al. (1995, 2013), and Chandra et al. (2009).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Template poisoning (product rehybridization) has only a moderate effect if the night phase is not too long, as primers remain hybridized to templates until free template concentration drops to primer levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C29 references analysis in Appendix 1 (not provided in the manuscript text). While the conclusion is stated, the supporting kinetic analysis cannot be evaluated. The claim addresses an important potential limitation but lacks accessible supporting evidence in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21"
+    ],
+    "result": "Non-enzymatic templated replication leads to formation of longer chains and reduction in sequence entropy, which increases the likelihood of end-to-middle hybridization. This has been demonstrated both theoretically and experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C20-C21 are supported by citations to prior theoretical work (Tkachenko and Maslov 2015, 2018) and experimental validation (Kudella et al. 2021). The logical connection between entropy reduction and increased hybridization probability is sound, though the quantitative relationship is not detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The presented model differs from the Virtual Circular Genome (VCG) model by assuming bidirectional polymerization and localized functional activity, making it less susceptible to sequence scrambling outside the functional region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 accurately describe the VCG model (Zhou et al. 2021, Chamanian and Higgs 2022) and clearly articulate the differences with the current model. The scrambling-free length calculation (~100 nucleotides) is provided. The comparison is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The model can be experimentally tested using RNA or DNA with enzymatic polymerization/ligation mimicking non-enzymatic processes. The model assumes bidirectional polymerization (unlike PCR), which could be implemented using ligation of ultrashort segments inspired by Okazaki fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55 propose experimental approaches but acknowledge significant challenges. The bidirectional polymerization assumption is biochemically problematic for prebiotic scenarios. While the Okazaki fragment-inspired ligation approach is creative, the feasibility and whether it truly tests the model's core assumptions remain unclear. Chemical activation requirements add further complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on RNA world hypothesis and ribozyme cleavage activity: RNA world theory proposes RNA carried out early life processes. While self-replicating ribozymes require long sequences unlikely to arise spontaneously, cleavage ribozymes are simpler and have evolved independently multiple times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 provide well-documented background supported by appropriate citations to foundational work (Gilbert 1986, Kruger et al. 1982) and experimental studies. These claims accurately represent established knowledge in the field and provide context for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C59",
+      "C60"
+    ],
+    "result": "Catalytic cleavage function would be selected by evolution because it promotes replication. DNA/RNA sequences with site-specific cleavage activity are relatively simple and readily arise through natural or artificial selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C59-C60 are logical inferences from the model showing cleavage promotes proliferation, supported by extensive citations to experimental work demonstrating the ease of evolving cleavage activity (Williams et al. 1995, Salehi-Ashtiani and Szostak 2001, and others). The evolutionary argument is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Life relies on the interplay between catalytic activity and information processing carried out by biological polymers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a well-established principle in biology representing foundational knowledge about the dual nature of biological function. This provides appropriate framing for the manuscript's investigation of how these functions might have emerged.",
+    "result_type": "MINOR"
+  }
+]

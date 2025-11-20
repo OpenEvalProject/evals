@@ -1,0 +1,1717 @@
+{
+  "submission": {
+    "id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T19:15:24.528669Z",
+    "updated_at": "2025-11-20T19:15:24.528669Z"
+  },
+  "content": [
+    {
+      "id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "content_type": "manuscript",
+      "content_text": "# Replisome loading reduces chromatin motion independent of DNA synthesis\n\n## Authors\n\n- Maruthi Kumar Pabba<sup>1</sup> ([ORCID: 0000-0003-2855-1392](https://orcid.org/0000-0003-2855-1392))\n- Christian Ritter<sup>2</sup>\n- Vadim O Chagin<sup>1</sup>\n- Janis Meyer<sup>2</sup>\n- Kerem Celikay<sup>2</sup>\n- Jeffrey H Stear<sup>4</sup>\n- Dinah Loerke<sup>5</sup>\n- Ksenia Kolobynina<sup>1</sup>\n- Paulina Prorok<sup>1</sup>\n- Alice Kristin Schmid<sup>2</sup>\n- Heinrich Leonhardt<sup>6</sup>\n- Karl Rohr<sup>2</sup> \u2020\n- M Cristina Cardoso<sup>1</sup> ([ORCID: 0000-0001-8427-8859](https://orcid.org/0000-0001-8427-8859)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Technical University of Darmstadt Darmstadt Germany ([ROR:05n911h24](https://ror.org/05n911h24))\n2. Biomedical Computer Vision Group, BioQuant, IPMB, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))\n3. Institute of Cytology RAS St. Petersburg Russian Federation ([ROR:01p3q4q56](https://ror.org/01p3q4q56))\n4. EMBL Australia Node in Single Molecule Science, University of New South Wales Sydney Australia ([ROR:00yx5cw48](https://ror.org/00yx5cw48))\n5. Department of Physics & Astronomy, University of Denver Denver United States ([ROR:04w7skc03](https://ror.org/04w7skc03))\n6. Department of Biology II, Ludwig Maximilians University Munich Germany ([ROR:05591te55](https://ror.org/05591te55))\n\n\u2020 Corresponding author\n\n## Abstract\n\nChromatin has been shown to undergo diffusional motion, which is affected during gene transcription by RNA polymerase activity. However, the relationship between chromatin mobility and other genomic processes remains unclear. Hence, we set out to label the DNA directly in a sequence unbiased manner and followed labeled chromatin dynamics in interphase human cells expressing GFP-tagged proliferating cell nuclear antigen (PCNA), a cell cycle marker and core component of the DNA replication machinery. We detected decreased chromatin mobility during the S-phase compared to G1 and G2 phases in tumor as well as normal diploid cells using automated particle tracking. To gain insight into the dynamical organization of the genome during DNA replication, we determined labeled chromatin domain sizes and analyzed their motion in replicating cells. By correlating chromatin mobility proximal to the active sites of DNA synthesis, we showed that chromatin motion was locally constrained at the sites of DNA replication. Furthermore, inhibiting DNA synthesis led to increased loading of DNA polymerases. This was accompanied by accumulation of the single-stranded DNA binding protein on the chromatin and activation of DNA helicases further restricting local chromatin motion. We, therefore, propose that it is the loading of replisomes but not their catalytic activity that reduces the dynamics of replicating chromatin segments in the S-phase as well as their accessibility and probability of interactions with other genomic regions.\n\n## Introduction\n\nDynamic yet functionally stable organization of cellular processes is a crucial feature of biological systems, which allows them to respond to external stimuli and survive. The eukaryotic nucleus is a complex subcellular organelle where DNA metabolism, including its replication, repair, and transcription, occurs. Eukaryotic DNA is organized in the nuclear space by interactions with histones and architectural proteins to form a hierarchy of domains and compartments of the interphase chromatin. Nuclear architecture is dynamically modulated due to the binding of biomolecules and epigenetic changes of the chromatin. It is also interdependent with DNA metabolism mediated by the action of enzymes on the chromatin. The maintenance of the DNA (including its replication and repair) and its transcription into RNA are spatio-temporally organized within the cell nucleus.\n\nAnalysis of the local chromatin dynamics in live cells revealed that an essential aspect of interphase chromatin is its mobile nature (Gasser, 2002; Marshall et al., 1997). The movement of chromatin loci was shown to be consistent with an anomalous (constrained) diffusion model (Scipioni et al., 2018; Shukron et al., 2019). This model indicates that a single chromatin locus is corralled within a sub-micron radius and exhibits random diffusion motion and will execute multiple random jumps into neighboring compartments (Bronshtein et al., 2016; Chubb et al., 2002; Heun et al., 2001; Levi et al., 2005; Marshall et al., 1997). This behavior, which we refer to as local chromatin diffusion (LCD), has been described in multiple systems, suggesting that it is likely to represent a fundamental aspect of chromatin dynamics in eukaryotes.\n\nAccording to the current paradigm, the 4D organization of the chromatin inherently includes its physical properties as a long polymer (Esposito et al., 2021; Esposito et al., 2019), while stochastic thermodynamically driven events are likely to play a key role in the domain organization of the chromatin (Conte et al., 2020; Shin and Brangwynne, 2017) and in the regulation of genomic processes (Hnisz et al., 2017; Kilic et al., 2019; Laghmach et al., 2021; Nozaki et al., 2017; Spegg and Altmeyer, 2021; Uchino et al., 2022).\n\nSome studies have reported that chromatin mobility is enhanced due to active transcription (Gu et al., 2018; Tunnacliffe and Chubb, 2020), whereas others report rather a decrease in mobility (Mach et al., 2022). Furthermore, other studies report diverse effects of RNA polymerase II inhibition on chromatin motion (Germier et al., 2017; Ku et al., 2022; Shaban et al., 2018). It has been also shown that the removal of RNA polymerase II from chromatin relaxes chromatin and increases its mobility (Babokhov et al., 2020). Conversely, there is an established view that chromatin mobility at the sites of double-stranded DNA breaks increases concomitant with their repair (Eaton and Zidovska, 2020; Hauer and Gasser, 2017a; Hauer and Gasser, 2017a; Hauer et al., 2017b; Nagai et al., 2010). Analysis of fluorescently tagged histones using displacement correlation spectroscopy has shown that chromatin undergoes coherent micron-scale motion at the time scales of 5\u201310 s independently of the cell cycle stage in mammalian cells (Zidovska et al., 2013). This coherent motion extended beyond individual chromosomes, suggesting mechanical coupling between chromosomes. Furthermore, the correlated motion of chromatin was ATP-dependent and completely disappeared upon DNA damage induction (Eaton and Zidovska, 2020; Zidovska et al., 2013).\n\nDNA replication is a highly conserved energy-dependent process occurring in S-phase of the cell cycle, when chromatin structures undergo extensive reorganization to facilitate DNA synthesis (Vincent et al., 2008). An early study in budding yeast (Heun et al., 2001) demonstrated that individual heterologous loci became constrained in S-phase when integrated close to early- and late-firing replication origins, but not at the telomeric or centromeric regions. However, changes in chromatin mobility in S-phase were not observed when analyzing it at the level of chromosome territories in mammalian cells (Walter et al., 2003). Recent work using a CRISPR-based DNA imaging system suggests that local chromatin motion is restricted upon S-phase entry and more markedly in mid-late S-phase (Ma et al., 2019).\n\nAltogether, it is not clear whether and how chromatin mobility changes during DNA replication and a mechanism behind the changes in chromatin motion. Therefore, it is important to address how changes in structure and metabolism of chromatin affect its mobility. It is quite intriguing to postulate that the process of genome duplication in mammals, which is performed at the level of naked DNA and involves local chromatin decondensation and rearrangements at the complete hierarchy of domains (Baddeley et al., 2010; Chagin et al., 2019; L\u00f6b et al., 2016; Sadoni et al., 2004; Sporbert et al., 2002), is associated with changes in chromatin mobility. Furthermore, it is tempting to speculate that the modulation of LCD may play a regulatory role; for example, by helping to define the transcriptional profile of the nucleus, by provoking collisions between regulatory regions, promoter regions, and transcription factories. These events could be halted or slowed down during the replication of the genome, avoiding collisions of the transcription with the replication machineries. An alternative but not mutually exclusive model is that changes in LCD result from the execution of nuclear processes such as transcription or replication. This is particularly appealing as DNA/RNA helicases and polymerases are, in essence, motor proteins that reel DNA through. To distinguish between these possibilities, alterations in LCD must be characterized within the context of relevant nuclear processes and by labeling DNA directly and in an unbiased manner.\n\nThe process of genome replication has a particular and intrinsic connection between chromatin organization and the spatio-temporal progression of genome replication (reviewed in Mamberti and Cardoso, 2020). In that sense, firing of origins of replication by the activation of DNA helicase complexes followed by the loading of synthetic polymerase complexes tracks chromatin compaction and upon DNA duplication the focal chromatin organization at multiple hierarchical levels is preserved and can be detected over several cell generations (Cremer et al., 2020; Jackson and Pombo, 1998; Sadoni et al., 2004; Sparvoli et al., 1994). Importantly, genome replication is the only DNA metabolic process that encompasses the entire genome, thus ensuring the preservation of the genetic material upon cell division.\n\nAs most of the studies introduce artificial DNA sequences in genomic loci and use a large array of chromatin binding proteins to visualize the loci, chromatin dynamics may be altered in the subsequent process (Germier et al., 2017). Therefore, a more direct way to measure chromatin dynamics is to label and track the DNA directly (Schermelleh et al., 2001). A similar procedure has previously been used to mark chromosome territories and characterize their long-term rearrangements (Bornfleth et al., 1999; Pliss et al., 2009; Walter et al., 2003).\n\nIn this study, we investigated the mobility of chromatin in human cells, focusing on how changes in chromatin mobility are influenced by cell cycle progression and, in particular, DNA replication. To achieve this, we performed a detailed analysis of chromatin mobility in S-phase by combining locus-independent global labeling of DNA with reliable particle tracking. Measurement of the DNA content of the labeled structures allowed us to elucidate whether DNA replication affects chromatin mobility at the level of replication domains. Our results show that chromatin mobility generally decreases during S-phase and, in particular, at the proximity of the DNA polymerase complexes. Furthermore, we extended our study to dissect mechanisms behind the S-phase-related changes in chromatin mobility and inhibited DNA synthesis using small molecule inhibitors. We showed that chromatin mobility is further decreased in S-phase after inhibition of DNA synthesis. These results imply that loading of the polymerase complexes rather than the synthesis of DNA per se restraints DNA mobility.\n\n## Results and discussion\n\n### Genome-wide labeling of DNA and quantification of labeled chromatin domains\n\nTo evaluate LCD relative to the cell cycle stage, we first developed an experimental system to monitor both replication and chromatin changes in living cells in real time. We generated HeLa cell lines that stably express GFP-tagged proliferating cell nuclear antigen (PCNA) and single stranded DNA binding protein or replication protein A (RPA) (Materials and methods, Supplementary file 1a). We transfected fluorescent PCNA plasmid to label replication sites in human normal diploid fibroblasts (IMR90) (Nichols et al., 1977). PCNA is a core component of the DNA replication machinery and a marker for cell cycle progression (Figure 1A; Chagin et al., 2016; Easwaran et al., 2005; Leonhardt et al., 2000; Moldovan et al., 2007; Prelich et al., 1987). To visualize the mobility of native chromatin, we took the advantage of the ongoing DNA replication. We delivered a pulse of the fluorescently labeled nucleotide Cy3-dUTP by electroporation into an asynchronously growing population of human HeLa GFP-PCNA tumor cells and human diploid IMR90 fibroblasts, which allowed us to study chromatin dynamics in a global genome-wide manner (Materials and methods, Figure 1A). The nucleotide is incorporated into the nascent DNA of the cells in various periods of S-phase, effectively labeling the chromatin directly in an unbiased manner (Manders et al., 1999; Sadoni et al., 2004; Schermelleh et al., 2001).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic illustration of the labeling system for monitoring chromatin mobility and cell cycle progression. During S-phase, proliferating cell nuclear antigen (PCNA) accumulates within the nucleus at sites of active DNA replication and exhibits a distinct puncta pattern. During G1 and G2, GFP-PCNA is diffusely distributed throughout the nucleus. Asynchronously growing populations of cells were exposed to electroporation to promote the uptake of Cy3-dUTP. In cells undergoing DNA replication, this fluorescent nucleotide is incorporated into nascent DNA strands at sites of active DNA replication, resulting in the direct fluorescent labeling of genomic segments. Based on the PCNA pattern, different cell cycle stages can be differentiated as shown in the image on the right (Se \u2013 early S, Sm \u2013 mid S, SL \u2013 late S, G1/G2 \u2013 gap phases, green \u2013 PCNA). (B) After Cy3-dUTP labeling (shown in red), cells were followed by time-lapse microscopy to identify the cell cycle (sub)stages and their progression. The representative images of different cells using time-lapse microscopy were shown to depict the patterns of PCNA (shown in green) in each sub-stage and their change over time (co-localized signals in yellow). This was used to classify cells in G1, S, and G2 phases of the cell cycle for motion analysis. Approximately 18\u201324 hr after nucleotide electroporation, Cy3-dUTP-labeled cells were imaged for motion analysis (see also Videos 1\u20135). The contrast of the images was adjusted linearly for visualization purposes. Scale bar: 5 \u00b5m.\n\nThe Cy3-dUTP-labeled chromatin structures were stable over the cell cycle progression and in subsequent cell cycles. Using time-lapse microscopy, we followed the cells that incorporated nucleotides in the initial S-phase stage over subsequent cell cycles. We used GFP-PCNA nuclear pattern to determine the cell cycle stages and sub-periods of S-phase (Materials and methods, Microscopy). This allowed us to classify cells in different cell cycle stages and sub-periods of S-phase (G1, early S, mid S, late S, G2), which is illustrated in Figure 1B (see also Videos 1\u20135).\n\n![Video 1.](https://cdn.elifesciences.org/articles/87572/elife-87572-video1.mp4.jpg)\n\n**Video 1.:** Scale bar: 5 \u00b5m.\n\n![Video 2.](https://cdn.elifesciences.org/articles/87572/elife-87572-video2.mp4.jpg)\n\n**Video 2.:** Scale bar: 5 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/87572/elife-87572-video3.mp4.jpg)\n\n**Video 3.:** Scale bar: 5 \u00b5m.\n\n![Video 4.](https://cdn.elifesciences.org/articles/87572/elife-87572-video4.mp4.jpg)\n\n**Video 4.:** Scale bar: 5 \u00b5m.\n\n![Video 5.](https://cdn.elifesciences.org/articles/87572/elife-87572-video5.mp4.jpg)\n\n**Video 5.:** Scale bar: 5 \u00b5m.\n\nWith this approach, DNA labeled during the pulse of Cy3-dUTP nucleotide corresponds to genomic regions replicated concomitantly during an S-phase sub-period. Since LCD measurements depend on the object size, it was important to evaluate the size of the labeled DNA domains. This allowed us to correlate the chromatin domain sizes and their diffusion rates. For this purpose, we measured the total DNA amount in a cell and the fraction of it that corresponded to the labeled domain (Materials and methods, DNA quantification of labeled chromatin). First, we applied chemical fixation to cells labeled with Cy3-dUTP using formaldehyde. The total DNA was then labeled using the DNA dye DAPI. Next, we segmented the entire nucleus as well as the individual labeled chromatin foci within the same cell. The fraction of DAPI intensity within the segmented replication focus (IRFi) over the total DNA intensity within the cell (IDNA total) yields the amount of DNA present per labeled chromatin focus (Figure 2A, Figure 2\u2014figure supplement 1). Since nuclear DNA amount doubles continuously throughout the S-phase (Chagin et al., 2016; Leonhardt et al., 2000, Figure 2B), it was important to scale the total DNA amount by a correction factor depending on S-phase sub-stage to measure the DNA amount per focus more accurately. The relative amount of DNA throughout the cell cycle stages and sub-stages of S-phase was calculated and plotted as histograms, with the mean of the histogram for each cell cycle (sub)stage constituting the cell cycle correction factor (Figure 2B). The fraction of DAPI intensities were corrected by multiplication with the genome size corresponding to the cell cycle stage. The genome size of HeLa Kyoto cells is GS = 9.682 \u00b1 0.002 Gbp (Chagin et al., 2016) and for IMR90 fibroblasts the genome size is 6.37 Gbp as measured earlier (Nichols et al., 1977). We plotted the DNA amount present in each replication focus in Figure 2C for HeLa on left and IMR90 on right. The highest frequency of average DNA amount per focus (mode +1 bin) was about 300\u2013600 kbp of DNA (Figure 2C). Altogether, with our labeling approach, we labeled DNA domains of sizes ranging from 0.5 Mbp to 10 Mbp, with the vast majority corresponding to 0.5 Mbp, which correspond well to multi-loop chromatin domains corresponding in size to topological associated domains (reviewed in Giorgetti and Heard, 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig2-v1.jpg)\n\n**Figure 2.:** (A) To determine the amount of DNA per labeled DNA focus, we used the total DAPI signal (DNA amount) of the segmented whole nucleus (IDNA TOTAL). The DNA intensity per labeled DNA focus within the segmented foci is obtained (IRFi) by masking the replication foci and estimating the corresponding portion of DAPI signal. (B) Throughout the S-phase progression the amount of DNA increases twofold from early to late S-phase. The amount of DNA present in the nucleus at a particular cell cycle stage can be determined by measuring the DNA amount in the population of cells, while using the proliferating cell nuclear antigen (PCNA) pattern to determine the cell cycle stage and S-phase sub-stage (see also Figure 1). The relative mean amount of DNA of each of the cell cycle (sub-)stages is used to calculate the cell cycle correction factor. The cell cycle correction factor (C/cell cycle stage) was estimated as: 1.0/G1; 1.05/early S-phase; 1.25/mid-S-phase; 1.77/late S-phase, 2/G2. The G1 genome size (GS) for HeLa cells is 9.7 Gbp (Chagin et al., 2016). The amount of DNA per labeled focus is the ratio of IRFi and IDNA TOTAL multiplied by C \u00d7 GS. (C) The illustration on right depicts the imaging of labeled replication foci using confocal microscopy. DNA quantification of replication labeled foci in tumor HeLa and normal diploid IMR90 cells was done by imaging full Z-stacks volume of chromatin labeled with Cy3-dUTP and DNA with DAPI and imaged using confocal spinning disk microscopy (Figure 2\u2014figure supplement 1, Supplementary file 1e). The histogram represents the DNA amount per focus for labeled S-phase cells (N=30 cells) for HeLa and IMR90 cells. The mode \u00b11 bin of the histogram represents the highest frequency of average size of replication domains labeled (300\u2013600 kbp). Scale bar: 5 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) All image sequences were acquired using spinning disk microscopy (60\u00d7 objective, 1.45 numerical aperture). For analysis, the (16 bit) images were imported from ImageJ into PerkinElmer Volocity 6.3 software. Using the DAPI channel, nuclear segmentation (object recognition) was performed to obtain a mask for the whole nuclear volume and determine the total DNA intensity (mask highlighted with blue). The labeled chromatin foci (Cy3-dUTP) were detected using the intensity and segmented in 3D (highlighted in color palette). The sum DAPI intensity within the segmented foci (IRFi) were also obtained. The ratio of DNA amount per focus and total DNA in the nucleus corrected for cell cycle stage gives the DNA amount per focus. For quantification see Figure 2. The intensity values of the total DAPI intensity within each segmented replication foci (IRFi) are plotted as a histogram. (B) HeLa Kyoto cells, either synchronously (magenta) (Materials and methods) or asynchronously growing (green), were seeded on coverslips. The sum DAPI (DNA profile) of cells was plotted individual and in an overlap histogram (brown).\n\n### Chromatin motion decreases in the S-phase of the cell cycle relative to the G1 and G2 phases\n\nTo determine how the global dynamics of chromatin changes during cell cycle progression, we used LCD measurements relative to the cell cycle stage. Live cell time-lapse image sequences of HeLa and IMR90 cells after labeling chromatin with Cy3-dUTP were obtained and motion analysis was performed to determine the type of motion (Figure 3A, Materials and methods). Normal diffusion or Brownian motion is a linear diffusion model with \u0251=1 and when \u0251>1 it is termed super diffusion. First, the cells were annotated according to the different cell cycle stages (G1, S, G2) based on the PCNA subnuclear pattern (Materials and methods). PCNA forms puncta or foci at the active replication sites during S-phase and this was used to classify cells in S-phase. We were able to distinguish between G1 and G2 cells, even though they exhibit a similar diffused PCNA subnuclear distribution, based on the information on the preceding cell cycle stage from the time-lapse analysis performed after Cy3-dUTP labeling (Materials and methods, Microscopy). Specifically, cells with diffusely distributed PCNA signal which had previously undergone mitosis were in G1 phase, whereas the ones with similar diffuse PCNA pattern that had previously undergone S-phase (punctated PCNA pattern) were classified as being in G2 phase (Figure 1B). The PCNA signal was also used to segment the nucleus, and the individual chromatin foci were detected within the segmented nuclei. Probabilistic tracking was performed to obtain individual chromatin trajectories (Figure 3B; Figure 3\u2014figure supplement 1). In case of IMR90 cells, affine image registration was performed using the method in Celikay et al., 2022, to address the stronger cell movement compared to HeLa cells. This was followed by a mean square displacement (MSD) analysis to determine the chromatin motion in different cells (Figure 3\u2014figure supplement 1). In fixed cells, labeled chromatin foci showed almost no motion, which was used as a control for the stability of the imaging system and the tracking protocol. We plotted the MSD over time (up to 20 s) for chromatin foci in cells from different cell cycle stages as well as for fixed cells (Figure 3C). As we focused on chromatin mobility changes during S-phase, the G1, G2 cells were together in Figure 3C. The MSD curves of G1, G2, S-phase (separated) are plotted in Figure 3\u2014figure supplement 1B.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig3-v1.jpg)\n\n**Figure 3.:** (A) Brief schematics of the main steps of motion analysis starting with chromatin labeling using fluorescently labeled nucleotides via electroporation, followed the next day (i.e., cell cycle) by confocal time-lapse imaging of the chromatin channel and performing motion analysis on computed tracks to determine the diffusion rates of chromatin (Materials and methods). (B) Overlay images of HeLa Kyoto and IMR90 cells expressing GFP/miRFP proliferating cell nuclear antigen (PCNA) and labeled chromatin (Cy3dUTP) in different cell cycle stages (G1/G2 \u2013 diffused PCNA, S-phase \u2013 PCNA puncta). Cropped region (white box) showing the chromatin tracks of individual foci in both G1/G2 and S-phase cells. The aggregates of Cy3-dUTP that are found in cytoplasm are excluded from the analysis using a nuclear mask. See also Videos 1\u20135. (C) Result of motion analysis of computed chromatin tracks for different cell cycle stages (Figure 3\u2014figure supplement 1) for HeLa and IMR90 cells. Mean square displacement (MSD, \u03bcm2) curves were plotted over time (s). MSD curves for G1/G2, S-phase, fixed cells with a minimum track length of 10 s, and a total time of 20 s were plotted with error bars (SEM \u2013 standard error of the mean) representing the deviations between the MSD curves for an image sequence in transparent color around the curve. Scale bar: 5 \u00b5m. Insets scale bar: 1 \u00b5m. (D) The tables provide the detailed information on the number of trajectories per condition along with average diffusion rates and anomalous \u03b1 coefficient showing subdiffusion.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Raw images of chromatin and proliferating cell nuclear antigen (PCNA) were first segmented to remove the background noise outside the nucleus. In case of IMR90 cells, affine image registration was performed to address the stronger cell movement compared to HeLa cells (Materials and methods). The probabilistic tracking method was then performed which includes detection of chromatin particles and tracking over the time to obtain trajectories. The tracks were then used to plot mean square displacement (MSD) curves or perform proximity analysis with PCNA. (B) Result of motion analysis of computed chromatin tracks for G1, G2, S-phase cell cycle stages (Figure 3) for HeLa and IMR90 cells. MSD (\u03bcm2) curves were plotted over time (s). MSD curves for G1/G2, S-phase, fixed cells with a minimum track length of 10 s, and a total time of 20 s were plotted with error bars (SEM \u2013 standard error of the mean) representing the deviations between the MSD curves for an image sequence in transparent color around the curve. Scale bar: 10 \u00b5m.\n\nWe observed significantly constrained global chromatin motion in S-phase cells compared to non-replicating G1/G2 cells suggesting that chromatin was more constrained during DNA replication. This effect was stronger in IMR90 cells compared to HeLa Kyoto. The table shows the average diffusion rates (Figure 3). For HeLa average diffusion rate of chromatin in G1/G2 was D=133.6 \u03bcm2/s \u00d7 10\u20135, whereas the diffusion rates dropped to D=105.6 \u03bcm2/s \u00d7 10\u20135 during S-phase (Figure 3C). For IMR90 average diffusion rate of chromatin in G1/G2 was D=86.5 \u03bcm2/s \u00d7 10\u20135, whereas the diffusion rates dropped to D=43.7 \u03bcm2/s \u00d7 10\u20135 during S-phase (Figure 3C). We computed the \u0251 values in different stages, which define the type of diffusion motion. Chromatin exhibited anomalous subdiffusion or obstructed diffusion with 0.1 < \u0251 < 0.9. Anomalous diffusion of cellular structures including chromatin with \u03b1 values between 0.1 and 0.9 have been reported (Bronshtein et al., 2015; Ghosh and Webb, 1994; Mach et al., 2022; Oliveira et al., 2021; Simson et al., 1998; Smith et al., 1999).\n\nIn agreement with our results, it has been initially reported in yeast that some chromatin loci are constrained during S-phase (Heun et al., 2001). This study has been extended to the mammalian genome using the CRISPR targeted labeling of specific genomic loci to demonstrate that the S-phase mobility of the labeled chromosomal loci decreases in S-phase compared to G1/G2 (Ma et al., 2019). Another study reported that during DNA replication there were changes in chromatin mobility due to an unknown mechanism (Nozaki et al., 2017).\n\nAs we measured, decrease in global chromatin motion during S-phase, which includes labeled chromatin, which is replicating as well as non-replicating, we next focused the study on the microenvironment of active replication sites. This opened the question of whether the loading of the replisome on chromatin or its enzymatic activity during S-phase actively restricted chromatin motion. Hence, we analyzed in detail the spatial relationship of chromatin diffusion and DNA replication sites.\n\n### Chromatin motion decreases in proximity to active DNA replication sites\n\nDNA replication involves systematic and structured assembly of proteins directly or indirectly involved in DNA synthesis. DNA replication factors such as DNA polymerase clamp protein (PCNA), the DNA helicase complex that unwinds DNA, and the replication protein A (RPA) complex, which stabilizes and protects the ssDNA exposed upon helicase activity are illustrated in Figure 4A. The DNA polymerase clamp PCNA, one of the most well-studied replication proteins, was used to mark the active DNA replication sites. To test whether DNA replication factors restrict chromatin motion, we performed proximity analysis (Materials and methods, Figure 4B). As before, we used Cy3-dUTP to label chromatin in the S-phase of the previous cell cycle. We then followed the cells through the cell cycle to select cells in which some of the sites of labeled chromatin were replicating in the S-phase of the next cell cycle at the time of observation. This allowed us to image the labeled chromatin marked in the previous cell cycle together with a live cell marker (fluorescent PCNA) for the active replication sites in the next cell cycle (Figure 4B). Subsequently, we measured the mobility of chromatin from these S-phase cells at increasing center-to-center distances (CCD, R) from active replication sites (Figure 4C). For chromatin outside the CCD with replication sites in these S-phase cells, we observed the same diffusion rate as before for the chromatin foci in S-phase cells with no differentiation of whether chromatin was actively replicating or not (Figure 3). However, we observed that the chromatin in the proximity of replication sites (actively replicating) had more restricted motion when located up to 1 \u03bcm (center to center) distance to an active replisome, and this effect vanished at higher distances (Figure 4C, Figure 4\u2014figure supplement 1). These data indicate that the reduction of chromatin motion in S-phase is spatially correlated with DNA replication and suggest that DNA synthesis restricts chromatin motion. Hence, we next investigated whether loading of the DNA replication machinery restricts chromatin motion or alternatively DNA synthesis activity is responsible for it.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic illustration of replisome components (helicase, replication protein A, proliferating cell nuclear antigen [PCNA]) actively replicating chromatin. The geometric centers of the labeled chromatin foci and labeled replication sites were first defined. The chromatin within the defined center-to-center distance (CCD) to a PCNA-labeled replication site is defined as chromatin that is within CCD and, otherwise, is defined as outside the CCD. (B) In order to obtain mobility information of labeled chromatin in the proximity of PCNA foci (active replication sites) one frame of PCNA channel was acquired followed by 50 frames of the chromatin channel with a frame rate of 0.5 s. The images show the spatial distribution of PCNA and chromatin foci (Cy3-dUTP). (C) The graph represents the average diffusion rates of the mean square displacement curves (MSD) of chromatin within the CCD and chromatin outside the CCD with increasing distance (R) measured between the centers of PCNA and chromatin foci (Figure 4\u2014figure supplement 1).The table below provides the detailed information on number of trajectories per individual sample along with average diffusion rates (\u00b5m2/s \u00d7 10\u20135) and anomalous \u03b1 coefficient showing subdiffusion at 0.5 \u00b5m CCD. Scale bar: 1 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Overlay images of GFP-proliferating cell nuclear antigen (PCNA) (active replication sites, green) and labeled chromatin (red). Chromatin outside the CCD is highlighted with cyan dots and chromatin within CCD is highlighted with dark blue dots within the magnified inset (demarcated by a white box). (B) MSD curves of chromatin outside the CCD and chromatin within CCD along with fixed cell control with increasing distance from 0.2 \u03bcm to 1.8 \u03bcm. This allows us to analyze the effect of replication factors on chromatin mobility at increasing distances. The MSD curves were plotted with error bars (standard deviation) represented in transparent color around the curve. Scale bar: 1 \u00b5m.\n\n### DNA synthesis inhibition leads to activation of DNA helicases and accumulation of ssDNA binding proteins and DNA polymerases\n\nDuring DNA replication, replisome components are assembled at the origin of replication to form an active replisome (Casas-Delucchi and Cardoso, 2011; Yao and O\u2019Donnell, 2010; Yao and O\u2019Donnell, 2016). To test whether the process of DNA synthesis itself is responsible for constraining chromatin, we analyzed chromatin motion after inducing replication stress. By treating cells with aphidicolin, DNA synthesis is slowed down or stopped altogether (Vesela et al., 2017). Aphidicolin is a tetracyclic antibiotic isolated from Nigrospora sphaerica, which interferes with DNA replication directly by inhibiting DNA polymerases \u03b1, \u03b5, and \u03b4 (Bambara and Jessee, 1991; Baranovskiy et al., 2014; Byrnes, 1984; Cheng and Kuchta, 1993). Our hypothesis was that it is the loading of replisome components that affects the chromatin motion (LCD). Therefore, we focused on LCD measurements after inhibiting DNA synthesis directly with aphidicolin and characterized the effects on chromatin motion in order to understand the mechanism behind it.\n\nFirst, we tested in detail the rate and level of inhibition of DNA synthesis with aphidicolin (150 \u03bcM) using thymidine analogs (in this case EdU), which get incorporated into newly synthesized DNA and can be detected using click-IT chemistry (Materials and methods). We visualized GFP-PCNA and EdU in fixed cells and performed high-throughput image analysis to characterize the effect of aphidicolin on DNA synthesis inhibition at different time points (Materials and methods, Figure 3\u2014figure supplement 1). We observed that DNA synthesis was inhibited minutes after aphidicolin treatment. Using high-content microscopy, we quantified the population of cells actively synthesizing DNA (EdU signal) upon stress and observed that in almost 99% of the cell population, DNA replication was inhibited within half an hour of aphidicolin incubation (Materials and methods, Figure 5A, Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2). Subsequent experiments were all performed with these conditions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-v1.jpg)\n\n**Figure 5.:** (A) The use of thymidine nucleotide analogs like 5-ethynyl-2\u2032-deoxyuridine (EdU), which is incorporated into replicating DNA, allows us to estimate the time needed for complete inhibition of DNA synthesis. The representative images show no incorporation of EdU in S-phase cells upon aphidicolin (Aph) treatment for 30 min. The plots below the images depict the % of cells with no DNA synthesis as scored by the EdU signal and the corresponding % of cells still replicating DNA (Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2). (B) The line plot shows the live cell accumulation analysis showing the normalized average RPA70 accumulation at replication sites (coefficient of variation \u00b1 standard deviation in transparent color) of HeLa cells stably expressing GFP-RPA34 (Figure 5\u2014figure supplements 3\u20135). (C) Western blots of cytoplasm, nucleoplasm, and chromatin fractions of asynchronous population of HeLa cells probed for different replication factors. The western blots shown are cropped from the same replicates for easier visualization without contrast adjustment and the full blots are shown and highlighted in Figure 5\u2014figure supplement 6. (D) HeLa cells were pulsed with EdU for 10 min to identify S-phase cells and pre-extracted to detect chromatin-bound proteins and different replication factors were detected using immunofluorescence. High-throughput imaging and image analysis were performed (Figure 5\u2014figure supplements 7 and 8). Box plots depict the accumulation of the replisome factors indicated at DNA replication sites. Same Y-axis scale plots are shown in Figure 5\u2014figure supplement 8. The box plot lower and upper hinges correspond to the first and third quartiles (the 25th and 75th percentiles), the upper whisker extends from the hinge to the largest value no further than 1.5\u00d7 IQR from the hinge (where IQR is the interquartile range, or distance between the first and third quartiles). The lower whisker extends from the hinge to the smallest value at most 1.5\u00d7 IQR of the hinge. The horizontal line represents the median value. The outliers plotted individually as separate dots outside of the whiskers. ***p<0.001 by Wilcoxon rank-sum test, for aphidicolin-treated versus control sample. Scale bar: 5 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) HeLa cells stably expressing GFP-proliferating cell nuclear antigen (PCNA) were treated with aphidicolin (150 \u00b5m). Time course of treatments depicting the distribution of PCNA as well as the incorporation of the thymidine analog EdU is shown. EdU was used to detect DNA synthesis. For quantification see Figure 5A. Scale bar: 100 \u00b5m.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Images were obtained using the 40\u00d7 objective (numerical aperture 0.95) in the DAPI and EdU channels. Once the images were acquired, they were analyzed using the Harmony software from PerkinElmer. Briefly, the DAPI channel was used to segment nuclei using properties including diameter, splitting coefficient, and threshold. Once the nuclei were segmented, the population cells were then selected for analysis by removing the objects either touching the border or fused. In the population of cells selected, the properties including mean, median, standard deviation, and sum intensities were measured in the DAPI and EdU channels. The data measurements were then imported to R and visualized for the EdU positive population. Scale bar: 500 \u03bcm.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Schematic representation of the insertion of fluorescently tagged RPA34 (aka RPA2) encoding plasmid DNA using the chromosomally inserted FRT site in the previously generated HeLa Kyoto FRTLacZ (Materials and methods). Positive clones were selected using 1 \u03bcg/ml blasticidin in media. (B) PCR was performed on genomic DNA isolated from wild type and GFP-RPA34 clones using different primer pairs as indicated. (C) Cells from the positive clones were collected to perform a western blot using the anti-GFP antibody to test the level of GFP-RPA34 and an anti-RPA34 antibody was used to detect and compare both endogenous and fusion protein levels in control versus the positive clone. (D) The cells were seeded on glass coverslips, fixed and imaged to validate the protein localization relative to active DNA replication sites labeled EdU as well as DNA labeled with DAPI. Scale bar: 5 \u00b5m.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Confocal time-lapse microscopy of HeLa cells stably expressing GFP-RPA34 treated with DMSO (control) and aphidicolin. Videos were acquired at a frame rate of 5 min and at every time a Z-stack was acquired. A single Z-plane at different time points was shown as a representative image for all three conditions. The time-lapse images were imported to PerkinElmer Volocity 6.3 for analysis and the accumulation of GFP-RPA34 at replication foci was measured over time. (B) Representative images of live HeLa cells stably expressing GFP-proliferating cell nuclear antigen (PCNA) or GFP-RPA34 are shown in gray scale before and after aphidicolin treatment. Scale bar: 5 \u00b5m.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** The enrichment or accumulation analysis was performed using PerkinElmer Volocity 6.3 software. Briefly cells of interest (white inserts) were cropped and Z-stacks along with different time points were imported together. The GFP-RPA34 intensities at different time points for aphidicolin (every 5 min/0.5 hr) were measured and the coefficient of variation Cv was calculated (Materials and methods, Accumulation analysis). The intensity values were exported as CSV files for further analysis. The plots were generated in RStudio. Scale bar: 5 \u03bcm. Cropped cells scale bar: 1 \u03bcm.\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-figsupp6-v1.jpg)\n\n**Figure 5\u2014figure supplement 6.:** The blots that are reprobed with a different antibody are highlighted with color stars. The blots highlighted with green inserts are the full length and single contrast blots that are cropped for easier visualization in Figure 5C. The loading order of samples and ladder are different and samples are highlighted with numbers 1-9 and are summarized in Figure 5C.\n\n![Figure 5\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-figsupp7-v1.jpg)\n\n**Figure 5\u2014figure supplement 7.:** Spatial localization and accumulation analysis of DNA replication factors such as DNA helicase subunit MCM2 and active MCM2 phosphorylated at S108, polymerase clamp protein (proliferating cell nuclear antigen [PCNA]), single-stranded binding protein (RPA), and DNA polymerases (\u03b1, \u03b4, \u03b5) catalytic subunits using immunostainings. The cells in S-phase were identified using an EdU pulse before the treatment. Representative low-magnification images of protein localization in control and aphidicolin-treated HeLa cells. For quantification see Figure 5D. Scale bar: 10 \u00b5m.\n\n![Figure 5\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig5-figsupp8-v1.jpg)\n\n**Figure 5\u2014figure supplement 8.:** (A) The accumulation analysis was performed. The channels were separated, the DAPI channel was used for creation of nuclear mask, the EdU and replication proteins channels were used for replication foci segmentation. The nuclear mask was overlaid with the replication foci mask, so that only foci inside of the nuclear area were selected. The replication foci parameters were measured as follows: focus intensity parameters, focus area, foci number per nucleus (Materials and methods, High-throughput image analysis of replisome component). The replication foci values per nucleus together with the DAPI nuclear intensity were exported for further analysis. The plots were generated in RStudio. (B) Box plots from Figure 5D are shown here at the same Y axis scale.\n\nSecondly, we made use of the above conditions in which DNA synthesis was inhibited and analyzed the consequences of replication stress on the replisome components and their kinetics. For this purpose, we performed time-lapse microscopy of GFP-PCNA and GFP-RPA34 expressing cells. During active DNA synthesis, the DNA polymerase clamp and processivity factor PCNA is loaded onto the DNA as a trimeric ring and is tightly bound to the DNA (Figure 5A). During aphidicolin treatment though, PCNA dissociated from DNA as shown before (G\u00f6risch et al., 2008; Rausch et al., 2021; Figure 5A). Aphidicolin treatment does not stop helicase activity and the replication protein A (RPA) is loaded on the ssDNA after being unwound by the DNA helicase. The more the DNA double helix is unwound, the more RPA loads onto the ssDNA generated (Rausch et al., 2021). For this analysis, we generated a HeLa cell line stably expressing GFP-RPA34 (Figure 5\u2014figure supplement 3). We performed time-lapse microscopy on HeLa GFP-RPA34 cells every 5 min for 60 min for both aphidicolin-treated and control DMSO-treated cells (Figure 5\u2014figure supplement 4A). We observed that RPA accumulated over time on DNA at replication sites in aphidicolin-treated cells but not in the control cells (Figure 5\u2014figure supplement 4). RPA accumulation indicated that the DNA helicase complexes continued unwinding the DNA, which allowed for increasing amounts of RPA to bind and, at the same time, the DNA polymerases were not active displacing the RPA while synthesizing the second (complementary) DNA strand (G\u00f6risch et al., 2008). Therefore, we studied the kinetics of accumulation of RPA on chromatin upon DNA synthesis inhibition by quantifying the accumulation of GFP-RPA34 in live cells upon treatment with aphidicolin normalized to DMSO-treated cells using the coefficient of variation (Cv), which indicates the amount of RPA protein accumulated over time (Materials and methods, Figure 5B, Figure 5\u2014figure supplement 5). We observed clear accumulation of RPA over time relative to control, showing that the ssDNA binding protein accumulates on chromatin. Hence, this indicates that upon stress the DNA helicase remained active unwinding the DNA.\n\nNext, we analyzed the distribution of the helicase subunit MCM2 and its phosphorylated (p108) form along with DNA polymerases \u03b1, \u03b5, and \u03b4 (Supplementary file 1d) at the chromatin. It has been previously described that the phosphorylated form of MCM2 is the active form for DNA unwinding (Forsburg, 2004; Montagnoli et al., 2006). We predicted from the RPA accumulation that the helicase subunit was present at the replication sites and actively spooling the DNA through after the DNA synthesis inhibition. We first performed western blot analysis of different replication factors from asynchronous populations of HeLa cells after isolating the cytoplasm, nucleoplasm, and chromatin fractions (Materials and methods). We tested the fractionation protocol by blotting the membranes with antibodies to \u03b1-tubulin for the cytoplasmic fraction and macro H2A1 histone for the chromatin fraction (Figure 5C). The same fractions were then incubated with antibodies for different replication factors. We observed significant dissociation of PCNA from chromatin and accumulation of RPA on chromatin upon aphidicolin treatment (Figure 5C) consistent with our fixed cell and live cell microscopy analysis. We found no significant changes in MCM2 helicase subunit levels on chromatin and higher levels of phosphorylation of MCM2 upon treatment with aphidicolin (Figure 5C). Lastly, we incubated the blots with antibodies recognizing the catalytic subunits of the DNA polymerases \u03b1, \u03b4, and \u03b5 complexes (Materials and methods, Supplementary file 1d). The DNA polymerases showed a different behavior as compared to the DNA polymerase clamp protein, with DNA polymerase \u03b1 being enriched on chromatin upon stress, with only minor to no changes being observed for the processive DNA polymerases \u03b4 and \u03b5 (Figure 5C and D). It is of note that both these processive DNA polymerases bind the polymerase clamp PCNA whereas the far less processive DNA polymerase \u03b1 does not. The full-length blots are shown in Figure 5\u2014figure supplement 6.\n\nWe then performed an orthogonal analysis using high-throughput microscopy and image analysis. We labeled cells with EdU for 10 min to mark the S-phase cells and treated cells with DMSO/aphidicolin and subsequently performed pre-extraction to remove the unbound fraction of proteins and only detect the chromatin-bound proteins. In this manner, we separately quantified accumulation only in S-phase cells and not in populations of cells including all cell cycle stages as in the previous western blot analysis (Figure 5C). The pre-extracted cells were fixed and immunostained for different replisome components (Figure 5D). The cells were imaged using a spinning disk confocal microscopy system (Supplementary file 1e) and image analysis was performed using the KNIME software with custom pipeline to quantify the accumulation/loss of replication factors on chromatin in S-phase cells (Materials and methods, Supplementary file 1i, Figure 5\u2014figure supplement 7, Figure 5\u2014figure supplement 8). Using the EdU signal, the S-phase cells were selected for the quantitation of chromatin-bound replisome components (Figure 5D). We found that PCNA dissociated from chromatin and RPA accumulated on chromatin upon stress in accordance with our previous analysis (Figure 5C). We found no changes in MCM2 helicase subunit but an increase in active MCM2p108 levels upon stress. This is consistent with no new loading of DNA helicases but de novo activation of already loaded helicase complexes (Ge et al., 2007; Ibarra et al., 2008). Finally, we observed significant accumulation of DNA polymerases \u03b1 and \u03b4 on chromatin after aphidicolin treatment. PCNA does not associate with DNA polymerase \u03b1, which has a low processivity, but it associates with DNA polymerases \u03b5 and \u03b4, which constitute the processive synthetic machinery responsible for most of the duplication of the genome. Hence, it was surprising that these two polymerases remain associated and even load de novo at non-synthetizing replication sites. The increase in DNA polymerase \u03b1 could lead to the recruitment of alternative polymerase clamp 9-1-1 as reported before (Michael et al., 2000; Van et al., 2010; Yan and Michael, 2009a; Yan and Michael, 2009b). Several scenarios explaining the different levels of DNA polymerases \u03b1 and \u03b4 upon stress are possible (Figure 6\u2014figure supplement 1): (i) multiple polymerase complexes may load within the same Okazaki fragment, which is less likely in view of what is known on DNA replication (Figure 6\u2014figure supplement 1A); (ii) multiple Okazaki fragments each with DNA polymerase \u03b1 and \u03b4 within the same replication fork may form on the extended ssDNA unwound by the helicase complex (Figure 6\u2014figure supplement 1B); (iii) additional replication origins may fire in the proximity of the stalled replication fork, which would explain the increase in both active phosphorylated helicase and DNA polymerases \u03b1 and \u03b4 (Figure 6\u2014figure supplement 1C). Having established the conditions in which DNA synthesis but not DNA unwinding is blocked and concomitantly polymerases are accumulated, we then addressed the consequences for chromatin motion (Figure 6\u2014figure supplement 2).\n\n### Accumulation of replisome components but not processive DNA synthesis per se restricts chromatin motion\n\nTo elucidate the roles of the processive DNA synthesis and loading of synthetic machinery in chromatin motion decrease in S-phase, we imaged single cells for PCNA, RPA34, and Cy3-dUTP pre- and post-aphidicolin treatment (Figure 6A, see also Videos 4 and 5). The PCNA and RPA patterns did not change in G1/G2, whereas in S-phase the PCNA was dissociated from chromatin and RPA was accumulated at the same previously replicating sites (Figure 6A, see also Videos 6 and 7). Chromatin motion analysis was performed on DNA labeled with Cy3-dUTP for both G1/G2 cells and S-phase cells pre- and post-treatment with aphidicolin. We observed that chromatin motion was unaffected in G1/G2, which fit with our prediction, as in G1/G2 there is no active DNA synthesis besides possible DNA repair processes on a limited genomic scale (Figure 6B). As hydroxyurea, another DNA synthesis inhibitor, significantly affected chromatin mobility outside of S-phase, we did not further pursue it. Surprisingly, aphidicolin treatment and inhibition of DNA synthesis led to additional decrease in chromatin motion (Figure 6B) and the chromatin became even more constrained than at the proximity of the active replication sites in S-phase cells (see Figure 4C). As quantified above, after aphidicolin treatment, the helicases were still loaded and actively spooling DNA through, whereas the DNA polymerases \u03b1 and \u03b4 albeit not synthesizing DNA accumulated on chromatin at the sites of helicase/RPA accumulation (Figure 5).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig6-v1.jpg)\n\n**Figure 6.:** (A) Representative images of HeLa GFP-RPA34 cells transfected with a construct coding for miRFP670-proliferating cell nuclear antigen (PCNA) and Cy3-dUTP nucleotides for both G1/G2 and S-phase cells pre- and post-aphidicolin (Aph) treatment. The chromatin foci were imaged using the spinning disk microscope. The image sequences were used to perform motion analysis. The cropped region (black dashed lines) shows the motion analysis of chromatin tracks before and after treatment of the same cells (see also Videos 6 and 7). (B) Mean square displacement (MSD) curves over time were plotted for all chromatin tracks for untreated and aphidicolin-treated (150 \u00b5M) cells in G1/G2 and S-phase. The error bars are represented in transparent color around the curve. The table below provides the detailed information on number of trajectories per individual sample along with average diffusion rates (\u00b5m2/s \u00d7 10\u20135) and anomalous \u03b1 coefficient showing subdiffusion. The MSD were plotted with error bars (standard deviation) represented in transparent color around the curve. Scale bar: 5 \u00b5m. Insets scale bar: 1 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig6-figsupp1-v1.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87572/elife-87572-fig6-figsupp2-v1.jpg)\n\n![Video 6.](https://cdn.elifesciences.org/articles/87572/elife-87572-video6.mp4.jpg)\n\n**Video 6.:** Scale bar: 5 \u00b5m.\n\n![Video 7.](https://cdn.elifesciences.org/articles/87572/elife-87572-video7.mp4.jpg)\n\n**Video 7.:** Scale bar: 5 \u00b5m.\n\nIn summary, we propose that the accumulation of the helicase and polymerase complexes on chromatin together with the continuous loading of the ssDNA binding protein (RPA) covering the ssDNA strands stiffens the DNA polymer and restricts its diffusional motion. This study provides new insights on the kinetics of DNA replication proteins loading upon DNA replication stress and elucidates the transient and localized immobilization of chromatin during DNA replication.\n\n## Materials and methods\n\n### Cells\n\nAll cells used were tested and negative for mycoplasma and authenticated via STR profiling (ATCC). Mycoplasma test was performed using PCR technique for amplification of mycoplasm specific DNA. The following primers are used: myco-fw 5\u2019-TGCACCATCTGTCACTCTGTTAACCTC myco-rv 5\u2019-GGGAGCAAACAGGATTAGATACCCT and 2 ml culture supernatant was used as template. Human cervical cancer cell line HeLa Kyoto (Erfle et al., 2007) provided by Jan Ellenberg (EMBL, Heidelberg, Germany) and human normal diploid fibroblasts from lung tissue IMR90 (Nichols et al., 1977) provided by Argyris Papantonis (Georg-August-Universitat Gottingen, Germany) were used in the study. Previously published HeLa Kyoto cells expressing GFP-PCNA (Chagin et al., 2016) fusion protein were used to monitor cell cycle progression. HeLa Kyoto GFP-RPA34 were generated using the Flp-In recombination system based on the Flp site-specific recombinase (Cat.No.: K6010-01, Invitrogen, Waltham, MA, USA). The HeLa Kyoto FRTLacZ cells containing a genomically integrated FRT site described earlier (Chagin et al., 2016) were cotransfected with pFRT-B-GRPA34 (Supplementary file 1b) (encoding GFP-RPA34) and pOG44 Flp-recombinase using Neon transfection (Cat.No.: MPK5000, Invitrogen, Waltham, MA, USA). Four hours after transfection the cell culture medium was exchanged and cells were grown for 48 hr and selected with 2.5 mg/ml blasticidin (Cat.No.: R210-01, Invitrogen, Waltham, MA, USA). A stable monoclonal line was isolated using blasticidin selection. All cells were maintained in Dulbecco\u2019s modified Eagle medium high glucose (Cat.No.: D6429, Sigma-Aldrich Chemie GmbH, Steinheim, Germany) supplemented with 10% fetal calf serum, 1\u00d7 glutamine (Cat.No.: G7513, Sigma-Aldrich, St Louis, MO, USA) and 1 \u00b5M gentamicin (Cat.No.: G1397, Sigma-Aldrich, St Louis, MO, USA) in a humidified atmosphere with 5% CO2 at 37\u00b0C. Additional experiments confirmed that the transgenic gene product co-localized with the endogenous protein (not shown) and was present at sites of active replication (Figure 5\u2014figure supplement 3). The culture medium was changed every day and cells were split every 2 days. Cell line characteristics are summarized in Supplementary file 1a.\n\nTo block DNA replication, cells were treated with aphidicolin (Cat.No.: A0781-1MG, Sigma-Aldrich, St Louis, MO, USA) at final concentration of 150 \u00b5M (Supplementary file 1c). Cells were subsequently examined for 30 min (aphidicolin) following drug exposure. To confirm that DNA synthesis was inhibited, cells were labeled with 10 \u03bcM nucleoside analog 5-ethynyl-2\u2019-deoxyuridine (Cat.No.: 7845.1, ClickIt-EdU cell proliferation assay, Carl Roth, Karlsruhe, Germany) (Supplementary file 1c) in media for 10 min to evaluate the extent of replication in control and treated cells (Figure 5\u2014figure supplement 1).\n\nFor synchronization of HeLa cells, the cells were seeded on tissue culture dishes at high confluency. Once the cells were confluent, the cells were placed on a shaker for 5 min. The detached mitotic cells were collected from the supernatant and seeded on coverslips. Once the cells were in G1, they were fixed and stained with DAPI for quantification (Figure 3\u2014figure supplement 1B).\n\n### Live cell imaging and replication labeling\n\nFor live cell microscopy, cells were transfected using a Neon transfection system (Cat.No.: MPK5000, Invitrogen, Waltham, MA, USA). Briefly, the asynchronous population of cells were washed with 1\u00d7 phosphate-buffered saline (PBS)/EDTA, trypsinized, and collected in a 15 ml tube. The cells were pelleted at 300 \u00d7 g for 5 min. The media was removed and cells were resuspended in 100 \u00b5l resuspension buffer R and transferred to a 1.5 ml microcentrifuge tube. Either 15 \u00b5g of plasmid DNA or/and 0.5 \u00b5l (25 nM) Cy3-dUTP (Cat.No.:ENZ-42501, Enzo Life Sciences, L\u00f6rrach, Germany) was added to the cell mixture (Supplementary file 1b and c). The Neon tip was immersed into the cell mixture and the mixture pipetted taking care to avoid bubbles. The tip was immersed in electrolytic buffer E2 and cells were electroporated (HeLa [voltage \u2013 1005 V, width \u2013 35, pulses \u2013 2], IMR90 [1100 V, width \u2013 30, pulses \u2013 1]). The electroporated mixture was transferred to Ibidi \u03bc-dish chambers (Cat.No.: 80826, Ibidi, Gr\u00e4felfing, Germany). Additionally, IMR90 cells were transfected with miRFP670-PCNA plasmid (Supplementary file 1b) to mark the DNA replication sites. After transfection, cells were allowed to attach overnight and were imaged the next day. All imaging was performed at 37\u00b0C with a humidified atmosphere of 5% CO2 using an Olympus environmental chamber (spinning disk microscope, Supplementary file 1e).\n\n### Immunofluorescence\n\nFor immunofluorescence, cells were fixed with 3.7% formaldehyde/1\u00d7 PBS (Cat.No.: F8775, Sigma-Aldrich Chemie GmbH, Steinheim, Germany) for 15 min and permeabilized with 0.7% Triton-X100 in 1\u00d7 PBS for 20 min. All washing steps were performed with PBS-T (1\u00d7 PBS/0.075% Tween-20). For detection of PCNA, cells were further incubated for 5 min in ice-cold methanol for antigen retrieval. Blocking (1% bovine serum albumin in 1\u00d7 PBS) was performed for 30 min at room temperature. EdU was detected using the Click-IT assay as described by the manufacturer (1:1000 6-FAM azide or 1:2000 5/6-sulforhodamine azide; Cat.No.: 7806 and 7776, respectively, Carl Roth, Karlsruhe, Germany). Primary and secondary antibodies were diluted in the blocking buffer and incubated for 1 hr at room temperature with subsequent 3\u00d710 min of PBS-T washing. DNA was counterstained with DAPI (4\u2032,6-diamidino-2-phenylindole, 10 \u03bcg/ml, Cat.No.: D27802, Sigma-Aldrich Chemie GmbH, Steinheim, Germany) for 10 min, and samples were mounted in Vectashield (Cat.No.: VEC-H-1000, Vector Laboratories, Inc, Burlingame, CA, USA). Antibody characteristics are summarized in Supplementary file 1d.\n\n### Western blot and chromatin fractionation\n\nCells for western blot were washed with 5 ml ice-cold 1\u00d7 PBS once and 2 ml of ice-cold 1\u00d7 PBS was added and cells were scraped using a cell scraper. Cells were then centrifuged in a 15 ml tube at 500 \u00d7 g for 5 min. Cells were lysed for total cell lysates for 1 hr at 4\u00b0C using the IP lysis buffer with 150 mM NaCl (Cat.No.: 0601.2, Carl Roth, Karlsruhe, Germany), 200 mM TrisCl pH 8 (Cat.No.: A1086.500, Diagonal, M\u00fcnster, Germany), 5 mM EDTA (Cat.No.: 8040.2, Carl Roth, Karlsruhe, Germany), 0.5% NP-40 (Cat.No.: 74385, Sigma-Aldrich Chemie GmbH, Steinheim, Germany) and protease and phosphatase inhibitors PMSF (Cat.No.: 6367.1, Carl Roth, Karlsruhe, Germany), PepA (Cat.No.: 2936.2, Carl Roth, Karlsruhe, Germany), NaF (Cat.No.: 67414-1-ML-F, Sigma-Aldrich Chemie GmbH, Steinheim, Germany), Na3VO4 (Cat.No.: S6508-10G, Sigma-Aldrich Chemie GmbH, Steinheim, Germany). Protein fractionation of control and treated samples was performed as described in Gillotin, 2018. Briefly, equal number of cells were washed with buffer E1 (cytoplasmic fraction) and centrifuged at 1200 \u00d7 g for 2 min and collected into a new tube. The step was repeated two times to remove excess cytoplasmic fraction. The pellet was then washed with buffer E2 (nucleoplasm fraction) and collected into a new tube. The chromatin fraction was isolated with buffer E3 and 1:1000 benzonase for 20 min at 25\u00b0C.\n\nAll lysates were then centrifuged at 13,000 rpm for 20 min at 4\u00b0C. The supernatant was collected into a new 1.5 ml tube and protein concentration was measured using the bovine serum albumin protein standard assay (Cat.No.: 23208, Thermo Fisher Scientific, Waltham, MA, USA) according to the manufacturer\u2019s protocol. 10% SDS-PAGE gel was prepared and 50 \u03bcg of protein lysate was loaded along with the protein standard ladder (Cat.No.: P7719S, New England Biolabs, Ipswich, MA, United States), and electrophoresis was performed for 1.5 hr in ice-cold 1\u00d7 Laemmli electrophoresis running buffer. Then, the protein was transferred to the 0.2 \u03bcm nitrocellulose membrane using a semi-dry transfer system (#1703940, Trans-Blot SD Semi-Dry Transfer Cell, Bio-Rad, Hercules, CA, USA) for 55 min at 25 V using 1\u00d7 transfer buffer (Pierce Western Blot Transfer Buffer 10\u00d7, Thermo Fisher Scientific, Waltham, MA, USA). After the transfer, the blotting membrane was incubated in a blocking buffer (5% low-fat milk in 1\u00d7 PBS) for 30 min. The primary antibodies (Supplementary file 1d) were diluted in blocking buffer to 5% milk and incubated at 4\u00b0C overnight. The next day the membrane was washed three times with 1\u00d7 PBS-T (0.075 %) 10 min each. The membrane was then incubated with secondary antibodies (Supplementary file 1d) for 1 hr at room temperature. The membrane was washed again with 1\u00d7 PBS-T (0.075 %) three times 10 min each and incubated with 1:1 ECL chemiluminescence solution (Clarity Western ECL, #170-5061, Bio-Rad Laboratories, Hercules, CA, USA). Signal was detected using an Amersham AI600 imager (Supplementary file 1e).\n\n### Microscopy\n\nLive cell imaging for chromatin mobility measurements were performed using the PerkinElmer UltraVIEW VoX system with a 60\u00d7/1.45 numerical aperture plan-apochromatic oil immersion objective. Cy3 and GFP were excited sequentially using 543 nm and 488 nm solid-state diode laser lines to minimize crosstalk. The standard protocol for examining chromatin mobility in Cy3-dUTP-labeled nuclei was as follows: first, a reference image comprising the miRFP670/GFP-PCNA, Cy3-dUTP, and the phase-contrast signal was collected from a single focal plane corresponding to the middle of the nucleus. This image demarcated the nuclear boundary, provided cell cycle information, and, in the case of S-phase cells, allowed us to correlate the positions of Cy3-dUTP foci with sites of DNA replication. Second, while maintaining the same focal plane, a time series (30\u201360 s) at a frame rate of 500 ms was captured. To maximize the temporal resolution, the time series consisted solely of the Cy3-dUTP channel and a PCNA reference frame at the beginning to obtain information on the cell cycle stage.\n\nMultiple point time-lapse microscopy was performed using the multi-time option available in the spinning disk Volocity 6.3 software to image the chromatin (Cy3-dUTP) of the same cells pre- and post-treatment of aphidicolin. To minimize photo-toxicity over the course of the experiment, transmitted light contrast imaging was used to focus the cells. Live cell imaging was performed by following cells through the cell cycle and G1 and G2 stages were classified based on the previous cell cycle stage.\n\nFor the inhibition experiments (aphidicolin) different cells/points were chosen using the multipoint function of the Perkin Elmer spinning disk, and image sequences before the treatment were acquired. The reference image consisted of GFP-RPA34, Cy3-dUTP, and miRFP670-PCNA using 488 nm, 561 nm, and 640 nm solid-state diode lasers, respectively. After acquiring the reference images, the media containing the small molecule inhibitor was added to cells on the microscope for the required time and after treatment image sequences were acquired for analysis of chromatin motion.\n\nHigh-throughput imaging was performed using the 40\u00d7/0.95 numerical aperture air objective of the PerkinElmer Operetta system. We used different filters (excitation/emission: 360/400, 460/490, 560/580) to image DAPI, EdU, and different replication proteins (Figure 5, Figure 5\u2014figure supplement 2, Supplementary file 1e).\n\n### Quantification of DNA synthesis inhibition\n\nThe high-throughput images were used to quantify the percentage of cells with inhibition of DNA synthesis upon aphidicolin treatment. A minimum of 100 fields with around 2000\u20135000 cells were acquired in all channels. The images were then analyzed using the PerkinElmer Harmony software. The steps in brief (Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2) include segmentation of nuclei using cell types of specific parameters like the diameter, splitting coefficient, and intensity threshold. The segmentation was then validated by visually checking it in randomly selected regions. Once the nuclei were segmented, cells touching the border were omitted. The intensity values with mean, median, standard deviation, and the sum of the intensities were obtained for individual cells. The datasheets were then imported to R and plots were generated. EdU signal was used to identify the population of cells actively replicating upon aphidicolin treatment (Figure 5A). The background intensity for EdU staining was determined using a negative control which was not treated with EdU but stained. The cells showing a mean intensity greater than the background intensity were separated into an EdU positive population and plotted.\n\n### DNA quantification of labeled chromatin\n\nDNA quantification of the labeled foci was done by automated image analysis. Image sequences with labeled chromatin were acquired on a Ultra-View VoX spinning disk microscope, using a 60\u00d7 objective (Figure 2, Figure 2\u2014figure supplement 1). For segmentation of replication foci, we used the protocol originally described in Chagin et al., 2016; Chagin et al., 2015. The channels comprising DAPI replication foci signals were imported into the software Perkin Elmer Volocity 6.3 and converted into volumes. The pixel dimensions of the images were set to the specifications for the spinning disk (x/y: 0.066 \u03bcm and z: 0.3 \u03bcm). The following processing steps were applied: Find objects (\u2018nucleus\u2019) using the DAPI channel, method \u2018Intensity\u2019 (set manually to the optimal value), use fill holes in object/dilate/erode until the object optimally fits the nucleus, exclude objects by size <500 \u03bcm3. Find objects using the label channel, method \u2018Intensity\u2019 (lower limit: 1, upper limit: 65535), separate touching objects, exclude \u2018foci\u2019' not touching \u2018nucleus\u2019. Using the detected foci, the DNA content of foci was determined via the sum of intensities in the DAPI channel and the genome size of the cell type (Figure 2, Figure 2\u2014figure supplement 1).\n\n### Automated tracking of chromatin structures in time-lapse videos\n\nThe motility of fluorescently labeled chromatin structures in live cell fluorescence microscopy images was quantified within manually segmented single nuclei. The background image intensity was adjusted for each image sequence to the computed mean intensity value over all time points within a manually selected region of interest (ROI) of the background. Automatic tracking of multiple fluorescently labeled chromatin structures was performed using a probabilistic particle tracking approach, which is based on Bayesian filtering and multi-sensor data fusion (Ritter et al., 2021). This approach combines Kalman filtering with particle filtering and integrates multiple measurements by separate sensor models and sequential multi-sensor data fusion. Detection-based and prediction-based measurements are obtained by elliptical sampling (Godinez and Rohr, 2015), and the separate sensor models allow considering different uncertainties. In addition, motion information based on displacements from past time points is exploited and integrated in the cost function for correspondence finding. Chromatin structures are detected by the spot-enhancing filter (SEF) (Sage et al., 2005) which consists of a Laplacian-of-Gaussian filter followed by thresholding the filtered image and determination of local maxima. The threshold is automatically determined by the mean of the absolute values of the filtered image plus a factor times the standard deviation. We used the same threshold factor for all images of an image sequence (Figure 3\u2014figure supplement 1).\n\n### Chromatin motility analysis\n\nBased on the computed trajectories, the motility of chromatin structures was analyzed, and the motion type was determined for different cell cycle stages along with active replication sites, and inhibition of DNA synthesis with aphidicolin. We performed an MSD analysis (Saxton, 1997) and computed the MSD as a function of the time interval \u0394t for each trajectory (Figure 3\u2014figure supplement 1). The MSD curves for all trajectories with a minimum time duration of 10 s (corresponding to 20 time steps) under one condition were averaged. We considered only the trajectories with a time duration larger than the minimum time duration which improved the accuracy of the motility analysis. We fitted the anomalous diffusion model to the calculated MSD values to obtain the anomalous diffusion coefficient \u03b1. The motion was classified into confined diffusion, obstructed diffusion, and normal diffusion (Bacher et al., 2004). To determine the diffusion coefficient D (\u03bcm\u00b2/s), the diffusion model was fitted to the MSD values. In case of IMR90 cells, affine image registration was performed using the method in Celikay et al., 2022, to address the stronger cell movement compared to HeLa cells.\n\n### CCD/proximity analysis\n\nAutomatic proximity analysis of chromatin and PCNA was performed using the computed trajectories of chromatin structures and detected sites of active DNA synthesis represented by fluorescently labeled PCNA. Only trajectories of chromatin structures present at the first time point of an image sequence and with a minimum time duration of 10 s (corresponding to 20 time steps) were considered. PCNA foci were automatically detected in the fluorescence microscopy images by the SEF (Figure 3\u2014figure supplement 1). For each PCNA image, a single nucleus was manually segmented, and the background intensity was adjusted to the computed mean intensity value within a manually selected ROI of the background. Proximity was determined for the first time point of the trajectory of a chromatin structure and detected PCNA foci using a graph-based k-d-tree approach (Bentley, 1975). Due to the k-d-tree structure, this approach allows efficient computation of the nearest neighbor query based on the Euclidean distance between foci in the chromatin and PCNA channel. If a chromatin structure at the first time point of the image sequence has a nearest PCNA neighbor within a maximum distance, the trajectory of a chromatin structure is considered within CCD. Otherwise, the trajectory is considered outside the CCD (Figure 4\u2014figure supplement 1).\n\n### Accumulation analysis\n\nTo analyze the focal RPA accumulation upon DMSO/aphidicolin treatment, cell nuclei were segmented using the Volocity software (Version 6.3, Perkin Elmer). The GFP-RPA34 signal was segmented before and after treatment of the same cell in the live experiments and plotted over time after DMSO and drug treatment. The GFP-RPA intensities were measured and the coefficient of variation cV = \u03c3/\u00b5, with \u03c3 = standard deviation and \u00b5=mean, was calculated for all time points (Figure 5\u2014figure supplement 4, Figure 5\u2014figure supplement 5). All values were normalized to the DMSO treatment cV = cV(tpx)/cV(tp0) with tpx: any given time point imaged, tp0: pretreatment time point and plotted using RStudio (Supplementary file 1i).\n\n### High-throughput image analysis of replisome components\n\nThe images from the Nikon crest Ti2 system were analyzed with the custom-made image analysis pipeline in KNIME Analytics Platform. The image analysis pipeline was constructed as follows (Figure 5\u2014figure supplement 7, Figure 5\u2014figure supplement 8). Briefly, the channels were separated. The DAPI channel was used for the nuclei segmentation. Nuclei were segmented based on manually chosen intensity threshold, the Watershed Transform was applied next to separate the close-positioned nuclei. The segmented nuclei were converted into a mask with each nucleus DAPI intensity and texture features recorded. The nuclei population was further thresholded by nucleus area and circularity to eliminate segmentation artifacts. The EdU and replication protein channels were subjected to foci segmentation based on a wavelet transform algorithm. The algorithm parameters were selected individually for each type of the replication protein and maintained the same between the control and treated samples. The nuclear mask and EdU foci/replication protein foci masks were overlaid to filter only the foci inside the nuclear areas. The EdU foci/replication protein foci intensity parameters (total focus intensity, mean focus intensity), area, and foci number per nucleus were exported as XLSX files for further analysis. The data was analyzed in RStudio (https://posit.co/download/rstudio-desktop/). First, the S-phase cell population was identified by the number of EdU foci per nucleus. The EdU foci number threshold was set as 50 for the cells in control samples, and 55 for aphidicolin-treated samples among all datasets. The nuclei in S-phase were next analyzed for their replication protein accumulation. The total levels of the replication proteins were plotted as box plots, ***p<0.001 by Wilcoxon rank-sum test, for aphidicolin-treated vs. control sample.\n",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "2723625d-dc20-4840-ad9e-78a141f53702",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87572.3.sa0](https://doi.org/10.7554/eLife.87572.3.sa0)\n\nThis is a valuable investigation of the chromatin dynamics throughout the cell cycle by using fluorescence signals and patterns of GFP-PCNA and CY3-dUTP, which labels newly synthesized DNA. The authors report reduced chromatin mobility in S relative to G1 phase. The technology and methods used are solid. The data will be of interest to researchers working on chromatin dynamics.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87572.3.sa1](https://doi.org/10.7554/eLife.87572.3.sa1)\n\nThe manuscript presented by Pabba et al. studied chromatin dynamics throughout the cell cycle. The authors used fluorescence signals and patterns of GFP-PCNA (GFP tagged proliferating cell nuclear antigen) and CY3-dUTP (which labels newly synthesized DNA but not the DNA template) to determine cell cycle stages in asynchronized HeLa (Kyoto) cells and track movements of chromatin domains. PCNA binds to replication forks and form replication foci during the S phase. The major conclusions are: (1) Labeled chromatin domains were more mobile in G1/G2 relative to the S-phase. (2) Restricted chromatin motion occurred at sites in proximity to DNA replication sites. (3) Chromatin motion was restricted by the loading of replisomes, independent of DNA synthesis. This work is based on previous work published in 2015, entitled \"4D Visualization of replication foci in mammalian cells corresponding to individual replicons,\" in which the labeling method was demonstrated to be sound.\n\nComments on latest version: The revised manuscript has included data from a diploid cell line IMR90 (fibroblasts isolated from normal lung tissue) to strengthen the conclusions. Overall, quality of the work is substantially improved.\n",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "632f48fb-c494-4387-a657-63f411f56252",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C1",
+      "claim": "Chromatin has been shown to undergo diffusional motion, which is affected during gene transcription by RNA polymerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin has been shown to undergo diffusional motion, which is affected during gene transcription by RNA polymerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that references established knowledge about chromatin motion and transcription.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "33febe34-5bad-4c3f-af05-dfc1926ccfb9",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C2",
+      "claim": "Chromatin motion was locally constrained at the sites of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "By correlating chromatin mobility proximal to the active sites of DNA synthesis, we showed that chromatin motion was locally constrained at the sites of DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "4f7a26b8-f452-4c69-b0db-ea69358a8aeb",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C3",
+      "claim": "Inhibiting DNA synthesis led to increased loading of DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibiting DNA synthesis led to increased loading of DNA polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the abstract based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "edcedb97-8fb9-4198-8409-5cb6584028e5",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C4",
+      "claim": "Inhibiting DNA synthesis was accompanied by accumulation of the single-stranded DNA binding protein on the chromatin and activation of DNA helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "This was accompanied by accumulation of the single-stranded DNA binding protein on the chromatin and activation of DNA helicases further restricting local chromatin motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding stated in the abstract based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "715165f5-6080-406b-9cf5-8b10805d4b16",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C5",
+      "claim": "It is the loading of replisomes but not their catalytic activity that reduces the dynamics of replicating chromatin segments in the S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, propose that it is the loading of replisomes but not their catalytic activity that reduces the dynamics of replicating chromatin segments in the S-phase as well as their accessibility and probability of interactions with other genomic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion proposed by the authors based on their experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "9a9bdc8d-71b1-416b-b5a4-926d965455a1",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C6",
+      "claim": "The movement of chromatin loci was shown to be consistent with an anomalous (constrained) diffusion model.",
+      "claim_type": "EXPLICIT",
+      "source": "The movement of chromatin loci was shown to be consistent with an anomalous (constrained) diffusion model (Scipioni et al., 2018; Shukron et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "071ddf3b-09a4-4c30-b3ed-a115916db569",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C7",
+      "claim": "A single chromatin locus is corralled within a sub-micron radius and exhibits random diffusion motion.",
+      "claim_type": "EXPLICIT",
+      "source": "This model indicates that a single chromatin locus is corralled within a sub-micron radius and exhibits random diffusion motion and will execute multiple random jumps into neighboring compartments (Bronshtein et al., 2016; Chubb et al., 2002; Heun et al., 2001; Levi et al., 2005; Marshall et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "306e6c46-6b65-432f-9960-f606ee072cef",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C8",
+      "claim": "Some studies have reported that chromatin mobility is enhanced due to active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have reported that chromatin mobility is enhanced due to active transcription (Gu et al., 2018; Tunnacliffe and Chubb, 2020), whereas others report rather a decrease in mobility (Mach et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes findings from cited studies showing conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "5bcaf2bc-22a1-40ac-95ec-f1589016b8b2",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C9",
+      "claim": "Other studies report a decrease in chromatin mobility due to active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Some studies have reported that chromatin mobility is enhanced due to active transcription (Gu et al., 2018; Tunnacliffe and Chubb, 2020), whereas others report rather a decrease in mobility (Mach et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes findings from cited studies showing conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "08560045-c10a-4aad-af51-9a5b65bfc796",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C10",
+      "claim": "Chromatin mobility at the sites of double-stranded DNA breaks increases concomitant with their repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, there is an established view that chromatin mobility at the sites of double-stranded DNA breaks increases concomitant with their repair (Eaton and Zidovska, 2020; Hauer and Gasser, 2017a; Hauer and Gasser, 2017a; Hauer et al., 2017b; Nagai et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "fd640607-637b-4c61-9f94-edb47ff2ab1b",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C11",
+      "claim": "Chromatin undergoes coherent micron-scale motion at the time scales of 5\u201310 s independently of the cell cycle stage in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of fluorescently tagged histones using displacement correlation spectroscopy has shown that chromatin undergoes coherent micron-scale motion at the time scales of 5\u201310 s independently of the cell cycle stage in mammalian cells (Zidovska et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "4afc4229-9f7c-4000-9049-e06c2fc03213",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C12",
+      "claim": "The correlated motion of chromatin was ATP-dependent and completely disappeared upon DNA damage induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the correlated motion of chromatin was ATP-dependent and completely disappeared upon DNA damage induction (Eaton and Zidovska, 2020; Zidovska et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "45248071-15ce-4241-aea0-1c7da0285b93",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C13",
+      "claim": "Individual heterologous loci became constrained in S-phase when integrated close to early- and late-firing replication origins in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "An early study in budding yeast (Heun et al., 2001) demonstrated that individual heterologous loci became constrained in S-phase when integrated close to early- and late-firing replication origins, but not at the telomeric or centromeric regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "ca1302a2-c084-4e46-b468-d7924354a511",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C14",
+      "claim": "Changes in chromatin mobility in S-phase were not observed when analyzing it at the level of chromosome territories in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changes in chromatin mobility in S-phase were not observed when analyzing it at the level of chromosome territories in mammalian cells (Walter et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "33463485-b825-43f8-a0c5-a93374034bce",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C15",
+      "claim": "Local chromatin motion is restricted upon S-phase entry and more markedly in mid-late S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work using a CRISPR-based DNA imaging system suggests that local chromatin motion is restricted upon S-phase entry and more markedly in mid-late S-phase (Ma et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "c670211c-758e-44a3-b8ba-29e3946c48b0",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C16",
+      "claim": "Cy3-dUTP is incorporated into the nascent DNA of cells in various periods of S-phase, effectively labeling the chromatin directly in an unbiased manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleotide is incorporated into the nascent DNA of the cells in various periods of S-phase, effectively labeling the chromatin directly in an unbiased manner (Manders et al., 1999; Sadoni et al., 2004; Schermelleh et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the experimental method and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "9801468a-5b20-45e8-a533-f6f7e58b4296",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C17",
+      "claim": "The Cy3-dUTP-labeled chromatin structures were stable over the cell cycle progression and in subsequent cell cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cy3-dUTP-labeled chromatin structures were stable over the cell cycle progression and in subsequent cell cycles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "6ad45688-4c83-4d26-b5d6-264ec31bd9c3",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C18",
+      "claim": "The highest frequency of average DNA amount per focus was about 300\u2013600 kbp of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest frequency of average DNA amount per focus (mode +1 bin) was about 300\u2013600 kbp of DNA (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the DNA quantification analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "65b11062-66fc-4bf2-b358-147ed55280b3",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C19",
+      "claim": "With the labeling approach, DNA domains of sizes ranging from 0.5 Mbp to 10 Mbp were labeled, with the vast majority corresponding to 0.5 Mbp.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, with our labeling approach, we labeled DNA domains of sizes ranging from 0.5 Mbp to 10 Mbp, with the vast majority corresponding to 0.5 Mbp, which correspond well to multi-loop chromatin domains corresponding in size to topological associated domains (reviewed in Giorgetti and Heard, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the DNA quantification results with a citation to support the interpretation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "dfd1f308-efc6-4b04-85b2-70489332ba3f",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C20",
+      "claim": "Chromatin motion decreases in the S-phase of the cell cycle relative to the G1 and G2 phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin motion decreases in the S-phase of the cell cycle relative to the G1 and G2 phases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the title of a results section and a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "45b26789-d3b7-468a-954d-7797631ae098",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C21",
+      "claim": "Significantly constrained global chromatin motion was observed in S-phase cells compared to non-replicating G1/G2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed significantly constrained global chromatin motion in S-phase cells compared to non-replicating G1/G2 cells suggesting that chromatin was more constrained during DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the motion analysis experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "51cf2b74-2ce6-4f1e-a876-124cb3b71595",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C22",
+      "claim": "The effect of constrained chromatin motion in S-phase was stronger in IMR90 cells compared to HeLa Kyoto.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was stronger in IMR90 cells compared to HeLa Kyoto.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "1cd08647-1418-4ba3-ac8e-3af540381447",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C23",
+      "claim": "For HeLa, the average diffusion rate of chromatin in G1/G2 was D=133.6 \u03bcm2/s \u00d7 10\u20135, whereas the diffusion rates dropped to D=105.6 \u03bcm2/s \u00d7 10\u20135 during S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "For HeLa average diffusion rate of chromatin in G1/G2 was D=133.6 \u03bcm2/s \u00d7 10\u20135, whereas the diffusion rates dropped to D=105.6 \u03bcm2/s \u00d7 10\u20135 during S-phase (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the motion analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "bd385029-1a16-4589-9982-c6250b934fa4",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C24",
+      "claim": "For IMR90, the average diffusion rate of chromatin in G1/G2 was D=86.5 \u03bcm2/s \u00d7 10\u20135, whereas the diffusion rates dropped to D=43.7 \u03bcm2/s \u00d7 10\u20135 during S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "For IMR90 average diffusion rate of chromatin in G1/G2 was D=86.5 \u03bcm2/s \u00d7 10\u20135, whereas the diffusion rates dropped to D=43.7 \u03bcm2/s \u00d7 10\u20135 during S-phase (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the motion analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "82d3e69b-1c88-4e2b-954e-a531870ba48d",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C25",
+      "claim": "Chromatin exhibited anomalous subdiffusion or obstructed diffusion with 0.1 < \u0251 < 0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin exhibited anomalous subdiffusion or obstructed diffusion with 0.1 < \u0251 < 0.9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the type of motion observed in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "f4c64417-383a-4e8c-9ab5-6face9399073",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C26",
+      "claim": "Anomalous diffusion of cellular structures including chromatin with \u03b1 values between 0.1 and 0.9 have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Anomalous diffusion of cellular structures including chromatin with \u03b1 values between 0.1 and 0.9 have been reported (Bronshtein et al., 2015; Ghosh and Webb, 1994; Mach et al., 2022; Oliveira et al., 2021; Simson et al., 1998; Smith et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "f3dfddcf-4957-4817-8f8c-857a3c0d6ac7",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C27",
+      "claim": "Chromatin in the proximity of replication sites (actively replicating) had more restricted motion when located up to 1 \u03bcm (center to center) distance to an active replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that the chromatin in the proximity of replication sites (actively replicating) had more restricted motion when located up to 1 \u03bcm (center to center) distance to an active replisome, and this effect vanished at higher distances (Figure 4C, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the proximity analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "6d45f25f-c88c-442e-ad08-39d508fdc176",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C28",
+      "claim": "DNA synthesis was inhibited minutes after aphidicolin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that DNA synthesis was inhibited minutes after aphidicolin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the EdU incorporation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "5f6208d0-8619-40f0-a124-fc3630ba61b0",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C29",
+      "claim": "In almost 99% of the cell population, DNA replication was inhibited within half an hour of aphidicolin incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using high-content microscopy, we quantified the population of cells actively synthesizing DNA (EdU signal) upon stress and observed that in almost 99% of the cell population, DNA replication was inhibited within half an hour of aphidicolin incubation (Materials and methods, Figure 5A, Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the high-throughput imaging analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "e6eff49e-c02a-4561-bee2-0008cfdd7e9d",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C30",
+      "claim": "PCNA dissociated from DNA during aphidicolin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "During aphidicolin treatment though, PCNA dissociated from DNA as shown before (G\u00f6risch et al., 2008; Rausch et al., 2021; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from live cell imaging supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "de5f399a-78e3-4b54-b7fd-ea82761a789b",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C31",
+      "claim": "RPA accumulated over time on DNA at replication sites in aphidicolin-treated cells but not in the control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that RPA accumulated over time on DNA at replication sites in aphidicolin-treated cells but not in the control cells (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from time-lapse microscopy shown in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "07c06af8-b942-43ea-a776-a3b49baa5bb2",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C32",
+      "claim": "There were no significant changes in MCM2 helicase subunit levels on chromatin upon aphidicolin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant changes in MCM2 helicase subunit levels on chromatin and higher levels of phosphorylation of MCM2 upon treatment with aphidicolin (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the western blot analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "6610571f-20d7-4a0d-8841-b49b2f8e6e0e",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C33",
+      "claim": "Higher levels of phosphorylation of MCM2 were observed upon treatment with aphidicolin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant changes in MCM2 helicase subunit levels on chromatin and higher levels of phosphorylation of MCM2 upon treatment with aphidicolin (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the western blot analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "19c7c3b9-21e1-429c-a833-ca96000aa79e",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C34",
+      "claim": "DNA polymerase \u03b1 was enriched on chromatin upon stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA polymerases showed a different behavior as compared to the DNA polymerase clamp protein, with DNA polymerase \u03b1 being enriched on chromatin upon stress, with only minor to no changes being observed for the processive DNA polymerases \u03b4 and \u03b5 (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the western blot and immunofluorescence analysis shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "21c940db-b0a7-464d-92c1-f2046a27414a",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C35",
+      "claim": "Only minor to no changes were observed for the processive DNA polymerases \u03b4 and \u03b5 upon aphidicolin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA polymerases showed a different behavior as compared to the DNA polymerase clamp protein, with DNA polymerase \u03b1 being enriched on chromatin upon stress, with only minor to no changes being observed for the processive DNA polymerases \u03b4 and \u03b5 (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the western blot and immunofluorescence analysis shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "5de8a46d-26d5-4e6d-949f-40442c782d92",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C36",
+      "claim": "PCNA dissociated from chromatin upon aphidicolin treatment as shown by high-throughput microscopy analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PCNA dissociated from chromatin and RPA accumulated on chromatin upon stress in accordance with our previous analysis (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the high-throughput microscopy analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "dda7bb0f-794e-49d5-8242-8bb751e842fd",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C37",
+      "claim": "RPA accumulated on chromatin upon aphidicolin treatment as shown by high-throughput microscopy analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PCNA dissociated from chromatin and RPA accumulated on chromatin upon stress in accordance with our previous analysis (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the high-throughput microscopy analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "8a8c9bdd-ff6f-4e3e-8e52-e651ab01ad5b",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C38",
+      "claim": "There were no changes in MCM2 helicase subunit but an increase in active MCM2p108 levels upon stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no changes in MCM2 helicase subunit but an increase in active MCM2p108 levels upon stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the high-throughput microscopy analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "27c3768d-af4e-45a8-a2cf-993af614d49f",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C39",
+      "claim": "The increase in active MCM2p108 is consistent with no new loading of DNA helicases but de novo activation of already loaded helicase complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with no new loading of DNA helicases but de novo activation of already loaded helicase complexes (Ge et al., 2007; Ibarra et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "8792ad11-27ee-4806-b684-734b96f32090",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C40",
+      "claim": "Significant accumulation of DNA polymerases \u03b1 and \u03b4 on chromatin was observed after aphidicolin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed significant accumulation of DNA polymerases \u03b1 and \u03b4 on chromatin after aphidicolin treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the high-throughput microscopy analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "b24ac16c-c20e-4cf4-bf1f-cbc9b443f2ef",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C41",
+      "claim": "Chromatin motion was unaffected in G1/G2 cells after aphidicolin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that chromatin motion was unaffected in G1/G2, which fit with our prediction, as in G1/G2 there is no active DNA synthesis besides possible DNA repair processes on a limited genomic scale (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the motion analysis after aphidicolin treatment shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "c3348579-49fc-41e2-ac23-917969d6c965",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C42",
+      "claim": "Aphidicolin treatment and inhibition of DNA synthesis led to additional decrease in chromatin motion in S-phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, aphidicolin treatment and inhibition of DNA synthesis led to additional decrease in chromatin motion (Figure 6B) and the chromatin became even more constrained than at the proximity of the active replication sites in S-phase cells (see Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the motion analysis after aphidicolin treatment shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "007bb3c4-d920-48f7-bb5e-99b9c1bd1d94",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C43",
+      "claim": "The chromatin became even more constrained after aphidicolin treatment than at the proximity of the active replication sites in S-phase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, aphidicolin treatment and inhibition of DNA synthesis led to additional decrease in chromatin motion (Figure 6B) and the chromatin became even more constrained than at the proximity of the active replication sites in S-phase cells (see Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative finding from the motion analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "7cad8fe7-f8b7-4000-86fe-4901f982f56c",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C44",
+      "claim": "The accumulation of the helicase and polymerase complexes on chromatin together with the continuous loading of the ssDNA binding protein (RPA) covering the ssDNA strands stiffens the DNA polymer and restricts its diffusional motion.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we propose that the accumulation of the helicase and polymerase complexes on chromatin together with the continuous loading of the ssDNA binding protein (RPA) covering the ssDNA strands stiffens the DNA polymer and restricts its diffusional motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion proposed by the authors based on their experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "0f329711-b119-424a-8f22-e2166741c7b3",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C45",
+      "claim": "Aphidicolin is a tetracyclic antibiotic isolated from Nigrospora sphaerica, which interferes with DNA replication directly by inhibiting DNA polymerases \u03b1, \u03b5, and \u03b4.",
+      "claim_type": "EXPLICIT",
+      "source": "Aphidicolin is a tetracyclic antibiotic isolated from Nigrospora sphaerica, which interferes with DNA replication directly by inhibiting DNA polymerases \u03b1, \u03b5, and \u03b4 (Bambara and Jessee, 1991; Baranovskiy et al., 2014; Byrnes, 1984; Cheng and Kuchta, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the drug used in the study, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "05bce847-a37e-4d6c-b85f-c2e8bb615970",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C46",
+      "claim": "PCNA is a core component of the DNA replication machinery and a marker for cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "PCNA is a core component of the DNA replication machinery and a marker for cell cycle progression (Figure 1A; Chagin et al., 2016; Easwaran et al., 2005; Leonhardt et al., 2000; Moldovan et al., 2007; Prelich et al., 1987).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of PCNA supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "bd1e1f42-5d93-4d31-b002-cd2e4ae81bec",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C47",
+      "claim": "During S-phase, PCNA accumulates within the nucleus at sites of active DNA replication and exhibits a distinct puncta pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "During S-phase, proliferating cell nuclear antigen (PCNA) accumulates within the nucleus at sites of active DNA replication and exhibits a distinct puncta pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of PCNA behavior during S-phase shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "32fe2581-5dce-4272-8dbb-96c806ea564e",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C48",
+      "claim": "During G1 and G2, GFP-PCNA is diffusely distributed throughout the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "During G1 and G2, GFP-PCNA is diffusely distributed throughout the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of PCNA behavior during G1 and G2 shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "98b709d1-4272-4162-bb0f-f1a49cffb500",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C49",
+      "claim": "The genome size of HeLa Kyoto cells is GS = 9.682 \u00b1 0.002 Gbp.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome size of HeLa Kyoto cells is GS = 9.682 \u00b1 0.002 Gbp (Chagin et al., 2016) and for IMR90 fibroblasts the genome size is 6.37 Gbp as measured earlier (Nichols et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement cited from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "5972e073-1d3d-48d3-b4f1-750e9cad5aa7",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C50",
+      "claim": "For IMR90 fibroblasts the genome size is 6.37 Gbp.",
+      "claim_type": "EXPLICIT",
+      "source": "The genome size of HeLa Kyoto cells is GS = 9.682 \u00b1 0.002 Gbp (Chagin et al., 2016) and for IMR90 fibroblasts the genome size is 6.37 Gbp as measured earlier (Nichols et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement cited from a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "89a8733d-2ca9-4da9-b3e6-386e24ead817",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C51",
+      "claim": "The phosphorylated form of MCM2 is the active form for DNA unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously described that the phosphorylated form of MCM2 is the active form for DNA unwinding (Forsburg, 2004; Montagnoli et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "24b0b8a2-ecac-4bea-a2df-54f3824b69dc",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C52",
+      "claim": "PCNA does not associate with DNA polymerase \u03b1, which has a low processivity.",
+      "claim_type": "EXPLICIT",
+      "source": "PCNA does not associate with DNA polymerase \u03b1, which has a low processivity, but it associates with DNA polymerases \u03b5 and \u03b4, which constitute the processive synthetic machinery responsible for most of the duplication of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PCNA and DNA polymerases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "68b12d14-d50e-456e-9f3b-2cf013984fcd",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C53",
+      "claim": "PCNA associates with DNA polymerases \u03b5 and \u03b4, which constitute the processive synthetic machinery responsible for most of the duplication of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "PCNA does not associate with DNA polymerase \u03b1, which has a low processivity, but it associates with DNA polymerases \u03b5 and \u03b4, which constitute the processive synthetic machinery responsible for most of the duplication of the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PCNA and DNA polymerases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "11af8229-9d78-44ed-a0fb-c54c522698b3",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C54",
+      "claim": "The increase in DNA polymerase \u03b1 could lead to the recruitment of alternative polymerase clamp 9-1-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in DNA polymerase \u03b1 could lead to the recruitment of alternative polymerase clamp 9-1-1 as reported before (Michael et al., 2000; Van et al., 2010; Yan and Michael, 2009a; Yan and Michael, 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "8ba7ad88-de48-4946-9e32-39c59bbae215",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C55",
+      "claim": "The labeled DNA domains correspond well to multi-loop chromatin domains corresponding in size to topological associated domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, with our labeling approach, we labeled DNA domains of sizes ranging from 0.5 Mbp to 10 Mbp, with the vast majority corresponding to 0.5 Mbp, which correspond well to multi-loop chromatin domains corresponding in size to topological associated domains (reviewed in Giorgetti and Heard, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DNA quantification results supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "fd46a7f5-f7a2-478a-8230-44f64ce59dbd",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C56",
+      "claim": "Firing of origins of replication by the activation of DNA helicase complexes followed by the loading of synthetic polymerase complexes tracks chromatin compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In that sense, firing of origins of replication by the activation of DNA helicase complexes followed by the loading of synthetic polymerase complexes tracks chromatin compaction and upon DNA duplication the focal chromatin organization at multiple hierarchical levels is preserved and can be detected over several cell generations (Cremer et al., 2020; Jackson and Pombo, 1998; Sadoni et al., 2004; Sparvoli et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "9eae8626-ec13-42fd-abc6-e6f844fa80ca",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C57",
+      "claim": "Upon DNA duplication the focal chromatin organization at multiple hierarchical levels is preserved and can be detected over several cell generations.",
+      "claim_type": "EXPLICIT",
+      "source": "In that sense, firing of origins of replication by the activation of DNA helicase complexes followed by the loading of synthetic polymerase complexes tracks chromatin compaction and upon DNA duplication the focal chromatin organization at multiple hierarchical levels is preserved and can be detected over several cell generations (Cremer et al., 2020; Jackson and Pombo, 1998; Sadoni et al., 2004; Sparvoli et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "d144f43f-5e4d-47cc-b204-a9f055aa854b",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C58",
+      "claim": "Genome replication is the only DNA metabolic process that encompasses the entire genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, genome replication is the only DNA metabolic process that encompasses the entire genome, thus ensuring the preservation of the genetic material upon cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about genome replication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "d95111b4-5f01-459a-a364-59a633c46d9e",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C59",
+      "claim": "The eukaryotic nucleus is a complex subcellular organelle where DNA metabolism, including its replication, repair, and transcription, occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic nucleus is a complex subcellular organelle where DNA metabolism, including its replication, repair, and transcription, occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the nucleus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "904fa8f2-1e32-49c0-af90-bb30fc675b0c",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C60",
+      "claim": "Eukaryotic DNA is organized in the nuclear space by interactions with histones and architectural proteins to form a hierarchy of domains and compartments of the interphase chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic DNA is organized in the nuclear space by interactions with histones and architectural proteins to form a hierarchy of domains and compartments of the interphase chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about chromatin organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "419fd00c-97a5-41ae-9954-207ffaa8da7a",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C61",
+      "claim": "The 4D organization of the chromatin inherently includes its physical properties as a long polymer.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the current paradigm, the 4D organization of the chromatin inherently includes its physical properties as a long polymer (Esposito et al., 2021; Esposito et al., 2019), while stochastic thermodynamically driven events are likely to play a key role in the domain organization of the chromatin (Conte et al., 2020; Shin and Brangwynne, 2017) and in the regulation of genomic processes (Hnisz et al., 2017; Kilic et al., 2019; Laghmach et al., 2021; Nozaki et al., 2017; Spegg and Altmeyer, 2021; Uchino et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "bc32dec4-f373-4060-90fd-19bca2708a64",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C62",
+      "claim": "Stochastic thermodynamically driven events are likely to play a key role in the domain organization of the chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the current paradigm, the 4D organization of the chromatin inherently includes its physical properties as a long polymer (Esposito et al., 2021; Esposito et al., 2019), while stochastic thermodynamically driven events are likely to play a key role in the domain organization of the chromatin (Conte et al., 2020; Shin and Brangwynne, 2017) and in the regulation of genomic processes (Hnisz et al., 2017; Kilic et al., 2019; Laghmach et al., 2021; Nozaki et al., 2017; Spegg and Altmeyer, 2021; Uchino et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "b8077b8e-0cc6-4da9-bbdd-286b783235a9",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C63",
+      "claim": "Stochastic thermodynamically driven events are likely to play a key role in the regulation of genomic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the current paradigm, the 4D organization of the chromatin inherently includes its physical properties as a long polymer (Esposito et al., 2021; Esposito et al., 2019), while stochastic thermodynamically driven events are likely to play a key role in the domain organization of the chromatin (Conte et al., 2020; Shin and Brangwynne, 2017) and in the regulation of genomic processes (Hnisz et al., 2017; Kilic et al., 2019; Laghmach et al., 2021; Nozaki et al., 2017; Spegg and Altmeyer, 2021; Uchino et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "40f0306c-7692-4c74-9945-ac2e36e896df",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C64",
+      "claim": "DNA replication is a highly conserved energy-dependent process occurring in S-phase of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA replication is a highly conserved energy-dependent process occurring in S-phase of the cell cycle, when chromatin structures undergo extensive reorganization to facilitate DNA synthesis (Vincent et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "27361baa-6998-41be-82a6-45d7b624d261",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C65",
+      "claim": "During S-phase, chromatin structures undergo extensive reorganization to facilitate DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA replication is a highly conserved energy-dependent process occurring in S-phase of the cell cycle, when chromatin structures undergo extensive reorganization to facilitate DNA synthesis (Vincent et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "0d391647-4dd5-4a0b-b929-e40f3d793317",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C66",
+      "claim": "The removal of RNA polymerase II from chromatin relaxes chromatin and increases its mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been also shown that the removal of RNA polymerase II from chromatin relaxes chromatin and increases its mobility (Babokhov et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "14070de1-d1d1-4a47-b971-c29a6b43fe1e",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "claim_id": "C67",
+      "claim": "The coherent motion of chromatin extended beyond individual chromosomes, suggesting mechanical coupling between chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This coherent motion extended beyond individual chromosomes, suggesting mechanical coupling between chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation from a cited study about chromatin motion.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3e474d2e-9f21-4a3e-bf5a-c031f4038346",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a Cy3-dUTP labeling method to directly label chromatin in an unbiased manner during S-phase. The labeled chromatin structures were stable over cell cycle progression, and DNA quantification revealed that labeled domains ranged from 0.5 to 10 Mbp, with the majority at ~0.5 Mbp, corresponding to topologically associated domains (TADs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 and C55 describe the labeling methodology and quantification of labeled chromatin domains. The method is well-established (C16 with citations), stability is demonstrated (C17), and quantification is provided with specific measurements (C18-C19). The interpretation that these correspond to TADs (C55) is reasonable given the size range and is supported by citation. The methodology appears sound and the measurements are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Chromatin motion decreases during S-phase compared to G1/G2 phases in both HeLa and IMR90 cells. The effect was stronger in IMR90 cells. Quantitative measurements showed diffusion rates dropped from D=133.6 to 105.6 \u03bcm\u00b2/s\u00d710\u207b\u2075 in HeLa and from D=86.5 to 43.7 \u03bcm\u00b2/s\u00d710\u207b\u2075 in IMR90 during S-phase. The motion exhibited anomalous subdiffusion with \u03b1 values between 0.1 and 0.9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C26 present the core finding that chromatin motion is constrained during S-phase. The measurements are quantitative (C23-C24), the motion type is characterized (C25), and the anomalous diffusion is consistent with prior literature (C26). The data are presented with appropriate controls (fixed cells) and the effect is observed in two different cell types, strengthening the conclusion. Statistical significance is implied but not explicitly stated with p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "7513ccbb-3f1d-4dbe-9dc0-723e72d9b86c",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chromatin within 1 \u03bcm center-to-center distance of active replication sites (marked by PCNA) exhibited more restricted motion compared to chromatin outside this distance, with the effect vanishing at distances greater than 1 \u03bcm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 describes a spatial correlation between chromatin motion restriction and proximity to active replication sites. The proximity analysis is methodologically sound (described in methods and Figure 4), and the 1 \u03bcm distance threshold is clearly defined. This finding provides mechanistic insight into the S-phase motion restriction observed in the previous result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "013f1509-fdea-4ca4-a241-9f6b65e49177",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Aphidicolin treatment rapidly inhibited DNA synthesis, with 99% of cells showing inhibition within 30 minutes. Upon treatment, PCNA dissociated from chromatin while RPA accumulated at replication sites, as demonstrated by both live cell imaging and high-throughput microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31, C36-C37 establish the effectiveness of aphidicolin treatment and characterize the immediate molecular consequences. The quantification of DNA synthesis inhibition is rigorous (99% within 30 min, C29), and the PCNA dissociation and RPA accumulation are demonstrated by multiple complementary methods (live imaging, western blot, high-throughput microscopy). These observations are consistent with prior literature (C30 cites supporting studies).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "7fb3473c-3397-47bc-abf4-c1e10348cbff",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Upon aphidicolin treatment, MCM2 helicase subunit levels on chromatin remained unchanged, but phosphorylated MCM2 (MCM2p108) levels increased, indicating activation of already-loaded helicase complexes rather than new loading. The phosphorylated form is the active form for DNA unwinding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33, C38-C39, and C51 describe helicase behavior upon replication stress. The distinction between total MCM2 and phosphorylated MCM2 is important and is demonstrated by both western blot (C32-C33) and high-throughput microscopy (C38). The interpretation that this reflects activation rather than new loading (C39) is reasonable and supported by citations. The knowledge that phosphorylated MCM2 is the active form (C51) is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "fc60cb85-51f9-4f87-a6b2-60c668bfbfa2",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DNA polymerase \u03b1 accumulated on chromatin upon aphidicolin treatment, while processive DNA polymerases \u03b4 and \u03b5 showed minor or no changes. This differential behavior is consistent with PCNA's selective association with polymerases \u03b4 and \u03b5 but not \u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 and C40 describe differential polymerase behavior upon stress, demonstrated by both western blot and immunofluorescence. The observation is internally consistent across methods. Claims C52-C53 provide mechanistic context based on established knowledge about PCNA-polymerase interactions. The differential accumulation of polymerase \u03b1 versus \u03b4/\u03b5 is a key observation supporting the authors' model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "efc7410e-8442-4a91-8aee-53c5990942be",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Aphidicolin treatment did not affect chromatin motion in G1/G2 cells but caused additional decrease in chromatin motion during S-phase, making chromatin even more constrained than at active replication sites in untreated S-phase cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 present the key experimental result that inhibiting DNA synthesis paradoxically further restricts chromatin motion. The G1/G2 control (C41) is appropriate and shows specificity to S-phase. The comparison to proximity of active replication sites (C43) is particularly important as it demonstrates that stalled replisomes are more constraining than active ones. This is the central finding supporting the authors' main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "97d20f2f-fbd9-4403-bd16-86fa142cd5b2",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that replisome loading, rather than catalytic DNA synthesis activity, reduces chromatin dynamics during S-phase. Specifically, the accumulation of helicase and polymerase complexes together with continuous RPA loading on ssDNA stiffens the DNA polymer and restricts its diffusional motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C44 present the main mechanistic conclusion of the study. This conclusion is well-supported by the experimental evidence: (1) chromatin motion is restricted near active replication sites (C27), (2) inhibiting DNA synthesis while maintaining helicase activity and increasing polymerase loading further restricts motion (C42-C43), and (3) the molecular characterization shows accumulation of helicases, polymerases, and RPA upon synthesis inhibition (C32-C40). The logic connecting observations to conclusion is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "d47b088c-89b5-4e91-8998-6607dafaecb0",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors provide extensive background on chromatin dynamics, including prior findings on anomalous diffusion, effects of transcription and DNA damage on chromatin mobility, and previous observations of S-phase chromatin constraint in yeast and mammalian cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C6-C15, C26, C61-C67) represent literature review and established knowledge, all supported by appropriate citations. They provide context for the current study but are not novel findings. The authors accurately represent prior work, though some findings are contradictory (C8 vs C9), which the authors acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "5494e373-9bcb-4226-90a5-43201a930668",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors describe established methodological and biological knowledge including aphidicolin mechanism of action, PCNA as a replication marker and its cell cycle-dependent localization, genome sizes of cell lines used, and fundamental properties of the nucleus and genome replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 and C58-C60 represent established knowledge and methodological details, all appropriately cited or representing common knowledge. These provide necessary context and validation of experimental approaches but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "7a962b0b-0b6b-4ca9-a414-b8ab197d1943",
+      "content_id": "dc2ba1a9-51c2-4236-b996-ed4aafd71213",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss potential mechanisms and implications, including possible recruitment of alternative polymerase clamp 9-1-1 due to increased polymerase \u03b1, and the relationship between replication origin firing and chromatin organization preservation across cell generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 is explicitly speculative ('could lead to'), supported by citations but not tested in this study. Claims C56-C57 are cited from prior work and provide context but are not directly tested here. These represent reasonable speculation and literature context but lack direct experimental support in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "6ee3ea97-ef58-40a7-9eed-484d1053aa73",
+      "content_id": "2723625d-dc20-4840-ad9e-78a141f53702",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors used Cy3-dUTP labeling to mark newly synthesized DNA during S-phase, labeling chromatin domains ranging from 0.5 to 10 Mbp (with the majority at 0.5 Mbp), which they interpret as corresponding to topologically associated domains. The labeled structures were stable over cell cycles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the labeling method, noting 'This work is based on previous work published in 2015...in which the labeling method was demonstrated to be sound.' The technology and methods are described as 'solid' with no concerns raised about the labeling approach or DNA quantification.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "da9ffc50-a782-48ce-bc93-076820f9ecf4",
+      "content_id": "2723625d-dc20-4840-ad9e-78a141f53702",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors report that chromatin motion is constrained during S-phase compared to G1/G2 phases in both HeLa and IMR90 cells, with quantified diffusion rates showing significant decreases during S-phase. The effect was stronger in IMR90 cells, and chromatin exhibited anomalous subdiffusion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers identify this as a major conclusion, stating 'The authors report reduced chromatin mobility in S relative to G1 phase.' The revised manuscript 'included data from a diploid cell line IMR90...to strengthen the conclusions,' and reviewers note 'Overall, quality of the work is substantially improved,' indicating acceptance of these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "52df5209-08bd-4a2a-bb42-c06545ad807a",
+      "content_id": "2723625d-dc20-4840-ad9e-78a141f53702",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Chromatin in proximity to active replication sites (within 1 \u03bcm center-to-center distance) showed more restricted motion, with this effect vanishing at greater distances.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers list 'Restricted chromatin motion occurred at sites in proximity to DNA replication sites' as one of the major conclusions without raising concerns. This finding is treated as an accepted result supporting the spatial relationship between replication and chromatin dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "b19a69b7-3905-4f83-88a8-1aff708389d7",
+      "content_id": "2723625d-dc20-4840-ad9e-78a141f53702",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Upon aphidicolin treatment to inhibit DNA synthesis, the authors observed rapid inhibition of replication (99% of cells within 30 min), PCNA dissociation from chromatin, RPA accumulation, increased MCM2 phosphorylation (indicating helicase activation), and increased loading of DNA polymerase \u03b1 while polymerases \u03b4 and \u03b5 showed minimal changes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these biochemical observations. The description of aphidicolin effects and the molecular changes at replisomes are treated as established findings that support the main conclusions. No concerns are raised about the characterization of replisome component behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "b95ea4c0-e2aa-4317-a610-fe0d19271de6",
+      "content_id": "2723625d-dc20-4840-ad9e-78a141f53702",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors' key finding is that aphidicolin treatment, which inhibits DNA synthesis, paradoxically led to further restriction of chromatin motion in S-phase (beyond that seen during normal replication), while G1/G2 motion was unaffected. They conclude that replisome loading, not catalytic activity, restricts chromatin dynamics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly identify 'Chromatin motion was restricted by the loading of replisomes, independent of DNA synthesis' as a major conclusion. This counterintuitive finding\u2014that blocking synthesis increases constraint\u2014is accepted without challenge and represents the central mechanistic insight of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c670211c-758e-44a3-b8ba-29e3946c48b0",
+      "result_id": "3e474d2e-9f21-4a3e-bf5a-c031f4038346"
+    },
+    {
+      "claim_id": "9801468a-5b20-45e8-a533-f6f7e58b4296",
+      "result_id": "3e474d2e-9f21-4a3e-bf5a-c031f4038346"
+    },
+    {
+      "claim_id": "6ad45688-4c83-4d26-b5d6-264ec31bd9c3",
+      "result_id": "3e474d2e-9f21-4a3e-bf5a-c031f4038346"
+    },
+    {
+      "claim_id": "65b11062-66fc-4bf2-b358-147ed55280b3",
+      "result_id": "3e474d2e-9f21-4a3e-bf5a-c031f4038346"
+    },
+    {
+      "claim_id": "8ba7ad88-de48-4946-9e32-39c59bbae215",
+      "result_id": "3e474d2e-9f21-4a3e-bf5a-c031f4038346"
+    },
+    {
+      "claim_id": "dfd1f308-efc6-4b04-85b2-70489332ba3f",
+      "result_id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26"
+    },
+    {
+      "claim_id": "45b26789-d3b7-468a-954d-7797631ae098",
+      "result_id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26"
+    },
+    {
+      "claim_id": "51cf2b74-2ce6-4f1e-a876-124cb3b71595",
+      "result_id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26"
+    },
+    {
+      "claim_id": "1cd08647-1418-4ba3-ac8e-3af540381447",
+      "result_id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26"
+    },
+    {
+      "claim_id": "bd385029-1a16-4589-9982-c6250b934fa4",
+      "result_id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26"
+    },
+    {
+      "claim_id": "82d3e69b-1c88-4e2b-954e-a531870ba48d",
+      "result_id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26"
+    },
+    {
+      "claim_id": "f4c64417-383a-4e8c-9ab5-6face9399073",
+      "result_id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26"
+    },
+    {
+      "claim_id": "f3dfddcf-4957-4817-8f8c-857a3c0d6ac7",
+      "result_id": "7513ccbb-3f1d-4dbe-9dc0-723e72d9b86c"
+    },
+    {
+      "claim_id": "6d45f25f-c88c-442e-ad08-39d508fdc176",
+      "result_id": "013f1509-fdea-4ca4-a241-9f6b65e49177"
+    },
+    {
+      "claim_id": "5f6208d0-8619-40f0-a124-fc3630ba61b0",
+      "result_id": "013f1509-fdea-4ca4-a241-9f6b65e49177"
+    },
+    {
+      "claim_id": "e6eff49e-c02a-4561-bee2-0008cfdd7e9d",
+      "result_id": "013f1509-fdea-4ca4-a241-9f6b65e49177"
+    },
+    {
+      "claim_id": "de5f399a-78e3-4b54-b7fd-ea82761a789b",
+      "result_id": "013f1509-fdea-4ca4-a241-9f6b65e49177"
+    },
+    {
+      "claim_id": "5de8a46d-26d5-4e6d-949f-40442c782d92",
+      "result_id": "013f1509-fdea-4ca4-a241-9f6b65e49177"
+    },
+    {
+      "claim_id": "dda7bb0f-794e-49d5-8242-8bb751e842fd",
+      "result_id": "013f1509-fdea-4ca4-a241-9f6b65e49177"
+    },
+    {
+      "claim_id": "07c06af8-b942-43ea-a776-a3b49baa5bb2",
+      "result_id": "7fb3473c-3397-47bc-abf4-c1e10348cbff"
+    },
+    {
+      "claim_id": "6610571f-20d7-4a0d-8841-b49b2f8e6e0e",
+      "result_id": "7fb3473c-3397-47bc-abf4-c1e10348cbff"
+    },
+    {
+      "claim_id": "8a8c9bdd-ff6f-4e3e-8e52-e651ab01ad5b",
+      "result_id": "7fb3473c-3397-47bc-abf4-c1e10348cbff"
+    },
+    {
+      "claim_id": "27c3768d-af4e-45a8-a2cf-993af614d49f",
+      "result_id": "7fb3473c-3397-47bc-abf4-c1e10348cbff"
+    },
+    {
+      "claim_id": "89a8733d-2ca9-4da9-b3e6-386e24ead817",
+      "result_id": "7fb3473c-3397-47bc-abf4-c1e10348cbff"
+    },
+    {
+      "claim_id": "19c7c3b9-21e1-429c-a833-ca96000aa79e",
+      "result_id": "fc60cb85-51f9-4f87-a6b2-60c668bfbfa2"
+    },
+    {
+      "claim_id": "21c940db-b0a7-464d-92c1-f2046a27414a",
+      "result_id": "fc60cb85-51f9-4f87-a6b2-60c668bfbfa2"
+    },
+    {
+      "claim_id": "8792ad11-27ee-4806-b684-734b96f32090",
+      "result_id": "fc60cb85-51f9-4f87-a6b2-60c668bfbfa2"
+    },
+    {
+      "claim_id": "24b0b8a2-ecac-4bea-a2df-54f3824b69dc",
+      "result_id": "fc60cb85-51f9-4f87-a6b2-60c668bfbfa2"
+    },
+    {
+      "claim_id": "68b12d14-d50e-456e-9f3b-2cf013984fcd",
+      "result_id": "fc60cb85-51f9-4f87-a6b2-60c668bfbfa2"
+    },
+    {
+      "claim_id": "b24ac16c-c20e-4cf4-bf1f-cbc9b443f2ef",
+      "result_id": "efc7410e-8442-4a91-8aee-53c5990942be"
+    },
+    {
+      "claim_id": "c3348579-49fc-41e2-ac23-917969d6c965",
+      "result_id": "efc7410e-8442-4a91-8aee-53c5990942be"
+    },
+    {
+      "claim_id": "007bb3c4-d920-48f7-bb5e-99b9c1bd1d94",
+      "result_id": "efc7410e-8442-4a91-8aee-53c5990942be"
+    },
+    {
+      "claim_id": "715165f5-6080-406b-9cf5-8b10805d4b16",
+      "result_id": "97d20f2f-fbd9-4403-bd16-86fa142cd5b2"
+    },
+    {
+      "claim_id": "7cad8fe7-f8b7-4000-86fe-4901f982f56c",
+      "result_id": "97d20f2f-fbd9-4403-bd16-86fa142cd5b2"
+    },
+    {
+      "claim_id": "632f48fb-c494-4387-a657-63f411f56252",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "9a9bdc8d-71b1-416b-b5a4-926d965455a1",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "071ddf3b-09a4-4c30-b3ed-a115916db569",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "306e6c46-6b65-432f-9960-f606ee072cef",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "5bcaf2bc-22a1-40ac-95ec-f1589016b8b2",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "08560045-c10a-4aad-af51-9a5b65bfc796",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "fd640607-637b-4c61-9f94-edb47ff2ab1b",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "4afc4229-9f7c-4000-9049-e06c2fc03213",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "45248071-15ce-4241-aea0-1c7da0285b93",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "ca1302a2-c084-4e46-b468-d7924354a511",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "33463485-b825-43f8-a0c5-a93374034bce",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "f4c64417-383a-4e8c-9ab5-6face9399073",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "419fd00c-97a5-41ae-9954-207ffaa8da7a",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "bc32dec4-f373-4060-90fd-19bca2708a64",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "b8077b8e-0cc6-4da9-bbdd-286b783235a9",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "40f0306c-7692-4c74-9945-ac2e36e896df",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "27361baa-6998-41be-82a6-45d7b624d261",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "0d391647-4dd5-4a0b-b929-e40f3d793317",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "14070de1-d1d1-4a47-b971-c29a6b43fe1e",
+      "result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0"
+    },
+    {
+      "claim_id": "0f329711-b119-424a-8f22-e2166741c7b3",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "05bce847-a37e-4d6c-b85f-c2e8bb615970",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "bd1e1f42-5d93-4d31-b002-cd2e4ae81bec",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "32fe2581-5dce-4272-8dbb-96c806ea564e",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "98b709d1-4272-4162-bb0f-f1a49cffb500",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "5972e073-1d3d-48d3-b4f1-750e9cad5aa7",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "d144f43f-5e4d-47cc-b204-a9f055aa854b",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "d95111b4-5f01-459a-a364-59a633c46d9e",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "904fa8f2-1e32-49c0-af90-bb30fc675b0c",
+      "result_id": "5494e373-9bcb-4226-90a5-43201a930668"
+    },
+    {
+      "claim_id": "11af8229-9d78-44ed-a0fb-c54c522698b3",
+      "result_id": "7a962b0b-0b6b-4ca9-a414-b8ab197d1943"
+    },
+    {
+      "claim_id": "fd46a7f5-f7a2-478a-8230-44f64ce59dbd",
+      "result_id": "7a962b0b-0b6b-4ca9-a414-b8ab197d1943"
+    },
+    {
+      "claim_id": "9eae8626-ec13-42fd-abc6-e6f844fa80ca",
+      "result_id": "7a962b0b-0b6b-4ca9-a414-b8ab197d1943"
+    },
+    {
+      "claim_id": "c670211c-758e-44a3-b8ba-29e3946c48b0",
+      "result_id": "6ee3ea97-ef58-40a7-9eed-484d1053aa73"
+    },
+    {
+      "claim_id": "9801468a-5b20-45e8-a533-f6f7e58b4296",
+      "result_id": "6ee3ea97-ef58-40a7-9eed-484d1053aa73"
+    },
+    {
+      "claim_id": "6ad45688-4c83-4d26-b5d6-264ec31bd9c3",
+      "result_id": "6ee3ea97-ef58-40a7-9eed-484d1053aa73"
+    },
+    {
+      "claim_id": "65b11062-66fc-4bf2-b358-147ed55280b3",
+      "result_id": "6ee3ea97-ef58-40a7-9eed-484d1053aa73"
+    },
+    {
+      "claim_id": "8ba7ad88-de48-4946-9e32-39c59bbae215",
+      "result_id": "6ee3ea97-ef58-40a7-9eed-484d1053aa73"
+    },
+    {
+      "claim_id": "33febe34-5bad-4c3f-af05-dfc1926ccfb9",
+      "result_id": "da9ffc50-a782-48ce-bc93-076820f9ecf4"
+    },
+    {
+      "claim_id": "dfd1f308-efc6-4b04-85b2-70489332ba3f",
+      "result_id": "da9ffc50-a782-48ce-bc93-076820f9ecf4"
+    },
+    {
+      "claim_id": "45b26789-d3b7-468a-954d-7797631ae098",
+      "result_id": "da9ffc50-a782-48ce-bc93-076820f9ecf4"
+    },
+    {
+      "claim_id": "51cf2b74-2ce6-4f1e-a876-124cb3b71595",
+      "result_id": "da9ffc50-a782-48ce-bc93-076820f9ecf4"
+    },
+    {
+      "claim_id": "1cd08647-1418-4ba3-ac8e-3af540381447",
+      "result_id": "da9ffc50-a782-48ce-bc93-076820f9ecf4"
+    },
+    {
+      "claim_id": "bd385029-1a16-4589-9982-c6250b934fa4",
+      "result_id": "da9ffc50-a782-48ce-bc93-076820f9ecf4"
+    },
+    {
+      "claim_id": "82d3e69b-1c88-4e2b-954e-a531870ba48d",
+      "result_id": "da9ffc50-a782-48ce-bc93-076820f9ecf4"
+    },
+    {
+      "claim_id": "f3dfddcf-4957-4817-8f8c-857a3c0d6ac7",
+      "result_id": "52df5209-08bd-4a2a-bb42-c06545ad807a"
+    },
+    {
+      "claim_id": "4f7a26b8-f452-4c69-b0db-ea69358a8aeb",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "edcedb97-8fb9-4198-8409-5cb6584028e5",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "6d45f25f-c88c-442e-ad08-39d508fdc176",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "5f6208d0-8619-40f0-a124-fc3630ba61b0",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "e6eff49e-c02a-4561-bee2-0008cfdd7e9d",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "de5f399a-78e3-4b54-b7fd-ea82761a789b",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "07c06af8-b942-43ea-a776-a3b49baa5bb2",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "6610571f-20d7-4a0d-8841-b49b2f8e6e0e",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "19c7c3b9-21e1-429c-a833-ca96000aa79e",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "21c940db-b0a7-464d-92c1-f2046a27414a",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "5de8a46d-26d5-4e6d-949f-40442c782d92",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "dda7bb0f-794e-49d5-8242-8bb751e842fd",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "8a8c9bdd-ff6f-4e3e-8e52-e651ab01ad5b",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "27c3768d-af4e-45a8-a2cf-993af614d49f",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "8792ad11-27ee-4806-b684-734b96f32090",
+      "result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7"
+    },
+    {
+      "claim_id": "b24ac16c-c20e-4cf4-bf1f-cbc9b443f2ef",
+      "result_id": "b95ea4c0-e2aa-4317-a610-fe0d19271de6"
+    },
+    {
+      "claim_id": "c3348579-49fc-41e2-ac23-917969d6c965",
+      "result_id": "b95ea4c0-e2aa-4317-a610-fe0d19271de6"
+    },
+    {
+      "claim_id": "007bb3c4-d920-48f7-bb5e-99b9c1bd1d94",
+      "result_id": "b95ea4c0-e2aa-4317-a610-fe0d19271de6"
+    },
+    {
+      "claim_id": "7cad8fe7-f8b7-4000-86fe-4901f982f56c",
+      "result_id": "b95ea4c0-e2aa-4317-a610-fe0d19271de6"
+    },
+    {
+      "claim_id": "715165f5-6080-406b-9cf5-8b10805d4b16",
+      "result_id": "b95ea4c0-e2aa-4317-a610-fe0d19271de6"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b53e35e3-1b34-4eb6-8248-55d9ae0489df",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "3e474d2e-9f21-4a3e-bf5a-c031f4038346",
+      "peer_result_id": "6ee3ea97-ef58-40a7-9eed-484d1053aa73",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on labeling methodology (C16-C19, C55). Both evaluations find the method sound and well-established. OpenEval emphasizes methodological details and internal consistency, while peer reviewers explicitly reference the 2015 validation and describe the technology as 'solid'.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "a39e203e-5104-4afc-827b-e295cfaa06a8",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "7513ccbb-3f1d-4dbe-9dc0-723e72d9b86c",
+      "peer_result_id": "52df5209-08bd-4a2a-bb42-c06545ad807a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on spatial correlation between chromatin motion restriction and replication sites (C27). Both evaluations accept this finding as supported. OpenEval highlights methodological soundness of proximity analysis, while peer reviewers list it as an accepted major conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "c351e9ff-4264-4478-ab37-1c1ffe34f3a6",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "18e7df1f-ab35-49e8-992a-bc3d9b986a26",
+      "peer_result_id": "da9ffc50-a782-48ce-bc93-076820f9ecf4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on S-phase chromatin motion constraint (C20-C25). Both find the core observation supported. OpenEval notes quantitative measurements and two cell types but mentions lack of explicit p-values. Peer reviewers acknowledge the addition of IMR90 diploid cells strengthened conclusions and note 'substantially improved' quality. Peer result also includes C2 not in OpenEval result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "6c4ee690-5445-4802-985f-5f4d9d7bb7b2",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "efc7410e-8442-4a91-8aee-53c5990942be",
+      "peer_result_id": "b95ea4c0-e2aa-4317-a610-fe0d19271de6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the key experimental finding that synthesis inhibition further restricts motion (C41-C43). OpenEval R7 focuses on the experimental observation and comparison to active replication. Peer R5 also includes the mechanistic conclusion (C44, C5) and frames this as the central insight about replisome loading being independent of DNA synthesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "ee3189d4-48a9-42bd-bbaf-a099523a3fcb",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "97d20f2f-fbd9-4403-bd16-86fa142cd5b2",
+      "peer_result_id": "b95ea4c0-e2aa-4317-a610-fe0d19271de6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the main mechanistic conclusion (C5, C44) that replisome loading constrains chromatin independent of synthesis. OpenEval R8 provides detailed logical chain connecting observations to conclusion. Peer R5 also includes experimental findings (C41-C43) and identifies this as a major accepted conclusion about the counterintuitive synthesis-independence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "3a2e191d-955c-436e-99eb-5a4a1bebe6f1",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "013f1509-fdea-4ca4-a241-9f6b65e49177",
+      "peer_result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address aphidicolin effects and molecular consequences (C28-C31, C36-C37 overlap). OpenEval R4 emphasizes quantification rigor and complementary methods. Peer R4 covers broader molecular characterization including helicase and polymerase behavior (C32-C35, C38-C40) and treats all biochemical observations as established without challenge. Peer result includes C3-C4 not in OpenEval result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "5cc24eb5-8341-4f54-ae13-6f0bbb201088",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7fb3473c-3397-47bc-abf4-c1e10348cbff",
+      "peer_result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on helicase behavior (C32-C33, C38-C39). OpenEval R5 focuses specifically on MCM2 phosphorylation and helicase activation interpretation. Peer R4 includes these claims within broader acceptance of all replisome molecular characterization without specific commentary on helicase findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "2f37cf59-976b-45bc-8c52-9c35944f65d9",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "fc60cb85-51f9-4f87-a6b2-60c668bfbfa2",
+      "peer_result_id": "b19a69b7-3905-4f83-88a8-1aff708389d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on polymerase behavior (C34-C35, C40). OpenEval R6 specifically addresses differential polymerase accumulation and PCNA interactions as key supporting observations. Peer R4 includes these within general acceptance of molecular characterization but does not specifically highlight polymerase findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "031c1697-fcc8-4161-bee9-379c4290533d",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "d47b088c-89b5-4e91-8998-6607dafaecb0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R9 addresses literature review and established knowledge claims (C1, C6-C15, C26, C61-C67). No corresponding peer review evaluation found. These background claims were not specifically evaluated by peer reviewers as they focus on novel findings rather than literature context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "6386247a-35ee-4597-9e71-57836de52531",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "5494e373-9bcb-4226-90a5-43201a930668",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R10 addresses established knowledge and methodological context (C45-C50, C58-C60). No corresponding peer review evaluation found. Peer reviewers did not separately evaluate these background and methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    },
+    {
+      "id": "9b0ff120-fcb0-49f4-b4cb-293a51508ca2",
+      "submission_id": "49a0cad3-0fe7-4efe-9ca4-2373eca6c21e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "7a962b0b-0b6b-4ca9-a414-b8ab197d1943",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R11 identifies speculative claims and cited context (C54, C56-C57) as UNCERTAIN due to lack of direct experimental testing. No corresponding peer review evaluation found. Peer reviewers did not specifically address these speculative or contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:15:24.528669Z"
+    }
+  ]
+}

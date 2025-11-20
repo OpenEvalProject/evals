@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Geno-DT accurately predicted VT circuit locations in both GE and PKP2 patient groups with high sensitivity, specificity, and accuracy. For GE patients, Geno-DT achieved 100% sensitivity, 94% specificity, and 96% accuracy, capturing all VT locations except one on the mid lateral RV wall. For PKP2 patients, it achieved 86% sensitivity, 90% specificity, and 89% accuracy, missing only three VT locations (one basal anterior, two basal posterior).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 report specific performance metrics that are validated by the detailed results in C42-C45. The study compared Geno-DT predictions to clinical EPS observations in a blinded manner (C105), providing appropriate validation. The high correlation (r=0.99) between simulated and clinical VTs (C41) further supports the predictive accuracy. Sample sizes are small (n=8 per group, C12) but appropriate for this rare disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C70",
+      "C71"
+    ],
+    "result": "The study demonstrates that structural remodeling plays a more important role in VT arrhythmogenesis in GE patients (r=0.91-0.92 correlation with fibrosis) compared to PKP2 patients (r=0.65-0.70 correlation), suggesting that additional electrophysiological factors beyond structural remodeling contribute to VT in PKP2 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C39-C40) provides quantitative support for the mechanistic conclusions (C4, C70-C71). The high correlation in GE patients versus moderate correlation in PKP2 patients is statistically meaningful and logically supports the interpretation that PKP2-specific EP remodeling contributes to VT beyond structural factors. This is further validated by the genotype-mismatch experiments (C8 results).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "In PKP2 patients, slowed conduction velocity (due to reduced Vmax), extended refractoriness, and altered restitution properties contribute to VT circuit formation through mechanisms involving wavefronts of higher curvature, source-sink mismatch, and conduction block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic explanation is supported by computational observations (C46-C47) and restitution analysis (C115-C117). The reduced Vmax in PKP2 models is linked to experimental data (C48, citing Sato et al., 2009) and the relationship between Vmax and conduction velocity is supported by prior literature (C46, citing Issa et al., 2019). Figure 9 provides detailed visualization of these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C48",
+      "C49",
+      "C50",
+      "C84",
+      "C85"
+    ],
+    "result": "A novel PKP2 cell model was developed by modifying the GE model based on experimental data, incorporating 70% reduction in INa conductance, 50% reduction in ICaL, fivefold increase in IbCa, and altered calcium handling properties that recapitulate experimental observations from PKP2-deficient cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PKP2 model development is well-documented with specific parameter modifications (C48-C50) based on experimental data from Sato et al., 2009 and Lyon et al., 2021 (C84). The resulting cellular properties (C20-C27) are quantitatively reported and the model is stated to recapitulate experimental observations (C85). However, direct validation against independent experimental data is not shown, only consistency with the data used for parameterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The PKP2 cell model exhibits distinct restitution properties compared to the GE model, with a lower maximum restitution slope (0.59 vs 1.16), reduced APD shortening at fast pacing rates (208 ms vs 148 ms at loss-of-capture), and more triangular action potentials, indicating reduced ability to adapt to rapid pacing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The restitution analysis is quantitatively reported (C28-C29, C67-C68) with clear methodology described (Materials and Methods). The interpretation (C69) logically follows from the data. Figure 3 provides visual support. The restitution properties are mechanistically linked to the calcium handling modifications in the PKP2 model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Across the entire ARVC cohort, diffuse fibrosis and dense scar were most abundant at the base of the RV and least abundant at the apex, with significant differences between basal (14.01\u00b14.37% diffuse fibrosis, 5.51\u00b12.71% dense scar), mid (5.41\u00b12.61%, 1.74\u00b11.99%), and apical (1.13\u00b11.71%, 0.42\u00b10.90%) regions (p<0.0001 and p<0.05 respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural analysis is quantitatively reported with appropriate statistical testing (C31-C32). The findings are based on LGE-CMR reconstruction using validated methods (C97). Sample size is adequate for this analysis (n=16). Figure 4A-B provides visual support. The lack of difference between anterior/lateral/posterior regions (C33) is also appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Different ARVC genotypes exhibit distinct distributions of fibrotic remodeling. GE patients had significantly more diffuse fibrosis in basal anterior (6.07\u00b13.18% vs 1.85\u00b10.017%, p<0.01) and lateral walls (5.77\u00b12.34% vs 3.24\u00b11.40%, p<0.05), while PKP2 patients had more in the basal posterior wall (7.73\u00b14.38% vs 3.36\u00b12.92%, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genotype-specific differences are quantitatively reported with statistical testing (C34-C36). The conclusion that different genotypes exhibit distinct distributions (C112) is supported by the data. However, the sample size per group is small (n=8), and the finding for PKP2 patients differs from prior literature expectations, which the authors acknowledge (C110-C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C113"
+    ],
+    "result": "There was a strong correlation (r=0.99) between VTs induced during EPS and those induced in Geno-DT simulations in both patient groups, despite similar numbers of induced VT morphologies between GE and PKP2 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C41) demonstrates excellent agreement between computational predictions and clinical observations. The finding that VT numbers were similar between groups (C113) despite different underlying mechanisms is appropriately reported. This validates the Geno-DT approach's ability to capture clinical VT patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study cohort consisted of 16 ARVC patients (8 GE, 8 PKP2) with median age 31 years and 75% female, all with inducible VT during EPS and RV enhancement on LGE-CMR. No significant differences in clinical parameters were found between genotype groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Patient characteristics are clearly reported with appropriate inclusion criteria (C79-C81). The lack of significant differences between groups (C19) is important for attributing differences in VT mechanisms to genotype rather than confounding clinical factors. However, the small sample size (n=8 per group) and high proportion of females (75%) may limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A total of 144 ventricular simulations (16 patients \u00d7 9 pacing locations) were performed using a validated rapid pacing protocol, with simulations conducted blind to clinical data. VT was defined as re-entry sustaining at least 2 cycles at the same critical site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation methodology is clearly described with appropriate blinding (C105) and validated protocols (C101, citing previous studies). The pacing protocol details (C102) and VT definition (C103) are explicit. The comprehensive simulation approach (9 pacing sites per patient) is appropriate for capturing multiple potential VT circuits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The PKP2 model incorporates reduced RYR2 expression with enhanced calcium sensitivity, 20% downregulation of INaCa, fivefold upregulation of IbCa (representing Cx43 hemichannel-mediated calcium entry), and 40% reduction in calsequestrin affinity, resulting in enhanced calcium concentrations that correspond with experimental measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium handling modifications are based on experimental data from Lyon et al. (C51) and are quantitatively specified (C52, C88). The biological interpretation of IbCa upregulation (C86-C87) is reasonable given the known properties of PKP2-deficient cells. The validation against experimental calcium levels (C89) supports the model parameterization, though independent validation would strengthen this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Geometrical models were reconstructed from LGE-CMR using validated semi-automatic segmentation (CardioViz3D), with tissue classification based on intensity thresholds (\u22654 SD for dense scar, 2-4 SD for diffuse fibrosis), and high-resolution meshes (398 \u03bcm average resolution) with rule-based fiber orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The image processing and model reconstruction methods are well-documented with citations to validation studies (C97, C99). The tissue classification thresholds (C53-C54) are based on established methods (citing Zhang et al., 2021). The imaging parameters (C96) are appropriate for cardiac MRI. The methodology follows established practices from the group's previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "For diffuse fibrosis regions, a modified TT2 model was used with specific conductance changes: INaL and ICaL increased by 107% and 19%; IKr, IKs, Ito, and IK1 decreased by 34%, 27%, 85%, and 15%; sodium-calcium exchanger increased by 34%; and SERCA decreased by 43%, based on data from Coppini et al., 2013.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The diffuse fibrosis model is based on experimental data (C90, citing Coppini et al., 2013) and has been validated in previous studies (C91). The specific parameter modifications (C92-C95) are clearly documented. This represents an established approach from the group's prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C106",
+      "C107"
+    ],
+    "result": "Study limitations include small sample size (n=16) due to ARVC rarity, focus on RV-only enhancement, and consideration of only two genotypes (GE and PKP2) due to lack of experimental data for other variants and insufficient patient numbers with other genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge study limitations. The small sample size (C56) is justified by disease rarity and data requirements. The focus on RV enhancement (C57) is supported by literature (citing Marchlinski et al., 2021). The limitation to two genotypes (C106-C107) is reasonable given the lack of experimental data for model parameterization and low prevalence of other variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "The authors propose that Geno-DT has potential to improve pre-ablation planning, save procedural time, enable targeted substrate modification at predicted VT locations rather than ablating all fibrotic tissue, and provide a framework for integrating multimodal clinical data for precision medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative future applications (C72-C74, C78) rather than demonstrated results. While the predictive accuracy supports potential clinical utility, actual clinical implementation, procedural time savings, and improved outcomes have not been demonstrated. The speculation is reasonable given the results but requires prospective clinical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Background claims establish that ARVC is a genetic disease with prevalence up to 1 in 1000, accounts for up to 10% of sudden cardiac death in people <65 years, has 50-80% ablation success rate with high recurrence, and is associated with desmosomal gene mutations (PKP2 most common at 60-78%) with one-third of patients being gene-elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are appropriately cited from established literature (C6-C11, C59-C64). They provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C82",
+      "C83",
+      "C100"
+    ],
+    "result": "The Geno-DT approach integrates patient-specific structural remodeling from LGE-CMR with genotype-specific cellular EP properties. For GE patients, the ten Tusscher and Panfilov 2006 model with added late sodium current was used. Simulations were performed using openCARP software in monodomain representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological framework is clearly described (C58) with appropriate citations for the base models (C82-C83) and simulation software (C100). The integration of imaging-based structural information with genotype-specific cellular models represents the novel contribution of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C108",
+      "C109",
+      "C114"
+    ],
+    "result": "Supporting context claims establish that not all fibrotic tissue is arrhythmogenic, excessive ablation has negative consequences in ARVC, previous digital twin studies have been successful in ischemic disease, a prior PKP2 model was too complex for whole-heart simulation, and traditional ARVC substrate studies lack complete 3D characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims are appropriately cited (C75-C76, C108-C109, C114) and provide justification for the study approach. They establish the rationale for developing a computationally tractable PKP2 model and using LGE-CMR for 3D structural characterization.",
+    "result_type": "MINOR"
+  }
+]

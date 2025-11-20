@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The study constructed high-confidence \u03b1-arrestin interactomes in human and Drosophila using AP/MS. After applying SAINTexpress scoring with FDR cutoffs of 0.01 and filtering for spectral counts \u22656, the final interactomes comprised 390 PPIs (307 prey proteins) in human and 740 PPIs (467 prey proteins) in Drosophila, with high reproducibility between replicates (Pearson correlations 0.91 and 0.89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 describe a systematic AP/MS workflow with appropriate statistical filtering (SAINTexpress, ROC analysis, spectral count thresholds) and validation through known interactions. The high Pearson correlations and PCA clustering demonstrate technical reproducibility. The recovery of known \u03b1-arrestin partners (NEDD4, WWP2, WWP1, ITCH, TSG101) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "High-confidence PPIs were validated using known domain-motif interactions. PPIs supported by known affinities between short-linear motifs and protein domains were significantly enriched in high-confidence versus raw PPI sets (p<9.37\u00d710\u207b\u00b9\u00b9 human, p<0.0012 Drosophila). WW domain-containing proteins were specifically enriched in interactomes of \u03b1-arrestins with PPxY motifs but not in ARRDC5 (lacking PPxY) or Drosophila \u03b1-arrestins without PPxY motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide orthogonal validation of the interactome quality through known biochemical principles (PPxY-WW domain interactions). The statistical significance and specificity of enrichment (present only when PPxY motifs exist) strongly support the biological relevance of the identified interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Domain enrichment analysis revealed both conserved and species-specific protein domains in \u03b1-arrestin interactomes. HECT, WW, and C2 domains (associated with E3 ubiquitin ligases) were prominent in both species. Proteasome domains, RNA-binding domains (DEAD box, helicase, WD40), and motor protein domains (IBN_N, myosin_head) were enriched in specific \u03b1-arrestins. Human-specific domains included PDZ, Rho-GEF, MCM, laminin, zinc finger, and BAG6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 describe comprehensive domain enrichment analysis with appropriate statistical testing (FDR corrections). The findings are internally consistent with known \u03b1-arrestin biology (ubiquitination, trafficking) and reveal novel associations (RNA processing). The identification of species-specific domains is well-supported by comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Functional enrichment analysis revealed both known and novel \u03b1-arrestin functions. Previously reported functions (ubiquitin ligase, protease) were confirmed with known partners (NEDD4, WWP2, WWP1, ITCH). Novel functions were identified including RNA splicing/helicase and GTPase-activating proteins (ARRDC3), apolipoprotein (ARRDC4), and ATP synthase (ARRDC5). Motor protein and RNA splicing functions appeared conserved between human and Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 combine validation of known functions with discovery of novel ones. The functional assignments are based on PANTHER classification with appropriate statistical corrections and are consistent with the domain enrichment results. The identification of conserved functions across species strengthens the biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Subcellular localization analysis of interacting proteins revealed functional specialization of \u03b1-arrestins. ARRDC5 prey proteins localized to ER and plasma membrane; ARRDC1 to extracellular space; ARRDC4 to cytoplasm; TXNIP to cytoplasm and nucleus. ARRDC3 showed nuclear localization in addition to cytoplasmic, suggesting novel nuclear functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 use Gene Ontology analysis to infer \u03b1-arrestin localization and function. The findings are consistent with previous reports for ARRDC1, ARRDC4, and TXNIP (validated by citations), while suggesting novel nuclear functions for ARRDC3. The approach is appropriate though indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Protein complex enrichment analysis identified 33 human and 20 Drosophila complexes significantly associated with \u03b1-arrestins (FDR<0.2). The largest complexes related to protein degradation (proteasome, ubiquitin-dependent proteolysis) and RNA splicing/processing. Individual \u03b1-arrestins showed specific complex associations: TXNIP with HDAC and transcriptional complexes, ARRDC5 with V-type ATPase, ARRDC3 with transcription elongation factors and SAC complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 describe systematic complex enrichment analysis using COMPLEAT with appropriate statistical testing. The identification of both conserved (degradation, RNA processing) and specific (TXNIP-HDAC, ARRDC5-V-ATPase) complex associations is well-supported and provides functional context for the interactomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Ortholog analysis identified 58 conserved prey groups (68 human, 64 Drosophila proteins with DIOPT score \u22652). Hierarchical clustering revealed functional conservation: ARRDC3/CG18746 with RNA binding/splicing, Leash with both RNA processing and ubiquitin-dependent proteolysis, ARRDC4/CG18748 with motor proteins and trafficking. The most prominent conserved modules were ubiquitin-dependent proteolysis, endosomal trafficking, and small GTPase-binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 use ortholog prediction (DIOPT) and hierarchical clustering to identify evolutionarily conserved interactions. The approach is sound and the findings are validated by agreement with known \u03b1-arrestin functions in membrane receptor degradation and trafficking (supported by multiple citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "TXNIP knockdown globally decreased chromatin accessibility and gene expression. ATAC-seq revealed 7.38% of ACRs were differentially accessible (mostly decreased). RNA-seq showed 956 downregulated and 295 upregulated genes. Genes with decreased expression showed significantly reduced promoter accessibility (p<7.24\u00d710\u207b\u00b2\u2070), while upregulated genes showed no accessibility changes (p<0.68), indicating chromatin opening is necessary but not sufficient for expression. Repressed genes were associated with developmental processes, signaling, cell adhesion, and immune response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 present integrated ATAC-seq and RNA-seq analysis with appropriate replication (n=2), statistical testing (KS tests), and functional interpretation. The correlation between chromatin accessibility and gene expression is well-demonstrated, and the asymmetry (downregulated genes show accessibility changes, upregulated do not) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "TXNIP interacts with HDAC2 and regulates its chromatin occupancy without affecting HDAC2 expression, localization, phosphorylation, or interactions with NuRD complex components (MBD3, MTA1). TXNIP knockdown increased HDAC2 recruitment to target loci (CD22, L1CAM) and decreased histone H3 acetylation, suggesting TXNIP blocks HDAC2 recruitment to facilitate chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 provide mechanistic validation through co-IP, western blots, ChIP-qPCR, and immunofluorescence. The experiments systematically rule out alternative mechanisms (expression changes, relocalization, phosphorylation, NuRD complex disruption) and demonstrate direct effects on chromatin occupancy at specific loci. The mechanism is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "ARRDC5 promotes osteoclast differentiation and bone resorption. GFP-ARRDC5 overexpression significantly increased TRAP-positive multinucleated cells (especially >200 \u03bcm diameter) and bone resorption pit area (~4-fold increase). ARRDC5 knockdown impaired osteoclast differentiation, confirming its essential role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 present complementary gain-of-function and loss-of-function experiments with appropriate controls and quantification. The functional assays (TRAP staining, bone resorption) are standard for osteoclast biology. Statistical significance is reported and the bidirectional effects strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ARRDC5 controls V-type ATPase plasma membrane localization during osteoclast differentiation without affecting V-ATPase expression levels. ARRDC5 localizes to the osteoclast plasma membrane and co-localizes with V-type ATPase. Bafilomycin A1 treatment reduced both V-ATPase and ARRDC5 membrane signals, suggesting ARRDC5 regulates V-ATPase membrane trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 use western blots and immunofluorescence to demonstrate that ARRDC5 affects V-ATPase localization rather than expression. The co-localization and bafilomycin A1 experiments provide mechanistic insight. However, the mechanism remains somewhat speculative as direct trafficking assays were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on arrestin family evolution and classification. \u03b1-arrestins are evolutionarily conserved modulators of diverse signaling pathways but are less characterized than \u03b2-arrestins. They are the ancestral arrestin class, contain characteristic arrestin_N and arrestin_C domains plus PPxY motifs, and include six members in humans (ARRDC1-5, TXNIP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C16 provide established background knowledge supported by appropriate citations. These claims accurately represent the current state of the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on known \u03b1-arrestin functions. ARRDC3/4 mediate \u03b22AR ubiquitination via NEDD4 recruitment. ARRDC1/3 regulate Notch degradation and ALIX ubiquitination. ARRDC1 mediates microvesicle budding through WWP2 and TSG101. TXNIP inhibits thioredoxin and glucose uptake via GLUT1 internalization. TXNIP localizes to both cytoplasm and nucleus but nuclear functions remain poorly characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 accurately summarize established \u03b1-arrestin functions with appropriate citations. These provide important context for the novel findings and justify the study's focus on expanding \u03b1-arrestin functional characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background on \u03b1-arrestin regulation of Hippo signaling. The Hippo pathway impacts metabolism, development, and tumor progression and is regulated by \u03b1-arrestins in both Drosophila (Leash downregulates Yki) and human cells (ARRDC1/3 degrade YAP1 via ITCH), suggesting functional conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 accurately describe established knowledge about \u03b1-arrestin regulation of Hippo signaling with appropriate citations. This provides important context for the comparative analysis approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Summary of main interactome findings. The high-confidence interactomes comprised 307 human and 467 Drosophila prey proteins. Comparative analysis predicted conserved binding partners (motor proteins, proteases, ubiquitin ligases, RNA splicing factors, GTPase-activating proteins) and mammal-specific partners (histone modifiers, V-type ATPase subunits).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 accurately summarize the main findings that are detailed and supported in subsequent claims. These represent the core discoveries of the interactome analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Summary of TXNIP functional findings. TXNIP interacts with histone-modifying enzymes including HDAC2 and activates targets by blocking HDAC2 recruitment, validated by ChIP assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 accurately summarize the TXNIP mechanistic findings that are detailed and experimentally supported in claims C70-C83. These represent a major functional discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Summary of ARRDC5 findings. The ARRDC5 interactome revealed multiple V-type ATPase components, which play a key role in osteoclast bone resorption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 accurately summarize the ARRDC5 findings that are detailed and experimentally validated in claims C84-C93. C9 correctly cites established knowledge about V-ATPase function in osteoclasts.",
+    "result_type": "MAJOR"
+  }
+]

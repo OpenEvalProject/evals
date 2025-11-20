@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24",
+      "C81"
+    ],
+    "result": "A computational method integrating ChIP-seq, MNase-seq, and DNase-seq data was developed to predict cell-type-specific ability of transcription factors to bind nucleosomes. The method discriminates pioneer from canonical transcription factors with ROC AUC = 0.69 (all TFs) and 0.89 when using differentially open chromatin regions. Known PTFs showed significantly higher enrichment scores than other factors (p-value = 2.12\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C22-C24, and C81 collectively demonstrate the development and validation of the computational method. The statistical significance (C22), classification performance metrics (C23), and improved accuracy with differentially open regions (C24, C81) provide converging evidence. The method was validated against known PTFs with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C82"
+    ],
+    "result": "The computational approach predicted new potential pioneer transcription factors in multiple cell lines. 39 TFs were identified in H1, K562, HepG2, and HeLa-S3 cell lines using all open chromatin regions, with 15 being well-characterized PTFs. An additional 40 TFs were identified using differentially open regions, with 15 well-characterized PTFs and 7 literature-supported predictions among the remaining 25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C34-C43, and C82 describe the prediction of new PTFs with multiple lines of validation: known PTFs among predictions (C35, C39), literature support for novel predictions (C36, C37, C40-C43), and use of gene expression data (C34). The convergence of computational predictions with literature evidence and expression data supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Known PTFs acting as key regulators of cell differentiation (GATA, FOXA, CEBP families) showed the highest enrichment scores, while PTFs responsible for embryonic stem cell maintenance or reprogramming (Yamanaka factors) showed significantly lower enrichment scores. However, when differentially open regions were redefined as closed in differentiated cells and open in H1 embryonic cells, ESSRB and POU5F1 showed significantly higher enrichment scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 demonstrate context-dependent PTF behavior validated by redefining differentially open regions. The observation that Yamanaka factors show low enrichment in the standard analysis (C27-C28) but high enrichment when the analysis is reversed (C30) is internally consistent with their biological function in reprogramming differentiated cells. This is further supported by literature citations (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "87% of all 225 TFs showed negative correlation between binding motif profiles and nucleosome occupancy, while 37 TFs showed statistically significant positive correlation and were classified as potential nucleosome binders and PTFs. Among these, six were known PTFs (POU5F1, GATA3, CEBPB, ATF2, NFYA, NFYB), and some TFs (NFYB, NFYA, POU5F1) showed dual nature with low enrichment scores but positive correlation coefficients. Cell-type-specific pioneer activity was observed for CTCF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 describe correlation analysis between binding motif profiles and nucleosome occupancy with appropriate statistical validation. The identification of dual-nature TFs (C47-C48) and cell-type-specific activity (C52-C53) is supported by both computational analysis and literature citations. The finding that 16 predictions overlapped with enrichment analysis (C49) provides internal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C83",
+      "C84"
+    ],
+    "result": "Six distinctive clusters of TF binding profiles on nucleosomal DNA were identified through k-medoids clustering. Clusters 1 and 2 showed increased motif density with distance from dyad (DNA end binding), clusters 4 and 6 showed preferential interaction around dyad regions and SHL \u00b13.5 to \u00b15.5, and clusters 3 and 5 preferentially occupied SHL \u00b11 to \u00b13. TFs from the same family were generally assigned to the same cluster, with some exceptions (CEBPB, CREB1, CTCF, MEF2A, NFYA, NFYB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C56-C59, C61-C64, C83-C84 describe clustering analysis with clear patterns of TF binding at different nucleosomal positions. The clustering is validated by consistency within TF families (C61-C62) and literature support for specific cases like FOXA1 (C63). The identification of exceptions (C64) demonstrates appropriate critical analysis. The biological interpretation of competitive binding (C84) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C32",
+      "C33"
+    ],
+    "result": "The computational analysis captured detailed features of TF binding motifs on nucleosomes, validated by comparison with NCAP-SELEX experimental data. TFs from cluster 3 (strong binders to naked DNA but weak to nucleosomal DNA) had the lowest enrichment scores, while half of TFs in clusters 1 and 2 had binding sites enriched on nucleosome regions, including known PTFs FOXA1, GATA4, and CEBPA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C32-C33 demonstrate validation against independent experimental data (NCAP-SELEX). The correlation between computational predictions and experimental binding modes (C32-C33) supports the validity of the computational approach (C55). However, C32 notes the trend was not statistically significant due to limited data, which appropriately acknowledges uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Using enrichment analysis on differentially active enhancer regions led to worse performance of PTF classification compared to using differentially open chromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by data presented in Figure 2\u2014figure supplement 4, showing that despite PTFs often targeting enhancers, using enhancer-based regions reduced classification performance. This negative result is appropriately reported and helps define the optimal approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Pronounced dinucleotide patterns were observed at specific nucleosomal DNA positions for all cell lines, which are indicative of high quality data and nucleosome mapping procedure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe quality control validation of the nucleosome mapping. The observation of expected dinucleotide patterns (C78) is a well-established indicator of proper nucleosome positioning, and the inference about data quality (C79) is reasonable and supported by Figure 1\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "TF binding to nucleosomes leads to DNA and chromatin opening and might correlate with the reprogramming potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by the finding that using differentially open chromatin regions leads to highest classification accuracy, combined with citation to Fernandez Garcia et al., 2019. The mechanistic interpretation is reasonable given the data, though the correlation with reprogramming potential remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The study hypothesized that DNA binding sites of PTFs should not be depleted and may be enriched on nucleosome regions, while canonical TFs should exhibit depletion on nucleosome regions and enrichment in nucleosome-free regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 state the central hypothesis of the study, which is reasonable based on established knowledge of PTF and canonical TF behavior. The hypothesis is subsequently validated by the experimental results (C22-C24), demonstrating it was a productive framework for the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study acknowledges several limitations: PTF interactions with nucleosomes may depend on other factors, PTF binding relies on nucleosome dynamics and DNA unwrapping, nucleosome positioning varies throughout the genome, and PTFs may exhibit multivalent binding recognizing both DNA and histone components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 appropriately acknowledge limitations of the computational approach and data. These limitations are well-supported by citations to relevant literature (C69-C72) and represent established knowledge in the field (C67-C68, C73-C74). This demonstrates appropriate scientific rigor in discussing the scope and constraints of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript provides background on chromatin structure, nucleosome composition, and the current state of knowledge regarding pioneer transcription factors, including their ability to recognize binding sites on nucleosomes, initiate chromatin opening, and facilitate co-factor binding in a cell-type-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C10-C19 establish the scientific background and motivation for the study. These claims are well-supported by citations to established literature and represent accurate summaries of current knowledge in the field. The statement that interaction modes and cell-type-specific activities remain largely unknown (C18-C19) appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "TFs regulate numerous signaling pathways and their dysregulation contributes to human diseases. While conventional TFs have been used as biomarkers and drug targets, the targeted therapeutic potential of PTFs is lagging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 provide context for the broader significance of the work. These statements represent established knowledge (C75-C76) and a reasonable assessment of the current state of PTF therapeutics (C77). This appropriately frames the potential translational impact of identifying new PTFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Two recent cryo-EM structures of PTF SOX2-nucleosome complexes showed different mechanisms of binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by citations to Michael et al., 2020 and Dodonova et al., 2020. This observation is used to illustrate the complexity and diversity of PTF-nucleosome interactions, supporting the need for computational approaches to characterize these interactions systematically.",
+    "result_type": "MINOR"
+  }
+]

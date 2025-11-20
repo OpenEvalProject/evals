@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study identified five element types in orangutan long calls from 66 recordings of 10 individuals: full pulses (primary type) and four sub-pulse types (grumble, transitory elements, pulse bodies, bubble). Inter-onset intervals were extracted from 8993 vocal elements across these categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe the data collection and structural characterization of orangutan vocalizations. The methodology is clearly documented with sample sizes, element classifications are illustrated in Figure 1A, and the approach builds on cited prior work (Hardus et al., 2009; Lameira and Wich, 2008), providing a solid empirical foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Full pulses in orangutan long calls exhibit isochronous rhythm with a peak at rk=0.493, indicating regular 1:1 pacing at constant tempo. Statistical modeling (GLMM) confirmed significant effects of pulse type and on/off-isochrony range (p<0.001), with full pulses showing significantly more on-isochrony values (t=-15.957, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 present the primary rhythmic analysis of full pulses with appropriate statistical testing. The GLMM analysis with model comparison, the significant isochrony peak, and visual confirmation in Figure 1C provide converging evidence. The statistical approach appears sound with adequate sample size (1916 filtered full pulses).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Three sub-pulse types (grumble, transitory elements, bubble) showed significant isochronous peaks (all p<0.001) at different tempi than full pulses. Sub-pulses were regularly paced within regularly paced full pulses, with sub-pulse intervals at 0.046 of full pulse intervals (approximately 1:22 ratio).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 demonstrate nested isochrony across hierarchical levels with statistical support for each sub-pulse type. The 1:22 ratio is empirically derived from the data (Figure 1D), and the different tempi for each sub-pulse type are documented. This provides strong evidence for the hierarchical structure, though the small sample for pulse bodies (n=11) is noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The 1:22 ratio between sub-pulses and full pulses represents the smallest categorical temporal rhythmic interval registered in a vertebrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 makes a comparative statement supported by citations to comprehensive reviews of vertebrate rhythmic intervals (De Gregorio et al., 2021; Roeske et al., 2020). While bold, this claim appears to be appropriately contextualized within the existing literature on animal rhythm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Discriminant function analysis confirmed that the three main sub-pulse types are acoustically distinct categories, with 62.7% correct classification significantly exceeding chance (37%) at p=0.001.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 provides validation that the sub-pulse categories are not arbitrary but represent genuine acoustic distinctions. The permuted discriminant function analysis with cross-classification controlling for individual variation is methodologically appropriate, and the classification rate significantly exceeds chance expectations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Wild orangutan long calls exhibit two hierarchical strata (full-pulse and sub-pulse levels) with three non-exclusive nested isochronous motifs [isochronyA [isochronya,b,c]], representing recursive self-embedded vocal patterns fundamentally distinct from simple call repetition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43-C45 synthesize the core finding of hierarchical recursive structure. The evidence from rhythmic analyses (C32-C40), acoustic distinctiveness (C42), and visual representation (Figures 1-2) converge to support this interpretation. The distinction from simple repetition is justified by the nested structure at different scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "The three sub-pulse rhythms are not related to full pulse rhythm by small integer multiples (1:22 ratio), ruling out physiological artifacts. This non-harmonic relationship suggests recursive structures are generated by neuro-motor procedures rather than mechanical constraints like vocal fold oscillation or breath patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C59 argue against physiological explanations. The 1:22 ratio is empirically established and clearly not a small integer multiple. The reasoning about harmonics (C57) is sound based on acoustic principles. However, the inference that this definitively rules out all physiological contributions is somewhat strong\u2014alternative physiological mechanisms beyond simple harmonics are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A linear algorithm generating the observed patterns would require three parallel independent procedures, which should produce interference at the pulse level. No such interference was observed\u2014distribution of on/off-isochrony values was equivalent between pulses and sub-pulses\u2014arguing against linear generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C62 present a logical argument against linear generation, but the reasoning is somewhat speculative. While C62 states no interference was observed, the specific analysis testing for this predicted interference is not detailed. The argument assumes that parallel linear procedures would necessarily produce detectable interference, which may not hold under all computational models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Given that humans perceive acoustic pulses as continuous pitch above 30 Hz, and orangutan sub-pulses occur at ~9.3 Hz, orangutans likely perceive these sub-pulse rhythms as discrete signals rather than continuous pitch, supported by similar auditory anatomy between humans and great apes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 address perceptual plausibility. The human psychoacoustic threshold (C51) is established knowledge, the anatomical similarity is well-cited (C52-C53), and the measured sub-pulse rate (C54) is well below the threshold. The inference (C55) is reasonable, though direct perceptual testing in orangutans would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C63"
+    ],
+    "result": "The recursive structures in orangutan long calls occur spontaneously in the wild without training, demonstrating that temporal recursion in vocal communication is not exclusive to humans among hominids, at least in the form of temporally embedded regular rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50, C63 present the main conclusion about spontaneous recursion in wild great apes. This is well-supported by the empirical evidence of nested isochronous structures (C32-C40), the wild observational context (C27), and the arguments against purely physiological explanations (C56-C59). The qualification 'at least in the form of temporally embedded regular rhythms' appropriately limits the scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The spontaneous production of recursive vocal motifs in wild orangutans is compelling given laboratory evidence that animals can learn recursion with training. While some aspects could potentially be learned, the study design cannot isolate learning effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 contextualize the findings relative to laboratory studies and acknowledge limitations. The comparison to lab studies (C47) is appropriately cited, and the acknowledgment of the study's inability to assess learning (C49) is an honest limitation. This does not undermine the core finding of spontaneous production in the wild.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Orangutan recursive motifs do not exhibit all properties of human language recursion, and expecting equivalence would be evolutionarily unreasonable given 10+ million years of divergence. Differences from modern syntax/phonology/music do not preclude orangutan recursion representing an ancestral state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 provide important caveats about interpreting the findings. The acknowledgment that orangutan and human recursion are not equivalent (C64) is scientifically appropriate. The evolutionary reasoning (C65) is sound, and the logical argument (C66) correctly notes that differences do not invalidate ancestral state hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "The discovery of recursive vocal patterns in orangutans suggests that second-order combinatorics ('sequences within sequences') may have been present in ancestral hominids and predated language emergence in humans, opening new understanding of incipient and transitional states of recursion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C69-C70, C73 make evolutionary inferences that are speculative. While the discovery of recursion in orangutans is significant, inferring ancestral states requires caution. The claims appropriately use tentative language ('may have,' 'suggests'), but the phylogenetic inference assumes this trait was present in the common ancestor rather than evolving independently, which cannot be determined from orangutan data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C85"
+    ],
+    "result": "Given that isochrony governs music and recursion is a musical feature, findings suggest a possible evolutionary link between great ape loud calls and vocal music. Recursive vocal combinatorics may have first been a proto-musical feature in human ancestors, later recruited for linguistic combinatorics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78, C80, C85 propose a music-first evolutionary scenario. While C76-C77 state general principles about music, the evolutionary inference (C78, C85) is highly speculative. The connection between orangutan isochronous recursion and human music/language evolution is plausible but not directly supported by the data. This represents an interesting hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C71",
+      "C72"
+    ],
+    "result": "Prior to this study, no vocal sequences with self-embedded recursive patterns were known in nonhuman primates, leading to interpretations of human-exclusive neuro-cognitive transformation and even questioning natural selection's role in language evolution. The novelty of self-embedded isochrony suggests controversy may have stemmed from limited data on wild great ape vocalizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C15, C71-C72 accurately characterize the prior state of knowledge with appropriate citations. The assessment that this represents a novel finding (C71) and that data scarcity may have contributed to theoretical debates (C72) is reasonable and well-supported by citations to recent emerging work on great ape vocal combinatorics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "While syntax-like vocal combinatorics have been identified in some birds and primates, these were not claimed to be recursive nor was recursion tested. Laboratory studies show starlings, macaques, and crows can learn to recognize recursion with training, but not spontaneous production in natural settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 accurately review prior work on animal vocal combinatorics and recursion learning. The citations appear appropriate, and the distinction between trained recognition and spontaneous production in natural settings (C22) is an important one that contextualizes the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Given limited data on primate vocal combinatorics, it may be premature to classify animal combinatorics as syntax-like or phonology-like, as such classifications rest on untested assumptions about proto-recursive ancestors (e.g., that syntax and phonology evolved as separate modules).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 offer a critical methodological perspective on comparative approaches. The caution about premature classification is reasonable given the novel findings, and the identification of untested assumptions in prior work is appropriately supported by citations. This represents valuable scientific self-reflection about the field's approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The presence of temporally recursive vocal motifs in wild great apes revolutionizes approaches to studying recursion evolution beyond all-or-nothing accounts. Future studies using structural approaches in wild primates offer promising paths to assess precursors and proto-states of recursion in the hominid family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 assess the broader significance and future directions. The characterization as 'revolutionizing' (C86) may be somewhat strong but is defensible given the novelty of finding spontaneous recursion in wild great apes. The call for future research (C87) is appropriate and well-justified by the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Recursion is defined as the repetition of an element/pattern within a self-similar element/pattern, producing multiple sets by nesting items within themselves or similar items. It involves placement at different hierarchical levels, not simple repetition, with the same pattern encountered at multiple scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 establish the working definition of recursion used in the study. These definitional claims are well-supported by citations across multiple disciplines and provide necessary conceptual grounding. The distinction between recursion and simple repetition (C9) is particularly important for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A structural approach to recursive vocal combinatorics requires no prior assumptions about cognitive capacities, signal meaning, or signal function, making it advantageous for identifying proto-recursive structures that may not fit modern classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 justify the methodological approach. The arguments for why a structural approach is advantageous are logical and well-reasoned. The approach does avoid certain assumptions that could bias interpretation, though it's worth noting that some level of interpretation is still required to identify 'hierarchical strata.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The study was conducted at Tuanan Research Station, Indonesia, using standard recording equipment and Raven software for acoustic analysis. Seven acoustic measures were extracted, with duration and peak frequency shown to be resilient across recording settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe methodological details. The location, equipment, and software are clearly specified. The validation of acoustic measures (C92) through citations to prior methodological work strengthens confidence in the measurements. The methods appear standard and appropriate for bioacoustic analysis.",
+    "result_type": "MINOR"
+  }
+]

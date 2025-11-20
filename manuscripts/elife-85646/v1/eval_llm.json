@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C106"
+    ],
+    "result": "Rats were trained on a Tree-Maze task requiring use of visual cues to navigate to reward locations. Five rats were trained, taking an average of 25 sessions to reach performance criterion (\u226570% accuracy, \u226580 trials). Post-implantation, subjects achieved median accuracy of 72.6% with median 110 trials per session, and performed similarly on switch trials (76.9% accuracy), demonstrating task competence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C63-C69, and C106 collectively describe the behavioral task design and training outcomes with specific quantitative metrics. The experimental design is clearly described with appropriate performance criteria, and behavioral data support that animals learned the task. Sample sizes and performance metrics are adequately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C107",
+      "C108"
+    ],
+    "result": "Parahippocampal neurons exhibited elevated firing rates on incorrect trials, with RC trials showing higher firing on the left maze segment and LC trials showing higher firing on the right segment. This elevated activity on incorrect trajectories led to spatial rate remapping, with a significant negative shift in remapping scores compared to null distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C70-C72, C74, C107-C108 describe the core finding of error-related neural activity. The statistical analyses using Mann-Whitney U tests and LMEM are appropriate, and the remapping quantification using Kendall correlations with null distributions is methodologically sound. The interpretation that elevated firing follows incorrect decisions is directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C58",
+      "C77",
+      "C109"
+    ],
+    "result": "The degree of cue-related remapping correlated negatively with behavioral performance, such that stronger remapping corresponded to better task accuracy. This relationship was observed at the single-unit level (Kendall's \u03c4=-0.27), across co-recorded units (\u03c4=-0.41), and in individual subjects (all but one subject with few units).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C58, C77, C109 describe the neural-behavioral correlation. The statistical approach using LMEM to account for within-subject variance and repeated measures is appropriate. The consistency across multiple levels of analysis (single units, sessions, subjects) strengthens the finding. Control analyses (Figure 2 supplements 6-7) further validate the robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C110"
+    ],
+    "result": "Encoding models demonstrated that rate remapping, rather than global remapping, was sufficient to explain changes in spatial firing patterns. The rate-remapping model (Z+C) significantly outperformed both position-only (Z) and global-remapping (ZxC) models in predicting neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C110 describe the encoding model results. The comparison of three models (position-only, rate-remapping, global-remapping) using cross-validated R\u00b2 is methodologically appropriate. The LMEM analysis showing significant model differences (LRT \u03c7\u00b2=962.05, p<1e-209) provides strong statistical support. However, the mean R\u00b2 of 12% for the best model is modest, suggesting substantial unexplained variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "Population decoding analyses revealed that prospective decision decoding was at chance before the decision point, but post-decision decoder predictions related to behavioral performance and were modulated by the number of co-recorded neurons. This demonstrates that parahippocampal representations reflect behavior at the individual trial level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84-C85 describe the decoding results. The finding that prospective decoding is at chance is important for ruling out anticipatory coding. The triple interaction in LMEM (LRT \u03c7\u00b2=43.48, p=3.61e-10) supports the relationship between decoder performance and behavior. However, the strong dependence on unit count (19/42 sessions with \u22648 units vs 23/36 with \u226520 units) suggests limited power in many sessions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C91"
+    ],
+    "result": "Neural representations were separable based on reward presence/absence, with parahippocampal neurons exhibiting increased firing rates during inbound trajectories following unrewarded trials. Unrewarded trials showed elevated firing rates across all maze segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C91 describe reward-related neural activity. The finding that unrewarded trials had elevated firing across segments (proportions: left=386/565, stem=340/565, right=412/565) is well-documented. The LMEM analysis (segment LRT \u03c7\u00b2=47.70, p=7.91e-12) provides statistical support. This parallels the cue-related findings and strengthens the error-signal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Remapping scores for cue and reward conditions were correlated across units and at the population level. Incorrect-coding units showed greater overlap between cue and reward conditions than correct-coding units. Error signaling activity persisted from outbound to inbound trajectories, with incorrect>correct activity on outbound predicting incorrect>correct activity on inbound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 describe the relationship between cue and reward remapping. The correlation between remapping scores and the overlap analysis of incorrect-coding units provide convergent evidence. The conditional activity analysis (Figure 4 supplement 7) showing persistence of error signals is methodologically sound with appropriate LMEM analyses. However, C94 notes no difference in remapping scores between unit groupings, which somewhat complicates interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Open-field recordings allowed functional characterization of 217 matched units across tasks. Clustering based on encoding model coefficients revealed a main dimension of separation between head-direction and speed coding, with units showing strong head-direction coding exhibiting poor speed coding and vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C98-C101 describe the open-field characterization and clustering. The waveform-based unit matching algorithm is sophisticated and appropriate. The identification of a head-direction/speed trade-off replicates prior findings (Spalla et al., 2022) and provides validation. The clustering approach using UMAP on aggregate model coefficients is reasonable, though the choice of 3 clusters is not explicitly justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C61",
+      "C102",
+      "C105",
+      "C111"
+    ],
+    "result": "Head-direction coding units (cluster 0) showed significantly stronger remapping for both cue and reward conditions compared to other functionally-defined units. This was observed on the matched subset of neurons recorded in both open-field and Tree-Maze tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C61, C102, C105, C111 describe the cell-type specific remapping. The LMEM analysis showing cluster x remap interaction (LRT \u03c7\u00b2=6.87, p=0.032) provides statistical support, though the p-value is marginal. The finding is consistent across both cue and reward conditions. However, the modest effect size and the fact that most incorrect-coding units did not fall into any cluster (Figure 7 supplement 2) suggests heterogeneity in the population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C62",
+      "C112"
+    ],
+    "result": "The authors conclude that parahippocampal neurons encode error information reflective of behavioral performance during goal-directed navigation, and that MEC and upstream PrS/PaS serve as nodes for transmitting behaviorally relevant variables. Under goal-directed conditions, these representations project a flexible code reflective of behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C62, C112 represent the main interpretive conclusions. These are well-supported by the convergent evidence from multiple analyses: elevated firing on incorrect trials, correlation between remapping and performance, rate remapping as the mechanism, reward-related activity, and cell-type specificity. However, these are correlational findings, and the causal role of this error signal remains to be tested. The term 'error information' is interpretive but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors establish the known anatomical and functional properties of parahippocampal regions (MEC, PrS, PaS), including their encoding of position, orientation, and movement, their connectivity with hippocampus, and the proportions of functionally-defined neurons in these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C17, C23-C29 describe established knowledge about parahippocampal regions, supported by appropriate citations. These claims provide necessary background context. The quantitative statements (e.g., ~50% of MEC neurons classifiable by tuning curves, ~50% of PaS neurons code head direction) are appropriately cited to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C51",
+      "C52",
+      "C55"
+    ],
+    "result": "The authors identify gaps in prior literature, noting that most work on parahippocampal regions used open-field foraging paradigms lacking pre-defined decision points, and that linear environment studies typically used alternation tasks without experimental control over decision-making. Neural-behavior relationships between remapping and performance have not been examined in MEC, PaS, or PrS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C22, C51-C52, C55 describe gaps in the literature. These assessments are reasonable and appropriately cited. The characterization of prior work as lacking experimental control over decision points in the context of goal-directed navigation is fair, though some might argue that alternation tasks do involve goal-directed behavior. The identification of these gaps effectively motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors review prior findings on remapping in MEC and hippocampus, including responses to reward locations, running speed, trajectory, environmental changes, and the relationship between hippocampal and MEC remapping. They note that remapping can quantify both stability and flexibility in neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C50, C53-C54 describe established findings about remapping phenomena, all appropriately cited. These claims provide essential background for interpreting the current findings. The distinction between rate and global remapping, and the various factors that can induce remapping, are accurately represented. The citations to hippocampal work showing correlations with behavior (C53) and causal evidence (C54) effectively motivate examining similar relationships in parahippocampal regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The authors examined single-unit activity in MEC, PrS, PaS during a visually-cued navigational task and found that a large percentage of neurons changed firing activity as a function of cue identity and reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 describe the experimental approach and a high-level summary finding. The statement that 'a large percentage' changed firing is supported by the data (e.g., proportions of units showing differential firing by segment), though the exact percentage varies by analysis. This is appropriately qualified as a general observation rather than a specific quantitative claim.",
+    "result_type": "MINOR"
+  }
+]

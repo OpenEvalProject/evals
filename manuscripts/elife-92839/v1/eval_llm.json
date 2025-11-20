@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Two-photon calcium imaging was used to record responses from 10,168 V1 superficial-layer neurons (92.3% orientation/SF-tuned) in three awake macaques during monocular and binocular stimulation with high-contrast Gabor gratings. The methodology included rigorous experimental controls, eye tracking, and multi-step neuron selection criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental methodology is well-documented with appropriate sample sizes (>10,000 neurons across 3 animals), rigorous controls (eye tracking, fixation monitoring, motion artifact correction), and clear selection criteria (Friedman test at \u03b1=0.01, R\u00b2>0.5). The use of GCaMP5 with known linear response properties (10-150 Hz) and multiple technical replicates (12 trials per condition) supports data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "V1 superficial-layer neurons exhibited various degrees of ocular dominance, with ODI distributions showing more binocular than monocular neurons. Ocular dominance maps revealed columnar organization at two cortical depths in Monkeys A and B, consistent with classical findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 are supported by Figure 1B-C showing ocular dominance maps and ODI distributions. The similarity of maps at two depths (C36) provides evidence for columnar organization. The comparison to Dougherty et al. 2019 (C38) and Hubel & Wiesel 1968 (C32) appropriately contextualizes findings within established literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "During monocular stimulation, neurons preferring the stimulated eye exhibited significantly stronger responses than binocular neurons. Monocular neurons (higher absolute ODI) showed stronger responses to preferred eye stimulation compared to binocular neurons (lower absolute ODI), with responses declining as neurons became more binocular.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39-C41, C44 are directly supported by Figure 2A-B showing clear ODI-dependent response patterns during monocular stimulation. The relationship between ODI and response strength is visually apparent and quantitatively described. However, statistical tests for significance (mentioned in C5) are not explicitly reported with p-values for this specific comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C42",
+      "C45",
+      "C46"
+    ],
+    "result": "During binocular stimulation, monocular neurons (preferring either eye) showed suppressed responses while binocular neurons showed enhanced responses, resulting in similar response levels across neurons regardless of eye preference. Response differences among neurons of different eye preferences became minimal under binocular viewing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C42, C45-C46 are strongly supported by Figure 2C-E showing flattened binocular response functions across ODI. The convergence of responses during binocular stimulation contrasts sharply with monocular conditions. The statistical relationship is quantified in C47 with linear regression (p<0.001), providing robust evidence for ODI-dependent modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C63"
+    ],
+    "result": "The overall median binocular response level was similar to monocular viewing levels, being only marginally higher than median monocular responses from each eye, consistent with prior reports (Prince et al., 2002; Mitchell et al., 2022).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C56, C63 are supported by Figure 4A showing arrows indicating median response levels. The consistency with prior electrode recording studies (Prince et al., 2002; Mitchell et al., 2022) strengthens the finding. However, the magnitude of difference is described qualitatively ('marginally higher') without statistical testing of the difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Linear regression revealed a significant negative relationship between binocular modulation and absolute ODI (y=-0.36x+0.14, p<0.001), indicating that binocular neurons were enhanced while monocular neurons were suppressed during binocular stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 provides explicit statistical evidence (p<0.001) for the ODI-dependent binocular modulation shown in Figure 2E. The linear model is appropriate for the relationship observed, and the significant p-value supports the interpretation in C48-C49. The regression parameters are clearly reported and the fit is visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C79",
+      "C80"
+    ],
+    "result": "A computational model incorporating ocular dominance-dependent divisive interocular inhibition and binocular summation successfully accounts for the experimental data. The model shows that monocular response functions change drastically with ODI while binocular responses remain flat, with fit quality indices of 0.87-0.94 for monocular and 0.88-0.92 for binocular data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model (Equations 2-3) with ODI-dependent parameters provides good fits to the data (C50-C53, fit quality 0.87-0.94). The model successfully captures key phenomena: ODI-dependent monocular responses (C57), flat binocular responses (C58), and the roles of interocular suppression (C59) and binocular summation (C60). The mechanistic interpretation (C61, C79-C80) is well-supported by the modeling results in Figures 3-4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The findings suggest that ocular dominance in V1 superficial layers may stem from release of interocular suppression during monocular stimulation rather than lack of binocular combination. The similarity between monocular and binocular response levels likely contributes to stable vision across viewing conditions, though small response changes reflect profound underlying suppression and facilitation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62, C64-C66 represent interpretations and speculations about functional significance. While the data support ODI-dependent modulation, the causal claim about the 'origin' of ocular dominance (C62) and the functional role in visual stability (C64, C66) are inferences that would require additional experiments (e.g., perturbation studies, behavioral correlates). C65 is well-supported by the data showing opposing effects in different neuron populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The current study's findings contradict Dougherty et al. 2019 on key points: monocular neurons showed much stronger responses to preferred eye stimulation than binocular neurons (not similar as in Dougherty), and binocular neurons showed enhanced responses to binocular stimulation (not just monocular neurons being suppressed). However, the study confirms interocular suppression in monocular neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C67-C71 appropriately identify discrepancies with prior work. The current data (Figure 2C, C69) clearly show differential monocular responses between neuron types, contradicting Dougherty et al. 2019 (C20, C67). The confirmation of monocular neuron suppression (C70) while also finding binocular neuron enhancement (C71) represents a more complete picture. The large sample size (>9000 neurons) strengthens these contradictory findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Discrepancies with Dougherty et al. 2019 may arise from methodological differences between electrode recording (50-200ms responses) and calcium imaging (aggregated responses up to 1000ms), though calcium imaging should theoretically reduce rather than exaggerate differences. The large diversity in binocular responses suggests challenges for small-sample electrode studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C76 acknowledge methodological limitations and offer speculative explanations for discrepancies. The temporal resolution argument (C73-C74) is reasonable but remains speculative (C72, C76). The inference about averaging effects (C75) is logical but not empirically tested. C43 makes a valid point about sampling bias, though this itself is somewhat speculative about the causes of prior discrepancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The critical role of ocular dominance has been largely overlooked in binocular vision models, with exceptions being Anderson & Movshon 1989 (multiple ocular dominance channels) and Mitchell et al. 2023 (ocularity preference influences contrast combination). The current model extends divisive normalization frameworks used in recent models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78, C81-C83 accurately characterize prior modeling literature. The citations to historical work on interocular suppression and binocular summation (C77) and divisive normalization models (C78) are appropriate. The claim about ocular dominance being overlooked (C81) is supported by the literature review, with appropriate exceptions noted (C82-C83). This contextualizes the novelty of the current modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Two-photon calcium imaging has inherent limitations: it samples only superficial layers (not deeper binocular neurons), cannot capture fast dynamics, and GCaMP5 shows nonlinear responses outside 10-150 Hz. These limitations may cause the observed differences to be less pronounced than with electrode recording. Combining both methods is recommended for comprehensive understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 appropriately acknowledge methodological limitations. The depth limitation (C84) and temporal resolution issues (C87) are well-established constraints of two-photon imaging. The GCaMP5 linearity range (C89) is supported by citation. The speculation about effect magnitude (C90-C91) is appropriately cautious. The recommendation for complementary approaches (C88) is reasonable, though this represents future work rather than current findings.",
+    "result_type": "MINOR"
+  }
+]

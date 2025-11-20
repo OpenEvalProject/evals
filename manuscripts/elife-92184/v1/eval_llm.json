@@ -1,0 +1,513 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C58"
+    ],
+    "result": "PLMGraph-Inter is a structure-informed deep learning method that builds SE(3) invariant geometric graphs from protein structures, embeds multiple protein language model (PLM) features in graph nodes, and uses graph encoders with geometric vector perceptrons (GVPs) followed by residual networks to predict inter-protein contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C58 collectively describe the PLMGraph-Inter architecture and its key design principles. The SE(3) invariance is logically derived from the use of local coordinate systems (C49-C50) and the properties of the transformations (C54, C58). The method description is internally consistent and well-documented with appropriate citations to underlying techniques (GVP, PLMs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PLMGraph-Inter substantially outperforms five state-of-the-art methods (DeepHomo, GLINTER, CDPred, DeepHomo2, and DRN-1D2D_Inter) on HomoPDB and HeteroPDB test sets, with both experimental and predicted structures as input. The improvement over DRN-1D2D_Inter demonstrates the importance of structural information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C68-C72 are supported by quantitative results in Table 1 and Figure 2. The comparison with DRN-1D2D_Inter (which uses the same features except structural information) provides strong evidence for the value of incorporating structure (C69-C70). However, potential test set contamination is acknowledged for some baseline methods (C62 notes non-redundancy only for PLMGraph-Inter's training set).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C91"
+    ],
+    "result": "PLMGraph-Inter achieved the best performance for 53-60% of targets in HomoPDB and HeteroPDB when using predicted structures, and consistently outperformed other methods across different categories of contact density and effective sequence number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 and C91 are supported by head-to-head comparisons shown in Figure 2 and its supplements. The per-target analysis provides granular evidence of PLMGraph-Inter's superiority, though the percentage of targets where it achieves best performance is modest (51-60%), indicating room for improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The quality of input monomeric structures impacts PLMGraph-Inter's performance, with ~5% decrease in precision when using predicted versus experimental structures. However, when DTM-score \u22650.8, there is almost no performance difference, demonstrating robustness to high-quality predicted structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by quantitative analysis in Figure 3 and Table 1. The DTM-score threshold analysis (C94-C96) provides clear evidence of the relationship between structure quality and prediction accuracy. The 5% performance decrease is modest and the robustness at DTM-score \u22650.8 is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Ablation studies demonstrate that sequence embeddings, MSA features, 2D pairwise features, and structure embeddings (ESM-IF) all contribute to model performance. The graph representation provides 14% improvement on HomoPDB and 5.6% on HeteroPDB compared to DRN-1D2D_Inter, and significantly outperforms the GVP Graph-based baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 are supported by systematic ablation experiments shown in Figure 4a-c. The incremental addition of features (models a-f) provides clear evidence of each component's contribution. The comparison with DRN-1D2D_Inter (C99-C100) and GVP Graph (C103-C104) demonstrates the value of the proposed graph representation. Cross-validation provides additional modest improvements (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "PLMGraph-Inter shows minimal performance decrease (2-4%) when using stringent sequence identity thresholds (down to 10%) for de-redundancy. However, performance on HomoPDB decreases significantly (17-19%) when using fold-based de-redundancy (TM-score 0.5), suggesting the model does not generalize well to novel folds for homomeric PPIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are supported by Table 2. The sequence-based de-redundancy results (C105-C106) demonstrate robustness to sequence similarity. The fold-based analysis (C107-C108) reveals an important limitation for homomeric PPIs. The speculation about binding modes being fold-dependent (C109) is reasonable but remains unvalidated. This represents an important limitation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "On DHTest and DB5.5 test sets, PLMGraph-Inter achieved mean precisions of 71.9% and 29.5% respectively using experimental structures, dramatically outperforming other methods. Performance on DHTest is close to CDPred, but CDPred's performance may be grossly overestimated due to complete training set overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 are supported by Figure 5a-b and Supplementary file 3. The quantitative improvements are substantial. However, the comparison is compromised by test set contamination issues (C113-C115, C121), particularly for CDPred on DHTest. The authors appropriately acknowledge this limitation, but it undermines the validity of direct comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "PLMGraph-Inter's performance on DB5.5 is significantly lower than on HeteroPDB, which is partly explained by lower contact densities in DB5.5 (1.01% vs 1.29%). Prediction precision increases with contact density, and 37.29% of DB5.5 targets have contact densities below 0.5%, where precision is generally very low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C127 are supported by data analysis and Figure 5f. The correlation between contact density and prediction accuracy is clearly demonstrated. This provides important insight into when the method is expected to perform well or poorly. The analysis is sound and the conclusions are appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The comparison between PLMGraph-Inter and AlphaFold-Multimer is not on equal footing because AlphaFold-Multimer used all PDB structures deposited before April 30, 2018 in training (with 87.8% of test targets having native templates), and employs multiple sequence databases including metagenomics data, while PLMGraph-Inter only uses UniRef100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 appropriately identify critical limitations in the comparison. The authors transparently acknowledge that AlphaFold-Multimer's performance is likely overestimated (C131) and that the comparison is unfair (C136). The empirical observations about template usage (C132-C133) are based on the authors' analysis. This honest assessment strengthens the credibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "For AlphaFold-Multimer predictions, contact precision is highly correlated with structure quality (DockQ). When precision exceeds 50%, most structures have at least acceptable quality (DockQ \u22650.23), while almost all structures are incorrect when precision is below 50%, establishing 50% as a critical threshold for inter-protein contact prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by Figure 6a. The correlation analysis is clear and the 50% threshold is empirically justified. However, this threshold is derived from AlphaFold-Multimer results, which may be overestimated due to training set contamination (C131). The generalizability of this threshold to other methods requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C141"
+    ],
+    "result": "For many targets where AlphaFold-Multimer made poor predictions, PLMGraph-Inter yielded better results, though AlphaFold-Multimer generated higher quality structures for most targets overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43 and C141 are supported by Figure 6b and Figure 7\u2014figure supplement 2. However, the comparison is fundamentally compromised by the unfair evaluation conditions acknowledged in C130-C136. Without a fair comparison on truly independent test sets, it's difficult to assess the true complementarity of the methods. The claim that PLMGraph-Inter is better for \"many\" targets is vague and not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Leveraging PLMGraph-Inter predicted contacts as constraints in HADDOCK dramatically improves protein-protein docking performance. Success rates increased from 15.37% to 57.58% (top 1) for homodimers and from 1.72% to 29.89% for heterodimers. When contact precision reaches 50%, docking success rate reaches 80% for both types, confirming 50% as a critical threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C147-C156 are supported by Figure 7a-d. The improvements in docking success rates are substantial and clearly demonstrated. The 50% precision threshold is independently validated through docking experiments (C155), strengthening the conclusion from the AlphaFold-Multimer analysis (C140). However, limitations are acknowledged: HADDOCK cannot model large conformational changes (C143, C157-C159), and PLMGraph-Inter's precision is still insufficient for many heteromeric PPIs (C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "All methods perform better on homomeric PPIs (HomoPDB) than heteromeric PPIs (HeteroPDB), likely due to C2 symmetry restricting configurational space, symmetric contact maps, easier MSA pairing, and stronger evolutionary constraints in permanent homomeric interactions versus transient heteromeric interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 are supported by comparative results across datasets (Table 1, Figure 2). The explanations for better performance on homomeric PPIs are reasonable and grounded in established structural biology knowledge (C76-C77, C81-C82). However, some explanations are speculative (C79-C80 use \"may\"), and the relative contributions of different factors are not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "All methods show lower performance on targets with lower contact densities, which is expected because identifying true contacts is more challenging when their ratio is lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by Figure 2\u2014figure supplement 3. The observation is consistent across all methods and the reasoning is sound. This represents an expected limitation rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "For some targets with very high precision of predicted contacts, HADDOCK still failed to produce acceptable models. Manual inspection revealed many failed targets have chains totally entangled by another chain, suggesting large structural rearrangements that are difficult to model by traditional docking approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 are supported by manual inspection and Figure 7\u2014figure supplement 1. The observation identifies an important limitation of using predicted contacts with traditional docking methods. However, the speculation about structural rearrangements (C159) is not validated experimentally. This represents a known limitation of rigid-body docking approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Despite remarkable progress, there is room for improvement in PLMGraph-Inter, especially for heteromeric PPIs. Future directions include using more advanced PLMs, larger training datasets, integrating physicochemical features, and developing approaches to integrate predicted contacts in folding-and-docking frameworks or incorporating structural modules for complex structure generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 appropriately acknowledge limitations and suggest reasonable future directions. The assessment that heteromeric PPIs need improvement is supported by the performance data throughout the paper. The suggested directions (C161-C163) are speculative but reasonable based on current trends in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The integration of PLMs with protein geometric graphs dramatically improves model performance, demonstrating the efficacy of PLM-embedded geometric graphs for protein representation. This framework can potentially be applied to other protein-related tasks, which is supported by recent work showing PLMs in geometric networks improve performance on various tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188 and C190 are supported by ablation studies (Figure 4) and citation to Wu et al., 2023. The dramatic improvement from adding PLM embeddings to geometric graphs is clearly demonstrated. However, C189 is speculative about applications to other tasks, though the speculation is reasonable and supported by related work (C190).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C164",
+      "C165"
+    ],
+    "result": "The study uses HomoPDB (400 homodimers) and HeteroPDB (200 heterodimers) as test sets, which are non-redundant to the training set of 7362 PPIs. Inter-protein contacts are defined as residue pairs with heavy atom distances <8 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C164-C165 describe the dataset construction and contact definition. These are straightforward methodological details that are clearly stated. The 40% sequence identity threshold for redundancy removal is standard in the field, though more stringent thresholds were also tested (Table 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "AlphaFold2 predicted monomeric structures used in evaluation yielded a mean TM-score of 0.88, which is close to AlphaFold2's performance on CASP14 targets (mean TM-score 0.85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by the authors' evaluation and citation to Lin et al., 2023. The TM-score of 0.88 indicates high-quality predicted structures. The comparison to CASP14 performance provides appropriate context, though the evaluation protocol differs (UniRef100 only, no templates) to avoid overestimating performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "GLINTER encountered runtime errors for 81 targets in HomoPDB and 15 targets in HeteroPDB when using experimental structures, which were removed from the evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is a straightforward observation about GLINTER's failures. This is appropriately documented and the targets were removed from comparison. This represents a practical limitation of GLINTER rather than a finding about PLMGraph-Inter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "When using predicted structures on DHTest and DB5.5, PLMGraph-Inter's mean precision decreased to 61.1% and 23.8% respectively. When DTM-score \u22650.7, there is almost no difference between using predicted versus experimental structures, consistent with findings on HomoPDB and HeteroPDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by Figure 5a-c and Supplementary file 3. The results are consistent with the earlier analysis on HomoPDB/HeteroPDB (C92-C96), though the DTM-score threshold differs slightly (0.7 vs 0.8). This consistency across datasets strengthens the conclusion about robustness to structure quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "DHTest contains 130 homomeric PPIs and DB5.5 contains 59 heteromeric PPIs. These test sets are not de-redundant with training sets of CDPred and GLINTER, with all DHTest PPIs included in CDPred's training set, potentially causing overestimation of these methods' performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are straightforward descriptions of test set composition and contamination issues. The authors appropriately acknowledge this limitation (C115), which is critical for interpreting the comparison results. This transparency is important for scientific integrity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The performance gap between HADDOCK with PLMGraph-Inter contacts and AlphaFold-Multimer is explained by three factors: insufficient precision of PLMGraph-Inter predictions (especially for heteromeric PPIs), HADDOCK's inability to model large structural rearrangements, and difficulty in objectively evaluating AlphaFold-Multimer due to training set overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 provide a balanced assessment of limitations. C142 is supported by the performance data throughout the paper. C143 is supported by Figure 7d and established knowledge about HADDOCK's limitations. C144 is a logical inference from the training set contamination issue (C130-C131). This honest assessment of limitations strengthens the credibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Protein-protein interactions are essential for cellular processes, and structure characterization is important for mechanistic investigation and therapeutic development. However, experimental structures are often missing due to costly and time-consuming methods, necessitating computational approaches. Inter-protein contact prediction serves as an intermediate step that can assist docking, guide interfacial design, and be extended to predict novel PPIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide standard background and motivation, all supported by appropriate citations. These are well-established facts in the field and provide appropriate context for the work. No novel claims are made in this section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior work on inter-protein contact prediction includes coevolutionary analysis methods (with limitations for heteromeric and homomeric PPIs) and deep learning methods (ComplexContact, GLINTER, CDPred, DeepHomo, DeepHomo2, DRN-1D2D_Inter). Recent work has shown that PLM embeddings are effective features, and that sequence, MSA, and coevolutionary information complement each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C34 provide a comprehensive literature review with appropriate citations. The characterization of prior methods' strengths and limitations is fair and well-documented. The authors' previous work (DRN-1D2D_Inter, C31-C34) is appropriately positioned as demonstrating the value of PLM embeddings, which motivates the current structure-informed approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "PLMGraph-Inter uses embeddings from three PLMs: ESM-1b (1280-dim sequence embeddings), ESM-MSA-1b (768-dim MSA embeddings), and ESM-IF (512-dim structure embeddings), combined with PSSM (20-dim), resulting in 2586-dim node features. The 2D features have 148 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C166-C171 are straightforward methodological details about feature dimensions. These are clearly stated and internally consistent. The dimensions are appropriate for the respective PLMs and the total dimensionality calculations are correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "GVP is a graph neural network module with scalar and vector tracks that performs rotationally invariant transformations on scalar features and rotationally equivariant transformations on vector features. GVPConv follows the message passing paradigm and uses GVP to update node embeddings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 accurately describe GVP and GVPConv based on citations to Jing et al., 2021a,b. These are established methods that PLMGraph-Inter builds upon. The description is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The dimensional hybrid residual block can enlarge the effective receptive field, helping improve model performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by citation to the authors' previous work (Si and Yan, 2021). This is an established technique that is appropriately applied in PLMGraph-Inter's residual network module.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "PLMGraph-Inter was trained using sevenfold cross-validation on 7362 PPIs, with AdamW optimizer (learning rate 0.001), singularity enhanced loss function, and learning rate decay strategy. Implementation used PyTorch v.1.11 on NVIDIA A100 GPU with batch size 1 and sequence length limited to 400 due to memory constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C182 provide detailed training protocol and implementation details. These are clearly stated and appropriate for the task. The sequence length limitation (C181-C182) is a practical constraint that is transparently acknowledged. The training protocol is standard and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "DockQ is used to evaluate predicted protein complex structures, with thresholds: <0.23 (incorrect), 0.23-0.49 (acceptable), 0.49-0.8 (medium quality), \u22650.8 (high quality).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C187 accurately describe the DockQ metric and its interpretation thresholds, supported by citation to Basu and Wallner, 2016. This is a standard evaluation metric in the field.",
+    "result_type": "MINOR"
+  }
+]

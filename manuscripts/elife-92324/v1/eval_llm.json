@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Abl kinase is regulated by the assembly state of its regulatory core (SH3-SH2-KD domains), where an assembled core corresponds to low activity and a disassembled core corresponds to high activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the fundamental regulatory mechanism of Abl. This is well-supported by extensive structural data (crystal structures, NMR), kinase activity assays showing 10-100 fold activity differences (C30), and PCA analysis distinguishing assembled vs. disassembled states (C66-C69). The relationship is consistently demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C45",
+      "C46",
+      "C60",
+      "C61",
+      "C62",
+      "C80",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Type II ATP site inhibitors (e.g., imatinib) disassemble the Abl regulatory core by generating a force from the KD N-lobe onto the SH3 domain through rotation of the N-lobe by 5-10\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C45-C46 establish the mechanism, supported by NMR chemical shift data (C60-C62), PCA analysis (C66-C67, C76-C80), and structural observations (C116-C118). The mechanism is corroborated by previous work (Sonti et al., 2018) and consistently demonstrated across multiple experimental approaches including SAXS, NMR relaxation, and RDC data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C96",
+      "C97",
+      "C98",
+      "C104",
+      "C137"
+    ],
+    "result": "The C-terminal \u03b1I-helix exerts a force (F\u03b1I,SH2) toward the SH2 domain that correlates with both kinase activity and type II inhibitor-induced disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 state the main finding, strongly supported by truncation experiments (C83-C88) showing stepwise activity reduction (30-fold decrease for Abl83-515), highly significant correlations (Pearson r=0.89 for PC1 vs vmax in C97, r=0.98 for PC2 vs vmax in C100), and NMR data (C96-C98, C104). The correlation analysis (C137) firmly establishes the relationship between the \u03b1I-helix force, activity, and core disassembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Sequential C-terminal truncations of the \u03b1I-helix result in progressively reduced protein expression yields, with Abl83-515 showing ~20-fold reduction compared to Abl83-534.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 describe expression and purification results supported by western blot data (Figure 2B) and quantified yields (Figure 2C). The rationalization based on loss of stabilizing interactions (C55-C56) is structurally informed. However, the severe instability of partial truncations (C51) limits the experimental scope, though this is acknowledged and worked around by focusing on stable constructs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Principal component analysis of SH3 and SH2 domain NMR chemical shifts distinguishes assembled from disassembled Abl conformations, with PC1 capturing core assembly/disassembly and PC2 capturing local interface rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C75 describe the PCA methodology and results. The analysis includes 113 resonances (C64) with PC1+PC2 explaining 77% of variance (C65). PC1 clearly separates assembled/disassembled states (C66-C69), with affected residues clustering at the SH3/SH2 interface (C70-C72). PC2 captures more subtle effects from type I inhibitors and \u03b1I-helix modifications (C73-C75). The approach is well-validated and consistently applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "PCA of KD resonances for type I vs. type II inhibitor complexes shows that type II inhibitors affect residues adjacent to the A-loop and P-loop, corroborating the proposed mechanical force mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 describe KD-specific PCA analysis that clearly separates type I from type II inhibitors (C77). The PC1 loadings identify affected residues near the A-loop and P-loop (C78), supporting the inference that these residues feel a force (C79). This corroborates the previously proposed mechanism (C80) with new experimental evidence, though the mechanism itself was established in prior work (Sonti et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "PCA of all SH3-SH2-KD resonances in apo forms separates wild-type Abl83-534 from truncated and E528K mutant forms, with PC1 loadings indicating localized structural changes near the \u03b1I-helix and myristoyl pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe PCA results showing clear separation of wild-type from mutants (Figure 4D) with PC1 loadings localized to the \u03b1I-helix region (Figure 4E). This provides structural evidence for the effects of \u03b1I-helix modifications, supporting the mechanical model. The analysis is appropriate and well-executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C122",
+      "C123",
+      "C124",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The E528K mutation associated with ABL1 malformation syndrome disrupts a salt bridge with R479, increasing the F\u03b1I,SH2 force and resulting in >2-fold increased kinase activity and enhanced imatinib-induced core disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 and C89-C95 establish the E528K mutation effects, supported by structural analysis of the E528-R479 salt bridge (Figure 5C), kinase activity assays showing >2-fold increase (C93, Table 1), and NMR data showing enhanced disassembly (C92). The mechanism is explained through increased F\u03b1I,SH2 force (C124) with PC2 score evidence (Figures 4D, 6B). The clinical association (C8, C39-C40) is well-cited. This provides a molecular explanation for the disease phenotype (C145-C147).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C119",
+      "C120",
+      "C121",
+      "C126",
+      "C142"
+    ],
+    "result": "The allosteric inhibitor asciminib reduces Abl activity by fixating the \u03b1I-helix, reducing the F\u03b1I,SH2 force, and stabilizing the assembled core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 state the finding, supported by kinase activity assays showing reduced vmax (Figure 5A, Table 1) and the mechanical model (C119-C121, C126, C142). The mechanism is consistent with previous observations that allosteric inhibitors reduce \u03b1I'-helix dynamics (Jahnke et al., 2010) and can reassemble type II inhibitor-disassembled cores (C47). The data support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The PC2 score of apo \u03b1I-helix mutants correlates with kinase activity (Pearson r=0.98), with the strongest chemical shift changes occurring at the SH2/KD C-lobe interface, and this PC2 score correlates with the PC1 score of imatinib-bound forms (r=0.94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 describe highly significant correlations supported by quantitative analysis (Figure 6B-C). The PC2 score vs. vmax correlation (r=0.98, C100) is exceptionally strong, and the PC2 loadings identify specific SH2 residues (C102). The correlation between PC1 (imatinib) and PC2 (apo) scores (r=0.94, C103) links the two mechanisms. These correlations are statistically robust and mechanistically informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C131",
+      "C138"
+    ],
+    "result": "The F\u03b1I,SH2 force is transmitted from the \u03b1I-\u03b1I' loop (residues F516, Q517, S520, I521) to the SH2 domain surface centered around residue V190.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 identify the structural basis for force transmission through structural superposition and NMR analysis. The \u03b1I-\u03b1I' loop residues clash with SH2 residues that contact residues with strong PC2 loadings (Figure 6F). This establishes the molecular pathway for the F\u03b1I,SH2 force (C131, C138). The structural analysis is sound and consistent with the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "A mechanical model of Abl regulation involves two forces (FKD-N,SH3 and F\u03b1I,SH2) acting on the KD/SH2SH3 interface, with core disassembly required for high activity and the core existing in a delicate equilibrium between assembled and disassembled states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 and C139-C141 present the refined mechanical model based on the current data and previous work (Sonti et al., 2018). The model is supported by: (1) KD N-lobe wobbling observed by NMR (C111), (2) \u03b1I'-helix flexibility (C113), (3) combined effects leading to moderate activity (C115), and (4) the delicate equilibrium demonstrated by the sensitivity to mutations and inhibitors. The model integrates all experimental observations coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The F\u03b1I,SH2 force originates mainly from the \u03b1I-\u03b1I' loop rather than the \u03b1I' helix itself, as evidenced by Abl83-519 (missing \u03b1I') showing similar behavior to wild-type, while Abl83-515 (missing the loop) shows drastically reduced activity and force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 establish the specific contribution of the \u03b1I-\u03b1I' loop through comparison of truncation effects. Abl83-519 maintains activity and disassembly propensity (C128), while Abl83-515 shows near-complete activity loss (C129, ~30-fold reduction) and reduced force (C130). This differential effect clearly implicates the loop (residues 516-519) as the primary force-generating element, consistent with the structural analysis (C105-C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The \u03b1I-\u03b1I' loop is flexible with various conformations observed in different structures, and the F\u03b1I,SH2 force is likely exerted by steric clashes from the conformational ensemble of this flexible loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C132 states the loop flexibility based on structural observations, which is supported. However, C133 proposes that force is exerted by steric clashes from the conformational ensemble, which is explicitly labeled as speculation ('Presumably'). While this is a reasonable hypothesis consistent with the data, it lacks direct experimental validation of the dynamic ensemble or measurement of forces from specific conformers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Substrate binding opens the Abl core in a similar manner to imatinib, requiring P-loop and N-lobe movement of 1-2 \u00c5 toward the SH3 domain, with the \u03b1I-helix playing an essential role in both substrate- and imatinib-induced opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 connect the imatinib-based experimental tool to physiological substrate binding. The structural analysis (C149-C150) is based on previous work (Sonti et al., 2018; Levinson et al., 2006) showing similar N-lobe motions. The current NMR and activity data (C152) establish the \u03b1I-helix role in both processes. The inference that substrate binding acts similarly to imatinib (C151) is well-supported by the structural similarity and the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The Abl83-534 construct lacks the myristoylated N-cap, and while it is predominantly assembled, addition of myristoyl would further stabilize the assembled conformation; myristoyl dissociation may be a first step in activation of native Abl 1b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C154 accurately describe the experimental system and its limitations, with C154 supported by previous work (Skora et al., 2013). Claim C155 is a reasonable inference based on the asciminib mechanism. However, C156 is explicitly speculative ('may be') and represents a hypothesis about native Abl 1b activation that is not directly tested. The construct limitation is acknowledged but the implications for native protein are uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on Abl function, CML pathology, current therapies, and the knowledge gap regarding the molecular mechanism of allosteric-orthosteric inhibitor interplay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 provide established background information about Abl biology, CML, and therapeutic approaches, all supported by appropriate citations to the literature. These claims establish the context and motivation for the study. Claim C22 identifies the knowledge gap that the study addresses. All statements are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Background on Abl regulatory core structure, assembly mechanisms, \u03b1I-helix conformations, allosteric inhibitor development, disease mutations, and previous observations about core flexibility and inhibitor-induced disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C50 provide detailed background on Abl structure and regulation, all supported by citations to crystal structures and previous studies. These establish the foundation for the current work, including: core architecture (C23-C28), activity reduction by assembly (C29-C30), \u03b1I-helix conformations (C33-C36), allosteric inhibitor development (C37-C38), disease mutations (C39-C41), and previous observations about flexibility and inhibitor effects (C42-C50). All are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Previous studies have noted allosteric connections between Abl ATP site and myristate site, including binding cooperativity and structural changes detected by hydrogen exchange mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 acknowledge prior observations of allosteric effects, supported by citations (Kim et al., 2023; Zhang et al., 2010). This appropriately contextualizes the current work within the existing literature and distinguishes the novel high-resolution mechanistic explanation provided by the current study from previous observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "All observations were obtained under non-phosphorylated conditions, and phosphorylation would lead to additional strong activating effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 clearly state an important experimental condition (C143) and acknowledge that phosphorylation would have additional effects (C144) based on established knowledge of kinase regulation. This is an appropriate limitation statement that helps interpret the results in the context of cellular regulation where phosphorylation plays a major role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "The Abl 1a isoform lacks N-terminal myristoylation, and it is unclear whether other moieties bind to the myristoyl pocket of Abl 1a during cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C157 states established knowledge about Abl isoforms. Claim C158 identifies a knowledge gap regarding potential myristoyl pocket binders in Abl 1a. This is an appropriate acknowledgment of the limitations in understanding how the regulatory mechanism applies to the non-myristoylated isoform.",
+    "result_type": "MINOR"
+  }
+]

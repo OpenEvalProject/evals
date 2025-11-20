@@ -1,0 +1,516 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C75",
+      "C76"
+    ],
+    "result": "At least one intron of each observed endogenous gene (CPS1, EEF2, TM4SF1, FKBP5) is spliced post-transcriptionally, as evidenced by dispersed pre-mRNA containing introns observed away from transcription sites in multiple cell lines. This dispersal is a generic feature not dependent on cell line type, and introns are never observed in cytoplasmic mRNA, indicating complete splicing before nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 are well-supported by RNA FISH data (Figure 1D) showing dispersed pre-mRNA for all tested genes across multiple cell lines. The observation that introns are absent from cytoplasmic mRNA (C75-C76) provides additional validation that these dispersed intermediates represent bona fide splicing substrates rather than degradation products. The consistency across transformed and non-transformed cell lines strengthens the generalizability of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Expansion microscopy reveals that pre-mRNA form clouds around transcription sites with a diameter of approximately 0.3 \u03bcm, indicating a transcription-site-proximal slow-moving zone. The observed concentration of pre-mRNA (235 molecules/\u03bcm\u00b3) far exceeds predictions from free diffusion models (18 molecules/\u03bcm\u00b3), and both 5' and 3' ends form similarly sized clouds containing unspliced introns, demonstrating that splicing occurs post-transcriptionally within this zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C29 are strongly supported by expansion microscopy data (Figures 2C-I) and quantitative modeling. The mathematical comparison between observed and predicted concentrations (C21-C23) provides rigorous evidence against free diffusion. The observation of similarly sized 5' and 3' clouds (C24) with retained introns (C28) directly demonstrates post-transcriptional splicing within the proximal zone. Validation using STORM microscopy (C81) and isotropic expansion controls (C80) address potential technical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C18"
+    ],
+    "result": "Live-cell imaging of MS2-GFP labeled transcripts shows that the majority of transcription sites (141 of 205 images) exhibit substantial eccentricity (>0.6), indicating that RNA are retained near the transcription site for some time following transcription, corroborating the existence of a slow-moving zone observed by expansion microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by quantitative analysis of live-cell imaging data (Figure 3C-D). The use of eccentricity as a metric to distinguish diffraction-limited spots from larger blobs is methodologically sound. The observation that 69% of images show substantial eccentricity provides independent validation of the slow-moving zone hypothesis from a complementary technique that does not involve fixation or expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Splicing of different introns within the same primary transcript can occur in any order, as demonstrated by observing various patterns of splicing intermediates. Some intron pairs show strong ordering (94% of FKBP5 intermediates contain intron 8 without intron 5) while others show lack of ordering (50.3% of EEF2 intermediates contain intron 2 without intron 1), and this lack of ordering is independent of genomic distance between introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C95-C97 are supported by quantitative analysis of splicing intermediates using two-color RNA FISH. The use of a two-color control for the same intron (TM4SF1 intron 4) to establish a noise floor (C93) strengthens confidence in the measurements. The observation of both ordered and unordered splicing patterns across different intron pairs provides robust evidence for the independence model, though the authors appropriately note limitations for rapidly spliced introns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C70"
+    ],
+    "result": "Upon splicing inhibition, pre-mRNA exhibit three distinct trafficking behaviors: nuclear dispersal (7 genes), compartmentalization near nuclear speckles (3 genes: EEF2, GAPDH, RPL13A), or no change (6 genes). For compartmentalized genes, both 5' and 3' ends fill the entire compartment, and these genes are the closest to speckles even without inhibitor treatment, suggesting gene-specific, speckle-mediated retention of pre-mRNA until splicing is completed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 and C70 are well-supported by RNA FISH combined with immunofluorescence (Figures 4B-G) and corroborated by TSA-Seq 2.0 data (C43, C122). The observation that 5' and 3' ends both fill compartments (C41) effectively rules out tethering models. The consistency with published sequencing-based metrics of speckle proximity strengthens the conclusion. However, the reliance on splicing inhibition (acknowledged in C127) is a limitation, as this perturbation may alter normal trafficking patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C58",
+      "C59",
+      "C98",
+      "C99",
+      "C100",
+      "C103"
+    ],
+    "result": "Intron dispersal is not an inherent property of each intron but can vary with transcription level. Upon dexamethasone induction of FKBP5, some introns (1 and 8) showed increased dispersal and a significant increase in distal post-transcriptional splicing (0% to 22% for intron 1, 0% to 29% for intron 8), while intron 9 showed no change, suggesting possible local depletion of splicing factors at high transcription rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 and C58-C59 are supported by time-course RNA FISH data following dexamethasone treatment (Figure 5B-D). The differential response of different introns within the same gene (C49) strengthens the conclusion that dispersal is not intrinsic to each intron. The hypothesis of local splicing factor depletion (C51, C103) is reasonable but remains speculative, as direct measurements of splicing factor concentrations were not performed. The logical framework comparing expected versus observed patterns (C102) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C36",
+      "C37",
+      "C82",
+      "C105",
+      "C106"
+    ],
+    "result": "Pre-mRNA are not tethered to the site of transcription while moving through the transcription-site-proximal compartment, as evidenced by similarly sized 5' and 3' clouds in expansion microscopy, lack of colocalization with RNA polymerase II, and similar sizes of 3' and post-3' transcription sites. This contrasts with prior models suggesting exons remain tethered to polymerase II during splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C105-C106 are supported by multiple lines of evidence: expansion microscopy showing separate 5' and 3' clouds (C24), immunofluorescence showing lack of overlap with polymerase II (C36-C37), and RNA FISH beyond the poly-A site (C82). The authors appropriately acknowledge limitations in detecting single polymerase II molecules and incomplete labeling of pre-mRNA (C37). The comparison to prior work (Dye et al., 2006; Alexander et al., 2010) is fair, and potential explanations for discrepancies (species differences, resolution limits) are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C7",
+      "C55",
+      "C114",
+      "C115"
+    ],
+    "result": "The results support a unified model in which splicing occurs continuously and post-transcriptionally while pre-mRNA move through a slow-moving zone near the transcription site. This model reconciles conflicting reports of co-transcriptional versus post-transcriptional splicing, as fractionation approaches may have interpreted splicing in this proximal zone as co-transcriptional due to proximity to the transcription site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C114-C115 represent the central synthesis of the manuscript's findings. The model is well-supported by the convergent evidence from expansion microscopy, live-cell imaging, and RNA FISH. The reconciliation with prior fractionation studies (C114-C115) is logical and supported by citations. However, the model remains somewhat speculative regarding the physical nature of the slow-moving zone (C60-C62) and would benefit from direct measurements of RNA diffusion rates and splicing factor dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Dispersal patterns for individual introns are not necessarily consistent between HeLa and CRL-2097 cells, suggesting that splicing patterns may be influenced by cellular context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by RNA FISH data comparing different cell lines (Figure 1D). However, the evidence is somewhat limited as only two cell types are compared for a subset of genes, and the manuscript does not provide detailed quantitative analysis of these differences. The conclusion that cellular context influences splicing patterns is reasonable but could be strengthened with more systematic comparisons and mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Pre-mRNA contain fewer introns as they increase in distance from the transcription site, and pulse-chase experiments from prior work show high splicing yield, suggesting that most pre-mRNA do not follow a dead-end degradation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by data in Figure 1\u2014figure supplement 2D, and claims C14-C15 are supported by citations to prior pulse-chase experiments. This provides important validation that dispersed pre-mRNA represent bona fide splicing intermediates rather than degradation products. However, the authors appropriately acknowledge (in the text) that this remains an assumption that could be definitively tested with live-cell tracking of individual mRNA throughout their lifetime.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "There is a modest association between splicing index (from nascent RNA sequencing) and both mean dispersal and transcription site size (from RNA FISH), suggesting consistency between sequencing and imaging assessments of distal post-transcriptional splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are supported by comparison of sequencing and RNA FISH data (Figure 1\u2014figure supplement 3B-D). However, the association is described as 'modest' and the authors note that 'more work is required to fully establish a quantitative correspondence between the metrics.' The sequencing approach involves both metabolic labeling and fractionation, which may introduce biases. The correlation provides some validation but is not strong enough to definitively establish equivalence between the two methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The relative positions of 5', 3', and middle intron clouds adopt a wide variety of conformations in expansion microscopy, suggesting that linear genomic order may not be strictly maintained during transit through the proximal zone. Intron length and splice site strength do not affect dispersal, suggesting these are not major contributors to slow-moving zone dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by expansion microscopy data (Figure 2C) and analysis of intron properties (Figure 2\u2014figure supplement 3). The observation of varied conformations is qualitative but visually apparent. The lack of correlation between intron properties and dispersal (C34-C35) is based on limited data but provides useful negative results. These findings support the model of untethered, post-transcriptional splicing but are secondary to the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C116"
+    ],
+    "result": "The distance between 5' and 3' ends of RNA at transcription sites is greater than in mature mRNA, suggesting transcripts are either unpackaged or longer due to retained introns. If due to intron retention, this would support the post-transcriptional splicing model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by expansion microscopy data (Figure 2I), and C64 provides reasonable interpretations. However, the authors acknowledge difficulty in determining which 5' and 3' spots correspond to the same molecule (C117), limiting the precision of these measurements. The suggestion that increased distance supports post-transcriptional splicing (C116) is logical but somewhat circular, as intron retention is already established by other data. This observation provides additional supporting evidence but is not critical to the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The results suggest that introns are spliced independently of one another and that the 'first come, first serve' model (5' to 3' splicing order) does not hold, based on observing low splicing rates for 5' introns of some genes. This conclusion contrasts with other work suggesting splicing of particular introns is controlled by splicing of other introns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by RNA FISH data showing dispersal of 5' introns and various splicing intermediate patterns. The rejection of the 'first come, first serve' model is consistent with prior work (C120). However, the conclusion of complete independence (C66) may be overstated, as some intron pairs do show strong ordering (C96). The contrast with other work (C121) is acknowledged but not fully resolved. The evidence supports a model of flexible splicing order but does not definitively rule out all forms of intron-intron coordination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The size of 5', intron, and 3' clouds, the number of spots in each cloud, and the area of live-cell transcription sites varied considerably from cell to cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by visual inspection of data in Figures 2C, H, 3A, B. This observation of cell-to-cell variability is descriptive and provides context for understanding the heterogeneity in splicing dynamics. However, no quantitative analysis of this variability is provided, and the biological significance is not explored. This is an interesting observation that could motivate future work but is not central to the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A natural candidate for the slow-moving zone is chromatin in the vicinity of the gene, supported by prior live imaging studies showing slow mRNA diffusion in chromatin-dense regions and sequencing studies showing mRNA spends more time on chromatin than in nucleoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is explicitly labeled as speculation, and C61-C62 cite prior work to support the chromatin hypothesis. While this is a reasonable hypothesis consistent with the data, it remains speculative as the authors do not directly test the physical nature of the slow-moving zone. Alternative explanations (e.g., phase-separated condensates, protein-RNA complexes) are not systematically excluded. This represents an important direction for future work but is not definitively established by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C84",
+      "C85"
+    ],
+    "result": "Expansion of transcription sites is isotropic, as confirmed by imaging the same cells before and after expansion and by comparison to STORM microscopy. The 3' clouds are consistently larger than 5' clouds, and this is unlikely to be a dye-bias effect based on dye-swap experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are well-supported by control experiments (Figure 2\u2014figure supplement 1B and 2A-B) that validate the expansion microscopy approach. Claims C84-C85 regarding differential cloud sizes are supported by dye-swap controls (Figure 2\u2014figure supplement 1C). These are important technical validations that strengthen confidence in the expansion microscopy results. The differential cloud sizes (C84) may reflect biological differences in 5' versus 3' dynamics but are not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "Varying the colocalization threshold from 0.13 \u03bcm to 2.6 \u03bcm did not significantly change dispersal patterns, and several different methods for choosing transcription sites showed qualitatively similar results, demonstrating that detection of dispersal is not dependent on methodological choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C90-C91 are supported by parameter sweep data (Figure 1\u2014figure supplement 2A and 1A). These robustness checks are important for validating the computational analysis pipeline and demonstrating that the main findings are not artifacts of arbitrary threshold choices. This strengthens confidence in the quantitative dispersal measurements but is primarily a methodological validation rather than a biological finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Results were consistent with sequencing-based metrics (TSA-Seq 2.0), and those metrics are largely consistent across multiple cell types, suggesting the speckle-associative property is not subject to cell-type-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by comparison to published TSA-Seq 2.0 data (Figure 4H). The consistency across cell types in the sequencing data supports the generalizability of the speckle association findings. However, the authors only directly test three genes for compartmentalization behavior, and the inference about lack of cell-type-specific regulation is based primarily on the sequencing data rather than direct experimental validation across multiple cell types in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C124"
+    ],
+    "result": "The association between specific genes and speckles has been observed in prior studies, and current observations are consistent with prior work showing certain genes are retained post-transcriptionally at speckles during splicing and then released for nuclear export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C124 appropriately cite and contextualize prior work on gene-speckle associations. The current findings (C42-C45) are consistent with this prior work and extend it by demonstrating the phenomenon occurs during splicing inhibition and by characterizing which genes exhibit this behavior. This represents appropriate integration of current findings with the existing literature but is primarily confirmatory of prior observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Splicing is the stepwise molecular process by which introns are removed from pre-mRNA and exons are joined. Prior work suggests splicing occurs either very shortly after transcription of splice junctions or after full transcription of pre-mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide background context and are supported by appropriate citations to prior work. C1 is a standard definition of splicing, and C2-C3 accurately represent the conflicting views in the literature that motivate the current study. These are not novel findings but appropriate framing of the scientific question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The genes CPS1, EEF2, TM4SF1, and FKBP5 were chosen based on specific criteria: CPS1 for being long and highly expressed, EEF2 as a highly expressed housekeeping gene, TM4SF1 for being highly expressed with sequencing evidence of post-transcriptional splicing, and FKBP5 for being inducible by dexamethasone in A549 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 describe the rationale for gene selection and are supported by the stated criteria. The selection appears reasonable for testing the hypotheses, though the focus on highly expressed genes (acknowledged in C113) may limit generalizability to lowly expressed genes. This is methodological context rather than a scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "A large range in the number of pre-mRNA was observed per cell (from 0 to ~20), which varied from intron to intron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by data in Figure 1\u2014figure supplement 1B. This observation documents the variability in the system but is primarily descriptive. The biological significance of this variability is not explored, though it may reflect differences in transcriptional bursting, splicing kinetics, or cell cycle stage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "RNA polymerase II can transcribe beyond the poly-A site, as shown in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by appropriate citations to prior work. This is established knowledge that provides context for interpreting the observation of 3' clouds and motivates the control experiment with post-3' probes (C82). This is background information rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "In some cases, more 5' spots than 3' spots were observed, possibly due to interception of ongoing transcriptional bursts. In other cases, more 3' spots than 5' spots were observed, possibly suggesting pileup of transcripts at the 5' end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are explicitly labeled as speculation and are based on qualitative observations. While the proposed explanations are plausible, they are not systematically tested. The variable spot counts could also reflect technical factors such as differential probe efficiency or RNA fragmentation during expansion. These observations are interesting but remain speculative without additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C89",
+      "C92"
+    ],
+    "result": "Intron spots that did not colocalize with exon spots were presumed to be degradation products or non-specific background and were discarded. The chosen strategy likely grouped together signal from multiple pre-mRNA at transcription sites, rendering them indistinguishable at this resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C92 describe methodological assumptions and limitations. The assumption that non-colocalized intron spots represent background (C89) is reasonable given that <25% of intron spots fall into this category, though some could represent genuine spliced introns. The acknowledgment that multiple pre-mRNA are grouped at transcription sites (C92) is an important limitation that motivates the use of expansion microscopy to resolve individual molecules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The fourth intron of TM4SF1 was labeled with two colors to estimate measurement confidence and establish a noise floor. The dye used to label each intron did not affect measurements, as shown by dye-swap experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 describe important technical controls. The two-color labeling of the same intron (C93) provides a rigorous way to estimate false positive rates in the splicing intermediate analysis. The dye-swap experiments (C94) rule out dye-specific artifacts. These are essential methodological validations that strengthen confidence in the splicing order analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The method may potentially miss post-transcriptional splicing occurring after a transcriptional burst has concluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is an acknowledgment of a methodological limitation. This is a valid concern, as the RNA FISH approach captures a snapshot in time and may underestimate post-transcriptional splicing if it occurs after transcription has ceased and pre-mRNA have dispersed beyond detection. This limitation is appropriately noted and suggests the findings may represent a lower bound on the extent of post-transcriptional splicing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C111"
+    ],
+    "result": "Discrepancies with prior studies suggesting immediate co-transcriptional splicing may arise from species-specific differences (e.g., polymerase II pausing in yeast), increased resolution of expansion microscopy, or different assays used to measure splicing timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 and C111 propose potential explanations for discrepancies with prior work but are explicitly speculative. While these are reasonable hypotheses, they are not directly tested. The species-specific explanation (C107-C108) is plausible given documented differences in polymerase II behavior between yeast and mammals. The resolution explanation (C109) is also reasonable but would require direct comparison of the same system with different methods to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The current model stands in contrast to prior studies suggesting splicing happens immediately (within 15-20 s or 45-100 nucleotides) after transcription of each intron is completed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 accurately represents a contrast with prior work and is supported by appropriate citations. This highlights the significance of the current findings in challenging the prevailing model of immediate co-transcriptional splicing. However, the authors appropriately acknowledge that discrepancies may arise from methodological and species differences (C111) rather than definitively refuting prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Increased transcription level correlates with intron dispersal, suggesting the percentage of splicing occurring away from the transcription site is regulated by transcription level for at least some introns. This may explain why post-transcriptional splicing was observed for all tested genes, as all were highly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by the dexamethasone time-course data (Figure 5), and C113 is a reasonable speculation based on this finding. However, C113 also highlights a potential limitation: the focus on highly expressed genes may bias the results toward detecting post-transcriptional splicing. Testing lowly expressed genes would strengthen the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "It is difficult to know which particular 5' and 3' spots correspond to the same pre-mRNA molecule near the transcription site. Further expansion or live tracking of individual mRNA might help make those connections and refine measurements of distances between 5' and 3' ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 acknowledge a methodological limitation and propose future directions. This is an honest assessment of the current approach's limitations. The inability to definitively pair 5' and 3' ends of the same molecule limits the precision of some measurements (e.g., C63) but does not undermine the main conclusions, which are based on population-level observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The study has several limitations: most experiments use fixed cells capturing single time points, splicing inhibition experiments may impact cellular physiology, and the study does not address relationships between splicing and other co-transcriptional events. Future work with live-cell imaging and investigation of other mRNA processing events could strengthen conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 provide an honest assessment of study limitations and future directions. These are appropriate caveats that help readers interpret the findings. The reliance on fixed cells (C125) is a significant limitation for studying dynamic processes, though the live-cell imaging data (Figure 3) provides some validation. The acknowledgment that splicing inhibition may perturb normal physiology (C127) is important for interpreting the speckle localization results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "A major outstanding question is what sequence-based features determine the distinct behaviors of different introns. Large-scale imaging and synthetic libraries of introns may be required to address this question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 identify an important open question and propose future approaches. The current study shows that intron length and splice site strength are not major determinants (C34-C35), but does not systematically identify what features do control intron-specific behaviors. This represents an important direction for future work but is beyond the scope of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C51",
+      "C101",
+      "C102"
+    ],
+    "result": "The increased dispersal of some introns during periods of increased transcription may be due to local depletion of splicing factors. If splicing factor concentration remained constant, the rate of splicing and percentage of unspliced pre-mRNA far from the transcription site would be unchanged regardless of transcription rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51 and C101-C102 propose a hypothesis to explain the transcription-dependent dispersal but are explicitly speculative. The logical framework (C102) is sound, and the observation of increased distal splicing with increased transcription (C50, C103) is consistent with the hypothesis. However, no direct measurements of splicing factor concentrations or localization are provided. Alternative explanations (e.g., saturation of splicing machinery, changes in RNA structure at high transcription rates) are not systematically excluded.",
+    "result_type": "MINOR"
+  }
+]

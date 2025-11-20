@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C10"
+    ],
+    "result": "The manuscript establishes the background context that drug-induced cardiac arrhythmias are a known safety concern, and that current regulatory guidelines require assessment of hERG blockade prior to human trials, with standard protocols focusing primarily on IKr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8, and C10 describe well-established knowledge in cardiac safety pharmacology, supported by appropriate citations (Yap and Camm 2003, ICH 2005) and general scientific consensus. These background claims accurately represent the current state of drug safety assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The standard hERG assay is overly sensitive because it does not accommodate multi-channel effects, leading to premature abandonment of potentially useful drugs during pre-clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by citations (Martin et al. 2004, Hoffmann and Warner 2006) documenting the limitations of single-channel hERG assays. The inference that useful drugs are abandoned (C13) follows logically from the established over-sensitivity of the assay, though direct quantification of this impact is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C15"
+    ],
+    "result": "Multi-channel assessment using four key ion currents (IKr, ICaL, INaL, IKs) provides better risk assessment than single-channel approaches, and the safety pharmacology community is actively pursuing such multi-channel in vitro and in silico assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14, and C15 are well-supported by multiple citations (Pugsley et al. 2008, Colatsky et al. 2016, Mirams et al. 2011, and others) documenting the shift toward multi-channel assessment methods. The claim that four-channel assessment is better is supported both by prior literature and by the validation results presented in this study (C7, C67-C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors simulated 100,000 phenotypically diverse cardiomyocytes using a variant of the O'Hara-Rudy model optimized for long QT syndrome, with randomized conductance parameters to mimic natural variation, and classified cells as ectopic or benign based on the presence of early after-depolarizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C19, C16-C18, C20-C21, and C116-C118 describe the computational methodology with appropriate citations (O'Hara et al. 2011, Mann et al. 2016, Krogh-Madsen et al. 2017). The simulation parameters are clearly specified (1 Hz pacing, -70 mV stimulus, 0.5 ms duration, 1000 beat equilibration). The classification criteria for ectopic beats are explicitly defined (secondary peak >-50 mV, separated by \u2265100 ms).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Using logarithmic coordinates, ectopic and benign phenotypes were clearly segregated in parameter space, and multivariate logistic regression identified a linear decision boundary separating the two classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by visual evidence in Figures 2C and 2D showing clear separation of ectopic (red) and benign (gray) populations. The use of logarithmic coordinates is justified mathematically (C29-C30) and the logistic regression methodology is standard. Statistical significance of all regression coefficients is reported (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The axis of arrhythmia is defined as the line running orthogonally to the decision boundary, representing the shortest path to shift any cardiomyocyte into the ectopic regime, and the arrhythmogenic component of a drug is obtained by projecting the drug's action onto this axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present a mathematically sound framework. The logarithmic transformation of multiplicative drug effects into additive processes (C29-C30) is mathematically correct. The orthogonal projection onto the decision boundary (C31-C33) is a standard geometric approach for classification. The concept is well-illustrated in Figure 3A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C6"
+    ],
+    "result": "The risk metric assigns positive scores to drugs that shift electrophysiology toward the ectopic region and negative scores to drugs that shift away from ectopy, serving as a yardstick for quantifying arrhythmogenic risk from multi-channel block profiles alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C6 describe the interpretation and application of the risk metric. The mathematical formulation (Equation 3) is clearly presented, and the interpretation is logically consistent with the geometric framework. The metric's ability to quantify risk from channel blockade profiles is demonstrated through validation on 109 drugs (C7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C41",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The proportion of the natural population susceptible to a drug can be calculated by analyzing how the drug shifts the population density (represented as a symmetric multivariate Gaussian in logarithmic space) with respect to the decision boundary, exploiting the mathematical interchangeability of drug blockade and phenotypic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C38, C41, and C82-C84 present a mathematically elegant approach to population-level prediction. The log-normal distribution assumption for ion channel conductances (C38) is standard in the field (cited: Sobie 2009, Sadrieh et al. 2013). The mathematical insight that drug effects and phenotypic variation operate on the same parameters (C82-C83) is valid and enables population predictions without explicit simulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "For the case studies of Ajmaline and Linezolid at 25\u00d7 dose, the risk scores correctly predict that Ajmaline is pro-arrhythmic (risk score +1.16, making 26% of population susceptible) while Linezolid is not (risk score -1.18, making only 0.0095% susceptible compared to baseline 0.93%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56-C58 present specific quantitative predictions that align with clinical risk labels (Ajmaline is Class 1, Linezolid is Class 4). The calculations are shown in Figure 5 with clear visualization of the drug pathways and population shifts. The baseline ectopy rate of 0.93% is derived from the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The sizable negative risk score for Linezolid suggests it may have anti-arrhythmic properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is explicitly speculative (\"suggests that it may\") and extrapolates beyond the data. While the negative risk score is consistent with the model's predictions, actual anti-arrhythmic efficacy would require experimental validation. The claim is appropriately hedged but remains unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C64",
+      "C65"
+    ],
+    "result": "The action of multi-channel drugs follows curvilinear pathways in parameter space due to differing response rates of ion channels with dosage, causing risk scores to depend on dosage and reflecting the changing balance of ionic currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61, C64-C65 are supported by Figure 6 showing dose-dependent drug pathways. The curvature arises naturally from the Hill equation (Equation 7) with different IC50 values for each channel. The mathematical analysis of how curvature affects projection onto the axis of arrhythmia is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The method predicted clinical risk labels of 109 drugs with 88.1-90.8% accuracy across dosage levels (1\u00d7 to 32\u00d7), with AUROC values of 91.3% (5\u00d7 dose) and 91.5% (25\u00d7 dose), outperforming the conventional hERG assay (78.9% accuracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C67-C70 present the main validation results with clear quantitative metrics shown in Figures 7 and 8. The comparison to hERG assay performance (C68) is appropriately cited (Llopis-Lorente et al. 2020). The consistency of accuracy across dosages (88.1-90.8%) and high AUROC values (>91%) demonstrate robust performance. Sample size (n=109) is adequate for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The Credible Meds classification system categorizes drugs into four classes: Class 1 (known risk), Class 2 (possible risk), Class 3 (conditional risk), and Class 4 (no evidence of risk).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 accurately describe the Credible Meds classification system used for validation. This is a standard clinical risk stratification scheme appropriately cited and used as ground truth for model evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The major benefit of the metric is that it can be applied to novel drugs without conducting new computer simulations, requiring only ion current measurements from standard patch clamp techniques, with risk calculations simple enough to perform with pen and paper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C74-C77 describe the practical advantages of the method. The claim that simulations were only needed once to identify the axis (C76-C77) is supported by the methodology. The assertion that patch clamp data and simple calculations suffice (C74-C75) is valid given the linear projection formula (Equation 3), though \"pen and paper\" is somewhat hyperbolic for the full calculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The axis of arrhythmia encapsulates the principal relationship between ion channel blockade and early after-depolarizations, representing the most potent pro-arrhythmic combination theoretically possible, with the linear boundary assumption being crucial for generalizing findings across all cardiomyocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 explain the biological and mathematical interpretation of the axis. The linear boundary assumption (C80-C81) is justified as necessary for drug-independent analysis, though the authors acknowledge that nonlinear boundaries might fit individual cells better. This represents a reasonable trade-off between model complexity and generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Comparison to other methods shows that CiPA recommendations using CiPAORdv1.0 achieved 84-100% accuracy depending on technique and risk stratification; Passini et al. achieved 89% accuracy; Llopis-Lorente et al. achieved 92.7% with qNet and 94.5% with combined biomarkers, with early after-depolarizations being their worst biomarker at 78.9%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C87-C92 accurately report results from cited studies (Li et al. 2019, Passini et al. 2017, Llopis-Lorente et al. 2020). The comparisons are appropriate though complicated by different risk stratification schemes and datasets. The authors correctly note these differences and avoid direct comparisons where inappropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The Llopis-Lorente et al. method under-estimated the predictive power of early after-depolarizations by only exploring normal physiological limits where such events are rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is explicitly speculative (\"We suspect\") and offers a hypothesis for why early after-depolarizations performed poorly in the Llopis-Lorente study but well in the current study. While plausible, this explanation is not directly tested and represents conjecture about methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C100"
+    ],
+    "result": "The MICE model (Kramer et al. 2013) achieved 90.9% accuracy using only the difference between hERG and Cav1.2, with accuracy nearly identical to the current model albeit on different datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C100 accurately report the MICE model results (Kramer et al. 2013) and note the similarity in accuracy. The comparison is appropriately qualified by noting different datasets. The authors correctly identify the key difference: MICE coefficients lack biophysical interpretation while their model's coefficients define the axis of arrhythmia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Bnet is a simple linear model that predicts torsadogenic risk from net blockade of inward and outward currents, performing as accurately as CiPAORdv1.0 when adjusted for drug binding kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 accurately describe the Bnet model (Mistry 2018) with appropriate citations (Li et al. 2019, Mistry 2019, Han et al. 2019). The comparison sets up the authors' argument about balancing model complexity and biophysical realism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The current approach resolves the debate between model complexity and biophysical realism by using complex biophysical models to identify the ion channel-risk relationship, then reducing findings to a simpler linear model that retains biophysical description of multi-channel block but only as necessary to predict early after-depolarizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 articulate the methodological contribution of the study. The two-step approach (complex simulation to identify axis, then simple linear model for application) is well-executed and represents a valid synthesis of biophysical and statistical approaches. The limitation that the reduced model doesn't reproduce full action potentials (C107) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The benefits of this approach will accelerate adoption of computational assays in safety pharmacology and ultimately reduce the burden of animal testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 is explicitly speculative (\"We believe\") about future impact. While the method's advantages (simplicity, no need for repeated simulations) could facilitate adoption, actual impact on practice and animal testing remains to be demonstrated. This is an aspirational statement rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "The dataset was drawn from multiple sources with diverse experimental conditions, and drug potency measurements are known to differ prominently between laboratories and platforms, limiting the accuracy of predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110, C112 appropriately acknowledge limitations of the validation dataset. The heterogeneity of IC50 measurements (C110) is documented by citation (Kramer et al. 2020). The inference that this limits prediction accuracy (C112) is reasonable, though the model still achieved 88-91% accuracy despite this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The accuracy of the axis of arrhythmia is limited by the quality of the biophysical model, and since only one variant of the ORd model paced at 1 Hz was investigated, other models and pacing rates are likely to produce differing estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 appropriately acknowledge model-dependent limitations. The restriction to one model variant and pacing rate (C114) is clearly stated. The speculation that other conditions would yield different axes (C115) is reasonable and appropriately hedged. This represents good scientific practice in acknowledging scope limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C123",
+      "C124"
+    ],
+    "result": "The parameter domain (0.05 to 20 times baseline, spanning e^\u00b13) was chosen to cover the ectopic region without undue influence from biological extremes, with log-normal distribution parameters based on previous simulation experience, assuming independent variation of ion channel species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121, C123-C124 describe methodological choices for parameter space exploration. The domain choice (C120-C121) is justified pragmatically. The distribution parameters (C123) are based on prior work (cited: Sadrieh et al. 2013, 2014, Ballouz et al. 2021, TeBay et al. 2022). The independence assumption (C124) is standard though potentially oversimplified, as ion channel expression may be correlated in vivo.",
+    "result_type": "MINOR"
+  }
+]

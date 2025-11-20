@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C96"
+    ],
+    "result": "A non-negligible fraction of TADs (16% in mouse liver, 26% in HCT-116) is preserved after cohesin depletion, as identified by TopDom analysis of Hi-C data. This finding was not previously emphasized in the literature and represents a key observation that motivated the mechanistic investigations in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 provide quantitative evidence from two independent cell lines showing preservation of TADs after cohesin removal. The authors acknowledge methodological dependencies (C34) but demonstrate robustness across cell types. The finding is well-supported by direct analysis of experimental Hi-C data (C4, C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The Chromosome Copolymer Model (CCM) polymer simulations accurately reproduce experimental Hi-C contact maps for GM12878 chromosomes, with PCC of 0.83 between experimental and simulated Ward linkage matrices and good agreement in compartment structure and TAD sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple quantitative metrics (C38, C39) demonstrate agreement between simulations and experiments. The PCC of 0.83 and similar TAD sizes (~615 kb experimental vs ~565 kb simulated) provide strong validation. Compartment correspondence (C37) and checkerboard pattern reproduction (C35) further support model accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C45",
+      "C46",
+      "C51",
+      "C62",
+      "C97"
+    ],
+    "result": "Polymer simulations reveal that epigenetic switches across TAD boundaries are a predominant mechanism for TAD preservation after cohesin-associated CTCF loop deletion. In simulated GM12878 chromosomes, 50/216 P-TADs in Chr10 and 23/169 in Chr13 have epigenetic switches at their boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CCM simulations provide mechanistic insight (C6, C45, C51) supported by quantitative data (C46). The conclusion that epigenetic switches are a predominant factor (C62, C97) is well-supported by the simulation results showing TADs with switches are preferentially preserved. This represents a key mechanistic finding from the computational work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C60",
+      "C61",
+      "C63",
+      "C98"
+    ],
+    "result": "P-TADs exhibit sharp physical boundaries in 3D structures that can be identified through boundary probability analysis. Approximately 66% of P-TADs in simulated Chr10 and Chr13 show preferential positioning in single-cell domains, with ~85% of P-TADs with epigenetic switches displaying prominent boundary probability peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C60-C61 provide quantitative support for the presence of physical boundaries in P-TADs. The finding that boundary probabilities can identify P-TADs even without epigenetic switches (C53-C55, C98) is well-supported by simulation data. This represents an important complementary mechanism to epigenetic switches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Analysis of experimental Hi-C data shows that 280 P-TADs in mouse liver and 396 P-TADs in HCT-116 cells are associated with epigenetic switches. Additionally, a large number of P-TADs are accounted for by peaks in boundary probabilities in cohesin-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative findings (C66-C67) from experimental data analysis support the simulation predictions. The conclusion that epigenetic switches preserve TADs (C68) is well-supported. The additional contribution of boundary probabilities (C69) provides comprehensive explanation for P-TAD origins in experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The HIPPS method accurately reproduces Hi-C contact maps and reveals that combining epigenetic state information with physical boundaries from 3D structures explains the origin of P-TADs. Approximately 67% of P-TADs have high peaks in boundary probabilities, consistent with TopDom predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HIPPS method validation (C70) and quantitative agreement (C73) support the approach. The key conclusion that both epigenetic switches and physical boundaries must be combined (C75) is well-supported by the data. The consistency between different methods (C74) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C86"
+    ],
+    "result": "Single-cell structures calculated using HIPPS display TAD-like features in the absence of cohesin with cell-to-cell variations in distance matrices and boundary locations, in excellent agreement with imaging experiments. Boundary strength distributions are similar in WT and cohesin-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational predictions (C80, C82) show excellent agreement with experimental imaging data (C81, C84, C86). The finding of TAD-like structures at single-cell level without cohesin (C9, C82) is independently validated by comparison with Bintu et al. 2018. This represents strong validation of the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C100"
+    ],
+    "result": "Analysis of Micro-C data reveals that 525 out of 1536 P-TADs have enhancer-promoter or promoter-promoter (E-P/P-P) loops at their boundaries. These P-TADs with E-P/P-P interactions have strong physical boundaries even without cohesin, suggesting functional relevance for maintaining regulatory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative finding (C94) from Micro-C analysis is well-documented. The observation that TADs with E-P/P-P loops are preserved (C91) and have strong physical boundaries (C92) is supported by 3D structure analysis. The functional interpretation (C95, C100) is reasonable but somewhat speculative, though grounded in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C99"
+    ],
+    "result": "Preservation of a subset of TADs upon cohesin removal is a robust phenomenon observed across multiple cell lines (mouse liver, HCT-116, and predicted for GM12878), suggesting P-TADs may be a universal feature of chromosome organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding is supported by analysis of two experimental cell lines (C11) and predictions for a third (C99). The consistency across different cell types strengthens the conclusion of robustness. However, the claim of universality (C99) is somewhat speculative and would benefit from additional experimental validation in GM12878 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "After cohesin removal, A-type loci form larger spatial clusters consistent with enhanced compartmentalization observed in Hi-C maps. Most P-TADs with epigenetic switches show prominent boundary probability peaks in both WT and cohesin-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding of enhanced compartmentalization (C76) is consistent with prior literature and supported by 3D structure analysis. The observation about boundary probabilities in P-TADs (C77) provides structural explanation for the preservation mechanism. Both claims are well-supported by the computational analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C64"
+    ],
+    "result": "There are discordances between TAD boundaries identified by TopDom from contact maps and physical boundaries identified from 3D structures. Some P-TADs detected by TopDom have weak physical boundaries in 3D structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of discordance (C56-C57, C64) is well-documented in the analysis. This represents an important methodological finding about limitations of TAD-calling algorithms. The acknowledgment of these discrepancies (C58) strengthens the overall rigor of the study by recognizing method-dependent variations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C34"
+    ],
+    "result": "The percentage of P-TADs depends on both Hi-C resolution and the TAD identification algorithm used, though the finding that a non-negligible fraction is preserved remains robust across methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge methodological dependencies (C42, C34) while maintaining that the core finding is robust. This represents good scientific practice in recognizing limitations while asserting the validity of the main conclusion. The claim is well-supported by the comparative analyses presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The HIPPS method provides a computationally efficient approach for predicting 3D chromosome structures from Hi-C data without requiring extensive polymer simulations, with excellent agreement with imaging experiments validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological advantage of HIPPS (C101) is clearly stated and demonstrated through application to multiple datasets. The validation through comparison with imaging experiments (C102) provides strong support for the method's accuracy. This represents an important methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Polymer simulations demonstrate that ensembles of 3D structures provide insights into consequences of cohesin depletion at both single-cell and ensemble-averaged levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C65) is well-supported by the comprehensive analysis presented throughout the manuscript, including single-cell distance matrices, boundary probabilities, and comparison with ensemble Hi-C data. The claim represents a key conceptual contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The average TAD sizes calculated using TopDom (~565 kb) and boundary probability (~535 kb) methods are similar in Chr13, providing consistency between different identification approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative comparison (C59) shows reasonable agreement between methods, supporting the validity of using boundary probabilities as an alternative TAD identification approach. This provides methodological validation for the boundary probability analysis used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "TAD-like structures in single cells with and without cohesin have been independently observed using the strings and binders polymer model, consistent with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This citation (C83) to Conte et al. 2020 provides independent computational support for the finding of TAD-like structures without cohesin. The consistency across different modeling approaches strengthens confidence in the phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The authors propose that only a subset of TADs is conserved after cohesin depletion, potentially for functional reasons related to maintaining regulatory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This proposal (C93) is speculative and not directly tested in the manuscript. While the observation that some TADs are preserved is well-supported, the functional interpretation requires additional experimental validation such as gene expression analysis or functional perturbation experiments.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,467 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Spec-seq analysis reveals that E80A mutation does not alter CRX HD DNA-binding specificity (maintaining TAATCC preference), while K88N mutation dramatically changes specificity to TAAT/ATT/A (N88 HD motif). R90W shows slightly higher specificity than WT for the same consensus sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C54 are well-supported by quantitative Spec-seq data showing strong technical replicates (r=0.984 for WT), appropriate noise levels, and clear differences in binding energy patterns between mutants. The data demonstrate E80A has reduced specificity (more promiscuous binding), K88N has altered specificity (r=0.160 with WT), and R90W has increased specificity, all supported by energy logos and correlation analyses in Figures 1F-M.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ChIP-seq analysis at P14 shows that CRX E80A binds canonical WT sites, CRX R90W fails to bind significantly in vivo, and CRX K88N loses binding at canonical sites but gains binding at ectopic sites enriched for N88 HD motifs. In vivo binding changes are consistent with in vitro specificity changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C70 are supported by ChIP-seq data showing comparable Crx mRNA and protein levels across genotypes (C55-C56), appropriate developmental timepoint selection (C57-C60), and distinct binding patterns for each mutant (C61-C66). The consistency between Spec-seq and ChIP-seq motif enrichment (C67-C69) and the correlation between in vitro and in vivo binding changes (C70) are demonstrated through de novo motif analysis in Figure 2E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "RNA-seq correlation analysis with normal developmental timecourse reveals that E80A and K88N mutations affect CRX-dependent activated genes (CRX-DAGs) in opposite directions: E80A shows premature upregulation (correlating with later ages P14/P21), while K88N shows compromised early differentiation (weaker correlation with all ages). CrxK88N phenotype is more severe than loss-of-function CrxR90W/W.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C83 are supported by sample-wise Pearson correlation analysis comparing P10 mutant retinas with published developmental timecourse data (Figure 3A). The interpretation that E80A causes premature activation (C73-C74) and K88N compromises early differentiation (C75-C76) is well-justified by the correlation patterns. The comparison with R90W (C77-C81) demonstrates distinct mechanisms, though the inference about initiation vs. sustained differentiation (C78-C79) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Hierarchical clustering of CRX-DAGs reveals two groups: Group 1 (rod genes including Esrrb, Nrl) is upregulated in CrxE80A mutants, while Group 2 (cone genes including Gnat2, Pde6c, Pde6h) is downregulated. ChIP-seq shows lower CRX occupancy at Group 2 gene peaks in E80A mutants, suggesting loss of CRX activity underlies cone gene downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 are supported by hierarchical clustering analysis (Figure 3B) and ChIP-seq occupancy comparison (Figure 3\u2014figure supplement 2A) with appropriate statistical testing (Mann-Whitney U-test p=9.51e-07). The identification of rod vs. cone gene groups (C86-C88) is supported by citations to functional studies. The inference that reduced ChIP-seq signal causes Group 2 downregulation (C91) and explains CoRD phenotype (C92) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "CrxE80A mutants show downregulation of CRX-independent genes including early photoreceptor development factors (Ascl1, Rax, Sall3, Pias3), coinciding with upregulation of mature rod genes at P10, suggesting E80A mutation may disrupt the timing of photoreceptor differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 are supported by RNA-seq data (Figure 3\u2014figure supplement 2B-D) showing downregulation of specific transcription factors. However, the inference that this represents disrupted differentiation timing (C96) is speculative and marked as such in the evidence. The causal relationship between early factor downregulation and mature gene upregulation requires additional temporal analysis or functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "CrxK88N mutants show the most severe gene expression changes with downregulation of both rod and cone genes. Heterozygous CrxK88N/+ shows similar severity to homozygous CrxR90W/W, suggesting dominant-negative effects. CrxK88N/N is more severe than CrxR90W/W, and CRX-independent genes are also mis-regulated, suggesting antagonism of other transcriptional regulators beyond loss of WT CRX activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 are supported by RNA-seq data (Figure 3B-D) showing severe downregulation in K88N mutants. The comparison between heterozygous and homozygous mutants (C98) and with R90W (C100) demonstrates dominant-negative effects. The inference of antagonism of other regulators (C101) is supported by mis-regulation of CRX-independent genes (C102, Figure 3\u2014figure supplement 2E), though the specific mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "At P21, when normal retinas complete terminal differentiation, CRX HD mutants show deficient expression of phototransduction genes. CrxE80A mutants display deficiency in both cone and rod genes (contrasting with P10 upregulation), suggesting failure to sustain terminal differentiation. CrxK88N mutants show severe reduction at both P10 and P21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by RNA-seq analysis of P21 retinas (Figure 4A-B) showing widespread downregulation of phototransduction genes across mutants. The temporal comparison between P10 and P21 for E80A (C107) demonstrates a shift from upregulation to deficiency. The inference that E80A fails to sustain differentiation (C108) is reasonable given the data, though the specific mechanism is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Histological analysis at P21 reveals that all mutants show ONL disorganization with whorls and rosettes, more severe in homozygotes than heterozygotes and more severe in K88N than E80A. Photoreceptor outer segments are absent except in CrxE80A/+. Inner retinal layers are less affected, suggesting abnormalities originate from photoreceptors. These morphological features are distinct from degenerative CRX models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C117 are well-supported by H&E staining (Figure 5A-E) showing clear morphological differences between genotypes. The severity gradation (C111-C112) and outer segment formation patterns (C113-C114) are directly observable. The inference that abnormalities originate from photoreceptors (C115-C116) is supported by differential layer involvement. The distinction from degenerative models (C117) is supported by citations to previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Immunohistochemistry shows all mutants lack cone arrestin (mCAR) staining, consistent with RNA-seq data showing loss of cone gene expression. Rhodopsin (RHO) staining is localized to outer segments in CrxE80A/+, present in whorls/rosettes in CrxE80A/A and CrxK88N/+, and absent in CrxK88N/N. No mis-localized RHO in inner retinal layers suggests other cell types are not directly affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 are supported by immunostaining data (Figure 5F-J) showing clear patterns of mCAR and RHO expression across genotypes. The consistency between protein and RNA data (C119) strengthens the findings. The inference that other retinal cell types are unaffected (C124) is reasonable based on the lack of mis-localized staining (C123), though this is somewhat indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The cone/rod gene expression abnormalities match corresponding human disease diagnoses, and phenotypic severity correlates with degree of CRX target gene mis-regulation. This supports a model where CRX HD mutation-mediated gene expression changes disrupt photoreceptor terminal differentiation, leading to defects in retinal organization and outer segment formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by correlation between molecular and phenotypic data across all mutants, with appropriate citations to human clinical studies (C125). The correlation between gene expression severity and phenotype (C126) is demonstrated throughout the manuscript. The mechanistic model (C127-C128) is a reasonable synthesis of the data, though it represents an inference rather than direct demonstration of causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "ERG analysis at 1 month shows CrxE80A/A, CrxK88N/+, and CrxK88N/N have no detectable rod or cone responses (consistent with LCA phenotype). CrxE80A/+ retains partial rod responses but no cone responses (consistent with CoRD phenotype). Visual function impairment coincides with morphological and molecular changes, suggesting mouse models recapitulate human diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C136 are well-supported by ERG data (Figure 5K-M) showing clear functional deficits with appropriate statistical analysis (two-way ANOVA, n\u22654). The correlation with human phenotypes (C131, C134) is supported by citations to clinical studies. The conclusion that mouse models recapitulate human diseases (C136) is justified by the convergence of molecular, morphological, and functional data, though some phenotypic differences between species may exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Luciferase reporter assays with Rhodopsin promoter in HEK293T cells show R90W and K88N have significantly reduced transactivation activity compared to WT, while E80A shows significantly increased activity. E80A hyperactivity correlates with upregulation of CRX-DAGs in P10 mutant retinas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by luciferase assay data (Figure 6A) with appropriate statistical testing (one-way ANOVA with Tukey HSD). The validity of the assay system (C137) is supported by citation to previous studies. The correlation between in vitro hyperactivity and in vivo gene upregulation (C141) is demonstrated by comparing Figure 6A with Figure 3A-C, though the cell culture system may not fully recapitulate in vivo context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Immunostaining shows RHO protein is detected at P3 in both CrxE80A/+ and CrxE80A/A retinas, earlier than the normal P7 detection in WT retinas, indicating precocious activation of the photoreceptor differentiation program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by immunostaining data (Figure 6B-D) showing clear RHO signal at P3 in E80A mutants. The comparison with normal timing (C142) is supported by citation to developmental studies. The inference of precocious activation (C144) is reasonable given the temporal shift, though additional markers of differentiation state would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "E80A and K88N mutations each perturb CRX regulatory activity in unique ways, cause photoreceptor differentiation defects, and lead to distinct dominant disease phenotypes that recapitulate human diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 represent the main conclusions synthesizing all experimental data. The unique perturbations (C145) are demonstrated by distinct DNA-binding, gene expression, and functional patterns. The differentiation defects (C146) are shown by RNA-seq and histology. The recapitulation of human diseases (C147) is supported by correlation with clinical phenotypes, though complete validation would require human tissue or organoid studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Missense mutations in CRX HD alter target specificity and/or transactivation activity through gain-of-function mechanisms (E80A: increased activity; K88N: altered specificity). These changes impair transcriptional regulation in vivo, leading to distinct morphological and functional deficits. Both target specificity and regulatory activity precision are essential for proper photoreceptor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 synthesize the major findings across all experimental approaches. The biochemical changes (C148-C149) are demonstrated by Spec-seq and luciferase assays. The in vivo consequences (C150-C151) are shown by ChIP-seq, RNA-seq, histology, and ERG. The conclusion about precision requirements (C152) is well-justified by the comprehensive dataset, though it represents an inference about general principles rather than direct experimental demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Both CrxE80A and CrxK88N models develop whorls and rosettes in the ONL by P21, which are not observed in degenerative CRX models, suggesting distinct pathogenic mechanisms from loss-of-function mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 are supported by histological comparison (Figure 5) and citations to previous degenerative models (C154). The morphological distinction is clear, and the inference of distinct mechanisms (C155) is reasonable. However, the specific cellular mechanisms underlying whorl/rosette formation are not elucidated and would require additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "CRX K88 residue is the major contributor to HD DNA-binding specificity, making favorable interactions with guanines in the TAATCC consensus. CrxK88N mice display the most severe photoreceptor morphological deficits and absence of visual function, likely due to both diminished activity at canonical motifs and ectopic activity at N88 HD motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C161 are supported by citations to structural studies (C156-C157), comprehensive phenotypic data (C159-C160), and integration of Spec-seq and ChIP-seq results. The inference about dual mechanisms (C161) is reasonable but somewhat speculative, as the relative contributions of loss of canonical binding vs. ectopic binding are not quantitatively determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "CRX K88N activity at N88 HD motifs might contribute to severe phenotypes through multiple mechanisms: ectopic gene activation/inactivation, interference with other HD TFs recognizing N88 motifs, or epigenetic alterations. Many HD TFs are expressed in developing retina, and altered CRX specificity could perturb retinal gene regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C166 are explicitly speculative (marked as SPECULATION in evidence). While the hypotheses are reasonable given the data, they lack direct experimental support. The presence of other HD TFs (C165) is supported by citation, but the specific mechanisms (C162-C164) and network perturbations (C166) require additional experiments such as co-immunoprecipitation, chromatin accessibility assays, or genetic interaction studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "CRX R90 residue confers HD fold stability and contacts DNA backbone. R90W substitution potentially reduces HD stability and DNA-binding affinity without affecting specificity, consistent with abolished genome-wide binding and global loss of target gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C171 are supported by citations to structural studies (C167-C168) and experimental data showing maintained specificity but loss of in vivo binding (C170-C171). The structural interpretation (C169) is somewhat speculative but reasonable. The consistency between predicted effects and observed phenotype (C171) strengthens the model, though direct measurement of HD stability would be confirmatory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "CRX E80 residue stabilizes HD-DNA complex through intramolecular interactions. E80A mutation renders HD-DNA interactions more promiscuous (reduced specificity), increasing binding and activation of non-consensus CRX motifs, resulting in hyperactivity observed in luciferase assays and developing retinas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C175 are supported by citations to structural studies (C172), Spec-seq data showing reduced specificity (C173), and correlation between in vitro and in vivo data (C175). The presence of consensus and non-consensus motifs in regulatory sequences (C174) is supported by citations. The mechanistic model is well-reasoned, though direct demonstration of increased non-consensus motif binding in vivo would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Promiscuous TF-DNA binding associated with hyperactivity has been observed in other systems (KLF1 mutant). Photoreceptor differentiation requires sequential gene expression programs within defined time windows. CRX E80A hyperactivity may precociously activate later-stage genes, negatively impacting early differentiation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C176 is supported by citation to another study, and C177 by citations to developmental studies. However, the mechanistic explanation for E80A phenotypes (C178) is explicitly speculative. While the temporal gene expression data support precocious activation, the causal relationship between early activation and negative impacts requires additional experiments such as temporal rescue studies or stage-specific gene manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Cones are born prenatally but undergo terminal differentiation postnatally. RXR\u03b3+ cells are present in CrxE80A retinas, suggesting cones are born. CRX E80A hyperactivates S-cone opsin promoter. Cones depend on different TFs than rods and comprise only 3% of mouse photoreceptors. Different E80 mutations are reported in human CoRD cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C180 and C184 are supported by citations to developmental studies. The presence of RXR\u03b3+ cells (C181-C182) is shown by immunostaining (Figure 6\u2014figure supplement 1A), and S-cone opsin promoter hyperactivation (C183) by luciferase assay (Figure 6\u2014figure supplement 1B). The low cone percentage (C186) and clinical mutations (C185) are supported by citations. These data support cone-specific effects of E80A, though the small cone population limits quantitative analysis in mouse.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "HD structures and DNA-contact models are evolutionarily conserved. Homologous mutations in other HD TFs (OTX2 E79K, OTX2 R89G, PITX2 K88/R90 homologs) cause diseases in other tissues. These mutations likely affect HD activity similarly to CRX, with disease manifestation determined by tissue-specific mechanisms. CRX is an ideal model for studying HD mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C190 are supported by established knowledge (C187) and citations to clinical studies (C188-C190). The inference that similar mutations have similar effects (C191) is reasonable given structural conservation, though tissue-specific differences exist. The role of tissue-specific mechanisms (C192) is a logical inference. The claim that CRX is an ideal model (C193) is an opinion but justified by the comprehensive data and retinal accessibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background and context claims establishing the importance of HD TFs in development and disease, the role of CRX in photoreceptors, the structure and function of the homeodomain, and the location and conservation of the studied mutations (E80A, K88N, R90W) in the CRX HD recognition helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C41 represent background information supported by established knowledge, citations to literature, and sequence alignment data (Figure 1A-B). These claims provide essential context for the study but do not represent novel findings. The conservation of mutated residues (C38) is demonstrated by sequence alignment. The previous characterization of R90W (C32) is supported by citation to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Summary claims from the abstract stating that E80A increases transactivation, K88N alters DNA-binding specificity and causes ectopic binding, and both produce novel morphological defects and hinder photoreceptor maturation distinct from loss-of-function models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are high-level summaries of the main findings, supported by the comprehensive experimental data described in other result groups. These represent the key conclusions of the manuscript and are well-supported by the integrated multi-omics approach combining Spec-seq, ChIP-seq, RNA-seq, histology, and functional assays.",
+    "result_type": "MAJOR"
+  }
+]

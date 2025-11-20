@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors generated a single-cell RNA sequencing atlas of rhesus macaque parietal lobe development across five prenatal stages (E40, E50, E70, E80, E90), yielding 53,259 high-quality cells after quality control that were clustered into 28 distinct cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17, C18, C64-C70 collectively describe the experimental design, sample collection, quality control procedures, and resulting dataset. The methods are clearly described with appropriate QC thresholds (mitochondrial <7.5%, ribosomal <5.5%, genes 400-6000), doublet removal using Scrublet, and standard clustering approaches. The timepoints are justified by citations and align with known neurogenic periods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cell type annotation identified major neural populations including vRGs (expressing VIM/PAX6), oRGs (expressing HOPX), IPCs (expressing EOMES), excitatory neurons (expressing NEUROD2/NEUROD6), and glial lineages (astrocytes expressing AQP4, oligodendrocytes expressing SOX10), with neurogenesis occurring early and gliogenesis occurring later in development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe cell type identification using established marker genes with appropriate citations (Pollen et al., 2015; Silbereis et al., 2010). The temporal pattern of neurogenesis followed by gliogenesis is consistent with known developmental biology and supported by the data shown in Figure 1. The marker-based annotation approach is standard and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Excitatory neurons were subdivided into 10 subclusters distinguished by deep-layer markers (BCL11B, FEZF2, SOX5) versus upper-layer markers (CUX1, SATB2), with deep-layer neurons (EN5, EN10) appearing predominantly at early stages (E40-E50) and upper-layer neurons appearing progressively at later stages (E50-E90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C30 describe the temporal emergence of neuronal subtypes with appropriate marker genes cited from the literature (Tsyporin et al., 2021; Li et al., 2020; He et al., 2017). The sequential generation of deep-layer followed by upper-layer neurons is a well-established principle (Rakic, 1974) and the data in Figure 2C-D support these temporal patterns. The observation of EN6 exclusively at E70 (C30) is a specific finding supported by Figure 2\u2014figure supplement 1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Pseudotime trajectory analysis from vRGs to oRGs identified known oRG markers (SFRP1, HOPX, FAM107A, TNC, PTN, MOXD1) at the oRG terminal and RG markers (ASPM, MKI67, TOP2A, CDC20, CCNA2) at the RG terminal, along with novel candidate regulators including ATP1A2, ATP1B2, SCN4B (ion regulation), RGCC (spindle orientation), TTYH1 (cell adhesion), and DKK3, DDAH1, SAT1, PEA15 (unexplored in RG differentiation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 describe pseudotime analysis results with appropriate validation through known markers (cited: Pollen et al., 2015; Liu et al., 2017; Johnson et al., 2018; Guo et al., 2021; Zhou et al., 2020; Weng et al., 2019; Gadea et al., 2008). The identification of novel genes (C35, C38) is appropriately presented as new findings requiring further investigation. The analysis approach using Slingshot is standard and the heatmaps in Figure 3E-F support the temporal expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Pseudotime trajectory analysis revealed a bifurcating path from neural stem cells through a common immature neuron stage before diverging into deep-layer (expressing FEZF2, TBR1, LMO3) versus upper-layer (expressing MEF2C, DOK5) neurons, with shared differentiation genes (STMN2, TUBB3, NEUROD2, NEUROD6), supporting post-mitotic fate determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C45 describe trajectory analysis using Dynverse/Slingshot showing bifurcation after a common progenitor stage (Figure 4C). The identification of shared versus lineage-specific genes is supported by differential expression analysis (Figure 4D). The conclusion of post-mitotic fate determination (C4, C42) is appropriately presented as an inference supported by the shared early trajectory, consistent with prior work (cited: Lin et al., 2021; Shu et al., 2019). However, C39 is explicitly stated as a hypothesis, appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cross-species integration using LIGER showed conserved sequential generation of deep- and upper-layer neurons across human, macaque, and mouse, but primates exhibit extended upper-layer neurogenesis and abundant oRG populations (expressing HOPX, MOXD1, FAM107A, CLU) that are absent in mice, with conserved vRG-to-IPC but divergent vRG-to-oRG trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe cross-species comparative analysis with appropriate integration methods (LIGER) and validation metrics (alignment score 0.89). The findings of conserved neurogenic processes but primate-specific oRG expansion are well-supported by Figure 5 and consistent with established knowledge (cited: Wang et al., 2011; Stepien et al., 2020). The integration quality appears adequate and the species-specific differences in oRG populations are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Comparative analysis identified 72 homologous transcription factors shared across human, macaque, and mouse, with conserved temporal dynamics (e.g., NEUROD1, NEUROG2, POU3F2, ETV1, ETV5, FOS) and regulatory activity (GATA1, SOX2, HMGN3, TCF7L1, ZFX, EMX2, SOX10, NEUROG1, NEUROD1, POU3F1), including stage-specific regulators (HMGN3, EMX2, SOX2, HMGA2 for deep-layer; SOX10, ZNF672 for upper-layer).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe transcription factor analysis using SCENIC with appropriate cross-species comparisons. The identification of 72 homologous TFs and their temporal patterns (Figure 6B, Figure 6\u2014figure supplement 1) is clearly presented. The regulatory network analysis identifies both conserved and stage-specific TFs with supporting visualizations (Figure 6C-H). The citation to Di Bella et al., 2021 for mouse data is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Trajectory analysis from vRGs to oRGs revealed differential activation of BMP, FGF, and WNT signaling pathways between vRGs and oRGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C5 states that BMP, FGF, and WNT pathway differences were identified, but this specific finding is not substantiated in the results section or figures. While the manuscript discusses these pathways in the introduction as known mechanisms, the actual data presented focuses on gene expression patterns (C31-C38) without explicit pathway analysis demonstrating differential BMP/FGF/WNT activation. This appears to be an overclaim in the abstract not supported by presented results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The BD Rhapsody microwell method may be less efficient at capturing mature neurons with extensive processes but effectively captures immature neurons at each developmental timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 acknowledges a technical limitation but provides no quantitative validation or comparison to assess the magnitude of this bias. While the reasoning about cell size and microwell dimensions is plausible, without systematic validation (e.g., comparing to other methods, quantifying capture efficiency by cell type/maturity), the extent of bias remains uncertain. This limitation could affect interpretation of temporal dynamics if mature neurons are systematically underrepresented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Background claims establish that rhesus macaque recapitulates human cortical development features, including complex neural stem cell composition, six-layered neocortex organization, temporal neurogenesis patterns, primate-specific OSVZ and oRG populations, and known molecular markers and regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C16, C56-C62 provide background context with appropriate citations to established literature (Jabaudon, 2017; Rakic, 1974; Telley et al., 2019; Hansen et al., 2010; Ostrem et al., 2014; Betizeau et al., 2013; Pollen et al., 2015; Bakken et al., 2016; Bernard et al., 2012; Zeng et al., 2012; Nowakowski et al., 2016; Vitali et al., 2018; Molyneaux et al., 2005; Leone et al., 2008; Stepien et al., 2020). These are standard knowledge claims that appropriately frame the study. C61 correctly identifies TMOD1, PID1, LINGO1 as novel candidates requiring further exploration.",
+    "result_type": "MINOR"
+  }
+]

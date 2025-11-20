@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Purified BRAF N-terminal constructs (NT1-4) bind to active HRAS in pulldown assays, with active HRAS showing stronger binding than inactive HRAS to NT1, demonstrating that the purified proteins recapitulate physiological interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by pulldown data in Figure 1C-D showing differential binding of active vs inactive HRAS and binding of all NT constructs to active HRAS. The inference that purified fragments recapitulate physiological interactions is reasonable given the consistent binding patterns observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "HDX-MS reveals that HRAS binding to BRAF NT2 and NT3 causes decreased deuterium exchange in the RBD region (residues 158-188) and increased exchange in the BSR region (residues 49-64, 82-99), indicating that HRAS binding occurs primarily through the RBD while inducing conformational opening of the BSR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 are well-supported by HDX-MS data in Figure 2A-D showing region-specific changes in deuterium exchange rates. The decreased exchange in RBD and increased exchange in BSR are demonstrated across multiple overlapping peptides with consistent trends. The inference about conformational changes (C67) is reasonable based on the exchange kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "BRAF NT2, NT3, and NT4 bind to HRAS with nanomolar affinity (KD = 7.5\u00b13.5 nM, 22\u00b111 nM, and 19\u00b111 nM respectively), with NT2 showing similar affinity to previously reported values from insect cells, suggesting post-translational modifications do not affect binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are directly supported by OpenSPR data in Figure 3B-E with quantified KD values. The comparison to prior work (C73) and inference about PTMs (C74) are reasonable, though the inference about PTMs is based on similarity of values rather than direct testing of modified vs unmodified proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "BRAF NT1 (containing BSR, RBD, and CRD together) shows no binding to HRAS at standard flow rates but minimal binding at slow flow rates, and cannot outcompete NT3 for HRAS binding, suggesting that the BSR and CRD together negatively regulate HRAS interaction by blocking the RAS binding surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by OpenSPR data (Figure 3A, supplement 1A) and competition pulldown data (Figure 3F-G). The inference that BSR+CRD together block HRAS binding (C77-C79) is reasonable given that constructs with either domain alone bind well. However, the mechanism of 'blocking' is speculative and alternative explanations (conformational constraints, steric effects) are not ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Active KRAS binds to all BRAF NT constructs with nanomolar affinity (NT1: 265\u00b17 nM, NT2: 31\u00b15 nM, NT3: 96\u00b124 nM, NT4: 53\u00b122 nM), with NT2-4 showing similar KD values regardless of domain composition, and GST-tagged and untagged KRAS showing similar binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 are well-supported by pulldown data (Figure 4A) and OpenSPR measurements (Figure 4B-F). The KD values are quantified with replicates and standard deviations. The inference that BSR, RBD, and CRD must be present together for isoform specificity (C87) is reasonable given the similar affinities of NT2-4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Full-length BRAF binds KRAS with high affinity (101\u00b172 nM) but shows no interaction with HRAS (>3 \u00b5M), with NT1:KRAS and FL-BRAF:KRAS showing statistically similar KD values, establishing that NT fragments are representative of full-length protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by OpenSPR data with FL-BRAF (Figure 4G-H) and statistical comparison (unpaired t-test p>0.05). This is a critical validation showing that the truncated constructs recapitulate FL-BRAF behavior. However, the large standard deviation for FL-BRAF:KRAS (\u00b172 nM) suggests some variability, and only n=2 replicates are mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "HDX-MS shows that KRAS binding to BRAF NT2 causes decreased deuterium exchange in the RBD (residues 174-188) but no changes in the BSR (residues 49-64, 82-99), unlike HRAS which perturbs BSR structural rigidity, demonstrating that the BSR differentiates between HRAS and KRAS binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by HDX-MS data in Figure 4I comparing NT2 with KRAS vs HRAS. The differential effects on BSR structure provide mechanistic insight into isoform specificity. The inference about BSR-mediated differentiation (C97) is well-supported by the combined OpenSPR and HDX-MS data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "NT1 and NT3 (containing CRD) bind to BRAF kinase domain with high affinity (NT1: 11\u00b11.5 nM, NT3: 54\u00b124 nM), while NT2 and NT4 (lacking CRD) do not bind, demonstrating that the CRD is necessary for autoinhibitory interactions and the BSR increases binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 are well-supported by pulldown data (Figure 5A) and OpenSPR measurements (Figure 5B-D) with quantified KD values. The inference that CRD is necessary (C101) is directly supported by the binding pattern. The inference that BSR increases affinity (C106-C107) is supported by the statistically significant difference between NT1 and NT3 (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "NT2 and NT4 show very weak binding to KD (>4.5 \u00b5M and >6 \u00b5M respectively), and NT5 (CRD alone) shows no detectable binding, indicating that both RBD and CRD are essential for high-affinity autoinhibitory interactions with the BSR enhancing binding strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are supported by OpenSPR data (Figure 5E-H) showing minimal binding at high concentrations. The inference that RBD+CRD are essential (C112) is reasonable given the binding patterns, though the exact contribution of RBD vs CRD cannot be fully separated from these experiments alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "HRAS binding to BRAF NT1 prevents KD binding in both pulldown and OpenSPR experiments, demonstrating that HRAS directly relieves BRAF autoinhibition by disrupting the NT1-KD interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are strongly supported by both pulldown data (Figure 6A) and OpenSPR experiments (Figure 6B) showing loss of NT1-KD interaction in the presence of HRAS. This provides direct biochemical evidence for RAS-mediated relief of autoinhibition, a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The oncogenic BRAF D594G mutant shows reduced binding to NT1 compared to wild-type KD in both OpenSPR and pulldown assays, supporting the hypothesis that the D594G mutation decreases autoinhibitory interactions to confer oncogenic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 are supported by OpenSPR data (Figure 6C) and pulldown data (Figure 6D) comparing KDWT and KDD594G. The reduced binding is clear, though the OpenSPR responses were too low to calculate a precise KD. The inference about oncogenic mechanism (C123) is reasonable but would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C124",
+      "C136"
+    ],
+    "result": "The BSR and CRD work together to regulate BRAF activation in a RAS isoform-specific manner, with the BSR and CRD having allosteric effects that slow HRAS association while permitting KRAS binding, thus providing isoform specificity toward KRAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative claim (C5, C124, C136) is supported by the combined evidence from OpenSPR showing differential binding kinetics (NT1 binds KRAS but not HRAS at standard flow rates) and HDX-MS showing differential BSR conformational changes with HRAS vs KRAS. The proposed mechanism is well-supported by multiple complementary techniques.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C133",
+      "C134"
+    ],
+    "result": "This study provides the first reported KD values for BRAF N-terminal and C-terminal autoinhibitory interactions, demonstrating that the CRD plays a primary role in autoinhibition while the BSR increases affinity for the kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C133-C134 are supported by the comprehensive OpenSPR measurements throughout the study. The novelty claim (C133) appears accurate based on the literature review presented. The quantitative KD values provide important mechanistic insights into BRAF regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "AlphaFold predicts two alpha-helices in the BSR that correspond to regions showing increased structural flexibility upon HRAS binding in HDX-MS experiments, suggesting conformational changes in the N-terminal region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 use AlphaFold predictions to interpret HDX-MS data. While the correlation between predicted structure and HDX-MS changes is noted, AlphaFold predictions for disordered/flexible regions have lower confidence. The authors acknowledge this by noting weak inter-domain confidence. The correlation is suggestive but not definitive proof of the proposed conformational changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Size exclusion chromatography confirms that GST-HRAS and GST-KRAS elute as dimers (~90 kDa) while untagged KRAS elutes as a monomer (~22 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are supported by SEC data in figure supplements showing elution profiles. This validates the oligomeric state of the purified proteins used in binding studies, which is important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C98",
+      "C99",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C131",
+      "C132"
+    ],
+    "result": "Background and context claims about MAPK signaling, RAF family structure and function, RAS/BRAF mutations in cancer, current therapeutic limitations, and prior structural studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C57, C98-C99, C117-C120, C131-C132) represent established knowledge from the literature, supported by appropriate citations. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the claims are consistent with current understanding of the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13"
+    ],
+    "result": "CERS1 expression declines with aging in human skeletal muscle cells. The authors measured CERS1 transcript levels in primary muscle cells isolated from young (22\u00b13.61 yo) and old (74\u00b18.4 yo) human donors and found reduced expression in aged compared to young myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C13 are supported by direct experimental measurements of CERS1 expression in primary human muscle cells from young and old donors (Figure 1B). The sample sizes (n=3-5 biological replicates) are modest but appropriate for this type of measurement, and the finding is consistent with prior literature (Tosetti et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C84"
+    ],
+    "result": "CERS1 expression correlates positively with muscle function and myogenesis pathways in human skeletal muscle. Gene set enrichment analysis of CERS1-correlating transcripts in GTEx skeletal muscle biopsies (n=469) showed enrichment for muscle contraction and myogenesis pathways, with positive correlations to specific myogenic (MYF5, MYH2, MYH7, MYL1) and muscle contraction genes (TPM2, ACTA1, TMOD2, TNN1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C15, C16, and C84 are well-supported by unbiased gene set enrichment analysis and correlation analysis using a large human dataset (GTEx, n=469). The statistical approach (Spearman correlation, GSEA) is appropriate for this type of transcriptomic analysis. The large sample size provides strong statistical power for detecting correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "CERS1 is upregulated during myogenic differentiation in mouse and human muscle cells, with corresponding increases in specific ceramide species. Cers1/CERS1 expression increased at multiple timepoints during differentiation, accompanied by increases in C18:1 ceramide in mouse cells and C14:0, C22:0, and C18:0 ceramides in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, C18, and C19 are supported by gene expression measurements and ceramide profiling during differentiation in both mouse C2C12 cells and human primary myoblasts (Figure 1E, Figure 1\u2014figure supplement 1B-D). The observation of species-specific ceramide profiles is appropriately noted. Sample sizes (n=2-4 biological replicates) are modest but typical for in vitro differentiation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The CERS1-specific pharmacological inhibitor P053 inhibits mouse and human skeletal muscle cell differentiation. P053 treatment (1 \u00b5M) downregulated expression of myogenic transcription factors (Myog/MYOG, Myf6/MYF6) and myosin chains during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C21 are supported by gene expression measurements in differentiating muscle cells treated with P053 (Figure 1F, Figure 1\u2014figure supplement 1E-G). The citation to Turner et al., 2018 regarding P053's effect on fat mass is appropriate. However, the specificity of P053 for CERS1 relies on prior characterization; off-target effects cannot be completely ruled out in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Pharmacological inhibition of CERS1 with P053 in aged mice exacerbates age-related muscle dysfunction. Six months of P053 treatment (5 mg/kg, 3x/week) reduced C18:0/C18:1 ceramides while increasing C24:0/C24:1 ceramides and dihydroceramides, reduced muscle fiber size, increased inflammation (CD45+ cells) and fibrosis, decreased myogenic gene expression, and impaired muscle mass, grip strength, and running performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C22-C24, C27-C37 are supported by comprehensive phenotypic, histological, and molecular analyses in aged mice (Figure 2). The study includes appropriate controls (young mice, DMSO-treated aged mice) and multiple complementary measurements. Sample sizes (n=5-14 per group) are adequate. The automated fiber detection using cellpose with validation (Average Precision: 0.97\u00b10.02) strengthens the morphological findings. However, systemic P053 administration may have multi-organ effects that indirectly affect muscle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Genetic inhibition of CERS1 in aged mouse skeletal muscle recapitulates the detrimental effects of pharmacological inhibition. AAV9-mediated shRNA delivery reduced Cers1 expression by ~50%, decreased C18:0/C18:1 ceramides while increasing C24:0/C24:1 ceramides and dihydroceramides, reduced fiber size, increased inflammation, showed trends toward increased fibrosis and centralized nuclei, decreased myogenic gene expression, and impaired muscle mass, grip strength, and running performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C39-C52 are supported by genetic manipulation experiments using AAV9-mediated shRNA (Figure 3). The genetic approach addresses potential off-target effects of pharmacological inhibition. The phenotypes largely recapitulate those observed with P053, strengthening the conclusion that CERS1 is responsible. Sample sizes (n=6-8 per group) are adequate. The genetic inhibition was less complete than pharmacological inhibition (~50% vs. more complete reduction), which may explain some quantitative differences in phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Lentivirus-mediated silencing of Cers1 in mouse C2C12 myoblasts impairs differentiation. Cers1 knockdown reduced C18:0/C18:1 ceramides, increased very long chain ceramides and dihydroceramides, diminished myogenesis (reduced myotube diameter, area, and multinucleation), decreased myogenic marker expression, did not affect protein synthesis, but upregulated the Myostatin pathway including Foxo3/Smad3 and E3 ubiquitin ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by comprehensive in vitro analyses in C2C12 cells (Figure 3\u2014figure supplement 1, Figure 4\u2014figure supplement 1). The cell-specific approach demonstrates that CERS1 effects are intrinsic to muscle cells. The protein synthesis and degradation pathway analyses provide mechanistic insights. Sample sizes (n=3-12 biological replicates) are appropriate for cell culture experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CERS1 inhibition in human primary myoblasts impairs differentiation. Adenovirus-mediated CERS1 knockdown reduced C18:0/C18:1 ceramides, increased C24:0/C24:1 ceramides and dihydroceramides, and impaired myogenic differentiation as shown by reduced myotube diameter, area, multinucleation, and myogenic marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by experiments in human primary myoblasts (Figure 4A-C, Figure 4\u2014figure supplement 1). The findings parallel those in mouse cells, demonstrating conservation across species. Sample sizes (n=4-6 biological replicates) are appropriate. The use of primary human cells strengthens translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Inhibition of the CERS1 orthologue lagr-1 in C. elegans impairs muscle function and morphology during aging. Both pharmacological inhibition with P053 (50-100 \u00b5M) and RNAi-mediated knockdown (~80% reduction) of lagr-1 reduced muscle function (traveled distance, movement speed), deteriorated muscle fiber morphology, and P053 reduced lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C66-C71 are supported by experiments in C. elegans using both pharmacological and genetic approaches (Figure 4D-H, Figure 5\u2014figure supplement 1). The conservation of CERS1 function across species (mouse, human, worm) strengthens the biological significance. Sample sizes (n=33-147 per group) are adequate for worm studies. The lifespan analysis uses appropriate statistical methods (log-rank Mantel-Cox test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Common genetic variants that reduce CERS1 expression in human skeletal muscle are associated with reduced grip strength and overall health. Three independent eQTLs (rs117558072-C, rs1122821-G, rs71332140-T) significantly alter CERS1 expression in skeletal muscle (GTEx, n=706). Mendelian randomization analysis in UK Biobank showed that CERS1-reducing alleles decrease overall health rating and grip strength, with a linear relationship between effect sizes on CERS1 expression and phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C72-C79 are supported by genetic analyses using large human datasets (GTEx for eQTL discovery, UK Biobank for Mendelian randomization). The approach is methodologically sound: variants are independent (r\u00b2<0.1), Mendelian randomization is appropriate for causal inference, and FDR correction was applied. The linear relationship between effect sizes strengthens causal interpretation. However, the phenotypes (self-reported overall health, grip strength) are relatively crude measures of muscle function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Rare coding variants in CERS1 are associated with reduced overall health and grip strength in humans. Analysis of UK Biobank whole exome sequencing data (n=379,530) showed that 9 out of 11 significant rare variants (p<0.05) in the CERS1 coding region had negative effect sizes on overall health rating and grip strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is based on rare variant analysis in UK Biobank (Figure 5C). While the large sample size is a strength, the analysis has limitations: (1) the significance threshold is described as 'suggestive' (p<0.05 without multiple testing correction for the number of variants tested), (2) rare variants have limited statistical power even in large cohorts, (3) the functional consequences of these coding variants are not characterized, and (4) the directionality (9/11 negative) is noted but statistical significance of this enrichment is not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Simultaneous inhibition of Cers1 and Cers2 alleviates the impaired differentiation caused by Cers1 knockdown alone, suggesting that very long chain ceramides drive some negative consequences of reduced Cers1 function. Double knockdown of Cers1 and Cers2 in C2C12 myoblasts rescued differentiation defects observed with Cers1 knockdown alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C82 are supported by experiments showing rescue of differentiation defects with double knockdown (Figure 5D-E, Figure 5\u2014figure supplement 1G-I). This is a key mechanistic experiment that supports the hypothesis that compensatory increases in C24 ceramides (produced by Cers2) mediate some detrimental effects of Cers1 inhibition. However, the sample sizes are not clearly stated for this experiment, and the rescue is partial rather than complete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C38",
+      "C53",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99"
+    ],
+    "result": "The study's findings are consistent with and extend prior literature on CERS1 and ceramide biology. Multiple citations support: C24 ceramides are synthesized by Cers2; increased C24 ceramides upon Cers1 inhibition is consistent with prior reports; Cers1 knockout in young mice impairs muscle contractility; C18 ceramides are elevated in metabolic disease; P053 reduces fat mass; Cers1 deficiency causes cerebellar defects; compensation effects occur in Cers2 knockout mice; and Sptlc1 inactivation benefits healthy aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C38, C53, C88-C96, C99 appropriately cite prior literature to contextualize findings. The citations appear accurate and relevant. The authors appropriately acknowledge consistency with prior work (Tosetti et al., 2020; Turner et al., 2018) while extending findings to aged mice and humans. The integration with prior literature on ceramide compensation mechanisms (Cers2 knockout studies) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Pharmacological inhibition of Cers1 was more effective than genetic inhibition in reducing C18 ceramides and produced more pronounced phenotypes. The authors note this difference and suggest it may be due to more complete inhibition or potential multi-organ effects of systemic P053 administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C98 are supported by comparison of ceramide measurements and phenotypes between pharmacological (Figure 2) and genetic (Figure 3) approaches. The observation is valid and the authors appropriately acknowledge this limitation. However, the interpretation is somewhat speculative\u2014the difference could reflect incomplete genetic knockdown (~50%), timing differences, or off-target effects of P053.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The benefits of blocking the de novo ceramide biosynthesis pathway (via Sptlc1 inactivation) may come partly from inhibiting very long chain ceramides. This is inferred from the current study's finding that simultaneous Cers1 and Cers2 inhibition alleviates impairment, combined with prior work showing benefits of Sptlc1 inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is speculative and based on inference from the Cers1/Cers2 double knockdown experiment combined with citation to prior work (Laurila et al., 2022b). While the logic is reasonable, this is a hypothesis rather than a directly tested conclusion. The claim would require direct experimental testing (e.g., comparing Sptlc1 inhibition effects in presence/absence of Cers2 activity) to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Summary of main findings: CERS1 is involved in age-related loss of muscle mass and function; intact CERS1 is necessary for proper muscle cell maturation; Cers1 is indispensable for intact organismal muscle aging; and common/rare variants in humans affect muscle CERS1 and muscle function/health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85-C87 are summary statements of the main findings, which are supported by the comprehensive experimental evidence across multiple model systems (human cells, mouse cells, aged mice, C. elegans, human genetics). These represent appropriate synthesis of the results presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Background and context claims about aging, sarcopenia, sphingolipids, and ceramide synthases. These include statistics on muscle loss with aging, sarcopenia prevalence and consequences, demographic trends, sphingolipid functions, ceramide synthase specificity, and prior findings on Cers1 in metabolism and muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C124 are background statements supported by appropriate citations to prior literature. These provide necessary context for the study but are not novel findings. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "Speculative hypothesis: Compensatory upregulation of CERS2-derived very long chain ceramides and dihydroceramides in aging might accelerate age-related muscle wasting and dysfunction, contributing to sarcopenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C125 is explicitly labeled as speculation by the authors ('we suggest a molecular network'). While the hypothesis is supported by the consistent observation of increased C24 ceramides upon Cers1 inhibition and the rescue experiment with double knockdown, it remains a hypothesis requiring further testing. The authors appropriately present this as a proposed mechanism rather than a proven conclusion.",
+    "result_type": "MINOR"
+  }
+]

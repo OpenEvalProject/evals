@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C46",
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "Resting lymphocytes elongate at typical mammalian rates (~90-100s half-life), similar to HeLa cells and activated lymphocytes when measured by radiolabeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C46, C48, C51, and C52 collectively demonstrate that resting lymphocytes have ribosome transit times consistent with standard mammalian elongation rates (~6 residues/s). Multiple independent methods (RPM-RTA and [3H]-Leu incorporation) converge on similar half-life values (70-150s for HeLa, ~90-100s for lymphocytes), providing strong cross-validation of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C68",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C89"
+    ],
+    "result": "Lymphocyte elongation rates can be increased up to 30% by activation in vivo or fever temperature (39.5\u00b0C) in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C68, C73, C75, and C89 provide consistent evidence from multiple experimental conditions (in vivo activation, fever temperature in vitro) showing 20-30% increases in elongation rates. The measurements are internally consistent across different experimental systems (OT-I cells in vitro and in vivo), and the modified RTA protocol with CHX addresses methodological concerns about harringtonine leakiness (C156).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C113",
+      "C114"
+    ],
+    "result": "Resting and activated lymphocytes possess abundant monosome populations that contribute substantially to translation, with monosomes making major contributions in resting cells (~38% of translation) but minor contributions in fully activated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C53-C59, C104-C107, and C113-C114 provide converging evidence from polysome profiling, high-salt fractionation, puromycylation assays, and RTA measurements. The quantitative estimates (33-52% of monosomes puromycylated, ~38% of translation in resting cells) are based on direct measurements with appropriate controls. The distinction between in vitro stalling (C5, C60) and in vivo active translation (C4, C71, C72) is well-supported by differential RTA decay patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C60",
+      "C96"
+    ],
+    "result": "A significant fraction of ex vivo cultured resting lymphocytes possess stalled ribosomes with nascent chains that are puromycylated but do not actively transit mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C49-C50, C60, and C96 demonstrate ribosome stalling through the key observation that RPM signal persists despite complete inhibition of [3H]-Leu incorporation (C40-C41) and limited RTA signal decay in emetine-treated cells. The interpretation is strengthened by comparison with neurons (C97) and the clear contrast with in vivo conditions where stalling is absent (C71-C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C102",
+      "C103"
+    ],
+    "result": "Nearly all ribosomes with nascent chains in both resting and activated lymphocytes are actively elongating in vivo, with no evidence of ribosome stalling in naive T cells in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by in vivo RTA experiments (C102) showing complete signal decay in both resting and activated cells, contrasting sharply with the in vitro stalling phenotype. The development and validation of the in vivo RTA method (C102, C151, C156-C158) provides technical support for these conclusions. The distinction between in vitro and in vivo translation states is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C135",
+      "C138",
+      "C160"
+    ],
+    "result": "In vivo activated OT-I T cells have a paradoxically high protein-to-ribosome ratio (1017:1) that dictates a minimal proteome duplication time of 22.2 hours, nearly 3\u00d7 their measured doubling time of 7.7 hours, creating an unexplained discrepancy in protein synthesis capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C87-C88, C91 establish the core paradox through quantitative measurements of protein content, ribosome numbers, and division rates. The calculations are transparent and based on direct measurements (C119-C127). The discrepancy persists even when accounting for faster elongation rates in vivo (C89-C90, C160) and is exacerbated by protein degradation/secretion (C135-C138). Independent support comes from Wolf et al. 2020 (C140). However, the measurements rely on several assumptions (average protein length, tryptophan content) that could introduce systematic errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C132",
+      "C133"
+    ],
+    "result": "For HeLa cells and in vitro activated OT-I T cells, the calculated minimal proteome duplication time closely matches observed doubling times, indicating protein synthesis capacity is sufficient for cell division in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82, C132-C133 show that calculations based on measured protein and ribosome numbers yield proteome duplication times (19.9h for HeLa, 10.1h for OT-I) that are reasonably close to observed doubling times (24h and 9.7h respectively). This internal consistency validates the measurement and calculation approach, making the in vivo discrepancy (C6, C87-C88) more striking and less likely to be due to systematic measurement error.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors developed flow RPM-RTA, a simpler and cheaper method than existing approaches for measuring ribosome elongation rates at single-cell resolution, with improved accuracy through addition of elongation inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C92-C95 describe the methodological development and validation. The method is validated against established approaches (C46, C51) and shows improvement over the similar SunRiSE method (C94-C95) through addition of elongation inhibitors to reduce harringtonine leakiness. The single-cell capability (C93) and applicability to in vivo studies (C102-C103) represent significant technical advances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C127"
+    ],
+    "result": "OT-I T cells undergo substantial changes upon activation: ~2.9-fold volume increase, ~5-fold increase in protein content (from 421 million to 2.15 billion proteins/cell), 1.7-fold increase in protein concentration, and ~14-fold increase in ribosome numbers (from 264,000 to 3.6 million 60S subunits).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124, C127 provide quantitative characterization of T cell activation using multiple measurement approaches (automated cell counting, tryptophan fluorescence, bioanalyzer-based rRNA quantification). The measurements are internally consistent and the methods are well-described. The ribosome quantification method is noted as more accurate than prior approaches (C128). These measurements form the basis for the protein synthesis capacity calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C99",
+      "C153"
+    ],
+    "result": "Activation induces a 15-fold increase in translating ribosomes in vivo (improved from 10-fold with better methods), but only a 2-5 fold increase by RPM in vitro, which is modest compared to historical 15-fold estimates from radiolabeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C99, C153 document the magnitude of activation-induced changes in protein synthesis. The improved in vivo RPM protocol (C151, C153) provides more accurate measurements than the original method. The discrepancy between RPM and radiolabeling (C34-C35) is explained by ribosome stalling in vitro (C42, C96), which affects RPM but not radiolabeling measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C118"
+    ],
+    "result": "An optimized activation protocol including SIINFEKL peptide with PHA and ionomycin is more effective than PMA/ionomycin alone, yielding large increases in polysome fractions and requiring 500mM salt (not 300mM) to fully dissociate non-translating ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111, C118 describe methodological improvements for T cell activation and polysome analysis. The superiority of the optimized protocol is demonstrated by multiple activation markers and functional readouts (C109). The salt concentration finding (C111) has implications for interpreting prior studies and for the monosome translation conclusions (C113-C114).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C141",
+      "C145",
+      "C147"
+    ],
+    "result": "The authors speculate that lymphocytes may acquire proteins from other cells via mechanisms like emperipolesis or entosis to support their rapid division, though this remains unproven.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141, C145, C147 present a speculative hypothesis to explain the protein synthesis paradox. While precedents exist for intercellular transfer of cellular components (C142-C144, C146), no direct evidence is provided for protein acquisition by lymphocytes. This is acknowledged as speculation (evidence_type: SPECULATION) and represents a hypothesis for future testing rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Human lymphocyte activation shows considerable donor heterogeneity in RPM staining and proliferation, with activated CD8+ T cells displaying a wide range of RPM staining and some divided cells returning to near-baseline RPM levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 document heterogeneity in human lymphocyte responses using CFSE dilution and RPM measurements. The observations are descriptive and well-supported by flow cytometry data, though the biological significance and mechanisms underlying this heterogeneity are not explored in depth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C156"
+    ],
+    "result": "Contrary to recent claims, puromycin does not completely release nascent chains from CHX-treated ribosomes; emetine is ineffective in vivo but cycloheximide is active in vivo for at least 60 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151, C156 provide important methodological corrections and validations. The observation that puromycin does not completely release nascent chains (C149) contradicts recent publications and is supported by robust PMY signal in dot blots (Figure 5A). The in vivo activity of CHX (C151) enabled development of the improved in vivo RTA protocol (C156), which was critical for accurate in vivo elongation rate measurements.",
+    "result_type": "MINOR"
+  }
+]

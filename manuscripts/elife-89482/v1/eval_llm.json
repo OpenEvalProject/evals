@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C25",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The study developed a high-throughput snRNA-seq approach using Slc6a3Cre/+; TrapCfl/fl mice expressing nuclear mCherry, achieving collection and sequencing of >20% of all mDA neurons per brain (~70,000 nuclei total), representing a 50-fold improvement over previous methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C21, C25, and C115-C122 collectively describe a well-documented methodological approach with specific quantitative outcomes. The mouse model, sequencing platform, and collection efficiency are clearly stated with supporting figures and appropriate citations. The improvement over previous work (C21) is quantified and referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C40",
+      "C41"
+    ],
+    "result": "mDA neuron diversity is best understood as a continuum rather than discrete subtypes, leading to classification into 7 territories and 16 neighborhoods within a shifting gene expression landscape with gradual boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C40-C41 describe the conceptual framework and classification system supported by clustering analysis shown in Figure 3. The continuum interpretation is justified by UMAP visualizations showing gradual transitions between groups, and the territory/neighborhood nomenclature is consistently applied throughout with clear marker genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C100",
+      "C101"
+    ],
+    "result": "The Sox6 territory comprises approximately one-third of all mDA neurons, expresses SNc markers including Kcnj6, shows mutually exclusive expression with Calb1, and is confined to the SNc, consistent with stereological cell counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46, C51, C100-C101 are well-supported by gene expression data (Figure 3), anatomical mapping (Figure 4), and citations to previous studies. The proportion of Sox6 neurons matches independent stereological counts (C100), providing external validation of the sampling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The six non-Sox6 territories (Gad2, Fbn2, Pcsk6, Pdia5, Ebf1, Otx2) were anatomically mapped to specific VTA subregions and characterized by distinct marker gene signatures, with Gad2 showing GABAergic features and weak dopaminergic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 describe anatomical localization supported by in situ hybridization, immunohistochemistry (Figure 4), and consistent with previous studies (multiple citations). The Gad2 territory characterization (C49-C50) is particularly well-supported by marker gene expression data showing GABAergic features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "After unilateral 6-OHDA lesioning, the Sox6 territory showed pervasive cell loss (~87%), Pcsk6 showed notably high loss (~78%), and Ebf1 showed the lowest loss (~24%), with differential vulnerability observed within territories at the neighborhood level, demonstrating that high vulnerability extends beyond the SNc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24, C58, C63-C69 describe the lesion model and quantitative cell loss results supported by normalized calculations (Figure 5), DAT-binding autoradiography (Figure 5\u2014supplement 1), and statistical testing. The finding that vulnerability extends beyond SNc (C69) is supported by high loss in VTA-localized Pcsk6 territory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C78"
+    ],
+    "result": "Vulnerability and resilience gene modules (20 and 8 genes respectively) were identified that significantly correlate with normalized cell loss (p=3.89e-10), with predictive value maintained even when Slc6a3 is excluded (p=1.73e-09).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C77-C78 describe gene module identification and validation through linear regression analysis (Figure 6\u2014supplement 1). The statistical significance is strong, and the exclusion of Slc6a3 (C77-C78) demonstrates that the predictive value is not solely due to the known mechanism of 6-OHDA uptake.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Two mostly-lesion (ML) clusters consisting of ~95% lesioned nuclei were identified, sharing a parent node with Sox6 territory, with >80% mapping to Sox6 and Pcsk6 territories, showing 1577 differentially expressed genes including stress-associated genes (Atf3, Creb5, Xirp2, Clic4, Sprr1a, Mmp12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 describe ML clusters supported by clustering analysis (Figure 2-3), integrated UMAP (Figure 7), differential expression analysis, and in situ validation (Figure 7J-M). The association with the most vulnerable territories (C83) and stress-related gene expression (C86-C87) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C92",
+      "C93"
+    ],
+    "result": "Most surviving mDA neurons from lesioned hemispheres were transcriptionally similar to intact neurons, with UMAP showing even distribution and only 242 differentially expressed genes between all lesioned and intact nuclei, with differences between intact and untreated groups attributable to technical rather than toxin effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C92-C93 are supported by UMAP visualization (Figure 5), differential expression analysis (Figure 7\u2014supplement 1-2), and statistical testing. The control comparison with untreated mice (C92-C93) strengthens the conclusion that most surviving neurons are not dramatically altered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Integration of mouse and human snRNAseq data using CCA showed substantial overlap between species, with ~75% of human control SNc nuclei mapping to mouse Sox6 territory, predominantly to Sox6-NH2, as expected given the anatomical origin of human samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 describe cross-species integration analysis supported by UMAP visualization (Figure 8) and quantitative mapping results (Figure 8\u2014supplement 1). The expectation that human SNc nuclei map to Sox6 territory (C99) provides internal validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The Pcsk6 territory represents a previously unrecognized mDA neuron group comprising a relatively large number of cells, while the Ebf1 territory subdivides into Vip+ and Col24a1+ neighborhoods, with Col24a1+ neurons likely corresponding to Npw+ neurons that project to the extended central amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe novel findings supported by gene expression analysis (Figure 3-4\u2014supplement 2) and anatomical mapping. The Pcsk6 territory identification is based on comparison to previous studies, while the Ebf1 subdivision and Col24a1+ neuron identity (C104) are supported by marker expression and citation to Motoike et al., 2016.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Several vulnerability module genes have known or potential functional links to neurodegeneration, including Slc6a3 (dopamine transporter for 6-OHDA uptake), Kcnj6 (associated with SNc vulnerability), Rgs6 (\u03b1-synuclein accumulation), Nos1ap (excitotoxic damage), Atp8a1 (neuroprotection), and Vsnl1 (calcium sensor linked to Alzheimer's progression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76, C107-C111 connect identified vulnerability genes to known mechanisms through appropriate citations. The mechanistic explanation for Slc6a3 (C75-C76) is well-established, while other genes (C107-C111) are supported by literature citations, though some connections are speculative (C109-C111 marked as SPECULATION in evidence_type).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ML-cluster upregulated genes include those associated with regeneration (Atf3, Lifr, Sprr1a), unfolded protein response (Atf3 via PERK), and neurotrophic support (Ngf), suggesting part of the stress response is neuroprotective and reflects cellular survival mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 connect ML-cluster gene expression to known stress response pathways through appropriate citations (Kanaan et al., 2015; Seijffers et al., 2007; Jiang et al., 2004; Mogi et al., 1999). The inference that this represents neuroprotection (C91) is reasonable given the gene functions, though it remains interpretive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Initial clustering of all 68,914 nuclei identified 26 clusters representing diverse cell types (oligodendrocytes, astrocytes, glutamatergic, GABAergic, and dopamine neurons), with subsequent selection of 33,052 Th+/Slc6a3+ nuclei for dopamine neuron analysis, which were further divided into 71 clusters including distinct mDA and hypothalamic DA populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29, C33-C36 describe the clustering workflow supported by Figure 1\u2014supplement 3 and Figure 2. The identification of major cell types is based on established marker genes, and the separation of mDA from HyDA neurons (C34-C36) is supported by dendrogram analysis and marker expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The analysis includes neurons expressing Th mRNA but lacking TH protein, with histological validation showing nearly all mCherry+ cells contain TH protein/mRNA, though rare exceptions exist including mCherry+ cells lacking TH and mCherry- cells with only Th mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 describe inclusion criteria and validation supported by histological analysis (Figure 2\u2014supplement 1) and citation to Morales and Margolis, 2017. The detection of rare discordant cells (C31-C32) demonstrates thorough characterization of the population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Two closely related clusters (#12 and #26) are predominantly (~95%) composed of lesioned nuclei, share a parent node with high-Th mDA clusters, but show relatively low expression of Th and other dopaminergic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe the initial identification of lesion-specific clusters supported by dendrogram analysis (Figure 2C) and quantitative composition data. These clusters are later characterized in detail as ML-clusters (C79-C87).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Pearson's Chi test showed similar relative distribution among clusters and neighborhoods per animal regardless of the number of remaining mDA neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 describes statistical validation of consistent sampling across animals supported by Figure 5\u2014supplement 1C. This addresses potential concerns about sampling bias related to lesion severity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The Pcsk6_NH1 neighborhood localized within PBP is more vulnerable than Sox6_NH3, while resilient VTA neighborhoods include several expressing Slc17a6 (VGLUT2), a protein with complex links to dopamine neuron vulnerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 describe specific vulnerability patterns supported by normalized cell loss data (Figure 5E) and gene expression analysis. The VGLUT2 connection (C106) is supported by citations to Kouwenhoven et al., 2020 and Steinkellner et al., 2018.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Brain tissue was collected 6 weeks post-lesioning to avoid acute toxin effects, acknowledging that 6-OHDA mechanisms differ from PD pathology, though most insults affect SNc more severely than VTA, indicating inherent vulnerability differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 describe experimental design rationale and acknowledge model limitations. The timing justification (C112) is reasonable, and the acknowledgment of mechanistic differences (C113, supported by Blesa and Przedborski, 2014) while noting consistent vulnerability patterns (C114) demonstrates appropriate interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Data processing included filtering Malat1, removing genes present in <10 nuclei, removing libraries with <500 or >10,000 genes or >5% mitochondrial content, followed by SCTransform normalization and PCA using the first 30 principal components for UMAP embedding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 describe standard quality control and normalization procedures with specific parameters. The filtering criteria (C124-C125) are reasonable for snRNA-seq data, and the use of SCTransform (C127, cited to Hafemeister and Satija, 2019) is appropriate for this data type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "mDA neurons comprise diverse cells with unique functions, with SNc neurons controlling motor functions and being selectively vulnerable in Parkinson's disease, while VTA neurons are associated with motivation, learning, cognition, and psychiatric conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C12 establish background knowledge about mDA neuron diversity and disease relevance, supported by appropriate citations (Bj\u00f6rklund and Dunnett, 2007; Garritsen et al., 2023; Poulin et al., 2020). This provides context for the study but represents established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Previous single-cell RNA sequencing studies have increased understanding of mDA neuron diversity but have limitations including potential bias from cell dissociation sensitivity, relatively low neuron numbers, and limited resolution, which snRNA-seq can address more efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 provide methodological context and justification for the snRNA-seq approach, supported by appropriate citations. The comparison to previous methods establishes the rationale for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The study used enriched gene expression patterns to localize territories and neighborhoods in the adult mouse midbrain and analyzed surviving neurons after 6-OHDA lesions to identify gene expression patterns correlating with vulnerability and resilience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 describe the overall study design and objectives, which are fulfilled by the results presented in Figures 4-7. These claims serve as high-level summaries of the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2208 @@
+{
+  "submission": {
+    "id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T21:00:17.452912Z",
+    "updated_at": "2025-11-20T21:00:17.452912Z"
+  },
+  "content": [
+    {
+      "id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "content_type": "manuscript",
+      "content_text": "# Gene expression plasticity followed by genetic change during colonization in a high-elevation environment\n\n## Authors\n\n- Huishang She<sup>1</sup> ([ORCID: 0000-0001-6259-7904](https://orcid.org/0000-0001-6259-7904))\n- Yan Hao<sup>1</sup>\n- Gang Song<sup>1</sup>\n- Xu Luo<sup>2</sup>\n- Fumin Lei<sup>1</sup>\n- Weiwei Zhai<sup>1</sup>\n- Yanhua Qu<sup>1</sup> ([ORCID: 0000-0002-4590-7787](https://orcid.org/0000-0002-4590-7787)) \u2020\n\n### Affiliations\n\n1. Key Laboratory of Zoological Systematics and Evolution, Institute of Zoology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))\n2. Faculty of Biodiversity and Conservation, Southwest Forestry University Kunming China ([ROR:03dfa9f06](https://ror.org/03dfa9f06))\n3. College of Life Sciences, University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))\n4. Center for Excellence in Animal Evolution and Genetics, Chinese Academy of Sciences Kunming China ([ROR:034t30j35](https://ror.org/034t30j35))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhenotypic plasticity facilitates organismal invasion of novel environments, and the resultant phenotypic change may later be modified by genetic change, so called \u2018plasticity first.\u2019 Herein, we quantify gene expression plasticity and regulatory adaptation in a wild bird (Eurasian Tree Sparrow) from its original lowland (ancestral stage), experimentally implemented hypoxia acclimation (plastic stage), and colonized highland (colonized stage). Using a group of co-expressed genes from the cardiac and flight muscles, respectively, we demonstrate that gene expression plasticity to hypoxia tolerance is more often reversed than reinforced at the colonized stage. By correlating gene expression change with muscle phenotypes, we show that colonized tree sparrows reduce maladaptive plasticity that largely associated with decreased hypoxia tolerance. Conversely, adaptive plasticity that is congruent with increased hypoxia tolerance is often reinforced in the colonized tree sparrows. Genes displaying large levels of reinforcement or reversion plasticity (i.e. 200% of original level) show greater genetic divergence between ancestral and colonized populations. Overall, our work demonstrates that gene expression plasticity at the initial stage of high-elevation colonization can be reversed or reinforced through selection-driven adaptive modification.\n\n## Introduction\n\nUnderstanding the interactions between organisms and their environments is becoming increasingly important as environmental change and human activity change the original distribution of many species (Visser, 2008; Wingfield et al., 2011; McCairns et al., 2016; Oostra et al., 2018). While some organisms can easily cope with environmental change, others run the risk of local or global extinction. An organismal response to environmental change partially depends on its ability of phenotypic change (Pfennig et al., 2010; Scoville and Pfrender, 2010; Murren et al., 2015; Fox et al., 2019). For organisms that have recently colonized a new environment, phenotypic change may involve two stages. At the early stage, species may rapidly change their phenotype through plasticity without involving genetic changes. Under a persisting strong selective pressure, selection may bring genetic change to canalize phenotypic changes. Consequently, phenotypic plasticity has been considered to play a stepping stone for genetically based evolutionary change at a late stage, so called \u2018plasticity first\u2019 hypothesis (i.e. West-Eberhard, 2003; Schwander and Leimar, 2011; Levis and Pfennig, 2016; Corl et al., 2018).\n\nUnder this hypothesis, plasticity may serve adaptive evolution in two alternative ways (Ho and Zhang, 2018; Ho et al., 2020). On the one hand, if plasticity changes the phenotype in the same direction as adaptive evolution does, genetic variation can strengthen the change toward an optimal phenotypic value in the new environment (reinforcement plasticity). On the other hand, if the plastic change works in the opposite direction as that driven by adaptive evolution, the subsequent genetic change would have to revert the initial plastic response (reversion/reduction plasticity). As previous studies on morphological and physiological traits have revealed mixed evidence for the reinforcement and the reversion of plasticity (Pigliucci et al., 2006; Lande, 2009; Pfennig et al., 2010; Moczek et al., 2011; Levis and Pfennig, 2016; Corl et al., 2018), it remains unclear if and how genetic change acts to reinforce or reverse plasticity in the wild species (i.e. Campbell-Staton et al., 2021). The potential challenges are how to quantify phenotypic change relative to plasticity and adaptive evolution, and how to define what genes are involved in the phenotypic change, especially as many phenotypes are likely polygenically mediated (Novembre and Barton, 2018; Pritchard et al., 2010).\n\nComparison of gene expression provides a potential approach to quantify the relative contributions of phenotypic plasticity and genetic variation since gene expression can bridge an organism\u2019s genotype to its cellular biology and, by extension, higher-order physiological processes (Wray et al., 2003; Morris et al., 2014). While the entire transcriptional program is orchestrated by the gene regulatory network, it is possible to trace the genes that are co-expressed or underpin the phenotypic change (Fukao et al., 2011). In addition, gene expression evolves in a stabilizing manner, where regulatory elements accumulate mutations that keep gene expression at an optimal level for physiological functions (Coolon et al., 2014; Gilad et al., 2006; Hodgins-Davis et al., 2015). Herein, we used gene expression data to quantify regulatory plasticity and adaptation, as well as the relevant genetic changes in a group of wild birds that have recently colonized a highland environment, the Eurasian Tree Sparrows, Passer montanus (hereafter referred to as tree sparrows).\n\nThe tree sparrow is a human commensal that has spread over a wide variety of habitats in the Eurasian continent, and that has been successfully introduced to Australia and North America (Widmann, 1889; Graham et al., 2011). This species colonized the Qinghai-Tibet plateau approximately 2600 years ago (Qu et al., 2020), possibly concurrently with the introduction of barley agriculture in the highlands. The Qinghai-Tibet plateau is a harsh environment with an average elevation of 4500 m above sea level (m a.s.l.) where only a few endemic animals can survive. For mammals and birds living at high elevations, hypoxia is one of the strongest selective pressures that drive physiological changes (Barve et al., 2016; McClelland and Scott, 2019). Compared to the lowland ancestral population, highland tree sparrows have evolved physiological and gene expression changes for hypoxia tolerance (Sun et al., 2016; Qu et al., 2020), but how these changes relate to plasticity and adaptive evolution is largely unknown.\n\nIn order to explore this, we acclimated a group of lowland birds to an experimentally implemented hypoxic condition similar to that where we collected highland birds (i.e. 3200 m a.s.l). We could assess gene expression plasticity and regulatory adaptation in hypoxia tolerance by studying tree sparrows collected (a) in their original lowland environment (representing the physiologically ancestral stage), (b) shortly after their exposure to the new environmental stimulus (representing the ancestral plasticity at the initially plastic stage), and (c) after having adapted to the highland environment (the colonized stage). Using the framework described in Figure 1, we quantified gene expression change stemming from hypoxia acclimation and highland colonization and defined genes with the expression plasticity being reinforced or reversed at the colonization stage. We test whether these genes increase genetic variation between ancestral and colonized populations using a permutation test. We use this framework in four datasets including groups of co-expressed genes associated with hypoxia tolerance and those correlated to muscle phenotypes for the cardiac and flight muscles, respectively. These independent comparisons congruently show that gene expression at the plastic stage is more often reversed than reinforced at the colonized stage, and the selection-driven genetic change depends on the magnitude of reinforcement and/or reversion plasticity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86687/elife-86687-fig1-v1.jpg)\n\n**Figure 1.:** Experimental design, transcriptomic data of the flight, and cardiac muscle were collected from tree sparrows obtained in their original lowland habitat (ancestral stage), experimental exposure to the hypoxic condition (plastic stage), and colonization to a high-elevation environment (colonized stage). Identify candidate genes, co-expressed genes that display correlation with hypoxia tolerance were identified by a weighted gene correlation network analysis (WGCNA) and muscle phenotype-associated genes were identified by correlating gene expression levels and each of the muscle phenotypes. Reinforcement/reversion plasticity, the genes with reinforcement or reversion plasticity were defined by comparing expression changes between the ancestral and plastic stages (plastic change), and between plastic and colonized stages (evolved change). The strength of reinforcement/reversion plasticity is measured by a range of thresholds, i.e., <100% and >50%, <150% and >100%,<200% and >150%, and >200%. Quantify genetic divergence, genetic divergence (i.e. FST) between lowland and highland populations was estimated for the genic region, 2 kb upstream and downstream regions of the candidate genes. The empirical FST values were compared with permuted FST distributions generated from 100 random samplings from the genetic background. A threshold of p<0.05 was used to determine statistical significance.\n\n## Results\n\n### Co-expressed genes involved in hypoxia tolerance generally reverse gene expression plasticity\n\nWe sequenced transcriptomic data of the cardiac and flight muscles from the lowland tree sparrows that had been kept under the hypoxia acclimation in this study (n=7), and re-analyzed transcriptomic data in the lowland and highland tree sparrows collected by Qu et al., 2020 (n=14, Supplementary file 1). We focused on the flight and cardiac muscles because they affect thermogenic capacity and oxygen transport and delivery and are thus critical for the highland adaptation (Scott et al., 2015; Storz et al., 2010). Considering that response to environmental change often involves complex coordinated biological response, such as the co-regulation of genes underpinning physiological functions, we analyzed the resultant expression data for all individuals using weighted gene correlation network analysis (WGCNA, Langfelder and Horvath, 2008). Weighted correlation network is a system biology method for identifying groups of highly co-expressed genes (modules), summarizing module-level expression, and identifying important genes within modules (hub genes). Consequently, these co-expressed genes can capture expression-stage correlations due to the hypoxia-dependent expression. We identified six and nine modules of co-expressed genes with their expression changes that are significantly associated with the three stages (i.e. ancestral, plastic, and colonized stages) for the flight and cardiac muscle, respectively (Figure 2A and Figure 2\u2014figure supplement 1). Across these modules, we identified 2413 and 508 hub genes based on the gene significance function (GS>first quartile and p<0.05) for the flight and cardiac muscles, respectively (Figure 2B\u2013C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86687/elife-86687-fig2-v1.jpg)\n\n**Figure 2.:** (A) Pearson linear correlation is used to identify genes with expression reinforcement and nonlinear regression to identify genes with expression reversion. Regulatory modules were identified as branches of the resulting cluster tree via the dynamic tree-cutting method and highly correlated modules (p<0.1) were merged. We used \u2018GS>first quartile of GS\u2019 and \u2018p<0.05\u2019 to identify important genes within modules (hub genes). (B) and (C) Six and nine modules, respectively, were identified to be associated with different stages for the flight and cardiac muscles (p<0.01). Within each module, colored dots show the genes with the expression levels significantly associated with the stages (gene significance function>first quartile and p<0.05). (D) Frequencies of genes with reinforcement and reversion plasticity (>50%) and their subsets that acquire strong support in the parametric bootstrap analyses (\u2265950/1000). (E) and (F) Left, genes with expression plasticity being reinforced (red) or reversed (blue) at the colonized stage identified for the flight (E) and cardiac muscles (F), respectively. There are more genes showing reversion plasticity than those showing reinforcement plasticity. Two-tailed binomial test, NS, nonsignificant; ***p<0.001. Right, the FST values (vertical lines) significantly increase in the 2 kb upstream and/or downstream regions of the genes having the magnitude of reinforcement/reversion plasticity >200%. Vertical lines, the empirical FST values; shades, permutated FST distributions generated from 100 random samplings. NS, non-significant, *p<0.05; **p<0.01.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86687/elife-86687-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A-B) The soft thresholds of the scale independence used for WGCNA analyses were 23 and 4 for flight and cardiac muscles. (C-D) WGCNA identified six and nine highly correlated modules for the flight muscle (left) and cardiac muscle (right) transcriptomes using a threshold of p<0.1.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86687/elife-86687-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Three different bins are set along the spectrum of the reinforcement/reversion plasticity, i.e., 20%, 40%, and 60%. All comparisons show that there are more genes showing reversion plasticity than those showing reinforcement plasticity. Upper, flight muscle; lower, cardiac muscle. Two-tailed binomial test, ***p<0.001.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/86687/elife-86687-fig2-figsupp3-v1.jpg)\n\nUsing these candidate genes we examined how gene expression plasticity changed across the three stages. We compared the gene expression levels between the birds at the ancestral stage and those at the plastic stage, as well as between the birds at the ancestral stage and those at the colonized stage. We attributed genes showing the same direction of change to the reinforcement group and those showing the opposite direction of change to the reversion group as described in Ho and Zhang, 2018. Using a threshold of >50% increase/reduction of gene expression between two comparisons, we attributed 36 and 15 genes to the reinforcement group and 209 and 60 genes to the reversion group for flight and cardiac muscle, respectively. Interestingly, we found fractions of genes with reversion plasticity are larger than those of genes with reinforcement plasticity (Figure 2D). To confirm the robustness of this observation with respect to random sampling errors, we carried out a parametric bootstrap procedure as described by Ho and Zhang, 2019, which aimed to identify genes resulting from genuine differences rather than random sampling errors. Bootstrap results also confirmed that genes exhibiting reversing plasticity significantly outnumber those exhibiting reinforcing plasticity (Figure 2D).\n\nWe then explore whether this result is robust with different magnitudes of plasticity by using a range of thresholds of <150% and >100%, <200% and >150%, and >200% to attribute genes to reinforcement and reversion groups. These different categories consistently showed an excess of genes with reversion plasticity (six out of eight comparisons, two-tailed binomial test, p<0.05, Figure 2E\u2013F). To further confirm the robustness of the discovered pattern against the arbitrariness of threshold selection, we also adopted different categorizations according to the magnitude of plasticity (i.e. 20%, 40%, and 60% bin settings along the spectrum of the reinforcement/reversion plasticity), and these analyses showed similar results (Figure 2\u2014figure supplement 2). Altogether, these results suggest that high-elevation colonization of tree sparrows generally reverses gene expression plasticity.\n\nIf the reinforcement and/or reversion gene expression plasticity in hypoxic tolerance were the target of selection in the high-elevation environment, we would expect to see an increase in the genetic divergence between the ancestral and colonized populations. To evaluate this we searched for genomic signatures of selection using resequencing data from 12 lowland and 11 highland tree sparrows generated from a previous study (Qu et al., 2020). Significantly elevated genetic divergence (i.e. FST) within the candidate genes beyond the genic background would provide evidence for selection acting on this group of co-expressed genes (i.e. polygenic adaptation). We thus calculated the average FST for the genes with reinforcement or reversion plasticity using all SNPs included in the genic region, 2 kb upstream and downstream regions, respectively. We considered the upstream and downstream regions because gene regulation may refer to genetic variation in nearby non-coding regions. By comparing to the FST distributions generated from 100 random samplings of the same number of SNPs from the genic background (see Methods), we found that the empirical FST values significantly increased in the genes with the levels of reinforcement/reversion plasticity reaching above 200% (p<0.05, Figure 2E\u2013F). In all cases, the empirical FST values increased significantly in the 2 kb upstream and/or downstream regions of the candidate genes, but not in the genic regions. This observation thus suggests that selection-driven genetic change is more targeted on the non-coding regions and depends on the magnitude of reinforcement/reversion plasticity.\n\n### Gene expression and muscle phenotype analyses show adaptive plasticity and maladaptive plasticity\n\nThe evolutionary outcome of the phenotypic plasticity for a population colonizing a novel environment depends on the direction of plastic change with respect to the local optimum of the novel environment. If the plastic change is close to the local optimum, i.e., adaptive plasticity, natural selection likely reinforces adaptive plasticity. Conversely, if the plasticity moves the phenotypic change away from the local optimum, i.e., maladaptive plasticity, natural selection should reduce or reverse the reaction norm and restore the phenotypic change back to the original ancestral values (Campbell-Staton et al., 2021). In order to investigate phenotypic plasticity and its evolutionary consequence, we analyzed two datasets that included gene expression and muscle phenotypes collected from the lowland ancestral and highland colonized tree sparrows (Qu et al., 2020).\n\nBased on the correlation analysis between gene expression and muscle phenotypic values of the ancestral and colonized tree sparrows, we categorized the direction of expression-phenotype correlation as positive or negative regulators for the muscle phenotype-associated genes (p<0.05, Figure 3A). We identified 2037 and 1866 muscle phenotype-associated genes in the flight and cardiac muscle, respectively (Figure 3B\u2013C). Out of these genes, we found 328 positive regulators and 1709 negative regulators for the flight muscle, and 843 positive regulators and 1023 negative regulators for the cardiac muscle (Figure 3\u2014figure supplement 1). We then characterized the differences in gene expression observed for the ancestral-plastic groups and the ancestral-colonized groups as congruent or incongruent with increased hypoxia tolerance (see Methods). Because the muscle phenotypic changes observed in the colonized tree sparrows have been shown to enhance oxygen delivery and improve metabolic capacity in the highland animals (Giordano, 2005; Storz et al., 2010; Scott, 2011; Scott et al., 2015), we deemed that the gene expressions in which the direction of plastic change matched the expectation for increase hypoxia tolerance as putatively adaptive, while those that opposed this expectation were considered to be putatively maladaptive (Figure 3A). Using a threshold of >50% of plasticity change, we found that the tree sparrows displayed more genes with maladaptive plasticity than genes with adaptive plasticity (two-tailed binomial test, flight muscle, 198 vs 48, p<2.2e\u201316, cardiac muscle 186 vs 166, p<0.05). These results are robust with random sampling errors as our parametric bootstrap analyses also revealed similar results (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86687/elife-86687-fig3-v1.jpg)\n\n**Figure 3.:** (A) Gene expression profiles were correlated with muscle phenotypes. The direction of gene expression plasticity at the plastic stage matched the expectation for positive regulator (increased expression) and negative regulators (decreased expression) in the colonized tree sparrows was considered to indicate adaptive plasticity. Conversely, those that opposed this expectation were considered to be maladaptive, i.e., the direction of gene expression plasticity at the plastic stage showed decreased expression for the positive regulators and increased expression for negative regulators. A, ancestral stage; P, plastic stage; C, colonized stage. (B) and (C) Gene expression profiles were correlated with three flight muscle phenotypes (B, capillary per fiber, fiber area, and perimeter) and two cardiac muscle phenotype (C, capillary density, and fiber diameter). Red dots show genes with adaptive gene expression plasticity and blue dots show genes with maladaptive gene expression plasticity. (D) Frequencies of genes with adaptive and maladaptive plasticity (>50%) and their subsets that acquire strong support in the parametric bootstrap analyses (\u2265950/1000). (E) and (F) Left, candidate genes are classified into four categories with different magnitudes of adaptive or maladaptive plasticity. More genes show maladaptive plasticity than those that show adaptive plasticity. Two-tailed binomial test, **p<0.01; ***p<0.001. Right, the empirical FST values significantly increased in the 2 k upstream and/or downstream regions of the genes having adaptive/maladaptive plasticity <200% and >150% (cardiac muscle) and >200% (flight and cardiac muscles). (E) Flight muscle, (F) Cardiac muscle. Vertical lines, the empirical FST values; shades, permutated FST distributions generated from 100 times sampling. *p<0.05; **p<0.01.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86687/elife-86687-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Red or blue dots showed the genes with their expression changes that are positively or negatively correlated with muscle phenotypes, respectively. A threshold of p<0.05 (vertical gray line) is used to determine statistical significance. (B) 2037 and 1866 muscle phenotype-associated genes are identified in the flight and cardiac muscle transcriptomes, respectively, which included 328 and 843 genes that are positively correlated with flight and cardiac muscle phenotypes, and 1709 and 1023 negatively correlated with flight and cardiac muscle phenotypes.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86687/elife-86687-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Three different bins are set along the spectrum of the maladaptive/adaptive plasticity, i.e., 20%, 40%, and 60%. All comparisons show that there are more genes showing maladaptive plasticity than those showing adaptive plasticity for the flight muscle, while more than 50% of comparisons supported an excess of genes with maladaptive plasticity for the cardiac muscle. Two-tailed binomial test, NS, non significant; *p<0.05; **p<0.01; ***p<0.001.\n\nWe subsequently examined the expression-stage relationship using the thresholds (<150% and >100%, <200% and >150%, and >200%) and bin settings (20%, 40%, and 60% bin settings) as above-mentioned to explore the magnitudes of adaptive and maladaptive plasticity. We found that the fractions of genes with maladaptive plasticity were larger than those of genes with adaptive plasticity (two-tailed binomial test, p<0.01, Figure 3D). This observation is robust with different thresholds and bin settings for the flight muscle, but slightly sensitive to bin settings for the cardiac muscle, indicated by more than 50% of comparisons supporting an excess of genes with maladaptive plasticity (Figure 3\u2014figure supplement 2). These results suggest that gene expression plasticity induced by hypoxia exposure at the early stage may be mainly maladaptive for muscle physiological performance in highland environment.\n\nThe observed adaptive and maladaptive gene expressions in the tree sparrows suggest that selection may have acted to reinforce and/or reverse gene expression plasticity. We then quantified the genetic divergence of these genes between ancestral and colonized tree sparrows by testing for a statistically significant increase of FST as compared to the FST distributions generated from 100 random samplings (see Methods). We found that the empirical FST values were significantly larger in the genes within the <200% and >150% category (cardiac muscle, p<0.05) and >200% category (flight and cardiac muscle, p<0.05), but not in those within other categories with low levels of reinforcement and reversion plasticity. Additionally, we found that genetic divergence between the ancestral and colonized tree sparrows tends to increase in the 2 kb upstream and downstream regions of these genes (p<0.05, Figure 3E\u2013F). These results suggest that selection on regulatory adaptation (i.e. genetic divergence) may only be expected if large strength of selection is needed to bring initial plasticity toward adaptive optimum of the novel environment.\n\n## Discussion\n\nAn understanding of phenotypic plasticity and its consequence for adaptive evolution is important in evolutionary biology but remains challenging (Ghalambor et al., 2007; Ghalambor et al., 2015; Campbell-Staton et al., 2021; Kenkel and Matz, 2016; Rivera et al., 2021). Using an integrative approach of field-based studies, experimentally implemented acclimation experiments, multiomic and muscle phenotypic data, our study demonstrates the importance of gene expression plasticity in facilitating initial survival and population persistence at an early stage of colonization. In particular, our results provide novel insight into an issue of active debate within evolutionary biology (i.e. reinforcement vs. reversion plasticity) by showing that the evolutionary consequence of plasticity depends on the adaptive plasticity (reinforcement) or maladaptive plasticity (reversion). We also demonstrate that natural selection drives genetic divergence when the magnitude of reinforcement and/or reversion plasticity becomes intense, providing novel insights into the mechanism of plasticity first and genes as followers Schwander and Leimar, 2011.\n\nOur gene expression and sequence analyses provide several lines of evidence in support of gene expression plasticity contribution to the high-elevation colonization of tree sparrows. First, we show that co-expressed genes and muscle phenotype-associated genes change either the intensity or the direction of their expression profiles, and that gene expressions at the plastic stage are more often reversed than reinforced at the colonization stage. Second, by combining gene expression and muscle phenotype, we show that selection operates intensely on maladaptive plasticity during the initial stage of responding novel environment (Ghalambor et al., 2007; Ghalambor et al., 2015; Ho and Zhang, 2018; Campbell-Staton et al., 2021). Third, the genes with intensified levels of reinforcement and reversion expression plasticity show large genetic divergence (FST) in their upstream and downstream regions between the ancestral and colonized populations, suggesting that selection has driven genetic changes in the noncoding regions after the tree sparrows had colonized the novel environment.\n\nThese observations thus support that plasticity serves as a stepping stone in a successful colonization of a new environment and that genetic changes that evolve at a late stage will modify the plastic change to an optimal phenotype in the new environment (Corl et al., 2018; Schwander and Leimar, 2011). It is interesting to think about why phenotypic change at the plastic stage sometimes differs from those at the colonized stage. A likely reason is that initially plastic change allows organisms to survive upon a sudden environmental shift but the fitness is much reduced compared to that after a long-term colonization to the novel environment (Fischer et al., 2016; Huang and Agrawal, 2016; Leonard and Lancaster, 2020; Kuo et al., 2023). Thus, the overall physiological states of the organisms right after an environmental shift may result in low fitness. To coordinate the phenotype values to close the organismal fitness, a genetic change may be required to modify the plastic change of phenotype to approach the optimum to the novel environment (Storz, 2021). Thus, the consequence of genetic change on plasticity is dependent on the cost of plastic change (Ho and Zhang, 2018; Corl et al., 2018).\n\nA limitation of our study is that we could only consider hypoxic conditions in the acclimation experiment, while also other factors associated with high-elevation environments, e.g., low temperature and UV radiation, may be of importance. Although we assume that hypoxia is the dominant selective force in the Qinghai-Tibetan Plateau (see also Sun et al., 2016; Qu et al., 2020), the use of a single environmental stimulus makes our conclusions more conservative. Also, it is reasonable to assume that plastic change in organisms is time-dependent and that our results cannot catch gene expression occurring at the later stage of plastic response (i.e. after one month). Since we could only run the acclimation experiment for one month it is likely we have not identified all genes related to hypoxia tolerance. Despite this, we could observe a clear pattern of reinforcement and reversion plasticity and the associated genetic changes. Our sample sizes are rather small (n=12 for the flight muscle and n=9 for the cardiac muscle), mostly because of the logistical challenge of keeping tree sparrows in the necessary common garden experiments. In order to compensate for this, we utilized comparative transcriptomics to generate the four independent datasets (a group of co-expressed genes and a group of phenotype-associated genes for the flight and cardiac muscles, respectively). As the analyses of these four independent datasets show similar results, we believe the conclusions drawn from our study are robust.\n\nDespite some limitations, our study demonstrates an easy implemented framework for quantifying phenotype plasticity and how to relate this to genetic change. Short-term acclimation response of lowland populations has been found to be different from the populations adapted to the high-elevation environments. For example, people newly exposed to high-elevation environment increase their red blood cells as compared to people at sea level, which is likely mediated by HIF and EPO genes in the hypoxia response cascade (Erzurum et al., 2007; Peng et al., 2017). This physiological change, however, is less activated in native people at high-elevation when compared to people at sea level, demonstrating an example of reversion of phenotypic plasticity (Storz, 2021). Together with previous studies, our work shows that short-term acclimation response and long-term adaptive evolution in hypoxia response may affect different evolutionary pathways. Our work provides an understanding of how plasticity facilitates species to invade new habitats and survive environmental change. Such an understanding is important, in particular when numerous species are being introduced to new regions of the globe through human intervention and spread as invasive species (Visser, 2008).\n\n## Materials and methods\n\n### Sampling\n\nWe generated transcriptomic data from hypoxia-acclimated lowland tree sparrows by exposing five lowland tree sparrows to hypoxic conditions for 30 days using a hypoxic chamber (Qu et al., 2020). The oxygen content in the chamber was set to 14% of the oxygen content (simulating the oxygen concentration at 3200 m a.s.l., 70% of ~20%, the latter of which is the content of oxygen content at sea level), which is similar to the condition where we collected the highland tree sparrows (Qinghai Lake, 3200 m a.s.l.). We collected flight muscle from the four individuals and cardiac muscle from three individuals. In addition, we extended the analyses of the transcriptomic and muscle histological data from tree sparrows that were collected from lowland (Beijing and Hebei, 100 m a.s.l.) and highland (Qinghai Lake, 3200 m a.s.l., Figure 1) collected in previous study (Qu et al., 2020). In total, we used twelve samples for flight muscle and nine samples for cardiac muscle (Supplementary file 1). The ancestral lowland and hypoxia-exposed lowland tree sparrows were collected from the same locality (Beijing) and the same season (pre-breeding). Only adult birds with similar body weight (approximately 18 g) were used.\n\n### Transcriptome sequencing\n\nRNA libraries were constructed for the flight and cardiac muscles and sequenced on an Illumina HiSeq4000 platform. After filtering low-quality, adapter-contaminated, and N-rich reads (>10%), a total of 134, 128, and 120 million reads of transcriptional data were generated for the lowland, hypoxia-exposed lowland tree sparrows and highland tree sparrows, respectively (Supplementary file 1). We mapped cleaned reads against the tree sparrow genome using STAR (Dobin et al., 2013). We compared log-transformed transcript per million (TPM) across all genes and determined the most conserved genes (i.e. coefficient of variance \u2009\u2264\u20090.3 and average TPM \u2009\u2265\u20091 for each sample) for the flight and cardiac muscles, respectively (Hao et al., 2023). We then compared the median expression levels of these conserved genes and found no difference among the lowland, hypoxia-exposed lowland, and highland tree sparrows (Wilcoxon signed-rank test, p<0.05, Figure 2\u2014figure supplement 3), suggesting that batch effect had little influence on the transcriptomic data. We then used TPM values to calculate gene expression level and intensity using RSEM (Li and Dewey, 2011).\n\n### WGCNA analyses\n\nWe used WGCNA v. 1.41\u20131 (Langfelder and Horvath, 2008) to identify regulatory architecture for the flight muscle and cardiac muscle transcriptomes. Specifically, we used a principal component analysis (PCA) to summarize modules of genes expression with blockwiseModules function, and then used module eigengene values of the first principal component (PC) to test the correlation between module expression and stages. We used Pearson linear correlation (cor function) to identify genes with expression reinforcement and nonlinear regression (polynomial regression model: Model = lmy~poly(x, 5, raw = TRUE), data = data) to identify genes with expression reversion. Regulatory modules were identified as branches of the resulting cluster tree via the dynamic tree-cutting method and highly correlated modules (p<0.1) were merged. We used \u2018GS>first quartile of GS\u2019 and \u2018p<0.05\u2019 to identify important genes within modules (hub genes).\n\n### Identify gene regulation associated with muscle phenotype\n\nTo identify the genes with expression levels that correlated to evolved differences in the muscle phenotypes in the tree sparrows, we used the lowland and highland individuals from Qu et al., 2020 for which RNAseq and muscle phenotypic data were available. We correlated the levels of gene expression with muscle phenotypes in the lowland and highland individuals. We used three phenotypes for the flight muscle (capillary per fiber, fiber area, and perimeter) and two for the cardiac muscle (capillary density and fiber diameter). We used Pearson correlation to test the association between each of the phenotypic traits and the expression profile of each gene (TPM). A threshold of p<0.05 was used to detect muscle-associated genes. We then followed Campbell-Staton et al., 2021 to categorize genes as positive (positively correlated with muscle phenotypes) or negative regulators (negatively correlated with muscle phenotypes).\n\nSubsequently, we compared the direction of gene expression plasticity at the plastic stage with those of the positive and negative regulators. Briefly, the direction of gene expression plasticity at the plastic stage matched the expectation for the positive regulator (increased expression) or negative regulator (decreased expression) in the colonized tree sparrows was considered to indicate adaptive plasticity. Conversely, those that opposed this expectation were considered to be maladaptive, i.e., the direction of gene expression plasticity at the plastic stage showed decreased expression for the positive regulators and increased expression for negative regulators (Figure 3A).\n\n### Reinforcement and reversion plasticity analyses\n\nTo investigate the magnitude of reinforcement and reversion plasticity, we followed the method described by Ho and Zhang, 2018. Specifically, expression levels of each gene in the three stages were treated as E_lowland (expression level at the ancestral stage), E_hypoxia (expression level at the plastic stage), and E_highland (expression level at the colonized stage). We used a threshold of 50% of the ancestral gene expression level, i.e., 50% * E_lowland, to detect an excess of gene expression change. We identified genes with an excess of plastic change if it satisfied the condition of |(E_hypoxia-E_lowland)|>50% * E_lowland. Likewise, we identified genes with an excess of evolutionary change if it met the condition of |(E_highland-E_hypoxia)|>50%* E_lowland. If the genes showed the same direction in the expression change at the plastic and colonized stages, we regarded these genes as reinforcement expression. If the genes showed opposite directions in the expression change at the plastic and colonized stages, we regarded these genes as reversion expression. We categorized these genes into reinforcement and reversion groups and then tested if the proportions of the genes in the two groups were significantly different from the expected proportions using two-tailed binomial tests.\n\nTo explore whether an excess of genes with reversion plasticity was subject to random sampling errors (Mallard et al., 2018), we used a parametric bootstrap method as described in Ho and Zhang, 2019. Specifically, we simulated the mean expression level of a gene at each stage following a Gaussian distribution within the mean equal to the observed mean expression of this gene at this stage and the standard deviation equal to the estimated standard error. We then draw a random variable from the above Gaussian distribution to represent an observation of the mean expression level of this gene at this stage. We drew random variables representing the mean expression level of genes at each of the three stages (i.e. ancestral, plastic, and colonized stages), and then computed gene expression changes at the plastic stage and colonized stage and determined the reinforcement or reversion plasticity. This process is repeated 1000 times for each gene. If this gene exhibited reinforcement or reversion plasticity at least 950 repeats (p<0.05), we considered this gene showing reinforcement or reversion plasticity. The Gaussian distribution and random sampling were generated using the rnorm function of R.\n\nTo test the impact of the choice of thresholds on the results, we analyzed the data using a range of thresholds, i.e., <100% and >50%, <150% and >100%, <200% and >150%, and >200%. This setting aimed to obtain independent genesets for subsequent genetic divergence analyses, because a geneset selected by relax threshold (i.e. 50%) also included genesets obtained by the stringent threshold (i.e. 100%, 150%, and 200%). In addition, we also implemented other categorization scheme to check the robustness of the results. Specifically, we used three different bin settings (i.e. 20%, 40%, and 60% bin settings along the spectrum of the reinforcement/reversion plasticity), to group genes according to their magnitude of plasticity. For each category in the three-bin settings, we compared whether the proportion of the genes with reversion plasticity differed from that with reinforcement plasticity using two-tailed binomial tests.\n\n### Comparing genetic divergence for genes with reinforcement and reversion expression plasticity\n\nTo calculate the genetic divergence between the lowland ancestral and highland colonized tree sparrows, we used 12 lowland and 11 highland individuals for which re-sequencing data were available (Qu et al., 2020). After mapping the raw reads to the tree sparrow genome using BWA v0.7.17 (Li and Durbin, 2009), we obtained mean sequence coverage of 17x for each individual (Supplementary file 2). We called variants with GATK v 3.7 (McKenna et al., 2010) and Samtools v1.2 (http://www.htskib.org/) and filtered single nucleotide polymorphism (SNP) using VCF tools and GATK with minimum coverage = 138, root mean square mapping quality \u226520, distance of adjacent SNPs \u22655, distance to a gap \u22655 bp, and read quality value \u226530.\n\nWe calculated average FST using Vcftools (Danecek et al., 2011) with SNPs included in the genic region, 2 kb upstream and downstream regions of the genes within each of the four categories, i.e., <100% and >50%, <150% and>100%, <200% and>150%, and >200%. The upstream and downstream regions were considered because gene regulation may refer to genetic variation in the nearby genic regions. We permuted FST distributions for the genes within each category by random sampling the same number of SNPs, allowing for a fluctuation of 5% of total SNPs. We compared the empirical FST values to permutated FST distributions generated from 100 samplings and considered a threshold of p<0.05 to be statistically significant (empirical FST >95% percentile of permutated FST distribution). We calculated empirical FST values and permutated FST distributions for the genic region, 2 kb upstream and downstream regions separately. To avoid the sampling bias (i.e. sampling SNPs from neutral regions), our SNP sampling was constrained to the genic region, 2 k upstream and downstream regions of all genes (i.e. 16,925 genes). All analyses were conducted with the R statistical software package (R Development Core Team, 2017).\n",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian R Landry, Universit\u00e9 Laval Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86687.3.sa0](https://doi.org/10.7554/eLife.86687.3.sa0)\n\nThis study provides useful information on the evolution of gene expression levels and plasticity in tissues impacted by hypoxia during colonization of a high-altitude environment. Unfortunately, the evidence for the conclusions is incomplete because of the low sample size available.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.86687.3.sa1](https://doi.org/10.7554/eLife.86687.3.sa1)\n\nShe et al studied the evolution of gene expression reaction norms when individuals colonise a new environment that exposes them to physiologically challenging conditions. Their objective was to test the \"plasticity first\" hypothesis, which suggest that traits that are already plastic (their value changes when facing a new environment compared to the original environment) facilitates the colonisation of novel environments, which, if true, would be predicted to result in the evolution of gene expression values that are similar in the population that colonised the new environment and evolved under these particular selection pressures. To test this prediction, they studied gene expression in cardiac and muscle tissues in individuals originating from three conditions: lowland individuals in their natural environment (ancestral state), lowland individuals exposed to hypoxia (the plastic response state), and a highland population facing hypoxia for several generations (the coloniser state). They classified gene expression patterns as maladaptive or adaptive in lowland individuals responding to short term hypoxia by classifying gene expression patterns using genes that differed between the ancestral state (lowland) and colonised state (highland). Genes expressed in the same direction in lowland individuals facing hypoxia (the plastic state) as what is found in the colonised state are defined as adaptative, while genes with the opposite expression pattern were labelled as maladaptive, using the assumption that the colonised state must represent the result of natural selection. Furthermore, genes could be classified as representing reversion plasticity when the expression pattern differed between the plasticity and colonised states and as reinforcement when they were in the same direction (for example more expressed in the plastic state and the colonised state than in the ancestral state). They found that more genes had a plastic expression pattern that was labelled as maladaptive than adaptive. Therefore, some of the genes have an expression pattern in accordance with what would be predicted based on the plasticity-first hypothesis, while others do not.\n\nAs pointed out by the authors themselves, the fact that temperature was not included as a variable, which would make the experimental design much more complex, misses the opportunity to more accurately reflect the environmental conditions that the colonizer individuals face at high altitude. Also pointed out by the authors, the acclimation experiment in hypoxia lasted 4 weeks. It is possible that longer term effects would be identifiable in gene expression in the lowland individuals facing hypoxia on a longer time scale. Furthermore, a sample size of 3 or 4 individuals per group depending on the tissue for wild individuals may miss some of the natural variation present in these populations. Stating that they have a n=7 for the plastic stage and n = 14 for the ancestral and colonized stages refers to the total number of tissue samples and not the number of individuals, according to supplementary table 1.\n\nImpact of the work:\n\nThere has been work showing that populations adapted to high altitude environments show changes in their hypoxia response that differs from the short-term acclimation response of lowland population of the same species. For example, in humans, see Erzurum et al. 2007 and Peng et al. 2017, where they show that the hypoxia response cascade, which starts with the gene HIF (Hypoxia-Inducible Factor) and includes the EPO gene, which codes for erythropoietin, which in turns activates the production of red blood cell, is LESS activated in high altitude individuals compared to the activation level in lowland individuals (which gives it its name). The present work adds to this body of knowledge showing that the short-term response to hypoxia and the long term one can affect different pathways and that acclimation/plasticity does not always predict what physiological traits will evolve in populations that colonize these environments over many generations and additional selection pressure (UV exposure, temperature, nutriment availability).\n\nAltogether, this work provides new information on the evolution of reaction norms of genes associated with the physiological response to one of the main environmental variables that affects almost all animals, oxygen availability. It also provides an interesting model system to study this type of question further in a natural population of homeotherms.\n\nErzurum, S. C., S. Ghosh, A. J. Janocha, W. Xu, S. Bauer, N. S. Bryan, J. Tejero et al. \"Higher blood flow and circulating NO products offset high-altitude hypoxia among Tibetans.\" Proceedings of the National Academy of Sciences 104, no. 45 (2007): 17593-17598.\n\nPeng, Y., C. Cui, Y. He, Ouzhuluobu, H. Zhang, D. Yang, Q. Zhang, Bianbazhuoma, L. Yang, Y. He, et al. 2017. Down-regulation of EPAS1 transcription and genetic adaptation of Tibetans to high-altitude hypoxia. Molecular biology and evolution 34:818-830.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.86687.3.sa2](https://doi.org/10.7554/eLife.86687.3.sa2)\n\nThis is a well-written paper using gene expression in tree sparrow as model traits to distinguish between genetic effects that either reinforce or reverse initial plastic response to environmental changes. Tree sparrow tissues (cardiac and flight muscle) collected in lowland and highland populations subject to hypoxia treatment were profiled for gene expression and compared in (1) highland birds; (2) lowland birds under normal conditions to test for differences in directions of changes between initial plastic response and subsequent colonized response.\n\nThe authors clarified several points and made revisions according to my comments. It is good to know that the highland and lowland samples were collected and processed at the same time and the previous publication reported part of the data. My concerns regarding the conclusions about reversal versus reinforcement remain even after the additional analyses. Further studies are needed to confirm these results.\n",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ddd71248-e501-4359-8e5f-2d370bb3cb06",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C1",
+      "claim": "The Eurasian Tree Sparrow (Passer montanus) colonized the Qinghai-Tibet plateau approximately 2600 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "This species colonized the Qinghai-Tibet plateau approximately 2600 years ago (Qu et al., 2020), possibly concurrently with the introduction of barley agriculture in the highlands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Qu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "9da88c7b-b888-4ef4-a5e7-3b361ab12732",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C2",
+      "claim": "The Qinghai-Tibet plateau has an average elevation of 4500 m above sea level.",
+      "claim_type": "EXPLICIT",
+      "source": "The Qinghai-Tibet plateau is a harsh environment with an average elevation of 4500 m above sea level (m a.s.l.) where only a few endemic animals can survive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual description of the plateau's characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "6ffa0263-6a70-4d2d-949a-9d114be2a740",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C3",
+      "claim": "Highland tree sparrows have evolved physiological and gene expression changes for hypoxia tolerance compared to lowland ancestral populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the lowland ancestral population, highland tree sparrows have evolved physiological and gene expression changes for hypoxia tolerance (Sun et al., 2016; Qu et al., 2020), but how these changes relate to plasticity and adaptive evolution is largely unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sun et al., 2016 and Qu et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2d78b049-c18e-4781-9247-76577b390896",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C4",
+      "claim": "Gene expression plasticity to hypoxia tolerance is more often reversed than reinforced at the colonized stage in tree sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a group of co-expressed genes from the cardiac and flight muscles, respectively, we demonstrate that gene expression plasticity to hypoxia tolerance is more often reversed than reinforced at the colonized stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "27f8ae2b-4d80-4820-9c13-ca58696b7fb5",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C5",
+      "claim": "Colonized tree sparrows reduce maladaptive plasticity that is largely associated with decreased hypoxia tolerance.",
+      "claim_type": "EXPLICIT",
+      "source": "By correlating gene expression change with muscle phenotypes, we show that colonized tree sparrows reduce maladaptive plasticity that largely associated with decreased hypoxia tolerance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by correlation analyses between gene expression and muscle phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "b12059e2-f329-4be2-8ae4-7ce07169c366",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C6",
+      "claim": "Adaptive plasticity that is congruent with increased hypoxia tolerance is often reinforced in colonized tree sparrows.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, adaptive plasticity that is congruent with increased hypoxia tolerance is often reinforced in the colonized tree sparrows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "9104b21f-274d-4f22-b869-29b80db1139e",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C7",
+      "claim": "Genes displaying large levels of reinforcement or reversion plasticity (>200% of original level) show greater genetic divergence between ancestral and colonized populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes displaying large levels of reinforcement or reversion plasticity (i.e. 200% of original level) show greater genetic divergence between ancestral and colonized populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by FST analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "8cfcfa16-64d2-4dec-8819-ccfcf42f10d9",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C8",
+      "claim": "Phenotypic plasticity facilitates organismal invasion of novel environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic plasticity facilitates organismal invasion of novel environments, and the resultant phenotypic change may later be modified by genetic change, so called 'plasticity first.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the role of plasticity in evolution, representing established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "608690e9-96ae-42d7-9734-2b3ccf66646d",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C9",
+      "claim": "The 'plasticity first' hypothesis proposes that phenotypic plasticity serves as a stepping stone for genetically based evolutionary change.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, phenotypic plasticity has been considered to play a stepping stone for genetically based evolutionary change at a late stage, so called 'plasticity first' hypothesis (i.e. West-Eberhard, 2003; Schwander and Leimar, 2011; Levis and Pfennig, 2016; Corl et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "f015eed9-dac2-4417-89cd-0c1057fd862c",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C10",
+      "claim": "Reinforcement plasticity occurs when plasticity changes the phenotype in the same direction as adaptive evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, if plasticity changes the phenotype in the same direction as adaptive evolution does, genetic variation can strengthen the change toward an optimal phenotypic value in the new environment (reinforcement plasticity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of reinforcement plasticity based on theoretical understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "b45149e7-af97-498d-960e-085106f744cf",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C11",
+      "claim": "Reversion plasticity occurs when plastic change works in the opposite direction as that driven by adaptive evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, if the plastic change works in the opposite direction as that driven by adaptive evolution, the subsequent genetic change would have to revert the initial plastic response (reversion/reduction plasticity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of reversion plasticity based on theoretical understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "88dd7840-af7d-4e90-aaf4-6073705525a2",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C12",
+      "claim": "Previous studies on morphological and physiological traits have revealed mixed evidence for the reinforcement and reversion of plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "As previous studies on morphological and physiological traits have revealed mixed evidence for the reinforcement and the reversion of plasticity (Pigliucci et al., 2006; Lande, 2009; Pfennig et al., 2010; Moczek et al., 2011; Levis and Pfennig, 2016; Corl et al., 2018), it remains unclear if and how genetic change acts to reinforce or reverse plasticity in the wild species (i.e. Campbell-Staton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "c637c6d5-0462-4eb8-b661-55f94964636c",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C13",
+      "claim": "Gene expression can bridge an organism's genotype to its cellular biology and higher-order physiological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of gene expression provides a potential approach to quantify the relative contributions of phenotypic plasticity and genetic variation since gene expression can bridge an organism's genotype to its cellular biology and, by extension, higher-order physiological processes (Wray et al., 2003; Morris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wray et al., 2003 and Morris et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "ac3224e8-4025-4bfd-86f5-4a6c89cb67a9",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C14",
+      "claim": "Gene expression evolves in a stabilizing manner where regulatory elements accumulate mutations that keep gene expression at an optimal level for physiological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, gene expression evolves in a stabilizing manner, where regulatory elements accumulate mutations that keep gene expression at an optimal level for physiological functions (Coolon et al., 2014; Gilad et al., 2006; Hodgins-Davis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Coolon et al., 2014, Gilad et al., 2006, and Hodgins-Davis et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "9ac031be-3328-4e0f-91db-d86d32777e6c",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C15",
+      "claim": "The Eurasian Tree Sparrow is a human commensal that has spread over a wide variety of habitats in the Eurasian continent.",
+      "claim_type": "EXPLICIT",
+      "source": "The tree sparrow is a human commensal that has spread over a wide variety of habitats in the Eurasian continent, and that has been successfully introduced to Australia and North America (Widmann, 1889; Graham et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Widmann, 1889 and Graham et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "97c19ccf-6a6a-42ba-8fc1-17160e083499",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C16",
+      "claim": "The tree sparrow has been successfully introduced to Australia and North America.",
+      "claim_type": "EXPLICIT",
+      "source": "The tree sparrow is a human commensal that has spread over a wide variety of habitats in the Eurasian continent, and that has been successfully introduced to Australia and North America (Widmann, 1889; Graham et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Widmann, 1889 and Graham et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "9100a8c6-906b-49d0-988e-734aed25737e",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C17",
+      "claim": "Hypoxia is one of the strongest selective pressures that drive physiological changes for mammals and birds living at high elevations.",
+      "claim_type": "EXPLICIT",
+      "source": "For mammals and birds living at high elevations, hypoxia is one of the strongest selective pressures that drive physiological changes (Barve et al., 2016; McClelland and Scott, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Barve et al., 2016 and McClelland and Scott, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "02577866-e83e-440b-afac-8d0c3f7f5c4d",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C18",
+      "claim": "Lowland birds were acclimated to an experimentally implemented hypoxic condition similar to that where highland birds were collected (3200 m a.s.l).",
+      "claim_type": "EXPLICIT",
+      "source": "In order to explore this, we acclimated a group of lowland birds to an experimentally implemented hypoxic condition similar to that where we collected highland birds (i.e. 3200 m a.s.l).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "086d07a8-1944-4eef-a1e4-4a691fc2c8b0",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C19",
+      "claim": "Six modules of co-expressed genes were identified with expression changes significantly associated with the three stages for the flight muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified six and nine modules of co-expressed genes with their expression changes that are significantly associated with the three stages (i.e. ancestral, plastic, and colonized stages) for the flight and cardiac muscle, respectively (Figure 2A and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the WGCNA analysis, supported by data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "1ce353b1-ec44-4149-be77-dcd4750eb1ca",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C20",
+      "claim": "Nine modules of co-expressed genes were identified with expression changes significantly associated with the three stages for the cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified six and nine modules of co-expressed genes with their expression changes that are significantly associated with the three stages (i.e. ancestral, plastic, and colonized stages) for the flight and cardiac muscle, respectively (Figure 2A and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the WGCNA analysis, supported by data shown in Figure 2A and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "17f47a1d-e87f-4ceb-aa77-5dad900e05cd",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C21",
+      "claim": "2413 hub genes were identified for the flight muscle based on gene significance function (GS>first quartile and p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Across these modules, we identified 2413 and 508 hub genes based on the gene significance function (GS>first quartile and p<0.05) for the flight and cardiac muscles, respectively (Figure 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the WGCNA analysis, supported by data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "1fbd1daa-3ef6-4792-92b6-b1cdf2ce36f2",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C22",
+      "claim": "508 hub genes were identified for the cardiac muscle based on gene significance function (GS>first quartile and p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Across these modules, we identified 2413 and 508 hub genes based on the gene significance function (GS>first quartile and p<0.05) for the flight and cardiac muscles, respectively (Figure 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the WGCNA analysis, supported by data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "9253e0ac-6994-4c37-957d-1ad9dcbe1c11",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C23",
+      "claim": "Using a threshold of >50% increase/reduction of gene expression, 36 genes were attributed to the reinforcement group for flight muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a threshold of >50% increase/reduction of gene expression between two comparisons, we attributed 36 and 15 genes to the reinforcement group and 209 and 60 genes to the reversion group for flight and cardiac muscle, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "12c6bbec-e482-4f85-abd5-f1d588ae4008",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C24",
+      "claim": "Using a threshold of >50% increase/reduction of gene expression, 15 genes were attributed to the reinforcement group for cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a threshold of >50% increase/reduction of gene expression between two comparisons, we attributed 36 and 15 genes to the reinforcement group and 209 and 60 genes to the reversion group for flight and cardiac muscle, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "ff11de35-c597-4fdf-98f2-1fe82cd2ac2f",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C25",
+      "claim": "Using a threshold of >50% increase/reduction of gene expression, 209 genes were attributed to the reversion group for flight muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a threshold of >50% increase/reduction of gene expression between two comparisons, we attributed 36 and 15 genes to the reinforcement group and 209 and 60 genes to the reversion group for flight and cardiac muscle, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "86031ed1-b49e-468e-b1e3-0a0508a4e13a",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C26",
+      "claim": "Using a threshold of >50% increase/reduction of gene expression, 60 genes were attributed to the reversion group for cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a threshold of >50% increase/reduction of gene expression between two comparisons, we attributed 36 and 15 genes to the reinforcement group and 209 and 60 genes to the reversion group for flight and cardiac muscle, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "162cd384-a08b-44e2-a71f-004909108609",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C27",
+      "claim": "Fractions of genes with reversion plasticity are larger than those of genes with reinforcement plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found fractions of genes with reversion plasticity are larger than those of genes with reinforcement plasticity (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the gene expression analysis, supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "344966f0-664e-4155-80dd-650241fddd9d",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C28",
+      "claim": "Bootstrap results confirmed that genes exhibiting reversing plasticity significantly outnumber those exhibiting reinforcing plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Bootstrap results also confirmed that genes exhibiting reversing plasticity significantly outnumber those exhibiting reinforcing plasticity (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the parametric bootstrap analysis, supported by data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "ea462d5e-ffa1-4d64-a1c0-bd2276161043",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C29",
+      "claim": "The empirical FST values significantly increased in the genes with the levels of reinforcement/reversion plasticity reaching above 200%.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing to the FST distributions generated from 100 random samplings of the same number of SNPs from the genic background (see Methods), we found that the empirical FST values significantly increased in the genes with the levels of reinforcement/reversion plasticity reaching above 200% (p<0.05, Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the genetic divergence analysis, supported by data shown in Figure 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "44bef356-f535-4d3f-b28b-71a8d56d264b",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C30",
+      "claim": "The empirical FST values increased significantly in the 2 kb upstream and/or downstream regions of the candidate genes, but not in the genic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the empirical FST values increased significantly in the 2 kb upstream and/or downstream regions of the candidate genes, but not in the genic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genetic divergence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "8710fd53-cb41-464f-98cc-ea71b3a81616",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C31",
+      "claim": "Selection-driven genetic change is more targeted on the non-coding regions and depends on the magnitude of reinforcement/reversion plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation thus suggests that selection-driven genetic change is more targeted on the non-coding regions and depends on the magnitude of reinforcement/reversion plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the FST analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "05937853-37fa-4ed4-aaf9-235a09acee20",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C32",
+      "claim": "2037 muscle phenotype-associated genes were identified in the flight muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 2037 and 1866 muscle phenotype-associated genes in the flight and cardiac muscle, respectively (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis between gene expression and muscle phenotypes, supported by data shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "5cefd27c-b033-4289-b9aa-121ab9dfa514",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C33",
+      "claim": "1866 muscle phenotype-associated genes were identified in the cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 2037 and 1866 muscle phenotype-associated genes in the flight and cardiac muscle, respectively (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis between gene expression and muscle phenotypes, supported by data shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "a12ab9ba-a5a9-4272-b5e7-d16e49fb9ee8",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C34",
+      "claim": "328 positive regulators were identified for the flight muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of these genes, we found 328 positive regulators and 1709 negative regulators for the flight muscle, and 843 positive regulators and 1023 negative regulators for the cardiac muscle (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis, supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "4b214c49-31ce-435c-b104-6b9ae2fb4ad2",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C35",
+      "claim": "1709 negative regulators were identified for the flight muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of these genes, we found 328 positive regulators and 1709 negative regulators for the flight muscle, and 843 positive regulators and 1023 negative regulators for the cardiac muscle (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis, supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "55b8a9c1-801e-4015-9dca-afd52459cfda",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C36",
+      "claim": "843 positive regulators were identified for the cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of these genes, we found 328 positive regulators and 1709 negative regulators for the flight muscle, and 843 positive regulators and 1023 negative regulators for the cardiac muscle (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis, supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "36a56b8f-7e6f-4003-b890-ebfc6b20c4c0",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C37",
+      "claim": "1023 negative regulators were identified for the cardiac muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of these genes, we found 328 positive regulators and 1709 negative regulators for the flight muscle, and 843 positive regulators and 1023 negative regulators for the cardiac muscle (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis, supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "bd98eba5-6337-4d86-9d50-6aa4282435cc",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C38",
+      "claim": "Muscle phenotypic changes observed in the colonized tree sparrows have been shown to enhance oxygen delivery and improve metabolic capacity in highland animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the muscle phenotypic changes observed in the colonized tree sparrows have been shown to enhance oxygen delivery and improve metabolic capacity in the highland animals (Giordano, 2005; Storz et al., 2010; Scott, 2011; Scott et al., 2015), we deemed that the gene expressions in which the direction of plastic change matched the expectation for increase hypoxia tolerance as putatively adaptive, while those that opposed this expectation were considered to be putatively maladaptive (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Giordano, 2005; Storz et al., 2010; Scott, 2011; Scott et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "4ae59716-e384-4a43-bcb5-bb8294f11213",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C39",
+      "claim": "Using a threshold of >50% of plasticity change, tree sparrows displayed more genes with maladaptive plasticity than genes with adaptive plasticity for flight muscle (198 vs 48, p<2.2e\u201316).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a threshold of >50% of plasticity change, we found that the tree sparrows displayed more genes with maladaptive plasticity than genes with adaptive plasticity (two-tailed binomial test, flight muscle, 198 vs 48, p<2.2e\u201316, cardiac muscle 186 vs 166, p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adaptive/maladaptive plasticity analysis, supported by statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "e757e761-ae7d-45cf-b3c5-9998055aee4f",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C40",
+      "claim": "Using a threshold of >50% of plasticity change, tree sparrows displayed more genes with maladaptive plasticity than genes with adaptive plasticity for cardiac muscle (186 vs 166, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a threshold of >50% of plasticity change, we found that the tree sparrows displayed more genes with maladaptive plasticity than genes with adaptive plasticity (two-tailed binomial test, flight muscle, 198 vs 48, p<2.2e\u201316, cardiac muscle 186 vs 166, p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adaptive/maladaptive plasticity analysis, supported by statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "252fb0df-bf2d-47b6-ab12-70331765e998",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C41",
+      "claim": "Parametric bootstrap analyses confirmed that tree sparrows displayed more genes with maladaptive plasticity than genes with adaptive plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are robust with random sampling errors as our parametric bootstrap analyses also revealed similar results (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the parametric bootstrap analysis, supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "d208655b-73a8-426d-9eca-954c0d59ad2c",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C42",
+      "claim": "The fractions of genes with maladaptive plasticity were larger than those of genes with adaptive plasticity (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fractions of genes with maladaptive plasticity were larger than those of genes with adaptive plasticity (two-tailed binomial test, p<0.01, Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the adaptive/maladaptive plasticity analysis, supported by statistical testing and data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "7e8f7b4f-8ed1-442e-9f0e-a598e31e04a5",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C43",
+      "claim": "The empirical FST values were significantly larger in the genes within the <200% and >150% category for cardiac muscle (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the empirical FST values were significantly larger in the genes within the <200% and >150% category (cardiac muscle, p<0.05) and >200% category (flight and cardiac muscle, p<0.05), but not in those within other categories with low levels of reinforcement and reversion plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genetic divergence analysis of adaptive/maladaptive plasticity genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "a76ae258-52e8-45db-a3c4-54b0e959908f",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C44",
+      "claim": "The empirical FST values were significantly larger in the genes within the >200% category for flight and cardiac muscle (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the empirical FST values were significantly larger in the genes within the <200% and >150% category (cardiac muscle, p<0.05) and >200% category (flight and cardiac muscle, p<0.05), but not in those within other categories with low levels of reinforcement and reversion plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genetic divergence analysis of adaptive/maladaptive plasticity genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "6c7e41fd-75be-4c67-8961-78a766b9bba2",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C45",
+      "claim": "Genetic divergence between the ancestral and colonized tree sparrows tends to increase in the 2 kb upstream and downstream regions of genes with adaptive/maladaptive plasticity (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that genetic divergence between the ancestral and colonized tree sparrows tends to increase in the 2 kb upstream and downstream regions of these genes (p<0.05, Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the genetic divergence analysis, supported by data shown in Figure 3E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "9a81396d-c24c-436f-910b-766b6beb8949",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C46",
+      "claim": "Selection on regulatory adaptation may only be expected if large strength of selection is needed to bring initial plasticity toward adaptive optimum of the novel environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that selection on regulatory adaptation (i.e. genetic divergence) may only be expected if large strength of selection is needed to bring initial plasticity toward adaptive optimum of the novel environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the genetic divergence analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "5d43c209-4438-46cd-9ef7-d7024100612a",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C47",
+      "claim": "Gene expression plasticity is important in facilitating initial survival and population persistence at an early stage of colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an integrative approach of field-based studies, experimentally implemented acclimation experiments, multiomic and muscle phenotypic data, our study demonstrates the importance of gene expression plasticity in facilitating initial survival and population persistence at an early stage of colonization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "271fdc6e-594b-4f21-8e96-4972f0a853c3",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C48",
+      "claim": "The evolutionary consequence of plasticity depends on whether the plasticity is adaptive (reinforcement) or maladaptive (reversion).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our results provide novel insight into an issue of active debate within evolutionary biology (i.e. reinforcement vs. reversion plasticity) by showing that the evolutionary consequence of plasticity depends on the adaptive plasticity (reinforcement) or maladaptive plasticity (reversion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "20bbb472-1188-474d-9529-22e058c29f9b",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C49",
+      "claim": "Natural selection drives genetic divergence when the magnitude of reinforcement and/or reversion plasticity becomes intense.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate that natural selection drives genetic divergence when the magnitude of reinforcement and/or reversion plasticity becomes intense, providing novel insights into the mechanism of plasticity first and genes as followers Schwander and Leimar, 2011.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study results, with reference to Schwander and Leimar, 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "236e7001-4890-4eb8-93d7-45a3bf4aeedf",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C50",
+      "claim": "Co-expressed genes and muscle phenotype-associated genes change either the intensity or the direction of their expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that co-expressed genes and muscle phenotype-associated genes change either the intensity or the direction of their expression profiles, and that gene expressions at the plastic stage are more often reversed than reinforced at the colonization stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the gene expression analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "d154ddbb-0109-4cd7-88d1-7f1490022d74",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C51",
+      "claim": "Selection operates intensely on maladaptive plasticity during the initial stage of responding to a novel environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, by combining gene expression and muscle phenotype, we show that selection operates intensely on maladaptive plasticity during the initial stage of responding novel environment (Ghalambor et al., 2007; Ghalambor et al., 2015; Ho and Zhang, 2018; Campbell-Staton et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study results, with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "db736c3a-001f-4f2e-a2f2-05560f670bbb",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C52",
+      "claim": "The genes with intensified levels of reinforcement and reversion expression plasticity show large genetic divergence (FST) in their upstream and downstream regions between the ancestral and colonized populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the genes with intensified levels of reinforcement and reversion expression plasticity show large genetic divergence (FST) in their upstream and downstream regions between the ancestral and colonized populations, suggesting that selection has driven genetic changes in the noncoding regions after the tree sparrows had colonized the novel environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from the genetic divergence analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "5942a6c2-1e93-48b0-a562-6e2ec88b0df4",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C53",
+      "claim": "Plasticity serves as a stepping stone in a successful colonization of a new environment and genetic changes that evolve at a late stage will modify the plastic change to an optimal phenotype in the new environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations thus support that plasticity serves as a stepping stone in a successful colonization of a new environment and that genetic changes that evolve at a late stage will modify the plastic change to an optimal phenotype in the new environment (Corl et al., 2018; Schwander and Leimar, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study results, with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "b93f4c94-c44f-4862-8b68-8ef8ff9a4f5c",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C54",
+      "claim": "Initially plastic change allows organisms to survive upon a sudden environmental shift but the fitness is much reduced compared to that after a long-term colonization to the novel environment.",
+      "claim_type": "EXPLICIT",
+      "source": "A likely reason is that initially plastic change allows organisms to survive upon a sudden environmental shift but the fitness is much reduced compared to that after a long-term colonization to the novel environment (Fischer et al., 2016; Huang and Agrawal, 2016; Leonard and Lancaster, 2020; Kuo et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by citations to previous studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2e80d6be-df8c-4afb-8b85-545297891d76",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C55",
+      "claim": "The overall physiological states of organisms right after an environmental shift may result in low fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the overall physiological states of the organisms right after an environmental shift may result in low fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the previous statement about reduced fitness.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "ee91713b-ba1b-4996-bec8-73b49c82838e",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C56",
+      "claim": "A genetic change may be required to modify the plastic change of phenotype to approach the optimum to the novel environment.",
+      "claim_type": "EXPLICIT",
+      "source": "To coordinate the phenotype values to close the organismal fitness, a genetic change may be required to modify the plastic change of phenotype to approach the optimum to the novel environment (Storz, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by a citation to Storz, 2021.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "c7dd06c6-7658-4afc-979e-a43b33c80979",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C57",
+      "claim": "The consequence of genetic change on plasticity is dependent on the cost of plastic change.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the consequence of genetic change on plasticity is dependent on the cost of plastic change (Ho and Zhang, 2018; Corl et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by citations to Ho and Zhang, 2018 and Corl et al., 2018.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "a9b6fcf3-1dde-4c6b-bb9a-0e85950a231f",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C58",
+      "claim": "Hypoxia is assumed to be the dominant selective force in the Qinghai-Tibetan Plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we assume that hypoxia is the dominant selective force in the Qinghai-Tibetan Plateau (see also Sun et al., 2016; Qu et al., 2020), the use of a single environmental stimulus makes our conclusions more conservative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption stated by the authors, supported by citations to Sun et al., 2016 and Qu et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "b2fb5543-7ed5-4707-8e0b-fc4ff6d79192",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C59",
+      "claim": "People newly exposed to high-elevation environment increase their red blood cells as compared to people at sea level.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, people newly exposed to high-elevation environment increase their red blood cells as compared to people at sea level, which is likely mediated by HIF and EPO genes in the hypoxia response cascade (Erzurum et al., 2007; Peng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Erzurum et al., 2007 and Peng et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "e9c7a4ed-99d1-433d-b885-6cdf7d829ba5",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C60",
+      "claim": "The increase in red blood cells in people newly exposed to high-elevation is likely mediated by HIF and EPO genes in the hypoxia response cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, people newly exposed to high-elevation environment increase their red blood cells as compared to people at sea level, which is likely mediated by HIF and EPO genes in the hypoxia response cascade (Erzurum et al., 2007; Peng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Erzurum et al., 2007 and Peng et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "0de8ed7d-1140-450c-87e7-081b4981fbd6",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C61",
+      "claim": "The physiological change of increased red blood cells is less activated in native people at high-elevation when compared to people at sea level.",
+      "claim_type": "EXPLICIT",
+      "source": "This physiological change, however, is less activated in native people at high-elevation when compared to people at sea level, demonstrating an example of reversion of phenotypic plasticity (Storz, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Storz, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "5aac5538-6ed2-4b35-a5aa-0390366238a7",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C62",
+      "claim": "Short-term acclimation response and long-term adaptive evolution in hypoxia response may affect different evolutionary pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with previous studies, our work shows that short-term acclimation response and long-term adaptive evolution in hypoxia response may affect different evolutionary pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study results and comparison with previous studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "eef37f86-ef29-454b-a2bc-c282cb31453a",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C63",
+      "claim": "Five lowland tree sparrows were exposed to hypoxic conditions for 30 days using a hypoxic chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated transcriptomic data from hypoxia-acclimated lowland tree sparrows by exposing five lowland tree sparrows to hypoxic conditions for 30 days using a hypoxic chamber (Qu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "d4aa7c22-c21c-415b-a60b-68329f922e34",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C64",
+      "claim": "The oxygen content in the hypoxic chamber was set to 14% of the oxygen content (simulating the oxygen concentration at 3200 m a.s.l., 70% of ~20%).",
+      "claim_type": "EXPLICIT",
+      "source": "The oxygen content in the chamber was set to 14% of the oxygen content (simulating the oxygen concentration at 3200 m a.s.l., 70% of ~20%, the latter of which is the content of oxygen content at sea level), which is similar to the condition where we collected the highland tree sparrows (Qinghai Lake, 3200 m a.s.l.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "e9c04254-bf9f-4f5a-949f-f292135533d6",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C65",
+      "claim": "Highland tree sparrows were collected from Qinghai Lake at 3200 m a.s.l.",
+      "claim_type": "EXPLICIT",
+      "source": "The oxygen content in the chamber was set to 14% of the oxygen content (simulating the oxygen concentration at 3200 m a.s.l., 70% of ~20%, the latter of which is the content of oxygen content at sea level), which is similar to the condition where we collected the highland tree sparrows (Qinghai Lake, 3200 m a.s.l.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling location for highland tree sparrows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "bb2ab6ae-e7bd-45f9-8165-872456202d6c",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C66",
+      "claim": "Flight muscle was collected from four hypoxia-acclimated individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected flight muscle from the four individuals and cardiac muscle from three individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample collection in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "fe1aad48-d377-4fd9-813b-92838d64e0ef",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C67",
+      "claim": "Cardiac muscle was collected from three hypoxia-acclimated individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected flight muscle from the four individuals and cardiac muscle from three individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample collection in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "66de601f-5417-492f-bec0-1265a062e3e0",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C68",
+      "claim": "Twelve samples were used for flight muscle analysis in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we used twelve samples for flight muscle and nine samples for cardiac muscle (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the total sample size used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "5318f60a-924a-4b89-9e57-792b89fe0074",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C69",
+      "claim": "Nine samples were used for cardiac muscle analysis in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we used twelve samples for flight muscle and nine samples for cardiac muscle (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the total sample size used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "7b1af9fd-2990-48a7-8ad2-969a058c8060",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C70",
+      "claim": "The ancestral lowland and hypoxia-exposed lowland tree sparrows were collected from the same locality (Beijing) and the same season (pre-breeding).",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestral lowland and hypoxia-exposed lowland tree sparrows were collected from the same locality (Beijing) and the same season (pre-breeding).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling design to control for confounding variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "a0a7b7e0-9d27-4169-93b5-f10d3d2953b9",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C71",
+      "claim": "Only adult birds with similar body weight (approximately 18 g) were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Only adult birds with similar body weight (approximately 18 g) were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling criteria to control for confounding variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "961d3e45-4486-4e5b-a149-93ceb40b146a",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C72",
+      "claim": "A total of 134, 128, and 120 million reads of transcriptional data were generated for the lowland, hypoxia-exposed lowland tree sparrows and highland tree sparrows, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "After filtering low-quality, adapter-contaminated, and N-rich reads (>10%), a total of 134, 128, and 120 million reads of transcriptional data were generated for the lowland, hypoxia-exposed lowland tree sparrows and highland tree sparrows, respectively (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing output from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "4f343269-ff8b-4c2c-acb9-74411b9ff82e",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C73",
+      "claim": "Batch effect had little influence on the transcriptomic data.",
+      "claim_type": "EXPLICIT",
+      "source": "We then compared the median expression levels of these conserved genes and found no difference among the lowland, hypoxia-exposed lowland, and highland tree sparrows (Wilcoxon signed-rank test, p<0.05, Figure 2\u2014figure supplement 3), suggesting that batch effect had little influence on the transcriptomic data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the quality control analysis, supported by statistical testing and data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "22f972e6-6566-4da2-be8b-d7dab17722ae",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C74",
+      "claim": "The soft thresholds of the scale independence used for WGCNA analyses were 23 and 4 for flight and cardiac muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "(A-B) The soft thresholds of the scale independence used for WGCNA analyses were 23 and 4 for flight and cardiac muscles.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is a methodological detail shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "44d2fa22-fa60-4fc4-ba4f-8cbbf2aa0368",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C75",
+      "claim": "Three phenotypes were used for the flight muscle: capillary per fiber, fiber area, and perimeter.",
+      "claim_type": "EXPLICIT",
+      "source": "We used three phenotypes for the flight muscle (capillary per fiber, fiber area, and perimeter) and two for the cardiac muscle (capillary density and fiber diameter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phenotypic measurements used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "21f5eb74-ec1b-4f88-8da1-980e7f71bf46",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C76",
+      "claim": "Two phenotypes were used for the cardiac muscle: capillary density and fiber diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "We used three phenotypes for the flight muscle (capillary per fiber, fiber area, and perimeter) and two for the cardiac muscle (capillary density and fiber diameter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phenotypic measurements used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "832fc89d-dd6b-4b3f-b8d2-e596152133b0",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C77",
+      "claim": "A threshold of p<0.05 was used to detect muscle-associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Pearson correlation to test the association between each of the phenotypic traits and the expression profile of each gene (TPM). A threshold of p<0.05 was used to detect muscle-associated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical threshold used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2089e97e-1804-4f1c-967c-8f8ab8faddf2",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C78",
+      "claim": "Resequencing data from 12 lowland and 11 highland tree sparrows were used for genetic divergence analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To calculate the genetic divergence between the lowland ancestral and highland colonized tree sparrows, we used 12 lowland and 11 highland individuals for which re-sequencing data were available (Qu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genomic data used in the study, with citation to Qu et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "1035a003-4071-4eca-b230-e83ed957c5c8",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C79",
+      "claim": "Mean sequence coverage was 17x for each individual in the resequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "After mapping the raw reads to the tree sparrow genome using BWA v0.7.17 (Li and Durbin, 2009), we obtained mean sequence coverage of 17x for each individual (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing coverage obtained in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "712e418c-d3d8-4ca6-b81c-407f8cd71ac4",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C80",
+      "claim": "A threshold of p<0.05 was used to determine statistical significance for FST comparisons (empirical FST >95% percentile of permutated FST distribution).",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the empirical FST values to permutated FST distributions generated from 100 samplings and considered a threshold of p<0.05 to be statistically significant (empirical FST >95% percentile of permutated FST distribution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical threshold used for FST analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "e1c7f185-bb38-40bc-a79b-fc76f4d2f48a",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C81",
+      "claim": "The flight and cardiac muscles affect thermogenic capacity and oxygen transport and delivery and are critical for highland adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the flight and cardiac muscles because they affect thermogenic capacity and oxygen transport and delivery and are thus critical for the highland adaptation (Scott et al., 2015; Storz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Scott et al., 2015 and Storz et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2ae606d2-9da3-480b-af94-b73c8e6d24b3",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C82",
+      "claim": "Weighted correlation network is a system biology method for identifying groups of highly co-expressed genes (modules), summarizing module-level expression, and identifying important genes within modules (hub genes).",
+      "claim_type": "EXPLICIT",
+      "source": "Weighted correlation network is a system biology method for identifying groups of highly co-expressed genes (modules), summarizing module-level expression, and identifying important genes within modules (hub genes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the WGCNA method used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "caec3fcb-dd66-4d7e-a1e0-bb9c287fdba8",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "claim_id": "C83",
+      "claim": "Co-expressed genes can capture expression-stage correlations due to the hypoxia-dependent expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, these co-expressed genes can capture expression-stage correlations due to the hypoxia-dependent expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the utility of co-expressed genes for the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ea559131-80d5-476b-8a8d-be1850e97035",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using WGCNA, the authors identified co-expressed gene modules in flight and cardiac muscles associated with three colonization stages (ancestral, plastic, colonized). Analysis of hub genes revealed that significantly more genes exhibit reversion plasticity (209 flight, 60 cardiac) than reinforcement plasticity (36 flight, 15 cardiac) at the >50% threshold, confirmed by parametric bootstrap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The WGCNA methodology is appropriate for identifying co-expressed genes (C19-C22), and the classification into reinforcement/reversion groups is clearly defined (C23-C26). The finding of excess reversion plasticity (C27) is statistically validated with bootstrap analysis (C28), providing robust support for this major result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "f3e89ed9-10da-46b4-b974-13d3dacee7d4",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genes with high levels (>200%) of reinforcement or reversion plasticity show significantly elevated FST values in 2kb upstream/downstream regions but not in genic regions, suggesting selection-driven genetic changes target regulatory non-coding regions and depend on plasticity magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The FST analysis uses appropriate permutation testing (C29) and identifies a clear pattern of elevated divergence in regulatory regions (C30). The inference about selection targeting non-coding regions (C31) is well-supported by the data, though the mechanism remains correlative rather than causative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "92757c92-e700-4cda-9e51-d7055414de7b",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Correlation analysis between gene expression and muscle phenotypes identified 2037 flight and 1866 cardiac muscle-associated genes. Tree sparrows displayed significantly more genes with maladaptive plasticity than adaptive plasticity (flight: 198 vs 48, p<2.2e-16; cardiac: 186 vs 166, p<0.05), confirmed by bootstrap analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation approach is methodologically sound (C32-C37), and the classification of adaptive/maladaptive plasticity is based on established physiological principles (C38). Statistical testing with bootstrap validation (C39-C42) provides strong support, though the cardiac muscle result is less robust (smaller effect size, p<0.05 vs p<2.2e-16 for flight).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "4907b7c3-2962-411f-91e0-2e0a86a50dab",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genetic divergence (FST) between ancestral and colonized populations is significantly elevated in genes with high magnitude adaptive/maladaptive plasticity (>200% or 150-200% for cardiac), particularly in 2kb upstream/downstream regions, suggesting selection acts primarily when plasticity magnitude is large.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The FST analysis for phenotype-associated genes (C43-C45) parallels the co-expression analysis and shows consistent patterns. The inference about selection strength depending on plasticity magnitude (C46) is well-supported, though the threshold-dependent significance suggests some sensitivity to analytical choices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study demonstrates that gene expression plasticity facilitates initial colonization, with maladaptive plasticity being reversed and adaptive plasticity being reinforced at the colonized stage. Natural selection drives genetic divergence when plasticity magnitude is intense, supporting the 'plasticity first' hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are the primary conclusions (C4-C7, C47-C53) synthesizing the empirical findings. The conclusions are well-supported by the convergent evidence from multiple independent analyses (co-expression and phenotype-associated genes in two tissue types). The 'plasticity first' interpretation is consistent with the data, though alternative explanations are not extensively explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "30002bbd-42d4-4a3d-b717-f7c996375b90",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The experimental design included three groups: ancestral lowland (n=4 flight, n=3 cardiac), hypoxia-acclimated lowland (30 days at 14% O2, simulating 3200m; n=4 flight, n=3 cardiac), and colonized highland birds from Qinghai Lake (3200m; n=4 flight, n=3 cardiac), with controls for locality, season, and body weight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The experimental design is clearly described (C18, C63-C71) with appropriate controls for confounding variables. However, the sample sizes are very small (n=3-4 per group), which the authors acknowledge. While they compensate with multiple independent datasets, the limited replication raises concerns about statistical power and generalizability. The 30-day acclimation period may not capture all plastic responses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "4c0c8e65-07ea-42a9-a68b-381149dad125",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA-seq generated 120-134 million reads per group with no significant batch effects detected. WGCNA used soft thresholds of 23 (flight) and 4 (cardiac). Muscle phenotypes included 3 flight muscle traits (capillary per fiber, fiber area, perimeter) and 2 cardiac traits (capillary density, fiber diameter), with p<0.05 threshold for associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sequencing depth is adequate (C72), and batch effect assessment is appropriate (C73). WGCNA parameters are reported (C74), and phenotypic measurements are clearly defined (C75-C77). These methodological details support reproducibility, though the very different soft thresholds (23 vs 4) for the two tissues are not explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "4a4a4d71-ffb1-47d3-bce1-9009006a50ca",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genetic divergence analysis used resequencing data from 12 lowland and 11 highland individuals with mean 17x coverage. FST significance was determined by permutation testing (100 samplings) with p<0.05 threshold (empirical FST >95th percentile).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genomic data and analysis approach are clearly described (C78-C80). The 17x coverage is adequate for FST estimation, and the permutation approach is appropriate for controlling for background genetic variation. Sample sizes (n=12 and n=11) are reasonable for population-level FST analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "e2ad9650-42fe-4f42-83a0-00c1c1cd594d",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that initial plastic changes allow survival but reduce fitness compared to long-term colonization, requiring genetic changes to optimize phenotypes. They assume hypoxia is the dominant selective force, acknowledging that using only hypoxia in experiments makes conclusions conservative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative explanations (C54-C57) supported by citations but not directly tested in this study. The assumption about hypoxia dominance (C58) is reasonable given prior work but represents a limitation, as the authors acknowledge. The proposed mechanism for why reversion occurs is plausible but remains hypothetical without fitness measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "7fbbaa89-85fb-4e56-8f6f-550da89f8103",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors compare their findings to human high-altitude adaptation, where initial plastic increases in red blood cells (mediated by HIF/EPO) are reduced in native highland populations, exemplifying reversion plasticity. They conclude that short-term acclimation and long-term adaptation may affect different evolutionary pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to human altitude adaptation (C59-C61) is well-supported by citations and provides useful context. The conclusion about different pathways (C62) is a reasonable inference from comparing their results with prior literature, though it remains somewhat speculative without direct mechanistic evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context: Tree sparrows colonized the Qinghai-Tibet plateau (~4500m elevation) approximately 2600 years ago and have evolved physiological and gene expression changes for hypoxia tolerance. Flight and cardiac muscles are critical for highland adaptation as they affect thermogenic capacity and oxygen transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1-C3, C15-C17, C81) are well-supported by appropriate citations to prior work. They establish the study system and rationale effectively. The elevation and colonization timing are specific factual claims supported by cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb",
+      "content_id": "bf5feaac-d6e9-4438-9b22-518cd981e430",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Theoretical framework: The 'plasticity first' hypothesis proposes that phenotypic plasticity facilitates colonization and serves as a stepping stone for genetic evolution. Plasticity can be reinforced (same direction as evolution) or reversed (opposite direction). Gene expression can bridge genotype to phenotype and evolves in a stabilizing manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These theoretical and methodological foundations (C8-C14, C82-C83) are well-established concepts supported by appropriate citations. They provide the conceptual framework for the study. The definitions of reinforcement and reversion plasticity are clear and consistent with prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that gene expression plasticity to hypoxia is more often reversed than reinforced at the colonized stage. Using co-expressed genes from cardiac and flight muscles with a >50% threshold, they found 209 reversion genes vs 36 reinforcement genes in flight muscle, and 60 reversion vs 15 reinforcement genes in cardiac muscle, with bootstrap analyses confirming this pattern.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor states 'the evidence for the conclusions is incomplete because of the low sample size available.' One reviewer notes 'a sample size of 3 or 4 individuals per group depending on the tissue for wild individuals may miss some of the natural variation' and clarifies that n=7 and n=14 refer to tissue samples, not individuals. Another reviewer states 'My concerns regarding the conclusions about reversal versus reinforcement remain even after the additional analyses. Further studies are needed to confirm these results.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "515ec5ea-a710-4b26-9829-5bdf94948a4d",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors claim that colonized tree sparrows reduce maladaptive plasticity (associated with decreased hypoxia tolerance) and reinforce adaptive plasticity (congruent with increased hypoxia tolerance). Using muscle phenotype correlations with a >50% threshold, they found more maladaptive than adaptive plasticity genes in both flight muscle (198 vs 48) and cardiac muscle (186 vs 166).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor notes 'the evidence for the conclusions is incomplete because of the low sample size available.' Reviewers express concerns about sample size (3-4 individuals per tissue type) potentially missing natural variation. One reviewer states 'My concerns regarding the conclusions about reversal versus reinforcement remain even after the additional analyses. Further studies are needed to confirm these results,' directly questioning the strength of these adaptive/maladaptive plasticity conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors report that genes displaying large levels of reinforcement or reversion plasticity (>200%) show greater genetic divergence (FST) between ancestral and colonized populations, particularly in 2 kb upstream and downstream regions rather than genic regions. They interpret this as evidence that selection-driven genetic change targets non-coding regulatory regions and depends on the magnitude of plasticity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor's statement that 'the evidence for the conclusions is incomplete because of the low sample size available' applies to all major conclusions. One reviewer notes concerns about sample size and states 'My concerns regarding the conclusions about reversal versus reinforcement remain even after the additional analyses,' which extends to the genetic divergence findings that depend on the plasticity classifications. The limited sample size (12 lowland and 11 highland individuals for resequencing) may affect the robustness of FST estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "e04fb6ff-9fbd-4bfa-bd2a-76b520417428",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors identified co-expressed gene modules using WGCNA: six modules for flight muscle (2413 hub genes) and nine modules for cardiac muscle (508 hub genes) with expression changes significantly associated with the three stages (ancestral, plastic, colonized). They also report that batch effects had little influence on the transcriptomic data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "While reviewers express concerns about sample size affecting overall conclusions, they do not specifically challenge the WGCNA methodology or the identification of co-expressed gene modules. One reviewer acknowledges 'It is good to know that the highland and lowland samples were collected and processed at the same time,' addressing potential batch effects. The methodological approach for identifying modules appears accepted, though the biological interpretation of these modules is questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2f69c872-8c03-44c2-bc1b-7a10acc6811f",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors identified muscle phenotype-associated genes through correlation analysis: 2037 genes in flight muscle (328 positive, 1709 negative regulators) and 1866 genes in cardiac muscle (843 positive, 1023 negative regulators).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not explicitly challenge the correlation methodology, but the editor's concern about 'incomplete evidence because of the low sample size' applies to these analyses. The small sample sizes (3-4 individuals per tissue type) noted by reviewers could affect the reliability of correlation-based gene identification, though reviewers do not specifically critique this analytical step.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors conclude that gene expression plasticity facilitates initial colonization, that evolutionary consequences depend on whether plasticity is adaptive or maladaptive, and that natural selection drives genetic divergence when plasticity magnitude becomes intense, supporting the 'plasticity first' hypothesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer acknowledges the work 'provides new information on the evolution of reaction norms' and 'adds to this body of knowledge showing that the short-term response to hypoxia and the long term one can affect different pathways.' However, the editor states 'the evidence for the conclusions is incomplete because of the low sample size,' and another reviewer explicitly states 'My concerns regarding the conclusions about reversal versus reinforcement remain even after the additional analyses. Further studies are needed to confirm these results.' The conceptual framework is recognized, but the empirical support is questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors describe their experimental design: lowland birds were acclimated to hypoxic conditions (14% oxygen, simulating 3200 m elevation) for 30 days, with samples collected from 4 individuals for flight muscle and 3 for cardiac muscle, totaling 12 flight muscle and 9 cardiac muscle samples across all groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the experimental design but express significant concerns about sample size. One reviewer notes 'a sample size of 3 or 4 individuals per group depending on the tissue for wild individuals may miss some of the natural variation' and clarifies that 'n=7 for the plastic stage and n=14 for the ancestral and colonized stages refers to the total number of tissue samples and not the number of individuals.' The editor's statement about 'incomplete evidence because of the low sample size' directly addresses this experimental limitation. Reviewers also note that 'the acclimation experiment in hypoxia lasted 4 weeks. It is possible that longer term effects would be identifiable in gene expression in the lowland individuals facing hypoxia on a longer time scale.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "744dade0-675a-4724-a04a-85f1e4007946",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors discuss that hypoxia is the dominant selective force in the Qinghai-Tibetan Plateau and compare their findings to human high-altitude adaptation studies, concluding that short-term acclimation and long-term adaptive evolution may affect different evolutionary pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "One reviewer explicitly acknowledges this contribution: 'There has been work showing that populations adapted to high altitude environments show changes in their hypoxia response that differs from the short-term acclimation response' and states 'The present work adds to this body of knowledge showing that the short-term response to hypoxia and the long term one can affect different pathways.' The reviewer provides supporting citations (Erzurum et al. 2007, Peng et al. 2017) and notes this work 'provides new information on the evolution of reaction norms of genes associated with the physiological response to one of the main environmental variables that affects almost all animals, oxygen availability.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "a3ca022f-496d-42a2-88ae-d2db6a4a7f49",
+      "content_id": "36c496f0-680c-47b1-93f7-462d0c4c9894",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors used resequencing data from 12 lowland and 11 highland tree sparrows with mean coverage of 17x per individual for genetic divergence analysis, using FST comparisons with permutation testing (p<0.05 threshold).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not specifically challenge the genomic methodology or FST analysis approach. One reviewer notes 'It is good to know that the highland and lowland samples were collected and processed at the same time and the previous publication reported part of the data,' indicating acceptance of the genomic data quality. While sample size concerns are raised for the transcriptomic analyses, the resequencing sample sizes (12 and 11 individuals) are not specifically criticized.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "086d07a8-1944-4eef-a1e4-4a691fc2c8b0",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "1ce353b1-ec44-4149-be77-dcd4750eb1ca",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "17f47a1d-e87f-4ceb-aa77-5dad900e05cd",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "1fbd1daa-3ef6-4792-92b6-b1cdf2ce36f2",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "9253e0ac-6994-4c37-957d-1ad9dcbe1c11",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "12c6bbec-e482-4f85-abd5-f1d588ae4008",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "ff11de35-c597-4fdf-98f2-1fe82cd2ac2f",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "86031ed1-b49e-468e-b1e3-0a0508a4e13a",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "162cd384-a08b-44e2-a71f-004909108609",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "344966f0-664e-4155-80dd-650241fddd9d",
+      "result_id": "ea559131-80d5-476b-8a8d-be1850e97035"
+    },
+    {
+      "claim_id": "ea462d5e-ffa1-4d64-a1c0-bd2276161043",
+      "result_id": "f3e89ed9-10da-46b4-b974-13d3dacee7d4"
+    },
+    {
+      "claim_id": "44bef356-f535-4d3f-b28b-71a8d56d264b",
+      "result_id": "f3e89ed9-10da-46b4-b974-13d3dacee7d4"
+    },
+    {
+      "claim_id": "8710fd53-cb41-464f-98cc-ea71b3a81616",
+      "result_id": "f3e89ed9-10da-46b4-b974-13d3dacee7d4"
+    },
+    {
+      "claim_id": "05937853-37fa-4ed4-aaf9-235a09acee20",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "5cefd27c-b033-4289-b9aa-121ab9dfa514",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "a12ab9ba-a5a9-4272-b5e7-d16e49fb9ee8",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "4b214c49-31ce-435c-b104-6b9ae2fb4ad2",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "55b8a9c1-801e-4015-9dca-afd52459cfda",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "36a56b8f-7e6f-4003-b890-ebfc6b20c4c0",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "bd98eba5-6337-4d86-9d50-6aa4282435cc",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "4ae59716-e384-4a43-bcb5-bb8294f11213",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "e757e761-ae7d-45cf-b3c5-9998055aee4f",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "252fb0df-bf2d-47b6-ab12-70331765e998",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "d208655b-73a8-426d-9eca-954c0d59ad2c",
+      "result_id": "92757c92-e700-4cda-9e51-d7055414de7b"
+    },
+    {
+      "claim_id": "7e8f7b4f-8ed1-442e-9f0e-a598e31e04a5",
+      "result_id": "4907b7c3-2962-411f-91e0-2e0a86a50dab"
+    },
+    {
+      "claim_id": "a76ae258-52e8-45db-a3c4-54b0e959908f",
+      "result_id": "4907b7c3-2962-411f-91e0-2e0a86a50dab"
+    },
+    {
+      "claim_id": "6c7e41fd-75be-4c67-8961-78a766b9bba2",
+      "result_id": "4907b7c3-2962-411f-91e0-2e0a86a50dab"
+    },
+    {
+      "claim_id": "9a81396d-c24c-436f-910b-766b6beb8949",
+      "result_id": "4907b7c3-2962-411f-91e0-2e0a86a50dab"
+    },
+    {
+      "claim_id": "2d78b049-c18e-4781-9247-76577b390896",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "27f8ae2b-4d80-4820-9c13-ca58696b7fb5",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "b12059e2-f329-4be2-8ae4-7ce07169c366",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "9104b21f-274d-4f22-b869-29b80db1139e",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "5d43c209-4438-46cd-9ef7-d7024100612a",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "271fdc6e-594b-4f21-8e96-4972f0a853c3",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "20bbb472-1188-474d-9529-22e058c29f9b",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "236e7001-4890-4eb8-93d7-45a3bf4aeedf",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "d154ddbb-0109-4cd7-88d1-7f1490022d74",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "db736c3a-001f-4f2e-a2f2-05560f670bbb",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "5942a6c2-1e93-48b0-a562-6e2ec88b0df4",
+      "result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4"
+    },
+    {
+      "claim_id": "02577866-e83e-440b-afac-8d0c3f7f5c4d",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "eef37f86-ef29-454b-a2bc-c282cb31453a",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "d4aa7c22-c21c-415b-a60b-68329f922e34",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "e9c04254-bf9f-4f5a-949f-f292135533d6",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "bb2ab6ae-e7bd-45f9-8165-872456202d6c",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "fe1aad48-d377-4fd9-813b-92838d64e0ef",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "66de601f-5417-492f-bec0-1265a062e3e0",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "5318f60a-924a-4b89-9e57-792b89fe0074",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "7b1af9fd-2990-48a7-8ad2-969a058c8060",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "a0a7b7e0-9d27-4169-93b5-f10d3d2953b9",
+      "result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90"
+    },
+    {
+      "claim_id": "961d3e45-4486-4e5b-a149-93ceb40b146a",
+      "result_id": "4c0c8e65-07ea-42a9-a68b-381149dad125"
+    },
+    {
+      "claim_id": "4f343269-ff8b-4c2c-acb9-74411b9ff82e",
+      "result_id": "4c0c8e65-07ea-42a9-a68b-381149dad125"
+    },
+    {
+      "claim_id": "22f972e6-6566-4da2-be8b-d7dab17722ae",
+      "result_id": "4c0c8e65-07ea-42a9-a68b-381149dad125"
+    },
+    {
+      "claim_id": "44d2fa22-fa60-4fc4-ba4f-8cbbf2aa0368",
+      "result_id": "4c0c8e65-07ea-42a9-a68b-381149dad125"
+    },
+    {
+      "claim_id": "21f5eb74-ec1b-4f88-8da1-980e7f71bf46",
+      "result_id": "4c0c8e65-07ea-42a9-a68b-381149dad125"
+    },
+    {
+      "claim_id": "832fc89d-dd6b-4b3f-b8d2-e596152133b0",
+      "result_id": "4c0c8e65-07ea-42a9-a68b-381149dad125"
+    },
+    {
+      "claim_id": "2089e97e-1804-4f1c-967c-8f8ab8faddf2",
+      "result_id": "4a4a4d71-ffb1-47d3-bce1-9009006a50ca"
+    },
+    {
+      "claim_id": "1035a003-4071-4eca-b230-e83ed957c5c8",
+      "result_id": "4a4a4d71-ffb1-47d3-bce1-9009006a50ca"
+    },
+    {
+      "claim_id": "712e418c-d3d8-4ca6-b81c-407f8cd71ac4",
+      "result_id": "4a4a4d71-ffb1-47d3-bce1-9009006a50ca"
+    },
+    {
+      "claim_id": "b93f4c94-c44f-4862-8b68-8ef8ff9a4f5c",
+      "result_id": "e2ad9650-42fe-4f42-83a0-00c1c1cd594d"
+    },
+    {
+      "claim_id": "2e80d6be-df8c-4afb-8b85-545297891d76",
+      "result_id": "e2ad9650-42fe-4f42-83a0-00c1c1cd594d"
+    },
+    {
+      "claim_id": "ee91713b-ba1b-4996-bec8-73b49c82838e",
+      "result_id": "e2ad9650-42fe-4f42-83a0-00c1c1cd594d"
+    },
+    {
+      "claim_id": "c7dd06c6-7658-4afc-979e-a43b33c80979",
+      "result_id": "e2ad9650-42fe-4f42-83a0-00c1c1cd594d"
+    },
+    {
+      "claim_id": "a9b6fcf3-1dde-4c6b-bb9a-0e85950a231f",
+      "result_id": "e2ad9650-42fe-4f42-83a0-00c1c1cd594d"
+    },
+    {
+      "claim_id": "b2fb5543-7ed5-4707-8e0b-fc4ff6d79192",
+      "result_id": "7fbbaa89-85fb-4e56-8f6f-550da89f8103"
+    },
+    {
+      "claim_id": "e9c7a4ed-99d1-433d-b885-6cdf7d829ba5",
+      "result_id": "7fbbaa89-85fb-4e56-8f6f-550da89f8103"
+    },
+    {
+      "claim_id": "0de8ed7d-1140-450c-87e7-081b4981fbd6",
+      "result_id": "7fbbaa89-85fb-4e56-8f6f-550da89f8103"
+    },
+    {
+      "claim_id": "5aac5538-6ed2-4b35-a5aa-0390366238a7",
+      "result_id": "7fbbaa89-85fb-4e56-8f6f-550da89f8103"
+    },
+    {
+      "claim_id": "ddd71248-e501-4359-8e5f-2d370bb3cb06",
+      "result_id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9"
+    },
+    {
+      "claim_id": "9da88c7b-b888-4ef4-a5e7-3b361ab12732",
+      "result_id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9"
+    },
+    {
+      "claim_id": "6ffa0263-6a70-4d2d-949a-9d114be2a740",
+      "result_id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9"
+    },
+    {
+      "claim_id": "9ac031be-3328-4e0f-91db-d86d32777e6c",
+      "result_id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9"
+    },
+    {
+      "claim_id": "97c19ccf-6a6a-42ba-8fc1-17160e083499",
+      "result_id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9"
+    },
+    {
+      "claim_id": "9100a8c6-906b-49d0-988e-734aed25737e",
+      "result_id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9"
+    },
+    {
+      "claim_id": "e1c7f185-bb38-40bc-a79b-fc76f4d2f48a",
+      "result_id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9"
+    },
+    {
+      "claim_id": "8cfcfa16-64d2-4dec-8819-ccfcf42f10d9",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "608690e9-96ae-42d7-9734-2b3ccf66646d",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "f015eed9-dac2-4417-89cd-0c1057fd862c",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "b45149e7-af97-498d-960e-085106f744cf",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "88dd7840-af7d-4e90-aaf4-6073705525a2",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "c637c6d5-0462-4eb8-b661-55f94964636c",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "ac3224e8-4025-4bfd-86f5-4a6c89cb67a9",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "2ae606d2-9da3-480b-af94-b73c8e6d24b3",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "caec3fcb-dd66-4d7e-a1e0-bb9c287fdba8",
+      "result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb"
+    },
+    {
+      "claim_id": "2d78b049-c18e-4781-9247-76577b390896",
+      "result_id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd"
+    },
+    {
+      "claim_id": "9253e0ac-6994-4c37-957d-1ad9dcbe1c11",
+      "result_id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd"
+    },
+    {
+      "claim_id": "12c6bbec-e482-4f85-abd5-f1d588ae4008",
+      "result_id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd"
+    },
+    {
+      "claim_id": "ff11de35-c597-4fdf-98f2-1fe82cd2ac2f",
+      "result_id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd"
+    },
+    {
+      "claim_id": "86031ed1-b49e-468e-b1e3-0a0508a4e13a",
+      "result_id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd"
+    },
+    {
+      "claim_id": "162cd384-a08b-44e2-a71f-004909108609",
+      "result_id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd"
+    },
+    {
+      "claim_id": "344966f0-664e-4155-80dd-650241fddd9d",
+      "result_id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd"
+    },
+    {
+      "claim_id": "27f8ae2b-4d80-4820-9c13-ca58696b7fb5",
+      "result_id": "515ec5ea-a710-4b26-9829-5bdf94948a4d"
+    },
+    {
+      "claim_id": "b12059e2-f329-4be2-8ae4-7ce07169c366",
+      "result_id": "515ec5ea-a710-4b26-9829-5bdf94948a4d"
+    },
+    {
+      "claim_id": "4ae59716-e384-4a43-bcb5-bb8294f11213",
+      "result_id": "515ec5ea-a710-4b26-9829-5bdf94948a4d"
+    },
+    {
+      "claim_id": "e757e761-ae7d-45cf-b3c5-9998055aee4f",
+      "result_id": "515ec5ea-a710-4b26-9829-5bdf94948a4d"
+    },
+    {
+      "claim_id": "252fb0df-bf2d-47b6-ab12-70331765e998",
+      "result_id": "515ec5ea-a710-4b26-9829-5bdf94948a4d"
+    },
+    {
+      "claim_id": "d208655b-73a8-426d-9eca-954c0d59ad2c",
+      "result_id": "515ec5ea-a710-4b26-9829-5bdf94948a4d"
+    },
+    {
+      "claim_id": "9104b21f-274d-4f22-b869-29b80db1139e",
+      "result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8"
+    },
+    {
+      "claim_id": "ea462d5e-ffa1-4d64-a1c0-bd2276161043",
+      "result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8"
+    },
+    {
+      "claim_id": "44bef356-f535-4d3f-b28b-71a8d56d264b",
+      "result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8"
+    },
+    {
+      "claim_id": "8710fd53-cb41-464f-98cc-ea71b3a81616",
+      "result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8"
+    },
+    {
+      "claim_id": "7e8f7b4f-8ed1-442e-9f0e-a598e31e04a5",
+      "result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8"
+    },
+    {
+      "claim_id": "a76ae258-52e8-45db-a3c4-54b0e959908f",
+      "result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8"
+    },
+    {
+      "claim_id": "6c7e41fd-75be-4c67-8961-78a766b9bba2",
+      "result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8"
+    },
+    {
+      "claim_id": "9a81396d-c24c-436f-910b-766b6beb8949",
+      "result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8"
+    },
+    {
+      "claim_id": "086d07a8-1944-4eef-a1e4-4a691fc2c8b0",
+      "result_id": "e04fb6ff-9fbd-4bfa-bd2a-76b520417428"
+    },
+    {
+      "claim_id": "1ce353b1-ec44-4149-be77-dcd4750eb1ca",
+      "result_id": "e04fb6ff-9fbd-4bfa-bd2a-76b520417428"
+    },
+    {
+      "claim_id": "17f47a1d-e87f-4ceb-aa77-5dad900e05cd",
+      "result_id": "e04fb6ff-9fbd-4bfa-bd2a-76b520417428"
+    },
+    {
+      "claim_id": "1fbd1daa-3ef6-4792-92b6-b1cdf2ce36f2",
+      "result_id": "e04fb6ff-9fbd-4bfa-bd2a-76b520417428"
+    },
+    {
+      "claim_id": "4f343269-ff8b-4c2c-acb9-74411b9ff82e",
+      "result_id": "e04fb6ff-9fbd-4bfa-bd2a-76b520417428"
+    },
+    {
+      "claim_id": "05937853-37fa-4ed4-aaf9-235a09acee20",
+      "result_id": "2f69c872-8c03-44c2-bc1b-7a10acc6811f"
+    },
+    {
+      "claim_id": "5cefd27c-b033-4289-b9aa-121ab9dfa514",
+      "result_id": "2f69c872-8c03-44c2-bc1b-7a10acc6811f"
+    },
+    {
+      "claim_id": "a12ab9ba-a5a9-4272-b5e7-d16e49fb9ee8",
+      "result_id": "2f69c872-8c03-44c2-bc1b-7a10acc6811f"
+    },
+    {
+      "claim_id": "4b214c49-31ce-435c-b104-6b9ae2fb4ad2",
+      "result_id": "2f69c872-8c03-44c2-bc1b-7a10acc6811f"
+    },
+    {
+      "claim_id": "55b8a9c1-801e-4015-9dca-afd52459cfda",
+      "result_id": "2f69c872-8c03-44c2-bc1b-7a10acc6811f"
+    },
+    {
+      "claim_id": "36a56b8f-7e6f-4003-b890-ebfc6b20c4c0",
+      "result_id": "2f69c872-8c03-44c2-bc1b-7a10acc6811f"
+    },
+    {
+      "claim_id": "5d43c209-4438-46cd-9ef7-d7024100612a",
+      "result_id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93"
+    },
+    {
+      "claim_id": "271fdc6e-594b-4f21-8e96-4972f0a853c3",
+      "result_id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93"
+    },
+    {
+      "claim_id": "20bbb472-1188-474d-9529-22e058c29f9b",
+      "result_id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93"
+    },
+    {
+      "claim_id": "236e7001-4890-4eb8-93d7-45a3bf4aeedf",
+      "result_id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93"
+    },
+    {
+      "claim_id": "d154ddbb-0109-4cd7-88d1-7f1490022d74",
+      "result_id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93"
+    },
+    {
+      "claim_id": "db736c3a-001f-4f2e-a2f2-05560f670bbb",
+      "result_id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93"
+    },
+    {
+      "claim_id": "5942a6c2-1e93-48b0-a562-6e2ec88b0df4",
+      "result_id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93"
+    },
+    {
+      "claim_id": "02577866-e83e-440b-afac-8d0c3f7f5c4d",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "eef37f86-ef29-454b-a2bc-c282cb31453a",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "d4aa7c22-c21c-415b-a60b-68329f922e34",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "e9c04254-bf9f-4f5a-949f-f292135533d6",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "bb2ab6ae-e7bd-45f9-8165-872456202d6c",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "fe1aad48-d377-4fd9-813b-92838d64e0ef",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "66de601f-5417-492f-bec0-1265a062e3e0",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "5318f60a-924a-4b89-9e57-792b89fe0074",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "7b1af9fd-2990-48a7-8ad2-969a058c8060",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "a0a7b7e0-9d27-4169-93b5-f10d3d2953b9",
+      "result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd"
+    },
+    {
+      "claim_id": "a9b6fcf3-1dde-4c6b-bb9a-0e85950a231f",
+      "result_id": "744dade0-675a-4724-a04a-85f1e4007946"
+    },
+    {
+      "claim_id": "b2fb5543-7ed5-4707-8e0b-fc4ff6d79192",
+      "result_id": "744dade0-675a-4724-a04a-85f1e4007946"
+    },
+    {
+      "claim_id": "e9c7a4ed-99d1-433d-b885-6cdf7d829ba5",
+      "result_id": "744dade0-675a-4724-a04a-85f1e4007946"
+    },
+    {
+      "claim_id": "0de8ed7d-1140-450c-87e7-081b4981fbd6",
+      "result_id": "744dade0-675a-4724-a04a-85f1e4007946"
+    },
+    {
+      "claim_id": "5aac5538-6ed2-4b35-a5aa-0390366238a7",
+      "result_id": "744dade0-675a-4724-a04a-85f1e4007946"
+    },
+    {
+      "claim_id": "2089e97e-1804-4f1c-967c-8f8ab8faddf2",
+      "result_id": "a3ca022f-496d-42a2-88ae-d2db6a4a7f49"
+    },
+    {
+      "claim_id": "1035a003-4071-4eca-b230-e83ed957c5c8",
+      "result_id": "a3ca022f-496d-42a2-88ae-d2db6a4a7f49"
+    },
+    {
+      "claim_id": "712e418c-d3d8-4ca6-b81c-407f8cd71ac4",
+      "result_id": "a3ca022f-496d-42a2-88ae-d2db6a4a7f49"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "8324b27f-732f-4356-b208-aaf65fd5155a",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "30002bbd-42d4-4a3d-b717-f7c996375b90",
+      "peer_result_id": "d15690d3-0ab4-4e37-8c81-7df7bea432fd",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the experimental design (C18, C63-C71). OpenEval rates as UNCERTAIN due to small sample sizes (n=3-4) and limited replication, while acknowledging appropriate controls. Peer reviewers share the UNCERTAIN rating, explicitly noting that sample sizes 'may miss some of the natural variation' and that n=7 and n=14 refer to tissue samples, not individuals. Both also note the 30-day acclimation period may be insufficient for capturing all plastic responses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "8484d6e7-a0c6-48a0-9271-f3f8ca9f3609",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "4a4a4d71-ffb1-47d3-bce1-9009006a50ca",
+      "peer_result_id": "a3ca022f-496d-42a2-88ae-d2db6a4a7f49",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the genomic data and FST analysis methodology (C78-C80). OpenEval rates as SUPPORTED, noting adequate 17x coverage and appropriate permutation approach with reasonable sample sizes (n=12, n=11). Peer reviewers also rate as SUPPORTED, not challenging the genomic methodology and acknowledging good data quality with samples collected and processed simultaneously.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "f0c1d20e-d89d-4324-9d3c-37e2e1ecfc33",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "7fbbaa89-85fb-4e56-8f6f-550da89f8103",
+      "peer_result_id": "744dade0-675a-4724-a04a-85f1e4007946",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address comparisons to human altitude adaptation and different pathways (C59-C62). OpenEval rates as SUPPORTED, noting well-cited comparisons and reasonable inferences, though somewhat speculative. Peer reviewers also rate as SUPPORTED, explicitly acknowledging the work 'adds to this body of knowledge showing that the short-term response to hypoxia and the long term one can affect different pathways' and 'provides new information on the evolution of reaction norms.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "1f205bfd-73ff-482c-840c-0ed9c61de16f",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "ea559131-80d5-476b-8a8d-be1850e97035",
+      "peer_result_id": "2e45a13b-9018-428e-a93c-13d6a3b0cadd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate WGCNA methodology and reversion plasticity findings (C19-C28). OpenEval rates as SUPPORTED, noting appropriate methodology and robust statistical validation with bootstrap analysis. Peer reviewers rate as UNCERTAIN, with the editor stating 'evidence for the conclusions is incomplete because of the low sample size' and one reviewer stating 'My concerns regarding the conclusions about reversal versus reinforcement remain even after the additional analyses.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2d4f8bb8-99f1-438c-82cd-d7d25b46757a",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4c060e7f-d472-425f-a4ae-7f2fff4e60b4",
+      "peer_result_id": "dc9f95f8-5aae-4f5f-afec-d30086cefc93",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the primary conclusions synthesizing empirical findings (C4-C7, C47-C53). OpenEval rates as SUPPORTED, noting convergent evidence from multiple analyses supports the 'plasticity first' interpretation. Peer reviewers rate as UNCERTAIN, acknowledging the work 'provides new information' but stating 'evidence for the conclusions is incomplete because of the low sample size' and 'Further studies are needed to confirm these results.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "affd1d4f-c073-4b0e-be45-6f06d2cf07ed",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "92757c92-e700-4cda-9e51-d7055414de7b",
+      "peer_result_id": "2f69c872-8c03-44c2-bc1b-7a10acc6811f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the correlation approach for identifying phenotype-associated genes (C32-C37). OpenEval rates as SUPPORTED, noting methodologically sound approach with strong statistical validation. Peer reviewers rate as UNCERTAIN, not explicitly challenging the correlation methodology but noting the editor's concern about 'incomplete evidence because of the low sample size' affecting reliability of correlation-based analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "db6caf53-252c-4509-a4b0-a4a607cea2ae",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "92757c92-e700-4cda-9e51-d7055414de7b",
+      "peer_result_id": "515ec5ea-a710-4b26-9829-5bdf94948a4d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address adaptive/maladaptive plasticity classifications and statistical validation (C39-C42). OpenEval rates as SUPPORTED, noting bootstrap validation provides strong support despite cardiac muscle results being less robust. Peer reviewers rate as UNCERTAIN, with concerns about sample size and one reviewer explicitly questioning 'the conclusions about reversal versus reinforcement' and stating 'Further studies are needed to confirm these results.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "b8c9fe5a-6ca5-42ed-b1e6-487226a759dd",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f3e89ed9-10da-46b4-b974-13d3dacee7d4",
+      "peer_result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate FST analysis showing elevated divergence in regulatory regions (C29-C31). OpenEval rates as SUPPORTED, noting appropriate permutation testing and clear patterns, though mechanism remains correlative. Peer reviewers rate as UNCERTAIN, with the editor noting 'incomplete evidence because of the low sample size' and concerns that limited sample sizes (12 lowland, 11 highland) may affect robustness of FST estimates.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "2db10967-da62-4f32-a126-49c2fce73652",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "4907b7c3-2962-411f-91e0-2e0a86a50dab",
+      "peer_result_id": "daf500c3-baa6-4e07-93d7-1ca316cb98b8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate FST analysis for phenotype-associated genes and selection strength (C43-C46). OpenEval rates as SUPPORTED, noting consistent patterns and well-supported inferences about selection depending on plasticity magnitude. Peer reviewers rate as UNCERTAIN, noting the editor's concern about incomplete evidence and that genetic divergence findings depend on plasticity classifications that are themselves questioned.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "368e387f-200e-4511-bc39-c57edf9248a5",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ea559131-80d5-476b-8a8d-be1850e97035",
+      "peer_result_id": "e04fb6ff-9fbd-4bfa-bd2a-76b520417428",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address WGCNA methodology for identifying co-expressed gene modules (C19-C22). OpenEval rates as SUPPORTED for the methodology being appropriate. Peer reviewers also rate as SUPPORTED for the methodological approach, not specifically challenging WGCNA or module identification, though they question the biological interpretation of these modules due to sample size concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "debb6e2e-40fa-41d6-8f2b-b43ebfb73958",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "4c0c8e65-07ea-42a9-a68b-381149dad125",
+      "peer_result_id": "e04fb6ff-9fbd-4bfa-bd2a-76b520417428",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both mention batch effect assessment (C73). OpenEval rates as SUPPORTED, noting appropriate batch effect assessment. Peer reviewers also acknowledge this positively, stating 'It is good to know that the highland and lowland samples were collected and processed at the same time,' addressing potential batch effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "fd2cc635-194f-46c0-8d95-1450564f9f17",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "e2ad9650-42fe-4f42-83a0-00c1c1cd594d",
+      "peer_result_id": "744dade0-675a-4724-a04a-85f1e4007946",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the assumption about hypoxia dominance (C58). OpenEval rates as UNCERTAIN, noting the assumption is reasonable given prior work but represents a limitation. Peer reviewers rate as SUPPORTED in the broader context of comparing short-term vs long-term hypoxia responses, acknowledging the work adds to knowledge about different pathways affected by hypoxia.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "1ad2cc37-20de-42e3-b858-0c25f6536814",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "f6f5f586-3d0c-418b-a21f-3e376f3e42c9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims about the study system (C1-C3, C15-C17, C81) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these background/contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    },
+    {
+      "id": "08be1038-916f-4858-90f1-7e19761a7017",
+      "submission_id": "9ef1a7b6-8190-4a95-b127-8d07c17271b4",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "2b5f6f42-9743-4b8e-ab9f-20d8434234eb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates theoretical and methodological foundations (C8-C14, C82-C83) as SUPPORTED, noting well-established concepts with appropriate citations. No corresponding peer review evaluation found for these foundational theoretical claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:00:17.452912Z"
+    }
+  ]
+}

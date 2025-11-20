@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C12",
+      "C13",
+      "C34"
+    ],
+    "result": "The sHsp system underwent simplification in Enterobacterales through gene duplication creating IbpA+IbpB, followed by loss of ibpB in Erwiniaceae, resulting in a secondarily single-protein IbpA system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C12, C13, and C34 are well-supported by phylogenetic analysis (C37) and experimental data showing functional differences between two-protein and single-protein systems (C14, C15). The evolutionary trajectory is clearly documented through ancestral reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Ancestral reconstruction reveals that AncA0 (pre-gene loss) and AncA1 (post-gene loss) differ in their ability to stimulate substrate refolding, with AncA0 inhibiting and AncA1 partially stimulating luciferase refolding, indicating functional evolution occurred between these nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C51 are supported by comprehensive biochemical characterization including sequestrase activity (C41-C43), aggregate binding (C45-C46), and refolding assays (C47-C49). Alternative ancestral variants (AltAll) show similar behavior (C50), strengthening confidence in the reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C92",
+      "C93"
+    ],
+    "result": "Molecular evolution analysis indicates the new IbpA functionality likely arose through positive selection rather than genetic drift, with significantly increased \u03c9 ratio on the branch leading to AncA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C52-C53 present selection analysis results, the authors themselves acknowledge (C93) that alternative hypotheses cannot be fully discounted due to model limitations. The analysis uses codeml but notes concerns about false positives from unaccounted variation in synonymous substitution rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C91"
+    ],
+    "result": "Two amino acid substitutions (Q66H and G109D) are both necessary and sufficient for the functional transition from AncA0 to AncA1, enabling single sHsp activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are strongly supported by systematic mutagenesis experiments showing that introducing all 7 candidate mutations (C54), then reverting individual positions (C55), identifies positions 66 and 109 as critical. Reciprocal experiments (C56-C57) confirm sufficiency and necessity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The Q66H and G109D substitutions are located in the \u03b24-\u03b28 cleft of the ACD and modestly decrease affinity for the C-terminal peptide (K0.5 from 4.3 to 7.1 \u00b5M) while increasing cooperativity (Hill coefficient from 2.3 to 3.7), resulting in smaller oligomers and facilitated deoligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 are supported by structural modeling (C59-C60), MD simulations (C61-C63), and biolayer interferometry binding experiments (C64-C66). DLS measurements confirm effects on oligomer size and deoligomerization (C67-C68). The mechanistic link between binding changes and functional outcomes is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The Q66H and G109D substitutions weaken ACD binding to aggregated substrates, likely through the \u03b24-\u03b28 cleft, thereby increasing sHsp ability to stimulate Hsp70-Hsp100-dependent substrate refolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by biolayer interferometry showing weakened binding to aggregated E. coli lysate and luciferase. Claim C72 contains appropriate speculation ('most likely') about the binding site. Claim C73 integrates multiple experimental results into a coherent mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Isolated ACD domains do not exhibit sequestrase activity or positively influence substrate refolding despite binding aggregated substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by experimental data in supplementary figures showing that ACDs alone cannot perform the full functional repertoire of complete sHsps, indicating that other domains (N-terminal, C-terminal) are required for full activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C94",
+      "C95",
+      "C107"
+    ],
+    "result": "The same two amino acid positions (66 and 109) define whether extant IbpA proteins function as single sHsps or require IbpB cooperation, with Q66/G109 conferring tight substrate binding requiring IbpB, while H66/D109 enables independent function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 and C86-C89 are strongly supported by reciprocal mutagenesis experiments in extant E. coli and E. amylovora proteins showing that swapping these residues transfers functional properties. Claims C94-C95 and C107 demonstrate successful transplantation of the mutations between species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "IbpA variants with H66/D109 (E. amylovora wild-type and E. coli Q66H G109D) weakly inhibit Hsp70 binding to aggregates, while variants with Q66/G109 (E. coli wild-type and E. amylovora H67Q D110G) strongly inhibit Hsp70 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are supported by biolayer interferometry experiments measuring Hsp70 recruitment to sHsp-covered aggregates. The data clearly show differential inhibition patterns correlating with the identity of residues at positions 66 and 109.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C96",
+      "C97",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The evolution of secondarily single IbpA involved weakening both ACD-C-terminal and ACD-substrate interactions to maintain sequestrase function while enabling efficient substrate refolding, functionally replacing IbpB's role in facilitating sHsp dissociation from aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C96-C97, and C101-C106 synthesize the experimental findings into a coherent evolutionary mechanism. The conclusions are well-supported by the binding data (C64-C71), functional assays (C78-C81), and Hsp70 competition experiments (C82-C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The E. coli IbpA protein context did not prevent the Q66H G109D mutations from conferring single-protein functionality, suggesting that gene loss can drive adaptive evolution toward molecular innovations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 is supported by experimental data showing successful functional transfer. Claims C109-C110 provide evolutionary interpretation, though C110 contains some speculation about general principles. The experimental support for context-independence is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prior studies support the importance of ACD-C-terminal interactions, showing that C-terminal peptide addition causes sHsp dissociation and that weakening these interactions can enhance refolding activity, though complete abolishment is detrimental.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 accurately cite prior research that supports the current study's findings. These claims provide important context showing consistency with established knowledge about sHsp mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Gene birth and loss is a hallmark of protein family evolution across domains of life, often involving adaptive changes, though molecular mechanisms are not well understood, particularly in bacteria where maintaining low gene count is energetically important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 establish the broader context through citations to prior literature. These background claims are appropriately supported by references and provide motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Small heat shock proteins (sHsps) are ATP-independent molecular chaperones with conserved \u03b1-crystallin domains that form dynamic oligomers and bind misfolded proteins to maintain proteostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C16-C26 provide established background knowledge about sHsp structure and function, appropriately supported by citations. These claims accurately represent the current understanding of sHsp biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "In most Enterobacterales, IbpA and IbpB form a functionally divergent two-protein system where IbpA specializes in substrate binding and IbpB facilitates dissociation from aggregates to enable Hsp70-Hsp100-dependent refolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe the established two-protein system based on prior research (citations provided). This background is essential for understanding the evolutionary transition studied in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "IbpA from E. amylovora can stimulate luciferase refolding without IbpB, while E. coli IbpA requires IbpB for efficient activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are directly supported by experimental data shown in Figure 1, demonstrating the functional difference between the two-protein and secondarily single-protein systems that motivates the evolutionary analysis.",
+    "result_type": "MAJOR"
+  }
+]

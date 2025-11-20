@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C54",
+      "C55",
+      "C63",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C169"
+    ],
+    "result": "Three novel proteins (BstA, BstB, BstC) were identified through bioinformatics as putative bacterial sterol transporters in M. capsulatus. These proteins belong to well-studied families of bacterial metabolite transporters (RND, SBP/PBP, and TRAP superfamilies) and are predicted to localize to the inner membrane, periplasm, and outer membrane, respectively. Sequence similarity network analysis shows they cluster separately from characterized homologs, suggesting functional divergence. The genes co-localize with sterol synthesis genes in methanotroph genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatic identification is well-supported by sequence similarity networks (C67, C72, C78-C81), structural predictions (C63, C68, C71, C74, C76), and genome neighborhood analysis (C84). The clustering patterns and co-localization with sterol synthesis genes provide strong circumstantial evidence for their involvement in sterol metabolism. However, the functional assignment as transporters remains inferential at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Attempts to delete bst genes and sterol synthesis genes (osc) in M. capsulatus were unsuccessful, suggesting these genes may be essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the inability to generate deletions (C86) is reported, this negative result has multiple possible explanations beyond essentiality. Technical issues with the genetic system, insufficient screening, or other factors could explain the failure. The inference of essentiality (C87) is speculative without complementary approaches like conditional knockdowns or suppressor analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C56",
+      "C57"
+    ],
+    "result": "Protein-lipid pull-down assays demonstrate that BstAPD, BstB, and BstC selectively bind C-4 methylated sterols (both 4-monomethyl and 4,4-dimethyl) from M. capsulatus lipid extracts, with no binding observed in DMSO controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pull-down assays with both total lipid extract (TLE) and enriched sterol fraction (HS) provide clear evidence of selective sterol binding (C88, C91). The negative controls with DMSO (C89, C90) appropriately demonstrate that proteins were not co-purified with lipids from E. coli expression host. The GC-MS identification of bound sterols provides direct evidence of specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C58",
+      "C59",
+      "C13"
+    ],
+    "result": "Microscale thermophoresis (MST) quantitatively demonstrates that all three proteins preferentially bind 4-monomethyl sterol with Kd values of 2.4-4.4 \u03bcM, showing 30-90-fold higher affinity compared to 4,4-dimethyl sterol (Kd \u226580-232 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MST data provide quantitative binding affinities with appropriate replicates and error estimates (C92-C96). The large difference in affinity between monomethyl and dimethyl sterols is consistent across all three proteins. The acknowledgment of measurement limitations for dimethyl sterol due to non-saturation (C97) is appropriate. However, the high Hill coefficients for BstAPD and BstB (C99) suggest cooperativity that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "BstAPD and BstB exhibit positive cooperativity for 4-monomethyl sterol binding with Hill coefficients of 4.0 and 2.4, respectively, suggesting multiple binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Hill coefficients >1 clearly indicate positive cooperativity (C99). This is a valid inference from the MST data, though the structural basis and functional significance of multiple binding sites remain to be determined experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "BstAPD and BstB show no binding to cholesterol or lanosterol, while BstC binds both cholesterol (Kd = 3.6 \u03bcM) and lanosterol (Kd = 17.3 \u03bcM), indicating BstC has broader substrate tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential binding specificity is clearly demonstrated by MST (C100-C102). The conclusion that BstC is more tolerant to non-native substrates (C103) is a reasonable inference from the data, though the biological significance of binding these non-native sterols is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "High-resolution crystal structures were determined for BstB (1.6 \u00c5) and BstC (1.9 \u00c5). BstB adopts a bilobed \u03b1/\u03b2 architecture with two domains connected by loops, while BstC is all-helical with 12 \u03b1-helices forming an irregular ring with a central pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystallographic structures are well-determined at high resolution with appropriate statistics (Table 3). The structural descriptions (C104-C108, C132-C135) are based on direct observation of electron density. The structures provide the foundation for subsequent docking and dynamics studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Both BstB and BstC contain large hydrophobic cavities suitable for sterol binding. BstB has a central cavity (~1180 \u00c5\u00b2/~1010 \u00c5\u00b3) and a second pocket in domain B, while BstC contains three cavities (TN1, CA1, CA2) with total area ~597 \u00c5\u00b2 and volume ~447 \u00c5\u00b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cavity analyses using CASTp and MOLE are standard computational approaches with clearly reported dimensions (C112, C114, C137). The hydrophobic character of these cavities (C113, C138, C139) is consistent with sterol binding. However, the functional role of the second pocket in BstB remains unexplored (C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "BstB adopts an intermediate conformation between apo and ligand-bound forms of its homolog PhnD, with a cleft opening of ~10 \u00c5 compared to ~22 \u00c5 in apo-PhnD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison to PhnD using DALI is appropriate (C117), and the measurements of cleft opening are quantitative (C119). The interpretation of an intermediate conformation (C118) is reasonable based on the structural data, though alternative explanations are discussed in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C61",
+      "C14"
+    ],
+    "result": "Molecular docking and dynamics simulations reveal that sterols bind in the hydrophobic cavity of BstB with the polar head near Glu118, Tyr120, and Asn192. During MD simulations, hydrogen bonds shift from Tyr120 to Glu118 for monomethyl sterol, while dimethyl sterol shows less stable interactions, potentially explaining the differential binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The docking studies using ICM-Pro and 20 ns MD simulations with Desmond are appropriate computational approaches (C120-C123). The observation of hydrogen bond dynamics during simulation (C122) and differences between monomethyl and dimethyl sterols (C123) provide mechanistic insights. However, the connection to experimental binding data (C124) remains speculative, and the simulations are relatively short.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "Mutagenesis of residues predicted to interact with sterol in BstB showed only subtle effects (<2-fold) on binding affinity, indicating extensive hydrophobic interactions dominate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis experiments provide direct experimental validation (C127), though the small effects suggest either that the predicted interactions are not critical or that binding is highly redundant. The interpretation that hydrophobic interactions dominate (C128) is reasonable but the lack of strong effects from mutagenesis is somewhat surprising given the docking predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "150 ns MD simulation of apo-BstB shows a conformational change at ~90 ns with domains opening by ~20\u00b0, while the sterol-docked complex remains stable, supporting the interpretation that the crystal structure represents a partially-open form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extended MD simulation (150 ns) on apo-BstB shows clear conformational dynamics (C129, C130), and the comparison to the ligand-bound simulation (C131) supports the interpretation of a partially-open state. The RMSD analysis provides quantitative support for this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Docking and MD simulations show that sterols bind in cavity CA1 of BstC. The 4-monomethyl sterol moves ~8-9 \u00c5 deeper into the pocket and forms a stable hydrogen bond with Glu86 (94% persistence), while 4,4-dimethyl sterol penetrates less deeply (~2.6 \u00c5) with only transient water-mediated contact (2% persistence), explaining the 30-fold difference in affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulations reveal clear differences in binding behavior between monomethyl and dimethyl sterols (C152-C155). The correlation with experimental binding data (C156) is compelling, though the connection remains inferential. The simulations are relatively short (20 ns) and would benefit from longer timescales and additional replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Mutagenesis of Glu86 in BstC to Gly or Trp reduces affinity for 4-monomethyl sterol by 4.5-100-fold and eliminates binding to 4,4-dimethyl sterol, cholesterol, and lanosterol, demonstrating Glu86 plays a critical role in sterol binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis experiments provide strong experimental validation of the computational predictions (C157, C158). The large effects on binding, particularly for the E86W mutation, clearly demonstrate the importance of this residue (C159). This is one of the strongest pieces of evidence linking structure to function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C60",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Structural comparison reveals that BstB and BstC are strikingly divergent from eukaryotic sterol transporters (STARD, GRAMD1s/Lam/Ltc, Osh/ORP, NPC proteins), representing a distinct bacterial sterol transport system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons to multiple families of eukaryotic sterol transporters are thorough (C166-C168). The conclusion of structural divergence (C15, C60) is well-supported by the crystallographic data. However, the inference that they form a \"distinct sterol transport system\" (C16) goes beyond what the structural data alone can demonstrate without functional transport assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "BstC shows structural homology to Tp0956 from Treponema pallidum, a T-component TRAP transporter. BstC contains TPR-like motifs and exists as both monomer and dimer (3:1 ratio) in solution, though the functional significance of dimerization is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison to Tp0956 using DALI is appropriate (C142), and the presence of TPR-like motifs (C147) is structurally evident. The SEC-MALS data clearly demonstrate the monomer-dimer equilibrium (C148). The acknowledgment of uncertainty about dimerization function (C149) is appropriate given the lack of functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C84"
+    ],
+    "result": "Bioinformatic analysis reveals widespread presence of Bst-like proteins in bacterial genomes, including pathogens that use host sterols, with bst genes consistently co-localizing with sterol synthesis genes in sterol-producing methanotrophs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome neighborhood analysis (C84) and broader bioinformatic survey (C17) provide evidence for the distribution of these proteins. The co-localization with sterol synthesis genes is strong circumstantial evidence for functional involvement in sterol metabolism. However, the claim about pathogens using host sterols would benefit from more specific examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C85",
+      "C12"
+    ],
+    "result": "The three proteins may work together as a conduit to transport C-4 methylated sterols from the cytosol to the outer membrane in M. capsulatus, representing a novel bacterial sterol transport system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the binding data, structural localization predictions, and gene co-localization provide circumstantial evidence (C62, C85), direct demonstration of transport function is lacking. No transport assays, in vivo localization studies, or functional complementation experiments are presented. The claim remains a well-supported hypothesis rather than a demonstrated result. The inability to delete these genes (C86) prevents genetic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Structural features of BstB including interdomain loops and flexible regions suggest the protein may undergo conformational changes upon substrate binding, similar to other periplasmic binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations of loops connecting domains (C108, C109) and regions with poor electron density (C111) support the inference of conformational flexibility. The comparison to known PBP behavior (C109) is appropriate. The MD simulations (C129-C131) provide additional support for this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "BstC exhibits strong negative charge on its surface, especially the C-terminal face, which may mediate protein-protein interactions with BstB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The electrostatic calculations clearly show negative surface charge (C140), but the speculation about interactions with BstB (C141) lacks experimental support. No protein-protein interaction studies are presented to validate this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The Bst proteins expand the substrate repertoire of their respective transporter families to include sterols, and the identified binding sites should enable identification of functionally homologous sites in other bacterial proteins, including pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization (C170) and demonstration of sterol binding clearly expand the known substrate range for these protein families (C172). The speculation about enabling identification of homologous sites (C173) is reasonable given the structural data, though this represents future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

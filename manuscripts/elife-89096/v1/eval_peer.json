@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors developed a new method called 'aggregate mutation spectrum distance' (AMSD) to detect alleles associated with mutation spectrum variation. AMSD minimizes multiple testing burdens and mitigates sparsity challenges in de novo mutation datasets by leveraging the fact that mutator alleles leave distinct impressions on mutation spectra. Simulation studies demonstrate that AMSD has approximately 90% power to detect C>A mutators with 20% effect size given 100 haplotypes with 500 mutations each, and outperforms QTL mapping under certain conditions including variable mutation counts and low allele frequencies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm the AMSD method as innovative and well-validated. Reviewer 1 states the method 'is innovative and outperforms traditional QTL mapping under most conditions, as demonstrated by extensive simulations.' Reviewer 2 notes 'the analysis is rigorous and well motivated' and that the authors 'test the statistical properties of their method using simulated data and permutation tests.' Reviewer 3 judges 'the theoretical premise of the AMSD method is judged to be both strong and innovative.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "Using AMSD on 117 BXDs with 65,552 de novo mutations, the authors rediscovered a previously identified locus on chromosome 4 (peak at 118.28 Mbp) significantly associated with mutation spectrum variation. This locus overlaps 21 DNA repair genes, with only Mutyh containing nonsynonymous differences between parental strains. Mutyh encodes a protein involved in base-excision repair of 8-oxoguanine and prevents C>A mutations, with C>A mutation fractions nearly 50% higher in BXDs with D genotypes at this locus.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as validation of the AMSD method. Reviewer 3 states the authors 'first successfully re-identify a known mutator locus in this population on chr4' as 'proof-of-principle.' The editor notes this demonstrates the method can identify mutator loci. No reviewer questions the rediscovery of the chromosome 4 locus or its association with Mutyh.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C108"
+    ],
+    "result": "A novel locus on chromosome 6 (peak at 111.27 Mbp, 90% CI: 95.01-114.02 Mbp) was significantly associated with mutation spectrum variation specifically in BXDs with D genotypes at the chromosome 4 locus. The region contains 64 protein-coding genes, including 4 DNA repair genes (Fancd2, Ogg1, Setmar, Rad18), with Ogg1 and Setmar harboring nonsynonymous differences between parental strains. This signal was specific to mice with D alleles at chromosome 4, as no new loci were detected in mice with B alleles. QTL scans for individual mutation types did not produce genome-wide significant signals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm this as a major discovery. The editor states the study 'identifies a new \"mutator\" locus in a population of inbred mouse strains.' Reviewer 1 notes 'convincing evidence for the major findings, including the new candidate mutator locus.' Reviewer 3 describes this as an 'exciting discovery' that 'adds to the catalog of known mutator alleles.' The conditional nature of the effect is explicitly acknowledged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C46",
+      "C47",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C97",
+      "C98",
+      "C110"
+    ],
+    "result": "The chromosome 6 locus exhibits epistatic interaction with the chromosome 4 mutator locus. BXDs with D alleles at both loci have significantly higher C>A mutation rates than those with D alleles at either locus alone, while D alleles at chromosome 6 alone show no significant effect. After 100 generations, mice with D alleles at both loci were predicted to have 238.9 C>A mutations versus 199.0 in mice with only chromosome 4 D alleles (20% increase). A statistical model with an interaction term fits significantly better than an additive model (p=7.92e-7), indicating synergistic effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers unanimously affirm the epistasis finding. The editor states the authors 'demonstrate that this new mutator locus interacts epistatically with a previously identified mutator allele.' Reviewer 1 notes 'more rigorous statistical testing, the authors show convincingly synergistic epistatic effects between the mutator alleles at the two loci.' Reviewer 2 states 'The evidence presented for an epistatic interaction is convincing.' Reviewer 3 calls this an 'exciting discovery' that 'reveals key aspects of mutator biology.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Mutation signature analysis revealed that SBS1, SBS5, and SBS30 signatures were active in nearly all BXDs regardless of genotype. However, the SBS18 signature (dominated by C>A mutations reflecting unrepaired ROS damage) was almost exclusively active in mice with D alleles at chromosome 4, with highest activity in mice with D alleles at both loci. SBS18 activity was lowest in mice with D alleles at chromosome 6 alone, demonstrating that D alleles at this locus are insufficient to cause a mutator phenotype.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not explicitly discuss the mutation signature analysis, but they accept the overall epistatic interaction findings which these data support. The signature analysis provides mechanistic insight into the C>A mutator phenotype that reviewers implicitly accept through their endorsement of the epistasis conclusions. No reviewer questions the signature analysis or its interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C125",
+      "C126",
+      "C127",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C160",
+      "C161",
+      "C220"
+    ],
+    "result": "The authors argue that Ogg1 is the most plausible candidate gene for the chromosome 6 locus based on multiple lines of evidence: it is a member of the same BER pathway as Mutyh, contains a nonsynonymous difference (p.Thr95Ala) between parental strains, and shows strong cis-eQTLs with D genotypes associated with decreased Ogg1 expression in multiple tissues. Ogg1 and Mutyh have distinct roles in the BER response to oxidative DNA damage, with Ogg1 recognizing and removing 8-oxoG lesions paired with cytosine, while Mutyh excises mispaired adenine opposite 8-oxoG.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor explicitly notes 'the causal gene(s) and allele(s) within this locus remain uncertain.' While reviewers accept the identification of the chromosome 6 locus, they do not explicitly endorse Ogg1 as the causal gene. The authors themselves acknowledge uncertainty, stating they 'have not conclusively fine-mapped the chromosome 6 mutator locus to a causal variant.' The mechanistic model involving Ogg1 is plausible but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The p.Thr95Ala Ogg1 variant is not predicted to be deleterious by SIFT and occurs at a poorly conserved nucleotide. The authors speculate this variant may not be highly deleterious on its own and might only exert detectable effects when Mutyh function is also impaired, or alternatively that D alleles at Ogg1 lead to very subtle effects that the study is underpowered to detect.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly discuss the functional predictions for the Ogg1 variant. The authors present this as speculation about why the variant might show conditional effects. The uncertainty about the variant's deleteriousness contributes to the overall uncertainty about Ogg1 being the causal gene, which the editor explicitly acknowledges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Setmar is another candidate gene at the chromosome 6 locus, with two missense variants between parental strains, one predicted deleterious. However, the murine Setmar ortholog lacks the Mariner transposase domain present in primates, and primate SETMAR is involved in NHEJ repair not expected to affect C>A mutation rates. No significant cis-eQTLs were observed for Setmar, making it an unlikely candidate for the epistatic interaction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not explicitly discuss Setmar, but they accept the authors' overall assessment that the causal gene remains uncertain. The authors' reasoning for excluding Setmar as a strong candidate is logical and based on functional considerations. No reviewer challenges this assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C124",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Mbd4 is an additional candidate gene involved in BER that lies just outside the 90% confidence interval but within 10 Mbp of the peak. The p.Asp129Asn variant in Mbd4 resides in a conserved protein domain and is predicted deleterious by SIFT. However, Mbd4 deficiency is typically associated with C>T rather than C>A mutations, and no excess C>T mutations were detected in BXDs with D alleles at chromosome 6.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly discuss Mbd4 as a candidate. The authors present evidence both for (predicted deleteriousness, conservation) and against (wrong mutation spectrum, location outside confidence interval) Mbd4 as the causal gene. This contributes to the overall uncertainty about gene identification that the editor acknowledges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C162",
+      "C163",
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "Long-read genome assemblies revealed that the chromosome 4 Mutyh mutator phenotype may be caused by a ~5 kbp mobile element insertion in the first intron associated with reduced Mutyh expression. No compelling evidence for structural variants or mobile elements was found at the chromosome 6 locus. The presence of strong cis-eQTLs for Ogg1 suggests the chromosome 6 mutator phenotype may be mediated by regulatory rather than protein-altering variants. The authors speculate that both loci may increase C>A mutations by lowering expression of BER genes in the same network.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly discuss the structural variant analysis or the regulatory hypothesis. The authors present this as speculation ('raise the exciting possibility') about mechanism. While the eQTL data are presented as factual, the interpretation that regulatory variants mediate the phenotype remains speculative and is not explicitly endorsed by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C111",
+      "C112",
+      "C113",
+      "C164",
+      "C165",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The authors propose that mild DNA repair deficiencies can compound one another as mutator alleles affect redundant genome maintenance systems. They speculate about potential mechanisms involving Mbd4's role in apoptosis: mice with deficient 8-oxoG repair due to Mutyh mutations might accumulate ROS damage, but functional Mbd4 could trigger apoptosis to mitigate effects; however, mice with reduced activity of both genes may have impaired apoptosis responses, leading to higher ROS-mediated damage and elevated C>A mutations. This represents the first documentation of epistatic interactions between mutator alleles in a whole-animal context.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes 'the authors suggest some plausible potential mechanisms for how this interaction might arise' but cautions that 'given the higher degree of complexity of the proposed model it needs to be treated with greater caution, perhaps until replicated in a separate dataset or demonstrated in follow-up experiments.' The mechanistic speculation is acknowledged as plausible but unproven. The novelty claim about whole-animal epistasis is not explicitly challenged by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "AMSD successfully identified the chromosome 6 mutator locus that escaped detection by QTL mapping. While simulations show AMSD and QTL mapping have similar power under many conditions, AMSD outperforms QTL mapping when mutation counts vary substantially across haplotypes (as in the BXDs where oldest lines have orders of magnitude more mutations than youngest lines) and when mutator allele frequencies are below 50%. AMSD's advantage comes from comparing aggregate mutation spectra rather than weighting each sample equally.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm AMSD's superior performance in the BXD context. Reviewer 1 states AMSD 'outperforms traditional QTL mapping under most conditions, as demonstrated by extensive simulations.' Reviewer 2 notes the method 'has greater power to detect genetic factors with a certain magnitude of effect' in the analyzed situation. The comparative analysis is accepted as demonstrating AMSD's advantages under specific conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "The AMSD method has limitations compared to QTL mapping: methods to account for inter-sample relatedness are less flexible than in QTL mapping software, and AMSD currently assumes individuals harbor one of two possible genotypes at each marker without accounting for heterozygous genotypes. As a result, AMSD is currently applicable only to resources like BXD RILs where individuals have been inbred sufficiently that all genotypes are effectively homozygous, and will require modification before application to outbred, sexually reproducing populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly notes 'the main limitation of the approach is that it is difficult to see how it might be applied beyond the context of mutation accumulation experiments using recombinant inbred lines' due to requirements for accumulated mutations linked to mutator alleles. Reviewer 3 states 'there are some limitations to the AMSD method' but judges 'the authors present a balanced summary of the strengths and weaknesses of their method.' The limitations are acknowledged and accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Attempts to confirm the epistatic interaction in the Mouse Genomes Project (MGP) strains were unsuccessful, as a model with an interaction term did not fit significantly better than an additive model (p=0.806). The authors speculate this may be due to the smaller number of MGP strains with mutation data, as only two MGP strains (DBA/1J and DBA/2J) possess D genotypes at both loci.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly discuss the MGP validation attempt. The authors acknowledge the inability to confirm epistasis in this independent dataset, which introduces some uncertainty about the generalizability of the finding, though reviewers do not raise this as a major concern. The lack of replication is noted but attributed to sample size limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C205",
+      "C206",
+      "C207",
+      "C210",
+      "C211",
+      "C215"
+    ],
+    "result": "The discovery of a second BXD mutator allele demonstrates the power of RILs for dissecting genetic architecture of mutation rates. The authors propose that AMSD could be useful for future mutator discovery in other model organisms with RIL populations as sequencing costs decrease, and potentially in large human trio datasets where rare mutator alleles may eventually be represented in sufficient numbers. Mutation spectrum analyses may have greater power than overall rate analyses to detect genes underlying heritable mutation rate variation, even for genes with modest effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'the new method has the potential to be applicable to a variety of experimental systems and natural populations.' Reviewer 1 notes the method 'reveals new biological insights.' Reviewer 2 states the method 'could have wide application and impact on our understanding of this fundamental biological process.' Reviewer 3 judges 'the methodology could be extended to other species and populations to enable discovery of additional mutator alleles.' Reviewers affirm the broader applicability and significance.",
+    "result_type": "MAJOR"
+  }
+]

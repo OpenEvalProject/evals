@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C60",
+      "C61",
+      "C106",
+      "C123"
+    ],
+    "result": "The yoU-Net deep learning tool can accurately binarize immunofluorescence images of sarcomeric proteins (\u03b1-actinin-2, titin, myomesin) in hiCMs, overcoming limitations of classical intensity-based methods like Otsu thresholding. The trained U-Net produces high-fidelity binaries resistant to pixel intensity artifacts and can accurately separate individual Z-Bodies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the tool's utility and accuracy. One reviewer states the binarization tool 'appears promising' and notes 'example from one image suggests their binarization tool outperforms Otsu thresholding binarization.' Another reviewer confirms 'the work is solid, and the methods, data and analyses broadly support the claims.' The tool's performance is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C51",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C110",
+      "C111",
+      "C124",
+      "C126"
+    ],
+    "result": "sarcApp is an automated image analysis software that classifies and quantifies sarcomeric structures (Z-Lines, Z-Bodies, M-Lines, titin doublets/rings) in real space, assigning them to myofibrils or MSFs, and produces 33 measurements per cell and 24 per myofibril across multiple sarcomeric proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm sarcApp's capabilities. One states 'the authors developed and made publicly available an excellent software tool that will be very useful for labs that are interested in studying sarcomere assembly. Multiple features that are difficult to measure or count manually can be automatically measured by the software quickly and accurately.' Another notes the tool 'will be relevant to biologists working on and interested in obtaining quantitative information on sarcomere structure, function and development.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C102"
+    ],
+    "result": "Blebbistatin treatment of hiCMs results in reduced and disorganized sarcomere assembly, with fewer myofibrils, fewer Z-Lines, decreased myofibril persistence length, decreased Z-Line length, and more randomly oriented myofibrils compared to controls, as quantified by sarcApp.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these validation results without challenge. One reviewer explicitly states 'the sarcApp tool could capture changes in multiple features such as fewer myofibrils, fewer Z-Lines, decreased myofibril persistence, decreased Z-Line length and altered myofibril orientation in the Blebbistatin treated cells.' The data are described as 'consistent with a wide range of previous studies' and the validation is treated as successful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Titin-based quantification with sarcApp reveals that Blebbistatin treatment results in fewer and shorter titin doublets, more rounded titin precursor rings, and disarrayed myofibril orientation, while the number of myofibrils and titin rings remains unchanged.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these titin-specific findings. The tool's ability to quantify titin structures is accepted as part of the overall validation, with one reviewer noting 'with some changes the tool was also shown to quantify sarcomeres in titin and myomesin stained cardiomyocytes.' The differential effects on different sarcomeric components are implicitly accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Blebbistatin treatment affects M-Lines as measured by myomesin staining, resulting in fewer myofibrils, fewer M-Lines, shortened M-Line length, and disorganized myofibril orientation relative to the cell edge.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the M-Line quantification results without objection. One reviewer explicitly acknowledges that the tool 'was also shown to quantify sarcomeres in titin and myomesin stained cardiomyocytes.' The M-Line findings are treated as part of the successful validation of sarcApp's multi-component analysis capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C52",
+      "C54",
+      "C147",
+      "C148",
+      "C152",
+      "C159",
+      "C160"
+    ],
+    "result": "Perturbations to sarcomere assembly (myosin knockdowns, myomesin knockdown) affect Z-Lines and M-Lines differently, suggesting that Z-Line and M-Line/A-band assembly are decoupled and regulated by at least partially independent mechanisms during sarcomere assembly in hiCMs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this key biological conclusion. One reviewer summarizes: 'The analysis indicates that neither MYH6 nor MYH7 knockdown perturbed the assembly of Z- or M-lines, and that knockdown of MYOM perturbed the A-band/M-Line but not the Z-Line assembly according to features captured by the sarcApp tool.' Another states the authors 'demonstrated that different muscle myosins participate in sarcomere assembly in different manners.' The conclusion about independent regulation is not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "\u03b1 myosin II (MYH6) knockdown does not alter the length of \u03b1-actinin-2 Z-lines, titin doublets, or M-lines, though one siRNA resulted in increased numbers of Z-lines.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings. The results are accepted as part of the demonstration that 'neither MYH6 nor MYH7 knockdown perturbed the assembly of Z- or M-lines' as one reviewer notes. The data support the broader conclusion about independent regulation of sarcomeric components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "\u03b2 myosin II (MYH7) knockdown results in more abundant but shorter Z-lines, no change in titin doublet lengths, and significantly shorter M-lines compared to controls.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings without objection. The differential effects on Z-lines versus M-lines are treated as supporting evidence for the main conclusion about modular sarcomere assembly. One reviewer acknowledges the authors 'demonstrated that different muscle myosins participate in sarcomere assembly in different manners.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Myomesin knockdown does not affect Z-Line assembly (no difference in Z-Lines per cell) but results in less organized A-bands with shorter \u03b2 myosin II stacks and increased numbers of titin precursor rings, suggesting myomesin regulates A-band/M-Line assembly but not Z-Line assembly.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as supporting the main biological conclusion. One reviewer explicitly states 'knockdown of MYOM perturbed the A-band/M-Line but not the Z-Line assembly according to features captured by the sarcApp tool.' The differential effects are treated as key evidence for independent regulation of sarcomeric components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "U-Net offers advantages of superior accuracy and speed compared to manual binarization, but requires users with advanced mathematical background, machine learning experience, and coding proficiency.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the tool's advantages but raise concerns about accessibility and robustness. One reviewer notes 'the binarization tool which is tailored to sarcomere image binarization appears promising but was not systematically compared with existing approaches.' Another questions 'how robust is the tool?' noting it was tested only on 'one type of cardiomyocytes (hiCMs) taken from one lab using' specific microscopy systems, raising concerns about generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Current frequency space methods for sarcomere quantification yield no information about Z-Lines in real space (number, size, spacing, organization within myofibrils), about sarcomere precursors, or about sarcomeric components other than Z-Lines, and it is unclear how Z-Line assembly relates spatially or temporally to other sarcomere components.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer expresses surprise that 'there is no reference in the manuscript to SarcTrack, published by Toepfer and colleagues in 2019 (PMID 30700234), which has exactly the same purpose,' suggesting the authors may have overstated the limitations of existing methods. The reviewer notes 'the advantage of the image analysis software presented in the current manuscript appears to me to be that it can cover both mature sarcomeres and nascent sarcomeres in premyofibrils effectively,' implying existing tools may address some of the claimed gaps.",
+    "result_type": "MINOR"
+  }
+]

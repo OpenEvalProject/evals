@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The four sunflower taxa vary considerably in environmental niche breadth, with H. annuus spanning the widest niche and H. argophyllus the narrowest, as shown by PCA analysis of environmental variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are directly supported by data presented in Figure 2A showing PCA of environmental variation. The visual evidence clearly demonstrates the relative breadth of environmental niches occupied by each taxon, with appropriate statistical representation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Strong correlations between phenotype and environment suggest pronounced local adaptation for some traits, with the largest SIPEC values found for temperature variables and smallest for soil types, and higher values for comparisons between petiolaris subspecies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by correlation analyses shown in Appendix 1-figures 2 and 3. The SIPEC index provides a quantitative measure of phenotype-environment correlation similarity across species, with clear patterns emerging for different environmental variable types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The null-W test revealed many windows with signatures of repeated association (WRAs), with the strongest signal for number of frost-free days (NFFD). WRAs ranged from 6.3-44.1% (mean 14.5%), significantly more than the 5% expected by chance, though many strong associations in one species did not show strong signatures in others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by the null-W test results shown in Figure 3 and Appendix 1-figures 4-5. The statistical approach is appropriate for identifying repeated associations while controlling for false positives, though the authors acknowledge multiple factors can inflate WRA proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Most genomic regions harbor shared standing variation between taxa, but WRAs do not show consistent differences in shared standing variation compared to the rest of the genome, suggesting introgression is not a primary driver of WRA patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by analysis of shared SNPs shown in Appendix 1-figure 6. The lack of enrichment of shared standing variation in WRAs provides evidence against introgression as the primary mechanism, though the inference relies on the assumption that the SNP-based index accurately captures shared variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Clusters of repeated association (CRAs) varied in number and size across pairwise species comparisons, with particularly large CRAs at haploblock sites. CRAs for environmental variables were more numerous and covered larger genomic regions than those for phenotypic associations, driven mainly by occurrence within haploblocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by CRA analysis results shown in Appendix 1-figures 7-8. The clustering approach controls for hitchhiking effects, and the quantitative ranges provided are specific and verifiable from the data, though the authors acknowledge CRA counts cannot be taken as reliable estimates of independent selection targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Genes within CRAs are enriched for a large number of GO terms spanning many different categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is based on GO enrichment analysis shown in Appendix 1-figures 9-10, but the broad enrichment across many categories may indicate either genuine biological signal or potential issues with multiple testing correction. The lack of specificity in enrichment patterns makes interpretation difficult.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Using BayPass to correct for population structure in genotype-environment association tests substantially reduced the number of CRAs, likely due to reduced power to detect true positives when population structure covaries with environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by comparison shown in Appendix 1-figure 11 and citation to Booker et al. 2023a. The interpretation that reduction reflects loss of power rather than removal of false positives is reasonable given the known trade-offs in structure correction methods, though both explanations remain possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Environmental variables with high maximum SIPEC index tended to have more CRAs, with higher repeatability for temperature-related variables and lower repeatability for soil-related variables at both phenotype and genome levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by the relationship shown in Figure 4 and Appendix 1-figure 12. The correlation between phenotypic and genomic repeatability strengthens the inference of adaptive signal, though the authors appropriately note pseudoreplication due to non-independence of environmental variables prevents formal statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The number of CRAs showed a weak negative relationship with shared standing variation index, with variables having the most CRAs showing the lowest shared standing variation, suggesting repeated association patterns are not strongly driven by incomplete lineage sorting or introgression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by analysis in Appendix 1-figure 13. The negative relationship contradicts expectations under an introgression-driven model, providing evidence for independent adaptive responses. However, the relationship is described as 'weak' and the inference assumes the standing variation index accurately captures relevant evolutionary history.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "WRAs were significantly enriched within haploblocks compared to non-WRAs for most phenotypes and environments (310 vs 23 significant contrasts). In H. argophyllus specifically, WRAs showed very strong enrichment in haploblocks while non-WRA top candidates fell within haploblocks less commonly than in other taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by contingency table analysis shown in Figure 5. The statistical approach appropriately controls for baseline enrichment of top candidates in haploblocks. The strong asymmetry (310 vs 23) provides compelling evidence, though the authors acknowledge pseudoreplication due to non-independence of variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CRAs showed significant enrichment within haploblocks for many traits and environments, though few significant signatures were found for H. petiolaris petiolaris vs. H. petiolaris fallax comparisons, possibly due to extensive introgression obscuring true signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by analysis in Appendix 1-figure 7C-D. The exception for petiolaris subspecies comparisons is notable and the introgression explanation (C78) is speculative but reasonable given known gene flow between these subspecies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PicMin analysis identified 145 regions significant for at least one variable (FDR<0.1), with NFFD showing the most significant regions for environment (20 at FDR<0.1) and total leaf number for phenotypes (9 at FDR<0.1). Significant windows showed 2.3\u00d7 enrichment for proximity to genic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by PicMin analysis results with appropriate FDR correction. The enrichment near genic regions (chi-square test p<10^-15) provides strong evidence that identified regions are functionally relevant rather than random false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Estimates of effective number of loci (Leff) contributing to adaptation were large (>1000 windows) for all traits and environments, and remained in the hundreds even after controlling for linkage and assuming 80% false-positive rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 are based on C-score analysis shown in Appendix 1-figure 15, but the method makes strong assumptions about equal contribution probability across windows and is sensitive to multiple sources of error acknowledged by the authors. The estimates provide an upper bound but may not accurately reflect the true number of adaptive loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Local adaptation in sunflowers is highly flexible with different species using different loci to adapt to the same environment, yet involves some component with minimal redundancy where inversions play a particularly important role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 represent a synthesis of multiple results (C4-C8, C50-C52, C72-C76, C111-C114). The dual nature of adaptation (flexible yet constrained) is supported by the combination of species-specific signatures and enrichment of repeated associations in inversion regions, though this interpretation involves substantial inference beyond direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PicMin identified several candidate genes with repeated association signatures including FT, PRR3, TOE1, and PHYC (involved in flowering time and circadian regulation), as well as PIN3, ARF4, MN (plant development/auxin transport), and CRK13, PRR2 (plant immunity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 are supported by PicMin results with appropriate citations to functional studies in other species. The identification of known flowering time genes provides validation of the approach, though functional roles in sunflower adaptation would require experimental confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "A 72 Mbp haploblock on chromosome 15 in H. annuus is strongly associated with NFFD and shows association signatures in other taxa, particularly flanking the haploblock in H. argophyllus. PicMin identified CRPK1 and LHY (cold-response genes) in this region, suggesting strong selection relative to migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by analysis shown in Figure 3A and PicMin results with appropriate citations. The case study effectively illustrates the main findings about inversion-associated repeatability, though the inference about selection strength (C98) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The observed repeatability associated with inversions supports the local adaptation model for long-term persistence of segregating inversions in sunflower, and enrichment of WRAs in inversion regions is consistent with general models of inversion evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 appropriately interpret the empirical findings in the context of theoretical models with proper citations. The evidence of repeated association in inversion regions across species supports adaptive maintenance, though the authors acknowledge inability to distinguish between capture vs. accumulation models (C101).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Most sunflower inversions are >1 My old and predate current local adaptation patterns, but likely do not predate the genes underlying local adaptation which appear shared among species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 involve inferences about evolutionary timescales that are not directly demonstrated in this study. While the age estimate may come from previous work, the claim that inversions don't predate adaptive genes is speculative and based on the assumption that observed repeatability reflects ancient conservation rather than convergent evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Comparative studies of species lacking an inversion may help identify genes driving adaptation in species with inversions, as segregating inversions have extensive LD preventing identification of selection targets within them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 represent a valid inference from the study's findings about repeated associations in non-inversion species at regions corresponding to inversions in other species. Claim C106 about LD in inversions is established knowledge appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Temperature is the strongest driver of repeated adaptation at both phenotypic and genomic levels, with correlations between traits and environment being strongest and most similar among species for temperature variables. The similarity in phenotypic and genomic signatures is consistent with strong selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by SIPEC analysis (Appendix 1-figure 3) and CRA patterns (Figure 4). The concordance between phenotypic and genomic repeatability strengthens the inference of adaptive signal over artifacts, though alternative explanations cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Some fraction of the genome contributes to adaptation with low redundancy and high repeatability (enriched in inversion regions), while the remainder shows high redundancy with species-specific contributions. At least some trait variation experiences strong selection with low redundancy, but most strong association signatures are species-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 represent the study's main synthesis about the dual nature of adaptive architecture. This interpretation is supported by the combination of significant repeatability (C50-C54) and species-specific patterns (C52, C114), though quantifying the relative contributions of each component remains challenging.",
+    "result_type": "MAJOR"
+  }
+]

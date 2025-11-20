@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript establishes the clinical need for improved MR imaging access in elderly patients with implants, citing that 26% of the US population over 65 carries large joint or spinal implants, 12.6 million patients with implants will need MR studies within 10 years, and over 70% of 3 million pacemakers are in patients over 65, with 20% requiring MR studies within 12 months of implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 are well-supported by appropriate citations to peer-reviewed literature (Kanal et al., 2015; Lim et al., 2019; Puette et al., 2022; Brown et al., 2019). Claim C1 serves as a general framing statement that is substantiated by the specific statistics in C4-C7. The data collectively establish a clear clinical need for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript describes the MR safety classification system (MR safe, unsafe, conditional) and argues that current labeling practices are inadequate, with many implants labeled 'MR Not Evaluated' or too restrictively, potentially affecting up to 2 million elderly US patients and restricting their access to MR imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 accurately describe the established MR safety classification system with appropriate citations. Claims C11-C14 document the labeling problem with proper citations. Claim C15's estimate of 2 million affected patients is explicitly stated as derived from combining multiple sources, which is methodologically transparent. The logical connection to restricted access (C16) follows reasonably from the preceding claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript presents periprosthetic joint infection as a clinical example where improved MR imaging access would be beneficial, noting it occurs in 1-2% of primary arthroplasties but up to 30% of revisions, has 5-8% mortality at 1 year, and that MR imaging with metal artifact reduction is the most accurate diagnostic tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations to clinical literature (Fischbacher and Borens, 2019; Zanetti, 2020; Li and Glassman, 2018; Galley et al., 2020). The statistics are specific and the clinical context is well-established. This effectively motivates the need for better MR imaging access for patients with implants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The manuscript establishes that while numerical simulations with virtual human models can accurately predict RF-induced implant heating and are FDA-accepted, accessible full-body anatomical models reflecting demographic diversity are lacking. The Virtual Population, while excellent, is relatively homogeneous (younger, fit Caucasian Europeans) and lacks publicly available background MRI data for verification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are well-supported by extensive citations establishing the state of the field. Claims C25-C26 identify a gap in available models, which is a reasonable assessment. Claims C27-C30 provide a fair critique of the Virtual Population, noting both its strengths and limitations (homogeneity, morphed rather than anatomical obese models, lack of public verification data). The assessment is balanced and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C76"
+    ],
+    "result": "The VHP-Female model used in the testbed is based on the Visible Human Project cryo-section dataset, represents a 60-year-old female with BMI 36, contains 250 anatomical structures plus 40 implant-related components, and has over 600 registered users worldwide in its open-source version.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model characteristics are clearly stated with appropriate citations (Noetscher et al., 2021; NEVA Electromagnetics, LLC, 2015). The user base claim (C32) is specific and verifiable. The connection to the Visible Human Project (C76) is reasonable given the model name. These claims establish the model's provenance and adoption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C77"
+    ],
+    "result": "The testbed comprises an integrated multiphysics simulation system including the VHP-Female model, a semiautomatic implant embedding algorithm using anchor nodes, a parameterizable 64 MHz birdcage coil model in Ansys HFSS for computing SAR/power loss density, and an Ansys FEM thermal solver for temperature rise prediction, all integrated in Ansys Workbench. The testbed targets MR labeling of large orthopedic implants and has received FDA approval as a medical device development tool for 1.5 T examinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical components are described in detail with appropriate software specifications and workflow integration (C33-C45, C77). The FDA approval (C35) is a verifiable regulatory milestone with citation. The implant embedding methodology (C36-C37) is clearly described. The integration of electromagnetic and thermal solvers (C43-C45) is technically sound. Figure references support the descriptions. This represents a complete technical description of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C35"
+    ],
+    "result": "The testbed has been approved by the US FDA as a medical device development tool for 1.5 T orthopedic implant examinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FDA approval is stated consistently (C3, C35) with citation to Neva Electromagnetics, LLC, 2022. This is a verifiable regulatory milestone that represents significant validation of the testbed. The approval is appropriately scoped to 1.5 T orthopedic implant examinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The manuscript describes FDA labeling requirements (1 hr sessions with specified scan/rest cycles to keep heating <5\u00b0C) and notes that ASTM phantom testing differs substantially from real body response. The testbed predicted up to 40% higher or 50% lower heating than phantom experiments in different cases, motivating the need for anatomical modeling to augment ASTM measurements and assist implant design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 accurately describe FDA requirements with proper citations. The limitation of ASTM phantoms (C51) is a well-recognized issue in the field. The comparison data (C52-C53) showing both higher and lower predictions versus phantoms demonstrates the complexity and validates the need for anatomical modeling. The proposed role of the testbed (C54-C55) follows logically. The scope limitations (C56-C57) are appropriately stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C72"
+    ],
+    "result": "For a long titanium femoral nail, the testbed predicted unsafe heating (10\u00b0C rise to 45\u00b0C) with 15 min scan/5 min rest cycles, but safe heating with 4 min scan/16 min rest cycles. The testbed allows rapid testing and adjustment of exposure protocols (within 5-7 minutes) to meet FDA requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 presents specific simulation results with clear parameters and outcomes, supported by Figure 4. Claim C59 demonstrates the testbed's utility in optimizing protocols. Claims C60 and C72 establish the practical efficiency of the system. This represents a concrete demonstration of the testbed's capability to address the clinical problem, though it is a simulation result rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The testbed was validated against an extreme case from Hue et al., 2018: a resonant RF ablation needle in bovine liver. The testbed predicted 23\u00b0C temperature rise, agreeing well with experimental measurements of 20\u00b0C (proton resonance frequency shift) and 22\u00b0C (fiber optic sensor). This validation required fine FEM mesh resolution achieved through local automated adaptive mesh refinement, claimed as a unique testbed property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation case (C62-C66) shows good agreement between simulation (23\u00b0C) and two independent experimental measurements (20\u00b0C and 22\u00b0C) from a published study. The ~10-15% agreement is reasonable for this type of modeling. The technical requirement for fine mesh resolution (C67) and the adaptive refinement capability (C68) are appropriate for modeling sharp tips. This represents important validation of the testbed's accuracy, though only one validation case is presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The manuscript concludes that numerical electromagnetic and thermal modeling offers an accurate solution to implant heating concerns. A complete testbed was developed and validated, with cross-platform compatibility previously established and further validation underway with CST Studio Suite. The testbed and open-source VHP-Female model are available online.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion (C69-C71) appropriately summarizes the work and its motivation. Cross-platform compatibility (C73) is supported by citation to prior work (Yanamadala et al., 2016). Ongoing validation (C74) is transparently stated as future work. Data availability (C75) with a specific DOI is excellent practice. The claims are appropriately scoped and supported.",
+    "result_type": "MAJOR"
+  }
+]

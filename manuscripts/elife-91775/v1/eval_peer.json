@@ -1,0 +1,171 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C89",
+      "C90",
+      "C92"
+    ],
+    "result": "The authors developed WormPsyQi, an automated image analysis pipeline for quantifying synaptic puncta in C. elegans. The pipeline uses a modified U-Net for neurite segmentation and a two-layer pixel classification model for synapse segmentation, provides four pre-trained models, and achieves over 10-fold reduction in processing time compared to manual annotation while maintaining or exceeding human-level accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly praised the pipeline's validation and performance. Reviewer 1 states 'The computational pipeline is rigorously validated and shown to accurately quantitate fluorescent puncta, at least as well as human experimenters.' Reviewer 2 notes the toolkit 'demonstrates significant potential' and Reviewer 3 confirms 'WormPsyQi nicely reproduced the quantifications done manually for most of the marker strains they tested.' The editor describes the validation as 'convincing studies.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C21"
+    ],
+    "result": "The authors present a resource of 30 transgenic strains labeling chemical or electrical synapses throughout the C. elegans nervous system using CLA-1, RAB-3, GRASP, and innexin reporters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently acknowledge this resource as valuable. Reviewer 2 states the authors 'applied WormPsyQi to various aspects' including multiple reporter types. Reviewer 3 notes 'The collection of new markers would also help researchers examine synapse patterning in different neuron types.' The editor describes this as part of the 'valuable' tools provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "WormPsyQi validates sexually dimorphic synapses in adult hermaphrodites and males, confirming that ADL>AVA, PHB>AVA, and PHA>AVG synapses are fewer in males compared to hermaphrodites, while PHB>AVG synapses are fewer in hermaphrodites compared to males.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'A series of rigorous experiments demonstrates the utility of the pipeline for measuring differences in the number of synaptic puncta between sexes.' The validation of known sexual dimorphism serves as a positive control demonstrating the pipeline's accuracy, and no reviewer questions these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C53"
+    ],
+    "result": "In most datasets, the difference between WormPsyQi and human annotation was statistically insignificant, including for pharyngeal neurons I5, MC, NSM, and I2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the pipeline is 'shown to accurately quantitate fluorescent puncta, at least as well as human experimenters.' Reviewer 3 confirms 'WormPsyQi nicely reproduced the quantifications done manually for most of the marker strains they tested.' This validation is central to demonstrating the pipeline's reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Neurons in the CNS progressively add synapses at pre-existing sites throughout larval development. For example, ASK axon length and presynaptic specializations both increase approximately twofold between late-L1 and adulthood, maintaining proportional synapse density.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'Neuron-to-neuron heterogeneity in patterns of synaptic growth during development are convincingly demonstrated.' The developmental analysis is presented as a demonstration of the pipeline's utility and is not questioned by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "Developmental synapse addition differs between the ENS and CNS. In pharyngeal neurons MC, I2, and M3, synapse density decreases across development as puncta number remains constant or increases modestly compared to pharynx elongation. In contrast, M4 and NSM add puncta proportionately with pharynx elongation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'Neuron-to-neuron heterogeneity in patterns of synaptic growth during development are convincingly demonstrated.' This finding represents a novel observation enabled by the pipeline and is accepted by reviewers as part of the demonstrated utility of the toolkit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "WormPsyQi can quantify spatial distribution of synapses along neurites. PHA presynaptic sites are concentrated anterior to the branch point, AIB synapse density increases toward the dorsal midline crossover point, and ASK synapse distribution patterns are stereotyped across development.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These spatial analyses are presented as demonstrations of the pipeline's capabilities to quantify 'subtle features' mentioned in the abstract. Reviewer 1 notes the pipeline can measure 'differences in the number of synaptic puncta' across various conditions, implicitly including spatial analyses. No reviewer questions these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C48"
+    ],
+    "result": "CLA-1 reporters are superior to RAB-3 reporters for the same neuron, as RAB-3 produces more diffuse signals. WormPsyQi is unable to reliably segment puncta in synapse-dense neurons using RAB-3 reporters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges 'Weaknesses and caveats are realistically discussed,' which includes the limitations with RAB-3 reporters. Reviewer 3 similarly notes 'The authors describe the limitations of the use of toolkits and potential solutions users can take.' The comparative assessment of reporter types is accepted as part of the toolkit characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C77"
+    ],
+    "result": "Fluorescent signals from GRASP and iBLINC reporters vary across neurons or synapses, likely due to sensitivity to promoter choice, DNA amount, transgene type, and imaging conditions. This variability could partially explain discrepancies between transgenic reporter data and EM reconstructions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'Weaknesses and caveats are realistically discussed,' which encompasses the discussion of GRASP/iBLINC variability. The authors' acknowledgment of these limitations and their potential impact is accepted by reviewers as appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Having a cytoplasmic reporter in the background of the synaptic reporter enhanced WormPsyQi performance and was crucial for preventing synapse mis-annotation in regions with high background fluorescence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'The inclusion of a mask - a region of interest defined by a cytoplasmic marker - is a powerful and useful approach.' This methodological feature is explicitly praised as enhancing the pipeline's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors acknowledge limitations of their approach: multicopy transgenic arrays may cause artifacts, reporter variability exists across lines, WormPsyQi is constrained by image and reporter type, and quantification can be inaccurate where signals are diffuse or synapse density is too high.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'Weaknesses and caveats are realistically discussed.' Reviewer 3 notes 'The authors describe the limitations of the use of toolkits and potential solutions users can take.' The reviewers view the acknowledgment of limitations as a strength rather than a weakness of the manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C19",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study manually isolated and sequenced 840 cells from 38 C. elegans embryos across eight developmental stages (1- to 102-cell), using CEL-Seq2 protocol with UMI tagging. Gene expression was standardized within embryos and analyzed using t-SNE dimensionality reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C19, C73-C80 collectively describe a well-documented experimental approach with appropriate technical details including cell collection protocols, library preparation methods (CEL-Seq2), normalization strategies, and computational analysis parameters. The methods are standard for single-cell RNA-seq studies and include proper quality control thresholds (>10,000 mapped reads).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C20",
+      "C26"
+    ],
+    "result": "Embryo-to-embryo variation was efficiently normalized by standardizing gene expression within each embryo. Cell clustering confirmed minimal inter-embryo variation relative to intra-embryo cell state coherence, with an average of seven replicate cells per cell state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C20, and C26 describe the normalization approach and its validation through clustering analysis. The observation that clusters contain cells from multiple embryos (C20) provides empirical support for the normalization strategy (C8). The replication depth (C26) is adequate for the analysis performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Dimensional reduction analysis revealed developmental trajectories with early-stage cells at the center and late-stage cells at the periphery. Cells followed trajectories according to founder cell lineages (AB, MS, E, C, D, P), identified by lineage-specific markers, with similar cell fates converging between lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 describe t-SNE visualization results supported by Figure 1b-d. The lineage-specific markers (ceh-51, elt-7, pal-1, pes-1, nos-2) are validated by multiple citations to prior work (C11-C15). The convergence of similar fates between lineages (C16-C18) is consistent with known C. elegans developmental biology and supported by visual data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The study identified 119 cell identities with distinct transcriptome profiles across developmental stages, including 64 equivalence groups. A total of 5,433 genes were differentially expressed, including 395 transcription factors. F19F10.1 was validated as a new marker expressed in posterior daughter cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 describe the main cell identity classification results. The identification of 119 cell states (C24) with supporting differential expression analysis (C22-C23) is well-documented. The FISH validation of F19F10.1 (C21) provides experimental confirmation of computational predictions. The equivalence group concept (C25) is appropriately applied to sister cells and symmetric lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Transcription factor families show lineage- and stage-specific enrichment patterns. Homeobox domain TFs are enriched in the ABp lineage at the 51-cell stage (particularly in ABplppp, p=0.00015) and depleted in the E lineage. GATA zinc finger TFs are enriched in the E lineage. Four TF families (T-box, HLH, HD, HMG) are enriched in the AB lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 describe TF family enrichment analysis using hypergeometric distribution tests. The statistical approach is appropriate for testing enrichment (C30-C31), and the patterns described (C32-C36) are supported by Figure 3. The analysis appropriately accounts for multiple testing by examining family-level patterns rather than individual genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Homeodomain genes establish lineage-specific spatial patterning codes. At the 28-cell stage, each of 16 AB cells expresses at least one homeodomain gene in 8 distinct patterns forming dorsal-ventral stripes along the anterior-posterior axis. Similar spatial patterns occur in MS and C lineages. Expression patterns are not monophyletic, arguing against continuous symmetry breaking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 describe spatial patterning of homeodomain genes supported by Figure 4. The mapping of gene expression to 3D cell positions (C40-C41) provides strong evidence for spatial patterning codes. The observation that patterns are not monophyletic (C38-C39) appropriately challenges continuous symmetry breaking models. The lineage-specific codes in MS and C lineages (C45-C47) extend the finding beyond AB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C72"
+    ],
+    "result": "C. elegans orthologs of Drosophila patterning genes show lineage-specific expression. Maternal genes (nos-1,2, puf) are restricted to germ lineage, while gap and pair-rule genes (pal-1, cwn-1) show C lineage restriction. HOX genes (ceh-13, php-3, nob-1) transcend founder lineages to pattern posterior regions. This contrasts with lineage-independent patterning in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 and C72 describe comparative analysis with Drosophila supported by Figure 5. The lineage-specific restriction of orthologous genes (C48-C49) is clearly demonstrated. The HOX gene expression patterns (C51-C53) are supported by both data and appropriate citations. The comparison to Drosophila (C50) is conceptually sound, though the conclusion about lineage-dependency requires careful interpretation as it reflects different developmental modes rather than direct homology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study proposes that C. elegans uses 51 non-HOX homeodomain genes for lineage-specific patterning, representing a large repertoire (97 total HD genes) compared to Drosophila (104 HD genes). This suggests lineage-controlled regionalization requires more distinct positional systems than morphogen-based patterning, potentially representing a universal feature of animal embryogenesis with deep homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C61 present interpretive conclusions that extend beyond the direct data. While the gene counts (C55-C56) are factual and the spatial patterning is demonstrated (C58), the functional claims about the 51 homeodomain genes (C54) are speculative ('likely pattern'). The evolutionary interpretations (C57, C61) about necessity for distinct positional systems and deep homology are reasonable hypotheses but require additional comparative data across species to be fully supported. The universality claim (C58) is particularly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background claims establish that C. elegans has a well-characterized cell lineage with 1,340 cells during embryogenesis leading to 558 cells at hatching, organized into germ-line (P) and five founder somatic lineages (AB, MS, E, C, D). The genome encodes 934 transcription factors, 40% with known DNA-binding specificities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide established background information supported by appropriate citations (Sulston et al. 1983, Deppe et al. 1978, Narasimhan et al. 2015). These are well-accepted facts in the C. elegans field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The introduction establishes that developmental toolkit genes (signaling modules and transcription factors) pattern organisms through gene regulatory pathways. Previous C. elegans single-cell studies analyzed either mixed cell suspensions from multiple embryos or individual early-stage embryos, missing intermediate gastrulation stages (28-102 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 provide appropriate background and rationale supported by relevant citations. The characterization of previous approaches (C67-C68) accurately identifies the gap in knowledge that motivates the current study. The general principles about developmental toolkit genes (C62-C63) and differences between Drosophila and C. elegans (C65-C66) are well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The delay between GFP expression and mRNA detection in reporter validation is expected based on prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 appropriately acknowledges a known technical consideration in comparing transcriptional reporters to mRNA measurements, supported by citation to Murray et al. 2012. This is a minor methodological note.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study's main conclusions are that gene expression programs are modular according to sub-cell lineages, establishing stripes of TF expression along the anterior-posterior axis, with homeodomain genes establishing a comprehensive lineage-specific positioning system beginning at the 28-cell stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 summarize the study's major findings, which are well-supported by the detailed results in other claim groups. These represent appropriate synthesis of the experimental observations into broader conclusions about C. elegans patterning mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

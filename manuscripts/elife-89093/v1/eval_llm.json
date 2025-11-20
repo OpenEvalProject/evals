@@ -1,0 +1,539 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Basal forebrain cholinergic neurons are physiologically active during conditioned responding (licking) even in the absence of discrete cues and prior to reward delivery, as measured by GCaMP6s calcium imaging showing fluorescence increases in the 470 nm signal channel at the time of licking events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C60, C61, and C62 are well-supported by GCaMP photometry data in Figure 3. The data show fluorescence increases in the signal channel (470 nm) but not the reference channel (405 nm) during licking events, both with and without reward delivery, with statistical significance (p<0.001). The experimental design appropriately controls for movement artifacts using dual-wavelength imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Photostimulation of basal forebrain cholinergic neurons selectively promotes conditioned responding (licking) only when paired with reward opportunity (Photostim-Reinforced sessions), but not during unreinforced sessions. Even brief stimulation (single 5 ms pulse) is sufficient to increase licking likelihood and decrease latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C36 are strongly supported by behavioral data in Figure 1H-K showing that ChR2 mice increased licking during photostimulation only in Photostim-Reinforced sessions (p<0.0001), not in Photostim-Unreinforced sessions. The dose-response data (Figure 1J-K) demonstrate that even minimal stimulation (1 pulse) is effective. Statistical analyses using linear mixed effects models with appropriate controls (eYFP mice) support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C66"
+    ],
+    "result": "Photostimulation of basal forebrain cholinergic terminals specifically in the BLA drives conditioned responding in a temporally precise manner, but only when associated with reward opportunity, similar to somatic stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C66 are supported by terminal-specific optogenetic data in Figure 5B showing that BLA terminal stimulation produces reward-contingent behavioral effects similar to somatic stimulation. The experimental design appropriately targets terminals while controlling for non-specific effects with eYFP controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In vivo electrophysiology reveals that cholinergic photostimulation produces reward-contingency-dependent suppression of BLA neural activity (evident as early as 135 ms), with increased proportions of suppressed neurons during Photostim-Reinforced sessions. In contrast, dmPFC neural activity increases similarly regardless of reward contingency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C75-C87 are well-supported by in vivo electrophysiology data in Figure 6. The data show clear differences in BLA population responses between session types (facilitation in Photostim-Unreinforced, suppression in Photostim-Reinforced), while dmPFC responses remain stable. Statistical analyses using rank-sum tests and chi-square proportion tests support the regional and context-dependent differences. Control experiments with eYFP mice (Figure 6\u2014supplement 3) show minimal changes, validating specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C145",
+      "C146",
+      "C148"
+    ],
+    "result": "Ex vivo electrophysiology demonstrates that cholinergic terminal photostimulation produces cell-type-specific effects in BLA: monosynaptic muscarinic-mediated suppression of projection neurons (BLA-mPFC) and monosynaptic nicotinic-mediated facilitation of GABAergic interneurons, both persisting in TTX/4AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C89-C96 are strongly supported by ex vivo electrophysiology data in Figure 7. The experiments demonstrate monosynaptic responses using TTX/4AP to block polysynaptic transmission (Figure 7H-I), and pharmacological specificity using receptor antagonists (Figure 7J). The cell-type identification using double transgenic mice (ChAT::Cre \u00d7 VGAT::flpo) and retrograde tracing provides clear evidence for differential receptor-mediated effects. Statistical comparisons (t-tests, two-way ANOVA) support the quantitative differences in EPSP and IPSP amplitudes between cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C155"
+    ],
+    "result": "Muscarinic receptors, rather than nicotinic receptors, are necessary for photostimulation-induced conditioned responding, as demonstrated by systemic pharmacology showing that scopolamine (muscarinic antagonist) but not mecamylamine (nicotinic antagonist) abolishes the behavioral effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 and C155 are supported by pharmacology data in Figure 2C showing dose-dependent effects of scopolamine on photostimulation-induced licking, with complete abolition at 1 mg/kg, while mecamylamine had no effect. The within-subject design using interleaved tone and photostimulation trials provides strong internal controls. Linear mixed effects models support the statistical significance of the drug \u00d7 stimulus interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Local ACh levels in the BLA, measured using the genetically encoded sensor GACh3.0, increase during conditioned responding (licking) even in the absence of discrete cues and reward delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by ACh sensor data in Figure 4H and 4J-L showing fluorescence increases in the 470 nm signal channel but not the 405 nm reference channel during licking events, with statistical significance (p<0.001 for licks leading to reward, p<0.027 for licks without reward). The sensor validation and dual-wavelength control appropriately address potential artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C110",
+      "C111"
+    ],
+    "result": "Concurrent photostimulation and ACh measurement in BLA reveals that photostimulation-evoked ACh levels are similar in Photostim-Unreinforced and Photostim-Reinforced sessions, suggesting postsynaptic gating rather than presynaptic modulation of ACh release underlies the reward-contingent behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 and C110-C111 are supported by concurrent optogenetic stimulation and ACh sensor measurements in Figure 5G-H showing robust ACh responses in ChrimsonR mice but not controls, with no significant difference between session types (linear mixed effects model, p=0.51). The inference about postsynaptic gating (C69, C111) is reasonable given the behavioral differences despite similar ACh levels, though direct evidence for the gating mechanism is not provided. The comparison to physiological ACh levels (Figure 5\u2014supplement 1) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C98",
+      "C99",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The neural and behavioral effects of basal forebrain cholinergic activation are modulated by reward contingency in a target-specific manner, with BLA suppression becoming more prominent when the system is primed by behavioral reinforcement, while effects may be unmasked or amplified by reward availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C98-C99, and C106-C108 represent integrative conclusions supported by converging evidence from behavioral (Figures 1, 5), electrophysiological (Figure 6), and ex vivo (Figure 7) experiments. The reward-contingency dependence is consistently demonstrated across multiple experimental approaches. However, C99 and C108 contain speculative elements about 'priming' and 'unmasking' mechanisms that are inferred rather than directly demonstrated. The overall conclusion is well-supported, though the mechanistic interpretation remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Photostimulation of basal forebrain cholinergic neurons does not increase locomotion in open-field tests, does not modify innate location preference, is not inherently reinforcing (no place preference), and does not affect locomotion during head-fixed behavioral tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by control experiments in Figure 1\u2014supplement 4 showing no differences between ChR2 and eYFP mice in open-field locomotion (linear mixed effects model, p=0.66), center time (p=0.85), real-time place preference (t-test, p=0.36 for ChR2, p=0.94 for eYFP), or treadmill locomotion during behavioral sessions (p=0.887). These negative results are important controls demonstrating behavioral specificity, though the lack of effect on locomotion contrasts with some prior literature (C57, C135).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Cholinergic photostimulation causes modest pupil dilation that is larger and faster during Photostim-Reinforced sessions (0.7 s onset) compared to Photostim-Unreinforced sessions (1.2 s onset), but this arousal effect is slower than the behavioral licking response (0.5 s latency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by pupillometry data in Figure 1\u2014supplement 4I-L using DeepLabCut for automated tracking. The statistical analyses (linear mixed effects model showing Virus \u00d7 Session interaction, p=0.047) support the session-dependent differences. The comparison of timing between pupil dilation and licking (C49) is a reasonable inference from the data, though the mechanistic interpretation about arousal is somewhat speculative. The control showing similar pupil responses to reward delivery in both groups (C48) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C163"
+    ],
+    "result": "Nearly 90% (88.9%, 442/497 cells) of neurons expressing ChR2 were cholinergic, as confirmed by immunostaining for choline acetyltransferase (ChAT), an obligate enzyme in ACh synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C163 are supported by immunohistochemistry data in Figure 1\u2014supplement 1A-B showing high specificity of ChR2 expression to cholinergic neurons. The quantification across 18 sections from 3 mice provides adequate sampling. The characterization of ChAT as an obligate enzyme (C24) is established knowledge appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Prior to photostimulation during early WoOT training, ChR2 and eYFP mice showed similar licking behavior on rewarded and unrewarded windows, similar reward collection, lick rates, and bout characteristics, confirming mice could not predict rewards and viral expression alone did not affect behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by baseline behavioral characterization in Figure 1\u2014supplement 1C-I. Linear mixed effects models show no differences between groups in licking likelihood (p=0.859), rewards collected (rank-sum p=0.71), lick rates (p=0.81), or bout characteristics (p>0.73 for all measures). These baseline controls are essential for interpreting subsequent photostimulation effects. The inference that mice could not predict rewards (C26) is reasonable given equal licking on rewarded and unrewarded windows.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "In dmPFC, neurons facilitated by cholinergic photostimulation during Photostim-Reinforced sessions had higher baseline firing rates than suppressed neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by analysis in Figure 6\u2014supplement 4 showing that facilitated neurons had higher baseline firing rates. The statistical analysis accounts for the right-skewed distribution by log-transforming firing rates before analysis. This finding suggests that baseline activity state may predict response to cholinergic input, though the functional significance is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The Windows of Opportunity Task (WoOT) is an operant, variable-interval reinforcement schedule with limited hold, where rewards are delivered only for licking during unsignaled 3-second windows, and mice cannot predict whether any given lick will be rewarded, resulting in stable intermittent licking patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe the task design and are supported by the methods description and behavioral data in Figure 1\u2014supplement 1. The characterization as a variable-interval schedule with limited hold (C21) is appropriate and properly cited to Ferster and Skinner (1957). The inference that mice cannot predict rewards (C20) is supported by the variable ITIs and lack of discrete cues, though this is a design feature rather than an empirical result. The stable licking patterns (C22) are demonstrated in Figure 1\u2014supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C118",
+      "C100",
+      "C102"
+    ],
+    "result": "Cholinergic activity can itself become conditioned and function similarly to conditioned stimuli or cues, able to trigger conditioned responses, but only when photostimulation is paired with reward opportunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116, C118, C100, and C102 represent interpretive conclusions about the nature of cholinergic function based on the behavioral data. The conclusion that cholinergic activity can become conditioned (C116) is a reasonable inference from the reward-contingent effects, though it involves conceptual interpretation beyond the direct data. The comparison to conditioned stimuli (C118) is supported by the functional similarity in triggering responses, but the underlying mechanisms may differ. These claims are well-supported as interpretations but involve some conceptual extrapolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Cholinergic neurons are consistently active during conditioned responding even without cues and rewards, suggesting they play a role in conditioned responding beyond signaling salient events. Blocking muscarinic receptors impairs responses to conditioned tones, consistent with prior work showing cholinergic terminal inhibition prevents fear conditioning expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 integrate current findings (C121-C123 from Figures 2-3) with prior literature (C124 citing Jiang et al., 2016). The GCaMP data support C121, and the pharmacology data support C123. The inference about functional role (C122) is reasonable but somewhat speculative. The citation to prior work (C124) is appropriate for contextualizing the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C101"
+    ],
+    "result": "Most prior work on basal forebrain cholinergic circuits has focused on how ACh modifies processing of other stimuli by increasing attention to conditioned stimuli or enhancing stimulus-reinforcer associations in learning and memory, with less work exploring effects in the absence of external stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C13 and C101 characterize prior literature and are supported by multiple citations. However, the evaluation of these claims depends on the accuracy of the cited work and whether the characterization fairly represents the field. The claim that 'less work has been done' (C13) is difficult to verify without comprehensive literature review. These claims provide important context but their accuracy depends on correct interpretation of cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Basal forebrain cholinergic neurons are active during both positively and negatively valenced reinforcers, and at least some previously described reward associations may be due to reward collection behavior (licking) rather than reward per se. Prior work suggested ACh amplifies reinforcer effects during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 integrate current findings with prior literature. C103 is supported by citations to prior studies. C104 is a reasonable inference from the current data showing cholinergic activity during licking even without reward, though it involves reinterpretation of prior work. C105 appropriately cites prior work. The integration is logical but involves some speculation about reinterpreting prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Postsynaptic gating of cholinergic effects may be mediated by coincident dopaminergic inputs to BLA, given that dopaminergic receptors are expressed by BLA neurons that also express cholinergic receptors. However, dmPFC responses to cholinergic photostimulation were not reward-dependent despite robust dopamine gating effects in dmPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C115 propose a mechanistic hypothesis about dopaminergic gating. C113 and C115 are supported by citations to prior work. However, C112 is explicitly speculative ('may be mediated') and no direct evidence for dopaminergic involvement is provided in the current study. C114 is an inference from the lack of reward-contingency effects in dmPFC. These claims represent reasonable hypotheses for future investigation but lack direct experimental support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Cholinergic neurons in different basal forebrain locations have different projections and may be physiologically heterogeneous. Anterior cholinergic neurons projecting to lateral hypothalamus suppress appetite, while the more posterior population targeted here increased consummatory behavior. Effects on locomotion were not observed despite physiological correlations, and somatic photostimulation was not reinforcing, contrasting with some prior terminal stimulation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C139 compare current findings to prior literature to explain differences in results. C131-C132 and C138-C139 are supported by citations. C133-C134 appropriately contrast prior work with current findings. C135 and C137 note negative results that differ from some prior studies (C136). The comparisons are reasonable and help contextualize the findings, though some differences may reflect methodological variations not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "BLA-projecting basal forebrain cholinergic neurons are developmentally, anatomically, and pharmacologically distinct from cortex/hippocampus-projecting neurons (earlier development, rare collaterals, different toxin sensitivity), suggesting limited backfiring from BLA axons to soma and then cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 are supported by citations to prior anatomical and developmental studies. The inference about limited backfiring (C143) is reasonable given the cited evidence about lack of collaterals and distinct properties, though it remains an inference rather than direct demonstration. These claims appropriately address a potential confound in the terminal stimulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C147",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Heterogeneous BLA responses to cholinergic stimulation have been noted previously ex vivo. Prior work suggested M1 muscarinic receptors are predominantly on pyramidal neurons while interneurons express nicotinic receptors, and similar functional differences have been seen in somatosensory cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144 and C147 are supported by citations to prior ex vivo studies. C151-C152 cite prior histological work that aligns with the current functional findings. C153 cites a parallel finding in another brain region. These claims appropriately contextualize the current findings within prior literature, though the accuracy depends on correct interpretation of cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C156"
+    ],
+    "result": "Cholinergic effects could function in concert to suppress BLA output, which may decouple downstream regions like dmPFC and allow independent function. Projection neurons receiving preponderant cholinergic input may serve as a critical convergence point for ACh influence over BLA networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C150 and C156 propose functional interpretations of the circuit findings. C149 is supported by the ex vivo data and citations to prior work about local inhibition, making it a reasonable inference. However, C150 is more speculative about functional consequences ('may decouple') without direct evidence. C156 is an inference from cited work about input patterns combined with current findings. These represent plausible hypotheses but involve speculation beyond the direct data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C154",
+      "C155"
+    ],
+    "result": "Behavioral responses to brief cholinergic photostimulation occur by approximately 0.5 s, and surprisingly, this sub-second response is primarily mediated by slower muscarinic receptors rather than faster nicotinic receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155 are supported by behavioral timing data (Figure 1) and pharmacology results (Figure 2). The observation that muscarinic receptors mediate a sub-second response is indeed surprising given their slower kinetics compared to nicotinic receptors, as noted in the text. The timing measurements and pharmacological dissection provide strong support for this counterintuitive finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Multiple mental health disorders involve cholinergic deficiency with severe impairments. Current cholinergic augmentation strategies have limited clinical impact due to insufficient benefit and side effects. Augmenting cholinergic levels may have unpredictable effects depending on reward context, and extrinsic augmentation may be processed differently than intrinsic fluctuations. Coupling cholinergic augmentation with behavioral therapies incorporating rewards may provide new therapeutic opportunities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C159 about clinical disorders and treatment limitations are supported by citations to clinical literature. However, C160-C162 represent speculative translational implications of the current findings. While the speculation is reasonable given the context-dependent effects demonstrated, these claims go well beyond the experimental data. C161 is explicitly speculative ('it is possible'), and C162 proposes therapeutic approaches without any clinical data. These represent interesting hypotheses for future investigation but are not supported by the current experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Prior work described basal forebrain cholinergic neurons as active during reinforcer delivery, reward consumption, locomotion, and conditioned stimuli. However, the current study found that photostimulation increased conditioned responding independent of these factors: without conditioned cues, prior to reinforcer delivery/consumption, and without affecting locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 characterize prior literature with appropriate citations. C59 contrasts current findings with prior work, which is supported by the behavioral and control data (Figures 1, 1\u2014supplement 4). The contrast is appropriate and highlights the novel aspects of the current findings, though some apparent differences may reflect methodological variations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Recent work showed cholinergic neurons are active after conditioned stimuli and may link stimuli with expected reward timing. Prior work showed photostimulation increases discriminability by increasing responses to conditioned stimuli and promotes responding as if cues are present. The current findings show cholinergic activity during responding without cues/rewards, similar to LH-VTA neurons, though without the same stereotyped motor sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 and C125-C127 appropriately cite and characterize prior literature. C128 integrates current findings with prior work, making a reasonable comparison to LH-VTA neurons (citing Nieh et al., 2015). C129-C130 note differences from LH-VTA pathway effects, appropriately acknowledging limitations of the comparison. The integration of current findings with prior literature is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work showed basal forebrain cholinergic projections have considerable physiological effects ex vivo, including prominent effects on limbic circuits like BLA. Ex vivo cholinergic activation of BLA suppresses activity at low firing rates, but in vivo activation may increase spontaneous firing, suggesting postsynaptic effects depend on unidentified influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 appropriately cite prior literature. C18 is an inference from the apparent contradiction between ex vivo and in vivo findings, which motivated the current study. This represents a reasonable interpretation of prior work that identifies a gap in understanding, which the current study addresses by examining reward contingency as a potential modulating factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "BLA and dmPFC are both involved in conditioned behavior, receive projections from basal forebrain cholinergic neurons, and are functionally interrelated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by citations to prior literature and provide rationale for examining both regions in the in vivo electrophysiology experiments. These claims establish the anatomical and functional context for the comparative analysis of cholinergic effects in the two regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Control mice expressing eYFP showed minimal changes related to photostimulation during both Photostim-Unreinforced and Photostim-Reinforced sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by control electrophysiology data in Figure 6\u2014supplement 3 showing minimal neural responses to photostimulation in eYFP mice. This is an essential control demonstrating that the effects in ChR2 mice are due to cholinergic activation rather than non-specific effects of light or other factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Basal forebrain cholinergic neurons modulate how organisms process and respond to environmental stimuli through impacts on arousal, attention, and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general statement about established cholinergic function that provides context for the study. It represents consensus knowledge in the field and is appropriate as background, though it is not directly tested in the current experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "GABAergic neurons can locally inhibit BLA projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by citations to prior studies (Lee and Kim, 2019; Woodruff and Sah, 2007) and is used to support the circuit model proposed in C96. This represents established knowledge about BLA circuitry that is appropriately incorporated into the interpretation of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Cholinergic terminals can express presynaptic receptors, including cholinergic receptors, which may modulate ACh release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by citations to prior work and is used to introduce the possibility of presynaptic modulation of ACh release, which is then tested and ruled out by the concurrent stimulation and measurement experiments (C110). This represents appropriate use of prior literature to motivate experimental design.",
+    "result_type": "MINOR"
+  }
+]

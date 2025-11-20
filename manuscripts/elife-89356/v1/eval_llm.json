@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C110"
+    ],
+    "result": "The authors identified 103 grid cells from 1881 neurons (5.5%) in dorsomedial MEC with field sizes of 7.5\u00b13.3 cm and grid spacing of 72.5\u00b113.7 cm using a classification method based on hexagonal symmetry of spatial autocorrelograms compared to shuffled data (99th percentile threshold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C110 provide clear methodological details and quantitative results for grid cell identification. The classification approach using shuffled data controls and statistical thresholds is well-described and appropriate for distinguishing grid cells from other cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Grid cells exhibited either task-anchored firing (68/103 cells with periodogram peaks at integer multiples of track frequency) or task-independent firing (32/103 cells with peaks at non-integer frequencies), with task-anchored cells showing higher spatial information but similar firing rates. Aperiodic grid cells were rare (3/103) and had lower firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 are well-supported by the Lomb-Scargle periodogram analysis and statistical comparisons shown in Figure 2. The classification scheme is validated by differences in spatial information scores and visual inspection of firing rate maps. The methodological approach using spectral analysis is appropriate for distinguishing these firing modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Grid cells switched between task-anchored and task-independent firing modes within sessions, with 73.8% of cells showing no single mode for >85% of trials. These switches occurred in blocks across multiple trials and could not be explained by trial type or cue availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by rolling window analysis (Figure 3) and statistical comparison to shuffled data showing non-random block structure (p=0.0003, KS test). The experimental design with interleaved trial types rules out simple explanations based on cue availability. However, the rolling window approach has limited temporal resolution which could affect classification accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Grid cells transitioned between firing modes coherently as a population, with strong agreement in firing modes between simultaneously recorded grid cells. Non-grid cells showed more variable behavior, with some switching coherently with grid cells and others maintaining stable task-anchored firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by agreement score analysis (Figure 4) showing higher coherence between grid cell pairs than grid-non-grid pairs. The findings are consistent with continuous attractor dynamics. However, without recording all grid cells simultaneously, the authors cannot rule out that switching reflects a subset becoming disconnected from the network (acknowledged in C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C58",
+      "C78"
+    ],
+    "result": "On cued trials, behavioral performance (stopping behavior and hit rate) was similar regardless of whether grid cells were task-anchored or task-independent, suggesting grid representations are not required for cued reward localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C58, and C78 are supported by behavioral data in Figures 5-6 showing no significant difference in performance on beaconed trials between task-anchored and task-independent conditions. This dissociation between neural state and behavior argues against a general role for grid cells in all spatial tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C59",
+      "C87",
+      "C6",
+      "C7",
+      "C60"
+    ],
+    "result": "On non-beaconed and probe trials (without visual cues), task-anchored grid firing was associated with spatially organized stopping behavior and higher success rates compared to task-independent firing, indicating that grid cell anchoring selectively enhances path integration-dependent performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C59, C87, C6-C7, and C60 are supported by behavioral analyses showing significant differences in stopping organization and hit rates between task-anchored and task-independent conditions on uncued trials (Figures 5-6). Statistical analyses using mixed-effects models support these conclusions. This is the main finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C62",
+      "C65",
+      "C66"
+    ],
+    "result": "Grid firing can operate in two distinct modes: anchored to the task environment (providing position information) or independent of the task reference frame (encoding distance traveled). Both modes can be observed during the same behavioral task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C62, C65, and C66 summarize the core finding that grid cells exhibit dual coding modes. This is well-supported by the periodogram analyses (Figure 2) and within-session switching data (Figures 3-4). The finding extends prior work on circular tracks to a goal-directed task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C64",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Non-grid cells in MEC form multiple populations: some switch modes coherently with grid cells while others maintain stable task-anchored representations independently. Task-independent periodic activity was rare among non-grid cells, suggesting the MEC implements multiple parallel spatial computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C64, C70-C72 are supported by analyses showing differential behavior of non-grid cell populations (Figures 2E, 3-supplement 5, Figure 4). The diversity of non-grid cell responses suggests functional heterogeneity. However, C72 is somewhat speculative about the mechanistic interpretation of multiple sub-networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C79",
+      "C80",
+      "C88"
+    ],
+    "result": "Grid representations support specific roles in path integration-dependent behaviors but are not required for cued recall of locations, arguing against the idea that grid codes provide a general-purpose spatial representation used across all spatial tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63, C79-C80, and C88 represent the main conclusion integrating behavioral and neural findings. This is well-supported by the dissociation between cued and uncued trial performance as a function of grid cell state. The conclusion is consistent with prior work on path integration deficits following grid cell manipulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Residual localization performance on task-independent trials suggests additional neural mechanisms may support path integration-dependent behavior, potentially through ramping activity or distance information from task-independent grid representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C92 acknowledge that some successful performance occurs without task-anchored grid firing. While C90 is supported by the data, C91-C92 are speculative about alternative mechanisms. The manuscript does not provide direct evidence for these alternative mechanisms, making this conclusion uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The mode switching observed differs from previously reported spontaneous remapping in that it involves transitions between task-anchored representations (potentially useful for the task) and task-independent representations (unlikely to contribute to task performance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 distinguish the current findings from prior work (Low et al., 2021). The distinction is supported by the behavioral correlates showing differential performance. However, C67 acknowledges a limitation that without recording all grid cells simultaneously, the possibility of subset disconnection cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Task-independent coding by grid cells is unlikely to result from failure of upstream visual circuits, as mice performed well on visually cued trials when grid cells were task-independent. Switching may reflect modulatory pathways reducing visual input impact on the grid system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is a reasonable inference from the behavioral data showing intact cued performance during task-independent firing. However, C77 is speculative about mechanisms (modulatory pathways, top-down control, brain state shifts) without direct evidence. Alternative explanations are not fully ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Rather than being an 'always on' tracking system, grid cell networks vary in their engagement with the environment, potentially reflecting attentional/top-down control or indirect consequences of hippocampal place cell map control mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is supported by the variability in grid cell anchoring demonstrated throughout the paper. However, C96-C97 are speculative about underlying mechanisms without direct experimental evidence. These represent hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study used 9 male C57BL/6J mice in a virtual reality location memory task with a 200 cm track containing beaconed, non-beaconed, and probe trials delivered in repeating blocks. Neural data were analyzed using quality metrics (firing rate >0.2 Hz, isolation >0.9, noise overlap <0.05, SNR >1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 describe the experimental methods and are directly supported by the Materials and Methods section. The experimental design is clearly described with appropriate controls and quality metrics for data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior work has shown that in circular track environments, grid firing patterns are maintained but no longer anchored to the environment, encoding distance traveled rather than absolute position. Grid representations can also be unstable with spontaneous remapping, but it was unclear whether this impacts spatial task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 accurately summarize prior work (Jacob et al., 2019; Low et al., 2021) and identify the knowledge gap addressed by the current study. These claims provide appropriate context for the experimental questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior MEC manipulation studies show that lesions disrupt hippocampal place representations and impair spatial memory, while NMDA receptor deletion reduces grid cells and impairs path integration. Stellate cell inactivation impairs both path integration and cue-based navigation, but it is difficult to establish whether impairments result from grid firing deficits per se or other circuit alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 accurately summarize prior experimental work with appropriate citations. The critical evaluation in C18-C19 correctly identifies limitations of perturbation approaches, providing motivation for the correlational approach used in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior work shows that inactivation of MEC stellate cells causes deficits in the location memory task and other cued tasks, and that efficient reward localization on uncued trials relies on path integration. Spatial representations for cued tasks could be encoded by other MEC cell types such as border cells, ramping cells, or cue-responsive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 and C86 accurately cite prior experimental work. Claim C85 is speculative but appropriately framed as a possibility and supported by citations to work on other cell types. These claims provide context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The results offer a new perspective on interindividual differences in human path integration, suggesting differences could result from variation in grid representation anchoring rather than path integration per se. This could be important for understanding deficits in neurological and neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C101 are speculative extensions to human cognition and clinical populations. While the speculation is reasonable and supported by citations to relevant human literature, there is no direct evidence from the current study linking grid cell anchoring variability to individual differences or clinical deficits.",
+    "result_type": "MINOR"
+  }
+]

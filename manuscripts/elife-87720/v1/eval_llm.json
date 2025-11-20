@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C36"
+    ],
+    "result": "The authors developed a novel translational approach-avoidance reinforcement learning task based on the restless bandit design, where participants learn to choose between a conflict option (higher reward, potential punishment) and a safe option (lower reward, no punishment). The task shows face validity compared to rodent operant conflict tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 provide comprehensive description of the task design with appropriate methodological detail. Claim C36 asserts face validity based on design similarity to Vogel/Geller-Seifter tests, which is a reasonable inference given the shared features of learning-based choice between reward/punishment contingencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C50",
+      "C51",
+      "C22",
+      "C23",
+      "C3"
+    ],
+    "result": "In the discovery sample (n=369), participants demonstrated both approach (choosing higher reward probability options) and avoidance (avoiding punishment) behaviors. Task-induced anxiety significantly interacted with punishment probability, such that more anxious individuals showed greater avoidance of the conflict option when punishment was likely, even at the cost of lower overall reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 report statistically significant effects with appropriate p-values and effect sizes from hierarchical logistic regression. The interaction between anxiety and punishment probability (\u03b2 = -0.10 \u00b1 0.04, p = 0.022) is clearly demonstrated and visualized in Figure 2. Claim C3 summarizes this main finding appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C64",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "A reinforcement learning model with separate learning rates and sensitivities for rewards and punishments best explained participant behavior. The winning model showed excellent parameter recovery (r = 0.77-0.86) and accurately reproduced observed choice patterns (r = 0.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C64 provide strong evidence for model validity through model comparison (Figure 3a), parameter recovery analysis, and posterior predictive checks. The methodological claims (C90-C92) appropriately describe the computational approach using established methods with proper citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C4",
+      "C42"
+    ],
+    "result": "Computational modeling revealed that anxiety-related avoidance was primarily explained by relative sensitivity to punishment over reward (reward-punishment sensitivity index), rather than punishment learning rate. The mediating effect of the sensitivity index was over four times larger than that of the punishment learning rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 report significant correlations and mediation effects with appropriate statistics. The mediation analysis (C28, Figure 4c) shows the reward-punishment sensitivity index as a significant mediator (\u03b2 = -0.009 \u00b1 0.003, p = 0.003) while punishment learning rate was not (p = 0.052). This provides mechanistic insight into anxiety-related avoidance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47"
+    ],
+    "result": "The main findings regarding anxiety-related avoidance and its computational mechanisms were replicated in an independent pre-registered sample (n=627), despite demographic differences between samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 states replication was achieved, and Appendix 1 (referenced throughout) confirms the key effects replicated. Claims C46-C47 document demographic differences that did not prevent replication, strengthening confidence in the findings' robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C6"
+    ],
+    "result": "Split-half and test-retest reliability analyses demonstrated fair-to-excellent reliability for most task measures and model parameters (r = 0.4-0.77), except for the punishment learning rate which showed poor test-retest reliability (r = -0.45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 report reliability indices with appropriate statistical methods (ICC for behavioral measures, model-derived correlations for parameters). The poor reliability of punishment learning rate (C33) is honestly reported and discussed as a limitation. Claim C6 appropriately summarizes the overall reliability findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Clinical symptom measures (anxiety, depression, experiential avoidance) correlated with task-induced anxiety but showed inconsistent or non-significant relationships with task performance and computational parameters across samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C53 establish the sample characteristics and correlations with task-induced anxiety. Claims C54-C58 document that experiential avoidance showed some correlations in the discovery sample that did not replicate, indicating limited predictive validity for clinical measures. This is honestly reported as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Practice effects were observed in the test-retest sample, with both task-induced anxiety and punishment learning rate significantly decreasing in the second session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 report statistically significant decreases with appropriate t-tests and p-values. This finding helps explain the poor test-retest reliability of punishment learning rate and is appropriately discussed as a methodological consideration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Sex differences were observed in some model parameters, with females showing lower reward-punishment sensitivity index (more avoidance-driven) in both samples, though specific parameter differences showed inconsistent replication patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C59-C63 document sex differences with appropriate statistics. The reward-punishment sensitivity index difference replicated (C60-C61), while individual parameter differences showed mixed replication. The inconsistent replication is honestly reported, suggesting these are exploratory findings requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The task demonstrates construct validity through the association between avoidance responses and task-induced anxiety, though the effect size was small (|r|~0.13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 makes an inference about construct validity based on the observed anxiety-avoidance relationship, supported by theoretical citations. Claim C38 honestly reports the small effect size. The authors appropriately acknowledge this limitation while arguing the finding still supports construct validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Data quality procedures excluded 12-14% of participants based on attention checks and response patterns, with exclusions having no effect on main findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 provide transparent reporting of sample sizes, exclusion criteria, and exclusion rates. Claim C85 reports sensitivity analyses showing robustness to exclusions. This demonstrates appropriate data quality control for online studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study employed rigorous methodological practices including pre-registration, ethical approval, validated measures, appropriate power analyses, and open data/code sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C97 document methodological rigor with appropriate citations and transparent reporting. Pre-registration (C73), validated instruments (C87-C88, C94), power analyses (C95), and data sharing (C97) represent best practices in open science.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8"
+    ],
+    "result": "Avoidance is a prevalent and hallmark feature of anxiety-related psychopathology, with avoidance biases during approach-avoidance conflict thought to drive disorder development and maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, and C8 establish the theoretical background with appropriate citations (Barlow, 2002; Hayes, 1976; Stein and Paulus, 2009; etc.). These represent well-established knowledge in the field and appropriately motivate the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C19"
+    ],
+    "result": "Current translational approaches to studying avoidance face limitations including measurement differences across species, computational complexity of spatial tasks, and description-experience gaps in decision-making paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C11-C19 establish the rationale for developing a new translational task, citing relevant literature and established knowledge. The arguments about limitations of existing approaches (C18-C19) are reasonable inferences supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C15",
+      "C16",
+      "C17",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Prior work has established various animal models of anxiety-related avoidance and their human translations, with mixed findings regarding the relationship between anxiety and punishment sensitivity/learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C15-C17, and C39-C45 review relevant prior literature with appropriate citations. The discussion of inconsistent findings (C41, C43-C44) provides important context for interpreting the current results and is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C93"
+    ],
+    "result": "Participants rated the aversive sounds as moderately unpleasant (mean = 31.7/50), and mediation analyses were conducted using structural equation modeling with the lavaan package.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C93 report descriptive data and methodological details with appropriate specificity. These provide important context for interpreting the punishment effectiveness and analytical approach.",
+    "result_type": "MINOR"
+  }
+]

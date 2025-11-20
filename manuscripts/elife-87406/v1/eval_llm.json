@@ -1,0 +1,472 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "Bactabolize is a new computational tool for high-throughput generation of strain-specific metabolic models. The tool is written in Python 3, utilizes the COBRApy framework and BiGG nomenclature, builds upon a reference-based reconstruction approach, and has four main commands (draft_model, patch_model, fba, sgk). It can produce models and growth phenotype predictions in under 3 minutes per genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45-C48, C51-C52 collectively describe the development and basic characteristics of Bactabolize. The tool's implementation, framework dependencies, and performance metrics are clearly stated and appear to be directly measured. The four main commands are evident from Figure 1, and the speed claim is supported by timing data presented later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A pan-metabolic reference model for the Klebsiella pneumoniae species complex (KpSC-pan v1) was constructed by combining 37 manually curated strain-specific models. The pan-model comprises 1265 genes, 2319 reactions, and 1696 metabolites, and represents diverse KpSC taxa with previously demonstrated high accuracy (88.3-96.8% for 94 growth phenotypes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C62-C64 describe the construction and characteristics of the KpSC-pan v1 reference model. The model composition is directly measured (C4), the construction method is clearly described (C62), and the diversity and prior validation are supported by citations to previous work (C63-C64). This represents a key resource for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C83",
+      "C84",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Bactabolize-derived models for K. pneumoniae KPPR1 performed comparatively or better than CarveMe and gapseq across substrate usage predictions. The Bactabolize model had the highest overall accuracy with fewer false-positive predictions (21/505) and high true-positive predictions (117/505) compared to CarveMe universal (39/617 false-positives, 132/617 true-positives) and gapseq (31/262 false-positives).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C70-C96 present a comprehensive comparison of model performance for substrate usage prediction. The data show clear quantitative differences in model features (C70-C84) and prediction accuracy (C90-C96), with Bactabolize achieving the highest overall accuracy metrics. The comparison is fair as KPPR1 was not represented in the reference model (C69), and results are supported by Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "For gene essentiality predictions, gapseq produced the highest number of true-positives (79/1403), followed by Bactabolize (44/1220) and CarveMe (39/1951). However, Bactabolize showed the greatest precision and specificity, while gapseq had the highest F1 score and sensitivity. Overall accuracies were high for all three methods (CarveMe: 83.96%, gapseq: 82.96%, Bactabolize: 80.57%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 present gene essentiality prediction results with clear quantitative metrics. The data show trade-offs between different performance measures across methods, with each excelling in different aspects. The results are internally consistent and supported by Figure 2F-G, though the overall differences in accuracy are relatively modest (80-84%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Computational speed comparisons showed CarveMe KpSC pan was fastest (mean 20.04s), followed by CarveMe universal (30.28s), Bactabolize (98.05s), KBase (183.50s), and gapseq (5.46 hours). All measurements were performed on a high-performance computing cluster with standardized conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 present timing measurements for different model construction methods. The data show clear differences in computational speed, with Bactabolize being intermediate. The measurements were performed under controlled conditions on a computing cluster, and the gapseq timing is consistent with previous reports (C110), providing external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Assembly quality increased with sequencing depth but plateaued beyond 40-50\u00d7 depth. At 40\u00d7 depth, \u226599% of genes and reactions were commonly captured in draft models, and 102/108 models showed 100% concordance with complete models for growth predictions. Models with <99% capture showed reduced accuracy (e.g., isolate SB4767 with 80.4% concordance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 present systematic analysis of the relationship between sequencing depth, assembly quality, and model accuracy. The data clearly demonstrate that 40\u00d7 depth is sufficient for high-quality models (\u226599% capture), supported by Figure 3 and supplementary figures. The exception (SB4767) provides important validation that the 99% threshold is meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Assembly graph dead-ends showed the strongest relationship with model capture (R\u00b2\u22650.98), followed by contig counts (R\u00b2\u22650.9) and N50 (R\u00b2\u22650.83). Optimal quality control thresholds were determined: \u2264200 dead-ends (94.44% sensitivity, 0% false-positives), \u2264130 contigs (67.92% sensitivity, 0% false-positives), or \u226565,000 N50 (94.97% sensitivity, 1.71% false-positives). A three-tier approach prioritizing dead-ends, then N50, then contigs is recommended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C134 present a rigorous statistical analysis establishing quality control thresholds for draft genome assemblies. The regression analyses show strong relationships (high R\u00b2 values), and the threshold optimization balances sensitivity and specificity. The three-tier recommendation (C134) is logical given that dead-ends are not always available. Results are supported by Figures 3-4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Of 901 draft assemblies passing QC (\u2264200 dead-ends), 23 models failed to simulate growth on M9+glucose despite capturing \u226599% of genes/reactions. Gap-filling added 1-3 reactions (median=1) and restored growth in 21/23 models. Gap-filled models showed high accuracy with 18/21 having \u226599% concordance (12/21 had 100% concordance) across 846 growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 demonstrate that conservative gap-filling can rescue models that fail basic growth simulations while maintaining high accuracy. The small number of added reactions (1-3, median 1) and high concordance rates (\u226599% for 18/21 models) support the conclusion that gap-filled models passing QC are suitable for substrate prediction (C141). The approach is appropriately conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "Draft models for 10 novel KpSC clinical isolates showed high accuracy for growth predictions on 16 carbon sources. Models for isolates with sequence types (STs) represented in the KpSC-pan v1 reference performed slightly better (mean accuracy=0.98) than those for non-represented STs (mean accuracy=0.95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 provide prospective validation of Bactabolize on novel isolates with matched experimental data. The high accuracy metrics (0.95-0.98) support the tool's utility, and the modest difference between represented and non-represented STs (0.98 vs 0.95) suggests reasonable generalization. However, the limited number of tested substrates (16) is acknowledged as a limitation in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C156",
+      "C157"
+    ],
+    "result": "Bactabolize's reconstruction method is reductive, meaning output models include only genes, reactions, and metabolites present in the reference model or a subset thereof. Novel reactions will not be included unless manually identified and curated by the user.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C156-C157 clearly describe a fundamental characteristic and limitation of Bactabolize's approach. This is a direct consequence of the reference-based method and is consistently stated throughout the manuscript. The limitation is important for users to understand when applying the tool.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "For optimum results, users should use a pan-model capturing maximal diversity for the target species. A pan-model from just 37 representative strains can support highly accurate draft models (as shown in Figures 2 and 5). Single strain references can be used for closely related species, but unrelated references are expected to produce inaccurate outputs. When no suitable reference exists, universal database approaches (CarveMe, gapseq) are recommended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C158-C162 provide practical guidance for Bactabolize users. The recommendation for pan-models is supported by the study's results (C159, Figures 2 and 5). The caution about unrelated references (C161) is appropriately conservative, noting this scenario was not tested. The recommendation for alternative tools when no reference exists (C162) is reasonable and acknowledges the tool's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "A Bactabolize-generated draft model for K. pneumoniae KPPR1 outperformed the manually curated iKp1289 model for the same strain. The iKp1289 model was initially drafted via KBase (which uses RAST with Enzyme Commission numbers), and the EC scheme has demonstrated systematic errors that lead to reduced accuracy compared to ortholog identification methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 demonstrate that automated approaches can outperform older manually curated models. The comparison is supported by Figure 2 data (C144), and the explanation involving EC scheme limitations is supported by citations (C147-C148). However, the comparison may be somewhat unfair as iKp1289 is 6 years old and the field has advanced. The result highlights the importance of methodology and currency rather than simply manual vs. automated approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C154",
+      "C155"
+    ],
+    "result": "CarveMe's use of a universal reference model may limit specificity and result in overestimation of model genes. Manual curation can overcome these limitations but is labor-intensive and unsuitable for high-throughput analyses. The CarveMe database (BiGG universal_model) is no longer actively maintained, while user-defined reference models can be iteratively updated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C154-C155 present limitations of CarveMe and advantages of the Bactabolize approach. The specificity concerns are supported by citation (C38) and demonstrated by the higher false-positive rates in the comparison (C92). The maintenance status of the BiGG universal model (C41, C154) is stated as fact based on community forum discussions. The contrast with user-defined models (C155) highlights a practical advantage of Bactabolize's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C163"
+    ],
+    "result": "gapseq demonstrates superior accuracy to CarveMe and ModelSEED in comparative analyses, but model construction takes considerable time (several hours, consistent with reports). This long compute time makes gapseq inappropriate for datasets comprising hundreds to thousands of genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C163 accurately characterize gapseq's performance trade-offs. The accuracy claims (C43) are supported by citation to the gapseq publication, and the timing is confirmed by both citation (C44) and the study's own measurements (C110: 5.46 hours). The conclusion about inappropriateness for large-scale studies (C163) is a reasonable inference given the ~5.5 hour per-genome time requirement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "MEMOTE scores measure model metadata quality and portability but do not reflect model accuracy. Bactabolize performs on the lower end of MEMOTE scores compared to CarveMe universal and gapseq, but outperforms CarveMe's model propagation mode when using the same KpSC-pan reference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 appropriately contextualize MEMOTE scores as metadata quality metrics distinct from predictive accuracy. The comparison results (C88-C89) are shown in Figure 2B. The lower MEMOTE scores for Bactabolize are acknowledged as an area for improvement (mentioned in text), but correctly interpreted as not reflecting the tool's predictive performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "False-positive predictions may indicate metabolic machinery present but not expressed during experiments, and are not always signs of model inaccuracy. However, false-positives can also result from incorrect gene annotations due to reduced specificity in universal models. For high-throughput analysis without manual curation, identifying fewer genes with lower error rates provides greater confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C153 provide nuanced interpretation of false-positive predictions and justify Bactabolize's design philosophy. The distinction between biological (C149-C150) and technical (C151) sources of false-positives is important for interpretation. The preference for precision over sensitivity in high-throughput contexts (C152-C153) is a reasonable design choice given practical constraints, though it represents a value judgment about the relative costs of different error types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Bactabolize uses a conservative gap-filling approach that adds only the minimum number of reactions to enable growth under chosen conditions. Aggressive gap-filling should be avoided if the goal is to understand strain diversity, as it will effectively homogenize models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe Bactabolize's gap-filling strategy and its rationale. The conservative approach is demonstrated by the small number of reactions added (C137: 1-3, median 1). The recommendation against aggressive gap-filling (C61) is logical for preserving strain-specific differences, which is a key goal of the tool. This design choice is appropriate for the intended use case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C169",
+      "C170"
+    ],
+    "result": "Bactabolize and the KpSC pan v1 model are freely available under open source licenses and satisfy FAIR principles. These resources will facilitate population-wide metabolic analyses for priority pathogens to understand transmission, disease, drug resistance evolution, and identify therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 state the availability and FAIR compliance of the tools, which can be verified from the GitHub repository. Claims C169-C170 describe anticipated future applications and impact. While the potential applications are reasonable given the tool's capabilities, these are prospective statements about future utility rather than demonstrated results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C20",
+      "C21",
+      "C22",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Metabolic capacity varies substantially within bacterial species, affecting virulence and antimicrobial resistance. Traditional phenotypic methods and transposon libraries cannot be easily scaled. KpSC are WHO priority pathogens with high diversity, and metabolic variation is relevant for studying virulence and resistance. Studies should include multiple strain-specific models, potentially requiring hundreds to thousands of models to represent population diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11, C20-C22, C28-C30 establish the scientific motivation and context for the study. These claims are well-supported by citations to published literature and represent established knowledge in the field. The argument for needing scalable tools to generate many strain-specific models (C29-C30) logically follows from the documented diversity and its importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C42"
+    ],
+    "result": "Few tools exist for constructing strain-specific metabolic models at scale. Available open-source tools include CarveMe, gapseq, ModelSEED, and KBase. CarveMe and ModelSEED were identified as particularly suitable for large-scale studies due to speed and quality, though KBase's web interface limits high-throughput utility and CarveMe depends on commercial solvers. gapseq uses an independent universal database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C37, C42 survey existing tools and their limitations. The characterization of available tools (C31-C34) is supported by citations, and the assessment of their suitability (C35-C37) is based on published reviews and technical characteristics. The statement about few tools existing at scale (C2) is the authors' assessment that motivates their work, though 'few' is subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Most bacterial genomes in public databases are draft assemblies with 10s-1000s of contigs due to repetitive sequences and sequence drop-out. This fragmentation can result in loss of genetic information, posing limitations for metabolic model reconstruction. It is essential to evaluate expected model accuracies and establish minimum genome quality requirements for high-throughput metabolic modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 establish the practical challenge of working with draft genome assemblies. The characterization of public genome databases (C111) and causes of fragmentation (C112-C113) represent established knowledge. The inference about limitations for metabolic modeling (C114) is logical, and the call for quality control (C115) appropriately motivates the systematic analysis performed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Genome-scale metabolic models represent biochemical networks as stoichiometric matrices and are constructed programmatically but validated with phenotypic data. They can predict substrate usage, gene knockout effects, and identify drug targets. Traditional models are strain-specific and may not apply to other isolates. Metabolic variation has been described in multiple bacterial pathogens including E. coli, S. enterica, S. aureus, and P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18, C23-C27 provide background on metabolic modeling approaches and their applications. These are well-established concepts in the field, supported by appropriate citations. The description of metabolic variation across multiple pathogens (C23-C27) establishes that the issues addressed in this study are broadly relevant beyond KpSC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Bactabolize handles unannotated assemblies by identifying coding sequences with Prodigal, otherwise honoring existing CDS annotations. Orthologs are identified using Bi-directional BLAST Best Hits (BBH), with user-parameterizable coverage and identity thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe technical details of Bactabolize's implementation. These are straightforward descriptions of the tool's functionality that can be verified from the code and documentation. The use of established methods (Prodigal, BBH) is appropriate and well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "K. pneumoniae strain KPPR1 (also known as VK055 and ATCC 43816) was chosen for benchmarking because it has a completed genome sequence (CP009208), single-source growth phenotype data, and single-gene knockout essentiality data available. Importantly, neither KPPR1 nor its lineage (ST493) are represented in the KpSC pan reference model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 describe the rationale for selecting KPPR1 as a benchmark strain. The availability of multiple data types (C66-C68) makes it suitable for comprehensive validation. The fact that KPPR1 is not in the reference model (C69) is crucial for ensuring a fair comparison between methods, as it prevents Bactabolize from having an unfair advantage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The majority of reactions in the Bactabolize model were conserved in CarveMe universal (53.2%), gapseq (2.3%), or both (28.9%). The gapseq model contained many unique reactions (2200, 70.4% of its total). Most Bactabolize metabolites (85.6%) were conserved in other models. True overlaps are likely underrepresented due to nomenclature differences between BiGG and ModelSEED that are difficult to harmonize automatically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present overlap analysis between models using different nomenclature systems. The quantitative overlaps (C79-C81) are shown in supplementary figures after MetaNetX harmonization. The caveat about underrepresented overlaps (C82) is an important limitation that appropriately qualifies the interpretation. The large number of unique gapseq reactions (C80) is notable and may reflect either greater comprehensiveness or nomenclature issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The low number of metabolism-associated genes identified by KBase has impacted the associated reaction and metabolite data in KBase-generated models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 provides an inference about why KBase models have fewer reactions and metabolites (C84). This is a reasonable inference given that metabolic reactions are associated with genes, though it's presented as speculation ('likely due to'). The poor performance of KBase in this comparison may reflect the web interface implementation rather than the underlying ModelSEED algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "37 curated strain-specific models for the Klebsiella pneumoniae species complex were previously described by the authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 references the authors' prior work that forms the foundation for the current study. This is a straightforward citation to published work (Hawkey et al., 2022) and establishes the provenance of the models used to construct the pan-model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Draft models capturing \u226599% of complete model genes/reactions generate highly accurate growth predictions, and these capture rates can be readily achieved from draft genome assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 present key conclusions from the quality control analysis. These are supported by the data showing that 102/108 models at 40\u00d7 depth with \u226599% capture had 100% concordance (C121), while the one model with <99% capture showed reduced accuracy (C123). The conclusion is well-supported by the systematic analysis.",
+    "result_type": "MAJOR"
+  }
+]

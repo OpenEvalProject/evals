@@ -1,0 +1,2507 @@
+{
+  "submission": {
+    "id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T21:17:14.093086Z",
+    "updated_at": "2025-11-20T21:17:14.093086Z"
+  },
+  "content": [
+    {
+      "id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "content_type": "manuscript",
+      "content_text": "# A novel machine learning algorithm selects proteome signature to specifically identify cancer exosomes\n\n## Authors\n\n- Bingrui Li<sup>1</sup> ([ORCID: 0000-0002-4807-1452](https://orcid.org/0000-0002-4807-1452))\n- Fernanda G Kugeratski<sup>1</sup>\n- Raghu Kalluri<sup>1</sup> ([ORCID: 0000-0002-2190-547X](https://orcid.org/0000-0002-2190-547X)) \u2020\n\n### Affiliations\n\n1. Department of Cancer Biology, University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))\n2. Department of Bioengineering, Rice University Houston United States ([ROR:008zs3103](https://ror.org/008zs3103))\n3. Department of Molecular and Cellular Biology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNon-invasive early cancer diagnosis remains challenging due to the low sensitivity and specificity of current diagnostic approaches. Exosomes are membrane-bound nanovesicles secreted by all cells that contain DNA, RNA, and proteins that are representative of the parent cells. This property, along with the abundance of exosomes in biological fluids makes them compelling candidates as biomarkers. However, a rapid and flexible exosome-based diagnostic method to distinguish human cancers across cancer types in diverse biological fluids is yet to be defined. Here, we describe a novel machine learning-based computational method to distinguish cancers using a panel of proteins associated with exosomes. Employing datasets of exosome proteins from human cell lines, tissue, plasma, serum, and urine samples from a variety of cancers, we identify Clathrin Heavy Chain (CLTC), Ezrin, (EZR), Talin-1 (TLN1), Adenylyl cyclase-associated protein 1 (CAP1), and Moesin (MSN) as highly abundant universal biomarkers for exosomes and define three panels of pan-cancer exosome proteins that distinguish cancer exosomes from other exosomes and aid in classifying cancer subtypes employing random forest models. All the models using proteins from plasma, serum, or urine-derived exosomes yield AUROC scores higher than 0.91 and demonstrate superior performance compared to Support Vector Machine, K Nearest Neighbor Classifier and Gaussian Naive Bayes. This study provides a reliable protein biomarker signature associated with cancer exosomes with scalable machine learning capability for a sensitive and specific non-invasive method of cancer diagnosis.\n\n## Introduction\n\nTissue biopsies have traditionally been a definitive way to diagnose and stage cancer; however, a biopsy may not be easily accessible for many tumors such as those in the pancreas, lung, and brain (Distler et al., 2014; Morris et al., 2010; Suram et al., 2012; Mullerat et al., 2003; Hammes et al., 2008). In addition, the small amount of biopsied tissue does not represent the entire heterogeneous pathological profile of the tumor (Oshi et al., 2021). In recent years, liquid biopsy has emerged as a plausible diagnostic and monitoring approach with the capability to detect tumor biomarkers in more accessible biological fluids such as plasma, serum and urine (Hu et al., 2022). Detectable tumor biomarkers can include circulating tumor DNA (ctDNA), circulating tumor cells (CTCs), and exosomes (Kalluri and LeBleu, 2020).\n\nExosomes are extracellular vesicles of endosomal origin that are between ~40 and 180 nm in diameter and have been shown to mediate intercellular communication in health and disease (Kalluri and LeBleu, 2020; Johnstone et al., 1987; Maas et al., 2017). They can contain a variety of biomolecules including DNA, RNA, proteins, lipids, metabolites and other materials representative of the parent cell (Kalluri and LeBleu, 2020). Exosomes are present at high concentrations in biological fluids, which is a potential advantage as a biomarker (Colombo et al., 2014; Valencia and Montuenga, 2021). Exosomal mRNAs and miRNAs have been investigated intensively as diagnostic biomarkers, and mounting evidence suggests that exosomal proteins circulating in biological fluids could be used for cancer diagnosis and monitoring cancer progression (Hu et al., 2022; Chen et al., 2017). Challenges that remain include standardization of methods for consistent exosome isolation from various tissues, identification of biomarkers that distinguish cancer and normal exosomes across different cancer types, and the identification of biomarkers that are unique to specific biological fluids (e.g. plasma, serum, urine, etc.).\n\nIn addition to accurately identifying exosomal protein biomarkers, it is also challenging to successfully utilize them to diagnose cancers due to intratumor and interpatient heterogeneity (Muluneh et al., 2014). Conventional diagnostic approaches predominantly rely on a single biomarker, which is often not specific or sensitive (Ballehaninna and Chamberlain, 2011; Singh et al., 2011). However, recent advances in machine learning algorithms connected to artificial intelligence provide an opportunity to construct a classifier that identifies a panel of exosomal protein biomarkers that would possess a more comprehensive ability to reflect the complex disease status of different patients and distinguish cancer samples from normal samples with significantly improved sensitivity and specificity.\n\n## Results\n\n### Unbiased proteomics analysis of exosomes identifies 18 abundant plasma membrane protein markers for various human cell lines\n\nTo identify universal exosomal protein biomarkers for differentiating cancer from non-cancer exosomes, we analyzed protein abundance data from 228 cancer and 57 control cell-line-derived exosomes, representing various cancer types (Figure 1A; Supplementary file 1). Because studies employ distinct isolation and mass spectrometry quantification techniques, the number of identified proteins is different among the studies. To overcome the bias caused by such technical factors, we examined the proteins common to all studies and identified 1124 overlapping proteins (Figure 2A). To determine the heterogeneity among cancer and control cell-line-derived exosomes, we performed principal component analysis (PCA) using these 1124 proteins in 285 cancer and control cell line-derived exosomes (Figure 2B). The PCA indicated that the exosomes derived from cancer and control cell lines are heterogeneous and show significant variation in protein expression across cell lines.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90390/elife-90390-fig1-v1.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90390/elife-90390-fig2-v1.jpg)\n\n**Figure 2.:** (A) Overlapped proteins from four different studies of cell-line-derived exosomes. (B) PCA plot of cancer and control cell line-derived exosomes. (C) Positivity for eight commonly used exosomal protein biomarkers in various cell lines. The percentage of samples expressing each protein is shown in the boxes. Darker red indicates a higher percentage. (D) Annotation of the proteins detected in more than 90% of all samples. (E) GO and KEGG pathway enrichment analysis of the proteins detected in more than 90% of all samples. (F) Plasma membrane proteins detected in more than 90% of all samples.\n\nWe next investigated the frequency of the proteins detected in the exosomes from all cell lines, only the cancer cell lines and just the control cell lines. Commonly used exosome biomarkers (e.g. CD9, tetraspanins) were examined first, and from the 12 traditional exosome markers (Th\u00e9ry et al., 2006; Kowal et al., 2016; Jeppesen et al., 2019), only eight proteins were detected among the 1124 overlapping proteins from all cell lines. Six of eight proteins were detected in at least 90% of all samples, with CD9 and HSPA4 detected with the least frequency (Figure 2C). In addition, the frequency of FLOT1, FLOT2, and TSG101 proteins was higher in cancer cell-line-derived exosomes when compared to control cell-line-derived exosomes (Figure 2C).\n\nTo identify biomarkers detectable at a high frequency in all cancer and control cell-line-derived exosomes, we searched for the proteins that were detected in \u226590% of all samples (Supplementary file 2). We annotated these proteins using Ingenuity Pathway Analysis (IPA) and found that 78.0% of these proteins localize to the cytoplasm and 13.5% of proteins are associated with the plasma membrane (Figure 2D). Gene Ontology (GO) analysis revealed the enrichment of proteins from pathways related to vesicle-mediated transport, secretory vesicles, exocytosis, endocytosis, and other exosome-related pathways (Figure 2E). To further explore the utility of the proposed biomarkers, we examined the proteins located on the plasma membrane that met the threshold of detection in \u226590% of all samples (Figure 2F). Clathrin Heavy Chain (CLTC) was ranked as the top plasma membrane protein detected in 99.6% of all samples and 100% of control samples (Figure 2F). In addition, the scaffolding protein, Syntenin-1(SDCBP) was detected at a high frequency of 97.9% of all samples, corroborating previous findings (Kugeratski et al., 2021). Next, we sought to identify unique markers that can identify cancer cell-derived exosomes (cancer exosomes) by filtering out the proteins present in \u226410% of 57 control cell-line-derived exosomes. Interestingly, Ataxin 2 Like (ATXN2L), which has been reported to promote cancer cell invasiveness and resistance to chemotherapy, was uniquely detected in the cancer-cell-derived exosomes (Figure 3A; Lin et al., 2019). In total, we identified a set of 18 exosome protein markers that are present at a high abundance in all exosomes examined (Figure 2F).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90390/elife-90390-fig3-v1.jpg)\n\n**Figure 3.:** (A) Proteins detected at higher frequency in cancer cell line-derived exosomes. (B) Positivity for 11 commonly used exosomal protein biomarkers in various tissues. (C) Overlapping proteins (>90% frequency) between cell line- and tissue-derived exosomes. (D) Positivity of five plasma membrane proteins detected in more than 90% of both cell line- and tissue-derived exosomes.\n\n### Comparison of exosomal proteins derived from cell lines and tissues identified five universal plasma membrane protein markers\n\nWe next sought to investigate common biomarkers for the tissue-derived exosomes across cancer types. We calculated the detection frequency of commonly used exosome markers in the 157 samples (101 cancers; 56 controls). Two established exosome markers, CD63 and TSG101, were only detected in 33.1% and 45.9% of all samples, respectively (Figure 3B). To identify high-frequency biomarkers for exosomes derived from both cell lines and tissues, we examined the overlapping proteins that met a threshold of \u226590% in all samples for exosomes derived from cell lines and tissues and found 31 common proteins (Figure 3C). Among the 31 proteins, there were five proteins that were detected in over 90% of all cell line and tissue-derived exosomes (Figure 3D). These include Clathrin Heavy Chain (CLTC), Ezrin, (EZR), Talin-1 (TLN1), Adenylyl cyclase-associated protein 1 (CAP1), and Moesin (MSN).\n\n### An exosome proteome signature of 18 proteins can differentiate cancer exosomes from non-cancer exosomes across multiple cancer types\n\nPlasma or serum is the most readily accessible source for non-invasive biopsies. We next sought to identify if exosome proteins in plasma and serum could differentiate cancer exosomes from non-cancer exosomes across multiple cancer types. We pooled exosome proteomics data derived from plasma or serum for 205 cancer and 51 control samples from five different studies (Hoshino et al., 2020; Vykoukal et al., 2017; Li et al., 2021; Lin et al., 2022; Hallal et al., 2020), which included breast cancer, colorectal cancer, glioblastoma, lung carcinoma, liver cancer, neuroblastoma, and pancreatic cancer (Supplementary file 1). To account for differences in the methodologies of these studies, we first reviewed the proteins and identified 46 proteins that were detected in all the studies (Figure 4A). We then examined their abundances in the 205 cancer and 51 control samples (Figure 4B). Although we could detect differences between the exosomes derived from cancer and non-cancer samples, it was difficult to classify them robustly based on PCA (Figure 4\u2014figure supplement 1A). Therefore, we sought to employ the advanced machine learning algorithm to differentiate cancer exosomes from non-cancer exosomes. We first calculated the mutual information (MI) score for each protein and trained the random forest classifier using the different numbers of top proteins according to their MI score to determine the best set of proteins we should include in the classifier. We found that the model performed best using 18 proteins, where the performance was evaluated by the area under the curve of the receiver operating characteristic curve (AUROC; Figure 4C). Several key cancer-associated proteins were included among these 18 proteins. For example, apolipoprotein C1 (APOC1), which was ranked as the top protein, is significantly decreased in samples of cancer patients (Figure 4\u2014figure supplement 1B) and has been previously reported to be down-regulated in the non-small lung cancer, colorectal cancer, papillary thyroid carcinoma, and pediatric nephroblastoma (Zhang et al., 2011; Jin et al., 2019; Engwegen et al., 2008; Fan et al., 2009).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90390/elife-90390-fig4-v1.jpg)\n\n**Figure 4.:** (A) Overlapping exosome proteins detected in the plasma and serum of 205 cancer and 51 control samples from five studies. (B) Heat map of 46 overlapping exosome proteins in cancer and control plasma or serum samples. (C) AUROC score of the random forest classifier on including various numbers of protein features. (D) AUROC of different models in comparison. (E) Classification error matrix of the 75% training set using a random forest classifier for the 18 selected proteins. The number of samples is indicated in each box. (F) AUROC score of the random forest classifier trained using 75% of the dataset. Other metrics are indicated on right. (G) Classification error matrix of 25% testing set using a random forest classifier for the 18 selected proteins. The number of samples is indicated in each box. (H) AUROC score of the random forest classifier tested using 25% of the dataset. Other metrics are indicated on right.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90390/elife-90390-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) PCA plot of cancer and control plasma or serum-derived exosomes. (B) Protein abundance of 18 selected protein features in 205 cancer- and 51 control plasma or serum-derived exosomes. Significance was determined by the Wilcoxon rank-sum test. *p < 0.05, ***p < 0.001, ****p < 0.0001, ns: not significant.\n\nEmploying all 18 proteins with five-fold cross-validation, we constructed a random forest classifier (Ho, 1995) to distinguish cancer and control samples and compared it with multiple popular machine learning models, including Support Vector Machine (SVM; Cortes and Vapnik, 1995), K Nearest Neighbor Classifier (K-NN; Fix and Hodges, 1989), and Gaussian Naive Bayes (Pedregosa, 2011). Our random forest classifier demonstrated the highest AUROC (Figure 4D). More specifically, it yielded an AUROC of 0.96, with an accuracy of 0.92, a precision of 0.94, and a recall of 0.96 (Figure 4E and F). When applied to the independent test set, the model yielded an AUROC of 0.99, an accuracy of 0.95, a precision of 0.96 and a recall of 0.98 (Figure 4G and H). Importantly, only one sample was misclassified in the independent test set, and 51 cancer samples were correctly classified. Taken together, our results showed the advantage and clinical potential of applying the random forest classifier model to plasma or serum exosome protein based liquid biopsy for cancer diagnosis.\n\n### Five plasma/serum exosomal proteins can reliably differentiate five common cancer types\n\nWe next sought to further enhance the clinical utility of the exosomes for differentiating cancer types. We analyzed proteomics data from plasma or serum-derived exosomes from patients across five common cancer types, including breast cancer, colorectal cancer, glioma, lung cancer, and pancreatic cancer. Initial PCA revealed differences in exosome levels among cancer patients but failed to distinguish the five cancer types (Figure 5A). We determined the crucial features for cancer-type classification by computing mutual information scores for 46 common proteins and built a random forest classifier to determine the optimal number of features to include in the final classifier. We ultimately selected a set of five proteins based on AUROC scores (Figure 5B). We then increased the independent testing data size by utilizing 40% of the total samples and used the remaining 60% as the training set to minimize overfitting issues. Employing the five proteins with five-fold cross-validation to train the random forest classifier, the model achieved a very high accuracy of 0.99 (Figure 5C), and when applied to the independent test set, the model consistently yielded a high accuracy of 0.94 (Figure 5D). The abundance of the five protein features varied across the five cancer types, reflecting the potential roles of these proteins in specific cancers (Figure 5E). For example, Histidine-rich glycoprotein (HRG), which was abundant in the colorectal cancer plasma-derived exosomes, has been reported to promote the tumor migration of colorectal cancer patients (Bogoevska et al., 2017). Overall, our results demonstrated that this exosome protein-based classification model can reliably differentiate between cancer types and further enhance the diagnostic value of our approach.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90390/elife-90390-fig5-v1.jpg)\n\n**Figure 5.:** (A) PCA plot of plasma or serum-derived exosomes from five cancer types. (B) AUROC score of the random forest classifier by including various number of protein features. (C\u2013D) Classification error matrix of a 60% training set and 40% testing set to classify the five cancer types using a random forest classifier for the five selected proteins. The number of samples is indicated in each box. (E) Protein abundance of five selected protein features in 158 samples across five cancer types. Significance was determined by the Kruskal-Wallis test. ****p < 0.0001.\n\n### A urinary exosome proteome signature consisting of 17 proteins detects cancer exosomes across multiple cancer types\n\nUrine is emerging as a superior non-invasive marker for urologic cancers, as its composition directly reflects the physiological changes in the urogenital system (Dhondt et al., 2020). To test the use of urinary exosome proteins in cancer diagnosis, we collected data from 261 cancer patient samples and 124 control samples from four studies, including bladder cancer, prostate cancer, and renal cancer, lung cancer, cervical cancer, colorectal cancer, esophageal and gastric cancer (Supplementary file 1; Dhondt et al., 2020; Zhang et al., 2018; \u00d8verbye et al., 2015; Suh et al., 2022). Upon examination of proteins common across all four studies, 229 proteins were identified (Figure 6A). PCA revealed the variance between samples but failed to differentiate between cancer and control samples (Figure 6B). As described earlier, we next employed the random forest classifier to differentiate cancer and control samples based on their exosomal proteomic profiles. To reduce the feature space and select the most relevant features, we utilized the mutual information score to rank the 229 protein features and then trained the random forest classifier using varying numbers of the top-ranking proteins (Figure 6C). Based on the AUROC scores of including the different number of features, we selected 17 features that resulted in the highest AUROC score (Figure 6C). A majority of these 17 proteins displayed significant variations in abundance between cancer and control samples (Figure 6D). By training a random forest classifier with the 17 protein features and five-fold cross-validation, the model achieved an AUROC of 0.96, an accuracy of 0.90, a precision of 0.92, and a recall of 0.93 (Figure 6E and F). When tested on an independent set, the model produced an AUROC of 0.91, an accuracy of 0.82, a precision of 0.83, and a recall of 0.92 (Figure 6G and H). To summarize, our findings indicated the promising clinical potential of using urinary exosome proteins for the diagnosis of urologic cancers as well as other non-urologic cancer types.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90390/elife-90390-fig6-v1.jpg)\n\n**Figure 6.:** (A) Overlapping exosome proteins detected in the urine from 261 cancer and 124 control samples from four studies. (B) PCA plot of cancer and control urine-derived exosomes. (C) AUROC score of the random forest classifier by including a various number of protein features. (D) Protein abundance of 17 selected protein features in 261 cancer- and 124 control urine-derived exosomes. (E) Classification error matrix of 75% training set using a random forest classifier for the 17 selected proteins. The number of samples is indicated in each box. (F) AUROC score of the random forest classifier trained using 75% of the dataset. Other metrics are indicated on right. (G) Classification error matrix of 25% testing set using a random forest classifier for the 17 selected proteins. The number of samples is indicated in each box. (H) AUROC score of the random forest classifier tested using 25% of the dataset. Other metrics are indicated on the right. Significance was determined by the Wilcoxon rank-sum test. **p < 0.01, ***p < 0.001, ****p < 0.0001, ns: not significant.\n\n## Discussion\n\nLiquid biopsy has numerous benefits in the early detection of cancer, categorizing cancer types, tracking cancer progression, and monitoring response to treatment (Nikanjam et al., 2022). Exosomes found in biological fluids can provide a forensic view of their cells of origin. Despite previous studies proposing common protein biomarkers to identify exosomes, a comprehensive set of exosome biomarkers derived from different biological materials has not been established, owing to limitations in isolation and quantification methods (Castillo et al., 2018; Gangoda et al., 2017; Hurwitz et al., 2016; Ji et al., 2013). Additionally, a reliable diagnostic tool based on proteins associated with exosomes that can be applied across all cancers is yet to be identified.\n\nHere, we generate a comprehensive proteomics profile of exosomes derived from cell lines, tissues, plasma, serum, and urine from 1083 cancer and control samples. An extensive analysis of these samples showed that several widely used exosome markers, such as CD63, CD81, HSP70, and HSPA8, are absent in exosomes derived from a subset of cell lines. Further, FLOT1, FLOT2, TSG101, and CD63 are present at low levels (<60%) in all exosomes derived from tissues, indicating a need for the identification of additional universal markers for both cell line- and tissue-derived exosomes. Our study identifies five highly abundant universal exosome biomarkers-CLTC, EZR, TLN1, CAP1, and MSN- that were present in over 90% of all cell line- and tissue-derived samples. Additionally, we found that ATXN2L was only present in cancer exosomes and absent in non-cancer exosomes. In this regard, GPC1 which was identified in many studies identified as cancer exosomes specific marker, was not identified here as many of datasets did not pick up this protein in analysis.\n\nHere, we describe a novel computational approach using the random forest classifier method to define exosome protein panels that serve as effective biomarkers specifically for plasma, serum, or urine across cancer types. By training the random forest model and testing with independent datasets, our model yields excellent scores in AUROC, sensitivity, and specificity for differentiating cancer exosomes from non-cancer exosomes. We show that this approach can also be used to classify, with high accuracy, five common cancer types based on their exosome protein signatures.\n\nA majority of the protein makers identified in this study have demonstrable biological relevance in cancer. As an example, ITIH3, which was identified among the protein features for the plasma or serum-based classifier and highly abundant in cancer samples, was reported to be more highly expressed in the plasma of gastric cancer samples compared to the control (Chong et al., 2010) and increased with tumor staging of clear cell renal cell carcinoma patients (Chang et al., 2021). Importantly, the biomarker panels identified for cell lines, tissues, plasma/serum, and urine overcome the bias associated with the isolation and quantification method as well as the inter-patient variability inherent to the complex process of cancer. These panels are designed to be applied to a variety of cancers.\n\nCollectively, our results demonstrate that exosome protein features can be utilized as reliable biomarkers for the early detection of cancer, classification of cancer types, and potentially for diagnosing tumors of undetermined origin. These results have the potential to advance the development and standardization of innovative and optimized methods for the isolation of exosomes and the implementation of routine plasma, serum- and urine-based exosome screening in clinical settings.\n\n## Methods\n\n### Public exosome proteomics data\n\nWe collected publicly available exosome protein data from cell lines, plasma, serum, and urine from previous studies as summarized in Hoshino et al., 2020; Vykoukal et al., 2017; Li et al., 2021; Lin et al., 2022; Hallal et al., 2020; Dhondt et al., 2020; Zhang et al., 2018; \u00d8verbye et al., 2015; Suh et al., 2022; Hurwitz et al., 2016; Rontogianni et al., 2019; Supplementary file 1. We obtained the raw spectral count and intensity data from the original paper or directly from the authors through communication. The obtained data was log normalized accordingly.\n\n### Feature selection and machine learning algorithm\n\nWe employed mutual information scores to evaluate the importance of protein features for each prediction, quantifying the amount of uncertainty reduction for one variable given the knowledge of another variable. We calculated the mutual information score for each protein with a target label (cancer/control) using SelectKBest from the scikit-learn 1.1.1 Python library.\n\nThe mutual information score quantifies the decrease in uncertainty of one variable when the value of the other variable is known. We performed the mutual information score calculation twenty times and computed the average score for each protein as the ultimate score. According to the sample size and characteristics of the data collected for plasma and urine-derived exosomes, we selected a customized number of best features for each prediction. To select the optimum number of proteins to include in the prediction, we ranked the protein features based on the mutual information score and built a random forest classifier to evaluate performance on including a range of number of features.\n\nThe random forest model can decrease the probability of over-fitting and enhance the resilience towards outliers and input data noise. The area under the curve of the receiver operating characteristic curve (AUROC) was employed to evaluate the performance of the classifier. We also calculated accuracy, precision and recall for comprehensive evaluation. All models were evaluated using five-fold cross-validation with stratified train-test splits that preserved the percentage of samples for the prediction target. We also tested the performance of alternate machine learning algorithms including support vector classifier, K nearest neighbor classifier and Gaussian Naive Bayes. Overall, the random forest classifier achieved the best performance in our analysis (Figure 4D). To visualize high-dimensional datasets, kernel PCA from scikit-learn 1.1.1 Python library was employed to perform PCA and plots were generated using the scatterplot function from seaborn 0.11.2 Python library.\n\n### Gene ontology and pathway enrichment analysis\n\nThe WebGestalt 2019m (Liao et al., 2019) online tool was used to perform the gene ontology and pathway enrichment analysis of the selected proteins. The biological process, cellular component and molecular function were all selected for gene ontology analysis and the Kyoto Encyclopedia of Genes and Genomes Pathways database was selected for pathway analysis. with FDR <0.05 were considered significant. IPA analysis was conducted by QIAGEN Ingenuity Pathway Analysis software. The protein list was uploaded to the software and then annotated with the default settings.\n\n### Statistical analysis\n\nAll statistical analyses were conducted using R 4.2.1 software. Significance was determined by the Wilcoxon rank-sum test unless specified otherwise. Significance was concluded if the p-value was <0.05, while in pathway analysis, significance was concluded if the FDR was <0.05 after correction for multiple comparisons.\n",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mohammad M Karimi, King's College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90390.3.sa0](https://doi.org/10.7554/eLife.90390.3.sa0)\n\nThis important study introduces a novel AI method for the analysis of published data, with practical implications for early cancer diagnosis. The results are supported by compelling evidence.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90390.3.sa1](https://doi.org/10.7554/eLife.90390.3.sa1)\n\nSummary:\n\nIn this manuscript, the authors used machine learning algorithm to analyze published exosome datasets to find biomarkers to differentiate exosomes of different origin. By applying the method to \"exosomes\" sample, the author discovered common exosome markers and cancer-type specific markers.\n\nStrengths:\n\nThe performance of the algorithm are generally of good quality.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90390.3.sa2](https://doi.org/10.7554/eLife.90390.3.sa2)\n\nSummary:\n\nThis is a fine work on the development of computational approaches to detect cancer through exosomes. Exosomes are an emerging biomarker resource and have attracted considerable interests in the biomedical field. Kalluri and co-workers collected a large sample pool and used random forest to identify a group of protein markers that are universal to exosomes and to cancer exosomes. The results are very exciting and not only added new knowledge in cancer research but also a new and advanced method to detect cancer. Data was presented very nicely and the manuscript was well written.\n\nStrengths:\n\nIdentified new biomarkers for cancer diagnosis via exosomes.\n\nDeveloped a new method to detect cancer noninvasively.\n\nResults were presented nicely and manuscript were well written.\n",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2d966d6a-857e-40dc-871b-6f24b002cb6b",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C1",
+      "claim": "Non-invasive early cancer diagnosis remains challenging due to the low sensitivity and specificity of current diagnostic approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-invasive early cancer diagnosis remains challenging due to the low sensitivity and specificity of current diagnostic approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the current state of cancer diagnostics, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "6f5c0fb5-de17-4406-b4cb-a4379ce9dc7e",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C2",
+      "claim": "Exosomes are membrane-bound nanovesicles secreted by all cells that contain DNA, RNA, and proteins that are representative of the parent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes are membrane-bound nanovesicles secreted by all cells that contain DNA, RNA, and proteins that are representative of the parent cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about exosomes, widely accepted in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "cc6410a5-3816-435c-a94d-916ec8f2c602",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C3",
+      "claim": "Clathrin Heavy Chain (CLTC), Ezrin, (EZR), Talin-1 (TLN1), Adenylyl cyclase-associated protein 1 (CAP1), and Moesin (MSN) are highly abundant universal biomarkers for exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "we identify Clathrin Heavy Chain (CLTC), Ezrin, (EZR), Talin-1 (TLN1), Adenylyl cyclase-associated protein 1 (CAP1), and Moesin (MSN) as highly abundant universal biomarkers for exosomes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of proteomics data from multiple sources as described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "66b56143-c258-4437-9cad-46cd2c91150e",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C4",
+      "claim": "Three panels of pan-cancer exosome proteins can distinguish cancer exosomes from other exosomes and aid in classifying cancer subtypes employing random forest models.",
+      "claim_type": "EXPLICIT",
+      "source": "define three panels of pan-cancer exosome proteins that distinguish cancer exosomes from other exosomes and aid in classifying cancer subtypes employing random forest models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the machine learning analysis and results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "eb5d209f-ce3e-4172-a2eb-8633d16ae5e7",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C5",
+      "claim": "All the models using proteins from plasma, serum, or urine-derived exosomes yield AUROC scores higher than 0.91.",
+      "claim_type": "EXPLICIT",
+      "source": "All the models using proteins from plasma, serum, or urine-derived exosomes yield AUROC scores higher than 0.91",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the performance metrics reported in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "df9bed5c-cc23-43e4-88e9-e7d0e3889baf",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C6",
+      "claim": "The random forest models demonstrate superior performance compared to Support Vector Machine, K Nearest Neighbor Classifier and Gaussian Naive Bayes.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrate superior performance compared to Support Vector Machine, K Nearest Neighbor Classifier and Gaussian Naive Bayes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "4ee98dd8-6b32-4d6f-a502-fb0dd39ccae4",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C7",
+      "claim": "Tissue biopsies may not be easily accessible for many tumors such as those in the pancreas, lung, and brain.",
+      "claim_type": "EXPLICIT",
+      "source": "however, a biopsy may not be easily accessible for many tumors such as those in the pancreas, lung, and brain (Distler et al., 2014; Morris et al., 2010; Suram et al., 2012; Mullerat et al., 2003; Hammes et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "a9db1c76-9240-487e-a319-93dac3f30104",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C8",
+      "claim": "The small amount of biopsied tissue does not represent the entire heterogeneous pathological profile of the tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the small amount of biopsied tissue does not represent the entire heterogeneous pathological profile of the tumor (Oshi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Oshi et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "02a4ad3a-0d4c-4293-8db1-94a71c9b17e2",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C9",
+      "claim": "Liquid biopsy has emerged as a plausible diagnostic and monitoring approach with the capability to detect tumor biomarkers in more accessible biological fluids such as plasma, serum and urine.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, liquid biopsy has emerged as a plausible diagnostic and monitoring approach with the capability to detect tumor biomarkers in more accessible biological fluids such as plasma, serum and urine (Hu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "c3718347-738d-410f-a579-5d3d56be399e",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C10",
+      "claim": "Detectable tumor biomarkers can include circulating tumor DNA (ctDNA), circulating tumor cells (CTCs), and exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Detectable tumor biomarkers can include circulating tumor DNA (ctDNA), circulating tumor cells (CTCs), and exosomes (Kalluri and LeBleu, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kalluri and LeBleu, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "b8ecf741-b786-4135-8b00-4edd5402e7b2",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C11",
+      "claim": "Exosomes are extracellular vesicles of endosomal origin that are between ~40 and 180 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes are extracellular vesicles of endosomal origin that are between ~40 and 180 nm in diameter and have been shown to mediate intercellular communication in health and disease (Kalluri and LeBleu, 2020; Johnstone et al., 1987; Maas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about exosomes supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "af412743-e481-4739-85c5-9efd868911a2",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C12",
+      "claim": "Exosomes have been shown to mediate intercellular communication in health and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes are extracellular vesicles of endosomal origin that are between ~40 and 180 nm in diameter and have been shown to mediate intercellular communication in health and disease (Kalluri and LeBleu, 2020; Johnstone et al., 1987; Maas et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "46858ab4-b0e3-41b6-b0e4-54578813efc8",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C13",
+      "claim": "Exosomes can contain a variety of biomolecules including DNA, RNA, proteins, lipids, metabolites and other materials representative of the parent cell.",
+      "claim_type": "EXPLICIT",
+      "source": "They can contain a variety of biomolecules including DNA, RNA, proteins, lipids, metabolites and other materials representative of the parent cell (Kalluri and LeBleu, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kalluri and LeBleu, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e9634922-fe93-45a6-97c2-48172f0a5538",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C14",
+      "claim": "Exosomes are present at high concentrations in biological fluids, which is a potential advantage as a biomarker.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomes are present at high concentrations in biological fluids, which is a potential advantage as a biomarker (Colombo et al., 2014; Valencia and Montuenga, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Colombo et al., 2014 and Valencia and Montuenga, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "09ac4f5c-5cea-49bc-9dd9-2a63a7f43c74",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C15",
+      "claim": "Exosomal mRNAs and miRNAs have been investigated intensively as diagnostic biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomal mRNAs and miRNAs have been investigated intensively as diagnostic biomarkers, and mounting evidence suggests that exosomal proteins circulating in biological fluids could be used for cancer diagnosis and monitoring cancer progression (Hu et al., 2022; Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "c18edc76-5acd-4b36-8967-bb7f963a5cee",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C16",
+      "claim": "Mounting evidence suggests that exosomal proteins circulating in biological fluids could be used for cancer diagnosis and monitoring cancer progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Exosomal mRNAs and miRNAs have been investigated intensively as diagnostic biomarkers, and mounting evidence suggests that exosomal proteins circulating in biological fluids could be used for cancer diagnosis and monitoring cancer progression (Hu et al., 2022; Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hu et al., 2022 and Chen et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "603b1689-46f9-4cd0-a965-00ea737aa309",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C17",
+      "claim": "Conventional diagnostic approaches predominantly rely on a single biomarker, which is often not specific or sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional diagnostic approaches predominantly rely on a single biomarker, which is often not specific or sensitive (Ballehaninna and Chamberlain, 2011; Singh et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ballehaninna and Chamberlain, 2011 and Singh et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "2f55ac58-af57-4841-a66b-177e11302ec1",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C18",
+      "claim": "The study analyzed protein abundance data from 228 cancer and 57 control cell-line-derived exosomes, representing various cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify universal exosomal protein biomarkers for differentiating cancer from non-cancer exosomes, we analyzed protein abundance data from 228 cancer and 57 control cell-line-derived exosomes, representing various cancer types (Figure 1A; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "2d722208-63c1-427f-a364-eeaaf1ca045d",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C19",
+      "claim": "1124 overlapping proteins were identified across all cell line studies.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome the bias caused by such technical factors, we examined the proteins common to all studies and identified 1124 overlapping proteins (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e9e82884-d1be-4c72-8abf-edfbb8fcfda5",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C20",
+      "claim": "The exosomes derived from cancer and control cell lines are heterogeneous and show significant variation in protein expression across cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The PCA indicated that the exosomes derived from cancer and control cell lines are heterogeneous and show significant variation in protein expression across cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the PCA analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "50cf5dce-36b0-468c-9d9e-116564bfd48d",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C21",
+      "claim": "Only eight proteins from the 12 traditional exosome markers were detected among the 1124 overlapping proteins from all cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Commonly used exosome biomarkers (e.g. CD9, tetraspanins) were examined first, and from the 12 traditional exosome markers (Th\u00e9ry et al., 2006; Kowal et al., 2016; Jeppesen et al., 2019), only eight proteins were detected among the 1124 overlapping proteins from all cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of traditional markers with citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "8ba440dc-c3c9-4efb-ab71-e2680dc44c8e",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C22",
+      "claim": "Six of eight traditional exosome marker proteins were detected in at least 90% of all samples, with CD9 and HSPA4 detected with the least frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of eight proteins were detected in at least 90% of all samples, with CD9 and HSPA4 detected with the least frequency (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the frequency analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "a4f08b72-0e1d-4fab-b0e6-f1d2bad8f799",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C23",
+      "claim": "The frequency of FLOT1, FLOT2, and TSG101 proteins was higher in cancer cell-line-derived exosomes when compared to control cell-line-derived exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the frequency of FLOT1, FLOT2, and TSG101 proteins was higher in cancer cell-line-derived exosomes when compared to control cell-line-derived exosomes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparative frequency analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e8340ca3-435f-4477-9116-67522ea1c884",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C24",
+      "claim": "78.0% of proteins detected in \u226590% of all samples localize to the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "We annotated these proteins using Ingenuity Pathway Analysis (IPA) and found that 78.0% of these proteins localize to the cytoplasm and 13.5% of proteins are associated with the plasma membrane (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on IPA annotation analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "ecfb0c65-37e1-4540-956a-8c2cece1b805",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C25",
+      "claim": "13.5% of proteins detected in \u226590% of all samples are associated with the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We annotated these proteins using Ingenuity Pathway Analysis (IPA) and found that 78.0% of these proteins localize to the cytoplasm and 13.5% of proteins are associated with the plasma membrane (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on IPA annotation analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "fa813a17-d2c3-4452-bcae-74f133c74c2b",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C26",
+      "claim": "Gene Ontology analysis revealed the enrichment of proteins from pathways related to vesicle-mediated transport, secretory vesicles, exocytosis, endocytosis, and other exosome-related pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) analysis revealed the enrichment of proteins from pathways related to vesicle-mediated transport, secretory vesicles, exocytosis, endocytosis, and other exosome-related pathways (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on GO analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "1b2a3677-a21f-4a8c-ac4c-e8f068d80272",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C27",
+      "claim": "Clathrin Heavy Chain (CLTC) was ranked as the top plasma membrane protein detected in 99.6% of all samples and 100% of control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Clathrin Heavy Chain (CLTC) was ranked as the top plasma membrane protein detected in 99.6% of all samples and 100% of control samples (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the frequency analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "b8350f88-7a0a-43d9-b759-d6e017d5ace2",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C28",
+      "claim": "The scaffolding protein, Syntenin-1(SDCBP) was detected at a high frequency of 97.9% of all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the scaffolding protein, Syntenin-1(SDCBP) was detected at a high frequency of 97.9% of all samples, corroborating previous findings (Kugeratski et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on frequency analysis and corroborated by a citation to Kugeratski et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "14d3dc41-5a2c-4ff7-97ed-3fbb8dea5b0a",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C29",
+      "claim": "Ataxin 2 Like (ATXN2L) was uniquely detected in the cancer-cell-derived exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Ataxin 2 Like (ATXN2L), which has been reported to promote cancer cell invasiveness and resistance to chemotherapy, was uniquely detected in the cancer-cell-derived exosomes (Figure 3A; Lin et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the analysis shown in Figure 3A and supported by a citation to Lin et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "5e2d6aae-6c7e-4878-89ba-6b522037e759",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C30",
+      "claim": "Ataxin 2 Like (ATXN2L) has been reported to promote cancer cell invasiveness and resistance to chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Ataxin 2 Like (ATXN2L), which has been reported to promote cancer cell invasiveness and resistance to chemotherapy, was uniquely detected in the cancer-cell-derived exosomes (Figure 3A; Lin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lin et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "5bc0b912-2095-40ff-b871-2800dca34980",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C31",
+      "claim": "A set of 18 exosome protein markers are present at a high abundance in all exosomes examined.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified a set of 18 exosome protein markers that are present at a high abundance in all exosomes examined (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "13e1cae3-29c9-415e-95d6-b10179896614",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C32",
+      "claim": "CD63 and TSG101 were only detected in 33.1% and 45.9% of all tissue-derived exosome samples, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Two established exosome markers, CD63 and TSG101, were only detected in 33.1% and 45.9% of all samples, respectively (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the frequency analysis of tissue-derived exosomes shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "6402f8fc-b00f-4219-8a19-8a6f8c15fb2c",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C33",
+      "claim": "31 common proteins were found that met a threshold of \u226590% in all samples for exosomes derived from both cell lines and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify high-frequency biomarkers for exosomes derived from both cell lines and tissues, we examined the overlapping proteins that met a threshold of \u226590% in all samples for exosomes derived from cell lines and tissues and found 31 common proteins (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the overlap analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e7d03aa4-8fd8-4b7d-8363-f783f47f4094",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C34",
+      "claim": "Five proteins (CLTC, EZR, TLN1, CAP1, and MSN) were detected in over 90% of all cell line and tissue-derived exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 31 proteins, there were five proteins that were detected in over 90% of all cell line and tissue-derived exosomes (Figure 3D). These include Clathrin Heavy Chain (CLTC), Ezrin, (EZR), Talin-1 (TLN1), Adenylyl cyclase-associated protein 1 (CAP1), and Moesin (MSN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the frequency analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "1591b0b0-1ee4-4cd0-833f-dc92d5ee7159",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C35",
+      "claim": "The study pooled exosome proteomics data derived from plasma or serum for 205 cancer and 51 control samples from five different studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We pooled exosome proteomics data derived from plasma or serum for 205 cancer and 51 control samples from five different studies (Hoshino et al., 2020; Vykoukal et al., 2017; Li et al., 2021; Lin et al., 2022; Hallal et al., 2020), which included breast cancer, colorectal cancer, glioblastoma, lung carcinoma, liver cancer, neuroblastoma, and pancreatic cancer (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used for plasma/serum analysis with citations to the source studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "5c790f0c-2d8d-4fb2-a8e7-eb2ffab396da",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C36",
+      "claim": "46 proteins were detected in all the plasma/serum studies.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for differences in the methodologies of these studies, we first reviewed the proteins and identified 46 proteins that were detected in all the studies (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the overlap analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "b11123b2-3963-479e-a81a-edf69dadd06b",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C37",
+      "claim": "The model performed best using 18 proteins for distinguishing cancer from non-cancer plasma/serum exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model performed best using 18 proteins, where the performance was evaluated by the area under the curve of the receiver operating characteristic curve (AUROC; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model optimization shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "6b5ab605-da04-43ee-adde-c5b1a95c2911",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C38",
+      "claim": "Apolipoprotein C1 (APOC1) is significantly decreased in samples of cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, apolipoprotein C1 (APOC1), which was ranked as the top protein, is significantly decreased in samples of cancer patients (Figure 4\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the analysis shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "a92786a7-15a4-4b0c-9100-8a135cf4da6a",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C39",
+      "claim": "Apolipoprotein C1 (APOC1) has been previously reported to be down-regulated in the non-small lung cancer, colorectal cancer, papillary thyroid carcinoma, and pediatric nephroblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "and has been previously reported to be down-regulated in the non-small lung cancer, colorectal cancer, papillary thyroid carcinoma, and pediatric nephroblastoma (Zhang et al., 2011; Jin et al., 2019; Engwegen et al., 2008; Fan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "f595860a-1f94-471b-b7a4-6fc357be7ee7",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C40",
+      "claim": "The random forest classifier for plasma/serum exosomes yielded an AUROC of 0.96, with an accuracy of 0.92, a precision of 0.94, and a recall of 0.96 on the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, it yielded an AUROC of 0.96, with an accuracy of 0.92, a precision of 0.94, and a recall of 0.96 (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model performance metrics shown in Figures 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "4246bb22-ab32-44d5-ab47-908eabb98ea0",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C41",
+      "claim": "When applied to the independent test set, the plasma/serum model yielded an AUROC of 0.99, an accuracy of 0.95, a precision of 0.96 and a recall of 0.98.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to the independent test set, the model yielded an AUROC of 0.99, an accuracy of 0.95, a precision of 0.96 and a recall of 0.98 (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model performance metrics on the test set shown in Figures 4G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "59260260-e354-4d9e-ad76-89ef74a1a4d1",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C42",
+      "claim": "Only one sample was misclassified in the independent test set, and 51 cancer samples were correctly classified.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, only one sample was misclassified in the independent test set, and 51 cancer samples were correctly classified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the classification results from the test set.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "73fea2b2-ba35-4196-9d3c-602d63013675",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C43",
+      "claim": "A set of five proteins was selected for cancer-type classification based on AUROC scores.",
+      "claim_type": "EXPLICIT",
+      "source": "We ultimately selected a set of five proteins based on AUROC scores (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model optimization shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "4f11917b-fa72-4c3e-bb25-ec3ef0c5d43a",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C44",
+      "claim": "The random forest classifier for cancer type classification achieved a very high accuracy of 0.99 on the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "Employing the five proteins with five-fold cross-validation to train the random forest classifier, the model achieved a very high accuracy of 0.99 (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model performance shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "414a640f-be87-4a92-b253-307aa3bc5e62",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C45",
+      "claim": "When applied to the independent test set, the cancer type classification model consistently yielded a high accuracy of 0.94.",
+      "claim_type": "EXPLICIT",
+      "source": "and when applied to the independent test set, the model consistently yielded a high accuracy of 0.94 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model performance on the test set shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "7b6eff81-48c6-4768-9b64-39626e59160e",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C46",
+      "claim": "Histidine-rich glycoprotein (HRG) was abundant in the colorectal cancer plasma-derived exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Histidine-rich glycoprotein (HRG), which was abundant in the colorectal cancer plasma-derived exosomes, has been reported to promote the tumor migration of colorectal cancer patients (Bogoevska et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the protein abundance analysis shown in Figure 5E and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "95ec40bc-ea15-4fd3-9561-3137f29368a5",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C47",
+      "claim": "Histidine-rich glycoprotein (HRG) has been reported to promote the tumor migration of colorectal cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Histidine-rich glycoprotein (HRG), which was abundant in the colorectal cancer plasma-derived exosomes, has been reported to promote the tumor migration of colorectal cancer patients (Bogoevska et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bogoevska et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e8972640-1556-4a94-92b9-e637e828f7bd",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C48",
+      "claim": "Urine is emerging as a superior non-invasive marker for urologic cancers, as its composition directly reflects the physiological changes in the urogenital system.",
+      "claim_type": "EXPLICIT",
+      "source": "Urine is emerging as a superior non-invasive marker for urologic cancers, as its composition directly reflects the physiological changes in the urogenital system (Dhondt et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dhondt et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "062eed38-4551-4f6d-b554-85c7d5827a63",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C49",
+      "claim": "The study collected data from 261 cancer patient samples and 124 control samples from four urinary exosome studies.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the use of urinary exosome proteins in cancer diagnosis, we collected data from 261 cancer patient samples and 124 control samples from four studies, including bladder cancer, prostate cancer, and renal cancer, lung cancer, cervical cancer, colorectal cancer, esophageal and gastric cancer (Supplementary file 1; Dhondt et al., 2020; Zhang et al., 2018; \u00d8verbye et al., 2015; Suh et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used for urinary exosome analysis with citations to the source studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "5daa7c22-c12a-4426-8264-e4788be15fb4",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C50",
+      "claim": "229 proteins were identified as common across all four urinary exosome studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon examination of proteins common across all four studies, 229 proteins were identified (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the overlap analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "b39bfef5-86f7-4f38-a508-5886f949b1ae",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C51",
+      "claim": "17 protein features resulted in the highest AUROC score for urinary exosome classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the AUROC scores of including the different number of features, we selected 17 features that resulted in the highest AUROC score (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model optimization shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "993efd03-11c9-4241-be88-b27068ab5d0f",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C52",
+      "claim": "The random forest classifier for urinary exosomes achieved an AUROC of 0.96, an accuracy of 0.90, a precision of 0.92, and a recall of 0.93 on the training set.",
+      "claim_type": "EXPLICIT",
+      "source": "By training a random forest classifier with the 17 protein features and five-fold cross-validation, the model achieved an AUROC of 0.96, an accuracy of 0.90, a precision of 0.92, and a recall of 0.93 (Figure 6E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model performance metrics shown in Figures 6E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e6db47c4-4d0d-4a47-a2a4-f61a6f59b02d",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C53",
+      "claim": "When tested on an independent set, the urinary exosome model produced an AUROC of 0.91, an accuracy of 0.82, a precision of 0.83, and a recall of 0.92.",
+      "claim_type": "EXPLICIT",
+      "source": "When tested on an independent set, the model produced an AUROC of 0.91, an accuracy of 0.82, a precision of 0.83, and a recall of 0.92 (Figure 6G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the model performance metrics on the test set shown in Figures 6G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "43c51e32-becd-4ddb-acaa-0fd0f98f4270",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C54",
+      "claim": "Several widely used exosome markers, such as CD63, CD81, HSP70, and HSPA8, are absent in exosomes derived from a subset of cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "An extensive analysis of these samples showed that several widely used exosome markers, such as CD63, CD81, HSP70, and HSPA8, are absent in exosomes derived from a subset of cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comprehensive analysis of exosome markers across cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "ec429fb4-294c-4932-8665-8126e4adcba9",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C55",
+      "claim": "FLOT1, FLOT2, TSG101, and CD63 are present at low levels (<60%) in all exosomes derived from tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, FLOT1, FLOT2, TSG101, and CD63 are present at low levels (<60%) in all exosomes derived from tissues, indicating a need for the identification of additional universal markers for both cell line- and tissue-derived exosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the frequency analysis of tissue-derived exosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "1428622a-d098-4248-a815-e0e76795f0a6",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C56",
+      "claim": "ATXN2L was only present in cancer exosomes and absent in non-cancer exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that ATXN2L was only present in cancer exosomes and absent in non-cancer exosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the differential expression analysis between cancer and non-cancer exosomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "753b6a34-62b6-4a6d-bd06-ba63113bc48e",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C57",
+      "claim": "GPC1 was not identified in this study as many of datasets did not pick up this protein in analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, GPC1 which was identified in many studies identified as cancer exosomes specific marker, was not identified here as many of datasets did not pick up this protein in analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the absence of GPC1 in the analyzed datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "9f717b55-ef3f-47f2-8b88-032c3d3bcf1c",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C58",
+      "claim": "ITIH3 was identified among the protein features for the plasma or serum-based classifier and highly abundant in cancer samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, ITIH3, which was identified among the protein features for the plasma or serum-based classifier and highly abundant in cancer samples, was reported to be more highly expressed in the plasma of gastric cancer samples compared to the control (Chong et al., 2010) and increased with tumor staging of clear cell renal cell carcinoma patients (Chang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the protein abundance analysis and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "40a5f44b-5530-44fe-86dd-41e9945ff4eb",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C59",
+      "claim": "ITIH3 was reported to be more highly expressed in the plasma of gastric cancer samples compared to the control.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, ITIH3, which was identified among the protein features for the plasma or serum-based classifier and highly abundant in cancer samples, was reported to be more highly expressed in the plasma of gastric cancer samples compared to the control (Chong et al., 2010) and increased with tumor staging of clear cell renal cell carcinoma patients (Chang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chong et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "829edf61-69a0-4761-8749-c550c730bea7",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C60",
+      "claim": "ITIH3 increased with tumor staging of clear cell renal cell carcinoma patients.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, ITIH3, which was identified among the protein features for the plasma or serum-based classifier and highly abundant in cancer samples, was reported to be more highly expressed in the plasma of gastric cancer samples compared to the control (Chong et al., 2010) and increased with tumor staging of clear cell renal cell carcinoma patients (Chang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "6603c27a-53c4-48b1-b52c-53df6c27e76c",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C61",
+      "claim": "The study generated a comprehensive proteomics profile of exosomes derived from cell lines, tissues, plasma, serum, and urine from 1083 cancer and control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we generate a comprehensive proteomics profile of exosomes derived from cell lines, tissues, plasma, serum, and urine from 1083 cancer and control samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the overall scope of the dataset analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "7de24b0b-5db5-4c3c-a294-551de01b828f",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C62",
+      "claim": "Exosome protein features can be utilized as reliable biomarkers for the early detection of cancer, classification of cancer types, and potentially for diagnosing tumors of undetermined origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results demonstrate that exosome protein features can be utilized as reliable biomarkers for the early detection of cancer, classification of cancer types, and potentially for diagnosing tumors of undetermined origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results presented in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "18da7a0c-128f-460f-9632-bab5f70d5ba5",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C63",
+      "claim": "The results have the potential to advance the development and standardization of innovative and optimized methods for the isolation of exosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results have the potential to advance the development and standardization of innovative and optimized methods for the isolation of exosomes and the implementation of routine plasma, serum- and urine-based exosome screening in clinical settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential impact of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "781a2b21-bcd1-4808-8b74-a04adaae5d6e",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C64",
+      "claim": "The results have the potential to advance the implementation of routine plasma, serum- and urine-based exosome screening in clinical settings.",
+      "claim_type": "EXPLICIT",
+      "source": "These results have the potential to advance the development and standardization of innovative and optimized methods for the isolation of exosomes and the implementation of routine plasma, serum- and urine-based exosome screening in clinical settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential clinical application of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "143d85a0-914b-423c-9f1d-d20c3e71638c",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C65",
+      "claim": "Mutual information scores were employed to evaluate the importance of protein features for each prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed mutual information scores to evaluate the importance of protein features for each prediction, quantifying the amount of uncertainty reduction for one variable given the knowledge of another variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "95e1ffcd-692f-46c9-b64e-c1c52973e933",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C66",
+      "claim": "The random forest model can decrease the probability of over-fitting and enhance the resilience towards outliers and input data noise.",
+      "claim_type": "EXPLICIT",
+      "source": "The random forest model can decrease the probability of over-fitting and enhance the resilience towards outliers and input data noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the properties of random forest models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "9bef3fa2-9007-45a9-bacd-d23d38c3b871",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C67",
+      "claim": "The area under the curve of the receiver operating characteristic curve (AUROC) was employed to evaluate the performance of the classifier.",
+      "claim_type": "EXPLICIT",
+      "source": "The area under the curve of the receiver operating characteristic curve (AUROC) was employed to evaluate the performance of the classifier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the evaluation metric used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "887f2eb0-2823-4b0d-b3bb-197dfe62bcbb",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C68",
+      "claim": "The random forest classifier achieved the best performance compared to alternate machine learning algorithms including support vector classifier, K nearest neighbor classifier and Gaussian Naive Bayes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the performance of alternate machine learning algorithms including support vector classifier, K nearest neighbor classifier and Gaussian Naive Bayes. Overall, the random forest classifier achieved the best performance in our analysis (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the comparative analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "43413ca4-6e87-4781-ba8a-5e04376d53b8",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C69",
+      "claim": "Significance was determined by the Wilcoxon rank-sum test unless specified otherwise.",
+      "claim_type": "EXPLICIT",
+      "source": "Significance was determined by the Wilcoxon rank-sum test unless specified otherwise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "858c868c-a623-48ba-b7d7-12c1a315dc0d",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C70",
+      "claim": "Significance was concluded if the p-value was <0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Significance was concluded if the p-value was <0.05, while in pathway analysis, significance was concluded if the FDR was <0.05 after correction for multiple comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical threshold used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "d64bfb39-3e42-4d5a-a2a4-2844d4de406f",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C71",
+      "claim": "In pathway analysis, significance was concluded if the FDR was <0.05 after correction for multiple comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "Significance was concluded if the p-value was <0.05, while in pathway analysis, significance was concluded if the FDR was <0.05 after correction for multiple comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical threshold used for pathway analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "41b4fe80-6ec8-4c5f-bc80-e56178b48d03",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C72",
+      "claim": "A majority of the 17 urinary exosome proteins displayed significant variations in abundance between cancer and control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of these 17 proteins displayed significant variations in abundance between cancer and control samples (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the statistical analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e69d5967-5220-403d-984d-4407ee20a8ed",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C73",
+      "claim": "The abundance of the five protein features for cancer type classification varied across the five cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of the five protein features varied across the five cancer types, reflecting the potential roles of these proteins in specific cancers (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the protein abundance analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "708adc11-8ae1-413e-b32f-8674a1a2cb2b",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C74",
+      "claim": "The variation in abundance of the five protein features across cancer types reflects the potential roles of these proteins in specific cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of the five protein features varied across the five cancer types, reflecting the potential roles of these proteins in specific cancers (Figure 5E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed variation in protein abundance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "fee14323-0cb2-460d-879d-b448fc7fcdfc",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C75",
+      "claim": "PCA revealed differences in exosome levels among cancer patients but failed to distinguish the five cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial PCA revealed differences in exosome levels among cancer patients but failed to distinguish the five cancer types (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the PCA analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "dfdc5076-0e7e-4e4e-a66d-19dbfbc6f982",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C76",
+      "claim": "PCA revealed the variance between urinary exosome samples but failed to differentiate between cancer and control samples.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA revealed the variance between samples but failed to differentiate between cancer and control samples (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the PCA analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "df24c4fa-dcd1-44c1-a21b-14363bf86838",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C77",
+      "claim": "It was difficult to classify cancer and non-cancer plasma/serum exosomes robustly based on PCA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could detect differences between the exosomes derived from cancer and non-cancer samples, it was difficult to classify them robustly based on PCA (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the PCA analysis shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "a8787c43-09ac-49c3-b76f-3769bd163103",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C78",
+      "claim": "The biomarker panels identified for cell lines, tissues, plasma/serum, and urine overcome the bias associated with the isolation and quantification method.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the biomarker panels identified for cell lines, tissues, plasma/serum, and urine overcome the bias associated with the isolation and quantification method as well as the inter-patient variability inherent to the complex process of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the methodology and results of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "579aab2c-db36-4200-967d-1336fe509376",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C79",
+      "claim": "The biomarker panels overcome the inter-patient variability inherent to the complex process of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the biomarker panels identified for cell lines, tissues, plasma/serum, and urine overcome the bias associated with the isolation and quantification method as well as the inter-patient variability inherent to the complex process of cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the methodology and results of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "a58134cd-ef55-4a6b-81c6-3d29216a5ab9",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C80",
+      "claim": "The biomarker panels are designed to be applied to a variety of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "These panels are designed to be applied to a variety of cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the intended application of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "ec1cf86e-735a-433b-a5bb-2ab92ecb7219",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C81",
+      "claim": "A majority of the protein markers identified in this study have demonstrable biological relevance in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of the protein makers identified in this study have demonstrable biological relevance in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by specific examples provided in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "6bf3532e-8fcf-4873-821d-9eb51144c7f3",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C82",
+      "claim": "Challenges remain including standardization of methods for consistent exosome isolation from various tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Challenges that remain include standardization of methods for consistent exosome isolation from various tissues, identification of biomarkers that distinguish cancer and normal exosomes across different cancer types, and the identification of biomarkers that are unique to specific biological fluids (e.g. plasma, serum, urine, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current challenges in the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "f8e4a630-bea4-42c3-9101-d931debdad3e",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C83",
+      "claim": "Challenges remain including identification of biomarkers that distinguish cancer and normal exosomes across different cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Challenges that remain include standardization of methods for consistent exosome isolation from various tissues, identification of biomarkers that distinguish cancer and normal exosomes across different cancer types, and the identification of biomarkers that are unique to specific biological fluids (e.g. plasma, serum, urine, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current challenges in the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "ba2002b6-000c-4e1f-90ed-fb27620fc58a",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C84",
+      "claim": "Challenges remain including the identification of biomarkers that are unique to specific biological fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "Challenges that remain include standardization of methods for consistent exosome isolation from various tissues, identification of biomarkers that distinguish cancer and normal exosomes across different cancer types, and the identification of biomarkers that are unique to specific biological fluids (e.g. plasma, serum, urine, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current challenges in the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "b493762e-ed76-4c22-8620-6343e47928e5",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C85",
+      "claim": "It is challenging to successfully utilize exosomal protein biomarkers to diagnose cancers due to intratumor and interpatient heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to accurately identifying exosomal protein biomarkers, it is also challenging to successfully utilize them to diagnose cancers due to intratumor and interpatient heterogeneity (Muluneh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Muluneh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "beb0b7bd-d22b-46e1-948a-60aca6faf59f",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C86",
+      "claim": "Recent advances in machine learning algorithms connected to artificial intelligence provide an opportunity to construct a classifier that identifies a panel of exosomal protein biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent advances in machine learning algorithms connected to artificial intelligence provide an opportunity to construct a classifier that identifies a panel of exosomal protein biomarkers that would possess a more comprehensive ability to reflect the complex disease status of different patients and distinguish cancer samples from normal samples with significantly improved sensitivity and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential of machine learning based on current technological advances.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "cd0b942c-5dc3-49ac-84ae-9535de00f504",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C87",
+      "claim": "A panel of exosomal protein biomarkers would possess a more comprehensive ability to reflect the complex disease status of different patients.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent advances in machine learning algorithms connected to artificial intelligence provide an opportunity to construct a classifier that identifies a panel of exosomal protein biomarkers that would possess a more comprehensive ability to reflect the complex disease status of different patients and distinguish cancer samples from normal samples with significantly improved sensitivity and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential advantages of using a panel of biomarkers.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "c998f662-6d6e-478c-b931-ea076b8dca07",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C88",
+      "claim": "A panel of exosomal protein biomarkers can distinguish cancer samples from normal samples with significantly improved sensitivity and specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent advances in machine learning algorithms connected to artificial intelligence provide an opportunity to construct a classifier that identifies a panel of exosomal protein biomarkers that would possess a more comprehensive ability to reflect the complex disease status of different patients and distinguish cancer samples from normal samples with significantly improved sensitivity and specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results of the study showing improved performance metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "6872e99f-6a39-40bb-897f-1200c258701b",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C89",
+      "claim": "Studies employ distinct isolation and mass spectrometry quantification techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Because studies employ distinct isolation and mass spectrometry quantification techniques, the number of identified proteins is different among the studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about methodological variation in the field based on knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "be46707c-ec64-47f3-90b5-495ad8ab50c4",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C90",
+      "claim": "The number of identified proteins is different among the studies due to distinct isolation and mass spectrometry quantification techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Because studies employ distinct isolation and mass spectrometry quantification techniques, the number of identified proteins is different among the studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the cause of variation in protein identification across studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "68a59180-3c4b-457c-9c71-1e399dd70287",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C91",
+      "claim": "The study provides a reliable protein biomarker signature associated with cancer exosomes with scalable machine learning capability for a sensitive and specific non-invasive method of cancer diagnosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This study provides a reliable protein biomarker signature associated with cancer exosomes with scalable machine learning capability for a sensitive and specific non-invasive method of cancer diagnosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's contribution based on the results presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "5bd3afa4-57fb-4a0f-8dda-996c4f462233",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "claim_id": "C92",
+      "claim": "A rapid and flexible exosome-based diagnostic method to distinguish human cancers across cancer types in diverse biological fluids is yet to be defined.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a rapid and flexible exosome-based diagnostic method to distinguish human cancers across cancer types in diverse biological fluids is yet to be defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field based on knowledge of existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b84e4245-55af-418b-afb6-77a2213f56fd",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study identifies five universal exosome protein biomarkers (CLTC, EZR, TLN1, CAP1, MSN) that are highly abundant (>90% detection frequency) across both cell line- and tissue-derived exosomes, along with 18 markers for cell line-derived exosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27, C28, C31, and C34 collectively demonstrate through frequency analysis across 285 cell line samples and 157 tissue samples that these five proteins meet the >90% detection threshold in both sample types. The data is supported by Figures 2F and 3D showing detection frequencies, providing strong evidence for these universal markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "854c73e7-fd92-4d8a-bdfd-35eb0778a85d",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ATXN2L is uniquely detected in cancer-derived exosomes and absent in non-cancer exosomes, and has been previously reported to promote cancer cell invasiveness and chemotherapy resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C56 are supported by differential expression analysis shown in Figure 3A, demonstrating ATXN2L presence in cancer exosomes only. Claim C30 is supported by citation to Lin et al., 2019, providing independent validation of the biological relevance of this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "b4646d40-30f3-47ad-8a09-508742661806",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A random forest classifier using 18 plasma/serum exosome proteins distinguishes cancer from non-cancer samples with AUROC 0.96 (training) and 0.99 (test), outperforming other machine learning algorithms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 provide comprehensive performance metrics with appropriate train/test split validation (75%/25%). The model achieved high AUROC, accuracy (0.92-0.95), precision (0.94-0.96), and recall (0.96-0.98) values. Claim C68 demonstrates superiority over SVM, K-NN, and Gaussian Naive Bayes through comparative analysis (Figure 4D). Only one misclassification in the independent test set supports robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "59418715-9988-4873-a943-41a99a68ac06",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A random forest classifier using five plasma/serum exosome proteins can classify five cancer types with accuracy 0.99 (training) and 0.94 (test), despite PCA failing to distinguish cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 demonstrate strong classification performance with appropriate validation (60%/40% split to minimize overfitting). Claim C75 establishes the need for machine learning by showing PCA limitations. Claim C73 provides biological context for the protein features. The high accuracy on independent test data supports the model's generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A random forest classifier using 17 urinary exosome proteins distinguishes cancer from control samples with AUROC 0.96 (training) and 0.91 (test) across multiple cancer types including urologic and non-urologic cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 provide comprehensive methodology and performance metrics for 385 samples from four studies. The model achieved good performance (AUROC 0.91-0.96) with appropriate train/test validation. Claim C72 demonstrates that the majority of selected proteins show significant differential abundance, supporting their biological relevance. The slightly lower test performance (0.91 vs 0.96) suggests some overfitting but remains clinically promising.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Traditional exosome markers (CD63, CD81, HSP70, HSPA8, FLOT1, FLOT2, TSG101) show inconsistent detection across cell line- and tissue-derived exosomes, with many absent in subsets of samples or present at low frequencies (<60% in tissues).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C54-C55 demonstrate through frequency analysis that traditional markers are unreliable, with only 8 of 12 traditional markers detected in cell lines and several at <60% frequency in tissues. This is supported by Figures 2C and 3B. Claims C18-C20 establish the dataset (285 samples, 1124 proteins) and heterogeneity through PCA, providing context for why universal markers are needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "f2b38b21-9e5d-414f-bde8-034d26fd7289",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Proteins detected in \u226590% of cell line-derived exosome samples are predominantly cytoplasmic (78.0%) and plasma membrane-associated (13.5%), enriched in exosome-related pathways including vesicle-mediated transport, exocytosis, and endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by IPA annotation and GO analysis shown in Figures 2D and 2E. The subcellular localization and pathway enrichment data are consistent with expected exosome biology, providing validation of the proteomic approach and biological relevance of identified proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "acbd2d19-8145-4bf9-8c15-1578311bbf10",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Several protein markers identified in the classifiers have demonstrable biological relevance in cancer, including APOC1 (decreased in cancer), ITIH3 (increased with tumor staging), and HRG (promotes colorectal cancer migration).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39, C58-C60, and C46-C47 provide specific examples of proteins with known cancer associations, each supported by citations to previous studies and differential abundance data from this study. Claim C81 generalizes that the majority of markers have biological relevance. This provides important validation that the machine learning approach identifies biologically meaningful features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "170c6094-ba5c-480e-b063-9127385c2b78",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study employed mutual information scores for feature selection, random forest models for classification, AUROC for performance evaluation, and Wilcoxon rank-sum tests for statistical significance (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C71 describe the computational and statistical methodology. These are standard, appropriate methods for this type of analysis. The use of mutual information for feature selection, random forest for classification, and proper statistical testing with multiple comparison correction (FDR<0.05 for pathways) demonstrates methodological rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "603fe9d2-0498-4937-a5c4-2dd2e4cd98f4",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study generated a comprehensive proteomics profile from 1083 cancer and control samples across multiple biological sources, demonstrating that exosome protein features can serve as reliable biomarkers for cancer detection, classification, and potentially diagnosis of tumors of undetermined origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 establishes the comprehensive scope of the dataset. Claims C62 and C91 are supported by the collective results showing high performance across plasma/serum (AUROC 0.99), urine (AUROC 0.91), and cancer type classification (accuracy 0.94). The conclusion is well-supported by the data, though clinical validation would strengthen the claim about diagnostic utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "6ddaa327-2012-49fb-999b-4caa99232313",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Principal component analysis (PCA) failed to robustly distinguish cancer from non-cancer samples in plasma/serum and urine, and failed to distinguish cancer types, necessitating machine learning approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77, C75, and C76 are supported by PCA plots in Figures 4\u2014figure supplement 1A, 5A, and 6B showing overlapping distributions. This establishes the rationale for using more sophisticated machine learning methods and demonstrates that simple dimensionality reduction is insufficient for this classification task.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "99c22bcc-ba80-4229-86c8-2d8635ba11c1",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The biomarker panels overcome bias associated with isolation and quantification methods as well as inter-patient variability, and are designed to be applied across multiple cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C80 are inferences about the properties of the biomarker panels. While the approach of identifying proteins common across multiple studies with different methodologies (C89-C90) supports this claim, direct experimental validation of robustness to different isolation methods and prospective validation across diverse patient populations would be needed to fully support these assertions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "f077f03b-69ca-4c62-9413-e3f947216012",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The results have potential to advance development of standardized exosome isolation methods and implementation of routine clinical screening, with panels possessing comprehensive ability to reflect complex disease status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63, C64, and C87 are speculative statements about future impact and potential applications. While the strong performance metrics support the potential, these claims require prospective clinical validation, standardization studies, and demonstration of clinical utility before they can be considered supported. The language appropriately uses 'potential' and 'would possess,' indicating these are forward-looking statements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "c9eb98f1-b2e0-4647-90b9-13685a2e0c19",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "GPC1, previously identified as a cancer exosome-specific marker in other studies, was not detected in this analysis because many datasets did not identify this protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 acknowledges a limitation of the study\u2014the absence of a previously reported cancer-specific marker. This is an honest assessment of the data and highlights that the requirement for proteins to be detected across all studies may exclude some valid markers due to technical limitations of individual studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Current cancer diagnostics face challenges including low sensitivity/specificity, tissue biopsy limitations, and single biomarker approaches, while liquid biopsy offers promise but lacks standardized exosome-based methods across cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C10, C17, C82-C85, and C92 establish the clinical context and rationale for the study. These are well-supported by citations to previous literature and represent accurate characterization of the current state of the field. These background claims appropriately motivate the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "0d22623e-024d-4352-b8b0-eacc90c6c0de",
+      "content_id": "9adcbc1b-223c-4c76-9685-65f4e0d5c539",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Exosomes are 40-180 nm endosomal-origin vesicles containing biomolecules representative of parent cells, present at high concentrations in biological fluids, with proteins showing promise as cancer biomarkers, and machine learning offers opportunities for multi-biomarker classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C11-C16, C48, C66, C86, and C89 provide established background knowledge about exosomes and machine learning, all supported by appropriate citations. These claims accurately represent current scientific understanding and provide necessary context for the study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "d497b69c-193c-4e0e-a373-542c0cecd86d",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors identified five universal exosome protein biomarkers (CLTC, EZR, TLN1, CAP1, and MSN) that are highly abundant and detected in over 90% of all cell line and tissue-derived exosomes, representing a set of 18 total exosome protein markers present at high abundance across all exosomes examined.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirmed this finding, with one reviewer stating the study 'identified new biomarkers for cancer diagnosis via exosomes' and the editor noting 'results are supported by compelling evidence.' No concerns were raised about the identification of these universal markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "14eae2fe-5151-4e77-a31a-cc773d1187ff",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors developed three panels of pan-cancer exosome proteins using random forest models that distinguish cancer from non-cancer exosomes in plasma/serum (18 proteins, AUROC 0.96-0.99), classify cancer subtypes (5 proteins, accuracy 0.94-0.99), and detect cancer in urine (17 proteins, AUROC 0.91-0.96), with all models achieving AUROC scores >0.91 and outperforming other machine learning algorithms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers praised the machine learning approach, with one stating 'the performance of the algorithm are generally of good quality' and another noting the work 'developed a new method to detect cancer noninvasively.' The editor described the study as introducing 'a novel AI method' with 'compelling evidence,' indicating acceptance of the model performance claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The study analyzed a comprehensive proteomics dataset from 1083 cancer and control samples across multiple sources (228 cancer and 57 control cell-line-derived exosomes, 205 cancer and 51 control plasma/serum samples, 261 cancer and 124 control urinary samples), identifying overlapping proteins across studies (1124 for cell lines, 46 for plasma/serum, 229 for urine) that show heterogeneity and variation in protein expression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged the dataset quality, with one noting 'Kalluri and co-workers collected a large sample pool' and another stating 'data was presented very nicely.' The comprehensive nature of the dataset was implicitly accepted as no concerns were raised about sample size or data quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "68df9c7c-8b2f-4aaf-ae0a-b2063c32a48e",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors found that traditional exosome markers (CD9, CD63, CD81, HSP70, HSPA8, TSG101, FLOT1, FLOT2) show variable detection frequencies, with only 8 of 12 traditional markers detected among overlapping proteins, some absent in subsets of cell lines, and several present at low levels (<60%) in tissue-derived exosomes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these findings about traditional marker limitations. The identification of new markers was explicitly praised ('identified new biomarkers'), suggesting implicit acceptance that traditional markers were insufficient, supporting the need for the newly identified universal markers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "4d978432-6e6d-4fae-9a21-c29f617ba659",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "ATXN2L was uniquely detected in cancer-cell-derived exosomes and absent in non-cancer exosomes, representing a cancer-specific marker.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding was not questioned by reviewers. Given the overall positive assessment that the study 'identified new biomarkers for cancer diagnosis' and 'results are supported by compelling evidence,' this cancer-specific marker finding appears accepted as part of the broader biomarker discovery.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "5b70d1e9-d768-4455-8b57-7970346f76e0",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Proteins detected in \u226590% of samples show specific subcellular localization patterns (78.0% cytoplasm, 13.5% plasma membrane) and are enriched in pathways related to vesicle-mediated transport, secretory vesicles, exocytosis, and endocytosis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not raise concerns about these characterization findings. The statement that 'data was presented very nicely' and 'results are supported by compelling evidence' suggests acceptance of these supporting analyses that characterize the identified proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "9e72a7c1-7be8-463c-8b49-f993bd3da0f8",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Specific proteins in the panels show significant differential abundance between cancer and control samples (e.g., APOC1 decreased in cancer, ITIH3 highly abundant in cancer) and vary across cancer types, reflecting potential cancer-specific roles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These biological validation findings were not challenged by reviewers. The overall positive assessment of the biomarker identification and the statement that results are 'supported by compelling evidence' indicates acceptance of these differential expression patterns that support the biomarkers' utility.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "201b7641-3e70-4023-8995-233feb4424e0",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Principal component analysis (PCA) revealed heterogeneity and variance in exosome samples but failed to robustly distinguish cancer from non-cancer samples or differentiate cancer types, necessitating machine learning approaches.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not question these PCA findings. The praise for the machine learning approach ('novel AI method,' 'performance of the algorithm are generally of good quality') implicitly accepts that simpler methods like PCA were insufficient, justifying the advanced computational approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "13952975-f1e9-4785-bb15-55cec00aa89c",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors conclude that exosome protein features can be utilized as reliable biomarkers for early cancer detection and classification across cancer types, with the biomarker panels overcoming methodological bias and inter-patient variability to provide a sensitive and specific non-invasive diagnostic method.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorsed these conclusions, stating the study has 'practical implications for early cancer diagnosis,' 'developed a new method to detect cancer noninvasively,' and 'added new knowledge in cancer research.' The editor's assessment that this is 'an important study' with 'compelling evidence' directly supports these broad conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "c23684b0-1532-4ef5-97e5-c62f60bef48e",
+      "content_id": "75573a18-17c5-43cf-b589-9d797f945e9f",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors suggest their results have potential to advance standardization of exosome isolation methods and implementation of routine plasma, serum, and urine-based exosome screening in clinical settings.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirmed the translational potential, with statements about 'practical implications for early cancer diagnosis' and development of 'a new method to detect cancer noninvasively.' The editor's characterization of this as 'an important study' suggests acceptance of its potential clinical impact.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cc6410a5-3816-435c-a94d-916ec8f2c602",
+      "result_id": "b84e4245-55af-418b-afb6-77a2213f56fd"
+    },
+    {
+      "claim_id": "1b2a3677-a21f-4a8c-ac4c-e8f068d80272",
+      "result_id": "b84e4245-55af-418b-afb6-77a2213f56fd"
+    },
+    {
+      "claim_id": "b8350f88-7a0a-43d9-b759-d6e017d5ace2",
+      "result_id": "b84e4245-55af-418b-afb6-77a2213f56fd"
+    },
+    {
+      "claim_id": "5bc0b912-2095-40ff-b871-2800dca34980",
+      "result_id": "b84e4245-55af-418b-afb6-77a2213f56fd"
+    },
+    {
+      "claim_id": "e7d03aa4-8fd8-4b7d-8363-f783f47f4094",
+      "result_id": "b84e4245-55af-418b-afb6-77a2213f56fd"
+    },
+    {
+      "claim_id": "14d3dc41-5a2c-4ff7-97ed-3fbb8dea5b0a",
+      "result_id": "854c73e7-fd92-4d8a-bdfd-35eb0778a85d"
+    },
+    {
+      "claim_id": "5e2d6aae-6c7e-4878-89ba-6b522037e759",
+      "result_id": "854c73e7-fd92-4d8a-bdfd-35eb0778a85d"
+    },
+    {
+      "claim_id": "1428622a-d098-4248-a815-e0e76795f0a6",
+      "result_id": "854c73e7-fd92-4d8a-bdfd-35eb0778a85d"
+    },
+    {
+      "claim_id": "66b56143-c258-4437-9cad-46cd2c91150e",
+      "result_id": "b4646d40-30f3-47ad-8a09-508742661806"
+    },
+    {
+      "claim_id": "b11123b2-3963-479e-a81a-edf69dadd06b",
+      "result_id": "b4646d40-30f3-47ad-8a09-508742661806"
+    },
+    {
+      "claim_id": "f595860a-1f94-471b-b7a4-6fc357be7ee7",
+      "result_id": "b4646d40-30f3-47ad-8a09-508742661806"
+    },
+    {
+      "claim_id": "4246bb22-ab32-44d5-ab47-908eabb98ea0",
+      "result_id": "b4646d40-30f3-47ad-8a09-508742661806"
+    },
+    {
+      "claim_id": "59260260-e354-4d9e-ad76-89ef74a1a4d1",
+      "result_id": "b4646d40-30f3-47ad-8a09-508742661806"
+    },
+    {
+      "claim_id": "eb5d209f-ce3e-4172-a2eb-8633d16ae5e7",
+      "result_id": "b4646d40-30f3-47ad-8a09-508742661806"
+    },
+    {
+      "claim_id": "df9bed5c-cc23-43e4-88e9-e7d0e3889baf",
+      "result_id": "b4646d40-30f3-47ad-8a09-508742661806"
+    },
+    {
+      "claim_id": "887f2eb0-2823-4b0d-b3bb-197dfe62bcbb",
+      "result_id": "b4646d40-30f3-47ad-8a09-508742661806"
+    },
+    {
+      "claim_id": "73fea2b2-ba35-4196-9d3c-602d63013675",
+      "result_id": "59418715-9988-4873-a943-41a99a68ac06"
+    },
+    {
+      "claim_id": "4f11917b-fa72-4c3e-bb25-ec3ef0c5d43a",
+      "result_id": "59418715-9988-4873-a943-41a99a68ac06"
+    },
+    {
+      "claim_id": "414a640f-be87-4a92-b253-307aa3bc5e62",
+      "result_id": "59418715-9988-4873-a943-41a99a68ac06"
+    },
+    {
+      "claim_id": "e69d5967-5220-403d-984d-4407ee20a8ed",
+      "result_id": "59418715-9988-4873-a943-41a99a68ac06"
+    },
+    {
+      "claim_id": "fee14323-0cb2-460d-879d-b448fc7fcdfc",
+      "result_id": "59418715-9988-4873-a943-41a99a68ac06"
+    },
+    {
+      "claim_id": "062eed38-4551-4f6d-b554-85c7d5827a63",
+      "result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9"
+    },
+    {
+      "claim_id": "5daa7c22-c12a-4426-8264-e4788be15fb4",
+      "result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9"
+    },
+    {
+      "claim_id": "b39bfef5-86f7-4f38-a508-5886f949b1ae",
+      "result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9"
+    },
+    {
+      "claim_id": "993efd03-11c9-4241-be88-b27068ab5d0f",
+      "result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9"
+    },
+    {
+      "claim_id": "e6db47c4-4d0d-4a47-a2a4-f61a6f59b02d",
+      "result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9"
+    },
+    {
+      "claim_id": "41b4fe80-6ec8-4c5f-bc80-e56178b48d03",
+      "result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9"
+    },
+    {
+      "claim_id": "2f55ac58-af57-4841-a66b-177e11302ec1",
+      "result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2"
+    },
+    {
+      "claim_id": "2d722208-63c1-427f-a364-eeaaf1ca045d",
+      "result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2"
+    },
+    {
+      "claim_id": "e9e82884-d1be-4c72-8abf-edfbb8fcfda5",
+      "result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2"
+    },
+    {
+      "claim_id": "50cf5dce-36b0-468c-9d9e-116564bfd48d",
+      "result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2"
+    },
+    {
+      "claim_id": "8ba440dc-c3c9-4efb-ab71-e2680dc44c8e",
+      "result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2"
+    },
+    {
+      "claim_id": "a4f08b72-0e1d-4fab-b0e6-f1d2bad8f799",
+      "result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2"
+    },
+    {
+      "claim_id": "43c51e32-becd-4ddb-acaa-0fd0f98f4270",
+      "result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2"
+    },
+    {
+      "claim_id": "ec429fb4-294c-4932-8665-8126e4adcba9",
+      "result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2"
+    },
+    {
+      "claim_id": "e8340ca3-435f-4477-9116-67522ea1c884",
+      "result_id": "f2b38b21-9e5d-414f-bde8-034d26fd7289"
+    },
+    {
+      "claim_id": "ecfb0c65-37e1-4540-956a-8c2cece1b805",
+      "result_id": "f2b38b21-9e5d-414f-bde8-034d26fd7289"
+    },
+    {
+      "claim_id": "fa813a17-d2c3-4452-bcae-74f133c74c2b",
+      "result_id": "f2b38b21-9e5d-414f-bde8-034d26fd7289"
+    },
+    {
+      "claim_id": "6b5ab605-da04-43ee-adde-c5b1a95c2911",
+      "result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10"
+    },
+    {
+      "claim_id": "a92786a7-15a4-4b0c-9100-8a135cf4da6a",
+      "result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10"
+    },
+    {
+      "claim_id": "9f717b55-ef3f-47f2-8b88-032c3d3bcf1c",
+      "result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10"
+    },
+    {
+      "claim_id": "40a5f44b-5530-44fe-86dd-41e9945ff4eb",
+      "result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10"
+    },
+    {
+      "claim_id": "829edf61-69a0-4761-8749-c550c730bea7",
+      "result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10"
+    },
+    {
+      "claim_id": "7b6eff81-48c6-4768-9b64-39626e59160e",
+      "result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10"
+    },
+    {
+      "claim_id": "95ec40bc-ea15-4fd3-9561-3137f29368a5",
+      "result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10"
+    },
+    {
+      "claim_id": "ec1cf86e-735a-433b-a5bb-2ab92ecb7219",
+      "result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10"
+    },
+    {
+      "claim_id": "143d85a0-914b-423c-9f1d-d20c3e71638c",
+      "result_id": "170c6094-ba5c-480e-b063-9127385c2b78"
+    },
+    {
+      "claim_id": "95e1ffcd-692f-46c9-b64e-c1c52973e933",
+      "result_id": "170c6094-ba5c-480e-b063-9127385c2b78"
+    },
+    {
+      "claim_id": "9bef3fa2-9007-45a9-bacd-d23d38c3b871",
+      "result_id": "170c6094-ba5c-480e-b063-9127385c2b78"
+    },
+    {
+      "claim_id": "43413ca4-6e87-4781-ba8a-5e04376d53b8",
+      "result_id": "170c6094-ba5c-480e-b063-9127385c2b78"
+    },
+    {
+      "claim_id": "858c868c-a623-48ba-b7d7-12c1a315dc0d",
+      "result_id": "170c6094-ba5c-480e-b063-9127385c2b78"
+    },
+    {
+      "claim_id": "d64bfb39-3e42-4d5a-a2a4-2844d4de406f",
+      "result_id": "170c6094-ba5c-480e-b063-9127385c2b78"
+    },
+    {
+      "claim_id": "6603c27a-53c4-48b1-b52c-53df6c27e76c",
+      "result_id": "603fe9d2-0498-4937-a5c4-2dd2e4cd98f4"
+    },
+    {
+      "claim_id": "7de24b0b-5db5-4c3c-a294-551de01b828f",
+      "result_id": "603fe9d2-0498-4937-a5c4-2dd2e4cd98f4"
+    },
+    {
+      "claim_id": "68a59180-3c4b-457c-9c71-1e399dd70287",
+      "result_id": "603fe9d2-0498-4937-a5c4-2dd2e4cd98f4"
+    },
+    {
+      "claim_id": "df24c4fa-dcd1-44c1-a21b-14363bf86838",
+      "result_id": "6ddaa327-2012-49fb-999b-4caa99232313"
+    },
+    {
+      "claim_id": "fee14323-0cb2-460d-879d-b448fc7fcdfc",
+      "result_id": "6ddaa327-2012-49fb-999b-4caa99232313"
+    },
+    {
+      "claim_id": "dfdc5076-0e7e-4e4e-a66d-19dbfbc6f982",
+      "result_id": "6ddaa327-2012-49fb-999b-4caa99232313"
+    },
+    {
+      "claim_id": "a8787c43-09ac-49c3-b76f-3769bd163103",
+      "result_id": "99c22bcc-ba80-4229-86c8-2d8635ba11c1"
+    },
+    {
+      "claim_id": "579aab2c-db36-4200-967d-1336fe509376",
+      "result_id": "99c22bcc-ba80-4229-86c8-2d8635ba11c1"
+    },
+    {
+      "claim_id": "a58134cd-ef55-4a6b-81c6-3d29216a5ab9",
+      "result_id": "99c22bcc-ba80-4229-86c8-2d8635ba11c1"
+    },
+    {
+      "claim_id": "18da7a0c-128f-460f-9632-bab5f70d5ba5",
+      "result_id": "f077f03b-69ca-4c62-9413-e3f947216012"
+    },
+    {
+      "claim_id": "781a2b21-bcd1-4808-8b74-a04adaae5d6e",
+      "result_id": "f077f03b-69ca-4c62-9413-e3f947216012"
+    },
+    {
+      "claim_id": "cd0b942c-5dc3-49ac-84ae-9535de00f504",
+      "result_id": "f077f03b-69ca-4c62-9413-e3f947216012"
+    },
+    {
+      "claim_id": "753b6a34-62b6-4a6d-bd06-ba63113bc48e",
+      "result_id": "c9eb98f1-b2e0-4647-90b9-13685a2e0c19"
+    },
+    {
+      "claim_id": "2d966d6a-857e-40dc-871b-6f24b002cb6b",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "4ee98dd8-6b32-4d6f-a502-fb0dd39ccae4",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "a9db1c76-9240-487e-a319-93dac3f30104",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "02a4ad3a-0d4c-4293-8db1-94a71c9b17e2",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "c3718347-738d-410f-a579-5d3d56be399e",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "603b1689-46f9-4cd0-a965-00ea737aa309",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "6bf3532e-8fcf-4873-821d-9eb51144c7f3",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "f8e4a630-bea4-42c3-9101-d931debdad3e",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "ba2002b6-000c-4e1f-90ed-fb27620fc58a",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "b493762e-ed76-4c22-8620-6343e47928e5",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "5bd3afa4-57fb-4a0f-8dda-996c4f462233",
+      "result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b"
+    },
+    {
+      "claim_id": "6f5c0fb5-de17-4406-b4cb-a4379ce9dc7e",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "b8ecf741-b786-4135-8b00-4edd5402e7b2",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "af412743-e481-4739-85c5-9efd868911a2",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "46858ab4-b0e3-41b6-b0e4-54578813efc8",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "e9634922-fe93-45a6-97c2-48172f0a5538",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "09ac4f5c-5cea-49bc-9dd9-2a63a7f43c74",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "c18edc76-5acd-4b36-8967-bb7f963a5cee",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "e8972640-1556-4a94-92b9-e637e828f7bd",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "95e1ffcd-692f-46c9-b64e-c1c52973e933",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "beb0b7bd-d22b-46e1-948a-60aca6faf59f",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "6872e99f-6a39-40bb-897f-1200c258701b",
+      "result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de"
+    },
+    {
+      "claim_id": "cc6410a5-3816-435c-a94d-916ec8f2c602",
+      "result_id": "d497b69c-193c-4e0e-a373-542c0cecd86d"
+    },
+    {
+      "claim_id": "5bc0b912-2095-40ff-b871-2800dca34980",
+      "result_id": "d497b69c-193c-4e0e-a373-542c0cecd86d"
+    },
+    {
+      "claim_id": "e7d03aa4-8fd8-4b7d-8363-f783f47f4094",
+      "result_id": "d497b69c-193c-4e0e-a373-542c0cecd86d"
+    },
+    {
+      "claim_id": "66b56143-c258-4437-9cad-46cd2c91150e",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "eb5d209f-ce3e-4172-a2eb-8633d16ae5e7",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "df9bed5c-cc23-43e4-88e9-e7d0e3889baf",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "b11123b2-3963-479e-a81a-edf69dadd06b",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "f595860a-1f94-471b-b7a4-6fc357be7ee7",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "4246bb22-ab32-44d5-ab47-908eabb98ea0",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "59260260-e354-4d9e-ad76-89ef74a1a4d1",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "73fea2b2-ba35-4196-9d3c-602d63013675",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "4f11917b-fa72-4c3e-bb25-ec3ef0c5d43a",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "414a640f-be87-4a92-b253-307aa3bc5e62",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "b39bfef5-86f7-4f38-a508-5886f949b1ae",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "993efd03-11c9-4241-be88-b27068ab5d0f",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "e6db47c4-4d0d-4a47-a2a4-f61a6f59b02d",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "887f2eb0-2823-4b0d-b3bb-197dfe62bcbb",
+      "result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff"
+    },
+    {
+      "claim_id": "2f55ac58-af57-4841-a66b-177e11302ec1",
+      "result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d"
+    },
+    {
+      "claim_id": "2d722208-63c1-427f-a364-eeaaf1ca045d",
+      "result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d"
+    },
+    {
+      "claim_id": "e9e82884-d1be-4c72-8abf-edfbb8fcfda5",
+      "result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d"
+    },
+    {
+      "claim_id": "1591b0b0-1ee4-4cd0-833f-dc92d5ee7159",
+      "result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d"
+    },
+    {
+      "claim_id": "5c790f0c-2d8d-4fb2-a8e7-eb2ffab396da",
+      "result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d"
+    },
+    {
+      "claim_id": "062eed38-4551-4f6d-b554-85c7d5827a63",
+      "result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d"
+    },
+    {
+      "claim_id": "5daa7c22-c12a-4426-8264-e4788be15fb4",
+      "result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d"
+    },
+    {
+      "claim_id": "6603c27a-53c4-48b1-b52c-53df6c27e76c",
+      "result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d"
+    },
+    {
+      "claim_id": "50cf5dce-36b0-468c-9d9e-116564bfd48d",
+      "result_id": "68df9c7c-8b2f-4aaf-ae0a-b2063c32a48e"
+    },
+    {
+      "claim_id": "8ba440dc-c3c9-4efb-ab71-e2680dc44c8e",
+      "result_id": "68df9c7c-8b2f-4aaf-ae0a-b2063c32a48e"
+    },
+    {
+      "claim_id": "a4f08b72-0e1d-4fab-b0e6-f1d2bad8f799",
+      "result_id": "68df9c7c-8b2f-4aaf-ae0a-b2063c32a48e"
+    },
+    {
+      "claim_id": "13e1cae3-29c9-415e-95d6-b10179896614",
+      "result_id": "68df9c7c-8b2f-4aaf-ae0a-b2063c32a48e"
+    },
+    {
+      "claim_id": "43c51e32-becd-4ddb-acaa-0fd0f98f4270",
+      "result_id": "68df9c7c-8b2f-4aaf-ae0a-b2063c32a48e"
+    },
+    {
+      "claim_id": "ec429fb4-294c-4932-8665-8126e4adcba9",
+      "result_id": "68df9c7c-8b2f-4aaf-ae0a-b2063c32a48e"
+    },
+    {
+      "claim_id": "14d3dc41-5a2c-4ff7-97ed-3fbb8dea5b0a",
+      "result_id": "4d978432-6e6d-4fae-9a21-c29f617ba659"
+    },
+    {
+      "claim_id": "1428622a-d098-4248-a815-e0e76795f0a6",
+      "result_id": "4d978432-6e6d-4fae-9a21-c29f617ba659"
+    },
+    {
+      "claim_id": "e8340ca3-435f-4477-9116-67522ea1c884",
+      "result_id": "5b70d1e9-d768-4455-8b57-7970346f76e0"
+    },
+    {
+      "claim_id": "ecfb0c65-37e1-4540-956a-8c2cece1b805",
+      "result_id": "5b70d1e9-d768-4455-8b57-7970346f76e0"
+    },
+    {
+      "claim_id": "fa813a17-d2c3-4452-bcae-74f133c74c2b",
+      "result_id": "5b70d1e9-d768-4455-8b57-7970346f76e0"
+    },
+    {
+      "claim_id": "6b5ab605-da04-43ee-adde-c5b1a95c2911",
+      "result_id": "9e72a7c1-7be8-463c-8b49-f993bd3da0f8"
+    },
+    {
+      "claim_id": "9f717b55-ef3f-47f2-8b88-032c3d3bcf1c",
+      "result_id": "9e72a7c1-7be8-463c-8b49-f993bd3da0f8"
+    },
+    {
+      "claim_id": "41b4fe80-6ec8-4c5f-bc80-e56178b48d03",
+      "result_id": "9e72a7c1-7be8-463c-8b49-f993bd3da0f8"
+    },
+    {
+      "claim_id": "e69d5967-5220-403d-984d-4407ee20a8ed",
+      "result_id": "9e72a7c1-7be8-463c-8b49-f993bd3da0f8"
+    },
+    {
+      "claim_id": "fee14323-0cb2-460d-879d-b448fc7fcdfc",
+      "result_id": "201b7641-3e70-4023-8995-233feb4424e0"
+    },
+    {
+      "claim_id": "dfdc5076-0e7e-4e4e-a66d-19dbfbc6f982",
+      "result_id": "201b7641-3e70-4023-8995-233feb4424e0"
+    },
+    {
+      "claim_id": "df24c4fa-dcd1-44c1-a21b-14363bf86838",
+      "result_id": "201b7641-3e70-4023-8995-233feb4424e0"
+    },
+    {
+      "claim_id": "7de24b0b-5db5-4c3c-a294-551de01b828f",
+      "result_id": "13952975-f1e9-4785-bb15-55cec00aa89c"
+    },
+    {
+      "claim_id": "a8787c43-09ac-49c3-b76f-3769bd163103",
+      "result_id": "13952975-f1e9-4785-bb15-55cec00aa89c"
+    },
+    {
+      "claim_id": "579aab2c-db36-4200-967d-1336fe509376",
+      "result_id": "13952975-f1e9-4785-bb15-55cec00aa89c"
+    },
+    {
+      "claim_id": "a58134cd-ef55-4a6b-81c6-3d29216a5ab9",
+      "result_id": "13952975-f1e9-4785-bb15-55cec00aa89c"
+    },
+    {
+      "claim_id": "c998f662-6d6e-478c-b931-ea076b8dca07",
+      "result_id": "13952975-f1e9-4785-bb15-55cec00aa89c"
+    },
+    {
+      "claim_id": "68a59180-3c4b-457c-9c71-1e399dd70287",
+      "result_id": "13952975-f1e9-4785-bb15-55cec00aa89c"
+    },
+    {
+      "claim_id": "18da7a0c-128f-460f-9632-bab5f70d5ba5",
+      "result_id": "c23684b0-1532-4ef5-97e5-c62f60bef48e"
+    },
+    {
+      "claim_id": "781a2b21-bcd1-4808-8b74-a04adaae5d6e",
+      "result_id": "c23684b0-1532-4ef5-97e5-c62f60bef48e"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "5b601808-bb23-40d9-97bb-e9431e7aa3aa",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f2b38b21-9e5d-414f-bde8-034d26fd7289",
+      "peer_result_id": "5b70d1e9-d768-4455-8b57-7970346f76e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C24-C26 regarding subcellular localization and pathway enrichment. Both evaluations find these characterization findings supported, with OpenEval citing specific figures and peer reviewers accepting the data presentation quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "a8c948b1-500a-4e47-904a-04619fb34ebc",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "6ddaa327-2012-49fb-999b-4caa99232313",
+      "peer_result_id": "201b7641-3e70-4023-8995-233feb4424e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C75-C77 regarding PCA limitations. Both evaluations support these findings, with OpenEval providing specific figure references and peer reviewers implicitly accepting this justification for advanced machine learning methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "f218dc63-1d53-4ba9-aba3-9c0f14968745",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "b84e4245-55af-418b-afb6-77a2213f56fd",
+      "peer_result_id": "d497b69c-193c-4e0e-a373-542c0cecd86d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on universal marker identification (C3, C31, C34). Both evaluations find these claims supported. OpenEval provides detailed frequency analysis evidence, while peer reviewers explicitly praised the identification of new biomarkers. OpenEval also includes C27 and C28 not mentioned in peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "0bdf4439-2341-47d9-adfb-2e5b749671d9",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "854c73e7-fd92-4d8a-bdfd-35eb0778a85d",
+      "peer_result_id": "4d978432-6e6d-4fae-9a21-c29f617ba659",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cancer-specific marker ATXN2L (C29, C56). Both evaluations support these findings. OpenEval provides specific figure and citation references, while peer reviewers accepted this as part of broader biomarker discovery. OpenEval also addresses C30 not covered in peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "7d8c0c99-268c-42e6-8b59-11f09306770b",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2",
+      "peer_result_id": "68df9c7c-8b2f-4aaf-ae0a-b2063c32a48e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on traditional marker limitations (C21-C23, C54-C55). Both evaluations support these findings. OpenEval provides specific frequency data and figures, while peer reviewers implicitly accepted this by praising new marker identification. OpenEval also covers dataset context (C18-C20) not in peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "38428b05-7c95-4d5a-91db-8d9e95b59077",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "b4646d40-30f3-47ad-8a09-508742661806",
+      "peer_result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on machine learning model performance for plasma/serum classification (C4-C6, C37, C40-C42, C68). Both evaluations support these claims. OpenEval provides detailed performance metrics and comparative analysis, while peer reviewers praised the algorithm quality and novel AI method. Peer review also covers additional claims C43-C45, C51-C53 from other OpenEval results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "b65658a8-b6f7-4086-9a6d-4f96d2be10de",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "59418715-9988-4873-a943-41a99a68ac06",
+      "peer_result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cancer type classification performance (C43-C45). Both evaluations support these claims. OpenEval provides specific validation details, while peer reviewers praised overall algorithm performance. Peer review result also covers broader machine learning claims from other OpenEval results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "95100d84-4b2a-4c45-808a-da72c7b6b79e",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9",
+      "peer_result_id": "14eae2fe-5151-4e77-a31a-cc773d1187ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on urine sample classification (C49-C53). Both evaluations support these claims. OpenEval provides detailed methodology and performance metrics, while peer reviewers praised the overall machine learning approach. Peer review result covers broader algorithm performance claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "ca3828fa-3ae7-4595-89e2-9cd35d1fb04a",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9",
+      "peer_result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on dataset claims (C49-C50). Both evaluations support dataset quality. OpenEval focuses on urine classification methodology, while peer reviewers acknowledged comprehensive sample collection. Peer review also covers broader dataset claims C18-C20, C61.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "2378dbc1-1d82-42e3-826a-142d5c6268be",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "aa5a2a7c-1ec5-416b-bf71-8117d03e93b2",
+      "peer_result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on dataset characterization (C18-C20). Both evaluations support these claims. OpenEval discusses dataset context for universal markers, while peer reviewers praised data presentation and sample pool size.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "1267bf6b-a104-48ec-be66-51a0a900e35c",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "603fe9d2-0498-4937-a5c4-2dd2e4cd98f4",
+      "peer_result_id": "f779fc53-e5ec-47a5-bf17-abccd7ea105d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on dataset scope (C61). Both evaluations support this claim. OpenEval emphasizes comprehensive scope supporting diagnostic utility conclusions, while peer reviewers acknowledged large sample pool quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "ecd9e1e4-7417-457a-9e30-9f813ddbcb56",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "acbd2d19-8145-4bf9-8c15-1578311bbf10",
+      "peer_result_id": "9e72a7c1-7be8-463c-8b49-f993bd3da0f8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on biological validation through differential expression (C38, C58, C72-C73). Both evaluations support these findings. OpenEval provides specific protein examples with citations, while peer reviewers accepted differential expression patterns as compelling evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e4ed02b6-b512-4cea-ae67-3f5adae7d62a",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "59418715-9988-4873-a943-41a99a68ac06",
+      "peer_result_id": "9e72a7c1-7be8-463c-8b49-f993bd3da0f8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on biological context (C73). Both evaluations support this claim. OpenEval discusses protein features in context of classification model, while peer reviewers accepted biological validation findings broadly.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "55c4e3b3-dacc-4136-801c-cde7b2197372",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "59418715-9988-4873-a943-41a99a68ac06",
+      "peer_result_id": "201b7641-3e70-4023-8995-233feb4424e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on PCA limitations (C75). Both evaluations support this claim. OpenEval uses it to justify machine learning approach for cancer type classification, while peer reviewers implicitly accepted PCA insufficiency.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "6015c477-ee7b-4a32-847b-17d2efdd4433",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "2d6c0d7e-bfe0-47a2-bf6c-ba75303740c9",
+      "peer_result_id": "9e72a7c1-7be8-463c-8b49-f993bd3da0f8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on differential abundance (C72). Both evaluations support this claim. OpenEval discusses it in context of urine classification model, while peer reviewers accepted differential expression patterns as supporting evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "e1acce6c-900a-4f00-ae21-24d23b5968d1",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "99c22bcc-ba80-4229-86c8-2d8635ba11c1",
+      "peer_result_id": "13952975-f1e9-4785-bb15-55cec00aa89c",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on evaluation type for robustness claims (C78-C80). OpenEval rates these as UNCERTAIN, noting need for direct experimental validation, while peer reviewers rate as SUPPORTED, endorsing practical implications. Both acknowledge the claims but differ on level of evidence required.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "f8916392-53f2-4538-80fa-f3318daa848f",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "f077f03b-69ca-4c62-9413-e3f947216012",
+      "peer_result_id": "c23684b0-1532-4ef5-97e5-c62f60bef48e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on evaluation type for translational potential (C63-C64). OpenEval rates as UNCERTAIN, emphasizing need for prospective clinical validation, while peer reviewers rate as SUPPORTED, affirming practical implications. Both recognize forward-looking nature but differ on current evidence sufficiency.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "17fd786d-b406-454c-9b23-e19a8afda04a",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "603fe9d2-0498-4937-a5c4-2dd2e4cd98f4",
+      "peer_result_id": "13952975-f1e9-4785-bb15-55cec00aa89c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on broad conclusions (C62, C91). Both evaluations support diagnostic utility conclusions, though OpenEval notes clinical validation would strengthen claims. Peer reviewers endorsed practical implications and importance. Peer review also covers robustness claims C78-C80, C88 addressed separately by OpenEval.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "cde4d435-31a5-435c-a757-a9c00ca238d9",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "170c6094-ba5c-480e-b063-9127385c2b78",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated computational methodology claims (C65-C71) as SUPPORTED, finding methods standard and appropriate. No corresponding peer review evaluation found for these specific methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "09d05f5c-409e-4784-bb1c-3e2def1b0d3f",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "c9eb98f1-b2e0-4647-90b9-13685a2e0c19",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated limitation acknowledgment (C57) as SUPPORTED, noting honest assessment of missing cancer-specific marker. No corresponding peer review evaluation found for this specific limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "7770ac96-9066-4ed9-b764-e6168eff7755",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "465c0dc8-dfe3-4d03-be7a-84f9037e033b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated clinical context and rationale claims (C1, C7-C10, C17, C82-C85, C92) as SUPPORTED based on literature citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    },
+    {
+      "id": "7adf3570-522d-462a-9308-2b9a81a8c61a",
+      "submission_id": "390fff44-240e-4814-b1c6-2590bb5ce0dc",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "0d22623e-024d-4352-b8b0-eacc90c6c0de",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background knowledge claims (C2, C11-C16, C48, C66, C86, C89) as SUPPORTED based on appropriate citations. No corresponding peer review evaluation found for these foundational context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:17:14.093086Z"
+    }
+  ]
+}

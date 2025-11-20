@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "Ulk4 acts in conjunction with Stk36 to promote Gli2 phosphorylation and Hh pathway activation. Ulk4 depletion reduces Shh-induced expression of Gli1 and Ptch1, as well as Gli2 phosphorylation on S230/232. Double knockdown experiments demonstrate that Ulk4 acts in the same pathway as Stk36 but in parallel with Ulk3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are well-supported by RT-qPCR data (Figure 1A-D) and western blot analysis (Figure 1E-G') showing reduced target gene expression and Gli2 phosphorylation upon Ulk4 depletion. The genetic epistasis experiments (C37-C39) provide strong evidence for the pathway relationships, with non-additive effects for Ulk4/Stk36 double KD and additive effects for Ulk4/Ulk3 double KD supporting the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Ulk4 functions as a molecular scaffold bridging Stk36 and Gli2. Ulk4 interacts with Stk36 through its N-terminal pseudokinase domain and with Gli2 via its C-terminal regulatory domain. Ulk4 depletion diminishes the association between Stk36 and Gli2, and full-length Ulk4 is required to restore this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scaffolding function is well-supported by multiple Co-IP experiments (Figures 2A-E, 4A-E) demonstrating domain-specific interactions. The deletion mapping studies (C49-C50, C65-C67) clearly show that the N-terminal domain binds Stk36 while the C-terminal domain binds Gli2. The rescue experiments (C70) confirm that both domains are necessary for function, providing strong converging evidence for the scaffold model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C63"
+    ],
+    "result": "Ulk4 is dispensable for Hh-induced Stk36 kinase activation. In vitro kinase assays show that Stk36 phosphorylates Gli2 equally well with or without Ulk4, and Ulk4 depletion does not affect Shh-induced phosphorylation of Stk36 on T158/S159.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53, C54, and C63 are supported by in vitro kinase assays (Figure 3A) and western blot analysis (Figure 3I). The data clearly demonstrate that Ulk4 does not modulate Stk36's intrinsic kinase activity or its activation by Shh, distinguishing Ulk4's scaffolding function from a regulatory role in kinase activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Stk36 is activated by Shh through trans-autophosphorylation on T158/S159 in its activation loop, similar to Drosophila Fu. Phospho-mimetic mutations increase Stk36 activity while phospho-deficient mutations abolish it, and activation depends on Stk36's kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Stk36 activation mechanism is well-characterized through multiple complementary experiments (Figure 3B-H). The phospho-specific antibody data (C57), kinase-dead mutant analysis (C58), and phospho-mimetic/deficient mutant studies (C60-C61) provide strong evidence for the trans-autophosphorylation model. The conservation analysis (C56) and functional similarity to Fu (C62) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Shh stimulation induces ciliary tip accumulation and colocalization of Ulk4, Stk36, and Gli2. Ulk4 is essential for Stk36 ciliary tip localization, as Ulk4 RNAi diminishes Shh-induced ciliary tip localization of Stk36.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ciliary localization results are well-supported by immunostaining experiments (Figures 5A-F, 6A-B). The data clearly show Shh-dependent ciliary tip accumulation of all three proteins (C75-C79) and demonstrate Ulk4's requirement for Stk36 localization (C81). The quantification provides statistical support, though the reliance on overexpressed tagged proteins is a limitation noted by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Ulk4 and Stk36 depend on each other for ciliary tip accumulation. Ciliary localization of Ulk4 depends on Stk36 kinase activity, as wild-type Stk36 but not kinase-inactive Stk36 restores Ulk4 ciliary accumulation in DKO cells, while Ulk3 cannot rescue this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutual dependence is demonstrated by complementary loss-of-function and rescue experiments (Figure 6C-F). The specificity for Stk36 kinase activity (C83) versus Ulk3 (C84) is clearly shown, supporting the model that Stk36-mediated phosphorylation of Ulk4 is required for its ciliary localization. The data provide strong evidence for interdependent ciliary trafficking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Ciliary localization of Ulk4 depends on phosphorylation of T1023 (and potentially T1021) by Stk36. Deletion mapping identifies the region aa1000-1200 as essential for ciliary localization, and mutations preventing phosphorylation at T1021/T1023 abolish ciliary tip accumulation. In vitro kinase assays confirm Stk36 phosphorylates these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphorylation-dependent localization is well-supported by deletion mapping (Figure 7A-C), mutagenesis studies (Figure 7E-F), and in vitro kinase assays (Figure 7G). The identification of T1023 as the critical residue (C95) is supported by multiple lines of evidence including the conservation analysis (C99) and functional rescue experiments. The mechanistic link between phosphorylation and ciliary trafficking is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Ciliary tip accumulation of Ulk4 is essential for its function in the Hh pathway. The ciliary localization-competent mutant hUlk4T1021A rescues Stk36 ciliary localization, Gli2 phosphorylation, and target gene expression, while the ciliary localization-deficient mutant hUlk4T1021A/T1023A fails to rescue these phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional importance of ciliary localization is demonstrated by structure-function rescue experiments (Figure 8A-E). The clear distinction between the T1021A mutant (functional) and T1021A/T1023A mutant (non-functional) directly links ciliary localization to Hh pathway activity. Multiple readouts (ciliary localization, phosphorylation, gene expression) all show consistent results, providing strong support for the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on Ulk4: Ulk4 is a pseudokinase member of the Ulk kinase family found in most eukaryotes, predicted to be catalytically inactive. It plays roles in neurogenesis, myelination, and has been implicated in neuropsychiatric disorders including schizophrenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C13-C19) are properly cited from the literature and provide appropriate context. The characterization of Ulk4 as a pseudokinase (C16) is well-established in the cited work (Preuss et al., 2020), and the biological functions and disease associations are supported by multiple cited studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior work on Ulk4 and Hh signaling: Previous studies identified Ulk4 as interacting with Stk36, localized to primary cilia, and as a genetic modifier of holoprosencephaly. Ulk4 knockdown was shown to affect Shh-induced Gli reporter expression and Smo ciliary localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C20-C25) accurately cite prior work, particularly from Preuss et al., 2020 and Mecklenburg et al., 2021. The citations provide appropriate context for the current study's investigation of Ulk4's mechanism in Hh signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on Hh signaling pathway: The Hh pathway governs development and homeostasis through Gli transcription factors. The core signaling system involves Ptch1 and Smo at primary cilia, with Gli processing regulated by Hh. Previous work from the authors showed Ulk3 and Stk36 directly phosphorylate Gli2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C26-C35) provide well-established context about the Hh signaling pathway with appropriate citations. The authors' prior work on Ulk3/Stk36 (C35) is properly referenced and provides the foundation for investigating Ulk4's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C45",
+      "C48",
+      "C51",
+      "C52",
+      "C72",
+      "C73",
+      "C74",
+      "C92"
+    ],
+    "result": "Additional mechanistic context: Prior studies established that Ulk3/Stk36 phosphorylate Gli2 at S230/232, that Gli2 is converted to Gli2A at ciliary tips, and that phosphorylation can prime subsequent modifications. Pseudokinases can regulate interacting kinases, as shown for LKB1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual claims (C40, C45, C48, C51, C52, C72, C73, C74, C92) are properly cited and provide relevant background for interpreting the current results. The references to prior work on Gli2 phosphorylation and pseudokinase function are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "T1023 but not T1021 is conserved in mouse Ulk4, with mouse Ulk4 containing alanine at position 1021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This sequence conservation observation (C99) is directly shown in Figure 7H and provides important context for understanding the differential requirements for T1021 versus T1023 phosphorylation across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Functions of Ulk4 and Stk36 outside the Hh pathway: Both proteins are required for motile ciliogenesis, with Stk36 affecting central pair apparatus construction in zebrafish and mice, and Ulk4 affecting ependymal cell cilia leading to hydrocephalus. They physically interact to mediate flagella assembly in Leishmania mexicana.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C108-C111) about non-Hh functions are properly cited from the literature and provide relevant context for understanding the broader biological roles of these proteins. The citations are appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Ulk4 disease associations and binding partners: Ulk4 has been implicated in hypertension and psychiatric disorders. It binds several kinases and phosphatases (DAPK3, LMTK2, PTPN14) and proteins involved in neuronal differentiation and axonal regeneration (CAMSAP1/3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C112-C114) are properly cited and provide context for Ulk4's broader biological significance. The references to disease associations and binding partners are accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Speculation about Ulk4's general mechanism: The authors speculate that Ulk4 may function as a scaffold to bridge kinases to substrates and/or regulate subcellular localization of interacting proteins in other biological processes beyond Hh signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C115-C116) are explicitly presented as speculation by the authors. While the speculation is reasonable based on the Hh signaling results, it remains untested for other biological processes. The authors appropriately frame these as hypotheses for future investigation rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript provides extensive background on IBD, its risk factors (dietary, environmental, genetic), increasing incidence, association with lipid-rich diets, current treatment limitations, and the utility of mouse genetic reference populations for studying complex diseases. These claims establish the rationale and context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32 are well-supported by appropriate citations to prior literature. These are standard background claims that establish the scientific context and rationale for the study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C100",
+      "C101"
+    ],
+    "result": "HFD feeding induced an IBD-like transcriptomic signature in BXD mouse colons, characterized by upregulation of inflammation, translation, mitochondrial respiration, and stress response pathways, and downregulation of intermediate filament genes. This signature resembles DSS-induced UC in mice and human IBD, with 115 genes upregulated and 295 downregulated (|log2FC| > 0.5, adj. p < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, C39-C48, C100-C101 are well-supported by differential expression analysis and GSEA results shown in Figures 1B-D. The statistical thresholds are clearly defined, and the enrichment of IBD-related signatures is demonstrated with appropriate methods. The findings are consistent across mouse and human IBD datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C107"
+    ],
+    "result": "BXD strains showed variable susceptibility to HFD-induced IBD-like inflammation. Hierarchical clustering classified strains into susceptible (19 strains including C57BL/6J), intermediate (11 strains), and resistant (17 strains including DBA/2J) groups. The parental strain classification suggests genetic determinants inherited from parents may determine susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C52-C54, C107 are supported by hierarchical clustering analysis (Figure 2A) and consistent with prior literature on DSS-induced colitis susceptibility in these strains (M\u00e4hler et al., 1998). The classification is based on enrichment scores from IBD signatures, providing a quantitative basis for grouping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C102"
+    ],
+    "result": "Susceptible BXD strains had significantly lower plasma IL-10 (anti-inflammatory, p < 0.01) and higher IL-15 (pro-inflammatory, p < 0.0001) compared to resistant strains under HFD. These cytokine differences suggest a link between tissue-specific transcriptional signatures and systemic inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C102 are supported by plasma cytokine measurements with appropriate statistical testing (two-tailed t-test, Figures 2B-C). The biological relevance is supported by citations (C57-C60) showing IL-10 and IL-15 are established IBD-related factors. The inference connecting tissue and systemic inflammation (C102) is reasonable but remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C103"
+    ],
+    "result": "WGCNA identified 39 co-expression modules in HFD-fed BXD colons (14,723 genes total). Two IBD-related modules were identified: HFD_M9 (484 genes) and HFD_M28 (123 genes), both enriched for genes upregulated in DSS-induced UC and human IBD. Over 20% of genes in these modules overlapped with acute phase UC genes (days 6-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C61-C67, C103 are supported by WGCNA analysis and enrichment testing (Figure 3). The methods are appropriate for identifying co-expression modules, and the enrichment analysis uses well-defined IBD gene signatures with appropriate statistical thresholds (BH-adjusted p < 0.05). The overlap with CD modules (C66-C67) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C105",
+      "C106"
+    ],
+    "result": "IBD-related modules HFD_M9 and HFD_M28 are enriched for immune response genes and share cis-regulatory elements responsive to specific transcription factors. HFD_M9 is regulated by ZIC2, SMAD3, REL, FOSL1, and BATF; HFD_M28 by IRFs (IRF1, IRF2, IRF7, IRF9) and STAT2. Both modules are enriched for IFN-\u03b3 response genes and dysregulated in immune cells of Crohn's disease patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C68-C77, C105-C106 are supported by enrichment analyses (Figures 4A-D) and TF motif analysis. The identified transcription factors are biologically relevant and supported by literature (C71-C73, C78-C79). The TF enrichment analysis uses appropriate methods with clear statistical thresholds (p < 0.001). The cell-type enrichment provides additional functional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ModQTL mapping identified a suggestive QTL (p < 0.1) for HFD_M28 on chromosome 16 containing 552 protein-coding genes. Through a prioritization scheme based on high-impact variants, inflammation association, and cis-eQTLs, 27 candidate genes were identified. No significant QTLs were detected for IBD-downregulated modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C80-C82 are supported by ModQTL mapping analysis (Figure 5A) using appropriate methods (qtl2 package with LOCO kinship correction). The suggestive threshold (p < 0.1) is obtained by permutation testing (10,000 repeats), which is appropriate. The candidate gene prioritization scheme is clearly defined with multiple filtering criteria, though the threshold is somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Through systems genetics prioritization and human GWAS validation, Muc4 and Epha6 were identified as top candidates mediating HFD-driven intestinal inflammation. Both genes have variants associated with UC in humans (EPHA6 p=2.3E-06, MUC4 p=1.2E-06). MUC4 is a transmembrane mucin highly expressed in the GI tract, involved in barrier function and O-linked glycosylation. EPHA6 belongs to Eph/Ephrin signaling, associated with gut inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C83-C94 are supported by multiple lines of evidence: ModQTL mapping, literature mining, GWAS in UKBB, G-MAD analysis, and cell-type expression data (Figure 5). The human GWAS validation provides strong translational evidence. However, the GWAS p-values, while suggestive, do not reach genome-wide significance (typically 5E-08), and the causal mechanisms remain to be established experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C108"
+    ],
+    "result": "MUC4 and EPHA6 may mediate IBD susceptibility in humans. MUC4 has cis-eQTLs in sigmoid and transverse colon, and Mendelian randomization suggests increased MUC4 expression in sigmoid colon may increase IBD risk (nominal p=0.033). Muc4 knockout mice are more resistant to DSS-induced UC. EPHA6 variants are associated with CRC risk. Chronic inflammation from HFD may be a prelude to human UC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C95-C99, C108 involve translational inferences and speculation. The Mendelian randomization result (C97) shows only nominal significance (p=0.033) without multiple testing correction, which is insufficient for causal inference. The eQTL analysis (C95-C96) is informative but EPHA6 lacks colon eQTLs, limiting causal interpretation. The knockout mouse data (C98) and CRC association (C99) are from prior literature. The conclusion that HFD-induced inflammation is a prelude to UC (C108) is speculative and requires longitudinal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "DSS is widely used to induce UC in mouse models and disease severity increases over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is a well-established fact about DSS-induced colitis models, appropriately cited (Czarnewski et al., 2019). This is standard background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Most differentially expressed genes are likely to be driven by and not be a cause of disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is a general principle in genetics appropriately cited (Porcu et al., 2021). This motivates the use of ModQTL mapping to identify causal regulators rather than relying solely on differential expression.",
+    "result_type": "MINOR"
+  }
+]

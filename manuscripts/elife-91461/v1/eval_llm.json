@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C37"
+    ],
+    "result": "SpCAF-1 forms a 1:1:1 heterotrimer complex mediated by the large subunit Pcf1, with Pcf1 binding both Pcf2 and Pcf3 independently while Pcf2 and Pcf3 do not interact with each other. The complex is globular with significant flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 and C37 provide converging biochemical evidence from SEC, SAXS, and stoichiometry measurements demonstrating that Pcf1 mediates complex assembly with 1:1:1 stoichiometry. The experimental molecular weight (179 kDa) matches the calculated value (167 kDa) within the expected accuracy of SAXS (~10%), and Kratky plot analysis confirms the globular yet flexible nature of the complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "Pcf1 contains four intrinsically disordered regions (IDRs) that demarcate functional modules including the KER domain, PIP motif, 3BD, ED, 2BD, and WHD domains. AlphaFold2 modeling identifies four independent modules with inter-module flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C38 are well-supported by NMR spectroscopy showing ~140 amide signals corresponding to disordered residues, with excellent agreement between NMR-determined IDR boundaries and AlphaFold2 pLDDT scores. SAXS data fitting with multiple AlphaFold2 models confirms inter-module flexibility. The combination of experimental NMR data and computational modeling provides strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The ED domain of Pcf1 is disordered in free SpCAF-1 but folds upon histone H3-H4 binding, with conserved residues L359 and F380 mediating histone interaction. Histone binding induces a conformational change that increases KER domain accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C54 are supported by multiple complementary techniques: SEC shows stable complex formation at both low and high salt, SAXS confirms H3-H4 dimer binding and extended conformation, NMR demonstrates ED domain disorder and folding upon histone binding, and competition experiments with Asf1-Mcm2 identify specific binding residues. The ED* mutant (Y340A-W348A) shows impaired histone binding, validating the identified residues. AlphaFold2 modeling is consistent with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C73"
+    ],
+    "result": "The KER domain constitutes the main DNA binding region of SpCAF-1, forming a long monomeric helix with basic residues positioned on one face. It binds dsDNA longer than 40 bp with micromolar affinity and cooperativity (EC50 ~0.7-1.1 \u03bcM, Hill coefficient ~3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C68 and C73 are well-supported by converging evidence from EMSA, MST, CD, SAXS, and NMR. The KER* mutant (R147E-K150E-K154E-R161E-K168E) shows 10-fold reduced DNA binding affinity and loss of cooperativity while maintaining helical structure and histone binding, demonstrating specificity. The EC50 values for isolated Pcf1_KER and full SpCAF-1 are similar, supporting the conclusion that KER is the principal DNA binding domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The WHD domain of Pcf1 has a similar fold to ScWHD but does not bind DNA, likely due to different electrostatic surface properties. Deletion of WHD does not affect DNA binding or IDR properties of SpCAF-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by NMR and AlphaFold2 modeling showing structural similarity to ScWHD, EMSA demonstrating lack of DNA binding, and sequence analysis revealing substitution of DNA-binding lysines (K564, K568 in ScWHD) with S514 and G518 in SpWHD. The SpCAF-1-\u0394WHD mutant shows similar DNA binding and IDR properties to WT, confirming the WHD does not contribute to DNA binding in SpCAF-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Both the PIP motif and KER domain contribute to PCNA binding, with DNA stabilizing the CAF-1-PCNA interaction. The Pcf1_KER-PIP fragment shows 10-fold higher affinity for PCNA (0.7 \u03bcM) compared to the PIP peptide alone (7.1 \u03bcM), with ~2:1 stoichiometry per PCNA trimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C89 are well-supported by ITC measurements showing affinity values and stoichiometry, AlphaFold2 modeling predicting canonical PIP binding, and EMSA demonstrating DNA-dependent stabilization of CAF-1-PCNA complexes. The PIP* and KER* mutants show specific defects in PCNA binding without affecting DNA binding (for PIP*) or histone binding (for KER*), demonstrating the independent contributions of these domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "In vitro nucleosome assembly assays show that SpCAF-1-ED*, SpCAF-1-KER*, and SpCAF-1-\u0394WHD mutants cannot promote nucleosome assembly, while SpCAF-1-PIP* shows delayed but ultimately successful assembly. The ED, KER, and WHD domains are essential for efficient nucleosome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 are supported by supercoiling assays in Xenopus HSE showing that WT SpCAF-1 rescues p150-depleted extracts while ED*, KER*, and \u0394WHD mutants fail to produce supercoiled DNA even after extended incubation. The PIP* mutant shows delayed assembly (no supercoiling at 45 min) but catches up by 2 hr, demonstrating that PIP binding accelerates but is not absolutely required for assembly in vitro. The experimental design includes appropriate controls (mock-depleted, p150-depleted, and complementation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In vivo, CAF-1 foci formation in S-phase correlates with PCNA association. Pcf1-ED* shows 8-fold increased PCNA binding and more abundant/brighter Pcf2-GFP foci compared to WT, while Pcf1-PIP* and Pcf1-KER* show no PCNA interaction and no S-phase foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C109 are supported by co-immunoprecipitation showing differential PCNA binding (ED* increased 8-fold, PIP* and KER* abolished, \u0394WHD similar to WT) and live cell imaging showing corresponding changes in Pcf2-GFP foci. The discrepancy between in vitro (ED* binds PCNA normally) and in vivo (ED* shows increased PCNA binding) is noted but not fully explained, suggesting additional regulatory mechanisms. All mutants show similar expression levels, controlling for protein abundance effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "All pcf1 mutants except pcf1-\u0394WHD show defects in heterochromatin maintenance similar to the null mutant, as measured by ura4 silencing assays. The WHD domain is dispensable for heterochromatin maintenance despite being required for chromatin assembly in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by silencing assays showing that pcf1-ED*, pcf1-KER*, and pcf1-PIP* mutants all exhibit loss of ura4 silencing (growth on uracil-depleted media) similar to pcf1\u0394, while pcf1-\u0394WHD maintains silencing like WT. This demonstrates that histone binding, PCNA binding, and DNA binding are all required for heterochromatin maintenance, but the WHD domain is not, despite its requirement for in vitro assembly (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "CAF-1 interaction with both histones and PCNA prevents DNA damage accumulation. pcf1\u0394 and pcf1-ED* show modest increases in Rad52-GFP foci, while pcf1-PIP* and pcf1-KER* show greater increases. pcf1-\u0394WHD shows no significant increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by quantification of Rad52-GFP foci showing differential effects of mutations: modest increase for pcf1\u0394 and pcf1-ED*, greater increase for pcf1-PIP* and pcf1-KER* (PCNA binding defects), and no significant increase for pcf1-\u0394WHD. The data suggest that PCNA interaction is particularly important for preventing DNA damage, while histone deposition (defective in ED* and \u0394WHD) is less critical for this function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Genetic interaction analysis shows that pcf1-KER*, pcf1-\u0394WHD, and pcf1-PIP* are synthetic lethal with hip1\u0394, while pcf1-ED* hip1\u0394 double mutants are viable but show severe growth defects. This indicates that CAF-1 binding to PCNA, DNA, histones, and the WHD domain are all critical for viability in the absence of HIRA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by tetrad analysis showing synthetic lethality for pcf1-KER*, pcf1-\u0394WHD, and pcf1-PIP* with hip1\u0394, and severe growth defects for pcf1-ED* hip1\u0394. The experimental design is appropriate, with at least 18 tetrads analyzed per cross. The results demonstrate that all tested CAF-1 functions are required for viability when the alternative HIRA pathway is absent, with the ED* mutant retaining some residual function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Despite low sequence conservation, SpCAF-1 shares conserved structural and functional properties with ScCAF-1 and HsCAF-1, including heterotrimer formation, H3-H4 dimer binding, ED domain involvement in histone binding with disorder-to-order transition, and KER domain DNA binding. This unifies the current model of CAF-1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 are supported by comparison of experimental data with published work on ScCAF-1 and HsCAF-1, showing conservation of key features despite only 16-21% sequence identity. The 2BD and 3BD regions match HDX data from ScCAF-1, the ED domain shows similar disorder and histone binding properties, and the KER domain forms a helix of length corresponding to 40 bp DNA. Multiple citations support these comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The PIP motif is required for SpCAF-1 functions in vivo but not absolutely required in vitro. SpCAF-1-PIP* assembles histones in vitro (slower than WT) but phenocopies pcf1\u0394 in vivo, demonstrating that PCNA binding through the PIP motif is essential for recruitment and efficient histone deposition at DNA synthesis sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 are supported by the contrast between in vitro data (C134: PIP* can assemble histones, albeit slowly) and in vivo data (C135: PIP* phenocopies deletion in heterochromatin maintenance, DNA damage, and genetic interactions). The DNA binding of PIP* is unaffected in vitro (C132), and DNA stabilizes PCNA interaction (C133). This demonstrates that the PIP-PCNA interaction is critical for proper localization and function in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The accumulation of CAF-1 at replication foci in the ED* mutant may reflect PCNA recycling defects, potentially involving interference with other interactions or post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C140 propose a mechanism for the observed ED* phenotype (increased PCNA binding and foci accumulation) but provide limited direct evidence. C138 and C139 cite relevant work on PCNA accumulation and unloading in other systems, but C137 and C140 are speculative. The discrepancy between in vitro (normal PCNA binding) and in vivo (increased PCNA binding) for ED* is noted but not mechanistically resolved. Additional experiments would be needed to test the PCNA recycling hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The WHD domain allows separation of SpCAF-1 functions: it is required for in vitro chromatin assembly and synthetic lethality with hip1\u0394 (replication-coupled assembly) but dispensable for heterochromatin maintenance and DNA damage prevention. Unlike ScCAF-1 and HsCAF-1, SpPcf1_WHD does not bind DNA or the ED domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 are supported by multiple lines of evidence: in vitro assembly assays (C144: \u0394WHD deficient), genetic interactions (C145: synthetic lethal with hip1\u0394), heterochromatin maintenance (C113: \u0394WHD maintains silencing), and DNA damage (C117: no increase in Rad52 foci). The lack of DNA binding by SpWHD (C142) distinguishes it from ScWHD and HsWHD. NMR data (C143) suggests the WHD may interact with other folded parts of the complex. The functional separation is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Disorder is a fundamental feature of Pcf1 that provides plasticity for binding multiple partners concomitantly. Four IDRs demarcate functional domains, and there is important crosstalk between domains (e.g., DNA stabilizes CAF-1-PCNA interaction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 are supported by NMR data showing four IDRs (C149), disorder-to-order transition of the ED domain upon histone binding (C148), and EMSA data showing DNA-dependent PCNA binding (C151). However, C150 and C152 are somewhat speculative regarding the role of disorder in providing 'plasticity' for multivalent interactions. The experimental evidence supports the presence of disorder and crosstalk, but the mechanistic interpretation of how disorder enables simultaneous binding is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "The disordered domains of Pcf1 might play a role in promoting phase separation of replication factories in vivo, analogous to human CAF-1 forming nuclear bodies with liquid-liquid phase separation properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C154 are highly speculative. C153 cites work on human CAF-1 phase separation in HIV latency, but C154 raises this as a question without providing experimental evidence for phase separation of SpCAF-1 or replication factories in S. pombe. This is presented as a hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "CAF-1 is conserved in all eukaryotes, comprises three subunits, promotes replication-coupled histone H3-H4 deposition, is involved in heterochromatin maintenance, and associates with PCNA through PIP motifs. In S. cerevisiae, CAF-1 is a heterotrimer that binds a single H3-H4 dimer, with the KER and WHD domains contributing to DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are background claims supported by multiple citations to established literature. These provide context for the current work and are well-documented in the field. The claims are appropriately cited and consistent with current knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The large subunit of CAF-1 exhibits significant sequence divergence across species (16-21% identity), but SpPcf1 is shorter than ScCac1 and HsCHAF1A/p150 and contains a high abundance of predicted intrinsically disordered regions. S. pombe heterochromatin regulation shares features with human (HP1/Swi6 recruitment via H3K9me3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by sequence analysis data showing sequence identity percentages, protein lengths, and disorder predictions (Figure 1B). C10 is established knowledge about S. pombe heterochromatin. These claims provide important context for why S. pombe is a relevant model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The AlphaFold2 model of SpCAF-1 is consistent with biochemical data showing that Pcf1 mediates complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by the agreement between AlphaFold2 predictions and experimental data from SEC, SAXS, and NMR. The model correctly predicts the 1:1:1 stoichiometry, the location of IDRs, and the modular organization of the complex.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The study establishes the foundational rationale that insufficient insulin secretion leads to diabetes, Ca2+ flux triggers insulin release, and genetics influences islet secretory responses, justifying the use of genetically diverse mouse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-established facts in diabetes research supported by extensive prior literature and provide the scientific foundation for the experimental design. These claims are appropriately cited and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "High strain variation in Ca2+ responses was observed across eight genetically diverse mouse strains under four experimental conditions: 8 mM glucose, 8 mM glucose plus amino acids, 8 mM glucose plus amino acids plus GIP, and 2 mM glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C35-C39 describe the primary experimental findings shown in Figure 1. The data clearly demonstrate strain-dependent differences in Ca2+ dynamics across the tested conditions. The experimental design is well-described with appropriate controls and multiple biological replicates (n=3-8 mice per strain).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Classical strains (A/J, B6, 129) exhibited slow Ca2+ oscillations, wild-derived strains (CAST, WSB, PWK) showed fast oscillations with plateaus, NOD mice displayed mixed characteristics, and diabetic NZO mice showed minimal glucose responsiveness. Sex-dependent differences were observed, particularly in NOD females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C53 describe detailed observations from the Ca2+ imaging data shown in Figures 1B and supplements. The characterization of strain-specific patterns is supported by representative traces and is consistent with the known genetic backgrounds of these strains. Blood glucose measurements confirm diabetic status of NZO mice (C46, C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Six Ca2+ waveform parameters were defined and quantified: peak Ca2+, period, active duration, pulse duration, silent duration, and plateau fraction, with specific computational methods for plateaued and non-oscillating islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe the analytical framework illustrated in Figure 2A-B. The parameter definitions are clearly stated and the computational methods for edge cases (plateaued and non-oscillating islets) are explicitly defined. Custom MATLAB scripts are referenced and made available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Different metabolic and pharmacological interventions alter specific Ca2+ waveform parameters through distinct mechanisms: tolbutamide affects silent duration via KATP channels, glucose affects both active and silent durations via metabolism, and incretins reduce silent duration via Epac2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 and C92-C94 describe established mechanisms from prior literature (extensively cited) that provide the biological framework for interpreting the Ca2+ parameters. These are appropriately presented as background knowledge supported by multiple citations and illustrated in Figure 2D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "WSB mice secreted significantly more insulin than 129 mice despite similar average Ca2+. Active duration in 8G and silent durations in 8G/QLA correlated more strongly with insulin secretion than average Ca2+, while 1st component frequency in 8G was negatively correlated with insulin secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by perifusion data (Figure 3A) and correlation analysis (Figure 4). Statistical significance is demonstrated with appropriate tests (two-way ANOVA). The finding that average Ca2+ is not predictive of insulin secretion is important and challenges common assumptions in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Significant strain and sex effects were observed across multiple Ca2+ parameters, with NZO showing highest basal Ca2+ and pulse duration, CAST showing highest 1st component frequency, and sex effects varying by strain and parameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe strain and sex-dependent variation shown in Figure 4C-F. The data are presented with appropriate statistical visualization (box plots) and the conclusion (C72) that genetics profoundly influences Ca2+ oscillations is well-supported by the comprehensive dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Among 4054 islet proteins, 363 showed high correlation (r > |0.5|) with key Ca2+ parameters. Proteins correlated with Ca2+ parameters showed distinct correlation architecture and enriched for islet-relevant pathways, tissues, and transcription factors, including known regulators like PCSK1, GCK, and SUR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 describe the proteomic correlation analysis shown in Figure 5. The approach integrates previously published proteomic data (Mitok et al., 2018) with the current Ca2+ measurements. Enrichment analysis (Figure 5B-D) supports the biological relevance of correlated proteins. The presence of known regulators validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Integration of mouse proteomic data with human GWAS identified 647 genes with nearby diabetes-related SNPs, of which 478 were not previously associated with insulin secretion, representing potentially novel regulators of islet function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 describe the mouse-to-human integration shown in Figures 6-7. The approach is clearly described in Methods, using stringent criteria (p < 10^-8) and incorporating chromatin interaction data to link SNPs to genes. The identification of 478 understudied genes is based on systematic literature searches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The experimental design using 8 mM glucose, amino acids (QLA), and GIP was rationally chosen to interrogate \u03b2-cell function, \u03b1-to-\u03b2 cell signaling, and incretin responses, with glucose concentration selected to maintain oscillations near the stimulatory threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 and C88-C91 describe the experimental rationale. The choice of conditions is well-justified based on prior literature (cited) and physiological considerations. The 8 mM glucose concentration is appropriately chosen to avoid ceiling effects while maintaining responsiveness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C86",
+      "C87"
+    ],
+    "result": "Type 2 diabetes susceptibility is primarily driven by genetic variation affecting \u03b2-cell function, with ~50% of disease risk attributed to genetic factors. Inbred mouse strains provide genetic diversity comparable to humans but most studies use limited strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 and C86-C87 establish the scientific context from prior literature. These are appropriately cited and represent accepted knowledge in the field. The statements about limited use of diverse mouse strains (C20, C29) are supported by citations and motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C33",
+      "C34"
+    ],
+    "result": "\u03b2-cell stimulus-secretion coupling involves nutrient-stimulated ATP generation, KATP channel closure, membrane depolarization, Ca2+ influx, and insulin secretion, with oscillations in metabolism, Ca2+, and insulin being intrinsically linked. Functional Ca2+ handling is critical for islet compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 and C33-C34 describe established \u03b2-cell physiology supported by extensive citations. These provide the biological framework for the study and are appropriately presented as background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The eight CC founder strains capture most genetic diversity of inbred mice and have provided insights into islet function, though most deletion models are made in limited strains. Prior proteomics showed diverse protein abundance and insulin secretory responses among these strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe the mouse model system and prior work. The genetic diversity of CC founders is well-established (cited). The limitation that most knockouts are in B6 background (C29) is a known issue in the field. Prior proteomic work (C30-C31) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Human orthologues of many correlated mouse proteins are encoded by genes with nearby SNPs linked to glycemic traits in GWAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 describes a key finding from the data integration shown in Figures 6-7. The approach is clearly described in Methods and uses appropriate criteria for linking SNPs to genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Classical strains have low genetic diversity and common ancestry, while wild-derived strains are more diverse and less inbred. NOD females develop autoimmune diabetes while males are protected. Prior QTL studies showed wild-derived strain effects drive many islet traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 provide context about mouse strain genetics and prior findings. These are appropriately cited and help interpret the observed Ca2+ patterns. The discussion of NOD autoimmunity (C98) and NZO infiltration (C99) provides biological context for the observed heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C108",
+      "C110"
+    ],
+    "result": "The study acknowledges that protein-Ca2+ correlations cannot distinguish causation from consequence, but filtering for GWAS associations suggests likely causal roles. A limitation is the assumption that SNPs regulate proximal genes, which is not always accurate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 and C108-C110 appropriately acknowledge study limitations. The authors recognize that correlation does not imply causation and that SNP-gene assignments have uncertainty. These are honest assessments of the approach's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Integration of GWAS data nominated ~650 protein candidates, with ~1/3 having known roles in islet biology (including SUR1, GLUT2, GNAS). Of 478 understudied proteins, 198 are secreted, 52 have knockout mice with metabolic phenotypes, and 45 have existing drug targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 and C114-C116 summarize the candidate identification and characterization shown in Figure 7. The presence of known regulators (C107) validates the approach. The characterization of understudied proteins (C114-C116) is based on systematic database searches described in Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Human islet chromatin data (HiC, ATAC-seq, histone marks) were incorporated to infer more direct links between SNPs and target genes through physical contact and open chromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 describe the approach to address the SNP-gene assignment limitation. The use of chromatin interaction data (Miguel-Escalada et al., 2019) strengthens the inference of regulatory relationships, as illustrated in Figure 6B for ACP1.",
+    "result_type": "MINOR"
+  }
+]

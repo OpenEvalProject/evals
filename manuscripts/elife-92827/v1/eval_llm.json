@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Physiologically produced aldehydes (formaldehyde, methylglyoxal, acetaldehyde, and others) generate stable adducts with aminoacyl-tRNAs by modifying the amino group of amino acids, with modification propensity decreasing with increasing aldehyde chain length. The aldehydes with higher modification propensity are present in higher amounts in plants and archaea, and aldehyde modification stabilizes the ester linkage by ~13-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C33 provide converging evidence from TLC, mass spectrometry (including MS2 fragmentation), and alkali treatment experiments demonstrating aldehyde modification of aa-tRNAs. The data clearly show modification occurs on the amino group, varies with aldehyde chain length and electrophilicity, and stabilizes the ester bond. The correlation with physiological aldehyde abundance strengthens the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "EF-Tu protects L-aa-tRNAs from aldehyde modification (including formaldehyde) through tight selection of the amino group by main chain atoms, while D-aa-tRNAs are rejected by EF-Tu due to steric clashes and thus remain susceptible to aldehyde modification. Accumulation of stable aldehyde-modified D-aa-tRNAs depletes the free tRNA pool, making their removal essential for cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 combine structural analysis (PDB structures, molecular modeling), sequence conservation analysis, and biochemical data (TLC assays) to demonstrate EF-Tu-mediated protection of L-aa-tRNAs from aldehydes. The structural modeling showing D-amino acid clashes with EF-Tu is well-supported, and the biochemical data confirm formaldehyde protection. The inference about tRNA pool depletion logically follows from the demonstrated stability of aldehyde-modified D-aa-tRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DTD2 from both plants and archaea specifically removes aldehyde-modified D-aa-tRNAs, with activity decreasing with increasing aldehyde chain length and showing ~100-fold higher activity on methylglyoxal-modified substrates compared to propionaldehyde-modified substrates. DTD2 is active on formaldehyde, acetaldehyde, methylglyoxal, and propionaldehyde modifications but inactive on butyraldehyde and longer chain aldehydes. DTD1 and PTH are inactive on these substrates, making DTD2 the only aldehyde detoxifier recycling the tRNA pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C55 present extensive biochemical deacylation assays with multiple DTD2 orthologs (plant and archaeal), DTD1, and PTH enzymes tested against various aldehyde-modified substrates. The data consistently show DTD2-specific activity with clear substrate preferences correlating with physiological aldehyde abundance. The comparison with DTD1 and PTH provides strong evidence for DTD2's unique role. The correlation between DTD2 activity range and physiological aldehyde levels (C52) strengthens the evolutionary argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Loss of DTD2 renders Arabidopsis plants susceptible to formaldehyde and methylglyoxal in addition to ethanol, with reduced germination (~40%) and growth. Complementation with wild-type DTD2 rescues the phenotype, while a catalytic mutant (H150A) shows similar sensitivity to dtd2 knockout plants. The toxic effects are enhanced by D-amino acid supplementation, and aldehyde-modified D-aa-tRNA adducts accumulate in the absence of DTD activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56-C64 provide comprehensive in vivo validation through genetic complementation, catalytic mutant analysis, and mass spectrometry detection of adducts. The use of multiple plant lines (knockout, rescue, catalytic mutant) with consistent phenotypes across different aldehydes strongly supports DTD2's role in aldehyde detoxification. The enhanced toxicity with D-amino acid supplementation (C60-C61) elegantly links DTD2's chiral proofreading and aldehyde detoxification activities. The E. coli surrogate system data (C63) provides additional evidence for adduct accumulation, though the authors acknowledge limitations in detecting these adducts directly in plants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C93",
+      "C94"
+    ],
+    "result": "Overexpression of DTD2 in Arabidopsis provides enhanced tolerance to formaldehyde and methylglyoxal compared to wild-type plants, with >50% increased seedling growth and extensive root growth under aldehyde stress. This enhanced tolerance is more pronounced when D-amino acids are supplemented with aldehydes, suggesting DTD2 overexpression as a viable strategy for generating multi-stress-resistant crop varieties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C65-C68, C71, C93-C94 demonstrate gain-of-function phenotypes complementing the loss-of-function data. The quantitative growth measurements show significant improvements in DTD2 overexpression lines under aldehyde stress. The enhanced root growth is particularly relevant given the citation linking root growth to multi-stress tolerance (C70). However, the claim about crop development strategy (C71) is somewhat speculative as it's based solely on Arabidopsis data and would require validation in crop species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The expansion of aldehyde metabolizing repertoire (ALDH, glyoxalase, AOX genes) and pectin biosynthesis/degradation machinery in land plants and their charophyte ancestors strongly correlates with the recruitment of archaeal DTD2. DTD2 from charophyte algae (Klebsormedium nitens) shows similar aldehyde-modified D-aa-tRNA recycling activity as plant and archaeal DTD2s, suggesting the multi-aldehyde problem originated in charophytes during terrestrialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C72-C83 combine biochemical validation of charophyte DTD2 activity with extensive bioinformatic analysis of aldehyde metabolism genes and pectin-related genes across plant lineages. The correlation between DTD2 recruitment and expansion of aldehyde metabolism is well-documented through KEGG database searches and phylogenetic distribution analysis. The biochemical data from charophyte DTD2 (C72) provides direct evidence linking the activity to plant ancestors. However, the causal relationship implied by 'strongly correlates' (C7, C83) is inferential rather than experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C89",
+      "C103"
+    ],
+    "result": "There is a correlation between physiological abundance of aldehydes, their modification propensity, and DTD2's aldehyde protection range. DTD2's preferential activity on methylglyoxal-modified substrates over propionaldehyde-modified substrates (despite both being 3-carbon modifications) points to evolutionary selection pressure for abundant and physiologically relevant aldehydes. This establishes DTD2's role in mitigating aldehyde-induced toxicity during protein biosynthesis in land plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86, C89, C103 synthesize the biochemical, in vivo, and evolutionary data to present an integrated model. The correlation between aldehyde abundance, modification propensity, and DTD2 activity is well-supported by the data presented throughout the manuscript. The evolutionary argument about substrate specificity (C86) is a reasonable inference from the biochemical data showing differential activity on MG vs. propionaldehyde. The sensitivity of dtd2 plants to abundant aldehydes (C89) supports the coevolution hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "DTD2 activity likely originated in the last archaeal common ancestor due to the ancient presence of reactive aldehydes and D-amino acids, and archaea's production of high formaldehyde levels in extreme environments. This activity was later acquired by land plants, possibly through bog ecosystems rich in D-amino acids and aldehydes, aiding in terrestrialization. The mechanism of gene transfer (direct from archaea or via intermediate bacterium) remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C102 present an evolutionary narrative based on the distribution of DTD2, aldehyde/D-amino acid presence in early Earth, and archaeal ecology. While the biochemical data showing archaeal DTD2 activity (C98) is solid, the evolutionary inferences about ancient origin (C96), gene transfer mechanism (C99, C102), and role in terrestrialization (C101) are speculative. The bog ecosystem hypothesis (C100) is supported by citations but remains circumstantial. The acknowledgment of uncertainty about transfer mechanism (C102) is appropriate. More phylogenetic and comparative genomic analysis would be needed to strongly support these evolutionary claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Aldehydes are integral to plant physiology in carbon metabolism, energy generation, and signaling, but become toxic at high concentrations by modifying biological macromolecules. Land plants have evolved metabolic pathways involving aldehyde production and detoxification. Archaea and plants possess aldehydes in high amounts (>25-fold higher) without toxicity, suggesting specialized protective mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 establish the biological context through extensive citations to prior work. The claims about aldehyde roles (C1, C9-C13) and toxicity (C14-C15) are well-supported by literature. The key observation about high aldehyde tolerance in plants and archaea (C16) is supported by both citations and data (Figure 1\u2014figure supplement 1A). The inference about specialized protective mechanisms (C17) is reasonable given the data, though the specific mechanisms are what the rest of the paper investigates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Plants possess two distinct chiral proofreading systems (DTD1 and DTD2) of bacterial and archaeal origins. Previous work identified GEK1 (later identified as DTD2) as essential for plant protection from ethanol and acetaldehyde, and showed that acetaldehyde irreversibly modifies D-aminoacyl-tRNAs with only DTD2 able to recycle these modified substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18-C25 summarize prior work establishing the foundation for the current study. These claims are well-supported by citations to previous literature, including the authors' own prior work (C24-C25). The distribution of DTD enzymes across life (C21) and their protective roles (C22-C23) are established facts from prior studies. This provides appropriate context for extending the investigation to other aldehydes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Plants produce aldehydes in large amounts under stress conditions, and plant stress tolerance is influenced by root growth. Plants are used as air purifiers due to their aldehyde scavenging ability, with higher removal rates for formaldehyde and acetaldehyde. Overexpression of aldehyde detoxification enzymes provides multi-stress tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C90-C92 provide additional context from prior literature about plant aldehyde biology and stress responses. These are well-supported by citations and help justify the significance of the DTD2 overexpression results. The claims establish that aldehyde detoxification is a validated strategy for stress tolerance, positioning DTD2 as a novel addition to this toolkit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "PTH substrates contain carbonyl carbon at the alpha position after the amino group in L-aa-tRNA, and PTH's inactivity on methylglyoxal-modified substrates suggests specificity for this carbonyl carbon at the alpha position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 provide mechanistic insight into PTH substrate specificity through comparison with DTD2. C87 is supported by citation to prior work, while C88 is a reasonable inference from the biochemical data showing PTH inactivity on MG-modified substrates (Figure 3\u2014figure supplement 2M-Q). This helps explain the functional distinction between PTH and DTD2 despite their similar folds.",
+    "result_type": "MINOR"
+  }
+]

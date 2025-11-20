@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The crystal structure of ASBTNM in complex with pantoate was solved at 2.3 \u00c5 resolution, revealing that pantoate binds specifically between the N-termini of cross-over helices TM4b and TM9b in the core domain. Pantoate binding was confirmed by stability assays and ITC measurements (KD = 127 \u03bcM), with the structure showing clear electron density for pantoate and two sodium ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C70 provide converging evidence from multiple experimental approaches (crystallography, stability assays, ITC) that consistently demonstrate pantoate binding to ASBTNM. The structural data clearly shows the binding site location and interactions, supported by appropriate resolution (2.3 \u00c5) and electron density maps. The binding affinity measured by ITC (127 \u03bcM) is comparable to the reported KM for taurocholate (50 \u03bcM), providing additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C134"
+    ],
+    "result": "Pantoate binding induces a conformational change in TM4b, with Thr 112 displaced by ~2.4 \u00c5 and the entire helix moving slightly toward pantoate. This conformational change also causes displacement of Ile 203 on the panel domain (~1.2 \u00c5), which may trigger the large movement of TM1 observed in the pantoate-bound structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C71-C76, C80, C134 are well-supported by structural comparisons between ASBTNM(Pan), ASBTNM(TCH), and ASBTNM(ns). The displacement measurements are quantitative and derived from crystallographic data. The control structure ASBTNM(ns) demonstrates that these changes are specifically due to pantoate binding rather than crystallization conditions or absence of taurocholate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95"
+    ],
+    "result": "Molecular dynamics simulations over 0.5 \u03bcs demonstrate that sodium ions stabilize pantoate binding at the N-termini of the cross-over helices. With sodium present, hydrogen bonds between pantoate and main chain atoms of T112, A113, and G267 remain intact, while in the absence of sodium, pantoate becomes more mobile with intermittent interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C87-C93, C95 are supported by extensive MD simulation data (0.5 \u03bcs, three replicates per condition) comparing sodium-bound and sodium-free states. The simulations show consistent differences in pantoate stability and hydrogen bonding patterns between conditions. The identification of an alternative Na1* binding site (C92) adds mechanistic insight. The simulation parameters and analysis methods are appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C98"
+    ],
+    "result": "Mutagenesis studies reveal that Asn 265 is critical for pantoate binding (N265A abolishes binding), while mutations at Thr 112 surprisingly increase affinity (T112V: 87 \u03bcM; T112A: 11 \u03bcM), with the T112A mutation showing entropy-driven binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84, C98 are supported by ITC measurements for each mutant. The complete loss of binding for N265A is clear and reproducible. The unexpected increase in affinity for T112 mutations is well-documented with quantitative KD values and thermodynamic parameters. The entropy-driven nature of T112A binding provides mechanistic insight, though the authors acknowledge this result is surprising and requires further interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Structure-activity relationship studies using a panel of similar compounds show that none stabilize ASBTNM as effectively as pantoate, demonstrating the importance of the hydroxy-acetate group. Replacing the hydroxyl with a ketone (as in ketopantoate) disrupts binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by stability assay data (Figure 5\u2014figure supplement 1) testing multiple compounds. The results consistently show pantoate as the most effective stabilizer. The interpretation that the hydroxy-acetate group is critical is reasonable given the structural data showing interactions with main chain atoms. The explanation for ketopantoate's lack of binding (unfavorable interaction with Asn 265) is a plausible inference from the structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Structural comparisons reveal that ASBTNM(Pan) and ASBTNM(TCH) are highly similar (RMSD 0.6 \u00c5), with the most substantial difference being a ~75\u00b0 rigid body movement of TM1 in the pantoate-bound structure. The substrate-free structure ASBTNM(ns) is nearly identical to ASBTNM(TCH) (RMSD 0.5 \u00c5) with only a subtle ~15\u00b0 pivot of TM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C77-C79 are supported by quantitative structural superposition data. The RMSD values and number of aligned atoms are clearly stated. The TM1 movements are well-documented with specific angle measurements. The comparison with ASBTNM(ns) provides an important control showing that the large TM1 movement is specific to pantoate binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C112",
+      "C111",
+      "C110",
+      "C109"
+    ],
+    "result": "The position of pantoate in the ASBTNM structure is consistent with an elevator mechanism of transport. Modeling shows pantoate could be accommodated in the outward-facing state, and as a sodium-coupled symporter, pantoate should bind to the outward-facing form and trigger movement to the inward-facing state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by structural modeling (Figure 7\u2014figure supplement 1) and comparison with ASBTYF structures. The consistency with the elevator mechanism is a reasonable inference based on the binding site location within the core domain and the ability to model pantoate in the outward-facing state. The mechanistic interpretation is consistent with established knowledge of sodium-coupled symporters (C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C136"
+    ],
+    "result": "Thr 112 moves by 2.4 \u00c5 upon pantoate binding and comes within 2 \u00c5 of Met 48 on the panel domain during conformational transitions. This interaction may block conformational switching, and the movement of the threonine side-chain may unlock the transporter to enable the elevator mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C117, C136 mix well-supported structural observations (C114: 2.4 \u00c5 movement) with speculative mechanistic interpretations (C116-C117, C136). The proximity of Thr 112 to Met 48 during morphing (C115) is based on modeling rather than direct structural observation. The proposed 'unlocking' mechanism is explicitly stated as speculation and lacks direct experimental validation. While plausible, this mechanistic model requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The pantoate binding mode can be extrapolated to plant BASS transporters, which have conserved sodium binding sites and cross-over regions. Substrates like pyruvate and glycolate could form similar hydrogen bonds with main chain atoms. Residue substitutions in non-BASS1 plant transporters (serine and glutamine replacing Asn 265 and Thr 112) may allow keto-acid binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C123 are based on sequence conservation analysis (C119, C121) and structural inference (C120). While the conservation data supports similarity, the extrapolation to binding modes and substrate specificity (C120, C122) is speculative. The proposed mechanism for keto-acid binding (C122) lacks experimental validation. These are reasonable hypotheses but require experimental testing in plant BASS transporters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C140"
+    ],
+    "result": "Human bile acid transporters likely use a similar mechanism, with substrates forming interactions with main chain atoms of cross-over helices. Mutagenesis studies in human ASBT and NTCP show that residues equivalent to Asn 265 and Thr 112 are functionally important, suggesting mechanistic similarity despite uncertainty about exact bile acid binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C128, C140 combine cited mutagenesis data from human transporters (C125-C127) with speculative mechanistic extrapolation (C124, C128, C140). The mutagenesis data supports functional importance of conserved residues, but the exact binding mode of bile acids remains unclear (C139). The inference of mechanistic similarity is reasonable but not definitively proven. The large size and chemical diversity of bile acids compared to pantoate makes direct extrapolation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The bile acid binding mode observed in NTCP structures shows weak interactions with the cross-over region and is difficult to reconcile with the elevator mechanism. This may represent a non-productive binding mode, and productive transport may require stronger interactions with the cross-over region linking sodium and substrate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C132 are based on analysis of published NTCP structures and are explicitly speculative (C131-C132). The observation of weak interactions (C129) and inconsistency with the elevator mechanism (C130) are reasonable interpretations of the cited structures. However, the proposal that this represents non-productive binding (C131) and the requirement for stronger cross-over interactions (C132) are hypotheses that lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ASBTNM binds pantoate, consistent with pantoate being a substrate for homologous transporters PanS and BASS1. ASBTNM and ASBTYF share high sequence identity with PanS (43% and 83% respectively), and PanS has been implicated in pantoate transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C45-C47 are supported by the binding data presented in this study combined with sequence analysis and cited literature on PanS and BASS1. The sequence identity values (C45) are quantitative and based on alignment data. The consistency with literature on PanS (C46) and BASS1 (C47) transport provides independent validation of the biological relevance of pantoate binding to ASBTNM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C99",
+      "C137",
+      "C138"
+    ],
+    "result": "Sodium ions may structure the cross-over region in readiness for substrate binding. In sodium-free structures of ASBTYF, the pantoate-interacting region adopts varying positions. Without sodium, residues may be more flexible, potentially allowing conformational switching without substrate-mediated changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C99, C137-C138 are explicitly speculative (C96, C99, C138) or based on cited structures rather than data from this study (C97). While the MD simulations support sodium's role in stabilizing pantoate binding, the broader mechanistic proposals about sodium structuring the binding site (C96) and enabling substrate-independent conformational changes (C138) are hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Pantoate is firmly embedded in the core domain with only van der Waals interactions with panel domain residues Ile 47 and Ile 203. These residues are conserved in PanS and ASBTYF but replaced in BASS1. Phe 15 is conserved but the N-terminus shows little conservation, suggesting its position may not be critical for transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 are supported by structural observations and sequence analysis. The binding site location (C100-C101) is clearly shown in the structure. The conservation analysis (C102-C103, C106-C107) is based on sequence alignments. The inference about TM1's role (C108) is speculative but reasonable given the lack of conservation. The proposed mechanism for TM1 movement (C104) is an inference from structural comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Bacterial BASS transporters are built from 10 transmembrane helices arranged in two domains (core and panel) with a twofold inverted repeat. The core domain features two extended cross-over helices with residues contributing to two sodium binding sites (Na1 and Na2), which are conserved in ASBT and NTCP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe established structural features of bacterial BASS transporters based on prior crystal structures and confirmed by the current study. The 10-helix architecture (C23-C24) and cross-over arrangement (C25-C26) are directly observed in the structures. Conservation of sodium binding residues (C27) is demonstrated by sequence alignment (Figure 1\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background information on BASS family transporters, including their substrate diversity, sodium coupling, elevator mechanism, clinical relevance, and prior structural studies on bacterial and human transporters. Previous structures showed taurocholate binding to ASBTNM in a mode not entirely consistent with the elevator mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C6-C7, C13-C22, C28-C44 represent background knowledge and cited literature that provides context for the current study. These claims are appropriately supported by citations to relevant literature and represent established knowledge in the field. The assessment that taurocholate binding in ASBTNM is not entirely consistent with the elevator model (C35-C37) is a reasonable interpretation that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "There is evidence of a lipid-like molecule within the binding site of ASBTNM(Pan).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is mentioned briefly without detailed characterization or clear electron density shown for this lipid. The identity and significance of this molecule are not established. This observation requires further investigation and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The interaction of Ile 207 with pantoate as the protein moves to the inward-facing state may trigger pantoate release rather than TM1 movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is explicitly stated as speculation about the release mechanism. While it's a plausible hypothesis based on the structural observations, there is no direct experimental evidence for this proposed mechanism. The claim requires experimental validation through mutagenesis or other functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "The absence of TM1 in bile acid transporters is unlikely to affect the elevator mechanism unduly, since pantoate does not interact with TM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is a reasonable inference based on the structural observation that pantoate makes no direct interactions with TM1. The logic is sound: if the substrate doesn't interact with TM1 in the bacterial transporter, its absence in human transporters should not fundamentally alter the mechanism. However, this remains an inference rather than direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "The exact binding mode of bile acids in human proteins remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 accurately summarizes the current state of knowledge. Despite recent structures of NTCP with bile acids, the binding mode remains controversial and difficult to reconcile with the elevator mechanism, as discussed in the manuscript. This represents an honest assessment of the limitations in current understanding.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C24",
+      "C25",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C98",
+      "C99"
+    ],
+    "result": "TF binding creates microdomains visible in ensemble-based contact maps, with the clarity and formation of these microdomains depending on linker DNA length. Fibers with medium (44 bp) and long (62 bp) linker DNAs show clear microdomains dependent on TF binding positions, while short linker (26 bp) fibers show more diffuse microdomains due to fiber rigidity. Life-like fibers with heterogeneous linker lengths also form microdomains, though slightly more diffuse than uniform systems due to fiber polymorphism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this finding. The editor states there is 'convincing evidence for the emergence of chromatin microdomains due to the action of transcription factors.' Reviewer 1 notes 'TF binding could create microdomains that are visible in the ensemble-based contact maps and short DNA linkers prevent the formation microdomains.' Reviewer 2 describes this as 'one of the novel results' demonstrating 'how linker lengths play an important role' and notes 'the formation of the micro-domains' agrees with known experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Ensemble-based contact maps (analogous to Hi-C maps from cell populations) reveal microdomains, while single-trajectory contact maps (analogous to single-cell Hi-C) do not show clear microdomain formation. The checker-board patterns indicating microdomains emerge from averaging multiple trajectories, similar to how cohesin dictates preferential positioning of boundaries at CTCF sites to produce ensemble TAD structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this methodological finding without critique. Reviewer 2 notes 'Authors compute inter-nucleosomal contact maps from their simulated configurations and show that the map has features similar to what is observed in Hi-C/Micro-C experiments.' The comparison to experimental TAD formation is implicitly accepted through the reviewers' acknowledgment that results 'agree with known experiments.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C105"
+    ],
+    "result": "The effect of TF binding on chromatin compaction (measured by packing ratio and sedimentation coefficient) depends critically on linker DNA length. Short linker fibers (26 and 35 bp) show no increase in packing ratio upon TF binding, with saturation at 25% TF concentration. Medium and long linker fibers (44-80 bp) show increased compaction with TF binding, with larger changes for longer linkers. Life-like fibers behave similarly to medium/long linker fibers but are less sensitive to TF concentration increases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly identifies this as 'one of the novel results' and states 'the demonstration of how linker lengths play an important role in chromatin compaction (measured by computing packing ratio) in the presence of DNA-bending TFs.' The reviewer describes the findings in detail, noting 'As the TF concentration increases, chromatin with short linker lengths does not compact much (only a small change in packing ratio). If the linker lengths are long, a higher percentage of TFs leads to an increase in packing ratio.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Histone acetylation diminishes the effect of TF binding on chromatin compaction. When acetylation islands are incorporated, the trends in packing ratios and sedimentation coefficients remain similar to wildtype systems, but the magnitude of TF binding effects is reduced. This occurs because histone acetylation disrupts internucleosome contacts and opens chromatin structure, which is opposite to the compacting effect of TF binding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes 'It has also been shown that tail acetylation and TF binding have opposite effects on chromatin compaction.' This finding is accepted without critique by all reviewers as part of the systematic analysis of how different factors modulate TF effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Linker histone (LH) binding diminishes the effect of TF binding on chromatin compaction, particularly for short linker fibers. LH and TF compete for compacting chromatin, with LH producing straighter, ordered structures while TF produces more globular fibers. For short linker fibers with LH, TF binding does not increase packing ratio or sedimentation coefficient, and some TF dimer interactions cannot form due to fiber rigidity imposed by LH. Life-like fibers better accommodate simultaneous LH and TF binding than uniform fibers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'linker histone can compete for the linker DNA with TF binding to impair the effect of TF binding.' Reviewer 2 notes this is part of the 'systematic investigation' of 'the interplay between different variables such as linker DNA length, LH density, and the TF concentration in determining chromatin compaction and 3D organization.' The findings are accepted as justified by the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C104",
+      "C124"
+    ],
+    "result": "Life-like fibers with heterogeneous linker DNA lengths show unique behavior in accommodating both LH and TF binding. The increase in packing ratio upon TF binding at 25% concentration is slightly higher for life-like fibers with LH than for wildtype systems, indicating that simultaneous binding of LH and TF is better accommodated in life-like fibers than in uniform fibers. This demonstrates that fiber fluidity triggered by variations in linker DNA is essential for regulation by multiple protein binding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'Authors further show that TFs are able to compact life-like chromatin fiber with linker length taken from a realistic distribution.' The reviewers accept this finding as part of the systematic demonstration of how chromatin features modulate TF effects, with no critiques raised about the life-like fiber results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C125"
+    ],
+    "result": "For the Eed gene locus, TF (Myc:Max) binding increases internucleosome contacts, fiber compaction, and formation of hairpin motifs and hierarchical loops. The contact matrix density increases by ~9%, the sedimentation coefficient increases, and the radius of gyration decreases upon TF binding. Critically, the promoter region (TF binding region 1) becomes occluded, with its area and volume reduced ~1.5 times, providing a mechanism for Myc:Max-mediated repression of Eed through increased fiber folding and promoter occlusion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'authors found that binding of Myc:Max could repress the gene expression by increasing fiber folding and compaction.' Reviewer 2 notes 'Authors study the compaction of the Eed gene locus and show that TF binding leads to the formation of small domains known as micro-domains.' The editor affirms the work 'greatly improves our understanding of how the joint action of transcription factors and chromatin features affects chromatin structure and accessibility.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "High LH density (0.8 LH/nucleosome) reverses the repressive effect of Myc:Max on the Eed gene. When LH density increases, the fiber becomes more compact and less flexible, preventing Myc:Max dimers from interacting. In simulations with LH density 0.8 and TF, only 1 out of 20 trajectories showed engaged dimers, and systems with and without TF exhibited similar properties, structures, and genomic contacts. This implicates LH in gene activation by impairing the effect of repressive proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes 'this repression can be reversed by the linker histone.' This finding is accepted as part of the demonstration that 'TF and LH binding work together to regulate gene expression,' with reviewers raising no concerns about the Eed gene modeling results or the interpretation of LH's role in counteracting TF-mediated repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The simulation results agree with experimental observations that silent chromatin has longer linker DNA than active chromatin, and that longer linkers provide flexibility needed for folding and loop formation that compact chromatin and repress transcription. The findings align with cryo-EM results showing long linker DNAs produce relaxed trajectories enabling LH binding and transcriptionally silent heterochromatin, while short linkers preclude LH binding and produce active chromatin.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'Many of the results agree with known experiments like the formation of the micro-domains' and notes the work incorporates 'well-known biophysical properties.' The agreement with experimental observations is accepted by reviewers as validation of the model, with no concerns raised about these comparative claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The findings support that epigenetic regulation by transcription factors depends on the delicate interplay of multiple factors present in the cell. TFs collaborate with epigenetic marks and intrinsic chromatin features like linker lengths to regulate chromatin folding at multiple scales and hence gene expression. These structural effects translate into regulation of cell differentiation, development, and disease progression, consistent with observations that LH depletion can both increase and decrease gene expression in mESC and down-regulate euchromatin genes in Drosophila.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 concludes 'This study improves our knowledge on how TFs collaborate with different epigenetic marks and chromatin features to regulate chromatin structure and accessibility.' The editor states the work 'greatly improves our understanding of how the joint action of transcription factors and chromatin features affects chromatin structure and accessibility, which is of interest to anyone studying gene regulation.' The broader implications are accepted as justified by the systematic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The implicit modeling approach for TF binding, while simple, provides clear trends and guiding insights into chromatin architecture regulation by protein binding. Further modeling with explicit proteins or consideration of various biomolecules will increase understanding of genome regulation at multiple structural and temporal levels in complex cellular contexts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'the authors start with a relevant model that incorporates well-known biophysical properties' and concludes 'the conclusions made in this study are justified - they follow from the simulation results.' The editor calls this an 'important study' with 'convincing evidence.' The acknowledgment of model limitations and future directions is accepted without critique.",
+    "result_type": "MINOR"
+  }
+]

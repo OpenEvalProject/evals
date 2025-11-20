@@ -1,0 +1,443 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors developed a synthetic long-read single-cell sequencing technology by integrating Element Biosciences' LoopSeq intramolecular barcoding with 10x Genomics' cell barcoding. The methodology involves encapsulating 200-300 cells using a GEM system, followed by reverse transcription with 10x adapters (containing 16-bp cell barcode, 12-bp UMI, and 30-bp poly(dT)), Loop adapter ligation (with 12-bp LOOP UMI and 6-bp sample index), and enrichment using exome probes representing 19,433 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, C23-C26 provide detailed methodological descriptions supported by Figure 1 and the Methods section. The integration strategy is clearly documented with specific technical parameters (barcode lengths, probe coverage). The workflow is logically presented from cell encapsulation through adapter ligation to enrichment, providing sufficient detail for the methodological claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The technology was applied to analyze 447 single-cell transcriptomes (162 benign liver, 285 HCC) from one patient. Sequencing generated 2.985 billion short-reads for benign liver and 3.814 billion for HCC, which assembled into 5.8 million and 6 million long-read transcripts respectively. Average gene/isoform counts were 1186 genes and 1331 isoforms per cell (benign) and 1266 genes/isoforms per cell (HCC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21, C27-C33 provide consistent quantitative data about the sequencing depth and output. The numbers are internally consistent (more reads \u2192 more transcripts \u2192 valid cell counts). However, the study is limited to a single patient, which restricts generalizability. The technical replication appears adequate for proof-of-concept but biological replication is absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Novel isoform discovery identified 8,646 novel isoforms in benign liver tissue (average 442 per cell) and 14,229 novel isoforms in HCC (average 450 per cell) based on SQANTI v1.2 annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 report novel isoform counts with appropriate annotation tool citation (SQANTI v1.2). The higher number of novel isoforms in HCC (14,229 vs 8,646) is consistent with greater transcriptional diversity in cancer. However, validation of these novel isoforms is not described, and it's unclear how many represent true biological variants versus technical artifacts or assembly errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Mutation analysis was performed using exome sequencing of benign liver, HCC, and gallbladder (germline control) from the same patient. After filtering for non-synonymous mutations detected in \u22653 cells, 2,939 expressed mutations were identified. Further filtering for genes with mutated expression SD \u22650.4 yielded 282 genes for downstream analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe a logical filtering strategy using gallbladder as germline control (C39) and applying reasonable thresholds (\u22653 cells, SD \u22650.4). The use of germline control is appropriate for identifying somatic mutations. However, the arbitrary SD threshold of 0.4 lacks statistical justification, and the requirement of \u22653 cells may miss rare but important mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "UMAP analysis based on 282 mutated genes (SD>0.4) showed HCC cells clustering separately from benign liver cells. Analysis of 205 mutational isoforms (SD>0.4) revealed three distinct clusters: one entirely HCC cells, and two mixed clusters containing both HCC and benign liver cells, interpreted as transitional stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C46 are supported by Figure 3A-B showing clear clustering patterns. However, C47's interpretation of mixed clusters as \"transitional stage\" is speculative without temporal data or lineage tracing. The mixed clusters could represent: (1) true transitional cells, (2) contamination, (3) heterogeneous cell populations, or (4) technical artifacts. No validation or additional evidence supports the transitional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Cluster-specific mutation analysis identified 3,335 mutation isoforms in cluster A, 2,175 in cluster B, and 1,783 in cluster C, with 1,523, 442, and 288 unique mutations respectively. Combining mutations from all clusters and filtering for expression in \u22655 cells yielded 104 mutations that resolved eight distinctive clusters in UMAP analysis, with cells co-migrating with their tissue sources in all but one cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C58 provide detailed quantitative analysis supported by Figure 3D-F and Venn diagrams. The progressive filtering strategy (cluster-specific \u2192 combined \u2192 \u22655 cells) is logical and well-documented. The eight-cluster resolution with source co-migration provides validation of the clustering approach. However, the biological significance of the \u22655 cell threshold is not justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Among 104 mutation isoforms, HLA genes dominated with 68 iterations (60.2%). Specific HLA mutations characterized different clusters: HLA-B mutations (G283A, C44G) in cluster A; HLA-B mutations (G572C, G539T, A527T, C463T, G283A) in cluster B; HLA-B mutations (G379C, A167T) in cluster C; up to 25 HLA-DQB1 mutations in cluster D; unique HLA-C mutations in benign liver clusters F and G. All cells in clusters A-G were HLA mutation-positive, while only 10/cluster H cells were positive (p=2.9\u00d710\u207b\u00b3\u2070), indicating cancer-specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 are well-supported by Figure 4 and detailed mutation cataloging. The statistical significance (p=2.9\u00d710\u207b\u00b3\u2070) for cancer-specificity is compelling. The cluster-specific mutation patterns are clearly documented. However, the functional consequences of these mutations are not validated, and the surprising finding of HLA mutations in benign liver clusters (C64-C65) requires further investigation to rule out contamination or early transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Long-read sequencing enabled identification of multiple mutations in single HLA molecules. HLA-DQB1 showed up to 25 missense mutations in a single molecule (49 cells), causing 24 amino acid changes. The authors hypothesize these mutations accumulated progressively from isolated mutations over time during HCC development, with one pathway potentially starting at aa252 (R252H). Some isolated mutations (R252H, S214N+R199H) were found in benign liver cells and became associated with malignancy upon accumulation of additional mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C71 are strongly supported by Figure 5A showing clear evidence of multiple mutations per molecule\u2014a key advantage of long-read sequencing. However, C72-C73 are explicitly hypothetical, and C75-C77 infer evolutionary pathways without temporal data. The presence of isolated mutations in benign liver (C76) is interesting but the causal relationship with malignancy (C77) is correlative, not demonstrated. Lineage tracing or temporal sampling would be needed to validate the proposed evolutionary model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "HLA-B NM_005514_2 contained 11 mutations total, with the hypermutation cluster originating from nine different isolated mutations. The main accumulation pathway appeared to start from W191S or A15G mutations, expanding contiguously to reach a peak of eight mutations (149 cells), with one cell reaching 10 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by Figure 6A-B showing mutation patterns and proposed evolutionary pathways. The quantitative data (11 total mutations, 149 cells with 8 mutations) is clearly presented. However, the \"main pathway\" inference (C80) is based on pattern analysis without temporal validation. The contiguous expansion pattern is descriptive but the mechanistic basis is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "HLA-C NM_002117 showed 14 different missense mutations, with the major cascade appearing to start from L180R or S140F mutations. The L180R+S140F combination was most common (222 cells), followed by L180R+S140F+R59Q (147 cells). One cell accumulated eight mutations, with accumulation appearing non-contiguous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by Figure 7A-B with clear quantitative data. The non-contiguous pattern (C87) contrasts with the contiguous pattern in HLA-B, suggesting different mutational mechanisms. However, the evolutionary pathway inference (C84) lacks temporal validation, and the biological significance of contiguous vs. non-contiguous patterns is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "HLA-DRB1 NM_002124 contained up to five different mutations in a single molecule, with all five isolated mutations identified. The peak mutation accumulation (81 cells) was the combination S133A+A103P+A102G+T80R, with multiple pathways potentially leading to this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by Figure 8A-B. The identification of all isolated mutations (C89) and the peak combination (C90) are clearly documented. The multiple pathway hypothesis (C91) is reasonable given the data but remains inferential without temporal or lineage information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "DOCK8 showed significantly increased mutation isoform expression in HCC cells, with three mutations detected and six novel isoforms identified. Notably, no wild-type DOCK8 isoforms were found in either benign liver or HCC cells\u2014all HCC DOCK8 transcripts contained at least one mutation. Some HCC cells expressed two mutation patterns, suggesting bi-allelic mutations. The absence of wild-type transcripts implies mutation may play a role in DOCK8 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C98 are supported by Figure 9A showing mutation patterns. However, C97's claim of \"no known wild-type isoform\" is concerning\u2014this could indicate: (1) true absence, (2) technical detection issues, (3) annotation problems, or (4) that DOCK8 is not normally expressed in liver. C99's inference of bi-allelic mutations is reasonable but C100's causal implication that \"mutation may play a role in DOCK8 expression\" is speculative. The complete absence of wild-type transcripts requires validation and mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "STEAP4 G75D mutation appeared somatic (absent in gallbladder), located in the NADP-binding domain, potentially impacting enzymatic function. STEAP4 expression was exclusive to HCC cells, with both wild-type and mutant transcripts identified. One HCC cell expressed both mutant and wild-type transcripts in multiple isoforms. Unlike DOCK8, STEAP4 mutation expression was not biased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 are supported by Figure 9B and germline comparison. The somatic nature (C103) is appropriately inferred from gallbladder absence. The domain location (C104) is factual, but functional impact (C105) is speculative without enzymatic assays. The HCC-specific expression (C106) and co-expression of wild-type and mutant (C107-C108) are clearly shown. The contrast with DOCK8 (C109) is interesting but \"not biased\" is vague\u2014quantitative comparison would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Twenty-one fusion genes were identified after multilayer screening, with three selected for experimental validation. ACTR2-EML4 was cancer-specific, retaining most of EML4's WD repeat domain while removing most of ACTR2 sequence; loss of the microtubule-binding domain may negatively impact microtubule organization. PDCD6-CCDC127 retained most of CCDC127's coiled-coil domain and a single PDCD6 EF-hand domain; the new calcium-binding motif may alter signaling. PLG-FGG is a unique exonic chromosomal translocation producing truncated plasminogen; C-terminus removal may lead to constitutive protease activation and enhanced coagulation/signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 are supported by Figure 10 and RT-PCR validation (Figure 9\u2014supplement 1). The structural descriptions (C115, C119, C121-C122) are supported by sequence analysis. However, all functional predictions (C116, C120, C123) are speculative without experimental validation. The \"multilayer screening\" criteria (C110) are described in Methods but the 21\u21923 selection rationale is not clearly justified. Experimental validation confirms presence but not function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Adding fusion genes to UMAP analysis with 104 mutational isoforms caused cancer cell clusters A-D to shift significantly left and undergo major reshuffling, while benign liver clusters F-H remained in similar positions (cluster E moved right). This indicates fusions impacted mostly cancer cell characteristics with limited impact on benign hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by Figure 11A-C showing clear cluster repositioning. The differential impact on cancer vs. benign cells (C126) is a reasonable interpretation of the clustering changes. However, the biological meaning of \"shift left\" and \"reshuffling\" is not explained, and whether this represents biologically meaningful differences or just mathematical redistribution in UMAP space is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Cell segregation analysis at different SD thresholds (\u22650.5, 0.8, 1.0, 1.4) showed segregation occurred at SD>0.5, becoming more pronounced at higher SDs. Gene lists included all isoforms within the same SD range. UMAP analysis using non-overlapped genes (gene changes without isoform changes) showed dramatic reduction in cell segregation, while genes with both gene and isoform-level changes maintained segregation similar to full lists, suggesting isoform alterations were the underlying cause of cell separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C132 are supported by Figure 12, Figure 13, and supplementary figures showing systematic analysis at multiple thresholds. The key finding (C132) that isoform alterations drive cell segregation is supported by the comparison of overlapped vs. non-overlapped genes. This is a strong analytical approach demonstrating the importance of isoform-level analysis. However, the SD thresholds appear arbitrary without statistical justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Genes with SD\u22651.0 (182 genes) showed consistent down-expression of apolipoprotein family genes and up-expression of ribosomal protein and HLA family genes in HCC cells, indicating cancer cells were less hepatic differentiated but more active in protein synthesis and immune evasion. These abnormalities appeared similar to previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by the data and Figure 16. The interpretation (C135) is reasonable given the gene families involved\u2014loss of liver-specific apolipoproteins suggests dedifferentiation, while increased ribosomal proteins and HLA suggest proliferation and immune interaction. Citation of similar findings (C136) provides external validation. However, \"immune evasion\" is inferred from HLA upregulation without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Combining gene expression (182 genes, SD\u22651.0) with mutational gene expression (282 genes, SD>0.4) generated three UMAP clusters: two mostly cancer cells and one mostly benign liver. Compared to gene expression alone, the benign cluster (A) gained 7 benign liver cells and lost 27 HCC cells, suggesting mutation analysis helped reclassify misassigned cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by Figure 14A-C showing improved clustering. The reclassification of 34 cells (C139) demonstrates added value of mutation analysis. The interpretation (C140) is reasonable\u2014mutation data provides orthogonal information improving classification accuracy. However, without ground truth labels, \"misassigned\" is relative to clustering consistency rather than validated cell identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Adding fusion genes to the combined gene+mutation UMAP analysis caused cluster B to move closer to cancer cluster C, while cluster A gained 1 benign and 4 HCC cells. Five benign liver cells were consistently classified as cancer across analyses; these cells showed down-expression of apolipoprotein genes, up-expression of ribosomal protein and HLA genes, and extensive HLA mutations, suggesting they were likely cancer cells embedded in the benign liver sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 are supported by Figure 15A-C showing clustering changes and molecular profiles. The inference (C145) that these are cancer cells in benign tissue is well-supported by their molecular similarity to HCC cells across multiple features (gene expression, mutations). This could represent: (1) contamination during sampling, (2) early transformed cells, or (3) circulating tumor cells. The consistency across multiple analytical approaches strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Pathway analysis showed eukaryotic initiation factor (EIF2) signaling pathway dominated differential expression (-log p=104), followed by acute phase response signaling (-log p=35.8). EIF2 is essential for protein translation and cell survival/proliferation and is misregulated in various cancers; acute phase response may play roles in anti-apoptotic activity and poor clinical outcomes. The dysregulation of these pathways appeared to underlie HCC carcinogenesis mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147 provide strong statistical evidence for pathway enrichment with extremely significant p-values. The biological context (C148-C149) is appropriately cited. However, C150's conclusion that these pathways \"underlie the molecular mechanisms\" is an overstatement\u2014pathway enrichment shows association, not causation. The pathways could be consequences rather than drivers of carcinogenesis. Functional validation would be needed to establish mechanistic roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors establish the biological context and knowledge gaps: protein diversity is determined by isoform arrays; mutations are essential in evolution and cancer; genomic mutations in cancer are well-documented but their expression in RNA transcripts and protein isoforms was unclear, as was whether multiple non-adjacent mutations occur in the same allele. Long-read sequencing enables isoform quantification in bulk samples, but single-cell mutated mRNA expression analysis has seen little progress. LoopSeq has the lowest error rate among long-read technologies, making it suited for mutational isoform analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C12, C15-C16, C18 are appropriately cited background knowledge. Claims C13-C14, C17 correctly identify knowledge gaps that motivate the study. Claim C19's inference that LoopSeq is \"most suited\" for mutation analysis logically follows from C18's citation of its low error rate. This provides solid rationale for the methodological approach, though \"most suited\" is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The discussion contextualizes the work: long-read sequencing is essential for isoform detection; synthetic long-read sequencing offers high accuracy and low error rates but typically has low yield limiting analysis to few genes. The authors claim this is the first broad-spectrum mutational isoform expression study at single-cell level using synthetic long-reads. The technology may have broad utility in biology and medicine. Previous HCC long-read studies focused on splicing abnormalities; this study found gene expression dominated by one or two specific isoforms per cell, with HLA genes restricted to one known isoform regardless of mutation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 provide appropriate context with citations. C154's novelty claim appears reasonable given cited literature. C155-C156 are speculative about future applications but appropriately qualified with \"may.\" C157-C158 correctly characterize prior work limitations. C159-C160 are supported by Figure 16 showing isoform dominance patterns. C161-C162 identify knowledge gaps and speculate about mechanisms, appropriately qualified. The discussion appropriately contextualizes findings and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The discussion synthesizes HLA mutation findings: mutational gene expression of antigen-presenting genes dominated the mutation list from HCC cells. Most mutations occurred in extracellular domains\u2014all three \u03b1-domains in HLA-B/-C, and both \u03b2-domains plus peptide-binding motifs in HLA-DQB1/-DRB1. These mutations may alter T lymphocyte interactions and block both cytosolic and endocytic antigen presentation pathways. Mutated HLA expression levels increased compared to wild-type alleles from benign hepatocytes. The hypermutations may shield cancer cells from T lymphocyte recognition, enabling immune surveillance evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C166, C169 are supported by the data presented in Figures 4-8. C167-C168 appropriately cite literature for functional context. However, C170's conclusion about immune evasion is inferential\u2014the data show mutations and altered expression, but functional immune evasion is not directly demonstrated. In vitro or in vivo immune assays would be needed to validate this mechanism. The synthesis is reasonable but overstates certainty about functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The discussion proposes an evolutionary model: HLA hypermutations probably accumulated over time rather than occurring suddenly. Isolated mutations detected in benign liver suggest clonal progression from benign background. During malignant transformation, additional HLA mutations were acquired under immune pressure, with cells having fewer mutations destroyed by T lymphocytes while those with newer mutations evading attack. The immune system presumably adapted to new mutations and resumed response, with cycles continuing until mutations overwhelmed immunity. However, hypermutation clusters may make cancer cells vulnerable to targeted antibody therapy or CRISPR-cas9 genome editing since mutations are in extracellular domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C171-C176 present a speculative evolutionary model. While C172 is supported by data showing mutations in benign liver, C173-C176 are explicitly hypothetical scenarios without direct evidence. The model is plausible and consistent with immune editing theory, but lacks temporal data, functional validation, or evidence of immune selection. C177-C178 speculate about therapeutic implications with appropriate citations, but these remain untested hypotheses. The model is interesting but presented with insufficient caveats about its speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "The results showed evolutionary patterns of single-molecule mutational gene expression from benign hepatocytes to liver cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C22 is a high-level summary that overstates the findings. While the data show mutation patterns that differ between benign and cancer cells, and propose evolutionary pathways (Figures 5-8), these are inferred from cross-sectional data without temporal or lineage information. True \"evolutionary patterns\" would require time-series data, lineage tracing, or phylogenetic analysis. The patterns observed are consistent with evolution but do not definitively demonstrate it.",
+    "result_type": "MAJOR"
+  }
+]

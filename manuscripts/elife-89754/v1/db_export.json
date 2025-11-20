@@ -1,0 +1,2635 @@
+{
+  "submission": {
+    "id": "05090300-a186-4902-9216-a7af971bfa1b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:38:56.110135Z",
+    "updated_at": "2025-11-20T20:38:56.110135Z"
+  },
+  "content": [
+    {
+      "id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "content_type": "manuscript",
+      "content_text": "# Genetic screen identified PRMT5 as a neuroprotection target against cerebral ischemia\n\n## Authors\n\n- Haoyang Wu<sup>1</sup>\n- Peiyuan Lv<sup>1</sup>\n- Jinyu Wang<sup>1</sup>\n- Brian Bennett<sup>3</sup>\n- Jiajia Wang<sup>4</sup>\n- Pishun Li<sup>5</sup>\n- Yi Peng<sup>1</sup>\n- Guang Hu<sup>6</sup> \u2020\n- Jiaji Lin<sup>1</sup> ([ORCID: 0000-0002-3653-2389](https://orcid.org/0000-0002-3653-2389)) \u2020\n\n### Affiliations\n\n1. Department of Neurology, The Second Affiliated Hospital of Air Force Medical University Xi'an China ([ROR:00ms48f15](https://ror.org/00ms48f15))\n2. Basic Medical School, Air Force Medical University Xi'an China ([ROR:00ms48f15](https://ror.org/00ms48f15))\n3. Integrative Bioinformatics Support Group, National Institute of Environmental Health Sciences Durham United States ([ROR:00j4k1h63](https://ror.org/00j4k1h63))\n4. Computer Network Information Center, Chinese Academy of Sciences Beijing China ([ROR:01s0wyf50](https://ror.org/01s0wyf50))\n5. College of Veterinary Medicine, Hunan Agricultural University Changsha China ([ROR:01dzed356](https://ror.org/01dzed356))\n6. Epigenetics and Stem Cell Biology Laboratory, National Institute of Environmental Health Sciences Durham United States ([ROR:00j4k1h63](https://ror.org/00j4k1h63))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEpigenetic regulators present novel opportunities for both ischemic stroke research and therapeutic interventions. While previous work has implicated that they may provide neuroprotection by potentially influencing coordinated sets of genes and pathways, most of them remain largely uncharacterized in ischemic conditions. In this study, we used the oxygen-glucose deprivation (OGD) model in the immortalized mouse hippocampal neuronal cell line HT-22 and carried out an RNAi screen on epigenetic regulators. PRMT5 was identified as a novel negative regulator of neuronal cell survival after OGD, which presented a phenotype of translocation from the cytosol to the nucleus upon oxygen and energy depletion both in vitro and in vivo. PRMT5 bound to the chromatin and a large number of promoter regions to repress downstream gene expression. Silencing Prmt5 significantly dampened the OGD-induced changes for a large-scale of genes, and gene ontology analysis showed that PRMT5-target genes were highly enriched for Hedgehog signaling. Encouraged by the above observation, mice were treated with middle cerebral artery occlusion with the PRMT5 inhibitor EPZ015666 and found that PRMT5 inhibition sustains protection against neuronal death in vivo. Together, these findings revealed a novel epigenetic mechanism of PRMT5 in cerebral ischemia and uncovered a potential target for neuroprotection.\n\n## Introduction\n\nIschemic stroke, which accounts for 87% of all strokes, is the second most common cause of death and the leading cause of acquired disability in adults worldwide (Brott and Bogousslavsky, 2000). However, current therapy represented by rapid circulation restoration only benefits ~5% of patients due to the narrow treatment window and small vessel blockage (Brott and Bogousslavsky, 2000). There is an urgent need in developing neuroprotective drugs that provide an alternative strategy to minimize neural cell loss and maximize the potential for recovery, which finally extend the therapeutic window for recanalization and improve clinical outcomes after stroke. To develop such effective therapies, genomic approaches have been employed to elucidate the mechanism of ischemic stroke-induced brain damage and the underlying molecular basis. In particular, genome-wide association, genome sequencing, transcriptomic, proteomic, and metabolomic studies have identified many genomic loci, genes, and pathways that are associated stroke, providing potential diagnostic biomarkers and therapeutic targets (S\u00f6derholm et al., 2019; Dichgans et al., 2019). Intriguingly, increasing evidence suggests that epigenetic alterations play important roles in the pathogenesis of stroke (Stanzione et al., 2020). Epigenetic alterations are reversible changes in DNA or histone modifications, chromatin structure, and non-coding RNAs, and serve critical roles in the regulation of gene activity. For example, global DNA methylation, histone methylation, histone acetylation, microRNAs, enhancer RNAs, and circular RNAs were found to show significant changes after cerebral ischemia in animal models or human patients (Stanzione et al., 2020). Furthermore, inhibition of DNA methyltransferases or histone deacetylases by genetic or chemical mechanisms was shown to protect against stroke-induced brain damage (Zhao et al., 2016). Polycomb repressive complex genes were found to play important roles in neuroprotection after stroke (Kuehner and Yao, 2019). Thus, epigenetic regulators present novel opportunities for both stroke research and therapeutic interventions, and they may provide neuroprotection by potentially influencing coordinated sets of genes and pathways.\n\nBoth animal and cell culture models have been developed to facilitate the study of cerebral ischemia. In vivo, middle cerebral artery occlusion (MCAO) in rodents can produce reliable and well-reproducible infarcts and became a commonly used approach to mimic human ischemic stroke. In vitro, many cell-based models, using cells treated with chemical inhibitors, enzymatic induction, or hypoxia and energy depletion, were developed to replicate key features of ischemia (Kurian and Pemaih, 2014). Even though they cannot recapitulate the complex response of stroke in intact animals, they serve as convenient and amenable tools to study ischemia-reperfusion injuries via biochemical, genetic, and genomic methods. For example, oxygen-glucose deprivation (OGD) treatment has been widely used to examine the cellular mechanisms involved in cerebral ischemia and identify potential neuroprotective agents and pathways (Bernstock et al., 2016). In this study, we used the OGD model in the immortalized mouse hippocampal neuronal cell line HT-22 and carried out an RNAi screen on epigenetic regulators. We identified PRMT5 as a novel negative regulator of neuronal cell survival after OGD. We further showed that it promoted cell death by repressing genes involved in Hedgehog signaling, and its inhibition provides protection against ischemic injuries both in vitro and in vivo. Together, our findings revealed a novel epigenetic mechanism that contributes to neuronal cell death in cerebral ischemia and uncovered a potential target for neuroprotection.\n\n## Results\n\n### RNAi screen identified PRMT5 as a negative regulator of neuron survival after OGD\n\nTo systematically identify epigenetic factors that regulate cellular responses after cerebral ischemia, we used the well-established OGD protocol as an in vitro model for ischemic injury in the mouse hippocampal neuronal cell line HT-22. We carried out an RNAi screen using a custom shRNA library targeting selected epigenetic regulators. We first optimized the OGD treatment procedure on HT-22 cells and examined the length of OGD on cell survival. We chose 8 hr of oxygen and glucose deprivation followed by 24 hr of normal culture for the screen because it caused significant amount of cell death with small but consistent percentage of surviving cells. Next, we selected 125 genes involved in epigenetic and chromatin regulation and generated an shRNA library targeting these genes in the pLKO.1 vector (Supplementary file 1). To perform the screen (Figure 1A), we transduced HT-22 cells with the shRNA library, selected for puromycin-resistant cells, and split the cells into two equal populations. One population was frozen as a pellet and used later as the library-transduced cells. The other was treated with the optimized OGD procedure. After the treatment, the cells were cultured under normal conditions and expanded for another 10 d to allow those that survived OGD to grow. The OGD-treated cells were collected and frozen as a pellet as well. We extracted genomic DNA from both the library-transduced and the OGD-treated cell pellets, polymerase chain reaction (PCR)-amplified the shRNAs from the genomic DNAs, and sequenced the shRNA pools from the two cell populations using the Illumina platform. Based on the representation of the shRNAs in the cells, we found that most of the shRNAs were depleted after OGD treatment, suggesting that the genes they target are likely required for cell survival during or after OGD. Importantly, we also found a small number of shRNAs that showed increased representations after OGD, suggesting that the inhibition of their target genes likely promoted cell survival. Encouragingly, shRNAs against Dnmt3b, Pcgf6, and Mga were among those that are enriched after OGD treatment (Figure 1B), consistent with the notion that DNA methylation and polycomb repressive complexes play important roles in stroke injury and neuroprotection (Endres et al., 2000; Dock et al., 2015; Elder et al., 2013; Chen et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89754/elife-89754-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overview of the study methodology. (B) shRNA representation after OGD treatment. Prmt5 sgRNA have the highest enrichment after OGD treatment. (C) Effect of Prmt5 silencing in HT-22 cells after OGD. HT-22 cells (Control) or HT-22 cells transduced with the indicated shRNA lentiviruses were cultured with or without OGD treatment. Cell numbers were counted after the treatment and normalized against the control. Compared with non-targeting shRNA lentiviruses (NT pLKO.1), Prmt5 KD promoted a significant cell survival after OGD. (D\u2013, E) Effect of Prmt5 silencing or PRMT5 inhibition in HT-22 cells and primary neurons after OGD. Cell viability was determined using the Cell Counting Kit-8. Cellular cytotoxicity was determined using the Lactate Dehydrogenase Activity Assay Kit. Compared with NT pLKO.1, Prmt5 pLKO.1 promoted a significant cell viability. Similar result could be found in PRMT5 inhibitor EPZ015666 (EPZ) vs. solvent control (DMSO). Graphing the mean with an SEM error bars, with ***p-value<0.001 by Student\u2019s t-test (n = 5).\n\nAmong the enriched shRNAs, the shRNA against Prmt5 displayed the largest fold change (Figure 1B). Therefore, we decided to focus on Prmt5 and set out to validate its role in ischemic cell death. To rule out potential off-target effects by the Prmt5 shRNA in the screen, we designed additional shRNAs against Prmt5 in a different vector pGIPZ. We found that Prmt5 knockdown (KD) by the original pLKO.1 shRNA as well as the two new pGIPZ shRNAs all led to significant improvement in HT-22 cell survival after OGD (Figure 1C). Moreover, treatment of the cells with a small-molecule PRMT5 inhibitor EPZ015666 resulted in similar outcomes (Figure 1D), further supporting the fact that PRMT5 is responsible for the protective effect. Consistent with the above results based on cell numbers, PRMT5 inhibition significantly reduced OGD-induced HT-22 cell death in the lactate dehydrogenase (LDH) cytotoxicity assay (Figure 1E). Finally, in addition to the immortalized HT-22 cell line, Prmt5 shRNA or PRMT5 inhibitor promoted the survival of primary mouse neurons in culture after OGD treatment (Figure 1D\u2013E). Together, these results clearly demonstrated that PRMT5 plays an important role during OGD and its inhibition protects neuronal cells against OGD-induced damage.\n\n### PRMT5 protein translocates into the nucleus upon ischemic injury\n\nTo understand the molecular function of PRMT5 in OGD, we examined the behavior of its protein product by imaging in HT-22 cells. It was found that PRMT5 is predominantly localized in the cytoplasm under normal conditions. Upon OGD treatment, however, it relocates to the nucleus and becomes enriched in the nuclear compartment (Figure 2A). To rule out any potential artifacts caused by the antibody, we knocked-in an HA-tag to the C-terminus of the endogenous Prmt5 gene in HT-22 cells using CRISPR-mediated genome editing, and re-examined PRMT5 localization with the HA antibody. Similarly, we found that the endogenous HA-tagged PRMT5 translocates from the cytosol to the nucleus after OGD (Figure 2A). To complement the imaging results, we carried out biochemical fractionation of the HT-22 cells and separated the cellular content into cytoplasmic, nucleoplasmic, and chromatin-bound fractions. Consistent with the above, PRMT5 protein moved from the cytoplasm to the nucleus in OGD-treated cells (Figure 2B). Further, we found that PRMT5 protein became largely chromatin-bound, suggesting that it may participate in OGD-induced transcriptional responses. Finally, we repeated the experiments in OGD-treated primary mouse neurons in culture and observed the same result (Figure 2C and D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89754/elife-89754-fig2-v1.jpg)\n\n**Figure 2.:** (A) Immunofluorescence staining to show PRMT5 cellular localization after oxygen-glucose deprivation (OGD) in HT-22 cells. HT-22 cells were stained with the PRMT5 antibody or HA antibody for C-terminal HA-tagging of the endogenous PRMT5 by CRIPR-mediated genome editing. Cell nuclei were counterstained by DAPI. Scale bar = 20 \u03bcm. (B) Biochemical fractionation to show PRMT5 cellular localization after OGD. PRMT5 in each fraction was detected by western blot using either the PRMT5 or HA antibody. (C, D) Primary cortical neurons were treated with or without OGD and subjected to biochemical fractionation. Primary neurons were stained with the PRMT5 or NeuN (neuronal marker) antibody. Scale bar = 8 \u03bcm. Cyto., Nuc., and Chr. stand for cytoplasmic, nucleoplasmic, and chromatin-bound fractions.\n\nNext, we wanted to test whether PRMT5 translocation also happens in vivo. The left MCAO model was applied to mimic ischemic injury in the mouse brain and examined PRMT5 localization in both the ipsilateral and contralateral side by immunohistochemistry. Similar to what was observed in cultured cells, PRMT5 signal was mostly detected in the cytoplasm on the contralateral side, but became highly enriched in the nucleus on the ipsilateral side (Figure 3A). Upon closer examination, PRMT5 nuclear translocation was detected in both the penumbra area and ischemic core of the ipsilateral side (Figure 3B). We further verified these observations by immunofluorescence staining (Figure 3C). Importantly, biochemical fractionation of the neuronal tissues again showed that PRMT5 not only translocates into the nucleus but also binds to the chromatin upon ischemic injury (Figure 3D). As PRMT5 has been implicated in chromatin and gene regulation, these results strongly suggested that PRMT5 may enter the nucleus and bind the chromatin to regulate neuronal gene expression upon OGD.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89754/elife-89754-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013C) Immunohistochemical and immunofluorescence staining to show PRMT5 cellular localization in ipsilateral and contralateral sides after middle cerebral artery occlusion (MCAO). Scale bar = 3 \u03bcm, 9 \u03bcm and 20 \u03bcm for A/B/C. (D) Biochemical fractionation to show PRMT5 cellular localization after MCAO. PRMT5 in each fraction was detected by western blot using the PRMT5 antibody. Cyto., Nuc., and Chr. stand for cytoplasmic, nucleoplasmic, and chromatin-bound fractions.\n\n### PRMT5 represses Hedgehog signaling expression after OGD\n\nTo test whether and how PRMT5 regulates gene expression after OGD, we carried out RNA-seq in OGD-treated HT-22 cells vs. control, as well as OGD-treated HT-22 cells with Prmt5 KD vs. control. We found that OGD treatment led to the upregulation of 2186 genes and downregulation of 2926 genes (Figure 4A, Supplementary file 2). Interestingly, while Prmt5 KD alone had minimal impact on gene expression, it significantly dampened the OGD-induced changes for a large number of genes (Figure 4B, Supplementary file 2). Specifically, 1035 of the 2186 OGD-induced genes and 2090 of the 2926 OGD-repressed genes were reversed or partially reversed upon Prmt5 KD (Figure 4B, Supplementary file 2). This is consistent with the cellular phenotype, in which Prmt5 KD partially rescued OGD-induced cell death.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89754/elife-89754-fig4-v1.jpg)\n\n**Figure 4.:** (A) Gene expression changes after OGD. HT-22 cells were transduced with Control (non-targeting) or Prmt5 shRNA lentiviruses, drug selected, and treated with OGD. Cells were collected and total RNAs were extracted for RNA-seq. Differentially expressed genes (DEGs) after OGD in the control cells were identified by log2-fold change >1 and p-value<0.01. Orange: upregulated genes after OGD; blue: downregulated genes after OGD. (B) Effect of Prmt5-KD on OGD-induced gene expression changes. OGD-induced DEGs were defined as described in (A), and the expression changes of the DEGs after OGD in control and Prmt5-KD cells were plotted by heat map. (C, D) Genomic regions occupied by PRMT5 based on ChIP-seq in HT-22 cells treated with OGD. Reversal of OGD-induced gene expression changes by Prmt5-KD. PRMT5-target genes were defined as described in the text. (E) Expression changes of all detected genes or PRMT5-target genes after OGD in control or Prmt5-KD cells were examined by box plots. (F) Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis of PRMT5-target genes. (G, H) Genome browser tracks of PRMT5 occupancy at selected PRMT5-target genes. ChIP-qPCR of PRMT5 occupancy in HT-22 cells treated with OGD at selected PRMT5-target genes (Ptch1 and Smo). (I) RT-qPCR to show the expression of selected PRMT5-target genes in control or Prmt5-KD HT-22 cells upon OGD treatment. Graphing the mean with an SEM error bars, with ***p-value<0.001 by Student\u2019s t-test (n = 5).\n\nAs shown in Figure 2, OGD treatment resulted in PRMT5 nuclear translocation and chromatin binding. To test whether PRMT5 directly regulates gene expression and contributes to OGD-induced transcriptional changes, we carried out PRMT5 chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) in HT-22 cells treated with OGD. In total, we identified 16,061 peaks bound by PRMT5. Interestingly, a significant fraction of the PRMT5-bound genomic regions (56%) are near the transcription start sites (TSSs) (Figure 4C, Supplementary file 2), consistent with the notion that PRMT5 may regulate downstream gene expression. Indeed, when intercepted with the RNA-seq data, we found that PRMT5 occupies the promoter regions of a large fraction of the 2090 genes that were down-reversed genes in OGD (Figure 4D, Supplementary file 2). Furthermore, the OGD-repressed genes appeared to be dependent on PRMT5 as Prmt5 KD largely reversed their expression changes in OGD (Figure 4E). Therefore, we defined these genes that are bound by PRMT5, downregulated after OGD treatment but rescued by Prmt5 KD as PRMT5-target genes in OGD. And the above results suggested that under OGD conditions PRMT5 enters the nucleus and suppresses the expression of its target genes. Gene ontology analysis showed that PRMT5-target genes are highly enriched for Hedgehog signaling (Figure 4F). To validate the above findings based on genomic data, we carried out ChIP quantitative PCRs (ChIP-qPCRs) as well as reverse transcription quantitative PCRs (RT-qPCRs) on selected OGD-repressed PRMT5-target genes, including Ptch1 and Smo. It was found that PRMT5 indeed occupied their promoter regions (Figure 4G and H) and is responsible for their downregulation after OGD treatment (Figure 4I). Together, our findings strongly supported the notion that upon oxygen and glucose deprivation, PRMT5 promotes neuronal cell death by repressing the expression of genes involved in Hedgehog signaling. Prmt5 silencing provides neuroprotection by preventing the inhibition of Hedgehog pathways.\n\n### PRMT5 inhibition promotes neuron survival after ischemic injury in mouse brain\n\nTo test the relevance of our model in vivo, we first examined the behavior of the PRMT5-target genes in OGD in ischemic injury in mice. We used a public RNA-seq dataset (GSE112348) generated from an MCAO mouse model and carried out gene set enrichment analysis (GSEA). We found that PRMT5-target genes in OGD are highly enriched for those that were downregulated after cerebral infarction in the MCAO mouse (Figure 5A), suggesting that our model may apply in animals.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89754/elife-89754-fig5-v1.jpg)\n\n**Figure 5.:** (A) Gene set enrichment analysis for PRMT5-target genes in the middle cerebral artery occlusion (MCAO) mouse stroke model. Gene expression changes after MCAO was based on 29862458. (B) Effect of PRMT5 inhibition on infarct volume in the MCAO model. Mice were treated with subjected with sham (Sham group), MCAO with solvent (MCAO group), or MCAO with the PRMT5 inhibitor EPZ015666 (MCAO + EPZ group). The infarct volume was determined by 2,3,5-triphenyltetrazolium chloride (TTC) staining. (C\u2013E) For tissue immunofluorescence staining, samples were fixed using 4% paraformaldehyde at room temperature for 15 min, followed by 0.5% Triton X-100 permeabilization for 10 min and 0.5% bovine serum albumin blocking for 30 min. The mice were sacrificed for NeuN immunofluorescence staining, and positive staining cell were count as survival neurons. Tissue water content ration, tissue swelling change, and neurological deficit score were determined as described in \u2018Materials and methods\u2019. Graphing the mean with an SEM error bars, with ***p-value<0.001 by Student\u2019s t-test (n = 12).\n\nEncouraged by the above observation, we set out to test whether PRMT5 inhibition may provide protection against neuronal cell death in mouse brain after ischemic injury as it did in cultured cells. We treated adult mice with either solvent only or the PRMT5 inhibitor EPZ015666 intranasally and then induced ischemic injury in the left side of the brain with the MCAO procedure. After the surgery, we first assessed the neurological damage based on behavioral changes and then sacrificed the animals and examined the damages in their brain tissue. Indeed, we found that PRMT5 inhibition resulted in significant protective effects. Specifically, EPZ015666 treatment reduced the infarct volume (Figure 5B) and increased the number of NeuN-positive neurons after MCAO (Figure 5C). It also reduced the water content and tissue swelling caused by infarction (Figure 5D). Most importantly, we found that EPZ015666 treatment led to significantly improved functional recovery in the animals as evidenced by the reduction in the neurological deficit scores (Figure 5E). Therefore, these results strongly suggested that PRMT5 plays a critical role in mediating neuronal cell death after ischemic injury in the brain and may serve as a novel therapeutic target for stroke treatment.\n\n## Discussion\n\nWhile genome-wide association and expression profiling studies have uncovered many genomic loci, genes, and regulatory elements involved in stroke, the causal factors underlying stroke-induced damage are often confounded by the large number of incidental events accompanying stroke. Therefore, new approaches to define genes with functional relevance are essential to understand stroke and identify potential therapeutic targets. In that sense, genetic screens can provide a more direct strategy to search for genes that support neuronal cell survival during stroke conditions (Bernstock et al., 2016). The development of RNAi and CRIPSR technologies, as well as the multiplex screening method, further promoted fast and convenient screens in mammalian cells (Sioud, 2020). Here, we carried out a small-scale RNAi screen in HT-22 cells and identified a list of epigenetic factors that regulate neuronal cell death under ischemic conditions. Our study illustrates the power of forward genetics for the systematic study of ischemic stroke-induced injuries and presents a new strategy for the identification of neuroprotection agents.\n\nAmong the hits from the screen, we focused on Prmt5 as its silencing presented the strongest phenotype. PRMT5 belongs to the evolutionarily conserved arginine methyltransferase protein family (Dong et al., 2022). It catalyzes the transfer of a methyl group from S-adenosyl-methionine to the guanidino nitrogen atoms of arginine as monomethylation and symmetric demethylation (Dong et al., 2022). PRMT5 has been implicated in various developmental processes and diseases (Motolani et al., 2021). In particular, it is overexpressed in many cancers and elevated PRMT5 expression often correlates with poor prognosis (Kim and Ronai, 2020). Conversely, its depletion or inhibition leads to reduced proliferation and increased apoptosis in cancer cells (Kim and Ronai, 2020). In addition, PRMT5 is also required for early embryonic development and the maintenance of embryonic and neural stem cells (Chittka et al., 2012). However, we found that Prmt5 silencing by RNAi or inhibition by a small molecule enhances neuronal cell survival upon ischemic injury both in vitro and in vivo. Consistent with our findings, Prmt5 silencing was reported to reduce oxidative stress-induced cell death in renal ischemia (Diao et al., 2019). Thus, PRMT5 appears to play dual roles in cell viability in a context-dependent fashion, being pro-proliferation in cancer and stem cells but pro-cell death under ischemic conditions.\n\nMechanistically, we showed that PRMT5 protein translocates from the cytosol to the nucleus upon oxygen and energy depletion both in vitro and in vivo. Like other arginine methyltransferase family members, subcellular localization of PRMT5 protein appears to be cell type specific (Koh et al., 2015). In embryonic stem cells, it is predominantly cytoplasmic in self-renewing condition, but relocates to the nucleus upon differentiation (Gkountela et al., 2014). During mammalian embryonic development, it shuttles between the cytosol and the nucleus to fulfill its many functions in gene regulation and epigenome silencing (Ancelin et al., 2006; Kim et al., 2014). In cancer, PRMT5 protein was found to show different cellular localization between normal and tumor tissues and between tumor types (Gu et al., 2012; Nicholas et al., 2013), suggesting that its compartment-specific functions may regulate distinct molecular programs. In our study, we showed that PRMT5 is highly expressed in neurons and localizes predominantly in the cytoplasm under normal conditions, consistent with previous reports (Chittka, 2013; Ratovitski et al., 2015). Under OGD or ischemic conditions, it relocates to the nucleus and contributes to neuronal cell death. As transcription factors can interact with PRMT5 and regulate its cellular localization (Shilo et al., 2013), we speculate that PRMT5 may be recruited to the nucleus to carry out its function in transcriptional regulation by factor(s) in response to ischemia.\n\nPRMT5 plays important roles in gene regulation by methylating histones, transcription factors, and spliceosome proteins (Blanc and Richard, 2017). It also interacts with ATP-dependent chromatin remodelers to control gene expression (Dacwag et al., 2007). We found that as PRMT5 translocates to the nucleus upon OGD, it binds to the chromatin and a large number of promoter regions to repress downstream gene expression. This is consistent with the notion that PRMT5 often acts as a transcription repressor (Fabbrizio et al., 2002). Interestingly, OGD treatment alone caused similar numbers of genes to be up- or downregulated. However, PRMT5-target genes are mostly downregulated after OGD and are enriched for those involved in cell survival. Thus, OGD or stroke-induced neuronal cell death may largely be caused by the repression of survival pathways and re-activating these pathways may thereby provide an important mechanism for neuroprotection.\n\nHedgehog signaling is an important signaling pathways that is frequently used during development for intercellular communication, as well as regeneration and homeostasis (Carballo et al., 2018). In nervous system-specific hedgehog, sonic hedgehog (SHH), canonically binds and inactivates PTCH1 inhibition of SMO for downstream GLI-1 signaling cascade, which has particularly marked roles in nervous system cell-type specification and limbs patterning (Briscoe and Ericson, 2001; Dessaud et al., 2008). Many studies have emphasized its impact on neural cell survival and tissue regeneration/repair after ischemic stroke. Chechneva et al., 2014 found that SHH signaling activation has promoted on neural cell survival and tissue regeneration/repair after ischemic stroke. Moreover, SHH agonist could also induce a decrease in blood\u2013brain barrier permeability and an increase of newly generated neurons and neovascularization in the MCAO model (Chechneva et al., 2014). In in vitro studies, the expression of SHH, PTCH1, and GLI-1 was significantly downregulated within 24 hr after OGD exposure, which were closely associated with increasing numbers of apoptotic cells (Yin et al., 2020). Activation of SHH signals promoted CREB and AKT phosphorylation, upregulated the expressions of BDNF, neuroligin, and neurexin, and decreased NF-\u03baB phosphorylation following OGD (Yin et al., 2020). Therefore, the regulation of PRMT5 on SHH signaling may be one of the important mechanisms of its ischemia protection.\n\nAs mentioned above, PRMT5 plays critical roles in tumorigenesis and is therefore a therapeutic target that is actively pursued for cancer treatment. Several PRMT5 inhibitors, some of which highly potent, are in clinical trials to test their safety and efficacy (Tao et al., 2019). It will be interesting to systematically test their effect in protecting against neuronal cell death in cell-based and animal models of stroke in order to gain more insights to the molecular events after stroke as well as develop potential therapeutic interventions.\n\nThere were two major limitations that should be contemplated when interpreting these results. On the one hand, HT-22 is an immortalized mouse hippocampal cell line, which is a subline derived from parent HT4 cells that were originally immortalized from cultures of primary mouse hippocampal neurons (Pascual et al., 2012). There exists to a certain extent difference from primary neurons under OGD stress and may be affected by cell proliferation regulatory elements in HT-22. On the other hand, the PRMT5 function seems to closely link to its subcellular localization. The nuclear PRMT5 plays specific roles in transcription regulation by directly modulating the activity of several transcription factors or by methylating histones (H4R3, H2AR3, H3R8, and H3R2), while the cytoplasmic expression of PRMT5 is involved in splicing, translation, and regulation of receptor\u2013ligand signaling and organelle integrity (Koh et al., 2015). The mechanism of how PRMT5 is involved in neuroprotection needs further research.\n\n## Materials and methods\n\n### HT-22 cells and primary cortical neurons culture\n\nHT-22 cells were kindly provided by Dr. Richard Dargusch (Salk). Its identity has been authenticated with short tandem repeat (STR) profiling, and no mycoplasma or other microbiological contamination was found. Cells were routinely cultured in Dulbecco\u2019s Modified Eagle\u2019s Medium (Gibco) supplemented with 10% fetal bovine serum (Gibco), and the cultures were maintained at 37\u00b0C in a humidified atmosphere containing 5% CO2. For CRISPR-mediated gene targeting, pX330 and homologous recombination (HR) donor plasmids were co-transfected into HT-22 for HA-tag knock-in. Transfected cells were seeded at colonal density, and individual colonies were picked and screened by PCR. Correctly targeted clones were amplified and re-screened to confirm genotype. The primers and oligos used in this study are listed in Supplementary file 3. The neonatal mouse neurons were isolated as previously described with modifications (Dessaud et al., 2008). Briefly, cerebral cortices were removed from 1- to 3-day-old C57BL/6 mouse pups, stripped of meninges and blood vessels, and minced. Tissues were dissociated with 0.25% trypsin for 15 min at 37\u2103 and gentle trituration. Neurons were resuspended in a complete culture medium (Neurobasal medium containing 2% B27 supplement and 0.5 mM l-glutamine) and plated at a density of 3 \u00d7 105 cells/cm2. Neurons were maintained at 37\u2103 in a humidi\ufb01ed 5% CO2 incubator and half of the culture medium was changed every other day. The cultured neurons were used for experiments within 8\u201310 d. All experimental protocols and animal handling procedures were performed in accordance with the National Institutes of Health (NIH) guidelines for the use of experimental animals and were approved by the Animal Care and Use Committee of The Second Affiliated Hospital of Air Force Medical University (IR-2384-3915-3322).\n\n### OGD treatment\n\nOGD treatment was carried out as previously described (Goldberg and Choi, 1993). Briefly, cells were rinsed and cultured in the glucose-free Earle\u2019s balanced salt solution (BSS) with the following composition (in mmol/L): 116 NaCl, 5.4 KCl, 0.8 MgSO4\u00b77H2O, 1 NaH2PO4\u00b72H2O, 26.2 NaHCO3, 0.01 glycine, 1.8 CaCl2\u00b72H2O, and pH 7.4. The culture was then placed in an Hypoxia Incubator Chamber (StemCell Technology) and were equilibrated for 15 min with a continuous flux of 95% N2/5% CO2 gas. The chamber was then sealed and placed into a humidified incubator at 37\u00b0C for 8 hr (HT-22) or 60 min (primary cortical neuron). OGD was terminated by removing the cultures from the chamber, replacing BSS with normal culture medium, and returning cells to the normoxic conditions for 24 hr. Cells cultured under normal conditions during the experimental period were used as controls.\n\nFor PRMT5 inhibitor treatment, EPZ015666 (Selleckchem Company) was prepared in dimethyl sulfoxide (DMSO) at a concentration of 100 \u202fmM and stored at \u201320\u202f\u00b0C before use. EPZ (10 \u03bcM final concentration) or DMSO was added to cells 20 min before the initiation of OGD and to the BSS during the OGD treatment. For siRNA transfection of the primary neurons, the culture medium was refreshed at day 7. Cells were transfected with siRNAs using Lipofectamine 3000 according to the manufacturer\u2019s instructions. The medium was replaced the next day, and OGD experiments were performed 48 hr after transfection.\n\n### shRNA library and RNAi screen for OGD\n\nThe oligos used in this study are listed in Supplementary file 3. For pLKO.1 shRNAs, complementary single-stranded oligos were annealed and cloned as suggested by the RNAi consortium. pGIPZ shRNAs were ordered from Dharmacon. All plasmids were confirmed by sequencing. The shRNA library used for the screen was as previously described (Li et al., 2017). shRNA lentivirus was prepared by transfecting 293T cells using TransIT-293 (Mirus) using a standard protocol from Addgene.\n\nFor the shRNA screen, HT-22 cells were transduced with shRNA lentivirus and selected for viral infection with 2 \u03bcg/mL puromycin for 4 d. After selection, cells were split into two halves. One half was harvested and frozen as a pellet (untreated). The other half was subjected to OGD treatment, replated, cultured until confluent, and harvested (treated). Genomic DNA was extracted from the cell pellets, and the integrated shRNAs were amplified according to the pooled screen protocol from the Broad Institute (https://portals.broadinstitute.org/gpp/public/resources/protocols). The amplified shRNAs were sequenced on the Illumina platform, and the representations of the shRNAs in the untreated and treated cells were calculated to identify shRNAs that were enriched after treatment.\n\n### RT-qPCR and RNA-seq\n\nTotal RNA was isolated from cells using the GeneJet RNA purification kit (Thermo Scientific), and 0.5 \u03bcg total RNA was reverse transcribed to generate cDNA using the iScript cDNA Synthesis Kit (Bio-Rad) according to the manufacturer\u2019s instructions. RT-qPCRs were performed using the SsoFast EvaGreen Supermix (Bio-Rad) on the Bio-Rad CFX-384 Real-Time PCR System. Actin was used for normalization. All experiments were performed at least three times, and representative results are shown in the figures. For RNA-seq, libraries were prepared from two biological replicates using the TruSeq RNA Sample Prep Kit and sequenced on the NextSeq (Illumina).\n\n### Cell viability and LDH assay\n\nCell viability assay was performed using the cell proliferation reagent Cell Counting Kit-8 (CCK-8) following the manufacturer\u2019s protocol (Sigma). Brie\ufb02y, cells were cultured in 96-well plates and subjected to different treatments as described in each experiment. Then, 10 \u03bcL CCK-8 was added to each well, and the plates were incubated at 37\u00b0C for 90 min. The absorbance was determined with a Microplate Reader (Bio-Rad). Neuronal cytotoxicity was determined with the Lactate Dehydrogenase Activity Assay Kit according to the manufacturer\u2019s instructions (Sigma). Brie\ufb02y, cells were cultured in 96-well plates and subjected to different treatments as described in each experiment. Then, 50 \u03bcL of supernatant from each well was collected to assay the LDH activity.\n\n### Subcellular fractionation and western blot\n\nSubcellular fractionation was adapted from M\u00e9ndez and Stillman, 2000. Briefly, harvested cells were washed with phosphate-buffered saline (PBS) and resuspended in cytosolic buffer (10 mM HEPES [pH 7.4], 10 mM KCl, 1.5 mM MgCl2, 0.34 M sucrose, 10% glycerol, 1 mM dithiothreitol [DTT]) supplemented with protease inhibitors at a concentration of 20\u201340 million cells/mL, and incubated on ice for 5 min. A total of 1% Triton-X 100 in equal volume of cytosolic buffer was added to a final concentration of 0.1%, and the cells were mixed by gently pipetting and further incubated for 10 min on ice. Ten percent of the cell suspension was taken as the whole-cell extract fraction. The remaining cell suspension was centrifuged at 1300 \u00d7 g for 5 min at 4\u00b0C to separate the cell nuclei, and supernatant containing the cytoplasmic fraction was collected. Nuclei were washed once in cytosolic buffer, then lysed 10 min on ice in 1\u00d7 volume chromatin extraction buffer (3 mM EDTA, 0.2 mM EGTA, 1 mM DTT) supplemented with protease inhibitors. Insoluble chromatin was pelleted by centrifugation at 1700 \u00d7 g for 5 min at 4\u00b0C, and supernatant containing the nucleoplasm fraction was collected. The chromatin pellet was washed once with chromatin extraction buffer. All fractions were boiled in LDS loading buffer. All experiments were performed three or more times, and representative results are shown in the figures.\n\nCell lysates or extractions were loaded into a NuPAGE Bis-Tris gels (4\u201312%) and transferred onto PVDF or NC membranes. The membrane was blocked with 5% non-fat milk, followed by incubation with primary antibodies (Supplementary file 4) and HRP-conjugated secondary antibodies. Chemiluminescence signal was generated with ECL reagents (GE) and detected using ChemiDoc Touch Imaging System (Bio-Rad).\n\n### Immunostaining\n\nFor cell immunofluorescence staining, samples were fixed using 4% paraformaldehyde at room temperature for 15 min, followed by 0.5% Triton X-100 permeabilization for 10 min and 0.5% bovine serum albumin blocking for 30 min. Samples were then incubated with primary antibodies (Supplementary file 4) at 37\u00b0C for 2 hr or 4\u00b0C overnight, followed by fluorescent secondary antibodies (Life Technologies). Nuclei were counterstained with DAPI (Vector Laboratories). For tissue immunohistochemical staining, mice were sacrificed and intracardially perfused with 4% paraformaldehyde for 10 min. Mouse brain was removed and fixed overnight at 4\u00b0C, and dehydrated in a graded ethanol series and processed for paraffin embedding. For immunofluorescence, sections were incubated with the primary antibodies overnight at 4\u00b0C, and then fluorescent secondary antibodies with DAPI nuclear staining. The specificity of the staining was confirmed by omitting the primary antibodies. For DAB staining, the images of immunohistochemical results were obtained by a DMR-X microscope coupled with a DC500 digital camera (Leica) and the image analysis system Quantimet Q550 (Leica). For immunofluorescent double-labeled staining, the images were collected using a Leica SP5 confocal microscope (Leica) and recorded sequentially using Leica Application Suite Software (Leica). All experiments were performed three or more times, and representative results are shown in the figures.\n\n### In vivo model of brain ischemia and damage evaluation\n\nThis study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee protocols of the Air Force Medical University. The protocol was approved by the Committee on the Ethics of Animal Experiments of Air Force Medical University (IR-2384-3915-3322). All surgeries were performed under sodium pentobarbital anesthesia, and every effort was made to minimize suffering. Then, 8- to 12-week-old mice (25\u201330 g) were obtained from the Laboratory Animal Center of the Air Force Medical University. MCAO was used to induce focal cerebral ischemia. Brie\ufb02y, mice were anesthetized using 5% iso\ufb02urane in 30% O2/70% N2O and placed in the supine position on a heating pad. Ischemia was produced by advancing the tip of a rounded nylon suture into the left internal carotid artery through the left external carotid artery. After 60 min of occlusion, the thread was withdrawn to allow reperfusion. Mice were sutured and placed in a 35\u00b0C nursing box to recover from anesthesia, and then returned to the cage. Sham group mice received midline neck incisions. The left common carotid artery was isolated, but not cut. In the MCAO + EPZ groups, mice were intranasally treated with 20 mg/kg EPZ015666 1 hr before surgery. The MCAO group mice were intranasally administered with an equal volume of the DMSO solution used to dissolve EPZ. After the animal was awakened, neurological damage was assessed as follows (Kofler et al., 2006): 0, no deficit; 1, forelimb weakness and torso turning to the ipsilateral side when held by tail; 2, circling to the affected side; 3, unable to bear weight on the affected side; and 4, no spontaneous locomotor activity or barrel rolling. If no deficit was observed 60 min after beginning of occlusion period, the animal was removed from further study.\n\nAfter 24 hr reperfusion, the mice were sacrificed by rapid decapitation under deep anesthesia. Whole brain was rapidly removed for wet weight quantification, and then desiccated at 105\u00b0C for 48 hr until the weight was constant for dry weight quantification. The water content and tissue swelling were calculated as follows based on Keep et al., 2012:\n\n$$\nWatercontentration=(Wetweight\u2212Dryweight)/Dryweight\n$$\n\n\n\n$$\nInitialwetweight_{ipsilateral}=Dryweight_{ipsilateral}\\times(Watercontent_{contralateral}+1)\n$$\n\n\n\n$$\n%Tissueswelling=100\\times(Wetweight_{ipsilateral}\u2212Initialwetweight_{ipsilateral})/Initialwetweight_{ipsilateral}\n$$\n\nBrain infarct area was evaluated using 2,3,5-triphenyltetrazolium chloride (TTC) staining. Brains were sectioned into 2-mm-thick coronal slices and stained in 2% TTC at 37\u00b0C for 15 min in the dark and then photographed. The infarct tissue areas were measured using Image-Pro Plus. To account for edema, the infarcted area was estimated by subtracting the uninfarcted region in the ipsilateral hemisphere from the contralateral hemisphere, and the infarct volume was expressed as a percentage of the contralateral hemisphere.\n\n### ChIP and high-throughput sequencing\n\nChIP was performed as described previously (Li et al., 2017). Briefly, HT-22 cells were subjected to OGD treatment and crosslinked with 1% formaldehyde for 10 min at room temperature. Formaldehyde was quenched by 200 mM glycine and cells were rinsed twice with ice-cold PBS. Cells were transferred to 15 mL conical tubes and collected by centrifugation. Cells were lysed with lysis buffer A (50 mM HEPES-KOH [pH 7.5], 140 mM NaCl, 1 mM EDTA, 0.5% NP-40, 0.25% Triton X-100, 10% glycerol, and protease inhibitor cocktail [Roche]), incubated at 4\u00b0C for 10 min, and collected by spinning at 1300 \u00d7 g for 5 min at 4\u00b0C. Cells were then resuspended in lysis buffer B (10 mM Tris\u2013Cl [pH 8], 200 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, and protease inhibitor cocktail), incubated at room temperature for 10 min. Nuclei were pelleted by spinning at 1300 \u00d7 g for 5 min at 4\u00b0C. The pellet was suspended with lysis buffer B (10 mM Tris\u2013Cl [pH 8], 100 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 0.1% Na-deoxycholate, 0.5% N-lauroylsarcosine, and protease inhibitor cocktail) and incubated for 15 min on ice. Chromatin shearing was conducted with cells on ice using a microtip attached to Misonix 3000 sonicator. Sonicate 8\u201312 cycles of 30 s ON and 90 s OFF around 30-watt power output. A final concentration of 1% Triton X-100 was added and gently mixed by pipetting. The chromatin solution was clarified by spinning at 20,000 \u00d7 g at 4\u00b0C for 30 min. Chromatin immunoprecipitation was performed with 50 uL Dynabeads protein G (Life Technology) conjugated preliminary antibodies antibody overnight at 4\u00b0C. The immunoprecipitated material was washed five times with wash buffer (10 mM Tris\u2013Cl [pH 8], 1 mM EDTA, 0.5% NP40, 0.5 M LiCl, 0.5% Na-deoxycholate) and once with TE buffer (pH 8.0), then, eluted by heating for 30 min at 65\u00b0C with elution buffer (50 mM Tris\u2013Cl [pH 7.5], 10 mM EDTA, 1% sodium dodecyl sulfate). To reverse the crosslinks, samples were incubated at 65\u00b0C overnight, then the eluted was digested with a final concentration of 0.5 \u03bcg/mL RNasesA at 37\u00b0C, followed by a final concentration of 0.5 \u03bcg/mL Proteinase at 55\u00b0C for 2 hr. The immunoprecipitated DNA were then purified using the DNA clean and concentrator 5 column (Zymo Research). The ChIP DNA was used for qPCRs using the indicated primers (Supplementary file 3), and data were plotted as the percentage of input. All experiments were performed three or more times, and representative results are shown in the figures. For ChIP-seq, 1 ng precipitated DNA or input was used to generate sequencing libraries using the Nextera XT DNA sample preparation Kit (Illumina). The resulting libraries were sequenced on Next-Seq (Illumina). Two biological replicates were performed, and combined reads were used for further analysis.\n\n### Bioinformatics analysis\n\nFor ChIP-seq, reads were filtered if they had a mean Phred quality score of less than 20. They were aligned to the mm10 assembly using Bowtie v1.2 with parameters -v 2 -m 1 --best --strata. Reads that aligned to the same genomic coordinates were considered duplicates and removed using the MarkDuplicates tool in the Picard Tools suite v1.86. Fragment length estimates were obtained using Homer v4.3. Coverage tracks were generated using the genomecov tool in the BEDtools suite after extending the aligned reads to the estimated fragment lengths. Coverage tracks were normalized to coverage per 10 million mapped reads. Peaks were called using SICER v1.1 and the following parameters: species = mm10, redundancy threshold = 100, window size = 200, effective genome fraction = 0.77, gap size = 600, FDR = 0.000001. Peaks were labeled as \u2018TSS\u2019 if they overlapped with the TSS of a gene in the GENCODE vM12 annotation, and they were labeled as \u2018gene body\u2019 if they did not overlap with a TSS but did overlap with any other part of a gene body. They were labeled as \u2018intergenic\u2019 if they did not overlap with either of the previous two.\n\nFor RNA-seq, reads were filtered if they had a mean Phred quality score of less than 20. They were aligned to the mm10 assembly using STAR v2.6.0c. Gene counts were obtained using the featureCounts tool in the Subread package v1.5.1 with the GENCODE vM12 annotation. Differentially expressed genes (DEGs) were identified using DESeq2 with the following model: ~KnockDown + Treatment + KnockDown:Treatment. DEGs were required to have an FDR of less than 0.05 and a fold change of 1.5 or greater. \u2018Down Reversed Genes\u2019 were those that had a significant negative fold change in the OGD vs. control contrast and also a significant positive fold change in the interaction term contrast. The enrichment plot was generated using GSEA v.3.0.\n\n### Statistical analysis\n\nAll data were presented as means \u00b1 SEM. Statistical analyses were performed using Student\u2019s t-test, one-way ANOVA, or two-way repeated-measures ANOVA followed by Bonferroni\u2019s multiple-comparison tests where appropriate. A value of p<0.05 was considered significant.\n",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jianxin Sun, Thomas Jefferson University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89754.2.sa0](https://doi.org/10.7554/eLife.89754.2.sa0)\n\nThe authors performed a useful RNAi screen to identify epigenetic regulators involved in oxygen-glucose deprivation (OGD)-induced neuronal injury. PRMT5 was identified as a negative regulator of neuronal cell survival after OGD. Solid in vitro and in vivo data suggest that PRMT5 could be a novel therapeutic target for the treatment of ischemic stroke.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89754.2.sa1](https://doi.org/10.7554/eLife.89754.2.sa1)\n\nThe authors performed an RNAi screen to identify epigenetic regulators involved in oxygen-glucose deprivation (OGD)-induced neuronal injury using immortalized mouse hippocampal neuronal cell line HT-22. They identified PRMT5 as a novel negative regulator of neuronal cell survival after OGD. Both in vitro and in vivo experiments were then performed to evaluate the roles of PRMT5 in OGD and ischemic stroke-induced injury. The authors found that genetic and pharmacological inhibition of PRMT5 protected against neuronal cell death in both in vitro and in vivo models. Furthermore, they found that in response to OGD and ischemia, PRMT5 was translocated from the cytosol to the nucleus, where PRMT5 bound to the chromatin and promoter regions of targeted genes to repress the expression of downstream genes. Further, they showed that silencing PRMT5 significantly altered the OGD-induced changes for a large-scale of genes. In a mouse model of middle cerebral artery occlusion (MCAO), PRMT5 inhibitor EPZ015666 protected against neuronal death in vivo. This study reveals a potential therapeutic target for the treatment of ischemic stroke. Overall, the authors have done elegant work showing the role of PRMT5 in neuronal cell survival. However, the essential mechanisms underlying PRMT5 nuclear translocation have not been investigated, and the in vivo animal studies should be further strengthened.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89754.2.sa2](https://doi.org/10.7554/eLife.89754.2.sa2)\n\nHaoyang Wu et al. have shown that the symmetric arginine methyltransferase PRMT5 binds to the promoter region of several essential genes and represses their expression, leading to neuronal cell death. Knocking down PRMT5 in HT-22 cells by shRNA leads to pertinent improvement in cell survival after oxygen-glucose deprivation (OGD) conditions. In another set of experiments, inhibition of the catalytic activity of PRMT5 by a specific inhibitor, EPZ015666, in a middle cerebral artery occlusion (MCAO) mice model also showed protective effects against neuronal cell death. In this manuscript, the authors have established the negative role of PRMT5 in cerebral ischemia both in vitro and in vivo.\n\nHowever, my primary concern is the novelty of the manuscript. It has already been reported that inhibition of PRMT5 attenuates cerebral ischemia/reperfusion condition (Inhibition of PRMT5 attenuates cerebral ischemia/reperfusion-induced inflammation and pyroptosis through suppression of NF-\u03baB/NLRP3 axis. Xiang Wu et al. Neuroscience Letters, Volume 776, 2022, 136576, ISSN 0304-3940, https://doi.org/10.1016/j.neulet.2022.136576). Even these authors have also shown that treatment of PRMT5 specific catalytic inhibitor, LLY-283, could rescue ischemia-induced over-expression of inflammation-related factors.\n\nHowever, it would be better to verify the specificity of the inhibitor, EPZ015666, using other methyltransferases to be sure that the rescue is indeed mediated by PRMT5 catalytic inhibition.\n",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f8a34d17-72ab-43d0-b9d3-351bdd5e4e74",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C1",
+      "claim": "Ischemic stroke accounts for 87% of all strokes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ischemic stroke, which accounts for 87% of all strokes, is the second most common cause of death and the leading cause of acquired disability in adults worldwide (Brott and Bogousslavsky, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brott and Bogousslavsky, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f0527824-b204-4f5c-9292-2ac583eca9e3",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C2",
+      "claim": "Ischemic stroke is the second most common cause of death worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Ischemic stroke, which accounts for 87% of all strokes, is the second most common cause of death and the leading cause of acquired disability in adults worldwide (Brott and Bogousslavsky, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brott and Bogousslavsky, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "9d30a184-9834-4010-b289-c7394b04f299",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C3",
+      "claim": "Ischemic stroke is the leading cause of acquired disability in adults worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Ischemic stroke, which accounts for 87% of all strokes, is the second most common cause of death and the leading cause of acquired disability in adults worldwide (Brott and Bogousslavsky, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brott and Bogousslavsky, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "4b514f39-6548-4769-90c4-38135ab9ba76",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C4",
+      "claim": "Current therapy for ischemic stroke represented by rapid circulation restoration only benefits approximately 5% of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "However, current therapy represented by rapid circulation restoration only benefits ~5% of patients due to the narrow treatment window and small vessel blockage (Brott and Bogousslavsky, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brott and Bogousslavsky, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "52770d64-6ac5-4b88-a020-3b86f6262c5b",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C5",
+      "claim": "The narrow treatment window and small vessel blockage limit the effectiveness of current stroke therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, current therapy represented by rapid circulation restoration only benefits ~5% of patients due to the narrow treatment window and small vessel blockage (Brott and Bogousslavsky, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brott and Bogousslavsky, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2753dc20-031d-447c-97bb-12b21434da51",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C6",
+      "claim": "Epigenetic alterations play important roles in the pathogenesis of stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, increasing evidence suggests that epigenetic alterations play important roles in the pathogenesis of stroke (Stanzione et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stanzione et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "596baddb-28d2-4450-b7f3-dddd264a4a3d",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C7",
+      "claim": "Global DNA methylation, histone methylation, histone acetylation, microRNAs, enhancer RNAs, and circular RNAs show significant changes after cerebral ischemia in animal models or human patients.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, global DNA methylation, histone methylation, histone acetylation, microRNAs, enhancer RNAs, and circular RNAs were found to show significant changes after cerebral ischemia in animal models or human patients (Stanzione et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stanzione et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "0173385b-4e16-436e-83da-f7a9ef5e1427",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C8",
+      "claim": "Inhibition of DNA methyltransferases or histone deacetylases by genetic or chemical mechanisms protects against stroke-induced brain damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibition of DNA methyltransferases or histone deacetylases by genetic or chemical mechanisms was shown to protect against stroke-induced brain damage (Zhao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhao et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "c13c6afe-ed35-44c5-96a6-142074c1b9d6",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C9",
+      "claim": "Polycomb repressive complex genes play important roles in neuroprotection after stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycomb repressive complex genes were found to play important roles in neuroprotection after stroke (Kuehner and Yao, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kuehner and Yao, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "a03715f1-7d3d-4f83-8961-ddbfd3e59df0",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C10",
+      "claim": "Middle cerebral artery occlusion (MCAO) in rodents can produce reliable and well-reproducible infarcts.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, middle cerebral artery occlusion (MCAO) in rodents can produce reliable and well-reproducible infarcts and became a commonly used approach to mimic human ischemic stroke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about MCAO models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f2f908fe-2659-4454-8c61-d482b53b1076",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C11",
+      "claim": "MCAO is a commonly used approach to mimic human ischemic stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, middle cerebral artery occlusion (MCAO) in rodents can produce reliable and well-reproducible infarcts and became a commonly used approach to mimic human ischemic stroke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about MCAO models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "abb6264b-160c-4b3c-883d-4b556a4351d1",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C12",
+      "claim": "Oxygen-glucose deprivation (OGD) treatment has been widely used to examine the cellular mechanisms involved in cerebral ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, oxygen-glucose deprivation (OGD) treatment has been widely used to examine the cellular mechanisms involved in cerebral ischemia and identify potential neuroprotective agents and pathways (Bernstock et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bernstock et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "b963ca3a-dba2-4cc4-8add-13bad69f71ce",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C13",
+      "claim": "An RNAi screen was carried out on epigenetic regulators using the OGD model in HT-22 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we used the OGD model in the immortalized mouse hippocampal neuronal cell line HT-22 and carried out an RNAi screen on epigenetic regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental approach used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "3dd6905c-5485-4ae9-94eb-7583d4a0346c",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C14",
+      "claim": "PRMT5 was identified as a novel negative regulator of neuronal cell survival after OGD.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified PRMT5 as a novel negative regulator of neuronal cell survival after OGD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the results of the RNAi screen described in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "0fbf2715-ab9e-463c-99cb-03ae0d19f83d",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C15",
+      "claim": "PRMT5 translocates from the cytosol to the nucleus upon oxygen and energy depletion both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "PRMT5 was identified as a novel negative regulator of neuronal cell survival after OGD, which presented a phenotype of translocation from the cytosol to the nucleus upon oxygen and energy depletion both in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations shown in Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "656c4022-afcc-44b7-97a6-f6beb4336645",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C16",
+      "claim": "PRMT5 binds to chromatin and a large number of promoter regions to repress downstream gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "PRMT5 bound to the chromatin and a large number of promoter regions to repress downstream gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "0731e931-03ea-45f9-b0ac-85039de07cfe",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C17",
+      "claim": "Silencing Prmt5 significantly dampened the OGD-induced changes for a large-scale of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing Prmt5 significantly dampened the OGD-induced changes for a large-scale of genes, and gene ontology analysis showed that PRMT5-target genes were highly enriched for Hedgehog signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2135145e-aa89-4d77-90aa-327e7b086ab0",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C18",
+      "claim": "PRMT5-target genes are highly enriched for Hedgehog signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing Prmt5 significantly dampened the OGD-induced changes for a large-scale of genes, and gene ontology analysis showed that PRMT5-target genes were highly enriched for Hedgehog signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology analysis of RNA-seq and ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "3bb187bb-147d-4510-af5c-8c320a5d67a9",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C19",
+      "claim": "PRMT5 inhibition with EPZ015666 sustains protection against neuronal death in vivo in mice treated with middle cerebral artery occlusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouraged by the above observation, mice were treated with middle cerebral artery occlusion with the PRMT5 inhibitor EPZ015666 and found that PRMT5 inhibition sustains protection against neuronal death in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vivo experimental data in MCAO mouse model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "1df2dca3-09d0-4b6f-84ad-dc465ac9468f",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C20",
+      "claim": "8 hours of oxygen and glucose deprivation followed by 24 hours of normal culture caused significant cell death with a small but consistent percentage of surviving cells in HT-22 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose 8 hr of oxygen and glucose deprivation followed by 24 hr of normal culture for the screen because it caused significant amount of cell death with small but consistent percentage of surviving cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on optimization experiments for the OGD protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "8d3c01f9-a84c-4a39-8d34-9fa3a67c4cc6",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C21",
+      "claim": "125 genes involved in epigenetic and chromatin regulation were selected for the shRNA library.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we selected 125 genes involved in epigenetic and chromatin regulation and generated an shRNA library targeting these genes in the pLKO.1 vector (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the experimental design",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2b5ea70e-8a3f-486f-8619-1db6e32fe9cc",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C22",
+      "claim": "Most shRNAs were depleted after OGD treatment, suggesting that the genes they target are likely required for cell survival during or after OGD.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the representation of the shRNAs in the cells, we found that most of the shRNAs were depleted after OGD treatment, suggesting that the genes they target are likely required for cell survival during or after OGD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequencing data from the RNAi screen",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "300e0624-0e42-4087-ae29-1cdbfb0e1727",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C23",
+      "claim": "A small number of shRNAs showed increased representations after OGD, suggesting that inhibition of their target genes likely promoted cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also found a small number of shRNAs that showed increased representations after OGD, suggesting that the inhibition of their target genes likely promoted cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on sequencing data from the RNAi screen",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "287dd90f-1e4f-46c9-b56e-52439b267487",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C24",
+      "claim": "shRNAs against Dnmt3b, Pcgf6, and Mga were enriched after OGD treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouragingly, shRNAs against Dnmt3b, Pcgf6, and Mga were among those that are enriched after OGD treatment (Figure 1B), consistent with the notion that DNA methylation and polycomb repressive complexes play important roles in stroke injury and neuroprotection (Endres et al., 2000; Dock et al., 2015; Elder et al., 2013; Chen et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by screen data shown in Figure 1B and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "61ac8b48-c597-428a-b8d8-2504d104a6fc",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C25",
+      "claim": "DNA methylation and polycomb repressive complexes play important roles in stroke injury and neuroprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouragingly, shRNAs against Dnmt3b, Pcgf6, and Mga were among those that are enriched after OGD treatment (Figure 1B), consistent with the notion that DNA methylation and polycomb repressive complexes play important roles in stroke injury and neuroprotection (Endres et al., 2000; Dock et al., 2015; Elder et al., 2013; Chen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Endres et al., 2000; Dock et al., 2015; Elder et al., 2013; Chen et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "22606d85-9a14-4bca-b57b-828295af309f",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C26",
+      "claim": "The shRNA against Prmt5 displayed the largest fold change among enriched shRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the enriched shRNAs, the shRNA against Prmt5 displayed the largest fold change (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by screen data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "4f71e94a-67e2-4947-808d-24d005cc5dbe",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C27",
+      "claim": "Prmt5 knockdown by the original pLKO.1 shRNA and two new pGIPZ shRNAs all led to significant improvement in HT-22 cell survival after OGD.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Prmt5 knockdown (KD) by the original pLKO.1 shRNA as well as the two new pGIPZ shRNAs all led to significant improvement in HT-22 cell survival after OGD (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "b6c2227e-5f70-495c-9425-bb2a2c31b1aa",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C28",
+      "claim": "Treatment of HT-22 cells with the PRMT5 inhibitor EPZ015666 resulted in improved cell survival after OGD.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, treatment of the cells with a small-molecule PRMT5 inhibitor EPZ015666 resulted in similar outcomes (Figure 1D), further supporting the fact that PRMT5 is responsible for the protective effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "a1212953-8978-4de9-a9a8-7e0dd3b45e1c",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C29",
+      "claim": "PRMT5 inhibition significantly reduced OGD-induced HT-22 cell death in the lactate dehydrogenase (LDH) cytotoxicity assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the above results based on cell numbers, PRMT5 inhibition significantly reduced OGD-induced HT-22 cell death in the lactate dehydrogenase (LDH) cytotoxicity assay (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "913b7503-e121-4bb8-96c0-0d9537647284",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C30",
+      "claim": "Prmt5 shRNA or PRMT5 inhibitor promoted the survival of primary mouse neurons in culture after OGD treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in addition to the immortalized HT-22 cell line, Prmt5 shRNA or PRMT5 inhibitor promoted the survival of primary mouse neurons in culture after OGD treatment (Figure 1D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 1D-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "e3501162-1c64-4cad-828c-1bcfd7b5115b",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C31",
+      "claim": "PRMT5 is predominantly localized in the cytoplasm under normal conditions in HT-22 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that PRMT5 is predominantly localized in the cytoplasm under normal conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "bd108a7c-15c7-4d98-9455-d6124f2245b7",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C32",
+      "claim": "Upon OGD treatment, PRMT5 relocates to the nucleus and becomes enriched in the nuclear compartment in HT-22 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon OGD treatment, however, it relocates to the nucleus and becomes enriched in the nuclear compartment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence imaging data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "ee8c3c19-8134-4104-8234-56242f713d88",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C33",
+      "claim": "Endogenous HA-tagged PRMT5 translocates from the cytosol to the nucleus after OGD in HT-22 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that the endogenous HA-tagged PRMT5 translocates from the cytosol to the nucleus after OGD (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence imaging data using HA antibody shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2da80628-9b8f-4eff-85fb-b783b786adf0",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C34",
+      "claim": "PRMT5 protein moved from the cytoplasm to the nucleus in OGD-treated HT-22 cells based on biochemical fractionation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the above, PRMT5 protein moved from the cytoplasm to the nucleus in OGD-treated cells (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biochemical fractionation data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "54fe1e85-ac38-414c-a050-ed4a035ae9f9",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C35",
+      "claim": "PRMT5 protein became largely chromatin-bound after OGD treatment in HT-22 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found that PRMT5 protein became largely chromatin-bound, suggesting that it may participate in OGD-induced transcriptional responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by biochemical fractionation data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "ae13f0a4-60e4-49e7-b282-c4ff0b62b7d7",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C36",
+      "claim": "PRMT5 nuclear translocation was observed in OGD-treated primary mouse neurons in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we repeated the experiments in OGD-treated primary mouse neurons in culture and observed the same result (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 2C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "419e3e7a-545c-4fa4-b163-90884ccad364",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C37",
+      "claim": "PRMT5 signal was mostly detected in the cytoplasm on the contralateral side of MCAO-treated mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was observed in cultured cells, PRMT5 signal was mostly detected in the cytoplasm on the contralateral side, but became highly enriched in the nucleus on the ipsilateral side (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "7c55796c-f246-4bb7-a14c-6c5c0e927e2c",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C38",
+      "claim": "PRMT5 became highly enriched in the nucleus on the ipsilateral side of MCAO-treated mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what was observed in cultured cells, PRMT5 signal was mostly detected in the cytoplasm on the contralateral side, but became highly enriched in the nucleus on the ipsilateral side (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "67aa6924-2c14-4edf-8f50-24a7b757f0db",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C39",
+      "claim": "PRMT5 nuclear translocation was detected in both the penumbra area and ischemic core of the ipsilateral side after MCAO.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon closer examination, PRMT5 nuclear translocation was detected in both the penumbra area and ischemic core of the ipsilateral side (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "73740cdb-d6f1-4422-9f1e-0b6436d0a2b1",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C40",
+      "claim": "PRMT5 translocates into the nucleus and binds to the chromatin upon ischemic injury in neuronal tissues based on biochemical fractionation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, biochemical fractionation of the neuronal tissues again showed that PRMT5 not only translocates into the nucleus but also binds to the chromatin upon ischemic injury (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biochemical fractionation data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "ce8ad7c1-9df7-4396-bdcd-2d979e7d8987",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C41",
+      "claim": "OGD treatment led to the upregulation of 2186 genes and downregulation of 2926 genes in HT-22 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that OGD treatment led to the upregulation of 2186 genes and downregulation of 2926 genes (Figure 4A, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "1e08717d-a5f5-48de-9b29-fdab2728e35a",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C42",
+      "claim": "Prmt5 knockdown alone had minimal impact on gene expression in HT-22 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while Prmt5 KD alone had minimal impact on gene expression, it significantly dampened the OGD-induced changes for a large number of genes (Figure 4B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "47e43241-32da-45cb-8427-9c845b6f5c39",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C43",
+      "claim": "1035 of the 2186 OGD-induced genes were reversed or partially reversed upon Prmt5 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 1035 of the 2186 OGD-induced genes and 2090 of the 2926 OGD-repressed genes were reversed or partially reversed upon Prmt5 KD (Figure 4B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "732229ba-441b-4db4-8b9b-dca731607ebf",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C44",
+      "claim": "2090 of the 2926 OGD-repressed genes were reversed or partially reversed upon Prmt5 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 1035 of the 2186 OGD-induced genes and 2090 of the 2926 OGD-repressed genes were reversed or partially reversed upon Prmt5 KD (Figure 4B, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "e1da205a-34f5-40e0-a74f-6f2197eb69ce",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C45",
+      "claim": "16,061 peaks were identified as bound by PRMT5 in OGD-treated HT-22 cells by ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 16,061 peaks bound by PRMT5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "05e3a7d8-a402-4f71-8772-d50af6cd189d",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C46",
+      "claim": "56% of PRMT5-bound genomic regions are near the transcription start sites (TSSs).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a significant fraction of the PRMT5-bound genomic regions (56%) are near the transcription start sites (TSSs) (Figure 4C, Supplementary file 2), consistent with the notion that PRMT5 may regulate downstream gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "316245ce-f32b-4d20-a12d-d8f2e18d3a1a",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C47",
+      "claim": "PRMT5 occupies the promoter regions of a large fraction of the 2090 genes that were down-reversed genes in OGD.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when intercepted with the RNA-seq data, we found that PRMT5 occupies the promoter regions of a large fraction of the 2090 genes that were down-reversed genes in OGD (Figure 4D, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by integration of ChIP-seq and RNA-seq data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "d1e01130-e5fa-4211-8a29-6c40b86ef6bf",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C48",
+      "claim": "OGD-repressed genes are dependent on PRMT5 as Prmt5 knockdown largely reversed their expression changes in OGD.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the OGD-repressed genes appeared to be dependent on PRMT5 as Prmt5 KD largely reversed their expression changes in OGD (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "bba46fb4-d215-4556-91e3-a44025e44c0b",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C49",
+      "claim": "Under OGD conditions PRMT5 enters the nucleus and suppresses the expression of its target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we defined these genes that are bound by PRMT5, downregulated after OGD treatment but rescued by Prmt5 KD as PRMT5-target genes in OGD. And the above results suggested that under OGD conditions PRMT5 enters the nucleus and suppresses the expression of its target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of ChIP-seq and RNA-seq data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "40d9d5bd-1830-4261-8968-51a4c8fb5851",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C50",
+      "claim": "PRMT5 occupied the promoter regions of Ptch1 and Smo.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that PRMT5 indeed occupied their promoter regions (Figure 4G and H) and is responsible for their downregulation after OGD treatment (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figures 4G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "6c056542-4af9-46ad-9a7c-090b14b1ce06",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C51",
+      "claim": "PRMT5 is responsible for the downregulation of Ptch1 and Smo after OGD treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that PRMT5 indeed occupied their promoter regions (Figure 4G and H) and is responsible for their downregulation after OGD treatment (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-qPCR data shown in Figure 4I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "58ea79a4-9563-4c50-b0c0-1c5067970a08",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C52",
+      "claim": "Upon oxygen and glucose deprivation, PRMT5 promotes neuronal cell death by repressing the expression of genes involved in Hedgehog signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings strongly supported the notion that upon oxygen and glucose deprivation, PRMT5 promotes neuronal cell death by repressing the expression of genes involved in Hedgehog signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of multiple experimental results including ChIP-seq, RNA-seq, and functional assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2d8a55e6-d37e-4281-a08f-ac18a08ce6f7",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C53",
+      "claim": "Prmt5 silencing provides neuroprotection by preventing the inhibition of Hedgehog pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Prmt5 silencing provides neuroprotection by preventing the inhibition of Hedgehog pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of multiple experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "93ca090b-831e-49e9-bd07-6fdecdebc107",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C54",
+      "claim": "PRMT5-target genes in OGD are highly enriched for those that were downregulated after cerebral infarction in the MCAO mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PRMT5-target genes in OGD are highly enriched for those that were downregulated after cerebral infarction in the MCAO mouse (Figure 5A), suggesting that our model may apply in animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene set enrichment analysis shown in Figure 5A using public dataset GSE112348",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "bb5517cc-27cf-446c-b6da-085dd96bb938",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C55",
+      "claim": "PRMT5 inhibition with EPZ015666 reduced the infarct volume after MCAO in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that PRMT5 inhibition resulted in significant protective effects. Specifically, EPZ015666 treatment reduced the infarct volume (Figure 5B) and increased the number of NeuN-positive neurons after MCAO (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "9b792b77-372a-4cd9-8fb5-238d80227dda",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C56",
+      "claim": "PRMT5 inhibition with EPZ015666 increased the number of NeuN-positive neurons after MCAO in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that PRMT5 inhibition resulted in significant protective effects. Specifically, EPZ015666 treatment reduced the infarct volume (Figure 5B) and increased the number of NeuN-positive neurons after MCAO (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f63753e2-5ce2-4010-aca4-6479a192099d",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C57",
+      "claim": "PRMT5 inhibition with EPZ015666 reduced the water content and tissue swelling caused by infarction after MCAO in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "It also reduced the water content and tissue swelling caused by infarction (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "fdb5a32a-2a52-4fbc-9698-aab39b169580",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C58",
+      "claim": "EPZ015666 treatment led to significantly improved functional recovery in animals as evidenced by the reduction in the neurological deficit scores after MCAO.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, we found that EPZ015666 treatment led to significantly improved functional recovery in the animals as evidenced by the reduction in the neurological deficit scores (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "fea41688-da77-42c7-948d-b7528518dc85",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C59",
+      "claim": "PRMT5 plays a critical role in mediating neuronal cell death after ischemic injury in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results strongly suggested that PRMT5 plays a critical role in mediating neuronal cell death after ischemic injury in the brain and may serve as a novel therapeutic target for stroke treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of in vitro and in vivo experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "6c1e53a9-2133-4b83-9e58-283570fa6519",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C60",
+      "claim": "PRMT5 may serve as a novel therapeutic target for stroke treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, these results strongly suggested that PRMT5 plays a critical role in mediating neuronal cell death after ischemic injury in the brain and may serve as a novel therapeutic target for stroke treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of in vitro and in vivo experimental results",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "341bbc89-7c32-4e8a-bd6b-875cc00aacfd",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C61",
+      "claim": "PRMT5 belongs to the evolutionarily conserved arginine methyltransferase protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "PRMT5 belongs to the evolutionarily conserved arginine methyltransferase protein family (Dong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dong et al., 2022",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "7ce17efc-31f5-4460-9fb3-23dfcf41d6a8",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C62",
+      "claim": "PRMT5 catalyzes the transfer of a methyl group from S-adenosyl-methionine to the guanidino nitrogen atoms of arginine as monomethylation and symmetric demethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "It catalyzes the transfer of a methyl group from S-adenosyl-methionine to the guanidino nitrogen atoms of arginine as monomethylation and symmetric demethylation (Dong et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dong et al., 2022",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2c14ca72-7164-40cf-9de4-edbba32404b8",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C63",
+      "claim": "PRMT5 is overexpressed in many cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it is overexpressed in many cancers and elevated PRMT5 expression often correlates with poor prognosis (Kim and Ronai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim and Ronai, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "9e76e0dc-9e10-4c74-99ea-6ff0150005cf",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C64",
+      "claim": "Elevated PRMT5 expression often correlates with poor prognosis in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it is overexpressed in many cancers and elevated PRMT5 expression often correlates with poor prognosis (Kim and Ronai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim and Ronai, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "3f5832fb-a5d1-4ae7-94f0-218c4bb983b5",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C65",
+      "claim": "PRMT5 depletion or inhibition leads to reduced proliferation and increased apoptosis in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, its depletion or inhibition leads to reduced proliferation and increased apoptosis in cancer cells (Kim and Ronai, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim and Ronai, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "838f3c91-4a71-4f84-af27-a8fa91961654",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C66",
+      "claim": "PRMT5 is required for early embryonic development and the maintenance of embryonic and neural stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, PRMT5 is also required for early embryonic development and the maintenance of embryonic and neural stem cells (Chittka et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chittka et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "8cdfadbe-01ff-4dfe-bfa8-77d166a3e0f5",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C67",
+      "claim": "Prmt5 silencing was reported to reduce oxidative stress-induced cell death in renal ischemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our findings, Prmt5 silencing was reported to reduce oxidative stress-induced cell death in renal ischemia (Diao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Diao et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "4ad97e2d-0f2a-44fc-a246-0230454aa337",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C68",
+      "claim": "PRMT5 appears to play dual roles in cell viability in a context-dependent fashion, being pro-proliferation in cancer and stem cells but pro-cell death under ischemic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PRMT5 appears to play dual roles in cell viability in a context-dependent fashion, being pro-proliferation in cancer and stem cells but pro-cell death under ischemic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of current findings with previous literature",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "10e5d0cc-c242-4396-8b7d-54dec653902d",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C69",
+      "claim": "Subcellular localization of PRMT5 protein appears to be cell type specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other arginine methyltransferase family members, subcellular localization of PRMT5 protein appears to be cell type specific (Koh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koh et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "843469d8-023f-4381-adac-350b5200b391",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C70",
+      "claim": "In embryonic stem cells, PRMT5 is predominantly cytoplasmic in self-renewing condition, but relocates to the nucleus upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryonic stem cells, it is predominantly cytoplasmic in self-renewing condition, but relocates to the nucleus upon differentiation (Gkountela et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gkountela et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "ad07824f-a609-47f9-8ae1-d870a50c58cc",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C71",
+      "claim": "During mammalian embryonic development, PRMT5 shuttles between the cytosol and the nucleus to fulfill its many functions in gene regulation and epigenome silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "During mammalian embryonic development, it shuttles between the cytosol and the nucleus to fulfill its many functions in gene regulation and epigenome silencing (Ancelin et al., 2006; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ancelin et al., 2006; Kim et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "92054411-02a4-4377-a08f-94639cf72ce5",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C72",
+      "claim": "In cancer, PRMT5 protein shows different cellular localization between normal and tumor tissues and between tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "In cancer, PRMT5 protein was found to show different cellular localization between normal and tumor tissues and between tumor types (Gu et al., 2012; Nicholas et al., 2013), suggesting that its compartment-specific functions may regulate distinct molecular programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gu et al., 2012; Nicholas et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "302b1ef0-be13-4cc4-943e-d4c203ace6f1",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C73",
+      "claim": "PRMT5 is highly expressed in neurons and localizes predominantly in the cytoplasm under normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we showed that PRMT5 is highly expressed in neurons and localizes predominantly in the cytoplasm under normal conditions, consistent with previous reports (Chittka, 2013; Ratovitski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental observations and citations to Chittka, 2013; Ratovitski et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "9167db66-3ed6-465a-bdd0-21f0ea0e329e",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C74",
+      "claim": "Transcription factors can interact with PRMT5 and regulate its cellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "As transcription factors can interact with PRMT5 and regulate its cellular localization (Shilo et al., 2013), we speculate that PRMT5 may be recruited to the nucleus to carry out its function in transcriptional regulation by factor(s) in response to ischemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shilo et al., 2013 and speculation based on this knowledge",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f9085c74-5445-42dd-b6e4-e0ded89ee5f4",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C75",
+      "claim": "PRMT5 plays important roles in gene regulation by methylating histones, transcription factors, and spliceosome proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "PRMT5 plays important roles in gene regulation by methylating histones, transcription factors, and spliceosome proteins (Blanc and Richard, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blanc and Richard, 2017",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "a1ddde46-df1b-40fd-ad80-d92ee7060cbc",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C76",
+      "claim": "PRMT5 interacts with ATP-dependent chromatin remodelers to control gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "It also interacts with ATP-dependent chromatin remodelers to control gene expression (Dacwag et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dacwag et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "e97c28dd-d6cd-4cae-853b-14904c75e6a5",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C77",
+      "claim": "PRMT5 often acts as a transcription repressor.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the notion that PRMT5 often acts as a transcription repressor (Fabbrizio et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fabbrizio et al., 2002",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "e6a1f94c-7352-4423-a59b-95f9a5031b63",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C78",
+      "claim": "OGD treatment caused similar numbers of genes to be up- or downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, OGD treatment alone caused similar numbers of genes to be up- or downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on RNA-seq data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "674ee2fc-af21-4836-8af5-8a902cbad60d",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C79",
+      "claim": "PRMT5-target genes are mostly downregulated after OGD and are enriched for those involved in cell survival.",
+      "claim_type": "EXPLICIT",
+      "source": "However, PRMT5-target genes are mostly downregulated after OGD and are enriched for those involved in cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on integration of ChIP-seq and RNA-seq data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "eb54de05-d4fc-4e5d-91f5-0abb74a14035",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C80",
+      "claim": "OGD or stroke-induced neuronal cell death may largely be caused by the repression of survival pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, OGD or stroke-induced neuronal cell death may largely be caused by the repression of survival pathways and re-activating these pathways may thereby provide an important mechanism for neuroprotection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "5725f1bb-4f95-4ea5-9f34-19d70abae67d",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C81",
+      "claim": "Re-activating survival pathways may provide an important mechanism for neuroprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, OGD or stroke-induced neuronal cell death may largely be caused by the repression of survival pathways and re-activating these pathways may thereby provide an important mechanism for neuroprotection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from experimental results",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "7f0d6184-838c-42c6-a306-7b07adf35931",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C82",
+      "claim": "Hedgehog signaling is an important signaling pathway that is frequently used during development for intercellular communication, as well as regeneration and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hedgehog signaling is an important signaling pathways that is frequently used during development for intercellular communication, as well as regeneration and homeostasis (Carballo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Carballo et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "3856a326-57a4-4107-9a6e-16d2f1546306",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C83",
+      "claim": "Sonic hedgehog (SHH) has particularly marked roles in nervous system cell-type specification and limbs patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "In nervous system-specific hedgehog, sonic hedgehog (SHH), canonically binds and inactivates PTCH1 inhibition of SMO for downstream GLI-1 signaling cascade, which has particularly marked roles in nervous system cell-type specification and limbs patterning (Briscoe and Ericson, 2001; Dessaud et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Briscoe and Ericson, 2001; Dessaud et al., 2008",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "a48ad823-9eb6-4f0a-a820-35b7d393d702",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C84",
+      "claim": "SHH signaling activation has promoted neural cell survival and tissue regeneration/repair after ischemic stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Chechneva et al., 2014 found that SHH signaling activation has promoted on neural cell survival and tissue regeneration/repair after ischemic stroke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chechneva et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2f5413a7-b4d4-4c18-98ae-981566de6d01",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C85",
+      "claim": "SHH agonist could induce a decrease in blood\u2013brain barrier permeability and an increase of newly generated neurons and neovascularization in the MCAO model.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, SHH agonist could also induce a decrease in blood\u2013brain barrier permeability and an increase of newly generated neurons and neovascularization in the MCAO model (Chechneva et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chechneva et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "34a06370-6316-4776-9344-5a046d39e3ce",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C86",
+      "claim": "The expression of SHH, PTCH1, and GLI-1 was significantly downregulated within 24 hr after OGD exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In in vitro studies, the expression of SHH, PTCH1, and GLI-1 was significantly downregulated within 24 hr after OGD exposure, which were closely associated with increasing numbers of apoptotic cells (Yin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yin et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2030ef4e-eea7-4087-9541-5d1f66cc79b2",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C87",
+      "claim": "Activation of SHH signals promoted CREB and AKT phosphorylation, upregulated the expressions of BDNF, neuroligin, and neurexin, and decreased NF-\u03baB phosphorylation following OGD.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of SHH signals promoted CREB and AKT phosphorylation, upregulated the expressions of BDNF, neuroligin, and neurexin, and decreased NF-\u03baB phosphorylation following OGD (Yin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yin et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "6ccaeed8-6b6d-4570-bdcf-f2cfa3c218a5",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C88",
+      "claim": "The regulation of PRMT5 on SHH signaling may be one of the important mechanisms of its ischemia protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the regulation of PRMT5 on SHH signaling may be one of the important mechanisms of its ischemia protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from current findings and previous literature",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "60968254-65bc-4f2f-bfde-99f3122ec08f",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C89",
+      "claim": "PRMT5 plays critical roles in tumorigenesis and is a therapeutic target that is actively pursued for cancer treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, PRMT5 plays critical roles in tumorigenesis and is therefore a therapeutic target that is actively pursued for cancer treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about PRMT5 in cancer",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "ae348ee3-9973-4f86-86d9-959ded058728",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C90",
+      "claim": "Several PRMT5 inhibitors, some of which highly potent, are in clinical trials to test their safety and efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Several PRMT5 inhibitors, some of which highly potent, are in clinical trials to test their safety and efficacy (Tao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tao et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "b2cb8aec-bed1-46ba-b096-cb295745ac38",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C91",
+      "claim": "HT-22 is an immortalized mouse hippocampal cell line that is a subline derived from parent HT4 cells that were originally immortalized from cultures of primary mouse hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand, HT-22 is an immortalized mouse hippocampal cell line, which is a subline derived from parent HT4 cells that were originally immortalized from cultures of primary mouse hippocampal neurons (Pascual et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pascual et al., 2012",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "163efc2a-c58c-4851-9657-be3de27e11f7",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C92",
+      "claim": "There exists to a certain extent difference between HT-22 cells and primary neurons under OGD stress.",
+      "claim_type": "EXPLICIT",
+      "source": "There exists to a certain extent difference from primary neurons under OGD stress and may be affected by cell proliferation regulatory elements in HT-22.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of study limitation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "85257e79-4dfa-423a-acc0-fb890f54212a",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C93",
+      "claim": "The nuclear PRMT5 plays specific roles in transcription regulation by directly modulating the activity of several transcription factors or by methylating histones (H4R3, H2AR3, H3R8, and H3R2).",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear PRMT5 plays specific roles in transcription regulation by directly modulating the activity of several transcription factors or by methylating histones (H4R3, H2AR3, H3R8, and H3R2), while the cytoplasmic expression of PRMT5 is involved in splicing, translation, and regulation of receptor\u2013ligand signaling and organelle integrity (Koh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koh et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f86efd62-351a-4a83-897b-7ebe92d706c4",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "claim_id": "C94",
+      "claim": "The cytoplasmic expression of PRMT5 is involved in splicing, translation, and regulation of receptor\u2013ligand signaling and organelle integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear PRMT5 plays specific roles in transcription regulation by directly modulating the activity of several transcription factors or by methylating histones (H4R3, H2AR3, H3R8, and H3R2), while the cytoplasmic expression of PRMT5 is involved in splicing, translation, and regulation of receptor\u2013ligand signaling and organelle integrity (Koh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Koh et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "393f79c5-17d4-4bcd-ac40-9d5511da289d",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An RNAi screen of 125 epigenetic regulators in HT-22 cells under OGD conditions identified PRMT5 as a negative regulator of neuronal survival. Knockdown of Prmt5 by multiple independent shRNAs and pharmacological inhibition with EPZ015666 both significantly improved cell survival after OGD in HT-22 cells and primary neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The screen design is sound with appropriate controls (C20-C23). Multiple independent validation approaches strengthen the finding: three different shRNAs (C27), small molecule inhibitor (C28), multiple assays (CCK-8, LDH) (C29), and replication in primary neurons (C30). The convergence of genetic and pharmacological evidence with consistent phenotypes across cell types provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2c11e94a-3691-44cf-b661-934a693a90da",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PRMT5 protein translocates from cytoplasm to nucleus upon OGD treatment in cultured cells. This was demonstrated by immunofluorescence of endogenous and HA-tagged PRMT5, biochemical fractionation showing nuclear and chromatin-bound enrichment, and replication in both HT-22 cells and primary neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple orthogonal methods confirm translocation: immunofluorescence (C32), CRISPR-tagged endogenous protein (C33), and biochemical fractionation (C34-C35). The use of HA-tagged endogenous PRMT5 controls for antibody artifacts. Replication in primary neurons (C36) addresses concerns about immortalized cell line artifacts. The chromatin-binding observation (C35) provides mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "fedf6e1c-7844-4c15-b81b-2954868442aa",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PRMT5 nuclear translocation occurs in vivo in the MCAO mouse stroke model. PRMT5 was predominantly cytoplasmic on the contralateral side but became nuclear-enriched on the ipsilateral (ischemic) side, including both penumbra and core regions, with chromatin binding confirmed by biochemical fractionation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vivo validation using MCAO model (C37-C39) with immunohistochemistry and biochemical fractionation (C40) demonstrates physiological relevance. The observation in both penumbra and core (C39) suggests widespread response. However, quantification of translocation extent and statistical analysis of multiple animals would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "26890fde-498a-40f8-ad29-8c2bb94861f4",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNA-seq and ChIP-seq integration revealed that PRMT5 binds to chromatin at 16,061 sites (56% near TSSs) and directly represses gene expression during OGD. Prmt5 knockdown reversed expression changes for 1,035 upregulated and 2,090 downregulated genes, with PRMT5 occupying promoters of downregulated genes that were rescued by knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The integration of ChIP-seq and RNA-seq provides strong mechanistic evidence (C45-C49). The observation that Prmt5 KD alone has minimal effect (C42) but reverses OGD-induced changes supports a context-dependent role. The enrichment at TSSs (C46) and correlation between binding and gene repression (C47-C48) are logically consistent. However, two biological replicates may be insufficient for robust differential expression analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PRMT5 represses Hedgehog signaling genes during OGD. Gene ontology analysis showed PRMT5-target genes are enriched for Hedgehog signaling, with ChIP-qPCR and RT-qPCR validation confirming PRMT5 occupancy and repression of Ptch1 and Smo. The authors conclude PRMT5 promotes neuronal death by repressing Hedgehog pathway genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The pathway enrichment (C18) is validated by direct testing of key genes Ptch1 and Smo (C50-C51). The mechanistic model (C52-C53) is logical given the known neuroprotective role of Hedgehog signaling. However, functional validation through Hedgehog pathway rescue experiments would strengthen the causal claim. The conclusion relies on inference from correlative genomic data and literature knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "00204518-2911-46d3-9e0b-85376a18e1be",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PRMT5 inhibition with EPZ015666 provides neuroprotection in the MCAO mouse model. Treatment reduced infarct volume, increased surviving neurons, decreased tissue swelling, and improved neurological deficit scores. The authors conclude PRMT5 is a critical mediator of ischemic neuronal death and potential therapeutic target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple outcome measures converge (C55-C58): histological (infarct volume, NeuN+ cells), physiological (water content, swelling), and functional (neurological scores). The GSEA analysis (C54) linking in vitro targets to in vivo changes strengthens translational relevance. Sample size (n=12) appears adequate. However, the therapeutic claim (C60) is speculative without dose-response, treatment window studies, or long-term outcome assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "0f714fc0-d649-40bb-9dcf-7ce0b239d544",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose PRMT5 has context-dependent dual roles: pro-proliferation in cancer/stem cells but pro-death under ischemic conditions. They show PRMT5 is cytoplasmic in normal neurons and speculate it may be recruited to the nucleus by transcription factors during ischemia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The dual-role interpretation (C68) integrates current findings with literature but lacks direct mechanistic evidence. The speculation about transcription factor recruitment (C74) is reasonable but untested. The observation of cytoplasmic localization in normal neurons (C73) is supported, but the mechanism of translocation remains unclear. This represents a hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "01c7b221-56ac-4108-96c1-4d08fb253b63",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that OGD-induced neuronal death is largely caused by repression of survival pathways rather than activation of death pathways, and that reactivating survival pathways provides neuroprotection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The observation that similar numbers of genes are up- and downregulated (C78) but PRMT5 targets are enriched in downregulated survival genes (C79) is interesting. However, the mechanistic conclusion (C80-C81) is speculative. The model doesn't exclude contributions from upregulated death pathways or other mechanisms. This interpretation requires functional validation through pathway-specific rescue experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f219bc68-76fd-4b0d-a061-e41f797c7cd2",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that PRMT5 regulation of Sonic Hedgehog signaling may be an important mechanism of ischemic protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim (C88) is speculative, based on integration of current findings with literature on Hedgehog signaling in stroke. While the genomic data support PRMT5 binding and repression of Hedgehog genes, functional validation through pathway-specific rescue (e.g., Hedgehog agonist treatment with PRMT5 inhibition) is needed to establish causality. The claim is reasonable but requires experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "468fb4bb-cbb4-4a43-8216-abc77bbd8c38",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors acknowledge that HT-22 is an immortalized cell line with potential differences from primary neurons under OGD stress, which may be affected by cell proliferation regulatory elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is an appropriate acknowledgment of study limitations (C91-C92). The authors partially address this by validating key findings in primary neurons (C30, C36), though not all experiments were replicated. This transparency about model limitations is important for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "102149fc-e1f6-438c-bc0f-896419261a94",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims about ischemic stroke epidemiology and treatment limitations, citing that ischemic stroke accounts for 87% of strokes, is the second leading cause of death, and current therapy benefits only ~5% of patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are standard background claims (C1-C5) supported by the cited reference (Brott and Bogousslavsky, 2000). However, the 5% treatment benefit figure may be outdated given advances in thrombectomy since 2000. These claims provide context but are not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "cb679b5e-a86a-468d-af0f-d78e5f187c16",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing that epigenetic alterations are important in stroke pathogenesis, that MCAO and OGD are established models for studying ischemia, and that previous work has shown neuroprotective effects of targeting epigenetic regulators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C6-C12) are well-supported by appropriate citations and represent established knowledge in the field. They provide important context for the current study's rationale and approach. The validation of screen hits against known factors (C24-C25) supports the screen's validity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "49a117b6-0560-44ff-8cc4-989afb7e145a",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information about PRMT5 biology, including its enzymatic activity, roles in cancer and development, subcellular localization patterns, mechanisms of gene regulation, and status as a therapeutic target with inhibitors in clinical trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are literature-based background claims (C61-C77, C89-C90, C93-C94) appropriately cited and providing context for interpreting the current findings. They establish PRMT5's known functions and support the novelty of its role in ischemic neuronal death. The information about clinical trials (C90) provides translational context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "d5428f57-0d8b-4f39-9a25-74df8b846844",
+      "content_id": "c8cfee35-4fde-4f7a-bf0c-24e126a29656",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background information about Hedgehog signaling in nervous system development and stroke, including its neuroprotective effects, regulation of neurogenesis and vascular permeability, and downstream signaling mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These literature-based claims (C82-C87) provide important context for interpreting the Hedgehog pathway enrichment findings. The citations support the neuroprotective role of Hedgehog signaling in stroke models, which strengthens the biological plausibility of the authors' mechanistic model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "6b837455-b79b-48cc-b668-06abf3f637b4",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "An RNAi screen targeting 125 epigenetic regulators in HT-22 cells under OGD conditions identified PRMT5 as a novel negative regulator of neuronal cell survival, with the shRNA against Prmt5 showing the largest fold change among enriched shRNAs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly acknowledge the RNAi screen and identification of PRMT5. Reviewer 1 states the authors 'performed a useful RNAi screen' and 'identified PRMT5 as a negative regulator.' Reviewer 2 describes the work as 'elegant' and confirms PRMT5 was identified through the screen. No concerns were raised about the screen methodology or the identification of PRMT5.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f5711a98-a6cf-481b-9643-9609b30770fb",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Genetic knockdown of Prmt5 using multiple shRNAs and pharmacological inhibition with EPZ015666 both significantly improved neuronal cell survival after OGD in HT-22 cells and primary neurons.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly accept these findings. Reviewer 1 states 'genetic and pharmacological inhibition of PRMT5 protected against neuronal cell death in both in vitro and in vivo models.' Reviewer 2 confirms 'Knocking down PRMT5 in HT-22 cells by shRNA leads to pertinent improvement in cell survival.' The in vitro protective effects are not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "PRMT5 translocates from the cytoplasm to the nucleus upon OGD treatment in vitro (HT-22 cells and primary neurons) and after MCAO in vivo, where it becomes chromatin-bound.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the translocation data, Reviewer 2 explicitly states 'the essential mechanisms underlying PRMT5 nuclear translocation have not been investigated,' indicating this is a significant gap. The translocation phenomenon itself is accepted, but the lack of mechanistic understanding creates uncertainty about the completeness of this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "RNA-seq and ChIP-seq analyses revealed that PRMT5 binds to promoter regions and suppresses expression of thousands of genes after OGD, with Prmt5 knockdown reversing a large fraction of OGD-induced gene expression changes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the genomic data. Reviewer 1 states 'they found that in response to OGD and ischemia, PRMT5 was translocated from the cytosol to the nucleus, where PRMT5 bound to the chromatin and promoter regions of targeted genes to repress the expression of downstream genes.' Reviewer 2 confirms the authors 'have shown that the symmetric arginine methyltransferase PRMT5 binds to the promoter region of several essential genes and represses their expression.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "a0ed3848-b3a2-4954-bf50-b3c0128b2f8b",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "PRMT5-target genes are highly enriched for Hedgehog signaling pathway components, including Ptch1 and Smo, and PRMT5 promotes neuronal cell death by repressing these genes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the Hedgehog signaling connection. Reviewer 1 notes 'they showed that silencing PRMT5 significantly altered the OGD-induced changes for a large-scale of genes' and acknowledges the pathway analysis. No concerns were raised about the gene ontology analysis or the specific targeting of Hedgehog pathway genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "8b2ed76d-06bb-4bd2-9ab4-b7cab54be56b",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "PRMT5 inhibition with EPZ015666 in the MCAO mouse model reduced infarct volume, increased neuronal survival, reduced tissue swelling, and improved functional recovery as measured by neurological deficit scores.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the in vivo protective effects, Reviewer 2 raises a critical concern about specificity, stating 'it would be better to verify the specificity of the inhibitor, EPZ015666, using other methyltransferases to be sure that the rescue is indeed mediated by PRMT5 catalytic inhibition.' Additionally, Reviewer 2 notes concerns about novelty and Reviewer 1 states 'the in vivo animal studies should be further strengthened.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "b3d2cf7d-bbcf-4c24-9d79-3ff055eab9c6",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "PRMT5 plays a critical role in mediating neuronal cell death after ischemic injury and may serve as a novel therapeutic target for stroke treatment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 raises a significant novelty concern, stating 'my primary concern is the novelty of the manuscript. It has already been reported that inhibition of PRMT5 attenuates cerebral ischemia/reperfusion condition' and cites a 2022 paper by Xiang Wu et al. showing similar protective effects with a different PRMT5 inhibitor. This directly challenges the claim of PRMT5 as a 'novel' therapeutic target, though the role itself is not disputed.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Background claims about stroke epidemiology, current treatments, epigenetic alterations in stroke, and the use of MCAO and OGD models.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are standard background claims supported by citations. Reviewers do not question any of these contextual statements, implicitly accepting them as established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "84735bc7-68bd-419b-afa4-77bcead2da7d",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background and discussion claims about PRMT5 biology, its roles in cancer and development, subcellular localization patterns, Hedgehog signaling in stroke, and properties of the HT-22 cell line.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are literature-based contextual claims supported by citations. Reviewers do not challenge these background statements, though Reviewer 2 notes the authors acknowledge 'to a certain extent difference between HT-22 cells and primary neurons under OGD stress' as a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "a25b95d1-60fe-45e2-b425-3be0496d03b1",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Speculative mechanistic claims about how PRMT5 may be recruited to the nucleus, how repression of survival pathways causes neuronal death, and how PRMT5 regulation of Hedgehog signaling provides neuroprotection.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are explicitly speculative claims ('we speculate,' 'may be') presented in the discussion. Reviewers do not challenge these interpretations, though Reviewer 2's comment that 'the essential mechanisms underlying PRMT5 nuclear translocation have not been investigated' implicitly acknowledges these remain hypotheses requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "8a2c8ad3-9b96-425e-9be4-4fb1e7b3219d",
+      "content_id": "f4b65ed8-e280-46e9-81ab-3e2a4d0036ac",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Supporting observations about DNA methylation and polycomb complexes in stroke, gene expression patterns after OGD, and limitations of the HT-22 cell model.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are minor supporting claims and acknowledged limitations. Reviewers do not question these statements. The authors' acknowledgment of HT-22 limitations is appropriate and not challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b963ca3a-dba2-4cc4-8add-13bad69f71ce",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "3dd6905c-5485-4ae9-94eb-7583d4a0346c",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "1df2dca3-09d0-4b6f-84ad-dc465ac9468f",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "8d3c01f9-a84c-4a39-8d34-9fa3a67c4cc6",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "2b5ea70e-8a3f-486f-8619-1db6e32fe9cc",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "300e0624-0e42-4087-ae29-1cdbfb0e1727",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "287dd90f-1e4f-46c9-b56e-52439b267487",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "22606d85-9a14-4bca-b57b-828295af309f",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "4f71e94a-67e2-4947-808d-24d005cc5dbe",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "b6c2227e-5f70-495c-9425-bb2a2c31b1aa",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "a1212953-8978-4de9-a9a8-7e0dd3b45e1c",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "913b7503-e121-4bb8-96c0-0d9537647284",
+      "result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d"
+    },
+    {
+      "claim_id": "e3501162-1c64-4cad-828c-1bcfd7b5115b",
+      "result_id": "2c11e94a-3691-44cf-b661-934a693a90da"
+    },
+    {
+      "claim_id": "bd108a7c-15c7-4d98-9455-d6124f2245b7",
+      "result_id": "2c11e94a-3691-44cf-b661-934a693a90da"
+    },
+    {
+      "claim_id": "ee8c3c19-8134-4104-8234-56242f713d88",
+      "result_id": "2c11e94a-3691-44cf-b661-934a693a90da"
+    },
+    {
+      "claim_id": "2da80628-9b8f-4eff-85fb-b783b786adf0",
+      "result_id": "2c11e94a-3691-44cf-b661-934a693a90da"
+    },
+    {
+      "claim_id": "54fe1e85-ac38-414c-a050-ed4a035ae9f9",
+      "result_id": "2c11e94a-3691-44cf-b661-934a693a90da"
+    },
+    {
+      "claim_id": "ae13f0a4-60e4-49e7-b282-c4ff0b62b7d7",
+      "result_id": "2c11e94a-3691-44cf-b661-934a693a90da"
+    },
+    {
+      "claim_id": "419e3e7a-545c-4fa4-b163-90884ccad364",
+      "result_id": "fedf6e1c-7844-4c15-b81b-2954868442aa"
+    },
+    {
+      "claim_id": "7c55796c-f246-4bb7-a14c-6c5c0e927e2c",
+      "result_id": "fedf6e1c-7844-4c15-b81b-2954868442aa"
+    },
+    {
+      "claim_id": "67aa6924-2c14-4edf-8f50-24a7b757f0db",
+      "result_id": "fedf6e1c-7844-4c15-b81b-2954868442aa"
+    },
+    {
+      "claim_id": "73740cdb-d6f1-4422-9f1e-0b6436d0a2b1",
+      "result_id": "fedf6e1c-7844-4c15-b81b-2954868442aa"
+    },
+    {
+      "claim_id": "ce8ad7c1-9df7-4396-bdcd-2d979e7d8987",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "1e08717d-a5f5-48de-9b29-fdab2728e35a",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "47e43241-32da-45cb-8427-9c845b6f5c39",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "732229ba-441b-4db4-8b9b-dca731607ebf",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "e1da205a-34f5-40e0-a74f-6f2197eb69ce",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "05e3a7d8-a402-4f71-8772-d50af6cd189d",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "316245ce-f32b-4d20-a12d-d8f2e18d3a1a",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "d1e01130-e5fa-4211-8a29-6c40b86ef6bf",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "bba46fb4-d215-4556-91e3-a44025e44c0b",
+      "result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4"
+    },
+    {
+      "claim_id": "656c4022-afcc-44b7-97a6-f6beb4336645",
+      "result_id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127"
+    },
+    {
+      "claim_id": "0731e931-03ea-45f9-b0ac-85039de07cfe",
+      "result_id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127"
+    },
+    {
+      "claim_id": "2135145e-aa89-4d77-90aa-327e7b086ab0",
+      "result_id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127"
+    },
+    {
+      "claim_id": "40d9d5bd-1830-4261-8968-51a4c8fb5851",
+      "result_id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127"
+    },
+    {
+      "claim_id": "6c056542-4af9-46ad-9a7c-090b14b1ce06",
+      "result_id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127"
+    },
+    {
+      "claim_id": "58ea79a4-9563-4c50-b0c0-1c5067970a08",
+      "result_id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127"
+    },
+    {
+      "claim_id": "2d8a55e6-d37e-4281-a08f-ac18a08ce6f7",
+      "result_id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127"
+    },
+    {
+      "claim_id": "93ca090b-831e-49e9-bd07-6fdecdebc107",
+      "result_id": "00204518-2911-46d3-9e0b-85376a18e1be"
+    },
+    {
+      "claim_id": "bb5517cc-27cf-446c-b6da-085dd96bb938",
+      "result_id": "00204518-2911-46d3-9e0b-85376a18e1be"
+    },
+    {
+      "claim_id": "9b792b77-372a-4cd9-8fb5-238d80227dda",
+      "result_id": "00204518-2911-46d3-9e0b-85376a18e1be"
+    },
+    {
+      "claim_id": "f63753e2-5ce2-4010-aca4-6479a192099d",
+      "result_id": "00204518-2911-46d3-9e0b-85376a18e1be"
+    },
+    {
+      "claim_id": "fdb5a32a-2a52-4fbc-9698-aab39b169580",
+      "result_id": "00204518-2911-46d3-9e0b-85376a18e1be"
+    },
+    {
+      "claim_id": "fea41688-da77-42c7-948d-b7528518dc85",
+      "result_id": "00204518-2911-46d3-9e0b-85376a18e1be"
+    },
+    {
+      "claim_id": "6c1e53a9-2133-4b83-9e58-283570fa6519",
+      "result_id": "00204518-2911-46d3-9e0b-85376a18e1be"
+    },
+    {
+      "claim_id": "4ad97e2d-0f2a-44fc-a246-0230454aa337",
+      "result_id": "0f714fc0-d649-40bb-9dcf-7ce0b239d544"
+    },
+    {
+      "claim_id": "302b1ef0-be13-4cc4-943e-d4c203ace6f1",
+      "result_id": "0f714fc0-d649-40bb-9dcf-7ce0b239d544"
+    },
+    {
+      "claim_id": "9167db66-3ed6-465a-bdd0-21f0ea0e329e",
+      "result_id": "0f714fc0-d649-40bb-9dcf-7ce0b239d544"
+    },
+    {
+      "claim_id": "e6a1f94c-7352-4423-a59b-95f9a5031b63",
+      "result_id": "01c7b221-56ac-4108-96c1-4d08fb253b63"
+    },
+    {
+      "claim_id": "674ee2fc-af21-4836-8af5-8a902cbad60d",
+      "result_id": "01c7b221-56ac-4108-96c1-4d08fb253b63"
+    },
+    {
+      "claim_id": "eb54de05-d4fc-4e5d-91f5-0abb74a14035",
+      "result_id": "01c7b221-56ac-4108-96c1-4d08fb253b63"
+    },
+    {
+      "claim_id": "5725f1bb-4f95-4ea5-9f34-19d70abae67d",
+      "result_id": "01c7b221-56ac-4108-96c1-4d08fb253b63"
+    },
+    {
+      "claim_id": "6ccaeed8-6b6d-4570-bdcf-f2cfa3c218a5",
+      "result_id": "f219bc68-76fd-4b0d-a061-e41f797c7cd2"
+    },
+    {
+      "claim_id": "b2cb8aec-bed1-46ba-b096-cb295745ac38",
+      "result_id": "468fb4bb-cbb4-4a43-8216-abc77bbd8c38"
+    },
+    {
+      "claim_id": "163efc2a-c58c-4851-9657-be3de27e11f7",
+      "result_id": "468fb4bb-cbb4-4a43-8216-abc77bbd8c38"
+    },
+    {
+      "claim_id": "f8a34d17-72ab-43d0-b9d3-351bdd5e4e74",
+      "result_id": "102149fc-e1f6-438c-bc0f-896419261a94"
+    },
+    {
+      "claim_id": "f0527824-b204-4f5c-9292-2ac583eca9e3",
+      "result_id": "102149fc-e1f6-438c-bc0f-896419261a94"
+    },
+    {
+      "claim_id": "9d30a184-9834-4010-b289-c7394b04f299",
+      "result_id": "102149fc-e1f6-438c-bc0f-896419261a94"
+    },
+    {
+      "claim_id": "4b514f39-6548-4769-90c4-38135ab9ba76",
+      "result_id": "102149fc-e1f6-438c-bc0f-896419261a94"
+    },
+    {
+      "claim_id": "52770d64-6ac5-4b88-a020-3b86f6262c5b",
+      "result_id": "102149fc-e1f6-438c-bc0f-896419261a94"
+    },
+    {
+      "claim_id": "2753dc20-031d-447c-97bb-12b21434da51",
+      "result_id": "cb679b5e-a86a-468d-af0f-d78e5f187c16"
+    },
+    {
+      "claim_id": "596baddb-28d2-4450-b7f3-dddd264a4a3d",
+      "result_id": "cb679b5e-a86a-468d-af0f-d78e5f187c16"
+    },
+    {
+      "claim_id": "0173385b-4e16-436e-83da-f7a9ef5e1427",
+      "result_id": "cb679b5e-a86a-468d-af0f-d78e5f187c16"
+    },
+    {
+      "claim_id": "c13c6afe-ed35-44c5-96a6-142074c1b9d6",
+      "result_id": "cb679b5e-a86a-468d-af0f-d78e5f187c16"
+    },
+    {
+      "claim_id": "a03715f1-7d3d-4f83-8961-ddbfd3e59df0",
+      "result_id": "cb679b5e-a86a-468d-af0f-d78e5f187c16"
+    },
+    {
+      "claim_id": "f2f908fe-2659-4454-8c61-d482b53b1076",
+      "result_id": "cb679b5e-a86a-468d-af0f-d78e5f187c16"
+    },
+    {
+      "claim_id": "abb6264b-160c-4b3c-883d-4b556a4351d1",
+      "result_id": "cb679b5e-a86a-468d-af0f-d78e5f187c16"
+    },
+    {
+      "claim_id": "341bbc89-7c32-4e8a-bd6b-875cc00aacfd",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "7ce17efc-31f5-4460-9fb3-23dfcf41d6a8",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "2c14ca72-7164-40cf-9de4-edbba32404b8",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "9e76e0dc-9e10-4c74-99ea-6ff0150005cf",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "3f5832fb-a5d1-4ae7-94f0-218c4bb983b5",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "838f3c91-4a71-4f84-af27-a8fa91961654",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "8cdfadbe-01ff-4dfe-bfa8-77d166a3e0f5",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "10e5d0cc-c242-4396-8b7d-54dec653902d",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "843469d8-023f-4381-adac-350b5200b391",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "ad07824f-a609-47f9-8ae1-d870a50c58cc",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "92054411-02a4-4377-a08f-94639cf72ce5",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "f9085c74-5445-42dd-b6e4-e0ded89ee5f4",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "a1ddde46-df1b-40fd-ad80-d92ee7060cbc",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "e97c28dd-d6cd-4cae-853b-14904c75e6a5",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "60968254-65bc-4f2f-bfde-99f3122ec08f",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "ae348ee3-9973-4f86-86d9-959ded058728",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "85257e79-4dfa-423a-acc0-fb890f54212a",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "f86efd62-351a-4a83-897b-7ebe92d706c4",
+      "result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a"
+    },
+    {
+      "claim_id": "7f0d6184-838c-42c6-a306-7b07adf35931",
+      "result_id": "d5428f57-0d8b-4f39-9a25-74df8b846844"
+    },
+    {
+      "claim_id": "3856a326-57a4-4107-9a6e-16d2f1546306",
+      "result_id": "d5428f57-0d8b-4f39-9a25-74df8b846844"
+    },
+    {
+      "claim_id": "a48ad823-9eb6-4f0a-a820-35b7d393d702",
+      "result_id": "d5428f57-0d8b-4f39-9a25-74df8b846844"
+    },
+    {
+      "claim_id": "2f5413a7-b4d4-4c18-98ae-981566de6d01",
+      "result_id": "d5428f57-0d8b-4f39-9a25-74df8b846844"
+    },
+    {
+      "claim_id": "34a06370-6316-4776-9344-5a046d39e3ce",
+      "result_id": "d5428f57-0d8b-4f39-9a25-74df8b846844"
+    },
+    {
+      "claim_id": "2030ef4e-eea7-4087-9541-5d1f66cc79b2",
+      "result_id": "d5428f57-0d8b-4f39-9a25-74df8b846844"
+    },
+    {
+      "claim_id": "b963ca3a-dba2-4cc4-8add-13bad69f71ce",
+      "result_id": "6b837455-b79b-48cc-b668-06abf3f637b4"
+    },
+    {
+      "claim_id": "3dd6905c-5485-4ae9-94eb-7583d4a0346c",
+      "result_id": "6b837455-b79b-48cc-b668-06abf3f637b4"
+    },
+    {
+      "claim_id": "1df2dca3-09d0-4b6f-84ad-dc465ac9468f",
+      "result_id": "6b837455-b79b-48cc-b668-06abf3f637b4"
+    },
+    {
+      "claim_id": "8d3c01f9-a84c-4a39-8d34-9fa3a67c4cc6",
+      "result_id": "6b837455-b79b-48cc-b668-06abf3f637b4"
+    },
+    {
+      "claim_id": "2b5ea70e-8a3f-486f-8619-1db6e32fe9cc",
+      "result_id": "6b837455-b79b-48cc-b668-06abf3f637b4"
+    },
+    {
+      "claim_id": "300e0624-0e42-4087-ae29-1cdbfb0e1727",
+      "result_id": "6b837455-b79b-48cc-b668-06abf3f637b4"
+    },
+    {
+      "claim_id": "287dd90f-1e4f-46c9-b56e-52439b267487",
+      "result_id": "6b837455-b79b-48cc-b668-06abf3f637b4"
+    },
+    {
+      "claim_id": "22606d85-9a14-4bca-b57b-828295af309f",
+      "result_id": "6b837455-b79b-48cc-b668-06abf3f637b4"
+    },
+    {
+      "claim_id": "4f71e94a-67e2-4947-808d-24d005cc5dbe",
+      "result_id": "f5711a98-a6cf-481b-9643-9609b30770fb"
+    },
+    {
+      "claim_id": "b6c2227e-5f70-495c-9425-bb2a2c31b1aa",
+      "result_id": "f5711a98-a6cf-481b-9643-9609b30770fb"
+    },
+    {
+      "claim_id": "a1212953-8978-4de9-a9a8-7e0dd3b45e1c",
+      "result_id": "f5711a98-a6cf-481b-9643-9609b30770fb"
+    },
+    {
+      "claim_id": "913b7503-e121-4bb8-96c0-0d9537647284",
+      "result_id": "f5711a98-a6cf-481b-9643-9609b30770fb"
+    },
+    {
+      "claim_id": "e3501162-1c64-4cad-828c-1bcfd7b5115b",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "bd108a7c-15c7-4d98-9455-d6124f2245b7",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "ee8c3c19-8134-4104-8234-56242f713d88",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "2da80628-9b8f-4eff-85fb-b783b786adf0",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "54fe1e85-ac38-414c-a050-ed4a035ae9f9",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "ae13f0a4-60e4-49e7-b282-c4ff0b62b7d7",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "419e3e7a-545c-4fa4-b163-90884ccad364",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "7c55796c-f246-4bb7-a14c-6c5c0e927e2c",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "67aa6924-2c14-4edf-8f50-24a7b757f0db",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "73740cdb-d6f1-4422-9f1e-0b6436d0a2b1",
+      "result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a"
+    },
+    {
+      "claim_id": "ce8ad7c1-9df7-4396-bdcd-2d979e7d8987",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "1e08717d-a5f5-48de-9b29-fdab2728e35a",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "47e43241-32da-45cb-8427-9c845b6f5c39",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "732229ba-441b-4db4-8b9b-dca731607ebf",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "e1da205a-34f5-40e0-a74f-6f2197eb69ce",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "05e3a7d8-a402-4f71-8772-d50af6cd189d",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "316245ce-f32b-4d20-a12d-d8f2e18d3a1a",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "d1e01130-e5fa-4211-8a29-6c40b86ef6bf",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "bba46fb4-d215-4556-91e3-a44025e44c0b",
+      "result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7"
+    },
+    {
+      "claim_id": "2135145e-aa89-4d77-90aa-327e7b086ab0",
+      "result_id": "a0ed3848-b3a2-4954-bf50-b3c0128b2f8b"
+    },
+    {
+      "claim_id": "40d9d5bd-1830-4261-8968-51a4c8fb5851",
+      "result_id": "a0ed3848-b3a2-4954-bf50-b3c0128b2f8b"
+    },
+    {
+      "claim_id": "6c056542-4af9-46ad-9a7c-090b14b1ce06",
+      "result_id": "a0ed3848-b3a2-4954-bf50-b3c0128b2f8b"
+    },
+    {
+      "claim_id": "58ea79a4-9563-4c50-b0c0-1c5067970a08",
+      "result_id": "a0ed3848-b3a2-4954-bf50-b3c0128b2f8b"
+    },
+    {
+      "claim_id": "2d8a55e6-d37e-4281-a08f-ac18a08ce6f7",
+      "result_id": "a0ed3848-b3a2-4954-bf50-b3c0128b2f8b"
+    },
+    {
+      "claim_id": "93ca090b-831e-49e9-bd07-6fdecdebc107",
+      "result_id": "8b2ed76d-06bb-4bd2-9ab4-b7cab54be56b"
+    },
+    {
+      "claim_id": "bb5517cc-27cf-446c-b6da-085dd96bb938",
+      "result_id": "8b2ed76d-06bb-4bd2-9ab4-b7cab54be56b"
+    },
+    {
+      "claim_id": "9b792b77-372a-4cd9-8fb5-238d80227dda",
+      "result_id": "8b2ed76d-06bb-4bd2-9ab4-b7cab54be56b"
+    },
+    {
+      "claim_id": "f63753e2-5ce2-4010-aca4-6479a192099d",
+      "result_id": "8b2ed76d-06bb-4bd2-9ab4-b7cab54be56b"
+    },
+    {
+      "claim_id": "fdb5a32a-2a52-4fbc-9698-aab39b169580",
+      "result_id": "8b2ed76d-06bb-4bd2-9ab4-b7cab54be56b"
+    },
+    {
+      "claim_id": "3bb187bb-147d-4510-af5c-8c320a5d67a9",
+      "result_id": "8b2ed76d-06bb-4bd2-9ab4-b7cab54be56b"
+    },
+    {
+      "claim_id": "fea41688-da77-42c7-948d-b7528518dc85",
+      "result_id": "b3d2cf7d-bbcf-4c24-9d79-3ff055eab9c6"
+    },
+    {
+      "claim_id": "6c1e53a9-2133-4b83-9e58-283570fa6519",
+      "result_id": "b3d2cf7d-bbcf-4c24-9d79-3ff055eab9c6"
+    },
+    {
+      "claim_id": "f8a34d17-72ab-43d0-b9d3-351bdd5e4e74",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "f0527824-b204-4f5c-9292-2ac583eca9e3",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "9d30a184-9834-4010-b289-c7394b04f299",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "4b514f39-6548-4769-90c4-38135ab9ba76",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "52770d64-6ac5-4b88-a020-3b86f6262c5b",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "2753dc20-031d-447c-97bb-12b21434da51",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "596baddb-28d2-4450-b7f3-dddd264a4a3d",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "0173385b-4e16-436e-83da-f7a9ef5e1427",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "c13c6afe-ed35-44c5-96a6-142074c1b9d6",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "a03715f1-7d3d-4f83-8961-ddbfd3e59df0",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "f2f908fe-2659-4454-8c61-d482b53b1076",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "abb6264b-160c-4b3c-883d-4b556a4351d1",
+      "result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479"
+    },
+    {
+      "claim_id": "341bbc89-7c32-4e8a-bd6b-875cc00aacfd",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "7ce17efc-31f5-4460-9fb3-23dfcf41d6a8",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "2c14ca72-7164-40cf-9de4-edbba32404b8",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "9e76e0dc-9e10-4c74-99ea-6ff0150005cf",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "3f5832fb-a5d1-4ae7-94f0-218c4bb983b5",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "838f3c91-4a71-4f84-af27-a8fa91961654",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "8cdfadbe-01ff-4dfe-bfa8-77d166a3e0f5",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "4ad97e2d-0f2a-44fc-a246-0230454aa337",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "10e5d0cc-c242-4396-8b7d-54dec653902d",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "843469d8-023f-4381-adac-350b5200b391",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "ad07824f-a609-47f9-8ae1-d870a50c58cc",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "92054411-02a4-4377-a08f-94639cf72ce5",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "302b1ef0-be13-4cc4-943e-d4c203ace6f1",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "f9085c74-5445-42dd-b6e4-e0ded89ee5f4",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "a1ddde46-df1b-40fd-ad80-d92ee7060cbc",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "e97c28dd-d6cd-4cae-853b-14904c75e6a5",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "7f0d6184-838c-42c6-a306-7b07adf35931",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "3856a326-57a4-4107-9a6e-16d2f1546306",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "a48ad823-9eb6-4f0a-a820-35b7d393d702",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "2f5413a7-b4d4-4c18-98ae-981566de6d01",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "34a06370-6316-4776-9344-5a046d39e3ce",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "2030ef4e-eea7-4087-9541-5d1f66cc79b2",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "60968254-65bc-4f2f-bfde-99f3122ec08f",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "ae348ee3-9973-4f86-86d9-959ded058728",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "b2cb8aec-bed1-46ba-b096-cb295745ac38",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "85257e79-4dfa-423a-acc0-fb890f54212a",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "f86efd62-351a-4a83-897b-7ebe92d706c4",
+      "result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d"
+    },
+    {
+      "claim_id": "9167db66-3ed6-465a-bdd0-21f0ea0e329e",
+      "result_id": "a25b95d1-60fe-45e2-b425-3be0496d03b1"
+    },
+    {
+      "claim_id": "eb54de05-d4fc-4e5d-91f5-0abb74a14035",
+      "result_id": "a25b95d1-60fe-45e2-b425-3be0496d03b1"
+    },
+    {
+      "claim_id": "5725f1bb-4f95-4ea5-9f34-19d70abae67d",
+      "result_id": "a25b95d1-60fe-45e2-b425-3be0496d03b1"
+    },
+    {
+      "claim_id": "6ccaeed8-6b6d-4570-bdcf-f2cfa3c218a5",
+      "result_id": "a25b95d1-60fe-45e2-b425-3be0496d03b1"
+    },
+    {
+      "claim_id": "61ac8b48-c597-428a-b8d8-2504d104a6fc",
+      "result_id": "8a2c8ad3-9b96-425e-9be4-4fb1e7b3219d"
+    },
+    {
+      "claim_id": "e6a1f94c-7352-4423-a59b-95f9a5031b63",
+      "result_id": "8a2c8ad3-9b96-425e-9be4-4fb1e7b3219d"
+    },
+    {
+      "claim_id": "674ee2fc-af21-4836-8af5-8a902cbad60d",
+      "result_id": "8a2c8ad3-9b96-425e-9be4-4fb1e7b3219d"
+    },
+    {
+      "claim_id": "163efc2a-c58c-4851-9657-be3de27e11f7",
+      "result_id": "8a2c8ad3-9b96-425e-9be4-4fb1e7b3219d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "e89a8a33-3f76-4fde-adae-ae40da0b06b4",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d",
+      "peer_result_id": "6b837455-b79b-48cc-b668-06abf3f637b4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the RNAi screen design and PRMT5 identification (C13, C14, C20-C24, C26). OpenEval emphasizes the methodological rigor with multiple validation approaches, while peer reviewers explicitly acknowledge the screen as 'useful' and 'elegant' with no concerns raised about methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "e7392670-47c6-4866-9ac4-819258d45f28",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "393f79c5-17d4-4bcd-ac40-9d5511da289d",
+      "peer_result_id": "f5711a98-a6cf-481b-9643-9609b30770fb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R1 includes validation claims (C27-C30) that peer reviewers address separately in R2. Both strongly support the in vitro protective effects using genetic and pharmacological approaches. Peer reviewers explicitly confirm these findings without questioning the validation strategy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f875874d-8de4-4c99-84d0-9fb3d51c2795",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2c11e94a-3691-44cf-b661-934a693a90da",
+      "peer_result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address PRMT5 translocation (C31-C36). OpenEval finds the evidence strongly supported through multiple orthogonal methods. Peer reviewers accept the translocation phenomenon but express uncertainty due to lack of mechanistic understanding of what drives translocation, noting this as a significant gap.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "57f94c22-aa2c-4844-ad1a-b747fbeefbce",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "fedf6e1c-7844-4c15-b81b-2954868442aa",
+      "peer_result_id": "aa604853-c6d6-44bc-87e7-1ba4e202cd2a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address in vivo translocation (C37-C40). OpenEval supports the findings but notes need for better quantification. Peer reviewers accept the data but indicate the mechanistic gap creates uncertainty and that 'in vivo animal studies should be further strengthened.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "17ecaef2-8b51-4848-967a-439b04dabac9",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "26890fde-498a-40f8-ad29-8c2bb94861f4",
+      "peer_result_id": "cc73fbd0-091b-4a1c-9666-cf6503ceedf7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on genomic data (C41-C49). Both strongly support the ChIP-seq and RNA-seq integration showing PRMT5 binding and gene repression. OpenEval notes potential concern about replicate numbers, while peer reviewers fully accept the findings without methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "f7ebce0d-62b0-4827-a6be-893b3562e1fe",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "53fabd87-e3b9-4dcb-9e50-5e18b6911127",
+      "peer_result_id": "a0ed3848-b3a2-4954-bf50-b3c0128b2f8b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the Hedgehog pathway connection (C18, C50-C53). OpenEval notes the evidence is supported but suggests functional rescue experiments would strengthen causal claims. Peer reviewers accept the pathway analysis and gene targeting without raising concerns about the mechanistic interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "e87814fb-4142-4f17-bee8-00ee8dbe8f29",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "00204518-2911-46d3-9e0b-85376a18e1be",
+      "peer_result_id": "8b2ed76d-06bb-4bd2-9ab4-b7cab54be56b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address in vivo protective effects (C54-C58). OpenEval supports the convergent outcome measures but notes therapeutic claim (C60) is speculative. Peer reviewers express uncertainty due to concerns about inhibitor specificity and call for verification using other methyltransferases.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "1f51de54-0c92-46da-a848-1ae49e0fa624",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "00204518-2911-46d3-9e0b-85376a18e1be",
+      "peer_result_id": "b3d2cf7d-bbcf-4c24-9d79-3ff055eab9c6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R6 includes therapeutic target claims (C59-C60) that peer reviewers address separately in R7. OpenEval finds C60 speculative without dose-response studies. Peer reviewers raise significant novelty concerns, citing a 2022 paper showing similar protective effects with a different PRMT5 inhibitor.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "9cfdbe1b-cb72-4433-b621-0ee7e387db8b",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0f714fc0-d649-40bb-9dcf-7ce0b239d544",
+      "peer_result_id": "a25b95d1-60fe-45e2-b425-3be0496d03b1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address speculative mechanistic claims. OpenEval rates dual-role interpretation and transcription factor recruitment (C68, C73-C74) as uncertain, requiring further investigation. Peer reviewers support these as appropriate speculative discussion points, acknowledging they remain hypotheses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "8b9b1bcf-fe79-4acd-9869-001c0986e769",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "01c7b221-56ac-4108-96c1-4d08fb253b63",
+      "peer_result_id": "a25b95d1-60fe-45e2-b425-3be0496d03b1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address mechanistic speculation about gene regulation (C80-C81). OpenEval finds the interpretation uncertain and requiring functional validation. Peer reviewers support these as legitimate speculative claims in the discussion, though acknowledge mechanistic gaps remain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2952c66f-1b09-47e4-a516-13aed9c41eba",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "01c7b221-56ac-4108-96c1-4d08fb253b63",
+      "peer_result_id": "8a2c8ad3-9b96-425e-9be4-4fb1e7b3219d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address gene regulation patterns (C78-C79). OpenEval finds the observation interesting but mechanistic conclusions speculative. Peer reviewers accept these claims without challenge, treating them as supported findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "eb44528a-6c4e-41e3-a0f1-f0472f1e848d",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "f219bc68-76fd-4b0d-a061-e41f797c7cd2",
+      "peer_result_id": "a25b95d1-60fe-45e2-b425-3be0496d03b1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address Hedgehog pathway speculation (C88). OpenEval rates this as uncertain, requiring functional rescue experiments to establish causality. Peer reviewers support this as appropriate speculation, not challenging the interpretation despite acknowledging it requires further investigation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "2ef9e254-c1c8-4b5e-bfb2-8df96f129796",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "468fb4bb-cbb4-4a43-8216-abc77bbd8c38",
+      "peer_result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address study limitations (C91-C92). OpenEval supports this as appropriate acknowledgment of HT-22 cell line limitations. Peer reviewers also accept this limitation statement, with Reviewer 2 explicitly noting the authors acknowledge differences between HT-22 cells and primary neurons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "bd923e0f-d51d-42a0-a482-bd6b6592b0b5",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "102149fc-e1f6-438c-bc0f-896419261a94",
+      "peer_result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address background claims about stroke epidemiology and treatment (C1-C5). OpenEval supports these as standard background but notes the 5% treatment benefit may be outdated. Peer reviewers implicitly accept these contextual claims without question.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "d3b52e4f-91c2-48f7-b2a9-9c17d5b173a7",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "cb679b5e-a86a-468d-af0f-d78e5f187c16",
+      "peer_result_id": "a21c0f9a-5d9c-4b0c-af37-45defe78b479",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address background claims about epigenetic regulation and screen rationale (C6-C12). OpenEval and peer reviewers both strongly support these as well-established contextual knowledge appropriately cited, providing important rationale for the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "71a6df6c-7762-4ebf-baf5-167b535a65f6",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "49a117b6-0560-44ff-8cc4-989afb7e145a",
+      "peer_result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address extensive literature-based background on PRMT5 functions (C61-C77, C89-C90, C93-C94). OpenEval and peer reviewers both support these as appropriately cited contextual claims establishing PRMT5's known functions and supporting the novelty of its role in ischemic neuronal death.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "33a5e0cc-7437-4c28-b850-db1fd12cffa5",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "d5428f57-0d8b-4f39-9a25-74df8b846844",
+      "peer_result_id": "84735bc7-68bd-419b-afa4-77bcead2da7d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address literature on Hedgehog signaling in stroke (C82-C87). OpenEval supports these claims as providing important context for interpreting pathway enrichment findings. Peer reviewers also accept these background claims without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    },
+    {
+      "id": "fb171106-6c7f-4860-87bc-1d92845cd6f5",
+      "submission_id": "05090300-a186-4902-9216-a7af971bfa1b",
+      "comparison_id": "CMP18",
+      "openeval_result_id": null,
+      "peer_result_id": "8a2c8ad3-9b96-425e-9be4-4fb1e7b3219d",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MINOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers address minor supporting claims (C25, C78-C79, C92) that OpenEval distributes across other results. Peer reviewers support these without question, including validation against known factors and acknowledged limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:38:56.110135Z"
+    }
+  ]
+}

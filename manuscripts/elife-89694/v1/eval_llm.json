@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript establishes the biological context for studying C9orf72-related ALS/FTD, identifying the C9orf72 G4C2 repeat expansion as the most common genetic mutation in ALS/FTD, its translation into five DPR types, the high toxicity of arginine-containing DPRs (especially polyPR), and the link between R-DPRs and nucleocytoplasmic transport (NCT) disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by multiple citations to established literature. These claims provide essential background knowledge from prior work and are appropriately referenced. The claims establish the rationale for the current computational study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript describes the established mechanisms of nucleocytoplasmic transport, including the role of NPCs, FG-Nups, nuclear transport receptors (particularly the Kap\u03b2 family), the Ran GTPase cycle, and the importin \u03b1/\u03b2 import pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 accurately describe well-established mechanisms of NCT with appropriate citations. These represent standard biological knowledge that provides necessary context for interpreting the computational results. The descriptions are consistent with current understanding of NCT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior experimental work has shown that R-DPRs directly bind to Imp\u03b1 isomers and cause mislocalization of RanGAP, Ran, and RanGEF, with RanGAP and RanGEF appearing as modifiers of R-DPR toxicity in genetic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by appropriate citations to experimental studies. These claims establish the experimental basis for investigating polyPR interactions with these specific transport components computationally. The prior work justifies the selection of proteins studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The study employs a validated one-bead-per-amino-acid (1BPA) coarse-grained molecular dynamics approach to model polyPR interactions with various human and yeast NCT components, including Imp\u03b1 isomers (without IBB domains), CAS/Cse1, RanGAP, RanGEF, NTF2, and Ran.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C35 describe the computational methodology and model construction. The 1BPA approach is validated by prior work (C25), and the structural descriptions of transport components are consistent with established knowledge and appropriately cited. The decision to exclude IBB domains (C29) is explicitly justified to simplify analysis of NLS-binding site interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study investigates polyPR length dependence (PR7, PR20, PR50) at two salt concentrations (100 mM and 200 mM) using Langevin dynamics simulations of at least 2.5 \u03bcs duration, with convergence confirmed by extended simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C102-C104 describe the simulation design and validation. The length dependence is motivated by prior experimental observations (C36), the salt concentrations are justified by comparison to experimental conditions, and convergence is demonstrated (C104, Figure 3\u2014figure supplement 2). The simulation parameters are clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PolyPR binding to transport components is electrostatically driven, with the number of contacts correlating linearly with a charge parameter (NCPR-fM/Rg) that incorporates both net charge per residue and dipole moment. For Kap\u03b2s, CAS, and Cse1, NCPR alone dominates due to their superhelical structure with a negatively charged inner cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by the linear correlations shown in Figure 2a-b. The electrostatic nature of binding is demonstrated by the correlation with charge parameters and salt dependence. The structural explanation for why Kap\u03b2s differ (C41-C42) is reasonable and consistent with prior work (C43). The fitting parameter f is systematically optimized (Figure 2\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "At 200 mM salt concentration, polyPR shows strong binding to RanGAP (due to high negative charge and dipole moment), negligible binding to Ran (low dipole moment, no net charge), and very low binding to RanGEF and NTF2. The binding to Imp\u03b1 isomers is consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are directly supported by the contact data in Figure 2a. The explanations for differential binding based on charge properties (Figure 2\u2014figure supplement 1) are consistent with the electrostatic model. The comparison to experimental data (C46) validates the computational approach despite the absence of IBB domains in the models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Reducing salt concentration from 200 mM to 100 mM increases polyPR-transport component contacts, confirming electrostatic driving forces. Longer polyPRs show increased total contacts but decreased contacts per unit length, as only portions of longer chains contact the target proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by Figure 2 data showing salt-dependent binding. The electrostatic interpretation (C50) is consistent with the salt screening effect. The length-dependent trends (C53-C55) are clearly shown in the data, and the mechanistic explanation (C55) is reasonable based on polymer physics principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "PolyPR interacts with functionally important binding sites on transport components in a length-dependent manner, including cargo-NLS sites on Imp\u03b1 (stronger for longer polyPRs), Nup50/Nup2 and Cse1 sites on Imp\u03b1 (both short and long polyPRs), RanGTP-binding sites on RanGAP and Cse1, Ran-binding sites on RanGEF (longer polyPRs), and RanGDP-binding sites on NTF2, with negligible Ran binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C67 are supported by the contact probability data in Figure 3a and the shared binding site analysis in Figure 3b. The identification of binding sites is based on crystal structures from PDB via PiSITE, providing objective validation. The length-dependent patterns are clearly demonstrated, particularly for cargo-NLS sites (C59) versus other sites (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The negatively charged C-terminal region of RanGAP is in close proximity to a positively charged region in Ran and plays a role in RanGTP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by appropriate citations to structural studies (Haberland et al., 1997; Seewald et al., 2002). This provides functional context for the observed polyPR binding to this region (C63).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Based on binding site analysis, polyPR may interfere with multiple NCT steps: cargo loading onto Kap\u03b2s and Imp\u03b1, cargo-Imp\u03b1 dissociation from Kap\u03b2, cargo dissociation from Imp\u03b1, RanGTP-CAS/Cse1-Imp\u03b1 complex formation, RanGTP-mediated complex disassembly by RanGAP, RanGDP loading to NTF2, and GDP-GTP exchange by RanGEF, with lower likelihood of NTF2 interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C74 represent mechanistic inferences from the binding data. While the binding site overlaps are clearly demonstrated (Figure 3b), these claims about functional interference are speculative. The manuscript appropriately uses cautious language ('may,' 'could,' 'suggests'), but experimental validation would be needed to confirm these functional consequences. The relative significance caveat is noted but not quantitatively assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PolyPR interactions with transport components are electrostatically driven and length-dependent, with longer polyPRs showing increased binding. This length dependence provides a molecular basis for the greater toxicity of longer polyPRs observed in experimental models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 summarize well-supported findings from the study. Claim C77 makes a reasonable connection to experimental observations of length-dependent toxicity (appropriately cited), though the causal link between binding and toxicity remains inferential. The correlation is plausible but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "PolyPR binds to Imp\u03b1 family members, CAS, Cse1, and RanGAP (particularly the negatively charged C-terminal region), but not to Ran. The strong binding to the C-terminal region of yeast RanGAP, which is conserved in human RanGAP, may contribute to experimentally observed RanGAP mislocalization in HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 summarize key findings supported by the simulation data. Claim C80 about sequence conservation is reasonable based on structural knowledge. Claim C81 makes a plausible connection to experimental observations (Ryan et al., 2022), though the causal contribution remains inferential. The use of yeast RanGAP as a model is justified by structural availability and conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "PolyPR binds to RanGEF and NTF2 at lower salt concentrations or with sufficient length. Incorporating dipole moment in addition to net charge per residue improves the fit for transport components, indicating that spatial charge distribution influences binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is supported by Figure 2a data. Claim C83 is supported by the improved R\u00b2 values when including the dipole moment term (Figure 2\u2014figure supplement 1). This represents a refinement of the electrostatic model beyond simple net charge considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "PolyPR interacts with important binding sites in a length-dependent manner, with RanGTP/RanGDP-binding site interaction being a common feature suggesting strong interference with the Ran gradient. For Imp\u03b1 family and CAS/Cse1, polyPR interacts with cargo-NLS, Nup2/Nup50, Cse1, and Imp\u03b1-binding sites, suggesting interference with cargo-NLS association/dissociation and Imp\u03b1 export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 summarize binding site data from Figure 3. Claim C90 represents a reasonable inference from the binding patterns, though functional interference remains to be experimentally validated. The common feature of Ran-binding site interaction (C85-C86) is well-supported and mechanistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study demonstrates pronounced direct binding between polyPR and a large number of transport components, with intrinsic length dependence suggesting this mechanism as a potential therapeutic target and providing a basis for future research on NCT disruption in C9orf72 ALS/FTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 accurately summarizes the main finding. Claims C92-C93 represent reasonable speculation about implications, appropriately framed as potential future directions. The therapeutic target suggestion (C92) is speculative but justified by the length dependence and multiple binding interactions demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The 1BPA force field used in this study was originally developed for FG-Nups and extended for DPR phase separation and polyPR-Kap\u03b2 interactions, with identical parameters to the prior Kap\u03b2 study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe the methodological lineage of the force field with appropriate citations. The consistency with prior work (C97) supports reproducibility and comparability of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Experimental observations show polyPR binds to importins but hydrophobic DPRs (polyGA, polyGP) do not, highlighting the importance of arginine, which engages in electrostatic and cation-\u03c0 interactions at physiological salt concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by appropriate citations to experimental work. Claim C101 represents established chemical knowledge about arginine interactions. These claims justify the focus on electrostatic and cation-\u03c0 interactions in the force field.",
+    "result_type": "MINOR"
+  }
+]

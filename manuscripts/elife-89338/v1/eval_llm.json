@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "scRNAseq was performed on 4 dpf larval zebrafish spinal cords, with approximately 150 spinal cords isolated per replicate experiment, sequencing 10,000-15,000 cells per replicate to 40,000 reads per cell, resulting in 11,762 spinal cord cells after quality control and data integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the experimental design and data generation pipeline with specific quantitative details. The methodology is clearly stated with appropriate depth of sequencing and cell numbers. The quality control process is referenced with supporting figures, providing transparency in data filtering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Unsupervised clustering of the spinal cord transcriptome identified 30 clusters, with 27 clusters assigned to neuronal (elavl4+/snap25a+) or glial (gfap+/slc1a2b+/myrf+/sox10+) cell types. Glial cells comprised 46% of total cells and separated into astrocytes/radial glia and oligodendrocytes. Three clusters with mixed marker expression were excluded from analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 describe the initial clustering and cell type identification using established markers. The use of canonical markers for neurons and glia is well-supported by prior literature (C7, C8). The decision to exclude ambiguous clusters (C12, C13) is reasonable given the mixed marker expression, though the manuscript acknowledges uncertainty about whether these represent true cell types or doublets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The neuronal population was reclustered into 33 clusters and cell identities were assigned using a combination code based on neurotransmitter phenotype and differentially expressed marker genes. This approach identified four principal neurotransmitter categories (glutamatergic, glycinergic, GABAergic, cholinergic) and assigned identities to 22 of 33 clusters with confidence. The relative abundance of identified cell types was consistent with published in vivo labeling experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 describe a systematic approach to neuronal cell type identification combining neurotransmitter markers with DEGs. The validation against published cell type abundances (C17) strengthens confidence in the methodology. The acknowledgment that 11 clusters could not be confidently assigned (C18) demonstrates appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "scRNAseq analysis resolved subtypes within neuronal classes, including KA neurons (KA' and KA'' based on sst1.1 vs urp1 expression) and v2a interneurons (type I and type II based on vsx2/shox2 expression levels). gjd2b was identified as a novel marker for type II v2a neurons, validated by in situ hybridization showing colocalization with weakly fluorescent vsx2:Kaede+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 demonstrate the ability of scRNAseq to resolve known neuronal subtypes and identify novel markers. The identification of gjd2b as a type II v2a marker (C25) is supported by both transcriptomic data and experimental validation via in situ hybridization (C27, C28). The consistency with previous studies in adult fish (C26) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "chga was identified as a novel marker for CoLo interneurons, a glycinergic interneuron type that provides fast contralateral inhibition during escape responses. In situ hybridization revealed chga+ neurons with stereotypical CoLo location (one per hemi-segment, rostral position), and colocalization with GFP-labeled CoLos confirmed marker specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 identify chga as a novel CoLo marker with multiple lines of validation. The functional role of CoLo is established by prior literature (C31, C32). The identification is supported by transcriptomic data (C33), spatial expression pattern (C34, C35), and direct colocalization with morphologically identified CoLos (C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "pnoca was identified as a highly specific marker for DoLA interneurons, GABAergic neurons located dorsally in the spinal cord. In situ hybridization and sparse labeling confirmed that pnoca+ neurons exhibit DoLA morphology (long ascending axons with short ventral projections). pnoca encodes Prepronociceptin, suggesting DoLAs may function as neuropeptide-releasing neurons modulating sensory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 identify pnoca as a novel DoLA marker with morphological validation (C40). The functional speculation (C42) is appropriately tentative and based on the known function of pnoca (C41). However, the functional role remains speculative without direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A novel cholinergic/glutamatergic interneuron cluster was identified expressing chata/slc18a3a but lacking motor neuron markers (mnx1/mnx2b/isl1) and expressing v0 domain markers (evx1/evx2), suggesting homology to mammalian v0c interneurons. Sparse labeling revealed v0c morphology (soma near dorsal motor column boundary, long descending axons >6 segments with bouton-like enlargements near motor neuron somata), consistent with a role in modulating motor neuron properties. Unlike mouse v0c, zebrafish v0c coexpresses cholinergic and glutamatergic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 describe the identification and characterization of a novel interneuron type in larval zebrafish. The transcriptomic profile (C43-C45) and morphological characterization (C49-C52) are well-documented. The inference of homology to mammalian v0c (C45) is reasonable based on marker expression, though the coexpression of glutamatergic markers (C48) represents a species difference. The functional inference (C54) is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Motor neurons were isolated using two complementary approaches: computational extraction from whole spinal cord (1,354 cells, 27% of neurons) and FACS sorting of mnx1:GFP+ cells (7,790 cells, >92% Mns). Integration yielded 9,144 cells in 10 clusters. A small cluster (3.6%) expressing gfra1a/tbx3b, sourced predominantly from FACS data (>94%), shared markers with non-skeletal muscle motor neurons described in mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 describe a rigorous approach to motor neuron isolation using complementary methods. The dual approach (computational and experimental) strengthens confidence in the results. The identification of a potential non-skeletal muscle motor neuron population (C58, C59) based on comparison to mouse data is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Motor neurons were classified into primary (PMn) and secondary (SMn) types based on mutually exclusive expression of chga (PMn marker) and nr2f1a (SMn marker), representing ~95% of motor neurons. In situ hybridization showed chga labels large, dorsally located motor neurons while nr2f1a labels smaller, ventrally located motor neurons. chga expression was validated in all PMn types (CaP, MiP, RoP). SMn clusters outnumbered PMn clusters by ~18-fold, consistent with known cell counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C71 establish chga and nr2f1a as markers distinguishing PMn and SMn types. The spatial expression patterns (C65, C66) match known PMn/SMn distributions. Validation across multiple PMn types (C68, C69) and consistency with published cell counts (C71) strongly support the marker assignments. The ~18-fold difference in cell numbers (C71) aligns with anatomical studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Secondary motor neurons were subdivided into three groups based on differential expression of foxb1b, alcamb, and bmp16, representing ~95% of SMns. foxb1b+ SMns occupied more dorsal positions while alcamb+ and bmp16+ SMns were more ventral. alcamb expression overlapped with Tg(gata2:GFP)+ SMns while foxb1b colocalized with Tg(isl1:GFP)+ SMns. bmp16+ motor neurons may innervate slow muscle based on the role of bmp signaling in slow muscle specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 identify molecular markers distinguishing SMn subtypes with spatial validation. The correspondence to transgenic lines (C74, C75) provides independent validation. The speculation about bmp16+ motor neuron targets (C76) is appropriately tentative and based on prior literature linking bmp signaling to slow muscle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Differential expression analysis between PMn and SMn identified 508 genes with \u226530% expression difference (317 higher in PMns). GO enrichment analysis revealed PMn-enriched genes in three functional categories: synaptic function, ion channels/transporters, and ATP generation (24 of 37 significant GO terms). PMns showed enrichment of 29 synaptic genes (including VAMP, SNAP25, Syntaxin, Synaptotagmins) and 8 ion channel genes (P/Q calcium channel, \u03b24 sodium channel subunit, Kv3.3 potassium channel), while SMns showed no unique enrichment of these functional categories. SMns were enriched for transcription factors and RNA binding proteins (118 of 191 SMn-enriched genes), which are unlikely to directly confer functional distinctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C87 describe comprehensive differential expression analysis with appropriate statistical thresholds and functional annotation. The enrichment of synaptic and ion channel genes in PMns (C79, C80, C82) aligns with known functional differences in synaptic transmission. The absence of SMn-specific functional gene enrichment (C84, C85) is consistent with their lower synaptic transmission properties. The inference connecting gene expression to function (C87) is supported by prior electrophysiological studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "An ion channel cassette comprising cacna1ab (P/Q calcium channel), scn4ba (\u03b24 sodium channel subunit), and kcnc3a (Kv3.3 potassium channel) was coexpressed in >55% of PMn cells but <3% of SMns. scn4ba expression in PMns was validated by in situ hybridization showing colocalization with CaP, MiP, and RoP. kcnc3a expression in PMns was validated by immunohistochemistry, with CaP ablation experiments showing specific signal reduction in the CaP target field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 identify and validate an ion channel cassette specifically expressed in PMns. The quantitative coexpression data (C88) is supported by multiple validation approaches: in situ hybridization for scn4ba (C89, C90) and immunohistochemistry with functional ablation for kcnc3a (C92, C93, C94). The ablation experiment (C93, C94) provides strong evidence for PMn-specific expression by demonstrating loss of signal in the CaP target field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The ion channel cassette (cacna1ab, scn4ba, kcnc3a) and synaptic gene cassette (vamp1a/b, syt2a/b, snap25a, stxbp1a, cplx2l) are coexpressed at high levels in type II v2a and CoLo interneurons compared to other interneuron types. scn4ba is the strongest delineator for cassette expression among the three ion channel genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 extend the cassette concept to interneurons involved in escape circuitry. The expression patterns are clearly documented in the figures. The identification of scn4ba as the most specific marker (C96) is supported by the data showing its more restricted expression pattern compared to the other cassette members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Primary motor neurons express high levels of functional cassettes comprising voltage-dependent ion channels (specialized for high-frequency firing and augmented transmitter release) and synaptic proteins, contributing to greater power generation. This cassette is also expressed in specific interneuron types (type II v2a, CoLo) involved in high-speed swimming and escape behaviors. In contrast, secondary motor neurons fire at lower frequencies with frequent synaptic failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 synthesize the major findings, linking transcriptomic profiles to known functional properties. The functional properties of PMns and SMns (C98, C99) are established by prior electrophysiological studies. The identification of cassette expression in escape circuit interneurons (C102) provides a molecular framework for understanding circuit specialization. The inference that cassettes contribute to functional specialization (C101) is well-supported by the literature on individual channel functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The identification of cacna1ab (P/Q-type calcium channel) as a top PMn DEG corroborates previous studies establishing it as the presynaptic calcium channel mediating release specifically in PMns. Mutations in cacna1ab completely abolished AP-evoked release in PMns but not SMns, resulting in loss of escape response while preserving normal fictive swimming. P/Q-type channels are widely associated with high release probability synapses due to higher open probability during action potentials compared to N-type channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 integrate current transcriptomic findings with prior functional studies. The corroboration with previous work (C103, C104, C105) strengthens confidence in the transcriptomic analysis. The general properties of P/Q-type channels (C106) are well-established in the literature and provide mechanistic context for the PMn-specific expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The ion channel cassette members have established roles in high-frequency signaling: the \u03b24 sodium channel subunit confers high-frequency firing through fast reversible channel block enabling firing at frequencies exceeding the refractory period; Kv3.3 potassium channels promote high firing frequency and augmented transmitter release through fast activation kinetics and rapid AP repolarization. The zebrafish kcnc3a channel exhibits fast activation and inactivation kinetics consistent with this role. This ion channel trio is coexpressed in mammalian neurons involved in fast signaling (e.g., calyx of Held, pyramidal neurons), suggesting evolutionary conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 provide mechanistic context for the functional significance of the ion channel cassette. The biophysical properties of each channel type are well-established in the literature (C107-C110). The inference of evolutionary conservation (C111) is supported by documented coexpression in mammalian fast-signaling neurons (C112), though direct functional validation in zebrafish would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Type II v2a interneurons can fire at high frequencies over 600 Hz. In ALS, fast motor neurons are selectively targeted for degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 cite prior literature to provide functional context for the findings. These are established facts from previous studies that support the relevance of identifying molecular signatures of fast-firing neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Both type I and type II v2a interneurons make direct connections with PMns and are recruited during high-speed swimming, but type II v2a is recruited more effectively across the range of high swimming speeds and differs in connection strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 cite prior functional studies characterizing v2a subtypes. These established functional differences provide context for the transcriptomic distinctions identified in the current study.",
+    "result_type": "MINOR"
+  }
+]

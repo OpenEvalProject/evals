@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C93",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors developed a novel hybrid computational model combining abstract Kuramoto oscillators (representing medial septum pacemaker neurons) with biophysically realistic Hodgkin-Huxley neurons (representing hippocampal formation). This model can generate both theta-nested gamma oscillations and theta phase reset, addressing limitations of previous models that used fixed theta inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C33-C37, and C93 collectively establish the main methodological innovation. The model architecture is well-documented (C131-C144) with specific implementation details, parameter choices, and validation against experimental PRCs (C37, C66-C71). The hybrid approach successfully addresses the identified limitation (C34) of previous models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The model successfully replicates the PING (pyramidal-interneuronal network gamma) mechanism for gamma oscillation generation. Coupled excitatory-inhibitory populations produce gamma oscillations above a threshold input, reaching ~60 Hz, while decoupling abolishes these oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 demonstrate that the model reproduces well-established experimental findings about gamma generation. The results match experimental observations from optogenetic studies (C46-C47) and show appropriate dependence on E-I coupling (C49) and noise (C51-C52). This validates the basic network dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model replicates frequency-dependent entrainment patterns observed in optogenetic experiments, with inhibitory neurons showing preferential entrainment in the gamma range and excitatory neurons responding better to lower frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 show the model reproduces experimental findings from Cardin et al. 2009. The main discrepancy is the specific resonance frequency (90 Hz in model vs 40 Hz in experiments), which the authors acknowledge may reflect differences between cortical and hippocampal interneurons or population size effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C64"
+    ],
+    "result": "Under dynamic theta input from Kuramoto oscillators, the model generates theta-nested gamma oscillations with gamma activity (45-75 Hz) occurring preferentially at theta peaks (3-6 Hz), demonstrating theta-gamma phase-amplitude coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C63-C64 demonstrate successful generation of theta-nested gamma oscillations. Spectral analyses (C58-C59) and PAC quantification (C63-C64) provide converging evidence. The model reproduces key features observed in experimental recordings of hippocampal oscillations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The modulation index (MI) metric required modification for simulated data by adding uniform noise (~20% of maximum firing rate) to avoid artifacts from missing frequency components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 identify a methodological issue specific to simulated data and provide a reasonable solution. While adding noise is somewhat ad hoc, the authors document the problem and solution transparently (Figure 3\u2014figure supplement 2), making this a minor methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The model successfully displays theta phase reset following single-pulse stimulation, with a biphasic phase response curve matching experimental observations from hippocampal pyramidal cells. The phase response function critically determines whether theta-nested gamma oscillations can be generated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 establish that the model reproduces experimentally observed theta phase reset. The PRC validation (C71) confirms the model behaves according to the designed phase response function. The finding that phase offset disrupts oscillations (C68-C69) suggests critical tuning requirements, though this inference could benefit from more systematic exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The Kuramoto oscillator approach is generalizable to other models, as demonstrated by successfully interfacing Kuramoto oscillators with a Wilson-Cowan neural mass model to produce theta phase reset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by the demonstration with the Onslow neural mass model (Figure 3\u2014figure supplement 4). This shows the approach is not specific to the particular Hodgkin-Huxley implementation, supporting the generalizability claim. However, only one alternative model is tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In the absence of theta drive, single-pulse stimulation elicits two bursts of activity separated by ~200 ms, dependent on the interplay between CAN (depolarizing) and M-type potassium (hyperpolarizing) currents. Removing CAN current abolishes the second burst.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 identify the ionic mechanisms underlying transient oscillatory responses. The ablation study (C78) provides causal evidence for the role of CAN current. The mechanistic explanation (C79) is supported by the temporal dynamics shown in Figure 4A, though it remains somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The model exhibits three distinct regimes depending on theta input amplitude: (1) low input where oscillations cannot be induced, (2) intermediate input where single-pulse stimulation can switch the network to sustained theta-nested gamma oscillations, and (3) high input where oscillations occur spontaneously. The CAN current is necessary for the bistable intermediate regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 characterize different network regimes systematically (Figure 5). The identification of a bistable regime (C82-C83) is a key finding. The ablation study (C84) demonstrates the necessity of CAN current for this behavior, providing mechanistic insight. The characterization is thorough with multiple metrics (theta power, gamma power, PAC).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C41",
+      "C42",
+      "C88",
+      "C89"
+    ],
+    "result": "For moderate theta input (intermediate regime), single-pulse stimulation can induce sustained theta-nested gamma oscillations. With phase reset enabled, this effect is independent of stimulation phase, but without phase reset, only peak-targeted stimulation is effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C40-C42, C88-C89 demonstrate a critical interaction between phase reset and phase-dependent effects. The systematic comparison (Figure 6) provides clear evidence. This finding has important implications for closed-loop stimulation protocols, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C43",
+      "C44",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "For weak theta input that abolishes oscillations, pulse train stimulation at theta frequency can transiently restore theta-nested gamma oscillations during stimulation. With phase reset, this effect is phase-independent; without phase reset, peak-targeted stimulation is more effective than trough-targeted stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C43-C44, C90-C92 extend the phase-dependence findings to pulse train stimulation. The systematic comparison (Figure 7) shows consistent patterns with single-pulse results. The observation that phase reset causes trough stimulation to effectively become peak stimulation (C91) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C99",
+      "C100"
+    ],
+    "result": "The presence and strength of theta phase reset determines whether stimulation effects depend on the phase of stimulation onset. Phase-triggered stimulation would be most useful when phase reset is limited; when phase reset is strong, regular continuous stimulation is sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C99-C100 synthesize the phase-dependence findings into practical implications. The inference is well-supported by the simulation results (Figures 6-7), though the claim about optimal stimulation strategies (C99-C100) involves some speculation about real-world applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C126"
+    ],
+    "result": "The authors modeled pathological states by reducing theta input amplitude to simulate medial septum neurodegeneration in Alzheimer's disease. Reducing synchronization parameters had less pronounced effects on hippocampal oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C126 describe the modeling approach for pathological states. The choice is justified by citations about Alzheimer's disease (C105). The comparison of two approaches (amplitude vs synchronization reduction) provides some validation, though the link to actual pathology remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The hybrid interfacing methodology represents an innovation that could be applied to other brain structures driven by dynamical rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 makes a broad claim about applicability to other systems. While the demonstration with the neural mass model (C73) provides some support, this remains largely speculative. The claim is reasonable but would require additional demonstrations in other systems to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The introduction establishes the context: neurostimulation of hippocampal formation shows promise for memory modulation, but mechanisms are unclear. Theta-nested gamma oscillations and theta phase reset are crucial for memory but their responses to neurostimulation are unknown. Current models cannot investigate these effects due to fixed theta inputs. No existing model combines theta-gamma PAC with theta phase reset during neurostimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32 establish the background and motivation. These are primarily literature review claims supported by appropriate citations. The identification of the knowledge gap (C2, C5, C29, C32) is well-justified and motivates the study. These claims provide essential context but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The discussion contextualizes findings with experimental evidence: single-pulse stimulation can impair memory encoding in humans, hippocampal receptivity is phase-modulated, and conflicting results may relate to phase reset induction. The degree of phase reset in experiments remains unknown and should be investigated. Phase reset is dynamic and may be affected by neurodegenerative disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 connect model findings to experimental observations and identify future research directions. The experimental support (C95-C96) is well-cited. The speculation about conflicting results (C97) and effects of neurodegeneration (C102) is reasonable but remains hypothetical. The identification of knowledge gaps (C98) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors acknowledge multiple model limitations including: single theta generator, simplified septum-hippocampus connectivity, only basket cell interneurons, neglected synaptic delays, single coronal slice representation, no synaptic plasticity, simplified stimulation as uniform intracellular current, and uncertain mapping to Alzheimer's pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C130 provide a thorough and honest assessment of model limitations. Each limitation is well-justified with appropriate citations. The authors appropriately acknowledge simplifications made for computational tractability (C125, C119) and identify important directions for future work (C121-C122). This transparent discussion of limitations is a strength.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors applied mSTARR-seq to query nearly the entire human genome, assessing regulatory activity and methylation-dependent regulatory activity for 4,558,475 600-base pair windows. The study successfully targeted 99.3% of CpG sites on the MethylationEPIC array and 99.4% of sites likely to be included in RRBS libraries, with 90.2% of the human genome included in the plasmid DNA library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C22-C30 collectively describe the experimental design, scope, and technical success of the mSTARR-seq approach. The data demonstrate comprehensive genome coverage with high capture efficiency for targeted CpG sites, supported by sequencing depth statistics and enrichment analyses (C28-C30). The technical reproducibility is validated by comparison with prior work (C1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "DNA methylation levels were substantially higher in the methylated condition samples (mean = 0.885) than in the unmethylated samples (mean = 0.066) at the end of the experiment, with read depth not predicted by CpG density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate successful experimental manipulation of DNA methylation status, validated by bisulfite sequencing (C32). The authors appropriately note that small deviations from complete methylation would reduce power but not cause false positives (C33), and show no systematic bias related to CpG density (C31).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Among the regions analyzed, 3,721 windows (1.7%) showed evidence for regulatory activity (FDR <1%), with sequencing depth appearing sufficient based on rarefaction analyses and minimal variance explained by DNA coverage per fragment (R\u00b2=0.029).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 establish the identification of regulatory regions with appropriate statistical thresholds and quality controls. Rarefaction analysis (C35) validates sequencing depth sufficiency, and the minimal contribution of DNA coverage to variance (C36) indicates robust detection of regulatory activity independent of technical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Regions with regulatory activity were enriched for ENCODE-annotated enhancers and active promoters in K562 cells and showed high consistency with previous mSTARR-seq data in K562 cells, HepG2 cells, and conventional STARR-seq in A549 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 validate the mSTARR-seq approach through multiple lines of evidence: enrichment in known regulatory elements (C37), consistency with prior independent experiments (C39), and cross-cell-type validation (C40-C42). The statistical support is strong (all p<1.0 x 10\u207b\u00b3\u2070\u2070 for overlaps), demonstrating reproducibility and generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Among 3,721 windows with regulatory activity, 1,768 windows (47.5%) exhibited methylation-dependent regulatory activity (FDR <1%), with 98.6% showing higher activity in the unmethylated condition. Regulatory regions with more CpGs are more likely to be repressed by DNA methylation (Spearman's rho = 0.370).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 establish widespread methylation-dependent regulatory activity with strong statistical support. The concordance across K562 and HepG2 datasets (C45: R\u00b2=0.286 and 0.277) validates reproducibility. The relationship between CpG density and methylation repression (C47) is consistent with prior findings and mechanistically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Regulatory windows showing higher activity in the methylated condition (24 windows) were enriched for binding motifs of transcription factors p53 and Tfcp2I1, which have known interactions with methylated DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 identify a small subset of regions with increased activity when methylated, with enrichment for TF motifs known to preferentially bind methylated DNA (p53) or recruit demethylation machinery (Tfcp2I1). The findings are supported by motif enrichment analysis and consistent with prior literature on these TFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Windows containing RRBS-associated CpG sites showed enrichment for methylation-dependent regulatory activity (63.3% vs 45.9% in controls), but 98.8% of RRBS sites do not occur in regions with detectable regulatory activity in K562 cells, and 35.0% of those in regulatory elements show no methylation-dependent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 demonstrate that while RRBS sites are enriched for methylation-dependent regulatory activity relative to background (C52), the vast majority of RRBS sites lack detectable regulatory function in this cell type (C55-C56). This is a critical finding that challenges assumptions about the functional relevance of commonly studied methylation sites, though the authors appropriately note cell-type specificity as a caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Environmental challenges with IFNA or dexamethasone revealed thousands of putative regulatory regions undetectable at baseline (1,614 IFNA-specific; 1,131 dex-specific), with 44.1% of IFNA regulatory regions and 40.2% of dex regulatory regions not detectable at baseline (1% FDR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 demonstrate context-dependent regulatory activity, with environmental stimulation revealing cryptic regulatory elements. The statistical support is strong (C59: log2(OR) >8.5, p<1.0 x 10\u207b\u00b3\u2070\u2070), and the findings are consistent with known biology of enhancer context-dependence (C57). The substantial proportion of condition-specific elements (C61-C62) represents a major finding about the limitations of baseline-only regulatory assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "IFNA-specific regulatory windows were enriched for ISRE motifs and IRF binding motifs, while dex-specific windows were enriched for glucocorticoid response elements and binding motifs of GR-interacting transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 validate the biological relevance of condition-specific regulatory regions through enrichment of expected transcription factor binding motifs. The enrichments are highly significant (Bonferroni corrected p<0.01) and mechanistically consistent with known signaling pathways for IFNA and dexamethasone responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Genes located closest to condition-specific mSTARR-seq enhancers showed stronger upregulation after the corresponding stimulation than genes near shared enhancers, for both IFNA (t=3.579, p=5.01 x 10\u207b\u2074) and dex (t=3.477, p=5.53 x 10\u207b\u2074) conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 demonstrate that condition-specific regulatory activity detected by mSTARR-seq predicts endogenous gene expression responses. The statistical support is adequate (p<0.001 for both conditions), and the use of enhancer-gene linkages from EnhancerAtlas 2.0 (C68) provides additional validation. This connects the reporter assay findings to native genomic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "DNA methylation state plays an important role in shaping IFNA-specific responses, with 81.4% of IFNA-specific regulatory windows exhibiting methylation-dependent activity. Windows with ISRE binding support show strong methylation-dependence after IFNA stimulation (t=31.748, p=1.02 x 10\u207b\u00b9\u2075\u00b3) but not at baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 establish widespread DNA methylation-environment interactions for IFNA response. The statistical support is exceptionally strong (C71: p=3.58 x 10\u207b\u00b3\u00b9\u00b2; C75: p=1.02 x 10\u207b\u00b9\u2075\u00b3), and the finding that 99.8% of methylation-dependent windows with interferon TF motifs are more active when unmethylated (C73) demonstrates a clear mechanistic pattern. This represents a major discovery about epigenetic priming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In human macrophages, baseline DNA methylation at IFNA-specific mSTARR-seq enhancers predicts gene expression responses to influenza infection, with the correlation 3.44-fold stronger in IFNA-specific enhancers than shared enhancers. One enhancer at the ISG15 promoter explains 38% of variance in ISG15 response to flu across individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 provide critical in vivo validation of the mSTARR-seq findings using independent human macrophage data (n=35 individuals). The within-individual correlations are statistically significant (C79: all Bonferroni-corrected p<2 x 10\u207b\u2075), and the ISG15 example (C81-C83) demonstrates a large effect size (R\u00b2=0.38) at a biologically important gene. The similarity between IFNA and flu responses (C78) supports the relevance of the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "ISG15 plays critical roles in regulating the type I interferon response and modulating host immunity to viral and bacterial infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 provides biological context for the ISG15 finding, supported by citation to a review (Perng and Lenschow, 2018). This establishes the functional importance of the identified methylation-dependent regulatory element.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "For 26 of 27 early life adversity studies, ELA-associated CpG sites were not more likely to occur within putative regulatory windows than background chance. The exception (Cao-Lei et al., 2014) showed enrichment for regulatory potential but not for methylation-dependent activity, likely due to its focus on intermediately methylated, variable CpG sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 demonstrate that most ELA-associated sites lack detectable regulatory function in K562 cells. The statistical analyses are appropriate (Fisher's exact tests), and the authors provide a plausible explanation for the single exception (C91-C92). However, the limitation to K562 cells and specific environmental conditions (acknowledged in C87) means this finding may not generalize to all relevant cell types and contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "DNA methylation often significantly attenuates regulatory activity in K562 enhancer and promoter elements, but 98% of CpG sites associated with early life adversity fell in windows with no discernible regulatory potential in K562 cells, suggesting many ELA-associated sites may be passive biomarkers rather than causal links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 synthesize the findings on methylation-dependent regulation and ELA sites. The high rate of methylation-dependence (47.5% from C44) supports C93, and the lack of regulatory activity at most ELA sites (C94) supports the biomarker interpretation (C95). However, the inference in C95 is limited by the use of a single cell type and may not apply to other relevant tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors acknowledge that other cell types and cellular contexts should be tested to further evaluate the ELA hypothesis, noting that the relationship between glucocorticoid signaling and early life adversity is complex and may not be well-modeled by acute exposure. Expanding mSTARR-seq to other contexts can help prioritize CpG sites from observational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 appropriately acknowledge limitations and suggest future directions. The authors recognize that K562 cells may not be the most relevant model for all ELA effects (C96), that acute dex exposure may not capture chronic stress effects (C97), and that enhancer repertoires differ across cell types (C98). These are reasonable caveats that temper the interpretation of the ELA findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "DNA methylation-environment interactions are widespread in the human genome, with regulatory activity and methylation-dependent effects often only detectable upon stimulation. IFNA-specific enhancers can identify loci where baseline DNA methylation predicts gene expression responses to flu infection, with the ISG15 effect accounting for over a third of variance in the fold-change response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 synthesize the major findings on methylation-environment interactions. The widespread nature of these interactions (C101-C102) is supported by the data showing thousands of condition-specific regulatory regions (C60-C62) and high rates of methylation-dependence in IFNA-specific elements (C71). The in vivo validation (C103) and large effect size at ISG15 (C105) strengthen the biological relevance of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors conclude that while many DNA methylation differences are functionally silent, the functional importance of DNA methylation is likely underestimated without considering its interaction with the cellular environment. Future applications of mSTARR-seq in additional cell types may help resolve questions about trained immunity and repeated challenge responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 provide a balanced synthesis of the findings. The conclusion that many methylation differences are silent (C108) is supported by the ELA analysis and prior literature, while the importance of environmental context (C109) is strongly supported by the condition-specific regulatory activity data (C60-C62, C71). The suggestion for future work (C107) is reasonable and well-motivated.",
+    "result_type": "MINOR"
+  }
+]

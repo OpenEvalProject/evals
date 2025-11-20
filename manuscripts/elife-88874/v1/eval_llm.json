@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "iTregs utilize a suppression mechanism similar to tTregs, characterized by strong binding to DCs mediated by reduced basal calcium oscillation. This mechanism is established during iTreg induction as Foxp3 expression peaks on day 2, leading to suppression of Ryr2 transcription and diminished calcium oscillation approximately one day later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively demonstrate that iTregs suppress through DC binding (C1-C3), with temporal correlation between Foxp3 expression and calcium reduction (C4-C5) mediated by Ryr2 suppression (C6). The independence of Foxp3 induction from Ryr2 (C7) confirms the regulatory direction. All claims are supported by appropriate experimental data including force spectroscopy, flow cytometry, and calcium imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "tTregs exhibit truncated SOCE signaling and failed NFAT nuclear translocation upon TCR activation, while iTregs maintain sustained SOCE similar to conventional T cells. The SOCE signal in tTregs is abruptly lost 40-50 minutes after activation, preventing NFAT translocation and protecting tTregs from phenotypic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20 provide converging evidence from multiple experimental approaches (calcium imaging, western blot, flow cytometry) showing differential calcium signaling between tTregs and iTregs. The temporal dynamics of SOCE truncation (C15), correlation with NFAT translocation failure (C16-C17), and functional consequence demonstrated by thapsigargin treatment (C19-C20) form a coherent mechanistic story. Early signaling appears similar (C12-C13), localizing the difference to sustained SOCE phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "iTregs display an 'activated' chromatin state with high accessibility in T cell activation regions similar to activated Tconvs, while Treg-specific regions remain largely closed. In contrast, tTregs show minimal chromatin changes upon activation and maintain open Treg-specific regions. At the transcriptome level, iTregs occupy an intermediate position between Tconvs and tTregs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C32 are well-supported by comprehensive RNA-seq and ATAC-seq analyses with appropriate PCA, differential peak analysis, and genomic track visualizations. The characterization of 'Activation Region' and 'Treg Region' with specific gene examples (C30-C31) provides concrete evidence. The conclusion (C32) appropriately synthesizes the multi-omic data showing discordance between transcriptome (partial Treg features) and chromatin accessibility (activated state).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Inhibition of calcium signaling or NFAT rescues Foxp3 expression and stabilizes iTregs upon restimulation, primarily through NFAT-mediated regulation. NFAT inhibition prevents downregulation of Treg stability genes (Foxp3, Id3, Il10rb, etc.) and blocks upregulation of T helper differentiation genes (Il21, Il12rb2, Tbx21, etc.), with enrichment in Th1/Th2/Th17 pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 demonstrate causality through pharmacological interventions (CsA, CM-4620, BTP2) with appropriate controls (C36). The ~80% overlap between CsA and CM-4620 rescued genes (C39) supports NFAT as the primary mediator. RNA-seq analysis with PCA (C37-C38), differential expression (C40, C42), and pathway enrichment (C41, C43) provide comprehensive molecular characterization. The specificity of calcium/NFAT pathway is strengthened by negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Upon iTreg restimulation, NFAT binding peaks increase dramatically and preferentially target pre-opened T helper gene loci at promoter/TSS regions. NFAT cooperates with different cofactors depending on gene context: SMAD for Treg genes (downregulated) versus AP-1/ROR\u03b3 for T helper genes (upregulated), with the latter association driving iTreg instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49, C52-C54 are supported by Cut&Tag data showing increased NFAT peaks (C44), genomic distribution (C45), and preferential binding to accessible Th genes (C46-C49). Motif enrichment analysis (C52-C53) provides mechanistic insight into cofactor preferences. However, C54 is largely inferential and would benefit from direct ChIP-seq of cofactors or functional validation of the proposed NFAT-AP-1/ROR\u03b3 versus NFAT-SMAD competition. The model is plausible but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "iTregs secrete IL-21 after restimulation but not at rest, while tTregs do not secrete detectable IL-21 under any condition. IL-21 secretion by iTregs is blocked by calcium and NFAT inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by ELISA measurements showing differential IL-21 secretion patterns and inhibitor effects. This provides functional validation of the NFAT-driven Th gene expression program. However, the manuscript would benefit from reporting detection limits and statistical analysis of the ELISA data, which appear to be presented as single measurements in Figure 5H.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Genetic reduction of SOCE signaling through dominant-negative ORAI expression enhances iTreg stability, suppressive function in vitro, and resistance to Foxp3 loss in vivo following adoptive transfer and antigen challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide strong evidence through genetic manipulation (DN-ORAI) showing ~50% SOCE reduction (C57) leads to improved stability (C58), enhanced suppression (C59), and in vivo persistence (C60). This genetic approach complements the pharmacological inhibitor studies and demonstrates sufficiency of SOCE reduction. The in vivo experiment (C60) is particularly valuable, though sample sizes appear limited (n=3) and longer-term stability assessment would strengthen conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Different iTreg induction modifications have distinct effects on chromatin accessibility: rapamycin and AS2863619 tend to close activation regions, while vitamin C, CD28 removal, and AS2863619 increase accessibility of Treg-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by ATAC-seq analysis of various induction conditions shown in Figure 6\u2014figure supplement 1. However, the presentation is limited and AS2863619 appears in both claims with seemingly opposite effects (closes activation regions but opens Treg regions), which is not contradictory but could be clarified. These findings suggest combinatorial approaches may be beneficial but require further validation and functional assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "tTreg stability is established in the thymus through Foxp3 collaboration with NFAT/c-Rel and CNS2 demethylation, while iTregs use a different SMAD-CNS1-dependent program with H3K4me3 modification. iTregs do not immediately lose Foxp3 upon TGF-\u03b2 withdrawal but require subsequent TCR activation, indicating epigenetic changes are necessary but insufficient for phenotype loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 accurately summarize established knowledge from cited literature (C63-C69) and make appropriate inferences (C70). These claims provide essential context for interpreting the current findings but represent prior work rather than new results. The inference in C70 appropriately connects established epigenetic mechanisms with the activation requirement demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study proposes a model where tTregs utilize truncated calcium signaling and conserved chromatin accessibility to ensure stability, while iTregs retain full SOCE leading to NFAT-driven upregulation of pre-opened T helper genes and instability. Direct SOCE/NFAT inhibition can enhance iTreg stability both in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 represent the integrated conclusions synthesizing multiple experimental findings. These are well-supported by the collective evidence from calcium imaging, chromatin accessibility, NFAT binding, gene expression, and functional validation studies. The model appropriately captures the dual mechanism (signaling + chromatin state) distinguishing tTregs from iTregs. Claim C74 is directly supported by experimental data from inhibitor and DN-ORAI studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The discussion contextualizes findings within existing literature, addresses the apparent paradox of NFAT being essential for Treg development yet destabilizing for iTregs, and proposes that stable iTreg generation requires combined approaches targeting both Treg gene demethylation and activation gene closure. The key contribution is identifying differential calcium signaling as a mechanistic basis for tTreg versus iTreg stability differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C86 represent discussion points that appropriately contextualize findings (C50-C51, C63-C68, C75, C78, C85), acknowledge limitations (C77, C83), and propose future directions (C80, C83-C84). The inverse association between SOCE and Treg stability (C76) is well-supported. The proposed requirement for combined approaches (C83) is logical but speculative. The identification of calcium signaling differences as a key mechanistic insight (C86) appropriately summarizes the study's contribution. These discussion claims are generally well-reasoned though some are speculative.",
+    "result_type": "MINOR"
+  }
+]

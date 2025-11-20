@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Early drought stress after germination is a major constraint in Sahelian agrosystems. Crop modeling using 21 years of meteorological data from Bambey, Senegal revealed three stress patterns (early-stress, late-stress, no-stress), with early stress occurring in 24% of years and causing 43% grain yield penalty and 44% biomass reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C22-C32 are well-supported by crop modeling data using the SSM-iCrop model with 21 years of meteorological data. The clustering analysis methodology is cited (C25), the FTSW threshold is justified by prior work (C24), and the frequency and impact estimates are directly derived from model outputs. The conclusion that early drought is a major constraint (C32) logically follows from the quantitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Primary root growth in pearl millet is correlated with increased tolerance to early drought stress under field conditions. Phenotyping of 122 inbred lines showed large diversity in root length (21.1-193.2 mm), and field trials demonstrated a strong correlation (R=0.95, p<0.01) between primary root growth and stay-green, an indicator of drought tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by phenotyping data from 122 lines (853 plants total) and field trials in 2018 and 2020. The correlation analysis (C36) shows statistical significance with appropriate p-value. PCA analysis (C35) and the inference that rapid root growth is beneficial (C38) are logically supported by the data, though the field trials only tested 9 lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Early primary root growth in pearl millet has a heritability of 0.53, indicating strong genetic control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are supported by heritability calculation using appropriate mixed model methodology described in the methods section. The heritability value of 0.53 is moderate-to-high and justifies the conclusion of strong genetic control (C40), making genetic mapping approaches appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "GWAS identified 447 significant SNPs associated with primary root growth, with 109 highly significant across multiple methods. Two markers on chromosomes 1 and 3 exceeded the 0.05 FDR threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by GWAS analysis using 392,216 SNPs on 122 lines. Multiple association methods were employed (LFMM, ANOVA, EMMA, MLM) to validate findings (C44). The identification of only two FDR-significant markers (C45) suggests modest statistical power, but the convergence across methods strengthens confidence in these loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "BSA on a bi-parental population (ICML-IS 11155 \u00d7 SL2) identified six genomic regions on chromosomes 1 and 6 associated with root growth. Eighteen GWAS markers co-localized with BSA regions, including the most significant GWAS SNP on chromosome 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 are supported by BSA analysis with high sequencing depth (1028X and 814X) and appropriate F2 population (737 plants phenotyped, 150 selected for bulks). The phenotypic validation across multiple systems (C46-C48) strengthens confidence. However, C47 shows marginal significance (p=0.058) with low sample size, which is a limitation. The co-localization of GWAS and BSA signals (C54) provides strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The difference in root growth between ICML-IS 11155 (slow) and SL2 (fast) is driven by changes in cell elongation rather than cell production rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by confocal microscopy analysis of root meristems. The cellular analysis shows similar cell production rates (C55) but significantly different cell elongation rates (C56), leading to the logical conclusion (C57). The methodology follows established approaches (Beemster et al., 2002) and sample sizes appear adequate (N=25 and N=22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RNAseq analysis identified 1778 differentially expressed genes between contrasting lines, but revealed that 31.48% of reads did not map to predicted genes, indicating incomplete genome annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by RNAseq data using three statistical methods (EdgeR, DESeq, DESeq2). The finding of unmapped reads (C59-C62) is well-documented with specific percentages. The conclusion about incomplete annotation (C63) is a reasonable inference. However, the biological interpretation of the 1778 differentially expressed genes is limited without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Re-annotation of the chromosome 1 QTL region using long reads identified PgGRXC9, a glutaredoxin-encoding gene. The C/C allele is associated with higher root growth and higher gene expression compared to the G/G allele. PgGRXC9 is expressed in stele, epidermis, columella, and elongation zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 are supported by Nanopore sequencing, re-annotation, RNAseq, and in situ hybridization data. The identification of PgGRXC9 (C65-C66) is well-documented. The allelic association (C67-C68) and expression differences (C69) are statistically significant. The spatial expression pattern (C70-C71) is confirmed by RNAscope. The absence of coding sequence polymorphisms (C72) but presence of 5'UTR polymorphisms (C73) is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "PgGRXC9 is proposed as a positive regulator of root growth, with polymorphisms in the promoter region potentially affecting expression levels and root growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 represent inferences and speculation from the data. While C74 is supported by the correlation between expression and phenotype, it lacks direct functional validation in pearl millet. C75 is explicitly speculative about the causal mechanism. The hypothesis is reasonable but requires functional validation (e.g., gene editing, promoter analysis) to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "PgGRXC9's closest Arabidopsis homolog is ROXY19 (56% identity), a member of the land plant-specific ROXY family. Key functional domains including the CC active site, TGA-binding domain, and ALWL motif are conserved in PgGRXC9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 are supported by sequence homology analysis and citations to prior work on ROXY family characterization. The phylogenetic analysis (C76) and domain conservation (C81-C83) are shown in figures. The functional properties of ROXY proteins (C77-C80) are well-established in the literature. The expression pattern of ROXY19 (C84) is cited from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The Arabidopsis roxy19 mutant shows reduced primary root growth due to decreased cell elongation, not cell production, mimicking the pearl millet phenotype. ROXY19 is a positive regulator of root growth through cell elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by phenotypic and cellular analysis of the roxy19 mutant compared to wild-type No-0. The root growth reduction (C85), cell elongation defect (C86), and normal cell production (C87) parallel the pearl millet findings. However, this is based on a single mutant allele, and complementation or additional alleles would strengthen the conclusion. The inference of conserved function (C88-C89) is reasonable but requires caution given the evolutionary distance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "GRX genes have a conserved function in conferring root cell elongation and enhancing resilience of pearl millet to its Sahelian environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C21 represent broad conclusions that extend beyond the direct evidence. While the Arabidopsis data supports a role for ROXY19 in cell elongation, claiming conserved function (C20) across species is premature without functional validation in pearl millet. The link to environmental resilience (C21) is inferred from correlative field data but lacks mechanistic demonstration. These conclusions require functional validation in pearl millet and direct testing under drought conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Differences in root growth in pearl millet are mainly regulated by changes in cell elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by confocal microscopy data showing differential cell elongation but similar cell production rates between contrasting lines (detailed in C55-C57). This is a key mechanistic finding linking phenotype to cellular process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Combined GWAS and BSA identified one genomic region controlling primary root growth, with PgGRXC9 identified as a candidate regulator through RNAseq, re-sequencing, and re-annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 accurately summarize the genetic mapping and candidate gene identification strategy. The convergence of GWAS and BSA on chromosome 1, combined with expression data and re-annotation, provides strong evidence for PgGRXC9 as a candidate. However, 'one genomic region' (C17) is somewhat misleading as BSA identified six regions total.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Functional characterization of AtROXY19 revealed a novel role for this glutaredoxin gene clade in regulating cell elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by the roxy19 mutant analysis showing reduced cell elongation (C86). The claim of 'novel role' is justified as this specific function for ROXY19 in cell elongation has not been previously reported, though other ROXY members have been implicated in root growth regulation (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Redox regulation in the root meristem might be responsible for the root growth QTL, with changes in PgGRXC9 expression due to promoter polymorphisms potentially causing differences in cell elongation important for drought adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are explicitly speculative proposals that extend beyond the direct evidence. While the involvement of a glutaredoxin gene suggests redox regulation, direct evidence of redox changes is lacking. The causal link between promoter polymorphisms and expression differences (C99) is plausible but unproven. These hypotheses require functional validation through promoter analysis, redox measurements, and gene editing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Pearl millet invests seed reserves toward a unique primary root rather than multiple root axes, a strategy speculated to have been selected during evolution to cope with Sahelian rain patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 is an inference from comparative root development data (C10-C12) and seed size information (C100). Claim C102 is explicitly speculative about evolutionary selection. While the hypothesis is plausible given the ecological context and crop modeling data, it lacks direct evolutionary evidence (e.g., population genetics, comparative analysis of wild relatives). The adaptive significance remains to be rigorously tested.",
+    "result_type": "MINOR"
+  }
+]

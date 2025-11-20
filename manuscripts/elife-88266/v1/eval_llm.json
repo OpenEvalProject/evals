@@ -1,0 +1,497 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript provides background on coronary artery disease (CAD), describing it as a leading cause of mortality worldwide, the most common type of heart disease, primarily caused by atherosclerosis, involving genetic and environmental factors, and having limited mitigation strategies despite available interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are background statements supported by appropriate citations to established literature (Tsao et al., 2022; Momiyama et al., 2014; McCarthy et al., 2008; Khera et al., 2016). These claims establish the clinical and scientific context for the study and are well-documented in the cardiovascular disease literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the rationale for using mouse models in atherosclerosis research, noting their extensive use, advantages, and limitations. Previous literature-based analyses showed limited gene-level sharing but 70% pathway-level sharing between species, though such analyses can be biased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide well-cited background on mouse models and prior cross-species comparisons (von Scheidt et al., 2017; Xiangdong et al., 2011; Vandamme, 2014; Ma et al., 2012; Stoeger et al., 2018). These claims appropriately motivate the need for a data-driven approach to cross-species comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study adopts the 'omnigenic' disease model emphasizing pathway and gene network perturbations for cross-species comparison, supported by recent studies showing tissue-specific pathways and networks are involved in CAD and other complex diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by appropriate citations (Boyle et al., 2017; Blencowe et al., 2021; Chella Krishnan et al., 2018; Kurt et al., 2018; Zhao et al., 2019a; Zhao et al., 2019b) establishing the conceptual framework for the pathway-level analysis approach used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study used Mergeomics to integrate multiomics data including GWAS signals, tissue-specific eQTLs, and gene networks from human (CARDIoGRAMplusC4D, GTEx, STARNET) and mouse (HMDP) datasets to predict causal CAD/atherosclerosis subnetworks and key driver genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31 describe the study design and data sources, which are clearly documented with appropriate citations (Bennett et al., 2015) and illustrated in Figure 1. The methodology is well-established and the data sources are appropriate for the research question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Co-expression network analysis using WGCNA and MEGENA identified varying numbers of modules in human and mouse tissues (36-168 modules in human aortic artery, coronary artery, and liver; 52-207 modules in mouse aorta and liver), which were pooled with 1823 canonical pathways from MSigDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C42 report the results of co-expression network construction with specific module counts. The use of two complementary methods (WGCNA and MEGENA) is appropriate and well-justified. The numbers are clearly stated and the methodology is described in detail in the Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "MSEA analysis identified CAD/atherosclerosis-associated pathways and modules in both species and tissues, with human showing 47-59 pathways and 60-64 modules, and mouse showing 37-68 pathways and 49-81 modules. These were consolidated into 60-80 supersets per species and tissue to reduce redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C55 report the enrichment analysis results with specific counts. The methodology for identifying significant gene sets (FDR<5%) and consolidating overlapping sets into supersets (p<0.05, >33% overlap) is clearly described and appropriate. Results are documented in Supplementary file 1B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The study found substantial pathway sharing between species: 73-75% of vascular tissue supersets and 76-85% of liver supersets were preserved between mouse and human. Shared pathways include well-known CAD processes (lipid metabolism, ECM organization, platelet activation, TCA cycle, MAPK signaling) and less-known processes (gluconeogenesis, RXR/VDR pathway, BCAA catabolism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 report the main finding of high pathway overlap between species, supported by Figure 2 and Supplementary file 1C. The percentages are clearly stated and the identification of both known and novel shared pathways is well-documented. This represents a key result of the cross-species comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Human-specific CAD pathways were identified in both vascular tissues (immune signals, GPCR/PDGF signaling, diabetes pathway) and liver (interferon signaling, BCR signaling, MHC class II antigen presentation, carbohydrate/BCAA metabolism, lysosome, neurotrophin signaling, axon guidance), with some pathways showing tissue-specific patterns of sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 identify human-specific pathways with appropriate documentation in Figure 2 and Supplementary file 1C. The identification of tissue-specific patterns adds important nuance to the cross-species comparison. The findings are clearly presented and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mouse-specific atherosclerosis pathways were identified in aorta (insulin receptor signaling, EGFR, ERBB2, NGF, TGF-beta signaling, axon guidance, VEGF/VEGFR pathways) and liver (TLR signaling, amino acid metabolism, phospholipid metabolism, non-coding RNA metabolism). Some pathways showed tissue-specific patterns where they were species-specific in one tissue but shared in another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 identify mouse-specific pathways and document interesting tissue-specific patterns of pathway sharing (e.g., TLR signaling mouse-specific in liver but human-specific in vascular tissues). These findings are supported by Supplementary file 1B and represent important insights into the complexity of cross-species pathway conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Key driver analysis identified top regulatory genes in shared vascular tissue pathways between species, including ZHX2 (RXR/VDR pathway, protein modification, endocytosis), MYLK, FLNA, ACTA2, NCAM1, FOXC1 (matrisome, focal adhesion, vascular smooth muscle contraction), CEP350 (cell cycle), ASB5, MYF6, CACNA1S, AMPD1 (cardiac muscle contraction), AGPAT1 (nucleotide metabolism), and MTA2 (carbohydrate metabolism).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 report key driver predictions from the wKDA analysis, illustrated in Figure 3A. The methodology for identifying KDs is well-established (FDR<5%) and has been validated in prior studies. The biological annotations of the associated modules provide context for the predicted regulatory roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Key driver analysis identified top regulatory genes in shared liver tissue pathways between species, including NCKAP1L and INPP5D (Rho GTPase signaling), ARNTL and TEF (circadian rhythm, pyrimidine metabolism), COL1A1 and COL6A3 (ECM organization), RAC2 and APBB1IP (platelet activation), and SQLE and ACSS2 (lipid/lipoprotein metabolism, serving as a positive control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 report liver KD predictions illustrated in Figure 3B. The identification of lipid/lipoprotein metabolism as a positive control (C91) demonstrates appropriate validation thinking. The KDs are associated with well-characterized CAD-relevant pathways, supporting their biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Correlation analysis in HMDP showed that several predicted key drivers correlated with aortic lesion area, with Agpat1 and Zhx2 showing positive correlations and Cnn3 showing negative correlation in aorta tissue, and Cidec showing negative correlation while Inpp5d and Nckap1l showing positive correlations in liver tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 report correlation analyses that provide directional information about KD effects, documented in Supplementary files 1D-E. These correlations support the biological relevance of the predicted KDs, though correlation does not establish causation. The analysis appropriately uses available phenotypic data to validate predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Key driver analysis identified regulatory genes in human-specific pathways in vascular tissues (FNBP4, MYSM1, GC, HPX for fibrin clotting/lipid transport; PLCB2, SYK for leukocyte transendothelial migration; LCK, CCL5 for cell adhesion) and liver (MCM5, MCM6 for cell cycle; MX1, ISG15, IRF7 for interferon signaling; ACADM for BCAA degradation; NNMT for IL6/7 signaling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 report KDs for human-specific pathways, illustrated in Figures 4A-B. The identification of species-specific regulatory genes provides important insights into pathways that may not translate well from mouse to human. The methodology is consistent with the shared pathway analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Key driver analysis identified regulatory genes in mouse-specific pathways in aorta (Clec1a, Dll4, Myct1, Flt1, Myo5c for VEGF/VEGFR and axon guidance; Cep350, Malat1, Utrn for fatty acid synthesis and ERBB2 signaling; C2orf54, Ehf, Crabp2, Slc46a2, Sox2 for Tap63/DeltaNp63 pathways) and liver (Ptprb, Kdr, Oit3, Cyp4b1 for VEGF/VEGFR; Tmem43, Mtmr11, Plekha1, Scnn1a for amino acid metabolism and cardiac EGF pathways).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 report KDs for mouse-specific pathways, illustrated in Figures 4C-D. These predictions identify pathways and regulators that may be specific to mouse atherosclerosis models and may not translate to human CAD, which is important for interpreting mouse model studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Correlation analysis in HMDP showed that species-specific key drivers correlated with aortic lesion area, with Dock2, Irf8, Zap70 positively correlated and Utrn negatively correlated in aorta, and Ifi44, Irf7, Mx1, Nnmt, Rtp4 positively correlated while Acadm and Ets2 negatively correlated in liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 report correlation analyses for species-specific KDs, documented in Supplementary files 1D-E. These correlations provide supporting evidence for the biological relevance of the predicted species-specific regulatory genes, though the directionality of effects requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The analysis identified both previously known CAD genes with limited validation (NCAM1, MYLK, ACTA2) and potential novel key drivers (APBB1IP, PTPRC, NCKAP1L, INPP5D) in shared pathways, where the associated biological pathways (Rho GTPase signaling, hemostasis, platelet activation) have been repeatedly captured in CAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 contextualize the findings by comparing with prior literature (Erbilgin et al., 2018; Ghosh et al., 2015; Wang et al., 2007; Yuan, 2015). The identification of novel KDs in well-established CAD pathways represents an important contribution, suggesting new regulatory mechanisms for known processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Single-cell RNA-seq validation in mouse aorta showed that subnetworks driven by KDs Acta2, Flna, Mylk, and Myl9 exhibited significant expression changes between diet conditions in smooth muscle cells, supported by literature showing these genes are linked to vascular disease through SMC proliferation, spreading, and contractile function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 report single-cell validation results shown in Figure 5A-D, with appropriate statistical testing (Wilcoxon rank sum test with Bonferroni correction, p<0.05). The findings are supported by relevant citations (Guo et al., 2009; Yu et al., 2008; Huang et al., 2018) linking these genes to atherosclerosis mechanisms. This provides important cell-type-specific validation of the network predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Single-cell RNA-seq validation in mouse liver showed that KD Oit3 and its subnetwork genes exhibited significant expression changes between healthy and NASH states across multiple cell types (hepatic stellate cells, hepatocytes, mononuclear phagocytes, T cells). Oit3 has been linked to hepatic triglyceride homeostasis and VLDL secretion, with elevated levels in HFD-fed mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 report single-cell validation in liver shown in Figure 5E-H. While NASH is not identical to atherosclerosis, it is a relevant comorbidity of CAD. The validation across multiple cell types strengthens the findings. The citation to Wu et al., 2021 supports the biological relevance of Oit3 in lipid metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Validation using a more recent CAD GWAS showed that predicted key drivers FOXC1 (vascular network) and ARNTL (liver network) were among GWAS hits, while additional GWAS hits (CETP, PLCG2, BASP1, MSR1, ST5, ASAP2) were peripheral nodes in the shared cross-species subnetworks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 report validation using independent GWAS data (Tcheandjieu et al., 2022), shown in Figures 3A-B. The identification of KDs and peripheral nodes as GWAS hits provides important validation of the network predictions and supports the biological relevance of the identified subnetworks. The finding that many GWAS hits are peripheral nodes is consistent with prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "The study observed high pathway overlap between species (~74% in aorta, ~80% in liver), including both established CAD processes (metabolism of lipid, lipoproteins, fatty acids) and novel processes (asparagine N-linked glycosylation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 summarize the main quantitative finding of high pathway conservation between species. The percentages are clearly stated and supported by the detailed pathway analysis. The identification of both known and novel shared processes represents an important contribution to understanding cross-species translatability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "The data-driven multiomics analysis confirmed previously reported shared pathways (platelet activation, lipid metabolism, cholesterol biosynthesis, cell cycle, focal adhesion, Jak-STAT signaling) and uniquely uncovered additional shared pathways (ECM, mitochondrial function, MAPK signaling, membrane trafficking, notch signaling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 compare findings with prior literature-based analysis (von Scheidt et al., 2017), showing both replication and novel discoveries. The data-driven approach provides genetic evidence for pathway involvement and identifies additional shared mechanisms not captured by literature review, demonstrating the value of the integrative approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The analysis revealed tissue-specific patterns of pathway sharing, where some pathways were shared between species in one tissue but species-specific in another (e.g., BCAA catabolism shared in vascular tissue but human-specific in liver; leukocyte transendothelial migration shared in liver but human-specific in vascular tissues; insulin receptor signaling mouse-specific in aorta but diabetes pathway shared in liver).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 identify important tissue-specific patterns in pathway conservation. These findings highlight the complexity of cross-species comparison and the importance of considering tissue context. The observations are well-documented and represent important insights for interpreting mouse model studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Network modeling indicates ZHX2, previously identified as a CAD candidate gene through macrophage apoptosis and lipoprotein metabolism regulation, has additional functions related to RXR/VDR, protein modification, and endocytosis in vascular tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 provide detailed analysis of ZHX2 as an example KD, supported by prior literature (Sen et al., 2014; Gargalovic et al., 2010) and extending understanding of its potential mechanisms. The network-based prediction of additional functions represents a hypothesis that warrants experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "RAC2, identified as a key driver in liver, was previously shown to prevent progressive calcification in experimental atherogenesis through suppression of Rac1-dependent IL-1\u03b2, with decreased RAC2 expression and increased IL-1\u03b2 expression observed in CAD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 provide literature support for RAC2 as a biologically relevant KD, citing Ceneri et al., 2017. The prior experimental and clinical evidence strengthens confidence in the network prediction and suggests RAC2 may be an important therapeutic target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "The study acknowledges not using the most recent GWAS dataset as input, but was able to capture ARNTL as a key driver gene connected to more recent CAD GWAS hits ASAP2 and ST5, demonstrating the predictive value of the network approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 acknowledge a study limitation while demonstrating that the approach still captured biologically relevant genes validated by more recent GWAS (Aragam et al., 2022; Koyama et al., 2020). This provides important validation of the network-based prediction approach despite using older input data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The study acknowledges limitations including not regressing out sex effects, examining only HMDP as the mouse model, and potentially missing pathways that could be captured in other mouse models (e.g., PDGF signaling found in Apoe-/- model).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 appropriately acknowledge study limitations with supporting citation (Kim et al., 2023). These limitations are important for interpreting the findings and suggest directions for future work. The acknowledgment of these limitations demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "The finding that many GWAS hits are peripheral nodes in the networks supports the notion that important regulators may not harbor common variations due to evolutionary constraints, consistent with numerous prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 interpret the network topology findings in the context of prior literature (Blencowe et al., 2021; Goh et al., 2007; Chella Krishnan et al., 2018; Zhao et al., 2019a). This interpretation is well-supported and provides important context for understanding the relationship between GWAS hits and regulatory genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "The study found that mouse and human shared >75% of CAD causal pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 summarizes the main quantitative finding, which is well-supported by the detailed pathway analysis (C57-C58, C61-C62, C125). This represents the key conclusion about cross-species pathway conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study used well-characterized human datasets including CARDIoGRAMplusC4D GWAS (60,801 CAD cases, 123,504 controls, 9.4 million variants) and STARNET cohort (~600 CAD patients of Caucasian descent with 539-576 tissue samples).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 describe the human data sources with specific sample sizes and characteristics, supported by appropriate citations (Franz\u00e9n et al., 2016). These are well-established, high-quality datasets appropriate for the study objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The study used complementary network construction methods (WGCNA and MEGENA) that cluster genes based on co-regulation using hierarchical clustering, with modules representing functionally related genes from data-driven analysis and MSigDB pathways representing knowledge-driven categorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C152 describe the methodological approach, supported by citation to prior work (Chella Krishnan et al., 2018) demonstrating the complementary nature of the two methods. The combination of data-driven and knowledge-driven approaches is appropriate and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "The study used Bayesian networks to represent directed causal relationships between genes using genetic and gene expression information, with wKDA demonstrated to predict biologically meaningful key drivers in previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 describe the network analysis methodology, supported by multiple citations (Chella Krishnan et al., 2018; M\u00e4kinen et al., 2014; Zhao et al., 2016) demonstrating prior validation of the approach. The methodology is well-established and appropriate for identifying regulatory genes.",
+    "result_type": "MINOR"
+  }
+]

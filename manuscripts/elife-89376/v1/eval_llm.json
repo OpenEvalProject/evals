@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C47",
+      "C48",
+      "C53",
+      "C54",
+      "C55",
+      "C93",
+      "C94"
+    ],
+    "result": "Brain pH and lactate levels are negatively correlated across animal models of neuropsychiatric disorders. In the exploratory cohort (65 strains/conditions, 1,239 animals), a significant negative correlation was observed at both the strain/condition level (r=-0.86, P=8.45\u00d710\u207b\u00b2\u2070) and individual animal level (r=-0.62, P=7.54\u00d710\u207b\u00b9\u00b3\u2075). This finding was replicated in the confirmatory cohort (44 strains/conditions, 1,055 animals) with correlations of r=-0.78 (P=4.07\u00d710\u207b\u00b9\u2070) at the strain level and r=-0.52 (P=1.13\u00d710\u207b\u2077\u2074) at the individual level. The combined cohort (109 strains/conditions, 2,294 animals) showed even stronger correlations (r=-0.80, P=6.99\u00d710\u207b\u00b2\u2076 at strain level; r=-0.58, P=4.16\u00d710\u207b\u00b2\u2070\u00b3 at individual level). Lactate was estimated to contribute 33.2% to pH variance at the individual level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative correlation between pH and lactate is consistently demonstrated across exploratory, confirmatory, and combined cohorts with highly significant p-values and large sample sizes (C34-C37, C47-C48, C53-C54). The correlation is observed at both strain/condition and individual animal levels, providing robust evidence. The finding is consistent with prior human postmortem studies (C93) and biochemical principles (C94). The contribution ratio calculation (C55) provides quantitative support for lactate as a regulator of pH, though the authors appropriately acknowledge other potential contributors (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Behavioral patterns predict brain lactate levels, with working memory performance as the primary predictor. In the exploratory cohort (24 strains), behavioral measures predicted lactate levels with r=0.79 (P=4.17\u00d710\u207b\u2076, RMSE=0.68), with working memory (correct responses in maze test) being the top selected feature and showing significant negative correlation (r=-0.76, P=1.93\u00d710\u207b\u2075). This was confirmed in an independent confirmatory cohort (27 strains) with r=0.55 (p=3.19\u00d710\u207b\u00b3, RMSE=0.70), where working memory was again the most frequently selected predictor (r=-0.76, p=6.78\u00d710\u207b\u2076). The combined cohort (51 strains) showed r=0.72 (p=3.13\u00d710\u207b\u2079) for lactate prediction and r=0.62 (p=9.92\u00d710\u207b\u2077) for pH prediction, with working memory among the most weighted predictors in both models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The prediction analysis demonstrates robust replication across independent cohorts with consistent identification of working memory as the primary behavioral correlate of lactate levels (C39-C44, C49-C52, C56-C58). The use of leave-one-out cross-validation, a priori power analysis, and independent validation cohort strengthens the findings. The RMSE values are comparable between cohorts (0.68 vs 0.70), indicating consistent prediction accuracy. However, the authors appropriately note that behavioral indices with higher correlation coefficients were not necessarily preferentially selected in the prediction model, suggesting complex multivariate relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C70",
+      "C71",
+      "C74",
+      "C76",
+      "C83",
+      "C158"
+    ],
+    "result": "Altered brain pH and lactate levels are common across multiple animal models of neuropsychiatric disorders, affecting approximately 30% of models examined. Decreased pH and increased lactate were observed in models of depression, epilepsy, Alzheimer's disease, schizophrenia, and some autism models. However, autism models showed heterogeneity, with some exhibiting the opposite pattern (increased pH/decreased lactate). Hierarchical clustering identified four groups: low pH/high lactate (30 strains), high pH/low lactate (2 strains), moderate changes (15 strains), and minimal changes (62 strains). The low pH/high lactate group included models of schizophrenia, bipolar disorder, Alzheimer's disease, depression, and various other conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The findings are based on systematic analysis of 109 strains/conditions across exploratory and confirmatory cohorts (C6, C7, C70). The clustering analysis provides clear categorization of models (C59-C63), and the heterogeneity in autism models is appropriately acknowledged (C8, C76). The generality across multiple disorder types is well-documented (C71, C74, C83, C158). The use of standardized protocols and blinded measurements (C162-C163) strengthens the reliability of these observations. The finding that approximately 30% of models show alterations is a conservative and well-supported estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Brain lactate levels showed a V-shaped relationship with anxiety-like behaviors. Lactate levels had a V-shape-like relationship with the number of transitions in the light/dark transition test and the percentage of open-arm stay time in the elevated-plus maze test, suggesting that increased lactate may be associated with changes in anxiety-like behaviors regardless of the direction of change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the V-shaped relationship is observed in the data (C45), the interpretation that increased lactate is associated with bidirectional changes in anxiety (C46) is speculative and not statistically validated. The claim lacks quantitative support for the V-shape pattern (no statistical test for non-linearity is reported), and the biological interpretation is uncertain. This finding requires further investigation with appropriate non-linear modeling and validation in independent cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C97"
+    ],
+    "result": "Storage duration, but not age or sex, was a significant covariate of brain pH in wild-type/control rodents. Multivariate regression showed storage duration significantly covaried with pH (r=0.11, p=0.00060), while age (r=0.038, p=0.22) and sex (p=0.42) did not. None of these factors covaried with lactate levels (age: r=0.036, p=0.24; storage: r=0.034, p=0.29; sex: p=0.22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The covariate analysis is appropriately conducted on wild-type/control animals (C64-C69, C97) with clear statistical reporting. The finding that storage duration affects pH but not lactate is interesting and well-documented. However, the correlation coefficient for storage duration and pH is weak (r=0.11), suggesting minimal practical impact. The authors appropriately acknowledge this as a potential confounding factor. The lack of age and sex effects is consistent with some human studies but inconsistent with others (C98-C99), which the authors appropriately discuss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C72",
+      "C92",
+      "C141",
+      "C159"
+    ],
+    "result": "Altered brain pH and lactate levels may serve as transdiagnostic endophenotypes of neuropsychiatric disorders characterized by cognitive impairment. The authors propose these alterations could be attributed to dysregulated excitation/inhibition balance and may occur depending on subpopulation or disease state. The findings align with the concept that genetic and environmental modifications converge toward specific brain endophenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a broad interpretive conclusion that extends beyond the direct evidence. While the data support common alterations across disorders (C7, C70-C71) and association with working memory (C10-C11, C72), the mechanistic attribution to E/I imbalance (C13) is speculative and not directly tested. The transdiagnostic endophenotype concept (C12, C141, C159) is a reasonable interpretation but requires validation through additional mechanistic studies, longitudinal analyses, and demonstration of predictive validity. The acknowledgment of subpopulation-dependent occurrence (C92) appropriately recognizes the heterogeneity observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Neuronal hyperexcitation may be a common factor leading to increased lactate production and decreased pH. Evidence includes: (1) E/I imbalance toward excitation is implicated in multiple neuropsychiatric disorders; (2) Hivep2 KO mice showed elevated glutamate and upregulated glycolytic genes; (3) Actl6b KO and APP-J20 Tg mice exhibited neuronal hyperexcitation with epileptiform discharges; (4) Dravet syndrome and Snap25 mutant mice developed convulsive seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the cited evidence supports neuronal hyperexcitation in specific models (C133-C137), the generalization to all models showing altered pH/lactate (C138) is not directly demonstrated. The mechanistic link between hyperexcitation and lactate/pH changes is supported by literature (C130) and some specific examples (C133-C137), but direct measurements of neuronal activity were not performed across all models in this study. The inference is reasonable but requires validation through electrophysiological or imaging studies across the full cohort of models. The authors appropriately present this as a hypothesis rather than a proven mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The study has major limitations including lack of brain region-specific and cell type-specific analyses. Whole brain measurements may mask region-specific changes, as molecular profiles can show opposing changes across regions. Evidence from human ASD patients and mouse stress models shows region-specific lactate changes. Additionally, neurons and astrocytes differ in basal pH and responsiveness to hyperexcitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately and transparently acknowledge significant methodological limitations (C142-C144). The concerns are well-justified by cited evidence showing regional specificity in human patients (C146) and animal models (C147), as well as cell-type differences in pH regulation (C148-C149). The acknowledgment that region/cell-type-specific changes may be masked in whole-brain analysis (C150) is an important caveat. This transparent discussion of limitations strengthens the overall credibility of the work and appropriately guides interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Blood contamination in brain samples is estimated to be minimal (0.2-0.6% of brain homogenate) and unlikely to significantly impact lactate measurements. This is based on cerebral blood volume estimates (20-50 \u03bcl/g) extrapolated from human/feline studies and the observation that blood lactate is only 2-3 times higher than brain lactate in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reasoning is logical (C151-C155), but the extrapolation from human/feline cerebral blood volume to mice (C153) introduces uncertainty. The calculation assumes similar blood volume ratios across species, which may not be accurate. Additionally, while the authors argue the impact would be minimal (C155), no direct measurement or validation of blood contamination was performed. The potential for differential blood content between control and experimental animals (e.g., due to differences in perfusion or vascular changes in disease models) is not adequately addressed. This limitation should be acknowledged more explicitly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "Lactate levels exhibit circadian rhythm in rodent cortex and can be influenced by motor activity and wake/sleep status immediately before brain sampling. These factors represent potential confounding variables in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by citations to relevant studies (C156-C157). The authors appropriately acknowledge these as potential confounding factors. However, the manuscript does not provide detailed information about standardization of sampling times across laboratories or control of activity/sleep status before sampling. While the authors note that \"variation in the times of sample collection during the day was basically kept minimized within each strain/condition,\" the lack of explicit matching across different laboratories is a limitation that could contribute to baseline variations observed across strains/conditions.",
+    "result_type": "MINOR"
+  }
+]

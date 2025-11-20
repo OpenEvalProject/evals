@@ -1,0 +1,1995 @@
+{
+  "submission": {
+    "id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:50:03.387515Z",
+    "updated_at": "2025-11-20T20:50:03.387515Z"
+  },
+  "content": [
+    {
+      "id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "content_type": "manuscript",
+      "content_text": "# Temporal transcriptomic dynamics in developing macaque neocortex\n\n## Authors\n\n- Longjiang Xu<sup>1</sup> ([ORCID: 0000-0002-3534-6840](https://orcid.org/0000-0002-3534-6840))\n- Zan Yuan<sup>2</sup>\n- Jiafeng Zhou<sup>2</sup>\n- Yuan Zhao<sup>1</sup>\n- Wei Liu<sup>2</sup>\n- Shuaiyao Lu<sup>1</sup>\n- Zhanlong He<sup>1</sup>\n- Boqin Qiang<sup>2</sup>\n- Pengcheng Shu<sup>2</sup> ([ORCID: 0000-0002-3091-2559](https://orcid.org/0000-0002-3091-2559)) \u2020\n- Yang Chen<sup>2</sup> \u2020\n- Xiaozhong Peng<sup>1</sup> ([ORCID: 0000-0002-9592-9554](https://orcid.org/0000-0002-9592-9554)) \u2020\n\n### Affiliations\n\n1. Institute of Medical Biology Chinese Academy of Medical Sciences, Chinese Academy of Medical Science and Peking Union Medical College Kunming China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n2. Department of Molecular Biology and Biochemistry, Institute of Basic Medical Sciences, Medical Primate Research Center, Neuroscience Center, Chinese Academy of Medical Sciences, School of Basic Medicine Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n3. Agricultural Bioinformatics Key Laboratory of Hubei Province, Hubei Engineering Technology Research Center of Agricultural Big Data, College of Informatics, Huazhong Agricultural University Wuhan China ([ROR:023b72294](https://ror.org/023b72294))\n4. State Key Laboratory of Common Mechanism Research for Major Diseases, Chinese Academy of Medical Sciences, Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n5. Chinese Institute for Brain Research Beijing China ([ROR:029819q61](https://ror.org/029819q61))\n6. State Key Laboratory of Respiratory Health and Multimorbidity, Chinese Academy of Medical Sciences, Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n7. Institute of Laboratory Animal Science, Chinese Academy of Medical Sciences & Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDespite intense research on mice, the transcriptional regulation of neocortical neurogenesis remains limited in humans and non-human primates. Cortical development in rhesus macaque is known to recapitulate multiple facets of cortical development in humans, including the complex composition of neural stem cells and the thicker supragranular layer. To characterize temporal shifts in transcriptomic programming responsible for differentiation from stem cells to neurons, we sampled parietal lobes of rhesus macaque at E40, E50, E70, E80, and E90, spanning the full period of prenatal neurogenesis. Single-cell RNA sequencing produced a transcriptomic atlas of developing parietal lobe in rhesus macaque neocortex. Identification of distinct cell types and neural stem cells emerging in different developmental stages revealed a terminally bifurcating trajectory from stem cells to neurons. Notably, deep-layer neurons appear in the early stages of neurogenesis, while upper-layer neurons appear later. While these different lineages show overlap in their differentiation program, cell fates are determined post-mitotically. Trajectories analysis from ventricular radial glia (vRGs) to outer radial glia (oRGs) revealed dynamic gene expression profiles and identified differential activation of BMP, FGF, and WNT signaling pathways between vRGs and oRGs. These results provide a comprehensive overview of the temporal patterns of gene expression leading to different fates of radial glial progenitors during neocortex layer formation.\n\n## Introduction\n\nThe neocortex is the center for higher brain functions, such as perception and decision-making. Therefore, the dissection of its developmental processes can be informative of the mechanisms responsible for these functions. Several studies have advanced our understanding of the neocortical development principles in different species, especially in mice. Generally, the dorsal neocortex can be anatomically divided into six layers of cells occupied by distinct neuronal cell types. The deep-layer neurons project to the thalamus (layer VI neurons) and subcortical areas (layer V neurons), while neurons occupying more superficial layers (upper-layer neurons) preferentially form intracortical projections (Jabaudon, 2017). The generation of distinct excitatory neuron (EN) cell types follows a temporal pattern in which early-born neurons migrate to deep layers (i.e. layers V and VI), while the later-born neurons migrate and surpass early-born neurons to occupy the upper layers (layers II\u2013IV) (Rakic, 1974). In Drosophila, several transcription factors (TFs) are sequentially expressed in neural stem cells to control the specification of daughter neurons, while very few such TFs have been identified in mammals thus far. Using single-cell RNA sequencing (scRNA-seq), Telley and colleagues found that daughter neurons exhibit the same transcriptional profiles of their respective progenitor radial glia (RG), although these apparently heritable expression patterns fade as neurons mature (Telley et al., 2019). However, the temporal expression profiles of neural stem cells and the contribution of these specific temporal expression patterns in determining neuronal fate have yet to be wholly clarified in humans and non-human primates (NHP). Over the years, NHP have been widely used in neuroscience research as mesoscale models of the human brain. Therefore, exploring the similarities and differences between NHP and human cortical neurogenesis could provide valuable insight into unique features during human neocortex development.\n\nIn mammals, RG cells are found in the ventricular zone (VZ), where they undergo proliferation and differentiation. The neocortex of primates exhibits an extra neurogenesis zone known as the outer subventricular zone (OSVZ), which is not present in rodents. As a result of evolution, the diversity of higher mammal cortical RG populations increases. Although ventricular radial glia (vRG) is also found in humans and NHP, the vast majority of RG in these higher species occupy the OSVZ and are therefore termed outer radial glia (oRG). oRG cells retain basal processes but lack apical junctions (Hansen et al., 2010) and divide in a process known as mitotic somal translocation, which differs from vRG (Ostrem et al., 2014). vRG and oRG are both accompanied by the expression of stem cell markers such as PAX6 and exhibit extensive self-renewal and proliferative capacities (Betizeau et al., 2013). However, despite functional similarities, they have distinct molecular phenotypes. Previous scRNA-seq analyses have identified several molecular markers, including HOPX for oRGs, CRYAB, and FBXO32 for vRGs (Pollen et al., 2015). Furthermore, oRGs are derived from vRGs, and vRGs exhibit obvious differences in numerous cell-extrinsic mechanisms, including activation of the FGF-MAPK cascade, SHH, PTEN/AKT, and PDGF pathways, and oxygen (O2) levels. These pathways and factors involve three broad cellular processes: vRG maintenance, spindle orientation, and cell adhesion/extracellular matrix production (Penisson et al., 2019). Some TFs have been shown to participate in vRG generation, such as INSM and TRNP1. Moreover, the cell-intrinsic patterns of transcriptional regulation responsible for generating oRGs have not been fully characterized.\n\nScRNA-seq is a powerful tool for investigating developmental trajectories, defining cellular heterogeneity, and identifying novel cell subgroups (Luecken and Theis, 2019). Several groups have sampled prenatal mouse neocortex tissue for scRNA-seq (Ruan et al., 2021; Di Bella et al., 2021), as well as discrete, discontinuous prenatal developmental stages in humans and NHP (Pollen et al., 2015; Trevino et al., 2021; Nowakowski et al., 2017; Eze et al., 2021). The diversity and features of primate cortical progenitors have been explored (Hansen et al., 2010; Betizeau et al., 2013; Pollen et al., 2015; Pebworth et al., 2021). The temporally divergent regulatory mechanisms that govern cortical neuronal diversification at the early post-mitotic stage have also been focused on Yuan et al., 2022. However, studies spanning the full embryonic neurogenic stage in the neocortex of humans and other primates are still lacking. Rhesus macaque and humans share multiple aspects of neurogenesis, and more importantly, the rhesus monkey and human brains share more similar gene expression patterns than the brains of mice and humans (Bakken et al., 2016; Bernard et al., 2012; Zeng et al., 2012). To establish a comprehensive, global picture of the neurogenic processes in the rhesus macaque neocortex, which can be informative of neocortex evolution in NHP, we sampled neocortical tissue at five developmental stages (E40, E50, E70, E80, and E90) in rhesus macaque embryos, spanning the full neurogenesis. Through strict quality control, cell-type annotation, and lineage trajectory inference, we identified two broad transcriptomic programs responsible for the differentiation of deep-layer and upper-layer neurons. We also defined the temporal expression patterns of neural stem cells, including oRGs, vRGs, and intermediate progenitors, and identified novel TFs involved in oRG generation. These findings substantially enhanced our understanding the development and evolution of the neocortex in primates.\n\n## Results\n\n### scRNA-seq analysis of cell types in the developing macaque neocortex\n\nIn order to establish a comprehensive view of the cellular composition of the rhesus macaque brain at different prenatal stages, we conducted scRNA-seq on the dissected parietal lobes of eight total rhesus macaque embryos, spanning five developmental stages of prenatal neurogenesis, including E40 (stage of peak neurogenesis) and E50 (Layer 6 formation); as well as at E70 (Layer 5 formation), E80 (Layer 4 formation), and E90 (Layer 2\u20133 formation) (Figure 1A, Figure 1\u2014figure supplement 1; Rakic, 1974). We obtained a transcriptomic atlas from 53,259 cells after filtering out low-quality cells and removing potential doublets. Each embedding was visualized using uniform manifold approximation and projection (UMAP) of dimension reduction using Seurat, which identified 28 distinct cell clusters. All cell clusters present in the samples were then annotated into cell types (Figure 1B and C) based on their expression of molecular markers (Figure 1D and Figure 1\u2014figure supplement 2B to C). According to the expression of the marker genes, we assigned identities of cell types to clusters including radial glia [RG], outer radial glia [oRG], intermediate progenitor cells [IPCs], ventral precursor cells [VP], excitatory neurons [ENs], inhibitory neurons [INs], glia intermediate precursor cells [gIPC], oligodendrocytes, astrocytes, ventral LGE-derived interneuron precursors and Cajal-Retzius cells, or non-neuronal cell types (including microglia, endothelial, meningeal/VALC [vascular cell]/pericyte and blood cells). Based on the expression of the marker genes, cluster 23 was identified as thalamic cells, which are small numbers of non-cortical cells captured in the sample collection at earlier time points. Each cell cluster was composed of multiple embryo samples, and the samples from similar stages generally harbored similar distributions of cell types.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram of sample collecting and data analysis. We collected the parietal lobe from the embryos across developmental stages from E40 to E90. (B and C) The transcriptome data of single cells were collected and used to do clustering using Seurat. Visualization of major types of cells using uniform manifold approximation and projection (UMAP). Dots, individual cells; color, clusters. (D) Violin plot of molecular markers for annotating cell types. (E) The expressions of the classic marker genes for each cell type were plotted for UMAP visualization. Light gray, no expression; dark blue, relative expression.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic diagram of sample collecting anatomical area. (B) The cell number per sample after quality control. (C) Bar chart of astrocytes\u2019 proportion statistical at each time point. (D) Single-cell transcriptome library information for each sample.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Visualization of different dimensionality reduction of all cells. (left, uniform manifold approximation and projection [UMAP] visualization with UMAP1 and UMAP2; right, 3D model of UMAP visualization with UMAP1, UMAP2, and UMAP3). (B) Top marker genes for each of the 28 cell clusters shown in Figure 1B. (C) Feature plots of marker gene expression. Colors represent scaled gene expression.\n\nIn general, vRG (cluster 10) showed characteristic VIM and PAX6 expression; oRG (cluster 12 and cluster 14) highly expressed HOPX, previously verified marker (Pollen et al., 2015); two clusters (cluster 8 and cluster 22) of IPCs that strongly expressed EOMES, and one cluster of IPCs (cluster 22) were all topologically close to RG, while the other IPC cluster (cluster 8) was closer to neurons, indicating the presence of two stages of IPCs (Hevner, 2019); ENs were identified by the expression of well-established markers, such as NEUROD2 and NEUROD6; and the astrocyte and oligodendrocyte lineages were identified by AQP4 and SOX10 expression, respectively (Silbereis et al., 2010). In addition, we identified DLX1 and GAD-positive cells, which suggested the presence of INs (Figure 1C and Figure 1\u2014figure supplement 2).\n\nCollectively, these results suggested that cortical neural progenitors undergo neurogenesis processes during the early stages of macaque prenatal cortical development, while gliogenic differentiation, including oligodendrocytes and astrocytes, occurs in later stages (Figure 1A and B).\n\n### Distinct excitatory neuronal types sequentially emerge in developing cortex\n\nTo better understand the temporal dynamics of EN development and differentiation, we compiled a subset of all ENs and re-clustered them into 10 subclusters (EN1\u201310) (Figure 2A). We then calculated the relative expression levels of cellular markers for each subclusters and annotated the EN subclusters based on published descriptions of marker function (Figure 2\u2014figure supplement 1B). We found that all EN subclusters could be well distinguished by differential expression of either deep-layer neuron markers (BCL11B, FEZF2, and SOX5) (Tsyporin et al., 2021) or upper-layer neuron markers (CUX1 and SATB2) (Li et al., 2020; He et al., 2017; Figure 2B and C). In previous seminal studies, 3H-thymidine tracing in macaque rhesus unraveled the sequential generation of cortical neurons, with deep-layer neurons appearing prior to upper-layer neurons (Rakic, 1974). In agreement with this early work, we found that early-born neurons (E40 and E50) predominantly outnumbered later-born neurons in the deep-layer neuron subclusters (EN5 and E10), while upper-layer neuron subclusters contained the inverse proportions (Figure 2C and D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig2-v1.jpg)\n\n**Figure 2.:** (A) Left, clustering of excitatory neuron subclusters collected at all time points, visualized via uniform manifold approximation and projection (UMAP). Cells are colored according to subcluster identities (left) and collection time points (right). (B) Differentially, the expression of deep-layer marker BCL11B and upper-layer marker CUX1 are highlighted. (C) Excitatory neuron subclusters\u2019 UMAP plot shows the expression of classic markers for deep layers (BCL11B, FEZF2, SOX5) and upper layers (CUX1, SATB2) present at each time point. (D) The proportion of different excitatory neuron subclusters corresponding to excitatory neurons in each time point.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Uniform manifold approximation and projection (UMAP) visualization of excitatory neuron subcluster cell single-cell RNA sequencing (scRNA-seq) data from individual time points. Cells are colored by excitatory neuron subcluster assignment. (B) Top marker genes for each of the excitatory neuron subclusters.\n\nWe then characterized temporal changes in the composition of each EN subcluster. While the EN5 and EN10 (deep-layer neurons) subclusters emerged at E40 and E50 and disappeared in later stages, EN subclusters 1, 2, 3, and 4 gradually increased in population size from E50 to E80, EN subclusters 8 and 9 gradually increased in population size from E80 to E90 (Figure 2D). Notably, EN6 was exclusively found in the cortex at E70 (Figure 2\u2014figure supplement 1A). EN7 is identified as CUX1-positive, PBX3-positive, and ZFHX3-positive EN subcluster.\n\n### Specification of different progenitor fates controlled by regulatory genes\n\nTo focus on the differentiation of neural progenitors, we subsetted cell clusters 8, 10, 12, 14, 15, 16, and 22, then annotated them as vRG (RG_C10), ORG (oRG_C12 and oRG_C14), IPCs (IPC_C22 and IPC_C8), VP (VP_C15), or gIPCs (gIPC_C16) (Figure 3A). Subclustering analysis revealed that these neural progenitors differentiated into diverse cell types via distinct trajectories across the macaque prenatal neocortex (Figure 3B). We next investigated trajectories within the neural stem cell pool. The oRG and IPC groups exhibited characteristically high specific expression of HOPX and EOMES, respectively.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig3-v1.jpg)\n\n**Figure 3.:** (A) Uniform manifold approximation and projection (UMAP) shows eight progenitor clusters and cell annotation. Left cells are colored according to Seurat clusters; right, cells are colored according to the collection time point. (B) Feature plot of outer radial glia (oRG) marker genes HOPX shows higher expression in C10\u2013C14\u2013C12 (left). Feature plots of intermediate progenitor cell marker gene EOMES show higher expression in C10\u2013C22\u2013C8 (right). (C and D) Pseudotime analysis by Slingshot of HOPX-positive cells (C10\u2013C14\u2013C12). The Slingshot result with the lines indicating the trajectories of lineages and the arrows indicating directions of the pseudotime. Cells are colored according to cell (C) and pesudotime (D). Dots: single cells; colors: cluster and subcluster identity. (E) The heatmap shows the relative expression of top 150 genes displaying significant changes along the pseudotime axis of radial glia (RG) to oRG (C10\u2013C14\u2013C12). The columns represent the cells being ordered along the pseudotime axis. (F) Schematic diagram of some significant genes related to (E). (The depth of the color indicates the levels of gene expression.)\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Pseudotime analysis by Slingshot of EOMES-positive cells (C10\u2013C22\u2013C8). Dots: single cells; cells are colored by their identity. (B) Heatmap shows the relative expression of top 150 genes displaying significant changes along the pseudotime axis of RG to IPC (C10\u2013C22\u2013C8). The columns represent the cells being ordered along the pseudotime axis. The start point, endpoint, and important nodes of the Slingshot inference trajectory were marked by framed numbers. Framed number \u20182\u2019 was radial glial cells at the beginning of pseudotime (C10). Framed numbers \u20181\u2019 and \u20183\u2019 marked intermediate state nodes. Framed number \u20184\u2019 marked intermediate progenitor cell (C8).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Feature plot of classic marker for astrocytes (AQP4) and oligodendrocytes (OLIG2). (B) Slingshot branching tree related to Slingshot pseudotime analysis in (C and D). Root is gIPC (C16), tips astrocytes (C13), and oligodendrocytes (C18). (C and D) Pseudotime analysis by Slingshot of glial cell lineage (C16\u2192C13, C16\u2192C12). The Slingshot result indicated the trajectories of lineages, and the arrows indicated directions of the pseudotime. Cells are colored according to their identity (C) and pesudotime (D). Dots: single cells; colors: cluster and subcluster identity. (E) Heatmap shows the relative expression of top 150 genes displaying significant changes along the pseudotime axis of glial cell lineage (C16\u2192C13, C16\u2192C12). The columns represent the cells being ordered along the pseudotime axis.\n\nAlthough the presence of oRGs is a well-established feature of primate neurogenesis, and their molecular markers are widely used, the genetic basis and molecular processes leading to their emergence are still poorly understood. To construct gene expression profiles that illustrate the progression from vRGs to oRGs, we specifically examined changes in expression among RG_C10, oRG_C12, and oRG_C14 cells, then calculated pseudotime trajectories (Figure 3C to D). Based on these trajectories, we then profiled the temporal shifts in the expression of each gene and selected the 150 most significant genes (Figure 3E). We found a set of genes that were previously reported as highly expressed in ORG that also showed high expression in the oRG_C12 differentiated pseudotime terminal (Pollen et al., 2015; Liu et al., 2017; Johnson et al., 2018) (such as SFRP1, HOPX, FAM107A, TNC, PTN, and MOXD1), while high ASPM expression was typical of cells in the earlier, RG, pseudotime terminal (Figure 3F). In addition to these markers, we also found enrichment for some potential regulatory genes at the oRG_C12 terminal, such as regulator of the cell cycle (RGCC), which controls mitotic spindle orientation (Guo et al., 2021), and TTYH1, which regulates cell adhesion (Zhou et al., 2020). We also found genes that regulate excitability and ionic gradients in neurons, such as ATP1A2, ATP1B2, and SCN4B, which were not previously known to participate in oRG differentiation.\n\nAnalysis of DEGs specific to the RG pseudotime terminal identified cell cycle-related genes such as MKI67, TOP2A, CDC20, and CCNA2. Within the glia-like cells that largely comprised the oRG_C12 terminal, we also detected a population of glial-specific genes that exhibited high expression such as SLC1A3, ZFP36L1 (Weng et al., 2019), GFAP, DBI, and EDNRB (Gadea et al., 2008). In addition, our analyses uncovered several DEGs that have not yet been investigated in RG function and differentiation, such as DKK3, DDAH1, SAT1, and PEA15. Finally, we screened significant DEGs associated with RG-to-IPC and gIPC-to-astrocyte/oligodendrocyte differentiation trajectories (Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2).\n\n### The generation of deep-layer and upper-layer neurons follows distinct terminal trajectories\n\nBased on our above finding that the deep-layer neurons appear earlier than upper-layer neurons, we next sought to characterize dynamic shifts in the expression of transcriptional regulators that potentially contribute to determining neuronal fates. To this end, we performed pseudotime trajectory analysis of EN population (including deep-layer and upper-layer neurons) (Figure 4A), then superimposed the cluster labels from RG_C10, oRG_C12, and oRG_C14 stem cells in UMAP plots (Figure 3A) and early (E40 and E50) and late (E70, E80, and E90) emergence stages (Figure 2A) over the extracted transcriptomic data. We then calculated the RG-specific differentially expressed genes (rgDEGs) and the DEGs of early and late neuron-specific (nDEGs). The set of genes that overlapped between rgDEGs and nDEGs (termed mapping genes) can thus be used to map neuronal subtypes to different neural stem cell populations (Figure 4\u2014figure supplement 1). We hypothesized that mapping genes, such as FEZF2 and DOK5, may play a role in RG cells to specify neuronal progeny (Figure 4B). Our results provide single-cell transcriptome data to support that apical progenitors and daughter ENs share molecular temporal identities during neocortex prenatal corticogenesis (; Lin et al., 2021; Shu et al., 2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig4-v1.jpg)\n\n**Figure 4.:** (A) Uniform manifold approximation and projection (UMAP) shows the alignment of macaque cortical NPCs, intermediate progenitor cells (IPCs), and excitatory neurons. Left, cells are colored according to cell annotation. Different yellow/orange colors are used for deep-layer excitatory neuron subclusters (EN5 and EN10), and different red/pink colors are used for upper-layer excitatory neuron subclusters (EN1, EN2, EN3, EN4, EN6, EN7, EN9, and EN10). Right, cells are colored according to the time point of collection. (B) Dot plot showing the marker genes for the deep-layer excitatory neuron (FEZF2) and upper-layer excitatory neuron (DOK5). Light gray, no expression; dark blue, relative expression. (C) Pseudotime analysis by Slingshot projected on PCA plot of RGCs, oRGCs, IPCs, and excitatory neuron subclusters. The Slingshot result indicates the trajectories of lineages, and the arrows indicate the directions of the pseudotime. Dots: single cell; colors: cluster and subcluster identity. Framed numbers marked the start point, endpoint, and essential nodes of the Slingshot inference trajectory. Framed number \u20181\u2019 was the excitatory neuron lineage trajectory start point (C10). Framed number \u20184\u2019 marked immature neurons. Framed numbers \u20182\u2019 and \u20183\u2019 marked deep-layer and upper-layer neurons. Cells are colored according to cell annotation and pseudotime. (D) The heatmap shows the relative expression of the top 100 genes displaying significant changes along the pseudotime axis of each lineage branch. The columns represent the cells being ordered along the pseudotime axis. (E) Left, Slingshot branching tree related to Slingshot pseudotime analysis in C. The root is E40 earliest RG (C10), tips are deep-layer excitatory neurons generated at the early stage (E40, E50), and upper-layer excitatory neurons are generated at the later stage (E70, E80, E90). Right, branching trees showing the expression of marker genes of apical progenitors (PAX6), outer radial glia cells (HOPX), intermediate progenitors (EOMES), and excitatory neurons (NEUROD2), including callosal neurons (SATB2, CUX2), deeper layer neurons (SOX5, FEZF2), corticofugal neurons (FEZF2, TLE4). There is a sequential progression of radial glia cells, intermediate progenitors, and excitatory neurons.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig4-figsupp1-v1.jpg)\n\nSince substantial evidence indicates that neuronal fate is determined post-mitotically in the mammalian neocortex, analysis of DEGs throughout the differentiation process could reveal the genetic mechanisms responsible for deciding stem cell fate as different neuronal progeny. Using Dynverse R packages, we constructed pseudotime trajectories for the cluster data, which identified a bifurcating trajectory from neural stem cells (including RG_C10, oRG_C12, and oRG_C14) that leads to either deep-layer neurons in one branch or to upper-layer neurons in the alternative branch (Figure 4C). However, it should be noted that the two distinct fates share a common path from neural stem cells to immature neurons (Figure 4C, from dot 1 to dot 4), supporting the likelihood that neuronal fate is primarily determined post-mitotically.\n\nBased on this trajectory, we categorized the DEGs that exhibit dynamic, temporal shifts in expression over pseudotime. The first of these clusters was enriched with neural stem cells, characterized by high expression of PAX6, VIM, and TOP2A, which likely participate in regulating stemness and proliferation. The three remaining DEG clusters were enriched in either deep-layer neurons, upper-layer neurons, or both (Figure 4D). More specifically, we found that most DEGs, such as STMN2, TUBB3, NEUROD2, and NEUROD6, were shared between both branches, illustrating the common differentiation processes between deep- and upper-layer ENs. We also identified deep-layer-specific DEGs (including FEZF2, TBR1, and LMO3) and upper-layer-specific genes (including MEF2C and DOK5). We then organized the cell types into a branching tree based on their differential expression of these marker genes, including stem cell genes PAX6, HOPX, and EOMES, in addition to the above-mentioned deep-layer- and upper-layer-specific genes (Figure 4E). The separation into distinct, branch-specific sets of DEGs suggested a role for these cell-type-specific TFs and other genes in terminal neuron differentiation.\n\n### Conserved and divergent features of human, macaque, and mouse neocortical progenitor cells\n\nNext, we performed LIGER integration (Welch et al., 2019) to integrate the macaque single-cell dataset with published mouse (Di Bella et al., 2021) and human datasets, which were created by combing two published human scRNA-seq data of 7\u201321 postconceptional week (PCW) neocortex (Zhong et al., 2018; Fan et al., 2020), to conduct a cross-species comparison. Species-integrated UMAP showed that all major cell types were well integrated between the three species (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig5-v1.jpg)\n\n**Figure 5.:** (A) Left, uniform manifold approximation and projection (UMAP) plot of cross-species integrated single-cell transcriptome data with LIGER. Colors represent different major cell types (black: human dataset; dark gray: macaque dataset; lighter gray: mouse). Right, the UMAP plot of each dataset, colored according to the LIGER cluster. (B) The expressions of the classic outer radial glia (oRG) marker genes were plotted to UMAP visualization. Light gray, no expression; dark blue, relative expression. (C) Comparison of vRG\u2192oRG and vRG\u2192IPC developmental trajectories between human, macaque, and mouse.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Cell-type annotation of the integrated dataset. (B and C) Feature plot shows the expression of upper-layer marker genes CUX2, POU3F2, SATB2, and deep-layer marker genes FEZF2 and SOX5. (D) Proportion analysis of excitatory neuron subclusters in human, macaque, and mouse datasets at different developmental time points.\n\nIt is clearly observed that similar cellular processes with comparable temporal progression sequentially generate deep-layer and upper-layer neurons in both primates and rodents (Figure 5\u2014figure supplement 1A to C). However, in primates, the number and relative development period of upper neurons are more extended than that of rodents (Figure 5\u2014figure supplement 1D). Previous study evidence had shown that extending neurogenesis by transplanting mouse embryos to a rat mother increases explicitly the number of upper-layer cortical neurons, with concomitant abundant neurogenic progenitors in the sub-VZ (Stepien et al., 2020). We thought this mechanism might also explain primates\u2019 much more expanded abundance of upper-layer neurons. Besides, another important evolutionarily divergent feature in cortical development between primates and rodents is the abundance of oRG cells in primates\u2019 OSVZ (human and macaque). Our cross-species analysis showed strong expression of the oRG marker genes, such as HOPX, MOXD1, FAM107A, and CLU in both human and macaque datasets (Figure 5B), while barely detectable expression in mouse dataset, which is consistent with previous reports (Wang et al., 2011).\n\nFurthermore, we picked HOPX-positive and EOMES-positive cells (LIGER clusters 5, 20, 13, 15) from the human, macaque, and mouse datasets and performed developmental trajectories analysis with Slingshot (Figure 5C). Comparing vRG-to-IPC trajectory between human, macaque, and mouse, we found this biological process of vRG-to-IPC is remarkably conserved across species. However, the vRG-to-oRG trajectory is divergent between species because the oRG population was not identified in the mouse dataset. The latter process is almost invisible in mice but similar in humans and macaques.\n\nPrevious studies have shown that neural progenitors exhibit distinct temporal expression patterns during neurogenesis in mice. However, similar temporal profiling has yet to be thoroughly investigated in macaque neural stem cells. Based on its topological position and associated markers that suggest it functions as a developmental root, we examined the temporal expression profile of RG_C10 cells (Figure 3A). We first identified marker genes to distinguish RG_C10 cells in different prenatal stages (i.e. E40\u2013E90) and used these markers to generate dynamic expression profiles. We then clustered these dynamically expressed macaque genes into five types (Figure 6A), consisting of Type 1 and 2 genes that decreased in expression during neurogenesis, Type 3, 4, and 5 genes that gradually ramped up in expression throughout neurogenesis. We then performed a similar profiling of dynamic gene expression using data obtained from mouse apical progenitors (Ruan et al., 2021) and categorized the DEGs into the same five categories. A total of 72 homologous TFs were shared between human, macaque, and mouse transcriptomes. Analysis of their temporal dynamics revealed that they exhibited similar temporal patterns between species such as NEUROD1, NEUROG2, POU3F2, ETV1, ETV5, and FOS (Figure 6B and Figure 6\u2014figure supplement 1), which indicated that the majority of TFs had conserved temporal dynamics between species, and thus evolutionarily conserved patterns of regulation in neural stem cell differentiation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig6-v1.jpg)\n\n**Figure 6.:** (A) Normalized expressions of genes that show temporal dynamics in the vRGs of human, macaque, and mouse. (B) Temporal expression heatmap of homologous transcription factor (TF) genes among human, macaque, and mouse. (The TFs genes in the dashed boxes showed similar temporal expression patterns across species.) (C, E, and G) Regulon specificity score for each time point in human, macaque, and mouse vRG. Regulons with high scores in multiple species vRG cells are colored yellow. (D, F, and H) show a network generated with Cytoscape using the top 10 regulons in the human, macaque, and mouse vRG at each time point and their top 5 target genes identified by SCENIC as an input. The interactions between conserved TFs in more than one species are colored yellow.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90325/elife-90325-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Temporal expression heatmap of RNA binding protein genes in human, macaque, and mouse vRG. (B and C) Temporal expression heatmap of transcription factor genes in human, macaque, and mouse vRG sorted by human (B) and mouse (C) temporal pattern. (Note: each line is the same homologous gene.)\n\nTo identify the master regulators related to cortical neurogenesis among macaque and mouse, we used the SCENIC workflow to analyze the gene regulatory networks of each TF (Figure 6C to H). Among all the regulatory pairs associated with each prenatal stage, we selected 10 TFs with the highest regulon specificity scores (Figure 6C, E, and G) and their top 5 target genes, as visualized by Cytoscape. Analysis of the regulatory activity of human, macaque, and mouse (Di Bella et al., 2021) prenatal neocortical neurogenesis indicated commonalities in the roles of classical developmental TFs such as GATA1, SOX2, HMGN3, TCF7L1, ZFX, EMX2, SOX10, NEUROG1, NEUROD1, and POU3F1. The top 10 TFs and their top 5 target genes of the human, macaque, and mouse vRG at each time point were identified by pySCENIC as an input to construct the transcriptional regulation network (Figure 6D, F, and H). Some conserved regulatory TFs present in more than one species are identified, such as HMGN3, EMX2, SOX2, and HMGA2, at the deep-layer generation stage and SOX10, ZNF672, and ZNF672 at the upper-layer generation stage.\n\n## Discussion\n\nThe cerebral cortex region of the brain is responsible for extraordinary cognitive capacities, such as abstract thinking and language. The parietal lobe is the center of the somatic senses and is significant for interpreting words as well as language understanding and processing. In this study, the parietal lobe area was selected mainly because of the convenience of sampling the dorsal neocortex. The neocortex of NHP rhesus macaque resembles that of humans in many aspects. Thus, a comprehensive investigation of macaque neurogenesis can improve our understanding of neocortical development and evolution. For this purpose, we performed scRNA-seq in prenatal neocortical tissues of macaque. Our data support previous omics studies of prenatal macaque brain development (Bakken et al., 2016; Zhu et al., 2018; Luo et al., 2021) and recently published human neocortex development studies (Bhaduri et al., 2021). We constructed a single-cell resolution transcriptomic atlas of the developing macaque neocortex, which we then used to identify dynamically expressed genes that likely contribute to the maturation of distinct neuron types, temporal expression patterns of neural stem cells, and the generation of oRGs.\n\nThe existence of oRGs has long been demonstrated in humans and primates through live imaging and immunostaining (Hansen et al., 2010). ORGs share similarities in their patterns of gene expression with vRGs (e.g. SOX2, PAX6, and NESTIN) but also specifically express several genes (such as MOXD1, HOPX, and FAM107A) (Pollen et al., 2015; Nowakowski et al., 2016). Recently, the molecular mechanisms associated with the generation and amplification of oRGs were shown to include signaling pathways such as the FGF-MAPK cascade, SHH, PTEN/AKT, and PDGF pathways, as well as proteins such as INSM, GPSM2, ASPM, TRNP1, ARHGAP11B, PAX6, and HIF1\u03b1. A number of these proteins were validated by genetic manipulation of their activities or expression in mouse, ferret, and marmoset (; Kalebic et al., 2018; Xing et al., 2021; Heide et al., 2020). The dynamically expressed genes and pseudotime trajectories from vRGs to oRGs presented in this work are in agreement with these previous reports. In addition to known regulators, we detected differential expression of transporters and ion channel regulators in oRGs, such as ATP1A2, ATP1B2, and SCN4B. Indeed, hyperpolarization in mouse apical progenitors has been shown to promote the generation of IPCs and indirect neurogenesis (Vitali et al., 2018), although it remains unclear if similar mechanisms contribute to the development of the primate neocortex.\n\nThe sequential generation of cortical neurons has long been observed in both rodents and primates, and many TFs are known to drive post-mitotic specification of neuronal progeny, mainly in rodents. Here, we found genes conserved across species, such as FEZF2 and TBR1, involved in specifying deep-layer neurons in the macaque neocortex. The Slingshot pseudotime analysis, which reflected the expression pattern of genes during appropriate lineage trajectories, suggests that some genes are lineage-restricted or even involved in lineage fate determination. For example, FEZF2, PPP1R1B (also known as DARPP32), SOX5, LMO3, and CELF4 may be involved in the fate specialization of deep neurons; in contrast, TMOD1, PID1, LINGO1, CRYM, and MEF2C for upper-layer neurons. Notably, FEZF2 (Molyneaux et al., 2005) and SOX5 Leone et al., 2008 have been confirmed associated with deep-layer neuron specification in mice, while others, such as TMOD1, PID1, and LINGO1, have not been reported before, and their potential functions in the fate specification of cortical projection neurons need to be further explored. To date, only a very limited set of genes have been shown to function in specifying neuronal progeny in progenitor cells, which suggests that regulation in progenitors is more complex than in neurons, where a single TF can trigger a transcriptional cascade to promote the maturation of neurons. In the current study, we found two types of genes (Dynamic type 1 and 5), which have gradually altered expression patterns along with the neurogenic stage, indicating a transition in cell state in both vRGs and oRGs. In addition to these gradual transition genes, we also identified sets of genes (Dynamic types 2\u20134) with sharp changes in expression during neurogenesis, which likely function in specifying different neuronal subtypes. These findings led us to postulate that a combination of biological processes and pathways change over time to coordinate gradual transitions from neural stem cells to daughter neurons.\n\nThis study also faces limitations. During the macaque prenatal neurogenesis, dorsal RG cells generate ENs by direct and indirect neurogenesis. In general, the number of progenitor cells gradually decreases throughout development, with progenitor cells generating deep neurons in the early stage of development and upper ENs in the later stages. We observed the disappearance of two subclusters of ENs (EN5 and EN10) from later-stage samples (Figure 2\u2014figure supplement 1). Besides, the number of neurons at the E90 time point was relatively small. This disappearance could also be explained by the development of axons and dendrites, which have higher morphological complexity and greater vulnerability, because mature neurons at E90 with abundant axons and processes were hard to settle into micropores of the BD method for single-cell capture. Due to the fixed size of the BD Rhapsody microwells, this sing-cell capture method might be less efficient in capturing mature ENs but has a good capture effect on newborn neurons at each sampling time point. In conclusion, based on the BD cell capture method feature, the immature neurons at each point are more easily captured than mature neurons in our study, so the generation of ENs at different developmental time points can be well observed, as shown in Figure 2, which aligns with our research purpose. Nonetheless, this transcriptomic atlas uncovers the molecular signatures of the primary cell types and temporal shifts in gene expression of differentiating progenitor cells during neocortex layer formation, thus providing a global perspective into neocortical neurogenesis in the macaque.\n\n## Materials and methods\n\n### Animal\n\nAnimals and frozen tissue samples from prenatal rhesus macaque (Macaca mulatta) were provided by the National Medical Primate Center, Institute of Medical Biology, Chinese Academy of Medical Sciences. Timed pregnancy-derived biological replicate specimens were profiled at each prenatal developmental stage (E40, E50, E70, E80, and E90) (Bakken et al., 2016). These time points were selected to coincide with peak periods of neurogenesis for the different layers of the neocortex based on previous studies (Bakken et al., 2016 ; Lein et al., 2017). All animal procedures followed international standards and were approved in advance by the Ethics Committee on Laboratory Animals at IMBCAMS (Institute of Medical Biology, Chinese Academy of Medical Sciences).\n\n### Fetal brain sample details\n\nWe collected eight pregnancy-derived fetal brains of rhesus macaque (M. mulatta) at five prenatal developmental stages (E40, E50, E70, E80, E90) and dissected the parietal lobe cortex. Because of the different development times of rhesus monkeys, prenatal cortex size and morphology are different. To ensure that the anatomical sites of each sample are roughly the same, we use the lateral groove as a reference to collect the parietal lobe for single-cell sequencing (as indicated by bright yellow in Figure 1\u2014figure supplement 1A) and do not make a clear distinction between the different regional parts including primary somatosensory cortex and association cortices in the process of sampling.\n\n### Cell preparation\n\nWe followed the BD Cell Preparation Guide to wash, count, and concentrate cells in preparation for use in BD Rhapsody System Whole Transcriptome Analysis.\n\n### scRNA-seq data processing\n\nSingle-cell capture was achieved by random distribution of a single-cell suspension across >200,000 microwells through a limited dilution approach. Beads with oligonucleotide barcodes were added to saturation so that a bead was paired with a cell in a microwell. The cell-lysis buffer was added so that poly-adenylated RNA molecules hybridized with the beads. Beads were collected into a single tube for reverse transcription. Upon cDNA synthesis, each cDNA molecule was tagged on the 5\u2032 end (the 3\u2032 end of a mRNA transcript) with a molecular index and cell label indicating its cell of origin. Whole-transcriptome libraries were prepared using the BD Resolve single-cell whole-transcriptome amplification workflow. In brief, the second strand of cDNA was synthesized, followed by ligation of the adaptor for universal amplification. Eighteen cycles of PCR were used to amplify the adaptor-ligated cDNA products. Sequencing libraries were prepared using random priming PCR of the whole-transcriptome amplification products to enrich the 3\u2032 ends of the transcripts linked with the cell label and molecular indices. Sequencing was performed with Illumina NovaSeq 6000 according to the manufacturer\u2019s instructions. The filtered reads were aligned to the macaque reference genome file with Bowtie2 (v2.2.9). Macaque reference genome was downloaded from Ensemble database (Macaque reference genome). We analyzed the sequencing data following BD official pipeline and obtained the cell-gene expression matrix file.\n\n### QC and data analysis\n\nTo mitigate the effect of over-estimation of molecules from PCR and sequencing errors, we used the Unique Molecular Identifier adjustment algorithms, recursive substitution error correction, and distribution-based error correction, which were contained in the BD Rhapsody pipeline. Quality control was applied based on the detected gene number and the percentage of counts originating from mitochondrial RNA, ribosomal RNA, and hemoglobin gene per cell. Then, cells were filtered to retain only higher quality (with less than 7.5% mitochondrial gene counts, less than 5.5% ribosomal gene counts, and detected genes above 400 and less than 6000). Additionally, we identified cell doublets using Scrublet v0.142 with default parameters and removed doublets before data analysis. After quality control, a total of 53,259 cells remained for subsequent analysis.\n\nTo integrate cells into a shared space from different datasets for unsupervised clustering, we used SCTransform workflow in R packages Seurat (Satija et al., 2015) v4.0.3 to normalize the scRNA-seq data from different samples. We identified the variable features of each donor sequencing data using the \u2018FindVariableFeatures\u2019 function. A consensus list of 2000 variable genes was then formed by detecting the most significant recovery rates genes across samples. Mitochondrial and ribosomal genes were not included in the variable gene list. Next, we used the SCTransform workflow in Seurat to normalize the single-cell sequence data from different samples. During normalization, we also removed confounding sources of variation, including mitochondrial mapping and ribosomal mapping percentages. Standard RPCA workflow was used to perform the integration.\n\nWith a \u2018resolution\u2019 of 0.5 upon running \u2018FindClusters\u2019, we distinguished major cell types of nerve cells and non-nerve cells in the UMAP according to known markers, including RG cell, ORG cell, IPC, EN, IN, astrocyte, oligodendrocyte, Cajal-Retzius cell, microglia, endothelial cell, meningeal cells, and blood cells, which were distinguished on the first level. By following a similar pipeline, subclusters were identified. We finalized the resolution parameter on the FindClusters function once the cluster numbers did not increase when we increased the resolution. Then, we checked the DEGs between each of the clusters using the \u2018FindAllMarkers\u2019 and \u2018FindMarkers\u2019 functions with logfc.threshold=0.25.\n\n### Construction of single-cell developmental trajectory\n\nSingle-cell developmental lineage trajectories construction and discovery of trajectory transitions were performed using Slingshot (v2.2.0) (Street et al., 2018), from the Dyno (v0.1.2) (Saelens et al., 2019) platform, with PCA dimensionality reduction plot results. The direction of the developmental trajectory was adjusted by reference to the verified relevant studies.\n\n### Cross-species transcriptome data integration and analysis\n\nMouse datasets were downloaded from the Gene Expression Omnibus (GEO SuperSeries GSE153164) and at the Single Cell Portal: here. Human datasets were download from the GEO under the accession number GSE104276 and GSE104276. We created a human database by combining the two published human prenatal cortical development datasets of 7\u201321 PCW into one containing cell numbers comparable to our macaque and published mouse dataset using the single-cell transcriptome analysis pipeline of R packages Seurat. We used the biomaRt package to convert the gene symbols in the mouse and macaque expression matrices into their human homologs. To perform cross-species analysis, we used the LIGER (Telley et al., 2019) method to integrate the macaque single-cell dataset with the mouse and human datasets. We ran the \u2018optimizeALS\u2019 function in rliger to perform integrative non-negative matrix factorization on the scaled species-integrated dataset (k=20, lambda = 5, max.iters=30). Species-integrated UMAP showed that all major cell types were well integrated between the three species (Figure 5A). We used the \u2018calcAlignment\u2019 function in rliger to quantify how well-aligned datasets are and got the metric of 0.891231545756746, which was very close to \u20181\u2019. This suggested LIGER well-integrated cross-species datasets.\n\n### TF regulatory network analysis\n\nWe inferred regulon activities for vRG cells of human, macaque, and mouse using pySCENIC (Verfaillie et al., 2015) workflow (https://pyscenic.readthedocs.io/en/latest/tutorial.html) with default parameters. Since there is no transcriptional regulator database for macaques, macaques\u2019 genome is similar to the human genome. When we analyzed the macaque dataset, we used the human transcriptional regulator database for pySCENIC analysis. GRNboost2 in SCENIC was used to infer gene regulatory networks based on co-expression patterns. RcisTarget (Verfaillie et al., 2015) was used to analyze the TF-motif enrichment and direct targets among different species databases. The regulon activity for each developmental time point was identified using AUCell, and the top enriched activated TFs were ranked by -log10(p_value). Lastly, we evaluated the interaction networks analysis of TFs and their target genes by Cytoscape (Shannon et al., 2003) (v3.8.1).\n\n### Mfuzz clustering\n\nFirstly, we picked up vRG cells in each species dataset and screened the DEGs between adjacent development time points using the \u2018FindMarkers\u2019 function (with min.pct=0.25, logfc.threshold=0.25). After separate normalization of the DEG expression matrix from different species datasets, we use the \u2018standardise\u2019 function of Mfuzz to perform standardization. The DEGs of vRG in each species were grouped into five different clusters using the Mfuzz package in R with fuzzy c-means algorithm (Kumar and Futschik, 2007).\n\n### TF and RNA binding protein analysis\n\nMouse, macaque, and human TF gene lists were downloaded from AnimalTFDB (http://bioinfo.life.hust.edu.cn/AnimalTFDB/). Mouse, macaque, and human RNA binding protein (RBP) gene lists were downloaded from EuRBPDB (http://EuRBPDB.syshospital.org). Heatmaps of the TFs and RBPs expression profiles were generated with normalized and standardized DEG expression matrices from Mfuzz.\n",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90325.3.sa0](https://doi.org/10.7554/eLife.90325.3.sa0)\n\nThis study presents a useful resource for the gene expression profiles of different cell types in the parietal lobe of the cerebral cortex of prenatal macaques. The evidence supporting the claims of the authors is solid, and revision has clarified some of the cell isolation and cell classification issues flagged by reviewers. This dataset will be of interest to developmental neurobiologists and could potentially be used for future comparative studies on early brain development.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90325.3.sa1](https://doi.org/10.7554/eLife.90325.3.sa1)\n\nIn the article \"Temporal transcriptomic dynamics in developing macaque neocortex\", Xu et al. analyze the cellular composition and transcriptomic profiles of the developing macaque parietal cortex using single-cell RNA sequencing. The authors profiled eight prenatal rhesus macaque brains at five timepoints (E40, E50, E70, E80, and E90) and obtained a total of around 53,000 high-quality cells for downstream analysis. The dataset provides a high-resolution view into the developmental processes of early and mid-fetal macaque cortical development and will potentially be a valuable resource for future comparative studies of primate neurogenesis and neural stem cell fate specification. Their analysis of this dataset focused on the temporal gene expression profiles of outer and ventricular radial glia and utilized pesudotime trajectory analysis to characterize the genes associated with radial glial and neuronal differentiation. The rhesus macaque dataset presented in this study was then integrated with prenatal mouse and human scRNA-seq datasets to probe species differences in ventricular radial glia to intermediate progenitor cell trajectories. Additionally, the expression profile of macaque radial glia across time was compared to those of mouse apical progenitors to identify conserved and divergent expression patterns of transcription factors.\n\nThe main findings of this paper corroborate many previously reported and fundamental features of primate neurogenesis: deep layer neurons are generated before upper layer excitatory neurons, the expansion of outer radial glia in the primate lineage, conserved molecular markers of outer radial glia, and the early specification of progenitors. Furthermore, the authors show some interesting divergent features of macaque radial glial gene regulatory networks as compared to mouse. Overall, despite some uncertainties surrounding the clustering and annotations of certain cell types, the manuscript provides a valuable scRNA-seq dataset of early prenatal rhesus macaque brain development. The dynamic expression patterns and trajectory analysis of ventricular and outer radial glia provide valuable data and lists of differentially expressed genes (some consistent with previous studies, others reported for the first time here) for future studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90325.3.sa2](https://doi.org/10.7554/eLife.90325.3.sa2)\n\nSummary:\n\nThis manuscript by Xu et al., is an interesting study aiming to identify novel features of macaque cortical development. This study serves as a valuable atlas of single cell data during macaque neurogenesis, which extends the developmental stages previously explored. Overall, the authors have achieved their aim of collecting a comprehensive dataset of macaque cortical neurogenesis and have identified a few unknown features of macaque development.\n\nStrengths:\n\nThe authors have accumulated a robust dataset of developmental time points and have applied a variety of informatic approaches to interrogate this dataset. One interesting finding in this study is the expression of previously unknown receptors on macaque oRG cells. Another novel aspect of this paper is the temporal dissection of neocortical development across species. The identification that the regulome looks quite different, despite similar expression of transcription factors in discrete cell types, is intriguing.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90325.3.sa3](https://doi.org/10.7554/eLife.90325.3.sa3)\n\nSummary:\n\nThe study adds to the existing data that have established that cortical development in rhesus macaque is known to recapitulate multiple facets cortical development in humans. The authors generate and analyze single cell transcriptomic data from the timecourse of embryonic neurogenesis.\n\nStrengths:\n\nStudies of primate developmental biology are hindered by the limited availability and limit replication. In this regard, a new dataset is useful.\n\nThe study analyzes parietal cortex, while previous studies focused on frontal and motor cortex. This may be the first analysis of macaque parietal cortex and, as such, may provide important insights into arealization, which the authors have not addressed\n",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9e0ae22-ebfd-4a91-b4f9-790991ca0316",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C1",
+      "claim": "Cortical development in rhesus macaque recapitulates multiple facets of cortical development in humans, including the complex composition of neural stem cells and the thicker supragranular layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical development in rhesus macaque is known to recapitulate multiple facets of cortical development in humans, including the complex composition of neural stem cells and the thicker supragranular layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and is supported by established scientific knowledge about macaque and human cortical development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "d084ddae-3616-400c-a45c-5ebfe373559d",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C2",
+      "claim": "Single-cell RNA sequencing produced a transcriptomic atlas of developing parietal lobe in rhesus macaque neocortex from samples at E40, E50, E70, E80, and E90.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize temporal shifts in transcriptomic programming responsible for differentiation from stem cells to neurons, we sampled parietal lobes of rhesus macaque at E40, E50, E70, E80, and E90, spanning the full period of prenatal neurogenesis. Single-cell RNA sequencing produced a transcriptomic atlas of developing parietal lobe in rhesus macaque neocortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach and data generation performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "37994cb8-9e23-4afc-b8c2-540d3c3a4ffc",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C3",
+      "claim": "Deep-layer neurons appear in the early stages of neurogenesis, while upper-layer neurons appear later.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, deep-layer neurons appear in the early stages of neurogenesis, while upper-layer neurons appear later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "a3fe2290-0d99-451a-81c6-fbdf87944dad",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C4",
+      "claim": "Cell fates are determined post-mitotically in the macaque neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "While these different lineages show overlap in their differentiation program, cell fates are determined post-mitotically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by trajectory analysis data in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "96c56827-e809-467a-a666-64b7ffd52830",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C5",
+      "claim": "Trajectories analysis from ventricular radial glia (vRGs) to outer radial glia (oRGs) revealed dynamic gene expression profiles and identified differential activation of BMP, FGF, and WNT signaling pathways between vRGs and oRGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Trajectories analysis from ventricular radial glia (vRGs) to outer radial glia (oRGs) revealed dynamic gene expression profiles and identified differential activation of BMP, FGF, and WNT signaling pathways between vRGs and oRGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by trajectory analysis data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "a5301f1b-fd13-4e8e-ac68-6777315ca5de",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C6",
+      "claim": "The dorsal neocortex can be anatomically divided into six layers of cells occupied by distinct neuronal cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, the dorsal neocortex can be anatomically divided into six layers of cells occupied by distinct neuronal cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about neocortex structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "e41b84f3-7517-40e5-9b55-599213322ed4",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C7",
+      "claim": "Deep-layer neurons project to the thalamus (layer VI neurons) and subcortical areas (layer V neurons), while upper-layer neurons preferentially form intracortical projections.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep-layer neurons project to the thalamus (layer VI neurons) and subcortical areas (layer V neurons), while neurons occupying more superficial layers (upper-layer neurons) preferentially form intracortical projections (Jabaudon, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jabaudon, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "08349b0f-15b7-41a6-b5eb-53ad41147aad",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C8",
+      "claim": "The generation of distinct excitatory neuron cell types follows a temporal pattern in which early-born neurons migrate to deep layers (layers V and VI), while later-born neurons migrate and surpass early-born neurons to occupy the upper layers (layers II\u2013IV).",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of distinct excitatory neuron (EN) cell types follows a temporal pattern in which early-born neurons migrate to deep layers (i.e. layers V and VI), while the later-born neurons migrate and surpass early-born neurons to occupy the upper layers (layers II\u2013IV) (Rakic, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rakic, 1974.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "df5d20ac-26cf-4bed-a8bf-8cb905343245",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C9",
+      "claim": "Daughter neurons exhibit the same transcriptional profiles of their respective progenitor radial glia, although these apparently heritable expression patterns fade as neurons mature.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-cell RNA sequencing (scRNA-seq), Telley and colleagues found that daughter neurons exhibit the same transcriptional profiles of their respective progenitor radial glia (RG), although these apparently heritable expression patterns fade as neurons mature (Telley et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Telley et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "7a5bc1f5-a43f-438a-802f-5296054cd6c2",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C10",
+      "claim": "The neocortex of primates exhibits an extra neurogenesis zone known as the outer subventricular zone (OSVZ), which is not present in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "The neocortex of primates exhibits an extra neurogenesis zone known as the outer subventricular zone (OSVZ), which is not present in rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about differences between primate and rodent neocortex development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "ad3c89a1-0ce1-466d-bf88-93c062808575",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C11",
+      "claim": "Outer radial glia (oRG) cells retain basal processes but lack apical junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ventricular radial glia (vRG) is also found in humans and NHP, the vast majority of RG in these higher species occupy the OSVZ and are therefore termed outer radial glia (oRG). oRG cells retain basal processes but lack apical junctions (Hansen et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hansen et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "6158eea8-6c4d-43ad-9856-e37a09f25d01",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C12",
+      "claim": "oRG cells divide in a process known as mitotic somal translocation, which differs from vRG.",
+      "claim_type": "EXPLICIT",
+      "source": "oRG cells retain basal processes but lack apical junctions (Hansen et al., 2010) and divide in a process known as mitotic somal translocation, which differs from vRG (Ostrem et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ostrem et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "13a1967e-8ef3-48d0-8554-3c01df7048a7",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C13",
+      "claim": "vRG and oRG are both accompanied by the expression of stem cell markers such as PAX6 and exhibit extensive self-renewal and proliferative capacities.",
+      "claim_type": "EXPLICIT",
+      "source": "vRG and oRG are both accompanied by the expression of stem cell markers such as PAX6 and exhibit extensive self-renewal and proliferative capacities (Betizeau et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Betizeau et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "cb446921-6ac3-4a83-bd43-6e31200213d2",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C14",
+      "claim": "HOPX is a molecular marker for oRGs, while CRYAB and FBXO32 are markers for vRGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous scRNA-seq analyses have identified several molecular markers, including HOPX for oRGs, CRYAB, and FBXO32 for vRGs (Pollen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pollen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "92e235c3-e593-46e4-a60b-1f453db7a0df",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C15",
+      "claim": "oRGs are derived from vRGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, oRGs are derived from vRGs, and vRGs exhibit obvious differences in numerous cell-extrinsic mechanisms, including activation of the FGF-MAPK cascade, SHH, PTEN/AKT, and PDGF pathways, and oxygen (O2) levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "ec21a473-7130-4d6e-944f-694d9defae79",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C16",
+      "claim": "Rhesus macaque and humans share multiple aspects of neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhesus macaque and humans share multiple aspects of neurogenesis, and more importantly, the rhesus monkey and human brains share more similar gene expression patterns than the brains of mice and humans (Bakken et al., 2016; Bernard et al., 2012; Zeng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bakken et al., 2016; Bernard et al., 2012; Zeng et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "1e807acb-7ea6-4ec0-83c6-68c581055c50",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C17",
+      "claim": "A total of 53,259 cells remained after quality control for subsequent analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained a transcriptomic atlas from 53,259 cells after filtering out low-quality cells and removing potential doublets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the data processing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "7c33455d-5feb-4064-a015-8043511102cf",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C18",
+      "claim": "28 distinct cell clusters were identified using uniform manifold approximation and projection (UMAP) of dimension reduction using Seurat.",
+      "claim_type": "EXPLICIT",
+      "source": "Each embedding was visualized using uniform manifold approximation and projection (UMAP) of dimension reduction using Seurat, which identified 28 distinct cell clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the clustering analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "b4d2eb73-73e4-4003-bcaa-22c806b424ba",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C19",
+      "claim": "vRG (cluster 10) showed characteristic VIM and PAX6 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, vRG (cluster 10) showed characteristic VIM and PAX6 expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the gene expression data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "de83ba30-c0f0-4e13-9104-a7d5e9626f30",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C20",
+      "claim": "oRG (cluster 12 and cluster 14) highly expressed HOPX.",
+      "claim_type": "EXPLICIT",
+      "source": "oRG (cluster 12 and cluster 14) highly expressed HOPX, previously verified marker (Pollen et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data and a citation to Pollen et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "fbe3af8e-951b-4391-b5b4-b563a5644083",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C21",
+      "claim": "Two clusters of IPCs (cluster 8 and cluster 22) strongly expressed EOMES.",
+      "claim_type": "EXPLICIT",
+      "source": "two clusters (cluster 8 and cluster 22) of IPCs that strongly expressed EOMES",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "d294e8e8-b2cb-4974-884b-fb97b95d6387",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C22",
+      "claim": "ENs were identified by the expression of well-established markers, such as NEUROD2 and NEUROD6.",
+      "claim_type": "EXPLICIT",
+      "source": "ENs were identified by the expression of well-established markers, such as NEUROD2 and NEUROD6",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data and established knowledge of neuronal markers.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "48dc08d1-29c4-4d14-b26f-d9c1bb8576c0",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C23",
+      "claim": "The astrocyte and oligodendrocyte lineages were identified by AQP4 and SOX10 expression, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "and the astrocyte and oligodendrocyte lineages were identified by AQP4 and SOX10 expression, respectively (Silbereis et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data and a citation to Silbereis et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "8653c7c7-17c6-484d-8ea4-7d9dd80c03f5",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C24",
+      "claim": "Cortical neural progenitors undergo neurogenesis processes during the early stages of macaque prenatal cortical development, while gliogenic differentiation, including oligodendrocytes and astrocytes, occurs in later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggested that cortical neural progenitors undergo neurogenesis processes during the early stages of macaque prenatal cortical development, while gliogenic differentiation, including oligodendrocytes and astrocytes, occurs in later stages (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data analysis and Figure 1A and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "c3d09589-5a2f-4006-8398-76fbb88c1f32",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C25",
+      "claim": "All EN subclusters could be distinguished by differential expression of either deep-layer neuron markers (BCL11B, FEZF2, and SOX5) or upper-layer neuron markers (CUX1 and SATB2).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all EN subclusters could be well distinguished by differential expression of either deep-layer neuron markers (BCL11B, FEZF2, and SOX5) (Tsyporin et al., 2021) or upper-layer neuron markers (CUX1 and SATB2) (Li et al., 2020; He et al., 2017; Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data, citations to Tsyporin et al., 2021; Li et al., 2020; He et al., 2017, and Figure 2B and C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "b22517dc-1b8f-452a-9d03-7d4e66ea7024",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C26",
+      "claim": "Early-born neurons (E40 and E50) predominantly outnumbered later-born neurons in the deep-layer neuron subclusters (EN5 and E10), while upper-layer neuron subclusters contained the inverse proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this early work, we found that early-born neurons (E40 and E50) predominantly outnumbered later-born neurons in the deep-layer neuron subclusters (EN5 and E10), while upper-layer neuron subclusters contained the inverse proportions (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data analysis and Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "c89dec0d-97d3-4577-a0cd-53bcc91f2c53",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C27",
+      "claim": "EN5 and EN10 (deep-layer neurons) subclusters emerged at E40 and E50 and disappeared in later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "While the EN5 and EN10 (deep-layer neurons) subclusters emerged at E40 and E50 and disappeared in later stages",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the temporal analysis of cell populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "51bc39e0-a849-47b5-b31e-55b0fcca371b",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C28",
+      "claim": "EN subclusters 1, 2, 3, and 4 gradually increased in population size from E50 to E80.",
+      "claim_type": "EXPLICIT",
+      "source": "EN subclusters 1, 2, 3, and 4 gradually increased in population size from E50 to E80",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the temporal analysis of cell populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "cbb0f394-e381-4569-9fa1-b29471d7a138",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C29",
+      "claim": "EN subclusters 8 and 9 gradually increased in population size from E80 to E90.",
+      "claim_type": "EXPLICIT",
+      "source": "EN subclusters 8 and 9 gradually increased in population size from E80 to E90 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the temporal analysis of cell populations and Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "e29ba971-923a-4d9e-aa70-2c0984ecadc4",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C30",
+      "claim": "EN6 was exclusively found in the cortex at E70.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, EN6 was exclusively found in the cortex at E70 (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the temporal analysis and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "b596d5ac-b877-4283-ac61-4a1121d07c61",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C31",
+      "claim": "A set of genes previously reported as highly expressed in oRG showed high expression in the oRG_C12 differentiated pseudotime terminal, including SFRP1, HOPX, FAM107A, TNC, PTN, and MOXD1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a set of genes that were previously reported as highly expressed in ORG that also showed high expression in the oRG_C12 differentiated pseudotime terminal (Pollen et al., 2015; Liu et al., 2017; Johnson et al., 2018) (such as SFRP1, HOPX, FAM107A, TNC, PTN, and MOXD1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by pseudotime analysis data and citations to Pollen et al., 2015; Liu et al., 2017; Johnson et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "d285e6fa-26fd-47e4-b0cf-9214bb068fe5",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C32",
+      "claim": "High ASPM expression was typical of cells in the earlier, RG, pseudotime terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "while high ASPM expression was typical of cells in the earlier, RG, pseudotime terminal (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pseudotime analysis data and Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "5f49f402-4178-4d6a-b2bd-ded5b2482b38",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C33",
+      "claim": "RGCC, which controls mitotic spindle orientation, was enriched at the oRG_C12 terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to these markers, we also found enrichment for some potential regulatory genes at the oRG_C12 terminal, such as regulator of the cell cycle (RGCC), which controls mitotic spindle orientation (Guo et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data and a citation to Guo et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "ecdcc0a6-d3ef-4818-8c91-736966350c74",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C34",
+      "claim": "TTYH1, which regulates cell adhesion, was enriched at the oRG_C12 terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "and TTYH1, which regulates cell adhesion (Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data and a citation to Zhou et al., 2020.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "5dd15e17-1eef-4bec-a004-d3407cc427f3",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C35",
+      "claim": "Genes that regulate excitability and ionic gradients in neurons, such as ATP1A2, ATP1B2, and SCN4B, were found at the oRG terminal and were not previously known to participate in oRG differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found genes that regulate excitability and ionic gradients in neurons, such as ATP1A2, ATP1B2, and SCN4B, which were not previously known to participate in oRG differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data and represents a novel finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "d6c138bb-557f-45d7-8dba-53da7d1b5b71",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C36",
+      "claim": "Cell cycle-related genes such as MKI67, TOP2A, CDC20, and CCNA2 were identified as DEGs specific to the RG pseudotime terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of DEGs specific to the RG pseudotime terminal identified cell cycle-related genes such as MKI67, TOP2A, CDC20, and CCNA2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "09f50940-eee7-48d8-abda-06b64d1a69b7",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C37",
+      "claim": "Glial-specific genes such as SLC1A3, ZFP36L1, GFAP, DBI, and EDNRB exhibited high expression in the oRG_C12 terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the glia-like cells that largely comprised the oRG_C12 terminal, we also detected a population of glial-specific genes that exhibited high expression such as SLC1A3, ZFP36L1 (Weng et al., 2019), GFAP, DBI, and EDNRB (Gadea et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene expression data and citations to Weng et al., 2019 and Gadea et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "04d68896-d0d1-415e-a8dc-d530cee394ef",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C38",
+      "claim": "Several DEGs that have not yet been investigated in RG function and differentiation were uncovered, such as DKK3, DDAH1, SAT1, and PEA15.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our analyses uncovered several DEGs that have not yet been investigated in RG function and differentiation, such as DKK3, DDAH1, SAT1, and PEA15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and represents novel findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "5fdc2da0-b1e2-45dc-a964-d3bb18377f6e",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C39",
+      "claim": "Mapping genes, such as FEZF2 and DOK5, may play a role in RG cells to specify neuronal progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that mapping genes, such as FEZF2 and DOK5, may play a role in RG cells to specify neuronal progeny (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the analysis of overlapping genes between RG and neurons, supported by Figure 4B.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "2f7b0dd2-e17d-4b0c-9a69-0f38849293d6",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C40",
+      "claim": "Apical progenitors and daughter ENs share molecular temporal identities during neocortex prenatal corticogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide single-cell transcriptome data to support that apical progenitors and daughter ENs share molecular temporal identities during neocortex prenatal corticogenesis (; Lin et al., 2021; Shu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data analysis and citations to Lin et al., 2021; Shu et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "327e02b7-9a75-4754-8119-f9f57ea8c0f3",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C41",
+      "claim": "A bifurcating trajectory from neural stem cells leads to either deep-layer neurons in one branch or to upper-layer neurons in the alternative branch.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Dynverse R packages, we constructed pseudotime trajectories for the cluster data, which identified a bifurcating trajectory from neural stem cells (including RG_C10, oRG_C12, and oRG_C14) that leads to either deep-layer neurons in one branch or to upper-layer neurons in the alternative branch (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pseudotime trajectory analysis and Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "010839bf-bf1c-4fad-a7fd-ded6b4a98b95",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C42",
+      "claim": "The two distinct neuronal fates share a common path from neural stem cells to immature neurons, supporting the likelihood that neuronal fate is primarily determined post-mitotically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that the two distinct fates share a common path from neural stem cells to immature neurons (Figure 4C, from dot 1 to dot 4), supporting the likelihood that neuronal fate is primarily determined post-mitotically.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by trajectory analysis and Figure 4C, and represents an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "d9effd7e-44e3-434f-a90a-31265a25b6db",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C43",
+      "claim": "Most DEGs, such as STMN2, TUBB3, NEUROD2, and NEUROD6, were shared between both deep-layer and upper-layer branches, illustrating the common differentiation processes between deep- and upper-layer ENs.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, we found that most DEGs, such as STMN2, TUBB3, NEUROD2, and NEUROD6, were shared between both branches, illustrating the common differentiation processes between deep- and upper-layer ENs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis along trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "649a65d3-178b-4e42-b800-215eb5dd57e1",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C44",
+      "claim": "Deep-layer-specific DEGs include FEZF2, TBR1, and LMO3.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified deep-layer-specific DEGs (including FEZF2, TBR1, and LMO3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "83c17bcf-d644-421a-9379-6400187d2e41",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C45",
+      "claim": "Upper-layer-specific genes include MEF2C and DOK5.",
+      "claim_type": "EXPLICIT",
+      "source": "and upper-layer-specific genes (including MEF2C and DOK5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "be9a3365-e968-483b-9c26-39a893cc1fd6",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C46",
+      "claim": "All major cell types were well integrated between human, macaque, and mouse species in the LIGER integration analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Species-integrated UMAP showed that all major cell types were well integrated between the three species (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the cross-species integration analysis and Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "bd4c3dc1-f568-42a8-87a6-b7bf8015d253",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C47",
+      "claim": "Similar cellular processes with comparable temporal progression sequentially generate deep-layer and upper-layer neurons in both primates and rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clearly observed that similar cellular processes with comparable temporal progression sequentially generate deep-layer and upper-layer neurons in both primates and rodents (Figure 5\u2014figure supplement 1A to C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cross-species comparison and Figure 5\u2014figure supplement 1A to C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "c543f0c3-e54b-45f8-8d59-15d70c22b816",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C48",
+      "claim": "In primates, the number and relative development period of upper neurons are more extended than that of rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in primates, the number and relative development period of upper neurons are more extended than that of rodents (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cross-species comparison and Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "38b29346-90d7-4492-8bcc-45761166121f",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C49",
+      "claim": "Strong expression of the oRG marker genes, such as HOPX, MOXD1, FAM107A, and CLU, was found in both human and macaque datasets, while barely detectable expression was found in mouse dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cross-species analysis showed strong expression of the oRG marker genes, such as HOPX, MOXD1, FAM107A, and CLU in both human and macaque datasets (Figure 5B), while barely detectable expression in mouse dataset, which is consistent with previous reports (Wang et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cross-species gene expression analysis, Figure 5B, and a citation to Wang et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "8a2341c8-aea4-4d5d-bd23-eb678f18de99",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C50",
+      "claim": "The biological process of vRG-to-IPC is remarkably conserved across human, macaque, and mouse species.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing vRG-to-IPC trajectory between human, macaque, and mouse, we found this biological process of vRG-to-IPC is remarkably conserved across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cross-species trajectory analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "c4da6bcd-36ee-4327-828e-4a439c8146a0",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C51",
+      "claim": "The vRG-to-oRG trajectory is divergent between species because the oRG population was not identified in the mouse dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the vRG-to-oRG trajectory is divergent between species because the oRG population was not identified in the mouse dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cross-species trajectory analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "8c9503eb-1592-49ef-9bf9-d36eed5d3fb9",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C52",
+      "claim": "A total of 72 homologous TFs were shared between human, macaque, and mouse transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 72 homologous TFs were shared between human, macaque, and mouse transcriptomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the comparative analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "68bd68fe-d400-4423-9076-aa37c724dc04",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C53",
+      "claim": "The majority of TFs had conserved temporal dynamics between species, indicating evolutionarily conserved patterns of regulation in neural stem cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of their temporal dynamics revealed that they exhibited similar temporal patterns between species such as NEUROD1, NEUROG2, POU3F2, ETV1, ETV5, and FOS (Figure 6B and Figure 6\u2014figure supplement 1), which indicated that the majority of TFs had conserved temporal dynamics between species, and thus evolutionarily conserved patterns of regulation in neural stem cell differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by temporal expression analysis, Figure 6B and Figure 6\u2014figure supplement 1, and represents an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "24ae8731-634f-417e-bb48-1a034793a477",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C54",
+      "claim": "Classical developmental TFs such as GATA1, SOX2, HMGN3, TCF7L1, ZFX, EMX2, SOX10, NEUROG1, NEUROD1, and POU3F1 show commonalities in regulatory activity across human, macaque, and mouse prenatal neocortical neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the regulatory activity of human, macaque, and mouse (Di Bella et al., 2021) prenatal neocortical neurogenesis indicated commonalities in the roles of classical developmental TFs such as GATA1, SOX2, HMGN3, TCF7L1, ZFX, EMX2, SOX10, NEUROG1, NEUROD1, and POU3F1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SCENIC regulatory network analysis and a citation to Di Bella et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "c051f2fd-c2eb-45cb-b436-15b2693a2025",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C55",
+      "claim": "Some conserved regulatory TFs present in more than one species include HMGN3, EMX2, SOX2, and HMGA2 at the deep-layer generation stage and SOX10, ZNF672, and ZNF672 at the upper-layer generation stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Some conserved regulatory TFs present in more than one species are identified, such as HMGN3, EMX2, SOX2, and HMGA2, at the deep-layer generation stage and SOX10, ZNF672, and ZNF672 at the upper-layer generation stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cross-species regulatory network analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "4a45fa63-9531-4fb6-a385-534ef06fc856",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C56",
+      "claim": "The parietal lobe is the center of the somatic senses and is significant for interpreting words as well as language understanding and processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The parietal lobe is the center of the somatic senses and is significant for interpreting words as well as language understanding and processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about parietal lobe function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "77216f34-71ea-4d30-b319-e275e19b2861",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C57",
+      "claim": "The existence of oRGs has long been demonstrated in humans and primates through live imaging and immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of oRGs has long been demonstrated in humans and primates through live imaging and immunostaining (Hansen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hansen et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "db66862f-f0f1-401d-9cb8-c0af6c7f646f",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C58",
+      "claim": "oRGs share similarities in their patterns of gene expression with vRGs (e.g. SOX2, PAX6, and NESTIN) but also specifically express several genes (such as MOXD1, HOPX, and FAM107A).",
+      "claim_type": "EXPLICIT",
+      "source": "ORGs share similarities in their patterns of gene expression with vRGs (e.g. SOX2, PAX6, and NESTIN) but also specifically express several genes (such as MOXD1, HOPX, and FAM107A) (Pollen et al., 2015; Nowakowski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pollen et al., 2015; Nowakowski et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "a9600ab3-1949-4844-972d-dd08364301cf",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C59",
+      "claim": "Hyperpolarization in mouse apical progenitors has been shown to promote the generation of IPCs and indirect neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, hyperpolarization in mouse apical progenitors has been shown to promote the generation of IPCs and indirect neurogenesis (Vitali et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Vitali et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "51b8baec-ae4e-4eab-a45e-ffcc01804a0c",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C60",
+      "claim": "FEZF2 and SOX5 have been confirmed to be associated with deep-layer neuron specification in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, FEZF2 (Molyneaux et al., 2005) and SOX5 Leone et al., 2008 have been confirmed associated with deep-layer neuron specification in mice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Molyneaux et al., 2005 and Leone et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "44b53241-a58d-4c16-9b3f-dd5625627275",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C61",
+      "claim": "TMOD1, PID1, and LINGO1 have not been reported before in the context of cortical projection neuron fate specification.",
+      "claim_type": "EXPLICIT",
+      "source": "while others, such as TMOD1, PID1, and LINGO1, have not been reported before, and their potential functions in the fate specification of cortical projection neurons need to be further explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of findings and a suggestion for future research.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "f895af01-4dee-452d-81e4-1d96501bc9d7",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C62",
+      "claim": "Extending neurogenesis by transplanting mouse embryos to a rat mother increases explicitly the number of upper-layer cortical neurons, with concomitant abundant neurogenic progenitors in the sub-VZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous study evidence had shown that extending neurogenesis by transplanting mouse embryos to a rat mother increases explicitly the number of upper-layer cortical neurons, with concomitant abundant neurogenic progenitors in the sub-VZ (Stepien et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stepien et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "0be3947f-224e-4c53-8f35-662758052883",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C63",
+      "claim": "The BD Rhapsody microwells might be less efficient in capturing mature ENs but have a good capture effect on newborn neurons at each sampling time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the fixed size of the BD Rhapsody microwells, this sing-cell capture method might be less efficient in capturing mature ENs but has a good capture effect on newborn neurons at each sampling time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the technical limitations of the method used.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "4ba93733-04be-44ac-a280-88f86c009dca",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C64",
+      "claim": "Timed pregnancy-derived biological replicate specimens were profiled at each prenatal developmental stage (E40, E50, E70, E80, and E90).",
+      "claim_type": "EXPLICIT",
+      "source": "Timed pregnancy-derived biological replicate specimens were profiled at each prenatal developmental stage (E40, E50, E70, E80, and E90) (Bakken et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design with a citation to Bakken et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "9a63b887-b8f0-4221-acec-d089edae8e2b",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C65",
+      "claim": "These time points were selected to coincide with peak periods of neurogenesis for the different layers of the neocortex based on previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "These time points were selected to coincide with peak periods of neurogenesis for the different layers of the neocortex based on previous studies (Bakken et al., 2016 ; Lein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bakken et al., 2016 and Lein et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "1cd2a73c-0b27-4f20-8d10-874640348269",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C66",
+      "claim": "All animal procedures followed international standards and were approved in advance by the Ethics Committee on Laboratory Animals at IMBCAMS.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal procedures followed international standards and were approved in advance by the Ethics Committee on Laboratory Animals at IMBCAMS (Institute of Medical Biology, Chinese Academy of Medical Sciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "33eeda3e-6ce1-458e-a6e6-1886a0268404",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C67",
+      "claim": "Eight pregnancy-derived fetal brains of rhesus macaque (M. mulatta) were collected at five prenatal developmental stages (E40, E50, E70, E80, E90).",
+      "claim_type": "EXPLICIT",
+      "source": "We collected eight pregnancy-derived fetal brains of rhesus macaque (M. mulatta) at five prenatal developmental stages (E40, E50, E70, E80, E90) and dissected the parietal lobe cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "7e9574c2-22b0-4fdd-a221-cb9ac61246f8",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C68",
+      "claim": "Single-cell capture was achieved by random distribution of a single-cell suspension across >200,000 microwells through a limited dilution approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell capture was achieved by random distribution of a single-cell suspension across >200,000 microwells through a limited dilution approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the technical method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "70c7c0d9-c4a4-42c9-8830-4cc5867c02ee",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C69",
+      "claim": "Cells were filtered to retain only higher quality (with less than 7.5% mitochondrial gene counts, less than 5.5% ribosomal gene counts, and detected genes above 400 and less than 6000).",
+      "claim_type": "EXPLICIT",
+      "source": "Then, cells were filtered to retain only higher quality (with less than 7.5% mitochondrial gene counts, less than 5.5% ribosomal gene counts, and detected genes above 400 and less than 6000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the quality control criteria applied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "2bd3fdcc-bd81-44c0-8ff6-f3a73696f819",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "claim_id": "C70",
+      "claim": "Cell doublets were identified using Scrublet v0.142 with default parameters and removed before data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we identified cell doublets using Scrublet v0.142 with default parameters and removed doublets before data analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the quality control method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0dfcb22e-489f-4782-90b6-23e02398036b",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated a single-cell RNA sequencing atlas of rhesus macaque parietal lobe development across five prenatal stages (E40, E50, E70, E80, E90), yielding 53,259 high-quality cells after quality control that were clustered into 28 distinct cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17, C18, C64-C70 collectively describe the experimental design, sample collection, quality control procedures, and resulting dataset. The methods are clearly described with appropriate QC thresholds (mitochondrial <7.5%, ribosomal <5.5%, genes 400-6000), doublet removal using Scrublet, and standard clustering approaches. The timepoints are justified by citations and align with known neurogenic periods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "2d5d8eea-d55a-4413-95f4-70ae7728563e",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cell type annotation identified major neural populations including vRGs (expressing VIM/PAX6), oRGs (expressing HOPX), IPCs (expressing EOMES), excitatory neurons (expressing NEUROD2/NEUROD6), and glial lineages (astrocytes expressing AQP4, oligodendrocytes expressing SOX10), with neurogenesis occurring early and gliogenesis occurring later in development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 describe cell type identification using established marker genes with appropriate citations (Pollen et al., 2015; Silbereis et al., 2010). The temporal pattern of neurogenesis followed by gliogenesis is consistent with known developmental biology and supported by the data shown in Figure 1. The marker-based annotation approach is standard and appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Excitatory neurons were subdivided into 10 subclusters distinguished by deep-layer markers (BCL11B, FEZF2, SOX5) versus upper-layer markers (CUX1, SATB2), with deep-layer neurons (EN5, EN10) appearing predominantly at early stages (E40-E50) and upper-layer neurons appearing progressively at later stages (E50-E90).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25-C30 describe the temporal emergence of neuronal subtypes with appropriate marker genes cited from the literature (Tsyporin et al., 2021; Li et al., 2020; He et al., 2017). The sequential generation of deep-layer followed by upper-layer neurons is a well-established principle (Rakic, 1974) and the data in Figure 2C-D support these temporal patterns. The observation of EN6 exclusively at E70 (C30) is a specific finding supported by Figure 2\u2014figure supplement 1A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "e88dc82d-dc08-4ea4-b7ee-84984589a307",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pseudotime trajectory analysis from vRGs to oRGs identified known oRG markers (SFRP1, HOPX, FAM107A, TNC, PTN, MOXD1) at the oRG terminal and RG markers (ASPM, MKI67, TOP2A, CDC20, CCNA2) at the RG terminal, along with novel candidate regulators including ATP1A2, ATP1B2, SCN4B (ion regulation), RGCC (spindle orientation), TTYH1 (cell adhesion), and DKK3, DDAH1, SAT1, PEA15 (unexplored in RG differentiation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 describe pseudotime analysis results with appropriate validation through known markers (cited: Pollen et al., 2015; Liu et al., 2017; Johnson et al., 2018; Guo et al., 2021; Zhou et al., 2020; Weng et al., 2019; Gadea et al., 2008). The identification of novel genes (C35, C38) is appropriately presented as new findings requiring further investigation. The analysis approach using Slingshot is standard and the heatmaps in Figure 3E-F support the temporal expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pseudotime trajectory analysis revealed a bifurcating path from neural stem cells through a common immature neuron stage before diverging into deep-layer (expressing FEZF2, TBR1, LMO3) versus upper-layer (expressing MEF2C, DOK5) neurons, with shared differentiation genes (STMN2, TUBB3, NEUROD2, NEUROD6), supporting post-mitotic fate determination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39-C45 describe trajectory analysis using Dynverse/Slingshot showing bifurcation after a common progenitor stage (Figure 4C). The identification of shared versus lineage-specific genes is supported by differential expression analysis (Figure 4D). The conclusion of post-mitotic fate determination (C4, C42) is appropriately presented as an inference supported by the shared early trajectory, consistent with prior work (cited: Lin et al., 2021; Shu et al., 2019). However, C39 is explicitly stated as a hypothesis, appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "0ad097e0-503c-46e0-818e-1e9f2ce3d36b",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cross-species integration using LIGER showed conserved sequential generation of deep- and upper-layer neurons across human, macaque, and mouse, but primates exhibit extended upper-layer neurogenesis and abundant oRG populations (expressing HOPX, MOXD1, FAM107A, CLU) that are absent in mice, with conserved vRG-to-IPC but divergent vRG-to-oRG trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 describe cross-species comparative analysis with appropriate integration methods (LIGER) and validation metrics (alignment score 0.89). The findings of conserved neurogenic processes but primate-specific oRG expansion are well-supported by Figure 5 and consistent with established knowledge (cited: Wang et al., 2011; Stepien et al., 2020). The integration quality appears adequate and the species-specific differences in oRG populations are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "4ed512ec-69be-428b-8e4b-2352a2c94394",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Comparative analysis identified 72 homologous transcription factors shared across human, macaque, and mouse, with conserved temporal dynamics (e.g., NEUROD1, NEUROG2, POU3F2, ETV1, ETV5, FOS) and regulatory activity (GATA1, SOX2, HMGN3, TCF7L1, ZFX, EMX2, SOX10, NEUROG1, NEUROD1, POU3F1), including stage-specific regulators (HMGN3, EMX2, SOX2, HMGA2 for deep-layer; SOX10, ZNF672 for upper-layer).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe transcription factor analysis using SCENIC with appropriate cross-species comparisons. The identification of 72 homologous TFs and their temporal patterns (Figure 6B, Figure 6\u2014figure supplement 1) is clearly presented. The regulatory network analysis identifies both conserved and stage-specific TFs with supporting visualizations (Figure 6C-H). The citation to Di Bella et al., 2021 for mouse data is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "9482a94b-ab1b-4c7b-a33f-4f0c4cc22f5f",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Trajectory analysis from vRGs to oRGs revealed differential activation of BMP, FGF, and WNT signaling pathways between vRGs and oRGs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C5 states that BMP, FGF, and WNT pathway differences were identified, but this specific finding is not substantiated in the results section or figures. While the manuscript discusses these pathways in the introduction as known mechanisms, the actual data presented focuses on gene expression patterns (C31-C38) without explicit pathway analysis demonstrating differential BMP/FGF/WNT activation. This appears to be an overclaim in the abstract not supported by presented results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "f6e90f35-a310-4f19-bcfe-3ef975295b41",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The BD Rhapsody microwell method may be less efficient at capturing mature neurons with extensive processes but effectively captures immature neurons at each developmental timepoint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 acknowledges a technical limitation but provides no quantitative validation or comparison to assess the magnitude of this bias. While the reasoning about cell size and microwell dimensions is plausible, without systematic validation (e.g., comparing to other methods, quantifying capture efficiency by cell type/maturity), the extent of bias remains uncertain. This limitation could affect interpretation of temporal dynamics if mature neurons are systematically underrepresented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270",
+      "content_id": "8b441eb7-70d8-4cb1-900b-b8aa853700f2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establish that rhesus macaque recapitulates human cortical development features, including complex neural stem cell composition, six-layered neocortex organization, temporal neurogenesis patterns, primate-specific OSVZ and oRG populations, and known molecular markers and regulatory mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C16, C56-C62 provide background context with appropriate citations to established literature (Jabaudon, 2017; Rakic, 1974; Telley et al., 2019; Hansen et al., 2010; Ostrem et al., 2014; Betizeau et al., 2013; Pollen et al., 2015; Bakken et al., 2016; Bernard et al., 2012; Zeng et al., 2012; Nowakowski et al., 2016; Vitali et al., 2018; Molyneaux et al., 2005; Leone et al., 2008; Stepien et al., 2020). These are standard knowledge claims that appropriately frame the study. C61 correctly identifies TMOD1, PID1, LINGO1 as novel candidates requiring further exploration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "87f4b470-29a7-4995-81a1-9da3c93e409e",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors generated a single-cell RNA sequencing dataset from rhesus macaque parietal lobe across five prenatal developmental stages (E40, E50, E70, E80, E90), obtaining 53,259 high-quality cells after quality control and identifying 28 distinct cell clusters.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers affirm this dataset as a 'useful resource' and 'valuable scRNA-seq dataset' with 'solid' evidence. One reviewer notes it 'provides a high-resolution view into the developmental processes' and will be 'valuable for future comparative studies.' The editors state 'the evidence supporting the claims of the authors is solid.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Deep-layer neurons (expressing BCL11B, FEZF2, SOX5) appear early in neurogenesis (E40-E50) and decrease over time, while upper-layer neurons (expressing CUX1, SATB2) appear later and increase from E50 to E90, with distinct temporal patterns across EN subclusters.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly state this finding 'corroborate[s] many previously reported and fundamental features of primate neurogenesis: deep layer neurons are generated before upper layer excitatory neurons.' The temporal progression is accepted without challenge and aligns with established knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "0534e1aa-984c-4e57-9841-8507a195c123",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Pseudotime trajectory analysis reveals a bifurcating path from neural stem cells to either deep-layer or upper-layer neurons, with both fates sharing a common path to immature neurons, supporting post-mitotic fate determination. Most differentiation genes are shared between branches, with some layer-specific markers (FEZF2, TBR1, LMO3 for deep-layer; MEF2C, DOK5 for upper-layer).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this as corroborating 'the early specification of progenitors' and note the 'dynamic expression patterns and trajectory analysis' provide 'valuable data.' One reviewer states the findings support that 'apical progenitors and daughter ENs share molecular temporal identities,' which is consistent with the manuscript's conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "7671cc52-64cf-409e-9887-cf4347e029d4",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Cell type identification using established markers: vRG express VIM and PAX6; oRG express HOPX; IPCs express EOMES; excitatory neurons express NEUROD2 and NEUROD6; astrocytes express AQP4; oligodendrocytes express SOX10. Neurogenesis occurs early while gliogenesis occurs in later stages.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the use of 'conserved molecular markers of outer radial glia' and note the dataset provides clear cell type identification. The editors state 'revision has clarified some of the cell isolation and cell classification issues flagged by reviewers,' indicating initial concerns were resolved and the classifications are now accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Trajectory analysis from vRG to oRG identified differential gene expression including known oRG markers (SFRP1, HOPX, FAM107A, TNC, PTN, MOXD1) and novel genes not previously associated with oRG differentiation (ATP1A2, ATP1B2, SCN4B, RGCC, TTYH1, DKK3, DDAH1, SAT1, PEA15), with differential activation of BMP, FGF, and WNT signaling pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers highlight 'one interesting finding in this study is the expression of previously unknown receptors on macaque oRG cells' as a strength. The identification of novel genes is acknowledged as providing 'lists of differentially expressed genes (some consistent with previous studies, others reported for the first time here)' that will be valuable for future studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "91b783ac-dcbf-4bdf-874a-7d11f45e51fa",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Cross-species integration analysis shows that major cell types integrate well between human, macaque, and mouse, with similar temporal progression generating deep- and upper-layer neurons across species. However, primates show extended upper neuron development, strong oRG marker expression (HOPX, MOXD1, FAM107A, CLU) absent in mice, and conserved vRG-to-IPC but divergent vRG-to-oRG trajectories.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm these findings, noting the study confirms 'the expansion of outer radial glia in the primate lineage' and provides 'temporal dissection of neocortical development across species.' The cross-species comparisons are treated as solid contributions that will be useful for 'future comparative studies on early brain development.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "3ac1cc9a-dc1e-419a-a9f8-3ef157005b20",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Comparative analysis identified 72 homologous transcription factors shared across species, with the majority showing conserved temporal dynamics (e.g., NEUROD1, NEUROG2, POU3F2) and conserved regulatory activity of classical developmental TFs (GATA1, SOX2, HMGN3, EMX2, SOX10), though some stage-specific TFs differ between species.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note 'the identification that the regulome looks quite different, despite similar expression of transcription factors in discrete cell types, is intriguing' and acknowledge 'some interesting divergent features of macaque radial glial gene regulatory networks as compared to mouse.' This indicates acceptance of both conserved and divergent findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "11ec7b1c-aad7-4a32-8f49-1de4baa2dfc2",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors hypothesize that certain genes (FEZF2, DOK5, TMOD1, PID1, LINGO1) may play roles in neuronal fate specification, though some have not been previously reported in this context and require further investigation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly presented as hypotheses and speculations by the authors themselves, with statements like 'may play a role' and 'need to be further explored.' Reviewers do not specifically validate or challenge these speculative claims, treating them as potential directions for future research rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "570efaed-25a6-4dc7-9ea9-3641086a7350",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The BD Rhapsody microwell method may be less efficient at capturing mature excitatory neurons but effectively captures newborn neurons at each timepoint.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This technical limitation is acknowledged by the authors but not directly addressed by reviewers. The editors note that 'revision has clarified some of the cell isolation and cell classification issues,' suggesting initial concerns about methodology were raised and partially addressed, but the specific capture efficiency claim remains a methodological caveat rather than a validated finding.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4",
+      "content_id": "0ca61e2c-14f1-4a79-b824-045c69d98e50",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Background claims establishing that macaque cortical development recapitulates human development, describing neocortical layer organization, temporal neurogenesis patterns, oRG characteristics, and molecular markers based on established literature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established background facts supported by citations and accepted scientific knowledge. Reviewers acknowledge 'the study adds to the existing data that have established that cortical development in rhesus macaque is known to recapitulate multiple facets cortical development in humans,' confirming acceptance of this foundational context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d084ddae-3616-400c-a45c-5ebfe373559d",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "1e807acb-7ea6-4ec0-83c6-68c581055c50",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "7c33455d-5feb-4064-a015-8043511102cf",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "4ba93733-04be-44ac-a280-88f86c009dca",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "9a63b887-b8f0-4221-acec-d089edae8e2b",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "1cd2a73c-0b27-4f20-8d10-874640348269",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "33eeda3e-6ce1-458e-a6e6-1886a0268404",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "7e9574c2-22b0-4fdd-a221-cb9ac61246f8",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "70c7c0d9-c4a4-42c9-8830-4cc5867c02ee",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "2bd3fdcc-bd81-44c0-8ff6-f3a73696f819",
+      "result_id": "0dfcb22e-489f-4782-90b6-23e02398036b"
+    },
+    {
+      "claim_id": "b4d2eb73-73e4-4003-bcaa-22c806b424ba",
+      "result_id": "2d5d8eea-d55a-4413-95f4-70ae7728563e"
+    },
+    {
+      "claim_id": "de83ba30-c0f0-4e13-9104-a7d5e9626f30",
+      "result_id": "2d5d8eea-d55a-4413-95f4-70ae7728563e"
+    },
+    {
+      "claim_id": "fbe3af8e-951b-4391-b5b4-b563a5644083",
+      "result_id": "2d5d8eea-d55a-4413-95f4-70ae7728563e"
+    },
+    {
+      "claim_id": "d294e8e8-b2cb-4974-884b-fb97b95d6387",
+      "result_id": "2d5d8eea-d55a-4413-95f4-70ae7728563e"
+    },
+    {
+      "claim_id": "48dc08d1-29c4-4d14-b26f-d9c1bb8576c0",
+      "result_id": "2d5d8eea-d55a-4413-95f4-70ae7728563e"
+    },
+    {
+      "claim_id": "8653c7c7-17c6-484d-8ea4-7d9dd80c03f5",
+      "result_id": "2d5d8eea-d55a-4413-95f4-70ae7728563e"
+    },
+    {
+      "claim_id": "37994cb8-9e23-4afc-b8c2-540d3c3a4ffc",
+      "result_id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37"
+    },
+    {
+      "claim_id": "c3d09589-5a2f-4006-8398-76fbb88c1f32",
+      "result_id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37"
+    },
+    {
+      "claim_id": "b22517dc-1b8f-452a-9d03-7d4e66ea7024",
+      "result_id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37"
+    },
+    {
+      "claim_id": "c89dec0d-97d3-4577-a0cd-53bcc91f2c53",
+      "result_id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37"
+    },
+    {
+      "claim_id": "51bc39e0-a849-47b5-b31e-55b0fcca371b",
+      "result_id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37"
+    },
+    {
+      "claim_id": "cbb0f394-e381-4569-9fa1-b29471d7a138",
+      "result_id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37"
+    },
+    {
+      "claim_id": "e29ba971-923a-4d9e-aa70-2c0984ecadc4",
+      "result_id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37"
+    },
+    {
+      "claim_id": "b596d5ac-b877-4283-ac61-4a1121d07c61",
+      "result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307"
+    },
+    {
+      "claim_id": "d285e6fa-26fd-47e4-b0cf-9214bb068fe5",
+      "result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307"
+    },
+    {
+      "claim_id": "5f49f402-4178-4d6a-b2bd-ded5b2482b38",
+      "result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307"
+    },
+    {
+      "claim_id": "ecdcc0a6-d3ef-4818-8c91-736966350c74",
+      "result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307"
+    },
+    {
+      "claim_id": "5dd15e17-1eef-4bec-a004-d3407cc427f3",
+      "result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307"
+    },
+    {
+      "claim_id": "d6c138bb-557f-45d7-8dba-53da7d1b5b71",
+      "result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307"
+    },
+    {
+      "claim_id": "09f50940-eee7-48d8-abda-06b64d1a69b7",
+      "result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307"
+    },
+    {
+      "claim_id": "04d68896-d0d1-415e-a8dc-d530cee394ef",
+      "result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307"
+    },
+    {
+      "claim_id": "a3fe2290-0d99-451a-81c6-fbdf87944dad",
+      "result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e"
+    },
+    {
+      "claim_id": "5fdc2da0-b1e2-45dc-a964-d3bb18377f6e",
+      "result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e"
+    },
+    {
+      "claim_id": "2f7b0dd2-e17d-4b0c-9a69-0f38849293d6",
+      "result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e"
+    },
+    {
+      "claim_id": "327e02b7-9a75-4754-8119-f9f57ea8c0f3",
+      "result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e"
+    },
+    {
+      "claim_id": "010839bf-bf1c-4fad-a7fd-ded6b4a98b95",
+      "result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e"
+    },
+    {
+      "claim_id": "d9effd7e-44e3-434f-a90a-31265a25b6db",
+      "result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e"
+    },
+    {
+      "claim_id": "649a65d3-178b-4e42-b800-215eb5dd57e1",
+      "result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e"
+    },
+    {
+      "claim_id": "83c17bcf-d644-421a-9379-6400187d2e41",
+      "result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e"
+    },
+    {
+      "claim_id": "be9a3365-e968-483b-9c26-39a893cc1fd6",
+      "result_id": "0ad097e0-503c-46e0-818e-1e9f2ce3d36b"
+    },
+    {
+      "claim_id": "bd4c3dc1-f568-42a8-87a6-b7bf8015d253",
+      "result_id": "0ad097e0-503c-46e0-818e-1e9f2ce3d36b"
+    },
+    {
+      "claim_id": "c543f0c3-e54b-45f8-8d59-15d70c22b816",
+      "result_id": "0ad097e0-503c-46e0-818e-1e9f2ce3d36b"
+    },
+    {
+      "claim_id": "38b29346-90d7-4492-8bcc-45761166121f",
+      "result_id": "0ad097e0-503c-46e0-818e-1e9f2ce3d36b"
+    },
+    {
+      "claim_id": "8a2341c8-aea4-4d5d-bd23-eb678f18de99",
+      "result_id": "0ad097e0-503c-46e0-818e-1e9f2ce3d36b"
+    },
+    {
+      "claim_id": "c4da6bcd-36ee-4327-828e-4a439c8146a0",
+      "result_id": "0ad097e0-503c-46e0-818e-1e9f2ce3d36b"
+    },
+    {
+      "claim_id": "8c9503eb-1592-49ef-9bf9-d36eed5d3fb9",
+      "result_id": "4ed512ec-69be-428b-8e4b-2352a2c94394"
+    },
+    {
+      "claim_id": "68bd68fe-d400-4423-9076-aa37c724dc04",
+      "result_id": "4ed512ec-69be-428b-8e4b-2352a2c94394"
+    },
+    {
+      "claim_id": "24ae8731-634f-417e-bb48-1a034793a477",
+      "result_id": "4ed512ec-69be-428b-8e4b-2352a2c94394"
+    },
+    {
+      "claim_id": "c051f2fd-c2eb-45cb-b436-15b2693a2025",
+      "result_id": "4ed512ec-69be-428b-8e4b-2352a2c94394"
+    },
+    {
+      "claim_id": "96c56827-e809-467a-a666-64b7ffd52830",
+      "result_id": "9482a94b-ab1b-4c7b-a33f-4f0c4cc22f5f"
+    },
+    {
+      "claim_id": "0be3947f-224e-4c53-8f35-662758052883",
+      "result_id": "f6e90f35-a310-4f19-bcfe-3ef975295b41"
+    },
+    {
+      "claim_id": "a9e0ae22-ebfd-4a91-b4f9-790991ca0316",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "a5301f1b-fd13-4e8e-ac68-6777315ca5de",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "e41b84f3-7517-40e5-9b55-599213322ed4",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "08349b0f-15b7-41a6-b5eb-53ad41147aad",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "df5d20ac-26cf-4bed-a8bf-8cb905343245",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "7a5bc1f5-a43f-438a-802f-5296054cd6c2",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "ad3c89a1-0ce1-466d-bf88-93c062808575",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "6158eea8-6c4d-43ad-9856-e37a09f25d01",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "13a1967e-8ef3-48d0-8554-3c01df7048a7",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "cb446921-6ac3-4a83-bd43-6e31200213d2",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "92e235c3-e593-46e4-a60b-1f453db7a0df",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "ec21a473-7130-4d6e-944f-694d9defae79",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "4a45fa63-9531-4fb6-a385-534ef06fc856",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "77216f34-71ea-4d30-b319-e275e19b2861",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "db66862f-f0f1-401d-9cb8-c0af6c7f646f",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "a9600ab3-1949-4844-972d-dd08364301cf",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "51b8baec-ae4e-4eab-a45e-ffcc01804a0c",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "44b53241-a58d-4c16-9b3f-dd5625627275",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "f895af01-4dee-452d-81e4-1d96501bc9d7",
+      "result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270"
+    },
+    {
+      "claim_id": "d084ddae-3616-400c-a45c-5ebfe373559d",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "1e807acb-7ea6-4ec0-83c6-68c581055c50",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "7c33455d-5feb-4064-a015-8043511102cf",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "4ba93733-04be-44ac-a280-88f86c009dca",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "9a63b887-b8f0-4221-acec-d089edae8e2b",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "1cd2a73c-0b27-4f20-8d10-874640348269",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "33eeda3e-6ce1-458e-a6e6-1886a0268404",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "7e9574c2-22b0-4fdd-a221-cb9ac61246f8",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "70c7c0d9-c4a4-42c9-8830-4cc5867c02ee",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "2bd3fdcc-bd81-44c0-8ff6-f3a73696f819",
+      "result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e"
+    },
+    {
+      "claim_id": "37994cb8-9e23-4afc-b8c2-540d3c3a4ffc",
+      "result_id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014"
+    },
+    {
+      "claim_id": "c3d09589-5a2f-4006-8398-76fbb88c1f32",
+      "result_id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014"
+    },
+    {
+      "claim_id": "b22517dc-1b8f-452a-9d03-7d4e66ea7024",
+      "result_id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014"
+    },
+    {
+      "claim_id": "c89dec0d-97d3-4577-a0cd-53bcc91f2c53",
+      "result_id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014"
+    },
+    {
+      "claim_id": "51bc39e0-a849-47b5-b31e-55b0fcca371b",
+      "result_id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014"
+    },
+    {
+      "claim_id": "cbb0f394-e381-4569-9fa1-b29471d7a138",
+      "result_id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014"
+    },
+    {
+      "claim_id": "e29ba971-923a-4d9e-aa70-2c0984ecadc4",
+      "result_id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014"
+    },
+    {
+      "claim_id": "a3fe2290-0d99-451a-81c6-fbdf87944dad",
+      "result_id": "0534e1aa-984c-4e57-9841-8507a195c123"
+    },
+    {
+      "claim_id": "2f7b0dd2-e17d-4b0c-9a69-0f38849293d6",
+      "result_id": "0534e1aa-984c-4e57-9841-8507a195c123"
+    },
+    {
+      "claim_id": "327e02b7-9a75-4754-8119-f9f57ea8c0f3",
+      "result_id": "0534e1aa-984c-4e57-9841-8507a195c123"
+    },
+    {
+      "claim_id": "010839bf-bf1c-4fad-a7fd-ded6b4a98b95",
+      "result_id": "0534e1aa-984c-4e57-9841-8507a195c123"
+    },
+    {
+      "claim_id": "d9effd7e-44e3-434f-a90a-31265a25b6db",
+      "result_id": "0534e1aa-984c-4e57-9841-8507a195c123"
+    },
+    {
+      "claim_id": "649a65d3-178b-4e42-b800-215eb5dd57e1",
+      "result_id": "0534e1aa-984c-4e57-9841-8507a195c123"
+    },
+    {
+      "claim_id": "83c17bcf-d644-421a-9379-6400187d2e41",
+      "result_id": "0534e1aa-984c-4e57-9841-8507a195c123"
+    },
+    {
+      "claim_id": "b4d2eb73-73e4-4003-bcaa-22c806b424ba",
+      "result_id": "7671cc52-64cf-409e-9887-cf4347e029d4"
+    },
+    {
+      "claim_id": "de83ba30-c0f0-4e13-9104-a7d5e9626f30",
+      "result_id": "7671cc52-64cf-409e-9887-cf4347e029d4"
+    },
+    {
+      "claim_id": "fbe3af8e-951b-4391-b5b4-b563a5644083",
+      "result_id": "7671cc52-64cf-409e-9887-cf4347e029d4"
+    },
+    {
+      "claim_id": "d294e8e8-b2cb-4974-884b-fb97b95d6387",
+      "result_id": "7671cc52-64cf-409e-9887-cf4347e029d4"
+    },
+    {
+      "claim_id": "48dc08d1-29c4-4d14-b26f-d9c1bb8576c0",
+      "result_id": "7671cc52-64cf-409e-9887-cf4347e029d4"
+    },
+    {
+      "claim_id": "8653c7c7-17c6-484d-8ea4-7d9dd80c03f5",
+      "result_id": "7671cc52-64cf-409e-9887-cf4347e029d4"
+    },
+    {
+      "claim_id": "96c56827-e809-467a-a666-64b7ffd52830",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "b596d5ac-b877-4283-ac61-4a1121d07c61",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "d285e6fa-26fd-47e4-b0cf-9214bb068fe5",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "5f49f402-4178-4d6a-b2bd-ded5b2482b38",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "ecdcc0a6-d3ef-4818-8c91-736966350c74",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "5dd15e17-1eef-4bec-a004-d3407cc427f3",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "d6c138bb-557f-45d7-8dba-53da7d1b5b71",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "09f50940-eee7-48d8-abda-06b64d1a69b7",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "04d68896-d0d1-415e-a8dc-d530cee394ef",
+      "result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080"
+    },
+    {
+      "claim_id": "be9a3365-e968-483b-9c26-39a893cc1fd6",
+      "result_id": "91b783ac-dcbf-4bdf-874a-7d11f45e51fa"
+    },
+    {
+      "claim_id": "bd4c3dc1-f568-42a8-87a6-b7bf8015d253",
+      "result_id": "91b783ac-dcbf-4bdf-874a-7d11f45e51fa"
+    },
+    {
+      "claim_id": "c543f0c3-e54b-45f8-8d59-15d70c22b816",
+      "result_id": "91b783ac-dcbf-4bdf-874a-7d11f45e51fa"
+    },
+    {
+      "claim_id": "38b29346-90d7-4492-8bcc-45761166121f",
+      "result_id": "91b783ac-dcbf-4bdf-874a-7d11f45e51fa"
+    },
+    {
+      "claim_id": "8a2341c8-aea4-4d5d-bd23-eb678f18de99",
+      "result_id": "91b783ac-dcbf-4bdf-874a-7d11f45e51fa"
+    },
+    {
+      "claim_id": "c4da6bcd-36ee-4327-828e-4a439c8146a0",
+      "result_id": "91b783ac-dcbf-4bdf-874a-7d11f45e51fa"
+    },
+    {
+      "claim_id": "8c9503eb-1592-49ef-9bf9-d36eed5d3fb9",
+      "result_id": "3ac1cc9a-dc1e-419a-a9f8-3ef157005b20"
+    },
+    {
+      "claim_id": "68bd68fe-d400-4423-9076-aa37c724dc04",
+      "result_id": "3ac1cc9a-dc1e-419a-a9f8-3ef157005b20"
+    },
+    {
+      "claim_id": "24ae8731-634f-417e-bb48-1a034793a477",
+      "result_id": "3ac1cc9a-dc1e-419a-a9f8-3ef157005b20"
+    },
+    {
+      "claim_id": "c051f2fd-c2eb-45cb-b436-15b2693a2025",
+      "result_id": "3ac1cc9a-dc1e-419a-a9f8-3ef157005b20"
+    },
+    {
+      "claim_id": "5fdc2da0-b1e2-45dc-a964-d3bb18377f6e",
+      "result_id": "11ec7b1c-aad7-4a32-8f49-1de4baa2dfc2"
+    },
+    {
+      "claim_id": "44b53241-a58d-4c16-9b3f-dd5625627275",
+      "result_id": "11ec7b1c-aad7-4a32-8f49-1de4baa2dfc2"
+    },
+    {
+      "claim_id": "0be3947f-224e-4c53-8f35-662758052883",
+      "result_id": "570efaed-25a6-4dc7-9ea9-3641086a7350"
+    },
+    {
+      "claim_id": "a9e0ae22-ebfd-4a91-b4f9-790991ca0316",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "a5301f1b-fd13-4e8e-ac68-6777315ca5de",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "e41b84f3-7517-40e5-9b55-599213322ed4",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "08349b0f-15b7-41a6-b5eb-53ad41147aad",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "df5d20ac-26cf-4bed-a8bf-8cb905343245",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "7a5bc1f5-a43f-438a-802f-5296054cd6c2",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "ad3c89a1-0ce1-466d-bf88-93c062808575",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "6158eea8-6c4d-43ad-9856-e37a09f25d01",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "13a1967e-8ef3-48d0-8554-3c01df7048a7",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "cb446921-6ac3-4a83-bd43-6e31200213d2",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "92e235c3-e593-46e4-a60b-1f453db7a0df",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "ec21a473-7130-4d6e-944f-694d9defae79",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "4a45fa63-9531-4fb6-a385-534ef06fc856",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "77216f34-71ea-4d30-b319-e275e19b2861",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "db66862f-f0f1-401d-9cb8-c0af6c7f646f",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "a9600ab3-1949-4844-972d-dd08364301cf",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "51b8baec-ae4e-4eab-a45e-ffcc01804a0c",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    },
+    {
+      "claim_id": "f895af01-4dee-452d-81e4-1d96501bc9d7",
+      "result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "7d4d9bca-ded8-4321-ab0f-9e6e613c338c",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "0dfcb22e-489f-4782-90b6-23e02398036b",
+      "peer_result_id": "87f4b470-29a7-4995-81a1-9da3c93e409e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C2, C17, C18, C64-C70 regarding experimental design, sample collection, and QC procedures. Both evaluations rate the dataset and methods as SUPPORTED with solid evidence. OpenEval provides more technical detail on QC thresholds while peer reviewers emphasize the resource value.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "76c0d691-dca0-4742-a718-03a4cb0a6d55",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "2d5d8eea-d55a-4413-95f4-70ae7728563e",
+      "peer_result_id": "7671cc52-64cf-409e-9887-cf4347e029d4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C19-C24 regarding cell type identification using marker genes. Both evaluations are SUPPORTED. OpenEval focuses on the appropriateness of marker-based annotation, while peer reviewers note that initial concerns about cell classification were resolved during revision.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "4d6f896d-e81b-4cfc-a089-4331aed6ae9a",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "4af211d6-12c2-4a2a-b30b-ccc49bdddb37",
+      "peer_result_id": "1a8eab34-1ef4-46b3-a427-23dfe5dd3014",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C3, C25-C30 regarding temporal emergence of neuronal subtypes. Both evaluations are SUPPORTED and acknowledge this corroborates established knowledge about deep-layer neurons preceding upper-layer neurons in primate neurogenesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "185a7205-c87d-4361-a603-a41226f77a15",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0ad097e0-503c-46e0-818e-1e9f2ce3d36b",
+      "peer_result_id": "91b783ac-dcbf-4bdf-874a-7d11f45e51fa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C46-C51 regarding cross-species comparative analysis. Both evaluations are SUPPORTED and affirm findings of conserved neurogenic processes with primate-specific oRG expansion. Both note the value for future comparative studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "ffd9f225-99dd-4b0f-a154-79b6635b1d97",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4ed512ec-69be-428b-8e4b-2352a2c94394",
+      "peer_result_id": "3ac1cc9a-dc1e-419a-a9f8-3ef157005b20",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C52-C55 regarding transcription factor analysis using SCENIC. Both evaluations are SUPPORTED and acknowledge both conserved TF expression and divergent regulatory networks between macaque and mouse as intriguing findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "bac20e30-75ac-4810-bc5f-67f59975fb34",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "f6e90f35-a310-4f19-bcfe-3ef975295b41",
+      "peer_result_id": "570efaed-25a6-4dc7-9ea9-3641086a7350",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claim C63 regarding technical limitations of cell capture efficiency. Both evaluations are UNCERTAIN, noting this is acknowledged as a limitation but lacks quantitative validation. Peer reviewers note methodological concerns were partially addressed in revision.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "4fe08721-f683-4f74-93ad-2ca5b958d7c6",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270",
+      "peer_result_id": "c8a496d5-ed5a-434e-aaf9-7dc0c3ea46a4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C1, C6-C16, C56-C60, C62 regarding background context and established knowledge. Both evaluations are SUPPORTED. OpenEval includes C61 (novel candidates) while peer review excludes it, but both treat background claims as appropriately cited foundational context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "ba4ae60d-e4de-4f63-af9d-c1f8a06bba68",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "e88dc82d-dc08-4ea4-b7ee-84984589a307",
+      "peer_result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C31-C38 regarding pseudotime analysis and novel gene identification. Both evaluations are SUPPORTED. OpenEval emphasizes validation through known markers, while peer reviewers highlight the identification of novel receptors on oRG cells as a key strength. Peer review also includes C5 in this result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "fd024be7-e61f-48d1-8d5c-0dd6ec5fa190",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e",
+      "peer_result_id": "0534e1aa-984c-4e57-9841-8507a195c123",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C4, C40-C45 regarding trajectory analysis and fate determination. Both evaluations are SUPPORTED. OpenEval notes C39 as appropriately cautious hypothesis, while peer reviewers affirm the findings corroborate early progenitor specification. Both acknowledge the evidence for shared molecular temporal identities.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "b7f44ca5-7de6-496e-bb54-c78a1791e074",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "9482a94b-ab1b-4c7b-a33f-4f0c4cc22f5f",
+      "peer_result_id": "4a6eaf60-00ad-46dc-a8a9-efb2afbe6080",
+      "openeval_evaluation_type": "UNSUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Disagreement on claim C5 regarding BMP, FGF, and WNT pathway differences. OpenEval rates this UNSUPPORTED, stating the finding is not substantiated in results/figures and appears to be an overclaim. Peer reviewers include C5 with other novel findings (C31-C38) and rate as SUPPORTED, though they focus more on novel receptors than specific pathway analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "5bd4b6f8-5ab2-4dad-801f-d3130542da59",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "caeef09f-6ccb-4260-a303-f9ce4fbc314e",
+      "peer_result_id": "11ec7b1c-aad7-4a32-8f49-1de4baa2dfc2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claim C39 (hypothesis about progenitor specification). OpenEval includes C39 with trajectory analysis (C4, C40-C45) and rates SUPPORTED while noting C39 is explicitly hypothetical. Peer reviewers separate C39 with C61 as UNCERTAIN speculative claims requiring future research.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    },
+    {
+      "id": "e583c9a1-641a-47a4-a914-a7ca7f7a3f64",
+      "submission_id": "9a94e26b-cb21-467c-bff8-c5c1159b8d3c",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ad9bfa79-18f8-4a35-bdb2-0fdff61fa270",
+      "peer_result_id": "11ec7b1c-aad7-4a32-8f49-1de4baa2dfc2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap on claim C61 (novel candidates TMOD1, PID1, LINGO1). OpenEval includes C61 with background context and rates SUPPORTED as appropriately identified novel candidates. Peer reviewers group C61 with C39 as UNCERTAIN speculative claims presented as hypotheses for future exploration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:50:03.387515Z"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Using WGCNA, the authors identified co-expressed gene modules in flight and cardiac muscles associated with three colonization stages (ancestral, plastic, colonized). Analysis of hub genes revealed that significantly more genes exhibit reversion plasticity (209 flight, 60 cardiac) than reinforcement plasticity (36 flight, 15 cardiac) at the >50% threshold, confirmed by parametric bootstrap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The WGCNA methodology is appropriate for identifying co-expressed genes (C19-C22), and the classification into reinforcement/reversion groups is clearly defined (C23-C26). The finding of excess reversion plasticity (C27) is statistically validated with bootstrap analysis (C28), providing robust support for this major result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Genes with high levels (>200%) of reinforcement or reversion plasticity show significantly elevated FST values in 2kb upstream/downstream regions but not in genic regions, suggesting selection-driven genetic changes target regulatory non-coding regions and depend on plasticity magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FST analysis uses appropriate permutation testing (C29) and identifies a clear pattern of elevated divergence in regulatory regions (C30). The inference about selection targeting non-coding regions (C31) is well-supported by the data, though the mechanism remains correlative rather than causative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Correlation analysis between gene expression and muscle phenotypes identified 2037 flight and 1866 cardiac muscle-associated genes. Tree sparrows displayed significantly more genes with maladaptive plasticity than adaptive plasticity (flight: 198 vs 48, p<2.2e-16; cardiac: 186 vs 166, p<0.05), confirmed by bootstrap analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation approach is methodologically sound (C32-C37), and the classification of adaptive/maladaptive plasticity is based on established physiological principles (C38). Statistical testing with bootstrap validation (C39-C42) provides strong support, though the cardiac muscle result is less robust (smaller effect size, p<0.05 vs p<2.2e-16 for flight).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Genetic divergence (FST) between ancestral and colonized populations is significantly elevated in genes with high magnitude adaptive/maladaptive plasticity (>200% or 150-200% for cardiac), particularly in 2kb upstream/downstream regions, suggesting selection acts primarily when plasticity magnitude is large.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FST analysis for phenotype-associated genes (C43-C45) parallels the co-expression analysis and shows consistent patterns. The inference about selection strength depending on plasticity magnitude (C46) is well-supported, though the threshold-dependent significance suggests some sensitivity to analytical choices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study demonstrates that gene expression plasticity facilitates initial colonization, with maladaptive plasticity being reversed and adaptive plasticity being reinforced at the colonized stage. Natural selection drives genetic divergence when plasticity magnitude is intense, supporting the 'plasticity first' hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the primary conclusions (C4-C7, C47-C53) synthesizing the empirical findings. The conclusions are well-supported by the convergent evidence from multiple independent analyses (co-expression and phenotype-associated genes in two tissue types). The 'plasticity first' interpretation is consistent with the data, though alternative explanations are not extensively explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The experimental design included three groups: ancestral lowland (n=4 flight, n=3 cardiac), hypoxia-acclimated lowland (30 days at 14% O2, simulating 3200m; n=4 flight, n=3 cardiac), and colonized highland birds from Qinghai Lake (3200m; n=4 flight, n=3 cardiac), with controls for locality, season, and body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The experimental design is clearly described (C18, C63-C71) with appropriate controls for confounding variables. However, the sample sizes are very small (n=3-4 per group), which the authors acknowledge. While they compensate with multiple independent datasets, the limited replication raises concerns about statistical power and generalizability. The 30-day acclimation period may not capture all plastic responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "RNA-seq generated 120-134 million reads per group with no significant batch effects detected. WGCNA used soft thresholds of 23 (flight) and 4 (cardiac). Muscle phenotypes included 3 flight muscle traits (capillary per fiber, fiber area, perimeter) and 2 cardiac traits (capillary density, fiber diameter), with p<0.05 threshold for associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequencing depth is adequate (C72), and batch effect assessment is appropriate (C73). WGCNA parameters are reported (C74), and phenotypic measurements are clearly defined (C75-C77). These methodological details support reproducibility, though the very different soft thresholds (23 vs 4) for the two tissues are not explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Genetic divergence analysis used resequencing data from 12 lowland and 11 highland individuals with mean 17x coverage. FST significance was determined by permutation testing (100 samplings) with p<0.05 threshold (empirical FST >95th percentile).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genomic data and analysis approach are clearly described (C78-C80). The 17x coverage is adequate for FST estimation, and the permutation approach is appropriate for controlling for background genetic variation. Sample sizes (n=12 and n=11) are reasonable for population-level FST analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors propose that initial plastic changes allow survival but reduce fitness compared to long-term colonization, requiring genetic changes to optimize phenotypes. They assume hypoxia is the dominant selective force, acknowledging that using only hypoxia in experiments makes conclusions conservative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative explanations (C54-C57) supported by citations but not directly tested in this study. The assumption about hypoxia dominance (C58) is reasonable given prior work but represents a limitation, as the authors acknowledge. The proposed mechanism for why reversion occurs is plausible but remains hypothetical without fitness measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors compare their findings to human high-altitude adaptation, where initial plastic increases in red blood cells (mediated by HIF/EPO) are reduced in native highland populations, exemplifying reversion plasticity. They conclude that short-term acclimation and long-term adaptation may affect different evolutionary pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to human altitude adaptation (C59-C61) is well-supported by citations and provides useful context. The conclusion about different pathways (C62) is a reasonable inference from comparing their results with prior literature, though it remains somewhat speculative without direct mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C81"
+    ],
+    "result": "Background context: Tree sparrows colonized the Qinghai-Tibet plateau (~4500m elevation) approximately 2600 years ago and have evolved physiological and gene expression changes for hypoxia tolerance. Flight and cardiac muscles are critical for highland adaptation as they affect thermogenic capacity and oxygen transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C3, C15-C17, C81) are well-supported by appropriate citations to prior work. They establish the study system and rationale effectively. The elevation and colonization timing are specific factual claims supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C82",
+      "C83"
+    ],
+    "result": "Theoretical framework: The 'plasticity first' hypothesis proposes that phenotypic plasticity facilitates colonization and serves as a stepping stone for genetic evolution. Plasticity can be reinforced (same direction as evolution) or reversed (opposite direction). Gene expression can bridge genotype to phenotype and evolves in a stabilizing manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These theoretical and methodological foundations (C8-C14, C82-C83) are well-established concepts supported by appropriate citations. They provide the conceptual framework for the study. The definitions of reinforcement and reversion plasticity are clear and consistent with prior literature.",
+    "result_type": "MINOR"
+  }
+]

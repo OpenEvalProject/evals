@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C70",
+      "C71"
+    ],
+    "result": "Neuronal depolarization induces temporally distinct gene expression programs: an immediate early gene (IEG) program at 1 hr (207 DEGs, ~75% upregulated, enriched for transcription factors) and a late response gene (LRG) program at 4 hr (1680 DEGs, enriched for synaptic proteins and neuropeptides). Pdyn mRNA levels correlate with Fos mRNA levels and are equally elevated after 1 hr KCl followed by 3 hr washoff or 4 hr continuous KCl treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C70-C71 are well-supported by RNA-seq data from cultured rat striatal neurons showing distinct temporal patterns of gene expression. The functional enrichment analyses (GO terms) and RT-qPCR validation provide converging evidence for temporally and functionally distinct transcriptional programs. The correlation between Fos and Pdyn expression (C71) supports a mechanistic link between IEGs and LRGs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C64",
+      "C75",
+      "C78",
+      "C107"
+    ],
+    "result": "Activity-dependent chromatin remodeling occurs only after 4 hr of depolarization (5312 DARs, all becoming more open), not at 1 hr. DARs are enriched in intergenic and intronic regions and depleted in coding regions and promoters, with histone modification patterns (higher H3K4me1:H3K4me3 ratio) consistent with enhancer function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C64, C75, C78, C107 are strongly supported by ATAC-seq data showing temporal decoupling between IEG expression (1 hr) and chromatin remodeling (4 hr). The genomic distribution analysis and histone modification enrichment data from published mouse striatum data provide converging evidence that DARs represent enhancer elements. The use of published histone modification data from mouse (C10) to interpret rat ATAC-seq data is reasonable given conservation, though cross-species extrapolation introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C66",
+      "C85",
+      "C117"
+    ],
+    "result": "Activity-dependent DARs are highly enriched for AP-1 family transcription factor motifs (93% contain AP-1 motif) and ISL1 motifs (95% contain ISL1 motif). AP-1, FOS, FOSL2, and JUNB motifs are significantly enriched at DAR centers. \u0394FosB binding sites are enriched in DARs. The co-enrichment of activity-dependent (AP-1) and cell type-specific (ISL1) transcription factor motifs suggests these factors work together to induce chromatin remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14, C66, C85, C117 are well-supported by comprehensive motif enrichment analysis using HOMER and validation with published \u0394FosB CUT&RUN data. The high percentage of DARs containing AP-1 (93%) and ISL1 (95%) motifs is striking and statistically robust. The inference that these factors work together (C117) is reasonable given the co-enrichment pattern, though direct mechanistic evidence is not provided in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C44",
+      "C65",
+      "C86",
+      "C87",
+      "C129"
+    ],
+    "result": "De novo protein translation is required for activity-dependent chromatin remodeling. Anisomycin (40 \u03bcM) blocks FOS protein translation and completely prevents activity-dependent chromatin remodeling across the genome, suggesting that IEG proteins (particularly transcription factors) must be translated before inducing chromatin accessibility changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C44, C65, C86-C87, C129 are strongly supported by Western blot validation of FOS protein inhibition and ATAC-seq data showing complete blockade of chromatin remodeling with anisomycin pretreatment. The inference that IEG proteins are required (C44, C87) is well-justified given the temporal dynamics (IEG expression at 1 hr, chromatin remodeling at 4 hr) and the complete blockade by protein synthesis inhibition. However, the claim does not definitively prove that IEG proteins (as opposed to other translated proteins) are the critical mediators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C88",
+      "C89",
+      "C90",
+      "C95"
+    ],
+    "result": "A differentially accessible region ~45 kb upstream of the Pdyn TSS is inaccessible at baseline, becomes accessible with depolarization, and remains inaccessible when depolarization is paired with anisomycin. This DAR acts as a stimulus-regulated enhancer for Pdyn. Anisomycin blocks activity-dependent Pdyn transcription and reduces baseline Pdyn expression, suggesting basal Pdyn expression includes both constitutive and activity-dependent components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C88-C90, C95 are well-supported by ATAC-seq tracks and RT-qPCR data showing parallel dependencies of DAR accessibility and Pdyn mRNA on neuronal activity and protein synthesis. The prediction criteria for LRG enhancers (C88) are logical and the Pdyn DAR meets all criteria. The inference that basal expression includes activity-dependent components (C90) is reasonable given the anisomycin effect on baseline expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C91",
+      "C94"
+    ],
+    "result": "IEG activation is sufficient to upregulate Pdyn expression. CRISPR-based activation of 16 IEGs (including Fos, Fosb, Junb) significantly upregulates Pdyn mRNA. Gene regulatory network analysis predicts that IEG transcription factors (Fos, Fosb, Fosl2, Nr4a1, Nr4a2) regulate Pdyn. The computational approach is validated by correctly predicting Fos regulation of Scg2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C91, C94 are supported by CRISPRa experiments from published data and computational gene regulatory network reconstruction. The validation with Scg2 (C94) strengthens confidence in the computational predictions. However, the CRISPRa experiment activates 16 IEGs simultaneously, so it does not establish which specific IEGs are necessary or sufficient individually. The gene regulatory network predictions (C21) are computational inferences that would benefit from experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C45",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The Pdyn DAR is necessary, sufficient, and specific for Pdyn transcription. CRISPRi targeting the DAR blocks activity-dependent Pdyn upregulation and reduces baseline Pdyn expression. CRISPRa targeting the DAR increases Pdyn mRNA without affecting neighboring genes (Sirpa, Stk35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25, C45, C96-C98 are strongly supported by complementary CRISPRi and CRISPRa experiments demonstrating necessity and sufficiency. The specificity control (C25) showing no effect on neighboring genes is important for establishing that the DAR specifically regulates Pdyn. The combined evidence from multiple experimental approaches provides robust support for the enhancer function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C46",
+      "C47",
+      "C67",
+      "C68",
+      "C101",
+      "C102"
+    ],
+    "result": "PDYN is a cell type-specific LRG in human GABAergic neurons (upregulated only at 4 hr, not in glutamatergic neurons). The rat Pdyn enhancer is conserved upstream of the human PDYN TSS and undergoes activity-dependent chromatin remodeling only in human GABAergic neurons. CRISPRa of the conserved human enhancer is sufficient to upregulate PDYN transcription in HEK-293T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30, C46-C47, C67-C68, C101-C102 are well-supported by analysis of published human neuron RNA-seq and ATAC-seq data, synteny analysis, and functional validation in human cells. The cell type-specificity in human neurons (C27, C29) parallels findings in rat neurons. The functional validation in HEK-293T cells (C30) demonstrates sufficiency of the enhancer in human cells, though non-neuronal cells may not fully recapitulate neuronal regulatory contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C103",
+      "C104"
+    ],
+    "result": "The validated Pdyn enhancer is accessible in Drd1- and Grm8-MSNs in adult rat nucleus accumbens in vivo. Co-accessibility analysis shows correlation between enhancer and promoter accessibility across individual cells, suggesting the enhancer is functional in adult brain in cell populations that express Pdyn mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C103-C104 are supported by snATAC-seq data from adult rat nucleus accumbens showing cell type-specific accessibility and co-accessibility with the Pdyn promoter. The co-accessibility analysis (C32) provides strong evidence for functional enhancer-promoter interactions in vivo. The inference that the enhancer is functional in vivo (C104) is reasonable but would be strengthened by perturbation experiments in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C93",
+      "C99",
+      "C100",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C122",
+      "C126"
+    ],
+    "result": "The manuscript contextualizes findings within established knowledge about activity-dependent gene expression, IEG/LRG programs, chromatin remodeling mechanisms, and the biological significance of Pdyn/PDYN in reward circuits and addiction. Multiple citations support claims about IEG function, AP-1 mechanisms, cell type-specific responses, and clinical relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42, C43, C50-C63, C73-C74, C76-C77, C79-C80, C82-C84, C93, C99-C100, C105-C106, C108-C112, C122, C126 are appropriately supported by citations to published literature. These claims establish the scientific context and rationale for the study. The citations appear appropriate and relevant, though detailed verification of each cited claim is beyond the scope of this evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C69",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C127",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that IEGs participate in chromatin remodeling at enhancers through a mechanism where AP-1 family members interact with SWI/SNF complexes, potentially in conjunction with cell type-specific transcription factors like ISL1. The conserved Pdyn/PDYN enhancer may serve as a therapeutic target for disorders involving Pdyn dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49, C69, C113-C121, C127, C130-C131 are explicitly speculative or represent proposed models and future directions. While the speculation is reasonable and grounded in the data (e.g., AP-1 and ISL1 co-enrichment), these claims lack direct experimental validation. The therapeutic potential (C49, C130) is particularly speculative and would require extensive additional work including in vivo functional studies and disease model validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "There is a direct link between IEGs and LRGs. IEG enhancers are 'poised' at baseline while LRG enhancers are inaccessible without stimulation. LRG enhancers contain motifs for activity-dependent transcription factors and are dependent on de novo protein translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C125 are supported by the combined RNA-seq, ATAC-seq, and anisomycin experiments. The 'direct link' claim (C72) is inferred from correlation data and is somewhat overstated\u2014the evidence supports a regulatory relationship but does not definitively prove direct binding or interaction. The distinction between IEG and LRG enhancer chromatin states (C123) is well-supported by comparing accessibility at Fos vs Pdyn loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "The study identifies and characterizes temporally distinct waves of transcription and chromatin remodeling in striatal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is a summary statement well-supported by the comprehensive RNA-seq and ATAC-seq data presented throughout the manuscript. This represents the core finding of the study.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors solved the crystal structures of Avr1 and Avr3 using bromide-ion-based SAD, refined to 1.65 \u00c5 and 1.68 \u00c5 respectively. Despite sharing only 19.5% sequence identity, both proteins adopt a structurally similar dual-domain fold with N-domains (\u03b1-helix + 5 \u03b2-strands, RMSD 2.1 \u00c5) and C-domains (\u03b2-sandwich with 7-8 \u03b2-strands, RMSD 2.8 \u00c5). The full structures superimpose with RMSD ~3.4 \u00c5 due to domain rotation, representing a new structural class designated FOLD effectors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple reviewers explicitly affirm these findings. Reviewer 2 states 'X-ray crystallography was used to show that two avirulence effectors of Fol, Avr1 (SIX4) and Avr3 (SIX1)...form part of a new structural family, the Fol dual-domain (FOLD) family.' Reviewer 3 notes 'A major strength of this work is a portfolio of several (Avr1, Avr3, SIX6, SIX8) new structurally resolved proteins which led to the discovery that several of them fall into the same structural class. These findings are supported by strong results.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Based on cysteine spacing analysis, SIX6 and SIX13 were predicted to be FOLD effectors. SIX6 crystals diffracted to ~1.9 \u00c5 and the structure was solved using AlphaFold2 models for molecular replacement, confirming FOLD family membership. The SIX6 N-domain contains 5 \u03b2-strands with three disulfide bonds (identical arrangement to Avr1/Avr3), while the C-domain is an 8-stranded \u03b2-sandwich with a unique disulfide bond. Pro-domain regions were observed in the structure despite cleavage.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support these structural findings. Reviewer 2 states the authors 'provided evidence that two other effectors, SIX6 and SIX13, also belong to this family' and notes 'the validation (benchmarking) of protein structures predicted using AlphaFold2, which is a first for large-scale effector structure prediction papers.' Reviewer 3 confirms 'A major strength of this work is a portfolio of several (Avr1, Avr3, SIX6, SIX8) new structurally resolved proteins.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C118"
+    ],
+    "result": "AlphaFold2 predictions were benchmarked against experimental structures. Avr1 returned low confidence (pLDDT 55%) with RMSD 6.9 \u00c5, but correctly predicted the dual-domain architecture (Z-score 11.3). Avr3 showed high confidence (pLDDT 92%) and superimposed well (overall RMSD 3.6 \u00c5; N-domain 1.1 \u00c5; C-domain 0.8 \u00c5). The models were critical for solving SIX6 and SIX8 structures via molecular replacement, demonstrating accurate FOLD effector prediction is possible with AlphaFold2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly praises this as 'a pioneer study analyzing the correspondence between AlphaFold predictions and experimentally derived structures, highlighting that models can answer the scientific questions in some cases but could not be enough in others.' Reviewer 2 emphasizes 'A key strength of the manuscript is the validation (benchmarking) of protein structures predicted using AlphaFold2, which is a first for large-scale effector structure prediction papers published to date.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Using Foldseek webserver searches with FOLD structures as queries, 124 putative FOLD family members were identified across three fungal divisions (Ascomycota, Basidiomycota, Glomeromycota). Over half (73) were in Ascomycota with expanded families in Fusarium and Colletotrichum. Expanded families were also found in Glomeromycota (arbuscular mycorrhizal fungi) and two in Piloderma olivaceum (Basidiomycota ectomycorrhizal fungus). The major structural differences between divisions are domain orientations relative to each other.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 highlights this as 'A very interesting and novel finding is the presence of FOLD putative effectors in other Ascomycetes secretome, sharing structural similarities with SIX effectors Avr1, Avr3 and SIX6.' Reviewer 3 states 'This work uncovered a new structural class of proteins with critical roles in plant-pathogen interactions' and notes the work 'adds to a growing body of work in plant-microbe research, predominantly from pathogenic organisms, and more recently in symbiotic fungi.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "AlphaFold2 structural predictions revealed that 11 of 14 SIX effectors group into four structural families: FOLD (Avr1, Avr3, SIX6, SIX13), ToxA-like (Avr2, SIX7, SIX8, FOXGR_015533), Family 3 (SIX9, SIX11 with RNA-binding protein similarity), and Family 4/KP6-like (SIX5, SIX14, PSL1, PSL2). Novel effector candidates were also classified, demonstrating Fol utilizes multiple structurally related, sequence-diverse effectors during tomato infection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'structural prediction revealed that proteins of the Fol effector repertoire can largely be classified into a reduced set of structural families' and notes this work 'goes above and beyond the large-scale effector structure prediction papers published to date.' Reviewer 1 confirms the authors 'identified several SIX effectors as member of the FOLD family, and expanded the known diversity of the SIX effectors' through 'technically sound predictions and experimental confirmation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "SIX8 (ToxA-like) and PSL1 (Family 4) are divergently transcribed with shared promoters, similar to the Avr2/SIX5 pair. Size-exclusion chromatography showed PSL1 elutes as a dimer (~12.25 mL) and SIX8 as a monomer (~15 mL), but co-incubation shifts both to ~12.8 mL, consistent with heterodimer formation. AlphaFold2-Multimer predicted an intermolecular disulfide bond between PSL1 Cys37 and SIX8 Cys58. Mass spectrometry confirmed the heterodimer (20,777 Da) is mediated via disulfide bond, with specificity demonstrated by failure to form heterodimers with unrelated cysteine-containing proteins. The SIX8_C58S structure (1.28 \u00c5) confirms ToxA-like family membership.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the authors 'confirmed co-operative interactions between Fol effectors, something that was previously known for different pairs of proteins, expanding this observation for new SIX effectors.' Reviewer 2 emphasizes 'the use of large-scale effector structure predictions to make hypotheses about functional relationships or interactions that are then tested (i.e. the SIX8-PSL1 protein interaction)' as a key strength, noting 'This testing again goes above and beyond the large-scale effector structure prediction papers published to date.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "FonSIX4 (79% identity to Avr1, differing by 34 residues) is recognized by both IM82 and iMoneymaker receptors, unlike Avr1 which escapes iMoneymaker recognition. Chimeric protein and domain-separation experiments showed the C-domain is sufficient for I receptor recognition. Mutagenesis identified that Avr1EEEYGIN (mimicking FonSIX4 surface residues) gains iMoneymaker recognition, while reciprocal FonSIX4KEVYHID mutations reduce recognition. These data demonstrate the C-domain is recognized by IM82, and surface-exposed residues in the C-domain allow Avr1 to escape iMoneymaker recognition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states the authors 'determined through co-expression assays in Nicotiana benthamiana with the I immune receptor, as well as subsequent ion leakage assays, that the C-domain of Avr1 is recognized by the I immune receptor' and that 'surface-exposed residues in the C-domain enable Avr1 to evade recognition.' Reviewer 3 notes 'The experiments addressing the structure-function relationship of Avr1's avirulence activity are highly relevant to our understanding of disease resistance mechanisms against Fusarium' and confirms the authors 'define the C-terminal domain and specific amino acid residues that are essential to Avr1 detection by its cognate immune receptor.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26"
+    ],
+    "result": "In the Avr3 crystal structure, interpretable electron density was observed from residue 96, with some pro-domain regions visible (residues 26-49), indicating an association between Avr and pro-domain was maintained post-cleavage in vitro.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges these structural observations from electron density maps. The claims are presented as direct experimental observations from crystallography data and are accepted as part of the overall structural characterization that reviewers explicitly support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "FOLD effectors share 15.5-22.5% sequence identity despite structural similarities. Homologues are dispersed across multiple F. oxysporum formae speciales. Previous structural searches in Venturia inaequalis using Avr1/Avr3 as templates found three FOLD effector candidates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims support the broader finding of FOLD effector distribution that reviewers explicitly endorse. Reviewer 1 notes the discovery of 'FOLD putative effectors in other Ascomycetes secretome' and Reviewer 3 confirms the work shows FOLD proteins are 'widely distributed in fungal plant pathogens and plant symbiotic fungi.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Structural similarity between FOLD effectors was high, with Z-scores above 8 for all comparisons using DALI server.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This quantitative structural comparison supports the FOLD family definition that reviewers explicitly accept. No reviewer questions the structural similarity metrics or DALI analysis methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The Fol SIX effectors can be classified into a reduced set of structural families despite sequence diversity. Five fungal effector families have been defined based on structural homology: MAX, RALPH, ToxA-like, LARS, and FOLD (defined here). The exclusive presence of FOLD effectors in plant-colonizing fungi may suggest they facilitate plant colonization in pathogenic and symbiotic fungi.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states the work demonstrates 'proteins of the Fol effector repertoire can largely be classified into a reduced set of structural families' and emphasizes this showcases 'how experimental and computational experiments can be effectively combined to provide biologically relevant data.' The broader context of effector family classification is accepted without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "AlphaFold2 accuracy can decline with low homologue numbers (~30 MSA sequences), which may explain the low-confidence Avr1 prediction since it is only distributed in a few F. oxysporum formae speciales.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation of AlphaFold2 limitations is part of the broader benchmarking analysis that Reviewer 1 praises as 'pioneer' work and Reviewer 2 identifies as a 'key strength.' The explanation for Avr1's low confidence score is presented as inference from known AlphaFold2 behavior and is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "At the domain level, FOLD effector N-domains have structural similarities with cystatin cysteine protease inhibitors, while C-domains have structural similarities with tumor necrosis factors and carbohydrate-binding lectins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These structural comparisons to known protein families are presented with supporting PDB citations and are not questioned by reviewers. They provide functional context for the novel FOLD family within the broader structural characterization that reviewers accept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "SIX7 (ToxA-like) and SIX12 possess start codons 2319 bp apart and potentially share a common promoter. SIX12's cysteine spacing resembles Family 4 members, suggesting it may be a Family 4 member. The authors speculate SIX7 and SIX12 may function together like the Avr2/SIX5 and SIX8/PSL1 pairs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This speculation is based on the established pattern of ToxA-like/Family 4 effector pairs that reviewers explicitly support. While presented as speculation, it follows logically from the experimentally validated SIX8/PSL1 interaction and is not challenged by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "Different immunity receptor classes (I as LRR-RP and I-3 as SRLK) can recognize structural homologues (FOLD effectors Avr1 and Avr3).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes the authors 'contributed to the understanding of the interaction Fol effectors, specifically FOLD and LARS effectors, - I receptors to suppress immunity by structurally similar effectors.' This conclusion about receptor class diversity is accepted as part of the broader immune recognition findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Co-expression of IM82 with Avr1 in N. benthamiana leads to cell death (ETI proxy), while iMoneymaker co-expression does not lead to cell death as this receptor cannot recognize Avr1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 requests additional controls, stating 'An example is FonSIX4's cell death activity in N.benthamiana leaves and whether FonSIX4 cell death is indeed dependent on the tomato I receptor.' The reviewer also notes 'Complementary work in Fusarium mutants lacking Avr1 and expressing chimeric versions would document that the observations from transient expressions in Nicotiana benthamiana are relevant in the biological context of a Fusarium/tomato interaction.' While the N. benthamiana assay results are not directly challenged, the reviewer indicates uncertainty about their biological relevance without additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims about F. oxysporum importance, SIX effector characteristics, chromosomal location, horizontal transfer, virulence roles, effector pairs, immunity receptors, and prior structural knowledge (Avr2 structure, K2PP class membership).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background facts supported by multiple literature citations. No reviewer challenges any of these foundational claims, which provide context for the novel findings. They are accepted as accurate representations of prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "A total of 26 novel effector candidate genes were identified as consistently upregulated during Fol infection, with 14 encoding proteins with no recognized domains or motifs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by citation to Sun et al., 2022 and provides context for the structural prediction work on novel candidates. Reviewers do not challenge this background information, which is part of the broader effector repertoire analysis they explicitly support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C121",
+      "C127",
+      "C128"
+    ],
+    "result": "Background claims about known effector pair interactions (Avr2/SIX5, SIX8/PSE1 homologues) and suppression of immunity by structural homologues (AvrLm4-7 preventing recognition of AvrLm3/AvrLm9), demonstrating that members of at least two structural effector families can suppress immunity triggered by structurally homologous effectors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established findings from prior literature (Ma et al., 2015; Ayukawa et al., 2021; Plissonneau et al., 2016; Ghanbarnia et al., 2018) that provide context for the novel SIX8/PSL1 interaction. Reviewer 1 notes the authors 'expanded this observation for new SIX effectors,' implicitly accepting the prior work as established.",
+    "result_type": "MINOR"
+  }
+]

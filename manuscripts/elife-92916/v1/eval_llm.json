@@ -1,0 +1,416 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript describes the canonical eukaryotic translation initiation mechanism involving TC assembly, 43S PIC formation, mRNA attachment via eIF4F at the m7G cap, scanning for AUG start codons, and 80S complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10-C13 describe well-established mechanisms of translation initiation that are supported by extensive prior literature and cited reviews. These are foundational background claims providing context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The manuscript describes the Integrated Stress Response mechanism where eIF2\u03b1 phosphorylation reduces TC levels, leading to translational reprogramming including induction of GCN4 mRNA translation via uORF bypass in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 describe established mechanisms of the Integrated Stress Response and GCN4 translational control, supported by multiple citations to prior work. These provide essential background for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Polysome profiling shows that SM treatment reduces bulk translation initiation in WT cells, but eIF2A\u0394 mutation does not alter P/M ratios compared to WT in either untreated or SM-treated conditions, with highly reproducible ribosome profiling data (r\u22480.99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by polysome profiling data in Figure 1A and correlation analysis in Figure 1\u2014figure supplement 1, showing consistent results across biological replicates. The data demonstrate that eIF2A does not broadly compensate for reduced eIF2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "GCN4 mRNA translation is strongly induced (~40-fold) by SM treatment in both WT and eIF2A\u0394 cells, indicating comparable eIF2\u03b1 phosphorylation levels and arguing against eIF2A contributing to Met-tRNAi recruitment during GCN4 uORF scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by ribosome profiling data in Figure 1C showing similar GCN4 induction in WT and eIF2A\u0394. The logic is sound: if eIF2A aided Met-tRNAi recruitment during uORF scanning, the mutant would show enhanced GCN4 derepression, which was not observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "DESeq2 analysis revealed no mRNAs with significant TE reductions in eIF2A\u0394 versus WT in non-starved cells (FDR<0.25), suggesting few if any mRNAs depend on eIF2A for translation initiation when TC is abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by DESeq2 analysis shown in Figure 2A. The statistical approach is appropriate for highly correlated replicates (Lamarre et al., 2018), and the negative result is clearly demonstrated by the volcano plot.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SM treatment induces broad translational reprogramming in both WT and eIF2A\u0394 cells, with hundreds of mRNAs showing TE changes. The pattern is highly correlated (r=0.91) between strains, indicating eIF2A elimination does not substantially alter global translational reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are supported by DESeq2 analysis (Figure 2B-C) and correlation analysis. The strong positive correlation and hierarchical clustering demonstrate that the global response to eIF2\u03b1 phosphorylation is largely independent of eIF2A. Note that C63 is labeled as speculation but represents the authors' interpretation of prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Among 879 mRNAs showing TE reductions upon SM treatment of WT, most show smaller (not larger) TE decreases in SM-treated eIF2A\u0394 versus WT, and many show small TE increases in eIF2A\u0394+SM versus WT+SM, suggesting these mRNAs do not utilize eIF2A as a backup mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by box plot analysis in Figure 2D. The data clearly show that eliminating eIF2A does not exacerbate TE reductions for most mRNAs affected by SM. C71 is speculative interpretation but is appropriately qualified by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Only 32 mRNAs show significant TE reductions in SM-treated eIF2A\u0394 versus SM-treated WT (FDR<0.25), with patterns suggesting potential functional redundancy between eIF2 and eIF2A. However, only 17 of these display the full diagnostic pattern of conditional eIF2A dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by DESeq2 analysis (Figure 3A-C) and hierarchical clustering. The statistical analysis is appropriate, and the hierarchical clustering effectively identifies transcripts with the expected pattern. C76 includes speculation that is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Among 12 candidate mRNAs tested by luciferase reporter assays, only HKR1 showed significantly greater expression reduction in eIF2A\u0394 versus WT upon SM treatment. Polysome profiling confirmed conditional eIF2A dependence for HKR1, SAG1, and SVL3, with HKR1 being the only transcript validated by both methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by luciferase data (Figure 3D) and polysome profiling (Figure 3E). The orthogonal validation approaches strengthen the conclusions. The authors appropriately note that polysome profiling of native mRNAs should be given greater weight than reporter assays lacking native 3'UTRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Ribosome profiling revealed no significant changes in TE or ribosome occupancy for URE2, GIC1, and PAB1 mRNAs upon eIF2A deletion in either non-starved or SM-starved cells, failing to support a role for eIF2A in repressing IRES function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 are supported by ribosome profiling data (Figure 4A-C) showing no TE changes. However, the authors appropriately note that if IRESs contribute only minimally to overall translation, eliminating eIF2A might not produce detectable TE increases. This caveat limits the strength of the negative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "CPA1 and YAP2/CAD1 mRNAs containing inhibitory AUG-initiated uORFs show ~2-fold TE increases upon SM treatment, but these increases are not altered by eIF2A\u0394 deletion, indicating eIF2A has little role in recognizing these uORF AUG codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 are supported by ribosome profiling data (Figure 5A-B) and prior literature on these well-characterized uORF-containing mRNAs. The data clearly show that while eIF2\u03b1 phosphorylation affects these mRNAs, eIF2A does not contribute to this regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Analysis of large compilations of mRNAs containing translated AUG- or NCC-initiated uORFs (1306 and 791 mRNAs) and functionally validated uORFs (557 AUG-uORFs, 191 NCC-uORFs) revealed minimal effects of eIF2A\u0394 on CDS translation, with only very small TE reductions in non-starved cells and no consistent effects in SM-treated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104 are supported by comprehensive analysis of multiple uORF datasets (Figure 6A) from prior studies (Zhou et al., 2020; Spealman et al., 2018; May et al., 2023). The statistical analysis using Mann-Whitney U tests is appropriate, and the negative results are consistent across multiple independent uORF compilations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Subsets of uORF-containing mRNAs showing >1.41-fold TE increases upon SM treatment exhibit median ~2-fold increases in WT but slightly reduced TEs in eIF2A\u0394+SM versus eIF2A\u0394. The authors hypothesize these may contain positive-acting uORFs requiring eIF2A for translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 are supported by data in Figure 6B showing the described TE patterns. However, C108-C109 are explicitly speculative hypotheses about positive-acting uORFs. While the hypothesis is reasonable, the authors later acknowledge (C114) they could not find compelling evidence for this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Among mRNAs showing >1.41-fold TE reductions in SM-treated eIF2A\u0394 versus WT, only 3 of 17 highly significant candidates contain functional uORFs. The validated HKR1 transcript lacks any functional or conserved uORF, providing no compelling evidence that conditional eIF2A dependence is conferred by positive-acting regulatory uORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 are supported by analysis in Figure 6C-D and validation data from Figure 3. The statistical analysis (p=0.21 for uORF enrichment) and the finding that HKR1 lacks uORFs strongly argue against the uORF hypothesis. The conclusion is appropriately stated as negative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Analysis of relative ribosome occupancy (RRO) for uORFs versus CDSs revealed no significant changes in eIF2A\u0394 versus WT (FDR<0.5) and no differences in median RRO for groups of uORF-containing mRNAs, providing no evidence that eIF2A enhances initiation at negative-acting uORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 are supported by RRO analysis in Figure 6\u2014figure supplement 1. The orthogonal approach of examining uORF translation directly complements the CDS TE analysis. The negative results are consistent with the main findings and strengthen the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Pause score analysis revealed no significant increases for any tripeptide motif in eIF2A\u0394 versus WT, while SM treatment of WT showed marked increases for Val-containing motifs (positive control), indicating eIF2A plays no major role in translation elongation through particular codon combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by pause score analysis (Figure 7A-B) and prior literature on eIF5A. The positive control (Val codons with SM treatment) validates the analytical approach. The negative result for eIF2A\u0394 is clear and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Despite genetic interaction data suggesting eIF2A might function in purine biosynthesis, the fcy2\u0394 eIF2A\u0394 double mutant showed no growth defects with varying adenine concentrations, and ribosome profiling revealed no effects of eIF2A\u0394 on expression of 17 purine biosynthesis genes or IMD2/IMD3 reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C134 are supported by growth assays (Figure 6\u2014figure supplement 2A-B), ribosome profiling data, and reporter assays (Figure 6\u2014figure supplement 2C). The negative results contradict predictions from genetic interaction screens, but the direct experimental tests are convincing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "At SM concentrations sufficient to reduce bulk translation and strongly induce GCN4, eIF2A\u0394 had no detectable effect on these responses. Only 3 mRNAs showed altered TEs in eIF2A\u0394 versus WT without SM (all increased), leading to the conclusion that no mRNAs depend on eIF2A for efficient translation in non-stressed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 synthesize results from polysome profiling (Figure 1A), GCN4 analysis (Figure 1C), and genome-wide TE analysis (Figure 2A). The conclusion is strongly supported by the comprehensive negative results across 5340 translated mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Under SM treatment, 32 mRNAs showed reduced TEs in eIF2A\u0394 versus WT, but only 17 displayed the full pattern of conditional eIF2A dependence. Validation by reporter assays and polysome profiling confirmed conditional dependence for only HKR1 (both methods) or additionally SAG1 and SVL3 (polysome profiling only), indicating a very limited role for eIF2A as a backup to eIF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 synthesize the main findings from Figures 2-3. The multi-tiered validation approach (ribosome profiling \u2192 reporter assays \u2192 polysome profiling) is rigorous. The authors appropriately weight polysome profiling of native mRNAs more heavily than reporter assays. The conclusion of very limited eIF2A function is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Comprehensive analysis of uORF-containing mRNAs (multiple compilations), IRES-containing mRNAs (URE2, PAB1, GIC1), and translation elongation (pause scores) revealed little evidence for eIF2A function in these processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 summarize negative results from Figures 4-7. The breadth of analysis across different mechanisms and multiple datasets strengthens the overall conclusion. However, the IRES analysis (C145) has the caveat noted earlier about potentially small IRES contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The manuscript reviews extensive prior literature on mammalian and yeast eIF2A, including its proposed roles in stress-dependent translation, IRES-mediated initiation, non-AUG initiation, and physiological functions in mice, as well as conflicting findings and the evolutionary conservation between yeast and mammalian eIF2A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C46 are background claims supported by numerous citations to prior literature. These establish the context and motivation for the current study. The authors appropriately note conflicting findings (e.g., C31) and limitations of prior work (e.g., C39, C46).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The lack of evidence for eIF2A function in translation contrasts with genetic interactions between eIF2A\u0394 and mutations in eIF4E, eIF4A, and eIF5B. The authors propose two speculative explanations: functional redundancy with these factors rather than eIF2, or eIF2A affecting a different cellular process whose gene expression is diminished by these mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C148 accurately describe genetic interaction data from prior studies. However, C149-C150 are explicitly speculative interpretations without experimental support in this manuscript. These represent hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Recent work showed human eIF2A inhibits translation in RRL by sequestering 40S subunits. However, the finding that eIF2A\u0394 does not increase bulk translation in yeast or mammalian keratinocytes suggests eIF2A does not appreciably sequester ribosomes in vivo, possibly because it is not normally cytoplasmic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 accurately cite Grove et al., 2023. C153 is supported by the polysome profiling data (Figure 1A) and Zoll et al., 2002. C154 cites Sendoel et al., 2017 and Grove et al., 2023. The reconciliation of in vitro and in vivo findings is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors express surprise at finding so little evidence for eIF2A function in yeast translation and speculate it might function under different stress conditions, when other initiation factors are impaired, in a different cellular process, or that its function diverged during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C155 is a summary reflection on the findings. C156-C157 are explicitly speculative statements about possible alternative functions or evolutionary scenarios. These represent appropriate discussion of limitations and future directions but are not experimentally supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

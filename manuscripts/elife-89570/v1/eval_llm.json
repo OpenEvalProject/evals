@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Macaque monkeys demonstrate similarity masking effects comparable to humans, with detection sensitivity lowest when target and background orientations match (C6, C14). At higher contrasts, reaction times increase monotonically with task difficulty, but at lower contrasts, reaction times show a non-monotonic relationship with difficulty, being shortest when target-background orientations match despite this being the hardest condition (C15, C16, C17, C18). These results establish macaques as a valid model for studying human similarity masking (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral data in Figure 2 clearly demonstrates similarity masking effects in both monkeys across multiple contrast combinations (C6, C14). The reaction time data shows both monotonic and non-monotonic patterns depending on contrast levels (C15, C16), with the surprising decoupling between difficulty and reaction time at low contrasts present in both animals (C17, C18). The consistency with human psychophysical results supports the validity of the animal model (C7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C58"
+    ],
+    "result": "V1 population responses to target-background stimuli display biphasic dynamics with two distinct temporal phases (C2, C8). During the initial transient phase (~0-100ms), target-evoked responses are paradoxically enhanced when target and background have similar orientations, anti-correlating with behavior (C2, C9). In the second sustained phase, this reverses: target-evoked responses are suppressed by target-background similarity, correlating positively with behavioral masking (C3, C10, C11). These dynamics persist when analyzing only correct trials, suggesting they are not primarily driven by decision or attention signals (C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The VSDI data in Figures 4 and 5 clearly demonstrate biphasic response dynamics at both retinotopic and columnar scales (C8, C9, C10). The correlation analyses show significant anti-correlation in the early phase and positive correlation in the late phase between neural responses and behavior (C11). The persistence of these dynamics in correct-trial-only analyses (Figure 4\u2014figure supplement 2) strengthens the claim that these are not artifacts of decision-related signals (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Columnar-scale V1 signals show earlier and more robust correlation with behavioral masking effects compared to retinotopic-scale signals (C22). The temporally integrated columnar response positively correlates with behavior across all tested contrast combinations, while integrated retinotopic responses show weak or negative correlations (C23). This suggests behavioral performance is dominated by columnar-scale V1 signals in the second phase of the response (C24), representing the first demonstration of such decoupling between spatial scales in V1 (C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between Figures 4 and 5 clearly shows stronger and earlier behavioral correlations at the columnar scale (C22). The integrated response analyses across multiple contrast combinations (Figure 4\u2014figure supplement 1 and Figure 5\u2014figure supplement 1) consistently show positive correlations for columnar but not retinotopic responses (C23). The inference that columnar signals dominate behavioral performance is well-supported by these data (C24), though the novelty claim (C25) depends on the authors' literature knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Population vector analysis reveals complex spatiotemporal dynamics in V1 responses to target-background stimuli (C12, C28). The peak of population orientation tuning can deviate significantly from target orientation, sometimes showing repulsion away from target orientation in the direction opposite to background orientation (C28, C29). Columnar-scale representations are initially dominated by background orientation, with target orientation appearing in the second phase, producing curved population vector trajectories (C31, C32). These orientation-dependent interactions could potentially contribute to perceptual phenomena like the tilt illusion (C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The population vector analyses in Figure 7 clearly demonstrate complex dynamics including orientation repulsion effects (C29) and curved trajectories (C32). The temporal evolution from background-dominated to target-inclusive representations is well-documented (C31). However, the connection to tilt illusion (C30) is speculative and would require additional perceptual experiments to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "A simple divisive normalization model with two key properties can qualitatively account for the observed neural and behavioral results (C4, C33). First, the normalization signal must be delayed relative to the excitatory signal to produce biphasic dynamics (C35). Second, the normalization signal must be orientation-selective to account for similarity-dependent suppression in the late phase (C36). The requirement for orientation-selective normalization suggests these interactions originate in V1 rather than being inherited from LGN inputs (C38). The model's properties are consistent with principled computational approaches to feature encoding (C34).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling results in Figure 8 demonstrate that the model qualitatively captures key experimental observations including biphasic dynamics and curved population trajectories (C33). The parameter exploration in supplementary figures shows that both delayed normalization (C35) and orientation selectivity (C36, Figure 8\u2014figure supplement 4) are necessary model features. The inference about V1 origins (C38) is reasonable given that orientation selectivity emerges in V1, though direct experimental evidence would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C13"
+    ],
+    "result": "The combined experimental and modeling results support the hypothesis that nonlinear gain control mechanisms in V1, specifically contextual interactions between target and background representations, contribute to perceptual similarity masking (C5, C13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergence of behavioral data showing similarity masking (C6, C14), neural data showing orientation-dependent suppression in the late phase that correlates with behavior (C10, C11, C23), and computational modeling demonstrating that divisive normalization can account for these effects (C33, C35, C36). The evidence collectively supports V1's contribution to similarity masking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "When target and background have similar orientations, columnar-scale target information is restricted to the first response phase and largely disappears in the second phase (C26). This temporal pattern may explain the paradoxical finding that reaction times can be shortest when target-background orientations match despite this being the hardest detection condition (C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the columnar-scale data in Figure 5 supports the claim about temporal restriction of target information with similar backgrounds (C26), the proposed explanation for the reaction time paradox (C27) is speculative. The link between early-phase target information and fast reaction times is plausible but not directly tested. Additional experiments manipulating response timing or measuring neural-behavioral relationships on a trial-by-trial basis would be needed to establish this connection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Multiple lines of evidence suggest that center-surround interactions may not be necessary for similarity masking with additive targets (C42). Human psychophysical data shows masking is primarily due to target-mask interactions at the target location (C39). The computational model produces similar dynamics when the mask is restricted to target size with increased contrast (C40) or when normalization pooling matches excitation pooling spatially (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cited human psychophysical work (C39) and modeling results in Figure 8 supplements (C40, C41) provide converging evidence that center-surround interactions are not required for the observed effects. However, this conclusion is somewhat limited by the fact that the current experiments used large backgrounds, so the relative contributions of center vs. surround interactions were not directly tested experimentally in the monkey preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The tuned similarity normalization mechanism that explains the observed masking effects is consistent with a principled encoding strategy for optimal feature detection under natural viewing conditions (C43). Natural viewing involves 3-4 saccades per second with 200-300ms fixations (C44). The standard deviation of linear receptive field responses to natural images increases with background similarity (C45), and divisive normalization by similarity makes response variance more constant across natural images (C46), enabling near-optimal detection performance with simple decoders under high stimulus uncertainty (C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This theoretical framework is well-supported by cited prior work on natural image statistics and optimal encoding (C45, C46, C47). The connection to natural viewing behavior (C44) is established knowledge. The argument that the observed normalization mechanism serves an adaptive function for natural vision is logically coherent and consistent with efficient coding principles, though it remains a theoretical interpretation rather than directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The target elicits V1 population activity at two fundamental spatial scales: a large retinotopic scale (mm\u00b2) well-fitted by 2D Gaussians, and a finer columnar scale (~0.3mm) reflecting orientation selectivity (C19). The target-evoked response in the presence of background appears significantly weaker than the response to target alone (C20), which could contribute to perceptual masking (C21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The VSDI data in Figure 3B clearly demonstrates responses at both spatial scales (C19), consistent with cited prior work. The visual comparison shows reduced target-evoked responses with background present (C20). However, the claim that this contributes to masking (C21) is somewhat speculative since the detailed temporal and orientation-dependent analyses in later figures show the relationship is more complex than simple response reduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study used voltage-sensitive dye imaging (VSDI) in two adult male rhesus macaque monkeys with chambers over dorsal V1 representing 2-5\u00b0 eccentricity in the lower contralateral visual field (C48, C49). A transparent silicone artificial dura provided optical access (C50). VSDI recorded population activity at high spatiotemporal resolution (C51). Retinotopic mapping confirmed V1 boundaries, with analysis restricted to confirmed V1 regions (C52, C53, C54). Monkeys detected a small horizontal Gabor target (4cpd, 0.33\u00b0 FWHM) on sinusoidal grating backgrounds at various orientations (0\u00b0 to 90\u00b0 from target) (C55, C56), with both stimuli bright-centered and in-phase at 0\u00b0 (C57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are well-documented with appropriate detail and supporting figures (Figure 3, Figure 3\u2014figure supplement 1). The experimental procedures are standard for VSDI studies in behaving monkeys and are described with sufficient detail for evaluation. The retinotopic mapping and V1 boundary determination provide important validation of the recording locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "In the common conditions tested in both monkeys, results appear similar between animals (C59), and key results are robust across the range of contrast combinations tested in the animal with more extensive testing (C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The supplementary figures (Figure 4\u2014figure supplement 1, Figure 5\u2014figure supplement 1) show consistent patterns across monkeys and contrast combinations. However, the study acknowledges that not all contrast combinations were tested in both animals due to experimental challenges. The consistency in common conditions and across contrasts in one animal provides reasonable support for generalizability, though more complete data from both animals would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Visual detection becomes more challenging as similarity between target and background increases, a phenomenon termed 'similarity masking' (C1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is well-established prior knowledge supported by multiple classic citations (Campbell and Kulikowski, 1966; Foley, 1994; Sebastian et al., 2017; Stromeyer and Julesz, 1972; Watson and Solomon, 1997; Wilson et al., 1983). This serves as the foundational motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "In primates and carnivores, robust orientation selectivity first emerges in V1 (C37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is well-established knowledge supported by classic studies (Hubel and Wiesel, 1959; Hubel and Wiesel, 1968). This fact is used to support the inference that orientation-selective normalization likely originates in V1 rather than being inherited from LGN.",
+    "result_type": "MINOR"
+  }
+]

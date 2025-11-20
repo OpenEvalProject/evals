@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides background on diabetes prevalence, etiology, and current treatment limitations, as well as developmental biology of pancreatic progenitors. These claims establish the clinical need and biological context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 are all supported by appropriate citations to prior literature or represent established medical/biological knowledge. These background claims provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Initial expansion conditions (CINI) using EGF, FGF2, and A83-01 resulted in inconsistent expansion of PP cells, with only occasional success (1 out of 5 attempts). When expansion occurred, PP marker expression was maintained and cells could differentiate into endocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by experimental data including growth curves (Figure 1A), immunofluorescence, and qPCR (Figure 1\u2014figure supplement 1). The low reproducibility (20% success rate) is clearly documented and motivates the subsequent optimization experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "RNA-Seq analysis comparing non-expanding and expanding PP cells under CINI conditions revealed that TGF\u03b2 signaling components were negatively correlated with expansion, while E2F targets and DNA replication were positively correlated. Specific ligands showed dramatic expression changes: TGFb1 and BMP2 were repressed ~4-fold, FGF18 was upregulated ~30-fold, and ALDH1A1 was downregulated ~25-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by GSEA analysis (Figure 1D) and RNA-Seq data (Figures 1E-H, Supplementary file 1c). The transcriptomic approach to identify pathways associated with expansion is sound, though the sample size (n=3-4) is modest. The fold-change values are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Three modified conditions (C0, C1, C5) achieved reproducible PP cell expansion for at least 10-11 passages. C5 showed the fastest doubling time (2.3 days vs 3.6-3.9 days for C0/C1). All three conditions maintained expression of key PP markers PDX1, NKX6-1, and SOX9, while PTF1A expression was dramatically decreased. Flow cytometry confirmed \u226590% PDX1+/SOX9+ cells and ~40-50% PDX1+/SOX9+/NKX6-1+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are well-supported by growth curves with regression analysis (Figure 2A), qPCR data (Figures 2B-D, Figure 2\u2014figure supplement 1A), immunofluorescence (Figures 2E-G), and flow cytometry (Figures 2H-K). Sample sizes are adequate (n=3-7) and statistical analyses are appropriate. The shift from multipotent to bipotent progenitor identity (C38) is a reasonable inference from PTF1A downregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "C5 expansion conditions promote PP cell proliferation more than survival. EdU incorporation was significantly higher in C5 (10.4\u00b11.2%) compared to CINI (4.2\u00b10.6%) cultures. Cell death appeared higher in CINI (22.1\u00b15.0%) than C5 (17.2\u00b14.7%) but did not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by EdU incorporation assays (n=4) and apoptosis assays (n=6) shown in Figure 3. The statistical analysis is appropriate, correctly noting that the difference in cell death did not reach significance. The conclusion that proliferation is the primary driver is reasonable given the significant difference in EdU incorporation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C69"
+    ],
+    "result": "Addition of canonical Wnt inhibitor IWR-1 to create condition C6 maintained similar growth kinetics (Td=2.5d) while significantly reducing liver marker expression and enriching PDX1+/SOX9+/NKX6-1+ cells from 48\u00b111% at p0 to 95\u00b15% at p10. C6 cells could be cryopreserved with >85% survival, maintained chromosomal stability through 16 passages, and the procedure is GMP-compliant using VTN-N coating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 and C69 are well-supported by growth curves (Figure 4A), qPCR (Figure 4\u2014figure supplement 1B), flow cytometry (Figures 4E-I), cryopreservation data (Figure 4J), and karyotyping (Figure 4\u2014figure supplement 1M). Sample sizes are adequate (n=3-10). The GMP-compliance claim (C69) is a reasonable inference based on use of GMP-compatible reagents, though actual GMP production is not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RNA-Seq analysis of C6-expanded cells showed that PC1 explained 81% of variance and separated p0 from p5/p10 cells, with rapid transcriptome stabilization by p5. The expansion procedure resulted in strong upregulation of GP2 (50-fold higher than fibronectin-expanded cells), confirmed by immunofluorescence and flow cytometry (60\u00b14.5% positive). PTF1A repression and suppression of endocrine differentiation programs were common features across all expansion methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by PCA analysis (Figure 5\u2014figure supplement 1A), RNA-Seq data (Figures 5E-F, Supplementary file 1e), immunofluorescence, and flow cytometry. The comparative analysis with other published expansion methods strengthens the findings. GP2 upregulation is particularly notable as this marker is associated with enhanced endocrine differentiation potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "C6 expansion conditions were successfully applied to H9 (female) and CRTD1 (male) hPS cell lines, achieving similar doubling times (2.2-2.3 days) and enrichment of PDX1+/SOX9+/NKX6-1+ cells from 39-45% at p0 to 85-90% at p10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by growth curve analysis (Figures 6A-B) and flow cytometry (Figures 6C-D). The demonstration of reproducibility across multiple cell lines of different sexes is important for generalizability. Sample sizes appear adequate though specific n values are not always clearly stated for all measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Both directly differentiated (dPP) and expanded (ePP) cells from H1, H9, and CRTD1 lines differentiated into SC-islets with similar efficiency, containing 50-55% INS+ and GCG+ cells. Gene expression of endocrine markers and \u03b2-cell functionality assessed by GSIS were comparable between dPP- and ePP-derived SC-islets, with similar C-peptide secretion levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are well-supported by immunofluorescence (Figures 7A-B, Figure 7\u2014figure supplement 1A-B), flow cytometry (Figure 7C), qPCR (Figure 7D, Figure 7\u2014figure supplement 1F), and GSIS assays (Figure 7E, Figure 7\u2014figure supplement 1G). The demonstration that expanded cells retain differentiation potential and functionality is critical for the translational relevance of the expansion method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study demonstrates that combined stimulation of mitogenic pathways, suppression of retinoic acid signaling, and inhibition of selected TGF\u03b2 and Wnt signaling branches enables reproducible 2000-fold expansion of PDX1+/SOX9+/NKX6-1+ PP cells over 10 passages (40-45 days) to ~90% homogeneity across multiple hPS cell lines. These expanded cells differentiate into functional SC-islets with efficiency comparable to non-expanded cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are summary statements supported by the collective experimental data throughout the manuscript. The 2000-fold expansion calculation is consistent with the doubling time data and passage numbers. The claims accurately synthesize the major findings regarding expansion conditions, cell enrichment, and functional differentiation capacity.",
+    "result_type": "MAJOR"
+  }
+]

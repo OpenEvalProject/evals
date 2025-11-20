@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The Mesotrode technique was developed to enable chronic wide-field mesoscale cortical imaging combined with compact multi-site cortical/subcortical cellular electrophysiology in head-fixed mice. Tetrodes fabricated from tungsten wires were implanted through small burr holes (<1 mm) and soldered to miniature connectors cemented to the skull, allowing flexible implantation in various brain structures while preserving optical access to the dorsal cortex. The low-profile design permitted group housing of mice post-surgery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C20 collectively describe the technical development and validation of the Mesotrode system. The methodology is clearly described with specific materials and dimensions (C15, C16, C71, C72), surgical procedures are detailed (C15-C17), and the flexibility and success of the approach across multiple brain regions is demonstrated (C18-C20). The technique's compatibility with group housing (C17) and preservation of optical access are key features that are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C2",
+      "C14",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "Chronic single-unit recordings using Mesotrode were stable for up to 2 months post-implantation. A total of 29 tetrodes were implanted in 14 mice, recording 110 neurons with an average yield of 3-5 neurons per tetrode. Spike-triggered maps (STMs) of individual neurons remained stable across recording sessions and days, with examples showing stability over 2 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C2, C14, C31-C32, and C34 provide converging evidence for chronic recording stability. The sample sizes are clearly stated (C22, C23), recording duration is specified (C21, C2, C14, C34), and stability is demonstrated through multiple examples with visual data (Figure 1F-G, Figure 4). The consistency of neuron yield across regions (C24) and temporal stability of STMs (C31, C32, C34) are well-documented with both quantitative and qualitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Neurons recorded from different brain regions showed distinct firing characteristics. The inter-spike interval (ISI) ranged between 0.2 and 0.7 s for most brain regions, except striatal neurons which fired significantly less (p<0.05). The coefficient of variation of ISI was similar across brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe basic electrophysiological characterization with appropriate statistical analysis. The ISI measurements are quantified (C25), statistical significance is reported for striatal differences (C26, p<0.05), and the CV analysis shows consistency across regions (C27). The data are presented in Figure 2D-E with proper statistical testing (Dunn's Multiple Comparison Test).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Neurons from distinct subcortical structures (hippocampus, thalamus, striatum, midbrain) displayed diverse but segregated cortical functional connectivity patterns. Clustering analysis of 1146 STMs from 110 neurons identified 10 distinct clusters representing different cortical activation patterns. Each brain region showed characteristic distributions across clusters: cortical neurons showed localized patterns, hippocampal neurons primarily connected to retrosplenial cortex (59.6%), striatal neurons showed two opposing patterns, thalamic neurons exhibited diverse patterns, and midbrain neurons were primarily assigned to medial frontal/somatosensory activation (44.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13, C37-C50, C61-C64 provide comprehensive evidence for region-specific functional connectivity patterns. The clustering methodology is well-described (C37-C41, C85-C86), validated with multiple approaches (PhenoGraph and K-means with Silhouette score, C41), and the results are quantified with specific percentages for each region (C42-C49). The finding that different subcortical regions show low overlap (C64) is supported by the cluster distribution data (Figure 5E). The sample size (1146 STMs from 110 neurons) is substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Facial motor nerve spiking activity was functionally associated with specific cortical regions (PTA, RSP, M2). Micro-wire recordings from the facial nerve revealed a distinct cortical activation pattern during spontaneous facial movements. Optogenetic stimulation mapping in Thy1-ChR2 mice (n=6) confirmed that a broad area of dorsal cortex, including PTA, could evoke facial nerve spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51-C53 demonstrate a novel functional connectivity between facial nerve activity and specific cortical regions. The approach is methodologically sound with both correlative (STM analysis, C52) and causal (optogenetic mapping, C53) evidence. The sample size for optogenetic experiments is stated (n=6 mice, C53), and the findings are supported by multiple figures (Figure 6C-H) and supplementary data. The use of automated light-based mapping (C53, C84) adds rigor to the spatial characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C70"
+    ],
+    "result": "Optogenetic inhibition of the PTA region significantly reduced facial movements in mice, establishing a causal role for PTA in facial motor control. Control recordings from M1 and barrel cortex confirmed that the effect was specific to PTA inhibition. A rebound effect (increased PTA firing and facial movement) occurred immediately after stimulation cessation, further supporting the causal relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C54-C57, C70 provide strong causal evidence through optogenetic manipulation. The experimental design includes appropriate controls (C55) to rule out indirect effects, the rebound phenomenon (C56) provides additional support for causality (C57), and statistical significance is reported (Figure 7F, p<0.001, n=3 mice). The convergence of inhibition effects, control experiments, and rebound responses provides robust support for the causal claim. However, the sample size for the inhibition experiments is relatively small (n=3 mice, C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The imaging methodology employed alternating blue (473 nm) and green (525 nm) LED illumination at 60 Hz each to simultaneously capture GCaMP6 fluorescence and hemodynamic signals. Green reflectance signals were used to correct for hemodynamic artifacts in the calcium imaging data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C80-C82 describe the imaging methodology with appropriate technical details. The dual-wavelength approach for hemodynamic correction (C30, C80, C81) is a standard technique, and the LED strobe frequency rationale (C82) is properly justified. The methodology is demonstrated in Figure 3C-D showing the correction process. The technical specifications are clearly stated (C79-C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C65"
+    ],
+    "result": "Mesonet, a machine-learning based toolbox, was used to accurately align mesoscale images to a common brain atlas for visualization and analysis of STMs. STMs can reveal functional cortical architecture related to individual cortical and subcortical-cortical neuron activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C65 describe analytical tools and their interpretation. Mesonet is properly cited (C33, Xiao et al., 2021) and its application is demonstrated in Figure 4D. The interpretation of STMs as revealing functional architecture (C65) is supported by citation and consistent with the data presented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "A midbrain neuron's spiking activity was highly correlated with lower limb, upper limb, and trunk sensorimotor areas bilaterally, and its instantaneous firing rate and patterns were highly correlated with paw movement, consistent with its functional association with limb sensorimotor areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide a specific example linking single-neuron activity to both cortical networks and behavior. The correlation between neural activity and cortical regions (C35) is demonstrated through STM analysis (Figure 4C-D), and the behavioral correlation (C36) is shown through synchronized recordings of neural activity and paw movement (Figure 4E). This example effectively demonstrates the multimodal capability of the technique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C28",
+      "C29",
+      "C59",
+      "C60",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript provides extensive background on prior work regarding cortical network dynamics, single-neuron functional connectivity, chronic recording techniques, and cortical control of facial movements. Previous STM studies were limited to acute preparations, and conventional tetrode setups with microdrives hindered simultaneous wide-field imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12, C28-C29, C59-C60, C67-C69 represent background knowledge and literature review. All claims are properly supported by citations to relevant prior work. The identification of limitations in previous approaches (C10, C29) appropriately motivates the development of Mesotrode. These claims accurately represent the state of the field based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The distinct STM patterns indicate that single neuron embedded large-scale subcortico-cortical networks may be associated with specific brain functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is speculative (as indicated by 'may be associated') and represents an interpretation rather than a direct finding. While the observation of distinct STM patterns is well-supported (C3, C13, C38-C50), the functional significance of these patterns requires additional experimental validation beyond correlation. The claim is appropriately hedged and supported by citations, but the causal link to specific brain functions is not directly demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Detailed methodological procedures are described for tetrode fabrication, mouse strains, data acquisition, spike sorting, imaging parameters, optogenetic stimulation, and clustering analysis. Animal protocols were approved by the University of British Columbia Animal Care Committee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C87 provide comprehensive methodological details. The procedures are described with sufficient specificity to enable replication, including materials (C71), fabrication steps (C72), mouse strains with stock numbers (C73-C75), equipment specifications (C76, C79), data processing parameters (C77-C78), and analysis methods (C85-C86). Ethical approval is documented (C87). These methodological claims are appropriately detailed for a methods section.",
+    "result_type": "MINOR"
+  }
+]

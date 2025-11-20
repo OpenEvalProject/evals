@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study demonstrates widespread movie-selectivity across the visuo-hippocampal network. Visual areas (LGN, V1, AM-PM) showed the highest prevalence of movie-tuned neurons (89-97%), while hippocampal regions showed substantial but lower prevalence (17-45%), with subiculum having the highest (44.6%) and CA3 the lowest (17.3%) among hippocampal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C23-C32 provide consistent quantitative data with specific percentages and cell counts across all brain regions. The statistical significance is established (z-scored sparsity >2, p<0.03), and multiple control analyses (stationary epochs, SWR removal, pupil dilation, theta power) confirm the robustness of these findings (C35, C38, C40, C41). The data are internally consistent and supported by appropriate statistical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Movie tuning persists independently of locomotion and brain state changes. Unlike place cells which require active locomotion and show reduced selectivity during immobility, movie tuning remained intact in both immobile and running mice, and was unaffected by variations in theta power, pupil dilation, or the presence of sharp-wave ripples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35, C39-C41 demonstrate movie tuning persistence across behavioral states with appropriate controls. The comparison to place cells (C36) provides important context. Multiple independent control analyses (stationary epochs, theta power, pupil dilation, SWR removal) all support the same conclusion. The statistical rigor is appropriate with proper subsample comparisons to account for data loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Hippocampal neurons have significantly fewer movie-fields per cell (~2) compared to visual neurons (>5), with V1 showing the highest number (10.4\u00b10.1). This is fewer than the number of place-fields reported in comparably long spatial tracks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C44-C46 provide consistent quantitative data with specific means and SEMs. The comparison to place cells (C46) is appropriately cited. All pairwise comparisons between brain regions were statistically significant (p<0.04 for hippocampal regions, p<7.0\u00d710\u207b\u00b9\u00b9 for visual regions), supporting the robustness of these differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Movie-field durations span an unprecedented 1000-fold 'mega-scale' range (0.02s to 20s) across all brain regions, with individual neurons showing 100-fold variation. This is nearly two orders of magnitude greater than previously reported for place cells. Subiculum had the longest fields (3170ms) and V1 the shortest (157ms), though exceptions exist (e.g., LGN fields were twice as long as V1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C56 provide extensive quantitative characterization of the mega-scale phenomenon with specific measurements and statistical comparisons. The comparison to prior place cell studies (C54, C55) is appropriately cited. The finding is supported across multiple levels: population (C53), individual neurons (C55), and specific brain regions (C47-C52). Control analyses rule out unit isolation artifacts (C105, C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Despite large variations in individual movie-field durations, the total cumulative duration of all movie-fields per cell is remarkably conserved across neurons and brain regions, ranging only from 6.2s (V1) to 10.2s (CA3), spanning about one-fourth of the movie duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C57-C59 demonstrate an important organizing principle with specific quantitative data. The 1.66-fold range in cumulative duration contrasts sharply with the >10-fold variation in individual field durations, indicating a compensatory mechanism. Statistical comparisons show visual-hippocampal and visual-visual pairs differ significantly (p<0.001) but hippocampal pairs do not (p>0.07), supporting regional consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C88"
+    ],
+    "result": "Hippocampal neurons show greater continuous-sequence encoding than visual areas, as evidenced by fewer, broader movie-fields and an eight-fold greater preference for continuous versus scrambled movie sequences. Scrambling virtually abolished hippocampal selectivity (4.4% tuned vs. 17.8% for continuous) but had minimal effect on visual areas (80.4% vs. 92.4%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C70-C77, C81-C82, C88 provide converging evidence for sequence-dependent hippocampal encoding. The scrambled movie experiment is well-controlled (same frames, fixed sequence, repeated presentation) and shows statistically significant differences (p<7.4\u00d710\u207b\u2074 for all regions, p<10\u207b\u00b9\u2070\u2070 for hippocampal vs. visual comparison). The visual continuity index quantifies this difference appropriately. The few hippocampal cells responding to scrambled sequences showed only brief (~50ms) responses (C77), further supporting the sequence-dependence interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A subset of neurons across all brain regions, including hippocampus, showed temporally precise movie-fields with elevated spiking restricted to less than 50ms, suggesting temporal coding in addition to rate coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 describe a distinct population of neurons with brief responses. The comparison to prior studies in anesthetized cats (C60) is appropriately cited. The finding that such temporal precision exists even in hippocampus (>5 synapses from retina) is notable and well-documented in Figure 2h.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Population-level analyses reveal that hippocampal regions show broader temporal continuity than visual areas, with weaker correlation between neural and image frame-to-frame changes. Visual cortical areas show stronger modulation in movie segments with greatest frame-to-frame change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 provide population-level characterization consistent with single-neuron findings. The population vector overlap analysis (C63, C64) and frame-to-frame correlation analysis (C65-C68) are appropriate methods. The inverse correlation between frame continuity and ensemble modulation in visual areas (C68) is statistically significant and consistent with prior reports (C69, citing Dyballa et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Visual cortical neurons responding to scrambled sequences showed more numerous but shorter movie-fields than during continuous presentation. Rearranging scrambled responses by latency could reconstruct continuous movie responses in visual areas but not hippocampus, with latencies following the expected visual hierarchy (LGN: 60ms, V1: 74ms, AM-PM: 91ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide important mechanistic insights into how visual versus hippocampal areas process sequences. The rearrangement analysis is methodologically sound and the latency hierarchy (C80, C98) matches anatomical expectations with appropriate citations. The failure of rearrangement in hippocampus (C81, C82) strengthens the sequence-encoding interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Population decoding of movie frame number was above chance in all brain regions for continuous movies, most accurate in V1 and least in DG. Scrambled movie decoding was significantly weaker but above chance in visual areas and CA1/subiculum, but not in CA3 and DG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 demonstrate that neural populations encode movie information decodably. The decoding analysis uses appropriate methods (correlation-based with leave-one-out cross-validation) and controls (shuffled data). The differential performance on scrambled sequences across regions (C85, C86) is consistent with the sequence-encoding hypothesis. Sample size was controlled (150 cells per region) for fair comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The prevalence of hippocampal movie tuning (32.9%) is comparable to spatial selectivity in rodents and far exceeds that in primates. This dissociation from locomotion-dependent place cell responses agrees with recent reports of dissociated episodic and spatial mechanisms in human amnesia and is consistent with prior human hippocampal movie selectivity studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 appropriately contextualize the findings within the broader literature. The comparisons to place cells across species (C90, C91) are well-cited. The connection to human amnesia studies (C92) and prior human single-neuron work (C93, C94) is appropriately qualified. The hypothesis about visual cue representations (C95) is supported by multiple citations across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The mega-scale encoding and hierarchical organization of movie-field properties (duration, tuning strength, sequence preference) can be explained by the anatomical hierarchy of visual processing, with temporal integration windows and intrinsic timescales increasing along the feed-forward pathway from retina to hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 provide a coherent theoretical framework supported by appropriate citations. The comparison to prior multi-scale reports (C96) and language processing hierarchies (C97) is well-founded. The latency measurements (C98) directly support the hierarchical interpretation. However, the authors acknowledge exceptions to this pattern (e.g., V1 vs. LGN, CA3 properties), appropriately qualifying the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The longer duration of hippocampal movie-fields could mediate visual chunking or binding of event sequences. Evidence for episodic-like chunking was found in visual areas as well, where scrambled sequences caused fragmentation of movie-fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 propose an interpretation about chunking/binding mechanisms. While C104 provides supporting evidence from the scrambled sequence experiment, C103 is explicitly speculative ('could mediate'). The chunking interpretation is plausible given the data but would require additional experiments (e.g., behavioral measures of chunking, manipulation of sequence structure) to be definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Movie-fields are unlikely to arise from the same mechanisms as place-fields based on multiple lines of evidence: (1) mega-scale tuning exists in visual areas where spatial modulation is rare, (2) no neural shutdown during movie presentation unlike spatial exploration, (3) different relationship between firing rate and field number, and (4) poor unit isolation cannot explain mega-scale tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 systematically address the alternative hypothesis that movie-fields are place-fields. The arguments are well-reasoned with appropriate citations and control analyses. The unit isolation analysis (C106) directly tests and rules out a technical artifact. The comparison to prior passive viewing studies (C107) appropriately notes key experimental differences. The evidence collectively supports the conclusion that movie-fields represent a distinct phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The findings differ from prior studies of hippocampal responses to moving visual stimuli, which showed single receptive fields lasting a few seconds without mega-scale variation. Hippocampal neurons did not encode simple stimuli (Gabor patches, drifting gratings), indicating the importance of temporally continuous image sequences for hippocampal activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 appropriately distinguish the current findings from related prior work. The comparison to the moving bar study (C113, C114) is well-cited and the differences clearly articulated. The lack of response to simple stimuli (C115) is an important control from the same dataset. The connection to sequence coding hypotheses (C116) is appropriately cited, though the proposed role in episodic memory (C117) is explicitly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study analyzed 17,048 broad-spiking putatively excitatory neurons from 24 mice using Neuropixel probes, with mice head-fixed but free to run while viewing a 30-second movie clip monocularly. Statistical significance was determined using z-scored sparsity with threshold >2 (p<0.023).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C121-C127 provide clear methodological details. The use of a publicly available dataset (Allen Brain Observatory) with established spike sorting methods (Kilosort2) enhances reproducibility. The statistical threshold is clearly defined and appropriate. The experimental design is straightforward and well-described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior work establishes that visual cortical neurons encode movies and show direction selectivity and predictive coding, while hippocampal place cells encode spatial/temporal sequences but typically require locomotion and are thought to be non-sensory. However, the hippocampal encoding of continuous visual sequences (visual episodes) was unknown prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 accurately summarize relevant prior literature with appropriate citations. The characterization of the knowledge gap (C19) appropriately motivates the study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Movie selectivity was greater than selectivity for classic stimuli (drifting gratings) in V1, consistent with reports of better model fit with natural stimuli for primate visual responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C26 makes a comparison between movie and classic stimuli selectivity, but the authors themselves note that 'direct quantitative comparison across stimuli is difficult' due to differences in presentation parameters (30ms movie frames preceded by similar images vs. 250ms classic stimuli in random order). While the citation to David et al., 2004 supports the general principle, the specific comparison in this dataset may be confounded by methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Movie tuning provides a reliable method to probe visual brain function and bridges the gap between rodent and human hippocampal studies, offering a unified platform to investigate neural mechanisms of episodic coding, learning, and memory across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C118-C120 present appropriate conclusions about the broader implications of the work. The conclusions are well-supported by the data presented and appropriately qualified. The citations to human fMRI studies (C119) and the connection to episodic memory frameworks are reasonable. These represent valid interpretations of the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "There are other sources of inputs to V1, beyond LGN, that contribute significantly to movie tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is explicitly presented as 'one possible explanation' for the paradoxical finding that V1 shows stronger movie tuning than LGN. While the citation to Spacek et al., 2022 supports the existence of non-LGN inputs to V1, the claim that these 'contribute significantly to movie tuning' is speculative and not directly tested in this study. Alternative explanations (e.g., cortical processing, recurrent connections) are not ruled out.",
+    "result_type": "MINOR"
+  }
+]

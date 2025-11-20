@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Through iterative laboratory evolution and rational engineering, three mutations (pgi H386Y, crp H22N, rpoB A1245V) are sufficient for E. coli to grow autotrophically when combined with heterologous carbon-fixing and energy modules. This was determined by identifying consensus mutations across multiple evolved lineages, introducing them into ancestor strains, and demonstrating essentiality through reversion experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The iterative approach combining evolution (C27, C34) with rational engineering (C30, C36) is well-documented. Essentiality is demonstrated through reversion experiments (C33, C37) showing loss of phenotype when mutations are removed. The workflow systematically narrowed mutations from multiple evolved strains to a minimal set, with appropriate controls and validation at each step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The compact autotrophic strain exhibits growth characteristics nearly identical to previously evolved autotrophic strains, with a doubling time of approximately 24 hours. 13C-labeling experiments confirm that all biomass carbon derives from CO2, validating complete autotrophic metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Growth rate comparison (C41) is supported by Figure 2A with appropriate replicates (n=3). The 13C-labeling experiment (C42) provides direct evidence of carbon source through isotopic tracing, reaching expected labeling fractions after ~4 doublings. The doubling time calculation (C43) is derived from linear regression of growth data with clear methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The pgi H386Y mutation reduces phosphoglucoisomerase activity approximately 100-fold (from ~130 s\u207b\u00b9 to ~1.5 s\u207b\u00b9), stabilizing the carbon-fixing cycle by reducing efflux from the autocatalytic rPP cycle. This results in a 3-fold increase in the F6P/G6P ratio and elevated levels of rPP cycle metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enzymatic activity measurements (C55, C56, C57) are performed with purified proteins using standard spectrophotometric assays (n=3), showing clear ~100-fold reduction. Metabolomics data (C58, C59) with LC-MS/MS support the predicted metabolic consequences. The mechanistic interpretation (C4) logically follows from the biochemical data and is consistent with autocatalytic cycle theory (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C67",
+      "C69",
+      "C70",
+      "C72",
+      "C76",
+      "C78"
+    ],
+    "result": "The crp H22N and rpoB A1245V mutations cause widespread transcriptional changes including ~5-fold upregulation of fdoGH (formate dehydrogenase) and rpiB (ribose-phosphate isomerase B), alongside >4-fold downregulation of multiple catabolic operons (gat, ara, man) and amino acid biosynthesis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Proteomics analysis compared evolved vs ancestor and double mutant vs wild-type strains under identical conditions (xylose-limited chemostat). Fold-changes are reported with statistical significance (p<0.05) and consistent patterns across independent comparisons (Figure 5). The epistatic effects between mutations (C78) are documented, though mechanistic understanding remains incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The crp H22N and rpoB A1245V double mutant exhibits a >20-fold increase in NADH/NAD+ ratio in the presence of formate, significantly higher than the ~10-fold increase in wild-type (p<0.05), with no significant difference in the absence of formate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NADH/NAD+ measurements (C82, C83) are performed with appropriate replicates (n=6) using LC-MS/MS with 13C internal standards. Statistical significance is reported (p<0.05) and the formate-dependence (C84) provides important mechanistic context. The measurements are normalized to wild-type without formate, providing clear baseline comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The double mutant (crp H22N, rpoB A1245V) expressing formate dehydrogenase shows >25% increase in final OD when grown with xylose and formate, but also exhibits >10 hour longer lag time. The yield increase is formate-dependent and not observed when grown on xylose alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Growth experiments (C79, C80, C81) are documented in Figure 6A&B with clear formate-dependence. The increased yield with extended lag time presents an interesting phenotype, though the mechanistic basis remains speculative. The formate-dependence control (C81) strengthens the interpretation that the effect relates to energy module integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The autotrophy-enabling gene set (three mutations plus heterologous modules) is sufficient for autotrophic growth without auxiliary knockouts (\u0394pfkA, \u0394pfkB, \u0394zwf), though the resulting strain shows reduced performance (half the final OD and less than half the growth rate) compared to the strain with knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While autotrophic growth without auxiliary knockouts is demonstrated (C45), an unintentional rrsA mutation was introduced during construction (C47), creating uncertainty about which genetic changes are truly necessary. The reduced growth performance (C46) is documented but the contribution of the rrsA mutation versus absence of knockouts cannot be distinguished. Additional controls without the rrsA mutation would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "The autotrophy-enabling mutations achieve three main effects: (i) stabilizing the carbon-fixing cycle by reducing branch-point efflux, (ii) increasing NADH/NAD+ ratio through decoupled formate utilization via FDH-O, and (iii) improving resource allocation by downregulating unnecessary metabolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative mechanistic model (C85) is supported by multiple lines of evidence: pgi activity reduction and metabolite changes (Result 3), NADH/NAD+ increase (Result 5), and proteomic downregulation patterns (Result 4). The FDH-O hypothesis (C90) is speculative but consistent with natural chemolithoautotrophs (C89). The resource allocation interpretation (C88) logically explains the observed downregulation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Metabolic rewiring through auxiliary knockouts can serve as a temporary 'metabolic scaffold' to direct evolution toward desired phenotypes, then be removed once the phenotype is achieved. This strategy may help avoid evolutionary dead-ends where heterologous genes are lost or inactivated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The metabolic scaffold concept (C48, C95, C96) is supported by the demonstration that auxiliary knockouts can be removed after evolution (Result 7), though with caveats about the rrsA mutation. The evolutionary dead-end problem (C97) is well-established knowledge. The proposed strategy (C98) is a logical extension, though presented as speculation for future work rather than a tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "During genetic engineering, unintentional mutations occurred in rpoB (A1245V), uhpT (Q7* stop codon), and yejG. Reversion experiments confirmed that yejG is not essential for autotrophy, while uhpT is likely a loss-of-function with no effect on the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The unintentional mutations are identified through whole genome sequencing (C32, C38). The yejG reversion experiment (C40) directly tests essentiality. The uhpT interpretation (C39) is reasonable given it's an early stop codon in a hexose transporter, unlikely to affect autotrophic growth. This demonstrates appropriate quality control in strain construction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The crp H22N mutation affects position H22 in activation region 2 of Crp, previously shown to influence promoter specificity and rPP cycle integration. The rpoB A1245V mutation is located in the RNA polymerase core near DNA interaction sites and was previously documented in high-temperature adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural locations (C61, C64) are documented in Figure 5 supplement 3. Prior literature support (C62, C63, C65) provides context for the mutations' potential effects. The general roles of Crp and RpoB (C60, C63) are well-established. This contextualizes the mutations within known protein structure-function relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C102"
+    ],
+    "result": "The study demonstrates metabolism's extreme malleability and capacity to switch trophic modes with very few mutations in laboratory timescales. Synthetic autotrophy in E. coli can now be achieved with only a few defined steps without requiring extensive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C99, C102) is well-supported by the demonstration that only three mutations are sufficient (Result 1), the relatively rapid evolution timescale (C34: ~1 month vs >90 days), and the successful rational engineering approach. The claim represents a valid synthesis of the experimental findings and their implications for metabolic engineering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Four consensus mutations (rpoB, pgi, pcnB, malT) were identified across three independently evolved autotrophic clones. However, rpoB, pcnB, and malT are commonly mutated in adaptive lab evolution experiments generally, suggesting limited specific relevance to autotrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consensus mutation identification (C28) follows from sequencing multiple independent lineages. The interpretation that pcnB and malT are likely non-specific (C29) is supported by citation to ALE literature and led to appropriate focus on pgi. This demonstrates sound experimental logic in distinguishing adaptive from hitchhiker mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "Upregulated genes fdoG and fdoH encode subunits of the native formate dehydrogenase O complex involved in respiratory chain electron transfer. The upregulated rpiB is an inducible isoenzyme of the constitutive rpiA. Downregulated operons include gat (galactitol), ara (arabinose), and man (mannose) degradation pathways, plus starvation sensing proteins rspA and rspB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C66, C68, C71, C73-C75, C77) represent established biochemical knowledge about gene functions and metabolic pathways in E. coli. They provide necessary context for interpreting the proteomics results but are not novel findings of this study. The information is accurate and appropriately cited or represents standard microbiology knowledge.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The authors generated improved chromosome-level genome assemblies for hadal snailfish and Tanaka's snailfish. The hadal snailfish assembly comprises 1,173 contigs (626.44 Mb total, N50=4.22 Mb) organized into 24 chromosomes with 98.24% anchoring rate and 96.0% complete BUSCOs, representing substantial improvement over previous assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 and C167-C170 provide comprehensive assembly statistics with specific metrics (contig numbers, N50, BUSCO scores, genome sizes). The methods describe appropriate sequencing technologies (ONT, BGI, Hi-C) and assembly pipelines. The improvement over previous assemblies is documented with gap filling (1.26 Mb) and quality metrics shown in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Comparative chromosomal analysis reveals no major rearrangements between hadal and Tanaka's snailfish, with chromosome numbers consistent with the MTZ-ancestor, while stickleback underwent independent fusion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by synteny analysis shown in Figure 1\u2014figure supplement 4. The conservation of chromosome number (24) and lack of major rearrangements between the two snailfish species is clearly demonstrated, with appropriate comparative genomic methods and visualization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Comprehensive genomic analysis identified 51 absent genes, 20 unitary pseudogenes, 21 lineage-specific expanded genes, 33 genes with indels \u22653 amino acids, and 33 de novo-originated genes in hadal snailfish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 present specific counts of genomic changes. The methods section describes a rigorous read-mapping approach to identify gene losses and duplications, with validation across multiple individuals. The custom pipeline is deposited on GitHub, supporting reproducibility. The specific numbers are clearly stated with supporting supplementary files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Population genetic analysis reveals hadal snailfish comprise two populations, with the first including individuals from both Mariana and Yap trenches. Mitochondrial analysis shows divergence of ~44,000 years between trenches, and ~1.0 Mya with Kermadec Trench samples, suggesting successful dispersal across Pacific trenches within a million years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by multiple complementary analyses (PCA, phylogenetics, clustering) shown in Figure 1. The divergence time estimates are based on mitochondrial data with appropriate methods (MCMCtree). However, C50 (speculation about dispersal mechanisms) is appropriately cautious. The cross-trench distribution pattern is well-documented with samples from multiple locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Hadal snailfish exhibit 3.48-fold higher genetic diversity than Tanaka's snailfish, with FST=0.91 indicating large genetic divergence. Only 6% of SNPs are shared between species. Demographic analysis reveals significant population expansion in the last 60,000 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 present population genetic metrics supported by appropriate analyses. The FST value and SNP sharing percentage indicate strong differentiation. The demographic history from PSMC analysis (Figure 1\u2014figure supplement 8) provides temporal context. However, the higher diversity in hadal snailfish despite extreme environment is counterintuitive and could benefit from additional discussion of potential mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Phylogenetic analysis places hadal snailfish closest to genera living at ~1,000m depth, with divergence ~9.9 Mya coinciding with Mariana Trench formation (~8 Mya). Combined with within-species divergence of 1.0 Mya, this constrains hadal zone entry to 1.1-9.9 Mya. Preservation of dim-light vision genes suggests recent entry to complete darkness within the last few million years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 and C150-C152 present a coherent evolutionary timeline supported by mitochondrial phylogenetics and divergence time estimation using MCMCtree with appropriate calibrations. The logic connecting phylogenetic divergence times to ecological transitions is sound. The preservation of rh1/gnat1 genes (C69, C151) provides independent support for recent hadal zone colonization. The temporal window (1.1-9.9 Mya) is appropriately bounded by different phylogenetic comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Vision gene analysis reveals differential loss patterns: lws lost in both species, rh2 specifically lost in hadal snailfish, sws2 pseudogenized in hadal snailfish, while rh1 and gnat1 (dim-light perception) remain present and expressed, suggesting ongoing natural selection for dim-light vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are well-supported by genomic and transcriptomic data shown in Figure 2. The differential loss pattern is consistent with depth-dependent light availability. Expression data (C69) and proteomic confirmation (C70) strengthen the conclusion. The inference about natural selection (C71) is reasonable given gene preservation and expression, though the phrase 'at least in the recent past' appropriately acknowledges uncertainty about current selective pressures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "While olfactory receptors are reduced, auditory genes are well-preserved and significantly upregulated in hadal snailfish brain. The gene tmc1 shows highest upregulation and contains an 11-amino acid deletion in highly conserved regions specific to hadal snailfish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by comparative genomic and transcriptomic analyses shown in Figure 3. The upregulation of auditory genes is documented with statistical significance. The tmc1 deletion is shown in Figure 3\u2014figure supplement 2 with sequence alignment and structural modeling. However, C78 notes that functional implications need verification, appropriately acknowledging the limitation of inferring function from sequence alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C162"
+    ],
+    "result": "The gene cldnj, involved in otolith mineralization, has three copies in hadal snailfish versus one in other teleosts. This expansion, validated in all resequenced individuals, may explain how hadal snailfish maintains otolith density beyond the carbonate compensation depth (>4,000-5,000m).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 and C162 present a compelling mechanistic explanation for deep-sea adaptation. The gene duplication is documented genomically (Figure 3B-C) and validated across all individuals (C85). The connection to otolith formation is supported by gene function (C81) and prior observations of maintained otolith density (C84). However, the causal link (C86, C162) remains inferential without direct functional validation of the duplicated genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Many circadian rhythm genes (per2a, cry1a, cry3, cry5, gpr19) are lost or pseudogenized in hadal snailfish, yet essential clock control genes remain present and expressed. Loss of gpr19 may result in extended rhythm cycles similar to cavefish, with the circadian system likely uncoupled from sunlight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by genomic analysis (Figure 4A-B) showing gene losses while core clock machinery persists. The comparison to cavefish (C88) provides evolutionary context. The inference about rhythm cycle retention but sunlight uncoupling (C90) is reasonable given the gene expression data. The speculation about extended cycles (C92) is appropriately cautious and based on cited functional studies of gpr19.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In hadal snailfish, one grpr copy is absent and the other barely expressed in brain. Given that grpr-deficient mice show increased locomotor activity in darkness while maintaining normal circadian rhythms, grpr loss may benefit hadal snailfish activity under complete darkness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C97 present an interesting hypothesis connecting gene loss to behavioral adaptation. The genomic and expression data (C93-C94) are solid, shown in Figure 4C. The mouse studies (C95-C96) are properly cited. However, the inference to fish behavior (C97) is speculative, crossing species boundaries from mammals to fish. The authors appropriately use cautious language ('might in some way benefit'), but functional validation in fish would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The brain shows the most divergent gene expression between species, with 3,587 upregulated and 3,433 downregulated genes in hadal snailfish. Upregulated genes associate with cilium, DNA repair, and microtubule movement; downregulated genes with membranes, GTP-binding, and synaptic vesicles. Fifteen de novo genes are highly expressed in hadal snailfish brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by comprehensive transcriptomic analysis with appropriate statistical methods (DESeq2). The GO enrichment analysis provides functional context. The comparison to zebrafish HHP response (C105) strengthens the interpretation. The large number of differentially expressed genes and the specific functional categories are well-documented, though the biological significance of some categories (e.g., cilium upregulation) could benefit from further mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The gene gpr27 is pseudogenized in hadal snailfish. Since gpr27 knockout increases expression of carnitine shuttle enzymes (especially cpt1, essential for \u03b2-oxidation), and cpt1 is significantly upregulated in hadal snailfish liver, gpr27 inactivation may enhance lipid metabolism to cope with food deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 present a logical chain connecting gene loss to metabolic adaptation. The pseudogenization is documented (Figure 4\u2014figure supplement 3), the functional connection to lipid metabolism is cited (C112), and cpt1 upregulation is confirmed by transcriptomics (C114). The inference (C116) is reasonable given the cited role of lipid mobilization in fish starvation response (C115). However, direct measurement of lipid metabolism or starvation resistance would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Genes associated with vitamin D metabolic pathways are well-conserved and similarly expressed in both hadal and Tanaka's snailfish, suggesting vitamin D is not a limiting factor for hadal zone vertebrates despite the absence of UV light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by genomic and transcriptomic analysis (Figure 4\u2014figure supplement 4). The conservation and similar expression patterns provide evidence against vitamin D limitation. However, this conclusion would be strengthened by actual measurements of vitamin D levels or metabolites. The inference (C121) is reasonable but assumes that gene expression correlates with vitamin D availability, which may not account for dietary sources or alternative synthesis pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Hadal snailfish exhibit reduced bone mineralization, with shorter bones and reduced density. Three genes contributing to this phenotype are identified: bglap (previously found pseudogenized), and newly identified losses of tmem251 and tmem263, both encoding transmembrane proteins affecting bone mineral deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 are supported by prior micro-CT data (C122, cited) and genomic analysis identifying gene losses (Figure 4D, Figure 4\u2014figure supplement 5). The functional roles of the genes are properly cited (C127, C129). However, the causal connection between these specific gene losses and the bone phenotype remains inferential without functional validation. The note that bone data derives from a single sample is an important limitation that should temper confidence in gene expression findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "The gene vbp1, encoding prefoldin subunit 3 that promotes protein folding, has two copies in hadal snailfish but one copy in other teleost fishes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 are supported by genomic analysis shown in Figure 5\u2014figure supplement 1. The gene duplication is clearly documented and the protein function is cited. This represents a straightforward observation of gene copy number variation with potential relevance to protein stability under high pressure, though functional validation would strengthen the adaptive significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Comparative transcriptomic analysis identified 34 genes significantly more highly expressed in all hadal snailfish organs versus Tanaka's snailfish and zebrafish (versus only 7 in Tanaka's snailfish). These 34 genes are enriched in DNA damage checkpoint (GO:0000077, adjusted p=0.0177), with 5 genes associated with DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by rigorous comparative transcriptomics across multiple species and tissues. The statistical threshold and GO enrichment analysis are appropriate. The asymmetry (34 vs 7 genes) is striking and the DNA damage/repair enrichment is biologically meaningful in the context of oxidative stress. The adjusted p-value for GO enrichment is marginal but acceptable given the specific biological hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C165"
+    ],
+    "result": "The gene fthl27 (encoding ferritin heavy chain-like protein) has 14 copies in hadal snailfish (mostly tandem duplicates) versus 3 in Tanaka's snailfish, validated in all resequenced individuals. Cell culture experiments demonstrate that fthl27 overexpression significantly reduces intracellular ROS levels and increases cell viability under oxidative stress, suggesting this expansion is an important mechanism for HHP-induced ROS resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C149 and C165 present the strongest mechanistic evidence in the paper. The gene expansion is documented genomically (Figure 5A) and validated across individuals (C145). Critically, functional validation through cell culture experiments (Figure 5B-C) directly demonstrates ROS reduction and improved viability. The experimental design includes appropriate controls and oxidative stressors (H2O2, FAC). The connection between HHP, ROS production, and ferritin function is well-established in the literature, making this a compelling adaptive mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C166"
+    ],
+    "result": "Multiple genes associated with DNA repair are significantly more highly expressed in all tissues of hadal snailfish than in other fishes, coinciding with the presence of oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C166 is supported by the transcriptomic analysis shown in Figure 5\u2014figure supplement 1. The upregulation of DNA repair genes across all tissues is consistent with the oxidative stress hypothesis and complements the ferritin findings. The pattern of coordinated upregulation across tissues strengthens the interpretation of a systemic response to oxidative stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The complete absence of light had profound effects on hadal snailfish genomics. Gene losses may result from both relaxed selection and adaptive benefits, such as grpr loss potentially increasing dark activity and gpr27 loss potentially enhancing lipid metabolism for coping with food deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C156 synthesize multiple findings into an evolutionary framework. The profound effects of darkness (C153) are well-documented through multiple gene losses and modifications. The dual explanation for gene loss (C154) - relaxed selection versus adaptive benefit - is evolutionarily sophisticated. The specific examples (C155-C156) are supported by the detailed analyses discussed earlier, though they remain somewhat speculative without direct functional validation in the organism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "While TMAO maintains protein function under high pressure and is thought to limit fish depth, fmo3 expression is similar between species, suggesting altered TMAO degradation mechanisms in hadal snailfish. However, TMAO alone is insufficient to explain hadal snailfish's unique depth tolerance since it is widely present in marine fishes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C161 present an important negative result regarding TMAO. The similar fmo3 expression (C159) is documented in Supplementary file 16. The speculation about altered degradation (C160) is appropriately cautious given lack of evidence. The logical argument (C161) that TMAO cannot be the sole explanation is sound. However, this section highlights a gap in understanding rather than providing a clear result. The lack of positive selection on fmo3 after FDR correction (mentioned in Discussion) weakens earlier claims about TMAO's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Hadal snailfish may have entered and fully adapted to extreme environments in the last few million years, spreading to different Pacific trenches within a million years. Genes associated with perception, circadian rhythms, and metabolism have been extensively modified. Tandem duplication of ferritin significantly increased ROS tolerance, potentially a key factor in HHP adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 represent the main conclusions stated in the abstract. These are well-supported by the detailed analyses: phylogenetic dating (C7-C8), comprehensive genomic surveys (C9-C11), and experimental validation of ferritin function (C12-C13). The temporal framework is constrained by multiple independent lines of evidence. The ferritin finding is particularly strong due to functional validation. These claims appropriately summarize the major findings of the study.",
+    "result_type": "MAJOR"
+  }
+]

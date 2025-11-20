@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C55",
+      "C56",
+      "C57",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prestin displays an unstable anion-binding site where folding of the N-termini of TM3 and TM10 is coupled to Cl\u207b binding. HDX-MS experiments show that Cl\u207b removal causes 20-fold HDX acceleration at the binding site, corresponding to \u0394\u0394G = 1.8\u20133.5 kcal/mol upon anion binding. Urea experiments and Cl\u207b titration demonstrate that the N-terminus of TM3 is unfolded in the apo state and folds reversibly upon Cl\u207b binding. This folding shortens the TM3\u2013TM10 electrostatic gap, resulting in reduced cross-sectional area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C42\u2013C46, C55\u2013C57, C70\u2013C72 provide converging HDX-MS evidence demonstrating that prestin's anion-binding site is unstable in the absence of Cl\u207b and folds upon anion binding. The 20-fold HDX acceleration, urea insensitivity in apo state, reversible folding upon Cl\u207b titration, and thermodynamic measurements (\u0394\u0394G = 1.8\u20133.5 kcal/mol) collectively support this major finding. The energy change is consistent with independent estimates from EC50 measurements (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "SLC26A9, a non-electromotile transporter closely related to prestin, does not exhibit the folding events upon anion binding observed in prestin. SLC26A9's N-terminal TM3 exchanges at least 100-fold slower than prestin's, and its binding pocket is only mildly affected by Cl\u207b removal, pointing to prestin's unique adaptation as a motor protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C49, C51\u2013C52 provide comparative HDX-MS data showing that SLC26A9's anion-binding site is intrinsically more stable than prestin's and does not undergo the dramatic folding changes upon anion binding observed in prestin. This comparison is critical for establishing the functional significance of prestin's unstable binding site and is well-supported by the HDX data presented in Figures 1\u20132.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C60",
+      "C61",
+      "C69"
+    ],
+    "result": "Prestin embedded in lipid nanodiscs displays dynamics nearly identical to detergent micelles, except for a destabilized intracellular portion of TM6 (10-fold HDX increase). This demonstrates that the anion-binding site dynamics are preserved in a lipid bilayer environment, while TM6, which is critical for mechanical expansion, shows increased flexibility in the native-like membrane environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C60\u2013C61, C69 are supported by HDX-MS comparison between nanodisc and micelle conditions (Figure 5). The finding that most regions show similar dynamics validates the micelle experiments, while the specific destabilization of TM6 in nanodiscs provides insight into membrane-protein interactions relevant to prestin's mechanical function. The data are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C82"
+    ],
+    "result": "Prestin exhibits helix fraying at the anion-binding site (N-termini of TM3 and TM10) but cooperative unfolding of lipid-facing helices (TM6, TM1, TM5b, TM8). The N-terminal TM3 requires four exponentials spanning five log units to fit HDX data (\u03c3\u0394G = 2.9), while the intracellular TM6 requires only three exponentials spanning less than two log units (\u03c3\u0394G = 1.1), indicating mild cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14\u2013C15, C62\u2013C68, C82 are supported by detailed HDX kinetic analysis (Figure 6). The multi-exponential fitting approach is appropriate for distinguishing fraying from cooperative unfolding, and the \u03c3\u0394G metric provides quantitative assessment of cooperativity. The data quality appears sufficient to support these distinctions, though the assignment of rates to specific residues involves some assumptions (acknowledged in methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C83"
+    ],
+    "result": "The authors propose that helix fraying at the anion-binding site and cooperative unfolding of lipid-facing helices may promote prestin's fast electromechanical rearrangements. They suggest that fraying allows charge movement across multiple shallow barriers rather than a single high-energy barrier, and that cooperativity enables long-range allostery for rapid structural rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16, C76\u2013C78, C81, C83 are speculative interpretations (marked as SPECULATION in evidence_type) connecting the observed structural dynamics to prestin's functional properties. While the HDX data on fraying and cooperativity are solid, the mechanistic link to fast electromechanical kinetics is not directly tested. These are reasonable hypotheses that require additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C73"
+    ],
+    "result": "Anion binding to prestin stabilizes the intracellular cavity and the interface between scaffold and elevator domains, but destabilizes regions facing the extracellular milieu. In contrast, anion binding to SLC26A9 destabilizes cytosol-facing regions, consistent with an alternate-access transport mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53\u2013C54, C73 are supported by HDX data mapped onto protein structures (Figure 1C). The differential effects of anion binding on prestin versus SLC26A9 are consistent with their distinct functions (motor vs. transporter). The interpretation is reasonable given the HDX patterns, though the connection to specific conformational states could be strengthened with additional structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C74",
+      "C75"
+    ],
+    "result": "HDX experiments with SO\u2084\u00b2\u207b and salicylate reveal that SO\u2084\u00b2\u207b binding produces slightly faster HDX at the binding site compared to Cl\u207b, while salicylate binding causes 10-fold HDX slowing (\u0394\u0394G = 1.4 kcal/mol), supporting an allosteric role for anion binding. The authors suggest salicylate inhibits prestin's NLC by restricting binding site dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C74\u2013C75 are supported by HDX data in different anionic conditions (Figure 4). The thermodynamic effects are well-documented, and the interpretation of allosteric modulation is consistent with prior functional studies (cited). The suggestion about salicylate's mechanism is reasonable but remains somewhat speculative without direct functional measurements in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "MD simulations show that the Pro136Thr substitution (found in non-mammalian prestin and SLC26A9) results in hyper-stabilization of TM3. A Pro136Thr mutation in rat prestin shifts NLC toward depolarized potentials. The authors hypothesize that simultaneous fraying of TM3 and TM10 (enabled by Pro136 in mammals) promotes prestin's fast mechanical activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79\u2013C81 combine MD simulation results with cited functional data (C80) to support a hypothesis about the evolutionary adaptation of mammalian prestin. The MD simulations (Figure 2\u2014figure supplement 2) provide computational support, and the cited NLC shift provides functional validation. The hypothesis is reasonable but would benefit from additional experimental validation of the Pro136 role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose a model where anion binding participates in local electrostatic balance involving R399 and TM3\u2013TM10 helical macrodipoles. In the apo state, electrostatic repulsion causes binding site unfolding and R399 may move toward solvent. Anion binding neutralizes the positive field, coupled to residue-by-residue folding and gap shortening. At physiological Cl\u207b concentrations (1.5\u20134 mM), the binding site is likely partially folded, with complete folding achieved by membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84\u2013C88 present a mechanistic model based on the HDX findings. While the model is consistent with the data and provides a framework for understanding prestin's voltage dependence, it involves significant speculation (marked as SPECULATION/INFERENCE in evidence_type). Key aspects like R399 movement and the role of membrane potential are not directly tested. The model is plausible but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A cryo-EM structure of prestin in 1 mM Cl\u207b with 190 mM HEPES was solved at 3.4 \u00c5 resolution. Surprisingly, prestin adopted a compact conformation virtually identical to the Cl\u207b-bound 'Up' state with clear density at the anion-binding site, interpreted as a small population of Cl\u207b-bound prestin (17% based on EC50 = 6 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89\u2013C91 describe a cryo-EM structure determination with appropriate resolution and interpretation. The finding that prestin adopts the Cl\u207b-bound conformation even at low Cl\u207b concentration is surprising but the interpretation (17% occupancy based on EC50) is reasonable. This result supports the importance of anion binding for prestin stability, though it limits direct structural insight into the apo state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "HDX measurements were performed at two conditions (pDread 7.1, 25\u00b0C and pDread 6.1, 0\u00b0C) to expand the dynamic range to seven log units. Exchange occurred mostly via EX2 kinetics, allowing HDX rates to report on protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40\u2013C41 describe methodological details that are well-documented in Table 1 and Appendix 1. The use of two temperature/pH conditions is appropriate for expanding dynamic range, and the verification of EX2 kinetics (Appendix 1) validates the interpretation of HDX rates as stability measurements. This is standard HDX-MS methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establishing prestin's function: Prestin responds to voltage by changing cross-sectional area, underlying outer hair cell electromotility and cochlear amplification. Prestin belongs to the SLC26 family but is the only member displaying electromotility. It functions as a piezoelectric voltage-to-force transducer, with knockout producing 40\u201360 dB signal loss in cochleae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C4, C17\u2013C24 are background knowledge statements supported by citations to established literature. These provide context for the study but are not novel findings. The claims are well-established in the field and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims from prior structural work: Recent cryo-EM structures located the anion-binding site at the TM3\u2013TM10 electrostatic gap. The binding pocket is highly conserved and influenced by hydrophobic residues in TM1 and R399 on TM10. Prestin exhibits minimal transporter ability but is structurally similar to SLC26A9 (34% sequence identity, 3.4 \u00c5 RMSD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25\u2013C32 summarize prior structural and functional work with appropriate citations. These establish the structural context for the current HDX-MS study. The claims are well-supported by cited literature and provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background claims on prestin's voltage dependence: Prestin's voltage dependence is regulated by intracellular anions, with anion affinity also regulated by voltage and tension. Anions may serve as allosteric modulators rather than explicit gating charges. Charged residues except R399 distribute toward the membrane-water interface and contribute minimally to gating charge. R399 provides ~40% of positive charge at the bilayer mid-plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33\u2013C39 summarize prior functional and computational work with appropriate citations. These establish the functional context and the conundrum that the current study addresses (how an anion near a positive charge enables voltage sensitivity). The claims are well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Additional structural context: Mammalian prestin is the only SLC26 member displaying electromotility. TM6 defines the prestin-lipid interface and mediates area expansion through helical bending. Structures of GDN-solubilized prestin from three groups are indistinguishable (C\u03b1 RMSD <1 \u00c5), and structures in GDN versus nanodisc are nearly identical (C\u03b1 RMSD = 0.2 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92\u2013C95 provide additional structural context from prior work with appropriate citations. The reproducibility of structures (C94) and similarity between GDN and nanodisc (C95) support the validity of using GDN-solubilized protein for HDX-MS studies. These are well-established facts from cited literature.",
+    "result_type": "MINOR"
+  }
+]

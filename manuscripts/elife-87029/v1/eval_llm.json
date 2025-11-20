@@ -1,0 +1,390 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "A novel prairie vole brain atlas was created from 190 brains using light-sheet fluorescence microscopy. The prairie vole brain is approximately 30% larger than the mouse brain, but relative regional volumes are conserved across species and show no sexual dimorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence for the creation and validation of the prairie vole brain atlas. The methodology is clearly described (C1), statistical comparisons are appropriately conducted with adequate sample sizes (n=190 voles, n=108 mice) and multiple testing corrections (C2-C4), and the findings are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Mate pairs exhibited distinct behavioral profiles compared to sibling pairs, characterized by elevated mating behaviors (anogenital investigation, vocalization, mounting, intromission, ejaculation) at 2.5 and 6 hour timepoints, with sex-specific movement patterns consistent with copulatory pacing. By 22 hours, mating declined and huddling resembled sibling pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 provide comprehensive behavioral characterization with appropriate statistical testing (t-tests with FDR correction) and adequate sample sizes (n=94-96 individuals, n=47-48 pairs). The temporal progression of behaviors is consistent with cited literature on prairie vole bonding (C36), and the findings show internal consistency across multiple behavioral measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C20",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Whole-brain analysis identified 68 anatomically distinct brain regions showing differential c-Fos induction between mated and sibling pairs. These regions clustered into 8 groups (7 major clusters), including BST, POA-VMH, PVH, PFC, Amyg, AUD, Thal, and AOB clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 describe a rigorous statistical approach using permutation testing (10,000 permutations) with FDR correction (q<0.1) on 189 animals. The hierarchical clustering analysis is appropriate for the data type, and the anatomical descriptions of clusters are detailed and internally consistent. The methodology is well-documented in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The nucleus accumbens showed complex patterns of activation: it did not survive FDR correction in ROI-level analysis but was significant in univariate analysis and at specific timepoints (2.5 and 6 hours), with voxel-level analysis revealing significant activation in ventral striatum and posterior nucleus accumbens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 transparently report both positive and negative findings with appropriate statistical detail. The authors acknowledge the limitations of ROI-level analysis while providing complementary voxel-level evidence. This nuanced reporting is consistent with the known heterogeneity of nucleus accumbens function and the limitations of c-Fos as a marker (discussed in C78-C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C67"
+    ],
+    "result": "The 68 identified brain regions are more strongly anatomically connected to one another than predicted by chance, based on comparison with mouse connectome data, supporting their interpretation as functional circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C67 use appropriate permutation testing (10,000 shuffles, p=0.0001) to validate anatomical connectivity. However, this relies on mouse connectome data being applicable to prairie voles, which is a reasonable but unvalidated assumption. The statistical approach is sound, but cross-species extrapolation introduces some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Canonical correlation analysis revealed that the first canonical correlate (CC1) loaded highly on BST, POA-VMH, and PVH clusters and mating behaviors, capturing responses at 2.5 and 6 hour timepoints. The first two CC dimensions showed no evidence of sexual dimorphism, though 29 regions showed weak sex \u00d7 pairing interactions when analysis was restricted to bonding-related regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe appropriate use of canonical correlation analysis to identify latent structure in brain-behavior relationships. The statistical approach is sound, with formal model comparisons and FDR correction. The finding of minimal sexual dimorphism is supported by multiple complementary analyses (C52, C53), though the authors appropriately note weaker effects in focused analyses (C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "During mating and bond formation (2.5-6 hours), neural activity was strongly correlated across brain regions between pair members (r=0.93 for CC1 scores). Following bonding (22 hours), within-pair correlations were confined to hypothalamus-amygdala coupling, while siblings showed relatively uniform hypothalamus-amygdala correlations across all timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide strong evidence for coordinated neural activity between pair members using appropriate correlation analyses. The sample sizes are adequate (n=22-24 pairs), and the temporal specificity of the findings (strong coordination during bonding, restricted coordination after bonding) is internally consistent and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The principal nucleus of the BST (BSTpr) showed the strongest response to pairing, with activity strongly correlated between pair members (r=0.851) and strongly predicted by male ejaculation rates in both sexes (males: r=0.894, females: r=0.847). Ejaculation was the strongest predictor of brain-wide activity, and controlling for ejaculation abolished pair correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 provide converging evidence from multiple analyses (CCA, permutation testing, correlation analysis, partial correlation) all pointing to BSTpr and ejaculation as central to pair bonding. The statistical evidence is strong with appropriate corrections (FDR q=0.003), adequate sample sizes, and the partial correlation analysis (C64) provides critical evidence for the causal role of ejaculation in coordinating neural activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C80",
+      "C82"
+    ],
+    "result": "Pairing-related c-Fos immunoreactivity was largely sexually monomorphic, with both sexes showing similar patterns across brain regions and the strongest signal of pairing status in BSTpr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C80, and C82 consistently report minimal sexual dimorphism across multiple analyses. This is supported by formal statistical testing (C52, C53) and is a major finding that contradicts some prior hypotheses about sex differences in bonding mechanisms. The evidence is strong and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The whole-brain mapping identified 68 unique brain regions, including 18 previously implicated in prairie vole bonding. The strongest effects were in the BST cluster, which matches neural circuitry of male ejaculation in other rodent species and projects to other identified clusters (POA-VMH, PVH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 integrate current findings with prior literature. The comparison to previous models (C65-C66) provides validation, while the correspondence with ejaculation circuits in other species (C70) and known anatomical connectivity (C71) provides biological plausibility. The evidence is well-supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C26"
+    ],
+    "result": "After bond formation and stabilization (22 hours), mated pairs showed brain-wide IEG patterns similar to siblings, but both pair types showed strong correlations in amygdala IEG induction, particularly in the posterodorsal medial amygdala (MeApd), suggesting a novel substrate for bond maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 and C26 describe convergence of neural patterns at 22 hours with specific regional coordination in the amygdala. The correlation analysis is appropriate, and the finding is internally consistent with the temporal dynamics of bonding. The interpretation as a bond maintenance mechanism (C26) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C25"
+    ],
+    "result": "Much of the pairing-related neural activity was driven by mating behavior, with ejaculation rates being the strongest predictor of activity across brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C25 are strongly supported by the canonical correlation analysis (C49, C63) and the partial correlation analysis showing that controlling for ejaculation abolished pair correlations (C64). The evidence converges from multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Pairing drove increased c-Fos induction in the ventral pallidum (a major node in reward circuitry), paraventricular nucleus, and medial preoptic area (modulators of reward).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 reports empirical findings from the study, while C76-C77 characterize these regions based on established knowledge. The c-Fos findings are supported by the whole-brain analysis, and the functional characterizations are consistent with neuroscience literature, though specific citations for C76-C77 are not provided in the claims themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Some neuronal populations can be active without expressing c-Fos, and previous work finds only weak c-Fos induction in the prairie vole nucleus accumbens during bonding, which may explain the absence of strong accumbens signals in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 appropriately acknowledge limitations of c-Fos as a marker of neural activity and contextualize the current findings with prior literature. This is supported by appropriate citations and provides important context for interpreting the nucleus accumbens findings (C39-C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Recent work in mice shows that different neural populations in BSTpr (aromatase+ and Vgat+ neurons) respond to ejaculation in both males and females, and females show IEG induction associated with male ejaculation in rats and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 accurately report findings from cited literature (Bayless et al., 2019; Pfaus and Heeb, 1997; Veening et al., 2014) and provide important context for interpreting the current findings on BSTpr activation in both sexes. These are literature review claims that support the interpretation of the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The paraventricular nucleus of the hypothalamus is a major source of oxytocin and vasopressin (known modulators of pair bonding), and the prefrontal cortex is modulated by hypothalamic oxytocin and shapes bonding through projections to the nucleus accumbens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 accurately summarize established knowledge from cited literature (Walum and Young, 2018; Amadei et al., 2017; Burkett et al., 2016; Horie et al., 2020). These provide important context for interpreting the current findings on PVH and PFC activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The BST is essential to individual recognition in rats, coordinates sex recognition in mice via estrogen receptor alpha (ER\u03b1), and ER\u03b1 in the BST is essential to pair bond formation in prairie voles. Oxytocin actions in the medial amygdala govern social recognition in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 accurately report findings from cited literature (Dumais et al., 2016; Knoedler et al., 2022; Lei et al., 2010; Ferguson et al., 2001) and provide important context for interpreting the current findings on BST and amygdala function in bonding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "In laboratory mice, tachykinin+ GABAergic neurons project from posterodorsal MeA to MPO where they contribute to consolation grooming and social reward. Prairie voles often live in larger family groups, particularly over winter, suggesting a common mechanism for familial and sexual bonds would be consistent with their ecology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 accurately report findings from cited literature (Hu et al., 2021; Wu et al., 2021; Getz et al., 1993) and provide important context for interpreting the MeApd-MPO coordination observed at 22 hours. The ecological interpretation (C96) is reasonable and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The study confirms the activity of known regulators of mating and bonding such as reward circuits, the paraventricular nucleus, and the bed nucleus of the stria terminalis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by the whole-brain analysis showing activation in these regions (C20-C22, C37-C38, C68) and is consistent with cited prior literature (Coolen, 2005; Insel and Young, 2001; Lei et al., 2010; Pfaus, 2009). This represents validation of the current approach against established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The authors propose a novel model in which the BST is a key node connecting sexual experience to neuroendocrine functions of the hypothalamus and preoptic area, and that coupling between the preoptic area and amygdala may play an unappreciated role in bond maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 represent proposed models and hypotheses based on the current findings. While the data support BST activation and hypothalamus-amygdala coupling (C55-C58, C59-C64, C93-C94), these are interpretive frameworks rather than directly tested hypotheses. The models are plausible and consistent with the data, but would require additional experimental validation (e.g., circuit manipulation studies) to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Repeated copulation is necessary for bonding in prairie voles and is a means of partner assessment in various taxa. The authors suggest that both female and male prairie voles are assessing the ability of a male to monopolize a female during repeated copulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are supported by cited literature (Dewsbury, 1988; Eberhard, 1996), but C88 is explicitly speculative ('we suggest'). While the interpretation is consistent with the finding that ejaculation predicts neural activity in both sexes (C62-C63), the specific hypothesis about assessment of male monopolization ability is not directly tested and represents an evolutionary interpretation of the proximate mechanisms observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study used 8-12 week old sexually naive prairie voles derived from wild-caught voles from Jackson County, Illinois, with 12 sibling pairs and 12 mating pairs per timepoint (190 voles for behavioral analysis, 189 for IEG analysis). Females were induced into estrus with daily subcutaneous injections of 2 \u03bcg estradiol benzoate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide clear methodological details about the study subjects and experimental design. The sample sizes are adequate for the statistical analyses performed, and the methods are clearly described. The estrus induction protocol (C105) is supported by appropriate citations (Amadei et al., 2017; Carter et al., 1988).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "In prairie voles, bonds form in response to courtship and repeated mating, with copulation serving as a form of courtship for mutual assessment. Sexually responsive voles typically mate within the first hour, repeated mating over ~6 hours initiates partner preferences, and bonds stabilize between 12-24 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C17-C19 accurately summarize established knowledge from cited literature (Carter et al., 1995; Getz et al., 1993; Dewsbury, 1988; Eberhard, 1996; DeVries and Carter, 1999; Williams et al., 1992). These provide essential background context for the experimental design and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Previous research has shown that neural ensembles in the nucleus accumbens encode approach behavior between mates, functional connections between nucleus accumbens and prefrontal cortex predict social contact, mated voles exhibit empathy-like consolation behavior, and approximately 18 brain regions shape bonding-relevant processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 accurately summarize prior literature (Scribner et al., 2020; Amadei et al., 2017; Burkett et al., 2016; Walum and Young, 2018) and provide important context for the current study's contribution to understanding prairie vole bonding neurobiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Social interactions are accompanied by coordinated neural states across multiple species (wasps, fish, bats, mice, humans), including shared brain-transcriptomic signatures after competitive interactions and correlated neural activity in frontal cortex during social interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 accurately summarize comparative literature (Hasson et al., 2012; Kingsbury et al., 2019; Kinreich et al., 2017; Long et al., 2020; Vu et al., 2020; Zhang and Yartsev, 2019; Uy et al., 2021) and provide important theoretical context for the hypothesis that bonded individuals coordinate neural states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Sex differences in neuroendocrine mechanisms mean behaviors are often sexually dimorphic, and genome-wide association studies in monogamous oldfield mice implicate different mechanisms in regulation of female and male parental care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 accurately summarize theoretical work (De Vries, 2004) and empirical findings (Bendesky et al., 2017) on sexual dimorphism in social behavior mechanisms. This provides important context for the alternative hypothesis that the current study tested (and largely rejected).",
+    "result_type": "MINOR"
+  }
+]

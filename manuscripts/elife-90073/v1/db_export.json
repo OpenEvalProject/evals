@@ -1,0 +1,2507 @@
+{
+  "submission": {
+    "id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:26:38.042910Z",
+    "updated_at": "2025-11-20T20:26:38.042910Z"
+  },
+  "content": [
+    {
+      "id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "content_type": "manuscript",
+      "content_text": "# Explicit ion modeling predicts physicochemical interactions for chromatin organization\n\n## Authors\n\n- Xingcheng Lin<sup>1</sup> ([ORCID: 0000-0002-9378-6174](https://orcid.org/0000-0002-9378-6174))\n- Bin Zhang<sup>1</sup> ([ORCID: 0000-0002-3685-7503](https://orcid.org/0000-0002-3685-7503)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMolecular mechanisms that dictate chromatin organization in vivo are under active investigation, and the extent to which intrinsic interactions contribute to this process remains debatable. A central quantity for evaluating their contribution is the strength of nucleosome-nucleosome binding, which previous experiments have estimated to range from 2 to 14 kBT. We introduce an explicit ion model to dramatically enhance the accuracy of residue-level coarse-grained modeling approaches across a wide range of ionic concentrations. This model allows for de novo predictions of chromatin organization and remains computationally efficient, enabling large-scale conformational sampling for free energy calculations. It reproduces the energetics of protein-DNA binding and unwinding of single nucleosomal DNA, and resolves the differential impact of mono- and divalent ions on chromatin conformations. Moreover, we showed that the model can reconcile various experiments on quantifying nucleosomal interactions, providing an explanation for the large discrepancy between existing estimations. We predict the interaction strength at physiological conditions to be 9 kBT, a value that is nonetheless sensitive to DNA linker length and the presence of linker histones. Our study strongly supports the contribution of physicochemical interactions to the phase behavior of chromatin aggregates and chromatin organization inside the nucleus.\n\n## Introduction\n\nThree-dimensional genome organization plays essential roles in numerous DNA-templated processes (Dekker et al., 2013; Bonev and Cavalli, 2016; Finn and Misteli, 2019; Misteli, 2020; Lin et al., 2021b). Understanding the molecular mechanisms for its establishment could improve our understanding of these processes and facilitate genome engineering. Advancements in high-throughput sequencing and microscopic imaging have enabled genome-wide structural characterization, revealing a striking compartmentalization of chromatin at large scales (Lieberman-Aiden et al., 2009; Quinodoz et al., 2018; Su et al., 2020; Takei et al., 2021). For example, A compartments are enriched with euchromatin and activating post-translational modifications to histone proteins. They are often spatially segregated from B compartments that enclose heterochromatin with silencing histone marks (Gibcus and Dekker, 2013; Finn and Misteli, 2019; Misteli, 2020; Mirny and Dekker, 2022; Xie and Zhang, 2019).\n\nCompartmentalization has been proposed to arise from the microphase separation of different chromatin types as in block copolymer systems (Fujishiro and Sasai, 2022; Jost et al., 2014; Falk et al., 2019; Bajpai et al., 2021; Laghmach et al., 2020; Hu et al., 2013; Lesne et al., 2014; Di Pierro et al., 2016; Xie et al., 2017; Yildirim and Feig, 2018; MacPherson et al., 2018; Shi and Thirumalai, 2021; Brahmachari et al., 2022). However, the molecular mechanisms that drive the microphase separation are not yet fully understood. Protein molecules that recognize specific histone modifications have frequently been found to undergo liquid-liquid phase separation (Larson et al., 2017; Kent et al., 2020; Xie et al., 2022; Leicher et al., 2022; Latham and Zhang, 2021; Lin et al., 2021a; MacPherson et al., 2018), potentially contributing to chromatin demixing. Demixing can also arise from interactions between chromatin and various nuclear landmarks such as nuclear lamina and speckles (Brahmachari et al., 2022; Falk et al., 2019; Mirny and Dekker, 2022; Kamat et al., 2023), as well as active transcriptional processes (Hilbert et al., 2021; Jiang et al., 2022; Brahmachari et al., 2023; Goychuk et al., 2023). Furthermore, recent studies have revealed that nucleosome arrays alone can undergo spontaneous phase separation (Gibson et al., 2019; Strickfaden et al., 2020; Zhang et al., 2022), indicating that compartmentalization may be an intrinsic property of chromatin driven by nucleosome-nucleosome interactions.\n\nThe relevance of physicochemical interactions between nucleosomes to chromatin organization in vivo has been constantly debated, partly due to the uncertainty in their strength (Kruithof et al., 2009; Cui and Bustamante, 2000; Kaczmarczyk et al., 2020; Funke et al., 2016). Examining the interactions between native nucleosomes poses challenges due to the intricate chemical modifications that histone proteins undergo within the nucleus and the variations in their underlying DNA sequences (Fenley et al., 2010; Fenley et al., 2018). Many in vitro experiments have opted for reconstituted nucleosomes that lack histone modifications and feature well-positioned 601-sequence DNA (Lowary and Widom, 1998) to simplify the chemical complexity. These experiments aim to establish a fundamental reference point, a baseline for understanding the strength of interactions within native nucleosomes. Nevertheless, even with reconstituted nucleosomes, a consensus regarding the significance of their interactions remains elusive. For example, using force-measuring magnetic tweezers, Kruithof et al. estimated the inter-nucleosome binding energy to be \u223c14 kBT (Kruithof et al., 2009). On the other hand, Funke et al. introduced a DNA-origami-based force spectrometer to directly probe the interaction between a pair of nucleosomes (Funke et al., 2016), circumventing any potential complications from interpretations of single-molecule traces of nucleosome arrays. Their measurement reported a much weaker binding free energy of approximately 2 kBT. This large discrepancy in the reported reference values complicates a further assessment of the interactions between native nucleosomes and their contribution to chromatin organization in vivo.\n\nComputational modeling is well suited for reconciling the discrepancy across experiments and determining the strength of inter-nucleosome interactions. The high computational cost of atomistic simulations (Winogradoff et al., 2015; Woods et al., 2021; Li et al., 2023) has inspired several groups to calculate the nucleosome binding free energy with coarse-grained models (Moller et al., 2019; Farr et al., 2021). However, the complex distribution of charged amino acids and nucleotides at nucleosome interfaces places a high demand on force field accuracy. In particular, most existing models adopt a mean-field approximation with the Debye-H\u00fcckel theory (Phillips, 2012) to describe electrostatic interactions in an implicit-solvent environment (Izadi et al., 2016; Bascom and Schlick, 2018; Moller et al., 2019; Farr et al., 2021), preventing an accurate treatment of the complex salt conditions explored in experiments. Further force field development is needed to improve the accuracy of coarse-grained modeling across different experimental settings (Freeman et al., 2011; Hinckley and de Pablo, 2015; Sun et al., 2022; Hayes et al., 2015).\n\nWe introduce a residue-level coarse-grained explicit ion model for simulating chromatin conformations and quantifying inter-nucleosome interactions. We validate our model\u2019s accuracy through extensive simulations, demonstrating that it reproduces the binding affinities of protein-DNA complexes (Privalov et al., 2011) and energetic cost of nucleosomal DNA unwinding (Hall et al., 2009). Further simulations of chromatin at various salt concentrations reproduce experimentally measured sedimentation coefficients (Correll et al., 2012). We also reveal extensive close contacts between histone proteins and DNA across nucleosomes, the perturbation of which explains the discrepancy among various experimental studies. Finally, we determined the binding free energy between a pair of nucleosomes under physiological salt concentrations as \u223c9 kBT. While longer linker DNA would reduce this binding energy, linker histones can more than compensate this reduction to mediate inter-nucleosome interactions with disordered, charged terminal tails. Our study supports the importance of intrinsic physicochemical interactions in chromatin organization in vivo.\n\n## Results\n\n### Counterion condensation accommodates nucleosomal DNA unwrapping\n\nVarious single-molecule studies have been carried out to probe the stability of nucleosomes and the interactions between histone proteins and DNA (Bennink et al., 2001; Cui and Bustamante, 2000; Pope et al., 2005; Bancaud et al., 2007; Hall et al., 2009). The DNA-unzipping experiment performed by Hall et al., 2009, is particularly relevant since the measured forces can be converted into a free energy profile of DNA unwinding at a base-pair resolution, as shown by Forties et al. with a continuous-time Markov model (Forties et al., 2011). The high-resolution quantification of nucleosome energetics is valuable for benchmarking the accuracy of computational models.\n\nWe introduce a coarse-grained explicit ion model for chromatin simulations (Figure 1). The model represents each amino acid with one coarse-grained bead and three beads per nucleotide. It resolves the differences among various chemical groups to accurately describe biomolecular interactions with physical chemistry potentials. Our explicit representation of monovalent and divalent ions enables a faithful description of counterion condensation and its impact on electrostatic interactions between protein and DNA molecules. Additional model details are provided in the Materials and methods and Appendix.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig1-v1.jpg)\n\n**Figure 1.:** The left panel presents a snapshot for the simulation box of a 147 bp nucleosome in a solution of 100 mM NaCl and 0.5 mM MgCl2. The nucleosomal DNA and histone proteins are colored in red and white, respectively. The zoom-in on the right highlights the condensation of ions around the nucleosome, with Na+ in cyan and Mg2+ in yellow. Negative residues of the histone proteins are colored in pink.\n\nWe performed umbrella simulations (Torrie and Valleau, 1977) to determine the free energy profile of nucleosomal DNA unwinding. The experimental buffer condition of 0.10 M NaCl and 0.5 mM MgCl2 (Hall et al., 2009) was adopted in simulations for direct comparison. As shown in Figure 2B, the simulated values match well with experimental results over a wide range. Furthermore, we computed the binding free energy for a diverse set of protein-DNA complexes and the simulated values again match well with experimental data (Figure 2\u2014figure supplement 1), supporting the model\u2019s accuracy.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig2-v1.jpg)\n\n**Figure 2.:** (A) Illustration of the umbrella simulation setup using the end-to-end distance between two DNA termini as the collective variable. The same color scheme as in Figure 1 is adopted. Only ions close to the nucleosomes are shown for clarity. (B) Comparison between simulated (black) and experimental (red) free energy profile as a function of the unwrapped DNA base pairs. Error bars were computed as the standard deviation of three independent estimates. (C) The average number of Na+ ions within 10 \u00c5 of the nucleosomal DNA (top) and Cl\u2212ions within 10 \u00c5 of histone proteins (bottom) are shown as a function of the unwrapped DNA base pairs. Error bars were computed as the standard deviation of three independent estimates.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Experimental and simulated binding free energies are compared for nine protein-DNA complexes (Privalov et al., 2011), with a Pearson correlation coefficient of 0.6. The PDB ID for each complex is indicated in red, and the diagonal line is drawn in blue. The significant correlation between simulated and experimental values supports the accuracy of the model. To further enhance the agreement between the two, it will be necessary to implement specific non-bonded interactions that can resolve differences among amino acids and nucleotides beyond simple electrostatics. Such modifications will be interesting avenues for future research. See text section \u2018Binding free energy of protein-DNA complexes\u2019 for simulation details.\n\nCounterions are often released upon protein-DNA binding to make room for close contacts at the interface, contributing favorably to the binding free energy in the form of entropic gains (Schiessel, 2003). However, previous studies have shown that the histone-DNA interface in a fully wrapped nucleosome configuration is not tightly sealed but instead permeated with water molecules and mobile ions (Davey et al., 2002; Materese et al., 2009). Given their presence in the bound form, how these counterions contribute to nucleosomal DNA unwrapping remains to be shown. We calculated the number of DNA-bound cations and protein-bound anions as DNA unwraps. Our results, shown in Figure 2C, indicate that only a modest amount of extra Na+ and Cl\u2212 ions becomes associated with the nucleosome as the outer DNA layer unwraps. However, significantly more ions become bound when the inner layer starts to unwrap (after 73 bp). These findings suggest that counterion release may contribute more significantly to the inner layer wrapping, potentially caused by a tighter protein-DNA interface.\n\n### Charge neutralization with Mg2+ compacts chromatin\n\nIn addition to contributing to the stability of individual nucleosomes, counterions can also impact higher-order chromatin organization. Numerous groups have characterized the structures of nucleosome arrays (Widom, 1986; Schwarz et al., 1996; Engelhardt, 2004; Correll et al., 2012; Grigoryev et al., 2009; Allahverdi et al., 2015), revealing a strong dependence of chromatin folding on the concentration and valence of cations.\n\nTo further understand the role of counterions in chromatin organization, we studied a 12-mer with 20-bp-long linker DNA under different salt conditions. We followed the experiment setup by Correll et al., 2012, that immerses chromatin in solutions with 5 mM NaCl, 150 mM NaCl, 0.6 mM MgCl2, or 1 mM MgCl2. To facilitate conformational sampling, we carried out umbrella simulations with a collective variable that quantifies the similarity between a given configuration and a reference two-start helical structure. Simulation details and the precise definition of the collective variable are provided in the Materials and methods and Appendix. Data from different umbrella windows were combined together with proper reweighting (Kumar et al., 1992) for analysis.\n\nAs shown in Figure 3A, the average sedimentation coefficients determined from our simulations match well with experimental values. Specifically, the simulations reproduce the strong contrast in chromatin size between the two systems with different NaCl concentrations. Chromatin under 5 mM NaCl features an extended configuration with minimal stacking between one and three nucleosomes (Figure 3B). On the other hand, the compaction is evident at 150 mM NaCl. Notably, in agreement with previous studies (Ding et al., 2021; Liu et al., 2022; Cai et al., 2018; Dombrowski et al., 2022), we observe tri-nucleosome configurations as chromatin extends. Finally, the simulations also support that divalent ions are more effective in packaging chromatin than NaCl. Even in the presence of 0.6 mM MgCl2, the chromatin sedimentation coefficient is comparable to that obtained at 150 mM of NaCl.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig3-v1.jpg)\n\n**Figure 3.:** (A) Top: Comparison of simulated and experimental (Correll et al., 2012) sedimentation coefficients of chromatin at different salt concentrations. Bottom: Number of DNA charges neutralized by bound cations (yellow, left y-axis label) and the fraction of ions bound to DNA (red, right y-axis label) at different salt concentrations. The error bars were estimated from the standard deviation of simulated probability distributions (Figure 3\u2014figure supplement 1). (B) Representative chromatin structures with sedimentation coefficients around the mean values at different salt concentrations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Probability distribution of sedimentation coefficients calculated from the simulation with Na+ ions. (B) Probability distribution of sedimentation coefficients calculated from the simulation with Mg2+ ions. (C) Probability distribution of neutralized charges calculated from the simulation with Na+ ions. (D) Probability distribution of neutralized charges calculated from the simulation with Mg2+ ions. (E) Probability distribution of the fraction of bound ions calculated from the simulation with Na+ ions. (F) Probability distribution of the fraction of bound ions calculated from the simulation with Mg2+ ions.\n\nWe further characterized ions that are in close contact with DNA to understand their impact on chromatin organization. Our simulations support the condensation of cations, especially for divalent ions (Figure 3A, bottom) as predicted by the Manning theory (Manning, 1978; Clark and Kimura, 1990). Ion condensation weakens the repulsion among DNA segments that prevents chromatin from collapsing. Notably, the fraction of bound Mg2+ is much higher than Na+. Correspondingly, the amount of neutralized negative charges is always greater in systems with divalent ions, despite the significantly lower salt concentrations. The difference between the two types of ions arises from the more favorable interactions between Mg2+ and phosphate groups that more effectively offset the entropy loss due to ion condensation (Clark and Kimura, 1990). While higher concentrations of NaCl do not dramatically neutralize more charges, the excess ions provide additional screening to weaken the repulsion among DNA segments, stabilizing chromatin compaction.\n\n### Close contacts drive nucleosome binding free energy\n\nEncouraged by the explicit ion model\u2019s accuracy in reproducing experimental measurements of single-nucleosomes and nucleosome arrays, we moved to directly quantify the strength of inter-nucleosomes interactions. We once again focus on reconstituted nucleosomes for a direct comparison with in vitro experiments. These experiments have yielded a wide range of values, ranging from 2 to 14 kBT (Funke et al., 2016; Cui and Bustamante, 2000; Kruithof et al., 2009). Accurate quantification will offer a reference value for conceptualizing the significance of physicochemical interactions among native nucleosomes in chromatin organization in vivo.\n\nTo reconcile the discrepancy among various experimental estimations, we directly calculated the binding free energy between a pair of nucleosomes with umbrella simulations. We adopted the same ionic concentrations as in the experiment performed by Funke et al., 2016, with 35 mM NaCl and 11 mM MgCl2. We focus on this study since the experiment directly measured the inter-nucleosomal interactions, allowing straightforward comparison with simulation results. Furthermore, the reported value for nucleosome binding free energy deviates the most from other studies. In one set of umbrella simulations, we closely mimicked the DNA-origami device employed by Funke et al. to move nucleosomes along a predefined path for disassociation (Figure 4A, A1 to A3). For example, neither nucleosome can freely rotate (Figure 4\u2014figure supplement 1); the first nucleosome is restricted to the initial position, and the second nucleosome can only move within the Y-Z plane along the arc 15 nm away from the origin. For comparison, we performed a second set of independent simulations without imposing any restrictions on nucleosome orientations. Additional simulation details can be found in Materials and methods and Appendix.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig4-v1.jpg)\n\n**Figure 4.:** (A) Illustration of the simulation protocol employed to mimic the nucleosome unbinding pathway dictated by the DNA-origami device (Funke et al., 2016). The three configurations, A1, A2, and A3, corresponding to the three cyan dots in part B at distances 62.7, 80.2, and 96.3 \u00c5. For comparison, a tightly bound configuration uncovered in simulations without any restraints of nucleosome movement is shown as A1\u2019. The number of contacts formed by histone tails and DNA (Htail-DNA) and by histone core and DNA (Hcore-DNA) from different nucleosomes is shown for A1 and A1\u2019. (B) Free energy profile as a function of the distance between the geometric centers of the two nucleosomes, computed from unrestrained (black) and DNA-origami-restrained simulations (red). Error bars were computed as the standard deviation of three independent estimates. (C) Average inter-nucleosomal contacts between DNA and histone tail (orange) and core (blue) residues, computed from unrestrained and DNA-origami-restrained simulations. Error bars were computed as the standard deviation of three independent estimates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematics of the DNA-origami-based force spectrometer, reproduced from Figure 1 of Funke et al., 2016. (B) Schematics for the spatial restraints imposed on nucleosomes in our simulations to mimic the DNA-origami setup. The vertex angle between two arms of the DNA-origami system is denoted by $\u03a6$. The two cartoons on the side illustrate the angle between two nucleosome dyad axes and the angle between two nucleosome planes. To define the coordinate system and other notations, please refer to section \u2018Simulations at high salt concentrations\u2019 and the accompanying text.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Comparison between the simulated (black) and experimental (red) free energy profile as a function of the inter-nucleosome distance. Error bars were computed as the standard deviation of three independent estimates. The barrier observed between 60 \u00c5 and 80 \u00c5 arises from the unwinding of nucleosomal DNA when the two nucleosomes are in close proximity, as highlighted in the orange circle. (B) Comparison between the simulated (black) and experimental (red) free energy profile as a function of the vertex angle. Error bars were computed as the standard deviation of three independent estimates. (C) Illustration of the vertex angle $\u03a6$ used in panel (B).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The average number of inter-nucleosome contacts between DNA and histone tails (A) or histone cores (B) is plotted as a function of the distance $r$. The error bars were estimated as the standard deviation of three equal partitions of the simulations.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** The unrestricted simulations favor a smaller angle $\\theta$ between two nucleosomal planes compared to the DNA-origami-restrained simulations, related to Figure 4 of the main text.(A) Illustration of the collective variables used in the umbrella-sampling simulation. $\\theta$ is the angle between two nucleosomal planes, and $r$ is the distance between the geometric centers of two nucleosomes. $w_{1}\u2192$ and $w_{2}\u2192$ represent the vectors perpendicular to the nucleosome planes. See text section \u2018Simulations at high salt concentrations\u2019 for further definitions of the collective variables. (B) 2D free energy landscape for nucleosome interactions under 35 mM NaCl and 11 mM MgCl2 salt, plotted as a function of $r$ and $\\theta$. (C) The average value of $\\theta$ as a function of the distance $r$ for the unrestricted (red) and the DNA-origami-restrained (black) simulations. The error bars were estimated as the standard deviation of three equal partitions of the simulations.\n\nStrikingly, the two sets of simulations produced dramatically different binding free energies. Restricting nucleosome orientations produced a binding free energy of \u223c2 kBT, reproducing the experimental value (Figure 4B, Figure 4\u2014figure supplement 2). On the other hand, the binding free energy increased to 15 kBT upon removing the constraints.\n\nFurther examination of inter-nucleosomal contacts revealed the origin of the dramatic difference in nucleosome binding free energies. As shown in Figure 4C, the average number of contacts formed between histone tails and DNA from different nucleosomes is around 150 and 10 in the two sets of simulations. A similar trend is observed for histone core-DNA contacts across nucleosomes. The differences are most dramatic at small distances (Figure 4B, Figure 4\u2014figure supplement 3) and are clearly visible in the most stable configurations. For example, from the unrestricted simulations, the most stable binding mode corresponds to a configuration in which the two nucleosomes are almost parallel to each other (see configuration A1\u2019 in Figure 4A), with the angle between the two nucleosome planes close to zero (Figure 4B, Figure 4\u2014figure supplement 4). However, the inherent design of the DNA-origami device renders this binding mode inaccessible, and the smallest angle between the two nucleosome planes is around 23\u00b0 (see configuration A1 in Figure 4A). Therefore, a significant loss of inter-nucleosomal contacts caused the small binding free energy seen experimentally.\n\n### Modulation of nucleosome binding free energy by in vivo factors\n\nThe predicted strength for unrestricted inter-nucleosome interactions supports their significant contribution to chromatin organization in vivo. However, the salt concentration studied above and in the DNA-origami experiment is much higher than the physiological value (Kaczmarczyk et al., 2020). To further evaluate the in vivo significance of inter-nucleosome interactions, we computed the binding free energy at the physiological salt concentration of 150 mM NaCl and 2 mM of MgCl2.\n\nWe observe a strong dependence of nucleosome orientations on the inter-nucleosome distance. A collective variable, $\\theta$, was introduced to quantify the angle between the two nucleosomal planes (Figure 5A). As shown in two-dimensional binding free energy landscape of inter-nucleosome distance, $r$, and $\\theta$ (Figure 5B), at small distances (\u223c60 \u00c5), the two nucleosomes prefer a face-to-face binding mode with small $\\theta$ values. As the distance increases, the nucleosomes will almost undergo a 90\u00b0 rotation to adopt perpendicular positions. Such orientations allow the nucleosomes to remain in contact and is more energetically favorable. The orientation preference gradually diminishes at large distances once the two nucleosomes are completely detached. Importantly, we observed a strong inter-nucleosomal interaction with two nucleosomes wrapped by 147 bp 601-sequence DNA (\u223c9 kBT).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig5-v1.jpg)\n\n**Figure 5.:** (A) Illustration of the collective variable, $\\theta$, defined as the angle between two nucleosomal planes, and $r$ defined as the distance between the nucleosome geometric centers. $w_{1}\u2192$ and $w_{2}\u2192$ represent the axes perpendicular to the nucleosomal planes. (B) The 2D binding free energy profile as a function of $\\theta$ and $r$ at the physiological salt condition (150 mM NaCl and 2 mM MgCl2) for nucleosomes with the 601 sequence. (C) Dependence of nucleosome binding free energy on nucleosome repeat length (NRL) and linker histone H1.0. Error bars were computed as the standard deviation of three independent estimates. (D) Representative structure showing linker histones (red and blue) mediating inter-nucleosomal contacts.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** See text section \u2018Simulations at the physiological salt concentration\u2019 for further discussions on simulation details. (A) Illustration of the collective variables used in umbrella-sampling simulations. $\\theta$ is the angle between two nucleosomal planes, and $r$ is the distance between the geometric centers of two nucleosomes. $w_{1}\u2192$ and $w_{2}\u2192$ represent the vectors perpendicular to the nucleosome planes. (B) The free energy profile as a function of the distance $r$ between the geometric centers of two nucleosomes with 601, poly-dA:dT, and poly-dG:dC sequences. Error bars were computed as the standard deviation of three independent estimates. (C) The 2D free energy profiles as a function of $\\theta$ and $r$. The simulations used nucleosomes with 601, poly-dA:dT, and poly-dG:dC sequences.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) The average number of inter-nucleosome contacts between histone proteins and nucleosomal DNA is plotted as a function of the distance $r$ between the geometric centers of two nucleosomes. The error bars were estimated as the standard deviation of three equal partitions of the simulations. (B) Representative structures from simulations with poly-dA:dT (left) and poly-dG:dC (right) nucleosomes. Noticeable DNA unwrapping can be seen in poly-dA:dT nucleosomes, contributing to the increased cross-nucleosome contacts.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/90073/elife-90073-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** See text section \u2018Simulations at the physiological salt concentration\u2019 for further discussions on simulation details. (A) Illustration of the collective variables used in the umbrella-sampling simulations. $\\theta$ is the angle between two nucleosome planes, and $r$ is the distance between the geometric centers of two nucleosomes. $w_{1}\u2192$ and $w_{2}\u2192$ represent the vectors perpendicular to the nucleosome planes. (B) 2D free energy profiles as a function of $\\theta$ and $r$ for the three systems indicated in the titles.\n\nFurthermore, we found that the nucleosome binding free energy is minimally impacted by the precise DNA sequence. For example, when the 601 sequence is replaced with poly-dA:dT or poly-dG:dC, the free energy only varied by \u223c2 kBT (Figure 5\u2014figure supplement 1). However, the poly-dA:dT sequence produced stronger binding while poly-dG:dC weakened the interactions. The sequence specific effects are potentially due to the increased stiffness of poly-dA:dT DNA (Ortiz and de Pablo, 2011), which causes the DNA to unwrap more frequently, increasing cross-nucleosome contacts at larger distances (Figure 5\u2014figure supplement 2).\n\nIn addition to variations in DNA sequences, in vivo nucleosomes also feature different linker lengths. We performed simulations that extend the 601 sequence with 10 extra base pairs of poly-dA:dT sequence at each end, reaching a nucleosome repeat length (NRL) of 167 bp. Consistent with previous studies (Mangenot et al., 2002; Correll et al., 2012; Huang et al., 2018), increasing the NRL weakened inter-nucleosomal interactions (Figure 5C and Figure 5\u2014figure supplement 3), reducing the binding free energy to \u223c6 kBT.\n\nImportantly, we found that the weakened interactions upon extending linker DNA can be more than compensated for by the presence of histone H1 proteins. This is demonstrated in Figure 5C and Figure 5\u2014figure supplement 3, where the free energy cost for tearing apart two nucleosomes with 167 bp DNA in the presence of linker histones (blue) is significantly higher than the curve for bare nucleosomes (red). Notably, at larger inter-nucleosome distances, the values even exceed those for 147 bp nucleosomes (black). A closer examination of the simulation configurations suggests that the disordered C-terminal tail of linker histones can extend and bind the DNA from the second nucleosome, thereby stabilizing the inter-nucleosomal contacts (as shown in Figure 5D). Our results are consistent with prior studies that underscore the importance of linker histones in chromatin compaction (Finch and Klug, 1976; Zhou et al., 2021), particularly in eukaryotic cells with longer linker DNA (Routh et al., 2008; Dombrowski et al., 2022).\n\n## Discussion\n\nWe introduced a residue-level coarse-grained model with explicit ions to accurately account for electrostatic contributions to chromatin organization. The model achieves quantitative accuracy in reproducing experimental values for the binding affinity of protein-DNA complexes, the energetics of nucleosomal DNA unwinding, nucleosome binding free energy, and the sedimentation coefficients of nucleosome arrays. It captures the counterion atmosphere around the nucleosome core particle as seen in all-atom simulations (Materese et al., 2009) and highlights the contribution of counterions to nucleosome stability. The coarse-grained model also succeeds in resolving the difference between monovalent and divalent ions, supporting the efficacy of divalent ions in neutralizing negative charges and offsetting repulsive interactions among DNA segments.\n\nOne significant finding from our study is the predicted strong inter-nucleosome interactions under the physiological salt environment, reaching approximately 9 $k_{B}T$. We showed that the much lower value reported in a previous DNA-origami experiment is due to the restricted nucleosomal orientation inherent to the device design. Unrestricted nucleosomes allow more close contacts to stabilize binding. A significant nucleosome binding free energy also agrees with the high forces found in single-molecule pulling experiments that are needed for chromatin unfolding (Kruithof et al., 2009; Meng et al., 2015; Kaczmarczyk et al., 2020). We also demonstrate that this strong inter-nucleosomal interaction is largely preserved at longer NRL in the presence of linker histone proteins. While post-translational modifications of histone proteins may influence inter-nucleosomal interactions, their effects are limited, as indicated by Ding et al. (Ding et al., 2021), and are unlikely to completely abolish the significant interactions reported here. Therefore, we anticipate that, in addition to molecular motors, chromatin regulators, and other molecules inside the nucleus, intrinsic inter-nucleosome interactions are important players in chromatin organization in vivo.\n\nWe focused our study on single chromatin chains. Strong inter-nucleosome interactions support the compaction and stacking of chromatin, promoting the formation of fibril-like structures. However, as shown in many studies (Maeshima et al., 2016; Ricci et al., 2015; Ou et al., 2017; Zhang et al., 2022), such fibril configurations can hardly be detected in vivo. It is worth emphasizing that this lack of fibril configurations does not contradict our conclusion on the significance of inter-nucleosome interactions. In a prior paper, we found that many in vivo factors, most notably crowding, could disrupt fibril configurations in favor of inter-chain contacts (Liu et al., 2022). The inter-chain contacts can indeed be driven by favorable inter-nucleosome interactions.\n\nSeveral aspects of the coarse-grained model presented here can be further improved. For instance, the introduction of specific protein-DNA interactions could help address the differences in non-bonded interactions between amino acids and nucleotides beyond electrostatics (Lin et al., 2021a). Such a modification would enhance the model\u2019s accuracy in predicting interactions between chromatin and chromatin proteins. Additionally, the single-bead-per-amino-acid representation used in this study encounters challenges when attempting to capture the influence of histone modifications, which are known to be prevalent in native nucleosomes. Multiscale simulation approaches may be necessary (Collepardo-Guevara et al., 2015). One could first assess the impact of these modifications on the conformation of disordered histone tails using atomistic simulations. By incorporating these conformational changes into the coarse-grained model, systematic investigations of histone modifications on nucleosome interactions and chromatin organization can be conducted. Such a strategy may eventually enable the direct quantification of interactions among native nucleosomes and even the prediction of chromatin organization in vivo.\n\n## Materials and methods\n\n### Coarse-grained modeling of chromatin\n\nThe large system size of chromatin and the slow timescale for its conformational relaxation necessitates coarse-grained modeling. Following previous studies (Leicher et al., 2020; Ding et al., 2021; Lin et al., 2021a; Lin et al., 2021b; Liu et al., 2022), we adopted a residue-level coarse-grained model for efficient simulations of chromatin. The structure-based model (Clementi et al., 2000; Noel et al., 2016) was applied to represent the histone proteins with one bead per amino acid and to preserve the tertiary structure of the folded regions. The disordered histone tails were kept flexible without tertiary structure biases. A sequence-specific potential, in the form of the Lennard-Jones (LJ) potential and with the strength determined from the Miyazwa-Jernigan (MJ) potential (Miyazawa and Jernigan, 1985), was added to describe the interactions between amino acids. The 3SPN.2C model was adopted to represent each nucleotide with three beads and interactions among DNA beads follow the potential outlined in Freeman et al., 2014, except that the charge of each phosphate site was switched from \u20130.6 to \u20131.0 to account for the presence of explicit ions. The Coulombic potential was applied between charged protein and DNA particles. In addition, a weak, non-specific LJ potential was used to account for the excluded volume effect among all protein-DNA beads. Detail expressions for protein-protein and protein-DNA interaction potentials can be found in Ding et al., 2021, and the Appendix section \u2018Coarse-grained protein-DNA model\u2019.\n\nWe observe that residue-level coarse-grained models have been extensively utilized in prior studies to examine the free energy penalty associated with nucleosomal DNA unwinding (Lequieu et al., 2016; Parsons and Zhang, 2019; Zhang et al., 2016), sequence-dependent nucleosome sliding (Lequieu et al., 2017; Brandani et al., 2018), binding free energy between two nucleosomes (Moller et al., 2019), chromatin folding (Ding et al., 2021; Liu et al., 2022), the impact of histone modifications on tri-nucleosome structures (Chang and Takada, 2016), and protein-chromatin interactions (Watanabe et al., 2018; Leicher et al., 2020). The frequent quantitative agreement between simulation and experimental results supports the utility of such models in chromatin studies. Our introduction of explicit ions, as detailed in Appendix section \u2018Coarse-grained explicit ion model\u2019, further extends the applicability of these models to explore the dependence of chromatin conformations on salt concentrations.\n\n### Coarse-grained modeling of counterions\n\nExplicit particle-based representations for monovalent and divalent ions are needed to accurately account for electrostatic interactions (Freeman et al., 2011; Hinckley and de Pablo, 2015; Hayes et al., 2015; Denesyuk and Thirumalai, 2015; Denesyuk et al., 2018; Wang et al., 2022; Sun et al., 2022). We followed Freeman et al., 2011, to introduce explicit ions (see Figure 1) and adopted their potentials to describe the interactions between ions and nucleotide particles, with detailed expressions provided in the Appendix section \u2018Coarse-grained explicit ion model\u2019. Parameters in these potentials were tuned by Freeman et al., 2011, to reproduce the radial distribution functions and the potential of mean force between ion pairs determined from all-atom simulations.\n\nThis explicit ion model was originally introduced for nucleic acid simulations. We generalized the model for protein simulations by approximating the interactions between charged amino acids and ions with parameters tuned for phosphate sites. Parameter values for ion-amino acid interactions are provided in Table 1 and Table 2.\n\n**Table 1.**\n Summary of parameters used to describe interactions between ions and charged particles.See text section \u2018Coarse-grained explicit ion model\u2019 for definitions of various parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Coarse-grained pair</th>\n      <th>\u03f5(kcal/mol)</th>\n      <th>\u03c3(\u00c5)</th>\n      <th>rm\u03f5(\u00c5)</th>\n      <th>\u03c3\u03f5(\u00c5)</th>\n      <th>H1(kcal/mol)</th>\n      <th>rmh1(\u00c5)</th>\n      <th>\u03c3h1(\u00c5)</th>\n      <th>H2(kcal/mol)</th>\n      <th>rmh2(\u00c5)</th>\n      <th>\u03c3h2(\u00c5)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P-P</td>\n      <td>0.18379</td>\n      <td>6.86</td>\n      <td>6.86</td>\n      <td>0.5</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Na+-P</td>\n      <td>0.02510</td>\n      <td>4.14</td>\n      <td>3.44</td>\n      <td>1.25</td>\n      <td>3.15488</td>\n      <td>4.1</td>\n      <td>0.57</td>\n      <td>0.47801</td>\n      <td>6.5</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>Na+-AA+*</td>\n      <td>0.239</td>\n      <td>4.065</td>\n      <td>3.44</td>\n      <td>1.25</td>\n      <td>3.15488</td>\n      <td>4.1</td>\n      <td>0.57</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Na+-AA\u2212\u2020</td>\n      <td>0.239</td>\n      <td>4.065</td>\n      <td>3.44</td>\n      <td>1.25</td>\n      <td>3.15488</td>\n      <td>4.1</td>\n      <td>0.57</td>\n      <td>0.47801</td>\n      <td>6.5</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>Mg2+-P</td>\n      <td>0.1195</td>\n      <td>4.87</td>\n      <td>3.75</td>\n      <td>1.0</td>\n      <td>1.29063</td>\n      <td>6.1</td>\n      <td>0.5</td>\n      <td>0.97992</td>\n      <td>8.3</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>Mg2+-AA+</td>\n      <td>0.239</td>\n      <td>3.556</td>\n      <td>3.75</td>\n      <td>1.0</td>\n      <td>1.29063</td>\n      <td>6.1</td>\n      <td>0.5</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Mg2+-AA\u2212</td>\n      <td>0.239</td>\n      <td>3.556</td>\n      <td>3.75</td>\n      <td>1.0</td>\n      <td>1.29063</td>\n      <td>6.1</td>\n      <td>0.5</td>\n      <td>0.97992</td>\n      <td>8.3</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-P</td>\n      <td>0.08121</td>\n      <td>5.5425</td>\n      <td>4.2</td>\n      <td>0.5</td>\n      <td>0.83652</td>\n      <td>6.7</td>\n      <td>1.5</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-AA+</td>\n      <td>0.239</td>\n      <td>4.8725</td>\n      <td>4.2</td>\n      <td>0.5</td>\n      <td>0.83652</td>\n      <td>6.7</td>\n      <td>1.5</td>\n      <td>0.47801</td>\n      <td>5.6</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-AA\u2212</td>\n      <td>0.239</td>\n      <td>4.8725</td>\n      <td>4.2</td>\n      <td>0.5</td>\n      <td>0.83652</td>\n      <td>6.7</td>\n      <td>1.5</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Na+-Na+</td>\n      <td>0.01121</td>\n      <td>2.43</td>\n      <td>2.7</td>\n      <td>0.57</td>\n      <td>0.17925</td>\n      <td>5.8</td>\n      <td>0.57</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Na+-Mg2+</td>\n      <td>0.04971</td>\n      <td>2.37</td>\n      <td>2.37</td>\n      <td>0.5</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Na+-Cl\u2212</td>\n      <td>0.08387</td>\n      <td>3.1352</td>\n      <td>3.9</td>\n      <td>2.06</td>\n      <td>5.49713</td>\n      <td>3.3</td>\n      <td>0.57</td>\n      <td>0.47801</td>\n      <td>5.6</td>\n      <td>0.4</td>\n    </tr>\n    <tr>\n      <td>Mg2+-Mg2+</td>\n      <td>0.89460</td>\n      <td>1.412</td>\n      <td>1.412</td>\n      <td>0.5</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n    <tr>\n      <td>Mg2+-Cl\u2212</td>\n      <td>0.49737</td>\n      <td>4.74</td>\n      <td>4.48</td>\n      <td>0.57</td>\n      <td>1.09943</td>\n      <td>5.48</td>\n      <td>0.44</td>\n      <td>0.05975</td>\n      <td>8.16</td>\n      <td>0.35</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-Cl\u2212</td>\n      <td>0.03585</td>\n      <td>4.045</td>\n      <td>4.2</td>\n      <td>0.56</td>\n      <td>0.23901</td>\n      <td>6.2</td>\n      <td>0.5</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td>\u2013</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Positive amino acids.\u2020Negative amino acids._\n\n**Table 2.**\n Summary of parameters used to describe the WCA interactions between ions and neutral particles.See text section \u2018Coarse-grained explicit ion model\u2019 for definitions of various parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Coarse-grained pair</th>\n      <th>\u03f5(kcal/mol)</th>\n      <th>\u03c3(\u00c5)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Na+-S*</td>\n      <td>0.239</td>\n      <td>4.315</td>\n    </tr>\n    <tr>\n      <td>Na+-A\u2020</td>\n      <td>0.239</td>\n      <td>3.915</td>\n    </tr>\n    <tr>\n      <td>Na+-T\u2021</td>\n      <td>0.239</td>\n      <td>4.765</td>\n    </tr>\n    <tr>\n      <td>Na+-G\u00a7</td>\n      <td>0.239</td>\n      <td>3.665</td>\n    </tr>\n    <tr>\n      <td>Na+-C\u00b6</td>\n      <td>0.239</td>\n      <td>4.415</td>\n    </tr>\n    <tr>\n      <td>Na+-AA**</td>\n      <td>0.239</td>\n      <td>4.065</td>\n    </tr>\n    <tr>\n      <td>Mg2+-S</td>\n      <td>0.239</td>\n      <td>3.806</td>\n    </tr>\n    <tr>\n      <td>Mg2+-A</td>\n      <td>0.239</td>\n      <td>3.406</td>\n    </tr>\n    <tr>\n      <td>Mg2+-T</td>\n      <td>0.239</td>\n      <td>4.256</td>\n    </tr>\n    <tr>\n      <td>Mg2+-G</td>\n      <td>0.239</td>\n      <td>3.156</td>\n    </tr>\n    <tr>\n      <td>Mg2+-C</td>\n      <td>0.239</td>\n      <td>3.906</td>\n    </tr>\n    <tr>\n      <td>Mg2+-AA**</td>\n      <td>0.239</td>\n      <td>3.556</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-S</td>\n      <td>0.239</td>\n      <td>5.1225</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-A</td>\n      <td>0.239</td>\n      <td>4.7225</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-T</td>\n      <td>0.239</td>\n      <td>5.5725</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-G</td>\n      <td>0.239</td>\n      <td>4.4725</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-C</td>\n      <td>0.239</td>\n      <td>5.2225</td>\n    </tr>\n    <tr>\n      <td>Cl\u2212-AA**</td>\n      <td>0.239</td>\n      <td>4.8725</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Sugar.\u2020Adenine base.\u2021Thymine base.\u00a7Guanine base.\u00b6Cytosine base.**Non-charged amino acids._\n\n### Details of molecular dynamics simulations\n\nWe simulated various chromatin systems, including a single-nucleosome, two-nucleosomes, and a 12-mer nucleosome array. The initial configurations for the molecular dynamics simulations were constructed based on the crystal structure of a single nucleosome with PDB ID: 1KX5 (Davey et al., 2002) and 3LZ1 (Vasudevan et al., 2010), or a tetranucleosome with PDB ID: 1ZBB (Schalch et al., 2005). We used the 3DNA software (Lu and Olson, 2003) to add additional DNA, connect and align nucleosomes, and extend the chain length as necessary. Further details on constructing the initial configurations are provided in the Appendix section \u2018Ionic dependence of the conformation for a 12-mer nucleosomal array\u2019. Chromatin was positioned at the center of a cubic box with a length selected to avoid interactions between nucleosomes and their periodic images. Counterions were added on a uniformly spaced grid to achieve the desired salt concentrations and neutralize the system. The number of ions and the size of simulation boxes are provided in Table 3.\n\n**Table 3.**\n Summary of simulation setups used in this study.Additional simulation details can be found in text section \u2018Molecular dynamics simulation details\u2019.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Studies</th>\n      <th>Box size (nm3)</th>\n      <th>Number of\u2009Na+</th>\n      <th>Number of\u2009Mg2+</th>\n      <th>Number of\u2009Cl\u2212</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Single nucleosome 100 mM NaCl+0.5 mM\u2009MgCl2</td>\n      <td>216,000</td>\n      <td>13,017</td>\n      <td>65</td>\n      <td>13,003</td>\n    </tr>\n    <tr>\n      <td>Twelve nucleosomes 5 mM NaCl</td>\n      <td>1,331,000</td>\n      <td>6196</td>\n      <td>0</td>\n      <td>4006</td>\n    </tr>\n    <tr>\n      <td>Twelve nucleosomes 150 mM NaCl</td>\n      <td>216,000</td>\n      <td>21,695</td>\n      <td>0</td>\n      <td>19,505</td>\n    </tr>\n    <tr>\n      <td>Twelve nucleosomes 0.6 mM\u2009MgCl2</td>\n      <td>3,375,000</td>\n      <td>0</td>\n      <td>2314</td>\n      <td>2438</td>\n    </tr>\n    <tr>\n      <td>Twelve nucleosomes 1 mM MgCl2</td>\n      <td>3,375,000</td>\n      <td>0</td>\n      <td>3127</td>\n      <td>4064</td>\n    </tr>\n    <tr>\n      <td>Two 147 bp 601-seq nucleosomes 35 mM NaCl+11 mM\u2009MgCl2</td>\n      <td>125,000</td>\n      <td>2922</td>\n      <td>828</td>\n      <td>4290</td>\n    </tr>\n    <tr>\n      <td>Two 147 bp 601-seq nucleosomes 150 mM NaCl+2 mM\u2009MgCl2</td>\n      <td>216,000</td>\n      <td>19,505</td>\n      <td>260</td>\n      <td>19,737</td>\n    </tr>\n    <tr>\n      <td>Two 147 bp poly-dA:dT nucleosomes 150 mM NaCl+2 mM\u2009MgCl2</td>\n      <td>216,000</td>\n      <td>19,505</td>\n      <td>260</td>\n      <td>19,737</td>\n    </tr>\n    <tr>\n      <td>Two 147 bp poly-dG:dC nucleosomes 150 mM NaCl+2 mM\u2009MgCl2</td>\n      <td>216,000</td>\n      <td>19,505</td>\n      <td>260</td>\n      <td>19,737</td>\n    </tr>\n    <tr>\n      <td>Two 167 bp 601-seq nucleosomes 150 mM NaCl+2 mM\u2009MgCl2</td>\n      <td>216,000</td>\n      <td>19,505</td>\n      <td>260</td>\n      <td>19,657</td>\n    </tr>\n    <tr>\n      <td>Two 167 bp 601-seq nucleosomes with H1.0 150 mM NaCl+2 mM\u2009MgCl2</td>\n      <td>216,000</td>\n      <td>19,505</td>\n      <td>260</td>\n      <td>19,763</td>\n    </tr>\n  </tbody>\n</table>\n\nAll simulations were performed at constant temperature and constant volume (NVT) using the software package LAMMPS (Plimpton, 1995). The electrostatic interactions were implemented with the particle-particle particle-mesh solver, with the relative root-mean-square error in per-atom force set to 0.0001 (Hockney and Eastwood, 2021). A Nos\u00e9-Hoover style algorithm (Shinoda et al., 2004) was used to maintain the system temperature at 300 K with a damping parameter of 1 ps. We further modeled the histone core and the inner layer of the nucleosomal DNA together as a rigid body to improve computational efficiency. This approximation does not affect the thermodynamic properties of chromatin (Ding et al., 2021; Liu et al., 2022). Umbrella simulations were used to enhance the sampling of the conformational space (Torrie and Valleau, 1977), and details of the collective variables employed in these simulations are provided in the Appendix section \u2018Molecular dynamics simulation details\u2019. All the results presented in the main text are reweighted from the biased simulations by the weighted histogram algorithm (Kumar et al., 1992).\n",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yamini Dalal, National Cancer Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90073.3.sa0](https://doi.org/10.7554/eLife.90073.3.sa0)\n\nThe authors have developed a compelling coarse-grained simulation approach for nucleosome-nucleosome interactions within a chromatin array. The data presented are solid and provide new insights that allow for predictions of how chromatin interactions might occur in vivo. The tools presented herein will be valuable for the chromosome biology field.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90073.3.sa1](https://doi.org/10.7554/eLife.90073.3.sa1)\n\nIn this manuscript, the authors introduced an explicit ion model using the coarse-grained modelling approach to model the interactions between nucleosomes and evaluate their effects on chromatin organization. The strength of this method lies in the explicit representation of counterions, especially divalent ions, which are notoriously difficult to model. To achieve their aims and validate the accuracy of the model, the authors conducted coarse-grained molecular dynamics simulations and compared predicted values to the experimental values of the binding energies of protein-DNA complexes and the free energy profile of nucleosomal DNA unwinding and inter-nucleosome binding. Additionally, the authors employed umbrella sampling simulations to further validate their model, reproducing experimentally measured sedimentation coefficients of chromatin under varying salt concentrations of monovalent and divalent ions.\n\nThe significance of this study lies in the authors' coarse-grained model which can efficiently capture the conformational sampling of molecules while maintaining a low computational cost. The model reproduces the scale and, in some cases, the shape of the experimental free energy profile for specific molecule interactions, particularly inter-nucleosome interactions. Additionally, the authors' method resolves certain experimental discrepancies related to determining the strength of inter-nucleosomal interactions. Furthermore, the results from this study support the crucial role of intrinsic physicochemical interactions in governing chromatin organization within the nucleus.\n\nThe authors have successfully addressed the majority of my key concerns. I appreciate the clarification regarding the parameterization from Pablo's lab and the addition of comparisons of energy profiles as a function of inter-nucleosome distances.\n\nHowever, the statement \"The agreement is evident\" may not sufficiently capture the essence of Figure S4, as there is a shortage of substantial agreement. The authors rightly acknowledge it but should delineate the nature of the observed discrepancies.\n",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1cea1379-5f62-4a0a-a9a9-e59bc6e05545",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C1",
+      "claim": "Previous experiments have estimated the strength of nucleosome-nucleosome binding to range from 2 to 14 kBT.",
+      "claim_type": "EXPLICIT",
+      "source": "A central quantity for evaluating their contribution is the strength of nucleosome-nucleosome binding, which previous experiments have estimated to range from 2 to 14 kBT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites previous experimental work that has measured nucleosome binding energies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "1b67607f-8d6d-4193-91ea-c2d02062a0a9",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C2",
+      "claim": "The explicit ion model reproduces the energetics of protein-DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "It reproduces the energetics of protein-DNA binding and unwinding of single nucleosomal DNA, and resolves the differential impact of mono- and divalent ions on chromatin conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data comparing model predictions to experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "4efbc1fd-3f76-40e9-af27-22566e11680e",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C3",
+      "claim": "The explicit ion model reproduces the energetics of unwinding of single nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It reproduces the energetics of protein-DNA binding and unwinding of single nucleosomal DNA, and resolves the differential impact of mono- and divalent ions on chromatin conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2B comparing simulated and experimental free energy profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "1b6d3b70-cc29-4a0a-a762-cb3b1ef75345",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C4",
+      "claim": "The explicit ion model resolves the differential impact of mono- and divalent ions on chromatin conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "It reproduces the energetics of protein-DNA binding and unwinding of single nucleosomal DNA, and resolves the differential impact of mono- and divalent ions on chromatin conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 3 comparing chromatin behavior under different salt conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "3db53df3-0f7c-4787-bc87-72b7bdcbc5ae",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C5",
+      "claim": "The interaction strength between nucleosomes at physiological conditions is predicted to be 9 kBT.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict the interaction strength at physiological conditions to be 9 kBT, a value that is nonetheless sensitive to DNA linker length and the presence of linker histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational simulations at physiological salt concentrations as shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "fb1dc743-cc1e-475a-b882-6336bd11ff62",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C6",
+      "claim": "Nucleosome interaction strength is sensitive to DNA linker length.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict the interaction strength at physiological conditions to be 9 kBT, a value that is nonetheless sensitive to DNA linker length and the presence of linker histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 5C comparing different nucleosome repeat lengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "46dcd06b-c762-4330-b29f-293300d6609c",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C7",
+      "claim": "Nucleosome interaction strength is sensitive to the presence of linker histones.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict the interaction strength at physiological conditions to be 9 kBT, a value that is nonetheless sensitive to DNA linker length and the presence of linker histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 5C and 5D comparing systems with and without linker histones.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "833cf2eb-b07b-40d0-92fd-76a1af2800ee",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C8",
+      "claim": "A compartments are enriched with euchromatin and activating post-translational modifications to histone proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, A compartments are enriched with euchromatin and activating post-translational modifications to histone proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references established knowledge about chromatin compartmentalization from cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "72a6471d-abb0-4364-b3c2-4910284b45d5",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C9",
+      "claim": "A compartments are often spatially segregated from B compartments that enclose heterochromatin with silencing histone marks.",
+      "claim_type": "EXPLICIT",
+      "source": "They are often spatially segregated from B compartments that enclose heterochromatin with silencing histone marks (Gibcus and Dekker, 2013; Finn and Misteli, 2019; Misteli, 2020; Mirny and Dekker, 2022; Xie and Zhang, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references established knowledge about chromatin compartmentalization from multiple cited sources.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "932ac514-0f34-4b1b-8050-72d5eb965145",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C10",
+      "claim": "Compartmentalization has been proposed to arise from the microphase separation of different chromatin types as in block copolymer systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Compartmentalization has been proposed to arise from the microphase separation of different chromatin types as in block copolymer systems (Fujishiro and Sasai, 2022; Jost et al., 2014; Falk et al., 2019; Bajpai et al., 2021; Laghmach et al., 2020; Hu et al., 2013; Lesne et al., 2014; Di Pierro et al., 2016; Xie et al., 2017; Yildirim and Feig, 2018; MacPherson et al., 2018; Shi and Thirumalai, 2021; Brahmachari et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple cited theoretical and computational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "d2c5b105-399a-4aec-8c8d-892fd7bf9358",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C11",
+      "claim": "Protein molecules that recognize specific histone modifications have frequently been found to undergo liquid-liquid phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein molecules that recognize specific histone modifications have frequently been found to undergo liquid-liquid phase separation (Larson et al., 2017; Kent et al., 2020; Xie et al., 2022; Leicher et al., 2022; Latham and Zhang, 2021; Lin et al., 2021a; MacPherson et al., 2018), potentially contributing to chromatin demixing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple cited experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "0c32c1e3-d8f1-4926-8a3b-f55d57804f81",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C12",
+      "claim": "Nucleosome arrays alone can undergo spontaneous phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent studies have revealed that nucleosome arrays alone can undergo spontaneous phase separation (Gibson et al., 2019; Strickfaden et al., 2020; Zhang et al., 2022), indicating that compartmentalization may be an intrinsic property of chromatin driven by nucleosome-nucleosome interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cited experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "64861407-74c4-41d7-9f81-9aad4d4bd9cb",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C13",
+      "claim": "Kruithof et al. estimated the inter-nucleosome binding energy to be approximately 14 kBT using force-measuring magnetic tweezers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, using force-measuring magnetic tweezers, Kruithof et al. estimated the inter-nucleosome binding energy to be \u223c14 kBT (Kruithof et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a specific experimental measurement from Kruithof et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "97f7956d-1115-429a-bda0-0d945f65026d",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C14",
+      "claim": "Funke et al. reported a nucleosome binding free energy of approximately 2 kBT using a DNA-origami-based force spectrometer.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, Funke et al. introduced a DNA-origami-based force spectrometer to directly probe the interaction between a pair of nucleosomes (Funke et al., 2016), circumventing any potential complications from interpretations of single-molecule traces of nucleosome arrays. Their measurement reported a much weaker binding free energy of approximately 2 kBT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim cites a specific experimental measurement from Funke et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "8e4b919d-c25d-41a1-9262-6242e145864a",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C15",
+      "claim": "The coarse-grained model represents each amino acid with one coarse-grained bead and three beads per nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "The model represents each amino acid with one coarse-grained bead and three beads per nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational model design used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "7c30e349-ea66-42ec-88ec-f23afcf6d623",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C16",
+      "claim": "The simulated free energy profile of nucleosomal DNA unwinding matches well with experimental results over a wide range.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2B, the simulated values match well with experimental results over a wide range.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison between simulation and experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "af9c93d7-c85d-4467-ae6b-4de36f6a7c61",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C17",
+      "claim": "The simulated binding free energies for protein-DNA complexes match well with experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we computed the binding free energy for a diverse set of protein-DNA complexes and the simulated values again match well with experimental data (Figure 2\u2014figure supplement 1), supporting the model's accuracy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison between simulation and experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "6b094f15-901c-43b8-b185-ac61ccf49278",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C18",
+      "claim": "Only a modest amount of extra Na+ and Cl\u2212 ions becomes associated with the nucleosome as the outer DNA layer unwraps.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results, shown in Figure 2C, indicate that only a modest amount of extra Na+ and Cl\u2212 ions becomes associated with the nucleosome as the outer DNA layer unwraps.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "f1933ea9-f090-4d38-bb34-0b619599b08c",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C19",
+      "claim": "Significantly more ions become bound when the inner layer of nucleosomal DNA starts to unwrap (after 73 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "However, significantly more ions become bound when the inner layer starts to unwrap (after 73 bp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "9e560f33-ae1e-457f-a09a-f5357b995d10",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C20",
+      "claim": "Counterion release may contribute more significantly to the inner layer wrapping, potentially caused by a tighter protein-DNA interface.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that counterion release may contribute more significantly to the inner layer wrapping, potentially caused by a tighter protein-DNA interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of simulation data on ion binding during DNA unwrapping.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "e6a981a9-c3bd-4428-95bc-08d590c5c752",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C21",
+      "claim": "The average sedimentation coefficients determined from simulations match well with experimental values for chromatin at different salt concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A, the average sedimentation coefficients determined from our simulations match well with experimental values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison between simulation and experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "148ac72e-3aaa-4fd9-9189-e80277bfa04e",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C22",
+      "claim": "Chromatin under 5 mM NaCl features an extended configuration with minimal stacking between one and three nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin under 5 mM NaCl features an extended configuration with minimal stacking between one and three nucleosomes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "4759e59c-1406-47ec-a3fb-cf598e1320e8",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C23",
+      "claim": "Tri-nucleosome configurations are observed as chromatin extends.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in agreement with previous studies (Ding et al., 2021; Liu et al., 2022; Cai et al., 2018; Dombrowski et al., 2022), we observe tri-nucleosome configurations as chromatin extends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation observations that agree with cited previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "3849cd29-342b-4445-b28e-7e0e9ae0e161",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C24",
+      "claim": "Divalent ions are more effective in packaging chromatin than NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the simulations also support that divalent ions are more effective in packaging chromatin than NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data comparing chromatin compaction under different salt conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "0f888960-9aa6-4638-ba21-c0798c0e2e24",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C25",
+      "claim": "The chromatin sedimentation coefficient at 0.6 mM MgCl2 is comparable to that obtained at 150 mM of NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in the presence of 0.6 mM MgCl2, the chromatin sedimentation coefficient is comparable to that obtained at 150 mM of NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "ccf00dc9-7fe4-4298-bd1c-8288b98a96ba",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C26",
+      "claim": "The fraction of bound Mg2+ is much higher than Na+.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the fraction of bound Mg2+ is much higher than Na+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "a17d60b4-0273-42da-af87-05c2700b920b",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C27",
+      "claim": "The amount of neutralized negative charges is always greater in systems with divalent ions, despite the significantly lower salt concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, the amount of neutralized negative charges is always greater in systems with divalent ions, despite the significantly lower salt concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "751514e2-2ca7-41cf-b8f8-02e88d14a3c3",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C28",
+      "claim": "The difference between Na+ and Mg2+ ions arises from the more favorable interactions between Mg2+ and phosphate groups that more effectively offset the entropy loss due to ion condensation.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the two types of ions arises from the more favorable interactions between Mg2+ and phosphate groups that more effectively offset the entropy loss due to ion condensation (Clark and Kimura, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation observations and cited theoretical work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "411af39f-19a5-427c-9b35-23987fbc7cd9",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C29",
+      "claim": "Restricting nucleosome orientations produced a binding free energy of approximately 2 kBT, reproducing the experimental value.",
+      "claim_type": "EXPLICIT",
+      "source": "Restricting nucleosome orientations produced a binding free energy of \u223c2 kBT, reproducing the experimental value (Figure 4B, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 4B that matches experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "e2d6a458-753b-4698-b7b0-cf8881acc206",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C30",
+      "claim": "The binding free energy increased to 15 kBT upon removing the constraints on nucleosome orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the binding free energy increased to 15 kBT upon removing the constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "b5aa2d48-8ead-4100-a377-b197a3b10106",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C31",
+      "claim": "The average number of contacts formed between histone tails and DNA from different nucleosomes is around 150 in unrestricted simulations and 10 in DNA-origami-restrained simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4C, the average number of contacts formed between histone tails and DNA from different nucleosomes is around 150 and 10 in the two sets of simulations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "95a1dcb8-8b08-4c2c-9589-0e7591482c6a",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C32",
+      "claim": "The most stable binding mode from unrestricted simulations corresponds to a configuration in which the two nucleosomes are almost parallel to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, from the unrestricted simulations, the most stable binding mode corresponds to a configuration in which the two nucleosomes are almost parallel to each other (see configuration A1' in Figure 4A), with the angle between the two nucleosome planes close to zero (Figure 4B, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 4A and Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "506ccf21-34ba-4ddf-8bcf-0dfb6692d7e8",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C33",
+      "claim": "The inherent design of the DNA-origami device renders the parallel nucleosome binding mode inaccessible, with the smallest angle between the two nucleosome planes being around 23\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the inherent design of the DNA-origami device renders this binding mode inaccessible, and the smallest angle between the two nucleosome planes is around 23\u00b0 (see configuration A1 in Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data and analysis of the DNA-origami device constraints.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "eaf75cb6-da4a-4a90-bebe-64ab42ced181",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C34",
+      "claim": "A significant loss of inter-nucleosomal contacts caused the small binding free energy seen experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a significant loss of inter-nucleosomal contacts caused the small binding free energy seen experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on simulation data comparing restrained and unrestrained systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "6de85111-5631-42bd-8827-2b007c8983f8",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C36",
+      "claim": "As the inter-nucleosome distance increases, the nucleosomes undergo almost a 90\u00b0 rotation to adopt perpendicular positions.",
+      "claim_type": "EXPLICIT",
+      "source": "As the distance increases, the nucleosomes will almost undergo a 90\u00b0 rotation to adopt perpendicular positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "1d0e8ab9-7f75-474a-8f30-1208c370d297",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C37",
+      "claim": "When the 601 sequence is replaced with poly-dA:dT or poly-dG:dC, the nucleosome binding free energy only varied by approximately 2 kBT.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when the 601 sequence is replaced with poly-dA:dT or poly-dG:dC, the free energy only varied by \u223c2 kBT (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "59a8be5c-bd31-425e-aa92-d60b67b75146",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C38",
+      "claim": "The poly-dA:dT sequence produced stronger nucleosome binding while poly-dG:dC weakened the interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the poly-dA:dT sequence produced stronger binding while poly-dG:dC weakened the interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "b69386de-c2c0-41f1-8b97-48d337f67230",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C39",
+      "claim": "The sequence specific effects are potentially due to the increased stiffness of poly-dA:dT DNA, which causes the DNA to unwrap more frequently, increasing cross-nucleosome contacts at larger distances.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence specific effects are potentially due to the increased stiffness of poly-dA:dT DNA (Ortiz and de Pablo, 2011), which causes the DNA to unwrap more frequently, increasing cross-nucleosome contacts at larger distances (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an interpretation of simulation data based on known DNA properties from cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "5bd0d9f8-383a-4ac6-ad2d-27375653d275",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C40",
+      "claim": "Increasing the nucleosome repeat length (NRL) weakened inter-nucleosomal interactions, reducing the binding free energy to approximately 6 kBT.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Mangenot et al., 2002; Correll et al., 2012; Huang et al., 2018), increasing the NRL weakened inter-nucleosomal interactions (Figure 5C and Figure 5\u2014figure supplement 3), reducing the binding free energy to \u223c6 kBT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 5C that agrees with cited previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "9827da35-f402-49c7-996a-88343b0bb53c",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C41",
+      "claim": "The weakened interactions upon extending linker DNA can be more than compensated for by the presence of histone H1 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the weakened interactions upon extending linker DNA can be more than compensated for by the presence of histone H1 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 5C and Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "82d49dff-9168-4332-aa51-42c0e284b313",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C42",
+      "claim": "The disordered C-terminal tail of linker histones can extend and bind the DNA from the second nucleosome, thereby stabilizing the inter-nucleosomal contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "A closer examination of the simulation configurations suggests that the disordered C-terminal tail of linker histones can extend and bind the DNA from the second nucleosome, thereby stabilizing the inter-nucleosomal contacts (as shown in Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of simulation configurations shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "1b1dfd16-9fe6-4f95-811c-070edace97f5",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C43",
+      "claim": "The coarse-grained model captures the counterion atmosphere around the nucleosome core particle as seen in all-atom simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "It captures the counterion atmosphere around the nucleosome core particle as seen in all-atom simulations (Materese et al., 2009) and highlights the contribution of counterions to nucleosome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with cited all-atom simulation results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "ea3102f9-0db7-48b5-b3f9-9e8ad1ecab8a",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C44",
+      "claim": "The much lower nucleosome binding value reported in a previous DNA-origami experiment is due to the restricted nucleosomal orientation inherent to the device design.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the much lower value reported in a previous DNA-origami experiment is due to the restricted nucleosomal orientation inherent to the device design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of simulation results with and without orientation constraints.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "3f94afc9-89bf-4ae6-b0c9-b5cec7bf94c2",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C45",
+      "claim": "Unrestricted nucleosomes allow more close contacts to stabilize binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Unrestricted nucleosomes allow more close contacts to stabilize binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "45095537-0b38-4a9f-995a-69794513bae7",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C46",
+      "claim": "A significant nucleosome binding free energy agrees with the high forces found in single-molecule pulling experiments that are needed for chromatin unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant nucleosome binding free energy also agrees with the high forces found in single-molecule pulling experiments that are needed for chromatin unfolding (Kruithof et al., 2009; Meng et al., 2015; Kaczmarczyk et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on agreement between simulation predictions and cited experimental measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "14b68a64-69ef-4104-87d2-679c32686ea0",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C47",
+      "claim": "The strong inter-nucleosomal interaction is largely preserved at longer NRL in the presence of linker histone proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate that this strong inter-nucleosomal interaction is largely preserved at longer NRL in the presence of linker histone proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "9fab2bb4-9e2d-44bc-8f63-4819d2de0220",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C48",
+      "claim": "Post-translational modifications of histone proteins may influence inter-nucleosomal interactions, but their effects are limited and unlikely to completely abolish the significant interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "While post-translational modifications of histone proteins may influence inter-nucleosomal interactions, their effects are limited, as indicated by Ding et al. (Ding et al., 2021), and are unlikely to completely abolish the significant interactions reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from cited previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "1c864ca0-f478-485f-aadf-18af6196715a",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C49",
+      "claim": "Intrinsic inter-nucleosome interactions are important players in chromatin organization in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we anticipate that, in addition to molecular motors, chromatin regulators, and other molecules inside the nucleus, intrinsic inter-nucleosome interactions are important players in chromatin organization in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the simulation results and their implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "18bad244-89e3-47eb-a741-c91c96f2a696",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C50",
+      "claim": "Strong inter-nucleosome interactions support the compaction and stacking of chromatin, promoting the formation of fibril-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong inter-nucleosome interactions support the compaction and stacking of chromatin, promoting the formation of fibril-like structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "9bba24d4-422d-4b2a-be05-647ef3bef335",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C51",
+      "claim": "Fibril configurations can hardly be detected in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as shown in many studies (Maeshima et al., 2016; Ricci et al., 2015; Ou et al., 2017; Zhang et al., 2022), such fibril configurations can hardly be detected in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "32d99e31-454b-4043-ba26-076f7483b1de",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C52",
+      "claim": "The lack of fibril configurations in vivo does not contradict the conclusion on the significance of inter-nucleosome interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth emphasizing that this lack of fibril configurations does not contradict our conclusion on the significance of inter-nucleosome interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a logical argument based on the authors' interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "3d22075c-645e-4611-95aa-48ac59a60e8c",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C53",
+      "claim": "Many in vivo factors, most notably crowding, could disrupt fibril configurations in favor of inter-chain contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In a prior paper, we found that many in vivo factors, most notably crowding, could disrupt fibril configurations in favor of inter-chain contacts (Liu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "9d42fe3e-eb97-4aa9-b4dc-9666ad2b3839",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C54",
+      "claim": "Inter-chain contacts can be driven by favorable inter-nucleosome interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-chain contacts can indeed be driven by favorable inter-nucleosome interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results and previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "6cfb02ff-15b6-497d-b900-b58aac0475a3",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C55",
+      "claim": "The histone-DNA interface in a fully wrapped nucleosome configuration is not tightly sealed but instead permeated with water molecules and mobile ions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous studies have shown that the histone-DNA interface in a fully wrapped nucleosome configuration is not tightly sealed but instead permeated with water molecules and mobile ions (Davey et al., 2002; Materese et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "119c03c1-fdb3-4057-8ff0-b0d2cc1b92a2",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C56",
+      "claim": "Counterions are often released upon protein-DNA binding to make room for close contacts at the interface, contributing favorably to the binding free energy in the form of entropic gains.",
+      "claim_type": "EXPLICIT",
+      "source": "Counterions are often released upon protein-DNA binding to make room for close contacts at the interface, contributing favorably to the binding free energy in the form of entropic gains (Schiessel, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge from cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "0259ee1b-b4b5-4e63-b97c-1402393c1959",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C57",
+      "claim": "The simulations reproduce the strong contrast in chromatin size between systems with 5 mM NaCl and 150 mM NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the simulations reproduce the strong contrast in chromatin size between the two systems with different NaCl concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "b6c7e82e-a23d-48e1-a6ec-bd5997ebfdde",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C58",
+      "claim": "The compaction of chromatin is evident at 150 mM NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the compaction is evident at 150 mM NaCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "91a35e4f-05df-4e5d-8999-eb6f6d6ac624",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C59",
+      "claim": "Higher concentrations of NaCl do not dramatically neutralize more charges, but the excess ions provide additional screening to weaken the repulsion among DNA segments, stabilizing chromatin compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "While higher concentrations of NaCl do not dramatically neutralize more charges, the excess ions provide additional screening to weaken the repulsion among DNA segments, stabilizing chromatin compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of simulation data on ion binding and chromatin compaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "e3c7f6c0-35a3-452b-ac76-01de87a7e4d0",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C60",
+      "claim": "Ion condensation weakens the repulsion among DNA segments that prevents chromatin from collapsing.",
+      "claim_type": "EXPLICIT",
+      "source": "Ion condensation weakens the repulsion among DNA segments that prevents chromatin from collapsing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation of simulation data based on established theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "fea6e833-cba1-461d-9c7a-0f575e978e01",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C61",
+      "claim": "The simulations support the condensation of cations, especially for divalent ions, as predicted by the Manning theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations support the condensation of cations, especially for divalent ions (Figure 3A, bottom) as predicted by the Manning theory (Manning, 1978; Clark and Kimura, 1990).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data that agrees with cited theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "c5fdda85-f98a-4080-ab1e-80cdc833538d",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C62",
+      "claim": "The DNA-unzipping experiment performed by Hall et al., 2009, is particularly relevant since the measured forces can be converted into a free energy profile of DNA unwinding at a base-pair resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-unzipping experiment performed by Hall et al., 2009, is particularly relevant since the measured forces can be converted into a free energy profile of DNA unwinding at a base-pair resolution, as shown by Forties et al. with a continuous-time Markov model (Forties et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited experimental and analytical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "67dc13a9-9a92-4f78-af5b-f718713ac244",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C63",
+      "claim": "The explicit representation of monovalent and divalent ions enables a faithful description of counterion condensation and its impact on electrostatic interactions between protein and DNA molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Our explicit representation of monovalent and divalent ions enables a faithful description of counterion condensation and its impact on electrostatic interactions between protein and DNA molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a feature of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "13249f82-98d9-4232-a3b8-697c97a821fe",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C64",
+      "claim": "The experimental buffer condition of 0.10 M NaCl and 0.5 mM MgCl2 was adopted in simulations for direct comparison with Hall et al., 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental buffer condition of 0.10 M NaCl and 0.5 mM MgCl2 (Hall et al., 2009) was adopted in simulations for direct comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "01f31caf-b553-4312-a49e-579c89ab4bbc",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C65",
+      "claim": "The model resolves the differences among various chemical groups to accurately describe biomolecular interactions with physical chemistry potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "It resolves the differences among various chemical groups to accurately describe biomolecular interactions with physical chemistry potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a feature of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "84f22550-28ed-40fb-aba5-3a33b80384a1",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C66",
+      "claim": "Most existing coarse-grained models adopt a mean-field approximation with the Debye-H\u00fcckel theory to describe electrostatic interactions in an implicit-solvent environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, most existing models adopt a mean-field approximation with the Debye-H\u00fcckel theory (Phillips, 2012) to describe electrostatic interactions in an implicit-solvent environment (Izadi et al., 2016; Bascom and Schlick, 2018; Moller et al., 2019; Farr et al., 2021), preventing an accurate treatment of the complex salt conditions explored in experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature describing existing computational approaches.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "37358cdc-84e3-4fab-bfd8-6a9ba0a98cda",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C67",
+      "claim": "The high computational cost of atomistic simulations has inspired several groups to calculate the nucleosome binding free energy with coarse-grained models.",
+      "claim_type": "EXPLICIT",
+      "source": "The high computational cost of atomistic simulations (Winogradoff et al., 2015; Woods et al., 2021; Li et al., 2023) has inspired several groups to calculate the nucleosome binding free energy with coarse-grained models (Moller et al., 2019; Farr et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature describing computational approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "3af0da3c-5b3a-41de-ac2b-881743d50400",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C68",
+      "claim": "The complex distribution of charged amino acids and nucleotides at nucleosome interfaces places a high demand on force field accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the complex distribution of charged amino acids and nucleotides at nucleosome interfaces places a high demand on force field accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on understanding of the physical chemistry of nucleosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "d9f2a385-d3fb-46ab-a284-c4dca8bd04d7",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C69",
+      "claim": "Examining the interactions between native nucleosomes poses challenges due to the intricate chemical modifications that histone proteins undergo within the nucleus and the variations in their underlying DNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the interactions between native nucleosomes poses challenges due to the intricate chemical modifications that histone proteins undergo within the nucleus and the variations in their underlying DNA sequences (Fenley et al., 2010; Fenley et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature describing experimental challenges.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "df145043-526f-4803-bdc0-83f1a223cecf",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C70",
+      "claim": "Many in vitro experiments have opted for reconstituted nucleosomes that lack histone modifications and feature well-positioned 601-sequence DNA to simplify the chemical complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Many in vitro experiments have opted for reconstituted nucleosomes that lack histone modifications and feature well-positioned 601-sequence DNA (Lowary and Widom, 1998) to simplify the chemical complexity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature describing experimental approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "2ec4581b-8fdd-4180-9cab-78c7aa2b8ba5",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C71",
+      "claim": "Experiments with reconstituted nucleosomes aim to establish a fundamental reference point, a baseline for understanding the strength of interactions within native nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments aim to establish a fundamental reference point, a baseline for understanding the strength of interactions within native nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the rationale for experimental approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "1a30729d-3b31-457c-a245-53ee056e537e",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C72",
+      "claim": "Demixing can arise from interactions between chromatin and various nuclear landmarks such as nuclear lamina and speckles.",
+      "claim_type": "EXPLICIT",
+      "source": "Demixing can also arise from interactions between chromatin and various nuclear landmarks such as nuclear lamina and speckles (Brahmachari et al., 2022; Falk et al., 2019; Mirny and Dekker, 2022; Kamat et al., 2023), as well as active transcriptional processes (Hilbert et al., 2021; Jiang et al., 2022; Brahmachari et al., 2023; Goychuk et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "6cf9a16d-4218-4b2f-ae73-86194815149f",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C73",
+      "claim": "Demixing can arise from active transcriptional processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Demixing can also arise from interactions between chromatin and various nuclear landmarks such as nuclear lamina and speckles (Brahmachari et al., 2022; Falk et al., 2019; Mirny and Dekker, 2022; Kamat et al., 2023), as well as active transcriptional processes (Hilbert et al., 2021; Jiang et al., 2022; Brahmachari et al., 2023; Goychuk et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "fce00161-b8f4-427d-aa9d-0fdebf3484d3",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C74",
+      "claim": "Compartmentalization may be an intrinsic property of chromatin driven by nucleosome-nucleosome interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent studies have revealed that nucleosome arrays alone can undergo spontaneous phase separation (Gibson et al., 2019; Strickfaden et al., 2020; Zhang et al., 2022), indicating that compartmentalization may be an intrinsic property of chromatin driven by nucleosome-nucleosome interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on cited experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "6e6a30d3-45cf-4882-ad0d-017c12b944c2",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C75",
+      "claim": "The relevance of physicochemical interactions between nucleosomes to chromatin organization in vivo has been constantly debated, partly due to the uncertainty in their strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevance of physicochemical interactions between nucleosomes to chromatin organization in vivo has been constantly debated, partly due to the uncertainty in their strength (Kruithof et al., 2009; Cui and Bustamante, 2000; Kaczmarczyk et al., 2020; Funke et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature describing ongoing scientific debate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "d886c15b-19c1-4036-a035-274fd91f0e7f",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C76",
+      "claim": "Three-dimensional genome organization plays essential roles in numerous DNA-templated processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Three-dimensional genome organization plays essential roles in numerous DNA-templated processes (Dekker et al., 2013; Bonev and Cavalli, 2016; Finn and Misteli, 2019; Misteli, 2020; Lin et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature establishing the importance of genome organization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "f286c92a-a9e0-442e-bb04-65b64a7430a1",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C77",
+      "claim": "Understanding the molecular mechanisms for genome organization establishment could improve our understanding of DNA-templated processes and facilitate genome engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the molecular mechanisms for its establishment could improve our understanding of these processes and facilitate genome engineering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a logical inference about the potential impact of understanding genome organization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "060dca10-36b6-4df2-9cdc-f9cecfba6040",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C78",
+      "claim": "Advancements in high-throughput sequencing and microscopic imaging have enabled genome-wide structural characterization, revealing a striking compartmentalization of chromatin at large scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Advancements in high-throughput sequencing and microscopic imaging have enabled genome-wide structural characterization, revealing a striking compartmentalization of chromatin at large scales (Lieberman-Aiden et al., 2009; Quinodoz et al., 2018; Su et al., 2020; Takei et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature describing technological advances and their findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "4922c05d-c96a-42e5-9230-0a6ebc54f631",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C79",
+      "claim": "The molecular mechanisms that drive the microphase separation of chromatin are not yet fully understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the molecular mechanisms that drive the microphase separation are not yet fully understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the current state of scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "f0b8aeab-d279-45d4-9a19-46900283bbba",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C80",
+      "claim": "Liquid-liquid phase separation of chromatin-binding proteins potentially contributes to chromatin demixing.",
+      "claim_type": "IMPLICIT",
+      "source": "Protein molecules that recognize specific histone modifications have frequently been found to undergo liquid-liquid phase separation (Larson et al., 2017; Kent et al., 2020; Xie et al., 2022; Leicher et al., 2022; Latham and Zhang, 2021; Lin et al., 2021a; MacPherson et al., 2018), potentially contributing to chromatin demixing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on cited experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "6f12f8fe-a6bd-49c5-92e2-306693d37627",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C81",
+      "claim": "The study strongly supports the contribution of physicochemical interactions to the phase behavior of chromatin aggregates and chromatin organization inside the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study strongly supports the contribution of physicochemical interactions to the phase behavior of chromatin aggregates and chromatin organization inside the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on the simulation results presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "a418abb2-1615-4725-a450-356795416da7",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C82",
+      "claim": "The explicit ion model allows for de novo predictions of chromatin organization and remains computationally efficient, enabling large-scale conformational sampling for free energy calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "This model allows for de novo predictions of chromatin organization and remains computationally efficient, enabling large-scale conformational sampling for free energy calculations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes capabilities of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "0817e522-70f9-49ff-bab6-e62457c0b5fc",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C83",
+      "claim": "The model can reconcile various experiments on quantifying nucleosomal interactions, providing an explanation for the large discrepancy between existing estimations.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we showed that the model can reconcile various experiments on quantifying nucleosomal interactions, providing an explanation for the large discrepancy between existing estimations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the simulation results comparing different experimental setups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "88e4bfc1-981f-4d7e-99a7-83c53841e809",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C84",
+      "claim": "The Pearson correlation coefficient between experimental and simulated binding free energies for nine protein-DNA complexes is 0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental and simulated binding free energies are compared for nine protein-DNA complexes (Privalov et al., 2011), with a Pearson correlation coefficient of 0.6.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is based on statistical analysis of simulation data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "bcc85422-16ff-4ef6-a6a0-52862a688a15",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C85",
+      "claim": "The significant correlation between simulated and experimental binding free energy values supports the accuracy of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant correlation between simulated and experimental values supports the accuracy of the model.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is an inference based on the correlation analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "9e83d32e-8cd0-4929-bdf4-41d6c04feddb",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C86",
+      "claim": "Perpendicular nucleosome orientations allow the nucleosomes to remain in contact and are more energetically favorable at intermediate distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Such orientations allow the nucleosomes to remain in contact and is more energetically favorable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of simulation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "f74582a3-9ea8-4761-9948-c4816f6c0c3d",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C87",
+      "claim": "The orientation preference of nucleosomes gradually diminishes at large distances once the two nucleosomes are completely detached.",
+      "claim_type": "EXPLICIT",
+      "source": "The orientation preference gradually diminishes at large distances once the two nucleosomes are completely detached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "8b104cba-818d-41e7-9837-09a6e6f71d2d",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C88",
+      "claim": "Results from the study are consistent with prior studies that underscore the importance of linker histones in chromatin compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with prior studies that underscore the importance of linker histones in chromatin compaction (Finch and Klug, 1976; Zhou et al., 2021), particularly in eukaryotic cells with longer linker DNA (Routh et al., 2008; Dombrowski et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on agreement between simulation results and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "8f3de281-7e40-4ea3-9d31-cfcccf6746ac",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C89",
+      "claim": "Linker histones are particularly important in eukaryotic cells with longer linker DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with prior studies that underscore the importance of linker histones in chromatin compaction (Finch and Klug, 1976; Zhou et al., 2021), particularly in eukaryotic cells with longer linker DNA (Routh et al., 2008; Dombrowski et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "eda01f74-abc9-4178-88b9-25921f78bc2d",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C90",
+      "claim": "The coarse-grained model succeeds in resolving the difference between monovalent and divalent ions.",
+      "claim_type": "EXPLICIT",
+      "source": "The coarse-grained model also succeeds in resolving the difference between monovalent and divalent ions, supporting the efficacy of divalent ions in neutralizing negative charges and offsetting repulsive interactions among DNA segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "895130cc-0c5f-4dc8-b2fa-f5f8a9554f1b",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C91",
+      "claim": "The model supports the efficacy of divalent ions in neutralizing negative charges and offsetting repulsive interactions among DNA segments.",
+      "claim_type": "EXPLICIT",
+      "source": "The coarse-grained model also succeeds in resolving the difference between monovalent and divalent ions, supporting the efficacy of divalent ions in neutralizing negative charges and offsetting repulsive interactions among DNA segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "77b27434-8530-40f5-b246-0eaeae08bb31",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C92",
+      "claim": "The model highlights the contribution of counterions to nucleosome stability.",
+      "claim_type": "EXPLICIT",
+      "source": "It captures the counterion atmosphere around the nucleosome core particle as seen in all-atom simulations (Materese et al., 2009) and highlights the contribution of counterions to nucleosome stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "5c61e89f-089f-46d6-be1e-beccf8b53d60",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C93",
+      "claim": "The model achieves quantitative accuracy in reproducing experimental values for the binding affinity of protein-DNA complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The model achieves quantitative accuracy in reproducing experimental values for the binding affinity of protein-DNA complexes, the energetics of nucleosomal DNA unwinding, nucleosome binding free energy, and the sedimentation coefficients of nucleosome arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "c5f2cacf-2f87-4ef1-a302-38dc5b91c07b",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C94",
+      "claim": "The model achieves quantitative accuracy in reproducing experimental values for the energetics of nucleosomal DNA unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "The model achieves quantitative accuracy in reproducing experimental values for the binding affinity of protein-DNA complexes, the energetics of nucleosomal DNA unwinding, nucleosome binding free energy, and the sedimentation coefficients of nucleosome arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "2fef5f75-fe29-46e5-9562-43b8dacd4a67",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C95",
+      "claim": "The model achieves quantitative accuracy in reproducing experimental values for nucleosome binding free energy.",
+      "claim_type": "EXPLICIT",
+      "source": "The model achieves quantitative accuracy in reproducing experimental values for the binding affinity of protein-DNA complexes, the energetics of nucleosomal DNA unwinding, nucleosome binding free energy, and the sedimentation coefficients of nucleosome arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "17652571-ce09-4f20-aa33-67fb06a27a41",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C96",
+      "claim": "The model achieves quantitative accuracy in reproducing experimental values for the sedimentation coefficients of nucleosome arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "The model achieves quantitative accuracy in reproducing experimental values for the binding affinity of protein-DNA complexes, the energetics of nucleosomal DNA unwinding, nucleosome binding free energy, and the sedimentation coefficients of nucleosome arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "c17cd277-d17f-44ea-974e-fe5952d94ecc",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "claim_id": "C97",
+      "claim": "Crowding could disrupt fibril configurations in favor of inter-chain contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In a prior paper, we found that many in vivo factors, most notably crowding, could disrupt fibril configurations in favor of inter-chain contacts (Liu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cited previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "53343b6f-4686-4cef-9834-c294f5270290",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The explicit ion coarse-grained model accurately reproduces experimental measurements of protein-DNA binding energetics and nucleosomal DNA unwinding. The model shows good agreement with experimental free energy profiles for DNA unwinding (C3, C16, C94) and protein-DNA binding affinities across nine complexes with a Pearson correlation of 0.6 (C2, C17, C84, C85, C93).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C16, C17, C84, C85, C93, and C94 collectively demonstrate model validation through quantitative comparison with experimental data. The correlation coefficient of 0.6 for protein-DNA complexes and visual agreement in Figure 2B for DNA unwinding provide convergent evidence for model accuracy, though the moderate correlation suggests room for improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "511a82a3-2d91-4168-995f-f2c392c12042",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model successfully resolves differential effects of monovalent and divalent ions on chromatin conformations. Simulations reproduce experimental sedimentation coefficients across different salt conditions (C21, C96), showing that divalent ions are more effective at chromatin compaction than monovalent ions (C24, C25) due to more efficient charge neutralization (C26, C27, C28, C61, C90, C91) despite lower concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21-C28, C57-C61, C90-C91, and C96 provide consistent evidence from simulations matching experimental sedimentation data (Figure 3A) and mechanistic explanations based on ion condensation theory. The agreement between simulation and experiment across multiple salt conditions and the consistency with Manning theory support the model's ability to capture ion-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "5b445bed-7071-4d8c-aa0e-fff693f29d61",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model reveals that counterion release contributes differentially to inner versus outer layer DNA wrapping in nucleosomes. Only modest ion binding changes occur during outer layer unwrapping (C18), while significantly more ions bind when the inner layer unwraps after 73 bp (C19, C20). The model captures the counterion atmosphere around nucleosomes consistent with all-atom simulations (C43, C92).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20, C43, C55-C56, C63, and C92 are supported by simulation data in Figure 2C showing differential ion binding during DNA unwrapping stages. The interpretation is consistent with known structural differences between inner and outer DNA layers (C55) and established counterion release theory (C56). Agreement with all-atom simulations (C43) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model reconciles the large discrepancy between experimental measurements of nucleosome binding energy (2 kBT vs 14 kBT). Simulations show that DNA-origami constraints restrict nucleosome orientations, producing ~2 kBT binding energy matching the Funke et al. experiment (C29), while unrestricted simulations yield 15 kBT (C30). The difference arises from loss of inter-nucleosomal contacts (~150 vs ~10 histone tail-DNA contacts) due to geometric constraints preventing parallel nucleosome alignment (C31-C34, C44, C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34, C44-C45, C83, and C95 provide a mechanistic explanation for experimental discrepancies through direct comparison of restrained versus unrestrained simulations (Figure 4). The dramatic difference in contact numbers (Figure 4C) and the geometric analysis of nucleosome orientations (Figure 4A, 4\u2014figure supplement 4) provide clear structural basis for the energetic differences. This successfully reconciles conflicting experimental reports.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "41514c60-f636-4159-87b5-075820fb9794",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "At physiological salt conditions (150 mM NaCl, 2 mM MgCl2), the model predicts nucleosome-nucleosome binding energy of ~9 kBT. The binding mode is distance-dependent: nucleosomes prefer face-to-face parallel orientation at close distances (~60 \u00c5) but rotate ~90\u00b0 to perpendicular positions at intermediate distances to maintain contacts (C36, C86), with orientation preference diminishing at large separations (C87).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C36, C86, and C87 are supported by 2D free energy landscapes in Figure 5B showing clear orientation-distance coupling. The predicted 9 kBT value represents a key quantitative prediction at physiologically relevant conditions. The distance-dependent orientation changes are mechanistically reasonable for maintaining inter-nucleosome contacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "4985c58d-a574-4aa7-906e-97f629ffe4bd",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nucleosome binding energy shows modest sequence dependence (~2 kBT variation) when 601 sequence is replaced with poly-dA:dT or poly-dG:dC (C37), with poly-dA:dT strengthening and poly-dG:dC weakening interactions (C38). This is attributed to increased DNA stiffness in poly-dA:dT causing more frequent unwrapping and increased cross-nucleosome contacts (C39). Increasing nucleosome repeat length (NRL) from 147 to 167 bp weakens binding to ~6 kBT (C40).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37-C40 are supported by simulation data in Figure 5\u2014figure supplements 1-3. The sequence effects are mechanistically explained through known DNA mechanical properties (C39 cites Ortiz and de Pablo, 2011) and visualized in Figure 5\u2014figure supplement 2. The NRL effect agrees with cited previous studies (C40). The modest magnitude of sequence effects (~2 kBT) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "652c9dc2-7da3-47dc-9383-f582b991bb50",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Linker histone H1 proteins compensate for weakened nucleosome interactions at longer NRL (167 bp), restoring or exceeding binding strength of shorter NRL systems (C41, C47). The disordered C-terminal tail of linker histones extends to bind DNA from adjacent nucleosomes, stabilizing inter-nucleosomal contacts (C42). This is consistent with prior studies emphasizing linker histone importance in chromatin compaction, especially in cells with longer linker DNA (C88, C89).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C41-C42, C47, C88-C89 are supported by simulation data in Figure 5C-D showing that H1.0 addition increases binding energy for NRL=167 systems. The structural mechanism is visualized in Figure 5D. Agreement with cited literature (C88-C89) provides additional support. The result is biologically significant for understanding chromatin organization in different organisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "607a2d29-59d4-4227-8943-120057cd1d19",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study concludes that intrinsic inter-nucleosome interactions are significant contributors to chromatin organization in vivo. The predicted strong binding energy (~9 kBT at physiological conditions) agrees with high forces needed for chromatin unfolding in single-molecule experiments (C46). While histone modifications may influence interactions, their effects are limited and unlikely to abolish the significant interactions (C48). Therefore, physicochemical interactions are important players alongside molecular motors and chromatin regulators (C49, C81).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C48-C49, and C81 represent the main conclusions supported by the collective simulation results. Agreement with pulling experiments (C46) provides external validation. The argument about histone modifications (C48) is reasonable based on cited work (Ding et al., 2021) though somewhat speculative. The overall conclusion (C49, C81) logically follows from the demonstrated strong binding energies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "76afde25-c2da-45a5-9250-79d0306eabf8",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors address an apparent contradiction: strong inter-nucleosome interactions should promote fibril formation (C50), yet fibrils are rarely detected in vivo (C51). They argue this does not contradict their findings (C52) because in vivo factors like crowding disrupt fibrils in favor of inter-chain contacts (C53, C97), which can still be driven by favorable inter-nucleosome interactions (C54).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C54 and C97 present a logical argument reconciling simulation predictions with in vivo observations, but this relies heavily on prior work (Liu et al., 2022) rather than data presented here. The reasoning is plausible but speculative regarding how strong nucleosome interactions manifest in vivo. The current study focuses on isolated chromatin chains, limiting direct assessment of this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "a9ccc1ea-b956-4392-bd8e-3e916ef69304",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The computational model uses a residue-level coarse-graining approach with one bead per amino acid and three beads per nucleotide (C15), explicitly representing monovalent and divalent ions (C63) to enable faithful description of counterion condensation. The model resolves chemical group differences using physical chemistry potentials (C65), allows de novo predictions, and remains computationally efficient for large-scale sampling (C82). Simulations adopted experimental buffer conditions (0.10 M NaCl, 0.5 mM MgCl2) for direct comparison (C64).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C63-C65, and C82 describe the computational methodology. These are straightforward methodological descriptions supported by the Materials and methods section and demonstrated through the successful simulations presented. The model's capabilities are validated by the results throughout the paper.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "97bb9e05-436f-47e5-aaff-b5154ebda2bc",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior experimental work has reported widely varying estimates for nucleosome-nucleosome binding strength, ranging from 2 to 14 kBT (C1). Specifically, Kruithof et al. measured ~14 kBT using magnetic tweezers (C13), while Funke et al. reported ~2 kBT using DNA-origami force spectrometry (C14). This uncertainty has fueled ongoing debate about the relevance of physicochemical interactions in chromatin organization (C75).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C13-C14, and C75 accurately summarize prior experimental literature, properly citing the relevant studies. These claims establish the scientific context and motivation for the current work. The citations can be verified and the characterization of the field as debated is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "161010ff-3661-4f15-9062-6f2e2f15566c",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes that genome organization involves compartmentalization of chromatin (A and B compartments with different histone marks, C8-C9), potentially arising from microphase separation (C10). Multiple mechanisms may contribute including liquid-liquid phase separation of chromatin-binding proteins (C11, C80), interactions with nuclear landmarks (C72), and active transcription (C73). Recent studies show nucleosome arrays alone can phase separate (C12), suggesting compartmentalization may be intrinsic to chromatin (C74). Understanding these mechanisms could improve understanding of DNA-templated processes (C76-C77).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12, C72-C74, C76-C80 accurately summarize established knowledge and recent findings from cited literature. These provide appropriate scientific context for the study. The claims are properly attributed to cited sources and represent fair characterizations of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "2f58b6c3-754f-4568-a2d0-966015b30ddd",
+      "content_id": "a5b628f0-8d97-46c1-a81a-b01f71d166fd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors justify their methodological choices by noting that DNA-unzipping experiments (Hall et al., 2009) provide high-resolution free energy profiles suitable for benchmarking (C62). They note that most existing coarse-grained models use Debye-H\u00fcckel theory with implicit solvent, limiting accuracy for complex salt conditions (C66). The high cost of atomistic simulations motivates coarse-grained approaches (C67), but nucleosome interfaces demand high force field accuracy (C68). Native nucleosomes are challenging to study due to modifications and sequence variations (C69), so reconstituted nucleosomes with 601 DNA are used to establish baselines (C70-C71).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C66-C71 provide methodological justification based on cited literature. These accurately characterize limitations of existing approaches and experimental challenges. The rationale for model development and choice of validation systems is sound and well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "d32a3d06-1660-4c2e-bc7c-94176e6c5d63",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The coarse-grained explicit ion model accurately reproduces experimental energetics for protein-DNA binding and nucleosomal DNA unwinding. The simulated free energy profiles match well with experimental measurements across diverse protein-DNA complexes and DNA unwinding trajectories (Figures 2B and 2\u2014figure supplement 1).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the model's accuracy, stating 'The data presented are solid' and noting that 'The model reproduces the scale and, in some cases, the shape of the experimental free energy profile for specific molecule interactions.' The anonymous reviewer acknowledges successful validation through comparison with experimental values.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The model resolves differential effects of monovalent versus divalent ions on chromatin conformations and compaction. Simulations reproduce experimental sedimentation coefficients under varying salt conditions, showing that divalent ions are more effective at chromatin packaging despite lower concentrations, with Mg2+ binding more efficiently than Na+ (Figure 3).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this finding, with the anonymous reviewer stating 'The strength of this method lies in the explicit representation of counterions, especially divalent ions, which are notoriously difficult to model.' The editor notes the data are 'solid' and provide 'new insights,' implicitly accepting these salt-dependent findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "d36dda2e-b4bb-4d24-b688-561ce2571515",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The model reconciles discrepant experimental measurements of nucleosome binding energy (2 kBT vs 14 kBT) by demonstrating that DNA-origami device constraints restrict nucleosome orientations. Unrestricted simulations yield ~15 kBT binding energy, while orientation-restricted simulations reproduce the experimental ~2 kBT value, with the difference explained by loss of inter-nucleosomal contacts (Figure 4).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support this reconciliation. The anonymous reviewer states 'the authors' method resolves certain experimental discrepancies related to determining the strength of inter-nucleosomal interactions.' The editor affirms the data are 'solid' and provide valuable insights for the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "3674d84f-7a80-4453-9be2-0c88474df9bc",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Nucleosome interaction strength is sensitive to DNA linker length and linker histone presence. Increasing nucleosome repeat length (NRL) weakens interactions to ~6 kBT, but linker histone H1 compensates by extending its C-terminal tail to stabilize inter-nucleosomal contacts, restoring strong binding at longer NRL (Figure 5C-D).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings without challenge. The anonymous reviewer notes the model 'reproduces the scale and, in some cases, the shape of the experimental free energy profile' and acknowledges successful validation. The editor's statement that data are 'solid' encompasses these linker-dependent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "1e9d3504-4f64-4624-84ef-f4f79bf957ba",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The model captures counterion atmosphere dynamics during nucleosomal DNA unwrapping, showing modest ion association with outer DNA layer unwrapping but significantly more ion binding when the inner layer unwraps after 73 bp. This suggests counterion release contributes more to inner layer wrapping due to tighter protein-DNA interfaces (Figure 2C).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the model's treatment of counterions. The anonymous reviewer emphasizes 'The strength of this method lies in the explicit representation of counterions' and notes the model 'can efficiently capture the conformational sampling of molecules while maintaining a low computational cost.' No concerns are raised about these ion dynamics findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "ca8063f7-56ad-448d-932b-c50c5e351a3c",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "As inter-nucleosome distance increases, nucleosomes undergo ~90\u00b0 rotation to adopt perpendicular positions that are energetically favorable at intermediate distances, allowing nucleosomes to remain in contact. This orientation preference diminishes at large distances when nucleosomes completely detach (Figure 5B).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not explicitly challenge this finding, the anonymous reviewer raises concern about Figure S4 (related supplementary data), stating 'the statement \"The agreement is evident\" may not sufficiently capture the essence of Figure S4, as there is a shortage of substantial agreement.' This suggests some uncertainty about orientation-dependent energy profiles.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "9a52807d-7413-4ac7-aa2f-71ab8a6769c6",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "DNA sequence affects nucleosome binding energy modestly (~2 kBT variation). Poly-dA:dT sequences produce stronger binding while poly-dG:dC weakens interactions, potentially due to increased stiffness of poly-dA:dT DNA causing more frequent unwrapping and increased cross-nucleosome contacts (Figure 5\u2014figure supplement 1-2).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise concerns about sequence-dependent effects. The anonymous reviewer's general statement that the model 'reproduces the scale and, in some cases, the shape of the experimental free energy profile' and the editor's affirmation that data are 'solid' implicitly accept these sequence-dependent findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "8d572e92-7ad6-4d2b-ae7c-30b5b181d9c1",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The study concludes that intrinsic inter-nucleosome physicochemical interactions are important players in chromatin organization in vivo, strongly supporting their contribution to phase behavior of chromatin aggregates and nuclear chromatin organization.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support this conclusion. The anonymous reviewer states 'the results from this study support the crucial role of intrinsic physicochemical interactions in governing chromatin organization within the nucleus.' The editor notes the tools 'will be valuable for the chromosome biology field,' affirming the biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "12e40597-1302-4cd1-af0d-25648be00768",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The coarse-grained model represents each amino acid with one bead and three beads per nucleotide, explicitly representing ions to enable faithful description of counterion condensation while remaining computationally efficient for large-scale conformational sampling and free energy calculations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the model's design and capabilities. The anonymous reviewer states 'The significance of this study lies in the authors' coarse-grained model which can efficiently capture the conformational sampling of molecules while maintaining a low computational cost.' The editor calls the approach 'compelling.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "dcba8242-655d-49d1-8c50-b7d34cdd1c2e",
+      "content_id": "8177dca3-88af-4d3c-8e0f-f299c45926ef",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The Pearson correlation coefficient between experimental and simulated binding free energies for nine protein-DNA complexes is 0.6, which the authors interpret as supporting model accuracy (Figure 2\u2014figure supplement 1).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not explicitly challenge this correlation, the anonymous reviewer's concern about Figure S4 agreement ('there is a shortage of substantial agreement') suggests some skepticism about the strength of quantitative agreement. A correlation of 0.6 shows moderate but not strong agreement, which may underlie the reviewer's concern.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1b67607f-8d6d-4193-91ea-c2d02062a0a9",
+      "result_id": "53343b6f-4686-4cef-9834-c294f5270290"
+    },
+    {
+      "claim_id": "4efbc1fd-3f76-40e9-af27-22566e11680e",
+      "result_id": "53343b6f-4686-4cef-9834-c294f5270290"
+    },
+    {
+      "claim_id": "7c30e349-ea66-42ec-88ec-f23afcf6d623",
+      "result_id": "53343b6f-4686-4cef-9834-c294f5270290"
+    },
+    {
+      "claim_id": "af9c93d7-c85d-4467-ae6b-4de36f6a7c61",
+      "result_id": "53343b6f-4686-4cef-9834-c294f5270290"
+    },
+    {
+      "claim_id": "88e4bfc1-981f-4d7e-99a7-83c53841e809",
+      "result_id": "53343b6f-4686-4cef-9834-c294f5270290"
+    },
+    {
+      "claim_id": "bcc85422-16ff-4ef6-a6a0-52862a688a15",
+      "result_id": "53343b6f-4686-4cef-9834-c294f5270290"
+    },
+    {
+      "claim_id": "5c61e89f-089f-46d6-be1e-beccf8b53d60",
+      "result_id": "53343b6f-4686-4cef-9834-c294f5270290"
+    },
+    {
+      "claim_id": "c5f2cacf-2f87-4ef1-a302-38dc5b91c07b",
+      "result_id": "53343b6f-4686-4cef-9834-c294f5270290"
+    },
+    {
+      "claim_id": "1b6d3b70-cc29-4a0a-a762-cb3b1ef75345",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "e6a981a9-c3bd-4428-95bc-08d590c5c752",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "148ac72e-3aaa-4fd9-9189-e80277bfa04e",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "4759e59c-1406-47ec-a3fb-cf598e1320e8",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "3849cd29-342b-4445-b28e-7e0e9ae0e161",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "0f888960-9aa6-4638-ba21-c0798c0e2e24",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "ccf00dc9-7fe4-4298-bd1c-8288b98a96ba",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "a17d60b4-0273-42da-af87-05c2700b920b",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "751514e2-2ca7-41cf-b8f8-02e88d14a3c3",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "0259ee1b-b4b5-4e63-b97c-1402393c1959",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "b6c7e82e-a23d-48e1-a6ec-bd5997ebfdde",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "91a35e4f-05df-4e5d-8999-eb6f6d6ac624",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "e3c7f6c0-35a3-452b-ac76-01de87a7e4d0",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "fea6e833-cba1-461d-9c7a-0f575e978e01",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "eda01f74-abc9-4178-88b9-25921f78bc2d",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "895130cc-0c5f-4dc8-b2fa-f5f8a9554f1b",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "17652571-ce09-4f20-aa33-67fb06a27a41",
+      "result_id": "511a82a3-2d91-4168-995f-f2c392c12042"
+    },
+    {
+      "claim_id": "6b094f15-901c-43b8-b185-ac61ccf49278",
+      "result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61"
+    },
+    {
+      "claim_id": "f1933ea9-f090-4d38-bb34-0b619599b08c",
+      "result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61"
+    },
+    {
+      "claim_id": "9e560f33-ae1e-457f-a09a-f5357b995d10",
+      "result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61"
+    },
+    {
+      "claim_id": "1b1dfd16-9fe6-4f95-811c-070edace97f5",
+      "result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61"
+    },
+    {
+      "claim_id": "6cfb02ff-15b6-497d-b900-b58aac0475a3",
+      "result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61"
+    },
+    {
+      "claim_id": "119c03c1-fdb3-4057-8ff0-b0d2cc1b92a2",
+      "result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61"
+    },
+    {
+      "claim_id": "67dc13a9-9a92-4f78-af5b-f718713ac244",
+      "result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61"
+    },
+    {
+      "claim_id": "77b27434-8530-40f5-b246-0eaeae08bb31",
+      "result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61"
+    },
+    {
+      "claim_id": "411af39f-19a5-427c-9b35-23987fbc7cd9",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "e2d6a458-753b-4698-b7b0-cf8881acc206",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "b5aa2d48-8ead-4100-a377-b197a3b10106",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "95a1dcb8-8b08-4c2c-9589-0e7591482c6a",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "506ccf21-34ba-4ddf-8bcf-0dfb6692d7e8",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "eaf75cb6-da4a-4a90-bebe-64ab42ced181",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "ea3102f9-0db7-48b5-b3f9-9e8ad1ecab8a",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "3f94afc9-89bf-4ae6-b0c9-b5cec7bf94c2",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "0817e522-70f9-49ff-bab6-e62457c0b5fc",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "2fef5f75-fe29-46e5-9562-43b8dacd4a67",
+      "result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30"
+    },
+    {
+      "claim_id": "3db53df3-0f7c-4787-bc87-72b7bdcbc5ae",
+      "result_id": "41514c60-f636-4159-87b5-075820fb9794"
+    },
+    {
+      "claim_id": "6de85111-5631-42bd-8827-2b007c8983f8",
+      "result_id": "41514c60-f636-4159-87b5-075820fb9794"
+    },
+    {
+      "claim_id": "9e83d32e-8cd0-4929-bdf4-41d6c04feddb",
+      "result_id": "41514c60-f636-4159-87b5-075820fb9794"
+    },
+    {
+      "claim_id": "f74582a3-9ea8-4761-9948-c4816f6c0c3d",
+      "result_id": "41514c60-f636-4159-87b5-075820fb9794"
+    },
+    {
+      "claim_id": "fb1dc743-cc1e-475a-b882-6336bd11ff62",
+      "result_id": "4985c58d-a574-4aa7-906e-97f629ffe4bd"
+    },
+    {
+      "claim_id": "1d0e8ab9-7f75-474a-8f30-1208c370d297",
+      "result_id": "4985c58d-a574-4aa7-906e-97f629ffe4bd"
+    },
+    {
+      "claim_id": "59a8be5c-bd31-425e-aa92-d60b67b75146",
+      "result_id": "4985c58d-a574-4aa7-906e-97f629ffe4bd"
+    },
+    {
+      "claim_id": "b69386de-c2c0-41f1-8b97-48d337f67230",
+      "result_id": "4985c58d-a574-4aa7-906e-97f629ffe4bd"
+    },
+    {
+      "claim_id": "5bd0d9f8-383a-4ac6-ad2d-27375653d275",
+      "result_id": "4985c58d-a574-4aa7-906e-97f629ffe4bd"
+    },
+    {
+      "claim_id": "46dcd06b-c762-4330-b29f-293300d6609c",
+      "result_id": "652c9dc2-7da3-47dc-9383-f582b991bb50"
+    },
+    {
+      "claim_id": "9827da35-f402-49c7-996a-88343b0bb53c",
+      "result_id": "652c9dc2-7da3-47dc-9383-f582b991bb50"
+    },
+    {
+      "claim_id": "82d49dff-9168-4332-aa51-42c0e284b313",
+      "result_id": "652c9dc2-7da3-47dc-9383-f582b991bb50"
+    },
+    {
+      "claim_id": "14b68a64-69ef-4104-87d2-679c32686ea0",
+      "result_id": "652c9dc2-7da3-47dc-9383-f582b991bb50"
+    },
+    {
+      "claim_id": "8b104cba-818d-41e7-9837-09a6e6f71d2d",
+      "result_id": "652c9dc2-7da3-47dc-9383-f582b991bb50"
+    },
+    {
+      "claim_id": "8f3de281-7e40-4ea3-9d31-cfcccf6746ac",
+      "result_id": "652c9dc2-7da3-47dc-9383-f582b991bb50"
+    },
+    {
+      "claim_id": "45095537-0b38-4a9f-995a-69794513bae7",
+      "result_id": "607a2d29-59d4-4227-8943-120057cd1d19"
+    },
+    {
+      "claim_id": "9fab2bb4-9e2d-44bc-8f63-4819d2de0220",
+      "result_id": "607a2d29-59d4-4227-8943-120057cd1d19"
+    },
+    {
+      "claim_id": "1c864ca0-f478-485f-aadf-18af6196715a",
+      "result_id": "607a2d29-59d4-4227-8943-120057cd1d19"
+    },
+    {
+      "claim_id": "6f12f8fe-a6bd-49c5-92e2-306693d37627",
+      "result_id": "607a2d29-59d4-4227-8943-120057cd1d19"
+    },
+    {
+      "claim_id": "18bad244-89e3-47eb-a741-c91c96f2a696",
+      "result_id": "76afde25-c2da-45a5-9250-79d0306eabf8"
+    },
+    {
+      "claim_id": "9bba24d4-422d-4b2a-be05-647ef3bef335",
+      "result_id": "76afde25-c2da-45a5-9250-79d0306eabf8"
+    },
+    {
+      "claim_id": "32d99e31-454b-4043-ba26-076f7483b1de",
+      "result_id": "76afde25-c2da-45a5-9250-79d0306eabf8"
+    },
+    {
+      "claim_id": "3d22075c-645e-4611-95aa-48ac59a60e8c",
+      "result_id": "76afde25-c2da-45a5-9250-79d0306eabf8"
+    },
+    {
+      "claim_id": "9d42fe3e-eb97-4aa9-b4dc-9666ad2b3839",
+      "result_id": "76afde25-c2da-45a5-9250-79d0306eabf8"
+    },
+    {
+      "claim_id": "c17cd277-d17f-44ea-974e-fe5952d94ecc",
+      "result_id": "76afde25-c2da-45a5-9250-79d0306eabf8"
+    },
+    {
+      "claim_id": "8e4b919d-c25d-41a1-9262-6242e145864a",
+      "result_id": "a9ccc1ea-b956-4392-bd8e-3e916ef69304"
+    },
+    {
+      "claim_id": "67dc13a9-9a92-4f78-af5b-f718713ac244",
+      "result_id": "a9ccc1ea-b956-4392-bd8e-3e916ef69304"
+    },
+    {
+      "claim_id": "13249f82-98d9-4232-a3b8-697c97a821fe",
+      "result_id": "a9ccc1ea-b956-4392-bd8e-3e916ef69304"
+    },
+    {
+      "claim_id": "01f31caf-b553-4312-a49e-579c89ab4bbc",
+      "result_id": "a9ccc1ea-b956-4392-bd8e-3e916ef69304"
+    },
+    {
+      "claim_id": "a418abb2-1615-4725-a450-356795416da7",
+      "result_id": "a9ccc1ea-b956-4392-bd8e-3e916ef69304"
+    },
+    {
+      "claim_id": "1cea1379-5f62-4a0a-a9a9-e59bc6e05545",
+      "result_id": "97bb9e05-436f-47e5-aaff-b5154ebda2bc"
+    },
+    {
+      "claim_id": "64861407-74c4-41d7-9f81-9aad4d4bd9cb",
+      "result_id": "97bb9e05-436f-47e5-aaff-b5154ebda2bc"
+    },
+    {
+      "claim_id": "97f7956d-1115-429a-bda0-0d945f65026d",
+      "result_id": "97bb9e05-436f-47e5-aaff-b5154ebda2bc"
+    },
+    {
+      "claim_id": "6e6a30d3-45cf-4882-ad0d-017c12b944c2",
+      "result_id": "97bb9e05-436f-47e5-aaff-b5154ebda2bc"
+    },
+    {
+      "claim_id": "833cf2eb-b07b-40d0-92fd-76a1af2800ee",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "72a6471d-abb0-4364-b3c2-4910284b45d5",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "932ac514-0f34-4b1b-8050-72d5eb965145",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "d2c5b105-399a-4aec-8c8d-892fd7bf9358",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "0c32c1e3-d8f1-4926-8a3b-f55d57804f81",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "1a30729d-3b31-457c-a245-53ee056e537e",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "6cf9a16d-4218-4b2f-ae73-86194815149f",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "fce00161-b8f4-427d-aa9d-0fdebf3484d3",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "d886c15b-19c1-4036-a035-274fd91f0e7f",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "f286c92a-a9e0-442e-bb04-65b64a7430a1",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "060dca10-36b6-4df2-9cdc-f9cecfba6040",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "4922c05d-c96a-42e5-9230-0a6ebc54f631",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "f0b8aeab-d279-45d4-9a19-46900283bbba",
+      "result_id": "161010ff-3661-4f15-9062-6f2e2f15566c"
+    },
+    {
+      "claim_id": "c5fdda85-f98a-4080-ab1e-80cdc833538d",
+      "result_id": "2f58b6c3-754f-4568-a2d0-966015b30ddd"
+    },
+    {
+      "claim_id": "84f22550-28ed-40fb-aba5-3a33b80384a1",
+      "result_id": "2f58b6c3-754f-4568-a2d0-966015b30ddd"
+    },
+    {
+      "claim_id": "37358cdc-84e3-4fab-bfd8-6a9ba0a98cda",
+      "result_id": "2f58b6c3-754f-4568-a2d0-966015b30ddd"
+    },
+    {
+      "claim_id": "3af0da3c-5b3a-41de-ac2b-881743d50400",
+      "result_id": "2f58b6c3-754f-4568-a2d0-966015b30ddd"
+    },
+    {
+      "claim_id": "d9f2a385-d3fb-46ab-a284-c4dca8bd04d7",
+      "result_id": "2f58b6c3-754f-4568-a2d0-966015b30ddd"
+    },
+    {
+      "claim_id": "df145043-526f-4803-bdc0-83f1a223cecf",
+      "result_id": "2f58b6c3-754f-4568-a2d0-966015b30ddd"
+    },
+    {
+      "claim_id": "2ec4581b-8fdd-4180-9cab-78c7aa2b8ba5",
+      "result_id": "2f58b6c3-754f-4568-a2d0-966015b30ddd"
+    },
+    {
+      "claim_id": "1b67607f-8d6d-4193-91ea-c2d02062a0a9",
+      "result_id": "d32a3d06-1660-4c2e-bc7c-94176e6c5d63"
+    },
+    {
+      "claim_id": "4efbc1fd-3f76-40e9-af27-22566e11680e",
+      "result_id": "d32a3d06-1660-4c2e-bc7c-94176e6c5d63"
+    },
+    {
+      "claim_id": "7c30e349-ea66-42ec-88ec-f23afcf6d623",
+      "result_id": "d32a3d06-1660-4c2e-bc7c-94176e6c5d63"
+    },
+    {
+      "claim_id": "af9c93d7-c85d-4467-ae6b-4de36f6a7c61",
+      "result_id": "d32a3d06-1660-4c2e-bc7c-94176e6c5d63"
+    },
+    {
+      "claim_id": "5c61e89f-089f-46d6-be1e-beccf8b53d60",
+      "result_id": "d32a3d06-1660-4c2e-bc7c-94176e6c5d63"
+    },
+    {
+      "claim_id": "c5f2cacf-2f87-4ef1-a302-38dc5b91c07b",
+      "result_id": "d32a3d06-1660-4c2e-bc7c-94176e6c5d63"
+    },
+    {
+      "claim_id": "1b6d3b70-cc29-4a0a-a762-cb3b1ef75345",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "e6a981a9-c3bd-4428-95bc-08d590c5c752",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "148ac72e-3aaa-4fd9-9189-e80277bfa04e",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "4759e59c-1406-47ec-a3fb-cf598e1320e8",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "3849cd29-342b-4445-b28e-7e0e9ae0e161",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "0f888960-9aa6-4638-ba21-c0798c0e2e24",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "ccf00dc9-7fe4-4298-bd1c-8288b98a96ba",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "a17d60b4-0273-42da-af87-05c2700b920b",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "751514e2-2ca7-41cf-b8f8-02e88d14a3c3",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "0259ee1b-b4b5-4e63-b97c-1402393c1959",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "b6c7e82e-a23d-48e1-a6ec-bd5997ebfdde",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "91a35e4f-05df-4e5d-8999-eb6f6d6ac624",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "e3c7f6c0-35a3-452b-ac76-01de87a7e4d0",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "fea6e833-cba1-461d-9c7a-0f575e978e01",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "eda01f74-abc9-4178-88b9-25921f78bc2d",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "895130cc-0c5f-4dc8-b2fa-f5f8a9554f1b",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "17652571-ce09-4f20-aa33-67fb06a27a41",
+      "result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007"
+    },
+    {
+      "claim_id": "3db53df3-0f7c-4787-bc87-72b7bdcbc5ae",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "411af39f-19a5-427c-9b35-23987fbc7cd9",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "e2d6a458-753b-4698-b7b0-cf8881acc206",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "b5aa2d48-8ead-4100-a377-b197a3b10106",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "95a1dcb8-8b08-4c2c-9589-0e7591482c6a",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "506ccf21-34ba-4ddf-8bcf-0dfb6692d7e8",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "eaf75cb6-da4a-4a90-bebe-64ab42ced181",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "ea3102f9-0db7-48b5-b3f9-9e8ad1ecab8a",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "3f94afc9-89bf-4ae6-b0c9-b5cec7bf94c2",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "0817e522-70f9-49ff-bab6-e62457c0b5fc",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "2fef5f75-fe29-46e5-9562-43b8dacd4a67",
+      "result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515"
+    },
+    {
+      "claim_id": "fb1dc743-cc1e-475a-b882-6336bd11ff62",
+      "result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc"
+    },
+    {
+      "claim_id": "46dcd06b-c762-4330-b29f-293300d6609c",
+      "result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc"
+    },
+    {
+      "claim_id": "5bd0d9f8-383a-4ac6-ad2d-27375653d275",
+      "result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc"
+    },
+    {
+      "claim_id": "9827da35-f402-49c7-996a-88343b0bb53c",
+      "result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc"
+    },
+    {
+      "claim_id": "82d49dff-9168-4332-aa51-42c0e284b313",
+      "result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc"
+    },
+    {
+      "claim_id": "14b68a64-69ef-4104-87d2-679c32686ea0",
+      "result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc"
+    },
+    {
+      "claim_id": "8b104cba-818d-41e7-9837-09a6e6f71d2d",
+      "result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc"
+    },
+    {
+      "claim_id": "8f3de281-7e40-4ea3-9d31-cfcccf6746ac",
+      "result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc"
+    },
+    {
+      "claim_id": "6b094f15-901c-43b8-b185-ac61ccf49278",
+      "result_id": "1e9d3504-4f64-4624-84ef-f4f79bf957ba"
+    },
+    {
+      "claim_id": "f1933ea9-f090-4d38-bb34-0b619599b08c",
+      "result_id": "1e9d3504-4f64-4624-84ef-f4f79bf957ba"
+    },
+    {
+      "claim_id": "9e560f33-ae1e-457f-a09a-f5357b995d10",
+      "result_id": "1e9d3504-4f64-4624-84ef-f4f79bf957ba"
+    },
+    {
+      "claim_id": "1b1dfd16-9fe6-4f95-811c-070edace97f5",
+      "result_id": "1e9d3504-4f64-4624-84ef-f4f79bf957ba"
+    },
+    {
+      "claim_id": "77b27434-8530-40f5-b246-0eaeae08bb31",
+      "result_id": "1e9d3504-4f64-4624-84ef-f4f79bf957ba"
+    },
+    {
+      "claim_id": "6de85111-5631-42bd-8827-2b007c8983f8",
+      "result_id": "ca8063f7-56ad-448d-932b-c50c5e351a3c"
+    },
+    {
+      "claim_id": "9e83d32e-8cd0-4929-bdf4-41d6c04feddb",
+      "result_id": "ca8063f7-56ad-448d-932b-c50c5e351a3c"
+    },
+    {
+      "claim_id": "f74582a3-9ea8-4761-9948-c4816f6c0c3d",
+      "result_id": "ca8063f7-56ad-448d-932b-c50c5e351a3c"
+    },
+    {
+      "claim_id": "1d0e8ab9-7f75-474a-8f30-1208c370d297",
+      "result_id": "9a52807d-7413-4ac7-aa2f-71ab8a6769c6"
+    },
+    {
+      "claim_id": "59a8be5c-bd31-425e-aa92-d60b67b75146",
+      "result_id": "9a52807d-7413-4ac7-aa2f-71ab8a6769c6"
+    },
+    {
+      "claim_id": "b69386de-c2c0-41f1-8b97-48d337f67230",
+      "result_id": "9a52807d-7413-4ac7-aa2f-71ab8a6769c6"
+    },
+    {
+      "claim_id": "1c864ca0-f478-485f-aadf-18af6196715a",
+      "result_id": "8d572e92-7ad6-4d2b-ae7c-30b5b181d9c1"
+    },
+    {
+      "claim_id": "6f12f8fe-a6bd-49c5-92e2-306693d37627",
+      "result_id": "8d572e92-7ad6-4d2b-ae7c-30b5b181d9c1"
+    },
+    {
+      "claim_id": "8e4b919d-c25d-41a1-9262-6242e145864a",
+      "result_id": "12e40597-1302-4cd1-af0d-25648be00768"
+    },
+    {
+      "claim_id": "67dc13a9-9a92-4f78-af5b-f718713ac244",
+      "result_id": "12e40597-1302-4cd1-af0d-25648be00768"
+    },
+    {
+      "claim_id": "01f31caf-b553-4312-a49e-579c89ab4bbc",
+      "result_id": "12e40597-1302-4cd1-af0d-25648be00768"
+    },
+    {
+      "claim_id": "a418abb2-1615-4725-a450-356795416da7",
+      "result_id": "12e40597-1302-4cd1-af0d-25648be00768"
+    },
+    {
+      "claim_id": "88e4bfc1-981f-4d7e-99a7-83c53841e809",
+      "result_id": "dcba8242-655d-49d1-8c50-b7d34cdd1c2e"
+    },
+    {
+      "claim_id": "bcc85422-16ff-4ef6-a6a0-52862a688a15",
+      "result_id": "dcba8242-655d-49d1-8c50-b7d34cdd1c2e"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "5a360ba9-dcfe-4255-af14-1806d36dfa61",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "511a82a3-2d91-4168-995f-f2c392c12042",
+      "peer_result_id": "341a2805-6e3a-4d7e-95ed-8c5f45f6a007",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on salt-dependent nucleosome interactions (C4, C21-C28, C57-C61, C90-C91, C96). Both evaluations support the findings with OpenEval emphasizing Manning theory consistency and peer reviewers highlighting the strength of explicit counterion representation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "8b83e03a-f7f1-4b07-8c1f-d0bfdb89cb7f",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f42b8d87-d71f-4bf2-907b-bd4711f41d30",
+      "peer_result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on reconciliation of experimental discrepancies (C29-C34, C44-C45, C83, C95). Both evaluations support the mechanistic explanation through restrained vs. unrestrained simulations. Peer reviewers explicitly state the method 'resolves certain experimental discrepancies.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "38ac4a72-2b83-4726-bd15-52d246def4bc",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "a9ccc1ea-b956-4392-bd8e-3e916ef69304",
+      "peer_result_id": "12e40597-1302-4cd1-af0d-25648be00768",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on computational methodology (C15, C63, C65, C82). Both evaluations support the model design. OpenEval describes it as straightforward methodology while peer reviewers emphasize efficient conformational sampling at low computational cost.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "22760cd4-06d0-4f51-ae3f-9b5456281719",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "53343b6f-4686-4cef-9834-c294f5270290",
+      "peer_result_id": "d32a3d06-1660-4c2e-bc7c-94176e6c5d63",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on model validation (C2, C3, C16, C17, C93, C94). Both support validation through experimental comparison. However, peer evaluation R10 expresses uncertainty about the correlation strength (C84, C85), while OpenEval R1 includes these claims as supported with acknowledgment of moderate correlation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "880de897-003b-41a3-8567-ce99d6d73b49",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "41514c60-f636-4159-87b5-075820fb9794",
+      "peer_result_id": "ca8063f7-56ad-448d-932b-c50c5e351a3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on orientation-distance coupling (C36, C86, C87). OpenEval finds clear support from 2D free energy landscapes, while peer reviewers express uncertainty, noting 'shortage of substantial agreement' in related Figure S4 data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "9607c072-2e87-4fbb-8be0-141a9eb63d3d",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "652c9dc2-7da3-47dc-9383-f582b991bb50",
+      "peer_result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on linker histone and NRL effects (C7, C41-C42, C47, C88-C89). Both evaluations support these findings. Peer R4 also includes C6 and C40 (NRL effects without H1), showing broader grouping of linker-dependent phenomena.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "b63efc71-3f60-48f6-ba5a-8d0d8cc6cf86",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "5b445bed-7071-4d8c-aa0e-fff693f29d61",
+      "peer_result_id": "1e9d3504-4f64-4624-84ef-f4f79bf957ba",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ion binding dynamics during DNA unwrapping (C18-C20, C43, C92). Both support these findings. Peer reviewers emphasize the strength of explicit counterion representation as a key methodological advantage.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "ef3efd1d-344e-406c-9466-ad26ea8f4c57",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "4985c58d-a574-4aa7-906e-97f629ffe4bd",
+      "peer_result_id": "9a52807d-7413-4ac7-aa2f-71ab8a6769c6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on sequence-dependent effects (C37-C39). Both evaluations support these findings. OpenEval provides more detailed mechanistic explanation through DNA mechanical properties, while peer reviewers accept implicitly through general validation statements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "730aa9a1-4373-437a-a81e-fa0810d8212f",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "607a2d29-59d4-4227-8943-120057cd1d19",
+      "peer_result_id": "8d572e92-7ad6-4d2b-ae7c-30b5b181d9c1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on main biological conclusions (C49, C81). Both support the role of physicochemical interactions in chromatin organization. OpenEval includes additional claims (C46, C48) about pulling experiments and histone modifications that peer reviewers do not explicitly address.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "b8d90f3f-79db-4824-a900-1cbd8f85548d",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "53343b6f-4686-4cef-9834-c294f5270290",
+      "peer_result_id": "dcba8242-655d-49d1-8c50-b7d34cdd1c2e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on correlation coefficient claims (C84, C85). OpenEval R1 supports these as part of broader validation, while peer R10 expresses uncertainty about the strength of quantitative agreement, noting moderate correlation may not demonstrate substantial agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "2c0de344-c017-4d1f-9ad2-76aeb1aa43ac",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "41514c60-f636-4159-87b5-075820fb9794",
+      "peer_result_id": "d36dda2e-b4bb-4d24-b688-561ce2571515",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C5 (orientation-distance coupling energy prediction). OpenEval groups C5 with orientation claims (R5), while peer reviewers group it with experimental discrepancy reconciliation (R3), both supporting the claim but in different contexts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "5dc84f09-b96e-456b-9dcb-c54ff6002773",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "4985c58d-a574-4aa7-906e-97f629ffe4bd",
+      "peer_result_id": "3674d84f-7a80-4453-9be2-0c88474df9bc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on NRL effects (C6, C40). OpenEval R6 addresses sequence and NRL effects together, while peer R4 groups NRL with linker histone effects. Both evaluations support these claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "748fa420-c3b1-4ea3-8e3c-25d4d95f9fb2",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "76afde25-c2da-45a5-9250-79d0306eabf8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates reconciliation of simulation predictions with in vivo observations (C50-C54, C97) as UNCERTAIN due to reliance on prior work and speculation. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "ebc6d17e-081a-4a2c-ace3-7a880401f35d",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "97bb9e05-436f-47e5-aaff-b5154ebda2bc",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature context claims (C1, C13-C14, C75) as SUPPORTED, confirming accurate summarization of prior experimental work. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "c0afb23a-9be8-44f9-a781-c57d83e895ab",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "161010ff-3661-4f15-9062-6f2e2f15566c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates extensive literature context claims (C8-C12, C72-C74, C76-C80) as SUPPORTED, confirming accurate characterization of established knowledge. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    },
+    {
+      "id": "8c049f09-3081-4bd0-94fe-6777aa6a285c",
+      "submission_id": "42493911-bbb8-43a1-a6ea-3d1310bcaf40",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "2f58b6c3-754f-4568-a2d0-966015b30ddd",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological justification claims (C62, C66-C71) as SUPPORTED, affirming rationale for model development. No corresponding peer review evaluation found for these methodological context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:26:38.042910Z"
+    }
+  ]
+}

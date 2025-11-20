@@ -1,0 +1,401 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Electrophysiological recordings from 341 zona incerta neurons in head-fixed mice on a spherical treadmill revealed two major classes of neurons (Class1 and Class2) with distinct movement-related firing patterns. Class1 neurons (n=105, 30.8%) activated robustly during movement, while Class2 neurons showed weaker or inhibitory responses. Each class was further subdivided based on firing rates, with no difference in recording depth between classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 provide comprehensive electrophysiological characterization with appropriate sample sizes (n=341 units), statistical analyses (Tukey tests with reported q and p values), and PCA-based classification. The data in Figure 1 supports the classification scheme, firing rate differences, and correlation analyses. Recording depth verification (C41) strengthens anatomical localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A minority of zona incerta neurons (19.4%, n=33/170) responded to contralateral whisker stimulation, with stronger responses to contralateral versus ipsilateral whiskers. These whisker-sensitive neurons were distributed across both Class1 and Class2 movement-sensitive categories and did not respond to auditory tones, white noise, or air-puffs to the lower back.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C52 are well-supported by sensory stimulation data in Figure 2 with appropriate statistical analyses (mixed ANOVA, Tukey tests). The finding that whisker-sensitive neurons span both movement classes (C45-C47) is clearly demonstrated. However, the lack of auditory responses (C42) may reflect sampling bias as acknowledged by the authors (C160), which is appropriately noted as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C162"
+    ],
+    "result": "Fiber photometry calcium imaging of GABAergic zona incerta neurons (n=8 mice) revealed robust activation during exploratory movement, with strong positive correlations between movement (overall, rotational, and translational components) and neural activity. All categories of detected movements showed significant activation compared to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by fiber photometry data in Figure 3 showing cross-correlations, linear fits, and movement-triggered averages. The shuffled control (C55) provides important validation. Statistical significance is reported (Tukey p<0.0001, C56). The cell-type specificity using Vgat-cre mice and GCaMP7f expression is well-documented in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C163",
+      "C164"
+    ],
+    "result": "Zona incerta GABAergic neurons do not code the direction of head movements. Neural activation was similar for contraversive and ipsiversive movements, with no significant differences in amplitude, area, or timing of F/Fo activation between directions. This contrasts with superior colliculus neurons which discriminate movement direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are strongly supported by directional movement analysis in Figure 4 showing equivalent activation for opposite turning directions. The comparison to superior colliculus (C61, C164) provides important context and is appropriately cited (Zhou et al., 2023). Statistical analyses confirm lack of directional coding. This is a key finding distinguishing zona incerta from other motor-related structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C147",
+      "C148"
+    ],
+    "result": "Zona incerta GABAergic neurons responded to salient auditory tones in a manner dependent on sound pressure level (SPL) and frequency, with higher SPL and frequency producing stronger activation. However, these auditory stimuli invariably evoked movement, and the neural responses were associated with this movement rather than purely sensory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by auditory mapping data in Figure 5 with appropriate two-way repeated measures ANOVA showing main effects of SPL and frequency (p<0.0001) but no interaction. The critical observation that auditory responses are movement-associated (C148) is supported by parallel movement measurements. However, the causal relationship requires the anesthesia experiment for full validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C149",
+      "C150"
+    ],
+    "result": "Isoflurane anesthesia reversibly suppressed or abolished zona incerta activation evoked by auditory tones, white noise, and whisker stimuli. This indicates that zona incerta neuron activation by sensory stimulation is primarily associated with states when sensory-evoked movement is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C69 are supported by data in Figure 5C-D showing suppression under anesthesia (Tukey tests, p<0.008 to p<0.0001). However, the interpretation (C69) that this demonstrates movement-dependence rather than arousal-dependence is uncertain. The authors acknowledge this limitation, noting that arousal and movement were not dissected and would require paralysis and ventilation. The conclusion conflates movement suppression with arousal changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C165",
+      "C166"
+    ],
+    "result": "During signaled active avoidance tasks (AA1, AA2, AA3), zona incerta neurons showed minimal activation at CS onset but strong activation during avoidance and escape movements. Activation timing shifted with behavioral contingencies, and passive avoidance (no movement) produced no activation. Escapes were faster and produced stronger activation than avoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 are well-supported by comprehensive behavioral data in Figures 6-7 across multiple avoidance procedures (n=8 mice). Statistical comparisons between avoids and escapes are provided (Tukey tests, p<0.01). The dissociation between active and passive avoidance (C77-C78) is particularly compelling evidence for movement-related rather than task-related coding. The temporal dynamics align with movement timing across procedures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "During the AA4 procedure with three CSs signaling different avoidance interval durations, zona incerta activation shifted temporally to reflect the timing of avoidance movements. CS1 avoids were faster than CS2 or CS3 avoids, but peak zona incerta activation did not differ between CSs, indicating activation is associated with movement occurrence rather than the specific behavioral task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by AA4 data in Figure 7A-B. Statistical analyses confirm faster CS1 avoids (Tukey tests, p<0.002) but no difference in peak activation (RMANOVA, p=0.91). The authors appropriately note that the slow F/Fo measure may not discriminate subtle speed differences. This result reinforces the movement-association interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Unsignaled US presentations evoked strong zona incerta activation during escape responses. Foot-shock alone produced activation similar to the full US, while white noise alone drove slower escapes with less activation. The zona incerta activation follows the speed of escape movement, with the auditory component adding little to foot-shock-driven activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by US dissociation experiments in Figure 7C-D (n=7 mice). Statistical comparisons show white noise produces weaker activation than foot-shock or full US (Tukey tests, p<0.02). This elegant dissociation demonstrates that zona incerta activation tracks movement vigor rather than sensory modality, strengthening the movement-coding interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Bilateral injection of AAV8-EF1a-mCherry-flex-dtA in Vgat-cre mice significantly reduced zona incerta neuron numbers but had only minor effects on learning and performing signaled active avoidance tasks. A small effect on avoidance percentage was observed during AA1 but not AA2 or AA3, with no differences in avoidance latency or intertrial crossings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by lesion data in Figure 8A-B. Cell counting confirms lesion efficacy (Mann-Whitney, p<0.0001). Behavioral effects are minimal with only a small AA1 effect (ANOVA, p=0.043). The lack of effect on decision-making, response inhibition, and discrimination tasks is clearly demonstrated. Sample sizes and statistical approaches are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Lesions of GABAergic zona incerta neurons enhanced CS-evoked orienting responses but suppressed goal-directed avoidance and escape movement speeds. The slower movement applied to both translational and rotational components for avoidance, but only translational for escapes. Lesions had little impact on decision-making, response inhibition, or stimulus discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are supported by detailed movement analysis in Figure 8C-D with appropriate statistical tests (ANOVAs, p<0.0001 to p=0.0039). The bidirectional effects (enhanced orienting vs. suppressed goal-directed movement) are intriguing and well-documented. The dissociation between movement parameters and task performance strengthens the modulatory rather than essential role interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Unilateral optogenetic inhibition of Arch-expressing GABAergic zona incerta neurons with continuous green light produced no significant effect on head orienting bias compared to No Opsin controls during open field exploration. Light application in No Opsin mice also had no effects, validating the optogenetic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by data in Figure 9A-C with appropriate controls (No Opsin, n=27 sessions in 7 mice) and statistics (Tukey test, p=0.249). The weak effects of unilateral inhibition are consistent with the lesion data showing minimal behavioral impact. The No Opsin controls are essential and properly executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Bilateral optogenetic inhibition of zona incerta GABAergic neurons during AA1 performance increased orienting response speed and avoidance movement, shifting the time to peak avoidance faster without increasing peak speed. This demonstrates that inhibiting zona incerta enhances goal-directed movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are supported by bilateral inhibition data in Figure 9D (n=21 sessions in 7 mice) with multiple statistical comparisons (Tukey tests, p<0.001 to p=0.006). The dissociation between area/timing effects and peak speed (C110, p=0.995) is interesting and well-documented. Results are consistent with a modulatory role in movement control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Unilateral optogenetic excitation of ChR2-expressing GABAergic zona incerta neurons evoked vigorous contraversive head movements during open field exploration, with continuous blue light producing the strongest effects. However, bilateral excitation produced no movement or directional bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are supported by data in Figure 10A-C (n=44 sessions in 4 mice) with strong statistical effects versus No Opsin controls (Tukey tests, p<0.0001). The striking difference between unilateral and bilateral effects is well-documented and important for understanding zona incerta function. The lack of bilateral effects aligns with the non-directional coding observed in photometry experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Bilateral optogenetic excitation of zona incerta GABAergic neurons during AA1 performance increased orienting response speed but decreased avoidance movement, potentially impairing goal-directed behavior. This bidirectional effect on different movement types demonstrates zona incerta's modulatory role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by bilateral excitation data in Figure 10D (n=28 sessions) with appropriate statistics (Tukey tests, p<0.0001 to p=0.018). The opposite effects on orienting versus avoidance movements are well-documented. The authors appropriately note that optogenetic excitation levels may not reflect normal physiological activation (C140-C141).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Unilateral excitation of zona incerta GABAergic fibers in PO thalamus evoked contraversive head bias, with effects resembling direct zona incerta stimulation. Continuous light effects may reflect spread to underlying zona incerta. Bilateral PO excitation produced no movement effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 are supported by projection-specific optogenetics in Figure 11 (n=31 sessions in 4 mice) with statistics (Tukey tests, p<0.0001). The interpretation that continuous light reaches zona incerta (C122) is appropriately supported by prior work citation (Hormigo et al., 2020). The weak effects and bilateral null results are consistent with other findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Unilateral excitation of zona incerta GABAergic fibers in PPT with 40-66 Hz trains (but not continuous light) evoked contraversive head bias. Bilateral PPT excitation produced no movement effects. This suggests PPT projections may mediate unilateral excitation effects on movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 are supported by PPT projection data in Figure 11 (n=34 sessions in 4 mice). The frequency-dependent effect (trains but not continuous, C125-C126) is interesting and well-documented statistically (Tukey tests, p<0.0001 for trains, p=0.42 for continuous). The bilateral null result is consistent with other projections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Unilateral excitation of zona incerta GABAergic fibers in superior colliculus evoked ipsiversive (opposite direction) head bias, contrasting with effects in zona incerta proper or projections to PO and PPT. These effects are consistent with unilateral superior colliculus inhibition reported previously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are supported by superior colliculus projection data in Figure 11 (n=23 sessions in 4 mice) with statistics (Tukey tests, p<0.002). The opposite directional effect compared to other targets is important and well-documented. The consistency with prior superior colliculus inhibition studies (Zhou et al., 2023) provides validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Optogenetic manipulations demonstrate that inhibition of zona incerta has weak effects on exploratory movement, while unilateral excitation produces contraversive movement that is absent during bilateral excitation. The unilateral effects can be mediated primarily by PPT projections, with opposite effects through superior colliculus projections consistent with non-directional population coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 synthesize optogenetic findings across multiple experiments. The integration of soma and projection-specific manipulations (C133) is logical and supported by the data. The agreement between opposite projection effects and non-directional population coding (C134) is an important insight well-supported by the combined photometry and optogenetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C142",
+      "C172"
+    ],
+    "result": "Zona incerta neurons provide a generalized movement signal to distributed projection sites that modulates but is not required to drive behavior. Electrophysiology and calcium imaging show movement-related activation without directional coding, while lesions and inhibition have minimal impact on task performance but modulate movement parameters like speed and orienting responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C142, C172 represent the main conclusions integrating all experimental approaches. The evidence from multiple complementary methods (electrophysiology, photometry, lesions, optogenetics) converges on a modulatory role. The interpretation that zona incerta signals movement occurrence to regulate behavior (C142, C172) is well-supported, though the mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Background claims establish that zona incerta is a GABAergic subthalamic nucleus with wide-ranging connections implicated in diverse functions including sensorimotor integration, feeding, defensive behaviors, sleep, pain, and motor control. Corollary discharge signals have regulatory roles in brain function but are typically not required to generate monitored behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29, C143-C146 provide literature context supported by appropriate citations. These are standard background claims establishing the field's understanding of zona incerta and corollary discharge concepts. The citations appear appropriate and the characterizations are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C157",
+      "C160",
+      "C170",
+      "C171"
+    ],
+    "result": "Speculative interpretations suggest that optogenetic excitation levels may represent pathological states distinct from normal activation, that brainstem nuclei controlling orienting may be under tonic zona incerta inhibition, and that zona incerta functions as a movement sensor providing regulatory feedback to brainstem control circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C141, C157, C160, C170-C171 are explicitly speculative interpretations. While these are reasonable hypotheses consistent with the data, they lack direct experimental support. The authors appropriately acknowledge these as speculative (C157, C160) or cite supporting conceptual frameworks (C170). These represent important future directions but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

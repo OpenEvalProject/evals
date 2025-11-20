@@ -1,0 +1,1582 @@
+{
+  "submission": {
+    "id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T21:16:20.530877Z",
+    "updated_at": "2025-11-20T21:16:20.530877Z"
+  },
+  "content": [
+    {
+      "id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "content_type": "manuscript",
+      "content_text": "# Emergence of catalytic function in prebiotic information-coding polymers\n\n## Authors\n\n- Alexei V Tkachenko<sup>1</sup> ([ORCID: 0000-0003-1291-243X](https://orcid.org/0000-0003-1291-243X)) \u2020\n- Sergei Maslov<sup>2</sup> ([ORCID: 0000-0002-3701-492X](https://orcid.org/0000-0002-3701-492X)) \u2020\n\n### Affiliations\n\n1. Center for Functional Nanomaterials, Brookhaven National Laboratory Upton United States ([ROR:02ex6cf31](https://ror.org/02ex6cf31))\n2. Department of Bioengineering, University of Illinois Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n3. Department of Physics, University of Illinois Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n4. Carl R Woese Institute for Genomic Biology, University of Illinois Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLife as we know it relies on the interplay between catalytic activity and information processing carried out by biological polymers. Here we present a plausible pathway by which a pool of prebiotic information-coding oligomers could acquire an early catalytic function, namely sequence-specific cleavage activity. Starting with a system capable of non-enzymatic templated replication, we demonstrate that even non-catalyzed spontaneous cleavage would promote proliferation by generating short fragments that act as primers. Furthermore, we show that catalytic cleavage function can naturally emerge and proliferate in this system. Specifically, a cooperative catalytic network with four subpopulations of oligomers is selected by the evolution in competition with chains lacking catalytic activity. The cooperative system emerges through the functional differentiation of oligomers into catalysts and their substrates. The model is inspired by the structure of the hammerhead RNA enzyme as well as other DNA- and RNA-based enzymes with cleavage activity that readily emerge through natural or artificial selection. We identify the conditions necessary for the emergence of the cooperative catalytic network. In particular, we show that it requires the catalytic rate enhancement over the spontaneous cleavage rate to be at least 102\u2013103, a factor consistent with the existing experiments. The evolutionary pressure leads to a further increase in catalytic efficiency. The presented mechanism provides an escape route from a relatively simple pairwise replication of oligomers toward a more complex behavior involving catalytic function. This provides a bridge between the information-first origin of life scenarios and the paradigm of autocatalytic sets and hypercycles, albeit based on cleavage rather than synthesis of reactants.\n\n## Introduction\n\nOne of the most intriguing mysteries in science is the origin of life. Despite extensive research in this area, we are still far from understanding how life has emerged on Earth. One promising hypothesis is the RNA world theory (Gilbert, 1986; Doudna and Szostak, 1989; Orgel, 2004; Lincoln and Joyce, 2009; Robertson and Joyce, 2012; Higgs and Lehman, 2015), inspired by the discovery of ribozymes (Kruger et al., 1982), that is, RNA molecules capable of enzymatic activity. According to this hypothesis, all processes in early life were carried out by the RNA, which was used both to store information and catalyze biochemical reactions. In particular, specific ribozymes could have catalyzed the self-replication of arbitrary RNA sequences, a function currently performed by specialized protein-based enzymes. However, based on the results of the existing experiments (Bartel and Szostak, 1993; Horning and Joyce, 2016), such a catalytic function requires rather long and carefully designed RNA sequences, which are highly unlikely to arise spontaneously. In contrast, one of the simplest catalytic activities of ribozymes is their ability to cleave an RNA sequence at a specific site. Indeed, such ribozymes independently evolved in multiple branches of life (de la Pe\u00f1a and Garc\u00eda-Robles, 2010) and have been shown to emerge rapidly and repeatedly from artificial selection (Williams et al., 1995; Salehi-Ashtiani and Szostak, 2001). DNA molecules have also been shown to be capable of site-specific cleavage targeting either RNA (Breaker and Joyce, 1994) or DNA sequences (Silverman, 2005; Chandra et al., 2009).\n\nIn this article, we consider a population of information-carrying polymers capable of templated non-enzymatic replication (Szostak, 2012; Kim et al., 2021). This may have been the state of the proto-RNA world before the emergence of ribozymes. This could involve heteropolymers chemically distinct from present-day RNA (Kim et al., 2021) and/or inorganic catalysts such as mineral surfaces (Ferris, 2005; Jerome et al., 2022). We demonstrate that (i) even spontaneous cleavage promotes replication by generating short fragments used as primers for templated growth and (ii) catalytic cleavage activity naturally emerges in these populations and gets selected by the evolution (Lukin, 2010).\n\nIn a series of previous studies, we have shown that non-enzymatic templated replication can lead to the formation of longer chains (Tkachenko and Maslov, 2015) as well as to a reduction in sequence entropy (Tkachenko and Maslov, 2018). Such a reduction in entropy has subsequently been observed experimentally for templated ligation of DNA oligomers (Kudella et al., 2021). This selection in sequence space can be seen as a first step toward Darwinian evolution. However, this does not necessarily imply the emergence of a catalytic function. In this article, we build on these findings and further investigate the potential for the evolution of catalytic activity in the proto-RNA world.\n\n## Model and results\n\nIn our model, we consider the population dynamics of a pool of heteropolymers analogous to the familiar nucleic acids (RNA or DNA) but capable of enzyme-free templated polymerization. The basic processes in this scenario are similar to those in polymerase chain reaction (PCR), where the system is driven out of equilibrium by cyclic changes in the environment (e.g., temperature), which we refer to as \u2018night\u2019 and \u2018day\u2019 phases. During the night phase, heteropolymers hybridize with each other following Watson\u2013Crick-like complementarity rules. If the terminus of one chain hybridizes with the middle section of another chain, the former can be gradually elongated by the virtue of non-enzymatic templated polymerization (Sulston et al., 1968; Weimann et al., 1968; Lohrmann et al., 1980; Duzdevich et al., 2020). We will refer to this type of hybridization as \u2018end-to-middle\u2019, the former chain as the \u2018primer\u2019 and the latter chain as the \u2018template\u2019. During the day phase, the hybridized structures melt and all the heteropolymers separate from each other. During the next night, they hybridize with new partners, providing them with the opportunity to elongate further. Unlike the classical PCR process, we assume that the polymerization in our system occurs without any assistance from enzymes and may proceed in either direction along the chain. Equivalently, instead of polymerization, the elongation could rely on ligation with very short chain segments. It is important to note that in the context of RNA, such bidirectional elongation requires chemical activation of the phosphate group at the 5\u2032 end of the primer to provide free energy for the newly formed covalent bond. Like the polymerization process itself, achieving this without enzymes is biochemically challenging. One might speculate that prebiotic evolution relied on inorganic catalysis, such as on mineral surfaces, or involved polymers other than today\u2019s RNA.\n\nThe elongation of primers naturally leads to the copying of information from the template\u2019s sequence. The obvious limiting factor for this process is the availability of primers and the likelihood of end-to-middle hybridization resulting in elongation. The key observation behind our model is that the breakup (cleavage) of a chain creates a new pair of potential primers. Each of them could be elongated during subsequent nights. Thus, somewhat counterintuitively, breakup of chains results in their proliferation.\n\nOur previous theoretical (Tkachenko and Maslov, 2015; Tkachenko and Maslov, 2018) and experimental (Kudella et al., 2021) results demonstrated that templated-assisted replication of heteropolymers has a generic tendency to substantially reduce their sequence entropy. Such reduction has important consequences in the context of the current work: it significantly increases the likelihood of end-to-middle hybridization of chains during the night phase. That in turn creates an evolutionary pressure to further decrease sequence entropy. A detailed study of this fascinating mechanism falls beyond the scope of the current study. However, below we will assume the logical end of this dynamics where the pool of sequences is composed of fragments of one or several nearly non-overlapping master sequences and their complementaries. Note that for any two overlapping chains, such that the sequence of the first one is a fragment of the master sequence while the other is a fragment of the complementary master sequence, the end-to-middle binding is essentially guaranteed. The exception to this rule is when both chains terminate at the same points so that they are exact complements of each other.\n\n### Random cleavage model\n\nBased on the argument presented above, we focus on the case of a system populated with chains that are fragments of a single master sequence or its complement. We denote the total concentration of fragments of the master sequence as $c(t)$, while the concentration of all fragments of the complementary sequence as $c\u00af(t)$. Our system operates in a chemostat, that is, a reservoir constantly supplied with fresh monomers at the concentration $m_{0}$ and diluted at the rate $\\delta$. Let $M(t)$ (respectively $M\u00af(t)$) be the concentration of all monomers incorporated into chains of the subpopulation $c(t)$ (respectively $c\u00af(t)$). The concentration of free monomers not incorporated into any chains is given by:\n\n$$\nm=m_{0}\u2212M\u2212M\u00af\n$$\n\nIt is convenient to introduce a minimal length $l_{0}$ of a chain that would hybridize with its complementary partner during the night phase, and use it as the unit of chain length, instead of a single monomer. In effect, this leads to the renormalization of all monomer concentrations as $m=[m]/l_{0}$, where $[m]$ is the conventional molarity. $M$, $M\u00af$, and $m_{0}$ are similarly renormalized, while the polymer concentration remains unmodified: $c=[c]$. In what follows, we renormalize all lengths and concentrations so that $l_{0}=1$.\n\nWe assume that nights are sufficiently long and that the hybridization rate is sufficiently fast so that early on during each night phase most chains find partners with a complementary overlap. That assumes that the total concentration of all master sequence fragments, $c$, is lower than the total concentration of all fragments in the complementary subpopulation, $c\u00af$. If this is not the case, that is, if $c>c\u00af$, only a fraction $c\u00af/c$ of all fragments of the master sequence find a partner, while the rest of the $c$-subpopulation remains unpaired and thus does not elongate. For simplicity, our model neglects the possibility of the formation of hybridized complexes involving more than two chains.\n\nIt is well known that self-replication based on template-based polymerization or ligation is vulnerable to product inhibition, that is, re-hybridization of the products intended to act as templates (Szostak, 2012; Tupper and Higgs, 2021). Indeed, since full-length templates and their complements would bind more strongly to each other than any shorter fragment, the primers would typically be displaced from the templates by longer chains, leading to effective \u2018template\u2019 poisoning. In our model, however, the master sequence fragments act as both primers and templates. Of two oligomers in a hybridized pair, the one that extends further in a particular direction acts as a template for the growth of the other. At the same time, the partner may also act as a template for the growth of the first oligomer in the other direction. In either case, there will typically be two growing ends per duplex. Full inhibition occurs only when two hybridized chains terminate at exactly the same point in both directions. Since this is a rather rare event, we neglect its effect.\n\nAs discussed earlier, two hybridized chains whose sequences are fragments of the master sequence and its complementary would typically have two ends that undergo templated growth at a certain rate proportional to monomer concentration $m$ (see Figure 1). The exception to this rule is when these two hybridized chains terminate at exactly the same point. In our model, the average primer elongation rate is $r\u22c5m(t)$. The rate parameter $r$ accounts for the finite probability of primer binding to a template during the night phase as well as for a finite night-to-day ratio. Note that the value of $r$ does not change after our renormalization $l_{0}\u21921$. The $M(t)$ dynamics is thus given by\n\n$$\n\\frac{dM}{dt}=rm\u22c5min(c,c\u00af)\u2212\\delta\u22c5M\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91397/elife-91397-fig1-v1.jpg)\n\n**Figure 1.:** (A) Random cleavage model. A random break in a chain of type $c$ generates two primer fragments, which are elongated to give rise to two chains of type $c$. Elongation requires a complementary template of type $c\u00af$. (B) An example of catalyzed cleavage given by hammerhead ribozyme (Pley et al., 1994). Note that the right cleavage fragment is perfectly complementary to the blue sequence, while the left one contains an extra non-complementary base C. (C) Catalyzed cleavage model. A cleavage of the red chain $a$ catalyzed by the blue chain $b\u00af$ gives rise to two primers $a_{L}$ (red) and $a_{R}$ (purple). Because of an extra non-complementary base (see B), the $a_{L}$ primer can only elongate to $a$, while the $a_{R}$ primer \u2013 to either $a$ or $b$ depending on its first hybridization partner. Similar processes involving complementary chains $a\u00af$ and $b\u00af$ (not shown) result in the replication of templates.\n\nThe equation for the complementary subpopulation is obtained by replacing $M$ with $M\u00af$. Note that $m$ includes only monomers, and therefore is not subdivided into two complementary subpopulations.\n\nWe assume that the breakup of chains is completely random and happens at a constant rate $\\beta_{0}$ at any internal bond along the chain. The concentration of these breakable bonds is given by $M$. Because of our choice of the unit length $l_{0}$, $\\beta_{0}=l_{0}\\beta_{0}^{\u2032}$, where $\\beta_{0}^{\u2032}$ is the cleavage rate of a single bond. Since each fragmentation of a chain creates one new primer, the equation governing the overall concentration of chain fragments in the subpopulation $c$ is given by\n\n$$\n\\frac{dc}{dt}=\\beta_{0}M\u2212\\deltac\n$$\n\nOnce again, the equation for the complementary subpopulation is obtained by replacing $c$ with $c\u00af$ and $M$ with $M\u00af$.\n\nCombining Equations 2 and 3, we observe that the steady state is a symmetric mixture $c=c\u00af$. The average length (in units of $l_{0}$) of all chain fragments in the subpopulation $c$ is given by\n\n$$\n\u27e8L\u27e9=\\frac{M}{c}=\\frac{\\delta}{\\beta_{0}}=\\frac{rm^{\u2217}}{\\delta}.\n$$\n\nThis in turn determines the steady-state concentrations:\n\n$$\nm^{\u2217}=\\frac{\\delta^{2}}{\\beta_{0}r}\n$$\n\n\n\n$$\nc=c\u00af=\\frac{1}{2}(\\frac{\\beta_{0}}{\\delta}m_{0}\u2212\\frac{\\delta}{r})\n$$\n\nTo obtain Equation 6, we combined Equations 1 and 4. Note that the mutually templating chains survive only when the concentration of free monomers supplied to the system $m_{0}$ exceeds $m^{\u2217}$.\n\n### Model with catalyzed cleavage\n\nIn the model considered above, the random breakage of chains led to their proliferation. It is therefore reasonable to expect that the ability of a heteropolymer to catalyze cleavage would be selected by the evolution. Incidentally, some of the simplest known RNA-based enzymes (ribozymes) have exactly this function (Kruger et al., 1982; Prody et al., 1986; Hutchins et al., 1986; Scott et al., 1995; Williams et al., 1995; Salehi-Ashtiani and Szostak, 2001; de la Pe\u00f1a and Garc\u00eda-Robles, 2010; Scott et al., 2013).\n\nHere we consider a simple model in which a heteropolymer capable of catalyzing cleavage spontaneously emerges from a pool of mutually templating chains. Our model is inspired by the real-world examples of naturally occurring hammerhead ribozyme (Prody et al., 1986; Hutchins et al., 1986), as well as artificially selected DNA-cleaving DNA enzymes (Chandra et al., 2009). The minimal structure of the hammerhead ribozyme (Pley et al., 1994; Scott et al., 1995; Scott et al., 2013) consists of a core region of 15 (mostly) invariant nucleotides flanked by three helical stems formed by mutually complementary RNA sequences. The cleavage happens at a specific site of this structure, located immediately adjacent to one of these stems. While a classical hammerhead ribozyme consists of a single RNA chain capable of self-cleavage, the same structure could be assembled from two chains, one (labeled $b$ in Figure 1) containing a hairpin and capable of hybridizing with and subsequently cleaving the other chain (labeled $a$ in Figure 1). Furthermore, such two-chain structuresare realized in certain DNA-cleaving DNA enzymes (Chandra et al., 2009).\n\nWe consider a scenario in which a master sequence spontaneously emerges from a random pool and subsequently diverges into two closely related subpopulations $a$ and $b$ and their respective complementarities $a\u00af$ and $b\u00af$. The sequences of $a$ and $b$ are mostly identical except for a short insert in the chains $b$ and $b\u00af$, rendering them catalytically active. That is to say, when $b\u00af$ is bound to a chain from the subpopulation $a$, it induces a cleavage at a specific site of that chain. Inspired by the hammerhead ribozyme, we assume that the cleavage site in $a$ is immediately adjacent to the start of the catalytic insert in $b$ (see Figure 1).\n\nWe further assume that $b$-chains are capable of cleaving $a\u00af$-chains at the same site. This symmetry most likely does not apply to highly optimized hammerhead ribozymes, but it is reasonable in enzymes with only a modest level of catalytic efficiency. Let the cleavage within $b\u00af$-$a$ or $b$-$a\u00af$ duplexes occur at rates $\\beta$ and $\\beta\u00af$, respectively.\n\nThe cleavage of a chain of type $a$ by $b\u00af$ produces two pieces, right and left. The concentrations of these fragments are referred to as $a_{R}$ and $a_{L}$, respectively. Inspired by the example of the hammerhead ribozyme (illustrated in Figure 1B), we assume that one of them ($a_{L}$) can serve as a primer only for $a$. Conversely, the other fragment ($a_{R}$) can serve as a primer for either $a$ or $b$ depending on the first templating chain with which it will hybridize (respectively $a\u00af$ or $b\u00af$). Assuming a random first encounter, the probability for $a_{R}$ to serve as a primer to $b$ is thus given by $\u03d5=b\u00af/(a\u00af+b\u00af)<1$, while the probability of it to grow into $a$ is $1\u2212\u03d5=a\u00af/(a\u00af+b\u00af)$. Similarly, conversion probabilities in the complementary subpopulation $a\u00af_{R}$ are determined by $\u03d5\u00af=b/(a+b)$.\n\nAt this point, the issue of template poisoning due to product rehybridization should be revisited. In the context of random cleavage, we have argued that it is avoided due to the low probability of binding of two fragments terminating at exactly the same sites. However, catalyzed cleavage produces primers $a_{R}/a\u00af_{R}$ and $a_{L}/a\u00af_{L}$ that terminate in the same region, and therefore they would typically be displaced from the respective templates in favor of the formation of $a\u2212a\u00af$ and $b\u2212b\u00af$ duplexes. In Appendix 1, we analyze the binding kinetics during the night phase and come to an important conclusion. If the concentration of primers (such as $a_{R}$) is small compared to that of templates (such as $a\u00af$), despite the strand displacement, a finite and substantial fraction of primers will remain hybridized to their respective templates for a significant time. More specifically, they would remain hybridized until the concentration of free templates drops to the level of the concentration of primers. This indicates that template poisoning has only a moderate effect if the night phase is not too long.\n\nAs in the random cleavage model, the concentration of hybridized duplexes is given by the smaller of two concentrations $a+b$ and $a\u00af+b\u00af$. This is captured by the factor $\u03c7=min(a+b,a\u00af+b\u00af)/(a+b)\\leq1$ in the elongation rate of a primer: $rm\u03c7$. Here, as before, this rate is measured in $l_{0}$ bases per unit time, and $m$ is the free monomer concentration.\n\nWe observe that in order for a cleavage fragment to work as a primer, it needs to exceed the minimal primer length $l_{0}$. Therefore, a newly formed cleavage product $a_{L}$ needs to grow by at least $l_{0}$ bases before it can be considered a part of the $a$ subpopulation. Indeed, if it has not grown by that length, another catalyzed cleavage at the same site would not increase the number of primers in the system. Therefore, the rate at which chains in the subpopulation $a_{L}$ are converted to $a$ is given by $rm\u03c7$. The rate of conversion of $a_{R}$ to $a$ is similar, up to the factor $1\u2212\u03d5$ discussed above: $rm\u03c7(1\u2212\u03d5)$. If a segment $a_{R}$ was first hybridized to $b\u00af$, it will eventually grow to be a part of the subpopulation $b$. However, in order to become functional, this chain has to grow at least by the length of the catalytic insert, which is distinct from $l_{0}$. Furthermore, the rate of elongation of $b$ is slowed down by the presence of a hairpin in the catalytic domain of the $b\u00af$ structure. Both effects can be captured by a factor \u03bb in the conversion rate from $a_{R}$ to $b$ given by $rm\u03c7\u03d5/\\lambda$, relative to that of $a_{R}$ to $a$ given by $rm\u03c7(1\u2212\u03d5)$.\n\nAltogether, the dynamics of our model is described by the following equations:\n\n$$\nc\u02d9=\\beta_{0}M+\\beta\u03d5a\u2212\\deltac\n$$\n\n\n\n$$\nb\u02d9=\\beta_{0}M\u03d5\u00af+\\frac{rm\u03c7\u03d5}{\\lambda}a_{R}\u2212\\deltab\n$$\n\n\n\n$$\na\u02d9_{L}=\\beta\u03d5a\u2212rm\u03c7a_{L}\u2212\\deltaa_{L}\n$$\n\n\n\n$$\na\u02d9_{R}=\\beta\u03d5a\u2212rm\u03c7(1\u2212\u03d5)a_{R}\u2212\\frac{rm\u03c7\u03d5}{\\lambda}a_{R}\u2212\\deltaa_{R}\n$$\n\nHere, $c\u2261a+b+a_{l}+a_{R}$. Note that Equation 7 is obtained by first writing the kinetic equation for $a$ and then adding it up to the sum of Equations 8\u201310. The first terms in the r.h.s. of Equations 7 and 8 represent random non-catalyzed cleavage that occurs at rate $\\beta_{0}$ at any location of any chain (compare to Equation 3). Similarly to Equation 2, the dynamics of the number density $M$ of monomers incorporated into chains $a$, $a_{L}$, $a_{R}$, and $b$ is described by\n\n$$\nM\u02d9=rm\u03c7c\u2212\\deltaM.\n$$\n\nThis in turn determines the concentration of free monomers remaining in the solution as given by Equation 1.\n\nAdditional equations are obtained by replacing variables $a$, $a_{L}$, $a_{R}$, $b$, and $M$ with their complementary counterparts: $a\u00af$, $a_{L}\u00af$, $a_{R}\u00af$, $b\u00af$, and $M\u00af$, respectively. In addition, \u03b2, \u03c6, and $\u03c7$ should be replaced with $\\beta\u00af$, $\u03d5\u00af$, and $\u03c7\u00af=min(a+b,a\u00af+b\u00af)/(a\u00af+b\u00af)$, respectively.\n\n### System dynamics\n\nA crucial feature of this multicomponent system is that catalytic cleavage depends on the cooperativity between all four subpopulations $a$, $a\u00af$, $b$, and $b\u00af$. To understand when such a cooperative steady state exists, we have numerically solved Equations 7\u201311 for $\\beta_{0}=0.015$, $\\lambda=2$, $\\delta=1$ and different values of the catalytic cleavage rate $\\beta$. Figure 2A\u2013C show the dynamic trajectories of our system in a\u2013b space for a wide range of initial conditions. For $\\beta$ too small (e.g., $\\beta=6$ in Figure 2A) or too large (e.g., $\\beta=18$ in Figure 2C), the only steady-state solutions correspond to the survival of either the $a/a\u00af$ or $b/b\u00af$ subpopulation. In these non-cooperative fixed points, marked with red and blue stars in Figure 2, one set of chains drives the other to extinction. Thus, they propagate by random rather than catalytic cleavage. The concentrations of monomers and a complementary pair of surviving chains at a non-cooperative fixed point are given by Equations 5 and 6, respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91397/elife-91397-fig2-v1.jpg)\n\n**Figure 2.:** (A) The phase portrait for a small catalytic cleavage rate $\\beta=6$ has two non-cooperative steady-state solutions marked with red and blue stars corresponding to pure $a/a\u00af$ and pure $b/b\u00af$ subpopulations, respectively. These solutions are maintained by random rather than catalytic cleavage. (B) The phase portrait for intermediate catalytic cleavage rate $\\beta=10$ in addition to two non-cooperative steady states marked with red and blue stars has a cooperative steady state marked with the green star in which all four subpopulations coexist. One can reach this state, for example, starting from the non-cooperative $b/b\u00af$ steady state (the blue star) and adding a relatively small subpopulation of $a/a\u00af>2e\u22125$ crossing the saddle point separating blue and green trajectories. (C) The phase portrait for a large catalytic cleavage rate $\\beta=18$ again has only two non-cooperative cleavage steady states marked with red and blue stars. All three panels were obtained by numerically solving dynamical Equations 7\u201311 with random cleavage rate $\\beta_{0}=0.015$, elongation asymmetry factor $\\lambda=2$, and dilution factor $\\delta=1$.\n\nFor an intermediate value of \u03b2 (e.g., for $\\beta=10$ shown in Figure 2B), we observe the emergence of a new cooperative fixed point (marked by the green star), where all four subpopulations survive at concentrations $a=a\u00af>0$ and $b=b\u00af>0$. This fixed point is mainly maintained by catalytic cleavage.\n\nThe phase portrait of our system shown in Figure 2B suggests a plausible scenario for the emergence and subsequent evolution of this cooperative system. This evolutionary scenario starts with $b/b\u00af$ subpopulations existing alone. Eventually, copying errors might result in the emergence of a small subpopulation of $a$ or $a\u00af$ at a concentration $a\u226ab$. If this concentration is greater than a certain threshold separating blue and green trajectories in Figure 2B, the dynamics of the system would drive it to the cooperative fixed point (green star in Figure 2B). For specific parameters used to generate Figure 2B, the minimal ratio between concentrations $a$ and $b$ is roughly 0.01.\n\n### Properties of the cooperative steady state\n\nTo better understand the conditions for the existence of the cooperative regime, we analytically derived the steady-state solutions of Equations 7\u201311. The key result is the relationship between the steady-state monomer concentration, $m_{coop}^{\u2217}$, and the catalytic cleavage rate \u03b2 for given values of $\\beta_{0}$, \u03bb, \u03b4, and $r$ derived in Appendix 1. Figure 3A shows this dependence for $\\lambda=2$, and different values of $\\beta_{0}/\\delta$ alongside with data points (open circles) obtained by direct numerical solution of dynamical (Equations 7\u201311).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91397/elife-91397-fig3-v1.jpg)\n\n**Figure 3.:** (A) The relationship between parameters of the cooperative state. $m_{coop}^{\u2217}/m^{\u2217}$ plotted vs. $\\beta$ for $\\lambda=2$, $\\delta=1$ and increasing values of $\\beta_{0}$: 0.015 (green), 0.003 (purple), and 0.0045 (red). Lines are given by the parametric equation describing the state and derived in the SI Appendix (Equation S14), while open circles are obtained by direct numerical solution of dynamical equations (7\u201311). Monotonically increasing branches (solid lines) correspond to the stable cooperative fixed point, while the decreasing branches (dashed lines) \u2013 to the dynamically unstable saddle points separating different steady-state solutions in Figure 2B. (B) Phase diagram of the cooperative state. The shaded region marks the values of $\\beta/\\delta$ and $\\beta_{0}/\\delta$ for which the cooperative solution exists. Green, purple, and red lines show the ranges of $\\beta$ for which the cooperative solution exists for the corresponding value of $\\beta_{0}$ shown in (A). Increasing the parameter $\\beta_{0}$ makes the range of $\\beta$ for which the cooperative solution exists progressively smaller until it altogether disappears above. $\\beta_{0}/\\delta\u22480.057$.\n\nThe stable fixed point corresponds to the monotonically increasing branch of the graph $m_{coop}^{\u2217}$ vs. $\\beta$ (solid lines in Figure 3A), while two decreasing branches (dashed lines in Figure 3A) correspond to two dynamically unstable saddle points separating different steady-state solutions (see Figure 2B).\n\nNote that the stability of our cooperative fixed point is a non-trivial result. For example, in a related model by Kamimura et al., 2019, the fixed point corresponding to a viable composite replicase is dynamically unstable and requires additional stabilization, for example, by cell-like compartments.\n\nIncreasing the parameter $\\beta_{0}/\\delta$, for example, by making the dilution rate $\\delta$ smaller, makes the range of $\\beta$ for which the cooperative solution exists progressively smaller until it altogether disappears above $\\beta_{0}/\\delta\u22480.057$ (for $\\lambda=2$).\n\nFigure 3B shows the ranges of $\\beta/\\delta$ and $\\beta_{0}/\\delta$ for which the cooperative solution exists (as before, for $\\lambda=2$). Solid lines of different colors correspond to three values of $\\beta_{0}$ used in Figure 3A.\n\nWhile the full set of our analytical results described in Appendix 1 is rather convoluted, here we present a simplified expression for the range of values of $\\beta/\\delta$, where the cooperative solution exists, and the corresponding range of $m_{coop}^{\u2217}$:\n\n$$\n4\\lambda<\\frac{\\beta}{\\delta}<\\frac{(\\lambda\u22121)\\delta}{4\\beta_{0}}\n$$\n\n\n\n$$\n\\frac{2\\lambda\\delta}{(\\lambda\u22121)\\beta_{0}}<\\frac{m_{coop}^{\u2217}}{m^{\u2217}}<\\frac{1}{2}\n$$\n\nThese conditions were derived in the limit $\\beta_{0}/\\delta\u226a1/\\lambda$ (see Appendix 1 for details).\n\n### Evolutionary dynamics\n\nThe competition for monomers is the main mechanism of natural selection operating in our system. The steady state with the lowest level of monomer concentration is favored by evolution since the competing states would not be able to proliferate at that level of monomers. Equation 13 implies that the monomer concentration $m_{coop}^{\u2217}$ in the cooperative solution is always less than a half of its value $m^{\u2217}$ in the absence of the catalytic cleavage. Thus, once the cooperative state emerges, it drives out all chain sequences that still rely on non-catalytic cleavage for replication. The continuously increasing \u2018fitness\u2019 of the system can be quantified, for example, by the ratio $m^{\u2217}/m_{coop}^{\u2217}$. Note that the non-cooperative solution has a fitness of 1, while the cooperative solution has a fitness higher than 2. Note that this fitness is defined at the level of the ecosystem comprising all the sequences in the chemostat and may not necessarily be attributable to individual members of that population. Over time, similar to microbial ecosystems, this population changes according to the laws of competitive exclusion (Gause, 1934; Tilman, 1982).\n\nThe fitness landscape of our system shown in Figure 4 depends on two parameters of the catalytic cleavage: \u03b2 and \u03bb. Its preeminent feature is a relatively narrow fitness ridge (orange and red color in Figure 4). For a fixed value of \u03bb, this ridge corresponds to a sharp fitness maximum located at the lowest possible catalytic cleavage rate \u03b2 for which the cooperative state still exists (see the red region in Figure 4B). In other words, for a given \u03bb, the selective pressure would drive \u03b2 down to the lower boundary separating cooperative and non-cooperative regions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91397/elife-91397-fig4-v1.jpg)\n\n**Figure 4.:** (A) the three-dimensional plot and (B) the heatmap of the fitness $m^{\u2217}/m_{coop}^{\u2217}$ of the cooperative state in our system as a function of the catalytic cleavage rate enhancement $\\beta/\\beta_{0}$ and elongation asymmetry \u03bb. The co-evolution of \u03bb and \u03b2 would increase together. A typical evolutionary trajectory in which small changes in these parameters are independent of each other is shown as a dashed line.\n\nHowever, \u03bb and \u03b2 are expected to co-evolve together. Indeed, $\\lambda>1$ quantifies the ratio by which the structural properties of the type-$b$ chain (its excess length, the hairpin unzipping free energy, etc.) slow down its replication compared to that of the type-$a$ chain. Thus, it is reasonable to assume that \u03bb could be easily modified in the course of the evolution. As a consequence of the selective pressure, both \u03bb and \u03b2 are expected to increase in the course of the evolution driving the system up the ridge in Figure 4. This intuition is confirmed by a direct numerical simulation in which we model the evolution as a Monte Carlo process with fitness playing the role of negative energy Parameters \u03bb and \u03b2 were allowed to vary randomly and independently of each other. A sample evolutionary trajectory is shown as a dashed line in Figure 4.\n\nOne can imagine several possible pathways leading to this self-sustaining cooperative system. (i) A pair of mutually complementary non-catalytic chains ($a$ and $a\u00af$ in our notation) gains function due to a copying error, giving rise to a small subpopulation of \u2018sister\u2019 chains ($b$ and $b\u00af$ in our notation) with nascent cleavage activity directed toward $a\u00af$ and $a$, respectively. (ii) A pair of catalytically active chains $b$ and $b\u00af$ emerges first, subsequently losing the catalytic inserts due to a copying error, thus giving rise to a small subpopulation of substrate chains $a$ and $a\u00af$. According to the dynamic phase portrait of our system illustrated in Figure 2B, the second pathway is more plausible than the first one. Indeed, at least for the parameters used in Figure 2B, the conversion of only a few percent of $b$ chains to $a$ brings the systems into the basin of attraction of the cooperative fixed point marked green in the figure. The other scenario is less likely since it requires a much higher ratio of emergent over ancestral population sizes.\n\nOur results indicate that the cooperative steady state emerges when the catalytic rate enhancement over the spontaneous cleavage rate is at least 102\u2013103. This is a relatively modest gain compared to the 109 enhancement reported for a highly optimized hammerhead ribozyme Scott et al., 2013. However, it is comparable to the rate enhancement observed after only five rounds of in vitro selection from an unbiased sample of random RNA sequences (Salehi-Ashtiani and Szostak, 2001). In the course of subsequent evolution, two main parameters of our model \u03b2 and \u03bb are expected to increase in tandem. The first parameter, \u03b2, is the catalytic cleavage rate, which, as we know, can increase over multiple orders of magnitude (Salehi-Ashtiani and Szostak, 2001). The second parameter, \u03bb, quantifies the relative delay in the elongation of $b$-types chains compared to $a$-type chains. It may be caused at least in part by the difficulty of unzipping the hairpin, thus \u03bb can be dramatically increased by making the hairpin stem longer. One should note that our model requires the catalytic activity of both $b$ chains and their complementary partner, $b\u00af$ chains. Thus, sequences are expected to evolve to simultaneously optimize these two catalytic rates. The need for this compromise would likely prevent the catalysts from reaching the maximum efficiency observed, for example, in fully optimized ribozymes (Scott et al., 2013). The drive to further optimize cleavage activity might trigger a transition to more complex catalytic networks, for example, to an increase in the number of chains involved.\n\n## Discussion\n\nThe proposed scenario is certainly not the only plausible pathway that could lead to the emergence of functional heteropolymers in the prebiotic world. To illustrate some of the unique features of the presented model, it is useful to place it in the context of other recent proposals. One of the most intriguing possibilities is the virtual circular genome (VCG) model recently proposed in Zhou et al., 2021. It is based on the observation that a relatively long ancestral genome can be stored as a collection of short overlapping RNA fragments of a circular master sequence or its complement. The model assumes unidirectional non-enzymatic replication of these fragments. On the one hand, it explains how a collection of relatively short RNA fragments (10\u201312 nucleotides each) could store a large amount of genetic information. On the other hand, computer simulations indicate that the VCG is susceptible to so-called sequence scrambling, where the appearance of repeats in the master sequence results in the loss of integrity of an entire circular genome (Chamanian and Higgs, 2022). The proliferation of the VCG is quite sensitive to sequence scrambling since the model assumes unidirectional polymerization, so that in order to return to copying a particular segment, one must copy the entire virtual circle.\n\nOur model, while sharing some elements with the VCG model, differs in two important aspects: (i) it assumes that the non-enzymatic templated polymerization is bidirectional, and (ii) the functional activity of the heteropolymer is localized in a relatively short sequence region that is catalytically cleaved and thus replicated first. This implies that possible scrambling outside of the narrow functional region does not affect the viability of our autocatalytic system. Indeed, assuming the minimal hybridization length $l_{0}=6$ and random statistics of the master sequence, one gets the scrambling-free length $\\sqrt{2\u22c54_{0}^{l}}+l_{0}\u2243100$. This is an order of magnitude larger than both $l_{0}$ and the length of the core region of the hammerhead ribozyme.\n\nIt may be possible to incorporate the selection mechanism proposed in this article into the VCG model. Such a hybrid approach would avoid the need for the biochemically problematic bidirectional growth, while explaining the emergence of early catalytic activity unaffected by sequence scrambling. This in turn could pave the way for the emergence of the rolling cycle, a model proposed as an alternative to VCG. (Tupper and Higgs, 2021; Rivera-Madrinan et al., 2022). The rolling cycle relies on strand displacement rather than cyclic melting of hybridized duplexes and requires a more sophisticated setup, including a pre-selected sequence pool and the availability of cleavage enzymes. Our model provides a plausible pathway for how this catalytic function could have evolved.\n\nOur model aims to describe the early stages of the evolution of life on Earth based on non-enzymatic polymerization. While it may seem challenging to test it for conditions relevant to the origin of life, our main conclusions can still be verified experimentally. RNA or DNA can be used as model polymers in such experiments, as both have demonstrated catalytic abilities in cleavage reactions (de la Pe\u00f1a and Garc\u00eda-Robles, 2010; Williams et al., 1995; Salehi-Ashtiani and Szostak, 2001; Breaker and Joyce, 1994; Silverman, 2005; Chandra et al., 2009). To simulate primordial polymerization driven by day/night cycling, the experiment would have to rely on enzymatic polymerization or ligation as used, for example, in PCR (Mullis and Faloona, 1987; Saiki et al., 1988) or ligase chain reaction (LCR) (Barany, 1991). However, it is important to note that our model assumes polymerization in both the 5\u2032-to-3\u2032 and 3\u2032-to-5\u2032 directions, unlike traditional PCR, which only adds new nucleotides in the 5\u2032-to-3\u2032 direction. This problem of bidirectional polymerization was solved by evolution using Okazaki fragments (Okazaki et al., 1968). Inspired by this discontinuous synthesis of the lagging strand of DNA, we propose a possible experimental implementation of our system based on ligation rather than polymerization enzymes. In this scenario, the system would be supplied with ultrashort random DNA segments. These segments, which are much shorter than the minimal primer length ($l_{0}$), would play the role of \u2018monomers\u2019 and bidirectional primer extension would occur through a sequence of ligation steps connecting adjacent ultrashort segments to each other. Another important consideration for experimental implementation is the need to activate the nucleotides to provide free energy for polymerization. Thus, both the short fragments supplied to the system and the new primers formed by cleavage must be chemically activated.\n\n### Conclusions\n\nOur results suggest a plausible pathway by which a pool of information-carrying polymers could acquire the catalytic function, thereby bringing this system closer to the onset of the RNA world. We start with a pool of polymers capable of non-enzymatic templated polymerization and subjected to cyclic change of conditions (day/night cycles). The replication in our system is carried out during the night phase of the cycle via the elongation of primers hybridized with their complementary templates. We first observe that any cleavage of chains generates new primers and thus promotes their replication. The mutual replication of complementary chains is sustainable as long as cleavage and elongation rates are large compared to the dilution rate: $\\beta_{0}m_{0}r>\\delta^{2}$. This suggests that a faster, catalyzed cleavage would be selected by the evolution. Furthermore, DNA or RNA sequences capable of catalyzing site-specific cleavage are known to be relatively simple and readily arise via either natural or artificial selection (de la Pe\u00f1a and Garc\u00eda-Robles, 2010; Williams et al., 1995; Salehi-Ashtiani and Szostak, 2001; Breaker and Joyce, 1994; Silverman, 2005; Chandra et al., 2009). The oligomer replication based on catalyzed cleavage is not trivial as it requires cooperativity between multiple chain types. Our study shows that a stable cooperative solution can be achieved with as few as four subpopulations of chains. Furthermore, we demonstrate that there is a wide range of conditions under which this catalytic network proliferates and significantly outcompetes non-catalytic ancestors of the constituent chains.\n",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "40c50046-db9c-4527-b026-3041b6812330",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arvind Murugan, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91397.3.sa0](https://doi.org/10.7554/eLife.91397.3.sa0)\n\nThis valuable study uses a model to determine when catalytic self-replication of polymers can emerge from a random pool of replicating polymers. The model accounts for the folding and function of polymers in addition to abstract evolutionary dynamics, providing solid evidence for the claims of the authors. The work will be of relevance to those interested in the origin of life, artificial cells, and evolutionary dynamics.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91397.3.sa1](https://doi.org/10.7554/eLife.91397.3.sa1)\n\nSummary:\n\nThe emergence of catalytic self-replication of polymers is an important question in the context of the origin of life. Tkachenko and Maslov present a model in which such a catalytic polymer sequence emerges from a random pool of replicating polymers.\n\nStrengths:\n\nThe model is part of a theme from many previous papers from the same authors and their colleagues. The model is interesting, technically correct and demonstrates qualitatively new phenomena. It is good that the paper also makes a connection with possible experimental scenarios - specifically, concrete proposals are made for testing the core ideas of the model. It would indeed be an exciting demonstration when such an experiment does indeed materialize.\n\nWeaknesses:\n\nUnlike the rest of the paper which is very tight in its arguments, I find that the discussion section is not so. Specifically, sentences such as \" In fact, this can be seen as a special case of the classical error catastrophe\" are a bit loose and not well substantiated -- although these are in the discussion section, I find this to be a weakness of an otherwise good paper and tightening some of the arguments here will make it an excellent paper in my opinion.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91397.3.sa2](https://doi.org/10.7554/eLife.91397.3.sa2)\n\nSummary:\n\nNon enzymatic replication of RNA or a similar polymer is likely to be important for the origin of life. The authors present a model of how a functional catalytic sequence could emerge from a mixture of sequences undergoing non-enzymatic replication.\n\nStrengths:\n\nInteresting model describing details of the proposed replication mechanism.\n\nWeaknesses:\n\nThe idea of the virtual circular genome proposed in [37] is included in the discussion section together with the problem of sequence scrambling faced by this mechanism that was raised in [38]. Sequence scrambling arises in models that assume cycles of melting and reannealing, in which case only part of a template is copied in one cycle. Scrambling is due to the many alternative ways in which pairs of sequences can reanneal. Many of these alternatives are incorrect and this leads to the disappearance of the original sequence. This problem exists even in the limit where there is zero mutational error rate. Thus, it is a separate problem from the usual error threshold problem. Scrambling would not occur if there was complete copying of a template from one end to the other.\n\nThe authors seem to believe that their model avoids the scrambling problem to some extent. If I understand correctly, this is because the functional activity is located in a short sequence region. I can imagine that if the length of a strand that is synthesized in a single melting/annealing cycle is long enough to cover the complete functional region, then sometimes the complete functional sequence can be copied in one cycle. The authors give an estimate of a scrambling-free length. I am not sure how this is determined. I think that the problem of how to encode functional sequences in RNA strands undergoing non-enzymatic replication is still not fully resolved.\n",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "409936a3-a8c1-4186-abd0-56090de53cf0",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C1",
+      "claim": "Life relies on the interplay between catalytic activity and information processing carried out by biological polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Life as we know it relies on the interplay between catalytic activity and information processing carried out by biological polymers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the fundamental characteristics of life.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "9b73bf05-0d22-4720-810e-f896a709b0ea",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C2",
+      "claim": "Non-catalyzed spontaneous cleavage promotes proliferation by generating short fragments that act as primers in a system capable of non-enzymatic templated replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting with a system capable of non-enzymatic templated replication, we demonstrate that even non-catalyzed spontaneous cleavage would promote proliferation by generating short fragments that act as primers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the theoretical model and analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "f91ba74f-7a8a-4ee0-b195-b262e469bf99",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C3",
+      "claim": "Catalytic cleavage function can naturally emerge and proliferate in a system of non-enzymatic templated replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that catalytic cleavage function can naturally emerge and proliferate in this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the mathematical model and numerical simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "2d65978b-e01b-45ff-be05-19b716fd1b77",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C4",
+      "claim": "A cooperative catalytic network with four subpopulations of oligomers is selected by evolution in competition with chains lacking catalytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, a cooperative catalytic network with four subpopulations of oligomers is selected by the evolution in competition with chains lacking catalytic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the model analysis and phase portraits shown in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "fe7542da-0053-4177-bc4f-5e1a4bb23ba9",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C5",
+      "claim": "The cooperative system emerges through functional differentiation of oligomers into catalysts and their substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The cooperative system emerges through the functional differentiation of oligomers into catalysts and their substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model structure and dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "48ef3dfc-b857-4c6a-9ed4-df23abd2c58e",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C6",
+      "claim": "The model is inspired by the structure of the hammerhead RNA enzyme and other DNA- and RNA-based enzymes with cleavage activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is inspired by the structure of the hammerhead RNA enzyme as well as other DNA- and RNA-based enzymes with cleavage activity that readily emerge through natural or artificial selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references existing knowledge about ribozymes and DNA enzymes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "8c9a53df-876f-4f07-92b7-2162da9f1ed5",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C7",
+      "claim": "The emergence of the cooperative catalytic network requires the catalytic rate enhancement over the spontaneous cleavage rate to be at least 10\u00b2\u201310\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we show that it requires the catalytic rate enhancement over the spontaneous cleavage rate to be at least 102\u2013103, a factor consistent with the existing experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the model analysis and compared with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "3c7d5cb9-9d6f-4468-a7e1-dee375c16f4e",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C8",
+      "claim": "Evolutionary pressure leads to a further increase in catalytic efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary pressure leads to a further increase in catalytic efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the fitness landscape analysis in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "06aaaac3-0547-4688-8cf6-afe83606ca4f",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C9",
+      "claim": "The RNA world theory is a promising hypothesis for the origin of life.",
+      "claim_type": "EXPLICIT",
+      "source": "One promising hypothesis is the RNA world theory (Gilbert, 1986; Doudna and Szostak, 1989; Orgel, 2004; Lincoln and Joyce, 2009; Robertson and Joyce, 2012; Higgs and Lehman, 2015), inspired by the discovery of ribozymes (Kruger et al., 1982), that is, RNA molecules capable of enzymatic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple scientific publications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "4ea109f5-b1f9-4549-ad60-ab5db9139394",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C10",
+      "claim": "According to the RNA world hypothesis, all processes in early life were carried out by RNA, which was used both to store information and catalyze biochemical reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this hypothesis, all processes in early life were carried out by the RNA, which was used both to store information and catalyze biochemical reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the RNA world hypothesis from the scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "fabd6f3f-569f-4d43-ac5f-238b5d364548",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C11",
+      "claim": "Specific ribozymes capable of catalyzing self-replication of arbitrary RNA sequences require rather long and carefully designed RNA sequences that are highly unlikely to arise spontaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "However, based on the results of the existing experiments (Bartel and Szostak, 1993; Horning and Joyce, 2016), such a catalytic function requires rather long and carefully designed RNA sequences, which are highly unlikely to arise spontaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "9ee0fc07-e967-44c1-8b5b-81eab8f0346f",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C12",
+      "claim": "One of the simplest catalytic activities of ribozymes is their ability to cleave an RNA sequence at a specific site.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, one of the simplest catalytic activities of ribozymes is their ability to cleave an RNA sequence at a specific site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ribozyme functions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "8c27ce8c-ead1-4432-9308-1fcbc702a2f5",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C13",
+      "claim": "Ribozymes with cleavage activity independently evolved in multiple branches of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, such ribozymes independently evolved in multiple branches of life (de la Pe\u00f1a and Garc\u00eda-Robles, 2010) and have been shown to emerge rapidly and repeatedly from artificial selection (Williams et al., 1995; Salehi-Ashtiani and Szostak, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "0fcf2864-7b69-4dec-94a2-fa39c7fb94c8",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C14",
+      "claim": "DNA molecules are capable of site-specific cleavage targeting either RNA or DNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA molecules have also been shown to be capable of site-specific cleavage targeting either RNA (Breaker and Joyce, 1994) or DNA sequences (Silverman, 2005; Chandra et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "cc48a549-be28-47dd-91e2-ffc37105154c",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C15",
+      "claim": "Non-enzymatic templated replication can lead to the formation of longer chains.",
+      "claim_type": "EXPLICIT",
+      "source": "In a series of previous studies, we have shown that non-enzymatic templated replication can lead to the formation of longer chains (Tkachenko and Maslov, 2015) as well as to a reduction in sequence entropy (Tkachenko and Maslov, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "3097761d-d30a-481a-be74-23d849335857",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C16",
+      "claim": "Non-enzymatic templated replication can lead to a reduction in sequence entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "In a series of previous studies, we have shown that non-enzymatic templated replication can lead to the formation of longer chains (Tkachenko and Maslov, 2015) as well as to a reduction in sequence entropy (Tkachenko and Maslov, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "c2b8b6df-1b3d-4165-9f5f-ac7ad2bc6fb8",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C17",
+      "claim": "Reduction in sequence entropy through templated ligation has been observed experimentally for DNA oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a reduction in entropy has subsequently been observed experimentally for templated ligation of DNA oligomers (Kudella et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "26c0bf36-de9c-4990-bff6-60d9e48c162f",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C18",
+      "claim": "The breakup of chains creates a new pair of potential primers that could be elongated during subsequent nights.",
+      "claim_type": "EXPLICIT",
+      "source": "The key observation behind our model is that the breakup (cleavage) of a chain creates a new pair of potential primers. Each of them could be elongated during subsequent nights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "1a2778e5-19e3-4f2d-a3ff-4a68800c8b71",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C19",
+      "claim": "Breakup of chains results in their proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, somewhat counterintuitively, breakup of chains results in their proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "292ede9c-e26e-4219-9f34-1934c80da305",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C20",
+      "claim": "Templated-assisted replication of heteropolymers has a generic tendency to substantially reduce their sequence entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous theoretical (Tkachenko and Maslov, 2015; Tkachenko and Maslov, 2018) and experimental (Kudella et al., 2021) results demonstrated that templated-assisted replication of heteropolymers has a generic tendency to substantially reduce their sequence entropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "b43d5c13-df2c-49c7-9ad8-6a232df1363b",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C21",
+      "claim": "Reduction in sequence entropy significantly increases the likelihood of end-to-middle hybridization of chains during the night phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Such reduction has important consequences in the context of the current work: it significantly increases the likelihood of end-to-middle hybridization of chains during the night phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the properties of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "7fb53762-fbc7-4b35-aab2-ce3c7e279430",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C24",
+      "claim": "The ability of a heteropolymer to catalyze cleavage would be selected by evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore reasonable to expect that the ability of a heteropolymer to catalyze cleavage would be selected by the evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the model showing that cleavage promotes proliferation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "e48a7960-6ef3-4e91-833a-a5b4c2836da1",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C25",
+      "claim": "Some of the simplest known RNA-based enzymes (ribozymes) have cleavage function.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidentally, some of the simplest known RNA-based enzymes (ribozymes) have exactly this function (Kruger et al., 1982; Prody et al., 1986; Hutchins et al., 1986; Scott et al., 1995; Williams et al., 1995; Salehi-Ashtiani and Szostak, 2001; de la Pe\u00f1a and Garc\u00eda-Robles, 2010; Scott et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "2a281855-108d-4ae1-a157-b8de017bef06",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C26",
+      "claim": "The minimal structure of the hammerhead ribozyme consists of a core region of 15 (mostly) invariant nucleotides flanked by three helical stems formed by mutually complementary RNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimal structure of the hammerhead ribozyme (Pley et al., 1994; Scott et al., 1995; Scott et al., 2013) consists of a core region of 15 (mostly) invariant nucleotides flanked by three helical stems formed by mutually complementary RNA sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies of the hammerhead ribozyme.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "2ca94c73-ff74-41f3-a565-4a4327b9621c",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C27",
+      "claim": "The cleavage in hammerhead ribozyme happens at a specific site located immediately adjacent to one of the helical stems.",
+      "claim_type": "EXPLICIT",
+      "source": "The cleavage happens at a specific site of this structure, located immediately adjacent to one of these stems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about hammerhead ribozyme structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "69da6807-6bb4-4fbc-95b5-5d10543d2ad5",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C28",
+      "claim": "Two-chain hammerhead ribozyme structures are realized in certain DNA-cleaving DNA enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, such two-chain structuresare realized in certain DNA-cleaving DNA enzymes (Chandra et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "7e1a38d3-5768-47aa-8cc7-71b73a73a842",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C29",
+      "claim": "Template poisoning has only a moderate effect if the night phase is not too long.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that template poisoning has only a moderate effect if the night phase is not too long.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the binding kinetics analysis presented in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "068d16da-226f-46d3-a8f0-0bca09b6988d",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C33",
+      "claim": "The cooperative fixed point is mainly maintained by catalytic cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "This fixed point is mainly maintained by catalytic cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model structure and parameter values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "c069a669-c73f-436c-b0d0-45667085b421",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C37",
+      "claim": "Once the cooperative state emerges, it drives out all chain sequences that still rely on non-catalytic cleavage for replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, once the cooperative state emerges, it drives out all chain sequences that still rely on non-catalytic cleavage for replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the competitive dynamics based on monomer concentration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "7d8997ce-4597-4b53-90e4-9c970b8b2644",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C38",
+      "claim": "The non-cooperative solution has a fitness of 1, while the cooperative solution has a fitness higher than 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the non-cooperative solution has a fitness of 1, while the cooperative solution has a fitness higher than 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model using the fitness definition m*/m*_coop.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "ed2787ad-88c4-4f1c-bc63-74a78e2e1bac",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C39",
+      "claim": "For a fixed value of \u03bb, the selective pressure would drive \u03b2 down to the lower boundary separating cooperative and non-cooperative regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, for a given \u03bb, the selective pressure would drive \u03b2 down to the lower boundary separating cooperative and non-cooperative regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fitness landscape analysis shown in Figure 4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "617a6fca-ac10-4f8e-beb8-c0101aa5ddca",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C40",
+      "claim": "\u03bb and \u03b2 are expected to co-evolve together.",
+      "claim_type": "EXPLICIT",
+      "source": "However, \u03bb and \u03b2 are expected to co-evolve together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the structural relationship between these parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "588d0bbe-ffd1-4efa-a144-540901a87a1e",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C41",
+      "claim": "As a consequence of selective pressure, both \u03bb and \u03b2 are expected to increase in the course of evolution driving the system up the ridge in Figure 4.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence of the selective pressure, both \u03bb and \u03b2 are expected to increase in the course of the evolution driving the system up the ridge in Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fitness landscape analysis and Monte Carlo simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "31473518-d642-42ac-846b-56dea16d0241",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C42",
+      "claim": "The cooperative steady state emerges when the catalytic rate enhancement over the spontaneous cleavage rate is at least 10\u00b2\u201310\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the cooperative steady state emerges when the catalytic rate enhancement over the spontaneous cleavage rate is at least 102\u2013103.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "a8d6ca9f-6254-4f69-a746-36c3fcb8b950",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C43",
+      "claim": "The catalytic rate enhancement of 10\u00b2\u201310\u00b3 is relatively modest compared to the 10\u2079 enhancement reported for a highly optimized hammerhead ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a relatively modest gain compared to the 109 enhancement reported for a highly optimized hammerhead ribozyme Scott et al., 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "9294b2d7-0b62-47ca-81ea-74f5f81dc9fd",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C44",
+      "claim": "The catalytic rate enhancement of 10\u00b2\u201310\u00b3 is comparable to the rate enhancement observed after only five rounds of in vitro selection from an unbiased sample of random RNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is comparable to the rate enhancement observed after only five rounds of in vitro selection from an unbiased sample of random RNA sequences (Salehi-Ashtiani and Szostak, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "a9f51a58-fbf7-40bb-82b7-ed7e77d48c11",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C45",
+      "claim": "The VCG model is based on the observation that a relatively long ancestral genome can be stored as a collection of short overlapping RNA fragments of a circular master sequence or its complement.",
+      "claim_type": "EXPLICIT",
+      "source": "It is based on the observation that a relatively long ancestral genome can be stored as a collection of short overlapping RNA fragments of a circular master sequence or its complement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the VCG model from the cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "1dd96099-2225-4b61-b9d8-5703d9e48b16",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C46",
+      "claim": "The VCG model assumes unidirectional non-enzymatic replication of fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "The model assumes unidirectional non-enzymatic replication of these fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the VCG model from the cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "9fd87856-dfe0-4e96-9223-964efc22899c",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C47",
+      "claim": "The VCG is susceptible to sequence scrambling, where the appearance of repeats in the master sequence results in the loss of integrity of an entire circular genome.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, computer simulations indicate that the VCG is susceptible to so-called sequence scrambling, where the appearance of repeats in the master sequence results in the loss of integrity of an entire circular genome (Chamanian and Higgs, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to computational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "40f3d85e-1bb2-4e88-86ed-de1ea5494e0d",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C48",
+      "claim": "The presented model assumes that non-enzymatic templated polymerization is bidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model, while sharing some elements with the VCG model, differs in two important aspects: (i) it assumes that the non-enzymatic templated polymerization is bidirectional, and (ii) the functional activity of the heteropolymer is localized in a relatively short sequence region that is catalytically cleaved and thus replicated first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a key assumption of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "c600e18c-9c08-4664-a670-5c22a244e076",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C49",
+      "claim": "In the presented model, the functional activity of the heteropolymer is localized in a relatively short sequence region that is catalytically cleaved and thus replicated first.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model, while sharing some elements with the VCG model, differs in two important aspects: (i) it assumes that the non-enzymatic templated polymerization is bidirectional, and (ii) the functional activity of the heteropolymer is localized in a relatively short sequence region that is catalytically cleaved and thus replicated first.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a key feature of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "d7a69ce5-8e12-4a85-a0cc-9be99169a176",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C50",
+      "claim": "Possible scrambling outside of the narrow functional region does not affect the viability of the autocatalytic system.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that possible scrambling outside of the narrow functional region does not affect the viability of our autocatalytic system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "f5a4c474-5823-4d11-894e-efb1c5433b42",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C53",
+      "claim": "RNA or DNA can be used as model polymers in experiments to verify the main conclusions, as both have demonstrated catalytic abilities in cleavage reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA or DNA can be used as model polymers in such experiments, as both have demonstrated catalytic abilities in cleavage reactions (de la Pe\u00f1a and Garc\u00eda-Robles, 2010; Williams et al., 1995; Salehi-Ashtiani and Szostak, 2001; Breaker and Joyce, 1994; Silverman, 2005; Chandra et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "b4fa9a15-edfa-4ca1-9cb2-7be8b74e4de6",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C54",
+      "claim": "The model assumes polymerization in both the 5\u2032-to-3\u2032 and 3\u2032-to-5\u2032 directions, unlike traditional PCR which only adds new nucleotides in the 5\u2032-to-3\u2032 direction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that our model assumes polymerization in both the 5\u2032-to-3\u2032 and 3\u2032-to-5\u2032 directions, unlike traditional PCR, which only adds new nucleotides in the 5\u2032-to-3\u2032 direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the model assumptions and known biochemical processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "c07daf0c-28cc-491c-b52e-5eaedf8a71e0",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C55",
+      "claim": "The problem of bidirectional polymerization was solved by evolution using Okazaki fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "This problem of bidirectional polymerization was solved by evolution using Okazaki fragments (Okazaki et al., 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the discovery of Okazaki fragments.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "35547f45-4796-4eb1-9c7a-cd4dcc31792e",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C56",
+      "claim": "A stable cooperative solution can be achieved with as few as four subpopulations of chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that a stable cooperative solution can be achieved with as few as four subpopulations of chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "5cb78f59-68f0-4044-9123-faf7ad5886e4",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C57",
+      "claim": "There is a wide range of conditions under which the catalytic network proliferates and significantly outcompetes non-catalytic ancestors of the constituent chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we demonstrate that there is a wide range of conditions under which this catalytic network proliferates and significantly outcompetes non-catalytic ancestors of the constituent chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the phase diagram and fitness landscape analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "862ee556-d0a3-4cf1-b483-6c05056fea4d",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C59",
+      "claim": "A faster, catalyzed cleavage would be selected by evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a faster, catalyzed cleavage would be selected by the evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model showing that cleavage promotes replication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "75240a43-8984-4119-8191-8750c33fb5b1",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "claim_id": "C60",
+      "claim": "DNA or RNA sequences capable of catalyzing site-specific cleavage are relatively simple and readily arise via either natural or artificial selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DNA or RNA sequences capable of catalyzing site-specific cleavage are known to be relatively simple and readily arise via either natural or artificial selection (de la Pe\u00f1a and Garc\u00eda-Robles, 2010; Williams et al., 1995; Salehi-Ashtiani and Szostak, 2001; Breaker and Joyce, 1994; Silverman, 2005; Chandra et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ca0c302d-f7de-4876-ad10-63355f3c1edd",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The model demonstrates that spontaneous (non-catalyzed) cleavage of chains promotes proliferation by generating new primers. Each cleavage event creates two new potential primers that can be elongated during subsequent night phases through templated replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C18, and C19 are well-supported by the mathematical model (Equations 2-6) and the logical framework presented. The model shows that random cleavage at rate \u03b2\u2080 generates new chain fragments that act as primers, leading to proliferation. The steady-state analysis confirms this mechanism is sustainable when \u03b2\u2080m\u2080r > \u03b4\u00b2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "41f28878-d2bc-446b-aa66-4c77dfd46197",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A cooperative catalytic network with four subpopulations (a, \u0101, b, b\u0304) emerges and is maintained primarily by catalytic cleavage. This cooperative system arises through functional differentiation where b/b\u0304 chains act as catalysts cleaving a/\u0101 substrate chains, and this network outcompetes non-catalytic chains across a wide range of conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C33, C56-C57 are supported by the dynamical model (Equations 7-11), phase portraits (Figure 2B), and analytical steady-state solutions. The model demonstrates stable cooperative fixed points where all four subpopulations coexist, with fitness >2 compared to non-cooperative solutions (fitness=1). The phase diagram (Figure 3B) confirms a wide parameter range for cooperative state existence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "9d439ed6-c4ee-4319-a24c-fcbdfc134ed4",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The cooperative catalytic network requires a catalytic rate enhancement of 10\u00b2-10\u00b3 over spontaneous cleavage. This enhancement is modest compared to highly optimized ribozymes (10\u2079) but comparable to early-stage in vitro selection experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42-C44 are supported by the model analysis showing the cooperative state exists when \u03b2/\u03b2\u2080 \u2265 10\u00b2-10\u00b3 (Figures 3-4). The comparison with experimental data from Salehi-Ashtiani and Szostak (2001) and Scott et al. (2013) provides appropriate context. The threshold is derived from the boundary conditions in Equation 12.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "11e7a790-d6c3-4c8f-ab44-31d46b1ac96a",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Evolutionary pressure drives the system toward increased catalytic efficiency through co-evolution of parameters \u03b2 (catalytic rate) and \u03bb (elongation asymmetry). The cooperative state outcompetes non-catalytic chains by achieving lower monomer concentrations (higher fitness), and selection drives both parameters upward along a fitness ridge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C37-C41 are supported by the fitness landscape analysis (Figure 4) and Monte Carlo simulations. The model shows m*coop < 0.5m*, giving fitness >2 for cooperative vs. 1 for non-cooperative states. The fitness ridge and evolutionary trajectory are demonstrated both analytically and through simulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "e7183bd1-65d8-4ff6-a0c5-7ea7cd0cc77b",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model is inspired by the hammerhead ribozyme structure, which consists of a 15-nucleotide core flanked by three helical stems with cleavage occurring at a specific site. Similar two-chain structures exist in DNA-cleaving DNA enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C25-C28 are well-supported by citations to structural and functional studies of hammerhead ribozymes and DNA enzymes. The biological inspiration for the model is appropriately documented with references to Pley et al. (1994), Scott et al. (1995, 2013), and Chandra et al. (2009).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "00030f9d-f4ef-4833-880c-5cef86791059",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Template poisoning (product rehybridization) has only a moderate effect if the night phase is not too long, as primers remain hybridized to templates until free template concentration drops to primer levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C29 references analysis in Appendix 1 (not provided in the manuscript text). While the conclusion is stated, the supporting kinetic analysis cannot be evaluated. The claim addresses an important potential limitation but lacks accessible supporting evidence in the main text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "2cd95122-80e9-4cd9-9e4e-8a4d3625cc35",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Non-enzymatic templated replication leads to formation of longer chains and reduction in sequence entropy, which increases the likelihood of end-to-middle hybridization. This has been demonstrated both theoretically and experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17, C20-C21 are supported by citations to prior theoretical work (Tkachenko and Maslov 2015, 2018) and experimental validation (Kudella et al. 2021). The logical connection between entropy reduction and increased hybridization probability is sound, though the quantitative relationship is not detailed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "bf8ea53a-cbe9-4960-ad8b-1752e190cd46",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The presented model differs from the Virtual Circular Genome (VCG) model by assuming bidirectional polymerization and localized functional activity, making it less susceptible to sequence scrambling outside the functional region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 accurately describe the VCG model (Zhou et al. 2021, Chamanian and Higgs 2022) and clearly articulate the differences with the current model. The scrambling-free length calculation (~100 nucleotides) is provided. The comparison is appropriate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "30433c68-3bca-402c-bf9d-09cc00cd99e3",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model can be experimentally tested using RNA or DNA with enzymatic polymerization/ligation mimicking non-enzymatic processes. The model assumes bidirectional polymerization (unlike PCR), which could be implemented using ligation of ultrashort segments inspired by Okazaki fragments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C55 propose experimental approaches but acknowledge significant challenges. The bidirectional polymerization assumption is biochemically problematic for prebiotic scenarios. While the Okazaki fragment-inspired ligation approach is creative, the feasibility and whether it truly tests the model's core assumptions remain unclear. Chemical activation requirements add further complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "a6166e3b-96f6-443f-b9ec-d89a8f7b6886",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on RNA world hypothesis and ribozyme cleavage activity: RNA world theory proposes RNA carried out early life processes. While self-replicating ribozymes require long sequences unlikely to arise spontaneously, cleavage ribozymes are simpler and have evolved independently multiple times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 provide well-documented background supported by appropriate citations to foundational work (Gilbert 1986, Kruger et al. 1982) and experimental studies. These claims accurately represent established knowledge in the field and provide context for the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "55c1e311-7278-4b47-bb9a-fe9487178e7b",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Catalytic cleavage function would be selected by evolution because it promotes replication. DNA/RNA sequences with site-specific cleavage activity are relatively simple and readily arise through natural or artificial selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C59-C60 are logical inferences from the model showing cleavage promotes proliferation, supported by extensive citations to experimental work demonstrating the ease of evolving cleavage activity (Williams et al. 1995, Salehi-Ashtiani and Szostak 2001, and others). The evolutionary argument is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "f000ac63-2920-4efd-b3ab-52c69f308b4c",
+      "content_id": "aa69b969-002e-41c2-9a09-0eb56ab55ab8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Life relies on the interplay between catalytic activity and information processing carried out by biological polymers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a well-established principle in biology representing foundational knowledge about the dual nature of biological function. This provides appropriate framing for the manuscript's investigation of how these functions might have emerged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "b361db19-89b9-432d-b90e-3596b8681381",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The model demonstrates that spontaneous cleavage promotes proliferation by generating primers, and that catalytic cleavage function can naturally emerge and be selected by evolution in a non-enzymatic templated replication system.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the model's core findings. Reviewer 1 states the model 'provides solid evidence for the claims' and Reviewer 2 describes it as 'technically correct and demonstrates qualitatively new phenomena.' No concerns are raised about these fundamental model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "f007d872-60f6-43d3-b260-b5f12548776e",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "A cooperative catalytic network with four subpopulations emerges through functional differentiation, is maintained by catalytic cleavage, and outcompetes non-catalytic chains under a wide range of conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes the work 'provides solid evidence' and Reviewer 2 confirms the model is 'technically correct.' The cooperative network structure and its competitive advantage are central model results that reviewers accept without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "28d80c0e-7481-4f96-a1d5-542804159647",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The cooperative catalytic network requires catalytic rate enhancement of 10\u00b2\u201310\u00b3 over spontaneous cleavage, which is modest compared to optimized ribozymes but comparable to early-stage in vitro selection experiments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these quantitative requirements or the comparison with experimental data. Reviewer 1 states the model accounts for 'folding and function of polymers' providing solid evidence, implicitly accepting these parameter estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "4ccd6b97-b155-4fee-8059-b53c4eb2923b",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Evolutionary pressure drives increased catalytic efficiency, with the cooperative solution achieving fitness >2 compared to non-cooperative fitness of 1, and \u03bb and \u03b2 co-evolving along a fitness ridge.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 notes the model 'demonstrates qualitatively new phenomena' and is 'technically correct.' The evolutionary dynamics and fitness landscape analysis are accepted as valid model predictions without specific critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "cd63750e-85d8-4154-833f-4ee84e9aa565",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The model differs from the VCG model by assuming bidirectional polymerization and localized functional activity, which the authors claim avoids sequence scrambling problems outside the functional region.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 expresses uncertainty about whether the scrambling problem is resolved, stating 'I am not sure how this is determined' regarding the scrambling-free length estimate and concluding 'the problem of how to encode functional sequences in RNA strands undergoing non-enzymatic replication is still not fully resolved.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "5f425819-a342-4613-beb3-977053af671e",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The model is inspired by hammerhead ribozyme structure and other DNA/RNA enzymes with cleavage activity, which are relatively simple and readily arise through selection.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 positively notes 'the paper also makes a connection with possible experimental scenarios' and states concrete proposals are made for testing. The biological inspiration and experimental feasibility are accepted without challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "3b392025-8ba7-44f0-acc8-53a89772b38d",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Non-enzymatic templated replication leads to chain elongation and sequence entropy reduction, which increases the likelihood of end-to-middle hybridization necessary for the catalytic mechanism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 notes the model is 'part of a theme from many previous papers from the same authors' and is technically correct. These claims build on prior accepted work and are not questioned by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "b5abbf98-6fe5-4d7b-ba4d-d3e7396b863f",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Template poisoning has only moderate effects if the night phase is not too long.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This technical detail about model dynamics is not challenged by any reviewer. The overall assessment that the model is 'technically correct' (Reviewer 2) implicitly accepts such mechanistic claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "6697c40a-aec6-4877-a928-44c9db02ba1d",
+      "content_id": "40c50046-db9c-4527-b026-3041b6812330",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The model assumes bidirectional polymerization (5'-to-3' and 3'-to-5'), unlike traditional PCR, though evolution solved this problem using Okazaki fragments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this model assumption. Reviewer 1's statement that the model 'provides solid evidence' and Reviewer 2's confirmation of technical correctness implicitly accept the bidirectional polymerization assumption.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9b73bf05-0d22-4720-810e-f896a709b0ea",
+      "result_id": "ca0c302d-f7de-4876-ad10-63355f3c1edd"
+    },
+    {
+      "claim_id": "26c0bf36-de9c-4990-bff6-60d9e48c162f",
+      "result_id": "ca0c302d-f7de-4876-ad10-63355f3c1edd"
+    },
+    {
+      "claim_id": "1a2778e5-19e3-4f2d-a3ff-4a68800c8b71",
+      "result_id": "ca0c302d-f7de-4876-ad10-63355f3c1edd"
+    },
+    {
+      "claim_id": "f91ba74f-7a8a-4ee0-b195-b262e469bf99",
+      "result_id": "41f28878-d2bc-446b-aa66-4c77dfd46197"
+    },
+    {
+      "claim_id": "2d65978b-e01b-45ff-be05-19b716fd1b77",
+      "result_id": "41f28878-d2bc-446b-aa66-4c77dfd46197"
+    },
+    {
+      "claim_id": "fe7542da-0053-4177-bc4f-5e1a4bb23ba9",
+      "result_id": "41f28878-d2bc-446b-aa66-4c77dfd46197"
+    },
+    {
+      "claim_id": "068d16da-226f-46d3-a8f0-0bca09b6988d",
+      "result_id": "41f28878-d2bc-446b-aa66-4c77dfd46197"
+    },
+    {
+      "claim_id": "35547f45-4796-4eb1-9c7a-cd4dcc31792e",
+      "result_id": "41f28878-d2bc-446b-aa66-4c77dfd46197"
+    },
+    {
+      "claim_id": "5cb78f59-68f0-4044-9123-faf7ad5886e4",
+      "result_id": "41f28878-d2bc-446b-aa66-4c77dfd46197"
+    },
+    {
+      "claim_id": "8c9a53df-876f-4f07-92b7-2162da9f1ed5",
+      "result_id": "9d439ed6-c4ee-4319-a24c-fcbdfc134ed4"
+    },
+    {
+      "claim_id": "31473518-d642-42ac-846b-56dea16d0241",
+      "result_id": "9d439ed6-c4ee-4319-a24c-fcbdfc134ed4"
+    },
+    {
+      "claim_id": "a8d6ca9f-6254-4f69-a746-36c3fcb8b950",
+      "result_id": "9d439ed6-c4ee-4319-a24c-fcbdfc134ed4"
+    },
+    {
+      "claim_id": "9294b2d7-0b62-47ca-81ea-74f5f81dc9fd",
+      "result_id": "9d439ed6-c4ee-4319-a24c-fcbdfc134ed4"
+    },
+    {
+      "claim_id": "3c7d5cb9-9d6f-4468-a7e1-dee375c16f4e",
+      "result_id": "11e7a790-d6c3-4c8f-ab44-31d46b1ac96a"
+    },
+    {
+      "claim_id": "c069a669-c73f-436c-b0d0-45667085b421",
+      "result_id": "11e7a790-d6c3-4c8f-ab44-31d46b1ac96a"
+    },
+    {
+      "claim_id": "7d8997ce-4597-4b53-90e4-9c970b8b2644",
+      "result_id": "11e7a790-d6c3-4c8f-ab44-31d46b1ac96a"
+    },
+    {
+      "claim_id": "ed2787ad-88c4-4f1c-bc63-74a78e2e1bac",
+      "result_id": "11e7a790-d6c3-4c8f-ab44-31d46b1ac96a"
+    },
+    {
+      "claim_id": "617a6fca-ac10-4f8e-beb8-c0101aa5ddca",
+      "result_id": "11e7a790-d6c3-4c8f-ab44-31d46b1ac96a"
+    },
+    {
+      "claim_id": "588d0bbe-ffd1-4efa-a144-540901a87a1e",
+      "result_id": "11e7a790-d6c3-4c8f-ab44-31d46b1ac96a"
+    },
+    {
+      "claim_id": "48ef3dfc-b857-4c6a-9ed4-df23abd2c58e",
+      "result_id": "e7183bd1-65d8-4ff6-a0c5-7ea7cd0cc77b"
+    },
+    {
+      "claim_id": "e48a7960-6ef3-4e91-833a-a5b4c2836da1",
+      "result_id": "e7183bd1-65d8-4ff6-a0c5-7ea7cd0cc77b"
+    },
+    {
+      "claim_id": "2a281855-108d-4ae1-a157-b8de017bef06",
+      "result_id": "e7183bd1-65d8-4ff6-a0c5-7ea7cd0cc77b"
+    },
+    {
+      "claim_id": "2ca94c73-ff74-41f3-a565-4a4327b9621c",
+      "result_id": "e7183bd1-65d8-4ff6-a0c5-7ea7cd0cc77b"
+    },
+    {
+      "claim_id": "69da6807-6bb4-4fbc-95b5-5d10543d2ad5",
+      "result_id": "e7183bd1-65d8-4ff6-a0c5-7ea7cd0cc77b"
+    },
+    {
+      "claim_id": "7e1a38d3-5768-47aa-8cc7-71b73a73a842",
+      "result_id": "00030f9d-f4ef-4833-880c-5cef86791059"
+    },
+    {
+      "claim_id": "cc48a549-be28-47dd-91e2-ffc37105154c",
+      "result_id": "2cd95122-80e9-4cd9-9e4e-8a4d3625cc35"
+    },
+    {
+      "claim_id": "3097761d-d30a-481a-be74-23d849335857",
+      "result_id": "2cd95122-80e9-4cd9-9e4e-8a4d3625cc35"
+    },
+    {
+      "claim_id": "c2b8b6df-1b3d-4165-9f5f-ac7ad2bc6fb8",
+      "result_id": "2cd95122-80e9-4cd9-9e4e-8a4d3625cc35"
+    },
+    {
+      "claim_id": "292ede9c-e26e-4219-9f34-1934c80da305",
+      "result_id": "2cd95122-80e9-4cd9-9e4e-8a4d3625cc35"
+    },
+    {
+      "claim_id": "b43d5c13-df2c-49c7-9ad8-6a232df1363b",
+      "result_id": "2cd95122-80e9-4cd9-9e4e-8a4d3625cc35"
+    },
+    {
+      "claim_id": "a9f51a58-fbf7-40bb-82b7-ed7e77d48c11",
+      "result_id": "bf8ea53a-cbe9-4960-ad8b-1752e190cd46"
+    },
+    {
+      "claim_id": "1dd96099-2225-4b61-b9d8-5703d9e48b16",
+      "result_id": "bf8ea53a-cbe9-4960-ad8b-1752e190cd46"
+    },
+    {
+      "claim_id": "9fd87856-dfe0-4e96-9223-964efc22899c",
+      "result_id": "bf8ea53a-cbe9-4960-ad8b-1752e190cd46"
+    },
+    {
+      "claim_id": "40f3d85e-1bb2-4e88-86ed-de1ea5494e0d",
+      "result_id": "bf8ea53a-cbe9-4960-ad8b-1752e190cd46"
+    },
+    {
+      "claim_id": "c600e18c-9c08-4664-a670-5c22a244e076",
+      "result_id": "bf8ea53a-cbe9-4960-ad8b-1752e190cd46"
+    },
+    {
+      "claim_id": "d7a69ce5-8e12-4a85-a0cc-9be99169a176",
+      "result_id": "bf8ea53a-cbe9-4960-ad8b-1752e190cd46"
+    },
+    {
+      "claim_id": "f5a4c474-5823-4d11-894e-efb1c5433b42",
+      "result_id": "30433c68-3bca-402c-bf9d-09cc00cd99e3"
+    },
+    {
+      "claim_id": "b4fa9a15-edfa-4ca1-9cb2-7be8b74e4de6",
+      "result_id": "30433c68-3bca-402c-bf9d-09cc00cd99e3"
+    },
+    {
+      "claim_id": "c07daf0c-28cc-491c-b52e-5eaedf8a71e0",
+      "result_id": "30433c68-3bca-402c-bf9d-09cc00cd99e3"
+    },
+    {
+      "claim_id": "06aaaac3-0547-4688-8cf6-afe83606ca4f",
+      "result_id": "a6166e3b-96f6-443f-b9ec-d89a8f7b6886"
+    },
+    {
+      "claim_id": "4ea109f5-b1f9-4549-ad60-ab5db9139394",
+      "result_id": "a6166e3b-96f6-443f-b9ec-d89a8f7b6886"
+    },
+    {
+      "claim_id": "fabd6f3f-569f-4d43-ac5f-238b5d364548",
+      "result_id": "a6166e3b-96f6-443f-b9ec-d89a8f7b6886"
+    },
+    {
+      "claim_id": "9ee0fc07-e967-44c1-8b5b-81eab8f0346f",
+      "result_id": "a6166e3b-96f6-443f-b9ec-d89a8f7b6886"
+    },
+    {
+      "claim_id": "8c27ce8c-ead1-4432-9308-1fcbc702a2f5",
+      "result_id": "a6166e3b-96f6-443f-b9ec-d89a8f7b6886"
+    },
+    {
+      "claim_id": "0fcf2864-7b69-4dec-94a2-fa39c7fb94c8",
+      "result_id": "a6166e3b-96f6-443f-b9ec-d89a8f7b6886"
+    },
+    {
+      "claim_id": "7fb53762-fbc7-4b35-aab2-ce3c7e279430",
+      "result_id": "55c1e311-7278-4b47-bb9a-fe9487178e7b"
+    },
+    {
+      "claim_id": "862ee556-d0a3-4cf1-b483-6c05056fea4d",
+      "result_id": "55c1e311-7278-4b47-bb9a-fe9487178e7b"
+    },
+    {
+      "claim_id": "75240a43-8984-4119-8191-8750c33fb5b1",
+      "result_id": "55c1e311-7278-4b47-bb9a-fe9487178e7b"
+    },
+    {
+      "claim_id": "409936a3-a8c1-4186-abd0-56090de53cf0",
+      "result_id": "f000ac63-2920-4efd-b3ab-52c69f308b4c"
+    },
+    {
+      "claim_id": "9b73bf05-0d22-4720-810e-f896a709b0ea",
+      "result_id": "b361db19-89b9-432d-b90e-3596b8681381"
+    },
+    {
+      "claim_id": "f91ba74f-7a8a-4ee0-b195-b262e469bf99",
+      "result_id": "b361db19-89b9-432d-b90e-3596b8681381"
+    },
+    {
+      "claim_id": "26c0bf36-de9c-4990-bff6-60d9e48c162f",
+      "result_id": "b361db19-89b9-432d-b90e-3596b8681381"
+    },
+    {
+      "claim_id": "1a2778e5-19e3-4f2d-a3ff-4a68800c8b71",
+      "result_id": "b361db19-89b9-432d-b90e-3596b8681381"
+    },
+    {
+      "claim_id": "7fb53762-fbc7-4b35-aab2-ce3c7e279430",
+      "result_id": "b361db19-89b9-432d-b90e-3596b8681381"
+    },
+    {
+      "claim_id": "862ee556-d0a3-4cf1-b483-6c05056fea4d",
+      "result_id": "b361db19-89b9-432d-b90e-3596b8681381"
+    },
+    {
+      "claim_id": "2d65978b-e01b-45ff-be05-19b716fd1b77",
+      "result_id": "f007d872-60f6-43d3-b260-b5f12548776e"
+    },
+    {
+      "claim_id": "fe7542da-0053-4177-bc4f-5e1a4bb23ba9",
+      "result_id": "f007d872-60f6-43d3-b260-b5f12548776e"
+    },
+    {
+      "claim_id": "068d16da-226f-46d3-a8f0-0bca09b6988d",
+      "result_id": "f007d872-60f6-43d3-b260-b5f12548776e"
+    },
+    {
+      "claim_id": "35547f45-4796-4eb1-9c7a-cd4dcc31792e",
+      "result_id": "f007d872-60f6-43d3-b260-b5f12548776e"
+    },
+    {
+      "claim_id": "5cb78f59-68f0-4044-9123-faf7ad5886e4",
+      "result_id": "f007d872-60f6-43d3-b260-b5f12548776e"
+    },
+    {
+      "claim_id": "8c9a53df-876f-4f07-92b7-2162da9f1ed5",
+      "result_id": "28d80c0e-7481-4f96-a1d5-542804159647"
+    },
+    {
+      "claim_id": "31473518-d642-42ac-846b-56dea16d0241",
+      "result_id": "28d80c0e-7481-4f96-a1d5-542804159647"
+    },
+    {
+      "claim_id": "a8d6ca9f-6254-4f69-a746-36c3fcb8b950",
+      "result_id": "28d80c0e-7481-4f96-a1d5-542804159647"
+    },
+    {
+      "claim_id": "9294b2d7-0b62-47ca-81ea-74f5f81dc9fd",
+      "result_id": "28d80c0e-7481-4f96-a1d5-542804159647"
+    },
+    {
+      "claim_id": "3c7d5cb9-9d6f-4468-a7e1-dee375c16f4e",
+      "result_id": "4ccd6b97-b155-4fee-8059-b53c4eb2923b"
+    },
+    {
+      "claim_id": "c069a669-c73f-436c-b0d0-45667085b421",
+      "result_id": "4ccd6b97-b155-4fee-8059-b53c4eb2923b"
+    },
+    {
+      "claim_id": "7d8997ce-4597-4b53-90e4-9c970b8b2644",
+      "result_id": "4ccd6b97-b155-4fee-8059-b53c4eb2923b"
+    },
+    {
+      "claim_id": "ed2787ad-88c4-4f1c-bc63-74a78e2e1bac",
+      "result_id": "4ccd6b97-b155-4fee-8059-b53c4eb2923b"
+    },
+    {
+      "claim_id": "617a6fca-ac10-4f8e-beb8-c0101aa5ddca",
+      "result_id": "4ccd6b97-b155-4fee-8059-b53c4eb2923b"
+    },
+    {
+      "claim_id": "588d0bbe-ffd1-4efa-a144-540901a87a1e",
+      "result_id": "4ccd6b97-b155-4fee-8059-b53c4eb2923b"
+    },
+    {
+      "claim_id": "a9f51a58-fbf7-40bb-82b7-ed7e77d48c11",
+      "result_id": "cd63750e-85d8-4154-833f-4ee84e9aa565"
+    },
+    {
+      "claim_id": "1dd96099-2225-4b61-b9d8-5703d9e48b16",
+      "result_id": "cd63750e-85d8-4154-833f-4ee84e9aa565"
+    },
+    {
+      "claim_id": "9fd87856-dfe0-4e96-9223-964efc22899c",
+      "result_id": "cd63750e-85d8-4154-833f-4ee84e9aa565"
+    },
+    {
+      "claim_id": "40f3d85e-1bb2-4e88-86ed-de1ea5494e0d",
+      "result_id": "cd63750e-85d8-4154-833f-4ee84e9aa565"
+    },
+    {
+      "claim_id": "c600e18c-9c08-4664-a670-5c22a244e076",
+      "result_id": "cd63750e-85d8-4154-833f-4ee84e9aa565"
+    },
+    {
+      "claim_id": "d7a69ce5-8e12-4a85-a0cc-9be99169a176",
+      "result_id": "cd63750e-85d8-4154-833f-4ee84e9aa565"
+    },
+    {
+      "claim_id": "48ef3dfc-b857-4c6a-9ed4-df23abd2c58e",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "9ee0fc07-e967-44c1-8b5b-81eab8f0346f",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "8c27ce8c-ead1-4432-9308-1fcbc702a2f5",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "0fcf2864-7b69-4dec-94a2-fa39c7fb94c8",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "e48a7960-6ef3-4e91-833a-a5b4c2836da1",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "2a281855-108d-4ae1-a157-b8de017bef06",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "2ca94c73-ff74-41f3-a565-4a4327b9621c",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "69da6807-6bb4-4fbc-95b5-5d10543d2ad5",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "f5a4c474-5823-4d11-894e-efb1c5433b42",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "75240a43-8984-4119-8191-8750c33fb5b1",
+      "result_id": "5f425819-a342-4613-beb3-977053af671e"
+    },
+    {
+      "claim_id": "cc48a549-be28-47dd-91e2-ffc37105154c",
+      "result_id": "3b392025-8ba7-44f0-acc8-53a89772b38d"
+    },
+    {
+      "claim_id": "3097761d-d30a-481a-be74-23d849335857",
+      "result_id": "3b392025-8ba7-44f0-acc8-53a89772b38d"
+    },
+    {
+      "claim_id": "c2b8b6df-1b3d-4165-9f5f-ac7ad2bc6fb8",
+      "result_id": "3b392025-8ba7-44f0-acc8-53a89772b38d"
+    },
+    {
+      "claim_id": "292ede9c-e26e-4219-9f34-1934c80da305",
+      "result_id": "3b392025-8ba7-44f0-acc8-53a89772b38d"
+    },
+    {
+      "claim_id": "b43d5c13-df2c-49c7-9ad8-6a232df1363b",
+      "result_id": "3b392025-8ba7-44f0-acc8-53a89772b38d"
+    },
+    {
+      "claim_id": "7e1a38d3-5768-47aa-8cc7-71b73a73a842",
+      "result_id": "b5abbf98-6fe5-4d7b-ba4d-d3e7396b863f"
+    },
+    {
+      "claim_id": "b4fa9a15-edfa-4ca1-9cb2-7be8b74e4de6",
+      "result_id": "6697c40a-aec6-4877-a928-44c9db02ba1d"
+    },
+    {
+      "claim_id": "c07daf0c-28cc-491c-b52e-5eaedf8a71e0",
+      "result_id": "6697c40a-aec6-4877-a928-44c9db02ba1d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "543b9669-40a9-47c9-a665-bbf3204bb1ff",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "9d439ed6-c4ee-4319-a24c-fcbdfc134ed4",
+      "peer_result_id": "28d80c0e-7481-4f96-a1d5-542804159647",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C7, C42-C44 regarding catalytic rate requirements (\u03b2/\u03b2\u2080 \u2265 10\u00b2-10\u00b3). Both evaluations find these claims SUPPORTED. OpenEval provides detailed model analysis while peer reviewers implicitly accept these quantitative estimates without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "918fbc0f-cce9-4111-a29f-6c8026bb0e75",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "11e7a790-d6c3-4c8f-ab44-31d46b1ac96a",
+      "peer_result_id": "4ccd6b97-b155-4fee-8059-b53c4eb2923b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on claims C8, C37-C41 regarding fitness landscape and evolutionary dynamics. Both evaluations are SUPPORTED. OpenEval details the analytical and simulation evidence while peer reviewers accept the qualitatively new phenomena as technically correct.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "65d8790a-ce56-4240-9559-63dad9cc79d0",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2cd95122-80e9-4cd9-9e4e-8a4d3625cc35",
+      "peer_result_id": "3b392025-8ba7-44f0-acc8-53a89772b38d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Full agreement on claims C15-C17, C20-C21 regarding entropy reduction and hybridization. Both evaluations are SUPPORTED. OpenEval notes sound logic with limited quantitative detail; peer reviewers accept these claims as part of technically correct prior work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "e0a1c34d-1482-4ce1-93f2-cdf446775899",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "bf8ea53a-cbe9-4960-ad8b-1752e190cd46",
+      "peer_result_id": "cd63750e-85d8-4154-833f-4ee84e9aa565",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on claims C45-C50 regarding the VCG model comparison and scrambling problem. OpenEval finds claims SUPPORTED with clear documentation, while peer Reviewer 3 expresses UNCERTAINTY about whether scrambling is truly resolved and questions the scrambling-free length estimate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "ed41ffd8-b8af-4d5e-ac2b-d71bf545b866",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "41f28878-d2bc-446b-aa66-4c77dfd46197",
+      "peer_result_id": "f007d872-60f6-43d3-b260-b5f12548776e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C4-C5, C33, C56-C57 regarding cooperative network structure and competitive advantage. Both evaluations are SUPPORTED. OpenEval provides detailed model analysis; peer reviewers confirm technical correctness and solid evidence. Note: C3 appears in OpenEval R2 but not peer R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "2429ee4e-5824-4ba4-8dbd-be824bb35ac3",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "ca0c302d-f7de-4876-ad10-63355f3c1edd",
+      "peer_result_id": "b361db19-89b9-432d-b90e-3596b8681381",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on overlapping claims C2, C18-C19 regarding random cleavage generating primers and proliferation mechanism. Both evaluations are SUPPORTED. Peer R1 also includes C3, C24, C59 which OpenEval addresses separately. Both confirm solid model evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "ff7d354b-e2e1-47ed-b46a-331bbe50c1cc",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "e7183bd1-65d8-4ff6-a0c5-7ea7cd0cc77b",
+      "peer_result_id": "5f425819-a342-4613-beb3-977053af671e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C6, C25-C28 regarding biological inspiration from hammerhead ribozymes. Both evaluations are SUPPORTED. OpenEval focuses on structural citations; peer R6 also encompasses experimental proposals (C12-C14, C53, C60) and notes positive connection to experimental scenarios.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "49af82c3-8832-4012-b957-2bb996043676",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "00030f9d-f4ef-4833-880c-5cef86791059",
+      "peer_result_id": "b5abbf98-6fe5-4d7b-ba4d-d3e7396b863f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of claim C29 regarding model dynamics. OpenEval rates UNCERTAIN due to inaccessible Appendix 1 analysis, while peer reviewers rate SUPPORTED, implicitly accepting the claim as part of overall technical correctness without examining the appendix.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "476e873d-9cfc-41bc-9225-7c3c7dfc1d3e",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "30433c68-3bca-402c-bf9d-09cc00cd99e3",
+      "peer_result_id": "6697c40a-aec6-4877-a928-44c9db02ba1d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Contrasting evaluations of experimental proposals C54-C55 (bidirectional polymerization). OpenEval rates UNCERTAIN citing biochemical problems and unclear feasibility, while peer reviewers rate SUPPORTED, accepting the assumption without challenge as part of technically correct model.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "403823ff-ad85-4cd8-b82b-515669f60dcc",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "55c1e311-7278-4b47-bb9a-fe9487178e7b",
+      "peer_result_id": "b361db19-89b9-432d-b90e-3596b8681381",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C24, C59 regarding cleavage evolution. Both evaluations are SUPPORTED. OpenEval R11 also includes C60; peer R1 also includes C2-C3, C18-C19. Both accept the evolutionary argument with experimental support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "f67186e3-90da-4cce-ac3c-9108680b8205",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a6166e3b-96f6-443f-b9ec-d89a8f7b6886",
+      "peer_result_id": "5f425819-a342-4613-beb3-977053af671e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on background claims C12-C14 regarding RNA World hypothesis. Both evaluations are SUPPORTED. OpenEval R10 includes C9-C11 as well; peer R6 encompasses broader set including experimental aspects. Both accept foundational knowledge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "52b22fa3-98c8-47d2-bcd8-e6af4bb529b3",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "f000ac63-2920-4efd-b3ab-52c69f308b4c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claim C1 (dual nature of biological function) as SUPPORTED foundational knowledge. No corresponding peer review evaluation found for this framing claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "0c9e7f09-1887-4dd6-81cc-fdd9e7246450",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "30433c68-3bca-402c-bf9d-09cc00cd99e3",
+      "peer_result_id": "5f425819-a342-4613-beb3-977053af671e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Minor overlap on claim C53 (experimental approaches). OpenEval rates C53-C55 as UNCERTAIN due to feasibility concerns; peer R6 rates broader experimental set including C53 as SUPPORTED, noting positive connection to experimental scenarios.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    },
+    {
+      "id": "034a267d-c16b-4c0b-801a-85768ed7045a",
+      "submission_id": "dfb51019-6074-49b0-bd84-5699f22997cf",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "55c1e311-7278-4b47-bb9a-fe9487178e7b",
+      "peer_result_id": "5f425819-a342-4613-beb3-977053af671e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on claim C60 (cleavage activity evolution). OpenEval rates C24, C59-C60 as SUPPORTED with evolutionary logic; peer R6 includes C60 in broader SUPPORTED evaluation of biological inspiration and experimental connections.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:16:20.530877Z"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C78"
+    ],
+    "result": "ACh modulates neuronal mismatch (nMM) by affecting prediction error (iPE) but not repetition suppression (iRS), with effects predominantly in infragranular cortical layers and increased variance in prediction error responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C68-C70 demonstrate that ACh significantly modulates iMM and iPE (p<0.001 to p=0.023) while iRS remains unchanged (p>0.12), supported by cascade control experiments in 66 neurons. Claims C4, C71-C78 show layer-specific effects with significant variance increases in deep units and high-SI frequencies. The use of control sequences (C157-C162) allows disambiguation of prediction error from repetition suppression, providing strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C73",
+      "C74",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "ACh increases the precision of prediction errors through representational sharpening, evidenced by increased variance in iPE for high-SI neurons and differential effects on deviant versus standard responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 show ACh significantly increases variance of iPE specifically in high-SI groups (p<0.01), consistent with precision modulation. Claims C5, C110-C112 interpret this as representational sharpening where most neurons are suppressed while precise prediction error neurons are enhanced, aligning with predictive coding theory (C105-C109) and supported by variance analysis using bootstrap methods (Figure 8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ACh application causes a significant decrease in overall firing rates to both deviant and standard stimuli, reducing neuronal discriminability between stimulus types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C47-C48 show statistically significant decreases in firing rates (p<0.001 for deviants, p=0.001 for standards) with recovery after 60-90 minutes (C40). Claims C49-C51 demonstrate reduced discriminability via decreased AUC (p<0.001) and Mutual Information (p=0.003). Statistical tests are appropriate (Wilcoxon signed-rank) with clear p-values and sample sizes (n=85 neurons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ACh produces heterogeneous effects on selectivity indices, with 26-31% of neurons showing significant increases or decreases in CSI/SI, while 42-43% remain unaffected, resulting in no net population-level change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 report CSI changes in 85 neurons with bootstrapping confidence intervals (95% c.i.), showing bidirectional effects that cancel at population level (p=0.359). Claims C52-C55 confirm similar patterns for frequency-specific SI across 205 frequencies. The heterogeneity is well-documented with appropriate statistical methods, though the biological basis for differential responses remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ACh differentially affects deviant versus standard responses depending on baseline SI: in SI-decrease neurons, ACh selectively reduces deviant responses, while in SI-increase neurons, ACh selectively reduces standard responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 demonstrate statistically significant differential effects (p<0.001) with appropriate post-hoc tests showing selective reduction of deviants (p<0.001) or standards (p=0.001) depending on SI direction. Claims C60-C62 show corresponding changes in discriminability metrics (AUC, Mutual Information) that differ between groups, supporting the interpretation that SI-decrease frequencies mediate main population effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "ACh modulates normalized responses to deviant (DEV) and standard (STD) stimuli in opposite directions depending on SI change direction, while cascade control (CAS) responses show trends but no significant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 show statistically significant bidirectional effects on DEV and STD responses (p<0.001 to p=0.011) in 66 neurons with cascade controls. Claim C67 notes non-significant CAS changes (p>0.07), which is appropriate given the trend observation. The use of normalized spike counts and cascade controls strengthens the interpretation of prediction error versus repetition suppression components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "ACh effects on SI show distinct laminar distributions: SI-decrease occurs predominantly in granular layer (IV) and upper infragranular regions, while SI-increase occurs in deeper infragranular layers (V-VI).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe spatial distributions across cortical fields and depths, supported by Figure 10 showing probability density functions. Claims C132-C134 confirm layer-specific effects with recordings spanning 120-1191 \u03bcm depth (C35). The depth cutoff at 650 \u03bcm (C75-C76) is appropriately chosen for layer IV/V boundary. However, the interpretation relies on anatomical estimates rather than direct histological verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ACh effects vary across auditory cortical fields, with significant decreases in deviant responses in AAF, VAF, and SRAF, but no significant changes in overall CSI across fields after multiple comparison correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 report field-specific effects with appropriate Holm-Bonferroni correction for multiple comparisons. Significant effects on deviant responses (p=0.009-0.026) and standard responses in AAF (p=0.001) are documented, while CSI changes remain non-significant (p>0.79). The topographic analysis (Figure 9) provides spatial context, though sample sizes per field are not explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "ACh does not significantly alter frequency response area bandwidths (BW10 or BW30) at the population level, despite individual neurons showing broadening or sharpening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 report non-significant changes in bandwidth measures (p=0.248 for BW10, p=0.664 for BW30) with appropriate statistical tests (Wilcoxon signed-rank). Figure 4 shows individual variability that averages out at population level. The null result is properly reported with p-values and descriptive statistics, though sample size for this analysis is not explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C144",
+      "C145"
+    ],
+    "result": "The study recorded 113 units across all cortical layers (120-1191 \u03bcm depth) in 37 female Long-Evans rats, with tonotopic organization consistent with previous studies identifying A1, AAF, VAF, PAF, and SRAF fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C144 provide clear sample description (113 units, 37 rats, depth range). Claims C36-C38 describe tonotopic organization matching previous studies (cited in text), shown in Figure 1. Claim C145 acknowledges limitation of using only female rats. The experimental characterization is thorough, though the choice to use only females limits generalizability without testing for sex differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The microiontophoresis methodology used urethane anesthesia, tungsten electrodes for recording, and multibarrel pipettes (20-30 \u03bcm tip) for ACh delivery (1M, pH 4.0-4.2) with 30-40 nA ejection currents for 8-10 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C153 provide detailed methodological description with specific parameters (concentrations, currents, durations, pH). The methods are standard for microiontophoresis studies and cite previous work (C151). However, claims C128-C130 acknowledge important limitations: unclear physiological relevance of ACh concentrations, potential supraphysiological levels, and anesthesia effects limiting generalization to awake states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The oddball paradigm used pure tones (0.5-44 kHz, 75 ms, 4/s) with 10% deviant probability and 0.5 octave separation, complemented by cascade and many-standards control sequences to disambiguate prediction error from repetition suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C162 provide comprehensive description of experimental paradigms with specific parameters. The use of cascade controls (C161-C162) is justified as more rigorous than many-standards for maintaining regularity. The paradigm design follows established protocols (citations provided) and enables separation of prediction error and repetition suppression components, which is critical for the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study has significant limitations including use of anesthesia (low baseline cholinergic activity), unclear physiological relevance of iontophoretic ACh concentrations, and difficulty generalizing to awake behaving states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C128-C130 explicitly acknowledge major experimental limitations with supporting citations (Minces et al. 2017, Quintela-Vega et al. 2023). These are critical caveats that affect interpretation of all results, particularly regarding attention (C117) and ecological validity. The authors appropriately note these limitations, though they fundamentally constrain the conclusions about ACh's role in natural auditory processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C143"
+    ],
+    "result": "ACh plays a multifold role in modulating prediction error signaling in auditory cortex and gating access of these signals to higher cognitive levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6 and C143 are supported by the prediction error modulation data (C68-C74), but claim C7 regarding 'gating access to higher cognitive levels' is speculative (evidence_type: INFERENCE, SPECULATION). No direct measurements of signal transmission to higher areas or hierarchical processing were performed. The gating interpretation is plausible given the layer-specific effects (C4, C78) but requires additional experiments measuring inter-areal connectivity or higher-level responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C140",
+      "C141"
+    ],
+    "result": "Units with SI decrease during ACh application (located in layer IV) may represent error units, while units with SI increase (in deep layers) may represent prediction units, supporting Spratling's (2008) predictive coding model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C138, C140-C141 interpret laminar distributions in context of predictive coding models (C135-C136). While the spatial distributions are well-documented (C133-C134), the functional interpretation as 'error units' versus 'prediction units' is speculative. The study used multiunit recordings precluding cell-type identification (acknowledged in discussion), and no direct tests of predictive versus error coding properties were performed beyond SI measurements.",
+    "result_type": "MINOR"
+  }
+]

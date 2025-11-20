@@ -1,0 +1,541 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors generated spatially dense expression maps (DEMs) for 20,781 genes by processing AHBA microarray data from 1304 cortical samples across six donors, using nearest-neighbor interpolation and smoothing to propagate expression values across approximately 30,000 cortical vertices, and calculating expression gradients at each vertex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 describe a clear methodological pipeline with specific parameters (sample sizes, interpolation methods, smoothing kernels) that is well-documented and illustrated in Figure 1. The approach is technically sound and builds appropriately on established cortical surface reconstruction methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DEMs show reproducibility of rgene=0.58 for cortically expressed genes and rvertex=0.63 for vertex-level gene rankings, with substantially lower reproducibility for non-cortically expressed genes, and more than 11,000 DEMs achieving rgene>0.5 between unrelated individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 present quantitative reproducibility metrics with appropriate statistical comparisons (t-tests, enrichment analyses) and control analyses showing independence from sampling density. The learning curve approach for estimating reproducibility from the full cohort is methodologically sound, and the differential reproducibility between cortically and non-cortically expressed genes provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "DEMs successfully recovered known sharp expression boundaries at V1/V2 for four canonical marker genes and predicted novel expression boundaries between parahippocampal and fusiform gyri that were validated by independent ISH data, as well as boundaries in frontal areas 44/45.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 demonstrate validation against independent gold-standard ISH data for both known boundaries (V1/V2) and novel predictions. The validation is both qualitative and quantitative, with all predicted genes showing the expected sharp transitions in ISH data. This is strong evidence that the interpolation method preserves biologically meaningful spatial features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "DEMs showed strong spatial correlations with independent measures of cortical organization across multiple scales, including cellular composition from snRNAseq (r=0.6), layer IV thickness from histology, and diverse neuroimaging measures including motor activation, myelination, and disease-related cortical thinning (all pspin<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 present multiple independent validations across different spatial scales and measurement modalities, with appropriate statistical testing using spin-based permutations to control for spatial autocorrelation. The convergent evidence from cellular, histological, and neuroimaging data strongly supports the biological validity of DEMs. However, the APOE/AD analysis (C50) involves a newly generated cortical thinning map that could benefit from more methodological detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Transcriptional distinctiveness (TD) analysis identified six statistically significant peaks corresponding to major cortical archetypes (V1, BA2, BA4, TGd, OFC, BA9-46d), with high reproducibility across donor subsets (r=0.77) and across different DEM reproducibility thresholds (r>0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 describe a novel metric (TD) with rigorous statistical validation through spatial permutation testing and reproducibility analyses. The recovery of classical cortical areas (C53) and the perfect separation of BA2/BA4 along the central sulcus without anatomical priors (C54) provide strong biological validation. The reproducibility analyses (C55-C57) demonstrate robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TD peaks serve as focal anchors of cortex-wide expression gradients, show functional specializations in fMRI meta-analyses, and the orientation of gene expression gradients is significantly aligned with cortical folding (p<0.01) and multimodal MRI-defined cortical areas (p<0.01), with regional variation in alignment strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 establish important relationships between gene expression patterns and cortical organization. The PCA analysis (C58) and functional specializations (C59) are well-supported. The gradient alignment analyses (C61, C63) use appropriate statistical methods (spin tests) and show significant effects. However, C58 involves some interpretation beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The transcriptional identity of V1 and TGd regions observed in adulthood is already apparent at 21 post-conception weeks, during the period when cortical folding topology begins to emerge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by analysis of independent fetal gene expression data (Miller et al., 2014) showing that adult TD signatures are present in homologous fetal regions. This provides temporal ordering evidence relevant to developmental mechanisms, though the analysis is limited to two TD regions and one developmental timepoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "WGCNA identified 16 gene co-expression modules, with module eigenmaps and enrichments primarily driven by highly reproducible genes (median reproducibility 0.59, p<0.001 elevated vs. background).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe the WGCNA analysis with appropriate quality control showing that results are driven by reproducible genes. The filtering of non-cortical modules is methodologically sound. The reproducibility analysis (C67-C68) provides important validation of the module structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Several WGCNA modules showed statistically significant alignments with in vivo neuroimaging measures, including M6 correlating with cortical thickness and limbic networks, and M8/M9/M14 showing expression gradients aligned with cortical folding orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 demonstrate macroscale validation of WGCNA modules using independent neuroimaging data with appropriate statistical testing. The specific examples (M6, M8/M9/M14) provide concrete evidence of the multiscale integration achieved by the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "WGCNA modules showed statistically significant enrichments for specific cortical layers and cell types, with congruent enrichments matching known anatomical features (e.g., M4 enriched for endothelial cells and middle layers in vascularized motor cortex; M6 enriched for astrocytes/microglia and layers 1/2 in regions with expanded supragranular layers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 demonstrate microscale validation through enrichment analyses against multiple independent datasets. The congruence between layer and cell-type enrichments (C73) and the alignment with known anatomical features (C74-C79) provide strong biological validation. The specific examples are well-supported by citations to prior anatomical knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "WGCNA modules showed congruent co-enrichments across multiple spatial scales, from nanoscale features (subcellular compartments, protein-protein interactions) to cellular and laminar markers, exemplified by M2 which overlaps with the somatomotor network and is enriched for layer 6 and oligodendrocyte markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 demonstrate the multiscale integration achieved by WGCNA modules. The enrichment analyses span multiple independent datasets and spatial scales. The M2 example (C81-C83) is well-documented with multiple citations and provides a concrete illustration of the multiscale integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Independent validation analyses confirmed multiscale enrichments for M2 (motor activation, deep layer localization, myelin GO terms) and M12 (social reasoning activation, upper layer localization, synapse GO terms), demonstrating the robustness of module annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 provide orthogonal validation of module enrichments using independent methods (meta-analytic fMRI, immunohistochemistry, GO enrichment). The validation of both M2 and M12 with contrasting profiles strengthens confidence in the approach. All validations are supported by appropriate citations and methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Most WGCNA modules (13 of 16) were enriched for genes with developmentally coordinated expression between early fetal and late adult stages, with differential enrichments for mid-fetal layers and cell types, exemplified by M6 (enriched for mid-fetal microglia and glial layers) and M12 (enriched for developing excitatory neurons and subplate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 demonstrate temporal integration by linking adult expression patterns to developmental features. The enrichment analyses use multiple independent developmental datasets (BrainVar, BrainSpan, Miller et al., Polioudakis et al.) with appropriate statistical testing. The specific examples of M6 and M12 show how modules with similar adult spatial patterns can have distinct developmental signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Network analysis of annotational gene sets revealed five coherent clusters (mature neuron, fetal GE, mitotic, myelin, non-neuronal) that integrate markers across spatial scales and developmental epochs, with each cluster most strongly connected to specific WGCNA modules (M12, M15, M2, M6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C111 describe a meta-analysis integrating multiple annotation sources. The clustering approach is appropriate and the biological interpretation of clusters is well-supported by the constituent gene sets. The connections to WGCNA modules (C105, C107, C109, C111) provide validation of the module structure and demonstrate the multiscale integration achieved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Disease-associated gene sets showed significant enrichments in several WGCNA modules, with M15 enriched for ASD, schizophrenia, and severe developmental disorders, M12 enriched for ASD and epilepsy, and ASD being the only disorder enriched in both modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 demonstrate disease gene enrichments with appropriate statistical testing and correction for multiple comparisons. The identification of ASD enrichment in both M12 and M15 (C115) provides a natural setting for investigating disease mechanisms, though the biological interpretation requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "ASD risk genes partition into two WGCNA modules with distinct multiscale profiles: M12 (synaptic genes, social reasoning network, late-fetal/postnatal expression, layer 2, mature neurons) and M15 (chromatin remodeling genes, visual network, early fetal expression, layer 2, inhibitory neurons/OPCs), recovering the known PPI/GO-based partitioning while providing richer biological context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C127 demonstrate that spatial co-expression patterns can recover known functional partitioning of ASD genes (synaptic vs. chromatin remodeling) while adding multiscale context. The specific gene examples (C116, C122) and the multiscale enrichments (C117-C126) are well-documented. The recovery of prior PPI/GO-based partitioning (C127) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Regional transcriptomic disruption in ASD (number of differentially expressed genes) was significantly correlated with M15 expression (r=0.6, pspin<0.05) but not M12 expression (r=-0.3, pspin>0.05), potentially explained by M15's enrichment for gene expression regulatory genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 present quantitative findings with appropriate statistical testing using independent ASD transcriptomic data. The differential correlation between M15 and M12 is statistically significant. However, C131 is an interpretation that, while plausible, represents a hypothesis rather than a demonstrated mechanism and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Cortical thickness analysis in ASD revealed significant thickening in visual/parietal cortices and thinning in superior frontal cortex, with the occipital thickening cluster showing significant spatial overlap with peak M15 expression (Dice=0.7, pspin<0.01) and correlation with the M15 eigenmap, but not with M12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 present cortical thickness findings from a large multicenter dataset (ABIDE) with appropriate statistical methods (cluster-wise correction, spin tests). The spatial overlap between cortical thickening and M15 expression (C133) is quantitatively significant. The differential relationship between M15 and M12 (C135) strengthens the specificity of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136"
+    ],
+    "result": "An occipital hotspot of altered gene expression and cortical thickening in ASD overlaps with an occipital hotspot of high expression for a subset of ASD risk genes (M15 module).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 synthesizes findings from C128-C135 into an integrated interpretation. While this is a summary statement with some interpretive elements, it is well-supported by the convergent evidence from multiple independent analyses (gene expression changes, cortical thickness changes, and baseline M15 expression patterns).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "DEMs represent cortical gene expression without imposing a priori boundaries, enabling anatomically unbiased analyses of local expression levels and gradients, which allows agnostic definition of cortical zones with extreme transcriptional profiles or rapid transcriptional change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 describe key methodological properties of DEMs that are demonstrated throughout the manuscript. The unparcellated nature is inherent to the interpolation approach, and the ability to define zones agnostically is demonstrated by the TD analysis (Figure 2) and boundary detection (Figure 1e-f).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "Some cortical zones defined by DEMs are evident at the time of cortical folding, lending support to a 'protomap' model where cortical fold placement is influenced by rapid tangential changes in cyto-laminar composition of the developing cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C140 present an interpretation of the developmental findings (C65) in the context of competing models of cortical development. While C139 is supported by the fetal expression data, C140 represents a theoretical interpretation that requires caution. The authors acknowledge (C141-C142) that directionality cannot be conclusively determined from the available data, and mechanical effects of folding could also explain the observed alignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "DEMs can recover sharp boundaries in gene expression despite being generated by interpolation algorithms that do not explicitly encode step changes, and were applied to discover two new expression boundaries in the human cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 are well-supported by the validation analyses in Figure 1e-f showing recovery of known V1/V2 boundaries and discovery of novel boundaries between parahippocampal and fusiform gyri, all validated by independent ISH data. This demonstrates an important property of the interpolation method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "Spatial correlations between DEMs were used to decompose cortical gene expression into cortex-wide transcriptional programs (WGCNA modules) that capture distinct aspects of cortical biology at multiple spatial scales and developmental epochs, providing an integrative model linking prenatal cell types and layers to adult regional expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 summarize the WGCNA analysis and its integrative nature. These claims are well-supported by the extensive enrichment analyses (C69-C100) demonstrating multiscale and temporal integration. The integrative model (C146) is a reasonable characterization of the findings, though it represents a conceptual framework rather than a mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Some cortex-wide expression programs are enriched for disease risk genes, with the M15 module integrating ASD risk gene concentration in upper-layer excitatory neurons, altered gene expression and thickness in occipital regions, and early emergence of structural/functional changes in occipital visual systems in at-risk children.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 synthesize the disease gene findings into an integrative framework. C147 is well-supported by the enrichment analyses (C112-C115). C148-C150 integrate multiple lines of evidence about M15, though they involve some interpretive synthesis. The integration is supported by convergent evidence from multiple independent datasets, though the causal relationships remain to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Understanding human cortical organization is challenged by incompatible measurement methods at different spatial scales, with macroscale neuroimaging providing dense estimates while microscale gene expression is measured with sparse postmortem sampling that has only been linked to macroscale features using imposed parcellations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C13-C17 describe the scientific context and motivation for the study. These are general statements about the field supported by appropriate citations and represent accurate characterizations of the methodological challenges in integrating multi-scale brain data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors built upon AHBA data to generate, validate, and analyze spatially dense gene expression maps that enable spatially unbiased discovery of cortical zones with extreme or rapidly changing transcriptional profiles, which index distinct microstructure and predict neuroimaging measures of folding and functional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 provide a high-level summary of the study's approach and main findings. These claims are supported by the detailed methodological and validation analyses presented throughout the manuscript. They serve as accurate summary statements of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Modules of spatially coexpressed genes define canonical expression maps integrating diverse spatial scales (protein-protein interactions to cognitive systems) and temporal epochs, and parse neuropsychiatric risk genes into subsets tagging distinct cyto-laminar features that differentially predict altered cortical anatomy and gene expression in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 provide a high-level summary of the WGCNA and disease gene findings. These are accurate characterizations of the results presented in Figures 3-4, though they represent summary statements rather than specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "The authors used AHBA data to generate spatially dense cortical expression maps for 20,781 genes with accompanying reproducibility scores to facilitate wider usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 describe the primary data source and output of the study. These are straightforward factual statements about the methods and deliverables that are well-documented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "DEMs can recover canonical gene expression boundaries from ISH data, predict previously unknown expression boundaries, and align with regional differences in cortical organization from several independent data modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide a summary of the validation findings detailed in C42-C50. These are accurate high-level characterizations of the validation results presented in Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "There is close spatial coordination between molecular and functional specializations of the cortex, with the spatial orientation of cortical folding and function at macroscale aligned with local tangential transitions in cortical gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 provide a summary of the gradient alignment findings detailed in C61-C64. These are accurate high-level characterizations of the results presented in Figure 2f-g.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Gene co-expression modules systematically link macroscale measures of cortical structure and function in vivo to postmortem markers of cortical lamination, cellular composition, and development from early fetal to late adult life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 provides a summary of the WGCNA findings detailed in C69-C100. This is an accurate high-level characterization of the multiscale integration achieved by the WGCNA analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The authors used their framework to secure a newly integrated multiscale understanding of atypical brain development in autism spectrum disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides a summary of the ASD application detailed in C112-C136. This is an accurate high-level characterization of the disease gene analysis, though 'newly integrated multiscale understanding' involves some interpretive framing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors share all gene-level DEMs, derived transcriptional landscapes, and gene sets defining spatial subcomponents of cortical transcription in neuroimaging-compatible formats, with the resource designed to easily incorporate future expansions of brain data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C152-C153 describe the data sharing component of the study. These are factual statements about the resources being made available, with C153 representing a reasonable characterization of the resource's extensibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C151",
+      "C154"
+    ],
+    "result": "The strategy applied to ASD risk genes can be generalized to risk genes for any brain disorder of interest, and MAGICC enables a new integrative capacity for studying the brain by connecting previously distant datasets, ideas, and researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151 and C154 represent forward-looking statements about the potential applications and impact of the work. While these involve some speculation, they are reasonable characterizations of the framework's generalizability and potential utility based on the demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Some of the measured genetic-folding alignment might be induced by mechanical distortion of tissue during folding, and no data currently exist to conclusively assess the directionality of the gene-folding relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 represent important caveats about the interpretation of the gene-folding alignment findings. These are appropriate acknowledgments of limitations and alternative explanations, demonstrating scientific rigor in interpretation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,561 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C124",
+      "C125"
+    ],
+    "result": "The study analyzed 3496 RNA-seq samples from 53 metazoan species (15 vertebrates and 38 insects) with sufficient sequencing depth (median coverage >200 reads/bp on BUSCO genes) to quantify alternative splicing rates. The dataset included 88.6-99.6% of annotated introns in BUSCO genes across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40-C44, C124-C125 collectively describe the dataset and quality control measures. The sequencing depth threshold (>200 reads/bp) was empirically justified through pilot analyses showing AS rate convergence at this depth. The dataset size and composition are clearly documented and appropriate for comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Three proxies for effective population size (Ne) were used: longevity, body length, and dN/dS ratio. These proxies showed positive correlations with each other (p<0.001), though the correlations were not very strong, suggesting none provides a perfect estimate of Ne.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C48-C50 describe the Ne proxy validation. The use of multiple proxies with modest correlations is acknowledged as a limitation. The statistical significance of correlations (p<0.001) supports their utility despite imperfect correlation, and the authors appropriately note this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RAS and RANS metrics showed clearly bimodal distributions across all species, with one peak (<5%) corresponding to minor-isoform introns and another (>95%) corresponding to major-isoform introns. This pattern of one dominant transcript per gene, previously shown in humans, is generalized across metazoans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 describe a fundamental observation about transcript isoform distributions. The bimodal pattern is clearly shown in Figure 2B-C across all 53 species. The generalization from humans to all metazoans is well-supported by the data and extends prior findings (C54) to a broader taxonomic range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C68",
+      "C69"
+    ],
+    "result": "Genome-wide AS rates showed a negative correlation with Ne proxies (positive correlation with longevity, body length, and dN/dS), meaning AS rates increase as Ne decreases. These correlations remained significant when analyzing insects and vertebrates separately and were computed using PGLS to account for phylogenetic inertia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C68-C69 present the central finding supporting the drift barrier hypothesis. The correlations are shown in Figure 3A and supplements with appropriate phylogenetic corrections (PGLS). The robustness across taxonomic groups and multiple Ne proxies strengthens the conclusion. Statistical significance is clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "In an ANOVA of AS rates across seven vertebrate organs, the species factor explained 89% of variance while the organ factor explained only 9%, indicating that inter-species variation in AS rates dominates over tissue-specific variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 address a potential confound from heterogeneous tissue sources. The ANOVA clearly demonstrates that species differences dominate tissue differences, supporting the validity of cross-species comparisons despite mixed tissue sources. The analysis is appropriate and the variance partitioning is clearly quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The proportion of frame-preserving splice variants correlates positively with isoform abundance (MIRA) above 5%, reaching 60-70% for the most abundant isoforms, while remaining near random expectation (33%) for MIRA <1%. This indicates abundant SVs (MIRA >5%) are enriched in functional isoforms, while rare SVs (MIRA \u22645%, representing 62-97% of all SVs) are depleted in functional events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 establish a key criterion for distinguishing functional from erroneous splicing. The enrichment of frame-preserving variants among abundant isoforms (Figure 4A) provides strong evidence for functionality. The 5% MIRA threshold is empirically justified by the transition point in the data. The logic connecting frame preservation to functionality is sound, though acknowledged as a lower bound estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The positive correlation between AS rate and longevity is driven by low-AS introns (without abundant SVs), while high-AS introns (enriched in functional SVs) show the opposite trend. High-AS introns also display lower proportions of frame-preserving SVs in vertebrates than in dipterans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 demonstrate differential patterns between functional and non-functional splicing. The opposite trends for low-AS vs high-AS introns (Figures 4C-D) support the drift barrier model over the adaptive hypothesis. The lower frame preservation in vertebrates contradicts expectations from the adaptive model. The stratified analysis is appropriate and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "In Drosophila melanogaster, SNP density at minor splice signals of abundant SVs is 37-74% lower than controls and 38-71% lower than rare SVs, indicating strong purifying selection on abundant SVs and confirming their enrichment in functional variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 provide independent validation of functional enrichment among abundant SVs through population genetics. The substantial SNP depletion at abundant SV splice sites (Figure 5A-B) demonstrates selective constraint. The comparison to both controls and rare SVs strengthens the inference. Sample sizes are adequate (shown in figures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In Homo sapiens, minor splice sites show little evidence of selective constraints regardless of SV abundance, with only minor acceptor sites in introns showing weak but significant SNP deficit (p<1\u00d710\u207b\u2075). This weaker selection signature compared to Drosophila indicates lower prevalence of functional variants in humans, contradicting the adaptive hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 present a critical contrast with Drosophila that supports the drift barrier over adaptive models. The weak/absent selection signal in humans (Figure 5C-D) despite higher AS rates contradicts predictions of the adaptive hypothesis. The statistical testing is appropriate, though the weak signal for one category (C92) suggests some functional SVs exist. The interpretation (C94) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "A negative correlation between AS rates and gene expression levels was observed in 52/53 species (significant in 48/53, p<0.05), consistent with the hypothesis that splicing error rates are shaped by selection-mutation-drift balance, as selective pressure against errors should be stronger for highly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 provide gene-level support for the drift barrier model. The near-universal negative correlation (Figure 6A, C-D) across species is striking and consistent with theoretical predictions (C97). The analysis appropriately focuses on low-AS introns to avoid confounding by functional AS. Statistical significance is clearly reported for most species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "When analyzing all introns (including those with abundant SVs), most species (31/53) still showed negative AS-expression correlations, but some species like Drosophila melanogaster showed positive correlations, likely reflecting significant contributions of functional AS events to genome-wide AS rates in those species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 demonstrate that functional AS can reverse the error-driven pattern in some species. The mixed results when including abundant SVs (Figure 6B) are consistent with the model where functional AS contributes variably across species. The interpretation (C104) is reasonable though somewhat speculative. The contrast with the uniform pattern for low-AS introns strengthens the overall argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C13",
+      "C114"
+    ],
+    "result": "All observations fit qualitatively well with the drift barrier model, according to which most variation in AS rates across species reflects differences in splicing error rates, with random genetic drift setting an upper limit on selection's capacity to prevent splicing errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C13, C114 present the main conclusion integrating multiple lines of evidence: (1) AS rates correlate with Ne proxies, (2) rare SVs dominate and lack functional signatures, (3) abundant SVs show opposite trends, (4) selection on splice sites is weaker in low-Ne species, (5) AS rates correlate negatively with expression. These observations collectively support the drift barrier model over adaptive alternatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "AS rates are lower in BUSCO genes than other genes even after accounting for expression level, but results remained qualitatively unchanged when analyses were repeated on all protein-coding genes, with correlations between AS rates and Ne proxies remaining significant though slightly weaker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 address generalizability beyond the BUSCO gene set. The robustness check (Figure 4\u2014figure supplement 1) demonstrates that the main findings are not artifacts of focusing on conserved genes. The slightly weaker correlations are expected given increased noise, but continued significance supports broad applicability of conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "Ne proxies correlate more strongly with per-gene AS rate estimates than with per-intron AS rates, as predicted by the drift-barrier model since selection acts on per-gene error rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 provides additional support for the drift barrier model through a prediction about the appropriate unit of selection. The stronger correlation with per-gene rates (Figure 3\u2014figure supplement 4) is consistent with selection acting on total gene-level error burden. The indirect estimation method for per-gene rates is a limitation but the pattern supports the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "The detection of significant correlations between AS rate and Ne proxies despite uncontrolled sources of variability (heterogeneous tissues, noisy Ne proxies, short-read limitations) suggests the effect of Ne on AS rates is underestimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 makes a reasonable inference about effect size given measurement limitations. The robustness of findings despite acknowledged sources of noise (C49-C50, tissue heterogeneity, short reads) suggests true effects are stronger than observed. This is a logical inference though the magnitude of underestimation cannot be quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "According to the model, abundant SVs correspond to a mixture of functional and spurious events whose relative proportion depends on Ne. In low-Ne species, even abundant SVs include substantial errors, explaining why no selection signature is detected on alternative splice signals in humans even for abundant SVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 provide a mechanistic explanation for the human-Drosophila contrast in selection signatures. The model prediction (Figure 7C) that low-Ne species have more errors even among abundant SVs is consistent with the polymorphism data (Figure 5). This reconciles the frame-preservation enrichment (which shows some functionality) with weak selection signals (which shows substantial noise).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38"
+    ],
+    "result": "Prior work found that organism complexity (number of cell types) correlates positively with genome-wide AS rate, which was interpreted as evidence that AS contributed to evolution of complex organisms by increasing functional repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C37-C38 accurately describe prior findings and interpretations from Chen et al. 2014. These are background claims about previous work that the current study challenges. The citations are appropriate and the characterization of the adaptive hypothesis is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C39"
+    ],
+    "result": "Complex organisms tend to have small effective population sizes (Ne), and according to drift barrier theory, the elevated AS rate in complex organisms might result from higher splicing error rates due to reduced efficacy of selection in small populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C39 present the alternative drift barrier hypothesis being tested. The relationship between complexity and Ne is well-established (Lynch and Conery 2003, Figuet et al. 2016). The theoretical prediction follows logically from population genetics principles. This provides the conceptual framework for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Random drift sets an upper limit on selection's capacity to prevent fixation of sub-optimal alleles (drift barrier), which is expected to affect all cellular processes including splicing, such that species with low Ne should be more prone to splicing errors than high-Ne species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present established population genetics theory (Kimura et al. 1963, Ohta 1973, Lynch 2007) and its application to splicing. The theoretical foundation is sound and well-cited. The prediction (C26) follows logically from the theory and provides the testable hypothesis for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Vertebrate BUSCO genes contain on average 8.4 major-isoform introns, while insects range from 2.8 (Diptera) to 6.1 (Blattodea). Most major-isoform introns have canonical GT/AG splice sites (99.1%), with slightly higher non-canonical rates in minor-isoform introns (3.1% vs 0.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide descriptive statistics about the dataset. The intron density differences across clades are clearly documented. The slightly elevated non-canonical splice sites in minor isoforms (C60) could reflect either U12 introns or false positives, as the authors note, but the small difference (3.1% vs 0.9%) indicates most detected minor introns are genuine splicing events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Average AS rate for BUSCO genes varies fivefold among species, from 0.8% in Drosophila grimshawi to 3.8% in Megachile rotundata (3.4% in humans).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 report the range of AS rates observed. The fivefold variation provides the phenotypic diversity needed to test correlations with Ne. The values are consistent with prior literature showing elevated AS in primates. These are straightforward descriptive statistics from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The proportion of major-isoform introns with detected AS ranges from 16.8% to 95.7% across species, but this metric directly reflects sequencing depth differences and is not meaningful for cross-species comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 identify a methodological issue and explain why raw detection rates are inappropriate for comparison. The relationship between detection and sequencing depth (Figure 2\u2014figure supplement 2) justifies the need for depth-normalized AS rate metrics. This demonstrates appropriate quality control and methodological awareness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "In all analyzed vertebrate species, testes and brain tissues show higher AS rates than liver and kidney, revealing consistent patterns of tissue-specific AS variation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 describes consistent tissue-specific patterns (Figure 3B) that agree with prior reports (Mazin et al. 2021). The consistency across species validates the biological signal in the data. However, this tissue variation is secondary to the main finding that species differences dominate (C73-C74).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Selective pressure on splicing accuracy is stronger for highly expressed genes because the waste of resources from splicing errors increases with expression level, leading to a predicted negative correlation between expression level and splicing error rate under selection-mutation-drift balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 present established theory (Saudemont et al. 2017, Xiong et al. 2017) and derive a testable prediction. The logic is sound: higher expression amplifies the fitness cost of errors, increasing selection intensity. This provides the theoretical basis for the expression-AS correlation analysis (C98-C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study reasoned that selective pressure should maintain splicing errors at low rates (limited by drift barrier), while functional SVs should represent sizeable transcript fractions in specific conditions, thus functional SVs should be enriched among abundant SVs compared to rare SVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 present the logical framework for distinguishing functional from erroneous splicing based on abundance. The reasoning is sound: selection against errors predicts low rates, while functional variants should be abundant enough to have effects. This provides the conceptual basis for the MIRA threshold analysis (C78-C83).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The abundance of a splice variant is an important predictor of its functionality, with the proportion of frame-preserving events being much higher among abundant SVs than rare SVs in all species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 summarize a key methodological and biological insight. The universal pattern across species (Figure 4A) validates abundance as a functionality predictor. This finding has implications beyond the current study for interpreting transcriptome data. The conclusion is well-supported by multiple lines of evidence (frame preservation, selection signatures).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "AS events that are strongly tissue-specific or developmentally dynamic tend to be more conserved across species, indicating that a substantial fraction are evolutionarily constrained and hence functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 cite established findings (Mudge et al. 2011, Barbosa-Morais et al. 2012, Merkin et al. 2012, Reyes et al. 2013) about functional AS characteristics. This provides context for the current study's focus on abundance as a functionality predictor. The inference from conservation to constraint to function is standard in evolutionary biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Some AS events are functional, playing beneficial roles either by producing distinct protein isoforms or regulating gene expression post-transcriptionally, while other AS events are not functional and result from spliceosome errors that produce aberrant mRNAs representing a waste of resources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 present established background knowledge about AS, appropriately cited. The dichotomy between functional and erroneous AS is well-documented and provides the conceptual framework for the study. These are uncontroversial statements about the field's current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In humans, genes typically produce one major functional transcript plus multiple low-abundance minor isoforms frequently containing PTCs, with <1% of splice variants producing detectable protein. AS patterns evolve rapidly with little selective constraint on alternative splice sites, consistent with most human splice variants being erroneous transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 summarize prior findings about human AS (Tress et al. 2017a, Gonz\u00e1lez-Porta et al. 2013, Abascal et al. 2015, Barbosa-Morais et al. 2012, Merkin et al. 2012, Pickrell et al. 2010). These citations are appropriate and the characterization is accurate. This provides important context for interpreting the current study's findings about error rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PTC-containing splice variants are recognized and degraded by NMD machinery, allowing AS to be coupled with NMD for post-transcriptional gene expression regulation without requiring protein production or strong evolutionary constraints on splice sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe the AS-NMD regulatory mechanism (McGlincy and Smith 2008, Hamid and Makeyev 2014). This is established biology that provides an alternative functional explanation for some low-abundance, PTC-containing isoforms. The inference about relaxed constraints (C35) is logical given the regulatory mechanism doesn't require specific protein products.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Analysis of transcriptomes from various eukaryotic species showed substantial variation in AS rates across lineages, with the highest rates in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 accurately summarizes prior comparative transcriptomics findings (Barbosa-Morais et al. 2012, Chen et al. 2014, Mazin et al. 2021). This provides the empirical context that motivated the current study's investigation of the causes of AS rate variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Genome-wide average AS rates vary according to tissues, developmental stages, and environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 cite established findings (Barbosa-Morais et al. 2012, Mazin et al. 2021, John et al. 2021) about AS plasticity. This acknowledges a source of variation in the dataset and motivates the analysis showing species effects dominate tissue effects (C73-C74). The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The splicing error rate at an intron depends on both spliceosome efficiency and splice signal quality. The information for intron removal resides in 20-40 nucleotide sites within the intron or flanking exons, with essential GT donor and AG acceptor splice sites, while other signals tolerate sequence flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 present established molecular biology of splicing (Lynch 2006). The description of splice signals and their flexibility is accurate and provides the mechanistic basis for understanding how mutations can affect splicing accuracy. This background is essential for the drift barrier hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The drift barrier's limit on genetic system optimization is expected to affect all aspects of gene expression, not just splicing. There is growing evidence that transcript complexity from various mechanisms often reflects error accumulation rather than fine-tuned adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 place the findings in broader context, citing extensive literature (Pickrell et al. 2010, Saudemont et al. 2017, Xu et al. 2019, Xu and Zhang 2018, Liu and Zhang 2018a/b, Xu and Zhang 2014, 2020, Gout et al. 2013, Zhang and Xu 2022). This suggests the drift barrier framework may apply broadly to gene expression complexity. The generalization is supported by multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The relationship between genome-wide error rate and Ne is not expected to be monotonic. Models predict that in very high-Ne species, selection favors genotypes robust to expression errors, reducing constraints on global error rates, such that very large-Ne species may have more error-prone gene expression machinery than very small-Ne species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 present theoretical predictions from models (Rajon and Masel 2011, Xiong et al. 2017) about non-monotonic relationships at extreme Ne values. This is an important caveat about the expected relationship, though the current study's species range may not include extreme high-Ne cases. The theory is appropriately cited and the paradoxical prediction is clearly explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Bacterial transcription error rates were initially found to be ~10\u00d7 higher than eukaryotes, but more recent work indicates these rates were largely overestimated, presumably due to RNA damage during library preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 describe evolving understanding of transcription error rates (Traverse and Ochman 2016, Gout et al. 2013, Li and Lynch 2020). This illustrates uncertainties in measuring gene expression errors and cautions against over-interpreting cross-domain comparisons. The revision of earlier findings is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "It is possible that the drift barrier affects different steps of gene expression differently. The relationship between alternative splicing and Ne illustrates that it is essential to consider non-adaptive evolutionary processes when understanding eukaryotic gene expression complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 present the study's broader implications. C122 acknowledges that different expression steps may respond differently to drift, suggesting future research directions. C123 states the main conceptual contribution: demonstrating the importance of non-adaptive processes for understanding gene expression complexity. These are reasonable conclusions from the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "The BUSCO dataset corresponds to genes that are strongly conserved across species and often highly expressed, and hence might not be representative of the entire genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 acknowledges a limitation of focusing on BUSCO genes. This is an accurate characterization of the BUSCO gene set by design (conserved, single-copy orthologs). The authors appropriately note this limitation and address it through analyses on all protein-coding genes (C128).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Most eukaryotic genes undergo alternative splicing, but the overall functional significance of this process remains controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 present the study's motivating question. The prevalence of AS is well-established (Chen et al. 2014), while the controversy about functional significance is accurately characterized and provides the rationale for the study. These are appropriate framing statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The negative correlation between AS rate and gene expression level is not expected for functional SVs, as there is no a priori reason why functional AS rate should be higher in weakly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 makes a logical argument about expectations for functional AS. The reasoning is sound: if AS were primarily functional, there's no obvious reason for inverse correlation with expression. This helps interpret the observed negative correlation as evidence for error-driven AS rather than functional AS.",
+    "result_type": "MINOR"
+  }
+]

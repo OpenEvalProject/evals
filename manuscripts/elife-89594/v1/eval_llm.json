@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C89",
+      "C90"
+    ],
+    "result": "Six diverse cell types (motor neurons, cardiomyocytes, hepatocyte progenitors, pancreatic progenitors, skeletal myocytes, and retinal pigment epithelium) were successfully differentiated from human-chimpanzee hybrid iPSCs, representing diverse body systems. Successful differentiation was confirmed by expression of canonical marker genes and absence of pluripotency markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, C89, and C90 collectively demonstrate successful differentiation of six cell types from hybrid iPSCs. The expression of canonical markers (C6) and adequate sequencing depth (C90) provide strong evidence for successful differentiation. The experimental design with two hybrid lines and multiple replicates (C89) supports reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "RNA-seq samples clustered predominantly by cell type in hierarchical clustering, with human and chimpanzee alleles clearly separated by PC1 or PC2 within each cell type when using allelic counts. Within four cell type clusters, samples clustered by line rather than species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C5 are supported by the clustering analyses shown in Figures 1b-d. The observation that samples cluster by line within cell types (C4) highlights the importance of measuring ASE to control for line-to-line variability, which strengthens the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53"
+    ],
+    "result": "Thousands of genes with allele-specific expression (ASE) were identified in each cell type at FDR < 0.05, with most cis-regulatory divergence being cell-type-specific. Many more genes showed significant ASE in only a single cell type compared to genes with ASE in all cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C53 are well-supported by the data shown in Figure 2b and the UpSet plot. The identification of thousands of ASE genes with predominantly cell-type-specific patterns provides strong evidence for the main finding of cell-type-specific cis-regulatory divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C54",
+      "C68"
+    ],
+    "result": "Cell-type-specific genes are enriched for ASE, and this enrichment is robust to different definitions of cell-type-specificity, FDR cutoffs, expression levels, and data splitting strategies. The enrichment persists when controlling for evolutionary constraint, suggesting that cell-type-specific genes and regulatory elements evolve faster than those shared across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14, C54, and C68 demonstrate a robust enrichment of ASE in cell-type-specific genes through multiple complementary analyses. The extensive robustness checks (different cutoffs, data splitting, constraint stratification) shown in supplementary figures strongly support this major finding. The conclusion that differences in constraint alone cannot explain the enrichment (C14) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C56",
+      "C69",
+      "C99"
+    ],
+    "result": "Evidence for lineage-specific selection was detected in multiple cell types, with the most significant enrichments in motor neurons and cardiomyocytes. In motor neurons, genes involved in sodium ion transport and syntaxin binding showed coordinated chimpanzee-biased expression. In cardiomyocytes, the PPAR signaling pathway showed evidence of selection, including human-specific upregulation of NR1H3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23, C56, C69, and C99 collectively provide evidence for lineage-specific selection using a modified binomial test approach. The identification of functionally relevant pathways (sodium channels, syntaxin binding, PPAR signaling) in appropriate cell types strengthens the biological plausibility. The use of hybrid cells to control for environmental factors (C98) is a key strength. However, the functional consequences remain speculative without electrophysiology data (C118).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C100"
+    ],
+    "result": "ATAC-seq data was generated from five cell types with an average depth of 184 million paired-end reads. After extensive filtering, 73,360-76,360 peaks were retained. Cell types clustered well by PCA, and species differences were clearly separated within each cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C100 describe the ATAC-seq data generation and quality control. The discrepancy in the number of retained peaks (73,360 vs 76,360) between C25 and C100 is minor and likely reflects different stages of filtering. The clustering results support successful data generation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "TSS and promoter regions showed the least divergence in chromatin accessibility and strongest correlation between ASCA and ASE. Intriguingly, regions annotated as heterochromatin showed high divergence and correlations with ASE comparable to enhancers, particularly for distal heterochromatin CREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present an unexpected finding about heterochromatin regions. The observation is well-supported by Figure 3d-e and supplementary figures. The distinction between proximal and distal heterochromatin CREs (C32-C33) adds important nuance. The clarification about chromHMM annotations (C102) is important for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Cell-type-specific ATAC peaks are enriched for ASCA across all cell types. This enrichment is robust to different definitions of cell-type-specificity, various cutoffs, down-sampling to equalize sequencing depth, controlling for constraint on non-coding elements, and stratifying by number of SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate enrichment of ASCA in cell-type-specific peaks through extensive robustness checks shown in multiple supplementary figures. The down-sampling analysis (C105) appropriately addresses the confounding effect of sequencing depth. The weak relationship between SNP number and ASCA (C106-C107) and the robustness when stratifying by SNPs (C37) address potential technical confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C57",
+      "C58",
+      "C108"
+    ],
+    "result": "Novel metrics (dEE and dCAE) were developed to quantify cell-type-specific differential expression and accessibility. Using these metrics, 154 peak-gene pairs with cell-type-specific ASE and ASCA were identified, with 95 showing concordant direction (more than expected by chance, p<0.005). This suggests tissue-specific cis-regulatory divergence in chromatin accessibility may often impact tissue-specific gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C57-C58, and C108 describe the development and application of novel metrics. The statistical test showing more concordant pairs than expected by chance (C39) supports a functional relationship. However, the interpretation that this divergence is 'neither necessary nor sufficient' (C108) appropriately acknowledges the complexity of gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C59",
+      "C60",
+      "C109",
+      "C110",
+      "C121"
+    ],
+    "result": "The FABP7 promoter shows human-biased ASCA and ASE specifically in motor neurons. Using the Sei deep learning model, two small indels were identified as likely causal variants, with a 1-base insertion introducing a GLIS2/3 binding site. FABP7 shows human-derived upregulation in several neuronal subtypes in published data. FABP7 plays a role in DHA uptake, which may contribute to neuronal survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44, C59-C60, C109-C110, and C121 present a detailed case study of FABP7. The integration of ATAC-seq, RNA-seq, Sei predictions, and published data provides converging evidence. The identification of specific indels (C43-C44) and the GLIS2/3 binding site provides a plausible molecular mechanism. However, the functional consequences remain speculative (C121) and would require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C61",
+      "C62",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C122",
+      "C123"
+    ],
+    "result": "A putative enhancer near GAD1 containing a human accelerated region (HAR) shows chimpanzee-biased ASCA and ASE specifically in motor neurons. Sei analysis identified a single SNV (chr2:170,823,193) as the likely causal variant, predicted to disrupt binding sites for basic helix-loop-helix transcription factors. Analysis of hybrid and parental cortical organoids shows a developmental spike in chimpanzee GAD1 expression around day 50, consistent across GABAergic neuron subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52, C61-C62, C111-C115, C122-C123 present a comprehensive case study of GAD1. The integration of ATAC-seq, RNA-seq, Sei predictions, hybrid organoid data, and published single-cell data provides strong converging evidence. The identification of a specific SNV in a HAR (C48-C49) and the developmental dynamics (C50-C52, C113-C115) are particularly compelling. The acknowledgment of uncertainty about functional consequences (C122) and need for further validation (C123) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Two PP hybrid2 samples showed slight chimpanzee bias likely due to contamination. A correction was applied that was validated by simulation to be conservative and not substantially affect log fold-change estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe a quality control issue and correction. The simulation-based validation (C93, Figure 1\u2014figure supplement 4) demonstrates that the correction was appropriate and conservative. This transparency about data quality issues and the validation of the correction method strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "SKM showed fewer ASE genes than other cell types. All analyses were repeated with and without SKM, yielding qualitatively similar results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 acknowledge a limitation with the SKM data and describe the robustness check performed. The fact that results were qualitatively similar regardless of SKM inclusion supports the robustness of the main findings. This is an appropriate handling of a potential data quality issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C96",
+      "C97"
+    ],
+    "result": "The neurotrophin family shows complex cell-type-specific ASE patterns. For example, NTRK3 is chimpanzee-biased in RPE but human-biased in MN, while NTRK1 is chimpanzee-biased in MN but human-biased in CM and SKM. This indicates complex cis-regulatory changes in the regulatory landscape of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C96, and C97 describe cell-type-specific ASE patterns in the neurotrophin family. The data shown in Figure 2\u2014figure supplement 1 supports these observations. This example effectively illustrates the complexity of cell-type-specific cis-regulatory divergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C116",
+      "C117"
+    ],
+    "result": "Changes in expression of cell-type-specific genes may be less deleterious than changes in broadly expressed genes, supporting the idea that cell-type-specific divergence may be less pleiotropic. However, it remains unclear whether positive selection or lower constraint plays a larger role in driving faster evolution of cell-type-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C116, and C117 present an interpretation of the enrichment results. The conclusion is appropriately cautious, acknowledging that the relative contributions of selection versus constraint remain unclear (C117). The interpretation is consistent with the data showing enrichment persists when controlling for constraint (C14), but additional work would be needed to definitively distinguish these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The manuscript provides extensive background on human evolution, gene expression divergence, limitations of prior approaches, and advantages of the hybrid cell system and ATAC-seq for studying cis-regulatory divergence. The approach addresses many confounders inherent to interspecies comparisons and enables identification of specific regulatory elements underlying expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C88 provide background and context from the introduction. These claims accurately represent the state of the field and the rationale for the study. The advantages of the hybrid cell approach (C79-C83) and ATAC-seq (C86-C88) are well-established in the literature and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C98",
+      "C118",
+      "C119",
+      "C120",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The manuscript describes methodological approaches, acknowledges limitations, and proposes future directions. The computational pipeline was adapted from prior work. Hybrid cells are essential for determining genetic components of expression differences. The complexity of neuronal machinery makes functional predictions difficult without additional experiments. Future work could include additional assays, single-cell profiling, and integration with massively parallel reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C98, C118-C120, and C124-C126 describe methods, limitations, and future directions. These are appropriately acknowledged. The recognition that functional consequences require additional validation (C118, C123) demonstrates appropriate scientific caution. The proposed future directions (C124-C126) are reasonable extensions of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "CREs that are heterochromatic in some cell types may be more prone to large changes in accessibility during evolution, with significant impacts on cis-regulation of nearby genes. Large changes in accessibility of distal heterochromatin CREs may be particularly important in cis-regulatory evolution of ubiquitously expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 present interpretations of the heterochromatin findings. These interpretations are consistent with the data shown in Figures 3d-e and supplementary figures. The distinction between proximal and distal heterochromatin CREs and their differential relationships with cell-type-specific versus ubiquitous genes adds important nuance to the interpretation.",
+    "result_type": "MAJOR"
+  }
+]

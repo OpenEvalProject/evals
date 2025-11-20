@@ -1,0 +1,482 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "AlphaFold 2.0 modeling predicts that FRQ is predominantly unstructured but contains a small, ordered core with several secondary structural elements (primarily helices) that collapse to form a compact nucleus surrounded by flexible disordered regions. The core contains the CK1-binding region and has high pLDDT confidence scores, while the FRH-binding region (FFD) is more flexible with lower confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational predictions from AlphaFold 2.0 are corroborated by independent Agadir helical propensity predictions (C50-C51) and are consistent with subsequent experimental SAXS and ESR data (C68-C72, C77-C86, C158-C161). The predictions provide a structural framework that is validated by multiple orthogonal experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A novel purification protocol using denaturing conditions with guanidinium-HCl enabled production of full-length FRQ (989 residues) in amounts suitable for biophysical characterization. Co-expression with CK1 produced phosphorylated FRQ (p-FRQ) with >80 phosphorylation sites that match those found in natively expressed FRQ, while expression without CK1 yielded non-phosphorylated FRQ (np-FRQ).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The purification methodology is well-documented (C56-C58) and validated by SDS-PAGE, SEC-MALS, and mass spectrometry (C61-C63). The phosphorylation sites identified by mass spectrometry agree with published data on native FRQ (C62-C63), confirming the biological relevance of the recombinant protein. This represents a significant technical advance for studying large IDPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SEC-MALS and SAXS analyses reveal that p-FRQ is primarily monomeric (~143 kDa) and more extended/flexible than np-FRQ, which forms dimers (~261 kDa). Both forms adopt partially compact but highly flexible conformational states, with Kratky plots indicating disorder intermediate between molten globules and fully denatured proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The oligomeric state assignments are directly supported by SEC-MALS molecular weight measurements (C65-C66), and the conformational properties are characterized by SAXS Kratky analysis (C69-C71). The conclusion that phosphorylation increases flexibility and destabilizes dimerization (C67, C72) is well-supported by converging biophysical data and consistent with proteolysis susceptibility studies cited from the literature (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Site-directed spin labeling and cw-ESR spectroscopy reveal that FRQ contains regions of varying structural order that agree with computational predictions. Phosphorylation causes non-uniform, site-specific conformational changes: the C-terminus becomes more dynamic in p-FRQ, while the CK1-binding region (490SL in FCD2) becomes more ordered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cw-ESR data (C77-C83) provide direct experimental evidence for regional structural heterogeneity in FRQ. The site-specific effects of phosphorylation are quantified by \u03b4 values (C82-C83) and are consistent with the locations of phosphorylation sites and functional domains (C84-C85). The interpretation that changes in the FCD region may reflect altered FRQ:CK1 interactions is reasonable given the experimental data and cited literature (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "DEER spectroscopy of p-FRQ reveals that the 490SL:658SL spin pair (both within the predicted core) shows fast-decaying signals indicative of short distances and conformational rigidity, while spin pairs with at least one label outside the core show slow-decaying traces consistent with long distances and flexibility. Single-cysteine variants show little dimerization signal, confirming p-FRQ is monomeric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DEER data (C89-C94) provide distance constraints that validate the AlphaFold prediction of an ordered core (C95). The low modulation depths (C88) are acknowledged as a limitation but do not invalidate the conclusions. The observation that only the 490SL:658SL pair shows short-range coupling (C94) while peripheral pairs show long-range flexibility (C92-C93) is internally consistent and supports the core-periphery structural model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Reconstitution of the FFC complex by mixing FRQ with FRH and CK1 followed by SEC purification yields pure, homogeneous ternary complexes. SEC-SAXS analysis indicates 1:1:1 stoichiometry (FRQ:FRH:CK1) with both phospho-forms producing complexes more globular than FRQ alone, though p-FFC is more flexible than np-FFC. CK1 phosphorylates FRQ in the complex without requiring priming by other kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FFC reconstitution is validated by SEC traces, SDS-PAGE, and SAXS molecular weight estimates (C98, C102). The stoichiometry determination (C102) is consistent with the expected complex composition. The phosphorylation activity of CK1 in the complex (C99) is demonstrated experimentally and agrees with cited literature (C100). The SAXS-derived structural properties (C101) provide quantitative support for complex formation and phosphorylation-dependent conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "DEER measurements using ADP-\u03b2SL probes and spin-labeled FRQ domains demonstrate that FRH and CK1 ATP-binding pockets are closely positioned within the FFC, and FRQ organizes these enzymes in close proximity. Binding of FRH and CK1 causes substantial, non-uniform changes in FRQ structure, generally decreasing inter-spin distances and conformational breadth, with the most prominent changes in regions involved in clock protein interactions (370-658, 490-658, 490-746).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DEER distance distributions (C103-C105) provide direct evidence for the spatial organization of FRH and CK1 by FRQ. The control experiment showing FRH and CK1 do not interact without FRQ (C107) strengthens the conclusion that FRQ is the organizing scaffold. The detailed analysis of distance changes upon complex formation (C108-C112) is quantitative and internally consistent. The interpretation that FRH may organize WCC-binding determinants (C113-C114) is reasonable given the data, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Computational analysis using PScore and catGRANULE algorithms predicts that FRQ has high propensity for LLPS (PScore 6.39), with three regions scoring above the threshold of 2. The functional analogs dPER and hPER1 are also predicted to phase separate. Despite low positional sequence conservation, FRQ and its analogs share physicochemical characteristics including enrichment of hydrophilic residues (Ser, Pro, Gly ~30%), depletion of hydrophobic and aromatic residues, high Arg and Asp content with charge clustering (high kappa values), and low overall hydropathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational predictions (C117-C120) are based on established algorithms and are validated by subsequent experimental demonstration of LLPS (C128-C136). The sequence analysis (C121-C125) is thorough and identifies specific physicochemical features that correlate with LLPS propensity. The conclusion that LLPS propensity may be a conserved feature of circadian clock repressors (C127) is supported by the computational predictions across species, though it remains somewhat speculative pending experimental validation in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Both np-FRQ and p-FRQ undergo LLPS in vitro, forming microscopic droplets that scale with protein concentration, dissolve with 1,6-hexanediol, and exhibit fusion behavior characteristic of liquid-like properties. FRQ undergoes LCST phase transitions that are concentration and phosphorylation-dependent. p-FRQ phase separates at lower temperatures and salt concentrations than np-FRQ, with complex phase behavior indicating phosphorylation enhances LLPS by increasing negative charges, altering charge patterns, and providing multivalent interaction sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LLPS behavior is demonstrated by multiple complementary approaches: turbidity assays (C131-C132), microscopy (C129-C130), and temperature-concentration phase diagrams (C131-C132). The liquid-like properties are validated by standard criteria including hexanediol sensitivity and droplet fusion (C130). The differential behavior of p-FRQ versus np-FRQ (C133-C136) is well-documented and mechanistically interpreted in the context of phosphorylation-induced changes in charge distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Live-cell imaging of N. crassa expressing FRQ-mNeonGreen at physiologically normal levels reveals heterogeneous patterning with bright, dynamic foci characteristic of condensates both inside nuclei and near the nuclear periphery (marked by SON-1-mApple). These foci are similar to those observed for clock proteins in Drosophila but substantially more dynamic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The live-cell imaging data (C137, C139) provide direct evidence for FRQ condensates in vivo. The control showing that the tagged strain is robustly rhythmic with near-normal period (C138) validates that the fusion protein is functional. The comparison to Drosophila clock protein foci (C140-C141) provides context, though the differences in dynamics warrant further investigation. The small size and rapid movement of fungal nuclei (C189) are acknowledged as technical challenges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "FRH and CK1 have low LLPS propensity scores consistent with their predominantly folded domain structures, but fluorescently labeled FRH and CK1 are recruited into phase-separated FRQ droplets while a control protein (E. coli CheY) is not, demonstrating that FRQ can sequester its partner proteins into condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational predictions for FRH and CK1 (C142) are consistent with their known structures (C143). The recruitment experiments (C145) provide direct evidence that FRH and CK1 partition into FRQ condensates through specific interactions rather than non-specific incorporation. The negative control with CheY strengthens this conclusion. The inference that this provides a mechanism to control protein availability and activity (C146) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "FRQ phosphorylation by CK1 is reduced twofold under LLPS conditions compared to non-LLPS conditions, despite CK1 autophosphorylation increasing with temperature as expected. This reduction correlates with striking rigidification of spin-labeled FRQ upon LLPS, suggesting that LLPS impacts enzymatic activity by modulating molecular dynamics essential for phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphorylation assays (C147, C149-C150) provide quantitative evidence for LLPS-dependent reduction in CK1 activity toward FRQ. The CK1 autophosphorylation control (C148) demonstrates that the enzyme remains active, ruling out simple temperature-dependent inactivation. The cw-ESR data showing rigidification upon LLPS (C151) provides a mechanistic explanation for reduced phosphorylation (C152-C153). The experimental design appropriately uses temperature to modulate LLPS while monitoring phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The negative feedback of LLPS on FRQ phosphorylation at elevated temperatures could provide a mechanism for circadian temperature compensation. As temperature increases, LLPS increases, which reduces CK1 phosphorylation of FRQ. Since the rate of FRQ phosphorylation dictates period length, LLPS-mediated reduction of phosphorylation at higher temperatures could counteract temperature-dependent period shortening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental observations are well-supported (C205, C208), the proposed role in temperature compensation (C210) is speculative (C204, C206). The model is mechanistically plausible and consistent with the data, but direct evidence linking LLPS to temperature compensation in vivo is lacking. Testing this hypothesis would require demonstrating that mutations affecting FRQ LLPS alter temperature compensation of period length in living cells, which has not been done.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Direct biophysical characterization confirms FRQ is a highly dynamic protein with compact features localizing to an ordered core interspersed with dynamic regions. The degree of disorder is intermediate between a molten globule and a completely denatured protein. The CK1 and FRH binding regions are the most ordered and organize the two partners in close proximity, likely enabling FRQ to target CK1 to the WCC for phosphorylation-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion synthesizes SAXS (C158-C159), DEER (C160), and ESR data with functional knowledge from the literature (C163). The characterization as intermediate between molten globule and denatured states (C159-C160) is supported by quantitative analysis of Kratky plots and distance distributions. The structural organization of CK1 and FRH binding regions (C162) is directly demonstrated by DEER measurements. The functional inference about WCC targeting (C163) is well-supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Phosphorylation causes non-uniform conformational changes in FRQ: p-FRQ and p-FFC are more expansive and flexible than np-FRQ and np-FFC, with np-FRQ showing greater self-association. cw-ESR reveals site-specific changes with some regions increasing and others decreasing in flexibility. DEER shows that FRH and CK1 binding increases compactness of the central core while the C-terminus gains flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAXS data (C165) directly demonstrate increased flexibility and expansion upon phosphorylation. The SEC-MALS data (C166) show differential oligomerization. The cw-ESR (C169) and DEER (C170-C171) data provide site-specific resolution of conformational changes. The interpretation that phosphorylation stabilizes against aggregation while maintaining conformational heterogeneity (C168) is consistent with the data and cited literature. This nuanced picture (C164) refines previous models based on proteolysis studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "np-FRQ dimerizes when isolated, whereas p-FRQ is primarily monomeric. SAXS data indicate one copy of FRQ in both reconstituted np-FFC and p-FFC complexes. Phosphorylation may regulate FRQ oligomeric state, which could be linked to FFC assembly, and p-FRQ association in cells may be mediated by other factors including LLPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The oligomeric state assignments are directly supported by SEC-MALS (C173) and SAXS (C174) data. The conclusion that phosphorylation regulates oligomeric state (C175) is well-supported. The speculation that cellular p-FRQ association may involve LLPS (C176) is reasonable given the demonstrated LLPS behavior, though it requires further validation. The reconciliation with previous pull-down data (C172) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "FRQ and clock repressor analogs belong to the 'flexible disorder' class of IDPs where amino acid patterns generating intrinsic disorder are conserved but sequence per se is not. Their conserved features include not only intrinsic disorder but also LLPS propensity, driven by aromatic/non-aromatic \u03c0-\u03c0 contacts and charge-dense regions. The similar amino acid compositions may give rise to shared function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification as 'flexible disorder' IDPs (C178) is supported by cited literature and sequence analysis. The demonstration that LLPS propensity is conserved despite low sequence conservation (C179) is supported by computational predictions (C117-C120) and experimental validation for FRQ. The identification of specific features driving LLPS (C181) is consistent with the literature. The proposal that composition determines function (C182) is somewhat speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Extensive phosphorylation alters LLPS propensity by increasing extended states, solvation, charge density, and hydrogen bonding capacity. For FRQ, p-FRQ displays different phase behavior than np-FRQ: p-FRQ is more soluble, dynamic, less aggregated, and phase separates at lower temperatures and salt concentrations. Increased salt disfavors p-FRQ phase separation, consistent with electrostatically driven de-mixing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic explanation for how phosphorylation affects LLPS (C183) is supported by cited literature. The experimental observations (C184-C185) are directly demonstrated by turbidity assays and microscopy. The interpretation of salt effects (C186) is consistent with electrostatic mechanisms of LLPS. The sequence predictions are validated experimentally (C184), strengthening confidence in the computational approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Live-cell imaging is consistent with FRQ phase separation in N. crassa nuclei, showing concentrated foci at specific nuclear positions similar to other phase-separating proteins. Technical challenges due to small nuclear size and rapid movement limit detailed spatiotemporal analysis. Comparisons to Drosophila PER and recent mammalian studies are discussed, with artifacts from overexpression unlikely given endogenous expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The imaging data (C187-C188) provide evidence consistent with LLPS in vivo, though the technical limitations (C189) are appropriately acknowledged. The comparison to Drosophila (C190) provides context. The discussion of recent controversies (C191) and defense against overexpression artifacts (C192) is appropriate. The observation of both peripheral and internal nuclear FRQ (C193) is noted. While not definitive proof of LLPS in vivo, the data are consistent with this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "Phosphorylation modulates LLPS variably in different systems. FRQ, especially p-FRQ, may achieve inhibitory function by sequestering FFC and WCC into membraneless organelles. In Drosophila, PER and CLK form liquid-like foci during repression that may organize clock-controlled genes. LLPS may also influence FRQ nuclear transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The general statement about phosphorylation effects on LLPS (C194-C196) is supported by cited literature. However, the proposals about FRQ function (C197-C198) and nuclear transport (C201) are speculative, lacking direct experimental evidence. The comparison to Drosophila (C199-C200) is based on cited work but does not directly support the FRQ model. These are reasonable hypotheses that require further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C206",
+      "C207",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "LLPS reduces FRQ dynamics and CK1 phosphorylation activity, potentially by altering the microenvironment within condensates. This may modulate timing of FRQ phosphorylation and sequester CK1/FRH from other substrates. FRQ responds to phosphorylation with non-uniform conformational changes and increased LLPS propensity, properties that may be conserved among eukaryotic clock repressors and critical for their function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental observations linking LLPS to reduced dynamics (C202) and altered CK1 activity are well-supported. The comparison to other phase-separating proteins (C203) and DDX4 (C207) provides context. The proposals about sequestration (C211) and timing (C204) are reasonable inferences. The summary statements (C212-C214) appropriately synthesize the major findings. The suggestion that LLPS propensity is a conserved, critical feature (C214) is supported by the computational and experimental data, though somewhat speculative regarding conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background on circadian clock mechanisms: Circadian clocks function as transcription-translation feedback loops. In Neurospora, the FFC complex (FRQ, FRH, CK1) represses the WCC activator. FRQ is functionally analogous to PER in other organisms. Clock repressors are highly disordered, undergo extensive phosphorylation (>100 sites for FRQ), and phosphorylation influences interactions and period length. IDPs like FRQ can participate in LLPS, which has been implicated in circadian clocks across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature (C1-C2, C13-C42) and provide essential context for the study. They are appropriately cited and accurately represent the current understanding of circadian clock mechanisms, FRQ function, and the potential role of LLPS in clock regulation. This background information is well-established and not controversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Summary of main findings: FRQ orchestrates clock interactions despite little tertiary structure, containing a compact core that organizes FRH and CK1. Phosphorylation increases flexibility and alters oligomeric state non-uniformly. FRQ undergoes LLPS to sequester FRH and CK1 and influence CK1 activity, with phosphorylation favoring LLPS but LLPS reducing phosphorylation at higher temperatures. Live imaging reveals FRQ foci in nuclei. Clock repressor analogs share LLPS propensity, suggesting condensate formation may be conserved in eukaryotic clocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims (C3-C12) accurately summarize the major findings that are supported by the detailed experimental results evaluated above. Each statement is backed by multiple lines of evidence from structural, biophysical, and cell biological approaches. The conclusion about potential conservation (C12) is appropriately qualified as speculative ('may be') while being supported by computational predictions across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C59"
+    ],
+    "result": "Technical significance: The purification scheme enabled multipronged biophysical characterization of FRQ, one of the largest native IDPs (nearly 1000 residues) produced in amounts amenable to structural and biophysical characterization, representing an advance over previous studies that focused on smaller IDP fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical achievement (C154, C59) is validated by the successful application of multiple biophysical techniques (SAXS, ESR, DEER, SEC-MALS) to full-length FRQ. The comparison to previous IDP studies (C155) is accurate based on cited literature. The significance statement (C156) is justified given the size and complexity of FRQ and the comprehensive characterization achieved.",
+    "result_type": "MINOR"
+  }
+]

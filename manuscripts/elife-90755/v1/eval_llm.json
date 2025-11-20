@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors successfully developed a method to site-specifically incorporate the fluorescent unnatural amino acid L-ANAP into ASIC1a using amber suppression. Conservative mutations were introduced to minimize alternate translation initiation, native cysteines in the CTD were mutated to allow single cysteine reintroduction, and full-length channel expression was confirmed by fluorescence imaging and western blotting only when both pANAP and L-ANAP were present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C62 collectively demonstrate successful implementation of the amber suppression method with appropriate controls. Western blots (C59-C62) and fluorescence imaging (C57-C58) provide converging evidence that full-length channels are produced only in the presence of L-ANAP and pANAP. The methodological modifications (C52-C54) address known technical challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "L-ANAP incorporation at multiple TAG positions in ASIC1a does not dramatically alter channel function. All mutants showed robust acid-activated currents with typical rapid activation and desensitization kinetics, and pH0.5 values (6.42-6.67) were similar to the pseudo wild-type construct (6.52), indicating that normal pH-dependent gating remains largely intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are well-supported by electrophysiology data shown in Figure 2B-C. The functional characterization demonstrates that the L-ANAP incorporation and associated mutations do not significantly disrupt channel gating, which is critical for interpreting subsequent structural measurements. Statistical comparisons and quantitative pH0.5 measurements provide robust evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The fluorescence and spectral properties of the FRET probes (L-ANAP, Cu2+-TETAC, Co2+-NTA) are not pH-sensitive between pH 6 and pH 8. The R0 values for ACCuRET (17.6 \u00c5 at pH 8, 17.2 \u00c5 at pH 6) and memFRET (12.4 \u00c5 at pH 8, 12.6 \u00c5 at pH 6) show minimal pH-dependent changes, validating these probes for measuring pH-dependent conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by spectrophotometry data in Figure 3C-D showing no pH-dependent changes in emission or extinction coefficients. This is a critical control demonstrating that measured FRET changes reflect protein conformational changes rather than probe pH sensitivity. The calculated R0 values provide the foundation for distance measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Cell unroofing successfully provides access to the intracellular side of ASIC1a channels while maintaining channel localization. L-ANAP and mCitrine fluorescence colocalized well in unroofed cells, demonstrating that the ventral membrane containing channels remains intact after the unroofing procedure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by fluorescence imaging in Figure 4B showing colocalization of L-ANAP and mCitrine signals in unroofed cells. This validates the unroofing method as appropriate for accessing intracellular domains while preserving channel integrity, which is essential for the tmFRET experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ACCuRET measurements between the N-terminus and C-terminus of ASIC1a show that these domains are separated by ~18-23 \u00c5 at rest (pH 8), which is significantly farther than predicted by prior Rosetta modeling (4.7 \u00c5). Upon acidification to pH 6, the termini move slightly closer together (~2-4 \u00c5), contrary to the hypothesis that they unbind during acidification. Zn2+ controls confirm the measured quenching is due to FRET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 are well-supported by ACCuRET data in Figure 6A-B and Table 2. Multiple NTD positions (E8, G11, Q14) relative to multiple CTD positions (C469, C477) consistently show modest FRET efficiencies corresponding to ~20-23 \u00c5 distances. The Zn2+ negative controls (C84-C86) validate that quenching is metal-dependent. This directly contradicts the prior hypothesis (C4) that the termini are bound at rest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "ACCuRET measurements at more distal CTD positions (C485, C505, C515) show modest FRET at pH 8 consistent with ~19-26 \u00c5 distances from the NTD. Upon acidification, positions C485 and C515 show larger movements (~5-6 \u00c5) toward the NTD compared to more proximal positions, suggesting differential conformational changes along the CTD length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by ACCuRET data in Figure 7A-C and Table 2. The observation that distal CTD positions show larger pH-dependent movements than proximal positions suggests the CTD undergoes complex conformational rearrangements during acidification, not simply a rigid-body movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Microscale thermophoresis (MST) measurements show no binding between NTD and CTD peptides up to 250 \u03bcM, providing additional direct evidence that these domains do not form a stable complex in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by MST data in Figure 7D showing no concentration-dependent change in fluorescence signal. This provides independent confirmation of the ACCuRET results using a direct binding assay. However, the limitation is that isolated peptides may not fully recapitulate the behavior of domains in the context of the full-length channel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "memFRET measurements show that the N-terminus of ASIC1a adopts a conformation parallel to the plasma membrane at ~10 \u00c5 distance at rest (pH 8). During acidification to pH 6, the proximal NTD (Q14 position) moves ~4 \u00c5 closer to the membrane, while more distal positions show minimal movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by memFRET data in Figure 8B showing comparable FRET efficiencies for E8TAG, G11TAG, and Q14TAG at pH 8, consistent with parallel membrane orientation. The pH-dependent movement at Q14TAG is statistically significant. This provides new structural information about NTD topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "memFRET measurements show that both proximal (S464) and distal (M505) positions in the CTD exhibit large FRET efficiencies at pH 8, indicating that the CTD, including its distal portion, spends significant time in close proximity to the plasma membrane at rest. During acidification, the distal CTD (M505) moves away from the membrane while the proximal CTD remains close.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by memFRET data in Figure 8C-D. The large FRET at M505 (position 505) at pH 8 is particularly surprising and suggests the CTD may adopt a membrane-proximal conformation rather than extending into the cytosol. The pH-dependent decrease in FRET at M505 indicates the distal CTD moves away during acidification. This is a novel finding about CTD topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C97",
+      "C110",
+      "C111",
+      "C158"
+    ],
+    "result": "The study's primary conclusion is that the N- and C-termini of ASIC1a do not form a stable complex at rest that unbinds during acidification, contradicting the prior hypothesis. Instead, the termini remain ~18-26 \u00c5 apart at rest and move modestly closer (~2-6 \u00c5) during acidification. This necessitates a new hypothesis for how RIPK1 binding is regulated during stroke.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C97, C110, C111, and C158 represent the main conclusion, which is well-supported by the convergent evidence from ACCuRET (C78-C88), MST (C89-C90), and the overall pattern of results. The data consistently show distances incompatible with direct binding and movements in the opposite direction from what the prior hypothesis predicted. This is the central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C159",
+      "C163",
+      "C164"
+    ],
+    "result": "Based on the finding that the CTD spends significant time near the membrane at rest and moves away during acidification, the authors propose an alternative hypothesis: the membrane itself may block RIPK1 binding to the CTD at rest, and acidification-induced movement away from the membrane exposes the RIPK1 binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C159, C163, and C164 propose a new hypothesis based on the memFRET data showing CTD proximity to the membrane. While this hypothesis is consistent with the data presented (C95, C159), it remains speculative and untested. No direct evidence is provided that membrane proximity actually blocks RIPK1 binding or that the CTD movement is sufficient to expose the binding site. This requires future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors critically evaluate prior work that suggested NTD-CTD interaction based on Rosetta modeling (predicting 4.7 \u00c5 distance) and CFP-YFP FRET measurements (showing ~30% FRET at rest, ~10% at pH 6). They argue these prior measurements were likely confounded by YFP pH sensitivity and the limitations of fluorescent protein FRET for measuring short distances, which would predict unrealistic 55-70 \u00c5 distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C109 provide a thorough critical analysis of prior work. The identification of YFP pH sensitivity (C104) as a confounding factor is well-founded. The calculation showing prior FRET efficiencies would correspond to 55-70 \u00c5 distances (C105-C106), which is incompatible with structural constraints (C106), effectively demonstrates the limitations of the prior approach. This strengthens the case for the current study's conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors compare their results to a second prior study (Couch et al., 2021) that used pH-insensitive FPs and DPA quenching. They find general agreement for NTD topology (~6-10 \u00c5 from membrane) but note differences in CTD results, which they attribute to species differences (chicken vs. rat ASIC1a) and potential artifacts from large FP insertions in the short CTD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 provide a balanced comparison to prior work. The agreement on NTD topology (C116) provides independent validation, while the differences in CTD results are reasonably attributed to methodological and species differences (C119-C121). The discussion acknowledges both consistencies and discrepancies, which is appropriate scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors address potential limitations of their approach, including possible premature truncation at CTD TAG positions and potential steric effects of the mCitrine tag. They argue these are unlikely to significantly impact their conclusions based on western blot evidence, the use of an 11-residue flexible linker, and prior work showing similar constructs can still bind partner proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 provide a thoughtful discussion of limitations. The arguments against major artifacts are reasonable: western blots show L-ANAP-dependent expression (C123), the flexible linker should minimize steric effects (C127), and prior work with similar constructs showed normal protein interactions (C128). However, the possibility of truncated subunit co-assembly (C124) remains a potential concern that cannot be fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors provide an extensive discussion of technical limitations of ACCuRET, including potential background fluorescence, incomplete labeling, effects of unroofing on both membrane sides, and the nonlinear nature of FRET that biases toward closest approach distances. They argue these limitations may affect precise distance measurements but are unlikely to impact overall trends or the main conclusion that termini do not bind at rest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C142 demonstrate appropriate scientific rigor in acknowledging limitations. The discussion is thorough and honest about potential sources of error. Importantly, the authors correctly distinguish between limitations that might affect absolute distance measurements (C139, C153) versus those that would affect the main conclusion about binding (C140, C142, C157). The argument that FRET bias toward closest approach actually strengthens the no-binding conclusion (C140) is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The authors discuss specific limitations of memFRET, including potential non-specific lipid binding to the CTD, membrane deformation around the channel, uncertainties in the multiple-acceptor FRET model, and the nonlinear nature of FRET. They acknowledge these may affect absolute distance measurements but argue the overall trends (NTD parallel to membrane, CTD moving away during acidification) are robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C157 provide a comprehensive discussion of memFRET limitations. The authors appropriately acknowledge uncertainties in the model (C147-C151) and the potential for overestimating membrane proximity due to FRET nonlinearity (C152-C153). The distinction between effects on absolute measurements versus trends (C154-C156) is appropriate. The acknowledgment that prior memFRET studies found higher-than-expected FRET (C150) suggests systematic issues with the approach that warrant caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The authors note precedent for intracellular domains lying parallel to membranes in other ion channels (AMPA receptors, P2X receptors) and speculate that the ASIC1a NTD might function similarly to the P2X receptor NTD in forming a 'cap' over the permeation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C162 provide interesting context from related channels, but the speculation about ASIC1a NTD function (C162) is not supported by any functional data in this study. While the structural parallel to P2X receptors is noted, no experiments test whether the ASIC1a NTD actually affects permeation or selectivity. This remains purely speculative.",
+    "result_type": "MINOR"
+  }
+]

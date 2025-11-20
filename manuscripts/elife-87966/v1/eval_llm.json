@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C11",
+      "C12",
+      "C14",
+      "C31"
+    ],
+    "result": "Experimental observations on zebrafish blastoderm show that viscosity (\u03b7) increases sharply following the VFT law until a critical packing fraction \u03c6S \u2248 0.87\u20130.90, after which \u03b7 saturates and becomes independent of \u03c6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C11, C12, C14, and C31 collectively describe the experimental observation of viscosity behavior in zebrafish blastoderm. The claims are consistent with each other and supported by experimental data (Figure 1C) showing VFT behavior below \u03c6S and saturation above \u03c6S. The experimental measurements and fitting to VFT are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C43",
+      "C107",
+      "C108"
+    ],
+    "result": "Polydispersity and cell deformability lead to saturation of free area fraction (\u03c6free) beyond \u03c6S \u2248 0.90, which explains the viscosity plateau at high packing fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C20, C21, C22, C43, C107, and C108 present the central mechanistic finding. The simulation data (Figure 5E) shows \u03c6free decreases until \u03c6 = 0.90 and then saturates at \u03c6free \u2248 0.22. This saturation is attributed to cell overlap creating free area, and this mechanism quantitatively explains the viscosity plateau. The claims are internally consistent and supported by simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C38",
+      "C40",
+      "C41",
+      "C118",
+      "C119"
+    ],
+    "result": "Simulations of polydisperse soft cells reproduce the experimental viscosity behavior, showing VFT dependence for \u03c6 \u2264 \u03c6S \u2248 0.90 and saturation above \u03c6S, with quantitative agreement in fitted parameters (\u03c60 \u2248 0.94\u20130.95, D \u2248 0.5\u20130.51).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, C38, C40, C41, C118, and C119 describe the simulation results that reproduce experimental observations. Figure 2A shows the simulated effective viscosity follows VFT and saturates, with fitted parameters matching experiments. The agreement between simulation and experiment is quantitative and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C82",
+      "C83",
+      "C84",
+      "C95",
+      "C96"
+    ],
+    "result": "Small cells with sizes comparable to available free area move rapidly and facilitate the motion of larger cells through multi-cell rearrangements, even in highly jammed environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C25, C82, C83, C84, C95, and C96 describe the facilitation mechanism observed in simulations. The mechanism is supported by simulation data (Figure 3A, Videos 1-3) showing small cells move faster and enable larger cell motion. The connection to free volume theory (C95) provides theoretical context. The claims are consistent and supported by visual and quantitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The system exhibits no aging: relaxation time is independent of waiting time even at high packing fractions where viscosity saturates, indicating ergodic behavior at all densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C28, C112, C113, C114, and C115 describe the absence of aging. Figure 6A shows Fs(q,t+\u03c4\u03c9) is independent of waiting time \u03c4\u03c9 over three orders of magnitude. Figure 6B shows variations in \u03c4\u03b1 are smaller than simulation errors. The claims are internally consistent and well-supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C50",
+      "C51",
+      "C52",
+      "C116",
+      "C117"
+    ],
+    "result": "Despite active forces, the cell collective can be described using equilibrium statistical mechanics, justifying the use of Green-Kubo relations for viscosity and equilibrium rigidity percolation theory for phase transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C50, C51, C52, C116, and C117 present the theoretical interpretation that equilibrium concepts apply. This is supported by the absence of aging (C26-C28, C112-C115) and the success of equilibrium-based calculations in reproducing experimental results. The claims are logically consistent with the aging analysis and provide theoretical justification for the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The self-intermediate scattering function Fs(q,t) shows two-step decay with increasing plateau duration as \u03c6 increases until \u03c6 \u2248 0.90, after which the plateau duration ceases to increase and relaxation time \u03c4\u03b1 saturates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, C65, C66, and C67 describe the dynamics from Fs(q,t) analysis. Figure 2B and 2C show the two-step decay and plateau behavior. Figure 2D shows \u03c4\u03b1 saturation above \u03c6 \u2248 0.90. The claims are consistent with each other and supported by simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Individual cell relaxation times vary by eight orders of magnitude depending on cell size and local environment, with small cells (Ri < 4.25 \u03bcm) having short relaxation times even in jammed systems, while similar-sized cells show 3-4 orders of magnitude variation due to local density heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C78 describe heterogeneous dynamics at the single-cell level. Figure 3A shows the eight orders of magnitude variation in \u03c4\u03b1 with cell radius. The claims about small cell dynamics (C71, C72) and heterogeneity (C76-C78) are supported by simulation data and referenced appendix figures. The claims are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88"
+    ],
+    "result": "For \u03c6 \u2264 \u03c6S, the distribution of relaxation times P(ln(\u03c4\u03b1)) follows the predicted Gaussian form exp[-c(ln(\u03c4\u03b1/\u03c40))\u00b2], characteristic of glass-forming systems, but this relation breaks down above \u03c6S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C87, and C88 describe the validation and breakdown of a theoretical prediction. Figure 3C shows the Gaussian fit is valid for \u03c6 \u2264 \u03c6S, while Figure 3D shows deviation above \u03c6S. The claims are supported by quantitative comparison to theory and are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Cell-cell overlap increases with packing fraction, as shown by the distribution P(hij) shifting to higher values and increasing width, creating free area even in highly jammed states at \u03c6 \u2248 \u03c6S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C93, and C94 describe the overlap analysis. Figure 4A shows the distribution P(hij) shifts and broadens with \u03c6. Figure 4B shows mean overlap \u27e8hij\u27e9 increases with \u03c6. The connection to free area creation (C94) is supported by Figure 5. The claims are consistent and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Voronoi analysis shows mean cell size \u27e8A\u27e9 decreases with \u03c6, and free area distributions saturate beyond \u03c6 = 0.90, with substantial negative Afree regions indicating cell interpenetration that increases with \u03c6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 describe the Voronoi tessellation analysis. Figure 5B-D show the distributions and trends described in the claims. The definition of negative Afree (C102) and its interpretation (C104-C106) are logically consistent. The claims are well-supported by simulation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C34",
+      "C17"
+    ],
+    "result": "Zebrafish blastoderm exhibits considerable cell size polydispersity, with cell sizes varying by a factor of ~5-6 in a single tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C34, and C17 describe the experimental observation of polydispersity. Figure 1B shows visual evidence, and Appendix 1-figure 1D provides statistical characterization. The claims are consistent with each other and supported by experimental data and citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Monodisperse systems crystallize and binary mixtures show VFT behavior at all \u03c6, neither of which reproduce the experimental viscosity saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 describe control simulations that ruled out simpler models. The monodisperse crystallization is shown in Appendix 1-figure 1A and B. The binary mixture VFT behavior is described in Appendix 2. These negative results motivated the polydisperse model and are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C16",
+      "C90",
+      "C91"
+    ],
+    "result": "Cells are modeled with soft interactions allowing overlap, which creates free area in the immediate neighborhood when cells are jammed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C16, C90, and C91 describe the soft interaction modeling assumption. The claims are consistent with experimental observations (Figure 1B, D) and provide the mechanistic basis for free area creation. The modeling choice is justified by experimental evidence of cell overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Simulation snapshots show different-sized cells are well mixed without phase separation, and the pair correlation function g(r) indicates liquid-like structure without long-range order even at high \u03c6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 describe structural properties from simulations. Figure 1D shows visual evidence of mixing. Figure 1E shows g(r) with only short-range peaks. The claims are consistent and supported by simulation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cell division was not explicitly included in simulations because stress relaxation timescales are short compared to cell division time, allowing local equilibrium between division events, and simulations were performed in 2D to match experimental measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C56 justify modeling choices. The timescale argument (C54) is supported by citation to experiments. The 2D choice (C56) matches experimental measurements. The claims provide reasonable justification for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Stress relaxation is non-exponential, decaying to zero in two steps as shown by the stress-stress correlation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 describes the stress relaxation behavior. Figure 7A and B show the two-step decay. The observation is well-documented and supports the use of stretched exponential fits for viscosity calculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The saturation behavior differs from 2D monodisperse polymer rings, where \u03c4\u03b1 decreases substantially beyond \u03c6S with no saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 compares to other systems. The comparison is supported by citation to Gnan and Zaccarelli, 2019. This highlights the unique behavior of the polydisperse cell system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In PNiPAM microgels, relaxation time saturation at high volume fraction was attributed to aging, which predicts \u03c4\u03b1 should increase with waiting time \u03c4\u03c9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C110, and C111 describe prior work and set up the aging test. The claims are supported by citation to Philippe et al., 2018. The logical prediction (C111) motivates the waiting time analysis performed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Preliminary 3D simulations with reduced polydispersity show \u03c4\u03b1 saturation at high volume fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 describes preliminary 3D results. While the claim states saturation is observed, no figures or detailed data are provided. The extent of polydispersity reduction and quantitative results are not specified. More data would be needed to fully evaluate this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Realistic adhesion strength would not significantly alter cell forces, and changing adhesion would shift \u03c6S without qualitatively altering \u03b7(\u03c6) dependence, based on universal behavior in glass-forming materials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46, C47, C48, and C49 are speculative about adhesion effects. C46 and C49 are explicitly speculative. While C47 and C48 cite established knowledge about glass physics, the application to this specific system with adhesion is not tested. The claims are reasonable but lack direct supporting evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C15"
+    ],
+    "result": "Prior work has interpreted tissue properties using concepts from phase transitions, glass transition, and active matter, with zebrafish blastoderm showing a rigidity percolation phase transition correlated with viscosity changes and cell connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 and C15 summarize relevant prior work. All claims are supported by multiple citations to experimental and theoretical studies. The claims provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C2"
+    ],
+    "result": "The increase in \u03b7 up to \u03c6S is similar to behavior in glass-forming materials, suggesting sluggish or glass-like cell dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C2 draws a comparison to glass-forming materials. This is supported by the VFT fitting (C12, C38) and established knowledge about glass physics. The comparison is appropriate and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C42",
+      "C44"
+    ],
+    "result": "The free area picture with essentially a single parameter explains the entire \u03b7(\u03c6) dependence and links equilibrium phase transitions to dynamics during zebrafish development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C44 present the broader significance of the findings. The free area explanation is supported by the quantitative agreement shown in Figure 5E and the viscosity calculations. The link to equilibrium PT is supported by the absence of aging. The claims are well-supported by the overall results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C57",
+      "C59"
+    ],
+    "result": "The model uses soft deformable disks with Hertzian repulsion and active self-propulsion forces as a proxy for intrinsic cellular forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C59 describe the model components. The claims are supported by citations to prior modeling work and detailed equations in the Methods section. The model is clearly defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The absence of aging suggests cell divisions are essentially independent, allowing cells to reach local equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 interprets the aging results. The interpretation is logical given the absence of aging (C26-C28, C112-C115) and is consistent with the timescale arguments (C54). The claim is well-supported by the data.",
+    "result_type": "MINOR"
+  }
+]

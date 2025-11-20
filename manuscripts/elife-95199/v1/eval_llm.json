@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "C-terminally truncated ASK1 forms a compact and asymmetric dimer with extensive interdomain and interchain interactions involving all four N-terminal domains (TBD, TPR, PH, KD). The dimer has a funnel-shaped TBD-TPR-PH module with approximate twofold symmetry, while only one KD contacts the N-terminal domains of the opposite protomer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM structure at 3.7 \u00c5 resolution (C144) directly visualizes the asymmetric dimer architecture with clear density for domain arrangements (C34-C39). The structural data are corroborated by AUC measurements showing that TBD-CRR-KD forms stable dimers (C81-C82) and that isolated domains behave differently (C78), confirming that all domains contribute to dimerization (C55, C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C67",
+      "C74",
+      "C75",
+      "C115"
+    ],
+    "result": "Interdomain interactions within the ASK1 dimer stabilize the active conformation of the kinase domain. The TPR and PH domains of one chain create a docking platform for the KD of the opposite chain, stabilizing the activation segment in a substrate-binding competent conformation with the \u03b1C helix in the active inward position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM structure shows clear interactions between TPRA/PHA and KDB (C56-C57), with the activation segment of KDB fully resolved and stabilized by TPR contacts (C61-C62, C67). The \u03b1C helix adopts the active inward position with K709-E725 salt bridge formation (C59-C60, C64), consistent with active kinase conformations. The structural evidence directly supports the stabilization mechanism (C74-C75, C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C93",
+      "C94",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C107",
+      "C120",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C133"
+    ],
+    "result": "TRX1 functions as a negative allosteric effector of ASK1 by binding to TBD and inducing structural changes that propagate through TPR and PH domains to the kinase domain, substantially reducing solvent access to the activation segment (residues 830-844) and limiting access to the key phosphorylation site T838.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "HDX-MS data show significant protection (>3% and >2 SD) in TBD regions 128-143, 184-195, and 206-259 upon TRX1 binding (C93-C94), with propagating changes through TPR (C97) and PH (C98) to the KD activation segment (C100-C101). The reduced deuteration in the activation segment (C129) provides direct evidence for reduced solvent accessibility. The allosteric mechanism is well-supported by the systematic HDX-MS changes across domains (C107, C120, C133).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C89",
+      "C90"
+    ],
+    "result": "Sedimentation velocity AUC demonstrates that isolated TBD and CRR are monomeric in solution, TBD-CRR shows concentration-dependent dimerization, while KD-containing constructs (CRR-KD and TBD-CRR-KD) form stable dimers, confirming that all three N-terminal domains participate in ASK1 homodimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AUC data provide clear sedimentation coefficient distributions for each construct (C77-C81), with measured values consistent with theoretical predictions (C82). The progressive increase in dimerization stability from TBD-CRR (concentration-dependent, C79) to KD-containing constructs (stable dimers, C80-C81) directly supports the conclusion that all domains contribute to dimerization (C89-C90), consistent with the cryo-EM structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "TRX1 binding does not disrupt ASK1 TBD-CRR-KD dimerization but prevents formation of higher oligomers, as shown by reduced peak area in the 10-12 S region of sedimentation coefficient distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AUC data show that the main dimer peak is unchanged upon TRX1 binding (C91), but higher oligomer peaks are reduced (C92). This is consistent with HDX-MS showing altered but not disrupted interdomain interactions (C134). However, the authors acknowledge this may differ at physiological concentrations (C135), which is an appropriate caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The TBD domain adopts a thioredoxin-like fold with a six-stranded \u03b2-sheet and \u03b1-helices, containing a disulfide bridge between C225 and C250 that stabilizes a flexible region (residues 216-245). TBD interacts with the TPR domain of the opposite protomer but has minimal intrachain TBD-TPR contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM map supports the thioredoxin-like fold (C40) and shows the disulfide bridge between C225 and C250 (C45), consistent with prior biochemical data (C46). The lack of density for residues 228-245 (C48) directly demonstrates flexibility (C49), consistent with prior NMR data (C50). The interchain TBD-TPR interactions are clearly visible in the structure (C41-C43).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Both CRR domains resemble the crystal structure of isolated CRR with 14 \u03b1-helices forming seven TPR repeats followed by a PH domain, but show minor helix shifts in the first four TPR repeats due to interactions with TBD of the opposite chain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM structure shows clear similarity to the isolated CRR crystal structure (C51), with documented minor differences in TPR1-4 (C52). The structural comparison is appropriate and the interpretation that differences arise from TBD interactions is reasonable given the proximity of these elements in the dimer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C63",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The kinase domains dimerize in a head-to-tail orientation similar to the isolated KD crystal structure, but with differences in relative positioning. KDB shows a ~4 \u00c5 shift of the C-lobe due to interactions with TPRA, while KDA has a flexible activation segment but maintains features consistent with an active conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The KD dimer interface is well-resolved and comparison with the crystal structure is appropriate (C58, C63). The ~4 \u00c5 shift in KDB is documented (C73) and attributed to TPR interactions (C72). The lack of density for the KDA activation segment (C68) is appropriately interpreted as flexibility, while the visible portions suggest active conformation (C69-C70). The asymmetry between KDA and KDB is a key structural finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "HDX-MS analysis reveals that TRX1 binds to ASK1 through its active site (W31CGPC35 motif), with protected regions on TBD overlapping previously identified NMR binding surfaces and forming a binding site on the flexible outer surface near the TBD-TPR interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HDX-MS data show protection of TRX1 active site residues including the WCGPC motif (C108-C109), consistent with prior studies (C110). The protected TBD regions overlap with NMR-identified binding surfaces (C95), and the location near the TBD-TPR interface is consistent with the structural context (C96). The bidirectional HDX-MS analysis strengthens the binding site identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The dimerization behavior of ASK1 constructs is explained by the structural architecture: KD forms stable dimers, CRR facilitates dimerization through PH domain interactions, and TBD interacts only with TPR of the opposite chain, not with itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation logically connects the AUC data with the structural observations. The stable KD dimerization (C84) is consistent with the extensive KD-KD interface in the structure. The lack of TBD-TBD contacts (C86) and weak PH-PH interactions (C87-C88) explain why isolated TBD and CRR are monomeric. This is a well-supported structure-function correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C121",
+      "C122"
+    ],
+    "result": "Homophilic N-terminal interactions are crucial for ASK1 activation, with the TPR domain showing structural flexibility that enables communication between TBD and KD. T838 phosphorylation could further stabilize the activation segment through interactions with TPR residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural data support the importance of N-terminal interactions (C111), several claims are speculative. The role of the C-terminal CC motif (C112-C113) is based on prior literature but not directly tested here. The TPR flexibility (C121) is inferred from structural comparisons but not directly demonstrated. The T838 stabilization mechanism (C116) is a reasonable hypothesis based on the structure but lacks experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "TRX1 binding causes reduced deuteration in KD regions including \u03b1EF, \u03b1G helix, and surrounding loops, as well as the flexible PH-KD linker (residues 655-670), suggesting structural changes at the PH-KD interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HDX-MS data clearly show reduced deuteration in these KD regions (C102) and the PH-KD linker (C104). The lack of density for the linker in the cryo-EM map (C105) supports its flexibility. The interpretation that these regions form a coherent area affected by TRX1 binding (C103, C106) is reasonable given their spatial proximity in the structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "TRX1 binding alters rather than disrupts homophilic N-terminal interactions at the high concentrations used in experiments, though at physiological ASK1 concentrations TRX1 may reduce these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The HDX-MS data support that interactions are altered rather than disrupted (C134), as no significant deprotection was observed. However, the speculation about behavior at physiological concentrations (C135) is acknowledged as uncertain by the authors. The discrepancy between these results and prior immunoprecipitation studies is noted but not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on ASK1 biology, MAP kinase signaling, and the current understanding of ASK1 regulation, including its role in disease, domain structure, signalosome formation, and activation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background information supported by appropriate citations to the literature. They accurately represent the current understanding of ASK1 biology and regulation, providing necessary context for the experimental work. The claims are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C132"
+    ],
+    "result": "Discussion of prior structural and functional studies on ASK1 TBD, TPR domain properties, and analogies to other kinase regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately cite and interpret prior work on ASK1 and related systems. The references to TBD structure (C117-C118), TPR domain flexibility (C123-C125), and kinase regulation mechanisms (C126-C127, C132) are appropriately used to contextualize the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Discussion of ASK1 regulation by 14-3-3 proteins and TRAF/Daxx, limitations of the current study using C-terminally truncated ASK1, and implications for therapeutic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative. The role of 14-3-3 proteins (C136-C137) and TRAF/Daxx (C138-C140) in the context of the current structure is hypothetical. The authors appropriately acknowledge limitations regarding the C-terminal truncation (C141) and the need for future structural studies (C142). The therapeutic implications (C143) are speculative but reasonable given the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "The cryo-EM structure of ASK1 TBD-CRR-KD was determined at 3.7 \u00c5 resolution and deposited in PDB/EMDB under accession code 8QGY/EMD-18396.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are factual statements about the resolution and data deposition that are directly verifiable. The resolution is consistent with the quality of the density maps shown in the figures and the level of structural detail that could be interpreted.",
+    "result_type": "MINOR"
+  }
+]

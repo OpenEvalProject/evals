@@ -1,0 +1,127 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C45",
+      "C46",
+      "C47",
+      "C61",
+      "C63",
+      "C73",
+      "C101",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors claim that individual cells in populations have widely distributed sensing abilities, with most cells achieving significantly better resolution of inputs compared to the 'average cell' or cell state-agnostic channel capacity estimates (~1 bit). This is demonstrated using a toy receptor-ligand model and computational analysis of EGF/EGFR and IGF/FoxO pathways, showing that traditional mutual information estimates severely underestimate individual cells' sensing abilities when cell state heterogeneity is not accounted for.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The first reviewer (sa0) states the study 'convincingly highlights the difference between single-cell and population channel capacities,' providing support. However, the second reviewer (sa1) raises critical concerns about the magnitude of within-cell variability across stimulus repetitions, noting that 'the true variability is clearly larger than previously assumed' and that the authors 'don't use this delta_0 variability to revise their estimate of the information accordingly.' The reviewer also notes that for EGF/EGFR, 'the EGF/EGFR system does not have any data to support any claim about single-cell information that's not heavily informed by models, which assume by construction that this variability is small, naturally leading the desired conclusion.' This indicates the evidence is incomplete and model-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C70",
+      "C72",
+      "C74"
+    ],
+    "result": "The authors claim that their CeeMI framework predictions about sensing ability distribution were verified using live-cell imaging data on the IGF/FoxO pathway, with computational estimates of variability in sensing abilities matching closely with experimental estimates. The distribution of steady-state FoxO levels was found to be well resolved at the single-cell level.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the third reviewer (sa2) states 'the utility of a metric based on the conditional mutual information to quantify fidelity of sensing and its heterogeneity (distribution) in a cell population is supported in the comparison with data,' the second reviewer (sa1) identifies significant methodological concerns. Specifically, the reviewer notes that the authors 'compare it to cell-to-cell variability, finding that it's smaller...However they don't show it in the paper, but only in the response' and that 'they don't use this delta_0 variability to revise their estimate of the information accordingly.' The reviewer also observes that 'since variability is small compared to the differences between distinct stimulations, of which there are only 4, all information quantities they get are around 2 bits, which is not approaching the information capacity but merely a statement that the number of tested doses is small.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C24",
+      "C29",
+      "C77",
+      "C85",
+      "C116"
+    ],
+    "result": "The authors claim they can identify specific cell state variables that correlate with and dictate cells' sensing abilities in the IGF/FoxO pathway. The model captured that cells with small response ranges had variable sensing abilities while cells with large response ranges performed well in resolving extracellular IGF levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The third reviewer (sa2) acknowledges this finding without raising concerns about it. The first reviewer (sa0) also does not challenge this aspect of the work. While the second reviewer raises concerns about other aspects of the analysis, they do not specifically critique the identification of cell state variables correlating with sensing abilities shown in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The authors claim that variability in cell states and heterogeneity in sensing abilities are likely stable over time, with the same cell's FoxO responses to the same input having significantly less variation compared to variation within the population (shown in Figure 2\u2014figure supplement 7).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The second reviewer (sa1) explicitly requests that 'the authors actually report the figure they provided as Reviewer Figure 2 in the manuscript' and states 'they should not claim that the within-cell variability (captured by the variability across distinct presentations of the stimulus) is well captured by their initial estimate (based on the variance within a single presentation of the stimulus).' The third reviewer (sa2) also notes 'I think Review Figure 2 which is currently in the SI would improve the main body of the paper if moved there. In that case, the discussion of this figure in the main text would have to address more than it currently does.' This indicates the evidence for temporal stability needs better presentation and more thorough analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Using a simple receptor-ligand model, the authors demonstrate how the time scale of cell state dynamics affects cells' individuality and sensing abilities. When mRNA dynamics are slower than signaling timescales, cells are effectively frozen around particular receptor numbers and cell state-conditioned mutual information depends strongly on cell state. As dynamics become faster, cells lose memory of cell state conditioning and individuality vanishes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "None of the reviewers raise concerns about this theoretical analysis shown in Figure 4. The first reviewer (sa0) describes the overall study as 'valuable' and the third reviewer (sa2) does not critique this aspect. The model-based demonstration of how timescale separation affects sensing heterogeneity appears accepted by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C35",
+      "C104",
+      "C117"
+    ],
+    "result": "The authors introduce CeeMI (Cell state-dependent Mutual Information) as a new information-theoretic framework and claim that computational modeling of cellular trajectories from single-cell data and stochastic models is essential for deciphering mechanistic origins of heterogeneity. They propose CeeMI will be an important framework for quantifying fidelity of input/output relationships in heterogeneous cell populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer (sa0) describes the work as 'valuable' and states the authors 'use an existing theoretical framework relying on information theory and maximum entropy inference' effectively. The third reviewer (sa2) states 'the utility of a metric based on the conditional mutual information to quantify fidelity of sensing and its heterogeneity (distribution) in a cell population is supported in the comparison with data.' While the second reviewer raises concerns about specific data analysis choices, they do not challenge the conceptual framework itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors claim their approach will be useful in identifying bottlenecks in signal transduction and that CeeMI will allow disentangling the effect of cell state heterogeneity from noisy cellular response to pinpoint intracellular signaling nodes responsible for signal corruption.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are forward-looking claims about potential applications of the method. None of the reviewers challenge these statements about future utility. The reviewers' concerns focus on the current data analysis and validation rather than the potential applications of the framework.",
+    "result_type": "MINOR"
+  }
+]

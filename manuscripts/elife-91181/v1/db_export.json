@@ -1,0 +1,2446 @@
+{
+  "submission": {
+    "id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T21:15:27.416597Z",
+    "updated_at": "2025-11-20T21:15:27.416597Z"
+  },
+  "content": [
+    {
+      "id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "content_type": "manuscript",
+      "content_text": "# A novel MARV glycoprotein-specific antibody with potentials of broad-spectrum neutralization to filovirus\n\n## Authors\n\n- Yuting Zhang<sup>1</sup>\n- Min Zhang<sup>1</sup>\n- Haiyan Wu<sup>1</sup>\n- Xinwei Wang<sup>1</sup>\n- Hang Zheng<sup>1</sup>\n- Junjuan Feng<sup>1</sup>\n- Jing Wang<sup>1</sup> ([ORCID: 0000-0001-9413-2378](https://orcid.org/0000-0001-9413-2378))\n- Longlong Luo<sup>1</sup>\n- He Xiao<sup>1</sup>\n- Chunxia Qiao<sup>1</sup>\n- Xinying Li<sup>1</sup>\n- Yuanqiang Zheng<sup>2</sup>\n- Weijin Huang<sup>3</sup>\n- Youchun Wang<sup>3</sup>\n- Yi Wang<sup>4</sup> \u2020\n- Yanchun Shi<sup>2</sup> \u2020\n- Jiannan Feng<sup>1</sup> \u2020\n- Guojiang Chen<sup>1</sup> ([ORCID: 0009-0003-7289-0495](https://orcid.org/0009-0003-7289-0495)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Toxicology and Medical Countermeasures, Institute of Pharmacology and Toxicology Beijing China\n2. Inner Mongolia Key Lab of Molecular Biology, School of Basic Medical Sciences, Inner Mongolia Medical University Hohhot China ([ROR:01mtxmr84](https://ror.org/01mtxmr84))\n3. Division of HIV/AIDS and Sex-transmitted Virus Vaccines, National Institutes for Food and Drug Control Beijing China ([ROR:041rdq190](https://ror.org/041rdq190))\n4. Department of Hematology, Fifth Medical Center of Chinese PLA General Hospital Beijing China ([ROR:04gw3ra78](https://ror.org/04gw3ra78))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMarburg virus (MARV) is one of the filovirus species that cause deadly hemorrhagic fever in humans, with mortality rates up to 90%. Neutralizing antibodies represent ideal candidates to prevent or treat virus disease. However, no antibody has been approved for MARV treatment to date. In this study, we identified a novel human antibody named AF-03 that targeted MARV glycoprotein (GP). AF-03 possessed a high binding affinity to MARV GP and showed neutralizing and protective activities against the pseudotyped MARV in vitro and in vivo. Epitope identification, including molecular docking and experiment-based analysis of mutated species, revealed that AF-03 recognized the Niemann-Pick C1 (NPC1) binding domain within GP1. Interestingly, we found the neutralizing activity of AF-03 to pseudotyped Ebola viruses (EBOV, SUDV, and BDBV) harboring cleaved GP instead of full-length GP. Furthermore, NPC2-fused AF-03 exhibited neutralizing activity to several filovirus species and EBOV mutants via binding to CI-MPR. In conclusion, this work demonstrates that AF-03 represents a promising therapeutic cargo for filovirus-caused disease.\n\n## Introduction\n\nFiloviruses are nonsegmented negative-sense RNA viruses, comprised of six genera, Ebolavirus, Marburgvirus, Cuevavirus, Striavirus, Thamnovirus, and a recently discovered sixth genus, Dianlovirus (Amarasinghe et al., 2019; Baseler et al., 2017; Kuhn et al., 2019). The Marburgvirus genus consists of Marburg virus (MARV) and Ravn virus (RAVN) (Amarasinghe et al., 2019; B\u00e0o et al., 2017; Ristanovi\u0107 et al., 2020). The former includes three strains-- Uganda, Angola, and Musoke. The Ebola virus genus includes six distinct species including Zaire Ebola virus (EBOV), Bundibugyo virus (BDBV), Sudan virus (SUDV), Reston virus (RESTV), Taii Forest virus (TAFV) and Bombali virus (BOMV), the first three of which cause severe hemorrhagic fevers (Fan et al., 2020; Goldstein et al., 2018). The genus Cuevavirus (Lloviu virus, LLOV) was isolated from Miniopterus schreibersii bats in Spain and Hungary and potently infected monkeys and human cells (Negredo et al., 2011; Kemenesi et al., 2022). The genus M\u011bngl\u00e0 virus (MLAV) was discovered in the liver of a bat from Mengla, Yunnan, China in 2019. So far, only an almost complete RNA sequence of the viral genome is available, there are no viable MLAVs isolated (Yang et al., 2019). MARV and EBOV infect humans and non-human primates, causing Marburg virus disease (MVD) and EBOV virus disease (EVD) with an incubation period of 2\u201321 days (Mehedi et al., 2011). The symptoms of MVD include severe headache and high fever rapidly within 5 days of the onset of symptoms, followed by diarrhea and vomiting, leading to up to 90% fatality rate (Mehedi et al., 2011). Therefore, MARV and EBOV have high potentials to cause a public health emergency.\n\nGlycoprotein (GP) on the surface of filoviruses is a type I transmembrane protein and consists of GP1 and GP2 subunits (Beniac and Booth, 2017; Lee and Saphire, 2009). It is inserted into the virus envelope in the form of homotrimeric spikes (Brauburger et al., 2012) and is responsible for viral attachment and entry. The furin cleaves Marburg GP at the amino acid 435 into two subunits, GP1 and GP2, which remain linked by a disulfide bond (Schafer et al., 2021). GP1 contains a receptor binding domain (RBD), a glycan cap, and a heavily glycosylated mucin-like domain (MLD), which mediates binding to entry factors and receptors (Hashiguchi et al., 2015). GP2 has a partial MLD, a transmembrane domain for viral anchoring to the envelop surface, and a fusion peptide required for the fusion of virus and cell membranes (Fusco et al., 2015; Gregory et al., 2011; Lee et al., 2017). In the Ebola virus, the furin cleavage site is located at residue 501 and the entire MLD is attached to the GP1 subunit (Volchkov et al., 2000). Marburg virus contains 66 amino acids on GP2 that are absent from the Ebola virus MLD, and are called \u2018wings\u2019 due to their outward projection and flexibility (Fusco et al., 2015).\n\nCurrently, GP is a major target for antibodies validated in filovirus-infected animals and clinical trials because it is exposed on the surface of the virus and plays a key role in viral entry (Dye et al., 2012). Filoviruses initially enter cells by endocytosis or macropinocytosis (Aleksandrowicz et al., 2011; Saeed et al., 2010). Once inside the endosome, GP is cleaved by host cathepsins, and glycan cap and MLD are removed, enabling GP to bind to NPC1 (Carette et al., 2011; Brecher et al., 2012). Interestingly, Ebola viral entry requires cathepsin B cleavage (Martinez et al., 2010), which is redundant for MARV entry (Gnirss et al., 2012; Misasi et al., 2012). Hashiguchi et al., 2015 proposed that the receptor binding domain was masked by glycan cap and MLD in the Ebola virus, whereas it was partially exposed in the Marburg virus.\n\nTo date, there is no licensed treatment or vaccine for Marburg infection, although a panel of antibodies with the potentials of neutralization has been isolated from a survivor subjected to MARV infection (Flyak et al., 2015). Herein, we utilized phage display technology to screen an antibody in a well-established antibody library (Hu et al., 2021; Wang et al., 2022) and obtained a novel human antibody with prominent neutralizing activity. Furthermore, NPC2 fusion at the N terminus of the light chain of this antibody potentiates broad-spectrum inhibition of cell entry of filovirus species and mutants.\n\n## Results\n\n### Characterization of AF-03\n\nAF-03 was selected from a well-established phage surface display antibody library with immense diversity in the selected complementarity determining region (CDR) loops (Liu et al., 2021; Duan et al., 2019). We further subcloned VH and VL sequences of the antibody into a mammalian full-length immunoglobulin expression vector for full-length IgG expression. As shown in Figure 1A, AF-03 was eukaryotically expressed with the purity of over 95%. To determine the binding affinity, recombinant MARV GP without MLD was prepared (Figure 1A). ELISA analysis showed the remarkable binding of AF-03 to MARV GP (Figure 1B). Furthermore, SPR assay was done to determine the binding kinetics and showed that AF-03 bound to MARV GP with high affinity (AF-03 KD value was 4.71 \u00d7 10\u201311 M, monovalent AF-03 Fab KD value was 2.15 \u00d7 10\u201311 M) (Figure 1C and Figure 1\u2014figure supplement 1). To identify determinants of MARV GP binding to AF-03, we utilized computer-guided homology modeling and molecular docking to generate computer models of MARV GP in a complex with AF-03. Specifically, we obtained the theoretical 3D structure of AF-03 Fv (Figure 1D). Based on the 3D structure of AF-03 and MARV GP separately, the 3D complex structure of AF-03 and MARV GP achieved utilizing the molecular docking method (Figure 1E). Overall, these data suggest the potency of AF-03 binding to MARV GP.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig1-v1.jpg)\n\n**Figure 1.:** (A) AF-03 and MARV GP proteins are examined by SDS-PAGE. NR, non-reducing; R, reducing. (B) The binding capacity of AF-03 to MARV GP is determined by ELISA. The absorbance is detected at 450 nm. (C) The binding kinetics of AF-03 to MARV GP is detected by SPR assay. Experiments are independently repeated at least three times, and the data from one representative experiment is shown. (D) The 3D ribbon structures of the AF-03 Fv fragment. The red ribbon denotes H-CDR1, the light blue denotes H-CDR2, the pink denotes H-CDR3, the orange denotes L-CDR1, the deep blue denotes L-CDR2, and the purple denotes L-CDR3. (E) AF-03 and MARV GP complex derived from theoretical modeling. The green ribbon denotes the orientation of the MARV GP fragment, the yellow denotes AF-03 VLCDR, the pink denotes AF-03 VHCDR, the deep blue denotes AF-03 VL and the red ribbon denotes AF-03 VH. (F) By molecular docking analysis of van der Waals interaction, intermolecular hydrogen bonding, polarity interaction, and electrostatic interaction, the key amino acid residues of MARV GP are screened. A zoom-in shows the predicted co-location of AF-03 CDR with Q128 and N129.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Monovalent Fab of AF-03 was prepared by papain digestion and identified by SDS-PAGE. NR, non-reducing; R, reducing. The arrow denotes monovalent Fab. (B) The binding kinetics of monovalent AF-03 Fab to MARV GP was detected by surface plasmon resonance (SPR).Experiments are independently repeated two times, and the data from one representative experiment is shown.\n\n### Epitope mapping of MARV GP bound to AF-03\n\nUnder CVFF forcefield, chosen steepest descent, and conjugate gradient minimization methods, after 30,000 steps of minimization with the convergence criterion 0.02 kCal/mol, the optimized structure of the AF-03 Fv was evaluated (Figure 1D). Using a Ramachandran plot, the assignment of the whole heavy atoms of the AF-03 Fv was in the credible range. Using the crystal complex structure of MR78 and GP protein as a model, based on the optimized theoretical 3D structure of MARV GP protein, the theoretical 3D complex structure of AF-03 and MARV GP protein was constructed (Figure 1E). Through analyzing the van der Waals interactions, inter-molecular hydrogen bonds, polar interactions, and electrostatic interactions between AF-03 and MARV GP, defining the binding region distance towards CDRs of AF-03 Fv fragment as 0.6 nm, the key amino acid residues of MARV GP were predicted for amino acid point mutations (Figure 1F). Based on the volume and character of amino acid residues, the residues T204-Q205-T206, Y218, and K222 were mutated to alanine, and Q128-N129 were mutated to serine as well as C226 was mutated to tyrosine. First, we investigated if this mutated MARV species was still sensitive to AF-03 treatment. The inhibition assay revealed the significant impairment of the neutralizing activity of AF-03 to MARV pseudovirus harboring Q128S-N129S or C226Y compared with WT MARV and those loading other indicated mutations (Figure 2A left panel), which indicates that Q128/N129/C226 functions as key amino acids responsible for AF-03 neutralization. Furthermore, we constructed the mutated MARV GP. ELISA assay showed that Q128S-N129S or C226Y mutation significantly disrupted the binding of GP to AF-03, while the binding and neutralizing capacity of MR78 to mutant GP and pseudovirus harboring C226Y instead of Q128S-N129S, a mAb reported to be isolated from Marburg virus survivors (Hashiguchi et al., 2015), was comparable to WT counterparts (Figure 2A right panel and B). Furthermore, we analyzed the secondary structure of the MARV GP and its mutants. By circular dichroism, the structure of both mutants was not obviously different from that of the parental GP (Figure 2C and Supplementary file 1). Therefore, the weakened binding to the antibody was not due to the conformational change of GP caused by the mutation. Competitive ELISA showed that AF-03 and MR78 could compete with each other to bind to MARV GP (Figure 2D). Collectively, these results indicate the epitopes of these two mAbs overlapped partially.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig2-v1.jpg)\n\n**Figure 2.:** (A) The neutralization activity of AF-03 or MR78 to mutated pseudovirus (Q128S-N129S, Q204A-T205A-Q206A, Y218A, K222A, C226Y) is evaluated in HEK293T cells. The inhibition rate is analyzed. (B) The binding of AF-03 and MR78 to mutant glycoprotein (GP) (Q128S-N129S or C226Y) is examined by ELISA, respectively. *p<0.05. (C) Secondary structure of Marburg virus (MARV) GP and mutants are detected by circular dichroism (CD). (D) The epitope overlapping between AF-03 and MR78 is examined by the competitive ELISA. Experiments are independently repeated at least three times, and the data from one representative experiment is shown.\n\n### In vitro neutralizing activity of AF-03\n\nGiven the high binding affinity of AF-03 to MARV GP, we sought to determine whether AF-03 could impede pseudotyped MARV viral entry. An in vitro neutralization assay was developed based on a full-length MARV GP-pseudotyped virus using a HIV vector (pSG3.\u0394env.cmvFluc). Liver and adrenal glands have been reported to be the early targets of MARV infection (Brauburger et al., 2012; Shifflett and Marzi, 2019). Therefore, we first tested the entry of MARV to hepatocyte cell line (Huh7) and renal cell line (HEK293T cells) by measuring the relative luciferase intensity. These two cell lines were susceptible to MARV cell entry. We used MR78 and cetuximab as positive and negative controls, respectively. As expected, cetuximab had no effects on pseudotyped MARV entry. In contrast, AF-03 actively inhibited viral entry to HEK293T cells, with IC50 value of 0.13 \u03bcg/ml. As well, IC50 of MR78 was 0.44 \u03bcg/ml (Figure 3A left panel). In Huh7 cells, IC50 of AF-03 and MR78 was 0.4 and 1.03 \u03bcg/ml, respectively (Figure 3A right panel). These results suggest that AF-03 has a stronger potency of neutralization than MR78. We also conducted AF-03 neutralization experiments on pseudotyped Angola, Musoke, and RAVN strains and showed a strong and comparable neutralizing ability to all these strains (IC50 was 0.32, 0.12, and 0.15 \u03bcg/ml, respectively) (Figure 3B). Taken together, these data suggest that AF-03 harbors prominent neutralizing activity to MARV infection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig3-v1.jpg)\n\n**Figure 3.:** (A) Pseudotypic MARV-Uganda is incubated with AF-03, MR78, or control mAb at 37 \u00b0C for 1 hr before infecting HEK293T cells (left) and hepatocyte cell line (Huh7) cells (right), respectively. Luciferase is assayed and inhibition rates are calculated. (B) Pseudotypic MARV-Angola, Musoke and Ravn virus (RAVN) infect HEK293T cells, respectively and neutralization activity of AF-03 to these species is determined. (C) AF-03 (10, 3, 1 mg/kg) is administrated at 24 and 4 hr before intraperitoneal injection of MARV pseudovirus. On day 4, bioluminescence signals are detected by an IVIS Lumina Series III imaging system. (D) The total radiance value is based on the luminescence of (C). *p<0.05, ***p<0.001. Experiments are independently repeated at least three times, and the data from one representative experiment is shown.\n\n### In vivo preventive efficacy of AF-03\n\nTo verify the in vivo preventive efficacy, AF-03 was intravenously injected into mice before pseudotyped MARV exposure (\u201324 hr and \u20134 hr), respectively. The bioluminescence intensity was measured on day 4 after pseudovirus injection. As shown in Figure 3C and D, the AF-03-treated group displayed lower bioluminescence activity compared with the control group, while the treatment with control antibodies had no effects. Administration of 1 mg/kg AF-03 prior to the injection of MARV could decrease viral infection to approximately 50% level and increasing doses of AF-03 led to higher preventive efficacy. This indicates clearly that AF-03 is capable of preventing from MARV infection in a dose-dependent manner and represents a potential candidate for MARV treatment.\n\n### AF-03 impedes cell entry of EBOV, SUDV, and BDBV harboring GPcl\n\nGiven the close structural similarity of the Marburg virus to the ebola virus, to determine whether AF-03 was also available to the treatment of EBOV infection, we conducted neutralization of pseudotyped EBOV, SUDV, and BDBV by AF-03. In addition, considering that glycan cap or mucin-like domain are known to mask the putative receptor-binding domain on EBOV, SUDV, and BDBV GP and thus impede the engagement between AF-03 and GP (Hashiguchi et al., 2015), glycan cap and mucin-like domain were enzymatically cleaved by digesting GP with 250 \u03bcg/ml thermolysin at 37 \u00b0C. The infection of pseudotyped ebolavirus harboring cleaved GP to host cells was comparable or stronger than those containing intact GP (Figure 4\u2014figure supplement 1). Intriguingly, the inhibitory function of AF-03 on cell entry of all three species of ebolavirus bearing cleaved GP was much stronger than those bearing uncleaved GP (Figure 4), which suggests that AF-03 has therapeutic potentials for EBOV, SUDV, and BDBV infection.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig4-v1.jpg)\n\n**Figure 4.:** Pseudotypic Ebola virus (EBOV), Sudan virus (SUDV), and Bundibugyo virus (BDBV) are processed with thermolysin at 37 \u00b0C. Inhibition of these ebola virus entry harboring glycoprotein (GP) or GPcl by AF-03 is examined by luciferase assay. *p<0.05, **p<0.01, ***p<0.001. Experiments are independently repeated at least three times, and the data from one representative experiment is shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Ebola viruses (EBOV, Sudan virus - SUDV, Bundibugyo virus - BDBV) were treated with or without thermolysin at 37 \u00b0C and then infected HEK293T cells. Luciferase intensity was assayed. *p<0.05, **p<0.01. Experiments are independently repeated two times, and the data from one representative experiment is shown.\n\n### The potency of NPC2-fused AF-03 to be delivered into the endosome\n\nGiven the inability of AF-03 to transport into the endosomal compartment where intact GP is cleaved by cathepsin B/L, we engaged NPC2 to the N-terminus of the light chain of AF-03 (Figure 5\u2014figure supplement 1A), according to a protocol described previously (Wirchnianski et al., 2021). As well, we produced the 1\u20133 domain of CI-MPR (Figure 5\u2014figure supplement 1A), which is a ligand for NPC2 and expressed on the cellular and endosomal membrane (Bohnsack et al., 2009). The results showed that NPC2-fused AF-03 (termed AF03-NL), rather than AF-03, bound to CI-MPR1-3 (Figure 5\u2014figure supplement 1B). Next, we investigated the internalization of AF03-NL. AF03-NL or AF-03 was incubated with HEK293T cells, which expressed CI-MPR (Figure 5\u2014figure supplement 2A), at 4\u2103 for attachment. As expected, AF03-NL instead of AF-03 adhered to the cell surface, detected by fluorescence-labelled secondary IgG. Upon endocytosis, the fluorescence on the cell surface decreased dramatically, implying the occurrence of AF03-NL internalization (Figure 5A). To further address this issue, AF-03 and AF03-NL were labelled by antibody internalization reagent and pHrodo Red dye, respectively that is sensitive to acidic niche. Consequently, APC and pHrodo Red-conjugated AF03-NL was observed in the acidic endosomal compartment by flow cytometry and fluorescence microscopy, respectively (Figure 5B and C). In contrast, AF-03 was not seen in the endosome.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig5-v1.jpg)\n\n**Figure 5.:** AF-03, AF03-NL, or human IgG1 isotype (MOCK) is incubated with cells at 4\u2103 for 1 hr to prevent internalization and then at 37\u2103 for another 2 hr to allow internalization. PE-conjugated secondary antibody is added prior to analysis by flow cytometry. (B,C) Antibody internalization reagent and pHrodo Red-labeled AF-03 or AF03-NL is incubated with cells at 37\u2103 for 1 hr and analyzed by flow cytometry (B) and fluorescence microscopy, (C) respectively. The red arrow denotes internalized AF03-NL. Experiments are independently repeated at least three times, and the data from one representative experiment is shown.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) AF03-NL and CI-MPR1-3 domain proteins are examined by SDS-PAGE. NR, non-reducing; R, reducing. The arrow denotes Niemann-Pick C2 (NPC2)-fused light chain. (B) The binding capacity of AF03-NL and AF-03 to CI-MPR1-3 is detected by ELISA. Experiments are independently repeated two times, and the data from one representative experiment is shown.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The CI-MPR expression in (A) HEK293T and (B) Huh7 cells is examined by flow cytometry. The representative plots from two independent experiments are shown.\n\n### Pan-filovirus inhibition of cell entry by AF03-NL via engagement between NPC2 and CI-MPR\n\nFirst, we compared the binding of AF03-NL/AF-03 to MARV GP. ELISA showed relatively weak binding activity of AF03-NL compared with AF-03 (Figure 6\u2014figure supplement 1A). We, thereafter, evaluated the neutralizing activity of AF03-NL/AF-03 to MARV pseudovirus. Intriguingly, AF03-NL showed stronger neutralizing activity than AF-03 (The IC50 was 0.057 and 0.284 \u03bcg/ml, respectively) (Figure 6\u2014figure supplement 1B), which may be attributed to sustained tethering of AF03-NL to pseudovirus at extracellular space as well as endosomal compartment. Second, we compared the neutralizing activity of AF03-NL and AF-03 to a series of filovirus species. AF03-NL displayed superior neutralizing activity to the other nine filovirus species. While, no or weak inhibition of entry by AF-03 was found (Figure 6A). Furthermore, AF03-NL, instead of AF-03, also actively inhibited cell entry of 17 EBOV mutants that were detected previously in natural hosts (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig6-v1.jpg)\n\n**Figure 6.:** (A,B) AF-03 or AF03-NL (50\u20130.0007 \u03bcg/ml, fourfold dilution) is incubated with HEK293T cells at 37 \u00b0C for 2 hr prior to exposure to pseudotypic filovirus species (A) and Ebola virus (EBOV) mutants (B). Luciferase is assayed and inhibition rates are calculated. Experiments are independently repeated at least three times, and the data from one representative experiment is shown.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The binding capacity of AF-03 and AF03-NL to MARV GP is detected by ELISA. (B) AF-03 orAF03-NL is incubated with HEK293T cells at 37 \u00b0C for 2 hr prior to exposure to pseudotypic Marburg virus (MARV)-Uganda. Luciferase is assayed and inhibition rates are calculated. Experiments are independently repeated two times, and the data from one representative experiment is shown.\n\nTo investigate the mechanisms underlying the potency of AF03-NL, we produced NPC2 protein (Figure 7A) and then examined the inhibition of EBOV entry by AF03-NL or the mixture of AF-03 and NPC2. AF-03, NPC2 alone or in combination did not inhibit EBOV entry. Conversely, AF03-NL actively impeded this process (Figure 7B). To clarify whether this effect is CI-MPR-dependent, CI-MPR in HEK293T cells was silenced (Figure 7C). The result showed that CI-MPR knockdown rendered significant abrogation of the inhibitory ability of AF03-NL (Figure 7C). We also introduced CI-MPR into the Huh7 cell line that is null for this receptor (Figure 5\u2014figure supplement 2B). The inhibitory effects of AF03-NL were augmented in CI-MPR-overexpressed cells compared with empty vector-introduced counterparts (Figure 7D). Taken together, these data indicate that the inhibitory potency of AF03-NL is dependent on the interaction between NPC2 and CI-MPR.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/91181/elife-91181-fig7-v1.jpg)\n\n**Figure 7.:** (A) Niemann-Pick C2 (NPC2) protein is examined by SDS-PAGE. NR, non-reducing; R, reducing. (B) AF03-NL, AF-03, NPC2 alone, or equimolar combination of AF-03 and NPC2 is incubated with HEK293T cells at 37 \u00b0C for 2 hr prior to exposure to pseudotypic Ebola virus (EBOV). Luciferase is assayed and inhibition rates are calculated. (C) HEK293T cells are treated with siRNA-CI-MPR or negative control vector (NC), respectively and CI-MPR expression is detected by flow cytometry. AF03-NL is incubated with siCI-MPR or NC-treated HEK293T cells at 37 \u00b0C for 2 hr, respectively prior to exposure to pseudotypic EBOV. (D) CI-MPR is introduced into hepatocyte cell line (Huh7) cells and its expression is detected by flow cytometry. AF03-NL is incubated with CI-MPR or NC-knockin Huh7 cells at 37 \u00b0C for 2 hr, respectively prior to exposure to pseudotypic EBOV. Luciferase is assayed and inhibition rates are calculated. Experiments are independently repeated at least three times, and the data from one representative experiment is shown.\n\n## Discussion\n\nThe Marburg virus was initially identified after simultaneous outbreaks in Marburg and Frankfurt in Germany in 1967 (Hashiguchi et al., 2015; Abir et al., 2022). To date, there have been a dozen outbreaks of Marburg virus infection in humans (Araf et al., 2023). Giving the recurrence of Marburg virus outbreaks and its high virulence and lethality, there is an urgent need to develop prophylactic and therapeutic interventions for Marburg infections. MARV GP is a surface viral protein, which is responsible for host receptor binding and cell entry thus provides an attractive target for the development of antagonists. Flyak et al., 2015 screened several MARV GP-specific neutralizing antibodies from the PBMC samples of a MARV-infected survivor, which achieved 100% protection in mice subjected to mouse-adapted MARV challenge. The MARV GP-specific antibody cocktail was also developed, three mAbs cocktail could protect hamsters from lethal hamster-adapted MARV infection, while treatment with either one or two antibodies failed (Marzi et al., 2018).\n\nIn this study, we selected an antibody from a human antibody phage library and the affinity constant reached the 10\u201311M level. The neutralizing activities of the antibody were demonstrated by utilizing the pseudotyped MARV Uganda strain. The results showed that AF-03 effectively inhibited HIV vector (pSG3.\u0394env.cmvFluc) pseudotyped MARV viral entry at IC50 of 0.13 and 0.4 \u03bcg/ml in HEK293T and Huh7, respectively. Furthermore, compared with the control antibody, AF-03 exhibited a protective property against pseudovirus infection in mice. Epitope mapping results showed that Q128-N129 and C226 of GP was the binding and functional epitopes that interacted with AF-03, which means AF-03 targeting the interface of GP-NPC1 interaction, considering that N129 is known to be located in the NPC1 binding domain. RBD is highly conserved among filovirus species, so it is an attractive target for broadly effective anti-filovirus drug development (Densumite et al., 2021). We found that AF-03 also bound to EBOV GPcl and could neutralize ebola viruses bearing cleaved GP in vitro, suggesting that AF-03 represents a good candidate for endosome-delivering strategy by ligation to another mAb against a surface-exposed EBOV GP epitope or a ligand peptide for host cation-independent mannose-6-phosphate receptor (Wirchnianski et al., 2021), which will ultimately afford cross-reactivity against multiple filovirus species. Accordingly, we designed NPC2-fused AF-03 and demonstrated its broad-spectrum inhibitory capacity to filovirus species and EBOV mutants. Future investigations on the inhibition of AF03-NL to authentic virus infection in vitro and in vivo are warranted.\n\nOverall, our study identified a high-affinity anti-MARV antibody AF-03 targeting a conserved and hidden site at the filovirus GPcl-NPC1 interface, which was capable of neutralizing MARV infection both in vitro and in vivo. Furthermore, AF-03 may be a potential candidate for the effective protection against pan-filovirus species infection. Investigations on AF-03 treatment of mice challenged by authentic virus are undergoing.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>Huh7</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_U443</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Chinese hamster)</td>\n      <td>ExpiCHO-S</td>\n      <td>Thermo</td>\n      <td>RRID:CVCL_5J31</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Marburg virus)</td>\n      <td>Uganda</td>\n      <td>This paper</td>\n      <td>GenBank: AFV31370.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Marburg virus)</td>\n      <td>Angola</td>\n      <td>This paper</td>\n      <td>Uniprot: Q1PD50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Marburg virus)</td>\n      <td>Musoke</td>\n      <td>This paper</td>\n      <td>Uniprot: P35253</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Marburg virus)</td>\n      <td>RAVN</td>\n      <td>This paper</td>\n      <td>Uniprot: Q1PDC7</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Ebola virus)</td>\n      <td>TAFV</td>\n      <td>This paper</td>\n      <td>Uniprot: Q66810</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Ebola virus)</td>\n      <td>RESTV</td>\n      <td>This paper</td>\n      <td>Uniprot: Q66799</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Ebola virus)</td>\n      <td>BOMV</td>\n      <td>This paper</td>\n      <td>GenBank: YP_009513277.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Ebola virus)</td>\n      <td>EBOV</td>\n      <td>Kindly gifted by the China Institute for Food and Drug Control</td>\n      <td>GenBank: AHX24649.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Ebola virus)</td>\n      <td>BDBV</td>\n      <td>Kindly gifted by the China Institute for Food and Drug Control</td>\n      <td>GenBank: YP_003815435</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Ebola virus)</td>\n      <td>SUDV</td>\n      <td>Kindly gifted by the China Institute for Food and Drug Control</td>\n      <td>GenBank: YP_138523.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Cueva virus)</td>\n      <td>LLOV</td>\n      <td>This paper</td>\n      <td>GenBank: JF828358.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Dianlo virus)</td>\n      <td>MLAV</td>\n      <td>This paper</td>\n      <td>GenBank: YP_010087186.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene</td>\n      <td>pSG3. \u0394env. cmvFluc</td>\n      <td>Kindly gifted by the China Institute for Food and Drug Control doi: 10.1038/srep45552</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene</td>\n      <td>pFRT-KIgG1</td>\n      <td>Thermo</td>\n      <td>Cat# V601020</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dulbecco\u2019s modified Eagle\u2019s medium (DMEM)</td>\n      <td>Gibco</td>\n      <td>Cat# 11965e092</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pen Strep</td>\n      <td>Gibco</td>\n      <td>Cat# 15140</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Fetal bovine serum</td>\n      <td>Gibco</td>\n      <td>Cat# 10099</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ExpiCHO Expression Medium</td>\n      <td>Gibco</td>\n      <td>Cat# A29100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ExpiFectamine CHO Transfection Kit</td>\n      <td>Gibco</td>\n      <td>Cat# A29129</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Nickel column</td>\n      <td>Cytiva</td>\n      <td>Cat# 11003399</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Soluble TMB Kit</td>\n      <td>CWBIO</td>\n      <td>Cat# CW0050S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Transfection reagent</td>\n      <td>JetPRIME</td>\n      <td>Cat# 25Y1801N5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Bright-Glo luciferase reagent</td>\n      <td>Promega</td>\n      <td>Cat# E6120</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>thermolysin</td>\n      <td>Sigma</td>\n      <td>Cat# T7902</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Phosphoramidon</td>\n      <td>Sigma</td>\n      <td>Cat# R7385</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>D-luciferin</td>\n      <td>PerkinElmer</td>\n      <td>Cat# 122799</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>iQue Human Antibody Internalization Reagent</td>\n      <td>Sartorius</td>\n      <td>Cat# 90564</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>pH-sensitive pHrodo red succinimidyl ester</td>\n      <td>Thermo</td>\n      <td>Cat# P36600</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>polylysine</td>\n      <td>Beyotime</td>\n      <td>Cat# ST508</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DiD</td>\n      <td>Thermo</td>\n      <td>Cat# V22887</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Hoechst33342</td>\n      <td>Thermo</td>\n      <td>Cat# H1398</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PierceFab Preparation Kit</td>\n      <td>Thermo</td>\n      <td>Cat# 44985</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>horseradish peroxidase (HRP)-labeled goat anti-human IgG secondary antibody</td>\n      <td>Invitrogen</td>\n      <td>Cat# A18817RRID:AB_1640167</td>\n      <td>Elisa: 1:6000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Horseradish peroxidase (HRP)-labeled Streptavidin</td>\n      <td>Thermo</td>\n      <td>Cat# S911RRID:AB_795453</td>\n      <td>Elisa: 1:10000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PE-labeled anti-human IgG Fc secondary antibody</td>\n      <td>Biolegend</td>\n      <td>Clone M1310G05Cat# 41070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FITC-conjugated anti-CI-MPR antibody</td>\n      <td>Biolegend</td>\n      <td>Clone QA19A18Cat# 364207</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Experimental animals</td>\n      <td>BALB/c</td>\n      <td>Beijing Vital River Laboratory Animal Technology</td>\n      <td></td>\n      <td>Four-week-old, female</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines and plasmids\n\nHuman embryonic kidney cells HEK293T and human hepatoma cells Huh7 were purchased from ATCC. These cell lines were cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) (Gibco) supplemented with 100 units/ml penicillin, 100 units/ml streptomycin (Gibco), and 10% fetal bovine serum (Gibco) in a humidified atmosphere (5% CO2, 95% air) at 37 \u00b0C. ExpiCHO-S cells were purchased from Gibco and cultured in ExpiCHO Expression Medium (Gibco) in a humidified atmosphere (8% CO2, 92% air) on an orbital shaker platform. The cells were authenticated using short tandem repeat (STR) profiling and were also tested for mycoplasma contamination.\n\nMARV, Angola, Musoke, RAVN, TAFV, RESTV, BOMV, MLAV, LLOV GP plasmids were synthesized by GENEWIZ and then cloned into the expression vector pcDNA3.1. EBOV, BDBV, SUDV GP, and HIV-based vector pSG3. \u0394env. cmvFluc plasmids were kindly gifted by the China Institute for Food and Drug Control.\n\n### Preparation of full-length antibody and antigen\n\nAF-03 was selected from a human phage antibody library, which displays on the surface of M13 bacteriophage particles. Screening procedures were described in detail previously (Liu et al., 2021; Duan et al., 2019). Phage antibodies that bound to MARV GP protein were obtained to express full-length IgG using a standard protocol. In brief, the VH and VL regions of AF-03 were constructed into a mammalian full-length immunoglobulin expression vector pFRT-KIgG1 (Thermo) to generate plasmid AF-03. The human NPC2 gene (aa20-151) was linked to the VL of AF-03 by a short linker \u2018TVAAP\u2019 and then constructed into pFRT-KIgG1 (designated as AF03-NL). The AF-03 and AF03-NL plasmid were transfected into ExpiCHO-S cells using the ExpiFectamine CHO Transfection Kit (Gibco) following the manufacturer\u2019s instructions. Purification was performed using the \u00c4KTA prime plus system (GE Healthcare) with protein A column (GE Healthcare). Fab generation from IgG using the Pierce Fab Preparation Kit (Thermo) following the manufacturer\u2019s instructions. MARV GP (Uganda strain) (aa 20\u2013648, \u0394277\u2013455), CI-MPR1-3 (aa36-466), and NPC2 (aa20-151) gene with six histidine-tagged at C-terminus was cloned into mammalian expression vector pcDNA3.1, respectively and then transfected into HEK293T cells. MARV GP was purified using a nickel column (Cytiva). The concentration of proteins and antibodies were quantified by bicinchoninic acid (BCA) method.\n\n### ELISA\n\nThe 96-well plates were coated with 2 \u03bcg/ml MARV-GP and mutated MARV GP (Q128S-N129S/C226Y), respectively and incubated overnight at 4 \u00b0C. Wells were washed for three times and blocked for 1 hr at 37 \u00b0C. A series of 12 concentrations of AF-03 and MR78 (starting at 20 \u03bcg/ml, twofold dilution) were added and incubated for 1 hr at 37 \u00b0C. Bound antibodies were detected with horseradish peroxidase (HRP)-labeled goat anti-human IgG secondary antibody (Invitrogen) at 37 \u00b0C for 30 min. Binding signals were visualized using a TMB substrate (CWBIO) and the reaction was stopped by adding 2 N H2SO4. The light absorbance at 450 nm was measured by a microplate reader (Thermo Fisher Scientific).\n\nFor competitive ELISA, biotinylated AF-03 (1 \u03bcg/ml) was coated. MR78 and control mAb (Herceptin) in threefold serial dilution (ranging from 200 to 0.27 \u00b5g/ml) and added to the plates. After 1 h incubation at 37 \u00b0C, the plates were washed and the bound biotin-AF-03 was detected by adding horseradish peroxidase (HRP)-labeled Streptavidin (Thermo). After a further 30 min incubation at 37 \u00b0C, the plates were washed and TMB was added. The reaction was stopped by adding 2 N H2SO4. Absorbance was measured at 450 nm using a plate reader.\n\n### SPR analysis of antibody affinity\n\nThe SPR (surface plasmon resonance) analysis was performed using a Biacore T200 machine with CM5 chips (GE Healthcare) at room temperature (25 \u00b0C). All the proteins used in SPR analysis were exchanged to BIAcore buffer, consisting of PBS-P+, with 0.5% Surfactant P20 and 0.5% DMSO, pH 7.4. The chip was subsequently immobilized with MARV GP in sodium acetate, pH 5.0, and then blocked with 1 \u2009M ethanolamine, pH 8.0. AF-03 were diluted by running a buffer ranging from 0.26 to 0.002 nM. The chip was regenerated with glycine- HCl (pH 2.0, 10 mM). Data were analyzed with Biacore T200 Evaluation Software.\n\n### Computer-guided homology modeling and molecular docking\n\nTo uncover the potential epitope of the GP protein, the binding mode between AF-03 and MARV GP protein was analyzed theoretically as follows: The three-dimensional theoretical structure of fragment variable (FV) was constructed using computer-guided homology modeling approach (Insight II 2000 software, MSI Co., stored in IBM workstation) based on the amino acid sequences of the variable structural domains of the heavy and light chains of AF-03, and the conserved regions (the framework region of the antibody variable domain) and loop structural domains (the CDR region of the antibody variable domain) were identified. The 3D structure of the AF-03 Fv fragment was optimized under the consistent valence force field (CVFF) using the steepest descent and conjugate gradient minimization methods. The final minimized 3D structure was evaluated by means of Ramachandran diagrams. In addition, the 3D theoretical structure of the MARV GP protein was obtained using Alphafold 2 software online and optimized using the CVFF force field in Insight II 2000 software. Under the molecular docking method, using the crystal complex structure of MR78 and GP protein (PDB code: 5uqy) as model (Hashiguchi et al., 2015), the 3D complex structures AF-03 Fv fragment and GP were obtained and optimized. With the determined 3D structure of the AF-03 Fv fragment and GP, 50-ns molecular dynamics were performed with the Discovery_3 module. All calculations were performed using Insight II 2000 software (MSI Co., San Diego) with IBM workstation.\n\n### Pseudovirus preparation\n\nHIV vector (pSG3.\u0394env.cmvFluc) bearing MARV, mutated MARV (Q128S-N129S, T204A-Q205A-T206A, Y218A, K222A, and C226Y), EBOV (parental and 17 mutants indicated), SUDV, BDBV, TAFV, RESTV, BOMV, RAVN, MLAV, and LLOV GPs were prepared by liposome-mediated transfection of HEK293T cells using transfection reagent (JetPRIME), respectively. Cells were seeded in six-well plates at a density of 7 \u00d7 105 cells/well and transfected with 2 \u03bcg plasmids (0.4 \u03bcg GP and 1.6 \u03bcg HIV vector) when cells reached 60\u201380% confluence. Supernatants were collected 48 hr after transfection, centrifuged to remove cell debris at 3000 rpm for 10 min, filtered through a 0.45 \u03bcm-pore filter (Millipore, SLHUR33RB), and stored at \u201380 \u00b0C.\n\n### Pseudovirus entry and antibody neutralization assay\n\nHuh7 and HEK293T cells (3 \u00d7 104 cells/100 \u03bcl/well) were infected with 100 \u03bcl pseudovirus, which contained a luciferase reporter gene, respectively. The luciferase activity was measured in a fluorescence microplate reader (Promega). The operation steps were following: after 36 hr incubation at 37 \u00b0C, 100 \u03bcl of culture medium were discarded and added with 100 \u03bcl of Bright-Glo luciferase reagent (Promega) in each well. Mixtures were transferred to 96-well whiteboards after a 2 min reaction to detect the relative luciferase intensity.\n\nFor AF-03 neutralization of MARV assays, 50 \u03bcl mAb (starting at 20 \u03bcg/ml) was threefold serially diluted and separately mixed with MARV pseudovirus at the same volume. The mixture was incubated at 37 \u00b0C for 1 hr, followed by the addition of 100 \u03bcl cells (3 \u00d7 104 cells/well). 50% of maximal inhibitory concentration was defined as IC50. IC50 values were determined by non-linear regression with least-squares fit in GraphPad Prism 8 (GraphPad Software).\n\nIn terms of AF-03 neutralization of ebola virus assays, pseudovirus (EBOV, SUDV, and BDBV) were processed with thermolysin as previously described (Markosyan et al., 2016). Briefly, Pseudotyped ebola virus were incubated at 37 \u00b0C for 1 hr with 200 \u03bcg/ml thermolysin (Sigma). The reaction was stopped by the addition of 400 \u03bcM Phosphoramidon (Sigma) on ice for 20 min. The remaining steps followed AF-03 neutralization of MARV assays.\n\nFor AF03-NL neutralization assays, 50 \u03bcl/well of serial diluted AF03-NL and AF-03 (starting at 50 \u03bcg/ml) were incubated with cells at 37 \u00b0C for 2 hr to enable internalization of the antibodies. 50 \u03bcl/well of diluted pseudovirus was then added to a 96-well plate and incubated at 37 \u00b0C for 36 hr. Bright-Glo luciferase reagent was added to detect the relative luciferase intensity.\n\n### Bioluminescent imaging in vivo\n\nFour-week-old female BALB/c mice were purchased from Beijing Vital River Laboratory Animal Technology Co. Ltd. The animal study was reviewed and approved by the Institutional Animal Care and Use Committee of the Academy of Military Medical Sciences (IACUC-DWZX-2020\u2013697). Mice were intraperitoneally injected with MARV pseudovirus (0.2 ml/mouse). AF-03 (10, 3, or 1 mg/kg) or control antibody Herceptin (10 mg/kg) were injected via intravenous route 24 hr and 4 hr before the pseudovirus injection, respectively. Bioluminescent signals were monitored at Day 4. Briefly, D-luciferin (150 mg/kg body weight) (PerkinElmer) was intraperitoneally injected into the mice, and then exposed to Isoflurane alkyl for anesthesia. Bioluminescence was measured by the IVIS Lumina Series III Imaging System (Xenogen, Baltimore, MD, USA) with the living Image software. The signals emitted from different regions of the body were measured and presented as average fluxes. All data are presented as mean values \u00b1 SEM.\n\n### Evaluation of internalization\n\nHEK293T cells (3 \u00d7 105 cells/well) were washed twice with cold PBS and the supernatant was discarded. AF-03/AF03-NL/human IgG1 isotype (20 \u03bcg/ml) was added and incubated at 4 \u00b0C for 30 min. One group was transferred to 37 \u00b0C for internalization for 30 min, while the other group continued to be incubated at 4 \u00b0C for 30 min to adhere to the cell surface. The cells were washed with cold PBS and PE-labeled anti-human IgG Fc secondary antibody (Biolegend) was added and incubated for 30 min at 4 \u00b0C. The cells were collected for analysis.\n\n### Antibody labeling and intracellular localization assays\n\nAF03-NL and AF-03 were labeled with iQue Human Antibody Internalization Reagent (Sartorius) at the molar ratio of 1:3, respectively according to the manufacturer\u2019s instructions, protected from light, and incubated for 15 min at 37 \u00b0C. HEK293T cells expressing CI-MPR were added and incubated at 37 \u00b0C for 2 hr. Internalization of mAbs was detected by flow cytometry.\n\nAF03-NL and AF-03 were covalently labeled with pH-sensitive pHrodo red succinimidyl ester (Thermo) according to the manufacturer\u2019s instructions. Antibodies were incubated with 10-fold molar excess of pHrodo red succinimidyl ester for 1 hr at room temperature. Excess unconjugated dye was removed using PD-10 desalting columns (GE Healthcare). pHrodo Red-labeled antibodies were exchanged into HEPES buffer and concentrated in an Amicon Ultra centrifugal filter unit with a nominal molecular weight cutoff of 30 kDa. Antibody concentration and degree of labeling was determined according to the manufacturer\u2019s instructions. HEK293T cells (1~2 \u00d7 105 cells per dish) were cultured overnight in a confocal dish pre-treated with polylysine (Beyotime) and then incubated with pHrodo Red-labeled AF-03 and AF03-NL (20 \u03bcg/ml) at 37 \u00b0C for 30 min. Unbound antibodies were removed by washing with cold PBS. As well, cells were stained with cell membrane dye (DiD) (Thermo) and Hoechst33342 (Thermo) at 37 \u00b0C for 15 min. Single cells were analyzed for pHrodo Red fluorescence on confocal microscopy (dragonfly 200).\n\n### CI-MPR knockin and knockdown\n\nHuh7 Cells were seeded in six-well plates at 3 \u00d7 105 cells/well and transfected with 2 \u03bcg CI-MPR expression plasmids (JetPRIME) when cells reached 40\u201360% confluence and cultured for 24 hr. For CI-MPR silencing, HEK293T cells were seeded in 6-well plates and transfected with siRNA- CI-MPR (Ribbio) and cultured for 48\u201372 hr. CI-MPR expression was detected by flow cytometry.\n\n### Flow cytometry\n\nThe cells were harvested and stained with FITC-conjugated anti-CI-MPR antibody (Biolegend) on ice for 30 min. Cells were washed twice and detected on FACSAria II (BD Biosciences). Data analysis was performed using the FlowJo software.\n\n### Statistical analyses\n\nData were analyzed, and the graphs were plotted using Prism software (GraphPad Prism 8, San Diego, USA). The data are presented as the mean \u00b1 standard error. Statistical differences were compared using unpaired t-tests or ANOVA. The p<0.05 was considered statistically significant.\n",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "591a7a5a-7e1c-4f04-8fb6-e31f0b4a6c08",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91181.3.sa0](https://doi.org/10.7554/eLife.91181.3.sa0)\n\nIn this valuable study, the discovery and subsequent design of the AF03-NL chimeric antibody led to a tool for studying filoviruses and provides a possible blueprint for future therapeutics. In general, the data presented are solid, although further improvements can be made in the overall presentation of the results. The work will be of interest to virologists studying antibodies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91181.3.sa1](https://doi.org/10.7554/eLife.91181.3.sa1)\n\nSummary:\n\nThe authors describe the discovery of a filovirus neutralizing antibody, AF03, by phage display, and its subsequent improvements to include NPC2 that resulted in greater breadth of neutralization. Overall, the manuscript is much improved from first review.\n\nWhile the authors only use docking studies and this does not convincingly map the AF03 epitope, they do provide compelling evidence that residues Q128, N129, and possibly C226 are part of the epitope or at least close enough to affect binding and neutralisation. This is not conclusive support for their assumption that AF03 targets the NPC1 binding site. However, the authors do show that AF03 competes for MR78 binding to its epitope (in the NPC1 binding site), and this is enough to roughly place the epitope in this region (barring the possibility of an adjacent binding site with steric occlusion of the MR78 epitope).\n\nThe authors provide evidence for broad neutralisation, and also provide good support for the internalization of AF03-NL as the mechanism for improved breadth over the original AF03 antibody.\n\nStrengths:\n\nThis study shows convincing binding to Marburgvirus GP and neutralization of Marburg viruses by AF03, as well as convincing neutralization of Ebolaviruses by AF03-NL. While there is not good separation of PE-stained populations by FACS in figure 5A, the cell staining data in Figure 5C are compelling to a non-expert in endosomal staining like myself. The control experiments in Figure 7 are compelling showing neutralization by AF03-NL but not AF03 or NPC2 alone or in combination. Altogether these data support the internalisation and stabilisation mechanism that is proposed for the gain in neutralization breadth observed for Ebolaviruses by AF03-NL over AF03 alone.\n\nWeaknesses:\n\nTo support their affinity measurements, the authors argue that they show GP is a monomer in Figure 1A by SDS-PAGE. SDS-PAGE cannot be used to assess oligomerisation of GP. Native PAGE or size exclusion profiles would have been better suited to this purpose. If affinity was calculated on a 1GP:2IgG binding sites as the authors imply, then the affinity data are incorrect due to avidity effects. As suggested by a previous reviewer, using monomeric Fab would solve this problem.\n\nThe information for figure 2 states: \"we investigated if this mutated MARV species was STILL sensitive o AF-03 treatment\". But, \"we sought to determine whether AF-03 could impede pseudotyped MARV viral entry\" only happens in Figure 3. This information for figure 3 has now already been determined in Figure 2 where wildtype MARV is neutralised (black curves) introducing redundancy. The authors should first show that AF-03 can neutralise MARV pseudotyped virus, and then assess whether mutants are STILL sensitive to AF-03.\n\nFigure 1: The visualisation of AF03 modelling and docking is better on a white background, but still difficult to interpret as currently presented. The labels of predicted contact residues are still impossible to read, and the yellow text does not show. As suggested previously, a zoom-in showing predicted co-location with Q128 and N129 would show these data better. It would also be useful to orient the reader with respect to trimeric membrane bound GP.\n\nFigure 2: The presentation of these data is much improved and support the text.\n\nFigure 3: The presentation of these data is much improved and support the text.\n\nFigure 4: The presentation of these data is much improved and support the text.\n\nFigure 5: The presentation of these data is much improved and support the text.\n",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "12949dac-67f3-4f65-a62f-770722551c49",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C1",
+      "claim": "Marburg virus (MARV) is one of the filovirus species that cause deadly hemorrhagic fever in humans, with mortality rates up to 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "Marburg virus (MARV) is one of the filovirus species that cause deadly hemorrhagic fever in humans, with mortality rates up to 90%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about MARV cited in the abstract and introduction, representing established scientific knowledge about the virus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "893da936-a60c-42ee-b7aa-d096572f5d73",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C2",
+      "claim": "No antibody has been approved for MARV treatment to date.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no antibody has been approved for MARV treatment to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of approved therapeutics, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "09d66000-216e-44c4-972f-d2b0ff3fafc1",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C3",
+      "claim": "AF-03 is a novel human antibody that targets MARV glycoprotein (GP).",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identified a novel human antibody named AF-03 that targeted MARV glycoprotein (GP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "625ed8c5-bb2f-4e08-a912-329eaf89a385",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C4",
+      "claim": "AF-03 possesses a high binding affinity to MARV GP.",
+      "claim_type": "EXPLICIT",
+      "source": "AF-03 possessed a high binding affinity to MARV GP and showed neutralizing and protective activities against the pseudotyped MARV in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ELISA and SPR data showing binding affinity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "cb65a1c8-791c-45e3-8424-484dd7a5c627",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C5",
+      "claim": "AF-03 shows neutralizing and protective activities against pseudotyped MARV in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "AF-03 possessed a high binding affinity to MARV GP and showed neutralizing and protective activities against the pseudotyped MARV in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by neutralization assays in cell culture and mouse protection experiments presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e3900613-9be6-42f2-adf2-095619ff73dd",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C6",
+      "claim": "AF-03 recognizes the Niemann-Pick C1 (NPC1) binding domain within GP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Epitope identification, including molecular docking and experiment-based analysis of mutated species, revealed that AF-03 recognized the Niemann-Pick C1 (NPC1) binding domain within GP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular docking studies and mutagenesis experiments showing loss of binding/neutralization with specific mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "c799117b-bd51-447a-a353-58b937178255",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C7",
+      "claim": "AF-03 has neutralizing activity against pseudotyped Ebola viruses (EBOV, SUDV, and BDBV) harboring cleaved GP instead of full-length GP.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found the neutralizing activity of AF-03 to pseudotyped Ebola viruses (EBOV, SUDV, and BDBV) harboring cleaved GP instead of full-length GP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing differential neutralization of thermolysin-treated versus untreated pseudoviruses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "02590b05-8d45-4d9c-b1e4-026b1210a404",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C8",
+      "claim": "NPC2-fused AF-03 exhibits neutralizing activity to several filovirus species and EBOV mutants via binding to CI-MPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NPC2-fused AF-03 exhibited neutralizing activity to several filovirus species and EBOV mutants via binding to CI-MPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by neutralization data with AF03-NL and experiments showing CI-MPR dependence through knockdown and overexpression studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ba1e708e-9eba-4fab-843c-d9c9476aba62",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C9",
+      "claim": "Filoviruses are nonsegmented negative-sense RNA viruses, comprised of six genera.",
+      "claim_type": "EXPLICIT",
+      "source": "Filoviruses are nonsegmented negative-sense RNA viruses, comprised of six genera, Ebolavirus, Marburgvirus, Cuevavirus, Striavirus, Thamnovirus, and a recently discovered sixth genus, Dianlovirus (Amarasinghe et al., 2019; Baseler et al., 2017; Kuhn et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about filovirus taxonomy supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "2ce0e75f-2a12-4245-a200-f31cbc937528",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C10",
+      "claim": "The Marburgvirus genus consists of Marburg virus (MARV) and Ravn virus (RAVN).",
+      "claim_type": "EXPLICIT",
+      "source": "The Marburgvirus genus consists of Marburg virus (MARV) and Ravn virus (RAVN) (Amarasinghe et al., 2019; B\u00e0o et al., 2017; Ristanovi\u0107 et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established taxonomic knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "23de66d9-533a-4490-8f5e-f78bcc4df013",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C11",
+      "claim": "MARV includes three strains: Uganda, Angola, and Musoke.",
+      "claim_type": "EXPLICIT",
+      "source": "The former includes three strains-- Uganda, Angola, and Musoke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MARV strain classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "f63024a4-9f4d-4d72-8ccc-6ac209eecafd",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C12",
+      "claim": "The Ebola virus genus includes six distinct species including Zaire Ebola virus (EBOV), Bundibugyo virus (BDBV), Sudan virus (SUDV), Reston virus (RESTV), Taii Forest virus (TAFV) and Bombali virus (BOMV).",
+      "claim_type": "EXPLICIT",
+      "source": "The Ebola virus genus includes six distinct species including Zaire Ebola virus (EBOV), Bundibugyo virus (BDBV), Sudan virus (SUDV), Reston virus (RESTV), Taii Forest virus (TAFV) and Bombali virus (BOMV), the first three of which cause severe hemorrhagic fevers (Fan et al., 2020; Goldstein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established taxonomic knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "098178d9-1b7e-41f5-be57-ce313751f6f5",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C13",
+      "claim": "EBOV, BDBV, and SUDV cause severe hemorrhagic fevers.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ebola virus genus includes six distinct species including Zaire Ebola virus (EBOV), Bundibugyo virus (BDBV), Sudan virus (SUDV), Reston virus (RESTV), Taii Forest virus (TAFV) and Bombali virus (BOMV), the first three of which cause severe hemorrhagic fevers (Fan et al., 2020; Goldstein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about disease-causing Ebola species supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "76e65cda-e773-4397-b6b3-91b25532ce97",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C14",
+      "claim": "Cuevavirus (Lloviu virus, LLOV) was isolated from Miniopterus schreibersii bats in Spain and Hungary.",
+      "claim_type": "EXPLICIT",
+      "source": "The genus Cuevavirus (Lloviu virus, LLOV) was isolated from Miniopterus schreibersii bats in Spain and Hungary and potently infected monkeys and human cells (Negredo et al., 2011; Kemenesi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about LLOV supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "7e0fcc49-b173-4955-b3cf-d740e9244d7c",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C15",
+      "claim": "LLOV potently infected monkeys and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The genus Cuevavirus (Lloviu virus, LLOV) was isolated from Miniopterus schreibersii bats in Spain and Hungary and potently infected monkeys and human cells (Negredo et al., 2011; Kemenesi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "f613d941-13de-40a1-bd9d-facd958c4152",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C16",
+      "claim": "M\u011bngl\u00e0 virus (MLAV) was discovered in the liver of a bat from Mengla, Yunnan, China in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "The genus M\u011bngl\u00e0 virus (MLAV) was discovered in the liver of a bat from Mengla, Yunnan, China in 2019.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MLAV discovery supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "d85374e9-2507-4a8c-99bd-daa4a18112ba",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C17",
+      "claim": "Only an almost complete RNA sequence of the MLAV viral genome is available, with no viable MLAVs isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, only an almost complete RNA sequence of the viral genome is available, there are no viable MLAVs isolated (Yang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the current state of MLAV research supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "78a95963-5cb4-4911-95ab-c829cf29d433",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C18",
+      "claim": "MARV and EBOV infect humans and non-human primates.",
+      "claim_type": "EXPLICIT",
+      "source": "MARV and EBOV infect humans and non-human primates, causing Marburg virus disease (MVD) and EBOV virus disease (EVD) with an incubation period of 2\u201321 days (Mehedi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about host range supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ba118aaa-dc2f-425e-9c31-fcf37451a181",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C19",
+      "claim": "MARV and EBOV cause Marburg virus disease (MVD) and EBOV virus disease (EVD) with an incubation period of 2\u201321 days.",
+      "claim_type": "EXPLICIT",
+      "source": "MARV and EBOV infect humans and non-human primates, causing Marburg virus disease (MVD) and EBOV virus disease (EVD) with an incubation period of 2\u201321 days (Mehedi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "51d6a8a9-8807-4529-82c4-4bbb4bcf2e60",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C20",
+      "claim": "The symptoms of MVD include severe headache and high fever rapidly within 5 days of the onset of symptoms, followed by diarrhea and vomiting, leading to up to 90% fatality rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The symptoms of MVD include severe headache and high fever rapidly within 5 days of the onset of symptoms, followed by diarrhea and vomiting, leading to up to 90% fatality rate (Mehedi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established clinical knowledge about MVD symptoms supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ecb49d83-eda9-44ec-8327-0027180c3c01",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C21",
+      "claim": "Glycoprotein (GP) on the surface of filoviruses is a type I transmembrane protein and consists of GP1 and GP2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycoprotein (GP) on the surface of filoviruses is a type I transmembrane protein and consists of GP1 and GP2 subunits (Beniac and Booth, 2017; Lee and Saphire, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about filovirus GP supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "44a250ab-ad0a-4d43-bf10-40f44c10e01f",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C22",
+      "claim": "Filovirus GP is inserted into the virus envelope in the form of homotrimeric spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is inserted into the virus envelope in the form of homotrimeric spikes (Brauburger et al., 2012) and is responsible for viral attachment and entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "b29dc7b4-fe71-464a-9049-ca4a13c685b9",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C23",
+      "claim": "Filovirus GP is responsible for viral attachment and entry.",
+      "claim_type": "EXPLICIT",
+      "source": "It is inserted into the virus envelope in the form of homotrimeric spikes (Brauburger et al., 2012) and is responsible for viral attachment and entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established functional knowledge about GP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "5e82a9fb-c60f-41d2-89b5-114790dc8220",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C24",
+      "claim": "Furin cleaves Marburg GP at amino acid 435 into two subunits, GP1 and GP2, which remain linked by a disulfide bond.",
+      "claim_type": "EXPLICIT",
+      "source": "The furin cleaves Marburg GP at the amino acid 435 into two subunits, GP1 and GP2, which remain linked by a disulfide bond (Schafer et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GP processing supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "0eefc817-4a19-4e16-979e-595bfbf6b80b",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C25",
+      "claim": "GP1 contains a receptor binding domain (RBD), a glycan cap, and a heavily glycosylated mucin-like domain (MLD).",
+      "claim_type": "EXPLICIT",
+      "source": "GP1 contains a receptor binding domain (RBD), a glycan cap, and a heavily glycosylated mucin-like domain (MLD), which mediates binding to entry factors and receptors (Hashiguchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about GP1 supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "261c1ab8-463d-4770-b0cf-a811413bb985",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C26",
+      "claim": "GP1 mediates binding to entry factors and receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "GP1 contains a receptor binding domain (RBD), a glycan cap, and a heavily glycosylated mucin-like domain (MLD), which mediates binding to entry factors and receptors (Hashiguchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established functional knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "8cc6b9cb-abed-4cea-90f5-2b76a94d5a98",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C27",
+      "claim": "GP2 has a partial MLD, a transmembrane domain for viral anchoring to the envelope surface, and a fusion peptide required for the fusion of virus and cell membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "GP2 has a partial MLD, a transmembrane domain for viral anchoring to the envelop surface, and a fusion peptide required for the fusion of virus and cell membranes (Fusco et al., 2015; Gregory et al., 2011; Lee et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural and functional knowledge about GP2 supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "655927a4-4347-4127-baf3-5755b4bea6b3",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C28",
+      "claim": "In the Ebola virus, the furin cleavage site is located at residue 501 and the entire MLD is attached to the GP1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Ebola virus, the furin cleavage site is located at residue 501 and the entire MLD is attached to the GP1 subunit (Volchkov et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about EBOV GP supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "564fbe2e-247b-4083-81db-a3ff22c3667a",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C29",
+      "claim": "Marburg virus contains 66 amino acids on GP2 that are absent from the Ebola virus MLD, called 'wings' due to their outward projection and flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Marburg virus contains 66 amino acids on GP2 that are absent from the Ebola virus MLD, and are called 'wings' due to their outward projection and flexibility (Fusco et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about MARV GP supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e02c6787-cc80-4fa2-9efa-fee16b337c5b",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C30",
+      "claim": "GP is a major target for antibodies validated in filovirus-infected animals and clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, GP is a major target for antibodies validated in filovirus-infected animals and clinical trials because it is exposed on the surface of the virus and plays a key role in viral entry (Dye et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about therapeutic development supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "2492a28d-edfc-4bc0-8ec4-7ea7c2ffc78c",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C31",
+      "claim": "GP is exposed on the surface of the virus and plays a key role in viral entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, GP is a major target for antibodies validated in filovirus-infected animals and clinical trials because it is exposed on the surface of the virus and plays a key role in viral entry (Dye et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GP function supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "9e9ab5ed-f750-462e-ae18-6d621c1a7cbf",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C32",
+      "claim": "Filoviruses initially enter cells by endocytosis or macropinocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Filoviruses initially enter cells by endocytosis or macropinocytosis (Aleksandrowicz et al., 2011; Saeed et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about viral entry mechanisms supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "423e2694-a88f-4eb1-9865-a01c4f0a8e46",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C33",
+      "claim": "Once inside the endosome, GP is cleaved by host cathepsins, and glycan cap and MLD are removed, enabling GP to bind to NPC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Once inside the endosome, GP is cleaved by host cathepsins, and glycan cap and MLD are removed, enabling GP to bind to NPC1 (Carette et al., 2011; Brecher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the viral entry mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "c1316e65-2825-4c0f-9d18-59216af78599",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C34",
+      "claim": "Ebola viral entry requires cathepsin B cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Ebola viral entry requires cathepsin B cleavage (Martinez et al., 2010), which is redundant for MARV entry (Gnirss et al., 2012; Misasi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EBOV entry supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "8d87091b-0d95-42cb-a1fd-ef7c3a004b59",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C35",
+      "claim": "Cathepsin B cleavage is redundant for MARV entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Ebola viral entry requires cathepsin B cleavage (Martinez et al., 2010), which is redundant for MARV entry (Gnirss et al., 2012; Misasi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about MARV entry supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e73ce362-35d4-4dcf-a8cd-7d43348cbfa3",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C36",
+      "claim": "The receptor binding domain is masked by glycan cap and MLD in the Ebola virus, whereas it is partially exposed in the Marburg virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Hashiguchi et al., 2015 proposed that the receptor binding domain was masked by glycan cap and MLD in the Ebola virus, whereas it was partially exposed in the Marburg virus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge from the literature supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "2421d265-fe21-48a0-bb08-0509386159fa",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C37",
+      "claim": "There is no licensed treatment or vaccine for Marburg infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there is no licensed treatment or vaccine for Marburg infection, although a panel of antibodies with the potentials of neutralization has been isolated from a survivor subjected to MARV infection (Flyak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the current state of MARV therapeutics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "b9b275ee-2dbc-4c98-ac1f-1a3a35ce9ff4",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C38",
+      "claim": "A panel of antibodies with neutralization potential has been isolated from a survivor subjected to MARV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there is no licensed treatment or vaccine for Marburg infection, although a panel of antibodies with the potentials of neutralization has been isolated from a survivor subjected to MARV infection (Flyak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "22eb51ef-586b-4267-9694-7dfe82b2b284",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C39",
+      "claim": "AF-03 was selected from a well-established phage surface display antibody library with immense diversity in the selected complementarity determining region (CDR) loops.",
+      "claim_type": "EXPLICIT",
+      "source": "AF-03 was selected from a well-established phage surface display antibody library with immense diversity in the selected complementarity determining region (CDR) loops (Liu et al., 2021; Duan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used to identify AF-03, supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "37187615-eff4-4f10-93a2-4d0770c344f4",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C40",
+      "claim": "AF-03 was eukaryotically expressed with purity over 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1A, AF-03 was eukaryotically expressed with the purity of over 95%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SDS-PAGE data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "95e7a935-1536-4970-b84f-a8a4a90b886a",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C41",
+      "claim": "ELISA analysis showed remarkable binding of AF-03 to MARV GP.",
+      "claim_type": "EXPLICIT",
+      "source": "ELISA analysis showed the remarkable binding of AF-03 to MARV GP (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "a7304e5e-aa45-400b-8b08-fb90a13eac88",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C42",
+      "claim": "AF-03 bound to MARV GP with a KD value of 4.71 \u00d7 10\u201311 M.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SPR assay was done to determine the binding kinetics and showed that AF-03 bound to MARV GP with high affinity (AF-03 KD value was 4.71 \u00d7 10\u201311 M, monovalent AF-03 Fab KD value was 2.15 \u00d7 10\u201311 M) (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SPR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "4d89dcee-02c0-4bb2-ac51-fe0a86a5b721",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C43",
+      "claim": "Monovalent AF-03 Fab bound to MARV GP with a KD value of 2.15 \u00d7 10\u201311 M.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SPR assay was done to determine the binding kinetics and showed that AF-03 bound to MARV GP with high affinity (AF-03 KD value was 4.71 \u00d7 10\u201311 M, monovalent AF-03 Fab KD value was 2.15 \u00d7 10\u201311 M) (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SPR data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "6377c335-8f90-4a56-8f37-c68afebc14e4",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C44",
+      "claim": "Q128S-N129S or C226Y mutation significantly impaired the neutralizing activity of AF-03 to MARV pseudovirus compared with WT MARV.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition assay revealed the significant impairment of the neutralizing activity of AF-03 to MARV pseudovirus harboring Q128S-N129S or C226Y compared with WT MARV and those loading other indicated mutations (Figure 2A left panel), which indicates that Q128/N129/C226 functions as key amino acids responsible for AF-03 neutralization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization assay data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e7c2edb0-4faa-4fab-a83f-d86ce64401d2",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C45",
+      "claim": "Q128/N129/C226 functions as key amino acids responsible for AF-03 neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition assay revealed the significant impairment of the neutralizing activity of AF-03 to MARV pseudovirus harboring Q128S-N129S or C226Y compared with WT MARV and those loading other indicated mutations (Figure 2A left panel), which indicates that Q128/N129/C226 functions as key amino acids responsible for AF-03 neutralization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mutagenesis data showing loss of neutralization with these specific mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "cf7cc90f-c1a9-4be8-ae7f-01f3810df434",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C46",
+      "claim": "Q128S-N129S or C226Y mutation significantly disrupted the binding of GP to AF-03.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we constructed the mutated MARV GP. ELISA assay showed that Q128S-N129S or C226Y mutation significantly disrupted the binding of GP to AF-03, while the binding and neutralizing capacity of MR78 to mutant GP and pseudovirus harboring C226Y instead of Q128S-N129S, a mAb reported to be isolated from Marburg virus survivors (Hashiguchi et al., 2015), was comparable to WT counterparts (Figure 2A right panel and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e4dbfeac-cf7a-42d3-9a51-7eebf9f2b251",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C47",
+      "claim": "The binding and neutralizing capacity of MR78 to mutant GP and pseudovirus harboring C226Y was comparable to WT counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we constructed the mutated MARV GP. ELISA assay showed that Q128S-N129S or C226Y mutation significantly disrupted the binding of GP to AF-03, while the binding and neutralizing capacity of MR78 to mutant GP and pseudovirus harboring C226Y instead of Q128S-N129S, a mAb reported to be isolated from Marburg virus survivors (Hashiguchi et al., 2015), was comparable to WT counterparts (Figure 2A right panel and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA and neutralization data shown in Figure 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "90e4ba0c-5fd0-4d8c-90a2-6e55f276b474",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C48",
+      "claim": "The structure of both mutants (Q128S-N129S and C226Y) was not obviously different from that of the parental GP by circular dichroism.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we analyzed the secondary structure of the MARV GP and its mutants. By circular dichroism, the structure of both mutants was not obviously different from that of the parental GP (Figure 2C and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by circular dichroism data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "a65f11bc-cd09-4809-9794-b95f3800927d",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C49",
+      "claim": "The weakened binding to the antibody was not due to the conformational change of GP caused by the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the weakened binding to the antibody was not due to the conformational change of GP caused by the mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the circular dichroism data showing no structural changes in the mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "40062655-2537-441a-9713-6fa1b5e369bc",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C50",
+      "claim": "AF-03 and MR78 could compete with each other to bind to MARV GP.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive ELISA showed that AF-03 and MR78 could compete with each other to bind to MARV GP (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by competitive ELISA data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ff4b9545-0ac9-491b-8357-419869ccd3f0",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C51",
+      "claim": "The epitopes of AF-03 and MR78 overlapped partially.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate the epitopes of these two mAbs overlapped partially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the competitive binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "b865a0bd-1bd7-482c-9bda-d66ff599a229",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C52",
+      "claim": "Liver and adrenal glands have been reported to be the early targets of MARV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver and adrenal glands have been reported to be the early targets of MARV infection (Brauburger et al., 2012; Shifflett and Marzi, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "f33eb951-6fe5-40c7-9c98-65940576802e",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C53",
+      "claim": "Huh7 and HEK293T cell lines were susceptible to MARV cell entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we first tested the entry of MARV to hepatocyte cell line (Huh7) and renal cell line (HEK293T cells) by measuring the relative luciferase intensity. These two cell lines were susceptible to MARV cell entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing viral entry in these cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "7f00c093-8fb6-4ea5-a156-4c2441199d1e",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C54",
+      "claim": "AF-03 actively inhibited pseudotyped MARV viral entry to HEK293T cells, with IC50 value of 0.13 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, AF-03 actively inhibited viral entry to HEK293T cells, with IC50 value of 0.13 \u03bcg/ml. As well, IC50 of MR78 was 0.44 \u03bcg/ml (Figure 3A left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization assay data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "8016f1c6-3bf6-4be1-a9f9-015a2c595b87",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C55",
+      "claim": "IC50 of MR78 for inhibiting MARV entry to HEK293T cells was 0.44 \u03bcg/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, AF-03 actively inhibited viral entry to HEK293T cells, with IC50 value of 0.13 \u03bcg/ml. As well, IC50 of MR78 was 0.44 \u03bcg/ml (Figure 3A left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization assay data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "08df0bd3-3058-411a-8220-deeabeb3dbe8",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C56",
+      "claim": "In Huh7 cells, IC50 of AF-03 and MR78 was 0.4 and 1.03 \u03bcg/ml, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In Huh7 cells, IC50 of AF-03 and MR78 was 0.4 and 1.03 \u03bcg/ml, respectively (Figure 3A right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization assay data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "dec99cb4-e0e4-4ec7-a08c-3084c2907028",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C57",
+      "claim": "AF-03 has a stronger potency of neutralization than MR78.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that AF-03 has a stronger potency of neutralization than MR78.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of IC50 values between AF-03 and MR78.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "3a3a2ad7-0e55-4c22-8760-dade59d66504",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C58",
+      "claim": "AF-03 showed strong and comparable neutralizing ability to pseudotyped Angola, Musoke, and RAVN strains with IC50 of 0.32, 0.12, and 0.15 \u03bcg/ml, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We also conducted AF-03 neutralization experiments on pseudotyped Angola, Musoke, and RAVN strains and showed a strong and comparable neutralizing ability to all these strains (IC50 was 0.32, 0.12, and 0.15 \u03bcg/ml, respectively) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ceec755f-591b-4cfe-84d7-2aa2d0c2a36c",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C59",
+      "claim": "The AF-03-treated group displayed lower bioluminescence activity compared with the control group in mice exposed to pseudotyped MARV.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3C and D, the AF-03-treated group displayed lower bioluminescence activity compared with the control group, while the treatment with control antibodies had no effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo bioluminescence imaging data shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "9d764b19-9108-4b36-bc4c-53320ac5fd81",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C60",
+      "claim": "Administration of 1 mg/kg AF-03 prior to the injection of MARV could decrease viral infection to approximately 50% level.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of 1 mg/kg AF-03 prior to the injection of MARV could decrease viral infection to approximately 50% level and increasing doses of AF-03 led to higher preventive efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo bioluminescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "3d85b954-ea10-4d36-a949-84c52b2461e1",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C61",
+      "claim": "Increasing doses of AF-03 led to higher preventive efficacy against MARV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of 1 mg/kg AF-03 prior to the injection of MARV could decrease viral infection to approximately 50% level and increasing doses of AF-03 led to higher preventive efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dose-response data from in vivo experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "5fdb426d-96fa-486f-bc32-4d62f055a1fc",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C62",
+      "claim": "AF-03 is capable of preventing MARV infection in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates clearly that AF-03 is capable of preventing from MARV infection in a dose-dependent manner and represents a potential candidate for MARV treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dose-response data in the in vivo experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "0f7d85b4-8f9b-4f80-b642-21661da207de",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C63",
+      "claim": "Glycan cap or mucin-like domain are known to mask the putative receptor-binding domain on EBOV, SUDV, and BDBV GP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, considering that glycan cap or mucin-like domain are known to mask the putative receptor-binding domain on EBOV, SUDV, and BDBV GP and thus impede the engagement between AF-03 and GP (Hashiguchi et al., 2015), glycan cap and mucin-like domain were enzymatically cleaved by digesting GP with 250 \u03bcg/ml thermolysin at 37 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ff74b1b5-a076-4347-859d-a7c2e8b982c4",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C64",
+      "claim": "The infection of pseudotyped ebolavirus harboring cleaved GP to host cells was comparable or stronger than those containing intact GP.",
+      "claim_type": "EXPLICIT",
+      "source": "The infection of pseudotyped ebolavirus harboring cleaved GP to host cells was comparable or stronger than those containing intact GP (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by infection data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "f19c2d3d-de7d-4c85-9679-caf01279c2c5",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C65",
+      "claim": "The inhibitory function of AF-03 on cell entry of EBOV, SUDV, and BDBV bearing cleaved GP was much stronger than those bearing uncleaved GP.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the inhibitory function of AF-03 on cell entry of all three species of ebolavirus bearing cleaved GP was much stronger than those bearing uncleaved GP (Figure 4), which suggests that AF-03 has therapeutic potentials for EBOV, SUDV, and BDBV infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization data comparing cleaved versus uncleaved GP shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "8878fd8b-66f7-49df-943b-30c60f63a6a3",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C66",
+      "claim": "AF-03 has therapeutic potentials for EBOV, SUDV, and BDBV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the inhibitory function of AF-03 on cell entry of all three species of ebolavirus bearing cleaved GP was much stronger than those bearing uncleaved GP (Figure 4), which suggests that AF-03 has therapeutic potentials for EBOV, SUDV, and BDBV infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the neutralization data showing activity against cleaved GP forms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "a9bc6c61-fa4d-4d9c-a1e7-fb3b6be0ce23",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C67",
+      "claim": "NPC2-fused AF-03 (AF03-NL), rather than AF-03, bound to CI-MPR1-3.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that NPC2-fused AF-03 (termed AF03-NL), rather than AF-03, bound to CI-MPR1-3 (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ca492cf2-aef3-4a72-9cd6-1085d8ec1336",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C68",
+      "claim": "AF03-NL instead of AF-03 adhered to the cell surface of HEK293T cells expressing CI-MPR.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, AF03-NL instead of AF-03 adhered to the cell surface, detected by fluorescence-labelled secondary IgG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data showing cell surface binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "5d253449-cf81-4b68-8475-3e39ae452e9d",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C69",
+      "claim": "Upon endocytosis, the fluorescence on the cell surface decreased dramatically, implying the occurrence of AF03-NL internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon endocytosis, the fluorescence on the cell surface decreased dramatically, implying the occurrence of AF03-NL internalization (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "258c8d1b-bbdc-430d-b5ac-a3731d6f6de3",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C70",
+      "claim": "APC and pHrodo Red-conjugated AF03-NL was observed in the acidic endosomal compartment by flow cytometry and fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, APC and pHrodo Red-conjugated AF03-NL was observed in the acidic endosomal compartment by flow cytometry and fluorescence microscopy, respectively (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry and microscopy data shown in Figure 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "4edce4a7-7069-44c4-b847-994631c60974",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C71",
+      "claim": "AF-03 was not seen in the endosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, AF-03 was not seen in the endosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the absence of signal in flow cytometry and microscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "8e74f19e-c2cb-4624-90ce-b2b0bfd4399a",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C72",
+      "claim": "AF03-NL showed stronger neutralizing activity than AF-03 against MARV pseudovirus with IC50 of 0.057 and 0.284 \u03bcg/ml, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, AF03-NL showed stronger neutralizing activity than AF-03 (The IC50 was 0.057 and 0.284 \u03bcg/ml, respectively) (Figure 6\u2014figure supplement 1B), which may be attributed to sustained tethering of AF03-NL to pseudovirus at extracellular space as well as endosomal compartment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization assay data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "39eeb2df-1f31-43f7-b2e3-e615f7edac27",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C73",
+      "claim": "The stronger neutralizing activity of AF03-NL may be attributed to sustained tethering to pseudovirus at extracellular space as well as endosomal compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, AF03-NL showed stronger neutralizing activity than AF-03 (The IC50 was 0.057 and 0.284 \u03bcg/ml, respectively) (Figure 6\u2014figure supplement 1B), which may be attributed to sustained tethering of AF03-NL to pseudovirus at extracellular space as well as endosomal compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed enhanced neutralization.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "233dad6d-d7d6-467e-af7a-9da9293c6c5a",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C74",
+      "claim": "AF03-NL displayed superior neutralizing activity to nine filovirus species compared to AF-03.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we compared the neutralizing activity of AF03-NL and AF-03 to a series of filovirus species. AF03-NL displayed superior neutralizing activity to the other nine filovirus species. While, no or weak inhibition of entry by AF-03 was found (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization data across multiple filovirus species shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ed619751-bbc7-401a-8512-9832cee08c3a",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C75",
+      "claim": "AF03-NL, instead of AF-03, actively inhibited cell entry of 17 EBOV mutants that were detected previously in natural hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, AF03-NL, instead of AF-03, also actively inhibited cell entry of 17 EBOV mutants that were detected previously in natural hosts (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization data for EBOV mutants shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "f93b6597-e393-4c74-9303-41a9807cb439",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C76",
+      "claim": "AF-03, NPC2 alone or in combination did not inhibit EBOV entry.",
+      "claim_type": "EXPLICIT",
+      "source": "AF-03, NPC2 alone or in combination did not inhibit EBOV entry. Conversely, AF03-NL actively impeded this process (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization assay data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ff41c0de-fa9d-4f5b-8351-2f0062947936",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C77",
+      "claim": "AF03-NL actively impeded EBOV entry.",
+      "claim_type": "EXPLICIT",
+      "source": "AF-03, NPC2 alone or in combination did not inhibit EBOV entry. Conversely, AF03-NL actively impeded this process (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization assay data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "7eff0a79-4026-4cd1-9487-6d9557c6fc3b",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C78",
+      "claim": "CI-MPR knockdown rendered significant abrogation of the inhibitory ability of AF03-NL.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that CI-MPR knockdown rendered significant abrogation of the inhibitory ability of AF03-NL (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization data in CI-MPR knockdown cells shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e5fb8ba8-2f62-49e4-970f-7a53351d68cc",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C79",
+      "claim": "The inhibitory effects of AF03-NL were augmented in CI-MPR-overexpressed cells compared with empty vector-introduced counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "We also introduced CI-MPR into the Huh7 cell line that is null for this receptor (Figure 5\u2014figure supplement 2B). The inhibitory effects of AF03-NL were augmented in CI-MPR-overexpressed cells compared with empty vector-introduced counterparts (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by neutralization data in CI-MPR overexpressing cells shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "3b5ea78c-71a7-402b-adab-b5b978c2dfae",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C80",
+      "claim": "The inhibitory potency of AF03-NL is dependent on the interaction between NPC2 and CI-MPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that the inhibitory potency of AF03-NL is dependent on the interaction between NPC2 and CI-MPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the knockdown and overexpression experiments showing CI-MPR dependence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "f0a85a9d-cac6-4228-906a-5fd9426de434",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C81",
+      "claim": "The Marburg virus was initially identified after simultaneous outbreaks in Marburg and Frankfurt in Germany in 1967.",
+      "claim_type": "EXPLICIT",
+      "source": "The Marburg virus was initially identified after simultaneous outbreaks in Marburg and Frankfurt in Germany in 1967 (Hashiguchi et al., 2015; Abir et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established historical knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "495ff8cc-c052-47a9-a23f-a9c5084870db",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C82",
+      "claim": "There have been a dozen outbreaks of Marburg virus infection in humans to date.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, there have been a dozen outbreaks of Marburg virus infection in humans (Araf et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established epidemiological knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "ce7f9c77-89bb-4ac7-851e-d14194fbec32",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C83",
+      "claim": "Several MARV GP-specific neutralizing antibodies were screened from the PBMC samples of a MARV-infected survivor, which achieved 100% protection in mice subjected to mouse-adapted MARV challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Flyak et al., 2015 screened several MARV GP-specific neutralizing antibodies from the PBMC samples of a MARV-infected survivor, which achieved 100% protection in mice subjected to mouse-adapted MARV challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "b2808678-04e3-4bcb-ae68-1b7df1104d86",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C84",
+      "claim": "Three mAbs cocktail could protect hamsters from lethal hamster-adapted MARV infection, while treatment with either one or two antibodies failed.",
+      "claim_type": "EXPLICIT",
+      "source": "The MARV GP-specific antibody cocktail was also developed, three mAbs cocktail could protect hamsters from lethal hamster-adapted MARV infection, while treatment with either one or two antibodies failed (Marzi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the literature supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "055c243a-a43e-48a3-a9bd-5ab003b5e170",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C85",
+      "claim": "AF-03 effectively inhibited HIV vector pseudotyped MARV viral entry at IC50 of 0.13 and 0.4 \u03bcg/ml in HEK293T and Huh7, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that AF-03 effectively inhibited HIV vector (pSG3.\u0394env.cmvFluc) pseudotyped MARV viral entry at IC50 of 0.13 and 0.4 \u03bcg/ml in HEK293T and Huh7, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by neutralization assay data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "74733669-747a-438d-8058-f0db35d5a6cd",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C86",
+      "claim": "Compared with the control antibody, AF-03 exhibited a protective property against pseudovirus infection in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, compared with the control antibody, AF-03 exhibited a protective property against pseudovirus infection in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo bioluminescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e050e9e5-e6cd-4426-afa0-0501ed14fe1f",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C87",
+      "claim": "N129 is known to be located in the NPC1 binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Epitope mapping results showed that Q128-N129 and C226 of GP was the binding and functional epitopes that interacted with AF-03, which means AF-03 targeting the interface of GP-NPC1 interaction, considering that N129 is known to be located in the NPC1 binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about GP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "03b40186-21ab-4943-ba5e-b88471149299",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C88",
+      "claim": "RBD is highly conserved among filovirus species.",
+      "claim_type": "EXPLICIT",
+      "source": "RBD is highly conserved among filovirus species, so it is an attractive target for broadly effective anti-filovirus drug development (Densumite et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "9744a862-eb64-4689-8fa3-39a284a71cfd",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C89",
+      "claim": "AF-03 bound to EBOV GPcl.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AF-03 also bound to EBOV GPcl and could neutralize ebola viruses bearing cleaved GP in vitro, suggesting that AF-03 represents a good candidate for endosome-delivering strategy by ligation to another mAb against a surface-exposed EBOV GP epitope or a ligand peptide for host cation-independent mannose-6-phosphate receptor (Wirchnianski et al., 2021), which will ultimately afford cross-reactivity against multiple filovirus species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the neutralization data with cleaved GP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "b301dce4-b7f5-436c-8920-978a8cfd4557",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C90",
+      "claim": "AF-03 could neutralize ebola viruses bearing cleaved GP in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AF-03 also bound to EBOV GPcl and could neutralize ebola viruses bearing cleaved GP in vitro, suggesting that AF-03 represents a good candidate for endosome-delivering strategy by ligation to another mAb against a surface-exposed EBOV GP epitope or a ligand peptide for host cation-independent mannose-6-phosphate receptor (Wirchnianski et al., 2021), which will ultimately afford cross-reactivity against multiple filovirus species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by neutralization data with thermolysin-treated pseudoviruses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "f0716f5e-f85a-4f1c-8235-451804b3525f",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C91",
+      "claim": "AF-03 represents a good candidate for endosome-delivering strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that AF-03 also bound to EBOV GPcl and could neutralize ebola viruses bearing cleaved GP in vitro, suggesting that AF-03 represents a good candidate for endosome-delivering strategy by ligation to another mAb against a surface-exposed EBOV GP epitope or a ligand peptide for host cation-independent mannose-6-phosphate receptor (Wirchnianski et al., 2021), which will ultimately afford cross-reactivity against multiple filovirus species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion based on the observed properties of AF-03.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "12d84a51-765f-4e44-90c2-b44ffc2874e0",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C92",
+      "claim": "AF-03 is a high-affinity anti-MARV antibody targeting a conserved and hidden site at the filovirus GPcl-NPC1 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study identified a high-affinity anti-MARV antibody AF-03 targeting a conserved and hidden site at the filovirus GPcl-NPC1 interface, which was capable of neutralizing MARV infection both in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the binding, epitope mapping, and neutralization data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "26674984-7607-4f1c-b2aa-67ba4c08ffeb",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C93",
+      "claim": "AF-03 was capable of neutralizing MARV infection both in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our study identified a high-affinity anti-MARV antibody AF-03 targeting a conserved and hidden site at the filovirus GPcl-NPC1 interface, which was capable of neutralizing MARV infection both in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro neutralization assays and in vivo mouse protection experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "12eb78d0-2aed-43e0-b167-b90eb7d57b37",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C94",
+      "claim": "AF-03 may be a potential candidate for the effective protection against pan-filovirus species infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, AF-03 may be a potential candidate for the effective protection against pan-filovirus species infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the broad neutralization data with AF03-NL.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "bb470c50-ca00-4c29-86c6-60e3526d9da5",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C95",
+      "claim": "HEK293T cells express CI-MPR.",
+      "claim_type": "IMPLICIT",
+      "source": "Next, we investigated the internalization of AF03-NL. AF03-NL or AF-03 was incubated with HEK293T cells, which expressed CI-MPR (Figure 5\u2014figure supplement 2A), at 4\u2103 for attachment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "559b1b5e-c45b-45f2-81f9-6f3bd6df1075",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C96",
+      "claim": "Huh7 cells are null for CI-MPR.",
+      "claim_type": "IMPLICIT",
+      "source": "We also introduced CI-MPR into the Huh7 cell line that is null for this receptor (Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "6bd1cb30-fcb7-465c-b6c8-ed5452344415",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C97",
+      "claim": "AF03-NL has relatively weak binding activity compared with AF-03 to MARV GP.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we compared the binding of AF03-NL/AF-03 to MARV GP. ELISA showed relatively weak binding activity of AF03-NL compared with AF-03 (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ELISA data shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "c6507a20-4e6e-449f-8c55-a8ea666d6de7",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "claim_id": "C98",
+      "claim": "Cetuximab had no effects on pseudotyped MARV entry.",
+      "claim_type": "EXPLICIT",
+      "source": "We used MR78 and cetuximab as positive and negative controls, respectively. As expected, cetuximab had no effects on pseudotyped MARV entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by neutralization assay data showing no inhibition by the negative control antibody.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "34e33b8a-ea8e-414b-bb55-819802173b32",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AF-03 is a novel human antibody selected from a phage display library that binds to MARV GP with high affinity (KD ~10^-11 M). The antibody was expressed with >95% purity and demonstrated remarkable binding to MARV GP by ELISA and SPR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C43 are well-supported by experimental data including SDS-PAGE (C40), ELISA (C41), and SPR measurements (C42-C43) showing picomolar affinity. The methodology is clearly described and the binding data are consistent across multiple assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "849c3f28-5724-4a33-9e67-a5f812f9beed",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AF-03 recognizes the NPC1 binding domain within GP1, specifically targeting residues Q128, N129, and C226. Mutagenesis studies showed that Q128S-N129S or C226Y mutations significantly impaired AF-03 binding and neutralization without altering GP structure. AF-03 epitope partially overlaps with the previously characterized antibody MR78.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 are supported by comprehensive epitope mapping including molecular docking, mutagenesis experiments, neutralization assays, ELISA binding studies, circular dichroism structural analysis, and competitive binding assays. The data consistently demonstrate that these residues are critical for AF-03 recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "cfea386b-5849-49c8-98b5-f86383b358f9",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AF-03 demonstrates potent neutralizing activity against pseudotyped MARV in vitro across multiple strains. In HEK293T cells, AF-03 showed IC50 of 0.13 \u03bcg/ml (Uganda strain), and demonstrated comparable activity against Angola (0.32 \u03bcg/ml), Musoke (0.12 \u03bcg/ml), and RAVN (0.15 \u03bcg/ml) strains. AF-03 showed superior neutralization potency compared to the control antibody MR78.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by neutralization assay data across multiple MARV strains and cell lines. The IC50 values are consistently reported and the comparative analysis with MR78 is appropriate. However, these are pseudovirus studies, not authentic virus, which limits the strength of the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "a6d8e3e5-be01-44ea-97a0-73daafd3ebe5",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AF-03 provides dose-dependent prophylactic protection against pseudotyped MARV infection in mice. Administration of 1 mg/kg AF-03 reduced viral infection to approximately 50%, with higher doses showing increased efficacy as measured by bioluminescence imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by in vivo bioluminescence data showing dose-dependent protection. However, the study uses pseudovirus rather than authentic MARV, which significantly limits the translational relevance. The authors acknowledge this limitation and note that authentic virus studies are ongoing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "993c90a6-12c8-4d2e-9603-b32d392f431d",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AF-03 neutralizes pseudotyped Ebola viruses (EBOV, SUDV, BDBV) when GP is enzymatically cleaved by thermolysin to remove the glycan cap and mucin-like domain. The neutralization of cleaved GP was significantly stronger than uncleaved GP for all three Ebola species tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are supported by neutralization data comparing thermolysin-treated versus untreated pseudoviruses. The differential neutralization is statistically significant. However, the biological relevance is uncertain since this requires artificial enzymatic cleavage rather than natural cathepsin processing during infection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "dc0e12d6-2403-446b-9c78-05a9752d1203",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NPC2-fused AF-03 (AF03-NL) binds to CI-MPR and is internalized into acidic endosomal compartments in HEK293T cells. Flow cytometry and fluorescence microscopy demonstrated that AF03-NL, but not AF-03, adheres to cell surfaces expressing CI-MPR and is subsequently internalized into endosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 are supported by multiple complementary assays including ELISA for CI-MPR binding, flow cytometry for surface binding and internalization kinetics, and fluorescence microscopy with pH-sensitive dyes for endosomal localization. The data consistently show CI-MPR-dependent internalization of AF03-NL.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "a19ee816-3eb7-4658-93b8-2d8d976437df",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AF03-NL demonstrates superior broad-spectrum neutralizing activity compared to AF-03 against multiple filovirus species and EBOV mutants, despite having weaker direct binding to MARV GP. AF03-NL showed IC50 of 0.057 \u03bcg/ml versus 0.284 \u03bcg/ml for AF-03 against MARV, and neutralized nine additional filovirus species and 17 EBOV mutants that AF-03 could not effectively neutralize.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C74-C75 are well-supported by extensive neutralization data across multiple viral species and mutants. The paradox of weaker GP binding (C97) but stronger neutralization (C72) is noted but the mechanistic explanation (C73) is speculative. The broad-spectrum activity is the key finding and is robustly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "9f2f7fdd-1e19-4496-a088-e8949d8f1873",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The neutralizing activity of AF03-NL is dependent on the interaction between NPC2 and CI-MPR. CI-MPR knockdown significantly reduced AF03-NL neutralization, while CI-MPR overexpression in Huh7 cells (which are naturally CI-MPR null) enhanced neutralization. Neither AF-03 alone, NPC2 alone, nor their combination showed neutralizing activity against EBOV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 are supported by well-designed gain-of-function and loss-of-function experiments. The CI-MPR knockdown and overexpression studies provide strong mechanistic evidence for CI-MPR dependence. The control experiments showing no activity with AF-03 + NPC2 mixture (C76) demonstrate that covalent fusion is required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "d99c2f80-4d1e-4476-aeb9-717d418f8657",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background information on filovirus taxonomy, epidemiology, and clinical manifestations is provided, establishing that MARV causes deadly hemorrhagic fever with up to 90% mortality and that no antibody treatment has been approved to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C20, C81-C82 represent established knowledge about filoviruses supported by appropriate citations. These are accurate background statements that contextualize the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "bbf0de63-e460-4d29-b185-fb73bde63a0e",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background information on filovirus glycoprotein structure, processing, and entry mechanisms is provided, including details on GP1/GP2 subunits, furin cleavage sites, domain organization, cathepsin processing, and NPC1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C36 represent established structural and mechanistic knowledge about filovirus GP supported by appropriate citations. These accurately describe the current understanding of filovirus entry and provide necessary context for interpreting the antibody targeting strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "35eddef3-fee9-4d3a-a860-f45be4cd526a",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work on MARV antibody therapeutics is reviewed, noting that while neutralizing antibodies have been isolated from survivors and antibody cocktails have shown protection in animal models, no licensed treatment exists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38, C83-C84 accurately represent the state of MARV therapeutic development based on cited literature. This provides appropriate context for the novelty of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "13bb9b26-d976-4b56-a4a0-07d414622a3c",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information notes that liver and adrenal glands are early targets of MARV infection and that the receptor binding domain is highly conserved among filovirus species, making it an attractive therapeutic target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C88 represent established knowledge supported by citations that justify the experimental design choices (cell line selection) and therapeutic strategy (targeting conserved RBD).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "08e11e30-5276-4a57-87c2-c069449bdbb2",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors conclude that AF-03 is a high-affinity antibody targeting a conserved site at the GPcl-NPC1 interface, represents a good candidate for endosome-delivering strategies, and may be a potential candidate for pan-filovirus protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91 and C94 are speculative conclusions about future potential applications. While C92 is supported by the data presented, the broader therapeutic potential claims require validation with authentic virus, additional animal models, and demonstration of therapeutic (not just prophylactic) efficacy. The endosome-delivery strategy (C91) is proposed but not experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "006e753f-6ab6-41f4-8cd7-2a5f826db387",
+      "content_id": "c603a54e-a719-4d3c-a672-2d930a0b51b2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cetuximab (negative control antibody) had no effect on pseudotyped MARV entry, validating the specificity of the neutralization assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 describes an appropriate negative control that supports the validity of the neutralization assay system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "d66f254d-4b82-4b3c-8196-dab9d3841544",
+      "content_id": "591a7a5a-7e1c-4f04-8fb6-e31f0b4a6c08",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "AF-03 is a novel human antibody that binds to MARV GP with high affinity. The antibody was expressed with >95% purity, showed remarkable binding by ELISA, and demonstrated KD values of 4.71\u00d710\u207b\u00b9\u00b9 M for full IgG and 2.15\u00d710\u207b\u00b9\u00b9 M for monovalent Fab by SPR.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge 'convincing binding to Marburgvirus GP' but raise a critical methodological concern: 'SDS-PAGE cannot be used to assess oligomerisation of GP' and 'If affinity was calculated on a 1GP:2IgG binding sites as the authors imply, then the affinity data are incorrect due to avidity effects.' The reviewer suggests using monomeric Fab to solve this problem, indicating the reported affinity values may be compromised by avidity artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2",
+      "content_id": "591a7a5a-7e1c-4f04-8fb6-e31f0b4a6c08",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "AF-03 recognizes the NPC1 binding domain within GP1, with Q128/N129/C226 identified as key epitope residues. Mutations at these positions impaired neutralization and binding without altering GP structure by circular dichroism. AF-03 competes with MR78 for binding, indicating overlapping epitopes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers state the authors 'provide compelling evidence that residues Q128, N129, and possibly C226 are part of the epitope or at least close enough to affect binding and neutralisation' but note 'This is not conclusive support for their assumption that AF03 targets the NPC1 binding site.' However, reviewers accept that AF-03 competition with MR78 (which binds the NPC1 site) is 'enough to roughly place the epitope in this region (barring the possibility of an adjacent binding site with steric occlusion).' The epitope mapping is considered suggestive but not definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "84625084-d0fa-4312-96eb-f319663b3fc0",
+      "content_id": "591a7a5a-7e1c-4f04-8fb6-e31f0b4a6c08",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "AF-03 shows neutralizing and protective activities against pseudotyped MARV in vitro and in vivo. In cell culture, AF-03 neutralized MARV with IC50 values of 0.13 \u03bcg/ml (HEK293T) and 0.4 \u03bcg/ml (Huh7), superior to MR78. AF-03 neutralized multiple MARV strains (Angola, Musoke, RAVN) with comparable potency. In mice, AF-03 treatment reduced bioluminescence in a dose-dependent manner, with 1 mg/kg reducing infection to ~50%.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly state 'This study shows convincing binding to Marburgvirus GP and neutralization of Marburg viruses by AF03.' The presentation of Figure 3 data is noted as 'much improved and support the text.' No concerns are raised about the neutralization or in vivo protection data, indicating reviewer acceptance of these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "fb929c1c-966f-472f-bb09-eab448ea30e1",
+      "content_id": "591a7a5a-7e1c-4f04-8fb6-e31f0b4a6c08",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "AF-03 has neutralizing activity against pseudotyped Ebola viruses (EBOV, SUDV, BDBV) harboring cleaved GP but not full-length GP. Thermolysin treatment to remove glycan cap and MLD exposed the epitope, resulting in significantly stronger inhibition of cleaved GP-bearing pseudoviruses compared to uncleaved forms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers state the authors 'provide evidence for broad neutralisation' and note 'convincing neutralization of Ebolaviruses by AF03-NL.' The presentation of Figure 4 data is described as 'much improved and support the text.' No concerns are raised about the cleaved GP neutralization findings, indicating reviewer acceptance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e0a8c56e-b1b8-4453-bd66-813f8a8aa350",
+      "content_id": "591a7a5a-7e1c-4f04-8fb6-e31f0b4a6c08",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "NPC2-fused AF-03 (AF03-NL) binds to CI-MPR and undergoes internalization into acidic endosomal compartments. AF03-NL, but not AF-03 alone, bound to CI-MPR1-3, adhered to cell surfaces expressing CI-MPR, and was observed in endosomes by flow cytometry and fluorescence microscopy following internalization.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge that 'While there is not good separation of PE-stained populations by FACS in figure 5A, the cell staining data in Figure 5C are compelling to a non-expert in endosomal staining like myself.' The presentation of Figure 5 data is noted as 'much improved and support the text.' Despite some limitations in FACS data quality, reviewers accept the internalization mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "937c1b23-112d-42df-b64f-01c5383c41c6",
+      "content_id": "591a7a5a-7e1c-4f04-8fb6-e31f0b4a6c08",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "NPC2-fused AF-03 (AF03-NL) exhibits broad neutralizing activity against multiple filovirus species and EBOV mutants via CI-MPR-dependent internalization. AF03-NL showed superior neutralization compared to AF-03 against nine filovirus species and 17 EBOV mutants. CI-MPR knockdown abrogated AF03-NL activity while overexpression augmented it, demonstrating dependence on NPC2-CI-MPR interaction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers state 'The control experiments in Figure 7 are compelling showing neutralization by AF03-NL but not AF03 or NPC2 alone or in combination. Altogether these data support the internalisation and stabilisation mechanism that is proposed for the gain in neutralization breadth observed for Ebolaviruses by AF03-NL over AF03 alone.' The authors 'provide good support for the internalization of AF03-NL as the mechanism for improved breadth over the original AF03 antibody.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "3699aca0-b373-4188-aa7a-15270ae7c288",
+      "content_id": "591a7a5a-7e1c-4f04-8fb6-e31f0b4a6c08",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "AF03-NL has relatively weak binding activity compared with AF-03 to MARV GP by ELISA.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is presented in Figure 6\u2014figure supplement 1A and is not questioned by reviewers. It supports the mechanistic interpretation that AF03-NL's enhanced neutralization is due to internalization rather than improved binding affinity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "09d66000-216e-44c4-972f-d2b0ff3fafc1",
+      "result_id": "34e33b8a-ea8e-414b-bb55-819802173b32"
+    },
+    {
+      "claim_id": "22eb51ef-586b-4267-9694-7dfe82b2b284",
+      "result_id": "34e33b8a-ea8e-414b-bb55-819802173b32"
+    },
+    {
+      "claim_id": "37187615-eff4-4f10-93a2-4d0770c344f4",
+      "result_id": "34e33b8a-ea8e-414b-bb55-819802173b32"
+    },
+    {
+      "claim_id": "95e7a935-1536-4970-b84f-a8a4a90b886a",
+      "result_id": "34e33b8a-ea8e-414b-bb55-819802173b32"
+    },
+    {
+      "claim_id": "a7304e5e-aa45-400b-8b08-fb90a13eac88",
+      "result_id": "34e33b8a-ea8e-414b-bb55-819802173b32"
+    },
+    {
+      "claim_id": "4d89dcee-02c0-4bb2-ac51-fe0a86a5b721",
+      "result_id": "34e33b8a-ea8e-414b-bb55-819802173b32"
+    },
+    {
+      "claim_id": "625ed8c5-bb2f-4e08-a912-329eaf89a385",
+      "result_id": "34e33b8a-ea8e-414b-bb55-819802173b32"
+    },
+    {
+      "claim_id": "e3900613-9be6-42f2-adf2-095619ff73dd",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "6377c335-8f90-4a56-8f37-c68afebc14e4",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "e7c2edb0-4faa-4fab-a83f-d86ce64401d2",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "cf7cc90f-c1a9-4be8-ae7f-01f3810df434",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "e4dbfeac-cf7a-42d3-9a51-7eebf9f2b251",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "90e4ba0c-5fd0-4d8c-90a2-6e55f276b474",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "a65f11bc-cd09-4809-9794-b95f3800927d",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "40062655-2537-441a-9713-6fa1b5e369bc",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "ff4b9545-0ac9-491b-8357-419869ccd3f0",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "e050e9e5-e6cd-4426-afa0-0501ed14fe1f",
+      "result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed"
+    },
+    {
+      "claim_id": "cb65a1c8-791c-45e3-8424-484dd7a5c627",
+      "result_id": "cfea386b-5849-49c8-98b5-f86383b358f9"
+    },
+    {
+      "claim_id": "f33eb951-6fe5-40c7-9c98-65940576802e",
+      "result_id": "cfea386b-5849-49c8-98b5-f86383b358f9"
+    },
+    {
+      "claim_id": "7f00c093-8fb6-4ea5-a156-4c2441199d1e",
+      "result_id": "cfea386b-5849-49c8-98b5-f86383b358f9"
+    },
+    {
+      "claim_id": "8016f1c6-3bf6-4be1-a9f9-015a2c595b87",
+      "result_id": "cfea386b-5849-49c8-98b5-f86383b358f9"
+    },
+    {
+      "claim_id": "08df0bd3-3058-411a-8220-deeabeb3dbe8",
+      "result_id": "cfea386b-5849-49c8-98b5-f86383b358f9"
+    },
+    {
+      "claim_id": "dec99cb4-e0e4-4ec7-a08c-3084c2907028",
+      "result_id": "cfea386b-5849-49c8-98b5-f86383b358f9"
+    },
+    {
+      "claim_id": "3a3a2ad7-0e55-4c22-8760-dade59d66504",
+      "result_id": "cfea386b-5849-49c8-98b5-f86383b358f9"
+    },
+    {
+      "claim_id": "055c243a-a43e-48a3-a9bd-5ab003b5e170",
+      "result_id": "cfea386b-5849-49c8-98b5-f86383b358f9"
+    },
+    {
+      "claim_id": "ceec755f-591b-4cfe-84d7-2aa2d0c2a36c",
+      "result_id": "a6d8e3e5-be01-44ea-97a0-73daafd3ebe5"
+    },
+    {
+      "claim_id": "9d764b19-9108-4b36-bc4c-53320ac5fd81",
+      "result_id": "a6d8e3e5-be01-44ea-97a0-73daafd3ebe5"
+    },
+    {
+      "claim_id": "3d85b954-ea10-4d36-a949-84c52b2461e1",
+      "result_id": "a6d8e3e5-be01-44ea-97a0-73daafd3ebe5"
+    },
+    {
+      "claim_id": "5fdb426d-96fa-486f-bc32-4d62f055a1fc",
+      "result_id": "a6d8e3e5-be01-44ea-97a0-73daafd3ebe5"
+    },
+    {
+      "claim_id": "74733669-747a-438d-8058-f0db35d5a6cd",
+      "result_id": "a6d8e3e5-be01-44ea-97a0-73daafd3ebe5"
+    },
+    {
+      "claim_id": "26674984-7607-4f1c-b2aa-67ba4c08ffeb",
+      "result_id": "a6d8e3e5-be01-44ea-97a0-73daafd3ebe5"
+    },
+    {
+      "claim_id": "c799117b-bd51-447a-a353-58b937178255",
+      "result_id": "993c90a6-12c8-4d2e-9603-b32d392f431d"
+    },
+    {
+      "claim_id": "0f7d85b4-8f9b-4f80-b642-21661da207de",
+      "result_id": "993c90a6-12c8-4d2e-9603-b32d392f431d"
+    },
+    {
+      "claim_id": "ff74b1b5-a076-4347-859d-a7c2e8b982c4",
+      "result_id": "993c90a6-12c8-4d2e-9603-b32d392f431d"
+    },
+    {
+      "claim_id": "f19c2d3d-de7d-4c85-9679-caf01279c2c5",
+      "result_id": "993c90a6-12c8-4d2e-9603-b32d392f431d"
+    },
+    {
+      "claim_id": "8878fd8b-66f7-49df-943b-30c60f63a6a3",
+      "result_id": "993c90a6-12c8-4d2e-9603-b32d392f431d"
+    },
+    {
+      "claim_id": "9744a862-eb64-4689-8fa3-39a284a71cfd",
+      "result_id": "993c90a6-12c8-4d2e-9603-b32d392f431d"
+    },
+    {
+      "claim_id": "b301dce4-b7f5-436c-8920-978a8cfd4557",
+      "result_id": "993c90a6-12c8-4d2e-9603-b32d392f431d"
+    },
+    {
+      "claim_id": "02590b05-8d45-4d9c-b1e4-026b1210a404",
+      "result_id": "dc0e12d6-2403-446b-9c78-05a9752d1203"
+    },
+    {
+      "claim_id": "a9bc6c61-fa4d-4d9c-a1e7-fb3b6be0ce23",
+      "result_id": "dc0e12d6-2403-446b-9c78-05a9752d1203"
+    },
+    {
+      "claim_id": "ca492cf2-aef3-4a72-9cd6-1085d8ec1336",
+      "result_id": "dc0e12d6-2403-446b-9c78-05a9752d1203"
+    },
+    {
+      "claim_id": "5d253449-cf81-4b68-8475-3e39ae452e9d",
+      "result_id": "dc0e12d6-2403-446b-9c78-05a9752d1203"
+    },
+    {
+      "claim_id": "258c8d1b-bbdc-430d-b5ac-a3731d6f6de3",
+      "result_id": "dc0e12d6-2403-446b-9c78-05a9752d1203"
+    },
+    {
+      "claim_id": "4edce4a7-7069-44c4-b847-994631c60974",
+      "result_id": "dc0e12d6-2403-446b-9c78-05a9752d1203"
+    },
+    {
+      "claim_id": "bb470c50-ca00-4c29-86c6-60e3526d9da5",
+      "result_id": "dc0e12d6-2403-446b-9c78-05a9752d1203"
+    },
+    {
+      "claim_id": "8e74f19e-c2cb-4624-90ce-b2b0bfd4399a",
+      "result_id": "a19ee816-3eb7-4658-93b8-2d8d976437df"
+    },
+    {
+      "claim_id": "39eeb2df-1f31-43f7-b2e3-e615f7edac27",
+      "result_id": "a19ee816-3eb7-4658-93b8-2d8d976437df"
+    },
+    {
+      "claim_id": "233dad6d-d7d6-467e-af7a-9da9293c6c5a",
+      "result_id": "a19ee816-3eb7-4658-93b8-2d8d976437df"
+    },
+    {
+      "claim_id": "ed619751-bbc7-401a-8512-9832cee08c3a",
+      "result_id": "a19ee816-3eb7-4658-93b8-2d8d976437df"
+    },
+    {
+      "claim_id": "6bd1cb30-fcb7-465c-b6c8-ed5452344415",
+      "result_id": "a19ee816-3eb7-4658-93b8-2d8d976437df"
+    },
+    {
+      "claim_id": "f93b6597-e393-4c74-9303-41a9807cb439",
+      "result_id": "9f2f7fdd-1e19-4496-a088-e8949d8f1873"
+    },
+    {
+      "claim_id": "ff41c0de-fa9d-4f5b-8351-2f0062947936",
+      "result_id": "9f2f7fdd-1e19-4496-a088-e8949d8f1873"
+    },
+    {
+      "claim_id": "7eff0a79-4026-4cd1-9487-6d9557c6fc3b",
+      "result_id": "9f2f7fdd-1e19-4496-a088-e8949d8f1873"
+    },
+    {
+      "claim_id": "e5fb8ba8-2f62-49e4-970f-7a53351d68cc",
+      "result_id": "9f2f7fdd-1e19-4496-a088-e8949d8f1873"
+    },
+    {
+      "claim_id": "3b5ea78c-71a7-402b-adab-b5b978c2dfae",
+      "result_id": "9f2f7fdd-1e19-4496-a088-e8949d8f1873"
+    },
+    {
+      "claim_id": "559b1b5e-c45b-45f2-81f9-6f3bd6df1075",
+      "result_id": "9f2f7fdd-1e19-4496-a088-e8949d8f1873"
+    },
+    {
+      "claim_id": "12949dac-67f3-4f65-a62f-770722551c49",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "893da936-a60c-42ee-b7aa-d096572f5d73",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "ba1e708e-9eba-4fab-843c-d9c9476aba62",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "2ce0e75f-2a12-4245-a200-f31cbc937528",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "23de66d9-533a-4490-8f5e-f78bcc4df013",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "f63024a4-9f4d-4d72-8ccc-6ac209eecafd",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "098178d9-1b7e-41f5-be57-ce313751f6f5",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "76e65cda-e773-4397-b6b3-91b25532ce97",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "7e0fcc49-b173-4955-b3cf-d740e9244d7c",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "f613d941-13de-40a1-bd9d-facd958c4152",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "d85374e9-2507-4a8c-99bd-daa4a18112ba",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "78a95963-5cb4-4911-95ab-c829cf29d433",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "ba118aaa-dc2f-425e-9c31-fcf37451a181",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "51d6a8a9-8807-4529-82c4-4bbb4bcf2e60",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "f0a85a9d-cac6-4228-906a-5fd9426de434",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "495ff8cc-c052-47a9-a23f-a9c5084870db",
+      "result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657"
+    },
+    {
+      "claim_id": "ecb49d83-eda9-44ec-8327-0027180c3c01",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "44a250ab-ad0a-4d43-bf10-40f44c10e01f",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "b29dc7b4-fe71-464a-9049-ca4a13c685b9",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "5e82a9fb-c60f-41d2-89b5-114790dc8220",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "0eefc817-4a19-4e16-979e-595bfbf6b80b",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "261c1ab8-463d-4770-b0cf-a811413bb985",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "8cc6b9cb-abed-4cea-90f5-2b76a94d5a98",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "655927a4-4347-4127-baf3-5755b4bea6b3",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "564fbe2e-247b-4083-81db-a3ff22c3667a",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "e02c6787-cc80-4fa2-9efa-fee16b337c5b",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "2492a28d-edfc-4bc0-8ec4-7ea7c2ffc78c",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "9e9ab5ed-f750-462e-ae18-6d621c1a7cbf",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "423e2694-a88f-4eb1-9865-a01c4f0a8e46",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "c1316e65-2825-4c0f-9d18-59216af78599",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "8d87091b-0d95-42cb-a1fd-ef7c3a004b59",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "e73ce362-35d4-4dcf-a8cd-7d43348cbfa3",
+      "result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e"
+    },
+    {
+      "claim_id": "2421d265-fe21-48a0-bb08-0509386159fa",
+      "result_id": "35eddef3-fee9-4d3a-a860-f45be4cd526a"
+    },
+    {
+      "claim_id": "b9b275ee-2dbc-4c98-ac1f-1a3a35ce9ff4",
+      "result_id": "35eddef3-fee9-4d3a-a860-f45be4cd526a"
+    },
+    {
+      "claim_id": "ce7f9c77-89bb-4ac7-851e-d14194fbec32",
+      "result_id": "35eddef3-fee9-4d3a-a860-f45be4cd526a"
+    },
+    {
+      "claim_id": "b2808678-04e3-4bcb-ae68-1b7df1104d86",
+      "result_id": "35eddef3-fee9-4d3a-a860-f45be4cd526a"
+    },
+    {
+      "claim_id": "b865a0bd-1bd7-482c-9bda-d66ff599a229",
+      "result_id": "13bb9b26-d976-4b56-a4a0-07d414622a3c"
+    },
+    {
+      "claim_id": "03b40186-21ab-4943-ba5e-b88471149299",
+      "result_id": "13bb9b26-d976-4b56-a4a0-07d414622a3c"
+    },
+    {
+      "claim_id": "f0716f5e-f85a-4f1c-8235-451804b3525f",
+      "result_id": "08e11e30-5276-4a57-87c2-c069449bdbb2"
+    },
+    {
+      "claim_id": "12d84a51-765f-4e44-90c2-b44ffc2874e0",
+      "result_id": "08e11e30-5276-4a57-87c2-c069449bdbb2"
+    },
+    {
+      "claim_id": "12eb78d0-2aed-43e0-b167-b90eb7d57b37",
+      "result_id": "08e11e30-5276-4a57-87c2-c069449bdbb2"
+    },
+    {
+      "claim_id": "c6507a20-4e6e-449f-8c55-a8ea666d6de7",
+      "result_id": "006e753f-6ab6-41f4-8cd7-2a5f826db387"
+    },
+    {
+      "claim_id": "09d66000-216e-44c4-972f-d2b0ff3fafc1",
+      "result_id": "d66f254d-4b82-4b3c-8196-dab9d3841544"
+    },
+    {
+      "claim_id": "625ed8c5-bb2f-4e08-a912-329eaf89a385",
+      "result_id": "d66f254d-4b82-4b3c-8196-dab9d3841544"
+    },
+    {
+      "claim_id": "37187615-eff4-4f10-93a2-4d0770c344f4",
+      "result_id": "d66f254d-4b82-4b3c-8196-dab9d3841544"
+    },
+    {
+      "claim_id": "95e7a935-1536-4970-b84f-a8a4a90b886a",
+      "result_id": "d66f254d-4b82-4b3c-8196-dab9d3841544"
+    },
+    {
+      "claim_id": "a7304e5e-aa45-400b-8b08-fb90a13eac88",
+      "result_id": "d66f254d-4b82-4b3c-8196-dab9d3841544"
+    },
+    {
+      "claim_id": "4d89dcee-02c0-4bb2-ac51-fe0a86a5b721",
+      "result_id": "d66f254d-4b82-4b3c-8196-dab9d3841544"
+    },
+    {
+      "claim_id": "e3900613-9be6-42f2-adf2-095619ff73dd",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "6377c335-8f90-4a56-8f37-c68afebc14e4",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "e7c2edb0-4faa-4fab-a83f-d86ce64401d2",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "cf7cc90f-c1a9-4be8-ae7f-01f3810df434",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "e4dbfeac-cf7a-42d3-9a51-7eebf9f2b251",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "90e4ba0c-5fd0-4d8c-90a2-6e55f276b474",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "a65f11bc-cd09-4809-9794-b95f3800927d",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "40062655-2537-441a-9713-6fa1b5e369bc",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "ff4b9545-0ac9-491b-8357-419869ccd3f0",
+      "result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2"
+    },
+    {
+      "claim_id": "cb65a1c8-791c-45e3-8424-484dd7a5c627",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "7f00c093-8fb6-4ea5-a156-4c2441199d1e",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "8016f1c6-3bf6-4be1-a9f9-015a2c595b87",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "08df0bd3-3058-411a-8220-deeabeb3dbe8",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "dec99cb4-e0e4-4ec7-a08c-3084c2907028",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "3a3a2ad7-0e55-4c22-8760-dade59d66504",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "ceec755f-591b-4cfe-84d7-2aa2d0c2a36c",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "9d764b19-9108-4b36-bc4c-53320ac5fd81",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "3d85b954-ea10-4d36-a949-84c52b2461e1",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "5fdb426d-96fa-486f-bc32-4d62f055a1fc",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "055c243a-a43e-48a3-a9bd-5ab003b5e170",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "74733669-747a-438d-8058-f0db35d5a6cd",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "26674984-7607-4f1c-b2aa-67ba4c08ffeb",
+      "result_id": "84625084-d0fa-4312-96eb-f319663b3fc0"
+    },
+    {
+      "claim_id": "c799117b-bd51-447a-a353-58b937178255",
+      "result_id": "fb929c1c-966f-472f-bb09-eab448ea30e1"
+    },
+    {
+      "claim_id": "ff74b1b5-a076-4347-859d-a7c2e8b982c4",
+      "result_id": "fb929c1c-966f-472f-bb09-eab448ea30e1"
+    },
+    {
+      "claim_id": "f19c2d3d-de7d-4c85-9679-caf01279c2c5",
+      "result_id": "fb929c1c-966f-472f-bb09-eab448ea30e1"
+    },
+    {
+      "claim_id": "8878fd8b-66f7-49df-943b-30c60f63a6a3",
+      "result_id": "fb929c1c-966f-472f-bb09-eab448ea30e1"
+    },
+    {
+      "claim_id": "9744a862-eb64-4689-8fa3-39a284a71cfd",
+      "result_id": "fb929c1c-966f-472f-bb09-eab448ea30e1"
+    },
+    {
+      "claim_id": "b301dce4-b7f5-436c-8920-978a8cfd4557",
+      "result_id": "fb929c1c-966f-472f-bb09-eab448ea30e1"
+    },
+    {
+      "claim_id": "a9bc6c61-fa4d-4d9c-a1e7-fb3b6be0ce23",
+      "result_id": "e0a8c56e-b1b8-4453-bd66-813f8a8aa350"
+    },
+    {
+      "claim_id": "ca492cf2-aef3-4a72-9cd6-1085d8ec1336",
+      "result_id": "e0a8c56e-b1b8-4453-bd66-813f8a8aa350"
+    },
+    {
+      "claim_id": "5d253449-cf81-4b68-8475-3e39ae452e9d",
+      "result_id": "e0a8c56e-b1b8-4453-bd66-813f8a8aa350"
+    },
+    {
+      "claim_id": "258c8d1b-bbdc-430d-b5ac-a3731d6f6de3",
+      "result_id": "e0a8c56e-b1b8-4453-bd66-813f8a8aa350"
+    },
+    {
+      "claim_id": "4edce4a7-7069-44c4-b847-994631c60974",
+      "result_id": "e0a8c56e-b1b8-4453-bd66-813f8a8aa350"
+    },
+    {
+      "claim_id": "02590b05-8d45-4d9c-b1e4-026b1210a404",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "8e74f19e-c2cb-4624-90ce-b2b0bfd4399a",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "233dad6d-d7d6-467e-af7a-9da9293c6c5a",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "ed619751-bbc7-401a-8512-9832cee08c3a",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "f93b6597-e393-4c74-9303-41a9807cb439",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "ff41c0de-fa9d-4f5b-8351-2f0062947936",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "7eff0a79-4026-4cd1-9487-6d9557c6fc3b",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "e5fb8ba8-2f62-49e4-970f-7a53351d68cc",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "3b5ea78c-71a7-402b-adab-b5b978c2dfae",
+      "result_id": "937c1b23-112d-42df-b64f-01c5383c41c6"
+    },
+    {
+      "claim_id": "6bd1cb30-fcb7-465c-b6c8-ed5452344415",
+      "result_id": "3699aca0-b373-4188-aa7a-15270ae7c288"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "89f9a37c-9764-425d-9557-11e257aa4ff5",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "34e33b8a-ea8e-414b-bb55-819802173b32",
+      "peer_result_id": "d66f254d-4b82-4b3c-8196-dab9d3841544",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate binding affinity claims (C3, C4, C40-C43). OpenEval finds the data well-supported across multiple assays. Peer reviewers raise critical methodological concerns about SDS-PAGE for oligomerization assessment and potential avidity artifacts in affinity measurements, suggesting use of monomeric Fab. OpenEval rates SUPPORTED while peer rates UNCERTAIN due to these technical issues.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "a042a7b5-e8dd-4d15-9542-9c46c5c144e9",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "849c3f28-5724-4a33-9e67-a5f812f9beed",
+      "peer_result_id": "bdf7f09c-ff22-4b96-ad2c-ba6bc3d118d2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate epitope mapping claims (C6, C44-C51). OpenEval finds comprehensive support from docking, mutagenesis, and binding studies. Peer reviewers acknowledge compelling evidence for specific residues but note the data are not conclusive for NPC1 binding site targeting, relying on competitive binding with MR78 for approximate localization. OpenEval rates SUPPORTED while peer rates UNCERTAIN due to incomplete epitope definition.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "8afe2184-76ef-469b-8abf-6853b0e837f7",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "cfea386b-5849-49c8-98b5-f86383b358f9",
+      "peer_result_id": "84625084-d0fa-4312-96eb-f319663b3fc0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate neutralization claims (C5, C54-C58, C85). OpenEval finds data supported but notes limitation of pseudovirus rather than authentic virus. Peer reviewers explicitly state 'convincing binding to Marburgvirus GP and neutralization of Marburg viruses by AF03' with improved Figure 3 presentation. Both rate SUPPORTED, though OpenEval emphasizes the pseudovirus limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "6dde80f8-c279-49f1-a176-058569746a39",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "a6d8e3e5-be01-44ea-97a0-73daafd3ebe5",
+      "peer_result_id": "84625084-d0fa-4312-96eb-f319663b3fc0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R4 evaluates in vivo protection (C59-C62, C86, C93) while peer R3 covers both neutralization and in vivo data. OpenEval finds bioluminescence data supported but emphasizes pseudovirus limitation. Peer reviewers accept the findings without raising concerns about the protection data. Both rate SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "7c81f6fb-2330-4665-9586-ea3ae4164275",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "993c90a6-12c8-4d2e-9603-b32d392f431d",
+      "peer_result_id": "fb929c1c-966f-472f-bb09-eab448ea30e1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate cleaved GP neutralization claims (C7, C64-C66, C89-C90). OpenEval finds differential neutralization statistically significant but questions biological relevance of artificial enzymatic cleavage. Peer reviewers state 'convincing neutralization of Ebolaviruses by AF03-NL' with improved Figure 4 presentation. OpenEval rates SUPPORTED with caveats while peer rates SUPPORTED without reservations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "e6229f02-ba88-4292-ab59-9c3cfbd29ae8",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "dc0e12d6-2403-446b-9c78-05a9752d1203",
+      "peer_result_id": "e0a8c56e-b1b8-4453-bd66-813f8a8aa350",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate CI-MPR-dependent internalization claims (C67-C71). OpenEval finds multiple complementary assays consistently support the mechanism. Peer reviewers note FACS data quality limitations but find cell staining data in Figure 5C compelling. Both rate SUPPORTED despite minor data quality concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "da139868-a9df-4eff-b911-ba563415fe75",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a19ee816-3eb7-4658-93b8-2d8d976437df",
+      "peer_result_id": "937c1b23-112d-42df-b64f-01c5383c41c6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R7 evaluates broad-spectrum neutralization (C72-C75, C97) while peer R6 evaluates mechanism validation (C8, C72, C74-C80). OpenEval finds neutralization data robust but mechanistic explanation speculative. Peer reviewers find control experiments in Figure 7 compelling for the internalization mechanism. Both rate SUPPORTED, with overlapping claims on neutralization breadth.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "95bbe880-ea59-4fd0-b2ae-8f8df432ff49",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "9f2f7fdd-1e19-4496-a088-e8949d8f1873",
+      "peer_result_id": "937c1b23-112d-42df-b64f-01c5383c41c6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate CI-MPR mechanism validation (C76-C80). OpenEval finds gain/loss-of-function experiments provide strong mechanistic evidence. Peer reviewers state the data 'support the internalisation and stabilisation mechanism' with compelling control experiments. Both rate SUPPORTED with strong agreement on mechanistic validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "d2944702-f4d0-473c-979a-3a2066ef7c77",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "a19ee816-3eb7-4658-93b8-2d8d976437df",
+      "peer_result_id": "3699aca0-b373-4188-aa7a-15270ae7c288",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address C97 regarding weaker GP binding by AF03-NL. OpenEval notes this paradox with stronger neutralization and finds the mechanistic explanation speculative. Peer reviewers accept this finding without question as it supports the internalization mechanism interpretation. Both rate SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "d96dca60-bf92-47a8-b9de-8769f75de832",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d99c2f80-4d1e-4476-aeb9-717d418f8657",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims about filoviruses (C1-C2, C9-C20, C81-C82) as established knowledge with appropriate citations. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "1c9d3fe9-37a1-4485-8774-3d5a45d3284c",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "bbf0de63-e460-4d29-b185-fb73bde63a0e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates structural and mechanistic background claims (C21-C36) as established knowledge with appropriate citations. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "d177e680-81f2-44c8-83b9-a816845309a2",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "35eddef3-fee9-4d3a-a860-f45be4cd526a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates MARV therapeutic development context (C37-C38, C83-C84) as accurately representing the literature. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "0e0eeb14-8069-4d10-9597-18c2d161aac2",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "13bb9b26-d976-4b56-a4a0-07d414622a3c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates established knowledge claims (C52, C88) justifying experimental design choices. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "0849ab72-650c-43f4-9b98-e2e2187dc594",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "08e11e30-5276-4a57-87c2-c069449bdbb2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates speculative future application claims (C91, C92, C94) as UNCERTAIN, noting need for authentic virus validation and additional models. No corresponding peer review evaluation found addressing these forward-looking claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    },
+    {
+      "id": "2c6b0bb8-38ed-469b-8898-df1f00980e3e",
+      "submission_id": "0bd0ec48-4de0-484c-b16f-9384f2e09007",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "006e753f-6ab6-41f4-8cd7-2a5f826db387",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates negative control claim (C98) as appropriate validation for the assay system. No corresponding peer review evaluation found for this methodological control.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:15:27.416597Z"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C92",
+      "C93",
+      "C94",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors developed FIM-ID, a novel fluorescence microscopy method for visualizing myofibrils that combines optimized tissue fixation/cryoprotection (4% paraformaldehyde, 45% sucrose, -30\u00b0C sectioning), SERCA immunolabeling, and computational deconvolution. The method produces high-resolution images suitable for automated analysis using standard laboratory equipment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 and C52 demonstrate successful optimization through systematic experimentation (Figures 1-2). The method builds appropriately on established techniques (Tokuyasu method, C42-C44) while making them more accessible by eliminating the need for specialized cryo-ultramicrotomes (C45). The use of SERCA antibodies is well-justified by prior literature (C36-C39), and the technical advantages over confocal microscopy are empirically demonstrated (C114-C115). However, the claim of \"high degree of resolution and contrast\" (C5, C52, C92) is somewhat subjective and based primarily on visual assessment rather than quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Automated measurements of myofibril cross-sectional area (CSA) using the FIM-ID method showed very high agreement with manual measurements performed by six independent investigators, with a correlation of R=0.9589 (p=0.0002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation approach is rigorous, using multiple independent manual tracers (n=6) and demonstrating strong statistical correlation (C54, Figure 3F-G). The high R-value and significant p-value provide strong evidence for measurement accuracy. However, the validation was performed on only 8 ROIs from a single fiber, which is a limited sample for establishing general applicability across different fiber types and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "FIM-ID measurements of myofibril CSA and myofibril number were statistically indistinguishable from electron microscopy measurements across both oxidative and glycolytic fiber types, validating FIM-ID against the gold standard method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with EM is comprehensive, examining both myofibril size (C59-C62) and number (C63-C66) across fiber types (C55-C56, Figure 4). The lack of significant differences in slopes and ratios provides strong validation. The identification of fiber types using autofluorescence (C56) is creative and appears well-justified by prior knowledge (C57-C58, C112-C113). However, the EM measurements themselves required manual tracing and estimation, introducing potential error in the \"gold standard.\" The sample size (n=4 mice, 36-40 fibers/muscle) is adequate but modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In mice, 16 days of mechanical overload (MOV) induced significant fiber growth (28% increase in CSA) that was accompanied by consistent myofibrillogenesis (20-22% increase in myofibril number across fiber types) but inconsistent myofibril hypertrophy (14% increase in oxidative fibers only, no significant change in glycolytic fibers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MOV model produced robust and statistically significant increases in fiber CSA across fiber types (C67-C69, Figure 5C). The proportionate increases in myofibrillar and intermyofibrillar areas (C70-C72) support the validity of the measurements. The myofibrillogenesis response was consistent across fiber types (C76-C78), while myofibril hypertrophy was fiber-type dependent (C73-C75). The similar filtering rates between groups (C79) address a potential confound. However, the conclusion that myofibrillogenesis is the \"most robust and consistent effect\" (C80) is interpretive\u2014the 20% increase in myofibril number could mathematically account for most but not all of the 28% increase in fiber CSA, suggesting both mechanisms contribute. Sample sizes appear adequate (n=11-15 muscles/group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In humans, 7 weeks of progressive resistance exercise (RE) induced fiber-type specific growth in SERCA1-positive fibers (18% increase in CSA) that was primarily mediated by myofibrillogenesis (12% increase in myofibril number, p=0.009) rather than myofibril hypertrophy (trend only, p=0.31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The human RE study complements the mouse MOV findings with a clinically relevant model. The fiber-type specificity (C81-C82, C88-C89) is clearly demonstrated, and the proportionate increases in myofibrillar and intermyofibrillar components (C83-C86) parallel the mouse findings. The statistical significance for myofibrillogenesis (C88) contrasts with the non-significant trend for hypertrophy (C87), supporting the primary conclusion. However, the sample size is small (n=7 participants), and the p-value for myofibrillogenesis (p=0.009), while significant, is not as robust as in the mouse study. The similar filtering rates (C90) again address potential bias. The 72-hour post-exercise timepoint may not capture the full adaptive response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Across both mouse and human models of increased mechanical loading, radial growth of muscle fibers was largely mediated by myofibrillogenesis rather than myofibril hypertrophy, with significant positive correlations between fiber growth magnitude and myofibril number but not myofibril size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The consistency across two species and two loading models (C95, C101) strengthens the conclusion. The correlation analyses (C97, C99, supplemental figures) provide additional support by showing relationships at the individual fiber level. However, several limitations warrant an UNCERTAIN designation: (1) Both studies represent single endpoint measurements, not time courses, so the temporal relationship between hypertrophy and myofibrillogenesis cannot be determined (as the authors acknowledge in Discussion); (2) The claim that this is \"the first study to demonstrate that an increase in mechanical loading can induce myofibrillogenesis\" (C102) requires verification against C27, which states no prior study has shown this\u2014this could reflect a true gap or incomplete literature review; (3) The conclusion that myofibrillogenesis is the \"major driver\" (C103) is based on relative effect sizes but doesn't account for potential sequential mechanisms; (4) The lack of consistent myofibril hypertrophy (C96) could be due to timing rather than absence of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Using Cochran's formula applied to pilot EM data, the authors calculated that manual measurements of myofibril CSA would require tracing >180 myofibrils per fiber for 5% margin of error at 95% confidence, translating to ~400 hours of work for a simple two-group comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical calculation using Cochran's formula (C32) is appropriate for sample size estimation. The extrapolations to study-level effort (C33, C35) follow logically from the per-fiber requirements and empirical timing measurements (C34). This effectively motivates the need for automated methods. However, the manuscript doesn't provide the actual pilot data (variance, mean) used in the Cochran calculation, making it impossible to verify the specific number. The 5% margin of error and 95% confidence level are reasonable but arbitrary choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that mechanical loading induces muscle fiber radial growth, but the relative contributions of myofibril hypertrophy versus myofibrillogenesis to this growth remain unresolved despite the fundamental importance of this question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to prior literature (C1, C8-C14). The identification of the knowledge gap (C3, C15-C16) is substantiated by citations indicating this question has not been resolved. The contextual claims about muscle importance and age-related loss (C8-C12) appropriately motivate the research. However, the claim that \"no study has shown that an increase in mechanical loading leads to an increase in the number of myofibrils per fiber\" (C27) should be verified more carefully, as absence of evidence in the authors' literature review doesn't definitively establish this has never been shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The myofibril splitting model, developed by Goldspink in the 1970s and widely cited in textbooks, proposes that myofibrils undergo hypertrophy followed by longitudinal splitting to generate new myofibrils, but this model has not been rigorously tested despite its prominence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of Goldspink's model (C17-C22) is appropriately cited and appears accurate. The evidence Goldspink provided (C23-C24) is correctly characterized. The claim that this model has served as the textbook explanation (C25) is supported by citations to textbooks. The critical assessment that the model \"has not been rigorously tested\" (C26) is supported by a review citation (Jorgenson et al., 2020). However, the strong claim that \"no study has shown\" increased myofibril number with loading (C27) should be treated cautiously\u2014the authors cite their own review but this could reflect search limitations rather than definitive absence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Electron microscopy, while providing the resolution needed to study myofibrils, has significant limitations including specialized equipment requirements, high costs, limited immunolabeling compatibility, and poor contrast between myofibrils and intermyofibrillar components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of EM capabilities (C28) and limitations (C29-C30) reflects established knowledge about the technique. The poor contrast issue (C31) is demonstrated in Figure 4A. These claims appropriately motivate the development of an alternative method. However, the severity of these limitations is somewhat overstated\u2014modern EM facilities exist at many institutions, and immunogold labeling is feasible though challenging. The contrast issue is real but can be addressed with proper staining protocols.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The mechanisms of mechanically-induced myofibrillogenesis remain unknown, but two models exist: myofibril splitting (hypertrophy followed by splitting) and de novo myofibrillogenesis (assembly from nascent proteins). The latter has been studied mainly in developmental contexts, and whether it occurs in adult muscle is unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of the two potential mechanisms (C104-C106) is appropriately cited. The acknowledgment that mechanisms are unknown (C110) is honest and appropriate. The observation that de novo myofibrillogenesis has been studied mainly in developmental contexts (C107-C108) correctly identifies a knowledge gap. The forward-looking statement about FIM-ID enabling future studies (C111) is reasonable given the method validation. However, C104 is marked as speculation, which is appropriate\u2014the authors are discussing possibilities rather than making definitive claims. The summary statement (C109) appropriately synthesizes the findings.",
+    "result_type": "MINOR"
+  }
+]

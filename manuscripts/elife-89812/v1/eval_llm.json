@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C29",
+      "C48",
+      "C49",
+      "C54",
+      "C55"
+    ],
+    "result": "Condensin accumulates at telomeres through opposing regulation by Taz1 and Mit1. Taz1 acts as a cis-acting enrichment factor that increases condensin occupancy at telomeres, while Mit1 antagonizes condensin accumulation. ChIP-seq and ChIP-qPCR data show that taz1\u0394 cells have reduced condensin at telomeres while mit1\u0394 cells have increased condensin specifically at chromosome ends, with no change in rap1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C28-29, C48-49, and C54-55 are well-supported by calibrated ChIP-seq and ChIP-qPCR data (Figures 4A, 4D-E). The data show specific, localized changes in condensin occupancy at telomeres in taz1\u0394 and mit1\u0394 mutants while other genomic regions remain unchanged. The use of calibrated ChIP with internal standards strengthens the quantitative conclusions. The lack of effect in rap1\u0394 cells provides an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Condensin is required for sister-telomere separation in anaphase. Condensin mutants cut14-208 and cut3-477 show severe defects in sister-telomere disjunction during anaphase despite proper centromere segregation. In cut14-208 cells at restrictive temperature, 82% of cells fail to separate sister telomeres even after centromeres have segregated to opposite spindle poles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C39-41 are strongly supported by microscopy data (Figure 2A-B, Figure 2\u2014figure supplement 1B) showing telomere separation defects in condensin mutants. The quantification is robust with n>43-90 cells per condition across multiple replicates. The observation that centromeres separate normally while telomeres remain together is particularly compelling evidence for a specific telomere separation defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43"
+    ],
+    "result": "Sister-telomere separation can occur independently of chromosome arm separation and does not require Topo II decatenation activity. In top2-250 mutant cells at restrictive temperature, telomeres separate effectively during anaphase even within chromatin bridges where chromosome arms fail to separate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-43 are supported by microscopy data (Figure 2D-E) showing telomere separation in top2-250 mutants despite chromatin bridges. This is a key observation demonstrating telomere-specific separation mechanisms. However, the claim that Topo II is 'largely dispensable' (C43) is somewhat overstated\u2014the data show telomeres can separate without Topo II, but don't rule out that Topo II normally contributes to the process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Modulating condensin occupancy specifically at telomeres by manipulating Taz1 or Mit1 levels correspondingly affects telomere separation efficiency in a cis-acting manner. Combining taz1\u0394 with cut3-477 causes synergistic telomere separation defects, while mit1\u0394 rescues telomere separation defects in cut3-477 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C56-58 are well-supported by genetic interaction data (Figure 5A-C). The synergistic defect in cut3-477 taz1\u0394 double mutants and rescue by mit1\u0394 provide strong evidence for cis-acting condensin function at telomeres. The correlation between condensin levels at telomeres and separation efficiency is compelling. Statistical significance is demonstrated (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Condensin promotes sister-telomere separation by counteracting cohesin at telomeres. The rad21-K1 cohesin mutant accelerates telomere separation and rescues telomere separation defects in condensin mutants. Conversely, condensin mutants show increased cohesin occupancy specifically at telomeres and sub-telomeres during both G2 and anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C62-67 are supported by genetic interaction data (Figure 6A) and calibrated ChIP-qPCR (Figure 6B, Figure 6\u2014figure supplement 1B). The reciprocal relationship\u2014cohesin mutation rescues condensin defects, and condensin mutation increases cohesin at telomeres\u2014provides strong evidence for antagonism. However, the mechanism of antagonism remains unclear, and alternative explanations (e.g., indirect effects through chromatin structure) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C44",
+      "C45"
+    ],
+    "result": "Condensin drives telomere declustering during early mitosis. Hi-C data show that fission yeast chromosomes enter mitosis in a Rabl configuration with telomeres clustered together, and condensin mutants exhibit increased telomere-telomere contacts both within and between chromosomes, suggesting condensin drives their declustering into pairs of sister-telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-47, C44-45 are supported by Hi-C data (Figure 3D-E, Figure 3\u2014figure supplement 1) showing increased telomere clustering in condensin mutants. The aggregated Hi-C analysis is appropriate and statistically validated. However, the inference that chromosomes 'enter mitosis in a Rabl configuration' (C46) is somewhat indirect\u2014the data show increased clustering in mutants, which implies condensin normally reduces clustering, but doesn't directly demonstrate the starting configuration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C69"
+    ],
+    "result": "Condensin is enriched at telomeric repeats during metaphase and anaphase in fission yeast. ChIP-qPCR shows Cnd2-GFP is barely detectable at telomeres during G2 but clearly binds to telomeric repeats during early mitosis, with levels comparable to highly expressed genes and further increasing in anaphase. This binding depends on the Cut14 and Cut3 ATPase subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-36, C69 are well-supported by ChIP-qPCR data (Figure 1B) and calibrated ChIP-seq (Figure 1C-D). The temporal dynamics are clearly demonstrated with appropriate controls. The dependence on Cut14 and Cut3 (C37-38) confirms that the holocomplex binds telomeres. The use of calibrated ChIP-seq with internal standards is a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Taz1 does not directly recruit condensin through protein-protein interactions. Condensin binding is basal and independent of Taz1 at non-telomeric Taz1 islands, no physical interaction between Taz1 and condensin was detected by co-IP or yeast two-hybrid, and the authors speculate that arrays of Taz1 proteins create a permeable barrier where condensin accumulates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-51, C73-74 are supported by ChIP-seq data at Taz1 islands (Figure 4B-C) and negative co-IP/Y2H results. The lack of enrichment at non-telomeric Taz1 sites is compelling evidence against direct recruitment. However, C75 is explicitly speculative and represents a proposed model rather than demonstrated mechanism. The barrier model is plausible by analogy to highly expressed genes but remains unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on condensin structure, function, and localization patterns. Condensin is a ring-shaped SMC complex that shapes mitotic chromosomes through loop extrusion, shows conserved enrichment at centromeres, rDNA, and highly expressed genes, and is recruited by various factors including chromokinesins, transcription factors, and chromatin remodelers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-20 represent established knowledge from the literature, supported by appropriate citations. These are background claims that provide context for the current work. The citations appear appropriate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C68"
+    ],
+    "result": "Prior work on condensin at telomeres. Condensin I is enriched at telomeres during mitosis and meiosis in mammalian cells, telomere separation involves condensin regulators (Cdc14 in budding yeast, Aurora-B in fission yeast), and human CAPH2 binds TRF1, though the functional significance was unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-22, C68 accurately summarize prior literature with appropriate citations. These establish the context and gaps in knowledge that motivated the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on shelterin complex structure and function. Telomeres are protected by the conserved shelterin complex, which in fission yeast consists of Taz1, Rap1, Poz1, Tpz1, Pot1, and Ccq1, with specific DNA-binding and protein-protein interaction roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-27 represent established knowledge about shelterin structure, supported by appropriate citations and reviews. These are accurate background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C37",
+      "C38"
+    ],
+    "result": "Condensin localization dynamics and validation of mutants. Fission yeast condensin is cytoplasmic during interphase and binds DNA during mitosis, showing high occupancy at centromeres, rDNA, and highly transcribed genes. The cut14-208 and cut3-477 mutations reduce condensin binding genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-32, C37-38 are supported by citations to prior work and calibrated ChIP-seq data (Figure 1C-E). The validation of condensin mutants is important for interpreting subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C72"
+    ],
+    "result": "Mit1 maintains nucleosome occupancy at sub-telomeres through association with shelterin. Mit1 associates with telomeres via the Ccq1 subunit of shelterin, and mit1\u0394 cells show reduced histone H3 occupancy at sub-telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-53, C72 are supported by citations to prior work on Mit1 function. These establish the rationale for testing Mit1's role in condensin localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Prior work on Ark1, Swi6, and telomere separation. Eliminating Swi6 alleviates telomere separation defects caused by Ark1 inhibition. Ark1 controls condensin association with chromosomes, and Swi6 enriches cohesin at heterochromatin including telomeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-61 accurately cite prior work that motivated testing condensin-cohesin interactions at telomeres. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Telomere structure differences between yeast species. Fission yeast chromosomes I and II have similar sub-telomeric elements. Budding and fission yeast have significantly different telomere structures, with different shelterin organizations. Recent work shows fission yeast shelterin components can dimerize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C83-86 are supported by appropriate citations. These provide context for interpreting differences between yeast species and potential mechanisms of telomere clustering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Prior work on cohesin and telomere cohesion. Cohesin has been implicated in telomere cohesion in budding yeast, but the situation in human cells is unclear. The rad21-K1 mutation accelerates telomere separation in fission yeast, and telomere separation kinetics are not accelerated in swi6\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-92 cite prior work and present new data (C91) on rad21-K1 effects. The citations are appropriate and the new observation is supported by microscopy data (Figure 6A).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C87",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Speculative models and mechanistic proposals. The authors propose several models including: Taz1 arrays create a permeable barrier for condensin accumulation; condensin drives telomere declustering by chromosome folding; telomere-specific separation pathways are conserved; chromatin bridges result from telomere separation failures; shelterin may link sister-telomeres; and condensin loop extrusion provides force for disentanglement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-80, C87, C95-98 are explicitly speculative or represent proposed models rather than demonstrated mechanisms. While these are reasonable hypotheses based on the data, they lack direct experimental support. The authors appropriately indicate these are speculative (using phrases like 'we speculate,' 'it is tempting to speculate,' 'might'). These represent important future directions but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Reconciling differences with budding yeast. In budding yeast, LacO repeat segregation near TelV is impaired by top2-4 mutation, but LacO arrays bound by LacI constitute a barrier for condensin, potentially explaining the discrepancy with fission yeast results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-82 cite prior work and provide a reasonable explanation for apparent discrepancies between species. The explanation is plausible but represents interpretation rather than new data.",
+    "result_type": "MINOR"
+  }
+]

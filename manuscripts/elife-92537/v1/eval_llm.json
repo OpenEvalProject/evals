@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C124",
+      "C125"
+    ],
+    "result": "Bisubstrate analogues BA2 and BA4 bind in the METTL3 active site with IC50 values of 9\u00b11 \u00b5M and 18\u00b13 \u00b5M respectively. Crystal structures at 2.3 \u00c5 and 2.1 \u00c5 resolution show that their SAM-like moieties interact identically to SAM, forming polar contacts with conserved residues D395, R536, H538, and N539.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The IC50 values are experimentally determined with error estimates (C28-C29), and crystal structures provide direct structural evidence (C124-C125). The interaction patterns are clearly visualized in Figure 3 and validated through LigPlot+ analysis (C31-C33). The resolution is adequate for confident assignment of interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The METTL3 catalytic motif 395DPPW398 and residues E481 and K513 are critical for adenosine binding. Alanine mutations of D395, Y406, E481, and K513 abolish catalytic activity, while thermal shift assays show Y406A, E481A, and K513A mutants retain SAH binding, indicating their primary role is substrate rather than cofactor recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Crystal structures clearly show the interaction network (C34-C43, Figure 4), mutational analysis demonstrates functional importance (C44), conservation analysis supports evolutionary significance (C45), and thermal shift assays distinguish substrate vs. cofactor binding defects (C46-C48). The combination of structural, mutational, and biophysical data provides strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "MD simulations reveal that the BA4 conformation represents a transient encounter complex with immediate ligand dissociation, while the BA2 conformation is stable for substrate binding. AMP binds more stably (\u03c4~426 ns) than m6AMP (\u03c4~13 ns) due to favorable electrostatic interactions between positively charged SAM and negatively charged AMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MD simulations with 16 independent 500 ns runs provide adequate sampling (C49, Table 2). The differential stability is quantified through exponential fitting (C52, Figure 4-supplements 2-6), and the electrostatic explanation is mechanistically sound (C53-C54). However, the calculated Kd values (~2-78 mM, C55) are acknowledged as overestimates due to using mononucleotides rather than full RNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Y406 acts as a dynamic gatekeeper for adenosine recruitment and release. MD simulations show Y406 transitions between extended (~15 \u00c5 from W398) and compact (~6 \u00c5) conformations on the microsecond timescale, with \u03c0-\u03c0 interactions capturing adenosine transiently before release. Mutation to alanine or cysteine abolishes activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The flexibility of Y406 is demonstrated through MD simulations (C69-C70, Figure 5), crystal structures show different conformations in BA2 vs BA4 (C42-C43, C67), and mutational data confirm functional importance (C68). The mechanistic interpretation reconciles conflicting prior hypotheses (C65-C66) with new structural data. The \u00b5s-timescale dynamics are well-sampled in the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "SAM binding induces conformational changes that prime METTL3 for adenosine recognition. K513 reorients from stabilizing the apo state to forming a salt bridge with D395 and hydrogen bonding to adenosine-N7. H512 rotates from blocking the adenosine site to forming \u03c0-\u03c0 interactions with H538, creating space for substrate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Structural comparisons between apo and SAM-bound states clearly show the conformational changes (C75-C83, Figure 6). MD simulations confirm the flexibility in apo state and stabilization upon ligand binding (C84, Figure 6-supplement 1). The ordered binding mechanism is supported by cellular SAM concentrations (C74). The structural and dynamic evidence converge on a coherent priming mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "BA2 represents a transition state mimic for METTL3 catalysis. Structural alignment with METTL4 and METTL16 shows the adenosine-N6 is positioned 1.9 \u00c5 from the methyl donor carbon at an angle of 160.9\u00b0, near-optimal for SN2 methyl transfer (ideal 180\u00b0). This geometry is similar to substrate-bound METTL4 (2.8 \u00c5, 162.5\u00b0) and METTL16 (2.1 \u00c5, 175.4\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons are based on high-resolution crystal structures (C86-C91, Figure 7), and the geometric parameters are precisely measured (C93). The angle of 160.9\u00b0 is chemically reasonable for SN2 reaction (C94), and the similarity to other MTases validates the biological relevance (C86-C90). The conclusion that BA2 is a transition state mimic is well-supported by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "QM/MM free energy calculations indicate methyl transfer occurs without prior deprotonation of adenosine-N6, with a barrier of 15-16 kcal/mol and favorable energetics (~4 kcal/mol). The high pKa of adenosine-N6 (~17) and absence of a strong base in the active site preclude deprotonation. Product stabilization arises from hydrogen bonds with D395 and P396 backbone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The QM/MM calculations are methodologically sound with DFTB3/MM and validated against DFT benchmarks (Table 3). The barrier height (15-16 kcal/mol, C97) is lower than the experimental barrier (~20 kcal/mol from kcat, C99), correctly indicating methyl transfer is not rate-limiting (C100). The chemical reasoning about pKa and lack of base is sound (C109-C111), and the mechanism is consistent with experimental kinetics (C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Product release is the rate-limiting step for METTL3 catalysis. Following methyl transfer, adenosine-N6 becomes highly acidic (pKa -3 to -10), enabling rapid deprotonation through water channels to the protein-solvent interface without disrupting the D395-K513 salt bridge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion that product release is rate-limiting follows logically from comparing the QM/MM barrier (15-16 kcal/mol) with the experimental barrier (~20 kcal/mol, C7). The pKa shift upon methylation is supported by literature (C113-C114) and QM calculations (Table 3). Water channels for proton release are visualized in QM/MM snapshots (C115, Figure 9), providing a mechanistically sound pathway that preserves favorable salt bridges (C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A string of seven charged groups (R536+ \u2013 SAM COO- \u2013 SAM NH3+ \u2013 D395- \u2013 K513+ \u2013 E481- \u2013 K459+) stabilizes the BA2 conformation. MD simulations show D395-K513 is the most stable salt bridge, while E481-K459 fluctuates between direct and water-separated contacts. This salt bridge network forms during MD simulations of apo METTL3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ionic interaction network is clearly visible in crystal structures (C58-C59, Figure 4). MD simulations quantify the relative stability of different salt bridges (C60-C62, Figure 4-supplements 5-8), and the formation of D395-K513 in apo simulations (C63) demonstrates its importance for organizing the active site. The convergence across multiple MD trajectories supports the robustness of these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The catalytic mechanism elucidated for METTL3 likely applies to METTL4 and other MT-A70 family methyltransferases. METTL4 has a similar active site with an analogous ion pair (D233-K364) engaged in hydrogen-bonding networks with substrate and SAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural similarity between METTL3 and METTL4 is established by recent crystal structures (C117-C118), and the presence of analogous ion pairs (C119) supports mechanistic conservation. However, this is an extrapolation based on structural homology rather than direct experimental validation for METTL4. The inference is reasonable but would benefit from experimental confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "METTL3-14 is the major m6A methyltransferase in humans, depositing modifications within GGACU motifs enriched near stop codons. m6A regulates multiple aspects of RNA biology and METTL3-14 is implicated in various diseases including cancer, diabetes, and viral infections. METTL3 contains the catalytic MTase domain with a Rossmann fold, while METTL14 plays structural and RNA-binding roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts in the field, extensively supported by citations (C1-C27). They provide essential context but represent prior knowledge rather than novel findings of this study. The claims are accurate summaries of the literature and correctly frame the biological significance of the research.",
+    "result_type": "MINOR"
+  }
+]

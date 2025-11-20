@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Both ketamine (KET) and isoflurane (ISO) induce loss of consciousness as measured by EEG delta/theta power ratio and EMG power changes. The administration of either anesthetic elevated the EEG delta/theta power ratio while reducing EMG power, suggesting each drug induced unconsciousness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 are supported by EEG/EMG data presented in Figure 1\u2014figure supplement 1. The physiological measurements provide objective evidence for anesthetic-induced unconsciousness, though the inference from these measures to loss of consciousness (C25) relies on established understanding of these biomarkers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C48",
+      "C49",
+      "C53",
+      "C60",
+      "C62"
+    ],
+    "result": "Ketamine activates widespread cortical and subcortical brain regions, with the temporal association areas (TEa) serving as a network hub, suggesting a top-down mechanism of anesthetic action. KET activated 141 of 201 brain regions including sensory, motor, emotional, and reward processing areas, with particularly strong activation in cortical regions involved in higher-order functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C26, C28-C35, C48-C49, C53, C60, and C62 are well-supported by c-Fos expression data, hierarchical clustering analysis, and network analysis identifying TEa as a hub. The data consistently show widespread cortical activation under KET, supporting the top-down mechanism interpretation, though this remains an inference from activation patterns rather than direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C27",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C50",
+      "C51",
+      "C54",
+      "C56",
+      "C59"
+    ],
+    "result": "Isoflurane predominantly activates hypothalamic regions involved in neuroendocrine control, autonomic function, and homeostasis, with the locus coeruleus (LC) serving as a connector hub, indicating a bottom-up mechanism of anesthetic-induced unconsciousness. ISO showed substantial activation in subcortical regions while sparing cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C27, C36-C41, C50-C51, C54, C56, and C59 are supported by c-Fos expression data, hierarchical clustering, and network analysis identifying LC as a hub. The pattern of hypothalamic and subcortical activation with relative cortical sparing supports the bottom-up mechanism interpretation, though this remains an inference from activation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "KET and ISO share activation of 43 brain regions involved in sensory processing, memory and cognition, reward and motivation, and autonomic and homeostatic control, highlighting overlapping effects on various neural pathways despite their distinct primary mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C42-C47 are supported by statistical analysis of c-Fos expression data showing co-activation of specific regions by both anesthetics. The Venn diagram analysis and functional interpretations (supported by citations) provide evidence for shared neural pathways, though the functional significance of co-activation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C57",
+      "C58"
+    ],
+    "result": "KET and ISO show distinct patterns of network organization: ISO demonstrates more concentrated influence with higher clustering quality and fewer clusters than KET, while KET significantly increases network density and interregional correlations compared to controls. ISO network properties were similar to control conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C57, and C58 are supported by hierarchical clustering analysis and correlation analysis of c-Fos expression data. The quantitative network metrics (Fisher Z, network densities, silhouette scores) provide objective evidence for distinct network organization patterns between the two anesthetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C67",
+      "C68"
+    ],
+    "result": "The mechanisms underlying anesthetic-induced unconsciousness involve hyperactivity and heightened functional connectivity under KET potentially compromising information integration, while LC activation during ISO may serve as a compensatory mechanism to maintain autonomic function while inducing unconsciousness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63 and C67 are explicitly labeled as speculative interpretations in the evidence. While C64 and C68 are supported by citations to prior work, the mechanistic links between observed activation patterns and loss of consciousness remain inferential. The proposed mechanisms are plausible but require direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "c-Fos expression is significantly higher in the KET group compared to ISO, and in the saline group compared to home cage controls. The authors acknowledge that intraperitoneal injections may elicit pain and stress responses despite acclimation, representing a potential confound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by c-Fos expression data in Figures 2 and 3. Claim C70 represents an important acknowledgment of methodological limitations. The authors appropriately recognize this confound, though it raises questions about the interpretation of differences between experimental and control groups, particularly for the saline vs. home cage comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C61",
+      "C65",
+      "C66"
+    ],
+    "result": "The study is grounded in established knowledge about anesthetic mechanisms, including molecular targets (NMDA receptors for KET, GABAa receptors for ISO), top-down and bottom-up theories of anesthetic-induced unconsciousness, c-Fos as a marker of neuronal activation, and the roles of specific brain regions in anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C23, C61, C65-C66 represent background knowledge supported by appropriate citations to prior literature. These claims establish the theoretical framework for the study and are well-documented in the anesthesia literature. The authors appropriately cite established work to contextualize their findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "The study employed appropriate experimental methods including use of adult male C57BL/6J mice, controlled housing and timing conditions, 4-day acclimation period, standardized tissue collection and processing, EEG/EMG monitoring, immunohistochemistry with systematic sampling, custom software for image analysis, hierarchical clustering, and network centrality analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 and C82 describe the experimental methodology. The methods are generally well-described and appropriate for the research questions. However, several concerns exist: (1) only male mice were used, limiting generalizability; (2) sample sizes are modest (n=6-8); (3) the different control groups (home cage for ISO, saline for KET) complicate direct comparisons; (4) lack of comprehensive physiological monitoring beyond EEG/EMG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Ketamine and isoflurane are widely used general anesthetics, yet their distinct and shared neurophysiological mechanisms remain incompletely understood, representing a gap in knowledge that motivates this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 represent established facts (C1) and an accurate assessment of the state of the field (C2). These claims appropriately frame the research question and justify the need for comparative brain-wide mapping studies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study analyzed 88,975 UK Biobank participants (mean age 62 years, 56% women, median SRI 60) who completed 7-day accelerometry between 2013-2015. The cohort had a 5.5% participation rate and was not representative of the general UK population, being older, more female, and less socioeconomically deprived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C18 provide consistent descriptive statistics about the study cohort. The sample characteristics are clearly documented with appropriate measures of central tendency and dispersion. The acknowledgment of selection bias (C9) strengthens the transparency of the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Over 7.1 years of follow-up with 3010 deaths, irregular sleep (low SRI) was associated with increased all-cause mortality in a non-linear fashion. Participants at the 5th percentile of SRI (SRI=41) had 53% higher mortality risk (HR=1.53, 95% CI: 1.41-1.66) compared to median SRI, while those at the 95th percentile (SRI=75) showed no significant mortality reduction (HR=0.90, 95% CI: 0.81-1.00). Similar patterns were observed for CVD and cancer mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 present the primary finding with appropriate statistical evidence including p-values, hazard ratios, and confidence intervals. The non-linear relationship is supported by spline modeling (p<0.001) and visualized in Figure 1. The finding that mortality risk plateaus at higher SRI values is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The proportional hazards assumption was violated for all-cause mortality (p<0.001), with hazard ratios varying over time. For participants at the 5th percentile SRI, mortality risk was highest early in follow-up (HR>2), declining until 2.5 years, then stabilizing around HR=1.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 appropriately identify and characterize non-proportional hazards using discrete-time models with time\u00d7SRI interaction terms. The time-varying pattern is clearly described and suggests the relationship between sleep irregularity and mortality changes over the follow-up period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Sleep regularity was associated with CVD mortality (p<0.001), with participants at the 5th percentile SRI showing 88% higher risk (HR=1.88, 95% CI: 1.61-2.21) compared to median. The proportional hazards assumption held for CVD mortality (p=0.57), and the association was stronger in females than males (p interaction=0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide statistically significant evidence for the SRI-CVD mortality relationship with appropriate hazard ratios and confidence intervals. The sex difference finding (C35) is supported by a significant interaction test, though this warrants cautious interpretation given multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Sleep regularity was associated with cancer mortality (p<0.001), with 5th percentile SRI showing 36% higher risk (HR=1.36, 95% CI: 1.22-1.53). However, hazards were non-proportional (p<0.001), with large early hazard ratios (HR>2) declining to near-null values (~1.05) after 4 years of follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 document the cancer mortality association with appropriate statistics. The time-varying hazard pattern (C39-C40) is critical and suggests potential reverse causation, where irregular sleep may be a consequence rather than cause of cancer. This interpretation is appropriately discussed by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The association between sleep regularity and mortality persisted across multiple sensitivity analyses adjusting for sleep duration, WASO, disease history, BMI, blood pressure, and physical activity, though effect sizes were attenuated in the fully adjusted model (Model 4: all-cause HR=1.22, CVD HR=1.43, cancer HR=1.15 for 5th vs median percentile).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 demonstrate robustness of findings through systematic sensitivity analyses. The attenuation of effect sizes in Model 4 is appropriately reported and suggests some of the association may be mediated by or confounded with cardiovascular risk factors. All confidence intervals remain statistically significant or borderline significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The SRI was modestly correlated with sleep duration SD (-0.32) and sleep onset time SD (-0.42). While all three metrics were independently associated with mortality (all p<0.001), the SRI showed the largest hazard ratios and adding SRI to a model with both SD metrics improved fit (p<0.001), whereas adding SD metrics to an SRI model did not (p=0.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 provide compelling evidence that SRI captures mortality risk information beyond traditional SD-based variability metrics. The likelihood ratio tests (C51-C52) appropriately demonstrate incremental predictive value. This comparative analysis strengthens the case for SRI as a superior measure of sleep regularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Sleep regularity was measured using the Sleep Regularity Index (SRI), which quantifies the probability of being in the same sleep/wake state at time points 24 hours apart (range 0-100). Sleep/wake states were determined from 7-day wrist accelerometry using the GGIR algorithm (version 2.7-1), which identifies a daily sleep period time window but does not detect naps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 and C70-C73 clearly describe the SRI metric and data collection methodology. The citation to Phillips et al. 2017 (C11) provides validation for the SRI approach. The limitation that naps are not detected (C73) is appropriately acknowledged and represents a methodological constraint of the GGIR algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Mortality was ascertained through NHS linkage until January 2022 with median 7.1-year follow-up. Cox proportional hazards models with restricted cubic splines were used to examine SRI-mortality associations, with missing covariate data (<2%) handled by multiple imputation using predictive mean matching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 describe appropriate statistical methodology for survival analysis. The use of restricted cubic splines (C78) appropriately allows for non-linear relationships. Multiple imputation for missing data (C79) is a sound approach, though the low missingness rate minimizes concerns about imputation bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study is motivated by established knowledge that circadian rhythms are 24-hour endogenous cycles synchronized by light exposure, with the sleep-wake cycle being the most notable circadian process. Rapid changes in sleep timing can cause circadian misalignment, which is associated with age-related diseases including cancer and CVD. Modern lifestyle factors have increased propensity for circadian disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide appropriate background context supported by citations to established literature. These claims accurately represent current scientific understanding of circadian biology and its health implications, providing rationale for investigating sleep regularity and mortality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Circadian clock genes (CLOCK, PER, BMAL1) influence cardiovascular and metabolic function, and both major and minor circadian stressors are associated with CVD risk. Circadian clocks regulate cell division, and altered clock function can lead to aberrant cell proliferation and DNA damage in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 accurately summarize prior mechanistic research linking circadian disruption to CVD and cancer pathogenesis, supported by appropriate citations. These claims provide biological plausibility for the observed epidemiological associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Prior studies found that SD-based sleep variability metrics were associated with incident CVD in some cohorts but not others. The authors propose that SRI may be superior because it captures rapid day-to-day changes in sleep patterns, which are hypothesized to be particularly challenging for the circadian system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 appropriately contextualize the current findings within prior literature and provide a mechanistic rationale for why SRI might outperform SD-based metrics. The hypothesis about rapid changes (C60) is supported by citation to Phillips et al. 2017 and is consistent with the comparative analysis results (C51-C52).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors acknowledge key limitations: the observational design precludes causal inference (C63), and the GGIR algorithm cannot detect naps (C65). Despite these limitations, findings were independent of multiple confounders including disease history, sleep duration, and fragmentation, indicating a relationship between sleep regularity and longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 appropriately acknowledge study limitations while summarizing the robustness of findings. The inability to establish causation (C63) is a fundamental limitation of observational studies. The claim about independence from confounders (C66) is supported by the sensitivity analyses (C41-C46), though residual confounding cannot be excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The authors interpret the time-varying hazards differently for cancer versus CVD mortality. For cancer, the declining hazard ratios over time suggest possible reverse causation (irregular sleep as a manifestation of cancer). For CVD, the stable hazards over time suggest a potential causal role of irregular sleep cannot be easily ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 present speculative interpretations of the time-varying hazard patterns. While the differential patterns are real (C29-C30, C39-C40), the mechanistic interpretations remain uncertain. The reverse causation hypothesis for cancer (C68) is plausible but not definitively established, as adjusting for baseline cancer history (C42) did not eliminate the association. These interpretations require validation in future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Sleep duration is an established risk factor for adverse health outcomes including mortality, and was included in the American Heart Association's Essential Eight guidelines for CVD prevention as of 2022.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 accurately cite established knowledge about sleep duration and health, supported by appropriate references. These claims provide context for why sleep regularity, as a distinct dimension of sleep health, warrants investigation.",
+    "result_type": "MINOR"
+  }
+]

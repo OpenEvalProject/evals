@@ -1,0 +1,437 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C184",
+      "C185",
+      "C186",
+      "C191"
+    ],
+    "result": "Protein kinases are critical signaling molecules involved in diverse cellular processes, and their dysregulation is associated with multiple diseases. Due to conserved active site structures across kinases, allosteric regulation offers advantages over orthosteric targeting by enabling kinase-specific control and bypassing resistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result synthesizes well-established knowledge about kinase biology, structure, and therapeutic targeting. The claims are supported by appropriate citations (C9, C10, C11, C12, C31) and represent consensus views in the field. The logical connection between active site conservation (C2, C12, C16) and the advantages of allosteric control (C3, C22) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C92",
+      "C187",
+      "C188"
+    ],
+    "result": "Computational techniques offer effective, inexpensive, and rapid mapping of allosteric sites compared to traditional experimental methods like X-ray crystallography and NMR spectroscopy, though computational predictions require experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative advantages of computational methods (speed, cost) versus experimental methods (C24, C26, C27, C92) are well-supported by citations and represent accurate characterizations of the field. The acknowledgment that computational predictions require experimental validation (C28, C29) demonstrates appropriate scientific caution. This is a fair summary of the current state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "NMR spectroscopy combined with X-ray crystallography can map allosteric 'hot spots' and conformational dynamics in proteins, as demonstrated in studies of PTP1B, PKA-C, and Cdc42-LOV2, though this approach may be insufficient for complex allosteric systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about NMR/crystallography capabilities (C93, C94, C96) are supported by appropriate citations (Boulton and Melacini 2016, Lisi and Loria 2017, Jain et al. 2023). The specific examples (C98-C103) provide concrete evidence for the methodology. The acknowledgment of limitations for complex systems (C104) is appropriately cautious and cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Multiple sequence alignment (MSA) can predict allosteric communications by identifying conserved residues and statistical coupling between residues, as validated in PDZ and POZ domains, though MSA predictions are limited by alignment errors and the impossibility of achieving 'true alignment.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of MSA methodology (C108, C110-C112) and its validation (C113) are appropriately cited (Lockless and Ranganathan 1999, Ambroggio and Kuhlman 2006). The acknowledgment of MSA limitations (C118) with supporting citations (Kemena and Notredame 2009, Nuin et al. 2006) demonstrates balanced evaluation. The experimental validation examples (C113, C117) support the claimed utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Molecular dynamics (MD) simulations and discrete molecular dynamics (DMD) overcome computational intensity limitations to predict allosteric communications and identify allosteric sites, with DMD reaching microsecond timescales. These methods have been successfully applied to proteins like CFTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about MD/DMD capabilities (C120-C123, C126, C130, C131) are well-supported by citations (Durrant and McCammon 2011, Shirvanyants et al. 2012, Proctor et al. 2011, 2015). The specific example of CFTR (C124) provides concrete validation. The discussion of timescale limitations (C127, C128) and solutions (C129, C130) is appropriately nuanced. However, C125 is speculative about therapeutic potential without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Structure-based statistical mechanical model of allostery (SBSMMA) predicts allosteric sites by quantifying thermodynamic perturbations and identifying exosites. This approach has been implemented in computational tools (AlloSigMA, AlloMAPS) and extended to fragment-based drug design protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of SBSMMA methodology (C132-C134) and associated tools (C135, C136) are appropriately cited (Tee et al. 2021, Guarnera et al. 2017, Tan et al. 2019). The extension to fragment-based drug design (C138-C141) is supported by citations (Wah Tan et al. 2022, Scott et al. 2012, Jencks 1981). The claims accurately represent the cited work and provide a coherent description of this computational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The Ohm platform uses a physics-based perturbation propagation algorithm to predict allosteric sites, pathways, and critical residues by treating allostery as signal propagation through heterogeneous media. Predictions were validated using CheY and Caspase-I proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of Ohm methodology (C142-C144) and its validation (C145) are appropriately cited (Wang et al. 2020, Lee et al. 2001, Clark 2016). The specific validation examples (C146, C147) provide concrete evidence for the platform's utility. The summary statements (C148, C149) accurately reflect the capabilities and limitations of computational approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Monobodies (synthetic binding proteins) can allosterically control kinase activity without competing with ATP. Studies demonstrated 20-fold inhibition of Aurora A kinase and decreased Bcr-Abl activity through disruption of SH2-kinase domain interactions, validated by X-ray crystallography and biochemical assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The monobody approach is well-documented with appropriate citations (Zorba et al. 2019, Sha et al. 2017, Koide et al. 2012, Wojcik et al. 2016). The specific quantitative result (20-fold inhibition, C50) and validation methods (C49, C55-C57) provide concrete evidence. The conclusion that monobodies offer an alternative to chemogenetic/optogenetic approaches (C58) is reasonable given the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A rapamycin-binding domain (RapR-PAK1) was developed that destabilizes the nucleotide-binding domain of PAK1 kinase, successfully controlling kinase activity in breast cancer cells and demonstrating the applicability of ligand-based allosteric control for both activation and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development and testing of RapR-PAK1 (C59, C62, C64) are appropriately cited (Dagliyan et al. 2017, Radu et al. 2014). The biological context (C60, C61, C63) is well-established. The successful demonstration of control (C65) is supported by the cited work. This represents a concrete example of chemogenetic allosteric control with experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Photoactivatable rapamycin (pRap) was developed using caging groups that sequester the activation site until light-induced dissociation, enabling light-controlled regulation of kinase activity and protein dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of photoactivatable rapamycin (C66, C67, C71) is cited to Karginov et al. 2011. The mechanism of caging groups (C68-C70) is supported by citations (Riggsbee and Deiters 2010, Mayer and Heckel 2006). This represents a logical extension of chemogenetic control to optogenetic control through chemical modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "An optically inducible single-chain protein (pdDronpa1) was engineered to dimerize at the kinase active site upon 500 nm cyan light exposure, causing reversible inhibition of MEK1 kinase activity, providing a versatile optogenetic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of pdDronpa1 (C72, C73) is appropriately cited (Zhou et al. 2017, 2012). The reversibility of control (C74) and successful application to MEK1 (C75, C76) provide concrete validation. This represents a distinct optogenetic strategy from LOV2-based approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A dual-input nanocomputing agent was developed by inserting chemogenetic (uniRapR) and optogenetic (LOV2) domains into computationally predicted allosteric sites in FAK, forming a logic OR gate. Live cell imaging demonstrated opposing effects: rapamycin increased activity while blue light decreased activity, validated by DMD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of the dual-input system (C77, C78) is well-cited (Vishweshwaraiah et al. 2021a, Dagliyan et al. 2013, Lee et al. 2008). The use of computational prediction (Ohm) to guide insertion sites (C79, C81) and DMD validation (C80, C82) demonstrates rational design. The experimental validation by live cell imaging (C83) provides concrete evidence. This represents a significant advance in creating multi-input control systems, though C84's broad therapeutic claims are somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The nanocomputing agent approach was extended to Src kinase (Src-uniRapR-LOV2), demonstrating generalizability across different kinases with similar dual control functionality validated by focal adhesion visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension to Src kinase (C85, C86) and experimental validation (C87) are cited to Chen et al. 2023. This demonstrates that the dual-input approach is not limited to FAK and can be applied to other kinases, supporting the generalizability of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "LOV2 photoreceptor domains from Avena sativa undergo dramatic conformational changes upon blue light exposure and can be engineered into proteins for optogenetic control. A circular permutant (cpLOV2) was developed to overcome limitations of caging surface availability, improving applicability while maintaining compatibility with existing LOV2-based systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The properties of LOV2 (C153, C154, C157, C158) are well-supported by citations (Padmanabhan et al. 2022, Halavaty and Moffat 2007). The development and validation of LOV2 photoswitches (C159, C160) are cited to Zimmerman et al. 2016 and Dagliyan et al. 2016. The identification of limitations (C161) and development of cpLOV2 to address them (C164-C166) are cited to He et al. 2021. This represents iterative improvement of optogenetic tools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "LightR, an optogenetic tool comprising tandemly connected Vivid photoreceptor domains, was developed to enable subcellular control of protein activity. Validation in Src kinase demonstrated that LightR provides better spatiotemporal resolution than LOV2 due to enhanced subcellular control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of LightR (C168, C169) is appropriately cited (Shaaya et al. 2020, Nihongaki et al. 2014). The validation in Src kinase (C170) provides concrete evidence. However, the claim of better spatiotemporal resolution than LOV2 (C171) is stated as inference without direct comparative data presented in the manuscript. This comparative claim would benefit from more explicit experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The uniRapR chemogenetic switch, comprising FKBP12 and FKBP12-rapamycin binding protein in a single-chain construct, enables rapamycin-controlled allosteric regulation of protein function. Validation in Src kinase and FAK, including rescue of a FAK point mutant, demonstrated its effectiveness as an allosteric regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of uniRapR (C173, C174) is well-cited (Dagliyan et al. 2013, Choi et al. 1996). The mechanism (C175) and validation experiments (C177, C178) provide concrete evidence for functionality. The rescue of a FAK mutant (C178) is particularly strong evidence for allosteric control. This represents a key chemogenetic tool that overcomes limitations of optogenetic approaches in vivo (C172).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "A maltose-binding allosteric regulator was created through in vitro recombination of TEM-1-beta-lactamase and E. coli maltose binding protein genes, demonstrating that enzyme activity could be regulated by maltose addition, measured by \u03b2-lactam hydrolysis rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development and validation of the maltose-binding regulator (C179-C182) are cited to Guntas and Ostermeier 2004. This represents an early proof-of-concept for creating allosteric regulation through protein engineering, though it is less sophisticated than more recent approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C183"
+    ],
+    "result": "Chemogenetic control of proteins has better in vivo resolution than optogenetic control because light can only be absorbed to a certain depth and has a shorter timescale of activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This comparative claim (C183) is presented as inference with reference to Figure 2 but lacks explicit experimental data or citations supporting the quantitative comparison. While the physical limitation of light penetration is well-known, the claim about \"shorter timescale of activation\" for light is unclear and potentially contradicts the advantage of rapid optogenetic control. This claim requires more rigorous support or clarification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C150",
+      "C151",
+      "C152",
+      "C189",
+      "C190"
+    ],
+    "result": "Engineered sensor proteins provide high spatiotemporal resolution for controlling allosteric activity through conformational changes that propagate to active sites, offering advantages over traditional knockout, knockdown, or mutation approaches. Various methods including chemogenetics, optogenetics, and synthetic proteins serve as allosteric control tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conceptual framework (C150-C152) and comparative advantages (C6, C7) are well-supported by the extensive examples provided throughout the manuscript. The summary of available methods (C190) accurately reflects the tools discussed. This represents a fair synthesis of the field, though the claims are somewhat general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C196"
+    ],
+    "result": "Protein kinases have conserved structural features including ~250 conserved residues, a nucleotide-binding domain between N- and C-terminal lobes, and regulatory (R) and catalytic (C) spines that maintain protein flexibility and regulate activity. NMR studies have confirmed the importance of dynamic structural changes for kinase allostery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural features of kinases (C33, C35-C40) are well-supported by appropriate citations (Cohen 2002, Taylor et al. 2012a,b, Johnson and Lewis 2001). The importance of dynamics (C41, C42) is supported by citation to Masterson et al. 2012 and Figure 1 (C196). This represents accurate description of established kinase structural biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Multiple computational and experimental techniques including MSA, MD, DMD simulations, molecular docking, in silico modeling, mass spectroscopy, and cryo-EM with AI-based 3D modeling can be used to define protein structures and map allosteric sites. Protein allostery is an essential tool in translational research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enumeration of available techniques (C88, C89) is supported by citations (Yuan et al. 2022, Chirigati 2021). The mention of additional stimuli (C90) is reasonable speculation. The conclusion about importance for translational research (C91) is a fair inference based on the evidence presented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Allosteric regulation of kinases could be used as a potential therapeutic approach for diseases arising from kinase dysregulation. Combining allosteric control tools enables development of nanocomputing agents with multiple inputs, and future tools could respond to temperature, pH, and pressure in addition to light and small molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the therapeutic potential (C192) is a reasonable inference from the presented evidence, it remains largely speculative without clinical validation. The potential for multi-input systems (C193) is supported by the FAK and Src examples (C77-C87), but the broad claims about future tool development (C194) and therapeutic applications (C195) are speculative. These represent reasonable future directions but lack experimental support and should be clearly identified as prospective rather than established results.",
+    "result_type": "MINOR"
+  }
+]

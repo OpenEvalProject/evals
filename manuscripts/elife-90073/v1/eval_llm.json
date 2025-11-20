@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C84",
+      "C85",
+      "C93",
+      "C94"
+    ],
+    "result": "The explicit ion coarse-grained model accurately reproduces experimental measurements of protein-DNA binding energetics and nucleosomal DNA unwinding. The model shows good agreement with experimental free energy profiles for DNA unwinding (C3, C16, C94) and protein-DNA binding affinities across nine complexes with a Pearson correlation of 0.6 (C2, C17, C84, C85, C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C16, C17, C84, C85, C93, and C94 collectively demonstrate model validation through quantitative comparison with experimental data. The correlation coefficient of 0.6 for protein-DNA complexes and visual agreement in Figure 2B for DNA unwinding provide convergent evidence for model accuracy, though the moderate correlation suggests room for improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C90",
+      "C91",
+      "C96"
+    ],
+    "result": "The model successfully resolves differential effects of monovalent and divalent ions on chromatin conformations. Simulations reproduce experimental sedimentation coefficients across different salt conditions (C21, C96), showing that divalent ions are more effective at chromatin compaction than monovalent ions (C24, C25) due to more efficient charge neutralization (C26, C27, C28, C61, C90, C91) despite lower concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C28, C57-C61, C90-C91, and C96 provide consistent evidence from simulations matching experimental sedimentation data (Figure 3A) and mechanistic explanations based on ion condensation theory. The agreement between simulation and experiment across multiple salt conditions and the consistency with Manning theory support the model's ability to capture ion-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C43",
+      "C55",
+      "C56",
+      "C63",
+      "C92"
+    ],
+    "result": "The model reveals that counterion release contributes differentially to inner versus outer layer DNA wrapping in nucleosomes. Only modest ion binding changes occur during outer layer unwrapping (C18), while significantly more ions bind when the inner layer unwraps after 73 bp (C19, C20). The model captures the counterion atmosphere around nucleosomes consistent with all-atom simulations (C43, C92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C43, C55-C56, C63, and C92 are supported by simulation data in Figure 2C showing differential ion binding during DNA unwrapping stages. The interpretation is consistent with known structural differences between inner and outer DNA layers (C55) and established counterion release theory (C56). Agreement with all-atom simulations (C43) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C44",
+      "C45",
+      "C83",
+      "C95"
+    ],
+    "result": "The model reconciles the large discrepancy between experimental measurements of nucleosome binding energy (2 kBT vs 14 kBT). Simulations show that DNA-origami constraints restrict nucleosome orientations, producing ~2 kBT binding energy matching the Funke et al. experiment (C29), while unrestricted simulations yield 15 kBT (C30). The difference arises from loss of inter-nucleosomal contacts (~150 vs ~10 histone tail-DNA contacts) due to geometric constraints preventing parallel nucleosome alignment (C31-C34, C44, C45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34, C44-C45, C83, and C95 provide a mechanistic explanation for experimental discrepancies through direct comparison of restrained versus unrestrained simulations (Figure 4). The dramatic difference in contact numbers (Figure 4C) and the geometric analysis of nucleosome orientations (Figure 4A, 4\u2014figure supplement 4) provide clear structural basis for the energetic differences. This successfully reconciles conflicting experimental reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C86",
+      "C87"
+    ],
+    "result": "At physiological salt conditions (150 mM NaCl, 2 mM MgCl2), the model predicts nucleosome-nucleosome binding energy of ~9 kBT. The binding mode is distance-dependent: nucleosomes prefer face-to-face parallel orientation at close distances (~60 \u00c5) but rotate ~90\u00b0 to perpendicular positions at intermediate distances to maintain contacts (C36, C86), with orientation preference diminishing at large separations (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36, C86, and C87 are supported by 2D free energy landscapes in Figure 5B showing clear orientation-distance coupling. The predicted 9 kBT value represents a key quantitative prediction at physiologically relevant conditions. The distance-dependent orientation changes are mechanistically reasonable for maintaining inter-nucleosome contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Nucleosome binding energy shows modest sequence dependence (~2 kBT variation) when 601 sequence is replaced with poly-dA:dT or poly-dG:dC (C37), with poly-dA:dT strengthening and poly-dG:dC weakening interactions (C38). This is attributed to increased DNA stiffness in poly-dA:dT causing more frequent unwrapping and increased cross-nucleosome contacts (C39). Increasing nucleosome repeat length (NRL) from 147 to 167 bp weakens binding to ~6 kBT (C40).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C40 are supported by simulation data in Figure 5\u2014figure supplements 1-3. The sequence effects are mechanistically explained through known DNA mechanical properties (C39 cites Ortiz and de Pablo, 2011) and visualized in Figure 5\u2014figure supplement 2. The NRL effect agrees with cited previous studies (C40). The modest magnitude of sequence effects (~2 kBT) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C47",
+      "C88",
+      "C89"
+    ],
+    "result": "Linker histone H1 proteins compensate for weakened nucleosome interactions at longer NRL (167 bp), restoring or exceeding binding strength of shorter NRL systems (C41, C47). The disordered C-terminal tail of linker histones extends to bind DNA from adjacent nucleosomes, stabilizing inter-nucleosomal contacts (C42). This is consistent with prior studies emphasizing linker histone importance in chromatin compaction, especially in cells with longer linker DNA (C88, C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41-C42, C47, C88-C89 are supported by simulation data in Figure 5C-D showing that H1.0 addition increases binding energy for NRL=167 systems. The structural mechanism is visualized in Figure 5D. Agreement with cited literature (C88-C89) provides additional support. The result is biologically significant for understanding chromatin organization in different organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C48",
+      "C49",
+      "C81"
+    ],
+    "result": "The study concludes that intrinsic inter-nucleosome interactions are significant contributors to chromatin organization in vivo. The predicted strong binding energy (~9 kBT at physiological conditions) agrees with high forces needed for chromatin unfolding in single-molecule experiments (C46). While histone modifications may influence interactions, their effects are limited and unlikely to abolish the significant interactions (C48). Therefore, physicochemical interactions are important players alongside molecular motors and chromatin regulators (C49, C81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C48-C49, and C81 represent the main conclusions supported by the collective simulation results. Agreement with pulling experiments (C46) provides external validation. The argument about histone modifications (C48) is reasonable based on cited work (Ding et al., 2021) though somewhat speculative. The overall conclusion (C49, C81) logically follows from the demonstrated strong binding energies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C97"
+    ],
+    "result": "The authors address an apparent contradiction: strong inter-nucleosome interactions should promote fibril formation (C50), yet fibrils are rarely detected in vivo (C51). They argue this does not contradict their findings (C52) because in vivo factors like crowding disrupt fibrils in favor of inter-chain contacts (C53, C97), which can still be driven by favorable inter-nucleosome interactions (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C54 and C97 present a logical argument reconciling simulation predictions with in vivo observations, but this relies heavily on prior work (Liu et al., 2022) rather than data presented here. The reasoning is plausible but speculative regarding how strong nucleosome interactions manifest in vivo. The current study focuses on isolated chromatin chains, limiting direct assessment of this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C63",
+      "C64",
+      "C65",
+      "C82"
+    ],
+    "result": "The computational model uses a residue-level coarse-graining approach with one bead per amino acid and three beads per nucleotide (C15), explicitly representing monovalent and divalent ions (C63) to enable faithful description of counterion condensation. The model resolves chemical group differences using physical chemistry potentials (C65), allows de novo predictions, and remains computationally efficient for large-scale sampling (C82). Simulations adopted experimental buffer conditions (0.10 M NaCl, 0.5 mM MgCl2) for direct comparison (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C63-C65, and C82 describe the computational methodology. These are straightforward methodological descriptions supported by the Materials and methods section and demonstrated through the successful simulations presented. The model's capabilities are validated by the results throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C75"
+    ],
+    "result": "Prior experimental work has reported widely varying estimates for nucleosome-nucleosome binding strength, ranging from 2 to 14 kBT (C1). Specifically, Kruithof et al. measured ~14 kBT using magnetic tweezers (C13), while Funke et al. reported ~2 kBT using DNA-origami force spectrometry (C14). This uncertainty has fueled ongoing debate about the relevance of physicochemical interactions in chromatin organization (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C14, and C75 accurately summarize prior experimental literature, properly citing the relevant studies. These claims establish the scientific context and motivation for the current work. The citations can be verified and the characterization of the field as debated is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The introduction establishes that genome organization involves compartmentalization of chromatin (A and B compartments with different histone marks, C8-C9), potentially arising from microphase separation (C10). Multiple mechanisms may contribute including liquid-liquid phase separation of chromatin-binding proteins (C11, C80), interactions with nuclear landmarks (C72), and active transcription (C73). Recent studies show nucleosome arrays alone can phase separate (C12), suggesting compartmentalization may be intrinsic to chromatin (C74). Understanding these mechanisms could improve understanding of DNA-templated processes (C76-C77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12, C72-C74, C76-C80 accurately summarize established knowledge and recent findings from cited literature. These provide appropriate scientific context for the study. The claims are properly attributed to cited sources and represent fair characterizations of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors justify their methodological choices by noting that DNA-unzipping experiments (Hall et al., 2009) provide high-resolution free energy profiles suitable for benchmarking (C62). They note that most existing coarse-grained models use Debye-H\u00fcckel theory with implicit solvent, limiting accuracy for complex salt conditions (C66). The high cost of atomistic simulations motivates coarse-grained approaches (C67), but nucleosome interfaces demand high force field accuracy (C68). Native nucleosomes are challenging to study due to modifications and sequence variations (C69), so reconstituted nucleosomes with 601 DNA are used to establish baselines (C70-C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C66-C71 provide methodological justification based on cited literature. These accurately characterize limitations of existing approaches and experimental challenges. The rationale for model development and choice of validation systems is sound and well-supported by citations.",
+    "result_type": "MINOR"
+  }
+]

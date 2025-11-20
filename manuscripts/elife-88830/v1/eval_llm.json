@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The CDRA microfluidic chip successfully induced DOX-resistant cells from MDA-MB-231 TNBC cells within 11 days, including a distinct population of large DOX-resistant (L-DOXR) cells with increased polyploidy (40% >4N+) and reduced DOX sensitivity (IC50=200 nM vs 25 nM for WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C36 provide comprehensive experimental evidence for the chip's ability to generate resistant cells. The temporal progression (days 5, 8, 11), spatial distribution (mid-DOX region), FACS analysis showing polyploidy percentages, and IC50 measurements all converge to support this result. The chip design specifications (C146-C148) and methodological details are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "L-DOXR cells exhibit enhanced oncogenic properties including increased proliferation, migration, and tumorigenicity in vivo, with tumors showing complete resistance to DOX treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 demonstrate consistent in vitro (proliferation, Ki67, wound healing) and in vivo (xenograft tumor volumes, histology) evidence. Statistical significance is reported (p<0.001 for tumor volume differences), and the lack of DOX response in L-DOXR tumors (p>0.05 between DOX and vehicle) contrasts with WT sensitivity, supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Large cells with increased genomic content (>4N+) are present in TNBC patient tissues, correlate with tumor grade, and may indicate therapy-resistant cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 connect the chip-derived L-DOXR cells to clinical relevance through tissue microarray analysis (n=130). The correlation between large cell numbers and tumor grade (C50) is supported by data in Figure 3I, and the absence of such cells in normal tissue (C49) strengthens the cancer-specific association. However, C51 is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RNA-seq analysis identified NUPR1 as a top-ranked upregulated gene in L-DOXR cells, responsible for 4.4% of actively transcribed genes, with high NUPR1 expression correlating with poor survival in chemotherapy-treated TNBC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 provide multi-level evidence: transcriptomic data (1212 upregulated genes), pathway analysis (IPA showing NUPR1 as top-ranked), validation by RT-qPCR and luciferase assays, and clinical correlation through Kaplan-Meier analysis across multiple datasets (p=0.037, 0.027, 0.0003). The convergence of molecular and clinical data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "NUPR1 is functionally required for DOX resistance in L-DOXR cells, as demonstrated by loss-of-function (siRNA) and gain-of-function (overexpression) experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 provide bidirectional functional evidence. NUPR1 knockdown specifically abolished viability of DOX-treated L-DOXR cells (C64) without affecting vehicle-treated cells (C65) or WT cells (C67), while NUPR1 overexpression in WT cells conferred DOX resistance (C68). This demonstrates causality rather than mere correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Pharmacological inhibition of NUPR1 with ZZW-115 re-sensitizes L-DOXR cells to DOX in vitro and reduces tumor volume in vivo, demonstrating therapeutic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 show dose-dependent re-sensitization in vitro (C71), confirmed by multiple assays (immunocytochemistry, caspase-3/PARP cleavage), and significant tumor volume reduction in vivo (\u2212469.5 and \u2212627.2 mm\u00b3 for two doses). The specificity is supported by minimal WT cell response (C72). This represents a complete therapeutic validation chain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "NUPR1 upregulation in L-DOXR cells is associated with H3K27 acetylation at its promoter and dramatically reduced HDAC11 expression, suggesting an epigenetic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 establish the epigenetic mechanism through multiple lines of evidence: absence of DNA methylation changes (C78), ChIP-qPCR showing H3K27 acetylation (C79), RNA-seq and RT-qPCR confirming HDAC11 loss (C80-C82), and inverse protein correlation (C83). The mechanistic inference (C84) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "HDAC11 directly regulates NUPR1 expression through promoter deacetylation, as demonstrated by gain-of-function and loss-of-function experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 provide mechanistic proof: HDAC11 overexpression reduced H3K27 acetylation (C85), decreased NUPR1 mRNA dose-dependently (C86), and impaired promoter activity (C87), while HDAC11 inhibition increased NUPR1 (C88). This bidirectional evidence establishes HDAC11 as a direct regulator of NUPR1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "In TNBC patient tissues, NUPR1 and HDAC11 expression are inversely correlated with tumor grade, and low HDAC11 expression predicts poor survival after chemotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 validate the NUPR1/HDAC11 axis in clinical samples through tissue microarray (n=130) showing grade-dependent expression patterns and Kaplan-Meier analysis (n=500) demonstrating survival correlation. The inverse relationship is consistently demonstrated across multiple patient cohorts, supporting clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C119",
+      "C120",
+      "C121",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The study identifies a novel epigenetic mechanism of chemoresistance in TNBC through the NUPR1/HDAC11 axis, where loss of HDAC11 leads to NUPR1 promoter hyperacetylation and overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 and C119-C129 synthesize the mechanistic findings. The identification of NUPR1 as a novel HDAC11 target (C119) is supported by ChIP-qPCR, expression studies, and functional assays. The therapeutic validation with ZZW-115 (C128) and HDAC11 overexpression (C129) confirms the axis's functional importance. This represents a complete mechanistic story from discovery to validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "L-DOXR cells resemble previously described polyaneuploid cancer cells (PACCs), which are induced by various stressors and contribute to tumor heterogeneity and therapeutic resistance, though the mechanism remains incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C139 appropriately contextualize the findings within existing literature on PACCs/PGCCs. The citations support the characterization of these cells and their induction by various factors (C134-C136). The acknowledgment that mechanisms remain unknown (C139) is honest and appropriate. This provides important context but is primarily literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C140",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The CDRA chip methodology enables rapid generation of clinically relevant resistant cells and could potentially be used for predicting patient-specific resistance prior to chemotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140 and C143 are supported by the study's results showing correlation between chip-derived cells and patient tissues. However, C145 (predicting resistance in patients) is speculative and not directly tested. The claim relies on inference from the chip's low cell requirement (C144, ~15,000 cells) and a citation, but lacks prospective validation data. This represents a promising future direction rather than a demonstrated capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Chemoresistance is a major clinical problem in cancer, particularly TNBC, and microfluidic platforms have been developed to study drug resistance in various cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C96-C98 establish the clinical context and prior work through appropriate citations. These are well-established facts in the field and provide necessary background. The citations to prior microfluidic work (Han et al., Wu et al., Lin et al.) appropriately credit previous developments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "NUPR1 is a stress-responsive protein involved in DNA repair, transcription, cell cycle regulation, and chemoresistance in various cancers, with established roles in breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 provide appropriate background on NUPR1 through multiple citations. The roles in cancer cell resistance (C12), cell cycle progression (C13), and specific functions in breast cancer (C14-C15) are well-documented in the literature. This contextualizes why NUPR1 is a relevant target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "HDAC11 is the most recently discovered HDAC with context-dependent roles in cancer, showing overexpression in some cancers but negative correlation with others, with particularly low expression in high-grade TNBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C26 and C104-C118 comprehensively review HDAC11's complex roles across cancers, supported by multiple citations. The study's findings of low HDAC11 in L-DOXR cells (C116) and high-grade TNBC (C117) with positive survival correlation (C118) add new data to this literature. The contradictory roles in different cancers are appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C130"
+    ],
+    "result": "Histone modifications are important therapeutic targets in breast cancer, but HDAC inhibitors must be carefully evaluated in the context of drug resistance given the complex roles of specific HDACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 establish the therapeutic rationale for targeting histone modifications, while C130 provides an important cautionary note based on the study's findings. The inference that HDACi evaluation should consider drug resistance context is reasonable given the demonstration that HDAC11 loss promotes resistance. This represents appropriate interpretation of the implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "HDAC11 expression may be suppressed in chemoresistant TNBC cells by a specific regulator that requires further elucidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 is explicitly speculative ('It is also possible') and acknowledges the need for further research. While the observation of HDAC11 suppression is well-documented in the study, the mechanism of this suppression is not investigated. This represents an important future direction but is not a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

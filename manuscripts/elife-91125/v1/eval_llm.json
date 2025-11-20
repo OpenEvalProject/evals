@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "WbaP exists as a homodimer in SMALP, as determined by multiple orthogonal biophysical methods including SEC-MALS (255\u00b19 kDa), mass photometry (~240 kDa), Direct Mass Technology mode (~240 kDa), and DSP crosslinking experiments showing complete crosslinking at 2x the monomer molecular weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent biophysical techniques (C65-C67, C73) converge on the same conclusion that WbaP forms a dimer in SMALP. The crosslinking experiments (C69-C73) provide direct evidence of dimer formation with concentration-dependent and reversible crosslinking. The molecular weight measurements are internally consistent when accounting for the contribution of SMA polymer and lipids (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "AlphaFold multimer predicts WbaP forms a dimer with high confidence (pLDDT ~78 for critical regions), featuring an unusual \u03b2-hairpin domain swap between monomers where residues 251-268 from one chain continue a \u03b2-sheet structure in the DUF of the opposite chain. This domain swap architecture is conserved across other Lg-PGTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AlphaFold dimer prediction shows high confidence scores (C80, C82) and resolves the anomalous placement of the \u03b2-hairpin motif observed in the monomer model (C79). The predicted domain swap is validated by experimental crosslinking data (C84-C85) and is conserved across multiple Lg-PGT family members (C83), providing strong computational and comparative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Targeted cysteine-pair crosslinking and crosslinking mass spectrometry (XLMS) validate the predicted \u03b2-hairpin domain swap and dimer interface. XLMS identified 49 unique crosslinking sites with 93.86% sequence coverage, and inter-chain crosslinks (Lys273-Lys146/148/81) agree with the predicted dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The targeted crosslinking experiments (C84-C85) directly validate the domain swap predicted by AlphaFold, with concentration-dependent crosslinking observed at predicted interface residues and no crosslinking in wild-type protein as expected. The XLMS data (C86-C90) provides comprehensive coverage and identifies specific inter-chain crosslinks that match distance constraints in the predicted model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "CryoEM reconstruction of WbaP in SMALP at ~4.1 \u00c5 resolution reveals a T-shaped homodimer architecture with 796/1056 residues placed, showing close agreement with the AlphaFold model (RMSD 2.83 \u00c5). The dimer interface comprises ~780 \u00c5\u00b2 with contacts along the TMH bundles and DUF domains, placing active sites 77 \u00c5 apart but with the \u03b2-hairpin apex only ~23 \u00c5 from the opposite active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CryoEM structure (C91-C94) provides direct experimental validation of the AlphaFold-predicted dimer architecture with good agreement (RMSD 2.83 \u00c5). The structural details of the dimer interface (C95-C102) are well-characterized and consistent with the crosslinking data. The moderate resolution (~4.1 \u00c5) is appropriate for the size of the protein-SMALP complex and allows confident placement of most residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Two regions show disorder in the CryoEM map: the \u03b2-hairpin domain swap motif and a helix-turn-helix motif (residues 337-369) near the active site. The helix-turn-helix region differs significantly from the analogous mobile loop in PglC and may contribute to substrate specificity differences between WbaP (UDP-Gal) and PglC (UDP-diNAcBac).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disorder in these regions (C103-C104) is well-documented in the CryoEM map, but the placement is validated by XLMS data showing crosslinks within the helix-turn-helix region (C108). The comparison to PglC (C105-C106) is appropriate, though the mechanistic link to substrate specificity (C107) remains speculative and would require additional functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The isolated DUF domain (residues 146-272) binds uridine nucleotides (UMP, UDP, UTP stabilize; UDP-Gal destabilizes) as shown by nDSF, and full-length WbaP is potently inhibited by UMP (IC50 = 4.1 \u03bcM). These results indicate the DUF plays a regulatory role in sensing nucleotides and allosterically modulating catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nDSF experiments (C114-C117) demonstrate differential binding of nucleotides to the isolated DUF, and the inhibition assays (C119, C135) show potent UMP inhibition consistent with prior work on the ortholog CpsE (C120). The unusual inhibition curve profile (C136) suggests multiple binding modes. The inference of allosteric regulation (C118, C137) is well-supported by the combined structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C122",
+      "C138",
+      "C139"
+    ],
+    "result": "The DUF serves as a nucleotide-sensing regulatory domain that prevents overuse of limited UndP resources by modulating PGT activity in response to UMP accumulation. This represents a conserved regulatory mechanism for Lg-PGTs with different NDP-sugar substrates and explains suppressor mutations in S. pneumoniae CpsE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regulatory function assignment (C6, C62) is well-supported by the nDSF and inhibition data. The proposed mechanism (C122, C138) is a reasonable inference based on UMP being a universal product of PGT reactions regardless of sugar substrate. The connection to CpsE suppressor mutations (C139) provides independent validation from prior genetic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Foldseek analysis reveals surprising structural homology between the N-terminal domains of Lg-PGTs (including WbaP) and PglF-like UDP-sugar dehydratases from glycoconjugate biosynthesis pathways. This suggests the DUF may play a broader role in modulating glycoconjugate biosynthesis flux through negative feedback regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural homology identified by Foldseek (C124-C125, C140) is intriguing and appears to be a novel finding. However, the functional implications (C142) are highly speculative. The two enzyme classes are functionally unrelated (C128), and no experimental data is provided to test whether dehydratases are actually regulated by their N-terminal domains. This requires follow-up experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C148",
+      "C149",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Structural comparison between WbaP and PglC reveals major differences in regions important for substrate specificity: WbaP has a helix-turn-helix motif replacing the GLLP loop in PglC, lacks the aromatic box motif, and has a shorter C-terminus. These differences likely drive the specificity of WbaP for UDP-Gal versus UDP-diNAcBac for PglC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural differences between WbaP and PglC are well-documented (C148-C149, C154-C155) and occur in regions previously identified as important for substrate specificity in diNAcBac-utilizing PGTs (C147, C153). The inference that these differences drive substrate specificity (C156) is reasonable but remains speculative without mutagenesis or substrate binding studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C60",
+      "C61",
+      "C131",
+      "C157"
+    ],
+    "result": "A detergent-free purification strategy using SMALP-200 successfully stabilizes WbaP in a native-like membrane environment, producing highly pure protein suitable for structural studies. This represents the first monotopic PGT characterized in a liponanoparticle and demonstrates SMALP as a useful platform for studying membrane protein oligomerization and for CryoEM of small membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The purification strategy (C46-C50) is well-described and produces high-quality protein as evidenced by the biophysical characterization and structural studies. The claims about SMALP utility (C60-C61, C157) are supported by the successful application in this study, though they represent inferences about broader applicability. The novelty claim (C131) appears accurate based on the literature context provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Comparison with a published E. coli WbaP structure reveals overall similar architecture but inverted handedness in the E. coli reconstruction relative to the S. enterica structure and AlphaFold model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The comparison is limited because the E. coli WbaP maps and models are not publicly available (C109-C112). The observation of inverted handedness (C113) is noted but cannot be fully evaluated without access to the original data. The authors appropriately note that handedness may be ambiguous at the resolution obtained without a guiding model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "A mechanism is proposed where the WbaP active site opens and closes through motion of the helix-turn-helix motif, resembling conformational changes observed in PglC crystal structures and molecular dynamics simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative mechanistic proposal (C151) based on the observed disorder of the helix-turn-helix region and its proximity to the active site. While the comparison to PglC conformational changes (C152) provides some support, the WbaP structure represents only a single conformational state, and no direct evidence of the proposed motion is provided. This hypothesis requires validation through additional structural states or molecular dynamics simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C158"
+    ],
+    "result": "The authors propose that the SMALP-based strategy will be broadly applicable to other bacterial membrane proteins and membrane protein complexes, and that combining liponanoparticle and nanobody approaches may improve future CryoEM reconstructions of Lg-PGTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative statements about future applications (C129-C130, C158) based on the success of the current study. While the reasoning is sound, these claims represent predictions rather than demonstrated results. The broad applicability would need to be validated through application to other membrane protein systems.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C35",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study employed a short-term lineage tracing strategy using dual transgenic zebrafish (pcna:EGFP and gfap:mCherry) to isolate and profile M\u00fcller glia (MG) and MG-derived cells from uninjured and light-lesioned retinae at multiple time points (uninjured, 44 hpl, 4 dpl, 6 dpl) using 10x Genomics single-cell RNA sequencing. The transgenes faithfully recapitulate endogenous expression, and 13,139 cells passed quality control with a median of 1,407 genes and 4,061 mean read counts per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is well-documented with appropriate validation of transgenic reporters (C42-C44), clear experimental design (C2, C32, C35, C62-C64), and adequate sequencing metrics (C65-C66). The approach is internally consistent and builds on established knowledge about PCNA and GFAP as markers of proliferating cells and MG, respectively (C40-C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Single-cell RNA sequencing identified 15 distinct cell populations in the regenerating zebrafish retina, including four M\u00fcller glia clusters (1-4), five retinal progenitor cell clusters (5-9), and six clusters of regenerated progeny (retinal ganglion cells, red and blue cones, two amacrine cell clusters, and bipolar cells). The UMAP visualization shows progressive emergence from left to right of MG, RPC, and progeny clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis is clearly described with appropriate bioinformatic methods, and the identification of 15 clusters is supported by marker gene expression analysis (C67-C74). The progressive trajectory from MG to differentiated progeny is consistent with the experimental design and temporal sampling strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Temporal analysis reveals that cells progress from left to right on the UMAP over time, with uninjured samples predominantly containing non-reactive MG (clusters 1-2), 44 hpl samples enriched for reactive MG (cluster 3), 4 dpl samples enriched for RPCs and late reactive MG (cluster 4), and 6 dpl samples enriched for regenerated progeny. A reversed trajectory from cluster 4 back to non-reactive MG was also observed at 6 dpl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal progression is well-documented and consistent with known regeneration kinetics from prior literature (C81 cites Bernardos et al., 2007; Fausett and Goldman, 2006). The observation of a reversed trajectory (C84) is intriguing and suggests MG self-renewal, though this interpretation requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cell cycle analysis shows that most non-reactive MG (clusters 1-2), late reactive MG (cluster 4), one RPC population (cluster 7), and regenerated progeny (clusters 10-15) are in G1 phase. Cells in S phase are enriched in early reactive MG (cluster 3), RPCs (clusters 5, 7), and photoreceptor/horizontal cell precursors (clusters 8-9). High pcna expression is observed in reactive MG (cluster 3) and RPCs (clusters 5, 6, 8, 9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell cycle analysis is consistent with the expected proliferative states of different cell populations and is supported by pcna expression patterns (C88). The methodology for cell cycle scoring is standard (using known cell cycle marker genes), and the results align with the temporal dynamics of regeneration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Clusters 1-4 were identified as M\u00fcller glia populations based on expression of canonical glial markers (apoeb, glula, cahz, rlbp1a, gfap). Clusters 1 and 2 represent non-reactive MG expressing mstnb and retinoic acid signaling pathway genes (rdh10a, aldh1a3, dhrs3a), with differential expression of inhbaa distinguishing cluster 1 from cluster 2. Clusters 3 and 4 represent reactive MG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cluster annotation is well-supported by marker gene expression (C89-C96) and is consistent with established knowledge about MG markers. The identification of heterogeneity within non-reactive MG (C96) is a novel finding that extends prior work. The use of multiple markers strengthens the cluster assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Reactive MG downregulate some glial markers (glula, rlbp1a) and upregulate inflammatory cytokines (crlf1a), matrix metalloproteases (mmp9), and growth factors (hbegfa). Cluster 3 (early reactive MG) specifically expresses Notch signaling targets (her15.1-1, her9, her4.1) and starmaker (stm) at 44 hpl, while cluster 4 (late reactive MG) does not. In situ hybridization validates the temporal and spatial expression patterns of her4.1, stm, and crlf1a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential gene expression between reactive MG clusters is well-documented (C97-C108) and validated by in situ hybridization (C101-C102, C104-C107). The identification of stm as a specific marker for early reactive MG at 44 hpl (C103-C105) is a novel finding. The temporal dynamics of crlf1a expression (C106-C107) are consistent with the scRNAseq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Cluster 5 represents a transient cell population with hybrid characteristics of reactive MG and early RPCs, expressing both MG markers (gfap, crlf1a, her4.1) and RPC markers (High Mobility Group proteins including hmgb2b, stmn1a, nr2e1, sox9b). This cluster also expresses id1, which is found in MG but not in downstream RPCs. In situ hybridization validates the temporal expression patterns of hmgb2b and id1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of a hybrid MG/RPC population (C3, C37, C123) is a major finding supported by comprehensive marker analysis (C109-C117) and validated by in situ hybridization (C118-C122). The expression of both MG and RPC markers in cluster 5 is consistent with a transitional state. However, the interpretation that this cluster represents the direct product of asymmetric MG division (discussed in C175-C177) requires additional lineage tracing experiments to definitively establish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Clusters 6 and 7 represent neurogenic progenitors (progenitors 2 and 3) that express markers of multipotency and neurogenesis including insm1a, atoh7, onecut1, and onecut2. Cluster 6 is proliferative (mki67-positive) while cluster 7 is non-proliferative and expresses additional neurogenic markers (tubb5, sox11b). In situ hybridization validates the temporal and spatial expression of atoh7, onecut1, and onecut2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of two neurogenic progenitor populations (C132) is well-supported by marker gene expression (C124-C131) and validated by in situ hybridization (C133-C134). The distinction between proliferative (cluster 6) and non-proliferative (cluster 7) neurogenic progenitors is consistent with the expected progression of progenitor differentiation. The citation of Ramachandran et al., 2012 for insm1a function (C124) appropriately contextualizes the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Fate-restricted progenitors and differentiating progeny were identified, including photoreceptor precursors (cluster 8, expressing crx and thrb), blue and red cones (clusters 11-12, expressing opn1sw2 and opn1lw2), horizontal cell precursors (cluster 9, expressing prox1a, rem1, ptf1a), retinal ganglion cells (cluster 10, expressing gap43 and isl2b), amacrine cells (clusters 13-14, expressing stx1b and pvalb6), and bipolar cells (cluster 15, expressing vsx1 and samsn1a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of fate-restricted progenitors and differentiating progeny is well-supported by marker gene expression (C136-C146). The marker genes used are appropriate and consistent with established knowledge about retinal cell types. The identification of samsn1a as a novel bipolar cell marker (C146) is a new finding that could be validated in future studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C160"
+    ],
+    "result": "Temporal analysis reveals that neurogenic progenitors progressively differentiate to generate retinal ganglion cells and red cones first (appearing at 4 dpl), followed by blue cones, amacrine cells, and bipolar cells (appearing at 6 dpl), similar to the developmental birth order. No differentiating horizontal cells or rods were detected at 6 dpl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal sequence of neuronal differentiation (C6, C39, C147-C150, C160) is well-documented and consistent with developmental retinogenesis. The absence of horizontal cells and rods at 6 dpl (C150) is acknowledged and discussed in the context of experimental limitations (discussed in claims C151, C155-C156, C187). The comparison to developmental birth order is appropriate and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Analysis of mature cell markers shows that rod markers (rho, gnat1) are very low and sparse, gad1b is restricted to amacrine cells, chata is expressed in a subset of amacrine cells (starburst amacrine cells), calbindins (calb2a, calb2b) are not detected in horizontal cell precursors, protein kinase C variants (prkcab, prkcbb) are not detected in bipolar cells, and synaptic markers (snap25a, snap25b) are expressed in retinal ganglion cells, amacrine cells, cones, and horizontal cell precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of mature cell markers (C151-C158) provides important context for the developmental stage of the regenerated cells at 6 dpl. The absence of mature markers for horizontal cells (C155) and bipolar cells (C156) is consistent with the interpretation that these cell types are not yet fully differentiated at 6 dpl. The expression patterns of synaptic markers (C157-C158) are consistent with the expected maturation of different retinal cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Comparison with a previously published scRNAseq dataset (Hoang et al., 2020) shows substantial overlap in cluster annotations, with resting MG, activated MG, and progenitor clusters from Hoang et al. mapping to corresponding clusters in the present dataset. However, the present study identifies greater heterogeneity within MG and progenitor populations. Some discrepancies exist in the annotation of horizontal cells and rod photoreceptors between the two datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with Hoang et al., 2020 (C161-C168) is appropriate and demonstrates both consistency and complementarity between the two studies. The greater resolution of MG and progenitor heterogeneity in the present study is attributed to the selective enrichment strategy (C170), which is a reasonable explanation. The discrepancies in horizontal cell and rod annotations (C166-C167) are acknowledged and discussed in the context of methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The study proposes a model with two main trajectories in the regenerating zebrafish retina: (1) a glial trajectory (clusters 1-5) that maintains the MG pool through self-renewal and generates first-born neurogenic RPCs, and (2) a neurogenic trajectory (clusters 6-15) that gives rise to all retinal neurons via progressive restriction in cell fate competence. The hybrid MG/RPC population (cluster 5) represents a crossroad between these trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed model (C172, C176-C177, C179) is a reasonable interpretation of the data, but several aspects remain speculative. The claim that cluster 5 represents the direct product of asymmetric MG division (C175) and that self-renewed MG return to non-reactive states via cluster 4 (C177) are inferences that require additional validation through lineage tracing experiments. The authors acknowledge this limitation in the discussion, noting that live imaging or BrdU/EdU lineage tracing would be needed to definitively establish the lineage relationships. The temporal progression and marker expression patterns are consistent with the model, but alternative interpretations cannot be ruled out without direct lineage tracing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C188"
+    ],
+    "result": "The study claims to be the first comprehensive description of MG, MG-derived cells, and their lineage relationships up to 6 days post lesion in the zebrafish retina, providing an in-depth description of MG and RPC molecular identity, cell fate decisions, and production of regenerated progeny. The authors suggest this work will inform future regenerative therapies for retinal dystrophies in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of comprehensiveness (C169, C171) is supported by the extensive characterization of cell populations and temporal dynamics. The methodological advantage of selective enrichment (C170) is well-justified. However, the claim about informing future regenerative therapies (C188) is speculative and represents a potential future application rather than a demonstrated outcome of the current study. The study does provide a valuable resource for understanding retinal regeneration mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "The study identifies specific cell types and their developmental relationships, including retinal ganglion cells as the first regenerated progeny (cluster 10), GABAergic amacrine cells (cluster 14) and starburst amacrine cells (cluster 15), fate-restricted precursors for cones and horizontal cells, and a common Thrb-positive progenitor for horizontal and cone cells. Mature horizontal cell markers (calbindins) are not detected in horizontal cell precursors at 6 dpl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of specific cell types and their relationships (C180-C187) is well-supported by marker gene expression and is consistent with developmental studies (C183, C186). The absence of mature horizontal cell markers (C187) is appropriately interpreted as indicating that horizontal cells have not yet fully differentiated by 6 dpl, which is consistent with the experimental timeline.",
+    "result_type": "MINOR"
+  }
+]

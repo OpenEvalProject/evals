@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Male and female grackles show no sex differences in initial learning (both sexes finish in ~35 trials with ~14 switches), but males significantly outperform females in reversal learning (males: 67 trials, 25 switches; females: 81 trials, 36 switches), demonstrating that environmental unpredictability drives sex-mediated differential learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 provide converging behavioral evidence from Bayesian Poisson models showing no sex effect in initial learning (M-F contrasts center on zero) but clear sex differences in reversal learning (M-F contrasts lie below zero). The data are well-documented with specific means, supported by Figure 2A-F and supplementary files, and statistical analyses are appropriate for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Male grackles achieve superior reversal learning performance through pronounced risk-sensitive learning characterized by higher risk-sensitivity rate \u03bb (males > females across populations and phases) rather than through information-updating rate \u03c6 (which converges between sexes during reversal learning).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide mechanistic explanations via Bayesian reinforcement learning modeling. The data show that while \u03c6 initially differs but converges, \u03bb remains consistently higher in males across populations and learning phases (Figure 2G-J). This mechanistic insight explains the behavioral sex differences and is supported by appropriate computational modeling validated a priori.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Agent-based forward simulations with 10,000 synthetic trajectories successfully replicate the observed behavioral sex differences, confirming that the estimated learning parameters (\u03c6 and \u03bb) sufficiently explain grackles' reinforcement learning patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 demonstrate model validation through quantitative replication. The simulated 'birds' reproduce the key behavioral patterns: males outpace females in reversal but not initial learning, with matching mean values (Figure 2K-P). This successful forward simulation provides strong evidence that no critical mechanisms were overlooked in the model parameterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Evolutionary algorithm modeling demonstrates that urban-like environments (stable but stochastic: low u, high s) favor the learning parameter constellation exhibited by male grackles (low \u03c6, high \u03bb), with intermediate environmental stability generating the highest risk-sensitivity values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 present evolutionary modeling results showing selection favors risk-sensitive learning in hypothesized urban-like conditions (Figure 3B). The model uses appropriate methods (300 individuals, 7000 generations, roulette wheel selection) and the pattern is clearly documented. However, C47-C48 are speculative explanations for observed patterns rather than direct model outputs, though they are reasonable interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C75",
+      "C76",
+      "C77",
+      "C82"
+    ],
+    "result": "The study examined 49 wild-caught grackles from three populations (core: Tempe, AZ, 1951; middle: Santa Barbara, CA, 1996; edge: Greater Sacramento, CA, 2004) and found no credible population-level differences in reinforcement learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C75-C77 provide clear sample descriptions with appropriate citations for population establishment dates. Claim C82 reports the absence of population-level differences, supported by Supplementary files 2a-b. The sample sizes are modest (especially middle population: 4M, 4F) which appropriately leads to more uncertain estimates, as acknowledged in the mechanistic results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The experimental protocol used colored tubes (gold/grey for Santa Barbara; light/dark grey for others) with standardized dimensions (26mm outer, 19mm inner diameter) and a learning criterion of 17 correct choices in the last 20 trials, with trial 17 being the earliest possible finish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 provide clear methodological details. The learning criterion is explicitly stated and the logical inference about earliest finish (C81) is mathematically correct. The variation in tube colors between sites is a potential confound but is clearly documented. The methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The reinforcement learning model estimates two core parameters: information-updating rate \u03c6 (how rapidly learners revise knowledge based on reward-payoffs) and risk-sensitivity rate \u03bb (how strongly learners weight knowledge when making choices), with higher values indicating faster updating and more deterministic choice behavior, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 provide clear definitions of the model parameters with appropriate citations to the reinforcement learning literature. The interpretations are standard in the field and the mathematical relationships between parameters and behavior are correctly described. These definitions are essential for understanding the mechanistic results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study demonstrates that faster reversal learning in grackles is governed primarily by risk-sensitive learning rather than 'behavioral flexibility,' indicating that reversal learning assays do not necessarily measure what they claim to measure and that formal models based on the premise that learning speed relates to behavioral flexibility require reassessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present important conceptual conclusions drawn from the mechanistic results. The inference that reversal learning measures risk-sensitivity rather than 'flexibility' is well-supported by the data showing \u03bb drives performance differences. The citations to Aljadeff & Lotem 2021 and Federspiel et al. 2017 support similar concerns. This challenges common interpretations in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C73"
+    ],
+    "result": "Risk-sensitive learning is a viable winning strategy for male grackles\u2014the dispersing sex\u2014to lead urban invasion, as demonstrated through the complete pathway from behavior to mechanisms to evolutionary selection showing that male grackles outperform females in reversal learning via pronounced risk-sensitive learning (low \u03c6, high \u03bb) that is favored in urban-like environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 and C73 synthesize the major findings across all analytical approaches. The conclusion is well-supported by the convergence of behavioral data (C50), mechanistic modeling (C51), simulation validation (C52), and evolutionary modeling (C53). This represents the paper's central contribution linking sex-biased dispersal to learning mechanisms in urban invasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Great-tailed grackles have undergone rapid urban-targeted range expansion over ~150 years from Central America throughout the United States, with male-led invasion evidenced by male-biased first sightings (41/63 cases) and genetic data showing higher female relatedness, female relatedness decreasing with distance, and male relatedness unrelated to distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 establish the biological context through appropriate citations. The historical data (C21) and genetic evidence (C22-C24) from Sevchik et al. 2022 converge to support male-biased dispersal (C25). These are well-established facts from prior work that motivate the current study's focus on sex differences in learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Grackles' polygynous mating system with high male reproductive skew may lead to sex-biased learning styles, with males approaching individual learning and females approaching social learning, potentially allowing later-arriving females to rely on information from pioneering males while male risk-sensitive learning reduces risks associated with individual learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 present speculative hypotheses about mechanisms linking mating system to learning strategies. While C62 is supported by citation and C63 cites relevant simulations (Smolla et al. 2019), C64-C65 are explicitly speculative (marked as 'could' and 'should'). No direct data on social vs. individual learning in grackles are presented, making this an interesting hypothesis requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The absence of population-level differences in grackles' reinforcement learning suggests that phenotypic plasticity and/or inherent species traits (rather than phenotypic filtering by invasion stage) facilitate urban invasion, supported by grackles' plastic ecology, consistent urban niche preference, and selection for sex-biased risk-sensitive learning across populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 address the lack of spatial variation in results. C66 correctly reports the absence of population differences. C67-C69 provide appropriate citations for alternative explanations. C70 synthesizes the study's findings to support the plasticity/inherent trait explanation. The logic is sound though limited by lack of spatial replicates, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The evolutionary model, while not a complete representation of urban ecology dynamics (lacking spatial dynamics and realistic life histories), provides a focused baseline examining how reinforcement learning parameters respond to hypothesized urban-like environmental statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 appropriately acknowledge model limitations while clarifying its scope and purpose. This transparent discussion of what the model does and does not include is important for proper interpretation. The model serves its stated purpose of providing a baseline for understanding selection on learning parameters in different environmental contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Dispersal and range expansion are linked, with sex-biased dispersal varying across taxa and driving invasion dynamics; cognition contributes to colonization capacity with urban environments favoring particular learning phenotypes, yet the interactive influence of sex-biased dispersal and learning on urban invasion remains empirically unexamined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 establish the literature context through appropriate citations. The claims about dispersal-range expansion links (C1), sex-biased dispersal patterns (C2-C4), cognition's role (C5-C6), and urban learning advantages (C7-C9) are well-supported by cited work. C10-C11 correctly identify the research gap, motivating the current study. These are accurate representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Urban environments are hypothesized to be both stable (in predation, thermal habitat, resources) and stochastic (in anthropogenic disturbances), with 40-75% of British households providing supplemental bird feeding that positively relates to avian abundance, but these feeding opportunities are traded off against variable traffic noise and pedestrian presence that negatively affect birds' sleep, mating, and foraging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 characterize urban environments through appropriate citations. The dual nature of urban environments (stable yet stochastic) is well-supported by reviews (C12). The British feeding data (C13-C14) and negative effects of variability (C16-C18) are supported by specific studies. This establishes the environmental context for understanding selection on learning strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "The term 'behavioral flexibility' has been hypothesized to explain invasion success but is conceptually uninformative given varied applications; reversal learning is the most common assay but consecutive relearning tasks do not resemble grackles' day-to-day urban foraging scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C61 provide important context about the 'behavioral flexibility' concept and its measurement. The critique of the term's vagueness (C55) is supported by citation to Audet & Lefebvre 2017. The documentation of reversal learning as common (C56) is supported by extensive cross-taxa citations. C61's point about ecological validity is well-supported by citations on grackle ecology and urban environments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The study's modeling methods, documented in-depth and made freely available, can be comparatively applied to establish a biologically meaningful analytical approach for studying drivers of geographic and phenotypic distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 describes the methodological contribution and broader applicability of the analytical framework. The methods are indeed documented in detail in the paper and code is made available on GitHub. The claim about comparative applicability is reasonable given the generalizability of reinforcement learning models, and is supported by citations to relevant comparative work.",
+    "result_type": "MINOR"
+  }
+]

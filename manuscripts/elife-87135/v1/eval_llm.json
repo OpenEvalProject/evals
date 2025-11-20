@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "result": "Early blight resistance in S. commersonii maps to a single dominant locus on chromosome 12. Segregation analysis of progeny from CGN18024_1 \u00d7 CGN18024_3 showed a 1:1 ratio consistent with a single dominant locus (C30, C31). BSR-Seq and fine mapping localized the resistance to a 20 kb region at the top of chromosome 12 (C32, C33, C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The segregation data (C30) with statistical support (\u03c7\u00b2 test, p=0.72) and molecular mapping data (C32, C33, C36) converge to support a single dominant locus on chromosome 12. The experimental design includes appropriate controls and the statistical analysis is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "A high-quality genome assembly of resistant S. commersonii CGN18024_1 was generated with a size of 737 Mb, showing high completeness and contiguity based on N50 and BUSCO scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome assembly metrics (C34, C35) are well-documented in Table 1, showing substantial improvement over the previous S. commersonii assembly (N50 of 4.02 Mb vs 0.007 Mb, BUSCO 95.7% vs 81.9%). These metrics indicate a high-quality assembly suitable for downstream analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Two glycosyltransferase genes (ScGTR1 and ScGTR2) were identified in the resistance region. The resistant haplotype contains a 7.3 kb duplication harboring these two highly similar genes (97% amino acid identity), while the susceptible haplotype contains a frameshift mutation leading to a truncated protein (ScGTS). Both genes are expressed only in resistant progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural variation between haplotypes (C38, C39) is supported by comparative genomic analysis (Figure 2a). Gene prediction (C40, C42), sequence analysis (C41, C44), and expression data (C43) provide converging evidence. The phylogenetic analysis (C45) adds context for gene function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Transient expression of ScGTR1 and ScGTR2 significantly reduced A. solani lesion size in susceptible S. commersonii CGN18024_3 but not in S. tuberosum cv. Atlantic, demonstrating that both genes can confer resistance in a species-specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The agroinfiltration experiments (C46, C47) with appropriate controls (empty vector, ScGTS) and statistical analysis (p<0.01, p<0.001) support the functional role of both genes. The species-specificity (C48) is clearly demonstrated, though the mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Leaf extracts from resistant CGN18024_1 inhibit growth of multiple fungal pathogens including A. solani, B. cinerea, and F. solani, indicating broad-spectrum antifungal activity of compounds present in resistant plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The growth inhibition assays (C49, C52) with multiple fungal species provide strong evidence for broad-spectrum activity. The observation of reduced contamination on semi-sterilized media (C50) further supports this conclusion. Statistical significance is reported for all three pathogens tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Resistant S. commersonii CGN18024_1 produces tetraose SGAs while susceptible CGN18024_3 accumulates triose SGAs. Mass spectrometry analysis identified the tetraose SGAs as (dehydro-)commersonine and (dehydro-)demissine, and the triose SGAs as their precursors (solanidine-Gal-Glu-Glu and demissidine-Gal-Glu-Glu), suggesting conversion by addition of a glucose or xylose moiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The UPLC-MS data (C56, C57, C58) clearly differentiate the SGA profiles between resistant and susceptible genotypes. Mass spectra (C59, C60) match previous literature, and the structural relationship between triose and tetraose SGAs (C61) is well-supported by the data in Figure 4a and Supplementary files 3 and 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "ScGTR1 functions as a glucosyltransferase adding glucose to triose SGAs, while ScGTR2 functions as a xylosyltransferase adding xylose. Both enzymes are highly specific to SGAs, with 75% of metabolic variation explained by SGA modifications, though slight overlap in activity was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SGA profiling of transformants (C62, C63, C64) provides clear biochemical evidence for enzyme specificity. The PCA analysis (C67) demonstrates high specificity. The detection of minor cross-activity (C66) is appropriately reported and does not undermine the main conclusion about enzyme specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Both ScGTR1 and ScGTR2 transformants of CGN18024_3 are resistant to A. solani, but transformation of S. tuberosum cv. Atlantic did not alter SGA profiles, likely due to different triose SGA substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disease resistance data (C68) for transformants is supported by Figure 4b. The lack of effect in Atlantic (C69) is explained by substrate specificity, which is a reasonable interpretation supported by the UPLC-MS data in Supplementary files 3 and 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Tetraose SGAs produced by ScGTR1 and ScGTR2 provide resistance to Colorado potato beetle (CPB). Wildtype CGN18024_3 is susceptible, but CGN18024_1 and transformants expressing ScGTR1 or ScGTR2 show significantly reduced larval survival and weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CPB bioassay data (C71, C72) in Figure 4c clearly demonstrate resistance with appropriate statistical analysis (p<0.05, p<0.001). The conclusion that both enzyme modifications provide protection against both A. solani and CPB (C73) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study demonstrates that resistance to A. solani in S. commersonii is caused by a single dominant locus containing two glycosyltransferase genes that produce tetraose SGAs with distinct sugar modifications. These compounds provide broad-spectrum resistance against multiple fungal pathogens and CPB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates genetic mapping (C74), biochemical characterization (C75), functional validation (C76), and broad-spectrum activity testing (C77, C78). All component claims are well-supported by experimental data, making this a robust overall conclusion (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction establishes the agricultural importance of plant diseases and pests, reviews existing resistance mechanisms (NLRs, PRRs, S genes), describes plant defense compounds including SGAs, and contextualizes the study of early blight resistance in S. commersonii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C25) are appropriately supported by citations to published literature. They provide necessary context but do not represent novel findings from this study. The claims about prior work on S. malmeanum resistance (C22-C24) are properly attributed to Wolters et al., 2021.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The discussion contextualizes the findings within SGA biosynthesis and safety considerations. SGAs below 200 mg/kg are considered safe for consumption, and the structural features of S. commersonii SGAs combine elements from potato and tomato SGAs. The biosynthesis pathways and gene clusters for major SGAs have been elucidated in cultivated species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion claims (C80-C89) are appropriately supported by citations to relevant literature. They provide important context for interpreting the significance of the findings and potential applications, though they represent synthesis of existing knowledge rather than novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The discussion addresses potential risks and opportunities of tetraose SGAs, including non-specific effects on beneficial organisms, natural detoxification mechanisms in plants and pathogens, evolutionary pressures driving SGA diversity, and potential applications through introgression breeding or metabolic engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C90-C103) mix well-supported statements about prior work (C92-C95, C100) with speculative statements about risks (C90, C91, C103) and future applications (C101). While the speculation is reasonable and appropriately qualified, these represent hypotheses and future directions rather than demonstrated results. Some claims (C96, C99) are supported by the current study's data.",
+    "result_type": "MINOR"
+  }
+]

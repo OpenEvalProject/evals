@@ -1,0 +1,865 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Predicting the interaction between Major Histocompatibility Complex (MHC) class I-presented peptides and T-cell receptors (TCR) holds significant implications for vaccine development, cancer treatment, and autoimmune disease therapies.",
+    "claim_type": "EXPLICIT",
+    "source": "Predicting the interaction between Major Histocompatibility Complex (MHC) class I-presented peptides and T-cell receptors (TCR) holds significant implications for vaccine development, cancer treatment, and autoimmune disease therapies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the potential applications of TCR-peptide interaction prediction, drawing from established scientific knowledge about immunotherapy applications.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Limited paired-chain TCR data, skewed towards well-studied epitopes, hampers the development of pan-specific machine-learning (ML) models.",
+    "claim_type": "EXPLICIT",
+    "source": "However, limited paired-chain TCR data, skewed towards well-studied epitopes, hampers the development of pan-specific machine-learning (ML) models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by inference from the challenges described in the manuscript regarding data availability and distribution.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Integrating pan-specific and peptide-specific models alongside with similarity-based predictions improves overall performance, especially when a low false positive rate is desirable.",
+    "claim_type": "EXPLICIT",
+    "source": "Integrating pan-specific and peptide-specific models alongside with similarity-based predictions, further improves the overall performance, especially when a low false positive rate is desirable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental data presented in the manuscript showing performance improvements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The NetTCR 2.2 modeling framework attained state-of-the-art performance in the context of the IMMREP22 benchmark.",
+    "claim_type": "EXPLICIT",
+    "source": "In the context of the IMMREP22 benchmark, this modeling framework attained state-of-the-art performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by benchmark comparison data presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Combining these strategies results in acceptable predictive accuracy for peptides characterized with as little as 15 positive TCRs.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, combining these strategies results in acceptable predictive accuracy for peptides characterized with as little as 15 positive TCRs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental data from leave-most-out experiments shown in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The TCR is heterodimer (most often) formed by an \u03b1 and a \u03b2 chain.",
+    "claim_type": "EXPLICIT",
+    "source": "The TCR is heterodimer (most often) formed by an \u03b1 and a \u03b2 chain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established scientific knowledge about TCR structure.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The variation in TCR is mostly limited to the interacting domains of the TCR, known as the complementary determining regions (CDRs).",
+    "claim_type": "EXPLICIT",
+    "source": "This variation is mostly limited to the interacting domains of the TCR, known as the complementary determining regions (CDRs) (Davis and Bjorkman, 1988).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to Davis and Bjorkman, 1988.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Machine-learning (ML) approaches have allowed to accurately predict which peptides can be presented by the MHC.",
+    "claim_type": "EXPLICIT",
+    "source": "However, while machine-learning (ML) approaches have allowed to accurately predicts which peptides can be presented by the MHC (Nielsen et al., 2020), the scarce data, combined with the extreme variability of the TCR, has made it difficult to produce models with broad peptide-HLA coverage with similar accuracies for predictions of TCR specificity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to Nielsen et al., 2020.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Scarce data, combined with the extreme variability of the TCR, has made it difficult to produce models with broad peptide-HLA coverage with similar accuracies for predictions of TCR specificity.",
+    "claim_type": "EXPLICIT",
+    "source": "However, while machine-learning (ML) approaches have allowed to accurately predicts which peptides can be presented by the MHC (Nielsen et al., 2020), the scarce data, combined with the extreme variability of the TCR, has made it difficult to produce models with broad peptide-HLA coverage with similar accuracies for predictions of TCR specificity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on inference from the challenges in the field and supported by the context of the manuscript.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Recent benchmarks have shown that training models on both chains leads to vastly improved predictive performance, compared to training on single chain data alone.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent benchmarks have shown that training models on both chains leads to vastly improved predictive performance, compared to training on single chain data alone (Meysman et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to Meysman et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Performance is improved even further when also including the CDR1 and CDR2 sequences of the chains, either as amino acid sequences or implicitly through annotated V- and J-genes.",
+    "claim_type": "EXPLICIT",
+    "source": "This performance is improved even further when also including the CDR1 and CDR2 sequences of the chains, either as amino acid sequences or implicitly through annotated V- and J-genes (from which the CDR1 and CDR2 sequences are determined).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on inference from the literature and knowledge in the field.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Similarity-based methods tend to be surpassed by ML methods when similarity between training and evaluation data is decreased.",
+    "claim_type": "EXPLICIT",
+    "source": "While similarity-based methods have been shown to perform almost on par with ML-based models in cases where high similarity exist between the training and evaluation data and where many positive TCR observations are present for a given peptide, these approaches tend to be surpassed by ML methods when this similarity is decreased (Montemurro et al., 2022; Meysman et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Montemurro et al., 2022 and Meysman et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Earlier work has estimated that ~150 unique TCRs are required to construct an accurate ML prediction model capturing the rules of TCR specificity towards a specific peptide.",
+    "claim_type": "EXPLICIT",
+    "source": "Earlier work has been estimated that ~150 unique TCRs are required to construct an accurate ML prediction model capturing the rules of TCR specificity towards a specific peptide (Montemurro et al., 2021), and that very limited if any predictive power can be maintained when predicting specificity towards peptides, for which no binding TCRs have been recorded (Moris et al., 2021; Grazioli et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citation to Montemurro et al., 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Very limited if any predictive power can be maintained when predicting specificity towards peptides for which no binding TCRs have been recorded.",
+    "claim_type": "EXPLICIT",
+    "source": "Earlier work has been estimated that ~150 unique TCRs are required to construct an accurate ML prediction model capturing the rules of TCR specificity towards a specific peptide (Montemurro et al., 2021), and that very limited if any predictive power can be maintained when predicting specificity towards peptides, for which no binding TCRs have been recorded (Moris et al., 2021; Grazioli et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Moris et al., 2021 and Grazioli et al., 2022.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Pan-specific models for MHC have been developed on data spanning large sets of different MHC molecules resulting in high extrapolation power also for molecules not included in the training data.",
+    "claim_type": "EXPLICIT",
+    "source": "Such a setup has with high success been applied for the MHC system where pan-specific models have been developed on data spanning large sets of different MHC molecules resulting in high extrapolation power also for molecules not included in the training data (Reynisson et al., 2020; Nilsson et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Reynisson et al., 2020 and Nilsson et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "No models have so far been able to obtain substantial performance when predicting binding for unseen peptides that are not highly similar to already seen peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "While many of the current day models for TCR specificity predictions are trained in this way, no models have so far been able to obtain substantial performance when predicting binding for unseen peptides that are not highly similar to already seen peptides.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on inference from the state of the field as described in the manuscript.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The main problem limiting the power of extrapolation for pan-specific models lies in the scarcity of data available for training, especially so for paired-chain data, combined with the problem that the current data is highly imbalanced towards only a few peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "The main problem limiting the power of extrapolation for these pan-specific models lies in the scarcity of data available for training, especially so for paired-chain data, combined with the problem that the current data is highly imbalanced towards only a few peptides.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on inference from the challenges described in the manuscript.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "The data contain a high proportion of noise produced with current single-cell high-throughput sequencing methods.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, while the availability of data has increased recently, another problem is the high proportion of noise contained within the data produced with the current single-cell high-throughput sequencing methods (Zhang et al., 2021; Montemurro et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Zhang et al., 2021 and Montemurro et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Statistical denoising methods likely share suboptimal sensitivity and specificity.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these methods are naturally challenged when dealing with small T cell populations, and due to their statistical nature likely share suboptimal sensitivity (i.e. remove true data) and specificity (i.e. allow false positives to slip through) (Zhang et al., 2021; Montemurro et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Zhang et al., 2021 and Montemurro et al., 2023, and inference about the limitations of statistical methods.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The initial data was acquired from IEDB and VDJdb on the 23rd and 24th of August 2022, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "The initial data was acquired from IEDB (Vita et al., 2019) and VDJdb (Bagaev et al., 2020) on the 23rd and 24th of August 2022, respectively, using a query to select only positive T-cell assays for MHC class I and Human cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about data collection methods.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The IEDB query resulted in a dataset of 21,825 observations across 631 peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "This resulted in a dataset of 21,825 observations across 631 peptides for IEDB and 27,005 observations across 898 peptides for VDJdb.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the data collection results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "The VDJdb query resulted in a dataset of 27,005 observations across 898 peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "This resulted in a dataset of 21,825 observations across 631 peptides for IEDB and 27,005 observations across 898 peptides for VDJdb.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the data collection results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "After filtering, the merged dataset contained 4439 observations across 405 peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "This filtering resulted in 4439 observations across 405 peptides after merging the two datasets together and dropping duplicate entries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the data after filtering.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Including a dataset from a 10x sequencing study denoised with iTRAP resulted in a combined dataset of 10,239 observations across 435 peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, a dataset from a 10 x sequencing study (10x Genomics, 2020) which was denoised with iTRAP (Povlsen et al., 2023) was included, resulting in a combined dataset of 10,239 observations across 435 peptides.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the data after including additional datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Stitchr successfully retrieved 9045 full TCR sequences (88.5% of the inputs).",
+    "claim_type": "EXPLICIT",
+    "source": "As the alignment failed on either one chain or both for some of the sequences, 9045 full TCR sequences were retrieved in this step.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the success rate of Stitchr.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "A second run of Stitchr rescued 20 additional TCR sequences, bringing the total to 9065.",
+    "claim_type": "EXPLICIT",
+    "source": "In cases where Stitchr failed to reconstruct the TCR, a second run of Stitchr was performed where tryptophan was added instead of phenylalanine for the CDR3s with the wrong nomenclature. This resulted in the rescue of 20 additional TCR sequences, bringing the total number of full TCR sequences up to 9065 (88.5% of the inputs given to Stitchr).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the data processing results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The first redundancy reduction resulted in a dataset of 6415 observations across 26 peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "This redundancy reduction and filtering resulted in a dataset of 6415 observations across 26 peptides.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the data after redundancy reduction.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The second redundancy reduction removed 68 observations, resulting in a final dataset of 6,353 positive observations across 26 peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "A second redundancy reduction was subsequently carried out also at a 0.95 kernel similarity threshold across all remaining observations and peptides, where the data was sorted by peptide according to TCR count (least abundant to most abundant) in order to limit the risk of removing observations from peptides with few observations. This resulted in the further removal of 68 observations, resulting in a final dataset of 6,353 positive observations across 26 peptides.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the final dataset size.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "For each positive observation, five negative observations were generated by swapping TCRs, except for GILGFVFTL peptide which had a 1:4.647 ratio.",
+    "claim_type": "EXPLICIT",
+    "source": "For each positive observation, five negative observations were generated using this approach, except for the GILGFVFTL peptide, where all TCRs from the other peptides were used as negatives, since there was not enough data to allow for a 1:5 positive to negative ratio for this peptide (a 1:4.647 ratio was achieved here).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the negative data generation strategy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The NetTCR 2.2 CNN models used a dropout rate of 0.6.",
+    "claim_type": "EXPLICIT",
+    "source": "For the models utilizing dropout, a dropout rate of 0.6 was used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the model hyperparameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The maximum length observed was 12, 7, 8, 22, 6, 7, and 23 residues for the peptide-, CDR1\u03b1-, CDR2\u03b1-, CDR3\u03b1-, CDR1\u03b2-, CDR2\u03b2-, and CDR3\u03b2-amino acid sequences, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "For reference, the maximum length observed was 12, 7, 8, 22, 6, 7, and 23 residues for the peptide-, CDR1\u03b1-, CDR2\u03b1-, CDR3\u03b1-, CDR1\u03b2-, CDR2\u03b2-, and CDR3\u03b2-amino acid sequences, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the data characteristics.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "A learning rate of 0.001 was used for training of all models.",
+    "claim_type": "EXPLICIT",
+    "source": "A learning rate of 0.001 was used for training of all models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the model training hyperparameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "A patience of 200 epochs was used for the early stopping for the peptide-specific CNNs.",
+    "claim_type": "EXPLICIT",
+    "source": "A patience of 200 epochs was used for the early stopping for the peptide-specific CNNs, whereas for the pan-specific CNNs, a patience of 100 epochs was used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the model training strategy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "A patience of 100 epochs was used for the early stopping for the pan-specific CNNs.",
+    "claim_type": "EXPLICIT",
+    "source": "A patience of 200 epochs was used for the early stopping for the peptide-specific CNNs, whereas for the pan-specific CNNs, a patience of 100 epochs was used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the model training strategy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "For the pan-specific models, a batch size of 64 was used together with shuffling.",
+    "claim_type": "EXPLICIT",
+    "source": "For the pan-specific models, a batch size of 64 was used together with shuffling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the model training strategy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The value of c was set to 3.8 to ensure that the overall weighted loss was comparable to the training done without sample weighting.",
+    "claim_type": "EXPLICIT",
+    "source": "The value of c was set to 3.8 to ensure that the overall weighted loss was comparable to the training done without sample weighting.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a factual statement about the model training hyperparameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Peptide-specific models are superior to pan-specific models in the NetTCR 2.1 framework.",
+    "claim_type": "EXPLICIT",
+    "source": "The result of this analysis can be seen in Figure 2 and demonstrates that peptide-specific models also here are superior to the pan-specific model.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Introducing dropout and doubling the number of neurons in the dense layer resulted in a highly significant increase in performance for the pan-specific model.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 3, this resulted in a highly significant increase in performance (bootstrap test resulting in p<0.0001 for all tested metrics).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 3 and statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Introducing peptide specific sample weight resulted in a further increase in performance for the less abundant peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "As demonstrated in Figure 3, this approach resulted in a further increase in performance for the less abundant peptides, whereas the performance for the more abundant peptides was largely unaffected.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The updated pan-specific model significantly outperformed the updated peptide-specific models in terms of both unweighted and weighted AUC.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the updated pan-specific model significantly outperformed the updated peptide-specific models in terms of both unweighted (p<0.0001) and weighted AUC (p=0.0004), and the performance gain was especially observed for the less abundant peptides.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 3 and statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "In terms of AUC 0.1, the updated peptide-specific model maintained a superior performance.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in terms of AUC 0.1, the updated peptide-specific model (NetTCR-2.2 - Peptide) maintained a superior performance (see Figure 3\u2014figure supplement 1) (p=0.0008 and p<0.0001 for AUC 0.1 and weighted AUC 0.1, respectively).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 1 and statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Neither the peptide- nor the pan-specific model benefitted from reusing the redundant data.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 4, neither the peptide- nor the pan-specific model benefitted from reusing the redundant data.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The performance of the pan-specific model was significantly reduced when reusing redundant data in terms of unweighted AUC and weighted AUC 0.1.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, the performance of the pan-specific model was significantly reduced in terms of unweighted AUC (p=0.0041) and weighted AUC 0.1 (p=0.0395).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 4 and statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "An overall increase in performance for the models trained on the limited datasets was observed up until the 70th percentile datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "An overall increase in performance for the models trained on the limited datasets was observed up until the 70th percentile datasets, after which the performance gain stagnated (see Figure 5\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 5\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The average performance of the model trained on the 70th percentile dataset was significantly higher than the model trained on the full dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "The average performance of the model trained on the 70th percentile dataset was significantly higher than the model trained on the full dataset (p=0.0001, p<0.0001, p=0.0054 and p<0.0001 for AUC, weighted AUC, AUC 0.1 and weighted AUC 0.1, respectively).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 5 and statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The pre-trained model outperformed both the pan- and peptide-specific models.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 6, this pre-trained model outperformed both the pan- and peptide-specific models.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 6.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The improvement of the pre-trained model was found to be highly significant across all metrics when compared to the pan-specific model.",
+    "claim_type": "EXPLICIT",
+    "source": "This improvement was found to be highly significant (p<0.0001) across all metrics, when compared to the bootstrap of the pan-specific model, which was also the case when comparing to the peptide-specific model (p<0.0001, p<0.0001, p=0.0008 and p=0.0021 for AUC, weighted AUC, AUC 0.1 and weighted AUC 0.1, respectively).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 6 and statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The integration of TCRbase led to a significant improvement in performance for all metrics.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the integration of TCRbase led to a significant improvement in performance for all metrics (p<0.0001).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 7 and statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The benefit from TCRbase mainly consist of increasing the discrimination between binders and non-binders at thresholds corresponding to low FPRs.",
+    "claim_type": "EXPLICIT",
+    "source": "This figure demonstrates that the benefit from TCRbase mainly consist of increasing the discrimination between binders and non-binders at thresholds corresponding to low FPRs (0 \u2264 FPR <= 0.15), whereas the predictions may become slightly worse than without scaling when the threshold for binders are set to that of an FPR higher than 0.3.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 7\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The model clearly outperforms the random baseline for all peptides in the peptide specificity test.",
+    "claim_type": "EXPLICIT",
+    "source": "The results show that the model clearly outperforms this random baseline for all peptides.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 9.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The percentage of correctly chosen pairs correlates very strongly with the AUC and the AUC 0.1 of the peptides.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, the percentage of correctly chosen pairs correlates very strongly with the AUC and the AUC 0.1 of the peptides. In the case of ranks when using direct prediction, the PCC of the percentage of correct predictions to AUC and AUC 0.1 were 0.740 and 0.830, respectively (sample size of 19 peptides).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 9 and correlation analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "A performance in terms of AUC slightly better than random was observed for most of the peptides in the leave-one-out setup.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 11, a performance in terms of AUC slightly better than random was observed for most of the peptides.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 11.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The performance was almost completely random when evaluated in terms of AUC 0.1 in the leave-one-out setup.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the performance was almost completely random when evaluated in terms of AUC 0.1, as can be seen in Figure 11\u2014figure supplement 1.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 11\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "All models demonstrated a non-random performance with as low as 5 positive observations in the leave-most-out setup.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 12 and Figure 12\u2014figure supplement 1 all models demonstrated a non-random performance with as low as 5 positive observations.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 12 and Figure 12\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The TCRbase ensemble model strongly outperformed all other models with an AUC close to 0.8 when the number of training points surpassed 15.",
+    "claim_type": "EXPLICIT",
+    "source": "This was especially the case for the TCRbase ensemble model, which strongly outperformed all other models with an AUC close to 0.8, when the number of training points surpassed 15.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 12.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "The performance of the baseline TCRbase model did not improve nearly as much as the CNN-based models when the amount of training data was increased.",
+    "claim_type": "EXPLICIT",
+    "source": "Noticeably, the performance of the baseline TCRbase model did not improve nearly as much as the CNN-based models when the amount of training data was increased, suggesting that the CNN models are able to benefit much more from the increased amount of information present in larger datasets.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 12 and inference from the results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The updated peptide-specific models, NetTCR-2.2 - Peptide, significantly outperformed NetTCR 2.1 on the IMMREP 2022 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 13, the updated peptide-specific models, NetTCR-2.2 - Peptide, significantly outperformed NetTCR 2.1 (p=0.0367, p=0.0263, p=0.0087 and p=0.0034 for AUC, weighted AUC, AUC 0.1 and weighted AUC 0.1, respectively).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 13 and statistical testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "With an unweighted average AUC of 0.8476, the NetTCR-2.2 - Peptide model performed on par with the best performing model in terms of AUC at the IMMREP workshop, TCRex \u03b1\u03b2.",
+    "claim_type": "EXPLICIT",
+    "source": "With an unweighted average AUC of 0.8476, this model performed on par with the best performing model in terms of AUC at the IMMREP workshop, TCRex \u03b1\u03b2 (Gielis et al., 2018), with an average unweighted AUC of 0.8473.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 13 and comparison to benchmark results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The NetTCR-2.2 - Pre-trained model underperformed compared to the peptide-specific model on the IMMREP 2022 dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "However, to our surprise, and contrary to our findings on the original dataset of this paper, the NetTCR-2.2 - Pre-trained model underperformed compared to the peptide-specific model, even though part of this performance loss was recovered when introducing the TCRbase scaling on the pre-trained model.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 13.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Swapped negatives were present in the IMMREP training data that originated from positive peptides in the test data.",
+    "claim_type": "EXPLICIT",
+    "source": "Even though the construction of IMMRep datasets was made to ensure that no positive TCR was shared between the training and test data sets, inspection of the data revealed that swapped negatives were present in the training data, which originated from positive peptides in the test data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on inspection of the IMMREP dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The degree of redundancy between training and test data was relatively high for many of the peptides in the IMMREP dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, as shown in Table 4, the degree of redundancy between training and test data was relatively high for many of the peptides.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Table 4.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "When comparing the per peptide AUC of all models to the per peptide redundancy between training- and test data, a Pearson correlation of 0.428 was observed.",
+    "claim_type": "EXPLICIT",
+    "source": "When comparing the per peptide AUC of all models to the per peptide redundancy between training- and test data, we observed a Pearson correlation of 0.428 (sample size of 370), which was a much stronger correlation than observed between the number of training observations and AUC (0.062).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by correlation analysis of the IMMREP data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "After applying redundancy reduction and proper swapped negative generation to the IMMREP dataset, the pre-trained models once again outperformed the peptide-specific models.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 14, this data setup once again resulted in the pre-trained models outperforming the peptide-specific models, and that the use of TCRbase scaling together with the pre-trained model resulted in the overall best performance, in line with our earlier findings.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 14.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The overall performance of the models was found to drop after redundancy reduction, especially for the peptides with a high degree of redundant data.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, the overall performance of the models was found to drop, especially for the peptides with a high degree of redundant data, confirming a degree of performance overestimation in the original benchmark (see Supplementary file 2 for individual peptide performance).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 14 and Supplementary file 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

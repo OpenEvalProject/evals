@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C41",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C117"
+    ],
+    "result": "PfFKBP35 is essential for asexual blood stage replication of P. falciparum, with knock-out resulting in a delayed death-like phenotype where parasites complete G1 normally but arrest in late trophozoite/early schizont stage of G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C41, C50-C55, and C117 collectively demonstrate essentiality through conditional knock-out experiments showing normal G1 completion but G2 arrest. The delayed death phenotype is well-documented with DNA content analysis, multiplication rate measurements, and timing experiments at different induction points. The data converge to support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C124",
+      "C125"
+    ],
+    "result": "PfFKBP35 knock-out causes defective ribosome homeostasis, characterized by accumulation of pre-ribosome and nucleolar components in G1 and dramatic reduction of ribosomal proteins in G2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42, C60-C68, C72-C78, C124-C125 are supported by comprehensive proteomics data showing 19-fold reduction of PfFKBP35, enrichment of pre-ribosome/nucleolus GO terms in G1 (p=1.46E-5), and 2-fold reduction of ribosomal proteins in G2. PANTHER analysis confirms ribosome-related process enrichment. The temporal progression from G1 to G2 is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C80",
+      "C119",
+      "C126"
+    ],
+    "result": "PfFKBP35 knock-out results in stalled protein synthesis in G2 as measured by SUnSET assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C79, C80, C119, and C126 are supported by SUnSET assays showing reduced translation rates in FKBP35KO trophozoites at 24-30 hpi in G2 compared to FKBP35WT controls. Control experiments (rapamycin-induced DiCre in parental line) show no effect on protein synthesis, confirming specificity. The data directly demonstrate the functional consequence of ribosome depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C127",
+      "C128",
+      "C129",
+      "C133",
+      "C134",
+      "C136"
+    ],
+    "result": "The effects of PfFKBP35 knock-out are not reflected in the parasite transcriptome until late G2, indicating a vital role at the post-transcriptional level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C84-C93, C127-C129, C133-C134, and C136 are supported by RNA-seq data showing minimal transcriptional changes at TP1-TP6 despite major proteomic changes at 24-30 hpi in G2. Transcriptional changes only appear at TP7 (30-36 hpi) and are attributed to cell cycle slowdown rather than specific gene regulation. The disconnect between proteomics and transcriptomics strongly supports post-transcriptional activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C114",
+      "C122",
+      "C123",
+      "C141",
+      "C168"
+    ],
+    "result": "FK506 exerts its antiproliferative activity in a PfFKBP35-independent manner, as demonstrated by equal FK506 sensitivity in FKBP35KO, FKBP35WT, knock-down, and overexpression parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46, C104-C105, C107-C110, C114, C122-C123, C141, and C168 are supported by extensive dose-response experiments showing IC50 values of ~1940 nM for FKBP35WT and ~1740 nM for FKBP35KO (no significant difference). Multiple experimental approaches (different timing of KO induction, different timing of drug exposure, knock-down, overexpression) all fail to show PfFKBP35-dependent effects. The immediate activity of FK506 contrasts with delayed death of FKBP35KO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C95",
+      "C118",
+      "C145"
+    ],
+    "result": "CETSA experiments confirm high-affinity binding of FK506 to PfFKBP35 with EC50 values in the low nanomolar range (152-287 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C45, C95, C118, and C145 are supported by both lysate-based CETSA (EC50=152 nM at 60\u00b0C) and live cell CETSA (EC50=286.7 nM at 60\u00b0C) showing dose-dependent stabilization of PfFKBP35 by FK506. The consistency between methods and the low EC50 values confirm high-affinity binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Live cell CETSA reveals that FK506 interacts with ribosomal complexes, with >50 ribosomal proteins stabilized at 55\u00b0C (median EC50=45.9 nM) and increased solubility at 37\u00b0C (median EC50=1.94 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102, C146-C150 are supported by live cell CETSA data showing coordinated stabilization of >50 ribosomal proteins within narrow concentration windows. The vast majority of these ribosomal proteins overlap with those deregulated in FKBP35KO (Figure 4E). The effect at 37\u00b0C suggests FK506 can dissociate ribosomal structures under physiological conditions, though only at high concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C159",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "PfFKBP35 localizes to distinct nuclear foci that are spatially correlated with but do not co-localize with the nucleolar marker fibrillarin, suggesting localization to different sub-nucleolar compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C159, C162-C165 are supported by immunofluorescence microscopy showing PfFKBP35 in distinct nuclear foci that are in close vicinity to but do not overlap with fibrillarin-rich regions. The spatial correlation is consistent with localization to the granular component (GC) area of the nucleolus, though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C56",
+      "C143"
+    ],
+    "result": "Low PfFKBP35 levels are sufficient to maintain essential function, as demonstrated by knock-down experiments showing no growth defects despite efficient depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C56, and C143 are supported by knock-down experiments (NF54/iKD-FKBP35) showing efficient depletion of PfFKBP35 without apparent growth defects. This finding is important for interpreting the delayed death phenotype and the lack of FK506 effect on FKBP35KO parasites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "FKBP35KO and FKBP35WT parasites show equal sensitivity to cycloheximide in G1, indicating ribosome function is not compromised at this stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by dose-response experiments showing equal cycloheximide sensitivity between FKBP35KO and FKBP35WT in G1. This functional assay confirms that despite accumulation of pre-ribosome components, functional ribosomes remain sufficient in G1, consistent with the delayed death phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "PfFKBP35 is not involved in apicoplast biology or heat stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by IPP complementation experiments showing no rescue of FKBP35KO parasites and heat shock susceptibility testing showing no difference between FKBP35KO and FKBP35WT. These negative results help rule out alternative explanations for the delayed death phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors failed to reproduce the previously reported antimalarial activity of D44 using multiple parasite strains and assay methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by extensive testing of D44 from two suppliers using NF54/iKO-FKBP35, NF54 WT, and K1 strains with multiple assay setups including hypoxanthine incorporation. The failure to detect activity contradicts prior reports (Harikishore et al., 2013b) and raises questions about D44 as a PfFKBP35 inhibitor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Lysate-based CETSA identifies additional FK506-binding proteins including MT-A70 (EC50=2.0 \u00b5M) and CEF1 (EC50=3.1 \u00b5M), with EC50 values similar to FK506's IC50 against parasites (1.9 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by lysate-based CETSA data identifying multiple proteins stabilized by FK506. The EC50 values for MT-A70 and CEF1 are in the same range as FK506's antiparasitic IC50, suggesting these could be relevant targets. However, the lower affinity compared to PfFKBP35 and lack of functional validation limit the strength of this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "DiCre successfully deleted fkbp35 in the vast majority of parasites as shown by GFP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by flow cytometry data showing GFP expression in FKBP35KO cells, confirming efficient loxP recombination. This is a methodological validation supporting the knock-out experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "PfFKBP35 levels become limiting for ribosome maturation late in G1, with functional ribosomes sufficient in G1 but becoming limiting in G2, leading to stalled translation and parasite death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C130-C132 represent an integrated model supported by the temporal progression of proteomic and functional changes. The model is consistent with accumulation of pre-ribosome components in G1, normal translation in G1, reduced ribosomal proteins in G2, and reduced translation in G2. However, this remains a model inferred from the data rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims about malaria burden and drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 are background information supported by WHO data and literature citations. These provide context but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C94",
+      "C115",
+      "C116",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Background information on FKBPs, PfFKBP35, and FK506 from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C40, C94, C115-C116, C152-C157 are background information from prior literature, properly cited. These establish the context and rationale for the study but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C161",
+      "C165",
+      "C167"
+    ],
+    "result": "Speculative claims about PfFKBP35 function in ribosome biogenesis and nucleolar localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158, C161, C165, and C167 are explicitly speculative ('tempting to speculate', 'may indicate', 'likely linked'). While consistent with the data, these represent hypotheses rather than demonstrated findings. The mechanistic link between PfFKBP35 and ribosome homeostasis remains elusive as stated by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C142",
+      "C144",
+      "C151"
+    ],
+    "result": "Interpretive claims about why FK506 does not show PfFKBP35-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142, C144, and C151 represent possible explanations for the lack of PfFKBP35-dependent FK506 effects. While the data clearly show FK506 does not act through PfFKBP35, the mechanistic explanation (binding doesn't interfere with function vs. high concentrations needed) remains uncertain. The authors acknowledge this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C169",
+      "C170"
+    ],
+    "result": "Recommendations for future drug development efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C170 are recommendations based on the finding that FK506 does not act through PfFKBP35. The caution urged for FK506-based antimalarial development is a reasonable conclusion from the data, though it represents interpretation rather than direct experimental finding.",
+    "result_type": "MINOR"
+  }
+]

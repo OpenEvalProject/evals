@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C39",
+      "C40"
+    ],
+    "result": "Mechanical coupling through materials of sufficient stiffness coordinates microtubule growth in vitro. Microtubule pairs coupled through stiff springs (\u03ba=5 pN\u00b7\u00b5m\u207b\u00b9) maintained significantly closer tip separations (0.25\u00b10.06 \u00b5m at 300s) compared to soft-coupled pairs (\u03ba=1 pN\u00b7\u00b5m\u207b\u00b9, 0.8\u00b10.2 \u00b5m at 300s, p=0.03), with stiff-coupled pairs being much less likely to exceed 0.8 \u00b5m separation (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 provide comprehensive experimental evidence from the dual-trap assay showing stiffness-dependent coordination. Statistical tests (Wilcoxon-Mann-Whitney, log-rank) support significance claims. Sample sizes (N=10-50 pairs) and error reporting (SEM) are appropriate. The 50 Hz feedback rate (C55) is adequate for the timescales studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C32",
+      "C33",
+      "C34",
+      "C43",
+      "C44",
+      "C58",
+      "C59"
+    ],
+    "result": "Microtubule growth exhibits stochastic, force-dependent pausing. Tension delays pause entry (decreasing kEN) and accelerates pause exit (increasing kEX), while also increasing growth speed during runs. All three rates were well-fit by exponential functions of force, and pause/run duration distributions were approximately exponential, consistent with Poisson processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by reanalysis of N=356 force-clamp recordings with appropriate kinetic analysis (Figure 5). The exponential distributions (C58) and Poisson interpretation (C59) are standard for two-state kinetic models. However, the pause identification method (2s sliding window, 1s minimum duration) involves subjective choices that could affect quantitative results, though sensitivity analysis suggests robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C49",
+      "C64"
+    ],
+    "result": "A pausing model incorporating force-dependent pausing and persistent growth speed heterogeneity explains microtubule pair coordination without free parameters. The model predicts tip separations (0.79\u00b10.01 \u00b5m soft, 0.43\u00b10.005 \u00b5m stiff at 300s) similar to experimental values and outperforms a non-pausing model, suggesting mechanical coupling coordinates growth through two mechanisms: counteracting intrinsic speed differences and selectively suppressing pausing in lagging tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 show good quantitative agreement between model and experiment. The model uses parameters derived directly from force-clamp data (Table 1) with no free fitting, strengthening the result. Statistical comparison (C64, Figure 6-supplement 4) supports superiority over non-pausing model. However, the model's success depends on the validity of the pause identification method and assumes specific functional forms (exponential force-dependence).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A non-pausing model that assumes only intrinsic differences in unloaded growth speed fails to explain microtubule pair coordination. Simulated pairs showed much larger tip separations than experimental pairs, particularly under stiff-coupled conditions, indicating the model overestimates variability and does not capture coordination by mechanical coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by comparison of model predictions to experimental data (Figure 4). The failure of this simpler model strengthens the case for the pausing model. However, this is essentially a negative result showing what doesn't work, which helps justify the more complex pausing model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Stochastic pausing alone (without persistent heterogeneity in growth speed) is insufficient to generate the observed variability in microtubule growth. An ergodic pausing model predicted much lower variability than observed experimentally, particularly under soft-coupled conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by comparison of the ergodic model to experimental data (Figure 6-supplement 3). This demonstrates the necessity of including persistent heterogeneity in the model. The logic is sound: if pausing alone were sufficient, the ergodic model would succeed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C52",
+      "C69"
+    ],
+    "result": "Mechanical coupling is proposed as a major coordinating mechanism for k-fiber microtubules in vivo. The authors conclude that mechanical coupling could account for rapid, sub-micron coordination within k-fibers, while other mechanisms may regulate overall k-fiber length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42, C52, and C69 are conclusions drawn from in vitro experiments with purified components. While the experimental evidence for mechanical coupling in vitro is strong, extrapolation to in vivo k-fibers requires assumptions about kinetochore/chromatin stiffness and neglects potential contributions from other regulatory mechanisms. The in vitro system uses yeast kinetochores and lacks the full cellular context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors propose mechanistic interpretations of force-dependent pausing: pause entry involves minus-end-directed movement (inhibited by tension), pause exit involves plus-end-directed movement (assisted by tension), possibly reflecting tip structural fluctuations and tension-induced straightening of curved protofilaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C46 are inferences from force-dependence data, while C47-C48 are speculative mechanisms supported only by citations. These interpretations are plausible but lack direct structural evidence. The force-dependence observations (C32, C44) are solid, but the molecular mechanisms remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Persistent differences in microtubule growth speed might arise from structural variations such as different protofilament numbers or lattice defects that affect tip taper or raggedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 are speculative explanations for persistent heterogeneity, supported only by citations to prior work. The model requires persistent heterogeneity (C49), but the structural basis is not tested in this study. These are reasonable hypotheses but remain unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The dual-trap assay uses two separate laser trapping microscopes controlled by a single computer that updates forces at 50 Hz to simulate elastic coupling between microtubule pairs. Microtubules experience 1-7 pN tension, similar to estimated forces in budding yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe the experimental method with appropriate technical details. The 50 Hz update rate is validated as sufficient (Figure 3-supplement 1). The force range comparison to yeast (C56-C57) is appropriate given the use of yeast kinetochores. This is a methodological description rather than a scientific result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Kinetochore-decorated beads serve as accurate proxies for microtubule tip positions. Yeast kinetochores are small (~130 nm) and their viscoelastic properties have negligible effects on the experimental results compared to micrometer-scale tip displacements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is well-supported by multiple citations showing bead tracking fidelity. Claims C67-C68 provide appropriate justification for neglecting kinetochore compliance. The slow force changes (Figure 3-supplement 1) support this assumption. This is a methodological validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C31",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background claims establishing the biological context and prior knowledge about k-fiber structure, microtubule dynamics, force effects, and gaps in understanding of coordination mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C7-C18, C31, C73-C82) provide context and cite appropriate literature. They establish the biological problem and justify the study. While important for framing, they are not novel results from this work. The citations appear appropriate for establishing prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C72"
+    ],
+    "result": "The authors suggest that while mechanical coupling may coordinate tips within k-fibers, other mechanisms (microtubule-modifiers, spindle-wide phenomena) likely regulate overall k-fiber length. They note uncertainty about whether selective protein enrichment alone can explain tight coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70 and C72 are speculative statements about mechanisms not directly tested in this study. These represent reasonable hypotheses about division of labor between mechanisms but lack experimental support in this work. They appropriately acknowledge limitations and alternative mechanisms.",
+    "result_type": "MINOR"
+  }
+]

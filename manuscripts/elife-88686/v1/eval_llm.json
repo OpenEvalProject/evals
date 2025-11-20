@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C38",
+      "C39",
+      "C40",
+      "C45"
+    ],
+    "result": "NAD+ treatment protects mice from lethal E. coli infection and LPS-induced septic shock without promoting bacterial clearance, suggesting protection occurs via dampening the inflammatory response rather than antimicrobial effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C30-C31 demonstrate similar bacterial loads between NAD+ and PBS-treated mice despite dramatically different survival outcomes (C38, C30). The survival data (C38: >85% survival with NAD+ vs 100% mortality with PBS) is robust and consistent across bacterial infection and LPS models. The inference that protection occurs via inflammatory modulation rather than bacterial clearance (C32, C33, C45) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C36",
+      "C37",
+      "C42",
+      "C43",
+      "C44",
+      "C143"
+    ],
+    "result": "NAD+ treatment dramatically reduces systemic proinflammatory cytokines (IL-1\u03b2, IL-18, IL-6, TNF\u03b1) and prevents multi-organ damage in LPS-induced septic shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cytokine data (C44) showing near-complete abolishment of IL-1\u03b2, IL-6, TNF\u03b1, and IL-18 in NAD+-treated mice is supported by ELISA measurements (Figure 1F). Histological evidence (C42-C43) demonstrates protection from multi-organ dysfunction including pulmonary hemorrhage, DIC, and tissue damage. Temperature recovery data (C36-C37) and neutrophil infiltration data (C143) provide additional supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "NAD+ specifically inhibits the non-canonical inflammasome pathway in macrophages without affecting canonical inflammasome activation, as demonstrated by reduced caspase-11, IL-1\u03b2, and GSDMD expression while NF-\u03baB and pro-caspase-1 remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specificity claim is well-supported by differential effects on canonical vs non-canonical pathways (C47 vs C49). Western blot data (C50) showing decreased casp-11, casp-1, IL-1\u03b2, and cleaved GSDMD is consistent with non-canonical inflammasome inhibition. The preservation of NF-\u03baB and pro-caspase-1 (C54) supports pathway specificity. Time-course data (C51-C53) and live microscopy (C56) provide additional mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "NAD+ does not impair LPS internalization into macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Fluorescent LPS internalization assays (C57, Figure 2E) show no significant difference between NAD+ and PBS-treated groups, ruling out reduced LPS uptake as a mechanism. The control showing no internalization without CTB (C58) validates the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "NAD+ treatment significantly dampens IL-1\u03b2 secretion and pyroptosis in human macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Data from human macrophages (C60, Figure 2F) demonstrates translational relevance, showing NAD+ effects are conserved across species. This addresses a key concern about clinical applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C109"
+    ],
+    "result": "RNA-sequencing reveals that NAD+ treatment significantly downregulates genes involved in IFN-\u03b2 signaling, including GTPases, guanylate binding proteins, and STAT-1, while IFN-\u03b2 receptor 2 expression remains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data (C62-C63, C67-C68) showing downregulation of IFN-\u03b2 response genes is supported by multiple analytical approaches including Venn diagrams, gene ontology enrichment, and cluster analysis (Figures 3A-D). The specificity is demonstrated by preserved IFN-\u03b2 receptor 2 expression (C69) and STAT-1 downregulation (C74, C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C76",
+      "C77",
+      "C78",
+      "C111",
+      "C113",
+      "C114"
+    ],
+    "result": "NAD+ inhibits non-canonical inflammasome activation via IFN-\u03b2/STAT-1 pathway blockade, as demonstrated by rescue experiments showing that recombinant IFN-\u03b2 restores inflammasome function in NAD+-treated macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic link is strongly supported by rescue experiments (C71-C72, C77) showing IFN-\u03b2 reverses NAD+ effects on IL-1\u03b2 secretion, pyroptosis, and protein expression. Western blot data (C76-C77, C111) demonstrates NAD+ reduces STAT-1 expression and phosphorylation, which is restored by IFN-\u03b2. The complete reversal (C71, C113) provides strong evidence for this pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C115",
+      "C116"
+    ],
+    "result": "NAD+ treatment improves survival in caspase-11 KO mice beyond the protection conferred by caspase-11 deletion alone, suggesting an additional caspase-11-independent protective mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The survival data (C81-C82) showing NAD+ increases casp-11 KO survival from 40% to 85-100% provides clear evidence for a caspase-11-independent pathway. The comparison between WT+NAD+ (100% survival) and casp-11 KO+PBS (40% survival) (C116) supports the existence of dual mechanisms. However, the exact nature of the caspase-11-independent pathway requires further characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "NAD+ treatment induces systemic IL-10 production by macrophages and T cells, which plays a pivotal role in protection against septic shock, as demonstrated by compromised survival in IL-10-/- mice treated with NAD+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data (C89-C90) demonstrates increased IL-10 production by multiple cell types. The functional importance is established by IL-10 neutralization experiments (C93) showing partial reversal of NAD+ effects and IL-10-/- mouse experiments (C94-C95) showing compromised survival with NAD+ treatment. The inference about IL-10's pivotal role (C96) is well-supported by these genetic and antibody-based approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C119",
+      "C134"
+    ],
+    "result": "NAD+ exhibits a dual mechanism of protection against septic shock: specific inhibition of the non-canonical inflammasome via IFN-\u03b2/STAT-1 blockade and promotion of immune homeostasis via IL-10 production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C100-C101, C134) is well-supported by the combined evidence from inflammasome inhibition studies, mechanistic pathway analysis, and IL-10 functional studies. The dual mechanism explains both the direct effects on macrophages (C119) and the additional protection beyond caspase-11 deletion. The in vitro and in vivo data are consistent (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "NAD+ inhibits inflammasome function without interfering with NF-\u03baB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot and immunofluorescence data (Figure 2\u2014figure supplement 1) showing preserved NF-\u03baB expression and localization supports this claim. This is important for demonstrating pathway specificity and avoiding broad immunosuppression that could increase infection risk.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C25",
+      "C28",
+      "C29",
+      "C34",
+      "C35",
+      "C41",
+      "C46",
+      "C48",
+      "C59",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C73",
+      "C79",
+      "C80",
+      "C85",
+      "C86",
+      "C91",
+      "C92",
+      "C97",
+      "C98",
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C112",
+      "C120",
+      "C121",
+      "C123",
+      "C125",
+      "C126",
+      "C128",
+      "C130"
+    ],
+    "result": "Background knowledge and literature context establishing the role of inflammasomes in septic shock, the canonical and non-canonical pathways, IFN signaling, and IL-10 biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established scientific context from the literature and are appropriately cited. They establish the foundation for understanding the experimental findings but do not represent novel results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C129",
+      "C131"
+    ],
+    "result": "Speculation about potential NAD+ effects on caspase-8 and other cell death pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (C127, C129, C131) based on RNA-seq data showing downregulation of interferon regulatory factors. While the speculation is reasonable given the data, no direct experimental evidence for caspase-8 involvement is provided. These represent hypotheses for future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Partial restoration of LDH release upon IL-10 neutralization may be due to missing effects of other IL-10-producing cells like Tr1 cells in the in vitro system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This speculation (C124) attempts to explain why IL-1\u03b2 secretion was fully reversed but LDH release only partially reversed by IL-10 neutralization. While the hypothesis is reasonable, it remains untested and represents a limitation of the in vitro system rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C75",
+      "C87",
+      "C88",
+      "C117",
+      "C118"
+    ],
+    "result": "References to previous work by the authors on NAD+ effects in other disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately reference prior published work by the authors establishing NAD+ effects in autoimmunity, transplantation, and L. monocytogenes infection. They provide important context for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C135"
+    ],
+    "result": "NAD+ demonstrates unique therapeutic potential by simultaneously dampening auto- and allo-immunity while protecting against severe bacterial infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretive conclusion (C133, C135) is supported by the combined data from this study and previous work. The dual mechanism provides a conceptual framework for understanding how NAD+ can be both immunosuppressive and protective against infection, though the clinical therapeutic potential remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Description of experimental procedures and data shown in Figure 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the experimental design and data presentation in Figure 1. They are methodological descriptions rather than scientific findings.",
+    "result_type": "MINOR"
+  }
+]

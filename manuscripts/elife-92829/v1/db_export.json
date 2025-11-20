@@ -1,0 +1,2639 @@
+{
+  "submission": {
+    "id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T21:33:22.401666Z",
+    "updated_at": "2025-11-20T21:33:22.401666Z"
+  },
+  "content": [
+    {
+      "id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "content_type": "manuscript",
+      "content_text": "# Structural insights into the orthosteric inhibition of P2X receptors by non-ATP analog antagonists\n\n## Authors\n\n- Danqi Sheng<sup>1</sup>\n- Chen-Xi Yue<sup>2</sup>\n- Fei Jin<sup>1</sup>\n- Yao Wang<sup>1</sup>\n- Muneyoshi Ichikawa<sup>3</sup> ([ORCID: 0000-0002-5921-7699](https://orcid.org/0000-0002-5921-7699))\n- Ye Yu<sup>2</sup>\n- Chang-Run Guo<sup>2</sup> ([ORCID: 0009-0004-2348-3591](https://orcid.org/0009-0004-2348-3591)) \u2020\n- Motoyuki Hattori<sup>1</sup> ([ORCID: 0000-0002-5327-5337](https://orcid.org/0000-0002-5327-5337)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Genetic Engineering, Shanghai Key Laboratory of Bioactive Small Molecules, Collaborative Innovation Center of Genetics and Development, Department of Physiology and Neurobiology, School of Life Sciences, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))\n2. School of Basic Medicine and Clinical Pharmacy, China Pharmaceutical University Nanjing China ([ROR:01sfm2718](https://ror.org/01sfm2718))\n3. State Key Laboratory of Genetic Engineering, Department of Biochemistry and Biophysics, School of Life Sciences, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))\n\n\u2020 Corresponding author\n\n## Abstract\n\nP2X receptors are extracellular ATP-gated ion channels that form homo- or heterotrimers and consist of seven subtypes. They are expressed in various tissues, including neuronal and nonneuronal cells, and play critical roles in physiological processes such as neurotransmission, inflammation, pain, and cancer. As a result, P2X receptors have attracted considerable interest as drug targets, and various competitive inhibitors have been developed. However, although several P2X receptor structures from different subtypes have been reported, the limited structural information of P2X receptors in complex with competitive antagonists hampers the understanding of orthosteric inhibition, hindering the further design and optimization of those antagonists for drug discovery. We determined the cryogenic electron microscopy (cryo-EM) structures of the mammalian P2X7 receptor in complex with two classical competitive antagonists of pyridoxal-5'-phosphate derivatives, pyridoxal-5'-phosphate-6-(2'-naphthylazo-6'-nitro-4',8'-disulfonate) (PPNDS) and pyridoxal phosphate-6-azophenyl-2\u2032,5\u2032-disulfonic acid (PPADS), and performed structure-based mutational analysis by patch-clamp recording as well as molecular dynamics (MD) simulations. Our structures revealed the orthosteric site for PPADS/PPNDS, and structural comparison with the previously reported apo- and ATP-bound structures showed how PPADS/PPNDS binding inhibits the conformational changes associated with channel activation. In addition, structure-based mutational analysis identified key residues involved in the PPNDS sensitivity of P2X1 and P2X3, which are known to have higher affinity for PPADS/PPNDS than other P2X subtypes.\n\n## Introduction\n\nATP not only serves as a cellular energy currency but also plays a key role in signal transmission for cellular stimulation between cell surface receptors (Burnstock, 1972). P2X receptors are the family of cation channels activated by extracellular ATP and are widely expressed in the mammalian nervous, respiratory, reproductive, and immune systems (Valera et al., 1994; Chen et al., 1995; Khakh and North, 2006; Burnstock et al., 2014). There are seven subtypes (P2X1-P2X7) in the family, each of which plays distinct roles in physiological and pathophysiological functions via homo- or heterotrimerization (Brake et al., 1994; North, 2002). In recent years, there has been growing interest in the development of drugs targeting the P2X family due to its involvement in various physiological and pathological conditions, and various antagonists have been developed (Illes et al., 2021). Some have progressed to clinical trials (Illes et al., 2021), and Gefapixant, a P2X3 receptor antagonist for chronic cough, was already on the market after the clinical study (McGarvey et al., 2022).\n\nATP analogs are most common among competitive inhibitors for P2X receptors; however, they are generally unsuitable for in vivo applications due to their relatively low specificity, which may result in off-target toxicity. This issue arises because the human body contains numerous ATP-binding proteins. Therefore, a non-ATP analog P2X inhibitor would be a more promising target to develop and optimize, and pyridoxal phosphate-6-azophenyl-2\u2032,5\u2032-disulfonic acid (PPADS) and its analog pyridoxal-5'-phosphate-6-(2'-naphthylazo-6'-nitro-4',8'-disulfonate) (PPNDS) are such classical non-ATP analog P2X inhibitors, namely, pyridoxal phosphate derivatives (Ralevic and Burnstock, 1998; Lambrecht et al., 2002; Jacobson et al., 2002; Kaczmarek-H\u00e1jek et al., 2012). PPNDS and PPADS belong to the class of competitive antagonists that selectively inhibit P2X receptors (Huo et al., 2018), and P2X receptors are known to exhibit variable sensitivity to PPADS/PPNDS depending on the species and the specific subtype (Kaczmarek-H\u00e1jek et al., 2012; Michel et al., 2008; Donnelly-Roberts et al., 2009; Buell et al., 1996; Garcia-Guzman et al., 1997; Jones et al., 2000). It is noteworthy that P2X1 and P2X3 receptors show relatively high sensitivity to PPADS, but P2X2 and P2X7 receptors show only moderate sensitivity, and P2X4 receptors are insensitive to PPADS (North and Surprenant, 2000).\n\nSeveral attempts have been made to optimize pyridoxal phosphate derivatives as P2X antagonists (Brown et al., 2001; Cho et al., 2013; Kim et al., 2001; Jung et al., 2013). For example, the introduction of bulky aromatic groups at the carbon linker in PPADS was attempted to improve in the subtype specificity profiles, potentially opening up new avenues for targeted drug development and therapeutic intervention (Cho et al., 2013). Despite the recent significant increase in structural information on P2X receptors (Kawate et al., 2009; Hattori and Gouaux, 2012; Kasuya et al., 2016; Karasawa and Kawate, 2016; Mansoor et al., 2016; Kasuya et al., 2017; Wang et al., 2018; Li et al., 2019; McCarthy et al., 2019), the lack of structural information on P2X receptors in complex with pyridoxal phosphate derivative inhibitors has hampered their rational optimization for drug discovery targeting P2X receptors.\n\nIn this work, we determined the cryogenic electron microscopy (cryo-EM) structures of the panda P2X7 (pdP2X7) receptor in complex with PPADS and PPNDS. The structures revealed the orthosteric binding site for these pyridoxal phosphate derivatives. Structural comparison with the previously determined apo- and ATP-bound P2X7 receptors (Kasuya et al., 2017; McCarthy et al., 2019) showed PPADS/PPNDS-dependent structural rearrangement at the orthosteric binding site for channel inactivation. Further mutational analysis by electrophysiological recording identified key residues of human P2X1 (hP2X1) and P2X3 (hP2X3) that show high sensitivity to pyridoxal phosphate derivative inhibitors.\n\n## Results\n\n### Structural determination and functional characterization\n\nTo gain insight into the mechanism of P2X receptor inhibition by pyridoxal phosphate derivatives, we used giant panda (Ailuropoda melanoleuca) P2X7, whose structures in complex with allosteric modulators have been reported (Karasawa and Kawate, 2016). Notably, pdP2X7 shares 85% identity with the human P2X7 receptor and exhibits high and stable expression profiles suitable for structural studies (Karasawa and Kawate, 2016). We performed whole-cell patch-clamp recordings using human embryonic kidney 293 (HEK293) cells transfected with full-length pdP2X7. The application of 10 \u00b5M PPNDS and 100 \u00b5M PPADS blocked approximately 50% of the ATP-dependent currents from pdP2X7 (Figure 1\u2014figure supplement 1). This result correlates well with the properties of P2X7 receptors moderately inhibited by PPADS/PPNDS (Donnelly-Roberts et al., 2009; Lambrecht et al., 2000).\n\nWe then expressed and purified the previously reported crystallization construct of pdP2X7cryst (Karasawa and Kawate, 2016). The purified pdP2X7cryst was reconstituted into lipid nanodiscs, mixed with PPNDS and PPADS, separately, and subsequently subjected to single-particle cryo-EM (Figure 1\u2014figure supplements 2\u20135). The structures of pdP2X7 in the presence of PPNDS and PPADS were determined at 3.3 \u00c5 and 3.6 \u00c5, respectively (Table 1).\n\n**Table 1.**\n Cryogenic electron microscopy (cryo-EM) data collection, refinement, and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>PdP2X7 w. PPNDS (EMD-36671) (PDB: 8JV8)</th>\n      <th>PdP2X7 w. PPADS (EMD-36670) (PDB: 8JV7)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Magnification</td>\n      <td>\u00d729,000</td>\n      <td>\u00d729,000</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td>300</td>\n      <td>300</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e\u2013/\u00c52)</td>\n      <td>50</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>\u20131.3 to \u20132.0</td>\n      <td>\u20131.3 to \u20132.0</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>0.83</td>\n      <td>0.83</td>\n    </tr>\n    <tr>\n      <td>Symmetry imposed</td>\n      <td>C3</td>\n      <td>C3</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td>663,674</td>\n      <td>236,753</td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>121,008</td>\n      <td>161,188</td>\n    </tr>\n    <tr>\n      <td>Map resolution (\u00c5)</td>\n      <td>3.34</td>\n      <td>3.60</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.143</td>\n      <td>0.143</td>\n    </tr>\n    <tr>\n      <td>Map resolution range (\u00c5)</td>\n      <td>1.9\u201340.4</td>\n      <td>2.2\u201310.2</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Initial model used (PDB code)</td>\n      <td>This study</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>Model resolution (\u00c5)</td>\n      <td>3.34</td>\n      <td>3.60</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.143</td>\n      <td>0.143</td>\n    </tr>\n    <tr>\n      <td>Model resolution range (\u00c5)</td>\n      <td>1.9\u201340.4</td>\n      <td>2.2\u201310.2</td>\n    </tr>\n    <tr>\n      <td>Map sharpening B factor (\u00c52)</td>\n      <td>\u201350</td>\n      <td>\u2013150</td>\n    </tr>\n    <tr>\n      <td>Model composition</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Non-hydrogen atoms</td>\n      <td>7245</td>\n      <td>7245</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>963</td>\n      <td>960</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>NAG:6, PPNDS:3</td>\n      <td>NAG:6, PPADS:3</td>\n    </tr>\n    <tr>\n      <td>B factors (\u00c52)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>148.30</td>\n      <td>117.36</td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>189.65</td>\n      <td>146.40</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.014</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.257</td>\n      <td>0.561</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>2.51</td>\n      <td>1.70</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>13.86</td>\n      <td>9.04</td>\n    </tr>\n    <tr>\n      <td>Poor rotamers (%)</td>\n      <td>3.70</td>\n      <td>1.22</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>93.50</td>\n      <td>97.17</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>6.39</td>\n      <td>2.83</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0.1</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\nThe overall structures are similar and show the trimeric architecture of P2X receptors, consisting of the extracellular domain and two transmembrane (TM) helices, with each protomer resembling the dolphin shape, consistent with the previously reported P2X structures (Sheng and Hattori, 2022; Figure 1, Figure 1\u2014figure supplement 6). More importantly, we identified the residual EM densities at the agonist binding site that fit into the shape of PPNDS and PPADS (Figure 1). It should be noted that while the pyridoxal phosphate groups in PPNDS and PPADS are shared, the naphthylazo group of PPNDS is significantly bulkier than the azophenyl group of PPADS. This difference facilitated our assignment of compound binding poses corresponding to each EM density (Figure 1). Consistent with antagonist binding, the TM domain adapts to the closed conformation of the channel, as similarly observed in the previously reported closed state structures of P2X7 receptors (Karasawa and Kawate, 2016; McCarthy et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig1-v1.jpg)\n\n**Figure 1.:** The trimeric structures of PPNDS-bound (A) and PPADS-bound (B) pdP2X7, viewed parallel to the membrane. The PPNDS and PPADS molecules are shown as spheres. Each subunit of the trimers is colored blue, yellow, and red. The EM density maps contoured at 4.5\u03c3 and 3.5\u03c3 for PPNDS and PPADS are shown as gray mesh. The structural formulas of PPNDS and PPADS are also shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) Representative current traces from patch-clamp recordings of pdP2X7. Effects of 10 \u00b5M PPNDS (blue) on the 1 mM ATP-evoked (orange) current of pdP2X7 (A). Effects of 100 \u00b5M PPADS (blue) on the 1 mM ATP-evoked (orange) current of pdP2X7 (B). (C\u2013D) Effects of PPNDS (10 \u00b5M) (C) and PPADS (100 \u00b5M) (D) on ATP (1 mM)-evoked currents of pdP2X7 (mean \u00b1 SD, n=5). The graph for PPNDS was taken from Figure 6B. The inhibition ratio is defined by normalizing the peak current amplitude from the co-application of PPNDS/PPADS and ATP to the peak current amplitude from the ATP application prior to the co-application of PPNDS/PPADS and ATP.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The gold-standard Fourier shell correlation curves for the PPNDS-bound data. (B) Angular particle distribution. The heat map of particle projections in each viewing angle. (C) The side view, a top-down view from the extracellular surface and a bottom-up view from the intracellular surface colored by local resolution.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Before applying C3 symmetry, all steps including 3D classification were performed in Relion 3.1. With C3 symmetry, further refinement using cryoSPARC v4.2.1 by non-uniform refinement of this final set of particles resulted in a cryo-EM map at 3.34 \u00c5 resolution.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) The gold-standard Fourier shell correlation curves for the PPADS-bound data. (B) Angular particle distribution. The heat map of particle projections in each viewing angle. (C) The side view, a top-down view from the extracellular surface and a bottom-up view from the intracellular surface colored by local resolution.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Before applying C3 symmetry, all steps including 3D classification were performed in Relion 3.1. With C3 symmetry, further refinement using cryoSPARC v4.2.1 by non-uniform refinement of this final set of particles resulted in a cryo-EM map at 3.60 \u00c5 resolution.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) The P2X7 protomer in cartoon representation. Each structural feature is colored according to the dolphin model. (B, C) Superposition of the pyridoxal-5'-phosphate-6-(2'-naphthylazo-6'-nitro-4',8'-disulfonate) (PPNDS)-bound structure (green) onto the pyridoxal phosphate-6-azophenyl-2\u2032,5\u2032-disulfonic acid (PPADS)-bound structure (gray). Each protomer is shown in cartoon representations, and PPNDS and PPADS are shown in stick representations (B). The intracellular view of the transmembrane domain and the residues at the constriction region are shown in stick representations (C).\n\n### Orthosteric binding site\n\nIn the PPNDS-bound and PPADS-bound structures, PPNDS and PPADS molecules bind to essentially the same orthosteric site, consistent with both PPNDS and PPADS being pyridoxal phosphate derivatives (Figures 2 and 3, Figure 2\u2014figure supplement 1). Furthermore, the residues involved in PPNDS and PPADS largely overlap with the residues at the ATP-binding site in the previously reported ATP-bound P2X7 structure (Figure 4; McCarthy et al., 2019). Many of the residues are highly conserved among P2X receptors and have been shown to be crucial for P2X activation (Hattori and Gouaux, 2012; Jiang et al., 2000; Ennion et al., 2000; Bodnar et al., 2011), which is consistent with both of them being competitive inhibitors.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Overall structure (A) and close-up view of the PPNDS binding site (B) in the PPNDS-bound panda P2X7 (pdP2X7) structure. PPNDS molecules are shown by stick models. Water molecules are depicted as red spheres. Dotted black lines indicate hydrogen bonding.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Close-up views of the PPNDS (A) and PPADS (B) binding sites. Dotted lines represent hydrogen bonds. The EM density maps for the residues involved in the PPNDS and PPADS interactions are shown and contoured at 5.0\u03c3 and 4.0\u03c3, respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A, B) The plots of the root mean square deviations (RMSD) of C\u03b1 atoms (A) and the RMSD values of atoms in PPNDS (B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Overall structure (A) and close-up view of the PPADS binding site (B) in the PPADS-bound panda P2X7 (pdP2X7) structure. PPADS molecules are shown by stick models. Water molecules are depicted as red spheres. Dotted black lines indicate hydrogen bonding.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig4-v1.jpg)\n\n**Figure 4.:** (A) Overall structure and close-up view of the ATP-bound rat P2X7 structure (PDB ID: 6U9W). The cytoplasmic domain is not shown. Dotted black lines indicate hydrogen bonding. (B) Sequence alignment of A. melanoleuca P2X7 (pdP2X7) (accession number: XP_002913164.3), Rattus norvegicus (rP2X7) (accession number: Q64663.1), and Homo sapiens P2X receptors (P2X1: P51575.1, P2X2: Q9UBL9.1, P2X3: P56373.2, P2X4: Q99571.2, P2X5: Q93086.4, P2X6: O15547.2, and P2X7: Q99572.4). Orange, green, and red circles indicate the residues involved in ATP, PPADS, and PPNDS recognition.\n\nIn both structures, the pyridoxal phosphate group has extensive interactions with the receptor. In contrast, the other parts of the compounds, a naphthylazo group with two sulfonic acid groups and a nitro group (PPNDS) and an azophenyl group with two sulfonic acid groups (PPADS), have fewer interactions (Figures 2 and 3).\n\nThe phosphate group of PPNDS and PPADS interacts directly with the side chain of Arg294 and possibly also with Lys145, possibly via a water molecule (Figures 2B and 3B, Figure 2\u2014figure supplement 1). However, it should also be noted that it is difficult to conclude the existence of the water molecule at this site due to the limited resolution of our structures. Furthermore, in the PPADS-bound structure, Lys64 mediates an additional interaction with the phosphate group. These extensive interactions between the phosphate group and the receptor resemble those with the phosphate groups of ATP (Figure 4A). Furthermore, the Asn292 and Lys311 residues are similarly involved in the interaction with the hydroxyl group of the pyridoxal part of PPNDS and PPADS (Figures 2B and 3B).\n\nInterestingly, despite the structural differences between PPNDS and PPADS, the two common sulfonic acid groups form hydrogen bonds with the side chains of the same residues in the receptor, Lys66 and Gln143 (Figures 2B and 3B).\n\nFinally, to verify the binding mode of the pyridoxal phosphate derivatives, we performed molecular dynamics (MD) simulations of the higher-resolution PPNDS-bound structure embedded in lipids (Figure 2\u2014figure supplement 2). The overall structures were stable during the simulations, and PPNDS remained stably bound to the receptor (Figure 2\u2014figure supplement 2).\n\n### Structural comparison and inhibition mechanism\n\nTo gain insights into the mechanisms of the orthosteric inhibition of P2X receptors by PPNDS and PPADS, we superimposed our structures and the previously determined ATP-bound P2X7 structure onto the apo-state P2X7 structure (Figure 5). The PPNDS-bound structure and PPADS-bound structure are very similar, with 0.52 \u00c5 RMSD (root mean square deviation) values for the C\u03b1 atoms of 960 residues. Only the comparison with the higher-resolution PPNDS-bound structure is described in the following discussion.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig5-v1.jpg)\n\n**Figure 5.:** (A) Superposition of the ATP-bound rP2X7 structure (red, PDB ID: 6U9W) and the pyridoxal-5'-phosphate-6-(2'-naphthylazo-6'-nitro-4',8'-disulfonate) (PPNDS)-bound panda P2X7 (pdP2X7) structure (green, this study) onto the apo rP2X7 structure (gray, PDB ID: 6U9V). Close-up views of the head, left flipper, and lower body domains and the intracellular view of the transmembrane (TM) domain are shown in each box. Arrows indicate the conformational changes from the apo- to ATP-bound states (red) and from the apo- to the PPNDS-bound states (green). (B) A cartoon model of the PPNDS/pyridoxal phosphate-6-azophenyl-2\u2032,5\u2032-disulfonic acid (PPADS)-dependent inhibition and ATP-dependent activation mechanisms.\n\nFirst, the activation of P2X receptors from the apo (closed) state to the ATP-bound (open) state is known to require motions of both the head and left flipper domains (L\u00f6rinczi et al., 2012; Wang et al., 2017; Zhao et al., 2014; Figure 5A). These motions are coupled to the movement of the lower body domain, which is directly connected to the TM domain for channel opening (Figure 5A).\n\nIn the PPNDS-bound structure, while we observed motion of the head domain similar to that in the ATP-bound structure, there was only a small structural change in the left flipper domain (Figure 5A). Consequently, there was no structural change in the lower body domain or associated gating motion of the TM domain (Figure 5A). In the ATP-bound structure, the three phosphate groups of ATP in the U-shaped conformation pushed down the left flipper (Figures 4A and 5A). In contrast, both PPNDS and PPADS possess only one phosphate group, so there was no corresponding downward movement in the left flipper domain (Figures 2 and 5A).\n\nTo summarize, the structural comparison indicates how PPNDS and PPADS inhibit the ATP-dependent activation of P2X receptors (Figure 5B). The binding of these competitive inhibitors may prevent the downward movement of the left flipper domain, which is required for channel opening (Figure 5B).\n\n### Structure-based mutational analysis\n\nTo analyze the mechanism of P2X receptor binding to the pyridoxal-5'-phosphate derivatives, we performed structure-based mutational analysis by whole-cell patch-clamp recording of pdP2X7 (Figure 6 and Figure 6\u2014figure supplement 1). Most of the residues involved in PPNDS and PPADS binding overlap with the conserved residues involved in ATP binding (Figure 4B). Thus, we did not generate mutants targeting these residues (Lys64, Lys66, Asn292, Arg294, and Lys311), as such mutations are known to severely affect or abolish ATP-dependent gating of P2X receptors (Hattori and Gouaux, 2012; Jiang et al., 2000; Ennion et al., 2000; Bodnar et al., 2011). Instead, we aimed to mutate the residues surrounding the ATP-binding site, which differ among P2X receptor subtypes. Such residues may be important for the subtype-specific differences in the affinity of the pyridoxal-5'-phosphate derivative to P2X receptors. To design these mutants, we performed structural comparisons of our structures with the AlphaFold-based structural model of hP2X1 (Jumper et al., 2021; Figure 6A), which has high affinity for both PPNDS and PPADS (North and Surprenant, 2000; Lambrecht et al., 2000). In particular, we compared the residues surrounding the ATP-binding site in our structure (Gln143, Val173, Ile214, Gln248, and Tyr288) with those in hP2X1 (Figure 4B). Based on these comparisons, we mutated these residues to the corresponding amino acid residues in hP2X1 (Gln143Lys, Val173Asp, Ile214Lys, Gln248Lys, and Tyr288Ser) or to alanine (Gln143Ala, Gln248Ala, and Tyr288Ala). Using these mutants, we performed whole-cell patch-clamp recording to analyze the effect of PPNDS on these mutants (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig6-v1.jpg)\n\n**Figure 6.:** (A) Superimposition of the pyridoxal-5'-phosphate-6-(2'-naphthylazo-6'-nitro-4',8'-disulfonate) (PPNDS)-bound and pyridoxal phosphate-6-azophenyl-2\u2032,5\u2032-disulfonic acid (PPADS)-bound structures in this study onto the predicted human P2X1 (hP2X1) structure (AlphaFold). Each subunit of the PPNDS-bound and PPADS-bound structures is shown in blue, yellow, and red, while the predicted hP2X1 structure is shown in gray. The PPNDS and PPADS molecules and the residues surrounding PPNDS and PPADS that are different between panda P2X7 (pdP2X7) and hP2X1 are shown as sticks. (B) Effects of PPNDS (10 \u00b5M) on ATP (1 mM)-evoked currents of pdP2X7 and its mutants (mean \u00b1 SD, n=5, one-way ANOVA post hoc test, **: p<0.01, ****: p<0.0001 vs. WT). (C) Effects of PPNDS (1 \u00b5M) on ATP (1 \u00b5M)-evoked currents of hP2X1 and its mutants (mean \u00b1 SD, n=5\u201310, one-way ANOVA post hoc test, **: p<0.01, ****: p<0.0001 vs. WT). (D) Effects of PPNDS (10 \u00b5M) on ATP (1 \u00b5M)-evoked currents of hP2X3 and its mutants (mean \u00b1 SD, n=5, unpaired t test, ****: p<0.0001 vs. WT).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92829/elife-92829-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013C) Representative current traces from patch-clamp recordings of P2X receptors. Effects of 10 \u00b5M PPNDS (blue) on the 1 mM ATP-evoked (orange) current of panda P2X7 (pdP2X7) mutants (A). Effects of 1 \u00b5M PPNDS (blue) on the 1 \u00b5M ATP-evoked (orange) current of human P2X1 (hP2X1) (B). Effects of 10 \u00b5M PPNDS (blue) on the 1 \u00b5M ATP-evoked (orange) current of hP2X3 (C).\n\nIn the mutational analysis, among three mutations to the lysine residue, two (Gln143Lys and Ile214Lys) showed significantly increased sensitivity to PPNDS (Figure 6B). In addition, the Gln248Lys mutant showed slightly higher sensitivity to PPNDS, but not as significant an increase as the other two mutants (Figure 6B). Interestingly, while Tyr288 in pdP2X7 corresponds to Ser286 in hP2X1, the mutation of Tyr288 to alanine instead of serine significantly increased the affinity for PPNDS (Figure 6B). In addition, mutating Val173 in pdP2X7 to aspartate significantly reduced the sensitivity to PPNDS (Figure 6B). The two mutants Gln143Ala and Gln248Ala showed little or no decrease in PPNDS sensitivity (Figure 6B).\n\nFollowing the result of the mutation analysis of pdP2X7, we then designed alanine mutants of hP2X1 at Lys140 (Gln143 in pdP2X7), Asp170 (Val173 in pdP2X7), Lys215 (Ile214 in pdP2X7), Lys249 (Gln248 in pdP2X7), and Ser286 (Tyr288 in pdP2X7) (Figures 4B and 6A). Using these mutants, we then performed whole-cell patch-clamp recording to evaluate the effect of PPNDS on these mutants (Figure 6C). All three mutants at the lysine residues (Lys140Ala, Lys215Ala, and Lys249Ala), especially the Lys140Ala and Lys215Ala mutants, showed a significant decrease in PPNDS sensitivity (Figure 6C). This result is largely consistent with the corresponding lysine-substituted mutants of pdP2X7 (Figure 6B). Interestingly, the mutation of Asp170 and Ser286 to alanine increased the sensitivity to PPNDS (Figure 6C). Consistently, in the mutational analysis of the corresponding residues in pdP2X7, the mutation of Val173 to aspartate decreased PPNDS sensitivity, and the mutation of Tyr288 to alanine increased PPNDS sensitivity (Figure 6B).\n\nFinally, among the three Lys residues involved in PPNDS sensitivity in hP2X1 (Lys140, Lys215, Lys249), Lys215 is also conserved in hP2X3 (Lys201). Accordingly, we performed mutational analysis of the hP2X3 Lys201Ala mutant (Figure 6D). As expected, the Lys201 mutant showed a decrease in PPNDS sensitivity (Figure 6D).\n\nIn summary, our mutational analysis based on structural comparison and sequence alignment identified several key residues involved in PPNDS sensitivity, particularly the residues involved in the subtype-specific difference in affinity for PPNDS.\n\n## Discussion\n\nIn this work, we determined the cryo-EM structure of pdP2X7 in complex with two classical non-ATP analog inhibitors, PPNDS and PPADS, of pyridoxal phosphate derivatives (Figure 1) and revealed their orthosteric binding site (Figures 2 and 3). The binding site for PPNDS and PPADS has high overlap with the ATP-binding site (Figure 4). In the cryo-EM structures, the phosphate group of PPNDS and PPADS appears to occupy the position of the \u03b3-phosphate group of ATP in the ATP-bound structure (Figures 2\u20144). Comparison with the previously reported apo- (closed) and ATP-bound (open) structures showed that, in contrast to ATP binding, the binding of PPNDS and PPADS does not induce the downward motion of the left flipper, which is essential for channel activation (Figure 5). These observations provide mechanistic insights into channel inhibition by pyridoxal phosphate derivatives. Finally, structure-based mutational analyses revealed several key residues important for PPNDS sensitivity, particularly for the subtype-specific difference in sensitivity (Figure 6).\n\nBesides PPADS and PPNDS in this study, TNP-ATP is well known as a classical competitive inhibitor for P2X receptors (North and Surprenant, 2000). In the previously reported TNP-ATP-bound P2X7 structure, TNP-ATP binding induces the conformational changes of the left flipper region but not of the head domain (Kasuya et al., 2017). In contrast, PPADS and PPNDS binding induces the conformational changes of the head domain but not of the left flipper region (Figure 5). These contrasts would highlight the uniqueness of the competitive inhibition mechanism by pyridoxal phosphate derivatives as well as the diversity of competitive inhibition mechanisms of P2X receptors.\n\nThere are several previous reports characterizing the P2X receptor binding site for pyridoxal phosphate derivatives, especially PPADS (Huo et al., 2018; Michel et al., 2008; Buell et al., 1996; Garcia-Guzman et al., 1997). The mutation of Glu249 in rat P2X4 (rP2X4) to lysine was designed based on the corresponding residue in hP2X1 (Lys249) to confer PPADS sensitivity on the PPADS-insensitive P2X4 receptor (Buell et al., 1996). Glu249 in rP2X4 corresponds to Gln248 in pdP2X7 (Figure 4B). In our structures, this residue is proximal to the hydroxyl moieties of the pyridoxal phosphate group of PPADS and PPNDS (Figure 6A). More recently, the combination of docking simulation and electrophysiology showed that Lys70, Asp170, Lys190, and Lys249 participate in PPADS binding in hP2X1 (Huo et al., 2018). Among these four residues, Lys70 and Lys190 are directly involved in ATP binding (Hattori and Gouaux, 2012), and Lys249 corresponds to Glu249 in rP2X4, as shown in a previous study (Buell et al., 1996). In addition, the mutation of Asp170 to cysteine increased sensitivity to PPADS (Huo et al., 2018). Consistently, our mutational analysis revealed that the Asp170Ala mutation in hP2X1 also increased the sensitivity to PPNDS (Figure 6C). According to our structures, the corresponding residue in pdP2X7 (Val173) is located proximal to the pyridoxal phosphate group of PPADS, and the pyridoxal phosphate group is in common with that of PPADS (Figure 6A). Therefore, Asp170 in hP2X1 is involved in sensitivity to both PPADS and PPNDS.\n\nIt should be noted that the orientation of PPADS in the recent docking model is very different from that in our cryo-EM structure. In the docking model, compared to our cryo-EM structure, PPADS shows an almost 180\u00b0 rotation relative to the axis of rotation parallel to the membrane with the azide group of PPADS as the fulcrum (Huo et al., 2018). This difference in the orientation of the compound may explain why hP2X1 Lys140 and Lys215 were not predicted to be involved in PPADS binding in the previous docking model, in contrast to the results of our study.\n\nIn the past, several types of pyridoxal phosphate derivatives have been identified as P2X inhibitors (Jacobson et al., 2002; Cho et al., 2013). However, most of them share a common weakness in subtype specificity, where they tend to show high affinity for both P2X1 and P2X3. For example, MRS 2257 was identified as the most active PPADS analog from the screening but has IC50 values of 5 nM and 22 nM for P2X1 and P2X3, respectively (Brown et al., 2001). In addition, another PPADS analog, termed 36j, shows improved subtype specificity for P2X3 (IC50: 60 nM for P2X3) but still shows a moderate inhibitory effect on P2X1 at 10 \u00b5M (Cho et al., 2013). Thus, it is still difficult to obtain competitive inhibitors of P2X receptors, including pyridoxal phosphate derivatives, with subtype specificity. This is probably because the residues directly involved in ATP binding are strictly conserved among the subtypes (Figure 4B). To overcome this situation, our work might facilitate the rational design of pyridoxal phosphate derivatives with strict subtype specificity for P2X receptors. We have not only defined the binding mode of pyridoxal phosphate derivatives to P2X receptors but also newly identified a subtype-specific residue for pyridoxal phosphate derivatives. For example, Lys215 and Lys249 in hP2X1 are important for PPNDS sensitivity (Figure 6C) but are not conserved in other P2X subtypes, including P2X3 (Figure 4B). These findings would provide a clue for the design of more subtype-specific pyridoxal phosphate derivatives.\n\nIn conclusion, our structural and functional analyses provided mechanistic insights into the orthosteric inhibition mechanism of P2X receptors by the classical pyridoxal phosphate derivative P2X antagonist. In addition, we identified key residues involved in compound sensitivity, especially the differential sensitivity between P2X subtypes. These results potentially facilitate the development of subtype-specific compounds targeting P2X receptors, which have attracted widespread interest as therapeutic targets.\n\n## Methods\n\n### Expression and purification of P2X7\n\nThe previously reported functional expression construct of giant panda (A. melanoleuca) P2X7 for structural studies (pdP2X7, residues 22\u2013359, N241S/N284S/V35A/R125A/E174K, XP_002913164.1) (Karasawa and Kawate, 2016) was synthesized (Genewiz, China), subcloned, and inserted into a modified version of the pFastBac vector (Invitrogen, USA) with an octahistidine tag, Twin-Strep-tag, mEGFP, and a human rhinovirus (HRV) 3C protease cleavage site at the N-terminus. Using the Bac-to-Bac system, the mEGFP-fusion pdP2X7 construct was expressed in Sf9 cells infected with baculovirus. The Sf9 cells were collected by centrifugation (5400\u00d7g, 10 min) and subsequently disrupted using an ultrasonic homogenizer in TBS buffer (20 mM Tris pH 8.0, 150 mM NaCl) containing 1 mM phenylmethylsulfonyl fluoride, 5.2 \u03bcg/mL aprotinin, 1.4 \u03bcg/mL pepstatin, and 1.4 \u03bcg/mL leupeptin. The supernatant was harvested after centrifugation (7600\u00d7g, 20 min). The membrane fraction was then isolated by ultracentrifugation (200,000\u00d7g, 1 hr) and solubilized in buffer A (50 mM Tris pH 7.5, 150 mM NaCl) containing 2% (wt/vol) n-dodecyl-beta-D-maltopyranoside (DDM) at 4\u00b0C for 1 hr. The solubilized supernatant was collected by another round of ultracentrifugation (200,000\u00d7g, 1 hr) and applied to a Strep-Tactin resin column (QIAGEN, USA) equilibrated with buffer A containing 0.025% (wt/vol) DDM. The resin was incubated for 1 hr, and the column was eluted with buffer B (100 mM Tris pH 8.0, 150 mM NaCl, 2.5 mM desthiobiotin, 0.025% [wt/vol] DDM). The eluted protein was concentrated to 1 mg/mL before being prepared for nanodisc reconstitution.\n\n### Nanodisc reconstitution\n\nSoybean polar lipid extract (Avanti Polar Lipids, USA) was dissolved in chloroform, dried under a nitrogen stream, and then resuspended in reconstitution buffer (20 mg/mL soybean polar lipid, 20 mM HEPES pH 7.0, and 150 mM NaCl). Following a 1 hr incubation at room temperature, the lipid suspension was subjected to sonication for 5 min until the lipids reached a near-transparent state. Subsequently, DDM (Anatrace, USA) was added at a final concentration of 0.4% and incubated at room temperature overnight. The mEGFP-fusion pdP2X7, MSP2N2 protein, and soybean polar lipid were combined in a molar ratio of 1:3:180. This mixture was then incubated at 4\u00b0C for 1 hr and further subjected to a 4 hr incubation with bio-beads (Bio-Rad, USA). After incubation, the bio-beads were removed via filtration, and the nanodisc fractions containing mEGFP-fusion pdP2X7 were bound to Ni-NTA (QIAGEN, USA) resin preequilibrated with wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 30 mM imidazole) and subsequently eluted using elution buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 300 mM imidazole). To cleave the N-terminal EGFP, the elution was mixed with HRV3C protease and incubated at room temperature for 1 hr, followed by overnight incubation at 4\u00b0C. The nanodisc-reconstituted pdP2X7 protein was separated through size-exclusion chromatography using a Superdex 200 Increase 10/300 column (Cytiva, USA) preequilibrated with SEC buffer (20 mM HEPES pH 7.5 and 150 mM NaCl) and subsequently concentrated to 0.9 mg/mL. P2X7 antagonists (PPNDS or PPADS) were added to the nanodisc-reconstituted pdP2X7 at a final concentration of 50 \u03bcM and incubated on ice for 1 hr before cryo-EM grid preparation.\n\n### EM data acquisition\n\nFor both the PPNDS-bound and PPADS-bound pdP2X7 samples, a total of 2.5 \u03bcL of the nanodisc-reconstituted pdP2X7 was applied to a glow-discharged holey carbon-film grid (Quantifoil, Au 1.2/1.3, 300 mesh, USA). The grid was then blotted using a Vitrobot (Thermo Fisher Scientific, USA) system with a 3.0 s blotting time at 100% humidity and 4\u00b0C, followed by plunge-freezing in liquid ethane. Cryo-EM data collection was carried out using a 300 kV Titan Krios microscope (Thermo Fisher Scientific, USA) equipped with a K3 direct electron detector (Gatan Inc, USA). The specimen stage temperature was maintained at 80 K. Movies were recorded using beam-image shift data collection methods (Wu et al., 2019) in superresolution mode, with a pixel size of 0.41 \u00c5 (physical pixel size of 0.83 \u00c5), a magnification of \u00d729,000, and defocus values ranging from \u20131.3 \u00b5m to \u20132.0 \u00b5m. The dose rate was set to 20 e\u2013/s, and each movie consisted of 40 frames with an exposure of 50 e\u2013/\u00c5, resulting in each movie being 1.724 s long.\n\n### Image processing\n\nA total of 9664 and 4692 movies for the PPNDS-bound and PPADS-bound pdP2X7 samples, respectively, were motion-corrected and binned with MotionCor2 (Zheng et al., 2017) with a patch of 5\u2009\u00d7\u20095, producing summed and dose-weighted micrographs with a pixel size of 0.83 \u00c5. Contrast transfer function parameters were estimated by CTFFIND 4.1 (Rohou and Grigorieff, 2015). Particle picking and 2D classification were performed using RELION 3.1 (Zivanov et al., 2018). In total, 1,537,753 particles for the PPNDS-bound sample and 1,835,907 particles for the PPADS-bound sample were autopicked and extracted using a box size of 256\u00d7256 pixels. After 2D classification, we performed 3D classification with C1 symmetry using RELION 3.1 on 633,674 particles for the PPNDS-bound sample and 236,753 particles for the PPADS-bound sample. Then, 121,008 particles for the PPNDS-bound sample and 161,188 particles for the PPADS-bound sample were selected for non-uniform refinement using cryoSPARCv4.2.1 (Punjani et al., 2020), applying C3 symmetry for the final 3D reconstruction. The resulting resolutions of the PPNDS-bound and PPADS-bound pdP2X7 structures were 3.3 \u00c5 and 3.6 \u00c5, respectively, as determined by the Fourier shell correlation (FSC)=0.143 criterion on the corrected FSC curves. The local resolution was estimated using cryoSPARCv4.2.1. The workflows for image processing and for 3D reconstruction are shown in Figure 1\u2014figure supplements 2\u20135. The figures were generated by UCSF Chimera (Pettersen et al., 2004).\n\n### Model building\n\nThe initial models of pdP2X7 were manually built starting from the previously reported pdP2X7 structure (PDB ID: 5U1L). Manual model building was performed using Coot (Emsley et al., 2010). Real-space refinement was performed using PHENIX (Liebschner et al., 2019). All structure figures were generated using PyMOL (https://pymol.org/). For the predicted structure of hP2X1, the previously generated model using AlphaFold and ColabFold was used (Jumper et al., 2021; Mirdita et al., 2022; Shen et al., 2023). The sequence alignment figure was generated using Clustal Omega (Sievers and Higgins, 2018) and ESPript 3.0 (Robert and Gouet, 2014).\n\n### Cell lines\n\nHEK293 cells were purchased from Shanghai Institutes for Biological Sciences and cultured in Dulbecco\u2019s modified Eagle\u2019s medium supplemented with 10% fetal bovine serum, 1% penicillin-streptomycin, and 1% GlutaMAX at 37\u00b0C in a humidified atmosphere of 5% CO2 and 95% air (Wang et al., 2017; Sun et al., 2022). This cell line tested negative for mycoplasma contamination and has been done by the vendor.\n\n### Electrophysiology\n\nPlasmids harboring hP2X1, hP2X3, or pdP2X7 were transfected into cells by calcium phosphate transfection (Zhang et al., 2022). Currents of hP2X1 and hP2X3 were recorded using nystatin (Sangon Biotech, China) perforated recordings to prevent rundown in current during multiple dose applications of ATP. Nystatin (0.15 mg/mL) was diluted with a high-potassium internal intracellular solution containing 75 mM K2SO4, 55 mM KCl2, 5 mM MgSO4, and 10 mM HEPES (pH 7.4). Currents of PdP2X7 receptors were recorded using a conventional whole-cell patch configuration. After 24\u201348 hr of transfection, HEK293 cells were recorded at room temperature (25 \u00b1 2\u00b0C) using an Axopatch 200B amplifier (Molecular Devices, USA) with a holding potential of \u201360 mV. Current data were sampled at 10 kHz, filtered at 2 kHz, and analyzed using pCLAMP 10 (Molecular Devices, USA) for analysis. HEK293 cells were bathed in standard extracellular solution (SS) containing 2 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, 150 mM NaCl, 5 mM KCl, and 10 mM glucose with the pH adjusted to 7.4. For conventional whole-cell recordings, the pipette solutions consisted of 120 mM KCl, 30 mM NaCl, 0.5 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, and 5 mM EGTA with pH adjusted to 7.4. ATP and other compounds were dissolved in SS for P2X1 and P2X3 and applied to Y-tubes. For pdP2X7, ATP and other compounds were dissolved in 0 Ca, 0 Mg solution containing 150 mM NaCl, 10 mM glucose, 10 mM HEPES, 5 mM KCl, and 10 mM EGTA with the pH adjusted to 7.4 (Cui et al., 2022). PPNDS was purchased from APE\u00d7BIO, and PPADS was purchased from MCE. The standard solution and 0 Ca, 0 Mg solution were formulated with compounds from Aladdin, and internal solutions were formulated with compounds from Sigma-Aldrich (Li et al., 2018). All electrophysiological recordings were analyzed using Clampfit 10.6 (Molecular Devices, USA). Pooled data are expressed as the mean and standard error (s.e.m.). Statistical comparisons were made using Bonferroni\u2019s post hoc test (ANOVA). **p<0.01 and ***p<0.0001 were considered significant.\n\n### MD simulations\n\nThe energy-minimized models of the PPNDS-bound pdP2X7 were used as the initial structures for MD simulations. A large 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (300 K) bilayer, available in System Builder of DESMOND (Zhang et al., 2022; Dror et al., 2011), was built to generate a suitable membrane system based on the OPM database (Lomize et al., 2012). The systems were dissolved in simple point charge (SPC) water molecules. The DESMOND default relaxation protocol was applied to each system prior to the simulation run. (1) 100 ps simulations in the NVT (constant number [N], volume [V], and temperature [T]) ensemble with Brownian kinetics using a temperature of 10 K with solute heavy atoms constrained; (2) 12 ps simulations in the NVT ensemble using a Berendsen thermostat with a temperature of 10 K and small-time steps with solute heavy atoms constrained; (3) 12 ps simulations in the NPT (constant number [N], pressure [P], and temperature [T]) ensemble using a Berendsen thermostat and barostat for 12 ps simulations at 10 K and 1 atm, with solute heavy atoms constrained; (4) 12 ps simulations in the NPT ensemble using a Berendsen thermostat and barostat at 300 K and 1 atm with solute heavy atoms constrained; and (5) 24 ps simulations in the NPT ensemble using a Berendsen thermostat and barostat at 300 K and 1 atm without constraint. After equilibration, the MD simulations were performed for 0.3 \u00b5s. The long-range electrostatic interactions were calculated using the smooth particle grid Ewald method. The trajectory recording interval was set to 200 ps, and the other default parameters of DESMOND were used in the MD simulation runs. All simulations used the all-atom OPLS_2005 force field (Jorgensen et al., 1996; Kaminski et al., 2001; Banks et al., 2005), which is used for proteins, ions, lipids and SPC waters. The Simulation Interaction Diagram (SID) module in DESMOND was used for exploring the interaction analysis between PPNDS and pdP2X7. All simulations were performed on a DELL T7920 with NVIDIA TESLTA K40C or CAOWEI 4028GR with NVIDIA TESLTA K80. The simulation system was prepared, and the trajectory was analyzed and visualized on a CORE DELL T7500 graphics workstation with 12 CPUs.\n\n### Statistics\n\nElectrophysiological recordings were repeated 5\u201310 times. Error bars represent the standard error of the mean. Cryo-EM data collection and refinement statistics are summarized in Table 1.\n",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "49838331-571d-42a2-b44e-6d9d85b68dd2",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institute of Neurological Disorders and Stroke, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92829.3.sa0](https://doi.org/10.7554/eLife.92829.3.sa0)\n\nThis study by Sheng and colleagues provides valuable insights into the mechanism of competitive inhibitors of P2X receptors. The structural and functional evidence supporting the subtype specificity of pyridoxal-5'-phosphate derivatives is compelling and provides information for designing drugs that selectively target different subtypes of P2X receptor channels. The work will be of interest to biochemists, structural biologists, and pharmacologists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92829.3.sa1](https://doi.org/10.7554/eLife.92829.3.sa1)\n\nThis work provides new mechanistic insights into the competitive inhibition in the mammalian P2X7 receptors using structural and functional approaches. The authors solved the structure of panda (pd) P2X7 in the presence of the classical competitive antagonists PPNDS and PPADS. They find that both the drugs bind to the orthosteric site employed by the physiological agonist ATP. However, owing to the presence of a single phosphate group, they prevent movements in the flipper domain required for channel opening. The authors performed structure based mutational analysis together with electrophysiological characterization to understand the subtype specific binding of these drugs. It is known from previous studies that P2X1 and P2X3 are more sensitive to these drugs as compared to P2X7, hence, the residues adjacent to the ATP binding site in pdP2X7 were mutated to those present in P2X1. They observed that mutations of Q143, I214 and Q248 into lysine (hP2X1) increased the P2X7 sensitivity to PPNDS, whereas in P2X1, mutations of these lysines to alanine reduced sensitivity to PPNDS, suggesting that these key residues contribute to the subunit specific sensitivity to these drugs. Similar experiments were done in hP2X3 to demonstrate its higher sensitivity to PPNDS. This preprint provides a useful framework for developing subtype specific drugs for the family of P2X receptor channels, an area that is currently relatively unexplored.\n\nThe conclusions of the paper are well supported.\n\nThe revised manuscript is well written and presents its data with more clarity.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92829.3.sa2](https://doi.org/10.7554/eLife.92829.3.sa2)\n\nSummary:\n\nP2X receptors play pivotal roles in physiological processes such as neurotransmission and inflammation, making them promising drug targets. This study, through cryo-EM and functional experiments, reveals the structural basis of the competitive inhibition of the PPNDS and PPADS on mammalian P2X7 receptors. Key findings include the identification of the orthosteric site for these antagonists, the revelation of how PPADS/PPNDS binding impedes channel-activating conformational changes, and the pinpointing of specific residues in P2X1 and P2X3 subtypes that determine their heightened sensitivity to these antagonists. These insights present a comprehensive understanding that could guide the development of improved drugs targeting P2X receptors. This work will be a valuable addition to the field.\n\nStrengths:\n\nThe combination of structural experiments and mutagenesis analyses offers a deeper understanding of the mechanism. While the inclusion of MD simulation is appreciated, providing more insights from the simulation might further strengthen this already compelling story.\n",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7079a234-45db-4b69-af97-e443b982546e",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C1",
+      "claim": "P2X receptors are extracellular ATP-gated ion channels that form homo- or heterotrimers and consist of seven subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "P2X receptors are extracellular ATP-gated ion channels that form homo- or heterotrimers and consist of seven subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field, supported by citations in the introduction section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "af9a66d1-7f7f-4552-99c5-4dcc0ccaa2f1",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C2",
+      "claim": "P2X receptors are expressed in various tissues, including neuronal and nonneuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "They are expressed in various tissues, including neuronal and nonneuronal cells, and play critical roles in physiological processes such as neurotransmission, inflammation, pain, and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "df643e76-c295-4c8e-911a-a1c12a9055d7",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C3",
+      "claim": "P2X receptors play critical roles in physiological processes such as neurotransmission, inflammation, pain, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "They are expressed in various tissues, including neuronal and nonneuronal cells, and play critical roles in physiological processes such as neurotransmission, inflammation, pain, and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "b92ec834-d3ad-4a9d-a41f-0e9e0fb7b55a",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C4",
+      "claim": "The limited structural information of P2X receptors in complex with competitive antagonists hampers the understanding of orthosteric inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although several P2X receptor structures from different subtypes have been reported, the limited structural information of P2X receptors in complex with competitive antagonists hampers the understanding of orthosteric inhibition, hindering the further design and optimization of those antagonists for drug discovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this study, supported by inference from the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "5291d624-798d-415e-8cdd-b4bc51d40f1f",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C5",
+      "claim": "The cryo-EM structures of the mammalian P2X7 receptor in complex with PPNDS and PPADS were determined.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the cryogenic electron microscopy (cryo-EM) structures of the mammalian P2X7 receptor in complex with two classical competitive antagonists of pyridoxal-5'-phosphate derivatives, pyridoxal-5'-phosphate-6-(2'-naphthylazo-6'-nitro-4',8'-disulfonate) (PPNDS) and pyridoxal phosphate-6-azophenyl-2\u2032,5\u2032-disulfonic acid (PPADS), and performed structure-based mutational analysis by patch-clamp recording as well as molecular dynamics (MD) simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "36751c7c-8c2e-4c2f-a727-7d8c788c5f83",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C6",
+      "claim": "The structures revealed the orthosteric site for PPADS/PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structures revealed the orthosteric site for PPADS/PPNDS, and structural comparison with the previously reported apo- and ATP-bound structures showed how PPADS/PPNDS binding inhibits the conformational changes associated with channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "55e6e47b-59ec-47d7-ae88-1f056b0828aa",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C7",
+      "claim": "PPADS/PPNDS binding inhibits the conformational changes associated with channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structures revealed the orthosteric site for PPADS/PPNDS, and structural comparison with the previously reported apo- and ATP-bound structures showed how PPADS/PPNDS binding inhibits the conformational changes associated with channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison and inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "75d033f2-f6c6-4c1a-97fd-22f9a042d1e7",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C8",
+      "claim": "Structure-based mutational analysis identified key residues involved in the PPNDS sensitivity of P2X1 and P2X3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, structure-based mutational analysis identified key residues involved in the PPNDS sensitivity of P2X1 and P2X3, which are known to have higher affinity for PPADS/PPNDS than other P2X subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "6e842c32-9073-4f96-943d-3e14d5f2e7f3",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C9",
+      "claim": "P2X1 and P2X3 are known to have higher affinity for PPADS/PPNDS than other P2X subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, structure-based mutational analysis identified key residues involved in the PPNDS sensitivity of P2X1 and P2X3, which are known to have higher affinity for PPADS/PPNDS than other P2X subtypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "2693e0c7-7cf8-4e22-afe0-5bca9edc24e0",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C10",
+      "claim": "ATP serves as a cellular energy currency and plays a key role in signal transmission for cellular stimulation between cell surface receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP not only serves as a cellular energy currency but also plays a key role in signal transmission for cellular stimulation between cell surface receptors (Burnstock, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "fd5cb7cc-5400-4105-8302-5f519586c4e1",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C11",
+      "claim": "P2X receptors are the family of cation channels activated by extracellular ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "P2X receptors are the family of cation channels activated by extracellular ATP and are widely expressed in the mammalian nervous, respiratory, reproductive, and immune systems (Valera et al., 1994; Chen et al., 1995; Khakh and North, 2006; Burnstock et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c98b2070-08f9-451c-b399-a60f164f7f7c",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C12",
+      "claim": "P2X receptors are widely expressed in the mammalian nervous, respiratory, reproductive, and immune systems.",
+      "claim_type": "EXPLICIT",
+      "source": "P2X receptors are the family of cation channels activated by extracellular ATP and are widely expressed in the mammalian nervous, respiratory, reproductive, and immune systems (Valera et al., 1994; Chen et al., 1995; Khakh and North, 2006; Burnstock et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "6d66dfad-f183-4ee4-a900-4a231bf86a6e",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C13",
+      "claim": "There are seven subtypes (P2X1-P2X7) in the P2X receptor family.",
+      "claim_type": "EXPLICIT",
+      "source": "There are seven subtypes (P2X1-P2X7) in the family, each of which plays distinct roles in physiological and pathophysiological functions via homo- or heterotrimerization (Brake et al., 1994; North, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "66e0f12e-5839-443b-93cc-e5fc23a2a4b3",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C14",
+      "claim": "Each P2X receptor subtype plays distinct roles in physiological and pathophysiological functions via homo- or heterotrimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "There are seven subtypes (P2X1-P2X7) in the family, each of which plays distinct roles in physiological and pathophysiological functions via homo- or heterotrimerization (Brake et al., 1994; North, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "5e47bb94-bb86-40aa-8bd9-b998d4d5c661",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C15",
+      "claim": "Gefapixant, a P2X3 receptor antagonist for chronic cough, was already on the market after the clinical study.",
+      "claim_type": "EXPLICIT",
+      "source": "Some have progressed to clinical trials (Illes et al., 2021), and Gefapixant, a P2X3 receptor antagonist for chronic cough, was already on the market after the clinical study (McGarvey et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "d89dc968-2ac5-40d1-a5c3-75ff971d55df",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C16",
+      "claim": "ATP analogs are generally unsuitable for in vivo applications due to their relatively low specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP analogs are most common among competitive inhibitors for P2X receptors; however, they are generally unsuitable for in vivo applications due to their relatively low specificity, which may result in off-target toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge and inference about drug development.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "2da15176-ba06-4f63-8a4c-c735c331dd24",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C17",
+      "claim": "The low specificity of ATP analogs may result in off-target toxicity because the human body contains numerous ATP-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This issue arises because the human body contains numerous ATP-binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "d926822a-70b1-4ce7-aad6-f305f06f55e6",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C18",
+      "claim": "PPADS and PPNDS are classical non-ATP analog P2X inhibitors, namely, pyridoxal phosphate derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a non-ATP analog P2X inhibitor would be a more promising target to develop and optimize, and pyridoxal phosphate-6-azophenyl-2\u2032,5\u2032-disulfonic acid (PPADS) and its analog pyridoxal-5'-phosphate-6-(2'-naphthylazo-6'-nitro-4',8'-disulfonate) (PPNDS) are such classical non-ATP analog P2X inhibitors, namely, pyridoxal phosphate derivatives (Ralevic and Burnstock, 1998; Lambrecht et al., 2002; Jacobson et al., 2002; Kaczmarek-H\u00e1jek et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "e813be57-3495-4417-80d5-cc6b9bd39126",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C19",
+      "claim": "PPNDS and PPADS belong to the class of competitive antagonists that selectively inhibit P2X receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "PPNDS and PPADS belong to the class of competitive antagonists that selectively inhibit P2X receptors (Huo et al., 2018), and P2X receptors are known to exhibit variable sensitivity to PPADS/PPNDS depending on the species and the specific subtype (Kaczmarek-H\u00e1jek et al., 2012; Michel et al., 2008; Donnelly-Roberts et al., 2009; Buell et al., 1996; Garcia-Guzman et al., 1997; Jones et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "272d8b40-fa8e-4691-a0cb-f6ad93549e72",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C20",
+      "claim": "P2X receptors exhibit variable sensitivity to PPADS/PPNDS depending on the species and the specific subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "PPNDS and PPADS belong to the class of competitive antagonists that selectively inhibit P2X receptors (Huo et al., 2018), and P2X receptors are known to exhibit variable sensitivity to PPADS/PPNDS depending on the species and the specific subtype (Kaczmarek-H\u00e1jek et al., 2012; Michel et al., 2008; Donnelly-Roberts et al., 2009; Buell et al., 1996; Garcia-Guzman et al., 1997; Jones et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "963aebda-e7ec-406d-9bf6-ef4240721af9",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C21",
+      "claim": "P2X1 and P2X3 receptors show relatively high sensitivity to PPADS.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that P2X1 and P2X3 receptors show relatively high sensitivity to PPADS, but P2X2 and P2X7 receptors show only moderate sensitivity, and P2X4 receptors are insensitive to PPADS (North and Surprenant, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "5fe3fc30-8871-473a-be88-de492f67d5c6",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C22",
+      "claim": "P2X2 and P2X7 receptors show only moderate sensitivity to PPADS.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that P2X1 and P2X3 receptors show relatively high sensitivity to PPADS, but P2X2 and P2X7 receptors show only moderate sensitivity, and P2X4 receptors are insensitive to PPADS (North and Surprenant, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "22dc3cb8-b271-44b2-9dfb-7579c0ef2aae",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C23",
+      "claim": "P2X4 receptors are insensitive to PPADS.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that P2X1 and P2X3 receptors show relatively high sensitivity to PPADS, but P2X2 and P2X7 receptors show only moderate sensitivity, and P2X4 receptors are insensitive to PPADS (North and Surprenant, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "4d906def-9721-46c3-afe4-e4c7716ed165",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C24",
+      "claim": "The lack of structural information on P2X receptors in complex with pyridoxal phosphate derivative inhibitors has hampered their rational optimization for drug discovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the recent significant increase in structural information on P2X receptors (Kawate et al., 2009; Hattori and Gouaux, 2012; Kasuya et al., 2016; Karasawa and Kawate, 2016; Mansoor et al., 2016; Kasuya et al., 2017; Wang et al., 2018; Li et al., 2019; McCarthy et al., 2019), the lack of structural information on P2X receptors in complex with pyridoxal phosphate derivative inhibitors has hampered their rational optimization for drug discovery targeting P2X receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field, supported by inference from the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a705025e-b0fd-4cea-9212-433fa0a98d3c",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C25",
+      "claim": "pdP2X7 shares 85% identity with the human P2X7 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, pdP2X7 shares 85% identity with the human P2X7 receptor and exhibits high and stable expression profiles suitable for structural studies (Karasawa and Kawate, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "6a90ab13-2366-46f2-b136-a17c5ecdd9d4",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C26",
+      "claim": "pdP2X7 exhibits high and stable expression profiles suitable for structural studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, pdP2X7 shares 85% identity with the human P2X7 receptor and exhibits high and stable expression profiles suitable for structural studies (Karasawa and Kawate, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "95878a26-001a-49e7-8284-fadb5c9bcaa9",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C27",
+      "claim": "The application of 10 \u00b5M PPNDS blocked approximately 50% of the ATP-dependent currents from pdP2X7.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of 10 \u00b5M PPNDS and 100 \u00b5M PPADS blocked approximately 50% of the ATP-dependent currents from pdP2X7 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "ef9c79f6-8f69-4f80-baee-3022a10e510d",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C28",
+      "claim": "The application of 100 \u00b5M PPADS blocked approximately 50% of the ATP-dependent currents from pdP2X7.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of 10 \u00b5M PPNDS and 100 \u00b5M PPADS blocked approximately 50% of the ATP-dependent currents from pdP2X7 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "50178a9d-b5fe-4be6-bf7a-9b6cf9e4f61d",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C29",
+      "claim": "The inhibition of pdP2X7 by PPNDS and PPADS correlates well with the properties of P2X7 receptors moderately inhibited by PPADS/PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "This result correlates well with the properties of P2X7 receptors moderately inhibited by PPADS/PPNDS (Donnelly-Roberts et al., 2009; Lambrecht et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "46353dd7-e1f3-45df-9bf6-f71ddf795963",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C30",
+      "claim": "The structures of pdP2X7 in the presence of PPNDS and PPADS were determined at 3.3 \u00c5 and 3.6 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of pdP2X7 in the presence of PPNDS and PPADS were determined at 3.3 \u00c5 and 3.6 \u00c5, respectively (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding supported by cryo-EM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "801e7902-8488-4066-b143-6ac51f65cf7a",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C31",
+      "claim": "The overall structures of PPNDS-bound and PPADS-bound pdP2X7 show the trimeric architecture of P2X receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structures are similar and show the trimeric architecture of P2X receptors, consisting of the extracellular domain and two transmembrane (TM) helices, with each protomer resembling the dolphin shape, consistent with the previously reported P2X structures (Sheng and Hattori, 2022; Figure 1, Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data and comparison with previously reported structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a1b03cf3-02fa-4a54-825a-5d53153d6038",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C32",
+      "claim": "Each protomer of P2X receptors resembles the dolphin shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structures are similar and show the trimeric architecture of P2X receptors, consisting of the extracellular domain and two transmembrane (TM) helices, with each protomer resembling the dolphin shape, consistent with the previously reported P2X structures (Sheng and Hattori, 2022; Figure 1, Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations and structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "e70555a9-4f3a-4fb5-8104-70bb437d2575",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C33",
+      "claim": "Residual EM densities at the agonist binding site fit into the shape of PPNDS and PPADS.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, we identified the residual EM densities at the agonist binding site that fit into the shape of PPNDS and PPADS (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data from cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "3391c01c-43c0-4d29-a8e0-32ccb3c6c3bf",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C34",
+      "claim": "The naphthylazo group of PPNDS is significantly bulkier than the azophenyl group of PPADS.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that while the pyridoxal phosphate groups in PPNDS and PPADS are shared, the naphthylazo group of PPNDS is significantly bulkier than the azophenyl group of PPADS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the chemical structures of the compounds.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "594aaf08-20e9-4c9c-94c3-5af26ad5e645",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C35",
+      "claim": "The TM domain adapts to the closed conformation of the channel in the PPNDS-bound and PPADS-bound structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with antagonist binding, the TM domain adapts to the closed conformation of the channel, as similarly observed in the previously reported closed state structures of P2X7 receptors (Karasawa and Kawate, 2016; McCarthy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data and comparison with previously reported structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "96726d94-45e4-429c-8f78-5ab06d9a4ca5",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C36",
+      "claim": "PPNDS and PPADS molecules bind to essentially the same orthosteric site.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PPNDS-bound and PPADS-bound structures, PPNDS and PPADS molecules bind to essentially the same orthosteric site, consistent with both PPNDS and PPADS being pyridoxal phosphate derivatives (Figures 2 and 3, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data from cryo-EM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "d2cbfad5-99c2-448b-9305-a64339a4e771",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C37",
+      "claim": "The residues involved in PPNDS and PPADS binding largely overlap with the residues at the ATP-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the residues involved in PPNDS and PPADS largely overlap with the residues at the ATP-binding site in the previously reported ATP-bound P2X7 structure (Figure 4; McCarthy et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "8085c937-87a0-4ba9-a412-17c04e1e0407",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C38",
+      "claim": "Many of the residues involved in PPNDS and PPADS binding are highly conserved among P2X receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the residues are highly conserved among P2X receptors and have been shown to be crucial for P2X activation (Hattori and Gouaux, 2012; Jiang et al., 2000; Ennion et al., 2000; Bodnar et al., 2011), which is consistent with both of them being competitive inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c9ffdd9c-9b65-43dd-837b-ac3da5174c29",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C39",
+      "claim": "The residues involved in PPNDS and PPADS binding have been shown to be crucial for P2X activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the residues are highly conserved among P2X receptors and have been shown to be crucial for P2X activation (Hattori and Gouaux, 2012; Jiang et al., 2000; Ennion et al., 2000; Bodnar et al., 2011), which is consistent with both of them being competitive inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "6416bb85-4ff2-4fff-be1a-f4bc06f11868",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C40",
+      "claim": "The pyridoxal phosphate group of PPNDS and PPADS has extensive interactions with the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In both structures, the pyridoxal phosphate group has extensive interactions with the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "1ccaeca7-6c63-4d1a-a947-e44108aa170a",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C41",
+      "claim": "The other parts of PPNDS and PPADS have fewer interactions with the receptor compared to the pyridoxal phosphate group.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the other parts of the compounds, a naphthylazo group with two sulfonic acid groups and a nitro group (PPNDS) and an azophenyl group with two sulfonic acid groups (PPADS), have fewer interactions (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "96e01e71-fafd-4d63-ab0a-047fbf05d768",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C42",
+      "claim": "The phosphate group of PPNDS and PPADS interacts directly with the side chain of Arg294.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphate group of PPNDS and PPADS interacts directly with the side chain of Arg294 and possibly also with Lys145, possibly via a water molecule (Figures 2B and 3B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "21da9e68-e853-4fb8-96e1-e3b289774ba3",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C43",
+      "claim": "The phosphate group of PPNDS and PPADS possibly interacts with Lys145, possibly via a water molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphate group of PPNDS and PPADS interacts directly with the side chain of Arg294 and possibly also with Lys145, possibly via a water molecule (Figures 2B and 3B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data, though with some uncertainty due to resolution limitations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "b13bbb1c-15b8-4738-b2b7-ea5f6a0b1773",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C44",
+      "claim": "It is difficult to conclude the existence of the water molecule at the Lys145 site due to the limited resolution of the structures.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should also be noted that it is difficult to conclude the existence of the water molecule at this site due to the limited resolution of our structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a87499b1-ad05-491a-bb60-7c6e05bd7790",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C45",
+      "claim": "In the PPADS-bound structure, Lys64 mediates an additional interaction with the phosphate group.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the PPADS-bound structure, Lys64 mediates an additional interaction with the phosphate group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a912d399-2bc8-43ed-a6ce-e8957b9358b0",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C46",
+      "claim": "The interactions between the phosphate group of PPNDS/PPADS and the receptor resemble those with the phosphate groups of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "These extensive interactions between the phosphate group and the receptor resemble those with the phosphate groups of ATP (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "6a5b4735-0471-4fff-aaae-ae15d06df0e2",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C47",
+      "claim": "Asn292 and Lys311 are involved in the interaction with the hydroxyl group of the pyridoxal part of PPNDS and PPADS.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the Asn292 and Lys311 residues are similarly involved in the interaction with the hydroxyl group of the pyridoxal part of PPNDS and PPADS (Figures 2B and 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "28139661-8bd1-40cc-b083-7b0740005a6c",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C48",
+      "claim": "The two common sulfonic acid groups of PPNDS and PPADS form hydrogen bonds with the side chains of Lys66 and Gln143.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite the structural differences between PPNDS and PPADS, the two common sulfonic acid groups form hydrogen bonds with the side chains of the same residues in the receptor, Lys66 and Gln143 (Figures 2B and 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "7563310c-c00b-4975-a6a6-4c7a8ef45758",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C49",
+      "claim": "The overall structures of PPNDS-bound and PPADS-bound pdP2X7 were stable during MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structures were stable during the simulations, and PPNDS remained stably bound to the receptor (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "7b8ef994-9e00-4e9d-9b58-aa5844f5d160",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C50",
+      "claim": "PPNDS remained stably bound to the receptor during MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structures were stable during the simulations, and PPNDS remained stably bound to the receptor (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a98f9798-fae4-47d0-8ce0-9de624771a77",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C51",
+      "claim": "The PPNDS-bound structure and PPADS-bound structure are very similar, with 0.52 \u00c5 RMSD values for the C\u03b1 atoms of 960 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The PPNDS-bound structure and PPADS-bound structure are very similar, with 0.52 \u00c5 RMSD (root mean square deviation) values for the C\u03b1 atoms of 960 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "08f5982b-ccc2-43ac-8216-2e2a21d126be",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C52",
+      "claim": "The activation of P2X receptors from the apo (closed) state to the ATP-bound (open) state requires motions of both the head and left flipper domains.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the activation of P2X receptors from the apo (closed) state to the ATP-bound (open) state is known to require motions of both the head and left flipper domains (L\u00f6rinczi et al., 2012; Wang et al., 2017; Zhao et al., 2014; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "28f70acd-db00-4e0b-acd0-3f88ea329c38",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C53",
+      "claim": "The motions of the head and left flipper domains are coupled to the movement of the lower body domain, which is directly connected to the TM domain for channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "These motions are coupled to the movement of the lower body domain, which is directly connected to the TM domain for channel opening (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations and structural data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "e791451b-bd5b-4826-86e3-57f0d8bbe4cf",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C54",
+      "claim": "In the PPNDS-bound structure, there was motion of the head domain similar to that in the ATP-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PPNDS-bound structure, while we observed motion of the head domain similar to that in the ATP-bound structure, there was only a small structural change in the left flipper domain (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "92f43ca5-8cca-4a9c-b3ae-8c9121f76083",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C55",
+      "claim": "In the PPNDS-bound structure, there was only a small structural change in the left flipper domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PPNDS-bound structure, while we observed motion of the head domain similar to that in the ATP-bound structure, there was only a small structural change in the left flipper domain (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "59378b3e-58ee-4f3a-a06f-73bf9e02052c",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C56",
+      "claim": "There was no structural change in the lower body domain or associated gating motion of the TM domain in the PPNDS-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, there was no structural change in the lower body domain or associated gating motion of the TM domain (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "42b2d70b-ac34-4703-b61b-12bea30858c0",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C57",
+      "claim": "In the ATP-bound structure, the three phosphate groups of ATP in the U-shaped conformation pushed down the left flipper.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ATP-bound structure, the three phosphate groups of ATP in the U-shaped conformation pushed down the left flipper (Figures 4A and 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data from the ATP-bound structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "461af81f-bdb8-4425-b00f-f26b15f00e0b",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C58",
+      "claim": "Both PPNDS and PPADS possess only one phosphate group, so there was no corresponding downward movement in the left flipper domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both PPNDS and PPADS possess only one phosphate group, so there was no corresponding downward movement in the left flipper domain (Figures 2 and 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "dd84ad39-221a-4dfb-8d66-349614447d62",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C59",
+      "claim": "The binding of PPNDS and PPADS may prevent the downward movement of the left flipper domain, which is required for channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of these competitive inhibitors may prevent the downward movement of the left flipper domain, which is required for channel opening (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural comparison.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "211e31e5-0108-42cf-927e-9f924809a3d5",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C60",
+      "claim": "The Gln143Lys mutant of pdP2X7 showed significantly increased sensitivity to PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mutational analysis, among three mutations to the lysine residue, two (Gln143Lys and Ile214Lys) showed significantly increased sensitivity to PPNDS (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "e3206209-5732-4a40-a6c3-e0646c6ba5af",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C61",
+      "claim": "The Ile214Lys mutant of pdP2X7 showed significantly increased sensitivity to PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mutational analysis, among three mutations to the lysine residue, two (Gln143Lys and Ile214Lys) showed significantly increased sensitivity to PPNDS (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a09da6d8-1655-433a-bcde-ab5886b1d424",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C62",
+      "claim": "The Gln248Lys mutant of pdP2X7 showed slightly higher sensitivity to PPNDS, but not as significant an increase as the other two mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the Gln248Lys mutant showed slightly higher sensitivity to PPNDS, but not as significant an increase as the other two mutants (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "6ada5e40-8c11-42c9-8bd2-4003d14859b3",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C63",
+      "claim": "The mutation of Tyr288 to alanine in pdP2X7 significantly increased the affinity for PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while Tyr288 in pdP2X7 corresponds to Ser286 in hP2X1, the mutation of Tyr288 to alanine instead of serine significantly increased the affinity for PPNDS (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "efd20bd6-7a8d-418f-9a0d-4034b083ef24",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C64",
+      "claim": "Mutating Val173 in pdP2X7 to aspartate significantly reduced the sensitivity to PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mutating Val173 in pdP2X7 to aspartate significantly reduced the sensitivity to PPNDS (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "172111c8-e98e-4f87-b972-6be0c9f0fd03",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C65",
+      "claim": "The Gln143Ala and Gln248Ala mutants of pdP2X7 showed little or no decrease in PPNDS sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The two mutants Gln143Ala and Gln248Ala showed little or no decrease in PPNDS sensitivity (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a4e69843-7949-44d9-a9a8-b059c1aad527",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C66",
+      "claim": "The Lys140Ala mutant of hP2X1 showed a significant decrease in PPNDS sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "All three mutants at the lysine residues (Lys140Ala, Lys215Ala, and Lys249Ala), especially the Lys140Ala and Lys215Ala mutants, showed a significant decrease in PPNDS sensitivity (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "ebf08359-f84f-453b-ac1c-4db866304cea",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C67",
+      "claim": "The Lys215Ala mutant of hP2X1 showed a significant decrease in PPNDS sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "All three mutants at the lysine residues (Lys140Ala, Lys215Ala, and Lys249Ala), especially the Lys140Ala and Lys215Ala mutants, showed a significant decrease in PPNDS sensitivity (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "ee0729cb-ee2d-4bce-93c1-67c32395f411",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C68",
+      "claim": "The Lys249Ala mutant of hP2X1 showed a significant decrease in PPNDS sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "All three mutants at the lysine residues (Lys140Ala, Lys215Ala, and Lys249Ala), especially the Lys140Ala and Lys215Ala mutants, showed a significant decrease in PPNDS sensitivity (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "5bf2c0f8-c3c8-49bb-affd-93abebe96da2",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C69",
+      "claim": "The mutation of Asp170 to alanine in hP2X1 increased the sensitivity to PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mutation of Asp170 and Ser286 to alanine increased the sensitivity to PPNDS (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "10e2a35d-8a9c-428b-9adf-33598de070ce",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C70",
+      "claim": "The mutation of Ser286 to alanine in hP2X1 increased the sensitivity to PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mutation of Asp170 and Ser286 to alanine increased the sensitivity to PPNDS (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "7db0a893-b17c-4feb-9c29-b849e67d9695",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C71",
+      "claim": "The Lys201Ala mutant of hP2X3 showed a decrease in PPNDS sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the Lys201 mutant showed a decrease in PPNDS sensitivity (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "9c46aeae-d04b-4171-910e-260634c01385",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C72",
+      "claim": "The phosphate group of PPNDS and PPADS appears to occupy the position of the \u03b3-phosphate group of ATP in the ATP-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cryo-EM structures, the phosphate group of PPNDS and PPADS appears to occupy the position of the \u03b3-phosphate group of ATP in the ATP-bound structure (Figures 2\u20144).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c8d0680e-6f6c-480a-9f6a-0e3405cab06b",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C73",
+      "claim": "In contrast to ATP binding, the binding of PPNDS and PPADS does not induce the downward motion of the left flipper.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with the previously reported apo- (closed) and ATP-bound (open) structures showed that, in contrast to ATP binding, the binding of PPNDS and PPADS does not induce the downward motion of the left flipper, which is essential for channel activation (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "2b72b9b8-3992-43cc-91e4-e1875f7149ce",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C74",
+      "claim": "The downward motion of the left flipper is essential for channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison with the previously reported apo- (closed) and ATP-bound (open) structures showed that, in contrast to ATP binding, the binding of PPNDS and PPADS does not induce the downward motion of the left flipper, which is essential for channel activation (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "80afadfc-a76f-41f0-9d05-10bc0d9e6a67",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C75",
+      "claim": "TNP-ATP is well known as a classical competitive inhibitor for P2X receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides PPADS and PPNDS in this study, TNP-ATP is well known as a classical competitive inhibitor for P2X receptors (North and Surprenant, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "b64fb749-053b-4fd5-b047-ea80f05c7a78",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C76",
+      "claim": "In the previously reported TNP-ATP-bound P2X7 structure, TNP-ATP binding induces the conformational changes of the left flipper region but not of the head domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the previously reported TNP-ATP-bound P2X7 structure, TNP-ATP binding induces the conformational changes of the left flipper region but not of the head domain (Kasuya et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "1f39e19b-b182-4c85-9a34-c8716c4d319a",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C77",
+      "claim": "PPADS and PPNDS binding induces the conformational changes of the head domain but not of the left flipper region.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PPADS and PPNDS binding induces the conformational changes of the head domain but not of the left flipper region (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a35ef9dd-7295-4f0f-96cc-7d20b3c4e73c",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C78",
+      "claim": "The contrasts between TNP-ATP and PPADS/PPNDS binding highlight the uniqueness of the competitive inhibition mechanism by pyridoxal phosphate derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "These contrasts would highlight the uniqueness of the competitive inhibition mechanism by pyridoxal phosphate derivatives as well as the diversity of competitive inhibition mechanisms of P2X receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural comparison.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "2b714374-fd73-4604-ba2b-432f2b1f23fc",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C79",
+      "claim": "The mutation of Glu249 in rat P2X4 to lysine was designed to confer PPADS sensitivity on the PPADS-insensitive P2X4 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation of Glu249 in rat P2X4 (rP2X4) to lysine was designed based on the corresponding residue in hP2X1 (Lys249) to confer PPADS sensitivity on the PPADS-insensitive P2X4 receptor (Buell et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "e8b61503-9d38-49fd-b8ac-2240acbd8197",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C80",
+      "claim": "Glu249 in rP2X4 corresponds to Gln248 in pdP2X7.",
+      "claim_type": "EXPLICIT",
+      "source": "Glu249 in rP2X4 corresponds to Gln248 in pdP2X7 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "41c39e02-d5f5-408f-8e83-e676569e12ac",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C81",
+      "claim": "Gln248 in pdP2X7 is proximal to the hydroxyl moieties of the pyridoxal phosphate group of PPADS and PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "In our structures, this residue is proximal to the hydroxyl moieties of the pyridoxal phosphate group of PPADS and PPNDS (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a229013b-3529-41c1-9cec-ff0269d4dfc2",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C82",
+      "claim": "Lys70, Asp170, Lys190, and Lys249 participate in PPADS binding in hP2X1.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, the combination of docking simulation and electrophysiology showed that Lys70, Asp170, Lys190, and Lys249 participate in PPADS binding in hP2X1 (Huo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "4f16d864-80ea-4ea5-aed2-ed6f5fb1b5ed",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C83",
+      "claim": "Lys70 and Lys190 in hP2X1 are directly involved in ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these four residues, Lys70 and Lys190 are directly involved in ATP binding (Hattori and Gouaux, 2012), and Lys249 corresponds to Glu249 in rP2X4, as shown in a previous study (Buell et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "afe9f6eb-3496-42fb-8e91-a3c00e926a8a",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C84",
+      "claim": "The mutation of Asp170 to cysteine in hP2X1 increased sensitivity to PPADS.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the mutation of Asp170 to cysteine increased sensitivity to PPADS (Huo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "5f37fa7f-ca16-45c2-84c6-7bfcedd180bc",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C85",
+      "claim": "The Asp170Ala mutation in hP2X1 increased the sensitivity to PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, our mutational analysis revealed that the Asp170Ala mutation in hP2X1 also increased the sensitivity to PPNDS (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data from patch-clamp recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c936e799-5055-4d4e-8251-f97a5792bd1a",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C86",
+      "claim": "Val173 in pdP2X7 is located proximal to the pyridoxal phosphate group of PPADS.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our structures, the corresponding residue in pdP2X7 (Val173) is located proximal to the pyridoxal phosphate group of PPADS, and the pyridoxal phosphate group is in common with that of PPADS (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "bf4f7afd-8fe4-4ab0-86ed-72e6b1c0e3a0",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C87",
+      "claim": "Asp170 in hP2X1 is involved in sensitivity to both PPADS and PPNDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Asp170 in hP2X1 is involved in sensitivity to both PPADS and PPNDS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "b89415d0-64b1-4bf6-aabc-49a769a186e5",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C88",
+      "claim": "The orientation of PPADS in the recent docking model is very different from that in the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the orientation of PPADS in the recent docking model is very different from that in our cryo-EM structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the current study and a previous docking model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "4675384f-2f51-45c2-9d71-805718826930",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C89",
+      "claim": "In the docking model, PPADS shows an almost 180\u00b0 rotation relative to the axis of rotation parallel to the membrane compared to the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the docking model, compared to our cryo-EM structure, PPADS shows an almost 180\u00b0 rotation relative to the axis of rotation parallel to the membrane with the azide group of PPADS as the fulcrum (Huo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the current study and a previous docking model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "fef19107-8936-4681-81b5-030354996561",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C90",
+      "claim": "The difference in the orientation of PPADS may explain why hP2X1 Lys140 and Lys215 were not predicted to be involved in PPADS binding in the previous docking model.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in the orientation of the compound may explain why hP2X1 Lys140 and Lys215 were not predicted to be involved in PPADS binding in the previous docking model, in contrast to the results of our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison between the current study and a previous docking model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "0f01e081-1a9a-4089-b763-b39ae5aa7f6b",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C91",
+      "claim": "Most pyridoxal phosphate derivatives share a common weakness in subtype specificity, tending to show high affinity for both P2X1 and P2X3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most of them share a common weakness in subtype specificity, where they tend to show high affinity for both P2X1 and P2X3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "16ee56d0-f9f1-4e1b-a7f2-ad3110bb20c3",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C92",
+      "claim": "MRS 2257 has IC50 values of 5 nM and 22 nM for P2X1 and P2X3, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MRS 2257 was identified as the most active PPADS analog from the screening but has IC50 values of 5 nM and 22 nM for P2X1 and P2X3, respectively (Brown et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "7b027ee0-a5f3-4a14-b6b8-dda67b9f4576",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C93",
+      "claim": "The PPADS analog 36j shows improved subtype specificity for P2X3 (IC50: 60 nM for P2X3) but still shows a moderate inhibitory effect on P2X1 at 10 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, another PPADS analog, termed 36j, shows improved subtype specificity for P2X3 (IC50: 60 nM for P2X3) but still shows a moderate inhibitory effect on P2X1 at 10 \u00b5M (Cho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "01f5b177-8ae5-4515-96af-fa8ca430f9f6",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C94",
+      "claim": "It is still difficult to obtain competitive inhibitors of P2X receptors with subtype specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is still difficult to obtain competitive inhibitors of P2X receptors, including pyridoxal phosphate derivatives, with subtype specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the state of the field.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "f89b7d96-dc56-40c9-b8d9-004131d128e9",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C95",
+      "claim": "The residues directly involved in ATP binding are strictly conserved among the P2X subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is probably because the residues directly involved in ATP binding are strictly conserved among the subtypes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment and established knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "abbc997a-bb9c-4c9f-a7c0-9dc001691f87",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C96",
+      "claim": "Lys215 and Lys249 in hP2X1 are important for PPNDS sensitivity but are not conserved in other P2X subtypes, including P2X3.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Lys215 and Lys249 in hP2X1 are important for PPNDS sensitivity (Figure 6C) but are not conserved in other P2X subtypes, including P2X3 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and sequence alignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "88944891-0139-42c0-925a-7cd835d6cd4c",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C97",
+      "claim": "The findings would provide a clue for the design of more subtype-specific pyridoxal phosphate derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings would provide a clue for the design of more subtype-specific pyridoxal phosphate derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "d4da6372-eac3-4658-bc27-ee24f82609df",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C98",
+      "claim": "The structural and functional analyses provided mechanistic insights into the orthosteric inhibition mechanism of P2X receptors by pyridoxal phosphate derivative antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our structural and functional analyses provided mechanistic insights into the orthosteric inhibition mechanism of P2X receptors by the classical pyridoxal phosphate derivative P2X antagonist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "f97c2a81-1b3c-4abe-9a91-d37bf8aac1de",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "claim_id": "C99",
+      "claim": "The results potentially facilitate the development of subtype-specific compounds targeting P2X receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results potentially facilitate the development of subtype-specific compounds targeting P2X receptors, which have attracted widespread interest as therapeutic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "23a6a381-bd49-41bd-8eb5-71451d36ad14",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "P2X receptors are extracellular ATP-gated ion channels that form homo- or heterotrimers, consist of seven subtypes (P2X1-P2X7), are widely expressed in mammalian tissues, and play critical roles in physiological processes such as neurotransmission, inflammation, pain, and cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C10-C14 represent well-established background knowledge about P2X receptors, supported by multiple citations to the literature. These are foundational facts in the field and serve as context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "a570ab4e-0099-4c3c-ac6a-e394abe72f64",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Limited structural information of P2X receptors in complex with competitive antagonists, particularly pyridoxal phosphate derivatives, has hampered understanding of orthosteric inhibition and rational drug design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C24 accurately describe the knowledge gap that motivated this study. This is supported by the literature review and represents the rationale for the structural work presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "de8cf522-1093-420b-913d-3abd789b5432",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The cryo-EM structures of pdP2X7 in complex with PPNDS and PPADS were determined at 3.3 \u00c5 and 3.6 \u00c5 resolution, revealing trimeric architecture with EM densities fitting the shapes of the antagonists and showing closed channel conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C30-C33, and C35 describe the primary structural findings with appropriate resolution, supported by cryo-EM data, validation statistics (Table 1), and comparison with known P2X structures. The structural quality metrics are within acceptable ranges for these resolutions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "1360d67e-ca0a-4eda-94b2-cb8f0187eab3",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PPNDS and PPADS bind to essentially the same orthosteric site, with residues that largely overlap with the ATP-binding site and are highly conserved among P2X receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C36-C39 are supported by structural data (Figures 2-4), sequence alignment, and comparison with ATP-bound structures. The overlap with conserved ATP-binding residues is consistent with competitive inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c4a992da-3e5e-48fe-abb3-0048c040807c",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The pyridoxal phosphate group of PPNDS and PPADS has extensive interactions with the receptor through residues including Arg294, Lys145, Asn292, Lys311, Lys66, and Gln143, resembling interactions with ATP phosphate groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C48 describe detailed molecular interactions supported by structural data (Figures 2-3). The authors appropriately note uncertainty about water-mediated interactions (C43-C44) due to resolution limitations, which is scientifically honest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "207c432d-9049-43df-ad7b-21defa67f118",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MD simulations showed that the PPNDS-bound structure remained stable with PPNDS stably bound to the receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by MD simulation data (Figure 2\u2014figure supplement 2). The simulations provide computational validation of the binding mode, though the 0.3 \u00b5s timescale is relatively short.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "f40208fa-3aab-43d4-be6e-8bbc2bac5ba8",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Functional characterization showed that 10 \u00b5M PPNDS and 100 \u00b5M PPADS blocked approximately 50% of ATP-dependent currents from pdP2X7, consistent with moderate inhibition of P2X7 receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by patch-clamp data (Figure 1\u2014figure supplement 1) with n=5 replicates. The results are consistent with known pharmacological properties of P2X7 receptors cited in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "4cdda17d-7a25-418c-8ec9-dc916a676de0",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structural comparison reveals that PPNDS/PPADS binding induces head domain motion but not left flipper movement, preventing the downward motion required for channel opening, thereby explaining the competitive inhibition mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C59, C7, C72-C74 describe the mechanistic insights from structural comparison (Figure 5). The interpretation is well-supported by comparison with apo and ATP-bound structures, though the mechanism is partly inferential. The key observation that PPNDS/PPADS have only one phosphate group versus three in ATP provides a structural rationale for inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "333f32c3-da2d-48c0-8753-5c58b27767ec",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Structure-based mutagenesis of pdP2X7 identified residues affecting PPNDS sensitivity: Gln143Lys and Ile214Lys significantly increased sensitivity, Tyr288Ala increased sensitivity, Val173Asp decreased sensitivity, while Gln143Ala and Gln248Ala showed little effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 are supported by patch-clamp data (Figure 6B) with n=5 replicates and statistical analysis. The mutations were rationally designed based on structural comparison with hP2X1, and the results provide functional validation of structural predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "48ba5f19-a493-4af7-bdf0-adad7236827b",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutagenesis of hP2X1 showed that Lys140Ala, Lys215Ala, and Lys249Ala decreased PPNDS sensitivity, while Asp170Ala and Ser286Ala increased sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 are supported by patch-clamp data (Figure 6C) with n=5-10 replicates and statistical analysis. The results are consistent with the structural predictions and provide insight into subtype-specific sensitivity differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "12d9b55e-fa9d-44e9-943b-7322ee4e7732",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Lys201Ala mutant of hP2X3 showed decreased PPNDS sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is supported by patch-clamp data (Figure 6D) with n=5 replicates. This validates the role of the conserved lysine residue in P2X3 sensitivity to PPNDS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "10afca45-aa43-474c-93f4-becdf1431234",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Structure-based mutational analysis identified key residues involved in PPNDS sensitivity of P2X1 and P2X3, including non-conserved residues Lys215 and Lys249 in hP2X1 that are important for PPNDS sensitivity but not conserved in other subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C96 summarize the mutagenesis findings supported by experimental data (Figure 6) and sequence alignment (Figure 4B). The identification of subtype-specific residues provides a structural basis for differential sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "6c59b44b-851f-46ce-9f9d-ede11fb0fe1a",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Comparison with TNP-ATP-bound P2X7 structure reveals that TNP-ATP induces left flipper changes without head domain movement, while PPADS/PPNDS induces head domain changes without left flipper movement, highlighting diverse competitive inhibition mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 compare the current structures with a previously published TNP-ATP-bound structure. The comparison is valid and supported by structural data (Figure 5), revealing mechanistic diversity in competitive inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "2f46c119-a3af-4ce0-8fba-1665551feb88",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Comparison with previous docking studies shows that Asp170 in hP2X1 (Val173 in pdP2X7) is involved in sensitivity to both PPADS and PPNDS, with the Asp170Ala mutation increasing PPNDS sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 integrate current findings with prior literature, supported by experimental data (Figure 6C) and structural analysis (Figure 6A). The consistency between Asp170Cys (prior work) and Asp170Ala (current work) strengthens the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "fbfc1e8e-29b7-47f5-bcc1-9a6000be530b",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The orientation of PPADS in the cryo-EM structure differs significantly from a previous docking model, showing an ~180\u00b0 rotation, which may explain why Lys140 and Lys215 were not predicted to be involved in the docking model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 compare the experimental structure with a computational docking model from prior work. The comparison is valid and highlights the value of experimental structures over computational predictions, though the inference about why residues were missed is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ATP analogs are generally unsuitable for in vivo applications due to low specificity, while PPADS and PPNDS are classical non-ATP analog competitive antagonists with variable subtype-specific sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C23 represent established knowledge about P2X inhibitors, supported by citations. This provides important context for why pyridoxal phosphate derivatives are of interest for drug development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "8ca93946-db3f-46d5-b6a4-b1c7d33cdf8a",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Most pyridoxal phosphate derivatives lack subtype specificity, showing high affinity for both P2X1 and P2X3, because residues directly involved in ATP binding are strictly conserved among subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C95 describe the challenge of achieving subtype specificity, supported by literature citations and sequence alignment data (Figure 4B). This establishes the rationale for identifying non-conserved residues that affect sensitivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "0a4757d5-922f-4f5e-96d1-debd3ed39bf5",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The structural and functional analyses provide mechanistic insights into orthosteric inhibition by pyridoxal phosphate derivatives and may facilitate development of subtype-specific compounds targeting P2X receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 represent the authors' conclusions about the significance of their work. While C97 and C99 are speculative about future applications, they are reasonable inferences based on the identification of subtype-specific residues. C98 is a fair summary of the study's contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "3e07fe9e-4a4c-4f04-a266-94090b659870",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "pdP2X7 shares 85% identity with human P2X7 and exhibits high and stable expression profiles suitable for structural studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 justify the choice of pdP2X7 as a model system, supported by a citation to prior work. This is appropriate methodological justification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c50824d7-2cf9-45dc-aa64-44b9af6e21d2",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The naphthylazo group of PPNDS is significantly bulkier than the azophenyl group of PPADS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is a straightforward observation about the chemical structures of the compounds, which is evident from the structural formulas shown in Figure 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "aef24fb2-7991-47e3-8002-d82a4a1847d5",
+      "content_id": "132602bd-f7c6-47a5-aa1f-1ada61c6cb4c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Background information on P2X receptor pharmacology and prior mutagenesis studies provides context for the current structural and functional analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C15, C75, C79-C81 represent established knowledge and prior findings that provide context for the current study. These are appropriately cited and accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "13fa19a6-3d79-4b28-980f-986933d2a10b",
+      "content_id": "49838331-571d-42a2-b44e-6d9d85b68dd2",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors determined cryo-EM structures of pdP2X7 in complex with PPNDS and PPADS at resolutions of 3.3 \u00c5 and 3.6 \u00c5, respectively.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm the structural work. Reviewer 1 states the study 'provides valuable insights' and that 'the structural and functional evidence supporting the subtype specificity...is compelling.' Reviewer 2 notes 'the authors solved the structure' and Reviewer 3 confirms the study 'reveals the structural basis' through cryo-EM. No concerns about the structural determination are raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "e589f563-a1da-4311-85c0-3161dab188f5",
+      "content_id": "49838331-571d-42a2-b44e-6d9d85b68dd2",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The structures revealed that PPNDS and PPADS bind to the orthosteric site overlapping with the ATP-binding site, with the pyridoxal phosphate group forming extensive interactions with conserved residues including Arg294, Lys145, Asn292, Lys311, Lys66, and Gln143.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly states 'They find that both the drugs bind to the orthosteric site employed by the physiological agonist ATP,' confirming this key finding. Reviewer 3 notes 'Key findings include the identification of the orthosteric site for these antagonists.' The detailed binding interactions are not questioned by any reviewer.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "e6dac91e-6ef4-473e-938b-c06d870694ef",
+      "content_id": "49838331-571d-42a2-b44e-6d9d85b68dd2",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Structural comparison revealed that PPNDS/PPADS binding induces head domain motion but prevents the downward movement of the left flipper domain required for channel opening, explaining the competitive inhibition mechanism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly confirms 'owing to the presence of a single phosphate group, they prevent movements in the flipper domain required for channel opening.' Reviewer 3 states the study reveals 'how PPADS/PPNDS binding impedes channel-activating conformational changes.' This mechanistic insight is treated as a central contribution by all reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e",
+      "content_id": "49838331-571d-42a2-b44e-6d9d85b68dd2",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Structure-based mutagenesis combined with electrophysiology identified key residues (Gln143, Ile214, Gln248 in pdP2X7; Lys140, Lys215, Lys249, Asp170, Ser286 in hP2X1; Lys201 in hP2X3) that determine subtype-specific sensitivity to PPNDS/PPADS.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly describes the mutational findings: 'mutations of Q143, I214 and Q248 into lysine (hP2X1) increased the P2X7 sensitivity to PPNDS, whereas in P2X1, mutations of these lysines to alanine reduced sensitivity to PPNDS, suggesting that these key residues contribute to the subunit specific sensitivity.' Reviewer 3 confirms 'the pinpointing of specific residues in P2X1 and P2X3 subtypes that determine their heightened sensitivity.' All reviewers affirm the conclusions are well supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "860eb346-ee96-43f2-8b5a-622202a66ffb",
+      "content_id": "49838331-571d-42a2-b44e-6d9d85b68dd2",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Patch-clamp recordings showed that 10 \u00b5M PPNDS and 100 \u00b5M PPADS blocked approximately 50% of ATP-dependent currents from pdP2X7, consistent with moderate sensitivity of P2X7 receptors to these antagonists.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 notes the authors 'performed structure based mutational analysis together with electrophysiological characterization' without raising concerns about the functional data. Reviewer 1 states 'The conclusions of the paper are well supported' and 'The revised manuscript is well written and presents its data with more clarity,' implicitly accepting the electrophysiological results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "9c214c02-a9ae-49d8-8d1a-9a94ab72d42d",
+      "content_id": "49838331-571d-42a2-b44e-6d9d85b68dd2",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Molecular dynamics simulations showed that the PPNDS-bound and PPADS-bound structures remained stable with PPNDS stably bound to the receptor during the simulations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 notes 'While the inclusion of MD simulation is appreciated, providing more insights from the simulation might further strengthen this already compelling story.' This indicates the MD simulations are accepted but could be expanded, not that they are questioned. The stability findings are not challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c045b8a1-47e0-4537-acc3-360b6336f361",
+      "content_id": "49838331-571d-42a2-b44e-6d9d85b68dd2",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The findings provide mechanistic insights into orthosteric inhibition and a framework for developing subtype-specific pyridoxal phosphate derivatives targeting P2X receptors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states the work 'provides information for designing drugs that selectively target different subtypes of P2X receptor channels.' Reviewer 2 notes 'This preprint provides a useful framework for developing subtype specific drugs for the family of P2X receptor channels.' Reviewer 3 confirms the insights 'could guide the development of improved drugs targeting P2X receptors.' All reviewers affirm the translational implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7079a234-45db-4b69-af97-e443b982546e",
+      "result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14"
+    },
+    {
+      "claim_id": "af9a66d1-7f7f-4552-99c5-4dcc0ccaa2f1",
+      "result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14"
+    },
+    {
+      "claim_id": "df643e76-c295-4c8e-911a-a1c12a9055d7",
+      "result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14"
+    },
+    {
+      "claim_id": "2693e0c7-7cf8-4e22-afe0-5bca9edc24e0",
+      "result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14"
+    },
+    {
+      "claim_id": "fd5cb7cc-5400-4105-8302-5f519586c4e1",
+      "result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14"
+    },
+    {
+      "claim_id": "c98b2070-08f9-451c-b399-a60f164f7f7c",
+      "result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14"
+    },
+    {
+      "claim_id": "6d66dfad-f183-4ee4-a900-4a231bf86a6e",
+      "result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14"
+    },
+    {
+      "claim_id": "66e0f12e-5839-443b-93cc-e5fc23a2a4b3",
+      "result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14"
+    },
+    {
+      "claim_id": "b92ec834-d3ad-4a9d-a41f-0e9e0fb7b55a",
+      "result_id": "a570ab4e-0099-4c3c-ac6a-e394abe72f64"
+    },
+    {
+      "claim_id": "4d906def-9721-46c3-afe4-e4c7716ed165",
+      "result_id": "a570ab4e-0099-4c3c-ac6a-e394abe72f64"
+    },
+    {
+      "claim_id": "5291d624-798d-415e-8cdd-b4bc51d40f1f",
+      "result_id": "de8cf522-1093-420b-913d-3abd789b5432"
+    },
+    {
+      "claim_id": "46353dd7-e1f3-45df-9bf6-f71ddf795963",
+      "result_id": "de8cf522-1093-420b-913d-3abd789b5432"
+    },
+    {
+      "claim_id": "801e7902-8488-4066-b143-6ac51f65cf7a",
+      "result_id": "de8cf522-1093-420b-913d-3abd789b5432"
+    },
+    {
+      "claim_id": "a1b03cf3-02fa-4a54-825a-5d53153d6038",
+      "result_id": "de8cf522-1093-420b-913d-3abd789b5432"
+    },
+    {
+      "claim_id": "e70555a9-4f3a-4fb5-8104-70bb437d2575",
+      "result_id": "de8cf522-1093-420b-913d-3abd789b5432"
+    },
+    {
+      "claim_id": "594aaf08-20e9-4c9c-94c3-5af26ad5e645",
+      "result_id": "de8cf522-1093-420b-913d-3abd789b5432"
+    },
+    {
+      "claim_id": "36751c7c-8c2e-4c2f-a727-7d8c788c5f83",
+      "result_id": "1360d67e-ca0a-4eda-94b2-cb8f0187eab3"
+    },
+    {
+      "claim_id": "96726d94-45e4-429c-8f78-5ab06d9a4ca5",
+      "result_id": "1360d67e-ca0a-4eda-94b2-cb8f0187eab3"
+    },
+    {
+      "claim_id": "d2cbfad5-99c2-448b-9305-a64339a4e771",
+      "result_id": "1360d67e-ca0a-4eda-94b2-cb8f0187eab3"
+    },
+    {
+      "claim_id": "8085c937-87a0-4ba9-a412-17c04e1e0407",
+      "result_id": "1360d67e-ca0a-4eda-94b2-cb8f0187eab3"
+    },
+    {
+      "claim_id": "c9ffdd9c-9b65-43dd-837b-ac3da5174c29",
+      "result_id": "1360d67e-ca0a-4eda-94b2-cb8f0187eab3"
+    },
+    {
+      "claim_id": "6416bb85-4ff2-4fff-be1a-f4bc06f11868",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "1ccaeca7-6c63-4d1a-a947-e44108aa170a",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "96e01e71-fafd-4d63-ab0a-047fbf05d768",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "21da9e68-e853-4fb8-96e1-e3b289774ba3",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "b13bbb1c-15b8-4738-b2b7-ea5f6a0b1773",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "a87499b1-ad05-491a-bb60-7c6e05bd7790",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "a912d399-2bc8-43ed-a6ce-e8957b9358b0",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "6a5b4735-0471-4fff-aaae-ae15d06df0e2",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "28139661-8bd1-40cc-b083-7b0740005a6c",
+      "result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c"
+    },
+    {
+      "claim_id": "7563310c-c00b-4975-a6a6-4c7a8ef45758",
+      "result_id": "207c432d-9049-43df-ad7b-21defa67f118"
+    },
+    {
+      "claim_id": "7b8ef994-9e00-4e9d-9b58-aa5844f5d160",
+      "result_id": "207c432d-9049-43df-ad7b-21defa67f118"
+    },
+    {
+      "claim_id": "95878a26-001a-49e7-8284-fadb5c9bcaa9",
+      "result_id": "f40208fa-3aab-43d4-be6e-8bbc2bac5ba8"
+    },
+    {
+      "claim_id": "ef9c79f6-8f69-4f80-baee-3022a10e510d",
+      "result_id": "f40208fa-3aab-43d4-be6e-8bbc2bac5ba8"
+    },
+    {
+      "claim_id": "50178a9d-b5fe-4be6-bf7a-9b6cf9e4f61d",
+      "result_id": "f40208fa-3aab-43d4-be6e-8bbc2bac5ba8"
+    },
+    {
+      "claim_id": "a98f9798-fae4-47d0-8ce0-9de624771a77",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "08f5982b-ccc2-43ac-8216-2e2a21d126be",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "28f70acd-db00-4e0b-acd0-3f88ea329c38",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "e791451b-bd5b-4826-86e3-57f0d8bbe4cf",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "92f43ca5-8cca-4a9c-b3ae-8c9121f76083",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "59378b3e-58ee-4f3a-a06f-73bf9e02052c",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "42b2d70b-ac34-4703-b61b-12bea30858c0",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "461af81f-bdb8-4425-b00f-f26b15f00e0b",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "dd84ad39-221a-4dfb-8d66-349614447d62",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "55e6e47b-59ec-47d7-ae88-1f056b0828aa",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "9c46aeae-d04b-4171-910e-260634c01385",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "c8d0680e-6f6c-480a-9f6a-0e3405cab06b",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "2b72b9b8-3992-43cc-91e4-e1875f7149ce",
+      "result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0"
+    },
+    {
+      "claim_id": "211e31e5-0108-42cf-927e-9f924809a3d5",
+      "result_id": "333f32c3-da2d-48c0-8753-5c58b27767ec"
+    },
+    {
+      "claim_id": "e3206209-5732-4a40-a6c3-e0646c6ba5af",
+      "result_id": "333f32c3-da2d-48c0-8753-5c58b27767ec"
+    },
+    {
+      "claim_id": "a09da6d8-1655-433a-bcde-ab5886b1d424",
+      "result_id": "333f32c3-da2d-48c0-8753-5c58b27767ec"
+    },
+    {
+      "claim_id": "6ada5e40-8c11-42c9-8bd2-4003d14859b3",
+      "result_id": "333f32c3-da2d-48c0-8753-5c58b27767ec"
+    },
+    {
+      "claim_id": "efd20bd6-7a8d-418f-9a0d-4034b083ef24",
+      "result_id": "333f32c3-da2d-48c0-8753-5c58b27767ec"
+    },
+    {
+      "claim_id": "172111c8-e98e-4f87-b972-6be0c9f0fd03",
+      "result_id": "333f32c3-da2d-48c0-8753-5c58b27767ec"
+    },
+    {
+      "claim_id": "a4e69843-7949-44d9-a9a8-b059c1aad527",
+      "result_id": "48ba5f19-a493-4af7-bdf0-adad7236827b"
+    },
+    {
+      "claim_id": "ebf08359-f84f-453b-ac1c-4db866304cea",
+      "result_id": "48ba5f19-a493-4af7-bdf0-adad7236827b"
+    },
+    {
+      "claim_id": "ee0729cb-ee2d-4bce-93c1-67c32395f411",
+      "result_id": "48ba5f19-a493-4af7-bdf0-adad7236827b"
+    },
+    {
+      "claim_id": "5bf2c0f8-c3c8-49bb-affd-93abebe96da2",
+      "result_id": "48ba5f19-a493-4af7-bdf0-adad7236827b"
+    },
+    {
+      "claim_id": "10e2a35d-8a9c-428b-9adf-33598de070ce",
+      "result_id": "48ba5f19-a493-4af7-bdf0-adad7236827b"
+    },
+    {
+      "claim_id": "7db0a893-b17c-4feb-9c29-b849e67d9695",
+      "result_id": "12d9b55e-fa9d-44e9-943b-7322ee4e7732"
+    },
+    {
+      "claim_id": "75d033f2-f6c6-4c1a-97fd-22f9a042d1e7",
+      "result_id": "10afca45-aa43-474c-93f4-becdf1431234"
+    },
+    {
+      "claim_id": "abbc997a-bb9c-4c9f-a7c0-9dc001691f87",
+      "result_id": "10afca45-aa43-474c-93f4-becdf1431234"
+    },
+    {
+      "claim_id": "b64fb749-053b-4fd5-b047-ea80f05c7a78",
+      "result_id": "6c59b44b-851f-46ce-9f9d-ede11fb0fe1a"
+    },
+    {
+      "claim_id": "1f39e19b-b182-4c85-9a34-c8716c4d319a",
+      "result_id": "6c59b44b-851f-46ce-9f9d-ede11fb0fe1a"
+    },
+    {
+      "claim_id": "a35ef9dd-7295-4f0f-96cc-7d20b3c4e73c",
+      "result_id": "6c59b44b-851f-46ce-9f9d-ede11fb0fe1a"
+    },
+    {
+      "claim_id": "a229013b-3529-41c1-9cec-ff0269d4dfc2",
+      "result_id": "2f46c119-a3af-4ce0-8fba-1665551feb88"
+    },
+    {
+      "claim_id": "4f16d864-80ea-4ea5-aed2-ed6f5fb1b5ed",
+      "result_id": "2f46c119-a3af-4ce0-8fba-1665551feb88"
+    },
+    {
+      "claim_id": "afe9f6eb-3496-42fb-8e91-a3c00e926a8a",
+      "result_id": "2f46c119-a3af-4ce0-8fba-1665551feb88"
+    },
+    {
+      "claim_id": "5f37fa7f-ca16-45c2-84c6-7bfcedd180bc",
+      "result_id": "2f46c119-a3af-4ce0-8fba-1665551feb88"
+    },
+    {
+      "claim_id": "c936e799-5055-4d4e-8251-f97a5792bd1a",
+      "result_id": "2f46c119-a3af-4ce0-8fba-1665551feb88"
+    },
+    {
+      "claim_id": "bf4f7afd-8fe4-4ab0-86ed-72e6b1c0e3a0",
+      "result_id": "2f46c119-a3af-4ce0-8fba-1665551feb88"
+    },
+    {
+      "claim_id": "b89415d0-64b1-4bf6-aabc-49a769a186e5",
+      "result_id": "fbfc1e8e-29b7-47f5-bcc1-9a6000be530b"
+    },
+    {
+      "claim_id": "4675384f-2f51-45c2-9d71-805718826930",
+      "result_id": "fbfc1e8e-29b7-47f5-bcc1-9a6000be530b"
+    },
+    {
+      "claim_id": "fef19107-8936-4681-81b5-030354996561",
+      "result_id": "fbfc1e8e-29b7-47f5-bcc1-9a6000be530b"
+    },
+    {
+      "claim_id": "d89dc968-2ac5-40d1-a5c3-75ff971d55df",
+      "result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4"
+    },
+    {
+      "claim_id": "2da15176-ba06-4f63-8a4c-c735c331dd24",
+      "result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4"
+    },
+    {
+      "claim_id": "d926822a-70b1-4ce7-aad6-f305f06f55e6",
+      "result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4"
+    },
+    {
+      "claim_id": "e813be57-3495-4417-80d5-cc6b9bd39126",
+      "result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4"
+    },
+    {
+      "claim_id": "272d8b40-fa8e-4691-a0cb-f6ad93549e72",
+      "result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4"
+    },
+    {
+      "claim_id": "963aebda-e7ec-406d-9bf6-ef4240721af9",
+      "result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4"
+    },
+    {
+      "claim_id": "5fe3fc30-8871-473a-be88-de492f67d5c6",
+      "result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4"
+    },
+    {
+      "claim_id": "22dc3cb8-b271-44b2-9dfb-7579c0ef2aae",
+      "result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4"
+    },
+    {
+      "claim_id": "0f01e081-1a9a-4089-b763-b39ae5aa7f6b",
+      "result_id": "8ca93946-db3f-46d5-b6a4-b1c7d33cdf8a"
+    },
+    {
+      "claim_id": "16ee56d0-f9f1-4e1b-a7f2-ad3110bb20c3",
+      "result_id": "8ca93946-db3f-46d5-b6a4-b1c7d33cdf8a"
+    },
+    {
+      "claim_id": "7b027ee0-a5f3-4a14-b6b8-dda67b9f4576",
+      "result_id": "8ca93946-db3f-46d5-b6a4-b1c7d33cdf8a"
+    },
+    {
+      "claim_id": "01f5b177-8ae5-4515-96af-fa8ca430f9f6",
+      "result_id": "8ca93946-db3f-46d5-b6a4-b1c7d33cdf8a"
+    },
+    {
+      "claim_id": "f89b7d96-dc56-40c9-b8d9-004131d128e9",
+      "result_id": "8ca93946-db3f-46d5-b6a4-b1c7d33cdf8a"
+    },
+    {
+      "claim_id": "88944891-0139-42c0-925a-7cd835d6cd4c",
+      "result_id": "0a4757d5-922f-4f5e-96d1-debd3ed39bf5"
+    },
+    {
+      "claim_id": "d4da6372-eac3-4658-bc27-ee24f82609df",
+      "result_id": "0a4757d5-922f-4f5e-96d1-debd3ed39bf5"
+    },
+    {
+      "claim_id": "f97c2a81-1b3c-4abe-9a91-d37bf8aac1de",
+      "result_id": "0a4757d5-922f-4f5e-96d1-debd3ed39bf5"
+    },
+    {
+      "claim_id": "a705025e-b0fd-4cea-9212-433fa0a98d3c",
+      "result_id": "3e07fe9e-4a4c-4f04-a266-94090b659870"
+    },
+    {
+      "claim_id": "6a90ab13-2366-46f2-b136-a17c5ecdd9d4",
+      "result_id": "3e07fe9e-4a4c-4f04-a266-94090b659870"
+    },
+    {
+      "claim_id": "3391c01c-43c0-4d29-a8e0-32ccb3c6c3bf",
+      "result_id": "c50824d7-2cf9-45dc-aa64-44b9af6e21d2"
+    },
+    {
+      "claim_id": "6e842c32-9073-4f96-943d-3e14d5f2e7f3",
+      "result_id": "aef24fb2-7991-47e3-8002-d82a4a1847d5"
+    },
+    {
+      "claim_id": "5e47bb94-bb86-40aa-8bd9-b998d4d5c661",
+      "result_id": "aef24fb2-7991-47e3-8002-d82a4a1847d5"
+    },
+    {
+      "claim_id": "80afadfc-a76f-41f0-9d05-10bc0d9e6a67",
+      "result_id": "aef24fb2-7991-47e3-8002-d82a4a1847d5"
+    },
+    {
+      "claim_id": "2b714374-fd73-4604-ba2b-432f2b1f23fc",
+      "result_id": "aef24fb2-7991-47e3-8002-d82a4a1847d5"
+    },
+    {
+      "claim_id": "e8b61503-9d38-49fd-b8ac-2240acbd8197",
+      "result_id": "aef24fb2-7991-47e3-8002-d82a4a1847d5"
+    },
+    {
+      "claim_id": "41c39e02-d5f5-408f-8e83-e676569e12ac",
+      "result_id": "aef24fb2-7991-47e3-8002-d82a4a1847d5"
+    },
+    {
+      "claim_id": "5291d624-798d-415e-8cdd-b4bc51d40f1f",
+      "result_id": "13fa19a6-3d79-4b28-980f-986933d2a10b"
+    },
+    {
+      "claim_id": "46353dd7-e1f3-45df-9bf6-f71ddf795963",
+      "result_id": "13fa19a6-3d79-4b28-980f-986933d2a10b"
+    },
+    {
+      "claim_id": "36751c7c-8c2e-4c2f-a727-7d8c788c5f83",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "e70555a9-4f3a-4fb5-8104-70bb437d2575",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "96726d94-45e4-429c-8f78-5ab06d9a4ca5",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "d2cbfad5-99c2-448b-9305-a64339a4e771",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "6416bb85-4ff2-4fff-be1a-f4bc06f11868",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "1ccaeca7-6c63-4d1a-a947-e44108aa170a",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "96e01e71-fafd-4d63-ab0a-047fbf05d768",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "21da9e68-e853-4fb8-96e1-e3b289774ba3",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "a87499b1-ad05-491a-bb60-7c6e05bd7790",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "a912d399-2bc8-43ed-a6ce-e8957b9358b0",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "6a5b4735-0471-4fff-aaae-ae15d06df0e2",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "28139661-8bd1-40cc-b083-7b0740005a6c",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "9c46aeae-d04b-4171-910e-260634c01385",
+      "result_id": "e589f563-a1da-4311-85c0-3161dab188f5"
+    },
+    {
+      "claim_id": "55e6e47b-59ec-47d7-ae88-1f056b0828aa",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "e791451b-bd5b-4826-86e3-57f0d8bbe4cf",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "92f43ca5-8cca-4a9c-b3ae-8c9121f76083",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "59378b3e-58ee-4f3a-a06f-73bf9e02052c",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "42b2d70b-ac34-4703-b61b-12bea30858c0",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "461af81f-bdb8-4425-b00f-f26b15f00e0b",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "dd84ad39-221a-4dfb-8d66-349614447d62",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "c8d0680e-6f6c-480a-9f6a-0e3405cab06b",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "1f39e19b-b182-4c85-9a34-c8716c4d319a",
+      "result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef"
+    },
+    {
+      "claim_id": "75d033f2-f6c6-4c1a-97fd-22f9a042d1e7",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "211e31e5-0108-42cf-927e-9f924809a3d5",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "e3206209-5732-4a40-a6c3-e0646c6ba5af",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "a09da6d8-1655-433a-bcde-ab5886b1d424",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "6ada5e40-8c11-42c9-8bd2-4003d14859b3",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "efd20bd6-7a8d-418f-9a0d-4034b083ef24",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "a4e69843-7949-44d9-a9a8-b059c1aad527",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "ebf08359-f84f-453b-ac1c-4db866304cea",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "ee0729cb-ee2d-4bce-93c1-67c32395f411",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "5bf2c0f8-c3c8-49bb-affd-93abebe96da2",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "10e2a35d-8a9c-428b-9adf-33598de070ce",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "7db0a893-b17c-4feb-9c29-b849e67d9695",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "5f37fa7f-ca16-45c2-84c6-7bfcedd180bc",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "abbc997a-bb9c-4c9f-a7c0-9dc001691f87",
+      "result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e"
+    },
+    {
+      "claim_id": "95878a26-001a-49e7-8284-fadb5c9bcaa9",
+      "result_id": "860eb346-ee96-43f2-8b5a-622202a66ffb"
+    },
+    {
+      "claim_id": "ef9c79f6-8f69-4f80-baee-3022a10e510d",
+      "result_id": "860eb346-ee96-43f2-8b5a-622202a66ffb"
+    },
+    {
+      "claim_id": "50178a9d-b5fe-4be6-bf7a-9b6cf9e4f61d",
+      "result_id": "860eb346-ee96-43f2-8b5a-622202a66ffb"
+    },
+    {
+      "claim_id": "7563310c-c00b-4975-a6a6-4c7a8ef45758",
+      "result_id": "9c214c02-a9ae-49d8-8d1a-9a94ab72d42d"
+    },
+    {
+      "claim_id": "7b8ef994-9e00-4e9d-9b58-aa5844f5d160",
+      "result_id": "9c214c02-a9ae-49d8-8d1a-9a94ab72d42d"
+    },
+    {
+      "claim_id": "88944891-0139-42c0-925a-7cd835d6cd4c",
+      "result_id": "c045b8a1-47e0-4537-acc3-360b6336f361"
+    },
+    {
+      "claim_id": "d4da6372-eac3-4658-bc27-ee24f82609df",
+      "result_id": "c045b8a1-47e0-4537-acc3-360b6336f361"
+    },
+    {
+      "claim_id": "f97c2a81-1b3c-4abe-9a91-d37bf8aac1de",
+      "result_id": "c045b8a1-47e0-4537-acc3-360b6336f361"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2dd02508-cfa1-4304-b2cf-ecde7c65ebac",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "207c432d-9049-43df-ad7b-21defa67f118",
+      "peer_result_id": "9c214c02-a9ae-49d8-8d1a-9a94ab72d42d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on MD simulation findings (C49-C50). Both evaluations support the stability of PPNDS/PPADS binding demonstrated by simulations. Peer review suggests expanding MD insights but does not question the findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "3b541d09-2cd4-4d77-bd01-56e926e08ef2",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f40208fa-3aab-43d4-be6e-8bbc2bac5ba8",
+      "peer_result_id": "860eb346-ee96-43f2-8b5a-622202a66ffb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on electrophysiological validation (C27-C29). Both evaluations support the patch-clamp data showing PPNDS/PPADS inhibition of pdP2X7. Peer review implicitly accepts these results without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "7d01ad6c-1899-420b-ba66-3232d5e9e5fb",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0a4757d5-922f-4f5e-96d1-debd3ed39bf5",
+      "peer_result_id": "c045b8a1-47e0-4537-acc3-360b6336f361",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on translational implications (C97-C99). Both evaluations support the conclusions about drug design applications. All peer reviewers explicitly affirm the potential for developing subtype-specific P2X receptor drugs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "343f9bfc-b710-4e84-8b20-a1723da9ab53",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "c4a992da-3e5e-48fe-abb3-0048c040807c",
+      "peer_result_id": "e589f563-a1da-4311-85c0-3161dab188f5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on detailed molecular interactions (C40-C48 overlap). Both evaluations support the binding site characterization. OpenEval notes appropriate uncertainty about water-mediated interactions due to resolution; peer review confirms orthosteric binding without questioning interaction details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "3c5c1a39-4cc4-4146-aa15-f0be6628fa9f",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4cdda17d-7a25-418c-8ec9-dc916a676de0",
+      "peer_result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on mechanistic insights (C54-C59, C7, C73, C77 overlap). Both evaluations support the conclusion that single phosphate group prevents flipper domain movements. Peer reviewers explicitly confirm this as a central contribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "16898d95-3b37-4ede-a9e7-ccfb808a2cb5",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "333f32c3-da2d-48c0-8753-5c58b27767ec",
+      "peer_result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Substantial agreement on P2X7 mutagenesis findings (C60-C64 overlap). Both evaluations support the functional validation showing Q143K, I214K, Q248K mutations increase PPNDS sensitivity. Part of broader peer review assessment of subtype-specific residues.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "3b2baf19-fbdb-4ced-9745-9081fdfe03be",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "48ba5f19-a493-4af7-bdf0-adad7236827b",
+      "peer_result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Substantial agreement on P2X1 mutagenesis findings (C66-C70 overlap). Both evaluations support the reciprocal mutations in P2X1 reducing PPNDS sensitivity. Peer review explicitly describes these findings as demonstrating subtype-specific sensitivity determinants.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "cb82e16b-13d5-4c57-8f51-d8ef6b4c6dad",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "12d9b55e-fa9d-44e9-943b-7322ee4e7732",
+      "peer_result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on P2X3 lysine validation (C71). Both evaluations support this finding. OpenEval treats it separately while peer review groups it with broader mutagenesis conclusions about subtype specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "b602fc31-5c54-442a-b1e2-b798d377d63e",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "10afca45-aa43-474c-93f4-becdf1431234",
+      "peer_result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on summary of mutagenesis findings (C8, C96). Both evaluations support identification of subtype-specific residues. OpenEval provides separate assessment while peer review integrates this with detailed mutagenesis data (C60-C71, C85).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "cbf19336-4397-4d12-b7ed-d6b4db1380fd",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "de8cf522-1093-420b-913d-3abd789b5432",
+      "peer_result_id": "13fa19a6-3d79-4b28-980f-986933d2a10b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on primary structural findings (C5, C30-C33, C35 vs C5, C30). Both evaluations support the cryo-EM structures and resolution quality. Peer review emphasizes overall structural work value; OpenEval provides detailed validation metrics assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c362cca7-14c5-49a4-95e4-f8e943de6b60",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1360d67e-ca0a-4eda-94b2-cb8f0187eab3",
+      "peer_result_id": "e589f563-a1da-4311-85c0-3161dab188f5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on orthosteric binding site identification (C6, C36-C39 vs C6, C33, C36-C37, C40-C43, C45-C48, C72). Both evaluations support competitive inhibition at ATP binding site. Peer review groups binding site and detailed interactions together; OpenEval separates these aspects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "d9063a10-7873-460a-8a7f-9d0beaf356ff",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "6c59b44b-851f-46ce-9f9d-ede11fb0fe1a",
+      "peer_result_id": "e6dac91e-6ef4-473e-938b-c06d870694ef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on mechanistic comparison (C76-C78 vs C77 in broader context). OpenEval specifically addresses TNP-ATP comparison showing mechanistic diversity. Peer review focuses on overall mechanism without detailed discussion of TNP-ATP differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "024ee169-ec2d-4993-8674-a2ebf9e000f9",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "2f46c119-a3af-4ce0-8fba-1665551feb88",
+      "peer_result_id": "b1ebc5a0-c150-4727-b235-13ce4ffaca6e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on integration with prior literature (C82-C87 vs C85 in mutagenesis context). OpenEval discusses consistency with prior Asp170 mutations. Peer review mentions these residues within broader mutagenesis findings without separate literature integration assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "98b9198a-c366-481c-b4fe-d45a9bb7ae62",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "23a6a381-bd49-41bd-8eb5-71451d36ad14",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background knowledge about P2X receptors (C1-C3, C10-C14) as well-established and properly cited. No corresponding peer review evaluation found; peer reviewers focus on novel findings rather than background context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "f386165a-4ad0-4406-b206-5af107a14b05",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "a570ab4e-0099-4c3c-ac6a-e394abe72f64",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates knowledge gap motivation (C4, C24) as appropriately supported by literature. No corresponding peer review evaluation found; peer reviewers do not separately assess study rationale.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "10d20603-bb5d-4d35-9272-65bcc5610283",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "fbfc1e8e-29b7-47f5-bcc1-9a6000be530b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates comparison with computational docking model (C88-C90), noting value of experimental structures over predictions. No corresponding peer review evaluation found; peer reviewers do not discuss prior computational models.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "53ae3ee3-281b-4775-8fb6-02b1cbc05f77",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "d3a02eec-0d6f-41af-8115-21dde13ef3d4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates established knowledge about P2X inhibitors (C16-C23) as properly cited context for drug development. No corresponding peer review evaluation found; peer reviewers focus on novel contributions rather than background literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "c6941289-d4bc-4b0c-9121-40a7b8a8e219",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "8ca93946-db3f-46d5-b6a4-b1c7d33cdf8a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates discussion of subtype specificity challenges (C91-C95) as well-supported by literature and sequence data. No corresponding peer review evaluation found; peer reviewers address this implicitly through support of novel findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "d9937c15-e45e-44fe-be3d-bfbb78bf7b10",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "3e07fe9e-4a4c-4f04-a266-94090b659870",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates justification for pdP2X7 model system choice (C25-C26) as appropriate. No corresponding peer review evaluation found; peer reviewers do not separately assess methodological justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "4958e68d-2064-4376-bac1-03156498e5b4",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "c50824d7-2cf9-45dc-aa64-44b9af6e21d2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates observation about chemical structures (C34) as straightforward and evident from figures. No corresponding peer review evaluation found; peer reviewers do not separately assess basic structural chemistry observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    },
+    {
+      "id": "eb5e8488-9ad9-4693-9bee-fae55a5476f7",
+      "submission_id": "ff5aa92f-07ab-4f81-b59f-8358d8c64921",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "aef24fb2-7991-47e3-8002-d82a4a1847d5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates various established knowledge and prior findings (C9, C15, C75, C79-C81) as appropriately cited context. No corresponding peer review evaluation found; peer reviewers focus on novel experimental contributions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T21:33:22.401666Z"
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C25",
+      "C29",
+      "C30",
+      "C40",
+      "C48",
+      "C49",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Microglial depletion by PLX5622 causes delayed anesthesia induction (longer LORR time) and early anesthesia emergence (shorter RORR time) across multiple anesthetics (pentobarbital, propofol, chloral hydrate, ketamine), as confirmed by behavioral tests and EEG/EMG recordings. This effect is reversible upon microglial repopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C25, C29-C30, C40, C48-C49, C51, C54-C58 collectively demonstrate that microglial depletion consistently delays anesthesia induction and accelerates emergence across multiple anesthetics and measurement modalities (behavioral, EEG, EMG). The reversibility upon repopulation (C48-C49) strengthens causality. Data are shown in Figures 1, 4-6 with appropriate statistical tests and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The dampened anesthesia response after microglial depletion is not dependent on specific anesthetics or receptors, as it occurs with GABAA receptor agonists (pentobarbital, propofol, chloral hydrate) and an NMDA receptor antagonist (ketamine).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 demonstrate the effect across multiple anesthetics with different receptor targets, supported by data in Figure 1B. Claims C36-C39 correctly identify the receptor targets of these anesthetics based on established literature. This breadth of effect strengthens the conclusion that microglia play a general role in anesthesia response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "PLX5622-induced anesthesia resistance is not due to tolerance from repetitive anesthetic administration, as LORR and RORR remained unchanged across five sequential doses at 7-day intervals for most anesthetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 address a potential confound by showing that repetitive anesthetic administration does not induce tolerance (Figure 2B). The exception for chloral hydrate after D14 actually shows an opposite trend (increased susceptibility), ruling out tolerance as an explanation for PLX5622 effects. This control strengthens the main finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Microglial depletion, rather than peripheral macrophage depletion, causes resistance to general anesthesia. PLX73086 (BBB-impermeable CSF1R inhibitor) depletes peripheral macrophages but not brain microglia and does not reproduce the anesthesia resistance phenotype seen with PLX5622.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 use PLX73086 as a critical control to distinguish brain microglia from peripheral macrophage effects (Figure 3). The selective depletion of peripheral macrophages without affecting brain microglia (C45) and the lack of anesthesia resistance phenotype (C46, except for one measure) strongly support that brain microglia, not peripheral macrophages, mediate the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "Microglial depletion does not affect baseline EEG or EMG in the conscious/awake state before anesthetic administration, indicating that the effects are specific to the anesthesia process rather than general alterations in brain activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52-C53 demonstrate that microglial depletion does not alter baseline brain or muscle activity (Figures 4-6), ruling out general neurological dysfunction as an explanation. This specificity strengthens the interpretation that microglia specifically modulate anesthesia responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Microglial depletion differentially regulates neuronal activity in a brain region-specific manner: it suppresses activity in anesthesia-activated brain regions (AABRs: LHb, SON) and enhances activity in emergence-activated brain regions (EABRs: PVT, LC), as measured by c-Fos expression. This differential regulation explains delayed induction and early emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 demonstrate region-specific effects using c-Fos as a marker of neuronal activity (Figure 7). The opposite effects in AABRs versus EABRs provide a mechanistic explanation for the behavioral phenotype. Control experiments (C66) rule out handling artifacts. The logic connecting suppressed AABR activity to delayed induction and enhanced EABR activity to early emergence is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Dual labeling of c-Fos protein (consciousness-activated) and Fos mRNA (anesthesia-activated) reveals that microglial depletion affects neuronal activity at both consciousness and anesthesia stages in AABRs (LHb, SON), but primarily at the consciousness stage in some EABRs (PVT), with differential effects on neuron subpopulations in LC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C81 use temporal resolution of c-Fos protein versus Fos mRNA to distinguish effects during consciousness versus anesthesia stages (Figure 9). The differential effects across brain regions and neuron subpopulations add mechanistic depth. However, the interpretation relies on the assumption that c-Fos protein reflects consciousness-stage activity and Fos mRNA reflects anesthesia-stage activity, which is reasonable given the known kinetics (C71-C72) but adds some complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Microglia regulate neuronal activity through a sophisticated brain region-specific manner rather than via indiscriminate negative feedback control as observed in the striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 synthesizes the c-Fos and electrophysiology findings to conclude that microglial regulation is region-specific. This is supported by the opposite effects in AABRs versus EABRs (C61-C70) and contrasts with prior work showing uniform suppression in striatum (C59). The conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In the SON (AABR), microglial depletion decreases excitatory synaptic transmission (reduced eEPSC amplitude, increased PPR) without affecting inhibitory transmission, resulting in a decreased E/I ratio and a more inhibitory neuronal state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 use patch-clamp electrophysiology to demonstrate reduced excitatory drive in SON after microglial depletion (Figure 10B-F). The decreased E/I ratio (C86) and increased eEPSC PPR (C87) suggest reduced presynaptic glutamate release. The data are consistent with the c-Fos findings showing reduced SON activity (C61). Sample sizes and statistics appear appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In the LC (EABR), microglial depletion increases excitatory synaptic transmission (increased eEPSC amplitude) without affecting inhibitory transmission or presynaptic release probability, resulting in an increased E/I ratio and a more excitatory neuronal state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 demonstrate increased excitatory drive in LC after microglial depletion (Figure 10G-K), opposite to the effect in SON. The increased E/I ratio (C92) without changes in PPR (C93) suggests postsynaptic mechanisms. This is consistent with c-Fos data showing increased LC activity (C64). The opposite effects in SON versus LC support region-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Microglial depletion decreases AABR network activity and enhances EABR network activity, providing a mechanistic explanation for delayed anesthesia induction and early emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 synthesizes the c-Fos and electrophysiology findings into a coherent mechanistic model. The conclusion is well-supported by the convergent evidence from multiple approaches (c-Fos, patch-clamp) showing opposite effects in AABRs versus EABRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Microglia-mediated anesthesia modulation does not result from dendritic spine pruning. Short-term microglial depletion (14 days) does not alter spine density in mPFC, and C1q knockout mice (with impaired spine pruning) show normal anesthesia responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C105 rule out spine pruning as the mechanism using two complementary approaches: (1) spine density analysis showing no change at 14 days despite altered anesthesia (C97, C101), and (2) C1q knockout mice showing normal anesthesia despite altered spine pruning (C104). While spine morphology changes were observed (C98-C100), these do not correlate with anesthesia phenotype. This effectively rules out a major alternative mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Microglial P2Y12 receptor regulates anesthesia response in a dose-dependent manner. Pharmacological inhibition (2-MeSAMP) and genetic knockout of P2Y12 in microglia both cause delayed LORR and early RORR, with partial knockout showing intermediate effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 demonstrate P2Y12 involvement using pharmacological (C107-C108) and genetic approaches (C109-C110, C112) with convergent results (Figure 12). The dose-dependence shown by comparing high-efficiency (Cx3cr1-CreER) versus low-efficiency (Tmem119-CreER) knockout (C111-C113) strengthens the causal link. The multiple complementary approaches provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Mice receiving microglia replacement by bone marrow transplantation (Mr BMT), which results in P2Y12-negative microglia-like cells, exhibit delayed LORR and early RORR, further confirming the role of microglial P2Y12 in anesthesia regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 use Mr BMT as an independent approach to test P2Y12 function (Figure 13). The P2Y12-negative phenotype of replaced cells (C115) and the anesthesia resistance phenotype (C116) provide orthogonal support for P2Y12's role. This leverages the authors' prior work on microglia replacement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Intracellular Ca2+ in microglia facilitates the anesthesia process through P2Y12 signaling. Chemogenetic elevation of microglial Ca2+ (hM3Dq) accelerates induction and delays emergence, while genetic disruption of Ca2+ signaling (STIM1 knockout) causes delayed induction and early emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 establish the P2Y12\u2192Ca2+ signaling pathway using bidirectional manipulation (Figure 14). Increasing Ca2+ (C119) and decreasing Ca2+ (C123) produce opposite effects on anesthesia, demonstrating causality. The link to P2Y12 is supported by established literature (C117) and the convergent results from P2Y12 manipulation experiments. The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "This study demonstrates that microglia regulate general anesthesia responses through P2Y12-Ca2+ signaling, which modulates neuronal activity in a brain region-specific manner to facilitate and stabilize anesthesia, extending knowledge of how non-neuronal cells contribute to brain network states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 summarize the study's main conclusions. These are well-supported by the convergent evidence from multiple experimental approaches (depletion, pharmacology, genetics, electrophysiology, imaging) demonstrating microglial involvement, the P2Y12-Ca2+ mechanism, and region-specific neuronal effects. The significance claims (C128-C129) are appropriate given the novelty of demonstrating non-neuronal cell involvement in anesthesia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Loss of righting reflex (LORR) and recovery of righting reflex (RORR) were used as behavioral measures to evaluate anesthesia induction and emergence, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe the primary behavioral assay used throughout the study. LORR and RORR are well-established measures of anesthesia depth in rodents. The methodology is appropriate and clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C59",
+      "C60",
+      "C71",
+      "C72",
+      "C96",
+      "C102",
+      "C103",
+      "C106",
+      "C111",
+      "C117",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "The manuscript provides extensive background on general anesthesia, microglia biology, microglial depletion methods, anesthetic mechanisms, and relevant signaling pathways, establishing the context and rationale for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5, C14-C24, C26, C36-C39, C43-C44, C59-C60, C71-C72, C96, C102-C103, C106, C111, C117-C118, C120-C121) represent established knowledge from prior literature, correctly cited and accurately described. They provide appropriate context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

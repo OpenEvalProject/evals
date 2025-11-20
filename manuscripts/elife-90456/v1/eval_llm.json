@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SAC morphology imposes substantial signal attenuation between dendrites (>20-fold across soma, >5-fold between sister dendrites), but during global stimulation, the larger number of inputs on other dendrites compensates for individual synapse attenuation, resulting in comparable depolarization from focal versus global activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 provide converging computational evidence from NEURON simulations showing both strong dendritic compartmentalization and significant inter-dendritic interactions during whole-cell stimulation. The quantitative measurements of signal attenuation (C41-C44) and voltage responses (C45-C46) support the conclusion that morphology creates isolation but does not prevent functional crosstalk (C47-C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "An evolutionary algorithm trained on synthetic bipolar cell inputs achieved mean DSI of 37\u00b13% across velocities when proximal and distal BCs had different kinetics. Models trained solely on DSI evolved threshold-based strategies that minimized calcium levels, which is inconsistent with physiological observations showing consistent calcium peaks across velocities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 describe a well-controlled computational experiment with clear training objectives and validation against physiological data. The finding that threshold-based strategies (C55) contradict experimental observations (C56) while performing only marginally better (C57) provides strong evidence for the importance of training objectives in model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Systematic analysis of individual RF parameters revealed that temporal differences (response delay: DSI=29\u00b12%; decay times: DSI=35\u00b13%) and spatial differences (RF center width: DSI=19\u00b14%) in BC kinetics can independently contribute to directional tuning, with temporal parameters having stronger effects than spatial parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 present a systematic dissection of RF parameters using constrained models where only single parameters vary. The quantitative DSI measurements for each parameter and statistical comparisons (C62: p<10^-11) provide strong evidence for the relative contributions of temporal versus spatial RF properties to directional selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C98"
+    ],
+    "result": "The space-time wiring model's effectiveness relies primarily on presynaptic BC kinetics rather than postsynaptic compartmentalization, as models with varying degrees of dendritic isolation achieved comparable DS levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C98 demonstrate through systematic manipulation of axial and membrane resistance that compartmentalization has minimal effect on space-time wiring DS (Figure 4). This finding is internally consistent and distinguishes presynaptic from postsynaptic mechanisms, though it contrasts with prior emphasis on dendritic isolation for other DS mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Two-photon glutamate imaging in ChAT-Cre mice expressing iGluSnFR identified 7 functional clusters in ON-SACs and 6 in OFF-SACs based on hierarchical clustering of motion responses, with clusters sorted by response transiency and showing systematic variation with IPL stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe a systematic experimental approach with appropriate methods (viral expression, two-photon imaging, hierarchical clustering). The identification of functional clusters is supported by within-cluster variance analysis (Figure 6\u2014figure supplement 1) and is consistent with known BC stratification patterns (C71). Sample sizes (n=334 ON ROIs, n=135 OFF ROIs) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Response delays to moving versus flashed stimuli show an unexpected reversed relationship (r=-0.98): clusters with longest flash lags respond quickest to motion. This difference is explained by RF spatial extent, which strongly correlates with motion response timing (r=-0.99) but does not affect flash response lag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 present a surprising finding with strong quantitative support (correlation coefficients near -1.0). The explanation linking RF size to motion anticipation (C73-C74) is mechanistically plausible and supported by experimental RF mapping (Figure 7B). This challenges assumptions of the space-time wiring model about stimulus-independent kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C101"
+    ],
+    "result": "A novel RF mapping approach using evolutionary algorithms trained on motion responses successfully predicted flash responses (not in training set) and converged on narrow RFs (50-100 \u00b5m) for most clusters, with notably wider RFs for ON-C1 (379\u00b113 \u00b5m) and ON-C4 (198\u00b16.7 \u00b5m) matching experimental measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 and C101 describe a methodological advance with strong validation. The ability to predict untrained stimuli (C78) and match experimental RF measurements (C82) provides confidence in the approach. The convergence on biologically plausible RF sizes (C81) with citations to prior work strengthens the validation. This represents both a methodological contribution and experimental finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Optimal DS with experimentally recorded glutamate waveforms was achieved with ON-C6/ON-C2 (DSI=17\u00b12%) for ON-SACs and OFF-C1/OFF-C5 (DSI=21\u00b13%) for OFF-SACs, representing ~3-fold improvement over identical BC inputs (DSI=5-7%). DS did not correlate significantly with dendritic isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 present systematic testing of all proximal-distal cluster combinations with clear quantitative results. The finding that optimal combinations achieve modest DS (~17-21%) while identical inputs produce minimal DS (5-7%) supports space-time wiring contribution. The lack of correlation with isolation (C86) is consistent with earlier findings (C63-C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "When allowing multiple clusters to innervate SACs in concentric annuli, simulations converged on solutions where two clusters dominated proximal and distal regions, achieving DS levels (ON: 17\u00b15%, OFF: 21\u00b16%) similar to simple two-cluster models and representing ~3-fold enhancement over intrinsic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 demonstrate that increased model complexity does not improve DS beyond simple proximal-distal organization. The convergence on two-cluster solutions (C87) despite random initialization and the consistency with simpler models (C88) provide strong evidence. The comparison to intrinsic mechanisms (C89) with citations establishes biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Experimentally recorded BC kinetics are substantially slower than optimal synthetic inputs: distal clusters (ON-C2, OFF-C1) are ~2-fold slower than optimal, while proximal clusters (ON-C6, OFF-C5) have durations of 1.25-1.28s versus 0.31s optimal and transiency indexes of ~0.4 versus 0.87 optimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 provide detailed quantitative comparisons between experimental and optimal parameters with specific measurements. The systematic differences across multiple parameters (rise time, duration, transiency) and both proximal and distal populations provide strong evidence that biological BC kinetics are suboptimal for space-time wiring, though still capable of mediating substantial DS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "BC response kinetics crucial to space-time wiring are stimulus-dependent rather than fixed cell properties. Prior work and new data show low correlation between motion and static responses, with presynaptic signals exhibiting prolonged flash-lags yet early motion responses due to RF spatial structure. Stimuli activating small dendritic portions introduce nonlinear BC processing and directional bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 identify a fundamental challenge to space-time wiring assumptions. The replication of low correlation on new data (C95) strengthens prior findings (C94). The mechanistic explanation via RF structure (C96) is supported by experimental data (Figure 7). The concern about stimulus-induced nonlinearities (C97) is well-founded with citations, though represents a limitation for interpreting prior studies rather than new experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Experimentally recorded glutamate waveforms produce DS levels 30-50% higher than a recent space-time wiring study (Srivastava et al., 2022), likely because motion responses provide a more suitable foundation for directional tuning than flash responses, though both remain suboptimal compared to synthetic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 provide important context by comparing results to recent literature. The explanation for differences (motion vs. flash stimuli, C121) is consistent with the manuscript's findings about stimulus-dependent kinetics (C94-C96). However, the comparison relies on inference about methodological differences rather than direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Additional mechanisms beyond space-time wiring are necessary to account for observed DS capabilities. SACs possess intricate morphologies, express multiple voltage-gated channels, and are components of incompletely understood circuits that allow functionally distinct signaling to postsynaptic targets. DS relies on multifaceted interplay of various factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 represent a well-supported conclusion based on the gap between experimental DS (~17-21%) and physiological observations. The acknowledgment of SAC complexity (C126-C127) with appropriate citations and the statement about multifaceted mechanisms (C128) appropriately frame the limitations of space-time wiring as a complete explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Evolutionary algorithms are broadly applicable to examining SAC directional computations and have been successfully used before. The largest model (23 free parameters) consistently evolved toward similar solutions regardless of starting parameters, demonstrating robustness despite potential for local minima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 validate the computational approach with citation to prior use (C99) and demonstration of convergence (C100). The consistency across random initializations provides confidence in the method, though more extensive validation (e.g., multiple random seeds, convergence metrics) would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The study did not detect directionally tuned release from individual BC axonal terminals previously demonstrated in type 2 and 7 BCs. This is attributed to sparsity of DS boutons being overshadowed by non-DS units. Whether DS boutons align with the soma-dendritic axis to enhance outward DS remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C104 acknowledge limitations and provide speculation about reasons for not detecting DS release sites. The explanation (C103) is plausible but remains speculative without supporting data. The uncertainty about bouton alignment (C104) appropriately identifies a gap in knowledge, but these represent limitations rather than positive findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Some presynaptic cells exhibit unusually broad RFs spanning hundreds of microns, resembling recent findings in type 5A BCs and challenging classical bipolar RF understanding. This may result from gap-junction coupling among BCs as part of adaptive changes, potentially explaining why functional clusters exceed known BC subtypes (7 ON clusters vs. 4 ON BC types; 6 OFF clusters vs. 5 OFF BC types).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C109 present intriguing findings about wide RFs (C105, C82) with comparison to recent literature (C106). However, the mechanistic explanations (gap-junction coupling, C107; amacrine cell contributions, C110-C113) remain speculative. The mismatch between cluster number and known BC types (C108) is noted but alternative explanations (adaptation state, C109; amacrine cells) are not definitively tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Glutamate release from amacrine cells may contribute to observed functional clusters. While glutamatergic amacrine cells typically don't synapse directly on SACs, they release glutamate near ON-SAC dendrites and exhibit small centers with pronounced surrounds, potentially corresponding to narrow-RF clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C113 propose an alternative explanation for functional cluster diversity with appropriate citations. However, this remains speculative without experimental disambiguation of BC versus amacrine cell contributions (e.g., through selective manipulations or anatomical verification). The proposal is plausible but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Mouse SACs exhibit spatial preference for different BC types, though this separation is not absolute, especially in ON-SACs. Space-time wiring effectiveness diminishes without clear proximal-distal boundaries. The model intentionally did not match biological synaptic distributions, establishing an upper limit on space-time wiring contribution to SAC DS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 appropriately contextualize modeling choices and their implications. The acknowledgment that spatial separation is incomplete (C115) and that this affects model performance (C116) is supported by simulation results (Figure 10). The explicit statement about establishing upper limits (C118) appropriately frames the interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Wu et al., 2023 proposed that spatial arrangement of midget and DB4/5 BCs in primate retina might contribute to DS through space-time wiring. If primate BCs exhibit faster dynamics than mouse BCs, space-time wiring's influence on primate SAC function may be more pronounced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C124 extend findings to primates with appropriate citation (C123) but rely on speculation about cross-species differences in BC dynamics (C124). Without data on primate BC motion responses, this remains an interesting hypothesis rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background on SAC biology and direction selectivity mechanisms: SACs are essential for DS in mammalian retina, receive diverse BC inputs with spatial organization, exhibit branch-specific directional responses, and provide directional output to DSGCs. Multiple mechanisms contribute to DS including network interactions, cell-autonomous processes, and the space-time wiring hypothesis based on regional differences in BC kinetics. Prior experimental evidence for space-time wiring has been mixed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C40 provide comprehensive background supported by extensive citations to established literature. These claims establish the scientific context and identify key questions (e.g., C32, C36-C38) that motivate the current study. While primarily literature review, they appropriately frame the research problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Detailed methods for NEURON simulations (4 reconstructed SAC morphologies, 495-879 segments, 200 BC inputs, specific passive parameters), evolutionary algorithm training (16 models per generation, 100 generations, 5 velocities), and experimental procedures (ChAT-Cre mice, AAV-iGluSnFR, two-photon imaging at ~50 Hz, specific visual stimuli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C156 provide comprehensive methodological details with specific parameters, software versions, and experimental conditions. The level of detail supports reproducibility, though some aspects (e.g., random seed specification, code availability) are not explicitly mentioned. Methods appear appropriate for the research questions.",
+    "result_type": "MINOR"
+  }
+]

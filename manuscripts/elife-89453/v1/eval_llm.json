@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "DKK3 expression and protein levels are elevated in AD brains, with increases detectable from early disease stages. RNAseq analysis shows DKK3 upregulation correlates with Braak scores but not CERAD scores. Protein analysis reveals stage-dependent redistribution from soluble (elevated in Braak I-III) to insoluble fractions (elevated in Braak IV-VI), with increases also observed in asymptomatic AD cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C25-C34 collectively demonstrate DKK3 elevation in AD through multiple independent datasets (RNAseq from ROSMAP/MSBB/MayoRNAseq, Western blots from human hippocampus, and proteomic data). The statistical analyses are appropriate (logistic and ordinal regression with reported \u03b2-coefficients and p-values), sample sizes are adequate (n=248 controls, 379 AD cases for RNAseq; n=15-16 per group for Western blots), and findings are internally consistent across methodologies. The stage-dependent redistribution from soluble to insoluble fractions provides mechanistic insight consistent with plaque accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In AD mouse models (J20 and NLGF), extracellular DKK3 levels are significantly increased before substantial plaque deposition (2.54-fold in J20 at 3-4 months, 2.43-fold in NLGF at 2-3 months). DKK3 accumulates specifically at dystrophic neuronal processes around amyloid plaques (70% of dense-core plaques), colocalizing with neurofilament-H and LAMP1 but not with astrocytes, microglia, or other secreted proteins like Wnt7a/b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C40-C51 are well-supported by Western blot quantification showing significant increases in extracellular DKK3 with appropriate controls (total homogenate levels unchanged), and confocal microscopy with colocalization analysis using Pearson's correlation coefficients. The specificity is demonstrated through negative controls (Wnt7a/b, astrocytes, microglia) and the temporal progression is documented across two independent AD mouse models. The ratio of extracellular/total DKK3 provides additional evidence for enhanced secretion rather than just increased expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60"
+    ],
+    "result": "NMDAR activation regulates DKK3 secretion in AD models. APV (NMDAR antagonist) completely prevents increased extracellular DKK3 in J20 and NLGF brain slices. A\u03b2 oligomers increase both total and extracellular DKK3 levels (~2.5-fold) in hippocampal neurons. Chemical LTD, but not LTP, increases extracellular DKK3, and this increase is blocked by brefeldin A, indicating enhanced vesicular trafficking/secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58, C60 demonstrate a mechanistic link between NMDAR activation and DKK3 secretion through multiple complementary approaches: pharmacological blockade (APV), A\u03b2 oligomer treatment, chemical LTD/LTP induction, and vesicular trafficking inhibition (BFA). The data are internally consistent and use appropriate controls. However, one statistical result (APV effect on A\u03b2-induced DKK3, p=0.0726 by Kruskal-Wallis) is borderline and required a different test (t-test, p=0.0384) to reach significance, which slightly weakens but does not invalidate the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "DKK3 gain-of-function differentially affects hippocampal synapses: it reduces excitatory synapses (60.85% decrease in total synapses, 48.54% decrease in mEPSC frequency) while increasing inhibitory synapses (65.99% increase in total synapses, 65.56% increase in mIPSC frequency). Effects are observed in both CA3 and CA1 regions without affecting synapse amplitude or causing neuronal death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 are strongly supported by convergent evidence from confocal microscopy (pre/postsynaptic marker colocalization) and electrophysiology (mEPSC/mIPSC recordings). The bidirectional effects on excitatory vs. inhibitory synapses are internally consistent across multiple markers and functional measurements. Controls for cell death (TUNEL assay, NeuN counts) appropriately rule out toxicity as a confound. Sample sizes appear adequate (n=4-5 animals for microscopy, n=10-13 cells for electrophysiology), though exact statistical tests and p-values are not fully detailed in all claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C84"
+    ],
+    "result": "DKK3 reduces excitatory synapses through inhibition of the Wnt/GSK3\u03b2 pathway. DKK3 decreases extrasynaptic \u03b2-catenin puncta, and GSK3 inhibitors (BIO and CHIR99021) completely block DKK3-induced excitatory synapse loss without affecting baseline synapse numbers at the concentrations and timepoints used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77, C84 demonstrate pathway specificity through pharmacological rescue experiments with two independent GSK3 inhibitors. The use of extrasynaptic \u03b2-catenin as a readout appropriately controls for synapse loss as a confound. BIO's ability to increase \u03b2-catenin under control conditions validates pathway activation. The complete rescue of DKK3 effects by GSK3 inhibition provides strong mechanistic evidence, though the inference that DKK3 acts \"through\" this pathway (C77, C84) assumes no parallel pathways contribute, which is not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "DKK3 increases inhibitory synapses through activation of the Wnt/JNK pathway, independent of Wnt/GSK3\u03b2 signaling. DKK3 increases phospho-JNK levels, and JNK inhibitor CC-930 blocks DKK3-induced increases in gephyrin puncta and inhibitory synapse density without affecting excitatory synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83, C85 establish pathway specificity through bidirectional pharmacological experiments: GSK3 inhibition doesn't affect DKK3's impact on inhibitory synapses (C78), while JNK inhibition blocks inhibitory but not excitatory synapse changes (C82-C83). Western blot evidence for JNK activation (C79-C80) provides mechanistic support. The pathway segregation is compelling, though the inference of \"activation\" (C81, C85) is based on phosphorylation status and pharmacological blockade rather than direct measurement of pathway activity downstream of JNK.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In healthy adult WT mice, DKK3 knockdown reduces inhibitory synapses (37.30% decrease in synapse number, 71.76% decrease in mIPSC frequency, 35.02% decrease in mIPSC amplitude) without affecting excitatory synapse number or mEPSC frequency, though mEPSC amplitude is reduced by 28.18%. This suggests endogenous DKK3 is required for inhibitory but not excitatory synapse maintenance in the healthy brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 demonstrate differential requirements for endogenous DKK3 in maintaining synapse populations through in vivo knockdown (~85% reduction). The asymmetric effects (inhibitory affected, excitatory structure unaffected) are internally consistent across structural and functional measures. However, the reduction in mEPSC amplitude (C88) without structural changes suggests some functional role at excitatory synapses, which slightly complicates the interpretation in C92. The conclusion that other molecules may compensate for DKK3 loss at excitatory synapses is reasonable speculation but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In vivo DKK3 knockdown ameliorates synaptic defects in J20 AD mice at both early (4 months, pre-plaque) and late (9 months, post-plaque) stages. At 4 months, knockdown restores excitatory synapse numbers (from 40-45% loss to WT levels) and reduces elevated inhibitory synapses. At 9 months, knockdown increases excitatory synapses and decreases inhibitory synapses around plaques without affecting plaque number or size. These effects are independent of DKK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C104 demonstrate therapeutic potential through rescue experiments at two disease stages with appropriate controls (scrambled shRNA). The independence from DKK1 is established through qPCR showing no changes in Dkk1 expression after DKK3 modulation (C101-C102) and reciprocal experiments with iDkk1 mice. Sample sizes are adequate (n=9-11 animals for 4-month studies, n=6-7 for 9-month studies). The lack of effect on plaque pathology (C100) appropriately demonstrates synapse-specific effects. Statistical analyses use appropriate tests (Two-Way ANOVA with Tukey's post-hoc).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "DKK3 knockdown in J20 mice restores cognitive function without affecting exploratory activity or anxiety. Spatial memory is significantly improved in the Novel Object Location test. In the Morris Water Maze, DKK3 knockdown fully rescues training deficits (escape latency) and restores performance in late probe trials (time to platform, distance in target quadrant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 demonstrate functional rescue through multiple behavioral assays with appropriate controls and adequate sample sizes (n=12-17 per group). The progression from training to early and late probes provides temporal resolution. Statistical analyses are appropriate (Two-Way ANOVA with repeated measures for training, showing significant group \u00d7 trial interaction). The lack of effects on exploratory activity and anxiety (C105) rules out non-specific behavioral changes. However, the early probe showed less robust rescue (C108), suggesting time-dependent or learning-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24"
+    ],
+    "result": "Previous studies have shown that DKK3 colocalizes to amyloid plaques in AD patients and is increased in plasma and CSF in human AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C24 accurately cite prior literature (Bruggink et al., 2015; Drummond et al., 2017; Xiong et al., 2019) establishing DKK3's association with AD pathology. These provide important context for the current study but represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background literature establishes that synapse loss correlates with cognitive decline in AD, that A\u03b2 oligomers drive synapse dysfunction, and that Wnt signaling (particularly canonical Wnt pathway) is compromised in AD through multiple mechanisms including increased DKK1, LRP6 variants, and reduced Frizzled receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 accurately summarize established literature with appropriate citations. These provide essential scientific context and rationale for studying DKK3 in AD but represent prior knowledge rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "DKK3 protein is highly abundant in CA1, CA2, and CA3 pyramidal neurons but not dentate gyrus granule cells, with lower expression in a subset of astrocytes and no expression in microglia. Principal neurons followed by astrocytes are the main source of DKK3 in adult mouse hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 characterize DKK3 cellular distribution using validated antibodies (specificity confirmed with Dkk3-/- mice) and confocal microscopy. The findings are consistent with prior expression studies (Barrantes et al., 2006; Thompson et al., 2008). This provides important context for interpreting functional studies but is primarily descriptive characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "DKK3 is proposed as a potential therapeutic target for ameliorating synaptic impairment and memory dysfunction in AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a reasonable inference from the functional rescue data (C93-C110) showing that DKK3 knockdown restores synapses and memory in AD mice. However, this is a speculative conclusion about therapeutic potential rather than a demonstrated result. Translation to human therapeutics would require additional validation, assessment of safety, and consideration of DKK3's role in maintaining inhibitory synapses in healthy brain (C92).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Discussion points establish that DKK3 is the most highly expressed DKK family member in brain, differs from DKK1 in affecting both excitatory and inhibitory synapses, may impair mitochondrial function through GSK3\u03b2, activates JNK consistent with other cell types, and that synaptic rescue effects are specific to DKK3 rather than secondary to plaque formation or DKK1 changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C122 provide appropriate contextualization and interpretation of results. C117 (mitochondrial function hypothesis) is speculative but clearly presented as such. C120-C122 make reasonable inferences from the data showing effects before plaque deposition and lack of DKK1 changes. These represent valid scientific interpretation rather than overstatement of findings.",
+    "result_type": "MINOR"
+  }
+]

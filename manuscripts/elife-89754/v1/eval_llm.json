@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "An RNAi screen of 125 epigenetic regulators in HT-22 cells under OGD conditions identified PRMT5 as a negative regulator of neuronal survival. Knockdown of Prmt5 by multiple independent shRNAs and pharmacological inhibition with EPZ015666 both significantly improved cell survival after OGD in HT-22 cells and primary neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen design is sound with appropriate controls (C20-C23). Multiple independent validation approaches strengthen the finding: three different shRNAs (C27), small molecule inhibitor (C28), multiple assays (CCK-8, LDH) (C29), and replication in primary neurons (C30). The convergence of genetic and pharmacological evidence with consistent phenotypes across cell types provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "PRMT5 protein translocates from cytoplasm to nucleus upon OGD treatment in cultured cells. This was demonstrated by immunofluorescence of endogenous and HA-tagged PRMT5, biochemical fractionation showing nuclear and chromatin-bound enrichment, and replication in both HT-22 cells and primary neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal methods confirm translocation: immunofluorescence (C32), CRISPR-tagged endogenous protein (C33), and biochemical fractionation (C34-C35). The use of HA-tagged endogenous PRMT5 controls for antibody artifacts. Replication in primary neurons (C36) addresses concerns about immortalized cell line artifacts. The chromatin-binding observation (C35) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "PRMT5 nuclear translocation occurs in vivo in the MCAO mouse stroke model. PRMT5 was predominantly cytoplasmic on the contralateral side but became nuclear-enriched on the ipsilateral (ischemic) side, including both penumbra and core regions, with chromatin binding confirmed by biochemical fractionation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo validation using MCAO model (C37-C39) with immunohistochemistry and biochemical fractionation (C40) demonstrates physiological relevance. The observation in both penumbra and core (C39) suggests widespread response. However, quantification of translocation extent and statistical analysis of multiple animals would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "RNA-seq and ChIP-seq integration revealed that PRMT5 binds to chromatin at 16,061 sites (56% near TSSs) and directly represses gene expression during OGD. Prmt5 knockdown reversed expression changes for 1,035 upregulated and 2,090 downregulated genes, with PRMT5 occupying promoters of downregulated genes that were rescued by knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of ChIP-seq and RNA-seq provides strong mechanistic evidence (C45-C49). The observation that Prmt5 KD alone has minimal effect (C42) but reverses OGD-induced changes supports a context-dependent role. The enrichment at TSSs (C46) and correlation between binding and gene repression (C47-C48) are logically consistent. However, two biological replicates may be insufficient for robust differential expression analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "PRMT5 represses Hedgehog signaling genes during OGD. Gene ontology analysis showed PRMT5-target genes are enriched for Hedgehog signaling, with ChIP-qPCR and RT-qPCR validation confirming PRMT5 occupancy and repression of Ptch1 and Smo. The authors conclude PRMT5 promotes neuronal death by repressing Hedgehog pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pathway enrichment (C18) is validated by direct testing of key genes Ptch1 and Smo (C50-C51). The mechanistic model (C52-C53) is logical given the known neuroprotective role of Hedgehog signaling. However, functional validation through Hedgehog pathway rescue experiments would strengthen the causal claim. The conclusion relies on inference from correlative genomic data and literature knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PRMT5 inhibition with EPZ015666 provides neuroprotection in the MCAO mouse model. Treatment reduced infarct volume, increased surviving neurons, decreased tissue swelling, and improved neurological deficit scores. The authors conclude PRMT5 is a critical mediator of ischemic neuronal death and potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple outcome measures converge (C55-C58): histological (infarct volume, NeuN+ cells), physiological (water content, swelling), and functional (neurological scores). The GSEA analysis (C54) linking in vitro targets to in vivo changes strengthens translational relevance. Sample size (n=12) appears adequate. However, the therapeutic claim (C60) is speculative without dose-response, treatment window studies, or long-term outcome assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose PRMT5 has context-dependent dual roles: pro-proliferation in cancer/stem cells but pro-death under ischemic conditions. They show PRMT5 is cytoplasmic in normal neurons and speculate it may be recruited to the nucleus by transcription factors during ischemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The dual-role interpretation (C68) integrates current findings with literature but lacks direct mechanistic evidence. The speculation about transcription factor recruitment (C74) is reasonable but untested. The observation of cytoplasmic localization in normal neurons (C73) is supported, but the mechanism of translocation remains unclear. This represents a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that OGD-induced neuronal death is largely caused by repression of survival pathways rather than activation of death pathways, and that reactivating survival pathways provides neuroprotection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that similar numbers of genes are up- and downregulated (C78) but PRMT5 targets are enriched in downregulated survival genes (C79) is interesting. However, the mechanistic conclusion (C80-C81) is speculative. The model doesn't exclude contributions from upregulated death pathways or other mechanisms. This interpretation requires functional validation through pathway-specific rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The authors propose that PRMT5 regulation of Sonic Hedgehog signaling may be an important mechanism of ischemic protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C88) is speculative, based on integration of current findings with literature on Hedgehog signaling in stroke. While the genomic data support PRMT5 binding and repression of Hedgehog genes, functional validation through pathway-specific rescue (e.g., Hedgehog agonist treatment with PRMT5 inhibition) is needed to establish causality. The claim is reasonable but requires experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The authors acknowledge that HT-22 is an immortalized cell line with potential differences from primary neurons under OGD stress, which may be affected by cell proliferation regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate acknowledgment of study limitations (C91-C92). The authors partially address this by validating key findings in primary neurons (C30, C36), though not all experiments were replicated. This transparency about model limitations is important for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims about ischemic stroke epidemiology and treatment limitations, citing that ischemic stroke accounts for 87% of strokes, is the second leading cause of death, and current therapy benefits only ~5% of patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are standard background claims (C1-C5) supported by the cited reference (Brott and Bogousslavsky, 2000). However, the 5% treatment benefit figure may be outdated given advances in thrombectomy since 2000. These claims provide context but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establishing that epigenetic alterations are important in stroke pathogenesis, that MCAO and OGD are established models for studying ischemia, and that previous work has shown neuroprotective effects of targeting epigenetic regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C6-C12) are well-supported by appropriate citations and represent established knowledge in the field. They provide important context for the current study's rationale and approach. The validation of screen hits against known factors (C24-C25) supports the screen's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C89",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "Background information about PRMT5 biology, including its enzymatic activity, roles in cancer and development, subcellular localization patterns, mechanisms of gene regulation, and status as a therapeutic target with inhibitors in clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are literature-based background claims (C61-C77, C89-C90, C93-C94) appropriately cited and providing context for interpreting the current findings. They establish PRMT5's known functions and support the novelty of its role in ischemic neuronal death. The information about clinical trials (C90) provides translational context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Background information about Hedgehog signaling in nervous system development and stroke, including its neuroprotective effects, regulation of neurogenesis and vascular permeability, and downstream signaling mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These literature-based claims (C82-C87) provide important context for interpreting the Hedgehog pathway enrichment findings. The citations support the neuroprotective role of Hedgehog signaling in stroke models, which strengthens the biological plausibility of the authors' mechanistic model.",
+    "result_type": "MINOR"
+  }
+]

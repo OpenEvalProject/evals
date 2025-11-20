@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Prior research has established that gene research concentrates on historically studied genes rather than being driven by current experimental evidence, with little correlation between literature volume and genome-wide evidence strength across most diseases. This pattern has persisted despite the adoption of high-throughput omics technologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 are all supported by citations to prior published research. These claims establish the background context for the current study by referencing multiple independent studies that have documented the concentration of research on well-studied genes and the disconnect between literature focus and omics findings. The claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C64"
+    ],
+    "result": "The study analyzed 450 GWAS studies, 296 AP-MS studies, 148 transcriptomics studies, and 15 CRISPR screens from established databases, restricting analysis to 36,035 genes with unambiguous ID mappings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 and C64 describe the data sources and filtering criteria used in the study. These are straightforward methodological statements that are well-documented in the manuscript with clear references to specific databases and versions. The sample sizes and filtering criteria are explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Understudied genes are frequently identified as hits in high-throughput experiments across all four omics types (CRISPR, transcriptomics, AP-MS, GWAS), but genes highlighted in titles/abstracts are significantly over-represented among the 20% highest-studied genes. For example, in transcriptomics, 18,295 genes were differentially expressed but only 161 (0.88%) were mentioned in titles/abstracts of reporting articles, and these 161 genes were significantly better studied (p=1.4e-61) than all hit genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 and C65-C76 present the core empirical findings with specific statistical tests (Mann-Whitney U tests with reported p-values) and detailed quantitative data for each omics type. The data is presented consistently across multiple experimental platforms, with appropriate statistical testing. Figure 1B provides visual support for these findings. The statistical significance thresholds are clearly stated and the effect is robust across different omics technologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The pattern of understudied genes being abandoned is robust to alternative analysis choices, including different significance thresholds, historical vs. current literature (except CRISPR), and controlling for the number of genes per title/abstract.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe sensitivity analyses shown in supplementary figures that test the robustness of the main findings. These analyses appropriately address potential confounders and alternative explanations. The exception for CRISPR screens when using pre-2003 literature is appropriately noted, which makes sense given that CRISPR technology was developed after 2003.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The frequency of highlighting understudied genes varies by omics type, with transcriptomics showing the least frequent highlighting and CRISPR screens the most. GWAS studies tend to return better-studied genes as hits (median hit gene more studied than 75% of genes), with highlighted genes even more studied (85th percentile).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 compare patterns across different omics technologies based on the data presented in the main analysis. The comparative statements are supported by the quantitative data shown in Figure 1B. Claim C28 appropriately frames the correlation with GWAS hits as a potential explanation for prior observations, citing relevant prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Understudied genes are abandoned between experimental completion and result reporting rather than by subsequent research, as citing articles either reproduce or slightly mitigate the initial selection bias toward well-studied genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 synthesize the findings from the analysis of both reporting articles and citing articles. The data shows that citing articles mention similar or slightly more hit genes than the original articles, supporting the conclusion that the main abandonment occurs during the write-up phase. This is a logical inference well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C78"
+    ],
+    "result": "Articles focusing on less-investigated genes accumulate more citations in biomedical literature, an effect that has held consistently since 2001. Since 1990, articles about the least popular genes have been 3-4 times more likely to be highly cited than articles on the most popular genes. There is a negative Spearman correlation (\u03c1 = -0.125, p = 4e-21) between gene popularity and median citations for articles published in 2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C78 present citation analysis data with appropriate statistical testing (Spearman correlation) and temporal trends shown in Figure 2. The analysis appropriately focuses on 2015 to allow citations to accumulate. The finding contradicts the hypothesis that researchers avoid understudied genes due to citation concerns, which strengthens the main argument. The statistical significance is strong and the temporal consistency adds robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Disease-specific and technique-specific analyses show that the negative association between gene popularity and citations is widespread: 27 of 29 significant disease MeSH terms and 16 of 20 significant technique MeSH terms showed negative associations between gene popularity and citations (Benjamini-Hochberg FDR <0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 present subgroup analyses that test whether the citation findings hold across different diseases and techniques. The use of Benjamini-Hochberg FDR correction for multiple testing is appropriate. The consistency of findings across most disease and technique categories strengthens the generalizability of the main result. The data is supported by supplementary figures and files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "High-throughput technique MeSH terms (e.g., GWAS, Gene Expression Profiling) showed no significant association between gene popularity and citations, suggesting authors of high-throughput studies have little citation incentive to highlight understudied genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 identify an important exception to the general pattern and draw a reasonable inference about incentives. The lack of association for high-throughput techniques specifically is consistent with the main finding that these studies abandon understudied genes despite no citation penalty. Claim C42 is appropriately framed as a suggestion rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Of 45 gene-related factors identified through literature review, 33 (12 of 23 binary and 21 of 22 continuous factors) were significantly associated with gene selection in at least one assay type (Benjamini-Hochberg FDR <0.001). The most informative binary factor was plasmid availability in AddGene, and the most informative continuous factor was the number of research articles about a gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 present a comprehensive analysis of factors associated with gene selection, with appropriate statistical testing (FDR <0.001) and clear reporting of results shown in Figure 3. The identification of 45 factors through literature review is systematic, and the statistical associations are well-documented in supplementary files. The finding that prior publication history is the most informative continuous factor is consistent with the main thesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Many factors influencing gene abandonment are not independent, as shown by cluster analysis. For example, the number of articles about a gene is heavily correlated with database annotations, and gene length correlates with GWAS annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe correlation patterns among the 45 factors based on cluster analysis shown in supplementary figures. The finding that factors are correlated is important for interpretation and is appropriately noted. Claim C51 cites prior work (Lopes et al., 2021) supporting the gene length-GWAS correlation, which adds credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "FMUG is a tool developed in Flutter and available for download at fmug.amaral.northwestern.edu as a MacOS/Windows app.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is a straightforward statement about tool availability and implementation. This is verifiable information about a resource produced by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "An early FMUG prototype led to the hypothesis that transcript length negatively correlates with up-regulation during aging, based on finding that Sfpq (required for long gene transcription) is downregulated during murine aging. This hypothesis was subsequently validated by three independent groups in high-impact journals (Nature Aging, Nature Genetics, iScience) in 2022-2023.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 describe a case study demonstrating FMUG's utility. The hypothesis generation (C53, C56) is appropriately framed as such, and the experimental finding about Sfpq (C54) is stated as a direct observation. Claim C55 appropriately cites prior work. Claims C57-C59 cite three independent publications that validated the hypothesis, providing strong support for the tool's utility. This represents a complete scientific story from hypothesis to validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Literature review of genes strongly associated with age-dependent transcriptional change revealed that 64% had been functionally investigated in aging, 15% shown to change gene expression, 3% investigated in related domains (e.g., senescence), and 5% shown to change expression in related domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 present results from a systematic literature review shown in Figure 4B. The percentages are clearly stated and the categories are well-defined. This analysis supports the case study by showing that most age-related genes had already been studied, making the identification of understudied genes like Sfpq particularly valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "For transcriptomics analysis, differential expression was called at Benjamini-Hochberg FDR q<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 states a clear methodological threshold for calling differential expression. This is a standard and appropriate threshold for transcriptomics analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study has several acknowledged limitations: focus on human genes only, use of title/abstract mentions as a proxy for attention (which is space-limited), reliance on database representations of experimental results (which may differ from original processing), and inability to identify the specific step between experiment and write-up where abandonment occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 appropriately acknowledge study limitations. These are reasonable limitations that do not fundamentally undermine the main findings but appropriately qualify the scope and interpretation of results. The acknowledgment of these limitations demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors believe their insights about the leaky pipeline and FMUG tool have been useful for their own unknomics research, that some omics technologies may be more powerful for characterizing understudied genes, and that enabling conscious engagement with selection bias will promote unknomics participation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C86 represent the authors' beliefs and speculations about impact and future directions. While C84 is supported by the case study presented, C85 and C86 are speculative statements about future potential. These are appropriately framed as beliefs/suggestions rather than established facts, but they lack empirical support beyond the presented case study.",
+    "result_type": "MINOR"
+  }
+]

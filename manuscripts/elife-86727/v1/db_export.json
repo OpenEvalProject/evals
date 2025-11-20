@@ -1,0 +1,2605 @@
+{
+  "submission": {
+    "id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T20:21:54.043642Z",
+    "updated_at": "2025-11-20T20:21:54.043642Z"
+  },
+  "content": [
+    {
+      "id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "content_type": "manuscript",
+      "content_text": "# Calcium transients trigger switch-like discharge of prostaglandin E2 in an extracellular signal-regulated kinase-dependent manner\n\n## Authors\n\n- Tetsuya Watabe<sup>1</sup>\n- Shinya Yamahira<sup>1</sup>\n- Kanako Takakura<sup>1</sup>\n- Dean Thumkeo<sup>3</sup>\n- Shuh Narumiya<sup>3</sup>\n- Michiyuki Matsuda<sup>1</sup> ([ORCID: 0000-0002-5876-9969](https://orcid.org/0000-0002-5876-9969))\n- Kenta Terai<sup>2</sup> ([ORCID: 0000-0001-7638-3720](https://orcid.org/0000-0001-7638-3720)) \u2020\n\n### Affiliations\n\n1. Research Center for Dynamic Living Systems, Graduate School of Biostudies, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n2. Department of Pathology and Biology of Diseases, Graduate School of Medicine, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n3. Department of Drug Discovery Medicine, Graduate School of Medicine, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n4. Institute for Integrated Cell-Material Sciences, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n\n\u2020 Corresponding author\n\n## Abstract\n\nProstaglandin E2 (PGE2) is a key player in a plethora of physiological and pathological events. Nevertheless, little is known about the dynamics of PGE2 secretion from a single cell and its effect on the neighboring cells. Here, by observing confluent Madin\u2013Darby canine kidney (MDCK) epithelial cells expressing fluorescent biosensors, we demonstrate that calcium transients in a single cell cause PGE2-mediated radial spread of PKA activation (RSPA) in neighboring cells. By in vivo imaging, RSPA was also observed in the basal layer of the mouse epidermis. Experiments with an optogenetic tool revealed a switch-like PGE2 discharge in response to the increasing cytoplasmic Ca2+ concentrations. The cell density of MDCK cells correlated with the frequencies of calcium transients and the following RSPA. The extracellular signal-regulated kinase (ERK) activation also enhanced the frequency of RSPA in MDCK and in vivo. Thus, the PGE2 discharge is regulated temporally by calcium transients and ERK activity.\n\n## Introduction\n\nProstaglandin E2 (PGE2) is an eicosanoid lipid mediator that regulates a plethora of homeostatic functions, including vascular permeability, immune response, and mucosal integrity (Narumiya, 2007). The metabolic pathway of PGE2 production, which is a major branch of the arachidonic acid cascade, was extensively studied in the mid to late 20th century. This cascade starts from the activation of cytosolic phospholipase A2 (cPLA2) (Park et al., 2006). Increased intracellular calcium induces the translocation and activation of cPLA2 from the cytosol to the Golgi, endoplasmic reticulum, and perinuclear membrane, where cPLA2 cleaves arachidonic acid out of the membrane phospholipids (Clark et al., 1995; Hirabayashi et al., 1999; Evans et al., 2001). The arachidonic acid is then presented to cyclooxygenases, COX1 and COX2, to yield PGH2, which is further converted to PGE2 by prostaglandin E synthases (Smith and Langenbach, 2001). PGE2 synthesized de novo is secreted to the extracellular space either by passive diffusion or by active transport by multidrug resistance protein 4 (MRP4) (Reid et al., 2003). The secreted PGE2 exerts its actions by acting on four G protein-coupled receptors (GPCRs), EP1 to EP4, expressed in neighboring cells (Narumiya, 2007; Regan, 2003).\n\nAlthough it is largely believed that the PGE2 action is primarily regulated by the expression and activation of COX (Kalinski, 2012), cPLA2 appears to play a more important role in the short-term regulation of PGE2 production and secretion (Leslie, 2015). It was shown that the secretion of arachidonic acid is induced within a few minutes after the calcium-dependent translocation of cPLA2 to endo-membranes (Hirabayashi et al., 1999; Evans et al., 2001). Moreover, ERK and p38 MAP kinases also contribute to the activation of cPLA2 (Lin et al., 1993), which may be calcium-independent (Gij\u00f3n et al., 2000). Importantly, these earlier biochemical studies did not elucidate the dynamics of the production and secretion of PGE2 at the single-cell level, leaving many questions unanswered. For example, do all cells contribute to the production of PGE2? Does each cell keep secreting PGE2 upon stimulation?\n\nGenetically encoded biosensors based on the principle of F\u00f6rster resonance energy transfer (FRET) allow us to visualize the dynamics of intracellular signaling molecules at the single-cell resolution (Miyawaki and Niino, 2015; Greenwald et al., 2018). The development of transgenic mice expressing FRET biosensors has opened a window to the visualization of signaling molecule activity in live tissues (Terai et al., 2019). Furthermore, by using the activation of protein kinase A (PKA) and ERK MAP kinase as surrogate markers, we can also visualize the intercellular communications mediated by Gs-coupled receptors and tyrosine kinase receptors in live tissues (Konishi et al., 2021; Hino et al., 2020). In this study, we show that PGE2 discharged from a single cell causes radial spread of PKA activation (RSPA) in neighboring cells in tissue culture and the mouse epidermis. By combining a chemical biology approach, optogenetic stimulation, and a simulation model, we quantitatively analyzed the PGE2 secretion and found that the PGE2 discharge is regulated temporally by calcium transients and quantitatively by growth factor signaling and cell density.\n\n## Results\n\n### PGE2 mediates RSPA\n\nIn an attempt to understand intercellular communication under physiological conditions, we observed the PKA activity of Madin\u2013Darby canine kidney (MDCK) epithelial cells by using the FRET biosensor Booster-PKA (Zhang et al., 2001; Watabe et al., 2020; Figure 1A). We noticed that PKA activation propagates from a single cell to neighboring cells under a confluent condition. We named this phenomenon radial spread of PKA activation (RSPA) and pursued underlying mechanisms (Figure 1B, Figure 1\u2014video 1). In a typical example, approximately 100 neighboring cells located within a 100 \u00b5m distance exhibit firework-like spread of PKA activation, which decays within several minutes. To characterize this phenomenon without preoccupations, we developed a program to identify and characterize RSPA under various conditions (Figure 1C). The frequency, but not the radius, of RSPA depended on the cell density; that is, RSPA was observed only when cells were maintained at more than 6 \u00d7 104 cells/cm2 (Figure 1D and E). The probability of RSPA in each cell was also increased in a cell density-dependent manner (Figure 1\u2014figure supplement 1A). To examine whether the PKA activation correlates with increased intracellular cAMP concentration, we employed another FRET biosensor for cAMP, hyBRET-Epac, and performed a similar experiment (Watabe et al., 2020; Ponsioen et al., 2004; Figure 1\u2014figure supplement 1B and C). Although the increment of the FRET ratio was not so remarkable as that of Booster-PKA (Figure 1\u2014figure supplement 1D), we found that the pattern of cAMP concentration change is very similar to the activity change of PKA, indicating that a Gs protein-coupled receptor (GsPCR) mediates RSPA (Figure 1\u2014figure supplement 1E). This discrepancy between hyBRET-Epac and Booster-PKA may be partially explained by the difference in the dynamic ranges for cAMP signaling in each FRET biosensor (Watabe et al., 2020). Previous transcriptome analysis of MDCK cells showed that ATP receptor and PGE2 receptor EP2 are the most abundant GsPCRs (Shukla et al., 2015). Thus, we examined the contribution of the ATP receptor and PGE2 receptors EP2 and EP4 by using specific inhibitors (Figure 1F). Inhibitors against EP2, EP4, and COX, but not the ATPase apyrase, abolished RSPA, indicating that PGE2 mediates RSPA.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig1-v1.jpg)\n\n**Figure 1.:** (A) A scheme of Booster-PKA, a PKA sensor. (B) Booster-PKA-expressing MDCK cells in a confluent condition were observed every 15 s under a fluorescence microscope (Figure 1\u2014video 1). The image of mKO\u03ba represents the cell density, which is seeded at 2.4 \u00d7 105 cells cm-2. mKate2 and mKO\u03ba images were acquired to generate mKate2/mKO\u03ba ratio images representing PKA activity in pseudocolor. The time 0 is set the just before initiation of PKA activation. The radius of RSPA as determined in (C) was plotted as a function of time. (C) Procedure to call RSPA positive. The original ratio images were binarized with the threshold value 1.3 of mKate2/mKO\u03ba ratio. The fitted radius of RSPA, r, was defined as the radius of a circle with the same area. When r is >15 \u00b5m, it is counted as RSPA. The detailed procedure is provided in the \u2018Materials and methods\u2019 section. (D, E) MDCK cells expressing Booster-PKA were seeded at the indicated density and analyzed. Representative images in indicated cell densities are shown in pseudocolor (D). Each color in panel (E) represents an individual experiment. Red lines indicate average values. (F) MDCK cells expressing Booster-PKA in the presence of the inhibitors were imaged and analyzed for the RSPA frequency. Reagents are as follows: DMSO, 0.1% v/v DMSO; PKAi, 20 \u03bcM H89; Apyrase, 10 unit mL-1; EP2i, 10 \u03bcM PF-04418948; EP4i, 1 \u03bcM ONO-AE3-208; COXi, 10 \u03bcM indomethacin. The frequency of RSPA was analyzed 20\u201380 min after the treatment. Each dot represents an individual experiment. Red lines indicate their average value. p-Values were calculated between the labeled sample and the DMSO-treated sample.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Madin\u2013Darby canine kidney (MDCK) cells expressing Booster-PKA were seeded at the indicated density and analyzed. Each color represents an individual experiment. Red lines indicate average values. (B) A scheme of hyBRET-Epac, a cAMP sensor. (C) MDCK cells expressing hyBRET-Epac were imaged to generate Turquoise/YPet ratio images representing cAMP concentration (cAMP) in pseudocolor. The image of Turquoise represents the cell density, which is seeded at 1.2 \u00d7 105 cells cm-2. The time 0 was set as just before cAMP production. The normalized ratio images were binarized with the threshold value 1.06 of Turquoise/YPet ratio. (D) MDCK expressing hyBRET-Epac or Booster-PKA were seeded at seeded at 2.4 \u00d7 105 cells cm-2. The gradients of normalized ratio were measured with a 10 pixel-width line scanning across the center of RSPA. Each color represents an individual RSPA. (E) MDCK cells expressing hyBRET-Epac were seeded at 2.4 \u00d7 105 cells cm-2 and analyzed for the peak radius of RSPA.\n\n### RSPA is also observed in the epidermis of the PKAchu mice\n\nTo clarify the physiological relevance of RSPA, we used PKAchu mice, which are transgenic mice expressing a FRET biosensor for PKA, AKAR3EV (Kamioka et al., 2012; Sato et al., 2020; Figure 2A). We previously observed that ERK MAP kinase activation is propagated radially among the basal layer cells of the mouse epidermis (Hiratsuka et al., 2015), but we failed to observe a similar propagation of PKA activation. We reasoned that this failure was due to the low frequency and short duration of this phenomenon. When we observed a region of over 1 mm square at 1 min intervals, we successfully observed RSPA in the basal layer of the mouse auricular epidermis (Figure 2B, Figure 2\u2014video 1). Upon i.p. injection of a COX inhibitor, RSPA almost completely disappeared within 10 min (Figure 2C), indicating that RSPA in the epidermis is mediated by prostaglandins, presumably PGE2. The cell density in the basal layer is approximately 2 \u00d7 106 cells cm-2, which is markedly higher than that in MDCK cells (Figure 2D and E). It is not clear whether this may be related to the lower frequency (~300 cm\u20132 hr-1) and smaller radius of RSPA in the basal layer cells compared to MDCK cells (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig2-v1.jpg)\n\n**Figure 2.:** (A) A scheme of AKAR3EV, a PKA sensor. (B) Transgenic mice expressing AKAR3EV were observed under a two-photon excitation microscope. Shown are an ECFP image and a YPet/ECFP ratio image representing the cell density and PKA activity in pseudocolor, respectively. (C) Three mice were administrated a COXi, 30 mg/kg flurbiprofen intraperitoneally. The frequency of RSPA in pretreatment was quantitated more than 40 min before the injection. Similarly, the frequency of a post-COX inhibitor treatment was analyzed 15\u201358, 15\u201397, and 15\u201363 min. Each dotted line represents an individual mouse experiment. (D) Magnified views of an RSPA in vivo. Shown are an ECFP image and a YPet/ECFP ratio image representing the cell density and PKA activity in pseudocolor, respectively. The radius was determined as in Figure 1C, with the detection limit of 6.4 \u00b5m. (E) The properties of RSPA are compared between in vivo and in vitro. Data from three independent experiments are shown for each condition. The data of MDCK is from Figure 1E, seeded at the 1.2 \u00d7 105 cells cm-2. Cell density and frequency of RSPA data are values per experiment. Peak radius data are pooled from three independent experiments for each condition. Red lines indicate average values.\n\n### RSPA is triggered by calcium transients\n\nWhat causes RSPA? In agreement with the principal role of calcium in cPLA2 activation, dual imaging of calcium and PKA showed that an intracellular calcium transient precedes RSPA (Figure 3A). As anticipated, the frequency of RSPA was suppressed by the calcium chelator BAPTA-AM (Figure 3B). Note that not all of the calcium transients induced RSPA (Figure 3C, arrowheads). Approximately only one-tenth of calcium transients evoke RSPA (compare Figures 1E and 3D). Moreover, the frequency of calcium transients was also cell density-dependent (Figure 3D). To further pursue the relationship between calcium transient and RSPA, we employed the Gq-DREADD system (Armbruster et al., 2007). The Gq-DREADD-expressing producer cells were plated with the reporter cells expressing Booster-PKA at a 1:1200 ratio (Figure 3E). Upon activation of the Gq protein-coupled receptor by the DREADD ligand CNO, we observed RSPA with almost the same size and time course as observed under the non-stimulated condition (Figure 3F). Among cells with the calcium transient, 76% exhibited RSPA, significantly higher than that in the unstimulated state. Because the average calcium signal intensity was higher in RSPA (+) cells than in RSPA (-) cells (Figure 3G), the peak value of calcium transients appears to be important for the following induction of RSPA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig3-v1.jpg)\n\n**Figure 3.:** (A) Madin\u2013Darby canine kidney (MDCK) cells expressing GCaMP6s and Booster-PKA were observed for calcium transients and RSPA. Calcium transients are represented by the fluorescence of GCaMP normalized to the basal level (F/F0). RSPA is analyzed as in Figure 1C. (B) The frequency of RSPA was analyzed 20\u201380 min after 30 \u03bcM BAPTA-AM treatment. Data from three or four independent experiments. The DMSO control data set is from Figure 1F. (C) Maximum projection images of the ratio over 10 min. An arrow or arrowheads represent calcium transients with or without RSPA, respectively. Shown is a part of Figure 3\u2014video 1. (D) MDCK cells expressing GCaMP6s were seeded at the indicated density. Calcium transients showing F/F0 to be >3 were counted in an indicated cell density. (E) Schematic representation of RSPA induction using Gq-DREADD. MDCK cells expressing Gq-DREADD served as producer cells, while MDCK cells expressing Booster-PKA were employed as reporter cells. (F, G) MDCK cells expressing Gq-DREADD with GCaMP6s or Booster-PKA were mixed and plated, treated with 1 \u03bcM CNO, and imaged. Blue circled cells are producer cells, expressing Gq-DREADD. The FRET ratio, the value of mKate2/mKO\u03ba, in each pixel is shown in pseudocolor as indicated. The time 0 was set as just before CNO addition. Cells showing an F/F0 value >4 were analyzed for their RSPA as Figure 1C. Red lines indicate their average value.\n\n### RSPA is a switch-like response to cytoplasmic calcium concentration\n\nTo further explore the relationship between the peak value of the calcium transient and RSPA, we employed OptoSTIM1, an optogenetic tool to activate the calcium influx (Kyung et al., 2015; Figure 4A). As anticipated, a blue light flash caused a calcium transient, followed by RSPA (Figure 4B). In a preliminary experiment, a 30 min interval was sufficient to restore the calcium response; therefore, we repeated the blue light flash every 30 min to 1 hr with increasing light intensity. As the light intensity was increased, the amplitude of calcium transients represented by the R-GECO signal also increased linearly (Figure 4C). In stark contrast, RSPA occurred in an all-or-nothing manner. We repeated this experiment for 13 cells to find any correlations between the calcium concentration and the size of RSPA (Figure 4D). The R-GECO signal intensity ratio (F/F0) that evoked RSPA ranged from 1.5 to 2.1 among the different cells (Figure 4D, left), but the size of RSAP did not show a clear correlation with the R-GECO signal intensity ratio (Figure 4D, right). This observation indicates that there is a threshold of the cytoplasmic calcium concentration for the triggered PGE2 secretion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic representation of RSPA induction using OptoSTIM1. Madin\u2013Darby canine kidney (MDCK) cells expressing OptoSTIM1 and R-GECO1 were employed as the producer cells. The Booster-PKA-expressing MDCK cells, deficient in COX-1 and COX-2 (COX-DKO), were employed as the reporter cells. (B) The producer cells were stimulated by a flashlight during imaging. Blue circled cells in the mKO\u03ba image are the producer cells. The FRET ratio, the value of mKate2/mKO\u03ba, in each pixel is shown in pseudocolor as indicated. The time 0 was set as just before blue light irradiation. The detection limit for the RSPA radius was 26 \u00b5m, as shown in the shaded area. (C) Flashlight illumination was repeated with increasing LED power. (D) Vertically aligned dots (left) are the results from an individual producer cell. The right panel shows the relationship between R-GECO fluorescence intensity and the radius of RSPA.\n\n### High cell density increases the sensitivity to PGE2\n\nWe next explored the mechanism that determines the size of RSPA. First, taking advantage of the reproducibility of DREADD system, we examined the involvement of EP2/EP4, cPLA2, and COX1/2 in the calcium-induced RSPA by CRISPR/Cas9-mediated gene knockout (Figure 5A). As anticipated, we did not observe any RSPA by using the reporter MDCK cells deficient from EP2 and EP4. Knockout of COX2 and cPLA2, but not COX1, in the producer cells almost completely abolished CNO-induced RSPA. These results support the idea that RSPA is mediated by PGE2 via the Ca2+-cPLA2-COX2-EP2/4-cAMP-PKA pathway (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig5-v1.jpg)\n\n**Figure 5.:** (A) Madin\u2013Darby canine kidney (MDCK) cells expressing Gq-DREADD and GCaMP6s were employed as the parental producer cells. Meanwhile, MDCK cells expressing Booster-PKA were employed as the parental reporter cells. The genes knocked out by CRIPSR/Cas9 system are depicted in the figure. Analysis was performed as in Figure 3G. Each producer cell exhibiting F/F0 values >3 was analyzed for the occurrence of radial spread of PKA activation (RSPA). Data from two independent experiments was summed up. (B) Inter- and intracellular pathway of RSPA. (C) COX-DKO MDCK cells expressing Booster-PKA were plated at the indicated cell density, treated with increasing concentrations of PGE2, and analyzed for PKA activity. The mKate2/mKO\u03ba ratio representing PKA activity was calculated and plotted against PGE2 concentration. The average intensity of the whole view field of mKate2 or mKO\u03ba, at 20\u201330 min after the addition of PGE2, was applied to calculate the mKate2/mKO\u03ba ratio. Three or four independent experiments were performed. (D) COX-DKO MDCK cells were seeded at the indicated cell densities and subjected to RNA-seq analysis. FPKM values of other genes are in Figure 5\u2014figure supplement 1. N.D. represents not detected.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** COX-DKO Madin\u2013Darby canine kidney (MDCK) cells were seeded at the indicated cell densities and subjected to RNA-seq analysis. FPKM values of genes related to prostaglandin E2 (PGE2) homeostasis: isoforms of phosphodiesterase (PDE), isoforms of adenylyl cyclase (ADCY), and phospholipase A2 (PLA2G4A). In agreement with previous reports, Yap target genes, CYR61, CTGF, and AXL, were suppressed at high cell density.\n\nNext, because the size of RSPA depends on the cell density (Figure 1E), we reasoned that the sensitivity of MDCK cells to PGE2 may also be regulated by cell density. To avoid the effect of PGE2 produced by the cells, the COX1/2-deficient MDCK cells were challenged by the bath application of PGE2. We found an approximately tenfold difference in the EC50 between the high and low cell densities (Figure 5C), suggesting that increased sensitivity to PGE2 underlies the increased RSPA size under the confluent condition. Transcriptome analysis showed a twofold increase in guanine nucleotide-binding protein G(s) subunit alpha (GNAS) (Figure 5D), but it is not clear whether this difference is sufficient to explain the difference in RSPA frequency. We did not observe any cell density dependence in the transcription of EP2, EP4 (Figure 5D), phosphodiesterases, or adenylyl cyclases (Figure 5\u2014figure supplement 1). Thus, the cell density appears to increase the sensitivity to PGE2 mostly in a transcription-independent manner.\n\n### ERK activity is required for RSPA\n\nPreviously, we reported that ERK activation is propagated among confluent MDCK cells in a wave-like fashion (Aoki et al., 2013). To examine whether ERK activity also regulates RSPA, we simultaneously observed ERK and PKA activities by using EKAREV-NLS and Booser-PKA, respectively (Figure 6A). It appeared that the center of RSPA was localized primarily in areas of high ERK activity. Further quantitative analysis has shown that the ERK activity of the cells locating in the center of RSPA was significantly higher than that of the randomly chosen cells (Figure 6B, left). However, the size of RSPA did not correlate with the ERK activity (Figure 6B, right). We next examined the timing of RSPA and the passage of ERK activation waves by aligning the events at the highest PKA activity. It appears that RSPA was evoked when the cells exhibited the highest ERK activity (Figure 6C and D, Figure 6\u2014figure supplement 1). Cross-correlation analysis of PKA activity and ERK activity revealed that ERK activation preceded PKA activation by approximately 3 min (Figure 6E). The ERK activation wave is known to be mediated by EGFR and EGFR ligands (Lin et al., 2022). Accordingly, the addition of EGF faintly increased the frequency of RSPA in our experiments, while the MEK and EGFR inhibitors almost completely abrogated RSPA (Figure 6F), representing that ERK activation or basal ERK activity is essential for RSPA. Collectively, these results obtained with MDCK cells showed that RSPA is triggered by calcium transient in cells with high ERK activity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig6-v1.jpg)\n\n**Figure 6.:** (A) Madin\u2013Darby canine kidney (MDCK) cells expressing EKAREV and Booster-PKA were observed for ERK and PKA activities every 5 min and 1 min, respectively. The mKate2/mKO\u03ba ratio image represents PKA activity in pseudocolor. The YPet/ECFP ratio image represents ERK activity in IMD mode. RSPA is indicated by white circles. (B) The ERK activities within 10 \u00b5m from the center of RSPA and within 10 \u00b5m from randomly set positions with a random number table generated by Python are plotted in the left panel. Each colored dot represents an average value of an independent experiment. The right scattered plot shows the relationship between ERK activity and the size of RSPA. (C) The correlation between ERK activation and RSPA is shown. This is a part of Figure 6\u2014video 1. (D) Cross-correlation analysis of PKA and ERK activities. The average and SD values from 67 samples are shown in the black lines and blue shades, respectively. (E) Temporal cross-correlations between RSPA and ERK activation rate. The black line indicates the average temporal cross-correlation coefficients with SD. (F) MDCK cells expressing Booster-PKA were imaged in the presence of the following reagents: 0.1% v/v DMSO, 50 ng/mL EGF, 1 \u03bcM PD0325901 (MEKi), and 1 \u03bcM AG1478 (EGFRi). The frequency of RSPA was analyzed 20\u201380 min after the treatment. Each dot represents an individual experiment. Red lines indicate their average value. The control data set is from Figure 1F. p-Values were calculated between the labeled sample and the DMSO-treated sample. (G, H) Similar to Figure 2. Transgenic mice expressing AKAR3EV were observed under a two-photon excitation microscope and administrated a MEKi, 5 mg/kg PD0325901 intravenously. Shown are an ECFP image and a YPet/ECFP ratio image representing the cell density and PKA activity in pseudocolor, respectively. The images of PKA activity were projected over 30 min. The frequency of RSPA in pretreatment was quantitated more than 120 min before the injection. Similarly, the frequency of RSPA in a post-treatment was analyzed 15\u201390, 15\u2013125, 15\u201385, and 15\u2013115 min. Each dotted line represents an individual mouse experiment.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Five representative plots of ERK and PKA activities in Figure 5D. Each color represents an individual RSPA.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Madin\u2013Darby canine kidney (MDCK) cells expressing GCaMP6s were seeded at 1.2 \u00d7 105 cells cm-2. Cells were incubated with 0.1% v/v DMSO or 1 mM PD0325901 (MEKi) for 90 min and imaged every 5 s for 20 min. Cells in interphase showing the indicated values of F/F0 peak were counted and shown as calcium transients per cell per hour. Data are from a field of view containing around 2.0 \u00d7 104 cells from a single experiment.\n\nThe results in MDCK cells motivated us to validate our model in vivo. Thus, we tested RSPA in the basal layer of the mouse auricular epidermis could be canceled by the administration of MEKi (Figure 6G and H). As anticipated, RSPA in the basal layer was significantly attenuated 30 min after the administration, representing that ERK activity is required for RSPA in vivo.\n\n## Discussion\n\n### PGE2 discharge causes radial spread of PKA activation in neighboring cells\n\nTo the best of our knowledge, only one study has visualized PGE2 secretion from a single cell (Zonta et al., 2003). In this study, HEK cells expressing the Gq-coupled PGE2 receptor EP1 and a calcium indicator were used to monitor PGE2 release from agonist-stimulated astrocytes. However, the spontaneous release of PGE2 has never been visualized in either tissue culture cells or live animals. Here we have shown that PGE2 is discharged after calcium transients in MDCK cells at high cell densities (Figure 1). This PGE2 discharge leads to the radial spread of PKA activation, which we named RSPA, in the neighboring EP2-expressing cells. By using transgenic mice expressing the PKA biosensor, RSPA was also observed in the mouse auricular epidermis (Figure 2). RSPA in the epidermis is almost completely shut off by COXi, strongly suggesting that prostaglandin(s), most likely PGE2, mediates RSPA in the skin. Notably, we failed to observe RSPA in melanoma tissues in which calcium transients were frequently observed (Konishi et al., 2021). We reasoned that repetitive PGE2 secretion from tumor cells maintains a high PGE2 concentration in the tumor microenvironment, which prevented us from observing pulsatile PKA activation. In fact, the PGE2 concentration in melanoma tissue is known to reach as high as 10 \u00b5M (Konishi et al., 2021). Thus, RSPA in the skin may function as an alert signal in an early phase of cellular stress.\n\n### PGE2 is discharged in a switch-like manner in response to Ca2+ transients\n\nSoon after the identification of a Ca2+-dependent translocation domain within cPLA2 (Clark et al., 1991), Ca2+-dependent cPLA2 arachidonic acid release from cells has been reported (Hirabayashi et al., 1999; Gij\u00f3n et al., 2000); therefore, it is not surprising to find that the PGE2 discharge in our present experiments was due to Ca2+-dependent cPLA2 activation (Figure 3). However, visualization of PGE2 secretion at the single-cell resolution revealed a switch-like response of PGE2 discharge to the increasing Ca2+ concentration (Figure 4). Recruitment of cPLA2 to the ER and perinuclear membrane requires a higher Ca2+ concentration than that to Golgi (Evans et al., 2001). If so, cPLA2 may be sequestered at Golgi at low intracellular Ca2+ concentration, and only when the intracellular Ca2+ concentration exceeds the threshold that cPLA2 may reach the ER to liberate arachidonic acids.\n\nWhat does regulate the frequency of Ca2+ transients? Since the frequency is cell density-dependent in MDCK cells (Figure 3D), one candidate might be mechanical stress. 293 and HeLa cells demonstrate that cells show an increment in their frequency (Morita et al., 2015). However, a clear mechano receptor has not been identified.\n\n### ERK also regulates the probability of RSPA\n\nIn the cell density-dependent RSPA of MDCK cells, ERK activity regulates the probability, but not the size, of RSPA. Of note, the MEK inhibitor did not significantly decrease the frequency of calcium transients (Figure 6\u2014figure supplement 2), suggesting that ERK had a direct effect on the production of PGE2. Because ERK positively regulates cPLA2 by phosphorylating Ser505 (Cook and McCormick, 1993; Qiu et al., 1993), it is reasonable that the RSPA is regulated by ERK activity.\n\nThe ERK activation wave is operated by a positive feedforward mechanism in which ERK promotes EGFR ligand shedding and the following EGFR activation increases ERK activity in the neighboring cells (Hino et al., 2020; Aoki et al., 2017). Here we found that the ERK activation functions as the \u2018AND gate\u2019 for PGE2 production together with the calcium transients (Figure 7). Notably, the propagation of PKA activation, ~100 \u00b5m/min (Figure 1B), is markedly faster than that of ERK activation, 2\u20134 \u00b5m/min (Hiratsuka et al., 2015). Because PKA antagonizes Ras-dependent ERK activation (Cook and McCormick, 1993; Burgering et al., 1993; Wu et al., 1993), the EGFR ligand-ERK and PGE2-PKA pathways fit the Turing diffusion reaction model consisting of slow positive and fast negative signaling cascades.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/86727/elife-86727-fig7-v1.jpg)\n\n**Figure 7.:** The frequency of calcium transients is cell density-dependent manner. The ERK activation wave is there in both conditions. Because both calcium transient and ERK activation are required for radial spread of PKA activation (RSPA), the probability for PGE2 secretion is regulated as \u2018AND gate\u2019.\n\n### RSPA may not directly affect cell competition\n\nRecently, PGE2 was shown to regulate cell competition among MDCK cells. Interestingly, extrusion of Ras-transformed MDCK cells has been shown to be suppressed by PGE2 (Sato et al., 2020), whereas extrusion of MDCK cells expressing constitutively active YAP was dependent on PGE2 (Ishihara et al., 2020). Therefore, the effect of PGE2 in cell competition could be markedly different according to the signaling cascades that cause the oncogenic changes of MDCK cells. Importantly, PGE2 promotes the extrusion of MDCK cells expressing the constitutively active YAP by internalization of E-cadherin (Ishihara et al., 2020), which is a relatively slow process. Since RSPA causes PKA activation for only several minutes in each cell, multiple RSPA events may be needed to reach the concentration required for the induction of extrusion.\n\n### The radius of RSPA might represent the amount of PGE2 discharge\n\nThe radius of RSPA, in MDCK cells, might partially represent the amount of PGE2 discharge from the single cell. However, because of the cell-to-cell junction of the confluent MDCK cells, we failed to quantify the PGE2. In HeLa cells, we quantitated PGE2 secreted from a single cell by combining fluorescence microscopy and a simulation model (Watabe et al., 2023).\n\n### Limitations of this study\n\nIt would be clear that the physiological relevance of RSPA remains. In MDCK cells, the treatment of NSAIDs, which perturb RSPA, did not show a detectable change in cell growth, ERK wave propagation during collective migration, migration velocity, cell survival, or apoptosis. In mice epidermis, the frequency of RSPA was not remarkably changed by inflammation or corrective migration, evoked by TPA treatment or wound, respectively.\n\n### Conclusions\n\nWe have shown that the PGE2 discharge from a single cell is a stochastic and switch-like event in the confluent MDCK cells and mouse epidermis. The secreted PGE2 can transiently activate PKA in cells within a few hundred micrometers from the producer cell. The question of why cells adopt this pulsatile rather than continuous secretion of PGE2 awaits the future.\n\n## Materials and methods\n\n### Reagents\n\nONO-AE3-208, PF-04418948, clozapine N-oxide, and PGE2 were purchased from Cayman Chemical. BAPTA-AM was obtained from Enzo Life Sciences. PD0325901, mitomycin C, and indomethacin were purchased from FUJIFILM Wako Pure Chemical Corp. AG1478 was purchased from BioVision Inc. Apyrase and EGF were obtained from Sigma-Aldrich. H-89 was purchased from Seikagaku Corp. The DREADD ligand, clozapine N-oxide, was purchased from Cayman Chemical. Flurbiprofen axetil was purchased from KAKEN Pharmaceutical.\n\n### Cell culture\n\nMDCK cells were purchased from the RIKEN BioResource Center (no. RCB0995). Lenti-X 293T cells were obtained from Invitrogen. MDCK and Lenti-X 293T cells were maintained in Dulbecco\u2019s modi\ufb01ed Eagle medium (FUJIFILM Wako Pure Chemical Corp.) containing 10% fetal bovine serum (Sigma-Aldrich) and 1% v/v penicillin\u2212streptomycin (Nacalai Tesque). Cell line identity were validated.\n\n### Plasmids and primers\n\nPlasmids and primers are described in Supplementary files 1 and 2.\n\n### Cell lines\n\nFor the generation of MDCK cells stably expressing Booster-PKA or the other ectopic proteins, a lentiviral or piggyBac transposon system was employed. To prepare the lentivirus, a lentiCRISPRv2-derived expression plasmid, psPAX2 (plasmid no. 12260; Addgene), and pCMV-VSV-G-RSV-Rev (RIKEN BioResource Center) were co-transfected into Lenti-X 293T cells using polyethyleneimine (Polyscience). Virus-containing media were collected at 48 or 72 hr after transfection, filtered, and applied to target cells with 10 \u03bcg/mL polybrene (Nacalai Tesque). To introduce ectopic genes using a PiggyBac system, pPB plasmids and pCMV-mPBase(neo-) encoding piggyBac transposase were co-transfected into MDCK cells by electroporation with an Amaxa nucleofector (Lonza). Cells were selected with the medium containing the following antibiotics: 10 \u03bcg/mL blasticidin S (FUJIFILM Wako Pure Chemical Corp.), 100 \u03bcg/mL zeocin (InvivoGen), 2.0 \u03bcg/mL puromycin (InvivoGen), or 200 \u03bcg/mL hygromycin (FUJIFILM Wako Pure Chemical Corp.).\n\nMDCK cells expressing EKAREV-NLS were previously described (Kawabata and Matsuda, 2016). The established cell lines are described in Supplementary file 3.\n\nThe identity of cell lines was validated by partial genome sequence during knockout cell development. Mycoplasma contamination was tested with PlasmoTest (InvivoGen) when it was suspicious.\n\n### CRISPR/Cas9-mediated KO cell lines\n\nFor CRISPR/Cas9-mediated single or multiple knockouts of genes, sgRNAs targeting the exons were designed using CRISPRdirect (Naito et al., 2015). Oligo DNAs for the sgRNA were cloned into the lentiCRISPRv2 (plasmid no. 52961; Addgene) vector or pX459 (plasmid no. 62988; Addgene) vector. The expression plasmids for sgRNA and Cas9 were introduced into MDCK cells by lentiviral infection or electroporation. For electroporation, pX459-derived plasmids were transfected into MDCK cells using an Amaxa Nucleofector II. Cells were selected with the medium containing the antibiotics depending on the drug-resistance genes. After the selection, genomic DNAs were isolated with SimplePrep reagent (TaKaRa Bio). PCR was performed using KOD FX neo (Toyobo) for amplification with the designed primers, followed by DNA sequencing.\n\n### Wide-field fluorescence microscopy\n\nCells were imaged with an ECLIPSE Ti2 inverted microscope (Nikon) or an IX83 inverted microscope (Olympus). The ECLIPSE Ti2 inverted microscope was equipped with a Plan Fluor \u00d710 or \u00d74 objective, an ORCA Fusion Digital CMOS camera (HAMAMATSU PHOTONICS K.K.), an X-Cite TURBO LED light source (Excelitas Technologies), a Perfect Focus System (Nikon), a TI2-S-SE-E motorized stage (Nikon), and a stage top incubator (Tokai Hit). The IX83 inverted microscope was equipped with a UPlanAPO \u00d710/0.40 NA objective lens (Olympus), a Prime sCMOS camera (Photometrics), a CoolLED precisExcite LED illumination system (Molecular Devices), an IX2-ZDC laser-based autofocusing system (Olympus), and an MD-XY30100T-Meta automatically programmable XY stage.\n\nThe following \ufb01lters were used for the multiplexed imaging: for CFP and YFP imaging, a 434/32 excitation \ufb01lter (Nikon), a dichroic mirror 455 (Nikon), and 480/40 and 535-30 emission filters (Nikon) for CFP and YFP, respectively; for GCaMP6s imaging, a 480/40 (Nikon) excitation \ufb01lter, a dichroic mirror 455 (Nikon), and a 535/50 emission filter (Nikon); for mKO\u03ba and mKate2 imaging, a 555BP10 excitation \ufb01lter (Omega Optical), an FF562Di03 dichroic mirror (Semrock), and XF3024 (590DF35) (Omega Optical) and BLP01-633R-25 (Semrock) emission filters for mKO\u03ba and mKate2, respectively; for iRFP670 imaging, an FF01-640/14 excitation filter (Semrock), a dichroic mirror 660 (Nikon), and a 700/75 emission filter (Nikon); for R-GECO1, a 555BP10 excitation \ufb01lter (Omega Optical), an FF562Di03 dichroic mirror (Semrock), and an XF3024 emission filter (590DF35) (Omega Optical).\n\n### In vivo two-photon imaging of the mouse epidermis\n\nThe establishment of transgenic mice expressing AKAR3EV (PKAchu mice) was described previously (Kamioka et al., 2012). Briefly, 8- to 13-week-old female mice were used for the in vivo imaging. The ear hair was removed with a razor 1 d before the experiments. Mice were anesthetized with 1.5% iso\ufb02urane (FUJIFILM Wako Pure Chemical Corp.) inhalation and placed in a side-lying position on an electric heater maintained at 37\u00b0C. The ear skin was placed on the cover glass. Two-photon excitation microscopy was performed with an FV1200MPE-IX83 inverted microscope (Olympus) equipped with a \u00d730/1.05 silicon oil-immersion objective lens (XLPLN 25XWMP; Olympus), an InSight DeepSee Ultrafast laser (Spectra Physics), an IR-cut \ufb01lter (BA685RIF-3), two dichroic mirrors DM505 (Olympus), and two emission \ufb01lters (BA460-500 for CFP and BA520-560 for YFP) (Olympus). The excitation wavelength was 840 nm.\n\nThe animal protocols were approved by the Animal Care and Use Committee of Kyoto University Graduate School of Medicine (approval no. 22063).\n\n### Spontaneous RSPA\n\nMDCK cells expressing Booster-PKA or hyBRET-Epac were seeded on collagen-coated glass-bottom 96-well plates (Matsunami Glass Ind.) at a density of 1.2\u20132.4 \u00d7 105 cells/cm2. Before imaging, the culture media were replaced with phenol red-free M199 (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum. Cells were imaged by wide-\ufb01eld \ufb02uorescence microscopy, as described above.\n\n### Analysis of calcium concentrations\n\nIntracellular Ca2+ concentrations in MDCK cells were visualized with a genetically encoded calcium indicator, GCaMP6s or R-GECO1. For GCaMP6s analysis, calcium signals were expressed as F/F0, where F is the fluorescence at each time point, and F0 represents baseline fluorescence. To analyze the peak F/F0 value of GCaMP6s, F0 was calculated as the minimum projection of fluorescence intensity over the 5 min before each frame. Each cell showing calcium transient was visually checked to exclude the F/F0 elevation caused by flowing debris and misregistration of cells. If two or more adjacent cells showed calcium transients simultaneously, it was counted as a calcium transient. If two or more calcium transients were detected at intervals of more than 1 min, they were counted separately. In the Gq-DREADD experiment, F0 was calculated as the mean intensity before the stimulation.\n\nFor R-GECO1 analysis, F/F0 calcium signals were calculated by assigning the reference F0 using the fluorescence intensity before each blue light flash.\n\n### Gq-DREADD-induced calcium transients and RSPA\n\nMDCK cells expressing both Gq-DREADD-P2A-mCherry-NLS (Evans et al., 2001) and GCaMP6s (Evans et al., 2001) were utilized as PGE2 producer cells. MDCK cells expressing Booster-PKA served as PGE2 reporter cells. The producer and reporter cells were mixed at a ratio of 1:400 to 1:200 and plated on collagen-coated glass-bottom 96-well plates (Matsunami Glass Ind. or AGC Inc) at a density of 1.2\u20132.4 \u00d7 105 cells/cm2. Before imaging, the culture media were replaced with phenol red-free M199 (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum. Gq-DREADD was activated by the addition of 1 \u00b5M of clozapine N-oxide (CNO). Cells were imaged by wide-\ufb01eld \ufb02uorescence microscopy, as described above.\n\n### Light-induced calcium transients and RSPA\n\nMDCK cells expressing both R-GECO1-P2A-iRFP670 and OptoSTIM1 (CRY2clust) (Lee et al., 2014) were used as PGE2 producer cells. COX1 and COX2-deficient MDCK cells expressing Booster-PKA were used as PGE2 reporter cells. The producer and reporter cells were mixed at a ratio of 1:400 to 1:1200 and plated on collagen-coated glass-bottom 96-well plates (Matsunami Glass Ind.) or 24-well plates (AGC Inc). After 16\u201332 hr of incubation, the culture media were replaced with phenol red-free M199 (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum or M199 supplemented with 0.1% w/v bovine serum albumin (Sigma-Aldrich). Cells were imaged by wide-\ufb01eld \ufb02uorescence microscopy, as described above. During the observation, OptoSTIM1 was activated with 475 nm LED for 200 ms to trigger calcium influx into the cell. To control the calcium influx from small to large, the excitation light was modulated from 0.8 to 67 \u03bcW mm\u20132. To prevent cell division, MDCK cells with 3 \u00b5g/mL of mitomycin C for 1 hr 1 d before passage.\n\n### Titration of PGE2 sensitivity\n\nCOX-1 and COX-2 depleted (COX-DKO) MDCK cells expressing Booster-PKA were seeded on a 96-well glass-base plate at the indicated densities. Before imaging, the culture media were replaced with phenol red-free M199 (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum for MDCK. The 96-well plate was imaged by an inverted microscope as described earlier. mKate2 and mKO\u03ba images were obtained in one position for every well at around 5 min intervals. Cells were stimulated with PGE2 at the indicated concentrations. The mKate2/mKO\u03ba ratio was quantified from the average intensity of the whole field of view at around 20\u201330 min after the addition of PGE2.\n\n### Quantification of RSPA\n\nThe program code for image analysis is available via GitHub at https://github.com/TetsuyaWatabe-1991/RSPAanalysis (copy archived at Watabe, 2023).\n\nRatio images of MDCK cells expressing Booster-PKA were created after background subtraction. A median filter and a Gaussian 2D filter were applied to each image for noise reduction. The ratio image was normalized by a minimum intensity projection along the time axis. The processed images were binarized with a predetermined threshold and processed by morphological opening and closing to refine the RSPA area. Center coordinates and equivalent circle radii were obtained from each RSPA area. If the distance between the center coordinates of RSPA between successive frames was less than 100 \u03bcm, they were considered to be the same RSPA. For MDCK cells expressing hyBRET-Epac and mouse ear skin expressing AKAR3EV, the center coordinates of each RSPA were manually determined due to the low signal-to-noise ratio.\n\nTo obtain the time course of the RSPA radius, concentric regions were defined at the center of each RSPA. The median FRET ratio in each concentric ROI was calculated. The radius of the outermost concentric region where the median ratio value exceeds a predetermined threshold was defined as the radius of the RSPA.\n\n### Cross-correlation analysis of ERK and PKA activity\n\nCross-correlation analysis was performed with Python using the scientific library SciPy (http://www.scipy.org). The centers of each spontaneous RSPA in MDCK cells expressing both EKAREV and Booster-PKA were detected automatically as described above. The regions of interest were defined at the center of each RSPA with a radius of 10 \u00b5m, and the average ERK and PKA activity from 2 to 5 cells was quantified. The program code for this analysis is available via GitHub as described above.\n\n### RNA-seq\n\nCOX1 and COX2-deficient MDCK cells expressing Booster-PKA were seeded in collagen-coated glass-bottom 96-well plates (AGC Inc) at a density of 1.5 \u00d7 104 or 6.0 \u00d7 104 or 2.4 \u00d7 105 cells/cm2. After 24 hr of incubation, the culture media were replaced with phenol red-free M199 (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum. Then, 3 hr after medium replacement, RNA was extracted from each sample using an RNeasy Mini Kit (QIAGEN). Libraries for RNA-seq were prepared using an NEBNext Ultra II Directional RNA Library Prep Kit for Illumina (New England Biolabs) and sequenced on the NextSeq500 (Illumina) as 75 bp single-end reads. RNA-seq data were trimmed using Trim Galore version 0.6.6 (Krueger, 2015Krueger, 2015) and Cutadapt version 2.8 (Martin, 2011). The quality of reads was checked and filtered using FastQC version 0.11.9 (; Andrews, 2010). The reads were mapped to a reference genome canFam3.1 (Lindblad-Toh et al., 2005, Hoeppner et al., 2014) using HISAT2 version 2.2.1 (Kim et al., 2019), and the resulting aligned reads were sorted and indexed using SAMtools version 1.7 (Li et al., 2009). Relative abundances of genes were measured in FPKM using StringTie version 2.1.4 (Kovaka et al., 2019, Pertea et al., 2015). Plots were created in Python using the pandas, matplotlib, NumPy, and seaborn libraries.\n\nSequence data are available in the DNA Data Bank of Japan Sequence Read Archive under accession numbers DRR014156 to DRR014161.\n\n### Statistical analysis\n\nAll statistical analyses and visualizations were performed in Python using the libraries NumPy, pandas, SciPy, pingouin, matplotlib, and seaborn. No statistical analysis was used to predetermine the sample size. Welch\u2019s t-test was used to evaluate statistically signi\ufb01cant di\ufb00erences. p-Values <0.05 were considered statistically signi\ufb01cant.\n",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alejandro San Mart\u00edn, Centro de Estudios Cient\u00edficos Chile\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.86727.3.sa0](https://doi.org/10.7554/eLife.86727.3.sa0)\n\nThis important study reports on the dynamics of PKA investigated at the single-cell level in vitro and in epithelia in vivo. Using different fluorescent biosensors and optogenetic actuators, the authors dissect the signaling pathway responsible for PKA waves, finding that PKA activation is a consequence of PGE2 release, which in turn is triggered by calcium pulses, requiring high ERK activity. The evidence supporting the claims is solid. At this stage, the work is still partly descriptive in nature, and additional measurements would increase the strength of mechanistic insights and physiological relevance.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.86727.3.sa1](https://doi.org/10.7554/eLife.86727.3.sa1)\n\nThis research article by Watabe T and colleagues characterizes PKA waves triggered by prostaglandin E2 (PGE2). What the author discovered is that waves of PKA occur both in vitro, in MDCK epithelial monolayers, and in vivo, in the ear epidermis in mice. The PKA waves are the consequence PGE2 discharge, that in turn is triggered by Calcium bursts. Calcium level and ERK activity intensity control that mechanism by acting at different levels.\n\nThis article is a technological tour de force using different biosensors and optogenetic actuators. However, what makes this article interesting is the ability of combining these tools together to dissect a complex signaling pathway at the single-cell level and with highly dynamic processes. For this reason, this paper represents the essence of modern cell biology and paves the way for the cell biology of the future.\n\nHowever, we think that the paper in this stage is still partly descriptive in its nature, and more measurements are needed to increase the strength of the mechanistic insights. Here below the points that we believe that need some improvement.\n\n1)Even though the phenomenon of PGE2 signal propagation is elegantly demonstrated and well described, the whole paper is mostly of descriptive nature - the PGE2 signal is propagated via intercellular communication and requires Ca transients as well as MAPK activity, however function of these RSPAs in dense epithelium is not taken into consideration.\n\nWhat is the function of these RSPAs in cellular crowding? - Does it promote cell survival or initiate apoptosis? Does it feed into epithelial reorganization during cellular crowding? Still something else? The authors discuss possible roles of this phenomenon in cell competition context, but show no experimental or statistical efforts to answer this question. I believe some additional analysis or simple experiment would help to shed some light on the functional aspect of RSPAs and increase the importance of all the elegant demonstrations and precise experimental setups that the manuscript is rich of. Monolayer experiments using some perturbations that challenge the steady state of epithelial homeostasis - drug treatments/ serum deprivation/ osmotic stress/ combined with live cell imaging and statistical methods that take into account local cell density might provide important answers to these questions. The authors could consider following some of these ideas to improve the overall value of the manuscript.\n\n1. In the line 82-84 the authors claim: \"We found that the pattern of cAMP concentration change is very similar to the activity change of PKA, indicating that a Gs protein-coupled receptor (GsPCR) mediates RSPA\". In our opinion, this conclusion is not well-supported by the results. The authors should at least show that some measurement of the two patterns show correlation. Are the patterns of cAMP of the same size as the pattern of PKA? Do they have the same size depending on cell density? Do they occur at the same frequency as the PKA patterns, depending on the cell density? Do they have an all or nothing activation as PKA or their activation is shading with the distance from the source?\n\n2. In general, the absolute radius of the waves is not a good measurement for single-cell biology studies, especially when comparing different densities or in vivo vs in vitro experiments. We suggest the authors to add the measurement of the number of the cells involved in the waves (or the radius expressed in number of cells).\n\n3. In 6D, the authors should also show the single-cell trajectories to understand better the correlation between PKA and ERK peaks. Is the huger variability in ERK activity ratio dues to different peak time or different ERK activity levels in different cells? The authors should show both the variability in the time and intensity.\n\n4. In lines 130-132, the authors write, \"This observation indicates that the amount of PGE2 secretion is predetermined and that there is a threshold of the cytoplasmic calcium concentration for the triggered PGE2 secretion\". How could the author exclude that the amount of PGE2 is not regulated in its intensity as well? For sure, there is a threshold effect regarding calcium, but this doesn't mean that PGE2 secretion can be further regulated, e.g. by further increasing calcium concentration or by other mechanisms.\n\n5. The manuscript shows that not all calcium transients are followed by RSPAs. Does the local cell density/crowding increase the probability of overlap between calcium transients and RSPAs?\n\nThe revision of the Watabe T paper provides additional data and analyses in response to the reviewers' comments. On our side, we are satisfied by these improvements.\n\nIn the answer to our first question, the authors claim that they did multiple experiments to understand the function of RSPA in MDCK cell, all providing negative results. The authors could consider publishing the negative results as well, as they can be useful for the community.\n\nIn sum, we are convinced of the value of this article, and we thank the authors for the work that has been done.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.86727.3.sa2](https://doi.org/10.7554/eLife.86727.3.sa2)\n\nThis study visualizes a specific localized form of cell-to-cell communication and conveys very well with what dynamics and sensitivity this biological phenomenon occurs.\n\nUsing a FRET-based PKA biosensor, the authors observed that radial localized kinase activity changes spontaneously occur in adjacent cells of certain cell density. This phenomenon of radial propagation of PKA activity changes in groups of cells was further mechanistically elucidated and characterized. Interestingly, the authors found that individual cells in the cell groups form spontaneous Ca2+ transients, which at a certain strength can trigger the biosynthesis and release of prostaglandin E2 (PGE2). PGE2 then acts on the neighboring cells and triggers the increase of cAMP levels and the associated activation of the PKA via G-protein-coupled receptors (EP2 and EP4). In systematic, well-structured experiments, it was then found that the frequency of occurrence of such radial activations depends not only on the cell density but also on the activation state of the ERK MAP kinase pathway.\n\nStrength\n\nIn this study, the authors skillfully used various modern genetically encoded biosensors and other tools such as optogenetic tools to visualize and characterize an interesting biological phenomenon of cell-to-cell communication. The insights gained with these investigations produce a better understanding of the dynamics, sensitivity, and spatial extent with which such communications can occur in a cell network. It is also worth noting that the authors have not limited the studies to 2D cell culture in vitro, but were also able to confirm the findings in an animal model.\n\nWeakness\n\nThe work is hardly conclusive as to the actual biological significance of the phenomenon. It would be interesting to know more under which physiological and pathological conditions PGE2 triggers such radical PKA activity changes. It is not well explained in which tissues and organs and under what conditions this type of cell-to-cell communication could be particularly important.\n\nThe authors also do not explain further why in certain cells of the cell clusters Ca2+ signals occur spontaneously and thus trigger the phenomenon. What triggers these Ca2+ changes? And why could this be linked to certain cell functions and functional changes?\n\nWhat explains the radius and the time span of the radial signal continuation? To what extent are these factors also related to the degradation of PGE2? The work could be stronger if such questions and their answers would be experimentally integrated and discussed.\n",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "77addfc6-e9bc-4b07-a2f9-5703a11310d9",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C1",
+      "claim": "Prostaglandin E2 (PGE2) is a key player in a plethora of physiological and pathological events.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostaglandin E2 (PGE2) is a key player in a plethora of physiological and pathological events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific knowledge about PGE2's role in various biological processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "6dc61602-e899-4d48-a5c1-8e11c0c7bf65",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C2",
+      "claim": "Calcium transients in a single cell cause PGE2-mediated radial spread of PKA activation (RSPA) in neighboring cells in confluent MDCK epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by observing confluent Madin\u2013Darby canine kidney (MDCK) epithelial cells expressing fluorescent biosensors, we demonstrate that calcium transients in a single cell cause PGE2-mediated radial spread of PKA activation (RSPA) in neighboring cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations using fluorescent biosensors in MDCK cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "11af8f5b-6c73-4c08-ab83-4b1ddb153864",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C3",
+      "claim": "RSPA was observed in the basal layer of the mouse epidermis by in vivo imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "By in vivo imaging, RSPA was also observed in the basal layer of the mouse epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo imaging experiments in mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "229fc2af-53e4-4496-a4ed-67994bba7a3c",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C4",
+      "claim": "Optogenetic experiments revealed a switch-like PGE2 discharge in response to increasing cytoplasmic Ca2+ concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments with an optogenetic tool revealed a switch-like PGE2 discharge in response to the increasing cytoplasmic Ca2+ concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using optogenetic tools.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "311e1eea-6566-4fd5-833e-e2352147947c",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C5",
+      "claim": "The cell density of MDCK cells correlated with the frequencies of calcium transients and the following RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell density of MDCK cells correlated with the frequencies of calcium transients and the following RSPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations correlating cell density with calcium transients and RSPA frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "de9424b8-ac9f-4124-91c2-527d33239a01",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C6",
+      "claim": "ERK activation enhanced the frequency of RSPA in MDCK cells and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular signal-regulated kinase (ERK) activation also enhanced the frequency of RSPA in MDCK and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing ERK's effect on RSPA frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "0af0b1b1-e411-49cb-8478-1bdb9e949e55",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C7",
+      "claim": "PGE2 discharge is regulated temporally by calcium transients and ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the PGE2 discharge is regulated temporally by calcium transients and ERK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "ac00f442-849e-4d61-bc98-b6326c1285a8",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C8",
+      "claim": "PGE2 regulates vascular permeability, immune response, and mucosal integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostaglandin E2 (PGE2) is an eicosanoid lipid mediator that regulates a plethora of homeostatic functions, including vascular permeability, immune response, and mucosal integrity (Narumiya, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "9ef6e70a-1df2-4fb7-9c7b-8592b9a5e551",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C9",
+      "claim": "Increased intracellular calcium induces the translocation and activation of cPLA2 from the cytosol to the Golgi, endoplasmic reticulum, and perinuclear membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased intracellular calcium induces the translocation and activation of cPLA2 from the cytosol to the Golgi, endoplasmic reticulum, and perinuclear membrane, where cPLA2 cleaves arachidonic acid out of the membrane phospholipids (Clark et al., 1995; Hirabayashi et al., 1999; Evans et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "493bd013-d196-42db-beab-311addf43076",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C10",
+      "claim": "PGE2 synthesized de novo is secreted to the extracellular space either by passive diffusion or by active transport by multidrug resistance protein 4 (MRP4).",
+      "claim_type": "EXPLICIT",
+      "source": "PGE2 synthesized de novo is secreted to the extracellular space either by passive diffusion or by active transport by multidrug resistance protein 4 (MRP4) (Reid et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "a5a65ab0-b184-48f3-9b50-df26b237e0cb",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C11",
+      "claim": "Secreted PGE2 exerts its actions by acting on four G protein-coupled receptors (GPCRs), EP1 to EP4, expressed in neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The secreted PGE2 exerts its actions by acting on four G protein-coupled receptors (GPCRs), EP1 to EP4, expressed in neighboring cells (Narumiya, 2007; Regan, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "66ff3ae1-cdd7-4f88-9a8a-e2c838028e3a",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C12",
+      "claim": "cPLA2 appears to play a more important role than COX in the short-term regulation of PGE2 production and secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is largely believed that the PGE2 action is primarily regulated by the expression and activation of COX (Kalinski, 2012), cPLA2 appears to play a more important role in the short-term regulation of PGE2 production and secretion (Leslie, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "ec07f4ed-2eb3-4d3c-92ff-02251002f89a",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C13",
+      "claim": "The secretion of arachidonic acid is induced within a few minutes after the calcium-dependent translocation of cPLA2 to endo-membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that the secretion of arachidonic acid is induced within a few minutes after the calcium-dependent translocation of cPLA2 to endo-membranes (Hirabayashi et al., 1999; Evans et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "f1e62821-045d-4bfe-b414-7ae9a846755a",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C14",
+      "claim": "ERK and p38 MAP kinases contribute to the activation of cPLA2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ERK and p38 MAP kinases also contribute to the activation of cPLA2 (Lin et al., 1993), which may be calcium-independent (Gij\u00f3n et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "5c8bbcf4-fd2f-4c76-8445-038b74d856b6",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C15",
+      "claim": "Approximately 100 neighboring cells located within a 100 \u00b5m distance exhibit firework-like spread of PKA activation, which decays within several minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In a typical example, approximately 100 neighboring cells located within a 100 \u00b5m distance exhibit firework-like spread of PKA activation, which decays within several minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "c85d60e1-6c38-4a6b-a71e-0688bd45b74c",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C16",
+      "claim": "The frequency, but not the radius, of RSPA depended on the cell density.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency, but not the radius, of RSPA depended on the cell density; that is, RSPA was observed only when cells were maintained at more than 6 \u00d7 104 cells/cm2 (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "f06c3f62-8b39-4866-9866-21047f5cb86d",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C17",
+      "claim": "RSPA was observed only when cells were maintained at more than 6 \u00d7 10^4 cells/cm^2.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency, but not the radius, of RSPA depended on the cell density; that is, RSPA was observed only when cells were maintained at more than 6 \u00d7 104 cells/cm2 (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "66f15682-8574-420e-abae-6f1f58b00d37",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C18",
+      "claim": "The pattern of cAMP concentration change is very similar to the activity change of PKA, indicating that a Gs protein-coupled receptor (GsPCR) mediates RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the increment of the FRET ratio was not so remarkable as that of Booster-PKA (Figure 1\u2014figure supplement 1D), we found that the pattern of cAMP concentration change is very similar to the activity change of PKA, indicating that a Gs protein-coupled receptor (GsPCR) mediates RSPA (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1D and 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "aa68f1ce-525f-4e4f-bbc5-195235b38019",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C19",
+      "claim": "ATP receptor and PGE2 receptor EP2 are the most abundant GsPCRs in MDCK cells according to previous transcriptome analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous transcriptome analysis of MDCK cells showed that ATP receptor and PGE2 receptor EP2 are the most abundant GsPCRs (Shukla et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous transcriptome analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "761b409d-92bb-4e6b-b3ca-b2e73a7b6033",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C20",
+      "claim": "Inhibitors against EP2, EP4, and COX, but not the ATPase apyrase, abolished RSPA, indicating that PGE2 mediates RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitors against EP2, EP4, and COX, but not the ATPase apyrase, abolished RSPA, indicating that PGE2 mediates RSPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using specific inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "4889d06f-ecb7-43f1-b9f2-904559e22aec",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C21",
+      "claim": "RSPA in the epidermis is mediated by prostaglandins, presumably PGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon i.p. injection of a COX inhibitor, RSPA almost completely disappeared within 10 min (Figure 2C), indicating that RSPA in the epidermis is mediated by prostaglandins, presumably PGE2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "bb880126-4875-4419-89a3-b3113f3e2f26",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C22",
+      "claim": "The cell density in the basal layer is approximately 2 \u00d7 10^6 cells cm^-2, which is markedly higher than that in MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell density in the basal layer is approximately 2 \u00d7 106 cells cm-2, which is markedly higher than that in MDCK cells (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "b74d1957-4a6f-4792-82f2-559cdc14d0a4",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C23",
+      "claim": "The frequency of RSPA in the basal layer cells is approximately 300 cm^-2 hr^-1, which is lower than in MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is not clear whether this may be related to the lower frequency (~300 cm\u20132 hr-1) and smaller radius of RSPA in the basal layer cells compared to MDCK cells (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "b3cfeb26-1ca4-4ed5-95f2-be1f75492314",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C24",
+      "claim": "An intracellular calcium transient precedes RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the principal role of calcium in cPLA2 activation, dual imaging of calcium and PKA showed that an intracellular calcium transient precedes RSPA (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "43d85763-30f3-4edc-b118-f3bc7e8f03c8",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C25",
+      "claim": "The frequency of RSPA was suppressed by the calcium chelator BAPTA-AM.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, the frequency of RSPA was suppressed by the calcium chelator BAPTA-AM (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "256a4e56-3315-4ef8-bd9b-c95e8673fcc4",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C26",
+      "claim": "Not all calcium transients induced RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that not all of the calcium transients induced RSPA (Figure 3C, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "43f443fc-caa6-4fa2-9599-647e197de52e",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C27",
+      "claim": "Approximately only one-tenth of calcium transients evoke RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately only one-tenth of calcium transients evoke RSPA (compare Figures 1E and 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of data from Figures 1E and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "7f0f2afe-aa01-4418-8bfd-79e3d1ac3df6",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C28",
+      "claim": "The frequency of calcium transients was cell density-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the frequency of calcium transients was also cell density-dependent (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "250aa1ea-123c-458e-a63b-4b188f1fd246",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C29",
+      "claim": "Upon activation of the Gq protein-coupled receptor by the DREADD ligand CNO, RSPA was observed with almost the same size and time course as observed under the non-stimulated condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon activation of the Gq protein-coupled receptor by the DREADD ligand CNO, we observed RSPA with almost the same size and time course as observed under the non-stimulated condition (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "2b77e16a-5e11-49d7-b938-a810b5dcbffc",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C30",
+      "claim": "Among cells with the calcium transient, 76% exhibited RSPA, significantly higher than that in the unstimulated state.",
+      "claim_type": "EXPLICIT",
+      "source": "Among cells with the calcium transient, 76% exhibited RSPA, significantly higher than that in the unstimulated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the Gq-DREADD experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "1ef495ee-46c4-4d8f-95ff-cb3cb452f8ca",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C31",
+      "claim": "The average calcium signal intensity was higher in RSPA (+) cells than in RSPA (-) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the average calcium signal intensity was higher in RSPA (+) cells than in RSPA (-) cells (Figure 3G), the peak value of calcium transients appears to be important for the following induction of RSPA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "b8a5a55c-460a-4e9e-9b0e-8aa166134cc2",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C32",
+      "claim": "The peak value of calcium transients appears to be important for the induction of RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the average calcium signal intensity was higher in RSPA (+) cells than in RSPA (-) cells (Figure 3G), the peak value of calcium transients appears to be important for the following induction of RSPA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "bd9b1dba-9555-4d6a-b8c3-317ac723102b",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C33",
+      "claim": "A blue light flash caused a calcium transient, followed by RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, a blue light flash caused a calcium transient, followed by RSPA (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "e4aef3b7-7633-4842-ac53-189121020f35",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C34",
+      "claim": "As the light intensity was increased, the amplitude of calcium transients represented by the R-GECO signal also increased linearly.",
+      "claim_type": "EXPLICIT",
+      "source": "As the light intensity was increased, the amplitude of calcium transients represented by the R-GECO signal also increased linearly (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "308a2831-096d-4271-92d9-81b50401083b",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C35",
+      "claim": "RSPA occurred in an all-or-nothing manner in response to increasing light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, RSPA occurred in an all-or-nothing manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations with OptoSTIM1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "28230edb-db27-4c26-993a-f8616e84652c",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C36",
+      "claim": "The R-GECO signal intensity ratio (F/F0) that evoked RSPA ranged from 1.5 to 2.1 among the different cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The R-GECO signal intensity ratio (F/F0) that evoked RSPA ranged from 1.5 to 2.1 among the different cells (Figure 4D, left), but the size of RSAP did not show a clear correlation with the R-GECO signal intensity ratio (Figure 4D, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "dc2b00e5-d58f-4276-a058-9a5e54989ad2",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C37",
+      "claim": "The size of RSPA did not show a clear correlation with the R-GECO signal intensity ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "The R-GECO signal intensity ratio (F/F0) that evoked RSPA ranged from 1.5 to 2.1 among the different cells (Figure 4D, left), but the size of RSAP did not show a clear correlation with the R-GECO signal intensity ratio (Figure 4D, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "1430625e-d668-4c0f-8793-28428f0dd6b9",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C38",
+      "claim": "There is a threshold of the cytoplasmic calcium concentration for the triggered PGE2 secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that there is a threshold of the cytoplasmic calcium concentration for the triggered PGE2 secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing switch-like RSPA response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "e17e8f15-ba08-4b5d-af83-98e9cc4c1915",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C39",
+      "claim": "Knockout of EP2 and EP4 in reporter MDCK cells abolished CNO-induced RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, we did not observe any RSPA by using the reporter MDCK cells deficient from EP2 and EP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "3660a425-ff10-411f-a608-2afac630b28a",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C40",
+      "claim": "Knockout of COX2 and cPLA2, but not COX1, in the producer cells almost completely abolished CNO-induced RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockout of COX2 and cPLA2, but not COX1, in the producer cells almost completely abolished CNO-induced RSPA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using knockout cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "f3012867-189c-4b52-9069-dd00e6dc8d0e",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C41",
+      "claim": "RSPA is mediated by PGE2 via the Ca2+-cPLA2-COX2-EP2/4-cAMP-PKA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the idea that RSPA is mediated by PGE2 via the Ca2+-cPLA2-COX2-EP2/4-cAMP-PKA pathway (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 5A and summarized in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "9f92a728-1a6a-4bce-b2c7-bd24753d3d12",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C42",
+      "claim": "There is an approximately tenfold difference in the EC50 for PGE2 between high and low cell densities in COX1/2-deficient MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an approximately tenfold difference in the EC50 between the high and low cell densities (Figure 5C), suggesting that increased sensitivity to PGE2 underlies the increased RSPA size under the confluent condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "19e73107-bcab-49af-8df3-13162445c692",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C43",
+      "claim": "Increased sensitivity to PGE2 underlies the increased RSPA size under the confluent condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an approximately tenfold difference in the EC50 between the high and low cell densities (Figure 5C), suggesting that increased sensitivity to PGE2 underlies the increased RSPA size under the confluent condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "b8da12bf-81ef-41c1-b350-6737ed7d2823",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C44",
+      "claim": "Transcriptome analysis showed a twofold increase in GNAS at high cell density.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptome analysis showed a twofold increase in guanine nucleotide-binding protein G(s) subunit alpha (GNAS) (Figure 5D), but it is not clear whether this difference is sufficient to explain the difference in RSPA frequency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transcriptome analysis data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "8b1dd356-fcf6-4577-94b2-2100ef65baaf",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C45",
+      "claim": "No cell density dependence was observed in the transcription of EP2, EP4, phosphodiesterases, or adenylyl cyclases.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any cell density dependence in the transcription of EP2, EP4 (Figure 5D), phosphodiesterases, or adenylyl cyclases (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by transcriptome analysis data shown in Figure 5D and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "ecea4b65-1d9f-4dd2-a948-51b791d6e0ed",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C46",
+      "claim": "Cell density appears to increase the sensitivity to PGE2 mostly in a transcription-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cell density appears to increase the sensitivity to PGE2 mostly in a transcription-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the transcriptome analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "ebced67f-ba98-4f2f-86d3-da25757a69d7",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C47",
+      "claim": "The center of RSPA was localized primarily in areas of high ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It appeared that the center of RSPA was localized primarily in areas of high ERK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations of simultaneous ERK and PKA imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "446c3a3f-f7fc-4ffb-98ae-6cd09435b288",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C48",
+      "claim": "The ERK activity of the cells locating in the center of RSPA was significantly higher than that of the randomly chosen cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further quantitative analysis has shown that the ERK activity of the cells locating in the center of RSPA was significantly higher than that of the randomly chosen cells (Figure 6B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "620dbc7a-ad91-4af3-ae47-34505d336c0c",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C49",
+      "claim": "The size of RSPA did not correlate with the ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the size of RSPA did not correlate with the ERK activity (Figure 6B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "06e694d9-69b5-4f2b-98d3-643c561296d0",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C50",
+      "claim": "RSPA was evoked when the cells exhibited the highest ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that RSPA was evoked when the cells exhibited the highest ERK activity (Figure 6C and D, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C, 6D, and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "6eb274f3-fca2-415f-a889-b1b220835aaf",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C51",
+      "claim": "ERK activation preceded PKA activation by approximately 3 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-correlation analysis of PKA activity and ERK activity revealed that ERK activation preceded PKA activation by approximately 3 min (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cross-correlation analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "388336df-6352-4362-81fb-f230b2a824cf",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C52",
+      "claim": "The ERK activation wave is mediated by EGFR and EGFR ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The ERK activation wave is known to be mediated by EGFR and EGFR ligands (Lin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "dda875c9-44ed-4c3e-88ee-81123213219a",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C53",
+      "claim": "The addition of EGF faintly increased the frequency of RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the addition of EGF faintly increased the frequency of RSPA in our experiments, while the MEK and EGFR inhibitors almost completely abrogated RSPA (Figure 6F), representing that ERK activation or basal ERK activity is essential for RSPA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "710a33cc-e552-47e2-ab41-eea24be6f641",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C54",
+      "claim": "MEK and EGFR inhibitors almost completely abrogated RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the addition of EGF faintly increased the frequency of RSPA in our experiments, while the MEK and EGFR inhibitors almost completely abrogated RSPA (Figure 6F), representing that ERK activation or basal ERK activity is essential for RSPA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "79ead610-8369-4340-b000-67903b5b3ba6",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C55",
+      "claim": "ERK activation or basal ERK activity is essential for RSPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the addition of EGF faintly increased the frequency of RSPA in our experiments, while the MEK and EGFR inhibitors almost completely abrogated RSPA (Figure 6F), representing that ERK activation or basal ERK activity is essential for RSPA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "ee174af8-1120-41f8-9c69-0e37f1307c5a",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C56",
+      "claim": "RSPA is triggered by calcium transient in cells with high ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results obtained with MDCK cells showed that RSPA is triggered by calcium transient in cells with high ERK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "1d76878a-30f6-4357-93a9-5cfe88d04750",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C57",
+      "claim": "RSPA in the basal layer of mouse auricular epidermis was significantly attenuated 30 min after the administration of MEKi.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, RSPA in the basal layer was significantly attenuated 30 min after the administration, representing that ERK activity is required for RSPA in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from in vivo imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "7fbef9f1-8e67-4694-a579-9ea28ef884c6",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C58",
+      "claim": "ERK activity is required for RSPA in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, RSPA in the basal layer was significantly attenuated 30 min after the administration, representing that ERK activity is required for RSPA in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the in vivo experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "8d618347-b3f2-49a4-b0b1-872fdcbbb262",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C59",
+      "claim": "Only one study has visualized PGE2 secretion from a single cell prior to this work.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, only one study has visualized PGE2 secretion from a single cell (Zonta et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "80ea9201-9c6b-4a91-90ec-81e9a0ed2798",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C60",
+      "claim": "The spontaneous release of PGE2 has never been visualized in either tissue culture cells or live animals prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the spontaneous release of PGE2 has never been visualized in either tissue culture cells or live animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "2b0ef3c2-6153-4b9c-851f-3afccd46b789",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C61",
+      "claim": "RSPA was not observed in melanoma tissues despite frequent calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we failed to observe RSPA in melanoma tissues in which calcium transients were frequently observed (Konishi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "1fce6444-78b1-4c9d-bd6b-b6676719b3b8",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C62",
+      "claim": "Repetitive PGE2 secretion from tumor cells maintains a high PGE2 concentration in the tumor microenvironment, which prevented observation of pulsatile PKA activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that repetitive PGE2 secretion from tumor cells maintains a high PGE2 concentration in the tumor microenvironment, which prevented us from observing pulsatile PKA activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lack of RSPA observation in melanoma tissues.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "4c5b338a-5694-464d-a4de-331dababac4e",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C63",
+      "claim": "The PGE2 concentration in melanoma tissue reaches as high as 10 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the PGE2 concentration in melanoma tissue is known to reach as high as 10 \u00b5M (Konishi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "82145369-18c6-4630-82f3-18c1977a5666",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C64",
+      "claim": "RSPA in the skin may function as an alert signal in an early phase of cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RSPA in the skin may function as an alert signal in an early phase of cellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the function of RSPA.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "e956f1f5-eb3e-4b69-9bce-6b623da751e6",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C65",
+      "claim": "Visualization of PGE2 secretion at the single-cell resolution revealed a switch-like response of PGE2 discharge to the increasing Ca2+ concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, visualization of PGE2 secretion at the single-cell resolution revealed a switch-like response of PGE2 discharge to the increasing Ca2+ concentration (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "c544e9c7-672d-4fef-a6b5-d1c03ed10bbe",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C66",
+      "claim": "Recruitment of cPLA2 to the ER and perinuclear membrane requires a higher Ca2+ concentration than that to Golgi.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of cPLA2 to the ER and perinuclear membrane requires a higher Ca2+ concentration than that to Golgi (Evans et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "461344d5-4ad9-4322-ac68-601938d228d2",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C67",
+      "claim": "cPLA2 may be sequestered at Golgi at low intracellular Ca2+ concentration, and only when the intracellular Ca2+ concentration exceeds the threshold does cPLA2 reach the ER to liberate arachidonic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, cPLA2 may be sequestered at Golgi at low intracellular Ca2+ concentration, and only when the intracellular Ca2+ concentration exceeds the threshold that cPLA2 may reach the ER to liberate arachidonic acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the switch-like response of PGE2 discharge.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "568e497c-d62f-4a3e-9702-32653b4f4918",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C68",
+      "claim": "Mechanical stress might regulate the frequency of Ca2+ transients since the frequency is cell density-dependent in MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "What does regulate the frequency of Ca2+ transients? Since the frequency is cell density-dependent in MDCK cells (Figure 3D), one candidate might be mechanical stress.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation for the regulation of Ca2+ transient frequency.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "a5cb507b-4997-4080-853b-819378e16f1d",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C69",
+      "claim": "293 and HeLa cells demonstrate that cells show an increment in their frequency of calcium transients with mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "293 and HeLa cells demonstrate that cells show an increment in their frequency (Morita et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "04750acb-7307-4ea2-b4a3-a4a13698e91e",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C70",
+      "claim": "A clear mechano receptor has not been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a clear mechano receptor has not been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "19f1610d-8b6e-47d3-846f-7e06c24711be",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C71",
+      "claim": "ERK positively regulates cPLA2 by phosphorylating Ser505.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ERK positively regulates cPLA2 by phosphorylating Ser505 (Cook and McCormick, 1993; Qiu et al., 1993), it is reasonable that the RSPA is regulated by ERK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "10a94096-b9f0-4fc2-8e02-e7cced72399b",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C72",
+      "claim": "It is reasonable that RSPA is regulated by ERK activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Because ERK positively regulates cPLA2 by phosphorylating Ser505 (Cook and McCormick, 1993; Qiu et al., 1993), it is reasonable that the RSPA is regulated by ERK activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the known role of ERK in regulating cPLA2.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "b61c1f7d-387c-445f-90f1-e77320e45f01",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C73",
+      "claim": "The ERK activation wave is operated by a positive feedforward mechanism in which ERK promotes EGFR ligand shedding and the following EGFR activation increases ERK activity in the neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ERK activation wave is operated by a positive feedforward mechanism in which ERK promotes EGFR ligand shedding and the following EGFR activation increases ERK activity in the neighboring cells (Hino et al., 2020; Aoki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "5999f6e6-f2de-4646-b230-b692377f3f51",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C74",
+      "claim": "The ERK activation functions as the 'AND gate' for PGE2 production together with the calcium transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we found that the ERK activation functions as the 'AND gate' for PGE2 production together with the calcium transients (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and summarized in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "a0dbf513-e004-4b6b-859d-bd7e6b89e21a",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C75",
+      "claim": "The propagation of PKA activation is approximately 100 \u00b5m/min, which is markedly faster than that of ERK activation at 2\u20134 \u00b5m/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the propagation of PKA activation, ~100 \u00b5m/min (Figure 1B), is markedly faster than that of ERK activation, 2\u20134 \u00b5m/min (Hiratsuka et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from Figure 1B and a citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "b655d364-8dc9-492f-addd-b7353c3063c2",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C76",
+      "claim": "PKA antagonizes Ras-dependent ERK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because PKA antagonizes Ras-dependent ERK activation (Cook and McCormick, 1993; Burgering et al., 1993; Wu et al., 1993), the EGFR ligand-ERK and PGE2-PKA pathways fit the Turing diffusion reaction model consisting of slow positive and fast negative signaling cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "0b5a9429-a625-4413-990e-6106a68a8899",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C77",
+      "claim": "The EGFR ligand-ERK and PGE2-PKA pathways fit the Turing diffusion reaction model consisting of slow positive and fast negative signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "Because PKA antagonizes Ras-dependent ERK activation (Cook and McCormick, 1993; Burgering et al., 1993; Wu et al., 1993), the EGFR ligand-ERK and PGE2-PKA pathways fit the Turing diffusion reaction model consisting of slow positive and fast negative signaling cascades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the known interactions between PKA and ERK pathways.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "99eefa90-551d-4186-a5f3-96b75410745e",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C78",
+      "claim": "PGE2 suppresses extrusion of Ras-transformed MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, extrusion of Ras-transformed MDCK cells has been shown to be suppressed by PGE2 (Sato et al., 2020), whereas extrusion of MDCK cells expressing constitutively active YAP was dependent on PGE2 (Ishihara et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "013e9d70-7d87-4aa7-a025-fce0d7d6d051",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C79",
+      "claim": "Extrusion of MDCK cells expressing constitutively active YAP was dependent on PGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, extrusion of Ras-transformed MDCK cells has been shown to be suppressed by PGE2 (Sato et al., 2020), whereas extrusion of MDCK cells expressing constitutively active YAP was dependent on PGE2 (Ishihara et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "92167b71-005e-43a8-b7f7-fd2c70682621",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C80",
+      "claim": "The effect of PGE2 in cell competition could be markedly different according to the signaling cascades that cause the oncogenic changes of MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the effect of PGE2 in cell competition could be markedly different according to the signaling cascades that cause the oncogenic changes of MDCK cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the contrasting effects of PGE2 on different types of transformed MDCK cells.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "1bb5299d-2560-4de7-bd52-09b282a1b584",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C81",
+      "claim": "PGE2 promotes the extrusion of MDCK cells expressing the constitutively active YAP by internalization of E-cadherin.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PGE2 promotes the extrusion of MDCK cells expressing the constitutively active YAP by internalization of E-cadherin (Ishihara et al., 2020), which is a relatively slow process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "6ea8c628-fd1c-4b0d-9169-6b741b2bbe5a",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C82",
+      "claim": "Multiple RSPA events may be needed to reach the concentration required for the induction of extrusion since RSPA causes PKA activation for only several minutes in each cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Since RSPA causes PKA activation for only several minutes in each cell, multiple RSPA events may be needed to reach the concentration required for the induction of extrusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the relationship between RSPA and cell extrusion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "00f7cb5c-c9b8-4a45-ad43-3006f85575e0",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C83",
+      "claim": "The radius of RSPA in MDCK cells might partially represent the amount of PGE2 discharge from the single cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The radius of RSPA, in MDCK cells, might partially represent the amount of PGE2 discharge from the single cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the RSPA radius.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "5e8b095d-b846-493b-a3e1-412a896b0f61",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C84",
+      "claim": "The authors failed to quantify the PGE2 in MDCK cells because of the cell-to-cell junction of the confluent MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, because of the cell-to-cell junction of the confluent MDCK cells, we failed to quantify the PGE2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "9d6b63f3-95ab-4d56-9355-a7040e2f4593",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C85",
+      "claim": "In HeLa cells, PGE2 secreted from a single cell was quantitated by combining fluorescence microscopy and a simulation model.",
+      "claim_type": "EXPLICIT",
+      "source": "In HeLa cells, we quantitated PGE2 secreted from a single cell by combining fluorescence microscopy and a simulation model (Watabe et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to another study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "951a1d02-eb69-46ec-b688-9d3c7d6d8d06",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C86",
+      "claim": "The physiological relevance of RSPA remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be clear that the physiological relevance of RSPA remains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "3824dbd8-b619-44db-96fc-19ced0d980ac",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C87",
+      "claim": "Treatment of NSAIDs, which perturb RSPA, did not show a detectable change in cell growth, ERK wave propagation during collective migration, migration velocity, cell survival, or apoptosis in MDCK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In MDCK cells, the treatment of NSAIDs, which perturb RSPA, did not show a detectable change in cell growth, ERK wave propagation during collective migration, migration velocity, cell survival, or apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "33447bbe-9b98-47c8-998e-d1d3ebb2251e",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C88",
+      "claim": "The frequency of RSPA in mice epidermis was not remarkably changed by inflammation or collective migration, evoked by TPA treatment or wound, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice epidermis, the frequency of RSPA was not remarkably changed by inflammation or corrective migration, evoked by TPA treatment or wound, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations in mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "75f007d6-a96e-4e29-8a83-64cd750631a8",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C89",
+      "claim": "PGE2 discharge from a single cell is a stochastic and switch-like event in the confluent MDCK cells and mouse epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the PGE2 discharge from a single cell is a stochastic and switch-like event in the confluent MDCK cells and mouse epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "7a383fcc-5487-41fb-8b6c-a6b20f3cdabb",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C90",
+      "claim": "The secreted PGE2 can transiently activate PKA in cells within a few hundred micrometers from the producer cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The secreted PGE2 can transiently activate PKA in cells within a few hundred micrometers from the producer cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations of RSPA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "45b0c0ad-e026-4d7d-9d90-e337e2c63bfd",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "claim_id": "C91",
+      "claim": "The question of why cells adopt pulsatile rather than continuous secretion of PGE2 awaits the future.",
+      "claim_type": "EXPLICIT",
+      "source": "The question of why cells adopt this pulsatile rather than continuous secretion of PGE2 awaits the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about an unanswered question in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "807915d3-e96a-461d-817a-a932e6233cd2",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PGE2 mediates radial spread of PKA activation (RSPA) in confluent MDCK cells. RSPA involves approximately 100 neighboring cells within 100 \u03bcm, decays within several minutes, and is cell density-dependent (occurring only above 6\u00d710\u2074 cells/cm\u00b2). Inhibitors against EP2, EP4, and COX abolished RSPA, confirming PGE2 as the mediator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15-C18, and C20 provide converging evidence from biosensor imaging, pharmacological inhibition, and quantitative analysis. The use of specific inhibitors (C20) and cAMP biosensors (C18) strongly support PGE2-mediated intercellular signaling. The cell density threshold (C16-C17) is clearly demonstrated in Figure 1D-E.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "278c6e6b-35a4-4107-9b76-92c271245bb4",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RSPA occurs in vivo in the basal layer of mouse epidermis and is mediated by prostaglandins, presumably PGE2. The basal layer has higher cell density (~2\u00d710\u2076 cells/cm\u00b2) but lower RSPA frequency (~300 cm\u207b\u00b2 hr\u207b\u00b9) compared to MDCK cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21-C23 demonstrate RSPA in vivo using transgenic mice and two-photon microscopy. COX inhibitor administration (C21, Figure 2C) provides strong pharmacological evidence. The quantitative comparison between in vitro and in vivo systems (C22-C23) is well-documented in Figure 2E.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "874b0aa4-95d5-4b2f-b846-56cc95359d45",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Calcium transients precede and trigger RSPA, but only approximately one-tenth of calcium transients evoke RSPA. The peak calcium signal intensity is important for RSPA induction, with higher calcium signals in RSPA(+) cells. Both calcium transient frequency and RSPA frequency are cell density-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C32 provide comprehensive evidence from dual imaging (C24, Figure 3A), calcium chelation (C25), Gq-DREADD experiments (C29-C30), and quantitative analysis (C27, C31). The observation that only ~10% of calcium transients trigger RSPA (C27) and the correlation with calcium signal intensity (C31-C32) are well-supported by experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "a5c24062-52f4-4115-8361-0974a569dc29",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PGE2 discharge occurs in a switch-like, all-or-nothing manner in response to increasing cytoplasmic Ca\u00b2\u207a concentrations. Optogenetic experiments show that while calcium amplitude increases linearly with light intensity, RSPA occurs as a threshold response with F/F0 ranging from 1.5 to 2.1, and RSPA size does not correlate with calcium signal intensity above threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C33-C38, and C65 provide strong evidence using OptoSTIM1 optogenetic tool (Figure 4). The linear calcium response (C34) contrasted with all-or-nothing RSPA (C35) clearly demonstrates switch-like behavior. The threshold range (C36) and lack of correlation between RSPA size and calcium intensity above threshold (C37) are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "a8ee273d-5d09-4e2a-92cf-c0fcd23466d4",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RSPA is mediated by PGE2 via the Ca\u00b2\u207a-cPLA2-COX2-EP2/4-cAMP-PKA pathway. Knockout experiments show that EP2/EP4 in reporter cells and COX2/cPLA2 (but not COX1) in producer cells are essential for RSPA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 provide definitive genetic evidence using CRISPR/Cas9 knockouts (Figure 5A). The systematic knockout approach targeting different pathway components strongly supports the proposed signaling cascade. The specificity for COX2 over COX1 (C40) is particularly informative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "8b2b50ce-6033-4de0-b3a2-f72e49ca1844",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell density correlates with RSPA frequency and modulates PGE2 sensitivity. High cell density increases PGE2 sensitivity by approximately tenfold (EC50 difference), which appears to occur mostly through transcription-independent mechanisms, as transcriptome analysis showed minimal changes in EP2, EP4, phosphodiesterases, or adenylyl cyclases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C42-C46 demonstrate cell density effects through dose-response experiments (C42, Figure 5C) and transcriptome analysis (C44-C45). The tenfold EC50 difference is clearly shown. However, the mechanism remains incompletely understood (C46), as the twofold GNAS increase (C44) may not fully explain the sensitivity change.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ERK activation enhances RSPA frequency and is essential for RSPA. RSPA centers localize to areas of high ERK activity, with ERK activation preceding PKA activation by ~3 minutes. MEK and EGFR inhibitors almost completely abrogate RSPA, while EGF addition slightly increases RSPA frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47-C51, C53-C56 provide strong evidence from dual ERK/PKA imaging (Figure 6A-E), cross-correlation analysis (C51), and pharmacological interventions (C53-C54). The temporal relationship (C51) and spatial correlation (C48) are well-documented. The essential role of ERK is demonstrated by near-complete RSPA abolition with inhibitors (C54).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "b631dc1a-6261-463e-bed5-908f6438b1d8",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ERK activity is required for RSPA in vivo. MEK inhibitor administration significantly attenuated RSPA in the basal layer of mouse auricular epidermis within 30 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 extend the in vitro ERK findings to in vivo context using transgenic mice and MEK inhibitor (Figure 6G-H). The rapid attenuation of RSPA following MEKi administration provides strong pharmacological evidence for ERK's role in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "f15a7b5a-d4e1-4a83-9aec-01ed870f49c7",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PGE2 discharge is regulated temporally by calcium transients and ERK activity, functioning as an 'AND gate' where both signals are required. The discharge is stochastic and switch-like in both MDCK cells and mouse epidermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C74, and C89 represent integrative conclusions supported by the collective experimental evidence. The 'AND gate' model (C74, Figure 7) is well-supported by data showing both calcium and ERK are necessary but individually insufficient for RSPA. The stochastic and switch-like nature (C89) is demonstrated throughout the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "0e0ca7e4-c351-4805-9a47-402d1b108d4b",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PKA activation propagates much faster (~100 \u03bcm/min) than ERK activation (2-4 \u03bcm/min). Because PKA antagonizes Ras-dependent ERK activation, the EGFR ligand-ERK and PGE2-PKA pathways fit a Turing diffusion-reaction model with slow positive and fast negative signaling cascades.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 integrate current findings with established literature. The propagation speed difference (C75) is supported by Figure 1B and cited literature. The Turing model interpretation (C77) is a reasonable theoretical framework given the known PKA-ERK antagonism (C76) and differential propagation speeds, though direct experimental validation of pattern formation is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "d6403f10-9e59-4531-b7e9-2074a4fd905b",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The physiological relevance of RSPA remains unclear. NSAID treatment did not detectably affect cell growth, ERK wave propagation, migration velocity, cell survival, or apoptosis in MDCK cells. RSPA frequency in mouse epidermis was not remarkably changed by inflammation or wound-induced collective migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 honestly acknowledge a major limitation of the study. The negative results (C87-C88) are important for understanding RSPA's biological role. However, the lack of detectable phenotypes may reflect limitations in the assays used rather than true absence of function, and alternative functional readouts were not extensively explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "50aba8f3-c596-4e07-9b4f-d7ad13cd1546",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Secreted PGE2 can transiently activate PKA in cells within a few hundred micrometers from the producer cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is directly supported by the RSPA observations throughout the manuscript, particularly the radius measurements showing ~100 \u03bcm spread (C15, Figures 1-2). This represents a key spatial characteristic of the PGE2 signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "f1b8c132-3140-4ec5-831f-32d7f8e199ae",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "RSPA was not observed in melanoma tissues despite frequent calcium transients, possibly because high constitutive PGE2 levels (~10 \u03bcM) in the tumor microenvironment prevent pulsatile PKA activation. RSPA in skin may function as an early alert signal for cellular stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 reports a negative observation, while C62 and C64 are speculative interpretations. The high PGE2 concentration in melanoma (C63) is cited from literature, but the causal link to absent RSPA (C62) is not experimentally tested. The proposed alert signal function (C64) is speculation without supporting functional data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "85316c72-4228-4fb3-a00b-5988195fd8e0",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The switch-like PGE2 response may result from differential Ca\u00b2\u207a requirements for cPLA2 recruitment to different organelles, with cPLA2 sequestered at Golgi at low Ca\u00b2\u207a and reaching ER only above threshold. Mechanical stress might regulate calcium transient frequency based on cell density dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C68 are speculative mechanistic explanations. While C67 is based on cited literature about cPLA2 localization (C66), it remains untested in this study. The mechanical stress hypothesis (C68) is reasonable given cell density effects but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "66d63a5b-f448-4943-af8f-8e3493262412",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PGE2 has context-dependent effects on cell competition: it suppresses extrusion of Ras-transformed MDCK cells but promotes extrusion of YAP-expressing cells through E-cadherin internalization. Multiple RSPA events may be needed to reach concentrations required for extrusion since each RSPA causes only transient PKA activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C81 cite previous literature about PGE2's role in cell competition, while C82 is speculation about RSPA's potential involvement. The connection between RSPA and cell competition is not experimentally tested in this study. The speculation (C82) is reasonable but unsupported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "dcc7c057-dfa4-4dc3-9dba-a5d19e08cf20",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The radius of RSPA in MDCK cells might partially represent PGE2 discharge amount, but direct quantification was not possible due to cell-cell junctions. In HeLa cells, PGE2 from single cells was quantified using fluorescence microscopy and simulation modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C83 is speculation, while C84 acknowledges a technical limitation. Claim C85 references separate work in HeLa cells but doesn't provide data in this manuscript. The relationship between RSPA radius and PGE2 amount remains unvalidated in the MDCK system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on PGE2 biology: PGE2 is a key eicosanoid mediator regulating vascular permeability, immune response, and mucosal integrity. It is produced via calcium-dependent cPLA2 translocation and activation, followed by COX-mediated conversion to PGE2, which is secreted and acts on EP1-EP4 receptors. cPLA2 plays a more important role than COX in short-term regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C14 provide established background information supported by appropriate citations to previous literature. These claims accurately represent the current understanding of PGE2 biosynthesis and signaling pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Additional background and context from literature: ATP receptor and EP2 are abundant GsPCRs in MDCK cells; ERK activation waves are mediated by EGFR/ligands through positive feedforward; only one prior study visualized PGE2 secretion from single cells; ERK phosphorylates cPLA2 at Ser505; cPLA2 recruitment to ER requires higher Ca\u00b2\u207a than to Golgi; mechanical stress may increase calcium transient frequency but no clear mechanoreceptor is identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C52, C59-C60, C66, C69-C71, C73 provide relevant background information from cited literature. These claims accurately represent prior knowledge and appropriately contextualize the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "cfef94d4-c61c-42be-a997-1383efbe79a5",
+      "content_id": "f0651b04-e87b-44ee-9fc1-5966c6d578f6",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Interpretive statements: It is reasonable that RSPA is regulated by ERK activity given ERK's role in cPLA2 phosphorylation. The question of why cells adopt pulsatile rather than continuous PGE2 secretion remains unanswered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72 and C91 represent reasonable interpretations and acknowledgments of open questions. C72 is a logical inference from established ERK-cPLA2 relationships, while C91 honestly identifies a fundamental mechanistic question that remains unresolved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "1d23f514-36f8-4594-ad9b-430355b63f06",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that calcium transients in single cells cause PGE2-mediated radial spread of PKA activation (RSPA) in neighboring MDCK cells and mouse epidermis. RSPA involves approximately 100 cells within 100 \u03bcm, decays within minutes, and is mediated by the Ca2+-cPLA2-COX2-EP2/4-cAMP-PKA pathway.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers affirm this core finding. The editor states 'the evidence supporting the claims is solid' and reviewers describe the work as 'elegantly demonstrated and well described.' Reviewer 2 notes the authors 'skillfully used various modern genetically encoded biosensors' to characterize this phenomenon, and no concerns are raised about the basic RSPA mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "357dc196-6b47-486f-a528-0ad0662e3bb8",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "RSPA was observed in vivo in the basal layer of mouse epidermis with higher cell density (~2\u00d710^6 cells/cm\u00b2) but lower frequency (~300 cm\u207b\u00b2 hr\u207b\u00b9) compared to MDCK cells. ERK activity is required for RSPA in vivo, as demonstrated by MEK inhibitor treatment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the in vivo validation. Reviewer 2 states 'it is also worth noting that the authors have not limited the studies to 2D cell culture in vitro, but were also able to confirm the findings in an animal model.' The editor confirms 'PKA investigated at the single-cell level in vitro and in epithelia in vivo' with solid evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "f33309cc-170a-4bae-9d1f-5c1e69d159be",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Optogenetic experiments using OptoSTIM1 revealed that PGE2 discharge occurs in a switch-like, all-or-nothing manner in response to increasing calcium concentrations. The calcium threshold (F/F0 ratio 1.5-2.1) triggers RSPA, but RSPA size does not correlate with calcium intensity above threshold.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding without challenge. The editor notes the authors 'dissect the signaling pathway' and find 'PKA activation is a consequence of PGE2 release, which in turn is triggered by calcium pulses.' Reviewer 1 initially questioned whether PGE2 amount is predetermined (point 4), but after revision expressed satisfaction with the improvements.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "cbf99c18-d793-4fd9-8e8c-26a3b5faee66",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Cell density correlates with the frequency of calcium transients and RSPA in MDCK cells. RSPA was observed only above 6\u00d710\u2074 cells/cm\u00b2, and frequency (but not radius) increased with density.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this density-dependence finding. Reviewer 1 requested additional measurements (expressing radius in number of cells rather than absolute distance), which the authors addressed. After revision, reviewers stated 'we are satisfied by these improvements.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "ERK activation enhances RSPA frequency and functions as an 'AND gate' with calcium transients for PGE2 production. RSPA centers localize to areas of high ERK activity, ERK activation precedes PKA activation by ~3 minutes, and MEK/EGFR inhibitors abolish RSPA.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states the authors find 'PKA activation is a consequence of PGE2 release, which in turn is triggered by calcium pulses, requiring high ERK activity.' Reviewer 1 requested additional single-cell trajectory analysis (point 3), which was addressed. No reviewer challenges the ERK requirement or AND-gate model.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "6c8369fd-22ce-4a36-969d-56c1690e803f",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The pattern of cAMP concentration change is very similar to PKA activity change, indicating that a Gs protein-coupled receptor (GsPCR) mediates RSPA.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 specifically challenges this conclusion, stating 'this conclusion is not well-supported by the results' and requesting quantitative correlation analysis including size, frequency, and spatial patterns of cAMP vs PKA. While the authors addressed this in revision and reviewers were 'satisfied,' the initial concern indicates the inference required strengthening.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "2f9acac1-45a5-44f3-88f3-4901f72fba29",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Calcium transients precede RSPA, and calcium chelation suppresses RSPA frequency. However, only ~10% of calcium transients evoke RSPA. Higher calcium signal intensity in RSPA(+) cells suggests peak calcium value is important for RSPA induction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the calcium requirement and threshold concept. Reviewer 1 asked whether local cell density increases the probability of calcium-RSPA overlap (point 5), which was addressed. The editor confirms calcium pulses trigger PGE2 release as a core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "2ccb80ff-91a5-43a0-9c5e-e0bbf28a57d4",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Knockout experiments demonstrate that EP2/EP4 receptors in reporter cells and COX2/cPLA2 (but not COX1) in producer cells are required for RSPA.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These genetic validation experiments are not questioned by reviewers. The editor states the evidence is 'solid' and reviewers praise the systematic approach. The knockout data directly support the proposed Ca2+-cPLA2-COX2-EP2/4 pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "18d56800-a3fc-4a9b-b878-e47d0e76fcc7",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Cell density increases sensitivity to PGE2 (~10-fold difference in EC50 between high and low density). Transcriptome analysis showed 2-fold increase in GNAS but no density-dependence in EP2, EP4, phosphodiesterases, or adenylyl cyclases, suggesting transcription-independent mechanism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these mechanistic findings. The transcriptome analysis provides supporting evidence for the density-dependent effects, and the conclusion about transcription-independent mechanisms is accepted without objection.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "bcd50e90-a3ae-4553-b921-678d6e8db737",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The physiological relevance of RSPA remains unclear. NSAIDs did not detectably change cell growth, ERK waves, migration, survival, or apoptosis in MDCK cells, and RSPA frequency was not changed by inflammation or wound-induced migration in mouse epidermis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "All reviewers identify lack of functional understanding as a major weakness. Reviewer 1 states 'the whole paper is mostly of descriptive nature' and requests experiments on RSPA function in cellular crowding, survival, apoptosis, or epithelial reorganization. Reviewer 2 states 'the work is hardly conclusive as to the actual biological significance.' The authors acknowledge performing multiple negative experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "60c8ca20-a18b-447b-a31d-6cf3b75a4d28",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "PKA activation propagates faster (~100 \u03bcm/min) than ERK activation (2-4 \u03bcm/min). Because PKA antagonizes Ras-dependent ERK activation, the EGFR ligand-ERK and PGE2-PKA pathways fit a Turing diffusion-reaction model with slow positive and fast negative signaling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this theoretical interpretation. The speed difference is based on direct measurements and cited literature. While speculative, the Turing model interpretation is presented as a discussion point and not questioned by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "d690dc3b-3a8c-4571-95e0-95442baedf6c",
+      "content_id": "f13ad035-072c-41fd-84b0-e4dc0f1aef73",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "RSPA was not observed in melanoma tissues despite frequent calcium transients, possibly because high constitutive PGE2 (up to 10 \u03bcM) prevents pulsatile PKA activation. RSPA may function as an alert signal in early cellular stress.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative interpretations acknowledged by the authors. Reviewer 2 asks 'under which physiological and pathological conditions PGE2 triggers such radical PKA activity changes' and notes this is 'not well explained.' The melanoma observation is data, but the functional interpretation remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6dc61602-e899-4d48-a5c1-8e11c0c7bf65",
+      "result_id": "807915d3-e96a-461d-817a-a932e6233cd2"
+    },
+    {
+      "claim_id": "5c8bbcf4-fd2f-4c76-8445-038b74d856b6",
+      "result_id": "807915d3-e96a-461d-817a-a932e6233cd2"
+    },
+    {
+      "claim_id": "c85d60e1-6c38-4a6b-a71e-0688bd45b74c",
+      "result_id": "807915d3-e96a-461d-817a-a932e6233cd2"
+    },
+    {
+      "claim_id": "f06c3f62-8b39-4866-9866-21047f5cb86d",
+      "result_id": "807915d3-e96a-461d-817a-a932e6233cd2"
+    },
+    {
+      "claim_id": "66f15682-8574-420e-abae-6f1f58b00d37",
+      "result_id": "807915d3-e96a-461d-817a-a932e6233cd2"
+    },
+    {
+      "claim_id": "761b409d-92bb-4e6b-b3ca-b2e73a7b6033",
+      "result_id": "807915d3-e96a-461d-817a-a932e6233cd2"
+    },
+    {
+      "claim_id": "11af8f5b-6c73-4c08-ab83-4b1ddb153864",
+      "result_id": "278c6e6b-35a4-4107-9b76-92c271245bb4"
+    },
+    {
+      "claim_id": "4889d06f-ecb7-43f1-b9f2-904559e22aec",
+      "result_id": "278c6e6b-35a4-4107-9b76-92c271245bb4"
+    },
+    {
+      "claim_id": "bb880126-4875-4419-89a3-b3113f3e2f26",
+      "result_id": "278c6e6b-35a4-4107-9b76-92c271245bb4"
+    },
+    {
+      "claim_id": "b74d1957-4a6f-4792-82f2-559cdc14d0a4",
+      "result_id": "278c6e6b-35a4-4107-9b76-92c271245bb4"
+    },
+    {
+      "claim_id": "b3cfeb26-1ca4-4ed5-95f2-be1f75492314",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "43d85763-30f3-4edc-b118-f3bc7e8f03c8",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "256a4e56-3315-4ef8-bd9b-c95e8673fcc4",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "43f443fc-caa6-4fa2-9599-647e197de52e",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "7f0f2afe-aa01-4418-8bfd-79e3d1ac3df6",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "250aa1ea-123c-458e-a63b-4b188f1fd246",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "2b77e16a-5e11-49d7-b938-a810b5dcbffc",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "1ef495ee-46c4-4d8f-95ff-cb3cb452f8ca",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "b8a5a55c-460a-4e9e-9b0e-8aa166134cc2",
+      "result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45"
+    },
+    {
+      "claim_id": "229fc2af-53e4-4496-a4ed-67994bba7a3c",
+      "result_id": "a5c24062-52f4-4115-8361-0974a569dc29"
+    },
+    {
+      "claim_id": "bd9b1dba-9555-4d6a-b8c3-317ac723102b",
+      "result_id": "a5c24062-52f4-4115-8361-0974a569dc29"
+    },
+    {
+      "claim_id": "e4aef3b7-7633-4842-ac53-189121020f35",
+      "result_id": "a5c24062-52f4-4115-8361-0974a569dc29"
+    },
+    {
+      "claim_id": "308a2831-096d-4271-92d9-81b50401083b",
+      "result_id": "a5c24062-52f4-4115-8361-0974a569dc29"
+    },
+    {
+      "claim_id": "28230edb-db27-4c26-993a-f8616e84652c",
+      "result_id": "a5c24062-52f4-4115-8361-0974a569dc29"
+    },
+    {
+      "claim_id": "dc2b00e5-d58f-4276-a058-9a5e54989ad2",
+      "result_id": "a5c24062-52f4-4115-8361-0974a569dc29"
+    },
+    {
+      "claim_id": "1430625e-d668-4c0f-8793-28428f0dd6b9",
+      "result_id": "a5c24062-52f4-4115-8361-0974a569dc29"
+    },
+    {
+      "claim_id": "e956f1f5-eb3e-4b69-9bce-6b623da751e6",
+      "result_id": "a5c24062-52f4-4115-8361-0974a569dc29"
+    },
+    {
+      "claim_id": "e17e8f15-ba08-4b5d-af83-98e9cc4c1915",
+      "result_id": "a8ee273d-5d09-4e2a-92cf-c0fcd23466d4"
+    },
+    {
+      "claim_id": "3660a425-ff10-411f-a608-2afac630b28a",
+      "result_id": "a8ee273d-5d09-4e2a-92cf-c0fcd23466d4"
+    },
+    {
+      "claim_id": "f3012867-189c-4b52-9069-dd00e6dc8d0e",
+      "result_id": "a8ee273d-5d09-4e2a-92cf-c0fcd23466d4"
+    },
+    {
+      "claim_id": "311e1eea-6566-4fd5-833e-e2352147947c",
+      "result_id": "8b2b50ce-6033-4de0-b3a2-f72e49ca1844"
+    },
+    {
+      "claim_id": "9f92a728-1a6a-4bce-b2c7-bd24753d3d12",
+      "result_id": "8b2b50ce-6033-4de0-b3a2-f72e49ca1844"
+    },
+    {
+      "claim_id": "19e73107-bcab-49af-8df3-13162445c692",
+      "result_id": "8b2b50ce-6033-4de0-b3a2-f72e49ca1844"
+    },
+    {
+      "claim_id": "b8da12bf-81ef-41c1-b350-6737ed7d2823",
+      "result_id": "8b2b50ce-6033-4de0-b3a2-f72e49ca1844"
+    },
+    {
+      "claim_id": "8b1dd356-fcf6-4577-94b2-2100ef65baaf",
+      "result_id": "8b2b50ce-6033-4de0-b3a2-f72e49ca1844"
+    },
+    {
+      "claim_id": "ecea4b65-1d9f-4dd2-a948-51b791d6e0ed",
+      "result_id": "8b2b50ce-6033-4de0-b3a2-f72e49ca1844"
+    },
+    {
+      "claim_id": "de9424b8-ac9f-4124-91c2-527d33239a01",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "ebced67f-ba98-4f2f-86d3-da25757a69d7",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "446c3a3f-f7fc-4ffb-98ae-6cd09435b288",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "620dbc7a-ad91-4af3-ae47-34505d336c0c",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "06e694d9-69b5-4f2b-98d3-643c561296d0",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "6eb274f3-fca2-415f-a889-b1b220835aaf",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "dda875c9-44ed-4c3e-88ee-81123213219a",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "710a33cc-e552-47e2-ab41-eea24be6f641",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "79ead610-8369-4340-b000-67903b5b3ba6",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "ee174af8-1120-41f8-9c69-0e37f1307c5a",
+      "result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e"
+    },
+    {
+      "claim_id": "1d76878a-30f6-4357-93a9-5cfe88d04750",
+      "result_id": "b631dc1a-6261-463e-bed5-908f6438b1d8"
+    },
+    {
+      "claim_id": "7fbef9f1-8e67-4694-a579-9ea28ef884c6",
+      "result_id": "b631dc1a-6261-463e-bed5-908f6438b1d8"
+    },
+    {
+      "claim_id": "0af0b1b1-e411-49cb-8478-1bdb9e949e55",
+      "result_id": "f15a7b5a-d4e1-4a83-9aec-01ed870f49c7"
+    },
+    {
+      "claim_id": "5999f6e6-f2de-4646-b230-b692377f3f51",
+      "result_id": "f15a7b5a-d4e1-4a83-9aec-01ed870f49c7"
+    },
+    {
+      "claim_id": "75f007d6-a96e-4e29-8a83-64cd750631a8",
+      "result_id": "f15a7b5a-d4e1-4a83-9aec-01ed870f49c7"
+    },
+    {
+      "claim_id": "a0dbf513-e004-4b6b-859d-bd7e6b89e21a",
+      "result_id": "0e0ca7e4-c351-4805-9a47-402d1b108d4b"
+    },
+    {
+      "claim_id": "b655d364-8dc9-492f-addd-b7353c3063c2",
+      "result_id": "0e0ca7e4-c351-4805-9a47-402d1b108d4b"
+    },
+    {
+      "claim_id": "0b5a9429-a625-4413-990e-6106a68a8899",
+      "result_id": "0e0ca7e4-c351-4805-9a47-402d1b108d4b"
+    },
+    {
+      "claim_id": "951a1d02-eb69-46ec-b688-9d3c7d6d8d06",
+      "result_id": "d6403f10-9e59-4531-b7e9-2074a4fd905b"
+    },
+    {
+      "claim_id": "3824dbd8-b619-44db-96fc-19ced0d980ac",
+      "result_id": "d6403f10-9e59-4531-b7e9-2074a4fd905b"
+    },
+    {
+      "claim_id": "33447bbe-9b98-47c8-998e-d1d3ebb2251e",
+      "result_id": "d6403f10-9e59-4531-b7e9-2074a4fd905b"
+    },
+    {
+      "claim_id": "7a383fcc-5487-41fb-8b6c-a6b20f3cdabb",
+      "result_id": "50aba8f3-c596-4e07-9b4f-d7ad13cd1546"
+    },
+    {
+      "claim_id": "2b0ef3c2-6153-4b9c-851f-3afccd46b789",
+      "result_id": "f1b8c132-3140-4ec5-831f-32d7f8e199ae"
+    },
+    {
+      "claim_id": "1fce6444-78b1-4c9d-bd6b-b6676719b3b8",
+      "result_id": "f1b8c132-3140-4ec5-831f-32d7f8e199ae"
+    },
+    {
+      "claim_id": "4c5b338a-5694-464d-a4de-331dababac4e",
+      "result_id": "f1b8c132-3140-4ec5-831f-32d7f8e199ae"
+    },
+    {
+      "claim_id": "82145369-18c6-4630-82f3-18c1977a5666",
+      "result_id": "f1b8c132-3140-4ec5-831f-32d7f8e199ae"
+    },
+    {
+      "claim_id": "461344d5-4ad9-4322-ac68-601938d228d2",
+      "result_id": "85316c72-4228-4fb3-a00b-5988195fd8e0"
+    },
+    {
+      "claim_id": "568e497c-d62f-4a3e-9702-32653b4f4918",
+      "result_id": "85316c72-4228-4fb3-a00b-5988195fd8e0"
+    },
+    {
+      "claim_id": "99eefa90-551d-4186-a5f3-96b75410745e",
+      "result_id": "66d63a5b-f448-4943-af8f-8e3493262412"
+    },
+    {
+      "claim_id": "013e9d70-7d87-4aa7-a025-fce0d7d6d051",
+      "result_id": "66d63a5b-f448-4943-af8f-8e3493262412"
+    },
+    {
+      "claim_id": "92167b71-005e-43a8-b7f7-fd2c70682621",
+      "result_id": "66d63a5b-f448-4943-af8f-8e3493262412"
+    },
+    {
+      "claim_id": "1bb5299d-2560-4de7-bd52-09b282a1b584",
+      "result_id": "66d63a5b-f448-4943-af8f-8e3493262412"
+    },
+    {
+      "claim_id": "6ea8c628-fd1c-4b0d-9169-6b741b2bbe5a",
+      "result_id": "66d63a5b-f448-4943-af8f-8e3493262412"
+    },
+    {
+      "claim_id": "00f7cb5c-c9b8-4a45-ad43-3006f85575e0",
+      "result_id": "dcc7c057-dfa4-4dc3-9dba-a5d19e08cf20"
+    },
+    {
+      "claim_id": "5e8b095d-b846-493b-a3e1-412a896b0f61",
+      "result_id": "dcc7c057-dfa4-4dc3-9dba-a5d19e08cf20"
+    },
+    {
+      "claim_id": "9d6b63f3-95ab-4d56-9355-a7040e2f4593",
+      "result_id": "dcc7c057-dfa4-4dc3-9dba-a5d19e08cf20"
+    },
+    {
+      "claim_id": "77addfc6-e9bc-4b07-a2f9-5703a11310d9",
+      "result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb"
+    },
+    {
+      "claim_id": "ac00f442-849e-4d61-bc98-b6326c1285a8",
+      "result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb"
+    },
+    {
+      "claim_id": "9ef6e70a-1df2-4fb7-9c7b-8592b9a5e551",
+      "result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb"
+    },
+    {
+      "claim_id": "493bd013-d196-42db-beab-311addf43076",
+      "result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb"
+    },
+    {
+      "claim_id": "a5a65ab0-b184-48f3-9b50-df26b237e0cb",
+      "result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb"
+    },
+    {
+      "claim_id": "66ff3ae1-cdd7-4f88-9a8a-e2c838028e3a",
+      "result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb"
+    },
+    {
+      "claim_id": "ec07f4ed-2eb3-4d3c-92ff-02251002f89a",
+      "result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb"
+    },
+    {
+      "claim_id": "f1e62821-045d-4bfe-b414-7ae9a846755a",
+      "result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb"
+    },
+    {
+      "claim_id": "aa68f1ce-525f-4e4f-bbc5-195235b38019",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "388336df-6352-4362-81fb-f230b2a824cf",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "8d618347-b3f2-49a4-b0b1-872fdcbbb262",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "80ea9201-9c6b-4a91-90ec-81e9a0ed2798",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "c544e9c7-672d-4fef-a6b5-d1c03ed10bbe",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "a5cb507b-4997-4080-853b-819378e16f1d",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "04750acb-7307-4ea2-b4a3-a4a13698e91e",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "19f1610d-8b6e-47d3-846f-7e06c24711be",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "b61c1f7d-387c-445f-90f1-e77320e45f01",
+      "result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e"
+    },
+    {
+      "claim_id": "10a94096-b9f0-4fc2-8e02-e7cced72399b",
+      "result_id": "cfef94d4-c61c-42be-a997-1383efbe79a5"
+    },
+    {
+      "claim_id": "45b0c0ad-e026-4d7d-9d90-e337e2c63bfd",
+      "result_id": "cfef94d4-c61c-42be-a997-1383efbe79a5"
+    },
+    {
+      "claim_id": "6dc61602-e899-4d48-a5c1-8e11c0c7bf65",
+      "result_id": "1d23f514-36f8-4594-ad9b-430355b63f06"
+    },
+    {
+      "claim_id": "5c8bbcf4-fd2f-4c76-8445-038b74d856b6",
+      "result_id": "1d23f514-36f8-4594-ad9b-430355b63f06"
+    },
+    {
+      "claim_id": "761b409d-92bb-4e6b-b3ca-b2e73a7b6033",
+      "result_id": "1d23f514-36f8-4594-ad9b-430355b63f06"
+    },
+    {
+      "claim_id": "4889d06f-ecb7-43f1-b9f2-904559e22aec",
+      "result_id": "1d23f514-36f8-4594-ad9b-430355b63f06"
+    },
+    {
+      "claim_id": "f3012867-189c-4b52-9069-dd00e6dc8d0e",
+      "result_id": "1d23f514-36f8-4594-ad9b-430355b63f06"
+    },
+    {
+      "claim_id": "75f007d6-a96e-4e29-8a83-64cd750631a8",
+      "result_id": "1d23f514-36f8-4594-ad9b-430355b63f06"
+    },
+    {
+      "claim_id": "7a383fcc-5487-41fb-8b6c-a6b20f3cdabb",
+      "result_id": "1d23f514-36f8-4594-ad9b-430355b63f06"
+    },
+    {
+      "claim_id": "11af8f5b-6c73-4c08-ab83-4b1ddb153864",
+      "result_id": "357dc196-6b47-486f-a528-0ad0662e3bb8"
+    },
+    {
+      "claim_id": "bb880126-4875-4419-89a3-b3113f3e2f26",
+      "result_id": "357dc196-6b47-486f-a528-0ad0662e3bb8"
+    },
+    {
+      "claim_id": "b74d1957-4a6f-4792-82f2-559cdc14d0a4",
+      "result_id": "357dc196-6b47-486f-a528-0ad0662e3bb8"
+    },
+    {
+      "claim_id": "1d76878a-30f6-4357-93a9-5cfe88d04750",
+      "result_id": "357dc196-6b47-486f-a528-0ad0662e3bb8"
+    },
+    {
+      "claim_id": "7fbef9f1-8e67-4694-a579-9ea28ef884c6",
+      "result_id": "357dc196-6b47-486f-a528-0ad0662e3bb8"
+    },
+    {
+      "claim_id": "229fc2af-53e4-4496-a4ed-67994bba7a3c",
+      "result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be"
+    },
+    {
+      "claim_id": "bd9b1dba-9555-4d6a-b8c3-317ac723102b",
+      "result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be"
+    },
+    {
+      "claim_id": "e4aef3b7-7633-4842-ac53-189121020f35",
+      "result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be"
+    },
+    {
+      "claim_id": "308a2831-096d-4271-92d9-81b50401083b",
+      "result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be"
+    },
+    {
+      "claim_id": "28230edb-db27-4c26-993a-f8616e84652c",
+      "result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be"
+    },
+    {
+      "claim_id": "dc2b00e5-d58f-4276-a058-9a5e54989ad2",
+      "result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be"
+    },
+    {
+      "claim_id": "1430625e-d668-4c0f-8793-28428f0dd6b9",
+      "result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be"
+    },
+    {
+      "claim_id": "e956f1f5-eb3e-4b69-9bce-6b623da751e6",
+      "result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be"
+    },
+    {
+      "claim_id": "311e1eea-6566-4fd5-833e-e2352147947c",
+      "result_id": "cbf99c18-d793-4fd9-8e8c-26a3b5faee66"
+    },
+    {
+      "claim_id": "c85d60e1-6c38-4a6b-a71e-0688bd45b74c",
+      "result_id": "cbf99c18-d793-4fd9-8e8c-26a3b5faee66"
+    },
+    {
+      "claim_id": "f06c3f62-8b39-4866-9866-21047f5cb86d",
+      "result_id": "cbf99c18-d793-4fd9-8e8c-26a3b5faee66"
+    },
+    {
+      "claim_id": "7f0f2afe-aa01-4418-8bfd-79e3d1ac3df6",
+      "result_id": "cbf99c18-d793-4fd9-8e8c-26a3b5faee66"
+    },
+    {
+      "claim_id": "de9424b8-ac9f-4124-91c2-527d33239a01",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "ebced67f-ba98-4f2f-86d3-da25757a69d7",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "446c3a3f-f7fc-4ffb-98ae-6cd09435b288",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "620dbc7a-ad91-4af3-ae47-34505d336c0c",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "06e694d9-69b5-4f2b-98d3-643c561296d0",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "6eb274f3-fca2-415f-a889-b1b220835aaf",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "dda875c9-44ed-4c3e-88ee-81123213219a",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "710a33cc-e552-47e2-ab41-eea24be6f641",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "79ead610-8369-4340-b000-67903b5b3ba6",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "ee174af8-1120-41f8-9c69-0e37f1307c5a",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "5999f6e6-f2de-4646-b230-b692377f3f51",
+      "result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e"
+    },
+    {
+      "claim_id": "66f15682-8574-420e-abae-6f1f58b00d37",
+      "result_id": "6c8369fd-22ce-4a36-969d-56c1690e803f"
+    },
+    {
+      "claim_id": "b3cfeb26-1ca4-4ed5-95f2-be1f75492314",
+      "result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29"
+    },
+    {
+      "claim_id": "43d85763-30f3-4edc-b118-f3bc7e8f03c8",
+      "result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29"
+    },
+    {
+      "claim_id": "256a4e56-3315-4ef8-bd9b-c95e8673fcc4",
+      "result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29"
+    },
+    {
+      "claim_id": "43f443fc-caa6-4fa2-9599-647e197de52e",
+      "result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29"
+    },
+    {
+      "claim_id": "250aa1ea-123c-458e-a63b-4b188f1fd246",
+      "result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29"
+    },
+    {
+      "claim_id": "2b77e16a-5e11-49d7-b938-a810b5dcbffc",
+      "result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29"
+    },
+    {
+      "claim_id": "1ef495ee-46c4-4d8f-95ff-cb3cb452f8ca",
+      "result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29"
+    },
+    {
+      "claim_id": "b8a5a55c-460a-4e9e-9b0e-8aa166134cc2",
+      "result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29"
+    },
+    {
+      "claim_id": "e17e8f15-ba08-4b5d-af83-98e9cc4c1915",
+      "result_id": "2ccb80ff-91a5-43a0-9c5e-e0bbf28a57d4"
+    },
+    {
+      "claim_id": "3660a425-ff10-411f-a608-2afac630b28a",
+      "result_id": "2ccb80ff-91a5-43a0-9c5e-e0bbf28a57d4"
+    },
+    {
+      "claim_id": "9f92a728-1a6a-4bce-b2c7-bd24753d3d12",
+      "result_id": "18d56800-a3fc-4a9b-b878-e47d0e76fcc7"
+    },
+    {
+      "claim_id": "19e73107-bcab-49af-8df3-13162445c692",
+      "result_id": "18d56800-a3fc-4a9b-b878-e47d0e76fcc7"
+    },
+    {
+      "claim_id": "b8da12bf-81ef-41c1-b350-6737ed7d2823",
+      "result_id": "18d56800-a3fc-4a9b-b878-e47d0e76fcc7"
+    },
+    {
+      "claim_id": "8b1dd356-fcf6-4577-94b2-2100ef65baaf",
+      "result_id": "18d56800-a3fc-4a9b-b878-e47d0e76fcc7"
+    },
+    {
+      "claim_id": "ecea4b65-1d9f-4dd2-a948-51b791d6e0ed",
+      "result_id": "18d56800-a3fc-4a9b-b878-e47d0e76fcc7"
+    },
+    {
+      "claim_id": "951a1d02-eb69-46ec-b688-9d3c7d6d8d06",
+      "result_id": "bcd50e90-a3ae-4553-b921-678d6e8db737"
+    },
+    {
+      "claim_id": "3824dbd8-b619-44db-96fc-19ced0d980ac",
+      "result_id": "bcd50e90-a3ae-4553-b921-678d6e8db737"
+    },
+    {
+      "claim_id": "33447bbe-9b98-47c8-998e-d1d3ebb2251e",
+      "result_id": "bcd50e90-a3ae-4553-b921-678d6e8db737"
+    },
+    {
+      "claim_id": "a0dbf513-e004-4b6b-859d-bd7e6b89e21a",
+      "result_id": "60c8ca20-a18b-447b-a31d-6cf3b75a4d28"
+    },
+    {
+      "claim_id": "b655d364-8dc9-492f-addd-b7353c3063c2",
+      "result_id": "60c8ca20-a18b-447b-a31d-6cf3b75a4d28"
+    },
+    {
+      "claim_id": "0b5a9429-a625-4413-990e-6106a68a8899",
+      "result_id": "60c8ca20-a18b-447b-a31d-6cf3b75a4d28"
+    },
+    {
+      "claim_id": "2b0ef3c2-6153-4b9c-851f-3afccd46b789",
+      "result_id": "d690dc3b-3a8c-4571-95e0-95442baedf6c"
+    },
+    {
+      "claim_id": "1fce6444-78b1-4c9d-bd6b-b6676719b3b8",
+      "result_id": "d690dc3b-3a8c-4571-95e0-95442baedf6c"
+    },
+    {
+      "claim_id": "4c5b338a-5694-464d-a4de-331dababac4e",
+      "result_id": "d690dc3b-3a8c-4571-95e0-95442baedf6c"
+    },
+    {
+      "claim_id": "82145369-18c6-4630-82f3-18c1977a5666",
+      "result_id": "d690dc3b-3a8c-4571-95e0-95442baedf6c"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "cd13e257-5e87-45bd-9f0f-41802d21dcab",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a5c24062-52f4-4115-8361-0974a569dc29",
+      "peer_result_id": "f33309cc-170a-4bae-9d1f-5c1e69d159be",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on switch-like calcium threshold behavior (C4, C33-C38, C65). Both evaluations find this evidence well-supported using OptoSTIM1 optogenetic experiments. Reviewers accept findings without challenge; OpenEval notes clear demonstration of all-or-nothing RSPA versus linear calcium response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "861ca596-23a2-475f-9c13-ea0963739bbf",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0e0ca7e4-c351-4805-9a47-402d1b108d4b",
+      "peer_result_id": "60c8ca20-a18b-447b-a31d-6cf3b75a4d28",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on Turing model interpretation (C75-C77). Both evaluations support this theoretical framework based on differential propagation speeds and PKA-ERK antagonism. Neither challenges the speculative nature, accepting it as reasonable discussion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "00180fc5-5061-4934-8fc8-6059362923a1",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "d6403f10-9e59-4531-b7e9-2074a4fd905b",
+      "peer_result_id": "bcd50e90-a3ae-4553-b921-678d6e8db737",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Strong agreement on major limitation regarding biological function (C86-C88). Both identify lack of functional understanding as critical weakness. Peer reviewers describe work as 'mostly descriptive' and 'hardly conclusive as to biological significance,' matching OpenEval's acknowledgment of negative functional results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "84996c02-d182-4847-9f19-5e962a643c10",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "f1b8c132-3140-4ec5-831f-32d7f8e199ae",
+      "peer_result_id": "d690dc3b-3a8c-4571-95e0-95442baedf6c",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on uncertain/speculative nature of melanoma observations (C61-C64). Both evaluations note these are speculative interpretations without experimental validation. Peer reviewer asks about physiological conditions; OpenEval notes lack of causal testing for proposed alert signal function.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "50488245-8c1d-40e1-8c3a-f5339fb6854d",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "66c3c9a3-939f-4f3e-a86a-6b9c7ec4e99e",
+      "peer_result_id": "c9f65d74-3211-47d0-afee-e5ab6f3aa32e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on ERK requirement and AND-gate model (C6, C47-C56, C74). Both find evidence well-supported through dual imaging and pharmacological interventions. Peer reviewers requested additional single-cell analysis but ultimately accepted findings; OpenEval emphasizes strong temporal and spatial correlation data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "543e98a6-31c5-4a4e-b0c2-5273b7d3cb28",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "874b0aa4-95d5-4b2f-b846-56cc95359d45",
+      "peer_result_id": "2f9acac1-45a5-44f3-88f3-4901f72fba29",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on calcium triggering mechanism (C24-C32). Both evaluations support the calcium threshold concept, dual imaging evidence, and quantitative findings showing ~10% of calcium transients trigger RSPA. Peer reviewer asked about density effects on calcium-RSPA overlap, which was addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "ea4fba25-7cb9-436e-bb41-b764ddcc293a",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "8b2b50ce-6033-4de0-b3a2-f72e49ca1844",
+      "peer_result_id": "18d56800-a3fc-4a9b-b878-e47d0e76fcc7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cell density mechanism findings (C42-C46). Both evaluations support the dose-response and transcriptome data. OpenEval notes incomplete mechanistic understanding with twofold GNAS increase potentially insufficient; peer reviewers accept transcription-independent mechanism without objection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "e554998d-39f1-4302-a369-9d7bf04f794a",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a8ee273d-5d09-4e2a-92cf-c0fcd23466d4",
+      "peer_result_id": "2ccb80ff-91a5-43a0-9c5e-e0bbf28a57d4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on genetic validation (C39-C41). Both evaluations strongly support CRISPR/Cas9 knockout evidence for the signaling cascade. Peer reviewers praise systematic approach; OpenEval emphasizes definitive nature of genetic evidence and COX2 specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "9a05c7c0-3880-4c4e-bd50-f05018a71224",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "278c6e6b-35a4-4107-9b76-92c271245bb4",
+      "peer_result_id": "357dc196-6b47-486f-a528-0ad0662e3bb8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on in vivo validation (C3, C22-C23). Both evaluations praise the animal model work. Peer reviewers explicitly commend authors for not limiting to 2D culture; OpenEval highlights strong pharmacological evidence from COX inhibitor and quantitative in vitro/in vivo comparison.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "84cf4d6e-b59a-4c7a-9bf9-14e4e34b3f2d",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b631dc1a-6261-463e-bed5-908f6438b1d8",
+      "peer_result_id": "357dc196-6b47-486f-a528-0ad0662e3bb8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on in vivo ERK findings (C57-C58). Both evaluations support the transgenic mouse experiments with MEK inhibitor. Peer reviewers praise in vivo validation generally; OpenEval specifically notes rapid RSPA attenuation as strong pharmacological evidence for ERK's role.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "ad6949e6-d5ab-4e22-8b7f-1a87398f0dd2",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "807915d3-e96a-461d-817a-a932e6233cd2",
+      "peer_result_id": "1d23f514-36f8-4594-ad9b-430355b63f06",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on core RSPA mechanism (C2, C15, C20). Both evaluations find evidence solid and well-demonstrated. Peer reviewers describe work as 'elegantly demonstrated' with skillful use of biosensors; OpenEval emphasizes converging evidence from multiple approaches including specific inhibitors and cAMP biosensors.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "c1b76bed-d29b-4922-a803-bd05c178ea19",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "807915d3-e96a-461d-817a-a932e6233cd2",
+      "peer_result_id": "cbf99c18-d793-4fd9-8e8c-26a3b5faee66",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cell density threshold effects (C16-C17). Both evaluations support this finding. Peer reviewers requested expressing radius in cell numbers rather than absolute distance, which was addressed; OpenEval notes clear demonstration in Figure 1D-E.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "72f2ce85-9a21-4f08-9883-9e97075a2cf4",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "807915d3-e96a-461d-817a-a932e6233cd2",
+      "peer_result_id": "6c8369fd-22ce-4a36-969d-56c1690e803f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluation of cAMP-PKA inference (C18). OpenEval rates as SUPPORTED with strong evidence from cAMP biosensors. Peer reviewer initially challenged this conclusion as 'not well-supported,' requesting quantitative correlation analysis. After revision addressing concerns, reviewers were satisfied, suggesting initial evidence required strengthening.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "3a953659-6204-4462-8bca-b262f6f49901",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "50aba8f3-c596-4e07-9b4f-d7ad13cd1546",
+      "peer_result_id": "1d23f514-36f8-4594-ad9b-430355b63f06",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on spatial characteristic (C90). Both evaluations support the ~100 \u03bcm RSPA spread observation. Peer reviewers include this in core findings; OpenEval notes direct support from radius measurements throughout manuscript.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "b002d12b-7e62-48f5-8032-f06607d885b3",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "f15a7b5a-d4e1-4a83-9aec-01ed870f49c7",
+      "peer_result_id": "1d23f514-36f8-4594-ad9b-430355b63f06",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on integrative conclusions (C89). Both evaluations support the stochastic and switch-like nature of RSPA. Peer reviewers affirm core findings; OpenEval notes this is demonstrated throughout the study as reasonable interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "52376f8d-82b8-4207-8426-feaa9e215373",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "85316c72-4228-4fb3-a00b-5988195fd8e0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies speculative mechanistic explanations (C67-C68) regarding cPLA2 localization and mechanical stress as UNCERTAIN. No corresponding peer review evaluation found addressing these specific speculative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "2c3a1f14-0ae4-4c40-b537-9ec502cd6c1d",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "66d63a5b-f448-4943-af8f-8e3493262412",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates cell competition speculation (C78-C82) as UNCERTAIN, noting reasonable but untested connection between RSPA and cell competition. No corresponding peer review evaluation found specifically addressing these speculative claims about cell competition.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "6ba11f58-1c70-4dc6-97e1-8d3d9a893fa3",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "dcc7c057-dfa4-4dc3-9dba-a5d19e08cf20",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies RSPA radius speculation (C83-C85) as UNCERTAIN, noting unvalidated relationship between radius and PGE2 amount in MDCK system. No corresponding peer review evaluation found addressing these specific technical limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "2bcccc58-4755-47d1-aff0-dbabb163c7b7",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "a7d3daef-dfd7-4342-9c8a-fc95da0a43bb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates background claims on PGE2 biosynthesis (C1, C8-C14) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found; reviewers do not typically evaluate background/literature claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "ed20a020-42f4-4390-8b73-e30f6e7ee6c6",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "04db3f9e-08f7-4f67-92b5-91fc33ffb70e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates various background literature claims (C19, C52, C59-C60, C66, C69-C71, C73) as SUPPORTED. No corresponding peer review evaluation found; reviewers focus on novel findings rather than background citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    },
+    {
+      "id": "6ab8fc5e-5caf-4687-ba75-66ffd52bc094",
+      "submission_id": "aced584c-c0fb-4ae8-a285-6b1c18a82dcc",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "cfef94d4-c61c-42be-a997-1383efbe79a5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates interpretive claims (C72, C91) as SUPPORTED, noting reasonable inferences and honest acknowledgment of open questions. No corresponding peer review evaluation found specifically addressing these interpretive statements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T20:21:54.043642Z"
+    }
+  ]
+}

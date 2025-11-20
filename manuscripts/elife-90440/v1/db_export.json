@@ -1,0 +1,2159 @@
+{
+  "submission": {
+    "id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T19:46:49.722556Z",
+    "updated_at": "2025-11-20T19:46:49.722556Z"
+  },
+  "content": [
+    {
+      "id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "content_type": "manuscript",
+      "content_text": "# An in silico testbed for fast and accurate MR labeling of orthopedic implants\n\n## Authors\n\n- Gregory M Noetscher<sup>1</sup> ([ORCID: 0000-0001-9786-7206](https://orcid.org/0000-0001-9786-7206)) \u2020\n- Peter J Serano<sup>2</sup>\n- Marc Horner<sup>2</sup> ([ORCID: 0000-0002-2483-5796](https://orcid.org/0000-0002-2483-5796))\n- Alexander Prokop<sup>3</sup>\n- Jonathan Hanson<sup>4</sup>\n- Kyoko Fujimoto<sup>5</sup>\n- James Brown<sup>6</sup>\n- Ara Nazarian<sup>7</sup>\n- Jerome Ackerman<sup>8</sup> ([ORCID: 0000-0001-5176-7496](https://orcid.org/0000-0001-5176-7496))\n- Sergey N Makaroff<sup>1</sup>\n\n### Affiliations\n\n1. Electrical & Computer Eng. Dept, Worcester Polytechnic Institute Worcester United States ([ROR:05ejpqr48](https://ror.org/05ejpqr48))\n2. Ansys Canonsburg United States ([ROR:05cf5b117](https://ror.org/05cf5b117))\n3. Dassault Syst\u00e8mes Deutschland GmbH Darmstadt Germany ([ROR:01mw2b749](https://ror.org/01mw2b749))\n4. Neva Electromagnetics, LLC Holden United States\n5. GE HealthCare Chicago United States\n6. Micro Systems Enigineering, Inc, an affiliate of Biotronik Lake Oswego United States ([ROR:00fgrre84](https://ror.org/00fgrre84))\n7. Musculoskeletal Translational Innovation Initiative, Department of Orthopedic Surgery, Beth Israel Deaconess Medical Center and Harvard Medical School Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))\n8. Harvard Medical School Boston United States\n9. Athinoula A Martinos Center for Biomed. Imaging, Massachusetts General Hospital Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n\n\u2020 Corresponding author\n\n## Abstract\n\nOne limitation on the ability to monitor health in older adults using magnetic resonance (MR) imaging is the presence of implants, where the prevalence of implantable devices (orthopedic, cardiac, neuromodulation) increases in the population, as does the pervasiveness of conditions requiring MRI studies for diagnosis (musculoskeletal diseases, infections, or cancer). The present study describes a novel multiphysics implant modeling testbed using the following approaches with two examples: (1) an in silico human model based on the widely available Visible Human Project (VHP) cryo-section dataset; (2) a finite element method (FEM) modeling software workbench from Ansys (Electronics Desktop/Mechanical) to model MR radio frequency (RF) coils and the temperature rise modeling in heterogeneous media. The in silico VHP-Female model (250 parts with an additional 40 components specifically characterizing embedded implants and resultant surrounding tissues) corresponds to a 60-year-old female with a body mass index of 36. The testbed includes the FEM-compatible in silico human model, an implant embedding procedure, a generic parameterizable MRI RF birdcage two-port coil model, a workflow for computing heat sources on the implant surface and in adjacent tissues, and a thermal FEM solver directly linked to the MR coil simulator to determine implant heating based on an MR imaging study protocol. The primary target is MR labeling of large orthopedic implants. The testbed has very recently been approved by the US Food and Drug Administration (FDA) as a medical device development tool for 1.5 T orthopedic implant examinations.\n\n## Introduction\n\nOne limitation on the ability to monitor health in older adults using magnetic resonance (MR) imaging studies is the presence of implants, where the prevalence of implantable devices (orthopedic, cardiac, neuromodulation) increases in the population, as does the pervasiveness of conditions requiring MRI studies for diagnosis (musculoskeletal conditions, infections, or cancer). In 2020, 26% of the US population over 65 was estimated to carry a large joint or spinal implant (Kanal et al., 2015). Simultaneously, 12.6 million patients over 65 who carry orthopedic or cardiac implants will need an MR study within 10 years, according to an estimate in 2020 (Kanal et al., 2015) with this number expected to rise. Similarly, over 70% of the estimated 3 million pacemakers in the US are implanted in patients older than 65 (Lim et al., 2019; Puette et al., 2022), where approximately 20% of these patients will need an MR study within 12 months of device implantation (Brown et al., 2019).\n\nTerms to be used to label MR information for medical devices \u2013 implants \u2013 include MR safe, MR conditional, and MR unsafe (US Department of Health and Human Services et al., 2021; US Food and Drug Administration, 2023a; American College of Radiology, 2020; Shellock et al., 2009). MR safe items are nonconducting, nonmetallic, and nonmagnetic items, such as a plastic Petri dish (Shellock et al., 2009). MR unsafe items include in particular ferromagnetic materials (Shellock et al., 2009); they should not enter the MR scanner room (US Food and Drug Administration, 2023a). All other devices that contain any metallic components, such as titanium (regardless of ferromagnetism), are MR conditional and will need to be evaluated and labeled for radio frequency (RF)-induced heating, image artifact, force, and torque (US Department of Health and Human Services et al., 2021). For the corresponding labeling icons, see US Food and Drug Administration, 2023a.\n\nMR conditional implants may safely enter the MR scanner room only under the very specific conditions provided in the labeling. Patients should not be scanned unless the device can be positively identified as MR conditional and the conditions for safe use are met (US Food and Drug Administration, 2023a). When present, information about expected temperature rise and artifact extent may inform the risk/benefit decision of whether a patient should or should not undergo an MR examination (US Food and Drug Administration, 2023a).\n\nGiven the large numbers of implants subject to conditional labeling, the number of cleared US Food and Drug Administration (FDA) 510(k) submissions for orthopedic implantable devices with MR labeling has been growing exponentially since 2014 (Fujimoto et al., 2020), approaching 100 in 2019 (Fujimoto et al., 2020). However, practical testing is limited by constraints related to cost and resources, including testing tools (Fujimoto et al., 2020). As a result, a number of implants have been labeled \u2018MR Not Evaluated\u2019, which precludes patients\u2019 access to MR imaging procedures (Fujimoto et al., 2020). Other implants may be labeled too restrictively (Kanal et al., 2015), limiting patient access to MR imaging (US Food and Drug Administration, 2022). When estimating combined data from Kanal et al., 2015; Fujimoto et al., 2020; US Food and Drug Administration, 2022; US Food and Drug Administration, 2023b, up to 2 million elderly patients in the US are potentially affected by MR labeling uncertainty.\n\nPresumably, the most important consequence of this uncertainty is restricting general access to MR imaging studies for patients with implants. This also prevents the use of MR imaging for better soft tissue monitoring in the vicinity of implants. A prime example of the latter is periprosthetic joint infection following total hip replacement surgery, which occurs in only 1\u20132% of primary arthroplasties (Fischbacher and Borens, 2019; Zanetti, 2020) but in up to 30% of revision arthroplasties (Zanetti, 2020). This form of infection occurs due to mechanical loosening and dislocation, currently the most common causes for revision of total hip arthroplasty in the US (Li and Glassman, 2018). Periprosthetic joint infection-related mortality is approaching 5\u20138% at 1 year (Fischbacher and Borens, 2019). Presently, X-rays and other methods are used for diagnosis (Sheth et al., 2023), but results of MR imaging with metal artifact reduction were recently shown to be the most accurate tool in the diagnosis of several biomarkers of periprosthetic hip joint infection (Zanetti, 2020; Galley et al., 2020).\n\nOne major safety concern, relevant to both passive and active implants, is implant heating within MR RF and gradient coils (US Department of Health and Human Services et al., 2021; Song et al., 2018; Al-Dayeh et al., 2020; Winter et al., 2021; Wooldridge et al., 2021; Arduino et al., 2021; Arduino et al., 2022a; Bassen and Zaidi, 2022; Arduino et al., 2022b; Clementi et al., 2022; Oberle, 2021). Along with the required yet not entirely anatomical ASTM phantom test and other similar phantom tests (US Department of Health and Human Services et al., 2021; Song et al., 2018; Winter et al., 2021; Wooldridge et al., 2021; Bassen and Zaidi, 2022; Arduino et al., 2022b), numerical simulations with virtual human models generate accurate predictions of temperature rise (Al-Dayeh et al., 2020; Winter et al., 2021; Wooldridge et al., 2021; Arduino et al., 2022a; Clementi et al., 2022; Oberle, 2021) accepted by the FDA (Oberle, 2021). The electromagnetic and thermal simulation algorithms based on finite element, finite difference, and boundary element methods are reasonably well developed (Makarov et al., 2017; Noetscher et al., 2023; Noetscher et al., 2021; Noetscher, 2021). However, accessible, full body, detailed anatomical virtual human models reflecting major age, sex, race, and obesity variations are severely lacking. Their creation is a long, tedious, and labor-intensive process. Even today, it requires manual and semiautomatic supervised segmentation of full body MR images, surface mesh reconstruction, mesh intersection resolution, software compatibility and robustness testing, and finally examination of hundreds of different body compartments by anatomical experts.\n\nAn excellent collection of in silico human body models intended for this purpose is the Virtual Population, a product of the IT\u2019IS Foundation (Oberle, 2021; Gosselin et al., 2014) widely used in both industrial and academic applications. While this population has many highly detailed body models, it is relatively homogeneous: reasonably fit, younger Caucasian European subjects, representing a comparatively limited subsection of human anatomy and physiology. Although three obese models were added in 2023 (IT\u2019IS Foundation, 2023), two of the three are not truly anatomical and were obtained via morphing (the \u2018Fats\u2019 model being the exception). Also, while models are available for purchase and for research purposes, no background MRI data enabling independent tissue structure verification have been made publicly available for this population set.\n\nThe present study describes a complete ready-to-use implant modeling testbed for RF heating based on:\n\nThe in silico VHP-Female model (250 anatomical structures with an additional 40 components specifically modeling embedded implants Noetscher et al., 2021) characterizes a 60-year-old female subject with a body mass index of 36. The open-source version of this model (NEVA Electromagnetics, LLC, 2015) has over 600 registered users from both industry and academia worldwide. The testbed includes the in silico model, an implant embedding procedure, a generic parameterizable MR RF birdcage two-port coil model, a workflow for computing heat sources on the implant surface and neighboring tissues, and a thermal FEM solver directly linked to the MR coil simulator to estimate implant heating based on an MR imaging protocol. The primary target is MR labeling of large orthopedic implants. The testbed has recently been approved by the FDA as a medical device development tool (Neva Electromagnetics, LLC, 2022) for 1.5 T orthopedic implant examinations. We also present two simple application examples pertinent to choosing an appropriate MR imaging protocol for a particular orthopedic implant as well as validation against measurements of the heading of an ablation needle in bovine liver.\n\n## Materials and methods\n\n### In silico human model and implant embedding procedure\n\nFigure 1 shows surface CAD meshes for the VHP-Female model (Makarov et al., 2017; Noetscher et al., 2021) (with some muscles removed for clarity) and examples of passive femoral implants embedded into the model. The corresponding physical femoral implants are shown on the top right of the figure.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90440/elife-90440-fig1-v1.jpg)\n\n**Figure 1.:** Left (a) \u2013 surface CAD meshes for the Visible Human Project (VHP)-Female model (with some muscles removed for purposes of visualization); and right \u2013 examples of passive femoral implants embedded into the model. (b\u2013d) At top right \u2013 physical femoral implants; (e\u2013g) at center and bottom \u2013 anatomically justified CAD realization within the virtual human VHP-Female. An Austin Moore implant is shown in b; a short proximal femoral nail with the proximal hip (a large femoral neck screw) is given in c; a long proximal femoral nail with the proximal hip is presented in d.\n\nThe implant registration enforces an anatomically correct implant position, and a certain part of the bone matter (cortical and/or trabecular) to be removed as necessary. A semiautomatic implant registration algorithm requiring limited user intervention has been employed based on the principal idea to use at least two anchor nodes per implant: a fixed node and a floating node. The floating anchor node is a vertex of the implant mesh belonging to a certain curve, say, the long axis of the bone. The fixed anchor node is a joint coincident vertex of the femur mesh and the implant mesh. These nodes define the proper implant position given the bone model and a cost function, with a \u2018best fit\u2019 based on a mesh intersection check and the signed normal distances between implant/bone boundaries. An additional criterion involves the minimum required thickness of the cortical bone matter with an embedded implant.\n\n### Computation of heat sources due to microwave absorption in MR RF coils\n\nA generic, parameterized, and tunable MR RF birdcage two-port coil model (high-, low-, or bandpass), at 64 MHz (1.5 T) with a variable number of rungs was implemented in Ansys Electronics Desktop (Ansys HFSS, Figure 2a). This model is used to compute heat sources \u2013 either specific absorption rate (SAR) in W/kg or power loss density in W/m3 at any point in the body, including on the surface of the implants (Figure 2b, c; Kozlov et al., 2015). The in silico model with the implant(s) can be positioned at any appropriate landmark.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90440/elife-90440-fig2-v1.jpg)\n\n**Figure 2.:** Right \u2013 power loss density in W/m3 in the coil for the (b) Austin Moore and (c) femoral nail implants.\n\n### Determination of implant temperature rise as a function of scan time\n\nAn Ansys FEM transient thermal solver was employed to determine tissue temperature rise close to the implant caused by the heat sources. It requires knowing the relevant thermal properties of the tissues. The solver may approximately model blood perfusion, which is less important for bone, but is important for cardiac implants and other soft tissue implants (Winter et al., 2021).\n\nThe entire testbed has been integrated into Ansys Workbench, which allows the combination of different multiphysics modules within a single environment, as shown in Figure 3.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90440/elife-90440-fig3-v1.jpg)\n\n**Figure 3.:** Thermal material properties are contained in module C.\n\nIn this way, the output of the electromagnetic solver (Figure 3A and B) is the input to the thermal solver (Figure 3D). Both accurate FEM solvers utilize the same human model geometry throughout, but with different material properties (thermal vs electromagnetic).\n\n## Results\n\n### What is heating-related MR labeling of implants?\n\nFor the implantable devices that are categorized as MR conditional, the labeling includes scan and rest times at a given whole-body SAR or $B_{1, rms}^{+}$ (\u2018root mean square\u2019 value of $B_{1}^{+}$ averaged over a period of 10 s). This is described in the FDA\u2019s guidance document (US Department of Health and Human Services et al., 2021) (cf. also examples in Shellock et al., 2009) where devices are to be labeled for a 1 hr MR session, including both scan and rest times. The guidance states a certain interleaving combination of scan (e.g., 5 min) and rest (e.g., 15 min) times that guarantees implant heating is less than 5\u00b0C or another specified number (US Department of Health and Human Services et al., 2021). The FDA-required procedure is a measurement test in an ASTM gel-based homogeneous phantom (US Department of Health and Human Services et al., 2021; Song et al., 2018). When performing relevant numerical modeling, the pulse sequences and scan times should be converted to equivalent CW (continuous wave) operation, which is easier to model.\n\nHowever, the response of the ASTM phantom is quite different from that of a real body, which includes bones and other tissues of varying electrical and thermal conductivities, as well as blood circulation and perfusion. In several test cases, our testbed prototype predicted a higher maximum temperature rise (up to 40% higher) at the implant tips versus in vitro experiments with a simplified gel phantom. In other cases, and for other implants, however, the heating was substantially lower (by 50% or so). Therefore, the in silico testbed will augment the ASTM measurements with accurate multiphysics modeling. Additionally, this modeling can assist with implant design in an efficient manner.\n\nWe note that this work is solely focused on the RF safety aspects of MR labeling. The results expressed herein should be considered supplemental to existing published guidelines.\n\n### Example: labeling long femoral titanium nail\n\nFigure 4 shows an example of testing results for a long titanium femoral nail subject to three cycles of 15 min with a 2.3 W/kg average equivalent SAR exposure followed by 5 min of rest, resulting in a 1 hr total exposure in a 1.5 T MRI coil. The model predicts that the temperature near the implant reaches 41\u00b0C after the first exposure with its final value approaching 45\u00b0C, a total increase of about 10\u00b0C which is clearly unacceptable! Further simulations show that 4 min exposures followed by 16 min of rest would be a safe solution. In the testbed, the exposure time is arbitrary and can be rapidly tested and adjusted (within 5\u20137 min) to meet the FDA requirements (US Department of Health and Human Services et al., 2021) and construct the proper MR exposure protocol.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90440/elife-90440-fig4-v1.jpg)\n\n**Figure 4.:** Center \u2013 temperature contour plot in a cut plane roughly bisecting the embedded femoral implant at the end of the last heating cycle. Bottom \u2013 temperature rise profile at the temperature probe. Only the bone is shown but the computations are performed for the entire model.\n\n### Comparison with experiment for a long resonant metal conductor with a sharp tip\n\nThe most challenging and important cases correspond to testing large and potentially resonant metal implants (Song et al., 2018) with relatively sharp tips or terminations since detecting resonance requires accurate high-frequency modeling. One extreme example was studied in Hue et al., 2018, where a simulated percutaneous RF ablation surgical procedure using MR heating was performed in ex vivo bovine liver in a 1.5 T scanner. The device under study was a bent long wire \u2018antenna\u2019 made resonant at the scanner Larmor frequency with an adjustable series capacitor. The antenna, a 26 AWG (0.40 mm) Teflon-insulated silver-plated copper wire taped around the edge of the patient table, was terminated in a simulated RF ablation needle (a 15 cm long 16 AWG/1.30 mm diameter bare copper wire), the tip of which was embedded into the liver to simulate the percutaneous ablation of a solid hepatic tumor. The parameterized testbed coil model was used to replicate the RF antenna and needle geometry of Hue et al., 2018, using standard electrical properties of human liver tissue. The peak tissue temperature increase imaged in Hue et al., 2018, by the proton resonance frequency shift method (20\u00b0C) and a 22\u00b0C increase recorded by a fiber optic temperature sensor at the needle tip agreed well with our modeled prediction of a 23\u00b0C increase using the modeling testbed.\n\nA very fine FEM mesh resolution is required to accurately resolve temperature rise close to a sharp lead tip with a diameter of 1.3 mm \u2013 Figure 5. This is achieved using local automated adaptive FEM mesh refinement, which is a unique property of the present testbed. Figure 5 shows the corresponding testbed setup along with the lesion. A few relevant field movies are available as supplementary materials (Online Dropbox, 2023).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90440/elife-90440-fig5-v1.jpg)\n\n**Figure 5.:** Bottom left \u2013 lesion in a section of ex vivo bovine liver created with heating at the tip of a 16 gauge (1.3 mm) bare copper wire needle in about 1.5 min (Hue et al., 2018).\n\n## Discussion and conclusion\n\nThe temperature rise in the surrounding tissues of a large orthopedic metallic implant subject to MR imaging is a significant point of concern and a potential barrier for the development of better implants. Numerical electromagnetic and thermal modeling offers a way to solve this complex problem with a sufficient degree of accuracy. We developed a complete testbed for realistic implant modeling, which includes a detailed FEM-compatible obese human female model, a parameterized tunable generic MR coil model, a method for implant embedding, and an accurate RF solver directly coupled with a transient thermal solver.\n\nIn the testbed, the MR exposure time is arbitrary and can be readily adjusted and rapidly tested (typically within ~5\u20137 min). This enables the user to meet regulatory requirements (US Department of Health and Human Services et al., 2021) and to construct a proper MR exposure protocol. A cross-platform compatibility of the in silico model has been established previously (Yanamadala et al., 2016). Further validation of cross-platform electromagnetic and thermal coupling performance is currently underway with Dassault Syst\u00e8mes CST Studio Suite software package. The testbed along with the open-source version of the human model VHP-Female College (NEVA Electromagnetics, LLC, 2015) is available online at https://doi.org/10.5061/dryad.2jm63xswt.\n\nWhile the workflow presented herein establishes a validated approach to estimate RF heating due to the presence of a passive implant within a human subject undergoing an MR procedure, certain limitations and proper use stipulations of this methodology should be identified. These include:\n",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "a996ff00-42b5-4e77-acaf-f842566f5a46",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peng Liu, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90440.3.sa0](https://doi.org/10.7554/eLife.90440.3.sa0)\n\nThis manuscript will provide a valuable method to evaluate the safety of MR in patients with orthopaedic implants, which is required in clinics. A strength of the work is that the in-silicon testbed is solid, based on the widely available human project, and validated. In addition, the toolbox will be open for clinical practice.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90440.3.sa1](https://doi.org/10.7554/eLife.90440.3.sa1)\n\nSummary:\n\nIn this work authors are trying to satisfy a real need in MR safety, when concerns can rise about the thermal increase due to metallic materials in patients carrying orthopedic implants. The \"MR conditional\" labeling of the implant obtained by ASTM in-vitro tests may help to plan the MR scan, but it is normally limited to a single specific MR sequence and a B0 value, and it is not always available. The adoption of an in-silico simulation testbed overcomes this limitation, providing a fast and reliable prediction of temperature increase from RF, in real-life scan conditions on human-like digital models. The FDA is pushing this approach.\n\nStrengths:\n\nThe presented in-silico testbed looks valuable and validated. It is based on the widely available Visible Human Project (VHP) datasets, and the testbed is available on-line. The approval of the testbed by the FDA as a medical device development tool (MDDT) is a good premise for the large-scale adoption of this kind of solution.\n\nWeaknesses:\n\nA couple of limitations of the study are now clearly highlighted to the readers in this revised version of the paper. The following aspects:\n\n- the lack of the equivalent modeling for the gradients-related heating;\n\n- the way the implant is embedded in the VHP model that should take in consideration how to manage the removed and stretched tissues;\n\nare now correctly taken in consideration in the discussion, providing additional literature.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90440.3.sa2](https://doi.org/10.7554/eLife.90440.3.sa2)\n\nSummary:\n\nIn this article, the authors provide a method of evaluating safety of orthopedic implants in relation to Radiofrequency induced heating issues. The authors provide an open source computational heterogeneous human model and explain computational techniques in a finite element method solver to predict the RF induced temperature increase due to an orthopedic implant while being exposed to MRI RF fields at 1.5 T.\n\nStrengths:\n\nThe open access computational human model along with their semiautomatic algorithm to position the implant can help realistically model the implant RF exposure in patient avoiding over- or under-estimation of RF heating measured using rectangular box phantoms such as ASTM phantom. Additionally, using numerical simulation to predict radiofrequency induced heating will be much easier compared to the experimental measurements in MRI scanner, especially when the scanner availability is limited.\n\nWeaknesses:\n\nThe proposed method only used radiofrequency (RF) field exposure to evaluate the heating around the implant. However, in the case of bulky implants the rapidly changing gradient field can also produce significant heating due to large eddy currents. So the gradient induced heating still remains an issue to be evaluated to decide on the safety of the patient. Moreover, the method is limited to a single human model and might not be representative of patients with different age, sex and body weights.\n",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0bb1cd8d-b1ce-4e61-a201-ae1c3e8d54aa",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C1",
+      "claim": "The prevalence of implantable devices (orthopedic, cardiac, neuromodulation) increases in the population as does the pervasiveness of conditions requiring MRI studies for diagnosis (musculoskeletal diseases, infections, or cancer).",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation on the ability to monitor health in older adults using magnetic resonance (MR) imaging is the presence of implants, where the prevalence of implantable devices (orthopedic, cardiac, neuromodulation) increases in the population, as does the pervasiveness of conditions requiring MRI studies for diagnosis (musculoskeletal diseases, infections, or cancer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about population trends without specific supporting data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "cef45f89-8d3b-443b-88bd-cce515c617b3",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C2",
+      "claim": "The in silico VHP-Female model corresponds to a 60-year-old female with a body mass index of 36.",
+      "claim_type": "EXPLICIT",
+      "source": "The in silico VHP-Female model (250 parts with an additional 40 components specifically characterizing embedded implants and resultant surrounding tissues) corresponds to a 60-year-old female with a body mass index of 36.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the model characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "bb64178c-82fa-47e3-972d-d56c4d0d64a9",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C3",
+      "claim": "The testbed has been approved by the US Food and Drug Administration (FDA) as a medical device development tool for 1.5 T orthopedic implant examinations.",
+      "claim_type": "EXPLICIT",
+      "source": "The testbed has very recently been approved by the US Food and Drug Administration (FDA) as a medical device development tool for 1.5 T orthopedic implant examinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of regulatory approval status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "d99f08d1-cac5-4dcc-8f82-4742d266b6b7",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C4",
+      "claim": "In 2020, 26% of the US population over 65 was estimated to carry a large joint or spinal implant.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2020, 26% of the US population over 65 was estimated to carry a large joint or spinal implant (Kanal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kanal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "a128752c-0a14-4e36-93b0-a9808f3dc14e",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C5",
+      "claim": "12.6 million patients over 65 who carry orthopedic or cardiac implants will need an MR study within 10 years, according to an estimate in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, 12.6 million patients over 65 who carry orthopedic or cardiac implants will need an MR study within 10 years, according to an estimate in 2020 (Kanal et al., 2015) with this number expected to rise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kanal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "ef189639-39b5-47a3-8c98-32b679448cf2",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C6",
+      "claim": "Over 70% of the estimated 3 million pacemakers in the US are implanted in patients older than 65.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, over 70% of the estimated 3 million pacemakers in the US are implanted in patients older than 65 (Lim et al., 2019; Puette et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lim et al., 2019 and Puette et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "29b31a96-83db-45ed-8f37-209d57726b64",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C7",
+      "claim": "Approximately 20% of pacemaker patients will need an MR study within 12 months of device implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "where approximately 20% of these patients will need an MR study within 12 months of device implantation (Brown et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Brown et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "6f566678-503b-4e93-abbd-e40cd9e90251",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C8",
+      "claim": "MR safe items are nonconducting, nonmetallic, and nonmagnetic items, such as a plastic Petri dish.",
+      "claim_type": "EXPLICIT",
+      "source": "MR safe items are nonconducting, nonmetallic, and nonmagnetic items, such as a plastic Petri dish (Shellock et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition supported by citation to Shellock et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "6059f6f2-6e91-4204-a496-933f45635e8f",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C9",
+      "claim": "MR unsafe items include ferromagnetic materials and should not enter the MR scanner room.",
+      "claim_type": "EXPLICIT",
+      "source": "MR unsafe items include in particular ferromagnetic materials (Shellock et al., 2009); they should not enter the MR scanner room (US Food and Drug Administration, 2023a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shellock et al., 2009 and US Food and Drug Administration, 2023a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "b1742535-3ced-4c71-b3de-fe5c72b32fec",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C10",
+      "claim": "All devices that contain any metallic components, such as titanium (regardless of ferromagnetism), are MR conditional and will need to be evaluated and labeled for RF-induced heating, image artifact, force, and torque.",
+      "claim_type": "EXPLICIT",
+      "source": "All other devices that contain any metallic components, such as titanium (regardless of ferromagnetism), are MR conditional and will need to be evaluated and labeled for radio frequency (RF)-induced heating, image artifact, force, and torque (US Department of Health and Human Services et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to US Department of Health and Human Services et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "c4c40f5f-c353-4772-a896-60280dd0f84e",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C11",
+      "claim": "The number of cleared US Food and Drug Administration (FDA) 510(k) submissions for orthopedic implantable devices with MR labeling has been growing exponentially since 2014, approaching 100 in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the large numbers of implants subject to conditional labeling, the number of cleared US Food and Drug Administration (FDA) 510(k) submissions for orthopedic implantable devices with MR labeling has been growing exponentially since 2014 (Fujimoto et al., 2020), approaching 100 in 2019 (Fujimoto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fujimoto et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "9a282b72-cdf9-465a-80f6-cafc23953e05",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C12",
+      "claim": "Practical testing is limited by constraints related to cost and resources, including testing tools.",
+      "claim_type": "EXPLICIT",
+      "source": "However, practical testing is limited by constraints related to cost and resources, including testing tools (Fujimoto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fujimoto et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "5847d868-78e3-4252-a68d-88d79af1e6c8",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C13",
+      "claim": "A number of implants have been labeled 'MR Not Evaluated', which precludes patients' access to MR imaging procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, a number of implants have been labeled 'MR Not Evaluated', which precludes patients' access to MR imaging procedures (Fujimoto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fujimoto et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "19174b19-2081-4335-992d-f4fbb59e87db",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C14",
+      "claim": "Other implants may be labeled too restrictively, limiting patient access to MR imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Other implants may be labeled too restrictively (Kanal et al., 2015), limiting patient access to MR imaging (US Food and Drug Administration, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kanal et al., 2015 and US Food and Drug Administration, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "115cc9e2-1209-42a9-9c4e-1379c20e50dd",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C15",
+      "claim": "Up to 2 million elderly patients in the US are potentially affected by MR labeling uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "When estimating combined data from Kanal et al., 2015; Fujimoto et al., 2020; US Food and Drug Administration, 2022; US Food and Drug Administration, 2023b, up to 2 million elderly patients in the US are potentially affected by MR labeling uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Estimate based on combined data from multiple cited sources.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "29d5048b-52d5-4503-9dab-fe982ea4e4c5",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C16",
+      "claim": "The most important consequence of MR labeling uncertainty is restricting general access to MR imaging studies for patients with implants.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably, the most important consequence of this uncertainty is restricting general access to MR imaging studies for patients with implants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discussion of labeling issues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "817f08da-6cf3-40b2-ad8a-aae368abccc0",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C17",
+      "claim": "Periprosthetic joint infection following total hip replacement surgery occurs in only 1\u20132% of primary arthroplasties.",
+      "claim_type": "EXPLICIT",
+      "source": "A prime example of the latter is periprosthetic joint infection following total hip replacement surgery, which occurs in only 1\u20132% of primary arthroplasties (Fischbacher and Borens, 2019; Zanetti, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fischbacher and Borens, 2019 and Zanetti, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "026f2e47-3d01-4ddb-a177-066a48b3c5f5",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C18",
+      "claim": "Periprosthetic joint infection occurs in up to 30% of revision arthroplasties.",
+      "claim_type": "EXPLICIT",
+      "source": "but in up to 30% of revision arthroplasties (Zanetti, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zanetti, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "359eebe8-b691-46cd-af9a-30f6c5a652db",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C19",
+      "claim": "Periprosthetic joint infection occurs due to mechanical loosening and dislocation, currently the most common causes for revision of total hip arthroplasty in the US.",
+      "claim_type": "EXPLICIT",
+      "source": "This form of infection occurs due to mechanical loosening and dislocation, currently the most common causes for revision of total hip arthroplasty in the US (Li and Glassman, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li and Glassman, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "06ee73ba-b164-4bd3-966b-e1de32868520",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C20",
+      "claim": "Periprosthetic joint infection-related mortality is approaching 5\u20138% at 1 year.",
+      "claim_type": "EXPLICIT",
+      "source": "Periprosthetic joint infection-related mortality is approaching 5\u20138% at 1 year (Fischbacher and Borens, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fischbacher and Borens, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "57e0173e-debd-44a0-86ce-250c67ee6a5c",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C21",
+      "claim": "Results of MR imaging with metal artifact reduction were recently shown to be the most accurate tool in the diagnosis of several biomarkers of periprosthetic hip joint infection.",
+      "claim_type": "EXPLICIT",
+      "source": "but results of MR imaging with metal artifact reduction were recently shown to be the most accurate tool in the diagnosis of several biomarkers of periprosthetic hip joint infection (Zanetti, 2020; Galley et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zanetti, 2020 and Galley et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "19335646-83d9-482d-8126-173f7f622c73",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C22",
+      "claim": "One major safety concern relevant to both passive and active implants is implant heating within MR RF and gradient coils.",
+      "claim_type": "EXPLICIT",
+      "source": "One major safety concern, relevant to both passive and active implants, is implant heating within MR RF and gradient coils (US Department of Health and Human Services et al., 2021; Song et al., 2018; Al-Dayeh et al., 2020; Winter et al., 2021; Wooldridge et al., 2021; Arduino et al., 2021; Arduino et al., 2022a; Bassen and Zaidi, 2022; Arduino et al., 2022b; Clementi et al., 2022; Oberle, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "f6e58ab6-37ed-4266-ad04-7a475c05080f",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C23",
+      "claim": "Numerical simulations with virtual human models generate accurate predictions of temperature rise accepted by the FDA.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with the required yet not entirely anatomical ASTM phantom test and other similar phantom tests (US Department of Health and Human Services et al., 2021; Song et al., 2018; Winter et al., 2021; Wooldridge et al., 2021; Bassen and Zaidi, 2022; Arduino et al., 2022b), numerical simulations with virtual human models generate accurate predictions of temperature rise (Al-Dayeh et al., 2020; Winter et al., 2021; Wooldridge et al., 2021; Arduino et al., 2022a; Clementi et al., 2022; Oberle, 2021) accepted by the FDA (Oberle, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including FDA acceptance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "ed24e70f-04e4-46b0-8d99-0a13f3ce6915",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C24",
+      "claim": "The electromagnetic and thermal simulation algorithms based on finite element, finite difference, and boundary element methods are reasonably well developed.",
+      "claim_type": "EXPLICIT",
+      "source": "The electromagnetic and thermal simulation algorithms based on finite element, finite difference, and boundary element methods are reasonably well developed (Makarov et al., 2017; Noetscher et al., 2023; Noetscher et al., 2021; Noetscher, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple sources.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "d2912d11-8a43-47ba-9212-5b88182cb6b7",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C25",
+      "claim": "Accessible, full body, detailed anatomical virtual human models reflecting major age, sex, race, and obesity variations are severely lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, accessible, full body, detailed anatomical virtual human models reflecting major age, sex, race, and obesity variations are severely lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "c928cea6-e7c1-436a-bb09-9d9281bbad4e",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C26",
+      "claim": "Creation of virtual human models is a long, tedious, and labor-intensive process requiring manual and semiautomatic supervised segmentation of full body MR images, surface mesh reconstruction, mesh intersection resolution, software compatibility and robustness testing, and examination of hundreds of different body compartments by anatomical experts.",
+      "claim_type": "EXPLICIT",
+      "source": "Their creation is a long, tedious, and labor-intensive process. Even today, it requires manual and semiautomatic supervised segmentation of full body MR images, surface mesh reconstruction, mesh intersection resolution, software compatibility and robustness testing, and finally examination of hundreds of different body compartments by anatomical experts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the process based on knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "0db94f8e-4be5-44d4-a710-aed620c1e8d7",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C27",
+      "claim": "The Virtual Population is an excellent collection of in silico human body models intended for MR safety assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "An excellent collection of in silico human body models intended for this purpose is the Virtual Population, a product of the IT'IS Foundation (Oberle, 2021; Gosselin et al., 2014) widely used in both industrial and academic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Oberle, 2021 and Gosselin et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "5e87acaa-11cd-47b7-abc3-dc09ffe1a79c",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C28",
+      "claim": "The Virtual Population is relatively homogeneous, consisting of reasonably fit, younger Caucasian European subjects, representing a comparatively limited subsection of human anatomy and physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "While this population has many highly detailed body models, it is relatively homogeneous: reasonably fit, younger Caucasian European subjects, representing a comparatively limited subsection of human anatomy and physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the Virtual Population characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "dd6cd851-8614-429f-a413-1fc22d2fa2fa",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C29",
+      "claim": "Three obese models were added to the Virtual Population in 2023, with two of the three not truly anatomical and obtained via morphing (the 'Fats' model being the exception).",
+      "claim_type": "EXPLICIT",
+      "source": "Although three obese models were added in 2023 (IT'IS Foundation, 2023), two of the three are not truly anatomical and were obtained via morphing (the 'Fats' model being the exception).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to IT'IS Foundation, 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "b07c9231-2d21-454b-83f4-7a9ad95c14ce",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C30",
+      "claim": "No background MRI data enabling independent tissue structure verification have been made publicly available for the Virtual Population set.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, while models are available for purchase and for research purposes, no background MRI data enabling independent tissue structure verification have been made publicly available for this population set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "e5f74aae-e335-43fc-a2c4-218f0bdd4ed6",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C31",
+      "claim": "The in silico VHP-Female model has 250 anatomical structures with an additional 40 components specifically modeling embedded implants.",
+      "claim_type": "EXPLICIT",
+      "source": "The in silico VHP-Female model (250 anatomical structures with an additional 40 components specifically modeling embedded implants Noetscher et al., 2021) characterizes a 60-year-old female subject with a body mass index of 36.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the model with citation to Noetscher et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "5403ade5-becc-43c9-b462-dd6637e69803",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C32",
+      "claim": "The open-source version of the VHP-Female model has over 600 registered users from both industry and academia worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "The open-source version of this model (NEVA Electromagnetics, LLC, 2015) has over 600 registered users from both industry and academia worldwide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about user base with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "a1f11b70-8ae1-4fd7-a4ab-4eeca9d98ace",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C33",
+      "claim": "The testbed includes the in silico model, an implant embedding procedure, a generic parameterizable MR RF birdcage two-port coil model, a workflow for computing heat sources on the implant surface and neighboring tissues, and a thermal FEM solver directly linked to the MR coil simulator.",
+      "claim_type": "EXPLICIT",
+      "source": "The testbed includes the in silico model, an implant embedding procedure, a generic parameterizable MR RF birdcage two-port coil model, a workflow for computing heat sources on the implant surface and neighboring tissues, and a thermal FEM solver directly linked to the MR coil simulator to estimate implant heating based on an MR imaging protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of testbed components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "c90b5927-7e42-464d-99aa-487b3dd3385d",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C34",
+      "claim": "The primary target of the testbed is MR labeling of large orthopedic implants.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary target is MR labeling of large orthopedic implants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the testbed's primary purpose.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "c5badee1-ba53-4620-b86d-eb63bba4afc2",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C35",
+      "claim": "The testbed has recently been approved by the FDA as a medical device development tool for 1.5 T orthopedic implant examinations.",
+      "claim_type": "EXPLICIT",
+      "source": "The testbed has recently been approved by the FDA as a medical device development tool (Neva Electromagnetics, LLC, 2022) for 1.5 T orthopedic implant examinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of FDA approval with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "933a749d-7d43-452e-a50d-2f1b79c2509b",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C36",
+      "claim": "The implant registration enforces an anatomically correct implant position and requires a certain part of the bone matter (cortical and/or trabecular) to be removed as necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "The implant registration enforces an anatomically correct implant position, and a certain part of the bone matter (cortical and/or trabecular) to be removed as necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the implant registration procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "202ca6a7-a88e-438e-b96a-52d961ecba11",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C37",
+      "claim": "A semiautomatic implant registration algorithm requiring limited user intervention has been employed based on using at least two anchor nodes per implant: a fixed node and a floating node.",
+      "claim_type": "EXPLICIT",
+      "source": "A semiautomatic implant registration algorithm requiring limited user intervention has been employed based on the principal idea to use at least two anchor nodes per implant: a fixed node and a floating node.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the algorithm methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "05ff42b4-19a2-48ec-a3e2-8212629173e1",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C38",
+      "claim": "A generic, parameterized, and tunable MR RF birdcage two-port coil model at 64 MHz (1.5 T) with a variable number of rungs was implemented in Ansys Electronics Desktop.",
+      "claim_type": "EXPLICIT",
+      "source": "A generic, parameterized, and tunable MR RF birdcage two-port coil model (high-, low-, or bandpass), at 64 MHz (1.5 T) with a variable number of rungs was implemented in Ansys Electronics Desktop (Ansys HFSS, Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of the coil model with reference to Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "008ecd4d-6f6e-4fd0-a38c-70a5beace367",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C39",
+      "claim": "The coil model is used to compute heat sources \u2013 either specific absorption rate (SAR) in W/kg or power loss density in W/m3 at any point in the body, including on the surface of the implants.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is used to compute heat sources \u2013 either specific absorption rate (SAR) in W/kg or power loss density in W/m3 at any point in the body, including on the surface of the implants (Figure 2b, c; Kozlov et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of model functionality with reference to figures and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "c8973884-7445-497e-a01d-b22e5ad59335",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C40",
+      "claim": "An Ansys FEM transient thermal solver was employed to determine tissue temperature rise close to the implant caused by the heat sources.",
+      "claim_type": "EXPLICIT",
+      "source": "An Ansys FEM transient thermal solver was employed to determine tissue temperature rise close to the implant caused by the heat sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the thermal solver used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "d8c76c31-62ff-4cb5-a769-17d72aea5c59",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C41",
+      "claim": "The thermal solver requires knowing the relevant thermal properties of the tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "It requires knowing the relevant thermal properties of the tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about solver requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "93a68ec3-d193-4de8-b687-2e425af2c771",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C42",
+      "claim": "The thermal solver may approximately model blood perfusion, which is less important for bone, but is important for cardiac implants and other soft tissue implants.",
+      "claim_type": "EXPLICIT",
+      "source": "The solver may approximately model blood perfusion, which is less important for bone, but is important for cardiac implants and other soft tissue implants (Winter et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about solver capabilities with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "c88d84a1-f19b-4f58-9a48-68c49dc3e72a",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C43",
+      "claim": "The entire testbed has been integrated into Ansys Workbench, which allows the combination of different multiphysics modules within a single environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire testbed has been integrated into Ansys Workbench, which allows the combination of different multiphysics modules within a single environment, as shown in Figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of software integration with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "25a0aa2d-fd77-45e4-9d68-1fd47d13b8cb",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C44",
+      "claim": "The output of the electromagnetic solver is the input to the thermal solver.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the output of the electromagnetic solver (Figure 3A and B) is the input to the thermal solver (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of workflow with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "c4fb7665-4d1e-4e61-9624-3902c11d434a",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C45",
+      "claim": "Both accurate FEM solvers utilize the same human model geometry throughout, but with different material properties (thermal vs electromagnetic).",
+      "claim_type": "EXPLICIT",
+      "source": "Both accurate FEM solvers utilize the same human model geometry throughout, but with different material properties (thermal vs electromagnetic).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of solver implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "7aa45020-f306-4883-8128-4a47efa5ef46",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C47",
+      "claim": "Devices are to be labeled for a 1 hr MR session, including both scan and rest times, according to the FDA's guidance document.",
+      "claim_type": "EXPLICIT",
+      "source": "This is described in the FDA's guidance document (US Department of Health and Human Services et al., 2021) (cf. also examples in Shellock et al., 2009) where devices are to be labeled for a 1 hr MR session, including both scan and rest times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to FDA guidance and Shellock et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "ea92f713-4ec1-43cf-a28f-089460f1d9e8",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C48",
+      "claim": "The FDA guidance states a certain interleaving combination of scan and rest times that guarantees implant heating is less than 5\u00b0C or another specified number.",
+      "claim_type": "EXPLICIT",
+      "source": "The guidance states a certain interleaving combination of scan (e.g., 5 min) and rest (e.g., 15 min) times that guarantees implant heating is less than 5\u00b0C or another specified number (US Department of Health and Human Services et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to FDA guidance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "39be9e37-c641-4ae9-a849-531cb51035a8",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C49",
+      "claim": "The FDA-required procedure is a measurement test in an ASTM gel-based homogeneous phantom.",
+      "claim_type": "EXPLICIT",
+      "source": "The FDA-required procedure is a measurement test in an ASTM gel-based homogeneous phantom (US Department of Health and Human Services et al., 2021; Song et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to FDA guidance and Song et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "a5b1e3b5-dee6-4e94-933a-83fb4c62212a",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C50",
+      "claim": "When performing relevant numerical modeling, the pulse sequences and scan times should be converted to equivalent CW (continuous wave) operation, which is easier to model.",
+      "claim_type": "EXPLICIT",
+      "source": "When performing relevant numerical modeling, the pulse sequences and scan times should be converted to equivalent CW (continuous wave) operation, which is easier to model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about modeling methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "82824e72-e5ca-460c-8d48-e0cdef50fbf3",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C51",
+      "claim": "The response of the ASTM phantom is quite different from that of a real body, which includes bones and other tissues of varying electrical and thermal conductivities, as well as blood circulation and perfusion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the response of the ASTM phantom is quite different from that of a real body, which includes bones and other tissues of varying electrical and thermal conductivities, as well as blood circulation and perfusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about phantom limitations based on knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "5b5833e8-9221-4e18-bc8f-217f18da8021",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C52",
+      "claim": "In several test cases, the testbed prototype predicted a higher maximum temperature rise (up to 40% higher) at the implant tips versus in vitro experiments with a simplified gel phantom.",
+      "claim_type": "EXPLICIT",
+      "source": "In several test cases, our testbed prototype predicted a higher maximum temperature rise (up to 40% higher) at the implant tips versus in vitro experiments with a simplified gel phantom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of testbed predictions with experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "2c9d1dad-b1f6-4d1c-8738-33ef981c44aa",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C53",
+      "claim": "In other cases, and for other implants, the heating was substantially lower (by 50% or so) compared to phantom experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In other cases, and for other implants, however, the heating was substantially lower (by 50% or so).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of testbed predictions with experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "de98ce30-e9b3-41fa-be07-37bd02751ce5",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C54",
+      "claim": "The in silico testbed will augment the ASTM measurements with accurate multiphysics modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the in silico testbed will augment the ASTM measurements with accurate multiphysics modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the intended use of the testbed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "41ede005-e347-41d7-ae92-0e5655ab8e8d",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C55",
+      "claim": "The multiphysics modeling can assist with implant design in an efficient manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, this modeling can assist with implant design in an efficient manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about potential application.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "0ecc8eeb-9e52-4570-aa6d-120e085e12f9",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C56",
+      "claim": "This work is solely focused on the RF safety aspects of MR labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that this work is solely focused on the RF safety aspects of MR labeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about scope of work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "163a61b1-866e-4dca-beb5-1dec7f45f41c",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C57",
+      "claim": "The results expressed in this work should be considered supplemental to existing published guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "The results expressed herein should be considered supplemental to existing published guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about how results should be interpreted.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "719186f8-591d-402f-8e4b-3cb6cd612abe",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C58",
+      "claim": "For a long titanium femoral nail subject to three cycles of 15 min with a 2.3 W/kg average equivalent SAR exposure followed by 5 min of rest in a 1.5 T MRI coil, the model predicts that the temperature near the implant reaches 41\u00b0C after the first exposure with its final value approaching 45\u00b0C, a total increase of about 10\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4 shows an example of testing results for a long titanium femoral nail subject to three cycles of 15 min with a 2.3 W/kg average equivalent SAR exposure followed by 5 min of rest, resulting in a 1 hr total exposure in a 1.5 T MRI coil. The model predicts that the temperature near the implant reaches 41\u00b0C after the first exposure with its final value approaching 45\u00b0C, a total increase of about 10\u00b0C which is clearly unacceptable!",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "79133cac-a12b-4cb4-8fb8-962d4f69f754",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C59",
+      "claim": "Further simulations show that 4 min exposures followed by 16 min of rest would be a safe solution for the long titanium femoral nail.",
+      "claim_type": "EXPLICIT",
+      "source": "Further simulations show that 4 min exposures followed by 16 min of rest would be a safe solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from additional simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "d4ee9c52-a54e-4b2d-a492-33d449dbd15b",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C60",
+      "claim": "In the testbed, the exposure time is arbitrary and can be rapidly tested and adjusted (within 5\u20137 min) to meet the FDA requirements and construct the proper MR exposure protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "In the testbed, the exposure time is arbitrary and can be rapidly tested and adjusted (within 5\u20137 min) to meet the FDA requirements (US Department of Health and Human Services et al., 2021) and construct the proper MR exposure protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of testbed capabilities with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "11bf187b-9c5d-4934-91ac-7899367bbe74",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C61",
+      "claim": "The most challenging and important cases correspond to testing large and potentially resonant metal implants with relatively sharp tips or terminations since detecting resonance requires accurate high-frequency modeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The most challenging and important cases correspond to testing large and potentially resonant metal implants (Song et al., 2018) with relatively sharp tips or terminations since detecting resonance requires accurate high-frequency modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about challenging cases with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "8864c747-7cbb-4425-9de2-1c5498d2698d",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C62",
+      "claim": "In Hue et al., 2018, a simulated percutaneous RF ablation surgical procedure using MR heating was performed in ex vivo bovine liver in a 1.5 T scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "One extreme example was studied in Hue et al., 2018, where a simulated percutaneous RF ablation surgical procedure using MR heating was performed in ex vivo bovine liver in a 1.5 T scanner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experiment from cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "cd08d09c-402b-4a7d-95de-5a106e402a9e",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C63",
+      "claim": "The device under study in Hue et al., 2018 was a bent long wire 'antenna' made resonant at the scanner Larmor frequency with an adjustable series capacitor, terminated in a simulated RF ablation needle (a 15 cm long 16 AWG/1.30 mm diameter bare copper wire), the tip of which was embedded into the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "The device under study was a bent long wire 'antenna' made resonant at the scanner Larmor frequency with an adjustable series capacitor. The antenna, a 26 AWG (0.40 mm) Teflon-insulated silver-plated copper wire taped around the edge of the patient table, was terminated in a simulated RF ablation needle (a 15 cm long 16 AWG/1.30 mm diameter bare copper wire), the tip of which was embedded into the liver to simulate the percutaneous ablation of a solid hepatic tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental setup from cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "6a1410e4-79a8-401a-95ba-b8670bc87613",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C64",
+      "claim": "The peak tissue temperature increase imaged in Hue et al., 2018 by the proton resonance frequency shift method was 20\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak tissue temperature increase imaged in Hue et al., 2018, by the proton resonance frequency shift method (20\u00b0C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental result from cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "4eb90266-be21-47c6-9bb7-0df9ffccc205",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C65",
+      "claim": "A 22\u00b0C increase was recorded by a fiber optic temperature sensor at the needle tip in Hue et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "and a 22\u00b0C increase recorded by a fiber optic temperature sensor at the needle tip",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental result from cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "083fcac1-2c38-4dd6-b6fa-775cbb1bcd67",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C66",
+      "claim": "The modeling testbed predicted a 23\u00b0C increase for the ablation needle experiment, which agreed well with the experimental measurements of 20\u00b0C and 22\u00b0C from Hue et al., 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak tissue temperature increase imaged in Hue et al., 2018, by the proton resonance frequency shift method (20\u00b0C) and a 22\u00b0C increase recorded by a fiber optic temperature sensor at the needle tip agreed well with our modeled prediction of a 23\u00b0C increase using the modeling testbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of testbed prediction with experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "e2576407-1e1f-4681-b088-faa43c3b25a4",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C67",
+      "claim": "A very fine FEM mesh resolution is required to accurately resolve temperature rise close to a sharp lead tip with a diameter of 1.3 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "A very fine FEM mesh resolution is required to accurately resolve temperature rise close to a sharp lead tip with a diameter of 1.3 mm \u2013 Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement about modeling requirements with reference to Figure 5.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "8b7b3423-97aa-496f-b32a-8a8e494fa3bf",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C68",
+      "claim": "Local automated adaptive FEM mesh refinement is achieved in the testbed, which is a unique property of the present testbed.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved using local automated adaptive FEM mesh refinement, which is a unique property of the present testbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of testbed capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "46130745-047a-4718-9e1f-e0efb72551ad",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C69",
+      "claim": "The temperature rise in the surrounding tissues of a large orthopedic metallic implant subject to MR imaging is a significant point of concern and a potential barrier for the development of better implants.",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature rise in the surrounding tissues of a large orthopedic metallic implant subject to MR imaging is a significant point of concern and a potential barrier for the development of better implants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the problem being addressed.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "d0cbb0c1-865e-4e42-9772-5324916dfe8d",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C70",
+      "claim": "Numerical electromagnetic and thermal modeling offers a way to solve the complex problem of implant heating with a sufficient degree of accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerical electromagnetic and thermal modeling offers a way to solve this complex problem with a sufficient degree of accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the solution approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "c23e529d-aa1b-40df-a462-8b16a68f0fd5",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C71",
+      "claim": "A complete testbed for realistic implant modeling was developed, which includes a detailed FEM-compatible obese human female model, a parameterized tunable generic MR coil model, a method for implant embedding, and an accurate RF solver directly coupled with a transient thermal solver.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a complete testbed for realistic implant modeling, which includes a detailed FEM-compatible obese human female model, a parameterized tunable generic MR coil model, a method for implant embedding, and an accurate RF solver directly coupled with a transient thermal solver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of what was developed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "5f07fe4c-091b-4ca0-a221-0c60e0148137",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C72",
+      "claim": "In the testbed, the MR exposure time is arbitrary and can be readily adjusted and rapidly tested (typically within ~5\u20137 min) to meet regulatory requirements and construct a proper MR exposure protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "In the testbed, the MR exposure time is arbitrary and can be readily adjusted and rapidly tested (typically within ~5\u20137 min). This enables the user to meet regulatory requirements (US Department of Health and Human Services et al., 2021) and to construct a proper MR exposure protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of testbed capabilities with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "a91eaa7d-e028-41b8-92e1-289f257bcfe7",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C73",
+      "claim": "A cross-platform compatibility of the in silico model has been established previously.",
+      "claim_type": "EXPLICIT",
+      "source": "A cross-platform compatibility of the in silico model has been established previously (Yanamadala et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yanamadala et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "7f092296-4671-4ef9-8a28-0188fdeb4d5f",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C74",
+      "claim": "Further validation of cross-platform electromagnetic and thermal coupling performance is currently underway with Dassault Syst\u00e8mes CST Studio Suite software package.",
+      "claim_type": "EXPLICIT",
+      "source": "Further validation of cross-platform electromagnetic and thermal coupling performance is currently underway with Dassault Syst\u00e8mes CST Studio Suite software package.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about ongoing work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "1edcd08b-ec5c-4dab-9873-325d616b7686",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C75",
+      "claim": "The testbed along with the open-source version of the human model VHP-Female College is available online at https://doi.org/10.5061/dryad.2jm63xswt.",
+      "claim_type": "EXPLICIT",
+      "source": "The testbed along with the open-source version of the human model VHP-Female College (NEVA Electromagnetics, LLC, 2015) is available online at https://doi.org/10.5061/dryad.2jm63xswt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about data availability with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "ab4a9e35-0d17-4125-9215-5a7a128feffc",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C76",
+      "claim": "The VHP-Female model is based on the Visible Human Project cryo-section dataset.",
+      "claim_type": "IMPLICIT",
+      "source": "(1) an in silico human model based on the widely available Visible Human Project (VHP) cryo-section dataset",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The model name VHP-Female indicates it is based on the Visible Human Project dataset.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "83609a9f-3d81-438b-adfd-70c420982d85",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "claim_id": "C77",
+      "claim": "The testbed uses Ansys Electronics Desktop/Mechanical as the FEM modeling software workbench.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) a finite element method (FEM) modeling software workbench from Ansys (Electronics Desktop/Mechanical) to model MR radio frequency (RF) coils and the temperature rise modeling in heterogeneous media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the software used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "94ba35a3-e81a-4454-b1ed-81269fca96e1",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the clinical need for improved MR imaging access in elderly patients with implants, citing that 26% of the US population over 65 carries large joint or spinal implants, 12.6 million patients with implants will need MR studies within 10 years, and over 70% of 3 million pacemakers are in patients over 65, with 20% requiring MR studies within 12 months of implantation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 are well-supported by appropriate citations to peer-reviewed literature (Kanal et al., 2015; Lim et al., 2019; Puette et al., 2022; Brown et al., 2019). Claim C1 serves as a general framing statement that is substantiated by the specific statistics in C4-C7. The data collectively establish a clear clinical need for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "fd943c04-b216-41c0-a891-ac1380378b20",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes the MR safety classification system (MR safe, unsafe, conditional) and argues that current labeling practices are inadequate, with many implants labeled 'MR Not Evaluated' or too restrictively, potentially affecting up to 2 million elderly US patients and restricting their access to MR imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 accurately describe the established MR safety classification system with appropriate citations. Claims C11-C14 document the labeling problem with proper citations. Claim C15's estimate of 2 million affected patients is explicitly stated as derived from combining multiple sources, which is methodologically transparent. The logical connection to restricted access (C16) follows reasonably from the preceding claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "bc98575c-0ccf-4b89-bcda-6d6ea393e5fc",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript presents periprosthetic joint infection as a clinical example where improved MR imaging access would be beneficial, noting it occurs in 1-2% of primary arthroplasties but up to 30% of revisions, has 5-8% mortality at 1 year, and that MR imaging with metal artifact reduction is the most accurate diagnostic tool.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All claims are supported by appropriate citations to clinical literature (Fischbacher and Borens, 2019; Zanetti, 2020; Li and Glassman, 2018; Galley et al., 2020). The statistics are specific and the clinical context is well-established. This effectively motivates the need for better MR imaging access for patients with implants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The manuscript establishes that while numerical simulations with virtual human models can accurately predict RF-induced implant heating and are FDA-accepted, accessible full-body anatomical models reflecting demographic diversity are lacking. The Virtual Population, while excellent, is relatively homogeneous (younger, fit Caucasian Europeans) and lacks publicly available background MRI data for verification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are well-supported by extensive citations establishing the state of the field. Claims C25-C26 identify a gap in available models, which is a reasonable assessment. Claims C27-C30 provide a fair critique of the Virtual Population, noting both its strengths and limitations (homogeneity, morphed rather than anatomical obese models, lack of public verification data). The assessment is balanced and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "22eee765-ac26-4989-8381-c8e024f0510e",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The VHP-Female model used in the testbed is based on the Visible Human Project cryo-section dataset, represents a 60-year-old female with BMI 36, contains 250 anatomical structures plus 40 implant-related components, and has over 600 registered users worldwide in its open-source version.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model characteristics are clearly stated with appropriate citations (Noetscher et al., 2021; NEVA Electromagnetics, LLC, 2015). The user base claim (C32) is specific and verifiable. The connection to the Visible Human Project (C76) is reasonable given the model name. These claims establish the model's provenance and adoption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The testbed comprises an integrated multiphysics simulation system including the VHP-Female model, a semiautomatic implant embedding algorithm using anchor nodes, a parameterizable 64 MHz birdcage coil model in Ansys HFSS for computing SAR/power loss density, and an Ansys FEM thermal solver for temperature rise prediction, all integrated in Ansys Workbench. The testbed targets MR labeling of large orthopedic implants and has received FDA approval as a medical device development tool for 1.5 T examinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The technical components are described in detail with appropriate software specifications and workflow integration (C33-C45, C77). The FDA approval (C35) is a verifiable regulatory milestone with citation. The implant embedding methodology (C36-C37) is clearly described. The integration of electromagnetic and thermal solvers (C43-C45) is technically sound. Figure references support the descriptions. This represents a complete technical description of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "a7181e08-5999-4f50-b250-9f7571315704",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The testbed has been approved by the US FDA as a medical device development tool for 1.5 T orthopedic implant examinations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The FDA approval is stated consistently (C3, C35) with citation to Neva Electromagnetics, LLC, 2022. This is a verifiable regulatory milestone that represents significant validation of the testbed. The approval is appropriately scoped to 1.5 T orthopedic implant examinations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "503496cf-aa53-474f-957e-7516875fbdcc",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript describes FDA labeling requirements (1 hr sessions with specified scan/rest cycles to keep heating <5\u00b0C) and notes that ASTM phantom testing differs substantially from real body response. The testbed predicted up to 40% higher or 50% lower heating than phantom experiments in different cases, motivating the need for anatomical modeling to augment ASTM measurements and assist implant design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 accurately describe FDA requirements with proper citations. The limitation of ASTM phantoms (C51) is a well-recognized issue in the field. The comparison data (C52-C53) showing both higher and lower predictions versus phantoms demonstrates the complexity and validates the need for anatomical modeling. The proposed role of the testbed (C54-C55) follows logically. The scope limitations (C56-C57) are appropriately stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "5fa5d647-5385-4b6b-94a0-f31045abded4",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For a long titanium femoral nail, the testbed predicted unsafe heating (10\u00b0C rise to 45\u00b0C) with 15 min scan/5 min rest cycles, but safe heating with 4 min scan/16 min rest cycles. The testbed allows rapid testing and adjustment of exposure protocols (within 5-7 minutes) to meet FDA requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 presents specific simulation results with clear parameters and outcomes, supported by Figure 4. Claim C59 demonstrates the testbed's utility in optimizing protocols. Claims C60 and C72 establish the practical efficiency of the system. This represents a concrete demonstration of the testbed's capability to address the clinical problem, though it is a simulation result rather than experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "fa23976b-ecae-4ace-8078-a888b200240d",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The testbed was validated against an extreme case from Hue et al., 2018: a resonant RF ablation needle in bovine liver. The testbed predicted 23\u00b0C temperature rise, agreeing well with experimental measurements of 20\u00b0C (proton resonance frequency shift) and 22\u00b0C (fiber optic sensor). This validation required fine FEM mesh resolution achieved through local automated adaptive mesh refinement, claimed as a unique testbed property.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The validation case (C62-C66) shows good agreement between simulation (23\u00b0C) and two independent experimental measurements (20\u00b0C and 22\u00b0C) from a published study. The ~10-15% agreement is reasonable for this type of modeling. The technical requirement for fine mesh resolution (C67) and the adaptive refinement capability (C68) are appropriate for modeling sharp tips. This represents important validation of the testbed's accuracy, though only one validation case is presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "83537bd0-50c1-44e2-92fb-1ba5ea414318",
+      "content_id": "12a72a8f-73a2-4a59-bdce-d876faac14a5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript concludes that numerical electromagnetic and thermal modeling offers an accurate solution to implant heating concerns. A complete testbed was developed and validated, with cross-platform compatibility previously established and further validation underway with CST Studio Suite. The testbed and open-source VHP-Female model are available online.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conclusion (C69-C71) appropriately summarizes the work and its motivation. Cross-platform compatibility (C73) is supported by citation to prior work (Yanamadala et al., 2016). Ongoing validation (C74) is transparently stated as future work. Data availability (C75) with a specific DOI is excellent practice. The claims are appropriately scoped and supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "a841694d-b7bf-4daa-a04c-5a9006285fa2",
+      "content_id": "a996ff00-42b5-4e77-acaf-f842566f5a46",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed a comprehensive in silico testbed for evaluating RF-induced heating of orthopedic implants during MRI. The testbed includes a detailed VHP-Female model (60-year-old, BMI 36, 250 anatomical structures plus 40 implant components), a semiautomatic implant embedding procedure, a parameterizable MR RF birdcage coil model at 1.5T, and coupled electromagnetic and thermal FEM solvers integrated in Ansys Workbench. The testbed received FDA approval as a medical device development tool for 1.5T orthopedic implant examinations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers affirm the testbed's value and validation. Reviewer 1 states the testbed is 'solid, based on the widely available human project, and validated.' Reviewer 2 describes it as 'valuable and validated' and notes 'the approval of the testbed by the FDA as a medical device development tool (MDDT) is a good premise for the large-scale adoption.' Reviewer 3 acknowledges the testbed provides 'an open source computational heterogeneous human model' with methods that 'can help realistically model the implant RF exposure.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "5ccea38e-8c79-4b0f-a6d0-29da49319032",
+      "content_id": "a996ff00-42b5-4e77-acaf-f842566f5a46",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The testbed was validated against experimental data, including comparison with ASTM phantom tests and an extreme case from Hue et al. 2018 involving a resonant RF ablation needle in ex vivo bovine liver. The testbed predicted a 23\u00b0C temperature increase, agreeing well with experimental measurements of 20\u00b0C (proton resonance frequency shift) and 22\u00b0C (fiber optic sensor). The testbed showed variable agreement with phantom experiments: up to 40% higher temperature predictions in some cases and 50% lower in others. For a titanium femoral nail, simulations demonstrated that 15-min exposures at 2.3 W/kg SAR caused unsafe 10\u00b0C temperature rises, while 4-min exposures with 16-min rest periods were safe.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the validation results without challenge. Reviewer 1 states the testbed is 'validated,' and Reviewer 2 explicitly notes it is 'validated' and 'looks valuable.' The comparison with experimental data from Hue et al. 2018 and the demonstration of the testbed's ability to predict safe vs. unsafe exposure protocols are presented as evidence of the testbed's accuracy and utility, which reviewers do not question.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "2de920b0-b4cf-4a10-8cfd-1a405132bf34",
+      "content_id": "a996ff00-42b5-4e77-acaf-f842566f5a46",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The work focuses solely on RF-induced heating safety aspects of MR labeling for orthopedic implants, acknowledging that implant heating from both RF and gradient coils is a major safety concern for passive and active implants.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 explicitly identifies a weakness: 'The proposed method only used radiofrequency (RF) field exposure to evaluate the heating around the implant. However, in the case of bulky implants the rapidly changing gradient field can also produce significant heating due to large eddy currents. So the gradient induced heating still remains an issue to be evaluated.' Reviewer 2 notes this limitation is 'now clearly highlighted' in the revised manuscript and 'correctly taken in consideration in the discussion,' indicating the authors acknowledge but do not address gradient heating in this work.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "e56076da-0ae0-4b49-b950-e7fb3d707130",
+      "content_id": "a996ff00-42b5-4e77-acaf-f842566f5a46",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The testbed is limited to a single human model (VHP-Female, obese 60-year-old female), and accessible full-body anatomical virtual human models reflecting major variations in age, sex, race, and obesity are severely lacking. The Virtual Population, while excellent, is relatively homogeneous (younger, fit Caucasian Europeans), and recent obese model additions were mostly obtained via morphing rather than true anatomical segmentation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 identifies this as a weakness: 'the method is limited to a single human model and might not be representative of patients with different age, sex and body weights.' Reviewer 2 notes that 'the way the implant is embedded in the VHP model that should take in consideration how to manage the removed and stretched tissues' is 'now correctly taken in consideration in the discussion,' suggesting the authors acknowledge but do not fully resolve the limitation of model diversity and anatomical representation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "09572e2c-051d-4282-8d16-e0dd8a057e14",
+      "content_id": "a996ff00-42b5-4e77-acaf-f842566f5a46",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The testbed augments FDA-required ASTM phantom measurements with anatomically realistic multiphysics modeling. The ASTM phantom response differs significantly from real bodies due to homogeneous tissue properties and lack of blood perfusion. The testbed allows rapid testing and adjustment of MR exposure protocols (within 5-7 minutes) to meet FDA requirements for 1-hour MR sessions with specified scan/rest time combinations that limit heating to safe levels (e.g., <5\u00b0C).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these claims about the testbed's intended use and advantages over phantom testing. Reviewer 3 states the testbed 'can help realistically model the implant RF exposure in patient avoiding over- or under-estimation of RF heating measured using rectangular box phantoms such as ASTM phantom.' Reviewer 2 notes the testbed 'overcomes' limitations of ASTM tests and provides 'fast and reliable prediction of temperature increase from RF, in real-life scan conditions on human-like digital models.' No reviewer challenges these methodological claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "221394b0-2184-484d-9583-9706e57a82e9",
+      "content_id": "a996ff00-42b5-4e77-acaf-f842566f5a46",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The manuscript establishes the clinical context and motivation: increasing prevalence of implants in aging populations (26% of US population over 65 carry orthopedic implants; 12.6 million patients will need MR studies within 10 years), growing FDA 510(k) submissions for MR-conditional labeling (approaching 100 in 2019), limitations of current testing leading to 'MR Not Evaluated' or overly restrictive labels affecting up to 2 million elderly US patients, and clinical importance of MR imaging for conditions like periprosthetic joint infection (1-2% of primary arthroplasties, up to 30% of revisions, 5-8% mortality at 1 year).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this background context without challenge. Reviewer 1 states the work addresses a 'real need in MR safety' and that the method is 'required in clinics.' Reviewer 2 notes the authors 'are trying to satisfy a real need in MR safety, when concerns can rise about the thermal increase due to metallic materials in patients carrying orthopedic implants.' The statistical claims about implant prevalence and clinical impact are treated as established context rather than contested findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "225f1bbc-5153-4423-8ebc-2589c3093dcb",
+      "content_id": "a996ff00-42b5-4e77-acaf-f842566f5a46",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Numerical simulations with virtual human models generate accurate predictions of temperature rise that are accepted by the FDA. The electromagnetic and thermal simulation algorithms based on finite element, finite difference, and boundary element methods are reasonably well developed. Cross-platform compatibility has been established previously, with further validation underway using CST Studio Suite.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these methodological claims. Reviewer 2 notes 'The FDA is pushing this approach' and that FDA approval 'is a good premise for the large-scale adoption of this kind of solution.' Reviewer 3 acknowledges that 'using numerical simulation to predict radiofrequency induced heating will be much easier compared to the experimental measurements in MRI scanner.' The acceptance of these computational methods by reviewers aligns with the claims about their development and FDA acceptance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0bb1cd8d-b1ce-4e61-a201-ae1c3e8d54aa",
+      "result_id": "94ba35a3-e81a-4454-b1ed-81269fca96e1"
+    },
+    {
+      "claim_id": "d99f08d1-cac5-4dcc-8f82-4742d266b6b7",
+      "result_id": "94ba35a3-e81a-4454-b1ed-81269fca96e1"
+    },
+    {
+      "claim_id": "a128752c-0a14-4e36-93b0-a9808f3dc14e",
+      "result_id": "94ba35a3-e81a-4454-b1ed-81269fca96e1"
+    },
+    {
+      "claim_id": "ef189639-39b5-47a3-8c98-32b679448cf2",
+      "result_id": "94ba35a3-e81a-4454-b1ed-81269fca96e1"
+    },
+    {
+      "claim_id": "29b31a96-83db-45ed-8f37-209d57726b64",
+      "result_id": "94ba35a3-e81a-4454-b1ed-81269fca96e1"
+    },
+    {
+      "claim_id": "6f566678-503b-4e93-abbd-e40cd9e90251",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "6059f6f2-6e91-4204-a496-933f45635e8f",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "b1742535-3ced-4c71-b3de-fe5c72b32fec",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "c4c40f5f-c353-4772-a896-60280dd0f84e",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "9a282b72-cdf9-465a-80f6-cafc23953e05",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "5847d868-78e3-4252-a68d-88d79af1e6c8",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "19174b19-2081-4335-992d-f4fbb59e87db",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "115cc9e2-1209-42a9-9c4e-1379c20e50dd",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "29d5048b-52d5-4503-9dab-fe982ea4e4c5",
+      "result_id": "fd943c04-b216-41c0-a891-ac1380378b20"
+    },
+    {
+      "claim_id": "817f08da-6cf3-40b2-ad8a-aae368abccc0",
+      "result_id": "bc98575c-0ccf-4b89-bcda-6d6ea393e5fc"
+    },
+    {
+      "claim_id": "026f2e47-3d01-4ddb-a177-066a48b3c5f5",
+      "result_id": "bc98575c-0ccf-4b89-bcda-6d6ea393e5fc"
+    },
+    {
+      "claim_id": "359eebe8-b691-46cd-af9a-30f6c5a652db",
+      "result_id": "bc98575c-0ccf-4b89-bcda-6d6ea393e5fc"
+    },
+    {
+      "claim_id": "06ee73ba-b164-4bd3-966b-e1de32868520",
+      "result_id": "bc98575c-0ccf-4b89-bcda-6d6ea393e5fc"
+    },
+    {
+      "claim_id": "57e0173e-debd-44a0-86ce-250c67ee6a5c",
+      "result_id": "bc98575c-0ccf-4b89-bcda-6d6ea393e5fc"
+    },
+    {
+      "claim_id": "19335646-83d9-482d-8126-173f7f622c73",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "f6e58ab6-37ed-4266-ad04-7a475c05080f",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "ed24e70f-04e4-46b0-8d99-0a13f3ce6915",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "d2912d11-8a43-47ba-9212-5b88182cb6b7",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "c928cea6-e7c1-436a-bb09-9d9281bbad4e",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "0db94f8e-4be5-44d4-a710-aed620c1e8d7",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "5e87acaa-11cd-47b7-abc3-dc09ffe1a79c",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "dd6cd851-8614-429f-a413-1fc22d2fa2fa",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "b07c9231-2d21-454b-83f4-7a9ad95c14ce",
+      "result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a"
+    },
+    {
+      "claim_id": "cef45f89-8d3b-443b-88bd-cce515c617b3",
+      "result_id": "22eee765-ac26-4989-8381-c8e024f0510e"
+    },
+    {
+      "claim_id": "e5f74aae-e335-43fc-a2c4-218f0bdd4ed6",
+      "result_id": "22eee765-ac26-4989-8381-c8e024f0510e"
+    },
+    {
+      "claim_id": "5403ade5-becc-43c9-b462-dd6637e69803",
+      "result_id": "22eee765-ac26-4989-8381-c8e024f0510e"
+    },
+    {
+      "claim_id": "ab4a9e35-0d17-4125-9215-5a7a128feffc",
+      "result_id": "22eee765-ac26-4989-8381-c8e024f0510e"
+    },
+    {
+      "claim_id": "a1f11b70-8ae1-4fd7-a4ab-4eeca9d98ace",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "c90b5927-7e42-464d-99aa-487b3dd3385d",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "c5badee1-ba53-4620-b86d-eb63bba4afc2",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "933a749d-7d43-452e-a50d-2f1b79c2509b",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "202ca6a7-a88e-438e-b96a-52d961ecba11",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "05ff42b4-19a2-48ec-a3e2-8212629173e1",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "008ecd4d-6f6e-4fd0-a38c-70a5beace367",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "c8973884-7445-497e-a01d-b22e5ad59335",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "d8c76c31-62ff-4cb5-a769-17d72aea5c59",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "93a68ec3-d193-4de8-b687-2e425af2c771",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "c88d84a1-f19b-4f58-9a48-68c49dc3e72a",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "25a0aa2d-fd77-45e4-9d68-1fd47d13b8cb",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "c4fb7665-4d1e-4e61-9624-3902c11d434a",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "83609a9f-3d81-438b-adfd-70c420982d85",
+      "result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe"
+    },
+    {
+      "claim_id": "bb64178c-82fa-47e3-972d-d56c4d0d64a9",
+      "result_id": "a7181e08-5999-4f50-b250-9f7571315704"
+    },
+    {
+      "claim_id": "c5badee1-ba53-4620-b86d-eb63bba4afc2",
+      "result_id": "a7181e08-5999-4f50-b250-9f7571315704"
+    },
+    {
+      "claim_id": "7aa45020-f306-4883-8128-4a47efa5ef46",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "ea92f713-4ec1-43cf-a28f-089460f1d9e8",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "39be9e37-c641-4ae9-a849-531cb51035a8",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "a5b1e3b5-dee6-4e94-933a-83fb4c62212a",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "82824e72-e5ca-460c-8d48-e0cdef50fbf3",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "5b5833e8-9221-4e18-bc8f-217f18da8021",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "2c9d1dad-b1f6-4d1c-8738-33ef981c44aa",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "de98ce30-e9b3-41fa-be07-37bd02751ce5",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "41ede005-e347-41d7-ae92-0e5655ab8e8d",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "0ecc8eeb-9e52-4570-aa6d-120e085e12f9",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "163a61b1-866e-4dca-beb5-1dec7f45f41c",
+      "result_id": "503496cf-aa53-474f-957e-7516875fbdcc"
+    },
+    {
+      "claim_id": "719186f8-591d-402f-8e4b-3cb6cd612abe",
+      "result_id": "5fa5d647-5385-4b6b-94a0-f31045abded4"
+    },
+    {
+      "claim_id": "79133cac-a12b-4cb4-8fb8-962d4f69f754",
+      "result_id": "5fa5d647-5385-4b6b-94a0-f31045abded4"
+    },
+    {
+      "claim_id": "d4ee9c52-a54e-4b2d-a492-33d449dbd15b",
+      "result_id": "5fa5d647-5385-4b6b-94a0-f31045abded4"
+    },
+    {
+      "claim_id": "5f07fe4c-091b-4ca0-a221-0c60e0148137",
+      "result_id": "5fa5d647-5385-4b6b-94a0-f31045abded4"
+    },
+    {
+      "claim_id": "11bf187b-9c5d-4934-91ac-7899367bbe74",
+      "result_id": "fa23976b-ecae-4ace-8078-a888b200240d"
+    },
+    {
+      "claim_id": "8864c747-7cbb-4425-9de2-1c5498d2698d",
+      "result_id": "fa23976b-ecae-4ace-8078-a888b200240d"
+    },
+    {
+      "claim_id": "cd08d09c-402b-4a7d-95de-5a106e402a9e",
+      "result_id": "fa23976b-ecae-4ace-8078-a888b200240d"
+    },
+    {
+      "claim_id": "6a1410e4-79a8-401a-95ba-b8670bc87613",
+      "result_id": "fa23976b-ecae-4ace-8078-a888b200240d"
+    },
+    {
+      "claim_id": "4eb90266-be21-47c6-9bb7-0df9ffccc205",
+      "result_id": "fa23976b-ecae-4ace-8078-a888b200240d"
+    },
+    {
+      "claim_id": "083fcac1-2c38-4dd6-b6fa-775cbb1bcd67",
+      "result_id": "fa23976b-ecae-4ace-8078-a888b200240d"
+    },
+    {
+      "claim_id": "e2576407-1e1f-4681-b088-faa43c3b25a4",
+      "result_id": "fa23976b-ecae-4ace-8078-a888b200240d"
+    },
+    {
+      "claim_id": "8b7b3423-97aa-496f-b32a-8a8e494fa3bf",
+      "result_id": "fa23976b-ecae-4ace-8078-a888b200240d"
+    },
+    {
+      "claim_id": "46130745-047a-4718-9e1f-e0efb72551ad",
+      "result_id": "83537bd0-50c1-44e2-92fb-1ba5ea414318"
+    },
+    {
+      "claim_id": "d0cbb0c1-865e-4e42-9772-5324916dfe8d",
+      "result_id": "83537bd0-50c1-44e2-92fb-1ba5ea414318"
+    },
+    {
+      "claim_id": "c23e529d-aa1b-40df-a462-8b16a68f0fd5",
+      "result_id": "83537bd0-50c1-44e2-92fb-1ba5ea414318"
+    },
+    {
+      "claim_id": "a91eaa7d-e028-41b8-92e1-289f257bcfe7",
+      "result_id": "83537bd0-50c1-44e2-92fb-1ba5ea414318"
+    },
+    {
+      "claim_id": "7f092296-4671-4ef9-8a28-0188fdeb4d5f",
+      "result_id": "83537bd0-50c1-44e2-92fb-1ba5ea414318"
+    },
+    {
+      "claim_id": "1edcd08b-ec5c-4dab-9873-325d616b7686",
+      "result_id": "83537bd0-50c1-44e2-92fb-1ba5ea414318"
+    },
+    {
+      "claim_id": "cef45f89-8d3b-443b-88bd-cce515c617b3",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "bb64178c-82fa-47e3-972d-d56c4d0d64a9",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "e5f74aae-e335-43fc-a2c4-218f0bdd4ed6",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "5403ade5-becc-43c9-b462-dd6637e69803",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "a1f11b70-8ae1-4fd7-a4ab-4eeca9d98ace",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "c90b5927-7e42-464d-99aa-487b3dd3385d",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "c5badee1-ba53-4620-b86d-eb63bba4afc2",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "933a749d-7d43-452e-a50d-2f1b79c2509b",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "202ca6a7-a88e-438e-b96a-52d961ecba11",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "05ff42b4-19a2-48ec-a3e2-8212629173e1",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "008ecd4d-6f6e-4fd0-a38c-70a5beace367",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "c8973884-7445-497e-a01d-b22e5ad59335",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "d8c76c31-62ff-4cb5-a769-17d72aea5c59",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "93a68ec3-d193-4de8-b687-2e425af2c771",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "c88d84a1-f19b-4f58-9a48-68c49dc3e72a",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "25a0aa2d-fd77-45e4-9d68-1fd47d13b8cb",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "c4fb7665-4d1e-4e61-9624-3902c11d434a",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "8b7b3423-97aa-496f-b32a-8a8e494fa3bf",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "c23e529d-aa1b-40df-a462-8b16a68f0fd5",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "1edcd08b-ec5c-4dab-9873-325d616b7686",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "ab4a9e35-0d17-4125-9215-5a7a128feffc",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "83609a9f-3d81-438b-adfd-70c420982d85",
+      "result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2"
+    },
+    {
+      "claim_id": "5b5833e8-9221-4e18-bc8f-217f18da8021",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "2c9d1dad-b1f6-4d1c-8738-33ef981c44aa",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "719186f8-591d-402f-8e4b-3cb6cd612abe",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "79133cac-a12b-4cb4-8fb8-962d4f69f754",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "d4ee9c52-a54e-4b2d-a492-33d449dbd15b",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "8864c747-7cbb-4425-9de2-1c5498d2698d",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "cd08d09c-402b-4a7d-95de-5a106e402a9e",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "6a1410e4-79a8-401a-95ba-b8670bc87613",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "4eb90266-be21-47c6-9bb7-0df9ffccc205",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "083fcac1-2c38-4dd6-b6fa-775cbb1bcd67",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "e2576407-1e1f-4681-b088-faa43c3b25a4",
+      "result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032"
+    },
+    {
+      "claim_id": "19335646-83d9-482d-8126-173f7f622c73",
+      "result_id": "2de920b0-b4cf-4a10-8cfd-1a405132bf34"
+    },
+    {
+      "claim_id": "0ecc8eeb-9e52-4570-aa6d-120e085e12f9",
+      "result_id": "2de920b0-b4cf-4a10-8cfd-1a405132bf34"
+    },
+    {
+      "claim_id": "d2912d11-8a43-47ba-9212-5b88182cb6b7",
+      "result_id": "e56076da-0ae0-4b49-b950-e7fb3d707130"
+    },
+    {
+      "claim_id": "5e87acaa-11cd-47b7-abc3-dc09ffe1a79c",
+      "result_id": "e56076da-0ae0-4b49-b950-e7fb3d707130"
+    },
+    {
+      "claim_id": "dd6cd851-8614-429f-a413-1fc22d2fa2fa",
+      "result_id": "e56076da-0ae0-4b49-b950-e7fb3d707130"
+    },
+    {
+      "claim_id": "b07c9231-2d21-454b-83f4-7a9ad95c14ce",
+      "result_id": "e56076da-0ae0-4b49-b950-e7fb3d707130"
+    },
+    {
+      "claim_id": "7aa45020-f306-4883-8128-4a47efa5ef46",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "ea92f713-4ec1-43cf-a28f-089460f1d9e8",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "39be9e37-c641-4ae9-a849-531cb51035a8",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "a5b1e3b5-dee6-4e94-933a-83fb4c62212a",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "82824e72-e5ca-460c-8d48-e0cdef50fbf3",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "de98ce30-e9b3-41fa-be07-37bd02751ce5",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "41ede005-e347-41d7-ae92-0e5655ab8e8d",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "163a61b1-866e-4dca-beb5-1dec7f45f41c",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "5f07fe4c-091b-4ca0-a221-0c60e0148137",
+      "result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14"
+    },
+    {
+      "claim_id": "0bb1cd8d-b1ce-4e61-a201-ae1c3e8d54aa",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "d99f08d1-cac5-4dcc-8f82-4742d266b6b7",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "a128752c-0a14-4e36-93b0-a9808f3dc14e",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "ef189639-39b5-47a3-8c98-32b679448cf2",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "29b31a96-83db-45ed-8f37-209d57726b64",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "b1742535-3ced-4c71-b3de-fe5c72b32fec",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "c4c40f5f-c353-4772-a896-60280dd0f84e",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "9a282b72-cdf9-465a-80f6-cafc23953e05",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "5847d868-78e3-4252-a68d-88d79af1e6c8",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "19174b19-2081-4335-992d-f4fbb59e87db",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "115cc9e2-1209-42a9-9c4e-1379c20e50dd",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "29d5048b-52d5-4503-9dab-fe982ea4e4c5",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "817f08da-6cf3-40b2-ad8a-aae368abccc0",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "026f2e47-3d01-4ddb-a177-066a48b3c5f5",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "359eebe8-b691-46cd-af9a-30f6c5a652db",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "06ee73ba-b164-4bd3-966b-e1de32868520",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "57e0173e-debd-44a0-86ce-250c67ee6a5c",
+      "result_id": "221394b0-2184-484d-9583-9706e57a82e9"
+    },
+    {
+      "claim_id": "f6e58ab6-37ed-4266-ad04-7a475c05080f",
+      "result_id": "225f1bbc-5153-4423-8ebc-2589c3093dcb"
+    },
+    {
+      "claim_id": "ed24e70f-04e4-46b0-8d99-0a13f3ce6915",
+      "result_id": "225f1bbc-5153-4423-8ebc-2589c3093dcb"
+    },
+    {
+      "claim_id": "a91eaa7d-e028-41b8-92e1-289f257bcfe7",
+      "result_id": "225f1bbc-5153-4423-8ebc-2589c3093dcb"
+    },
+    {
+      "claim_id": "7f092296-4671-4ef9-8a28-0188fdeb4d5f",
+      "result_id": "225f1bbc-5153-4423-8ebc-2589c3093dcb"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "bbbc5cf9-79d7-4e1e-b8ee-d7be6d0c49d8",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "503496cf-aa53-474f-957e-7516875fbdcc",
+      "peer_result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on testbed advantages over ASTM phantom testing (C47-C51, C54-C55, C57, C72). Both evaluations find these methodological claims well-supported. OpenEval emphasizes FDA requirements and phantom limitations with citations, while peer reviewers accept the testbed's ability to provide realistic modeling and avoid over/under-estimation from rectangular phantoms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "da0881d8-6ab2-4449-9406-82cdb4b01c52",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "701caf51-a22f-40a0-beaf-5e2d75f68ebe",
+      "peer_result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on technical implementation and FDA approval (C33-C45, C77). Both evaluations support the testbed's technical components, software integration, and FDA approval as MDDT. OpenEval provides detailed technical validation, while peer reviewers emphasize the FDA approval as premise for large-scale adoption and note the testbed is 'solid' and 'validated.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "30f9b338-80ea-487e-a910-6702baf36f69",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "fa23976b-ecae-4ace-8078-a888b200240d",
+      "peer_result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on validation results (C62-C67). Both evaluations accept the experimental validation showing ~10-15% agreement between simulation and published measurements. OpenEval notes this is reasonable for the modeling type but mentions only one validation case is presented. Peer reviewers accept validation without challenge, stating testbed is 'validated' and 'looks valuable.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "8e84236f-75b5-4bef-b4ff-d84e5391874e",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a",
+      "peer_result_id": "e56076da-0ae0-4b49-b950-e7fb3d707130",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on model diversity limitations (C25-C30). OpenEval finds the critique of Virtual Population limitations (homogeneity, morphed obese models) to be 'balanced and well-documented' and SUPPORTED. Peer reviewers rate this UNCERTAIN, with Reviewer 3 identifying single-model limitation as a weakness and noting tissue management issues are acknowledged but not fully resolved.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "f5a2aacc-e562-4d6d-bbf4-53465ff2ef6f",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "fd943c04-b216-41c0-a891-ac1380378b20",
+      "peer_result_id": "221394b0-2184-484d-9583-9706e57a82e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on MR safety classification and labeling context (C10-C16). Both evaluations support these background claims. OpenEval validates the classification system and labeling problem documentation with appropriate citations. Peer reviewers accept this context without challenge, treating it as established background for the clinical need.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "ac37fef5-b309-4bee-953b-7bdbc8f38d24",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "94ba35a3-e81a-4454-b1ed-81269fca96e1",
+      "peer_result_id": "221394b0-2184-484d-9583-9706e57a82e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on clinical need and statistics (C1, C4-C7). Both evaluations support these motivational claims about implant prevalence and clinical impact. OpenEval finds the statistics well-supported by peer-reviewed literature. Peer reviewers accept this as established context, noting the work addresses a 'real need in MR safety.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "3f6d213b-a3b4-4ba1-b874-e5f549bd4ebd",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "bc98575c-0ccf-4b89-bcda-6d6ea393e5fc",
+      "peer_result_id": "221394b0-2184-484d-9583-9706e57a82e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on clinical context for imaging access (C17-C21). Both evaluations support these claims about clinical complications and imaging needs. OpenEval validates specific statistics with clinical literature citations. Peer reviewers accept this background without challenge as part of the established clinical need.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "dcf1c912-6727-4b87-b2ae-2553b663844e",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "5fa5d647-5385-4b6b-94a0-f31045abded4",
+      "peer_result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on simulation results (C58-C60, C72). OpenEval finds the demonstration of protocol optimization well-supported, noting it shows testbed capability though is simulation rather than experimental validation. Peer reviewers accept these results as part of overall validation without specific challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "67fe8e32-60d9-4413-9e62-71ae2db19d2c",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "83537bd0-50c1-44e2-92fb-1ba5ea414318",
+      "peer_result_id": "225f1bbc-5153-4423-8ebc-2589c3093dcb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cross-platform compatibility and ongoing validation (C73-C74). Both evaluations support these claims. OpenEval notes cross-platform compatibility is supported by prior work citation and ongoing validation is transparently stated as future work. Peer reviewers accept computational methods and note FDA is pushing this approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "5a2c16f2-bc8d-448b-a037-f31369ca74fa",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "22eee765-ac26-4989-8381-c8e024f0510e",
+      "peer_result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on model characteristics and provenance (C2, C31-C32, C76). Both evaluations support these claims about the VHP model basis. OpenEval validates model characteristics with citations and notes user base is verifiable. Peer reviewers affirm testbed is 'solid, based on the widely available human project.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "a199975e-632f-4404-8e73-1df7d4789cc2",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a7181e08-5999-4f50-b250-9f7571315704",
+      "peer_result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on FDA approval significance (C3, C35). Both evaluations support the FDA approval as MDDT. OpenEval treats it as verifiable regulatory milestone with appropriate citation. Peer reviewers emphasize it as 'good premise for large-scale adoption' of the solution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "710d7ae1-490f-4acf-a7b1-af579187d007",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a",
+      "peer_result_id": "225f1bbc-5153-4423-8ebc-2589c3093dcb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on computational modeling state of field (C23-C24). Both evaluations support claims about computational modeling development. OpenEval finds extensive citations establish the field state. Peer reviewers accept these methods, noting FDA acceptance and that numerical simulation is 'much easier compared to experimental measurements.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "4a4e6690-82dd-4e3f-9786-607dbcd0b97a",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "503496cf-aa53-474f-957e-7516875fbdcc",
+      "peer_result_id": "5ccea38e-8c79-4b0f-a6d0-29da49319032",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on phantom comparison data (C52-C53). OpenEval finds the comparison showing both higher and lower predictions versus phantoms demonstrates complexity and validates need for anatomical modeling. Peer reviewers accept these results as part of overall validation evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "14d66fab-46e0-4f4c-a71e-ffc54fd4baa2",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "ef35446b-07ab-4cc0-a5b4-5ac1d60bd78a",
+      "peer_result_id": "2de920b0-b4cf-4a10-8cfd-1a405132bf34",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on field modeling scope (C22). OpenEval finds state of field well-established with citations. Peer Reviewer 3 identifies limitation that method only addresses RF heating, not gradient-induced heating, rating this UNCERTAIN. This represents a scope limitation not emphasized in OpenEval's assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "8131018b-1686-4f33-8f1e-2c02e2400d63",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "503496cf-aa53-474f-957e-7516875fbdcc",
+      "peer_result_id": "2de920b0-b4cf-4a10-8cfd-1a405132bf34",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent emphasis on scope limitations (C56). OpenEval finds scope limitations appropriately stated as part of SUPPORTED evaluation. Peer Reviewer 3 rates UNCERTAIN, explicitly identifying RF-only focus as weakness since gradient heating remains unaddressed. OpenEval acknowledges limitation (C56-C57) but doesn't emphasize it as strongly.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "80d02fc6-d076-4c93-92ef-2ba9b44f6f79",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "5fa5d647-5385-4b6b-94a0-f31045abded4",
+      "peer_result_id": "09572e2c-051d-4282-8d16-e0dd8a057e14",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on efficiency claims (C72). OpenEval supports practical efficiency demonstration. Peer reviewers accept this as part of broader methodological advantages, noting testbed provides 'fast and reliable prediction' in real-life conditions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "77753a15-36bb-49a0-a117-3c21e03acd80",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "83537bd0-50c1-44e2-92fb-1ba5ea414318",
+      "peer_result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on data availability and conclusions (C71, C75). OpenEval supports conclusion appropriateness and praises data availability with DOI as excellent practice. Peer reviewers acknowledge testbed provides open source model without specifically commenting on data sharing practices.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    },
+    {
+      "id": "7acd03b7-9a9b-427e-9c2d-374d2f7d5c84",
+      "submission_id": "5d57947d-3bf2-4396-868f-e50de8a015a4",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "fa23976b-ecae-4ace-8078-a888b200240d",
+      "peer_result_id": "a841694d-b7bf-4daa-a04c-5a9006285fa2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on mesh refinement capability (C68). OpenEval supports adaptive refinement as appropriate for modeling sharp tips. Peer reviewers do not specifically address this technical detail in their evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T19:46:49.722556Z"
+    }
+  ]
+}
